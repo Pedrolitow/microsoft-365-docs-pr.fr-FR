@@ -3,22 +3,23 @@ title: Prise en main des rubriques Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-audience: admin
+audience: enabler, admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.service: o365-administration
 search.appverid: ''
 ms.localizationpriority: medium
 description: Découvrez les nouvelles façons de découvrir et d’explorer des informations dans Sujets Microsoft Viva.
-ms.openlocfilehash: 215282cfcaa81b3fa1d4f35782308989c5eb2434
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 46c66a97237415d24d11e885452d91c788063eee
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152537"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585812"
 ---
 # <a name="get-started-with-microsoft-viva-topics"></a>Prise en main des rubriques Microsoft Viva
 
-Comment trouvez-vous les personnes et les ressources importantes pour votre travail ? Lorsque vous partagez des fichiers importants avec d’autres personnes, sont-elles en mesure de les retrouver ultérieurement, lorsqu’elles en ont besoin ? Ces rubriques offrent de nouvelles façons de découvrir et d’explorer des informations à partir de votre contenu dans Microsoft 365.  
+Comment trouvez-vous les personnes et les ressources importantes pour votre travail ? Lorsque vous partagez des fichiers importants avec d’autres personnes, sont-elles en mesure de les retrouver ultérieurement, lorsqu’elles en ont besoin ? Cette rubrique propose de nouvelles façons de découvrir et d’explorer des informations à partir de votre contenu dans Microsoft 365.  
 
 Cette rubrique vous permet de : 
 

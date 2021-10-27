@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer Skillsoft en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 23c170deb8030caf835fb66647e4189020990c9d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1a9b086ea2eed50369607521470ddece381dc884
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556851"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586076"
 ---
 # <a name="configure-skillsoft-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Skillsoft en tant que source de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Cet article vous montre comment configurer Skillsoft en tant que source de contenu d’apprentissage tierce dans Learning.
 
@@ -40,7 +43,7 @@ Vous pouvez contacter le support [Technique pour](https://support.skillsoft.com/
 
 1. Accédez à votre [Centre d'administration Microsoft 365](https://admin.microsoft.com) et connectez-vous.
 
-2. Accédez à **Paramètres**  >  **paramètres de l’organisation.** Recherchez Des Learning et activez Skillsoft à partir des options.
+2. Accédez aux  >  **Paramètres’organisation.** Recherchez Des Learning et activez Skillsoft à partir des options.
 
 3. Remplissez les détails de configuration que vous avez obtenus de votre équipe de compte Microsoft.
 

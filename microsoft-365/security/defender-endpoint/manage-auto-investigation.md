@@ -2,8 +2,6 @@
 title: Examiner les actions de correction à la suite d’examens automatisés
 description: Examiner et approuver (ou rejeter) les actions de correction à la suite d’un examen automatisé.
 keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 22229d495e9b7694d07f25b60e854240f7c420c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152033"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587708"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Examiner les actions de correction à la suite d’un examen automatisé
 
@@ -45,7 +43,7 @@ Les actions de correction peuvent se produire automatiquement ou uniquement apr�
 
 Voici quelques exemples :
 
-- **Exemple 1**: les groupes d’appareils de Fabrikam sont définies sur **Complet :** corriger les menaces automatiquement (paramètre recommandé). Dans ce cas, des actions de correction sont effectuées automatiquement pour les artefacts considérés comme malveillants à la suite d’une enquête automatisée (voir Examiner [les actions terminées).](#review-completed-actions)
+- **Exemple 1**: les groupes d’appareils de Fabrikam sont définies sur **Complet :** corriger les menaces automatiquement (paramètre recommandé). Dans ce cas, des actions de correction sont effectuées automatiquement pour les artefacts considérés comme malveillants à la suite d’un examen automatisé (voir Examiner [les actions terminées).](#review-completed-actions)
 
 - **Exemple 2**: les appareils de Contoso sont inclus dans un groupe d’appareils qui est définie pour Semi - exiger l’approbation de **toute correction.** Dans ce cas, l’équipe des opérations de sécurité de Contoso doit examiner et approuver toutes les actions de correction à la suite d’un examen automatisé (voir Examiner [les actions en attente).](#review-pending-actions)
 
@@ -70,7 +68,7 @@ Qu’elle soit prise automatiquement ou après approbation, une enquête automat
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md).
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md).
 
 ## <a name="review-completed-actions"></a>Passer en revue les actions terminées
 
@@ -114,20 +112,20 @@ Les niveaux d’automatisation affectent si certaines actions de correction sont
 
 |Paramètre du groupe d’appareils|Résultats d’enquête automatisés|Procédure|
 |---|---|---|
-|**Complète : corriger les menaces automatiquement** (paramètre recommandé)|Un verdict de *malveillant est* atteint pour une preuve. <p> Des mesures correctives appropriées sont prises automatiquement.|[Passer en revue les actions terminées](#review-completed-actions)|
+|**Complète : corriger automatiquement les menaces** (paramètre recommandé)|Un verdict de *malveillant est* atteint pour une preuve. <p> Des mesures correctives appropriées sont prises automatiquement.|[Passer en revue les actions terminées](#review-completed-actions)|
 |**Complète : corriger automatiquement les menaces**|Un verdict suspect *est* atteint pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation pour continuer.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
 |**Semi - exiger l’approbation de toutes les corrections**|Un verdict de *malveillant ou* *suspect est* atteint pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation pour continuer.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
-|**Semi - exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *malveillant est* atteint pour une preuve. <p> Si l’artefact est un fichier ou un exécutable et se trouve dans un répertoire du système d’exploitation, tel que le dossier Windows ou le dossier Program Files, les actions de correction sont en attente d’approbation. <p> Si l’artefact ne *se trouve pas* dans un répertoire du système d’exploitation, des mesures correctives sont prises automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
+|**Semi - exiger l’approbation pour la correction des dossiers principaux**|Un verdict de *malveillant est* atteint pour une preuve. <p> Si l’artefact est un fichier ou un exécutable et se trouve dans un répertoire du système d’exploitation, tel que le dossier Windows ou le dossier Program Files, les actions de correction sont en attente d’approbation. <p> Si l’artefact ne *se trouve pas* dans un répertoire du système d’exploitation, des actions de correction sont prises automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
 |**Semi - exiger l’approbation pour la correction des dossiers principaux**|Un verdict suspect *est* atteint pour un élément de preuve. <p> Les actions de correction sont en attente d’approbation.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions).|
 |**Semi - exiger l’approbation de la correction des dossiers non temporaires**|Un verdict de *malveillant est* atteint pour une preuve. <p> Si l’artefact est un fichier ou un exécutable qui ne se trouve pas dans un dossier temporaire, tel que le dossier de téléchargement ou le dossier temporaire de l’utilisateur, les actions de correction sont en attente d’approbation. <p> Si l’artefact est un  fichier ou un exécutable qui se trouve dans un dossier temporaire, des actions de correction sont prises automatiquement.|<ol><li>[Approuver (ou rejeter) les actions en attente](#review-pending-actions)</li><li>[Passer en revue les actions terminées](#review-completed-actions)</li></ol>|
 |**Semi - exiger l’approbation de la correction des dossiers non temporaires**|Un verdict suspect *est* atteint pour une preuve. <p> Les actions de correction sont en attente d’approbation.|[Approuver (ou rejeter) les actions en attente](#review-pending-actions)|
-|N’importe quel **niveau d’automatisation** complet **ou** semi-automatique|Le verdict « *Aucune menace trouvée »* est atteint pour une preuve. <p> Aucune action de correction n’est prise et aucune action n’est en attente d’approbation.|[Consulter les détails et les résultats des examens automatisés](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
+|N’importe quel **niveau d’automatisation** complet **ou** semi-automatique|Un verdict *d’absence de menaces* trouvées est atteint pour une preuve. <p> Aucune action de correction n’est prise et aucune action n’est en attente d’approbation.|[Consulter les détails et les résultats des examens automatisés](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
 |**Aucune réponse automatisée** (non recommandée)|Aucune enquête automatisée ne s’exécute, donc aucun verdict n’est atteint et aucune action de correction n’est prise ou en attente d’approbation.|[Envisagez de définir ou de modifier vos groupes d’appareils pour utiliser **l’automatisation** complète **ou semi-automatique**](/microsoft-365/security/defender-endpoint/machine-groups)|
 |
 
 Dans Microsoft Defender pour le point de terminaison, tous les verdicts sont suivis dans le centre [de l’action.](auto-investigation-action-center.md#new-a-unified-action-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les fonctionnalités de réponse en direct](live-response.md)
 - [Recherche proactive des menaces avec le chasse avancée](advanced-hunting-overview.md)

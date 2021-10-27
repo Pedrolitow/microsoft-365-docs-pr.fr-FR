@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: 01fb9f067bd94e564deb182338fdcde055edb153
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96aa778316fcaa5994d408c869e8566e465a07d1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201696"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587324"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -37,7 +37,7 @@ La manière dont vous utilisez les points de terminaison réseau Office 365 dép
 
 ## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN pour la sortie de branche locale du trafic Office 365 réseau
 
-À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie Office 365 Optimiser les points de terminaison, ou optimiser et autoriser des catégories, directement sur le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
+À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie Office 365 Optimiser les points de terminaison, ou optimiser et autoriser des catégories, directement vers le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
 
 Microsoft travaille avec des fournisseurs SD-WAN pour activer la configuration automatisée. Pour plus d’informations, voir [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
 
@@ -76,7 +76,7 @@ Il existe de nombreux paramètres que vous pouvez transmettre au script :
 | Paramètre | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
-|**Instance** <br/> |L Office 365 instance de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
+|**Instance** <br/> |L Office 365 de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
 |**TenantName** <br/> |Votre nom de client Office 365. Transmises au service Web et utilisées comme paramètre remplaçable dans certaines URL d’Office 365. <br/> |
 |**Type** <br/> |Type du fichier PAC de proxy que vous voulez générer. <br/> |
 
@@ -99,7 +99,7 @@ En plus de sélectionner la configuration appropriée pour votre périmètre de 
 
 Les modifications apportées aux adresses IP et URL Office 365 sont généralement publiées autour du dernier jour de chaque mois. Il peut arriver qu’une modification soit publiée en dehors de cette planification en raison de besoins opérationnels, de support ou de sécurité.
 
-Lors de la publication d’une modification nécessitant d’agir suite à l’ajout d’une adresse IP ou d’une URL, vous devriez recevoir une notification de 30 jours à partir du moment où nous publions la modification jusqu’à ce qu’un service Office 365 sur ce point de terminaison soit utilisé. Bien que nous cherchions à utiliser cette période de notification, il est possible qu’elle ne soit pas toujours possible en raison de besoins opérationnels, de support ou de sécurité. Les modifications qui n’ont pas besoin d’une action immédiate pour maintenir la connectivité, telles que les adresses IP ou URL supprimées, ou les modifications moins importantes, n’incluent pas de notification préalable. Quelle que soit la notification fournie, nous annonçons la date de mise en service attendue pour chaque changement.
+Lors de la publication d’une modification nécessitant d’agir suite à l’ajout d’une adresse IP ou d’une URL, vous devriez recevoir une notification de 30 jours à partir du moment où nous publions la modification jusqu’à ce qu’un service Office 365 sur ce point de terminaison soit utilisé. Il s’agit de la date d’effet. Bien que nous cherchions à utiliser cette période de notification, il est possible qu’elle ne soit pas toujours possible en raison de besoins opérationnels, de support ou de sécurité. Les modifications qui n’ont pas besoin d’une action immédiate pour maintenir la connectivité, telles que les adresses IP ou URL supprimées, ou les modifications moins importantes, n’incluent pas de notification préalable. Dans ces cas, aucune date d’effet n’est fournie. Quelle que soit la notification fournie, nous annonçons la date de mise en service attendue pour chaque changement.
 
 ### <a name="change-notification-using-the-web-service"></a>Notification des modifications à l’aide du service Web
 
@@ -115,7 +115,7 @@ L’adresse IP et le service Web d’URL Office 365 fournissent un flux RSS auqu
 
 Nous savons qu’il est possible que vous deviez continuer à traiter manuellement les modifications apportées aux points de terminaison réseau par mois. Vous pouvez utiliser Power Automate pour créer un flux qui vous avertit par courrier électronique et exécute éventuellement un processus d’approbation pour les modifications lorsque Office 365 points de terminaison réseau ont des modifications. Une fois la révision terminée, vous pouvez faire en sorte que le flux envoie par email automatiquement les modifications apportées à l’équipe de gestion de votre pare-feu et serveur proxy.
 
-Pour plus d’informations sur un Power Automate et un modèle, voir Utiliser Power Automate pour recevoir un e-mail pour les modifications apportées Office 365 [adresses IP](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)et URL.
+Pour plus d’informations sur un Power Automate et un modèle, voir Utiliser Power Automate pour recevoir un e-mail pour les modifications apportées aux [adresses IP](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)Office 365 et url.
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Forum aux questions sur les points de terminaison réseau Office 365
@@ -191,7 +191,7 @@ Office 365 et d’autres services Microsoft utilisent des services tiers tels q
 
 Office 365 est une suite de services conçue pour fonctionner sur Internet. Les promesses de fiabilité et de disponibilité sont basées sur l’accès à de nombreux services Internet standard. Par exemple, des services Internet standard tels que DNS, CRL et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent l’être pour utiliser les services Internet les plus modernes.
 
-La suite Office 365 est divisée en zones de service majeures. Celles-ci peuvent être activées de manière sélective pour la connectivité et il existe une zone commune, qui est une dépendance pour tout et est toujours nécessaire.
+La suite Office 365 est divisée en zones de service majeures. Celles-ci peuvent être activées de manière sélective pour la connectivité et il existe une zone commune, qui est une dépendance pour tout et est toujours requise.
 
 | Zone de service | Description |
 |:-----|:-----|
@@ -207,16 +207,14 @@ Si vous essayez d’utiliser Office 365 et que vous trouvez que des services tie
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l’accès aux services grand public de Microsoft ?
 
-La limitation de l’accès aux services grand public doit être effectuée à vos risques et périls. Le seul moyen fiable de bloquer les services grand public est de restreindre l’accès aux *login.live.com* nom de domaine complet. Ce nom de domaine complet est utilisé par divers services, y compris des services non destinés au grand public tels que MSDN, TechNet, etc. Ce nom de domaine complet est également utilisé par le programme de transfert de fichiers sécurisé de support Microsoft et est nécessaire pour transférer des fichiers afin de faciliter la résolution des problèmes pour les produits Microsoft.  La limitation de l’accès à ce nom de domaine complet peut nécessiter d’inclure également les exceptions à la règle pour les requêtes réseau associées à ces services.
-  
-N’oubliez pas que le blocage de l’accès aux services grand public de Microsoft ne suffit pas à lui seul à empêcher un membre de votre réseau d’extraire des informations à l’aide d’un client ou d’un autre service Office 365.
+La fonctionnalité de restrictions client prend désormais en charge le blocage de l’utilisation de toutes les applications consommateur Microsoft (applications MSA) telles que OneDrive, Hotmail et Xbox.com. Cela utilise un en-tête distinct pour le point login.live.com de terminaison. Pour plus d’informations, voir Utiliser les restrictions client pour gérer l’accès [aux applications cloud SaaS.](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications)
 
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Mon pare-feu nécessite des adresses IP et ne peut pas traiter les URL. Comment puis-je le configurer pour Office 365 ?
 
-Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web . l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
+Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web . l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md)
 

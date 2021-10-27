@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer Udemy en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: edd11ba3a1b3edc8b7019de45261fb9b539a2efb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 404f70983f1deadfac111829f026bd3ccdbcb633
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556769"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587944"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Udemy en tant que source de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Cet article vous montre comment configurer Udemy en tant que source de contenu d’apprentissage tierce pour Apprentissage Microsoft Viva.
 

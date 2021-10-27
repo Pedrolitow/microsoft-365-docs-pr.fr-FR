@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour endpoint sur Linux à l’aide d’Ansible.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, loi, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ecc13693a043602885e8f221e6967bd44eb0da8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 796095323cfbe24a49ed4da712ceef55e8a5d941
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205438"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588184"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
@@ -96,7 +96,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 ## <a name="create-ansible-yaml-files"></a>Créer des fichiers YAML ansibles
 
-Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou à une tâche.
+Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou une tâche.
 
 - Créez la tâche d’intégration : `onboarding_setup.yml`
 
@@ -125,7 +125,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
       when: not mdatp_onboard.stat.exists
     ```
 
-- Ajoutez la clé et le référentiel Defender pour points de terminaison `add_apt_repo.yml` :
+- Ajoutez la clé et le référentiel Defender pour points de terminaison : `add_apt_repo.yml`
 
     Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
@@ -141,7 +141,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
     > [!NOTE]
-    > Dans le cas d’Oracle Linux, *remplacez [distro]* par « rhel ».
+    > Dans le cas d’Oracle Linux et d’Amazon Linux 2, *remplacez [introduction]* par « rhel ».
 
   ```bash
   - name: Add Microsoft APT key
@@ -175,7 +175,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YaML d’installation et de désinstallation Ansible.
+- Créez les fichiers YAML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 

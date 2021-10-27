@@ -2,7 +2,6 @@
 title: Utiliser des étiquettes de confidentialité pour hiérarchiser les réponses aux incidents
 description: Découvrez comment utiliser des étiquettes de niveau de sensibilité pour hiérarchiser et examiner les incidents
 keywords: informations, protection, données, perte, prévention, étiquettes, dlp, incident, examiner, examen
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb21eb0d52f62c49a9406bd92697dccaff290d7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b27187530deb8182dea39c8053413a9f70ac4e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156281"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587812"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Utiliser des étiquettes de confidentialité pour hiérarchiser les réponses aux incidents
 
@@ -41,7 +40,7 @@ Defender pour le point de terminaison facilite la hiérquisation des incidents d
 Découvrez comment utiliser des étiquettes de sensibilité aux données pour hiérarchiser l’examen des incidents.
 
 > [!NOTE]
-> Les étiquettes sont détectées pour Windows 10, version 1809 ou ultérieure.
+> Les étiquettes sont détectées pour Windows 10, version 1809 ou une Windows 11.
 
 1. Dans Microsoft 365 Defender portail, **sélectionnez Incidents &** \> **alertes Incidents**.
 
@@ -68,4 +67,4 @@ Découvrez comment utiliser des étiquettes de sensibilité aux données pour hi
     ![Image de la chronologie de l’appareil avec des résultats de recherche restreints en fonction de l’étiquette.](images/machine-timeline-labels.png)
 
 > [!TIP]
-> Ces points de données sont également exposés par le biais de « DeviceFileEvents » dans le repérage avancé, ce qui permet aux requêtes avancées et à la planification de la détection de prendre en compte les étiquettes de sensibilité et l’état de protection des fichiers.
+> Ces points de données sont également exposés par le biais de « DeviceFileEvents » dans le repérage avancé, ce qui permet aux requêtes avancées et à la détection de planifier la détection de prendre en compte les étiquettes de sensibilité et l’état de protection des fichiers.

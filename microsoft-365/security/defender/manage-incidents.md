@@ -2,7 +2,6 @@
 title: Gérer les incidents dans Microsoft 365 Defender
 description: Découvrez comment attribuer, mettre à jour l’état,
 keywords: incident, incidents, analyse, réponse, alertes, alertes corrélées, affecter, mettre à jour, état, gérer, classification, microsoft, 365, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 89a294766f4472c4a23d7149ff2ca843d4e7cc38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ac0af88a38c6e563dd75e85d1f24820c9ebe19d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212088"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587757"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -61,11 +59,11 @@ Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 - Volet des propriétés d’un incident dans la file d’attente des incidents.
 - **Page récapitulatif** d’un incident.
 
-Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes,** créant ainsi un incident plus ou moins volumineux qui inclut toutes les alertes pertinentes.
+Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes,** créant ainsi un incident plus ou moins important qui inclut toutes les alertes pertinentes.
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l’incident
 
-Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, d’utilisateurs affectés, de sources ou de catégories de détection. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Microsoft 365 Defender attribue automatiquement un nom basé sur les attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident.**
 
@@ -80,12 +78,12 @@ Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des 
 
 ## <a name="assign-an-incident"></a>Affecter un incident
 
-Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur (aperçu). Vous ré assignez un incident, supprimez le compte d’affectation actuel en sélectionnant « x » en de côté du nom de compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
+Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur (aperçu). Vous ré assignez un incident, supprimez le compte d’affectation actuel en sélectionnant « x » en côté du nom du compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
 
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 
 1. Dans la file d’attente des incidents, sélectionnez **Filtres.**
-2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi**.
+2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi.**
 3. **Sélectionnez** Appliquer, puis fermez le volet **Filtres.**
 
 Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tant que signet pour afficher rapidement la liste des incidents qui vous sont attribués.
@@ -98,15 +96,15 @@ Un incident qui n’est pas résolu s’affiche comme **étant actif.**
 
 ## <a name="set-the-classification-and-determination"></a>Définir la classification et la détermination
 
-La classification des incidents est de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification.** 
+La classification des incidents est la question de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification.** 
 
-S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait du **champ Détermination.** Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
+S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait avec le **champ Détermination.** Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 
-Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
+Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire.** Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 

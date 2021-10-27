@@ -2,8 +2,6 @@
 title: Examiner une adresse IP associée à une alerte
 description: Utilisez les options d’examen pour examiner les communications possibles entre les appareils et les adresses IP externes.
 keywords: examiner, examen, adresse IP, alerte, Microsoft Defender pour point de terminaison, ADRESSE IP externe
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6ee90a1d39d873eb01eaf4c586b612bfe5a6fac8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d6a6b9161aa613ff16aba86169eff58ac2cc113e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192750"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588016"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -42,7 +40,7 @@ Examinez les communications possibles entre vos appareils et les adresses IP ext
 
 L’identification de tous les appareils de l’organisation ayant communiqué avec une adresse IP malveillante suspectée ou connue, telle que les serveurs de commande et de contrôle (C2), permet de déterminer l’étendue potentielle de la violation, des fichiers associés et des appareils infectés.
 
-Vous trouverez des informations dans les sections suivantes dans l’affichage des adresses IP :
+Vous trouverez des informations dans les sections suivantes dans l’affichage d’adresse IP :
 
 - IP dans le monde entier
 - Noms DNS inversés
@@ -85,7 +83,7 @@ Utilisez les filtres de recherche pour définir les critères de recherche. Vous
 
 En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 4b919500c929c4bc92c6ef090442b737ecadf212
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364638"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586312"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Recherche d’éléments partiellement indexés dans eDiscovery
 
@@ -37,7 +37,7 @@ Une recherche de découverte électronique que vous exécutez à partir du Centr
 
 - Le type de fichier est pris en charge pour l'indexation, mais une erreur d'indexation s'est produite pour un fichier spécifique.
 
-Bien que cela varie, la plupart des clients d’organisations ont moins de 1 % de contenu par volume et moins de 12 % de contenu par taille partiellement indexée. La différence entre le volume et la taille est dû au fait que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
+Bien que cela varie, la plupart des clients d’organisations ont moins de 1 % du contenu par volume et moins de 12 % du contenu par taille partiellement indexée. La différence entre le volume et la taille est dû au fait que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Pourquoi le nombre d’éléments partiellement indexés change-t-il pour une recherche ?
 
@@ -67,7 +67,7 @@ Vous pouvez déterminer le pourcentage d’éléments partiellement indexés à 
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(10.27 GB/146.46 MB) x 100 = 7.0%`
+`(10.27 GB/146.46 GB) x 100 = 7.0%`
 
 Ainsi, dans l’exemple précédent, 7 % de la taille totale des éléments de boîte aux lettres sont des éléments partiellement indexés. Comme indiqué précédemment, la plupart des clients d’organisations ont moins de 1 % du contenu par volume et moins de 12 % du contenu par taille partiellement indexée.
 
@@ -77,7 +77,7 @@ Dans les cas où vous devez examiner des éléments partiellement indexés pour 
   
 ![Choisissez la deuxième ou la troisième option pour exporter des éléments partiellement indexés.](../media/PartiallyIndexedItemsExportOptions.png)
   
-Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv. Ce rapport inclut la plupart des mêmes informations que le fichier ResultsLog.csv' toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés **:** les balises d’erreur et les propriétés **d’erreur.** Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation d’un type particulier a un impact sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche ciblée et récupérer et exporter des messages électroniques et des documents SharePoint ou OneDrive spécifiques afin de pouvoir les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions détaillées, voir Préparer un fichier [CSV](csv-file-for-an-id-list-content-search.md)pour une recherche ciblée dans Office 365 .
+Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv. Ce rapport inclut la plupart des mêmes informations que le ResultsLog.csv de données . toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés **:** les balises d’erreur et les propriétés **d’erreur.** Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation d’un type particulier a un impact sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche ciblée, récupérer et exporter des messages électroniques et des documents SharePoint ou OneDrive spécifiques afin de pouvoir les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions détaillées, voir Préparer un fichier [CSV](csv-file-for-an-id-list-content-search.md)pour une recherche ciblée dans Office 365 .
 
 > [!NOTE]
 > Le fichier Items.csv non Items.csv contient également des champs **nommés Type d’erreur** et **Message d’erreur.** Il s’agit de champs hérités qui  contiennent  des informations similaires aux informations des champs Balises d’erreur et Propriétés d’erreur, mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité.
@@ -105,11 +105,11 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365'a pas pu décoder le contenu.  <br/> |
 | `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’échantillonnage. Cela est généralement le résultat d’un bogue logiciel ou d’un incident de service.  <br/> |
 | `parserinputsize` <br/> |Une pièce jointe était trop volumineuse pour que l’outil d’outil de l’outil de recherche gère cette pièce jointe, et l’utilisation de cette pièce jointe n’a pas eu lieu ou n’a pas été achevée.  <br/> |
-| `parsermalformed` <br/> |Une pièce jointe a été malformée et n’a pas pu être gérée par l’outil d’enquête. Ce résultat peut être dû à des anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus qui prétendent être autre chose que revendiqués.  <br/> |
+| `parsermalformed` <br/> |Une pièce jointe a été malformée et n’a pas pu être gérée par l’outil d’enquête. Ce résultat peut être dû à d’anciens formats de fichiers, à des fichiers créés par des logiciels incompatibles ou à des virus qui prétendent être autre chose que revendiqués.  <br/> |
 | `parseroutputsize` <br/> |La sortie de l’utilisation d’une pièce jointe était trop volumineuse et devait être tronquée.  <br/> |
 | `parserunknowntype` <br/> |Une pièce jointe avait un type de fichier Microsoft 365 impossible à détecter.  <br/> |
 | `parserunsupportedtype` <br/> |Une pièce jointe avait un type de fichier que Office 365 pouvait détecter, mais l’examen de ce type de fichier n’est pas pris en charge.  <br/> |
-| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop importante pour être récupérée et le message n’a pas pu être traitée. Cela se produit généralement uniquement pour la propriété body d’un message électronique.  <br/> |
+| `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans Exchange Store était trop grande pour être récupérée et le message n’a pas pu être traitée. Cela se produit généralement uniquement pour la propriété body d’un message électronique.  <br/> |
 | `retrieverrms` <br/> |Le récupérateur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque la limite est atteinte et la propriété est tronquée.  <br/> |
 

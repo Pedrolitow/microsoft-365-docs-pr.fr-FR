@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur web.com pour Microsoft.
-ms.openlocfilehash: 0a8f3db894ee3171f6b086a1eeefbdaf7a7c841a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur web.com microsoft.
+ms.openlocfilehash: b95fd5412b7ddc4363e8d5e4ea345c1f551feef8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556720"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586800"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Connecter vos enregistrements DNS web.com à Microsoft 365
 
@@ -109,9 +109,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -169,7 +173,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 1. Sélectionnez ou copiez-collez les valeurs du tableau suivant. 
     
     |**Fait référence à** | **Nom de l’hôte** | **Alias to (Alias vers)**|**TTL (Durée de vie)**|
-    |:-----|:-----|:-----|
+    |:-----|:-----|:-----|:-----|
     | Autre hôte  <br/>| autodiscover  <br/>| autodiscover.outlook.com  <br/> | 1 heure  <br/>  |
   
 1. Sélectionnez **AJOUTER**.
@@ -281,7 +285,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des périphériques mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des appareils mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 

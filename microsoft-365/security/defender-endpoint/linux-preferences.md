@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556327"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585951"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -66,7 +66,7 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 
 #### <a name="enable--disable-real-time-protection"></a>Activer/désactiver la protection en temps réel
 
-Détermine si la protection en temps réel (analyser les fichiers à mesure qu’ils sont accessibles) est activée ou non.
+Détermine si la protection en temps réel (analyser les fichiers à mesure qu’ils sont accessibles) est activée.
 
 <br>
 
@@ -100,6 +100,22 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 |**Valeurs possibles**|false (par défaut) <p> true|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure.|
 |
+
+
+#### <a name="enabledisable-behavior-monitoring"></a>Activer/désactiver la surveillance du comportement 
+
+Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil.Pour améliorer l’efficacité de la protection de la sécurité, nous vous recommandons de maintenir cette fonctionnalité allumée.
+
+<br>
+
+****
+
+|Description|Valeur|
+|---|---|
+|**Clé**|name|
+|**Type de données**|Chaîne|
+|**Valeurs possibles**|désactivé <p> activé (par défaut)|
+|**Comments**|Disponible dans Defender pour Endpoint version 101.45.00 ou supérieure.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
 
@@ -150,7 +166,7 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 |||
   
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -162,7 +178,7 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une 
 |---|---|
 |**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -215,7 +231,7 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 
 ##### <a name="path-type-file--directory"></a>Type de chemin d’accès (fichier/répertoire)
 
-Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire.
+Indique si la propriété *du chemin d’accès* fait référence à un fichier ou un répertoire.
 
 <br>
 
@@ -418,7 +434,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -480,12 +496,14 @@ Le profil de configuration suivant :
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
 - Activer l’envoi automatique d’échantillons au `safe` niveau
+- Activer la surveillance du comportement
 
 ### <a name="sample-profile"></a>Exemple de profil
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -516,6 +534,7 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

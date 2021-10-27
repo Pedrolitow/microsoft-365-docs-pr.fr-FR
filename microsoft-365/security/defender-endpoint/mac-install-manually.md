@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5e94467557df7cefc5e1adaddc5a1ae515ef508a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152189"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585964"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -49,7 +49,7 @@ Avant de commencer, consultez la page principale de Microsoft Defender pour poin
 Téléchargez les packages d’installation et d’intégration à partir Microsoft 365 Defender portail :
 
 1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
-2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode de déploiement sur **le script local.**
+2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode deployment sur **le script local.**
 3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation.** Enregistrez-le sous wdav.pkg dans un répertoire local.
 4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration.** Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
 
@@ -84,7 +84,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
-> MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n’est pas disponible tant que l’appareil n’est pas redémarrage.
+> MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel ne sera pas disponible tant que l’appareil n’aura pas redémarrage.
 
 ## <a name="application-installation-macos-11-and-newer-versions"></a>Installation d’applications (macOS 11 et versions plus récentes)
 
@@ -92,27 +92,27 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Accédez au wdav.pkg téléchargé dans Finder et ouvrez-le.
 
-    ![Installation de l’application screenshot4.](images/big-sur-install-1.png)
+    ![Installation de l’application screenshot4.](images/monterey-install-1.png)
 
 2. Sélectionnez **Continuer,** acceptez les termes du contrat de licence, puis entrez le mot de passe lorsque vous y invitez.
 
 3. À la fin du processus d’installation, vous serez promu pour approuver les extensions système utilisées par le produit. Sélectionnez **Ouvrir les préférences de sécurité.**
 
-    ![Approbation de l’extension système.](images/big-sur-install-2.png)
+    ![Approbation de l’extension système.](images/monterey-install-2.png)
 
 4. Dans la **fenêtre Sécurité & confidentialité,** sélectionnez **Autoriser.**
 
-    ![Préférences de sécurité d’extension système1.](images/big-sur-install-3.png)
+    ![Préférences de sécurité d’extension système1.](images/monterey-install-3.png)
 
 5. Répétez les étapes 3 & 4 pour toutes les extensions système distribuées avec Microsoft Defender pour Endpoint sur Mac.
 
 6. Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender pour Endpoint sur Mac inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. Lorsque vous avez été invité à accorder à Microsoft Defender pour les autorisations de point de terminaison pour filtrer le trafic réseau, sélectionnez **Autoriser**.
 
-    ![Préférences de sécurité des extensions système2.](images/big-sur-install-4.png)
+    ![Préférences de sécurité des extensions système2.](images/monterey-install-4.png)
 
 7. Ouvrez La sécurité **des** préférences système & confidentialité et accédez à l’onglet Confidentialité. Accordez l’autorisation d’accès disque total à Microsoft Defender \>  **ATP** et Microsoft **Defender ATP Endpoint Security Extension**.  
 
-    ![Accès disque complet.](images/big-sur-install-5.png)
+    ![Accès disque complet.](images/monterey-install-5.png)
 
 ## <a name="client-configuration"></a>Configuration du client
 
@@ -144,9 +144,9 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 ## <a name="how-to-allow-full-disk-access"></a>Comment autoriser l’accès disque total
 
 > [!CAUTION]
-> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
+> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
 
-1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système \> **&** \> **confidentialité** confidentialité accès disque \> **total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
+1. Pour accorder le consentement, **ouvrez La** sécurité des préférences \> **système &** \> **confidentialité** \> **confidentialité accès disque total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
 
 2. Exécutez un test de détection antivirus pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -170,7 +170,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 3. Exécutez un test PEPT de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
-   1. Dans votre navigateur, par exemple, Microsoft Edge pour Mac ou Safari.
+   1. Dans votre navigateur, tel que Microsoft Edge pour Mac ou Safari.
 
    1. Téléchargez les fichiers MacOS MDATP DIY.zip https://aka.ms/mdatpmacosdiy et extrayez.
 
@@ -179,7 +179,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
       > Voulez-vous autoriser les téléchargements sur « mdatpclientanalyzer.blob.core.windows.net » ?<br/>
       > Vous pouvez modifier les sites web qui peuvent télécharger des fichiers dans Préférences de sites Web.
 
-4. Cliquez sur **Autoriser**.
+4. Cliquez sur **Autoriser.**
 
 5. Open **Downloads**.
 
@@ -189,7 +189,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    > Si vous double-cliquez, vous recevez le message suivant :
    >
    > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
-   > > MacOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
+   > > macOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
    > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]**
 
 7. Cliquez sur **Annuler**.
@@ -199,7 +199,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
     Le système doit afficher le message suivant :
 
     > **macOS ne peut pas vérifier le développeur de MDATP MacOSMUT. Voulez-vous vraiment l’ouvrir ?**<br/>
-    > En ouvrant cette application, vous allez remplacement de la sécurité système qui peut exposer votre ordinateur et vos informations personnelles à des programmes malveillants qui peuvent endommager votre Mac ou compromettre votre confidentialité.
+    > En ouvrant cette application, vous allez remplacement de la sécurité système qui peut exposer votre ordinateur et vos informations personnelles à des programmes malveillants qui peuvent nuire à votre Mac ou compromettre votre confidentialité.
 
 9. Cliquez sur **Ouvrir**. 
 
@@ -216,7 +216,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 12. Go to the Alert Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exemple d’une alerte de test PEPT macOS qui affiche la gravité, la catégorie, la source de détection et un menu d’actions réduire.":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exemple d’alerte de test PEPT macOS qui affiche la gravité, la catégorie, la source de détection et un menu d’actions réduire.":::
 
     Regardez les détails de l’alerte et la chronologie de l’appareil, puis effectuez les étapes d’examen normales.
 
@@ -226,4 +226,4 @@ Pour [plus d’informations](mac-resources.md#logging-installation-issues) sur l
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour Endpoint sur macOS des appareils clients.
+Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour endpoint sur macOS des appareils clients.

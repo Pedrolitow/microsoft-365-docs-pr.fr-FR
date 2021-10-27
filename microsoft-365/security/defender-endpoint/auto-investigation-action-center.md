@@ -2,7 +2,6 @@
 title: Visitez le centre de mise en œuvre pour voir les actions de correction
 description: Utiliser le centre de gestion des actions pour afficher les détails et les résultats à la suite d’un examen automatisé
 keywords: action, centre, autoir, automatisé, examen, réponse, correction
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +18,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: ce55054e921d3c97133dc1cdf3660e32f6b73d92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b359ee1905081396f382bf762f2c74e89acf5dd
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163143"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587824"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le centre de mise en œuvre pour voir les actions de correction
 
@@ -48,7 +47,7 @@ Le tableau suivant compare le nouveau centre de l’action unifié au centre de 
 |---------|---------|
 |Répertorie les actions en attente et terminées pour les appareils et le courrier électronique dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) plus Microsoft Defender pour [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
 |Se trouve à l’emplacement :<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se trouve à l’emplacement :<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| Dans le centre Microsoft 365 de sécurité, sélectionnez **Centre de sécurité.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de actions dans le centre de Microsoft 365 de sécurité."::: | In the Centre de sécurité Microsoft Defender, choose **Automated investigations** Action  >  **center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir du Centre de sécurité Microsoft Defender.":::  |
+| Dans le centre Microsoft 365 de sécurité, sélectionnez **Centre de sécurité.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de sécurité dans le centre de Microsoft 365 de sécurité."::: | In the Centre de sécurité Microsoft Defender, choose **Automated investigations** Action  >  **center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir du Centre de sécurité Microsoft Defender.":::  |
 
 Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Endpoint et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée.
 
@@ -68,28 +67,28 @@ Pour obtenir le centre de l’action unifiée dans le centre de sécurité Micro
 1. Go to the Microsoft 365 security center ( <https://security.microsoft.com> ) and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 
-Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de l’action, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab|Description|
 |---|---|
-|**En attente**|Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter les actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, le fichier **de mise en quarantaine).** <p> **CONSEIL**: veillez à examiner et à approuver [(ou rejeter)](manage-auto-investigation.md) les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.|
+|**Pending**|Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (telles que le fichier **de mise en quarantaine).** <p> **CONSEIL**: veillez à examiner et à approuver [(ou rejeter)](manage-auto-investigation.md) les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.|
 |**Historique**|Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <ul><li>Mesures correctives prises à la suite d’enquêtes automatisées</li><li>Actions de correction approuvées par votre équipe des opérations de sécurité</li><li>Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response</li><li>Mesures correctives prises par les fonctionnalités de protection contre les menaces dans Antivirus Microsoft Defender</li></ul> <p> Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées).](manage-auto-investigation.md#undo-completed-actions)|
 
-Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion des actions.
+Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion de l’action.
 
 :::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Colonnes et filtres dans le centre de l’action.":::
 
 - Sélectionnez un en-tête de colonne pour trier les éléments par ordre croissant ou décroit.
-- Utilisez le filtre de période pour afficher les données du jour, de la semaine, des 30 jours ou des 6 derniers mois.
+- Utilisez le filtre de période pour afficher les données du jour, de la semaine, des 30 ou 6 derniers mois.
 - Choisissez les colonnes que vous souhaitez afficher.
 - Spécifiez le nombre d’éléments à inclure sur chaque page de données.
 - Utilisez des filtres pour afficher uniquement les éléments que vous souhaitez voir.
 - Sélectionnez **Exporter** pour exporter les résultats vers .csv fichier.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et approuver des actions de correction](manage-auto-investigation.md)
-- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## <a name="see-also"></a>Voir aussi
 

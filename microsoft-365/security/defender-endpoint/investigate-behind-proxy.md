@@ -1,9 +1,7 @@
 ---
 title: Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
-description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour Endpoint, qui utilise une cible réelle au lieu d’un proxy.
+description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour point de terminaison, qui surfaces une cible réelle, au lieu d’un proxy.
 keywords: proxy, protection réseau, proxy avant, événements réseau, audit, bloc, noms de domaine, domaine
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a5fd36d57a1892189b4a5e9c4d13ad9d0ac6923
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3cfbfc2e0330ce7b09bc34d379d45fc75dde8ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198204"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586112"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 
@@ -50,7 +48,7 @@ La protection réseau peut être contrôlée à l’aide des modes suivants :
 - **Audit**: la connexion aux domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Centre de sécurité Microsoft Defender.
 
 
-Si vous éte désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Centre de sécurité Microsoft Defender.
+Si vous désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Centre de sécurité Microsoft Defender.
 
 Si vous ne la configurez pas, le blocage du réseau est désactivé par défaut.
 
@@ -92,6 +90,6 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Application de la protection réseau avec la stratégie de groupe - CSP de stratégie](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

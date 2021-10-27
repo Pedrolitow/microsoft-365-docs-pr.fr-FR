@@ -3,8 +3,6 @@ title: File d’attente des alertes dans Microsoft 365 Defender
 ms.reviewer: ''
 description: Afficher et gérer les alertes surface dans Microsoft 365 Defender
 keywords: ''
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: 60e4b251ad14824f22cb7dbe0a27f0dfc48afe58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5464a6eebb12b6b5351fdadd5fd55f653bb0f05f
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150286"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587968"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>File d’attente des alertes dans Microsoft 365 Defender
 
@@ -41,7 +39,7 @@ Découvrez comment afficher et gérer la file d’attente afin de pouvoir enquê
 Rubrique|Description
 :---|:---
 [Afficher et organiser la file d’attente des alertes](alerts-queue.md)|Affiche la liste des alertes qui ont été signalées dans votre réseau.
-[Gérer des alertes](manage-alerts.md)|Découvrez comment gérer des alertes, telles que modifier son état, l’affecter à un membre des opérations de sécurité et consulter l’historique d’une alerte.
+[Gérer des alertes](manage-alerts.md)|Découvrez comment gérer des alertes telles que modifier son état, l’affecter à un membre des opérations de sécurité et consulter l’historique d’une alerte.
 [Examiner des alertes](investigate-alerts.md)|Examinez les alertes qui affectent votre réseau, comprenez ce qu’elles signifient et comment les résoudre.
 [Examiner des fichiers](investigate-files.md)|Examinez les détails d’un fichier associé à une alerte, un comportement ou un événement spécifique.
 [Examiner des appareils](investigate-machines.md)|Examinez les détails d’un appareil associé à une alerte, un comportement ou un événement spécifique.

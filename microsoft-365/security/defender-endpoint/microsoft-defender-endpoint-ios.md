@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison iOS
 ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender pour endpoint sur iOS
-keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, vue d’ensemble, installation, déployer, désinstallation, intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2cf075b115cd5591e8187f753649ed48bdee7f03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c4c44b62cba02f772f606d13abce7b26270b9613
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174650"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587148"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "60174650"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender pour endpoint sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes seront disponibles par le biais d’un seul volet de la Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
+**Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes sont disponibles via un seul volet de la Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
 
 > [!CAUTION]
 > L’exécution d’autres produits de protection de point de terminaison tiers avec Defender for Endpoint sur iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
@@ -45,11 +45,16 @@ ms.locfileid: "60174650"
 
 - Licence Microsoft Defender pour point de terminaison attribuée à l’utilisateur final de l’application. Consultez [Microsoft Defender pour les conditions requises pour les licences de point de terminaison.](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
-- **Pour les appareils inscrits**: les appareils sont inscrits [via](/mem/intune/user-help/enroll-your-device-in-intune-ios) l’application Portail d'entreprise Intune pour appliquer les stratégies de conformité des appareils Intune. Pour ce faire, l’utilisateur final doit se voir attribuer Microsoft Intune licence.
+- **Pour les appareils inscrits**:
+    - Les appareils sont inscrits [via](/mem/intune/user-help/enroll-your-device-in-intune-ios) l’application Portail d'entreprise Intune pour appliquer les stratégies de conformité des appareils Intune. Pour ce faire, l’utilisateur final doit se voir attribuer Microsoft Intune licence.
     - Portail d'entreprise Intune’application peut être téléchargée à partir de [l’App Store d’Apple.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
-    - Notez qu’Apple n’autorise pas la redirection des utilisateurs à télécharger d’autres applications à partir de l’App Store et que cette étape doit donc être effectuée par l’utilisateur avant l’intégration à l’application Microsoft Defender pour endpoint.
+    
+    >[!NOTE]
+    >Apple n’autorise pas la redirection des utilisateurs à télécharger d’autres applications à partir de l’App Store. Cette étape doit donc être effectuée par l’utilisateur avant l’intégration à Microsoft Defender pour l’application Endpoint.)
+    
+    - Les appareils sont inscrits auprès de Azure Active Directory. Pour cela, l’utilisateur final doit être signé par le biais [Microsoft Authenticator’application.](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
-- **Pour les appareils non inscrits**: les appareils sont inscrits auprès Azure Active Directory. Pour ce faire, l’utilisateur final doit être [Microsoft Authenticator’application.](https://apps.apple.com/app/microsoft-authenticator/id983156458)
+- **Pour les appareils non inscrits**: les appareils sont inscrits auprès Azure Active Directory. Pour cela, l’utilisateur final doit être signé par le biais [Microsoft Authenticator’application.](https://apps.apple.com/app/microsoft-authenticator/id983156458)
 
 - Pour plus d’informations sur l’attribution de licences, voir [Attribuer des licences aux utilisateurs.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
@@ -63,7 +68,7 @@ ms.locfileid: "60174650"
 
 
     > [!NOTE]
-    > - Microsoft Defender pour endpoint étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
+    > - Microsoft Defender pour le point de terminaison étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
     > - En outre, Microsoft Defender pour point de terminaison prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.  
 
 **Configuration requise**
@@ -85,10 +90,10 @@ Le déploiement de Microsoft Defender pour Endpoint sur iOS peut être effectué
 
 - Fournir des commentaires via le système de commentaires dans l’application ou via la [console de sécurité unifiée](https://security.microsoft.com)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Déployer Microsoft Defender pour endpoint sur iOS via Intune pour les appareils inscrits](ios-install.md)
-- [Configurer la stratégie de protection des applications pour inclure les signaux de risque de Point de terminaison Defender (MAM)](ios-install-unmanaged.md)
+- [Configurer la stratégie de protection des applications pour inclure les signaux de risque defender pour les points de terminaison (MAM)](ios-install-unmanaged.md)
 - [Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS](ios-configure-features.md)
-- [Configurer une stratégie d’accès conditionnel basée sur le score de risque de l’appareil de Microsoft Defender pour endpoint](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [Configurer une stratégie d’accès conditionnel basée sur le score de risque de l’appareil de Microsoft Defender pour le point de terminaison](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [Informations de base sur la gestion des applications mobiles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

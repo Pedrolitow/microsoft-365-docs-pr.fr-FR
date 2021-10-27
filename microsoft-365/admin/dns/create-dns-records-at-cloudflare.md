@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur Cloudflare pour Microsoft.
-ms.openlocfilehash: 968979be1da5c54a109687df16cb706efb3bdea5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 80c7a3dded1da9c52f0baf215fcd1c39cd90d4f3
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556667"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586848"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Cloudflare pour Microsoft 365
 
@@ -41,7 +41,7 @@ Vous avez deux options pour la configuration des enregistrements DNS pour votre 
 
 - [**Utiliser l’Connecter**](#use-domain-connect-to-verify-and-set-up-your-domain) Si vous n’avez pas encore installé votre domaine auprès d’un autre fournisseur de services de messagerie, utilisez les étapes de l’Connecter de domaine pour vérifier et configurer automatiquement votre nouveau domaine à utiliser avec Microsoft 365. 
 
-OR
+    OR
 
 - [**Utiliser les étapes manuelles**](#create-dns-records-with-manual-setup) Vérifiez votre domaine en suivant les étapes manuelles ci-dessous et choisissez quand et quels enregistrements ajouter à votre bureau d’enregistrement de domaines. Cela vous permet de configurer de nouveaux enregistrements MX (courrier), par exemple, à votre convenance. 
 
@@ -52,6 +52,8 @@ Suivez ces étapes pour vérifier et configurer automatiquement votre domaine Cl
 1. Dans la Centre d'administration Microsoft 365, **sélectionnez Paramètres** domaines, puis sélectionnez le domaine  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>que vous souhaitez configurer.
 
 1. Sélectionnez les trois points (plus d’actions) > **sélectionnez Démarrer la configuration.**
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
 
 1. Comment voulez-vous connecter votre domaine ? page, sélectionnez **Continuer**.   
 
@@ -129,9 +131,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -212,7 +218,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 ### <a name="add-the-two-required-srv-records"></a>Ajouter les deux enregistrements SRV requis
 
 > [!IMPORTANT]
-> N’oubliez pas que Cloudflare est responsable de la rendre disponible. Si vous voyez des différences entre les étapes ci-dessous et l’interface graphique graphique (INTERFACE utilisateur graphique) Cloudflare actuelle, tirez parti de [la](https://community.cloudflare.com/)Community . 
+> N’oubliez pas que Cloudflare est responsable de la rendre disponible. Si vous voyez des différences entre les étapes ci-dessous et l’interface graphique graphique (INTERFACE utilisateur graphique) [Cloudflare](https://community.cloudflare.com/)actuelle, tirez parti de la Community . 
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
       
@@ -270,7 +276,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des périphériques mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des appareils mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 
@@ -280,7 +286,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
  
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Sélectionnez le domaine que vous souhaitez mettre à jour.":::
  
-3. Dans la page Vue d’ensemble de votre domaine, sélectionnez **DNS.**
+3. Dans la page Vue d’ensemble de votre domaine, sélectionnez **DNS**.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Sélectionnez DNS.":::
 

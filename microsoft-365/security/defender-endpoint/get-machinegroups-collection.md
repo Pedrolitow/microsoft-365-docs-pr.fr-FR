@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 7ce84e35f2a5ece81b1cb70436c6c75a940c99b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 0a9180c1705f7a583244d93ff9aa323aed1feb9c
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207018"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586468"
 ---
 # <a name="get-kb-collection-api"></a>API Obtenir une collection de ko
 

@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59f06ebfb75d628bb5e050a8dfd2b93e6714245f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b8109c71206ee9f689cafb28d7def14ff3122704
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208000"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586136"
 ---
 # <a name="batch-update-alerts"></a>Alertes de mise à jour par lot
 
@@ -42,7 +43,7 @@ Met à jour les propriétés d’un lot d’alertes [existantes.](alerts.md)
 
 L’envoi **de commentaire** est disponible avec ou sans mise à jour des propriétés.
 
-Les propriétés qui peuvent être mis à jour `status` sont : , et `determination` `classification` `assignedTo` .
+Les propriétés updatables `status` sont : , et `determination` `classification` `assignedTo` .
 
 ## <a name="limitations"></a>Limites
 
@@ -74,7 +75,7 @@ POST /api/alerts/batchUpdate
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -88,10 +89,10 @@ Pour de meilleures performances, n’incluez pas de valeurs existantes qui n’o
 Propriété | Type | Description
 :---|:---|:---
 alertIds | Chaîne de &lt; liste&gt;| Liste des ID des alertes à mettre à jour. **Obligatoire**
-status | Chaîne | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+status | String | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
 assignedTo | String | Propriétaire des alertes spécifiées
 classification | String | Spécifie la spécification des alertes spécifiées. Les valeurs de propriété sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif). 
-détermination | Chaîne | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+détermination | String | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Commentaire à ajouter aux alertes spécifiées.
 
 ## <a name="response"></a>Réponse

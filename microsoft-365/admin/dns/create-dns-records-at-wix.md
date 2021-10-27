@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services via Wix pour Microsoft.
-ms.openlocfilehash: ba5b814278c601c6fd6e9599075d4e297b87db58
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 229751df89e70903c8dd1ee86a15ac83517efe47
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556744"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586836"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Wix to Microsoft 365
 
@@ -75,9 +75,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -201,7 +205,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
-2. Sélectionnez   >  **Domaines...**, puis gérez les enregistrements **DNS** dans la liste de listes. 
+2. Sélectionnez   >  **Domaines...**, puis gérez les enregistrements **DNS** dans la liste liste. 
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Sélectionnez Gérer les enregistrements DNS dans la liste liste.":::
 

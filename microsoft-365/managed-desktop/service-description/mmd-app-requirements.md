@@ -1,6 +1,6 @@
 ---
 title: Microsoft Manged Desktop’application requise
-description: ''
+description: Outils de gestion que nous utilisons
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4a7db8f26d3f7201087a7e4390b56637af37dc08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29c531599e1122ae596281efbd187081348def6a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208120"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587956"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Manged Desktop’application requise
 
@@ -35,10 +35,10 @@ Microsoft Manged Desktop exige que nous gérions les appareils à l’aide d’u
 |Sécurité réseau     | Voir [Sécurité du réseau](security.md#network-security)        |
 |Sécurité des informations     |  Voir [Sécurité des informations](security.md#information-security)       |
 |Récupération des données     | OneDrive Entreprise        |
-|Productivité de base     | Microsoft 365 Apps for enterprise    |
+|Productivité de base     | Applications Microsoft 365 pour les entreprises    |
 |Navigateur     | Microsoft Edge        |
 
 
 
 
-Microsoft Manged Desktop surveiller d’autres logiciels en cours d’exécution sur des appareils gérés. Si elle a un impact négatif sur la gestion des appareils, la sécurité, les performances ou la fiabilité des appareils, vous demandons peut-être une [exception au plan de service.](customizing.md)
+Microsoft Manged Desktop surveiller d’autres logiciels en cours d’exécution sur des appareils gérés. Si cela a un impact négatif sur la gestion des appareils, la sécurité, les performances ou la fiabilité des appareils, vous demandons peut-être une [exception au plan de service.](customizing.md)

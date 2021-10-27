@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 979291cfde3c82bb6e16520f13f51c51e9bd47c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165759"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586456"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d'administration Microsoft 365
 
@@ -49,15 +49,15 @@ Go to the Centre d'administration Microsoft 365 at [https://admin.microsoft.com]
 
 3. Sous **l’onglet Membres,** choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
-4. Choisissez **Ajouter** pour ajouter une personne ou cliquez **sur X** pour supprimer une personne.
+4. Choisissez **Ajouter pour** ajouter une personne ou cliquez sur **X** pour supprimer une personne.
 
 5. Cliquez sur **Fermer**.
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations aux boîtes de réception des membres du groupe
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations dans les boîtes de réception des membres du groupe
   
 Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe envoyés à leur boîte de réception, même si les utilisateurs obtiennent des copies des invitations aux réunions de groupe envoyées à leur boîte de réception. Ils doivent se rendre dans le groupe pour voir les conversations. Vous pouvez modifier ce paramètre dans le Centre d’administration.
 
-Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie des e-mails de groupe et des invitations aux réunions envoyés à leur boîte Outlook réception. Ces derniers peuvent le lire et supprimer cette copie du courrier sans affecter d'autres personnes. Une copie du courrier est conservée dans la boîte aux lettres du groupe.
+Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie des e-mails de groupe et des invitations aux réunions envoyés à leur Outlook boîte de réception. Ces derniers peuvent le lire et supprimer cette copie du courrier sans affecter d'autres personnes. Une copie du courrier est conservée dans la boîte aux lettres du groupe.
 
 Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d’arrêter de suivre le groupe dans Outlook.
 
@@ -80,6 +80,9 @@ Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’e
 3. Dans la liste des groupes du Centre d’administration, sélectionnez le nom du groupe à modifier, puis sous l’onglet **Paramètres,** sélectionnez Autoriser les expéditeurs externes à envoyer un e-mail à **ce groupe.**
     
 4. Sélectionnez **Enregistrer**.
+
+> [!NOTE]
+> Il peut prendre jusqu’à 30 minutes avant que les utilisateurs en dehors de l’organique ne peuvent envoyer un e-mail au groupe.
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Supprimer définitivement un groupe Microsoft 365 de données
 

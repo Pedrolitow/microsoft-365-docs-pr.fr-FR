@@ -2,8 +2,6 @@
 title: Examiner les entités sur les appareils à l’aide de la réponse en direct dans Microsoft Defender pour le point de terminaison
 description: Accéder à un appareil à l’aide d’une connexion shell distante sécurisée pour faire des enquêtes et prendre des mesures de réponse immédiates sur un appareil en temps réel.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 07091dfaa997ff0415ecdb981b0b26f301cf0dce
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553795"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587172"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -170,7 +168,7 @@ Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui on
 | drivers  | Affiche tous les pilotes installés sur l’appareil.  | v |  N | N  |
 | fg `<command ID>`  | Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel.  REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non un piD  | v  | v  | v  |
 | fileinfo  | Récupération d’informations sur un fichier.  |v  | v  | v  |
-| findfile  | Localise les fichiers d’un nom donné sur l’appareil.  | v | v  | v  |
+| findfile  | Localise les fichiers sous un nom donné sur l’appareil.  | v | v  | v  |
 | getfile <file_path>  | Télécharge un fichier.  | v  | v  | v  |
 | Aide  | Fournit des informations d’aide pour les commandes de réponse en direct.  |v  | v | v  |
 | tâches  | Indique les travaux en cours d’exécution, leur ID et leur état.  | v  | v | v |
@@ -260,7 +258,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 5. Si vous le souhaitez, connaissez les paramètres nécessaires pour le script, cochez la case des paramètres de script. Dans le champ de texte, entrez un exemple et une description.
 
-6. Cliquez sur **Confirmer.**
+6. Cliquez **sur Confirmer.**
 
 7. (Facultatif) Pour vérifier que le fichier a été chargé dans la bibliothèque, exécutez la `library` commande.
 

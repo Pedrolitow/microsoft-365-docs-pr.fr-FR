@@ -13,13 +13,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment rechercher des rubriques dans Rubriques Topics à l’aide de SharePoint taxonomie.
-ms.openlocfilehash: ed4fcd97151ebdb14294803fa33c0763f4f0cfda
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c619684163cc7571e803163b5a036929d700bb94
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556797"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587396"
 ---
 # <a name="use-sharepoint-taxonomy-terms-to-create-topics-in-microsoft-viva-topics"></a>Utilisez SharePoint termes de taxonomie pour créer des rubriques dans Sujets Microsoft Viva
 
@@ -39,7 +40,7 @@ Vous devez avoir des autorisations de modification sur les termes globaux que vo
 
 ![Diagramme montrant les étapes et les états de création d’une rubrique dans le magasin de termes.](../media/knowledge-management/taxonomy-diagram.png)
 
-Lorsqu’une personne demande la création d’une rubrique à partir d’un terme, le service de taxonomie relaie les informations sur le terme à Rubriques Question pour la création d’une rubrique correspondante. Ces informations sont les suivantes :
+Lorsqu’une personne demande la création d’une rubrique à partir d’un terme, le service de taxonomie relaie des informations sur le terme à Rubriques Question pour la création d’une rubrique correspondante. Ces informations sont les suivantes :
 
 - Nom (étiquette par défaut)
 - Synonymes
@@ -121,7 +122,7 @@ Les demandes de création de rubrique à partir d’un terme de taxonomie se cla
 
 - **Demandé** : indique que la demande est mise en file d’attente et que le service collecte toutes les informations de terme requises. Une nouvelle demande peut rester dans l’état Demandé pendant quelques heures avant de se déplacer vers l’un des deux états finaux.
 
-- **Réussite** : indique que la demande a été relayée avec succès à Topics Avec toutes les informations de terme nécessaires. Topics crée la rubrique correspondante dans les 24 heures suivantes.
+- **Réussite** : indique que la demande a été relayée avec succès à Topics Avec toutes les informations de terme nécessaires. Topics crée la rubrique correspondante dans les prochaines 24 heures.
 
 - **Refusée** : indique que la demande ne peut pas être traitée, car aucun fichier n’est marqué avec le terme. Il doit y avoir au moins un fichier balisé pour que la demande aboute. Si les fichiers sont marqués ultérieurement avec le terme, vous pouvez créer manuellement une nouvelle demande pour le terme.
 

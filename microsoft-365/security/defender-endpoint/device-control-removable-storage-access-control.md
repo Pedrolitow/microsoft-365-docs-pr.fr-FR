@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/21/2021
-ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/25/2021
+ms.openlocfilehash: b227af391856166fb4a3b35be7355d8030677658
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553639"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587836"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -48,21 +48,21 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
 
-- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath, ComputerSid
+- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur des chemins d’fichiers, ComputerSid
 - **4.18.2105** ou version ultérieure : ajouter la prise en charge des caractères génériques pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, la prise en charge du SSD (Un SSD Extrême SanDisk)/USB Attached SCSI (UAS)
 - **4.18.2107** ou ultérieur : ajouter la prise en charge Windows appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le [recherche avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell.":::
 
 > [!NOTE]
-> Aucun des Sécurité Windows n’a besoin d’être actif, car vous pouvez exécuter le contrôle d’accès Stockage amovible indépendamment de Sécurité Windows statut.
+> Aucun des Sécurité Windows ne doit être actif, car vous pouvez exécuter le contrôle d’accès Stockage amovible indépendamment de l’état Sécurité Windows’accès.
 
 ## <a name="policy-properties"></a>Propriétés de stratégie
 
 Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockage amovible :
 
 > [!NOTE]
-> Les commentaires utilisant la notation de commentaire XML peuvent être utilisés dans les fichiers XML de règle et de groupe, mais ils doivent se trouver à l’intérieur de la première balise XML, et non de la première ligne du `<!-- COMMENT -->` fichier XML.
+> Les commentaires utilisant la notation de commentaire XML peuvent être utilisés dans les fichiers XML de règle et de groupe, mais ils doivent se trouver à l’intérieur de la première balise XML, et non de la première ligne du fichier `<!-- COMMENT -->` XML.
 
 ### <a name="removable-storage-group"></a>Groupe de Stockage amovible
 
@@ -70,8 +70,8 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 
 |Nom de la propriété|Description|Options|
 |---|---|---|
-|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0 : correspondre à cette paire VID/PID exacte</li><li>55E0 : faire correspondre n’importe quel média avec PID=55E0 </li><li>0751 : faire correspondre n’importe quel média avec VID=0751</li></ul></li></ul>|
+|**GroupId**|GUID, un ID unique, représente le groupe et sera utilisé dans la stratégie.||
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0 : correspondre à cette paire VID/PID exacte</li><li>55E0 : faire correspondre n’importe quel média avec PID=55E0 </li><li>0751 : faire correspondre n’importe quel média avec VID=0751</li></ul></li></ul>|
 |**MatchType**|Lorsque plusieurs propriétés d’appareil sont utilisées dans DescriptorIDList, MatchType définit la relation.|**MatchAll**: tous les attributs sous la relation DescriptorIdList seront **And** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système vérifie si la clé USB répond aux deux valeurs. <p> **MatchAny**: les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système appliquera l’application tant que la clé USB aura une valeur **DeviceID** ou **InstanceID** identique. |
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
@@ -80,14 +80,14 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 
 | Nom de la propriété | Description | Options |
 |---|---|---|
-| **PolicyRuleId** | [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente la stratégie et sera utilisé dans le rapport et la résolution des problèmes. | |
+| **PolicyRuleId** | GUID, un ID unique, représente la stratégie et sera utilisé dans le rapport et la résolution des problèmes. | |
 | **IncludedIdList** | Groupe(s) à appliquer à la stratégie. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.|L’ID de groupe/GUID doit être utilisé à cette instance. <p> L’exemple suivant illustre l’utilisation de GroupID : <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| **ExcludedIDList** | Groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
+| **ExcludedIDList** | Les groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
 | **ID d’entrée** | Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.| |
 | **Type (Type)** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <ul><li>Application : autoriser ou refuser </li><li>Audit : AuditAllowed ou AuditDenied</ul></li> | <ul><li>Autoriser</li><li>Refuser </li><li>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</li><li>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.</li></ul> <p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**. |
-| **Sid** | Le sid de l’ordinateur local ou le sid de l’objet AD définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
-| **ComputerSid** | Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
-| **Options** | Définit si les notifications sont affichées ou non |**0 ou 4 :** lorsque le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </li></ul> <p> Lorsque type **AuditAllowed est** sélectionné : <ul><li>0 : rien</li><li>1 : rien</li><li>2 : événement d’envoi</li><li>3 : événement d’envoi </li></ul><p> Lorsque type **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement </li></ul>|
+| **Sid** | Le sid d’utilisateur local ou le groupe sid d’utilisateur ou le sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
+| **ComputerSid** | Le sid d’ordinateur local ou le groupe sid d’ordinateur ou le sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
+| **Options** | Définit s’il faut afficher la notification ou non |**0 ou 4 :** lorsque le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </li></ul> <p> Lorsque type **AuditAllowed est** sélectionné : <ul><li>0 : rien</li><li>1 : rien</li><li>2 : événement d’envoi</li><li>3 : événement d’envoi </li></ul><p> Lorsque type **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement </li></ul>|
 |AccessMask|Définit l’accès. | **1-7**: <ol><li>Lecture</li><li>Écriture</li><li>Lecture et écriture</li><li>Exécuter</li><li>Lecture et exécution</li><li>Écriture et exécution </li><li>Lecture et écriture et exécution</li></ol> |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Stockage contrôle d’accès des périphériques amovibles

@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour le point de terminaison sur Linux à l’aide de L’Atelier.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, loi, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c3832cb8f5783d7e972fd41f4d9e56a650390e2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152238"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585963"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 
@@ -34,7 +34,7 @@ ms.locfileid: "60152238"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide de L’Atelier. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
+Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide de Latra. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer un manifeste d’atelier](#create-a-puppet-manifest)
@@ -45,14 +45,14 @@ Cet article explique comment déployer Defender pour point de terminaison sur Li
 
  Pour obtenir une description des conditions préalables et de la condition système requise pour la version logicielle actuelle, voir la page principale de [Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md)
 
-En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de la charge de travail, configurer Configure et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple pour *vous* aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
+En outre, pour le déploiement de Manière générale, vous devez être familiarisé avec les tâches d’administration de l’équipe de sécurité, configurer la configuration de l’appareil et savoir comment déployer des packages. Il existe de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules De jeu pris en charge, par exemple *pour* vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, [reportez-vous](https://puppet.com/docs) à la documentation de Documentation.
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
 Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
 1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux-2.png)
@@ -77,7 +77,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 ## <a name="create-a-puppet-manifest"></a>Créer un manifeste de jeu
 
-Vous devez créer un manifeste de Manifest pour le déploiement de Defender for Endpoint sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
+Vous devez créer un manifeste Pour déployer Defender pour Point de terminaison sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
 
 Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environnements/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.json créé ci-dessus dans le *dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
 
@@ -115,12 +115,12 @@ Notez votre distribution et version et identifiez l’entrée la plus proche sou
 Dans les commandes ci-dessous, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
 
 > [!NOTE]
-> Dans le cas de RedHat, Oracle EL et CentOS 8, *remplacez [distro]* par « rhel ».
+> Dans le cas de RedHat, Oracle Linux, Amazon Linux 2 et CentOS 8, *remplacez [distro]* par « rhel ».
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (
@@ -230,7 +230,7 @@ Si le produit n’est pas sain, le code de sortie (qui peut être `echo $?` vér
 - 1 si l’appareil n’est pas encore intégré.
 - 3 si la connexion au daemon ne peut pas être établie.
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
  Pour plus d’informations sur la recherche du journal généré automatiquement créé par le programme d’installation lorsqu’une erreur se produit, voir Problèmes [d’installation du journal.](linux-resources.md#log-installation-issues)
 

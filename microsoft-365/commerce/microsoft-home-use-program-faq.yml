@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: Forum aux questions (FAQ) sur les Programme d'utilisation à domicile Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 1a4ce5ff55d9d5a24e83e439e838d049d29bd185
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 7fae34efdc9989f7a5e7807040c9e9457b8b4688
+  ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60156761"
+  ms.lasthandoff: 10/26/2021
+  ms.locfileid: "60586860"
 title: Programme d'utilisation à domicile Microsoft forum aux questions (FAQ)
 summary: >
   Les clients avec licence en volume utilisent le Programme d'utilisation à domicile Microsoft (HUP) sur [le Microsoft Store pour Entreprises web.](https://go.microsoft.com/fwlink/?linkid=2139192)
@@ -43,14 +43,14 @@ sections:
       Le Programme d'utilisation à domicile Microsoft (HUP) permet aux employés d’entreprises éligibles d’acheter des produits consommateurs Microsoft à prix réduit. Vous pouvez vérifier les remises actuelles pour chaque offre de produit en visitant la page produit du programme d’utilisation [à domicile.](https://www.microsoft.com/home-use-program)
   - question: >
       Dans quels marchés le programme d’utilisation à domicile est-il proposé ?
-    answer: "Les remises sur Microsoft 365 Famille abonnements personnels et les abonnements personnels sont proposées aux sociétés éligibles dans le monde entier, à l’exception des exceptions ci-après :\n\n- Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.\n- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine.](https://www.microsoftstore.com.cn/home-use-program/invite) For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japon : Microsoft 365 Famille n’est pas disponible.\n- Des remises sur certains appareils Surface et accessoires sont proposées aux sociétés éligibles dans certains marchés. \n"
+    answer: "Les remises sur Microsoft 365 Famille abonnements personnels et les abonnements personnels sont proposées aux sociétés éligibles dans le monde entier, à l’exception des exceptions ci-après :\n\n- Liban, Macao, Russie et Venezuela : cette offre n’est pas disponible sur ces marchés.\n- Chine et Hong Kong : un abonnement d’un an est disponible sur ces marchés. Pour la Chine, visitez [Microsoft 365 en Chine.](https://www.microsoftstore.com.cn/home-use-program/invite) For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japon : Microsoft 365 Famille n’est pas disponible.\n- Des remises sur certains appareils Surface et accessoires sont proposées aux sociétés éligibles dans certains marchés. \n"
   - question: >
       Comment une organisation peut-elle bénéficier de remises HUP ?
     answer: "Pour que les employés tirez parti de la remise Programme d'utilisation à domicile Microsoft, ils ont besoin d’une adresse de messagerie d’entreprise valide et d’un compte Microsoft actif, et votre organisation doit répondre à l’un des critères suivants :\n\n- Clients qui ont une software assurance active pour les applications Office éligibles\n- Clients qui ont Microsoft 365/Microsoft 365 E3/E5 à partir de Software Assurance\n- Clients commerciaux et publics qui ont acheté ≥ 2 000 licences d’une ou d’une combinaison Microsoft 365 E3/E5\n- Éducation et clients à but non lucratif\n- Clients commerciaux et publics ayant dépensé 250 000 USD ou plus au cours des 12 derniers mois sur des Power BI, Office, des appareils Surface & accessoires, Windows et Enterprise Mobility \n"
   - question: >
       Pourquoi dois-je créer un compte Azure Active Directory (AAD) pour utiliser le programme d’utilisation à domicile/ Microsoft Store pour Entreprises ?
     answer: >
-      Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages de licences et de produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir du VLSC et pour valider les domaines de messagerie sur les employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire aux comptes Azure AD via [Office 365 entreprise.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
+      Pour mettre à jour et moderniser le programme d’utilisation à domicile sur un plus large éventail d’avantages de licences et de produits, nous devons modifier la façon dont nous respectons le programme HUP. Microsoft Store pour Entreprises est utilisé pour la validation d’éligibilité et pour affecter des avantages HUP, et pour cela, il s’appuie sur AAD pour connecter des informations à partir du VLSC et pour valider les domaines de messagerie sur les employés de votre organisation. Pour plus d’informations, voir Pour vous inscrire à Azure AD comptes via [Office 365 entreprise.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
   - question: >
       Comment devenir l’administrateur informatique affecté d’un client géré ?
     answer: >
@@ -79,16 +79,16 @@ sections:
   - question: >
       J’ai des difficultés à gérer les avantages Programme d'utilisation à domicile Microsoft de mon organisation. Où puis-je obtenir de l’aide ?
     answer: >
-      Pour la prise en charge des problèmes lors de la migration à partir du Centre de gestion des licences en volume ou pour accéder Microsoft Store pour Entreprises, consultez la prise en charge du CENTRE de gestion [des licences en volume.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
+      Pour obtenir une prise en charge des problèmes lors de la migration à partir du Centre de gestion des licences en volume ou pour accéder Microsoft Store pour Entreprises, consultez la prise en charge du CENTRE de gestion [des licences en volume.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
 
 
       Pour les problèmes d’affichage de l’avantage une fois que vous avez déjà Microsoft Store pour Entreprises, consultez la prise en charge de l’administrateur [du Store pour Entreprises](/microsoft-store/)
   - question: >
       Pourquoi ne vois-je pas d’option d’achat Visio Professionnel 2021 et/ou Project Professionnel 2021 ?
     answer: >
-      Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2021 et/ou Project Professionnel 2021, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si les remises prévues ne sont pas appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
+      Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2021 et/ou Project Professionnel 2021, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si vous ne voyez pas de remises attendues appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
   - question: >
-      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’un support pour l’achat et l’installation ?
+      Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’une assistance pour l’achat et l’installation ?
     answer: >
       Si les employés ont des questions, reportez-les aux ressources suivantes :
 

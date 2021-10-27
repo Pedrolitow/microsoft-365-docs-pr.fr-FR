@@ -1,6 +1,6 @@
 ---
 title: Configurer et valider des exclusions en fonction de l’extension, du nom ou de l’emplacement
-description: Exclure des fichiers Antivirus Microsoft Defender les analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
+description: Exclure des fichiers Antivirus Microsoft Defender analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
 keywords: exclusions, fichiers, extension, type de fichier, nom de dossier, nom de fichier, analyses
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,14 +14,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 10/05/2021
+ms.date: 10/25/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7936c7023801a5eab75b9b39c69ad0d0568281de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f31af157470a64984968f2a7befd23aab7af37e0
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205654"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588220"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -30,7 +30,7 @@ ms.locfileid: "60205654"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
 
-Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md)et à la surveillance en temps réel toujours en cours. **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
+Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui [](run-scan-microsoft-defender-antivirus.md)s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande et à la protection et à la surveillance en temps réel toujours en temps [réel.](configure-real-time-protection-microsoft-defender-antivirus.md) **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
 
 - Exclusions basées sur les extensions de fichiers et les emplacements de dossiers (décrits dans cet article)
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -115,7 +115,7 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
 
 5. Sélectionnez **OK**.
 
-6. Ouvrez **le paramètre Exclusions des extensions** pour la modification et ajoutez vos exclusions.
+6. Ouvrez **le paramètre Exclusions des extensions** pour modification et ajoutez vos exclusions.
     1. Définissez l’option **sur Activé.**
     2. Sous la section **Options,** sélectionnez **Afficher.**
     3. Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom** de la valeurEnter **0** dans la **colonne** Valeur.
@@ -206,15 +206,15 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 |Caractère générique|Exemples|
 |---|---|
 |`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de** dossiers, l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
-|`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier dans et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
+|`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclut `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
-> Si vous mélangez un argument d’exclusion de fichier avec un argument d’exclusion de dossier, les règles s’arrêtent à la correspondance de l’argument de fichier dans le dossier de correspondance et ne recherchent aucune correspondance de fichier dans les sous-dossiers.
+> Si vous mélangez un argument d’exclusion de fichier avec un argument d’exclusion de dossier, les règles s’arrêteront à la correspondance d’argument de fichier dans le dossier de correspondance et ne rechercheront pas de correspondances de fichiers dans les sous-dossiers.
 >
 > Par exemple, vous pouvez exclure tous les fichiers qui commencent par « date » dans les dossiers et à l’aide de `c:\data\final\marked` `c:\data\review\marked` l’argument de règle `c:\data\*\marked\date*` .
 >
-> Toutefois, cet argument ne correspond à aucun fichier des sous-dossiers sous `c:\data\final\marked` ou `c:\data\review\marked` .
+> Toutefois, cet argument ne correspond à aucun fichier dans les sous-dossiers sous `c:\data\final\marked` ou `c:\data\review\marked` .
 
 <a id="review"></a>
 
@@ -308,17 +308,17 @@ Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières 
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusions à l’aide de MpCmdRun
 
-Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
+Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md)utilisez la commande suivante :
 
 ```DOS
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
+cd 4.18.2110-3.0 (Where 4.18.2110-3.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.2110-3.0 (publiée en octobre 2021) ou version ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 
@@ -344,7 +344,7 @@ $WDAVprefs.ExclusionExtension
 $WDAVprefs.ExclusionPath
 ```
 
-Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de `Add-MpPreference` l’cmdlet :
+Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de la `Add-MpPreference` cmdlet :
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell affichant uniquement les entrées de la liste d’exclusions.":::
 
@@ -377,7 +377,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 [io.file]::WriteAllText("test.txt",'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*')
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="see-also"></a>Voir aussi
 

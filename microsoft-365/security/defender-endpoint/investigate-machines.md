@@ -2,8 +2,6 @@
 title: Examiner les appareils dans la liste Defender pour les appareils de point de terminaison
 description: Examinez les appareils concernés en consultant les alertes, les informations de connexion réseau, l’ajout de balises et de groupes d’appareils et la vérification de l’état du service.
 keywords: devices, tags, groups, endpoint, alerts queue, alerts, device name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity, service health
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f229aee785066f1cf356a95a3ffd242704c578dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 83f025ed8319e74eaa2e908765a1ac1922ac8415
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154853"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587848"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -81,7 +79,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 - Consulter un spécialiste des menaces
 - Centre de notifications
 
-Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichiers spécifique.
+Vous pouvez prendre des mesures de réponse dans le centre de réponse, dans une page d’appareil spécifique ou dans une page de fichier spécifique.
 
 Pour plus d’informations sur la façon d’agir sur un appareil, voir [Prendre une action de réponse sur un appareil.](respond-machine-alerts.md)
 
@@ -91,7 +89,7 @@ Pour plus d’informations, voir [Examiner les entités utilisateur.](investigat
 
 Les onglets fournissent des informations pertinentes sur la sécurité et la prévention des menaces relatives à l’appareil. Dans chaque onglet, vous pouvez personnaliser les  colonnes affichées en sélectionnant Personnaliser les colonnes dans la barre au-dessus des en-têtes de colonne.
 
-### <a name="overview"></a>Aperçu
+### <a name="overview"></a>Présentation
 
 **L’onglet** Vue d’ensemble affiche les [cartes](#cards) pour les alertes actives, les utilisateurs connectés et l’évaluation de la sécurité.
 
@@ -111,7 +109,7 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 **L’onglet** Chronologie fournit une vue chronologique des événements et des alertes associées qui ont été observés sur l’appareil. Cela peut vous aider à corréler tous les événements, fichiers et adresses IP par rapport à l’appareil.
 
-La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour mieux contrôler votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
+La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 > [!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
@@ -154,7 +152,7 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-utilisation. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité.](images/security-recommendations-device.png)
 
@@ -179,12 +177,12 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="active-alerts"></a>Alertes actives
 
-La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes liées à l’appareil et à leur niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
+La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes relatives à l’appareil et à son niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
 
 ![Image de la carte d’alerte active.](images/risk-level-small.png)
 
 > [!NOTE]
-> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+> Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Utilisateurs connectés
 
@@ -202,7 +200,7 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ![Image de la carte d’évaluation de la sécurité.](images/security-assessments.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

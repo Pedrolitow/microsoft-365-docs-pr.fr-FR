@@ -19,19 +19,19 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: 43659c3eb548d31ad3b6d07d7855a5076b843b54
-ms.sourcegitcommit: d38a40db14a0e41e3c1c0f235843968b2746c6c4
+ms.openlocfilehash: cf701be45841f155b825e86b761f5967bc6298f4
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562167"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588276"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
 > [!IMPORTANT]
 > Commencer rapidement avec notre jeu facile à utiliser [Microsoft Defender pour Office 365 lecture.](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf) Ce manuel vous aidera à mettre à votre place votre version d’essai gratuite en vous montrant comment protéger votre organisation avec Microsoft Defender pour Office 365.
 
-Microsoft Defender pour Office 365 votre organisation contre les menaces malveillantes qui sont posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
+Microsoft Defender for Office 365 protège votre organisation contre les menaces malveillantes qui sont posées par les messages électroniques, les liens (URL) et les outils de collaboration. Defender pour Office 365 inclut :
 
 - **Stratégies de protection contre les menaces** : définissez des stratégies de protection contre les menaces pour définir le niveau de protection approprié pour votre organisation.
 - **Rapports** : affichez des rapports en temps réel pour surveiller les performances de Defender pour Office 365 dans votre organisation.
@@ -46,8 +46,8 @@ Une version d’essai de Microsoft Defender pour Office 365 est un moyen simple 
 
 |Fonctionnalité|Description|
 |---|---|
-|[Paramètres exclusifs dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenir la protection contre l’emprunt d’identité d’utilisateur, la protection contre l’emprunt d’identité de domaine, l’intelligence des boîtes aux lettres et les seuils de hameçonnage avancés.|
-|[Pièces jointes fiables](safe-attachments.md)|Inspectez les pièces jointes des e-mails et d’autres fichiers dans un environnement de détonation contrôlé pour capturer les programmes malveillants nouveaux et anti-programme malveillant.|
+|[Paramètres exclusifs dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenir la protection contre l’emprunt d’identité d’utilisateur, la protection contre l’usurpation d’identité de domaine, l’intelligence des boîtes aux lettres et les seuils de hameçonnage avancés.|
+|[Pièces jointes fiables](safe-attachments.md)|Inspectez les pièces jointes des e-mails et d’autres fichiers dans un environnement de détonation contrôlé pour capturer les programmes malveillants nouveaux et évitent.|
 |[Liens fiables](safe-links.md)|Effectuez des vérifications au moment du clic pour vous assurer que les URL qui ont réussi l’inspection initiale n’ont pas été localisées.|
 |[Suivis des menaces](threat-trackers.md)<sup>\*</sup>|Utilisez des widgets et des affichages informatifs pour identifier les problèmes de cybersécurité qui peuvent avoir un impact sur votre organisation.|
 |[Explorateur de menaces](threat-explorer.md)<sup>\*</sup>|Recherchez des informations en temps quasi réel sur les menaces dans votre Office 365 courrier électronique.|
@@ -55,7 +55,7 @@ Une version d’essai de Microsoft Defender pour Office 365 est un moyen simple 
 |[Formation à la simulation d’attaques](attack-simulation-training.md)<sup>\*</sup>|Formez vos utilisateurs à identifier les attaques par hameçonnage et à répondre de manière appropriée.|
 |[Affichages des campagnes](campaigns.md)<sup>\*</sup>|Examiner et répondre à une activité de courrier malveillant à grande échelle.|
 |[Rapports utilisant Defender pour Office 365 fonctionnalités](view-reports-for-mdo.md)|Afficher des rapports, notamment l’état de la protection contre les menaces, la protection contre les menaces d’URL, la latence du courrier, etc.|
-|[Protection des comptes prioritaires](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Les utilisateurs que vous identifiez comme comptes prioritaires sont marqués dans des alertes, des rapports et des enquêtes afin qu’ils se démarquent. Vous pouvez également utiliser la balise Priority dans les filtres.|
+|[Protection des comptes prioritaires](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Les utilisateurs que vous identifiez comme comptes de priorité sont marqués dans des alertes, des rapports et des enquêtes afin qu’ils se démarquent. Vous pouvez également utiliser la balise Priority dans les filtres.|
 |
 
 <sup>\*</sup>Cette fonctionnalité est exclusive à Defender pour Office 365 Plan 2.
@@ -72,7 +72,7 @@ Pendant la configuration de la version d’essai, la fonctionnalité de réponse
 
 ## <a name="licensing"></a>Licences
 
-Dans le cadre de la configuration de la version d’essai, les licences Defender pour Office 365 sont automatiquement appliquées à l’organisation. Les licences sont gratuites pour les 30 premiers jours.
+Dans le cadre de la configuration de la version d’essai, les licences Defender pour Office 365 sont automatiquement appliquées à l’organisation. Les licences sont gratuites pour les 90 premiers jours.
 
 La carte de licence de l’essai affiche les informations suivantes :
 
@@ -112,15 +112,15 @@ Pour plus d’informations, [consultez Microsoft Defender pour obtenir Office 36
 
 ### <a name="q-how-do-i-extend-the-trial"></a>Q : Comment prolonger la version d’essai ?
 
-R : voir [Prolonger votre version d’essai.](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial)
+R : Voir [Prolonger votre version d’essai.](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial)
 
 ### <a name="q-what-happens-to-my-data-after-the-trial-expires"></a>Q : Qu’advient-il de mes données après l’expiration de la version d’essai ?
 
-R : Une fois votre version d’essai expirée, vous aurez accès à vos données d’essai (données des fonctionnalités de Defender pour Office 365 que vous n’avez pas précédemment) pendant 30 jours. Après cette période de 30 jours, toutes les stratégies et données associées à la version d’Office 365 Defender for Office 365 seront supprimées.
+R : Une fois votre version d’essai expirée, vous aurez accès à vos données d’essai (données des fonctionnalités de Defender pour Office 365 que vous n’avez pas encore disponibles) pendant 30 jours. Après cette période de 30 jours, toutes les stratégies et données associées à la version d’Office 365 Defender for Office 365 seront supprimées.
 
 ### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>Q : Combien de fois puis-je utiliser la version d’Office 365 Defender dans mon organisation ?
 
-R : Un maximum de 2 fois. Si votre première version d’essai expire, vous devez patienter au moins 30 jours après la date d’expiration avant de pouvoir vous inscrire à nouveau à la version d’Office 365 Defender.
+R : Un maximum de 2 fois. Si votre première version d’essai expire, vous devez patienter au moins 30 jours après la date d’expiration avant de pouvoir vous inscrire à nouveau à la version d’Office 365 Defender. Après votre deuxième version d’essai, vous ne pouvez pas vous inscrire à une autre version d’essai.
 
 ## <a name="learn-more-about-defender-for-office-365"></a>En savoir plus sur Defender pour Office 365
 
@@ -146,7 +146,7 @@ L’IA de pointe détecte les contenus malveillants et suspects et met en corré
 
 ### <a name="investigation-and-hunting"></a>Investigation et recherche
 
-Les expériences puissantes permettent d’identifier, de hiérarchiser et d’examiner les menaces, avec des fonctionnalités de recherche avancées pour suivre les attaques dans Office 365.
+Les expériences puissantes permettent d’identifier, de hiérarchiser et d’examiner les menaces, avec des fonctionnalités de recherche avancées pour suivre les attaques Office 365.
 
 - [Détections en temps réel et de l’Explorateur de menaces](threat-explorer.md)
 - [Rapports en temps réel dans Defender pour Office 365](view-reports-for-mdo.md)

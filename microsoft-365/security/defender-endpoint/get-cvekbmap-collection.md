@@ -1,6 +1,6 @@
 ---
 title: API de carte Get CVE-KB
-description: Découvrez comment utiliser l’API obtenir le plan CVE-KB pour récupérer une carte de CVE vers les détails de la base de données et CVE dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API de carte Get CVE-KB pour récupérer une carte de CVE vers des ko et des détails CVE dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 3921f79172bbbcc32b8510809b54bec477e44b85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: d950ce40a97cc024b4ec5776e087e81e4b1eee3d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192851"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588396"
 ---
 # <a name="get-cve-kb-map-api"></a>API de carte Get CVE-KB
 
@@ -38,7 +39,7 @@ ms.locfileid: "60192851"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Extrait une carte de CVE vers les détails de la ko et de la CVE.
+Extrait une carte de CVE vers des ko et des détails CVE.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -69,7 +70,7 @@ En cas de réussite et si la carte existe : 200 - OK.
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la demande :
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
@@ -77,7 +78,7 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 
 ### <a name="response-example"></a>Exemple de réponse
 
-Voici un exemple de réponse.
+Voici un exemple de réponse :
 
 ```json
 {

@@ -3,8 +3,6 @@ title: Vue d’ensemble protection évolutive des points de terminaison fonction
 ms.reviewer: ''
 description: En savoir plus sur protection évolutive des points de terminaison fonctionnalités de microsoft Defender pour le point de terminaison
 keywords: Microsoft Defender pour le point de terminaison, protection évolutive des points de terminaison, réponse, détection, cybersécurité, protection
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f1461cc9871e57cf422c261191723d8d229cc3c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 709f07bcaa803a922e1dade2acf90e73b6dca53e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205210"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585950"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Vue d’ensemble de la détection et de la réponse des points de terminaison
 
@@ -45,7 +43,7 @@ Inspired by the « assume breach » mindset, Defender for Endpoint continuousl
 
 Les fonctionnalités de réponse vous offrent la possibilité de remédier rapidement aux menaces en agissant sur les entités affectées.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Tableau de bord des opérations de sécurité](security-operations-dashboard.md)
 - [File d’attente des incidents](view-incidents-queue.md)

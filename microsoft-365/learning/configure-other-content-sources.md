@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer d’autres fournisseurs en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 006b3e6690df253f80bc8e47d93264b9bf19ea0f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1a638131b9bf8cca41f7ee8575e472885929d3c8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556869"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588004"
 ---
 # <a name="add-other-content-providers-for-microsoft-viva-learning"></a>Ajouter d’autres fournisseurs de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Un nombre croissant de fournisseurs de contenu d’apprentissage et de systèmes de gestion de l’apprentissage sont disponibles par le biais de Learning. Cet ensemble peut changer à tout moment à mesure que de plus en plus de fournisseurs rejoignent ou modifient leur statut avec le programme.
 
@@ -31,9 +34,9 @@ Les sources de contenu tierces ne sont pas activées par défaut. Pour activer c
 
 |Fournisseur de contenu  |Instructions de configuration  |
 |---------|---------|
-|Cornerstone OnDemand |[Configurer l’élément OnDemand en tant que source de contenu](configure-cornerstone-content-source.md)         |
+|Cornerstone OnDemand |[Configurer La fonction OnDemand en tant que source de contenu](configure-cornerstone-content-source.md)         |
 |Go1     |[Configurer Go1 en tant que source de contenu](configure-go1-content-source.md)         |
-|Saba    |[Configurer Le nom de la source de contenu](configure-saba-content-source.md)         |
+|Saba    |[Configurer Le nom d’une source de contenu](configure-saba-content-source.md)         |
 |Skillsoft     |[Configurer Skillsoft en tant que source de contenu](configure-skillsoft-content-source.md)         |
 |SAP SuccessFactors   |[Configurer SAP SuccessFactors en tant que source de contenu](configure-successfactors-content-source.md)         |
 |Udemy   |[Configurer Udemy en tant que source de contenu](configure-udemy-content-source.md)         |
@@ -52,6 +55,6 @@ Si vous avez des erreurs dans votre Centre d'administration Microsoft 365 lors d
 
 ## <a name="third-party-content-consumption"></a>Consommation de contenu tierce
 
-Une fois que vous avez ajouté un fournisseur de contenu tiers en tant que source de contenu à partir du Centre d'administration Microsoft 365, le contenu du fournisseur est disponible vers l’application Learning Et est visible pour les utilisateurs finaux.
+Une fois que vous avez ajouté un fournisseur de contenu tiers en tant que source de contenu à partir de la Centre d'administration Microsoft 365, le contenu du fournisseur est disponible vers l’application Learning De plus, il est visible pour les utilisateurs finaux.
 
-Une fois qu’un utilisateur choisit de jouer à un cours dans Learning, il est dirigé vers la page web du fournisseur de contenu et doit entrer les informations d’identification sur la page de connexion du fournisseur. [En savoir plus sur la consommation de contenu avec Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a).
+Une fois qu’un utilisateur choisit de lire un cours dans Le Learning, il est dirigé vers la page web du fournisseur de contenu et doit entrer les informations d’identification sur la page de connexion du fournisseur. [En savoir plus sur la consommation de contenu avec Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a).

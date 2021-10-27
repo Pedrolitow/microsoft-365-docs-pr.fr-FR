@@ -2,8 +2,6 @@
 title: Examiner Microsoft Defender pour les domaines de point de terminaison
 description: Utilisez les options d’examen pour déterminer si les appareils et les serveurs communiquent avec des domaines malveillants.
 keywords: examiner le domaine, le domaine, le domaine malveillant, Microsoft Defender pour le point de terminaison, alerte, URL
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8df2c21520218d19a66943b67c43d2b5802b51fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f2514c0f43bd8a7f1ab5dade389c0a12f3c4e54
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174698"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587788"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un domaine associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -57,13 +55,13 @@ La **carte Incident** affiche un graphique à barres de toutes les alertes activ
 
 ## <a name="prevalence"></a>Prévalence
 
-La **carte prévalence** fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
+La **carte de** prévalence fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
 
 Bien que la période par défaut soit les 30 derniers jours, vous pouvez personnaliser la plage en sélectionnant la flèche pointant vers le bas dans le coin de la carte. La plage la plus courte disponible est pour la prévalence au cours du dernier jour, tandis que la plage la plus longue se trouve sur les 6 derniers mois.
 
 ## <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visible sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
+**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visibles sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
 
 L’onglet Alertes peut être ajusté pour afficher plus  ou moins d’informations, en sélectionnant Personnaliser les colonnes dans le menu Actions au-dessus des en-têtes de colonne. Le nombre d’éléments affichés peut également être ajusté en sélectionnant des **éléments par page** dans le même menu.
 
@@ -81,7 +79,7 @@ Vous pouvez afficher les événements de différentes périodes en entrant les d
 4. Utilisez les filtres de recherche pour définir les critères de recherche. Vous pouvez également utiliser la zone de recherche de chronologie pour filtrer les résultats affichés de tous les appareils de l’organisation observés en communication avec l’URL, le fichier associé à la communication et la dernière date observée.
 5. En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur Linux manuellement à partir de la ligne de commande.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, loi, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 437669f392f108526670d3eca3aef4071aa8cb02
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: ade60ba21b97a22795740cc57971e9b197eb0322
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478876"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587184"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
@@ -32,14 +32,14 @@ ms.locfileid: "60478876"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linux manuellement. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
 - [Déployer Microsoft Defender pour point de terminaison sur Linux manuellement](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Conditions préalables et système requis](#prerequisites-and-system-requirements)
   - [Configurer le référentiel de logiciels Linux](#configure-the-linux-software-repository)
-    - [RHEL et variantes (CentOS et Oracle Linux)](#rhel-and-variants-centos-oracle-linux-and-amazon-linux-2)
+    - [RHEL et variantes (CentOS, Fedora, Oracle Linux et Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES et variantes](#sles-and-variants)
     - [Systèmes Ubuntu et Debian](#ubuntu-and-debian-systems)
   - [Installation d’application](#application-installation)
@@ -56,7 +56,7 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -65,7 +65,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
 > [!WARNING]
 > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-### <a name="rhel-and-variants-centos-oracle-linux-and-amazon-linux-2"></a>RHEL et variantes (CentOS, Oracle Linux et Amazon Linux 2)
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>RHEL et variantes (CentOS, Fedora, Oracle Linux et Amazon Linux 2)
 
 - Installez `yum-utils` s’il n’est pas encore installé :
 
@@ -85,7 +85,9 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     |---|---|
     |Pour RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |Pour RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    | Pour RHEL/Centos/Oracle 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
+    |Pour RHEL/Centos/Oracle 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |Pour Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |Pour Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
     Dans les commandes suivantes, *remplacez [version]* et *[canal]* par les informations que vous avez identifiées :
 
@@ -329,13 +331,13 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. Vérifiez que l’appareil est désormais associé à votre organisation et signale un identificateur d’organisation valide :
+3. Vérifiez que l’appareil est maintenant associé à votre organisation et signale un identificateur d’organisation valide :
 
     ```bash
     mdatp health --field org_id
     ```
 
-4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour `1` de indique que le produit fonctionne comme prévu :
+4. Quelques minutes après avoir terminé l’installation, vous pouvez voir l’état en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
@@ -348,7 +350,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     > mdatp health --field definitions_status
     > ```
     >
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](linux-static-proxy-configuration.md#post-installation-configuration)
 
 5. Exécutez un test de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -407,7 +409,7 @@ Options:
 
 En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
 Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 

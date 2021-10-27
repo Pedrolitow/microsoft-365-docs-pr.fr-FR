@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555799"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587348"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
@@ -55,10 +55,6 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 
 > [!NOTE]
 > La protection web n’est pas disponible lorsque le VPN est désactivé. Pour ré-activer la Protection Web, ouvrez l’application Microsoft Defender pour point de terminaison sur l’appareil et activez la protection Web.
-
-## <a name="issues-with-device-health-card"></a>Problèmes avec la carte d’état de l’appareil
-
-Il existe un problème connu avec la carte d’état de l’appareil qui peut entraîner une notification incorrecte de mise à jour de la version iOS, même si l’utilisateur est sur la dernière version. Nous recommandons aux utilisateurs d’ignorer la notification de Defender for Endpoint. Cela n’a aucun impact sur la conformité des appareils. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution.
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistence avec plusieurs profils VPN
 
@@ -104,11 +100,11 @@ Après l’intégration, l’appareil peut s’afficher dans l’inventaire des 
 
 ## <a name="data-and-privacy"></a>Données et confidentialité
 
-Pour plus d’informations sur les données collectées et la confidentialité, voir Informations sur la confidentialité - Microsoft Defender pour point de [terminaison sur iOS](ios-privacy.md).
+Pour plus d’informations sur les données collectées et la confidentialité, voir Informations sur la confidentialité [- Microsoft Defender pour endpoint sur iOS](ios-privacy.md).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problèmes sur les appareils supervisés avec le profil de filtre de contenu installé
 
-Un problème se produit sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
+Il existe un problème sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problèmes pendant les mises à jour de l’application à partir de l’App Store
 
@@ -121,8 +117,8 @@ Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les
   - Ouvrez l’application MSDefender sur l’appareil iOS/iPadOS.
   - Appuyez sur Menu (icône de profil) dans le coin supérieur gauche.
   - Appuyez **sur Envoyer des commentaires.**
-  - Choisissez parmi les options données. Pour signaler un problème, sélectionnez **« Je n’aime pas quelque chose**».
-  - Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer les données de diagnostic.** Nous vous recommandons d’inclure votre adresse de messagerie afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
+  - Choisissez parmi les options données. Pour signaler un problème, sélectionnez **Je n’aime pas quelque chose.**
+  - Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer des données de diagnostic.** Nous vous recommandons d’inclure votre adresse de messagerie afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
   - Appuyez **sur Envoyer** pour envoyer correctement les commentaires.
 
 

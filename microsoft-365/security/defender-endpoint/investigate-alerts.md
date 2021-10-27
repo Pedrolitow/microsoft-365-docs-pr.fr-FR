@@ -1,9 +1,7 @@
 ---
 title: Examiner microsoft Defender pour les alertes de point de terminaison
 description: Utilisez les options d’examen pour obtenir des détails sur les alertes qui affectent votre réseau, ce qu’elles signifient et comment les résoudre.
-keywords: examiner, examen, appareils, périphérique, file d’attente d’alertes, tableau de bord, adresse IP, fichier, envoyer, soumissions, analyse approfondie, chronologie, recherche, domaine, URL, IP
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: examiner, examen, appareils, périphérique, file d’attente des alertes, tableau de bord, adresse IP, fichier, soumettre, envois, analyse approfondie, chronologie, recherche, domaine, URL, IP
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f41be6057f1e66eb13001d4ed7d304d76e895c3d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6ae9ac805c2b49273f30b3266496a8c4be4d1b
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198228"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588076"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -57,7 +55,7 @@ Développez les entités pour afficher les détails en un coup d’œil. La sél
 
 ## <a name="take-action-from-the-details-pane"></a>Action à partir du volet d’informations
 
-Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et proposer aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
+Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et propose aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
 
 Une fois que vous avez terminé d’examiner, revenir à l’alerte que vous avez commencée, marquez l’état de l’alerte comme résolu et classez-le comme alerte **False** ou **Alerte True**.  La classification des alertes permet d’affiner cette fonctionnalité pour fournir davantage d’alertes vraies et moins de fausses alertes.
 
@@ -73,7 +71,7 @@ Si vous rencontrez une fausse alerte avec une application métier, créez une r�
 > Si vous rencontrez des problèmes non décrits ci-dessus, utilisez le bouton pour fournir des commentaires ou 🙂 ouvrir un ticket de support.
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

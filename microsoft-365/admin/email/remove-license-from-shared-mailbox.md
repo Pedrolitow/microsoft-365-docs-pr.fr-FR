@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
 ms.date: 05/11/2021
-ms.openlocfilehash: 384e5d68d2b964278244fe5c2ec7f87097325540
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ccbab157b810e86a941da519346da621398a4af9
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164907"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586812"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -36,12 +36,15 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 
 > [!NOTE]
 >
-> Une licence est requise dans les scénarios suivants :
+> Une licence Exchange Online Plan 2 est requise dans les scénarios suivants :
 >
-> 1. La boîte aux lettres partagée utilise plus de 50 Go de stockage.
-> 2. La boîte aux lettres partagée utilise l’archivage sur place.
-> 3. La boîte aux lettres partagée est placée en attente pour litige.
-> 4. Une licence Microsoft Defender est attribuée à la boîte aux lettres partagée.
+> - La boîte aux lettres partagée utilise plus de 50 Go de stockage.
+> - La boîte aux lettres partagée utilise l’archivage sur place.
+> - La boîte aux lettres partagée est placée en attente pour litige.
+> - Une licence Microsoft Defender est attribuée à la boîte aux lettres partagée.
+> 
+> Pour obtenir des instructions détaillées sur la façon d’attribuer des licences, voir Attribuer des [licences aux utilisateurs.](/microsoft-365/admin/manage/assign-licenses-to-users) 
+
 
 ## <a name="remove-the-license"></a>Supprimer la licence
 
@@ -68,7 +71,7 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Un des **onglets Licences et applications,** développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 

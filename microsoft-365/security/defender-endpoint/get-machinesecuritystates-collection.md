@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 320f2bfd06f7f01c15419f4bd6dc0eb5536079f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: af3881a5215871b0405f2f6b42b73c248af0c00c
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176810"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586872"
 ---
 # <a name="get-machines-security-states-collection-api"></a>API obtenir la collection d’états de sécurité des ordinateurs
 
@@ -66,7 +67,7 @@ En cas de réussite : 200 - OK.
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la demande.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates

@@ -1,7 +1,7 @@
 ---
 title: Guide de l’API de recherche avancée avec PowerShell
 ms.reviewer: ''
-description: Utilisez ces exemples de code, interrogeant plusieurs API de point de terminaison Microsoft Defender.
+description: Utilisez ces exemples de code, interrogeant plusieurs API microsoft Defender for Endpoint.
 keywords: api, api pris en charge, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: db114ab17f5e60b9f7660adc71bdc7dd441242b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: c0589818e35ef065f41f40f3b101ba0daab060b1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150173"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588372"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
 
@@ -63,7 +64,7 @@ Exécutez la commande suivante :
 
 - $tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (c’est-à-dire, la requête sera exécuté sur les données de ce client)
 - $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender for Endpoint)
-- $appSecret : secret de votre application Azure AD
+- $appSecret : secret de votre application Azure AD web
 
 - $suspiciousUrl : URL
 

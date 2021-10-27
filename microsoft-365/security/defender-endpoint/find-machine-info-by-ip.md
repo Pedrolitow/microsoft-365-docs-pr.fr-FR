@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88ba90f15731ec5d3c731503dc274c0ad4187754
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b94ba526b4ada976827f4d74beee2b1b4c814e8a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150105"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586148"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Rechercher des informations sur l’appareil par API IP interne
 
@@ -58,7 +59,7 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -84,7 +85,7 @@ Content-type: application/json
 
 Voici un exemple de réponse.
 
-La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’heure.
+La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’timestamp.
 
 ```json
 HTTP/1.1 200 OK

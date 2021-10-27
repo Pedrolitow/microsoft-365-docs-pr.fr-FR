@@ -1,5 +1,5 @@
 ---
-title: Connecter enregistrements DNS sur Network Solutions pour Microsoft 365
+title: Connecter vos enregistrements DNS sur Network Solutions Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Network Solutions pour Microsoft.
-ms.openlocfilehash: cc954871488839cbf7879248535362b85bcf2bac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f0599ef178e9a3dde097b94e7c3f980f59e88636
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556728"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586359"
 ---
-# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter enregistrements DNS sur Network Solutions pour Microsoft 365
+# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Network Solutions Microsoft 365
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -53,7 +53,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 
 1. Cochez la case en regard du domaine à modifier.
   
-1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste liste.
+1. Sous **Actions,** sélectionnez les trois points, puis sélectionnez **Gérer** dans la liste liste.
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
   
@@ -86,9 +86,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -140,7 +144,7 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Sélectionnez Gérer dans la liste liste.":::
   
-1. Select **Advanced Tools**, and next to Advanced **DNS Records**, select **MANAGE**
+1. Select **Advanced Tools**, and next to Advanced **DNS Records**, select **MANAGE**.
     
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="En plus des enregistrements DNS avancés, sélectionnez MANAGE.":::
 
@@ -283,7 +287,7 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
   
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Option avancée : Intune et gestion des périphériques mobiles pour Microsoft 365
 
-Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des périphériques mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
+Ce service vous permet de sécuriser et de gérer à distance les appareils mobiles qui se connectent à votre domaine. La gestion des appareils mobiles nécessite 2 enregistrements CNAME afin que les utilisateurs peuvent inscrire des appareils au service.
 
 ### <a name="add-the-two-required-cname-records"></a>Ajouter les deux enregistrements CNAME requis
 

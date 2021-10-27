@@ -1,9 +1,7 @@
 ---
 title: Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
-description: Découvrez comment fonctionnent les files d’attente des alertes Microsoft Defender pour les points de terminaison, et comment trier et filtrer des listes d’alertes.
+description: Découvrez le fonctionnement des files d’attente d’alertes Microsoft Defender pour les points de terminaison, ainsi que le tri et le filtrage des listes d’alertes.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period, microsoft threat experts alerts
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39c456b3f7ad31181d47318570176710840ad8b2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211320"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587980"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -59,13 +57,13 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte|Description
 ---|---
 Élevé <br> (Rouge)|Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
-Moyenne <br> (Orange)|Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Moyen <br> (Orange)|Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible <br> (Jaune)|Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
-Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
+Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à d’éventuels problèmes de sécurité.
 
 #### <a name="understanding-alert-severity"></a>Comprendre la gravité des alertes
 
-Antivirus Microsoft Defender (Microsoft Defender AV) et Les gravités des alertes Defender pour les points de terminaison sont différentes, car elles représentent des étendues différentes.
+Antivirus Microsoft Defender (Microsoft Defender AV) et les gravités des alertes defender pour point de terminaison sont différentes, car elles représentent des étendues différentes.
 
 La Antivirus Microsoft Defender gravité de la menace représente la gravité absolue de la menace détectée (programme malveillant) et est affectée en fonction du risque potentiel pour l’appareil individuel, s’il est infecté.
 
@@ -73,7 +71,7 @@ La gravité de l’alerte Defender pour le point de terminaison représente la g
 
 Par exemple :
 
-- La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle » car il n’y a eu aucun dommage réel.
+- La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle » car il n’y a pas eu de dommages réels.
 - Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigé par Microsoft Defender AV, est classée comme « Faible », car elle a peut-être endommagé l’appareil, mais ne pose aucune menace pour l’organisation.
 - Une alerte concernant les programmes malveillants détectés lors de l’exécution, qui peuvent représenter une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, même si elle a été finalement bloquée, peut être classée comme « Moyenne » ou « Élevée ».
 - Les alertes de comportement suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
@@ -90,8 +88,8 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 |Commande et contrôle|CommandAndControl|Connexion à une infrastructure réseau contrôlée par des personnes malveillantes pour relayer des données ou recevoir des commandes.|
 |Accès aux informations d’identification|CredentialAccess|Obtention d’informations d’identification valides pour étendre le contrôle sur les appareils et les autres ressources du réseau.|
 |Défense|DefenseEvasion|Pour éviter les contrôles de sécurité, par exemple en désélant les applications de sécurité, en supprimant des contrôles de sécurité et en exécutant des rootkits.|
-|Découverte|Découverte|Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers.|
-|Exécution|Exécution|Lancement d’outils malveillants et de code malveillant, y compris les fichiers d’accès à la base de données et les backdoors.|
+|Discovery|Discovery|Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers.|
+|Exécution|Exécution|Lancement d’outils malveillants et de code malveillant, y compris les fichiers d’accès à la base de données (RAT) et les backdoors.|
 |Exfiltration|Exfiltration|Extraction de données du réseau vers un emplacement externe contrôlé par l’attaquant.|
 |Exploit|Exploit|Exploitez le code et l’activité d’exploitation possible.|
 |Accès initial|InitialAccess|Obtenir une entrée initiale sur le réseau cible, impliquant généralement une estimation de mot de passe, des attaques ou des e-mails de hameçonnage.|
@@ -101,7 +99,7 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 |Escalade de privilèges|PrivilegeEscalation|Obtenir des niveaux d’autorisation supérieurs pour le code en l’exécutant dans le contexte d’un processus ou d’un compte privilégié.|
 |Ransomware|Ransomware|Programme malveillant qui chiffre les fichiers et le paiement par extorts pour restaurer l’accès.|
 |Activité suspecte|SuspiciousActivity|Activité non normale qui peut être une activité de programmes malveillants ou une partie d’une attaque.|
-|Logiciels indésirables|UnwantedSoftware|Applications de faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; comme applications potentiellement indésirables (PUA).|
+|Logiciels indésirables|UnwantedSoftware|applications à faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; comme applications potentiellement indésirables (PUA).|
 
 ### <a name="status"></a>Statut
 
@@ -151,7 +149,7 @@ Si vous avez des groupes d’appareils spécifiques que vous souhaitez vérifier
 
 Utilisez ce filtre pour vous concentrer sur les alertes liées aux menaces de profil élevé. Vous pouvez voir la liste complète des menaces de haut niveau dans [l’analyse des menaces.](threat-analytics.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

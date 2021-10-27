@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer Telle source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 26af97604b071e621794937d45882c98fdef0d31
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e259c7d7af3a7ff645017b2eccf76ff89c9a0bdf
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556814"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587312"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Le nom d’une source de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Cet article vous montre comment configurer Lasa comme source de contenu d’apprentissage tierce pour Apprentissage Microsoft Viva. Pour effectuer ces étapes, vous devez être administrateur système ou super utilisateur du système.
 
@@ -40,7 +43,7 @@ Cet article vous montre comment configurer Lasa comme source de contenu d’appr
 
 ## <a name="client-id-and-client-secret"></a>ID client et secret client
 
-1. Sur le même écran que l’URL hôte, copiez l’ID client et la secret client s’ils ont déjà été générés.
+1. Sur le même écran que celui où vous avez obtenu l’URL hôte, copiez l’ID client et la secret client s’ils ont déjà été générés.
 
 2. Si la question secrète client n’existe pas encore, sélectionnez le **bouton GÉNÉRER** pour la générer.
 
@@ -48,7 +51,7 @@ Cet article vous montre comment configurer Lasa comme source de contenu d’appr
 
 ## <a name="username-and-password"></a>Nom d'utilisateur et mot de passe
 
-Fournissez le nom d’utilisateur et le mot de passe d’un compte d’administration pour Microsoft Viva à utiliser pour tirer des cours, des achèvements et des informations connexes à partir du Cloud Cloud De Cloud Cloud via l’API REST. Dans l’idéal, ce compte doit être un super utilisateur. Si le compte n’est pas un super utilisateur **Learning,** il doit au moins avoir des rôles Admin - Catalog Builder et **Human Capital Admin** (ou des rôles de sécurité personnalisés équivalents) dans Catalog.
+Fournissez le nom d’utilisateur et le mot de passe d’un compte d’administration pour Microsoft Viva à utiliser pour tirer des cours, des achèvements et des informations connexes à partir du Cloud De Cloud Cloud Via l’API REST. Dans l’idéal, ce compte doit être un super utilisateur. Si le compte n’est pas un super utilisateur **Learning,** il doit au moins avoir des rôles Admin - Catalog Builder et **Human Capital Admin** (ou des rôles de sécurité personnalisés équivalents) dans Catalog.
 
 ## <a name="last-steps"></a>Dernières étapes
 
@@ -58,7 +61,7 @@ Vous devez terminer la configuration dans votre Centre d'administration Microsof
 2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning et activez Cloud Dans le panneau.
 3. Remplissez les détails que vous avez obtenus à partir de votre portail DeNte.
     >[!NOTE]
-    >Le nom complet est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
+    >Le nom d’affichage est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
 
     <!--![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)-->
 
@@ -73,4 +76,4 @@ Les métadonnées du client sont stockées de manière centralisée dans nos mag
 
 ## <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Actuellement, tous les utilisateurs au sein d’une organisation pourront découvrir tous les cours spécifiques au client. Toutefois, ils pourront uniquement utiliser les cours qui leur sont accessibles. La découverte de contenu propre à l’utilisateur (basée sur les rôles et les autorisations) est prévue pour être déployée à l’avenir.
+Actuellement, tous les utilisateurs au sein d’une organisation pourront découvrir tous les cours spécifiques au client. Toutefois, ils pourront uniquement utiliser les cours qu’ils ont accès. La découverte de contenu spécifique à l’utilisateur (basée sur les rôles et les autorisations) est prévue pour être déployée à l’avenir.

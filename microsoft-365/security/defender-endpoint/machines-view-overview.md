@@ -1,9 +1,7 @@
 ---
 title: Afficher et organiser la liste des appareils Microsoft Defender pour les points de terminaison
-description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les investigations.
-keywords: trier, filtrer, exporter, csv, nom de l’appareil, domaine, dernière vue, IP interne, état d’état, alertes actives, détections de programmes malveillants actifs, catégorie de menace, passer en revue les alertes, réseau, connexion, programme malveillant, type, programme malveillant, programme malveillant, ransomware, attaque, menace, programme malveillant général, logiciel indésirable
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+description: Découvrez les fonctionnalités disponibles que vous pouvez utiliser dans la liste Appareils, telles que le tri, le filtrage et l’exportation de la liste pour améliorer les examens.
+keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3e8a9a265070f3cda61a2c96eb704ed2dc177a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51b55a92a88dfa5faf89df89bfc3351b97571feb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169826"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588324"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Afficher et organiser la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -82,9 +80,9 @@ Si le niveau d’exposition indique « Aucune donnée disponible », il existe p
 
 Sélectionnez uniquement les plateformes de système d’exploitation qui vous intéressent.
 
-### <a name="windows-10-versions"></a>Windows 10 versions
+### <a name="windows-versions"></a>Windows versions
 
-Sélectionnez uniquement les Windows 10 versions que vous souhaitez examiner.
+Sélectionnez uniquement les Windows versions que vous souhaitez examiner.
 
 ### <a name="health-state"></a>État d’intégrité
 
@@ -102,7 +100,7 @@ Filtrez selon les états d’état d’état d’appareil suivants :
 
 L’état d’intégration indique si l’appareil est actuellement intégré à Microsoft Defender pour le point de terminaison ou non. Vous pouvez filtrer selon les états suivants :
 
-- **Intégré :** le point de terminaison est intégré à Microsoft Defender pour endpoint.
+- **Intégré :** le point de terminaison est intégré à Microsoft Defender pour le point de terminaison.
 
 - **Peut être intégré :** le point de terminaison a été découvert dans le réseau en tant qu’appareil pris en charge, mais il n’est pas actuellement intégré. Microsoft recommande vivement l’intégration de ces appareils.
 
@@ -122,6 +120,6 @@ Filtrez votre affichage en fonction du moment où l’appareil a été vu pour l
 
 Filtrez la liste en fonction du regroupement et du marquage que vous avez ajoutés à des appareils individuels. Voir [Créer et gérer des balises d’appareil.](machine-tags.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison](investigate-machines.md)

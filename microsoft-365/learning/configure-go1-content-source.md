@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer Go1 en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2751a855f663ca47f0e5896b489f4ee9d3055cf5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ade44c0cc7607ab1b7a247ee60bdd2ca3505e6e9
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556881"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586160"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Go1 en tant que source de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Cet article vous montre comment configurer Go1 en tant que source de contenu d’apprentissage tierce dans Learning.
 
@@ -34,13 +37,13 @@ Go1 permet d’accéder à des milliers de cours à partir de principaux fournis
 
 ## <a name="create-a-developers-app-in-go1"></a>Créer une application de développeur dans Go1
 
-Tout d’abord, vous devez suivre ces étapes pour créer une application dans votre portail Go1. Cette application génère vos clés d’API, que vous pouvez utiliser pour vous authentifier auprès de Go1 et effectuer des requêtes à l’API.
+Tout d’abord, vous devez suivre ces étapes pour créer une application dans votre portail Go1. Cette application génère vos clés d’API, que vous pouvez utiliser pour vous authentifier auprès de Go1 et effectuer des demandes à l’API.
 
 1. Connectez-vous à votre portail Go1 en tant qu’administrateur.
 
 2. Sélectionnez **Intégrations dans** les options de menu.
 
-3. Sélectionnez **Développeurs**.
+3. Sélectionnez **Développeurs.**
 
     <!--![Image of the Developers option in the Integrations menu.](../media/learning/go1-1.png)-->
 
@@ -56,7 +59,7 @@ Tout d’abord, vous devez suivre ces étapes pour créer une application dans v
 
 7. Enregistrez les informations que vous avez entrées.
 
-8. Vos informations s’affichent avec la secret masquée. Sélectionnez les ellipses (**...**), puis **sélectionnez Afficher la secret** pour afficher la secret.
+8. Vos informations s’affichent avec le secret masqué. Sélectionnez les ellipses (**...**), puis **sélectionnez Afficher la secret** pour afficher la secret.
 
 9. Copiez les valeurs suivantes :
 

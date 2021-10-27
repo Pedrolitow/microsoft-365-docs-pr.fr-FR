@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et les autres services sur OVH pour Microsoft.
-ms.openlocfilehash: c7f5516ba9f50ea25f82d4511c542227d6d98453
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7da9094a5d4cff2f93ab87251b29fc81bedc51ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556721"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587004"
 ---
 # <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Connecter vos enregistrements DNS sur OVH pour Microsoft 365
 
@@ -71,7 +71,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(laissez vide)  <br/> |3600 secondes  <br/> |MS=msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
-1. Sélectionnez **Suivant**
+1. Sélectionnez **Suivant**.
 
 1. Sélectionner **Confirmer**. 
     
@@ -81,13 +81,17 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
 L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
  
-Pour vérifier le domaine dans Microsoft 365 :
- 
+Pour vérifier l’enregistrement dans Microsoft 365 :
+  
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -195,7 +199,7 @@ Pour vérifier le domaine dans Microsoft 365 :
 1. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs suivantes. Pour affecter une valeur TTL, choisissez **Personnalisé** dans la liste de listes listes, puis tapez la valeur dans la zone de texte. 
     
     |**Sous-domaine**|**TTL**|**Value (Valeur)**|
-    |:-----|:-----|:-----|:-----|
+    |:-----|:-----|:-----|
     |(laissez vide)  <br/> |3600 secondes  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Remarque** : nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correct.           |
    
     ![OVH Ajouter un enregistrement TXT pour SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
@@ -298,7 +302,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
   
 1. Sélectionnez **Ajouter une entrée**.
     
-    ![OVH Ajoutez une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+    ![OVH Ajouter une entrée.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
 1. Sélectionnez **CNAME**.
     
@@ -313,7 +317,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. Sélectionnez **Suivant**.
     
-    ![OVH Ajoutez des valeurs CNAME et sélectionnez Suivant.](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
+    ![OVH Ajouter des valeurs CNAME et sélectionner Suivant.](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
 1. Sélectionner **Confirmer**.
 

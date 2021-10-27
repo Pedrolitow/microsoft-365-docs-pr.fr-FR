@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser et gérer des modèles pour la création d’évaluations dans le Gestionnaire de conformité Microsoft. Créez et modifiez des modèles à l’aide d’un fichier Excel formaté.
-ms.openlocfilehash: dd9f2b2f673164bce7f05f7e390b13012247c362
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335985"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587680"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>En savoir plus sur les modèles d’évaluation dans le Gestionnaire de conformité
 
-**Dans cet article :** Comprendre **comment fonctionnent les modèles** et **comment les gérer** à partir de votre page de modèles d’évaluation. Obtenez des  instructions pour créer de  nouveaux modèles,  étendre et modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
+**Dans cet article :** Comprendre **le fonctionnement des modèles** et comment les **gérer** à partir de votre page de modèles d’évaluation. Obtenez des  instructions pour créer de  nouveaux modèles,  étendre et modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
 
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Examinez les détails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
@@ -45,9 +45,9 @@ Notez que les clients modérés, Cloud de la communauté du secteur public élev
 Il existe deux catégories de modèles dans le Gestionnaire de conformité : incluse et premium.
 
 1. **Les modèles inclus sont accordés** par votre licence du Gestionnaire de conformité et couvrent les principales réglementations et exigences. Pour en savoir plus sur les modèles disponibles dans le cadre de votre contrat de licence, consultez les [détails de la gestion des licences.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
-2. **Premium modèles supplémentaires** pour répondre à des besoins et scénarios supplémentaires peuvent être obtenus par l’achat de licences de modèles.
+2. **Premium modèles supplémentaires** pour répondre à d’autres besoins et scénarios peuvent être obtenus par l’achat de licences de modèles.
 
-Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité suit le nombre de modèles actifs afin de surveiller votre utilisation. Pour en savoir plus, [consultez les modèles actifs et inactifs.](compliance-manager-templates.md#active-and-inactive-templates)
+Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité suit le nombre de modèles actifs afin de pouvoir surveiller votre utilisation. Pour en savoir plus, [consultez les modèles actifs et inactifs.](compliance-manager-templates.md#active-and-inactive-templates)
 
 Affichez [la liste complète des modèles disponibles](compliance-manager-templates-list.md) dans le Gestionnaire de conformité.
 
@@ -72,7 +72,7 @@ Cloud de la communauté du secteur public Les comptes DOD et élevés doivent ac
 
 ### <a name="try-out-premium-templates"></a>Essayer des modèles Premium
 
-Pour tester des modèles Premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
+Pour tester des modèles premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
 
 Pour démarrer une version d’essai, choisissez le lien approprié pour votre organisation :
 
@@ -90,8 +90,6 @@ Les modèles affichent un état d’activation comme actif ou inactif :
 
 Si vous liez des évaluations à un modèle Premium acheté, ce modèle sera actif pendant un an. Votre achat sera renouvelé automatiquement, sauf si vous annulez.
 
-Vous pouvez également essayer des modèles Premium en version d’essai. Les licences d’essai sont valides pour 25 modèles au plus pendant 30 jours. Une fois votre version d’essai commencée, les modèles doivent être disponibles dans votre client dans les 48 heures. Les essais peuvent être activés via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365</a>.
-
 #### <a name="activated-templates-counter"></a>Compteur de modèles activés
 
 Votre page d’évaluation et votre page de modèles d’évaluation ont un compteur de **modèles** activé dans la partie supérieure. Le compteur affiche le nombre de modèles utilisés en dehors du nombre que vous êtes éligible pour utiliser conformément à votre contrat de licence. L’utilisation des modèles est comptabilisée au niveau de certification.
@@ -100,19 +98,19 @@ Par exemple, si votre compteur affiche 2/5, cela signifie que votre organisation
 
 Si votre compteur affiche le 5/2, cela indique que votre organisation dépasse ses limites et doit acheter 3 des modèles Premium utilisés.
 
-Microsoft 365 versions universelles et universelles des modèles ont des licences conjointes, afin que vous pouvez utiliser la même certification sous-jacente sur plusieurs produits. L’utilisation de l’une ou des deux versions du même modèle ne compte qu’en tant que modèle activé.
+Microsoft 365 versions universelles et universelles des modèles ont une licence conjointe, afin que vous pouvez utiliser la même certification sous-jacente sur plusieurs produits. L’utilisation de l’une ou des deux versions du même modèle ne compte qu’en tant que modèle activé.
 
 Pour plus d’informations, consultez les conseils de gestion [des licences du Gestionnaire de conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="view-and-manage-templates"></a>Afficher et gérer des modèles
 
-La page modèles d’évaluation dans le Gestionnaire de conformité affiche une liste de modèles et des détails clés les concernant. La liste inclut les modèles fournis par le Gestionnaire de conformité, ainsi que tous les modèles que votre organisation a modifiés ou créés. Vous pouvez appliquer des filtres pour rechercher un modèle basé sur la certification, l’étendue du produit, le pays, l’industrie, qui l’a créé et si le modèle est activé pour la création de l’évaluation.
+La page modèles d’évaluation dans le Gestionnaire de conformité affiche une liste de modèles et des détails clés les concernant. La liste inclut les modèles fournis par le Gestionnaire de conformité, ainsi que tous les modèles que votre organisation a modifiés ou créés. Vous pouvez appliquer des filtres pour rechercher un modèle basé sur la certification, l’étendue du produit, le pays, l’industrie, qui l’a créé et si le modèle est activé pour la création d’évaluation.
 
 Sélectionnez un modèle dans sa ligne pour faire monter sa page de détails. Cette page contient une description du modèle et des informations supplémentaires sur la certification, l’étendue et les détails des contrôles. À partir de cette page, vous pouvez sélectionner les boutons appropriés pour créer une évaluation, exporter les données du modèle vers Excel ou modifier le modèle.
 
 ## <a name="create-an-assessment-template"></a>Créer un modèle d’évaluation
 
-Pour créer votre propre modèle d’évaluations personnalisées dans le Gestionnaire de conformité, vous allez utiliser une feuille de calcul Excel spécialement mise en forme pour assembler les données de contrôle nécessaires. Après avoir terminé la feuille de calcul, vous l’importez dans le Gestionnaire de conformité. Pour plus d’informations, voir [Créer un modèle d’évaluation.](compliance-manager-templates-create.md)
+Pour créer votre propre modèle pour les évaluations personnalisées dans le Gestionnaire de conformité, vous utiliserez une feuille de calcul spécialement mise en forme Excel pour assembler les données de contrôle nécessaires. Après avoir terminé la feuille de calcul, vous l’importez dans le Gestionnaire de conformité. Pour plus d’informations, voir [Créer un modèle d’évaluation.](compliance-manager-templates-create.md)
 
 ## <a name="modify-an-assessment-template"></a>Modifier un modèle d’évaluation
 
@@ -120,7 +118,7 @@ Lorsque vous travaillez avec des évaluations dans le Gestionnaire de conformit�
 
 ## <a name="extend-an-assessment-template"></a>Étendre un modèle d’évaluation
 
-Le Gestionnaire de conformité offre la possibilité d’ajouter vos propres contrôles et actions d’amélioration à un modèle existant. Ce processus est appelé extension d’un modèle. Pour étendre un modèle, vous allez utiliser des instructions spéciales pour ajouter des données aux modèles, selon que vous étendez des modèles d’évaluation Microsoft 365 ou universels. Pour plus d’informations, voir [Étendre un modèle d’évaluation.](compliance-manager-templates-extend.md)
+Le Gestionnaire de conformité offre la possibilité d’ajouter vos propres contrôles et actions d’amélioration à un modèle existant. Ce processus est appelé extension d’un modèle. Pour étendre un modèle, vous utiliserez des instructions spéciales pour l’ajout de données de modèle, selon que vous étendez des modèles d’évaluation Microsoft 365 ou universels. Pour plus d’informations, voir [Étendre un modèle d’évaluation.](compliance-manager-templates-extend.md)
 
 ## <a name="format-assessment-template-data-in-excel"></a>Formater les données du modèle d’évaluation Excel
 
@@ -128,7 +126,7 @@ Lorsque vous créez, modifiez ou étendez des modèles d’évaluation dans le G
 
 ## <a name="export-a-template"></a>Exporter un modèle
 
-Vous pouvez exporter un Excel qui contient toutes les données d’un modèle. Vous devez exporter un modèle pour le modifier, car il s’agit du fichier Excel que vous modifiez et téléchargez dans le processus [de modification.](compliance-manager-templates-modify.md) Vous pouvez également exporter un modèle pour référence si vous souhaitez utiliser des données à partir de ce modèle lors de la construction d’un nouveau modèle personnalisé.
+Vous pouvez exporter un Excel qui contient toutes les données d’un modèle. Vous devez exporter un modèle pour le modifier, car il s’agit du fichier Excel que vous modifiez et chargez dans le processus [de modification.](compliance-manager-templates-modify.md) Vous pouvez également exporter un modèle pour référence si vous souhaitez utiliser des données à partir de ce modèle lors de la construction d’un nouveau modèle personnalisé.
 
 Pour exporter votre modèle, go to your template details page and select the **Export to Excel** button.
 

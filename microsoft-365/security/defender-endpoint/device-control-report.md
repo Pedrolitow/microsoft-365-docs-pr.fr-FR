@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212993"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588350"
 ---
-# <a name="protect-your-organizations-data-with-device-control"></a>Protéger les données de votre organisation avec le contrôle d’appareil
+# <a name="device-control-report"></a>Rapport de contrôle d’appareil
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -41,6 +41,7 @@ Les événements d’audit sont les suivants :
 
 - **Montage et démontage du lecteur USB :** Auditer les événements générés lorsqu’un lecteur USB est monté ou démonté.
 - **PnP :** Les événements d’audit plug-and-play sont générés lorsque le stockage amovible, une imprimante ou Bluetooth multimédia est connecté.
+- **Contrôle d’accès au stockage amovible :** Les événements sont générés lorsqu’une stratégie de contrôle d’accès au stockage amovible est déclenchée. Il peut s’y trouver audit, bloquer ou autoriser.
 
 ## <a name="monitor-device-control-security"></a>Surveiller la sécurité des contrôles d’appareil
 
@@ -49,7 +50,7 @@ Le contrôle d’appareil dans Microsoft Defender pour point de terminaison perm
 La carte de  protection des appareils du tableau de bord Rapports indique le nombre d’événements d’audit générés par type de média au cours des 180 derniers jours.
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportCard](images/devicecontrolcard.png)
+> ![DeviceControlReportCard](https://user-images.githubusercontent.com/81826151/138504137-e9a7673e-e988-48cd-820d-2625ec6df352.png)
 
 Le **bouton Afficher les détails** affiche davantage de données d’utilisation des médias dans la page de rapport de contrôle **d’appareil.**
 
@@ -60,14 +61,14 @@ La page fournit un tableau de bord avec un nombre agrégé d’événements par 
 
 Lorsque vous sélectionnez un événement, un flyout s’affiche pour vous fournir plus d’informations :
 
-- **Détails généraux :** Date, mode Action et stratégie de cet événement.
-- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de la classe, le GUID de classe, l’ID de l’appareil, l’ID du fournisseur, le volume, le numéro de série et le type de bus.
-- **Détails de l’emplacement :** Nom de l’appareil et ID de l’appareil MDATP.
+- **Détails généraux :** Date, mode Action, stratégie et accès à cet événement.
+- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de classe, le GUID de classe, l’ID de périphérique, l’ID du fournisseur, le numéro de série et le type de bus.
+- **Détails de l’emplacement :** Nom de l’appareil, ID de l’utilisateur et de l’appareil MDATP.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
 
-Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le bouton de recherche **Open Advanced.** Cela inclut une requête prédéfinie incorporée.
+Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le **bouton Ouvrir le chasse** avancé. Cela inclut une requête prédéfinie incorporée.
 
 > [!div class="mx-imgBorder"]
 > ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)

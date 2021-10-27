@@ -2,7 +2,6 @@
 title: Examiner les incidents dans Microsoft 365 Defender
 description: Examiner les incidents liés aux appareils, aux utilisateurs et aux boîtes aux lettres.
 keywords: incident, incidents, analyse, réponse, ordinateurs, appareils, utilisateurs, identités, courrier électronique, boîte aux lettres, enquête, graphique, preuve
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,14 +22,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209200"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588300"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -93,7 +91,7 @@ Voici un exemple.
 
 Par défaut, les alertes sont classés dans l’ordre chronologique pour vous permettre de voir comment l’attaque s’est joué au fil du temps. Lorsque vous sélectionnez une alerte dans un incident, Microsoft 365 Defender affiche les informations d’alerte spécifiques au contexte de l’incident global. 
 
-Vous pouvez voir les événements de l’alerte, les autres alertes déclenchées à l’origine de l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
+Vous pouvez voir les événements de l’alerte, dont d’autres alertes déclenchées ont provoqué l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
 
 Voici un exemple.
 
@@ -147,7 +145,7 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident.":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Microsoft Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir d’autres détails sur la boîte aux lettres dans la page Explorateur de Microsoft Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
@@ -191,13 +189,13 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 2. Ouvrez un volet d’entités, ce qui vous permet d’examiner les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph’entité":::
 
 3. Mettez en surbrillant les alertes en fonction de l’entité à laquelle elles sont liées.
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrill valeur d’une alerte sur Graph page":::
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Selon les besoins :
 

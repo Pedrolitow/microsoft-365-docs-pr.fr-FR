@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur Amazon Web Services (AWS) pour Microsoft.
-ms.openlocfilehash: 05ab925645fe840816496038e02a827af37570f6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1e148b13a89def2eb034ca0bcaa4287c890fe904
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556660"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586444"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Connecter vos enregistrements DNS sur Amazon Web Services (AWS) pour Microsoft 365
 
@@ -87,13 +87,15 @@ Maintenant que vous avez ajouté l’enregistrement sur le site de votre bureau 
 
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
-1. Dans le Centre d’administration Microsoft, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+    
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
 
-2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
-    
-3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
-    
-4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
+  
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

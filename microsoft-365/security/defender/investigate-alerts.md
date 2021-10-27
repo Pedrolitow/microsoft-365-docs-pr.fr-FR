@@ -1,8 +1,7 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+description: Examinez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206600"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587756"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -42,15 +40,15 @@ Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former
 
 La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des alertes à partir **d’incidents & alertes** > alertes sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans le Microsoft 365 Defender web.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
-Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
+Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
 Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple du volet Filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -66,7 +64,7 @@ Vous pouvez filtrer les alertes en fonction de ces critères :
 
 Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender pour Office 365 alertes :
 
-- Pour Azure Active Directory rôles globaux (Azure AD) :
+- Pour Azure Active Directory (Azure AD) globaux :
 
    - Administrateur général
 
@@ -78,7 +76,7 @@ Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender 
 
    - Lecteur de sécurité
 
-- Office 365 Groupes de rôles de conformité & sécurité
+- Office 365 Groupes de rôles de sécurité & conformité
 
    - Administrateur de conformité
 
@@ -102,7 +100,7 @@ Une page d’alerte se compose des sections suivantes :
 Dans une page d’alerte, vous pouvez sélectionner les ellipses (**...**) à côté de n’importe quelle entité pour voir les actions disponibles, telles que l’ouverture de la page d’alerte ou la liaison de l’alerte à un autre incident.
 
 ### <a name="alert-sources"></a>Sources d’alerte
-Microsoft 365 Defender alertes peuvent être issues de solutions telles que Microsoft Defender pour Endpoint, Microsoft Defender pour Office 365 et Microsoft Cloud App Security. Vous remarquerez peut-être des alertes avec des caractères prédépendants dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère prédépendant de l’alerte.
+Microsoft 365 Defender alertes peuvent être issues de solutions telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft Cloud App Security. Vous remarquerez peut-être des alertes avec des caractères prédépendants dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère prédépendant de l’alerte.
 
 > [!NOTE]
 > - Les GUID prédépendants sont spécifiques uniquement aux expériences unifiées telles que la file d’attente des alertes unifiées, la page des alertes unifiées, l’examen unifié et l’incident unifié.<br>
@@ -113,7 +111,7 @@ Source de l’alerte | Caractère en prédépendant
 :---|:---
 Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
-Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
@@ -145,7 +143,7 @@ Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
 
 - État de l’alerte (Nouveau, Résolu, En cours).
 - Compte d’utilisateur qui a reçu l’alerte
-- Classification de l’alerte (non définie, alerte True, Fausse alerte).
+- Classification de l’alerte (non définie, alerte true, fausse alerte).
 - Pour la classification en tant qu’alerte réelle, le type de menace pour l’alerte dans le **champ Détermination.**
 - Commentaire de l’alerte.
 
@@ -174,7 +172,7 @@ Une fois que vous avez terminé l’analyse d’une  alerte et qu’elle peut ê
 
 La classification des alertes et la spécification de leur détermination permettent d’Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

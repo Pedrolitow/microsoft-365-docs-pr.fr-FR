@@ -16,19 +16,22 @@ ms.collection:
 localization_priority: medium
 description: Découvrez comment configurer La base de connaissances OnDemand en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 0d4f344b2c5ea6854337bb78013994ae5da16f70
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6cc77ec25f7297fa2492b5a22d70e60350b8eccc
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556863"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586124"
 ---
 # <a name="configure-cornerstone-ondemand-as-a-content-source-for-microsoft-viva-learning"></a>Configurer La fonction OnDemand en tant que source de contenu pour Apprentissage Microsoft Viva
+
+>[!NOTE]
+>Cette fonctionnalité n’est pas prise en charge en prévisualisation.
 
 Cet article vous montre comment configurer La base de connaissances OnDemand en tant que source de contenu d’apprentissage tierce dans Learning. Tout d’abord, vous devez activer Learning et obtenir vos détails à partir de votre portail de base. Ensuite, vous devez terminer la configuration dans votre Centre d'administration Microsoft 365.
 
 >[!NOTE]
->Le contenu accessible par le biais de Learning est soumis à des conditions autres que celles de Microsoft Product Terms. Le contenu OnDemand et tous les services associés sont soumis aux conditions de confidentialité et de service de L’objet OnDemand.
+>Le contenu accessible par le biais de Learning est soumis à des conditions autres que celles de Microsoft Product Terms. Le contenu OnDemand et tous les services associés sont soumis aux conditions de confidentialité et de service de Ce dernier.
 
 ## <a name="configure-in-your-cornerstone-portal"></a>Configurer dans votre portail de base
 
@@ -45,7 +48,7 @@ Cet article vous montre comment configurer La base de connaissances OnDemand en 
 ## <a name="configure-in-microsoft-365-admin-center"></a>Configurer dans Centre d'administration Microsoft 365
 
 1. Connectez-vous à [votre Centre d'administration Microsoft 365](https://admin.microsoft.com).
-2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning, puis activez la fonction OnDemand dans le panneau.
+2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning, puis activez l’élément OnDemand dans le panneau.
 3. Remplissez les détails de configuration que vous avez récupérés à partir de votre portail de base.
 
     >[!NOTE]

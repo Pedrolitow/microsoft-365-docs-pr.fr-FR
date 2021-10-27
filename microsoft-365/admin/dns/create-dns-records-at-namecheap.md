@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Namecheap pour Microsoft.
-ms.openlocfilehash: 5cc3a961e30e482b35c1646791eec9e03a065fbc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556637"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587028"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Connecter vos enregistrements DNS chez Namecheap pour Microsoft 365
 
@@ -96,9 +96,13 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -334,7 +338,7 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
      :::image type="content" source="../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png" alt-text="Connectez-vous à Namecheap.":::
 
-1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste. 
+1. Sur la page d’accueil, sous **Compte,** choisissez **Liste** des domaines dans la liste liste liste. 
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Sélectionnez Liste des domaines.":::
 

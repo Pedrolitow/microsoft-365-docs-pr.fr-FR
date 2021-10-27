@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender pour point de terminaison sur Mac
 ms.reviewer: ''
-description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Mac.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos, big sur, contrôle, mojave, mde pour mac
+description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour endpoint sur Mac.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos, monterey, big sur, contrôle, mojave, mde pour mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3943c5c9e477dc114b74d7f3f9a76b5b00119dd6
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149885"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587728"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -48,11 +48,11 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 > [!TIP]
 > Si vous avez des commentaires que vous souhaitez partager, envoyez-le en ouvrant Microsoft  Defender pour Point de terminaison sur Mac sur votre appareil et en naviguant vers l’aide pour envoyer \> **des commentaires.**
 
-Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint comme un appareil « Insider ».
+Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint en tant qu’appareil « Insider ».
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -75,12 +75,9 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 > [!IMPORTANT]
-> Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés dans les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
+> Sur macOS 11 (Big Sur) et les appareils supérieurs, Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
-> [!IMPORTANT]
-> La prise en charge de macOS 10.13 (High Sierra) n’est plus prise en charge depuis le 15 février 2021.
-
-- 11 (Big Sur), 10.15 (Domaine), 10.14 (Mojave)
+- 12 (Monterey), 11 (Big Sur), 10.15 (Île), 10.14 (Mojave)
 - Espace disque : 1 Go
 
 Les versions bêta de macOS ne sont pas pris en charge.
@@ -114,7 +111,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de calcul [ ici :mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 

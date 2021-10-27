@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur 123-reg.co.uk microsoft.
-ms.openlocfilehash: 2c9e917a7c63759d69e58ffda4dc8a35c76d04ca
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur 123-reg.co.uk microsoft.
+ms.openlocfilehash: 98bbd9fa4963b24b08c417f608f7a0a3d8d84f31
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556679"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586927"
 ---
 # <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Connecter vos enregistrements DNS 123-reg.co.uk à Microsoft 365
 
@@ -49,11 +49,11 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 1. Pour commencer, accédez à la page de vos domaines sur le site 123-reg.co.uk en utilisant [ce lien](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Avant toute chose, vous serez invité à vous connecter.
     
-2. Dans la page Vue d’ensemble du nom de domaine, sélectionnez le nom du domaine que vous souhaitez vérifier. 
+2. Sélectionnez **Domaines** et, dans la page Vue d’ensemble du nom de domaine, sélectionnez le nom du domaine que vous souhaitez vérifier. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le domaine que vous souhaitez vérifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le domaine à vérifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -67,20 +67,28 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     |:-----|:-----|:-----|
     |**Hostname (Nom d'hôte)** <br/> |**Type (Type)** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
-   
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Sélectionnez le type TXT/SPF dans la liste de listes et remplissez les valeurs.":::
+ 
 6. Sélectionnez **Ajouter**.
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Sélectionnez Ajouter.":::
+   
+   Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-7. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
-    
-Maintenant que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, revenir à Microsoft et demander une recherche pour l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Maintenant que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous revenir à Microsoft et demander une recherche pour l’enregistrement. Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
 Pour vérifier l’enregistrement dans Microsoft 365 :
   
 1. Dans le Centre d’administration, go to the **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.**   
+1. Dans la page Domaines, sélectionnez le domaine que vous vérifiez, puis sélectionnez **Démarrer la configuration.** 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Sélectionnez Démarrer l’installation.":::
+
+1. Cliquez sur **Continuer**.
   
-3. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
+1. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -91,9 +99,9 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -101,15 +109,21 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Sélectionnez l’onglet DNS avancé.":::
     
-5. Dans la **zone Type** du nouvel enregistrement, choisissez **MX** dans la liste liste, puis tapez ou copiez-collez les autres valeurs du tableau suivant. 
+5. Dans la **zone Type** du nouvel enregistrement, choisissez **MX** dans la liste, puis tapez ou copiez-collez les autres valeurs du tableau suivant. 
     
     |**Hostname (Nom d'hôte)**|**Type (Type)**|**Priority (Priorité)**|**Destination MX (Enregistrement MX de la destination)**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<domain-key\> depuis votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="Sélectionnez le type MX dans la liste liste et remplissez les valeurs.":::
+ 
 6. Sélectionnez **Ajouter**.
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="Sélectionnez Ajouter.":::
+ 
 7. Si d'autres enregistrements MX sont répertoriés, supprimez-les individuellement en sélectionnant l'icône **Delete (Supprimer)** représentant une corbeille des enregistrements. 
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-delete.png" alt-text="Sélectionnez Supprimer (corbeille).":::
   
 ## <a name="add-the-cname-record-required-for-microsoft"></a>Ajouter l’enregistrement CNAME requis pour Microsoft
 
@@ -117,9 +131,9 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -129,13 +143,17 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     
 5. Ajoutez l’enregistrement CNAME.
     
-    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste de listes, puis tapez ou copiez-collez les autres valeurs du tableau suivant. 
+    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste, puis tapez ou copiez-collez les autres valeurs du tableau suivant. 
     
     |**Hostname (Nom d'hôte)**|**Type (Type)**|**Destination CNAME (Enregistrement CNAME de la destination)**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Sélectionnez le type CNAME dans la liste de listes et remplissez les valeurs.":::
+ 
 6. Sélectionnez **Ajouter**.
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Sélectionnez Ajouter.":::
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
@@ -146,9 +164,9 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -161,6 +179,8 @@ Pour vérifier l’enregistrement dans Microsoft 365 :
     |**Hostname (Nom d'hôte)**|**Type (Type)**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Sélectionnez le type TXT/SPF dans la liste de listes et remplissez les valeurs.":::
   
 6. Sélectionnez **Ajouter**.
 
@@ -174,9 +194,9 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -194,9 +214,13 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Cette valeur DOIT se terminer par un point (.)**<br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Cette valeur DOIT se terminer par un point (.)** <br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
   
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Sélectionnez le type TXT/SPF dans la liste de listes et remplissez les valeurs.":::
+
 6. Sélectionnez **Ajouter**.
   
-7. Pour ajouter l’autre enregistrement SRV.
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Sélectionnez Ajouter.":::
+
+7. Ajoutez l’autre enregistrement SRV.
     
 > [!NOTE]
 > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -207,9 +231,9 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
 
 1. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-1. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+1. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
@@ -219,14 +243,18 @@ Sélectionnez cette option uniquement si votre organisation utilise Skype Entrep
     
 1. Ajoutez le premier enregistrement CNAME.
     
-    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste de listes, puis tapez ou copiez-collez les autres valeurs du tableau suivant.
+    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste, puis tapez ou copiez-collez les autres valeurs du tableau suivant.
     
     | **Hostname (Nom d'hôte)** |**Type (Type)**|**Destination CNAME (Enregistrement CNAME de la destination)**|
     |:-----|:-----|:-----|
     |sip  <br/>|CNAME  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
     |lyncdiscover  <br/>|CNAME  <br/> |webdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Sélectionnez le type CNAME dans la liste de listes et remplissez les valeurs.":::
+ 
 1. Sélectionnez **Ajouter**.
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Sélectionnez Ajouter.":::
   
 1. Ajoutez l’autre enregistrement CNAME.
     
@@ -241,29 +269,33 @@ Ce service vous permet de sécuriser et de gérer à distance les appareils mobi
 
 1. Pour commencer, accédez à la page de vos domaines sur le site 123-reg.co.uk en utilisant [ce lien](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Avant toute chose, vous serez invité à vous connecter.
 
-2. On the Domain name overview page, select the name of the domain that you want to edit. 
+1. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine que vous souhaitez modifier.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Sélectionnez le nom du domaine à modifier.":::
 
-3. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS**.
+1. Dans la page Gérer le domaine, sous **Paramètres de domaine avancés,** choisissez **Gérer DNS.**
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Sélectionnez Gérer le DNS dans la liste.":::
   
-4. Dans la page Gérer votre DNS, sélectionnez **l’onglet DNS** avancé. 
+1. Dans la page Gérer votre DNS, sélectionnez **l’onglet DNS** avancé. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Sélectionnez l’onglet DNS avancé.":::
     
 1. Ajoutez le premier enregistrement CNAME.
     
-    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste de listes, puis tapez ou copiez-collez les autres valeurs du tableau suivant.
+    Dans la **zone Type** du nouvel enregistrement, choisissez **CNAME** dans la liste, puis tapez ou copiez-collez les autres valeurs du tableau suivant.
     
- | **Hostname (Nom d'hôte)**|**Type (Type)**|**Destination CNAME (Enregistrement CNAME de la destination)**|
-    |:-----|:-----|:-----|
-    | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
-    |enterpriseenrollment  <br/> | CNAME  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
+   | **Hostname (Nom d'hôte)**|**Type (Type)**|**Destination CNAME (Enregistrement CNAME de la destination)**|
+   |:-----|:-----|:-----|
+   | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
+   |enterpriseenrollment  <br/> | CNAME  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |
   
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Sélectionnez le type CNAME dans la liste de listes et remplissez les valeurs.":::
+
 1. Sélectionnez **Ajouter**.
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Sélectionnez Ajouter.":::
+ 
 1. Ajoutez l’autre enregistrement CNAME.
     
 > [!NOTE]
