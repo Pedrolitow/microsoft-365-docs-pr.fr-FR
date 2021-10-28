@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555031"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587540"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -996,9 +996,10 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 |:-----|:-----|:-----|
 |Étiquette de confidentialité appliquée au site|SensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un site SharePoint ou Teams.|
 |Suppression de l'étiquette de confidentialité sur le site|SensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée sur un site SharePoint ou Teams.|
-|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document à l’aide d’Office sur le web ou d’une stratégie d’attribution automatique d’étiquette.|
-|Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged|Une étiquette de confidentialité différente a été appliquée à un document à l’aide d’Office sur le web ou d’une stratégie d’attribution automatique d’étiquette.|
-|Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d'un document à l'aide de Office sur le web, d'une stratégie d'étiquetage automatique ou de la cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
+|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de niveau de confidentialité a été appliquée à un document à l’aide des Microsoft 365 Apps Office sur le Web. ou une stratégie d’étiquetage automatique.|
+|Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Une étiquette de niveau de confidentialité différente a été appliquée à un document. <br /><br>Les opérations de cette activité sont différentes en fonction de la façon dont l’étiquette a été modifiée :<br /> Office sur le Web ou une stratégie d’étiquetage automatique (FileSensitivityLabelChanged) <br /> Microsoft 365 Apps (SensitivityLabelUpdated)|
+|Étiquette de confidentialité modifiée sur un site|SensitivityLabelChanged|Une étiquette de niveau de confidentialité différente a été appliquée à un site Microsoft Office SharePoint Online ou Teams.|
+|Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’applications Microsoft 365, d’Office sur le Web, d’une stratégie d’étiquetage automatique ou de l’applet de commande [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Stratégie de rétention et activités d’étiquette de rétention

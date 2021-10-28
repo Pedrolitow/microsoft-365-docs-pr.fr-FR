@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 63437f64fe746b2cd664aab75ec42d2b544f9b9c
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434485"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587992"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -190,7 +190,7 @@ Pour utiliser la configuration optionnelle afin de définir vos paramètres de c
 
 ## <a name="locations"></a>Emplacements
 
-Les emplacements dans les stratégies de rétention identifient des services Microsoft 365 spécifiques qui prennent en charge les paramètres de rétention, tels que la messagerie Exchange et les sites Microsoft Office SharePoint Online.
+Les emplacements dans les stratégies de rétention identifient des services Microsoft 365 spécifiques qui prennent en charge les paramètres de rétention, tels que la messagerie Exchange et les sites Microsoft Office SharePoint Online. Utilisez la section suivante pour les emplacements qui ont des détails de configuration et des exceptions possibles dont vous devez être conscient lorsque vous les sélectionnez pour votre stratégie.
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informations de configuration pour la messagerie Exchange et les dossiers publics Exchange
 
@@ -216,7 +216,7 @@ Lorsque vous configurez une stratégie d’application automatique qui utilise d
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informations de configuration pour les sites SharePoint et les comptes OneDrive
 
-Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Microsoft 365. Utilisez plutôt des emplacements de **groupes Microsoft 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe.
+Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. À moins que vous n'utilisiez [des étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d'équipe connectés par des groupes Microsoft 365 ne sont pas pris en charge avec cette option et, à la place, utilisez l'emplacement des groupes **Microsoft 365** qui s'applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
 Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
@@ -230,6 +230,12 @@ Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de
 > De plus, l'URL OneDrive [change automatiquement](/onedrive/upn-changes) en cas de modification de l'UPN de l'utilisateur. Par exemple, un événement de changement de nom tel qu’un mariage. Ou un changement de nom de domaine pour prendre en charge le changement de nom ou la réorganisation de l’entreprise d’une organisation. Si l’UPN change, vous devez mettre à jour les URL OneDrive que vous spécifiez pour les paramètres de rétention.
 > 
 > En raison des défis liés à la spécification fiable des URL que les utilisateurs individuels doivent inclure ou exclure pour les étendues statiques, [étendues adaptatives](retention.md#adaptive-or-static-policy-scopes-for-retention) avec le type d’étendue **utilisateur** qui convient mieux à cet effet.
+
+#### <a name="exceptions-for-adaptive-policy-scopes"></a>Exceptions pour les champs d'application de stratégie adaptative
+
+Lorsque vous configurez une stratégie de rétention qui utilise des étendues de stratégie adaptatives et sélectionnez l'emplacement **des sites Microsoft Office SharePoint Online** :
+
+- Les sites OneDrive et les sites connectés aux groupes Microsoft 365 sont inclus en plus des sites de communication SharePoint, des sites d'équipe qui ne sont pas connectés par des groupes Microsoft 365 et des sites classiques.
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
@@ -254,6 +260,16 @@ Pour revenir à la valeur par défaut de la boîte aux lettres et du site ShareP
 Lorsque vous configurez une stratégie d’application automatique qui utilise des types d’informations sensibles et sélectionnez l’emplacement **Groupes Microsoft 365** :
 
 - Microsoft 365 boîtes aux lettres de groupe ne sont pas incluses. Pour inclure ces boîtes aux lettres dans votre stratégie, sélectionnez l'**emplacement messagerie Exchange** à la place.
+
+#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Que se passe-t-il si un groupe Microsoft 365 est supprimé après l'application d'une stratégie
+
+Une fois que vous avez appliqué une stratégie de rétention à un groupe Microsoft 365 et que ce groupe est ensuite supprimé d'Azure Active Directory Domain Services :
+
+- Le site SharePoint connecté au groupe est conservé et continue d'être géré par la politique de rétention avec l'emplacement des **groupes Microsoft 365**. Le site reste accessible aux personnes qui y avaient accès avant la suppression du groupe, et toute nouvelle autorisation doit désormais être gérée via Microsoft Office SharePoint Online.
+    
+    À ce stade, vous ne pouvez pas exclure le site de l'emplacement des groupes Microsoft 365, car vous ne pouvez pas spécifier le groupe supprimé. Si vous devez libérer la stratégie de rétention de ce site, contactez le Support Microsoft. Par exemple, ouvrez une [demande de service dans le Centre d'Administration Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+
+- La boîte aux lettres du groupe supprimé devient inactive et, comme le site Microsoft Office SharePoint Online, reste soumise aux paramètres de rétention. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 
