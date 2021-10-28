@@ -15,40 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: d28dec16cad1c54c4b5f8fd0415da3c2811ea989
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478792"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585848"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
 [![S’inscrire à l’essai gratuit de gouvernance d’application](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Cloud App Security, vous devez effectuer trois étapes:
-
-1. [Vérifiez les conditions préalables pour les licences et les administrateurs.](#licensing-and-administrator-role-prerequisites)
-1. [Inscrivez-vous à la gouvernance des applications](#sign-up-for-app-governance).
-1. [Ajoutez l’intégration MCAS](#add-integration-with-mcas).
-
+Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Defender for Cloud Apps, commencez par vérifier les prérequis pour les exigences de rôle d’administrateur et de licence. Vous êtes ensuite prêt à [vous inscrire à la version d’évaluation de la gouvernance des applications](#sign-up-for-app-governance). Une dernière étape consiste à [activer l’intégration à MCAS](#add-integration-with-mcas).
 
 ## <a name="sign-up-for-app-governance"></a>Inscrivez-vous à la gouvernance des applications.
 
-Pour les clients Microsoft 365 existants :
+Pour les clients Microsoft 365 existants, vous pouvez accéder à la [page d’inscription pour l’essai gratuit](https://aka.ms/appgovernancetrial) et effectuer les étapes permettant d’ajouter la gouvernance des applications à votre locataire.
 
-1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://aka.ms/appgovernancetrial).
-1. Effectuez les étapes pour ajouter la gouvernance des applications. 
-
-<!--
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
--->
-
-Si vous n’êtes pas déjà client Microsoft 365, vous pouvez vous inscrire à un essai gratuit :
-
-1. En haut de cette page, sélectionnez le bouton  **Compte gratuit** .
-1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
-1. Effectuez les étapes de l’inscription.
+Si vous n’êtes pas déjà un client Microsoft 365, vous pouvez vous inscrire à un essai gratuit en sélectionnant le bouton **Compte gratuit** en haut de cette page. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essayez 1 mois gratuit**, et effectuez les étapes de l’inscription.
 
 Pour acheter un abonnement à la gouvernance des applications, veuillez contacter votre équipe de vente.
 
@@ -72,11 +56,11 @@ Pour vérifier que l’intégration avec MCAS est active, recherchez les straté
 - Détection de l'hameçonnage de OAuth Microsoft 365
 - Gouvernance des applications OAuth Microsoft 365
 
-## <a name="licensing-and-administrator-role-prerequisites"></a>Conditions préalables aux licences et au rôle d’administrateur
+## <a name="prerequisites"></a>Configuration requise
 
 1. Vérifiez que votre compte a le [niveau de licence approprié](#licensing-for-app-governance). La gouvernance des applications est une fonctionnalité complémentaire pour Microsoft Cloud App Security (MCAS). Par conséquent, MCAS doit être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packages de licence.
 1. Vous devez avoir l’un des [rôles d’administrateur](#administrator-roles) répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
-1. L'adresse de facturation de votre organisation doit se trouver dans l'une[ des zones prises en charge en Amérique du Nord, en Europe ou en Afrique](app-governance-countries.md) afin d'activer l'essai gratuit.
+1. L’adresse de facturation de votre organisation doit se trouver dans une région WW ou GBR, CAN, JPN, IND ou AUS go-local afin d’activer la version d’évaluation gratuite.
 
 ### <a name="licensing-for-app-governance"></a>Licences pour la gouvernance des applications
 

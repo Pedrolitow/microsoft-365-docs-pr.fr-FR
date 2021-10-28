@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: d3876900e1dfa26e80550e699dd00d6034d8e6d7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268873"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588112"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -31,15 +31,15 @@ Pour faciliter la cartographie de la relation entre les alertes de gouvernance d
 
 Ce guide fournit des informations sur l’examen et la correction des alertes de gouvernance des applications dans les catégories suivantes.
 
-- Accès initial
+- [Accès initial](#initial-access-alerts)
 - Exécution
-- Persistance
+- [Persistance](#persistence-alerts)
 - Réaffectation des privilèges
 - Fraude à la défense
 - Accès informations d'identification
-- Discovery
+- [Discovery](#discovery-alerts)
 - Mouvement latéral
-- Collection
+- [Collection](#collection-alerts)
 - Exfiltration
 - Impact
 
@@ -344,6 +344,29 @@ Cette détection identifie une application OAuth détectée par un modèle Machi
 1. Passez en revue toutes les activités effectuées par cette application.
 1. Passez en revue les étendues accordées par l’application.
 1. Examinez l'activité de l'utilisateur associée à cette application.
+
+### <a name="suspicious-enumeration-activities-performed-using-aad-powershell"></a>Activités d’énumération suspectes effectuées à l’aide d’AAD PowerShell
+
+**Sévérité**: moyenne
+
+**ID MITRE** : T1087
+
+Cette détection identifie un grand volume d’activités d’énumération suspectes effectuées dans un court laps de temps via une application AAD PowerShell.
+
+**TP ou FP ?**
+
+- **TP** : si vous ’ pouvez confirmer que des activités d’énumération suspectes/inhabituelles ont été effectuées par l’application AAD PowerShell.
+
+  **Action recommandée**: désactivez et supprimez l’application et réinitialisez le mot de passe.
+
+- **FP**: si vous pouvez confirmer qu’aucune activité inhabituelle n’a été effectuée par l’application.
+
+  **Action recommandée**: ignorer l’alerte.
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par cette application.
+1. Passez en revue l’activité de l’utilisateur associée à cette application.
 
 ## <a name="collection-alerts"></a>Alertes de collecte
 

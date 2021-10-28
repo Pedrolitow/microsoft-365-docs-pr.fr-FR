@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 9e70ecd26eabad62e93901d0c6a296c068717b73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197496"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588244"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -108,7 +108,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ## <a name="how-retention-works-for-onenote-content"></a>Fonctionnement de la rétention pour le contenu OneNote
 
-Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote, en arrière-plan, les différentes sections OneNote constituent des fichiers séparés. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
+Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote ou une étiquette de rétention à un dossier OneNote, en arrière-plan, les différentes sections OneNote sont des fichiers individuels qui héritent des paramètres de rétention. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
 
 ## <a name="how-retention-works-with-document-versions"></a>Fonctionnement de la rétention avec des versions de documents
 
