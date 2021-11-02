@@ -15,27 +15,25 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd9ad3186b5bb8d65d0dd712fece2bee0ce4e020
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe0ad42ac0ebfc7f6816e412ab6ffb0ac9291b44
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212244"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643162"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quotas de recherche avancés et paramètres d’utilisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent séparément aux requêtes qui s’exécutent manuellement et aux requêtes qui s’exécutent à l’aide de [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent tenir compte de ces limites et appliquer les meilleures pratiques d’optimisation [pour](advanced-hunting-best-practices.md) minimiser les perturbations.
+Pour que le service reste performant et réactif, le service de recherche avancée définit différents quotas et paramètres d’utilisation (également appelés « limites de service »). Ces quotas et paramètres s’appliquent séparément aux requêtes qui s’exécutent manuellement et aux requêtes qui s’exécutent à l’aide de [règles de détection personnalisées.](custom-detection-rules.md) Les clients qui exécutent plusieurs requêtes régulièrement doivent tenir compte de ces limites et appliquer les meilleures [pratiques](advanced-hunting-best-practices.md) d’optimisation pour minimiser les perturbations.
 
 Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’utilisation existants.
 

@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: Obtenez un rapport Microsoft 365 groupes de recherche pour connaître les groupes et leurs activités.
-ms.openlocfilehash: aa757fd70cec700e18196a11df522529e6fdc6fc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: Obtenez un rapport Microsoft 365 groupes de recherche pour en savoir plus sur les groupes et leurs activités.
+ms.openlocfilehash: 6ef375e1aab13f4ec01514967a90ce726680efbc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553075"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648866"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
+Le tableau Microsoft 365 de rapports d’entreprise vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
   
 ## <a name="how-to-get-to-the-groups-report"></a>Comment obtenir le rapport des groupes
 
@@ -44,7 +44,7 @@ Vous pouvez afficher les activations dans le rapport Office 365 en choisissant l
 
 :::image type="content" alt-text="Microsoft 365 rapports : Microsoft Office 365'activité des groupes." source="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png" lightbox="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png":::
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.
 
 :::image type="content" alt-text="Office 365 d’activité des groupes : choisissez des colonnes." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
@@ -63,7 +63,7 @@ Le **rapport des** groupes permet d’afficher les tendances des 7, 30, 90 ou 18
 |E-mails en Exchange (total) |Nombre total d’éléments dans la boîte aux lettres du groupe. |
 |Stockage de boîtes aux lettres utilisé pour Exchange (Mo) |Stockage utilisé par la boîte aux lettres du groupe. |
 |SharePoint fichiers (total) |Nombre de fichiers stockés dans SharePoint sites de groupe. |
-|SharePoint fichiers (actifs) |Nombre de fichiers du site de groupe SharePoint qui ont été modifiés (vues ou modifiées, synchronisés, partagés en interne ou en externe) pendant la période de rapport. |
+|SharePoint fichiers (actifs) |Nombre de fichiers du site de groupe SharePoint qui ont été modifiés (vues ou modifiées, synchronisés, partagés en interne ou en externe) au cours de la période de rapport. |
 |Stockage total du site utilisé pour SharePoint (Mo) |Quantité de stockage en Mo utilisée pendant la période de rapport. |
 |Messages dans Yammer (publié) |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. |
 |Messages en Yammer (lecture) |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport. |

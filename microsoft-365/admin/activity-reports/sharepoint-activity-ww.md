@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le SharePoint d’utilisation de l’activité pour connaître l’activité de chaque utilisateur SharePoint, le nombre de fichiers partagés et l’utilisation du stockage.
-ms.openlocfilehash: 2ef2e5f736ec6a178f6cbc107b6884b5dc680986
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b130ad1cca6e25a939b942ed98910ba10150ab40
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553039"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648830"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Rapports dans le Centre d’administration : SharePoint activité
 
-En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les [rapports d’activité dans le Centre d'administration Microsoft 365](activity-reports.md).
+En tant qu’administrateur Microsoft 365, le tableau de bord Rapports vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Consultez les [rapports d’activité dans le Centre d'administration Microsoft 365](activity-reports.md).
   
 Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire d'une licence d'utilisation de SharePoint en examinant son interaction avec les fichiers. Cela vous aide également à comprendre le niveau de la collaboration en examinant le nombre de fichiers partagés.
   
@@ -46,12 +46,12 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-Le **SharePoint d’activité** de l’entreprise peut être pris en compte pour les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
+Le **SharePoint d’activité** de l’entreprise peut être pris en compte pour les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
   
 |Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
-|Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur le SharePoint site.  <br/> |
+|Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur SharePoint site.  <br/> |
 |Date de la dernière activité (UTC)  <br/> |Date à laquelle une activité de fichier a été effectuée au plus tard ou à laquelle une page a été visitée pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.  <br/> |
 |Fichiers consultables ou modifiés  <br/> |Nombre de fichiers téléchargés, téléchargés, modifiés ou visionés par l’utilisateur.   <br/> |
 |Fichiers synchronisés  <br/> |Nombre de fichiers qui ont été synchronisés à partir de l’appareil local d’un utilisateur vers SharePoint site. <br/> |

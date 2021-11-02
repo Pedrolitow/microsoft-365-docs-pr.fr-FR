@@ -20,28 +20,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le Yammer d’activité des groupes de Yammer sur le nombre de groupes créés et utilisés dans votre organisation, ainsi que sur leur activité.
-ms.openlocfilehash: dcf1851d2ce7d5e21daaaa8fffeff11b8e9c6213
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 704cc75c9d06c30f5562a824dd93eef470888297
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552895"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648730"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’activité des groupes
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d'activité des groupes Yammer, vous pouvez obtenir des informations sur l'activité des groupes Yammer de votre organisation et voir combien de groupes Yammer sont créés et utilisés.
+Le tableau Microsoft 365 de rapports d’entreprise vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d'activité des groupes Yammer, vous pouvez obtenir des informations sur l'activité des groupes Yammer de votre organisation et voir combien de groupes Yammer sont créés et utilisés.
  
 ## <a name="how-do-i-get-to-the-yammer-groups-activity-report"></a>Comment puis-je obtenir le rapport d’Yammer groupes de travail ?
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
 2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur Yammer carte.
-
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Interpréter le rapport d'activité des groupes Yammer
 
-Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité groupes.**<br/>![Microsoft 365- Rapport d’activité Yammer groupes microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
+Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité des** groupes.<br/>![Microsoft 365- Rapport d’activité Yammer groupes microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 

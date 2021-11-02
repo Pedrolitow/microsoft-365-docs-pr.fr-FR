@@ -16,30 +16,30 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06e87fcb0f9f1521e77d254895ef4fc2c57cf1d5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198684"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646942"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+- [Defender pour le point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
 
 Cette page vous guide à travers les étapes à suivre pour configurer des stratégies macOS dans Jamf Pro.
 
 Vous devez suivre les étapes suivantes :
 
-1. [Obtenir le package d’intégration De Microsoft Defender pour point de terminaison](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [Obtenir le package d’intégration Microsoft Defender for Endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 2. [Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 3. [Configurer les paramètres de Microsoft Defender pour les points de terminaison](#step-3-configure-microsoft-defender-for-endpoint-settings)
-4. [Configurer microsoft Defender pour les paramètres de notification de point de terminaison](#step-4-configure-notifications-settings)
+4. [Configurer les paramètres de notification microsoft Defender pour les points de terminaison](#step-4-configure-notifications-settings)
 5. [Configurer la mise à jour automatique Microsoft (AutoUpdate)](#step-5-configure-microsoft-autoupdate-mau)
 6. [Accorder un accès disque complet à Microsoft Defender pour le point de terminaison](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
 7. [Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
@@ -84,7 +84,7 @@ Vous devez suivre les étapes suivantes :
 
 4. In **Application & Custom Paramètres** select **Configure**.
 
-    ![Image de la configuration de l’application et des paramètres personnalisés.](images/jamfpro-mac-profile.png)
+    ![Image de configuration de l’application et des paramètres personnalisés.](images/jamfpro-mac-profile.png)
 
 5. Sélectionnez **Télécharger fichier (fichier PLIST),** puis dans **Domaine** de préférence, entrez `com.microsoft.wdav.atp` :
 
@@ -124,9 +124,9 @@ Vous devez suivre les étapes suivantes :
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Étape 3 : Configurer Microsoft Defender pour les paramètres de point de terminaison
 
-Vous pouvez utiliser jamf Pro GUI pour modifier les paramètres individuels de la configuration Microsoft Defender ou utiliser la méthode héritée en créant un Plist de configuration dans un éditeur de texte et en le téléchargeant dans jamf Pro.
+Vous pouvez utiliser l’interface graphique graphique jamf Pro pour modifier les paramètres individuels de la configuration de Microsoft Defender pour point de terminaison, ou utiliser la méthode héritée en créant un Plist de configuration dans un éditeur de texte et en le téléchargeant dans jamf Pro.
 
-Notez que vous devez utiliser exact comme domaine de préférence , Microsoft Defender utilise uniquement ce nom et pour `com.microsoft.wdav` charger ses  `com.microsoft.wdav.ext` paramètres gérés !
+Notez que vous devez utiliser exact comme domaine de préférence , Microsoft Defender pour point de terminaison utilise uniquement ce nom et pour charger `com.microsoft.wdav` ses  `com.microsoft.wdav.ext` paramètres gérés !
 
 (La version peut être utilisée dans de rares cas lorsque vous préférez utiliser la méthode GUI, mais que vous devez également configurer un paramètre qui n’a pas encore été ajouté au `com.microsoft.wdav.ext` schéma.)
 
@@ -156,7 +156,7 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
     ![Télécharger schéma.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des propriétés** pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
+5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender for Endpoint pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des propriétés** pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
 
     ![Sélectionnez les paramètres gérés.](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -180,12 +180,12 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
     ![Paramètres de configuration : terminé.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-Microsoft Defender ajoute de nouveaux paramètres au fil du temps. Ces nouveaux paramètres seront ajoutés au schéma et une nouvelle version sera publiée sur Github.
+Microsoft Defender pour le point de terminaison ajoute de nouveaux paramètres au fil du temps. Ces nouveaux paramètres seront ajoutés au schéma et une nouvelle version sera publiée sur Github.
 Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil de configuration existant et de modifier le schéma sous l’onglet Application **& Custom Paramètres.**
 
 ### <a name="legacy-method"></a>Méthode héritée
 
-1. Utilisez les paramètres de configuration de Microsoft Defender pour les points de terminaison suivants :
+1. Utilisez les paramètres de configuration microsoft Defender pour les points de terminaison suivants :
 
     - enableRealTimeProtection
     - passiveMode
@@ -383,15 +383,15 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
     ![Image des paramètres de configuration addsav.](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
-    ![Image des paramètres de configuration enregistrer ajouter.](images/6f093e42856753a3955cab7ee14f12d9.png)
+    ![Image de l’ajout des paramètres de configuration.](images/6f093e42856753a3955cab7ee14f12d9.png)
 
 16. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration.**
 
     ![Image de l’image de profil de configuration des paramètres de configuration.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-## <a name="step-4-configure-notifications-settings"></a>Étape 4 : Configurer les paramètres de notification
+## <a name="step-4-configure-notifications-settings"></a>Étape 4 : Configurer les paramètres de notifications
 
-Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
+Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouveaux.
 
 1. Dans le tableau de bord Jamf Pro, **sélectionnez Ordinateurs,** puis **Profils de configuration.**
 
@@ -443,7 +443,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>Étape 5 : Configurer la mise à jour automatique Microsoft (AutoUpdate)
 
-1. Utilisez les paramètres de configuration de Microsoft Defender pour les points de terminaison suivants :
+1. Utilisez les paramètres de configuration microsoft Defender pour les points de terminaison suivants :
 
       ```XML
    <?xml version="1.0" encoding="UTF-8"?>
@@ -548,7 +548,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image du contrôle de la stratégie de confidentialité de la configuration.](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
 
-5. Dans **le contrôle de stratégie des préférences de confidentialité,** entrez les détails suivants :
+5. Dans **Le contrôle de stratégie des préférences de confidentialité,** entrez les détails suivants :
 
     - Identificateur : `com.microsoft.wdav`
     - Type d’identificateur : ID d’offre groupée
@@ -598,7 +598,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image de l’image addimage du paramètre de configuration.](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de groupe > sélectionnez Groupe MachineGroup de **Contoso.**
+14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de > sélectionnez Groupe machine de **Contoso.**
 
     ![Image du paramètre de configuration contoso machinegrp.](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
@@ -608,11 +608,11 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 17. Sélectionnez **Terminé**.
 
-    ![Image de donimg des paramètres de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
+    ![Image de donimg de paramètre de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
 
     ![Image du paramètre de configuration donimg2.](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) et le télécharger dans les profils de configuration JAMF, comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) et le télécharger dans les profils de configuration JAMF comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>Étape 7 : Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison
 
@@ -725,7 +725,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Centre de sécurité Microsoft Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
-Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
+Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouveaux.
 
 1. Dans le tableau de bord Jamf Pro, **sélectionnez Ordinateurs,** puis **Profils de configuration.**
 
@@ -761,7 +761,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 6. Sélectionnez **+ Ajouter**.
 
-    ![Image des paramètres de configuration adim.](images/0dde8a4c41110dbc398c485433a81359.png)
+    ![Image de l’animation des paramètres de configuration.](images/0dde8a4c41110dbc398c485433a81359.png)
 
 7. Sélectionnez **Enregistrer**.
 
@@ -779,7 +779,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Étape 11 : Déployer Microsoft Defender pour endpoint sur macOS
 
-1. Accédez à l’endroit où vous avez `wdav.pkg` enregistré.
+1. Accédez à l’endroit où vous avez enregistré `wdav.pkg` .
 
     ![Image de l’explorateur de fichiers wdav pkg.](images/8dde76b5463047423f8637c86b05c29d.png)
 
@@ -846,7 +846,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 12. Sélectionnez **l’enregistrement périodique.**
 
-    ![Image des paramètres de configuration récurrent l’checkin.](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
+    ![Image des paramètres de configuration récurrent l’enregistrement.](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
 13. Sélectionnez **Enregistrer**.
 

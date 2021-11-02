@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: 3b3d99754a7ace6ffbd8b503e4d70f956425e678
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 42598322c58682e467eba99a7b01a7036fe05581
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553015"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648754"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer activité de gestion
 
-En tant Microsoft 365, le tableau de bord **Rapports** vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration.](activity-reports.md) Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
+En Microsoft 365, le tableau de bord Rapports vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration.](activity-reports.md) Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Comment puis-je obtenir le rapport Yammer’activité de l’entreprise ?
 
@@ -41,7 +41,7 @@ En tant Microsoft 365, le tableau de bord **Rapports** vous présente les donné
 
 Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité Yammer Microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité : choisissez des colonnes.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité : choisissez des colonnes.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 

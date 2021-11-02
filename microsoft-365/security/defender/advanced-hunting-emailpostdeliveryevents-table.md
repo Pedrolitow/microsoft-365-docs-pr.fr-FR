@@ -15,24 +15,22 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5de874a75763152422fb1cd84e90bc9fed716e6a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f3338639ed0db6b11a2796def8ec4eb209a9824
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199560"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646882"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le tableau du schéma de recherche avancée contient des informations sur les actions de post-remise prises sur les `EmailPostDeliveryEvents` messages électroniques Microsoft 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
@@ -48,17 +46,17 @@ Pour obtenir plus d’informations sur les messages électroniques individuels, 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
+| `NetworkMessageId` | chaîne | Identificateur unique de l’e-mail, généré par Microsoft 365 |
 | `InternetMessageId` | chaîne | Identificateur public de l’e-mail défini par le système de courrier d’envoi |
 | `Action` | chaîne | Action entreprise sur l’entité |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement : correction manuelle, HAMEÇON ZAP, PROGRAMME MALVEILLANT ZAP |
-| `ActionTrigger` | string | Indique si une action a été déclenchée par un administrateur (manuellement ou par le biais de l’approbation d’une action automatisée en attente) ou par un mécanisme spécial, tel qu’une ZAP ou une remise dynamique |
-| `ActionResult` | string | Résultat de l’action |
-| `RecipientEmailAddress` | string | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
+| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement : correction manuelle, HAMEÇON ZAP, PROGRAMME MALVEILLANT ZAP |
+| `ActionTrigger` | chaîne | Indique si une action a été déclenchée par un administrateur (manuellement ou par le biais de l’approbation d’une action automatisée en attente) ou par un mécanisme spécial, tel qu’une ZAP ou une remise dynamique |
+| `ActionResult` | chaîne | Résultat de l’action |
+| `RecipientEmailAddress` | chaîne | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
 | `DeliveryLocation` | chaîne | Emplacement de remise du courrier électronique : boîte de réception/dossier, local/externe, courrier indésirable, quarantaine, échec, supprimé, éléments supprimés |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
-| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
-| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
+| `ThreatTypes` | chaîne | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
+| `DetectionMethods` | chaîne | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 
 ## <a name="supported-event-types"></a>Types d’événements pris en charge
 Ce tableau capture les événements avec les valeurs `ActionType` suivantes :

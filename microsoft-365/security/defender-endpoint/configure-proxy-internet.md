@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42f21f27e30cc4a2bc4af5a2ecefd07c7353d96a
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 4d3dceeea5566b14e9742df77773c3bf07a1bbfc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240223"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645798"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -63,7 +63,7 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 Configurez un proxy statique basé sur le Registre pour le capteur defender de détection et de réponse de point de terminaison (PEPT) pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
-> Lorsque vous utilisez cette option sur Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir la version suivante (ou version ultérieure) et le cumul des mises à jour cumulatives :
+> Lorsque vous utilisez cette option sur Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir les mises à jour cumulatives et de build suivantes (ou ultérieures) :
 >
 > - Windows 11
 > - Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
@@ -77,7 +77,7 @@ Le proxy statique est également configurable par le biais de la stratégie de g
 
 - **Modèles d’administration > Windows composants >** collecte de données et builds d’aperçu > Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie.
 
-  Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié.**
+  Définissez-le **sur Activé et** sélectionnez Désactiver l’utilisation du proxy **authentifié.**
 
   ![Image du paramètre de stratégie de groupe 1.](images/atp-gpo-proxy1.png)
 
@@ -91,7 +91,7 @@ Le proxy statique est également configurable par le biais de la stratégie de g
 | Stratégie de groupe | Clé du Registre | Entrée de Registre | Valeur |
 |:---|:---|:---|:---|
 | Configurer l’utilisation du proxy authentifié pour l’expérience utilisateur connectée et le service de télémétrie | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| Configurer les expériences des utilisateurs connectés et la télémétrie | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> Par exemple : ```http://10.0.0.6:8080``` (REG_SZ) |
+| Configurer les expériences des utilisateurs connectés et la télémétrie | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Par exemple : ```10.0.0.6:8080``` (REG_SZ) |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurer un proxy statique pour Antivirus Microsoft Defender
 
@@ -119,9 +119,9 @@ Configurez le proxy statique à l’aide de la stratégie de groupe trouvée ici
 >
 > À des fins de résilience et de nature en temps réel de la protection cloud, Antivirus Microsoft Defender mettre en cache le dernier proxy de travail connu. Assurez-vous que votre solution proxy n’effectue pas d’inspection SSL, car cela va rompre la connexion cloud sécurisée. 
 >
-> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré.](manage-protection-updates-microsoft-defender-antivirus.md) 
+> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilisera un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré.](manage-protection-updates-microsoft-defender-antivirus.md) 
 >
-> Si nécessaire, vous pouvez utiliser des modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir la configuration automatique du **proxy (.pac)** pour la connexion au réseau si vous devez configurer des configurations avancées avec plusieurs **proxys.** Utilisez modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir des adresses pour contourner le serveur proxy afin d’empêcher les Antivirus Microsoft Defender d’utiliser un serveur proxy pour ces destinations. 
+> Si nécessaire, vous pouvez utiliser des modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir la configuration automatique du **proxy (.pac)** pour vous connecter au réseau si vous devez configurer des configurations avancées avec plusieurs **proxys.** Utilisez modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir des adresses pour contourner le serveur proxy afin d’empêcher les Antivirus Microsoft Defender d’utiliser un serveur proxy pour ces destinations. 
 >
 > Vous pouvez également utiliser PowerShell avec `Set-MpPreference` l’cmdlet pour configurer ces options : 
 >
@@ -136,7 +136,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 > [!NOTE]
 >
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.</br>
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrez une invite de commandes avec élévation de privilèges :
    1. Accéder à **Démarrer** et taper **cmd**.
@@ -209,7 +209,7 @@ Les informations ci-dessous réentrepent les informations de configuration du pr
 
  Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation de la Microsoft Monitoring Agent (MMA) pour les versions précédentes de Windows.
 
-1.  Intégrer un système d’exploitation précédent avec le Microsoft Monitoring Agent (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows sur les serveurs [Defender pour endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et [Onboard Windows).](configure-server-endpoints.md)
+1.  Intégrer un système d’exploitation précédent avec l’Microsoft Monitoring Agent (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows sur les serveurs [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et [Onboard Windows.](configure-server-endpoints.md)
 
 2. Assurez-vous que l’ordinateur a correctement des rapports dans le Microsoft 365 Defender web.
 
@@ -219,7 +219,7 @@ Les informations ci-dessous réentrepent les informations de configuration du pr
 
     ![Image de l’administrateur dans Windows PowerShell.](images/admin-powershell.png)
 
-Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et à votre espace de travail et se trouve dans la section Intégration de votre client dans le portail Microsoft 365 Defender.
+Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et espace de travail et se trouve dans la section Intégration de votre client dans Microsoft 365 Defender portail.
 
 Le point de terminaison de l’URL .blob.core.windows.net peut être remplacé par les URL affichées dans la section « Règle de pare-feu : .blob.core.windows.net » des résultats \* \* du test.
 
@@ -252,7 +252,7 @@ Vérifier que la configuration du proxy a été effectuée avec succès, que Win
 
 5. *ExtrayezMDEClientAnalyzerResult.zip* fichier créé par l’outil dans le dossier utilisé dans *HardDrivePath*.
 
-6. Ouvrez *MDEClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour activer la découverte de serveur et l’accès aux URL du service.
+6. Ouvrez *MDEClientAnalyzerResult.txt* et vérifiez que vous avez effectué les étapes de configuration du proxy pour activer la découverte de serveur et l’accès aux URL de service.
 
    L'outil vérifie la connectivité des URL du service Defender for Endpoint avec lesquelles le client Defender for Endpoint est configuré pour interagir. Il imprime ensuite les résultats dans le *fichierMDEClientAnalyzerResult.txt* pour chaque URL pouvant potentiellement être utilisée pour communiquer avec les services Defender for Endpoint. Par exemple :
 

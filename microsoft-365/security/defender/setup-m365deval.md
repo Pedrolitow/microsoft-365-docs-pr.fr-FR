@@ -1,6 +1,6 @@
 ---
 title: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote
-description: Accéder Microsoft 365 Defender portail d’essai puis configurer votre environnement Microsoft 365 Defender d’essai
+description: Accéder Microsoft 365 Defender portail d’essai, puis configurer votre environnement Microsoft 365 Defender d’essai
 keywords: Microsoft 365 Defender d’essai, Microsoft 365 Defender le programme d’installation pilote, essayez Microsoft 365 Defender, Microsoft 365 Defender de laboratoire d’évaluation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,36 +19,36 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ec6333317297ee83ba4e5869fd92ceea62f2a971
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca01be03f3243159e6cc105b799731efc094e16e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212148"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643242"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurer votre version d Microsoft 365 Defender d’essai dans un environnement de laboratoire 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender 
 
 Cette rubrique vous guide pour configurer un environnement de laboratoire dédié. Pour plus d’informations sur la configuration d’une version d’évaluation en production, voir le nouveau guide Microsoft 365 Defender évaluation et [pilote.](eval-overview.md) 
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>Créer un client d Office 365 E5 d’essai
 >[!NOTE]
->Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes Office 365 E5 création d’un client d’essai.
+>Si vous avez déjà un abonnement Office 365 ou Azure Active Directory, vous pouvez ignorer les étapes Office 365 E5 création du client d’essai.
 
 1. Go to the [Office 365 E5 product portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) and select Free **trial**.
 
    ![Image of_Office page d’essai gratuit 365 E5.](../../media/mtp-eval-9.png)
   
-2. Terminez l’inscription de la version d’essai en entrant votre adresse de messagerie (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
+2. Terminez l’inscription de la version d’essai en entrant votre adresse e-mail (personnelle ou d’entreprise). Cliquez **sur Configurer le compte.**
 
    ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5.](../../media/mtp-eval-10.png)
 
-3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de la société, taille de la société et pays ou région.  
+3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de société, taille de la société et pays ou région.  
 
    ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société.](../../media/mtp-eval-11.png)
    
@@ -65,7 +65,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
  
 6. Configurer la première identité, qui sera un administrateur général pour le client. Remplissez le **nom et le** mot de **passe.** Cliquez sur **S’inscrire**.
 
-   ![Image of_Office la page de configuration de l’inscription de la version d’essai 365 E5 dans laquelle vous pouvez définir votre identité professionnelle.](../../media/mtp-eval-14.png)
+   ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5 dans laquelle vous pouvez définir votre identité professionnelle.](../../media/mtp-eval-14.png)
 
 7. Cliquez **sur Passer au programme d’installation** pour terminer Office 365 E5 mise en service du client d’essai.
 
@@ -95,7 +95,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
     ![Image of_Office 365 E5 dans laquelle vous pouvez choisir vos services en ligne.](../../media/mtp-eval-21.png)
 
-14. Ajoutez des enregistrements MX, CNAME et TXT à votre domaine. Lorsque vous avez terminé, **sélectionnez Vérifier**.
+14. Ajoutez des enregistrements MX, CNAME et TXT à votre domaine. Lorsque vous avez terminé, sélectionnez **Vérifier**.
 
     ![Image of_Office 365 E5 ici, vous pouvez ajouter vos enregistrements DNS.](../../media/mtp-eval-22.png)
  
@@ -124,7 +124,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
 5. Cliquez **sur Essayer maintenant** pour confirmer votre Microsoft 365 E5 d’essai.
 
-   ![Image of_Microsoft 365 E5 Page d’essai gratuit de démarrage où vous devez horloger le bouton Essayer maintenant pour démarrer.](../../media/mtp-eval-27.png)
+   ![Image of_Microsoft 365 E5 Page d’essai gratuit de démarrage dans laquelle vous devez horloger le bouton Essayer maintenant pour démarrer.](../../media/mtp-eval-27.png)
  
 6. Go to the **Administration Microsoft 365 Center**  >  **Users**  >  **Active Users**. Sélectionnez votre compte d’utilisateur, sélectionnez Gérer les **licences de** produits, puis remplacez la licence Office 365 E5 par **Microsoft 365 E5**. Cliquez sur **Enregistrer**.
 

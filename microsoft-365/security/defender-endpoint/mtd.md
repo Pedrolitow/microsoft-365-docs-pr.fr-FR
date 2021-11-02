@@ -17,28 +17,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8de50b9f06f05c012cc2b4c789838612d98abe62
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556887"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646922"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour le point de terminaison - Défense contre les menaces mobiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender pour point de terminaison sur Android et iOS est notre solution de défense contre les menaces **mobiles (MTD).** En règle générale, les entreprises sont proactives pour protéger les PC contre les vulnérabilités et les attaques, tandis que les appareils mobiles ne sont souvent pas surveillés et non protégés. Lorsque les plateformes mobiles ont une protection intégrée telle que l’isolation des applications et les magasins d’applications grand public, ces plateformes restent vulnérables aux attaques basées sur le web ou à d’autres attaques sophistiquées. À mesure que de plus en plus d’employés utilisent des appareils pour travailler et accéder à des informations sensibles, il est impératif que les entreprises déploient une solution MTD pour protéger les appareils et vos ressources contre les attaques de plus en plus sophistiquées sur les mobiles.
+Microsoft Defender pour point de terminaison sur Android et iOS est notre solution de défense contre les menaces **mobiles (MTD).** En règle générale, les entreprises sont proactives pour protéger les PC contre les vulnérabilités et les attaques, tandis que les appareils mobiles ne sont souvent pas surveillés et non protégés. Lorsque les plateformes mobiles ont une protection intégrée telle que l’isolation des applications et les magasins d’applications grand public contrôlés, ces plateformes restent vulnérables aux attaques basées sur le web ou à d’autres attaques sophistiquées. À mesure que de plus en plus d’employés utilisent des appareils pour travailler et accéder à des informations sensibles, il est impératif que les entreprises déploient une solution MTD pour protéger les appareils et vos ressources contre les attaques de plus en plus sophistiquées sur les mobiles.
 
 ## <a name="key-capabilities"></a>Fonctionnalités clés
 
-Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonctionnalités clés ci-dessous, pour plus d’informations sur les dernières fonctionnalités et avantages, lisez nos [annonces.](https://aka.ms/mdeblog)
+Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonctionnalités clés ci-dessous. Pour plus d’informations sur les dernières fonctionnalités et avantages, lisez nos [annonces.](https://aka.ms/mdeblog)
 
 <br>
 
@@ -47,11 +47,15 @@ Microsoft Defender pour point de terminaison sur Android et iOS fournit les fonc
 |Web Protection|Anti-hameçonnage, blocage des connexions réseau non sécurisées et prise en charge des indicateurs personnalisés.|
 |Protection contre les programmes malveillants (Android uniquement)|Analyse des applications malveillantes.|
 |Détection de jailbreak (iOS uniquement)|Détection d’appareils jailbreakés.|
+|Gestion des menaces et des vulnérabilités (TVM). Dans la version d’évaluation. Voir la remarque ci-dessous*|Évaluation de la vulnérabilité des appareils mobiles intégrés. Visitez cette [page pour](next-gen-threat-and-vuln-mgt.md) en savoir plus sur Gestion des menaces et des vulnérabilités microsoft Defender pour le point de terminaison. *Notez que sur iOS, seules les vulnérabilités du système d’exploitation sont pris en charge dans cette prévisualisation.*|
 |Alerte unifiée|Alertes de toutes les plateformes dans la console de sécurité M365 unifiée|
-|Accès conditionnel, lancement conditionnel|Blocage des appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque defender pour les points de terminaison peuvent également être ajoutés aux stratégies de protection des applications (MAM)|
+|Accès conditionnel, lancement conditionnel|Blocage des appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque de Defender for Endpoint peuvent également être ajoutés aux stratégies de protection des applications (MAM)|
 |Intégration à Microsoft Tunnel|Peut s’intégrer Microsoft Tunnel, une solution de passerelle VPN pour activer la sécurité et la connectivité dans une seule application. Disponible uniquement sur Android actuellement|
 
 Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour les points de terminaison. Pour plus d’informations, voir [Conditions requises pour les licences.](minimum-requirements.md#licensing-requirements)
+
+> [!NOTE]
+> L’évaluation des vulnérabilités sur Android et iOS est actuellement en prévisualisation et peut être considérablement modifiée avant sa publication commerciale. Si vous avez activé les fonctionnalités de prévisualisation publique, vous pouvez consulter la fonctionnalité TVM sur Android et iOS dès aujourd’hui ! Si ce n’est [](preview.md) pas le cas, nous vous encourageons à activer les fonctionnalités de prévisualisation de Microsoft Defender for Endpoint pour accéder aux fonctionnalités les plus nouvelles.
 
 ## <a name="overview-and-deploy"></a>Vue d’ensemble et déploiement
 
@@ -75,7 +79,7 @@ Cela permet de réduire les problèmes potentiels qui peuvent survenir lors du d
 
 - Les appareils s’affiche dans la liste d’inventaire des appareils : après l’intégration réussie de Defender for Endpoint sur l’appareil mobile, vérifiez que l’appareil est répertorié dans l’inventaire des appareils dans la [console de sécurité.](https://security.microsoft.com)
 
-- Exécutez un test de détection de programmes malveillants sur un appareil Android : installez n’importe quelle application de test antivirus à partir de Google Play Store et vérifiez qu’elle est détectée par Microsoft Defender pour endpoint. Voici un exemple d’application qui peut être utilisée pour ce test : [Test virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Notez que sur les Enterprise Android avec un profil de travail, seul le profil de travail est pris en charge.
+- Exécutez un test de détection de programmes malveillants sur un appareil Android : installez n’importe quelle application de test antivirus à partir de google play store et vérifiez qu’elle est détectée par Microsoft Defender pour endpoint. Voici un exemple d’application qui peut être utilisée pour ce test : [Test virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Notez que sur les Enterprise Android avec un profil de travail, seul le profil de travail est pris en charge.
 
 - Exécutez un test de hameçonnage : recherchez et vérifiez qu’il est bloqué https://smartscreentestratings2.net par Microsoft Defender for Endpoint. Notez que sur les Enterprise Android avec un profil de travail, seul le profil de travail est pris en charge.
 

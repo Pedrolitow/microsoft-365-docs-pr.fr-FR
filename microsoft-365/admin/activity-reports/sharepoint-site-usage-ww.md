@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport SharePoint’utilisation du site pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisateurs activement utilisés et le stockage total utilisé.
-ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2c29234df1076fa31ea836b7ead51234e121004e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553027"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648818"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation SharePoint site
 
-En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue d’ensemble de la valeur que vous obtenez de SharePoint en termes de nombre total de fichiers stockés par les utilisateurs sur des sites SharePoint, du nombre de fichiers activement utilisés et du stockage consommé sur tous ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site. 
+En tant qu’administrateur Microsoft 365, le tableau de bord Rapports vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue d’ensemble de la valeur que vous obtenez de SharePoint en termes de nombre total de fichiers stockés par les utilisateurs sur des sites SharePoint, du nombre de fichiers activement utilisés et du stockage consommé sur tous ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site. 
 
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Comment accéder au Rapport Utilisation du site SharePoint
 
@@ -58,13 +58,15 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
 
 Vous pouvez afficher l’utilisation du site dans le rapport SharePoint en choisissant l’onglet **Utilisation du** site.
 
-:::image type="content" alt-text="Microsoft 365- Rapport d’utilisation SharePoint site Microsoft." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
+:::image type="content" alt-text="Microsoft 365- Rapport d’utilisation SharePoint site microsoft." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.
 
 :::image type="content" alt-text="SharePoint d’utilisation du site : choisissez des colonnes." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+
+Le **SharePoint’utilisation** du site peut être pris en compte pour les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
   
 |Métrique|Description|
 |:-----|:-----|

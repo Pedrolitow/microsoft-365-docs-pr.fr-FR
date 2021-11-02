@@ -17,27 +17,26 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239575"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643207"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles (GA) dans la dernière version de Microsoft Defender for Endpoint.
 
 Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu.](preview.md)
-
 
 > [!TIP]
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
@@ -45,7 +44,6 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
-
 
 Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, voir :
 
@@ -55,10 +53,10 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres systèmes d’exploitation :
+
 - [Nouveautés de Defender pour Point de terminaison sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
-
 
 ## <a name="october-2021"></a>Octobre 2021
 
@@ -68,7 +66,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 ## <a name="september-2021"></a>Septembre 2021
 
-- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non-catégorie. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
+- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non catégorisation. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -84,11 +82,11 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 ## <a name="june-2021"></a>Juin 2021
 
-- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
+- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exporter les évaluations des vulnérabilités et des [configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel d’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
-- [Exporter les évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
+- [Exporter des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
-- [Activité de correction](get-remediation-methods-properties.md) API <br>  Ajoute une collection d’API avec des réponses qui contiennent des Gestion des menaces et des vulnérabilités de correction qui ont été créées dans votre client. Les types d’informations de réponse incluent une activité de correction par ID, toutes les activités de correction et les périphériques exposés d’une activité de correction.
+- [Activité de correction](get-remediation-methods-properties.md) API <br> Ajoute une collection d’API avec des réponses qui contiennent des Gestion des menaces et des vulnérabilités de correction qui ont été créées dans votre client. Les types d’informations de réponse incluent une activité de correction par ID, toutes les activités de correction et les périphériques exposés d’une activité de correction.
 
 - [Découverte d’appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. À l’aide d’appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l’affichage de points de terminaison non pris en compte dans votre réseau.
 
@@ -101,10 +99,10 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 - [Microsoft Tunnel Intégration VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel Les fonctionnalités VPN sont désormais intégrées à l’application Microsoft Defender for Endpoint pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur finaux simplifiée avec une application de sécurité, offrant à la fois une protection contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes informatiques et de sécurité peuvent conserver les mêmes expériences d’administration qu’elles connaissent.
 
-- [Détection d’jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Endpoint sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [Détection d’jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 - [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client.*
 
 

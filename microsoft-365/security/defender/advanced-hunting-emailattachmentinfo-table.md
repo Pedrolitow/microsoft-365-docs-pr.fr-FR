@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5bcdac9e292e64c0b45412eb93a03d7d760dd53
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184424"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643170"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -47,20 +45,20 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
-| `SenderFromAddress` | string | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |
-| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
-| `SenderObjectId` | string | Identificateur unique du compte de l’expéditeur dans Azure AD |
-| `RecipientEmailAddress` | string | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
-| `RecipientObjectId` | string | Identificateur unique du destinataire de courrier dans Azure AD |
+| `NetworkMessageId` | chaîne | Identificateur unique de l’e-mail, généré par Microsoft 365 |
+| `SenderFromAddress` | chaîne | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |
+| `SenderDisplayName` | chaîne | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
+| `SenderObjectId` | chaîne | Identificateur unique du compte de l’expéditeur dans Azure AD |
+| `RecipientEmailAddress` | chaîne | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
+| `RecipientObjectId` | chaîne | Identificateur unique du destinataire de l’e-mail Azure AD |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FileType` | string | Type d’extension de fichier |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
-| `ThreatNames` | string | Nom de détection des programmes malveillants ou autres menaces détectées |
-| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
+| `ThreatNames` | chaîne | Nom de détection des programmes malveillants ou autres menaces détectées |
+| `DetectionMethods` | chaîne | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
-| `FileSize` | string | Taille du fichier en octets |
+| `FileSize` | chaîne | Taille du fichier en octets |
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

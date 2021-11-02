@@ -1,78 +1,96 @@
 ---
-title: Vue d’Apprentissage Microsoft Viva (prévisualisation)
+title: Vue d’ensemble Apprentissage Microsoft Viva
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
+ms.custom: intro-overview
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-ms.localizationpriority: ''
-description: Découvrez les Apprentissage Microsoft Viva (prévisualisation) dans votre environnement Microsoft 365 de travail.
-ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.localizationpriority: medium
+description: Découvrez les Apprentissage Microsoft Viva votre environnement Microsoft 365 de travail.
+ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478852"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645946"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation)
+# <a name="overview-of-microsoft-viva-learning"></a>Vue d’ensemble Apprentissage Microsoft Viva
 
-> [!NOTE]
-> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. La prévisualisation n’est pas actuellement ouverte aux nouveaux participants.
+Learning est un hub d’apprentissage centralisé dans Microsoft Teams qui vous permet d’intégrer en toute transparence l’apprentissage et le développement de compétences dans votre journée. Dans Learning, votre équipe peut découvrir, partager, recommander et apprendre à partir des bibliothèques de contenu fournies par votre organisation et vos partenaires. Ils peuvent tout faire sans quitter Microsoft Teams.
 
-Learning (prévisualisation) est un hub d’apprentissage centralisé dans Microsoft Teams qui vous permet d’intégrer en toute transparence l’apprentissage et le développement de compétences dans votre journée. Dans La Learning (prévisualisation), votre équipe peut découvrir, partager, affecter et apprendre à partir des bibliothèques de contenu fournies par votre organisation et vos partenaires. Ils peuvent tout faire sans quitter Microsoft Teams.
+   ![Capture d’écran de la Learning page d’accueil de Teams.](../media/learning/overview-1.png)
 
-   ![Capture d’écran de la page d’Learning (prévisualisation) dans Teams.](../media/learning/learning-home-teams.png)
-
-Les employés sont plus susceptibles de se déclarer satisfaits et de rester au niveau d’une organisation plus longtemps lorsqu’ils ont des opportunités d’apprentissage et de croissance. Learning (prévisualisation) facilite la création de ces opportunités pour votre organisation sans avoir à vous éloigner des outils de communication que vous utilisez déjà.
+Cette Learning facilite la création d’apprentissages et d’opportunités croissantes pour votre organisation sans avoir à vous éloigner des outils de communication que vous utilisez déjà.
 
 ## <a name="learn-while-working"></a>Apprendre tout en travaillant
 
 ### <a name="everyone"></a>Tout le monde
 
-Learning (prévisualisation) facilite l’intégration de l’apprentissage dans votre journée. Lorsque vous ouvrez La Learning (prévisualisation) dans Microsoft Teams, vous voyez une vue personnalisée du contenu d’apprentissage de votre organisation et de vos partenaires, tels que LinkedIn Learning. Au cours de la recherche et de la formation, votre contenu recommandé sera mis à jour pour refléter vos intérêts.
+Cette Learning facilite l’intégration de l’apprentissage dans votre journée. Lorsque vous ouvrez Learning dans Microsoft Teams, vous voyez une vue personnalisée du contenu d’apprentissage de votre organisation et de vos partenaires, tels que LinkedIn Learning. Au cours de la recherche et de la formation, votre contenu recommandé sera mis à jour pour refléter vos intérêts.
 
 - Trouvez facilement les opportunités d’apprentissage fournies par votre organisation.
-- Parcourez les cours de LinkedIn Learning, Microsoft Learn, Microsoft 365 Training, Skillsoft, Coursera, edX, Pluralsight et d’autres partenaires d’apprentissage tiers.
+- Parcourez les cours de Microsoft et de fournisseurs de contenu tiers.
 - Recherchez du contenu d’apprentissage spécifique qui vous fait appel ou prend en charge vos objectifs de carrière.
 - Partagez du contenu d’apprentissage pertinent, intéressant et important avec les membres ou les groupes de votre équipe dans Microsoft Teams conversation ou canal.
 - Organisez vos sélections personnalisées de contenu d’apprentissage Microsoft Teams canaux et onglets.
-- J’aime et enregistre les cours qui vous intéressent.
+- Cours de signet qui vous intéressent.
 - Lire linkedIn Learning cours dans le lecteur incorporé sans quitter Microsoft Teams.
 
 ### <a name="managers"></a>Managers
 
-Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir besoin de coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez affecter du contenu d’apprentissage à des individus ou des groupes, partager du contenu avec votre équipe et suivre l’état d’achèvement de l’apprentissage que vous avez affecté.
+Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir à coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez recommander des contenus d’apprentissage à des personnes, partager du contenu avec votre équipe et suivre l’état d’achèvement signalé de l’apprentissage que vous avez recommandé.
 
 ## <a name="admin-roles"></a>Rôles d’administrateurs
 
-Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Le Learning (prévisualisation), vous aurez besoin d’autorisations comme :
+Learning est disponible par défaut dans Microsoft Teams avec du contenu déjà disponible. Pour configurer des sources de contenu d’apprentissage dans Learning et gérer des licences individuelles, vous aurez besoin des autorisations ci-après :
 
 - Microsoft Teams administrateur
-- Microsoft 365 administrateur général ou administrateur SharePoint général
+- Microsoft 365 administrateur global ou administrateur SharePoint administrateur
 - Administrateur d’informations
 
 ### <a name="knowledge-admin"></a>Administrateur d’informations
 
-L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [voir Azure AD rôles intégrés.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
+L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [Azure AD rôles intégrés.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint’administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+
+## <a name="learning-content-sources"></a>Learning sources de contenu
+
+Le contenu de Microsoft Learn et Microsoft 365 Training est automatiquement disponible dans Le Learning. Vous aurez également un accès gratuit à un ensemble de 125 cours à partir de LinkedIn Learning. En outre, Learning peut s’intégrer à certains fournisseurs de contenu tiers et systèmes de gestion de l’apprentissage. Pour plus d’informations sur la façon de configurer des sources de contenu, voir [Manage content sources for Contrôle Learning](content-sources-365-admin-center.md).
+
+## <a name="supported-languages"></a>Langues prises en charge
+
+Learning s’adapte aux préférences linguistiques Microsoft 365 de votre organisation. Toutefois, Learning ne prend actuellement pas en charge les langues de droite à gauche.
+
+## <a name="data-and-privacy"></a>Données et confidentialité
+
+Learning résidence des données est propre au client et suit les instructions de stockage Microsoft 365 données standard selon la géographie disponible. Pour plus d’informations, [voir Where is my Microsoft 365 customer data stored.](/microsoft-365/enterprise/o365-data-locations)
+
+L’intégration SharePoint est actuellement prise en charge uniquement pour les sites hébergés à partir de la zone géographique d’accueil du client. Par exemple, un client français peut uniquement lier SharePoint sites hébergés en France à Learning.
+
+Les données stockées à partir de Learning incluent :
+
+- Learning métadonnées de contenu d’objet, telles que le titre, la description, l’auteur et la langue
+- Données utilisateur, telles que les signets, les derniers affichages, les cours recommandés, les cours attribués et les enregistrements d’achèvement
+- Données de service requises, telles que les journaux d’erreurs
+- Utilisation des données de diagnostic
+
+>[!NOTE]
+>Les administrateurs peuvent activer ou désactiver le stockage des données de diagnostic.
 
 ## <a name="get-started"></a>Prise en main
 
-Lorsque vous êtes prêt à installer et configurer Learning (prévisualisation) dans votre environnement de Microsoft 365 :
+Lorsque vous êtes prêt à installer et configurer Learning dans votre environnement Microsoft 365 de travail :
 
-- Utilisez le centre Microsoft Teams’administration centrale pour [gérer Learning (Prévisualisation) au sein de votre organisation.](set-up-teams-admin-center.md)
+- Utilisez le centre Microsoft Teams’administration centrale pour [gérer Learning au sein de votre organisation.](set-up-viva-learning.md)
 - Utilisez la Centre d'administration Microsoft 365 pour [configurer des sources d’apprentissage disponibles pour des groupes spécifiques.](content-sources-365-admin-center.md)
 - Utilisez le centre SharePoint’administration pour [gérer et stocker votre propre contenu d’apprentissage.](configure-sharepoint-content-source.md)
-
-
-
-

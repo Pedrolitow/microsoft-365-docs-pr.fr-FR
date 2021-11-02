@@ -23,18 +23,18 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: f4a29a17bc8c3563779b54b9df594548a02acabd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588300"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646410"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -44,13 +44,13 @@ Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, 
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l’incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
 
 Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche.":::
 
-Lorsque vous le faites, un volet récapitulatif s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple du volet récapitulatif d’un incident.":::
 
@@ -82,7 +82,7 @@ Sous **l’onglet Alertes,** vous pouvez afficher la file d’attente d’alerte
 
 - Gravité.
 - Entités impliquées dans l’alerte.
-- Source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365).
+- Source des alertes (Microsoft Defender pour l’identité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Defender pour les applications cloud et gouvernance des applications).
 - Raison pour laquelle ils ont été liés.
 
 Voici un exemple.
@@ -91,7 +91,7 @@ Voici un exemple.
 
 Par défaut, les alertes sont classés dans l’ordre chronologique pour vous permettre de voir comment l’attaque s’est joué au fil du temps. Lorsque vous sélectionnez une alerte dans un incident, Microsoft 365 Defender affiche les informations d’alerte spécifiques au contexte de l’incident global. 
 
-Vous pouvez voir les événements de l’alerte, dont d’autres alertes déclenchées ont provoqué l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
+Vous pouvez voir les événements de l’alerte, les autres alertes déclenchées à l’origine de l’alerte actuelle, ainsi que toutes les entités et activités concernées impliquées dans l’attaque, y compris les appareils, les fichiers, les utilisateurs et les boîtes aux lettres.
 
 Voici un exemple.
 
@@ -126,7 +126,7 @@ Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appare
 Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple,  à partir de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
 
 > [!TIP]
-> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender’analyse sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
 
 ## <a name="users"></a>Utilisateurs
 
@@ -145,7 +145,7 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident.":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir d’autres détails sur la boîte aux lettres dans la page Explorateur de Microsoft Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Microsoft Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
@@ -189,11 +189,11 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
 
 2. Ouvrez un volet d’entités, ce qui vous permet d’examiner les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph’entité":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph page":::
 
 3. Mettez en surbrillant les alertes en fonction de l’entité à laquelle elles sont liées.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrill valeur d’une alerte sur Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrillant d’alerte sur Graph page":::
 
 ## <a name="next-steps"></a>Prochaines étapes
 

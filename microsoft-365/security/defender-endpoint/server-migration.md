@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b2bf0bd7f1d20e65921a3d5ee503152b3d3940fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 10932b96b205e3e73ba6e5363ed2acd301d9cef5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586992"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643217"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -35,7 +35,7 @@ ms.locfileid: "60586992"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE]
-> Assurez-vous toujours Antivirus Microsoft Defender mise à jour complète sur Windows Server 2016 avant de poursuivre l’installation ou la mise à niveau. Pour recevoir des améliorations et des correctifs de produit réguliers pour le composant capteur PEPT, assurez-vous Windows mise à jour [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour que les composants de protection restent à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
+> Assurez-vous toujours Antivirus Microsoft Defender mise à jour complète sur Windows Server 2016 avant de poursuivre l’installation ou la mise à niveau. Pour recevoir des correctifs et des améliorations régulières du produit pour le composant capteur PEPT, assurez-vous que la mise à jour Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour maintenir les composants de protection à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
 
 Ces instructions s’appliquent à la nouvelle solution unifiée et au nouveau package d’installation de Microsoft Defender for Endpoint pour Windows Server 2012 R2 et Windows Server 2016. Cet article contient des instructions de haut niveau pour différents scénarios de migration possibles de la solution précédente à la solution actuelle. Ces étapes de haut niveau sont destinées à être ajustées aux outils de déploiement et de configuration disponibles dans votre environnement.
 
@@ -132,18 +132,18 @@ Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to pa
 
 1. Mettez entièrement à jour l’ordinateur, Antivirus Microsoft Defender (Windows Server 2016).
 2. Installez microsoft Defender pour le point de terminaison pour Windows Server 2012 package R2 & 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)
-3. Appliquez le script d’intégration, approprié à votre environnement, téléchargé à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
+3. Appliquez le script d’intégration, approprié à votre environnement, téléchargé à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
 4. Supprimez la solution de protection de point de terminaison ou de protection évolutive des points de terminaison Non-Microsoft et supprimez le mode passif.*
 5. Appliquer les mises à jour.
 6. Créez et appliquez des stratégies à l’aide d’une stratégie de groupe, de PowerShell ou d’une solution de gestion tierce.
 
 > [!TIP]
-> Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) pour automatiser les étapes 1 à 4. Pour activer le mode passif, appliquez l’indicateur -Passive qui garantit que Defender passe en mode passif avant l’intégration et n’interfère pas avec une solution anti-programme malveillant non Microsoft. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge les fonctionnalités PEPT telles que PEPT Block, veillez à définir la clé de Registre « ForceDefenderPassiveMode ». EXEMPLE : `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+> Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) pour automatiser les étapes 1 à 4. Pour activer le mode passif, appliquez l’indicateur -Passive qui garantit que l’Antivirus Defender passe en mode passif avant l’intégration et n’interfère pas avec une solution anti-programme malveillant non Microsoft. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge les fonctionnalités PEPT telles que PEPT Block, veillez à définir la clé de Registre « ForceDefenderPassiveMode ». EXEMPLE : `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 *Cette étape s’applique uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Nous vous recommandons d Antivirus Microsoft Defender, inclus dans Microsoft Defender pour Endpoint, pour fournir l’ensemble complet des fonctionnalités. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md) 
 
 
-Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 : 
+Pour déplacer un ordinateur hors du mode passif, définissez la clé suivante sur 0 : 
 
 Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protection avancée contre les menaces : ForceDefenderPassiveMode Type : REG_DWORD valeur : 0
 
@@ -155,5 +155,4 @@ Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to pa
 Si vous utilisez Azure Defender, vous pouvez tirer parti du processus de mise à niveau automatisée. Voir [Protéger vos points de terminaison à l’aide](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)de la solution PEPT intégrée du Centre de sécurité : Microsoft Defender pour point de terminaison.
 
 ## <a name="group-policy-configuration"></a>Configuration de la stratégie de groupe
-Pour la configuration à l’aide de la stratégie de groupe, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
-
+Pour la configuration à l’aide de la stratégie de groupe, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**.

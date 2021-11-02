@@ -16,17 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: e3e924aa6384bfb47e7c5c7dffbe062ba3de8af4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a97ee53ab106eac3db9455d80c02e1411562e090
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170126"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645882"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3. 
 
@@ -42,7 +42,7 @@ L’utilisation de La boutique par les partenaires du canal CSP Microsoft qui on
 Pour plus d’informations sur le programme CSP, voir la vue [d fournisseur de solutions Cloud du programme.](/partner-center/csp-overview)
 
 > [!NOTE]  
-> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour plus d’informations, [voir Qu’est-ce qu’Azure Azure Azure ?](/azure/lighthouse/overview)   
+> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour plus d’informations, voir [Qu’est-ce qu’Azure Azure ?](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse avantages
 
@@ -52,9 +52,9 @@ Ce dernier permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 - Utilisation d’une ligne de base de sécurité SMB par défaut qui prescrit les meilleures pratiques destinées aux locataires de petites et moyennes entreprises. 
 - Fournir des informations sur la conformité des appareils à plusieurs locataires pour une vue claire de la façon dont les appareils sont évalués dans toutes les organisations, des outils permettant de comparer les stratégies et les principaux paramètres qui ne sont pas satisfaits. 
 - Simplification des tâches courantes telles que la réinitialisation d’un mot de passe.
-- Configuration de l’authentification multifacteur et de la réinitialisation de mot de passe libre-service, y compris des outils pour faciliter l’adoption par les utilisateurs. 
+- Configuration de l’authentification multifacteur et de la réinitialisation de mot de passe en libre-service, y compris des outils pour faciliter l’adoption par les utilisateurs. 
 - Comprendre et protéger contre les sign-ins risquées.
-- Gestion des menaces sur Windows 10 en fournissant des détails sur les menaces détectées par Microsoft Defender et des mesures à prendre pour résoudre les problèmes et maintenir les appareils à jour.
+- Gestion des menaces sur Windows 10 en fournissant des détails sur les menaces détectées par les Microsoft 365 Defender et les actions à prendre pour résoudre les problèmes et maintenir les appareils à jour.
 - Fournir des informations sur Microsoft 365 incidents de service et les conseils qui ont un impact sur les clients qu’ils gèrent.
 
 > [!NOTE] 

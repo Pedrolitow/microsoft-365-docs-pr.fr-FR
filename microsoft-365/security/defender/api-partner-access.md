@@ -1,7 +1,7 @@
 ---
 title: Accès des partenaires via Microsoft 365 Defender API
 description: Découvrez comment créer une application pour obtenir un accès par programme à Microsoft 365 Defender de la part de vos utilisateurs.
-keywords: partenaire, accès, api, client multiple, consentement, jeton d’accès, application
+keywords: partenaire, accès, api, multi-locataire, consentement, jeton d’accès, application
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2cb41e4696d964f8a732adb56826de20dcdec6d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3a1925a5d08b13558a312e92270f5703452aa07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199595"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643230"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Créer une application avec un accès partenaire à Microsoft 365 Defender API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -46,15 +46,15 @@ Microsoft 365 Defender expose la plupart de ses données et actions par le biais
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser ces API :
 
-- Créez une Azure Active Directory application (Azure AD).
+- Créez une application Azure Active Directory (Azure AD).
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à Microsoft 365 Defender API.
 
-Étant donné que cette application est multi-locataire, vous aurez également besoin du consentement de l’administrateur de chaque client pour le compte de ses utilisateurs. [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant)
+Étant donné que cette application est multi-client, vous aurez également besoin du consentement de l’administrateur de chaque client pour le compte de ses utilisateurs. [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant)
 
 Cet article explique comment :
 
-- Créer une application Azure AD **multi-client**
+- Créer une **application Azure AD** client
 - Obtenez l’autorisation de votre administrateur utilisateur pour que votre application accède au Microsoft 365 Defender ressources dont elle a besoin.
 - Obtenir un jeton d’accès pour Microsoft 365 Defender
 - Valider le jeton
@@ -63,28 +63,28 @@ Microsoft 365 Defender expose la plupart de ses données et actions par le biais
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 
-- Créez une application Azure AD **multi-locataire.**
+- Créez **une application Azure AD** client.
 - Obtenez l’autorisation (consentement) de votre administrateur utilisateur pour que votre application accède aux Microsoft 365 Defender dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à Microsoft 365 Defender API.
 
-Les étapes suivantes vous guident dans la création d’une application Azure AD à plusieurs locataires, l’utilisation d’un jeton d’accès Microsoft 365 Defender et la validation du jeton.
+Les étapes suivantes vous guident pour créer une application Azure AD client, obtenir un jeton d’accès Microsoft 365 Defender et valider le jeton.
 
 ## <a name="create-the-multi-tenant-app"></a>Créer l’application multi-client
 
 1. Connectez-vous [à Azure](https://portal.azure.com) en tant qu’utilisateur avec le **rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
 3. Dans le formulaire d’inscription :
 
    - Choisissez un nom pour votre application.
-   - À **partir des types de** comptes pris en charge, sélectionnez Comptes dans n’importe quel annuaire d’organisation (n’importe quel annuaire Azure **AD) - Multi-client**.
+   - À **partir des types de** comptes pris en charge, sélectionnez Comptes dans n’importe quel répertoire d’organisation (n’importe quel **Azure AD) - Multi-client**.
    - Remplissez la section **URI de** redirection. Sélectionnez type **Web** et donnez l’URI de redirection en **https://portal.azure.com** tant que .
 
-   Une fois que vous avez terminé de remplir le formulaire, sélectionnez **Enregistrer**.
+   Une fois que vous avez terminé de remplir le formulaire, sélectionnez **Enregistrer.**
 
    ![Image du formulaire Inscrire une application.](../..//media/atp-api-new-app-partner.png)
 
@@ -144,7 +144,7 @@ Les étapes suivantes vous guident dans la création d’une application Azure A
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur les jetons Azure AD, voir le [didacticiel Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur les jetons Azure AD, voir le [didacticiel Azure AD'](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
 > Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous ne devez jamais coder en dur des **secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault.](/azure/key-vault/general/about-keys-secrets-certificates) Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, voir Gérer les secrets dans vos applications serveur avec [Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -221,7 +221,7 @@ appSecret = '' # Paste your own app secret here to test, then store it in a safe
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.security.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,
