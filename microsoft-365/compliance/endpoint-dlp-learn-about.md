@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -18,26 +18,26 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
+ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364530"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60699316"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
 Vous pouvez utiliser la prévention des pertes de données (DLP) de Microsoft 365 pour surveiller les actions prises sur les éléments que vous avez déterminés comme sensibles et pour aider à empêcher le partage involontaire de ces éléments. Pour plus d'informations sur la DLP, consultez [En savoir plus sur la prévention de la perte de données](dlp-learn-about-dlp.md).
 
-**Les points de terminaison contre la protection contre la perte de données** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles qui sont stockés physiquement sur les appareils Windows 10. Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+**La protection contre la perte de données de point de terminaison** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de protection contre la perte de données aux éléments sensibles stockés physiquement sur des appareils Windows 10 et macOS (Catalina 10.15 et version ultérieure). Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Si vous recherchez le contrôle d’appareil pour le stockage amovible, consultez [Contrôle d’accès Stockage amovible Contrôle d’appareil Microsoft Defender pour Point de terminaison ](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les types d'activités suivants que les utilisateurs effectuent sur des éléments sensibles qui sont physiquement stockés sur des appareils Windows 10.
+La protection contre la perte de données Microsoft Endpoint vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10 ou macOS.
 
 |Activité |Description  | Auditable/restrictable|
 |---------|---------|---------|
@@ -76,7 +76,7 @@ Si vous souhaitez surveiller les données des correspondances de stratégie uniq
 > Si le paramètre **Toujours auditer l’activité du fichier pour les appareils** est activé, les activités sur les fichiers Word, PowerPoint, Excel, PDF, et .csv sont toujours auditées, même si l’appareil n’est ciblé par aucune stratégie.
 
 > [!TIP]
-> Pour vous assurer que les activités sont auditées pour tous les types de fichiers pris en charge, créez une [stratégie DLP personnalisée](create-test-tune-dlp-policy.md) à côté de la stratégie par défaut.
+> Pour vous assurer que les activités sont auditées pour tous les types de fichiers pris en charge, créez une [stratégie DLP personnalisée](create-test-tune-dlp-policy.md).
 
 
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée.
