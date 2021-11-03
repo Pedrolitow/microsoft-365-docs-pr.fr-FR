@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88e4081ba23ce38153af7eb5fe8af69a00df73b8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175106"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667705"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -103,6 +103,68 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 2. **Si le message Yammer est supprimé par l'utilisateur** pendant cette période, l'élément est immédiatement déplacé vers le dossier SubstrateHolds où il est immédiatement supprimé définitivement.
 
+#### <a name="example-flows-and-timings-for-retention-policies"></a>Exemples de flux et de minutages pour les stratégies de rétention
+
+Utilisez les exemples suivants pour voir comment les processus et minutages expliqués dans les sections précédentes s’appliquent aux stratégies de rétention qui présentent les configurations suivantes :
+
+- [Exemple 1 : conserver uniquement pendant 7 ans](#example-1-retain-only-for-7-years)
+- [Exemple 2 : conserver pendant 30 jours, puis supprimer](#example-2-retain-for-30-days-and-then-delete)
+- [Exemple 3 : supprimer uniquement après 1 jour](#example-3-delete-only-after-1-day)
+
+Pour tous les exemples qui font référence à une suppression définitive, en raison des [principes de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence), cette action est suspendue si le message est soumis à une autre stratégie de rétention pour conserver l’élément ou s’il est soumis à une conservation eDiscovery.
+
+##### <a name="example-1-retain-only-for-7-years"></a>Exemple 1 : conserver uniquement pendant 7 ans
+
+Au cours du 1er jour, un utilisateur publie un nouveau message Yammer.
+
+Au 5e jour, l’utilisateur modifie ce message.
+
+Au 30e jour, l’utilisateur supprime le message actuel.
+
+Résultats de la rétention :
+
+- Pour le message d’origine :
+    - Au 5e jour, le message est copié dans le dossier SubstrateHolds où il peut toujours être recherché à l’aide des outils eDiscovery pour une durée minimale de 7 ans à compter du premier jour (période de rétention).
+
+- Pour le message (modifié) actuel :
+    - Au 30e jour, le message est déplacé vers le dossier SubstrateHolds où il peut toujours être recherché à l’aide des outils eDiscovery pour une durée minimale de 7 ans à compter du premier jour (période de rétention).
+
+Si l’utilisateur avait supprimé le message actuel après la période de rétention spécifique, au lieu de la période de rétention, le message serait toujours déplacé vers le dossier SubstrateHolds. Toutefois, maintenant que la période de rétention a expiré, le message sera définitivement supprimé après une durée minimale de 1 jour, puis généralement dans un délai de 1 à 7 jours.
+
+##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Exemple 2 : conserver pendant 30 jours, puis supprimer
+
+Au cours du 1er jour, un utilisateur publie un nouveau message Yammer.
+
+Au 10e jour, l’utilisateur modifie ce message.
+
+L’utilisateur ne procède pas à d’autres modifications et ne supprime pas le message.
+
+Résultats de la rétention :
+
+- Pour le message d’origine :
+    - Au 10e jour, le message est copié dans le dossier SubstrateHolds où il peut toujours être recherché à l’aide des outils eDiscovery.
+    - Au terme de la période de rétention (30 jours à compter du premier jour), le message est supprimé définitivement dans un délai de 1 à 7 jours après une durée minimale de 1 jour, puis n’est pas renvoyé avec les recherches eDiscovery.
+
+- Pour le message (modifié) actuel :
+    - Au terme de la période de rétention (30 jours à compter du premier jour), le message est déplacé vers le dossier SubstrateHolds, généralement dans un délai de 1 à 7 jours, où il peut toujours être recherché à l’aide des outils eDiscovery.
+    - Le message est ensuite définitivement supprimé généralement dans un délai de 1 à 7 jours après une durée minimale de 1 jour, puis n’est pas renvoyé avec les recherches eDiscovery.
+
+##### <a name="example-3-delete-only-after-1-day"></a>Exemple 3 : supprimer uniquement après 1 jour
+
+> [!NOTE]
+> En raison de la courte durée d’un jour de ces processus de configuration et de rétention qui fonctionnent sur une période de 1 à 7 jours, cette section présente des exemples de minutages qui se situent dans les plages de temps classiques.
+
+Au cours du 1er jour, un utilisateur publie un nouveau message Yammer.
+
+Exemple de résultat de rétention si l’utilisateur ne modifie ou ne supprime pas le message :
+
+- 5e jour (généralement 1 à 7 jours après le début de la période de rétention au 2e jour) :
+    - Le message est alors déplacé vers le dossier SubstrateHolds et y reste pendant au moins 1 jour où il peut toujours être recherché à l’aide des outils eDiscovery.
+
+- 9e jour (généralement 1 à 7 jours après une durée minimale de 1 jour dans le dossier SubstrateHolds) :
+    - Le message est définitivement supprimé et n’est pas renvoyé avec les recherches eDiscovery.
+
+Comme le montre cet exemple, même si vous parvenez à configurer une stratégie de rétention pour supprimer les messages au bout d’une seule journée, le service est soumis à plusieurs processus pour garantir une suppression conforme. Par conséquent, une action de suppression après 1 jour peut prendre 16 jours avant que le message ne soit définitivement supprimé, de sorte qu’il ne soit plus renvoyé dans les recherches eDiscovery.
 
 ## <a name="messages-and-external-users"></a>Messages et utilisateurs externes
 
