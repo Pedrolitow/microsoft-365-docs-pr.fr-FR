@@ -19,8 +19,6 @@
       items:
         - name: Régions prises en charge
           href: service-description/regions-languages.md
-        - name: Cycle de vie du produit
-          href: service-description/device-lifecycle.md
         - name: Appareils
           href: null
           items:
@@ -145,7 +143,7 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
-            - name: "Microsoft\_OneDrive"
+            - name: Microsoft OneDrive
               href: get-started/onedrive.md
     - name: Utilisation du Bureau géré Microsoft
       href: working-with-managed-desktop/index.md
