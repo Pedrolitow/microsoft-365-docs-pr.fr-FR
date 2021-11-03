@@ -1,6 +1,6 @@
 ---
 title: Intégrer les versions précédentes de Windows sur Microsoft Defender for Endpoint
-description: Intégrer des versions antérieures de Windows pris en charge afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender pour endpoint
+description: Intégrer les versions antérieures des appareils Windows pris en charge afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f17f8fe3ccb659f04ab5acac9108d4151a5d1769
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5c4936906ba830a660c38b76c7aaf5598ba7724c
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240523"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725587"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -83,17 +83,20 @@ Examinez les détails suivants pour vérifier la minimale requise :
 - Installer le rapport de mise à jour mensuelle de [février 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > Applicable uniquement pour Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
+  > Applicable uniquement pour Windows Server 2008 R2, Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
 
 - Installer la mise [à jour pour la télémétrie d’expérience client et de diagnostic](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
 - Installer [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (ou ultérieur) ou [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > Applicable uniquement pour Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
+    > Applicable uniquement pour Windows Server 2008 R2, Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
+    >
     > N’installez pas .NET Framework 4.0.x, car cela va annuler l’installation ci-dessus.
+    >
+    > L’installation de .NET 4.5 peut nécessiter le redémarrage de votre ordinateur après l’installation.
 
-- Respectez la taille minimale requise de l’agent Azure Log Analytics. Pour plus d’informations, voir [Collecter des données à partir d’ordinateurs](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites) dans votre environnement avec Log Analytics
+- Respectez la taille minimale requise de l’agent Azure Log Analytics. Pour plus d’informations, voir [Collecter des données à partir d’ordinateurs dans](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites) votre environnement avec Log Analytics
 
 
 ### <a name="installation-steps"></a>Étapes d'installation
@@ -101,12 +104,12 @@ Examinez les détails suivants pour vérifier la minimale requise :
 1. Téléchargez le fichier de configuration de [l’agent : Windows agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) ou Windows agent [32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
 
 2. Obtenez l’ID d’espace de travail :
-   - Dans le volet de navigation Defender pour les points de terminaison, sélectionnez Paramètres > gestion des > **l’intégration**
+   - Dans le volet de navigation Defender pour les points de terminaison, sélectionnez Paramètres > **gestion des > l’intégration**
    - Sélectionner le système d’exploitation
    - Copier l’ID d’espace de travail et la clé d’espace de travail
 
 3. À l’aide de l’ID d’espace de travail et de la clé d’espace de travail, choisissez l’une des méthodes d’installation suivantes pour installer l’agent :
-    - [Installer manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
+    - [Installez manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)
 
       Dans la page **Options de configuration** de l’agent, **sélectionnez Connecter l’agent dans Azure Log Analytics (OMS)**
 
@@ -157,7 +160,7 @@ Après avoir effectué les étapes d’intégration, vous devez configurer et me
 Vérifiez que Microsoft Defender AV et Microsoft Defender pour le point de terminaison sont en cours d’exécution. 
 
 > [!NOTE]
-> L’exécution de Microsoft Defender AV n’est pas requise, mais elle est recommandée. Si un autre produit fournisseur antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est en cours d’exécution après avoir vérifié que le capteur Sense (Microsoft Defender for Endpoint) est en cours d’exécution. 
+> L’exécution de Microsoft Defender AV n’est pas requise, mais elle est recommandée. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est actif après avoir vérifié que le capteur SENSE (Microsoft Defender for Endpoint Sensor) est en cours d’exécution. 
 
 1. Exécutez la commande suivante pour vérifier que Microsoft Defender AV est installé :
 
@@ -275,9 +278,9 @@ Une fois que le serveur est redémarré dans le cadre du processus de démarrage
 
 Vous pouvez également utiliser une **tâche immédiate** pour exécuter le deployMMA.cmd si vous ne souhaitez pas redémarrer tous les serveurs.
 
-Cette étape peut être effectuée en deux phases. Tout **d’abord,** créez les fichiers et le dossier en GPO : donnez au système le temps de s’assurer que l’GPO a été appliqué et que tous les serveurs disposent des fichiers d’installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d’obtenir le même résultat sans nécessiter de redémarrage.
+Cette étape peut être effectuée en deux phases. Tout **d’abord,** créez les fichiers et le dossier dans l’GPO : donnez au système le temps de s’assurer que l’GPO a été appliqué et que tous les serveurs disposent des fichiers d’installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d’obtenir le même résultat sans nécessiter de redémarrage.
 
-Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
+Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’elle vérifie quotidiennement pour s’assurer que le MMA est présent.
 
 :::image type="content" source="images/schtask.png" alt-text="planifier une tâche":::
 
@@ -314,10 +317,10 @@ Pour plus d’informations, [voir Pour désactiver un agent.](/azure/log-analyti
 
 Vous pouvez utiliser l’une des méthodes suivantes :
 
-- Supprimer la configuration de l’espace de travail Defender pour le point de terminaison de l’agent MMA
+- Supprimer la configuration de l’espace de travail Defender for Endpoint de l’agent MMA
 - Exécuter une commande PowerShell pour supprimer la configuration
 
-#### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Supprimer la configuration de l’espace de travail Defender pour le point de terminaison de l’agent MMA
+#### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Supprimer la configuration de l’espace de travail Defender for Endpoint de l’agent MMA
 
 1. Dans la **Microsoft Monitoring Agent propriétés,** sélectionnez **l’onglet Azure Log Analytics (OMS).**
 
@@ -325,11 +328,11 @@ Vous pouvez utiliser l’une des méthodes suivantes :
 
     ![Image des propriétés Microsoft Monitoring Agent de l’entreprise](images/atp-mma.png)
 
-#### <a name="run-a-powershell-command-to-remove-the-configuration&quot;></a>Exécuter une commande PowerShell pour supprimer la configuration
+#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Exécuter une commande PowerShell pour supprimer la configuration
 
 1. Obtenez votre ID d’espace de travail :
 
-   1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
+   1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
 
    1. Sélectionnez le système d’exploitation approprié et obtenez votre ID d’espace de travail.
 
@@ -339,7 +342,7 @@ Vous pouvez utiliser l’une des méthodes suivantes :
     ```   
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace
-    $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
 

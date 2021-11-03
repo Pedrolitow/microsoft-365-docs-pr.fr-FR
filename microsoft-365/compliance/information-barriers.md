@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bbcdbcc8dae41d9de2071e90b0bec877cef63ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5baff70cb3318b05092e940e8160029bc2be69af
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198720"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725614"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations Microsoft 365
 
@@ -69,7 +69,7 @@ Si les personnes impliquées sont incluses dans une stratégie de cloisonnement 
 
 Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux](/MicrosoftTeams/information-barriers-in-teams)informations Microsoft Teams .
 
-Dans SharePoint online et OneDrive, les stratégies de obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
+Dans SharePoint online et OneDrive, les stratégies d’obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
@@ -82,8 +82,8 @@ Pour en savoir plus sur l’expérience utilisateur avec les obstacles à [l’i
 
 Les obstacles à l’information sont en cours de déploiement et sont inclus dans les abonnements, tels que :
 
-- Microsoft 365 E5/A5
-- Office 365 E5/A5
+- Microsoft 365 E5/A5/A3/A1
+- Office 365 E5/A5/A3/A1
 - Conformité avancée Office 365
 - Microsoft 365 Conformité E5/A5
 - Microsoft 365 : gestion des risques internes
@@ -101,7 +101,7 @@ Pour [définir ou modifier des stratégies de obstacle aux](information-barriers
 
 Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que les paramètres, pour votre organisation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les obstacles aux informations dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)
