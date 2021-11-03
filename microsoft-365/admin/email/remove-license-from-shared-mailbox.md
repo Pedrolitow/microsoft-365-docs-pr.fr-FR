@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
 ms.date: 05/11/2021
-ms.openlocfilehash: ccbab157b810e86a941da519346da621398a4af9
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: fb1455e9d4c23c6563940b1b4c3e57576c1063c2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586812"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60660009"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -41,7 +41,7 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 > - La boîte aux lettres partagée utilise plus de 50 Go de stockage.
 > - La boîte aux lettres partagée utilise l’archivage sur place.
 > - La boîte aux lettres partagée est placée en attente pour litige.
-> - Une licence Microsoft Defender est attribuée à la boîte aux lettres partagée.
+> - Une licence d’Microsoft 365 Defender est attribuée à la boîte aux lettres partagée.
 > 
 > Pour obtenir des instructions détaillées sur la façon d’attribuer des licences, voir Attribuer des [licences aux utilisateurs.](/microsoft-365/admin/manage/assign-licenses-to-users) 
 
@@ -71,11 +71,11 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et applications,** développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
+5. Lorsque vous revenirz à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée est **sans permis.**
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
 

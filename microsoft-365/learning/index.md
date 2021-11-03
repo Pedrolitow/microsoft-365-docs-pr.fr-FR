@@ -1,56 +1,49 @@
 ---
-title: Présentation de Apprentissage Microsoft Viva (prévisualisation)
-ms.author: chucked
-author: chuckedmonson
+title: Présentation du Apprentissage Microsoft Viva
+ms.author: daisyfeller
+author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
-audience: enabler
-ms.topic: article
+ms.reviewer: shirana
+ms.date: 11/02/2021
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-ms.localizationpriority: ''
-description: Découvrez comment trouver des ressources pour Apprentissage Microsoft Viva (prévisualisation).
-ms.openlocfilehash: 00ce845dcb5cc5dd8b86620c7e7aafddaab334f5
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.localizationpriority: medium
+description: Découvrez comment trouver des ressources pour Apprentissage Microsoft Viva.
+ms.openlocfilehash: 24d71691b8751ce3ca3770e77be35585f0221a4b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478840"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668241"
 ---
-# <a name="introduction-to-microsoft-viva-learning-preview"></a>Présentation de Apprentissage Microsoft Viva (prévisualisation)
+# <a name="introduction-to-microsoft-viva-learning"></a>Présentation du Apprentissage Microsoft Viva
 
-> [!NOTE]
-> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. La prévisualisation n’est pas actuellement ouverte aux nouveaux participants.
-
-Apprentissage Microsoft Viva (prévisualisation) permet aux équipes et aux membres de votre organisation de faire de l’apprentissage une partie naturelle de leur journée. L’application crée un hub central dans Microsoft Teams où les employés peuvent partager, affecter et apprendre à partir de bibliothèques de contenu au sein de votre organisation.
-
-Les ressources de cette page sont conçues pour vous aider à découvrir et à utiliser l’outil Learning (Prévisualisation) dans votre organisation.
+Apprentissage Microsoft Viva permet aux employés de faire de l’apprentissage une partie naturelle de la journée en les faisant entrer dans le flux de travail au sein des outils et plateformes qu’ils utilisent déjà. Découvrez, partagez et suivez l’apprentissage dans différentes sources à partir d’un centre d’apprentissage Microsoft Teams.
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section vous aident à en savoir plus sur ce qu’est Learning (Prévisualisation) et comment elle peut aider votre organisation.
+Les ressources de cette section vous aident à en savoir plus sur ce qu’est Learning et comment elle peut aider votre organisation.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|En savoir plus sur Viva Learning (préversion)|[vue d Apprentissage Microsoft Viva (prévisualisation)](overview-viva-learning.md)|
-|Trouver des ressources dans le Centre de ressources microsoft Tech Community|[Apprentissage Microsoft Viva (prévisualisation) Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
-|Rechercher des conseils Learning (prévisualisation) pour les utilisateurs finaux|[aide Apprentissage Microsoft Viva (prévisualisation)](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
+|En savoir plus sur Le Learning |[Apprentissage Microsoft Viva vue d’ensemble](overview-viva-learning.md)|
+|Découvrez comment obtenir Des Learning|[Page Learning produit](https://www.microsoft.com/en-us/microsoft-viva/learning?activetab=pivot:overviewtab&rtc=1)|
+|Trouver des ressources dans le Centre de ressources techniques Community Microsoft|[Apprentissage Microsoft Viva Tech Community](https://techcommunity.microsoft.com/t5/viva-learning/bd-p/VivaLearning/)|
+|Rechercher des conseils Learning d’aide pour les utilisateurs finaux|[Apprentissage Microsoft Viva’aide](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
-## <a name="set-up-and-administration"></a>Configuration et personnalisation
+## <a name="setup-and-administration"></a>Configuration et administration
 
-Les ressources de cette section aident l’administrateur de votre organisation à configurer Etas Learning (Prévisualisation) dans votre environnement Microsoft 365.
+Les ressources de cette section aident l’administrateur de votre organisation à configurer et configurer Learning dans votre environnement Microsoft 365 de gestion.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment configurer et configurer Learning (Prévisualisation)|[Configurer Apprentissage Microsoft Viva (prévisualisation)](set-up-teams-admin-center.md)|
-|Découvrez comment configurer des sources de contenu d’apprentissage|[Configurer des sources de contenu d’apprentissage](content-sources-365-admin-center.md)|
-|Découvrez comment ajouter votre propre contenu d’apprentissage|[Configurer SharePoint comme source de contenu](configure-sharepoint-content-source.md)|
-
-
-
-
-
+|Découvrez comment configurer et configurer Learning|[Configurer Apprentissage Microsoft Viva](set-up-viva-learning.md)|
+|Découvrez comment configurer et gérer des sources de contenu|[Gérer les sources de contenu d’apprentissage](content-sources-365-admin-center.md)|
+|Découvrez comment ajouter votre propre contenu d’apprentissage|[Ajouter SharePoint en tant que source de contenu](configure-sharepoint-content-source.md)|
+|Découvrez comment ajouter du contenu à partir d’autres fournisseurs|[Ajouter d’autres fournisseurs en tant que source de contenu](content-sources-365-admin-center.md)|

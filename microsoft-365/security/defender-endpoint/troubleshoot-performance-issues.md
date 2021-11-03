@@ -1,6 +1,6 @@
 ---
 title: Résoudre des problèmes de performance
-description: Résoudre les problèmes d’utilisation élevée de l’UC liée au service de protection en temps réel dans Microsoft Defender pour Endpoint.
+description: Résoudre les problèmes d’utilisation élevée du processeur lié au service de protection en temps réel dans Microsoft Defender pour Endpoint.
 keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6bfd4f42a6fcc43d7eec6c378cb1cdc25b186991
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196884"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665538"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -30,7 +30,7 @@ ms.locfileid: "60196884"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
@@ -44,14 +44,14 @@ Dans le cas contraire, vous pouvez identifier les logiciels associés au problè
 
 Vous pouvez également fournir des journaux supplémentaires à votre soumission au support Microsoft en suivant les étapes ci-après :
 
-- [Capturer les journaux de processus à l’aide du Moniteur de processus](#capture-process-logs-using-process-monitor)
+- [Capturer les journaux de processus à l’aide du moniteur de processus](#capture-process-logs-using-process-monitor)
 - [Capturer les journaux de performances à l’aide Windows Enregistreur de performances](#capture-performance-logs-using-windows-performance-recorder)
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Consulter le fournisseur pour les exclusions antivirus
 
 Si vous pouvez facilement identifier les logiciels qui affectent les performances du système, allez à la base de connaissances ou au centre de support du fournisseur de logiciels. Recherchez s’ils ont des recommandations sur les exclusions antivirus. Si le site web du fournisseur ne les a pas, vous pouvez ouvrir un ticket de support avec lui et lui demander d’en publier un.
 
-Nous recommandons aux éditeurs de logiciels de suivre les différentes directives de Partenariat avec le secteur [afin de minimiser les faux positifs.](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/) Le fournisseur peut soumettre ses logiciels via le portail [Microsoft Defender Security Intelligence (MDSI).](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
+Nous recommandons aux éditeurs de logiciels de suivre les différentes directives de Partenariat avec le secteur [afin de minimiser les faux positifs.](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/) Le fournisseur peut soumettre ses logiciels via le [portail Renseignement de sécurité Microsoft.](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
 
 ## <a name="analyze-the-microsoft-protection-log"></a>Analyser le journal de protection Microsoft
 
@@ -67,13 +67,13 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log,** vous pouvez trouver les informations d’imp
 |---|---|
 |ProcessImageName|Nom de l’image de processus|
 |TotalTime|Durée cumulée en millisecondes passées dans les analyses des fichiers accessibles par ce processus|
-|Nombre|Nombre de fichiers analysés accédés par ce processus|
+|Compte|Nombre de fichiers analysés accédés par ce processus|
 |MaxTime|Durée en millisecondes de l’analyse unique la plus longue d’un fichier accessible par ce processus|
 |MaxTimeFile|Chemin d’accès au fichier accessible par ce processus pour lequel l’analyse la plus longue `MaxTime` de la durée a été enregistrée|
 |EstimatedImpact|Le pourcentage de temps passé dans les analyses pour les fichiers accédés par ce processus en dehors de la période pendant laquelle ce processus a connu une activité d’analyse|
 |
 
-Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions chemin/processus en suivant les étapes de configuration et de validation des exclusions pour [Antivirus Microsoft Defender analyses.](collect-diagnostic-data.md)
+Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions chemin/processus en suivant les étapes de configuration et de validation des [exclusions](collect-diagnostic-data.md)pour Antivirus Microsoft Defender analyses .
 
 Si l’étape précédente ne résout pas le problème, [](#capture-process-logs-using-process-monitor) vous pouvez collecter plus d’informations via le Moniteur de processus ou l’enregistreur de performances [Windows](#capture-performance-logs-using-windows-performance-recorder) dans les sections suivantes.
 
@@ -83,7 +83,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 1. Téléchargez [process monitor v3.60 dans](/sysinternals/downloads/procmon) un dossier tel que `C:\temp` .
 
-2. Pour supprimer la marque du fichier du web :
+2. Pour supprimer la marque du fichier du site web :
     1. Cliquez avec le **bouton droitProcessMonitor.zip** puis sélectionnez **Propriétés.**
     1. Sous *l’onglet Général,* recherchez *Sécurité.*
     1. Cochez la case en **regard de Débloquer.**
@@ -93,7 +93,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 3. Dézipez le fichier de `C:\temp` sorte que le chemin d’accès du dossier soit `C:\temp\ProcessMonitor` .
 
-4. Copiez **ProcMon.exe** vers Windows client ou Windows serveur que vous dépannagez.
+4. Copiez **ProcMon.exe** sur Windows client ou Windows serveur que vous dépannagez.
 
 5. Avant d’utiliser ProcMon, assurez-vous que toutes les autres applications non liées au problème d’utilisation élevée du processeur sont fermées. Cela permet de réduire le nombre de processus à vérifier.
 
@@ -140,11 +140,11 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 10. Une fois que vous avez deux à quatre minutes d’activité de processus pendant la condition d’utilisation élevée du processeur, arrêtez la capture en sélectionnant l’icône de loupe.
 
-11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
+11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Sélectionnez Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
 
     ![paramètres d’enregistrer.](images/procmon-savesettings1.png)
 
-12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` où :
+12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` suivant :
     - `%ComputerName%` est le nom de l’appareil
     - `MMDDYEAR` est le mois, le jour et l’année
     - `Repro_of_issue` est le nom du problème que vous essayez de reproduire
@@ -158,7 +158,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 Vous pouvez utiliser Windows enregistreur de performances (WPR) pour inclure des informations supplémentaires dans votre soumission au support Microsoft. WPR est un outil d’enregistrement puissant qui crée le suivi des événements pour Windows enregistrements.
 
-WPR fait partie du Kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du téléchargement et de l’installation du [kit Windows ADK.](/windows-hardware/get-started/adk-install) Vous pouvez également le télécharger dans le cadre du Kit de développement logiciel Windows 10 sur [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
+WPR fait partie du Kit de déploiement et d’évaluation Windows (Windows ADK) et peut être téléchargé à partir du téléchargement et de l’installation du [kit Windows ADK.](/windows-hardware/get-started/adk-install) Vous pouvez également le télécharger dans le cadre du Kit de développement logiciel Windows 10 sur [Windows 10 SDK.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
 Vous pouvez utiliser l’interface utilisateur WPR en suivant les étapes de capture des journaux de performances à l’aide de [l’interface utilisateur WPR.](#capture-performance-logs-using-the-wpr-ui)
 
@@ -167,7 +167,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Capturer les journaux de performances à l’aide de l’interface utilisateur WPR
 
 > [!TIP]
-> Si vous avez plusieurs appareils sur lesquels le problème se produit, utilisez celui qui a la plus grande quantité de RAM.
+> Si plusieurs appareils rencontrent ce problème, utilisez celui qui a le plus de RAM.
 
 1. Téléchargez et installez WPR.
 
@@ -199,7 +199,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 8. Pour utiliser le profil d’analyse détaillée de la mesure personnalisée Microsoft Defender pour point de terminaison dans l’interface utilisateur WPR :
 
-    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *Tri de premier* niveau, Analyse *des* ressources et *Analyse de* scénario.
+    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *de tri* de premier niveau, Analyse *des* ressources et *Analyse de* scénario.
     2. Sélectionnez **mesures personnalisées**.
     3. Sélectionnez **Microsoft Defender pour l’analyse des points de terminaison.**
     4. Sélectionnez **Détaillé sous** *Niveau* détail.
@@ -213,7 +213,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
     ![Masquer les options.](images/wpr-08.png)
 
     > [!TIP]
-    > Essayez de démarrer le suivi à un nombre entier de secondes. Par exemple, 01:30:00. Cela facilitera l’analyse des données. Essayez également d’assurer le suivi de l’timestamp du moment exact où le problème est reproduit.
+    > Essayez de démarrer le suivi à un nombre entier de secondes. Par exemple, 01:30:00. Cela facilite l’analyse des données. Essayez également d’assurer le suivi de l’timestamp du moment exact où le problème est reproduit.
 
 10. Sélectionnez **Démarrer**.
 
@@ -243,7 +243,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
     ![Suivi WPR enregistré.](images/wpr-14.png)
 
-    Incluez à la fois le fichier et le dossier dans votre soumission au support Microsoft.
+    Incluez à la fois le fichier et le dossier dans votre soumission au Support Microsoft.
 
     ![Fichier et dossier.](images/wpr-15.png)
 

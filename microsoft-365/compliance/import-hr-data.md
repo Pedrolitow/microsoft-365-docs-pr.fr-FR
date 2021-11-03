@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités par des utilisateurs spécifiques qui peuvent poser une menace interne à votre organisation.
-ms.openlocfilehash: 0c3a6966155483ba374211b7db55675010b0c55f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités de certains utilisateurs qui peuvent poser une menace interne à votre organisation.
+ms.openlocfilehash: e7a5bb9a1912aff7d41968bd1c8f6c08333178c0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151085"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659961"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -36,6 +36,8 @@ La configuration d’un connecteur pour les données RH que les stratégies de g
 - Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur RH à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 - L’exemple de script que vous exécutez à l’étape 4 charge vos données RH dans le cloud Microsoft afin qu’elles soient utilisées par la solution de gestion des risques internes. Cet exemple de script n’est pas pris en charge dans le cadre d’un programme ou d’un service de support standard Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+
+- Ce connecteur est disponible dans les environnements Cloud de la communauté du secteur public dans le cloud Microsoft 365 pour le gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP. Pour obtenir des instructions détaillées sur la configuration d’un connecteur RH dans un environnement Cloud de la communauté du secteur public, voir Configurer un connecteur pour importer des données RH dans le gouvernement des [États-Unis.](import-hr-data-US-government.md)
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Étape 1 : Préparer un fichier CSV avec vos données RH
 
@@ -129,7 +131,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV pour les données d’e
 |  Colonne | Description |
 |:----------|:--------------|
 | **EmailAddress**  | Spécifie l’adresse de messagerie de l’utilisateur (UPN).|
-| **EffectiveDate** | Spécifie la date à laquelle l’utilisateur a été officiellement informé du résultat de son examen des performances. Il peut s’y trouver la date à laquelle le cycle de révision des performances s’est terminé. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **EffectiveDate** | Spécifie la date à laquelle l’utilisateur a été officiellement informé des résultats de son examen des performances. Il peut s’y trouver la date à laquelle le cycle de révision des performances s’est terminé. Utilisez le format de date suivant : , qui est le format de date et d’heure `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Remarques**| Spécifie les remarques que l’évaluateur a fournies à l’utilisateur pour l’examen des performances. Il s’agit d’un paramètre de texte avec une limite de 200 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
 | **Rating**| Spécifie l’évaluation fournie pour l’examen des performances. Il s’agit d’un paramètre de texte qui peut contenir n’importe quel texte de forme libre que votre organisation utilise pour reconnaître l’évaluation. Par exemple, « 3 satisfait les attentes » ou « 2 en dessous de la moyenne ». Il s’agit d’un paramètre de texte avec une limite de 25 caractères. Ce paramètre est facultatif. Vous n’avez pas besoin de l’inclure dans le fichier CSV.|
 |||
@@ -199,11 +201,11 @@ En fonction des systèmes RH de votre organisation et de la façon dont vous all
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2 : Créer une application dans Azure Active Directory
 
-L’étape suivante consiste à créer et inscrire une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permettra à Azure AD d’authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application sera également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour charger vos données RH dans le cloud Microsoft. Lors de la création de cette application Azure AD, n’oubliez pas d’enregistrer les informations suivantes. Ces valeurs seront utilisées aux étapes 3 et 4.
+L’étape suivante consiste à créer et inscrire une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur RH que vous créez à l’étape 3. La création de cette application permet Azure AD authentifier le connecteur RH lorsqu’il s’exécute et tente d’accéder à votre organisation. Cette application sera également utilisée pour authentifier le script que vous exécutez à l’étape 4 pour charger vos données RH dans le cloud Microsoft. Lors de la création de cette Azure AD, n’oubliez pas d’enregistrer les informations suivantes. Ces valeurs seront utilisées aux étapes 3 et 4.
 
-- ID d’application Azure AD (également appelé *ID* d’application ou *ID client)*
+- Azure AD’ID d’application (également appelé *ID* d’application ou *ID client)*
 
-- Secret d’application Azure AD (également appelé *secret client)*
+- Azure AD’application secrète (également appelée *« secret client*» )
 
 - ID de client (également appelé *ID d’annuaire)*
 
@@ -223,7 +225,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 4. Dans la page **Configuration de la connexion,** faites ce qui suit, puis cliquez sur **Suivant**:
 
-   1. Tapez ou collez l’ID d’application Azure AD pour l’application Azure que vous avez créée à l’étape 2.
+   1. Tapez ou collez l Azure AD’application pour l’application Azure que vous avez créée à l’étape 2.
 
    1. Tapez un nom pour le connecteur RH.
 
@@ -231,7 +233,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 6. Dans la page de méthode de mappage de fichiers, sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
 
-   - **Télécharger un exemple de fichier.** Si vous sélectionnez cette option, cliquez sur **Télécharger exemple** de fichier pour télécharger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier CSV à partir d’une liste de listes listes afin de les ma propres aux types de données pour les scénarios RH que vous avez précédemment sélectionnés.
+   - **Télécharger un exemple de fichier.** Si vous sélectionnez cette option, cliquez sur **Télécharger exemple** de fichier pour télécharger le fichier CSV que vous avez préparé à l’étape 1. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier CSV à partir d’une liste de listes listes afin de les ma tôt sélectionnées sur les types de données pour les scénarios RH que vous avez précédemment sélectionnés.
 
    OR
 
@@ -255,7 +257,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 9. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
 
 10. Cliquez sur le connecteur RH que vous avez créé pour afficher la page de présentation, qui contient des propriétés et d’autres informations sur le connecteur.
 
@@ -291,9 +293,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    | Paramètre | Description |
    |:-----|:-----|:-----|
-   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID de locataire de votre organisation dans le panneau **Vue** d’ensemble du Centre d’administration Azure AD. Il est utilisé pour identifier votre organisation.|
-   |`appId` |Il s’agit de l’ID d’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
-   |`appSecret`|Il s’agit de la question secrète de l’application Azure AD pour l’application que vous avez créée dans Azure AD à l’étape 2. Cette fonction est également utilisée pour l’authentification.|
+   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
+   |`appId` |Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 2. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
+   |`appSecret`|Il s’agit de la Azure AD’application secrète de l’application que vous avez créée Azure AD l’étape 2. Cette fonction est également utilisée pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur RH que vous avez créé à l’étape 3. Cette fonction permet d’associer les données RH téléchargées vers le cloud Microsoft au connecteur RH.|
    |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 1. Essayez d’éviter les espaces dans le chemin d’accès du fichier . sinon, utilisez des guillemets simples.|
    |||
@@ -317,13 +319,13 @@ Après avoir créé le connecteur RH et exécuté le script pour télécharger v
 
 2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur RH pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
 
-   ![Page de flyout du connecteur RH avec des propriétés et un état.](../media/HRConnectorFlyout1.png)
+   ![Page de flyout du connecteur RH avec les propriétés et l’état.](../media/HRConnectorFlyout1.png)
 
 3. Sous **Progression,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et télécharge les données du fichier CSV dans le cloud Microsoft. 
 
    ![Le fichier journal du connecteur RH affiche les lignes de numéro à partir du fichier CSV qui ont été téléchargées.](../media/HRConnectorLogFile.png)
 
-   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a correctement téléchargé toutes les lignes du fichier `RecordsSaved` CSV.
+   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a chargé avec succès toutes les lignes du fichier `RecordsSaved` CSV.
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
 
@@ -339,17 +341,17 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 3. Dans la section **Actions,** cliquez sur **Créer une tâche.**
 
-4. Sous **l’onglet** Général, tapez un nom descriptif pour la tâche programmée . par exemple, **SCRIPT DE CONNECTEUR RH**. Vous pouvez également ajouter une description facultative.
+4. Sous **l’onglet** Général, tapez un nom descriptif pour la tâche programmée . par exemple, **HR Connector Script**. Vous pouvez également ajouter une description facultative.
 
 5. Sous **Options de sécurité,** faites les actions suivantes :
 
    1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-   1. Assurez-vous que la case à cocher Exécuter avec **les privilèges** les plus élevés est sélectionnée.
+   1. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est cocher.
 
 6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
-   1. Sous **Paramètres**, sélectionnez l’option  Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres**, sélectionnez l’option  Tous les jours, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
    1. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
 
@@ -359,11 +361,11 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    ![Paramètres d’action pour créer une tâche programmée pour le script de connecteur RH.](../media/HRConnectorScheduleTask1.png)
 
-   1. Dans la **liste de** listes d’actions, assurez-vous que démarrer **un programme** est sélectionné.
+   1. Dans la **liste liste de** listes d’actions, assurez-vous que démarrer un **programme** est sélectionné.
 
    1. Dans la **zone Programme/script,** cliquez sur **Parcourir,** puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` :
 
-   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez ran à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
 

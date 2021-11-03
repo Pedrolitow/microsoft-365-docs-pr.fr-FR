@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: d7d4352283645a80844e0dcc8cd2715a8357b5be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177314"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665077"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Créer un extracteur dans Microsoft SharePoint Syntex
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 La création d’un modèle de classifieur sert à automatiser l’identification et la classification de types de documents spécifiques. Avant ou après cette opération, vous pouvez, si vous le souhaitez, ajouter des extracteurs à votre modèle pour extraire des informations spécifiques de ces documents. Par exemple, vous souhaiterez peut-être que votre modèle identifie tous les documents *Renouvellement de contrat* ajoutés à votre bibliothèque de documents. Vous voudrez également qu’il affiche la *Date de démarrage du service* de chaque document sous la forme d’une valeur de colonne dans la bibliothèque de documents.
 
@@ -39,9 +39,12 @@ Vous devez créer un extracteur pour chaque entité dans le document à extraire
 ## <a name="name-your-extractor"></a>Nommer votre extracteur
 
 1. Depuis la page d’accueil du modèle, dans la mosaïque **Créer et entraîner des extracteurs**, cliquez sur **Entraîner un extracteur**.
+
 2. À l’écran **Nouvel extracteur d’entités**, tapez le nom de votre extracteur dans le champ **Nom du nouvel extracteur**. Par exemple, nommez-le **Date de démarrage du service** si vous souhaitez extraire la date de démarrage du service à partir de chaque document Renouvellement de contrat. Vous pouvez également choisir de réutiliser une colonne précédemment créée (par exemple, une colonne de métadonnées gérées).
-> [!NOTE]
-> Si vous créez un nouvel extracteur, sélectionnez **Nouveau type de colonne**, puis sélectionnez **Une seule ligne de texte**, la limite de caractères maximale est 255. Les caractères que vous tapez au-delà de la limite sont tronqués. 
+
+    > [!NOTE]
+    > Pour les extracteurs dont le type de colonne est Une **seule ligne de** texte, la limite de caractères maximale est de 255. Les caractères que vous tapez au-delà de la limite sont tronqués.
+
 3. Une fois que vous avez terminé, cliquez sur **Créer**.
 
 ## <a name="add-a-label"></a>Ajouter une étiquette
@@ -99,11 +102,11 @@ Pour l’échantillon *Date de début du service*, nous vous recommandons d’ut
 
 1. Dans la section **Explication**, sélectionnez **Nouveau**, puis **Depuis la bibliothèque d’explications**.
 2. Depuis la bibliothèque d’explications, sélectionnez **Date**. Vous pouvez afficher toutes les variations de date reconnues.
-3. Sélectionnez **Ajouter**.</br>
+3. Sélectionnez **Ajouter**.
 
     ![Bibliothèque d’explications.](../media/content-understanding/explanation-library.png) 
 
-4. À la page **Créer une explication**, les champs sont automatiquement remplis avec la *date*. Sélectionnez **Enregistrer**.</br>
+4. À la page **Créer une explication**, les champs sont automatiquement remplis avec la *date*. Sélectionnez **Enregistrer**.
 
     ![Date.](../media/content-understanding/date-explanation-library.png) 
 

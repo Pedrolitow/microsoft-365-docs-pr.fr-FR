@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7c61f0fa0ac3e8017a96b9d5ed57fe7ec970af8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193984"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659224"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -34,7 +34,7 @@ Voici quelques options à analyser :
 - Fichiers principaux qui ont un impact sur le temps d’analyse
 - Principaux processus qui ont un impact sur le temps d’analyse
 - Principales extensions de fichier qui ont un impact sur le temps d’analyse
-- Combinaisons : par exemple, les principaux fichiers par extension, les analyses les plus hautes par fichier, les analyses les plus hautes par fichier par processus
+- Combinaisons : par exemple, les principaux fichiers par extension, les principales analyses par fichier, les principales analyses par fichier par processus
 
 ## <a name="running-performance-analyzer"></a>Exécution de l’analyseur de performances
 
@@ -92,7 +92,7 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 ### <a name="requirements"></a>Conditions requises
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
-- Versions Windows prise en charge : Windows 10, Windows 11 et versions Windows Server 2016 versions ultérieures
+- Versions Windows prise en charge : Windows 10, Windows 11 et Windows Server 2016 versions ultérieures
 - Version de la plateforme : 4.18.2108.7+
 - Version PowerShell : PowerShell Version 5.1
 
@@ -128,7 +128,7 @@ Pour plus d’informations sur l’analyseur de performances, voir la documentat
 Windows Version 10 et ultérieures.
 
 > [!NOTE]
-> Cette fonctionnalité est disponible à partir de la version de plateforme 4.18.2108.X et versions ultérieures.
+> Cette fonctionnalité est disponible à partir de la plateforme 4.18.2108.X et versions ultérieures.
 
 #### <a name="examples-new-mpperformancerecording"></a>Exemples : New-MpPerformanceRecording
 
@@ -193,7 +193,7 @@ Get-MpPerformanceReport    [-Path] <String>
 #### <a name="description-get-mpperformancereport"></a>Description : Get-MpPerformanceReport
 L’cmdlet analyse un enregistrement des performances Antivirus Microsoft Defender précédemment collecté `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès aux fichiers, extensions de fichiers et processus qui ont le plus d’impact sur Antivirus Microsoft Defender analyses.
 
-L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances des Antivirus Microsoft Defender. Cet outil est fourni « TEL QU’IL EST » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
+L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances des Antivirus Microsoft Defender. Cet outil est fourni « EN L’TANT QUE » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
 
 Pour plus d’informations sur l’analyseur de performances, voir la documentation [de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
 
@@ -202,7 +202,7 @@ Pour plus d’informations sur l’analyseur de performances, voir la documentat
 Windows Version 10 et ultérieures.
 
 > [!NOTE]
-> Cette fonctionnalité est disponible à partir de la version de plateforme 4.18.2108.X et versions ultérieures.
+> Cette fonctionnalité est disponible à partir de la plateforme 4.18.2108.X et versions ultérieures.
 
 #### <a name="examples-get-mpperformancereport"></a>Exemples : Get-MpPerformanceReport
 
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
-Spécifie le nombre d’extensions principales à obtenir pour chaque processus supérieur, triés par « Durée ».
+Spécifie le nombre d’extensions principales à sortie pour chaque processus supérieur, triés par « Durée ».
 
 ```yaml
 Type: Int32
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
-Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses principales à sortie, triées par « Durée ».
+Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses les plus en sortie, triées par « Durée ».
 
 
 ```yaml

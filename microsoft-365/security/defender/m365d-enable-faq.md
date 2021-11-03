@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac26e2528698cc671c5cb45eb507d01900a77ec4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162325"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667013"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Lisez les réponses aux questions les [](microsoft-365-defender.md)plus fréquemment posées sur l’Microsoft 365 Defender, y compris les licences et autorisations requises, le déploiement des services de support et les paramètres initiaux.
@@ -44,7 +44,7 @@ Pour obtenir des instructions sur la façon d’activer le service, [lisez Activ
 Les clients titulaires des licences non E5 suivantes peuvent utiliser les Microsoft 365 Defender :
 
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour l’identité
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
 
@@ -71,7 +71,7 @@ Microsoft 365 Defender est disponible à <https://security.microsoft.com> l':.
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>De quelles autorisations ai-je besoin pour accéder Microsoft 365 Defender ?
 
-Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent accéder aux Microsoft 365 Defender et aux données suivantes :
+Les comptes affectés aux rôles Azure Active Directory (Azure AD) suivants peuvent accéder Microsoft 365 Defender fonctionnalités et données suivantes :
 
 - Administrateur général
 - Administrateur de sécurité
@@ -93,7 +93,7 @@ Microsoft fournit régulièrement des informations via les différents canaux, n
 - Centre [de messages dans](../../admin/manage/message-center.md) Centre d'administration Microsoft 365
 - Billets de blog dans la [communauté technique Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
-Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités d’aperçu.](preview.md)
+Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités de prévisualisation.](preview.md)
 
 ## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Est Microsoft 365 Defender disponible pour les états-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) ou Cloud de la communauté du secteur public élevé ?
 

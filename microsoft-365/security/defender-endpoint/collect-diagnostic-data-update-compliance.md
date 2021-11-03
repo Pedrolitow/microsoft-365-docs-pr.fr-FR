@@ -1,6 +1,6 @@
 ---
-title: Collecter des données de diagnostic pour la conformité des mises à jour et les Windows Defender Antivirus Microsoft Defender
-description: Utiliser un outil pour collecter des données afin de résoudre les problèmes de conformité des mises à jour lors de l’utilisation du Antivirus Microsoft Defender’évaluation
+title: Collecter des données de diagnostic pour la conformité et l’Antivirus Microsoft Defender
+description: Utilisez un outil pour collecter des données afin de résoudre les problèmes de conformité des mises à jour lors de l’utilisation du Antivirus Microsoft Defender’évaluation.
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, signaler, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,17 +17,17 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 496087a2a66f37537c0638687b4e8503e63bf9f5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b8a0c196373cf0d6ef03b2eccb171d125917a993
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208552"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665800"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter des données de diagnostic de conformité des mises à jour pour l Antivirus Microsoft Defender évaluation
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter des données de diagnostic de conformité de mise à jour pour Antivirus Microsoft Defender évaluation
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -41,11 +41,11 @@ Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans 
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit **sur l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
     c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 
-2. Accédez au répertoire Windows Defender’annuaire. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
+2. Accédez au répertoire Windows Defender de recherche. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**
 
@@ -71,4 +71,4 @@ Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Résoudre les problèmes de Windows Defender Antivirus Microsoft Defender rapports](troubleshoot-reporting.md)
+- [Résoudre les problèmes de Antivirus Microsoft Defender rapports](troubleshoot-reporting.md)

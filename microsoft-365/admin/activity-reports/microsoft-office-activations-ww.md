@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui peuvent avoir besoin d’une aide supplémentaire.
-ms.openlocfilehash: 27026a1d8507e133a84ac4614d2351abd36097a1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e27a097c9071729aea66d3eeb2b47f0d4bc684ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553267"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60649202"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Rapports dans le Centre d’administration : activations Microsoft Office utilisateurs
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
+Le tableau Microsoft 365 de rapports d’entreprise vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant activé leur abonnement Office sur au moins un appareil. Il fournit une répartition des activations des abonnements Applications Microsoft 365 pour les grandes entreprises, Project et Visio Pro pour Office 365, ainsi que la répartition des activations sur les ordinateurs de bureau et les appareils. Ce rapport peut vous permettre d'identifier les utilisateurs qui pourraient avoir besoin d'assistance pour activer leur abonnement Office.
   
@@ -41,7 +41,7 @@ Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant acti
   
 Vous pouvez afficher les activations dans le rapport Office 365 en choisissant **l’onglet Activations.**<br/>![Microsoft 365 rapports : Microsoft Office 365'activation.](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Office 365 des activations : choisissez des colonnes.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Office 365 des activations : choisissez des colonnes.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
@@ -50,13 +50,13 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur.  <br/> |
 |Nom  <br/> |Nom complet de l’utilisateur.  <br/> |
-|Licences de produits  <br/> |Produits affectés à cet utilisateur.  <br/> |
+|Licences de produit  <br/> |Produits affectés à cet utilisateur.  <br/> |
 |Date de la dernière activation (UTC)  <br/> |Date à laquelle l’utilisateur a Office sur un ordinateur de bureau ou un appareil.  <br/> |
 |Activation sur Windows ordinateurs  <br/> |Nombre de bureaux Windows qu’un utilisateur a Office activés.  <br/> |
-|Activation sur les ordinateurs Mac <br/> |Nombre de bureaux Mac sur Office utilisateur.|
+|Activation sur les ordinateurs Mac <br/> |Nombre de bureaux Mac activés par un utilisateur Office activés.|
 |Activation sur Windows 10 et tablettes  <br/> |Nombre d’Windows 10 mobiles activés par un utilisateur Office activés.  <br/> |
 |Activation sur les téléphones et tablettes iOS  <br/> |Nombre d’appareils iOS sur Office activés par un utilisateur.|
 |Activation sur les téléphones et tablettes Android  <br/> |Nombre d’appareils Android sur Office activés.  <br/> |
-|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office l’activation d’ordinateurs partagés.|
+|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office via l’activation d’ordinateurs partagés.|
 |||
    

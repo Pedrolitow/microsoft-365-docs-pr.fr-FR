@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 5bc96e6b1fdeec4c7da7f18a199f66d64c093c52
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 27c977076774839b708edb835cc3a279c39f105f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554743"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667739"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -39,7 +39,7 @@ Toutes vos évaluations sont répertoriées sous l’onglet Évaluations du Gest
 
 ## <a name="data-protection-baseline-default-assessment"></a>Évaluation par défaut de base de la protection des données
 
-Pour commencer, Microsoft fournit une **évaluation** par défaut dans le Gestionnaire de conformité pour la ligne de base Microsoft 365 protection **des données.** Cette évaluation de référence dispose d’un ensemble de contrôles pour les réglementations et normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Pour commencer, Microsoft fournit une **évaluation** par défaut dans le Gestionnaire de conformité pour la ligne de base Microsoft 365 protection **des données.** Cette évaluation de référence dispose d’un ensemble de contrôles pour les réglementations et normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
 Cette évaluation est utilisée pour calculer votre score de conformité initial la première fois que vous arrivez au Gestionnaire de conformité, avant de configurer d’autres évaluations. Le Gestionnaire de conformité collecte les signaux initiaux de vos solutions Microsoft 365 de conformité. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
@@ -57,7 +57,7 @@ Voici des exemples de deux groupes et leurs évaluations sous-jacentes :
   - ISO 27001:2013
   - ISO 27018:2014
 
-Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Les mises à jour des détails ou de l’état que vous a faites d’une action d’amélioration technique seront prises en sur mesure par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
+Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Toutes les mises à jour détaillées ou d’état apportées à une action d’amélioration technique seront prises en jeu par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
 
 ### <a name="create-a-group"></a>Créer un groupe
 
@@ -79,7 +79,7 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 
 Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés.
 
-Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée pour évaluer les autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
+Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 (ou d’autres produits Microsoft disponibles) et une version universelle qui peut être adaptée pour évaluer les autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
 
 Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
 
@@ -102,13 +102,13 @@ Pour commencer à créer des évaluations, suivez ces étapes.
 
 4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisir le produit qu’elle va évaluer et l’affecter à un groupe.
 
-    - **Produit**: sélectionnez le produit à appliquer à votre évaluation. Si vous utilisez un modèle Microsoft 365, ce champ est rempli pour vous indiquer Microsoft 365 ne peut pas être modifié. Si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner Microsoft 365 comme produit lors de l’utilisation d’un modèle universel.
+    - **Produit**: sélectionnez le produit à appliquer à votre évaluation. Si vous utilisez un modèle Microsoft, tel qu’un modèle conçu pour Microsoft 365, ce champ est rempli pour indiquer le produit approprié et ne peut pas être modifié. Si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner un produit Microsoft prédéfiny lors de l’utilisation d’un modèle universel.
     - **Nom**: entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
     - **Groupe**: affectez votre évaluation à un groupe. Vous pouvez :
         - Sélectionnez **Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou
         - Sélectionnez **Créer un groupe** pour créer un groupe et lui affecter cette évaluation :
             - Déterminez un nom pour votre groupe et entrez-le dans le champ sous la bouton d’radio.
-            - Vous pouvez copier des données à partir d’un groupe **existant,** par exemple des détails et des documents d’implémentation et de test, en sélectionnant les zones appropriées.
+            - Vous pouvez copier des données à partir d’un groupe **existant,** comme les détails et les documents d’implémentation et de test, en sélectionnant les zones appropriées.
 
     Lorsque vous avez terminé, sélectionnez **Suivant**.
 
@@ -130,7 +130,7 @@ L’onglet Vue d’ensemble contient un graphique montrant votre pourcentage ver
 
 Les principales actions d’amélioration des contrôles dans l’évaluation sont répertoriées dans l’ordre de l’impact potentiel le plus important pour gagner des points. Le graphique associé détaille l’état de test agrégé de vos actions d’amélioration afin que vous pouvez évaluer rapidement ce qui a été testé et ce qui reste à faire.
 
-Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet Contrôles** ou **l’onglet Actions d’amélioration.**
+Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet Contrôles** ou l’onglet **Actions d’amélioration.**
 
 ### <a name="controls-tab"></a>Onglet Contrôles
 
@@ -162,7 +162,7 @@ Sélectionnez une action d’amélioration pour afficher  sa page de détails, p
 
 ### <a name="microsoft-actions-tab"></a>Onglet Actions Microsoft
 
-L’onglet Actions de Microsoft s’affiche pour les évaluations basées sur Microsoft 365 versions des modèles. Il répertorie toutes les actions de l’évaluation qui sont gérées par Microsoft. La liste affiche les détails clés de l’action, notamment : l’état du test, les points qui contribuent à votre score de conformité global, les réglementations et normes associées, la solution applicable, le type d’action et la famille de contrôles. Sélectionnez une action d’amélioration pour afficher sa page de détails.
+L’onglet Actions de Microsoft s’affiche pour les évaluations basées sur des modèles qui supportent les produits Microsoft. Il répertorie toutes les actions de l’évaluation qui sont gérées par Microsoft. La liste affiche les détails clés de l’action, notamment : l’état du test, les points qui contribuent à votre score de conformité global, les réglementations et normes associées, la solution applicable, le type d’action et la famille de contrôles. Sélectionnez une action d’amélioration pour afficher sa page de détails.
 
 En savoir plus sur le suivi et les scores des contrôles et [des actions d’amélioration.](compliance-score-calculation.md)
 
@@ -172,7 +172,7 @@ Lorsqu’une mise à jour est disponible pour une évaluation, vous verrez une n
 
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres conseils basés sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
+Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
 
 Si Microsoft met à jour un modèle gestionnaire de conformité que vous avez étendu, votre évaluation héritera de ces mises à jour une fois que vous les aurez acceptées. Votre évaluation conserve les attributs supplémentaires que vous avez appliqués à l’évaluation lorsque vous l’avez étendue.
 

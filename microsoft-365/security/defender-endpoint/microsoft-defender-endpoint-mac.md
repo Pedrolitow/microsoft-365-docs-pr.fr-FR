@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison sur Mac
 ms.reviewer: ''
-description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour endpoint sur Mac.
+description: Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Mac.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos, monterey, big sur, contrôle, mojave, mde pour mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,18 +17,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3943c5c9e477dc114b74d7f3f9a76b5b00119dd6
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2649cf86dbfab3d74b5b28ec78ae161a962a3cab
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587728"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662285"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -70,19 +70,19 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 - Outil en ligne de commande :
     - [Déploiement manuel](mac-install-manually.md)
 
-### <a name="system-requirements"></a>Configuration requise
+### <a name="system-requirements"></a>Configuration requise du système
 
 Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 > [!IMPORTANT]
-> Sur macOS 11 (Big Sur) et les appareils supérieurs, Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
+> Sur macOS 11 (Big Sur) et les appareils supérieurs, Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés dans les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
 - 12 (Monterey), 11 (Big Sur), 10.15 (Île), 10.14 (Mojave)
 - Espace disque : 1 Go
 
 Les versions bêta de macOS ne sont pas pris en charge.
 
-La prise en charge des appareils macOS avec processeurs À puces M1 est officiellement prise en charge depuis la version 101.40.84 de l’agent.
+La prise en charge des appareils macOS avec processeurs À puceS M1 est officiellement prise en charge depuis la version 101.40.84 de l’agent.
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
@@ -103,7 +103,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 
 ### <a name="configuring-exclusions"></a>Configuration des exclusions
 
-Lorsque vous ajoutez des exclusions à Microsoft Defender, vous devez tenir compte des [erreurs d’exclusion courantes Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+Lorsque vous ajoutez des exclusions, soyez conscient des [erreurs d’exclusion courantes Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Connexions réseau
 
@@ -149,7 +149,7 @@ Une fois Que Microsoft Defender pour le point de terminaison est installé, la c
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour le point de terminaison sur Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Comment mettre à jour Microsoft Defender pour endpoint sur Mac
 
 Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint sur Mac, un programme nommé Microsoft AutoUpdate (MAU) est utilisé. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac.](mac-updates.md)
 

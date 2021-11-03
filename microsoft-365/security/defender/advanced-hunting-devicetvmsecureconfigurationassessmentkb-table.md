@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7f2e5c2bb005a8f58d6e1df6db2beedcc03c848
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8372275655c9b4f75feaff8f2f8c8f2aace78d1e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205114"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658693"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -53,7 +51,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationSubcategory` | string |Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationBenchmarks` | string | Liste des références du secteur recommandant une configuration identique ou similaire |
 | `Tags` | string | Étiquettes représentant différents attributs utilisés pour identifier ou classer une configuration de sécurité |
-| `RemediationOptions` | string | Actions recommandées pour réduire ou résoudre les risques associés |
+| `RemediationOptions` | chaîne | Actions recommandées pour réduire ou résoudre les risques associés |
 
 ## <a name="related-topics"></a>Sujets associés
 

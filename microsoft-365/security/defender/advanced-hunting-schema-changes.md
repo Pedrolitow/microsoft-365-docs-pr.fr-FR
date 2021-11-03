@@ -1,6 +1,6 @@
 ---
-title: Changements de nom dans le schéma Microsoft 365 Defender de recherche avancée
-description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
+title: Changements d’appellation dans le Microsoft 365 Defender de recherche avancée
+description: Suivre et passer en revue les tables et les colonnes des modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,24 +15,22 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4082dbe9964c115df279f04d4a25ce5fbeb2cec2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5006347ad8f4487c904fc6df4934bbaf612a1bdf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159113"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664235"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -62,7 +60,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `DetectionSource` | CustomerTI | Ti personnalisée | Changement de nom |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
 | `DetectionSource` | MTP | Microsoft 365 Defender | Changement de nom |
-| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Changement de nom |
+| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Changement de nom |
 | `DetectionSource` | CustomDetection | Détection personnalisée | Changement de nom |
 | `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
@@ -70,7 +68,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
 |`ServiceSource` |Protection Microsoft contre les menaces | Microsoft 365 Defender | Changement de nom |
 | `ServiceSource` | Office 365 – Protection avancée contre les menaces |Microsoft Defender pour Office 365 | Changement de nom |
-| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Changement de nom |
+| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Changement de nom |
 
 `DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -99,7 +97,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
     | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Commentaires des clients. |
     | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Commentaires des clients. |
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` table a été dépréciée. Les tables et les tables le `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` remplacent.
 

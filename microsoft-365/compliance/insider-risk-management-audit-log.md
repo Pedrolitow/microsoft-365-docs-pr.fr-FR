@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3024c0861f0530c59fb5f620959a2b28f3078ea0
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2bf453e8856f69e9ddb8c7c7a9264267ef77b4f0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334649"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662539"
 ---
 # <a name="insider-risk-management-audit-log"></a>Journal d’audit de la gestion des risques internes
 
@@ -29,14 +29,14 @@ Le journal d’audit est automatiquement et immédiatement mis à jour chaque fo
 
 Les domaines inclus dans l’analyse des activités sont les suivants :
 
-- Politiques
+- Stratégies
 - Cas
 - Alertes
 - Paramètres
 - Utilisateurs
 - Modèles de notifications
 
-Pour afficher et exporter des données à partir du journal d’audit, les utilisateurs doivent être affectés aux groupes de rôles Insider *Risk Management* ou Insider Risk *Management Auditors.* Pour en savoir plus sur les groupes de rôles de gestion des risques internes, voir Prise en charge de la gestion des risques internes Étape 1 : [Activation des autorisations.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
+Pour afficher et exporter des données à partir du journal d’audit, les utilisateurs doivent être affectés aux groupes de rôles Insider *Risk Management* ou Insider Risk *Management Auditors.* Pour en savoir plus sur les groupes de rôles de gestion des risques internes, voir Prise en charge de la gestion des risques internes Étape 1 : [Activation des autorisations.](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
 > [!NOTE]
 > Le journal d’audit de la gestion des risques internes n’est pas associé au journal d’audit Microsoft 365, il s’agit de systèmes d’audit indépendants et de capture d’informations sur des activités distinctes. La désactivation Microsoft 365'audit n’a pas d’impact sur l’audit des activités au sein de la gestion des risques internes.
@@ -60,11 +60,11 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente d’
 
 ## <a name="audit-log-export"></a>Exportation du journal d’audit
 
-Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page du journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
+Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
 
 Le fichier contient des informations d’activité pour les champs suivants :
 
-- **Activité effectuée par :** Nom d’utilisateur de l’utilisateur qui modifie une valeur d’élément. Les *utilisateurs répertoriés* ici ont été [](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)affectés à un ou plusieurs des groupes de rôles de gestion des risques internes suivants : Insider *Risk Management*, Insider Risk Management Admins , *Insider Risk Management Analysts*, Insider Risk Management *Investigators*. Chaque groupe de rôles dispose de différents niveaux d’autorisation pour gérer les fonctionnalités de risque internes.
+- **Activité effectuée par :** Nom d’utilisateur de l’utilisateur qui modifie une valeur d’élément. Les *utilisateurs répertoriés* ici ont été [](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)affectés à un ou plusieurs des groupes de rôles de gestion des risques internes suivants : Insider *Risk Management*, Insider Risk Management Admins , *Insider Risk Management Analysts*, Insider Risk Management *Investigators*. Chaque groupe de rôles dispose de différents niveaux d’autorisation pour gérer les fonctionnalités de risque internes.
 - **Activité :** Activité entreprise sur un élément. Les *valeurs sont Viewed, Deleted, Added, Edited policy, Case, User, Alert et* *Paramètres.*
 - **Ajout :** objets qui ont été ajoutés au cours de l’activité, tels que les utilisateurs, les types de fichiers ou les domaines.
 - **Volume d’alerte**: niveau du volume d’alerte défini dans les paramètres de gestion des risques internes.
@@ -76,7 +76,7 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Stratégie DLP :** stratégie de protection contre la perte de données (DLP) sélectionnée pour déclencher l’inclusion dans une stratégie de gestion des risques internes.
 - **Indicateur**: indicateur dans les paramètres de risque internes sur qui l’activité a été effectuée (par exemple, ajout ou suppression d’un indicateur).
 - **Modèle de notification**: modèle d’avis sur qui l’activité a été effectuée.
-- **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque interne.
+- **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque internes.
 - **Nombre de fichiers**: limite de volume de fichiers définie dans les paramètres de gestion des risques internes.
 - **Modèle de stratégie**: le modèle de stratégie sur qui les indicateurs ont agit appartient.
 - **Montant précédent :** montants des indicateurs personnalisés précédemment sélectionnés pour une stratégie.
@@ -85,5 +85,5 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Expéditeur :** champ de l’expéditeur du modèle d’avis sur qui l’activité a été effectuée.
 - **Stratégie cible**: stratégie sur quelle stratégie l’activité a été effectuée (par exemple, ajout d’un utilisateur ou suppression d’un utilisateur).
 - **Corps du message du** modèle : corps du message du modèle d’avis sur qui l’activité a été effectuée.
-- **Objet du** modèle : champ d’objet du modèle d’avis sur qui l’activité a été effectuée.
+- **Objet du modèle**: champ d’objet du modèle d’avis sur qui l’activité a été effectuée.
 - **Utilisateur :** Utilisateur sur qui l’activité a été effectuée.

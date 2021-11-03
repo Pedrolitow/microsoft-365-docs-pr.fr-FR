@@ -1,6 +1,6 @@
 ---
 title: Collecter des données de diagnostic de Antivirus Microsoft Defender
-description: Utilisez un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
+description: Utiliser un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, rapport, Microsoft Defender av, objet de stratégie de groupe, paramètre, données de diagnostic
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,23 +17,23 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a4dc0b6a9faafe841efbd976b35631a8ac0febf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193074"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665788"
 ---
-# <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
+# <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Collecter des Antivirus Microsoft Defender de diagnostic
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de l’Antivirus Microsoft Defender.
+Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation du Antivirus Microsoft Defender.
 
 > [!NOTE]
 > Dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. Voici comment : Collecter un [package d’enquête à partir d’appareils.](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
@@ -44,14 +44,14 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit **sur l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
     c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 
-2. Accédez au répertoire Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
+2. Accédez au répertoire pour Antivirus Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
    > [!NOTE]
-   > Si vous exécutez une version mise à jour de la plateforme [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
+   > Si vous exécutez une version mise à jour de la plateforme anti-programme malveillant [de Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à partir de `MpCmdRun` l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**
 
@@ -62,7 +62,11 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 4. Un .cab de diagnostic qui contient divers journaux de diagnostic est généré. L’emplacement du fichier est spécifié dans la sortie de l’invite de commandes. Par défaut, l’emplacement est `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
    > [!NOTE]
-   > Pour rediriger le fichier cab vers un chemin d’accès différent ou un partage UNC, utilisez la commande suivante : `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>Pour plus d’informations, voir [Rediriger les données de diagnostic vers un partage UNC.](#redirect-diagnostic-data-to-a-unc-share)
+   > Pour rediriger le fichier cab vers un chemin d’accès différent ou un partage UNC, utilisez la commande suivante :
+   >
+   > `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`
+   >
+   > Pour plus d’informations, voir [Rediriger les données de diagnostic vers un partage UNC.](#redirect-diagnostic-data-to-a-unc-share)
 
 5. Copiez ces .cab vers un emplacement accessible par le support Microsoft. Par exemple, il peut s’agit d’un dossier OneDrive protégé par mot de passe que vous pouvez partager avec nous.
 

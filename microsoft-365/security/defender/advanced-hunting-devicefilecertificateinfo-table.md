@@ -15,24 +15,22 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 078650f07ca345c24155e61ee640a4f96344632c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 362cacee7734653d6ca0f868e565a38b806fd31c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190460"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664472"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -46,18 +44,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `IsSigned` | booléen | Indique si le fichier est signé |
-| `SignatureType` | string | Indique si les informations de signature ont été lues en tant que contenu incorporé dans le fichier lui-même ou lues à partir d’un fichier catalogue externe |
-| `Signer` | string | Informations sur le signataire du fichier |
-| `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
-| `Issuer` | string | Informations sur l’autorité de certification émettrice |
-| `IssuerHash` | string | Valeur de hachage unique identifiant l’autorité de certification émettrice |
-| `CertificateSerialNumber` | string | Identificateur du certificat propre à l’autorité de certification émettrice |
-| `CrlDistributionPointUrls` | string |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
+| `IsSigned` | valeur booléenne | Indique si le fichier est signé |
+| `SignatureType` | chaîne | Indique si les informations de signature ont été lues en tant que contenu incorporé dans le fichier lui-même ou lues à partir d’un fichier catalogue externe |
+| `Signer` | chaîne | Informations sur le signataire du fichier |
+| `SignerHash` | chaîne | Valeur de hachage unique identifiant le signataire |
+| `Issuer` | chaîne | Informations sur l’autorité de certification émettrice |
+| `IssuerHash` | chaîne | Valeur de hachage unique identifiant l’autorité de certification émettrice |
+| `CertificateSerialNumber` | chaîne | Identificateur du certificat propre à l’autorité de certification émettrice |
+| `CrlDistributionPointUrls` | chaîne |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
 | `CertificateExpirationTime` | DateHeure | Date et heure d’expiration du certificat |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure de contre-signature du certificat |
-| `IsTrusted` | booléen | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs douteux |
+| `IsTrusted` | valeur booléenne | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs douteux |
 | `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
 

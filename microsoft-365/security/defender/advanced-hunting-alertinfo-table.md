@@ -15,24 +15,22 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae168a74e4f01ebe9a6e62d3aa7105167064e25e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d8da4e897ee53be88e051f6ec5600a83e9aa420f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205139"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60671561"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
@@ -49,8 +47,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Category` | string | Type d’indicateur de menace ou d’activité de violation identifié par l’alerte |
 | `Severity` | string | Indique l’impact potentiel (élevé, moyen ou faible) de l’indicateur de menace ou de la violation identifié(e) par l’alerte |
 | `ServiceSource` | string | Produit ou service qui a fourni les informations d’alerte |
-| `DetectionSource` | string | Technologie ou capteur de détection qui a identifié le composant ou l’activité notable |
-| `AttackTechniques` | string | MITRE ATT&techniques CK associées à l’activité ayant déclenché l’alerte |
+| `DetectionSource` | chaîne | Technologie ou capteur de détection qui a identifié le composant ou l’activité notable |
+| `AttackTechniques` | chaîne | MITRE ATT&techniques CK associées à l’activité ayant déclenché l’alerte |
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

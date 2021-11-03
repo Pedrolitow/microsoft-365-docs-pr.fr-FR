@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Découvrez comment afficher, lister ou afficher Microsoft 365 comptes d’utilisateur de différentes manières avec PowerShell.
-ms.openlocfilehash: da1ae30f04ba2c5ee69047361113fe468938c4ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c434825da95fd7d90594b2424cab287305f7d26
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212760"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667505"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser la Centre d'administration Microsoft 365 pour afficher les comptes de votre client Microsoft 365 client. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
+Vous pouvez utiliser le Centre d'administration Microsoft 365 pour afficher les comptes de votre client Microsoft 365 client. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
@@ -94,7 +94,7 @@ Pour voir toutes les propriétés d’un compte d’utilisateur spécifique, uti
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Autre exemple : exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
+Dans un autre exemple, exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
@@ -106,19 +106,19 @@ Les comptes d’utilisateurs ont deux sources :
 
 - Windows Server Active Directory (AD), qui sont des comptes qui se synchronisent d’AD local vers le cloud.
 
-- Azure Active Directory (Azure AD) AD, qui sont créés directement dans le cloud.
+- Azure Active Directory (Azure AD), qui sont créés directement dans le cloud.
 
-
-La commande suivante indique à PowerShell d’obtenir tous les utilisateurs dont l’attribut *DirSyncEnabled* a la valeur *True*. Vous pouvez l’utiliser pour rechercher des comptes qui se synchronisent à partir d’AD local.
+Vous pouvez utiliser la commande suivante pour rechercher les comptes qui se synchronisent à partir d’AD **local.** Il demande à PowerShell d’obtenir tous les utilisateurs dont l’attribut *DirSyncEnabled* a la valeur *True*. 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-La commande suivante indique à PowerShell d’obtenir tous les utilisateurs dont l’attribut *DirSyncEnabled* a la valeur *False*. Vous pouvez l’utiliser pour rechercher des comptes cloud uniquement.
+Vous pouvez utiliser la commande suivante pour rechercher des **comptes cloud** uniquement. Il demande à PowerShell d’obtenir tous les utilisateurs dont l’attribut *DirSyncEnabled* a la valeur *False* ou non définie (*Null*).
+Un compte qui n’a jamais été synchronisé à partir d’AD local a *DirSyncEnabled* définie sur *Null*. Un compte qui a été initialement synchronisé à partir d’AD local mais qui n’est plus synchronisé a *DirSyncEnabled* définie sur *False*. 
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 ```
 
 ### <a name="view-accounts-based-on-a-common-property"></a>Afficher les comptes en fonction d’une propriété commune
@@ -129,7 +129,7 @@ Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez util
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-Cette commande indique Azure Active Directory PowerShell pour Graph :
+Cette commande indique à Azure Active Directory PowerShell de Graph :
   
 1. Obtenez toutes les informations sur les comptes d’utilisateur (**Get-AzureADUser**) et envoyez-les à la commande suivante ( **|** ).
     
@@ -163,7 +163,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour le module Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Exécutez ces cmdlets à partir de Windows PowerShell.
+>PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
 >
 
 Vous devez obtenir des informations semblables à ceci :
@@ -289,7 +289,7 @@ L’cmdlet Select vous permet de choisir les propriétés à afficher.  Pour aff
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
+Pour être plus sélectif dans la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
@@ -314,7 +314,7 @@ Scott Wallace            Operations
 
 Si vous utilisez la synchronisation d’annuaires pour créer et gérer vos utilisateurs Microsoft 365, vous pouvez afficher le compte local à partir duquel un utilisateur Microsoft 365 été projeté. L’exemple suivant suppose que :
 
-- Azure AD Connecter est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, voir [Azure AD Connecter: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Azure AD Connecter est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, [voir Azure AD Connecter : Concepts de conception).](/azure/active-directory/hybrid/plan-connect-design-concepts)
 - Le module Services de domaine Active Directory pour PowerShell a été installé (voir [outils RSAT).](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)
 
 ```powershell

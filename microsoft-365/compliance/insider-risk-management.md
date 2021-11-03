@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30f73f99b60092c854ae7d1ccc2d8eac1e7a49b7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 455c60e925fe9563fff26699e6f023b0971bb96c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335841"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662515"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>En savoir plus sur la gestion des risques internes dans Microsoft 365
 
-La gestion des risques internes est une solution de conformité dans Microsoft 365 qui vous permet de minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risques internes vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, notamment en agissant sur des cas et en les resserrant à Microsoft Advanced eDiscovery si nécessaire. Les analystes de risque de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
+La gestion des risques internes est une solution de conformité dans Microsoft 365 qui permet de minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur des activités malveillantes et accidentelles dans votre organisation. Les stratégies de risques internes vous permettent de définir les types de risques à identifier et à détecter dans votre organisation, notamment en agissant sur des cas et en les resserrant à Microsoft Advanced eDiscovery si nécessaire. Les analystes de risque de votre organisation peuvent rapidement prendre les mesures appropriées pour s’assurer que les utilisateurs sont conformes aux normes de conformité de votre organisation.
 
 Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques internes peut aider votre organisation à prévenir, détecter et contenir des risques tout en hiérbant les valeurs, la culture et l’expérience utilisateur de votre organisation :
 <br>
@@ -50,7 +50,7 @@ La gestion et la réduction des risques au sein de votre organisation commencent
 
 Les utilisateurs de l’espace de travail moderne ont accès à la création, à la gestion et au partage de données sur un large éventail de plateformes et de services. Dans la plupart des cas, les organisations disposent de ressources et d’outils limités pour identifier et atténuer les risques à l’échelle de l’organisation, tout en respectant les normes de confidentialité des utilisateurs.
 
-La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité de risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Ces stratégies vous permettent d’identifier les activités à risque et d’agir pour atténuer ces risques.
+La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur les activités de risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Ces stratégies vous permettent d’identifier les activités à risque et d’agir pour atténuer ces risques.
 
 La gestion des risques internes est centrée sur les principes suivants :
 
@@ -63,21 +63,21 @@ La gestion des risques internes est centrée sur les principes suivants :
 
 L’analyse des risques internes vous permet d’effectuer une évaluation des risques internes potentiels au sein de votre organisation sans aucune configuration de stratégie des risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Cette évaluation peut également vous aider à déterminer les besoins en matière de licences supplémentaires ou d’optimisation future des stratégies de risque internes existantes.
 
-Pour en savoir plus sur l’analyse des risques internes, voir [Paramètres de gestion](insider-risk-management-settings.md#analytics-preview)des risques internes : Analyse.
+Pour en savoir plus sur l’analyse des risques internes, voir [Paramètres de gestion](insider-risk-management-settings.md#analytics)des risques internes : Analyse.
 
 ## <a name="get-started-with-recommended-actions-preview"></a>Commencer avec les actions recommandées (prévisualisation)
 
-Que vous créiez la gestion des risques internes pour la première fois ou que vous débutiez avec la création de stratégies, la nouvelle expérience [d’actions](insider-risk-management-configure.md#recommended-actions-preview) recommandée peut vous aider à utiliser au mieux les fonctionnalités de gestion des risques internes. Les actions recommandées incluent la configuration des autorisations, le choix des indicateurs de stratégie, la création d’une stratégie, etc.
+Que vous créiez la gestion des risques internes pour la première fois ou que vous débutiez avec la création de nouvelles stratégies, la nouvelle expérience [d’actions](insider-risk-management-configure.md#recommended-actions-preview) recommandée peut vous aider à utiliser au mieux les fonctionnalités de gestion des risques internes. Les actions recommandées incluent la configuration des autorisations, le choix des indicateurs de stratégie, la création d’une stratégie, etc.
 
 ## <a name="workflow"></a>Flux de travail
 
-Le flux de travail de gestion des risques internes vous permet d’identifier, d’examiner et de prendre des mesures pour résoudre les risques internes au niveau de votre organisation. Avec des modèles de stratégie axés, une signalisation d’activité complète dans le service Microsoft 365 et des outils de gestion des alertes et des cas, vous pouvez utiliser des informations actionnables pour identifier et agir rapidement sur les comportements risqués.
+Le flux de travail de gestion des risques internes vous permet d’identifier, d’examiner et de prendre des mesures pour résoudre les risques internes au niveau de votre organisation. Avec des modèles de stratégie axés, une signalisation d’activité complète dans le service Microsoft 365 et des outils de gestion des alertes et des cas, vous pouvez utiliser des informations actionnables pour identifier et agir rapidement sur les comportements à risque.
 
 L'identification et la résolution des activités à risque internes et des problèmes de conformité avec la gestion des risques internes dans Microsoft 365 utilise le flux de travail suivant :
 
 ![Flux de travail de gestion des risques internes.](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Politiques
+### <a name="policies"></a>Stratégies
 
 [Les stratégies de gestion](insider-risk-management-policies.md) des risques internes sont créées à l’aide de modèles prédéfin définis et de conditions de stratégie qui définissent les événements déclenchant des événements et des indicateurs de risque examinés dans votre organisation. Ces conditions incluent l’utilisation des indicateurs de risque pour les alertes, les utilisateurs inclus dans la stratégie, les services hiérarchisés et la période de surveillance.
 
@@ -88,6 +88,7 @@ Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rap
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Fuites de données par des utilisateurs mécontents (préversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Violations générales de la stratégie de sécurité (préversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Utilisation incorrecte des données générales des patients (aperçu)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Violations de stratégie de sécurité par des utilisateurs sortants (préversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Violations de stratégie de sécurité par un utilisateur mécontent (préversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -96,9 +97,9 @@ Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rap
 
 ### <a name="alerts"></a>Alertes
 
-Les alertes sont automatiquement générées par les indicateurs de risque qui correspondent aux conditions de stratégie et qui sont affichés dans le tableau de bord [Alertes.](insider-risk-management-activities.md#alert-dashboard) Ce tableau de bord autorise un affichage rapide de toutes les alertes nécessitant un examen, des alertes ouvertes au fil du temps et des statistiques des alertes pour votre organisation. Toutes les alertes de stratégie sont affichées avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et des nouvelles alertes qui ont besoin d’une action :
+Les alertes sont générées automatiquement par les indicateurs de risque qui correspondent aux conditions de stratégie et qui sont affichés dans le tableau [de bord alertes.](insider-risk-management-activities.md#alert-dashboard) Ce tableau de bord autorise un affichage rapide de toutes les alertes nécessitant un examen, des alertes ouvertes au fil du temps et des statistiques des alertes pour votre organisation. Toutes les alertes de stratégie sont affichées avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et des nouvelles alertes qui ont besoin d’une action :
 
-- Statut
+- État
 - Severity
 - Heure détectée
 - Cas
@@ -132,12 +133,12 @@ En outre, le nouveau journal [d’audit (prévisualisation)](insider-risk-manage
 
 ### <a name="action"></a>Action
 
-Une fois les cas examinés, les réviseurs peuvent agir rapidement pour résoudre le cas ou collaborer avec d’autres parties prenantes à risque dans votre organisation. Si des utilisateurs violent accidentellement ou par inadvertance les conditions de la stratégie, un simple avis de rappel peut être envoyé à l’utilisateur à partir des modèles de notification que vous pouvez personnaliser pour votre organisation. Ces notifications peuvent servir de rappels simples ou peuvent diriger l’utilisateur vers une formation ou des conseils d’actualisation afin d’éviter les comportements à risque futurs. Pour plus d’informations, voir [Modèles de notifications sur la gestion des risques internes](insider-risk-management-notices.md).
+Une fois les cas examinés, les réviseurs peuvent agir rapidement pour résoudre le cas ou collaborer avec d’autres parties prenantes à risque dans votre organisation. Si des utilisateurs violent accidentellement ou par inadvertance les conditions de la stratégie, un simple avis de rappel peut être envoyé à l’utilisateur à partir des modèles de notification que vous pouvez personnaliser pour votre organisation. Ces notifications peuvent servir de rappels simples ou peuvent diriger l’utilisateur vers une formation ou des conseils d’actualisation pour éviter les comportements à risque futurs. Pour plus d’informations, voir [Modèles de notifications sur la gestion des risques internes](insider-risk-management-notices.md).
 
 Dans les situations les plus graves, vous devrez peut-être partager les informations sur les cas de gestion des risques internes avec d’autres réviseurs ou services de votre organisation. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à résoudre les risques de bout en bout.
 
 - **Advanced eDiscovery**: la escalade d’un cas d’enquête vous permet de transférer des données et la gestion du cas à Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
-- Office 365'intégration des API de gestion **(prévisualisation)**: la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services de gestion des événements et des informations de sécurité (SIEM) via les API de gestion Office 365. Le fait d’avoir accès aux informations d’alerte dans la plateforme la mieux adaptée aux processus de risque de votre organisation vous offre plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec Office 365 API de gestion des données, voir [Exporter les alertes.](insider-risk-management-settings.md#export-alerts-preview)
+- Office 365'intégration des API de gestion **(prévisualisation)**: la gestion des risques internes prend en charge l’exportation des informations d’alerte vers les services de gestion des événements et des informations de sécurité (SIEM) via les API Office 365 Management. Le fait d’avoir accès aux informations d’alerte dans la plateforme la mieux adaptée aux processus de risque de votre organisation vous offre plus de flexibilité dans la façon d’agir sur les activités à risque. Pour en savoir plus sur l’exportation des informations d’alerte avec Office 365 API de gestion des données, voir [Exporter les alertes.](insider-risk-management-settings.md#export-alerts)
 
 > [!NOTE]
 > Merci de vos commentaires et de votre support pendant la prévisualisation du connecteur ServiceNow. Nous avons décidé de mettre fin à la prévisualisation du connecteur ServiceNow et de cesser de prendre en charge la gestion des risques internes le 30 novembre 2020. Nous évaluons activement d’autres méthodes pour fournir aux clients l’intégration de ServiceNow dans la gestion des risques internes.
@@ -174,6 +175,12 @@ Les utilisateurs de votre organisation peuvent avoir différents niveaux de risq
 - [Violations de la stratégie de sécurité par des utilisateurs prioritaires (préversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Fuites de données par des utilisateurs prioritaires (aperçu)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
+## <a name="healthcare-preview"></a>Soins de santé (prévisualisation)
+
+Pour les organisations du secteur de la santé, des études récentes ont trouvé un taux très élevé de violations de données internes. La détection de l’utilisation abusive des données des patients et des informations d’état de santé est un élément essentiel de la protection de la confidentialité des patients et du respect des réglementations de conformité telles que la loi HIPAA (Health Insurance Portability and Accountability Act) et la loi HITECH (Health Information Technology for Economic and Première Health). L’utilisation abusive des données des patients peut aller de l’accès privilégié aux dossiers des patients de leur famille ou de leur famille à des fins malveillantes. Pour faciliter l’identité de ces types d’activités risquées, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur RH Microsoft 365 et un connecteur de données spécifiques à la santé pour commencer à marquer les indicateurs de risque relatifs aux comportements qui peuvent se produire dans vos systèmes EHR (Electronic Electronic Records) :
+
+- [Utilisation incorrecte des données générales des patients (aperçu)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Actions et comportements des utilisateurs non résusés (aperçu)
 
 Les événements liés à l’emploi peuvent avoir un impact sur le comportement des utilisateurs de plusieurs manières liées aux risques internes. Ces stresseurs peuvent être un examen des performances médiocres, une rétrogradation de position ou l’utilisateur en cours de placement dans un plan d’évaluation des performances. Bien que la plupart des utilisateurs ne répondent pas de manière malveillante à ces événements, le stress de ces actions peut entraîner l’intervention de certains utilisateurs qu’ils ne prennent normalement pas en compte dans des circonstances normales. Pour faciliter l’identité de ces types d’activités risquées, les modèles de stratégie de gestion des risques internes suivants utilisent le connecteur rh Microsoft 365 et démarrent l’évaluation des indicateurs de risque relatifs aux comportements qui peuvent se produire à proximité d’événements de contrainte d’emploi :
@@ -185,4 +192,4 @@ Les événements liés à l’emploi peuvent avoir un impact sur le comportement
 
 - Voir [Planifier la gestion des risques internes](insider-risk-management-plan.md) pour vous préparer à activer les stratégies de gestion des risques internes dans votre organisation.
 - Consultez [La prise en charge des paramètres de gestion](insider-risk-management-settings.md) des risques internes pour configurer les paramètres globaux des stratégies de risque internes.
-- Consultez [La prise en charge de la gestion](insider-risk-management-configure.md) des risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- Consultez [La prise en charge de la gestion des](insider-risk-management-configure.md) risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.

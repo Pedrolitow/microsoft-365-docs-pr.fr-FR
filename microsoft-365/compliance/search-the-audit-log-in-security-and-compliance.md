@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587540"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646954"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -170,7 +170,7 @@ Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous 
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
     > [!TIP]
-    > Utilisez une session de navigation privée (pas une session normale) pour accéder au Centre de conformité Microsoft 365, car cela empêchera l'utilisation des informations d'identification avec lesquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre de navigation privée), appuyez sur CTRL+MAJ+N.
+    > Utilisez une session de navigation privée (et non une session normale) pour accéder au Centre de conformité Microsoft 365, car cela empêche l’utilisation des informations d’identification avec lesquelles vous êtes actuellement connecté. Appuyez sur **CTRL+SHIFT+N** pour ouvrir une session de navigation InPrivate dans Microsoft Edge ou une session de navigation privée dans Google Chrome (appelée fenêtre incognito).
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Audit**.
 

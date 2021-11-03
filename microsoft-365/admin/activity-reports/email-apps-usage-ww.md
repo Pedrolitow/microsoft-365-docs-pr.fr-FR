@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Découvrez comment obtenir le rapport d’utilisation des applications de messagerie pour connaître les applications de messagerie qui se connectent Exchange Online et les Outlook version que les utilisateurs utilisent.
-ms.openlocfilehash: 9da0900723928fe091e7415482ba2cb50ff4f5f1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 601258d721f817438f0bd6a08d98d73aa22b7afb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553291"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653083"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation des applications de messagerie
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation des applications de messagerie, vous pouvez voir le nombre d’applications de messagerie qui se connectent à Exchange Online. Vous pouvez également afficher les informations relatives à la version des applications Outlook utilisées, ce qui vous permet d'assurer le suivi des personnes utilisant des versions non prises en charge pour installer les versions prises en charge d'Outlook.
+Le tableau Microsoft 365 de rapports de gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation des applications de messagerie, vous pouvez voir le nombre d’applications de messagerie qui se connectent à Exchange Online. Vous pouvez également afficher les informations relatives à la version des applications Outlook utilisées, ce qui vous permet d'assurer le suivi des personnes utilisant des versions non prises en charge pour installer les versions prises en charge d'Outlook.
   
 ## <a name="how-to-get-to-the-email-apps-report"></a>Comment obtenir le rapport des applications de messagerie
 
@@ -38,13 +38,13 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
   
 ## <a name="interpret-the-email-apps-report"></a>Interpréter le rapport des applications de messagerie
 
-Vous pouvez obtenir une vue de l’activité des applications de messagerie en regardant **les** graphiques Utilisateurs **et clients.** 
+Vous pouvez obtenir une vue de l’activité des applications de messagerie en regardant **les** graphiques Utilisateurs **et** clients. 
   
 ![Clients de messagerie utilisés.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
   
 |Item|Description|
 |:-----|:-----|
-|1.  <br/> |Le **rapport d’utilisation** des applications de messagerie permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).  <br/> |
+|1.  <br/> |Le **rapport d’utilisation** des applications de messagerie permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.  <br/> |
 |3.  <br/> |L'affichage **Utilisateurs** indique le nombre d'utilisateurs uniques connectés à Exchange Online à l'aide d'une application de messagerie.  <br/> |
 |4.  <br/> |L'affichage **Applications** indique le nombre d'utilisateurs uniques par application sur la période sélectionnée.  <br/> |

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee78ead64f58cc90f43d556f5c1717753f672656
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d18e9da81513a27786a0e53bdc296bcb353618b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169610"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666887"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Gérer l’accès aux Microsoft 365 Defender avec Azure Active Directory rôles globaux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Il existe deux façons de gérer l’accès Microsoft 365 Defender
@@ -46,7 +46,7 @@ Les comptes affectés aux rôles **Azure Active Directory global (AD)** suivants
 - Lecteur général
 - Lecteur de sécurité
 
-Pour passer en revue les comptes avec ces [rôles, affichez autorisations dans le portail Microsoft 365 Defender.](https://security.microsoft.com/permissions)
+Pour passer en revue les comptes avec ces [rôles, affichez les autorisations](https://security.microsoft.com/permissions)dans le portail Microsoft 365 Defender.
 
 **L’accès** aux rôles personnalisés est une nouvelle fonctionnalité de Microsoft 365 Defender et vous permet de gérer l’accès à des données, des tâches et des fonctionnalités spécifiques dans Microsoft Defender 365. Les rôles personnalisés offrent plus de contrôle que les rôles Azure AD globaux, fournissant aux utilisateurs uniquement l’accès dont ils ont besoin avec les rôles les moins permissifs nécessaires.  Les rôles personnalisés peuvent être créés en plus des rôles Azure AD globaux. [En savoir plus sur les rôles personnalisés.](custom-roles.md)
 
@@ -69,6 +69,6 @@ Pendant la prévisualisation, Microsoft 365 Defender n’applique pas les contr�
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender](custom-roles.md)
-- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)
+- [Azure AD rôles intégrés](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender pour point de terminaison RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Rôles des sécurité de l’application cloud](/cloud-app-security/manage-admins)

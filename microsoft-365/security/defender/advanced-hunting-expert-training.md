@@ -15,35 +15,33 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0095d66533e664316969ca0f7ea0da62f78f5ed3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154556"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659243"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation spécialisée sur le chasse avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-Améliorez rapidement vos connaissances en matière de repérage avancé avec le suivi _de_ l’adversaire, une série de webcasts pour les nouveaux analystes de sécurité et les observateurs de menaces. La série vous guide à travers les bases jusqu’à la création de vos propres requêtes sophistiquées. Commencez par la première vidéo sur les principes de base ou découvrez des vidéos plus avancées qui conviennent à votre niveau d’expérience.
+Améliorez rapidement vos connaissances en matière de repérage avancé avec le suivi _de_ l’adversaire, une série de webcasts pour les nouveaux analystes de sécurité et les observateurs de menaces. La série vous guide tout au long des principes de base pour créer vos propres requêtes sophistiquées. Commencez par la première vidéo sur les principes de base ou découvrez des vidéos plus avancées qui conviennent à votre niveau d’expérience.
 
 | Titre | Description | Regarder | Requêtes | 
 |--|--|--|--|
 | Épisode 1 : Principes de base du langage KQL | Cet épisode aborde les principes de base du recherche avancée dans Microsoft 365 Defender. Découvrez les données de recherche avancées disponibles, ainsi que la syntaxe et les opérateurs KQL de base. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
-| Épisode 2 : Joints | Poursuivez l’apprentissage des données dans le recherche avancée et la façon de joindre des tables. En savoir plus sur , et joint, et comprendre les nuances de la jointe `inner` `outer` `unique` `semi` Kusto par `innerunique` défaut. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
+| Épisode 2 : Joints | Poursuivez l’apprentissage sur les données dans le recherche avancée et sur la façon de joindre des tables. En savoir plus sur , et joint, et comprendre les nuances de la jointe `inner` `outer` `unique` `semi` Kusto par `innerunique` défaut. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | Épisode 3 : Synthèse, pivotation et visualisation des données | Maintenant que vous avez appris à filtrer, manipuler et joindre des données, il est temps de synthétiser, quantifier, pivoter et visualiser. Cet épisode décrit l’opérateur et divers calculs, tout en introduisant des `summarize` tableaux supplémentaires dans le schéma. Vous allez également apprendre à transformer les jeux de données en graphiques qui peuvent vous aider à extraire des informations. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
-| Épisode 4 : Nous allons faire la recherche ! Application de KQL au suivi des incidents | Dans cet épisode, vous allez apprendre à suivre certaines activités de l’attaquant. Nous utilisons notre compréhension améliorée de Kusto et la recherche avancée pour suivre une attaque. Découvrez les astuces réelles utilisées dans le champ, y compris les stratégies de sécurité en cas de cyber-sécurité et comment les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
+| Épisode 4 : Nous allons faire la recherche ! Application de KQL au suivi des incidents | Dans cet épisode, vous allez apprendre à suivre une activité de l’attaquant. Nous utilisons notre compréhension améliorée de Kusto et le hunting avancé pour suivre une attaque. Découvrez les astuces réelles utilisées dans le champ, y compris les stratégies de sécurité en cas de cyber-sécurité et comment les appliquer à la réponse aux incidents. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
 
 
 Obtenez une formation plus spécialisée avec *L33TSP3AK*: recherche avancée dans Microsoft 365 Defender , série de présentations en ligne pour les analystes cherchant à développer leurs connaissances techniques et leurs compétences pratiques dans la conduite d’enquêtes de sécurité à l’aide du recherche avancée dans Microsoft 365 Defender. 

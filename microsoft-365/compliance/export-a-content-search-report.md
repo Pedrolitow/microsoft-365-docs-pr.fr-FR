@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le Centre de conformité Microsoft 365, vous pouvez exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document contenant des informations détaillées sur chaque élément qui serait exporté.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5bef65905d6a93ab1eba51c7550824baca0e8ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d06cc712e8c81304bbd11a9c93f35e48d279a36e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201180"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668365"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
-Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le Centre de conformité Microsoft 365 (ou à partir d’une recherche associée à un cas de découverte électronique principale), vous pouvez exporter les mêmes rapports qui sont générés lorsque vous exportez les résultats de recherche réels.
+Au lieu d’exporter l’ensemble complet des résultats de recherche à partir d’une recherche de contenu dans le Centre de conformité Microsoft 365 (ou d’une recherche associée à un cas de découverte électronique principale), vous pouvez exporter les mêmes rapports qui sont générés lorsque vous exportez les résultats de recherche réels.
   
 Lorsque vous exportez un rapport, les fichiers de rapport sont téléchargés dans un dossier de votre ordinateur local qui porte le même nom que la recherche de contenu, mais qui est également _ReportsOnly *.* Par exemple, si la recherche de contenu est nommée  *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir Ce qui [est inclus dans le rapport.](#whats-included-in-the-report)
 
@@ -64,7 +64,7 @@ Lorsque vous exportez un rapport, les fichiers de rapport sont téléchargés da
 
 La première étape consiste à préparer le rapport pour le téléchargement vers l’exportation de votre ordinateur. Lorsque vous exportez le rapport, les documents de rapport sont téléchargés vers une stockage Azure dans le cloud Microsoft.
   
-1. Dans la Centre de conformité Microsoft 365, sélectionnez la recherche de contenu à partir de qui vous souhaitez exporter le rapport.
+1. Dans la Centre de conformité Microsoft 365, sélectionnez la recherche de contenu à partir de celle à partir de qui vous souhaitez exporter le rapport.
   
 2. Dans le menu **Actions** en bas de la page de menu volant de recherche, cliquez sur **Exporter le rapport.**
 
@@ -76,7 +76,7 @@ La première étape consiste à préparer le rapport pour le téléchargement ve
   
    ![Exporter les options de sortie.](../media/ExportOutputOptions.png)
 
-    - Tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte uniquement les informations sur les éléments indexés.
+    - **Tous les éléments, à l’exception** de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Cette option exporte uniquement les informations sur les éléments indexés.
   
     - Tous les éléments, y compris ceux qui ont un format non reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
   
@@ -99,6 +99,9 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 ## <a name="step-2-download-the-report"></a>Étape 2 : Télécharger le rapport
 
 L’étape suivante consiste à télécharger le rapport à partir de la stockage Azure sur votre ordinateur local.
+
+> [!NOTE]
+> Le rapport de recherche exporté doit être téléchargé dans un délai de 14 jours après avoir généré le rapport à l’étape 1.
 
 1. Dans la page **Recherche de** contenu de la Centre de conformité Microsoft 365, sélectionnez **l’onglet** Exportation
   
@@ -133,7 +136,7 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
   
 - **Résumé de l’exportation :** Un Excel qui contient un résumé de l’exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont fait l’objet d’une recherche, le nombre de résultats de recherche à partir de chaque emplacement de contenu, le nombre estimé d’éléments, le nombre réel d’éléments à exporter et la taille estimée et réelle des éléments à exporter.
 
-   Si vous incluez des éléments nonndes lors de l’exportation du rapport, le nombre d’éléments nonndex est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous de étiez pour exporter les résultats de recherche) répertoriés dans le rapport récapitulatif d’exportation. En d’autres termes, le nombre total d’éléments qui seraient téléchargés est égal au nombre total de résultats estimés et au nombre total d’éléments nonndex.
+   Si vous incluez des éléments nonndes lors de l’exportation du rapport, le nombre d’éléments nonndex est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous de étiez pour exporter les résultats de recherche) répertoriés dans le rapport récapitulatif d’exportation. En d’autres termes, le nombre total d’éléments à télécharger est égal au nombre total de résultats estimés et au nombre total d’éléments nonndex.
   
 - **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de dédoplication, les messages en double ne sont pas inclus dans le fichier manifeste.
 

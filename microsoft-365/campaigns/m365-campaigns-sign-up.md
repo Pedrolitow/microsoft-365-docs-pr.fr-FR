@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Inscrivez-vous pas à pas pour Microsoft 365 campagnes. Protégez votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1af25933491d4c05d11707f290c584145019602b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156881"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662749"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire aux Microsoft 365 campagnes 
 
@@ -53,14 +53,18 @@ Voici comment terminer votre inscription à l’Microsoft 365 campagnes.
 1. **Dans la page Créer votre ID d’utilisateur**:
     1. Dans **Nom d’utilisateur,** entrez le nom ou l’alias que vous souhaitez pour votre adresse de messagerie. Par exemple, vous souhaitez peut-être être appelé simplement Alice ou Rob. Dans une campagne plus large, AliceC ou AliceChavez peut être plus logique.
     2. Dans **votre entreprise,** entrez le nom de la campagne pour qui vous travaillez. Par exemple, ContosoCampaign. Si vous possédez déjà un domaine, utilisez ce nom ici. 
-    3. Dans **Sélectionner un domaine,** sélectionnez **.onmicrosoft.com** pour l’instant. Nous pouvons vous configurer ultérieurement avec un domaine ou vous aider à Microsoft 365 à un domaine que vous possédez déjà.
+    3. Dans **Sélectionner un domaine,** sélectionnez **.onmicrosoft.com** pour le moment. Nous pouvons vous configurer ultérieurement avec un domaine ou vous aider à Microsoft 365 à un domaine que vous possédez déjà.
+
+       > [!IMPORTANT]
+       > Le nom que vous entrez pour votre domaine .onmicrosoft.com sera utilisé pour toutes vos URL SharePoint et OneDrive et vous ne pourrez peut-être pas le modifier. Assurez-vous que vous avez pris en compte le nom du point de vue de la branding et que vous l’avez correctement orthographé.
+
     4. Créez un mot de passe et **sélectionnez Créer mon compte.**
     > [!NOTE]
     > Si votre campagne ou votre parti ne possède pas de domaine et que vous avez choisi le domaine de votre choix, vous pouvez en acheter un maintenant en le sélectionnant.
 
 4. **Prouvez. Vous l’êtes. Non. R. Robot. page**:
     1. Préparez votre téléphone, puis sélectionnez **M’envoyer** un sms (ou **m’appeler** si vous préférez). Entrez ensuite votre numéro de téléphone. 
-    2. Lorsque vous sélectionnez **M’envoyer un** sms, nous vous envoyons un code de vérification. Sinon, nous vous appellerons avec un code si vous sélectionnez **M’appeler.**
+    2. Lorsque vous sélectionnez **M’envoyer un** texte, nous vous envoyons un code de vérification. Sinon, nous vous appellerons avec un code si vous sélectionnez **M’appeler.**
     3. Entrez le code à partir de votre sms (ou appel) et sélectionnez **Suivant**. Attendez-vous à une courte attente. 
 5. **Où utiliserez-vous cette page**: Entrez les détails de l’emplacement de travail principal de la campagne et le numéro de téléphone. Sélectionnez **Suivant**.
 6. **Comment se fait cette page d’apparence**:
@@ -83,8 +87,8 @@ Si vous avez déjà un abonnement à Microsoft 365 pour les entreprises, par exe
     
     ![Sélectionnez Se connectez dans le coin supérieur droit.](../media/addtoexisting.png)
 3. Sur la page de signature, entrez l’alias d’administrateur de votre abonnement existant, par exemple *Alice@VoteContoso <span></span> .org*, choisissez Suivant, entrez votre mot de passe, puis **connectez-vous.**
-4. Dans la **partie à quoi cela ressemble-t-il ?** Entrez le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
-5. Dans la page **Comment voulez-vous payer ?** entrez votre mode de paiement et choisissez **Commande.**
+4. Sur **l’apparence, entrez** le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
+5. On the **How do you want to pay?** page, enter your payment method and choose Place **order**.
 
 Une fois ces étapes effectuées, vous êtes prêt à attribuer les nouvelles [licences](../admin/manage/assign-licenses-to-users.md) à votre équipe de campagne.
 

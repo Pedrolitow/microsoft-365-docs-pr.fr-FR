@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9eb45699e2224df770752895ca13b17565606c7b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 9b8446ebd646a55e24a8d59d7fa8ac4e003a3a78
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335513"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665158"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Conformité de la communication avec les solutions SIEM
 
 [La conformité des communications](communication-compliance.md) est une solution à risque interne dans Microsoft 365 qui vous permet de minimiser les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions de gestion des événements et des informations de sécurité (SIEM), telles [qu’Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk,](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
-Les organisations ont souvent besoin d’intégrer des alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message choquant à un autre employé et ce message est détecté par un contrôle de stratégie de conformité des communications pour un langage choquant. Ces événements sont suivis dans Microsoft 365 audit (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM de l’organisation à partir d’événements surveillés dans Microsoft 365 Audit associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis examinent et remédient à l’alerte dans la solution de conformité des communications.
+Les organisations ont souvent besoin d’intégrer des alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message choquant à un autre employé et ce message est détecté par un contrôle de stratégie de conformité des communications pour du contenu inapproprié. Ces événements sont suivis dans Microsoft 365 audit (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM de l’organisation à partir d’événements surveillés dans Microsoft 365 Audit associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis examinent et remédient à l’alerte dans la solution de conformité des communications.
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertes de conformité des communications dans Microsoft 365 audit
 
 Toutes les correspondances de stratégie de conformité des communications sont capturées dans Microsoft 365 audit. Les exemples suivants montrent les détails disponibles pour les activités de correspondance de stratégie de conformité des communications sélectionnées :
 
-**Exemple d’entrée de journal d’audit pour une correspondance de modèle de stratégie de langage choquant :**
+**Exemple d’entrée de journal d’audit pour une correspondance de modèle de stratégie de contenu inapproprié :**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -51,7 +51,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Exemple d’une entrée Microsoft 365 journal d’audit pour une stratégie avec correspondance de mot clé personnalisée (type d’informations sensibles personnalisé) :**
+**Exemple d’une entrée Microsoft 365 journal d’audit pour une stratégie avec une correspondance de mot clé personnalisée (type d’informations sensibles personnalisé) :**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -76,9 +76,9 @@ Lorsque vous utilisez Azure Sentinel pour agréger les correspondances de strat�
 
 1. [Intégration à Azure Sentinel](/azure/sentinel/quickstart-onboard). Dans le cadre du processus d’intégration, vous allez configurer vos sources de données.
 2. Configurez le connecteur de données Azure Sentinel [Microsoft Office 365 et](/azure/sentinel/data-connectors-reference#microsoft-office-365) sous la configuration du *connecteur,* sélectionnez Exchange .
-3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
+3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
 
-    *| OfficeActivity | où OfficeWorkload == « Exchange » et Operation == « SupervisionRuleMatch » | trier par TimeGenerated*
+    *| OfficeActivity | où OfficeWorkload == « Exchange » et Operation == « SupervisionRuleMatch » | trier par TimeGenerated*
 
     Pour filtrer un utilisateur spécifique, vous devez utiliser le format de requête suivant :
 
@@ -98,16 +98,16 @@ Pour intégrer des alertes de conformité des communications à Splunk, complét
 
 Pour filtrer les résultats d’une stratégie de conformité des communications spécifique, vous pouvez utiliser le paramètre *SRPolicyMatchDetails.SRPolicyName.*
 
-Par exemple, l’exemple de recherche suivant retournerait des alertes pour les correspondances à une stratégie de conformité des communications nommée *Langage choquant*:
+Par exemple, l’exemple de recherche suivant retournerait des alertes pour les correspondances à une stratégie de conformité des communications nommée *Contenu inapproprié*:
 
-  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Offensive language\>*
+  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
 
 Le tableau suivant présente des exemples de résultats de recherche pour différents types de stratégie :
 
 | Les types de stratégies | Exemple de résultats de recherche |
 | :------------------ | :--------------------------------------- |
-| Stratégie de détection d’une liste de mots clés de type d’informations sensibles personnalisée | { <br> CreationTime : 2021-09-17T16:29:57 <br> ID : 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId : <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus: {"ItemClass »:"IPM. Note »,"CcsiResults »:"leak"} <br> SRPolicyMatchDetails : { [+] } <br> UserId : user1@contoso. OnMicrosoft.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType : 0 <br> Version : 1 <br> Charge de travail : Exchange <br> } |
-| Stratégie de détection d’un langage inapproprié | { <br> CreationTime : 2021-09-17T23:44:35 <br> ID : e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId : <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus: {"ItemClass »:"IPM.Yammer. Message »,"CcsiResults »:"}. <br> SRPolicyMatchDetails : { [+] } <br> UserId : user1@contoso.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType : 0 <br> Version : 1 <br> }  |
+| Stratégie de détection d’une liste de mots clés de type d’informations sensibles personnalisée | { <br> CreationTime : 2021-09-17T16:29:57 <br> ID : 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId : <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus: {"ItemClass »:"IPM. Note »,"CcsiResults »:"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId : user1@contoso. OnMicrosoft.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Version : 1 <br> Charge de travail : Exchange <br> } |
+| Stratégie de détection d’un langage inapproprié | { <br> CreationTime : 2021-09-17T23:44:35 <br> ID : e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId : <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Opération : SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType : 68 <br> ResultStatus: {"ItemClass »:"IPM.Yammer. Message »,"CcsiResults »:"}. <br> SRPolicyMatchDetails: { [+] } <br> UserId : user1@contoso.com <br> UserKey : SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Version : 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurer la conformité des communications avec d’autres solutions SIEM
 

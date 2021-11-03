@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Defender pour les Office 365 avec Microsoft Defender pour le point de terminaison
+title: Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 f1.keywords:
 - NOCSH
 keywords: intégrer, Microsoft Defender, Microsoft Defender pour point de terminaison
@@ -19,19 +19,19 @@ description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0d532f06ce4757e8bca7f337992706480916aba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 289625785baf6184d1da15d4f241283277dd456b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149597"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60660926"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour les Office 365 avec Microsoft Defender pour le point de terminaison
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection)
+[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour endpoint](/windows/security/threat-protection).
 
 L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint peut aider votre équipe des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
@@ -39,10 +39,10 @@ L’image suivante illustre à quoi ressemble l’onglet **Appareils** lorsque l
 
 ![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste d’appareils avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et un a une alerte. Le fait de cliquer sur le lien d’un appareil ouvre sa page dans le [portail Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (anciennement centre de sécurité Microsoft Defender).
+Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et un a une alerte. Le fait de cliquer sur le lien d’un appareil ouvre sa page dans le [portail Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (anciennement Centre de sécurité Microsoft Defender).
 
 > [!TIP]
-> Le Microsoft 365 Defender de l’entreprise remplace le Centre de sécurité Microsoft Defender. Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
+> Le Microsoft 365 Defender de données remplace le Centre de sécurité Microsoft Defender. Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -66,11 +66,11 @@ L’intégration de Microsoft Defender pour Office 365 microsoft Defender pour l
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Connexion MDE.":::
 
-4. Dans le volet de navigation, choisissez **Paramètres**. Dans la **page Paramètres,** choisissez **Points de terminaison**
+4. Dans le volet de navigation, choisissez **Paramètres**. Sur la **page Paramètres,** choisissez **Points de terminaison**
 
 5. Dans la page **Points de terminaison** qui s’ouvre, choisissez **Fonctionnalités avancées.**
 
-6. Faites défiler vers le **bas Office 365 la connexion Threat Intelligence,** puis allumez-la ( ![ Activer/ Activer). ](../../media/scc-toggle-on.png)
+6. Faites défiler vers le **bas Office 365 la connexion Threat Intelligence,** puis allumez-la ( ![ Activer/désactiver. ](../../media/scc-toggle-on.png) ).
 
    Lorsque vous avez terminé, sélectionnez **Enregistrer les préférences.**
 

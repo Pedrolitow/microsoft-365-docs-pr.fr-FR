@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d3c38b3c9ff89bed613413405fec54718ebdd42
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164559"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659983"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
@@ -40,7 +40,7 @@ Utilisation d’un domaine personnalisé comme *rob@contoso. <span> com* with Mi
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Sélectionnez l'expérience qui répond à vos besoins :
 
- **Acheter un nouveau domaine :**
+ **Achetez un nouveau domaine :**
   
 Utilisez Microsoft 365 pour acheter un nouveau domaine : nous allons tout configurer. [Pour en savoir plus.](buy-a-domain-name.md)
   
@@ -51,9 +51,12 @@ Si vous possédez déjà un domaine comme *you@yourcompany. <span> com,* vous po
 > [!TIP]
 > vous ne savez pas si votre domaine est enregistré ? [Obtenir de l'aide pour rechercher votre bureau d'enregistrement de domaines](find-your-domain-registrar.md).
   
- **Utiliser temporairement un domaine par défaut :**
+ **Utilisez un domaine Microsoft pour l’instant :**
   
-Vous pouvez utiliser un domaine par défaut comme  *yourcompany.onmicrosoft. <span> com*  pour se connecter pour l’instant et ajouter un domaine personnalisé ultérieurement. Étant donné que vous ne pouvez pas modifier ou renommer votre domaine par défaut, assurez-vous de choisir le bon ! 
+Vous pouvez utiliser un domaine Microsoft comme  *yourcompany.onmicrosoft. <span> com*  pour se connecter pour l’instant et ajouter un domaine personnalisé ultérieurement. 
+  
+> [!IMPORTANT]
+> Si vous sélectionnez cette option, le nom que vous entrez pour votre domaine .onmicrosoft.com sera utilisé dans toutes vos URL SharePoint et OneDrive url. Il se peut que vous ne soyez pas en mesure de modifier ce nom, donc assurez-vous qu’il est correctement orthographgraphé. 
   
 ## <a name="feeling-stuck"></a>Vous êtes bloqué ?
 

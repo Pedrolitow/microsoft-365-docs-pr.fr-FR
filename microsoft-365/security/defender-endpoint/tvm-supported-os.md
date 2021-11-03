@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d1f3214efa76759fa9e1a17ed4497c476125a096
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552591"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659102"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -54,7 +54,7 @@ Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pri
 Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
 Windows 11|Oui|Oui|Oui|Oui|Oui
 Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
-Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
+Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
 Windows Server 2016|Oui|Oui|Oui|Oui|Oui
 Windows Server 2019|Oui|Oui|Oui|Oui|Oui
 Windows Server 2022|Oui|Oui|Oui|Oui|Oui
@@ -64,6 +64,8 @@ CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
 Ubuntu 16.04 LTS ou une LTS supérieure|Oui|Oui|Oui|Oui|Oui
 Oracle Linux 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
 SUSE Linux Enterprise Server 12 ou supérieur|Oui|Oui|Oui|Oui|Oui
+Android 6.0 ou version supérieure (en prévisualisation)|Oui|Oui|Non pris en charge|Non pris en charge|Non pris en charge
+iOS 12.0 ou version supérieure (en prévisualisation)|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 
 > [!NOTE]
 > Certaines fonctionnalités ne sont pas disponibles pour le système d’exploitation de bas niveau, consultez le portail Microsoft 365 Defender pour plus d’informations sur le système d’exploitation pris en charge.

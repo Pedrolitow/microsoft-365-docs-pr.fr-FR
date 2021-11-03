@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 193bfb6b535ebafa0056c416a55a4c32af53bf84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0699f5b034787882ac85a73f27fa5b040dbccc68
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202630"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659071"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -45,16 +43,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `DeviceId` | string | Identificateur unique de l’appareil dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
-| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
+| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de l’appareil |
+| `OSPlatform` | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
 | `Timestamp` | DateHeure | Date et heure de génération de l’enregistrement |
 | `ConfigurationId` | string | Identificateur unique pour une configuration spécifique |
 | `ConfigurationCategory` | string | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité |
 | `ConfigurationSubcategory` | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
-| `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil |
-| `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
+| `IsApplicable` | valeur booléenne | Indique si la configuration ou la stratégie s’applique à l’appareil |
+| `Context` | chaîne | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
 | `IsExpectedUserImpact` | valeur booléenne | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
 
 ## <a name="related-topics"></a>Sujets associés

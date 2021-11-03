@@ -20,18 +20,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c93f659d284124a33c12cb08109a609778073c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6b7df942ee117c0f23a97516c75d64131e0770d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209068"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698404"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirection des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 - Defender pour Office 365
@@ -39,7 +39,8 @@ ms.locfileid: "60209068"
 Cet article explique comment router des comptes vers Microsoft 365 Defender en activant la redirection automatique à partir de l’ancien Centre de sécurité et conformité Office 365 (protection.office.com), vers Microsoft 365 Defender (security.microsoft.com).
 
 ## <a name="what-to-expect"></a>À quoi s’attendre
-Une fois la redirection automatique activée et active, les utilisateurs accédant aux fonctionnalités liées à la sécurité dans Office 365 Security and Compliance (protection.office.com) sont automatiquement acheminés vers Microsoft 365 Defender ( https://security.microsoft.com) .  
+
+Une fois la redirection automatique activée et active, les utilisateurs accédant aux fonctionnalités liées à la sécurité dans Office 365 Security and Compliance (protection.office.com) sont automatiquement acheminés vers Microsoft 365 Defender (security.microsoft.com).
 
 En savoir plus sur ce qui a changé [: Microsoft Defender pour Office 365 dans Microsoft 365 Defender](microsoft-365-security-center-mdo.md).
 
@@ -57,7 +58,7 @@ Depuis le début de l’octobre 2021, la redirection du portail est désormais e
 
 <!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
 
-1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
+1. Make sure you're a global administrator or have security administrator permissions in Azure Active directory.
 2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
 3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
@@ -67,6 +68,7 @@ Depuis le début de l’octobre 2021, la redirection du portail est désormais e
 > After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.-->
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>Puis-je revenir à l’ancien portail ?
+
 Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vous ne parvenez pas à effectuer via Microsoft 365 Defender, nous voulons en savoir plus à son sujet à l’aide de l’option de commentaires du portail. Si vous avez rencontré des problèmes avec la redirection, n’hésitez pas à nous le faire savoir.
 
 Pour revenir à l’ancien portail :
@@ -86,6 +88,6 @@ Ce paramètre peut être à nouveau activé à tout moment.
 - [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft fournit un SIEM et XDR unifiés pour moderniser les opérations de sécurité](https://www.microsoft.com/security/blog/?p=91813) 
 - [Infographie XDR et SIEM](https://afrait.com/blog/xdr-versus-siem/) 
-- [Nouveau defender](https://afrait.com/blog/the-new-defender/) 
+- [`The New Defender`](https://afrait.com/blog/the-new-defender/) 
 - [À propos Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
 - [Portails de sécurité Microsoft et centres d’administration](portals.md)

@@ -1,6 +1,6 @@
 ---
 title: Signaler et résoudre les problèmes de Règles asr de Microsoft Defender pour les points de terminaison
-description: Cette rubrique décrit comment signaler et dépanner les règles asr de Microsoft Defender for Endpoint
+description: Cette rubrique décrit comment signaler et dépanner les règles de résolution des problèmes de Microsoft Defender pour endpoint ASR
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, microsoft defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -10,25 +10,25 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab8ae8052d2ca68d2fe82dd6ace073a622f8c268
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c54e0fd187adabbba76fd16d4d8f873bc83dc249
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212388"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667969"
 ---
-# <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Signaler et résoudre les problèmes de Microsoft Defender pour les règles DE LAR ATP
+# <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Signaler et résoudre les problèmes de Règles asr de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -44,27 +44,27 @@ Voici une capture d’écran du centre de sécurité Microsoft 365 (sous **Rédu
 
 L’une des fonctionnalités les plus puissantes de Microsoft Defender pour point de terminaison est la recherche avancée. Si vous ne connaissez pas le hunting avancé, recherchez de manière proactive les menaces [avec le chasse avancée.](advanced-hunting-overview.md)
 
-Le hunting avancé est un outil de recherche de menace basé sur une requête (Kusto Query Language) qui vous permet d’explorer jusqu’à 30 jours des données capturées (brutes) collectées par Defender for Endpoint à partir de vos appareils. Grâce à la recherche avancée, vous pouvez inspecter de manière proactive les événements pour rechercher des indicateurs et des entités intéressants. L’accès flexible aux données permet un recherche sans contrainte pour les menaces connues et potentielles.
+Le recherche avancée est un outil de recherche de menaces basé sur une requête (Kusto Query Language) qui vous permet d’explorer jusqu’à 30 jours des données capturées (brutes) collectées par Defender for Endpoint à partir de vos appareils. Grâce à la recherche avancée, vous pouvez inspecter de manière proactive les événements pour rechercher des indicateurs et des entités intéressants. L’accès flexible aux données permet un recherche sans contrainte pour les menaces connues et potentielles.
 
 Grâce à la recherche avancée, il est possible d’extraire des informations sur les règles de la asr, de créer des rapports et d’obtenir des informations détaillées sur le contexte d’un événement d’audit ou de blocage de règle asr donné.
 
-Les événements de règles ASR peuvent être interrogés à partir de la table DeviceEvents de la section de recherche avancée du Microsoft 365 Defender. Par exemple, une requête simple, telle que celle ci-dessous, peut signaler tous les événements qui ont des règles ASR en tant que source de données, au cours des 30 derniers jours, et les synthétisera par le nombre ActionType, qu’il s’agit dans ce cas du nom de code réel de la règle asr.
+Les événements de règles ASR peuvent être interrogés à partir de la table DeviceEvents de la section de recherche avancée du Microsoft 365 Defender. Par exemple, une requête simple, telle que celle ci-dessous, peut signaler tous les événements qui ont des règles de asr en tant que source de données, au cours des 30 derniers jours, et les synthétisera par le nombre ActionType, qui dans ce cas sera le nom de code réel de la règle asr.
 
 :::image type="content" source="images/adv-hunt-querynew.png" alt-text="Requête de recherche avancée.":::
 
 :::image type="content" source="images/adv-hunt-sc-2new.png" lightbox="images/adv-hunt-sc-2new.png" alt-text="écran de recherche avancée.":::
 
-Avec le repérage avancé, vous pouvez mettre en forme les requêtes à votre convenance, afin de voir ce qui se passe, que vous vouliez identifier un pointage sur un ordinateur individuel ou que vous vouliez extraire des informations de l’ensemble de votre environnement.
+Avec le repérage avancé, vous pouvez mettre en forme les requêtes à votre convenance, afin de pouvoir voir ce qui se passe, que vous vouliez épingler quelque chose sur un ordinateur individuel ou que vous vouliez extraire des informations de l’ensemble de votre environnement.
 
 ## <a name="microsoft-defender-for-endpoint-machine-timeline"></a>Chronologie de l’ordinateur Microsoft Defender for Endpoint
 
 Une alternative à la recherche avancée, mais avec une étendue plus étroite, est la chronologie de l’ordinateur Microsoft Defender pour endpoint. Vous pouvez afficher tous les événements collectés d’un appareil, au cours des six derniers mois, dans la Microsoft 365 Defender, en allant dans la liste Ordinateurs, sélectionnez un ordinateur donné, puis cliquez sur l’onglet Chronologie.
 
-Voici une capture d’écran de l’affichage Chronologie de ces événements sur un point de terminaison donné. À partir de cet affichage, vous pouvez filtrer la liste des événements en fonction de n’importe quel groupe d’événements le long du volet droit. Vous pouvez également activer ou désactiver les événements marqués et verbose lors de l’affichage des alertes et du défilement dans la chronologie historique.
+L’image ci-dessous montre une capture d’écran de l’affichage Chronologie de ces événements sur un point de terminaison donné. À partir de cet affichage, vous pouvez filtrer la liste des événements en fonction de n’importe quel groupe d’événements le long du volet droit. Vous pouvez également activer ou désactiver les événements marqués et verbose lors de l’affichage des alertes et du défilement dans la chronologie historique.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender chronologie.":::
 
-## <a name="how-to-troubleshoot-asr-rules"></a>Comment résoudre les problèmes de règles de la asr ?
+## <a name="how-to-troubleshoot-asr-rules"></a>Comment résoudre les problèmes des règles de la asr ?
 
 La première et la plus immédiate consiste à vérifier localement, sur un appareil Windows, les règles asr sont activées (et leur configuration) à l’aide des cmdlets PowerShell.
 
@@ -72,7 +72,7 @@ Voici quelques autres sources d’informations que vous Windows, pour résoudre 
 
 ### <a name="querying-which-rules-are-active"></a>Interrogation des règles actives
 
-L’une des façons les plus simples de déterminer si les règles de asr sont déjà activées consiste à utiliser une cmdlet PowerShell, Get-MpPreference.
+L’une des façons les plus simples de déterminer si les règles de la astérence sont déjà activées consiste à utiliser une cmdlet PowerShell, Get-MpPreference.
 
 Voici un exemple :
 
@@ -104,11 +104,11 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 Les événements de règle asr peuvent être vus dans Windows Defender journal.
 
-Pour y accéder, ouvrez Windows’observateur d’événements et accédez aux journaux des **applications** et des services \> **microsoft** \> **Windows** \> **Windows Defender** \> **opérationnels.**
+Pour y accéder, ouvrez Windows’observateur d’événements et accédez aux journaux des **applications** et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **opérationnels.**
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr de l’observateur d’événements.":::
 
-## <a name="microsoft-defender-malware-protection-logs"></a>Journaux de protection contre les programmes malveillants Microsoft Defender
+## <a name="microsoft-defender-antimalware-protection-logs"></a>Journaux de protection anti-programme malveillant Microsoft Defender
 
 Vous pouvez également afficher les événements de règle via Antivirus Microsoft Defender’outil en ligne de commande dédié, appelé , qui peut être utilisé pour gérer et configurer, et automatiser les tâches si `*mpcmdrun.exe*` nécessaire.
 
@@ -123,5 +123,5 @@ Extrayez cette archive et de nombreux fichiers seront disponibles à des fins de
 Les fichiers les plus pertinents sont les suivants :
 
 - **MPOperationalEvents.txt**: ce fichier contient le même niveau d’informations que celui de l’Observateur d’événements Windows Defender journal opérationnel de l’utilisateur.
-- **MPRegistry.txt**: dans ce fichier, vous pouvez analyser toutes les configurations de Windows Defender, à partir du moment où les journaux de support ont été capturés.
+- **MPRegistry.txt**: dans ce fichier, vous pouvez analyser toutes les configurations Windows Defender, à partir du moment où les journaux de support ont été capturés.
 - **MPLog.txt**: ce journal contient des informations plus détaillées sur toutes les actions/opérations du Windows Defender.

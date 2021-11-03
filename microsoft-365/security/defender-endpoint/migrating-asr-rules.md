@@ -10,21 +10,21 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 559b0689a4bf6c5507e37ad228894781f1bccf56
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8f9f79b5db7a29e908838bacdce798609a9f2422
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555948"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659555"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 
-Cet article vous aide à ma cartographier des règles communes à Microsoft Defender pour endpoint.
+Cet article vous aide à ma map point de terminaison des règles communes à Microsoft Defender.
 
 ## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>Scénarios lors de la migration d’un produit HIPS tiers vers des règles asr
 

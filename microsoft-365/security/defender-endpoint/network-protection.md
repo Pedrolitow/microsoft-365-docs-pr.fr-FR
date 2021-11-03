@@ -17,18 +17,18 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c6540847d6861b5d4f07d3b542afe8ceb3fcf413
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a00fa0c255156f17f579889e8a399c52d126a6f8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553452"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661597"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -63,7 +63,7 @@ Après avoir activé les services, vous devrez peut-être configurer votre rése
 
 ## <a name="configuring-network-protection"></a>Configuration de la protection réseau
 
-Pour plus d’informations sur la façon d’activer la protection réseau, voir **[Activer la protection réseau.](enable-network-protection.md)** Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
+Pour plus d’informations sur la façon d’activer la protection réseau, voir **[Activer la protection réseau.](enable-network-protection.md)** Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.
 
 ## <a name="viewing-network-protection-events"></a>Affichage des événements de protection réseau
 
@@ -86,7 +86,7 @@ DeviceNetworkEvents
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 
-Vous pouvez consulter le journal Windows événements pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
+Vous pouvez consulter le journal des Windows pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
 
 1. [Copiez le XML directement.](event-views.md)
 
@@ -115,9 +115,9 @@ Voici un exemple de fonctionnement :
 
 2. La négociation triple via TCP/IP commence. Avant qu’elle ne se termine, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple se termine, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
 
-3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec l’actionType de `ConnectionSuccess` .
+3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec le type d’action `ConnectionSuccess` de .
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considérations à prendre en compte Windows de bureau virtuel s’exécutant Windows 10 Entreprise multisess session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considérations à prendre en compte Windows de bureau virtuel exécutant Windows 10 Entreprise multisess session
 
 En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les points suivants à l’esprit :
 
@@ -133,7 +133,7 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les po
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection du réseau
 
-Pour Windows 10 Entreprise multisession 1909 et plus, utilisé dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
+Pour Windows 10 Entreprise multisession 1909 et plus, utilisée dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau et](enable-network-protection.md) suivez les instructions pour appliquer votre stratégie.
 
@@ -141,7 +141,7 @@ Pour Windows 10 Entreprise multisession 1909 et plus, utilisé dans Windows Virt
 
 ## <a name="network-protection-troubleshooting"></a>Résolution des problèmes de protection du réseau
 
-En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service Cloud. Pour résoudre le problème de connectivité, les clients titulaires d’une licence E5 doivent configurer l’une des clés de Registre Defender suivantes :
+En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft peut ne pas être en mesure de détecter les paramètres proxy du système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service Cloud. Pour résoudre le problème de connectivité, les clients titulaires d’une licence E5 doivent configurer l’une des clés de Registre suivantes :
 
 ```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f

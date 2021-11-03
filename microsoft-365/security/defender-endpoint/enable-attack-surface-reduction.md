@@ -17,16 +17,16 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 59208058dce036da06d5378efc2539b8f454dead
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: b741844819d98a394eba969451a59e7b654fcc72
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585908"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667319"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -34,9 +34,9 @@ ms.locfileid: "60585908"
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
+[Les règles de réduction de la surface d’attaque](attack-surface-reduction.md) (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -56,7 +56,7 @@ Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la 
 - [Protection de la distribution cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
 - Windows 10 Entreprise Licence E5 ou E3
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender for Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender pour Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
 
 Chaque règle asr contient l’un des quatre paramètres ci-après :
 
@@ -68,10 +68,10 @@ Chaque règle asr contient l’un des quatre paramètres ci-après :
 > [!IMPORTANT]
 > Actuellement, le mode avertissement n’est pas pris en charge pour trois règles de récupération automatique lorsque vous configurez des règles asr dans Microsoft Endpoint Manager (MEM). Pour en savoir plus, consultez [les cas où le mode d’avertissement n’est pas pris en charge.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence SKU de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la assurance sont déclenchées (par exemple, le forwarding d’événement).
+Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md) (Defender pour endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la asr sont déclenchées (par exemple, le forwarding d’événement).
 
 > [!TIP]
-> Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+> Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Vous pouvez activer les règles de réduction de la surface d’attaque à l’aide de l’une de ces méthodes :
 
@@ -85,13 +85,13 @@ Enterprise de niveau supérieur tel qu’Intune ou Microsoft Endpoint Manager es
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>Exclure des fichiers et des dossiers des règles de la asr
 
-Vous pouvez exclure les fichiers et dossiers de l’évaluation par la plupart des règles de réduction de la surface d’attaque. Cela signifie que même si une règle de astérité détermine que le fichier ou le dossier contient un comportement malveillant, il ne bloquera pas l’exécution du fichier. Cela peut potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils.
+Vous pouvez exclure les fichiers et dossiers de l’évaluation par la plupart des règles de réduction de la surface d’attaque. Cela signifie que même si une règle asr détermine que le fichier ou le dossier contient un comportement malveillant, il ne bloquera pas l’exécution du fichier. Cela peut potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils.
 
 Vous pouvez également exclure les règles asr du déclenchement en fonction des hages de certificat et de fichier en permettant les indicateurs de certificat et de fichier Defender for Endpoint spécifiés. (Voir [Gérer les indicateurs.)](manage-indicators.md)
 
 > [!IMPORTANT]
 > L’exclusion de fichiers ou de dossiers peut réduire considérablement la protection fournie par les règles de réduction de la réduction du nombre de messages. Les fichiers exclus sont autorisés à s’exécuter et aucun rapport ou événement n’est enregistré.
-> Si les règles DER détectent des fichiers qui, selon vous, ne doivent pas être détectés, vous devez d’abord utiliser le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
+> Si les règles de la récupération automatique des données détectent des fichiers qui, selon vous, ne devraient pas être détectés, vous devez d’abord utiliser le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
 
 Vous pouvez spécifier des fichiers ou des dossiers individuels (à l’aide de chemins d’accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier les règles à laquelle les exclusions s’appliquent. Une exclusion est appliquée uniquement au démarrage de l’application ou du service exclu. Par exemple, si vous ajoutez une exclusion pour un service de mise à jour déjà en cours d’exécution, le service de mise à jour continue à déclencher des événements jusqu’à ce que le service soit arrêté et redémarré.
 
@@ -106,18 +106,18 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 
 2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez **Réduction de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
-3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles de la asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
+3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
 4. Sélectionnez **OK** dans les trois volets de configuration. Sélectionnez **Ensuite Créer** si vous créez un fichier de protection de point de terminaison ou **Enregistrer** si vous modifiez un fichier existant.
 
 **Stratégie de sécurité des points de terminaison**
-1. Sélectionnez **Réduction de la** surface \> **d’attaque de sécurité du point de terminaison.** Choisissez une règle de RSA existante ou créez-en une nouvelle. Pour en créer une nouvelle, **sélectionnez Créer** une stratégie et entrez des informations pour ce profil. Pour le **type de profil,** sélectionnez **Règles de réduction de la surface d’attaque.** Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
+1. Sélectionnez **Réduction de la** surface d’attaque de sécurité du point de \> **terminaison.** Choisissez une règle de RSA existante ou créez-en une nouvelle. Pour en créer une nouvelle, sélectionnez **Créer** une stratégie et entrez des informations pour ce profil. Pour le **type de profil,** sélectionnez **Règles de réduction de la surface d’attaque.** Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
-2. Dans le **volet Paramètres de configuration,** sélectionnez Réduction de **la surface** d’attaque, puis sélectionnez le paramètre souhaité pour chaque règle de réduction de la surface d’attaque.
+2. Dans le **volet Paramètres de configuration,** sélectionnez Réduction de la **surface** d’attaque, puis sélectionnez le paramètre souhaité pour chaque règle de réduction de la surface d’attaque.
 
-3. Sous Liste des **dossiers** supplémentaires qui doivent être protégés, Liste des applications qui ont accès aux dossiers protégés et Exclure des fichiers et des **chemins** d’accès des règles de réduction de la **surface** d’attaque, entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles de la asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
+3. Sous Liste des **dossiers** supplémentaires qui doivent être protégés, Liste des applications qui ont accès aux dossiers protégés et Exclure des fichiers et des **chemins** d’accès des règles de réduction de la **surface** d’attaque, entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
@@ -127,7 +127,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 
 Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer des règles asr personnalisées. La procédure suivante utilise la règle Bloquer l’abus des pilotes [signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
 
-1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez sur **Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
+1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez **sur Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
 
    > [!div class="mx-imgBorder"]
    > ![MEM Create Profile.](images/mem01-create-profile.png)
@@ -142,12 +142,12 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
 
-3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Principes de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
+3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
    > [!div class="mx-imgBorder"]
    > ![Attributs de base MEM.](images/mem03-1-basics.png)
 
-4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour l’OMA-URI Paramètres, cliquez sur **Ajouter.** Deux options s’affichent maintenant **: Ajouter** et **exporter.**
+4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour l’OMA-URI Paramètres, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
 
    > [!div class="mx-imgBorder"]
    > ![Paramètres de configuration MEM.](images/mem04-2-configuration-settings.png)
@@ -156,9 +156,13 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
    - Dans **Nom,** tapez un nom pour la règle.
    - Dans **Description,** tapez une brève description.
-  - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cette rubrique pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID des règles de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
+   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cette rubrique pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID des règles de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
    - Dans **type de données,** sélectionnez **Chaîne**.
-   - Dans **Value**, tapez ou collez la valeur GUID, le signe et la valeur State sans \= espaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+   - Dans **Value**, tapez ou collez la valeur GUID, le signe et la valeur State sans \= espaces (_GUID=StateValue_). Où :
+     - 0 : Désactiver (désactiver la règle asr)
+     - 1 : Bloquer (activer la règle asr)
+     - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
+     - 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage)
 
    > [!div class="mx-imgBorder"]
    > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
@@ -218,7 +222,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 - 0 : Désactiver (désactiver la règle asr)
 - 1 : Bloquer (activer la règle asr)
 - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
-- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le blocage). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
+- 6 : Avertir (activer la règle asr mais autoriser l’utilisateur final à contourner le bloc). Le mode Avertissement est disponible pour la plupart des règles de la asr.
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
@@ -241,7 +245,7 @@ Exemple :
 
 4. Choisissez les règles qui bloqueront ou auditeront les actions et sélectionnez **Suivant.**
 
-5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
+5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -256,9 +260,7 @@ Exemple :
 
 3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** \>  \> Protection contre les attaques Microsoft Defender réduction de la surface  \> **d’attaque.**
 
-4. Sélectionnez **Configurer les règles de réduction de la surface d’attaque** et **sélectionnez Activé.** Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options.
-
-   Sélectionnez **Afficher...** et entrez l’ID de règle dans  la colonne Nom de la valeur et l’état choisi dans la colonne Valeur comme suit : 
+4. Sélectionnez **Configurer les règles de réduction de la surface d’attaque** et **sélectionnez Activé.** Vous pouvez ensuite définir l’état individuel de chaque règle dans la section Options. Sélectionnez **Afficher...** et entrez l’ID de règle dans  la colonne Nom de la valeur et l’état choisi dans la colonne Valeur comme suit : 
 
    - 0 : Désactiver (désactiver la règle asr)
    - 1 : Bloquer (activer la règle asr)
@@ -276,6 +278,12 @@ Exemple :
 
 > [!WARNING]
 > Si vous gérez vos ordinateurs et appareils avec Intune, Configuration Manager ou une autre plateforme de gestion au niveau de l’entreprise, le logiciel de gestion risque d’éviter les paramètres PowerShell en conflit au démarrage. Pour permettre aux utilisateurs de définir la valeur à l’aide de PowerShell, utilisez l’option « Défini par l’utilisateur » pour la règle dans la plateforme de gestion.
+> « Défini par l’utilisateur » permet à un utilisateur administrateur local de configurer la règle.
+> Le paramètre d’option Défini par l’utilisateur est illustré dans la figure suivante.
+
+> [!div class="mx-imgBorder"]
+> ![ASR enable "User Defined"](images/asr-user-defined.png)
+
 
 1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur.**
 
@@ -285,13 +293,13 @@ Exemple :
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
     ```
 
-    Pour activer les règles asr en mode audit, utilisez l’cmdlet suivante :
+    Pour activer les règles asr en mode audit, utilisez la cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
     ```
 
-    Pour activer les règles asr en mode d’avertissement, utilisez l';
+    Pour activer les règles de la asr en mode d’avertissement, utilisez l';
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
@@ -303,7 +311,7 @@ Exemple :
    Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
-    Pour désactiver les règles de asr, utilisez l’cmdlet suivante :
+    Pour désactiver les règles de la asr, utilisez la cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled

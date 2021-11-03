@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159437"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668023"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -55,10 +55,10 @@ Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune 
 
 La plupart des solutions mdm modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.
 
-Toutefois, vous pouvez déployer Defender sans la dernière condition requise de la liste précédente :
+Toutefois, vous pouvez déployer Defender pour endpoint sans la dernière condition requise de la liste précédente :
 
-- Vous ne pourrez pas collecter l’état de manière centralisée
-- Si vous décidez de désinstaller Defender, vous devez vous connecter localement à l’appareil client en tant qu’administrateur.
+- Vous ne pourrez pas collecter l’état de manière centralisée.
+- Si vous décidez de désinstaller Defender pour endpoint, vous devez vous connecter localement à l’appareil client en tant qu’administrateur.
 
 ## <a name="deployment"></a>Déploiement
 
@@ -81,7 +81,7 @@ Votre système peut prendre en charge une liste de propriétés arbitraire au fo
 Vous pouvez également avoir besoin de convertir d’abord la liste des propriétés dans un autre format.
 
 En règle générale, votre profil personnalisé possède un ID, un nom ou un attribut de domaine. Vous devez utiliser exactement « com.microsoft.wdav.atp » pour cette valeur.
-GDM l’utilise pour déployer le fichier de paramètres dans **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** sur un appareil client, et Defender utilise ce fichier pour charger les informations d’intégration.
+GDM l’utilise pour déployer le fichier de paramètres dans **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** sur un appareil client, et Defender for Endpoint utilise ce fichier pour charger les informations d’intégration.
 
 ### <a name="kernel-extension-policy"></a>Stratégie d’extension du noyau
 

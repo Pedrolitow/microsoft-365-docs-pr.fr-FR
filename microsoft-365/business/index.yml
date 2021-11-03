@@ -25,12 +25,12 @@ productDirectory:
       url: 'https://aka.ms/SMBSecurityKit'
     - title: Quelles sont les nouveautés ?
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: La gestion antivirus et l’impression universelle sont désormais disponibles dans Microsoft 365 Business Premium.
-      url: 'https://aka.ms/M365BPQ1Update'
+      summary: 'Bientôt disponible en prévisualisation : Microsoft Defender entreprise, une solution de point de terminaison de qualité professionnelle pour les entreprises de moins de 300 employés.'
+      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: Participer à la série de webinaires partenaires
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Accélérez la croissance de votre activité grâce aux services gérés avec Microsoft 365 Business Premium.
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: En savoir plus sur Microsoft Defender pour les entreprises (une nouvelle solution de sécurité de point de terminaison) et ses avantages et valeurs partenaires.
+      url: 'https://aka.ms/DefenderforBusinessWebinar'
 conceptualContent:
   items:
     - title: Qu’est-ce que Microsoft 365 Business Premium ?

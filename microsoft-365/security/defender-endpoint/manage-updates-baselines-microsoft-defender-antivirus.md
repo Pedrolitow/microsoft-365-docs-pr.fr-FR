@@ -1,7 +1,7 @@
 ---
 title: Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 description: Gérer la façon dont Antivirus Microsoft Defender reçoit les mises à jour de protection et de produit.
-keywords: mises à jour, bases de référence de sécurité, protection, planifier des mises à jour, forcer les mises à jour, mises à jour mobiles, wsus
+keywords: mises à jour, bases de référence de sécurité, protection, planification des mises à jour, forcer les mises à jour, mises à jour mobiles, wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,18 +16,18 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e6b552bb108785f9f727084609f7a8c873ce6e2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: db11cc6940a26efb03ef906d0ac09e52986969eb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556351"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668011"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
@@ -73,20 +73,39 @@ Pour plus d’informations, [voir Gérer les sources pour les mises à jour Anti
 > - Les mises à jour mensuelles sont publiées par phases, ce qui entraîne la mise à jour de plusieurs packages dans vos services de mise à jour [de serveur Window.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 > - Cet article répertorie les modifications incluses dans le canal de publication large. [Consultez la dernière version de canal étendu ici.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 > - Pour en savoir plus sur le processus de déploiement progressif et pour plus d’informations sur la prochaine version, voir Gérer le processus de déploiement progressif pour les mises à jour [de Microsoft Defender.](manage-gradual-rollout.md)
-> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft.
-> - Si vous recherchez une liste de processus Microsoft Defender, téléchargez le manuel **[mde-urls,](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** puis sélectionnez la feuille de calcul **Processus de Microsoft Defender.** Le workbook mde-urls répertorie également les services et les URL associées à qui votre réseau doit être en mesure de se connecter, comme décrit dans Activer l’accès aux URL du service Microsoft Defender for Endpoint dans le serveur [proxy.](configure-proxy-internet.md)
+> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour de l’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft.
+> - Si vous recherchez une liste de processus Microsoft Defender, téléchargez le manuel **[mde-urls,](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** puis sélectionnez la feuille de calcul **Processus de Microsoft Defender.** Le workbook mde-urls répertorie également les services et les URL associées à qui votre réseau doit être en mesure de se connecter, comme décrit dans Activer l’accès aux URL du service Microsoft Defender pour point de terminaison dans le serveur [proxy.](configure-proxy-internet.md)
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
-Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de la plateforme, voir [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de plateforme, voir Mise à [jour Windows Defender plateforme anti-programme malveillant.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
 
 Toutes nos mises à jour contiennent
 
 - améliorations des performances ;
-- améliorations en matière de serviceabilité ; et
+- améliorations de la serviceabilité ; et
 - améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
+<summary> Octobre-2021 (plateforme : 4.18.xxxx.x| Moteur : 1.1.18700.4)</summary>
+
+&ensp;Version de mise à jour des informations de sécurité **: 1.353.3.0**<br/>
+&ensp;Publication : **28 octobre 2021**<br/>
+&ensp;Plateforme : **4.18.xxxx.x**<br/>
+&ensp;Moteur : **1.1.18700.4**<br/>
+&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+
+Version du moteur : 1.1.18700.4 Version de mise à jour de l’intelligence de sécurité : 1.353.3.0
+
+### <a name="whats-new"></a>Nouveautés
+- Améliorations de la couverture du trafic réseau FTP
+- Correction pour réduire l’utilisation de l’UC Microsoft Defender sur le serveur Exchange avec Windows Server 2016
+- Améliorations de la résilience de falsification du service Defender
+
+### <a name="known-issues"></a>Problèmes connus
+Aucun problème connu
+<br/>
+</details><details>
 <summary> Septembre-2021 (plateforme : 4.18.2109.6 | Moteur : 1.1.18600.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.351.7.0**<br/>
@@ -95,7 +114,7 @@ Toutes nos mises à jour contiennent
 &ensp;Moteur : **1.1.18600.4**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
-Version du moteur : 1.1.18600.4 Version de mise à jour de l’intelligence de sécurité : mise à jour
+Version du moteur : 1.1.18600.4 Version de mise à jour de l’intelligence de sécurité : 1.351.7.0
 
 ### <a name="whats-new"></a>Nouveautés
 - Nouveau délai pour les mises à jour Antivirus Microsoft Defender moteur et de plateforme. Les appareils qui optent pour cette sonnerie recevront des mises à jour avec un délai de 48 heures. La nouvelle sonnerie de délai est suggérée pour les environnements critiques uniquement. Voir [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender.](manage-gradual-rollout.md)
@@ -124,14 +143,21 @@ Aucun problème connu
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
+
+Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary> Juillet-2021 (plateforme : 4.18.2107.4 | Moteur : 1.1.18400.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.345.13.0**<br/>
 &ensp;Publication : **5 août 2021**<br/>
 &ensp;Plateforme : **4.18.2107.4**<br/>
 &ensp;Moteur : **1.1.18400.4**<br/>
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
 ### <a name="whats-new"></a>Nouveautés
 - Prise en charge des contrôles d’appareil ajoutée Windows appareils portables
@@ -141,13 +167,9 @@ Aucun problème connu
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
+
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
-
-Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
-<details>
+</details><details>
 <summary> Juin-2021 (plateforme : 4.18.2106.5 | Moteur : 1.1.18300.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.343.17.0**<br/>
@@ -283,7 +305,7 @@ Aucun problème connu
 
 - Nouvelles descriptions pour les catégories de menaces spéciales
 - Fonctionnalités d’émulation améliorées
-- Fonctionnalités améliorées d’autoriser/bloquer l’adresse hôte
+- Fonctionnalités améliorées d’autoriser/de bloquer l’adresse hôte
 - Nouvelle option dans le programme CSP Defender pour ignorer la fusion des exclusions des utilisateurs locaux
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -309,7 +331,7 @@ Aucun problème connu
    - Protection du réseau sur Server 2019
    - Exclusions d’adresses IP pour la protection du réseau
 - Meilleure visibilité des mesures du TPM
-- Amélioration de Office module VBA
+- Amélioration de l Office de module VBA
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -458,7 +480,7 @@ Aucun problème connu
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**<br/>
 &ensp;Publication : **25 février 2020**<br/>
-&ensp;Plateforme/Client : **-**<br/>
+&ensp;Plateforme/client : **-**<br/>
 &ensp;Moteur : **1.1.16800.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
@@ -486,7 +508,7 @@ Moteur : **1.1.16700.2**<br/>
 - Prise en charge des mises à jour de plateforme lorsque le TMP est redirigé vers le chemin d’accès réseau
 - Les versions de plateforme et de moteur sont [ajoutées à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
-- Correction du problème de 4.18.1911.3
+- Correction du hang 4.18.1911.3
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -498,7 +520,7 @@ Moteur : **1.1.16700.2**<br/>
 > - a un indicateur de redémarrage pour les systèmes qui ont des problèmes en suspension ;
 > - est re-publiée en avril 2020 et ne sera pas recalée par les mises à jour plus nouvelles pour conserver la disponibilité future ;
 > - est classée en tant que mise à jour en raison de l’exigence de redémarrage ; et
-> - est uniquement proposé avec [la mise à jour Windows.](https://support.microsoft.com/help/4027667/windows-10-update)
+> - est uniquement proposée avec [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
 <br/>
 </details>
 
@@ -566,15 +588,15 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2110.01</summary>
 
 &ensp;Version du package **: 1.1.2110.01**<br/>
-&ensp;Version de plateforme **: 4.18.2109.6**<br/>
+&ensp;Version de la plateforme **: 4.18.2109.6**<br/>
 &ensp;Version du moteur **: 1.1.18500.10**<br/>
 &ensp;Version de signature **: 1.349.2103.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -585,10 +607,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -599,10 +621,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -613,10 +635,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -627,10 +649,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -641,38 +663,38 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
 
 &ensp;Version du package **: 1.1.2104.01**<br/>
-&ensp;Version de plateforme **: 4.18.2102.4**<br/>
+&ensp;Version de la plateforme **: 4.18.2102.4**<br/>
 &ensp;Version du moteur **: 1.1.18000.5**<br/>
 &ensp;Version de signature **: 1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
 
 &ensp;Version du package **: 1.1.2103.01**<br/>
-&ensp;Version de plateforme **: 4.18.2101.9**<br/>
+&ensp;Version de la plateforme **: 4.18.2101.9**<br/>
 &ensp;Version du moteur **: 1.1.17800.5**<br/>
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -683,10 +705,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -697,35 +719,35 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
 
 &ensp;Version du package **: 1.1.2012.01**<br/>
-&ensp;Version de plateforme **: 4.18.2010.7**<br/>
+&ensp;Version de la plateforme **: 4.18.2010.7**<br/>
 &ensp;Version du moteur **: 1.1.17600.5**<br/>
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
 
 &ensp;Version du package **: 1.1.2011.02**<br/>
-&ensp;Version de plateforme **: 4.18.2010.7**<br/>
+&ensp;Version de la plateforme **: 4.18.2010.7**<br/>
 &ensp;Version du moteur **: 1.1.17600.5**<br/>
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées
@@ -739,21 +761,21 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
 
 &ensp;Version du package **: 1.1.2011.01**<br/>
-&ensp;Version de plateforme **: 4.18.2008.9**<br/>
+&ensp;Version de la plateforme **: 4.18.2008.9**<br/>
 &ensp;Version du moteur **: 1.1.17400.5**<br/>
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.
@@ -766,9 +788,9 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 |:---|:---|
 |[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour pour Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 images d’installation.  |
 |[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de protection peuvent être mises à jour via de nombreuses sources. |
-|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
+|[Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
 |[Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un point de terminaison manque une mise à jour ou une analyse programmée, vous pouvez forcer une mise à jour ou une analyse la prochaine fois qu’un utilisateur se signe. |
 |[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) | Vous pouvez définir des mises à jour de protection à télécharger au démarrage ou après certains événements de protection livrés par le cloud. |
 |[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Vous pouvez spécifier des paramètres, par exemple si des mises à jour doivent être mises à jour sur l’alimentation de la batterie, qui sont particulièrement utiles pour les appareils mobiles et les ordinateurs virtuels. |
-| [Mise à jour de Microsoft Defender pour point de terminaison PEPT capteur](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Vous pouvez mettre à jour le capteur PEPT (MsSense.exe) inclus dans le nouveau package de solution unifiée Microsoft Defender for Endpoint publié en 2021.   |
+| [Mise à jour de Microsoft Defender pour le point de terminaison PEPT capteur](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Vous pouvez mettre à jour le capteur PEPT (MsSense.exe) inclus dans le nouveau package de solution unifiée Microsoft Defender for Endpoint publié en 2021.   |
 

@@ -22,31 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f67d276465bc23306446bc80f1c9e77eaa098b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06b181f3719d9b674098bf5da36938ea181a0dc1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206576"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658061"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Étape 2. Effectuer une évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure De confiance zéro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Une fois que les principales fonctions de l’équipe du Centre des opérations de sécurité (SOC) sont définies, l’étape suivante pour votre organisation consiste à préparer l’adoption de Microsoft Defender par le biais d’une approche de confiance [zéro](/security/zero-trust/). L’adoption peut vous aider à déterminer les conditions requises pour le déploiement d’Microsoft 365 Defender à l’aide de pratiques modernes de pointe du secteur, tout en évaluant les fonctionnalités de Defender par rapport à votre environnement. 
+Une fois que les principales fonctions de l’équipe du Centre des opérations de sécurité (SOC) sont définies, l’étape suivante pour votre organisation consiste à préparer l’adoption de Microsoft 365 Defender par le biais d’une approche de confiance [zéro](/security/zero-trust/). L’adoption peut vous aider à déterminer les conditions requises pour le déploiement d’Microsoft 365 Defender à l’aide de pratiques modernes de pointe du secteur, tout en évaluant les fonctionnalités de Microsoft 365 Defender par rapport à votre environnement.
 
-Cette approche repose sur une base solide de protections et inclut des domaines clés tels que l’identité, les points de terminaison (appareils), les données, les applications, l’infrastructure et la mise en réseau. L’équipe d’évaluation de la préparation déterminera les domaines où une exigence fondamentale pour l’activation de Microsoft 365 Defender n’a pas encore été satisfaite et devra être mise à jour. 
+Cette approche repose sur une base solide de protections et inclut des domaines clés tels que l’identité, les points de terminaison (appareils), les données, les applications, l’infrastructure et la mise en réseau. L’équipe d’évaluation de la préparation déterminera les domaines où une exigence fondamentale pour l’activation de Microsoft 365 Defender n’a pas encore été satisfaite et devra être mise à jour.
 
 Voici quelques-uns des éléments qui devront être corrigés pour que la SOC optimise pleinement les processus dans le SOC :
 
-- **Identité :**     Domaines AD DS (Active Directory Domain Services) locaux hérités, aucun plan mfa, aucun inventaire de comptes privilégiés, etc.
-- **Points de terminaison (appareils) :**  Grand nombre de systèmes d’exploitation hérités, inventaire limité des appareils, etc.
-- **Données et applications :**    Absence de normes de gouvernance des données, pas d’inventaire des applications personnalisées qui ne s’intègrent pas.
-- **Infrastructure :**   Grand nombre de licences SaaS non autorisées, aucune sécurité de conteneur, etc.
-- **Mise en réseau :**   Problèmes de performances dus à une bande passante faible, à un réseau plat, à des problèmes de sécurité sans fil, etc.
+- **Identité :** Domaines AD DS (Active Directory Domain Services) locaux hérités, aucun plan mfa, aucun inventaire de comptes privilégiés, etc.
+- **Points de terminaison (appareils) :** Grand nombre de systèmes d’exploitation hérités, inventaire limité des appareils, etc.
+- **Données et applications :**  Absence de normes de gouvernance des données, pas d’inventaire des applications personnalisées qui ne s’intègrent pas.
+- **Infrastructure :** Grand nombre de licences SaaS non autorisées, aucune sécurité de conteneur, etc.
+- **Mise en réseau :** Problèmes de performances dus à une bande passante faible, à un réseau plat, à des problèmes de sécurité sans fil, etc.
 
 Les organisations doivent également suivre [l’Microsoft 365 Defender](m365d-enable.md) l’article pour capturer l’ensemble de référence des exigences de configuration. Ces étapes déterminent à leur tour les activités de correction que les équipes SOC devront effectuer pour développer efficacement des cas d’utilisation. 
 

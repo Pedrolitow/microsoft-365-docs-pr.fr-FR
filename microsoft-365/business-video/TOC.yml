@@ -147,8 +147,6 @@
           href: anti-malware.md
         - name: Créer des règles pour vos e-mails pour les rançongiciels
           href: prevent-ransom-in-email.md
-        - name: Arrêter le transfert automatique d’e-mails
-          href: stop-email-auto-forward.md
         - name: Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
           href: setup-anti-phishing.md
         - name: Gérer les pièces jointes fiables
