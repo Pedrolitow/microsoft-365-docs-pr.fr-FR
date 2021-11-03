@@ -38,6 +38,8 @@
       href: apply-a-retention-label-to-a-model.md
     - name: Appliquer une étiquette de confidentialité
       href: apply-a-sensitivity-label-to-a-model.md
+    - name: Rechercher des métadonnées dans les bibliothèques
+      href: metadata-search.md
     - name: Analyse de l’utilisation des modèles
       href: model-usage-analytics.md
     - name: Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur

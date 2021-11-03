@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 37838e91003e53df9f7ff3a3318282305236240a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 00844614ea14b668fc3167f20ec2747d995aed17
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192090"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703408"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -115,14 +115,11 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage intégré à Office et autres solutions d’étiquetage
 
-Le client d’étiquetage intégré à Office télécharge les étiquettes de confidentialité et les paramètres de stratégie d’étiquette de confidentialité à partir des Centres d’administration suivants :
+Le client d’étiquetage intégré à Office télécharge les étiquettes de confidentialité et les paramètres de stratégie d’étiquette de confidentialité à partir du Centre de conformité Microsoft 365. 
 
-- Centre de conformité Microsoft 365
-- Centre de sécurité et conformité Office 365 (portail d’administration plus ancien)
+Pour utiliser le client d’étiquetage intégré Office, vous devez disposer d’une ou de plusieurs [stratégies d’étiquette publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) aux utilisateurs à partir du Centre de conformité, et d’une [version prise en charge d’Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-Pour utiliser le client d’étiquetages intégré à Office, une ou plusieurs [stratégies d’étiquette doivent être publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) auprès des utilisateurs de l’un des Centres d’administration répertoriés et d’une [version prise en charge d’Office](#support-for-sensitivity-label-capabilities-in-apps).
-
-Si ces deux conditions sont remplies mais que vous devez désactiver le client d’étiquetage intégré à Office, utilisez le paramètre de stratégie de groupe suivant :
+Si ces deux conditions sont remplies, mais que vous devez désactiver les étiquettes intégrées dans les applications Office, utilisez le paramètre stratégie de groupe suivant :
 
 1. Accédez à **Configuration de l'utilisateur/Stratégies/Modèles d'administration/Microsoft Office 2016/Paramètres de sécurité**.
 
@@ -132,11 +129,13 @@ Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client d’étiquetage intégré à Office et client Azure Information Protection
 
-Si les clients ont [Azure Information Protection installé](/azure/information-protection/rms-client/aip-clientv2), par défaut, le client d’étiquetage intégré est désactivé dans leurs applications Office. 
+Si les utilisateurs ont installé le client [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) sur leurs ordinateurs Windows, par défaut, les étiquettes intégrées sont désactivées dans les [applications Office qui les prennent en charge](#labeling-client-for-desktop-apps). Étant donné que les étiquettes intégrées n’utilisent pas de complément Office, telles qu’elles sont utilisées par le client Azure Information Protection, elles bénéficient d’une stabilité accrue et de meilleures performances. Ils prennent également en charge les fonctionnalités les plus récentes, telles que les classifieurs avancés.
 
-Pour utiliser l’étiquetage intégrée plutôt que le client Azure Information Protection pour les applications Office, nous vous recommandons d’utiliser le paramètre de stratégie de groupe **Liste des compléments gérés** telle que documentée dans [Aucun complément chargé en raison des paramètres de stratégie de groupe pour les programmes Office 2013 et Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+Au lieu de désinstaller le client Azure Information Protection, nous vous recommandons d’empêcher le chargement du complément Azure Information Protection dans les applications Office. Ensuite, vous bénéficiez des avantages de l’étiquetage intégré dans les applications Office et des avantages du Azure Information Protection fichiers d’étiquetage client en dehors des applications Office. Par exemple, le client Azure Information Protection peut étiqueter tous les types de fichiers à l’aide de Explorateur de fichiers et PowerShell. Pour plus d’informations sur les fonctionnalités d’étiquetage prises en charge en dehors des applications Office, consultez [Étiquettes de confidentialité et Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
 
-Pour Microsoft Word 2016, Excel 2016, PowerPoint 2016 et Outlook 2016, spécifiez les identificateur programmatique suivants pour le client Azure Information Protection et définissez l’option **0 : le complément est toujours désactivé (bloqué)**
+Pour empêcher le chargement du complément client Azure Information Protection dans les applications Office, utilisez le paramètre stratégie de groupe **Liste des compléments gérés** comme indiqué dans [Aucun complément chargé en raison des paramètres de stratégie de groupe pour les programmes Office 2013 et Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+
+Pour vos applications Office qui prennent en charge l’étiquetage intégré, utilisez la configuration pour Microsoft Word 2016, Excel 2016, PowerPoint 2016 et Outlook 2016, spécifiez les identificateurs de programmation suivants (ProgID) pour le client Azure Information Protection et définissez l’option sur **0 : le complément est toujours désactivé (bloqué)**
 
 |Application  |ProgID  |
 |---------|---------|
@@ -146,17 +145,16 @@ Pour Microsoft Word 2016, Excel 2016, PowerPoint 2016 et Outlook 2016, spécifie
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-
 Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Si vous utilisez le paramètre stratégie de groupe **Utilisez la fonctionnalité De confidentialité dans Office pour appliquer et afficher les étiquettes de confidentialité** et définir cette valeur sur **1**, il existe certaines situations où le client Azure Information Protection peut toujours se charger dans les applications Office. Le fait de bloquer le chargement du complément dans chaque application empêche ce problème.
 
 Vous pouvez également désactiver ou supprimer de manière interactive le complément Office **Microsoft Azure Information Protection** de Word, Excel, PowerPoint et Outlook. Cette méthode est appropriée pour un ordinateur unique et des tests ad-hoc. Pour obtenir de instructions, consultez [Afficher, gérer et installer des compléments dans les programmes Office (pour les utilisateurs)](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
-Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office. Le client Azure Information Protection reste installé sur l’ordinateur, ce qui vous permet de continuer à étiqueter des fichiers en dehors de vos applications Office en désactivant ou en supprimant ce dernier. Par exemple, à l’aide de l’Explorateur de fichiers ou de PowerShell.
+Quelle que soit la méthode choisie, les modifications prennent effet au redémarrage des applications Office.
 
-Pour plus d’informations sur les fonctionnalités pris en charge par les clients Azure Information Protection et le client d’étiquetage intégré à Office, consultez [Choisir votre solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation sur la protection des informations Azure.
+Pour plus d’informations sur les fonctionnalités prises en charge par le client Azure Information Protection et le client d’étiquetage intégré Office, consultez [Choisir votre solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) à partir de la documentation Azure Information Protection.
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
@@ -261,7 +259,7 @@ Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, 
     
     Cette option vous permet de restreindre l’accès et les droits à des utilisateurs spécifiques en spécifiant leur adresse de messagerie dans les paramètres de chiffrement. L'inconvénient est la surcharge administrative liée à la création du compte et à la coordination avec la configuration de l'étiquette.
 
-- Une autre option consiste à utiliser [intégration de SharePoint et OneDrive à Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) de sorte que les comptes invités soient créés automatiquement lorsque vos utilisateurs partagent des liens.
+- Une autre option consiste à utiliser [Intégration de SharePoint et OneDrive à Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) afin que les comptes invités soient automatiquement créés lorsque vos utilisateurs partagent des liens.
     
     Cette option offre un coût d’administration minimal, car les comptes sont créés automatiquement et une configuration d’étiquette plus simple. Dans ce scénario, vous devez sélectionner l’option de chiffrement [Ajouter des utilisateur authentifiés](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users), car vous ne connaissez pas les adresses de messagerie à l’avance. Ce paramètre ne vous permet pas de restreindre l’accès et les droits d’utilisation à des utilisateurs spécifiques.
 
