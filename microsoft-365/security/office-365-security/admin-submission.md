@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154529"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705056"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -40,8 +40,8 @@ Lorsque vous envoyez un message électronique pour analyse, vous obtenez les ré
 
 - **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
 - **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
-- **Réputation/détonation de la charge** utile : examen à jour des URL et pièces jointes du message.
-- **Analyse de l’analyse du** gradeur : révision effectuée par des élèves afin de confirmer si les messages sont malveillants ou non.
+- **Réputation/détonation de la** charge utile : examen à jour des URL et pièces jointes du message.
+- **Analyse du gradeur**: révision effectuée par des élèves humains afin de confirmer si les messages sont malveillants ou non.
 
 > [!IMPORTANT]
 > L’analyse de réputation/détonation et de grader de la charge utile n’est pas effectuée dans tous les locataires. Les informations ne peuvent pas sortir de l’organisation lorsque les données ne sont pas supposées quitter la limite du client à des fins de conformité.
@@ -59,6 +59,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 - Les administrateurs peuvent envoyer des messages depuis 30 jours s’ils sont toujours disponibles dans la boîte aux lettres et qu’ils ne sont pas purgés par l’utilisateur ou un autre administrateur.
 
+- Les soumissions d’administrateur sont limitées aux taux suivants :
+  - Nombre maximal de soumissions sur une période de 15 minutes : 150 soumissions
+  - Mêmes soumissions sur une période de 24 heures : 3 soumissions
+  - Soumissions identiques sur une période de 15 minutes : 1 soumission
+  
 - Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir Signaler des messages et [des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
@@ -70,7 +75,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 3. Utilisez le **volant Envoyer à Microsoft** pour révision qui apparaît pour envoyer le message, l’URL ou la pièce jointe d’un e-mail, comme décrit dans les sections suivantes.
 
    > [!NOTE]
-   > Les soumissions de fichiers et d’URL ne sont pas disponibles dans les nuages qui n’autorisent pas les données à quitter l’environnement. La possibilité de sélectionner un fichier ou une URL est grisée.
+   > Les envois de fichiers et d’URL ne sont pas disponibles dans les nuages qui n’autorisent pas les données à quitter l’environnement. La possibilité de sélectionner un fichier ou une URL est grisée.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un e-mail douteux à Microsoft
 
@@ -78,7 +83,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 2. Dans la section **Ajouter l’ID de message** réseau ou télécharger le fichier de courrier électronique, utilisez l’une des options suivantes :
    - Ajoutez **l’ID** du message réseau de messagerie : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
-   - **Télécharger fichier e-mail (.msg ou .eml)**: cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
+   - **Télécharger fichier de courrier électronique (.msg ou .eml)**: cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
 3. Dans la **zone Choisir un destinataire qui a eu** un problème, spécifiez le destinataire sur qui vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si le courrier électronique a contourné l’analyse en raison des stratégies utilisateur ou organisation.
 
@@ -107,7 +112,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple de nouvelle soumission de courrier électronique.](../../media/submission-url-flyout.png)
+> ![Exemple de nouvel envoi de courrier électronique.](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Envoyer une pièce jointe suspecte à Microsoft
 
@@ -122,10 +127,10 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
 > [!div class="mx-imgBorder"]
-> ![Exemple d’envoi de nouvelles pièces jointes.](../../media/submission-file-flyout.png)
+> ![Exemple de nouvelle soumission de pièce jointe.](../../media/submission-file-flyout.png)
 
 > [!NOTE]
-> Si le filtrage des programmes malveillants a remplacé les pièces jointes des messages par le fichier Text.txt d’alerte de programmes malveillants, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+> Si le filtrage des programmes malveillants a remplacé les pièces jointes du message par le fichier Text.txt d’alerte anti-programme malveillant, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
@@ -170,16 +175,16 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
-     - **Type**
+     - **Type (Type)**
      - **Raison**
-     - **Status**
+     - **État**
      - **Résultat rescan**
 
    - Pour exporter les entrées, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’affiche, enregistrez .csv fichier.
 
 ### <a name="admin-submission-rescan-details"></a>Détails de la rescan de soumission de l’administrateur
 
-Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats sont affichés dans le flyout détaillé des soumissions :
+Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats affichés dans le flyout détaillé des soumissions :
 
 - En cas d’échec de l’authentification des e-mails de l’expéditeur au moment de la livraison.
 - Informations sur les accès à la stratégie qui auraient pu affecter ou écraser le verdict d’un message.

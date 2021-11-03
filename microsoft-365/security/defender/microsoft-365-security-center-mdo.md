@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
-description: Découvrez les modifications apportées au Centre de sécurité & conformité à Microsoft 365 Defender.
-keywords: Microsoft 365 sécurité, mise en Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
+description: Découvrez les modifications apportées au Centre de sécurité & conformité Microsoft 365 Defender.
+keywords: Microsoft 365 sécurité, mise en place de Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 77aa51e80cd339878c5d07d38e71cab810ee130f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91f80cb79efe7a301bfcefaf7663e13f391b4b1e
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191526"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724331"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -51,18 +51,18 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 |Autorisations|[Autorisations & rôles](https://security.microsoft.com/emailandcollabpermissions)|Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Flux de messagerie|||Voir [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |Confidentialité des données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Rechercher|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
+|Recherche|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
 |Rapports|[Report](https://security.microsoft.com/emailandcollabreport)|||
 |Certification de service||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Surveillance||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |eDiscovery||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md) à combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
+[Microsoft 365 Defender](./microsoft-365-defender.md) combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
 
 Si vous êtes familiarisé avec le Centre de sécurité & conformité (protection.office.com), cet article décrit certaines des modifications et améliorations apportées à Microsoft 365 Defender.
 
-En savoir plus sur les avantages : [vue d’Microsoft 365 Defender](overview-security-center.md)
+En savoir plus sur les avantages : [vue d’Microsoft 365 Defender](microsoft-365-defender.md)
 
 Si vous recherchez des éléments liés à la conformité, visitez le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage).
 
@@ -91,7 +91,7 @@ Réunit les incidents et la gestion des alertes de vos e-mail, appareils, et ide
 
 Recherchez de façon proactive les menaces, les programmes malveillants et des activités malveillantes sur vos points de terminaison, boîtes aux lettres Office 365, etc. à l’aide de [Requêtes de repérage avancé](advanced-hunting-overview.md). Ces requêtes puissantes peuvent être utilisées pour localiser et examiner des indicateurs et entités de menaces connues et de menaces potentielles.
 
-[Les règles de détection](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
+[Les](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) règles de détection personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
 
 Voici un exemple [de recherche avancée dans](advanced-hunting-example.md) Microsoft Defender pour Office 365.
 

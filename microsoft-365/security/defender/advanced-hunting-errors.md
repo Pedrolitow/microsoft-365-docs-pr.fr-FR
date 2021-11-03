@@ -15,29 +15,27 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f3b87dc127a1cf5d19d1e310ac4b31b60f690499
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8bd7d4b5191ff88fe2bd958c87e930b91f64dd5e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154574"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703632"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
 
-Le recherche avancée affiche des erreurs pour signaler les erreurs de syntaxe et chaque fois que les requêtes touchent des quotas et des [paramètres d’utilisation prédéfinies.](advanced-hunting-limits.md) Reportez-vous au tableau ci-dessous pour obtenir des conseils sur la façon de résoudre ou d’éviter les erreurs.
+Le recherche avancée affiche des erreurs pour signaler les erreurs de syntaxe et chaque fois que les requêtes touchent des quotas et des [paramètres d’utilisation prédéfinies.](advanced-hunting-limits.md) Reportez-vous au tableau ci-dessous pour obtenir des conseils sur la résolution ou l’évitement des erreurs.
 
 | Type d’erreur | Cause | Résolution | Exemples de messages d’erreur |
 |--|--|--|--|

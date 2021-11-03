@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 44f7ebba62f4c21ab3ad4cb55f0ca70302857d33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 171364d447b2b160f40888b4b6132a7f1630391b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206696"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705362"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -40,11 +38,11 @@ Appliquez ces recommandations pour obtenir des résultats plus rapidement et év
 ## <a name="understand-cpu-resource-quotas"></a>Comprendre les quotas de ressources de l’UC
 En fonction de sa taille, chaque client a accès à une quantité définie de ressources processeur allouées pour l’exécution de requêtes de recherche avancées. Pour plus d’informations sur les différentes limites de service, voir les quotas de recherche avancés et [les paramètres d’utilisation.](advanced-hunting-limits.md)
 
-Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les recommandations d’optimisation de cet article afin de minimiser les perturbations résultant du dépassement des quotas ou des paramètres d’utilisation.
+Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la consommation et appliquer les instructions d’optimisation de cet article pour minimiser les perturbations résultant du dépassement des quotas ou des paramètres d’utilisation.
 
 ## <a name="general-optimization-tips"></a>Conseils généraux d’optimisation
 
-- **Dimensionnez les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
+- **Dimensioniser les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
 - Appliquer des filtres tôt — Appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser des fonctions de transformation et d’analyse, telles que sous-string() , [replace()](/azure/data-explorer/kusto/query/replacefunction), [](/azure/data-explorer/kusto/query/substringfunction) [trim()](/azure/data-explorer/kusto/query/trimfunction), [toupper()](/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’recherche [extractjson()](/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
 
     ```kusto
@@ -254,15 +252,15 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>Parse strings
 Il existe différentes fonctions que vous pouvez utiliser pour gérer efficacement les chaînes qui doivent être traitées ou converties.
 
-| String | Fonction | Exemple d'utilisation |
+| Chaîne | Fonction | Exemple d'utilisation |
 |--|--|--|
 | Lignes de commande | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extraire la commande et tous les arguments. |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extraire les sections d’un chemin d’accès à un fichier ou un dossier. |
-| Numéros de version | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Déconstruire un numéro de version avec jusqu’à quatre sections et jusqu’à huit caractères par section. Utilisez les données d’analyse pour comparer l’âge de la version. |
+| Numéros de version | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Déconstruire un numéro de version avec jusqu’à quatre sections et jusqu’à huit caractères par section. Utilisez les données analyse pour comparer l’âge de la version. |
 | Adresses IPv4 | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convertissez une adresse IPv4 en un long integer. Pour comparer les adresses IPv4 sans les convertir, [utilisez ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Adresses IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convertissez une adresse IPv4 ou IPv6 en notation IPv6 canonique. Pour comparer les adresses IPv6, [utilisez ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Pour en savoir plus sur toutes les fonctions d’parsage prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)
+Pour en savoir plus sur toutes les fonctions d’doncsing prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)
 
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)

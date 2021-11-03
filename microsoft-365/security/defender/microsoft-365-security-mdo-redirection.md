@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6b7df942ee117c0f23a97516c75d64131e0770d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b2e25e28952d18ad32141c010bc258d50e383d4e
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698404"
+ms.locfileid: "60724427"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirection des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
@@ -84,7 +84,7 @@ Pour revenir à l’ancien portail :
 Ce paramètre peut être à nouveau activé à tout moment.
 
 ## <a name="related-information"></a>Informations connexes
-- [Microsoft 365 Defender vue d’ensemble](overview-security-center.md)
+- [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft fournit un SIEM et XDR unifiés pour moderniser les opérations de sécurité](https://www.microsoft.com/security/blog/?p=91813) 
 - [Infographie XDR et SIEM](https://afrait.com/blog/xdr-versus-siem/) 

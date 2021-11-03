@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 6edeea09798781d08b34566c469bead3aea22356
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 345f9ad748ca108cfa3e153239ef8534c1262bfa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432624"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702760"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -41,7 +41,7 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
     
 - Les utilisateurs n’ont plus besoin de connaître les stratégies de gouvernance des données : ils peuvent se concentrer sur leur travail.
     
-Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
+Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md). Désormais en prévisualisation, vous pouvez également appliquer automatiquement une étiquette de rétention aux pièces jointes dans le cloud qui sont stockées dans SharePoint ou OneDrive.
 
 > [!TIP]
 > Utilisez des propriétés de recherche pour identifier [les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings) et [les éléments auxquels une étiquette de confidentialité est appliquée](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -57,7 +57,7 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 >
 > - Application d’une étiquette de rétention à un modèle de compréhension de document dans SharePoint Syntex.
 > - Application d’une étiquette de rétention par défaut pour SharePoint et Outlook
->- Application d’une étiquette de rétention pour les e-mails à l’aide de règles Outlook
+> - Application d’une étiquette de rétention pour les e-mails à l’aide de règles Outlook
 >
 > Pour ces scénarios, voir [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md).
 
@@ -87,7 +87,7 @@ Les instructions de navigation varient selon que vous utilisez ou non [la gestio
 
 2. Suivez les instructions de l’Assistant pour effectuer la configuration.
     
-    Pour plus d’informations sur les paramètres de rétention, voir Paramètres pour [conserver et supprimer du contenu.](retention-settings.md#settings-for-retaining-and-deleting-content)
+    Pour plus d’informations sur les paramètres de rétention, voir Paramètres pour [conserver et supprimer du contenu.](retention-settings.md#settings-for-retaining-and-deleting-content) Toutefois, si l’étiquette est utilisée pour les pièces [jointes](#auto-apply-labels-to-cloud-attachments)cloud, veillez à configurer le début de la période de rétention sur « Lorsque les éléments ont **été étiquetés**».
     
     Si vous utilisez la gestion des enregistrements :
     
@@ -96,7 +96,6 @@ Les instructions de navigation varient selon que vous utilisez ou non [la gestio
     - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé**. 
-4.  configuration qui vous permet d’aller directement à l’étape 2 de la procédure suivante.
 
 Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer la configuration **Modifier l’étiquette de rétention** qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
@@ -147,7 +146,11 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 - [Correspondance pour les classifieurs entraînables](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Utilisez le tableau suivant pour identifier quand les étiquettes de rétention peuvent être automatiquement appliquées aux éléments pour Exchange :
+Vous pouvez également appliquer automatiquement des étiquettes de rétention aux pièces [jointes sur le nuage nouvellement partagées.](#auto-apply-labels-to-cloud-attachments)
+
+Lorsque vous configurez les étiquettes de rétention pour qu'elles s'appliquent automatiquement sur la base d'informations sensibles, de mots-clés ou de propriétés interrogeables, ou de classificateurs entraînables, utilisez le tableau suivant pour identifier quand les étiquettes de rétention peuvent être appliquées automatiquement.
+
+Exchange :
 
 |Condition|Éléments en transit (envoyés ou reçus) |Éléments existants (données au repos)|
 |:-----|:-----|:-----|
@@ -156,7 +159,7 @@ Utilisez le tableau suivant pour identifier quand les étiquettes de rétention 
 |Mots clés spécifiques ou propriétés pouvant faire l’objet d’une recherche| Oui |Oui |
 |Classifieurs pouvant être formés| Oui | Oui (six derniers mois uniquement) |
 
-Utilisez le tableau suivant pour identifier quand les étiquettes de rétention peuvent être automatiquement appliquées aux éléments pour SharePoint et OneDrive :
+SharePoint et OneDrive:
 
 |Condition|Éléments modifiés ou nouveaux |Éléments existants (données au repos)|
 |:-----|:-----|:-----|
@@ -170,9 +173,9 @@ En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
 > [!IMPORTANT]
-> Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, il n'est pas possible d'étendre la stratégie pour inclure ou exclure des destinataires spécifiques ; cette configuration de stratégie prend uniquement en charge le paramètre **Tous les destinataires**. Spécifique à cette configuration de stratégie, **Tous les destinataires** incluent les boîtes aux lettres des groupes Microsoft 365.
+> Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, toutes les boîtes aux lettres sont automatiquement incluses, ce qui inclut les boîtes aux lettres de Microsoft 365 groupes.
 > 
-> Également spécifique à cette configuration de stratégie, si vous sélectionnez l’emplacement des groupes **Microsoft 365,** seuls les sites SharePoint connectés à un groupe Microsoft 365 sont inclus et non les boîtes aux lettres des groupes Microsoft 365.
+> Bien que les boîtes aux lettres de groupe soient généralement incluses en sélectionnant l’emplacement des groupes **Microsoft 365,** pour cette configuration de stratégie spécifique, l’emplacement des groupes inclut uniquement les sites SharePoint connectés à un groupe Microsoft 365.
 
 Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Dans l’exemple suivant, les types d’informations sensibles proviennent de la catégorie **Confidentialité** et du modèle **Informations d’identification personnelle (PII) des États-Unis** :
 
@@ -312,9 +315,56 @@ Lorsque vous utilisez des classificateurs pouvant apprendre pour appliquer autom
 
 - Vous ne pouvez pas étiqueter automatiquement des éléments qui ont plus de six mois dans SharePoint ou OneDrive.
 
+#### <a name="auto-apply-labels-to-cloud-attachments"></a>Appliquer automatiquement des étiquettes aux pièces jointes cloud
+
+> [!NOTE]
+> Cette option est progressivement mise en place en prévisualisation et peut faire l’objet de changements.
+
+Vous devrez peut-être utiliser cette option si vous devez capturer et conserver toutes les copies des fichiers de votre client qui sont envoyés par le système de communication. Vous utilisez cette option conjointement avec les stratégies de rétention pour les services de communication eux-mêmes, Exchange et Teams.
+
+> [!IMPORTANT]
+> Lorsque vous sélectionnez une étiquette à utiliser pour appliquer automatiquement des **étiquettes de rétention pour les pièces jointes cloud**, assurez-vous que le paramètre de rétention des étiquettes démarre la période de rétention en fonction de l’étiquette des **éléments.**
+
+Les pièces jointes cloud, parfois appelées pièces jointes modernes, sont un mécanisme de partage qui utilise des liens incorporés vers des fichiers stockés dans le nuage. Ils peuvent prendre en charge le stockage centralisé pour le contenu partagé avec des avantages collaboratifs, tels que le contrôle de version. Les pièces jointes cloud ne sont pas des copies jointes d’un fichier ou un lien de texte d’URL vers un fichier. Il peut s’avérer utile de consulter les listes de contrôle visuelles pour les pièces jointes cloud [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) et [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+
+Lorsque vous choisissez l’option d’application d’une étiquette de rétention aux pièces jointes dans le cloud, à des fins de conformité, une copie de ce fichier est créée au moment du partage. L'étiquette de conservation que vous avez choisie est alors appliquée à la copie qui peut ensuite être identifiée à l'aide de l'eDiscovery. Les utilisateurs ne connaissent pas la copie stockée dans la bibliothèque de conservation et de préservation des données. L’étiquette de rétention n’est pas appliquée au message lui-même ou au fichier d’origine.
+
+Si le fichier est modifié et partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est enregistrée dans la bibliothèque de conservation et de préservation. Pour plus d’informations, notamment **sur la raison pour laquelle vous devez utiliser le paramètre** Lorsque les éléments ont été étiquetés, voir Comment fonctionne la rétention avec les pièces [jointes cloud](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+Les pièces jointes cloud prises en charge pour cette option sont des fichiers tels que des documents, des vidéos et des images qui sont stockés dans SharePoint et OneDrive. Pour Teams, les pièces jointes cloud partagées dans les messages de conversation et les canaux standard et privés sont pris en charge. Les pièces jointes cloud partagées sur les invitations aux réunions et les applications autres que Teams ou Outlook ne sont pas pris en charge.
+
+Bien que cela ne soit pas obligatoire pour cette option, nous vous recommandons de vous assurer que le traitement des versions est activé pour vos sites SharePoint et comptes OneDrive afin que la version partagée puisse être capturée avec précision. Si le jeu de versions n’est pas activé, la dernière version disponible est conservée. Les documents en brouillon ou qui n’ont jamais été publiés ne sont pas pris en charge.
+
+Lorsque vous sélectionnez une étiquette à utiliser pour appliquer automatiquement des étiquettes **de rétention pour les pièces jointes cloud, assurez-vous que le paramètre de rétention des étiquettes démarre la période de** rétention en fonction de l’étiquette des **éléments.** 
+
+Lorsque vous configurez les emplacements de cette option, vous pouvez sélectionner :
+
+- **SharePoint sites** pour les fichiers partagés stockés dans des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 et des sites classiques. 
+- **Microsoft 365 groupes pour** les fichiers partagés stockés dans des sites d’équipe connectés Microsoft 365 groupes.
+- OneDrive pour les fichiers **partagés** stockés dans les comptes de OneDrive.
+
+Vous devrez créer des stratégies de rétention distinctes si vous souhaitez conserver ou supprimer les fichiers, messages électroniques ou messages Teams d’origine.
+
+> [!NOTE]
+> Si vous souhaitez que les pièces jointes dans le cloud conservées expirent en même temps que les messages qui les contenaient, configurez l’étiquette de rétention de manière à ce qu’elle soit conservée, puis supprimez les actions et les délais que vos stratégies de rétention pour Exchange et Teams.
+
+À prendre en compte lors de l’application automatique d’étiquettes de rétention aux pièces jointes cloud :
+
+- Seules les pièces jointes cloud nouvellement partagées seront automatiquement étiquetées pour la rétention.
+
+- Les pièces jointes cloud partagées en dehors Teams et Outlook ne sont pas pris en charge.
+
+- Les éléments suivants ne sont pas pris en charge en tant que pièces jointes cloud qui peuvent être conservées :
+    - SharePoint sites, pages, listes, formulaires, dossiers, ensembles de documents et pages OneNote pages.
+    - Fichiers partagés par des utilisateurs qui n’ont pas accès à ces fichiers.
+    - Fichiers supprimés avant l’envoi de la pièce jointe cloud Cela peut se produire si un utilisateur copie et copie une pièce jointe partagée précédemment à partir d’un autre message, sans confirmer au préalable que le fichier est toujours disponible. Ou bien, quelqu’un envoie un ancien message lorsque le fichier est maintenant supprimé.
+    - Fichiers partagés par des invités ou des utilisateurs externes à votre organisation
+    - Fichiers dans les messages électroniques provisoires et les messages qui ne sont pas envoyés
+    - Fichiers vides
+
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Délai d’activation des étiquettes de rétention
 
-Lorsque vous appliquez automatiquement des étiquettes de rétention, l’application de ces étiquettes à ce contenu peut prendre jusqu’à sept jours.
+Lorsque vous appliquez automatiquement des étiquettes de conservation basées sur des informations sensibles, des mots-clés ou des propriétés interrogeables, ou des classificateurs entraînables, l'application des étiquettes de conservation peut prendre jusqu'à sept jours :
   
 ![Diagramme indiquant quand les étiquettes d’application automatique prennent effet.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
@@ -330,7 +380,9 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Mise à jour des étiquettes de rétention et de leurs stratégies
 
-Lorsque vous modifiez une étiquette de rétention ou une stratégie d’application automatique et que l’étiquette de rétention est déjà appliquée au contenu, vos paramètres mis à jour sont automatiquement appliqués à ce contenu, en plus du contenu nouvellement identifié.
+Pour appliquer automatiquement les politiques d'étiquetage de conservation qui sont configurées pour les informations sensibles, les mots-clés ou les propriétés recherchables, ou une correspondance pour les classificateurs entraînables : Lorsqu'une étiquette de conservation de la politique est déjà appliquée au contenu, un changement de configuration de l'étiquette et de la politique sélectionnées sera automatiquement appliqué à ce contenu en plus du contenu nouvellement identifié.
+
+Pour les stratégies d’étiquette de rétention à appliquer automatiquement qui sont configurées pour les pièces jointes dans le cloud : étant donné que cette stratégie s’applique aux nouveaux fichiers partagés plutôt qu’aux fichiers existants, une modification de la configuration de l’étiquette et de la stratégie sélectionnées sera automatiquement appliquée au contenu nouvellement partagé uniquement.
 
 Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
 - Étiquette de rétention et le nom de la stratégie, et les paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.

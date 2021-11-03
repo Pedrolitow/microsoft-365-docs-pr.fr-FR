@@ -15,38 +15,36 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f472b42a5ce967e67c4b4cbe3511e493ac86d42c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208468"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705350"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des appareils qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
+Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des périphériques qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
-| Column | Type de données | Description |
+| Colonne | Type de données | Description |
 |------------|-------------|-------------|
 | `IP` | string | Adresse IP  |
-| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
+| `DeviceId` | chaîne | Identificateur unique de l’appareil dans le service |
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -59,7 +57,7 @@ invoke DeviceFromIP()
 
 Cette fonction est invoquée dans le cadre d’une requête.
 
-- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée , l’adresse IP pour laquelle vous souhaitez voir la liste des périphériques qui lui ont `IP` été affectés. Il doit s’agit d’une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
+- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée , l’adresse IP pour laquelle vous souhaitez voir la liste des appareils qui lui ont `IP` été affectés. Il doit s’agit d’une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
 - **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d’obtenir les appareils affectés les plus `Timestamp` récents à partir d’un moment spécifique. Si elle n’est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
 
 ## <a name="example"></a>Exemple

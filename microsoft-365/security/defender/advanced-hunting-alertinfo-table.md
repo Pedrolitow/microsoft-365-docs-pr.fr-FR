@@ -22,8 +22,8 @@ ms.openlocfilehash: d8da4e897ee53be88e051f6ec5600a83e9aa420f
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60671561"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704510"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

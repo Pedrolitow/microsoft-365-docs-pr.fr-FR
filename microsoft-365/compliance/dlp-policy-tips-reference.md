@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 2537b653b435240e052374e3328e2b94504a8d74
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f4aeefca80412c225da1b2f589d109355be21305
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195640"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701982"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
@@ -45,7 +45,7 @@ Les conseils de stratégie DLP dans Outlook Web Access sont pris en charge pour 
 - L’objet ou le corps correspond aux modèles
 - Le jeu de caractères de contenu contient des mots
 - Le contenu est reçu de
-- L’expéditeur a-t-il surchargé le conseil de stratégie
+- A l’expéditeur a override le conseil de stratégie
 - La taille du message est égale ou supérieure à
 - L’attribut AD de l’expéditeur contient des mots ou des expressions
 - L’attribut AD de l’expéditeur correspond aux modèles
@@ -72,7 +72,7 @@ Actuellement, Outlook 2013 et les ultérieures prend en charge l’affichage de 
 - Le contenu contient (fonctionne uniquement pour les types d’informations sensibles. Les étiquettes de niveau de sensibilité ne sont pas pris en charge)
 - Le contenu est partagé
 
-Notez que toutes les conditions fonctionnent pour les e-mails rédigés dans Outlook application cliente, où ils correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas pris en charge pour toutes les conditions utilisées en dehors de celle mentionnée ci-dessus.
+Notez que toutes les conditions fonctionnent pour les e-mails rédigés dans Outlook application cliente, où ils correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage de conseils de stratégie aux utilisateurs n’est pas pris en charge pour toutes les conditions qui sont utilisées en dehors de celle mentionnée ci-dessus.
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 et les Office la prise en charge des applications de bureau affichant des conseils de stratégie uniquement pour certains types d’informations sensibles
 
@@ -166,7 +166,7 @@ La liste des types d’informations sensibles pré-détectés pour l’affichage
 - ID national à Taïwan
 - 	Numéro de passeport Taïwan
 - Certificat de résident Taïwan (ARC/TARC)
-- Code d’identification de population thaï
+- Code d’identification de la population thaï
 - Numéro d’identification nationale turc
 - Numéro de permis de conduire du Royaume-Uni
 - Numéro de liste électorale du Royaume-Uni
@@ -182,7 +182,7 @@ Notez que les types d’informations sensibles personnalisés sont également pr
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>La protection contre la perte de données sur les appareils de point de terminaison prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement
 
-La liste des types d’informations sensibles pré-utilisés qui seront détectés dans les documents résidant sur les appareils de point de terminaison est la suivante :
+La liste des types d’informations sensibles pré-utilisés qui seront détectés dans les documents résidant sur des appareils de point de terminaison est la suivante :
 
 - Numéro de routage ABA 
 - Numéro d’identité nationale (DNI) pour l’Argentine 
@@ -314,7 +314,7 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - Numéro de permis de conduire De Qu’est-ce que vous avez ? 
 - Numéro d’identification national (personnes physiques) 
 - Numéro d’identification national (personnes non physiques) 
-- Numéro de passeport Dem passport 
+- Numéro de passeport de Contrôle 
 - Numéro de carte d’identité Malaisie 
 - Numéro de permis de conduire de Malte 
 - Numéro de carte d’identité Malte 
@@ -329,7 +329,7 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - Numéro de permis de conduire nouvelle-Zélande 
 - Numéro de revenu pour les Pays-Bas (Nouvelle-Zélande) 
 - Numéro du Ministère de la santé Nouvelle-Zélande 
-- Numéro de réseau social de La Nouvelle-Zélande 
+- Numéro de réseau social nouvelle-zélande 
 - Numéro d’identité norvégien 
 - Numéro d’identification multifonction unifié Philippines 
 - Numéro de permis de conduire polonais 
@@ -373,7 +373,7 @@ La liste des types d’informations sensibles pré-utilisés qui seront détect�
 - ID national à Taïwan 
 - 	Numéro de passeport Taïwan 
 - Certificat de résident Taïwan (ARC/TARC) 
-- Code d’identification de la population thaï 
+- Code d’identification de population thaï 
 - Numéro d’identification nationale turc 
 - Numéro de permis de conduire du Royaume-Uni 
 - Numéro de liste électorale du Royaume-Uni 
@@ -400,11 +400,11 @@ Notez que des types d’informations sensibles personnalisés seront également 
 |**SharePoint Client Web en ligne/OneDrive Entreprise web**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;||
 |**SharePoint Client Win32/OneDrive Entreprise Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge SharePoint ou OneDrive applications clientes de bureau|
 |**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous les prédicats et actions SPO/ODB dans la DLP ;|Le conseil de stratégie DLP est pris en charge si le document est hébergé sur SPO ou l’application web ODB et que la stratégie DLP est déjà estampillée.|
-|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge dans les applications mobiles Office.|
-|**Teams Web/ Teams bureau/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous Teams prédicats dans la stratégie DLP|Les conseils de stratégie s’afficheront lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il peut se voir refuser l’accès s’il n’est pas autorisé.|
+|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie DLP ne sont pas pris en charge dans les applications mobiles pour Office.|
+|**Teams Web/ Teams bureau/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|all|tous Teams prédicats dans la stratégie DLP|Les conseils de stratégie s’afficheront lorsqu’un message est marqué comme « Ce message a été marqué. Que puis-je faire ? Lorsque vous cliquez sur le lien, l’utilisateur peut passer en revue les types d’informations sensibles détectés et remplacer ou signaler un problème si autorisé par l’administrateur. Notez qu’aucun conseil de stratégie n’est affiché pour les fichiers. Lorsque le destinataire tente d’accéder au document, il se peut qu’il obtienne un accès refusé s’il n’est pas autorisé.|
 |**Appareils de point de terminaison Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|sous-ensemble|Tous les prédicats et actions DLP de point de terminaison dans la stratégie DLP|Voir Protection contre la perte de données sur le point de terminaison [prend en charge les conseils de stratégie pour certains types d’informations sensibles uniquement](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**Appareils Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les stratégies de protection contre la perte de données ne sont pas actuellement appliquées sur les appareils Mac|
+|**Appareils macOS (prévisualisation)**|conseils par défaut uniquement|all|sous-ensemble|Les stratégies de protection contre la perte de données sont appliquées sur les appareils macOS. Les conseils de stratégie personnalisée ne sont pas pris en charge.|
 |**Applications cloud tierces**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|Les conseils de stratégie de protection contre la perte de données ne sont pas pris en charge sur les applications cloud tierces|
 |**Sur place**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
-|**Word, Excel, PowerPoint Client Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|sous-ensemble|sous-ensemble|Consultez la Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et ultérieures et la prise en charge des applications Office sur le bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur des sites SharePoint Online ou OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble de conditions ou d’actions dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/en externe)</li><li>Avertir l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaîtra pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Voir [les conseils de stratégie Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) pour plus d’informations|
+|**Word, Excel, PowerPoint Client Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|sous-ensemble|sous-ensemble|Consultez la Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) et ultérieures et la prise en charge des applications Office sur le bureau affichant des conseils de stratégie pour certains types d’informations sensibles uniquement pour la liste des types d’informations sensibles pris en charge</br></br>Les conseils de stratégie pour les applications clientes WXP fonctionnent pour les documents stockés sur les sites SharePoint Online ou OneDrive Entreprise pour toutes les stratégies DLP qui ont exactement les conditions ou actions ci-dessous ou un sous-ensemble de conditions ou d’actions dans la stratégie DLP :</br> <ul><li>Le contenu contient des types d’informations sensibles</li><li>Étendue d’accès (le contenu est partagé en interne/en externe)</li><li>Avertir l’utilisateur (conseils de stratégie/notifications utilisateur)</li><li>Bloquer tout le monde</li><li>Rapports d’incident</li></ul></br> Si une autre condition ou action est présente, le conseil de stratégie DLP pour cette stratégie n’apparaîtra pas dans les applications de bureau de Word, Excel ou PowerPoint.</br>Voir [les conseils de stratégie Excel, PowerPoint et Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) pour plus d’informations|
 ||||||

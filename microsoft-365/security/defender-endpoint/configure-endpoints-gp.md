@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239947"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703260"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des Windows à l’aide de la stratégie de groupe 
+# <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,7 +42,7 @@ ms.locfileid: "60239947"
 > Pour Windows Server 2019 et Windows Server 2022, vous devrez peut-être remplacer NT AUTHORITY\Known-System-Account par NT AUTHORITY\SYSTEM du fichier XML créé par la préférence de stratégie de groupe.
 
 > [!NOTE]
-> Si vous utilisez la nouvelle solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
+> Si vous utilisez la nouvelle solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
 
 Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
@@ -127,7 +127,7 @@ Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Adminis
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -135,7 +135,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -143,7 +143,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -152,7 +152,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -165,7 +165,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -187,9 +187,9 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
-Configurer l’accès contrôlé aux dossiers| Activé, mode audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
@@ -222,7 +222,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
 
 8. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -248,7 +248,7 @@ Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le d�
 
 ## <a name="setup-defender-av-policies"></a>Stratégies de l’Antivirus Setup Defender
 
-Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
+Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation.
 
 1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
 
@@ -272,9 +272,9 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurer la surveillance de l’activité des fichiers sortants entrants.":::
 
-### <a name="configure-windows-defender-smart-screen-settings"></a>Configurer les Windows Defender de l’écran intelligent
+### <a name="configure-windows-defender-smartscreen-settings"></a>Configurer Windows Defender paramètres SmartScreen
 
-1. Accédez à **Modèles d’administration** des stratégies de \>  \>  \> **configuration ordinateur Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
+1. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
  
@@ -286,7 +286,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config de l’application potentielle indésirable.":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentiellement indésirable.":::
 
 :::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de la config.":::
 
@@ -304,7 +304,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
-Accédez aux **modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
+Accédez aux **modèles d’administration** des stratégies de configuration \>  \>  \> **ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature.":::
 
@@ -315,14 +315,14 @@ Accédez aux **modèles d’administration** des stratégies de configuration or
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud.":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud de la config;":::
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
 ## <a name="related-topics"></a>Rubriques connexes
-- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
+- [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un microsoft Defender pour les appareils de point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

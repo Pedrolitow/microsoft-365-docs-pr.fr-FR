@@ -22,8 +22,8 @@ ms.openlocfilehash: c7ad9678f797fd3e8df34b40fe39fea5672e13d5
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60670605"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704476"
 ---
 # <a name="fileprofile"></a>FileProfile()
 

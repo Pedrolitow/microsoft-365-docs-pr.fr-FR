@@ -15,18 +15,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163047"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704846"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -50,10 +50,10 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
-    - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*
+    - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
@@ -182,14 +182,18 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|WER-Diagnostics|5|Bloquer CFG|
 |Exploit Protection|Win32K (opérationnel)|260|Police non approuvée|
 |Protection réseau|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
-|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode audit|
+|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode Audit|
 |Protection réseau|Windows Defender (opérationnel)|1126|Événement lorsque la protection du réseau se déclenche en mode blocage|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode blocage|
-|
+
+>[!NOTE]
+> Du point de vue de l’utilisateur, les notifications en mode avertissement de la réduction de la surface d’attaque sont Windows notification toast pour les règles de réduction de la surface d’attaque.
+>
+> Dans la protection du réseau, la protection réseau fournit uniquement les modes Audit et Blocage.

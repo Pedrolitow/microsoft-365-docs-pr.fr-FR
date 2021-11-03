@@ -27,7 +27,7 @@
         - name: 'Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Vue d’ensemble du portail Microsoft 365 Defender
-          href: ../defender/overview-security-center.md
+          href: ../defender/microsoft-365-defender.md
         - name: Page de l’entité d’e-mail
           href: mdo-email-entity-page.md
         - name: Vue d’ensemble d’AIR

@@ -13,21 +13,19 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 170f0ffff578bd1dd72a0b20d62cba34ffb35787
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 5902d5470a98e9915394de9f682bd0ea51ce2a08
+  ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60180970"
+  ms.lasthandoff: 11/03/2021
+  ms.locfileid: "60724690"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft 365 Defender ?
+    - text: Présentation de Microsoft 365 Defender
       url: defender/microsoft-365-defender.md
-    - text: Centre de sécurité Microsoft 365
-      url: defender/overview-security-center.md
 - title: Commencer avec les essais gratuits
   linkLists:
   - linkListType: get-started

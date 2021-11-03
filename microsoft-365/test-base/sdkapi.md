@@ -18,8 +18,8 @@ ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677164"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704942"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Gérer votre ressource avec les API de & SDK
 L’automatisation est un aspect clé de DevOps développement agile. Souhaitez-vous gérer la Base de test pour Microsoft 365 ressources de test, obtenir les résultats des tests par programme et les intégrer à nos outils CI ? Les API de base de test/SDK peuvent vous aider à atteindre tous ces objectifs et bien plus encore ! 

@@ -22,8 +22,8 @@ ms.openlocfilehash: b3c878c40c742c22401b9180d202da472d9e2f35
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60671360"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703272"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 

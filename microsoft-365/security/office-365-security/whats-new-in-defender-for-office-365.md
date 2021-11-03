@@ -21,18 +21,19 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5980d01dfb15a019aec9dd39cf6ceae7a1682753
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555271"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702402"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**S’applique à**
+**S’applique à :**
+
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -76,8 +77,8 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - Formulaire marqué et confirmé comme hameçonnage
   - [Nouvelles stratégies d’alerte pour ZAP](../../compliance/new-defender-alert-policies.md)
 - Les alertes Microsoft Defender pour Office 365 sont désormais intégrées dans Microsoft 365 Defender - Microsoft 365 Defender de la file d’attente des alertes unifiées et de la file d’attente des [alertes unifiées](../defender/investigate-alerts.md)
-- [](user-tags.md) Les balises utilisateur sont désormais intégrées aux expériences d’alerte de Microsoft Defender pour Office 365, notamment : la file d’attente des alertes et les détails dans Office 365 Security & Compliance, et l’application de stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées. 
-  - Les balises sont également disponibles dans la file d’attente des alertes unifiées dans le centre Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
+- [](user-tags.md) Les balises utilisateur sont désormais intégrées aux expériences d’alerte de Microsoft Defender pour Office 365, notamment : la file d’attente des alertes et les détails dans Office 365 Security & Compliance, et l’application de stratégies d’alerte personnalisées aux balises utilisateur pour créer des stratégies d’alerte ciblées.
+  - Les balises sont également disponibles dans la file d’attente des alertes unifiées du portail Microsoft 365 Defender (Microsoft Defender pour Office 365 Plan 2)
 
 ## <a name="june-2021"></a>Juin 2021
 
@@ -90,7 +91,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 - [](mdo-email-entity-page.md)Page Entité de messagerie : vue unifiée à 360 degrés d’un e-mail avec des informations enrichies sur les menaces, l’authentification et les détections, les détails de détonation et une toute nouvelle expérience d’aperçu du courrier électronique.
 - [Office 365 API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)de gestion : mises à jour de EmailEvents (RecordType 28) pour ajouter l’action de remise, les emplacements de remise d’origine et les derniers, ainsi que les détails de détection mis à jour.
-- [Analyse des menaces](/microsoft-365/security/defender/threat-analytics)pour Defender pour Office 365 : affichez les acteurs des menaces actifs, les techniques courantes et les surfaces d’attaque, ainsi que les rapports complets des chercheurs Microsoft sur les campagnes en cours.
+- [Analyse des menaces](/microsoft-365/security/defender/threat-analytics)pour Defender pour Office 365 : afficher les acteurs des menaces actifs, les techniques courantes et les surfaces d’attaque, ainsi que les rapports complets de chercheurs Microsoft sur les campagnes en cours.
 
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 

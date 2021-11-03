@@ -18,7 +18,7 @@
       href: testoptions.md
     - name: Révision
       href: review.md
-    - name: Recommandations sur le package
+    - name: Recommandations en cas de package
       href: contentguideline.md
 - name: Guides pratiques
   items:
@@ -32,6 +32,8 @@
       href: memory.md
     - name: Analyse de la régression de l’UC
       href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
 - name: Référence
   items:
     - name: Forum Aux Questions

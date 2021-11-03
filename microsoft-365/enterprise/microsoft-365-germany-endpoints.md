@@ -24,8 +24,8 @@ ms.openlocfilehash: 41ce851c05ab1ad32ce1c8e2b2c0e6cf08358744
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673326"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705428"
 ---
 # <a name="office-365-germany-endpoints"></a>Points de terminaison Office 365 Germany
 

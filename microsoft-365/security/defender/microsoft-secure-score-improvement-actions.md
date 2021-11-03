@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 73f477e63d777a2de68a8ee06dcd6edd31024db7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207558"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724439"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](microsoft-365-defender.md)
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 
@@ -40,7 +40,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 - Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Cloud App Security)
 
 >[!NOTE]
->Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui a rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
+>Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
@@ -54,7 +54,7 @@ En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -105,7 +105,7 @@ Les actions d’amélioration ont un état « terminé » une fois que tous les 
 
 La section appelée **En un coup d’œil** vous indique la catégorie, les attaques contre qui elle peut être protégée et le produit.
 
-**L’impact** sur les utilisateurs est ce que les  utilisateurs vont faire si l’action d’amélioration est adoptée et que les utilisateurs affectés sont les personnes qui seront affectées.
+**L’impact** sur l’utilisateur est ce que les  utilisateurs vont faire si l’action d’amélioration est adoptée et que les utilisateurs affectés sont les personnes qui seront affectées.
 
 ### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
 

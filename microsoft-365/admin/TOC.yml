@@ -311,7 +311,19 @@
             - name: Résoudre les erreurs liés à l’Analyse de l’utilisation
               href: usage-analytics/usage-analytics-errors.md
         - name: Guide de configuration Microsoft 365 prise en charge de l’intégration avec ServiceNow
-          href: manage/microsoft-365-servicenow-support-integration.md
+          items:
+            - name: "Vue d’ensemble de l’intégration de la prise en charge Microsoft\_365 avec la configuration ServiceNow"
+              href: manage/servicenow-overview.md
+            - name: Configurer l’intégration de la prise en charge avec l’authentification de base ServiceNow
+              href: manage/servicenow-basic-authentication.md
+            - name: "Configurer l’intégration de la prise en charge Microsoft\_365 avec le jeton AAD OAuth"
+              href: manage/servicenow-aad-oauth-token.md
+            - name: "Intégration de la prise en charge Microsoft\_365 pour les incidents d’intégrité des services et les solutions recommandées UNIQUEMENT"
+              href: manage/servicenow-service-health-incidents-solutions-only.md
+            - name: Tester la configuration ServiceNow
+              href: manage/servicenow-testing-the-configuration.md
+            - name: "Résoudre les problèmes d’intégration de la prise en charge Microsoft\_365 avec ServiceNow"
+              href: manage/servicenow-troubleshooting.md
     - name: Gérer les abonnements et la facturation
       href: ../commerce/index.yml
     - name: Sécuriser votre organisation

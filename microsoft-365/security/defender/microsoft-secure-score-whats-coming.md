@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 357fce4ef4ec7f2b4478b00d9702e926213eba2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc1bf8ca103a89c78d3b42689ef2d4a640a2d9da
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209056"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724367"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
+Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 ## <a name="proposed-changes"></a>Proposed changes
 

@@ -20,18 +20,18 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587756"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724762"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
@@ -48,12 +48,12 @@ Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender a
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple du volet Filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
-- Statut
+- État
 - Catégorie
 - Source de détection
 - Balises
@@ -97,17 +97,17 @@ Une page d’alerte se compose des sections suivantes :
 - Article d’alerte, qui est la chaîne d’événements et d’alertes liés à cette alerte dans l’ordre chronologique
 - Détails récapitulatifs
 
-Dans une page d’alerte, vous pouvez sélectionner les ellipses (**...**) à côté de n’importe quelle entité pour voir les actions disponibles, telles que l’ouverture de la page d’alerte ou la liaison de l’alerte à un autre incident.
+Dans une page d’alerte, vous pouvez sélectionner les ellipses (**...**) en regard de n’importe quelle entité pour voir les actions disponibles, telles que l’ouverture de la page d’alerte ou la liaison de l’alerte à un autre incident.
 
 ### <a name="alert-sources"></a>Sources d’alerte
-Microsoft 365 Defender alertes peuvent être issues de solutions telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft Cloud App Security. Vous remarquerez peut-être des alertes avec des caractères prédépendants dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère prédépendant de l’alerte.
+Microsoft 365 Defender alertes peuvent être issues de solutions telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et le module de gouvernance des applications pour Microsoft Cloud App Security. Vous remarquerez peut-être des alertes avec des caractères prédépendants dans l’alerte. Le tableau suivant fournit des conseils pour vous aider à comprendre le mappage des sources d’alerte en fonction du caractère prédépendant de l’alerte.
 
 > [!NOTE]
 > - Les GUID prédépendants sont spécifiques uniquement aux expériences unifiées telles que la file d’attente des alertes unifiées, la page des alertes unifiées, l’examen unifié et l’incident unifié.<br>
 > - Le caractère précédé ne modifie pas le GUID de l’alerte. La seule modification du GUID est le composant prédépendant.<br>
 
 
-Source de l’alerte | Caractère en prédépendant 
+Source de l’alerte | Caractère prédépendé 
 :---|:---
 Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
@@ -148,7 +148,7 @@ Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
 - Commentaire de l’alerte.
 
 > [!NOTE]
-> Une façon de gérer les alertes via l’utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
+> Une façon de gérer les alertes par le biais de l’utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
 > Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après la* mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
 
 À partir de ce volet, vous pouvez également effectuer les actions supplémentaires ci-après : 
@@ -171,6 +171,32 @@ La liste des actions supplémentaires dépend du type d’alerte.
 Une fois que vous avez terminé l’analyse d’une  alerte et qu’elle peut être  résolue, allez dans le volet Gérer l’alerte et marquez l’état de l’alerte comme Résolu et classez-la en tant qu’alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l’alerte dans le **champ Détermination.**
 
 La classification des alertes et la spécification de leur détermination permettent d’Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
+
+## <a name="use-power-automate-to-triage-alerts"></a>Utiliser Power Automate pour trier les alertes
+
+Les équipes d’opérations de sécurité modernes (SecOps) ont besoin d’automatisation pour fonctionner efficacement. Pour se concentrer sur le recherche et l’investigation des menaces réelles, les équipes SecOps utilisent Power Automate pour trier la liste des alertes et éliminer ceux qui ne sont pas des menaces.  
+
+### <a name="criteria-for-resolving-alerts"></a>Critères de résolution des alertes
+
+- Le message d’in-office de l’utilisateur est allumé
+
+- L’utilisateur n’est pas marqué comme étant à risque élevé
+
+Si les deux sont vraies, SecOps marque l’alerte comme un voyage légitime et la résout. Une notification est publiée dans Microsoft Teams une fois l’alerte résolue. 
+
+### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>Connecter Power Automate à Microsoft Cloud App Security
+
+Pour créer l’automatisation, vous aurez besoin d’un jeton d’API avant de pouvoir vous connecter Power Automate à Microsoft Cloud App Security. 
+
+1. Cliquez **Paramètres,** sélectionnez **Extensions de sécurité,** puis cliquez sur Ajouter un jeton **dans** **l’onglet Jetons d’API.** 
+
+2. Fournissez un nom pour votre jeton, puis cliquez sur **Générer.** Enregistrez le jeton, car vous en aurez besoin ultérieurement.
+
+### <a name="create-an-automated-flow"></a>Créer un flux automatisé
+
+Pour obtenir un processus détaillé pas à pas, regardez la vidéo [ici.](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn) 
+
+Cette vidéo décrit également comment connecter l’automatisation de l’alimentation à Sécurité des applications cloud. 
 
 ## <a name="next-steps"></a>Prochaines étapes
 

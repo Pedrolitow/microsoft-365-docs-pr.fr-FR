@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31cfebba6d7bde610ac855dc4c7985d2432fabe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b08a89adb5f2cc8f02cdce4e5150b82838f287cf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190244"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702856"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de mise en quarantaine pour libérer et signaler les messages mis en quarantaine
 
@@ -39,14 +39,16 @@ ms.locfileid: "60190244"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, [voir Messages mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
-_Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités pris en charge). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md). Les polices de mise en quarantaine contrôlent également si les destinataires affectés (y compris les boîtes aux lettres partagées) obtiennent des _notifications périodiques_ de mise en quarantaine concernant leurs messages mis en quarantaine. Les notifications de mise en quarantaine remplacent les notifications de courrier indésirable pour toutes les fonctionnalités de protection prise en charge (et pas seulement les verdicts de stratégie anti-courrier indésirable).
+_Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités pris en charge). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md). Les polices de mise en quarantaine contrôlent également si les destinataires affectés (y compris les boîtes aux lettres partagées) obtiennent des _notifications périodiques_ de mise en quarantaine concernant leurs messages mis en quarantaine. Les notifications de mise en quarantaine remplacent les notifications de courrier indésirable à l’utilisateur final pour toutes les fonctionnalités de protection prise en charge (et pas seulement les verdicts de stratégie anti-courrier indésirable).
 
-Les administrateurs peuvent également utiliser les paramètres globaux des stratégies de mise en quarantaine pour personnaliser le nom complet de l’expéditeur, le texte de la clause d’exclusion de responsabilité dans différentes langues et le logo de l’entreprise utilisé dans les notifications. Pour obtenir des instructions, voir [Configurer les paramètres globaux](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)de notification de mise en quarantaine dans Microsoft 365 Defender portail.
+Les notifications de mise en quarantaine ne sont pas allumées dans les notifications de mise en quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Les notifications de mise en quarantaine sont allumées dans la stratégie de mise en quarantaine intégrée nommée NotificationEnabledPolicy si [votre organisation l’a.](quarantine-policies.md#full-access-permissions-and-quarantine-notifications) Dans le cas contraire, pour activer les notifications de mise en quarantaine dans les stratégies de mise en quarantaine, vous devez créer et [configurer une nouvelle stratégie de mise en quarantaine.](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)
+
+Les administrateurs peuvent également utiliser les paramètres globaux des stratégies de mise en quarantaine pour personnaliser le nom complet de l’expéditeur, le texte de la clause d’exclusion de responsabilité dans différentes langues et le logo de l’entreprise utilisé dans les notifications de mise en quarantaine. Pour obtenir des instructions, voir [Configurer les paramètres globaux de notification de mise en quarantaine.](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)
 
 Pour les boîtes aux lettres partagées, les notifications de mise en quarantaine sont uniquement pris en charge pour les utilisateurs qui ont une autorisation FullAccess sur la boîte aux lettres partagée. Pour plus d’informations, voir [Utiliser le EAC pour modifier la délégation de boîte aux lettres partagée.](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)
 
 > [!NOTE]
-> Par défaut, les messages mis en quarantaine en tant que hameçonnage à haut niveau de confiance, programmes malveillants, par règles de flux de messagerie (également appelées règles de transport) ou stratégies de pièces jointes Coffre dans Defender pour Office 365 sont disponibles uniquement pour les administrateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
+> Par défaut, les messages mis en quarantaine comme hameçonnage à haut niveau de confiance, programmes malveillants, par règles de flux de messagerie (également appelées règles de transport) ou stratégies de pièces jointes Coffre dans Defender pour Office 365 sont uniquement disponibles pour les administrateurs (par défaut, la stratégie de mise en quarantaine AdminOnlyAccessPolicy est utilisée). Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 >
 > Les notifications de mise en quarantaine ne sont pas pris en charge pour les groupes.
 

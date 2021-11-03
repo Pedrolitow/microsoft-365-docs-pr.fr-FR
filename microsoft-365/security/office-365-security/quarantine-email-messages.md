@@ -26,8 +26,8 @@ ms.openlocfilehash: 58097b5dba60c1ea085ea6e78c878982abe24021
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668453"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703620"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Messages électroniques mis en quarantaine dans EOP et Defender pour Office 365
 
@@ -68,7 +68,7 @@ Les utilisateurs et les administrateurs peuvent travailler avec les messages mis
   |Messages mis en quarantaine par les stratégies anti-hameçonnage : veille contre l’usurpation d’adresse dans EOP ; emprunt d’identité d’utilisateur, emprunt d’identité de domaine ou intelligence de boîte aux lettres dans Defender pour Office 365.|30 jours|Oui|Cette période de rétention est  également contrôlée par le paramètre Conserver le courrier indésirable en quarantaine pendant ce nombre de jours _(QuarantineRetentionPeriod_) dans les stratégies **anti-courrier** indésirable. La période de rétention utilisée est la valeur de la première stratégie **anti-courrier** indésirable correspondante dans qui le destinataire est défini.|
   |Messages mis en quarantaine par des stratégies anti-programme malveillant (messages malveillants).|15 jours|Non||
   |Messages mis en quarantaine par les stratégies Coffre pièces jointes dans Defender pour Office 365 (messages malveillants).|15 jours|Non||
-  |Messages mis en quarantaine par des règles de flux de messagerie : l’action consiste à remettre le **message** en quarantaine hébergé _(mise en quarantaine)._|30 jours|Non||
+  |Messages mis en quarantaine par les règles de flux de messagerie : l’action consiste à remettre le **message** en quarantaine hébergé _(mise en quarantaine)._|30 jours|Non||
   |Fichiers mis en quarantaine par Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams (fichiers malveillants).|15 jours|Non||
   |
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e84e88fd478209d13fca889010b023a9c10f450b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164247"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701490"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -39,13 +39,15 @@ Pour vous inscrire et acheter des Microsoft 365 Business Standard (ou Microsoft 
 > La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
 
 1. Dans la [page Microsoft 365 entreprise,](https://go.microsoft.com/fwlink/?linkid=2109654)sélectionnez Voir les plans & **tarifs.**
-2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur ce qui est inclus dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**
+2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur les informations incluses dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**
 3. Sur la page **Merci d’avoir choisi Microsoft 365 Business Standard,** entrez vos informations pour commencer. Sélectionnez **Suivant**.
-4. Entrez une adresse de messagerie que vous utilisez déjà. Il peut s’y trouver n’importe quelle adresse que Vous souhaitez que Microsoft utilise pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Sélectionnez ensuite, **Configurer le compte.**
-5. Entrez votre nom, votre numéro de téléphone d’entreprise, votre taille professionnelle, votre nom de société et votre emplacement. Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. Sélectionnez **Suivant**.
+4. Entrez une adresse de messagerie que vous utilisez déjà. Il peut s’y trouver n’importe quelle adresse que Vous souhaitez que Microsoft utilise pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Ensuite, **sélectionnez, Configurer le compte**.
+5. Entrez votre nom, votre numéro de téléphone d’entreprise, votre taille professionnelle, votre nom de société et votre emplacement. Sélectionnez **Suivant**.
 
-    > [!NOTE]
-    > Nous affichons le nom de votre société dans le centre d’administration. C’est ici que vous gérez Microsoft 365 utilisateurs, licences et autres fonctionnalités et services. Nous l’incluons également dans toutes les URL SharePoint site web.
+    > [!IMPORTANT]
+    > Si vous ajoutez un domaine personnalisé dans le cadre de l’inscription, le nom de la société que vous entrez ici sera utilisé dans toutes vos URL SharePoint et OneDrive personnalisées. Il se peut que vous ne soyez pas en mesure de le modifier. Assurez-vous donc qu’il est correctement orthographgraphé et qu’il s’agit du nom que vous souhaitez utiliser du point de vue de la branding. Le nom de votre société apparaît également dans le Centre d’administration, où vous gérez Microsoft 365 utilisateurs, licences et autres fonctionnalités et services.
+    > 
+    > Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. 
 
 6. Aidez-nous à vous assurer qu’il s’agit de vous. Entrez un numéro que nous pouvons utiliser pour vous joindre et sélectionnez **Code de vérification d’envoi.**
 
@@ -65,7 +67,7 @@ Vous vous connectez à Microsoft 365 avec cette adresse de messagerie. Par exemp
 
 3. Dans la page **Détails de confirmation,** nous vous fournirons plus d’informations sur votre abonnement. Vous pouvez maintenant passer à la Centre d'administration Microsoft 365 pour ajouter des utilisateurs, installer Office applications, inviter votre équipe à utiliser Microsoft 365 et bien plus encore. Nous vous enverrons également un courrier électronique avec les étapes de Microsoft 365 Business Standard.
 
-Cette option offre le moyen le plus simple et le plus rapide de commencer à utiliser les fonctionnalités de base de la suite de bureau Office, du Teams, des formulaires et du stockage OneDrive cloud. Cette option est recommandée pour les très petites entreprises qui n’ont pas besoin de courrier électronique de marque immédiatement, ou qui utilisent déjà le courrier électronique de marque d’un autre fournisseur et qui n’ont pas l’intention d’utiliser Microsoft Exchange.
+Cette option offre le moyen le plus simple et le plus rapide de commencer à utiliser les fonctionnalités de base de la suite de bureau Office, du Teams, des formulaires et du stockage OneDrive cloud. Cette option est recommandée pour les très petites entreprises qui n’ont pas besoin de courrier électronique de marque immédiatement ou qui utilisent déjà le courrier électronique de marque d’un autre fournisseur et qui n’ont pas l’intention d’utiliser Microsoft Exchange.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
@@ -76,7 +78,7 @@ Vous pouvez ajouter un domaine d’entreprise à tout moment pour accéder au re
 - Planificateur microsoft et Listes Microsoft
 - Le plus large éventail d’intégrations d’applications non-Microsoft (par exemple, Salesforce, Adobe) qui fonctionnent dans Teams et Office.
 
-#### <a name="next-steps"></a>Étapes suivantes
+#### <a name="next-steps"></a>Prochaines étapes
 
 Si vous souhaitez ajouter un domaine et créer un compte de messagerie professionnelle, vous pouvez suivre les étapes des articles ci-dessous :
 
@@ -85,7 +87,7 @@ Si vous souhaitez ajouter un domaine et créer un compte de messagerie professio
 
 ### <a name="option-2-create-a-new-business-email-account"></a>Option 2 : Créer un compte de messagerie professionnelle
 
-Avec cette option, vous pourrez utiliser Microsoft 365 Exchange en tant que fournisseur de messagerie professionnel et de marque. Tous vos utilisateurs auront une adresse de messagerie de domaine partagée. Par exemple, leur nom d’utilisateur, suivi de @contoso.com. Vous et vos utilisateurs vous connectez Microsoft 365 avec cette nouvelle adresse e-mail. Lorsque vous suivez ce processus (ajoutez un domaine et créez des comptes de messagerie professionnelle), vous avez accès à toutes les fonctionnalités fournies dans Microsoft 365 Business Standard. Pour obtenir la procédure d’achat ou d’ajout d’un domaine, voir [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+Avec cette option, vous serez en mesure d’utiliser Microsoft 365 Exchange en tant que fournisseur de courrier professionnel et de marque. Tous vos utilisateurs auront une adresse de messagerie de domaine partagée. Par exemple, leur nom d’utilisateur, suivi de @contoso.com. Vous et vos utilisateurs vous connectez Microsoft 365 avec cette nouvelle adresse e-mail. Lorsque vous suivez ce processus (ajoutez un domaine et créez des comptes de messagerie professionnelle), vous avez accès à toutes les fonctionnalités fournies dans Microsoft 365 Business Standard. Pour obtenir la procédure d’achat ou d’ajout d’un domaine, voir [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
 :::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Screenshot: Sign in with new business email.":::
 
@@ -114,9 +116,9 @@ Si vous choisissez d’utiliser un domaine que vous possédez déjà, vous pouve
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Le paiement mensuel et annuel a-t-il un avantage ?
 
-Pour offrir aux clients la plus grande souplesse possible, différentes options de paiement sont disponibles.
+Pour offrir aux clients le plus de flexibilité possible, différentes options de paiement sont disponibles.
 
-- Microsoft 365 Business Basic, Applications pour les entreprises, Business Standard et Business Premium sont disponibles pour un paiement d’engagement mensuel ou annuel.
+- Microsoft 365 Business Basic, applications pour les entreprises, Business Standard et Business Premium sont disponibles pour un paiement d’engagement mensuel ou annuel.
 - Paiement d’engagement mensuel : vous payez mois par mois et vous pouvez annuler à tout moment.
 - Paiement d’engagement annuel : vous vous inscrivez pour un abonnement d’un an, mais vous pouvez choisir de payer mois par mois ou pour l’année entière au moment de votre inscription. Il existe une remise pour l’utilisation de cette option de paiement.
 

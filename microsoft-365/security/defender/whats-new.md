@@ -1,6 +1,6 @@
 ---
 title: Nouveautés de Microsoft 365 Defender
-description: Répertorie les nouvelles fonctionnalités de Microsoft 365 Defender
+description: Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender
 keywords: nouveautés de Microsoft 365 Defender, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 74656a9f79fba0e81afcb9db207c83162b2dfd81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 930d9fc489e449effcb61c3224f5695ec835a1a1
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176572"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724702"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -46,7 +46,11 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour l’identité](/defender-for-identity/whats-new)
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="november-2021"></a>Novembre 2021
+- (Aperçu) La fonctionnalité de module de gouvernance des applications de Defender pour les applications cloud est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications activées pour OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications.](/cloud-app-security/app-governance-manage-app-governance)
 
+## <a name="october-2021"></a>Octobre 2021
+- (GA) Dans le hunting avancé, d’autres colonnes ont été ajoutées dans la table [CloudAppEvents.](advanced-hunting-cloudappevents-table.md) Vous pouvez désormais `AccountType` ajouter , , , et à vos `IsExternalUser` `IsImpersonated` `IPTags` `IPCategory` `UserAgentTags` requêtes. 
 
 ## <a name="september-2021"></a>Septembre 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. Vous pouvez voir la disponibilité et l’état des types d’événements dans les types d’Microsoft 365 Defender pris en charge [dans l’API de diffusion en continu.](supported-event-types.md)
@@ -56,9 +60,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 ## <a name="august-2021"></a>Août 2021
 - (Aperçu) Microsoft Defender pour les Office 365 disponibles dans le recherche avancée
-<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide d’un recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
+<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide de la recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
-- (Aperçu) Graphique de l’incident <br>  Un nouvel **onglet Graph** sous  l’onglet Résumé d’un incident affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’à quel point l’attaquant est passé.
+- (Aperçu) Graphique d’incident <br>  Un nouvel **onglet Graph** sous  l’onglet Résumé d’un incident affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’à quel point l’attaquant est passé.
 
 ## <a name="july-2021"></a>Juillet 2021
 - [catalogue Professional services de transport](https://sip.security.microsoft.com/interoperability/professional_services)<br>Améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme avec les connexions partenaires pris en charge.
@@ -66,8 +70,8 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="june-2021"></a>Juin 2021
 - (Aperçu) [Afficher les rapports par balise de menace](threat-analytics.md#view-reports-per-threat-tags)<br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents.
 - (Aperçu) [API de diffusion en continu](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
-- (Aperçu) [Prendre des mesures dans le recherche avancée](advanced-hunting-take-action.md)<br> Contiennez rapidement des menaces ou adressez les ressources compromises que vous trouvez dans le [recherche avancée.](advanced-hunting-overview.md)
-- (Aperçu) [Référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancée directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
+- (Aperçu) [Prendre des mesures dans le recherche avancée](advanced-hunting-take-action.md)<br> Contenir rapidement des menaces ou traiter les biens compromis que vous trouvez dans le [recherche avancée.](advanced-hunting-overview.md)
+- (Aperçu) [Référence du schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
 - (Aperçu) [Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)<br> Obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.
     
 
@@ -78,13 +82,13 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 
 ## <a name="april-2021"></a>Avril 2021
-- Microsoft 365 Defender<br> Le portail [d’Microsoft 365 Defender](https://security.microsoft.com) amélioré est désormais disponible. Cette nouvelle expérience regroupe Defender pour point de terminaison, Defender pour Office 365, Defender pour identité et bien plus encore dans un portail unique. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](./overview-security-center.md).
+- Microsoft 365 Defender<br> Le portail [d’Microsoft 365 Defender](https://security.microsoft.com) amélioré est désormais disponible. Cette nouvelle expérience regroupe Defender pour point de terminaison, Defender pour Office 365, Defender pour identité et bien plus encore dans un portail unique. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 - [Microsoft 365 Defender d’analyse des menaces](threat-analytics.md)<br>
  L’analyse des menaces vous permet de répondre et de minimiser l’impact des attaques actives. Vous pouvez également en savoir plus sur les tentatives d’attaques bloquées par Microsoft 365 Defender solutions et prendre des mesures préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible pour Microsoft Defender pour Endpoint et Microsoft Defender pour les titulaires Office licence E5.
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans le `AppFileEvents` tableau.
 ## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le portail [Microsoft 365 Defender amélioré https://security.microsoft.com) (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
+- (Aperçu) Le portail [Microsoft 365 Defender amélioré https://security.microsoft.com) (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 - **[(Aperçu) Microsoft 365 Defender API](api-overview.md)** : les API de Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction des tables de recherche avancées et d’incident partagées. 

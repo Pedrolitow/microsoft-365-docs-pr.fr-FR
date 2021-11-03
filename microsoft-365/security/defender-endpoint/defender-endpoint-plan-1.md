@@ -1,25 +1,25 @@
 ---
 title: Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
-description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement de protection des points de terminaison.
+description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement à la protection des points de terminaison.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 17026088cc10b5ace84cbab31f0a383661e2484b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4881d1ca4d8b6ca12dbb7c6c273328e515a503ac
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204046"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704875"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -31,7 +31,7 @@ Microsoft Defender pour point de terminaison est une plateforme de sécurité de
 - **Defender for Endpoint Plan 1**, actuellement en prévisualisation, et décrit dans cet article ; et 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, généralement disponible, et anciennement [appelé Defender for Endpoint](microsoft-defender-endpoint.md).
 
-L’image suivante illustre ce qui est inclus dans Defender pour Endpoint Plan 1 (prévisualisation) :
+Les zones vertes de l’image suivante illustrent ce qui est inclus dans Defender pour Endpoint Plan 1 (prévisualisation) :
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Diagramme Defender for Endpoint Plan 1":::
 
@@ -59,7 +59,7 @@ Defender pour endpoint Plan 1 (prévisualisation) inclut les fonctionnalités su
 Les sections suivantes fournissent plus de détails sur ces fonctionnalités. 
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender pour Endpoint Plan 1 (prévisualisation).
 
 ## <a name="next-generation-protection"></a>Protection de nouvelle génération
 
@@ -67,7 +67,7 @@ La protection nouvelle génération inclut une protection antivirus et anti-prog
 
 - Protection antivirus en temps réel, heuristique et basée sur le comportement 
 - Protection cloud, qui inclut la détection et le blocage quasi instantanés des menaces nouvelles et émergentes 
-- Mises à jour de produits et de protection dédiées, y compris les mises à jour liées Antivirus Microsoft Defender 
+- Mises à jour de produits et de protection dédiées, y compris les mises à jour relatives Antivirus Microsoft Defender 
 
 Pour plus d’informations, voir [vue d’ensemble de la protection nouvelle génération.](next-generation-protection.md)
 
@@ -79,8 +79,8 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 |:---|:---|:---|
 | Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
 | Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
-| Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
-| Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
+| File | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
+| File | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 
 Pour en savoir plus, consultez les articles suivants :
 
@@ -107,7 +107,7 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter d’autres fichiers
 - Exécution de scripts obscurcis ou suspects
-- Comportements de l’initiateur que les applications n’initient généralement pas au cours d’un travail normal
+- Comportements de l’initiateur que les applications ne déclenchent généralement pas au cours d’un travail normal
 
 Les applications d’entreprise légitimes peuvent présenter de tels comportements logiciels ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
@@ -142,7 +142,7 @@ Pour en savoir plus, [consultez Protéger votre réseau.](network-protection.md)
 
 ### <a name="network-firewall"></a>Pare-feu réseau
 
-Grâce à la protection du pare-feu réseau, vous pouvez définir des règles qui déterminent le trafic réseau autorisé à circuler vers ou depuis les appareils de votre organisation. Avec votre pare-feu réseau et la sécurité avancée que vous obtenez avec Defender pour le point de terminaison, vous pouvez :
+Grâce à la protection du pare-feu réseau, vous pouvez définir des règles qui déterminent le trafic réseau autorisé à circuler vers ou depuis les appareils de votre organisation. Avec votre pare-feu réseau et la sécurité avancée que vous obtenez avec Defender for Endpoint, vous pouvez :
 
 - Réduire le risque de menaces de sécurité réseau
 - Protéger les données sensibles et la propriété intellectuelle
@@ -158,7 +158,7 @@ Pour plus d’informations, [voir Contrôle d’application pour Windows](/windo
 
 ## <a name="centralized-management"></a>Gestion centralisée
 
-Defender for Endpoint Plan 1 (prévisualisation) inclut le portail Microsoft 365 Defender, qui permet à votre équipe de sécurité d’afficher les informations actuelles sur les menaces détectées, de prendre les mesures appropriées pour atténuer les menaces et de gérer de manière centralisée les paramètres de protection contre les menaces de votre organisation.
+Defender pour endpoint Plan 1 (prévisualisation) inclut le portail Microsoft 365 Defender, qui permet à votre équipe de sécurité d’afficher les informations actuelles sur les menaces détectées, de prendre les mesures appropriées pour atténuer les menaces et de gérer de manière centralisée les paramètres de protection contre les menaces de votre organisation.
 
 Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overview.md)
 
@@ -168,13 +168,13 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
-### <a name="reporting"></a>Rapports
+### <a name="reporting"></a>Reporting
 
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 
 - La page **d’accueil** inclut des cartes pour afficher en un coup d’œil les utilisateurs ou appareils à risque, le nombre de menaces détectées et les alertes/incidents qui ont été créés.
 - La section **Incidents & alertes** répertorie tous les incidents qui ont été créés suite à des alertes déclenchées. Les alertes et les incidents sont générés lorsque des menaces sont détectées sur plusieurs appareils.
-- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de actions sous **l’onglet** Historique.
+- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de l’action sous **l’onglet** Historique.
 - La section **Rapports** inclut des rapports qui indiquent les menaces détectées et leur état. 
 
 Pour en savoir plus, [consultez La mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation).](mde-plan1-getting-started.md)
@@ -194,9 +194,9 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Comparer Microsoft Defender pour Endpoint Plan 1 (prévisualisation) à Plan 2](defender-endpoint-plan-1-2.md)
 - [Configurer Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-setup-configuration.md)
 - [Mise en place de Defender pour Endpoint Plan 1 (prévisualisation)](mde-plan1-getting-started.md)
-- [Gérer Defender pour endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)
+- [Gérer Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)

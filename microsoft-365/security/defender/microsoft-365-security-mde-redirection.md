@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f771837dd40bc8a3fbaebeac060c10259395c3fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699064"
+ms.locfileid: "60724654"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirection des comptes de Microsoft Defender pour le point de terminaison vers Microsoft 365 Defender
 
@@ -114,7 +114,7 @@ Ce paramètre peut être à nouveau activé à tout moment.
 Une fois désactivés, les comptes ne seront plus acheminés vers security.microsoft.com, et vous aurez à nouveau accès à l’ancien portail : securitycenter.windows.com ou securitycenter.microsoft.com. 
 
 ## <a name="related-information"></a>Informations connexes
-- [Microsoft 365 Defender vue d’ensemble](overview-security-center.md)
+- [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft fournit un SIEM et XDR unifiés pour moderniser les opérations de sécurité](https://www.microsoft.com/security/blog/?p=91813) 
 - [Infographie XDR et SIEM](https://afrait.com/blog/xdr-versus-siem/) 

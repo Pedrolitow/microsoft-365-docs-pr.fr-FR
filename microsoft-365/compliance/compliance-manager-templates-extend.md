@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment étendre les modèles d’évaluation dans le Gestionnaire de conformité Microsoft pour ajouter et modifier des contrôles.
-ms.openlocfilehash: 4618c085228c44e3af1aa0b3de9c3b1ebd63424c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336058"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703068"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>Étendre les modèles d’évaluation dans le Gestionnaire de conformité Microsoft
 
 Le Gestionnaire de conformité offre la possibilité d’ajouter vos propres contrôles et actions d’amélioration à un modèle existant. Ce processus est appelé extension d’un modèle.
 
-Pour étendre un modèle, vous allez utiliser des instructions spéciales pour modifier les données des modèles, selon que vous étendez des modèles d’évaluation Microsoft 365 ou universels.
+Pour étendre un modèle, vous allez utiliser des instructions spéciales pour modifier les données des modèles, selon que vous étendez les modèles d’évaluation Microsoft ou les modèles d’évaluation universels.
 
-## <a name="extend-microsoft-365-assessment-templates"></a>Étendre Microsoft 365 modèles d’évaluation
+## <a name="extend-microsoft-assessment-templates"></a>Étendre les modèles d’évaluation Microsoft
 
-Lorsque vous étendez un modèle Microsoft 365, il peut toujours recevoir des mises à jour publiées par Microsoft, ce qui peut se produire lorsque des modifications sont [apportées](compliance-manager-assessments.md#accept-updates-to-assessments)à la réglementation ou au produit associé (voir Accepter les mises à jour des évaluations).
+Lorsque vous étendez un modèle Microsoft, tel qu’un modèle créé pour être utilisé avec Microsoft 365, il peut toujours recevoir les mises à jour publiées par Microsoft. Des mises à jour peuvent se produire en cas de modifications apportées à la réglementation ou au produit associé (voir Accepter les mises [à jour des évaluations).](compliance-manager-assessments.md#accept-updates-to-assessments)
 
 ### <a name="prepare-template-data-and-create-extension"></a>Préparer les données de modèle et créer une extension
 
@@ -49,7 +49,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 2. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Étendre un modèle Microsoft,** puis **sélectionnez Modèle Microsoft.**
 
-3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur état actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous fournira un avis.
+3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur état actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous en fournira un avis.
 
 4. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran. Utiliser **la recherche** pour appliquer des filtres pour localiser le modèle de votre recherche
 
@@ -63,7 +63,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
-9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.** (Si vous devez apporter des modifications, **sélectionnez Télécharger un fichier différent.)**
+9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant**. (Si vous devez apporter des modifications, **sélectionnez Télécharger fichier différent.)**
 
 10. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
 

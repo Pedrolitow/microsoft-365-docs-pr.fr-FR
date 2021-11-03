@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 302317cd71921333b2fab8fd987f170bc7b69591
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 63da2b70153644b19a676f022ae800cafc4998c4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197940"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702514"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Un centre des opérations de sécurité moderne (SOC) est une organisation adaptative pilotée par l’intelligence qui adopte une stratégie de défense contre les menaces qui consiste à déplacer les processus de sécurité plus tôt dans le processus de déploiement afin que la sécurité soit intégrée. Cela signifie que l’affectation traditionnelle de technologies et de processus isolés à des analystes de sécurité unique ne prend plus en charge l’augmentation importante des données provenant de plusieurs sources. Les analystes et ingénieurs de sécurité sont invités à adopter une approche plus globale et à utiliser des informations partagées sur différentes plateformes et domaines pour prendre des mesures efficaces. 
+Un centre des opérations de sécurité moderne (SOC) est une organisation adaptative pilotée par l’intelligence qui adopte une stratégie de défense contre les menaces qui consiste à déplacer les processus de sécurité plus tôt dans le processus de déploiement afin que la sécurité soit intégrée. Cela signifie que l’affectation traditionnelle de technologies et de processus isolés à des analystes de sécurité unique ne prend plus en charge l’augmentation importante des données provenant de plusieurs sources. Les analystes et ingénieurs de sécurité sont invités à adopter une approche plus globale et à utiliser des informations partagées sur différentes plateformes et domaines pour prendre des mesures efficaces.
 
-Pour cette raison, le déploiement et l’implémentation de la plateforme Microsoft Defender devront être planifiés avec soin avec l’équipe SOC afin d’optimiser les opérations quotidiennes et la gestion du cycle de vie du service Defender lui-même. Ce contenu explore plusieurs concepts sur la façon d’opérationnaliser et d’intégrer des Microsoft 365 Defender avec des personnes, des processus et des technologies nouveaux ou existants qui constituent la base des opérations de sécurité modernes.
+Pour cette raison, le déploiement et l’implémentation de la plateforme Microsoft 365 Defender auront besoin d’une planification minutieuse avec l’équipe SOC pour optimiser les opérations quotidiennes et la gestion du cycle de vie du service Microsoft 365 Defender lui-même. Ce contenu explore plusieurs concepts sur la façon d’opérationnaliser et d’intégrer des Microsoft 365 Defender avec des personnes, des processus et des technologies nouveaux ou existants qui constituent la base des opérations de sécurité modernes.
 
 Si vous ne connaissez pas déjà Microsoft 365 Defender, consultez les articles suivants :
 
@@ -63,7 +63,7 @@ Ce contenu est conçu pour les raisons suivantes :
 - Équipes d’investigation & CSIRT
 - Microsoft 365 administrateurs
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez ces étapes pour intégrer Microsoft 365 Defender dans votre SOC.
 

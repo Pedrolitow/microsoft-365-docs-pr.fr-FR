@@ -22,8 +22,8 @@ ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673757"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702164"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies Coffre pièces jointes dans Microsoft Defender pour Office 365
 
@@ -119,15 +119,15 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
      Ces valeurs sont expliquées dans les [paramètres Coffre pièces jointes.](safe-attachments.md#safe-attachments-policy-settings)
 
-   - **Stratégie de mise** en quarantaine : sélectionnez la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par Coffre pièces jointes (**bloquer,** remplacer ou **remise dynamique).** Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+   - **Stratégie de mise** en quarantaine : sélectionnez la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine Coffre pièces jointes (**bloquer,** **remplacer** ou **remise dynamique).** Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
      Une valeur vide signifie que la stratégie de mise en quarantaine par défaut est utilisée (AdminOnlyAccessPolicy pour les détections de messages électroniques par Coffre pièces jointes). Lorsque vous modifiez ultérieurement la stratégie Coffre pièces jointes ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche.
 
    - Rediriger les messages contenant des pièces **jointes détectées**: si vous sélectionnez Activer la **redirection,** vous pouvez spécifier une adresse de messagerie dans les messages d’envoi qui contiennent des pièces **jointes bloquées, surveillées** ou remplacées dans la zone d’adresse de messagerie spécifiée pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants à des besoins d’analyse et d’examen.
 
-     La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Coffre Paramètres des pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+     La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [Coffre paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer (délai ou **erreurs) : l’action** spécifiée par Coffre La réponse anti-programme malveillant inconnue pièces **jointes** est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
+   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer **(délai d’Coffre** ou erreurs) : l’action spécifiée par Coffre La réponse de programmes **malveillants inconnus** pièces jointes est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 

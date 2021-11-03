@@ -1,7 +1,7 @@
 ---
 title: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 ms.reviewer: ''
-description: Inscrivez-vous aux experts microsoft en matière de menaces pour configurer, gérer et utiliser ces derniers dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
+description: Inscrivez-vous auprès des experts microsoft en matière de menaces pour configurer, gérer et utiliser ces derniers dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
 keywords: Spécialistes des menaces Microsoft, service de recherche de menace gérée, MTE, service de recherche géré Microsoft
 search.product: Windows 10
 ms.prod: m365-security
@@ -18,22 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a1a8c8eeffaa05e34f7a3216b743540b1e6406f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 85ef173543b9696a8aa8a0c7505ed30cefc5f932
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553483"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701740"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -42,9 +42,9 @@ ms.locfileid: "60553483"
 
 Assurez-vous que Defender pour le point de terminaison est déployé dans votre environnement avec des appareils inscrits, et pas seulement sur une mise en place de laboratoire.
 
-Si vous êtes un client Defender pour point de terminaison, vous devez demander **des Spécialistes des menaces Microsoft - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
+Si vous êtes un client Defender pour point de terminaison, vous devez demander **des Spécialistes des menaces Microsoft - Notifications** d’attaque ciblées pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner **à Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour les Spécialistes des menaces Microsoft - Service de notifications d’attaques ciblées
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées
 
 Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer via le Centre de sécurité Microsoft Defender.
 
@@ -62,7 +62,7 @@ Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer 
 
     ![Image de la confirmation Spécialistes des menaces Microsoft application.](images/mte-applicationconfirmation.png)
 
-Lorsqu’il est accepté, vous recevez un  e-mail de bienvenue et le bouton Appliquer change sur un bouton bascule qui est « sur ». Si vous souhaitez vous dérender du service Notifications d’attaques  ciblées, faites glisser le bouton bascule vers le bas, puis cliquez sur Enregistrer les préférences en bas de la page.
+Lorsqu’il est accepté, vous recevez un  e-mail de bienvenue et le bouton Appliquer change sur un bouton bascule qui est « sur ». Si vous souhaitez vous dérender du service Notifications d’attaques  ciblées, faites glisser le bouton bascule vers le bas et cliquez sur Enregistrer les préférences en bas de la page.
 
 ## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>L’endroit où les notifications d’attaque ciblées s’Spécialistes des menaces Microsoft
 
@@ -70,7 +70,7 @@ Vous pouvez recevoir des notifications d’attaques ciblées Spécialistes des m
 
 - Page Incidents du portail Defender pour les points **de terminaison**
 - Tableau de bord **Alertes** du portail Defender pour point de terminaison
-- API d’alerte OData [et API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) [REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) d’alerte OData et [API REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [Table DeviceAlertEvents en](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) recherche avancée
 - Votre courrier électronique, si vous choisissez de le configurer
 
@@ -78,7 +78,7 @@ Pour recevoir des notifications d’attaque ciblée par courrier électronique, 
 
 ### <a name="create-an-email-notification-rule"></a>Créer une règle de notification par courrier électronique
 
-Vous pouvez créer des règles pour envoyer des notifications par courrier électronique aux destinataires de la notification. Pour plus d’informations, voir Configurer les  [notifications d’alerte](configure-email-notifications.md) pour créer, modifier, supprimer ou dépanner les notifications par courrier électronique.
+Vous pouvez créer des règles pour envoyer des notifications par courrier électronique aux destinataires de la notification. Pour  [plus d’informations,](configure-email-notifications.md) voir Configurer les notifications d’alerte pour créer, modifier, supprimer ou dépanner les notifications par courrier électronique.
 
 ## <a name="view-the-targeted-attack-notification"></a>Afficher la notification d’attaque ciblée
 
@@ -101,7 +101,7 @@ Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft q
 > - Les demandes d’alerte liées aux données d’intelligence contre les menaces personnalisées de votre organisation ne sont actuellement pas pris en charge. Pour plus d’informations, consultez vos opérations de sécurité ou votre équipe de réponse aux incidents.
 > - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le portail du Centre de sécurité pour pouvoir soumettre une demande « Consulter un expert en menaces ».
 
-1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident.** Assurez-vous que la page de l’alerte ou du périphérique approprié est en vue avant d’envoyer une demande d’enquête.
+1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident.** Assurez-vous que la page de l’alerte ou du périphérique approprié est en cours d’affichage avant d’envoyer une demande d’enquête.
 
 2. Dans le menu supérieur droit, cliquez sur **le bouton ?** . Ensuite, **sélectionnez Consulter un expert en menaces.**
 
@@ -134,7 +134,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 - Nous voyons un nouveau type d’alerte pour un binaire « living-off-the-land » : [AlertID]. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons examiner plus en détail ?
 - Nous avons observé deux attaques similaires, qui tentent d’exécuter des scripts PowerShell malveillants, mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par O365 ». Quelle est la différence ?
-- Je reçois une alerte impaire aujourd’hui pour le nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. Je ne trouve aucune preuve supplémentaire autour de ces tentatives de se connecte. Comment Defender for Endpoint peut-il voir ces tentatives ? Quel type de signatures sont surveillés ?
+- Je reçois une alerte impaire aujourd’hui pour le nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. Je ne trouve aucune preuve supplémentaire autour de ces tentatives de se connecte. Comment Defender for Endpoint peut-il voir ces tentatives ? Quel type de connectez-vous est surveillé ?
 - Pouvez-vous donner plus de contexte ou d’informations sur cette alerte : « Un comportement suspect a été observé par un utilitaire système ».
 
 ### <a name="possible-machine-compromise"></a>Compromission possible de l’ordinateur
@@ -144,7 +144,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ### <a name="threat-intelligence-details"></a>Détails de l’intelligence des menaces
 
-- Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document Word malveillant a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes Microsoft Defender pour les programmes malveillants [nom du programme malveillant]. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous m’envoyer un lien ?
+- Nous avons détecté un e-mail de hameçonnage qui a remis un document Word malveillant à un utilisateur. Le document Word malveillant a provoqué une série d’événements suspects, qui ont déclenché plusieurs alertes Defender for Endpoint pour les programmes malveillants [nom de programme malveillant]. Avez-vous des informations sur ce programme malveillant ? Si oui, pouvez-vous m’envoyer un lien ?
 - J’ai récemment vu un billet de [référence aux réseaux sociaux, par exemple, Twitter ou blog] sur une menace ciblant mon secteur d’activité. Pouvez-vous m’aider à comprendre quelle protection Defender pour Endpoint offre contre cet acteur des menaces ?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Spécialistes des menaces Microsoft les communications d’alerte de l’Spécialistes des menaces Microsoft
@@ -172,4 +172,4 @@ Il est essentiel de répondre rapidement pour que l’enquête continue de se d�
 ## <a name="related-topic"></a>Rubrique connexe
 
 - [Vue d’ensemble des spécialistes des menaces Microsoft](microsoft-threat-experts.md)
-- [Spécialistes des menaces Microsoft dans Microsoft 365 vue d’ensemble](/microsoft-365/security/mtp/microsoft-threat-experts)
+- [Spécialistes des menaces Microsoft vue d’ensemble Microsoft 365'ensemble](/microsoft-365/security/mtp/microsoft-threat-experts)

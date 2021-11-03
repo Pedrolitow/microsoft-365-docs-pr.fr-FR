@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 1c3dc7f06a8fbb214ffc12bcf506da7df4c0422a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 071b89bf941bf1c572dc90e9befe6d6c29b33bc5
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191382"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724714"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 
@@ -37,13 +37,13 @@ Si vous êtes une petite ou moyenne entreprise utilisant l’une des plans d’e
 Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recommande d’effectuer les tâches répertoriées dans le tableau suivant qui s’appliquent à votre plan de service. Si, au lieu d’acheter une offre Microsoft 365'entreprise, vous combinez des abonnements, notez les remarques suivantes :
 
 - Microsoft 365 E3 inclut Enterprise Mobility + Security (EMS) E3 et Azure AD P1
-- Microsoft 365 E5 ems E5 et Azure AD P2
+- Microsoft 365 E5 inclut EMS E5 et Azure AD P2
 
 ****
 
 |Étape|Tâche|Toutes les Office 365 Entreprise plan|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[Activer l’authentification multifacteur Azure AD (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Activer Azure AD multifacteur (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurer Microsoft Defender pour l’identité](#4-configure-microsoft-defender-for-identity)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -61,11 +61,11 @@ Avant de commencer, vérifiez votre score [de Microsoft 365 dans](./defender/mic
 
 ![Capture d’écran du score de sécurité Microsoft.](../media/secure-score.png)
 
-## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1 : activer l’authentification multifacteur Azure AD (MFA)
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1 : activer Azure AD multifacteur (MFA)
 
 La meilleure chose que vous pouvez faire pour améliorer la sécurité pour les employés qui travaillent à domicile consiste à activer l’mfmf. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que les personnes du support sont prêtes à aider les employés bloqués. Comme vous ne pouvez probablement pas distribuer de périphériques de sécurité matériels, utilisez Windows Hello biométrie et les applications d’authentification de smartphone comme Microsoft Authenticator.
 
-Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant de demander l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à domicile, allez de l’avant et exigez l’mfmf comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
+Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant de demander l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à partir de chez vous, allez de l’avant et exigez l' mba comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
 
 L’application de ces stratégies ne prendra que quelques minutes, mais soyez prêt à prendre en charge vos utilisateurs au cours des prochains jours.
 
@@ -117,7 +117,7 @@ Vous devez travailler avec votre administrateur Exchange Online et votre adminis
 
 - Voir [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) pour obtenir rapidement une installation
 - Regarder [la vidéo : Présentation de Microsoft Defender pour l’identité](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Passer en [revue les trois phases du déploiement de Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Passer en [revue les trois phases du déploiement de Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5 : activer Microsoft 365 Defender
 
@@ -136,7 +136,7 @@ Une fois que vous avez configuré un ou plusieurs de vos services Defender pour 
 Microsoft Intune La gestion des applications mobiles (MAM) vous permet de gérer et de protéger les données de votre organisation sur des téléphones et des tablettes sans gérer ces appareils. Voici le principe de fonctionnement :
 
 - Vous créez une stratégie de protection des applications (APP) qui détermine les applications gérées sur un appareil et les comportements autorisés (par exemple, empêcher la copie des données d’une application gérée vers une application non gérée). Vous créez une stratégie pour chaque plateforme (iOS, Android).
-- Après avoir créé les stratégies de protection des applications, vous les appliquez en créant une règle d’accès conditionnel dans Azure AD pour exiger une protection approuvée des applications et des données d’APPLICATION.
+- Après avoir créé les stratégies de protection des applications, vous les appliquez en créant une règle d’accès conditionnel dans Azure AD pour exiger des applications approuvées et la protection des données d’APPLICATION.
 
 Les stratégies de protection des applications incluent de nombreux paramètres. Heureusement, vous n’avez pas besoin d’en savoir plus sur chaque paramètre et d’évaluer les options. Microsoft facilite l’application d’une configuration de paramètres en recommandant des points de départ. [L’infrastructure de protection des données utilisant des](/mem/intune/apps/app-protection-framework) stratégies de protection des applications inclut trois niveaux parmi les différents niveaux que vous pouvez choisir.
 
@@ -147,7 +147,7 @@ Pour configurer la protection des applications mobiles, utilisez les instruction
  1. Utilisez les [instructions d’application des stratégies de protection des](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) données APP pour créer des stratégies pour iOS et Android. Le niveau 2 (protection améliorée des données) est recommandé pour la protection de référence.
  2. Créez une règle d’accès conditionnel pour [exiger les applications approuvées et la protection des applications.](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
 
-## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l’achème de pertinence et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
+## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l' approbation de l’ment MFA et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
 
 Ensuite, nous allons nous assurer que vous pouvez continuer à collaborer et à travailler avec des invités. Si vous utilisez le plan de Microsoft 365 E3 et implémenté l’mfmf pour tous les utilisateurs, vous êtes prêt.
 
@@ -176,10 +176,10 @@ Vous pouvez également tirer parti des didacticiels suivants :
 
 Après avoir inscrit des appareils, utilisez les instructions des stratégies communes d’accès aux identités et aux appareils [pour](./office-365-security/identity-access-policies.md) créer ces stratégies :
 
-- [Définir des stratégies de conformité des](./office-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender pour le point de terminaison pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
-- [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel dans Azure AD qui applique les stratégies de conformité des appareils.
+- [Définir des stratégies de conformité des](./office-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender for Endpoint pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
+- [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel Azure AD qui applique les stratégies de conformité des appareils.
 
-Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel dans Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./office-365-security/identity-access-policies-guest-access.md)
+Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./office-365-security/identity-access-policies-guest-access.md)
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9 : optimiser votre réseau pour la connectivité cloud
 
@@ -203,7 +203,7 @@ Articles de blog récents sur cette rubrique :
 
 La formation des utilisateurs peut faire gagner beaucoup de temps et de frustration à vos utilisateurs et à votre équipe en matière d’opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
 
-Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
+Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement de Contrôles School fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
 Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 
@@ -232,7 +232,7 @@ Microsoft recommande également aux utilisateurs de protéger leurs comptes de m
 
 [Microsoft Cloud App Security](/cloud-app-security) offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous vos services cloud. Une fois que vous avez commencé avec Sécurité des applications cloud, les stratégies de détection des anomalies sont automatiquement activées, mais Sécurité des applications cloud a une période d’apprentissage initiale de sept jours au cours de laquelle toutes les alertes de détection des anomalies ne sont pas activées.
 
-Vous pouvez commencer Sécurité des applications cloud maintenant. Par la suite, vous pourrez configurer des contrôles et des contrôles plus sophistiqués.
+Vous pouvez commencer à Sécurité des applications cloud maintenant. Par la suite, vous pourrez configurer des contrôles et des contrôles plus sophistiqués.
 
 - [Démarrage rapide : prendre en Sécurité des applications cloud](/cloud-app-security/getting-started-with-cloud-app-security)
 - [Obtenir une analyse comportementale instantanée et la détection d’anomalies](/cloud-app-security/anomaly-detection-policy)
@@ -244,8 +244,7 @@ Vous pouvez commencer Sécurité des applications cloud maintenant. Par la suite
 
 Microsoft 365 plusieurs méthodes pour surveiller l’état et prendre les mesures appropriées. Votre meilleur point de départ est le centre de sécurité Microsoft 365 ( ), où vous pouvez afficher le Score de sécurité Microsoft de votre organisation, ainsi que les alertes ou entités qui nécessitent votre [https://security.microsoft.com](https://security.microsoft.com) attention. [](./defender/microsoft-secure-score.md)
 
-- [Mise en place du centre de Microsoft 365 de sécurité](./defender/overview-security-center.md)
-- [Surveiller et afficher les rapports](./defender/overview-security-center.md)
+- [Mise en place du portail Microsoft 365 Defender web](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [Consultez les portails de sécurité dans Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>Étapes suivantes

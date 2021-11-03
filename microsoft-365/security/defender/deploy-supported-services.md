@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2014b28635076c11179284b7d90d09707aafa2c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 816225e8054b268906c94df01d121455ecd0cdfa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206648"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705318"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -46,9 +46,9 @@ Une licence Microsoft 365 E5, sécurité E5, A5 ou A5 ou une combinaison valide 
 
 | Service pris en charge | Description |
 | ------ | ------ |
-| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyses cloud et d’intelligence des menaces |
+| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyse cloud et d’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée de vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
-| Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
+| Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et lutter contre les cybermenaces au sein de vos services cloud Microsoft et tiers |
 
 ## <a name="deployed-services-and-functionality"></a>Services et fonctionnalités déployés
@@ -58,7 +58,7 @@ Microsoft 365 Defender offre une meilleure visibilité, une corrélation et une 
 Pour bénéficier des avantages complets de Microsoft 365 Defender, nous vous recommandons de déployer tous les services pris en charge. Voici quelques-uns des principaux avantages du déploiement complet :
 - Les incidents sont identifiés et corrélés en fonction des alertes et des signaux d’événement de tous les capteurs disponibles et des fonctionnalités d’analyse propres au service
 - Les manuels d’examen et de correction automatisés (AIR) s’appliquent à différents types d’entités, notamment les appareils, les boîtes aux lettres et les comptes d’utilisateurs.
-- Un schéma de recherche avancé plus complet peut être interrogé pour les données d’événements et d’entités provenant d’appareils, de boîtes aux lettres et d’autres entités
+- Un schéma de recherche avancée plus complet peut être interrogé pour les données d’événements et d’entités provenant d’appareils, de boîtes aux lettres et d’autres entités
 
 ### <a name="limited-deployment-scenarios"></a>Scénarios de déploiement limités
 Chaque service pris en charge que vous déployez fournit un ensemble extrêmement riche de signaux bruts, ainsi que des informations corrélées. Bien que le déploiement limité ne soit pas à l’origine de la Microsoft 365 Defender à désactiver, sa capacité à fournir une visibilité complète sur vos points de terminaison, applications, données et identités est affectée. En même temps, toutes les fonctionnalités de correction s’appliquent uniquement aux entités qui peuvent être gérées par les services que vous avez déployés.
@@ -67,9 +67,9 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 
 | Service | Données (signaux & des informations corrélées) | Correction et & de réponse |
 | ------ | ------ | ------ |
-| Microsoft Defender pour point de terminaison | - États de point de terminaison et événements bruts<br />- Détections et alertes de point de terminaison, y compris antivirus, PEPT, réduction de la surface d’attaque<br />- Informations sur les fichiers et autres entités observées sur les points de terminaison | Points de terminaison |
+| Microsoft Defender pour point de terminaison | - États de point de terminaison et événements bruts<br />- Détections et alertes de point de terminaison, notamment antivirus, PEPT, réduction de la surface d’attaque<br />- Informations sur les fichiers et autres entités observées sur les points de terminaison | Points de terminaison |
 |Microsoft Defender pour Office 365 | - États de messagerie et de boîte aux lettres et événements bruts<br />- Détections de messages électroniques, de pièces jointes et de liens | - Boîtes aux lettres<br />- Microsoft 365 comptes |
-| Microsoft Defender pour l’identité | - Signaux Active Directory, y compris les événements d’authentification<br />- Détections comportementales liées à l’identité | Identités |
+| Microsoft Defender pour l’identité | - Signaux Active Directory, y compris les événements d’authentification<br />- Détections comportementales liées à l’identité | Identités |
 | Microsoft Cloud App Security | - Détection d’applications et de services cloud non locaux (shadow IT)<br />- Exposition des données aux applications cloud<br />- Activité contre les menaces associée aux applications cloud | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services

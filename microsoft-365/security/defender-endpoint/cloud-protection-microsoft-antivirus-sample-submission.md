@@ -1,7 +1,7 @@
 ---
 title: Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
-keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection cloud
+keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection livrée par le cloud
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,16 +15,16 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e86f4c7f311a356d38d5ecee5498e120190d7b9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554083"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701728"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - [Antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
@@ -37,9 +37,9 @@ Cet article fournit une vue d’ensemble de la protection cloud et de l’envoi 
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Fonctionnement commun de la protection cloud et de l’envoi d’exemples
 
-Pour comprendre comment la protection cloud fonctionne avec l’envoi d’exemples, il peut être utile de comprendre comment Defender pour le point de terminaison protège contre les menaces. La sécurité intelligente de Microsoft Graph les données sur les menaces à partir d’un vaste réseau de capteurs. Microsoft calques cloud machine learning models that can assess files based on signals from the client and the vast network of sensors and data in the Intelligent Security Graph. Cette approche permet à Defender for Endpoint de bloquer de nombreuses menaces jamais vues. 
+Pour comprendre comment la protection cloud fonctionne avec l’envoi d’exemples, il peut être utile de comprendre comment Defender pour le point de terminaison protège contre les menaces. La sécurité intelligente de Microsoft Graph les données sur les menaces à partir d’un vaste réseau de capteurs. Microsoft couche les modèles d’apprentissage automatique basés sur le cloud qui peuvent évaluer les fichiers en fonction des signaux du client et du vaste réseau de capteurs et de données dans la sécurité intelligente Graph. Cette approche permet à Defender for Endpoint de bloquer de nombreuses menaces jamais vues. 
 
-L’image suivante illustre le flux de la protection cloud et de l’envoi d’exemples Antivirus Microsoft Defender :
+L’image suivante illustre le flux de la protection cloud et de l’envoi d’exemples avec Antivirus Microsoft Defender :
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="Flux de protection cloud":::
 
@@ -53,10 +53,10 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
 
 4. Une protection avancée basée sur le cloud est fournie pour les cas où Antivirus Microsoft Defender en cours d’exécution sur le point de terminaison a besoin d’une plus grande intelligence pour vérifier l’intention d’un fichier suspect.
 
-   1. Dans le cas Antivirus Microsoft Defender impossible de déterminer clairement, les métadonnées de fichier sont envoyées au service de protection cloud. Souvent, en millisecondes, le service de protection cloud peut déterminer en fonction des métadonnées si le fichier est malveillant ou non une menace.  
+   1. Dans le cas Antivirus Microsoft Defender impossible de déterminer clairement, les métadonnées de fichier sont envoyées au service de protection cloud. En quelques millisecondes, le service de protection cloud peut déterminer en fonction des métadonnées si le fichier est malveillant ou non une menace.  
 
       - La requête cloud de métadonnées de fichier peut être le résultat d’un comportement, d’une marque du site web ou d’autres caractéristiques dans le cas où un verdict clair n’est pas déterminé.
-      - Une charge utile de métadonnées de petite taille est envoyée, dans le but d’atteindre un verdict de programmes malveillants ou de ne pas être une menace. Les métadonnées n’incluent pas d’informations d’identification personnelle (PII). Les informations telles que les noms de fichiers sont hachées.
+      - Une petite charge utile de métadonnées est envoyée, dans le but d’atteindre un verdict de programmes malveillants ou pas de menace. Les métadonnées n’incluent pas d’informations d’identification personnelle (PII). Les informations telles que les noms de fichiers sont hachées.
       - Peut être synchrone ou asynchrone. Pour synchrone, le fichier ne s’ouvre pas tant que le cloud n’a pas rendu de verdict. Pour les données asynchrones, le fichier s’ouvre pendant que la protection cloud effectue son analyse.
       - Les métadonnées peuvent inclure des attributs PE, des attributs de fichiers statiques, des attributs dynamiques et contextuels, et bien plus encore (voir des exemples de métadonnées envoyées au [service de protection cloud).](#examples-of-metadata-sent-to-the-cloud-protection-service)
 
@@ -102,7 +102,7 @@ Pour plus d’informations sur les options de configuration à l’aide d’Intu
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Exemples de métadonnées envoyées au service de protection cloud
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image illustrant des exemples de métadonnées envoyées à Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image illustrant des exemples de métadonnées envoyées à la protection cloud dans Antivirus Microsoft Defender":::
 
 Le tableau suivant répertorie des exemples de métadonnées envoyées pour analyse par la protection cloud :
 
@@ -123,7 +123,7 @@ En outre, Defender pour point de terminaison a reçu plusieurs certifications de
 - SOC I, II, III
 - et PCI
 
-Pour plus d’informations, reportez-vous aux ressources suivantes :
+Pour plus d’informations, consultez les ressources suivantes :
 
 - [Offres de conformité Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portail d’approbation de service](https://servicetrust.microsoft.com)
@@ -131,7 +131,7 @@ Pour plus d’informations, reportez-vous aux ressources suivantes :
 
 ## <a name="other-file-sample-submission-scenarios"></a>Autres scénarios d’envoi d’exemples de fichiers
 
-Il existe deux autres scénarios dans lequel Defender pour point de terminaison peut demander un exemple de fichier qui n’est pas lié à la protection cloud dans Antivirus Microsoft Defender. Ces scénarios sont décrits dans le tableau suivant :
+Il existe deux autres scénarios dans lequel Defender pour le point de terminaison peut demander un exemple de fichier qui n’est pas lié à la protection cloud dans Antivirus Microsoft Defender. Ces scénarios sont décrits dans le tableau suivant :
 
 | Scénario | Description |
 |:---|:---|

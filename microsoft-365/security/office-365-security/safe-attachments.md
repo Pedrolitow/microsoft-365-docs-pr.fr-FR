@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur la Coffre pièces jointes dans Microsoft Defender pour Office 365.
+description: Les administrateurs peuvent en savoir plus sur Coffre fonctionnalité Pièces jointes dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: efe1b985a7df7e8066533bf3789e38120dd97787
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668421"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702872"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Coffre Pièces jointes dans Microsoft Defender pour Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "60668421"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Coffre Les pièces jointes dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent une couche de protection supplémentaire pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans Exchange Online Protection [(EOP).](anti-malware-protection.md) Plus précisément, Coffre pièces jointes utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
+Coffre Les pièces jointes dans [Microsoft Defender pour Office 365](defender-for-office-365.md) fournissent une couche supplémentaire de protection pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans Exchange Online Protection [(EOP).](anti-malware-protection.md) Plus précisément, Coffre pièces jointes utilise un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
 
 La protection des pièces jointes fiables pour les messages électroniques est contrôlée par des stratégies de pièces jointes fiables. Bien qu’il n’existe aucune stratégie de pièces jointes Coffre par défaut, la stratégie de sécurité prédéfinit de **protection** intégrée fournit une protection Coffre pièces jointes à tous les destinataires (utilisateurs qui ne sont pas définis dans les stratégies de pièces jointes Coffre personnalisées). Pour plus d’informations, voir [Stratégies de sécurité prédéfini dans EOP](preset-security-policies.md)et Microsoft Defender pour Office 365 . Vous pouvez également créer des stratégies Coffre pièces jointes qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques. Pour obtenir des instructions, voir [Configurer Coffre pièces jointes dans Microsoft Defender pour Office 365](set-up-safe-attachments-policies.md).
 
@@ -47,7 +47,7 @@ Le tableau suivant décrit les scénarios pour les pièces jointes Coffre dans l
 
 |Scénario|Résultat|
 |---|---|
-|L’organisation Microsoft 365 E5 pat n’a aucune stratégie Coffre pièces jointes configurée.|Pat est protégé par Coffre pièces jointes en raison de la stratégie de sécurité prédéfinit de **protection** intégrée qui s’applique à tous les destinataires qui ne sont pas définis dans les stratégies Coffre pièces jointes.|
+|L’organisation Microsoft 365 E5 pat n’a pas de stratégies Coffre pièces jointes configurées.|Pat est protégé par Coffre pièces jointes en raison de la stratégie de sécurité prédéfinit de **protection** intégrée qui s’applique à tous les destinataires qui ne sont pas définis dans les stratégies Coffre pièces jointes.|
 |L’organisation de Lee dispose d’une stratégie Coffre pièces jointes qui s’applique uniquement aux employés du service financier. Lee est membre du service des ventes.|Lee et le reste du service commercial sont protégés par les pièces jointes Coffre en raison de la stratégie de sécurité prédéfinie de **protection** intégrée qui s’applique à tous les destinataires qui ne sont pas définis dans les stratégies de pièces jointes Coffre.|
 |Hier, un administrateur de l’organisation de Jean a créé une stratégie Coffre pièces jointes qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un message électronique qui inclut une pièce jointe.|Jean est protégé par Coffre pièces jointes en raison de cette stratégie Coffre pièces jointes personnalisée. <p> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
 |L’organisation de Chris a des stratégies Coffre pièces jointes de longue date pour tous les membres de l’organisation. Chris reçoit un message électronique qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par des pièces jointes Coffre’un autre. <p> Si les destinataires externes d’Microsoft 365 organisation, les messages transmis sont également protégés par Coffre pièces jointes.|
@@ -65,7 +65,7 @@ L’analyse des pièces jointes fiables a lieu dans la même région que l’emp
 
 Cette section décrit les paramètres des stratégies Coffre pièces jointes :
 
-- **Coffre de programmes malveillants inconnus attachments**: ce paramètre contrôle l’action d’analyse des programmes malveillants Coffre pièces jointes dans les messages électroniques. Les options disponibles sont décrites dans le tableau suivant :
+- **Coffre de programmes malveillants inconnus attachments**: ce paramètre contrôle l’action de détection des programmes malveillants Coffre pièces jointes dans les messages électroniques. Les options disponibles sont décrites dans le tableau suivant :
 
   <br>
 
@@ -73,7 +73,7 @@ Cette section décrit les paramètres des stratégies Coffre pièces jointes :
 
   |Option|Effet|À utiliser lorsque vous souhaitez :|
   |---|---|---|
-  |**Désactivé**|Les pièces jointes ne sont pas analysées à la recherche de programmes malveillants Coffre pièces jointes. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse des destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous devez uniquement utiliser cette option pour désactiver l’analyse Coffre pièces jointes pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
+  |**Désactivé**|Les pièces jointes ne sont pas analysées à la recherche de programmes malveillants Coffre pièces jointes. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse des destinataires sélectionnés. <p> Évitez les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous devez uniquement utiliser cette option pour désactiver l’analyse Coffre pièces jointes pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
   |**Moniteur**|Fournit les messages avec pièces jointes, puis suit ce qui se produit avec les programmes malveillants détectés. <p> La remise des messages sûrs peut être retardée en raison Coffre’analyse des pièces jointes.|Découvrez où les programmes malveillants détectés sont détectés dans votre organisation.|
   |**Bloquer**|Empêche la livraison des messages avec des pièces jointes de programmes malveillants détectés. <p> Les messages sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <p> Bloque automatiquement les instances futures des messages et pièces jointes. <p> La remise des messages sûrs peut être retardée en raison Coffre’analyse des pièces jointes.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes de programmes malveillants. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard [et](preset-security-policies.md)stricte.|
   |**Replace**|Supprime les pièces jointes de programmes malveillants détectés. <p> Informe les destinataires que les pièces jointes ont été supprimées. <p>  Les messages qui contiennent des pièces jointes malveillantes sont mis en quarantaine. Par défaut, seuls les administrateurs (et non les utilisateurs) peuvent examiner, libérer ou supprimer les messages.<sup>\*</sup> <p> La remise des messages sûrs peut être retardée en raison Coffre’analyse des pièces jointes.|Augmenter la visibilité pour les destinataires que les pièces jointes ont été supprimées en raison de programmes malveillants détectés.|
@@ -84,7 +84,7 @@ Cette section décrit les paramètres des stratégies Coffre pièces jointes :
 
 - Rediriger la pièce jointe lors de la détection : activez la **redirection** et envoyez la pièce jointe à l’adresse de messagerie suivante : Pour **bloquer,** surveiller ou remplacer **des** actions, envoyez des messages contenant des pièces jointes contenant des programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
 
-  La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Coffre Paramètres des pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
+  La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [Coffre paramètres de pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
 - Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces **jointes** arrive à arriver ou si une erreur se produit : l’action spécifiée par Coffre La réponse anti-programme malveillant **attachments** inconnue est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Sélectionnez toujours cette option si vous sélectionnez **Activer la redirection.** Dans le cas contraire, les messages peuvent être perdus.
 

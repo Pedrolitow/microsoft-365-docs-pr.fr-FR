@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la découverte d’appareils
 description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non utilisés dans votre réseau
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,25 +20,25 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf0341ec4c77b8f3c803d087ff52ad4bde40decd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c1a76bb0a82562a7c2a2f96e87b087f6fd09fcea
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552592"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701002"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 La protection de votre environnement nécessite d’inventorier les appareils qui se sont connectés à votre réseau. Toutefois, le mappage d’appareils dans un réseau peut souvent être coûteux, difficile et chronophage.
 
-Microsoft Defender pour endpoint fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses.
+Microsoft Defender pour point de terminaison fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses.
 
 La fonctionnalité de découverte d’appareils vous permet de :
 
@@ -68,7 +68,7 @@ Seuls les appareils observés par le mode de découverte de base seront activeme
 
 ### <a name="basic-discovery"></a>Découverte de base
 
-Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré.
+Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et en extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré.
 
 ### <a name="standard-discovery"></a>Découverte standard
 
@@ -78,12 +78,12 @@ Lorsque le mode Standard est activé, une activité réseau minime et négligeab
 
  Si vous choisissez de ne pas activer ce mode, vous n’aurez qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
-La découverte standard utilise divers scripts PowerShell pour sonder activement les périphériques du réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 Vous pouvez modifier et personnaliser vos paramètres de découverte, pour plus d’informations, voir [Configurer la découverte d’appareils.](configure-device-discovery.md)
 
 > [!NOTE]
-> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés à des réseaux d’entreprise ne seront pas découverts ou répertoriés dans l’inventaire des appareils.
+> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés à des réseaux d’entreprise ne seront pas découverts ni répertoriés dans l’inventaire des appareils.
 
 ## <a name="device-inventory"></a>Inventaire des appareils
 
@@ -115,12 +115,12 @@ Recherchez des détails sur les points de terminaison détectés dans la table D
 
 La découverte d’appareils tire parti de Microsoft Defender pour les appareils intégrés au point de terminaison en tant que source de données réseau pour attribuer des activités à des appareils non intégrés. Cela signifie que si un appareil intégré De Microsoft Defender pour point de terminaison a communiqué avec un appareil non intégré, les activités sur l’appareil non intégré peuvent être visibles sur la chronologie et via la table DeviceNetworkEvents de recherche avancée.
 
-Les nouveaux événements sont basés sur les connexions TCP (Transmission Control Protocol) et s’adaptent au schéma DeviceNetworkEvents actuel. L’entrée TCP vers l’appareil Microsoft Defender pour point de terminaison activé à partir d’un autre que Microsoft Defender pour point de terminaison est activée. 
+Les nouveaux événements sont basés sur les connexions TCP (Transmission Control Protocol) et s’adaptent au schéma DeviceNetworkEvents actuel. L’entrée TCP vers l’appareil Microsoft Defender pour point de terminaison activé à partir d’un autre que Microsoft Defender pour point de terminaison est activée.
 
 Les types d’action suivants ont également été ajoutés :
 
-- ConnectionAttempt : tentative d’établissement d’une connexion TCP (syn) 
-- ConnectionAcknowledged : accusé de réception de l’acceptation d’une connexion TCP (syn\ack) 
+- ConnectionAttempt : tentative d’établissement d’une connexion TCP (syn)
+- ConnectionAcknowledged : accusé de réception de l’acceptation d’une connexion TCP (syn\ack)
 
 Vous pouvez essayer cette requête d’exemple :
 
@@ -134,7 +134,7 @@ DeviceNetworkEvents
 
 La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et/ou Microsoft 365 centre de sécurité lorsque cette fonctionnalité est activée.
 
-1. Les appareils qui ne sont pas intégrés à Microsoft Defender au point de terminaison sont censés apparaître dans l’inventaire des appareils, le recherche avancée et les requêtes API. Cela peut augmenter considérablement la taille des résultats de la requête.
+1. Les appareils qui ne sont pas intégrés à Microsoft Defender pour le point de terminaison sont censés apparaître dans les requêtes d’inventaire, de recherche avancée et d’API. Cela peut augmenter considérablement la taille des résultats de la requête.
     1. Les tables « DeviceInfo » et « DeviceNetworkInfo » dans la recherche avancée vont maintenant contenir l’appareil détecté. Vous pouvez filtrer ces appareils à l’aide de l’attribut « OnboardingStatus ».
     2. Les appareils détectés sont censés apparaître dans les résultats de requête de l’API de diffusion en continu. Vous pouvez filtrer ces appareils à l’aide `OnboardingStatus` du filtre dans votre requête.
 2. Les appareils non utilisés seront affectés à des groupes d’appareils existants en fonction des critères définis.

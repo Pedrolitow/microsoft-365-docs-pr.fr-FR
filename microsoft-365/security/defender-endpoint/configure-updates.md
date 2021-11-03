@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 11395c28014ad83f110574eb0f0cf6feccb40b2d
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 523a73477343bc9face75bcceda1ed603d1f6439
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124456"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704627"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Créer un processus de déploiement progressif personnalisé pour les mises à jour De Microsoft Defender
 
@@ -59,19 +59,19 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe disponibl
 > [!NOTE]
 > Un modèle ADMX Defender mis à jour sera publié avec la version 21H2 de Windows 10. Une version non localisée est disponible en téléchargement sur https://github.com/microsoft/defender-updatecontrols .
 
-Vous pouvez utiliser la [stratégie de](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)groupe pour configurer et gérer les Antivirus Microsoft Defender sur vos points   de terminaison.
+Vous pouvez utiliser la [stratégie de](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) groupe pour configurer et gérer les Antivirus Microsoft Defender sur vos points de terminaison.
 
 En règle générale, vous pouvez utiliser la procédure suivante pour configurer ou modifier Antivirus Microsoft Defender de stratégie de groupe :
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la  **Console** de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe **à** configurer, puis cliquez sur  **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la **Console** de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe **à** configurer, puis cliquez sur **Modifier.**
 
-2. À l’aide de l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration**.
+2. À l’aide de l’Éditeur de gestion des stratégies de groupe, go to **Computer configuration**.
 
-3. Cliquez **sur Modèles d’administration.**
+3. Cliquez **sur Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender**.
 
-5. Développez la section (appelée Emplacement dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez ****   configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporter des modifications de configuration.
+5. Développez la section (appelée Emplacement dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporter des modifications de configuration. 
 
 6. [Déployez l’GPO mis à jour comme vous le faites normalement.](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx)
 
@@ -81,7 +81,7 @@ Suivez les instructions du lien ci-dessous pour créer une stratégie personnali
 
 [Ajouter des paramètres personnalisés pour Windows 10 appareils dans Microsoft Intune - Documents Microsoft Azure \|](/mem/intune/configuration/custom-settings-windows-10)
 
-Pour plus d’informations sur les CSP Defender utilisés pour le processus de déploiement progressif, voir [CSP Defender](/windows/client-management/mdm/defender-csp).
+Pour plus d’informations sur le programme CSP Defender utilisé pour le processus de déploiement progressif, voir [CSP Defender.](/windows/client-management/mdm/defender-csp)
 
 ## <a name="powershell"></a>PowerShell
 

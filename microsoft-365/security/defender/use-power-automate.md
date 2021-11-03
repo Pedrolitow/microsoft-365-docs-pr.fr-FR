@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Power Automate
+title: Utiliser Microsoft Power Automate.
 description: Découvrez l’automatisation de l’alimentation Microsoft 365 Defender comment les utiliser.
 keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, copies
 search.product: eADQiWindows 10XVcnh
@@ -21,21 +21,21 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a707de259897080f8e726aed70618ea6505bdea6
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444114"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717457"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>Utiliser Power Automate dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Les équipes d’opérations de sécurité modernes (SecOps) ont besoin d’automatisation pour fonctionner efficacement. Pour se concentrer sur le recherche et l’investigation des menaces réelles, les équipes SecOps utilisent Power Automate pour trier la liste des alertes et éliminer ceux qui ne sont pas des menaces.  

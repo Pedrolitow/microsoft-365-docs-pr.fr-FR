@@ -17,13 +17,13 @@ metadata:
   - MET150
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
-  description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs sur l’importation de fichiers PST Microsoft 365 l’aide Office 365 Import Service.
-  ms.openlocfilehash: 38e1d6ba4800d8ad870287d11beb695050eb6d1b
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs sur l’importation de fichiers PST dans Microsoft 365 l’aide Office 365 Import Service.
+  ms.openlocfilehash: 0b8ba1414768ade4c192023797eeec55934be817
+  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60170642"
+  ms.lasthandoff: 11/03/2021
+  ms.locfileid: "60701970"
 title: FAQ sur l’importation de fichiers PST
 summary: >
   **Cet article est réservé aux administrateurs. Voulez-vous importer des fichiers PST dans votre propre boîte aux lettres ? Voir Importer le courrier électronique, les contacts et le calendrier à partir [Outlook fichier .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
@@ -37,12 +37,12 @@ summary: >
 
   Pour obtenir des instructions détaillées, voir Utiliser le chargement réseau pour importer des [fichiers PST dans Office 365](use-network-upload-to-import-pst-files.md).
 sections:
-- name: Généralités
+- name: Général
   questions:
   - question: >
       De quelles autorisations a-t-on besoin pour créer des tâches d’importation dans le Service d’importation Office 365 ?
     answer: >
-      Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué dans Exchange Online pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter, vous ou d’autres utilisateurs, en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+      Le rôle d'importation et d'exportation de boîtes aux lettres doit vous être attribué dans Exchange Online pour importer des fichiers PST dans les boîtes aux lettres Microsoft 365. Par défaut, ce rôle n'est attribué à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation et exportation de boîtes aux lettres au groupe de rôles Gestion de l'organisation. Vous pouvez également créer un nouveau groupe de rôles, attribuer le rôle d'importation et d'exportation de boîtes aux lettres, puis vous ajouter ou ajouter d'autres utilisateurs en tant que membre. Pour plus d'informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
 
       En outre, pour créer des travaux d’importation dans le Centre de conformité Microsoft 365, l’une des conditions suivantes doit être remplie :
@@ -61,7 +61,7 @@ sections:
   - question: >
       Où le chargement réseau est-il disponible ?
     answer: >
-      Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera bientôt disponible dans d'autres régions.
+      Le chargement réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l’Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis. Le chargement réseau sera disponible dans d’autres régions à l’avenir.
   - question: >
       What is the pricing for importing PST files by using network upload?
     answer: >
@@ -82,7 +82,7 @@ sections:
       Si vous décidez d’importer des fichiers PST avec la méthode du chargement réseau, vous les chargez dans un conteneur d’objets blob Azure nommé `ingestiondata`. Si aucun travail d’importation n’est en cours sur la page **Importer des fichiers PST** dans le Centre de conformité Microsoft 365), tous les fichiers PST du conteneur `ingestiondata` dans Azure sont supprimés 30 jours après la création de la tâche d’importation la plus récente dans le Centre de conformité Microsoft 365. Cela signifie également que vous devez créer un travail d’importation dans le Centre de conformité Microsoft 365 (décrit à l’étape 5 dans les instructions de chargement réseau) dans les 30 jours suivant le chargement de fichiers PST dans Azure.
 
 
-      Cela signifie également qu’une fois les fichiers PST supprimés de la zone Stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d’importation terminée dans le Centre de conformité Microsoft 365. Bien qu’un travail d’importation puisse toujours être répertorié sur la page **Importer des fichiers PST** dans le Centre de conformité Microsoft 365, la liste des fichiers PST peut être vide lorsque vous affichez les détails des travaux d’importation plus anciens.
+      Cela signifie également qu'une fois les fichiers PST supprimés de la zone de stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d'importation terminée dans le centre de conformité Microsoft 365. Bien qu'une tâche d'importation puisse toujours être répertoriée sur la page **Importer des fichiers PST** dans le centre de conformité Microsoft 365, la liste des fichiers PST peut être vide lorsque vous affichez les détails d'anciennes tâches d'importation.
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
@@ -134,7 +134,7 @@ sections:
   - question: >
       De quelles autorisations a-t-on besoin pour créer des tâches d’importation dans le Service d’importation Office 365 ?
     answer: >
-      Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter, vous ou d’autres utilisateurs, en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+      Le rôle Mailbox Import Export doit vous être attribué pour importer des fichiers PST dans les boîtes aux lettres Microsoft 365. Par défaut, ce rôle n'est attribué à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation et exportation de boîtes aux lettres au groupe de rôles Gestion de l'organisation. Vous pouvez également créer un nouveau groupe de rôles, attribuer le rôle d'importation et d'exportation de boîtes aux lettres, puis vous ajouter ou ajouter d'autres utilisateurs en tant que membre. Pour plus d'informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
 
       En outre, pour créer des travaux d’importation dans le Centre de conformité Microsoft 365, l’une des conditions suivantes doit être remplie :
@@ -153,7 +153,7 @@ sections:
   - question: >
       Où l’expédition de disque est-elle disponible ?
     answer: >
-      L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. Ce service sera prochainement disponible dans d’autres régions.
+      L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. L’expédition de disque sera disponible dans d’autres régions à l’avenir.
 
 
       > [!NOTE]
@@ -166,11 +166,11 @@ sections:
   - question: >
       À combien revient l’expédition de disque en vue de l’importation de fichiers PST dans Microsoft 365 ?
     answer: >
-      L’utilisation du service d’expédition de disque pour importer des fichiers PST dans des boîtes aux lettres Microsoft 365 revient à 2 dollars par Go de données. Par exemple, si vous expédiez un disque dur qui contient 1 000 Go (1 To) de fichiers PST, cela revient à 2 000 dollars. Vous pouvez travailler en collaboration avec un partenaire qui se chargera de payer les frais d’importation. Pour plus d’informations sur la recherche d’un partenaire, consultez la page [Trouver votre partenaire ou revendeur](../admin/manage/find-your-partner-or-reseller.md).
+      Le coût d'utilisation de l'expédition du lecteur pour importer des fichiers PST dans les boîtes aux lettres Microsoft 365 est de 2 USD par Go de données. Par exemple, si vous expédiez un disque dur contenant 1 000 Go (1 To) de fichiers PST, le coût est de 2 000 USD. Vous pouvez travailler avec un partenaire pour payer les frais d'importation. Pour plus d'informations sur la recherche d'un partenaire, voir [Rechercher votre partenaire ou revendeur Microsoft](../admin/manage/find-your-partner-or-reseller.md).
   - question: >
       Quels types de disque dur est-il possible d’expédier ?
     answer: >
-      Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SSD 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces ou vous pouvez l’attacher en externe à l’aide d’un adaptateur USB EXTERNE DE 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces.
+      Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces ou d’un adaptateur USB EXTERNE DE 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces.
 
 
       > [!IMPORTANT]
@@ -201,7 +201,7 @@ sections:
       Tous les fichiers PST dans l’emplacement stockage Azure de votre organisation (dans le conteneur d’objets blob nommé `ingestiondata`), sont supprimés 30 jours après la création du travail d’importation le plus récent sur la page **Importer des fichiers PST** dans le Centre de conformité Microsoft 365.
 
 
-      Cela signifie également qu’une fois les fichiers PST supprimés de la zone Stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d’importation terminée dans le Centre de conformité Microsoft 365. Bien qu’un travail d’importation puisse toujours être répertorié sur la page **Importer des fichiers PST** dans le Centre de conformité Microsoft 365, la liste des fichiers PST peut être vide lorsque vous affichez les détails des travaux d’importation plus anciens.
+      Cela signifie également qu'une fois les fichiers PST supprimés de la zone de stockage Azure, ils ne sont plus affichés dans la liste des fichiers pour une tâche d'importation terminée dans le centre de conformité Microsoft 365. Bien qu'une tâche d'importation puisse toujours être répertoriée sur la page **Importer des fichiers PST** dans le centre de conformité Microsoft 365, la liste des fichiers PST peut être vide lorsque vous affichez les détails d'anciennes tâches d'importation.
   - question: >
       Quelle version du format de fichier PST est prise en charge pour l’importation dans Microsoft 365 ?
     answer: >
@@ -263,4 +263,4 @@ sections:
       Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
   - question: >
       Existe-t-il des exigences de résolution d’écran lorsque je crée une tâche d’importation pour l’expédition de disque ?
-    answer: Si la résolution d’écran sur votre ordinateur local est définie sur 1 366 x 768, vous pouvez avoir des problèmes lors de la création d’une tâche d’importation. Si tel est le cas, nous vous recommandons de modifier la résolution de l’écran à un autre paramètre, puis de créer une tâche d’importation. Nous travaillons pour résoudre ce problème.
+    answer: Si la résolution d’écran sur votre ordinateur local est définie sur 1366 x 768, vous pouvez avoir des problèmes lors de la création d’une tâche d’importation. Si tel est le cas, nous vous recommandons de modifier la résolution d’écran à un autre paramètre, puis de créer une tâche d’importation. Nous travaillons pour résoudre ce problème.
