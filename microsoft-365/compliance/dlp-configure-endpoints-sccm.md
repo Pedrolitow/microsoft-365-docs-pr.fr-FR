@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1c4c21a1375bf2c95f25ebae285a049de89ba10f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754754"
+ms.locfileid: "60786385"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
@@ -83,7 +84,7 @@ Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
@@ -136,7 +137,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Configuration Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
@@ -162,9 +163,9 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, cons
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
-Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
+Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
 1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 

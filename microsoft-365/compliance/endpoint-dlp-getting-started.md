@@ -18,13 +18,14 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703724"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786721"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -126,7 +127,7 @@ Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour 
 
 Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’ont pas encore été intégrés, et vous voulez simplement contrôler et protéger les éléments sensibles contre le partage involontaire sur les appareils Windows 10.
 
-1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
+1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
 
@@ -162,7 +163,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 
 Dans ce scénario, Microsoft Defender pour point de terminaison est déjà déployé et des points de terminaison y sont signalés. Tous ces points de terminaison s’affichent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans le point de terminaison DLP pour étendre la couverture à l’aide de la [procédure d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
+1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
 
@@ -189,7 +190,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes DLP de point de terminaison dans le tableau de bord de Gestion des alertes DLP
 
-1. Ouvrez la page de protection contre la perte de données dans le Centre de conformité Microsoft 365, puis sélectionnez Alertes.
+1. Ouvrez la page Protection contre la perte de données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> sélectionnez Alertes.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 

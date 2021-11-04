@@ -11,12 +11,13 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Découvrez la redirection automatique des utilisateurs du centre Office 365 sécurité et conformité vers le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e299ee84eb046a1d6c3ae41d80eeb0106fad63e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 34965760bf384c1b02f6aafbf24ef83b636ce3c6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754788"
+ms.locfileid: "60786361"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirection des utilisateurs du Centre Office 365 sécurité et conformité vers le centre de sécurité et conformité Centre de conformité Microsoft 365
 

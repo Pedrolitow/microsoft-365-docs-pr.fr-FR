@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: En savoir plus sur la gestion des autorisations dans le Centre de conformité Microsoft 365.
+description: Découvrez la gestion des autorisations dans le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c3c543774de8b4cc8419beed60e60be33976885e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757036"
+ms.locfileid: "60786433"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorisations dans le Centre de conformité Microsoft 365
 
@@ -46,7 +47,7 @@ La gestion des autorisations dans le Centre de conformité Microsoft 365 permet
 
 Les rôles qui apparaissent dans la section **Rôles Azure AD** de la page  >   **Autorisations** Centre de conformité Microsoft 365 sont Azure Active Directory rôles. Ces rôles sont conçus pour s’aligner sur les fonctions du groupe informatique de votre organisation, ce qui permet de donner à vos utilisateurs les autorisations nécessaires pour accomplir leur travail. Vous pouvez afficher les utilisateurs actuellement affectés à chaque rôle en sélectionnant un rôle d’administrateur et en visualnant les détails du panneau de rôles. Pour gérer les membres d’un Azure AD, sélectionnez Gérer les membres dans Azure AD. Ce choix vous redirige vers le portail de gestion Azure.
 
-|Rôle|Description|
+|Role|Description|
 |:---|:----------|
 |**Administrateur général**|Accède à toutes les fonctionnalités d’administration de tous les services Microsoft 365. Seuls les administrateurs généraux peuvent affecter d’autres rôles d’administrateur. Pour plus d’informations, consultez la section [Administrateur Général / Administrateur d’entreprise](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Administrateur de conformité des données**|Effectuez un suivi des données de votre organisation dans Microsoft 365, vérifiez qu’elles sont protégées et obtenez des informations sur des problèmes pour permettre d’atténuer les risques. Pour plus d’informations, voir [Administrateur de conformité des données](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
@@ -94,7 +95,7 @@ Pour créer un groupe de rôles personnalisé, vous pouvez effectuer les étapes
 1. Dans la page **Choisir des rôles,** **sélectionnez Choisir des rôles.**
 1. **Sélectionnez** Ajouter, puis choisissez les rôles à ajouter au groupe de rôles personnalisé. Sélectionnez **Ajouter** pour ajouter le groupe de rôles, puis **sélectionnez Terminé.**
 1. Sélectionnez **Suivant** pour continuer.
-1. Dans la page **Choisir les membres,** **sélectionnez Choisir les membres.**
+1. Dans la page **Choisir des membres,** **sélectionnez Choisir les membres.**
 1. **Sélectionnez** Ajouter, puis choisissez les membres à ajouter au groupe de rôles personnalisé. Sélectionnez **Ajouter** pour ajouter les membres, puis **sélectionnez Terminé.**
 1. Sélectionnez **Suivant** pour continuer.
 1. Dans la page **Examiner vos paramètres,** examinez les détails du groupe de rôles personnalisé. Si vous devez modifier les informations, sélectionnez **Modifier** dans la section appropriée. Lorsque tous les paramètres  sont corrects, sélectionnez Créer un groupe de rôles pour créer le groupe de rôles personnalisé ou sélectionnez **Annuler** pour ignorer les modifications et ne pas créer le groupe de rôles personnalisé.

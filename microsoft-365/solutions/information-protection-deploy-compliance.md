@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le Score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: f42835304ca27fa1d30ff3c1e5143e87d2b95c75
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a655d504551e42398cdabbcf7a3f651d788c0ad
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180650"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786013"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -49,7 +49,7 @@ Affichez [la liste complète des modèles d’évaluation](../compliance/complia
 
 **Score de conformité en temps réel**
 
-Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur potentiel pour réduire les risques.
+Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur capacité à réduire les risques.
 
 #### <a name="use-the-compliance-manager-quickstart-guide"></a>Utiliser le guide de démarrage rapide du Gestionnaire de conformité
 
@@ -77,11 +77,11 @@ Une valeur de score est attribuée aux contrôles selon qu’ils sont obligatoir
 
 Comme le décrit l’article de calcul du score de conformité, les contrôles préventives obtiennent un score plus élevé que les contrôles de observation et de correction, et les contrôles obligatoires obtiennent un score plus élevé que les contrôles discrétionnaires.
 
-L’interface utilisateur d’administration du Score de conformité ne fournit pas ces paramètres et ne permet pas non plus de les filtrer. Toutefois, si vous téléchargez le modèle associé à partir du Gestionnaire de conformité, le jeu de données résultant indique ces paramètres pour la plupart des réglementations.
+L’interface utilisateur d’administration du Score de conformité ne fournit pas ces paramètres et ne permet pas non plus de les filtrer. Toutefois, si vous téléchargez le modèle associé à partir du Gestionnaire de conformité, le jeu de données résultant liste ces paramètres pour la plupart des réglementations.
 
 Pour les contrôles techniques, le Gestionnaire de conformité met automatiquement à jour le score d’action d’amélioration une fois que l’action a été correctement implémentée et testée. D’autres actions de contrôle non techniques, telles que celles qui sont opérationnelles ou liées à la documentation, doivent être enregistrées manuellement comme implémentées avant que les points comptent pour &mdash; &mdash; votre score.
 
-De nombreux utilisateurs implémentent également certaines actions d’amélioration à d’autres fins, par exemple à l’aide d’étiquettes de rétention pour des raisons autres que la conformité à la réglementation sur la confidentialité des données, afin d’obtenir des crédits pour l’utilisation d’une telle fonctionnalité même si elle est utilisée à d’autres fins, et non dans le cadre d’une action délibérée de &mdash; &mdash; conformité.
+Vous êtes nombreux à implémenter certaines actions d’amélioration à d’autres fins, par exemple en utilisant des étiquettes de rétention pour des raisons autres que la conformité à la réglementation sur la confidentialité des données, afin d’obtenir des crédits pour l’utilisation d’une telle fonctionnalité même si elle est utilisée à d’autres fins, et non dans le cadre d’une action délibérée de &mdash; &mdash; conformité.
 
 Votre score de conformité doit être considéré comme une mesure relative pour suivre l’amélioration à grande échelle. Vous ne devez pas poursuivre un score parfait.
 
@@ -89,7 +89,7 @@ Votre score de conformité doit être considéré comme une mesure relative pour
 
 Voici quelques conseils importants concernant l’utilisation du Gestionnaire de conformité pour vous aider à respecter la réglementation en matière de confidentialité des données :
 
-- Chaque règlement sur la confidentialité des données combine des contrôles techniques, des spécifications de documentation et des exigences opérationnelles, de processus et de création de rapports. Tous ces éléments s’affiche dans les actions d’amélioration.
+- Chaque réglementation en matière de confidentialité des données combine des contrôles techniques, des spécifications de documentation et des exigences opérationnelles, de processus et de création de rapports. Tous ces éléments s’affiche dans les actions d’amélioration.
 
 - Pour concentrer l’affichage des actions d’amélioration sur votre domaine d’intérêt, vous pouvez filtrer par type d’action dans l’onglet **Solutions** de l’administrateur du Gestionnaire de conformité. En savoir plus sur [le filtrage de votre affichage du tableau de bord du Gestionnaire de conformité.](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view)
 

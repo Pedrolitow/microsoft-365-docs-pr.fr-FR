@@ -14,20 +14,20 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7c96cac2820f5ace71f18287e1d4b3e74e4444f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176318"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786397"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
 Cet article fournit des instructions pas à pas pour créer une [équipe avec une isolation des problèmes de sécurité](secure-teams-security-isolation.md) dans un environnement de développement/test.
 
-![Configuration de la stratégie d’entreprise pour équipe isolée.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+[Configuration de la stratégie d’entreprise pour équipe isolée.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Utilisez cet environnement de développement/test pour expérimenter et affiner les paramètres de vos besoins spécifiques avant de déployer ce type d’équipe en production.
 
@@ -139,25 +139,24 @@ Vous devez ensuite configurer une étiquette de confidentialité avec les param�
 
 Procédez comme suit :
 
-1. Ouvrez le [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
-2. Sous **Solutions**, cliquez sur **Protection des informations**.
-3. Cliquez sur **Créer une étiquette**.
-4. Tapez **Stratégie d’entreprise** comme nom d’étiquette.
-5. Tapez **Documents de stratégie de la direction de l’entreprise** sous forme d’info-bulle, puis cliquez **Suivant**.
-6. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
-7. Pour ajouter des autorisations d’équipe :<br>a. Cliquez sur **Attribuer des autorisations**.<br>b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez **La stratégie de l’entreprise**, enfin cliquez sur **Ajouter**.<br>c. Cliquez sur **Choisir les autorisations**.<br>d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
-8. Cliquez sur **Suivant**.
-9. Dans la page **Marque de contenu**, cliquez sur **Suivant**.
-10. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
-11. Dans la liste déroulante **Confidentialité de sites d’équipe Office 365 connectés à un groupe**, sélectionnez **Privé : seuls les membres peuvent accéder au site**.
-12. Sous **Appareils non gérés**, sélectionnez **Bloquer l’accès**.
-13. Cliquez sur **Suivant**.
-14. Dans la page **Étiquetage automatique pour les applications Office**, cliquez sur **Suivant**.
-15. Cliquez sur **Envoyer**, puis sur **Terminé**.
+1. Ouvrez le Centre de conformité Microsoft 365, sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Cliquez sur **Créer une étiquette**.
+1. Tapez **Stratégie d’entreprise** comme nom d’étiquette.
+1. Tapez **Documents de stratégie de la direction de l’entreprise** sous forme d’info-bulle, puis cliquez **Suivant**.
+1. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
+1. Pour ajouter des autorisations d’équipe :<br>a. Cliquez sur **Attribuer des autorisations**.<br>b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez **La stratégie de l’entreprise**, enfin cliquez sur **Ajouter**.<br>c. Cliquez sur **Choisir les autorisations**.<br>d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
+1. Cliquez sur **Suivant**.
+1. Dans la page **Marque de contenu**, cliquez sur **Suivant**.
+1. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.
+1. Dans la liste déroulante **Confidentialité de sites d’équipe Office 365 connectés à un groupe**, sélectionnez **Privé : seuls les membres peuvent accéder au site**.
+1. Sous **Appareils non gérés**, sélectionnez **Bloquer l’accès**.
+1. Cliquez sur **Suivant**.
+1. Dans la page **Étiquetage automatique pour les applications Office**, cliquez sur **Suivant**.
+1. Cliquez sur **Envoyer**, puis sur **Terminé**.
 
 Ensuite, publiez la nouvelle étiquette en procédant comme suit :
 
-1. Dans le Centre de conformité Microsoft 365, dans la page **protection des informations**, sélectionnez l’onglet **Stratégies d’étiquette**.
+1. Dans la Centre de conformité Microsoft 365, dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, sélectionnez l’onglet **Stratégies d’étiquette**.
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez **Stratégie d’entreprise**, puis cliquez sur **Ajouter**.
@@ -175,14 +174,14 @@ La **Stratégie d’entreprise** peut prendre un certain temps avant de devenir 
 Ensuite, appliquez votre nouvelle étiquette à l’équipe **Stratégie d’entreprise** et mettez à jour le type de lien de partage par défaut pour réduire le risque de partager accidentellement des fichiers et des dossiers avec un public plus large que prévu.
 
 1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Sous **Sites**, cliquez sur **Sites actifs**.
-3. Cliquez sur la **Stratégie d’entreprise** .
-4. Sous l’onglet **Stratégies**, sous **Confidentialité**, cliquez sur **Modifier**.
-5. Sélectionnez l’étiquette **Stratégie d’entreprise**, puis cliquez sur **Enregistrer**.
-6. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Choisissez **Uniquement les personnes de votre organisation**.
-6. Sous Type de lien de **Partage par défaut**, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
-7. Cliquez sur **Enregistrer**.
+1. Sous **Sites**, cliquez sur **Sites actifs**.
+1. Cliquez sur la **Stratégie d’entreprise** .
+1. Sous l’onglet **Stratégies**, sous **Confidentialité**, cliquez sur **Modifier**.
+1. Sélectionnez l’étiquette **Stratégie d’entreprise**, puis cliquez sur **Enregistrer**.
+1. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
+1. Choisissez **Uniquement les personnes de votre organisation**.
+1. Sous Type de lien de **Partage par défaut**, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes disposant d’un accès existant**.
+1. Cliquez sur **Enregistrer**.
 
 Ensuite, configurez le partage de sites aux propriétaires uniquement pour l’équipe de **Stratégie d’entreprise**.
 

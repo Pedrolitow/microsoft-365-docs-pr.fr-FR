@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f78234da247835da0ad9c1ecbdaa9702a206f942
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e127f757b2aaa2865e8cb109699d76ed79f41cb6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206684"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785495"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec des résultats de requête de recherche avancés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -71,24 +71,9 @@ AlertInfo
 ```
 Lors de l’affichage des résultats, un graphique en colonnes affiche chaque valeur de gravité en tant que colonne distincte :
 
-![Image des résultats de requête de recherche avancée affichés sous la direction d’un graphique en colonnes. ](../../media/advanced-hunting-column-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la direction d’un graphique en colonnes. ](../../media/advanced-hunting-column-chart-new.png)
  *Résultats de la requête pour les alertes par gravité affichées sous la direction d’un graphique en colonnes*
 
-#### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
-Vous pouvez également utiliser `summarize` l’opérateur pour préparer les résultats pour la graphique des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
-
-La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation à partir du tableau, puis pour compter les valeurs à la fois dans `join` `DeviceInfo` les `summarize` `OSPlatform` colonnes et dans les `Severity` colonnes :
-
-```kusto
-AlertInfo
-| join AlertEvidence on AlertId
-| join DeviceInfo on DeviceId
-| summarize Count = count() by OSPlatform, Severity 
-```
-Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes empilées :
-
-![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique empilé. ](../../media/advanced-hunting-stacked-chart.jpg)
- *Résultats de la requête pour les alertes par système d’exploitation* et gravité affichées sous la mesure d’un graphique empilé
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeurs
 Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre `Top` d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
@@ -101,7 +86,7 @@ EmailEvents
 ```
 Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les principaux domaines :
 
-![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique en secteurs. ](../../media/advanced-hunting-pie-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique en secteurs. ](../../media/advanced-hunting-pie-chart-new.png)
  *Graphique en secteurs montrant la distribution des e-mails de hameçonnage sur les principaux domaines des expéditeurs*
 
 #### <a name="file-activities-over-time"></a>Activités de fichier au fil du temps
@@ -115,7 +100,7 @@ CloudAppEvents
 ```
 Le graphique en lignes ci-dessous met clairement en évidence les périodes avec plus d’activité impliquant `invoice.doc` : 
 
-![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en lignes. ](../../media/advanced-hunting-line-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en lignes. ](../../media/line-chart-a.png)
  *Graphique en lignes montrant le nombre d’événements impliquant un fichier au fil du temps*
 
 
@@ -129,35 +114,27 @@ Après avoir exécute une requête, **sélectionnez Exporter** pour enregistrer 
 Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le panneau Inspecter **l’enregistrement.** Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
 
 - Ressources : vue récapitulée des principaux biens (boîtes aux lettres, appareils et **utilisateurs)** trouvés dans l’enregistrement, enrichis d’informations disponibles, telles que les niveaux de risque et d’exposition
-- **Arborescence de processus** : générée pour les enregistrements avec des informations de processus et enrichie à l’aide des informations contextuelles disponibles ; en règle générale, les requêtes qui retournent plus de colonnes peuvent entraîner des arbre de processus plus riches.
 - **Tous les détails** : toutes les valeurs des colonnes de l’enregistrement  
 
-![Image de l’enregistrement sélectionné avec panneau pour l’inspecter.](../../media/mtp-ah/inspect-record.png)
+![Image de l’enregistrement sélectionné avec panneau pour l’inspecter.](../../media/results-inspect-record.png)
 
 Pour afficher plus d’informations sur une entité spécifique dans les résultats de votre requête, telles qu’un ordinateur, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Adaptez vos requêtes à partir des résultats
-Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats pour améliorer rapidement votre requête. Vous pouvez utiliser les options suivantes pour :
+Sélectionnez les trois points à droite d’une colonne du panneau Inspecter **les** enregistrement. Vous pouvez utiliser les options suivantes pour :
 
 - Rechercher explicitement la valeur sélectionnée (`==`)
 - Exclure la valeur sélectionnée de la requête (`!=`)
 - Obtenez des opérateurs plus avancés pour ajouter la valeur à votre requête (par exemple, `contains`, `starts with` et `ends with`) 
 
-![Image du jeu de résultats de recherche avancée.](../../media/advanced-hunting-results-filter.png)
+![Image du jeu de résultats de recherche avancée.](../../media/work-with-query-tweak-query.png)
 
-## <a name="filter-the-query-results"></a>Filtrer les résultats de la requête
-Les filtres de droite fournissent un résumé du jeu de résultats. Chaque colonne possède sa propre section qui répertorie les valeurs distinctes trouvées pour cette colonne et le nombre d’instances.
 
-Affinez votre requête en sélectionnant le ou les boutons sur les valeurs que vous souhaitez inclure ou exclure, puis en sélectionnant `+` `-` Exécuter la **requête**.
-
-![Image du filtre de recherche avancé.](../../media/advanced-hunting-filter.png)
-
-Une fois le filtre appliqué pour modifier la requête, puis exécuter la requête, les résultats sont mis à jour en conséquence.
 
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

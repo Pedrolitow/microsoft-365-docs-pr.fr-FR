@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: c62d1d1478b62ac3ba66ccc0fc7fb9d5fc6101b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0519853f526254173c086ff353c6e5f5cf0208a2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207330"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786373"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -40,7 +42,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
 
 ## <a name="enable-an-archive-mailbox"></a>Activer une boîte aux lettres d’archivage
 
-1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, puis connectez-vous.
 
 2. Dans le volet gauche du Centre de conformité Microsoft 365, cliquez sur **Gouvernance des informations**, puis sur l’onglet **Archive**.
 
@@ -72,7 +74,7 @@ La stratégie d’archivage par défaut affectée aux boîtes aux lettres des ut
 
 Pour désactiver une boîte aux lettres d’archivage :
 
-1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, puis connectez-vous.
 
 2. Dans le volet gauche du Centre de conformité Microsoft 365, cliquez sur **Gouvernance des informations**, puis sur l’onglet **Archive**.
 

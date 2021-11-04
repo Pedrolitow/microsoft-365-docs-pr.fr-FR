@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 13fb928d9eed0349903d28d0aab55c223f4d3ea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb72c7affc98ed1ac5e74ecddabf7edd13c6a01c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202618"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786105"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -40,7 +40,7 @@ Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/q
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 
-Dans le Microsoft 365 Defender de recherche, allez sur **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
+Dans le portail Microsoft 365 Defender, recherchez **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -76,7 +76,7 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
-### <a name="set-the-time-range"></a>Définir l’plage de temps
+### <a name="set-the-time-range"></a>Définir la plage de temps
 Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation d’un intervalle de temps permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto
@@ -115,9 +115,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Sélectionnez **Exécuter la requête** pour voir les résultats. Utilisez l’icône développer en haut à droite de l’éditeur de requête pour vous concentrer sur votre requête de recherche et les résultats. 
-
-![Image du contrôle Développer dans l’éditeur de requête de recherche avancée.](../../media/advanced-hunting-expand.png)
+Sélectionnez **Exécuter la requête** pour voir les résultats.
 
 >[!TIP]
 >Vous pouvez afficher les résultats de la requête sous la mesure de graphiques et ajuster rapidement les filtres. Pour obtenir des [conseils, voir l’aide sur l’working with query results](advanced-hunting-query-results.md)
@@ -167,13 +165,13 @@ Vous pouvez utiliser l’éditeur de requête pour expérimenter plusieurs requ�
 - Séparez chaque requête par une ligne vide.
 - Placez le curseur sur n’importe quelle partie d’une requête pour sélectionner cette requête avant de l’exécutez. Cette requête n’exécutera que la requête sélectionnée. Pour exécuter une autre requête, déplacez le curseur en conséquence et sélectionnez **Exécuter la requête.**
 
-![Image de l’éditeur de requête avec plusieurs requêtes.](../../media/mtp-ah/ah-multi-query.png)
+![Image de l’éditeur de requête avec plusieurs requêtes.](../../media/learn-work-with-multiple.png)
 
 ## <a name="use-sample-queries"></a>Utiliser des exemples de requêtes
 
 La section **Prise en main** fournit quelques requêtes simples utilisant des opérateurs fréquemment utilisés. Essayez d’exécuter ces requêtes et de leur apporter de légères modifications.
 
-![Image de la fenêtre de recherche avancée.](../../media/advanced-hunting-get-started.png)
+![Image de la fenêtre de recherche avancée.](../../media/get-started-section.png)
 
 >[!NOTE]
 >Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le [GitHub de requête.](https://aka.ms/hunting-queries)
@@ -185,7 +183,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

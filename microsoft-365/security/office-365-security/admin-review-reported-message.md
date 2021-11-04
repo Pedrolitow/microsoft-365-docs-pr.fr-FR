@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment passer en revue les messages signalés et comment envoyer des commentaires à vos utilisateurs.
+description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24954f97169283f9dff5a9e2e70e8ed0a8688a21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70e26786e6028e1acf8072c40f15505fb232431
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197964"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786685"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
@@ -30,7 +30,7 @@ ms.locfileid: "60197964"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et Microsoft Defender pour Office 365, les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et basés sur le verdict de votre administrateur.
 
-La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez envoyer des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
+La fonctionnalité est conçue pour envoyer des commentaires à vos utilisateurs, mais ne modifie pas les verdicts des messages dans le système. Pour aider Microsoft à mettre à jour et à améliorer ses filtres, vous devez soumettre des messages pour analyse à l’aide de [la soumission d’administrateur.](admin-submission.md)
 
 Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révision que si le message a été signalé comme faux positifs ou [faux négatifs.](report-false-positives-and-false-negatives.md)
 
@@ -48,7 +48,7 @@ Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révisi
 
 ## <a name="notify-users-from-within-the-portal"></a>Avertir les utilisateurs à partir du portail
 
-1. Dans le Microsoft 365 Defender, allez directement à la page **Soumissions** : [ https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission) .
+1. Dans le Microsoft 365 Defender, allez directement à la page **Soumissions** : [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission) .
 
 2. Cliquez **sur Messages signalés** par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
 

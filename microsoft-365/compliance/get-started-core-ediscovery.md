@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Décrit comment commencer à utiliser Core eDiscovery dans Microsoft 365. Après avoir attribué des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des holds eDiscovery, puis rechercher et exporter du contenu pertinent pour votre enquête.
-ms.openlocfilehash: 80b59f1dc2115ebd6c49d7b3bc3ff53f800adfe5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0e6e29ced6e6dfb535d169cbf5c41193d5d46cfd
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755686"
+ms.locfileid: "60786601"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Mise en place de core eDiscovery dans Microsoft 365
 
@@ -72,7 +73,7 @@ Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, compl
 
 3. Dans la page volante du Gestionnaire  eDiscovery, cliquez sur Modifier à côté de la section Gestionnaire **eDiscovery.**
 
-4. Dans la page Choisir le gestionnaire **eDiscovery** dans l’Assistant Modifier le groupe de rôles, cliquez **sur Choisir gestionnaire de découverte.**
+4. Dans la page **Choisir le gestionnaire eDiscovery** dans l’Assistant Modifier le groupe de rôles, cliquez sur **Choisir gestionnaire de découverte.**
 
 5. Cliquez **sur** Ajouter, puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
@@ -84,11 +85,11 @@ Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, compl
 
 Il existe deux sous-groupes dans le groupe de rôles Gestionnaire eDiscovery. Ces sous-groupes ont différents rôles.
 
-- **Gestionnaire eDiscovery**: peut afficher et gérer les cas eDiscovery principaux qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas un deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne sera pas en mesure d’afficher ou d’ouvrir le cas sur la page eDiscovery principale dans le centre de conformité. En règle générale, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe gestionnaire eDiscovery.
+- **Gestionnaire eDiscovery :** peut afficher et gérer les cas eDiscovery principaux qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas un deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne sera pas en mesure d’afficher ou d’ouvrir le cas sur la page Principale eDiscovery dans le centre de conformité. En règle générale, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe gestionnaire eDiscovery.
 
-- **Administrateur eDiscovery**: peut effectuer toutes les tâches de gestion de cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
+- **Administrateur eDiscovery**: peut effectuer toutes les tâches de gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
 
-  - Afficher tous les cas répertoriés sur la page Core eDiscovery.
+  - Afficher tous les cas répertoriés sur la page eDiscovery principale.
   
   - Gérer tous les cas au sein l’organisation après s’être ajouté en tant que membre du cas.
 
@@ -110,7 +111,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Core e
 
 3. Dans la page **Core eDiscovery,** cliquez **sur Créer un cas.**
 
-4. Dans la page **du nouveau volant de** cas, nommez le cas (obligatoire), puis tapez une description facultative. Le nom de cas doit être unique dans votre organisation.
+4. Dans la page **de volant Nouveau** cas, nommez le cas (obligatoire), puis tapez une description facultative. Le nom de cas doit être unique dans votre organisation.
 
 5. Cliquez **sur Enregistrer** pour créer le cas.
 
@@ -141,11 +142,11 @@ Si vous créez un cas à l’étape 3 et que vous êtes la seule personne à uti
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Explorer le flux de travail eDiscovery principal
 
-Pour commencer à utiliser la découverte électronique principale, voici un flux de travail simple qui vous permet de créer des holds eDiscovery pour les personnes qui vous intéressent, de rechercher du contenu pertinent pour votre examen, puis d’exporter ces données pour une révision plus approfondie. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery principales étendues que vous pouvez explorer.
+Pour commencer à utiliser la découverte électronique principale, voici un flux de travail simple qui vous permet de créer des holds eDiscovery pour les personnes qui vous intéressent, de rechercher du contenu pertinent pour votre enquête, puis d’exporter ces données pour une révision plus approfondie. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery principales étendues que vous pouvez explorer.
 
 ![Flux de travail eDiscovery principal.](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Créer une attente eDiscovery](create-ediscovery-holds.md)**. La première étape après la création d’un cas consiste à placer une mise en attente (également appelée mise en attente *eDiscovery)* sur les emplacements de contenu des personnes qui vous intéressent dans votre enquête. Les emplacements de contenu incluent Exchange boîtes aux lettres, des sites SharePoint, des comptes OneDrive, ainsi que les boîtes aux lettres et les sites associés aux groupes Microsoft Teams et Microsoft 365 web. Bien que cette étape soit facultative, la création d’une conservation eDiscovery conserve le contenu qui peut être pertinent pour le cas au cours de l’examen. Lorsque vous créez une conservation eDiscovery, vous pouvez conserver tout le contenu dans des emplacements de contenu spécifiques ou créer une conservation basée sur une requête pour conserver uniquement le contenu qui correspond à une requête de conservation. Outre la conservation du contenu, une autre bonne raison de créer des conservations eDiscovery consiste à rechercher rapidement les emplacements de contenu en attente (au lieu de devoir sélectionner chaque emplacement à rechercher) lorsque vous créez et exécutez des recherches à l’étape suivante. Une fois que vous avez terminé votre enquête, vous pouvez libérer toute mise en attente que vous avez créée.
+1. **[Créer une attente eDiscovery](create-ediscovery-holds.md)**. La première étape après la création d’un cas consiste à placer une mise en attente (également appelée mise en attente *eDiscovery)* sur les emplacements de contenu des personnes qui vous intéressent dans votre enquête. Les emplacements de contenu incluent Exchange boîtes aux lettres, des sites SharePoint, des comptes OneDrive, ainsi que les boîtes aux lettres et les sites associés à des groupes Microsoft Teams et Microsoft 365 de contenu. Bien que cette étape soit facultative, la création d’une conservation eDiscovery conserve le contenu qui peut être pertinent pour le cas pendant l’examen. Lorsque vous créez une conservation eDiscovery, vous pouvez conserver tout le contenu dans des emplacements de contenu spécifiques ou créer une conservation basée sur une requête pour conserver uniquement le contenu qui correspond à une requête de conservation. En plus de préserver le contenu, une autre bonne raison de créer des conservations eDiscovery consiste à rechercher rapidement les emplacements de contenu en attente (au lieu de devoir sélectionner chaque emplacement à rechercher) lorsque vous créez et exécutez des recherches à l’étape suivante. Une fois que vous avez terminé votre enquête, vous pouvez libérer toute mise en attente que vous avez créée.
 
 2. **[Rechercher du contenu.](search-for-content-in-core-ediscovery.md)** Après avoir créé des conserver eDiscovery, utilisez l’outil de recherche intégré pour rechercher les emplacements de contenu en attente. Vous pouvez également rechercher dans d’autres emplacements de contenu des données qui peuvent être pertinentes pour le cas. Vous pouvez créer et exécuter différentes recherches associées au cas. Vous utilisez des mots clés, [](keyword-queries-and-search-conditions.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
 
@@ -155,4 +156,4 @@ Pour commencer à utiliser la découverte électronique principale, voici un flu
 
    - Révisez une requête et réexécutez la recherche.
 
-3. **[Exporter et télécharger les résultats de recherche.](export-content-in-core-ediscovery.md)** Une fois que vous avez recherché et trouvé des données pertinentes pour votre enquête, vous pouvez l’exporter hors de l’Office 365 pour examen par des personnes extérieures à l’équipe d’examen. L’exportation des données est un processus en deux étapes. La première étape consiste à exporter les résultats d’une recherche en cas de non-Office 365. Pour ce faire, copiez les résultats d’une recherche dans un emplacement stockage Azure Microsoft. L’étape suivante consiste à utiliser l’outil d’exportation eDiscovery pour télécharger le contenu sur un ordinateur local. Outre les fichiers de données exportés, le contenu du package d’exportation contient également un rapport d’exportation, un rapport de synthèse et un rapport d’erreurs.
+3. **[Exporter et télécharger les résultats de recherche.](export-content-in-core-ediscovery.md)** Une fois que vous avez recherché et trouvé des données pertinentes pour votre enquête, vous pouvez les exporter hors Office 365 pour révision par des personnes extérieures à l’équipe d’examen. L’exportation des données est un processus en deux étapes. La première étape consiste à exporter les résultats d’une recherche en cas de non-Office 365. Pour ce faire, copiez les résultats d’une recherche dans un emplacement stockage Azure Microsoft. L’étape suivante consiste à utiliser l’outil d’exportation eDiscovery pour télécharger le contenu sur un ordinateur local. Outre les fichiers de données exportés, le contenu du package d’exportation contient également un rapport d’exportation, un rapport de synthèse et un rapport d’erreurs.

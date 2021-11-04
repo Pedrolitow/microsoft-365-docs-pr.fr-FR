@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
-ms.openlocfilehash: da5b22d79339ad4a4a94bd0db803970c1d66537f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 593ce847803fdc3529fbe9276721e6bb8cf79069
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755248"
+ms.locfileid: "60786133"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
 
@@ -94,11 +96,11 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
     b. Pour configurer des filtres d’ajout afin de réduire la quantité de données importées, cliquez sur **Plus d’options de filtrage.**
   
-    ![Configurez les filtres sur la page Plus d’options pour découper les données importées.](../media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
+    ![Configurez les filtres de la page Plus d’options pour découper les données importées.](../media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     Vous pouvez configurer ces filtres :
   
-      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description de la façon Microsoft 365 les compartiments d’âge pour le **filtre Âge.** 
+      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description Microsoft 365 détermine les compartiments d’âge pour le **filtre Âge.** 
   
       - **Type** : cette section affiche tous les types de messages trouvés dans les fichiers PST de la tâche d’importation. Vous pouvez décocher une case en de côté d’un type de message que vous souhaitez exclure. Vous ne pouvez pas exclure le type de message Autre. Consultez la section [Plus d’informations](#more-information) pour obtenir la liste des éléments de boîte aux lettres inclus dans la catégorie Autre.
   

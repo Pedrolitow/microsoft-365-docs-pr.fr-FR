@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 53c4e1ac80606e4f2a895a4f008206070cafe3c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a9c01b292fcc4162e79b899b23f082e4f6413e2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171782"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785785"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -51,7 +51,7 @@ Si vous êtes un utilisateur, vous n'avez pas les autorisations pour paramétrer
 Si vous voulez que les mots de passe utilisateur expirent après un certain temps, suivez la procédure ci-dessous.
 
 1. Dans le Centre d’administration Microsoft 365, accédez à l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Sécurité et confidentialité**</a>.
- 
+
     Si vous n’êtes pas un administrateur général, l’option Sécurité et confidentialité n’est pas visible.
   
 1. Sélectionnez **Stratégie d’expiration du mot de passe**.
@@ -62,8 +62,8 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
   
 6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être notifiés de l'expiration du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
 
-> [!NOTE]
-> Les notifications d’expiration de mot de passe ne sont plus prises en charge dans le portail Office 365 ou les applications Office à l’exception d’Outlook lors de l'utilisation de l'authentification de base. Outlook avec l’authentification moderne ne prend pas en charge les notifications d’expiration de mot de passe.
+> [!IMPORTANT]
+> Les notifications d’expiration de mot de passe ne sont plus prises en charge dans le Centre d'administration Microsoft 365 ou les applications Office.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Points importants dont vous devez tenir compte concernant la fonctionnalité d’expiration de mot de passe
   

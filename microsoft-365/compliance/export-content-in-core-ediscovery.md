@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 6fa9c82d2ef764f292dae3848e10ef53dd06c182
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1d998a4b1eb540a1d96afc3acd3518d0c604a7e9
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755814"
+ms.locfileid: "60787009"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
 
@@ -45,7 +46,7 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
    Le flux de travail pour exporter les résultats d’une recherche associée à un cas core eDiscovery est identique à l’exportation des résultats de recherche pour une recherche sur la page de recherche **de** contenu. Pour obtenir des instructions détaillées, voir Exporter les résultats [de recherche de contenu.](export-search-results.md)
 
    > [!NOTE]
-   > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’activer la dédoplication afin qu’une seule copie d’un message électronique soit exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont fait l’être. Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery.](de-duplication-in-ediscovery-search-results.md)
+   > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d’activer la dédoplication afin qu’une seule copie d’un message électronique soit exportée, même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont fait l’être. Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery](de-duplication-in-ediscovery-search-results.md).
 
    Une fois l’exportation commencée, les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont transférés vers un emplacement fourni par Microsoft stockage Azure dans le cloud Microsoft.
   
@@ -57,7 +58,7 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 7. Cliquez sur la tâche d’exportation que vous avez créée pour afficher les informations d’état sur la page volante. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers stockage Azure’emplacement.
 
-8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des résultats de recherche de contenu](export-search-results.md#step-2-download-the-search-results)
+8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des](export-search-results.md#step-2-download-the-search-results) résultats de recherche de contenu
 
 > [!NOTE]
 > Les résultats de recherche exportés doivent être téléchargés dans les 14 jours suivant la création de la tâche d’exportation.

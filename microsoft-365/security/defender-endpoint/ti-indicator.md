@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191634"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785625"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -51,7 +51,7 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
+id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
 indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
 application|String|Application associée à l’indicateur.
@@ -65,36 +65,28 @@ creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicat
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|String|Titre de l’indicateur.
-description|Chaîne|Description de l’indicateur.
-recommendedActions|String|Actions recommandées pour l’indicateur.
+title|Chaîne|Titre de l’indicateur.
+description|String|Description de l’indicateur.
+recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
-## <a name="public-preview-indicator-types"></a>Prévisualisation publique : types d’indicateurs
+generateAlert|Énum|**True si** la génération d’alerte est **requise, False** si cet indicateur ne doit pas générer d’alerte.
 
-> [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+## <a name="indicator-types"></a>Types d’indicateurs
 
 Les types d’action d’indicateur pris en charge par l’API sont :
 
 - Autorisé
-- Alerte
-- AlertAndBlock
 - Audit
 - Bloquer
 - BlockAndRemediate
-- Avertir
+- Avertir (MCAS uniquement)
 
-La liste API des types d’actions contient les nouvelles actions de réponse, ainsi que les actions de réponse précédentes (AlertAndBlock et Alert). Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
-
-Les actions de réponse IoC Autorisées, Avertir, Bloquer et BloquerRémediate sont en prévisualisation publique. Pour plus d’informations sur la prévisualisation publique, voir Prévisualisation publique : Améliorations apportées au fichier personnalisé IoC et mise à jour du schéma [d’API - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
-
-
-
+Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
 
 > [!Note]
 >
-> Les actions de réponse précédentes (AlertAndBlock et Alert) sont supprimées lorsque la fonctionnalité a atteint GAed. La date de grâce estimée avec période de grâce est la fin d’octobre 2021.  Nous vous conseillons de mettre à jour les modèles ou les scripts existants dès que possible.
+> Les actions de réponse précédentes (AlertAndBlock et Alert) seront prises en charge jusqu’en janvier 2022. Après cette date, tous les clients doivent utiliser l’un des types d’actions répertoriés ci-dessus.
 
 ## <a name="json-representation"></a>Représentation Json
 

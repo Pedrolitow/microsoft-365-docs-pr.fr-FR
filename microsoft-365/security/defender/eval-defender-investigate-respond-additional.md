@@ -22,16 +22,16 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e412852e7184a4f9b520ed777938836a44b62b5c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208456"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786169"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Cet article est [l’étape 2 sur 2](eval-defender-investigate-respond.md) dans le processus d’examen et de réponse d’un incident Microsoft 365 Defender l’aide d’un environnement pilote. Pour plus d’informations sur ce processus, consultez l’article [de](eval-defender-investigate-respond.md) présentation.
@@ -56,7 +56,7 @@ La section **Incidents et alertes** les plus récents présente un graphique du 
 
 Pour examiner la liste des incidents et hiérarchiser leur importance pour l’affectation et l’examen, vous pouvez : 
 
-- Configurez des colonnes personnalisables (sélectionnez Sélectionner des colonnes) pour vous donner une visibilité sur les différentes caractéristiques de l’incident ou des entités impactées. Cela vous permet de prendre une décision éclairée concernant la hiérquage des incidents à analyser.
+- Configurez des colonnes personnalisables **(sélectionnez** Sélectionner des colonnes) pour vous donner une visibilité sur les différentes caractéristiques de l’incident ou des entités impactées. Cela vous permet de prendre une décision éclairée concernant la hiérquage des incidents à analyser.
 
 - Utilisez le filtrage pour vous concentrer sur un scénario ou une menace spécifique. L’application de filtres à la file d’attente des incidents peut aider à déterminer les incidents qui nécessitent une attention immédiate. 
 
@@ -107,11 +107,11 @@ Pour plus d’informations, [voir Gérer les incidents.](manage-incidents.md)
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>Examiner l’examen et la réponse automatisés avec le centre de gestion de l’action
 
-Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en attente ou terminées, sont répertoriées dans le centre de [actions,](m365d-action-center.md)qui répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités dans un seul emplacement.
+Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en [](m365d-action-center.md)attente ou terminées, sont répertoriées dans le centre de mise en œuvre, qui répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités dans un seul emplacement.
 
 Voici un exemple.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
 
 Dans le centre de l’action, vous pouvez sélectionner les actions en attente, puis les approuver ou les rejeter dans le volet volant. Voici un exemple.
 
@@ -184,9 +184,9 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
    1. Sélectionnez **Exécuter la requête**. Vous pouvez obtenir des résultats différents en fonction de votre environnement pilote.
 
       > [!NOTE]
-      > Consultez l’étape suivante pour les options de filtrage afin de limiter le retour de données.
+      > Consultez l’étape suivante pour les options de filtrage pour limiter le retour de données.
 
-      ![Exemple de résultats de requête de recherche avancée.](../../media/mtp/fig19.png)
+      ![Exemple de résultats de requête de recherche avancée.](../../media/advanced-hunting-incident-response-try-1.png)
 
         > [!NOTE]
         > Le recherche avancée affiche les résultats de la requête sous la mesure de données tabulaires. Vous pouvez également choisir d’afficher les données dans d’autres types de formats tels que les graphiques.
@@ -200,11 +200,11 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
    1. Cliquez sur les lignes résultantes de la requête pour pouvoir inspecter l’enregistrement.
 
-      ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné.](../../media/mtp/fig21.png)
+      ![Exemple de panneau latéral d’inspection de l’enregistrement qui s’ouvre lorsqu’un résultat de recherche avancé est sélectionné.](../../media/advanced-hunting-incident-response-try-2.png)
 
 4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection**  ==  **« Entrant »**
 
-   La requête suivante vous montre le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
+   La requête suivante affiche le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
 
    ```console
    EmailEvents
@@ -258,7 +258,7 @@ Les détections personnalisées exécutent la requête en fonction de la fréque
 
 1. Dans la page de requête, supprimez les lignes 7 et 8 qui ont été ajoutées à l’étape 7 des instructions de repérage d’aller, puis cliquez sur Créer **une règle de détection.**
 
-   ![Exemple d’endroit où vous pouvez cliquer sur créer une règle de détection dans la page de repérage avancé.](../../media/mtp/fig22.png)
+   ![Exemple d’endroit où vous pouvez cliquer sur créer une règle de détection dans la page de repérage avancé.](../../media/advanced-hunting-incident-response-try-3.png)
 
    > [!NOTE]
    > Si vous cliquez **sur Créer une règle de détection** et que vous avez des erreurs de syntaxe dans votre requête, votre règle de détection ne sera pas enregistrée. Vérifiez votre requête pour vous assurer qu’il n’y a aucune erreur.
@@ -320,4 +320,4 @@ Consultez [Obtenir une formation spécialisée sur la recherche avancée](advanc
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)
+[Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement](eval-create-eval-environment.md)

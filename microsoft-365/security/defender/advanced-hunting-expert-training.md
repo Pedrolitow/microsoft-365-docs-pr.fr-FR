@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1a2fd580a98fc7ac9db9d6592191eb4667ae757f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659243"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786697"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtenir une formation spécialisée sur le chasse avancée
 
@@ -50,6 +50,7 @@ Obtenez une formation plus spécialisée avec *L33TSP3AK*: recherche avancée da
 |--|--|--|--|
 | Épisode 1  | Dans cet épisode, vous découvrirez différentes meilleures pratiques en matière d’exécution de requêtes de recherche avancées. Parmi les rubriques traitées figurent : comment optimiser vos requêtes, utiliser la recherche avancée pour les ransomware, gérer JSON en tant que type dynamique et travailler avec des opérateurs de données externes. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | Épisode 2 | Dans cet épisode, vous allez découvrir comment examiner les emplacements d’accès et l’exfiltration de données suspects ou inhabituels et y répondre via des règles de forwarding de boîte de réception. Le gestionnaire de programmes senior pour cloud security CxE, Contrôle d’accès au cloud, partage l’utilisation du service de recherche avancée pour examiner les incidents en plusieurs étapes avec Microsoft Cloud App Security données. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
+| Épisode 3 | Dans cet épisode, nous allons vous parler des dernières améliorations apportées au recherche avancée, de l’importation d’une source de données externe dans votre requête et de l’utilisation du partitionnement pour segmenter les résultats de requête de grande taille en jeux de résultats plus petits afin d’éviter d’atteindre les limites de l’API. | [YouTube](https://www.youtube.com/watch?v=vd5lgIJKmYs) (40:59) | [Fichier texte](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/l33tspeak%2011%20Oct%202021%20-%20externaldata%20and%20query%20partitioning.csl)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Utilisation du fichier CSL
@@ -88,7 +89,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
      
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Découvrir le langage de requête de repérage avancé](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

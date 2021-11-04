@@ -11,16 +11,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: En savoir plus sur Microsoft 365 catalogue de solutions, y compris ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0b6d6ac32f9dfcc81a93deddc081dcb77acd973
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 8a2daf2bf3dd8c3260be24a6b09761e5a6ea3e92
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158201"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786049"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
-Vous recherchez un moyen de commencer rapidement les tâches de conformité dans Microsoft 365 ? Consultez le catalogue [Microsoft 365 solutions](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et démarrer rapidement avec les solutions de gestion des risques et de conformité.
+Vous recherchez un moyen de commencer rapidement les tâches de conformité dans Microsoft 365 ? Consultez le catalogue [Microsoft 365 solutions](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et démarrer rapidement avec les solutions de gestion des risques et de la conformité.
 
 Les solutions de conformité Microsoft 365 sont des ensembles de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer des scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, et bien plus encore.
 
@@ -58,9 +59,9 @@ La section **Gestion des** risques internes sur la page d’accueil vous montre 
 À partir de là, vous verrez des cartes pour les solutions suivantes :
 
 - [Conformité des communications](communication-compliance.md): réduit les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à examiner les éventuelles violations de stratégie et à prendre des mesures pour minimiser les dommages.
-- [Gestion des risques internes :](insider-risk-management.md)détecter les activités risquées au sein de votre organisation pour vous aider à identifier, examiner et prendre des mesures rapidement sur les risques internes et les menaces.
+- [Gestion des risques internes :](insider-risk-management.md)détecter les activités risquées au sein de votre organisation pour vous aider à identifier, examiner et prendre rapidement des mesures sur les risques internes et les menaces.
 
-## <a name="discovery--response-section"></a>Section Détection & réponse
+## <a name="discovery--response-section"></a>Section détection & réponse
 
 La section **De détection & réponse** sur la page d’accueil vous montre d’un coup d’œil comment votre organisation peut rapidement rechercher, examiner et répondre aux problèmes de conformité avec les données pertinentes.
 
@@ -78,7 +79,7 @@ La section **De détection & réponse** sur la page d’accueil vous montre d’
 
 Pour visiter le catalogue Microsoft 365 solutions, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité. Sélectionnez **Catalogue** dans le volet de navigation sur le côté gauche de l’écran pour ouvrir la page d’accueil du catalogue.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Pourquoi le catalogue de solutions Microsoft 365 ne s’Microsoft 365-il pas ?**
 
@@ -96,4 +97,4 @@ Tout d’abord, assurez-vous que vous avez les licences et autorisations appropr
     - **Familiarisez-vous avec les** Microsoft Cloud App Security . Voir [Démarrage rapide : prendre en Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Commencer avec les classifieurs.** La classification du contenu, puis son étiquetage afin qu’il puisse être protégé et géré correctement est le point de départ de la protection des informations. Voir [En savoir plus sur les classifieurs entraisables (prévisualisation).](classifier-learn-about.md)
 
-- **Visitez souvent Microsoft 365 catalogue** de solutions de votre entreprise et veillez à passer en revue les nouvelles solutions pour vous aider à répondre à vos besoins en matière de conformité. Connectez-vous, [https://compliance.microsoft.com](https://compliance.microsoft.com) puis sélectionnez **Catalogue** dans le volet de navigation gauche.
+- **Visitez souvent Microsoft 365 catalogue** de solutions et veillez à passer en revue les nouvelles solutions pour vous aider à répondre à vos besoins en matière de conformité. Connectez-vous, [https://compliance.microsoft.com](https://compliance.microsoft.com) puis sélectionnez **Catalogue** dans le volet de navigation gauche.

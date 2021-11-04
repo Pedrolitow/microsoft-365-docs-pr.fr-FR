@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753528"
+ms.locfileid: "60785449"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
@@ -42,7 +43,7 @@ Les fonctionnalités suivantes en font partie :
     -   Exchange
     -   SharePoint
     -   OneDrive
-    -   Teams
+    -   Équipes
     -   Appareils
 -   **Options de configuration d’alerte avancées**: ces options font partie du flux de authoring de stratégie DLP. Utilisez-les pour créer des configurations d’alerte enrichies. Vous pouvez créer une alerte à événement unique ou une alerte agrégée, en fonction du nombre d’événements ou de la taille des données divulguées.
 
@@ -116,14 +117,14 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Détails de l’événement*||
     |      | ID                            | ID unique associé à l’événement                                        | Tous les événements                               |
-    |                   | Lieu                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
+    |                   | Emplacement                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
     |                   | Heure de l’activité              | Heure de l’activité de l’utilisateur à l’origine de la violation DLP                    | Tous les événements                               |
     |*Entités impactées*||
     |  | Utilisateur                          | Utilisateur à l’origine de la violation DLP                                          | Tous les événements                               |
     |                   | Nom d'hôte                      | Nom d’hôte de l’ordinateur sur lequel la violation DLP a été détectée              | Événements d’appareils                           |
     |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
     |                   | File path                     | Chemin d’accès absolu du fichier impliqué dans la violation                        | SharePoint, OneDrive et appareils |
-    |                   | Destinataires du courrier électronique              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
+    |                   | Destinataires d’un e-mail              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
     |                   | Sujet de l’e-mail                 | Objet de l’e-mail qui a enfreint la stratégie DLP                          | Exchange événements                          |
     |                   | Pièces jointes             | Noms des pièces jointes dans l’e-mail qui ont enfreint la stratégie DLP         | Exchange événements                          |
     |                   | Propriétaire du site                    | Nom du propriétaire du site                                                     | SharePoint et OneDrive événements           |
@@ -142,7 +143,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     
 1.  Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance et le nombre.
 
-2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif,** En cours d’examen, Rejeté ou **Résolu**).  Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
+2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif** **,** En cours d’examen, Rejeté ou **Résolu**). Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
 
     -   Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion.**
     -   Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu.**

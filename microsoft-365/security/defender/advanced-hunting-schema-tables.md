@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c0f1a476963a3eed3e1759743f87b1bce2233ffc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cd087ef92a261904ce43951f2a29bb64639405ac
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667047"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786029"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -48,7 +48,7 @@ Lors de la construction de requêtes, utilisez la référence de schéma intégr
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
 Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail.](../../media/mtp-ah/ah-reference.png)
+![Image montrant comment accéder à la référence de schéma dans le portail.](../../media/understand-schema-1.png)
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
 La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans le centre de sécurité dans le cadre de la représentation de schéma sur l’écran de recherche avancée.
@@ -82,7 +82,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification sur Active Directory et les services en ligne Microsoft |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

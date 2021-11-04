@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6ddd0cbc8a8903ded4f95fc75e4a8ffcde7c5b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159389"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785619"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -55,12 +55,13 @@ L’examen et la correction automatisés se comportent de la même manière. Si 
 
 Le paramètre EnableFileHashComputation calcule le hachage de fichier pour le cert et l’IoC de fichier pendant les analyses de fichiers. Il prend en charge l’application IoC des haps et des certs appartenant à des applications fiables. Elle sera activée et désactivée simultanément avec le paramètre autoriser ou bloquer le fichier. EnableFileHashComputation est activé manuellement par le biais de la stratégie de groupe et est désactivé par défaut.
 
-Les actions actuellement prises en charge sont :
+Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suivantes sont disponibles :
 
-- Autoriser
-- Alerte uniquement
-- Alerte et blocage
-- Avertir
+- Allow : l’IoC sera autorisé à s’exécuter sur vos appareils.
+- Audit : une alerte est déclenchée lors de l’ioC.
+- Avertir : l’IoC vous avertit que l’utilisateur peut contourner (MCAS uniquement) 
+- Bloquer l’exécution : l’IoC n’est pas autorisé à s’exécuter.
+- Bloquer et corriger : l’IoC n’est pas autorisé à s’exécuter et une action de correction est appliquée à l’IoC.
 
 >[!NOTE]
 > L’utilisation du mode Avertissement invite vos utilisateurs à s’avertir s’ils ouvrent une application à risque. L’invite ne les empêchera pas d’utiliser l’application, mais vous pouvez fournir un message personnalisé et des liens vers une page d’entreprise qui décrit l’utilisation appropriée de l’application. Les utilisateurs peuvent toujours ignorer l’avertissement et continuer à utiliser l’application s’ils en ont besoin. Pour plus d’informations, voir [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
@@ -71,23 +72,7 @@ Vous pouvez créer un indicateur pour :
 - [Adresses IP, URL/domaines](indicator-ip-domain.md)
 - [Certificats](indicator-certificates.md)
 
-> [!NOTE]
->
-> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas les [exclusions définies pour Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge Antivirus Microsoft Defender lorsqu’il est en mode passif.
-
-## <a name="public-preview-for-automated-investigation-and-remediation-engine"></a>Prévisualisation publique pour le moteur automatisé d’examen et de correction
-
-> [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
-
-Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suivantes sont désormais disponibles :
-
-- Allow : l’IoC sera autorisé à s’exécuter sur vos appareils.
-- Audit : une alerte est déclenchée lors de l’ioC.
-- Bloquer l’exécution : l’IoC n’est pas autorisé à s’exécuter.
-- Bloquer et corriger : l’IoC n’est pas autorisé à s’exécuter et une action de correction est appliquée à l’IoC.
-
-Le tableau ci-dessous indique exactement les actions disponibles par type d’indicateur (IoC) :
+Le tableau ci-dessous indique exactement quelles actions sont disponibles par type d’indicateur (IoC) :
 
 | Type IoC | Actions disponibles |
 |:---|:---|
@@ -96,7 +81,7 @@ Le tableau ci-dessous indique exactement les actions disponibles par type d’in
 | [URL et domaines](indicator-ip-domain.md) | Autoriser <br> Audit <br> Bloquer l’exécution |
 | [Certificats](indicator-certificates.md) | Autoriser <br> Bloquer et corriger |
 
-Par exemple, les trois actions de réponse IoC d’origine étaient « autoriser », « alerte uniquement » et « alerte et bloquer ». Dans le cadre de la mise à jour, les fonctionnalités des IOC pré-existants ne changeront pas. Toutefois, les indicateurs ont été renommés pour correspondre aux actions de réponse prises en charge en cours :
+Les fonctionnalités des IOC pré-existants ne changeront pas. Toutefois, les indicateurs ont été renommés pour correspondre aux actions de réponse prises en charge en cours :
 
 - L’action de réponse « alerte uniquement » a été renommée « audit » avec le paramètre d’alerte généré activé.
 - La réponse « alerte et blocage » a été renommée « bloquer et corriger » avec le paramètre d’alerte de générer facultatif.
@@ -104,13 +89,11 @@ Par exemple, les trois actions de réponse IoC d’origine étaient « autoriser
 Le schéma de l’API IoC et les ID de menace à l’avance de recherche ont été mis à jour pour s’aligner sur le changement de nom des actions de réponse IoC. Les modifications apportées au schéma d’API s’appliquent à tous les types IoC.
 
 > [!Note]
-> Pour les indicateurs de fichier, le fait de lever une alerte sur les actions de blocage est facultatif.
->
-> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas les exclusions définies pour Antivirus Microsoft Defender. Les indicateurs ne sont pas pris en charge Antivirus Microsoft Defender lorsqu’il est en mode passif.
+> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas les [exclusions définies pour Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge Antivirus Microsoft Defender lorsqu’il est en mode passif.
 >
 > Le format d’importation de nouveaux indicateurs (IOC) a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV disponible en bas du panneau d’importation.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Créer un IoC contextuel](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Utiliser l’API d’indicateurs microsoft Defender pour les points de terminaison](ti-indicator.md)

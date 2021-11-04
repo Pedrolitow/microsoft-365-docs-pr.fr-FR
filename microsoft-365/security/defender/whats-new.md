@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 930d9fc489e449effcb61c3224f5695ec835a1a1
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: a1937fd24c8025aa3e3d7afb16fbf050b1155fb3
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724702"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786613"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -47,10 +47,12 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 ## <a name="november-2021"></a>Novembre 2021
-- (Aperçu) La fonctionnalité de module de gouvernance des applications de Defender pour les applications cloud est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications activées pour OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications.](/cloud-app-security/app-governance-manage-app-governance)
 
+- (Aperçu) La fonctionnalité de module de gouvernance des applications de Defender pour les applications cloud est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications activées pour OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications.](/cloud-app-security/app-governance-manage-app-governance)
+- (Aperçu) La [page](advanced-hunting-overview.md) de recherche avancée dispose désormais d’une prise en charge multitab, d’un défilement intelligent, d’onglets de schéma simplifiés, d’options de modification rapide pour les requêtes, d’un indicateur d’utilisation des ressources de requête et d’autres améliorations pour rendre les requêtes plus fluides et plus faciles à affiner.
+- (Aperçu) Vous pouvez désormais utiliser la fonctionnalité de lien vers [l’incident](advanced-hunting-link-to-incident.md) pour inclure des événements ou des enregistrements provenant des résultats de la requête de recherche avancée directement dans un incident nouveau ou existant que vous examinez. 
 ## <a name="october-2021"></a>Octobre 2021
-- (GA) Dans le hunting avancé, d’autres colonnes ont été ajoutées dans la table [CloudAppEvents.](advanced-hunting-cloudappevents-table.md) Vous pouvez désormais `AccountType` ajouter , , , et à vos `IsExternalUser` `IsImpersonated` `IPTags` `IPCategory` `UserAgentTags` requêtes. 
+- (GA) Dans le hunting avancé, d’autres colonnes ont été ajoutées dans la table [CloudAppEvents.](advanced-hunting-cloudappevents-table.md) Vous pouvez désormais `AccountType` inclure , , , et à vos `IsExternalUser` `IsImpersonated` `IPTags` `IPCategory` `UserAgentTags` requêtes. 
 
 ## <a name="september-2021"></a>Septembre 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. Vous pouvez voir la disponibilité et l’état des types d’événements dans les types d’Microsoft 365 Defender pris en charge [dans l’API de diffusion en continu.](supported-event-types.md)
@@ -58,7 +60,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - (Aperçu) Affecter des incidents et des alertes aux comptes d’utilisateurs <br> Vous pouvez affecter un incident, ainsi que toutes les alertes qui lui sont associées, à un compte d’utilisateur de **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
 
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 - (Aperçu) Microsoft Defender pour les Office 365 disponibles dans le recherche avancée
 <br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide de la recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
@@ -75,7 +77,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - (Aperçu) [Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)<br> Obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.
     
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 - [Nouvelle page d’alerte dans le portail Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Fournit des informations améliorées pour le contexte d’une attaque. Vous pouvez voir quelle autre alerte déclenchée a provoqué l’alerte actuelle, ainsi que toutes les entités et activités concernées par l’attaque, y compris les fichiers, les utilisateurs et les boîtes aux lettres. Pour [plus d’informations, voir](/microsoft-365/security/defender/investigate-alerts) Examiner les alertes.
 - [Graphique de tendance pour les incidents et les alertes dans le portail Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Déterminez s’il existe plusieurs alertes pour un incident unique ou si votre organisation fait l’objet d’attaques avec plusieurs incidents différents. Pour plus [d’informations, voir](/microsoft-365/security/defender/incident-queue) Hiérarchiser les incidents.

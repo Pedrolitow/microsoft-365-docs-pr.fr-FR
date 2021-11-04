@@ -17,28 +17,28 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02250d5eb75983ad0341f43addc097a26d03d6f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174662"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786293"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources > s’inscrire à **Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
@@ -79,7 +79,7 @@ ms.locfileid: "60174662"
 
 - Chaque ligne contient le nom de l’événement, le moment où Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée « properties ».
 
-- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
+- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
 - Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
 
@@ -91,7 +91,7 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -99,11 +99,11 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 - Voici un exemple d’événement Device Info :
 
-  ![Image de l’ID3 de ressource du hub d’événements.](images/machine-info-datatype-example.png)
+  ![Image de l’ID3 de ressource du hub d’événements.](images/data-types-mapping-query.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
-- [API de diffusion en continu De Microsoft Defender pour les points de terminaison](raw-data-export.md)
+- [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)
 - [Diffuser des événements Microsoft Defender for Endpoint vers votre compte de stockage Azure](raw-data-export-storage.md)
 - [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)

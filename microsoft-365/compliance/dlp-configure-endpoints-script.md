@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Utilisez un script local pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 9611ff0f787e35e313744fa817e30a5d41b761b6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 383e811391d0c2ccc7f2d178b39955c5504c78b5
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753504"
+ms.locfileid: "60786901"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 utilisant un script local
 
@@ -89,7 +90,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 10. Appuyez sur **entrée** ou cliquez sur **OK.**
 
 > [!IMPORTANT]
-> L’arrêt de l’appareil entraîne l’arrêt de l’envoi de données de capteur au portail.
+> Le fait d’arrêter l’envoi de données de capteur au portail par le fait que l’appareil n’est plus à l’origine de laboardage.
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 Vous pouvez suivre les différentes étapes de vérification dans [Résoudre les problèmes d’intégration]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) pour vérifier que le script s’est correctement terminé et que l’agent est en cours d’exécution.

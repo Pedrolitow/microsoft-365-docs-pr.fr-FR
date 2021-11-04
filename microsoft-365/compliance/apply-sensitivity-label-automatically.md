@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 1ad7ba8af90a099ccc7d1072397c77ed2de387c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f04044d1c0b951dc62e3d515f951faf8625e1b44
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647736"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785641"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -418,6 +418,8 @@ Lorsque votre client bénéficie des nouvelles améliorations, la notification s
 ## <a name="tips-to-increase-labeling-reach"></a>Conseils pour augmenter la portée de l’étiquetage
 
 Bien que l’étiquetage automatique soit l’une des méthodes les plus efficaces pour classifier, étiqueter et protéger les fichiers Office appartenant à votre organisation, vérifiez si vous pouvez le compléter avec l’une des méthodes supplémentaires pour augmenter votre portée d’étiquetage :
+
+- Avec SharePoint Syntex, vous pouvez [appliquer une étiquette de confidentialité à un modèle de compréhension de document](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), afin que les documents identifiés dans une bibliothèque SharePoint soient automatiquement étiquetés.
 
 - Lorsque vous utilisez le[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) :
 

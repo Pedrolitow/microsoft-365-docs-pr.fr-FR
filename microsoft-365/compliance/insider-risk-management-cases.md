@@ -12,12 +12,13 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 953a29817d13017c0b4fb72031bc97c64924a819
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 3a7a8f8e7f839c47f369e32507acc7b70edc0d63
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754422"
+ms.locfileid: "60785821"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -25,7 +26,7 @@ Les cas sont au cœur de la gestion des risques internes et vous permettent d’
 
 Après avoir ouvert une enquête sur les détails d’un cas, vous pouvez prendre des mesures en :
 
-- envoi d’un avis à l’utilisateur
+- envoi d’une notification à l’utilisateur
 - résolution du cas comme étant anodin
 - partage du cas avec votre instance ServiceNow ou avec un destinataire de courrier électronique
 - escalade du cas pour une enquête Advanced eDiscovery de recherche
@@ -48,19 +49,19 @@ La file d’attente répertorie tous les cas actifs et fermés pour votre organi
 - **Cas d’heure ouvert**: temps écoulé depuis l’ouverture du cas.
 - **Nombre total d’alertes de** stratégie : nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées au cas.
 - **Dernière mise à jour du** cas : le temps écoulé depuis l’ajout d’une note de cas ou d’une modification dans l’état du cas.
-- **Last updated by**: The name of the insider risk management analyst or investigator that last updated the case.
+- **Dernière mise à jour par**: nom de l’analyste ou de l’enquêteur de gestion des risques internes qui a mis à jour le cas pour la dernière fois.
 
 ![Tableau de bord Cas de gestion des risques internes.](../media/insider-risk-cases-dashboard.png)
 
-Utilisez le contrôle **de** recherche pour rechercher des noms de cas pour du texte spécifique et utiliser le filtre de cas pour trier les cas selon les attributs suivants :
+Utilisez le **contrôle de** recherche pour rechercher des noms de cas pour du texte spécifique et utiliser le filtre de cas pour trier les cas selon les attributs suivants :
 
-- État
+- Statut
 - Heure d'ouverture du cas, date de début et la date de fin
 - Dernière mise à jour, date de début et la date de fin
 
 ## <a name="filter-cases"></a>Filtrer des cas
 
-Selon le nombre et le type de stratégies actives de gestion des risques internes dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
+Selon le nombre et le type de stratégies de gestion des risques internes actives dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
 
 - **État**: sélectionnez une ou plusieurs valeurs d’état pour filtrer la liste des cas. Les options sont *Active* et *Closed*.
 - **Cas d’heure ouvert**: sélectionnez les dates de début et de fin de l’ouverture du cas.
@@ -74,7 +75,7 @@ La sélection d’un cas ouvre les outils de gestion des cas et permet aux analy
 
 ### <a name="case-overview"></a>Présentation du cas
 
-**L’onglet Vue d’ensemble** des cas récapitule les détails des cas pour les analystes et enquêteurs de risque. Il inclut les informations suivantes dans la **zone à propos de ce cas**
+**L’onglet Vue d’ensemble** des cas récapitule les détails des cas pour les analystes et enquêteurs de risque. Il inclut les informations suivantes dans la **zone à propos de ce** cas
 
 - **État**: état actuel du cas, actif ou fermé.
 - **Cas créé le :** date et heure de création du cas.
@@ -97,7 +98,7 @@ La sélection d’un cas ouvre les outils de gestion des cas et permet aux analy
 
 **L’onglet** Alertes récapitule les alertes actuelles incluses dans le cas. De nouvelles alertes peuvent être ajoutées à un cas  existant et elles sont ajoutées à la file d’attente des alertes à mesure qu’elles sont affectées. Les attributs d’alerte suivants sont répertoriés dans la file d’attente :
 
-- État
+- Statut
 - Gravité
 - Heure détectée
 
@@ -105,7 +106,7 @@ Sélectionnez une alerte dans la file d’attente pour afficher la page **détai
 
 Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un texte spécifique et utilisez le filtre d’alerte pour trier les cas selon les attributs suivants :
 
-- État
+- Statut
 - Gravité
 - Heure détectée, la date de début et la date de fin
 
@@ -122,16 +123,16 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 
 ![Activité des utilisateurs de gestion des risques internes.](../media/insider-risk-user-activities.png)
 
-1. **Filtres d’heure**: par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
+1. **Filtres de** temps : par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
 2. **Activité et détails** des alertes de risque : les activités de risque sont affichées visuellement sous forme de bulles de couleur dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risque et la taille des bulles est proportionnelle au nombre d’activités de risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
     - Catégorie **d’activité de risque.** Par exemple, *e-mail(s) avec* des pièces jointes envoyées à l’extérieur de l’organisation ou fichiers *téléchargés* à partir de SharePoint Online .
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité de risque sont également disponibles.
-3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » pour les activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
+3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » aux activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
 
     - **Nom** de la séquence.
-    - **Plage de** **dates ou de** dates de la séquence.
+    - **Plage de** **dates ou de dates** de la séquence.
     - **Score de risque** pour la séquence. Ce score est le score numérique pour la séquence des niveaux de gravité de risque d’alerte combinés pour chaque activité associée dans la séquence.
     - **Nombre d’événements associés à chaque alerte dans la séquence.** Des liens vers chaque fichier ou e-mail associé à chaque activité de risque sont également disponibles.
     - **Afficher les activités dans l’ordre.** Affiche la séquence sous la forme d’une ligne de surbrillon sur le graphique en bulles et développe les détails de l’alerte pour afficher toutes les alertes associées dans la séquence.
@@ -153,7 +154,7 @@ Pour plus d’informations sur l’Explorateur d’activités, consultez l’art
 
 **L’onglet Explorateur de** contenu permet aux enquêteurs de risque d’examiner les copies de tous les fichiers et messages électroniques associés aux alertes de risque. Par exemple, si une alerte est créée lorsqu’un utilisateur télécharge des centaines de fichiers à partir de SharePoint Online et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de gestion des risques internes à partir des sources de stockage d’origine.
 
-L’Explorateur de contenu est un outil puissant avec des fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, voir [l’Explorateur de](insider-risk-management-content-explorer.md)contenu de gestion des risques internes.
+L’Explorateur de contenu est un outil puissant avec des fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, voir [l’Explorateur](insider-risk-management-content-explorer.md)de contenu de gestion des risques internes.
 
 ![Explorateur de contenu de cas de gestion des risques internes.](../media/insider-risk-content-explorer.png)
 
@@ -165,10 +166,10 @@ Le tableau de bord des notes de cas affiche les notes de l’utilisateur qui a c
 
 Pour ajouter une note à un cas :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Notes** de cas.
 3. Sélectionnez **Ajouter une note de cas.**
-4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou **sélectionnez Annuler** fermer sans enregistrer la note dans le cas.
+4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
 
 ### <a name="contributors"></a>Contributeurs
 
@@ -182,29 +183,29 @@ L’accès temporaire à un cas peut être accordé en ajoutant un utilisateur e
 
 Pour ajouter un collaborateur à un cas :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Collaborateurs.**
 3. Sélectionnez **Ajouter un collaborateur.**
-4. Dans la **boîte de dialogue** Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir du Azure Active Directory de votre abonnement client.
+4. Dans la **boîte de** dialogue Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
 5. Sélectionnez **Ajouter** pour ajouter l’utilisateur en tant que collaborateur ou sélectionnez **Annuler** fermer la boîte de dialogue sans ajouter l’utilisateur en tant que collaborateur.
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les enquêteurs des risques peuvent agir sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les enquêteurs des risques peuvent agir sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider avec la gestion de la résolution de bout en bout.
 
 ### <a name="send-email-notice"></a>Envoyer une notification par courrier électronique
 
-Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et une méthode pour rappeler aux utilisateurs les stratégies d’entreprise ou les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
+Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et permet de rappeler aux utilisateurs les stratégies d’entreprise ou de les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
 
 Il est important de se souvenir que l’envoi d’une notification par courrier électronique à un utilisateur ***** ne résout pas le cas comme _Closed*. Dans certains cas, vous pouvez laisser un cas ouvert après avoir envoyé une notification à un utilisateur pour rechercher d’autres activités à risque sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils de l’action de cas.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils d’action de cas.
 3. Dans la boîte de dialogue Envoyer  un **avis** par courrier électronique, sélectionnez le contrôle de liste de listes des modèles d’avis pour sélectionner le modèle d’avis pour l’avis. Cette sélection pré-remplit les autres champs de l’avis.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
-5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans l’envoyer à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord Des notes de** cas.
+5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans l’envoyer à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord des notes de** cas.
 
 ### <a name="escalate-for-investigation"></a>Faire remonter le dossier pour enquête
 
@@ -212,9 +213,9 @@ Faire passer le cas pour l’examen de l’utilisateur dans les situations où u
 
 Pour faire recaler un cas à un examen par un utilisateur :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils d’action de cas.
-3. Dans la boîte **de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils de l’action de cas.
+3. Dans la **boîte de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’enquête de l’utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de nouveau cas d’enquête utilisateur.
 
@@ -239,9 +240,9 @@ Pour en savoir plus sur les Power Automate pour la gestion des risques internes,
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Afficher ou créer une équipe Microsoft Teams pour le cas
 
-Lorsque Microsoft Teams pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs des risques et les analystes peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant Afficher l’équipe **Microsoft Teams** dans la barre d’outils action du cas.
+Lorsque Microsoft Teams pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs des risques et les analystes peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant Afficher l’équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
 
-Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs de risque et les analystes peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils de l’action de cas.
+Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs et analystes de risque peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
 
 Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement archivée (masquée et en lecture seule).
 
@@ -258,6 +259,6 @@ Pour résoudre un cas :
 
 1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le **bouton Résoudre** le cas dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez **résoudre** en tant que contrôle de la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
+3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez le contrôle **Résoudre** en tant que la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
 4. Dans la **boîte de dialogue Résoudre le cas,** entrez les raisons de la classification de résolution dans le champ de texte **Action** prise.
-5. Sélectionnez **Résoudre** pour fermer le cas ou annuler **la** fermeture de la boîte de dialogue sans résoudre le cas.
+5. Sélectionnez **Résoudre** pour fermer le cas ou **annuler** la boîte de dialogue sans résoudre le cas.

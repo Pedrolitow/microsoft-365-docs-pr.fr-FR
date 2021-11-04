@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32bd63e5b7a0546c6222fab72684ebd990541366
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a573b68d03e7446fc63f4fbc34bee3d46da9c49
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176762"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786637"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -42,16 +42,16 @@ Avec *l’action de recherche* go, vous pouvez rapidement examiner les événeme
 
 - Dans la [page Incident,](investigate-incidents.md#summary)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que diverses actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres, ainsi que l’option de recherche pour plus d’informations sur la boîte aux lettres.
 
-    ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche.](../../media/mtp-ah/go-hunt-email.png)
+    ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche.](../../media/go-hunt-1-incident.png)
 
-- Dans la page incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
+- Dans la page Incident, vous pouvez également accéder à une liste d’entités sous l’onglet Preuve. La sélection de l’une de ces entités permet de trouver rapidement des informations sur cette entité.
 
-    ![Image montrant le fichier sélectionné avec l’option Aller à la recherche dans l’onglet Preuves.](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Image montrant le fichier sélectionné avec l’option Aller à la recherche dans l’onglet Preuves.](../../media/go-hunt-2-entity.png)
 
 
 - Lorsque vous affichez la chronologie d’un appareil, vous pouvez sélectionner un événement dans la chronologie pour afficher des informations supplémentaires sur cet événement. Une fois qu’un événement est sélectionné, vous avez la possibilité de chercher d’autres événements pertinents dans le hunting avancé.
 
-    ![Image montrant les détails de l’événement avec l’option aller à la recherche.](../../media/mtp-ah/go-hunt-event.png)
+    ![Image montrant les détails de l’événement avec l’option aller à la recherche.](../../media/go-hunt-3-event.png)
 
 La sélection de  **La recherche d’événements** connexes permet de passer différentes requêtes, selon que vous avez sélectionné une entité ou un événement.
 
@@ -111,7 +111,7 @@ En plus de modifier la requête pour obtenir des résultats plus pertinents, vou
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

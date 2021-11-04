@@ -13,13 +13,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation pour Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités de certains utilisateurs qui peuvent poser une menace interne à votre organisation.
-ms.openlocfilehash: a6342ec7edc3b044ff5b5c871cd4b80fd4907b7c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1fd04bf22038a14b9051fc25109051e227ba1db6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753092"
+ms.locfileid: "60785592"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -249,7 +250,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
    Une page d’état confirme que le connecteur a été créé. Cette page contient deux éléments importants que vous devez effectuer à l’étape suivante pour exécuter l’exemple de script pour télécharger vos données RH.
 
-   ![Page de révision avec ID de travail et lien vers github pour obtenir un exemple de script.](../media/HRConnector_Confirmation.png)
+   ![Page de révision avec ID de travail et lien vers github pour un exemple de script.](../media/HRConnector_Confirmation.png)
 
    1. **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez le copier à partir de cette page ou à partir de la page de flyout du connecteur.
 
@@ -257,7 +258,7 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 9. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
 
 10. Cliquez sur le connecteur RH que vous avez créé pour afficher la page de présentation, qui contient des propriétés et d’autres informations sur le connecteur.
 
@@ -267,7 +268,7 @@ Si ce n’est pas déjà fait, vous pouvez copier les valeurs de **l’ID** d’
 
 Vous pouvez également cliquer sur **Modifier** pour modifier l’ID d’application Azure ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de** fichiers.
 
-## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : Exécuter l’exemple de script pour télécharger vos données RH
+## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Étape 4 : Exécuter l’exemple de script pour charger vos données RH
 
 La dernière étape de la configuration d’un connecteur RH consiste à exécuter un exemple de script qui chargera les données RH dans le fichier CSV (que vous avez créé à l’étape 1) dans le cloud Microsoft. Plus précisément, le script charge les données vers le connecteur RH. Après avoir exécuté le script, le connecteur RH que vous avez créé à l’étape 3 importe les données RH dans votre organisation Microsoft 365 où il est accessible par d’autres outils de conformité, tels que la solution de gestion des risques internes. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement afin que les données les plus récentes de résiliation d’employé sont chargées dans le cloud Microsoft. Voir [Planifier le script pour qu’il s’exécute automatiquement.](#optional-step-6-schedule-the-script-to-run-automatically)
 
@@ -293,9 +294,9 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    | Paramètre | Description |
    |:-----|:-----|:-----|
-   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
+   |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre d Azure AD’administration. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 2. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
-   |`appSecret`|Il s’agit de Azure AD’application secrète pour l’application que vous avez créée Azure AD l’étape 2. Cette fonction est également utilisée pour l’authentification.|
+   |`appSecret`|Il s’agit de la Azure AD’application secrète de l’application que vous avez créée Azure AD l’étape 2. Cette fonction est également utilisée pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur RH que vous avez créé à l’étape 3. Cette fonction permet d’associer les données RH téléchargées vers le cloud Microsoft au connecteur RH.|
    |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 1. Essayez d’éviter les espaces dans le chemin d’accès du fichier . sinon, utilisez des guillemets simples.|
    |||
@@ -306,7 +307,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Si le chargement réussit, le script affiche le message **Télécharger** réussite.
+   Si le téléchargement réussit, le script affiche **l’Télécharger message** Réussite.
 
    > [!NOTE]
    > Si vous avez des problèmes lors de [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) l’exécution de la commande précédente en raison de stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
@@ -319,13 +320,13 @@ Après avoir créé le connecteur RH et exécuté le script pour télécharger v
 
 2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur RH pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
 
-   ![Page de flyout du connecteur RH avec les propriétés et l’état.](../media/HRConnectorFlyout1.png)
+   ![Page de flyout du connecteur RH avec des propriétés et un état.](../media/HRConnectorFlyout1.png)
 
 3. Sous **Progression,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et télécharge les données du fichier CSV dans le cloud Microsoft. 
 
    ![Le fichier journal du connecteur RH affiche les lignes de numéro à partir du fichier CSV qui ont été téléchargées.](../media/HRConnectorLogFile.png)
 
-   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a correctement téléchargé toutes les lignes du fichier `RecordsSaved` CSV.
+   Le `RecordsSaved` champ indique le nombre de lignes dans le fichier CSV téléchargé. Par exemple, si le fichier CSV contient quatre lignes, la valeur des champs est 4, si le script a chargé avec succès toutes les lignes du fichier `RecordsSaved` CSV.
 
 Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation.** Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
 
@@ -351,7 +352,7 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
-   1. Sous **Paramètres**, sélectionnez l’option  Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres**, sélectionnez l’option  Tous les jours, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
    1. Sous **Paramètres avancés,** assurez-vous que **la case à** cocher Activée est activée.
 
@@ -365,7 +366,7 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    1. Dans la **zone Programme/script,** cliquez sur **Parcourir,** puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` :
 
-   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez ran à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
 
@@ -385,4 +386,4 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 Le 20 juillet 2020, nous avons publié des scénarios supplémentaires pris en charge par les connecteurs RH. Voici les scénarios RH précédemment décrits dans cet article. Tout connecteur RH créé avant cette date prend uniquement en charge le scénario employé. Si vous avez créé un connecteur RH avant le 20 juillet 2020, nous l’avons migré afin qu’il continue à migrer vos données RH vers le cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser le connecteur sans interruption.
 
-Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios RH supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et du ou des fichiers CSV avec les données de vos scénarios RH supplémentaires.
+Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios rh supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et des fichiers CSV avec les données de vos scénarios rh supplémentaires.
