@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192126"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668321"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -237,11 +237,13 @@ Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquett
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 
-Lorsque vous utilisez des étiquettes de confidentialité dans les applications Microsoft 365 sur les ordinateurs Windows, vous avez le choix entre l’utilisation d’étiquettes intégrées aux applications Office ou au client Azure Information Protection.
+Lorsque vous utilisez des étiquettes de sensibilité dans Microsoft 365 Apps sur des ordinateurs Windows, vous avez le choix d'utiliser l'étiquetage intégré aux applications Office ou le [client Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
 
-L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour plus d'informations, y compris sur la façon de modifier de comportement par défaut, voir [Client d’étiquetage intégré Office et client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+Étant donné que les étiquettes intégrées n'utilisent pas de complément Office, comme celui utilisé par le client Azure Information Protection, elles bénéficient d'une plus grande stabilité et de meilleures performances. Ils prennent également en charge les dernières fonctionnalités, telles que les classificateurs avancés.
 
-Même lorsque vous utilisez l'étiquetage intégré dans les applications Office, vous pouvez également utiliser le client d'étiquetage unifié Azure Information Protection avec des étiquettes de confidentialité pour les éléments suivants :
+L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour modifier ce comportement par défaut et utiliser des étiquettes intégrées pour vos applications Office, consultez [Client d'étiquetage intégré Office et client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+
+Lorsque vous conservez le client Azure Information Protection installé mais désactivé dans les applications Office, vous bénéficiez de l'utilisation du client Azure Information Protection avec des étiquettes de sensibilité pour les éléments suivants :
 
 - Un scanneur pour découvrir les informations sensibles stockées localement, puis, éventuellement, étiqueter ce contenu
 
@@ -251,7 +253,7 @@ Même lorsque vous utilisez l'étiquetage intégré dans les applications Office
 
 - Module PowerShell pour découvrir des informations sensibles dans des fichiers locaux, et appliquer ou supprimer des étiquettes et un chiffrement à partir de ces fichiers.
 
-Si vous débutez sur Azure Information Protection, ou si vous êtes un client Azure Information Protection existant et que vous venez de migrer vos étiquettes, consultez [Choisir la solution d’étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation Azure Information Protection.
+Si vous débutez avec Azure Information Protection, consultez [Choisir votre solution d'étiquetage Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) dans la documentation Azure Information Protection.
 
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 

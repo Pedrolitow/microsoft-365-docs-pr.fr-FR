@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553351"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60655443"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -89,53 +89,37 @@ Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-us
   
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Quels sont les rapports d'activité disponibles dans le Centre d'administration ?
 
-En fonction de votre abonnement, les rapports suivants sont disponibles.
+Voici les rapports disponibles dans tous les environnements basés sur votre abonnement.
 
-- [Usage du navigateur Microsoft](browser-usage-report.md) 
-  
-- [Activité de messagerie](email-activity-ww.md)
-    
-- [Utilisation des boîtes aux lettres](mailbox-usage.md)
-    
-- [Activations d’Office](microsoft-office-activations-ww.md)
+|**Report**|**Public**|**GCC**|**GCC-High**|**DOD**|**Office 365 géré par 21Vianet**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|[Usage du navigateur Microsoft](browser-usage-report.md)|Oui|Non[^1]|Non[^1]|Non[^1]|Non[^1]|
+|[Activité de messagerie](email-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisation des applications de messagerie](email-apps-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisation des boîtes aux lettres](mailbox-usage.md)|Oui|Oui|Oui|Oui|Oui|
+|[Activations d’Office](microsoft-office-activations-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisateurs actifs](active-users-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Groupes Microsoft 365](office-365-groups-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisation des applications Microsoft 365](microsoft365-apps-usage-ww.md)|Oui|Oui|Non[^1]|Non[^1]|Non[^1]|
+|[Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisation de OneDrive Entreprise](onedrive-for-business-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Utilisation du site SharePoint](sharepoint-site-usage-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Activité SharePoint](sharepoint-activity-ww.md)|Oui|Oui|Oui|Oui|Oui|
+|[Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity-preview.md)|Oui|Oui|Oui|Oui|N/A[^2]|
+|[Utilisation de Microsoft Teams](microsoft-teams-device-usage-preview.md)|Oui|Oui|Oui|Oui|N/A[^2]|
+|[Activité sur Yammer](yammer-activity-report-ww.md)|Oui|Oui|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)|Oui|Oui|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)|Oui|Oui|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Utilisation des formulaires](forms-activity-ww.md)|Oui|Oui|Non[^1]|Non[^1]|Non[^1]|
+|[Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)|Oui|Oui|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
+|[Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
+|[Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
+|[Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Oui|Oui|Non[^1]|Non[^1]|Oui|
+|[Activité Viva Learning](viva-learning-activity.md)|Oui|N/A|N/A|N/A|N/A|
 
-- [Utilisateurs actifs](active-users-ww.md)
-  
-- [Utilisation des applications de messagerie](email-apps-usage-ww.md)
-
-- [Utilisation des formulaires](forms-activity-ww.md)
-
-- [Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)
-
-- [Groupes Microsoft 365](office-365-groups-ww.md)
-  
-- [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)
-
-- [Utilisation de OneDrive Entreprise](onedrive-for-business-usage-ww.md)
-
-- [Utilisation des applications Microsoft 365](microsoft365-apps-usage-ww.md)
-  
-- [Utilisation du site SharePoint](sharepoint-site-usage-ww.md)
-  
-- [Activité SharePoint](sharepoint-activity-ww.md)
-  
-- [Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
-  
-- [Activité d’organisation de conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
-  
-- [Activité de participation à des conférences Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
-  
-- [Activité P2P Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-
-- [Activité sur Yammer](yammer-activity-report-ww.md)
-
-- [Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)
-
-- [Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)
-
-- [Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity-preview.md)
-
-- [Utilisation de Microsoft Teams](microsoft-teams-device-usage-preview.md)
+[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
+[^2]: The service is not available in the environment so no plan to release the report.
 
 ## <a name="how-to-view-licensing-information"></a>Afficher les informations de licence
 
@@ -163,14 +147,6 @@ Votre liste d’utilisateurs se présente comme suit :
 Si vous souhaitez afficher les informations au niveau de l'utilisateur lorsque vous générez vos rapports, un **administrateur général** peut rapidement effectuer cette modification dans le centre d'administration.
 
 Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
-
-  
-1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>.
-
-2. Sélectionnez **Paramètres de l’organisation**, puis choisissez **services**. 
-  
-3. Dans le volet **Rapports**, sélectionnez **Choisir comment afficher les informations utilisateur** et choisissez **Afficher les informations identifiables de l’utilisateur dans les rapports**.
-  
 
 Les administrateurs globaux peuvent inverser cette modification pour leur client et afficher des informations d’utilisateur identifiables si les pratiques de confidentialité de leur organisation le permettent. Vous pouvez le faire dans le Centre d'administration Microsoft 365 en suivant les étapes suivantes :
   

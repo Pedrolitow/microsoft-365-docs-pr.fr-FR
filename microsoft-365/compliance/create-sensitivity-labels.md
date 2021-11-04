@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: 1ce355b2780016dfd7732399546567696e7c2301
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1dfcbc21b84e0d35504f513d6dc1a46b7581f0e2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170810"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673559"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -40,15 +40,9 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
 
-1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
-
-    - Centre de conformité Microsoft 365 : 
-        - **Solutions** > **Information protection**
-
-        Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
-
-    - Centre de sécurité et conformité :
-        - **Classification** > **des étiquettes de confidentialité**
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Informations Protection**
+    
+    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
 2. Sous la page **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant Nouvelle étiquette de confidentialité. 
 
@@ -97,7 +91,7 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Par exemple :
+Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
@@ -133,15 +127,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
 
-1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
-
-    - Centre de conformité Microsoft 365 : 
-        - **Solutions** > **Information protection**
-
-        Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
-
-    - Centre de sécurité et conformité :
-        - **Classification** > **des étiquettes de confidentialité**
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Solutions** > **Informations Protection**
+    
+    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
 2. Sélectionnez l’onglet **Stratégies d’étiquette**, puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
 

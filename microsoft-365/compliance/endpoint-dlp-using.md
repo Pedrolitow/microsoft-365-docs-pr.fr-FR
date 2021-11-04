@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 6eef2485379544233db29fe94539c5c07499f9fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1da9753f25a828e453388bf39de65c36c9dc1271
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167257"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668377"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -31,7 +31,7 @@ Cet article vous guide dans quatre scénarios dans lesquels vous créez et modif
 
 ## <a name="dlp-settings"></a>Paramètres DLP
 
-Avant de commencer, vous devez configurer vos paramètres DLP appliqués à toutes les stratégies DLP pour les appareils. Vous devez les configurer si vous envisagez de créer des stratégies qui appliquent :
+Avant de commencer, vous devez configurer vos paramètres DLP. Les paramètres sont appliqués à toutes les stratégies DLP pour les appareils. Vous devez les configurer si vous envisagez de créer des stratégies qui appliquent :
 
 - restrictions de sortie dans le Cloud
 - restrictions relatives aux applications non autorisées
@@ -43,17 +43,51 @@ Ou
   > [!div class="mx-imgBorder"]
   > ![Paramètres DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
+
+#### <a name="get-registered"></a>S’inscrire
+
+Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/Ignite2021DLP).
+
+Lorsqu'elle est activée, l'**analyse et la protection de classification avancée** permettent au service de classification de données basé sur le cloud Microsoft 365 plus avancé d'analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti de la [classification de correspondance exacte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) des données, des techniques de classification des [entités nommées (aperçu)](named-entities-learn.md#learn-about-named-entities-preview) dans vos stratégies DLP.
+
+Dans la classification avancée, le contenu est envoyé de l'appareil local aux services cloud pour analyse et classification. Si l'utilisation de la bande passante est un problème, vous pouvez définir une limite dans ce paramètre global qui est appliqué par périphérique sur la quantité pouvant être utilisée sur une période de 24 heures. Si vous définissez une limite d'utilisation de la bande passante et qu'elle est dépassée, DLP arrête d'envoyer le contenu de l'utilisateur vers le cloud et la classification des données se poursuit localement sur l'appareil. Lorsque l'utilisation cumulée de la bande passante tombe en dessous de la limite de 24 heures glissantes, la communication avec les services cloud reprendra.
+
+Si l'utilisation de la bande passante n'est pas un problème, vous ne pouvez pas définir de limite et autoriser une utilisation illimitée.
+
+> [!NOTE]
+> L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.
+
+### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
+
+Pour accéder au support macOS, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/Ignite2021DLP).
+
+|Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
+|---------|---------|---------|---------|
+|Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
+|Applications non autorisées     |Pris en charge         |Pris en charge         |         |
+|Applications Bluetooth non autorisées    |Pris en charge         |non pris en charge         |         |
+|Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
+|Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
+|Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
+
+
+
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
+
+Ouvrir le [Centre de conformité Prévention](https://compliance.microsoft.com) > **des pertes de données** > **Paramètres DLP de point de terminaison** > **Exclusions de chemin de fichier**.
 
 Vous pouvez exclure certains chemins de la surveillance DLP, des alertes DLP et de l’application de stratégie DLP sur vos appareils, car ils sont trop bruyants ou ne contiennent pas les fichiers qui vous intéressent. Les fichiers stockés dans ces emplacements ne seront pas audités et tous les fichiers créés ou modifiés dans ces emplacements ne seront pas soumis à l’application de stratégie DLP. Vous pouvez configurer les exclusions de chemin d’accès dans les paramètres DLP.
 
-Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
+#### <a name="windows-10-devices"></a>Appareils Windows 10
+
+Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les appareils Windows 10 :
 
 - Chemin d’accès de fichier valide se terminant par « \ », ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple: C:\Temp\
 
-- Chemin d’accès de fichier valide se terminant par « \* », ce qui signifie uniquement les sous-dossiers directement sous dossier. <br/>Par exemple: C:\Temp\*
+- Chemin de fichier valide qui se termine par "\*", ce qui signifie uniquement les fichiers sous les sous-dossiers, en plus des fichiers directement sous le dossier. <br/>Par exemple: C:\Temp\*
 
-- Chemin d’accès de fichier valide se terminant par « \ » ou «\*», ce qui signifie uniquement les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple: C:\Temp
+- Chemin de fichier valide qui se termine sans '\' ou '\*', ce qui signifie tous les fichiers directement sous le dossier et tous les sous-dossiers. <br/>Par exemple: C:\Temp
 
 - Un chemin d’accès avec un caractère générique entre' \ 'de chaque côté. <br/>Par exemple : C:\Users\*\Desktop\
 
@@ -63,19 +97,58 @@ Vous pouvez utiliser cette logique pour construire vos chemins d’exclusion :
 
 - Un mélange de tous les éléments ci-dessus. <br/>Par exemple :%SystemDrive%\Users\*\Documents\*(2) \Sub\
 
+#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
+
+Semblable aux appareils Windows 10, vous pouvez ajouter vos propres exclusions pour les appareils macOS.
+
+- Les définitions de chemin de fichier sont insensibles à la casse, c'est `User` donc la même chose que `user`.
+
+- Les valeurs génériques sont prises en charge. Ainsi, une définition de chemin peut contenir un `*` au milieu ou à la fin du chemin. Par exemple : `/Users/*/Library/Application Support/Microsoft/Teams/*`
+
+#####  <a name="recommended-file-path-exclusions-preview"></a>Exclusions de chemin de fichier recommandées (préversion)
+
+Pour des raisons de performances, Endpoint DLP inclut une liste d'exclusions de chemins de fichiers recommandées pour les appareils macOS. Ces exclusions sont activées par défaut. Vous pouvez les désactiver si vous le souhaitez en activant la bascule **Inclure les exclusions de chemin de fichier recommandées pour Mac**. La liste inclut :
+
+- /Applications/*
+- /System/*
+- /usr/*
+- /Library/*
+- /private/*
+- /opt/*
+- /Users/*/Library/Application Support/Microsoft/Teams/*
+
 ### <a name="unallowed-apps"></a>Applications non autorisées
 
-Les applications non autorisées sont une liste d’applications que vous créez qui ne seront pas autorisées à accéder à un fichier protégé par DLP.
+Les applications non autorisées sont une liste d’applications que vous créez qui ne seront pas autorisées à accéder à un fichier protégé par DLP. Il est disponible pour les appareils Windows 10 et macOS (préversion).
+
 Quand le paramètre **Accès des applications non autorisées** est activé et qu’une application figurant dans la liste non autorisée tente d’accéder à un fichier protégé, l’activité est autorisée, bloquée ou bloquée mais les utilisateurs peuvent remplacer la restriction. Toutes les activités sont auditées et disponibles pour révision dans l’Explorateur d’activités.
 
 > [!IMPORTANT]
 > N’incluez pas le chemin d’accès du fichier exécutable, mais uniquement le nom du fichier exécutable (par exemple, browser.exe).
 
+#### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
+
+Tout comme sur les appareils Windows, vous pourrez désormais empêcher les applications macOS d'accéder aux données sensibles en les définissant dans la liste des **applications non autorisées**. 
+
+> [!NOTE]
+> Notez que les applications multiplateformes doivent être saisies avec leurs chemins uniques respectifs au système d'exploitation sur lequel elles s'exécutent.
+
+Pour trouver le chemin complet des applications Mac :
+1. Sur l'appareil macOS, ouvrez **Activity Monitor**. Recherchez et double-cliquez sur le processus que vous souhaitez restreindre
+
+2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
+  
+3. Le nom de l'application est situé à la fin du chemin complet.
+
+
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protéger les données sensibles des applications de synchronisation cloud
 
-Pour empêcher la synchronisation d’éléments sensibles avec le cloud par des applications de synchronisation cloud, comme *onedrive.exe*, ajoutez l’application de synchronisation cloud à la liste **Applications non autorisées** . Lorsqu’une application de synchronisation cloud non autorisée tente d’accéder à un élément protégé par une stratégie DLP bloquante, DLP peut générer des notifications répétées. Vous pouvez éviter ces notifications répétées en activant l’option de **Mise en quarantaine automatique** sous **Applications non autorisées**.  
+Pour empêcher la synchronisation d’éléments sensibles avec le cloud par des applications de synchronisation cloud, comme *onedrive.exe*, ajoutez l’application de synchronisation cloud à la liste **Applications non autorisées** . Lorsqu'une application de synchronisation cloud non autorisée tente d'accéder à un élément protégé par une stratégie DLP bloquante, DLP peut générer des notifications répétées. Vous pouvez éviter ces notifications répétées en activant l’option de **Mise en quarantaine automatique** sous **Applications non autorisées**.  
 
 ##### <a name="auto-quarantine-preview"></a>Mise en quarantaine automatique (préversion)
+
+> [!NOTE]
+> La quarantaine automatique est prise en charge dans Windows 10 uniquement
 
 Lorsqu’elle est activée, la mise en quarantaine automatique se déclenche lorsqu’une application non autorisée tente d’accéder à un élément sensible protégé par DLP. La mise en quarantaine automatique déplace l’élément sensible vers un dossier configuré par l’administrateur et peut laisser un fichier **.txt** espace réservé à la place de l’original. Vous pouvez configurer le texte dans le fichier d’espace réservé pour indiquer aux utilisateurs où l’élément a été déplacé et d’autres informations pertinentes.  
 
@@ -112,7 +185,7 @@ Vous pouvez contrôler l’interaction des utilisateurs avec l’option de justi
 
 - **Afficher les options par défaut et la zone de texte personnalisée** : par défaut, les utilisateurs peuvent sélectionner une justification intégrée ou entrer leur propre texte.
 - **Afficher uniquement les options par défaut** : les utilisateurs peuvent uniquement sélectionner une justification intégrée.
-- **Afficher uniquement la zone de texte personnalisée** : les utilisateurs peuvent uniquement entrer leur propre justification. Seule la zone de texte apparaît dans la notification de conseil de stratégie de l’utilisateur final. 
+- **Afficher uniquement la zone de texte personnalisée** : les utilisateurs peuvent uniquement entrer leur propre justification. Seule la zone de texte apparaîtra dans la notification de conseil de politique d'utilisateur final. 
 
 ##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Personnalisation des options dans le menu déroulant
 
@@ -141,7 +214,7 @@ Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez l
 
 Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et le navigateur Chromium Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs seront redirigés vers le Chromium Edge et le Chromium Edge, avec sa compréhension des restrictions imposées par DLP, peut bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont réunies.
 
-Pour utiliser cette restriction, vous devez configurer trois éléments importants :
+Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
 
 1. Spécifier les emplacements ,services, domaines, adresses IP, avec lesquels vous ne souhaitez pas partager les éléments sensibles.
 
