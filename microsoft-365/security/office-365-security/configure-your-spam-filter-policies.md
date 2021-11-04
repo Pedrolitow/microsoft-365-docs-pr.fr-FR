@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff568ffb32a6feb3ef8eba46cad1127dcead0465
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553891"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60669746"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -117,11 +117,11 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - **_MarkAsSpamBulkMail_ est activé**: un BCL dont la valeur est supérieure au seuil est convertie en seuil de valeur SCL 6 qui correspond à un seuil de filtrage de **Courrier indésirable**, et l’action pour le verdict de filtrage **en bloc** est pris sur le message.
      - **_MarkAsSpamBulkMail_ est désactivé**: le message est estampillé avec le BCL, mais _aucune action_ n’est prise pour un verdict de filtrage **en bloc**. En effet, le seuil de BCL et le verdict de filtrage **en bloc** ne sont pas pertinents.
 
-   - **Augmentez le score de courrier indésirable**, **Marquez comme courrier indésirable**<sup>\*</sup> et **Mode de test** : contient les paramètres de filtre de courrier indésirable avancé (ASF) qui sont désactivés par défaut. Les paramètres ASF sont en cours de dépréciation et leurs fonctionnalités sont incorporées dans d’autres parties de la pile de filtrage. Nous vous recommandons de laisser tous ces paramètres ASF désactivés dans vos stratégies anti-courrier indésirable.
+   - **Augmenter le score de spam**, **Marquer comme spam**<sup>\*</sup> et **Mode test** : paramètres du filtre anti-spam avancé (ASF) qui sont désactivés par défaut.
 
      Pour plus d’informations sur ces paramètres, voir [Paramètres de filtre anti-courrier indésirable avancés dans Exchange Online PowerShell](advanced-spam-filtering-asf-options.md).
 
-      <sup>\*</sup> **Contient des langues spécifiques** et **à partir de ces pays** ne font pas partie des paramètres ASF.
+      <sup>\*</sup> Les **paramètres Contient des langues spécifiques** et **de ces pays** ne font pas partie d'ASF.
 
    - **Contient des langues spécifiques** : cliquez sur la zone et sélectionnez **Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’une langue dans la zone. Une liste filtrée des langues prises en charge s’affiche. Lorsque vous avez trouvé la langue que vous recherchez, sélectionnez-la. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur l’![icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) suivant la valeur.
 
@@ -166,10 +166,10 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      >
      > <sup>3</sup> Une valeur vide pour **Sélectionner une stratégie** signifie que la stratégie de mise en quarantaine par défaut pour ce verdict particulier est utilisé. Lorsque vous modifiez ultérieurement la stratégie anti-courrier indésirable ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage du courrier indésirable, consultez [ce tableau](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période écoulée, le message est supprimé. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
-     - [Messages mis en quarantaine dans Exchange Online PowerShell](quarantine-email-messages.md)
-     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md)
-     - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md)
+   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois le délai expiré, le message est supprimé et n'est pas récupérable. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours.
+
+     > [!NOTE]
+     > Ce paramètre contrôle également la durée de conservation des messages mis en quarantaine par les stratégies anti-hameçonnage. Pour plus d'informations, consultez [Messages mis en quarantaine dans EOP et Defender pour Office 365](quarantine-email-messages.md).
 
    - **Ajouter ce texte d’en-tête X**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné **Ajouter une en-tête X** comme verdict de filtrage du courrier indésirable. La valeur que vous spécifiez est le *nom* du champ d’en-tête ajouté à l’en-tête du message. La *valeur* du champ d’en-tête est toujours `This message appears to be spam`.
 
@@ -193,7 +193,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - **Activer ZAP pour les courriers indésirables** : par défaut, l’option ZAP est activée pour les détections de courrier indésirable, mais vous pouvez la désactiver en désactivant la case à cocher.
 
    > [!NOTE]
-   > Les notifications de spam de l'utilisateur final ont été remplacées par _des notifications de quarantaine_ dans les politiques de quarantaine qui contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prises en charge (pas seulement les verdicts de politique anti-spam). Pour plus d'informations, voir [Stratégies de quarantaine](quarantine-policies.md).
+   > Les notifications de spam des utilisateurs finaux ont été remplacées par des _notifications de quarantaine_ dans les politiques de quarantaine. Les notifications de quarantaine contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prises en charge (pas seulement les verdicts de politique anti-spam et de politique anti-hameçonnage). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -271,7 +271,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
    Pour la stratégie anti-courrier indésirable par défaut, la section **Appliqué à** n’est pas disponible (la stratégie s’applique à tout le monde) et vous ne pouvez pas renommer la stratégie.
 
-Pour activer ou désactiver une stratégie, définir l’ordre de priorité de la stratégie ou configurer les notifications de mise en quarantaine de l’utilisateur final, voir les sections suivantes.
+Pour activer ou désactiver une stratégie ou définir l'ordre de priorité de la stratégie, consultez les sections suivantes.
 
 ### <a name="enable-or-disable-anti-spam-policies"></a>Activer ou désactiver les stratégies anti-courrier indésirable
 

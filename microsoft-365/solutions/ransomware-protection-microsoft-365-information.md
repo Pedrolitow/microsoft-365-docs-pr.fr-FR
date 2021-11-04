@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
+keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Cloud App Security pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: f63a830e8c17eddcbe3efe40408881ec1f1d9736
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555655"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666733"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
@@ -118,7 +118,7 @@ Informations clés de Microsoft :
 - [Rançongiciel géré par l’humain](/security/compass/human-operated-ransomware)
 - [Se protéger rapidement contre les rançongiciels et les attaques](/security/compass/protect-against-ransomware)
 - [Rapport de défense numérique Microsoft 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (voir les pages 10 à 19)
-- [Ransomware : un rapport d'analyse des menaces omniprésentes et continues](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) dans le portail Microsoft 365 Defender
+- [Rançongiciel : rapport d’analyses sur les menaces constantes et omniprésentes](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) dans le portail Microsoft 365 Defender
 
 Microsoft 365 :
 
@@ -127,7 +127,7 @@ Microsoft 365 :
 - [Protection contre les rançongiciels et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Rapports d'analyse des menaces pour les ransomwares](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) dans le portail Microsoft 365 Defender
+- [Rapports d’analyse sur les menaces pour les rançongiciels](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) dans le portail Microsoft 365 Defender
 
 
 Microsoft 365 Defender :
@@ -151,6 +151,14 @@ Microsoft Cloud App Security :
 Billets de blog de l’équipe de sécurité Microsoft :
 
 - [3 étapes pour empêcher et récupérer à partir d’un rançongiciel (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Guide de lutte contre les ransomwares exploités par l'homme : partie 1 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Étapes clés sur la façon dont l'équipe de détection et de réponse (DART) de Microsoft mène des enquêtes sur les incidents de ransomware.
+
+- [Un guide pour lutter contre les ransomwares exploités par l'homme : Partie 2 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommandations et bonnes pratiques.
+
 - [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consultez la section **Rançongiciel**.

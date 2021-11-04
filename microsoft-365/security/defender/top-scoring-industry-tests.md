@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: deea83a515feeec15097613b297f395f39e1ffa1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202536"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661056"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender réunit les fonctionnalités de [Microsoft Defender pour 
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE : détection, réponse et protection du monde réel prouvées contre les attaques avancées.
 
-Au centre de l’approche de test de MITRE se trouve l’émulation d’attaques du monde réel pour déterminer si des solutions peuvent les détecter et y répondre de manière adéquate. Pendant que le test cible la détection et la réponse de point de terminaison, l’attaque simulée APT 29 de MITRE couvre plusieurs domaines d’attaque, créant des opportunités pour donner des moyens aux défenseurs au-delà de la simple protection de point de terminaison. Microsoft a étendu la visibilité des défenseurs au-delà du point de terminaison avec Microsoft 365 Defender.
+Au centre de l’approche de test de MITRE se trouve l’émulation d’attaques du monde réel pour déterminer si des solutions peuvent les détecter et y répondre de manière adéquate. Pendant que le test cible la détection et la réponse de point de terminaison, l’attaque simulée APT 29 de MITRE couvre plusieurs domaines d’attaque, créant des opportunités pour donner des moyens aux défenseurs au-delà de la simple protection de point de terminaison. Microsoft Corporation a étendu la visibilité au-delà du point de terminaison avec Microsoft 365 Defender.
 
 - Évaluation basée sur ATT&CK de Microsoft 365 Defender de mai 2020 : [Dominer la détection du monde réel](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 

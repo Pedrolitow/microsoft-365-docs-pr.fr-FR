@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588244"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665112"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -66,6 +66,7 @@ Pour stocker les contenus qui doivent être conservés, SharePoint et OneDrive c
 Les articles dans SharePoint qui ont une étiquette de conservation standard (qui ne déclare pas que l'article est un enregistrement) n'ont pas besoin de la bibliothèque Preservation Hold car ces articles restent dans leur emplacement d'origine. SharePoint empêche les utilisateurs de supprimer des éléments lorsque l'étiquette de conservation appliquée est configurée pour conserver le contenu, et le versionnage SharePoint préserve les anciennes versions lorsque les éléments sont modifiés. Mais pour d'autres scénarios, la bibliothèque Preservation Hold est utilisée lorsque les articles doivent être conservés :
 - Articles dans OneDrive qui ont des étiquettes de conservation standard
 - Les éléments dans SharePoint ou OneDrive qui ont des étiquettes de conservation qui les déclarent comme un enregistrement, et l'élément est déverrouillé pour l'édition
+- Fichiers partagés en tant que pièces jointes cloud avec une étiquette de rétention appliquée automatiquement
 - Articles soumis à des politiques de rétention
 
 Pour conserver ce contenu lorsqu'un utilisateur tente de le modifier ou de le supprimer, on vérifie si le contenu a été modifié depuis que les paramètres de conservation ont été appliqués. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine.
@@ -106,7 +107,23 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 2. **Si le contenu n'est pas supprimé** pendant la période configurée : À la fin de la période configurée dans la politique de rétention, le document est déplacé vers la Corbeille de première étape. Si un utilisateur supprime le document à partir de là ou vide cette corbeille (également appelée purge), le document est déplacé vers la corbeille secondaire. Une période de rétention de 93 jours couvre à la fois les corbeilles de recyclage de première et de deuxième étape. Au bout de 93 jours, le document est définitivement supprimé de l'endroit où il se trouve, dans la corbeille de première étape ou de deuxième étape. La Corbeille n'est pas indexée et donc indisponible pour la recherche. Par conséquent, une recherche eDiscovery ne peut trouver aucun contenu de la corbeille sur lequel placer une conservation.
 
-## <a name="how-retention-works-for-onenote-content"></a>Fonctionnement de la rétention pour le contenu OneNote
+## <a name="how-retention-works-with-cloud-attachments"></a>Fonctionnement de la rétention avec les pièces jointes cloud
+
+Les pièces jointes dans le cloud sont des liens incorporés vers des fichiers partagés par les utilisateurs, qui peuvent être conservés et supprimés lorsque vos utilisateurs les partagent dans Outlook courriers électroniques et Teams messages électroniques. Lorsque vous appliquez automatiquement une étiquette de rétention aux pièces [jointes](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments)cloud, l’étiquette de rétention est appliquée à une copie du fichier partagé, qui est stocké dans la bibliothèque de conservation et de préservation des documents.
+
+Pour ce scénario, nous vous recommandons de configurer le paramètre d’étiquette pour démarrer la période de rétention en fonction du moment où l’élément est étiqueté. Si vous configurez la période de rétention en fonction de la date de création ou de dernière modification de l’élément, cette date est tirée du fichier d’origine au moment du partage. Si vous configurez le début de la rétention à la dernière modification, ce paramètre n’a aucun effet sur cette copie dans la bibliothèque de conservation et de préservation des documents.
+
+Toutefois, si le fichier d’origine est modifié, puis partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est enregistrée et étiquetée dans la bibliothèque de conservation et de préservation des données.
+
+Si le fichier d’origine est partagé à nouveau mais n’est pas modifié, la date étiquetée de la copie dans la bibliothèque de conservation et de préservation des données est mise à jour. Cette action réinitialise le début de la période de rétention et c’est pourquoi nous vous recommandons de configurer le début de la période de rétention en fonction du moment où l’élément est étiqueté.
+
+Étant donné que l’étiquette de rétention n’est pas appliquée au fichier d’origine, le fichier étiqueté n’est jamais modifié ou supprimé par un utilisateur. Le fichier étiqueté reste dans la bibliothèque Preservation Hold jusqu'à ce que le travail de minuterie identifie que sa période de conservation a expiré. Si les paramètres de rétention sont configurés pour supprimer des éléments, le fichier est ensuite déplacé vers la Corbeille second niveau, où il est définitivement supprimé au bout de 93 jours :
+
+![Fonctionnement de la rétention pour les pièces jointes cloud stockées dans SharePoint et OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
+
+La copie stockée dans la bibliothèque de conservation et de préservation des données est généralement créée dans l’heure qui s’agit de la pièce jointe cloud partagée.
+
+## <a name="how-retention-works-with-onenote-content"></a>Fonctionnement de la rétention avec OneNote contenu
 
 Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote ou une étiquette de rétention à un dossier OneNote, en arrière-plan, les différentes sections OneNote sont des fichiers individuels qui héritent des paramètres de rétention. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
 

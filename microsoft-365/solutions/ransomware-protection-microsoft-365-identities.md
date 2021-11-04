@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
+keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
 description: Utilisez des connexions sécurisées et l’accès conditionnel pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 5761cb402be3fb0be907be8f3677a8e3ecbfd875
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444549"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666685"
 ---
 # <a name="step-3-protect-identities"></a>Étape 3. Protéger vos identités
 

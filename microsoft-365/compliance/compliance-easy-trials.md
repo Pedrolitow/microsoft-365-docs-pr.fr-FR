@@ -13,19 +13,19 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: À propos des essais gratuits Microsoft 365 conformité.
-ms.openlocfilehash: 930ee1f35a5453722139bc283eb20b43f5f209b8
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+description: À propos des essais de solutions de conformité
+ms.openlocfilehash: 6a6c07ef6a0353cfe6c97381f8858e86c34121a1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478924"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665131"
 ---
-# <a name="about-the-free-trial-for-microsoft-365-compliance"></a>À propos de l’essai gratuit pour la conformité de Microsoft 365
+# <a name="about-the-compliance-solutions-trial"></a>À propos de la version d’essai des solutions de conformité
 
 Les solutions de conformité Microsoft aident à protéger votre organisation contre les menaces internes résultant d’autorisations inappropriées sur les fichiers et les e-mails, et aident votre organisation à se conformer aux exigences réglementaires et de stratégie.
 
-La version d’évaluation des solutions de conformité de Microsoft 365 est le moyen le plus simple d’essayer les fonctionnalités des solutions de conformité Microsoft, et sa configuration ne prend que quelques minutes. Une fois la configuration de la version d’essai terminée, toutes les fonctionnalités du package de licence Microsoft E5 sont disponibles pour une utilisation de 90 jours au plus.
+La version d'essai des solutions de conformité Microsoft 365 est le moyen le plus simple d'essayer toutes les fonctionnalités des solutions de conformité Microsoft, et sa configuration ne prend que quelques minutes. Une fois la configuration de la version d’essai terminée, toutes les fonctionnalités du package de licence Microsoft E5 sont disponibles pour une utilisation de 90 jours au plus.
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
@@ -53,33 +53,27 @@ Vous pouvez prolonger l’essai dans les 15 derniers jours de la période d’es
 
 Les administrateurs peuvent désactiver l’essai à tout moment en allant sur la carte de conformité.
 
-Si vous décidez de ne pas vous inscrire à une fonctionnalité qui fait partie de la version d’essai des solutions de conformité, vos données d’essai seront conservées pendant une période, généralement de 180 jours, avant d’être définitivement supprimées. Vous pouvez continuer à accéder aux données collectées pendant l’essai jusqu’à cette date.
+Si vous décidez de ne pas vous inscrire à une fonctionnalité qui fait partie de la version d’essai des solutions de conformité, sauf indication contraire pour la solution, vos données d’essai seront conservées pendant une période de temps, généralement de 180 jours, avant d’être définitivement supprimées. Vous pouvez continuer à accéder aux données recueillies pendant l’essai jusqu’à ce moment-là.
 
 ## <a name="availability"></a>Disponibilité
 
 La version d’évaluation des solutions de conformité Microsoft 365 est progressivement mise en place pour les clients existants qui répondent à des critères spécifiques (y compris la géographie) qui n’ont pas encore de package de licence Microsoft E5.
 
-## <a name="learn-more-about-compliance"></a>En savoir plus sur la conformité
+## <a name="learn-more-about-compliance-solutions"></a>En savoir plus sur les solutions de conformité
 
 Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuite ? La version d’essai des solutions de conformité inclut les solutions suivantes :
-
-<!--
-- **application governance**
-
-    Application governance is an add-on for Microsoft Cloud App Security that monitors OAuth apps running in your Microsoft 365 tenant for excessive permissions and inappropriate access to files and email. [Learn more](app-governance-manage-app-governance.md)
--->
 
 - **Audit**
 
     L’audit avancé permet aux organisations d’effectuer des investigations de conformité et d’audit en augmentant la rétention du journal d’audit nécessaire pour mener une investigation, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.[Pour en savoir plus sur les audits ](advanced-audit.md)
 
+- **Conformité des communications**
+
+    La conformité des communications vous permet de résoudre les problèmes de conformité modernes liés aux communications internes et externes en vous aidant à capturer automatiquement les messages inappropriés, à examiner les violations de stratégie possibles et à prendre des mesures pour corriger le problème. En savoir plus sur la [conformité des communications](communication-compliance.md)
+
 - **Gestionnaire de conformité**
 
     Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, à la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.[En savoir plus sur les ](compliance-manager.md) du Gestionnaire de conformité
-
-- **Protection contre la perte de données**
-
-    Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Configurez des stratégies de protection contre la perte de données pour identifier, surveiller et protéger automatiquement les informations sensibles dans Microsoft 365. [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 
 - **eDiscovery**
 
@@ -87,7 +81,23 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
 - **Protection des informations**
 
-    Implémentez Microsoft Information Protection et les étiquettes de confidentialité, pour vous aider à découvrir, classer, et protéger votre contenu sensible où qu’il se trouve et où qu’il se déplace.[Pour en savoir plus sur Azure Information Protection](information-protection.md)
+    Implémentez des [ Protection des données Microsoft Corporation](sensitivity-labels.md) avec [ des étiquettes de confidentialité et des stratégies de protection](dlp-learn-about-dlp.md) contre la perte de données pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve ou se déplace.
+    
+    La version d’essai de la Protection des informations vous fournit des étiquettes par défaut, l’étiquetage automatique pour les documents et les e-mails, ainsi que la protection contre la perte de données pour protéger les numéros de carte de crédit partagés dans Teams et par les appareils. Les stratégies par défaut que nous créons pour vous sont rapidement opérationnels, mais vous pouvez les personnaliser entièrement comme vous le souhaitez.
+    
+    À la fin de la version d’essai, vous recevrez un courrier électronique vous informant :
+    
+    - Tous les fichiers et messages électroniques étiquetés pendant votre version d’essai restent étiquetés. Vous pouvez supprimer manuellement les étiquettes.
+    
+    - Vous serez rétrogradé à votre package de licence Microsoft E3 précédent qui ne prend pas en charge l’étiquetage automatique et la protection contre la perte de données. Vos stratégies existantes resteront allumées, sauf si vous les avez désactivées.
+    
+    - Les stratégies d’étiquetage automatique ne peuvent pas être modifiées une fois la version d’essai terminée, mais elles peuvent être supprimées.
+    
+    - Si vous modifiez des stratégies DLP qui incluent les emplacements Teams ou Appareils à la fin de la version d’essai, ces emplacements seront supprimés de la stratégie.
+    
+    Pour plus d’informations sur chacune de ces fonctionnalités préconfigurées et sur leur impact sur les utilisateurs, consultez la version d’essai gratuite [Protection des données Microsoft](mip-easy-trials.md).
+    
+    Pour plus d’informations sur la gamme complète des fonctionnalités Protection des données Microsoft, voir Protection des données Microsoft [dans Microsoft 365](information-protection.md).
 
 - **Gestion des risques internes**
 

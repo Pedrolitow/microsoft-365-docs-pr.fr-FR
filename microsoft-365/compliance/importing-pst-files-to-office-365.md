@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190844"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673372"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -147,7 +147,7 @@ En outre, pour créer des travaux d’importation dans le Centre de conformité 
 
 #### <a name="where-is-network-upload-available"></a>Où le chargement réseau est-il disponible ?
 
-Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera bientôt disponible dans d'autres régions.
+Le chargement réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l’Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis. Le chargement réseau sera disponible dans d’autres régions à l’avenir.
 
 #### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
 
@@ -222,7 +222,7 @@ En outre, pour créer des travaux d’importation dans le Centre de conformité 
 
 #### <a name="where-is-drive-shipping-available"></a>Où l’expédition de disque est-elle disponible ?
 
-L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée, en Australie et en Afrique du Sud. Ce service sera prochainement disponible dans d’autres régions.
+L’expédition de disque est actuellement disponible aux États-Unis, au Canada, au Brésil, au Royaume-Uni, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée et en Australie. L’expédition de disque sera disponible dans d’autres régions à l’avenir.
 
 > [!NOTE]
 > À l'heure actuelle, l'envoi de lecteurs pour l'importation de fichiers PST n’est pas disponible en Allemagne et en Suisse. Cette FAQ sera mise à jour lorsque l’envoi de lecteurs sera disponible pour ces pays.
