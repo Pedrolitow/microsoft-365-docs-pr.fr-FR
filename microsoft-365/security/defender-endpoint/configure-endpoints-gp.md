@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f9253a01cc1a971f472733f41a92f0b78beba737
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703260"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753976"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
@@ -42,22 +42,19 @@ ms.locfileid: "60703260"
 > Pour Windows Server 2019 et Windows Server 2022, vous devrez peut-être remplacer NT AUTHORITY\Known-System-Account par NT AUTHORITY\SYSTEM du fichier XML créé par la préférence de stratégie de groupe.
 
 > [!NOTE]
-> Si vous utilisez la nouvelle solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
+> Si vous utilisez la nouvelle solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**.
 
 Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
+1. Ouvrez le fichier de package de configuration de la gp ( ) que vous avez téléchargé à partir de `WindowsDefenderATPOnboardingPackage.zip` l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
-1. Ouvrez le package de configuration gp .zip fichier (*WindowsDefenderATPOnboardingPackage. zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
- 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
 
     1. Sélectionnez le système d’exploitation.
-    
+
     1. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
 
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
-
-     
 
 2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé *OptionalParamsPolicy* et le fichier *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -67,11 +64,11 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 5. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis **Préférences,** puis **paramètres du panneau de configuration.**
 
-6. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur **Tâche immédiate (au moins Windows 7).**
+6. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur Tâche immédiate (au moins **Windows 7).**
 
-7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** **cliquez sur Modifier** l’utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier **les noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
 9. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -286,7 +283,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentiellement indésirable.":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config de l’application potentielle indésirable.":::
 
 :::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de la config.":::
 
@@ -304,13 +301,13 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
-Accédez aux **modèles d’administration** des stratégies de configuration \>  \>  \> **ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
+Accédez aux **modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature.":::
 
 :::image type="content" source="images/signature-update-2.png" alt-text="mise à jour de définition de signature.":::
 
-### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’out de livraison cloud et le niveau de protection
+### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’entrée et le niveau de protection de la livraison cloud
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
@@ -319,7 +316,7 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

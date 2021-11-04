@@ -13,23 +13,23 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
-ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cf6c3f3e7c9c8b0004ea08fccdec981c032a491
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170114"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757369"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 
-Le travail d’équipe est au cœur de chaque organisation moderne. En favorisant la collaboration, il s’agit d’une caractéristique de définition de chaque établissement réussi. Vous pouvez améliorer toutes les fonctionnalités de Blackboard Learn Ultra en les couplant avec Microsoft Teams classes.
+Le travail d’équipe est au cœur de chaque organisation moderne. En favoriseant la collaboration, il s’agit d’une caractéristique de définition de chaque établissement réussi. Vous pouvez améliorer toutes les fonctionnalités de Blackboard Learn Ultra en les couplant avec Microsoft Teams classes.
 
 Vos classes peuvent inclure des conversations en temps réel, des réunions vidéo ou des interactions asynchrones. Vous pouvez ajouter des expériences de partage de fichiers et de cocréation pour vos étudiants, le tout au même endroit. Microsoft Teams classes avec Learn Ultra redéfinissent la dynamique de l’enseignement et ce que signifie un apprentissage efficace.
 
 > [!IMPORTANT]
 > Assurez-vous que vous avez correctement installé le champ Courrier de l’établissement dans votre système d’information sur les [étudiants (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->L’intégration Microsoft Teams classes s’appuie sur le champ de messagerie de l’établissement dans votre SIS pour ma Microsoft Azure Active Directory le nom d’utilisateur principal [(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)(AAD) de l’Microsoft Azure Active Directory correct. Si aucun courrier électronique de l’établissement n’a été mis en service, il s’adresse par défaut au courrier électronique existant. Il est recommandé de définir ce champ pour que chaque utilisateur s’assure que ses données sont synchronisées correctement et qu’il n’existe aucun conflit de données de courrier entre AAD et Blackboard Learn Ultra.
+>L’intégration Microsoft Teams classes de l’établissement s’appuie sur le champ de messagerie de l’établissement dans votre SIS pour maquer le nom d’utilisateur principal [(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)de l’Microsoft Azure Active Directory (AAD) correct. Si aucun courrier électronique de l’établissement n’a été mis en service, il s’adresse par défaut au courrier électronique existant. Il est recommandé de définir ce champ pour que chaque utilisateur s’assure que ses données sont synchronisées correctement et qu’il n’existe aucun conflit de données de messagerie entre AAD et Blackboard Learn Ultra.
 >
 > Si vous n’avez pas correctement définie ce champ dans votre mappage SIS, l’intégration continue de fonctionner, mais les utilisateurs peuvent ne pas apparaître dans les classes Teams créées et des erreurs peuvent se produire.
 
@@ -37,9 +37,9 @@ Vos classes peuvent inclure des conversations en temps réel, des réunions vid�
 
 Dans le cadre de l’évolution avec les intégrations  de fournisseurs cloud, Blackboard Learn Ultra a créé un nouveau champ Courrier électronique de l’établissement, à la fois dans l’intégration de Student Information System Framework et dans les API REST publiques, ce qui permet aux établissements de gérer efficacement le processus de synchronisation des données entre Blackboard Learn Ultra et AAD.
 
-### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Qu’est-ce que la messagerie électronique de l’établissement signifie et qu’est-ce qu’elle prend en charge ?
+### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Que signifie le courrier électronique de l’établissement et qu’est-ce qu’il prend en charge ?
 
-Le **champ Courrier électronique** de l’établissement permet des mappages de champs personnalisés entre les sources de données d’un client pris en charge en externe et Blackboard Learn Ultra. Si les sources de données sont des fournisseurs cloud, tels que Microsoft, le nom d’utilisateur principal (UPN) est un identificateur unique principal pour chaque utilisateur constitué d’un préfixe UPN (nom de compte de l’utilisateur) et d’un suffixe UPN (un nom de domaine DNS) associé à un symbole @. Cela crée une adresse e-mail unique pour chaque utilisateur spécifique au sein du Microsoft Azure Active Directory.
+Le **champ Courrier électronique** de l’établissement permet de personnaliser les mappages de champs entre les sources de données d’un client pris en charge en externe et blackboard Learn Ultra. Si les sources de données sont des fournisseurs cloud, tels que Microsoft, le nom d’utilisateur principal (UPN) est un identificateur unique principal pour chaque utilisateur constitué d’un préfixe UPN (nom de compte de l’utilisateur) et d’un suffixe UPN (un nom de domaine DNS) associés à un symbole @ . Cela crée une adresse e-mail unique pour chaque utilisateur spécifique au sein du Microsoft Azure Active Directory.
 
 Pour garantir que les données sont exactes et que les inscriptions ou appartenances entre les classes Blackboard Learn Ultra et Microsoft Teams sont correctement obtenues, l’adresse e-mail d’un utilisateur doit correspondre entre les deux systèmes. Dans Blackboard Learn Ultra, les utilisateurs peuvent modifier ou remplacer leur adresse de messagerie existante dans l’interface utilisateur, ce qui peut entraîner des erreurs de synchronisation et l’ajout de l’utilisateur à une équipe de classe. Le **mappage** de champ Courrier électronique de l’établissement garantit que ce niveau de vérification de la sécurité et de la validation peut être géré correctement, que les utilisateurs ont modifié leur courrier électronique dans Blackboard Learn Ultra ou non.
 
@@ -54,9 +54,9 @@ Le **mappage de champ Courrier** électronique de l’établissement est désorm
 > [!NOTE]
 > Il est important de noter que, par défaut,  la messagerie de **l’établissement** est définie sur Le courrier électronique de la personne pour tous les formats SIS et doit être unique pour chaque personne. Toutes les intégrations existantes qui sont définies et en cours d’exécution auront ce mappage de données en place, car SIS ne pourra pas importer les utilisateurs si leur courrier électronique est dupliqué. Si un établissement a besoin de la possibilité de modifier le courrier  électronique de l’établissement en courrier **personnalisé,** il devra le gérer via la configuration avancée Paramètres dans le SIS.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
-L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra Course View.** Votre établissement doit remplir les conditions requises pour l’utiliser :
+L Microsoft Teams des classes est disponible uniquement pour les **cours Ultra Course View.** Votre établissement doit remplir les conditions requises pour l’utiliser :
 
 - Faire en savoir plus sur Blackboard Learn SaaS avec la navigation de base Ultra activée
 
@@ -106,7 +106,7 @@ L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra C
 
    `027328b7-c2e3-4c9e-aaa1-07802dae6c89`
 
-4. Examinez tous les paramètres pré-remplis et dans État de *l’outil,* puis *sélectionnez Activé.*
+4. Examinez tous les paramètres qui ont  été pré-remplis et dans l’état de l’outil, puis *sélectionnez Activé.*
 
 5. Dans **les stratégies d’établissement,** **sélectionnez Le rôle dans le cours, le nom** et **l’adresse e-mail.** Sélectionnez **Oui** pour les deux.
 
@@ -124,7 +124,7 @@ L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra C
 
 4. Tapez un utilisateur pour cette intégration.
 
-   Cet utilisateur est celui qui a accès à l’API d’accueil à partir de laquelle l’application est associée.
+   Cet utilisateur sera celui qui aura accès à l’API d’accueil à partir de laquelle l’application est associée.
 
 5. Sélectionnez **Envoyer**.
 
@@ -152,7 +152,7 @@ Ce processus peut être effectué avant ou après avoir configuré les applicati
 
 ### <a name="before-configuring-the-lti-applications"></a>Avant de configurer les applications LTI
 
-Si vous choisissez d’approuver l’application Azure Classes Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
+Si vous choisissez d’approuver l’application Azure Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
 
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 

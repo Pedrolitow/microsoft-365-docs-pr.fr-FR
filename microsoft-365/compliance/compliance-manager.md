@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft permet aux organisations de simplifier et d’automatiser les évaluations des risques, et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 0b506e184c3ab6e387ac02a203fca0f58bd3f877
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 47040da384c33e853f0c11735053bb8850735c3d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197664"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747753"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +31,7 @@ ms.locfileid: "60197664"
 
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
+[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
 
 Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conformité peut simplifier la gestion de la conformité par votre organisation :
 <br>
@@ -57,7 +58,7 @@ Le Gestionnaire de conformité vous indique que vous avez terminé les actions d
 
 Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données.
 
-##### <a name="learn-more"></a>En savoir plus
+##### <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Comprendre comment votre score de conformité est calculé.](compliance-score-calculation.md)
 
@@ -77,7 +78,7 @@ Le Gestionnaire de conformité suit les types de contrôles suivants :
 2. **Vos contrôles**: parfois appelés contrôles gérés par le client, ces contrôles sont implémentés et gérés par votre organisation
 3. **Contrôles partagés**: il s’existe des contrôles que votre organisation et Microsoft partagent la responsabilité de l’implémentation
 
-##### <a name="learn-more"></a>En savoir plus
+##### <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Surveillez la progression de vos contrôles.](compliance-manager-assessments.md#monitor-assessment-progress-and-controls)
 
@@ -97,15 +98,15 @@ Les évaluations ont plusieurs composants :
 
 Lorsque vous créez des évaluations, vous les affectez à un groupe. Vous pouvez configurer les groupes de la manière la plus logique pour votre organisation. Par exemple, vous pouvez grouper les évaluations par année d’audit, région, solution, équipes au sein de votre organisation ou d’une autre façon. Une fois que vous avez créé des groupes, vous pouvez filtrer votre tableau de bord du [Gestionnaire](compliance-manager-setup.md#filtering-your-dashboard-view) de conformité pour afficher votre score d’un ou plusieurs groupes.
 
-##### <a name="learn-more"></a>En savoir plus
+##### <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Créer et gérer des évaluations dans le Gestionnaire de conformité.](compliance-manager-assessments.md)
 
 ### <a name="templates"></a>Modèles
 
-Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés 325+.
+Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés plus de 325.
 
-##### <a name="learn-more"></a>En savoir plus
+##### <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Affichez la liste des modèles d’évaluation fournis par le Gestionnaire de conformité.](compliance-manager-templates-list.md)
 
@@ -115,7 +116,7 @@ Le Gestionnaire de conformité fournit des modèles pour vous aider à créer ra
 
 Les actions d’amélioration permettent de centraliser vos activités de conformité. Chaque action d’amélioration fournit des recommandations destinées à vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions d’amélioration peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état dans l’action d’amélioration.
 
-##### <a name="learn-more"></a>En savoir plus
+##### <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Utilisez les actions d’amélioration pour gérer votre flux de travail de conformité.](compliance-manager-improvement-actions.md)
 
@@ -152,7 +153,7 @@ Le Gestionnaire de conformité est disponible dans les langues suivantes :
 
 ## <a name="next-steps-set-up-and-customize"></a>Étapes suivantes : configurer et personnaliser
 
-Découvrez comment vous inscrire, attribuer des autorisations et des rôles, configurer des paramètres et personnaliser l’affichage de votre tableau de bord lors de la mise en place du [Gestionnaire de conformité.](compliance-manager-setup.md)
+Découvrez comment vous inscrire, attribuer des autorisations et des rôles, configurer des paramètres et personnaliser votre vue de tableau de bord lors de la mise en place [du Gestionnaire de conformité.](compliance-manager-setup.md)
 
 Commencez ensuite à personnaliser le Gestionnaire de conformité pour vous aider à vous conformer aux normes industrielles les plus importantes pour votre organisation en [mettant en place des évaluations.](compliance-manager-assessments.md)
 

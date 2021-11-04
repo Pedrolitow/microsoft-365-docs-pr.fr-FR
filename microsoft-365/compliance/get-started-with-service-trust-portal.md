@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail d’confiance des services Microsoft et l’utiliser pour vous aider avec les pratiques de sécurité, de confidentialité et de conformité.
-ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207318"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757190"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Mise en place du portail d’confiance des services Microsoft
 
@@ -33,7 +33,7 @@ Le Portail d’approbation de services contient des informations sur l’implém
 
 ### <a name="existing-customers"></a>Clients existants
 
-Les clients existants peuvent accéder au portail d’confiance des services avec l’un des <https://aka.ms/STP> abonnements en ligne suivants (d’essai ou payants) :
+Les clients existants peuvent accéder au portail d’confiance des services avec l’un des abonnements en ligne <https://aka.ms/STP> suivants (d’essai ou payants) :
 
 - Microsoft 365
 - Dynamics 365
@@ -69,7 +69,7 @@ Le **lien Portail d’confiance des** services affiche la page d’accueil. Il o
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 > [!IMPORTANT]
-> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été déplacées vers le nouvel emplacement, vous pouvez donc continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous [à la documentation du Gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
+> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>. Toutes les données client ont été déplacées vers le nouvel emplacement, de sorte que vous pouvez continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous à [la documentation du Gestionnaire de](compliance-manager.md) conformité pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
 
 ### <a name="trust-documents"></a>Documents approuvés
 
@@ -91,17 +91,17 @@ Fournit une multitude d’informations de conception et d’implémentation de s
 
 Fournit des informations de conformité propres au secteur et à la région sur les services Microsoft Cloud.
 
-- **Secteurs d’activité :** Pour l’instant, cette page fournit une page d’accueil propre au secteur pour le secteur des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages de réussite. Les ressources pour **d’autres** secteurs seront publiées à l’avenir, mais vous pourrez trouver des ressources pour d’autres secteurs en allant sur la page Documents d'> protection des données dans le STP.
+- **Secteurs d’activité :** Pour l’instant, cette page fournit une page d’accueil propre au secteur pour le secteur des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages de réussite. Les ressources pour d’autres secteurs seront publiées à l’avenir, mais vous pourrez trouver des ressources pour d’autres secteurs en allant sur la page Documents de confiance **> protection** des données dans le STP.
 
 - **Régions :** Fournit des avis juridiques sur la conformité des services Microsoft Cloud avec les différentes lois de différents pays. L’Australie, le Canada, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni sont des pays spécifiques.
 
 ### <a name="trust-center"></a>Centre de gestion de la confidentialité
 
-Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/trust-center)qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services Microsoft Cloud que vous pouvez utiliser pour répondre aux exigences spécifiques du R GDPR, de la documentation utile pour votre responsabilité dans le cadre du R GDPR et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le R GDPR.
+Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/trust-center)qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans Microsoft Cloud. Cela inclut des informations sur les fonctionnalités des services Microsoft Cloud que vous pouvez utiliser pour répondre aux exigences spécifiques du R GDPR, de la documentation utile pour votre responsabilité dans le cadre du R GDPR et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le R GDPR.
 
 ### <a name="my-library"></a>Ma bibliothèque
 
-Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin de pouvoir y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
+Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin d’y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
 
 ### <a name="more"></a>Plus
 
@@ -111,7 +111,7 @@ Accédez **à Plus > administrateur pour** accéder aux fonctions d’administra
 
 - **Paramètres de confidentialité Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
 
-### <a name="search"></a>Rechercher
+### <a name="search"></a>Recherche
 
 Cliquez sur la loupe dans le coin supérieur droit de la page Portail d’confiance des services pour développer la zone, entrez vos termes de recherche, puis appuyez sur **Entrée**. La page **De** recherche s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de recherche répertoriés ci-dessous.
 
@@ -142,7 +142,7 @@ Les starter packs sont un ensemble de documentation organisée par Microsoft sur
 
 - **Pack de démarrage de l’évaluation :** Après l’évaluation, utilisez les listes de contrôle et autres conseils de ce pack de démarrage pour aider votre organisation à évaluer les risques liés à la sécurité, la conformité et la confidentialité.
 
-- **Audit Starter Pack :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Microsoft Cloud d’une manière qui permet de réduire l’exposition de votre organisation aux risques.
+- **Audit starter pack :** Utilisez ce pack de démarrage pour obtenir des conseils sur l’utilisation des contrôles d’audit et d’autres outils pour vous aider à mettre en œuvre les services Microsoft Cloud d’une manière qui permet de réduire l’exposition de votre organisation aux risques.
 
 Pour accéder à ces starter packs, accédez à **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. Vous pouvez ouvrir ou télécharger des documents à partir d’un starter pack ou les enregistrer dans votre bibliothèque My Library.
 

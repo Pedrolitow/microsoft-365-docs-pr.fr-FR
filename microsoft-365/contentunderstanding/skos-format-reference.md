@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
 description: Référence de format SKOS pour la taxonomie SharePoint
-ms.openlocfilehash: 9ea3183bcf05755dcfb6d9391a2c59db63c35cb8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95183b64d76a70f69d08cd5a3c9dcf76f4e83bce
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190592"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747655"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>Référence de format SKOS pour la taxonomie SharePoint
 
@@ -255,7 +255,7 @@ Si la propriété personnalisée d’un [Terme](/dotnet/api/microsoft.sharepoint
 
 La syntaxe pour définir ceci est :
 
-``` SKOS
+```SKOS
 ex:CustomProp2    rdf:type sharepoint-taxonomy:SharedCustomPropertyForTerm;
     sharepoint-taxonomy:propertyName “Length”.
 

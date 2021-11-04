@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9cb9297fdfbe30c79f984e89cfc46e0fa436c7b7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a20604bd36f286546a321c438cb5d534ee9cf8ab
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704954"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755296"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -103,7 +103,7 @@ Microsoft Defender pour point de terminaison doit être configuré dans votre or
 
 La protection des données des dossiers de santé et la prévention de l’utilisation abusive des données personnelles des patients est une préoccupation majeure pour les organisations du secteur de la santé. Cette mauvaise utilisation peut inclure des fuites de données confidentielles vers des personnes non autorisées, la modification frauduleuse des dossiers des patients ou le vol de dossiers médicaux de patients. La prévention de cette mauvaise utilisation des données des patients, soit par un manque de sensibilisation, une négligence ou une fraude de la part des utilisateurs, est également un élément essentiel pour répondre aux exigences réglementaires de la loi HIPAA (Health Insurance Portability and Accountability Act) et de la loi HITECH (Health Information Technology for Economic and Health). Ces deux actes établissent les conditions requises pour la protection des informations de santé protégées par les patients.
 
-Ce modèle de stratégie permet l’évaluation des risques pour les utilisateurs internes qui détectent des activités suspectes associées à des enregistrements hébergés sur des systèmes de dossiers médicaux électroniques existants. La détection se concentre sur l’accès non autorisé, l’affichage, la modification et l’exportation des données des patients. Vous devrez configurer un connecteur (connecteur [Microsoft Health ou](import-healthcare-data.md) [Connecteur](import-epic-data.md)) pour prendre en charge la détection des activités d’accès, d’exfiltration ou d’obfuscation dans votre système EMR.
+Ce modèle de stratégie permet l’évaluation des risques pour les utilisateurs internes qui détectent des activités suspectes associées à des enregistrements hébergés sur des systèmes de dossiers médicaux électroniques existants. La détection se concentre sur l’accès non autorisé, l’affichage, la modification et l’exportation des données des patients. Vous devez configurer un connecteur (connecteur [Microsoft Health connector](import-healthcare-data.md) ou Connecteur Connecteur de connecteur [Connecteur)](import-epic-data.md)pour prendre en charge la détection des activités d’accès, d’exfiltration ou d’obfuscation dans votre système EMR.
 
 Lorsque vous utilisez ce modèle, vous devez également configurer un connecteur RH Microsoft 365 pour importer régulièrement des données de profil d’organisation pour les utilisateurs de votre organisation. Consultez l’article Importer des données avec le connecteur RH pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 
@@ -135,7 +135,7 @@ Le tableau suivant répertorie les événements déclencheurs et les conditions 
 
 | **Modèle de stratégie** | **Événements déclencheurs pour les stratégies** | **Conditions préalables** |
 | :------------------ | :--------------------------------- | :---------------- |
-| **Vol de données par des employés quittant votre organisation** | Indicateur de date de départ ou de résiliation à partir d’un connecteur RH Azure Active Directory suppression de compte | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement |
+| **Vol de données par des employés quittant votre organisation** | Indicateur de date de résiliation ou d’annulation à partir d’un connecteur RH Azure Active Directory suppression de compte | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement |
 | **Fuites de données générales** | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | Stratégie DLP configurée pour les *alertes de gravité* élevée <br><br> OR <br><br> Indicateurs de déclenchement personnalisés |
 | **Fuites de données par des utilisateurs prioritaires** | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | Stratégie DLP configurée pour les *alertes de gravité* élevée <br><br> OR <br><br> Indicateurs de déclenchement personnalisés <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
 | **Fuites de données provoquées par un utilisateur mécontent** | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement |
@@ -268,7 +268,7 @@ Pour créer une stratégie de gestion des risques internes, vous pouvez utiliser
 
 Achevez les étapes suivantes pour créer une stratégie :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
@@ -311,7 +311,7 @@ Achevez les étapes suivantes pour créer une stratégie :
 16. Sélectionnez **Suivant** pour continuer.
 17. Si vous avez sélectionné Utiliser des seuils personnalisés pour les **événements déclencheurs,** pour chaque indicateur d’événement déclencheur sélectionné à l’étape 13, choisissez le niveau approprié pour générer le niveau souhaité d’alertes d’activité.
 18. Sélectionnez **Suivant** pour continuer.
-19. Dans la page Indicateurs **de stratégie,** vous verrez les indicateurs que vous avez définis comme disponibles dans la page Indicateurs des [](insider-risk-management-settings.md#indicators) **paramètres** de risque  >   internes. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
+19. Dans la page **Indicateurs de stratégie,** vous verrez les indicateurs que vous avez définis comme disponibles dans la page Indicateurs des [](insider-risk-management-settings.md#indicators) **paramètres** de risque  >   internes. Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie.
 
     > [!IMPORTANT]
     > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
@@ -330,7 +330,7 @@ Pour mettre à jour une stratégie existante de gestion des risques internes, vo
 
 Finalisez les étapes suivantes pour gérer une stratégie existante :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez gérer.
 3. Sur la page détaillée de la stratégie, sélectionnez **Modifier une stratégie**.
 4. Dans l’Assistant stratégie, vous ne pouvez pas modifier ce qui suit :
@@ -387,7 +387,7 @@ Vous devrez peut-être créer une stratégie similaire à une stratégie existan
 
 Finalisez les étapes suivantes pour copier une stratégie existante :
 
-1. Dans le Centre de conformité Microsoft 365, accédez à la gestion des risques internes, puis sélectionnez l’onglet Stratégies.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez l’onglet Stratégies pour la gestion des risques internes.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez copier.
 3. Sur la page détaillée de la stratégie, sélectionnez Copier.
 4. Dans l’Assistant stratégie, nommez la nouvelle stratégie, puis mettez à jour sa configuration, le cas échéant.
@@ -407,7 +407,7 @@ Certains scénarios dans lesquels vous souhaitez commencer immédiatement à att
 
 Pour commencer manuellement l’activité d’attribution de scores pour les utilisateur dans au moins une stratégie de gestion des risques internes, finalisez les étapes suivantes :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la ou les stratégies auxquelles vous souhaitez ajouter des utilisateurs.
 3. Sélectionnez **Démarrer l’activité d’attribution de scores des utilisateurs**.
 4. Dans le **champ Raison** du volet **Ajouter des utilisateurs à plusieurs stratégies**, ajoutez une raison pour l’ajout des utilisateurs.
@@ -434,7 +434,7 @@ Pour arrêter l’attribution de score aux utilisateurs dans une stratégie, voi
 
 Pour supprimer une stratégie de gestion des risques internes existante, finalisez les étapes suivantes :
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez supprimer.
 3. Sélectionnez **Supprimer** sur la barre d’outils du tableau de bord.
 4. Dans la boîte de dialogue **Supprimer**, sélectionnez **Oui** pour supprimer la stratégie ou **Annuler** pour fermer la boîte de dialogue.

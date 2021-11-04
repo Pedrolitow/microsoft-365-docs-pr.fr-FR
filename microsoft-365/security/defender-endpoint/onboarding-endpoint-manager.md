@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7da419a779cb3a58488ca27ea7185262f4001d44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159486"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756382"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -79,7 +79,7 @@ Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources 
 Dans cette section, nous allons créer un groupe de test pour affecter vos configurations.
 
 > [!NOTE]
-> Intune utilise Azure Active Directory groupes (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
+> Intune utilise des groupes Azure Active Directory (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
 >
 > Pour plus d’informations, voir [Ajouter des groupes pour organiser les utilisateurs et les appareils.](/mem/intune/fundamentals/groups-add)
 
@@ -103,7 +103,7 @@ Dans cette section, nous allons créer un groupe de test pour affecter vos confi
 
 6. Sélectionnez **membres > ajouter des membres.**
 
-7. Recherchez votre utilisateur ou appareil de test et sélectionnez-le.
+7. Recherchez l’utilisateur ou l’appareil de test et sélectionnez-le.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal3.](images/149cbfdf221cdbde8159d0ab72644cd0.png)
@@ -145,9 +145,9 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > ![Image de Microsoft Endpoint Manager portal6.](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > Dans cette instance, cela a été automatiquement rempli comme Defender pour point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > Dans cette instance, ce système a été rempli automatiquement, car Defender pour le point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     >
-    > L’image suivante illustre ce que vous voyez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
+    > L’image suivante est un exemple de ce que vous verrez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
     >
     > ![Image de Microsoft Endpoint Manager portal7.](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -156,7 +156,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal8.](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7. Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez **Suivant.**
+7. Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal9.](images/fc3525e20752da026ec9f46ab4fec64f.png)
@@ -180,7 +180,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft Defender Antivirus > Create**.
+3. Sélectionner **la plateforme - Windows 10 et ultérieures - Windows profil - créer Antivirus Microsoft Defender > .**
 
 4. Entrez le nom et la description, puis sélectionnez **Suivant.**
 
@@ -220,7 +220,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 3. Sélectionnez **Créer une stratégie.**
 
-4. Sélectionner **la plateforme - Windows 10 et ultérieures - Profil - Règles** de réduction de la surface d’attaque > créer .
+4. Select **Platform - Windows 10 and Later - Profile - Attack surface reduction rules > Create**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal19.](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -230,7 +230,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal20.](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
-6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez **Suivant.**
+6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour les règles de réduction de la surface d’attaque, puis sélectionnez  **Suivant**.
 
     > [!NOTE]
     > Nous allons configurer toutes les règles de réduction de la surface d’attaque sur Audit.
@@ -260,7 +260,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal25.](images/7a631d17cc42500dacad4e995823ffef.png)
 
-### <a name="attack-surface-reduction---web-protection"></a>Réduction de la surface d’attaque - Protection Web
+### <a name="attack-surface-reduction---web-protection"></a>Réduction de la surface d’attaque - Protection web
 
 1. Ouvrez le portail MEM.
 
@@ -283,7 +283,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!NOTE]
     > Nous configurons la protection Web sur Bloquer.
     >
-    > Pour plus d’informations, voir [Web Protection](web-protection-overview.md).
+    > Pour plus d’informations, voir [Protection Web.](web-protection-overview.md)
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal28.](images/6104aa33a56fab750cf30ecabef9f5b6.png)
@@ -293,7 +293,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal29.](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
-8. Sélectionnez **Affecter au groupe de test > Suivant**.
+8. Sélectionnez **Affecter au groupe de test > suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal30.](images/45cefc8e4e474321b4d47b4626346597.png)
@@ -353,12 +353,12 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
     > [!div class="mx-imgBorder"]
     > [![Image du panneau Services 1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. Une fois la configuration appliquée, le service Defender for Endpoint Protection doit être démarré.
+2. Une fois la configuration appliquée, defender pour Endpoint Protection service doit être démarré.
 
     > [!div class="mx-imgBorder"]
     > [![Image du panneau Services2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans le Centre de sécurité Microsoft Defender.
+3. Une fois que les services sont en cours d’exécution sur l’appareil, l’appareil apparaît dans Centre de sécurité Microsoft Defender.
 
     > [!div class="mx-imgBorder"]
     > [![Image de Centre de sécurité Microsoft Defender.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
@@ -398,7 +398,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
     ![Image de la ligne de commande 2.](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la Réduction de la surface d’attaque - Protection Web
+### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la réduction de la surface d’attaque - Protection Web
 
 1. Sur le périphérique de test, ouvrez une Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
 
@@ -408,6 +408,6 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
 3. Après avoir appliqué la stratégie, ouvrez un Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
 
-4. Cela doit répondre avec un 1, comme illustré ci-dessous.
+4. Cela doit répondre avec un 1 comme illustré ci-dessous.
 
     ![Image de la ligne de commande 4.](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)

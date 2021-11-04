@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 a atteint la fin de la prise en charge. Utilisez cette feuille de route de planification pour préparer la mise à niveau vers Exchange Online ou une version plus récente de Exchange Server en local.
-ms.openlocfilehash: b1b4c1244d195f62261f0abc9cfaa4093beeb22f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e49bf68ce2fb9b441ecd40ae4bb89ad88ea568c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150833"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757401"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
@@ -62,7 +62,7 @@ Les sections suivantes explorent chaque option plus en détail.
 
 ## <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
-La migration de votre courrier vers Microsoft 365 est la meilleure option et la plus simple pour vous aider à retirer votre déploiement Exchange 2010. Avec une migration vers Microsoft 365, vous pouvez effectuer un saut unique entre l’ancienne technologie et les fonctionnalités actuelles, notamment :
+La migration de votre courrier vers Microsoft 365 est l’option la plus simple et la plus simple pour vous aider à retirer votre déploiement Exchange 2010. Avec une migration vers Microsoft 365, vous pouvez effectuer un saut unique entre l’ancienne technologie et les fonctionnalités actuelles, notamment :
 
 - Fonctionnalités de conformité telles que les stratégies de rétention, In-Place conservation pour litige, eDiscovery sur place, etc.
 - Microsoft Teams.
@@ -70,7 +70,7 @@ La migration de votre courrier vers Microsoft 365 est la meilleure option et la 
 - Boîte de réception Focused.
 - MyAnalytics.
 
-Microsoft 365 également de nouvelles fonctionnalités et expériences, afin que votre organisation puisse commencer à les utiliser immédiatement. En outre, vous n’avez pas à vous soucier des :
+Microsoft 365 également de nouvelles fonctionnalités et expériences, afin que votre organisation puisse commencer à les utiliser immédiatement. En outre, vous n’avez pas à vous soucier des sujets qui s’offrent à vous :
 
 - Achat et maintenance du matériel.
 - Payer à la température et à la température de vos serveurs.
@@ -105,7 +105,7 @@ Les sections suivantes donnent une vue d’ensemble de ces méthodes. Pour plus 
 
 Dans une migration à cutover, vous migrez toutes vos boîtes aux lettres, groupes de distribution, contacts, etc., vers Office 365 à une date et une heure définies. Lorsque vous avez terminé, vous fermez vos serveurs Exchange locaux et commencez à utiliser Microsoft 365 exclusivement.
 
-La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne veulent pas gérer la complexité des autres méthodes. Toutefois, il doit être terminé dans une semaine ou moins. En plus, les utilisateurs doivent reconfigurer leurs profils Outlook utilisateurs. La migration à cutover peut migrer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons de l’utiliser pour un maximum de 150 boîtes aux lettres. Si vous essayez de migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre personnel de support technique risque d’être submergé par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
+La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne veulent pas gérer la complexité des autres méthodes. Toutefois, il doit être terminé dans une semaine ou moins. Les utilisateurs doivent également reconfigurer leurs profils Outlook utilisateurs. La migration à cutover peut migrer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons de l’utiliser pour un maximum de 150 boîtes aux lettres. Si vous essayez d’en migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre équipe de support technique risque d’être submergée par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
 
 Voici les éléments à prendre en compte à propos de la migration à cutover :
 
@@ -113,7 +113,7 @@ Voici les éléments à prendre en compte à propos de la migration à cutover :
 - Toutes les boîtes aux lettres sur site sont déplacées vers Microsoft 365.
 - Vous aurez besoin d’un compte d’administrateur local qui dispose d’un accès en lecture aux boîtes aux lettres de vos utilisateurs.
 - Les Exchange 2010 acceptés que vous souhaitez utiliser dans Microsoft 365 doivent être ajoutés en tant que domaines vérifiés dans le service.
-- Entre le début de la migration et la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et sur site. Cela vous permet d’effectuer la migration sans vous soucier du fait que le courrier électronique soit laissé dans vos boîtes aux lettres sur site.
+- Entre le début de la migration et la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et en local. Cela vous permet d’effectuer la migration sans vous soucier du fait que le courrier électronique soit laissé dans vos boîtes aux lettres sur site.
 - Les utilisateurs recevront de nouveaux mots de passe temporaires pour Microsoft 365 compte. Ils devront les modifier lorsqu’ils se connectent à leurs boîtes aux lettres pour la première fois.
 - Vous aurez besoin d’une licence Microsoft 365 qui inclut Exchange Online boîte aux lettres utilisateur que vous migrez.
 - Les utilisateurs doivent configurer un nouveau profil Outlook sur chacun de leurs appareils et télécharger à nouveau leur courrier électronique. La quantité d’e-Outlook que vous téléchargerez peut varier. Pour plus d’informations, [voir Travail hors connexion dans Outlook](https://support.microsoft.com/office/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
@@ -132,11 +132,11 @@ La migration hybride minimale est très efficace pour les organisations qui ont 
 Voici les éléments à prendre en considération concernant la migration hybride minimale :
 
 - Vous devrez synchroniser l’annuaire à une seule fois entre vos serveurs Active Directory locaux et les serveurs Microsoft 365.
-- Les utilisateurs pourront se Microsoft 365 à leur boîte aux lettres avec les mêmes nom d’utilisateur et mot de passe qu’avant leur boîte aux lettres.
+- Les utilisateurs pourront se Microsoft 365 leur boîte aux lettres avec les mêmes nom d’utilisateur et mot de passe qu’avant leur boîte aux lettres.
 - Vous aurez besoin d’une licence Microsoft 365 qui inclut Exchange Online boîte aux lettres utilisateur que vous migrez.
 - Les utilisateurs n’auront pas besoin de configurer un nouveau profil Outlook la plupart de leurs appareils, même si certains téléphones Android plus anciens peuvent avoir besoin d’un nouveau profil. Les utilisateurs n’ont pas besoin de recharger leur courrier électronique.
 
-Pour plus d’informations, voir [Utiliser l’hybride](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)minimal pour migrer rapidement Exchange boîtes aux lettres vers Office 365 .
+Pour plus d’informations, voir Utiliser l’hybride minimal pour migrer rapidement [Exchange boîtes aux lettres vers Office 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate).
 
 ### <a name="full-hybrid"></a>Hybride complet
 
@@ -144,7 +144,7 @@ Dans une migration hybride complète, vous avez plusieurs centaines, jusqu’à 
 
 - Affichez les informations de calendrier des utilisateurs locaux pour les utilisateurs dans Microsoft 365, et vice versa.
 - Consultez une liste d’adresses globale unifiée qui contient des destinataires à la fois en local et Microsoft 365.
-- Affichez toutes Outlook propriétés du destinataire pour tous les utilisateurs, qu’ils soient locaux ou Microsoft 365.
+- Afficher les propriétés Outlook destinataire complètes pour tous les utilisateurs, qu’ils soient locaux ou Microsoft 365.
 - Sécuriser la communication par courrier électronique entre les serveurs Exchange locaux et les Office 365 à l’aide de TLS et de certificats.
 - Traitez les messages envoyés entre des serveurs Exchange locaux et Microsoft 365 comme internes, ce qui leur permet de :
   - Être correctement évaluées et traitées par les agents de transport et de conformité ciblant les messages internes.
@@ -156,7 +156,7 @@ Les migrations hybrides complètes sont les meilleures pour les organisations qu
 
 - Elles ne sont pas adaptées à toutes les organisations. En raison de la complexité des migrations hybrides complètes, les organisations avec moins de quelques centaines de boîtes aux lettres ne voient généralement pas d’avantages qui justifient l’effort et le coût impliqués. Dans ce cas, nous vous recommandons plutôt d’envisager une migration hybride à cutover ou minimale.
 - Vous devez configurer la synchronisation d’annuaires à l’aide de Azure Active Directory (Azure AD) Connecter entre vos serveurs Active Directory locaux et Microsoft 365.
-- Les utilisateurs pourront se connecter à leur boîte aux lettres Microsoft 365 avec le même nom d’utilisateur et le même mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local. (Cette fonctionnalité nécessite azure ad Connecter avec synchronisation de mot de passe et/ou services de fédération Active Directory).
+- Les utilisateurs pourront se connecter à leur boîte aux lettres Microsoft 365 avec le même nom d’utilisateur et mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local. (Cette fonctionnalité nécessite une Azure AD Connecter avec la synchronisation de mot de passe et/ou les services de fédération Active Directory).
 - Vous avez besoin d Microsoft 365 licence qui inclut Exchange Online boîte aux lettres utilisateur que vous migrez.
 - Les utilisateurs n’ont pas besoin de configurer un nouveau profil Outlook la plupart de leurs appareils, même si certains téléphones Android plus anciens peuvent avoir besoin d’un nouveau profil. Les utilisateurs n’ont pas besoin de recharger leur courrier électronique.
 
@@ -199,15 +199,15 @@ Exchange 2016 inclut toutes les fonctionnalités des versions précédentes de E
 
 ****
 
-|Considération|Plus d’informations|
+|Considération|Informations supplémentaires|
 |---|---|
 |Dates de fin du support|Comme Exchange 2010, chaque version de Exchange a sa propre date de fin de prise en charge : <p> Exchange 2013 - Avril 2023 <p> Exchange 2016 - Octobre 2025 <p> Plus la date de fin de support est antérieure, plus vite vous devrez effectuer une autre migration. Avril 2023 est beaucoup plus proche que vous ne le pensez !|
 |Migration vers Exchange 2013 ou 2016|Le chemin de migration de Exchange 2010 vers une version plus récente est le même que vous choisissiez Exchange 2013 ou Exchange 2016 : <p> Installez Exchange 2013 ou 2016 dans votre organisation Exchange 2010 existante. <p> Déplacez les services et autres infrastructures vers Exchange 2013 ou 2016. <p> Déplacez les boîtes aux lettres et les dossiers publics vers Exchange 2013 ou 2016 Désaffecter les serveurs restants Exchange 2010.|
 |Coexistence de version|Lors de la migration vers Exchange 2013 ou Exchange 2016, vous pouvez installer chaque version dans une organisation Exchange 2010 existante. Cela vous permet d’installer un ou plusieurs serveurs Exchange 2013 ou 2016 Exchange 2016 et d’y faire votre migration.|
 |Matériel serveur|La configuration matérielle requise pour le serveur Exchange 2010. Assurez-vous que votre matériel est compatible. En savoir plus sur la configuration matérielle requise pour chaque version ici : <p> [Configuration requise pour Exchange 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Configuration requise pour Exchange 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> Avec les améliorations significatives des performances Exchange et l’augmentation de la puissance informatique et de la capacité de stockage sur les serveurs plus nouveaux, vous aurez probablement besoin de moins de serveurs pour prendre en charge le même nombre de boîtes aux lettres.|
 |Version du système d'exploitation|Les versions minimales de système d’exploitation pris en charge pour chaque version sont les : <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> Pour plus d’informations sur la prise en charge du système [d’exploitation, Exchange Matrice de prise en charge.](/exchange/plan-and-deploy/supportability-matrix)|
-|Niveau fonctionnel de la forêt Active Directory|Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont les : <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> Pour plus d’informations sur la prise en charge du niveau fonctionnel de la [forêt, voir Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Office versions clientes|Les versions minimales Office client pour chaque version sont les Office les plus récentes : <p> Exchange 2016 - Office 2010 (avec les dernières mises à jour) <p> Exchange 2013 - Office 2007 SP3 <p> Pour plus d’informations sur Office prise en charge du client, [voir Exchange Matrice de prise en charge.](/exchange/plan-and-deploy/supportability-matrix)|
+|Niveau fonctionnel de la forêt Active Directory|Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont : <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> Pour plus d’informations sur la prise en charge du niveau fonctionnel de la [forêt, voir Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Office versions clientes|Les versions minimales Office client pour chaque version sont les Office les plus récentes : <p> Exchange 2016 - Office 2010 (avec les dernières mises à jour) <p> Exchange 2013 - Office 2007 SP3 <p> Pour plus d’informations sur Office prise en charge du client, [Exchange matrice de prise en charge.](/exchange/plan-and-deploy/supportability-matrix)|
 |
 
 Utilisez les ressources suivantes pour faciliter votre migration :
@@ -217,7 +217,7 @@ Utilisez les ressources suivantes pour faciliter votre migration :
 - System requirements for Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
 - Conditions préalables Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour Office client et serveurs 2010 et Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client Office 2010 et les serveurs et Windows 7
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 
@@ -229,7 +229,7 @@ Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/mi
 
 ## <a name="what-if-i-need-help"></a>Que se passe-t-il si j’ai besoin d’aide ?
 
-Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, vous aurez un ingénieur du support technique pour vous aider à passer de la planification et de la conception à la migration de votre dernière boîte aux lettres. Pour plus d’informations FastTrack, voir [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack service. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, vous aurez un ingénieur du support technique pour vous aider à passer de la planification et de la conception à la migration de votre dernière boîte aux lettres. Pour plus d’informations FastTrack, [voir Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vous n’utilisez pas FastTrack ou que vous migrez vers une version plus récente de Exchange Server, voici quelques ressources que vous pouvez utiliser :
 

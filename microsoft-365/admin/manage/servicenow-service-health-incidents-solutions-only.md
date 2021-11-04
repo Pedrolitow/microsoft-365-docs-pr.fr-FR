@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 l’intégration des incidents d’état du service et des solutions recommandées UNIQUEMENT
+title: Microsoft 365 l’intégration des incidents d’état du service et des solutions recommandées uniquement
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,16 +17,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 427b4b20b33d83676e2cbebbfb6dcd627bcd51fe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7b1ebccb60500d0f1b2c6513be55d8f04628b6ac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661763"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754220"
 ---
-# <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 l’intégration des incidents d’état du service et des solutions recommandées UNIQUEMENT
+# <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 l’intégration des incidents d’état du service et des solutions recommandées uniquement
 
-Cette configuration ne vous permet pas de créer un cas avec le support Microsoft via votre instance ServiceNow. Cette option vous fournit uniquement les informations sur l’incident d’état du service et recommande les solutions disponibles via votre instance ServiceNow.
+Cette configuration ne vous permet pas de créer un cas avec le support Microsoft via votre instance ServiceNow. Cette option vous fournit uniquement les informations sur l’incident d’état du service et les solutions recommandées disponibles via votre instance ServiceNow.
 
 ## <a name="prerequisites-service-health-incidents-and-recommended-solutions-only"></a>Conditions préalables (incidents d’état du service et solutions recommandées UNIQUEMENT)
 
@@ -74,14 +74,14 @@ L’Microsoft 365'intégration de support technique peut être définie sous Mic
 
 Ces étapes sont nécessaires pour configurer l’intégration entre votre instance ServiceNow et Microsoft 365 prise en charge.
 
-1. \[L’administrateur ServiceNow \] bascule l’étendue **vers Microsoft 365'intégration de support technique.**
+1. \[ServiceNow Admin \] Switch the scope to Microsoft 365 support **integration**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Interface utilisateur graphique, description de tableau générée automatiquement":::
 
 1. \[ServiceNow Admin \] Go to Microsoft 365 Support **&gt; Setup** to open the integration workflow.
 
     > [!NOTE]
-    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès à plusieurs étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
+    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès entre étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -103,13 +103,13 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     Vérifiez **ignorer l’étape actuelle,** puis sélectionnez **Suivant.**
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image34.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image34.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image34.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image34.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
 
 1. \[ServiceNow Admin \] Set up the Repository ID.
 
     Spécifiez l’ID de référentiel, puis sélectionnez **Suivant**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
 
 1. \[ServiceNow Admin \] Set up Application Paramètres.
 
@@ -121,7 +121,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - Environnement de test : cochez la case pour indiquer une phase de test afin d’éviter que les agents du support Microsoft ne vous contactent pour résoudre le problème. Si vous êtes prêt à passer officiellement à l’étape Microsoft 365 l’intégration, décochez la case.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
 
 1. \[Microsoft 365 L’administrateur client \] termine l’intégration.
 
@@ -133,7 +133,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
 1. Configurez les paramètres d’intégration de la prise en charge :
 
-    Sélectionnez **l’onglet** Informations de base >'outil de support interne ServiceNow, puis entrez la valeur de l’ID de l’application sortante dans l’ID d’application pour émettre le champ de jeton  >   **OAuth.**  Cet ID d’application sortante se trouve à l’étape 6 : terminez l’intégration, qui a été créée dans la prérequise [(Informations UNIQUEMENT) étape \# 1](#prerequisites-service-health-incidents-and-recommended-solutions-only).
+    Sélectionnez **l’onglet** Informations de base >'outil de support interne ServiceNow, puis entrez la valeur de l’ID de l’application sortante dans l’ID d’application pour émettre le champ de jeton  >   **OAuth.**  Cet ID d’application sortante se trouve à l’étape 6 : terminez l’intégration, qui a été créée à l’étape [ \# 1](#prerequisites-service-health-incidents-and-recommended-solutions-only)de la prérequise (Informations UNIQUEMENT).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -149,7 +149,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - Nom d’utilisateur rest : valeur aléatoire (exemple : ignoré).
 
-    - Mot de passe utilisateur rest : valeur aléatoire (exemple : ignoré).
+    - Mot de passe de l’utilisateur rest : valeur aléatoire (exemple : ignoré).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image36.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image36.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 
@@ -168,4 +168,4 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
     - x \_ mioms \_ m365 \_ assis.administrator
 
     > [!NOTE]
-    > L’utilisateur avec le rôle x \_ mioms \_ m365 assis.insights peut voir Incidents d’état du \_ \_ service, Solutions recommandées. L’utilisateur avec le rôle x \_ mioms \_ m365 assis.administrator peut également ouvrir un cas \_ avec Microsoft 365 prise en charge. Avec Informations UNIQUEMENT, personne ne doit se voir attribuer le rôle x \_ mioms \_ m365 \_ assis.administrator.
+    > L’utilisateur ayant le rôle x \_ mioms \_ m365 assis.insights peut voir Incidents d’état du \_ \_ service, Solutions recommandées. L’utilisateur avec le rôle x \_ mioms \_ m365 assis.administrator peut également ouvrir un cas \_ avec Microsoft 365 prise en charge. Avec Informations UNIQUEMENT, personne ne doit se voir attribuer le rôle x \_ mioms \_ m365 \_ assis.administrator.

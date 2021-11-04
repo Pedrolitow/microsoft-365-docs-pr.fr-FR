@@ -19,23 +19,24 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Découvrez les alertes de protection contre la perte de données et le tableau de bord des alertes.
-ms.openlocfilehash: ea5d01e580b88445ba64e4ed26fc01fb51c97d5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 375b16a3072f40ef8f366f7c1c4e8f714f195d63
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175214"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754372"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>En savoir plus sur le tableau de bord des alertes de protection contre la perte de données
 
-Lorsque les critères d’une stratégie de protection contre la perte de données (DLP) correspondent aux actions qu’un utilisateur réalise sur un élément sensible, la stratégie peut générer une alerte. Cela peut entraîner un volume élevé d’alertes. Les alertes DLP sont collectées dans le tableau de bord des alertes. Le tableau de bord des alertes vous permet d’effectuer une recherche approfondie de tous les détails concernant la correspondance de stratégie.  
+Lorsque les critères d’une stratégie de protection contre la perte de données (DLP) correspondent aux actions qu’un utilisateur réalise sur un élément sensible, la stratégie peut générer une alerte. Cette situation peut entraîner un volume élevé d’alertes. Les alertes DLP sont collectées dans le tableau de bord des alertes. Le tableau de bord des alertes vous offre un seul endroit où vous pouvez faire une recherche approfondie de tous les détails sur la correspondance de stratégie.  
 
 <!-- [Microsoft 365 compliance center](https://compliance.microsoft.com/)-->
 
 ## <a name="workloads"></a>Charges de travail
 
-Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche les alertes pour les stratégies DLP sur ces charges de travail :
+Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>affiche les alertes pour les stratégies DLP sur ces charges de travail :
 
 - Exchange
 - SharePoint
@@ -44,7 +45,7 @@ Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.co
 - Appareils Windows 10 
 
 > [!TIP]
-> Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
+> Les clients qui utilisent le point de terminaison [DLP](endpoint-dlp-learn-about.md) éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
 ## <a name="single-alert-and-aggregate-alert"></a>Alerte unique et alerte agrégée
 
@@ -66,7 +67,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 |Lieu |charge de travail où l’événement a été détecté|tous les événements |
 |heure de l’activité     |heure de l’activité de l’utilisateur qui correspond aux critères de la stratégie DLP |
 
-### <a name="impacted-entities"></a>Entités impactées
+### <a name="affected-entities"></a>Entités affectées
 
 |Nom de la propriété |Description| Types d’événements|
 |---------|---------|---------|
@@ -78,7 +79,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 |ID d’appareil MDATP | ID MDATP de l’appareil de point de terminaison|
 |taille du fichier | taille du fichier| SharePoint, OneDrive et événements d’appareil|
 |chemin d’accès du fichier | chemin d’accès absolu de l’élément impliqué dans la correspondance de stratégie DLP | SharePoint, OneDrive et appareils|
-|destinataires du courrier électronique |si un e-mail était l’élément sensible qui correspond à la stratégie DLP, ce champ inclut les destinataires de cet e-mail| Exchange événements|
+|destinataires du courrier électronique |si un e-mail était l’élément sensible qui correspondait à la stratégie DLP, ce champ inclut les destinataires de ce courrier électronique| Exchange événements|
 |objet de l’e-mail |objet de l’e-mail qui correspond à la stratégie DLP |Exchange événements|
 |pièces jointes d’e-mail | noms des pièces jointes dans l’e-mail qui correspondent à la stratégie DLP| Exchange événements|
 |propriétaire du site |nom du propriétaire du site| SharePoint et OneDrive événements|

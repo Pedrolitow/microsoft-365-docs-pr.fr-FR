@@ -17,17 +17,18 @@ search.appverid:
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Utilisez un fichier CSV d’une recherche de contenu existante pour créer une recherche de liste d’ID qui renvoie des éléments de courrier spécifiques.
-ms.openlocfilehash: 574c130f7ec7c4f47569179ca6fc0712d76c395c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e06a5ba45b7c9b90875ed099e11263c28146998
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156485"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755710"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 
-Vous pouvez rechercher des messages électroniques de boîte aux lettres spécifiques et d’autres éléments de boîte aux lettres à l’aide d’une liste Exchange ID de boîte aux lettres. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour ce fichier CSV, vous utilisez le fichier **Results.csv** ou le fichier Items.csv **nonndexé** inclus lorsque vous exportez les résultats de recherche de contenu ou exportez un rapport de recherche de contenu à partir d’une recherche de contenu existante. Ensuite, vous modifiez l’un de ces fichiers pour indiquer les éléments spécifiques à rechercher, créez une recherche de liste d’ID et soumettez le fichier CSV.
+Vous pouvez rechercher des messages électroniques de boîte aux lettres spécifiques et d’autres éléments de boîte aux lettres à l’aide d’Exchange ID de boîte aux lettres. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour ce fichier CSV, vous utilisez le fichier **Results.csv** ou le fichier Items.csv **nonndexé** inclus lorsque vous exportez les résultats de recherche de contenu ou exportez un rapport de recherche de contenu à partir d’une recherche de contenu existante. Ensuite, vous modifiez l’un de ces fichiers pour indiquer les éléments spécifiques à rechercher, créez une recherche de liste d’ID et soumettez le fichier CSV.
 
 **Pourquoi créer une recherche de liste d’ID ?** Si vous ne parvenez pas à déterminer si un élément répond à une demande eDiscovery en fonction des métadonnées dans les fichiers **Results.csv** ou **non** Items.csv, vous pouvez utiliser une recherche de liste d’ID pour rechercher, afficher un aperçu, puis exporter cet élément pour déterminer s’il répond au cas que vous examinez. Les recherches de liste d’ID sont généralement utilisées pour rechercher et renvoyer un ensemble spécifique d’éléments nonndex.
 
@@ -35,13 +36,13 @@ Voici une vue d’ensemble rapide du processus de création d’une recherche de
 
 1. Créez et exécutez une nouvelle recherche dans le Centre de conformité Microsoft 365.
 
-2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d'informations, voir :
+2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
     - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 
     - [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
 
-3. Modifiez **leResults.csv** fichier  ou le fichier Items.csvnon non Items.csvet identifiez les éléments de boîte aux lettres spécifiques à inclure dans la recherche de liste d’ID. Consultez [les instructions de](#prepare-the-csv-file-for-an-id-list-search) préparation d’un fichier CSV pour une recherche de liste d’ID.
+3. Modifiez **leResults.csv** ou  le fichier Items.csvnon non Items.csvet identifiez les éléments de boîte aux lettres spécifiques à inclure dans la recherche de liste d’ID. Consultez [les instructions de](#prepare-the-csv-file-for-an-id-list-search) préparation d’un fichier CSV pour une recherche de liste d’ID.
 
 4. Créez une recherche de liste d’ID (voir [les instructions)](#create-an-id-list-search)et soumettez le fichier CSV que vous avez préparé. La requête de recherche créée recherche uniquement les éléments sélectionnés dans le fichier CSV.
 
@@ -78,15 +79,15 @@ Vous pouvez utiliser un fichier CSV à partir d’une recherche qui incluait des
 L’étape suivante consiste à créer une recherche de liste d’ID et à soumettre le fichier CSV que vous avez préparé à l’étape précédente.
 
 > [!IMPORTANT]
-> Vous devez créer une recherche de liste d’ID au plus 2 jours après l’exportation des résultats ou du rapport de recherche. Si les résultats ou le rapport de recherche exportés il y a plus de 2 jours, vous devez ré-exporter les résultats ou le rapport de recherche pour générer des fichiers CSV mis à jour. Vous pouvez ensuite préparer l’un des fichiers CSV mis à jour et l’utiliser pour créer une recherche de liste d’ID.
+> Vous devez créer une recherche de liste d’ID au plus 2 jours après l’exportation des résultats ou du rapport de recherche. Si les résultats ou le rapport de recherche exportés il y a plus de 2 jours, vous devez ré-exporter les résultats de recherche ou le rapport pour générer des fichiers CSV mis à jour. Vous pouvez ensuite préparer l’un des fichiers CSV mis à jour et l’utiliser pour créer une recherche de liste d’ID.
 
-1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> and sign in.
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout** , puis sur **Recherche de contenu**.
 
 3. Dans la page **de recherche de** contenu, cliquez sur Rechercher par liste **d’ID.**
 
-4. Dans le programme volant Rechercher par **liste d’ID,** nommez  la recherche (et éventuellement décrivez-la), puis cliquez sur Parcourir et sélectionnez le fichier CSV que vous avez préparé à l’étape précédente.
+4. Dans le flyout Liste de recherche par **ID,** nommez la  recherche (et éventuellement décrivez-la), puis cliquez sur Parcourir et sélectionnez le fichier CSV que vous avez préparé à l’étape précédente.
 
     Microsoft 365 tente de valider le fichier CSV. Si la validation échoue, un message d’erreur s’affiche pour vous aider à résoudre les erreurs de validation. Le fichier CSV doit être validé avec succès pour créer une recherche de liste d’ID.
 
@@ -100,6 +101,6 @@ L’étape suivante consiste à créer une recherche de liste d’ID et à soume
 
 6. Afficher un aperçu ou exporter les éléments renvoyés par la recherche de liste d’ID.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Si vous déplacez une boîte aux lettres après avoir créé une recherche de liste d’ID, la requête de recherche ne retourne pas les éléments spécifiés. Cela est dû au fait que la **propriété DocumentId** des éléments de boîte aux lettres est modifiée lorsqu’une boîte aux lettres est déplacée. Dans les rares cas où une boîte aux lettres est déplacée après avoir créé une recherche de liste d’ID, vous devez créer une recherche de contenu (ou mettre à jour les résultats de recherche pour une recherche existante), puis exporter les résultats ou le rapport de recherche pour générer des fichiers CSV mis à jour qui peuvent être utilisés pour créer une recherche de liste d’ID.

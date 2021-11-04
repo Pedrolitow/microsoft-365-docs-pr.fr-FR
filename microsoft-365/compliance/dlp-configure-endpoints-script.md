@@ -14,16 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez un script local pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: a0a0f961d81d6637c40c8b6befb3c46aaa829905
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9611ff0f787e35e313744fa817e30a5d41b761b6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204382"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753504"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 utilisant un script local
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 
@@ -36,9 +36,9 @@ Vous pouvez également intégrer manuellement des appareils individuels pour Mic
 
 ## <a name="onboard-devices"></a>Intégration des appareils
  
-1.  Ouvrez le fichier de package de configuration de .zip de groupe (*DeviceComplianceOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com)
+1. Ouvrez le fichier de package de configuration de .zip de groupe (*DeviceComplianceOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">de Centre de conformité Microsoft 365</a>.
 
-2. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration de l’appareil.**
+2. Dans le volet de <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank"></a>navigation, sélectionnez  >  **Paramètres’intégration de l’appareil.**
 
 3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
 
@@ -46,17 +46,17 @@ Vous pouvez également intégrer manuellement des appareils individuels pour Mic
   
 5. Extrayez le contenu du package de configuration vers un emplacement sur l’appareil que vous souhaitez intégrer (par exemple, le Bureau). Vous devez avoir un fichier nommé *DeviceOnboardingScript.cmd*.
 
-6.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
+6. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
-7.  Accéder à **Démarrer** et taper **cmd**.
+7. Accéder à **Démarrer** et taper **cmd**.
 
-8.  Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
+8. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
     ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur.](../media/dlp-run-as-admin.png)
 
-9.  Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9. Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
-10.  Appuyez sur **entrée** ou cliquez sur **OK.**
+10. Appuyez sur **entrée** ou cliquez sur **OK.**
 
 Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration de la Protection avancée contre les [menaces Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
 
@@ -66,9 +66,9 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenir le package deboarding à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com)
+1. Obtenez le package deboarding à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">de Centre de conformité Microsoft 365</a>.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **de l’appareil.**
+2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a>  >  **de l’appareil.**
 
 3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
 
@@ -76,21 +76,20 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-6.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
+6. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
-7.  Accéder à **Démarrer** et taper **cmd**.
+7. Accéder à **Démarrer** et taper **cmd**.
 
-8.  Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
+8. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
     ![Fenêtre menu Démarrer pointant sur Exécuter en tant qu’administrateur.](../media/dlp-run-as-admin.png)
 
-9.  Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
+9. Tapez l’emplacement du fichier de script. Si vous avez copié le fichier sur le Bureau, tapez : *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
-10.  Appuyez sur **entrée** ou cliquez sur **OK.**
+10. Appuyez sur **entrée** ou cliquez sur **OK.**
 
 > [!IMPORTANT]
 > L’arrêt de l’appareil entraîne l’arrêt de l’envoi de données de capteur au portail.
-
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 Vous pouvez suivre les différentes étapes de vérification dans [Résoudre les problèmes d’intégration]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) pour vérifier que le script s’est correctement terminé et que l’agent est en cours d’exécution.
@@ -98,14 +97,12 @@ Vous pouvez suivre les différentes étapes de vérification dans [Résoudre les
 La surveillance peut également être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ### <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
-1. Go to [Microsoft 365 Compliance center](https://compliance.microsoft.com).
 
-2. Choose **Paramètres**  >  **Device onboarding**  >  **Devices**.
+1. Go to Centre de conformité Microsoft 365, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a>  >  **Device onboarding**  >  **Devices**.
 
-3. Vérifiez que les appareils apparaissent.
+1. Vérifiez que les appareils apparaissent.
 
-
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)

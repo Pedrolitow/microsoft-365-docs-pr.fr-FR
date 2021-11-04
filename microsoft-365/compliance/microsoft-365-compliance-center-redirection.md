@@ -11,16 +11,16 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Découvrez la redirection automatique des utilisateurs du centre Office 365 sécurité et conformité vers le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dcf589eddc0ede59efd01d7eddbe9ab3685bfa68
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9e299ee84eb046a1d6c3ae41d80eeb0106fad63e
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700900"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754788"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirection des utilisateurs du Centre Office 365 sécurité et conformité vers le centre de sécurité et conformité Centre de conformité Microsoft 365
 
-Cet article explique comment fonctionne la redirection automatique pour les utilisateurs accédant à des solutions de conformité à partir du Centre de sécurité et conformité Office 365 (protection.office.com) vers le Centre de conformité Microsoft 365 (compliance.microsoft.com).
+Cet article explique comment fonctionne la redirection automatique pour les utilisateurs accédant à des solutions de conformité à partir du Centre de sécurité et conformité Office 365 (protection.office.com) vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
 ## <a name="what-to-expect"></a>À quoi s’attendre
 
@@ -36,7 +36,7 @@ La redirection automatique est activée par défaut pour tous les utilisateurs a
 - [Gouvernance des informations](manage-information-governance.md)
 - [Gestion des enregistrements](records-management.md)
 
-Les utilisateurs sont automatiquement acheminés vers les mêmes solutions de conformité dans le Centre de conformité Microsoft 365 (compliance.microsoft.com).
+Les utilisateurs sont automatiquement acheminés vers les mêmes solutions de conformité dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
 Cette fonctionnalité et les contrôles associés n’activent pas la redirection automatique des fonctionnalités de sécurité pour Microsoft Defender pour Office 365. Pour activer la redirection pour les [fonctionnalités](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) de sécurité, consultez La redirection des comptes de Microsoft Defender Office 365 vers le centre de sécurité Microsoft 365 pour plus d’informations.
 

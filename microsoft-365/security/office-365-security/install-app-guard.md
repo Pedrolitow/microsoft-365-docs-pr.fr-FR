@@ -1,6 +1,6 @@
 ---
 title: Application Guard pour les Office 365 administrateurs
-keywords: protection d’application, protection, isolation, conteneur isolé, isolation matérielle
+keywords: protection de l’application, protection, isolation, conteneur isolé, isolation matérielle
 f1.keywords:
 - NOCSH
 ms.author: maccruz
@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 description: Obtenez la dernière version de l’isolation matérielle. Empêcher les attaques actuelles et émergentes telles que les attaques ou les liens malveillants de perturber la productivité des employés et la sécurité de l’entreprise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c8484d6e30db242933477bd77a0351578db5f94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 137ef451f0e50a130f9823fd02cab1ab1a0076fa
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213456"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755360"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour les Office administrateurs
 
 **S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise
 
-Protection d'application Microsoft Defender for Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la demande système et les étapes d’installation pour activer Application Guard Office sur un appareil.
+Protection d'application Microsoft Defender for Office (Application Guard for Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, ce qui permet de protéger votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la exigences système et les étapes d’installation pour activer Application Guard Office sur un appareil.
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -91,7 +91,7 @@ Cette étape garantit que les données nécessaires pour identifier et résoudre
 
    ![Windows Paramètres menu.](../../media/ag06-diagnostic.png)
 
-3. Sous Confidentialité, **sélectionnez Diagnostics & commentaires** et **sélectionnez Données de diagnostic facultatives.**
+3. Sous Confidentialité, sélectionnez **Diagnostics & commentaires** et **sélectionnez Données de diagnostic facultatives.**
 
    ![Menu Diagnostics et commentaires.](../../media/ag07a-diagnostic.png)
 
@@ -107,7 +107,7 @@ Lorsque vous ouvrez un fichier nontrus pour la première fois, vous pouvez voir 
 
 ![application Office écran de splash.](../../media/ag08-confirm.png)
 
-À l’ouverture, le fichier doit afficher quelques indicateurs visuels qui ont montré que le fichier a été ouvert à l’intérieur d’Application Guard pour Office :
+À l’ouverture, le fichier doit afficher quelques indicateurs visuels qui ont montré que le fichier a été ouvert à l’intérieur d’Application Guard Office :
 
 * Une callout dans le ruban
 
@@ -127,10 +127,10 @@ Office prend en charge les stratégies suivantes pour vous permettre de configur
 
 |Stratégie|Description|
 |---|---|
-|N’utilisez pas Application Guard pour Office|L’activation de cette stratégie force Word, Excel et PowerPoint à utiliser le conteneur d’isolation en affichage protégé au lieu d’Application Guard pour Office. Cette stratégie peut être utilisée pour désactiver temporairement Application Guard pour les Office en cas de problèmes de laisser ce dernier activé pour Microsoft Edge.|
-|Configurer Application Guard pour la pré Office pré-création d’un conteneur|Cette stratégie détermine si le conteneur Application Guard pour Office, pour isoler les fichiers nontrus, est pré-créé pour améliorer les performances d’exécution. Si vous activez ce paramètre, vous pouvez spécifier le nombre de jours pour continuer la pré-création d’un conteneur ou laisser le Office pré-créer le conteneur heuristique intégré.
+|N’utilisez pas Application Guard pour Office|L’activation de cette stratégie force Word, Excel et PowerPoint à utiliser le conteneur d’isolation en affichage protégé au lieu d’Application Guard pour Office. Cette stratégie peut être utilisée pour désactiver temporairement Application Guard pour Office en cas de problèmes lors de son abandon pour Microsoft Edge.|
+|Configurer Application Guard pour la pré Office pré-création d’un conteneur|Cette stratégie détermine si le conteneur Application Guard pour Office, pour isoler les fichiers nontrus, est pré-créé pour améliorer les performances d’exécution. Si vous activez ce paramètre, vous pouvez spécifier le nombre de jours pour continuer la pré-création d’un conteneur ou permettre au Office pré-créer le conteneur heuristique intégré.
 |N’autorisez pas le copier-coller pour Office documents ouverts dans Application Guard Office|L’activation de cette stratégie empêche un utilisateur de copier et coller du contenu à partir d’un document ouvert dans Application Guard pour Office vers un document ouvert en dehors de celui-ci.|
-|Désactiver l’accélération matérielle dans Application Guard pour Office|Cette stratégie contrôle si Application Guard pour Office l’accélération matérielle pour restituer les graphiques. Si vous activez ce paramètre, Application Guard pour Office utilise le rendu logiciel (CPU) et ne charge aucun pilote graphique tiers ni n’interagit avec du matériel graphique connecté.
+|Désactiver l’accélération matérielle dans Application Guard pour Office|Cette stratégie contrôle si Application Guard pour Office utilise l’accélération matérielle pour restituer les graphiques. Si vous activez ce paramètre, Application Guard pour Office utilise le rendu logiciel (CPU) et ne charge aucun pilote graphique tiers ni n’interagit avec du matériel graphique connecté.
 |Désactiver la protection des types de fichiers non pris en Office|Cette stratégie contrôle si Application Guard pour Office bloquera l’ouverture des types de fichiers non pris en Office ou s’il activera la redirection vers le affichage protégé.
 |Désactiver l’accès à la caméra et au microphone pour les documents ouverts dans Application Guard Office|L’activation de cette stratégie supprime Office’accès à la caméra et au microphone à l’intérieur d’Application Guard pour Office.|
 |Restreindre l’impression à partir de documents ouverts dans Application Guard Office|L’activation de cette stratégie limite les imprimantes sur qui un utilisateur peut imprimer à partir d’un fichier ouvert dans Application Guard Office. Par exemple, vous pouvez utiliser cette stratégie pour restreindre les utilisateurs à imprimer uniquement au format PDF.|
@@ -152,7 +152,7 @@ Si vous rencontrez des problèmes lors du lancement d’Application Guard pour O
 
 1. Ouvrez **l’application Hub de commentaires** et connectez-vous.
 
-2. Si vous obtenez une boîte de dialogue d’erreur lors du lancement d’Application Guard, sélectionnez Signaler à **Microsoft** dans la boîte de dialogue d’erreur pour démarrer une nouvelle soumission de commentaires. Dans le cas contraire, accédez à la catégorie correcte pour Application Guard, puis sélectionnez Ajouter un nouveau <https://aka.ms/mdagoffice-fb> **+ &nbsp; commentaire** en haut à droite.
+2. Si vous obtenez une boîte de dialogue d’erreur lors du lancement d’Application Guard, sélectionnez Rapport à **Microsoft** dans la boîte de dialogue d’erreur pour démarrer une nouvelle soumission de commentaires. Dans le cas contraire, accédez à la catégorie correcte pour Application Guard, puis sélectionnez Ajouter de nouveaux commentaires <https://aka.ms/mdagoffice-fb> dans le haut à droite. **+ &nbsp;**
 
 3. Entrez un résumé dans la **zone Récapitulatif de vos** commentaires s’il n’est pas déjà rempli pour vous.
 
@@ -188,11 +188,11 @@ Vous pouvez également envoyer des commentaires à partir de Office si le probl�
 
 Application Guard pour Office est intégré à Microsoft Defender for Endpoint pour fournir une surveillance et une alerte sur les activités malveillantes qui se produisent dans l’environnement isolé.
 
-[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard Office tant que les résultats de l’analyse n’ont pas été déterminés.
+[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard pour Office tant que les résultats de l’analyse n’ont pas été déterminés.
 
-Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender pour Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
-Vous pouvez également configurer Microsoft Defender pour que Office 365 fonctionne avec Defender for Endpoint. Pour plus d’informations, reportez-vous à [Intégrer Defender pour Office 365 avec Microsoft Defender pour endpoint.](integrate-office-365-ti-with-mde.md)
+Vous pouvez également configurer Microsoft Defender pour que Office 365 fonctionne avec Defender for Endpoint. Pour plus d’informations, reportez-vous à [Intégrer Defender pour Office 365 avec Microsoft Defender pour Endpoint.](integrate-office-365-ti-with-mde.md)
 
 ## <a name="limitations-and-considerations"></a>Limitations et considérations
 
@@ -233,7 +233,7 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 ## <a name="known-issues"></a>Problèmes détectés
 
 * La sélection de liens web `http` (ou `https` ) n’ouvre pas le navigateur.
-* Le paramètre par défaut de la stratégie de protection contre le copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.
+* Le paramètre par défaut de la stratégie de protection de copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.
 * Le paramètre par défaut de la stratégie de protection des types de fichiers non pris en charge consiste à bloquer l’ouverture de types de fichiers non pris en charge non pris en charge non chiffrés qui sont chiffrés ou dont la gestion des droits de l’information (IRM) est définie. Cela inclut les fichiers qui ont des étiquettes Protection des données Microsoft confidentialité à l’aide du chiffrement (confidentiel ou hautement confidentiel).
 * Les fichiers CSV et HTML ne sont pas pris en charge pour le moment.
 * Application Guard pour Office ne fonctionne actuellement pas avec les volumes compressés NTFS. Si vous voyez une erreur « ERROR_VIRTUAL_DISK_LIMITATION » veuillez essayer de décompresser le volume.

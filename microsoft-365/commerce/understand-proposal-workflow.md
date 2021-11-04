@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 159c56240d62cd3e1abce58f4fa6d82320e76017
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179474"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754776"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de proposition
 
@@ -41,11 +41,9 @@ Avant de pouvoir acheter des éléments pour une proposition, vous devez avoir u
 
 ### <a name="billing-account"></a>Compte de facturation
 
-Vous utilisez un compte de facturation pour gérer vos paramètres de compte, factures, profils de facturation et produits et services. Si vous n’avez pas encore de compte de facturation, votre représentant Microsoft en crée un pour vous.
-Dans le cas contraire, ils utilisent un compte de facturation existant pour votre organisation, tant que vous êtes autorisé à utiliser ce compte de facturation.
+Vous utilisez un compte de facturation pour gérer vos paramètres de compte, factures, profils de facturation et produits et services. Si vous n’avez pas encore de compte de facturation, votre représentant Microsoft en crée un pour vous. Dans le cas contraire, ils utilisent un compte de facturation existant pour votre organisation, tant que vous êtes autorisé à utiliser ce compte de facturation.
 
-Les autorisations de compte de facturation sont gérées par le propriétaire du compte de facturation.
-Les administrateurs globaux peuvent s’attribuer eux-mêmes le rôle de propriétaire du compte de facturation, puis faire d’autres personnes propriétaires du compte de facturation.
+Les autorisations de compte de facturation sont gérées par le propriétaire du compte de facturation. Les administrateurs globaux peuvent s’attribuer eux-mêmes le rôle de propriétaire du compte de facturation, puis faire d’autres personnes propriétaires du compte de facturation.
 
 Pour plus d’informations sur les comptes de facturation, voir [Gérer les comptes de facturation.](manage-billing-accounts.md)
 
@@ -61,8 +59,7 @@ Pour plus d’informations sur les rôles de compte de facturation, voir [Compre
 
 S’il s’agit d’un nouveau compte de facturation et que personne n’a accepté de contrat, vous devenez automatiquement propriétaire du compte de facturation, à condition que :
 
-- La personne nommée dans la proposition\
-    OR
+- La personne nommée dans la proposition, **ou**
 - Êtes déjà un [administrateur Azure Active Directory de](/azure/active-directory/roles/permissions-reference#global-administrator) votre organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Qu’est-ce que le flux de travail global ?
@@ -73,8 +70,8 @@ Le flux de travail de proposition global se présente comme ceci :
 - Vous utilisez le lien pour aller à la page de connexion de proposition.
 - Vous examinez les informations de votre organisation.
 - Vous examinez la proposition, acceptez le MCA si nécessaire et terminez le processus d’checkout.
-    > [!IMPORTANT]
-    > Vous devez avoir l’autorité pour signer un compte mca au nom de votre organisation. Si vous n’avez pas cette autorité, une personne qui le fait doit faire cette étape.
+  > [!IMPORTANT]
+  > Vous devez avoir l’autorité pour signer un compte mca au nom de votre organisation. Si vous n’avez pas cette autorité, une personne qui le fait doit faire cette étape.
 - Une fois l’enregistrement terminé, des liens supplémentaires vous sont attribués pour configurer vos produits et services.
 
 ## <a name="proposal-terms"></a>Conditions de proposition
@@ -98,13 +95,13 @@ Une fois que vous vous êtes connecté, la première chose que vous faites est d
 
 ### <a name="your-organization"></a>Votre organisation
 
-La section **Votre organisation** affiche le compte de facturation qui lui est associé. Les informations de compte de facturation sont soit tirées d’un compte de facturation existant, soit créées pour vous par le représentant Microsoft. Si votre organisation est une filiale d’une autre organisation, vous voyez également une **section** Sur l’organisation en chef avec le nom et l’adresse de cette organisation.
+La section **Votre organisation** affiche le compte de facturation qui lui est associé. Les informations de compte de facturation sont tirées d’un compte de facturation existant ou créées pour vous par le représentant Microsoft. Si votre organisation est une filiale d’une autre organisation, vous voyez également une **section** Sur l’organisation en chef avec le nom et l’adresse de cette organisation.
 
-Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de mca, si les informations sous Votre organisation ou Responsable de l’organisation sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service](../business-video/get-help-support.md)
+Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de compte mca, si les informations sous Votre organisation ou Responsable sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service.](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Vos informations
 
-Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis sélectionnez **Enregistrer.**
+Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis **sélectionnez Enregistrer.**
 
 Lorsque vous êtes prêt, sélectionnez **Continuer** pour passer à l’étape suivante.
 
@@ -122,7 +119,7 @@ La proposition contient les informations suivantes :
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nom de l’organisation | Nom de l’organisation pour laquelle la proposition a été préparée. |
 | Valide jusqu’à la date | Date d’expiration de l’offre de proposition. Si vous manquez cette date d’expiration, contactez votre représentant Microsoft pour lui faire savoir que la proposition vous intéresse toujours. |
-| Devise | Devise utilisée pour calculer le coût des éléments dans la proposition. |
+| Monétaire | Devise utilisée pour calculer le coût des éléments dans la proposition. |
 | Préparé pour | Nom du compte de facturation, adresse, adresse de messagerie du contact et numéro de téléphone de la personne qui a demandé la proposition. |
 | Préparé par | Adresse e-mail du représentant Microsoft qui a préparé la proposition. |
 | Résumé | Indique le sous-totaux associé à la proposition. Si nécessaire, il affiche également le taux de change utilisé pour calculer les coûts. |
@@ -141,11 +138,11 @@ La page d’checkout contient les sections suivantes :
 
 Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez le **lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
 
-Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez [informations fiscales.](billing-and-payments/tax-information.md)
+Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez informations [fiscales.](billing-and-payments/tax-information.md)
 
 ### <a name="billed-to"></a>Facturé à
 
-Cette section indique le profil de facturation utilisé pour déterminer quels éléments sont inclus sur votre facture et comment vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un transfert par virement, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
+Cette section indique le profil de facturation utilisé pour déterminer quels éléments sont inclus sur votre facture et comment vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un virement bancaire, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
 
 Pour plus d’informations sur les profils de facturation, voir [Gérer les profils de facturation.](billing-and-payments/manage-billing-profiles.md)
 
@@ -174,6 +171,6 @@ Si vous êtes un client Azure existant avec un Accord Entreprise et que vous sig
 
 ## <a name="understand-invoicing"></a>Comprendre la facturation
 
-Une fois la commande terminée, une facture initiale est envoyée dans les 24 à 48 heures. Après cela, vous recevez des factures vers le 5 de chaque mois. La facture mensuelle contient les frais du mois précédent. Si vous avez des crédits pour votre compte, ils sont déduits des crédits monétaires de votre profil de facturation et appliqués au solde de votre facture. Le solde restant après l’application des crédits est le solde dû. Vous avez 30 jours à partir de la date de facturation pour payer la facture.
+Une fois votre commande terminée, une facture initiale est envoyée dans les 24 à 48 heures. Après cela, vous recevez des factures vers le 5 de chaque mois. La facture mensuelle contient les frais du mois précédent. Si vous avez des crédits pour votre compte, ils sont déduits des crédits monétaires de votre profil de facturation et appliqués au solde de votre facture. Le solde restant après l’application des crédits est le solde dû. Vous avez 30 jours à partir de la date de facturation pour payer la facture.
 
 Les instructions de paiement pour l’endroit où envoyer des transferts de chèque ou de virement sont incluses dans la copie PDF de votre facture. Pour afficher ou télécharger votre facture, voir [Consulter votre facture.](billing-and-payments/view-your-bill-or-invoice.md)

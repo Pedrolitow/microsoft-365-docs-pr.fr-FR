@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156329"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753772"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -76,7 +76,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
 2. Cliquez avec le bouton **droit sur La collection d’appareils,** puis **sélectionnez Créer une collection d’appareils.**
 
-    ![Image de l Microsoft Endpoint Configuration Manager Wizard2.](images/configmgr-create-device-collection.png)
+    ![Image de Microsoft Endpoint Configuration Manager Wizard2.](images/configmgr-create-device-collection.png)
 
 3. Fournissez un **nom** et **limitez la collection,** puis sélectionnez **Suivant**.
 
@@ -86,7 +86,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de Microsoft Endpoint Configuration Manager Wizard4.](images/configmgr-query-rule.png)
 
-5. Cliquez **sur Suivant** dans **l’Assistant Adhésion directe** et cliquez sur Modifier **l’instruction de requête.**
+5. Cliquez **sur Suivant** dans **l’Assistant Adhésion** directe et cliquez sur Modifier **l’instruction de requête.**
 
      ![Image de l Microsoft Endpoint Configuration Manager Wizard5.](images/configmgr-direct-membership.png)
 
@@ -110,7 +110,7 @@ Après avoir effectué cette tâche, vous avez maintenant une collection d’app
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Étape 2 : Configurer Microsoft Defender pour les fonctionnalités de point de terminaison
 
-Cette section vous guide dans la configuration des fonctionnalités suivantes à l’aide Microsoft Endpoint Configuration Manager sur Windows appareils :
+Cette section vous guide dans la configuration des fonctionnalités suivantes à l’aide de Microsoft Endpoint Configuration Manager sur Windows appareils :
 
 - [**Détection et réponse des points de terminaison**](#endpoint-detection-and-response)
 - [**Protection de nouvelle génération**](#next-generation-protection)
@@ -120,7 +120,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 et Windows 11
 
-À partir du portail Microsoft 365 Defender, il est possible de télécharger la stratégie « .onboarding » qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et la déployer sur les appareils Windows 10 et Windows 11.
+À partir du portail Microsoft 365 Defender il est possible de télécharger la stratégie qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 et `.onboarding` Windows 11 périphériques.
 
 1. À partir d Microsoft 365 Defender portail, [sélectionnez Paramètres puis l’intégration.](https://security.microsoft.com/preferences2/onboarding)
 
@@ -139,7 +139,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     ![Image de l Microsoft Endpoint Configuration Manager 12.](images/configmgr-create-policy.png)
 
-7. Entrez le nom et la description, vérifiez **que l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
+7. Entrez le nom et la description, vérifiez que **l’intégration** est sélectionnée, puis sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager Wizard13.](images/configmgr-policy-name.png)
 
@@ -156,7 +156,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
     ![Image des paramètres de configuration2.](images/configmgr-telemetry.png)
 
-13. Vérifiez la configuration, puis cliquez sur **Suivant.**
+13. Vérifiez la configuration, puis cliquez sur **Suivant**.
 
      ![Image des paramètres de configuration3.](images/configmgr-verify-configuration.png)
 
@@ -174,11 +174,11 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour le point de terminaison et la clé d’espace de travail, qui seront requis pour l’intégration des versions précédentes de Windows.
 
-1. Dans un portail Microsoft 365 Defender, **sélectionnez** Paramètres l’intégration des points de \>  \> **terminaison** (sous **Gestion des appareils).**
+1. Dans un portail Microsoft 365 Defender, **sélectionnez** Paramètres l’intégration des points de \>  \>  terminaison (sous Gestion **des appareils).**
 
 2. Sous le système **d’exploitation, Windows 7 SP1 et 8.1**.
 
-3. Copiez **l’ID d’espace de travail** et la clé **d’espace de** travail, puis enregistrez-les. Ils seront utilisés plus tard dans le processus.
+3. Copiez **l’ID d’espace de travail** et la clé **d’espace de travail** et enregistrez-les. Ils seront utilisés plus tard dans le processus.
 
     ![Image de l’intégration.](images/91b738e4b97c4272fd6d438d8c2d5269.png)
 
@@ -194,7 +194,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
@@ -222,7 +222,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     [Analyse rapide par rapport à l’analyse complète et à l’analyse personnalisée](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Pour plus d’informations, [voir Sécurité Windows’infrastructure de configuration.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Pour plus d’informations, voir [Sécurité Windows’infrastructure de configuration.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Image du volet de protection nouvelle génération2.](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -244,7 +244,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération 10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Ciblez la nouvelle stratégie anti-programme malveillant sur votre collection Windows, puis cliquez sur **OK.**
+4. Ciblez la nouvelle stratégie anti-programme malveillant sur Windows collection de programmes malveillants, puis cliquez sur **OK.**
 
      ![Image du volet de protection nouvelle génération 11.](images/configmgr-select-collection.png)
 
@@ -254,7 +254,7 @@ Après avoir terminé cette tâche, vous avez configuré Antivirus Windows Defen
 
 Le pilier de réduction de la surface d’attaque de Defender pour le point de terminaison inclut l’ensemble de fonctionnalités disponible sous Exploit Guard. Règles de réduction de la surface d’attaque (ASR), Accès contrôlé aux dossiers, Protection du réseau et Exploit Protection.
 
-Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans le Microsoft 365 Defender web. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
+Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans Microsoft 365 Defender portail. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
 
 Pour définir des règles de récupération de l’accès en mode audit :
 
@@ -300,23 +300,23 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports1.](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
-5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles asr.
+5. Cliquez sur chaque appareil pour obtenir les détails de configuration des règles de la asr.
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports2.](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-Pour [plus d’informations, voir](/microsoft-365/security/defender-endpoint/configure-machines-asr) Optimiser le déploiement et les détections de règles asr.
+Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-endpoint/configure-machines-asr) le déploiement et les détections de règles asr.
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection du réseau en mode audit
 
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
 
-    ![Capture d’écran System Center Configuration Manager1.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![Capture d’System Center Configuration Manager1.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Sélectionnez **Protection du réseau.**
 
 3. Définissez le paramètre sur **Audit et** cliquez sur **Suivant.**
 
-    ![Capture d’System Center Configuration Manager2.](images/c039b2e05dba1ade6fb4512456380c9f.png)
+    ![Capture d’écran System Center Configuration Manager2.](images/c039b2e05dba1ade6fb4512456380c9f.png)
 
 4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant.**
 
@@ -330,16 +330,15 @@ Pour [plus d’informations, voir](/microsoft-365/security/defender-endpoint/con
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-
 7. Sélectionnez la stratégie sur la collection de Windows nouvellement créée et choisissez **OK.**
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
-Après avoir effectué cette tâche, vous avez configuré correctement la Protection du réseau en mode audit.
+Après avoir effectué cette tâche, vous avez correctement configuré la Protection du réseau en mode audit.
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Pour définir des règles d’accès contrôlé aux dossiers en mode Audit
 
-1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
+1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la   >    >  **conformité Endpoint Protection**  >  **Windows Defender Exploit Guard,** puis choisissez Créer une stratégie **Exploit Guard.**
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

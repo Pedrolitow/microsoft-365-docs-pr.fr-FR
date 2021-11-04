@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 prise en charge de l’intégration avec la configuration ServiceNow
+title: Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: c5d0bf57eb037bd19b9666f9b3684249986d8f2e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 28b156cc9f9062863868550f2aac216b8d92a403
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661770"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754198"
 ---
-# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 prise en charge de l’intégration avec la configuration ServiceNow
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Vue d’ensemble de l’intégration de la prise en charge Microsoft 365 avec la configuration ServiceNow
 
 **Microsoft 365 prise** en charge intégrée vous permet d’intégrer Microsoft 365 aide, de support et d’état du service à vos instances ServiceNow. Vous pouvez effectuer des recherches sur les problèmes connus et signalés par Microsoft, résoudre les incidents, effectuer des tâches à l’aide de solutions recommandées par Microsoft et, si nécessaire, faire appel au support technique de Microsoft.
 
-Pour la **Microsoft 365'application de prise** en charge de l’intégration à partir du magasin ServiceNow, allez dans [le servicenow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+Pour la Microsoft 365 **l’application de prise** en charge de l’intégration à partir du magasin ServiceNow, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## <a name="key-features"></a>Principales fonctionnalités
 

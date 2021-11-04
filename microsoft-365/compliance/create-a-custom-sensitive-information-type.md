@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e9b080d2837fc14c15987c774770b8bc5e9777eb
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264923"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754800"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -118,6 +118,18 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 12. Cliquez sur **Suivant**.
 13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
 14. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
+
+> [!NOTE]
+> Ces sits ne peuvent pas être copiés :
+> - Numéro de permis de conduire canada
+> - Numéro de permis de conduire de l’UE
+> - Numéro d’identification national de l’UE
+> - Numéro de passeport de l’UE
+> - Numéro de sécurité sociale de l’UE ou identification équivalente
+> - Numéro d’identification fiscale de l’UE
+> - Classification internationale des maladie (ICD-10-CM)
+> - Classification internationale des maladie (ICD-9-CM)
+> - Numéro de permis de conduire américain
 
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)

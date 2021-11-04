@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2534319ad890fbac20fa106216740f49eb5a3572
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170042"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756674"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle Microsoft Edge application
 
@@ -23,7 +23,7 @@ Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) d
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils Microsoft Manged Desktop vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Microsoft Manged Desktop web. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
+Pour migrer vos appareils Microsoft Manged Desktop vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Microsoft Manged Desktop. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
 Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Microsoft Manged Desktop déployer l’application selon les besoins pour les groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d'entreprise
 
@@ -43,7 +43,7 @@ Microsoft Manged Desktop a créé un ensemble de stratégies par défaut pour Mi
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge extensions
 
-La ligne de base de sécurité Microsoft Edge sur Microsoft Manged Desktop définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres gérer. 
+La ligne de base de sécurité Microsoft Edge sur Microsoft Manged Desktop définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres que vous gérez. 
 
 #### <a name="extension-installation-blocklist"></a>Liste de blocage d’installation d’extension
 **Valeur par défaut :** Tout
@@ -104,19 +104,22 @@ Nous vous déconseillons d’utiliser Flash en raison des risques de sécurité 
 
 **Valeur par défaut :** Désactivé
 
-Le gestionnaire des mots de passe est désactivé par défaut. Si cette fonctionnalité est activée, déposez une demande de support et nos ingénieurs de service peuvent activer le paramètre dans votre environnement. 
+Le gestionnaire des mots de passe est désactivé par défaut. Si vous souhaitez activer cette fonctionnalité, déposez une demande de support et nos ingénieurs de service peuvent activer le paramètre dans votre environnement.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Mode Internet Explorer dans Microsoft Edge
-Le mode Internet Explorer sur Microsoft Edge facilite l’utilisation de tous les sites dont votre organisation a besoin dans un seul navigateur. Il utilise le moteur de Chromium intégré pour les sites compatibles avec le moteur de rendu Chromium et utilise le moteur Trident MSHTML d’Internet Explorer 11 (IE11) pour les sites qui ne sont pas ou qui ont des dépendances sur les fonctionnalités d’Internet Explorer. [En savoir plus](/DeployEdge/edge-ie-mode) 
 
-Microsoft Manged Desktop active le mode Internet Explorer pour vos appareils par défaut 
+Le mode Internet Explorer sur Microsoft Edge facilite l’utilisation de tous les sites dont votre organisation a besoin dans un seul navigateur. Il utilise le moteur de Chromium intégré pour les sites compatibles avec le moteur de rendu Chromium et utilise le moteur Trident MSHTML d’Internet Explorer 11 (IE11) pour les sites qui ne sont pas ou qui ont des dépendances sur les fonctionnalités d’Internet Explorer. [Si vous souhaitez en savoir plus](/DeployEdge/edge-ie-mode)
+
+Microsoft Manged Desktop active le mode Internet Explorer pour vos appareils par défaut.
 
 #### <a name="internet-explorer-mode-integration"></a>Intégration du mode Internet Explorer
+
 **Valeur par défaut :** Mode Internet Explorer
 
 Par défaut, les appareils sont définies pour utiliser le mode Internet Explorer, mais vous pouvez les configurer pour ouvrir des sites dans une fenêtre Internet Explorer 11 autonome à la place. Pour modifier ce comportement, déposez une demande de support.
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Ajouter des sites à la liste Enterprise sites en mode d’accès
+
 Pour que les sites s’ouvrent en mode Internet Explorer, vous devez les inclure dans la [liste des Enterprise sites.](/DeployEdge/edge-ie-mode-sitelist) Il vous incombe de gérer et de déployer Enterprise liste des sites. Pour plus d’informations, voir [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Autres paramètres
@@ -146,7 +149,7 @@ Vous pouvez déployer n’importe Microsoft Edge paramètres non décrits préc�
 
 ### <a name="enabling-specific-chrome-extensions"></a>Activation d’extensions Chrome spécifiques
 
-Le modèle d’administration offre un paramètre pour déployer des extensions Chrome particulières avec Microsoft Intune. Vous pouvez le trouver dans les extensions > Microsoft Edge > configuration ordinateur **> autoriser l’installation d’extensions spécifiques.**
+Le modèle d’administration offre un paramètre pour déployer des extensions Chrome particulières avec Microsoft Intune. Vous pouvez le trouver dans configuration ordinateur **> Microsoft Edge > extensions > autoriser l’installation d’extensions spécifiques.**
 
 ### <a name="install-extensions-silently"></a>Installer les extensions en mode silencieux
 

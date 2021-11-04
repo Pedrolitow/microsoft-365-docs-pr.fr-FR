@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment créer et gérer des stratégies de revendication automatique qui attribuent automatiquement des licences à des utilisateurs pour certaines applications.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179678"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753492"
 ---
 # <a name="manage-auto-claim-policies"></a>Gérer les stratégies de revendication automatique
 
@@ -52,7 +52,7 @@ Par défaut, la fonctionnalité de stratégie de revendication automatique est d
 
 ### <a name="turn-on-auto-claim-policies"></a>Activer les stratégies de revendication automatique
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Au centre de la page, sélectionnez le **bouton Activer le paramètre.**
 
 ### <a name="turn-off-auto-claim-policies"></a>Désactiver les stratégies de revendication automatique
@@ -74,10 +74,10 @@ Lorsque vous créez une stratégie de revendication automatique, vous pouvez y a
 > [!NOTE]
 > Actuellement, vous ne pouvez créer qu’une seule stratégie de revendication automatique. Le nombre de stratégies que vous pouvez créer augmente à mesure que de plus en plus de produits peuvent utiliser cette fonctionnalité.
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez **Ajouter une stratégie.**
 3. Dans la page **Nom de cette stratégie de revendication** automatique, entrez un nom pour la stratégie, puis sélectionnez **Suivant**.
-4. Dans la page **Définir une application à** revendication automatique et un produit, sélectionnez une application et l’abonnement pour attribuer des licences.
+4. Dans la page Définir **une application à** revendication automatique et un produit, sélectionnez une application et l’abonnement pour attribuer des licences.
 5. Si vous souhaitez ajouter un produit de sauvegarde, sélectionnez Ajouter un produit de sauvegarde à cette **stratégie,** puis sélectionnez le produit dans la liste.
 6. Sélectionnez **Suivant**.
 7. Dans la page **Sélectionner des** applications, clear or select the boxes for the apps to exclude or include with the license, then select **Next**.
@@ -89,14 +89,14 @@ Lorsque vous créez une stratégie de revendication automatique, vous pouvez y a
 
 Lorsque vous désactiver une stratégie, plus aucun utilisateur ne peut demander de licences dans le cadre de cette stratégie. La modification n’affecte pas les utilisateurs qui ont déjà revendiqué des licences dans le cadre de cette stratégie.
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
-3. Dans le volet d’informations, sous **Activer** ou désactiver cette stratégie, cochez ou clearez la case.
+3. Dans le volet d’informations, sous **Activer** ou désactiver cette stratégie, cochez ou cochez la case.
 4. Sélectionnez **Enregistrer** pour fermer le volet d’informations.
 
 ## <a name="edit-the-policy-friendly-name"></a>Modifier le nom convivial de la stratégie
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
 3. Dans le volet d’informations, dans la section **Nom de la** stratégie, sélectionnez **Modifier.**
 4. Entrez un nouveau nom de stratégie, puis sélectionnez **Enregistrer.**
@@ -113,7 +113,7 @@ Lorsque vous supprimez un produit de sauvegarde, il n’est plus utilisé pour a
 
 ### <a name="add-a-backup-product"></a>Ajouter un produit de sauvegarde
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
 3. Dans le volet d’informations, en bas, sélectionnez Ajouter un produit **de sauvegarde à cette stratégie.**
     > [!NOTE]
@@ -123,7 +123,7 @@ Lorsque vous supprimez un produit de sauvegarde, il n’est plus utilisé pour a
 
 ### <a name="remove-a-backup-product"></a>Supprimer un produit de sauvegarde
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
 3. Dans le volet d’informations, en bas, sélectionnez **Supprimer un produit.**
 4. Dans le volet Supprimer **un produit** du volet stratégie, sélectionnez la zone de stratégie à supprimer, puis sélectionnez **Enregistrer.**
@@ -131,10 +131,9 @@ Lorsque vous supprimez un produit de sauvegarde, il n’est plus utilisé pour a
 
 ## <a name="change-the-assigning-apps-and-services"></a>Modifier les applications et services qui leur sont attribués
 
-Chaque produit est associé à une collection d’applications et de services.
-Pour chaque produit de votre stratégie de revendication automatique, vous pouvez spécifier les applications et services à inclure lorsqu’une licence est automatiquement attribuée à un utilisateur pour ce produit.
+Chaque produit est associé à une collection d’applications et de services. Pour chaque produit de votre stratégie de revendication automatique, vous pouvez spécifier les applications et services à inclure lorsqu’une licence est automatiquement attribuée à un utilisateur pour ce produit.
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
 3. Dans le volet d’informations, sous **Applications et services,** sélectionnez **Modifier.**
 4. Dans le volet Applications et  **services,** dans la zone de la zone produit, sélectionnez un seul produit ou tous les **produits.**

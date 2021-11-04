@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 498cd0c629d294a9b5c4e1501b60641a0deb484c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 47b53814ce3df8c2a8215705521169f27065b5a3
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335525"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753896"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Modèles de notifications sur la gestion des risques internes
 
 Les modèles d’avis de gestion des risques internes vous permettent d’envoyer automatiquement des messages électroniques aux utilisateurs lorsqu’un cas est créé pour les activités qui ont généré une correspondance de stratégie et une alerte confirmée. Pour la plupart des alertes qui génèrent des cas, les actions de l’utilisateur sont le résultat d’erreurs ou d’activités accidentelles sans intention malveillante. Les notifications servent de rappels simples aux utilisateurs pour qu’ils soient plus prudents, qu’ils fournissent des liens vers des informations pour la formation à l’actualisation ou vers des ressources de stratégie d’entreprise. Les avis peuvent constituer une partie importante de votre programme de formation sur la conformité interne et peuvent vous aider à créer une piste d’audit documentée pour les utilisateurs avec des activités à risque périodique.
 
-Créez des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis de rappel par courrier électronique pour les correspondances de stratégie dans le cadre du processus de résolution des cas. Les notifications peuvent uniquement être envoyées à l’adresse de messagerie de l’utilisateur associée au cas spécifique en cours de révision. Lorsque vous sélectionnez un modèle d’avis à appliquer à une correspondance de stratégie, vous pouvez choisir d’accepter les valeurs de champ définies dans le modèle ou de les réécrire si nécessaire.
+Créez des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis de rappel par courrier électronique pour les correspondances de stratégie dans le cadre du processus de résolution des cas. Les notifications peuvent uniquement être envoyées à l’adresse de messagerie de l’utilisateur associée au cas spécifique en cours de révision. Lorsque vous sélectionnez un modèle d’avis à appliquer à une correspondance de stratégie, vous pouvez choisir d’accepter les valeurs de champ définies dans le modèle ou d’en faire le choix.
 
 ## <a name="notice-templates-dashboard"></a>Tableau de bord des modèles d’avis
 
@@ -57,7 +57,7 @@ Pour créer un modèle de notification de gestion des risques internes, vous uti
 
 Pour créer un modèle d’avis de gestion des risques internes, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez l’onglet **Modèles de notification.**
 2. Sélectionnez **Créer un modèle de notification** pour ouvrir l’outil de création de notification.
 3. Dans la page **Créer un modèle d’avis,** complétez les champs suivants :
     - **Nom du modèle**: entrez un nom convivial pour l’avis. Ce nom apparaît dans la liste des notifications dans le tableau de bord de notification et dans la liste de sélection des notifications lors de l’envoi d’avis à partir d’un cas.
@@ -71,9 +71,9 @@ Pour créer un modèle d’avis de gestion des risques internes, complétez les 
 
 Pour mettre à jour un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez l’onglet **Modèles de notification.**
 2. Dans le tableau de bord de notification, sélectionnez le modèle de notification que vous souhaitez gérer.
-3. Dans la page Détails de l’avis, sélectionnez **Modifier**
+3. Dans la page détails de l’avis, sélectionnez **Modifier**
 4. Dans la page **Modifier,** vous pouvez modifier les champs suivants :
     - **Nom du modèle**: entrez un nouveau nom convivial pour l’avis. Ce nom apparaît dans la liste des notifications dans le tableau de bord de notification et dans la liste de sélection des notifications lors de l’envoi d’avis à partir d’un cas.
     - **Envoyer à partir de**: mettre à jour l’adresse e-mail de l’expéditeur pour l’avis. Cette adresse apparaît dans le champ **De :** dans toutes les notifications envoyées aux utilisateurs, sauf si elle est modifiée lors de l’envoi d’une notification à partir d’un cas.
@@ -86,7 +86,7 @@ Pour mettre à jour un modèle de notification de gestion des risques internes e
 
 Pour supprimer un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez l’onglet **Modèles d’avis** sur la gestion des risques internes. 
-2. Dans le tableau de bord de notification, sélectionnez le modèle de notification à supprimer.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Gestion** des risques internes et sélectionnez l’onglet **Modèles de notification.**
+2. Dans le tableau de bord de notification, sélectionnez le modèle d’avis à supprimer.
 3. Sélectionnez **l’icône** Supprimer dans la barre d’outils.
 4. Pour supprimer le modèle d’avis, sélectionnez **Oui** dans la boîte de dialogue de suppression. Pour annuler la suppression, sélectionnez **Annuler**.

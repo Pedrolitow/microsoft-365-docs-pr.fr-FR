@@ -3,19 +3,19 @@ title: Planifier les Sujets Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Découvrez comment planifier les Sujets Microsoft Viva.
-ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: b6dd9373a8bca8b5e3ff310abfe308f7599a4dd4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364578"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754338"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -24,7 +24,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
 - Quels SharePoint sites que vous souhaitez analyser pour les rubriques
-- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
+- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -40,7 +40,10 @@ Gardez à l’esprit que Topics Doit accéder aux sites et fichiers que vos util
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d'administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte par [la](set-up-topic-experiences.md)Sujets Microsoft Viva .
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte par [la Sujets Microsoft Viva](set-up-topic-experiences.md).
+
+> [!Important] 
+> Les rubriques analysent uniquement le contenu anglais.
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
@@ -71,7 +74,7 @@ Nous vous recommandons de créer un processus pour que les utilisateurs ou les g
 
 ### <a name="multi-geo"></a>Multi-Géo
 
-Si votre organisation a déployé [Microsoft 365 multigéogé,](/microsoft-365/enterprise/microsoft-365-multi-geo)Rubriques de Rubriques respecte la indépendance des données en veillant à ce que les données des rubriques sont toujours stockées dans l’emplacement géographique correct. Le centre de rubriques est mise en service dans l’emplacement central et le contenu de tous les emplacements géographiques y est traitée. Les rubriques découvertes qui en résultent sont stockées dans le même emplacement géographique que le contenu source. Si les données sources de la rubrique se déplacent entre les emplacements géographiques, les propriétés de rubrique correspondantes, telles que la description, se déplacent également.
+Si votre organisation a déployé [Microsoft 365 multigéogéal](/microsoft-365/enterprise/microsoft-365-multi-geo), Rubriques De Rubriques respecte la ité des données en veillant à ce que les données des rubriques sont toujours stockées dans l’emplacement géographique correct. Le centre de rubriques est mise en service dans l’emplacement central et le contenu de tous les emplacements géographiques y est traitée. Les rubriques découvertes qui en résultent sont stockées dans le même emplacement géographique que le contenu source. Si les données sources de la rubrique se déplacent entre les emplacements géographiques, les propriétés de rubrique correspondantes, telles que la description, se déplacent également.
 
 ## <a name="user-permissions"></a>Autorisations utilisateur
 
@@ -98,7 +101,7 @@ Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, 
 
 *Visionneuses de rubriques*
 
-Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillez dans le contenu tel que SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu comme SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
 Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
@@ -117,7 +120,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le .csv doit contenir les paramètres suivants :
 
 - **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.

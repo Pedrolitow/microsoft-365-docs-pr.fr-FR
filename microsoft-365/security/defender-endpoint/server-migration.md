@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10932b96b205e3e73ba6e5363ed2acd301d9cef5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 48639d4d30a0cc95275fd0268381b53e60ee0708
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643217"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747373"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
@@ -104,15 +104,13 @@ CONSEIL : vous pouvez utiliser le [script d’installation](server-migration.md#
 
 *Ces étapes s’appliquent uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md)
 
-
-Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 : 
+Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 :
 
 Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protection avancée contre les menaces : ForceDefenderPassiveMode Type : REG_DWORD valeur : 0
 
 Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-
-## <a name="other-migration-scenarios"></a>Autres scénarios de migration 
+## <a name="other-migration-scenarios"></a>Autres scénarios de migration
 
 ### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-azure-defender-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>Vous disposez d’un serveur qui a été intégré à l’aide de Microsoft Defender for Endpoint basé sur MMA. ScEP est installé (Windows Server 2012 R2) ou Antivirus Microsoft Defender (Windows Server 2016). Cet ordinateur **n’est pas** géré via Azure Defender, Microsoft Endpoint Manager ou Microsoft Endpoint Configuration Manager.
 
@@ -140,10 +138,9 @@ Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to pa
 > [!TIP]
 > Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) pour automatiser les étapes 1 à 4. Pour activer le mode passif, appliquez l’indicateur -Passive qui garantit que l’Antivirus Defender passe en mode passif avant l’intégration et n’interfère pas avec une solution anti-programme malveillant non Microsoft. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge les fonctionnalités PEPT telles que PEPT Block, veillez à définir la clé de Registre « ForceDefenderPassiveMode ». EXEMPLE : `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-*Cette étape s’applique uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Nous vous recommandons d Antivirus Microsoft Defender, inclus dans Microsoft Defender pour Endpoint, pour fournir l’ensemble complet des fonctionnalités. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md) 
+*Cette étape s’applique uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Nous vous recommandons d Antivirus Microsoft Defender, inclus dans Microsoft Defender pour Endpoint, pour fournir l’ensemble complet des fonctionnalités. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md)
 
-
-Pour déplacer un ordinateur hors du mode passif, définissez la clé suivante sur 0 : 
+Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 :
 
 Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protection avancée contre les menaces : ForceDefenderPassiveMode Type : REG_DWORD valeur : 0
 

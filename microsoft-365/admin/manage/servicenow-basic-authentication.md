@@ -1,5 +1,5 @@
 ---
-title: Configurer l’intégration de la prise en charge avec l’authentification de base ServiceNow
+title: Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 4aefd0afa21b3fbb80aa318fbac7b30cf374d924
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bd19e5fd72e2b21c7ec08e00497444475701817c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60701272"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754252"
 ---
-# <a name="configure-support-integration-with-servicenow-basic-authentication"></a>Configurer l’intégration de la prise en charge avec l’authentification de base ServiceNow
+# <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 
 ## <a name="prerequisites-basic-authentication"></a>Conditions préalables (Authentification de base)
 
@@ -32,7 +32,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en **charg
 
 1. \[AAD Admin \] Create AAD Application under your Microsoft 365 tenant.
 
-    1. Connectez-vous au portail Azure avec vos informations d’identification Microsoft 365 client et allez à la [page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) Inscriptions de l’application pour créer une application.
+    1. Connectez-vous au portail Azure à l’Microsoft 365 vos informations d’identification client et allez sur la [page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) d’inscription de l’application pour créer une application.
 
     1. Sélectionnez les comptes dans cet annuaire d’organisation **uniquement ({Microsoft-365-tenant-name} uniquement – Client unique)** et sélectionnez **Enregistrer**.
 
@@ -103,7 +103,7 @@ Si votre entreprise limite l’accès à Internet avec vos propres stratégies, 
 - 20.105.151.142
 
 > [!NOTE]
-> Cette commande terminal répertorie toutes les IPS actives du service pour l Microsoft 365 prise en charge :`nslookup`` connector.rave.microsoft.com`
+> Cette commande terminal répertorie toutes les IP actives du service pour Microsoft 365 l’intégration de la prise en charge :`nslookup`` connector.rave.microsoft.com`
 
 ## <a name="configure-the-microsoft-365-support-integration-application"></a>Configurer l’application Microsoft 365 prise en charge de l’intégration
 

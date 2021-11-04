@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47840e7de14f48a4ae6fee5c134d432accb27e4c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662617"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754482"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -93,7 +93,7 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 - **Heure détectée :** sélectionnez les dates de début et de fin de la création de l’alerte. Ce filtre recherche les alertes entre 00:00 UTC à la date de début et 00:00 UTC à la date de fin. Pour filtrer les alertes pour un jour spécifique, entrez la date du jour dans le champ **Date** de début et la date du jour suivant dans le champ **Date de** fin.
 - **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
-## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche dans le tableau de bord d’alerte
+## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche sur le tableau de bord d’alerte
 
 Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande **Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
@@ -103,7 +103,7 @@ Cela peut permettre aux analystes et aux enquêteurs de faire disparaître immé
 
 Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
 2. Dans le tableau **de bord Alertes,** sélectionnez  l’alerte (ou les alertes) avec l’état De révision des besoins que vous souhaitez ignorer.
 3. Dans la barre de commandes Alertes, sélectionnez **Ignorer les alertes.**
 4. Dans le volet Détails Ignorer les **alertes,** vous pouvez passer en revue les détails de l’utilisateur et de la stratégie associés aux alertes sélectionnées.
@@ -113,9 +113,9 @@ Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
 Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a> **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
-3. Dans la **page** des détails de l’alerte, vous pouvez passer en revue les informations sur l’alerte et vous pouvez confirmer l’alerte et créer un nouveau cas, confirmer l’alerte et l’ajouter à un cas existant, ou pour ignorer l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
+3. Dans la **page** détails de l’alerte, vous pouvez passer en revue les informations sur l’alerte et vous pouvez confirmer l’alerte et créer un nouveau cas, confirmer l’alerte et l’ajouter à un cas existant, ou pour faire disparaître l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
 
     Les onglets de la page **détails de l’alerte** fournissent plus d’informations pour l’alerte :
     - **Résumé :** Cet onglet contient des informations générales sur l’alerte.
@@ -153,7 +153,7 @@ Utilisez les filtres d’étendue activité et d’informations sur les risques 
 
 Pour utiliser **l’Explorateur d’activités,** complétez les étapes suivantes :
 
-1. Dans la Centre de conformité Microsoft 365, **sélectionnez** l’onglet **Alertes** sur la gestion des risques internes.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a> **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet Détails des alertes,** **sélectionnez Ouvrir en vue étendue.**
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités.**
@@ -162,20 +162,20 @@ Lors de l’examen des activités dans l’Explorateur d’activités, les enqu�
 
 Lorsque vous sélectionnez les événements d’une activité dans la chronologie de l’activité, le nombre d’activités affichées dans l’explorateur peut ne pas correspondre au nombre d’événements d’activité répertoriés dans la chronologie. Voici quelques exemples de la raison pour laquelle cette différence peut se produire :
 
-- **Détection d’exfiltration** cumulative : la détection d’exfiltration cumulative analyse les journaux des événements, mais applique un modèle qui inclut la déplicatation d’activités similaires pour calculer le risque d’exfiltration cumulé. En outre, il peut également y avoir une différence dans le nombre d’activités affichées dans l’Explorateur d’activités si vous avez apporté des modifications à votre stratégie ou paramètres existants. Par exemple, si vous modifiez des domaines autorisés/non autorisés ou ajoutez de nouvelles exclusions de types de fichiers après la création d’une stratégie et l’établissement de correspondances d’activité, les activités de détection d’exfiltration cumulatives diffèrent des résultats avant la modification de la stratégie ou des paramètres. Les totaux cumulés de l’activité de détection d’exfiltration sont basés sur la configuration de la stratégie et des paramètres au moment du calcul et n’incluent pas les activités antérieures à la stratégie et aux modifications de paramètres
+- **Détection d’exfiltration** cumulative : la détection d’exfiltration cumulative analyse les journaux des événements, mais applique un modèle qui inclut la déplicatation d’activités similaires pour calculer le risque d’exfiltration cumulé. En outre, il peut également y avoir une différence dans le nombre d’activités affichées dans l’Explorateur d’activités si vous avez apporté des modifications à votre stratégie ou paramètres existants. Par exemple, si vous modifiez des domaines autorisés/non autorisés ou ajoutez de nouvelles exclusions de types de fichiers après la création d’une stratégie et que des correspondances d’activité se sont produites, les activités de détection d’exfiltration cumulatives diffèrent des résultats avant la modification de la stratégie ou des paramètres. Les totaux cumulés de l’activité de détection d’exfiltration sont basés sur la configuration de la stratégie et des paramètres au moment du calcul et n’incluent pas les activités antérieures à la stratégie et aux modifications de paramètres
 - **Courriers électroniques envoyés** à des destinataires externes : un score de risque est attribué à l’activité des e-mails envoyés à des destinataires externes en fonction du nombre d’e-mails envoyés, ce qui peut ne pas correspondre aux journaux des événements d’activité.
 
 ![Détails de l’explorateur des activités de gestion des risques internes.](../media/insider-risk-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
+Lorsque l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a> **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le **tableau de bord Alertes,** sélectionnez l’alerte pour qui vous souhaitez confirmer et créer un cas.
 3. Dans le **volet d’informations Alertes,** sélectionnez **Actions** Confirmer les  >  **alertes & créer un cas.**
 4. Dans la **boîte de** dialogue Confirmer l’alerte et créer un cas de risque interne, entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que contributeurs et ajoutez des commentaires le cas échéant. Les commentaires sont automatiquement ajoutés au cas en tant que note de cas.
-5. Sélectionnez **Créer un cas** pour  créer un cas ou annuler pour fermer la boîte de dialogue sans créer de cas.
+5. Sélectionnez **Créer un cas** pour créer un nouveau cas ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de cas.
 
 Une fois le cas créé, les enquêteurs et les analystes peuvent gérer le cas et agir sur celui-ci. Pour plus d’informations, consultez l’article sur la gestion des [risques internes.](insider-risk-management-cases.md)
 
@@ -187,9 +187,9 @@ L’examen, l’examen et l’action sur les alertes de risques internes sont de
 
 Être submergé par le nombre d’alertes produites par vos stratégies de gestion des risques internes peut être frustrant. Le nombre d’alertes peut être traité rapidement en plusieurs étapes simples, en fonction des types de volume d’alertes que vous recevez. Il se peut que vous receviez trop d’alertes valides ou que vous en receviez trop. Envisagez d’agir comme suit :
 
-- **Ajustez vos stratégies** de risques internes : la sélection et la configuration de la stratégie de risque interne correcte est la méthode la plus simple pour traiter le type et le volume des alertes. En commençant par le modèle [de stratégie approprié,](insider-risk-management-policies.md#policy-templates) vous pouvez vous concentrer sur les types d’activités et d’alertes à risque que vous verrez. Les autres facteurs qui peuvent avoir un impact sur le volume des alertes sont la taille de l’utilisateur et des groupes dans l’étendue, ainsi que le contenu et les canaux qui sont classés [par ordre de priorité.](insider-risk-management-policies.md#prioritize-content-in-policies) Envisagez d’ajuster les stratégies pour affiner ces domaines sur ce qui est le plus important pour votre organisation.
-- **Modifier vos paramètres de** risques internes : les paramètres des risques internes incluent un large éventail d’options de configuration qui peuvent avoir un impact sur le volume et les types d’alertes que vous recevrez. Il s’agit notamment des [paramètres des indicateurs de stratégie,](insider-risk-management-settings.md#indicators)des [seuils d’indicateurs](insider-risk-management-settings.md#indicator-level-settings-preview)et des délais [de stratégie.](insider-risk-management-settings.md#policy-timeframes) Envisagez de configurer des options de détection intelligente pour exclure des types de fichiers [spécifiques,](insider-risk-management-settings.md#intelligent-detections) définir des seuils minimaux avant que les alertes d’activité soient signalées par vos stratégies et modifier la configuration du volume d’alertes à un paramètre inférieur.
-- **Suppression en bloc** d’alertes le cas échéant : cela peut permettre à vos analystes et enquêteurs de faire immédiatement disparaître plusieurs [alertes](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) en même temps. Vous pouvez sélectionner jusqu’à 400 alertes à ignorer en même temps.
+- **Ajustez vos stratégies** de risques internes : la sélection et la configuration de la stratégie de risque interne correcte est la méthode la plus simple pour traiter le type et le volume des alertes. En commençant par le modèle [de stratégie approprié,](insider-risk-management-policies.md#policy-templates) vous pouvez vous concentrer sur les types d’activités et d’alertes à risque que vous verrez. Les autres facteurs qui peuvent avoir un impact sur le volume des alertes sont la taille de l’utilisateur et des groupes dans l’étendue, ainsi que le contenu et les canaux qui [sont priorisés.](insider-risk-management-policies.md#prioritize-content-in-policies) Envisagez d’ajuster les stratégies pour affiner ces domaines sur ce qui est le plus important pour votre organisation.
+- **Modifier vos paramètres de** risques internes : les paramètres des risques internes incluent un large éventail d’options de configuration qui peuvent avoir un impact sur le volume et les types d’alertes que vous recevrez. Il s’agit notamment des [paramètres des indicateurs de stratégie,](insider-risk-management-settings.md#indicators)des [seuils d’indicateurs](insider-risk-management-settings.md#indicator-level-settings-preview)et des délais [de stratégie.](insider-risk-management-settings.md#policy-timeframes) Envisagez de configurer des options de détection intelligente pour exclure des types de fichiers [spécifiques,](insider-risk-management-settings.md#intelligent-detections) définir des seuils minimaux avant que les alertes d’activité ne soient signalées par vos stratégies et modifier la configuration du volume d’alertes à un paramètre inférieur.
+- **Suppression en bloc des alertes** le cas échéant : cela peut permettre à vos analystes et enquêteurs de faire immédiatement disparaître plusieurs [alertes](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) à la fois. Vous pouvez sélectionner jusqu’à 400 alertes à ignorer en même temps.
 
 ### <a name="not-familiar-with-the-alert-triage-process"></a>Peu familiarisé avec le processus de tri des alertes
 
@@ -206,4 +206,4 @@ Les utilisateurs de l’espace de travail moderne ont souvent un large éventail
 
 - **Concentrez d’abord les efforts de l’analyste et des enquêteurs sur les alertes à risque le plus élevé.** Selon vos stratégies, vous pouvez capturer des activités et générer des alertes avec différents degrés d’impact potentiel sur vos efforts de prévention des risques. [Filtrez les alertes](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) par gravité et hiérarchisez *les alertes de gravité* élevée.
 - **Affectez des utilisateurs en tant qu’analystes et enquêteurs.** Le fait que l’utilisateur approprié soit affecté aux rôles appropriés est une partie importante du processus de révision des alertes de risque internes. Assurez-vous que vous avez affecté les utilisateurs appropriés aux groupes de rôles *Analystes* de gestion des risques internes et *Enquêteurs* de gestion des risques internes.  
-- **Utilisez les fonctionnalités de risques internes automatisés pour découvrir les activités** à risque le plus élevé. La détection de [séquences de](insider-risk-management-policies.md#sequence-detection-preview) gestion des risques internes et les fonctionnalités de détection [d’exfiltration](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) cumulée peuvent vous aider à découvrir rapidement les risques plus difficiles à trouver dans votre organisation. Pensez à affiner vos scores de [risque,](insider-risk-management-settings.md#indicators)les [exclusions](insider-risk-management-settings.md#file-type-exclusions)de types de fichiers, les domaines et les [paramètres](insider-risk-management-settings.md#domains)de seuil d’indicateur minimum pour vos stratégies. [](insider-risk-management-settings.md#indicator-level-settings-preview)
+- **Utilisez les fonctionnalités de risques internes automatisés pour découvrir les activités** à risque le plus élevé. La détection [](insider-risk-management-policies.md#sequence-detection-preview) de séquences de gestion des risques internes et les fonctionnalités de détection [d’exfiltration](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) cumulatives peuvent vous aider à détecter rapidement les risques plus difficiles à trouver dans votre organisation. Pensez à affiner vos scores de [risque,](insider-risk-management-settings.md#indicators)les [exclusions](insider-risk-management-settings.md#file-type-exclusions)de types de fichiers, les domaines et les [paramètres](insider-risk-management-settings.md#domains)de seuil d’indicateur minimum pour vos stratégies. [](insider-risk-management-settings.md#indicator-level-settings-preview)

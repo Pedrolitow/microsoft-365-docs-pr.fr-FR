@@ -26,15 +26,17 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Stratégies d’accès à SharePoint Online recommandées
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: Stratégies MCAS recommandées pour les applications SaaS
+        - name: Stratégies de sécurité des applications cloud pour les applications SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
+        - name: Évaluation continue de l'accès
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
     - name: Microsoft 365 Defender
       href: ./defender/index.yml
     - name: Microsoft Defender pour Office 365
       href: ./office-365-security/index.yml
     - name: Microsoft Defender pour point de terminaison
       href: ./defender-endpoint/index.yml
-    - name: Microsoft Defender pour l’identité
+    - name: "Microsoft\_Defender pour l’identité"
       href: /defender-for-identity
     - name: Microsoft 365 pour entreprise
       href: ../enterprise/index.yml

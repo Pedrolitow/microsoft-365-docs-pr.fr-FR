@@ -18,16 +18,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2c866f6b7cd5c357c7b11db22ef5ecc10a0818ed
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8cb7e42af129185b2c9c8d7f9c864388661547f3
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556255"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755826"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 L’analyseur client produit un rapport au format HTML. Découvrez comment consulter le rapport pour identifier les problèmes potentiels de capteur afin de pouvoir les résoudre.

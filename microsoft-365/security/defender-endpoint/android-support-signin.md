@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7868b57b03a237a3cd65841040ee741b2cdd0c12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194308"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753182"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ Cet article fournit des solutions pour vous aider à résoudre les problèmes d'
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
 
-**Échec de la signature : erreur** *inattendue, essayez plus tard*
+**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
 
 :::image type="content" alt-text="Image de l’erreur d’échec de la signature. Erreur inattendue." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
@@ -54,7 +54,7 @@ Une version antérieure de l’application « Microsoft Authenticator » est ins
 
 **Solution :**
 
-Installer la dernière version et [les](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) Microsoft Authenticator à partir de Google Play Store et essayer à nouveau
+Installez la dernière version et les [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) à partir de Google Play Store et essayez à nouveau.
 
 ## <a name="sign-in-failed---invalid-license"></a>Échec de la signature - Licence non valide
 
@@ -66,7 +66,7 @@ Installer la dernière version et [les](https://play.google.com/store/apps/detai
 
 **Cause :**
 
-Vous n’avez pas Microsoft 365 licence attribuée ou votre organisation n’en a pas pour Microsoft 365 Entreprise abonnement.
+Vous n’avez pas Microsoft 365 licence attribuée ou votre organisation n’a pas de licence pour Microsoft 365 Entreprise abonnement.
 
 **Solution :**
 
@@ -82,9 +82,9 @@ Les sites web de hameçonnage usurpent l’identité de sites web dignes de conf
 
 - **Érmi**
 
-L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
+L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils Android. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
 
-![Image du site signalée comme non sûre.](images/0c04975c74746a5cdb085e1d9386e713.png)
+![Image du site signalé comme dangereux.](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 **Cause :**
 
@@ -110,7 +110,7 @@ Defender App demande l’autorisation Optimisation de la batterie/Protection per
 
 **Cause :**
 
-Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
+Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
 
 **Solution :**
 
@@ -141,7 +141,7 @@ Revenir à l’écran d’intégration du point de terminaison Microsoft Defende
 
 ## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
 
-Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic.** Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
+Si un utilisateur est confronté à un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic**. Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
 
 1.  Ouvrez **l’application MDE** sur votre appareil et cliquez sur l’icône **de profil** dans le coin supérieur gauche.
 

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1618d77a81888fe9076d00124cef770e81810836
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702402"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756970"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -51,6 +51,12 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour l’identité](/defender-for-identity/whats-new)
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+
+## <a name="october-2021"></a>Octobre 2021
+
+- [Amélioration avancée de la distribution DKIM](configure-advanced-delivery.md): prise en charge supplémentaire de l’entrée de domaine DKIM dans le cadre de la configuration de simulation de hameçonnage tierce.
+- [Sécurisé par défaut :](secure-by-default.md)sécurisé étendu par défaut Exchange règles de flux de messagerie (également appelées règles de transport).
+
 ## <a name="september-2021"></a>Septembre 2021
 
 - [Amélioration de l’expérience de rapport dans Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
@@ -60,7 +66,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - D’autres nouvelles fonctionnalités mises en quarantaine sont décrites dans ce billet de blog : Simplification de l’expérience de mise [en quarantaine.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)
 - La redirection du portail commence par défaut, redirigeant les utilisateurs de la sécurité & conformité vers Microsoft 365 Defender <https://security.microsoft.com> . Pour plus d’informations à ce sujet, voir : [Redirection](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - [Révision de l’administrateur pour les messages](admin-review-reported-message.md)signalés : les administrateurs peuvent désormais renvoyer des messages de modèle aux utilisateurs finaux après avoir passé en revue les messages signalés. Les modèles peuvent être personnalisés pour votre organisation et basés sur le verdict de votre administrateur.
 - [Ajouter des allows](manage-tenant-allows.md)dans la liste d’adresses client autoriser/bloquer : vous pouvez désormais ajouter des entrées d’autoriser à la liste d’adresses client autoriser/bloquer si le message bloqué a été envoyé dans le cadre du processus de soumission de l’administrateur. Selon la nature du bloc, l’URL envoyée, le fichier et/ou l’expéditeur sont ajoutés à la liste d’adresses client autoriser/bloquer. Dans la plupart des cas, les autoriser sont ajoutés pour donner au système un peu de temps et l’autoriser naturellement si cela est justifié. Dans certains cas, Microsoft gère l’autoriser pour vous.
@@ -96,9 +102,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2

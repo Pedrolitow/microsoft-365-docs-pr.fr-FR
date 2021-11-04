@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer SAP SuccessFactors en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: 8e5c8c920934883dec9cd020fbb97a87e546c38c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703034"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747265"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>Configurer SAP SuccessFactors en tant que source de contenu pour Apprentissage Microsoft Viva
 
@@ -56,9 +56,9 @@ Cet article vous montre comment configurer SAP SuccessFactors en tant que source
     - peut être « false » ou « true ». Définissez-la sur « true » pour activer l’extraction du partenaire.
         - partners1.enabled=
     
-    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    [![Image des paramètres PARTNER_EXTRACT configuration. ](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
-Une fois que vous avez effectué ces étapes dans le portail SuccessFactors, vous devez terminer l’installation dans le Centre d'administration Microsoft 365.
+Une fois ces étapes effectuées dans le portail SuccessFactors, vous devez terminer l’installation dans le Centre d'administration Microsoft 365.
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurer dans votre Centre d'administration Microsoft 365
 
@@ -67,11 +67,11 @@ Une fois que vous avez effectué ces étapes dans le portail SuccessFactors, vou
 
 1. Accédez à [votre Centre d'administration Microsoft 365](https://admin.microsoft.com).
 
-2. Accédez aux  >  **Paramètres’organisation.** Recherchez *Des Learning* Et activez SAP SuccessFactors à partir des options.
+2. Accédez aux  >  **Paramètres’organisation.** Recherchez *Learning* et activez SAP SuccessFactors à partir des options.
 
 3. Remplissez les détails de configuration :
 
-    **Nom complet**: entrez le nom complet souhaité pour le carrousel SAP SuccessFactors.
+    **Nom d’affichage**: entrez le nom complet souhaité pour le carrousel SAP SuccessFactors.
 
     **URL d’hôte SFTP**: accédez à **LMS Admin Application**  >  **System Administration** Configuration System  >    >  **Configuration**  >  **CONNECTORS**. Obtenir la valeur de la `connector.ftp.server` propriété.
 
@@ -79,7 +79,7 @@ Une fois que vous avez effectué ces étapes dans le portail SuccessFactors, vou
 
     **Mot de** passe : entrez votre mot de passe. Consultez le propriétaire de votre application LMS pour obtenir de l’aide sur la récupération de votre mot de passe.
 
-    **Chemin d’accès** au dossier : accédez à configuration du système de configuration du système d’administration des applications d’administration   >    >    >    >  **LMS PARTNER_EXTRACT**. Obtenir la valeur de la `defaultFtp.path` propriété.
+    **Chemin d’accès** au dossier : accédez à configuration du système de configuration du système d’administration d’application d’administration   >    >    >    >  **LMS PARTNER_EXTRACT**. Obtenir la valeur de la `defaultFtp.path` propriété.
 
     URL hôte du client : il **s’agit** de l’URL de domaine BizX. Vous pouvez l’obtenir à partir de votre URL de connexion BizX. Par exemple, si votre URL de connexion BizX `organization.successfactors.com/sf/start/#/login` est l’URL d’hôte est `organization.successfactors.com` .
 
@@ -87,17 +87,21 @@ Une fois que vous avez effectué ces étapes dans le portail SuccessFactors, vou
 
     **Clé privée PGP**: clé privée PGP pour le déchiffrement, qui est la section complète entre BEGIN PGP PRIVATE KEY BLOCK et END PGP PRIVATE KEY BLOCK. Vous devez copier la clé exactement telle qu’elle a été générée . ne supprimez pas les nouveaux caractères de ligne.
 
-    Phrase clé privée **PGP**: vous devez obtenir cette valeur auprès de votre administrateur informatique ou de l’équipe qui fournit votre clé PGP.
+    **Phrase clé privée PGP**: vous devez obtenir cette valeur auprès de votre administrateur informatique ou de l’équipe qui fournit votre clé PGP.
 
-    **ID de société**: connectez-vous à votre portail SuccessFactors. Sélectionnez votre icône de profil, puis **sélectionnez Afficher la version Paramètres**. Vous pouvez afficher votre ID d’entreprise ici.
+    **ID d’entreprise**: connectez-vous à votre portail SuccessFactors. Sélectionnez votre icône de profil, puis **sélectionnez Afficher la version Paramètres**. Vous pouvez afficher votre ID d’entreprise ici.
+
+    ![Image de l’icône de profil avec Afficher la version Paramètres sélectionnée.](../media/learning/sf-3.png)
+        
+    ![Image du volet Paramètres de version.](../media/learning/sf-1.png)
 
 4. Sélectionnez **Enregistrer** pour activer le contenu SuccessFactors dans Apprentissage Microsoft Viva. Il peut y avoir un délai avant que le contenu ne soit disponible dans Learning.
 
 >[!Note]
-> Les cours SuccessFactors commenceront à apparaître dans Le Learning Dans les 7 jours suivant la réussite de l’installation.
+> Les cours SuccessFactors commenceront à apparaître dans Learning dans les 7 jours suivant la réussite de l’installation.
 
 >[!Note]
-> Tous les utilisateurs d’une organisation pourront découvrir tous les cours spécifiques au client, mais ils pourront uniquement accéder aux cours qu’ils ont accès et y accéder. La découverte de contenu spécifique à l’utilisateur est prévue pour les prochaines sorties.
+> Tous les utilisateurs au sein d’une organisation pourront découvrir tous les cours spécifiques au client, mais ils pourront uniquement accéder aux cours qu’ils ont accès et y utiliser. La découverte de contenu spécifique à l’utilisateur est prévue pour les prochaines sorties.
 
 >[!NOTE]
 >Les métadonnées du client sont stockées de manière centralisée dans nos magasins de données et non dans des magasins de données spécifiques à la région.

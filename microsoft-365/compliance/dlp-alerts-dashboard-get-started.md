@@ -19,17 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Prise en charge de la définition et de la gestion des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151097"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747341"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Prise en main du tableau de bord des alertes de protection contre la perte de données
 
-Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le tableau de bord de gestion des alertes [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
+Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le tableau de bord de gestion des alertes [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
 
 Si vous débutez avec les alertes DLP, vous devez consulter le tableau de bord des alertes de protection [contre la perte de données.](dlp-alerts-dashboard-learn.md)
 
@@ -53,16 +54,16 @@ La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les
 - Office 365 (E5)
 - Ajout de conformité avancée (E5)
 - Microsoft 365 E5/A5 Protection de l’information et Gouvernance
-- Conformité microsft 365 E5/A5
+- Conformité Microsoft 365 E5/A5
 
 ### <a name="licensing-for-alert-configuration-options"></a>Gestion des licences pour les options de configuration des alertes
 
 **Configuration** d’alerte à événement unique : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
 
-**Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez avoir l’une de ces configurations de licence :
+**Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez l’une de ces configurations de licence :
 
 - Un abonnement E5 ou G5
-- Un abonnement E1, F1 ou G1 ou E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
+- Un abonnement E1, F1 ou G1, ou un abonnement E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
     - Office 365 – Protection avancée contre les menaces Plan 2
     - Microsoft 365 E5 Conformité
     - Microsoft 365 licence de modules de découverte électronique et d’audit
@@ -115,7 +116,7 @@ Si votre organisation est titulaire d’une licence pour les options de configur
 
 Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://www.compliance.microsoft.com)allez à **Protection contre la perte de données.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Protection contre la perte de données.**
 2. Sélectionnez **l’onglet Alertes** pour afficher le tableau de bord des alertes DLP.
 3. Sélectionnez une alerte pour voir les détails :
 
@@ -130,7 +131,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
 6. Sélectionnez **l’onglet Événements** pour accéder aux :
     1. contenu impliqué
     1. types d’informations sensibles qui correspondent
-    1. metadata
+    1. métadonnées
 
 7. Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance, le nombre et le contenu qui correspond au type d’informations sensibles.
 

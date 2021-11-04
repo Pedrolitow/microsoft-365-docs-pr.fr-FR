@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: ce8f931f0d400c967b3312fe6cfafcadb3a715c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181234"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755372"
 ---
 # <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
 
@@ -38,15 +38,15 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurer le fournisseur de ressources requis dans l’abonnement Event Hub
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-1. Select **Subscriptions** \> { Select the subscription the event hub will be ***deployed to***} Resource \> **providers**.
+1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Select **Subscriptions**  >  **{ Select the subscription the event hub will be deployed to }** Resource  >  **providers**.
 1. Vérifiez que **le fournisseur Microsoft.Informations** est enregistré. Sinon, inscrivez-le.
 
 ![Image des fournisseurs de ressources dans Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>Configurer l’Azure Active Directory’application
 
-> ! [REMARQUE] Vous devez avoir le rôle Administrateur ou Azure Active Directory (AAD) doit être définie pour autoriser les non-administrateurs à inscrire des applications. Vous devez également avoir un rôle Propriétaire ou Administrateur d’accès utilisateur pour attribuer un rôle au principal de service. Pour plus d’informations, voir Créer une application Azure AD & principal de service dans le [portail - Plateforme d'identités Microsoft Documents \| Microsoft](/azure/active-directory/develop/howto-create-service-principal-portal).
+> ! [REMARQUE] Vous devez avoir un rôle d’administrateur ou Azure Active Directory (AAD) doit être définie pour autoriser les non-administrateurs à inscrire des applications. Vous devez également avoir un rôle Propriétaire ou Administrateur d’accès utilisateur pour attribuer un rôle au principal de service. Pour plus d’informations, voir Créer Azure AD application & principal de service dans le [portail - Plateforme d'identités Microsoft Documents \| Microsoft.](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 1. Créez une nouvelle inscription (qui crée  par nature un principal de service) dans \> **Azure Active Directory’application Nouvelle** \> **inscription.**
 
@@ -63,7 +63,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 > [!WARNING]
 > **Vous ne pourrez plus accéder à la secret client, veillez donc à l’enregistrer.**
 
-## <a name="set-up-event-hub-namespace"></a>Configurer l’espace de noms Hub d’événements
+## <a name="set-up-event-hub-namespace"></a>Configurer l’espace de noms Event Hub
 
 1. Créez un espace de noms Event Hub :
 
@@ -80,7 +80,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 
 1. Une fois l’espace de noms Hub d’événements créé, vous devez ajouter le principal du service d’inscription d’application en tant que lecteur, récepteur de données Azure Event Hubs et utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur (vous pouvez également le faire au niveau du groupe de ressources ou de l’abonnement).
 
-    Pour ce faire, accédez à **Event Hubs Namespace** \> **Access Control (IAM)** Add \>  and verify under Role **assignments**:
+    Pour ce faire, dans event **Hubs Namespace** \> **Access Control (IAM),** ajoutez et vérifiez sous \>  **Attributions de rôles**:
 
     ![Image du contrôle d’accès.](../../media/9c9c29137b90d5858920202d87680d16.png)
 
@@ -99,7 +99,7 @@ Dans cette option, Microsoft 365 Defender créera des Hubs d’événements pour
 > [!NOTE]
 > Si vous utilisez un espace de  noms Event Hub qui ne fait pas partie d’un cluster Event Hub, vous ne pourrez choisir que jusqu’à 10 types d’événements (Tables) à exporter dans chaque Paramètres d’exportation que vous définissez, en raison d’une limite Azure de 10 hubs d’événements par espace de noms Event Hub.
 
-Par exemple :
+Par exemple :
 
 ![Image de l’exemple de Hub d’événements.](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 
@@ -121,7 +121,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
 1. Connectez-vous Microsoft 365 Defender avec un compte qui répond à <https://security.microsoft.com> toutes les exigences de rôle suivantes :
 
-    - Rôle de collaborateur  au niveau de la ressource d’espace de noms du Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
+    - Rôle de collaborateur au niveau de la ressource d’espace de noms *du* Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
 
     - Rôle d’administrateur global ou d’administrateur de sécurité sur le client lié à Microsoft 365 Defender azure.
 
@@ -141,7 +141,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
     Si vous choisissez de laisser Microsoft 365 Defender créer des hubs d’événements par types d’événements (Tables) pour vous, laissez ce champ vide.
 
-    **Types** d’événements : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont issues de Microsoft Defender pour le point de terminaison (PEPT) et les tables e-mail sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
+    **Types d’événements**: sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont issues de Microsoft Defender pour le point de terminaison (PEPT) et les tables e-mail sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
 
     ![Image des paramètres de l’API de diffusion en continu.](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
 
@@ -160,7 +160,7 @@ EmailEvents
 |count
 ```
 
-Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints dans toutes les autres tables. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
+Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints à tous les autres tableaux. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
 
 ![Image de recherche avancée.](../../media/c305e57dc6f72fa9eb035943f244738e.png)
 

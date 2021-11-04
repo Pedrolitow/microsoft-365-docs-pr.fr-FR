@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 1692467ac882b563cedd51ad3770312ba883ccd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194500"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753528"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
-Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le nouveau tableau de bord de gestion des alertes DLP dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
+Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le nouveau tableau de bord de gestion des alertes DLP dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
 
 <!-- LEFT OFF HERE-->
 
@@ -37,7 +37,7 @@ Les stratégies de protection contre la perte de données (DLP) peuvent prendre 
 
 Les fonctionnalités suivantes en font partie :
 
--   **Tableau de bord de** gestion des alertes DLP : dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)ce tableau de bord affiche des alertes pour les stratégies DLP qui sont appliquées sur les charges de travail suivantes :
+-   **Tableau de bord de** gestion des alertes DLP : dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>ce tableau de bord affiche les alertes pour les stratégies DLP appliquées sur les charges de travail suivantes :
 
     -   Exchange
     -   SharePoint
@@ -58,17 +58,17 @@ Avant de commencer, assurez-vous que vous avez les conditions préalables néces
 
 Tous les locataires éligibles pour Office 365 DLP peuvent accéder au nouveau tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la Office 365 DLP pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour Office 365 DLP, voir [quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
 
-Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
+Les clients qui utilisent le point de terminaison [DLP](endpoint-dlp-learn-about.md) éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Gestion des licences pour les options de configuration des alertes
 
--   **Configuration** d’alerte à événement unique : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
--   **Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez avoir l’une des configurations suivantes :
-    -   Un abonnement E5 ou G5
-    -   Un abonnement E1, F1 ou G1 ou E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
-        -   Office 365 – Protection avancée contre les menaces Plan 2
-        -   Microsoft 365 E5 Conformité
-        -   Microsoft 365 licence de modules de découverte électronique et d’audit
+- **Configuration** d’alerte à événement unique : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
+- **Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez avoir l’une des configurations suivantes :
+  - Un abonnement E5 ou G5
+  - Un abonnement E1, F1 ou G1, ou un abonnement E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
+    - Office 365 – Protection avancée contre les menaces Plan 2
+    - Microsoft 365 E5 Conformité
+    - Microsoft 365 licence de modules de découverte électronique et d’audit
 
 ### <a name="roles"></a>Rôles
 
@@ -101,7 +101,7 @@ Si vous êtes éligible pour les options de [configuration](#licensing-for-alert
 
 Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
-1.  Dans la [Centre de conformité Microsoft 365,](https://www.compliance.microsoft.com)allez à **Protection contre la perte de données.**
+1.  Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Protection contre la perte de données.**
 
 2.  Sélectionnez **l’onglet Alertes** pour afficher le tableau de bord des alertes DLP.
 
@@ -110,8 +110,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
         :::image type="content" source="../media/alert-details.png" alt-text="Capture d’écran montrant les détails de l’alerte dans le tableau de bord de gestion des alertes DLP." border="false":::
 
-1.  Sélectionnez **l’onglet** Événements pour afficher tous les événements associés à l’alerte. Vous pouvez choisir un événement particulier pour afficher ses détails.
-    Le tableau suivant présente certains détails de l’événement.
+1.  Sélectionnez **l’onglet** Événements pour afficher tous les événements associés à l’alerte. Vous pouvez choisir un événement particulier pour afficher ses détails. Le tableau suivant présente certains détails de l’événement.
     
     | Catégorie          | Nom de la propriété                 | Description                                                                | Types d’événements applicables                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
@@ -124,14 +123,14 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |                   | Nom d'hôte                      | Nom d’hôte de l’ordinateur sur lequel la violation DLP a été détectée              | Événements d’appareils                           |
     |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
     |                   | File path                     | Chemin d’accès absolu du fichier impliqué dans la violation                        | SharePoint, OneDrive et appareils |
-    |                   | Destinataires d’un e-mail              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
+    |                   | Destinataires du courrier électronique              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
     |                   | Sujet de l’e-mail                 | Objet de l’e-mail qui a enfreint la stratégie DLP                          | Exchange événements                          |
     |                   | Pièces jointes             | Noms des pièces jointes dans l’e-mail qui ont enfreint la stratégie DLP         | Exchange événements                          |
     |                   | Propriétaire du site                    | Nom du propriétaire du site                                                     | SharePoint et OneDrive événements           |
     |                   | URL du site                      | URL complète du site SharePoint ou OneDrive site                                | SharePoint et OneDrive événements           |
     |                   | Fichier créé                  | Heure de création du fichier                                                      | SharePoint et OneDrive événements           |
     |                   | Fichier de la dernière modification            | Heure de la dernière modification du fichier                                  | SharePoint et OneDrive événements           |
-    |                   | Taille des fichiers                     | Taille du fichier                                                           | SharePoint et OneDrive événements           |
+    |                   | La taille des fichiers                     | Taille du fichier                                                           | SharePoint et OneDrive événements           |
     |                   | Propriétaire du fichier                    | Propriétaire du fichier                                                          | SharePoint et OneDrive événements           |
     |*Détails de la stratégie*||
     |     | Stratégie DLP en correspondance            | Nom de la stratégie DLP qui a été correspondance                                    | Tous les événements                               |
@@ -143,7 +142,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     
 1.  Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance et le nombre.
 
-2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif** **,** En cours d’examen, Rejeté ou **Résolu**). Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
+2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif,** En cours d’examen, Rejeté ou **Résolu**).  Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
 
     -   Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion.**
     -   Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu.**

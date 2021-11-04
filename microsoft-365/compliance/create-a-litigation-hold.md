@@ -16,16 +16,16 @@ description: Découvrez comment placer une boîte aux lettres en attente pour li
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0bd436106f4bb5dedecd1008aeeb768887dbe599
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175346"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753128"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une attente pour litige
 
-Vous pouvez placer une boîte aux lettres en attente pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions d’origine des éléments modifiés. Lorsque vous placez une boîte aux lettres utilisateur en attente pour litige, le contenu de la boîte aux lettres d’archivage de l’utilisateur (s’il est activé) est également conservé. Lorsque vous créez une attente, vous pouvez spécifier une durée de la rétention (également appelée « attente basée sur le temps *)* afin que les éléments supprimés et modifiés soient conservés pendant une période spécifiée, puis supprimés définitivement de la boîte aux lettres. Vous pouvez également conserver le contenu indéfiniment (appelé « attente infinie *»* ou jusqu’à ce que la attente pour litige soit supprimée. Si vous spécifiez une période de attente, elle est calculée à partir de la date de réception d’un message ou de la création d’un élément de boîte aux lettres. 
+Vous pouvez placer une boîte aux lettres en attente pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions d’origine des éléments modifiés. Lorsque vous placez une boîte aux lettres utilisateur en attente pour litige, le contenu de la boîte aux lettres d’archivage de l’utilisateur (s’il est activé) est également conservé. Lorsque vous créez une attente, vous pouvez spécifier une durée de la rétention (également appelée « attente basée sur le temps *)* afin que les éléments supprimés et modifiés soient conservés pendant une période spécifiée, puis supprimés définitivement de la boîte aux lettres. Sinon, vous pouvez simplement conserver le contenu indéfiniment (appelé une attente *infinie)* ou jusqu’à ce que la attente pour litige soit supprimée. Si vous spécifiez une période de attente, elle est calculée à partir de la date de réception d’un message ou de la création d’un élément de boîte aux lettres. 
   
 Voici ce qui se produit lorsque vous créez une attente pour litige.
   
@@ -39,7 +39,7 @@ Voici ce qui se produit lorsque vous créez une attente pour litige.
 
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Attribuer une licence Exchange Online Plan 2
 
-Pour placer une boîte Exchange Online boîte aux lettres en attente pour litige, une licence Plan 2 Exchange Online lui est attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui affecter une licence Archivage Exchange Online pour la placer en attente.
+Pour placer une boîte aux lettres Exchange Online en attente pour litige, une licence Plan 2 doit lui Exchange Online attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui attribuer une licence Archivage Exchange Online pour la placer en attente.
 
 > [!NOTE]
 > Pour Office 365 Éducation organisations, la attente pour litige est prise en charge dans les abonnements Office 365 A1, qui incluent une licence Plan 1 Exchange Online avec des fonctionnalités supplémentaires. Pour plus d’informations, voir la section « fonctionnalités Exchange Online » dans la [description Office 365 Éducation service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)
@@ -62,13 +62,13 @@ Voici les étapes à suivre pour placer une boîte aux lettres en attente pour l
 
     1. Durée de la mise en attente **(jours)**: cette zone vous indique la durée de la mise en attente des éléments de boîte aux lettres lorsque la boîte aux lettres est placée en attente pour litige. La durée est calculée à compter de la date de réception ou de création de l'élément de boîte aux lettres. Lorsque la durée de la conservation expire pour un élément spécifique, cet élément n’est plus conservé. Si vous laissez cette zone vide, les éléments sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée. Indiquez la période en nombre de jours.
 
-    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche dans la page Informations sur le compte de la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    2. **Remarque visible pour l’utilisateur**: utilisez cette zone pour informer l’utilisateur que sa boîte aux lettres est en attente pour litige. La note s’affiche sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
-    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une date ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
+    3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
-6. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente. 
+6. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente.
 
-   Le système affiche une bannière qui vous demande de prendre jusqu’à 60 minutes pour que la modification prenne effet.
+   Le système affiche une bannière qui vous demande de prendre jusqu’à 240 minutes pour que la modification prenne effet.
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Créer une attente pour litige à l’aide de PowerShell
 

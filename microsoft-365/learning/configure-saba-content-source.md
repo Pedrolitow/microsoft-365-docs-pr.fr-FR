@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer Telle source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: 07c0148d7e1fefcd920a03426efba77ac91f374b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664899"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755786"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Le nom d’une source de contenu pour Apprentissage Microsoft Viva
 
@@ -42,11 +42,15 @@ Cet article vous montre comment configurer Lasa comme source de contenu d’appr
 1. Identifiez votre URL cloud Principale (par exemple, « org ».sabacloud.com). Si l’URL du tableau de bord de votre API org-api.sabacloud.com, votre URL d’hôte sera org.sabacloud.com.
 2. Identifiez l’URL de votre tableau de bord d’API en allant à **Cloud**  >  **Admin**  >  **System Admin Manage**  >  **Integrations** API  >  **Dashboard**. Recherchez l’URL du tableau de bord de l’API, puis supprimez « https:// » et « -api » pour obtenir votre URL d’hôte.
 
+    ![Image du tableau de bord de votre API.](../media/learning/saba-a.png)
+
 ### <a name="client-id-and-client-secret"></a>ID client et secret client
 
 1. Sur le même écran que celui où vous avez obtenu l’URL hôte, copiez l’ID client et la secret client s’ils ont déjà été générés.
 
 2. Si la question secrète client n’existe pas encore, sélectionnez le **bouton GÉNÉRER** pour la générer.
+
+    ![Image du tableau de bord de l’API avec le curseur pointant sur le bouton Générer.](../media/learning/saba-b.png)
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurer dans votre Centre d'administration Microsoft 365
 
@@ -59,7 +63,7 @@ Vous devez terminer la configuration dans votre Centre d'administration Microsof
 2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning et activez Cloud Dans le panneau.
 3. Remplissez les détails que vous avez obtenus à partir de votre portail DeNte.
     >[!NOTE]
-    >Le nom complet est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
+    >Le nom d’affichage est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
 4. Sélectionnez **Enregistrer** pour activer le contenu Cloud de Cloud dans Apprentissage Microsoft Viva. L’affichage du contenu dans Le Learning peut prendre jusqu’à 24 heures.
 
 > [!Note]

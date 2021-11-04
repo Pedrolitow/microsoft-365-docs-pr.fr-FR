@@ -14,25 +14,25 @@ ms.collection:
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194512"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754754"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 - System Center 2012 Configuration Manager R2
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Intégrer des appareils à l’aide System Center Configuration Manager
 
-1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*DeviceComplianceOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du [Centre de conformité Microsoft.](https://compliance.microsoft.com/)
+1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*DeviceComplianceOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">de Centre de conformité Microsoft 365</a>.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration de**  >  **l’appareil.**
+2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a>  >  **intégration de**  >  **l’appareil.**
 
 3. Dans le champ Méthode **de** déploiement, **sélectionnez Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
@@ -66,7 +66,7 @@ Pour chaque appareil, vous pouvez définir une valeur de configuration pour dét
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d’exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés afin de s’assurer qu’ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’ils sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -83,7 +83,7 @@ Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
+Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
@@ -136,13 +136,13 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Configuration Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
-1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
+1. Obtenez le package deboarding à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>:
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >   **l’intégration** >  **de l’appareil.**
+2. Dans le volet de navigation, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Paramètres**</a>  >   **l’intégration** >  **de l’appareil.**
 
 3. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -162,9 +162,9 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
 1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
@@ -201,7 +201,7 @@ Value: “1”
 ```
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](dlp-configure-endpoints-gp.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](dlp-configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](dlp-configure-endpoints-script.md)

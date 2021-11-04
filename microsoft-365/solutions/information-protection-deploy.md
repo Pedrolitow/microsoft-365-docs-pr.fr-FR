@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez la protection des informations dans Microsoft 365 pour les réglementations en matière de confidentialité des données telles que le R GDPR et le CCPA (California Consumer Privacy Act), y compris Microsoft Teams, SharePoint et la messagerie électronique.
-ms.openlocfilehash: 49d5848c6b81dcd6a81377cc3ff83cb242354690
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7517faa02ea74d5a9934e22595d61a34e99067a5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213372"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756586"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365
 
-Votre organisation peut être soumise à des réglementations régionales en matière de confidentialité des données qui vous obligent à protéger, gérer et fournir des droits et un contrôle sur les informations personnelles stockées dans votre infrastructure informatique, y compris localement et dans le cloud. Le meilleur exemple de règlement sur la confidentialité des données est le Règlement général sur la protection des données (R GDPR) de l’Union européenne. Le non-respect des réglementations en matière de confidentialité des données peut entraîner des amendes importantes.
+Votre organisation peut être soumise à des réglementations régionales en matière de confidentialité des données qui vous obligent à protéger, gérer et fournir des droits et un contrôle sur les informations personnelles stockées dans votre infrastructure informatique, y compris localement et dans le cloud. Le meilleur exemple d’une réglementation sur la confidentialité des données est le Règlement général sur la protection des données (R GDPR) de l’Union européenne. Le non-respect des réglementations en matière de confidentialité des données peut entraîner des amendes importantes.
 
-Les sessions de conversation en Microsoft Teams, les e-mails dans les Exchange et les fichiers dans SharePoint et OneDrive sont des exemples de types de données dans Microsoft 365. Cette solution fournit des conseils sur la façon d’évaluer les risques et de prendre les mesures appropriées pour protéger les données personnelles Microsoft 365. Cela inclut l’identification des informations personnelles afin que vous pouvez protéger, régir et répondre aux incidents de confidentialité des données.
+Les sessions de conversation en Microsoft Teams, les e-mails dans les Exchange et les fichiers dans SharePoint et OneDrive sont des exemples de types de données dans Microsoft 365. Cette solution fournit des conseils sur la façon d’évaluer les risques et de prendre les mesures appropriées pour protéger les données personnelles dans Microsoft 365. Cela inclut l’identification des informations personnelles afin que vous pouvez protéger, régir et répondre aux incidents de confidentialité des données.
 
 ![Qu’est-ce que la protection des informations pour les réglementations en matière de confidentialité des données ?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
@@ -43,7 +43,7 @@ Ces Microsoft 365 et fonctionnalités vous aident à répondre aux critères de 
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
-| Gestionnaire de conformité | Gérez les activités de conformité réglementaire, obtenez un score global de votre configuration de conformité actuelle et trouvez des recommandations pour l’amélioration. Il s’agit d’un outil d’évaluation des risques basé sur un flux de travail dans le Centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
+| Gestionnaire de conformité | Gérez les activités de conformité réglementaire, obtenez un score global de votre configuration de conformité actuelle et trouvez des recommandations d’amélioration. Il s’agit d’un outil d’évaluation des risques basé sur un flux de travail dans le Centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
 | Microsoft Defender pour Office 365 | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. | Microsoft 365 E3 et E5 |
 | Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer. Placez des étiquettes avec différents niveaux de protection sur le courrier électronique, les fichiers ou les sites. | Microsoft 365 E3 et E5 |
 | Protection contre la perte de données (DLP) | Détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 |
@@ -53,7 +53,7 @@ Ces Microsoft 365 et fonctionnalités vous aident à répondre aux critères de 
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation des conseils dans cette solution
 
-Pour vous aider à comprendre les outils Microsoft 365 disponibles pour vous aider à respecter une ou plusieurs réglementations en matière de confidentialité, ces instructions sont organisées en sections.
+Pour vous aider à comprendre les outils Microsoft 365 disponibles pour vous aider à respecter une ou plusieurs réglementations en matière de confidentialité, ces conseils sont organisés en sections.
 
 ![Étapes de mise en œuvre de la protection des informations pour les réglementations en matière de confidentialité des données.](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [Évaluer les risques de confidentialité des d
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Suivi : exécuter des évaluations des risques et vérifier votre score de conformité
 
-Le Gestionnaire de conformité, disponible dans le Centre de conformité Microsoft 365, vous offre la possibilité intégrée de suivre et de gérer les actions d’amélioration globales, ainsi que celles liées à plusieurs réglementations en matière de confidentialité des données qui vous sont applicables.
+Le Gestionnaire de conformité, disponible dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>vous offre une possibilité intégrée de suivre et de gérer les actions d’amélioration globales, ainsi que celles liées à plusieurs réglementations en matière de confidentialité des données qui vous sont applicables.
 
 Vous pouvez utiliser des modèles d’évaluation intégrés spécifiques à chaque réglementation, où vous pouvez suivre les éléments d’action pour chaque modèle d’évaluation sélectionné, afficher des contrôles réglementaires spécifiques et les mettre en relation avec des actions spécifiques.
 
@@ -89,7 +89,7 @@ Cet article décrit brièvement ce que les réglementations en matière de confi
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
-Les réglementations en matière de confidentialité des données dictent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, notamment plus de 40 contrôles pour la protection des informations dans le cadre des quatre réglementations de confidentialité des données dans notre exemple d’ensemble de RGPD, CCPA (California Consumer Protection Act), HIPAA-HITECH (Loi américaine sur la protection des données) et LGPD (Brazil Data Protection Act).
+Les réglementations en matière de confidentialité des données dictent un certain nombre de contrôles de protection des informations personnelles qui peuvent être utilisés dans votre environnement, y compris plus de 40 contrôles pour la protection des informations dans les quatre réglementations de confidentialité des données dans notre exemple de réglementation du RGPD, le CCPA (California Consumer Protection Act), HIPAA-HITECH (Loi américaine sur la protection des données) et le LGPD (Brazil Data Protection Act).
 
 Pour plus d’informations, voir Protéger les informations soumises à la réglementation sur la confidentialité [des données dans votre organisation.](information-protection-deploy-protect-information.md)
 

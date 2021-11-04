@@ -1,20 +1,24 @@
-- name: Formations Microsoft Viva (préversion)
+- name: Formations Microsoft Viva
   href: index.md
-- name: Démarrage avec Formations Microsoft Viva (préversion)
+- name: Prise en main de Viva Learning
   items:
-    - name: Vue d’ensemble de Formations Microsoft Viva (préversion)
+    - name: Vue d’ensemble de Viva Learning
       href: overview-viva-learning.md
-    - name: Comprendre les termes et conditions
+    - name: Conditions générales
       href: terms-and-conditions.md
+    - name: Obtenir de l’aide
+      href: help-support.md
 - name: Configuration et administration
   items:
-    - name: Configurer dans le Centre d’administration Teams
-      href: set-up-teams-admin-center.md
+    - name: Configurer Viva Learning
+      href: set-up-viva-learning.md
     - name: Gérer les sources de contenu d’apprentissage
       items:
         - name: Présentation
           href: content-sources-365-admin-center.md
-        - name: Configurer SharePoint comme source de contenu
+        - name: Ajouter SharePoint
           href: configure-sharepoint-content-source.md
+        - name: Ajouter des systèmes de gestion de l’apprentissage
+          href: configure-lms.md
         - name: Ajouter d’autres fournisseurs
           href: configure-other-content-sources.md

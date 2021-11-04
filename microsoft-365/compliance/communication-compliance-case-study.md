@@ -8,7 +8,9 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkCOMPLIANCE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -20,18 +22,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff326544d2485fa3ca7385f9ad8b924514aec1a5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647557"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756252"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de contenu inappropriée pour Microsoft Teams, Exchange et Yammer communications
 
-La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages avec du contenu inapproprié dans votre organisation. Le contenu inapproprié peut inclure des blasphémités, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les communications analysées par e-mail, Microsoft Teams, Yammer ou tierces dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
+La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages avec du contenu inapproprié dans votre organisation. Le contenu inapproprié peut inclure des blasphémités, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques, Microsoft Teams, Yammer ou tiers analysés dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
 
-Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour surveiller le contenu inapproprié. Ils utilisent Microsoft 365 principalement pour la messagerie électronique, les Microsoft Teams et la Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise en matière de harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
+Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour surveiller les contenus inappropriés. Ils ont utilisé Microsoft 365 principalement pour la messagerie électronique, les Microsoft Teams et le support Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise en matière de harcèlement en lieu de travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
 
 Cette étude de cas couvre les bases de la configuration rapide d’une stratégie de conformité des communications afin de surveiller les communications pour le contenu inapproprié. Ce guide se compose de :
 
@@ -42,16 +44,16 @@ Cette étude de cas couvre les bases de la configuration rapide d’une stratég
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Étape 1 : Planification de la conformité des communications
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveille le contenu inapproprié des conversations envoyées dans les Microsoft Teams, les messages privés et les conversations de la communauté en Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveille le contenu inapproprié pour les conversations envoyées dans les Microsoft Teams, les messages privés et les conversations de la communauté en Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
 
 - Administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Les spécialistes de la conformité qui doivent créer et gérer des stratégies de communication.
 - Les spécialistes de la conformité et d’autres collègues dans d’autres services (ressources humaines, juridiques, etc.) qui doivent examiner et corriger les alertes de conformité des communications.
 - Utilisateurs qui seront dans l’étendue de la stratégie de contenu inappropriée de conformité des communications.
 
-### <a name="licensing"></a>Licences
+### <a name="licensing"></a>Gestion des licences
 
-La première étape consiste à vérifier que la gestion des licences Microsoft 365 contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des conditions suivantes :
+La première étape consiste à vérifier que la licence Microsoft 365 contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des conditions suivantes :
 
 - Microsoft 365 E5 abonnement (version payante ou d’essai)
 - Microsoft 365 E3 abonnement + le module Microsoft 365 E5 Conformité’abonnement
@@ -68,13 +70,13 @@ La première étape consiste à vérifier que la gestion des licences Microsoft 
 Ils doivent également vérifier que l’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
 
 > [!IMPORTANT]
-> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
+> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
 
 Les administrateurs informatiques de Contoso prennent les mesures suivantes pour vérifier la prise en charge des licences pour Contoso :
 
 1. Les administrateurs informatiques se connectent au Centre d'administration Microsoft 365 et Centre d'administration Microsoft 365 > <https://admin.microsoft.com>   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**licences de facturation.**</a>
 
-2. Ici, ils confirme qu’ils ont l’une des [options de licence](communication-compliance-configure.md#subscriptions-and-licensing) qui inclut la prise en charge de la conformité des communications.
+2. Ici, ils confirment qu’ils ont l’une des [options de licence](communication-compliance-configure.md#subscriptions-and-licensing) qui inclut la prise en charge de la conformité des communications.
 
 ![Gestion des licences de conformité des communications.](../media/communication-compliance-case-licenses.png)
 
@@ -92,11 +94,11 @@ Contoso décide d’utiliser le groupe de rôles Conformité des communications 
 | **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations [Centre de conformité Microsoft 365](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
-2. Dans la **Centre de conformité Microsoft 365,** ils vont à Autorisations et sélectionnent le lien pour afficher et gérer les **rôles** dans Office 365.
+1. Les administrateurs informatiques contoso se connectent à la page d’autorisations [Centre de conformité Microsoft 365](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
+2. Dans la Centre de conformité Microsoft 365, ils vont sur Autorisations et sélectionnent le lien pour afficher et gérer les <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**rôles**</a> dans Office 365.
 3. Les administrateurs sélectionnent le *groupe de rôles Conformité* des communications, puis **sélectionnent Modifier le groupe de rôles.**
 4. Les administrateurs **sélectionnent Choisir des membres** dans le volet de navigation de gauche, puis sélectionnent **Modifier.**
-5. Ils **sélectionnent Ajouter,** puis cochent la case pour tous les utilisateurs de Contoso qui gèreront la conformité des communications, examineront et examineront les alertes.
+5. Ils **sélectionnent Ajouter,** puis cochent la case pour tous les utilisateurs de Contoso qui gèrent la conformité des communications, examinent et examinent les alertes.
 6. Les administrateurs **sélectionnent Ajouter,** puis **Terminé**.
 7. Ils **sélectionnent Enregistrer** pour ajouter des utilisateurs Contoso au groupe de rôles. Ils **sélectionnent Fermer** pour effectuer les étapes.
 
@@ -111,7 +113,7 @@ Après avoir configuré les autorisations pour la conformité des communications
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>En commençant directement à partir de la solution de conformité des communications
 
-Le moyen le plus rapide d’accéder à  la solution consiste à se connecter directement à la solution de conformité des <https://compliance.microsoft.com/supervisoryreview> communications ( ). À l’aide de ce lien, les administrateurs informatiques et les spécialistes de la conformité de Contoso sont dirigés vers le tableau de bord de vue d’ensemble de la conformité des communications, où vous pouvez rapidement passer en revue l’état des alertes et créer de nouvelles stratégies à partir des modèles prédéfinie.
+Le moyen le plus rapide d’accéder à  la solution consiste à se connecter directement à la solution de conformité des <https://compliance.microsoft.com/supervisoryreview> communications ( ). À l’aide de ce lien, les administrateurs informatiques et les spécialistes de la conformité de Contoso sont dirigés vers le tableau de bord de vue d’ensemble de la conformité des communications où vous pouvez rapidement passer en revue l’état des alertes et créer de nouvelles stratégies à partir des modèles prédéfinie.
 
 ![Vue d’ensemble de la conformité des communications.](../media/communication-compliance-case-overview.png)
 
@@ -165,14 +167,14 @@ Les administrateurs informatiques contoso s’assurent qu’ils examinent les in
 
 Les spécialistes de la conformité Contoso souhaitent ajouter tous les utilisateurs à la stratégie de communication qui surveille le contenu inapproprié. Ils peuvent décider d’ajouter chaque compte d’utilisateur à la stratégie séparément, mais ils ont décidé qu’il est beaucoup plus facile et gagnent du temps d’utiliser un groupe de **distribution** Tous les utilisateurs pour les utilisateurs de cette stratégie.
 
-Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, de sorte qu’ils prennent les mesures suivantes :
+Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, afin qu’ils prennent les mesures suivantes :
 
 1. Les administrateurs informatiques de Contoso se connectent au Centre d'administration Microsoft 365 [ https://admin.microsoft.com) (](https://admin.microsoft.com) et Centre d'administration Microsoft 365 > **groupes de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**groupes.**</a>
 2. Ils **sélectionnent Ajouter un groupe et** terminent l’Assistant pour créer un Microsoft 365 *ou* un groupe *de distribution.*
 
     ![Groupes.](../media/communication-compliance-case-all-employees.png)
 
-3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Exchange d’administration** [( https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) et naviguent jusqu’Exchange **groupes** de  >  **destinataires du Centre d’administration.**  >   Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé, puis sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
+3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Exchange d’administration** [( https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) et naviguent jusqu’Exchange **groupes** de  >  **destinataires du Centre d’administration.**  >   Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé et sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
 
     ![Exchange’administration centrale.](../media/communication-compliance-case-eac.png)
 

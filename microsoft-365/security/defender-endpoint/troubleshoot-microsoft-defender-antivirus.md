@@ -16,19 +16,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 590842462f4c757ba16c90ef641382801d79bcab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59392ebb51bb483393cf657ced400c238852d72c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212364"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753540"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -37,11 +37,11 @@ Si vous rencontrez un problème avec Antivirus Microsoft Defender, vous pouvez r
 La liste des tableaux :
 
 - [Antivirus Microsoft Defender’événement (s’appliquent](#windows-defender-av-ids) aux deux Windows 10 et Windows Server 2016)
-- [Antivirus Microsoft Defender d’erreur client](#error-codes)
+- [Antivirus Microsoft Defender codes d’erreur client](#error-codes)
 - [Codes d Antivirus Microsoft Defender client interne (utilisés par Microsoft pendant le développement et les tests)](#internal-error-codes)
 
 > [!TIP]
-> Vous pouvez également consulter le site web de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités suivantes fonctionnent :
+> Vous pouvez également consulter le site web de démonstration microsoft Defender pour points de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités suivantes fonctionnent :
 >
 > - Protection fournie par le cloud
 > - Apprentissage rapide (y compris Bloquer à la première vue)
@@ -93,7 +93,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -135,7 +135,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -146,7 +146,7 @@ Description :
 </ul>
 </dt>
 <dt>Utilisateur : &lt; Domain &gt; \& lt; Durée &gt; </dt>
-<dt>d’analyse utilisateur &lt; : &gt; durée d’une analyse.</dt>
+<dt>de l’analyse utilisateur &lt; : durée d’une analyse. &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -177,7 +177,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -188,7 +188,7 @@ Description :
 </ul>
 </dt>
 <dt>Utilisateur : &lt; Domain &gt; &amp; lt; Durée &gt; </dt>
-<dt>d’analyse utilisateur &lt; : &gt; durée d’une analyse.</dt>
+<dt>de l’analyse utilisateur &lt; : durée d’une analyse. &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -219,7 +219,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -260,7 +260,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -301,7 +301,7 @@ Description :
 <dt>ID d’analyse : &lt; Numéro d’ID de &gt; l’analyse pertinente.</dt> 
 <dt> Type d’analyse &lt; : type &gt; d’analyse, par exemple :<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 </ul>
 </dt>
@@ -589,7 +589,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de res
 <dt>Catégorie : &lt; Description de &gt; catégorie, par exemple, tout type de menace ou de programme malveillant.</dt> 
 <dt>Chemin d’accès : &lt; File &gt; path</dt>
 <dt>User: &lt; Domain &gt; \& lt; Code &gt; </dt>
-<dt>d’erreur utilisateur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
+<dt>d’erreur utilisateur &lt; : code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
 <dt>Description de &lt; l’erreur : description &gt; de l’erreur.</dt> 
 <dt>Version de la signature : &lt; Version &gt; du moteur</dt>
 <dt>de définition : Antimalware Engine &lt; version &gt; </dt>
@@ -676,7 +676,7 @@ Pour plus d'informations, consultez les articles suivants :
 <dt>Catégorie : &lt; Description de &gt; catégorie, par exemple, tout type de menace ou de programme malveillant.</dt> 
 <dt>Chemin d’accès : &lt; File &gt; path</dt>
 <dt>User: &lt; Domain &gt; \& lt; Code &gt; </dt>
-<dt>d’erreur utilisateur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
+<dt>d’erreur utilisateur &lt; : code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
 <dt>Description de &lt; l’erreur : description &gt; de l’erreur.</dt> 
 <dt>Version de la signature : &lt; Version &gt; du moteur</dt>
 <dt>de définition : Antimalware Engine &lt; version &gt; </dt>
@@ -738,9 +738,9 @@ Description :
 <td >
 Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de suppression de l’historique des programmes malveillants et d’autres logiciels potentiellement indésirables.
 <dl>
-<dt>Heure : heure à quel moment l’événement s’est produit, par exemple lorsque l’historique est purgé. Ce paramètre n’est pas utilisé dans les événements de menace afin qu’il n’y a aucune confusion quant à la durée de correction ou d’infection. Pour ceux-ci, nous les appelons spécifiquement Heure de l’action ou Heure de la détection.</dt> 
+<dt>Heure : heure à quel moment l’événement s’est produit, par exemple lorsque l’historique est purgé. Ce paramètre n’est pas utilisé dans les événements de menace afin qu’il n’y a aucune confusion quant à la durée de correction ou d’infection. Pour ceux-ci, nous les appelons spécifiquement Heure de l’action ou Heure de détection.</dt> 
 <dt>Utilisateur : &lt; Domain &gt; \& lt; Code &gt; </dt>
-<dt>d’erreur utilisateur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
+<dt>d’erreur utilisateur &lt; : code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard. </dt> 
 <dt>Description de &lt; l’erreur : description &gt; de l’erreur.</dt>
 </dl>
 </td>
@@ -813,8 +813,8 @@ Antivirus Microsoft Defender a détecté un comportement suspect.<br/>Pour plus 
 <dt>d’état &lt; : domaine &gt; \& lt; Nom &gt; </dt>
 <dt>du processus utilisateur : processus dans &lt; l’ID &gt; </dt>de signature PID : gravité de correspondance
 <dt>d’éumération.</dt> 
-<dt>Version de la signature : &lt; Version &gt; de la définition</dt>du moteur
-<dt>: Antimalware Engine la &lt; version &gt; </dt>
+<dt>Version de la signature : &lt; Version &gt; de la définition</dt>
+<dt>du moteur : Antimalware Engine la &lt; &gt; version</dt>
 <dt>Fidelity Label :</dt>Nom de fichier cible : nom de fichier du
 <dt> &lt; &gt; fichier.</dt>
 </dl>
@@ -848,7 +848,7 @@ Antivirus Microsoft Defender a détecté des programmes malveillants ou d’autr
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -976,14 +976,14 @@ Utilisateur UAC </dt>
 </ul>
 </dt>
 <dt>État de l’action : &lt; Description des &gt; actions supplémentaires Code</dt>
-<dt>d’erreur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
+<dt>d’erreur : &lt; code de résultat de code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt> 
 <dt>Version de la signature : &lt; &gt;</dt>Version du moteur de définition :
 <dt> &lt; Antimalware Engine version &gt; </dt> REMARQUE : chaque fois que Antivirus Microsoft Defender, Microsoft Security Essentials, outil de suppression de logiciels malveillants ou System Center Endpoint Protection détecte un programme malveillant, il restaure les paramètres et services système suivants qui ont pu être modifiés :<ul>
 <li>Paramètre par défaut d’Internet Explorer Microsoft Edge paramètre</li>
 <li>Paramètres de contrôle d’accès utilisateur</li>
 <li>Paramètres Chrome</li>
-<li>Données du contrôle de démarrage</li>
+<li>Données de contrôle de démarrage</li>
 <li>Paramètres de Registre Regedit et du Gestionnaire des tâches</li>
 <li>Windows Mise à jour, service de transfert intelligent en arrière-plan et service d’appel de procédure distante</li>
 <li>Windows Fichiers du système d’exploitation</li></ul>
@@ -1098,7 +1098,7 @@ Utilisateur UAC </dt>
 </ul>
 </dt>
 <dt>État de l’action : &lt; Description des &gt; actions supplémentaires Code</dt>
-<dt>d’erreur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
+<dt>d’erreur : &lt; code de résultat de code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt> 
 <dt>Version de la signature : &lt; Version &gt; du moteur</dt>
 <dt>de définition : Antimalware Engine &lt; version &gt; </dt>
@@ -1190,7 +1190,7 @@ Utilisateur UAC </dt>
 </ul>
 </dt>
 <dt>État de l’action : &lt; Description des &gt; actions supplémentaires Code</dt>
-<dt>d’erreur : &lt; code de résultat de code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
+<dt>d’erreur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt> 
 <dt>Version de la signature : &lt; Version &gt; du moteur</dt>
 <dt>de définition : Antimalware Engine &lt; version &gt; </dt>
@@ -1284,7 +1284,7 @@ Antivirus Microsoft Defender client est opérationnel dans un état sain.
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>Remarque : cet événement sera enregistré uniquement si la stratégie suivante est définie : <b>ThreatFileHashLogging non signé.</b></div>
+<div class="alert"><b>Remarque : Cet événement sera enregistré uniquement si la stratégie suivante est définie : <b>ThreatFileHashLogging non signé.</b></div>
 <div> </div>
 </td>
 </tr>
@@ -1356,12 +1356,12 @@ Rapport d’état du client antivirus.
 <dt>Version de la plateforme : &lt; &gt;</dt>Version actuelle du moteur de la plateforme : version
 <dt>Antimalware Engine &lt; &gt; version</dt>
 <dt> &lt; &gt; </dt>du moteur d’inspection en temps réel du réseau : version antivirus du moteur d’inspection du réseau : version de
-<dt>signature antivirus &lt; version &gt; </dt>
+<dt> &lt; signature &gt; antivirus</dt>version
 <dt>antispyware signature : version de &lt; signature Antispyware &gt; version</dt>de la signature Network
-<dt>Realtime Inspection version : &lt; Network &gt;</dt>État RTP de la version RTP de la signature d’inspection en temps réel : état de protection en temps réel (activé ou désactivé) OA : État d’accès (activé ou
-<dt> &lt; &gt; désactivé)</dt>IOAV : état BM des téléchargements Et des pièces
-<dt> &lt; jointes Outlook Express &gt; (activé</dt>ou désactivé) : âge de signature antivirus (activé ou
-<dt> &lt; &gt; désactivé)</dt>de l’état de surveillance du comportement : âge de signature antivirus (en
+<dt>Realtime Inspection version : &lt; Network &gt;</dt>État RTP de la version RTP de la signature d’inspection en temps réel : état de protection en temps réel (activé ou désactivé) OA : état d’accès (activé ou
+<dt> &lt; &gt; désactivé)</dt>IOAV : état bm des pièces jointes rapide Outlook s (activé ou désactivé) d’IE : âge de signature antivirus (activé ou
+<dt> &lt; &gt; désactivé)</dt>: âge de signature antivirus
+<dt> &lt; &gt; </dt>(en
 <dt> &lt; &gt; jours)</dt>
 <dt> &lt; &gt; )</dt>Âge de signature antispyware : âge de signature
 <dt> &lt; antispyware &gt; (en jours)</dt>Âge de la dernière analyse rapide : Dernière analyse rapide
@@ -1370,11 +1370,11 @@ Rapport d’état du client antivirus.
 <dt>? &lt; Heure de &gt; création de la signature</dt>antivirus Heure de création de
 <dt>la signature Antispyware : ? &lt; Heure de création de &gt; signature antispyware Heure de</dt>la dernière analyse
 <dt>rapide : ? &lt; Heure de début &gt; de la dernière analyse rapide</dt>Heure de fin de
-<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Dernière source d’analyse rapide : Dernière source d’analyse rapide (0 = analyse non exécuté, 1 = initié par
+<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Source de la dernière analyse rapide : Dernière source d’analyse rapide (0 = analyse non exécuté, 1 = initié par
 <dt> &lt; &gt; l’utilisateur, 2 =</dt>initié par le système) Heure de début de la dernière analyse complète :
 <dt>? &lt; Heure de début &gt; de la dernière analyse complète</dt>Heure de fin de
 <dt>l’analyse complète : ? &lt; &gt;</dt>Dernière heure de fin de l’analyse complète Dernière source d’analyse complète : Dernière
-<dt> &lt; source d’analyse complète &gt; (0 = l’analyse n’a</dt>pas été exécuté, 1 = initié par l’utilisateur, 2 = initié par le système) Statut du produit : pour la résolution des problèmes internes 
+<dt> &lt; source d’analyse complète &gt; (0 = l’analyse n’a</dt>pas été exécuté, 1 = initié par l’utilisateur, 2 = initié par le système) État du produit : pour la résolution des problèmes internes 
 <dt>
 </dl>
 </td>
@@ -1406,10 +1406,10 @@ Description :
 La version de signature antivirus a été mise à jour.
 <dl>
 <dt>Version actuelle de la signature : &lt; Version actuelle &gt; de la signature</dt>Version précédente de la signature : type de
-<dt>signature &lt; version &gt; précédente</dt>: type de 
+<dt>signature &lt; &gt; version précédente</dt>: type de 
 <dt> &lt; &gt; signature, par exemple : <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 <li>Système d’inspection du réseau</li>
 </ul>
@@ -1465,17 +1465,17 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 <li>Centre de protection Microsoft contre les programmes malveillants (MMPC)</li>
 </ul>
 </dt>
-<dt>Étape de mise à jour &lt; : étape de mise à &gt; jour, par exemple :
+<dt>Étape de mise à &lt; jour : étape de mise à &gt; jour, par exemple :
 <ul>
-<li>Rechercher</li>
+<li>Recherche</li>
 <li>Télécharger</li>
 <li>Installer</li>
 </ul>
 </dt>Chemin d’accès source : nom de partage de fichiers pour la convention d’attribution de noms universelle (UNC), nom de serveur 
 <dt>pour Windows Server Update Services (WSUS)/Microsoft Update/ADL.</dt> 
-<dt> Type de signature &lt; : type de &gt; signature, par exemple : <ul>
+<dt> Type de signature &lt; : type &gt; de signature, par exemple : <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 <li>Système d’inspection du réseau</li>
 </ul>
@@ -1573,7 +1573,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 <dt> &lt; version &gt; </dt>précédente : type de moteur , moteur anti-programme malveillant ou moteur système d’inspection
 <dt>du &lt; &gt; réseau.</dt> 
 <dt>Utilisateur : &lt; Domain &gt; \& lt; Code &gt; </dt>
-<dt>d’erreur utilisateur &lt; : code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
+<dt>d’erreur utilisateur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt>
 </dl>
 </td>
@@ -1607,7 +1607,7 @@ Nom symbolique :
 Message :
 </td>
 <td >
-<b>Un problème est à l’écran lors du chargement des définitions de logiciel anti-programme malveillant. Le moteur du logiciel anti-programme malveillant tentera de charger le dernier ensemble connu de définitions.</b>
+<b>Un problème est à l’lors du chargement des définitions de logiciels anti-programme malveillant. Le moteur du logiciel anti-programme malveillant tentera de charger le dernier ensemble connu de définitions.</b>
 </td>
 </tr>
 <tr>
@@ -1620,7 +1620,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de cha
 <dt>Signatures tentées : Code</dt>
 <dt>d’erreur : &lt; code de résultat du code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt> 
-<dt>Version de la signature : &lt; Version &gt; du moteur</dt>de définition : version du moteur
+<dt>Version de la signature : &lt; Version &gt; du moteur de définition</dt>: version du moteur
 <dt> &lt; anti-programme malveillant &gt; </dt>
 </dl>
 </td>
@@ -1759,7 +1759,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour récupérer</i>
 <dt>Version actuelle de la signature : &lt; Type de &gt; signature de la version</dt>actuelle de la signature : type de 
 <dt> &lt; &gt; signature, par exemple : <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 <li>Système d’inspection du réseau</li>
 </ul>
@@ -1769,7 +1769,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour récupérer</i>
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1780,7 +1780,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour récupérer</i>
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -1815,7 +1815,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 <dt>Version actuelle de la signature : &lt; Type de &gt; signature de la version</dt>actuelle de la signature : type de 
 <dt> &lt; &gt; signature, par exemple : <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 <li>Système d’inspection du réseau</li>
 </ul>
@@ -1825,7 +1825,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1837,7 +1837,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -1849,7 +1849,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 Action de l’utilisateur :
 </td>
 <td >
-Aucune action n’est nécessaire. Le Antivirus Microsoft Defender client est dans un état sain. Cet événement est signalé lorsque le service signature dynamique supprime correctement les définitions dynamiques hors date.
+Aucune action n’est nécessaire. Le Antivirus Microsoft Defender client est dans un état sain. Cet événement est signalé lorsque le service Signature dynamique supprime correctement les définitions dynamiques hors date.
 </td>
 </tr>
 <tr>
@@ -1875,12 +1875,12 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’utilisation du <i>service signature dynamique.</i>
+Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’utilisation <i>du service signature dynamique.</i>
 <dl>
 <dt>Version actuelle de la signature : &lt; Type de &gt; signature de la version</dt>actuelle de la signature : type de 
 <dt> &lt; &gt; signature, par exemple : <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Logiciel anti-espion</li>
 <li>Logiciel anti-programme malveillant</li>
 <li>Système d’inspection du réseau</li>
 </ul>
@@ -1892,7 +1892,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’ut
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1903,7 +1903,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’ut
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Aucune limite</li>
+<li>Sans limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -2017,7 +2017,7 @@ Action de l’utilisateur :
 </td>
 <td >
 Vérifiez vos paramètres de connectivité Internet.
-Le client Antivirus Microsoft Defender rencontré une erreur lors de l’utilisation du service signature dynamique pour télécharger les dernières définitions d’une menace spécifique. Cette erreur est probablement due à un problème de connectivité réseau.
+Le client Antivirus Microsoft Defender a rencontré une erreur lors de l’utilisation du service signature dynamique pour télécharger les dernières définitions d’une menace spécifique. Cette erreur est probablement due à un problème de connectivité réseau.
 </td>
 </tr>
 <tr>
@@ -2548,7 +2548,7 @@ Nom symbolique :
 Message :
 </td>
 <td >
-<b>La plateforme anti-programme malveillant va bientôt expirer. </b>
+<b>La plateforme anti-programme malveillant expirera bientôt. </b>
 </td>
 </tr>
 <tr>
@@ -2586,7 +2586,7 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender période de grâce a expiré. La protection contre les virus, les logiciels espions et les autres logiciels potentiellement indésirables est désactivée.
+Antivirus Microsoft Defender période de grâce a expiré. La protection contre les virus, logiciels espions et autres logiciels potentiellement indésirables est désactivée.
 <dl>
 <dt>Raison de l’expiration :</dt>
 <dt>Date d’expiration : </dt>Code 
@@ -2664,7 +2664,7 @@ Remarque : la taille du fichier de définitions téléchargé à partir du site 
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; Généralement, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement.
+Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; En commun, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement.
 </td>
 </tr>
 <tr>
@@ -2734,7 +2734,7 @@ Suivez les étapes de correction manuelle décrites dans le Programme d’aide �
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que la suppression à l’intérieur du type de conteneur peut ne pas être prise en charge.
+Cette erreur indique que la suppression à l’intérieur du type de conteneur n’est peut-être pas prise en charge.
 </td></tr><tr><td>Résolution</td><td>
 Antivirus Microsoft Defender’est pas en mesure de corriger les menaces détectées à l’intérieur de l’archive. Envisagez de supprimer manuellement les ressources détectées.
 </td>
@@ -3115,7 +3115,7 @@ Il s’agit d’une erreur interne. Il se peut qu’il se soit déclenché lorsq
 </tr>
 </table>
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-- [Rapport sur la protection Antivirus Microsoft Defender données](report-monitor-microsoft-defender-antivirus.md)
+- [Rapport sur la protection Antivirus Microsoft Defender de données](report-monitor-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

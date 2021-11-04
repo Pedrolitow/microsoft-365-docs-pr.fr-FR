@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd0885c0b9893b79d36981d52f596d1e5d6b8396
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193446"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757068"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déployer un connecteur pour archiver des données Twitter
 
@@ -56,20 +57,20 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Tapez la secret et choisissez la période d’expiration.](../media/TCimage08.png)
 
-8. Copiez la valeur de la secret et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Il s’agit de la question secrète de l’application AAD que vous utiliserez dans les étapes ultérieures.
+8. Copiez la valeur de la secret et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Il s’agit de la AAD’application secrète que vous utiliserez dans les étapes ultérieures.
 
    ![Copiez et enregistrez la secret.](../media/TCimage09.png)
 
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur à partir de GitHub votre compte Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur de GitHub votre compte Azure
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click Deploy to **Azure**.
 
     ![Go to the Azure home page.](../media/FBCimage11.png)
 
-2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** et **Paramètres,** puis cliquez sur **Acheter.**
+2. Une fois que vous avez **cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** et **Paramètres,** puis cliquez sur **Acheter.**
 
-   ![Cliquez sur Créer un compte de stockage de ressource et de type.](../media/FBCimage12.png)
+   ![Cliquez sur Créer un compte de stockage de ressources et de types.](../media/FBCimage12.png)
 
     - **Abonnement :** Sélectionnez votre abonnement Azure sur qui vous souhaitez déployer le service web de connecteur Twitter.
 
@@ -81,7 +82,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
     - **tenantId :** ID client de votre organisation Microsoft 365 que vous avez copié après avoir créé l’application connecteur Facebook dans Azure Active Directory à l’étape 1.
 
-   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Il permet d’accéder à l’application web de connecteur à l’étape 5.
+   - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Cela permet d’accéder à l’application web de connecteur à l’étape 5.
 
 3. Une fois le déploiement réussi, la page ressemble à la capture d’écran suivante :
 
@@ -114,7 +115,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Configurez les autorisations.](../media/TCimage30.png)
 
-7. Après avoir enregistrer les paramètres d’autorisation, cliquez sur l’onglet **Détails** de l’application, puis cliquez sur **Modifier > modifier les détails.**
+7. Après avoir enregistrez les paramètres d’autorisation, cliquez sur l’onglet **Détails** de l’application, puis cliquez sur **Modifier > modifier les détails.**
 
    ![Modifiez les détails de l’application.](../media/TCimage31.png)
 
@@ -128,7 +129,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 L’application de développement Twitter est maintenant prête à être utilisé.
 
-## <a name="step-4-configure-the-connector-web-app"></a>Étape 4 : Configurer l’application web du connecteur
+## <a name="step-4-configure-the-connector-web-app"></a>Étape 4 : Configurer l’application web de connecteur
 
 1. Go to https:// \<AzureAppResourceName> .azurewebsites.net (where **AzureAppResourceName** is the name of your Azure app resource that you named in Step 4). Par exemple, si le nom est **twitterconnector**, allez à https://twitterconnector.azurewebsites.net . La page d’accueil de l’application ressemble à la capture d’écran suivante :
 
@@ -152,15 +153,15 @@ L’application de développement Twitter est maintenant prête à être utilis�
 
    - **Secret du jeton d’accès Twitter :** Secret de jeton d’accès que vous avez créé à l’étape 3.
 
-   - **ID d’application AAD :** ID de l’application Azure Active Directory que vous avez créée à l’étape 1
+   - **AAD’ID d’application :** ID de l’application Azure Active Directory que vous avez créée à l’étape 1
 
-   - **Secret d’application AAD :** Valeur de la clé secrète APISecretKey que vous avez créée à l’étape 1.
+   - **AAD application secrète :** Valeur de la clé secrète APISecretKey que vous avez créée à l’étape 1.
 
 5. Cliquez **sur Enregistrer** pour enregistrer les paramètres du connecteur.
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : Configurer un connecteur Twitter dans le Centre de conformité Microsoft 365
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click Data **connectors** in the left nav.
+1. Go to the Centre de conformité Microsoft 365, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank"> **Data connectors** page</a.
 
 2. Dans la page **Connecteurs de données** sous **Twitter,** cliquez sur **Afficher.**
 
@@ -196,7 +197,7 @@ L’application de développement Twitter est maintenant prête à être utilis�
 
 11. Dans la page **Définir les filtres,** vous pouvez appliquer un filtre pour importer initialement des éléments d’un certain âge. Sélectionnez un âge, puis cliquez sur **Suivant**.
 
-12. Dans la page **Choisir l’emplacement** de stockage, tapez l’adresse de messagerie Microsoft 365 boîte aux lettres dans Microsoft 365 vers qui les éléments Twitter seront importés, puis cliquez sur **Suivant**.
+12. Dans la page **Choisir** l’emplacement de stockage, tapez l’adresse de messagerie Microsoft 365 boîte aux lettres dans Microsoft 365 vers qui les éléments Twitter seront importés, puis cliquez sur **Suivant**.
 
 13. Cliquez **sur Suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer la configuration du connecteur.
 

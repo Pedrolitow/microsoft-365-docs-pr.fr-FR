@@ -14,18 +14,18 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da6a875a7d9fc5a3445a18312245ffebdf6503c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 48a813765693c69cff726c6973959ee63200a357
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667113"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753920"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
-## <a name="licensing"></a>Licences
+## <a name="licensing"></a>Gestion des licences
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
@@ -34,7 +34,7 @@ Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer
 
 ## <a name="permission"></a>Autorisation
 
-Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit être autorisé à créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
+Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit avoir les autorisations pour créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
 
 - Rôle gestionnaire de stratégies et de profils.
 - Ou rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lecture/Supprimer/Afficher les rapports pour les profils de configuration d’appareil
@@ -55,7 +55,7 @@ Assurez-vous que les Windows 10 que vous prévoyez de déployer Printer Protecti
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - Pour Windows 2004 ou ultérieure
 
-2. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être intégré à Microsoft Defender pour le point de terminaison joint ; si vous envisagez de déployer une stratégie via Microsoft Endpoint Manager, l’appareil doit être joint à l’aide de Microsoft Intune.
+2. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être intégré à Microsoft Defender pour le point de terminaison joint ; Si vous envisagez de déployer une stratégie via Microsoft Endpoint Manager, l’appareil doit être joint à l’aide de Microsoft Intune.
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>Déployer une stratégie de protection de l’imprimante de contrôle d’appareil
 
@@ -71,7 +71,7 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec activer les **restrictions d’impression des contrôles d’appareil.**
+\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
@@ -119,7 +119,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : \> \> activer les \> restrictions d’impression des contrôles d’appareil
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression des appareils.":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression de l’appareil.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide de la stratégie de groupe
 
@@ -150,9 +150,9 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée.":::
- 
+
  Vous pouvez utiliser l’événement PnP pour rechercher l’imprimante USB utilisée dans l’organisation :
- 
+
 ```kusto
 //find the USB Printer VID/PID
 DeviceEvents

@@ -158,6 +158,7 @@
 
 ##### [Microsoft Defender pour point de terminaison Android]()
 ###### [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
+###### [Nouveautés](android-whatsnew.md)
 
 ###### [Déployer]()
 ####### [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
@@ -188,10 +189,13 @@
 
 ##### [ Conditions de licence de l'application Microsoft Defender pour point de terminaison](mde-terms-mobile.md) 
 
+### [Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Résoudre des problèmes d’intégration]()
 #### [Résoudre des problèmes en cours d’intégration](troubleshoot-onboarding.md)
 #### [Résoudre des problèmes d’abonnement et de portail d’accès](troubleshoot-onboarding-error-messages.md)
+#### [Résoudre les problèmes d’intégration de la gestion de la configuration de la sécurité](troubleshoot-security-config-mgt.md)
+
 
 
 
