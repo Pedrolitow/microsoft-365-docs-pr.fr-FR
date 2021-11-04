@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587992"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703238"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -299,9 +299,9 @@ En choisissant les paramètres de conservation et de suppression de contenu, vot
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservation du contenu sur une période donnée
 
-Lorsque vous configurez une stratégie de rétention de contenu, vous choisissez de conserver les éléments pendant un nombre donné de jours, de mois ou d’années. Ou bien de conserver les éléments indéfiniment. La période de rétention est calculée sur la base de l’âge du contenu et non par rapport à la date d’application de la stratégie de rétention.
+Lorsque vous configurez une étiquette ou une stratégie de rétention pour conserver le contenu, vous choisissez de conserver les éléments pendant un nombre spécifique de jours, mois ou années. Ou bien de conserver les éléments indéfiniment. La période de rétention n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée.
 
-Pour le début de la période de rétention, vous pouvez choisir la date de création ou de la prise en charge du contenu uniquement pour les fichiers et les emplacements SharePoint, OneDrive et Office 365, pour la date de la dernière modification du contenu.
+Pour le début de la période de rétention, vous pouvez choisir le moment où le contenu a été créé ou, pris en charge uniquement pour les fichiers et les groupes SharePoint, OneDrive et Microsoft 365, la dernière modification du contenu. Pour les étiquettes de rétention, vous pouvez démarrer la période de rétention à partir du contenu étiqueté et lorsqu’un événement se produit.
 
 Exemples :
 
@@ -317,7 +317,7 @@ Vous pouvez choisir si vous souhaitez que le contenu soit supprimé de façon d�
 
 Une stratégie de rétention peut conserver puis supprimer des éléments, ou bien supprimer de vieux éléments sans les conserver.
 
-Dans les deux cas, si votre stratégie de rétention supprime des éléments, il est important de comprendre que la période que vous spécifiez est calculée sur la base de la date de création ou de dernière modification, et non sur celle d’assignation de la stratégie.
+Dans les deux cas, si votre stratégie supprime des éléments, il est important de comprendre que la période que vous spécifiez n’est pas calculée à partir du moment où la stratégie a été affectée, mais en fonction du début de la période de rétention spécifiée. Par exemple, à partir du moment où l’élément a été créé, modifié ou étiqueté.
 
 Pour cette raison, tenez d’abord compte de l’âge du contenu existant et de la façon dont la stratégie peut avoir un impact sur ce contenu. Vous pouvez également communiquer la nouvelle stratégie à vos utilisateurs avant de l’affecter, afin de leur donner le temps d’évaluer l’impact possible.
 

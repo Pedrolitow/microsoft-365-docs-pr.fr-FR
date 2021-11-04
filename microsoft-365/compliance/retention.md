@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: c8c5fc71cc7f6757cb40cc5ae649021ba020dcc2
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432693"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701936"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -126,7 +126,7 @@ Les éléments héritent des paramètres de rétention de leur conteneur spécif
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
+Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
   
 - Formulaires fiscaux qui doivent être conservés pendant une période minimale de temps. 
     
@@ -142,7 +142,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
   
 - **Permettre aux personnes de votre organisation d’appliquer manuellement une étiquette de rétention** à du contenu dans Outlook, Outlook sur le web, OneDrive, SharePoint et Groupes Microsoft 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent. Ils peuvent donc le classer et lui appliquer la stratégie appropriée. 
     
-- **Appliquer automatiquement des étiquettes de rétention au contenu** s’il répond à des conditions spécifiques, comme lorsque le contenu contient : 
+- **Appliquez automatiquement des étiquettes de rétention au contenu** s’il correspond à des conditions spécifiques, qui incluent des pièces jointes cloud partagées dans un e-mail ou des Teams, ou lorsque le contenu contient : 
     - des types spécifiques d’informations sensibles.
     - des mots clés spécifiques correspondant à une requête que vous créez.
     - Le modèle correspond à un classifieur entraînable.
@@ -185,14 +185,14 @@ Vous pouvez également créer une ou plusieurs **stratégies à application auto
 
 #### <a name="retention-label-policies-and-locations"></a>Stratégies d’étiquette de rétention et emplacements
 
-Différents types d’étiquettes de rétention peuvent être publiés dans différents emplacements, en fonction du descriptif de l’étiquette de rétention.
+Les étiquettes de rétention peuvent être publiées à différents emplacements, en fonction de l’effet de l’étiquette de rétention.
   
 | Si l’étiquette de rétention est... | La stratégie d’étiquette peut être appliquée à... |
 |:-----|:-----|
 |Publiée pour les administrateurs et les utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
 |Appliquée automatiquement en fonction des types d’informations sensibles ou des classifieurs entraînables  <br/> |Exchange, SharePoint, OneDrive  <br/> |
 |Appliquée automatiquement en fonction d’une requête ou de mots clés  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
-   
+|Appliqué automatiquement aux pièces jointes cloud  <br/> |SharePoint, OneDrive, Microsoft 365 groupes  <br/> |
 
 Les dossiers publics Exchange, les messages Skype, Teams et Yammer ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu de ces emplacements, utilisez plutôt des stratégies de rétention.
 
@@ -246,7 +246,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Paramètres de rétention permettant conservation puis suppression, conservation uniquement ou suppression uniquement |Oui |Oui |
 |Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams<br />- Yammer|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non <br /> Non |
 |Rétention appliquée automatiquement | Oui | Oui |
-|Rétention appliquée en fonction de conditions <br /> – types d’informations sensibles, requêtes KQL et mots clés, classificateurs entrainables | Non | Oui |
+|Rétention appliquée en fonction de conditions <br /> - types d'informations sensibles, requêtes KQL et mots-clés, classificateurs entraînables, pièces jointes en nuage| Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
 |Interaction de l’utilisateur final | Non | Oui |
 |Persiste si le contenu est déplacé | Non | Oui, au sein de votre client Microsoft 365 |

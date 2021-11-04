@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: rançongiciel, rançongiciel contrôlé par l’homme, rançongiciel contrôlé par l’homme, HumOR, attaque par attaque par attaque de rançongiciel, chiffrement, cryptovirologie
+keywords: ransomware, ransomware géré par l’homme, ransomware géré par l’homme, HumOR, attaque par attaque par attaque de ransomware, chiffrement, cryptovirologie, confiance zéro
 description: Protection pas à pas de vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 04ce78802b24ed286ebf34fa404c17f53fef340b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556147"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703516"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Déployer la protection contre les rançongiciels pour votre client Microsoft 365
 
@@ -139,6 +139,13 @@ Voici les cinq étapes de la solution déployée pour votre client Microsoft 365
 
 ![Protection contre les rançongiciels pour un client Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+Cette solution utilise les principes de [confiance zéro](/security/zero-trust/): 
+
+- **Vérifiez explicitement :** Toujours authentifier et autoriser en fonction de tous les points de données disponibles.
+- **Utilisez l’accès selon le privilège minimum :** Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.
+- **Supposons une violation :** Réduisez le rayon d’explosion et l’accès aux segments. Vérifiez le chiffrement de bout en bout et utilisez l’analyse pour obtenir la visibilité, détecter les menaces et améliorer les défenses.
+
+Contrairement à l’accès intranet classique, qui fait confiance à tous les éléments derrière le pare-feu d’une organisation, la confiance zéro traite chaque connexion et accès comme s’il provenait d’un réseau non contrôlé, qu’il se trouve derrière le pare-feu de l’organisation ou sur Internet. La confiance zéro nécessite une protection pour le réseau, l’infrastructure, les identités, les points de terminaison, les applications et les données.
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Fonctionnalités de Microsoft 365
 
@@ -243,7 +250,6 @@ Microsoft 365 :
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Rapports d’analyse sur les menaces pour les rançongiciels](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) dans le portail Microsoft 365 Defender
 
-
 Microsoft 365 Defender :
 
 - [Rechercher un rançongiciel avec la recherche avancée](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
@@ -265,6 +271,14 @@ Microsoft Cloud App Security :
 Billets de blog de l’équipe de sécurité Microsoft :
 
 - [3 étapes pour empêcher et récupérer à partir d’un rançongiciel (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Guide de la lutte contre les ransomware gérés par des personnes : Partie 1 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Étapes clés sur la façon dont l’équipe de détection et de réponse de Microsoft (CAS) effectue des enquêtes sur les incidents de ransomware.
+
+- [Guide de la lutte contre les ransomware gérés par des personnes : Partie 2 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommandations meilleures pratiques
+
 - [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consultez la section **Rançongiciel**.

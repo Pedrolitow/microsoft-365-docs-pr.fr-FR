@@ -25,8 +25,8 @@ ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673372"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701948"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 

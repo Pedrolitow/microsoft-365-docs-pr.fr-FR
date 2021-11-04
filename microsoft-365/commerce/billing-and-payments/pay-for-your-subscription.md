@@ -21,13 +21,13 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
-ms.date: 05/04/2021
-ms.openlocfilehash: e947a4f73db3832abe4a02178a4e6161c86081bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/28/2021
+ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554623"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704814"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -82,167 +82,11 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 
-[Consultez votre relevé de facturation](view-your-bill-or-invoice.md) pour trouver les instructions de paiement. Vous pouvez également utiliser le menu déroulant en-dessous pour trouver les instructions relatives à votre pays ou région. Si vous ne connaissez pas le montant que vous devez régler, vous pouvez consulter votre facture et votre historique de facturation en ligne dans l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturation et paiements</a>.
+[Consultez votre facture pour](view-your-bill-or-invoice.md) obtenir des instructions de paiement pour votre pays ou région. Si vous ne connaissez pas le montant que vous devez régler, vous pouvez consulter votre facture et votre historique de facturation en ligne dans l’onglet **Factures** de la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturation et paiements</a>.
 
 > [!NOTE]
-> Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.
-
- **Choisissez votre pays ou région de facturation dans le menu déroulant ci-dessous.**
-
-> [!div class="op_single_selector"]
->
-> - **Choisissez votre pays ou région**
-> - [Afghanistan](../pay/afghanistan.md)
-> - [Albanie](../pay/albania.md)
-> - [Algérie](../pay/algeria.md)
-> - [Angola](../pay/angola.md)
-> - [Argentine](../pay/argentina.md)
-> - [Arménie](../pay/armenia.md)
-> - [Australie](../pay/australia.md)
-> - [Autriche](../pay/austria.md)
-> - [Azerbaïdjan](../pay/azerbaijan.md)
-> - [Bahamas](../pay/bahamas.md)
-> - [Bahreïn](../pay/bahrain.md)
-> - [Bangladesh](../pay/bangladesh.md)
-> - [Barbade](../pay/barbados.md)
-> - [Bélarus](../pay/belarus.md)
-> - [Belgique](../pay/belgium.md)
-> - [Belize](../pay/belize.md)
-> - [Bermudes](../pay/bermuda.md)
-> - [Bolivie](../pay/bolivia.md)
-> - [Bosnie-Herzégovine](../pay/bosnia-and-herzegovina.md)
-> - [Botswana](../pay/botswana.md)
-> - [Brésil](../pay/brazil.md)
-> - [Brunei](../pay/brunei.md)
-> - [Bulgarie](../pay/bulgaria.md)
-> - [Cameroun](../pay/cameroon.md)
-> - [Canada](../pay/canada.md)
-> - [Cap-Vert](../pay/cape-verde.md)
-> - [Îles Caïmans](../pay/cayman-islands.md)
-> - [Chili](../pay/chile.md)
-> - [Chine](../pay/china-prc.md)
-> - [Colombie](../pay/colombia.md)
-> - [Costa Rica](../pay/costa-rica.md)
-> - [Côte d'Ivoire](../pay/cote-divoire.md)
-> - [Croatie](../pay/croatia.md)
-> - [Curaçao](../pay/curacao.md)
-> - [Chypre](../pay/cyprus.md)
-> - [République Tchèque](../pay/czech-republic.md)
-> - [République démocratique du Congo](../pay/democratic-republic-of-congo.md)
-> - [Danemark](../pay/denmark.md)
-> - [République dominicaine](../pay/dominican-republic.md)
-> - [Équateur](../pay/ecuador.md)
-> - [Égypte](../pay/egypt.md)
-> - [El Salvador](../pay/el-salvador.md)
-> - [Estonie](../pay/estonia.md)
-> - [Éthiopie](../pay/ethiopia.md)
-> - [Féroé (îles)](../pay/faroe-islands.md)
-> - [Fidji](../pay/fiji.md)
-> - [Finlande](../pay/finland.md)
-> - [France](../pay/france.md)
-> - [Guyane française](../pay/french-guiana.md)
-> - [Géorgie](../pay/georgia.md)
-> - [Allemagne](../pay/germany.md)
-> - [Ghana](../pay/ghana.md)
-> - [Grèce](../pay/greece.md)
-> - [Grenade](../pay/grenada.md)
-> - [Guadeloupe](../pay/guadeloupe.md)
-> - [Guam](../pay/guam.md)
-> - [Guatemala](../pay/guatemala.md)
-> - [Guyane](../pay/guyana.md)
-> - [Haïti](../pay/haiti.md)
-> - [Honduras](../pay/honduras.md)
-> - [Hong Kong (R.A.S.)](../pay/hong-kong.md)
-> - [Hongrie](../pay/hungary.md)
-> - [Islande](../pay/iceland.md)
-> - [Inde](../pay/india.md)
-> - [Indonésie](../pay/indonesia.md)
-> - [Irak](../pay/iraq.md)
-> - [Irlande](../pay/ireland.md)
-> - [Israël](../pay/israel.md)
-> - [Italie](../pay/italy.md)
-> - [Jamaïque](../pay/jamaica.md)
-> - [Japon](../pay/japan.md)
-> - [Jordanie](../pay/jordan.md)
-> - [Kazakhstan](../pay/kazakhstan.md)
-> - [Kenya](../pay/kenya.md)
-> - [Corée](../pay/korea.md)
-> - [Koweït](../pay/kuwait.md)
-> - [Kirghizstan](../pay/kyrgyzstan.md)
-> - [Lettonie](../pay/latvia.md)
-> - [Liban](../pay/lebanon.md)
-> - [Libye](../pay/libya.md)
-> - [Liechtenstein](../pay/liechtenstein.md)
-> - [Lituanie](../pay/lithuania.md)
-> - [Luxembourg](../pay/luxembourg.md)
-> - [Macao](../pay/macao.md)
-> - [Macédoine (Ex-République yougoslave de)](../pay/macedonia.md)
-> - [Malaisie](../pay/malaysia.md)
-> - [Malte](../pay/malta.md)
-> - [Île Maurice](../pay/mauritius.md)
-> - [Mexique](../pay/mexico.md)
-> - [Moldova](../pay/moldova.md)
-> - [Monaco](../pay/monaco.md)
-> - [Mongolie](../pay/mongolia.md)
-> - [Monténégro](../pay/montenegro.md)
-> - [Maroc](../pay/morocco.md)
-> - [Namibie](../pay/namibia.md)
-> - [Népal](../pay/nepal.md)
-> - [Pays-Bas](../pay/netherlands.md)
-> - [Nouvelle-Zélande](../pay/new-zealand.md)
-> - [Nicaragua](../pay/nicaragua.md)
-> - [Nigeria](../pay/nigeria.md)
-> - [Norvège](../pay/norway.md)
-> - [Oman](../pay/oman.md)
-> - [Pakistan](../pay/pakistan.md)
-> - [Autorité palestinienne](../pay/palestinian-authority.md)
-> - [Panama](../pay/panama.md)
-> - [Paraguay](../pay/paraguay.md)
-> - [Pérou](../pay/peru.md)
-> - [Philippines](../pay/philippines.md)
-> - [Pologne](../pay/poland.md)
-> - [Portugal](../pay/portugal.md)
-> - [Porto Rico](../pay/puerto-rico.md)
-> - [Qatar](../pay/qatar.md)
-> - [Roumanie](../pay/romania.md)
-> - [Russie](../pay/russia.md)
-> - [Rwanda](../pay/rwanda.md)
-> - [Saint-Kitts-et-Nevis](../pay/saint-kitts-and-nevis.md)
-> - [Sainte-Lucie](../pay/saint-lucia.md)
-> - [Saint-Vincent-et-les-Grenadines](../pay/saint-vincent-and-the-grenadines.md)
-> - [Arabie saoudite](../pay/saudi-arabia.md)
-> - [Sénégal](../pay/senegal.md)
-> - [Serbie](../pay/serbia.md)
-> - [Singapour](../pay/singapore.md)
-> - [République de Slovaquie](../pay/slovakia.md)
-> - [Slovénie](../pay/slovenia.md)
-> - [Afrique du Sud](../pay/south-africa.md)
-> - [Espagne](../pay/spain.md)
-> - [Sri Lanka](../pay/sri-lanka.md)
-> - [Suriname](../pay/suriname.md)
-> - [Suède](../pay/sweden.md)
-> - [Suisse](../pay/switzerland.md)
-> - [Taïwan](../pay/taiwan.md)
-> - [Tadjikistan](../pay/tajikistan.md)
-> - [Tanzanie](../pay/tanzania.md)
-> - [Thaïlande](../pay/thailand.md)
-> - [Trinité-et-Tobago](../pay/trinidad-and-tobago.md)
-> - [Turkménistan](../pay/turkmenistan.md)
-> - [Tunisie](../pay/tunisia.md)
-> - [Turquie](../pay/turkey.md)
-> - [Ouganda](../pay/uganda.md)
-> - [Ukraine](../pay/ukraine.md)
-> - [Émirats arabes unis](../pay/united-arab-emirates.md)
-> - [Royaume-Uni](../pay/united-kingdom.md)
-> - [États-Unis](../pay/united-states.md)
-> - [Uruguay](../pay/uruguay.md)
-> - [Ouzbékistan](../pay/uzbekistan.md)
-> - [Venezuela](../pay/venezuela.md)
-> - [Vietnam](../pay/vietnam.md)
-> - [Îles Vierges (États-Unis)](../pay/virgin-islands.md)
-> - [Yémen](../pay/yemen.md)
-> - [Zambie](../pay/zambia.md)
-> - [Zimbabwe](../pay/zimbabwe.md)
+> - Le paiement par chèque n'est disponible que pour quelques pays ou régions seulement.
+> - Si vous devez payer les frais d’adhésion au programme Microsoft Partner Network (MPN) (abonnement Action Pack, compétences Argent ou Or), consultez [Les frais de compétence Pay pour plus d’informations sur la façon d’effectuer un paiement MPN.](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view)
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 

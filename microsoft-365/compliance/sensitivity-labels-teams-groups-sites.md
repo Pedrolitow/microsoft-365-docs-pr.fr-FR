@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e32a74dcb682d77367b5c8e3a3bc2b656d0e236
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151001"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703046"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -102,7 +102,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
     
     - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Si vous avez sélectionné **Paramètres de partage externe et d’accès aux appareils**, configurez les paramètres suivants :
+4. Si vous avez sélectionné les paramètres de partage externe et d’accès **conditionnel,** configurez maintenant les paramètres suivants :
     
     - **Contrôler le partage externe à partir de sites SharePoint étiquetés** : sélectionnez cette option pour ensuite sélectionner soit partage externe pour tout le monde, pour des invités nouveaux et existants, pour des invités existants ou pour les personnes de votre organisation uniquement. Pour plus d’informations sur cette configuration et sur les paramètres, consultez la documentation SharePoint [Activer ou désactiver le partage externe pour un site](/sharepoint/change-external-sharing-site).
     
