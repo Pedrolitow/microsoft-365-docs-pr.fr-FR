@@ -14,21 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et mettre hors service des appareils macOS dans Microsoft 365 solutions de conformité à l’aide Microsoft Intune pour les clients MDE (prévisualisation)
-ms.openlocfilehash: 94664f0d57f1b702484e27c62f9e80339e04e105
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c1ed019f6191d930da8c6b1d0674625e9c27d1b6
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701312"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792483"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégrer et mettre hors service des appareils macOS dans des solutions de conformité à l’aide d’Intune pour Les clients Microsoft Defender pour les points de terminaison (prévisualisation)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
 > [!IMPORTANT]
-> Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour point de terminaison (MDE) sur vos appareils macOS
+> Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour le point de terminaison (MDE) sur vos appareils macOS
 
 ## <a name="get-registered"></a>S’inscrire
 
-Pour accéder à cette fonctionnalité, vous devez inscrire votre client auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/Ignite2021DLP)
+Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **S’applique à :**
 
@@ -46,7 +46,7 @@ Pour accéder à cette fonctionnalité, vous devez inscrire votre client auprès
 
 ## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Intégrer des appareils macOS dans des solutions Microsoft 365 conformité à l’aide Microsoft Intune
 
-Utilisez ces étapes pour intégrer un appareil macOS aux solutions de conformité si MDE lui est déjà déployé.
+Utilisez ces étapes pour intégrer un appareil macOS aux solutions de conformité si MDE y est déjà déployé.
 
 1. Vous aurez besoin de ces fichiers pour cette procédure.
 
@@ -111,7 +111,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-1. Dans **Microsoft Endpoint Manager, ouvrez** **les** profils de configuration des appareils, vous devez y voir vos  >  profils créés.
+1. Dans **Microsoft Endpoint Manager,** **ouvrez** les profils de configuration des appareils, vous devez voir vos  >  profils créés ici.
 
 2. Dans la page **Profils de** configuration, choisissez le profil de préférences MDE.
 

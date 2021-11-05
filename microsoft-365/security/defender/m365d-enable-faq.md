@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fce766313b7757712faaa2a2b122730601f137aa
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667013"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792519"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
@@ -78,6 +78,11 @@ Les comptes affectés aux rôles Azure Active Directory (Azure AD) suivants peuv
 - Opérateur de sécurité
 - Lecteur général
 - Lecteur de sécurité
+- Administrateur de conformité
+- Administrateur de conformité des données
+- Administrateur de l'application
+- Administrateur de l'application cloud
+
 
 > [!NOTE]
 > Les paramètres de contrôle d’accès en fonction du rôle dans Microsoft Defender pour point de terminaison influencent l’accès aux données. Pour plus d’informations, voir la [gestion de l’accès Microsoft 365 Defender](m365d-permissions.md).
@@ -91,7 +96,7 @@ Par défaut, Microsoft 365 Defender affiche les informations d’heure dans le f
 Microsoft fournit régulièrement des informations via les différents canaux, notamment :
 
 - Centre [de messages dans](../../admin/manage/message-center.md) Centre d'administration Microsoft 365
-- Billets de blog dans la [communauté technique Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Billets de blog de la [communauté Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités de prévisualisation.](preview.md)
 
@@ -99,7 +104,7 @@ Obtenez les dernières expériences disponibles publiquement en allumer les [fon
 
 Il n’est pas disponible pour le moment.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md).

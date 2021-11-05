@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et utiliser des appareils macOS dans des solutions Microsoft 365 conformité à l’aide Microsoft Intune (prévisualisation)
-ms.openlocfilehash: fb3e89b303c8c17de3eb6826c25d2b54be364b7e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717461"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792279"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Intégration et intégration d’appareils macOS dans des solutions Microsoft 365 conformité à l’aide d’Intune (prévisualisation)
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser Intune pour intégrer des appareils macOS dans Microsoft 36
 
 ## <a name="get-registered"></a>S’inscrire
 
-Pour accéder à cette fonctionnalité, vous devez inscrire votre client auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/Ignite2021DLP)
+Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **S’applique à :**
 
@@ -259,7 +259,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > [!NOTE]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant six mois.
 
-2. Dans **Microsoft Endpoint Manager, ouvrez** **les** profils de configuration des appareils, vous devez y voir vos  >  profils créés.
+2. Dans **Microsoft Endpoint Manager,** **ouvrez** les profils de configuration des appareils, vous devez voir vos  >  profils créés ici.
 
 1. Dans la page **Profils de** configuration, choisissez le *profil wdav.pkg.intunemac.*
 

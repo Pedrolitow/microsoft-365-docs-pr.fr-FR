@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 1da9753f25a828e453388bf39de65c36c9dc1271
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668377"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792387"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -60,7 +60,7 @@ Si l'utilisation de la bande passante n'est pas un problème, vous ne pouvez pas
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
 
-Pour accéder au support macOS, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/Ignite2021DLP).
+Pour accéder au support macOS, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
 |---------|---------|---------|---------|
@@ -212,7 +212,7 @@ L’activité des fichiers sera toujours auditée pour les appareils intégrés,
 
 Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez limiter le partage involontaire des éléments sensibles aux applications et services Cloud non autorisés. Le Chromium Edge comprend les conditions dans lesquelles un élément est limité par une stratégie DLP de point de terminaison et applique les restrictions d’accès.
 
-Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et le navigateur Chromium Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs seront redirigés vers le Chromium Edge et le Chromium Edge, avec sa compréhension des restrictions imposées par DLP, peut bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont réunies.
+Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et le navigateur Chromium Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés pour utiliser Edge Chromium qui, avec sa compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
 Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
 

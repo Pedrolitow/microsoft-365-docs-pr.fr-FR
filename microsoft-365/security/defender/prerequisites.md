@@ -20,35 +20,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 452129ac5bb6116f23e9a2791ff7147cd74adee6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d136ae298abdf876a9be6f58634940ec71c07e47
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181006"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792339"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender conditions préalables
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Découvrez les licences et autres conditions requises pour l’approvisionnement et [l’utilisation Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
-L’une de ces licences vous permet d’accéder Microsoft 365 Defender fonctionnalités Microsoft 365 Defender portail sans frais supplémentaires :
+L’une de ces licences vous permet d’accéder Microsoft 365 Defender fonctionnalités de Microsoft 365 Defender portail sans frais supplémentaires :
 
 - Microsoft 365 E5 ou A5
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
 - Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5
 - Windows 10 Entreprise E5 ou A5
-- Windows 11 Enterprise E5 ou A5
+- Windows 11 Entreprise E5 ou A5
 - Enterprise Mobility + Security (EMS) E5 ou A5 
 - Office 365 E5 ou A5
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité 
+- Microsoft Defender pour l’identité 
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
 
@@ -60,17 +60,16 @@ Pour plus d’informations, [consultez les plans Microsoft 365 Entreprise servic
 Go to Centre d'administration Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
 >[!NOTE]
-> Le rôle d’administrateur  de facturation ou de lecteur **global** dans [Azure AD](/azure/active-directory/roles/permissions-reference) doit vous être attribué pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
+> Vous devez avoir le  rôle  d’administrateur de facturation ou de lecteur global [dans Azure AD](/azure/active-directory/roles/permissions-reference) pour pouvoir voir les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
 
 ## <a name="required-permissions"></a>Autorisations requises
-Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, consultez la liste des rôles nécessaires pour gérer [l’accès Microsoft 365 Defender](m365d-permissions.md).
+Vous devez être administrateur **général ou** **administrateur** de sécurité dans Azure Active Directory pour activer Microsoft 365 Defender. Pour obtenir la liste des rôles requis pour utiliser les Microsoft 365 Defender et des informations sur la façon dont l’accès aux données est réglementé, consultez la liste des rôles de gestion de [l’accès Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 Accédez Microsoft 365 Defender le portail Microsoft 365 Defender à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de tout navigateur web conforme HTML 5.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité aux états-Unis Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et à d’autres institutions gouvernementales américaines
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- États-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
 - États-Unis Cloud de la communauté du secteur public élevé (Cloud de la communauté du secteur public élevé)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
@@ -87,7 +86,7 @@ Actuellement, l’intégration de Microsoft Defender for Office 365 dans les fon
 - Émirats arabes unis 
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 - [Gérer l’accès et les autorisations](m365d-permissions.md)

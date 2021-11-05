@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701936"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792567"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -189,10 +189,10 @@ Les étiquettes de rétention peuvent être publiées à différents emplacement
   
 | Si l’étiquette de rétention est... | La stratégie d’étiquette peut être appliquée à... |
 |:-----|:-----|
-|Publiée pour les administrateurs et les utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
-|Appliquée automatiquement en fonction des types d’informations sensibles ou des classifieurs entraînables  <br/> |Exchange, SharePoint, OneDrive  <br/> |
-|Appliquée automatiquement en fonction d’une requête ou de mots clés  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
-|Appliqué automatiquement aux pièces jointes cloud  <br/> |SharePoint, OneDrive, Microsoft 365 groupes  <br/> |
+|Publiée pour les administrateurs et les utilisateurs finaux  |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  |
+|Appliquée automatiquement en fonction des types d’informations sensibles ou des classifieurs entraînables  |Exchange, SharePoint, OneDrive  |
+|Appliquée automatiquement en fonction d’une requête ou de mots clés  |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  |
+|Appliqué automatiquement aux pièces jointes cloud  |SharePoint, OneDrive, Microsoft 365 groupes  |
 
 Les dossiers publics Exchange, les messages Skype, Teams et Yammer ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu de ces emplacements, utilisez plutôt des stratégies de rétention.
 
@@ -285,7 +285,7 @@ Lorsque vous créez une stratégie de rétention ou une stratégie d’étiquett
 
 - Une **étendue statique** n’utilise pas de requêtes et est limitée dans la configuration dans la façon dont elle peut s’appliquer à toutes les instances pour un emplacement spécifié, ou utiliser l’inclusion et les exclusions pour des instances spécifiques pour cet emplacement. Ces trois choix sont parfois appelés « à l’échelle de l’organisation », « inclut » et « exclut » respectivement.
     
-    Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue statique qui sélectionne les Exchange et les OneDrive de comptes pour la stratégie. Pour l’emplacement de messagerie Exchange, vous pouvez identifier un groupe qui contient uniquement les cadres. Vous spécifiez donc ce groupe pour la stratégie de rétention, et l’appartenance au groupe avec les adresses de messagerie respectives est récupérée lors de la création de la stratégie. Pour l'emplacement des comptes OneDrive, vous devez identifier et ensuite spécifier des URL OneDrive individuels pour chaque cadre. Pour les nouveaux cadres, vous devez reconfigurer la stratégie de rétention pour ajouter les nouvelles adresses e-mail et OneDrive URL. Vous devez également mettre à jour les URL OneDrive chaque fois qu'il y a un changement dans l'UPN d'un cadre.
+    Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue statique qui sélectionne les Exchange et les OneDrive de comptes pour la stratégie. Pour l’emplacement de messagerie Exchange, vous pouvez identifier un groupe qui contient uniquement les cadres. Vous spécifiez donc ce groupe pour la stratégie de rétention, et l’appartenance au groupe avec les adresses de messagerie respectives est récupérée lors de la création de la stratégie. Pour l'emplacement des comptes OneDrive, vous devez identifier et ensuite spécifier des URL OneDrive individuels pour chaque cadre. Pour les nouveaux cadres, vous devez reconfigurer la stratégie de rétention pour ajouter les nouvelles adresses e-mail et OneDrive URL. Vous devez également mettre à jour les URL OneDrive lors de chaque modification du nom d’utilisateur principal (UPN) d’un cadre.
     
     OneDrive Les URL sont particulièrement difficiles à spécifier de manière fiable, car par défaut, ces URL ne sont pas créées tant que l’utilisateur n’a pas accédé à sa OneDrive pour la première fois. Et si l’UPN d’un utilisateur change, ce que vous ne connaissez peut-être pas, son URL OneDrive change automatiquement.
 
@@ -417,7 +417,7 @@ Les exemples suivants sont pour complexes pour illustrer les principes de réten
     
     **Résultat**: l’élément est conservé pendant sept ans, car la rétention a la priorité sur la suppression et la période de rétention la plus longue est de sept ans pour l’élément. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression des stratégies de rétention.
     
-    Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, l’élément le plus ancien possible peut être définitivement supprimé à la fin de la période de rétention la plus longue, qui dépasse les deux dates de suppression. 
+    Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, la période la plus proche à laquelle l’élément peut être supprimé définitivement est à la fin de la période de rétention la plus longue, qui est plus longue que les deux dates de suppression. 
 
 2.  Ces paramètres de rétention sont appliqués à un élément :
     
@@ -437,15 +437,35 @@ Vous devez appliquer un verrou de conservation une fois la stratégie de rétent
 
 ## <a name="releasing-a-policy-for-retention"></a>Publication d’une stratégie de rétention
 
-Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la stratégie, mais modifier l’état d’emplacement comme désactivé, ou désactiver la stratégie. Si votre stratégie est configurée pour inclure des sites spécifiques pour SharePoint ou des comptes pour OneDrive, vous pouvez également modifier la stratégie pour supprimer une ou plusieurs de ces entrées afin de publier la stratégie pour ces sites ou comptes.
- 
-Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive soumis à la conservation en vertu de la stratégie est conservé pendant 30 jours afin d'éviter toute perte de données par inadvertance. Pendant cette période de grâce de 30 jours, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
+La fourniture de vos stratégies de rétention n’a pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui permet de désactiver efficacement les paramètres de rétention d’une stratégie de rétention et les étiquettes de rétention ne peuvent plus être appliquées à partir des stratégies d’étiquette de rétention. Toutes les étiquettes de rétention précédemment appliquées restent avec leurs paramètres de rétention configurés et, pour ces étiquettes, vous pouvez encore mettre à jour la période de rétention lorsqu’elle n’est pas basée sur la période où les éléments ont été étiquetés.
 
-Une exception à cette période de grâce de 30 jours est effective lorsque vous mettez à jour la stratégie pour exclure un ou plusieurs sites pour SharePoint ou des comptes pour OneDrive. Dans ce cas, le travail du minuteur supprime les fichiers de ces emplacements dans la bibliothèque de conservation et de préservation des documents sans le délai de 30 jours.
+Vous pouvez également conserver une stratégie, mais désactiver l’état de l’emplacement ou désactiver la stratégie. Une autre option consiste à reconfigurer la stratégie afin qu’elle n’inclut plus des utilisateurs, des sites, des groupes spécifiques, etc. 
 
-Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+Informations supplémentaires pour des emplacements spécifiques :
 
-En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
+- **Sites SharePoint et comptes OneDrive :**
+    
+    Lorsque vous publiez une stratégie de rétention pour les sites SharePoint et les comptes OneDrive, tout contenu soumis à une rétention de la stratégie continue d’être conservé pendant 30 jours afin d’éviter toute perte de données accidentelle. Pendant cette période de grâce de 30 jours, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
+    
+    Une exception à cette période de grâce de 30 jours est effective lorsque vous mettez à jour la stratégie pour exclure un ou plusieurs sites pour SharePoint ou des comptes pour OneDrive. Dans ce cas, le travail du minuteur supprime les fichiers de ces emplacements dans la bibliothèque de conservation et de préservation des documents sans le délai de 30 jours.
+    
+    Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+    
+    En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
+
+- **Courrier Exchange et groupes Microsoft 365**
+    
+    Lorsque vous publiez une stratégie de rétention pour les boîtes aux lettres [inactives](inactive-mailboxes-in-office-365.md) au moment de la publication de la stratégie :
+    
+    - Si la stratégie de rétention est explicitement appliquée à une boîte aux lettres, les paramètres de rétention ne s’appliquent plus. Si aucun paramètre de rétention n’est appliqué, une boîte aux lettres inactive peut être automatiquement supprimée de la manière habituelle.
+        
+        Une stratégie de rétention explicite nécessite soit une étendue de stratégie adaptative, soit une étendue de stratégie statique avec une configuration Inclure qui a spécifié une boîte aux lettres active au moment où la stratégie a été appliquée et est devenue inactive par la suite
+    
+    - Si la stratégie de rétention est implicitement appliquée à une boîte aux lettres et que l’action de rétention configurée est de conserver, la stratégie de rétention continue de s’appliquer et une boîte aux lettres inactive ne devient jamais éligible pour la suppression automatique. Lorsque l’action de rétention ne s’applique plus car la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer manuellement la boîte aux lettres inactive](delete-an-inactive-mailbox.md)
+        
+        Une stratégie de rétention implicite nécessite une étendue de stratégie statique avec la configuration **Tous les destinataires** (pour le courrier Exchange) ou **Tous les groupes** (pour les groupes Microsoft 365).
+    
+    Pour plus d’informations sur les boîtes aux lettres inactives ayant des stratégies de rétention appliquées, voir [Boîtes aux lettres inactives et stratégies de rétention Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Audit de la configuration et des actions de rétention
 
@@ -473,7 +493,7 @@ Les actions de rétention qui sont journalisées comme événements d’audit so
 - Lorsqu’un élément étiqueté dans SharePoint, OneDrive ou Exchange est marqué comme enregistrement ou enregistrement réglementaire et qu’il définitivement supprimé :
     - Dans **Activités sur les fichiers et les pages**, sélectionnez **Fichier supprimé marqué comme enregistrement**
 
-- Lorsqu’un relecteur de disposition prend des mesures pour un élément qui a atteint la fin de sa période de rétention :
+- Lorsqu’un réviseur de destruction prend des mesures pour un élément qui a atteint la fin de sa période de rétention :
     -  Dans **Activités de révision de disposition**, sélectionnez **Élimination approuvée**, **Période de rétention étendue**, **Éléments réétiquetés** ou **Relecteurs ajoutés**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
