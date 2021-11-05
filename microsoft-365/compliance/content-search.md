@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: e3d8ee540ab403eb2e3ebeaf930d498599be530a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364686"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754900"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
@@ -45,7 +46,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 ## <a name="before-you-run-a-search"></a>Avant d’exécuter une recherche
 
-- Pour accéder à la page Recherche de contenu dans le centre de conformité Microsoft 365 (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
+- Pour accéder à l’outil de recherche de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la mise en conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
 
 - Dans un déploiement Exchange hybride, vous ne pouvez pas utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres sur site. Vous pouvez uniquement utiliser l’outil pour rechercher des boîtes mail dans le cloud.
 

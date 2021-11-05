@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168685"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747775"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -67,7 +68,7 @@ L’accès à l’explorateur de contenu est fortement restreint, car il vous pe
 > [!IMPORTANT]
 > Ces autorisations remplacent les autorisations attribuées localement aux éléments, ce qui permet d’afficher le contenu. 
 
-Il existe deux rôles qui accordent l’accès à l’Explorateur de contenu et il est accordé à l’aide du [Centre de conformité](https://compliance.microsoft.com/permissions) :
+Il existe deux rôles qui accordent l’accès à l’Explorateur de contenu via le <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centre de conformité Microsoft 365</a> :
 
 - **Visionneuse de liste de l’explorateur de contenu** : l’appartenance à ce groupe de rôle vous permet d’afficher chaque élément et son emplacement dans la liste. Le rôle `data classification list viewer` a été pré-attribué à ce groupe de rôles.
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd35fb91fbc0fb43f19f95cb417a3e78bd9d2975
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206396"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756904"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -107,20 +107,19 @@ Pour configurer une équipe pour l’isolation de la sécurité, nous allons uti
 
 Si vous avez un partenaire interne ou un groupe des parties prenantes devant pouvoir afficher les documents chiffrés, mais pas les modifier, vous pouvez les ajouter à l’étiquette avec les autorisations d’affichage seul. Vous pouvez ensuite ajouter ces personnes au site SharePoint de l’équipe avec des autorisations de lecture, et accéder en lecture seule au site où sont conservées les documents, mais pas à l’équipe elle-même.
 
-
 Pour créer une étiquette de confidentialité
-1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
-2. Sous **Solutions**, cliquez sur **Protection des informations**.
-3. Cliquez sur **Créer une étiquette**.
-4. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
-5. Tapez un nom et une description, puis cliquez sur **Suivant**.
-6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
-7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
-8. Sur la page **Chiffrement**, sélectionnez **Configurer les paramètres de chiffrement**.
-9. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez l’équipe que vous avez créée, puis cliquez sur **Ajouter**
-10. Cliquez sur **Choisir les autorisations**.
-11. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.
-12. Si vous voulez inclure des utilisateurs ou des groupes qui ont accès en lecture seule aux fichiers avec l’étiquette :
+
+1. Ouvrez le Centre de conformité Microsoft 365, puis sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations.**</a>
+1. Cliquez sur **Créer une étiquette**.
+1. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
+1. Tapez un nom et une description, puis cliquez sur **Suivant**.
+1. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
+1. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
+1. Sur la page **Chiffrement**, sélectionnez **Configurer les paramètres de chiffrement**.
+1. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez l’équipe que vous avez créée, puis cliquez sur **Ajouter**
+1. Cliquez sur **Choisir les autorisations**.
+1. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.
+1. Si vous voulez inclure des utilisateurs ou des groupes qui ont accès en lecture seule aux fichiers avec l’étiquette :
     1. Cliquez sur **Attribuer des autorisations**.
     1. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez les utilisateurs ou les groupes que vous voulez ajouter, puis cliquez sur **Ajouter**.
     1. Cliquez sur **Choisir les autorisations**.
@@ -140,8 +139,9 @@ Pour créer une étiquette de confidentialité
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Dans ce cas, l’étiquette est disponible uniquement pour les membres de l’équipe.
 
-Pour publier une étiquette de confidentialité
-1. Dans le Centre de conformité Microsoft 365, dans la page **protection des informations**, sélectionnez l’onglet **Stratégies d’étiquette**.
+Pour publier une étiquette de confidentialité :
+
+1. Dans la Centre de conformité Microsoft 365, sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations**</a>, choisissez l’onglet **Stratégies d’étiquette.**
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez l’étiquette que vous avez créée, puis cliquez sur **Ajouter**.

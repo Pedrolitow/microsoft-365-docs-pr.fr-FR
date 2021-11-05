@@ -17,13 +17,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1749b51367bda90945e0d8e61e9674acc5077b6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167329"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747721"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -73,7 +74,7 @@ Remove-Item $rawFile
 
 Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, une liste .csv ou .txt) importé dans le service ou par cmdlet PowerShell, depuis une liste à laquelle vous accédez directement dans la cmdlet PowerShell ou depuis un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
   
-1. Utilisez le **Centre de conformité** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) ou connectez-vous à **Sécurité &amp; PowerShell du centre de conformité**.
+1. Utilisez le *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou connectez-vous au Centre de conformité de **sécurité &amp; PowerShell**.
     
 2. **Définissez ou chargez vos mots clés à partir de la source prévue**. L’Assistant et la cmdlet acceptent tous deux une liste de mots clés séparés par des virgules pour la création d’un dictionnaire de mots clés personnalisé. Cette étape varie donc légèrement en fonction de l’origine de vos mots clés. Une fois chargés, ils sont codés et convertis en tableau d’octets avant leur importation.
     
@@ -83,7 +84,7 @@ Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le pl
 
 Procédez comme suit pour créer et importer des mots clés pour un dictionnaire personnalisé :
 
-1. Connectez-vous au Centre de conformité ([https://compliance.microsoft.com](https://compliance.microsoft.com)).
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
 2. Accédez à **Classifications > Types d’informations sensibles**.
 

@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: e89edb32e3af5fc661a8f22870e8b7097faf82e2
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264911"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754350"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -243,13 +244,13 @@ Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applicatio
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Utiliser le tableau de bord de gestion des alertes pour afficher les alertes DLP dans Chrome
 
-1. Ouvrez la page **Protection contre la perte de données** dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), puis sélectionnez **Alertes**.
+1. Ouvrez la page **Protection contre la perte de données** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> puis sélectionnez **Alertes**.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Affichage de données DLP dans l’Explorateur d’activités
 
-1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez **Explorateur d’activités**.
+1. Ouvrez la [page Classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> puis choisissez **Explorateur d’activités**.
 
 2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
 
