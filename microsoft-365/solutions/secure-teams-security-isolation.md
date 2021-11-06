@@ -14,14 +14,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkCOMPLIANCE
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: dd35fb91fbc0fb43f19f95cb417a3e78bd9d2975
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756904"
+ms.locfileid: "60785881"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -109,7 +110,7 @@ Si vous avez un partenaire interne ou un groupe des parties prenantes devant pou
 
 Pour créer une étiquette de confidentialité
 
-1. Ouvrez le Centre de conformité Microsoft 365, puis sous **Solutions**, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations.**</a>
+1. Ouvrez le Centre de conformité Microsoft 365, puis sous **Solutions,** sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations.**</a>
 1. Cliquez sur **Créer une étiquette**.
 1. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
 1. Tapez un nom et une description, puis cliquez sur **Suivant**.
@@ -139,9 +140,9 @@ Pour créer une étiquette de confidentialité
 
 Une fois que vous avez créé l’étiquette, vous devez la publier aux utilisateurs qui l’utiliseront. Dans ce cas, l’étiquette est disponible uniquement pour les membres de l’équipe.
 
-Pour publier une étiquette de confidentialité :
+Pour publier une étiquette de niveau de sensibilité :
 
-1. Dans la Centre de conformité Microsoft 365, sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des informations**</a>, choisissez l’onglet **Stratégies d’étiquette.**
+1. Dans la Centre de conformité Microsoft 365, dans la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Protection des** informations,</a>choisissez l’onglet **Stratégies d’étiquette.**
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez l’étiquette que vous avez créée, puis cliquez sur **Ajouter**.
