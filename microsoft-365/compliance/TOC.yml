@@ -880,6 +880,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Champs de métadonnées de document
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Configurer les versions historiques
+              href: advanced-ediscovery-historical-versions.md
             - name: Configurer la détection du privilège client-avocat
               href: attorney-privilege-detection.md
             - name: Attribution d’autorisations de eDiscovery

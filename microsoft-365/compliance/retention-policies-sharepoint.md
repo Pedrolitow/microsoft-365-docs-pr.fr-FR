@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1194ba1aa2367980207d33e2ca4020b8e0ba57d1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665112"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753070"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -151,7 +151,9 @@ Lorsqu’un utilisateur quitte votre organisation, le contenu qu’il a créé n
 
 **OneDrive** :
 
-Si un utilisateur quitte votre organisation, tous les fichiers soumis à une stratégie de rétention ou contenant des étiquettes de rétention sont conservés pendant toute la durée de la stratégie ou de l’étiquette. Pendant cette période, tous les accès partagés continuent de fonctionner. À expiration de la période de rétention, le contenu est placé dans la Corbeille de collections de sites et n’est accessible à personne, à l’exception de l’administrateur. Si un document est marqué en tant qu’enregistrement par une étiquette de rétention, il est conservé jusqu’à la fin de la période de rétention, après quoi le contenu est définitivement supprimé.
+Si un utilisateur quitte votre organisation, tous les fichiers qui sont soumis à une politique de conservation ou qui ont un label de conservation resteront soumis aux paramètres de conservation pour la durée de la période de conservation spécifiée dans la politique ou le label. Pendant ce temps, tout l’accès au partage continue de fonctionner et le contenu reste découvrable par la recherche de contenu et eDiscovery. 
+
+Lorsque la période de rétention expire et que les paramètres de rétention incluent une action de suppression, le contenu se déplace dans la Corbeille de la collection de sites et n’est accessible à personne sauf à l’administrateur.
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 

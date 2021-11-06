@@ -12,16 +12,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151349"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753666"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
@@ -215,7 +216,7 @@ Dans la boîte de recherche, tapez **RefinableString00: « Spécification du pro
 
 Maintenant que vérification a été faite que la requête KQL fonctionne, créons une stratégie d’application automatique d'étiquettes utilisant une requête KQL pour appliquer automatiquement l'étiquette de rétention Spécification du produit sur les documents appropriés.
 
-1. Dans le [centre de conformité](https://compliance.microsoft.com/homepage), allez à **Gestion des enregistrements** > **Politiques d'étiquetage** > **Appliquer automatiquement un label**.                
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez aux **stratégies** d’étiquette de gestion des enregistrements  >  **appliquer**  >  **automatiquement une étiquette.**
 
    [ ![Sélectionnez « Auto-appliquer un label » sur la page Label](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 

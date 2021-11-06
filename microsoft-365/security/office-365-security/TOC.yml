@@ -126,8 +126,16 @@
           href: install-app-guard.md
     - name: Migrer
       items:
-        - name: 'Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort'
-          href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+        - name: Migrer d'un service ou d'un dispositif de protection tiers vers Defender for Office 365
+          items:
+            - name: Migrer d'un service ou d'un dispositif de protection tiers vers Defender for Office 365
+              href: migrate-to-defender-for-office-365.md
+            - name: 'Migrer à la phase 1 : préparation'
+              href: migrate-to-defender-for-office-365-prepare.md
+            - name: 'Migrer à la phase 2 : configuration'
+              href: migrate-to-defender-for-office-365-setup.md
+            - name: 'Migrer à la phase 3 : intégration'
+              href: migrate-to-defender-for-office-365-onboard.md
     - name: Empêcher
       items:
         - name: Configurer votre client pour une sécurité accrue
