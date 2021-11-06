@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: c0e7efb9770c870210265b951a74012fb21e1b2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203242"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804976"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -514,7 +514,7 @@ Lorsque vous chargez votre fichier XML de package de règles, le système valid
 
 - Chaque type d’informations sensibles personnalisé peut contenir un total maximum de 2 048 mots clés.
 
-- La taille maximale des dictionnaires de mots clés dans un client est de 1 Mo au format compressé. Faites référence au même dictionnaire autant de fois que nécessaire lors de la création de types d’informations sensibles personnalisés. Commencez par créer des listes de mots clés personnalisés dans le type informations sensibles, puis utilisez des dictionnaires de mots clés si une liste de mots clés en comporte plus de 2048 ou si un mot clé comporte plus de 50 caractères.
+- La taille maximale des dictionnaires de mots clés dans un seul client est de 480 000 To compressées pour se conformer aux limites du schéma AD. Faites référence au même dictionnaire autant de fois que nécessaire lors de la création de types d’informations sensibles personnalisés. Commencez par créer des listes de mots clés personnalisés dans le type informations sensibles, puis utilisez des dictionnaires de mots clés si une liste de mots clés en comporte plus de 2048 ou si un mot clé comporte plus de 50 caractères.
 
 - Un maximum de 50 types d’informations sensibles basés sur un dictionnaire de mots clés sont autorisés dans un client.
 

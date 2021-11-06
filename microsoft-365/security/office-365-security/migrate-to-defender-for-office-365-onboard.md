@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Effectuer les étapes de migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a218aa1e86bd696079bb2c77b630bcf870bc0c25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a40ee22ee843d250c90a8b03526ab61fe3ad56f6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779115"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804640"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 3 : Intégration
 
@@ -39,7 +39,7 @@ ms.locfileid: "60779115"
 
 Bienvenue dans **la phase 3 : intégration de** votre migration vers Microsoft Defender pour **[Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! Cette phase de migration comprend les étapes suivantes :
 
-1. [Commencer l’intégration des Teams](#step-1-begin-onboarding-security-teams)
+1. [Commencer l’intégration de la sécurité Teams](#step-1-begin-onboarding-security-teams)
 2. [(Facultatif) Exempter les utilisateurs pilotes du filtrage par votre service de protection existant](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
 3. [Régler la veille contre l’usurpation d’informations](#step-3-tune-spoof-intelligence)
 4. [Régler la protection contre l’emprunt d’identité et l’intelligence des boîtes aux lettres](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
@@ -59,7 +59,7 @@ Si votre organisation dispose d’une équipe de réponse à la sécurité, il e
 - Régler et personnaliser les [alertes pour](../../compliance/alert-policies.md) les processus organisationnels.
 - Gérez la file d’attente des incidents et remédiez aux risques potentiels.
 
-Si votre organisation a acheté Microsoft Defender pour Office 365 Plan 2, elle doit commencer à se familiariser avec les fonctionnalités telles que l’Explorateur de menaces, la recherche avancée et les incidents. Pour obtenir des formations pertinentes, voir <https://aka.ms/mdoninja> .
+Si votre organisation a acheté Microsoft Defender pour Office 365 Plan 2, elle doit commencer à se familiariser et à utiliser des fonctionnalités telles que l’Explorateur de menaces, la recherche avancée et les incidents. Pour obtenir des formations pertinentes, voir <https://aka.ms/mdoninja> .
 
 Si votre équipe de réponse à la sécurité collecte et analyse les messages non filtrés, vous pouvez configurer une boîte aux lettres SecOps pour recevoir ces messages non filtrés. Pour obtenir des instructions, voir Configurer les boîtes aux lettres [SecOps dans la stratégie de remise avancée.](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
@@ -72,16 +72,16 @@ Pour plus d’informations sur l’intégration à votre SIEM/CASER, consultez l
 - [API de recherche avancée de menaces](/microsoft-365/security/defender/api-advanced-hunting)
 - [API d’incidents](/microsoft-365/security/defender/api-incident)
 
-Si votre organisation ne dispose pas d’une équipe de réponse à la sécurité ou de flux de processus existants, vous pouvez utiliser ce moment pour vous familiariser avec les fonctionnalités de recherche et de réponse de base dans Defender pour Office 365. Pour plus d’informations, voir [Examen et réponse aux menaces.](office-365-ti.md)
+Si votre organisation ne dispose pas d’une équipe de réponse à la sécurité ou de flux de processus existants, vous pouvez utiliser ce moment pour vous familiariser avec les fonctionnalités de recherche et de réponse de base dans Defender pour Office 365. Pour plus d’informations, voir [Examen des menaces et réponse.](office-365-ti.md)
 
 ### <a name="rbac-roles"></a>Rôles RBAC
 
 Les autorisations dans Defender pour Office 365 sont basées sur le contrôle d’accès basé sur un rôle (RBAC) et sont expliquées dans autorisations dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Voici les points importants à garder à l’esprit :
 
-- Azure AD rôles donnent des autorisations à **toutes les charges** de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Azure, il a des autorisations d’administrateur de sécurité partout.
+- Azure AD donnent des autorisations à toutes **les charges** de travail dans Microsoft 365. Par exemple, si vous ajoutez un utilisateur à l’administrateur de sécurité dans le portail Azure, il a des autorisations d’administrateur de sécurité partout.
 - Les & de collaboration dans le portail Microsoft 365 Defender donnent des autorisations sur le portail Microsoft 365 Defender, le Centre de conformité Microsoft 365 et l’ancien Centre de sécurité & conformité. Par exemple, si vous ajoutez un utilisateur à l’administrateur de  sécurité dans le portail Microsoft 365 Defender, il n’a accès qu’au portail Microsoft 365 Defender, au Centre de conformité Microsoft 365 et au Centre de conformité des & de sécurité.
 - De nombreuses fonctionnalités du portail Microsoft 365 Defender sont basées sur des cmdlets PowerShell Exchange Online et nécessitent donc l’appartenance à un groupe de rôles dans les rôles correspondants (techniquement, les groupes de rôles) dans Exchange Online (en particulier, pour l’accès au Exchange Online Cmdlets PowerShell).
-- Il existe des rôles de collaboration de & de messagerie sur le portail Microsoft 365 Defender qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle Aperçu et le rôle Recherche et purge).
+- Il existe des rôles de collaboration de & de messagerie dans le portail Microsoft 365 Defender qui n’ont pas d’équivalent aux rôles Azure AD et qui sont importants pour les opérations de sécurité (par exemple, le rôle Aperçu et le rôle Recherche et purge).
 
 En règle générale, seul un sous-ensemble de personnel de sécurité a besoin de droits supplémentaires pour télécharger des messages directement à partir des boîtes aux lettres des utilisateurs. Cela nécessite une autorisation supplémentaire que le lecteur de sécurité n’a pas par défaut.
 
@@ -96,7 +96,7 @@ Bien que cette étape ne soit pas obligatoire, vous devez envisager de configure
 
 Vérifiez [les](learn-about-spoof-intelligence.md) informations sur l’usurpation d’informations sur l’usurpation d’informations pour voir ce qui est autorisé ou bloqué comme usurpation d’informations, et pour déterminer si vous devez remplacer le verdict du système pour l’usurpation d’informations. Certaines sources de vos e-mails critiques peuvent avoir des enregistrements d’authentification de courrier électronique configurés de manière incorrecte dans DNS (SPF, DKIM et DMARC) et vous pouvez utiliser des remplacements dans votre service de protection existant pour masquer leurs problèmes de domaine.
 
-La veille contre l’usurpation d’identité peut envoyer des messages électroniques provenant de domaines sans enregistrements d’authentification de courrier appropriés dans DNS, mais la fonctionnalité a parfois besoin d’aide pour distinguer l’usurpation d’identité correcte de l’usurpation d’identité. Concentrez-vous sur les types de sources de messages suivants :
+La veille contre l’usurpation d’identité peut envoyer des messages électroniques à partir de domaines sans enregistrements d’authentification de courrier appropriés dans DNS, mais la fonctionnalité a parfois besoin d’aide pour distinguer une bonne usurpation d’identité de l’usurpation d’identité. Concentrez-vous sur les types de sources de messages suivants :
 
 - Sources de messages en dehors des plages d’adresses IP définies dans [le filtrage amélioré pour les connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 - Sources de messages qui ont le plus grand nombre de messages.
@@ -112,10 +112,10 @@ Une fois que vous avez eu suffisamment de temps pour observer les résultats de 
 - Protection contre l’emprunt d’identité de domaine **: mettre en quarantaine le message** pour Standard et Strict.
 - Protection de l’intelligence des boîtes aux lettres : déplacer le message vers les **dossiers Courrier indésirable** des destinataires pour Standard ; **Mettre le message en quarantaine** pour Strict.
 
-Plus vous surveillez les résultats de la protection contre l’emprunt d’identité sans agir sur les messages, plus vous aurez à identifier les autoriser ou les blocs qui peuvent être requis. Envisagez d’utiliser un délai entre chaque protection qui est suffisamment significative pour permettre l’observation et l’ajustement.
+Plus vous surveillez les résultats de la protection contre l’emprunt d’identité sans agir sur les messages, plus vous devez identifier les données qui peuvent être requises. Envisagez d’utiliser un délai entre chaque protection qui est suffisamment significative pour permettre l’observation et l’ajustement.
 
 > [!NOTE]
-> Il est important d’assurer une surveillance et un réglage fréquents et continus de ces protections. Si vous pensez qu’il s’agit d’un faux positif, examinez la cause et utilisez les remplacements uniquement si nécessaire et uniquement pour la fonctionnalité de détection qui l’exige.
+> Il est important d’assurer une surveillance et un réglage fréquents et continus de ces protections. Si vous suspectez un faux positif, examinez la cause et utilisez les remplacements uniquement si nécessaire et uniquement pour la fonctionnalité de détection qui l’exige.
 
 ### <a name="tune-mailbox-intelligence"></a>Régler l’intelligence des boîtes aux lettres
 
@@ -125,7 +125,7 @@ Lorsque vous êtes prêt, faites les étapes suivantes pour autoriser l’intell
 
 - Dans la stratégie anti-hameçonnage avec les paramètres  de protection standard, modifiez la valeur si l’intelligence de boîte aux lettres détecte un utilisateur dont l’identité est usurpée pour déplacer le message vers les dossiers Courrier indésirable des **destinataires.**
 
-- Dans la stratégie anti-hameçonnage avec les paramètres stricts de protection, modifiez la valeur de **Si** l’intelligence de boîte aux lettres détecte et usurpe l’identité de l’utilisateur pour mettre **le message en quarantaine.**
+- Dans la stratégie anti-hameçonnage avec les paramètres de protection strict, modifiez la valeur de **Si** l’intelligence de boîte aux lettres détecte et usurpe l’identité de l’utilisateur pour mettre **le message en quarantaine.**
 
 Pour modifier les stratégies, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
@@ -206,7 +206,7 @@ Vous pouvez suspendre à ce stade pour l’enregistrement et le réglage des don
 >
 > - Vous devez envisager de commencer par modifier les domaines qui sont utilisés moins fréquemment. Vous pouvez suspendre et surveiller avant de passer à des domaines plus importants. Toutefois, même si vous le faites, vous devez vous assurer que tous les utilisateurs et domaines sont couverts par les stratégies, car les domaines SMTP secondaires sont résolus en domaines principaux avant l’application de stratégie.
 >   
-> - Plusieurs enregistrements MX pour un seul domaine fonctionnent techniquement, ce qui vous permet d’avoir un routage fractioné, à condition que vous suiviez toutes les instructions de cet article. Plus précisément, vous devez vous assurer que les stratégies sont appliquées à tous les utilisateurs, que la règle de flux de messagerie SCL=-1 est appliquée uniquement aux messages qui transitent par votre service de protection existant, comme décrit à l’étape 3 du programme d’installation : gérer ou créer la règle de flux de messagerie [SCL=-1.](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule) Toutefois, cette configuration introduit un comportement qui rend la résolution des problèmes beaucoup plus difficile, et par conséquent, nous ne le recommandons généralement pas, en particulier pour des périodes de temps prolongées.
+> - Plusieurs enregistrements MX pour un seul domaine fonctionnent techniquement, ce qui vous permet d’avoir un routage fractioné, à condition que vous suiviez toutes les instructions de cet article. Plus précisément, vous devez vous assurer que les stratégies sont appliquées à tous les utilisateurs, que la règle de flux de messagerie SCL=-1 est appliquée uniquement aux messages qui transitent par votre service de protection existant, comme décrit à l’étape d’installation 3 : Gérer ou créer la règle de flux de messagerie [SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Toutefois, cette configuration introduit un comportement qui rend la résolution des problèmes beaucoup plus difficile, et par conséquent, nous ne le recommandons généralement pas, en particulier pour des périodes de temps prolongées.
 >
 > - Avant de changer vos enregistrements MX, vérifiez que les paramètres suivants ne sont pas activés sur le connecteur entrant du service de protection vers Microsoft 365. En règle générale, un ou plusieurs des paramètres suivants sont configurés pour le connecteur :
 >
@@ -229,4 +229,4 @@ Maintenant, vous commencez le fonctionnement normal et la maintenance de Defende
 
 - Examinez les soumissions d’utilisateurs, en [particulier les messages de hameçonnage signalés par l’utilisateur.](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - Passer en revue les remplacements dans le rapport [d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
-- Utilisez [des requêtes de recherche](/microsoft-365/security/defender/advanced-hunting-example.md) avancée pour rechercher des opportunités de réglage et des messages à risque.
+- Utilisez [des requêtes de recherche](/microsoft-365/security/defender/advanced-hunting-example) avancée pour rechercher des opportunités de réglage et des messages à risque.

@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5d22bba679d604b0b3a78a9555cc8a2277a66ac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0451d875f149a875872f5d5a32d3580015dbfb0e
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205186"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804875"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprendre les concepts de veille des menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,20 +37,20 @@ ms.locfileid: "60205186"
 
 Les attaques de cybersécurité avancées comprennent plusieurs événements malveillants complexes, attributs et informations contextuelles. L’identification et le choix des activités éligibles comme suspectes peuvent être une tâche difficile. Votre connaissance des attributs connus et des activités anormales propres à votre secteur d’activité est fondamentale pour savoir quand appeler un comportement observé comme suspect.
 
-Avec Microsoft Defender pour point de terminaison, vous pouvez créer des alertes contre les menaces personnalisées qui peuvent vous aider à suivre les activités d’attaques possibles dans votre organisation. Vous pouvez indicateurs d’événements suspects pour rassembler des indices et éventuellement arrêter une chaîne d’attaques. Ces alertes de menace personnalisées s’affichent uniquement dans votre organisation et indicateurs les événements que vous lui définissez pour suivre.
+Avec Microsoft 365 Defender, vous pouvez créer des alertes contre les menaces personnalisées qui peuvent vous aider à suivre les activités d’attaques possibles dans votre organisation. Vous pouvez indicateurs d’événements suspects pour rassembler des indices et éventuellement arrêter une chaîne d’attaques. Ces alertes de menace personnalisées s’affichent uniquement dans votre organisation et indicateurs les événements que vous lui définissez pour suivre.
 
-Avant de créer des alertes contre les menaces personnalisées, il est important de connaître les concepts sous-tels que les définitions d’alerte et les indicateurs de compromission et la relation entre elles.
+Avant de créer des alertes contre les menaces personnalisées, il est important de connaître les concepts sous-tels que les définitions d’alertes et les indicateurs de compromission et la relation entre elles.
 
 ## <a name="alert-definitions"></a>Définitions d’alerte
 Les définitions d’alerte sont des attributs contextuels qui peuvent être utilisés collectivement pour identifier les indices précoces sur une possible attaque de cybersécurité. Ces indicateurs sont généralement une combinaison d’activités, de caractéristiques et d’actions entreprises par un attaquant pour atteindre l’objectif d’une attaque. La surveillance de ces combinaisons d’attributs est essentielle pour obtenir un point de garde contre les attaques et éventuellement interférer avec la chaîne d’événements avant d’atteindre l’objectif d’un attaquant.
 
 ## <a name="indicators-of-compromise-ioc"></a>Indicateurs de compromis (IOC)
-Les E/S sont des événements malveillants connus individuellement qui indiquent qu’un réseau ou un appareil a déjà été enfreint. Contrairement aux définitions d’alerte, ces indicateurs sont considérés comme des preuves d’une violation. Elles sont souvent vues après qu’une attaque a déjà été effectuée et que l’objectif a été atteint, par exemple l’exfiltration. Il est également important d’assurer le suivi des IOCS pendant les enquêtes d’investigation. Bien qu’il ne fournisse pas la possibilité d’intervenir avec une chaîne d’attaques, la collecte de ces indicateurs peut être utile pour créer de meilleures défenses en cas d’attaques futures possibles.
+Les E/S sont des événements malveillants connus individuellement qui indiquent qu’un réseau ou un appareil a déjà été enfreint. Contrairement aux définitions d’alerte, ces indicateurs sont considérés comme des preuves d’une violation. Elles sont souvent vues après qu’une attaque a déjà été effectuée et que l’objectif a été atteint, par exemple l’exfiltration. Il est également important de suivre les IOCS pendant les enquêtes d’investigation. Bien qu’il ne puisse pas intervenir avec une chaîne d’attaques, la collecte de ces indicateurs peut être utile pour créer de meilleures défenses en cas d’attaques futures.
 
 ## <a name="relationship-between-alert-definitions-and-iocs"></a>Relation entre les définitions d’alerte et les IOCs
-Dans le contexte de Microsoft Defender pour le point de terminaison, les définitions d’alerte sont des conteneurs pour les IOC et définissent l’alerte, y compris les métadonnées qui sont élevées en cas de correspondance d’IOC spécifique. Diverses métadonnées sont fournies dans le cadre des définitions d’alerte. Les métadonnées telles que le nom de définition d’alerte de l’attaque, la gravité et la description sont fournies avec d’autres options.
+Dans le contexte de Microsoft 365 Defender et de Microsoft Defender pour le point de terminaison, les définitions d’alerte sont des conteneurs pour les IOC et définissent l’alerte, y compris les métadonnées qui sont élevées pour une correspondance IOC spécifique. Diverses métadonnées sont fournies dans le cadre des définitions d’alerte. Les métadonnées telles que le nom de définition d’alerte de l’attaque, la gravité et la description sont fournies avec d’autres options.
 
-Chaque IOC définit la logique de détection concrète en fonction de son type et de sa valeur, ainsi que de son action, qui détermine la façon dont elle est mise en correspondance. Il est lié à une définition d’alerte spécifique qui définit la façon dont une détection est affichée en tant qu’alerte sur la console Microsoft Defender for Endpoint.
+Chaque IOC définit la logique de détection concrète en fonction de son type, de sa valeur et de son action, qui détermine la façon dont elle est mise en correspondance. Il est lié à une définition d’alerte spécifique qui définit la façon dont une détection est affichée en tant qu’alerte sur la console Microsoft 365 Defender.
 
 Voici un exemple d’IOC :
 - Type : Sha1
@@ -58,19 +58,6 @@ Voici un exemple d’IOC :
 - Action : est égal à
 
 Les IOC ont une relation plusieurs-à-un avec des définitions d’alertes de telle façon qu’une définition d’alerte peut avoir de nombreux IOC qui lui correspondent.
-
-## <a name="in-this-section"></a>Dans cette section
-
-Rubrique | Description
-:---|:---
-[Tirer les détections vers vos outils SIEM](configure-siem.md)| Découvrez les différentes façons d’en tirer les détections.
-[Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)| Découvrez comment activer la fonctionnalité d’intégration SIEM dans la page **Paramètres** du portail afin de pouvoir utiliser et générer les informations requises pour configurer les outils SIEM pris en charge.
-[Configurer Splunk pour tirer Microsoft Defender pour les détections de points de terminaison](configure-siem.md)| Découvrez comment installer l’application REST API Modular Input et d’autres paramètres de configuration pour permettre à Splunk d’obtenir Microsoft Defender pour les détections de points de terminaison.
-[Configurer HP ArcSight pour tirer microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)| Découvrez comment installer le package HP ArcSight REST FlexConnector et les fichiers dont vous avez besoin pour configurer ArcSight afin d’obtenir Microsoft Defender pour les détections de points de terminaison.
-[Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md) | Comprendre les champs de données qui sont exposés dans le cadre de l’API d’alertes et comment ils sont map Centre de sécurité Microsoft Defender.
-[Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST](pull-alerts-using-rest-api.md) | Utilisez le flux OAuth 2.0 d’informations d’identification client pour tirer les détections de Microsoft Defender pour point de terminaison à l’aide de l’API REST.
-[Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md) | Résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de la fonctionnalité d’intégration SIEM.
-
 
 
 ## <a name="related-topics"></a>Rubriques connexes

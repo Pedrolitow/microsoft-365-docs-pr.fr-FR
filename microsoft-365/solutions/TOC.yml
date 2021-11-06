@@ -115,7 +115,7 @@
               href: tenant-management-tenants.md
             - name: Étape 2. Mise en réseau optimale
               href: tenant-management-networking.md
-            - name: Étape 3. Identité
+            - name: "Étape\_3. Identité"
               href: tenant-management-identity.md
             - name: Étape 4. Migration
               href: tenant-management-migration.md
@@ -204,7 +204,7 @@
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 2. Utiliser Microsoft Teams.
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Étape 3. Power Automate
+            - name: "Étape\_3. Power Automate"
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Créer un intranet SharePoint intelligent
           items:
@@ -300,6 +300,8 @@
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Passer d’une protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Passer d'un outil de protection non Microsoft à Microsoft Defender pour Office 365
+          href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
           href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
         - name: Supprimer un ancien employé et sécuriser les données
@@ -324,7 +326,7 @@
           href: team-security-isolation-dev-test.md
 - name: Conseils spécifiques par secteurs
   items:
-    - name: Finances
+    - name: Services financiers
       items:
         - name: Sécurité et conformité pour les services financiers
           href: financial-services-secure-collaboration.md

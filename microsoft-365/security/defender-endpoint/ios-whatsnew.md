@@ -16,22 +16,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e6352992d0aeed9df7e64f331a4936ae4b29c223
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d29ad4a6d4031200bfb9f58db4ac9bcec7bab31
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162613"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804871"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
+
+Le 2 novembre 2021, nous avons annoncé la prévisualisation publique de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, [consultez le billet techcommunity ici.](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)
+
+## <a name="1123010101"></a>1.1.23010101
+
+- Résolutions de bogues et améliorations des performances 
+  - Des optimisations des performances ont été réalisées dans cette version. Testez les performances de la batterie avec cette version et faites-nous part de vos commentaires.
 
 ## <a name="1120240103"></a>1.1.20240103
 - Carte d’état de l’appareil : la carte d’état de l’appareil informe les utilisateurs finaux des mises à jour logicielles en attente.

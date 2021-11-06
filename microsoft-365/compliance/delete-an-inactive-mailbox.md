@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’Microsoft 365 boîte aux lettres inactive, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: 69cbe206e040ca1b1f76e846c3b3efbf45c1539e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 929b3d8a01dd9c88bc12e6e13bf4477a07496b34
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786889"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804628"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -126,7 +126,7 @@ Pour plus d’informations sur l’identification des stratégies de rétention 
 
 ### <a name="remove-in-place-holds"></a>Supprimer des blocages sur place
 
- Il existe deux façons de supprimer un blocage sur place à partir d'une boîte aux lettres inactive : 
+ Il existe deux façons de supprimer un blocage sur place à partir d'une boîte aux lettres inactive :
   
 - **Supprimez lIn-Place hold .** Si la boîte aux lettres inactive que vous souhaitez supprimer définitivement est la seule boîte aux lettres source pour une In-Place, vous pouvez simplement supprimer l’objet In-Place hold. 
 
@@ -204,7 +204,7 @@ Si le blocage sur place contient un grand nombre de boîtes aux lettres source, 
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - **Une boîte aux lettres inactive est un type de boîte aux lettres supprimée (récupérable).** Dans Exchange Online, une boîte aux lettres supprimée (récupérable) est une boîte aux lettres qui a été supprimée mais qui peut être récupérée pendant une période de rétention spécifique. Pour les boîtes aux lettres supprimées (récupérables) qui ne sont pas en attente, la boîte aux lettres est récupérable dans les 30 jours. Une boîte aux lettres inactive (une boîte aux lettres en attente avant sa suppression) reste dans un état de suppression (avec état de attente) jusqu’à ce que la boîte aux lettres soit supprimée. Une fois la boîte aux lettres inactive supprimée, la boîte aux lettres n’est plus dans un état inactif. Au lieu de cela, il devient supprimé (récupérable) et reste en Exchange Online pendant 183 jours à partir du jour où la période de la période de attente a été supprimée et récupérable pendant cette période. Après 183 jours, une boîte aux lettres supprimée (récupération) est marquée pour suppression définitive et ne peut pas être récupérée.
 

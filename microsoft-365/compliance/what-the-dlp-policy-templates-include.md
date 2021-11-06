@@ -20,13 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 recommendations: false
-description: Découvrez ce que les modèles de stratégie de protection contre la perte de données (DLP) dans le Centre de sécurité & conformité Office 365 inclut.
-ms.openlocfilehash: ddeebc3cfeb2668cfb0d376a4ca8c9f92bfe36f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez ce que les modèles de stratégie de protection contre la perte de données (DLP) du Centre de sécurité & conformité Office 365 incluent.
+ms.openlocfilehash: 9de05cd38f6089c3bc7671b2f41a7bf1c0cee8ce
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172226"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804837"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 
@@ -135,7 +135,7 @@ La protection contre la perte de données (DLP) dans le Centre de conformité de
 |**Nom de la règle**|**Conditions  <br/> (y compris les types d’informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
 |Contenu sensible de l’UE à faible volume trouvé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro de carte de crédit de l’U.E. — Nombre minimal 1, nombre maximal 9  <br/>  Numéro de permis de conduire de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro d’identification national de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro de passeport de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro de sécurité sociale de l’UE (SSN) ou ID équivalent — Nombre minimum 1, nombre maximum 9  <br/>  Numéro d’identification fiscale de l’UE —Nombre minimum 1, nombre max 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer des rapports d’incident à l’administrateur  <br/> |
-|Volume élevé de contenu sensible de l’UE trouvé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro de carte de crédit de l’U.E. — Nombre minimal 1, nombre maximal 9  <br/>  Numéro de permis de conduire de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro d’identification national de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro de passeport de l’UE — Nombre minimum 1, nombre maximum 9  <br/>  Numéro de sécurité sociale de l’UE (SSN) ou ID équivalent — Nombre minimum 1, nombre maximum 9  <br/>  Numéro d’identification fiscale de l’UE —Nombre minimum 1, nombre max 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Restreindre l’accès au contenu pour utilisateurs externe  <br/>  Informer les utilisateurs à l’aide de courriers électroniques et de conseils de stratégie  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer des rapports d’incident à l’administrateur  <br/> |
+|Volume élevé de contenu sensible de l’UE trouvé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro de carte de crédit de l’UE — Nombre minimum 10, nombre maximum 500  <br/>  Numéro de permis de conduire de l’UE — Nombre minimum 10, nombre maximum 500  <br/>  Numéro d’identification national de l’UE — Nombre minimum 10, nombre maximum 500  <br/>  Numéro de passeport européen — Nombre minimum 10, nombre maximum 500  <br/>  Numéro de sécurité sociale de l’UE (SSN) ou ID équivalent — Nombre minimum 10, nombre maximum 500  <br/>  Numéro d’identification fiscale de l’UE —Nombre minimum 10, nombre maximum 500  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Restreindre l’accès au contenu pour utilisateurs externe  <br/>  Informer les utilisateurs à l’aide de courriers électroniques et de conseils de stratégie  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer des rapports d’incident à l’administrateur  <br/> |
    
 ## <a name="germany-financial-data"></a>Données financières en Allemagne
 

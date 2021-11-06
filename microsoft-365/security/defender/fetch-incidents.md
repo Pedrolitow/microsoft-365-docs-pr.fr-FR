@@ -1,6 +1,6 @@
 ---
-title: Récupérer des alertes à partir du client MSSP client
-description: Découvrez comment récupérer des alertes à partir d’un client
+title: Récupérer Microsoft 365 Defender incidents
+description: Découvrez comment récupérer des incidents Microsoft 365 Defender d’un client
 keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
+ms.openlocfilehash: 1ea39bfce5303360165a56d6361908d1014d370f
 ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804940"
+ms.locfileid: "60805005"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP client
+# <a name="fetch-microsoft-365-defender-incidents"></a>Récupérer Microsoft 365 Defender incidents 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ Il existe deux façons d’extraire des alertes :
 - Utilisation de la méthode SIEM
 - Utilisation des API
 
-## <a name="fetch-alerts-into-your-siem"></a>Récupérer des alertes dans votre SIEM
+## <a name="fetch-incidents-into-your-siem"></a>Récupérer des incidents dans votre SIEM
 
-Pour récupérer des alertes dans votre système SIEM, vous devez suivre les étapes suivantes :
+Pour récupérer des incidents dans votre système SIEM, vous devez suivre les étapes suivantes :
 
 - Étape 1 : Créer une application tierce
 - Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
@@ -172,17 +172,11 @@ Vous devez avoir l’autorisation Gérer les **paramètres système** du portail
 
 5. Cliquez **sur Autoriser l’application.**
 
-Vous pouvez maintenant télécharger le fichier de configuration approprié pour votre SIEM et vous connecter à l Microsoft 365 Defender API. Pour plus d’informations, voir [« Tirer des alertes vers vos outils SIEM](configure-siem.md)».
+Vous pouvez maintenant télécharger le fichier de configuration approprié pour votre SIEM et vous connecter à l Microsoft 365 Defender API. Pour plus d’informations, voir [« Tirer des alertes vers vos outils SIEM](../defender-endpoint/configure-siem.md)».
 
 - Dans le fichier de configuration ArcSight /Splunk Authentication Properties, écrivez votre clé d’application manuellement en définir la valeur secrète.
 - Au lieu d’acquérir un jeton d’actualisation dans le portail, utilisez le script de l’étape précédente pour acquérir un jeton d’actualisation (ou l’acquérir par d’autres moyens).
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
 
-Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
-
-## <a name="see-also"></a>Voir aussi
-
-- [Accorder l’accès MSSP au portail](grant-mssp-access.md)
-- [Accéder au portail client MSSP](access-mssp-portal.md)
-- [Configurer des notifications d’alerte](configure-mssp-notifications.md)
+Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](../defender-endpoint/pull-alerts-using-rest-api.md)

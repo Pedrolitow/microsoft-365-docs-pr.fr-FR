@@ -483,6 +483,7 @@
 
 
 ## Référence
+### [Comprendre les concepts de veille des menaces](threat-indicator-concepts.md)
 ### [Configurer l’intégration avec d’autres solutions Microsoft]()
 #### [Configurer l’accès conditionnel](configure-conditional-access.md)
 #### [Configurer l’intégration de Microsoft Cloud App Security.](microsoft-cloud-app-security-config.md)
@@ -496,7 +497,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [Obtenir l’accès avec le contexte de l’application](exposed-apis-create-app-webapp.md)
 ###### [Obtenir l’accès avec le contexte utilisateur](exposed-apis-create-app-nativeapp.md)
-###### [Obtenir l’accès de l’application partenaire](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Schéma de l’API Microsoft Defender pour point de terminaison]()
@@ -645,13 +646,9 @@
 
 
 #### [Intégration SIEM]()
-##### [Comprendre les concepts de veille des menaces](threat-indicator-concepts.md)
-##### [Découvrir les différentes façons d’extraire des détections](configure-siem.md)
-##### [Active l’intégration d’une solution SIEM](enable-siem-integration.md)
-##### [Configurer Micro Focus ArcSight pour extraire des détections](configure-arcsight.md)
+##### [Intégrer les outils SIEM avec Microsoft Defender pour point de terminaison](configure-siem.md)
 ##### [Champs de détection de Microsoft Defender pour point de terminaison](api-portal-mapping.md)
 ##### [Extraire des détections à l’aide de l’API SIEM REST](pull-alerts-using-rest-api.md)
-##### [Récupérer les alertes d’un client](fetch-alerts-mssp.md)
 ##### [Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)
 
 #### [Partenaires et API]()
@@ -666,19 +663,24 @@
 ###### [Utilisation de groupes d’appareils](machine-groups.md)
 ###### [Créer et gérer des balises d’appareils](machine-tags.md)
 
-#### [Intégration des fournisseurs de services de sécurité gérés (MSSP)]()
-##### [Configurer l’intégration des fournisseurs de services de sécurité gérés](configure-mssp-support.md)
-##### [Fournisseurs de services de sécurité gérés pris en charge](mssp-list.md)
-##### [Accorder l’accès MSSP au portail](grant-mssp-access.md)
-##### [Accéder au portail client MSSP](access-mssp-portal.md)
-##### [Configurer des notifications d’alerte](configure-mssp-notifications.md)
-##### [Obtenir l’accès de l’application partenaire](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [Intégration des fournisseurs de services de sécurité gérés (MSSP)]()
+#### [Configurer l’intégration des fournisseurs de services de sécurité gérés](configure-mssp-support.md)
+#### [Fournisseurs de services de sécurité gérés pris en charge](mssp-list.md)
+#### [Accorder l’accès MSSP au portail](grant-mssp-access.md)
+#### [Accéder au portail client MSSP](access-mssp-portal.md)
+#### [Configurer des notifications d’alerte](configure-mssp-notifications.md)
+#### [Obtenir l’accès de l’application partenaire](exposed-apis-create-app-partners.md)
+#### [Récupérer les alertes d’un client](fetch-alerts-mssp.md)
+#### [Opportunité des fournisseurs de services de sécurité gérés](mssp-support.md)
 ### [Scénarios d’intégration de partenaires]()
 #### [Opportunités de partenariat technique](partner-integration.md)
-#### [Opportunité des fournisseurs de services de sécurité gérés](mssp-support.md)
 #### [Devenir un partenaire Microsoft Defender pour point de terminaison](get-started-partner-integration.md)
-
 ### [Intégrations]()
 #### [Intégrations Microsoft Defender pour point de terminaison](threat-protection-integration.md)
 #### [Protéger les utilisateurs, données et appareils avec l’accès conditionnel](conditional-access.md)

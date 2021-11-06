@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5c9709d0e7c0313035a5f0603a8241cc24b1930
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1849e131573b0c7a09bec0be665bad43acdf911a
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703216"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804952"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -72,7 +72,7 @@ Si vous n’aimez pas les autorisations par défaut dans les groupes d’autoris
 Vous créez et affectez des stratégies de mise en quarantaine dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online ; EOP PowerShell autonome dans les organisations EOP sans boîtes aux lettres Exchange Online).
 
 > [!NOTE]
-> La durée de mise en quarantaine des messages mis  en quarantaine avant leur expiration est contrôlée par la stratégie de rétention du courrier indésirable en quarantaine pendant ce nombre de jours _(QuarantineRetentionPeriod_) dans les stratégies anti-courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+> La durée de mise en quarantaine des messages mis  en quarantaine avant leur expiration est contrôlée par la rétention du courrier indésirable en quarantaine pendant ce nombre de jours _(QuarantineRetentionPeriod_) dans les stratégies anti-courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="full-access-permissions-and-quarantine-notifications"></a>Autorisations d’accès total et notifications de mise en quarantaine
 
@@ -83,7 +83,7 @@ Vous créez et affectez des stratégies de mise en quarantaine dans le portail M
 
 Comme décrit précédemment, les notifications de mise en quarantaine dans les stratégies de mise en quarantaine remplacent les notifications de courrier indésirable de l’utilisateur final que vous avez utilisées pour activer ou désactiver les stratégies anti-courrier indésirable. La stratégie de mise en quarantaine intégrée nommée DefaultFullAccessPolicy duplique les _autorisations historiques_ pour les messages mis en quarantaine, mais les _notifications_ de mise en quarantaine ne sont pas désactivées dans la stratégie de mise en quarantaine. De plus, étant donné que vous ne pouvez pas modifier la stratégie intégrée, vous ne pouvez pas activer les notifications de mise en quarantaine dans DefaultFullAccessPolicy.
 
-Pour fournir les autorisations de DefaultFullAccessPolicy, mais avec les notifications de mise en quarantaine désactivées, nous avons créé la stratégie nommée NotificationEnabledPolicy à utiliser à la place de DefaultFullAccessPolicy pour les organisations qui en avaient besoin (organisations où les notifications de courrier indésirable à l’utilisateur final ont été désactivées).
+Pour fournir les autorisations de DefaultFullAccessPolicy, mais avec les notifications de mise en quarantaine désactivées, nous avons créé la stratégie nommée NotificationEnabledPolicy à utiliser à la place de DefaultFullAccessPolicy pour les organisations qui en avaient besoin (organisations où les notifications de courrier indésirable à l’utilisateur final étaient allumées).
 
 Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont jamais activé les notifications de courrier indésirable pour l’utilisateur final dans les stratégies anti-courrier indésirable, vous n’avez pas la stratégie de mise en quarantaine nommée NotificationEnabledPolicy. Pour activer les notifications de mise en quarantaine, vous pouvez créer et utiliser des stratégies de mise en quarantaine personnalisées lorsque les notifications de mise en quarantaine sont allumées.
 
@@ -101,7 +101,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
 
 2. Dans la page **Stratégie de** mise en quarantaine, cliquez sur Ajouter une icône de ![ stratégie personnalisée.](../../media/m365-cc-sc-create-icon.png) **Ajouter une stratégie personnalisée.**
 
-3. **L’Assistant Nouvelle** stratégie s’ouvre. Dans la page **Nom de la** stratégie, entrez un nom court mais unique dans la zone Nom de **la** stratégie. Vous devez identifier et sélectionner la stratégie de mise en quarantaine par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
+3. **L’Assistant Nouvelle stratégie** s’ouvre. Dans la page **Nom de la** stratégie, entrez un nom court mais unique dans la zone Nom de **la** stratégie. Vous devez identifier et sélectionner la stratégie de mise en quarantaine par nom dans les étapes à venir. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **d’accès aux messages du** destinataire, sélectionnez l’une des valeurs suivantes :
    - **Accès limité**: les autorisations individuelles incluses dans ce groupe d’autorisations sont décrites plus tôt dans cet article.
@@ -119,7 +119,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **De notification** de courrier indésirable à l’utilisateur final, sélectionnez **Activer** pour activer les notifications de mise en quarantaine (anciennement appelées notifications de courrier indésirable pour l’utilisateur final). Lorsque vous avez terminé, cliquez sur **Suivant**.
+5. Dans la page **De notification de** courrier indésirable de l’utilisateur final, sélectionnez **Activer** pour activer les notifications de mise en quarantaine (anciennement appelées notifications de courrier indésirable pour l’utilisateur final). Lorsque vous avez terminé, cliquez sur **Suivant**.
 
    > [!NOTE]
    > Comme expliqué précédemment, les stratégies intégrées (AdminOnlyAccessPolicy ou DefaultFullAccessPolicy) ne sont pas mises en quarantaine et vous ne pouvez pas modifier les stratégies.
@@ -248,7 +248,7 @@ Dans les _fonctionnalités_ de protection prises en charge qui met en quarantain
 |Fonctionnalité|Stratégies de mise en quarantaine pris en charge ?|Stratégies de mise en quarantaine par défaut utilisées|
 |---|:---:|---|
 |[Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md): <ul><li>**Courrier** indésirable (_SpamAction_)</li><li>**Courrier indésirable à niveau** de confiance élevé (_HighConfidenceSpamAction_)</li><li>**Hameçonnage** (_PhishSpamAction_)</li><li>**Hameçonnage à haut niveau de** confiance (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Oui|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>AdminOnlyAccessPolicy (aucun accès)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li></ul>|
-|Stratégies anti-hameçonnage: <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protection contre l’emprunt d’identité dans Defender pour Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si le message est détecté comme un utilisateur dont** l’identité est usurpée (_TargetedUserProtectionAction_)</li><li>**Si le message est détecté comme un** domaine dont l’identité est usurpée (_TargetedDomainProtectionAction_)</li><li>**Si l’intelligence de boîte aux lettres détecte et usurpe l’identité de** l’utilisateur (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Oui|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>Protection contre l’emprunt d’identité :<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li></ul></li></ul>|
+|Stratégies anti-hameçonnage: <ul><li>[Protection contre l’usurpation d’identité](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protection contre l’emprunt d’identité dans Defender pour Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si le message est détecté comme un utilisateur dont** l’identité est usurpée (_TargetedUserProtectionAction_)</li><li>**Si le message est détecté comme un** domaine dont l’identité est usurpée (_TargetedDomainProtectionAction_)</li><li>**Si l’intelligence de boîte aux lettres détecte et usurpe l’identité** de l’utilisateur (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Oui|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>Protection contre l’emprunt d’identité :<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (accès complet)</li></ul></li></ul>|
 |[Stratégies anti-programme](configure-anti-malware-policies.md)malveillant : tous les messages détectés sont toujours mis en quarantaine.|Oui|AdminOnlyAccessPolicy (aucun accès)|
 |[Coffre protection des pièces jointes](safe-attachments.md): <ul><li>Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants par Coffre stratégies de pièces jointes (_Activer_ et _action_)</li><li>Fichiers mis en quarantaine comme programmes [malveillants par Coffre pièces jointes](mdo-for-spo-odb-and-teams.md) pour SharePoint, OneDrive et Microsoft Teams</li></ul>|<ul><li>Oui</li><li>Non</li></ul>|<ul><li>AdminOnlyAccessPolicy (aucun accès)</li><li>s/o</li></ul>|
 |[Règles de flux de messagerie](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (également appelées règles de transport) avec l’action : Remettre le **message** en quarantaine hébergé (mise en _quarantaine)._|Non|s/o|
@@ -261,7 +261,7 @@ Les stratégies de mise en quarantaine par défaut, les groupes d’autorisation
 > [!NOTE]
 > Si vous êtes satisfait des autorisations par défaut de l’utilisateur final et des notifications de mise en quarantaine fournies (ou non) par les stratégies de mise en quarantaine par défaut, vous n’avez rien à faire. Si vous souhaitez ajouter ou supprimer des fonctionnalités de l’utilisateur final (boutons disponibles) pour les messages mis en quarantaine par l’utilisateur, ou activer les notifications de mise en quarantaine et ajouter ou supprimer les mêmes fonctionnalités dans les notifications de mise en quarantaine, vous pouvez affecter une stratégie de mise en quarantaine différente à l’action de mise en quarantaine.
 
-## <a name="assign-quarantine-policies-in-supported-polices-in-the-microsoft-365-defender-portal"></a>Affecter des stratégies de mise en quarantaine dans les stratégies de Microsoft 365 Defender prise en charge
+## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Affecter des stratégies de mise en quarantaine dans les stratégies prise en charge dans le portail Microsoft 365 Defender
 
 ### <a name="anti-spam-policies"></a>Stratégies anti-courrier indésirable
 
@@ -295,7 +295,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 
 **Remarques** :
 
-- La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Quarantine, vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez des polices de filtrage du courrier indésirable dans PowerShell. Pour les paramètres _SpamAction,_ _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de mise en quarantaine n’est effective que si la valeur est Mise en quarantaine.
+- La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Mise en quarantaine. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies de filtrage du courrier indésirable dans PowerShell. Pour les paramètres _SpamAction,_ _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de mise en quarantaine n’est effective que si la valeur est Mise en quarantaine.
 
   Pour voir les valeurs de paramètre importantes dans les stratégies anti-courrier indésirable existantes, exécutez la commande suivante :
 
@@ -322,7 +322,7 @@ New-HostedContentFilterPolicy -Name "Research Department" -SpamAction Quarantine
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
-Cet exemple modifie la stratégie de filtrage du courrier indésirable existante nommée Human Resources. L’action pour le verdict de mise en quarantaine du courrier indésirable est définie sur Mise en quarantaine et la stratégie de mise en quarantaine personnalisée nommée NoAccess est affectée.
+Cet exemple modifie la stratégie de filtrage du courrier indésirable existante nommée Human Resources. L’action pour le verdict de mise en quarantaine du courrier indésirable est définie sur Quarantaine et la stratégie de mise en quarantaine personnalisée nommée NoAccess est affectée.
 
 ```powershell
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
@@ -363,7 +363,7 @@ La veille contre l’usurpation d’adresse est disponible dans EOP et Defender 
 
    ![Sélections de stratégie de mise en quarantaine dans une stratégie anti-hameçonnage.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
-Des instructions complètes pour la création et la modification des polices anti-hameçonnage sont disponibles dans les rubriques suivantes :
+Des instructions complètes pour la création et la modification des stratégies anti-hameçonnage sont disponibles dans les rubriques suivantes :
 
 - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
 - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
@@ -473,7 +473,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Coffre Stratégies de pièces jointes dans Defender pour Office 365
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** Rules Threat \> **policies** \> **Coffre Attachments** in the **Policies** section.
+1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de **collaboration** &, & stratégies contre les menaces Coffre \>  \>  \> **pièces jointes.** 
 
    Ou, pour aller directement à la page **Coffre pièces jointes,** utilisez <https://security.microsoft.com/safeattachmentv2> .
 
@@ -486,7 +486,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
    - **Créer :** dans l’Assistant Nouvelle stratégie, vous pouvez Paramètres **page.**
 
 4. Dans la **Paramètres** page, faites les étapes suivantes :
-   1. **Coffre les pièces jointes d’une réponse anti-programme** malveillant inconnue : **sélectionnez Bloquer,** **Remplacer** ou **Remise dynamique.**
+   1. **Coffre des pièces jointes à des réponses de programmes malveillants** inconnus : **sélectionnez Bloquer,** **Remplacer** ou **Remise dynamique.**
    2. Sélectionnez une stratégie de mise en quarantaine dans la **zone de stratégie de mise en** quarantaine.
 
    **Remarque**: lorsque vous créez  une stratégie, une valeur de stratégie de quarantaine vide indique que la stratégie de mise en quarantaine par défaut est utilisée. Lorsque vous modifiez ultérieurement la stratégie, la valeur vide est remplacée par le nom réel de la stratégie de mise en quarantaine par défaut, comme décrit dans le tableau précédent.
@@ -515,7 +515,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- Une nouvelle stratégie de pièces jointes Coffre dans PowerShell nécessite une stratégie de pièces jointes sécurisées (paramètres) à l’aide de la cmdlet **New-SafeAttachmentPolicy** et une règle de pièce jointe sécurisée exclusive (filtres de destinataires) à l’aide de l’cmdlet **New-SafeAttachmentRule.** Pour obtenir des instructions, voir Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des [stratégies Coffre pièces jointes.](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)
+- Une nouvelle stratégie de pièces jointes Coffre dans PowerShell nécessite une stratégie de pièces jointes sécurisées (paramètres) à l’aide de la cmdlet **New-SafeAttachmentPolicy** et une règle de pièces jointes sécurisées exclusive (filtres de destinataire) à l’aide de la cmdlet **New-SafeAttachmentRule.** Pour obtenir des instructions, voir Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour configurer des [stratégies Coffre pièces jointes.](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies)
 
 Cet exemple crée une stratégie de pièce jointe sécurisée nommée Research Department qui bloque les  messages détectés et utilise la stratégie de mise en quarantaine personnalisée noAccess qui n’attribue aucune autorisation d’accès aux messages en quarantaine.
 
@@ -543,7 +543,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
 3. Dans le volant **des paramètres de notification de** mise en quarantaine qui s’ouvre, configurez tout ou partie des paramètres suivants :
 
-   - **Nom d’affichage**: personnaliser le nom complet de l’expéditeur utilisé dans les notifications de mise en quarantaine.
+   - **Nom d’affichage**: personnalisez le nom complet de l’expéditeur utilisé dans les notifications de mise en quarantaine.
 
      Pour chaque langue que vous avez ajoutée, sélectionnez la langue dans la deuxième langue (ne cliquez pas  sur le X) et entrez la valeur de texte de votre choix dans la zone Nom complet.
 
@@ -664,7 +664,7 @@ Si vous préférez utiliser PowerShell pour supprimer une stratégie de mise en 
 Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-QuarantinePolicy](/powershell/module/exchange/remove-quarantinepolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Remove-QuarantinePolicy](/powershell/module/exchange/remove-quarantinepolicy).
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>Alertes système pour les demandes de mise en quarantaine
 
@@ -674,7 +674,7 @@ Par défaut, la stratégie d’alerte par défaut nommée User a demandé à lib
 - Administrateur de sécurité
 - Gestion de l’organisation (administrateur général)
 
-Les administrateurs peuvent personnaliser les destinataires de notification par courrier électronique ou créer une stratégie d’alerte personnalisée pour d’autres options.
+Les administrateurs peuvent personnaliser les destinataires de notification par courrier électronique ou créer une stratégie d’alerte personnalisée pour plus d’options.
 
 Pour plus d'informations sur les stratégies d'alerte, voir Stratégies [d'alerte dans Microsoft 365](../../compliance/alert-policies.md).
 
