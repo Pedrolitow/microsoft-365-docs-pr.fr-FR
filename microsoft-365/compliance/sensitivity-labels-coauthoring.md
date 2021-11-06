@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 5b1ad39feeebdbf44a83e09e1daa25794ebc98fa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64d4239eeda905d9b0d924804bed6795b7ca5673
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698428"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804892"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -55,13 +55,13 @@ Pour en savoir plus sur le changement de métadonnées à partir des ressources 
 
 En raison de ces modifications, n'activez pas ce paramètre si vous avez des applications, services, scripts ou outils dans votre organisation qui lisent ou écrivent des métadonnées d'étiquetage à l'ancien emplacement. Dans ce cas, voici quelques exemples de conséquences :
 
-- Un document étiqueté apparaît pour les utilisateurs comme sans étiquette
+- Un document étiqueté apparaît comme sans étiquette pour les utilisateur.
 
-- Un document affiche une étiquette périmée aux utilisateurs
+- Un document affiche une étiquette expirée aux utilisateurs.
 
-- La co-édition et l’enregistrement automatique ne fonctionnent pas pour un document étiqueté et chiffré si un autre utilisateur l’a ouvert dans une application de bureau Office qui ne prend pas en charge les nouvelles métadonnées d’étiquetage
+- La co-création et l’enregistrement automatique ne fonctionnent pas pour un document étiqueté et chiffré si un autre utilisateur l’ouvre dans une application de bureau Office qui ne prend pas en charge les nouvelles métadonnées d’étiquetage. N’ignorez pas que ce scénario peut également se produire pour les utilisateurs externes à votre organisation si les utilisateurs externes et les hôtes avec invitation ont le fichier ouvert.
 
-- Une règle de flux de messagerie Exchange Online qui [identifie les étiquettes comme des propriétés personnalisées dans les pièces jointes Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) ne permet pas de chiffrer le courrier et la pièce jointe, ou les chiffre de manière incorrecte
+- Une règle de flux de messagerie Exchange Online qui [identifie les étiquettes en tant que propriétés personnalisées dans les pièces jointes Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) ne parvient pas à chiffrer l’e-mail et la pièce jointe, ou les chiffre de manière incorrecte.
 
 Consultez la section suivante pour obtenir la liste des applications et services qui prennent en charge ce paramètre et les modifications apportées aux métadonnées d’étiquetage.
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701948"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804928"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -171,9 +171,10 @@ Cela signifie également qu'une fois les fichiers PST supprimés de la zone de s
 
 Cela dépend de la capacité de votre réseau, mais le chargement de chaque téraoctet (To) de données dans la zone de stockage Azure de votre organisation prend généralement plusieurs heures. Après avoir été copié dans la zone de stockage Azure, un fichier PST est importé dans une boîte aux lettres Microsoft 365 à un débit d’environ 24 Go par jour<sup>\*</sup>. Si cette vitesse ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour récupérer des données de courrier dans Office 365. Pour obtenir plus d'informations, consultez l'article [Façons de migrer plusieurs comptes de messagerie vers Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
-<sup>\*</sup> Ce taux n’est pas garanti. La charge de travail du serveur et les problèmes temporaires de performances peuvent réduire ce taux.
-
 En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cibles, le processus d’importation s’exécute en parallèle ; en d’autres termes, chaque paire PST/boîte aux lettres est importée simultanément. Si plusieurs fichiers PST sont importés dans la même boîte aux lettres, ils sont importés séquentiellement (un par un), et non simultanément.
+
+> [!NOTE]
+> <sup>\*</sup> Ce taux n’est pas garanti. La charge de travail du serveur et les problèmes temporaires de performances peuvent réduire ce taux.
 
 #### <a name="how-does-the-pst-import-process-handle-duplicate-email-items"></a>Comment le processus d’importation PST traite-t-il les éléments de courrier en double ?
 
@@ -256,9 +257,12 @@ Une fois votre disque dur reçu au centre de données Microsoft, il faudra entre
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>Combien de temps faut-il pour importer un fichier PST dans une boîte aux lettres à l’aide de l’expédition de lecteurs ?
 
-Une fois les fichiers PST chargés dans l’espace de stockage Azure, Microsoft 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Après le démarrage de la tâche d’importation, un fichier PST est importé dans une boîte aux lettres Microsoft 365 à un débit d’au moins 24 Go par jour. Si cette vitesse ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour récupérer des données de courrier dans Microsoft 365. Pour plus d’informations, consultez l’article [Méthodes de migration des comptes de courrier vers Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
+Une fois les fichiers PST chargés dans l’espace de stockage Azure, Microsoft 365 analyse les données des fichiers PST (de manière sécurisée) afin d’identifier l’âge des éléments et les différents types de messages contenus dans les fichiers PST. Une fois cette analyse terminée, vous pourrez importer toutes les données des fichiers PST ou définir des filtres qui contrôlent les données importées. Une fois le travail d’importation démarré, un fichier PST est importé dans une boîte aux lettres Microsoft 365 à un débit d’environ 24 Go par jour.<sup>\*</sup> Si ce taux ne répond pas à vos besoins, vous pouvez envisager d’autres méthodes pour obtenir des données de messagerie dans Microsoft 365. Pour plus d’informations, consultez l’article [Méthodes de migration des comptes de courrier vers Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
 
 En présence de plusieurs fichiers PST et de plusieurs boîtes aux lettres cibles, le processus d’importation s’exécute en parallèle ; en d’autres termes, chaque paire PST/boîte aux lettres est importée simultanément. Si plusieurs fichiers PST sont importés dans la même boîte aux lettres, ils sont importés séquentiellement (un par un), et non simultanément.
+
+> [!NOTE]
+> <sup>\*</sup> Ce taux n’est pas garanti. La charge de travail du serveur et les problèmes temporaires de performances peuvent réduire ce taux.
 
 #### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Une fois que Microsoft a chargé mes fichiers PST dans Azure, pendant combien de temps sont-ils conservés dans Azure avant d’être supprimés ?
 
