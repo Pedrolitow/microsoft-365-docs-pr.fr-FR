@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: c29570668f6fcf542ef3336c8053b395331fcce2
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 416bea849ac493afd96f9c3969f9f9642135d8a1
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792543"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825598"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Android
 
@@ -34,13 +34,11 @@ ms.locfileid: "60792543"
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Modifications des autorisations à venir pour Microsoft Defender pour le point de terminaison exécutant Android 11 ou version ultérieure (novembre 2021)
-Release Build: 1.0.3501.0301 Release month: Nov 2021
+Release Build: 1.0.3501.0301 Release month: Nov 2021 Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. Cette modification invite les utilisateurs à rechercher l’accès à une nouvelle autorisation de [stockage,](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit le fonctionnement sans interruption de la fonctionnalité « Sécurité des applications » de Defender. Pour plus d’informations, voir les détails dans les sections suivantes.
 
-Microsoft Defender pour le point de terminaison est chargé par [Google](https://developer.android.com/distribute/play-policies#APILevel30) de mettre à niveau vers l’API Android 30. Cette modification demande une nouvelle autorisation [de stockage](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) pour les appareils exécutant Android 11 ou version ultérieure. Les utilisateurs doivent accepter cette nouvelle autorisation de stockage une fois qu’ils ont mis à jour l’application Defender avec la version 1.0.3501.0301 ou ultérieure. Cela garantit le fonctionnement sans interruption de la fonctionnalité « Sécurité des applications » de Defender. Pour plus d’informations, voir les détails dans les sections suivantes.
-
-**Quel sera l’impact sur votre organisation :**
-
-Ces modifications auront une incidence si vous utilisez Microsoft Defender pour Endpoint sur les appareils exécutant Android 11 ou version ultérieure et que Defender est mis à jour pour la version 1.0.3501.0301 ou ultérieure. Ce paramètre n’est pas configurable par l’administrateur via Microsoft Endpoint Manager; les utilisateurs devront prendre des mesures en raison des modifications apportées à l’API Google mentionnées ci-dessus.
+**Quel sera l’impact sur votre organisation :** Ces modifications auront une incidence si vous utilisez Microsoft Defender pour Endpoint sur les appareils exécutant Android 11 ou version ultérieure et que Defender est mis à jour pour la version 1.0.3501.0301 ou ultérieure.
+>[!NOTE]
+> Les nouvelles autorisations de stockage ne peuvent pas être configurées par l’administrateur pour « Approuver automatiquement » via Microsoft Endpoint Manager. L’utilisateur doit prendre des mesures pour fournir l’accès à cette autorisation.
 
 - **Expérience utilisateur :** Les utilisateurs recevront une notification indiquant qu’il manque une autorisation pour la sécurité de l’application. Si l’utilisateur refuse cette autorisation, la fonctionnalité « Sécurité de l’application » est désactivée sur l’appareil. Si l’utilisateur n’accepte pas ou ne refuse pas l’autorisation, il continue de recevoir l’invite lors du déverrouillage de son appareil ou de l’ouverture de l’application, jusqu’à ce qu’elle ait été approuvée.
 

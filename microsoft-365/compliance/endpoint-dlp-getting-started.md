@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1ab4eb4ebd1dbba220ca4fea496b1b9c5ea82f43
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786721"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825574"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
 Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités Microsoft 365 de protection contre la perte de données (DLP) que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur la DLP du Point de terminaison , consultez [Découvrir la protection contre la perte de données](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP vous permet de surveiller Windows 10 appareils et appareils macOS *(préversion)* exécutant Catalina 10.15 et versions ultérieures. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
+Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10, Windows 11 et macOS *(préversion)* exécutant Catalina 10.15 et versions ultérieures. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -78,18 +78,18 @@ Les données du point de terminaison DLP peuvent être affichées dans [l’Expl
 - Administrateur de la sécurité
 - Administrateur des données de mise en conformité
 
-### <a name="prepare-your-windows-10-endpoints"></a>Préparer vos points de terminaison Windows 10
+### <a name="prepare-your-windows-1011-endpoints"></a>Préparez vos points de terminaison Windows 10/11
 
-Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déployer le point de terminaison DLP répondent à ces exigences.
+Assurez-vous que les appareils Windows que vous prévoyez de déployer Endpoint DLP répondent à ces exigences.
 
-1. Vous devez exécuter Windows 10 x64 Build 1809 ou version ultérieure.
+1. Doit exécuter Windows 10 x64 build 1809, Windows 11 ou version ultérieure.
 
 1. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623.
 
    > [!NOTE]
    > Aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows mais la [protection en temps réel et le moniteur de comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
 
-1. Les mises à jour Windows suivantes sont installées.
+1. Les mises à jour suivantes sont installées sur les appareils Windows 10
 
    > [!NOTE]
    > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
@@ -125,19 +125,16 @@ Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour 
 
 ### <a name="onboarding-devices"></a>Intégration des appareils
 
-Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’ont pas encore été intégrés, et vous voulez simplement contrôler et protéger les éléments sensibles contre le partage involontaire sur les appareils Windows 10.
+Dans ce scénario de déploiement, vous intégrerez des appareils qui n'ont pas encore été intégrés et vous souhaitez simplement surveiller et protéger les éléments sensibles contre le partage involontaire sur les appareils Windows 10 ou Windows 11.
 
 1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
-
-   > [!div class="mx-imgBorder"]
-   > ![activer la gestion des appareils.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Sélectionner **Paramètres** > **Intégration de l'appareil**.
 
    > [!NOTE]
    > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
 
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
+3. Sélectionner **Appareils** pour ouvrir la liste **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
 
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
 
@@ -146,12 +143,12 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
    > [!div class="mx-imgBorder"]
    > ![méthode de déploiement.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Suivez les procédures appropriées dans [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
-    - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
+    - Intégrer les machines Windows à l'aide de la stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
-    - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
-    - Intégrer les ordinateurs Windows 10 utilisant un script local
+    - Intégrer les machines Windows à l'aide des outils de gestion des appareils mobiles
+    - Intégrer des machines Windows à l'aide d'un script local
     - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants dans des scénarios de session unique
 
 Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans la liste des appareils et commencer à créer des rapports d’activité d’audit dans l’Explorateur d’activités.
@@ -176,11 +173,11 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
 
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
-    - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
+6. Suivez les procédures appropriées dans [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+    - Intégrer les machines Windows à l'aide de la stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
-    - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
-    - Intégrer les ordinateurs Windows 10 utilisant un script local
+    - Intégrer les machines Windows à l'aide des outils de gestion des appareils mobiles
+    - Intégrer des machines Windows à l'aide d'un script local
     - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
 Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’**Explorateur d’activités**.
@@ -217,7 +214,7 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD appareils joints](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

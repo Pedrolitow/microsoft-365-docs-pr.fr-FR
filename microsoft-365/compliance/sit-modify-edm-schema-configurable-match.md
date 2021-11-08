@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364698"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825550"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
@@ -99,8 +99,7 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
     - A-Z
     - a-z
     - \"
-    - \,
-    - |
+    - \,    
 
 6. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
