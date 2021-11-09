@@ -19,25 +19,25 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699316"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825586"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
 Vous pouvez utiliser la prévention des pertes de données (DLP) de Microsoft 365 pour surveiller les actions prises sur les éléments que vous avez déterminés comme sensibles et pour aider à empêcher le partage involontaire de ces éléments. Pour plus d'informations sur la DLP, consultez [En savoir plus sur la prévention de la perte de données](dlp-learn-about-dlp.md).
 
-**La protection contre la perte de données de point de terminaison** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de protection contre la perte de données aux éléments sensibles stockés physiquement sur des appareils Windows 10 et macOS (Catalina 10.15 et version ultérieure). Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+**Protection contre la perte de données de point de terminaison** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 et macOS (Catalina 10.15 et versions ultérieures). Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Si vous recherchez le contrôle d’appareil pour le stockage amovible, consultez [Contrôle d’accès Stockage amovible Contrôle d’appareil Microsoft Defender pour Point de terminaison ](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
-La protection contre la perte de données Microsoft Endpoint vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10 ou macOS.
+Microsoft Endpoint DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 ou macOS.
 
 |Activité |Description  | Auditable/restrictable|
 |---------|---------|---------|
