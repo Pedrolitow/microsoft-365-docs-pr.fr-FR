@@ -2,7 +2,6 @@
 title: Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 description: Résoudre les erreurs courantes lors de la migration vers Antivirus Microsoft Defender
 keywords: événement, code d’erreur, journalisation, résolution des problèmes, antivirus microsoft defender, antivirus windows defender, migration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 11590c443c7d466f323075bd2228156492c82ab0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a4fe04d563cd531e1f17916fcb54164e5010b62
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661529"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882476"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -36,13 +35,13 @@ Vous trouverez de l’aide ici si vous rencontrez des problèmes lors de la migr
 
 ## <a name="review-event-logs"></a>Passer en revue les journaux des événements
 
-Ouvrez l’application Observateur  d’événements en sélectionnant l’icône Rechercher dans la barre des tâches et en recherchant l’Observateur *d’événements.*
+1. Ouvrez l’application Observateur  d’événements en sélectionnant l’icône Rechercher dans la barre des tâches et en recherchant l’Observateur *d’événements.*
 
-Des informations sur Antivirus Microsoft Defender sont disponibles sous **Journaux** des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender**.
+    Des informations sur Antivirus Microsoft Defender sont disponibles sous **Journaux** des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
-À partir de là, **sélectionnez Ouvrir** sous **Opérationnel.**
+1. À partir de là, **sélectionnez Ouvrir** sous **Opérationnel.**
 
-La sélection d’un événement dans le volet d’informations vous permet d’obtenir plus d’informations sur un événement dans le volet inférieur, sous les **onglets** Général et Détails. 
+    La sélection d’un événement dans le volet d’informations vous permet d’obtenir plus d’informations sur un événement dans le volet inférieur, sous les **onglets** Général et Détails. 
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Antivirus Microsoft Defender ne démarre pas
 
@@ -58,10 +57,10 @@ ID d’événement|Nom du journal|Description|Source
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Comment savoir si Antivirus Microsoft Defender ne démarre pas car un antivirus tiers est installé
 
-Sur un Windows 10, si vous n’utilisez pas Microsoft Defender pour Endpoint et qu’un antivirus tiers est installé, Antivirus Microsoft Defender sera automatiquement désactivé. Si vous utilisez Microsoft Defender pour Endpoint avec un antivirus tiers installé, Antivirus Microsoft Defender démarrera en mode passif, avec des fonctionnalités réduites.
+Sur un appareil Windows 10 ou Windows 11, si vous n’utilisez pas Microsoft Defender pour endpoint et qu’un antivirus tiers est installé, Antivirus Microsoft Defender sera automatiquement désactivé. Si vous utilisez Microsoft Defender pour Endpoint avec un antivirus tiers installé, Antivirus Microsoft Defender démarrera en mode passif, avec des fonctionnalités réduites.
 
 > [!TIP]
-> Le scénario décrit s’applique uniquement aux Windows 10. Les autres versions de Windows [ont des réponses différentes aux](microsoft-defender-antivirus-compatibility.md) Antivirus Microsoft Defender en cours d’utilisation avec des logiciels de sécurité tiers.
+> Le scénario décrit s’applique uniquement aux Windows 10 et Windows 11. Les autres versions de Windows [ont des réponses différentes aux](microsoft-defender-antivirus-compatibility.md) Antivirus Microsoft Defender en cours d’utilisation avec des logiciels de sécurité tiers.
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Utiliser l’application Services pour vérifier si Antivirus Microsoft Defender est désactivé
 
@@ -77,7 +76,7 @@ Cela indique que la Antivirus Microsoft Defender a été automatiquement désact
 
 Vous pouvez générer un rapport détaillé sur les stratégies de groupe actives en ouvrant une invite de commandes en **mode** d’administration, puis en entrant la commande suivante :
 
-```powershell
+```console
 GPresult.exe /h gpresult.html
 ```
 
@@ -127,7 +126,7 @@ Votre administrateur imaginant peut avoir définie la stratégie de **[sécurit�
 Antivirus Microsoft Defender s’active automatiquement si aucun autre antivirus n’est actif. Vous devez désactiver complètement l’antivirus tiers pour vous assurer Antivirus Microsoft Defender’exécuter avec toutes les fonctionnalités.
 
 > [!WARNING]
-> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv*, *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
+> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv,* *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
 
 Le mode passif est disponible si vous commencez à utiliser Microsoft Defender pour endpoint et un antivirus tiers avec Antivirus Microsoft Defender. Le mode passif permet Antivirus Microsoft Defender analyser les fichiers et de se mettre à jour, mais il ne remédie pas aux menaces. En outre, la surveillance du comportement via [la Protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel n’est pas disponible en mode passif, sauf si la protection contre la perte de données de point de terminaison [(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) est déployée.
 
