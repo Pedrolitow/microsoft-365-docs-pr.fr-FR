@@ -1,9 +1,7 @@
 ---
 title: Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
-description: Découvrez comment gérer les faux positifs ou les faux négatifs dans Microsoft Defender pour endpoint.
+description: Découvrez comment gérer les faux positifs ou les faux négatifs dans Microsoft Defender pour point de terminaison.
 keywords: antivirus, exception, exclusion, Microsoft Defender pour point de terminaison, faux positif, faux négatif, fichier bloqué, URL bloquée
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -20,15 +18,15 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: eadfdd0245c7a31aa71405a9cf63dfc3eaf90bb1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704656"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882860"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -59,7 +57,7 @@ Vous pouvez obtenir de l’aide si vous avez encore des problèmes avec des faux
 
 ## <a name="part-1-review-and-classify-alerts"></a>Partie 1 : examiner et classer les alertes
 
-Si vous voyez [une](alerts.md) alerte qui a été déclenchée parce qu’un élément a été détecté comme malveillant ou suspect qui n’aurait pas dû l’être, vous pouvez supprimer l’alerte pour cette entité. Vous pouvez également supprimer des alertes qui ne sont pas nécessairement de faux positifs, mais qui ne sont pasimportantes. Nous vous recommandons également de classer les alertes.
+Si vous voyez [une](alerts.md) alerte qui a été déclenchée parce qu’un élément a été détecté comme malveillant ou suspect qui n’aurait pas dû l’être, vous pouvez supprimer l’alerte pour cette entité. Vous pouvez également supprimer des alertes qui ne sont pas nécessairement de faux positifs, mais qui ne sont pas trèsimportantes. Nous vous recommandons également de classer les alertes.
 
 La gestion de vos alertes et la classification des faux positifs permettent de former votre solution de protection contre les menaces et de réduire le nombre de faux positifs ou de faux négatifs au fil du temps. Ces étapes permettent également de réduire le bruit dans votre tableau de bord des opérations de sécurité afin que votre équipe de sécurité puisse se concentrer sur les éléments de travail prioritaires.
 
@@ -79,13 +77,13 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
    |État de l’alerte|Procédure|
    |---|---|
-   |L’alerte est exacte|Affectez l’alerte, puis [examinez-la plus en](investigate-alerts.md) détail.|
-   |L’alerte est un faux positif|1. [Classifiez l’alerte](#classify-an-alert) comme faux positif.<br/><br/>2. [Supprimez l’alerte.](#suppress-an-alert)<br/><br/>3. [Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour endpoint.<br/><br/>4. [Envoyez un fichier à Microsoft pour analyse.](#part-4-submit-a-file-for-analysis)|
+   |L’alerte est exacte|Affectez l’alerte, puis [examinez-la plus](investigate-alerts.md) en détail.|
+   |L’alerte est un faux positif|1. [Classifiez l’alerte](#classify-an-alert) comme faux positif.<br/><br/>2. [Supprimez l’alerte.](#suppress-an-alert)<br/><br/>3. [Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour le point de terminaison.<br/><br/>4. [Envoyez un fichier à Microsoft pour analyse.](#part-4-submit-a-file-for-analysis)|
    |L’alerte est précise, mais sans importance (sans importance)|[Classifiez l’alerte](#classify-an-alert) comme un vrai positif, puis [supprimez l’alerte.](#suppress-an-alert)|
 
 ### <a name="classify-an-alert"></a>Classifier une alerte
 
-Les alertes peuvent être classées en tant que faux positifs ou vrais positifs dans Microsoft 365 Defender. La classification des alertes permet d’entraîner Microsoft Defender pour le point de terminaison afin que, au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
+Les alertes peuvent être classées en tant que faux positifs ou vrais positifs dans Microsoft 365 Defender. La classification des alertes permet de former Microsoft Defender pour le point de terminaison afin que, au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
 
 1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
 
@@ -100,7 +98,7 @@ Les alertes peuvent être classées en tant que faux positifs ou vrais positifs 
 
 ### <a name="suppress-an-alert"></a>Supprimer une alerte
 
-Si vous avez des alertes qui sont des faux positifs ou qui sont de vrais positifs, mais pour des événements non importants, vous pouvez supprimer ces alertes dans Microsoft 365 Defender. La suppression d’alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité.
+Si vous avez des alertes qui sont de faux positifs ou qui sont de vrais positifs, mais pour des événements non importants, vous pouvez supprimer ces alertes dans Microsoft 365 Defender. La suppression d’alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité.
 
 1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
 
@@ -110,7 +108,7 @@ Si vous avez des alertes qui sont des faux positifs ou qui sont de vrais positif
 
 4. Dans le **volet Détails,** choisissez les ellipses (**...**), puis créez **une règle de suppression.**
 
-5. Spécifiez tous les paramètres de votre règle de suppression, puis sélectionnez **Enregistrer.**
+5. Spécifiez tous les paramètres de votre règle de suppression, puis sélectionnez **Enregistrer**.
 
 > [!TIP]
 > Vous avez besoin d’aide sur les règles de suppression ? Voir [Supprimer une alerte et créer une règle de suppression.](/microsoft-365/security/defender-endpoint/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule)
@@ -188,7 +186,7 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
     ```
 
     > [!IMPORTANT]
-    > Dans certains scénarios, **threatName peut** apparaître comme `EUS:Win32/CustomEnterpriseBlock!cl` . Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
+    > Dans certains scénarios, **threatName** peut apparaître comme `EUS:Win32/CustomEnterpriseBlock!cl` . Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
     >
     > Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
@@ -210,7 +208,7 @@ Les procédures de cette section décrivent comment définir des exclusions et d
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour les Antivirus Microsoft Defender
 
-En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour le point de terminaison).](manage-atp-post-migration.md)
+En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour le point de terminaison).](manage-atp-post-migration.md)
 
 > [!TIP]
 > Vous avez besoin d’aide sur les exclusions antivirus ? Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
@@ -219,7 +217,7 @@ En règle générale, il n’est pas nécessaire de définir des exclusions pour
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **l’Antivirus de sécurité des** points de \> terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
+2. Choisissez **l’Antivirus de sécurité des** points de \> terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez à [la procédure suivante).](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)
 
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -243,13 +241,13 @@ En règle générale, il n’est pas nécessaire de définir des exclusions pour
 
 7. Sous **l’onglet Balises** d’étendue, si vous utilisez des balises d’étendue dans votre organisation, spécifiez des balises d’étendue pour la stratégie que vous créez. (Voir [balises d’étendue.)](/mem/intune/fundamentals/scope-tags)
 
-8. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils d’utilisateur et [d’appareil Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+8. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils utilisateur et d’appareil [dans Microsoft Intune.)](/mem/intune/configuration/device-profile-assign)
 
 9. Sous **l’onglet Révision + créer,** examinez les paramètres, puis choisissez **Créer.**
 
 ### <a name="indicators-for-microsoft-defender-for-endpoint"></a>Indicateurs pour Microsoft Defender pour le point de terminaison
 
-Les indicateurs (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des [opérations](/microsoft-365/security/defender-endpoint/manage-indicators) de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à ne pas spécifier dans les analyses et les actions de correction dans Microsoft Defender pour point de terminaison. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
+Les indicateurs (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des [opérations](/microsoft-365/security/defender-endpoint/manage-indicators) de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à ne pas spécifier dans les analyses et les actions de correction dans Microsoft Defender for Endpoint. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
 
 Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour le point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autoriser » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection](microsoft-defender-antivirus-in-windows-10.md)nouvelle génération, [aux](overview-endpoint-detection-response.md)protection évolutive des points de terminaison et aux examens automatisés [& correction.](/microsoft-365/security/defender-endpoint/automated-investigations)
 
@@ -269,7 +267,7 @@ Avant de créer des indicateurs pour les fichiers, assurez-vous que les conditio
 
 - Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
 - La [fonctionnalité Bloquer ou autoriser est désactivée](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indicateurs pour les adresses IP, les URL ou les domaines
@@ -280,9 +278,9 @@ Avant de créer des indicateurs pour des adresses IP, des URL ou des domaines, a
 
 - La protection réseau dans Defender pour le point de terminaison est activée en mode blocage (voir [Activer la protection réseau)](/microsoft-365/security/defender-endpoint/enable-network-protection)
 - La version du client anti-programme malveillant est 4.18.1906.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1709 ou ultérieure
+- Les appareils s’exécutent Windows 10 version 1709 ou ultérieure, ou version Windows 11
 
-Les indicateurs réseau personnalisés sont allumés dans le [Microsoft 365 Defender](microsoft-defender-security-center.md). Pour plus d’informations, voir [Fonctionnalités avancées.](/microsoft-365/security/defender-endpoint/advanced-features)
+Les indicateurs réseau personnalisés sont allumés dans le [Microsoft 365 Defender](microsoft-defender-security-center.md). Pour en savoir plus, consultez [Fonctionnalités avancées.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indicateurs pour les certificats d’application
 
@@ -292,7 +290,7 @@ Avant de créer des indicateurs pour les certificats d’application, assurez-vo
 
 - Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir [Gérer la protection basée sur le cloud)](deploy-manage-report-microsoft-defender-antivirus.md)
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure, ou Windows 11 ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
 - Les définitions de protection contre les virus et menaces sont à jour
 
 > [!TIP]
@@ -306,13 +304,13 @@ Vous pouvez soumettre des entités, telles que des fichiers et des détections s
 
 Si vous avez un fichier qui a été détecté à tort comme malveillant ou a été manqué, suivez ces étapes pour soumettre le fichier à des fins d’analyse.
 
-1. Examinez les instructions ici : [Soumettre des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide)
+1. Examinez les recommandations ici : [Soumettre des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide)
 
 2. Visitez le Renseignement de sécurité Microsoft de soumission ( <https://www.microsoft.com/wdsi/filesubmission> ), et soumettez vos fichiers.
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Soumettre une détection sans fichier pour analyse
 
-Si un problème a été détecté comme programme malveillant en fonction du comportement et que vous n’avez pas de fichier, vous pouvez soumettre votre `Mpsupport.cab` fichier pour analyse. Vous pouvez obtenir le *fichier.cab* à l’aide de l’outil Utilitaire Command-Line protection contre les programmes malveillants (MPCmdRun.exe) de Microsoft sur Windows 10.
+Si un problème a été détecté comme programme malveillant en fonction du comportement et que vous n’avez pas de fichier, vous pouvez soumettre votre `Mpsupport.cab` fichier pour analyse. Vous pouvez obtenir le *fichier.cab* à l’aide de l’outil Utilitaire Command-Line de protection contre les programmes malveillants (MPCmdRun.exe) de Microsoft sur Windows 10 ou Windows 11.
 
 1. Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` , and then run as an `MpCmdRun.exe` administrator.
 
@@ -320,7 +318,7 @@ Si un problème a été détecté comme programme malveillant en fonction du com
 
    Un .cab de diagnostic qui contient divers journaux de diagnostic est généré. L’emplacement du fichier est spécifié dans la sortie de l’invite de commandes. Par défaut, l’emplacement est `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
-3. Examinez les instructions ici : [Soumettre des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide)
+3. Examinez les recommandations ici : [Soumettre des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide)
 
 4. Visitez le site Renseignement de sécurité Microsoft soumission ( ), et envoyez <https://www.microsoft.com/wdsi/filesubmission> vos fichiers .cab dossiers.
 
@@ -337,7 +335,7 @@ Pour les soumissions qui n’ont pas encore été traitées, elles sont priorita
 Pour vérifier les mises à jour concernant votre soumission, connectez-vous [sur le site Renseignement de sécurité Microsoft soumission.](https://www.microsoft.com/wdsi/filesubmission)
 
 > [!TIP]
-> Pour plus d’informations, voir [Soumettre des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions)
+> Pour plus d’informations, voir [Envoyer des fichiers pour analyse.](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions)
 
 ## <a name="part-5-review-and-adjust-your-threat-protection-settings"></a>Partie 5 : Examiner et ajuster vos paramètres de protection contre les menaces
 
@@ -360,7 +358,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 1. Go to the Microsoft Endpoint Manager admin center ( <https://endpoint.microsoft.com> ) and sign in.
 
-2. Choisissez **l’Antivirus de sécurité des** points de \>  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez [à la procédure suivante).](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
+2. Choisissez **l’Antivirus de sécurité des** points de \>  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante ou si vous souhaitez en créer une nouvelle, passez à [la procédure suivante).](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)
 
 3. Sous **Gérer,** sélectionnez **Propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
@@ -385,13 +383,13 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 6. Sous **l’onglet Balises** d’étendue, si vous utilisez des balises d’étendue dans votre organisation, spécifiez des balises d’étendue pour la stratégie. (Voir [balises d’étendue.)](/mem/intune/fundamentals/scope-tags)
 
-7. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils d’utilisateur et [d’appareil Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils utilisateur et d’appareil [dans Microsoft Intune.)](/mem/intune/configuration/device-profile-assign)
 
 8. Sous **l’onglet Révision + créer,** examinez les paramètres, puis choisissez **Créer.**
 
 ### <a name="remediation-for-potentially-unwanted-applications"></a>Correction des applications potentiellement indésirables
 
-Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peut ralentir l’utilisation des appareils, afficher des publicités inattendues ou installer d’autres logiciels qui peuvent être inattendus ou indésirables. Parmi les exemples de PUA, citons les logiciels de publicité, les logiciels de regroupement et les logiciels espions qui se comportent différemment avec les produits de sécurité. Bien que puA ne soit pas considéré comme un programme malveillant, certains types de logiciels le sont en fonction de leur comportement et de leur réputation.
+Les applications potentiellement indésirables (PUA) sont une catégorie de logiciels qui peuvent ralentir l’utilisation des appareils, afficher des publicités inattendues ou installer d’autres logiciels qui peuvent être inattendus ou indésirables. Parmi les exemples de PUA, citons les logiciels de publicité, les logiciels de regroupement et les logiciels espions qui se comportent différemment avec les produits de sécurité. Bien que puA ne soit pas considéré comme un programme malveillant, certains types de logiciels le sont en fonction de leur comportement et de leur réputation.
 
 > [!TIP]
 > Pour en savoir plus sur puA, voir [Détecter et bloquer les applications potentiellement indésirables.](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
@@ -410,7 +408,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 4. Sous **l’onglet Paramètres de configuration,** faites défiler vers le bas et **développez Antivirus Microsoft Defender**.
 
-5. Définissez **Détecter les applications potentiellement indésirables** à **Auditer.** (Vous pouvez la désactiver, mais en utilisant le mode audit, vous pourrez voir les détections.)
+5. Définissez **Détecter les applications potentiellement indésirables** à **auditer.** (Vous pouvez la désactiver, mais en utilisant le mode audit, vous pourrez voir les détections.)
 
 6. Choose **Review + save,** and then choose **Save**.
 
@@ -428,7 +426,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 6. Définissez **Détecter les applications potentiellement indésirables** sur **Audit,** puis choisissez **Suivant**. (Vous pouvez désactiver la protection PUA, mais en utilisant le mode audit, vous pourrez voir les détections.)
 
-7. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils d’utilisateur et [d’appareil Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Si vous avez besoin d’aide pour les affectations, voir Affecter des profils utilisateur et d’appareil [dans Microsoft Intune.)](/mem/intune/configuration/device-profile-assign)
 
 8. Sous **l’onglet Règles d’applicabilité,** spécifiez les éditions ou versions du système d’exploitation à inclure ou à exclure de la stratégie. Par exemple, vous pouvez définir la stratégie à appliquer à tous les appareils, certaines éditions de Windows 10. Sélectionnez **Suivant**.
 
@@ -438,13 +436,13 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 [Les fonctionnalités d’investigation](automated-investigations.md) et de correction automatisées (AIR) sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Lorsque des alertes sont déclenchées et qu’une enquête automatisée s’exécute, un verdict est généré pour chaque élément de preuve examiné. Les verdicts peuvent être *malveillants,* *suspects* ou *aucune menace trouvée.*
 
-Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels) définie pour votre organisation et d’autres paramètres de sécurité, des mesures correctives sont prises sur les artefacts considérés comme malveillants *ou* *suspects.* Dans certains cas, les actions de correction se produisent automatiquement ; dans d’autres cas, les actions correctives sont prises manuellement ou uniquement après approbation par votre équipe des opérations de sécurité.
+Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels) de votre organisation et d’autres paramètres de sécurité, des mesures correctives sont prises sur les artefacts considérés comme malveillants *ou* *suspects.* Dans certains cas, les actions de correction se produisent automatiquement ; dans d’autres cas, les actions correctives sont prises manuellement ou uniquement après approbation par votre équipe des opérations de sécurité.
 
 - [En savoir plus sur les niveaux d’automatisation](/microsoft-365/security/defender-endpoint/automation-levels); Et puis
 - [Configurez les fonctionnalités AIR dans Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation)
 
 > [!IMPORTANT]
-> Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint)et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
+> Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions,](#indicators-for-microsoft-defender-for-endpoint)et conservez l’examen et la correction automatisés pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
 ## <a name="still-need-help"></a>Encore besoin d’aide ?
 
@@ -454,7 +452,7 @@ Si vous avez passé en revue toutes les étapes de cet article et que vous avez 
 
 2. Dans le coin supérieur droit, sélectionnez le point d’interrogation (**?**), puis sélectionnez **support Microsoft.**
 
-3. Dans la **fenêtre assistant support,** décrivez votre problème, puis envoyez votre message. À partir de là, vous pouvez ouvrir une demande de service.
+3. Dans la **fenêtre De l’Assistant** Support, décrivez votre problème, puis envoyez votre message. À partir de là, vous pouvez ouvrir une demande de service.
 
 ## <a name="see-also"></a>Voir aussi
 

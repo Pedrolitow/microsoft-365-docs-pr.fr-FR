@@ -2,7 +2,6 @@
 title: Évaluer la protection du réseau
 description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants contre qui elle est protégée.
 keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b0a52af9eb9cbc8d1cfc4084d7f137fd5e6975be
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668099"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883160"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -35,7 +34,7 @@ ms.locfileid: "60668099"
 Cet article vous aide à évaluer la protection du réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site réplique le comportement qui se produit si un utilisateur a visité un site ou un domaine malveillant.
 
 > [!TIP]
-> Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
+> Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) voir comment fonctionnent les autres fonctionnalités de protection.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
@@ -54,9 +53,9 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
 
 2. Accédez à [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
-La connexion réseau est autorisée et un message de test s’affiche.
-
-![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide aux informations.](images/np-notif.png)
+    La connexion réseau est autorisée et un message de test s’affiche.
+    
+    ![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide.](images/np-notif.png)
 
 > [!NOTE]
 > Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [triple TCP.](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
@@ -75,7 +74,7 @@ Pour passer en revue les applications qui auraient été bloquées, ouvrez l’O
 
 - [Protection du réseau](network-protection.md)
 
-- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
 - [Activer la protection du réseau](enable-network-protection.md)
 

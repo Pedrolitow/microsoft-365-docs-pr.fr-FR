@@ -2,7 +2,6 @@
 title: Gérer Antivirus Microsoft Defender dans votre entreprise
 description: Découvrez comment utiliser la stratégie de groupe, Configuration Manager, PowerShell, WMI, Intune et la ligne de commande pour gérer Microsoft Defender AV
 keywords: stratégie de groupe, gpo, gestionnaire de config, sccm, scep, powershell, wmi, intune, defender, antivirus, anti-programme malveillant, sécurité, protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,25 +10,25 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/13/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 211c450b718414608e9e16890f7e080db5bda111
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d61529c966771004ae9c7aed881f98a718bdec
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201456"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884108"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer Antivirus Microsoft Defender dans votre entreprise
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
@@ -41,9 +40,9 @@ Vous pouvez gérer et configurer les Antivirus Microsoft Defender à l’aide de
 - [Stratégie de groupe](./use-group-policy-microsoft-defender-antivirus.md)
 - [Cmdlets PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
-- Utilitaire de ligne de commande microsoft de protection contre les programmes [malveillants](./command-line-arguments-microsoft-defender-antivirus.md) (appelé *utilitairempcmdrun.exe* logiciel
+- Utilitaire [de ligne de commande](./command-line-arguments-microsoft-defender-antivirus.md) microsoft de protection contre les programmes malveillants (appelé utilitaire *mpcmdrun.exe* logiciel
 
-Les articles suivants fournissent des informations supplémentaires, des liens et des ressources pour l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
+Les articles suivants fournissent des informations supplémentaires, des liens et des ressources sur l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
 
 |Article|Description|
 |:---|:---|

@@ -2,7 +2,6 @@
 title: Configurer des substitutions locales pour Antivirus Microsoft Defender paramètres
 description: Activez ou désactivez les utilisateurs pour qu’ils ne changent pas localement les paramètres dans Microsoft Defender AV.
 keywords: remplacement local, stratégie locale, stratégie de groupe, gpo, verrouillage, fusion, listes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,21 +12,21 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/14/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c206d998d1900ef39a0edbfd21c24b2e0cdc0514
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aec2283b1d55e395f0080d412a3ea0a836cc8b39
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192942"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882332"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -39,7 +38,7 @@ Par exemple, il peut être nécessaire d’autoriser certains groupes d’utilis
 
 Le paramètre par défaut de ces stratégies **est Désactivé.**
 
-S’ils sont activés, les utilisateurs sur les points de terminaison peuvent apporter des modifications au paramètre associé avec l’application [Sécurité Windows,](microsoft-defender-security-center-antivirus.md) les paramètres de stratégie de groupe locaux et les cmdlets PowerShell (le cas échéant).
+S’ils sont activés, les utilisateurs sur les points de terminaison peuvent apporter des modifications au paramètre associé à l’application [Sécurité Windows,](microsoft-defender-security-center-antivirus.md) aux paramètres de stratégie de groupe locaux et aux cmdlets PowerShell (le cas échéant).
 
 Le tableau suivant répertorie chacun des paramètres de stratégie de remplacement et les instructions de configuration pour la fonctionnalité ou le paramètre associé.
 
@@ -59,7 +58,7 @@ Pour configurer ces paramètres :
 
 <br/><br/>
 
-| Lieu | Paramètre | Article |
+| Emplacement | Setting | Article |
 |---|---|---|---|
 | MAPS |Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) |
@@ -72,12 +71,12 @@ Pour configurer ces paramètres :
 | Analyser|Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur|[Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md) |
 | Analyser|Configurer le remplacement de paramètre local pour le jour de l’analyse de planification|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Analyser|Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Analyser|Configurer le remplacement de paramètre local pour l’heure d’analyse programmée|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Analyser|Configurer le remplacement de paramètre local pour l’heure d’analyse prévue|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Analyser|Configurer le remplacement de paramètre local pour le type d’analyse à utiliser pour une analyse programmée|[Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 
 <a id="merge-lists"></a>
 
-## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>Configurer la façon dont les listes de correction et d’exclusions des menaces définies localement et globalement sont fusionnées
+## <a name="configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged"></a>Configurer la façon dont les listes de correction et d’exclusion des menaces définies localement et globalement sont fusionnées
 
 Vous pouvez également configurer la façon dont les listes définies localement sont combinées ou fusionnées avec des listes définies globalement. Ce paramètre s’applique aux [listes d’exclusions,](configure-exclusions-microsoft-defender-antivirus.md) [aux listes de](configure-remediation-microsoft-defender-antivirus.md)correction spécifiées et à la réduction de la surface [d’attaque.](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
@@ -85,7 +84,7 @@ Par défaut, les listes qui ont été configurées dans la stratégie de groupe 
 
 Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes définies globalement (telles que celles des G GPO déployés) sont utilisées.
 
-### <a name="use-group-policy-to-disable-local-list-merging"></a>Utiliser la stratégie de groupe pour désactiver la fusion de listes locales
+### <a name="use-group-policy-to-disable-local-list-merging"></a>Utiliser une stratégie de groupe pour désactiver la fusion de listes locales
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
@@ -93,10 +92,10 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 
 3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender**.
 
-4. Double-cliquez **sur Configurer le comportement de fusion de l’administrateur local** pour les listes et définissez l’option sur **Désactivé.** Cliquez sur **OK**.
+4. Double-cliquez sur Configurer le comportement de fusion de l’administrateur local pour les **listes** et définissez l’option **sur Désactivé.** Cliquez sur **OK**.
 
 > [!NOTE]
-> Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Elle remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
+> Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Il remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
 ## <a name="related-topics"></a>Rubriques connexes
 

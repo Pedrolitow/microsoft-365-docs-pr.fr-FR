@@ -1,8 +1,7 @@
 ---
 title: Masquer l’interface Antivirus Microsoft Defender de données
 description: Vous pouvez masquer la vignette de protection contre les virus et les menaces dans Sécurité Windows application.
-keywords: Verrouillage de l’interface utilisateur, mode sans tête, masquer l’application, masquer les paramètres, masquer l’interface
-search.product: eADQiWindows 10XVcnh
+keywords: Verrouillage de l’interface utilisateur, mode sans en-tête, masquer l’application, masquer les paramètres, masquer l’interface
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,25 +10,25 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a16abdcbc219a950eff6ddc8bb48018c4ba3279
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c43135ff2743282f4588cbccc0d8a80d17de93bf
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209308"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883088"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -37,7 +36,7 @@ Vous pouvez utiliser la stratégie de groupe pour empêcher les utilisateurs sur
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface Antivirus Microsoft Defender de données
 
-Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces virus & dans l’application Sécurité Windows.
+Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces & virus dans l’application Sécurité Windows.
 
 Avec le paramètre activé **:**
 
@@ -73,7 +72,7 @@ Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-
 Vous pouvez empêcher les utilisateurs de mettre en pause les analyses, ce qui peut être utile pour vous assurer que les analyses programmées ou à la demande ne sont pas interrompues par les utilisateurs.
 
 > [!NOTE]
-> Ce paramètre n’est pas pris en charge Windows 10.
+> Ce paramètre n’est pas pris en charge sur Windows 10.
 
 ### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Utiliser la stratégie de groupe pour empêcher les utilisateurs de mettre une analyse en pause
 

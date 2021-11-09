@@ -2,7 +2,6 @@
 title: Utiliser la ligne de commande pour gérer les Antivirus Microsoft Defender
 description: Exécutez Antivirus Microsoft Defender analyse et configurez la protection nouvelle génération avec un utilitaire de ligne de commande dédié.
 keywords: exécuter l’analyse windows defender, exécuter l’analyse antivirus à partir de la ligne de commande, exécuter l’analyse windows defender à partir de la ligne de commande, mpcmdrun, defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 98831bfff3d38d111c66d16ba150261f8ed148e8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 00420a0f6bb809d50f77013dc953386c0e426967
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702176"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881924"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
@@ -29,10 +28,10 @@ ms.locfileid: "60702176"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
+Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous trouverez l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
 
 > [!TIP]
-> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de** commandes sur le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme anti-programme malveillant de Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
+> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de** commandes sur le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme anti-programme malveillant De Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 L’utilitaire MpCmdRun utilise la syntaxe suivante :
 

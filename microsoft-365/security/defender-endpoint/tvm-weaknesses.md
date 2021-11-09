@@ -1,9 +1,7 @@
 ---
 title: 'Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités'
-description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Découvert par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
+description: Répertorie les vulnérabilités courantes et l’ID d’exposition (CVE) des faiblesses trouvées dans le logiciel en cours d’exécution dans votre organisation. Détecté par Microsoft Defender pour endpoint Gestion des menaces et des vulnérabilités fonctionnalité.
 keywords: Microsoft Defender for Endpoint threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5395ae9452dae6ffc170ee294c59fce4942000a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 801eabd49beae39c4d926b4c370229f5308fb35b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193936"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882212"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -44,7 +42,7 @@ La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appa
 > Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par Gestion des menaces et des vulnérabilités.
 
 > [!TIP]
-> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Accéder à la page Faiblesses
 
@@ -80,7 +78,7 @@ Affichez les informations sur les violations et menaces associées dans la colon
  > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .
 
 L’icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
-![Exemple de texte d’informations sur la violation qui pourrait s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
+![Exemple de texte d’informations sur la violation qui peut s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
 L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.
 
@@ -88,7 +86,7 @@ L’icône Informations sur les menaces est mise en évidence si la vulnérabili
 
 ### <a name="gain-vulnerability-insights"></a>Obtenir des informations sur les vulnérabilités
 
-Si vous sélectionnez un contrôle CVE, un panneau volant s’ouvre avec plus d’informations, telles que la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
+Si vous sélectionnez une CVE, un panneau volant s’ouvre avec plus d’informations telles que la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
 
 - La catégorie « Fonctionnalité du système d’exploitation » s’affiche dans les scénarios pertinents
 - Vous pouvez passer à la recommandation de sécurité associée pour chaque CVE avec appareil exposé
@@ -97,7 +95,7 @@ Si vous sélectionnez un contrôle CVE, un panneau volant s’ouvre avec plus d�
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
-Les cves pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
+Les VC pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n’est pas pris en charge, seules des données limitées seront disponibles.
 
 Les informations sur l’appareil exposé ne seront pas disponibles pour les VC avec des logiciels non pris en cas de non-gestion. Filtrez en sélectionnant l’option « Non disponible » dans la section « Appareils exposés ».
 
@@ -145,12 +143,12 @@ La catégorie « Fonctionnalité du système d’exploitation » est également 
 
 :::image type="content" alt-text="Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko." source="images/tvm-cve-detection-logic.png":::
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 
 1. Ouvrez la CVE sur la page Faiblesses.
-2. Sélectionnez **l’imprécision du rapport** et un volet volant s’ouvre.
+2. Select **Report inaccuracy** and a flyout pane will open.
 3. Sélectionnez la catégorie d’imprécision dans le menu déroulant et remplissez votre adresse e-mail et les détails d’imprécision.
 4. Sélectionnez **Envoyer**. Vos commentaires sont immédiatement envoyés aux experts Gestion des menaces et des vulnérabilités de sécurité.
 

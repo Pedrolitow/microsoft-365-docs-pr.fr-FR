@@ -2,8 +2,6 @@
 title: Affecter une valeur d’appareil - Gestion des menaces et des vulnérabilités
 description: Découvrez comment affecter une valeur faible, normale ou élevée à un appareil pour vous aider à différencier les priorités des ressources.
 keywords: Valeur de l’appareil Microsoft Defender pour le point de terminaison, Gestion des menaces et des vulnérabilités valeur de l’appareil, appareils à valeur élevée, score d’exposition de la valeur d’appareil
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1cc240c1c013468b482533ab00ef498543431fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 383001a8beac1f14ab6c1436fa42b28e48dbdc25
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193924"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884048"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Affecter une valeur d’appareil - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -58,7 +56,7 @@ Exemples d’appareils à attribuer à une valeur élevée :
 
 ## <a name="choose-device-value"></a>Choisir la valeur de l’appareil
 
-1. Accédez à n’importe quelle page d’appareil. L’endroit le plus simple est de consulter l’inventaire des appareils.
+1. Accédez à n’importe quelle page d’appareil. L’endroit le plus simple est l’inventaire des appareils.
 
 2. Sélectionnez **la valeur de** l’appareil à trois points près de la barre d’actions en haut de la page.
 

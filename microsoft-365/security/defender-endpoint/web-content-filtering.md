@@ -2,8 +2,6 @@
 title: Filtrage du contenu web
 description: Utilisez le filtrage de contenu web dans Microsoft Defender pour point de terminaison pour suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu.
 keywords: protection web, protection contre les menaces web, navigation web, surveillance, rapports, cartes, liste de domaines, sécurité, hameçonnage, programme malveillant, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
-ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
+ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275687"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883436"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +36,7 @@ Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
-Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section conditions préalables.
+Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge du navigateur, consultez la section des conditions préalables.
 
 ## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
@@ -48,7 +46,7 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
@@ -56,13 +54,13 @@ Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des cond
 
 - Vous avez accès à Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-- Les appareils de votre organisation exécutent Windows 10 mise à jour anniversaire (version 1607) ou ultérieure avec les dernières mises à jour [antivirus/anti-programme malveillant.](manage-updates-baselines-microsoft-defender-antivirus.md)
+- Les appareils de votre organisation exécutent la mise à jour anniversaire Windows 10 (version 1607) ou une version ultérieure, ou Windows 11 avec les dernières mises à jour [antivirus/anti-programme malveillant.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 - Windows Defender SmartScreen et la Protection du réseau sont activés sur les appareils de votre organisation.
 
 ## <a name="data-handling"></a>Traitement des données
 
-Les données sont stockées dans la région sélectionnée dans le cadre de vos paramètres de gestion des données [de Microsoft Defender for Endpoint.](data-storage-privacy.md) Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront partagées avec aucun tiers, y compris nos fournisseurs de données.
+Les données sont stockées dans la région sélectionnée dans le cadre de vos paramètres de gestion des données [de Microsoft Defender for Endpoint.](data-storage-privacy.md) Vos données ne quitteront pas le centre de données dans cette région. En outre, vos données ne seront pas partagées avec des tiers, y compris nos fournisseurs de données.
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
@@ -70,20 +68,20 @@ Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de te
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
-Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées pour les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres** \> **Endpoints** \> **Web content filtering** (under **Rules**).
+Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées sur les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres** \> **Endpoints** \> **Web content filtering** (under **Rules**).
 
 Les stratégies peuvent être déployées pour bloquer l’une des catégories parent ou enfant suivantes :
 
 <details>
 <summary>Contenu pour adultes</summary>
 
-**Domaines :** sites liés à des groupes ou à des mouvements dont les membres font preuve d’une enthousiasme pour un système qui est différent de ceux qui sont socialement acceptés. 
+**Domaines :** sites liés à des groupes ou des mouvements dont les membres font preuve d’une enthousiasme pour un système qui est différent de ceux qui sont socialement acceptés. 
 
 **Jeux :** jeux en ligne et sites qui favorisent les compétences et la pratique en matière de jeux.
 
-**Nudity**: sites qui fournissent des images ou des vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
+**Nudity**: sites qui fournissent des images ou vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
 
-**Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
+**Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu à orientation sexuelle est également répertoriée ici.
 
 Éducation sexuelle : sites qui traitent de la violence et de la violence d’une manière informative et non-sexuelle, y compris les sites qui fournissent une éducation sur la reproduction humaine et la santé humaine, les sites qui fournissent des conseils sur la prévention des infections sexuelles et les sites qui fournissent des conseils sur les sujets de santé sexuelle.
 
@@ -111,17 +109,17 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Images d’abus enfants**: sites qui incluent des images d’abus ou des images d’abus enfants. 
 
-**Activités pénales**: sites qui donnent des instructions sur, des conseils ou la promotion d’activités illégales.
+**Activités pénales**: sites qui donnent des instructions sur, des conseils sur ou la promotion d’activités illégales.
 
 **Piratage :** sites qui fournissent des ressources pour une utilisation illégale ou discutable de logiciels informatiques ou de matériel, y compris les sites qui distribuent des documents protégés par des droits d’auteur qui ont été déchiffrés.
 
 **Les &** de violence : sites qui promeuvent des opinions agressives, dégradées ou abusives sur n’importe quelle section de la population qui peuvent être identifiées par la course, le genre, l’âge, la nationalité, le handicap physique, la situation économique, les préférences sexuelles ou tout autre choix de style de vie.
 
-**Consommation illégale :** sites qui vendent des produits illicites/contrôlés, promeuvent des abus ou vendent des accessoires connexes.
+**La consommation de** produits illicites : sites qui vendent des produits illicites/contrôlés, promeuvent des abus ou vendent des accessoires connexes.
 
 **Logiciels non** fiables : sites qui contiennent ou promeuvent l’utilisation de programmes malveillants, de logiciels espions, de botnets, d’tentatives de hameçonnage ou de piratage & de droits d’auteur.
 
-**Enseignement scolaire :** sites liés au plagiarisme ou à la enseignement. 
+**Enseignement scolaire :** sites liés au plagiarisme ou à la politique de enseignement. 
 
 **Auto-nuire :** sites qui promeuvent les auto-dommages, y compris les sites de cyberintimidation qui contiennent des messages abusifs et/ou offensants à l’égard des utilisateurs.
 
@@ -130,7 +128,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 </details>
 
 <details>
-<summary>Resoe</summary>
+<summary>Sons</summary>
 
 **Conversation**: sites qui sont principalement des salles de conversation web.
 

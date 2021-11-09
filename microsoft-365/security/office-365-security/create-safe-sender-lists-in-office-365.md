@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 376ea1a5c598adce28fb65ee2b2d1fbceceecd34
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157661"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882200"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
@@ -52,15 +52,17 @@ Les règles de flux de messagerie permettent de faire en sorte que seuls les mes
 >
 > - Bien que vous pouvez utiliser des listes d’expéditeurs sûrs pour vous aider avec les faux positifs (message électronique de qualité marqué comme faux), vous devez envisager l’utilisation de listes d’expéditeurs sûrs comme une solution temporaire à éviter si possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs sûrs, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous persistez à utiliser des listes d’expéditeurs sûrs pour gérer les faux positifs, vous devez être vigilant et maintenir la rubrique Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
 >
-> - Pour autoriser un domaine à envoyer des messages électroniques non authentifiés (contourner la protection contre l’usurpation d’identité), mais pas les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez utiliser la veille contre l’usurpation d’identité et la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md) [](learn-about-spoof-intelligence.md)
+> - Pour permettre à un domaine d’envoyer des messages électroniques non authentifiés (contournant la protection contre [](learn-about-spoof-intelligence.md) l’usurpation d’identité), mais sans contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez utiliser la veille contre l’usurpation d’identité et la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
 >
-> - EOP et Outlook différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, voir la section Considérations pour [les courriers](#considerations-for-bulk-email) électroniques en masse plus loin dans cet article.
+> - EOP et Outlook différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, voir la section Considérations pour [les courriers](#considerations-for-bulk-email) électroniques en nombre plus loin dans cet article.
 >
-
 
 En revanche, vous avez également plusieurs options pour bloquer le courrier provenant de sources spécifiques à l’aide de _listes d’expéditeurs bloqués._ Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Recommandé) Utiliser des règles de flux de messagerie
+
+> [!NOTE]
+> Vous ne pouvez pas utiliser les en-têtes de message et les règles de flux de messagerie pour désigner un expéditeur interne comme expéditeur sécurisé. Les procédures de cette section fonctionnent uniquement pour les expéditeurs externes.
 
 Les règles de flux de messagerie dans Exchange Online et EOP autonome utilisent des conditions et des exceptions pour identifier les messages, ainsi que des actions pour spécifier ce qui doit être fait pour ces messages. Pour plus d’informations, consultez la rubrique [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
@@ -70,7 +72,7 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 
 2. Configurez l’un des paramètres suivants :
 
-   - **Condition de règle de flux** de messagerie : un en-tête de **message** inclut l’un de ces mots Nom d’en-tête : \>  \>  `Authentication-Results` \> **valeur d’en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
+   - **Condition de règle de flux de** messagerie : un **en-tête** de message inclut l’un de ces mots Nom d’en-tête : \>  \>  `Authentication-Results` \> **Valeur d’en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
 
      Cette condition vérifie l’état d’authentification de messagerie du domaine de courrier d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC.](use-dmarc-to-validate-email.md)
 
@@ -132,7 +134,7 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 
 L’option la moins souhaitable consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies anti-courrier indésirable. Vous devez éviter cette option si *possible,* car les expéditeurs contournent la protection contre le courrier indésirable, l’usurpation d’identité et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est idéale pour les tests temporaires uniquement. Les étapes détaillées se trouvent dans la rubrique Configurer les stratégies [anti-courrier indésirable dans la rubrique EOP.](configure-your-spam-filter-policies.md)
 
-La limite maximale pour ces listes est d’environ 1 000 entrées ; cependant, vous ne pourrez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
+La limite maximale pour ces listes est d’environ 1 000 entrées ; Bien que vous ne soyez en mesure d’entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
 > [!CAUTION]
 >
@@ -142,15 +144,15 @@ La limite maximale pour ces listes est d’environ 1 000 entrées ; cependant, v
 
 ## <a name="considerations-for-bulk-email"></a>Considérations sur les messages électroniques en masse
 
-Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour transmettre et remettre le message entre des serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe du message est décrite dans la RFC 5321 et l’en-tête du message est décrit dans la RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission du message et ne fait pas réellement partie du message.
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).** Si le message ne peut pas être remis, il s’agit du destinataire de la non-remise (également appelée NDR ou message de non-remise).
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
-Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en masse.
+Souvent, les adresses et les `5321.MailFrom` `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en masse.
 
-Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel pour envoyer ses messages électroniques publicitaires. Le message que vous recevez dans votre boîte de réception a les propriétés suivantes :
+Par exemple, supposons que Blue Yonder Airlines ait embauché Margie’s Travel pour envoyer ses messages électroniques publicitaires. Le message que vous recevez dans votre boîte de réception possède les propriétés suivantes :
 
 - `5321.MailFrom`L’adresse est blueyonder.airlines@margiestravel.com.
 

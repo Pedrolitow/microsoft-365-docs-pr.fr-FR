@@ -1,9 +1,7 @@
 ---
 title: 'Conditions préalables & autorisations : Gestion des menaces et des vulnérabilités'
 description: Avant de commencer à utiliser Gestion des menaces et des vulnérabilités, assurez-vous que vous avez les configurations et autorisations pertinentes.
-keywords: conditions préalables & gestion des vulnérabilités sur les autorisations de Gestion des menaces et des vulnérabilités menace, conditions préalables pour les autorisations d’Gestion des menaces et des vulnérabilités, conditions préalables pour les autorisations TVM de Microsoft Defender pour les points de terminaison, gestion des vulnérabilités
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: conditions préalables & gestion des vulnérabilités sur les autorisations de Gestion des menaces et des vulnérabilités, conditions préalables pour les autorisations d’Gestion des menaces et des vulnérabilités, conditions préalables pour les autorisations TVM de Microsoft Defender pour les points de terminaison, gestion des vulnérabilités
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206732"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881743"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -43,7 +41,7 @@ Assurez-vous que vos appareils :
 
 - Installez et déployez les mises à jour obligatoires suivantes dans votre réseau pour augmenter les taux de détection de l’évaluation des vulnérabilités :
 
-  > Version | Numéro et lien de la mise à jour de sécurité de la KB
+  > Débloquer | Numéro et lien de la mise à jour de sécurité de la KB
   > :---|:---
   > Windows 10 Version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) et [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)

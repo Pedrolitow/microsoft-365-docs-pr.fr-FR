@@ -1,8 +1,7 @@
 ---
 title: Exécuter et personnaliser des analyses à la demande dans Antivirus Microsoft Defender
-description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows app.
+description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows appl.
 keywords: analyse, à la demande, dos, intune, analyse instantanée
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,21 +11,21 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2021
+ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9e8860129df9f5b91cad8737a595a11296d91c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162541"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881660"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -43,7 +42,7 @@ Combinée à une protection toujours en temps réel, qui examine les fichiers lo
 
 2. Choisissez **l’Antivirus de sécurité des points de** \> **terminaison.**
 
-3. Dans la liste des onglets, sélectionnez Windows 10 points de **terminaison défectueux.**
+3. Dans la liste des onglets, sélectionnez **Windows 10** points de terminaison défectueux **ou Windows 11 points de terminaison non défectueux.**
 
 4. Dans la liste des actions fournies, sélectionnez **Analyse rapide** (recommandée) ou **Analyse complète.**
 
@@ -76,7 +75,7 @@ Voir [Exécuter une analyse dans l’application Sécurité Windows pour](micros
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>Utiliser les cmdlets PowerShell pour exécuter une analyse
 
-Utilisez la cmdlet suivante :
+Utilisez l’cmdlet suivante :
 
 ```PowerShell
 Start-MpScan

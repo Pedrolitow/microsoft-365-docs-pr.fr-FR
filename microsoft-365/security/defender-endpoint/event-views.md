@@ -2,7 +2,6 @@
 title: Afficher les événements de la réduction de la surface d’attaque
 description: Importer des affichages personnalisés pour voir les événements de réduction de la surface d’attaque.
 keywords: affichage des événements, Exploit Guard, audit, révision, événements
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7dccc8992d808b5f9cea2b190a9b40cdf75f3392
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704846"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883172"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -46,14 +45,14 @@ Obtenez des rapports détaillés sur les événements, les blocs et les avertiss
 
 Créez des affichages personnalisés dans Windows’observateur d’événements pour voir uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer un affichage personnalisé en tant que fichier XML. Vous pouvez copier le XML directement à partir de cette page.
 
-Vous pouvez également accéder manuellement à la zone d’événement correspondant à la fonctionnalité.
+Vous pouvez également accéder manuellement à la zone d’événement qui correspond à la fonctionnalité.
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
-    - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
+    - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
 2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
@@ -69,7 +68,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 6. Il crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
 
-### <a name="copy-the-xml-directly"></a>Copier directement le XML
+### <a name="copy-the-xml-directly"></a>Copier le XML directement
 
 1. Tapez **l’Observateur** d’événements dans menu Démarrer et ouvrez l Windows’observateur **d’événements.**
 
@@ -158,7 +157,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|1|Audit ACG|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|2|Forcer ACG|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|3|Ne pas autoriser l’audit des processus enfants|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|4 |Ne pas autoriser le blocage des processus enfants|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|4|Ne pas autoriser le blocage des processus enfants|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|5|Bloquer l’audit des images à faible intégrité|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|6 |Bloquer le blocage des images à faible intégrité|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|7 |Bloquer l’audit des images distantes|
@@ -182,13 +181,13 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|WER-Diagnostics|5|Bloquer CFG|
 |Exploit Protection|Win32K (opérationnel)|260|Police non approuvée|
 |Protection réseau|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
-|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode Audit|
+|Protection réseau|Windows Defender (opérationnel)|1125|Événement lorsque la protection du réseau se déclenche en mode audit|
 |Protection réseau|Windows Defender (opérationnel)|1126|Événement lorsque la protection du réseau se déclenche en mode blocage|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode blocage|
@@ -196,4 +195,4 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 >[!NOTE]
 > Du point de vue de l’utilisateur, les notifications en mode avertissement de la réduction de la surface d’attaque sont Windows notification toast pour les règles de réduction de la surface d’attaque.
 >
-> Dans la protection du réseau, la protection réseau fournit uniquement les modes Audit et Blocage.
+> Dans la protection du réseau, la protection du réseau fournit uniquement les modes Audit et Blocage.

@@ -2,8 +2,6 @@
 title: Plateformes et fonctionnalités des systèmes d’exploitation pris en charge
 description: Assurez-vous que vous respectez les conditions requises du système d’exploitation ou de la plateforme pour Gestion des menaces et des vulnérabilités, afin que les activités de tous vos appareils soient correctement expliquées.
 keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 091ba63ac23342c9423d8989cc2e56f4a1423f76
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659102"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883376"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -52,12 +50,12 @@ Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris
 Windows 8.1|Oui|Oui|Oui|Oui|Oui
 Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
-Windows 11|Oui|Oui|Oui|Oui|Oui
+Windows 11|Oui|Oui|Oui|Oui|Oui
 Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
 Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
 Windows Server 2016|Oui|Oui|Oui|Oui|Oui
 Windows Server 2019|Oui|Oui|Oui|Oui|Oui
-Windows Server 2022|Oui|Oui|Oui|Oui|Oui
+Windows Server 2022|Oui|Oui|Oui|Oui|Oui
 macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui 
 Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-dessous)|Oui|Oui|Oui|Oui|Oui
 CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui

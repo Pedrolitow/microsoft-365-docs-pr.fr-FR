@@ -2,8 +2,6 @@
 title: Recommandations en matière de sécurité Gestion des menaces et des vulnérabilités
 description: Obtenez des recommandations de sécurité actionnables prioritaires par menace, probabilité de violation et valeur, Gestion des menaces et des vulnérabilités.
 keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42552d9b39a50ad924e0514a1f1184fba9f5f865
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190508"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882968"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -44,7 +42,7 @@ Chaque recommandation de sécurité inclut des étapes de correction actionnable
 > [!TIP]
 > Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Chaque appareil de l’organisation est marqué en fonction de trois facteurs importants pour aider les clients à se concentrer sur les bonnes choses au bon moment.
 
@@ -68,7 +66,7 @@ Affichez les recommandations de sécurité associées aux endroits suivants :
 
 Go to the **Vulnerability management** navigation menu and select **Recommandations**. La page contient une liste de recommandations de sécurité pour les menaces et les vulnérabilités trouvées dans votre organisation.
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Principales recommandations en matière de sécurité dans le tableau de bord Gestion des menaces et des vulnérabilités tableau de bord
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Principales recommandations en matière de sécurité dans le tableau Gestion des menaces et des vulnérabilités de bord
 
 Dans un jour donné en tant qu’administrateur de la sécurité, vous pouvez consulter le tableau de bord [Gestion des menaces et des vulnérabilités](tvm-dashboard-insights.md) pour voir votre [score](tvm-exposure-score.md) d’exposition côte à côte avec votre score de sécurité [Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) L’objectif est **de** réduire l’exposition  de votre organisation contre les vulnérabilités et d’augmenter la sécurité des appareils de votre organisation afin d’être plus résiliente contre les attaques contre les menaces de cybersécurité. La liste des recommandations de sécurité les plus importantes peut vous aider à atteindre cet objectif.
 
@@ -107,7 +105,7 @@ Dans le volant, vous pouvez choisir l’une des options suivantes :
 
 - [**Options de correction**](tvm-remediation.md) : envoyez une demande de correction pour ouvrir un ticket dans Microsoft Intune que votre administrateur informatique peut récupérer et traiter. Suivre l’activité de correction dans la page Correction.
 
-- [**Options d’exception**](tvm-exception.md) : soumettre une exception, fournir une justification et définir la durée de l’exception si vous ne pouvez pas encore résoudre le problème.
+- [**Options d’exception**](tvm-exception.md) : envoyer une exception, fournir une justification et définir la durée de l’exception si vous ne pouvez pas encore résoudre le problème.
 
 > [!NOTE]
 > Lorsqu’une modification logicielle est réalisée sur un appareil, il faut généralement 2 heures pour que les données soient reflétées dans le portail de sécurité. Toutefois, cela peut parfois prendre plus de temps. Les modifications de configuration peuvent prendre entre 4 et 24 heures.
@@ -122,11 +120,11 @@ S’il y a une augmentation importante du nombre d’appareils exposés ou une f
 
 ## <a name="request-remediation"></a>Demander la correction
 
-La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
+La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations en matière de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Comment demander des corrections
 
-Sélectionnez une recommandation de sécurité pour qui vous souhaitez demander des corrections, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
+Sélectionnez une recommandation de sécurité pour la demande de correction, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
 
 ## <a name="file-for-exception"></a>Fichier d’exception
 
@@ -144,7 +142,7 @@ Sélectionnez une recommandation de sécurité pour la création d’une excepti
 
 Remplissez le formulaire et soumettez-le. Pour afficher toutes vos exceptions (actuelles et passées), accédez à la [page](tvm-remediation.md) Correction sous le menu Gestion des vulnérabilités des menaces **&** et sélectionnez l’onglet **Exceptions.** En savoir plus sur la création d’une [exception](tvm-exception.md#create-an-exception)
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Vous pouvez signaler un faux positif lorsque vous voyez des informations de recommandation de sécurité vagues, inexactes, incomplètes ou déjà corrigés.
 

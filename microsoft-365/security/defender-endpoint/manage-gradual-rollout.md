@@ -2,8 +2,6 @@
 title: Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 description: En savoir plus sur le processus de mise à jour progressive et les contrôles
 keywords: mise à jour, processus de mise à jour, contrôles, publication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0a264f16c35a9fe122c2cb62a56c16334fb162d2
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: ceeae633c85912d4c344ed8a74fe66def168efd5
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099704"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882584"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
@@ -53,7 +51,7 @@ Les mises à jour sont publiées tous les mois à l’aide d’un processus de p
 
 Le modèle de déploiement progressif suivant est suivi pour les mises à jour mensuelles de Defender :
 
-1. La première version est publiée pour les abonnés au canal bêta.
+1. La première version est publiée pour les abonnés au canal Bêta.
 2. Après la validation, les commentaires et les correctifs, nous commençons le processus de déploiement progressif d’une manière limitée et en premier lieu pour les abonnés au canal d’aperçu.
 3. Nous allons ensuite publier la mise à jour pour le reste de la population globale, en la délant de 10 à 100 %.
 
@@ -61,10 +59,10 @@ Nos ingénieurs surveillent en permanence l’impact et réamorcer les problème
 
 ## <a name="how-to-customize-your-internal-deployment-process"></a>Comment personnaliser votre processus de déploiement interne
 
-Si vos ordinateurs reçoivent des mises à jour Defender de Windows Update, le processus de déploiement progressif peut entraîner la réception de mises à jour De Defender par certains de vos ordinateurs plus tôt que d’autres. La section suivante explique comment définir une stratégie qui permettra aux mises à jour automatiques de circuler différemment vers des groupes spécifiques d’appareils en tirant parti de la configuration du canal de mise à jour.
+Si vos ordinateurs reçoivent les mises à jour Defender de Windows Update, le processus de déploiement progressif peut entraîner la réception de mises à jour De Defender par certains de vos ordinateurs plus tôt que d’autres. La section suivante explique comment définir une stratégie qui permettra aux mises à jour automatiques de circuler différemment vers des groupes spécifiques d’appareils en tirant parti de la configuration du canal de mise à jour.
 
 > [!NOTE]
-> Lors de la planification de votre propre version progressive, assurez-vous de toujours avoir une sélection d’appareils abonnés aux canaux de prévisualisation et de version progressive. Cela permettra à votre organisation ainsi qu’à Microsoft de prévenir ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
+> Lors de la planification de votre propre version progressive, assurez-vous de toujours avoir une sélection d’appareils abonnés aux canaux de prévisualisation et de version progressive. Cela permettra à votre organisation ainsi qu’à Microsoft d’empêcher ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
 
 Pour les ordinateurs recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options de Microsoft Defender pour endpoint.
 
@@ -85,9 +83,9 @@ Les canaux de mise à jour suivants sont disponibles :
 |Nom du canal|Description|Application|
 |---|---|---|
 |Canal bêta - Version d’avant-première|Tester les mises à jour avant d’autres|Les appareils qui sont connectés à ce canal seront les premiers à recevoir de nouvelles mises à jour mensuelles. Sélectionnez Le canal bêta pour participer à l’identification et au signalement des problèmes à Microsoft. Les appareils du Windows Programme Insider sont abonnés à ce canal par défaut. À utiliser uniquement dans les environnements de test.|
-|Canal actuel (préversion)|Obtenir les mises à jour du canal actuel **plus tôt lors** de la publication progressive|Les appareils qui sont connectés à ce canal se voient proposer des mises à jour au plus tôt au cours du cycle de publication progressive. Suggéré pour les environnements de pré-production/validation.|
+|Canal actuel (préversion)|Obtenir les mises à jour du canal actuel **plus tôt lors** de la publication progressive|Les appareils qui sont connectés à ce canal se voient proposer des mises à jour au plus tôt pendant le cycle de publication progressive. Suggéré pour les environnements de pré-production/validation.|
 |Canal actuel (étapes)|Obtenir les mises à jour du canal actuel ultérieurement lors de la publication progressive|Des mises à jour seront proposées aux appareils plus tard au cours du cycle de publication progressive. Il est suggéré de s’appliquer à une petite partie représentative de la population de votre appareil (environ 10 %).|
-|Canal actuel (large)|Obtenir des mises à jour à la fin de la publication progressive|Les mises à jour des appareils ne seront proposées qu’une fois le cycle de publication progressive terminé. Il est suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (environ 10 à 100 %).|
+|Canal actuel (large)|Obtenir des mises à jour à la fin de la publication progressive|Les mises à jour ne seront proposées aux appareils qu’une fois le cycle de publication progressive terminé. Il est suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (environ 10 à 100 %).|
 |Critique : délai d’attente|Mises à jour de Delay Defender|Des mises à jour seront proposées aux appareils avec un délai de 48 heures. Il est préférable pour les ordinateurs de centre de données qui ne reçoivent que des mises à jour limitées. Suggéré uniquement pour les environnements critiques.|
 |(valeur par défaut)||Si vous désactivez ou ne configurez pas cette stratégie, l’appareil restera dans le canal actuel (par défaut) : restez à jour automatiquement pendant le cycle de publication progressive. Convient à la plupart des appareils.|
 |
@@ -117,11 +115,11 @@ Dans la plupart des cas, la configuration recommandée lors de l’utilisation d
 Pour les environnements où il est nécessaire d’un déploiement progressif plus contrôlé des mises à jour automatiques de Defender, envisagez une approche avec les groupes de déploiement :
 
 1. Participer au programme Windows Insider ou affecter un groupe d’appareils au canal bêta.
-2. Désignez un groupe pilote qui choisit le canal d’aperçu, généralement des environnements de validation, pour recevoir de nouvelles mises à jour en avant-première.
+2. Désignez un groupe pilote qui choisit le canal de prévisualisation, généralement des environnements de validation, pour recevoir les nouvelles mises à jour au plus tôt.
 3. Désignez un groupe d’ordinateurs qui reçoivent les mises à jour ultérieurement lors du déploiement progressif à partir du canal de mise en place. En règle générale, il s’agit d’un pourcentage représentatif d’environ 10 % de la population.
 4. Désignez un groupe d’ordinateurs qui reçoivent des mises à jour une fois le cycle de publication progressive terminé. Il s’agit généralement de systèmes de production importants.
 
-Pour le reste des appareils, le paramètre par défaut consiste à recevoir de nouvelles mises à jour à mesure qu’elles arrivent pendant le processus de déploiement progressif de Microsoft et aucune configuration supplémentaire n’est requise.
+Pour le reste des appareils, le paramètre par défaut consiste à recevoir les nouvelles mises à jour à mesure qu’elles arrivent pendant le processus de déploiement progressif de Microsoft et aucune configuration supplémentaire n’est requise.
 
 Adoption de ce modèle :
 

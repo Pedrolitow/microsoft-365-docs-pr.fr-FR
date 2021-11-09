@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer Udemy en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: 0f1b87ae2c218679a590cd714e9850b0c09773d2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f5cbb140d2bf76fdf03eba5de0e09ad70fbf4afb
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703776"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883861"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Udemy en tant que source de contenu pour Apprentissage Microsoft Viva
 
@@ -38,15 +38,28 @@ Suivez ces étapes pour activer les API dans votre environnement Udemy Business 
 
 1. Accédez **à Gérer,** puis **Paramètres,** puis **API**. Vérifiez l’état de vos API. Si elles sont désactivées, vous pouvez contacter le support technique pour l’activer ou suivre les étapes ci-dessous pour les activer.
 
+    ![Image de la page des paramètres de l’API.](../media/learning/udemy-1.png)
+
 2. Si les API sont désactivées, accédez aux **intégrations LMS/LXP,** puis Démarrez la mise en **place,** puis **Autre**.
+
+    [![Image de la page des paramètres d’intégration LMS/LXP.](../media/learning/udemy-2small.png)](../media/learning/udemy-2.png#lightbox)
 
 3. Dans l’écran suivant, tapez le nom de votre application LMS/LXP personnalisée ou tierce. Ensuite, activer ou désactiver l’option d’inscription automatique, puis sélectionnez **Enregistrer.** L’option d’inscription automatique permet aux utilisateurs qui lancent un cours via leur LMS/LXP d’être automatiquement inscrits à Udemy.
 
+    ![Image du basculement on/off pour l’inscription automatique.](../media/learning/udemy-3.png)
+
 4. Une fois que vous avez enregistré, votre ID client et votre secret client sont générés et vous pouvez les copier à partir de l’écran. Vous pouvez désormais accéder aux API à l’aide des informations d’identification client fournies.
+
+    ![Image de l’ID client et de la secret client générés.](../media/learning/udemy-4.png)
 
 5. Pour accéder aux points de terminaison de l’API, vous devez avoir votre ACCOUNT_ID url de point de terminaison. Vous pouvez accéder à ces informations et également essayer les API en accédant à **Gérer,** **puis Paramètres**, puis **API**. Une fois que vous avez activé les API, vous devez voir l’état des API comme « Activé ». Sélectionnez le lien de documentation de l’API.
 
+    ![Image des paramètres d’API avec des API qui s’affichent comme activées.](../media/learning/udemy-5.png)
+
 6. Obtenez l’URL et les ACCOUNT_ID de point de terminaison de l’API à partir de la page de vue d’ensemble. Accédez aux méthodes prise en charge pour essayer un appel d’API. Vous êtes désormais prêt à appeler les API Udemy Business.
+
+    ![Image de la page de vue d’ensemble affichant l’URL du point de terminaison et l’ID client.](../media/learning/udemy-6.png)
+    ![Image de la page Essayer vous-même dans laquelle vous pouvez entrer votre URL et votre ID client.](../media/learning/udemy-7.png)
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurer dans votre Centre d'administration Microsoft 365
 

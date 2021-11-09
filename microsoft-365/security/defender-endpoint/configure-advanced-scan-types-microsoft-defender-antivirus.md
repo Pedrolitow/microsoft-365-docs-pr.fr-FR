@@ -2,7 +2,6 @@
 title: Configurer les options d’analyse pour Antivirus Microsoft Defender
 description: Vous pouvez configurer Microsoft Defender AV pour analyser les fichiers de stockage de messagerie, les points de stockage ou d’analyse, les fichiers réseau et les fichiers archivés (tels que les fichiers .zip).
 keywords: analyses avancées, analyse, e-mail, archive, zip, rar, archive, analyse de l’analyse
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,19 +13,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 09/14/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 3ce0945fc687623c5f5fd7ba26e57ad191ec3ecb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61092c0656f31bb04dd0f63ff61a55571781c160
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207964"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882428"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -42,7 +41,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
 
@@ -64,8 +63,8 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Analyser les exécutables packés <p> **Analyse** \> **Analyser les exécutables packés**|Activé|Non disponible|
 |Analyser les lecteurs amovibles uniquement pendant les analyses complètes <p> **Analyse** \> **Analyser les lecteurs amovibles**|Désactivé|`-DisableRemovableDriveScanning`|
 |Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser <p>**Analyse** \> **Spécifier la profondeur maximale pour analyser les fichiers d’archivage**|0|Non disponible|
-|Spécifiez la charge processeur maximale (en pourcentage) au cours d’une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
-|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Aucune limite|Non disponible <p>La valeur par défaut 0 ne s’applique pas à la limite|
+|Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
+|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite|
 |Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse** \> **Configurer une faible priorité du processeur pour les analyses programmées**|Désactivé|Non disponible|
 
 > [!NOTE]
@@ -99,7 +98,7 @@ Si Antivirus Microsoft Defender une menace à l’intérieur d’un message éle
 
 ## <a name="scanning-mapped-network-drives"></a>Analyse des lecteurs réseau mappés
 
-Sur n’importe quel système d’exploitation, seuls les lecteurs réseau qui sont mappés au niveau du système sont analysés. Les lecteurs réseau mappés au niveau de l’utilisateur ne sont pas analysés. Les lecteurs réseau mappés au niveau de l’utilisateur sont ceux qu’un utilisateur mase dans sa session manuellement et à l’aide de ses propres informations d’identification.
+Sur n’importe quel système d’exploitation, seuls les lecteurs réseau qui sont mappés au niveau du système sont analysés. Les lecteurs réseau mappés au niveau de l’utilisateur ne sont pas analysés. Les lecteurs réseau mappés au niveau de l’utilisateur sont ceux qu’un utilisateur maie manuellement dans sa session et à l’aide de ses propres informations d’identification.
 
 ## <a name="see-also"></a>Voir aussi
 

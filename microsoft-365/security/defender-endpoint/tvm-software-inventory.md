@@ -2,8 +2,6 @@
 title: Inventaire logiciel dans Gestion des menaces et des vulnérabilités
 description: La page d’inventaire des logiciels du point de terminaison de Microsoft Defender Gestion des menaces et des vulnérabilités le nombre de faiblesses et de vulnérabilités détectées dans les logiciels.
 keywords: Gestion des menaces et des vulnérabilités, Microsoft Defender pour le point de terminaison, Inventaire logiciel Microsoft Defender pour les points de terminaison, Microsoft Defender pour les & gestion des vulnérabilités de menaces de point de terminaison, Inventaire logiciel microsoft Defender pour les menaces de point de terminaison & gestion des vulnérabilités, inventaire logiciel tvm de Microsoft Defender pour endpoint, inventaire des logiciels tvm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,31 +16,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10e5c062af839142db0b12f562739fd2fb603d42
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157829"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883832"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 L’inventaire logiciel dans Gestion des menaces et des vulnérabilités liste des logiciels connus de votre organisation avec les [énumérations officielles de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe). Les produits logiciels sans CPE officiel n’ont pas de vulnérabilités publiées. Il inclut également des détails tels que le nom du fournisseur, le nombre de faiblesses, les menaces et le nombre d’appareils exposés.
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Dans le domaine de la découverte, nous tirent parti du même ensemble de signaux qui est responsable de l’évaluation de la détection et de la vulnérabilité dans Microsoft Defender pour les fonctionnalités de détection et de réponse des points de [terminaison.](overview-endpoint-detection-response.md)
 
-Dans la mesure où il s’agit d’un temps réel, en quelques minutes, vous verrez des informations de vulnérabilité lors de leur découverte. Le moteur prend automatiquement des informations à partir de plusieurs flux de sécurité. En fait, vous verrez si un logiciel particulier est connecté à une campagne contre les menaces en direct. Il fournit également un lien vers un rapport d’analyse des menaces dès qu’il est disponible.
+Dans la mesure où c’est en temps réel, en quelques minutes, vous verrez des informations de vulnérabilité au moment où elles sont découvertes. Le moteur prend automatiquement des informations à partir de plusieurs flux de sécurité. En fait, vous verrez si un logiciel particulier est connecté à une campagne contre les menaces en direct. Il fournit également un lien vers un rapport d’analyse des menaces dès qu’il est disponible.
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Accéder à la page Inventaire logiciel
 
@@ -51,7 +49,7 @@ Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel d
 Afficher les logiciels sur des appareils spécifiques dans les pages des appareils individuels à partir de la [liste des appareils.](machines-view-overview.md)
 
 > [!NOTE]
-> Si vous recherchez des logiciels à l’aide de la recherche globale de Microsoft Defender for Endpoint, veillez à placer un trait de soulignement au lieu d’un espace. Par exemple, pour obtenir les meilleurs résultats de recherche, vous devez écrire « windows_10 » au lieu de « Windows 10 ».
+> Si vous recherchez des logiciels à l’aide de la recherche globale de Microsoft Defender for Endpoint, veillez à placer un trait de soulignement au lieu d’un espace. Par exemple, pour obtenir les meilleurs résultats de recherche, écrivez « windows_10 » ou « windows_11 » au lieu de « Windows 10 » ou « Windows 11 ».
 
 ## <a name="software-inventory-overview"></a>Vue d’ensemble de l’inventaire logiciel
 
@@ -65,7 +63,7 @@ Sélectionnez le logiciel que vous souhaitez examiner. Un panneau volant s’ouv
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
-Les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités peuvent être présents dans la page Inventaire logiciel. Étant donné qu’il n’est pas pris en charge, seules des données limitées seront disponibles. Filtrez selon les logiciels non pris en place avec l’option « Non disponible » dans la section « Faiblesse ».
+Les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités peuvent être présents dans la page Inventaire logiciel. Comme elle n’est pas prise en charge, seules des données limitées seront disponibles. Filtrez selon les logiciels non pris en place avec l’option « Non disponible » dans la section « Faiblesse ».
 
 :::image type="content" alt-text="Filtre logiciel non pris en temps et place." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
 
@@ -80,7 +78,7 @@ Actuellement, les produits sans CPE ne sont pas affichés dans la page d’inven
 
 ## <a name="software-inventory-on-devices"></a>Inventaire logiciel sur les appareils
 
-À partir du Microsoft 365 Defender de navigation du portail, allez à l’inventaire **[des appareils.](machines-view-overview.md)** Sélectionnez le nom d’un appareil pour ouvrir la  page de l’appareil (tel que Computer1), puis sélectionnez l’onglet Inventaire logiciel pour voir la liste de tous les logiciels connus présents sur l’appareil. Sélectionnez une entrée de logiciel spécifique pour ouvrir le volant avec plus d’informations.
+À partir du Microsoft 365 Defender navigation du portail, allez à l’inventaire **[des appareils.](machines-view-overview.md)** Sélectionnez le nom d’un appareil pour ouvrir la  page de l’appareil (tel que Computer1), puis sélectionnez l’onglet Inventaire logiciel pour voir la liste de tous les logiciels connus présents sur l’appareil. Sélectionnez une entrée de logiciel spécifique pour ouvrir le volant avec plus d’informations.
 
 Le logiciel peut être visible au niveau de l’appareil même s’il n’est actuellement pas pris en charge par Gestion des menaces et des vulnérabilités. Toutefois, seules des données limitées seront disponibles. Vous savez si le logiciel n’est pas pris en compte, car il indique « Non disponible » dans la colonne « Faiblesse ».
 
@@ -98,7 +96,7 @@ Sélectionnez un nom de logiciel pour ouvrir le volant et recherchez la section 
 
 Vous pouvez afficher les pages logicielles de différentes manières :
 
-- Page d’inventaire > sélectionnez un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
+- Page Inventaire logiciel > sélectionner un nom de logiciel > **page** Sélectionner un logiciel ouvert dans le volant
 - [Page Recommandations en matière](tvm-security-recommendation.md) de sécurité > sélectionner une recommandation > **page** Sélectionner un logiciel ouvert dans le volant
 - Page chronologie des [événements](threat-and-vuln-mgt-event-timeline.md) > Sélectionnez un > Sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant
 
@@ -114,13 +112,13 @@ Vous pouvez afficher les pages logicielles de différentes manières :
 
     :::image type="content" alt-text="Page d’exemples de logiciels Visual Studio 2017 avec les détails logiciels, les faiblesses, les appareils exposés, etc." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
-## <a name="report-inaccuracy"></a>Report inaccuracy
+## <a name="report-inaccuracy"></a>Inaccuracy de rapport
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 
 1. Ouvrez le programme volant sur la page Inventaire logiciel.
 2. Select **Report inaccuracy**.
-3. Dans le volet de menu volant, sélectionnez la catégorie imprécise dans le menu déroulant, remplissez votre adresse e-mail et des détails sur l’imprécision.
+3. Dans le volet de menu volant, sélectionnez la catégorie d’imprécision dans le menu déroulant, remplissez votre adresse e-mail et des détails sur l’imprécision.
 4. Sélectionnez **Envoyer**. Vos commentaires sont immédiatement envoyés aux experts Gestion des menaces et des vulnérabilités de sécurité.
 
 ## <a name="related-articles"></a>Articles connexes

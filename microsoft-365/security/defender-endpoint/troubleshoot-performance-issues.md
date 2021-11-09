@@ -2,7 +2,6 @@
 title: Résoudre des problèmes de performance
 description: Résoudre les problèmes d’utilisation élevée du processeur lié au service de protection en temps réel dans Microsoft Defender pour Endpoint.
 keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Antivirus Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -12,17 +11,17 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665538"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884072"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -73,17 +72,17 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log,** vous pouvez trouver les informations d’imp
 |EstimatedImpact|Le pourcentage de temps passé dans les analyses pour les fichiers accédés par ce processus en dehors de la période pendant laquelle ce processus a connu une activité d’analyse|
 |
 
-Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions chemin/processus en suivant les étapes de configuration et de validation des [exclusions](collect-diagnostic-data.md)pour Antivirus Microsoft Defender analyses .
+Si l’impact sur les performances est élevé, essayez d’ajouter le processus aux exclusions chemin/processus en suivant les étapes de configuration et de validation des exclusions pour [Antivirus Microsoft Defender analyses.](collect-diagnostic-data.md)
 
 Si l’étape précédente ne résout pas le problème, [](#capture-process-logs-using-process-monitor) vous pouvez collecter plus d’informations via le Moniteur de processus ou l’enregistreur de performances [Windows](#capture-performance-logs-using-windows-performance-recorder) dans les sections suivantes.
 
 ## <a name="capture-process-logs-using-process-monitor"></a>Capturer les journaux de processus à l’aide du moniteur de processus
 
-Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les processus en temps réel. Vous pouvez l’utiliser pour capturer le problème de performances tel qu’il se produit.
+Process Monitor (ProcMon) est un outil de surveillance avancé qui peut afficher les processus en temps réel. Vous pouvez l’utiliser pour capturer le problème de performances tel qu’il se produit.
 
 1. Téléchargez [process monitor v3.60 dans](/sysinternals/downloads/procmon) un dossier tel que `C:\temp` .
 
-2. Pour supprimer la marque du fichier du site web :
+2. Pour supprimer la marque du fichier du web :
     1. Cliquez avec le **bouton droitProcessMonitor.zip** puis sélectionnez **Propriétés.**
     1. Sous *l’onglet Général,* recherchez *Sécurité.*
     1. Cochez la case en **regard de Débloquer.**
@@ -93,7 +92,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 3. Dézipez le fichier de `C:\temp` sorte que le chemin d’accès du dossier soit `C:\temp\ProcessMonitor` .
 
-4. Copiez **ProcMon.exe** sur Windows client ou Windows serveur que vous dépannagez.
+4. Copiez **ProcMon.exe** vers Windows client ou Windows serveur que vous dépannagez.
 
 5. Avant d’utiliser ProcMon, assurez-vous que toutes les autres applications non liées au problème d’utilisation élevée du processeur sont fermées. Cela permet de réduire le nombre de processus à vérifier.
 
@@ -131,7 +130,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
     ![Le nom du processus de filtrage est Exclusion du système.](images/procmon-filter-options.png)
 
-8. Pour démarrer la capture, sélectionnez de nouveau l’icône de loupe.
+8. Pour démarrer la capture, sélectionnez de nouveau l’icône en forme de loupe.
 
 9. Reproduisez le problème.
 
@@ -140,11 +139,11 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 10. Une fois que vous avez deux à quatre minutes d’activité de processus pendant la condition d’utilisation élevée du processeur, arrêtez la capture en sélectionnant l’icône de loupe.
 
-11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Sélectionnez Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
+11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
 
     ![paramètres d’enregistrer.](images/procmon-savesettings1.png)
 
-12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` suivant :
+12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` où :
     - `%ComputerName%` est le nom de l’appareil
     - `MMDDYEAR` est le mois, le jour et l’année
     - `Repro_of_issue` est le nom du problème que vous essayez de reproduire
@@ -189,7 +188,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 6. Sélectionnez **Ajouter des profils...** et accédez au chemin d’accès du `MDAV.wprp` fichier.
 
-7. Après cela, vous devriez voir un nouveau profil sous mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
+7. Après cela, vous devriez voir un nouveau profil sous Mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
 
     ![dans le fichier.](images/wpr-infile.png)
 
@@ -199,10 +198,10 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 8. Pour utiliser le profil d’analyse détaillée de la mesure personnalisée Microsoft Defender pour point de terminaison dans l’interface utilisateur WPR :
 
-    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *de tri* de premier niveau, Analyse *des* ressources et *Analyse de* scénario.
-    2. Sélectionnez **mesures personnalisées**.
+    1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *Tri de premier* niveau, Analyse *des* ressources et *Analyse de* scénario.
+    2. Sélectionnez **mesures personnalisées.**
     3. Sélectionnez **Microsoft Defender pour l’analyse des points de terminaison.**
-    4. Sélectionnez **Détaillé sous** *Niveau* détail.
+    4. Sélectionnez **Détaillé sous** *niveau* Détails.
     5. Sélectionnez **Fichier ou** **Mémoire en** mode Journalisation.
 
     > [!IMPORTANT]
@@ -232,7 +231,7 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
     ![Remplissez les détails.](images/wpr-12.png)
 
-    1. Sélectionnez **Nom de fichier :** pour déterminer l’endroit où votre fichier de suivi sera enregistré. Par défaut, il 1.is enregistré dans `%user%\Documents\WPR Files\` .
+    1. Sélectionnez **Nom de fichier :** pour déterminer l’endroit où votre fichier de suivi sera enregistré. Par défaut, il est enregistré dans `%user%\Documents\WPR Files\` .
     1. Sélectionnez **Enregistrer**.
 
 14. Patientez pendant la fusion du suivi.

@@ -1,9 +1,7 @@
 ---
 title: La gestion des menaces et des vulnérabilités
-description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiérquage et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
+description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
 keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, évaluation de la configuration sécurisée, Microsoft Defender pour point de terminaison, vulnérabilités de point de terminaison, nouvelle génération
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 44690f586d606ecceebecca65f13b5e337a021c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c198470d7fd3ee0a05ff40c7597018735b4e3b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212492"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881689"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 L’identification, l’évaluation et la correction efficaces des faiblesses des points de terminaison sont essentielles à l’exécution d’un programme de sécurité sain et à la réduction des risques organisationnels. La gestion des menaces et des vulnérabilités sert d’infrastructure pour réduire l’exposition de l’organisation, renforcer la surface de point de terminaison et augmenter la résilience de l’organisation.
 
-Découvrez les vulnérabilités et les mauvaises configurations en temps réel avec des capteurs, et sans avoir besoin d’agents ou d’analyses périodiques. Il hiérarchise les vulnérabilités en fonction du paysage des menaces, des détections dans votre organisation, des informations sensibles sur les appareils vulnérables et du contexte métier.
+Découvrez les vulnérabilités et les mauvaises configurations en temps réel avec des capteurs, et sans avoir besoin d’agents ou d’analyses périodiques. Il hiérarchise les vulnérabilités en fonction du paysage des menaces, des détections au sein de votre organisation, des informations sensibles sur les appareils vulnérables et du contexte professionnel.
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide Gestion des menaces et des vulnérabilités.
 
@@ -43,13 +41,13 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide Gestion des menac
 
 ## <a name="bridging-the-workflow-gaps"></a>Pontage des lacunes de flux de travail
 
-Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à l’Graph sécurité intelligente de Microsoft et à la base de connaissances d’analyse des applications.
+Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à la sécurité intelligente de Microsoft Graph et à la base de connaissances d’analyse des applications.
 
 La gestion des vulnérabilités est la première solution dans le secteur pour combler l’écart entre l’administration de la sécurité et l’administration informatique pendant le processus de correction. Créez une tâche ou un ticket de sécurité en intégrant des Microsoft Intune et Microsoft Endpoint Configuration Manager.
 
 ### <a name="real-time-discovery"></a>Découverte en temps réel
 
-Pour découvrir les vulnérabilités et les problèmes de configuration des points de terminaison, Gestion des menaces et des vulnérabilités utilise les mêmes capteurs Defender intégrés sans agent pour les points de terminaison pour réduire les analyses réseau fastidieuses et la surcharge informatique.
+Pour découvrir les vulnérabilités et les erreurs de configuration des points de terminaison, Gestion des menaces et des vulnérabilités utilise le même capteur Defender intégré sans agent pour les points de terminaison pour réduire les analyses réseau fastidieuses et la surcharge informatique.
 
 Il fournit également :
 
@@ -58,12 +56,12 @@ Il fournit également :
 - **Contexte d’exécution d’application** : visibilité sur les modèles d’utilisation des applications pour une meilleure hiérarchisation et prise de décision.
 - **Posture de configuration** : visibilité de la configuration de la sécurité organisationnelle ou des configurations incorrectes. Les problèmes sont signalés dans le tableau de bord avec des recommandations de sécurité actionnables.
 
-### <a name="intelligence-driven-prioritization"></a>Priorisation pilotée par l’intelligence
+### <a name="intelligence-driven-prioritization"></a>Hiérquisation pilotée par l’intelligence
 
 Les menaces et gestion des vulnérabilités les clients hiérarchisent et se concentrent sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. Il associe les recommandations de sécurité avec les menaces dynamiques et le contexte métier :
 
 - **Exposition des attaques émergentes dans l’environnement** – Aligne dynamiquement la hiér donc sur les recommandations de sécurité. Les menaces et gestion des vulnérabilités se concentrent sur les vulnérabilités actuellement exploitées dans les menaces émergentes et les menaces émergentes qui présentent le risque le plus élevé.
-- **Mise en évidence des violations actives** : met en Gestion des menaces et des vulnérabilités et PEPT des informations pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
+- **Localisation des violations actives** : met en Gestion des menaces et des vulnérabilités et PEPT informations pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
 - **Protection des biens à** valeur élevée : identifiez les appareils exposés avec des applications critiques pour l’entreprise, des données confidentielles ou des utilisateurs à valeur élevée.
 
 ### <a name="seamless-remediation"></a>Correction transparente

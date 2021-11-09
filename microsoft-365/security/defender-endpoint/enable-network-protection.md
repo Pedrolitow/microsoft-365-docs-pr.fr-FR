@@ -2,7 +2,6 @@
 title: Activer la protection du réseau
 description: Activez la protection réseau avec la stratégie de groupe, PowerShell ou Gestion des périphériques mobiles et Configuration Manager.
 keywords: Protection ANetwork, attaques, site web malveillant, ip, domaine, domaines, activer, activer
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,18 +14,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 130f9a3fdfcc7c5ace75c4ebe7bd19d26c7bccdd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207916"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883184"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,7 +44,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 2. Choisissez **HKEY_LOCAL_MACHINE** dans le menu latéral.
 
-3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs** \>  \> **microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** Network \> **Protection**.
+3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs** \>  \> **microsoft** \>  \> **Windows Defender Windows Defender Exploit Guard** Network \> **Protection**.
 
 4. Sélectionnez **EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil :
 
@@ -120,9 +119,9 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
    > [!NOTE]
    > Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
 
-4. Double-cliquez sur le paramètre Empêcher les utilisateurs **et les applications d’accéder** au paramètre sites web dangereux et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
+4. Double-cliquez sur le paramètre Empêcher les utilisateurs et **les applications d’accéder** au paramètre sites web dangereux et définissez l’option **sur Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
     - **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants.
-    - **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants.
+    - **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants.
     - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
    > [!IMPORTANT]
@@ -130,7 +129,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
@@ -160,7 +159,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 7. Dans le ruban, **sélectionnez Déployer** pour déployer la stratégie dans une collection.
 
 > [!IMPORTANT]
-> Une fois que vous avez déployé une stratégie Exploit Guard à partir de Configuration Manager, les paramètres Exploit Guard ne seront pas supprimés des clients si vous supprimez le déploiement. `Delete not supported` est enregistré dans ExploitGuardHandler.log du client Configuration Manager si vous supprimez le déploiement Exploit Guard du client. <!--CMADO8538577-->
+> Une fois que vous avez déployé une stratégie Exploit Guard à partir de Configuration Manager, les paramètres Exploit Guard ne seront pas supprimés des clients si vous supprimez le déploiement. `Delete not supported` est enregistré dans exploitGuardHandler.log du client Configuration Manager si vous supprimez le déploiement Exploit Guard du client. <!--CMADO8538577-->
 > Le script PowerShell suivant peut être exécuté dans le contexte SYSTÈME pour supprimer ces paramètres :<!--CMADO9907132-->
 >
 > ```powershell
@@ -182,7 +181,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 
 - [Protection du réseau](network-protection.md)
 
-- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
 

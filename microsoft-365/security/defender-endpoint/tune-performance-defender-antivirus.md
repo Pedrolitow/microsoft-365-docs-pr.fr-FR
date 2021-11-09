@@ -2,8 +2,6 @@
 title: Analyseur de performances pour les Antivirus Microsoft Defender
 description: Décrit la procédure à suivre pour régler les performances des Antivirus Microsoft Defender.
 keywords: régler, performances, microsoft defender pour le point de terminaison, antivirus defender
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fa6206628d8652aef9c8b31dd2ee74d4b6023829
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659224"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884012"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -116,7 +114,7 @@ New-MpPerformanceRecording -RecordTo <String >
 #### <a name="description-new-mpperformancerecording"></a>Description : New-MpPerformanceRecording
 `New-MpPerformanceRecording`L’cmdlet collecte un enregistrement des performances de Antivirus Microsoft Defender analyses. Ces enregistrements de performances contiennent des événements de processus de noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’cmdlet [Get-MpPerformanceReport.](#get-mpperformancereport)
 
-Cette cmdlet fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des `New-MpPerformanceRecording` performances de Antivirus Microsoft Defender. Cet outil est fourni « TEL QU’IL EST » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
+Cette cmdlet fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des `New-MpPerformanceRecording` performances de Antivirus Microsoft Defender. Cet outil est fourni « EN L’TANT QUE » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
 
 Pour plus d’informations sur l’analyseur de performances, voir la documentation [de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
 
@@ -132,7 +130,7 @@ Windows Version 10 et ultérieures.
 
 #### <a name="examples-new-mpperformancerecording"></a>Exemples : New-MpPerformanceRecording
 
-##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : collecter un enregistrement des performances et l’enregistrer
+##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : Collecter un enregistrement des performances et l’enregistrer
 
 ```powershell
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl

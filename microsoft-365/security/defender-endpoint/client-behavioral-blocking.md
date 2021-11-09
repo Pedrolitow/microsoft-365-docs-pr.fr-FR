@@ -2,7 +2,6 @@
 title: Blocage comportemental du client
 description: Le blocage du comportement client fait partie des fonctionnalités de blocage et de blocage du comportement dans Microsoft Defender pour point de terminaison
 keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender pour point de terminaison
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -19,22 +18,22 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 80b8ae1eebb0aac941d8c337e73eab97cdafb2a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8b117370f5684fa8ccbf23f18a681000e5e5b84
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174842"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882104"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Le blocage du comportement client est un composant [des](behavioral-blocking-containment.md) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement.
 
@@ -62,7 +61,7 @@ Les détections basées sur le comportement sont nommées en fonction de la matr
 |Réaffectation des privilèges|`Behavior:Win32/PrivilegeEscalation.*!ml`|
 |Fraude à la défense|`Behavior:Win32/DefenseEvasion.*!ml`|
 |Accès informations d'identification|`Behavior:Win32/CredentialAccess.*!ml`|
-|Découverte|`Behavior:Win32/Discovery.*!ml`|
+|Discovery|`Behavior:Win32/Discovery.*!ml`|
 |Mouvement latéral|`Behavior:Win32/LateralMovement.*!ml`|
 |Collection|`Behavior:Win32/Collection.*!ml`|
 |Commande et contrôle|`Behavior:Win32/CommandAndControl.*!ml`|

@@ -2,8 +2,6 @@
 title: Score d’exposition en Gestion des menaces et des vulnérabilités
 description: Le Gestion des menaces et des vulnérabilités d’exposition reflète la vulnérabilité de votre organisation aux menaces de cybersécurité.
 keywords: score d’exposition, score d’exposition de Microsoft Defender pour le point de terminaison, score d’exposition tvm de Microsoft Defender pour les points de terminaison, score d’exposition de l’organisation, score d’exposition de l’organisation tvm, Gestion des menaces et des vulnérabilités, Microsoft Defender pour le point de terminaison
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8295fee4d0c27b85cc3daf95224b770f3c0fec0c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56b994513d28c2714aecba05453af5c0a62a3912
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149873"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881690"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Score d’exposition : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -47,7 +45,7 @@ La carte vous donne une vue générale de la tendance de votre score d’exposit
 
 ![Carte de score d’exposition.](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Le score d’exposition est décomposé selon les niveaux suivants :
 

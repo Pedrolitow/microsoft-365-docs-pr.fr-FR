@@ -2,8 +2,6 @@
 title: Répondre aux menaces web dans Microsoft Defender pour le point de terminaison
 description: Répondre aux alertes liées aux sites web malveillants et indésirables. Comprendre comment la protection contre les menaces web informe les utilisateurs finaux par le biais de leurs navigateurs web et Windows notifications
 keywords: protection web, protection contre les menaces web, navigation web, alertes, réponse, sécurité, hameçonnage, programme malveillant, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web, notifications, utilisateurs finaux, notifications Windows, page de blocage,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db128699fe68ef8728122a7b505e74be1689d38d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0b893c6d823ae2582dfe59122861776023acf026
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159197"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883424"
 ---
 # <a name="respond-to-web-threats"></a>Répondre aux menaces web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection web dans Microsoft Defender pour point de terminaison vous permet d’examiner et de répondre efficacement aux alertes liées aux sites web et sites web malveillants dans votre liste d’indicateurs personnalisés.
+La protection web dans Microsoft Defender pour le point de terminaison vous permet d’examiner et de répondre efficacement aux alertes liées aux sites web malveillants et aux sites web dans votre liste d’indicateurs personnalisés.
 
-## <a name="view-web-threat-alerts"></a>Afficher les alertes contre les menaces web
+## <a name="view-web-threat-alerts"></a>Afficher les alertes de menaces web
 
 Microsoft Defender pour le point de terminaison génère les [alertes suivantes](manage-alerts.md) pour les activités web malveillantes ou suspectes :
 
@@ -46,7 +44,7 @@ Chaque alerte fournit les informations suivantes :
 
 - Appareil qui a tenté d’accéder au site web bloqué
 - Application ou programme utilisé pour envoyer la demande web
-- URL ou URL malveillante dans la liste des indicateurs personnalisés
+- URL ou URL malveillante dans la liste d’indicateurs personnalisés
 - Actions recommandées pour les répondeurs
 
 ![Image d’une alerte liée à la protection contre les menaces web.](images/wtp-alert.png)
@@ -62,7 +60,7 @@ Vous pouvez approfondir l’analyse en sélectionnant l’URL ou le domaine du s
 - Incidents et alertes liés au site web
 - Fréquence d’utilisation du site web dans les événements de votre organisation
 
-    ![Image de la page de détails du domaine ou de l’url.](images/wtp-website-details.png)
+    ![Image de la page de détails d’entité de domaine ou d’URL.](images/wtp-website-details.png)
 
 [En savoir plus sur les pages d’URL ou d’entité de domaine](investigate-domain.md)
 

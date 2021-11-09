@@ -2,7 +2,6 @@
 title: Protection Web
 description: En savoir plus sur la protection web dans Microsoft Defender pour point de terminaison et sur la façon dont elle peut protéger votre organisation
 keywords: protection web, protection contre les menaces web, navigation web, sécurité, hameçonnage, programmes malveillants, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web, sites web malveillants
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e1f4f75971f70f97766af1ace967dfecc461cd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f8a9d27566ea3f6fcf43ad2b8f183c6800bb8aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159233"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883712"
 ---
 # <a name="web-protection"></a>Protection Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -56,7 +55,7 @@ Pour plus d’informations, voir [Protection contre les menaces web.](web-threat
 
 ### <a name="custom-indicators"></a>Indicateurs personnalisés
 
-Les détections d’indicateurs personnalisés sont également résumées dans les rapports de menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
+Les détections d’indicateurs personnalisés sont également résumées dans les rapports sur les menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
 
 L’indicateur personnalisé inclut :
 
@@ -72,8 +71,8 @@ Le filtrage de contenu **Web inclut l’activité Web par catégorie,** le résu
 
 Le filtrage de contenu Web inclut :
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
-- Vous pouvez déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
+- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Vous pouvez facilement déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 - Vous pouvez accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
 Pour plus d’informations, voir [filtrage de contenu Web.](web-content-filtering.md)
@@ -98,7 +97,7 @@ La protection Web est composé des composants suivants, répertoriés par ordre 
 
 L’ordre de priorité est lié à l’ordre des opérations par lequel une URL ou une adresse IP est évaluée. Par exemple, si vous avez une stratégie de filtrage de contenu web, vous pouvez créer des exclusions par le biais d’indicateurs IP/URL personnalisés. Les indicateurs de compromis personnalisés (IoC) sont plus élevés dans l’ordre de priorité que les blocs WCF.
 
-De même, lors d’un conflit entre les indicateurs, permet toujours de précéder les blocs (logique de remplacement). Cela signifie qu’un indicateur d’autoriser l’utilisateur l’emporte sur n’importe quel indicateur de blocage présent.
+De même, lors d’un conflit entre les indicateurs, permet de toujours être prioritaire sur les blocs (logique de remplacement). Cela signifie qu’un indicateur d’autoriser l’utilisateur l’emporte sur n’importe quel indicateur de blocage présent.
 
 Le tableau ci-dessous récapitule certaines configurations courantes qui présenteraient des conflits au sein de la pile de protection web. Il identifie également les déterminations résultantes en fonction de la priorité répertoriée ci-dessus.
 
@@ -168,7 +167,7 @@ Pour lister les blocs qui sont dus à d’autres fonctionnalités (comme les ind
 
 ## <a name="user-experience"></a>Expérience utilisateur
 
-Si un utilisateur visite une page web qui présente un risque de programmes malveillants, de hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
+Si un utilisateur visite une page web qui présente un risque de programmes malveillants, d’hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
 
 > [!div class="mx-imgBorder"]
 > ![Page bloquée par Microsoft Edge.](../../media/web-protection-malicious-block.png)

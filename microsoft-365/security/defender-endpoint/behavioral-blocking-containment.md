@@ -1,8 +1,7 @@
 ---
 title: Blocage et confinement comportementaux
 description: En savoir plus sur les fonctionnalités de blocage du comportement et de blocage de contenu dans Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour le point de terminaison, PEPT en mode bloc, blocage en mode passif
-search.product: eADQiWindows 10XVcnh
+keywords: Microsoft Defender pour le point de terminaison, PEPT en mode blocage, blocage du mode passif
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -19,24 +18,24 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: af80bd0c8c6bcfab823d3391d99c33f35d3e5557
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a7ac6e546ab7578ccf914c29304c1a88139094e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197028"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882128"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
-Le paysage actuel des menaces est dépassé par les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. [](/windows/security/threat-protection/intelligence/fileless-threats) Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, inclus dans Defender pour le point de [terminaison.](/windows/security)
+Le paysage actuel des menaces est dépassé par les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. [](/windows/security/threat-protection/intelligence/fileless-threats) Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, inclus dans Defender pour point de [terminaison.](/windows/security)
 
 Les fonctionnalités de blocage comportemental et de contenu peuvent aider à identifier et à arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. Les composants et fonctionnalités de protection, PEPT et Defender for Endpoint nouvelle génération fonctionnent ensemble dans les fonctionnalités de blocage du comportement et de blocage de contenu.
 
@@ -58,11 +57,11 @@ L’image suivante montre un exemple d’alerte déclenchée par des fonctionnal
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Composants de blocage et de blocage du comportement
 
-- Règles de réduction de la surface d’attaque sur client et **[pilotée par la stratégie](attack-surface-reduction.md)** L’exécution des comportements d’attaque courants prédéfini est empêchée, conformément à vos règles de réduction de la surface d’attaque. Lorsque de tels comportements tentent de s’exécuter, ils sont visibles dans le portail Microsoft 365 Defender( ) en tant qu’alertes [https://security.microsoft.com](https://security.microsoft.com) d’information. Les règles de réduction de la surface d’attaque ne sont pas activées par défaut . vous configurez vos stratégies dans le [portail Microsoft 365 Defender.](microsoft-defender-security-center.md)
+- **Règles de réduction de [](attack-surface-reduction.md) la surface d’attaque** sur client et pilotée par la stratégie L’exécution des comportements d’attaque courants prédéfini est empêchée, conformément à vos règles de réduction de la surface d’attaque. Lorsque de tels comportements tentent de s’exécuter, ils sont visibles dans le portail Microsoft 365 Defender( ) en tant qu’alertes [https://security.microsoft.com](https://security.microsoft.com) d’information. Les règles de réduction de la surface d’attaque ne sont pas activées par défaut . vous configurez vos stratégies dans le [portail Microsoft 365 Defender.](microsoft-defender-security-center.md)
 
 - **[Blocage du comportement client](client-behavioral-blocking.md)** Les menaces sur les points de terminaison sont détectées par le biais de l’apprentissage automatique, puis sont bloquées et corrigés automatiquement. (Le blocage du comportement client est activé par défaut.)
 
-- **[Le blocage de boucle de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécutent sur d’autres points de terminaison. (Le blocage de la boucle de commentaires est activé par défaut.)
+- **[Le blocage de boucle de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par le biais de l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécutent sur d’autres points de terminaison. (Le blocage de la boucle de commentaires est activé par défaut.)
 
 - Détection et réponse des points de **[terminaison (PEPT) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode bloc fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT mode bloc n’est pas activé par défaut ; vous l’activez en mode Microsoft 365 Defender.)
 
@@ -97,7 +96,7 @@ Les modèles d’apprentissage des appareils basés sur le comportement dans Def
 
 Pendant que l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées et sont apparus dans le [portail Microsoft 365 Defender .](microsoft-defender-security-center.md)
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerte d’accès initial dans Microsoft 365 Defender portail.":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerte d’accès initial dans le Microsoft 365 Defender web.":::
 
 Cet exemple montre comment les modèles d’apprentissage des appareils basés sur le comportement dans le cloud ajoutent de nouvelles couches de protection contre les attaques, même après leur exécution.
 
@@ -107,7 +106,7 @@ Comme décrit dans le dernier billet de blog, Blocage et contenu comportementaux
 
 :::image type="content" alt-text="Alerte NTLM pour les programmes malveillants de la logiciel malveillant NTLM." source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
-La menace s’est transformée en programme malveillant . Il s’agissait d’une variante nouvelle, qui n’était pas visible avant, d’un outil de piratage d’ordinateurs, appeléSySerring, qui est utilisé par les attaquants pour obtenir une escalade de privilèges sur un appareil.
+La menace s’est transformée en programme malveillant . Il s’agissait d’une variante nouvelle, qui n’a pas été vue avant, d’un outil de piratage d’ordinateurs, appeléSySerring, qui est utilisé par les attaquants pour obtenir une escalade de privilèges sur un appareil.
 
 Quelques minutes après le déclenchement de l’alerte, le fichier a été analysé et confirmé comme malveillant. Son processus a été arrêté et bloqué, comme illustré dans l’image suivante :
 
@@ -117,9 +116,9 @@ Quelques minutes après le blocage de l’artefact, plusieurs instances du même
 
 Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et de blocage, les menaces sont détectées, contenues et bloquées automatiquement.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-- [En savoir plus sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
+- [En savoir plus sur Defender pour le point de terminaison](overview-endpoint-detection-response.md)
 
 - [Configurer vos règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 

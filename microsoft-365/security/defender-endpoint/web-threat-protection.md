@@ -2,7 +2,6 @@
 title: Protéger votre organisation contre les menaces web
 description: Découvrez la protection web dans Microsoft Defender pour point de terminaison et la façon dont elle peut protéger votre organisation.
 keywords: protection web, protection contre les menaces web, navigation web, sécurité, hameçonnage, programmes malveillants, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 90775af14d78092159d2b92736abce56a961416e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a0c80ca78503cef9d7acce25cf2f18255c0c9f6b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159173"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883388"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +37,7 @@ La protection contre les menaces web fait partie de [la protection Web](web-prot
 > [!NOTE]
 > La réception de nouveaux indicateurs personnalisés peut prendre jusqu’à une heure.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 La protection web utilise la protection réseau pour assurer la sécurité de la navigation web sur Microsoft Edge navigateurs web tiers.
 
@@ -65,11 +64,11 @@ La procédure suivante décrit comment configurer la protection contre les menac
 5. Sous **l’onglet Paramètres de configuration,** **développez Protection Web,** spécifiez vos paramètres, puis choisissez **Suivant**.
 
    - Définissez **Activer la protection réseau** sur Activé **afin** que la protection web soit activée. Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. 
-   - Pour protéger les utilisateurs contre les tentatives d’hameçonnage et les logiciels malveillants potentiels, **Version antérieure de Microsoft Edge à** **Oui.**
+   - Pour protéger les utilisateurs contre les tentatives d’hameçonnage potentielles et les logiciels malveillants, turn **Require SmartScreen for Version antérieure de Microsoft Edge** to **Yes**.
    - Pour empêcher les utilisateurs de contourner les avertissements concernant les sites potentiellement malveillants, définissez l’accès au **site malveillant** sur **Oui.**
    - Pour empêcher les utilisateurs de contourner les avertissements et de télécharger des fichiers non vérifiées, définissez Bloquer le téléchargement de fichier non vérifiée **tl** **Oui**. 
 
-6. Sous **l’onglet Balises** d’étendue, si votre organisation utilise des balises d’étendue, choisissez **+** Sélectionner des balises d’étendue, puis choisissez **Suivant**. (Si vous n’utilisez pas de balises d’étendue, choisissez **Suivant.)** Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un rôle [(RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
+6. Sous **l’onglet Balises** d’étendue, si votre organisation utilise des balises d’étendue, choisissez **+** Sélectionner des balises d’étendue, puis choisissez **Suivant**. (Si vous n’utilisez pas de balises d’étendue, choisissez **Suivant.)** Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un [rôle (RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
 
 7. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les appareils pour recevoir la stratégie de protection web, puis choisissez **Suivant**.
 

@@ -1,9 +1,7 @@
 ---
 title: Chronologie des événements dans Gestion des menaces et des vulnérabilités
-description: La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation et les atténuations qui ont eu pour effet de le réduire.
+description: La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation et les atténuations qui ont eu lieu pour le réduire.
 keywords: chronologie des événements, chronologie des événements Microsoft Defender pour point de terminaison, chronologie des événements tvm de Microsoft Defender pour point de terminaison, Gestion des menaces et des vulnérabilités, Microsoft Defender pour point de terminaison
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 393f58020880c6e69813e536cc692590ed1a8368
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191670"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883100"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,7 +39,7 @@ La chronologie des événements est un flux d’actualités sur les risques qui 
 La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en adressant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
 
 > [!TIP]
-> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Accéder à la page Chronologie des événements
 
@@ -74,7 +72,7 @@ Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une au
 
 Dans la page Chronologie des événements, vous pouvez afficher toutes les informations nécessaires relatives à un événement.
 
-Fonctionnalités :
+Fonctionnalités :
 
 - Personnaliser les colonnes
 - Filtrer par type d’événement ou pourcentage d’appareils touchés
@@ -101,11 +99,11 @@ Les deux grands nombres en haut de la page indiquent le nombre de nouvelles vuln
 
 ### <a name="icons"></a>Icônes
 
-Les icônes suivantes s’affiche en plus des événements :
+Les icônes suivantes s’affiche à côté des événements :
 
 - ![icône de bogue.](images/tvm-black-bug-icon.png) Nouvelle exploitation publique
 - ![icône d’avertissement de rapport.](images/report-warning-icon.png) Nouvelle vulnérabilité publiée
-- ![Exploit Kit.](images/bug-lightning-icon2.png) Exploit trouvé dans exploit kit
+- ![exploit Kit.](images/bug-lightning-icon2.png) Exploit trouvé dans exploit kit
 - ![icône de bogue avec icône d’avertissement.](images/bug-caution-icon2.png) Exploit vérifié
 
 ### <a name="drill-down-to-a-specific-event"></a>Accès à un événement spécifique
@@ -122,7 +120,7 @@ La flèche sous « tendance de score » vous permet de déterminer si cet évén
 
 Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant. [En savoir plus sur les pages logicielles](tvm-software-inventory.md#software-pages)
 
-Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
+Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
 ![Page de logiciels avec un graphique de chronologie des événements.](images/tvm-event-timeline-software2.png)
 

@@ -1,9 +1,7 @@
 ---
 title: Repérer des appareils exposés
 description: Découvrez comment Gestion des menaces et des vulnérabilités peuvent être utilisés pour aider les administrateurs de sécurité, les administrateurs informatiques et SecOps à collaborer.
-keywords: Scénarios Microsoft Defender pour endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, scénarios tvm, réduire l’exposition aux vulnérabilités & menaces, réduire les menaces et vulnérabilités, améliorer la configuration de la sécurité, augmenter le Degré de sécurisation Microsoft pour les appareils, augmenter le niveau de sécurité Microsoft pour les appareils, augmenter la vulnérabilité & Degré de sécurité Microsoft pour les appareils, Degré de sécurisation Microsoft pour les appareils, score d’exposition, contrôles de sécurité
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: Scénarios Microsoft Defender pour endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, scénarios tvm, réduire l’exposition aux vulnérabilités & menaces, réduire les menaces et vulnérabilités, améliorer la configuration de la sécurité, augmenter le Degré de sécurité Microsoft pour les appareils, augmenter le niveau de sécurité Microsoft & vulnérabilité Microsoft Secure Score pour les appareils, Degré de sécurisation Microsoft pour les appareils, score d’exposition, contrôles de sécurité
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3e413b511f080c23d76e616d83de0cb70a2f966f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a7133bcb939bc19e9a705a5be5985e76ebee4fe
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210828"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881672"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Recherche des appareils exposés - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -61,22 +59,22 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 3. Entrez les requêtes suivantes :
 
-```kusto
-// Search for devices with High active alerts or Critical CVE public exploit
-let DeviceWithHighAlerts = AlertInfo
-| where Severity == "High"
-| project Timestamp, AlertId, Title, ServiceSource, Severity
-| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
-| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
-let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
-| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
-| where IsExploitAvailable == 1 and CvssScore >= 7
-| summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId;
-DeviceWithCriticalCve
-| join kind=inner DeviceWithHighAlerts on DeviceId
-| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
-```
+    ```kusto
+    // Search for devices with High active alerts or Critical CVE public exploit
+    let DeviceWithHighAlerts = AlertInfo
+    | where Severity == "High"
+    | project Timestamp, AlertId, Title, ServiceSource, Severity
+    | join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+    | summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+    let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
+    | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
+    | where IsExploitAvailable == 1 and CvssScore >= 7
+    | summarize NumOfVulnerabilities=dcount(CveId),
+    DeviceName=any(DeviceName) by DeviceId;
+    DeviceWithCriticalCve
+    | join kind=inner DeviceWithHighAlerts on DeviceId
+    | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
+    ```
 
 ## <a name="related-topics"></a>Rubriques connexes
 
