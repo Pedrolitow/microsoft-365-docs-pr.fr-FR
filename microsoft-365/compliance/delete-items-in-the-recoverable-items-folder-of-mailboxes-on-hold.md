@@ -18,16 +18,16 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef725e841c46c33c037efbc0109b91864af4737
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8e23c8628fc5985863c206bc3c7589e9cc4d2024
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698416"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889734"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
-Le dossier Éléments récupérables d’Exchange Online boîte aux lettres de sécurité existe pour vous protéger contre les suppressions accidentelles ou malveillantes. Il est également utilisé pour stocker les éléments qui sont conservés et accessibles par les fonctionnalités de conformité, telles que les rétentions et les recherches eDiscovery. Toutefois, dans certains cas, les organisations peuvent avoir des données qui ont été involontairement conservées dans le dossier Éléments récupérables qu’elles doivent supprimer. Par exemple, un utilisateur peut sans le savoir envoyer ou transmettre un message électronique contenant des informations sensibles ou des informations qui peuvent avoir de graves conséquences professionnelles. Même si le message est définitivement supprimé, il peut être conservé indéfiniment car une mise en attente légale a été placée sur la boîte aux lettres. Ce scénario est appelé *débordement* de données, car les données ont été accidentellement répandus *dans* Office 365. Dans ces situations, vous pouvez supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente avec l’une des différentes fonctionnalités de mise en attente dans Office 365. Ces types de conservations incluent les conservations pour litige, les conservations In-Place, les conservations eDiscovery et les stratégies de rétention créées dans le centre de sécurité et conformité dans Office 365 ou Microsoft 365.
+Le dossier Éléments récupérables d’Exchange Online boîte aux lettres de sécurité existe pour vous protéger contre les suppressions accidentelles ou malveillantes. Il est également utilisé pour stocker les éléments qui sont conservés et accessibles par les fonctionnalités de conformité, telles que les rétentions et les recherches eDiscovery. Toutefois, dans certains cas, les organisations peuvent avoir des données qui ont été involontairement conservées dans le dossier Éléments récupérables qu’elles doivent supprimer. Par exemple, un utilisateur peut sans le savoir envoyer ou transmettre un message électronique contenant des informations sensibles ou des informations qui peuvent avoir de graves conséquences professionnelles. Même si le message est définitivement supprimé, il peut être conservé indéfiniment car une mise en attente légale a été placée sur la boîte aux lettres. Ce scénario est appelé *débordement de* données, car les données ont été accidentellement répandus *dans* Office 365. Dans ces situations, vous pouvez supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente avec l’une des différentes fonctionnalités de mise en attente dans Office 365. Ces types de conservations incluent les conservations pour litige, les conservations In-Place, les conservations eDiscovery et les stratégies de rétention créées dans le centre de sécurité et conformité dans Office 365 ou Microsoft 365.
 
 Cet article explique comment les administrateurs peuvent supprimer des éléments du dossier Éléments récupérables pour les boîtes aux lettres informatiques en attente. Cette procédure implique la désactivation de l’accès à la boîte aux lettres et la désactivation de la récupération d’élément unique, la désactivation du traitement de la boîte aux lettres par l’Assistant Dossier géré, la suppression temporaire de la mise en attente, la suppression d’éléments du dossier Éléments récupérables, puis le rétablissement de la configuration précédente de la boîte aux lettres. Voici le processus :
   
@@ -202,7 +202,7 @@ Après avoir identifié la In-Place, vous pouvez utiliser le Centre d’administ
   
 ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Stratégies de rétention appliquées à des boîtes aux lettres spécifiques
   
-Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/exchange-online-powershell) pour identifier la stratégie de rétention qui est appliquée à la boîte aux lettres. Cette commande retourne également toutes les stratégies Teams rétention de conversation appliquées à une boîte aux lettres. Utilisez le GUID (sans inclure le préfixe) pour la stratégie de rétention que vous avez identifiée `mbx` `skp` à l’étape 1.
+Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) pour identifier la stratégie de rétention qui est appliquée à la boîte aux lettres. Cette commande retourne également toutes les stratégies Teams rétention de conversation appliquées à une boîte aux lettres. Utilisez le GUID (sans inclure le préfixe) pour la stratégie de rétention que vous avez identifiée `mbx` `skp` à l’étape 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -376,7 +376,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
 
     **Conservation pour litige**
 
-    Exécutez la commande suivante pour activer à nouveau la boîte aux lettres en attente pour litige.
+    Exécutez la commande suivante pour activer à nouveau une boîte aux lettres en attente pour litige.
 
     ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
@@ -414,7 +414,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Voici un tableau qui décrit comment identifier différents types de boîtes aux lettres en fonction des valeurs de la propriété *InPlaceHolds* lorsque vous exécutez les cmdlets **Get-Mailbox** ou **Get-OrganizationConfig.** Pour plus d’informations, voir Comment identifier le type de mise en attente placée sur [Exchange Online boîte aux lettres.](identify-a-hold-on-an-exchange-online-mailbox.md)
 

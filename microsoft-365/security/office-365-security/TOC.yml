@@ -83,7 +83,11 @@
         - name: Configuration de stratégies anti-programme malveillant
           href: configure-anti-malware-policies.md
         - name: Configuration de stratégies de blocage du courrier indésirable
-          href: configure-your-spam-filter-policies.md
+          items:
+            - name: Configuration de stratégies de blocage du courrier indésirable
+              href: configure-your-spam-filter-policies.md
+            - name: Paramètres de filtre de courrier indésirable avancé (ASF)
+              href: advanced-spam-filtering-asf-options.md
         - name: Configurer une protection d'Exchange Online (EOP) pour envoyer des courriers indésirables dans le dossier courrier indésirable dans le système hybride
           href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
         - name: Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
@@ -166,8 +170,6 @@
           href: recommended-settings-for-eop-and-office365.md
         - name: Intégrer AIR avec une solution personnalisée ou tierce
           href: air-custom-reporting.md
-        - name: Paramètres de filtre de courrier indésirable avancé (ASF)
-          href: advanced-spam-filtering-asf-options.md
         - name: Liste Autoriser/Bloquer du client
           items:
             - name: Gérer la liste Autoriser/Bloquer du client

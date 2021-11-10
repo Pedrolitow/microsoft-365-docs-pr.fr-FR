@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: medium
 description: Découvrez les Apprentissage Microsoft Viva votre environnement Microsoft 365 de travail.
-ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c92fc51d11b2d57c7fd051cbd060276d093be019
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645946"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889758"
 ---
 # <a name="overview-of-microsoft-viva-learning"></a>Vue d’ensemble Apprentissage Microsoft Viva
 
@@ -47,7 +47,7 @@ Cette Learning facilite l’intégration de l’apprentissage dans votre journé
 
 ### <a name="managers"></a>Managers
 
-Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir à coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez recommander des contenus d’apprentissage à des personnes, partager du contenu avec votre équipe et suivre l’état d’achèvement signalé de l’apprentissage que vous avez recommandé.
+Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir besoin de coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez recommander des contenus d’apprentissage à des personnes, partager du contenu avec votre équipe et suivre l’état d’achèvement signalé de l’apprentissage que vous avez recommandé.
 
 ## <a name="admin-roles"></a>Rôles d’administrateurs
 
@@ -59,9 +59,9 @@ Learning est disponible par défaut dans Microsoft Teams avec du contenu déjà 
 
 ### <a name="knowledge-admin"></a>Administrateur d’informations
 
-L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [Azure AD rôles intégrés.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
+L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à n’importe qui au sein de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [Azure AD rôles intégrés.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien au fait de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
 
 ## <a name="learning-content-sources"></a>Learning sources de contenu
 
@@ -69,7 +69,75 @@ Le contenu de Microsoft Learn et Microsoft 365 Training est automatiquement disp
 
 ## <a name="supported-languages"></a>Langues prises en charge
 
-Learning s’adapte aux préférences linguistiques Microsoft 365 de votre organisation. Toutefois, Learning ne prend actuellement pas en charge les langues de droite à gauche.
+Learning s’adapte aux préférences linguistiques Microsoft 365 de votre organisation. Toutefois, Learning ne prend actuellement pas en charge les langues de droite à gauche. Actuellement, Le Learning Est pris en charge dans les paramètres régionaux suivants :
+
+:::row:::
+   :::column span="":::
+      - az-Latn-AZ
+      - bg-BG
+      - bn-IN
+      - ca-ES
+      - ca-Es-VALENCIA
+      - cs-CZ
+      - cy-GB
+      - da-DK
+      - de-DE
+      - el-GR
+      - en-GB
+      - en-US
+      - es-ES
+      - es-MX
+   :::column-end:::
+   :::column span="":::
+      - et-EE
+      - eu-ES
+      - fi-FI
+      - fil-PH
+      - fr-CA
+      - fr-FR
+      - gl-ES
+      - gu-IN
+      - hi-IN
+      - hr-HR
+      - hu-HU
+      - id-ID
+      - is-IS
+      - it-IT
+   :::column-end:::
+   :::column span="":::
+      - ja-JP
+      - ka-GE
+      - kk-KZ
+      - kn-IN
+      - ko-KR
+      - lt-LT
+      - lv-LV
+      - mk-MK
+      - ml-IN
+      - mr-IN
+      - nb-NO
+      - nl-NL
+      - nn-NO
+      - pl-PL
+   :::column-end:::
+   :::column span="":::
+      - pt-BR
+      - pt-PT
+      - ro-RO
+      - ru-RU
+      - sk-SK
+      - sl-SI
+      - sq-AL
+      - sr-Latn-RS
+      - sv-SE,ta-IN
+      - te-IN,th-TH
+      - tr-TR
+      - uk-UA
+      - vi-VN
+      - zh-CN
+      - zh-TW
+   :::column-end:::
+:::row-end:::
 
 ## <a name="data-and-privacy"></a>Données et confidentialité
 

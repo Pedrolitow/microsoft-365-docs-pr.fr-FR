@@ -18,33 +18,33 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3d94a08e651aec05869e54cfee2d605680e03426
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a49e2a862f3b95bde40620f3093d2f149111ad3d
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664586"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889818"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
-## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via le scénario d’interface graphique graphique
+## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via un scénario d’interface graphique graphique
 
-1. Téléchargez [l’outil Analyseur de client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
+1. Téléchargez [l’outil Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : 'ECD2E7518EDC803E2FC2D9919531A22FD61375BED85A73EF64B74A97C7CBD9E3'.
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : '34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834'.
 
-2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
    `./mde_support_tool.sh -d`
 
    > [!NOTE]
-   > Sur Linux, si le script ne peut pas s’exécuter, vous devez d’abord exécuter :
+   > Sur Linux, si le script n’est pas autorisé à s’exécuter, vous devez d’abord exécuter :
    >
    > `chmod a+x mde_support_tool.sh`
 
@@ -65,7 +65,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 4. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine : `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> - Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaie de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 > 
 > - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 >
@@ -98,7 +98,7 @@ Aide supplémentaire sur la syntaxe :
 
 - report.html
 
-  Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut exécuter sur l’ordinateur.
+  Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut produire sur l’ordinateur.
 
 - mde_diagnostic.zip
 
