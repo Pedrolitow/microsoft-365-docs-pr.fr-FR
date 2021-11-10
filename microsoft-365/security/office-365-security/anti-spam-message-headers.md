@@ -18,12 +18,12 @@ description: Les administrateurs peuvent en savoir plus sur les champs d’en-t�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b82826cf650caffa08c0c7435ea4cabf5a19742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208984"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884000"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur le mode d’affichage de l’en-tête d’un e-ma
 
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Champs d’en-tête de message X-Forefront-Antispam-Report
 
-Une fois que vous avez les informations d’en-tête du message, recherchez l’en-tête de **X-Forefront-Antispam-Report**. Cet en-tête comportera plusieurs paires champ/valeur dans cet en-tête séparées par des points-virgules (;). Par exemple :
+Une fois que vous avez les informations d’en-tête du message, recherchez l’en-tête de **X-Forefront-Antispam-Report**. Cet en-tête comportera plusieurs paires champ/valeur dans cet en-tête séparées par des points-virgules (;). Par exemple :
 
 `...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
 
@@ -85,7 +85,7 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 |`SFV:SKQ`|Le message a été libéré de la quarantaine et envoyé aux destinataires appropriés.|
 |`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être traité par le filtrage du courrier indésirable (par exemple, le message a été marqué comme SCL-5 à 9 par une règle de flux de courrier).|
 |`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
-|`SRV:BULK`|Le message a été identifié comme courrier en bloc par le filtrage du courrier indésirable et le seuil de niveau de réclamation en bloc (BCL). Lorsque le paramètre _MarkAsSpamBulkMail_ est `On` (activé par défaut), un message électronique en nombre est marqué comme étant du courrier fortement suspecté d’être indésirable (SCL 9). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
+|`SRV:BULK`|Le message a été identifié comme courrier en bloc par le filtrage du courrier indésirable et le seuil de niveau de réclamation en bloc (BCL). Lorsque le paramètre _MarkAsSpamBulkMail_ est `On` (il est activé par défaut), un message électronique en bloc est marqué comme courrier indésirable (SCL 6). Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|Le message correspondait à une option avancée de filtrage de courrier indésirable (ASF). Pour afficher la valeur de l’en-tête X pour chaque paramètre ASF, consultez [Paramètres de filtre de courrier indésirable avancé](advanced-spam-filtering-asf-options.md).|
 |
 
@@ -112,7 +112,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
@@ -125,7 +125,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   dkim=<pass|fail (reason)|none> header.d=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   dkim=pass (signature was verified) header.d=contoso.com
@@ -138,7 +138,7 @@ La liste suivante décrit le texte ajouté à l’en-tête **Authentication-Resu
   dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
   ```
 
-  Par exemple :
+  Par exemple :
 
   ```text
   dmarc=pass action=none header.from=contoso.com
