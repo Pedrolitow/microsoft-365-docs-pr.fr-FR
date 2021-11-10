@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: f04044d1c0b951dc62e3d515f951faf8625e1b44
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2574ad8c9a42c5646bda770a0c5a310548ddc88e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785641"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883753"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -159,9 +159,12 @@ Si vous configurez une étiquette de confidentialité avec uniquement EDM comme 
 
 Si vous utilisez cette option, assurez-vous d’avoir publié dans votre client au moins une autre étiquette de confidentialité configurée pour l’étiquetage automatique et [l’option Types d’informations sensibles](#configuring-sensitive-info-types-for-a-label).
 
-Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés prédéfinis. Si vous avez créé vos propres classifieurs pouvant être formés personnalisés, vous pouvez également les sélectionner :
+Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés ou personnalisés :
 
 ![Options pour les classifieurs pouvant être formés et les étiquettes de confidentialité.](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. N’utilisez pas ce classificateur et si vous l’utilisez actuellement, nous vous recommandons de déplacer vos processus d’entreprise hors de celui-ci et d’utiliser plutôt les classifieurs pré-formés **Harcèlement ciblé**, **Vulgarité** et **Menace**.
 
 Pour plus d’informations sur ces classifieurs, voir [En savoir plus sur les classifieurs de formation](classifier-learn-about.md).
 

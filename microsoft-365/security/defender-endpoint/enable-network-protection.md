@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883184"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899719"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -30,7 +30,7 @@ ms.locfileid: "60883184"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [La protection du](network-protection.md) réseau permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour afficher les applications qui seraient bloquées avant de l’activer.
 
@@ -60,7 +60,7 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 - [PowerShell](#powershell)
 - [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Stratégie de groupe](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -86,19 +86,21 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (CSP) pour activer ou désactiver la protection réseau ou activer le mode audit.
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anciennement Intune)
+### <a name="microsoft-endpoint-manager"></a>Gestionnaire de point de terminaison Microsoft
 
 1. Connectez-vous au Microsoft Endpoint Manager’administration centrale ( https://endpoint.microsoft.com) .
 
 2. Go to **Devices**  >  **Configuration profiles** Create  >  **profile**.
 
-3. Dans le **volant Créer un profil,** sélectionnez **Endpoint Protection** dans la liste des modèles, puis sélectionnez **Créer**.
+3. Dans le **volant Créer un profil,** sélectionnez **Plateforme** et choisissez le type **de profil** en tant **que modèles.**
+
+4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
 4. Go to **Endpoint protection**  >  **Basics,** provide a name for your profile, and then select **Next**.
 
 5. Dans la **section Paramètres de** configuration, go to **Protection contre les attaques Microsoft Defender**  >  **Network filtering**  >  **Network protection**  >  **Enable** or **Audit**. Sélectionnez **Suivant**.
 
-6. Sélectionnez les balises **d’étendue,** **les affectations** et les règles d’applicabilité appropriées, selon les besoins de votre organisation.  Les administrateurs peuvent définir d’autres conditions requises.
+6. Sélectionnez les balises **d’étendue,** **les affectations** et les règles d’applicabilité appropriées, selon les besoins de votre organisation.  Les administrateurs peuvent définir d’autres exigences.
 
 7. Examinez toutes les informations, puis sélectionnez **Créer.**
 

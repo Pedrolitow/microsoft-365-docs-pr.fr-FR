@@ -17,17 +17,17 @@ ms.custom:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Découvrez les étapes Microsoft 365 configuration requises pour configurer un site SharePoint pour la collaboration avec des invités.
-ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez les étapes Microsoft 365 configuration requises pour configurer un site SharePoint pour la collaboration avec les invités.
+ms.openlocfilehash: 64c325873514171c858ffa24637e57d2b94a93e9
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190208"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899701"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
-Si vous avez besoin de collaborer avec des invités dans des documents, des données et des listes, vous pouvez utiliser un site SharePoint web. Les sites SharePoint modernes sont connectés à des groupes Microsoft 365 et peuvent gérer l’appartenance au site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres partagée et un calendrier.
+Si vous avez besoin de collaborer avec des invités sur plusieurs documents, données et listes, vous pouvez utiliser un site SharePoint web. Les sites SharePoint modernes sont connectés à des groupes Microsoft 365 et peuvent gérer l’appartenance au site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres partagée et un calendrier.
 
 Dans cet article, nous allons passer en revue les étapes de configuration Microsoft 365 nécessaires pour configurer un site SharePoint pour la collaboration avec les invités.
 
@@ -51,7 +51,7 @@ Pour définir les paramètres de collaboration externe
 2. Dans le volet de navigation gauche, cliquez sur **Azure Active Directory**.
 3. Cliquez sur **Identités externes**.
 4. Dans l’écran **Prise en main**, dans le volet de navigation gauche, cliquez sur **Paramètres de collaboration externe**.
-5. Assurez-vous que **Les administrateurs et les utilisateurs membres du rôle Inviteur d’invités peuvent envoyer des invitations** et **Les membres peuvent inviter** sont tous deux définis sur **Oui**.
+5. Assurez-vous que les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités avec des **autorisations** de membre, ou que toute personne de l’organisation peut inviter des utilisateurs invités, y compris des invités et des **non-administrateurs,** est sélectionnée.
 6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 Notez les paramètres dans la section **Restrictions de collaboration**. Assurez-vous que les domaines des invités avec qui vous voulez collaborer ne sont pas bloqués.
@@ -74,7 +74,7 @@ Pour définir les paramètres invités des groupes Microsoft 365
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint de partage au niveau de l’organisation
 
-Pour que les invités ont accès à SharePoint sites web, les paramètres SharePoint de partage au niveau de l’organisation doivent autoriser le partage avec des invités.
+Pour que les invités ont accès aux sites SharePoint, les paramètres SharePoint de partage au niveau de l’organisation doivent autoriser le partage avec des invités.
 
 Les paramètres au niveau de l’organisation déterminent les paramètres qui seront disponibles pour des sites individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation.
 
@@ -111,7 +111,7 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 
 Notez que le site ne peut pas être partagé avec des personnes non authentifiés **(paramètre** Tout le monde), mais que des fichiers et dossiers individuels le peuvent.
 
-Vous pouvez également utiliser des [étiquettes de sensibilité pour contrôler les paramètres](../compliance/sensitivity-labels-teams-groups-sites.md)de partage externe pour SharePoint sites.
+Vous pouvez également utiliser des [étiquettes de niveau de sensibilité pour contrôler les paramètres](../compliance/sensitivity-labels-teams-groups-sites.md)de partage externe pour SharePoint sites.
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -124,7 +124,7 @@ Pour définir les paramètres au niveau du site
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 
-Les paramètres de partage d’invités sont désormais configurés, afin que vous pouvez commencer à ajouter des utilisateurs internes et des invités à votre site. L’accès au site est contrôlé par le groupe Microsoft 365 associé, donc nous y ajouterons des utilisateurs.
+Les paramètres de partage d’invités sont désormais configurés, afin que vous pouvez commencer à ajouter des utilisateurs internes et des invités à votre site. L’accès au site est contrôlé par le groupe Microsoft 365 associé, donc nous allons y ajouter des utilisateurs.
 
 Pour inviter des utilisateurs internes à un groupe
 1. Accédez au site où vous souhaitez ajouter des utilisateurs.
@@ -138,7 +138,7 @@ Pour inviter des invités à un groupe
 1. Sous **Groupes,** cliquez sur le groupe auquel vous souhaitez inviter des invités.
 2. Ouvrez la carte de visite du groupe, cliquez sur **Le** lien Membres dans le coin supérieur droit (lien qui indique le nombre de membres).
 3. cliquez **sur Ajouter des membres.**
-4. Tapez les adresses de messagerie des invités que vous souhaitez inviter, puis cliquez sur **Ajouter.**
+4. Tapez les adresses e-mail des invités que vous souhaitez inviter, puis cliquez sur **Ajouter.**
 5. Cliquez sur **Fermer**.
 Notez que vous devez cliquer sur **Fermer** uniquement si vous n’êtes pas le propriétaire du groupe et, par conséquent, vous n’êtes pas autorisé à ajouter l’invité au groupe. Dans ce cas, la demande d’ajout de l’invité au groupe est transférée au propriétaire du groupe pour approbation.
 

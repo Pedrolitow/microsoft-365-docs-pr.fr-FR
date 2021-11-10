@@ -2,8 +2,8 @@
 title: Enregistrements DNS externes pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/21/2019
+manager: scotv
+ms.date: 11/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
-ms.openlocfilehash: 7be1acf8886bead9d50b7c47b5f0dab1e2a74a12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54cebcd211f96a26d5f4590bc74e0a1c11c4adb8
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208804"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899605"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
 ![Domain.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
-**Vous voulez afficher une liste personnalisée des enregistrements DNS pour votre organisation Office 365 ?** Vous pouvez [trouver ici les informations nécessaires pour créer des enregistrements DNS Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) pour votre domaine dans Office 365.  
+**Vous voulez afficher une liste personnalisée des enregistrements DNS pour votre organisation Office 365 ?** Vous pouvez [trouver ici les informations nécessaires pour créer des enregistrements DNS Office 365](../admin/get-help-with-domains/information-for-dns-records.md) pour votre domaine dans Office 365.  
 
 **Avez besoin d’aide détaillée pour ajouter ces enregistrements  sur le DNS de l’hébergeur de votre domaine, tel que GoDaddy ou eNom ?** [Vous trouverez des liens vers des instructions détaillées pour plusieurs hôtes DNS](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
 
@@ -134,7 +134,7 @@ Pour les scénarios où vous n’utilisez pas seulement les emails Exchange Onli
 |1  <br/> |Tous les systèmes de courrier (obligatoire)  <br/> |Tous les enregistrements SPF commencent par cette valeur  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (courant)  <br/> |Utilisez uniquement avec Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Un système de messagerie tiers (moins courant)  <br/> ||Incluez :\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Le système de messagerie du site (moins courant)  <br/> |À utiliser si vous avez recours à Exchange Online Protection ou Exchange Online et un autre système de messagerie  <br/> |IP4 : \<0.0.0.0\>  <br/> ip6 : \< : : \>  <br/> Incluez : \<mail.contoso.com\>  <br/> La valeur entre crochets (\<\>) doit être les autres systèmes de messagerie chargés d’envoyer les emails pour votre domaine.  <br/> |
+|4  <br/> |Le système de messagerie du site (moins courant)  <br/> |À utiliser si vous avez recours à Exchange Online Protection ou Exchange Online et un autre système de messagerie  <br/> |IP4 : \<0.0.0.0\>  <br/> ip6 : \< : : \>  <br/> Incluez : \<mail.contoso.com\>  <br/> La valeur entre crochets (\<\>) doit être les autres systèmes de messagerie chargés d’envoyer les emails pour votre domaine.  <br/> |
 |5  <br/> |Tous les systèmes de courrier (obligatoire)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Exemple : Ajout à un enregistrement SPF existant

@@ -1,6 +1,6 @@
 ---
 title: Configurer et valider des exclusions en fonction de l’extension, du nom ou de l’emplacement
-description: Exclure des fichiers Antivirus Microsoft Defender analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
+description: Exclure des fichiers Antivirus Microsoft Defender les analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
 keywords: exclusions, fichiers, extension, type de fichier, nom de dossier, nom de fichier, analyses
 ms.prod: m365-security
 ms.technology: mde
@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/02/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c939b43edf206d31cf62678fa0984aa26707fab
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 11d8df5d56999cb4da41c57b8fdd09ebb8847c3e
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882404"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899574"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -110,14 +110,16 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
     1. Définissez l’option **sur Activé.**
     2. Sous la section **Options,** sélectionnez **Afficher.**
     3. Spécifiez chaque dossier sur sa propre ligne sous la **colonne Nom de** la valeur.
-    4. Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. Entrez **0 dans** la **colonne** Valeur.
+    4. Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. 
+    5. Entrez **0 dans** la **colonne** Valeur.
 
 5. Sélectionnez **OK**.
 
-6. Ouvrez **le paramètre Exclusions des extensions** pour la modification et ajoutez vos exclusions.
+6. Ouvrez **le paramètre Exclusions des extensions** pour modification et ajoutez vos exclusions.
     1. Définissez l’option **sur Activé.**
     2. Sous la section **Options,** sélectionnez **Afficher.**
-    3. Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom** de la valeurEnter **0** dans la **colonne** Valeur.
+    3. Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom de** la valeur.
+    4. Entrez **0 dans** la **colonne** Valeur.
 
 7. Sélectionnez **OK**.
 
@@ -205,7 +207,7 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 |Caractère générique|Exemples|
 |---|---|
 |`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de** dossiers, l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
-|`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier dans et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
+|`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclut `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
@@ -356,13 +358,13 @@ Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configure
 
 Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide de PowerShell avec l’cmdlet ou la classe WebClient .NET pour télécharger `Invoke-WebRequest` un fichier de test.
 
-Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la cmdlet dans ce chemin d’accès.
+Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter l’cmdlet dans ce chemin d’accès.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Si Antivirus Microsoft Defender signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
+Si Antivirus Microsoft Defender un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
 
 Vous pouvez également utiliser le code PowerShell suivant, qui appelle la classe WebClient .NET pour télécharger le fichier de test , comme avec l’cmdlet ; remplacer par un fichier conforme à la règle que vous validez `Invoke-WebRequest` `c:\test.txt` :
 

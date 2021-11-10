@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 091ba63ac23342c9423d8989cc2e56f4a1423f76
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8135ce430773eae051f1214e685638073ef07809
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883376"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899718"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -62,6 +62,7 @@ CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
 Ubuntu 16.04 LTS ou une LTS supérieure|Oui|Oui|Oui|Oui|Oui
 Oracle Linux 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
 SUSE Linux Enterprise Server 12 ou supérieur|Oui|Oui|Oui|Oui|Oui
+Linux Debian 9 ou version supérieure (en prévisualisation)|Oui|Oui|Oui|Oui|Oui
 Android 6.0 ou version supérieure (en prévisualisation)|Oui|Oui|Non pris en charge|Non pris en charge|Non pris en charge
 iOS 12.0 ou version supérieure (en prévisualisation)|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 
