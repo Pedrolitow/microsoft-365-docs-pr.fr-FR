@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9b080d2837fc14c15987c774770b8bc5e9777eb
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ee45db291cef56784f254ea1af481d873d2810ca
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754800"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914571"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -133,15 +133,15 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créer un type d’informations sensibles personnalisé pour DLP à l’aide d’une correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>Plus d’informations sur les validateurs d’expression régulière
 
 ### <a name="checksum-validator"></a>Validateur checksum
 
-Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la csum.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
+Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
 
-Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide Si mod valeur != chiffre 8 le numéro de compte n’est pas valide
+Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide si mod valeur != chiffre 8 numéro de compte n’est pas valide
 
 1. Définissez l’élément principal avec cette expression régulière :
 

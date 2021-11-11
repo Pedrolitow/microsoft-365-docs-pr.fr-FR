@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a99b69994638af788d3e4ba80c695885f7c3a856
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59b7f7f9aad9406fc5575f4ada5f45a68dd81b22
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169694"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914439"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle
 
@@ -37,41 +37,45 @@ ms.locfileid: "60169694"
 
 Les grandes équipes d’opérations de sécurité distribuées géographiquement adoptent généralement un modèle basé sur un niveau pour attribuer et autoriser l’accès aux portails de sécurité. Les niveaux classiques incluent les trois niveaux suivants :
 
-Niveau|Description
-:---|:---
-Niveau 1|**Équipe des opérations de sécurité locale/équipe informatique** <br> Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.
-Niveau 2|**Équipe des opérations de sécurité régionales** <br> Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.
-Niveau 3|**Équipe des opérations de sécurité globale** <br> Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail.
+Niveau|Description|
+:---|:---|
+Niveau 1|**Équipe des opérations de sécurité locale/équipe informatique** <br> Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.|
+Niveau 2|**Équipe des opérations de sécurité régionales** <br> Cette équipe peut voir tous les appareils pour leur région et effectuer des actions de correction.|
+Niveau 3|**Équipe des opérations de sécurité globale** <br> Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail.|
+
+> [!NOTE]
+> Pour les ressources de niveau [](/azure/active-directory/privileged-identity-management/pim-configure) 0, reportez-vous Privileged Identity Management aux administrateurs de sécurité pour fournir un contrôle plus granulaire de Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender.  
 
 Defender for Endpoint RBAC est conçu pour prendre en charge votre modèle de choix basé sur des rôles ou des niveaux et vous donne un contrôle granulaire sur les rôles qu’ils peuvent voir, les appareils accessibles et les actions qu’ils peuvent prendre. L’infrastructure RBAC est centrée autour des contrôles suivants :
 
 - **Contrôler les personnes qui peuvent prendre des mesures spécifiques**
   - Créez des rôles personnalisés et contrôlez les fonctionnalités de Defender for Endpoint accessibles avec granularité.
 - **Contrôler qui peut voir les informations sur un ou plusieurs groupes d’appareils spécifiques**
-  - [Créez](machine-groups.md) des groupes d’appareils en fonction de critères spécifiques tels que les noms, les balises, les domaines et autres, puis accordez-leur l’accès au rôle à l’aide d’un groupe d’utilisateurs Azure Active Directory (Azure AD) spécifique.
+  - [Créez](machine-groups.md) des groupes d’appareils en fonction de critères spécifiques tels que des noms, des balises, des domaines et d’autres, puis accordez-leur l’accès au rôle à l’aide d’un groupe d’utilisateurs Azure Active Directory (Azure AD) spécifique.
 
-Pour implémenter l’accès basé sur les rôles, vous devez définir des rôles d’administrateur, attribuer des autorisations correspondantes et affecter des groupes d’utilisateurs Azure AD affectés aux rôles.
+Pour implémenter l’accès basé sur les rôles, vous devez définir des rôles d’administrateur, attribuer les autorisations correspondantes et affecter Azure AD groupes d’utilisateurs affectés aux rôles.
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
 Avant d’utiliser le RBAC, il est important de comprendre les rôles qui peuvent accorder des autorisations et les conséquences de l’utilisation du RBAC.
 
 > [!WARNING]
-> Avant d’activer la fonctionnalité, il est important que vous disposez d’un rôle d’administrateur général ou d’administrateur de la sécurité dans Azure AD et que vos groupes Azure AD sont prêts à réduire le risque d’être verrouillé du portail. 
+> Avant d’activer la fonctionnalité, il est important que vous disposez d’un rôle d’administrateur général ou d’administrateur de sécurité dans Azure AD et que vos groupes Azure AD sont prêts à réduire le risque d’être verrouillé du portail. 
 
 Lorsque vous vous connectez pour la première fois au portail Microsoft 365 Defender, l’accès total ou l’accès en lecture seule vous est accordé. Les droits d’accès total sont accordés aux utilisateurs ayant des rôles Administrateur de sécurité ou Administrateur général dans Azure AD. L’accès en lecture seule est accordé aux utilisateurs ayant un rôle de lecteur de sécurité dans Azure AD. 
 
-Une personne ayant un rôle d’administrateur général Defender pour point de terminaison dispose d’un accès illimité à tous les appareils, quelle que soit l’association de leur groupe d’appareils et les affectations des groupes d’utilisateurs Azure AD
+Une personne ayant un rôle d’administrateur général Defender pour point de terminaison dispose d’un accès illimité à tous les appareils, quelle que soit l’association de leur groupe d’appareils et les affectations des groupes d’Azure AD utilisateurs
 
 > [!WARNING]
-> Initialement, seules les personnes ayant des droits d’administrateur général Azure AD ou d’administrateur de sécurité pourront créer et attribuer des rôles dans le portail Microsoft 365 Defender. Par conséquent, il est important que les groupes soient prêts dans Azure AD.
+> À l’origine, seules les personnes ayant des droits d’administrateur général ou d’administrateur de sécurité Azure AD pourront créer et attribuer des rôles dans le portail Microsoft 365 Defender. Par conséquent, il est important de disposer des groupes prêts dans Azure AD.
 >
-> **L’turning on role-based access control will cause users with read-only permissions (for example, users assigned to Azure AD Security reader role) to lose access until they are assigned to a role.** 
+> **Si vous lisez le contrôle d’accès basé sur un rôle, les utilisateurs ayant des autorisations en lecture seule (par exemple, les utilisateurs affectés au rôle de lecteur Azure AD Security) perdent l’accès jusqu’à ce qu’ils soient affectés à un rôle.** 
 >
->Le rôle d’administrateur général Defender for Endpoint intégré par défaut est automatiquement attribué aux utilisateurs ayant des autorisations d’administrateur. Après avoir choisi d’utiliser RBAC, vous pouvez affecter d’autres utilisateurs qui ne sont pas des administrateurs globaux ou de sécurité Azure AD au rôle d’administrateur général Defender for Endpoint. 
+>Le rôle d’administrateur général Defender for Endpoint intégré par défaut est automatiquement attribué aux utilisateurs ayant des autorisations d’administrateur. Après avoir choisi d’utiliser RBAC, vous pouvez affecter des utilisateurs supplémentaires qui ne sont pas Azure AD administrateurs globaux ou de sécurité au rôle d’administrateur général Defender for Endpoint. 
 >
 > Après avoir choisi d’utiliser le RBAC, vous ne pouvez pas revenir aux rôles initiaux comme lorsque vous vous êtes connecté au portail pour la première fois.
 
 ## <a name="related-topic"></a>Rubrique connexe
 
+- [Rôles RBAC](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Créer et gérer des groupes d’appareils dans Microsoft Defender pour le point de terminaison](machine-groups.md)

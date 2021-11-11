@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent des informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 57f8f74a88749e94f9157d2c890a101256edff3f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 806c5043d21be15d965814101fe87c00785ca996
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703474"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914607"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -40,7 +40,7 @@ Les types d’informations sensibles sont des classifieurs basés sur des modèl
 - [Étiquettes de rétention](retention.md)
 - [Gestion des risques internes](insider-risk-management.md)
 - [Conformité des communications](communication-compliance.md)
-- [Gestion des risques à l’intérieur](insider-risk-management-solution-overview.md)
+- [À l’intérieur de la gestion des risques](insider-risk-management-solution-overview.md)
 - [Stratégies de étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Gestion de la confidentialité](/privacy/solutions/privacymanagement/privacy-management)
 
@@ -101,7 +101,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -125,7 +125,7 @@ Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entr
 - **confiance moyenne**: valeur de 75, les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée.  
 - **niveau de confiance** élevé : valeur 85, les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance.  
 
-Vous devez utiliser des modèles de niveau de confiance élevé avec un nombre faible, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
+Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles nombres, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
 
 > [!NOTE]
 > Si vous avez des stratégies existantes ou des types d’informations sensibles personnalisés (SIT) définis à l’aide de niveaux de confiance basés sur le nombre (également défini comme précision), ils seront automatiquement mappés aux trois niveaux de confiance discrets ; confiance faible, confiance moyenne et confiance élevée, dans l’interface utilisateur du Centre de sécurité @ conformité.
@@ -139,7 +139,7 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 
 - **Utiliser l’interface utilisateur** Vous pouvez configurer un type d’informations sensibles personnalisé à l’aide de l’interface utilisateur du Centre de sécurité et de conformité. Cette méthode vous permet d’utiliser des expressions régulières, des mots clés et des dictionnaires de mots clés. Pour en savoir plus, voir [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
 
-- **Utiliser EDM** Vous pouvez configurer des types d’informations sensibles personnalisés à l’aide d’une classification de correspondance exacte des données (EDM). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir l’article sur la [création d’un type d’informations sensibles personnalisé à l’aide d’une classification de correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- **Utiliser EDM** Vous pouvez configurer des types d’informations sensibles personnalisés à l’aide d’une classification de correspondance exacte des données (EDM). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir [En savoir plus sur les types d’informations](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)sensibles basés sur la correspondance de données exactes.
 
 - **Utiliser PowerShell** vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 

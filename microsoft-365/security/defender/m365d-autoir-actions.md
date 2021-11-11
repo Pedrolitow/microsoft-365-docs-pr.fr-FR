@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 949fbfa6b34fe78e7d5a575756547fdadfef8c8f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f43c41570e8b097e0652b3909d603600de9f96a
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199500"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914224"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion de l’action
 
@@ -38,7 +38,7 @@ ms.locfileid: "60199500"
 
 Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
 
-- [Les enquêtes](m365d-autoir.md) automatisées peuvent entraîner des actions de correction qui sont prises automatiquement ou qui attendent votre approbation.
+- [Les examens](m365d-autoir.md) automatisés peuvent entraîner des actions de correction qui sont prises automatiquement ou qui attendent votre approbation.
 - Un antivirus, un logiciel anti-programme malveillant et d’autres fonctionnalités de protection contre les menaces peuvent entraîner des actions de correction, telles que le blocage d’un fichier, d’une URL ou d’un processus, ou l’envoi d’un artefact en quarantaine.
 - Votre équipe en matière d’opérations de [](advanced-hunting-overview.md) sécurité peut prendre des mesures correctives manuellement, par exemple lors d’une recherche avancée ou lors de l’investigation d’alertes [ou d’incidents.](investigate-incidents.md) [](investigate-alerts.md)
 
@@ -53,15 +53,15 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de actions, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
+3. Dans le centre de l’action, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
-   ![Approuver ou rejeter une action.](../../media/air-actioncenter-itemselected.png)
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Exemple d’approbation ou de rejet d’une action." lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md). 
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Annuler les actions terminées
 
@@ -95,7 +95,7 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
 - [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

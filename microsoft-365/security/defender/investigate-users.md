@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209164"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914379"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
@@ -36,14 +36,14 @@ ms.locfileid: "60209164"
 
 Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Commencez par **l’onglet Utilisateurs** pour un incident à partir **d’Incidents &'incident** des \> **_alertes_*_ \> Utilisateurs***.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 Pour obtenir un résumé rapide d’un compte d’utilisateur pour l’incident, cochez la coche en regard du nom du compte d’utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender utilisateur":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> La page Utilisateur affiche Azure Active Directory organisation (Azure AD), ainsi que des groupes, pour vous aider à comprendre les groupes et les autorisations associés à un utilisateur.
+> La page Utilisateur affiche Azure Active Directory (Azure AD) ainsi que des groupes, ce qui vous aide à comprendre les groupes et les autorisations associés à un utilisateur.
 
 Dans cette page volante, vous pouvez passer en revue les informations sur les menaces des utilisateurs, notamment les incidents actuels, les alertes actives et le niveau de risque, ainsi que l’exposition des utilisateurs, les comptes, les appareils, etc.
 
@@ -51,13 +51,13 @@ En outre, vous pouvez prendre des mesures directement dans le portail Microsoft 
 
 À partir de là, vous pouvez sélectionner La page d’accès à **l’utilisateur** pour voir les détails d’un compte d’utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exemple de page de compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender utilisateur":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exemple de page de compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 Vous pouvez également voir cette page en sélectionnant le nom du compte d’utilisateur dans la liste de la page **Utilisateurs.**
 
 Vous pouvez voir l’appartenance à un groupe pour l’utilisateur, en sélectionnant le numéro sous **Groupes.**
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Exemple d’appartenance à un groupe pour un utilisateur dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Exemple d’appartenance à un groupe pour un utilisateur." lightbox="../../media/investigate-users/user-group-membership.png":::
 
 En sélectionnant l’icône sous **Responsable,** vous pouvez voir où se trouve l’utilisateur dans l’arborescence de l’organisation.
 
@@ -70,13 +70,13 @@ Cette page affiche des informations spécifiques au risque de sécurité d’un 
 - Marquer le compte d’utilisateur comme compromis
 - Exiger que l’utilisateur se connecte à nouveau
 - Suspendre le compte d’utilisateur
-- Voir les paramètres Azure Active Directory compte d’utilisateur (Azure AD)
+- Voir les paramètres Azure Active Directory de compte d’utilisateur (Azure AD)
 - Afficher les fichiers du compte d’utilisateur
 - Afficher les fichiers partagés avec cet utilisateur.
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple d’actions sur un compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple d’actions sur un compte d’utilisateur pour un incident." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 <!--
 You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
@@ -93,11 +93,11 @@ La carte vous fournit une liste du nombre de sauts entre les ordinateurs ou les 
 
 Si un chemin de mouvement latéral potentiel n’a pas été détecté pour l’entité au cours des deux derniers jours, le graphique ne s’affiche pas. Sélectionnez une date différente à l’aide de l’affichage d’une autre date pour afficher les graphiques des chemins de déplacement latéral précédents découverts pour cette entité. Le rapport de déplacement latéral est toujours disponible pour vous fournir des informations sur les chemins de déplacement latéral potentiels détectés et peut être personnalisé par heure.
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Exemple de chemin de déplacement latéral pour un utilisateur dans le portail Microsoft 365 Defender gauche":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Exemple de chemin de mouvement latéral pour un utilisateur." lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 Pour plus d’informations, voir [Chemins de déplacement latéral.](/defender-for-identity/use-case-lateral-movement-path)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

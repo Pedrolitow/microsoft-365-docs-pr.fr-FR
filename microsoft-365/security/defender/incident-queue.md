@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f8a1be949c922a98d52b7d84ccc19e2ed3f9913
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154613"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914319"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -36,13 +36,13 @@ ms.locfileid: "60154613"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
+Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
 
 La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. C’est également ce qu’on appelle le triage des incidents.
 
 Vous pouvez vous rendre dans la file d’attente des incidents à partir **d’incidents & alertes** > Incidents sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 La section **Incidents et alertes** les plus récents présente un graphique du nombre d’alertes reçues et d’incidents créés au cours des dernières 24 heures.
 
@@ -63,7 +63,7 @@ La file d’attente des incidents expose également plusieurs options de filtrag
 
 Dans la file d’attente des incidents par défaut, vous pouvez sélectionner **Filtres** pour afficher un volet Filtres, à partir duquel vous pouvez afficher un ensemble filtré d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet Filtres de la file d’attente des incidents.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Ce tableau répertorie les noms de filtres disponibles.
 
@@ -100,7 +100,7 @@ Une fois que vous avez configuré un filtre utile dans la file d’attente des i
 
 Une fois que vous avez compilé et stocké votre liste d’affichages de filtre utiles en tant [](manage-incidents.md) qu’URL, vous pouvez l’utiliser pour traiter et hiérarchiser rapidement les incidents dans votre file d’attente et les gérer pour une affectation et une analyse ultérieures.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et :
 

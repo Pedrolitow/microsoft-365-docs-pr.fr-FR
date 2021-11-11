@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: febd40a6312b794c62339e6b19f5425c2acf9542
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907788"
+ms.locfileid: "60914631"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -40,6 +40,65 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+
+## <a name="october-2021"></a>Octobre 2021
+
+### <a name="app-governance"></a>Gouvernance des applications
+
+- [Le module de gouvernance des applications pour Defender pour les applications cloud](/cloud-app-security/app-governance-manage-app-governance)a été publié à la disponibilité générale. La documentation sur la gouvernance des applications a été déplacée pour rejoindre la documentation de Defender for Cloud Apps.
+
+### <a name="compliance--service-assurance"></a>Certification du service & conformité
+
+- [Assurance de service](/compliance) : examiner trimestriellement les mises à jour de contenu pour les certifications et les déclarations d’applicabilité) Gestion des ressources du centre de données
+  - Architecture et infrastructure des centres de données
+  - Continuité d’activité du centre de données et récupération d’urgence
+  - Protections environnementales du centre de données
+  - Sécurité de l’accès physique au centre de données
+  - Microsoft 365 Programme de conformité SDL
+  - Contrôle d’accès de l’ingénieur de service Microsoft 365
+  - Guide d’évaluation des risques pour MS Cloud
+
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+- [En savoir plus sur la protection contre la](endpoint-dlp-learn-about.md) perte de données a été mise à jour pour la prise en charge de macOS et la classification avancée ; mise à jour pour la création d’une stratégie DLP personnalisée pour auditer l’activité pour tous les types de fichiers pris en charge.
+- [Prise en Microsoft 365 protection contre](endpoint-dlp-getting-started.md) la perte de données de point de terminaison a été mise à jour pour la prise en charge de macOS et la classification avancée.
+- [L’utilisation de la protection contre la perte de](endpoint-dlp-using.md) données de point de terminaison a été mise à jour pour la prise en charge de macOS et la classification avancée.
+- [La référence des conseils de stratégie de](dlp-policy-tips-reference.md) protection contre la perte de données a été mise à jour pour la prise en charge de macOS et la classification avancée.
+- [L’intégration d’appareils macOS Microsoft 365 (prévisualisation)](device-onboarding-macos-overview.md) a été mise à jour pour la prise en charge de macOS et la classification avancée.
+- Ajout des nouvelles pages suivantes pour l’intégration d’appareils :
+  - [Intégration et intégration d’appareils macOS dans des solutions Microsoft 365 conformité à l’aide d’Intune (prévisualisation)](device-onboarding-offboarding-macos-intune.md)
+  - [Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Intégration et désintération des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### <a name="ediscovery"></a>eDiscovery
+
+- Collectez les pièces [jointes](advanced-ediscovery-cloud-attachments.md) cloud dans Advanced eDiscovery en plus de collecter la dernière version d’une pièce jointe cloud, vous pouvez collecter la version qui a été partagée dans un message électronique ou Teams conversation . la collecte de la version partagée est rendue possible par la nouvelle fonctionnalité d’application automatique d’une étiquette de rétention aux pièces jointes cloud.
+- [Configurer des versions historiques dans Advanced eDiscovery](advanced-ediscovery-historical-versions.md) nouvelle fonctionnalité qui indexe toutes les versions des documents stockés sur un site SharePoint pour la recherche ; Cela signifie que les versions de document qui contiennent du contenu qui correspondent à une requête de collection sont renvoyées dans les résultats de la recherche.
+
+### <a name="encryption"></a>Chiffrement
+
+- Utiliser le chiffrement de bout en bout pour les appels Microsoft Teams [(prévisualisation publique)](/microsoftteams/teams-end-to-end-encryption) Nouveau contenu pour la prévisualisation publique.
+
+### <a name="information-governance"></a>Gouvernance des informations
+
+- Configurer un connecteur pour importer des données [d’audit EHR par Le](import-epic-data.md) nouveau connecteur vous permet d’importer des données à partir du système électronique d’enregistrements de santé électronique DeCén afin de prendre en charge de nouveaux scénarios généraux d’utilisation abusive des données des patients pour la gestion des risques internes.
+- Configurer un connecteur pour importer des données [d’audit EHR](import-healthcare-data.md) de santé. Ce nouveau connecteur vous permet d’importer des données à partir d’un système électronique d’enregistrements de santé pour prendre en charge de nouveaux scénarios généraux d’utilisation abusive des données des patients pour la gestion des risques internes.
+
+### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
+- [Les étendues de stratégie adaptative sont publiées](retention.md#adaptive-or-static-policy-scopes-for-retention) en prévisualisation pour les stratégies de rétention et les stratégies d’étiquette de rétention.
+- Vous pouvez désormais [appliquer automatiquement une étiquette de rétention basée sur une étiquette de niveau de sensibilité.](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label)
+- Le plan de fichiers a un nouveau [processus d’importation.](file-plan-manager.md#import-retention-labels-into-your-file-plan)
+- [Paramètres communs](retention-settings.md)pour les stratégies de rétention et les stratégies d’étiquette de rétention : nouvel article pour obtenir des informations détaillées sur la configuration des étendues adaptatives et d’autres paramètres dans les stratégies de rétention et les stratégies d’étiquette de rétention.
+
+### <a name="sensitive-information-types"></a>Types d'informations sensibles
+
+- [Découvrez le nouveau contenu des entités nommées (prévisualisation)](named-entities-learn.md) pour les entités nommées.
+- Utilisez des entités nommées dans vos stratégies de protection contre la perte de données [(prévisualisation)](named-entities-use.md) nouveau contenu sur l’utilisation d’entités nommées.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- [Les étiquettes par défaut et les stratégies par](mip-easy-trials.md) défaut sont en place pour les clients éligibles.
 
 ## <a name="september-2021"></a>Septembre 2021
 
@@ -99,7 +158,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - La [co-édition](sensitivity-labels-coauthoring.md) et l’auto-ave sont désormais généralement disponibles pour Windows (version minimale de 2107 à partir du canal actuel ou du canal Enterprise mensuel) et macOS (version minimale de 16,51).
 - Déploiement pour les Office qui utilisent des étiquettes intégrées : le paramètre d’étiquette par défaut prend désormais en charge les documents existants ainsi que les nouveaux documents. Ce changement de comportement assure la parité avec le client d’étiquetage unifié Azure Information Protection. Pour plus d’informations sur le déploiement par application et les versions minimales, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
 - Les étiquettes de conteneur prisent désormais en charge les paramètres de lien de partage par défaut à [l’aide des paramètres avancés de PowerShell.](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings)
-- Les tableaux de [fonctionnalités](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) qui listent les versions minimales prise en charge pour l’étiquetage intégré ont désormais des versions pour le canal actuel, le canal Enterprise mensuel et le canal Semi-Annual Enterprise.
+- Les tableaux de [fonctionnalités](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) qui listent les versions minimales pris en charge pour l’étiquetage intégré ont désormais des versions pour le canal actuel, le canal Enterprise mensuel et le canal Semi-Annual Enterprise.
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -107,7 +166,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - [Entrées étendues pour les informations sur les alertes.](app-governance-anomaly-detection-alerts.md#collection-alerts) De nouvelles entrées ont été ajoutées pour décrire des informations supplémentaires sur les alertes désormais disponibles dans la gouvernance des applications.
 
 ### <a name="communication-compliance"></a>Conformité des communications
-- [Les canaux de conformité des communications](communication-compliance-channels.md) ont ajouté une nouvelle prise en charge de la fonctionnalité d’aperçu pour l’analyse des pièces jointes modernes dans Teams conversations et canaux privés.
+- [Les canaux de conformité des communications](communication-compliance-channels.md) ont ajouté une nouvelle prise en charge de la fonctionnalité d’aperçu pour l’analyse des pièces jointes modernes Teams conversations et canaux privés.
 
 ### <a name="compliance--service-assurance"></a>Certification du service & conformité
 
@@ -134,20 +193,20 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - [Découvrez et configurez la détection du signal](insider-risk-management-browser-support.md)du navigateur de gestion des risques internes. Fonctionnalité d’aperçu pour la configuration de la détection du signal du navigateur pour les navigateurs Edge et Chrome.
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
-- [Flowchart pour déterminer quand](retention-flowchart.md) un élément sera conservé ou définitivement supprimé pour compléter les concepts et les exemples des principes de rétention.
+- [Flowchart pour déterminer quand](retention-flowchart.md) un élément sera conservé ou supprimé définitivement pour compléter les concepts et les exemples des principes de rétention.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 - Améliorations apportées aux stratégies d’étiquetage automatique qui incluent des nombres plus [élevés](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies) pris en charge pour les sites et stratégies, la prise en charge de tous les sites OneDrive et SharePoint et la possibilité de sélectionner les sites SharePoint disponibles au lieu d’avoir à entrer chaque site par URL et améliorations de simulation.
 - L’étiquetage automatique dans Office applications en tant que paramètre d’étiquette de sensibilité prend désormais en charge la correspondance exacte des données [(EDM).](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)
 - Les étiquettes par défaut sont désormais étendues [Power BI (en prévisualisation).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
 - Les événements d’audit [](data-classification-activity-explorer-available-events.md) pour les Outlook sur le web qui s’surfacent dans l’Explorateur d’activités sont désormais entièrement déployés, ce qui signifie que l’activité des utilisateurs pour les étiquettes intégrées est désormais disponible pour toutes les applications Office sur toutes les plateformes.
-- Les [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tableaux des fonctionnalités pris en charge ont une nouvelle note de bas de page pour Windows afin de clarifier que les versions minimales sont pour le canal actuel et un conseil pour comparer plus facilement les versions antérieures qui omettent les zéros non non pris en compte par rapport aux versions plus récentes.
+- Les [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tableaux des fonctionnalités pris en charge ont une nouvelle note de bas de page pour Windows pour clarifier que les versions minimales sont pour le canal actuel et un conseil pour comparer plus facilement les versions antérieures qui omettent les zéros non obligatoires par rapport aux versions plus récentes.
 
 ## <a name="july-2021"></a>Juillet 2021
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Advanced eDiscovery flux](teams-workflow-in-advanced-ediscovery.md) de travail pour le contenu dans Microsoft Teams à l’aide de grands cas a ajouté un flux de travail de bout en bout de gestion du contenu Teams dans Advanced eDiscovery ; inclut des détails sur l’aperçu de la nouvelle fonctionnalité de transcription de conversation.
+- [Advanced eDiscovery flux](teams-workflow-in-advanced-ediscovery.md) de travail pour le contenu dans Microsoft Teams à l’aide de grands cas ajout d’un flux de travail de bout en bout de gestion du contenu Teams dans Advanced eDiscovery ; inclut des détails sur l’aperçu de la nouvelle fonctionnalité de transcription de conversation.
 - Utilisez de grands cas dans [Advanced eDiscovery](advanced-ediscovery-large-cases.md) ajout d’un aperçu du nouveau format de cas de grande taille qui étend les limites de révision et de cas et prend en charge les transcriptions de conversation pour Teams et Yammer conversation.
 
 ### <a name="app-governance"></a>Gouvernance des applications
@@ -161,14 +220,14 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 ### <a name="compliance--service-assurance"></a>Certification du service & conformité
 
 - [Assurance de service](/compliance/) (mise à jour ; révision trimestrielle des mises à jour de contenu pour les certifications et déclarations d’applicabilité)
-    - Vérifications des arrière-plan dans le cloud
+    - Vérifications d’arrière-plan dans le cloud
     - Transfert d'& employé
     - Gouvernance
     - Ressources humaines
     - Gestion des incidents
     - Filtrage avant l’embauche
     - Gestion des incidents de sécurité (SIM)
-    - SIM : containment, éradication et récupération
+    - SIM : contenu, éradication et récupération
     - SIM – Analyse des & détection
     - SIM : rapports post-incident
     - SIM – Préparation
@@ -176,15 +235,15 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="data-classification"></a>Classification des données
 
-- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur entra nements entra mentables.
+- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur de discrimination entra nements.
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-- [Découvrez comment Microsoft 365 protection contre la](endpoint-dlp-learn-about.md) perte de données de point de terminaison a ajouté des conseils mis à jour sur l’activité de fichier Toujours auditer pour les appareils.
+- [Découvrez comment Microsoft 365 protection contre](endpoint-dlp-learn-about.md) la perte de données de point de terminaison a ajouté des conseils mis à jour sur l’activité des fichiers Toujours auditer pour les appareils.
 - [Mise en place du scanneur](dlp-on-premises-scanner-get-started.md) local de protection contre la perte de données mis à jour pour la version GA.
-- [En savoir plus sur la Microsoft 365 protection contre](dlp-on-premises-scanner-learn.md) la perte de données sur site mise à jour pour la version GA.
-- [Utilisez le Microsoft 365 de protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
-- [Utilisez des stratégies de protection contre](dlp-use-policies-non-microsoft-cloud-apps.md) la perte de données pour les applications cloud non-Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
+- [En savoir plus sur Microsoft 365 la](dlp-on-premises-scanner-learn.md) protection contre la perte de données sur site mise à jour pour la version GA.
+- [Utilisez le Microsoft 365 protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
+- [Utilisez des stratégies de protection contre la](dlp-use-policies-non-microsoft-cloud-apps.md) perte de données pour les applications cloud non Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -197,7 +256,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
 - En prévisualisation : les stratégies de [rétention pour Teams](create-retention-policies.md#retention-policy-for-teams-locations) prend désormais en charge les canaux privés en tant que nouveaux emplacements Teams lorsque vous créez ou modifiez une stratégie de rétention
-- Les instructions [d’importation d’un plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) de gestion de fichiers sont mises à jour pour inclure les enregistrements réglementaires et les dépendances sont désormais répertoriées pour chaque entrée.
+- Les instructions [d’importation d’un plan de](file-plan-manager.md#import-retention-labels-into-your-file-plan) gestion de fichiers sont mises à jour pour inclure les enregistrements réglementaires et les dépendances sont désormais répertoriées pour chaque entrée.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
@@ -231,24 +290,24 @@ Les pages suivantes ont été ajoutées :
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en charge [Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
+- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en [charge Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
 - La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
 - Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, Exchange stratégies d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
 - Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities)
 - Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
-- Les fichiers étiquetés et chiffrés par un nom principal de service (tel que Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [ SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- Les fichiers étiquetés et chiffrés par un nom principal de service (par exemple, Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [ SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - La [co-création](sensitivity-labels-coauthoring.md) et l’auto-ave ne sont plus limités aux locataires de test et sont désormais pris en charge en production lorsque vous utilisez la version 2105 : 18 juin pour Windows et version 16.50+ pour macOS. Notez que cette fonctionnalité n’est toujours pas prise en charge par iOS et Android et reste en prévisualisation.
 
 ## <a name="may-2021"></a>Mai 2021
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-- De nouveaux conseils [pour la planification de votre](dlp-overview-plan-for-dlp.md) stratégie de protection contre la perte de données.
+- De nouveaux conseils pour la planification de votre stratégie [de protection contre la](dlp-overview-plan-for-dlp.md) perte de données.
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
 
 - Si vous publiez une stratégie de rétention à partir d’un site SharePoint ou d’un compte OneDrive, vous n’avez plus besoin d’attendre la période de grâce de 30 jours avant de pouvoir supprimer le site ou le compte. Une demande populaire par les clients, cette modification est maintenant terminée pour tous les clients.
-- En prévisualisation, révision de **la disposition** en plusieurs étapes : un administrateur peut désormais ajouter jusqu’à cinq étapes consécutives de révision de [la disposition](disposition.md) pour une étiquette de rétention, et les réviseurs peuvent ajouter d’autres utilisateurs à leur étape de révision de disposition. Vous pouvez également personnaliser les rappels et les notifications par e-mail.
+- En prévisualisation, révision de **la disposition** en plusieurs étapes : un administrateur peut désormais ajouter jusqu’à cinq étapes consécutives de révision de [la disposition](disposition.md) pour une étiquette de rétention, et les réviseurs peuvent ajouter d’autres utilisateurs à la phase de révision de leur disposition. Vous pouvez également personnaliser les rappels et les notifications par e-mail.
 
 ### <a name="sensitive-information-types"></a>Types d'informations sensibles
 
@@ -257,40 +316,5 @@ Les pages suivantes ont été ajoutées :
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 - En prévisualisation,  un nouveau paramètre pour le contexte d’authentification est désormais disponible lorsque vous configurez une étiquette de niveau de sensibilité pour les [groupes et les sites.](sensitivity-labels-teams-groups-sites.md) Cette option fonctionne conjointement avec Azure AD d’accès conditionnel pour appliquer des conditions plus strictes lorsque les utilisateurs accèdent SharePoint sites sur SharePoint qui ont l’étiquette appliquée. Veillez à lire les [dépendances et limitations](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) avant de configurer ce paramètre.
-- [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Les stratégies d’étiquetage automatique qui sont configurées uniquement pour Exchange désormais la prise en charge des étiquettes de confidentialité qui appliquent le chiffrement avec Autoriser les utilisateurs à attribuer des **autorisations** pour les options Ne pas Encrypt-Only pas de données.
+- [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Les stratégies d’étiquetage automatique qui sont configurées uniquement pour Exchange désormais la prise en charge des étiquettes de confidentialité qui appliquent le chiffrement avec Autoriser les utilisateurs à attribuer des **autorisations** pour les options Ne pas Encrypt-Only de données.
 - [L’étiquetage obligatoire est](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) désormais généralement disponible pour toutes les applications Office, sur toutes les plateformes.
-
-## <a name="april-2021"></a>Avril 2021
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments à partir d’un ensemble de révision.
-
-### <a name="data-classification"></a>Classification des données
-
-- [Activités d’étiquetage disponibles dans l’Explorateur d’activités](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
-
-### <a name="data-connectors"></a>Connecteurs de données
-
-- [Configurer un connecteur pour archiver des données Cisco Jabber sur Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
-- [Configurer un connecteur pour archiver cisco Jabber sur les données PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
-
-### <a name="data-loss-prevention"></a>Protection contre la perte de données
-
-- Nouvelle rubrique de référence sur les [conseils de stratégie de protection contre la perte de données.](/microsoft-365/compliance/dlp-policy-tips-reference)
-- Nouvelle rubrique pour [en savoir plus sur la protection contre la perte de données.](/microsoft-365/compliance/dlp-learn-about-dlp)
-- Nouvelle rubrique pour [la mise en place du tableau de bord d’alerte de protection contre la perte de données.](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)
-
-### <a name="retention-policies-and-retention-label-policies"></a>Stratégies de rétention et stratégies d’étiquette de rétention
-
-- L’emplacement Microsoft 365 Groups prend désormais en charge l’application des paramètres de rétention uniquement aux boîtes aux lettres Microsoft 365 ou uniquement aux sites SharePoint connectés à l’aide de la cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) avec le paramètre *Applications.*
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-Outlook et mises à jour :
-
-- [Différents paramètres pour l’étiquette par défaut](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) et l’étiquetage obligatoire sont désormais pris en charge pour l’étiquetage intégré. Auparavant, ces paramètres étaient pris en charge uniquement par le client d’étiquetage unifié AIP.
-- [Encrypt-Only est](encryption-sensitivity-labels.md#let-users-assign-permissions) désormais pris en charge par macOS, iOS et Android.
-- [L’étiquetage obligatoire](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) est en cours de déploiement sur les plateformes restantes.
-- [Les marquages dynamiques avec toutes les variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) sont pris en charge dans tous Outlook clients.
-

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 2574ad8c9a42c5646bda770a0c5a310548ddc88e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883753"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914283"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -151,7 +151,7 @@ De même, comme pour la configuration de la stratégie DLP, vous pouvez choisir 
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte
 
-Vous pouvez configurer une étiquette de confidentialité pour utiliser une [classification EDM (correspondance de données exacte)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) pour les types d’informations sensibles personnalisés. Toutefois, actuellement, vous devez également spécifier au moins un type d’informations sensibles qui n’utilise pas EDM. Par exemple, l’un des types d’informations sensibles intégrés, comme **Numéro de carte de crédit**.
+Vous pouvez configurer une étiquette de confidentialité pour utiliser des [types d’informations sensibles basés sur des correspondances de données exactes](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) pour les types d’informations sensibles personnalisés. Toutefois, actuellement, vous devez également spécifier au moins un type d’informations sensibles qui n’utilise pas EDM. Par exemple, l’un des types d’informations sensibles intégrés, comme **Numéro de carte de crédit**.
 
 Si vous configurez une étiquette de confidentialité avec uniquement EDM comme condition de type d’informations sensibles, le paramètre d’étiquetage automatique est automatiquement désactivé pour l’étiquette.
 

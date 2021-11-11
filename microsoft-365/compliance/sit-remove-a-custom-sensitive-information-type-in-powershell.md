@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
-ms.openlocfilehash: 4bb42bdc80cba64bc8970753b77160afc6720523
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189260"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914403"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
-
-
 
 Dans PowerShell du centre de conformité, il existe deux méthodes pour supprimer des types d’informations sensibles personnalisés :
 

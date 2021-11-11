@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8411ca98b48b19c7ecf3085c450fbf40e5185474
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c344f4462b258d4ffbacd94ddfb0f3afd4b7ed4
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210388"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914643"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -36,7 +36,7 @@ ms.locfileid: "60210388"
 >
 > Certaines des fonctionnalités décrites dans cet article sont en prévisualisation, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
 >
-> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoofof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresses chez [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
 
@@ -45,7 +45,7 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 - URL à bloquer.
 - Fichiers à bloquer.
 - Messages électroniques ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresse.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’adresses ou de verdicts d’usurpation d’adresse, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
 - URL à autoriser.
 - Fichiers à autoriser.
 - Messages électroniques ou domaines de l’expéditeur à autoriser.
@@ -66,7 +66,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe d’URL](#url-syntax-for-the-tenant-allowblock-list) de la section Tenant Allow/Block List plus loin dans cet article.
 
-- La liste d’adresses client autorise un maximum de 500 entrées pour les expéditeurs, 500 entrées pour les URL, 500 entrées pour les hèmes de fichiers et 1 024 entrées pour l’usurpation d’adresse (expéditeurs usurpés).
+- La liste d’adresses client autorise un maximum de 500 entrées pour les expéditeurs, 500 entrées pour les URL, 500 entrées pour les hèmes de fichiers et 1 024 entrées pour l’usurpation (expéditeurs usurpés).
 
 - Le nombre maximal de caractères pour chaque entrée est :
   - Hèmes de fichier = 64
@@ -78,10 +78,10 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
+- Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
   - **Expéditeurs, URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires,  vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité, ou le rôle Gestionnaire **AllowBlockList** du client vous est attribué.
-    - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+    - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
     - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
@@ -90,7 +90,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de [Microsoft 365](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -100,7 +100,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-Pour ajouter tous les blocs, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer.](manage-tenant-blocks.md)
+Pour ajouter tous les blocs, voir [Ajouter des blocs dans la liste d’attente des locataires.](manage-tenant-blocks.md)
 
 Pour ajouter tous les autoriser, voir Ajouter des autoriser dans la liste des locataires [autoriser/bloquer](manage-tenant-allows.md).
 
@@ -108,7 +108,7 @@ Pour modifier et supprimer tous les blocs et tous les blocs, voir Modifier et su
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome
 
-Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer,](manage-tenant-blocks.md)Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
+Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la liste d’attente [du](manage-tenant-blocks.md)client, Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste des locataires autoriser/bloquer
 
@@ -172,7 +172,7 @@ Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la list
      - **Action**
      - **Type d’usurpation**
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+   Lorsque vous avez terminé, cliquez sur **Appliquer**. Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -196,7 +196,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
 
 ## <a name="view-spoofed-sender-entries"></a>Afficher les entrées d’expéditeur usurpées
 
@@ -432,7 +432,7 @@ Les entrées suivantes ne sont pas valides :
   - \*.com
   - \*.pdf
 
-- **Caractère générique sur du texte ou sans espacement**:
+- **Caractère générique sur du texte ou sans espacement :**
 
   - \*contoso.com
   - contoso.com\*
@@ -489,4 +489,4 @@ Par exemple, vous ajoutez une entrée d’accès pour la paire de domaines suiva
 - **Domaine**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Seuls les messages provenant *de* ce domaine et de cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.
+Seuls les messages provenant de ce domaine et *de* cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.

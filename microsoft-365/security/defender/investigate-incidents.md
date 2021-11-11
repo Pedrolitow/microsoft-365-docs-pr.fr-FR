@@ -23,18 +23,18 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: f4a29a17bc8c3563779b54b9df594548a02acabd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d8440acdc3dfcf633d0570e259525b7589e7bf8
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646410"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914192"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -44,17 +44,17 @@ Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, 
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l’incident.
 
 Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche.":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
-Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet récapitulatif s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple du volet récapitulatif d’un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple du volet récapitulatif d’un incident." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
-À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les périphériques, les utilisateurs, les enquêtes et les preuves.
+À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
 
 Vous pouvez également ouvrir la page principale d’un incident en sélectionnant le nom de l’incident dans la file d’attente des incidents.
 
@@ -62,7 +62,7 @@ Vous pouvez également ouvrir la page principale d’un incident en sélectionna
 
 La page **Résumé** vous donne un aperçu instantané des principaux éléments à noter concernant l’incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le portail Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Les informations sont organisées dans ces sections.
 
@@ -87,7 +87,7 @@ Sous **l’onglet Alertes,** vous pouvez afficher la file d’attente d’alerte
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exemple de page Alertes pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exemple de page Alertes pour un incident." lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
 Par défaut, les alertes sont classés dans l’ordre chronologique pour vous permettre de voir comment l’attaque s’est joué au fil du temps. Lorsque vous sélectionnez une alerte dans un incident, Microsoft 365 Defender affiche les informations d’alerte spécifiques au contexte de l’incident global. 
 
@@ -95,7 +95,7 @@ Vous pouvez voir les événements de l’alerte, les autres alertes déclenchée
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Exemple de page de détails d’alerte dans un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Exemple de page de détails d’alerte dans un incident." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
 
 La page d’alerte d’incident contient les sections suivantes :
 
@@ -111,28 +111,28 @@ La page d’alerte d’incident contient les sections suivantes :
 
 Toutes les alertes n’auront pas toutes les sous-sections répertoriées dans la section Article **sur l’alerte.**
 
-Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte pour [examiner les alertes.](investigate-alerts.md)
+Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte dans [examiner les alertes.](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
 **L’onglet Appareils** répertorie tous les appareils liés à l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Exemple de page Appareils pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Exemple de page Appareils pour un incident." lightbox="../../media/investigate-incidents/incident-devices.png":::
 
 Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appareil, les données d’annuaire, les alertes actives et les utilisateurs connectés. Sélectionnez le nom de l’appareil pour voir les détails de l’appareil dans l’inventaire des appareils Microsoft Defender pour les points de terminaison. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Exemple de page d’appareils pour Microsoft Defender pour les points de terminaison.":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Exemple de page d’appareils pour Microsoft Defender pour les points de terminaison." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple,  à partir de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
 
 > [!TIP]
-> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le portail Microsoft 365 Defender, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender’analyse sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
 
 ## <a name="users"></a>Utilisateurs
 
 **L’onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 Vous pouvez cocher la coche d’un utilisateur pour voir les détails de la menace, de l’exposition et des informations de contact du compte d’utilisateur. Sélectionnez le nom d’utilisateur pour voir les détails supplémentaires du compte d’utilisateur.
 
@@ -143,19 +143,19 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 **L’onglet Boîtes** aux lettres répertorie toutes les boîtes aux lettres qui ont été identifiées comme faisant partie ou associées à l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Microsoft Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir d’autres détails sur la boîte aux lettres dans la page Explorateur de Microsoft Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
 **L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes automatisées effectuent des actions de correction ou attendent l’approbation par les analystes des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident." lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 Sélectionnez un examen pour accéder à sa page de détails pour obtenir des informations complètes sur l’état de l’examen et de la correction. Si des actions sont en attente d’approbation dans le cadre de l’examen, elles apparaissent dans l’onglet Historique des **actions en** attente. Prendre des mesures dans le cadre de la correction des incidents.
 
-Il existe également un onglet **Graphique d’investigation** qui indique :
+Il existe également un onglet **Graphique d’enquête** qui indique :
 
 - La connexion des alertes aux biens touchés dans votre organisation.
 - Entités liées aux alertes et à la façon dont elles font partie de l’article de l’attaque.
@@ -169,7 +169,7 @@ Pour plus d’informations, voir [Examen et réponse automatisés dans Microsoft
 
 **L’onglet Preuve et réponse** affiche tous les événements pris en charge et entités suspectes dans les alertes de l’incident. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Exemple de page Preuve et réponse pour un incident.":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Exemple de page Preuve et réponse pour un incident." lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
 Microsoft 365 Defender examine automatiquement tous les événements pris en charge par les incidents et les entités suspectes dans les alertes, en vous fournissant des informations sur les messages électroniques, fichiers, processus, services, adresses IP et bien plus encore. Cela vous permet de détecter et de bloquer rapidement les menaces potentielles dans l’incident.
 
@@ -187,13 +187,13 @@ Chacune des entités analysées est marquée avec un verdict (malveillant, suspe
    :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Exemple de lecture des alertes et des Graph page":::
  
 
-2. Ouvrez un volet d’entités, ce qui vous permet d’examiner les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
+2. Ouvrez un volet d’entités, ce qui vous permet de passer en revue les détails de l’entité et d’agir sur des actions de correction, telles que la suppression d’un fichier ou l’isolation d’un appareil.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Exemple de volet d’entités sur la page Graph page" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. Mettez en surbrillant les alertes en fonction de l’entité à laquelle elles sont liées.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrillant d’alerte sur Graph page":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Exemple de mise en surbrillant d’alerte sur Graph page" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>Prochaines étapes
 

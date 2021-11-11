@@ -16,27 +16,27 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 3a2a06b48da1f83e82fd9f1a1293e9484517bd0e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 03cf5cbf209f0884304d541601de58ad748d9e4c
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162373"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914188"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender inclut de puissantes fonctionnalités [d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec plus de possibilité d’échelle.
+Microsoft 365 Defender inclut de puissantes fonctionnalités [d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec une plus grande capacité d’échelle.
 
-Cet article explique comment configurer des enquêtes et des réponses automatisées Microsoft 365 Defender les étapes suivantes :
+Cet article explique comment configurer l’examen et la réponse automatisés Microsoft 365 Defender les étapes suivantes :
 
 1. [Examinez les conditions préalables.](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 2. [Examinez ou modifiez le niveau d’automatisation pour les groupes d’appareils.](#review-or-change-the-automation-level-for-device-groups)
 3. [Examinez vos stratégies de sécurité et d’alerte dans Office 365](#review-your-security-and-alert-policies-in-office-365).
 4. [Assurez-vous Microsoft 365 Defender est allumé.](#make-sure-microsoft-365-defender-is-turned-on)
 
-Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et gérer les actions de correction [dans le centre de actions.](m365d-autoir-actions.md)
+Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et gérer les actions de [correction dans le centre de actions.](m365d-autoir-actions.md)
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>Conditions préalables à l’examen et à la réponse automatisés dans Microsoft 365 Defender
 
@@ -47,8 +47,8 @@ Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et
 |Conditions requises|Détails|
 |---|---|
 |Conditions d’abonnement|L’un de ces abonnements : <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module</li><li>Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Voir [les Microsoft 365 Defender licences requises.](./prerequisites.md#licensing-requirements)|
-|Configuration réseau requise|<ul><li>[Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration)</li></ul>|
-|Windows de l’appareil|<ul><li>Windows 11</li><li>Windows 10, version 1709 ou ultérieure installée (voir Windows [de publication)](/windows/release-information/)</li><li>Les services de protection contre les menaces suivants sont configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Configuration requise pour le réseau|<ul><li>[Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration)</li></ul>|
+|Windows appareil requis|<ul><li>Windows 11</li><li>Windows 10, version 1709 ou ultérieure installée (voir Windows [de publication)](/windows/release-information/)</li><li>Les services de protection contre les menaces suivants sont configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection du contenu des e-mails et des Office de messagerie|[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configuré|
 |Autorisations|Pour configurer des fonctionnalités d’investigation et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité affecté dans Azure Active Directory ( ) ou dans le <https://portal.azure.com> Centre d'administration Microsoft 365 ( <https://admin.microsoft.com> ). <p> Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions.|
 |
@@ -62,7 +62,7 @@ L’application d’enquêtes automatisées et l’action de correction automati
 2. Go to **Paramètres**  >  **Permissions**  >  **Device groups**.
 
 3. Examinez vos stratégies de groupe d’appareils. En particulier, regardez la colonne **de niveau correction.** Nous vous recommandons **d’utiliser Full - corriger les menaces automatiquement**.  Vous devrez peut-être créer ou modifier vos groupes d’appareils pour obtenir le niveau d’automatisation voulu. Pour obtenir de l’aide sur cette tâche, consultez les articles suivants :
-   - [Comment les menaces sont-elles corrigés ?](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
+   - [Comment les menaces sont corrigés](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Créer et gérer des groupes d’appareils](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Passer en revue vos stratégies de sécurité et d’alerte dans Office 365
@@ -90,7 +90,7 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Assurez-vous Microsoft 365 Defender est allumé
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP sur.":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="Comment s’assurer que Microsoft 365 Defender est activé." lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. Connectez-vous au portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
@@ -103,7 +103,7 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 > [!TIP]
 > Vous avez besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Actions de correction dans Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visiter le Centre de notifications](m365d-action-center.md)

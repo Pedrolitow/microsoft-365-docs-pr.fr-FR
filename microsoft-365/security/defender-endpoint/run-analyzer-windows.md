@@ -1,6 +1,6 @@
 ---
 title: Exécuter l’analyse du client sur Windows
-description: Découvrez comment exécuter Microsoft Defender for Endpoint Client Analyzer sur Windows.
+description: Découvrez comment exécuter l’analyseur de client Microsoft Defender for Endpoint sur Windows.
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 172c883ae5572be65903c0b19459c514a39882d0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554683"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914114"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
@@ -58,6 +58,24 @@ En plus des informations ci-dessus, il existe également une option pour collect
 >
 > Sur Windows 8.1, Windows Server 2016 ou des éditions antérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil de connectivité Microsoft Monitoring Agent pour les URL de canal de `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cyber-données.
 
+
+Tous les scripts et modules PowerShell inclus dans l’analyseur sont signés par Microsoft.
+Si des fichiers ont été modifiés d’une manière ou d’une autre, l’analyseur est censé se quitter avec l’erreur suivante :
+
+![Image de l’erreur de l’analyseur client](images/sigerror.png)
+
+
+Si cette erreur s’affiche, la sortie issuerInfo.txt contient des informations détaillées sur la raison de cette erreur et sur le fichier concerné :
+
+![Image des informations sur l’émetteur](images/issuerinfo.png)
+
+
+Exemple de contenu après MDEClientAnalyzer.ps1 modification :
+
+![Image du fichier ps1 modifié](images/modified-ps1.png)
+
+
+
 ## <a name="result-package-contents-on-windows"></a>Contenu du package de résultats sur Windows
 
 > [!NOTE]
@@ -89,7 +107,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - dsregcmd.txt
 
-      Description : Sortie de l’exécution [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
+      Description : sortie de l’exécution [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
 
     - IFEO.txt
 
@@ -139,7 +157,10 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
   - OperationsManager.evtx
 
-    Description : Exportation du journal des événements Microsoft Monitoring Agent’événements
+    Description : exportation du journal des Microsoft Monitoring Agent’événements
+
+
+
 
 ## <a name="see-also"></a>Voir aussi
 

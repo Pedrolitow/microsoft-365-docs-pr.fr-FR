@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a5ce8d049402fc0f1acdd1f47885c29bb4eba0cb
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174410"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914259"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender
 
@@ -41,11 +41,11 @@ Il existe deux types de rôles qui peuvent être utilisés pour accéder aux Mic
 - **Rôles Azure Active Directory (AD) globaux**
 - **Rôles personnalisés**
 
-L’accès aux Microsoft 365 Defender peut être géré collectivement à l’aide de rôles globaux [dans Azure Active Directory (AAD)](m365d-permissions.md)
+L’accès aux Microsoft 365 Defender peut être géré collectivement à l’aide de rôles globaux [Azure Active Directory (AAD)](m365d-permissions.md)
 
 Si vous avez besoin d’une plus grande flexibilité et d’un contrôle accru sur l’accès à des données de produit spécifiques, l’accès Microsoft 365 Defender peut également être géré avec la création de rôles personnalisés via chaque portail de sécurité respectif.  
 
-Par exemple, un rôle personnalisé créé par le biais de Microsoft Defender pour le point de terminaison autoriserait l’accès aux données de produit pertinentes, y compris les données de point de terminaison dans le portail Microsoft 365 Defender. De même, un rôle personnalisé créé par le biais de Microsoft Defender pour Office 365 autoriserait l’accès aux données de produit pertinentes, y compris les données de collaboration & courrier électronique dans le portail Microsoft 365 Defender.
+Par exemple, un rôle personnalisé créé via Microsoft Defender pour le point de terminaison autoriserait l’accès aux données de produit pertinentes, y compris les données de point de terminaison dans le portail Microsoft 365 Defender. De même, un rôle personnalisé créé par le biais de Microsoft Defender pour Office 365 autoriserait l’accès aux données de produit pertinentes, y compris les données de collaboration & courrier électronique dans le portail Microsoft 365 Defender.
 
 Les utilisateurs ayant des rôles personnalisés existants peuvent accéder aux données du portail Microsoft 365 Defender en fonction de leurs autorisations de charge de travail existantes, sans qu’aucune configuration supplémentaire ne soit requise.
 
@@ -72,7 +72,7 @@ Les autorisations et les rôles peuvent également être gérés dans Microsoft 
 3. Sous **l’en-tête Autorisations,** sélectionnez **Rôles.**
 
 > [!NOTE]
-> Cela s’applique uniquement à Defender pour Office 365 et Defender pour le point de terminaison. L’accès aux autres charges de travail doit être effectué dans leurs portails appropriés.
+> Cela s’applique uniquement à Defender pour Office 365 et Defender pour point de terminaison. L’accès aux autres charges de travail doit être effectué dans leurs portails appropriés.
 
 
 ## <a name="required-roles-and-permissions"></a>Rôles et des autorisations requis
@@ -81,14 +81,14 @@ Le tableau suivant décrit les rôles et autorisations requis pour accéder à c
 > [!NOTE]
 > La gestion des incidents nécessite des autorisations de gestion pour tous les produits qui font partie de l’incident.
  
-| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender pour endpoint**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Sécurité des applications cloud** | 
+| **L’un des rôles suivants est requis pour Microsoft 365 Defender**  | **L’un des rôles suivants est requis pour Defender for Endpoint**  | **L’un des rôles suivants est requis pour Defender pour Office 365** | **L’un des rôles suivants est requis pour Sécurité des applications cloud** | 
 |---------|---------|---------|---------|
-| Affichage des données d’examen : <ul><li>Page d’alerte</li> <li>File d’attente des alertes</li> <li>Incidents</li>  <li>File d’attente des incidents</li> <li>Centre de notifications</li></ul>| Afficher les opérations de sécurité des données | <ul><li>Gérer les alertes en affichage seul </li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li> <li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li></ul>  | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
+| Affichage des données d’examen : <ul><li>Page d’alerte</li> <li>File d’attente des alertes</li> <li>Incidents</li>  <li>File d’attente des incidents</li> <li>Centre de notifications</li></ul>| Afficher les opérations de sécurité des données | <ul><li>Gérer les alertes en affichage seul </li> <li>Configuration de l'organisation</li><li>Journaux d’audit</li> <li>Afficher uniquement les journaux d’audit</li> <li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li></ul>  | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
 | Affichage des données de recherche | Afficher les opérations de sécurité des données | <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li> <li>Destinataires en affichage seul</li> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
 | Gestion des alertes et des incidents | Examen des alertes | <ul><li>Gérer des alertes</li> <li>Administrateur de la sécurité</li> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li></ul> |
 | Correction du centre de mise à jour | Actions de correction actives : opérations de sécurité | Rechercher et purger | |
 | Définition de détections personnalisées | Gérer les paramètres de sécurité |<ul><li>Gérer des alertes</li> <li>Administrateur de la sécurité</li></ul> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
-| Analyses de menaces | Données sur les alertes et les incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations TVM :<ul><li>Afficher les données : menaces et gestion des vulnérabilités</li></ul> | Données sur les alertes et les incidents :<ul> <li>Gérer les alertes en affichage seul</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> </ul> Tentatives de courrier électronique empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> | Non disponible pour les utilisateurs MCAS ou MDI |
+| Analyses de menaces | Données d’alertes et d’incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations TVM :<ul><li>Afficher les données : menaces et gestion des vulnérabilités</li></ul> | Données d’alertes et d’incidents :<ul> <li>Gérer les alertes en affichage seul</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d’audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> </ul> Tentatives de courrier électronique empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> | Non disponible pour les utilisateurs MCAS ou MDI |
 
 Par exemple, pour afficher les données de recherche à partir de Microsoft Defender pour le point de terminaison, les autorisations d’opérations de sécurité des données sont requises.  
 
@@ -99,6 +99,7 @@ De même, pour afficher les données de recherche de Microsoft Defender Office 3
 - Administrateur de la sécurité
 - Destinataires en affichage seul
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
+- [Rôles RBAC](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Gérer l’accès aux Microsoft 365 Defender](m365d-permissions.md)
 - [Gérer l’accès administrateur pour MCAS](/cloud-app-security/manage-admins)
