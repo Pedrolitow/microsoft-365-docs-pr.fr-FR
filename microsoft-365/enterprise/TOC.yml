@@ -189,7 +189,7 @@
           href: ../admin/setup/add-domain.md
     - name: Gestion
       items:
-        - name: État d'intégrité du service Microsoft 365
+        - name: "État d'intégrité du service Microsoft\_365"
           href: microsoft-365-service-health.md
         - name: Surveillance d’Exchange Online.
           href: microsoft-365-exchange-monitoring.md
@@ -414,6 +414,18 @@
               href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
+        - name: "Office\_2013"
+          items:
+            - name: "Version d’Office\_2013 pour le bureau"
+              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
+            - name: SharePoint 2013
+              href: upgrade-from-sharepoint-2013.md
+            - name: Lync Server 2013
+              href: upgrade-from-lync-2013.md
+            - name: Project Server 2013
+              href: project-server-2013-end-of-support.md
+            - name: Exchange Server 2013
+              href: exchange-2013-end-of-support.md
 - name: Conformité
   href: ../compliance/index.yml
 - name: Sécurité
@@ -432,7 +444,7 @@
           href: /sharepoint/sharepoint-online
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -454,7 +466,7 @@
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -674,7 +686,7 @@
       href: contoso-networking.md
     - name: Identité
       href: contoso-identity.md
-    - name: Windows 10 Entreprise
+    - name: "Windows\_10 Entreprise"
       href: contoso-win10.md
     - name: Applications Microsoft 365 for entreprise
       href: contoso-o365pp.md
