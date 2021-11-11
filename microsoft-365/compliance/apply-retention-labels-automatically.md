@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 345f9ad748ca108cfa3e153239ef8534c1262bfa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 72037127bf0b89c51a1ba73193e43646d84d4b08
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702760"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883693"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -83,7 +83,7 @@ Les instructions de navigation varient selon que vous utilisez ou non [la gestio
     - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les instructions de l’Assistant pour effectuer la configuration.
     
@@ -297,12 +297,12 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
-Lorsque vous choisissez l’option de classifieur entraînable, vous pouvez sélectionner un classifieur intégré ou un classifieur personnalisé. Les classifieurs intégrés incluent : **CV**, **SourceCode**, **Harcèlement ciblé**, **Blasphème** et la **Menace** :
+Lorsque vous choisissez l'option pour un classificateur entraînable, vous pouvez sélectionner un ou plusieurs classificateurs pré-entraînés ou personnalisés :
 
 ![Sélectionnez un classificateur à entraîner.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. N’utilisez pas ce classifieur intégré et si vous l’utilisez actuellement, vous devez déplacer vos processus métier. Nous vous recommandons d’utiliser les classifieurs intégrés de **Harcèlement ciblée** , de **blasphème** et de **Menace** à la place.
+> Nous supprimons le classificateur pré-entraîné **Langage offensif** car il a produit un nombre élevé de faux positifs. N'utilisez pas ce classificateur et si vous l'utilisez actuellement, nous vous recommandons d'abandonner vos processus d'entreprise et d'utiliser plutôt les classificateurs pré-entraînés **Harcèlement ciblé** , **Profanation** , et **Menace**.
 
 Pour appliquer automatiquement une étiquette à l’aide de cette option, les sites et boîtes aux lettres SharePoint doivent avoir au moins 10 Mo de données.
 
@@ -372,7 +372,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

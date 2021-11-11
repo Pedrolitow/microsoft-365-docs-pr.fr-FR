@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les considérations de déploiement et les questions fréquemment posées concernant la simulation d’attaque et la formation dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704141"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907992"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -45,7 +45,7 @@ Notez que ce problème n’affecte pas Microsoft Edge.
 
 Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par la navigation google [Coffre,](https://support.google.com/chrome/a/answer/7532419) suivez ces instructions de Google pour autoriser l’accès aux URL.
 
-[Reportez-vous à La](attack-simulation-training-get-started.md) formation sur la simulation d’attaque pour obtenir la liste des URL actuellement utilisées par la formation sur la simulation d’attaque.
+[Reportez-vous à La](attack-simulation-training-get-started.md) formation sur la simulation d’attaque pour obtenir la liste des URL actuellement utilisées par la formation sur la simulation d’attaques.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation de hameçonnage et URL d’administrateur bloquées par les solutions proxy réseau et les pilotes de filtre
 
@@ -55,7 +55,7 @@ Les URL de simulation de hameçonnage et les URL d’administrateur peuvent êtr
 - Solutions de pare-feu d’application web (WAF)
 - Pilotes de filtre tiers (par exemple, filtres en mode noyau)
 
-Même si peu de clients ont été bloqués au niveau de cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos périphériques ou filtres de sécurité si nécessaire :
+Même si nous avons vu peu de clients bloqués au niveau de cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos périphériques ou filtres de sécurité si nécessaire :
 
 - URL de hameçonnage simulée, comme décrit dans La mise en place à l’aide de la formation de [simulation d’attaque.](attack-simulation-training-get-started.md)
 - <https://security.microsoft.com/attacksimulator>
@@ -76,7 +76,7 @@ Seuls les utilisateurs non invités valides avec une boîte aux lettres valide s
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Les rapports de formation sur la simulation d’attaques ne contiennent pas de détails sur l’activité
 
-La formation à la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
+La formation sur la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
 
 La recherche dans le journal d’audit est requise par la formation à la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
 
@@ -116,7 +116,7 @@ Les widgets de la page **Vue** d’ensemble fournissent un instantané rapide de
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>Les messages signalés comme hameçonnage par les utilisateurs n’apparaissent pas dans les rapports de simulation
 
-Les rapports de simulation dans la formation sur le simulateur d’attaque fournissent des détails sur l’activité des utilisateurs. Par exemple :
+Les rapports de simulation dans la formation sur le simulateur d’attaque fournissent des détails sur l’activité des utilisateurs. Par exemple :
 
 - Utilisateurs qui ont cliqué sur le lien dans le message.
 - Utilisateurs qui ont donné leurs informations d’identification.
@@ -140,21 +140,21 @@ R : Plusieurs options sont disponibles pour les utilisateurs cibles :
 - Sélectionnez des utilisateurs dans un fichier CSV (une adresse de messagerie par ligne).
 - Azure AD de groupe.
 
-Nous avons constaté que les campagnes où les utilisateurs ciblés sont identifiés par Azure AD groupes sont généralement plus faciles à gérer.
+Nous avons découvert que les campagnes où les utilisateurs ciblés sont identifiés par Azure AD groupes sont généralement plus faciles à gérer.
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q : Existe-t-il des limites dans le ciblage des utilisateurs lors de l’importation à partir d’un CSV ou de l’ajout d’utilisateurs ?
 
 R : la limite pour importer des destinataires à partir d’un fichier CSV ou ajouter des destinataires individuels à une simulation est de 40 000.
 
-Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’aucune limite réelle n’est placée sur le nombre d’utilisateurs individuels.
+Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’une limite réelle n’est pas placée sur le nombre d’utilisateurs individuels.
 
 La gestion d’un fichier CSV de grande taille ou l’ajout de nombreux destinataires individuels peuvent être fastidieux. L’Azure AD groupes de travail simplifie la gestion globale de la simulation.
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>Q : Microsoft fournit-il des charges utiles dans d’autres langues ?
 
-R : Actuellement, 5 charges utiles localisées sont disponibles. Nous avons remarqué que les traductions directes ou automatiques de charges utiles existantes vers d’autres langues entraînent des inexactitudes et une diminution de la pertinence.
+R : Actuellement, plus de 40 charges utiles localisées sont disponibles dans plus de 10 langues : chinois (simplifié), chinois (traditionnel), anglais, français, allemand, italien, japonais, coréen, portugais, russe, espagnol et néerlandais. Nous avons remarqué que les traductions directes ou automatiques de charges utiles existantes vers d’autres langues entraînent des inexactitudes et une diminution de la pertinence.
 
-Cela étant dit, vous pouvez créer votre propre charge utile dans le langage de votre choix à l’aide de l’expérience de création de charge utile personnalisée. Nous vous recommandons également vivement de prendre des charges utiles existantes qui ont été utilisées pour cibler des utilisateurs dans une zone géographique spécifique. En d’autres termes, laissez les attaquants localiser le contenu pour vous.
+Cela étant dit, vous pouvez créer votre propre charge utile dans le langage de votre choix à l’aide de l’expérience de création de charge utile personnalisée. Nous vous recommandons également vivement de récolter les charges utiles existantes qui ont été utilisées pour cibler des utilisateurs dans une zone géographique spécifique. En d’autres termes, laissez les attaquants localiser le contenu pour vous.
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>Q : Comment puis-je basculer vers d’autres langues pour mon portail d’administration et mon expérience de formation ?
 
@@ -182,4 +182,4 @@ R : La remise sensible à la région utilise l’attribut TimeZone de la boîte 
 
 À 9 h 00 le même jour, le message de simulation est envoyé à UserB. Avec la remise de région, le message n’est pas envoyé à UserA le même jour, car l’heure de 9:00 AM Pacifique est 12:00 PM Est. Au lieu de cela, le message est envoyé à UserA à 9 h 00 heure de l’Est le jour suivant.
 
-Ainsi, lors de l’exécution initiale d’une campagne avec la remise en fonction de la région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.
+Ainsi, lors de l’exécution initiale d’une campagne avec une remise de région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.

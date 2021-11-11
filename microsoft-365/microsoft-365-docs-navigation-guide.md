@@ -11,16 +11,16 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934022"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907908"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navigation de documents
 
-Cette rubrique fournit des conseils et des astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
+Cette rubrique fournit quelques conseils et astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
 
 ## <a name="hub-page"></a>Page hub
 
@@ -29,14 +29,6 @@ La page Microsoft 365 hub se trouve à l’endroit et constitue le point d’ent
 Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** dans l’en-tête en haut de chaque page de l’ensemble Microsoft 365 documentation technique suivante :
 
 ![Microsoft 365'en-tête.](media/m365-header-cursor.png)
-
-## <a name="offline-documentation"></a>Documentation hors connexion
-
-Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un fichier PDF où que vous vous trouveriez dans la documentation Microsoft 365 technique.
-
-Si vous souhaitez créer un fichier PDF, sélectionnez le lien Télécharger **pdf** en bas de chaque table des matières.
-
-![Téléchargez PDF.](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>Recherche TOC 
 Sur docs.microsoft.com, vous pouvez effectuer une recherche dans le contenu de la table des matières à l’aide de la zone de recherche de filtre en haut :
@@ -74,6 +66,6 @@ Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même
 
 - [Guide de collaborateur Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Mise en place de la [Microsoft 365 documentation technique.](index.yml)

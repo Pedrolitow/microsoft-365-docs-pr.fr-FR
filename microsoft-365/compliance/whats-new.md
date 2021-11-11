@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
+description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2beb65d3f5d73265df72b1d052dec0d1a9c6e512
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478564"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907788"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -80,7 +80,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="information-barriers"></a>Obstacles aux informations
 
-- [Mise en place de la nouvelle fonctionnalité de prévisualisation](information-barriers-policies.md#step-6-information-barriers-modes-preview) des obstacles à l’information
+- [Mise en place de la nouvelle fonctionnalité de prévisualisation](information-barriers-policies.md#step-6-information-barriers-modes) des obstacles à l’information
 - [Obstacles à l’information Microsoft Teams](/microsoftteams/information-barriers-in-teams) nouvelle fonctionnalité de prévisualisation pour les modes d’obstacles à l’information
 - [Obstacles à l’information OneDrive](/onedrive/information-barriers) nouvelle fonctionnalité de prévisualisation pour les modes d’obstacles à l’information
 - [Obstacles à l’information avec SharePoint online nouvelle](/sharepoint/information-barriers) fonctionnalité de prévisualisation pour les modes d’obstacles à l’information
@@ -101,7 +101,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - Les étiquettes de conteneur prisent désormais en charge les paramètres de lien de partage par défaut à [l’aide des paramètres avancés de PowerShell.](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings)
 - Les tableaux de [fonctionnalités](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) qui listent les versions minimales prise en charge pour l’étiquetage intégré ont désormais des versions pour le canal actuel, le canal Enterprise mensuel et le canal Semi-Annual Enterprise.
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 ### <a name="app-governance"></a>Gouvernance des applications
 - [Entrées étendues pour les informations sur les alertes.](app-governance-anomaly-detection-alerts.md#collection-alerts) De nouvelles entrées ont été ajoutées pour décrire des informations supplémentaires sur les alertes désormais disponibles dans la gouvernance des applications.
@@ -161,14 +161,14 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 ### <a name="compliance--service-assurance"></a>Certification du service & conformité
 
 - [Assurance de service](/compliance/) (mise à jour ; révision trimestrielle des mises à jour de contenu pour les certifications et déclarations d’applicabilité)
-    - Vérifications d’arrière-plan dans le cloud
+    - Vérifications des arrière-plan dans le cloud
     - Transfert d'& employé
     - Gouvernance
     - Ressources humaines
     - Gestion des incidents
     - Filtrage avant l’embauche
     - Gestion des incidents de sécurité (SIM)
-    - SIM : contenu, éradication et récupération
+    - SIM : containment, éradication et récupération
     - SIM – Analyse des & détection
     - SIM : rapports post-incident
     - SIM – Préparation
@@ -176,20 +176,20 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="data-classification"></a>Classification des données
 
-- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur de discrimination entra nements.
+- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur entra nements entra mentables.
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
-- [Découvrez comment Microsoft 365 protection contre](endpoint-dlp-learn-about.md) la perte de données de point de terminaison a ajouté des conseils mis à jour sur l’activité des fichiers Toujours auditer pour les appareils.
+- [Découvrez comment Microsoft 365 protection contre la](endpoint-dlp-learn-about.md) perte de données de point de terminaison a ajouté des conseils mis à jour sur l’activité de fichier Toujours auditer pour les appareils.
 - [Mise en place du scanneur](dlp-on-premises-scanner-get-started.md) local de protection contre la perte de données mis à jour pour la version GA.
-- [En savoir plus sur Microsoft 365 la](dlp-on-premises-scanner-learn.md) protection contre la perte de données sur site mise à jour pour la version GA.
-- [Utilisez le Microsoft 365 protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
-- [Utilisez des stratégies de protection contre la](dlp-use-policies-non-microsoft-cloud-apps.md) perte de données pour les applications cloud non Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
+- [En savoir plus sur la Microsoft 365 protection contre](dlp-on-premises-scanner-learn.md) la perte de données sur site mise à jour pour la version GA.
+- [Utilisez le Microsoft 365 de protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
+- [Utilisez des stratégies de protection contre](dlp-use-policies-non-microsoft-cloud-apps.md) la perte de données pour les applications cloud non-Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
 - [Examiner les activités de gestion des](insider-risk-management-activities.md) risques internes a ajouté des mises à jour de contenu pour les nouveaux rapports d’activité des utilisateurs et de nouvelles fonctionnalités d’aperçu de plusieurs alertes.
-- [Prise en charge des paramètres](insider-risk-management-settings.md) de gestion des risques internes ajout de mises à jour de contenu pour la nouvelle fonctionnalité RBAC pour choisir les réviseurs pour la fonctionnalité d’aperçu des groupes d’utilisateurs prioritaires.
+- [Prise en charge des paramètres](insider-risk-management-settings.md) de gestion des risques internes ajout de mises à jour de contenu pour les nouvelles fonctionnalités RBAC pour choisir les réviseurs pour la fonctionnalité d’aperçu des groupes d’utilisateurs prioritaires.
 
 ### <a name="privacy-management"></a>Gestion de la confidentialité
 
@@ -231,15 +231,15 @@ Les pages suivantes ont été ajoutées :
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en [charge Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
+- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en charge [Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
 - La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
-- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, pour Exchange d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
+- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, Exchange stratégies d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
 - Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities)
 - Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
 - Les fichiers étiquetés et chiffrés par un nom principal de service (tel que Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [ SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - La [co-création](sensitivity-labels-coauthoring.md) et l’auto-ave ne sont plus limités aux locataires de test et sont désormais pris en charge en production lorsque vous utilisez la version 2105 : 18 juin pour Windows et version 16.50+ pour macOS. Notez que cette fonctionnalité n’est toujours pas prise en charge par iOS et Android et reste en prévisualisation.
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 

@@ -1,6 +1,6 @@
 ---
 title: Démarrer avec le cloisonnement de l’information
-description: Découvrez comment commencer avec les obstacles aux informations.
+description: Découvrez comment commencer avec les obstacles à l’information.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,21 +15,21 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec745f46790ee6d230266f010a9311e1cebb12cc
-ms.sourcegitcommit: 6d470e37b2a1c40c7f31c2365ae654a3c35d7674
+ms.openlocfilehash: 1a9b6a4000b6d96fa8fe60b3abc60ff01676073e
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834101"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907812"
 ---
 # <a name="get-started-with-information-barriers"></a>Démarrer avec le cloisonnement de l’information
 
-Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux ou permettre à des segments spécifiques de communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations pertinentes du secteur et à éviter les conflits d’intérêts potentiels. Pour plus d’informations, voir [En savoir plus sur les obstacles aux informations.](information-barriers.md)
+Avec les obstacles à l’information, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer entre eux ou permettre à des segments spécifiques de communiquer uniquement avec certains autres segments. Les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations du secteur pertinentes et à éviter les conflits d’intérêts potentiels. Pour plus d’informations, voir [En savoir plus sur les obstacles aux informations.](information-barriers.md)
 
 Cet article explique comment configurer des stratégies d’obstacle à l’information. Plusieurs étapes sont nécessaires. Veillez donc à passer en revue l’intégralité du processus avant de commencer à configurer des stratégies d’obstacle à l’information.
 
 > [!TIP]
-> Cet article inclut un exemple [de scénario pour](#example-scenario-contosos-departments-segments-and-policies) vous aider à planifier et définir vos stratégies de obstacle à l’information.
+> Cet article inclut un exemple [de scénario pour](#example-scenario-contosos-departments-segments-and-policies) vous aider à planifier et définir vos stratégies d’obstacle à l’information.
 
 ## <a name="concepts"></a>Concepts
 
@@ -46,12 +46,12 @@ Lorsque vous définissez des stratégies pour les obstacles à l’information, 
 
 | **Étapes** | **Ce qui est impliqué** |
 |:------|:----------------|
-| **Étape 1 :** [s’assurer que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifiez que vous avez les [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>- Vérifier que votre annuaire inclut des données pour segmenter les utilisateurs<br/>- Activer la recherche dans l’annuaire dans l’étendue Microsoft Teams<br/>- Assurez-vous que la journalisation d’audit est allumée<br/>- Assurez-vous qu’aucune stratégie Exchange de carnet d’adresses n’est en place<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur Microsoft Teams (les étapes sont incluses) |
+| **Étape 1 :** [s’assurer que les conditions préalables sont remplies](#step-1-make-sure-prerequisites-are-met) | - Vérifier que vous avez les [licences et autorisations requises](information-barriers.md#required-licenses-and-permissions)<br/>- Vérifier que votre annuaire inclut des données pour segmenter les utilisateurs<br/>- Activer la recherche dans l’annuaire dans l’étendue Microsoft Teams<br/>- Assurez-vous que la journalisation d’audit est allumée<br/>- Assurez-vous qu’aucune stratégie Exchange de carnet d’adresses n’est en place<br/>- Utiliser PowerShell (des exemples sont fournis)<br/>- Fournir le consentement de l’administrateur Microsoft Teams (les étapes sont incluses) |
 | **Étape 2 :** [Segmenter les utilisateurs de votre organisation](#step-2-segment-users-in-your-organization) | - Déterminer les stratégies nécessaires<br/>- Établir une liste de segments à définir<br/>- Identifier les attributs à utiliser<br/>- Définir des segments en termes de filtres de stratégie |
 | **Étape 3 : Définir** [des stratégies de obstacle aux informations](#step-3-define-information-barrier-policies) | - Définir vos stratégies (ne pas encore s’appliquer)<br/>- Choisir parmi deux types (bloquer ou autoriser) |
-| **Étape 4 : Appliquer** des [stratégies de obstacle aux informations](#step-4-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
-| **Étape 5 :** Configuration des obstacles aux informations sur SharePoint [et OneDrive (facultatif)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configurer les obstacles aux informations pour SharePoint et OneDrive |
-| **Étape 6 :** modes [obstacles à l’information (facultatif)](#step-6-information-barriers-modes-preview) | - Mettre à jour les modes d’obstacle aux informations, le cas échéant |
+| **Étape 4 : appliquer** [des stratégies de obstacle aux informations](#step-4-apply-information-barrier-policies) | - Définir des stratégies sur l’état actif<br/>- Exécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
+| **Étape 5 :** [Configuration des obstacles aux informations sur SharePoint et OneDrive (facultatif)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configurer les obstacles aux informations pour SharePoint et OneDrive |
+| **Étape 6 :** modes [obstacles à l’information (facultatif)](#step-6-information-barriers-modes) | - Mettre à jour les modes d’obstacle aux informations, le cas échéant |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>Étape 1 : s’assurer que les conditions préalables sont remplies
 
@@ -62,19 +62,19 @@ En plus des [licences et autorisations requises,](information-barriers.md#requir
   - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- **Recherche dans l’annuaire**: avant de définir la première stratégie d’obstacle aux informations de votre [organisation,](/MicrosoftTeams/teams-scoped-directory-search)vous devez activer la recherche dans l’annuaire Microsoft Teams . Patientez au moins 24 heures après l’activation de la recherche dans l’annuaire dans l’étendue avant de configurer ou de définir des stratégies d’obstacle aux informations.
+- **Recherche dans l’annuaire**: avant de définir la première stratégie d’obstacle aux informations de votre [organisation,](/MicrosoftTeams/teams-scoped-directory-search)vous devez activer la recherche dans l’annuaire Microsoft Teams . Patientez au moins 24 heures après l’activation de la recherche dans l’annuaire dans l’étendue avant de configurer ou de définir des stratégies d’obstacle à l’information.
 
 - **Exchange Online licences**: les stratégies d’obstacles à l’information fonctionnent uniquement si les utilisateurs cibles ont reçu une licence Exchange Online’accès.
 
 - **Vérifiez que l’enregistrement d’audit** est activé : pour rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. L’audit est activé pour les Microsoft 365 par défaut. Certaines organisations peuvent avoir désactivé l’audit pour des raisons spécifiques. Si l’audit est désactivé pour votre organisation, c’est peut-être parce qu’un autre administrateur l’a désactivé. Nous vous recommandons de confirmer qu’il est acceptable de remettre l’audit en marche au terme de cette étape. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- **Aucune stratégie de carnet d’adresses**: avant de définir et d’appliquer des stratégies d’obstacle à l’information, assurez-vous Exchange stratégies de carnet d’adresses ne sont pas en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord à supprimer [vos stratégies de carnet d’adresses.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations **** sont activées et que le carnet [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) d’adresses hiérarchique est activé, tous les utilisateurs qui ne sont pas inclus dans un segment de barrières de l’information voient le carnet d’adresses hiérarchique dans Exchange en ligne.
+- **Aucune stratégie de carnet d’adresses**: avant de définir et d’appliquer des stratégies d’obstacle à l’information, assurez-vous Exchange stratégies de carnet d’adresses ne sont pas en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord [à supprimer vos stratégies de carnet d’adresses.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations **** sont activées et que le carnet [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) d’adresses hiérarchique est activé, tous les utilisateurs qui ne sont pas inclus dans un segment de barrières de l’information voient le carnet d’adresses hiérarchique dans Exchange en ligne.
 
 - **Gérer à l’aide de PowerShell**: actuellement, les stratégies d’obstacle aux informations sont définies et gérées dans le Centre de sécurité & conformité PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et paramètres PowerShell. Vous aurez également besoin du Azure Active Directory module PowerShell.
   - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
   - [Installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2)
 
-- Consentement de l’administrateur pour les obstacles aux informations dans Microsoft Teams : lorsque vos stratégies DE DISTRIBUTION sont en place, ils peuvent supprimer les **utilisateurs** de conformité non-PDF des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
+- Consentement de l’administrateur pour les obstacles aux informations dans Microsoft Teams : lorsque vos stratégies DE DISTRIBUTION sont en place, ils peuvent supprimer les **utilisateurs** de conformité non-PDF des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de garantir que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
 
    1. Conditions [préalables : installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2).
 
@@ -156,7 +156,7 @@ Vous pouvez également définir des segments à l’aide d’un paramètre « no
 
 | Syntaxe | Exemple |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
+| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut tout le monde qui n’est pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
 
 En plus de définir des segments à l’aide de « equals » ou « not equals », vous pouvez définir un segment à l’aide des paramètres « equals » et « not equals ». Vous pouvez également définir des filtres de groupe complexes à l’aide d’opérateurs *logiques AND* *et OR.*
 
@@ -275,11 +275,11 @@ Des ressources sont disponibles pour vous aider à gérer vos stratégies de obs
 
 ## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>Étape 5 : Configuration des obstacles aux informations sur les SharePoint et OneDrive
 
-Si vous configurez des obstacles à l’information pour SharePoint et OneDrive, vous devez activer les obstacles à l’information sur ces services. Vous devez également activer les obstacles à l’information sur ces services si vous configurez des obstacles à l’information pour Microsoft Teams. Lorsqu’une Microsoft Teams est créée, un site SharePoint est automatiquement créé et associé à Microsoft Teams pour l’expérience de fichiers. Les stratégies d’obstacle à l’information ne sont pas honorées sur SharePoint site et les fichiers par défaut.
+Si vous configurez des obstacles à l’information pour SharePoint et OneDrive, vous devez activer les obstacles à l’information sur ces services. Vous devez également activer les obstacles à l’information sur ces services si vous configurez des obstacles à l’information pour Microsoft Teams. Lorsqu’une Microsoft Teams est créée, un site SharePoint est automatiquement créé et associé Microsoft Teams pour l’expérience de fichiers. Les stratégies d’obstacle à l’information ne sont pas honorées sur SharePoint site et les fichiers par défaut.
 
 Pour activer les obstacles à l’information SharePoint et OneDrive, suivez les instructions et les étapes de l’article Utiliser les [obstacles](/sharepoint/information-barriers) à l’information SharePoint’informations.
 
-## <a name="step-6-information-barriers-modes-preview"></a>Étape 6 : Modes d’obstacles à l’information (prévisualisation)
+## <a name="step-6-information-barriers-modes"></a>Étape 6 : Modes d’obstacles à l’information
 
 Les modes peuvent aider à renforcer l’accès, le partage et l’appartenance à Microsoft 365 ressource basée sur le mode DE LA RESSOURCE. Les modes sont pris en charge sur les sites Microsoft 365, Microsoft Teams, OneDrive et SharePoint et sont automatiquement activés dans votre configuration DE gestion d’entreprise nouvelle ou existante.
 
@@ -288,7 +288,7 @@ Les modes DNS suivants sont pris en charge sur les Microsoft 365 suivantes :
 | **Mode** | **Description** | **Exemple** |
 |:-----|:------------|:--------|
 | **Ouvert** | Il n’y a pas de stratégies ou de segments DE LASO associés à la ressource Microsoft 365 ressource. Tout le monde peut être invité à être membre de la ressource. | Un site d’équipe créé pour un événement de groupe pour votre organisation. |
-| **Propriétaire modéré** | La stratégie DNS de la Microsoft 365 ressource est déterminée à partir de la stratégie DE LA RESSOURCE du propriétaire de la ressource. Les propriétaires de ressources peuvent inviter n’importe quel utilisateur à la ressource en fonction de leurs stratégies DEO. Ce mode est utile lorsque votre entreprise souhaite autoriser la collaboration entre les utilisateurs de segment incompatibles modérés par le propriétaire. Seul le propriétaire de la ressource peut ajouter de nouveaux membres selon sa stratégie DNS. | Le vice-président des ressources humaines souhaite collaborer avec les VPs des ventes et de la recherche. Un nouveau site SharePoint qui est définie avec le *mode* PROPRIÉTAIRE DE LA BRANCHE modéré pour ajouter les utilisateurs du segment Ventes et Recherche au même site. Il incombe au propriétaire de s’assurer que les membres appropriés sont ajoutés à la ressource. |
+| **Propriétaire modéré (prévisualisation)** | La stratégie DNS de la Microsoft 365 ressource est déterminée à partir de la stratégie DE LA RESSOURCE du propriétaire de la ressource. Les propriétaires de ressources peuvent inviter n’importe quel utilisateur à la ressource en fonction de leurs stratégies DNS. Ce mode est utile lorsque votre entreprise souhaite autoriser la collaboration entre les utilisateurs de segment incompatibles modérés par le propriétaire. Seul le propriétaire de la ressource peut ajouter de nouveaux membres selon sa stratégie DNS. | Le vice-président des ressources humaines souhaite collaborer avec les VP des ventes et de la recherche. Un nouveau site SharePoint qui est définie avec le *mode* PROPRIÉTAIRE DE LA BRANCHE modéré pour ajouter les utilisateurs du segment Ventes et Recherche au même site. Il incombe au propriétaire de s’assurer que les membres appropriés sont ajoutés à la ressource. |
 | **Implicite** | La stratégie OU les segments DE LA ressource MICROSOFT 365 sont hérités de la stratégie DES membres de la ressource. Le propriétaire peut ajouter des membres tant qu’ils sont compatibles avec les membres existants de la ressource. Il s’agit du mode PAR défaut de la Microsoft Teams. | L’utilisateur du segment Ventes crée une équipe Microsoft Teams pour collaborer avec d’autres segments compatibles dans l’organisation. |
 | **Explicit** | La stratégie DNS de la Microsoft 365 ressource est selon les segments associés à la ressource. Le propriétaire de la ressource ou SharePoint administrateur principal a la possibilité de gérer les segments sur la ressource.  | Site créé uniquement pour que les membres du segment Ventes collaborent en associant le segment Ventes au site.   |
 
