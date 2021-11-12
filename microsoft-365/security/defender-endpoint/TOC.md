@@ -271,6 +271,7 @@
 #### [Configurer les fonctionnalités de la réduction de la surface d’attaque](configure-attack-surface-reduction.md)
 #### [En savoir plus sur les règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
+#### [Déployer des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment.md)
 #### [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
 #### [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 #### [Personnaliser les règles de réduction de la surface d’attaque](customize-attack-surface-reduction.md)

@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
-description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement à la protection des points de terminaison.
+description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement de protection des points de terminaison.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: overview
 ms.date: 10/29/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4881d1ca4d8b6ca12dbb7c6c273328e515a503ac
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49ab3b0cfcdf32bd152b7f2a8cc2b3dd7986665
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704875"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940559"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -59,11 +59,11 @@ Defender pour endpoint Plan 1 (prévisualisation) inclut les fonctionnalités su
 Les sections suivantes fournissent plus de détails sur ces fonctionnalités. 
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender pour Endpoint Plan 1 (prévisualisation).
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
 
 ## <a name="next-generation-protection"></a>Protection de nouvelle génération
 
-La protection nouvelle génération inclut une protection antivirus et anti-programme malveillant robuste. Avec la protection nouvelle génération, vous obtenez les droits suivants : 
+La nouvelle génération de protection inclut une protection antivirus et anti-programme malveillant robuste. Avec la protection nouvelle génération, vous obtenez les droits suivants : 
 
 - Protection antivirus en temps réel, heuristique et basée sur le comportement 
 - Protection cloud, qui inclut la détection et le blocage quasi instantanés des menaces nouvelles et émergentes 
@@ -77,10 +77,10 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 
 | Fichier/Périphérique | Opération | Description |
 |:---|:---|:---|
-| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
-| File | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
-| File | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur les appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
+| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
+| Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur des appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 
 Pour en savoir plus, consultez les articles suivants :
 
@@ -89,7 +89,7 @@ Pour en savoir plus, consultez les articles suivants :
 
 ## <a name="attack-surface-reduction"></a>Réduction de la surface d'attaque
 
-Les surfaces d’attaque de votre organisation sont tous les endroits où vous êtes vulnérable aux cyberattaques. Avec Defender for Endpoint Plan 1 (prévisualisation), vous pouvez réduire vos surfaces d’attaque en protégeant les appareils et les applications utilisés par votre organisation. Les fonctionnalités de réduction de la surface d’attaque incluses dans Defender for Endpoint Plan 1 (aperçu) sont décrites dans les sections suivantes.
+Les surfaces d’attaque de votre organisation sont tous les endroits où vous êtes vulnérable aux cyberattaques. Avec Defender for Endpoint Plan 1 (prévisualisation), vous pouvez réduire vos surfaces d’attaque en protégeant les appareils et les applications utilisés par votre organisation. Les fonctionnalités de réduction de la surface d’attaque incluses dans Defender for Endpoint Plan 1 (prévisualisation) sont décrites dans les sections suivantes.
 
 - [Règles de réduction de la surface d’attaque](#attack-surface-reduction-rules)
 - [Atténuation des ransomware](#ransomware-mitigation)
@@ -115,7 +115,7 @@ Pour plus d’informations, voir Utiliser les règles de réduction [de la surfa
 
 ### <a name="ransomware-mitigation"></a>Atténuation des ransomware
 
-Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation des ransomware. L’accès contrôlé aux dossiers permet uniquement aux applications de confiance d’accéder aux dossiers protégés sur vos points de terminaison. Les applications sont ajoutées à la liste des applications de confiance en fonction de leur prévalence et de leur réputation. Votre équipe des opérations de sécurité peut également ajouter ou supprimer des applications de la liste des applications de confiance.
+Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ransomware. L’accès contrôlé aux dossiers permet uniquement aux applications de confiance d’accéder aux dossiers protégés sur vos points de terminaison. Les applications sont ajoutées à la liste des applications de confiance en fonction de leur prévalence et de leur réputation. Votre équipe des opérations de sécurité peut également ajouter ou supprimer des applications de la liste des applications de confiance.
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
@@ -136,7 +136,7 @@ Pour en savoir plus, consultez [la protection web.](web-protection-overview.md)
 
 ### <a name="network-protection"></a>Protection réseau
 
-Grâce à la protection réseau, vous pouvez empêcher votre organisation d’accéder à des domaines dangereux qui pourraient héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. 
+Grâce à la protection du réseau, vous pouvez empêcher votre organisation d’accéder à des domaines dangereux qui pourraient héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. 
 
 Pour en savoir plus, [consultez Protéger votre réseau.](network-protection.md)
 
@@ -168,13 +168,13 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>Rapports
 
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 
 - La page **d’accueil** inclut des cartes pour afficher en un coup d’œil les utilisateurs ou appareils à risque, le nombre de menaces détectées et les alertes/incidents qui ont été créés.
 - La section **Incidents & alertes** répertorie tous les incidents qui ont été créés suite à des alertes déclenchées. Les alertes et les incidents sont générés lorsque des menaces sont détectées sur plusieurs appareils.
-- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de l’action sous **l’onglet** Historique.
+- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de actions sous **l’onglet** Historique.
 - La section **Rapports** inclut des rapports qui indiquent les menaces détectées et leur état. 
 
 Pour en savoir plus, [consultez La mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation).](mde-plan1-getting-started.md)
