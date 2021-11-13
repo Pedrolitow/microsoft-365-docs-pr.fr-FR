@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: ebf088126b89a94dbae2def79ec9dcc380627b75
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fbd6ffa3f0e9167c98d6e950a971254e7c21a988
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702772"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950712"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -37,7 +37,7 @@ Les modèles de stratégie DLP sont pré-triés en quatre catégories :
 - Ceux qui peuvent détecter et protéger les types **d’informations** financières.
 - Ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales.**
 - Ceux qui peuvent détecter et protéger les types **d’informations de** confidentialité.
-- Modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
+- Modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’une des autres ne répond pas aux besoins de votre organisation.
 
 Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles qu’ils couvrent. 
 
@@ -45,7 +45,7 @@ mise à jour : 23/06/2021
 
 |Catégorie| Modèle | SIT |
 |---------|---------|---------|
-|Financier| Données financières en Australie| - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte bancaire australie](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
+|Financier| Données financières en Australie| - [Code SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte bancaire australie](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |Financier| Données financières pour le Canada |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> -  [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
 |Financier| Données financières pour la France |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |Financier| Données financières en Allemagne |- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de carte de crédit de l’UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
@@ -59,17 +59,17 @@ mise à jour : 23/06/2021
 |Financier| U.S. Federal Trade Commission (FTC) Consumer Rules|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro de routage ABA](sensitive-information-type-entity-definitions.md#aba-routing-number)|
 |Financier| U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [Numéro de passeport des États-Unis/du Royaume-Uni](sensitive-information-type-entity-definitions.md#us--uk-passport-number) </br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number)|
 |Financier| U.S. Gramm-Leach-Bliley Act (GLBA)|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [Numéro d’identification du contribuable individuel (ITIN) des États-Unis](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
-|Santé et médical| Australia Health Records Act (HRIP Act) Enhanced |- [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
-|Santé et médical| Australia Health Records Act (HRIP Act)|- [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
+|Santé et médical| Australia Health Records Act (HRIP Act) Enhanced |- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
+|Santé et médical| Australia Health Records Act (HRIP Act)|- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de compte médical australie](sensitive-information-type-entity-definitions.md#australia-medical-account-number)|
 |Santé et médical| Canada Health Information Act (HIA) |- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Santé et médical| Canada Personal Health Information Act (PHIA)Pér.|- [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Santé et médical| Canada Personal Health Act (PHIPA)Pér. |- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Santé et médical| U.K. Access to Medical Reports Act|- [Numéro de service de santé national du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [Numéro d’assurance national (NINO) du Royaume-Uni](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |Santé et médical| U.S. Health Insurance Act (HIPAA) Enhanced|</br> - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) |
 |Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
-|Confidentialité| Amélioration de la loi sur la confidentialité en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
+|Confidentialité| Amélioration de la loi sur la protection de la vie privée en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
 |Confidentialité| Australia Privacy Act|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
-|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
+|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
 |Confidentialité| Canada Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number)</br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Confidentialité| Canada Personal Information Protection Act (PIPA)|- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Confidentialité| Canada Personal Information Protection and Electronic Documents Act (PIPEDA)|- [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number) </br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
@@ -80,7 +80,7 @@ mise à jour : 23/06/2021
 |Confidentialité| Germany Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire allemand](sensitive-information-type-entity-definitions.md#germany-drivers-license-number) </br> - [Numéro de passeport allemand](sensitive-information-type-entity-definitions.md#germany-passport-number)| 
 |Confidentialité| Israel Personally Identifiable Information (PII) Data|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)| 
 |Confidentialité| Israel Protection of Privacy|- [Numéro d’identification national Israël](sensitive-information-type-entity-definitions.md#israel-national-identification-number)</br> - [Numéro de compte bancaire Israël](sensitive-information-type-entity-definitions.md#israel-bank-account-number)|
-|Confidentialité| Données d’informations d’identification personnelle (PII) améliorées pour le Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
+|Confidentialité| Données d’informations d’identification personnelle (PII) du Japon améliorées|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)</br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number)</br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)|
 |Confidentialité| Japan Personally Identifiable Information (PII) Data|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number) </br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
 |Confidentialité| Protection améliorée des informations personnelles au Japon|- [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [Numéro de passeport Japon](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [Numéro de permis de conduire Japon](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)| 
 |Confidentialité| Japan Protection of Personal Information|- [Numéro d’enregistrement du résident japonais](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [Numéro d’assurance sociale Japon (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
@@ -102,14 +102,14 @@ mise à jour : 23/06/2021
 Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
 
 
-|Lieu  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
+|Emplacement  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
 |---------|---------|---------|---------|
 |Exchange en ligne |groupe de distribution | data-in-motion| Non |
 |SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
 |Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données en cours d’utilisation|Non|
 |conversation et messages de canal Teams     | compte ou groupe de distribution |data-in-motion </br> données en cours d’utilisation |  Non       |
 |Microsoft Cloud App Security (MCAS)   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Mise en place de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour le point de terminaison DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
+|Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Mise en place de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour la Protection des informations](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Mise en place du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
@@ -125,14 +125,14 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 > [!IMPORTANT]
 > Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez des sites SharePoint uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs valeurs SIT, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint ***sites*** et Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT. 
 
-|Lieu|  Le contenu peut être défini par SIT|  Le contenu peut être défini comme étiquette de sensibilité|   Le contenu peut être défini par une étiquette de rétention|
+|Emplacement|  Le contenu peut être défini par SIT|  Le contenu peut être défini comme étiquette de sensibilité|   Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
 |Exchange en ligne|Oui| Oui|    Non|
 |SharePoint sites en ligne|   Oui|    Oui|    Oui|
 |Les comptes OneDrive Entreprise|    Oui|    Oui|    Oui|
-|Teams Messages de conversation et de canal |  Oui|    Non| Non|
+|Teams messages de conversation et de canal |  Oui|    Non| Non|
 |Appareils    |Oui |  Oui|    Non|
-|Microsoft Cloud App Security|  Oui|    Oui|    Oui|
+|Microsoft Cloud App Security|  Oui|    Oui|    Oui|
 |Référentiels locaux|  Oui|    Oui|    Non|
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 - How do I tune the behavior of a Policy through the tuning of rules
 - what's in a rule-->
 
-Les règles sont la logique métier des stratégies DLP. Ils sont constitués des :
+Les règles sont la logique métier des stratégies DLP. Elles sont composées des :
 
 - [**Conditions**](#conditions) qui, lorsqu’elles correspondent, déclenchent la stratégie
 - [**Exceptions**](#exceptions) aux conditions
@@ -183,7 +183,7 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 
 ### <a name="conditions"></a>Conditions
 
-Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un élément qui ressemble à ceci et qui est utilisé comme ceci *&#8212;* il s’agit d’une correspondance et le reste des actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
+Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un élément qui ressemble à ceci et qui est utilisé comme ceci *&#8212;* il s’agit d’une correspondance et les autres actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
 
 > [!NOTE]
 > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation. 
@@ -196,11 +196,11 @@ Les conditions sont inclusives et vous permet de définir ce que vous souhaitez 
 - [étiquettes de sensibilité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
-en fonction des [emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
+en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
 
 Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie d’une à neuf, la sit doit avoir lieu au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
 
-La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de** rétention que vous choisissez. 
+La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -274,7 +274,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 ##### <a name="conditions-devices-supports"></a>Conditions que les appareils prend en charge
 
 - Le contenu contient
-- Consultez les [activités de point de terminaison que vous pouvez surveiller et sur](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+- Voir, [Activités de point de terminaison que vous pouvez surveiller et prendre des mesures sur](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### <a name="conditions-microsoft-cloud-app-security-support"></a>Conditions Microsoft Cloud App Security prise en charge
 
@@ -289,7 +289,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 
 #### <a name="condition-groups"></a>Groupes de conditions
 
-Parfois, vous avez besoin d’une règle pour identifier une seule chose, comme tout le contenu qui contient un numéro de sécurité sociale des États-Unis, qui est défini par une seule sit. Toutefois, dans de nombreux scénarios, où les types d’éléments que vous essayez d’identifier sont plus complexes et, par conséquent, plus difficiles à définir, une plus grande flexibilité dans la définition des conditions est nécessaire.
+Parfois, vous avez besoin d’une règle pour identifier une seule chose, comme tout le contenu qui contient un numéro de sécurité sociale des États-Unis, qui est défini par une seule sit. Toutefois, dans de nombreux scénarios, où les types d’éléments que vous tentez d’identifier sont plus complexes et, par conséquent, plus difficiles à définir, il est nécessaire d’avoir plus de souplesse dans la définition des conditions.
 
 Par exemple, pour identifier le contenu soumis à la réglementation des États-Unis sur le Health Insurance Act (HIPAA), vous devez rechercher :
   
@@ -363,7 +363,7 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 
-#### <a name="teams-chat-and-channel-messages"></a>Teams Conversation et messages de canal
+#### <a name="teams-chat-and-channel-messages"></a>Teams chat et messages de canal
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 
@@ -372,7 +372,7 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 - Auditer ou restreindre les activités sur Windows appareils
 
 > [!NOTE]
-> Les appareils offrent la possibilité **d’auditer** une **activité,** de la bloquer ou de la bloquer avec **le remplacement d’une** activité.
+> Les appareils offrent la possibilité **d’auditer** une **activité,** de bloquer une activité ou de bloquer une activité **avec** remplacement d’une activité.
 
 L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)que vous pouvez surveiller et prendre des mesures sur . 
 
@@ -407,7 +407,7 @@ AND
 
 seront disponibles.
 
-Par exemple, si vous sélectionnez Exchange périphériques en tant qu’emplacements, ces actions seront disponibles :
+Par exemple, si vous sélectionnez Exchange et Appareils comme emplacements, ces actions seront disponibles :
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Auditer ou restreindre les activités sur Windows appareils
@@ -418,7 +418,7 @@ Si vous sélectionnez Périphériques et Microsoft Cloud App Security, ces actio
 - Auditer ou restreindre les activités sur Windows appareils
 - Restreindre les applications tierces
 
-L’application ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant l’option Tester **en premier.** Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
+Le fait qu’une action prenne effet ou non dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la première **option** Tester. Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -451,7 +451,7 @@ Les options de configuration des notifications utilisateur et des conseils de st
 - Exchange
 - SharePoint
 - OneDrive
-- Teams Conversation et canal
+- Teams chat et canal
 - MCAS
 
 
@@ -463,9 +463,9 @@ Vous pouvez activer/désactiver les notifications des utilisateurs pour différe
 
 et personnalisez le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
 
-![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
+![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
 
-Si vous avez sélectionné périphériques uniquement, vous obtenez toutes les options disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et Canal et MCAS, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
+Si vous avez sélectionné périphériques uniquement, vous obtenez les mêmes options que pour Exchange, SharePoint, OneDrive, Teams Chat et Canal et MCAS, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
@@ -476,7 +476,7 @@ Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces param
 |nom du fichier     |%%FileName%% | Contoso doc 1 |
 |nom du processus     |%%ProcessName%% | Word |
 |nom de la stratégie     |%%PolicyName%%| Contoso hautement confidentiel |
-|action | %%AppliedActions%% | pasting document content from the clipboard to another app |
+|action | %%AppliedActions%% | pasting document content from the Clipboard to another app |
 
 **%%AppliedActions%%** remplace ces valeurs dans le corps du message :
 
@@ -566,7 +566,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport inclut des informations sur l’élément qui a été satisfait, le contenu réel qui correspond à la règle et le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
 
-DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations d’incident à la gestion des risques internes, vous devez définir le niveau de gravité des rapports **d’incident** sur **Élevé**.
+DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations sur les incidents à la gestion des risques internes, vous devez définir le niveau de gravité des rapports **d’incident** sur **Élevé**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
@@ -578,7 +578,7 @@ La DLP analyse les messages électroniques différemment de SharePoint en ligne 
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler le traitement supplémentaire des règles en cas de correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
+Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler d’autres traitements de règles s’il existe une correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
 
 ## <a name="see-also"></a>Voir aussi
 

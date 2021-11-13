@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer SAP SuccessFactors en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9ea98339d1a73a6bc8c7a8e2d1588329c99bb2ca
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747265"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950760"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>Configurer SAP SuccessFactors en tant que source de contenu pour Apprentissage Microsoft Viva
 
@@ -58,7 +58,7 @@ Cet article vous montre comment configurer SAP SuccessFactors en tant que source
     
     [![Image des paramètres PARTNER_EXTRACT configuration. ](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
-Une fois ces étapes effectuées dans le portail SuccessFactors, vous devez terminer l’installation dans le Centre d'administration Microsoft 365.
+Une fois que vous avez effectué ces étapes dans le portail SuccessFactors, vous devez terminer l’installation dans le Centre d'administration Microsoft 365.
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurer dans votre Centre d'administration Microsoft 365
 
@@ -67,7 +67,7 @@ Une fois ces étapes effectuées dans le portail SuccessFactors, vous devez term
 
 1. Accédez à [votre Centre d'administration Microsoft 365](https://admin.microsoft.com).
 
-2. Accédez aux  >  **Paramètres’organisation.** Recherchez *Learning* et activez SAP SuccessFactors à partir des options.
+2. Accédez à **Paramètres**  >  **paramètres de l’organisation.** Recherchez *Learning* et activez SAP SuccessFactors à partir des options.
 
 3. Remplissez les détails de configuration :
 
@@ -81,18 +81,18 @@ Une fois ces étapes effectuées dans le portail SuccessFactors, vous devez term
 
     **Chemin d’accès** au dossier : accédez à configuration du système de configuration du système d’administration d’application d’administration   >    >    >    >  **LMS PARTNER_EXTRACT**. Obtenir la valeur de la `defaultFtp.path` propriété.
 
-    URL hôte du client : il **s’agit** de l’URL de domaine BizX. Vous pouvez l’obtenir à partir de votre URL de connexion BizX. Par exemple, si votre URL de connexion BizX `organization.successfactors.com/sf/start/#/login` est l’URL d’hôte est `organization.successfactors.com` .
+    URL hôte du client : il **s’agit** de l’URL de domaine BizX. Vous pouvez l’obtenir à partir de votre URL de connexion BizX. Par exemple, si votre URL de connexion BizX `organization.successfactors.com/sf/start/#/login` est alors l’URL d’hôte est `organization.successfactors.com` .
 
-    URL de destination Learning client : vous pouvez **l’obtenir** à partir de l’URL du module de domaine d’apprentissage. Par exemple, si l’URL du domaine d’apprentissage est `organization.scdemo.successfactors.com/learning/...` l Learning URL de destination est `organization.scdemo.successfactors.com` .
+    **URL de destination Learning client**: vous pouvez l’obtenir à partir de l’URL du module de domaine d’apprentissage. Par exemple, si l’URL du domaine d’apprentissage est `organization.scdemo.successfactors.com/learning/...` l Learning URL de destination est `organization.scdemo.successfactors.com` .
 
     **Clé privée PGP**: clé privée PGP pour le déchiffrement, qui est la section complète entre BEGIN PGP PRIVATE KEY BLOCK et END PGP PRIVATE KEY BLOCK. Vous devez copier la clé exactement telle qu’elle a été générée . ne supprimez pas les nouveaux caractères de ligne.
 
-    **Phrase clé privée PGP**: vous devez obtenir cette valeur auprès de votre administrateur informatique ou de l’équipe qui fournit votre clé PGP.
+    Phrase clé privée **PGP**: vous devez obtenir cette valeur auprès de votre administrateur informatique ou de l’équipe qui fournit votre clé PGP.
 
     **ID d’entreprise**: connectez-vous à votre portail SuccessFactors. Sélectionnez votre icône de profil, puis **sélectionnez Afficher la version Paramètres**. Vous pouvez afficher votre ID d’entreprise ici.
 
     ![Image de l’icône de profil avec Afficher la version Paramètres sélectionnée.](../media/learning/sf-3.png)
-        
+
     ![Image du volet Paramètres de version.](../media/learning/sf-1.png)
 
 4. Sélectionnez **Enregistrer** pour activer le contenu SuccessFactors dans Apprentissage Microsoft Viva. Il peut y avoir un délai avant que le contenu ne soit disponible dans Learning.
@@ -101,10 +101,7 @@ Une fois ces étapes effectuées dans le portail SuccessFactors, vous devez term
 > Les cours SuccessFactors commenceront à apparaître dans Learning dans les 7 jours suivant la réussite de l’installation.
 
 >[!Note]
-> Tous les utilisateurs au sein d’une organisation pourront découvrir tous les cours spécifiques au client, mais ils pourront uniquement accéder aux cours qu’ils ont accès et y utiliser. La découverte de contenu spécifique à l’utilisateur est prévue pour les prochaines sorties.
-
->[!NOTE]
->Les métadonnées du client sont stockées de manière centralisée dans nos magasins de données et non dans des magasins de données spécifiques à la région.
+> Tous les utilisateurs d’une organisation pourront découvrir tous les cours spécifiques au client, mais ils pourront uniquement accéder aux cours qu’ils ont accès et y accéder. La découverte de contenu spécifique à l’utilisateur est prévue pour les prochaines sorties.
 
 >[!NOTE]
 >Actuellement, tous les utilisateurs au sein d’une organisation peuvent découvrir tous les cours spécifiques au client, mais ils pourront uniquement utiliser les cours qu’ils ont accès. La découverte de contenu spécifique à l’utilisateur basée sur les rôles et les autorisations est prévue pour les prochaines sorties.

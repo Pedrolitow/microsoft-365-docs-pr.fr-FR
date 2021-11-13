@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer Go1 en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: f327d17e1ca1095a0cceadefc5a649d2acab2f03
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1adef6275be2a8656eaad9a7f47805d13299e3c7
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702152"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950532"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Go1 en tant que source de contenu pour Apprentissage Microsoft Viva
 
@@ -36,7 +36,7 @@ Go1 permet d’accéder à des milliers de cours à partir de principaux fournis
 >[!NOTE]
 >Vous devez avoir des autorisations d’administrateur dans Go1 pour effectuer ces étapes.
 
-Tout d’abord, vous devez suivre ces étapes pour créer une application dans votre portail Go1. Cette application génère vos clés d’API, que vous pouvez utiliser pour vous authentifier auprès de Go1 et effectuer des requêtes à l’API.
+Tout d’abord, vous devez suivre ces étapes pour créer une application dans votre portail Go1. Cette application génère vos clés d’API, que vous pouvez utiliser pour vous authentifier auprès de Go1 et effectuer des demandes à l’API.
 
 1. Connectez-vous à votre portail Go1 en tant qu’administrateur.
 
@@ -47,7 +47,7 @@ Tout d’abord, vous devez suivre ces étapes pour créer une application dans v
 5. Entrez un nom pour l’application, par exemple« My-go1-titre-integration ».
 6. Entrez une URL de retour d’appel, par exemple, « Mycompany.mygo1.com ».
 7. Enregistrez les informations que vous avez entrées.
-8. Vos informations s’affichent avec le secret masqué. Sélectionnez les ellipses (**...**), puis **sélectionnez Afficher la secret** pour afficher la secret.
+8. Vos informations s’affichent avec la secret masquée. Sélectionnez les ellipses (**...**), puis **sélectionnez Afficher la secret** pour afficher la secret.
 9. Copiez les valeurs suivantes :
 
     - **URL hôte du client :** Il s’agit de l’URL de votre portail Go1. Elle ressemblera à « https://mycompany.mygo1.com ».
@@ -65,6 +65,3 @@ En savoir plus [sur la création d’une application](https://help.go1.com/en/ar
 2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning, puis activez Go1 dans le panneau.
 3. Remplissez les détails de configuration que vous avez récupérés à partir de votre portail Go1.
 4. Sélectionnez **Enregistrer** pour activer le contenu Go1 dans Le Learning. L’affichage du contenu dans l’application Learning prend jusqu’à 24 heures.
-
->[!NOTE]
->Les métadonnées du client sont stockées de manière centralisée dans nos magasins de données et non dans des magasins de données spécifiques à la région.

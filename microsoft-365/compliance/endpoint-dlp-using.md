@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792387"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907800"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -54,6 +54,12 @@ Lorsqu'elle est activée, l'**analyse et la protection de classification avancé
 Dans la classification avancée, le contenu est envoyé de l'appareil local aux services cloud pour analyse et classification. Si l'utilisation de la bande passante est un problème, vous pouvez définir une limite dans ce paramètre global qui est appliqué par périphérique sur la quantité pouvant être utilisée sur une période de 24 heures. Si vous définissez une limite d'utilisation de la bande passante et qu'elle est dépassée, DLP arrête d'envoyer le contenu de l'utilisateur vers le cloud et la classification des données se poursuit localement sur l'appareil. Lorsque l'utilisation cumulée de la bande passante tombe en dessous de la limite de 24 heures glissantes, la communication avec les services cloud reprendra.
 
 Si l'utilisation de la bande passante n'est pas un problème, vous ne pouvez pas définir de limite et autoriser une utilisation illimitée.
+
+Ces versions Windows la prise en charge de l’analyse et de la protection avancées de la classification :
+
+- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 versions 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
 > L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.

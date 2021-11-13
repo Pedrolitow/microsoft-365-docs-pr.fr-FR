@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer Skillsoft en tant que source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: dd01f6e36ec9c9f0c15b1769f24a13359b2177f7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ddf2079f799ef9dc9a39547ce8c73c779494632b
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703858"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950748"
 ---
 # <a name="configure-skillsoft-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Skillsoft en tant que source de contenu pour Apprentissage Microsoft Viva
 
@@ -31,9 +31,9 @@ Cet article vous montre comment configurer Skillsoft en tant que source de conte
 
 ## <a name="configure-in-your-skillsoft-portal"></a>Configurer dans votre portail Microsoft
 
-Vous devrez joindre votre équipe de compte Skillsoft pour activer l’intégration Learning vos utilisateurs. Votre équipe de compte vous fournira également l’ID d’organisation et la clé de compte de service. Vous en aurez besoin pour l’étape suivante.
+Vous devrez joindre votre équipe de compte Skillsoft pour activer l’intégration Learning vos utilisateurs. Votre équipe de compte vous fournira également l’ID d’organisation et la clé de compte de service. Vous aurez besoin de ces détails pour l’étape suivante.
 
-Vous pouvez contacter le support [Technique pour](https://support.skillsoft.com/percipio/) obtenir de l’aide sur la prise en contact avec votre équipe de compte. Si vous n’êtes pas encore un client, vous pouvez discuter de vos options en [contactant Directement Skillsoft.](https://www.skillsoft.com/about/contact-us)
+Vous pouvez contacter le support [Technique pour](https://support.skillsoft.com/percipio/) obtenir de l’aide sur la prise en contact avec votre équipe de compte. Si vous n’êtes pas encore un client, vous pouvez [contacter Skillsoft directement](https://www.skillsoft.com/about/contact-us) pour discuter de vos options.
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurer dans votre Centre d'administration Microsoft 365
 
@@ -47,6 +47,3 @@ Vous pouvez contacter le support [Technique pour](https://support.skillsoft.com/
 3. Remplissez les détails de configuration que vous avez obtenus de votre équipe de compte Microsoft.
 
 4. Sélectionnez **Enregistrer** pour enregistrer les détails de configuration et terminer le processus d’installation.
-
->[!NOTE]
->Les métadonnées du client sont stockées de manière centralisée dans nos magasins de données et non dans des magasins de données spécifiques à la région.

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Découvrez comment configurer Telle source de contenu d’apprentissage pour Apprentissage Microsoft Viva.
-ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cb13822e2f4a0a2eccf31e2c03f2ac5e109dd843
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755786"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950496"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurer Le nom d’une source de contenu pour Apprentissage Microsoft Viva
 
@@ -46,7 +46,7 @@ Cet article vous montre comment configurer Lasa comme source de contenu d’appr
 
 ### <a name="client-id-and-client-secret"></a>ID client et secret client
 
-1. Sur le même écran que celui où vous avez obtenu l’URL hôte, copiez l’ID client et la secret client s’ils ont déjà été générés.
+1. Sur le même écran que l’URL hôte, copiez l’ID client et la secret client s’ils ont déjà été générés.
 
 2. Si la question secrète client n’existe pas encore, sélectionnez le **bouton GÉNÉRER** pour la générer.
 
@@ -63,14 +63,11 @@ Vous devez terminer la configuration dans votre Centre d'administration Microsof
 2. Accédez **à Paramètres,** puis **aux paramètres org.** Sélectionnez Contrôle Learning et activez Cloud Dans le panneau.
 3. Remplissez les détails que vous avez obtenus à partir de votre portail DeNte.
     >[!NOTE]
-    >Le nom d’affichage est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
+    >Le nom complet est le nom du carrousel sous lequel le contenu d’apprentissage de Contrôle apparaîtra pour les utilisateurs de votre organisation dans Le Learning. Si vous n’entrez pas de nouveau nom, il affiche le nom par défaut « Cloud Cloud ».
 4. Sélectionnez **Enregistrer** pour activer le contenu Cloud de Cloud dans Apprentissage Microsoft Viva. L’affichage du contenu dans Le Learning peut prendre jusqu’à 24 heures.
 
 > [!Note]
 > Pour l’intégration de Cloud Cloud, vous devez avoir un domaine sabacloud.com dans votre URL d’hôte. Si vous avez un autre nom de domaine, vous devez lever un ticket de support pour autoriser votre nom de domaine.
-
->[!NOTE]
->Les métadonnées du client sont stockées de manière centralisée dans nos magasins de données et non dans des magasins de données spécifiques à la région.
 
 >[!NOTE]
 >Actuellement, tous les utilisateurs au sein d’une organisation peuvent découvrir tous les cours spécifiques au client, mais ils pourront uniquement utiliser les cours qu’ils ont accès. La découverte de contenu spécifique à l’utilisateur basée sur les rôles et les autorisations est prévue pour les prochaines sorties.

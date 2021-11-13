@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: L’extension de la conformité Microsoft étend la surveillance et le contrôle des activités des fichiers et des actions de protection au navigateur Google Chrome
-ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179186"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950664"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>En savoir plus sur l’extension de la conformité Microsoft.
 
@@ -46,7 +46,7 @@ activité |description  | actions de stratégie prises en charge|
 
 ## <a name="deployment-process"></a>Processus de déploiement
 1. [Prise en main des points de terminaison de protection contre la perte de données](endpoint-dlp-getting-started.md)
-2. [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
+2. [Outils et méthodes d’intégration pour les appareils Windows 10](device-onboarding-overview.md)
 3. [Installer l’extension sur vos appareils Windows 10](dlp-chrome-get-started.md)
 4. [Créer ou modifier des stratégies DLP](create-test-tune-dlp-policy.md) qui limitent le chargement vers un service cloud ou l’accès par des actions de navigateurs non autorisé et les appliquent à vos appareils Windows 10
 
@@ -60,7 +60,7 @@ Consultez [Prise en main de l’extension de la conformité Microsoft](dlp-chrom
 - [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md)
 - [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 - [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
