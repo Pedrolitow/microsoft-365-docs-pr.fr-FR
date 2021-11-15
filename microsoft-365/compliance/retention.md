@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792567"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950592"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -298,6 +298,8 @@ Avantages de l’utilisation des étendues adaptatives :
 - L’appartenance basée sur une requête offre une résilience contre les changements d’entreprise qui peuvent ne pas être reflétés de manière fiable dans l’appartenance à un groupe ou les processus externes qui reposent sur la communication entre les services.
 
 - Une stratégie de rétention unique peut inclure des emplacements pour Microsoft Teams et Yammer, alors que lorsque vous utilisez une étendue statique, ces emplacements nécessitent leur propre stratégie de rétention.
+    
+- Vous pouvez appliquer des paramètres de rétention spécifiques aux boîtes aux lettres inactives. Cette configuration n’est pas possible avec une étendue statique, car au moment de l’attribution de la stratégie, les étendues statiques ne prennent pas en charge l’inclusion spécifique de destinataires avec des boîtes aux lettres inactives.
 
 Avantages de l’utilisation d’étendues statiques :
 

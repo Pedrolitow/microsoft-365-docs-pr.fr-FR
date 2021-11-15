@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: afe6b7c2454a52428e633bca55e72055308a1f74
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: 77f4e4f0312b68941eb4a7421ea0658d925962d9
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825586"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950700"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -163,8 +163,9 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 
 Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
 
-1. [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
-2. [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
+1. [Intégrer Windows 10 ou Windows 11 appareils dans Microsoft 365 vue d’ensemble](device-onboarding-overview.md)
+1. [Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 

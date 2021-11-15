@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: f41dee9b1ca13f319e5dc05fc5f7512bd98a5186
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825550"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914463"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
@@ -130,7 +130,7 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Créer un type d’informations sensibles personnalisé à l’aide d’une classification de correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Types d’informations sensibles personnalisés](./sensitive-information-type-learn-about.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)

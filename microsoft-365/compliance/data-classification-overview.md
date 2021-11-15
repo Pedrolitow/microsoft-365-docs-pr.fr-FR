@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 2e9d9a2581a5a2dd94dbfa32e3105486999f4b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67ceb75fd5062e422121588f7830fcd389202cb5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153125"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914535"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -39,7 +39,7 @@ Vous pouvez également gérer ces fonctionnalités sur la page classification de
 
 - [classifieurs avec capacité d’apprentissage](classifier-learn-about.md)
 - [types d’informations sensibles](sensitive-information-type-learn-about.md)
-- [correspondances exactes des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Explorateur de contenu](data-classification-content-explorer.md)
 - [Explorateur d’activités](data-classification-activity-explorer.md)
 

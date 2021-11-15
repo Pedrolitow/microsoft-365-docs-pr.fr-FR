@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703238"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950508"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -58,7 +58,7 @@ Lorsque vous avez décidé d’utiliser une étendue adaptative ou statique, uti
 
 Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invité à sélectionner le type d’étendue adaptative souhaité. Il existe trois types d’étendues adaptatives différents et chacune prend en charge des attributs ou des propriétés différents :
 
-| Type d’étendue adaptative | Attributs ou propriétés pris en charge |
+| Type d’étendue adaptative | Les attributs ou propriétés pris en charge sont les suivants : |
 |:-----|:-----|
 |**Utilisateurs** : s’applique à :  <br/> E-mail Exchange <br/> Comptes OneDrive <br/> Conversations Teams <br/> Messages d’un canal privé Teams <br/> Messages utilisateur Yammer| Prénom <br/> Nom  <br/>Nom d’affichage <br/> Fonction <br/> Service <br/> Bureau <br/>Rue <br/> Ville <br/>Département ou région <br/>Code postal <br/> Pays ou région <br/> Adresses de messagerie <br/> Alias <br/> Attributs personnalisés Exchange : attributs personnalisés1 : attributs personnalisés15|
 |**Microsoft Office SharePoint Online** : s’applique à :  <br/> Sites Microsoft Office SharePoint Online <br/> Comptes OneDrive |URL du site <br/>Nom du site <br/> Propriétés personnalisées Microsoft Office SharePoint Online : RefinableString00 : RefinableString99 |
@@ -68,6 +68,11 @@ Les noms de propriétés des sites sont basés sur les propriétés gérées par
 
 - **Alias** correspond au nom LDAP **mailNickname**, qui s’affiche comme **e-mail** dans le centre d’administration Azure AD.
 - **Adresses e-mail** correspond au nom LDAP **adresses proxy**, qui s’affiche sous la forme **adresse proxy** dans le centre d’administration Azure AD.
+
+Les attributs et propriétés répertoriés dans la table peuvent être facilement spécifiés lorsque vous configurez une étendue adaptative à l’aide du générateur de requêtes simple. Les attributs et propriétés supplémentaires sont pris en charge avec le générateur de requêtes avancé, comme décrit dans la section suivante.
+
+> [!TIP]
+> Pour plus d’informations sur l’utilisation du générateur de requêtes avancé, voir le webinaire suivant : Création de requêtes avancées pour les utilisateurs et les groupes avec des étendues de [stratégie adaptative](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea).
 
 Une stratégie unique de rétention peut avoir une ou plusieurs étendues adaptatives.
 
@@ -120,6 +125,12 @@ Avant de configurer votre étendue adaptative, utilisez la section précédente 
     - **n’aime pas** (comparaison de chaînes
     
     Vous pouvez [valider ces requêtes avancées](#validating-advanced-queries)indépendamment de la configuration de l’étendue.
+    
+    > [!TIP]
+    > Vous devez utiliser le générateur de requêtes avancé si vous souhaitez exclure des boîtes aux lettres inactives. Ou inversement, ciblez simplement les boîtes aux lettres inactives. Pour cette configuration, utilisez la propriété OPATH *IsInactiveMailbox*:
+    > 
+    > - Pour exclure les boîtes aux lettres inactives, assurez-vous que la requête inclut : `(IsInactiveMailbox -eq "False")`
+    > - Pour cibler uniquement les boîtes aux lettres inactives, spécifiez : `(IsInactiveMailbox -eq "True")`
 
 3. Créez autant d’étendues adaptatives que nécessaire. Vous pouvez sélectionner une ou plusieurs étendues adaptatives lorsque vous créez votre stratégie pour la rétention.
 
@@ -198,9 +209,17 @@ L’emplacement **Courrier Exchange** prend en charge la rétention du courrier 
 
 Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** .
 
-Lorsque vous utilisez une étendue de stratégie statique et appliquez les paramètres de rétention à **tous les destinataires**, toutes les.[boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md) sont incluses. Toutefois, si vous modifiez cette valeur par défaut et configurez [inclusions ou exclusions spécifiques](#a-policy-with-specific-inclusions-or-exclusions), les boîtes aux lettres inactives ne sont pas prises en charge et les paramètres de rétention ne sont pas appliqués ou exclus pour ces boîtes aux lettres.
+Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](create-and-manage-inactive-mailboxes.md) peuvent être incluses ou non :
 
-Si vous choisissez des destinataires à inclure ou exclure avec une étendue de stratégie statique, vous pouvez sélectionner des groupes de distribution et des groupes de sécurité à extension messagerie comme moyen efficace de sélectionner plusieurs destinataires au lieu de les sélectionner un par un. Lorsque vous utilisez cette option, en arrière-plan, ces groupes sont automatiquement développés au moment de la configuration pour sélectionner les boîtes aux lettres des utilisateurs du groupe. Si l’appartenance de ces groupes change ultérieurement, votre stratégie de rétention existante n’est pas automatiquement mise à jour.
+- Les étendues de stratégie statique incluent les boîtes aux lettres inactives lorsque vous utilisez la configuration par défaut Tous les **destinataires,** mais ne sont pas pris en charge pour des [inclusions ou des exclusions spécifiques.](#a-policy-with-specific-inclusions-or-exclusions) Toutefois, si vous incluez ou excluez un destinataire qui possède une boîte aux lettres active au moment où la stratégie est appliquée et que la boîte aux lettres devient inactive par la suite, les paramètres de rétention continuent d’être appliqués ou exclus.
+
+- Les étendues de stratégie adaptative incluent les boîtes aux lettres inactives par défaut. Vous pouvez contrôler ce comportement à l’aide du générateur de requêtes avancé et de la propriété OPATH *IsInactiveMailbox* :
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+Si vous utilisez une étendue de stratégie statique et choisissez des destinataires à inclure ou à exclure, vous pouvez sélectionner des groupes de distribution et des groupes de sécurité à messagerie comme moyen efficace de sélectionner plusieurs destinataires au lieu de les sélectionner un par un. Lorsque vous utilisez cette option, en arrière-plan, ces groupes sont automatiquement développés au moment de la configuration pour sélectionner les boîtes aux lettres des utilisateurs du groupe. Si l’appartenance à ces groupes change ultérieurement, votre stratégie de rétention existante n’est pas automatiquement mise à jour, contrairement aux étendues de stratégie adaptative.
 
 Si vous souhaitez en savoir plus sur les éléments de boîte aux lettres inclus et exclus lors de la configuration des paramètres de rétention d’Exchange, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 

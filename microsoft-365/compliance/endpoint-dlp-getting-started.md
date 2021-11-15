@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 1ab4eb4ebd1dbba220ca4fea496b1b9c5ea82f43
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: e29db57c42081349064fd690c5c9fcebee0f8045
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825574"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950652"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
 Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités Microsoft 365 de protection contre la perte de données (DLP) que vous pouvez utiliser pour découvrir et protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md). Pour en savoir plus sur la DLP du Point de terminaison , consultez [Découvrir la protection contre la perte de données](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10, Windows 11 et macOS *(préversion)* exécutant Catalina 10.15 et versions ultérieures. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
+Microsoft Endpoint DLP vous permet de surveiller [Windows 10, et Windows 11 intégrés](device-onboarding-overview.md), ainsi que [ les appareils MacOS intégrés *(préversion)*](device-onboarding-macos-overview.md) exécutant Catalina 10.15 et versions ultérieures. Une fois qu’un appareil est intégré, DLP détecte quand des éléments sensibles sont utilisés et partagés. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour vous assurer qu’ils sont utilisés et protégés correctement, et pour éviter tout comportement risqué susceptible de les compromettre.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -46,175 +46,216 @@ Avant de commencer à utiliser point de terminaison DLP, vous devez confirmer vo
 - Microsoft 365 E5, Protection des informations et gouvernance
 - Microsoft 365 A5, Protection des informations et gouvernance
 
-### <a name="permissions"></a>Autorisations
+pour obtenir des détails complets sur les licences, consultez [Conseils Microsoft 365 sur les licences pour Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
-Pour activer la gestion des appareils, le compte que vous utilisez doit être membre de l’un de ces rôles :
+### <a name="configure-proxy-on-the-windows-10-or-windows-11-device"></a>Configurer le proxy sur l’appareil Windows 10 ou Windows 11
 
-- Administrateur global
-- Administrateur de la sécurité
-- Administrateur de mise en conformité
+Si vous effectuez l’intégration d’appareils Windows 10 ou Windows 11, vérifiez que l’appareil peut communiquer avec le service DLP cloud. Pour plus d’informations, consultez [Configurer le proxy d’appareil et les paramètres de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
-Si vous voulez utiliser un compte personnalisé pour afficher les paramètres de gestion des appareils, celui-ci doit se trouver dans l’un de ces rôles :
+## <a name="windows-10-and-windows-11-onboarding-procedures"></a>Procédures d’intégration Windows 10 et Windows 11
 
-- Administrateur global
-- Administrateur de mise en conformité
-- Administrateur des données de mise en conformité
-- Lecteur général
+Pour obtenir une présentation générale de l’intégration des appareils Windows, consultez :
 
-Si vous voulez utiliser un compte personnalisé pour accéder à la page d’intégration/déclassement, celui-ci doit se trouver dans l’un de ces rôles :
+- [Intégrer des appareils Windows 10 et Windows 11 dans la vue d’ensemble Microsoft 365](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
-- Administrateur global
-- Administrateur de mise en conformité
+Pour obtenir des conseils spécifiques sur l’intégration des appareils Windows, consultez :
 
-Si vous voulez utiliser un compte personnalisé pour activer/désactiver la surveillance de l’appareil, celui-ci doit se trouver dans l’un de ces rôles :
+Rubrique | Description
+:---|:---
+[intégrer des appareils Windows 10 ou 11 à l’aide de stratégie de groupe](device-onboarding-gp.md) | Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils.
+[intégrer des appareils Windows 10 ou 11 à l’aide de Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Vous pouvez utiliser Microsoft Endpoint Configuration Manager (current branch) version 1606 ou Microsoft Endpoint Configuration Manager (current branch) version 1602 ou antérieure pour déployer le package de configuration sur les appareils.
+[intégrer des appareils Windows 10 ou 11 à l’aide des outils de Gestion des appareils mobiles](device-onboarding-mdm.md) | Utilisez les outils de Gestion des appareils mobiles ou Microsoft Intune pour déployer le package de configuration sur l’appareil.
+[intégrer des appareils Windows 10 ou 11 à l’aide d’un script local](device-onboarding-script.md) | Découvrez comment utiliser le script local pour déployer le package de configuration sur des points de terminaison.
+[Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](device-onboarding-vdi.md) | Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
-- Administrateur global
-- Administrateur de mise en conformité
+## <a name="macos-onboarding-procedures"></a>Procédures d’intégration macOS
 
-Les données du point de terminaison DLP peuvent être affichées dans [l’Explorateur d’activités](data-classification-activity-explorer.md). Il existe quatre rôles qui accordent l’autorisation à l’Explorateur d’activités, le compte que vous utilisez pour accéder aux données doit être membre de l’un d’eux.
+Pour obtenir une présentation générale de l’intégration des appareils macOS, consultez :
+ 
+- [Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
 
-- Administrateur global
-- Administrateur de mise en conformité
-- Administrateur de la sécurité
-- Administrateur des données de mise en conformité
+Pour obtenir des conseils spécifiques sur l’intégration d’appareils macOS, consultez :
 
-### <a name="prepare-your-windows-1011-endpoints"></a>Préparez vos points de terminaison Windows 10/11
+Rubrique | Description
+:---|:---
+|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Pour les appareils macOS gérés via Intune
+|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Pour les appareils macOS gérés via JAMF Pro
+|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
-Assurez-vous que les appareils Windows que vous prévoyez de déployer Endpoint DLP répondent à ces exigences.
+Une fois qu’un appareil est intégré, il doit être visible dans la liste des appareils et commencer à signaler l’activité d’audit à l’Explorateur d’activités.
 
-1. Doit exécuter Windows 10 x64 build 1809, Windows 11 ou version ultérieure.
+<!--### Permissions
 
-1. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623.
+To enable device management, the account you use must be a member of any one of these roles:
 
-   > [!NOTE]
-   > Aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows mais la [protection en temps réel et le moniteur de comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
+- Global admin
+- Security admin
+- Compliance admin
 
-1. Les mises à jour suivantes sont installées sur les appareils Windows 10
+If you want to use a custom account to view the device management settings, it must be in one of these roles:
 
-   > [!NOTE]
-   > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
+- Global admin
+- Compliance admin
+- Compliance data admin
+- Global reader
 
-   - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
-   - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
-   - Pour Windows 10 version 2004 : KB4568831, KB4577063
-   - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063
+If you want to use a custom account to access the onboarding/offboarding page, it must be in one of these roles:
 
-1. Tous les appareils doivent être l’un de ceux-ci :
+- Global admin
+- Compliance admin
 
-   - [Jointure Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-   - [Jonction Azure AD Hybride](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-   - [Inscrit à AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
+If you want to use a custom account to turn on/off device monitoring, it must be in one of these roles:
 
-1. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium). Si vos appareils utilisent le navigateur Chrome, vous pouvez installer l’[Extension de conformité Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) pour appliquer des actions de stratégie pour le chargement dans l’activité cloud.
+- Global admin
+- Compliance admin
 
-1. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la protection contre la perte de données de point de terminaison qui classe le contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
+Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
-1. Si vous avez des terminaux qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour le DLP de terminal](endpoint-dlp-configure-proxy.md).
+- Global admin
+- Compliance admin
+- Security admin
+- Compliance data admin -->
 
-## <a name="prepare-your-macos-devices-preview"></a>Préparer vos appareils macOS (préversion)
+<!-- ### Prepare your Windows 10/11 endpoints
 
-Consultez [Intégrer des appareils macOS dans la vue d’ensemble Microsoft 365 (préversion)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+Make sure that the Windows devices that you plan on deploying Endpoint DLP to meet these requirements.
 
-## <a name="onboarding-windows-10-devices-into-device-management"></a>Intégration d’appareils Windows 10 dans la gestion des appareils
+1. Must be running Windows 10 x64 build 1809, Windows 11, or later.
 
-Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
-
-Lorsque vous voulez intégrer des appareils qui n’ont pas encore été intégrés, vous devez télécharger et déployer les scripts appropriés sur ces appareils. Suivez la procédure [d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
-
-Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ceux-ci apparaissent déjà dans la liste des périphériques gérés. Suivez la procédure [Appareils intégrés à Microsoft Defender pour point de terminaison](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).
-
-### <a name="onboarding-devices"></a>Intégration des appareils
-
-Dans ce scénario de déploiement, vous intégrerez des appareils qui n'ont pas encore été intégrés et vous souhaitez simplement surveiller et protéger les éléments sensibles contre le partage involontaire sur les appareils Windows 10 ou Windows 11.
-
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
-
-2. Sélectionner **Paramètres** > **Intégration de l'appareil**.
+1. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
    > [!NOTE]
-   > Bien que l’activation de l’intégration des appareils dure généralement environ 60 secondes, patientez jusqu’à 30 minutes avant de contacter le support Microsoft.
+   > None of Windows Security components need to be active, you can run Endpoint DLP independent of Windows Security status, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
 
-3. Sélectionner **Appareils** pour ouvrir la liste **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
+1. The following Updates are installed on Windows 10 devices
 
-4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
+   > [!NOTE]
+   > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
 
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
+   - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+   - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+   - For Windows 10 2004 - KB4568831, KB4577063
+   - For devices running Office 2016 (and not any other Office version) - KB4577063
+
+1. All devices must be one of these:
+
+   - [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+1. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium). If your devices use the Chrome browser, you can install the [Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) to enforce policy actions for the upload to cloud activity.
+
+1. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
+
+1. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+
+## Prepare your macOS devices (preview)
+
+See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)-->
+
+<!--## Onboarding Windows 10 and Windows 11 devices into device management
+
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
+
+If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+
+### Onboarding devices
+
+In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 or Windows 11 devices.
+
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+
+2. Choose **Settings** > **Device onboarding**.
+
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+
+3. Choose **Devices** to open the **Devices** list. The list will be empty until you onboard devices.
+
+4. Choose **Onboarding** to begin the onboarding process.
+
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
    > [!div class="mx-imgBorder"]
-   > ![méthode de déploiement.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   > ![deployment method.](../media/endpoint-dlp-getting-started-3-deployment-method.png)
 
-6. Suivez les procédures appropriées dans [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
 
-    - Intégrer les machines Windows à l'aide de la stratégie de groupe
-    - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
-    - Intégrer les machines Windows à l'aide des outils de gestion des appareils mobiles
-    - Intégrer des machines Windows à l'aide d'un script local
-    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants dans des scénarios de session unique
+    - Onboard Windows machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows machines using Mobile Device Management tools
+    - Onboard Windows machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
-Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans la liste des appareils et commencer à créer des rapports d’activité d’audit dans l’Explorateur d’activités.
+Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
 > [!NOTE]
-> Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Appareils intégrés à Microsoft Defender pour point de terminaison
+### With devices onboarded into Microsoft Defender for Endpoint
 
-Dans ce scénario, Microsoft Defender pour point de terminaison est déjà déployé et des points de terminaison y sont signalés. Tous ces points de terminaison s’affichent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans le point de terminaison DLP pour étendre la couverture à l’aide de la [procédure d’intégration d’appareils](endpoint-dlp-getting-started.md#onboarding-devices).
+In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
+2. Open the Compliance Center settings page and choose **Enable device monitoring**.
 
-3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir apparaître la liste des appareils qui signalent déjà à Microsoft Defender pour point de terminaison.
+3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
 
    > [!div class="mx-imgBorder"]
-   > ![gestion des appareils.](../media/endpoint-dlp-getting-started-2-device-management.png)
+   > ![device management.](../media/endpoint-dlp-getting-started-2-device-management.png)
 
-4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
+4. Choose **Onboarding** if you need to onboard additional devices.
 
-5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 
-6. Suivez les procédures appropriées dans [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
-    - Intégrer les machines Windows à l'aide de la stratégie de groupe
-    - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
-    - Intégrer les machines Windows à l'aide des outils de gestion des appareils mobiles
-    - Intégrer des machines Windows à l'aide d'un script local
-    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link takes you to a landing page where you can access Microsoft Defender for Endpoint procedures that match the deployment package you selected in step 5:
+    - Onboard Windows machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows machines using Mobile Device Management tools
+    - Onboard Windows machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
 
-Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans le tableau des **Appareils** et commencer à créer des rapports d’activité d’audit dans l’**Explorateur d’activités**.
+Once done and endpoint is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
 
 > [!NOTE]
->Cette expérience est sous l’application de la licence. Sans la licence requise, les données ne sont pas visibles ni accessibles.
+>This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes DLP de point de terminaison dans le tableau de bord de Gestion des alertes DLP
 
-1. Ouvrez la page Protection contre la perte de données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> sélectionnez Alertes.
+### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
+1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Affichage de données DLP de point de terminaison dans l’Explorateur d’activités
+2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
+### Viewing Endpoint DLP data in activity explorer
 
-2. Reportez-vous aux procédures décrites dans [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) pour accéder aux données de vos appareils de point de terminaison et les filtrer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+
+2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## Next steps
 
-Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
+Now that you have onboarded devices and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
-- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>Voir aussi
+## See also
 
-- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
-- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md)
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
-- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
-- [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
-- [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Outils et méthodes d'intégration pour les machines Windows](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD appareils joints](/azure/active-directory/devices/concept-azure-ad-join)
-- [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Get started with Activity explorer](data-classification-activity-explorer.md)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Onboarding tools and methods for Windows machines](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+-->

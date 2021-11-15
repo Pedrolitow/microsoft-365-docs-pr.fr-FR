@@ -26,6 +26,34 @@
       href: plan-for-security-and-compliance.md
     - name: Extensibilité de la conformité
       href: compliance-extensibility.md
+- name: Fonctionnalités inter-solutions
+  items:
+    - name: Intégrer les appareils Windows 10 et Windows 11
+      items:
+        - name: Intégrer les appareils Windows 10 et Windows 11 dans une vue d’ensemble de Microsoft 365
+          href: device-onboarding-overview.md
+        - name: Intégrer les appareils Windows 10 et Windows 11 via une stratégie de groupe
+          href: device-onboarding-gp.md
+        - name: Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
+          href: device-onboarding-mdm.md
+        - name: Intégrer des appareils Windows 10 et Windows 11 à l’aide de Configuration Manager
+          href: device-onboarding-sccm.md
+        - name: Intégrer les appareils Windows 10 et Windows 11 en utilisant un script local
+          href: device-onboarding-script.md
+        - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+          href: device-onboarding-vdi.md
+    - name: Intégrer les appareils macOS (préversion)
+      items:
+        - name: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
+          href: device-onboarding-macos-overview.md
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune (aperçu)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro (aperçu)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Gérer les risques internes
   items:
     - name: Solutions de risque interne Microsoft 365
@@ -124,6 +152,8 @@
           items:
             - name: En savoir plus sur les types d’informations sensibles
               href: sensitive-information-type-learn-about.md
+            - name: En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
+              href: sit-learn-about-exact-data-match-based-sits.md
             - name: Création d’une empreinte numérique de document
               href: document-fingerprinting.md
             - name: Découvrez les entités nommées (aperçu).
@@ -132,14 +162,22 @@
           items:
             - name: 'Démarrage avec des types d’informations sensibles personnalisés : centre de conformité'
               href: create-a-custom-sensitive-information-type.md
+            - name: Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Exporter les données sources pour le type d’informations sensibles basé sur la correspondance exacte des données
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: Créer le schéma pour les types d’informations sensibles basés sur des correspondances de données exactes
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: Hacher et charger la table de source d’informations sensibles pour les données exactes correspondant aux types d’informations sensibles
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: Créer des données exactes correspondant au type d’informations sensibles/au package de règles
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: Tester un type d’informations sensibles correspondant exactement aux données
+              href: sit-get-started-exact-data-match-test.md
         - name: Utiliser des types d’informations sensibles
           items:
             - name: Personnaliser un type d’informations sensibles intégré
               href: customize-a-built-in-sensitive-information-type.md
-            - name: Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte
-              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-            - name: Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
-              href: sit-edm-wizard.md
             - name: Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
               href: sit-modify-edm-schema-configurable-match.md
             - name: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
@@ -154,6 +192,10 @@
               href: create-a-keyword-dictionary.md
             - name: Modifier un dictionnaire de mots clés
               href: sit-modify-keyword-dictionary.md
+            - name: Gérer votre schéma de correspondance exacte des données
+              href: sit-use-exact-data-manage-schema.md
+            - name: Actualiser votre fichier de table source d’informations sensibles
+              href: sit-use-exact-data-refresh-data.md
             - name: Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
               href: named-entities-use.md
         - name: Référence de type d’informations sensibles
@@ -305,36 +347,12 @@
               href: dlp-on-premises-scanner-get-started.md
             - name: Prise en main des points de terminaison de protection contre la perte de données
               href: endpoint-dlp-getting-started.md
-            - name: Configurer les paramètres de proxy et de connexion Internet pour la protection contre la perte de données de point de terminaison
-              href: endpoint-dlp-configure-proxy.md
+            - name: Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
+              href: device-onboarding-configure-proxy.md
             - name: Prise en main de l’extension de la conformité Microsoft
               href: dlp-chrome-get-started.md
             - name: Prise en main du tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-get-started.md
-            - name: Outils et méthodes d'embarquement des dispositifs DLP pour points d'extrémité
-              items:
-                - name: Outils et méthodes d’intégration pour les appareils Windows 10.
-                  href: dlp-configure-endpoints.md
-                - name: Appareils Windows 10 intégrés via une stratégie de groupe
-                  href: dlp-configure-endpoints-gp.md
-                - name: Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
-                  href: dlp-configure-endpoints-mdm.md
-                - name: Appareils Windows 10 intégrés utilisant Configuration Manager
-                  href: dlp-configure-endpoints-sccm.md
-                - name: Intégrer les appareils Windows 10 utilisant un script local
-                  href: dlp-configure-endpoints-script.md
-                - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-                  href: dlp-configure-endpoints-vdi.md
-            - name: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
-              href: device-onboarding-macos-overview.md
-            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune (aperçu)
-              href: device-onboarding-offboarding-macos-intune.md
-            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
-              href: device-onboarding-offboarding-macos-intune-mde.md
-            - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro (aperçu)
-              href: device-onboarding-offboarding-macos-jamfpro.md
-            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
-              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Utiliser la DLP
           items:
             - name: DLP et Microsoft Teams

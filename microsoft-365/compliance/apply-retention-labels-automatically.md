@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 72037127bf0b89c51a1ba73193e43646d84d4b08
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c84add5ddc1b96d2a5ab3dfd713722522211bfa2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883693"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914583"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -181,7 +181,7 @@ Lorsque vous créez des étiquettes de rétention d’application automatique po
 
 ![Modèles de stratégies avec des types d’informations sensibles](../media/sensitive-info-configuration.png)
 
-Pour plus d’informations sur les types d’informations sensibles, voir les [définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md). Actuellement, les [correspondances exactes de données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) et les [empreintes digitales de documents](document-fingerprinting.md) ne sont pas prises en charge pour ce scénario.
+Pour en savoir plus sur les types d’informations de confidentialité, consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actuellement, [les informations sur la correspondance exacte des données en fonction des types d'informations sensibles](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) et [l'empreinte digitale des documents](document-fingerprinting.md) ne sont pas prises en charge pour ce scénario.
 
 Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tous les types d’informations sensibles, et vous pouvez modifier le niveau de confiance et le nombre d’instances. Dans l’exemple de capture d’écran précédent, ces options ont été modifiées afin qu’une étiquette de rétention soit appliquée automatiquement uniquement lorsque :
   

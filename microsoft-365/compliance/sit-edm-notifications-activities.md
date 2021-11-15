@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: En savoir plus sur la création des notifications pour les activités de correspondance de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5dfaf1744d2df82df5598da666937ac3365bf0f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1033b6cd84f84db65f49f95e008e20eada63ca64
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152897"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914595"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Créer des notifications pour les activités de correspondance de données exactes
 
-Lorsque vous [Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) le [journal d’audit](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)crée un certain nombre d'activités. Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) pour créer des notifications qui vous avertiront de l’événement :
+Lorsque vous [créez des types d’informations sensibles personnalisés avec correspondance exacte de données (EDM),](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)un certain nombre d’activités sont créées dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) pour créer des notifications qui vous avertiront de l’événement :
 
 - CreateSchema
 - EditSchema
@@ -34,12 +34,15 @@ Lorsque vous [Créer des types d’informations sensibles personnalisés à l’
 - UploadDataFailed
 - UploadDataCompleted
 
+> [!NOTE]
+ La possibilité de créer des notifications pour les activités de EDM n'est disponible que pour les clouds mondiaux et cloud de la communauté du secteur public.
+
 ## <a name="pre-requisites"></a>Conditions préalables
 
 Le compte que vous utilisez doit être l’un des suivants :
 
-- un administrateur général
-- administrateur de conformité
+- Un administrateur global
+- Administrateur de conformité
 - Administrateur Exchange Online
 
 Pour en avoir plus sur les autorisations DLP, consultez la section[Autorisations](data-loss-prevention-policies.md#permissions).
@@ -63,7 +66,7 @@ Si vous souhaitez en savoir plus les licences DLP, consultez la rubrique [Instru
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    pour l’action **UploadDataFailed** vous pouvez exécuter :
+    Pour **uploadDataFailed, vous** pouvez exécuter :
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
@@ -71,5 +74,5 @@ Si vous souhaitez en savoir plus les licences DLP, consultez la rubrique [Instru
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

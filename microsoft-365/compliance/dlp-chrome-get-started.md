@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754350"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950676"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -41,8 +41,8 @@ Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
-- [Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison](endpoint-dlp-configure-proxy.md)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](device-onboarding-overview.md)
+- [Configurer le proxy d’appareil et les paramètres de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>Licences SKU / abonnements
@@ -95,8 +95,8 @@ Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Wi
 
 1. Utilisez les procédures de ces rubriques pour intégrer vos appareils :
     1. [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
-    1. [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
-    1. [Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison](endpoint-dlp-configure-proxy.md)
+    1. [Windows 10 d’intégration et les appareils Windows 11](device-onboarding-overview.md)
+    1. [Configurer le proxy d’appareil et les paramètres de connexion Internet pour Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Configuration de base ordinateur simple Selfhost
 
