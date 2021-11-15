@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 0faeb2039f0a66c014d0bb63e6bbc657206e3e16
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240199"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962590"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des Windows à l’aide de Configuration Manager
 
@@ -33,14 +34,14 @@ ms.locfileid: "60240199"
 - Microsoft Endpoint Configuration Manager branche actuelle
 - System Center 2012 Configuration Manager R2
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 
 Vous pouvez utiliser Configuration Manager pour intégrer des points de terminaison au service Microsoft Defender for Endpoint. 
 
 Vous pouvez utiliser plusieurs options pour intégrer des appareils à l’aide de Configuration Manager :
 - [Intégrer des appareils à l’aide System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
-- [Attachement du client](/mem/configmgr/tenant-attach/)
+- [Joint au client](/mem/configmgr/tenant-attach/)
 
 
 
@@ -132,18 +133,18 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Hors-carte des appareils à l’aide de Configuration Manager
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
-1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
+1. Obtenez le package deboarding à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \>   
     1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
@@ -162,9 +163,9 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de bord Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, [voir Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
-1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
+1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est correctement exécuté) sur les appareils de votre réseau.
 
 2. Vérification de la conformité des appareils avec le service Defender for Endpoint (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 
@@ -178,7 +179,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d’état sous **Statistiques d’achèvement** et **État du contenu.**
 
-    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
+    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur.](images/sccm-deployment.png)
 
@@ -198,10 +199,10 @@ Value: "1"
 
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## <a name="related-topics"></a>Rubriques connexes
-- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
+## <a name="related-topics"></a>Sujets connexes
+- [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

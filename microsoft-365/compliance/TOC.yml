@@ -26,34 +26,6 @@
       href: plan-for-security-and-compliance.md
     - name: Extensibilité de la conformité
       href: compliance-extensibility.md
-- name: Fonctionnalités inter-solutions
-  items:
-    - name: Intégrer les appareils Windows 10 et Windows 11
-      items:
-        - name: Intégrer les appareils Windows 10 et Windows 11 dans une vue d’ensemble de Microsoft 365
-          href: device-onboarding-overview.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 via une stratégie de groupe
-          href: device-onboarding-gp.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
-          href: device-onboarding-mdm.md
-        - name: Intégrer des appareils Windows 10 et Windows 11 à l’aide de Configuration Manager
-          href: device-onboarding-sccm.md
-        - name: Intégrer les appareils Windows 10 et Windows 11 en utilisant un script local
-          href: device-onboarding-script.md
-        - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-          href: device-onboarding-vdi.md
-    - name: Intégrer les appareils macOS (préversion)
-      items:
-        - name: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
-          href: device-onboarding-macos-overview.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune (aperçu)
-          href: device-onboarding-offboarding-macos-intune.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
-          href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro (aperçu)
-          href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
-          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Gérer les risques internes
   items:
     - name: Solutions de risque interne Microsoft 365
@@ -347,12 +319,36 @@
               href: dlp-on-premises-scanner-get-started.md
             - name: Prise en main des points de terminaison de protection contre la perte de données
               href: endpoint-dlp-getting-started.md
-            - name: Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
-              href: device-onboarding-configure-proxy.md
+            - name: Configurer les paramètres de proxy et de connexion Internet pour la protection contre la perte de données de point de terminaison
+              href: endpoint-dlp-configure-proxy.md
             - name: Prise en main de l’extension de la conformité Microsoft
               href: dlp-chrome-get-started.md
             - name: Prise en main du tableau de bord des alertes de protection contre la perte de données
               href: dlp-alerts-dashboard-get-started.md
+            - name: Outils et méthodes d'embarquement des dispositifs DLP pour points d'extrémité
+              items:
+                - name: Outils et méthodes d’intégration pour les appareils Windows 10.
+                  href: dlp-configure-endpoints.md
+                - name: Appareils Windows 10 intégrés via une stratégie de groupe
+                  href: dlp-configure-endpoints-gp.md
+                - name: Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
+                  href: dlp-configure-endpoints-mdm.md
+                - name: Appareils Windows 10 intégrés utilisant Configuration Manager
+                  href: dlp-configure-endpoints-sccm.md
+                - name: Intégrer les appareils Windows 10 utilisant un script local
+                  href: dlp-configure-endpoints-script.md
+                - name: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+                  href: dlp-configure-endpoints-vdi.md
+            - name: Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
+              href: device-onboarding-macos-overview.md
+            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de Microsoft Intune (aperçu)
+              href: device-onboarding-offboarding-macos-intune.md
+            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+              href: device-onboarding-offboarding-macos-intune-mde.md
+            - name: Embarquer et débarquer des appareils macOS dans des solutions de conformité à l'aide de JAMF Pro (aperçu)
+              href: device-onboarding-offboarding-macos-jamfpro.md
+            - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
+              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Utiliser la DLP
           items:
             - name: DLP et Microsoft Teams

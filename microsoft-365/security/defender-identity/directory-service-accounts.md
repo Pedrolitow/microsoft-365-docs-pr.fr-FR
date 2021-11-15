@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202986"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962614"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Compte Microsoft Defender pour les services d’annuaire d’identités dans Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ Cet article explique comment configurer le compte [Microsoft Defender for Identi
 
 Pour connecter le [capteur](sensor-health.md#add-a-sensor) à vos domaines Active Directory, vous devez configurer les comptes des services d’annuaire.
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Paramètres** and then **Identities**.
 
     ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 

@@ -12,20 +12,22 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
-ms.custom: asr
+ms.custom:
+- asr
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5392cf40a0d37e332d7b3bec260ab34e9a3a083e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882440"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962493"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -97,7 +99,7 @@ Chaque fois qu’une règle de réduction de la surface d’attaque est déclenc
 
 En outre, lorsque certaines règles de réduction de la surface d’attaque sont déclenchées, des alertes sont générées.
 
-Les notifications et les alertes générées peuvent être vues dans le portail Microsoft 365 Defender ( ) (anciennement appelé [https://security.microsoft.com](https://security.microsoft.com) [Microsoft 365 Defender](microsoft-defender-security-center.md)).
+Les notifications et les alertes générées peuvent être vues dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a>
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements de réduction de la surface d’attaque et de recherche avancée
 
@@ -113,7 +115,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
-- Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
+- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -176,13 +178,13 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 |---|:---:|---|---|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
-|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
 |[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non pris en charge|[Windows 10 version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) ou version Windows 11|
@@ -227,7 +229,7 @@ Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants p
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -247,7 +249,7 @@ La création de processus enfants malveillants est une stratégie anti-programme
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -269,7 +271,7 @@ LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Mi
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -291,7 +293,7 @@ Cette règle empêche le lancement des types de fichiers suivants à partir du c
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -330,7 +332,7 @@ Le lancement de fichiers exécutables nontrus ou inconnus peut être risqué, ca
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -349,7 +351,7 @@ L’obfuscation de script est une technique courante que les auteurs de programm
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -370,7 +372,7 @@ Bien que cela ne soit pas courant, les applications métier utilisent parfois de
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -390,7 +392,7 @@ Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM est désormais Microsoft Endpoint Configuration Manager)
 
@@ -413,7 +415,7 @@ Cette règle s’applique à Word, Excel et PowerPoint.
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -435,7 +437,7 @@ Cette règle protège contre les attaques d’ingénierie sociale et empêche l�
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from Office communication products (beta)`
@@ -446,12 +448,12 @@ GUID : `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquer la persistance via un abonnement à des événements WMI
 
-Cette règle empêche les programmes malveillants d’utiliser WMI pour atteindre la persistance sur un appareil.
+Cette règle empêche les programmes malveillants d’utiliser WMI à mauvais escient pour obtenir une persistance sur un appareil.
 
 > [!IMPORTANT]
 > Les exclusions de fichiers et de dossiers ne s’appliquent pas à cette règle de réduction de la surface d’attaque.
 
-Les menaces sans fichier utilisent différentes tactiques pour rester masquées, pour éviter d’être vues dans le système de fichiers et pour obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser le référentiel WMI et le modèle d’événement pour rester masqués.
+Les menaces sans fichier emploient diverses tactiques pour rester cachées, éviter d’être vues dans le système de fichiers et obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser à mauvais escient le dépôt WMI et le modèle d’événement pour rester cachées.
 
 Systèmes d’exploitation pris en charge :          
 
@@ -474,7 +476,7 @@ Cette règle empêche l’exécution des processus créés via [PsExec](/sysinte
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -492,7 +494,7 @@ Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichi
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -511,7 +513,7 @@ Office VBA active les appels d’API Win32. Les programmes malveillants peuvent 
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -537,7 +539,7 @@ La règle a tendance à faire preuve de prudence pour empêcher les ransomware.
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)

@@ -18,14 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755372"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963058"
 ---
 # <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
 
@@ -38,9 +39,9 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurer le fournisseur de ressources requis dans l’abonnement Event Hub
 
-1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 1. Select **Subscriptions**  >  **{ Select the subscription the event hub will be deployed to }** Resource  >  **providers**.
-1. Vérifiez que **le fournisseur Microsoft.Informations** est enregistré. Sinon, inscrivez-le.
+1. Vérifiez que **microsoft.Informations** Le fournisseur est inscrit. Sinon, inscrivez-le.
 
 ![Image des fournisseurs de ressources dans Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
@@ -67,7 +68,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 
 1. Créez un espace de noms Event Hub :
 
-    Go **to Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Présoute (requires standard pricing and under features) appropriate for the load you are expecting. Pour plus d’informations, voir [Tarification - Hubs \| d’événements Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    Allez **sur Hubs \>** d’événements Ajouter et sélectionner le niveau de tarification, les unités de débit et l’auto-évaluation (nécessite une tarification standard et sous fonctionnalités) appropriés à la charge que vous attendez. Pour plus d’informations, voir [Tarification - Hubs \| d’événements Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
     > Vous pouvez utiliser un hub d’événements existant, mais le débit et la mise à l’échelle sont définies au niveau de l’espace de noms. Il est donc recommandé de placer un hub d’événements dans son espace de noms.
@@ -99,7 +100,7 @@ Dans cette option, Microsoft 365 Defender créera des Hubs d’événements pour
 > [!NOTE]
 > Si vous utilisez un espace de  noms Event Hub qui ne fait pas partie d’un cluster Event Hub, vous ne pourrez choisir que jusqu’à 10 types d’événements (Tables) à exporter dans chaque Paramètres d’exportation que vous définissez, en raison d’une limite Azure de 10 hubs d’événements par espace de noms Event Hub.
 
-Par exemple :
+Par exemple :
 
 ![Image de l’exemple de Hub d’événements.](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 
@@ -107,11 +108,11 @@ Si vous choisissez cette option, vous pouvez passer à la section [Configurer Mi
 
 Créez un Hub d’événements dans votre espace de noms en sélectionnant **Hubs d’événements** \> **+ Hub d’événements.**
 
-Le nombre de partitions autorise plus de débit via le parallélisme. Il est donc recommandé d’augmenter ce nombre en fonction de la charge que vous attendez. Les valeurs de rétention et de capture des messages par défaut de 1 et De sont recommandées.
+Le nombre de partitions autorise davantage de débit via le parallélisme. Il est donc recommandé d’augmenter ce nombre en fonction de la charge que vous attendez. Les valeurs de rétention et de capture des messages par défaut de 1 et De sont recommandées.
 
 ![Image de créer un Hub d’événements.](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
 
-Pour ce Hub d’événements (et non un espace de noms), vous devez configurer une stratégie d’accès partagé avec envoyer, écouter les revendications. Cliquez sur vos stratégies **d’accès** partagé du Hub d’événements + Ajoutez-le, puis donnez-lui un nom de stratégie (non utilisé ailleurs) et vérifiez \>  \>  **Envoyer** et **écouter.**
+Pour ce Hub d’événements (et non un espace de noms), vous devez configurer une stratégie d’accès partagé avec les revendications Envoyer, Écouter. Cliquez sur vos stratégies **d’accès** partagé du Hub d’événements + Ajoutez-le, puis donnez-lui un nom de stratégie (non utilisé ailleurs) et vérifiez \>  \>  **Envoyer** et **écouter.**
 
 ![Image des stratégies d’accès partagé.](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
 
@@ -119,9 +120,9 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
 ### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>Configurer Microsoft 365 Defender envoyer des tables de messagerie à Splunk via le Hub d’événements
 
-1. Connectez-vous Microsoft 365 Defender avec un compte qui répond à <https://security.microsoft.com> toutes les exigences de rôle suivantes :
+1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> un compte qui répond à toutes les exigences de rôle suivantes :
 
-    - Rôle de collaborateur au niveau de la ressource d’espace de noms *du* Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
+    - Rôle de collaborateur  au niveau de la ressource d’espace de noms du Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
 
     - Rôle d’administrateur global ou d’administrateur de sécurité sur le client lié à Microsoft 365 Defender azure.
 
@@ -139,7 +140,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
     **Nom du Hub** d’événements : si vous avez créé un Hub d’événements à l’intérieur de votre espace de noms Event Hub, collez le nom du Hub d’événements que vous avez enregistré ci-dessus.
 
-    Si vous choisissez de laisser Microsoft 365 Defender créer des hubs d’événements par types d’événements (Tables) pour vous, laissez ce champ vide.
+    Si vous choisissez de laisser Microsoft 365 Defender créer des hubs d’événements par types d’événements (Tables), laissez ce champ vide.
 
     **Types d’événements**: sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont issues de Microsoft Defender pour le point de terminaison (PEPT) et les tables e-mail sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
 
@@ -160,7 +161,7 @@ EmailEvents
 |count
 ```
 
-Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints à tous les autres tableaux. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
+Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints dans toutes les autres tables. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
 
 ![Image de recherche avancée.](../../media/c305e57dc6f72fa9eb035943f244738e.png)
 

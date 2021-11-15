@@ -1,5 +1,5 @@
 ---
-title: Intégration et désintération des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
+title: intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,43 +13,39 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Découvrez comment intégrer et désinséboarder des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (prévisualisation)
-ms.openlocfilehash: 5335ceb47475a633e8f7ba000f8690ca3b9b8b6c
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+description: Découvrez comment intégrer et désinsser des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
+ms.openlocfilehash: 705882af6ebbc7309fb704e215443f807533c6f1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792507"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962662"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Intégration et désintération des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
 
 Vous pouvez utiliser jamf Pro pour intégrer des appareils macOS dans Microsoft 365 solutions de conformité telles que la protection contre la perte de données de point de terminaison.
 
 > [!IMPORTANT]
 > Utilisez cette procédure si ***Microsoft*** Defender pour point de terminaison (MDE) n’est pas déployé sur vos appareils macOS
 
-## <a name="get-registered"></a>S’inscrire
+**S’applique à :**
 
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
-
-**S’applique à :**
-
-- [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Assurez-vous que vos [appareils macOS sont Azure AD joints](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Assurez-vous que vos [appareils macOS sont gérés via JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Assurez-vous que [vos appareils macOS sont gérés via JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - Installer le navigateur Edge v95+ sur vos appareils macOS 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions Microsoft 365 conformité à l’aide de JAMF Pro
 
 1. Vous aurez besoin de ces fichiers pour cette procédure.
 
-|fichier nécessaire pour |source |
+|Fichier nécessaire pour |Source |
 |---------|---------|
-|Package d’intégration    |téléchargé à partir du **package d’intégration** du portail de conformité , nom de *fichier DeviceComplianceOnboarding.plist* |
+|Package d’intégration    |Téléchargé à partir du **package d’intégration** du portail de conformité , nom de *fichier DeviceComplianceOnboarding.plist* |
 |accessibilité |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filtre réseau| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
@@ -67,7 +63,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 >
 >Si l’un de ces fichiers individuels est mis à jour, vous devez télécharger à nouveau le fichier combiné ou le fichier unique mis à jour individuellement.
 
-L’intégration d’un appareil macOS dans des solutions de conformité est un processus en plusieurs phases.
+L’intégration d’un appareil macOS dans des solutions de conformité est un processus multiphase.
 
 ### <a name="get-the-device-onboarding-package"></a>Obtenir le package d’intégration d’appareil
 
@@ -79,7 +75,7 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
  
 1. Choose **Download onboarding package**
  
-1. Extraire le contenu du package d’intégration d’appareil. Dans le **dossier JAMF,** vous devez voir le *fichier DeviceCompcompcompceOnboarding.plist.*
+1. Extraire le contenu du package d’intégration d’appareil. Dans le dossier JAMF, vous devez voir le *fichier DeviceCompcompcompceOnboarding.plist.*
 
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>Créer un profil de configuration Pro JAMF pour le package d’intégration
 
@@ -137,14 +133,14 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>Créer et déployer un profil de configuration pour la mise à jour automatique Microsoft (AutoUpdate)
 
-1. Créez un fichier de configuration Pro JAMF à l’aide de **com.microsoft.autoupdate2.plist**. Reportez-vous [au guide jamf Pro administrateurs.](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Utilisez les valeurs ci-après :
+1. Créez un fichier de configuration Pro JAMF à l’aide de **com.microsoft.autoupdate2.plist.** Reportez-vous [au guide jamf Pro administrateurs.](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Utilisez les valeurs ci-après :
     - Nom : `MDATP MDAV MAU settings`
     - Description : `Microsoft AutoUPdate settings for MDATP for macOS`
     - Catégorie : `none`
     - Méthode de distribution : `install automatically`
     - Niveau : `computer level`
 
-1. In **Application & Custom Paramètres** choose **Télécharger** and **Add**.
+1. Dans **Application & custom Paramètres** choisir **Télécharger** et **Ajouter**.
 
 1. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Télécharger**.
 
@@ -222,7 +218,7 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
 1. Sélectionnez votre ordinateur et cliquez sur l’engrenage en haut, puis choisissez **Gestion de l’ordinateur.**
 
 1. Dans **les packages,** **choisissez +Nouveau**. Entrez les détails ci-après :
-    - Nom complet : laissez vide, car il sera réinitialisé lorsque vous choisirez le fichier .pkg.
+    - Nom d’affichage : laissez vide, car il sera réinitialisé lorsque vous choisirez le fichier .pkg.
     - Catégorie : Aucun (par défaut)
     - Filname : choisissez le fichier, dans ce cas, le `wdav.pkg` fichier.
 
@@ -232,14 +228,14 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
     - **Onglet Options :** laisser les valeurs par défaut
     - **Onglet Limitations :** laisser les valeurs par défaut
 
-1. Cliquez sur **Enregistrer**. Cela télécharge le package vers JAMF Pro.
+1. Cliquez sur **Enregistrer**. Cela télécharge le package dans JAMF Pro.
 
 1. Ouvrez la page **Stratégies.**
 
 1. Choisissez **+Nouveau** pour créer une stratégie.
 
 1. Entrez ces valeurs
-    - **Nom complet**: `MDATP Onboarding200329 v100.86.92 or later`
+    - **Nom d’affichage**: `MDATP Onboarding200329 v100.86.92 or later`
 
 1. Choose **Recurring Check-in**.
 

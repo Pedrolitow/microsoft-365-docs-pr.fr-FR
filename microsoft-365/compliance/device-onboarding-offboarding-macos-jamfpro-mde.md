@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro pour les clients Microsoft Defender pour les points de terminaison (prévisualisation)
-ms.openlocfilehash: 31ff2803a1180d7a43b462f3a78cc52c894f23a6
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792315"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963310"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
@@ -28,21 +28,17 @@ Vous pouvez utiliser jamf Pro pour intégrer des appareils macOS dans Microsoft 
 > [!IMPORTANT]
 > Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour le point de terminaison (MDE) sur vos appareils macOS
 
-## <a name="get-registered"></a>S’inscrire
-
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
-
-**S’applique à :**
+**S’applique à :**
 
 - Clients qui ont déployé MDE sur leurs appareils macOS.
-- [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Assurez-vous que vos [appareils macOS sont Azure AD joints](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Assurez-vous que vos [appareils macOS sont gérés via JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+- Assurez-vous que [vos appareils macOS sont gérés via JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 - Installer le navigateur Edge v95+ sur vos appareils macOS 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Intégrer des appareils dans des solutions Microsoft 365 conformité à l’aide de JAMF Pro
@@ -83,7 +79,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 ### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Mettre à jour le profil de configuration pour accorder un accès disque total
 
-1. Mettez à jour le profil d’accès disque intégral existant avec le **fichier fulldisk.mobileconfig.**
+1. Mettez à jour le profil d’accès disque complet existant avec le **fichier fulldisk.mobileconfig.**
 
 1. Télécharger le **fichier fulldisk.mobileconfig** sur JAMF. Reportez-vous [au déploiement de profils de configuration personnalisés à l’aide](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)de JAMF Pro .
 
@@ -116,7 +112,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-Pour hors-boarder un appareil macOS, suivez les étapes ci-après.
+Pour utiliser un appareil macOS, suivez les étapes ci-après.
 
  1. Sous **MDE Preference Domain Properties,** supprimez les valeurs de ces paramètres
     - Fonctionnalités 

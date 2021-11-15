@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Afficher et examiner les tentatives de hameçonnage de programmes malveillants.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06053911642e455df956de3a17e3e2f448023328
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9eb12db41e48fce814c2c0cb1c934d3fa388086f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203902"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962866"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -45,11 +47,11 @@ Cet article explique comment afficher et examiner les programmes malveillants et
 
 Pour voir les programmes malveillants détectés dans les [**\>**](threat-explorer-views.md#email--malware) e-mails triés par Microsoft 365, utilisez la vue Programmes malveillants de l’Explorateur (ou détections en temps réel). Les programmes malveillants étant l’affichage par défaut, ils peuvent être sélectionnés dès que vous ouvrez l’Explorateur.
 
-1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**; Cet exemple utilise l’Explorateur).
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez **Email & Collaboration** \> **Explorer** (ou **Détections en temps réel ;** Cet exemple utilise l’Explorateur).
 
    À partir de là, commencez à l’affichage, choisissez une période particulière pour [](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)examiner (si nécessaire) et concentrez vos filtres, comme le décrit l’Explorateur.
 
-2. Dans la **liste de** listes listes d’affichage, vérifiez **que** les programmes malveillants de messagerie électronique \>  sont sélectionnés.
+2. Dans la **liste de** listes listes de l’affichage, vérifiez **que** les programmes malveillants de messagerie électronique \>  sont sélectionnés.
 
 3. Cliquez **sur Expéditeur,** puis choisissez Technologie **de** détection \> **de base** dans la liste liste.
 
@@ -67,14 +69,15 @@ Pour voir les programmes malveillants détectés dans les [**\>**](threat-explor
 
 Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le courrier électronique, y compris une liste d’URL qui ont été autorisées, bloquées et bloquées. Pour identifier les URL sur qui vous avez cliqué, [Coffre liens](safe-links.md) doivent être configurés. Veillez à configurer [](set-up-safe-links-policies.md) des stratégies Coffre liens pour la protection au moment du clic et la journalisation des verdicts de clic en Coffre liens.
 
-1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**; Cet exemple utilise l’Explorateur).
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez **Email & Collaboration** \> **Explorer** (ou **Détections en temps réel ;** Cet exemple utilise l’Explorateur).
+, **sélectionnez Email & Collaboration** \> **Explorer** (ou **Détections en temps réel**; Cet exemple utilise l’Explorateur).
 
 2. In the **View** drop down list, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![Afficher le menu de l’Explorateur dans le contexte du hameçonnage.](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez **sur Expéditeur,** puis choisissez **URL** Cliquez \> **sur verdict** dans la liste de liste.
+3. Cliquez **sur Expéditeur,** puis sélectionnez **URL** Verdict \> **de clic** dans la liste liste.
 
 4. Dans les options qui s’affichent,  sélectionnez une ou plusieurs options, telles que Blocage et Blocage, puis cliquez sur Actualiser **(ne** pas actualiser la fenêtre de votre navigateur).
 
@@ -82,11 +85,11 @@ Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le
 
    Le rapport est actualisé pour afficher deux tables d’URL différentes sous **l’onglet URL** sous le rapport :
 
-   - **Les URL principales sont** les URL des messages que vous avez filtrés vers le bas et le nombre d’actions de remise de courrier pour chaque URL. Dans l’affichage de courrier d’hameçonnage, cette liste contient généralement des URL légitimes. Les attaquants incluent un mélange d’URL bonnes et mauvaises dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. Le tableau des URL est trié par nombre total de messages électroniques, mais cette colonne est masquée pour simplifier l’affichage.
+   - **Les URL les plus fréquentes** sont les URL des messages que vous avez filtrés et le nombre d’actions de remise de courrier pour chaque URL. Dans l’affichage de courrier d’hameçonnage, cette liste contient généralement des URL légitimes. Les attaquants incluent un mélange d’URL bonnes et mauvaises dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. Le tableau des URL est trié par nombre total de messages électroniques, mais cette colonne est masquée pour simplifier l’affichage.
 
-   - **Les clics les** plus fréquents Coffre URL wrapped links qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Coffre nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
+   - **Les clics principaux** sont Coffre URL wrapped links qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Coffre nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
 
-   Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement, afin que vous pouvez voir les liens potentiellement malveillants présentés aux utilisateurs et que les utilisateurs ont cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
+   Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement. Vous pouvez ainsi voir quels liens de mauvaises adresses ont été présentés aux utilisateurs et que les utilisateurs ont cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
 
    > [!div class="mx-imgBorder"]
    > ![URL d’explorateur qui ont été bloquées.](../../media/ExplorerPhishClickVerdictURLs.png)
@@ -106,15 +109,15 @@ Dans les volants d’e-mail ou d’URL, les clics principaux et dans nos expéri
 - **Verdict en attente :** La page en attente de détonation s’est présentée à l’utilisateur.
 - **Blocked overridden:** L’utilisateur ne peut pas accéder directement à l’URL. Toutefois, l’utilisateur a overrode le bloc pour accéder à l’URL.
 - **Verdict en attente contourné :** La page de détonation s’est présentée à l’utilisateur. Toutefois, l’utilisateur a overrode le message pour accéder à l’URL.
-- **Erreur :** La page d’erreur s’est présentée à l’utilisateur, ou une erreur s’est produite lors de la capture du verdict.
+- **Erreur :** La page d’erreur s’est présentée à l’utilisateur ou une erreur s’est produite lors de la capture du verdict.
 - **Échec :** Une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur a peut-être cliqué sur l’URL.
 
 ## <a name="start-automated-investigation-and-response"></a>Démarrer un examen et une réponse automatisés
 
 > [!NOTE]
-> Des fonctionnalités automatisées d’examen et de réponse sont disponibles dans *Microsoft Defender pour Office 365 Plan 2* et *Office 365 E5*.
+> Des fonctionnalités d’investigation et de réponse automatisées sont disponibles dans *Microsoft Defender pour Office 365 Plan 2* et *Office 365 E5*.
 
-[L’examen et la réponse automatisés](automated-investigation-response-office.md) peuvent faire gagner du temps et des efforts à votre équipe en matière d’opérations de sécurité pour examiner et réduire les cyberattaques. En plus de configurer des alertes qui peuvent déclencher un manuel de sécurité, vous pouvez démarrer un processus automatisé d’examen et de réponse à partir d’une vue dans l’Explorateur. Pour plus d’informations, [voir l’exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+[L’examen et la réponse automatisés](automated-investigation-response-office.md) peuvent faire gagner du temps et des efforts à votre équipe en matière d’opérations de sécurité pour examiner et réduire les cyberattaques. En plus de configurer des alertes qui peuvent déclencher un manuel de sécurité, vous pouvez démarrer un processus d’examen et de réponse automatisé à partir d’un affichage dans l’Explorateur. Pour plus d’informations, [voir l’exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 
 ## <a name="other-articles"></a>Autres articles
 

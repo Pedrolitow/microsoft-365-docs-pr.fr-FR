@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: f9253a01cc1a971f472733f41a92f0b78beba737
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 51950846b1e445bf9fecb3111e827e1ca9b6d1e4
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753976"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962962"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
@@ -28,13 +29,13 @@ ms.locfileid: "60753976"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
 > Pour utiliser les mises à jour de stratégie de groupe (GP) pour déployer le package, vous devez être sur Windows Server 2008 R2 ou version ultérieure.
@@ -46,7 +47,7 @@ ms.locfileid: "60753976"
 
 Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
-1. Ouvrez le fichier de package de configuration de la gp ( ) que vous avez téléchargé à partir de `WindowsDefenderATPOnboardingPackage.zip` l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
+1. Ouvrez le fichier de package de configuration de la gp ( ) que vous avez téléchargé à partir de `WindowsDefenderATPOnboardingPackage.zip` l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender :</a>
 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
 
@@ -76,7 +77,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 11. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
+12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
@@ -194,12 +195,12 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 ## <a name="offboard-devices-using-group-policy"></a>Appareils de tableau de bord à l’aide de la stratégie de groupe
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
+1. Obtenez le package deboarding à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender :</a>
 
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils  >  **endpoints.**  >    >  
 
@@ -219,7 +220,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
 
 8. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -236,7 +237,7 @@ Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le d�
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
-1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 2. Cliquez sur **Inventaire des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
@@ -247,7 +248,7 @@ Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le d�
 
 Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation.
 
-1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
+1. Après avoir choisi la gp ou en avoir créé une nouvelle, modifiez-la.
 
 2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
 
@@ -283,7 +284,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config de l’application potentielle indésirable.":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config d’une application potentiellement indésirable.":::
 
 :::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potentiel de la config.":::
 
@@ -316,7 +317,7 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

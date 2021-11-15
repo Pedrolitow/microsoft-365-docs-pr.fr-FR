@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender Office 365 Plan 2. Le filtrage des balises est disponible pour les alertes, les rapports et les enquêtes dans Microsoft Defender Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7659ac6e6d53213deb30d37fc53afbb028e6058e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db06c2a60ddc0cfb4d6bb2efce4e030eed6386a5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206456"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962686"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -49,24 +50,24 @@ Après avoir appliqué des balises système ou des balises personnalisées aux u
 - [Soumissions d’administrateurs et d’utilisateurs](admin-submission.md)
 - Pour les comptes prioritaires, [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le Centre d’administration Exchange (EAC).
 
-Cet article explique comment configurer des balises utilisateur dans le portail Microsoft 365 Defender utilisateur. Il n’existe aucune cmdlet dans Microsoft 365 Defender portail pour gérer les balises utilisateur.
+Cet article explique comment configurer des balises utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a> Il n’existe aucune cmdlet dans Microsoft 365 Defender portail pour gérer les balises utilisateur.
 
 Pour voir comment les balises utilisateur font partie de la stratégie visant à protéger les comptes d’utilisateur à fort impact, consultez [recommandations](security-recommendations-for-priority-accounts.md)en matière de sécurité pour les comptes prioritaires dans Microsoft 365 .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://security.microsoft.com/securitysettings/userTags> .
+- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> . Pour aller directement à la page **des balises utilisateur,** ouvrez <https://security.microsoft.com/securitysettings/userTags> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
-  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
+  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
-  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur** de sécurité.
+  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur de** sécurité.
 
   Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans  Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - La gestion des balises utilisateur est contrôlée par les **rôles Lecteur de balises** et **Gestionnaire de balises.**
 
@@ -76,7 +77,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour créer des balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
 2. Dans la page **Balises utilisateur,** cliquez sur ![ Créer une icône de balise.](../../media/m365-cc-sc-create-icon.png) **Créer une balise**.
 
@@ -108,11 +109,11 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour afficher les balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
 2. Dans la page **Balises utilisateur,** les propriétés suivantes sont affichées dans la liste des balises utilisateur :
 
-   - **Balise**: nom de la balise utilisateur. Notez que cela inclut la balise système de compte **Priorité** intégrée.
+   - **Balise**: nom de la balise utilisateur. Notez que cela inclut la balise système **de** compte Priorité intégrée.
    - **Appliqué à**: nombre de membres
    - **Dernière modification**
    - **Créé le**
@@ -121,7 +122,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Utiliser le portail Microsoft 365 Defender pour modifier les balises utilisateur
 
-1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
 2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Modifier ![ l’icône de balise.](../../media/m365-cc-sc-edit-icon.png) **Modifier la balise**.
 
@@ -137,7 +138,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 > [!NOTE]
 > Vous ne pouvez pas supprimer la balise système de compte **Priorité** intégrée.
 
-1. Dans le portail Microsoft 365 Defender, go to **Paramètres** \> **Email & collaboration** User \> **tags**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Paramètres** \> **Email & collaboration** User \> **tags**.
 
 2. Dans la page **Balises utilisateur,** sélectionnez la balise utilisateur dans la liste, puis cliquez sur Supprimer ![ l’icône de balise.](../../media/m365-cc-sc-delete-icon.png) **Supprimer une balise**.
 

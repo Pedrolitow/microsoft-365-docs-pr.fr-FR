@@ -16,20 +16,21 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882920"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960807"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,11 +43,11 @@ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une d�
 
 > [!IMPORTANT]
 > Pour la prévisualisation, vous devez d’abord activer les fonctionnalités d’aperçu dans Microsoft 365 Defender.
-> Vous pouvez ensuite accéder à la configuration de découverte d’appareils Microsoft 365 centre de sécurité. La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans le centre de sécurité Microsoft 365 Defender et Microsoft 365, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 centre de sécurité.
+> Vous pouvez ensuite accéder à la configuration de découverte d’appareils <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dans Microsoft 365 de sécurité.</a> La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans le centre de sécurité Microsoft 365 Defender et Microsoft 365, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 centre de sécurité.
 
-Prenez les étapes de configuration suivantes dans Microsoft 365 de sécurité :
+Prenez les étapes de configuration suivantes dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de sécurité :</a>
 
-1. Accédez à **Paramètres > détection d’appareil.**
+1. Accédez à **Paramètres**  >  **détection d’appareil.**
 2. Sélectionnez le mode de découverte à utiliser sur vos appareils intégrés.
 3. Si vous avez choisi d’utiliser la découverte standard, sélectionnez les appareils à utiliser pour l’analyse active : tous les appareils ou sur un sous-ensemble en spécifiant leurs balises d’appareil.
 4. Cliquez sur **Enregistrer**.

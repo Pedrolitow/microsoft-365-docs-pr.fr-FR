@@ -1,7 +1,7 @@
 ---
 title: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service Microsoft Defender for Endpoint.
-keywords: configurer l’infrastructure VDI (Virtual Desktop Infrastructure), vdi, gestion des appareils, configurer Microsoft Defender pour les points de terminaison, points de terminaison
+description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’ils soient intégrés au service Microsoft Defender for Endpoint.
+keywords: configurer l’infrastructure de bureau virtuel (VDI), vdi, gestion des appareils, configurer Microsoft Defender pour les points de terminaison, points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 931edcd890148a828a6d189722e8f29907c15b79
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553687"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962758"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils VDI (Virtual Desktop Infrastructure) non persistants dans Microsoft 365 Defender
 
@@ -34,16 +35,16 @@ ms.locfileid: "60553687"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **VDI persistants**  -  [L’intégration](configure-endpoints.md) d’un ordinateur VDI persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le Centre de sécurité, ( sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les https://security.microsoft.com) instructions pour ce type. 
+  > **Les VDI persistants**  -  [L’intégration](configure-endpoints.md) d’un ordinateur VDI persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le Centre de sécurité, ( sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les https://security.microsoft.com) instructions pour ce type. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégration d’appareils VDI (Virtual Desktop Infrastructure) non persistants
 
 Defender pour le point de terminaison prend en charge l’intégration de session VDI non persistante.
 
-Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Les défis classiques de ce scénario sont les suivants :
+Il peut y avoir des difficultés associées lors de l’intégration des VDIs. Voici quelques défis classiques pour ce scénario :
 
 - Intégration anticipée instantanée d’une session à durée de vie courte, qui doit être intégré à Defender for Endpoint avant la mise en service réelle.
 - Le nom de l’appareil est généralement réutilisé pour les nouvelles sessions.
@@ -60,11 +61,11 @@ Les appareils VDI peuvent apparaître dans le portail Defender for Endpoint sous
 Les étapes suivantes vous guident tout au long de l’intégration des appareils VDI et mettent en évidence les étapes pour les entrées simples et multiples.
 
 > [!WARNING]
-> Pour les environnements dans lequel il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint.
+> Pour les environnements où il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint.
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Pour Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022
 
-1.  Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du [portail Microsoft 365 Defender :](https://security.microsoft.com/)
+1.  Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender :</a>
 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
 
@@ -108,7 +109,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 6. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-7. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
+7. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
 
 ## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Pour les S SKUs de niveau bas (Windows Server 2008 R2/2012 R2/2016)
 
@@ -130,7 +131,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 2. Suivez le [processus d’intégration du serveur.](configure-server-endpoints.md) 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images DDI (Virtual Desktop Infrastructure) non persistantes
 
 En tant que meilleure pratique, nous vous recommandons d’utiliser des outils de maintenance hors connexion pour mettre à jour les images de base/de base.
 
@@ -170,9 +171,9 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
     exit
     ```
 
-5. Resealez l’image de l’or/maître comme vous le feriez normalement.
+5. Resealez l’image de premier plan comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

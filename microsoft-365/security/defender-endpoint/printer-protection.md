@@ -14,12 +14,13 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bb2c66c8ebb04b32fb409a749b7f1872361dd4a4
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: f97a5ae486ff2ebd39a1adedeb008ac675ee9941
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882236"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962818"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -55,7 +56,7 @@ Assurez-vous que les Windows 10 ou Windows 11 que vous prévoyez de déployer Pr
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - Pour Windows 2004 ou ultérieure
 
-2. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être intégré à Microsoft Defender pour le point de terminaison joint ; si vous envisagez de déployer une stratégie via Microsoft Endpoint Manager, l’appareil doit être joint à l’aide de Microsoft Intune.
+2. Si vous envisagez de déployer une stratégie via une stratégie de groupe, l’appareil doit être intégré à Microsoft Defender pour le point de terminaison joint ; Si vous envisagez de déployer une stratégie via Microsoft Endpoint Manager, l’appareil doit être joint à l’aide de Microsoft Intune.
 
 ## <a name="deploy-device-control-printer-protection-policy"></a>Déployer une stratégie de protection de l’imprimante de contrôle d’appareil
 
@@ -119,7 +120,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
   Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : \> \> activer les \> restrictions d’impression des contrôles d’appareil
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression des appareils.":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="activer les restrictions d’impression de l’appareil.":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Scénario 2 : autoriser des imprimantes USB approuvées spécifiques à l’aide de la stratégie de groupe
 
@@ -135,7 +136,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Afficher les données de protection des imprimantes des contrôles d’appareil dans le portail Microsoft Defender pour les points de terminaison
 
-Le centre [Microsoft 365 de sécurité affiche](https://security.microsoft.com) l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
+Le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de sécurité affiche</a> l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
 
 ```kusto
 DeviceEvents

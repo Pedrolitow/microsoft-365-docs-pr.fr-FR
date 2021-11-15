@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Découvrez les actions de correction dans les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
+ms.custom: admindeeplinkDEFENDER
+description: Découvrez les actions de correction dans les fonctionnalités d’examen et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5321f1cbe35727649c80dc17778dc843630f695e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196620"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962734"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -33,7 +34,7 @@ ms.locfileid: "60196620"
 
 Comme des enquêtes automatisées sur & de collaboration  entraînent des verdicts, tels que malveillants ou suspects, certaines actions de correction sont créées. Dans Microsoft Defender pour Office 365, les actions de correction peuvent inclure :
 
-- Suppression de messages électroniques ou de clusters de suppression (soft)
+- Suppression de messages électroniques ou de clusters
 - Turning off external mail forwarding
 
 Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions envoyées.  Vous devez faire partie du rôle de & de recherche avant d’effectuer des actions.
@@ -42,13 +43,13 @@ Ces mesures correctives ne sont prises que si votre équipe en charge des opéra
 Il existe quatre méthodes différentes pour rechercher et prendre des mesures d’investigation automatique :
 
 - [File d’attente des incidents](https://security.microsoft.com/incidents)
-- [Centre de notifications](https://security.microsoft.com/action-center/pending)
+- [Centre de actions](https://security.microsoft.com/action-center/pending)
 - Examen proprement dit (accessible via incident ou à partir d’une alerte)
 - [File d’attente des examens d’investigation et de correction](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>File d’attente des incidents
 
-1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender et</a> connectez-vous.
 2. Dans le volet de navigation, sélectionnez **Incidents & alertes > Incidents**.
 3. Sélectionnez un nom d’incident pour ouvrir sa page récapitulatif.
 4. Sélectionnez **l’onglet Preuve et** réponse.
@@ -57,15 +58,15 @@ Il existe quatre méthodes différentes pour rechercher et prendre des mesures d
 
 ## <a name="investigation-queue"></a>File d’attente d’examen
 
-1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender et</a> connectez-vous.
 2. Accédez à la page alertes/incident.
-3. Dans la page Examen, allez dans **l’onglet Actions en** attente.
+3. Dans la page Examen, allez dans **l’onglet Actions en attente.**
 4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.
 5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
 
 ## <a name="action-center"></a>Centre de notifications
 
-1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender et</a> connectez-vous.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sous **l’onglet En** attente, examinez la liste des actions en attente d’approbation.
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
@@ -74,9 +75,9 @@ Il existe quatre méthodes différentes pour rechercher et prendre des mesures d
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>File d’attente des examens d’investigation et de correction
 
-1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le Microsoft 365 Defender et</a> connectez-vous.
 2. Ouvrir les enquêtes en attente.
-3. Dans la page Examen, allez dans **l’onglet Actions en** attente.
+3. Dans la page Examen, allez dans **l’onglet Actions en attente.**
 4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.
 5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
 

@@ -14,18 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e3e658af5118d7a2d6ff565d52154e7be3f95fa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: cf57eb6e08278625ac8887985a39d355266f47d5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882692"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962926"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
-
-La protection du stockage amovible des contrôles d’appareil dans Microsoft Defender pour point de terminaison empêche les utilisateurs, les points de terminaison ou les deux d’utiliser des supports de stockage amovibles non autorisés.
+La protection du stockage amovible des contrôles d’appareil dans Microsoft Defender pour point de terminaison empêche les utilisateurs, les points de terminaison ou les deux d’utiliser un support de stockage amovible non autorisé.
 
 ## <a name="protection-policies"></a>Stratégies de protection
 
@@ -48,7 +46,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 **Détails de la prise en charge de macOS**:
 
 - Appliqué au niveau de l’appareil : la même stratégie s’applique à tout utilisateur connecté.
-- Pour obtenir des informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
+- Pour plus d’informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
 
 **Plateforme prise en** charge : macOS Contrôle 10.15.4+ (avec extensions système activées)
 
@@ -69,9 +67,9 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 **Détails de la prise en charge de macOS**:
 
 - Appliqué au niveau de l’appareil : la même stratégie s’applique à tout utilisateur connecté
-- Pour obtenir des informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
+- Pour plus d’informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
 
-**Plateforme prise en** charge : macOS Contrôle 10.15.4+ (avec extensions système activées) ou ultérieure
+**Plateforme prise en** charge - macOS Contrôle 10.15.4+ (avec extensions système activées) ou ultérieure
 
 ### <a name="endpoint-dlp-removable-storage"></a>Point de terminaison de stockage amovible DLP
 
@@ -94,7 +92,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 ## <a name="device-properties"></a>Propriétés du périphérique
 
-Microsoft Defender pour endpoint Device Control Removable Stockage Protection vous permet de restreindre l’accès au stockage amovible en fonction des propriétés décrites dans le tableau ci-dessous :
+Microsoft Defender for Endpoint Device Control Removable Stockage Protection vous permet de restreindre l’accès au stockage amovible en fonction des propriétés décrites dans le tableau ci-dessous :
 
 <br/><br/>
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 131021236f5294f10f9abdf6e4ba170e2349b707
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a31b5cb7507bcf5bcc2c919f47cbf7f2f786045e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555751"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962806"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection du réseau
 
@@ -31,7 +31,7 @@ ms.locfileid: "60555751"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cet article fournit des informations de dépannage pour la [protection](network-protection.md)du réseau, dans les cas suivants :
 
@@ -59,7 +59,7 @@ La protection réseau ne fonctionne que sur les appareils qui ont les conditions
 
 ## <a name="use-audit-mode"></a>Utiliser le mode Audit
 
-Vous pouvez activer la protection réseau en mode audit, puis visiter un site web que nous avons créé pour rétrograder la fonctionnalité. Toutes les connexions de site web sont autorisées par la protection réseau, mais un événement est enregistré pour indiquer toute connexion qui aurait été bloquée si la protection du réseau était activée.
+Vous pouvez activer la protection réseau en mode audit, puis visiter un site web que nous avons créé pour faire une démonstration de la fonctionnalité. Toutes les connexions de site web sont autorisées par la protection réseau, mais un événement est enregistré pour indiquer toute connexion qui aurait été bloquée si la protection du réseau était activée.
 
 1. Définissez la protection réseau sur **le mode Audit.**
 
@@ -87,13 +87,13 @@ Voir [Adresse faux positifs/négatifs dans Microsoft Defender pour le point de t
 Les options d’exclusion actuelles sont :
 
 1.  Configuration d’un indicateur d’autoriser personnalisé.
-2.  Utilisation d’exclusions IP : `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+2.  Utilisation d’exclusions IP : `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
 3.  Exclusion d’un processus entier. Pour plus d’informations, [voir Antivirus Microsoft Defender exclusions.](configure-exclusions-microsoft-defender-antivirus.md) 
 
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Collecter des données de diagnostic pour les soumissions de fichiers
 
-Lorsque vous signalez un problème avec la protection du réseau, vous êtes invité à collecter et à envoyer des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes.
+Lorsque vous signalez un problème avec la protection réseau, vous êtes invité à collecter et à envoyer des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes.
 
 1. Ouvrez une invite de commandes avec élévation de élévation de Windows Defender répertoire :
 
@@ -111,7 +111,7 @@ Lorsque vous signalez un problème avec la protection du réseau, vous êtes inv
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Résoudre les problèmes de connectivité avec la protection réseau (pour les clients E5)
 
-En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft ne peut pas voir les paramètres de proxy de votre système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre les problèmes de connectivité avec la protection réseau, configurez l’une des clés de Registre suivantes afin que la protection réseau soit informé de la configuration du proxy :
+En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft ne peut pas voir les paramètres de proxy de votre système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre les problèmes de connectivité avec la protection réseau, configurez l’une des clés de Registre suivantes afin que la protection réseau soit au courant de la configuration du proxy :
 
 ```powershell
 Set-MpPreference -ProxyServer <proxy IP address: Port>
@@ -132,7 +132,7 @@ Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft 
 ## <a name="see-also"></a>Voir aussi
 
 - [Protection du réseau](network-protection.md)
-- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
-- [Activer la protection réseau](enable-network-protection.md)
+- [Activer la protection du réseau](enable-network-protection.md)
 - [Corriger les faux positifs/négatifs dans Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)

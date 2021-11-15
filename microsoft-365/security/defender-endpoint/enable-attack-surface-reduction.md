@@ -16,16 +16,17 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92adcad0a7cbb12853e2caca217b87f448efcb65
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 544d16919f039f7ac4ae7a7234b2b90c925a7329
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881948"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962553"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -35,7 +36,7 @@ ms.locfileid: "60881948"
 
 [Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -43,19 +44,19 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
-- Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
+- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
-- Windows Server 2022
+- Windows Server 2022
 
 Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la surface d’attaque, vous devez :
 
 - Antivirus Windows Defender comme antivirus principal (protection en temps réel)
 - [Protection de la distribution cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
-- Windows 10 Entreprise Licence E5 ou E3
+- Windows 10 Entreprise licence E5 ou E3
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender for Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender for Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
 
 Chaque règle asr contient l’un des quatre paramètres ci-après :
 
@@ -112,7 +113,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 4. Sélectionnez **OK** dans les trois volets de configuration. Sélectionnez **Ensuite Créer** si vous créez un fichier de protection de point de terminaison ou **Enregistrer** si vous modifiez un fichier existant.
 
 **Stratégie de sécurité des points de terminaison**
-1. Sélectionnez **Réduction de la** surface \> **d’attaque de sécurité du point de terminaison.** Choisissez une règle de RSA existante ou créez-en une nouvelle. Pour en créer une nouvelle, sélectionnez **Créer** une stratégie et entrez des informations pour ce profil. Pour le **type de profil,** sélectionnez **Règles de réduction de la surface d’attaque.** Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
+1. Sélectionnez **Réduction de la** surface \> **d’attaque de sécurité du point de terminaison.** Choisissez une règle de RSA existante ou créez-en une nouvelle. Pour en créer une nouvelle, **sélectionnez Créer** une stratégie et entrez des informations pour ce profil. Pour le **type de profil,** sélectionnez **Règles de réduction de la surface d’attaque.** Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
 2. Dans le **volet Paramètres de configuration,** sélectionnez Réduction de **la surface** d’attaque, puis sélectionnez le paramètre souhaité pour chaque règle de réduction de la surface d’attaque.
 
@@ -141,7 +142,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
 
-3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
+3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Principes de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
    > [!div class="mx-imgBorder"]
    > ![Attributs de base MEM.](images/mem03-1-basics.png)

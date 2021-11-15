@@ -276,8 +276,6 @@
               href: enable-the-report-message-add-in.md
             - name: Signaler les faux positifs et les faux négatifs dans Outlook
               href: report-false-positives-and-false-negatives.md
-            - name: Soumettre manuellement des messages à Microsoft
-              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: Soumettre des programmes malveillants et non malveillants à Microsoft Corporation

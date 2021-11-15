@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 67ceb75fd5062e422121588f7830fcd389202cb5
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: f6446fb61d0c38855a040da75a57ae85faafbb9f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914535"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962854"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -43,7 +44,7 @@ Vous pouvez également gérer ces fonctionnalités sur la page classification de
 - [Explorateur de contenu](data-classification-content-explorer.md)
 - [Explorateur d’activités](data-classification-activity-explorer.md)
 
-Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification de données**.
+Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centre de sécurité Microsoft 365</a> > **Classification** > **Classification de données**.
 
 Suivez une visite guidée par vidéo sur nos fonctionnalités de classification de données.
 

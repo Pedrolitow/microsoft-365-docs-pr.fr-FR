@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la découverte d’appareils
 description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non utilisés dans votre réseau
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 156ddfc6a44074db23369ca20e8d7c3d4471459e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908004"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963118"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
@@ -72,11 +73,11 @@ Seuls les appareils observés par le mode de découverte de base sont activement
 
 ### <a name="basic-discovery"></a>Découverte de base
 
-Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré.
+Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et en extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré.
 
 ### <a name="standard-discovery"></a>Découverte standard
 
-Ce mode permet aux points de terminaison de sonder activement les appareils observés dans le réseau pour enrichir les données collectées et découvrir d’autres appareils, ce qui vous aide à créer un inventaire fiable et cohérent des appareils. Le mode standard utilise l’analyse intelligente et active pour découvrir encore plus d’informations sur les appareils observés afin d’enrichir les informations d’appareil existantes. Le mode standard exploite également les protocoles de découverte courants qui utilisent des requêtes multidiffusion dans le réseau pour trouver encore plus d’appareils, en plus de ceux qui ont été ovationné à l’aide de la méthode passive.
+Ce mode permet aux points de terminaison de sonder activement les appareils observés dans le réseau pour enrichir les données collectées et découvrir d’autres appareils, ce qui vous aide à créer un inventaire fiable et cohérent des appareils. Le mode standard utilise l’analyse intelligente et active pour découvrir encore plus d’informations sur les appareils observés afin d’enrichir les informations d’appareil existantes. Le mode standard exploite également les protocoles de découverte courants qui utilisent des requêtes multidiffusion dans le réseau pour trouver encore plus d’appareils, en plus de ceux qui ont été ovédés à l’aide de la méthode passive.
 
 Lorsque le mode Standard est activé, une activité réseau minime et négligeable générée par le capteur de découverte peut être observée par les outils de surveillance réseau de votre organisation.
 
@@ -105,7 +106,7 @@ Les appareils qui ont été découverts mais qui n’ont pas encore été intég
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Évaluation de la vulnérabilité sur les appareils détectés
 
-Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Security Recommandations » et représentés dans les pages d’entité sur le portail.
+Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Recommandations de sécurité » et représentés dans les pages d’entité sur le portail.
 Recherchez les recommandations de sécurité « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés.
 
 ![Image du tableau de bord recommandations en matière de sécurité.](images/1156c82ffadd356ce329d1cf551e806c.png)
@@ -136,7 +137,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>Comportement modifié
 
-La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et/ou Microsoft 365 centre de sécurité lorsque cette fonctionnalité est activée.
+La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et/ou Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">de</a> sécurité lorsque cette fonctionnalité est activée.
 
 1. Les appareils qui ne sont pas intégrés à Microsoft Defender pour le point de terminaison sont censés apparaître dans l’inventaire des appareils, le recherche avancée et les requêtes API. Cela peut augmenter considérablement la taille des résultats de la requête.
     1. Les tables « DeviceInfo » et « DeviceNetworkInfo » dans la recherche avancée vont maintenant contenir l’appareil détecté. Vous pouvez filtrer ces appareils à l’aide de l’attribut « OnboardingStatus ».
@@ -144,7 +145,7 @@ La section suivante répertorie les modifications que vous observerez dans Micro
 2. Les appareils non utilisés seront affectés à des groupes d’appareils existants en fonction des critères définis.
 3. Dans de rares cas, la découverte standard peut déclencher des alertes sur les moniteurs réseau ou les outils de sécurité. Veuillez nous faire part de vos commentaires, si vous faites l’expérience de tels événements, afin d’éviter que ces problèmes ne se répètent. Vous pouvez exclure explicitement des cibles spécifiques ou des sous-réseaux entiers d’être activement sondés par la découverte standard.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

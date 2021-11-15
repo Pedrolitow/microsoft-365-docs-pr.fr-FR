@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Rapports dans le Centre d’administration - Utilisation du navigateur Microsoft
+title: Microsoft 365 dans le Centre d’administration - Utilisation du navigateur Microsoft
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Microsoft 365 rapports microsoft dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: ac2eb7af8f89fb3d496d7b2afd8ca66322e20275
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d653bf1132f461b14644b1ddc04bab2fdceee358
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60653998"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960957"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation du navigateur Microsoft
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 dans le Centre d’administration - Utilisation du navigateur Microsoft
 
-Le tableau de bord Microsoft 365 rapports de gestion vous présente une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’entrer dans des rapports individuels au niveau du produit pour vous donner un aperçu plus granulaire des activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation du navigateur Microsoft, vous pouvez obtenir des informations sur Internet Explorer, Version antérieure de Microsoft Edge et les nouvelles Microsoft Edge’utilisation. Les rapports d’utilisation sont basés sur Microsoft 365 services en ligne accessibles à l’aide d’un navigateur Microsoft.
+Le tableau de bord Microsoft 365 rapports de gestion vous présente une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d’en savoir plus sur les différents rapports au niveau du produit afin de mieux comprendre les activités au sein de chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d’utilisation du navigateur Microsoft, vous pouvez obtenir des informations sur Internet Explorer, Version antérieure de Microsoft Edge et les nouvelles Microsoft Edge’utilisation. Les rapports d’utilisation sont basés sur Microsoft 365 services en ligne accessibles à l’aide d’un navigateur Microsoft.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Comment obtenir le rapport d’utilisation du navigateur Microsoft
 
@@ -39,9 +39,11 @@ Le tableau de bord Microsoft 365 rapports de gestion vous présente une vue d’
 
 :::image type="content" alt-text="Flux d’action du rapport d’utilisation du navigateur Microsoft." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-Les administrateurs globaux peuvent choisir d’envoyer des messages aux utilisateurs qui utilisent les services Microsoft 365 sur Edge Legacy (non pris en compte) et Internet Explorer (bientôt non pris en compte). Ce message ciblé informe les utilisateurs que la prise en charge de ces navigateurs sera bientôt envoyé et des liens vers un article de support avec des informations sur Microsoft Edge et les étapes simples à suivre pour changer de navigateur. 
+Les administrateurs globaux peuvent choisir d’envoyer des messages aux utilisateurs qui accèdent aux services Microsoft 365 à partir d’Internet Explorer (pour rappel, l’application de bureau Internet Explorer sera retirée le 15 juin 2022). Ce message ciblé informe les utilisateurs que la prise en charge de ces navigateurs sera bientôt envoyé et des liens vers un article de support avec des informations sur les Microsoft Edge et les étapes simples à suivre pour changer de navigateur. 
 
-Vous pouvez trouver cette fonctionnalité sur la page de rapport. Une fois le message créé, les utilisateurs sont avertis à la fréquence spécifiée jusqu’au 17 août 2021. Vous pouvez désactiver cette fonctionnalité à tout moment pour arrêter d’envoyer des notifications aux utilisateurs. Pour recommencer à envoyer des notifications, turn the feature back on.
+Cette fonctionnalité se trouve sur la page du rapport d’utilisation du navigateur Microsoft si l’utilisation d’Internet Explorer est affichée dans le rapport de votre organisation (autorisations d’administrateur global requises). Une fois le message créé, les utilisateurs sont avertis à la fréquence spécifiée jusqu’au 15 juin 2022. Vous pouvez activer ou désactiver cette fonctionnalité à tout moment.
+
+Il s’agit d’une fonctionnalité limitée dans le temps qui est actuellement disponible uniquement pour les administrateurs globaux aux États-Unis et qui permet aux utilisateurs de recevoir des notifications Excel en ligne.
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpréter le rapport d’utilisation du navigateur Microsoft
 
@@ -55,4 +57,4 @@ Vous pouvez trouver cette fonctionnalité sur la page de rapport. Une fois le me
 |4. |Le graphique **Utilisateurs** actifs indique le nombre total d’utilisateurs utilisant Microsoft Edge, Version antérieure de Microsoft Edge et Internet Explorer lorsqu’ils sont utilisés pour accéder aux services Microsoft 365 sur la période sélectionnée. |
 |5. |Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes.  <br/><br/>**Le nom** d’utilisateur est l’adresse e-mail de l’utilisateur qui s’est connecté Microsoft 365 services à l’aide des navigateurs Microsoft.<br><br/>**La Microsoft Edge** affiche une coche si l’utilisateur a utilisé Microsoft Edge pour se connecter Microsoft 365 services.<br/><br/>**La Version antérieure de Microsoft Edge** affiche une coche si l’utilisateur a utilisé Version antérieure de Microsoft Edge pour se connecter Microsoft 365 services.<br/><br/>**Internet Explorer utilisé affiche** une coche si l’utilisateur a utilisé Internet Explorer pour se connecter Microsoft 365 services. |
 |6. |Sélectionnez **l’icône** Choisir des colonnes pour ajouter ou supprimer des colonnes dans le rapport.|
-|7. |Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau du rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|
+|7. |Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela exporte les données pour tous les utilisateurs et vous permet d’obtenir une agrégation, un tri et un filtrage simples pour une analyse plus approfondie. Si vous avez moins de 100 utilisateurs, vous pouvez trier et filtrer dans le tableau du rapport lui-même. Si vous avez plus de 100 utilisateurs, pour filtrer et trier, vous devez exporter les données.|

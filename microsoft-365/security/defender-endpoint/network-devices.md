@@ -14,20 +14,21 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1ec9863a97d58dd61aaf47da1fcd965aab1fd4d3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881972"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960803"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
@@ -38,7 +39,7 @@ ms.locfileid: "60881972"
 > [!NOTE]
 > Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
 
-Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité Microsoft 365 et des consoles Microsoft 365 Defender réseau.
+Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a> et des consoles Microsoft 365 Defender réseau.
 
 Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
 

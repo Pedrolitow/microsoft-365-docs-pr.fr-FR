@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e53c14405d3d190715b49e58061aee8ba771180a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202980"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962842"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Balises d’entité Defender for Identity dans Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ Cet article explique comment appliquer des [balises d’entité d’identité Mi
 
 Dans Microsoft 365 Defender, vous pouvez définir trois types de balises d’entité Defender pour l’identité : les balises sensibles, les balises **Honeytoken** et les balises **Exchange serveur.**
 
-Pour définir ces balises, dans [Microsoft 365 Defender](https://security.microsoft.com/), allez à **Paramètres** puis **Identités**.
+Pour définir ces balises, dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, allez à **Paramètres** puis **Identités**.
 
 ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -42,7 +43,7 @@ Pour définir chaque type de balise, suivez les instructions ci-dessous.
 
 ## <a name="sensitive--tags"></a>Balises sensibles
 
-La **balise Sensitive permet** d’identifier les ressources à valeur élevée. Le chemin de déplacement latéral repose également sur l’état de sensibilité d’une entité. Certaines entités sont considérées comme sensibles automatiquement par Defender for Identity. Pour obtenir la liste de ces biens, voir [Entités sensibles.](/defender-for-identity/manage-sensitive-honeytoken-accounts#sensitive-entities)
+La **balise Sensitive permet** d’identifier les ressources à valeur élevée. Le chemin de déplacement latéral s’appuie également sur l’état de sensibilité d’une entité. Certaines entités sont considérées comme sensibles automatiquement par Defender for Identity. Pour obtenir la liste de ces biens, voir [Entités sensibles.](/defender-for-identity/manage-sensitive-honeytoken-accounts#sensitive-entities)
 
 Vous pouvez également marquer manuellement les utilisateurs, les appareils ou les groupes comme sensibles.
 
@@ -64,7 +65,7 @@ Les entités honeytoken sont utilisées comme des captures pour les acteurs malv
 
 Vous pouvez marquer des utilisateurs ou des appareils avec la balise **Honeytoken** de la même façon que vous balisez des comptes sensibles.
 
-1. Sélectionnez **Honeytoken**. Vous verrez ensuite les utilisateurs et appareils « honeytoken **»** **existants.**
+1. Sélectionnez **Honeytoken**. Vous verrez ensuite les utilisateurs  et périphériques honeytoken **existants.**
 
     ![Entités Honeytoken.](../../media/defender-identity/honeytoken-entities.png)
 
@@ -84,7 +85,7 @@ Defender for Identity considère les serveurs Exchange comme des ressources à v
 
     ![Exchange serveurs.](../../media/defender-identity/exchange-servers.png)
 
-1. Pour baliser un appareil en tant que serveur Exchange, sélectionnez **Appareils de balise.**  Un volet s’ouvre avec les appareils que vous pouvez sélectionner pour baliser. Pour rechercher un appareil, entrez son nom dans la zone de recherche.
+1. Pour marquer un appareil en tant que serveur Exchange, sélectionnez **Balises**.  Un volet s’ouvre avec les appareils que vous pouvez sélectionner pour baliser. Pour rechercher un appareil, entrez son nom dans la zone de recherche.
 
     ![Ajoutez des appareils.](../../media/defender-identity/add-devices.png)
 

@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 10a4391cc901eaa51f7ff272b5b014fdb9e17dcd
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907848"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962457"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage dans Defender pour Office 365
 
@@ -27,9 +28,9 @@ La formation à la simulation d’attaques dans Microsoft Defender pour Office 3
 
 Pour plus d’informations sur la formation à la simulation d’attaques, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
 
-Pour lancer une attaque par hameçonnage simulée, faites les étapes suivantes :
+Pour lancer une attaque par hameçonnage simulée, vous pouvez suivre les étapes suivantes :
 
-1. Dans le portail Microsoft 365 Defender à l’adresse , go <https://security.microsoft.com/> to Email & **collaboration** \> **Attack** \> **simulations simulations** tab.
+1. Dans le portail Microsoft 365 Defender à l’adresse , go <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> to Email & **collaboration** \> **Attack** \> **simulations simulations** tab.
 
    Pour aller directement à **l’onglet Simulations,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 
@@ -44,7 +45,7 @@ Pour lancer une attaque par hameçonnage simulée, faites les étapes suivantes 
 
 ## <a name="select-a-social-engineering-technique"></a>Sélectionner une technique d’ingénierie sociale
 
-Dans la page Sélectionner une **technique,** sélectionnez une technique d’ingénierie sociale disponible, qui a été organisée à partir de l’infrastructure [MITRE ATT&CK®.](https://attack.mitre.org/techniques/enterprise/) Différentes charges utiles sont disponibles pour différentes techniques. Les techniques d’ingénierie sociale suivantes sont disponibles :
+Dans la page Sélectionner une **technique,** sélectionnez une technique d’ingénierie sociale disponible, qui a été organisée à partir de l’infrastructure [mitre ATT&CK®.](https://attack.mitre.org/techniques/enterprise/) Différentes charges utiles sont disponibles pour différentes techniques. Les techniques d’ingénierie sociale suivantes sont disponibles :
 
 - **Collecte des informations** d’identification : tente de collecter des informations d’identification en prenant les utilisateurs vers un site web bien connu avec des zones de saisie pour envoyer un nom d’utilisateur et un mot de passe.
 - **Pièce jointe malveillante**: ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
@@ -60,7 +61,7 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 ## <a name="name-and-describe-the-simulation"></a>Nommer et décrire la simulation
 
-Dans la page **simulation de** nom, configurez les paramètres suivants :
+Dans la page **Simulation de** nom, configurez les paramètres suivants :
 
 - **Nom**: entrez un nom unique et descriptif pour la simulation.
 - **Description**: entrez une description détaillée facultative de la simulation.
@@ -93,7 +94,7 @@ Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
   - **All**
 - **Langue**: les valeurs disponibles sont : **chinois (simplifié),** chinois **(traditionnel),** **anglais**, **français** **,** allemand **,** italien **,** japonais **,** coréen **,** portugais **,** **russe**, espagnol et néerlandais **.**
 - **Ajouter des balises**
-- Filtrer **par** thème : les valeurs disponibles sont : **Activation** du **compte,** vérification de **compte,** **facturation,** nettoyage du **courrier,** **document** reçu, dépense, **télécopie**, rapport **financier**, **messages** entrants, factures **,** éléments **reçus,** alerte de connexion, **courrier** **reçu,** mot de **passe,** **paiement,** **salaire,** offre **personnalisée,** mise en quarantaine , **Travail à distance**, **passer en revue le message**, **Mise** à jour de sécurité , **Service** suspendu , **Signature** requise **,** Mettre à niveau le stockage de boîte aux lettres Vérifier la boîte aux lettres , **Messagerie** vocale et **autre**.
+- Filtrer **par** thème : les valeurs disponibles sont : **Activation** du **compte,** vérification de **compte,** **facturation,** nettoyage du **courrier,** **document** reçu, dépense, **télécopie**, rapport **financier**, **messages** entrants, factures **,** éléments **reçus,** alerte de connexion, **courrier** **reçu,** mot de **passe,** **paiement,** **salaire,** offre **personnalisée,** mise en quarantaine , **Travail à distance**, **passer en revue le message**, **Mise** à jour de sécurité , **Service** suspendu , **Signature** requise **,** Mettre à niveau le stockage de boîte aux lettres Vérifier la boîte aux lettres , **messagerie** vocale et **autre**.
 - Filtrer par marque : les valeurs disponibles sont **: American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, Netflix , **Netflix**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud** et **Other**. 
 - **Filtrer par** secteur d’activité : les valeurs disponibles sont : **Banque,** **Services** professionnels, **Services** grand public, **Éducation,** **Énergie,** **Construction,** **Conseil**, **Services** financiers, **Secteur** **public,** **Assurance,** **Juridique,** **Courier services,** **INFORMATIQUE,** Soins de **santé,** **Fabrication,** **Vente** au détail, **Telecom,** Immobilier **,** et **autres**.
 - **Événement actuel**: les valeurs disponibles sont **Oui** ou **Non**.
@@ -123,22 +124,22 @@ Dans la page **Utilisateurs cibles,** sélectionnez qui recevra la simulation. C
 - **Inclure tous les utilisateurs de votre organisation**: les utilisateurs affectés sont montrés dans des listes de 10. Vous pouvez utiliser les boutons **Suivant** et **Précédent** directement sous la liste des utilisateurs pour faire défiler la liste. Vous pouvez également utiliser ![ l’icône Rechercher.](../../media/m365-cc-sc-search-icon.png) **Icône Rechercher** sur la page pour rechercher les utilisateurs concernés.
 - **Inclure uniquement des utilisateurs et des groupes** spécifiques : choisissez l’une des options suivantes :
   - ![Icône Ajouter des utilisateurs.](../../media/m365-cc-sc-create-icon.png) **Ajouter des utilisateurs**: dans **le** volant Ajouter des utilisateurs qui s’affiche, vous pouvez trouver des utilisateurs et des groupes en fonction des critères suivants :
-    - **Utilisateurs ou groupes**: dans l’icône ![ Rechercher des utilisateurs et des groupes.](../../media/m365-cc-sc-search-icon.png) **Recherchez des utilisateurs et des groupes,**  vous pouvez taper une partie du nom ou de l’adresse e-mail de l’utilisateur ou du groupe, puis appuyez sur Entrée.  Vous pouvez sélectionner une partie ou la plupart des résultats. Lorsque vous avez terminé, cliquez sur **Ajouter x utilisateurs.**
+    - **Utilisateurs ou groupes**: dans l’icône ![ Rechercher des utilisateurs et des groupes.](../../media/m365-cc-sc-search-icon.png) **Recherchez des utilisateurs et des groupes,**  vous pouvez taper une partie du nom ou de l’adresse e-mail de l’utilisateur ou du groupe, puis appuyez sur Entrée.  Vous pouvez sélectionner tout ou partie des résultats. Lorsque vous avez terminé, cliquez sur **Ajouter x utilisateurs.**
 
       > [!NOTE]
       > Cliquer sur le **bouton Ajouter** des filtres pour revenir aux options Filtrer les utilisateurs par catégories permet d’effacer tous les **utilisateurs** ou groupes que vous avez sélectionnés dans les résultats de la recherche.
 
-    - **Filtrer les utilisateurs par catégories**: sélectionnez l’une des options suivantes :
+    - **Filtrer les utilisateurs par catégorie :** sélectionnez l’une des options suivantes :
       - **Groupes d’utilisateurs suggérés**: sélectionnez parmi les valeurs suivantes :
         - **Tous les groupes d’utilisateurs suggérés**
         - **Utilisateurs non ciblés par une simulation au cours des trois derniers mois**
         - **Répéter les répétitions**
       - **Service**: utilisez les options suivantes :
-        - **Recherche**: dans ![ l’icône Rechercher par service.](../../media/m365-cc-sc-search-icon.png) **Recherchez par zone Service,** vous pouvez taper une partie de la valeur Service, puis appuyez sur Entrée. Vous pouvez sélectionner une partie ou la plupart des résultats.
+        - **Recherche**: dans ![ l’icône Rechercher par service.](../../media/m365-cc-sc-search-icon.png) **Recherchez par zone Service,** vous pouvez taper une partie de la valeur Service, puis appuyez sur Entrée. Vous pouvez sélectionner tout ou partie des résultats.
         - Sélectionner **tout le service**
         - Sélectionnez les valeurs de service existantes.
       - **Titre**: Utilisez les options suivantes :
-        - **Recherche**: dans ![ l’icône Rechercher par titre.](../../media/m365-cc-sc-search-icon.png) **Recherchez par zone titre,** vous pouvez taper une partie de la valeur titre, puis appuyer sur Entrée. Vous pouvez sélectionner une partie ou la plupart des résultats.
+        - **Recherche**: dans ![ l’icône Rechercher par titre.](../../media/m365-cc-sc-search-icon.png) **Recherchez par zone titre,** vous pouvez taper une partie de la valeur titre, puis appuyer sur Entrée. Vous pouvez sélectionner tout ou partie des résultats.
         - Sélectionner **tout le titre**
         - Sélectionnez les valeurs de titre existantes.
 
@@ -231,16 +232,16 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 Dans la **page d’accueil,** vous configurez la page web vers qui l’utilisateur est pris s’il ouvre la charge utile dans la simulation.
 
 - **Sélectionnez la préférence de page d’accueil**: les valeurs disponibles sont les suivantes :
-  - **Utilisez la page d’accueil par** défaut de Microsoft : il s’agit de la valeur par défaut qui dispose des options associées suivantes pour configurer :
+  - **Utilisez la page d’accueil par** défaut de Microsoft : il s’agit de la valeur par défaut à configurer avec les options suivantes :
     - **Sélectionnez la mise en page d’accueil**: sélectionnez l’un des modèles disponibles.
     - **Ajouter le logo**: cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier.
-    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
+    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages de hameçonnage.
 
     Vous pouvez afficher un aperçu des résultats en cliquant sur le bouton Ouvrir le panneau **d’aperçu** en bas de la page.
 
   - **Utilisez une URL personnalisée**: si vous sélectionnez cette valeur, vous devez ajouter l’URL dans la zone Entrée de l’URL de **page** d’accueil personnalisée qui s’affiche. Aucune autre option n’est disponible sur la page.
   - **Créez votre propre page d’accueil**: cette valeur est associée aux options suivantes pour configurer :
-    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
+    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages de hameçonnage.
     - Contenu de la page : deux onglets sont disponibles :
       - **Texte**: un éditeur de texte enrichi est disponible pour créer votre page d’accueil. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
         - **Balise dynamique**: sélectionnez l’une des balises suivantes :
@@ -249,7 +250,7 @@ Dans la **page d’accueil,** vous configurez la page web vers qui l’utilisate
           - **Adresse de messagerie de l’expéditeur**
           - **Sujet de l’e-mail**
           - **Contenu de l’e-mail**
-        - **À utiliser par défaut**: sélectionnez un modèle disponible pour commencer. Vous pouvez modifier le texte et la disposition dans la zone d’édition. Pour rétablir le texte et la mise en page par défaut de la page d’accueil du modèle, cliquez sur Réinitialiser **à la valeur par défaut.**
+        - **À utiliser par défaut**: sélectionnez un modèle disponible pour commencer. Vous pouvez modifier le texte et la disposition dans la zone d’édition. Pour rétablir le texte et la mise en page par défaut de la page d’accueil du modèle, cliquez sur **Réinitialiser à la valeur par défaut.**
     - **Code**: vous pouvez afficher et modifier le code HTML directement.
 
     Vous pouvez afficher un aperçu des résultats en cliquant sur le bouton Ouvrir le panneau **d’aperçu** au milieu de la page.
@@ -267,7 +268,7 @@ Les paramètres suivants sont disponibles :
 
 - Choisissez une des valeurs suivantes :
   - **Lancer cette simulation dès que j’ai terminé**
-  - **Planifier le lancement de cette simulation ultérieurement**: cette valeur est associée aux options suivantes pour configurer :
+  - **Planifier le lancement de cette simulation ultérieurement**: les options de configuration de cette valeur sont les suivantes :
     - **Sélectionner la date de lancement**
     - **Sélectionner l’heure de lancement**
 - **Configurez le nombre de jours pour terminer la simulation après**: la valeur par défaut est 2.
@@ -285,4 +286,4 @@ Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les par
 
 Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-![Examinez la page de simulation dans la formation sur la simulation d’attaques Microsoft 365 Defender portail.](../../media/attack-sim-training-simulations-review-simulation.png)
+![Examinez la page de simulation dans la formation sur la simulation d’attaques sur Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-review-simulation.png)

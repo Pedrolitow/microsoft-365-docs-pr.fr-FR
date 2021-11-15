@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f8a9d27566ea3f6fcf43ad2b8f183c6800bb8aa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883712"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963370"
 ---
 # <a name="web-protection"></a>Protection Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -55,7 +55,7 @@ Pour plus d’informations, voir [Protection contre les menaces web.](web-threat
 
 ### <a name="custom-indicators"></a>Indicateurs personnalisés
 
-Les détections d’indicateurs personnalisés sont également résumées dans les rapports sur les menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
+Les détections d’indicateurs personnalisés sont également résumées dans les rapports de menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
 
 L’indicateur personnalisé inclut :
 
@@ -71,7 +71,7 @@ Le filtrage de contenu **Web inclut l’activité Web par catégorie,** le résu
 
 Le filtrage de contenu Web inclut :
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
 - Vous pouvez facilement déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 - Vous pouvez accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
@@ -150,7 +150,7 @@ DeviceEvents 
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+| where Experience == "CustomBlockList"
 ```
 
 De même, vous pouvez utiliser la requête ci-dessous pour lister tous les blocs WCF provenant de la Protection du réseau (par exemple, un bloc WCF dans un navigateur tiers). Notez que ActionType a été mis à jour et que « Experience » a été changé en « ResponseCategory ».
@@ -167,7 +167,7 @@ Pour lister les blocs qui sont dus à d’autres fonctionnalités (comme les ind
 
 ## <a name="user-experience"></a>Expérience utilisateur
 
-Si un utilisateur visite une page web qui présente un risque de programmes malveillants, d’hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
+Si un utilisateur visite une page web qui présente un risque de programmes malveillants, de hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
 
 > [!div class="mx-imgBorder"]
 > ![Page bloquée par Microsoft Edge.](../../media/web-protection-malicious-block.png)

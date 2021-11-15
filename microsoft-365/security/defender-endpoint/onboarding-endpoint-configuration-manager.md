@@ -15,20 +15,21 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753772"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963418"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +79,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de Microsoft Endpoint Configuration Manager Wizard2.](images/configmgr-create-device-collection.png)
 
-3. Fournissez un **nom** et **limitez la collection,** puis sélectionnez **Suivant**.
+3. Fournissez **un nom** et **limitez la collection,** puis sélectionnez **Suivant**.
 
     ![Image de l Microsoft Endpoint Configuration Manager Wizard3.](images/configmgr-limiting-collection.png)
 
@@ -120,9 +121,9 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 et Windows 11
 
-À partir du portail Microsoft 365 Defender il est possible de télécharger la stratégie qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 et `.onboarding` Windows 11 périphériques.
+À partir du portail Microsoft 365 Defender, il est possible de télécharger la stratégie qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 et `.onboarding` Windows 11 périphériques.
 
-1. À partir d Microsoft 365 Defender portail, [sélectionnez Paramètres puis l’intégration.](https://security.microsoft.com/preferences2/onboarding)
+1. À partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">d Microsoft 365 Defender portail,</a> [sélectionnez Paramètres puis Intégration.](https://security.microsoft.com/preferences2/onboarding)
 
 2. Sous Méthode de déploiement, sélectionnez la version prise **en charge de Microsoft Endpoint Configuration Manager**.
 
@@ -174,7 +175,7 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defender pour le point de terminaison et la clé d’espace de travail, qui seront requis pour l’intégration des versions précédentes de Windows.
 
-1. Dans un portail Microsoft 365 Defender, **sélectionnez** Paramètres l’intégration des points de \>  \>  terminaison (sous Gestion **des appareils).**
+1. Dans un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a> **sélectionnez** Paramètres l’intégration des points de \>  \>  terminaison (sous Gestion **des appareils).**
 
 2. Sous le système **d’exploitation, Windows 7 SP1 et 8.1**.
 
@@ -194,7 +195,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
@@ -222,7 +223,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     [Analyse rapide par rapport à l’analyse complète et à l’analyse personnalisée](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Pour plus d’informations, voir [Sécurité Windows’infrastructure de configuration.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Pour plus d’informations, [voir Sécurité Windows’infrastructure de configuration.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Image du volet de protection nouvelle génération2.](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -240,7 +241,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération9.](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Cliquez avec le bouton droit sur la stratégie de logiciel anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
+3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
 
     ![Image du volet de protection nouvelle génération 10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
@@ -288,7 +289,7 @@ Après avoir effectué cette tâche, vous avez correctement configuré les règl
 
 Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les règles de réponse aux erreurs sont correctement appliquées aux points de terminaison. (Cela peut prendre quelques minutes)
 
-1. À partir d’un navigateur web, accédez à <https://security.microsoft.com> .
+1. À partir d’un navigateur web, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 2. Sélectionnez **Gestion de la configuration** dans le menu gauche.
 
@@ -304,7 +305,7 @@ Vous trouverez ci-dessous des étapes supplémentaires pour vérifier si les rè
 
     ![Capture d’écran des règles de réduction de la surface d’attaque reports2.](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-endpoint/configure-machines-asr) le déploiement et les détections de règles asr.
+Pour [plus d’informations, voir](/microsoft-365/security/defender-endpoint/configure-machines-asr) Optimiser le déploiement et les détections de règles asr.
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>Définir des règles de protection du réseau en mode audit
 
@@ -316,7 +317,7 @@ Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-en
 
 3. Définissez le paramètre sur **Audit et** cliquez sur **Suivant.**
 
-    ![Capture d’écran System Center Configuration Manager2.](images/c039b2e05dba1ade6fb4512456380c9f.png)
+    ![Capture d’System Center Configuration Manager2.](images/c039b2e05dba1ade6fb4512456380c9f.png)
 
 4. Confirmez la nouvelle stratégie Exploit Guard en cliquant sur **Suivant.**
 

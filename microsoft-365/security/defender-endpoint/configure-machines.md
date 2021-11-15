@@ -1,7 +1,7 @@
 ---
 title: Vérifier que vos appareils sont correctement configurés
 description: Configurez correctement les appareils pour renforcer la résilience globale contre les menaces et améliorer votre capacité à détecter les attaques et à y répondre.
-keywords: intégration, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
+keywords: intégré, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,20 +12,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dca768ea376531d7c9a47cf4425ba65e49911b23
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1babfd14883520968af283ed050945950bf3f6e0
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702188"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962578"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Vérifier que vos appareils sont correctement configurés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +44,7 @@ Cliquez **sur Gestion de la** configuration dans le menu de navigation pour ouvr
 
 *Page Gestion de la configuration des appareils*
 
-Vous pouvez suivre l’état de configuration au niveau de l’organisation et prendre rapidement des mesures en réponse à une couverture d’intégration médiocre, à des problèmes de conformité et à des atténuations de la surface d’attaque mal optimisées via des liens directs et profonds vers les pages de gestion des appareils sur le centre de sécurité Microsoft Intune et Microsoft 365.
+Vous pouvez suivre l’état de configuration au niveau de l’organisation et prendre rapidement des mesures en réponse à une couverture d’intégration médiocre, à des problèmes de conformité et à des atténuations de la surface d’attaque mal optimisées via des liens directs et profonds vers les pages de gestion des appareils sur le centre de sécurité Microsoft Intune et <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365.</a>
 
 Pour ce faire, vous bénéficiez des avantages de :
 
@@ -80,14 +81,14 @@ Si d’autres rôles vous ont été attribués, assurez-vous que vous avez les a
 *Autorisations de configuration d’appareil sur Intune*
 
 > [!TIP]
-> Pour en savoir plus sur l’attribution d’autorisations sur Intune, découvrez [la création de rôles personnalisés.](/intune/create-custom-role#to-create-a-custom-role)
+> Pour en savoir plus sur l’attribution d’autorisations sur Intune, découvrez [comment créer des rôles personnalisés.](/intune/create-custom-role#to-create-a-custom-role)
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique|Description
 :---|:---
 [Obtenir des appareils intégrés à Defender pour le point de terminaison](configure-machines-onboarding.md)|Suivre l’état d’intégration des appareils gérés par Intune et intégrer d’autres appareils via Intune. 
-[Renforcer la conformité à la ligne de base de sécurité de Defender for Endpoint](configure-machines-security-baseline.md)|Assurer le suivi de la conformité et de la non-conformité des lignes de base. Déployez la ligne de base de sécurité sur d’autres appareils gérés par Intune.
-[Optimiser le déploiement et les détections des règles ASR](configure-machines-asr.md)|Examinez le déploiement des règles et ajustez les détections à l’aide des outils d’analyse d’impact Microsoft 365 centre de sécurité.
+[Renforcer la conformité à la ligne de base de sécurité de Defender for Endpoint](configure-machines-security-baseline.md)|Suivre la conformité et la non-conformité des lignes de base. Déployez la ligne de base de sécurité sur d’autres appareils gérés par Intune.
+[Optimiser le déploiement et les détections des règles ASR](configure-machines-asr.md)|Examinez le déploiement des règles et ajustez les détections à l’aide des outils d’analyse d’impact <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 centre de sécurité.</a>
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

@@ -14,14 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres Microsoft 365 de sécurité supplémentaires que Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200160"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960861"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité accrue Microsoft 365 pour votre environnement de test Microsoft 365 entreprise
 
@@ -38,7 +39,7 @@ Avec les instructions de cet article, vous configurez des paramètres de Microso
 
 Si vous souhaitez simplement configurer une sécurité Microsoft 365 plus légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
-Si vous souhaitez configurer une sécurité Microsoft 365 sécurité accrue dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez configurer une sécurité Microsoft 365 plus grande dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
   
 > [!NOTE]
 > Le test d’une sécurité accrue Microsoft 365 ne nécessite pas l’environnement de test d’entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option afin que vous pouvez tester la gestion automatisée des licences et l’appartenance à un groupe et l’expérimenter dans un environnement qui représente une organisation classique. 
@@ -66,7 +67,7 @@ Les applications qui ne permettent pas l’authentification moderne ne peuvent p
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. Dans le volet de navigation de gauche, sous Gestion des menaces, cliquez sur **Stratégie,** puis cliquez Coffre **pièces jointes.** 
 
@@ -79,7 +80,7 @@ Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects y
 
 Les programmes malveillants sont constitués de virus et de logiciels espions. Les virus contaminent d'autres programmes et données, et ils se propagent dans votre ordinateur à la recherche de programmes à infecter. Les logiciels espions font référence à des programmes malveillants qui collectent vos informations personnelles, telles que des informations de connectez-vous et des données personnelles, et les renvoient à l’auteur du programme malveillant. 
 
-Microsoft 365 offre des fonctionnalités intégrées de filtrage des programmes malveillants et du courrier indésirable qui vous aident à protéger les messages entrants et sortants contre les logiciels malveillants et à vous protéger contre le courrier indésirable. Pour plus d’informations, consultez la & [protection anti-programme malveillant.](../security/office-365-security/anti-spam-and-anti-malware-protection.md)
+Microsoft 365 dispose de fonctionnalités intégrées de filtrage des programmes malveillants et du courrier indésirable qui vous aident à protéger les messages entrants et sortants contre les logiciels malveillants et à vous protéger contre le courrier indésirable. Pour plus d’informations, consultez [la & protection anti-programme malveillant.](../security/office-365-security/anti-spam-and-anti-malware-protection.md)
 
 Pour vous assurer que le traitement anti-programme malveillant est effectué sur des fichiers avec des types de fichiers de pièces jointes courants :
 
@@ -96,9 +97,9 @@ La gestion des menaces dans Microsoft 365 peut vous aider à contrôler et gére
 
 Pour voir le tableau de bord de sécurité :
 
-1. Si nécessaire, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Si nécessaire, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
-2. Dans le volet de navigation de gauche, sous Gestion **des menaces,** cliquez sur **Tableau de bord.**
+2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** cliquez sur **Tableau de bord.**
 
 Regardez attentivement toutes les cartes du tableau de bord pour vous familiariser avec les informations fournies.
 

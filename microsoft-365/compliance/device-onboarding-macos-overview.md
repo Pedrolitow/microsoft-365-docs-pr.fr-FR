@@ -14,24 +14,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: En savoir plus sur l’intégration d’appareils macOS dans des solutions de conformité
-ms.openlocfilehash: f7ff900fdbeca59a63c0acd2c2f542c6e96f367b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950688"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963250"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Intégration des appareils macOS dans la vue d'ensemble de Microsoft 365 (aperçu)
 
 Les appareils MacOS peuvent être intégrés à des solutions Microsoft 365 conformité à l’aide d’Intune ou de JAMF Pro. Les procédures d’intégration diffèrent en fonction de la solution de gestion que vous utilisez. Si vos appareils macOS ont déjà été intégrés à Microsoft Defender for Endpoint (MDE), il y a moins d’étapes. Consultez [les étapes](#next-steps) suivantes pour obtenir des liens vers les procédures appropriées pour vous.
 
-## <a name="get-registered"></a>S’inscrire
-
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la prise en charge Microsoft 365 macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
-
 **S’applique à :**
 
-- [Microsoft 365 protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -102,13 +98,13 @@ L’intégration d’appareils Microsoft 365 solutions de conformité est néces
 
 Rubrique | Description
 :---|:---
-|[Intégration et intégration d’appareils macOS dans Microsoft 365 solutions de conformité à l’aide d’Intune (aperçu)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Pour les appareils macOS gérés via Intune
-|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Pour les appareils macOS qui sont gérés via Intune et sur ceux sur qui Microsoft Defender pour le point de terminaison (MDE) est déployé
-|[Intégration et désintération des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Pour les appareils macOS gérés via JAMF Pro
-|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Pour les appareils macOS qui sont gérés via JAMF Pro et qui ont Microsoft Defender pour point de terminaison (MDE) déployé sur eux
+|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Pour les appareils macOS gérés via Intune
+|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Pour les appareils macOS gérés via Intune et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
+|[intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Pour les appareils macOS gérés via JAMF Pro
+|[Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Pour les appareils macOS gérés via JAMF Pro et sur lesquels Microsoft Defender pour point de terminaison (MDE) est déployé
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Matrice de prise en charge des conseils de stratégie DLP dans les applications Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

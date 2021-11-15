@@ -19,21 +19,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197076"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963190"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
 **S’applique à :**
 - Microsoft Defender pour point de terminaison
 
-Avec Microsoft Defender pour point [](automated-investigations.md) de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
+Avec Microsoft Defender pour le [](automated-investigations.md) point de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU!) Page Examen unifié
 
@@ -53,20 +55,20 @@ Vous pouvez ouvrir une vue Détails de l’examen avant impression comme suit :
 
 Le centre de [mesures amélioré](auto-investigation-action-center.md) regroupe des [actions](manage-auto-investigation.md#remediation-actions) de correction sur vos appareils, des & de collaboration et des identités. Les actions répertoriées incluent les actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
 
-1. Accédez à <https://security.microsoft.com> et connectez-vous.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
 3. Sous l’onglet **En attente** ou **Historique**, sélectionnez un élément. Son volet volant s’ouvre.
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md).
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md).
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Ouvrez un examen dans une page de détails d’incident
 
 La page Détails de l’incident permet d’afficher des informations détaillées sur un incident, notamment des alertes qui ont déclenché des informations sur les appareils, les comptes utilisateurs ou les boîtes aux lettres concernés.
 
-1. Accédez à <https://security.microsoft.com> et connectez-vous.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 2. Dans le volet de navigation, sélectionnez **Incidents &** \> **alertes Incidents**.
 3. Sélectionnez un élément dans la liste, puis choisissez **Ouvrir la page Incident.**
 4. Sélectionnez **l’onglet** Examens, puis un examen dans la liste. Son volet volant s’ouvre.

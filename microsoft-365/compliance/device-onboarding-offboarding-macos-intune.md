@@ -1,5 +1,5 @@
 ---
-title: Intégrer et intégrer des appareils macOS dans Microsoft 365 solutions de conformité à l’aide Microsoft Intune (prévisualisation)
+title: Intégration et intégration d’appareils macOS dans des solutions Microsoft 365 conformité à l’aide Microsoft Intune (prévisualisation)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,28 +13,24 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Découvrez comment intégrer et utiliser des appareils macOS dans des solutions Microsoft 365 conformité à l’aide Microsoft Intune (prévisualisation)
-ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+description: Découvrez comment intégrer et utiliser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide Microsoft Intune (prévisualisation)
+ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792279"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962710"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Intégration et intégration d’appareils macOS dans des solutions Microsoft 365 conformité à l’aide d’Intune (prévisualisation)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)
 
 Vous pouvez utiliser Intune pour intégrer des appareils macOS dans Microsoft 365 solutions de conformité.
 
 > [!IMPORTANT]
 > Utilisez cette procédure si ***Microsoft*** Defender pour point de terminaison (MDE) n’est pas déployé sur vos appareils macOS
 
-## <a name="get-registered"></a>S’inscrire
+**S’applique à :**
 
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la Microsoft 365 prise en charge macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
-
-**S’applique à :**
-
-- [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -63,7 +59,7 @@ L’intégration d’un appareil macOS aux solutions de conformité est un proce
 
 |fichier nécessaire pour |source |
 |---------|---------|
-|Package d’intégration    |téléchargé à partir du **package d’intégration du** portail de *conformité,* nom de fichierDeviceComplianceOnboarding.xml |
+|Package d’intégration    |téléchargé à partir du **package d’intégration du** portail de *conformité,* du nom deDeviceComplianceOnboarding.xml |
 |accessibilité |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |S filer réseau| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
@@ -220,7 +216,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Choose **Create**
 
-1. Sous **l’onglet Éléments de** base, nommez ce nouveau profil.
+1. Dans **l’onglet Informations de** base, nommez ce nouveau profil.
 
 1. Dans **l’onglet Paramètres de configuration,** **développez Extensions système.**
 
@@ -244,7 +240,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
  
 1. Pour **la méthode Déploiement,** choisissez **Gestion des périphériques mobiles/Microsoft Intune**
  
-1. Choisissez **Télécharger le package d’installation.** Cela vous donnera le *fichier wdav.pkg.*
+1. Choisissez **Télécharger le package d’installation.** Vous aurez ainsi le *fichier wdav.pkg.*
 
 > [!IMPORTANT]
 > Avant de pouvoir déployer *le wdav.pkg.* via Intune, il doit être reformaté à l’aide des outils d’habillage d’application *Intune* pour Mac au format *wdav.pkg.intunemac.*
@@ -259,12 +255,12 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > [!NOTE]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant six mois.
 
-2. Dans **Microsoft Endpoint Manager,** **ouvrez** les profils de configuration des appareils, vous devez voir vos  >  profils créés ici.
+2. Dans **Microsoft Endpoint Manager, ouvrez** **les** profils de configuration des appareils, vous devez y voir vos  >  profils créés.
 
 1. Dans la page **Profils de** configuration, choisissez le *profil wdav.pkg.intunemac.*
 
 1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
 
-1. Ouvrir **les propriétés** et **les affectations**
+1. Ouvrir **les propriétés** **et les affectations**
 
 1. Supprimez le groupe de l’affectation. Cela désinstalle le package *wdav.pkg.intunemac* et désinstalle l’appareil macOS des solutions de conformité.

@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-pilotmtpproject
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 25a36b74e612c5f09d9794c09d14301e6c32f4ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa9f41675c68f4d832c14b2cf1c33dcf1a9d9d6d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162409"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963286"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -37,7 +38,7 @@ Après avoir préparé votre environnement [pilote,](eval-defender-investigate-r
 
 Un incident dans Microsoft 365 Defender est une collection d’alertes corrélées et de données associées qui constitue l’histoire d’une attaque.
 
-Microsoft 365 services et applications créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques pour différents types d’entités, telles que les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client.
+Les services et applications Microsoft 365 créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques contre différents types d’entités, comme les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client.
 
 >[!Note]
 >Si vous débutez avec l’analyse de la sécurité et la réponse aux incidents, consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident.
@@ -53,7 +54,7 @@ Le Microsoft 365 Defender web dispose de fonctionnalités intégrées pour crée
 
 - Didacticiels d& des simulations pour Microsoft 365 Defender pour les points de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
 
-  Dans le portail Microsoft 365 Defender, sélectionnez Points de **terminaison > didacticiels & simulations.**
+  Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez Points de **terminaison > didacticiels & simulations.**
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>Formation à la simulation d Office 365 Defender for Office 365
 
@@ -69,7 +70,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 3. Obtenir des informations
 
-   Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations par le biais d’une [formation sur la simulation d’attaques.](/microsoft-365/security/office-365-security/attack-simulation-training-insights)
+   Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations via une formation à la [simulation d’attaques.](/microsoft-365/security/office-365-security/attack-simulation-training-insights)
 
 Pour plus d’informations, voir [Simulations.](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations)
 
@@ -126,11 +127,11 @@ Voici le résultat.
 
 ![Points de terminaison pour votre environnement d’évaluation Defender à l’aide du Guide de laboratoire de test d’entreprise simulée.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png)
 
-Vous allez simuler une attaque sophistiquée qui exploite des techniques avancées pour les masquer de la détection. L’attaque égrène les sessions SMB (Server Message Block) ouvertes sur les contrôleurs de domaine et récupère les adresses IP récentes des appareils des utilisateurs. Cette catégorie d’attaques n’inclut généralement pas les fichiers déposés sur l’appareil de la victime et se produisent uniquement en mémoire. Ils « habitent de la région » à l’aide des outils système et d’administration existants et injectent leur code dans les processus système pour masquer leur exécution. Ce comportement leur permet d’éviter toute détection et de persister sur l’appareil.
+Vous allez simuler une attaque sophistiquée qui exploite des techniques avancées pour les masquer de la détection. L’attaque égrène les sessions SMB (Server Message Block) ouvertes sur les contrôleurs de domaine et récupère les adresses IP récentes des appareils des utilisateurs. Cette catégorie d’attaques n’inclut généralement pas les fichiers déposés sur l’appareil de la victime et se produisent uniquement en mémoire. Ils « habitent de la région » à l’aide des outils système et d’administration existants et injectent leur code dans les processus système pour masquer leur exécution. Ce comportement leur permet d’éviter la détection et de persister sur l’appareil.
 
 Dans cette simulation, notre exemple de scénario commence par un script PowerShell. Dans le monde réel, un utilisateur peut être tenté d’exécuter un script ou le script peut s’exécuter à partir d’une connexion distante vers un autre ordinateur à partir d’un appareil précédemment infecté, ce qui indique que l’attaquant tente de se déplacer ultérieurement dans le réseau. La détection de ces scripts peut être difficile, car les administrateurs exécutent souvent des scripts à distance pour effectuer diverses activités administratives.
 
-![Diagramme d’attaque PowerShell sans fichier avec injection de processus et schéma d’attaques SMB.](../../media/mtp/mtpdiydiagram.png)
+![Diagramme d’attaque PowerShell sans fichier avec injection de processus et diagramme d’attaques SMB.](../../media/mtp/mtpdiydiagram.png)
 
 Au cours de la simulation, l’attaque injecte du shellcode dans un processus en apparence plus complexe. Le scénario nécessite l’utilisation de notepad.exe. Nous avons choisi ce processus pour la simulation, mais les attaquants cibleraient probablement un processus système de longue durée, tel que svchost.exe. Le shellcode contacte ensuite le serveur de commande et de contrôle (C2) de l’attaquant pour recevoir des instructions sur la façon de continuer. Le script tente d’exécuter des requêtes de reconnaissance sur le contrôleur de domaine ( DC). La reconnaissance permet à une personne malveillante d’obtenir des informations sur les informations de connexion utilisateur récentes. Une fois que les attaquants ont ces informations, ils peuvent se déplacer ultérieurement dans le réseau pour obtenir un compte sensible spécifique
 
@@ -175,7 +176,7 @@ Ce message s’affiche sur la console PowerShell lorsque ce script se termine :
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Pour voir la fonctionnalité Incident et réponse automatisé en action, maintenez le processus notepad.exe ouvert. Les incidents et réponses automatisés arrêtent le processus de Bloc-notes automatique.
+Pour voir la fonctionnalité Incident et réponse automatisé en action, maintenez le processus notepad.exe ouvert. Les incidents et réponses automatisés arrêtent le processus Bloc-notes automatique.
 
 ### <a name="investigate-the-incident-for-the-simulated-attack"></a>Examiner l’incident pour l’attaque simulée
 
@@ -186,7 +187,7 @@ Pour voir la fonctionnalité Incident et réponse automatisé en action, mainten
 
 Si vous basculez vers le point de vue de l’analyste SOC, vous pouvez maintenant commencer à examiner l’attaque dans Microsoft 365 Defender portail.
 
-1. Ouvrez [le portail Microsoft 365 Defender.](https://security.microsoft.com/)
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
 
 2. Dans le volet de navigation, sélectionnez **Incidents & Alerts > Incidents**.
 
@@ -198,15 +199,15 @@ Si vous basculez vers le point de vue de l’analyste SOC, vous pouvez maintenan
 
 Microsoft 365 Defender corréle les analyses et regroupe toutes les alertes et enquêtes associées de différents produits en une seule entité d’incident. Ce faisant, Microsoft 365 Defender présente un scénario d’attaque plus large, ce qui permet à l’analyste SOC de comprendre et de répondre aux menaces complexes.
 
-Les alertes générées au cours de cette simulation sont associées à la même menace et, par conséquent, sont automatiquement agrégées en tant qu’incident unique.
+Les alertes générées au cours de cette simulation sont associées à la même menace et, par conséquent, sont automatiquement regroupées en tant qu’incident unique.
 
 Pour afficher l’incident :
 
-1. Ouvrez [le portail Microsoft 365 Defender.](https://security.microsoft.com/)
+1. Ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
 
 2. Dans le volet de navigation, sélectionnez **Incidents & Alerts > Incidents**.
 
-3. Sélectionnez le dernier élément en cliquant sur le cercle situé à gauche du nom de l’incident. Un panneau latéral affiche des informations supplémentaires sur l’incident, y compris toutes les alertes associées. Chaque incident possède un nom unique qui le décrit en fonction des attributs des alertes qu’il inclut.
+3. Sélectionnez l’élément le plus récent en cliquant sur le cercle situé à gauche du nom de l’incident. Un panneau latéral affiche des informations supplémentaires sur l’incident, y compris toutes les alertes associées. Chaque incident possède un nom unique qui le décrit en fonction des attributs des alertes qu’il inclut.
 
    Les alertes affichées dans le tableau de bord peuvent être filtrées en fonction des ressources de service : Microsoft Defender pour l’identité, Microsoft Cloud App Security, Microsoft Defender pour le point de terminaison, Microsoft 365 Defender et Microsoft Defender pour Office 365.
 
@@ -229,15 +230,15 @@ Examinons quelques-unes des alertes générées pendant l’attaque simulée.
 
 Les attaquants avancés utilisent des méthodes sophistiquées et sophistiquées pour persister en mémoire et masquer les outils de détection. Une technique courante consiste à opérer à partir d’un processus système approuvé plutôt qu’à un exécutable malveillant, ce qui rend difficile pour les outils de détection et les opérations de sécurité de repérer le code malveillant.
 
-Pour permettre aux analystes SOC de capturer ces attaques avancées, les capteurs de mémoire profonde dans Microsoft Defender pour Endpoint fournissent à notre service cloud une visibilité sans précédent sur diverses techniques d’injection de code entre processus. La figure suivante montre comment Defender pour le point de terminaison a détecté et alerté sur la tentative d’injection de code <i>notepad.exe</i>.
+Pour permettre aux analystes SOC de capturer ces attaques avancées, les capteurs de mémoire profonde dans Microsoft Defender pour Point de terminaison fournissent à notre service cloud une visibilité sans précédent sur diverses techniques d’injection de code entre processus. La figure suivante montre comment Defender pour le point de terminaison a détecté et alerté sur la tentative d’injection de code <i>notepad.exe</i>.
 
 ![Exemple d’alerte d’injection de code potentiellement malveillant.](../../media/mtp/fig7.png)
 
 ##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>Alerte : comportement inattendu observé par un processus exécuté sans argument de ligne de commande (Source : Microsoft Defender pour point de terminaison)
 
-Les détections de Microsoft Defender pour les points de terminaison ciblent souvent l’attribut le plus courant d’une technique d’attaque. Cette méthode garantit la dulité et fait monter la barre pour que les attaquants basculent vers des tactiques plus nouvelles.
+Les détections microsoft Defender pour les points de terminaison ciblent souvent l’attribut le plus courant d’une technique d’attaque. Cette méthode garantit la dulité et fait monter la barre pour que les attaquants basculent vers des tactiques plus nouvelles.
 
-Nous employons des algorithmes d’apprentissage à grande échelle pour établir le comportement normal des processus courants au sein d’une organisation et dans le monde entier et nous regardons quand ces processus montrent des comportements anormaux. Ces comportements anormaux indiquent souvent que du code superflu a été introduit et s’exécute dans un processus autrement approuvé.
+Nous employons des algorithmes d’apprentissage à grande échelle pour établir le comportement normal des processus courants au sein d’une organisation et dans le monde entier, et nous regardons quand ces processus montrent des comportements anormaux. Ces comportements anormaux indiquent souvent que du code superflu a été introduit et s’exécute dans un processus autrement approuvé.
 
 Dans ce scénario, le <i> processus </i>notepad.exeprésente un comportement anormal, impliquant une communication avec un emplacement externe. Ce résultat est indépendant de la méthode spécifique utilisée pour introduire et exécuter le code malveillant.
 
@@ -254,7 +255,7 @@ La figure suivante affiche la page de détails de l’adresse IP sélectionnée 
 
 ![Exemple de page de détails d’adresse IP.](../../media/mtp/fig9.png)
 
-##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alerte : Reconnaissance des utilisateurs et des adresses IP (SMB) (Source : Microsoft Defender pour l’identité)
+##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alerte : Reconnaissance d’adresses UTILISATEUR et IP (SMB) (Source : Microsoft Defender pour l’identité)
 
 L’éumération à l’aide du protocole SMB (Server Message Block) permet aux personnes malveillantes d’obtenir des informations récentes sur l’utilisateur qui les aident à se déplacer ultérieurement via le réseau pour accéder à un compte sensible spécifique.
 
@@ -274,7 +275,7 @@ Sélectionnez **l’onglet** Chronologie pour ouvrir la chronologie de l’appar
 
 Le développement de certains des comportements les plus intéressants fournit des détails utiles, tels que les arbre de processus.
 
-Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte d’injection de processus suspect observé.** Sélectionnez lepowershell.exe injecté dans notepad.exe **événement** de processus sous celui-ci, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
+Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’événement d’alerte que l’injection de processus suspect a observé.** Sélectionnez lepowershell.exe injecté dans notepad.exe **événement** de processus sous celui-ci, pour afficher l’arborescence de processus complète de ce comportement sous le graphique **Entités** d’événements dans le volet latéral. Utilisez la barre de recherche pour le filtrage si nécessaire.
 
 ![Exemple d’arborescence de processus pour le comportement de création de fichier PowerShell sélectionné.](../../media/mtp/fig12.png)
 
@@ -301,23 +302,23 @@ Sélectionnez l’alerte qui a déclenché un examen pour ouvrir la page **Déta
 
 - Alerte qui a déclenché l’examen automatisé.
 - Utilisateurs et appareils touchés. Si des indicateurs sont trouvés sur des appareils supplémentaires, ces appareils supplémentaires sont également répertoriés.
-- Liste des preuves. Les entités trouvées et analysées, telles que les fichiers, les processus, les services, les pilotes et les adresses réseau. Ces entités sont analysées pour les relations possibles avec l’alerte et sont classés comme étant anodins ou malveillants.
+- Liste des preuves. Les entités trouvées et analysées, telles que les fichiers, les processus, les services, les pilotes et les adresses réseau. Ces entités sont analysées pour les relations possibles avec l’alerte et sont classés comme étant malveillants ou non malveillants.
 - Menaces trouvées. Menaces connues trouvées au cours de l’enquête.
 
 > [!NOTE]
-> Selon le délai, l’enquête automatisée est peut-être en cours d’exécution. Patientez quelques minutes avant de collecter et d’analyser les preuves et de passer en revue les résultats. Actualisez la page **Détails de l’examen** pour obtenir les dernières conclusions.
+> Selon le délai, l’enquête automatisée est peut-être toujours en cours d’exécution. Patientez quelques minutes avant de collecter et d’analyser les preuves et de passer en revue les résultats. Actualisez la page **Détails de l’examen** pour obtenir les dernières conclusions.
 
 ![Exemple de la page Détails de l’examen.](../../media/mtp/fig15.png)
 
 Au cours de l’examen automatisé, Microsoft Defender pour le point de terminaison a identifié le processus notepad.exe, qui a été injecté en tant qu’un des artefacts nécessitant une correction. Defender pour le point de terminaison arrête automatiquement l’injection de processus suspect dans le cadre de la correction automatisée.
 
-Vous pouvez <i> voir </i>notepad.exedisparaître de la liste des processus en cours d’exécution sur le périphérique de test.
+Vous pouvez voir <i>notepad.exe</i> disparaître de la liste des processus en cours d’exécution sur le périphérique de test.
 
 #### <a name="resolve-the-incident"></a>Résoudre l’incident
 
-Une fois que l’examen est terminé et que la correction a été confirmée, vous résolvez l’incident.
+Une fois l’examen terminé et confirmé qu’il a été corrigé, vous résolvez l’incident.
 
-Dans la page **Incident,** sélectionnez **Gérer l’incident.** Définissez l’état sur **Résoudre l’incident** et sélectionnez **Alerte true** pour la classification et les tests **de** sécurité pour la détermination.
+Dans la page **Incident,** sélectionnez **Gérer l’incident.** Définissez l’état **sur Résoudre l’incident** et sélectionnez **Alerte true** pour la classification et les **tests de** sécurité pour la détermination.
 
 ![Exemple de page incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez cliquer sur le commutateur pour résoudre l’incident.](../../media/mtp/fig16.png)
 

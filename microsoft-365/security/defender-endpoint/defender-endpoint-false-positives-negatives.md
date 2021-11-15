@@ -20,19 +20,21 @@ ms.collection:
 ms.topic: how-to
 ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
-ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom:
+- FPFN
+- admindeeplinkDEFENDER
+ms.openlocfilehash: 8dae7d3ce3c9473f99d8060dd35c3c6c4af1ea39
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882860"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962469"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
@@ -65,7 +67,7 @@ La gestion de vos alertes et la classification des faux positifs permettent de f
 
 Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exacte, faux positif ou anodin.
 
-1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. Dans le volet de navigation, sélectionnez **File d’attente des alertes.**
 
@@ -83,9 +85,9 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
 ### <a name="classify-an-alert"></a>Classifier une alerte
 
-Les alertes peuvent être classées en tant que faux positifs ou vrais positifs dans Microsoft 365 Defender. La classification des alertes permet de former Microsoft Defender pour le point de terminaison afin que, au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
+Les alertes peuvent être classées en tant que faux positifs ou vrais positifs dans Microsoft 365 Defender. La classification des alertes permet d’entraîner Microsoft Defender pour le point de terminaison afin que, au fil du temps, vous verrez plus d’alertes vraies et moins de fausses alertes.
 
-1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. Sélectionnez **la file d’attente des alertes,** puis sélectionnez une alerte.
 
@@ -100,7 +102,7 @@ Les alertes peuvent être classées en tant que faux positifs ou vrais positifs 
 
 Si vous avez des alertes qui sont de faux positifs ou qui sont de vrais positifs, mais pour des événements non importants, vous pouvez supprimer ces alertes dans Microsoft 365 Defender. La suppression d’alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité.
 
-1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. Dans le volet de navigation, sélectionnez **File d’attente Alertes.**
 
@@ -126,7 +128,7 @@ Si vous avez des alertes qui sont de faux positifs ou qui sont de vrais positifs
 
 D’autres actions, telles que le démarrage d’une analyse antivirus ou la collecte d’un package d’enquête, se produisent manuellement ou via [Live Response](live-response.md). Les actions prises via Live Response ne peuvent pas être annulées.
 
-Une fois que vous avez examiné vos alertes, l’étape suivante consiste à passer [en revue les actions de correction.](manage-auto-investigation.md) Si des actions ont été prises à la suite de faux positifs, vous pouvez annuler la plupart des types d’actions de correction. Plus précisément, vous pouvez :
+Une fois que vous avez examiné vos alertes, l’étape suivante consiste à passer [en revue les actions de correction.](manage-auto-investigation.md) Si des actions ont été prises à la suite de faux positifs, vous pouvez annuler la plupart des types d’actions de correction. Concrètement, vous pouvez :
 
 - [Restaurer un fichier mis en quarantaine à partir du centre de mise en quarantaine](#restore-a-quarantined-file-from-the-action-center)
 - [Annuler plusieurs actions à la fois](#undo-multiple-actions-at-one-time)
@@ -137,7 +139,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 
 ### <a name="review-completed-actions"></a>Passer en revue les actions terminées
 
-1. Dans le volet de navigation gauche du portail Microsoft 365 Defender, cliquez sur **Centre de l’action.**
+1. Dans le volet de navigation gauche du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>cliquez sur **Centre de l’action.**
 
 2. Sélectionnez **l’onglet** Historique pour afficher la liste des actions qui ont été entreprises.
 
@@ -153,7 +155,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Annuler plusieurs actions à la fois
 
-1. Dans le volet de navigation gauche du portail Microsoft 365 Defender, cliquez sur **Centre de l’action.**
+1. Dans le volet de navigation gauche du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>cliquez sur **Centre de l’action.**
 
 2. Sous **l’onglet** Historique, sélectionnez les actions à annuler.
 
@@ -164,7 +166,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 > [!div class="mx-imgBorder"]
 > ![Fichier de mise en quarantaine.](images/autoir-quarantine-file-1.png)
 
-1. Dans le volet de navigation gauche du portail Microsoft 365 Defender, cliquez sur **Centre de l’action.**
+1. Dans le volet de navigation gauche du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>cliquez sur **Centre de l’action.**
 
 2. Sous **l’onglet** Historique, sélectionnez un fichier dont le fichier de mise en quarantaine du type d’action **est sélectionné.**
 
@@ -188,7 +190,7 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
     > [!IMPORTANT]
     > Dans certains scénarios, **threatName** peut apparaître comme `EUS:Win32/CustomEnterpriseBlock!cl` . Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
     >
-    > Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
+    > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
@@ -208,7 +210,7 @@ Les procédures de cette section décrivent comment définir des exclusions et d
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour les Antivirus Microsoft Defender
 
-En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour le point de terminaison).](manage-atp-post-migration.md)
+En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
 
 > [!TIP]
 > Vous avez besoin d’aide sur les exclusions antivirus ? Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
@@ -249,7 +251,7 @@ En règle générale, il n’est pas nécessaire de définir des exclusions pour
 
 Les indicateurs (en particulier, les indicateurs de compromission ou les IOC) permettent à votre équipe des [opérations](/microsoft-365/security/defender-endpoint/manage-indicators) de sécurité de définir la détection, la prévention et l’exclusion des entités. Par exemple, vous pouvez spécifier certains fichiers à ne pas spécifier dans les analyses et les actions de correction dans Microsoft Defender for Endpoint. Vous pouvez également utiliser des indicateurs pour générer des alertes pour certains fichiers, adresses IP ou URL.
 
-Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour le point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs « autoriser » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection](microsoft-defender-antivirus-in-windows-10.md)nouvelle génération, [aux](overview-endpoint-detection-response.md)protection évolutive des points de terminaison et aux examens automatisés [& correction.](/microsoft-365/security/defender-endpoint/automated-investigations)
+Pour spécifier des entités en tant qu’exclusions pour Microsoft Defender pour le point de terminaison, créez des indicateurs « autoriser » pour ces entités. Ces indicateurs d'« autoriser » dans Microsoft Defender pour point de terminaison s’appliquent à la [protection](microsoft-defender-antivirus-in-windows-10.md)nouvelle génération, [aux](overview-endpoint-detection-response.md)protection évolutive des points de terminaison et aux examens automatisés & [correction.](/microsoft-365/security/defender-endpoint/automated-investigations)
 
 Les indicateurs « Autoriser » peuvent être créés pour :
 
@@ -352,7 +354,7 @@ Vérifiez votre niveau de protection dans le cloud pour Antivirus Microsoft Defe
 > [!TIP]
 > Pour en savoir plus sur la configuration de votre protection cloud, voir Spécifier le niveau de [protection livré par le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
-Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud . toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour le point de terminaison).](manage-atp-post-migration.md)
+Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection cloud (pour les stratégies existantes)
 
@@ -362,7 +364,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 3. Sous **Gérer,** sélectionnez **Propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-4. Développez **la protection** cloud et examinez votre paramètre actuel dans la ligne niveau de **protection cloud.** Nous vous recommandons de définir la protection cloud sur Non **configuré,** ce qui fournit une protection forte tout en réduisant les risques d’obtention de faux positifs.
+4. Développez **la protection** cloud et examinez votre paramètre actuel dans la ligne niveau **de protection livrée par le cloud.** Nous vous recommandons de définir la protection cloud sur Non **configuré,** ce qui fournit une protection forte tout en réduisant les risques d’obtention de faux positifs.
 
 5. Choose **Review + save,** and then **Save**.
 
@@ -374,7 +376,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 
 3. Pour **la plateforme,** sélectionnez une option, puis pour **profil,** sélectionnez **Antivirus** ou **Antivirus Microsoft Defender** (l’option spécifique dépend de ce que vous avez sélectionné pour la **plateforme.)** Ensuite, **sélectionnez Créer.**
 
-4. Sous **l’onglet Basics,** spécifiez un nom et une description pour la stratégie. Sélectionnez **Suivant**.
+4. Sous **l’onglet Informations de** base, spécifiez un nom et une description pour la stratégie. Sélectionnez **Suivant**.
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection cloud** et spécifiez les paramètres suivants :
 
@@ -396,7 +398,7 @@ Les applications potentiellement indésirables (PUA) sont une catégorie de logi
 
 Selon les applications utilisées par votre organisation, vous pouvez obtenir des faux positifs suite à vos paramètres de protection PUA. Si nécessaire, envisagez d’utiliser la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour Microsoft Edge navigateur et pour Antivirus Microsoft Defender.
 
-Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA . toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de [groupe](/azure/active-directory-domain-services/manage-group-policy) (voir [Gérer Microsoft Defender pour le point de terminaison).](manage-atp-post-migration.md)
+Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Utiliser Microsoft Endpoint Manager pour modifier la protection PUA (pour les profils de configuration existants)
 
@@ -448,7 +450,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 
-1. Go to Microsoft 365 Defender ( <https://security.microsoft.com> ) and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 
 2. Dans le coin supérieur droit, sélectionnez le point d’interrogation (**?**), puis sélectionnez **support Microsoft.**
 

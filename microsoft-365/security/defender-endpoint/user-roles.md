@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1591862a759b4d1df17d100e80185479c38d868c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554503"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960849"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
@@ -38,9 +39,9 @@ ms.locfileid: "60554503"
 
 Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365 Defender. Il part du principe que vous avez déjà créé Azure Active Directory groupes d’utilisateurs.
 
-1. Connectez-vous [à Microsoft 365 Defender](https://security.microsoft.com/) à l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
+1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">à Microsoft 365 Defender</a> à l’aide d’un compte attribué à un administrateur de sécurité ou à un rôle d’administrateur général.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
 
 3. Sélectionnez **Ajouter un élément.**
 
@@ -75,10 +76,10 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
     > [!NOTE]
     > Ce paramètre est uniquement disponible dans le rôle d’administrateur Microsoft Defender pour point de terminaison (par défaut).
 
-- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
+- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-carte, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-  - **Commandes** de base :
+  - **Commandes de** base :
     - Démarrer une session de réponse en direct
     - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
     - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
@@ -92,9 +93,9 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 ## <a name="edit-roles"></a>Modifier des rôles
 
-1. Connectez-vous [](https://security.microsoft.com/) Microsoft 365 Defender compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
 
 3. Sélectionnez le rôle que vous souhaitez modifier.
 
@@ -106,13 +107,13 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 ## <a name="delete-roles"></a>Supprimer des rôles
 
-1. Connectez-vous [](https://security.microsoft.com/) Microsoft 365 Defender compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
+1. Connectez-vous à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** rôles de points de \>  \> **terminaison** (sous **Autorisations).**
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 
-4. Cliquez sur le bouton de la déposer et sélectionnez **Supprimer le rôle.**
+4. Cliquez sur le bouton de la drop-down et **sélectionnez Supprimer le rôle**.
 
 ## <a name="related-topic"></a>Rubrique connexe
 

@@ -17,13 +17,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: 'Résumé : Étapes de migration eDiscovery pour la migration à partir de Microsoft Cloud Deutschland.'
-ms.openlocfilehash: afea899e06a732ff0ab13bf416410aa94bc3c191
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 08c44374b834796bce5f624008dd2f7493e7c3f7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168445"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963070"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Informations sur l’expérience eDiscovery lors de la migration à partir de Microsoft Cloud Deutschland
 Les sections suivantes fournissent des informations supplémentaires sur l’expérience eDiscovery lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à des services Office 365 dans la nouvelle région de centres de données allemands.
@@ -49,8 +50,8 @@ Dans le cas où une recherche renvoie zéro résultat ou une erreur lors de la m
 
 **S’applique à :** Tous les clients utilisant eDiscovery
 
-À la phase 9, les étapes finales de déplacement vers la nouvelle région de centres de données allemande seront terminées. Dans cette phase, tous les composants de service restants seront migrés.
-Après la phase 9, l’utilisation du Centre de sécurité et conformité dans Microsoft Cloud Germany (protection.office.de) n’est plus prise en charge. Utilisez plutôt le nouveau [Centre de sécurité](https://security.microsoft.com/) ou [centre](https://compliance.microsoft.com/) de conformité. Toutes les données ont été migrées vers les nouveaux portails d’administration.
+À la phase 9, les dernières étapes de déplacement vers la nouvelle région de centres de données allemande seront effectuées. Dans cette phase, tous les composants de service restants seront migrés.
+Après la phase 9, l’utilisation du Centre de sécurité et conformité dans Microsoft Cloud Germany (protection.office.de) n’est plus prise en charge. Utilisez le nouveau <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365 sécurité ou</a> le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> à la place. Toutes les données ont été migrées vers les nouveaux portails d’administration.
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|

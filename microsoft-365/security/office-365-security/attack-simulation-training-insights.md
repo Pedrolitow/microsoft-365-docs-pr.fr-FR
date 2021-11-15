@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent découvrir comment la formation à la simulation d’attaques dans le portail Microsoft 365 Defender affecte les utilisateurs et peut obtenir des informations à partir des résultats de simulation et de formation.
 ms.technology: mdo
-ms.openlocfilehash: f101abfb8d7ebd771ab2d02847f9371d35441ae6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 362f094d340b4f80a7b6fd54b1325540b812fa3e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702619"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962914"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Informations et rapports pour la formation à la simulation d’attaques dans Defender pour Office 365
 
@@ -25,18 +26,18 @@ ms.locfileid: "60702619"
 
 Dans la formation à la simulation d’attaques dans Microsoft Defender pour Office Plan 2 ou Microsoft 365 E5, Microsoft fournit des informations et des rapports à partir des résultats des simulations et des formations correspondantes. Ces informations vous informent de la progression de la préparation aux menaces de vos utilisateurs, ainsi que les étapes suivantes recommandées pour mieux préparer vos utilisateurs aux attaques futures.
 
-Informations et rapports sont disponibles aux emplacements suivants dans la formation à la simulation d’attaques sur Microsoft 365 Defender portail :
+Informations et rapports sont disponibles aux emplacements suivants dans la formation à la simulation d’attaques sur le portail Microsoft 365 Defender:
 
 - Onglet **Vue d’ensemble.**
 - Détails de simulation sous **l’onglet Simulations.**
 
 Le reste de cet article décrit les informations disponibles.
 
-Pour plus d’informations sur la formation à la simulation d’attaque, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
+Pour plus d’informations sur la formation à la simulation d’attaques, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Informations et rapports sous l’onglet Vue d’ensemble de la formation à la simulation d’attaque
 
-Pour aller  à l’onglet Vue d’ensemble, ouvrez le portail Microsoft 365 Defender à l’adresse , allez à la formation sur la simulation d’attaques de collaboration sur la messagerie & et vérifiez que <https://security.microsoft.com/> l’onglet Vue d’ensemble est sélectionné (il  \>   s’agit de la valeur par défaut). Pour aller directement à l’onglet **Vue** d’ensemble de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=overview> .
+Pour aller  à l’onglet Vue d’ensemble, ouvrez le portail Microsoft 365 Defender à l’adresse , allez à la formation sur la simulation d’attaques de collaboration sur la messagerie & et vérifiez que <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> l’onglet Vue d’ensemble est sélectionné (il  \>   s’agit de la valeur par défaut). Pour aller directement à l’onglet **Vue** d’ensemble de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=overview> .
 
 Le reste de cette section décrit les informations  disponibles sous l’onglet Vue d’ensemble de la formation sur la simulation d’attaque.
 
@@ -56,9 +57,9 @@ La sélection de **Lancer une simulation démarre** l’Assistant Création de s
 
 **L’impact du comportement** sur  la carte taux de compromis sous l’onglet Vue d’ensemble montre comment vos utilisateurs ont répondu à vos simulations par rapport aux données historiques dans Microsoft 365. Vous pouvez utiliser ces informations pour suivre la progression de la préparation des utilisateurs aux menaces en exécutant plusieurs simulations sur les mêmes groupes d’utilisateurs.
 
-Les données de graphique elles-mêmes indiquent les informations suivantes :
+Les données du graphique elles-mêmes indiquent les informations suivantes :
 
-- **Taux de compromission prévu**: taux moyen de compromission pour les simulations de simulation d’attaque qui utilisent le même type de charge utile dans toutes <sup>\*</sup> les autres Microsoft 365 organisations.
+- **Taux de compromission prévu**: taux moyen de compromission pour les simulations d’entraînement de simulation d’attaque qui utilisent le même type de charge utile dans <sup>\*</sup> toutes les autres Microsoft 365 organisations.
 - **Taux de compromission réel**: pourcentage réel d’utilisateurs qui ont <sup>\*</sup> été perdus pour la simulation.
 
 Si vous pointez sur un point de données dans le graphique, les valeurs de pourcentage réelles sont affichées.
@@ -80,7 +81,7 @@ La sélection de **la simulation** de lancement pour les utilisateurs non simul�
 
 La sélection **du rapport de couverture de simulation d’affichage** vous permet d’afficher l’onglet Couverture utilisateur du rapport de simulation [d’attaque.](#user-coverage-tab-for-the-attack-simulation-report)
 
-![Carte de couverture de simulation sous l’onglet Vue d’ensemble dans la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-overview-sim-coverage-card.png)
+![Carte de couverture de simulation sous l’onglet Vue d’ensemble de la formation à la simulation d’attaques dans Microsoft 365 Defender portail.](../../media/attack-sim-training-overview-sim-coverage-card.png)
 
 ### <a name="training-completion-card"></a>Fiche d’achèvement de formation
 
@@ -92,7 +93,7 @@ La **carte d’achèvement** formation sous l’onglet Vue d’ensemble organise
 
 Vous pouvez pointer sur une section du graphique pour voir le nombre réel d’utilisateurs dans chaque catégorie.
 
-La sélection du **rapport d’achèvement de** l’entraînement vous permet d’afficher l’onglet Fin de l’entraînement [pour le rapport de simulation d’attaque.](#training-completion-tab-for-the-attack-simulation-report)
+La sélection du **rapport d’achèvement de l’entraînement** vous permet d’afficher l’onglet Fin de l’entraînement [pour le rapport de simulation d’attaque.](#training-completion-tab-for-the-attack-simulation-report)
 
 ### <a name="repeat-offenders-card"></a>Répéter la carte de répétition
 
@@ -119,7 +120,7 @@ La sélection **du lancement démarre** maintenant l’Assistant Création de si
 
 ### <a name="attack-simulation-report"></a>Rapport de simulation d’attaque
 
-Vous pouvez ouvrir le rapport **de simulation d’attaque** à partir de l’onglet **Vue** d’ensemble en cliquant sur **l’affichage... boutons** de rapport disponibles dans la plupart des cartes décrites dans cet article. Pour aller directement au rapport, utilisez <https://security.microsoft.com/attacksimulationreport>
+Vous pouvez ouvrir le rapport **de simulation d’attaque** à partir de l’onglet **Vue** d’ensemble en cliquant sur **l’affichage... boutons** de rapport disponibles dans de nombreuses cartes décrites dans cet article. Pour aller directement au rapport, utilisez <https://security.microsoft.com/attacksimulationreport>
 
 #### <a name="training-efficacy-tab-for-the-attack-simulation-report"></a>Onglet Efficacité de formation pour le rapport de simulation d’attaque
 
@@ -248,7 +249,7 @@ Si vous cliquez sur ![ l’icône Exporter.](../../media/m365-cc-sc-download-ico
 
 ## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Informations rapports dans les détails de simulation de la formation à la simulation d’attaques
 
-Pour aller à l’onglet **Simulations,** ouvrez le portail Microsoft 365 Defender à l’adresse e-mail & formation sur la simulation d’attaques de collaboration, puis cliquez sur l’onglet <https://security.microsoft.com/>  \>  **Simulations.** Pour aller directement à l’onglet **Simulations** de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
+Pour aller à l’onglet **Simulations,** ouvrez le portail Microsoft 365 Defender à l’adresse e-mail & formation sur la simulation d’attaques de collaboration, puis cliquez sur l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \>  **Simulations.** Pour aller directement à l’onglet **Simulations** de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 
 Lorsque vous sélectionnez une simulation dans la liste, une page de détails s’ouvre. Cette page contient les paramètres de configuration de la simulation que vous vous attendez à voir (état, date de lancement, charge utile utilisée, etc.).
 
@@ -256,7 +257,7 @@ Le reste de cette section décrit les informations et les rapports disponibles s
 
 ### <a name="simulation-impact-section"></a>Section Impact de la simulation
 
-La section **Sur l’impact** de la simulation de la page détails de la simulation indique le nombre d’utilisateurs complètement dupliés par la simulation et le nombre total d’utilisateurs de la simulation. Les informations affichées varient en fonction du type de simulation. Par exemple :
+La section **Sur l’impact** de la simulation de la page détails de la simulation indique le nombre d’utilisateurs complètement dupliés par la simulation et le nombre total d’utilisateurs dans la simulation. Les informations affichées varient en fonction du type de simulation. Par exemple :
 
 - Liens : **informations d’identification entrées** et non **entrées.**
 
@@ -270,7 +271,7 @@ Si vous pointez sur une section du graphique, les nombres réels de chaque caté
 
 ### <a name="all-user-activity-section"></a>Section Toutes les activités de l’utilisateur
 
-La section **Tout l’activité des** utilisateurs de la page des détails de la simulation affiche des nombres pour les résultats possibles de la simulation. Les informations affichées varient en fonction du type de simulation. Par exemple :
+La section **Tout l’activité des** utilisateurs de la page détails de la simulation affiche des nombres pour les résultats possibles de la simulation. Les informations affichées varient en fonction du type de simulation. Par exemple :
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail**: nombre d’utilisateurs qui ont signalé le message de simulation comme suspect.
@@ -293,7 +294,7 @@ La section **Formation terminée** sur la page des détails de la simulation ind
 
 ## <a name="recommended-actions-section"></a>Section Actions recommandées
 
-La section **Actions recommandées** de la page des détails de la simulation affiche les actions de recommandation du Score de sécurité [Microsoft](../defender/microsoft-secure-score.md) et l’impact de l’action sur votre score de sécurité. Ces recommandations sont basées sur la charge utile qui a été utilisée dans la simulation et vous aideront à protéger vos utilisateurs et votre environnement. La sélection **d’une action d’amélioration** dans la liste vous place à l’emplacement où implémenter l’action suggérée.
+La section **Actions recommandées** de la page détails de la simulation affiche les actions de recommandation du Score de sécurité [Microsoft](../defender/microsoft-secure-score.md) et l’impact de l’action sur votre score de sécurité. Ces recommandations sont basées sur la charge utile qui a été utilisée dans la simulation et vous aideront à protéger vos utilisateurs et votre environnement. La sélection **d’une action d’amélioration** dans la liste vous place à l’emplacement où implémenter l’action suggérée.
 
 ![Section Actions de recommandation sur la formation à la simulation d’attaques.](../../media/attack-sim-training-sim-details-recommended-actions.png)
 
@@ -303,4 +304,4 @@ La section **Actions recommandées** de la page des détails de la simulation af
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)
+[créer une charge utile pour former vos personnes](attack-simulation-training-payloads.md)

@@ -14,24 +14,25 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d27a3cfb2d3c068a1d2b26ffba6b0061b143503f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b3c01215db133f5e39c56596c051e071388b5b80
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699292"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963274"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
 
-Cet article fournit quelques étapes générales pour atténuer les événements ou alertes manquants dans [le portail Microsoft 365 Defender.](https://security.microsoft.com/)
+Cet article fournit quelques étapes générales pour atténuer les événements ou alertes manquants dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender.</a>
 
 Une **fois que Microsoft Defender pour le point** de terminaison a été correctement installé sur un appareil, une _page_ d’appareil est générée dans le portail. Vous pouvez passer en revue tous les événements enregistrés dans l’onglet Chronologie de la page de l’appareil ou dans la page de recherche avancée. Cette section permet de résoudre les problèmes de certains événements attendus ou de tous.
 Par exemple, si tous _les événements CreatedFile_ sont manquants.

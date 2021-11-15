@@ -1,7 +1,7 @@
 ---
-title: Intégrer des Windows à l’aide des outils de gestion des appareils mobiles
+title: Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender for Endpoint.
-keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégration de Microsoft Defender pour les appareils Endpoint, mdm
+keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégration de Microsoft Defender pour les appareils endpoint, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 1d0bfb7070f06b94aeaea69f0563e4f5e5d1ca67
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239875"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963082"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Intégrer des Windows à l’aide des outils de gestion des appareils mobiles
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,16 +30,16 @@ ms.locfileid: "60239875"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer Windows 10 appareils mobiles. Defender for Endpoint prend en charge les appareils mobiles en fournissant des OMA-URIs pour créer des stratégies pour gérer les appareils.
+Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer Windows 10 appareils mobiles. Defender for Endpoint prend en charge les appareils mobiles en fournissant OMA-URIs pour créer des stratégies pour gérer les appareils.
 
 
 Pour plus d’informations sur l’utilisation du programme CSP Defender for Endpoint, voir le fichier DDF [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection.](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des périphériques. Dans le cas contraire, les paramètres ne seront pas appliqués correctement.
+Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement.
 
 Pour plus d’informations sur l’activation de la gestion des périphériques Microsoft Intune, voir [Inscription d’appareil (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
@@ -64,18 +65,18 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Utiliser les outils de gestion des périphériques mobiles pour les appareils mobiles pour les hors-bord et les surveiller
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
+1. Obtenez le package deboarding à partir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
 
    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
 
    1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
 
-   1. Dans le **champ Méthode de déploiement,** sélectionnez Gestion des périphériques **mobiles /Microsoft Intune**.
+   1. Dans le **champ Méthode de déploiement,** sélectionnez **Gestion des périphériques mobiles /Microsoft Intune**.
 
    1. Cliquez **sur Télécharger le package,** puis enregistrez .zip fichier.
 
@@ -89,15 +90,15 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 Pour plus d’informations Microsoft Intune paramètres de stratégie, voir Windows 10 [paramètres de](/mem/intune/configuration/custom-settings-windows-10)stratégie dans Microsoft Intune .
 
 > [!NOTE]
-> La **stratégie État d’état d’état des appareils** déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
+> La **stratégie État d’état d’état des** appareils déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-## <a name="related-topics"></a>Rubriques connexes
-- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
+## <a name="related-topics"></a>Sujets connexes
+- [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

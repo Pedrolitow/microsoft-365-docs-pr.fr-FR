@@ -15,21 +15,22 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f68bd40afd0094f8a319f10c6e71d0cee94cef28
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754430"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963382"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -47,7 +48,7 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 - Validation des licences
 - Configuration du client
-- Configuration du réseau
+- Configuration réseau
 
 > [!NOTE]
 > Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation des Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Appareils intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md)
@@ -60,7 +61,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
    ![Image de la page Gestion des licences Azure.](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder au Centre d’administration pour accéder **aux** \> **abonnements de facturation.**
+1. Vous pouvez également accéder aux  abonnements de facturation dans le Centre \> **d’administration.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -80,9 +81,9 @@ Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour 
 
 L’intégration à Microsoft Defender pour le point de terminaison est facile. Dans le menu de navigation, sélectionnez n’importe quel élément sous la section Points de terminaison ou toute fonctionnalité Microsoft 365 Defender telle que les incidents, le chasse, le centre de mesures ou l’analyse des menaces pour lancer le processus d’intégration.
 
-À partir d’un navigateur web, accédez au [centre Microsoft 365 sécurité.](https://security.microsoft.com)
+À partir d’un navigateur web, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365 sécurité.</a>
 
-## <a name="network-configuration"></a>Configuration du réseau
+## <a name="network-configuration"></a>Configuration réseau
 
 Si l’organisation n’exige pas que les points de terminaison utilisent un proxy pour accéder à Internet, ignorez cette section.
 
@@ -141,7 +142,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 > [!NOTE]
 >
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -157,7 +158,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
 
-Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows  Serveur CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 

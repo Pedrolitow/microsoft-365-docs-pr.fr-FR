@@ -12,20 +12,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883436"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962626"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,19 +41,19 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 ## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
 
 - Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
-- Votre abonnement inclut l’un des Windows 10 Entreprise suivants : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité ou le module Licence autonome Microsoft Defender pour point de terminaison. 
+- Votre abonnement inclut l’un des Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité  module ou licence autonome Microsoft Defender pour point de terminaison. 
 
-- Vous avez accès à Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ).
+- Vous avez accès à <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail.</a>
 
 - Les appareils de votre organisation exécutent la mise à jour anniversaire Windows 10 (version 1607) ou une version ultérieure, ou Windows 11 avec les dernières mises à jour [antivirus/anti-programme malveillant.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
@@ -64,7 +65,7 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison \> **fonctionnalités** \>  \> **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
+Dans le portail de navigation de gauche  <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>sélectionnez Paramètres points de terminaison Fonctionnalités avancées \>  \>  \> **générales.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculer le bouton bascule sur **Sur** et **Enregistrer les préférences**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
@@ -79,13 +80,13 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Jeux :** jeux en ligne et sites qui favorisent les compétences et la pratique en matière de jeux.
 
-**Nudity**: sites qui fournissent des images ou vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
+**Nudity**: sites qui fournissent des images ou des vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
 
-**Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu à orientation sexuelle est également répertoriée ici.
+**Forcément explicite / sexuellement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu à orientation sexuelle est également répertoriée ici.
 
 Éducation sexuelle : sites qui traitent de la violence et de la violence d’une manière informative et non-sexuelle, y compris les sites qui fournissent une éducation sur la reproduction humaine et la santé humaine, les sites qui fournissent des conseils sur la prévention des infections sexuelles et les sites qui fournissent des conseils sur les sujets de santé sexuelle.
 
-**N’a** pas de valeur : sites orientés vers du contenu qui ne convient pas aux enfants de l’école ou qu’un employeur ne serait pas en conflit avec l’accès de son personnel, mais pas nécessairement violent ou concis.
+**N’a** pas de valeur : sites orientés vers du contenu qui ne convient pas aux enfants d’écoles ou qu’un employeur ne serait pas en conflit avec l’accès de son personnel, mais pas nécessairement violent ou concis.
 
 **Violence**: sites qui affichent ou promeuvent du contenu lié à la violence contre les humains ou les animaux.
 
@@ -109,7 +110,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Images d’abus enfants**: sites qui incluent des images d’abus ou des images d’abus enfants. 
 
-**Activités pénales**: sites qui donnent des instructions sur, des conseils sur ou la promotion d’activités illégales.
+**Activités pénales**: sites qui donnent des instructions sur, des conseils ou la promotion d’activités illégales.
 
 **Piratage :** sites qui fournissent des ressources pour une utilisation illégale ou discutable de logiciels informatiques ou de matériel, y compris les sites qui distribuent des documents protégés par des droits d’auteur qui ont été déchiffrés.
 
@@ -123,12 +124,12 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Auto-nuire :** sites qui promeuvent les auto-dommages, y compris les sites de cyberintimidation qui contiennent des messages abusifs et/ou offensants à l’égard des utilisateurs.
 
-**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’errs, à la chasse et à la chasse.
+**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’histoire, à la chasse et à la défense.
 
 </details>
 
 <details>
-<summary>Sons</summary>
+<summary>Resoe</summary>
 
 **Conversation**: sites qui sont principalement des salles de conversation web.
 
@@ -159,7 +160,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 Pour ajouter une nouvelle stratégie, suivez les étapes suivantes :
 
-1. In the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ), choose **Paramètres** Web  >  **content filtering**  >  **+ Add policy**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender, choisissez</a>Paramètres filtrage de contenu   >  **Web**+ Ajouter une  >  **stratégie.**
 
 2. Spécifiez un nom.
 
@@ -185,7 +186,7 @@ Il est possible de remplacer la catégorie bloquée dans le filtrage de contenu 
 
 Pour définir un indicateur personnalisé, suivez les étapes suivantes :
 
-1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), go to **Paramètres** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Paramètres** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
 
 2. Entrez le domaine du site.
 

@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207315"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963178"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender pour l’état et les paramètres du capteur d’identité dans Microsoft 365 Defender
 
@@ -21,14 +22,14 @@ ms.locfileid: "59207315"
 - Microsoft 365 Defender
 - Defender pour l’identité
 
-Cet article explique comment configurer et surveiller les capteurs [d’identité Microsoft Defender](/defender-for-identity) dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+Cet article explique comment configurer et surveiller les capteurs [Microsoft Defender pour l’identité](/defender-for-identity) [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+>Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
-## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Affichage des paramètres et de l’état du capteur d’identité View Defender
+## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Afficher les paramètres et l’état du capteur d’identité View Defender
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Paramètres** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Paramètres** and then **Identities**.
 
     ![Go to Paramètres, then Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -71,7 +72,7 @@ Cet article explique comment configurer et surveiller les capteurs [d’identit�
 
     ![Ajoutez un capteur.](../../media/defender-identity/add-sensor.png)
 
-1. Un volet s’ouvre, vous fournissant un bouton permettant de télécharger le programme d’installation du capteur et une touche d’accès rapide générée.
+1. Un volet s’ouvre, vous fournissant un bouton pour télécharger le programme d’installation du capteur et une touche d’accès rapide générée.
 
     ![Téléchargez le programme d’installation et la touche d’accès rapide.](../../media/defender-identity/installer-access-key.png)
 
