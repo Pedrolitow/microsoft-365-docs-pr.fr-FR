@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 122831c83c7121d91b61c86828634db575208edd
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792435"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962674"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -44,8 +44,8 @@ Lorsque vous êtes prêt à protéger les données de votre organisation en util
 
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une étiquette unique est réutilisable : vous la définissez une fois, puis vous l’incluez dans plusieurs stratégies d’étiquette affectées à différents utilisateurs. Par exemple, vous pouvez piloter vos étiquettes de confidentialité en attribuant une stratégie d’étiquette à quelques utilisateurs seulement. Lorsque vous êtes prêt à déployer les étiquettes dans votre organisation, vous pouvez créer une nouvelle stratégie d’étiquette pour vos étiquettes et spécifier cette fois tous les utilisateurs.
 
-> [!TIP]
-> Vous pouvez être éligible aux étiquettes par défaut et à une stratégie d’étiquette par défaut qui s’occupe des étapes 1 à 3 pour vous. Pour plus d’informations, voir [Étiquettes et stratégies par défaut pour Microsoft Information Protection](mip-easy-trials.md).
+
+> Vous pouvez être éligible à la création automatique d’étiquettes par défaut et à une stratégie d’étiquette par défaut qui s’occupe des étapes 1 à 3 à votre place. Pour plus d’informations, voir [Étiquettes et stratégies par défaut pour Microsoft Information Protection](mip-easy-trials.md).
 
 Flux de base pour le déploiement et l'application d'étiquettes de confidentialité :
 

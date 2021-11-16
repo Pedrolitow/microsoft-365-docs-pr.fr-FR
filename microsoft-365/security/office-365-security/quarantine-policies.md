@@ -17,17 +17,14 @@ ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bfb89d73649c3607909c6a66d4344b6d63b6470
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 77e24e4c1f4040ee97fbbdfd3b7c0208955c17d9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963022"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972047"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
-
-> [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en cours de développement et ne sont peut-être pas encore disponibles. La date cible du déploiement à l’échelle du monde est le 31 octobre 2021.
 
 Les stratégies de mise en quarantaine (auparavant appelées balises de mise en _quarantaine)_ dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365 permettent aux administrateurs de contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages en fonction de la raison pour laquelle le message a été mis en quarantaine.
 
@@ -53,7 +50,7 @@ Les autorisations de stratégie de mise en quarantaine individuelles contenues d
 |---|:---:|:---:|:---:|
 |**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Preview** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)|||![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander qu’un message soit libéré** de la quarantaine (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 |
@@ -74,6 +71,8 @@ Vous créez et affectez des stratégies de mise en quarantaine dans le portail M
 
 > [!NOTE]
 > La durée de mise en quarantaine des messages mis  en quarantaine avant leur expiration est contrôlée par la stratégie de rétention du courrier indésirable en quarantaine pendant ce nombre de jours _(QuarantineRetentionPeriod_) dans les stratégies anti-courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+>
+> Si vous modifiez la stratégie de mise en quarantaine affectée à une  fonctionnalité de protection prise en charge, la modification affecte les messages mis en quarantaine après la modification. Les messages précédemment mis en quarantaine par cette fonctionnalité de protection ne sont pas affectés par les paramètres de la nouvelle attribution de stratégie de mise en quarantaine.
 
 ## <a name="full-access-permissions-and-quarantine-notifications"></a>Autorisations d’accès total et notifications de mise en quarantaine
 
@@ -377,7 +376,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _\* paramètres Enable_ sont requis pour activer les fonctionnalités de protection spécifiques. La valeur par défaut des paramètres _EnableMailboxIntelligence_ et _EnableSpoofIntelligence_ est $true, vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez des stratégies anti-hameçonnage dans PowerShell. Tous les _autres paramètres Enable \*_ doivent avoir la valeur $true afin que vous pouvez définir la valeur Mise en quarantaine dans les paramètres _\* d’action_ correspondants pour affecter ensuite une stratégie de mise en quarantaine. Aucun des paramètres _*\Action_ n’a la valeur par défaut Quarantaine.
 
@@ -502,7 +501,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _valeurs_ du paramètre Action Block, Replace ou DynamicDelivery peuvent entraîner la mise en quarantaine des messages (la valeur Autoriser ne met pas les messages en quarantaine). La valeur du paramètre _Action_ n’est significative que lorsque la valeur du _paramètre Enable_ est `$true` .
 

@@ -16,17 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ab59d5511037d9b1c1a4b0aa7a6404ab27b8fb56
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 379fc203c16c319b293f29d396f121dc81148bd9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586100"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972035"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
+
+- Ajout d’un nouveau commutateur à l’outil en ligne de commande pour contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+- Correctifs de bogue
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
@@ -40,9 +44,8 @@ ms.locfileid: "60586100"
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
 - Ajout de nouveaux commutateurs à l’outil en ligne de commande :
-  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré par le biais `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . Par défaut, un degré de parallélisme `2` est utilisé.
-  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré par le biais `mdatp config scan-after-definition-update --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
-  - Contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré par le biais `mdatp config scan-archives --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` . Par défaut, un degré de parallélisme `2` est utilisé.
+  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
 - La modification du niveau du journal des produits nécessite désormais une élévation
 - Correctifs de bogue
 
@@ -81,7 +84,7 @@ ms.locfileid: "60586100"
 ## <a name="1011853"></a>101.18.53
 
 - PEPT linux est désormais [généralement disponible](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions antivirus lors des `--ignore-exclusions` analyses personnalisées ( `mdatp scan custom` )
+- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
 - Étendu avec un nouveau paramètre ( ) qui permet d’enregistrer les journaux de diagnostic dans `mdatp diagnostic create` `--path [directory]` un autre répertoire
 - Améliorations des performances & résolutions de bogues
 

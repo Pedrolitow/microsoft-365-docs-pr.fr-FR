@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment rechercher des ressources pour Microsoft SharePoint Syntex.
-ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 51904d626b76f9e013952816a1ec9af01856dfca
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264707"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971939"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Présentation de Microsoft SharePoint Syntex
 
@@ -51,10 +51,11 @@ Les ressources de cette section permettent d’en savoir plus sur les deux méth
 |Voir les ressources dans le centre de ressources Microsoft Tech Community|[Services de contenu Syntex SharePoint dans Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Forum aux questions sur SharePoint Syntex dans le centre de ressources Microsoft Tech Community |[SharePoint Syntex - FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |Comment obtenir SharePoint Syntex |[Page de produit SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
+|Apprenez à utiliser SharePoint Syntex |[SharePoint Syntex d’apprentissage](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>Adoption
 
-Découvrez comment utiliser et mettre en œuvre SharePoint Syntex au sein de votre organisation pour vous aider à résoudre les problèmes de votre entreprise : 
+En savoir plus sur l’utilisation et l’SharePoint Syntex dans votre organisation pour vous aider à résoudre vos problèmes d’entreprise.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
@@ -79,9 +80,11 @@ Les ressources de cette section permettent à vos utilisateurs d’apprendre à 
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment utiliser les modèles|[Créer un centre de contenu](./create-a-content-center.md)<br><br>[Créer un classificateur](./create-a-classifier.md)<br><br>[Créer un extracteur](./create-an-extractor.md)<br><br>[Créer un modèle de traitement de formulaire](./create-a-form-processing-model.md)<br><br>[Types d’explications](./explanation-types-overview.md)<br><br>[Appliquer un modèle de compréhension de document](./apply-a-model.md)<br><br>[En savoir plus sur les modèles de présentation des documents via le modèle d’exemple](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|Découvrez comment utiliser les modèles|[Créer un centre de contenu](./create-a-content-center.md)<br><br>[Créer un classificateur](./create-a-classifier.md)<br><br>[Dupliquer un modèle](./duplicate-a-model.md)<br><br>[Renommer un modèle](./rename-a-model.md)<br><br>[Créer un extracteur](./create-an-extractor.md)<br><br>[Renommer un extracteur](./rename-an-extractor.md)<br><br>[Créer un modèle de traitement de formulaire](./create-a-form-processing-model.md)<br><br>[Types d’explications](./explanation-types-overview.md)<br><br>[Utiliser des modèles d’explication](./explanation-templates.md)<br><br>[Appliquer un modèle de compréhension de document](./apply-a-model.md)<br><br>[En savoir plus sur les modèles de présentation des documents via le modèle d’exemple](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Appliquer une étiquette de rétention à votre modèle|[Appliquer une étiquette de rétention à un modèle de compréhension de document](./apply-a-retention-label-to-a-model.md)|
 |Appliquer une étiquette de confidentialité à votre modèle|[Appliquer une étiquette de confidentialité à un modèle de compréhension de document](./apply-a-sensitivity-label-to-a-model.md)|
+|Utiliser des modèles entraînés dans d’autres centres de contenu |[Publier et découvrir des modèles de compréhension de documents](./model-discovery.md)|
+|Exécuter des requêtes basées sur les métadonnées sur des bibliothèques de documents|[Rechercher des métadonnées dans les bibliothèques de documents](./metadata-search.md)|
 |Utiliser la taxonomie de la banque de termes de gestion des métadonnées gérées lors de la création d’un extracteur|[Utiliser la taxonomie de la banque de termes lors de la création d’un extracteur](./leverage-term-store-taxonomy.md)|
 |Découvrir comment voir les données relatives à vos modèles|[Analyse de l’utilisation des modèles](./model-usage-analytics.md)|
 |Découvrir comment utiliser le mode d’accessibilité lors de la formation d’un modèle|[Mode d’accessibilité Syntex de SharePoint](./accessibility-mode.md)|

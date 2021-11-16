@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950508"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962974"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -213,7 +213,7 @@ Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](
 
 - Les étendues de stratégie statique incluent les boîtes aux lettres inactives lorsque vous utilisez la configuration par défaut Tous les **destinataires,** mais ne sont pas pris en charge pour des [inclusions ou des exclusions spécifiques.](#a-policy-with-specific-inclusions-or-exclusions) Toutefois, si vous incluez ou excluez un destinataire qui possède une boîte aux lettres active au moment où la stratégie est appliquée et que la boîte aux lettres devient inactive par la suite, les paramètres de rétention continuent d’être appliqués ou exclus.
 
-- Les étendues de stratégie adaptative incluent les boîtes aux lettres inactives par défaut. Vous pouvez contrôler ce comportement à l’aide du générateur de requêtes avancé et de la propriété OPATH *IsInactiveMailbox* :
+- Par défaut, les étendues de stratégie adaptative incluent des boîtes aux lettres inactives lorsqu’elles répondent à la requête de l’étendue. Vous pouvez les exclure à l’aide du générateur de requêtes avancé et de la propriété OPATH *IsInactiveMailbox* :
     
     ```console
     (IsInactiveMailbox -eq "False")

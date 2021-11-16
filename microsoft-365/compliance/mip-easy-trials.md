@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Découvrez les étiquettes et les stratégies par défaut de Microsoft Information Protection (MIP) pour classer et protéger le contenu sensible.
-ms.openlocfilehash: 55657221c86aef13c9a6a5192a89ffe4f78ef2a3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677148"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962830"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Étiquettes et stratégies par défaut pour Microsoft Information Protection
 
@@ -31,7 +31,7 @@ Les clients éligibles peuvent activer les étiquettes et les politiques par dé
 
 Ces configurations par défaut vous aident à être rapidement opérationnel avec Microsoft Information Protection from Microsoft 365 Compliance. Vous pouvez les utiliser tels quels, apporter quelques modifications ou les personnaliser entièrement pour mieux répondre aux besoins de votre entreprise. 
 
-L'éligibilité inclut les clients qui ont un [essai gratuit pour la conformité Microsoft 365](compliance-easy-trials.md) et les clients qui ont déjà un plan Microsoft 365 E5 :
+L’éligibilité inclut les clients qui bénéficient d’un [essai gratuit de Conformité Microsoft 365](compliance-easy-trials.md) et certains clients qui disposent déjà d’une offre Microsoft 365 E5 client :
 
 - **Nouveaux clients** : si vous disposez de la conformité Microsoft 365 depuis moins de 30 jours, votre locataire peut activer toutes les configurations par défaut répertoriées. Vous pouvez toujours les désactiver, les supprimer ou les modifier.
 
@@ -55,7 +55,9 @@ Pour obtenir ces étiquettes et règles préconfigurées :
     
 2. Si vous êtes éligible pour les étiquettes et les stratégies par défaut de Microsoft Information Protection, vous verrez les informations suivantes, où vous pouvez activer les étiquettes et les stratégies par défaut. Par exemple :
     
-    :::image type="content" alt-text="Essai gratuit de Microsoft Information Protection avec des stratégies préconfigurées." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="Activation de Microsoft Information Protection pour les étiquettes et stratégies préconfigurées." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    
+    Si vous ne voyez pas ces informations affichées avec l’option d’activation, vous n’êtes pas éligible pour la création automatique d’étiquettes de confidentialité et de stratégies. Vous pouvez essayer de vérifier ultérieurement si cet état a changé ou vous pouvez utiliser les informations de paramètres suivants pour créer manuellement les mêmes étiquettes et stratégies.
 
 ## <a name="default-sensitivity-labels"></a>Étiquettes de sensibilité par défaut
 

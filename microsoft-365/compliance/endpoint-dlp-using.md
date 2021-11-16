@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907800"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962986"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -45,10 +45,6 @@ Ou
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
 
-#### <a name="get-registered"></a>S’inscrire
-
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/Ignite2021DLP).
-
 Lorsqu'elle est activée, l'**analyse et la protection de classification avancée** permettent au service de classification de données basé sur le cloud Microsoft 365 plus avancé d'analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti de la [classification de correspondance exacte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) des données, des techniques de classification des [entités nommées (aperçu)](named-entities-learn.md#learn-about-named-entities-preview) dans vos stratégies DLP.
 
 Dans la classification avancée, le contenu est envoyé de l'appareil local aux services cloud pour analyse et classification. Si l'utilisation de la bande passante est un problème, vous pouvez définir une limite dans ce paramètre global qui est appliqué par périphérique sur la quantité pouvant être utilisée sur une période de 24 heures. Si vous définissez une limite d'utilisation de la bande passante et qu'elle est dépassée, DLP arrête d'envoyer le contenu de l'utilisateur vers le cloud et la classification des données se poursuit localement sur l'appareil. Lorsque l'utilisation cumulée de la bande passante tombe en dessous de la limite de 24 heures glissantes, la communication avec les services cloud reprendra.
@@ -65,8 +61,6 @@ Ces versions Windows la prise en charge de l’analyse et de la protection avanc
 > L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
-
-Pour accéder au support macOS, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
 |---------|---------|---------|---------|
@@ -89,19 +83,19 @@ Vous pouvez exclure certains chemins de la surveillance DLP, des alertes DLP et 
 
 Vous pouvez utiliser cette logique pour créer vos chemins d'exclusion pour les appareils Windows 10 :
 
-- Chemin d’accès de fichier valide se terminant par « \ », ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple: C:\Temp\
+- Chemin d’accès au fichier valide qui se termine par `\`, ce qui signifie uniquement les fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\`
 
-- Chemin de fichier valide qui se termine par "\*", ce qui signifie uniquement les fichiers sous les sous-dossiers, en plus des fichiers directement sous le dossier. <br/>Par exemple: C:\Temp\*
+- Chemin d’accès au fichier valide qui se termine par `\*`, ce qui signifie uniquement les fichiers sous sous-dossiers, en plus des fichiers directement sous dossier. <br/>Par exemple : `C:\Temp\*`
 
-- Chemin de fichier valide qui se termine sans '\' ou '\*', ce qui signifie tous les fichiers directement sous le dossier et tous les sous-dossiers. <br/>Par exemple: C:\Temp
+- Chemin d’accès au fichier valide qui se termine sans `\` ou `\*`, ce qui signifie tous les fichiers directement sous dossier et tous les sous-dossiers. <br/>Par exemple : `C:\Temp`
 
-- Un chemin d’accès avec un caractère générique entre' \ 'de chaque côté. <br/>Par exemple : C:\Users\*\Desktop\
+- Chemin d’accès avec caractère générique entre `\` de chaque côté. <br/>Par exemple : `C:\Users\*\Desktop\`
 
-- Un chemin d’accès comportant le caractère générique entre « \» de chaque côté et «(nombre)» pour indiquer le nombre exact de sous-dossiers. <br/>Par exemple : C:\Users\*(1) \Downloads\
+- Chemin d’accès avec caractère générique entre `\` de chaque côté et avec `(number)` pour donner le nombre exact de sous-dossiers. <br/>Par exemple : `C:\Users\*(1)\Downloads\`
 
-- Un chemin d’accès avec des variables d’environnement système. <br/>Par exemple :%SystemDrive%\Test\*
+- Un chemin d’accès avec des variables d’environnement système. <br/>Par exemple : `%SystemDrive%\Test\*`
 
-- Un mélange de tous les éléments ci-dessus. <br/>Par exemple :%SystemDrive%\Users\*\Documents\*(2) \Sub\
+- Un mélange de tous les éléments ci-dessus. <br/>Par exemple : `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### <a name="macos-devices-preview"></a>Appareils macOS (préversion)
 
@@ -158,7 +152,7 @@ Pour empêcher la synchronisation d’éléments sensibles avec le cloud par des
 
 Lorsqu’elle est activée, la mise en quarantaine automatique se déclenche lorsqu’une application non autorisée tente d’accéder à un élément sensible protégé par DLP. La mise en quarantaine automatique déplace l’élément sensible vers un dossier configuré par l’administrateur et peut laisser un fichier **.txt** espace réservé à la place de l’original. Vous pouvez configurer le texte dans le fichier d’espace réservé pour indiquer aux utilisateurs où l’élément a été déplacé et d’autres informations pertinentes.  
 
-Vous pouvez utiliser la mise en quarantaine automatique pour empêcher une chaîne infinie de notifications DLP pour l’utilisateur et les administrateurs. Consultez [Scénario 4 : évitez de boucler les notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
+Vous pouvez utiliser la mise en quarantaine automatique pour empêcher une chaîne infinie de notifications DLP pour l’utilisateur et les administrateurs. Consultez le [Scénario 4 : Éviter les boucles de notifications DLP à partir d’applications de synchronisation cloud avec mise en quarantaine automatique (préversion)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
 
 ### <a name="unallowed-bluetooth-apps"></a>Applications Bluetooth non autorisées
 
@@ -173,6 +167,9 @@ Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’êtr
 Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
 
 #### <a name="service-domains"></a>Domaines de service
+
+> [!NOTE]
+> Le paramètre **Domaines de service** s’applique uniquement aux fichiers chargés à l’aide de Microsoft Edge ou Google Chrome avec [l’extension de conformité Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installée.
 
 Vous pouvez déterminer si les fichiers sensibles protégés par vos stratégies peuvent être téléchargés vers des domaines de service spécifiques à partir de Microsoft Edge.
 
@@ -206,7 +203,7 @@ Vous pouvez créer jusqu’à cinq options personnalisées qui s’affichent lor
 |Afficher l’option de faux positif     |**Les informations de ces fichiers ne sont pas sensibles** ou vous pouvez entrer un texte personnalisé          |
 |Option 5    |**Autre** ou vous pouvez entrer un texte personnalisé         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>Toujours auditer l’activité des fichiers pour les appareils
 
@@ -238,7 +235,7 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 
 > [!IMPORTANT]
 > Ces scénarios de points de terminaison DLP ne sont pas les procédures officielles pour la création et le réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
-
+>
 >- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 >- [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
@@ -268,7 +265,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
 
-11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour voir l’impact de cette stratégie, consultez [Commencer avec l’Explorateur d’activités,](data-classification-activity-explorer.md)si nécessaire.
 
 12. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
 
@@ -337,7 +334,7 @@ Dans ce scénario, la synchronisation des fichiers avec l’étiquette de confid
 
 - Un compte d’utilisateur AAD à cibler et un ordinateur Windows 10 intégré qui synchronise déjà un dossier OneDrive local avec le stockage cloud OneDrive.
 - Microsoft Word installé sur l’ordinateur Windows 10 cible
-- Étiquettes de confidentialité configurées et publiées. Consultez [Démarrage avec des étiquettes de confidentialité](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) et [Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- Étiquettes de confidentialité configurées et publiées : consultez [Démarrer avec les étiquettes de confidentialité](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) et [Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 Il existe trois procédures.
 
@@ -361,20 +358,22 @@ Il existe trois procédures.
 
 7. Entrez le chemin d’accès au dossier sur les ordinateurs locaux dans lequel vous souhaitez déplacer les fichiers sensibles d’origine. Par exemple:
    
-**«%homedrive%%homepath%\Microsoft DLP\Quarantine»** pour le nom d’utilisateur *Isaiah langer* déplace les éléments dans un 
+    **« %homedrive%%homepath%\Microsoft DLP\Quarantine »** pour le nom d’utilisateur *Isaiah langer* placera les éléments déplacés dans un dossier nommé :  
 
-dossier *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* et ajoute une date et une heure au nom de fichier d’origine.
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
-> [!NOTE]
-> La mise en quarantaine automatique DLP crée des sous-dossiers pour les fichiers de chaque application non autorisée. Par conséquent, si vous avez le *Bloc-notes* et *OneDrive* dans votre liste d’applications non autorisées, un sous-dossier sera créé pour **\OneDrive** et un autre sous-dossier pour **\Bloc-notes**.
+    et ajoutez une date et une heure au nom de fichier d’origine.
+    
+    > [!NOTE]
+    > La mise en quarantaine automatique DLP crée des sous-dossiers pour les fichiers de chaque application non autorisée. Par conséquent, si vous avez le *Bloc-notes* et *OneDrive* dans votre liste d’applications non autorisées, un sous-dossier sera créé pour **\OneDrive** et un autre sous-dossier pour **\Bloc-notes**.
 
 8. Choisissez **Remplacer les fichiers par un fichier .txt qui contient le texte suivant**, puis entrez le texte souhaité dans le fichier d’espace réservé. Par exemple, pour un fichier appelé *auto quar 1.docx* :
     
-**%%FileName%% contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) %%PolicyName%% et a été déplacée vers le dossier de quarantaine : %%QuarantinePath%%.** 
-
-laisse un fichier .txt qui contient ce message
-
-*auto quar 1.docx contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) et a été déplacée vers le dossier de quarantaine : C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.*
+    > %%FileName%% contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) %%PolicyName%% et a été déplacée vers le dossier de mise en quarantaine : %%QuarantinePath%%
+    
+    laisse un fichier texte qui contient ce message :
+    
+    > auto quar 1.docx contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) et a été déplacée vers le dossier de quarantaine : C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.
 
 9. Cliquez sur **Enregistrer**.
 
@@ -393,10 +392,10 @@ laisse un fichier .txt qui contient ce message
 6. Acceptez la sélection par défaut **Créer ou personnaliser des règles DLP avancées**, puis choisissez **Suivant**.
 
 7. Créez une règle avec les valeurs suivantes :
-    1. **Nom** > *Scénario 4 Mise en quarantaine automatique*
-    1. **Conditions** > **Contenu contient** > **des étiquettes de confidentialité** > **hautement confidentielles**
+    1. **Nom**  >  *Scénario 4 Mise en quarantaine automatique*.
+    1. **Conditions**  >  **Le contenu contient**  >  **Étiquettes de sensibilité**  >  **Hautement confidentiel**.
     1.  **Actions** > **Auditer ou restreindre les activités sur les appareils Windows** > **Accès par les applications non autorisées** > **Bloquer**. Pour les besoins de ce scénario, effacez toutes les autres activités.
-    1. **Notifications utilisateur** > **Activé**
+    1. **Notifications de l’utilisateur**  >  **Activé**.
     1. **Périphériques de point de terminaison** > Choisissez **Afficher aux utilisateurs une notification de conseil de stratégie lorsqu’une activité** si elle n’est pas déjà activée.
     
 8. Choisissez **Enregistrer** et **Suivant**.
@@ -405,8 +404,8 @@ laisse un fichier .txt qui contient ce message
 
 10. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
 
-> [!NOTE]
-> Autorisez au moins une heure pour que la nouvelle stratégie soit répliquée et appliquée à l’ordinateur Windows 10 cible.
+    > [!NOTE]
+    > Autorisez au moins une heure pour que la nouvelle stratégie soit répliquée et appliquée à l’ordinateur Windows 10 cible.
 
 11. La nouvelle stratégie DLP s’affiche dans la liste des stratégies.
 
@@ -418,23 +417,23 @@ laisse un fichier .txt qui contient ce message
 
     *Dossier source C:\ mise en quarantaine automatique*
 
-3. Ouvrez Microsoft Word et créez un fichier dans le dossier source de mise en quarantaine automatique. Appliquez l’étiquette de confidentialité **Hautement confidentiel**. Voir [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+3. Ouvrez Microsoft Word et créez un fichier dans le dossier source de mise en quarantaine automatique. Appliquer l’étiquette de confidentialité **hautement confidentiel** ; consultez [Appliquer des étiquettes de confidentialité à vos fichiers et courriers électroniques dans Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 4. Copiez le fichier que vous venez de créer dans votre dossier de synchronisation OneDrive. Une pastille de notification utilisateur doit apparaître vous indiquant que l’action n’est pas autorisée et que le fichier sera mis en quarantaine. Par exemple, pour le nom d’utilisateur *Isaiah Langer* et un document intitulé *document de mise en quarantaine automatique 1.docx* ce message s’affiche :
 
-![Fenêtre contextuelle de notification utilisateur de protection contre la perte de données indiquant que l’action de synchronisation OneDrive n’est pas autorisée pour le fichier spécifié et que le fichier sera mis en quarantaine.](../media/auto-quarantine-user-notification-toast.png)
+    ![Fenêtre contextuelle de notification utilisateur de protection contre la perte de données indiquant que l’action de synchronisation OneDrive n’est pas autorisée pour le fichier spécifié et que le fichier sera mis en quarantaine.](../media/auto-quarantine-user-notification-toast.png)
+    
+    Le message indique :
+    
+    > L’ouverture du document de mise en quarantaine automatique 1.docx avec cette application n’est pas autorisée. Le fichier sera mis en quarantaine dans « C:\Users\IsaiahLanger\Microsoft DLP\OneDrive »
 
-Le message indique :
+5. Choisissez **Ignorer**.
 
-« L’ouverture du document mise en quarantaine automatique 1.docx avec cette application n’est pas autorisée. Le fichier sera mis en quarantaine dans « C:\Users\IsaiahLanger\Microsoft DLP\OneDrive »»
-
-5. Choisir **Ignorer**
-
-6. Ouvrez le fichier .txt de l’espace réservé. Il sera nommé **document de mise en quarantaine automatique 1.docx_ *date_time*.txt**. 
+6. Ouvrez le fichier texte de l’espace réservé. Il sera nommé **document de mise en quarantaine automatique 1.docx_ *date_time*.txt**. 
 
 7. Ouvrez le dossier de quarantaine et vérifiez que le fichier d’origine existe.
  
-8. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+8. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Définissez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour voir l’impact de cette stratégie, consultez [Commencer avec l’Explorateur d’activités,](data-classification-activity-explorer.md)si nécessaire.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
 

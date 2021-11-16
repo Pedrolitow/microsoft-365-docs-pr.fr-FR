@@ -1,6 +1,6 @@
 ---
 title: Ressources pour Microsoft Defender pour point de terminaison sur Mac
-description: Ressources pour Microsoft Defender pour point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
+description: Ressources pour Microsoft Defender pour le point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1df9efd022f58ef68ed06c8271e140b33dcb0f67
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3e37ac8876b28e55faca4282245a633a16cb06fa
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646923"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971927"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -110,7 +110,6 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer/désactiver le mode antivirus passif|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuration|Configurer le degré de parallélisme pour les analyses à la demande|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuration|Activer/désactiver les analyses après les mises à jour des informations de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|Configuration|Activer/désactiver l’analyse d’archivage (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Modifier le niveau de journal|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
 |Intégrité|Vérifier l’état du produit|`mdatp health`|
@@ -119,7 +118,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection|Faire une analyse rapide|`mdatp scan quick`|
 |Protection|Faire une analyse complète|`mdatp scan full`|
 |Protection|Annuler une analyse à la demande en cours|`mdatp scan cancel`|
-|Protection|Demander une mise à jour de l’intelligence de la sécurité|`mdatp definitions update`|
+|Protection|Demander une mise à jour des informations de sécurité|`mdatp definitions update`|
 |PEPT|Balise Set/Remove, prise en charge uniquement par GROUP|`mdatp edr tag set --name GROUP --value [name]`|
 |PEPT|Supprimer une balise de groupe de l’appareil|`mdatp edr tag remove --tag-name [name]`|
 |PEPT|Ajouter un ID de groupe|`mdatp edr group-ids --group-id [group]`|
@@ -154,10 +153,10 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender pour point de terminaison
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.
+PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour point de terminaison, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans Microsoft Defender pour le Centre de sécurité des points de terminaison.
