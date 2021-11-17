@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 28aa92e7374815404eaffb1abe908aa2fe60343f
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962974"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972011"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -156,15 +156,26 @@ Vous pouvez valider manuellement les requêtes avancées à l’aide de PowerShe
 
 Pour exécuter une requête à l’aide de PowerShell :
 
-1. À l’aide d’un compte d’administrateur général, [connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connecter à Exchange Online PowerShell à l’aide](/powershell/exchange/connect-to-exchange-online-powershell) d’un compte avec les [autorisations Exchange Online administrateur appropriés.](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)
 
-2. Spécifiez votre [requête OPATH](/powershell/exchange/filter-properties) à l’aide de [Get-Recipient](/powershell/module/exchange/get-recipient)ou [Get-Mailbox](/powershell/module/exchange/get-mailbox) avec le paramètre *Filter*, puis la requête OPATH pour l’étendue adaptative, entre guillemets doubles. Si vos valeurs d’attribut incluent des espaces, mettez ces valeurs entre guillemets simples.
-    
-    Par exemple :
+2. Utilisez [Get-Recipient](/powershell/module/exchange/get-recipient) ou [Get-Mailbox](/powershell/module/exchange/get-mailbox) avec le paramètre *-Filter* et votre requête [OPATH](/powershell/exchange/filter-properties) pour l’étendue adaptative entre crochets ( `{` , `}` ). Si les valeurs de vos attributs comprennent des espaces, mettez ces valeurs entre guillemets doubles ou simples. 
+
+    Si vous validez une étendue **Utilisateur,** incluez dans la commande, sinon pour les Microsoft 365 `-RecipientTypeDetails UserMailbox` **groupe,** incluez `-RecipientTypeDetails GroupMailbox` .
+
+    > [!TIP]
+    > Vous pouvez déterminer s’il faut valider à l’aide des cmdlets ou en fonction des cmdlets que vous choisissez d’utiliser dans la prise en charge `Get-Mailbox` `Get-Recipient` de votre requête. [](/powershell/exchange/filter-properties)
+
+    Par exemple, pour valider une **étendue Utilisateur,** vous pouvez utiliser :
     
     ````PowerShell
-    Get-Recipient -Filter "Department -eq 'Sales and Marketing'" -ResultSize unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
     ````
+    
+    Pour valider une **étendue Microsoft 365 groupe,** vous pouvez utiliser :
+    
+    ```PowerShell
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    ```
 
 3. Vérifiez que la sortie correspond aux utilisateurs ou groupes attendus pour votre étendue adaptative. Si ce n’est pas le cas, vérifiez votre requête et les valeurs auprès de l’administrateur approprié pour Azure AD ou Exchange.
  
@@ -182,7 +193,7 @@ Lorsque vous choisissez d’utiliser des étendues statiques, vous devez décide
 
 #### <a name="a-policy-that-applies-to-entire-locations"></a>Une stratégie qui s’applique à des emplacements entiers
 
-À l’exception de Skype Entreprise, la valeur par défaut est que toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la stratégie sans que vous ayez à les spécifier comme inclus.
+À l'exception de Skype for Business, par défaut, toutes les instances des emplacements sélectionnés sont automatiquement incluses dans la politique sans que vous ayez à les spécifier.
 
 Par exemple, **tous les destinataires** pour l’emplacement **de messagerie Exchange**. Avec ce paramètre par défaut, toutes les boîtes aux lettres utilisateur existantes sont incluses dans la stratégie, et toutes les nouvelles boîtes aux lettres créées après l’application de la stratégie héritent automatiquement de la stratégie.
 
@@ -213,7 +224,7 @@ Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](
 
 - Les étendues de stratégie statique incluent les boîtes aux lettres inactives lorsque vous utilisez la configuration par défaut Tous les **destinataires,** mais ne sont pas pris en charge pour des [inclusions ou des exclusions spécifiques.](#a-policy-with-specific-inclusions-or-exclusions) Toutefois, si vous incluez ou excluez un destinataire qui possède une boîte aux lettres active au moment où la stratégie est appliquée et que la boîte aux lettres devient inactive par la suite, les paramètres de rétention continuent d’être appliqués ou exclus.
 
-- Par défaut, les étendues de stratégie adaptative incluent des boîtes aux lettres inactives lorsqu’elles répondent à la requête de l’étendue. Vous pouvez les exclure à l’aide du générateur de requêtes avancé et de la propriété OPATH *IsInactiveMailbox* :
+- Les étendues de stratégie adaptative, par défaut, incluent les boîtes aux lettres inactives lorsqu’elles répondent à la requête de l’étendue. Vous pouvez les exclure à l’aide du générateur de requêtes avancé et de la propriété OPATH *IsInactiveMailbox*:
     
     ```console
     (IsInactiveMailbox -eq "False")
