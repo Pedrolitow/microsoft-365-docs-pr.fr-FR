@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e0a516155d0b318e8f5d3b022b1546d9fe8e11b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753104"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041965"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
@@ -120,16 +120,13 @@ Pour modifier une stratégie d’étiquettes de rétention existante (le type de
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
-Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, celles-ci s’affichent généralement pour que les utilisateurs finaux puissent les sélectionner en un journée. Vous pouvez toutefois autoriser jusqu’à sept jours. 
+Pour les emplacements OneDrive et SharePoint, les étiquettes publiées s’affichent généralement pour permettre aux utilisateurs de les sélectionner dans un délai d’un ou deux jours. Toutefois, autorisez jusqu’à huit jours.
 
-Si vous publiez des étiquettes de rétention sur Exchange, l’affichage des étiquettes de rétention pour les utilisateurs finaux peut prendre jusqu’à sept jours, et la boîte aux lettres doit contenir au moins 10 Mo de données.
+Pour les emplacements Exchange et groupes Microsoft 365, l’apparition d’étiquettes de rétention publiées pour les utilisateurs dans Outlook peut prendre jusqu’à huit jours et la boîte aux lettres doit contenir au moins 10 Mo de données.
 
-Par exemple :
-  
-![Diagramme montrant quand les étiquettes manuelles prennent effet.](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
-  
+![Diagramme du moment où les étiquettes publiées prennent effet.](../media/retention-labels-published-timings.png)
 
-Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes n’apparaissent pas après huit jours, vérifiez **l’état** de la stratégie d’étiquette en la sélectionnant dans la page **Stratégies d’étiquette** dans le Centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
 
@@ -205,7 +202,7 @@ After the retention label is applied, you can view that retention label and what
 
 You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. Right-click the folder, select **Properties**, the **Policy** tab, and select the retention label you want to use as that folder's default retention label.
 
-When you use a a standard retention label as your default label for an Outlook folder:
+When you use a standard retention label as your default label for an Outlook folder:
   
 - All unlabeled items in the folder have this retention label applied.
 
