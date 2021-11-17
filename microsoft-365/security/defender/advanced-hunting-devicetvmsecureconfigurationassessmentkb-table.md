@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8372275655c9b4f75feaff8f2f8c8f2aace78d1e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60658693"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041876"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -35,8 +35,11 @@ ms.locfileid: "60658693"
 - Microsoft Defender pour point de terminaison
 
 
+Le tableau du schéma de recherche avancée contient des informations sur les `DeviceTvmSecureConfigurationAssessmentKB` différentes configurations sécurisées vérifiées par [threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Elle inclut également des informations sur les risques, des références du secteur associées et des techniques et tactiques MITRE ATT & CK applicables.
 
-La table `DeviceTvmSecureConfigurationAssessmentKB` dans le schéma de repérage avancé contient des informations sur les différentes configurations sécurisées (par exemple, si un appareil dispose de mises à jour automatiques), vérifié par la fonction [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Elle inclut également des informations sur les risques, des références du secteur associées et des techniques et tactiques MITRE ATT & CK applicables. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
+Cette table ne retourne ni événement, ni enregistrement. Nous vous recommandons de joindre ce tableau à la table [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) à l’aide des informations textuelles sur les configurations de sécurité dans les évaluations `ConfigurationId` renvoyées.
+
+Par exemple, lorsque vous interrogez la table, vous souhaitez peut-être afficher les configurations de sécurité qui s’afficheront `DeviceTvmSecureConfigurationAssessment` dans les résultats de `ConfigurationDescription` l’évaluation. Vous pouvez voir ces informations en joignant cette table à `DeviceTvmSecureConfigurationAssessment` l’utilisation `ConfigurationId` et au `ConfigurationDescription` projet.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -51,7 +54,20 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationSubcategory` | string |Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationBenchmarks` | string | Liste des références du secteur recommandant une configuration identique ou similaire |
 | `Tags` | string | Étiquettes représentant différents attributs utilisés pour identifier ou classer une configuration de sécurité |
-| `RemediationOptions` | chaîne | Actions recommandées pour réduire ou résoudre les risques associés |
+| `RemediationOptions` | string | Actions recommandées pour réduire ou résoudre les risques associés |
+
+Vous pouvez essayer cette requête d’exemple pour renvoyer des métadonnées de configuration pertinentes, ainsi que des informations sur les appareils avec des configurations antivirus non conformes à partir du `DeviceTvmSecureConfigurationAssessment` tableau :
+
+```kusto
+// Get information on devices with antivirus configurations issues
+DeviceTvmSecureConfigurationAssessment
+| where ConfigurationSubcategory == 'Antivirus' and IsApplicable == 1 and IsCompliant == 0
+| join kind=leftouter (
+    DeviceTvmSecureConfigurationAssessmentKB
+    | project ConfigurationId, ConfigurationName, ConfigurationDescription, RiskDescription, Tags, ConfigurationImpact
+) on ConfigurationId
+| project DeviceName, OSPlatform, ConfigurationId, ConfigurationName, ConfigurationCategory, ConfigurationSubcategory, ConfigurationDescription, RiskDescription, ConfigurationImpact, Tags
+```
 
 ## <a name="related-topics"></a>Sujets associés
 
