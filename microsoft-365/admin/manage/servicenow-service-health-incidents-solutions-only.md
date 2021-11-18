@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 7b1ebccb60500d0f1b2c6513be55d8f04628b6ac
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b2676c05a4ee7767b40356852d32398f2d2c04a3
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754220"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071425"
 ---
 # <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 l’intégration des incidents d’état du service et des solutions recommandées uniquement
 
@@ -32,7 +32,7 @@ Cette configuration ne vous permet pas de créer un cas avec le support Microsof
 
 Ces conditions préalables sont nécessaires pour configurer la prise en **charge Microsoft 365'intégration.**
 
-1. \[AAD Admin \] Create AAD Application for Outbound under your Microsoft 365 tenant.
+1. \[AAD admin \] Créez AAD application pour le trafic sortant sous votre Microsoft 365 client.
 
     1. Connectez-vous au portail Azure avec vos informations d’identification Microsoft 365 client et créez une application sur la page Inscriptions [de l’application.](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
 
@@ -60,7 +60,7 @@ Ces conditions préalables sont nécessaires pour configurer la prise en **charg
 
     - Secret client : il s’agit de la valeur de la secret client de l’application créée à l’étape 1 des conditions préalables (Informations \# uniquement).
 
-    - Type d’octroi par défaut : Informations d’identification client
+    - Type d’octroi par défaut : informations d’identification du client
 
     - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
@@ -81,7 +81,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 1. \[ServiceNow Admin \] Go to Microsoft 365 Support **&gt; Setup** to open the integration workflow.
 
     > [!NOTE]
-    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès entre étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
+    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès à plusieurs étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -103,13 +103,13 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     Vérifiez **ignorer l’étape actuelle,** puis sélectionnez **Suivant.**
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image34.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image34.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image34.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image34.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
 1. \[ServiceNow Admin \] Set up the Repository ID.
 
     Spécifiez l’ID de référentiel, puis sélectionnez **Suivant**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
 1. \[ServiceNow Admin \] Set up Application Paramètres.
 
@@ -121,9 +121,9 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - Environnement de test : cochez la case pour indiquer une phase de test afin d’éviter que les agents du support Microsoft ne vous contactent pour résoudre le problème. Si vous êtes prêt à passer officiellement à l’étape Microsoft 365 l’intégration, décochez la case.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
-1. \[Microsoft 365 L’administrateur client \] termine l’intégration.
+1. \[Microsoft 365 client \] Terminez l’intégration.
 
     Vérifiez que les informations ci-dessous sont correctes. NE sélectionnez **PAS Suivant** pour le moment.
 
@@ -137,7 +137,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-1. Sous **l’onglet Référentiels,** **sélectionnez** Ajouter un référentiel pour créer un référentiel avec les paramètres suivants :
+1. Sous **l’onglet Référentiels,** sélectionnez **Nouveau** référentiel et mettez-le à jour avec les paramètres suivants :
 
     - Référentiel : valeur **de l’ID** de référentiel de l’étape 6 : terminer l’intégration.
 
@@ -149,7 +149,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - Nom d’utilisateur rest : valeur aléatoire (exemple : ignoré).
 
-    - Mot de passe de l’utilisateur rest : valeur aléatoire (exemple : ignoré).
+    - Mot de passe utilisateur rest : valeur aléatoire (exemple : ignoré).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image36.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image36.png" alt-text="Interface utilisateur graphique, description de l’application générée automatiquement":::
 

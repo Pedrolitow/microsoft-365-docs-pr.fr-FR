@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: bd19e5fd72e2b21c7ec08e00497444475701817c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e33deb09628d6b09da79ecf92c9837d7bdad32c
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754252"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071461"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 
@@ -30,7 +30,7 @@ ms.locfileid: "60754252"
 
 Ces conditions préalables sont nécessaires pour configurer la prise en **charge Microsoft 365'intégration.**
 
-1. \[AAD Admin \] Create AAD Application under your Microsoft 365 tenant.
+1. \[AAD admin \] Créez AAD application sous votre Microsoft 365 client.
 
     1. Connectez-vous au portail Azure à l’Microsoft 365 vos informations d’identification client et allez sur la [page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) d’inscription de l’application pour créer une application.
 
@@ -111,7 +111,7 @@ L’Microsoft 365'intégration de support technique peut être définie sous Mic
 
 Ces étapes sont nécessaires pour configurer l’intégration entre votre instance ServiceNow et Microsoft 365 prise en charge.
 
-1. \[L’administrateur ServiceNow \] bascule l’étendue **vers Microsoft 365'intégration de support technique.**
+1. \[ServiceNow Admin \] Switch the scope to Microsoft 365 support **integration**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Interface utilisateur graphique, description de tableau générée automatiquement":::
 
@@ -146,7 +146,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     1. Décochez **Ignorer l’étape actuelle.**
 
-    1. Sélectionnez l’utilisateur d’intégration créé à l’étape 4 des conditions [préalables \# (Authentification](#prerequisites-basic-authentication)de base), puis sélectionnez **Suivant**.
+    1. Sélectionnez l’utilisateur d’intégration créé dans [les conditions préalables (Authentification de base) étape \# 4,](#prerequisites-basic-authentication)puis sélectionnez **Suivant**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image14.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image14.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
@@ -168,7 +168,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
-1. \[Microsoft 365 L’administrateur client \] termine l’intégration.
+1. \[Microsoft 365 client \] Terminez l’intégration.
 
     Vérifiez que les informations ci-dessous sont correctes. NE sélectionnez **PAS Suivant** pour le moment.
 
@@ -182,7 +182,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-1. Sous **l’onglet Référentiels,** **sélectionnez** Ajouter un référentiel pour créer un référentiel avec les paramètres suivants :
+1. Sous **l’onglet Référentiels,** sélectionnez **Nouveau** référentiel et mettez-le à jour avec les paramètres suivants :
 
     - Référentiel : valeur **de l’ID** de référentiel de l’étape 6 : terminer l’intégration.
 
@@ -223,4 +223,4 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     Si un utilisateur a le rôle x \_ mioms \_ m365 \_ assis.administrator et utilise différents comptes Microsoft 365 pour gérer un cas de support Microsoft 365, il doit se rendre sur le compte de lien de support Microsoft 365 pour configurer son e-mail d’administrateur &gt; Microsoft 365.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::

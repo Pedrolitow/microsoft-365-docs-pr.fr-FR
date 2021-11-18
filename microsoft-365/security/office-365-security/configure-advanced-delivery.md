@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations de hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc507bfbfdcb090e61f688def0ee6a7a3922652d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3de4e7a468280914854c7cc0b7f68a9cb7965632
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963358"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072658"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -31,7 +31,7 @@ ms.locfileid: "60963358"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
@@ -44,7 +44,7 @@ Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêch
 - [Air and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
   - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne sont pas déclenchées. L’expérience de soumissions d’administrateurs présente ces messages comme une menace simulée.
-  - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du module de signalement du hameçonnage pour [Outlook,](enable-the-report-message-add-in.md)le système ne génère pas d’alerte, d’enquête ou d’incident. Le message s’affiche également sous l’onglet Messages signalés par l’utilisateur de la page soumissions.
+  - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du message de rapport ou des [modules](enable-the-report-message-add-in.md)de signalement du hameçonnage, le système ne génère pas d’alerte, d’enquête ou d’incident. Les liens ou les fichiers ne seront pas détonés,  mais le message s’affichera également sous l’onglet Messages signalés par l’utilisateur de la page **Soumissions.**
   - [Coffre liens](safe-links.md) dans Defender pour Office 365 ne bloque pas ou ne désaxique pas les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours wrapped, mais elles ne sont pas bloquées.
   - [Coffre pièces jointes dans Defender Office 365](safe-attachments.md) les pièces jointes de ces messages ne sont pas détonation.
 

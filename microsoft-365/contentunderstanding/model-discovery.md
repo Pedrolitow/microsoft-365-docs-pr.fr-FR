@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Découvrez comment mettre le modèle entraîné à la disposition d’autres personnes et comment appliquer d’autres modèles entraînés dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 528071efaf06c68d42b34f6d7e509a1839f6ca08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment mettre des modèles entraînés à la disposition d’autres personnes et comment appliquer d’autres modèles entraînés dans Microsoft SharePoint Syntex.
+ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201000"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072436"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publier et découvrir des modèles dans Microsoft SharePoint Syntex
 
@@ -39,7 +39,7 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
 
 3. À ce stade, le panneau Sélectionner les **sites** où ce modèle est disponible sera différent selon que vous êtes administrateur ou non. 
 
-    Si vous êtes un administrateur, vous verrez cet affichage.
+    Si vous êtes administrateur SharePoint, cette vue s’affiche.
 
     ![Capture d'écran du panneau Sélectionner les sites où ce modèle est disponible montrant les options d'où vous voulez que le modèle soit disponible pour les autres.](../media/content-understanding/select-sites.png)
 
@@ -47,7 +47,7 @@ Pour rendre votre modèle entraîné disponible pour d’autres personnes à uti
     - **Tous les sites** : le modèle sera disponible dans la galerie de types de contenu que d’autres utilisateurs pourront utiliser.
     - **Seuls les sites** sélectionnés : vous pouvez choisir le ou les sites dans lesquels le modèle sera disponible. Cliquez dans la zone de texte pour rechercher et choisir les sites sur lesquels vous souhaitez appliquer le modèle. Vous ne verrez que les sites pour lesquels vous avez accès.
 
-    Si vous *n’êtes pas* administrateur, vous verrez cet affichage.
+    Si vous *n’êtes* pas administrateur SharePoint, cette vue s’affiche.
 
     ![Capture d'écran du panneau Sélectionner les sites où ce modèle est disponible montrant les options pour les utilisateurs finaux qui n'ont que quelques sites disponibles.](../media/content-understanding/select-site-user.png)
 

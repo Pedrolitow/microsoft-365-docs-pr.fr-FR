@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063471"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072806"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
@@ -79,11 +79,10 @@ Les obstacles à l’information vous permettent de restreindre la communication
 Les obstacles aux informations sont disponibles dans les abonnements suivants :
 
 - Microsoft 365 E5/A5 (version payante ou d’essai)
-- Office 365 Entreprise abonnement E5 (version payante ou d’essai)
-- Office 365 A5 abonnement (version payante ou d’essai)
+- Office 365 E5/A5/A3/A1 (version payante ou d’essai)
 - Conformité avancée Office 365 module module (non disponible pour les nouveaux abonnements)
-- Microsoft 365 E3/A3 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5
-- Microsoft 365 E3/A3 + le module Microsoft 365 E5/A5 Gestion des risques internes
+- Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5 conformité A5
+- Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5/A5 Gestion des risques internes
 
 ### <a name="privileged-access-management"></a>Gestion des accès privilégiés
 

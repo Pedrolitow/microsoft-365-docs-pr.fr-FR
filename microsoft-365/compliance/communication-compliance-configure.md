@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063392"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072700"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -52,7 +52,7 @@ Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essa
 
 ## <a name="recommended-actions-preview"></a>Actions recommandées (aperçu)
 
-Les actions recommandées peuvent aider votre organisation à se lancer dans les fonctionnalités de conformité des communications et à utiliser au mieux vos stratégies existantes. Incluses dans la page **Stratégies,** les actions recommandées fournissent des informations et résument les types d’informations sensibles et les activités de contenu inappropriées dans les communications de votre organisation. Ces informations n’incluent aucune information d’identification personnelle (PII) pour les utilisateurs de votre organisation.
+Les actions recommandées peuvent aider votre organisation à se lancer dans les fonctionnalités de conformité des communications et à utiliser au mieux vos stratégies existantes. Incluses dans la page **Stratégies,** les actions recommandées fournissent des informations et résument les types d’informations sensibles et les activités de contenu inappropriées dans les communications de votre organisation. Informations sont pris en charge par la [classification](data-classification-overview.md) des données et l’application d’étiquettes de sensibilité, d’étiquettes de rétention et de classification des types d’informations sensibles. Ces informations n’incluent aucune information d’identification personnelle (PII) pour les utilisateurs de votre organisation.
 
 ![Actions recommandées pour la conformité des communications.](../media/communication-compliance-recommended-actions.png)
 

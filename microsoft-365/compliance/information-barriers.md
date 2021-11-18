@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fc3d961b8707ba07febd95022580091618086d7f
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064099"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071347"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations dans Microsoft 365
 
@@ -83,11 +83,10 @@ Pour en savoir plus sur l’expérience utilisateur avec les obstacles à [l’i
 Avant de commencer à gérer les risques internes, vous devez confirmer votre abonnement [Microsoft 365 et](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) les modules. Pour accéder aux obstacles aux informations et les utiliser, votre organisation doit avoir l’un des abonnements ou modules complémentaires suivants :
 
 - Microsoft 365 E5/A5 (version payante ou d’essai)
-- Office 365 Entreprise abonnement E5 (version payante ou d’essai)
-- Office 365 A5 abonnement (version payante ou d’essai)
+- Office 365 E5/A5/A3/A1 (version payante ou d’essai)
 - Conformité avancée Office 365 module module (non disponible pour les nouveaux abonnements)
-- Microsoft 365 E3/A3 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5
-- Microsoft 365 E3/A3 + le module Microsoft 365 E5/A5 Gestion des risques internes
+- Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5 conformité A5
+- Microsoft 365 E3/A3/A1 + le module Microsoft 365 E5/A5 Gestion des risques internes
 
 Pour plus d’informations, [voir Microsoft 365 licences pour la sécurité et & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 

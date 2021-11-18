@@ -1,5 +1,5 @@
 ---
-title: Configurer l’intégration Microsoft 365 prise en charge avec AAD OAuth
+title: Configurer l’intégration de la prise en charge Microsoft 365 avec le jeton AAD OAuth
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: b32f2e4edea590a6002e1568b5a65a2d8c71f703
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: da241452f989ba5f682fd3219e3f3baabf623138
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661789"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071449"
 ---
-# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>Configurer l’intégration Microsoft 365 prise en charge avec AAD OAuth
+# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>Configurer l’intégration de la prise en charge Microsoft 365 avec le jeton AAD OAuth
 
 ## <a name="prerequisites-aad-oauth-token"></a>Conditions préalables (AAD jeton OAuth)
 
-Ces conditions préalables sont nécessaires pour configurer le support Microsoft 365'intégration.
+Ces conditions préalables sont nécessaires pour configurer la prise en charge Microsoft 365 l’intégration.
 
-1. \[AAD Admin \] Create AAD Application for Outbound under your Microsoft 365 tenant.
+1. \[AAD admin \] Créez AAD application pour le trafic sortant sous votre Microsoft 365 client.
 
     1. Connectez-vous au portail Azure à l’Microsoft 365 vos informations d’identification client et allez sur la [page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) d’inscription de l’application pour créer une application.
 
@@ -44,7 +44,7 @@ Ces conditions préalables sont nécessaires pour configurer le support Microsof
 
 1. Obtenez l’ID client de l’application, créez une secret client et obtenez cette valeur.
 
-1. \[AAD Admin \] Create an AAD application for Rest API under your Microsoft 365 tenant.
+1. \[AAD admin \] Créez une application AAD l’API Rest sous votre Microsoft 365 client.
 
     1. Connectez-vous au [portail Azure](https://portal.azure.com/) avec vos informations d’identification Microsoft 365 client et allez sur la page d’inscription de l’application pour créer une application.
 
@@ -54,7 +54,7 @@ Ces conditions préalables sont nécessaires pour configurer le support Microsof
 
 1. Obtenez l’ID client de l’application, créez une secret client et obtenez cette valeur.
 
-1. \[AAD Admin \] Create an AAD Application for Rest User under your Microsoft 365 tenant.
+1. \[AAD admin \] Créez une application AAD l’utilisateur Rest sous votre Microsoft 365 client.
 
     1. Connectez-vous au [portail Azure](https://portal.azure.com/) avec vos informations d’identification Microsoft 365 client et allez sur la page d’inscription de l’application pour créer une application.
 
@@ -66,7 +66,7 @@ Ces conditions préalables sont nécessaires pour configurer le support Microsof
 
 1. \[L’administrateur ServiceNow \] a installé le fournisseur OAuth sortant dans ServiceNow.
 
-    Si l’étendue n’est pas définie sur **Global,** faites-le en naviguant vers Paramètres **&gt; &gt; applications** de développeur et en passant à **Global**.
+    Si l’étendue n’est pas définie sur **Global,** faites-le en naviguant vers **Paramètres &gt; &gt; applications** de développeur et en passant à **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interface utilisateur graphique, texte, application, conversation ou message texte Description générés automatiquement":::
 
@@ -78,7 +78,7 @@ Ces conditions préalables sont nécessaires pour configurer le support Microsof
 
     - Secret client : il s’agit de la valeur de la secret client de l’application créée à l’étape 1 AAD (jeton OAuth). \#
 
-    - Type d’octroi par défaut : Informations d’identification client
+    - Type d’octroi par défaut : informations d’identification du client
 
     - URL du jeton : `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
@@ -106,7 +106,7 @@ Ces conditions préalables sont nécessaires pour configurer le support Microsof
 
     - UserField : **ID utilisateur**
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
 1. Créez une application en sélectionnant Configurer un fournisseur OIDC pour vérifier les **jetons d’ID** avec les valeurs ci-après :
 
@@ -147,7 +147,7 @@ Si votre entreprise limite l’accès à Internet avec vos propres stratégies, 
 - 20.105.151.142
 
 > [!NOTE]
-> Cette commande terminal répertorie toutes les IPS actives du service pour l Microsoft 365 prise en charge :`nslookup`` connector.rave.microsoft.com`
+> Cette commande terminal répertorie toutes les IP actives du service pour Microsoft 365 l’intégration de la prise en charge :`nslookup`` connector.rave.microsoft.com`
 
 ## <a name="configure-the-microsoft-365-support-integration-application"></a>Configurer l’application Microsoft 365 prise en charge de l’intégration
 
@@ -162,11 +162,11 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 1. \[ServiceNow Admin \] Go to Microsoft 365 Support **&gt; Setup** to open the integration workflow.
 
     > [!NOTE]
-    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès entre étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
+    > Si l’erreur « Opération de lecture par rapport à l’entité oauth » de l’étendue « \_ x \_ mioms m365 assis » a été refusée en raison de la stratégie d’accès à plusieurs étendues de la table, elle est due à votre stratégie \_ d’accès à la \_ table. Vous devez vous assurer **que toutes les étendues d’application &gt;** lues sont vérifiées pour l’entité oauth \_ de table.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-1. \[ServiceNow Admin \] Select **Agree** to the consent prompt to continue.
+1. \[Sélection de l’administrateur ServiceNow \] **Acceptez** l’invite de consentement pour continuer.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image11.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image11.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
@@ -184,7 +184,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     1. Sélectionnez le client OAuth créé dans les conditions préalables (AAD jeton [OAuth) étape \# 5,](#prerequisites-aad-oauth-token)puis sélectionnez **Suivant**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image28.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image28.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image28.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image28.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
 1. \[L’administrateur ServiceNow \] a installé l’utilisateur d’intégration des appels entrants.
 
@@ -198,7 +198,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     Spécifiez l’ID de référentiel, puis sélectionnez **Suivant**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description d’application générés automatiquement":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
 1. \[ServiceNow Admin \] Set up Application Paramètres.
 
@@ -206,13 +206,13 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     - SSO avec Microsoft 365 : vérifiez si l’instance ServiceNow est définie en tant qu’OS avec Microsoft 365 clients, sinon décochez-la.
 
-    - Microsoft 365 courrier électronique de l’administrateur : adresse électronique de l Microsoft 365'administrateur qui est contacté lors Microsoft 365 cas de support sont créés.
+    - Microsoft 365 e-mail de l’administrateur : adresse de messagerie Microsoft 365'administrateur qui est contacté lors de la création Microsoft 365 de support technique.
 
     - Environnement de test : cochez la case pour indiquer une phase de test afin d’éviter que les agents du support Microsoft ne vous contactent pour résoudre le problème. Si vous êtes prêt à passer officiellement à l’étape Microsoft 365 l’intégration, décochez la case.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interface utilisateur graphique, texte, description de l’application générés automatiquement":::
 
-1. \[Microsoft 365 L’administrateur client \] termine l’intégration.
+1. \[Microsoft 365 client \] Terminez l’intégration.
 
     Vérifiez que les informations ci-dessous sont correctes. NE sélectionnez **PAS Suivant** pour le moment.
 
@@ -226,17 +226,17 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
-1. Sous **l’onglet Référentiels,** **sélectionnez** Ajouter un référentiel pour créer un référentiel avec les paramètres suivants :
+1. Sous **l’onglet Référentiels,** sélectionnez **Nouveau** référentiel et mettez-le à jour avec les paramètres suivants :
 
     - Référentiel : valeur **de l’ID** de référentiel de « Étape 6 : Terminer l’intégration ».
 
-    - Point de terminaison : valeur **de point** de terminaison de « Étape 6 : Terminer l’intégration ».
+    - Point de terminaison : valeur **de point** de terminaison de « Étape 6 - Terminer l’intégration ».
 
     - Type d’authentification **: sélectionnez AAD auth**.
 
-    - ID client : valeur de **l’ID client** de l’étape 6 : terminer l’intégration.
+    - ID client : valeur **de l’ID client** de l’étape 6 : terminer l’intégration.
 
-    - Secret client : secret du fournisseur OAuth entrant créé à l’étape 2 des conditions préalables (AAD jeton \# OAuth).
+    - Secret client : secret du fournisseur OAuth entrant créé à l’étape 2 des conditions préalables (AAD \# OAuth).
 
     - Nom d’utilisateur restant : valeur du nom d’utilisateur de l’étape 6 : terminer l’intégration, qui est l’ID **client** de l’application créée à l’étape 3 des conditions préalables (jeton OAuth  \# AAD).
 

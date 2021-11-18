@@ -17,18 +17,31 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les nouveautés du gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701598"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072259"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft
 
 **Dans cet article :** Découvrez les mises à jour récentes dans le Gestionnaire de conformité.
 
 ## <a name="november-2021"></a>Novembre 2021
+
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Intégration de confiance zéro pour le modèle de référence de la protection des données
+
+La confiance zéro est une approche proactive et intégrée de la sécurité sur toutes les couches du patrimoine numérique qui vérifie explicitement et en permanence chaque transaction, déclare le moindre privilège et s’appuie sur l’intelligence, la détection avancée et la réponse en temps réel aux menaces. Le modèle de base de la protection des données du Gestionnaire de conformité, inclus pour tous les utilisateurs, intègre désormais 57 nouveaux contrôles et 36 nouvelles actions pour la confiance zéro alignées sur les familles de contrôles suivantes :
+
+- Application de confiance zéro
+- Conseils de développement d’application De confiance zéro
+- Point de terminaison d’une confiance zéro
+- Données de confiance zéro
+- Identité de confiance zéro
+- Infrastructure de confiance zéro
+- Réseau de confiance zéro
+- Visibilité, automatisation et orchestration de confiance zéro
 
 ### <a name="new-assessment-templates"></a>Nouveaux modèles d’évaluation
 
@@ -64,9 +77,9 @@ Le Gestionnaire de conformité peut désormais travailler de pair avec la gestio
 
 ## <a name="july-2021"></a>Juillet 2021
 
-Nous avons ajouté la possibilité de créer des évaluations pour des produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez [par utiliser les modèles d’évaluation.](compliance-manager-templates.md)
+Nous avons ajouté la possibilité de créer des évaluations pour les produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez par [utiliser les modèles d’évaluation.](compliance-manager-templates.md)
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="new-assessment-templates"></a>Nouveaux modèles d’évaluation
 
