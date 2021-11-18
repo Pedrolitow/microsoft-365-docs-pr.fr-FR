@@ -25,17 +25,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Découvrez comment Coffre protection des liens dans Defender pour Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
+description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3e00d5cb4db44b2a741135426cd4a902ef5942b6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2f2f1695c10c7b5b9d03db38ab000410c20eb467
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646386"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064222"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre Liens dans Microsoft Defender pour Office 365
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens vers Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "60646386"
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens sécurisés dans Outlook, voir Sécurité avancée [Outlook.com.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
 
-Coffre Les liens sont une fonctionnalité de [Defender pour Office 365](defender-for-office-365.md) qui fournit l’analyse et la réécriture d’URL des messages électroniques entrants dans le flux de messagerie, ainsi que la vérification au moment du clic des URL et des liens dans les messages électroniques et d’autres emplacements. Coffre L’analyse des liens s’ajoute à la [protection](anti-spam-and-anti-malware-protection.md) régulière contre le courrier indésirable et les programmes malveillants dans les messages électroniques entrants dans Exchange Online Protection (EOP). L’analyse des liens fiables peut permettre de votre organisation contre les liens malveillants utilisés dans le hameçonnage et d’autres attaques.
+Coffre Links est une fonctionnalité de [Defender pour Office 365](defender-for-office-365.md) qui fournit l’analyse et la réécriture d’URL des messages électroniques entrants dans le flux de messagerie, ainsi que la vérification au moment du clic des URL et des liens dans les messages électroniques et d’autres emplacements. Coffre liens se produit en plus de la [protection](anti-spam-and-anti-malware-protection.md) régulière contre le courrier indésirable et les programmes malveillants dans les messages électroniques entrants dans Exchange Online Protection (EOP). L’analyse des liens fiables peut permettre de votre organisation contre les liens malveillants utilisés dans le hameçonnage et d’autres attaques.
 
 La protection Liens fiables est disponible dans les emplacements suivants :
 
@@ -55,7 +55,7 @@ La protection Liens fiables est disponible dans les emplacements suivants :
   Pour plus d’informations Coffre la protection des liens pour les messages électroniques, consultez la section liens Coffre pour les [messages](#safe-links-settings-for-email-messages) électroniques plus loin dans cet article.
   
   > [!NOTE]
-  > Coffre Les liens ne fonctionnent pas sur les dossiers publics à messagerie.
+  > Coffre ne fonctionne pas sur les dossiers publics à messagerie.
 
 - **Microsoft Teams** : la protection Liens fiables pour les liens dans les conversations Teams, les conversations de groupe ou à partir de canaux est également contrôlée par des stratégies de Liens fiables.
 
@@ -71,13 +71,13 @@ Cet article contient des descriptions détaillées des types de liens Coffre sui
 
 - **Paramètres** dans Coffre de liens : ces paramètres s’appliquent uniquement aux utilisateurs inclus dans les stratégies spécifiques, et les paramètres peuvent être différents d’une stratégie à l’autre. Ces paramètres sont les suivants :
 
-  - [Coffre Paramètres des liens pour les messages électroniques](#safe-links-settings-for-email-messages)
-  - [Coffre Paramètres des liens pour Microsoft Teams](#safe-links-settings-for-microsoft-teams)
+  - [Coffre de liens pour les messages électroniques](#safe-links-settings-for-email-messages)
+  - [Coffre paramètres de liens pour Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [« Ne pas réécrire les URL suivantes » dans les stratégies Coffre liens](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
 - **Paramètres Coffre liens** globaux : ces paramètres sont configurés globalement, et non dans Coffre de liens. Ces paramètres sont les suivants :
 
-  - [Coffre Paramètres des liens pour Office 365 applications](#safe-links-settings-for-office-365-apps)
+  - [Coffre paramètres de liens pour Office 365 applications](#safe-links-settings-for-office-365-apps)
   - [Liste « Bloquer les URL suivantes » pour les Coffre liens](#block-the-following-urls-list-for-safe-links)
 
 Le tableau suivant décrit les scénarios pour les liens Coffre dans les organisations Microsoft 365 et Office 365 qui incluent Defender pour Office 365 (en d’autres termes, l’absence de licence n’est jamais un problème dans les exemples).
@@ -88,24 +88,24 @@ Le tableau suivant décrit les scénarios pour les liens Coffre dans les organis
 
 |Scénario|Résultat|
 |---|---|
-|Jean est membre du service marketing. Coffre La protection des liens pour Office 365 applications est désactivée dans les paramètres globaux des liens Coffre et il existe une stratégie de liens Coffre qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par Coffre liens. <p> Jean est inclus dans une stratégie Coffre liens et la protection Coffre liens pour Office 365 applications est désactivée. <p> Pour plus d’informations sur la configuration requise pour la protection Coffre liens dans les applications Office 365, voir la section liens Coffre pour les applications Office 365 [plus](#safe-links-settings-for-office-365-apps) loin dans cet article.|
-|L’organisation de Chris Microsoft 365 E5 n’a aucune stratégie Coffre de liens configurée. Chris reçoit un courrier électronique d’un expéditeur externe qui contient une URL vers un site web malveillant sur qui il clique.|Chris n’est pas protégé par Coffre liens. <p> Un administrateur doit créer au moins une stratégie Coffre liens pour que tout le monde puisse Coffre protection des liens entrants dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir la protection Coffre liens.|
-|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens Coffre, mais la protection Coffre liens pour Office 365 applications est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par Coffre liens. <p> Bien Coffre la protection des liens Office 365 applications Office 365 soit désactivée globalement, Pat n’est inclus dans aucune stratégie de liens Coffre active, donc la protection ne peut pas être appliquée.|
-|Dans l’organisation de Lee, est configurée dans la liste Bloquer les URL suivantes dans les paramètres globaux pour `https://tailspintoys.com` Coffre liens.  Une stratégie Coffre liens incluant Lee existe déjà. Lee reçoit un message électronique qui contient `https://tailspintoys.com/aboutus/trythispage` l’URL. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée d’URL dans la liste et du client de messagerie Lee utilisé. Pour plus d’informations, voir la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links) » Coffre section Liens plus loin dans cet article.|
+|Jean est membre du service marketing. Coffre la protection des liens pour les applications Office 365 est désactivée dans les paramètres globaux des liens Coffre, et il existe une stratégie de liens Coffre qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par Coffre liens. <p> Jean est inclus dans une stratégie Coffre liens et la protection Coffre liens pour Office 365 applications est désactivée. <p> Pour plus d’informations sur la configuration requise pour la protection Coffre liens dans les applications Office 365, voir la section liens Coffre pour les applications Office 365 [plus](#safe-links-settings-for-office-365-apps) loin dans cet article.|
+|L’organisation de Chris Microsoft 365 E5 aucune stratégie de liens Coffre configurée. Chris reçoit un courrier électronique d’un expéditeur externe qui contient une URL vers un site web malveillant sur qui il clique.|Chris n’est pas protégé par Coffre liens. <p> Un administrateur doit créer au moins une stratégie Coffre liens pour que tout le monde puisse Coffre protection des liens entrants dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir la protection Coffre liens.|
+|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens Coffre, mais la protection Coffre liens pour Office 365 applications est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par Coffre liens. <p> Bien Coffre protection des liens pour les applications Office 365 est globalement active, Pat n’est inclus dans aucune stratégie de liens Coffre actives, donc la protection ne peut pas être appliquée.|
+|Dans l’organisation de Lee, est configurée dans la liste Bloquer les URL suivantes dans les paramètres globaux Coffre `https://tailspintoys.com` liens.  Une stratégie Coffre liens incluant Lee existe déjà. Lee reçoit un message électronique qui contient `https://tailspintoys.com/aboutus/trythispage` l’URL. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée d’URL dans la liste et du client de messagerie Lee utilisé. Pour plus d’informations, voir la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links) » Coffre section Liens plus loin dans cet article.|
 |Elle et Julia travaillent toutes les deux pour contoso.com. Il y a longtemps, les administrateurs configuraient Coffre des stratégies de liens qui s’appliquent à la fois à Celle-ci et à Julia. Il envoie un e-mail à Julia, sans savoir que le message contient une URL malveillante.|Julia est protégée par des  liens Coffre si la stratégie de liens Coffre qui s’applique à elle est configurée pour s’appliquer aux messages entre des destinataires internes. Pour plus d’informations, voir la section [Coffre liens](#safe-links-settings-for-email-messages) pour les messages électroniques plus loin dans cet article.|
 |
 
-## <a name="safe-links-settings-for-email-messages"></a>Coffre Paramètres des liens pour les messages électroniques
+## <a name="safe-links-settings-for-email-messages"></a>Coffre de liens pour les messages électroniques
 
 Liens fiables analysent le courrier électronique entrant pour les liens hypertexte malveillants connus. Les URL analysées sont réécrites à l’aide du préfixe d’URL standard Microsoft : `https://nam01.safelinks.protection.outlook.com` . Une fois le lien réécrit, il est analysé pour le contenu potentiellement malveillant.
 
-Après Coffre liens réécrit une URL, l’URL reste réécrite, même si le message est transmis ou répliqué manuellement (à la fois aux destinataires internes et externes).  Les liens supplémentaires ajoutés au message transmis ou à la réponse ne sont pas réécrits. Toutefois, dans  le cas d’un forwarding automatique par des règles de boîte de réception ou de  transport SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final, sauf si ce destinataire est également protégé par les liens Coffre ou si l’URL a déjà été réécrite dans une communication précédente. Les URL réécrites s’appliquent uniquement aux e-mails HTML, car la réécriture de l’URL rendrait illisibles les URL de texte brut et enrichi, mais ces URL sont toujours analysées avant leur remise. Les e-mails en texte enrichi et en texte simple contenant des URL seront également toujours vérifiés par un appel d’API côté client aux liens Coffre au moment du clic dans Outlook pour ordinateur de bureau version 16.0.12513 ou ultérieure.
+Après Coffre liens réécrit une URL, l’URL reste réécrite, même si le message est transmis ou répliqué manuellement (à la fois aux destinataires internes et externes).  Les liens supplémentaires ajoutés au message transmis ou à la réponse ne sont pas réécrits. Toutefois, dans  le cas du forwarding automatique par les règles de boîte de réception ou le transport  SMTP, l’URL ne sera pas réécrite dans le message destiné au destinataire final, sauf si ce destinataire est également protégé par des liens Coffre ou si l’URL a déjà été réécrite dans une communication précédente. Tant que Coffre liens est activé, les URL sont toujours analysées avant leur remise, qu’elles soient réécrites ou non. Les URL non enveloppées seront également toujours vérifiées par un appel d’API côté client aux liens Coffre au moment du clic dans Outlook pour ordinateur de bureau version 16.0.12513 ou ultérieure.
 
 Les paramètres des stratégies Coffre liens qui s’appliquent aux messages électroniques sont décrits dans la liste suivante :
 
-- **Sélectionnez l’action pour les** URL potentiellement malveillantes inconnues dans les messages : active ou désactive l’Coffre liens dans les messages électroniques. La valeur recommandée est **Sur**. L’turning on this setting results in the following actions.
+- **Sélectionnez l’action pour** les URL potentiellement malveillantes inconnues dans les messages : active ou désactive l’Coffre liens dans les messages électroniques. La valeur recommandée est **Sur**. L’turning on this setting results in the following actions.
 
-  - Coffre L’analyse des liens est activée dans Outlook (C2R) sur Windows.
+  - Coffre’analyse des liens est activée dans Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via Coffre protection des liens lorsqu’ils cliquent sur les URL des messages.
   - Lorsque vous cliquez dessus, les URL sont vérifiées par rapport à la liste des URL malveillantes connues et à la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links)».
   - Les URL qui n’ont pas de réputation valide sont détonées de manière asynchrone en arrière-plan.
@@ -115,7 +115,7 @@ Les paramètres des stratégies Coffre liens qui s’appliquent aux messages él
     - Activé : les messages qui contiennent des URL sont maintenus jusqu’à la fin de l’analyse. Les messages ne sont remis qu’une fois que les URL sont confirmées comme sûres. Il s’agit de la valeur recommandée.
     - Désactivé : si l’analyse d’URL ne peut pas se terminer, remettre le message quand même.
 
-- Appliquer Coffre Liens vers les **messages** électroniques envoyés au sein de l’organisation : active ou désactive l’analyse des liens Coffre sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même organisation Exchange Online. La valeur recommandée est activée.
+- **Appliquez Coffre** Liens vers les messages électroniques envoyés au sein de l’organisation : active ou désactive l’analyse des liens Coffre sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même Exchange Online organisation. La valeur recommandée est activée.
 
 - **Ne pas suivre les clics** de l’utilisateur : active ou désactive le stockage Coffre données de clic de liens pour les URL sur les messages électroniques. La valeur recommandée consiste à laisser ce paramètre non sélectionné (pour suivre les clics de l’utilisateur).
 
@@ -125,11 +125,11 @@ Les paramètres des stratégies Coffre liens qui s’appliquent aux messages él
 
 - **Afficher la marque de l’organisation sur les pages de notification** et d’avertissement : cette option affiche la marque de votre organisation sur les pages d’avertissement. La branding permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation, voir [Personnaliser Microsoft 365 thème pour votre organisation.](../../admin/setup/customize-your-organization-theme.md)
 
-- **Ne réécrivez pas les URL suivantes :** Laisse les URL telles qu’elles sont. Conserve une liste personnalisée d’URL sécurisées qui n’ont pas besoin d’analyse. La liste est unique pour chaque stratégie Coffre liens. Pour plus d’informations sur la liste Ne pas réécrire les URL **suivantes,** voir les listes « Ne pas réécrire les URL [suivantes](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) » dans la section Coffre Links plus loin dans cet article.
+- **Ne réécrivez pas les URL suivantes :** Laisse les URL telles qu’elles sont. Conserve une liste personnalisée d’URL sécurisées qui n’ont pas besoin d’être scanées. La liste est unique pour chaque stratégie Coffre liens. Pour plus d’informations sur la liste Ne pas réécrire les URL **suivantes,** voir les listes « Ne pas réécrire les URL [suivantes](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) » dans la section Coffre Links policies plus loin dans cet article.
 
   Pour plus d’informations sur les valeurs recommandées pour les paramètres de stratégie Standard et Strict pour les stratégies de liens Coffre, voir Coffre paramètres de [stratégie de liens.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
-- Ne réécrivez pas les URL, effectuez des **vérifications via l’API SafeLinks** uniquement : si ce paramètre est activé, aucun habillage d’URL n’a lieu. Coffre Les liens sont appelés exclusivement via les API au moment du clic sur l’URL Outlook clients qui la prisent en charge. La valeur recommandée est désactivée.
+- Ne réécrivez pas les URL, effectuez des **vérifications via l’API SafeLinks** uniquement : si ce paramètre est activé, aucun habillage d’URL n’a lieu. Coffre liens est appelé exclusivement via les API au moment du clic sur l’URL Outlook clients qui la prisent en charge. La valeur recommandée est désactivée.
   
 - **Filtres de** destinataires : vous devez spécifier les conditions de destinataire et les exceptions qui déterminent à qui s’applique la stratégie. Vous pouvez utiliser ces propriétés pour les conditions et les exceptions :
   - **Le destinataire est**
@@ -146,28 +146,28 @@ Les paramètres des stratégies Coffre liens qui s’appliquent aux messages él
 
 À un niveau élevé, voici comment fonctionne la protection Coffre liens sur les URL des messages électroniques :
 
-1. Tous les messages électroniques sont envoyés via EOP, où les filtres de protocole Internet (IP) et d’enveloppe, la protection anti-programme malveillant basée sur les signatures, le courrier indésirable et le logiciel anti-programme malveillant filtrent avant que le message ne soit remis à la boîte aux lettres du destinataire.
+1. Tous les messages électroniques sont envoyés via EOP, où les filtres de protocole Internet (IP) et d’enveloppe, la protection contre les programmes malveillants basés sur les signatures, le courrier indésirable et le logiciel anti-programme malveillant sont filtrants avant que le message ne soit remis à la boîte aux lettres du destinataire.
 
 2. L’utilisateur ouvre le message dans sa boîte aux lettres et clique sur une URL dans le message.
 
-3. Coffre Les liens vérifient immédiatement l’URL avant d’ouvrir le site web :
+3. Coffre liens vérifie immédiatement l’URL avant d’ouvrir le site web :
 
    - Si l’URL est incluse dans la liste Bloquer les URL **suivantes,** un avertissement [d’URL bloquée](#blocked-url-warning) s’ouvre.
 
-   - Si l’URL pointe vers un site web qui [a](#malicious-website-warning) été déterminé comme malveillant, une page d’avertissement de site web malveillant (ou une autre page d’avertissement) s’ouvre.
+   - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page d’avertissement de site [web](#malicious-website-warning) malveillant (ou une autre page d’avertissement) s’ouvre.
 
    - Si l’URL pointe vers un fichier téléchargeable et que l’analyse des **URL** en temps réel à la recherche de liens suspects et de liens pointant vers le paramètre de fichiers est activée dans la stratégie qui s’applique à l’utilisateur, le fichier téléchargeable est vérifié.
 
    - Si l’URL est déterminée comme sûre, le site web s’ouvre.
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>Coffre Paramètres des liens pour Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>Coffre paramètres de liens pour Microsoft Teams
 
 Vous activez ou désactivez la protection Coffre liens pour les Microsoft Teams dans Coffre de liens. Plus précisément, vous utilisez l’action Sélectionner pour les URL inconnues ou potentiellement **malveillantes** dans Microsoft Teams paramètre. La valeur recommandée est **Sur**.
 
 > [!NOTE]
 > Lorsque vous activer ou désactiver la protection Coffre liens pour Teams, la modification peut prendre jusqu’à 24 heures.
 
-Les paramètres suivants dans Coffre de liens qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens Teams :
+Les paramètres suivants dans Coffre liens qui s’appliquent aux liens dans les messages électroniques s’appliquent également aux liens Teams :
 
 - **Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers**
 - **Ne pas suivre les clics de l’utilisateur**
@@ -197,14 +197,14 @@ Cliquer sur le **bouton Revenir en** arrière dans la page d’avertissement per
 
 3. Les URL sont validées au moment du clic pour l’utilisateur dans les conversations, les conversations de groupe, les canaux et les onglets.
 
-## <a name="safe-links-settings-for-office-365-apps"></a>Coffre Paramètres des liens pour Office 365 applications
+## <a name="safe-links-settings-for-office-365-apps"></a>Coffre paramètres de liens pour Office 365 applications
 
-Coffre La protection des liens pour Office 365 applications vérifie les liens dans les documents Office, et non dans les messages électroniques (mais elle peut vérifier les liens dans les documents Office joints dans les messages électroniques une fois le document ouvert).
+Coffre protection des liens pour les applications Office 365 vérifie les liens dans les documents Office, et non dans les liens des messages électroniques (mais il peut vérifier les liens dans les documents Office joints dans les messages électroniques une fois le document ouvert).
 
-Coffre La protection des liens pour Office 365 applications a les exigences client suivantes :
+Coffre protection des liens pour Office 365 applications a les exigences client suivantes :
 
 - Microsoft 365 Apps ou Microsoft 365 Business Premium.
-  - Les versions actuelles de Word, Excel et PowerPoint sur Windows Mac ou dans un navigateur web.
+  - Les versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur web.
   - Office applications sur les appareils iOS ou Android.
   - Visio sur Windows.
   - OneNote dans un navigateur web.
@@ -235,17 +235,17 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 
 2. L’utilisateur ouvre et clique sur un lien Office document dans une application Office.
 
-3. Coffre Les liens vérifient immédiatement l’URL avant d’ouvrir le site web cible :
+3. Coffre liens vérifie immédiatement l’URL avant d’ouvrir le site web cible :
 
    - Si l’URL est incluse dans la liste qui ignore l’analyse Coffre liens (la liste Bloquer les URL **suivantes),** une page d’avertissement [d’URL](#blocked-url-warning) bloquée s’ouvre.
 
-   - Si l’URL pointe vers un site web qui [a](#malicious-website-warning) été déterminé comme malveillant, une page d’avertissement de site web malveillant (ou une autre page d’avertissement) s’ouvre.
+   - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page d’avertissement de site [web](#malicious-website-warning) malveillant (ou une autre page d’avertissement) s’ouvre.
 
    - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens Coffre qui s’applique à l’utilisateur est configurée pour analyser les liens vers le contenu téléchargeable (appliquer l’analyse **d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers), le fichier téléchargeable est vérifié.
 
    - Si l’URL est considérée comme sûre, l’utilisateur est conduit sur le site web.
 
-   - Si Coffre’analyse des liens n’est pas terminée, la protection Coffre liens n’est pas déclenchée. Dans Office clients de bureau, l’utilisateur est averti avant de passer au site web de destination.
+   - Si Coffre’analyse des liens n’est pas terminée, Coffre protection des liens ne se déclenche pas. Dans Office clients de bureau, l’utilisateur est averti avant de passer au site web de destination.
 
 > [!NOTE]
 > Le début de chaque session peut prendre plusieurs secondes pour vérifier que l’utilisateur Coffre liens Office activés.
@@ -262,7 +262,7 @@ Lorsqu’un utilisateur dans une stratégie de liens Coffre active clique sur un
 
 Vous configurez la liste des URL dans les paramètres globaux pour Coffre liens. Pour obtenir des instructions, voir Configurer la liste [« Bloquer les URL suivantes](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)».
 
-**Remarques** :
+**Remarques** :
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
 - Limites pour la **liste Bloquer les URL suivantes** :
@@ -295,7 +295,7 @@ Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leu
 > [!NOTE]
 > Si votre organisation utilise Coffre de liens, les listes d’URL **suivantes** ne sont pas réécrites et sont la seule méthode prise en charge pour les tests de hameçonnage tiers.
 
-Chaque Coffre de liens contient une liste Ne pas réécrire les URL **suivantes** que vous pouvez utiliser pour spécifier des URL qui ne sont pas réécrites par l’analyse Coffre liens. En d’autres termes, la liste permet aux utilisateurs qui sont inclus dans la stratégie d’accéder aux URL spécifiées qui seraient autrement bloquées par Coffre liens. Vous pouvez configurer différentes listes dans différentes stratégies Coffre liens. Le traitement des stratégies s’arrête après l’application de la première stratégie (probablement la plus haute priorité) à l’utilisateur. Ainsi, une seule ne réécriture pas la liste d’URL suivante est appliquée à un utilisateur qui est inclus dans plusieurs **stratégies actives** Coffre liens.
+Chaque Coffre de liens contient une liste d’URL Ne pas réécrire les URL **suivantes** que vous pouvez utiliser pour spécifier les URL qui ne sont pas réécrites par l’analyse Coffre liens. En d’autres termes, la liste permet aux utilisateurs qui sont inclus dans la stratégie d’accéder aux URL spécifiées qui seraient autrement bloquées par Coffre liens. Vous pouvez configurer différentes listes dans différentes stratégies Coffre liens. Le traitement des stratégies s’arrête après l’application de la première stratégie (probablement la plus haute priorité) à l’utilisateur. Ainsi, une seule ne réécriture pas la liste d’URL suivante est appliquée à un utilisateur qui est inclus dans plusieurs **stratégies actives** Coffre liens.
 
 Pour ajouter des entrées à la liste dans les stratégies de liens Coffre nouvelles ou existantes, voir [Créer](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) des stratégies de liens Coffre ou Modifier Coffre [de liens.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
 

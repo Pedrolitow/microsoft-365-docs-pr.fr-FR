@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e23c8628fc5985863c206bc3c7589e9cc4d2024
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: c1be368bb57e16f657d70b701d29265a6dbc1316
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889734"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063332"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -44,18 +44,20 @@ Cet article explique comment les administrateurs peuvent supprimer des élément
 [Étape 6 : Revenir à l’état précédent de la boîte aux lettres](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Les procédures décrites dans cet article entraînent la suppression définitive (purgée) des données d’une boîte aux lettres Exchange Online’utilisateur. Cela signifie que les messages que vous supprimez du dossier Éléments récupérables ne peuvent pas être récupérés et ne seront pas disponibles à des fins de découverte légale ou de conformité. Si vous souhaitez supprimer des messages d’une boîte aux lettres placée en conservation dans le cadre d’une conservation pour litige, d’une conservation In-Place, d’une conservation eDiscovery ou d’une stratégie de rétention créée dans le centre de sécurité et conformité, consultez vos services juridiques ou de gestion des enregistrements avant de supprimer la conservation. Votre organisation peut avoir une stratégie qui définit si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire.
+> Les procédures décrites dans cet article entraînent la suppression définitive (purgée) des données d’une boîte aux lettres Exchange Online’utilisateur. Cela signifie que les messages que vous supprimez du dossier Éléments récupérables ne peuvent pas être récupérés et ne seront pas disponibles à des fins de découverte légale ou de conformité. Si vous souhaitez supprimer des messages d’une boîte aux lettres placée en conservation dans le cadre d’une conservation pour litige, d’une conservation In-Place, d’une conservation eDiscovery ou d’une stratégie de rétention créée dans le Centre de conformité Microsoft 365, consultez vos services juridiques ou de gestion des enregistrements avant de supprimer la conservation. Votre organisation peut avoir une stratégie qui définit si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire.
   
 ## <a name="before-you-delete-items"></a>Avant de supprimer des éléments
 
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de [rôles, voir Attribuer des autorisations eDiscovery](./assign-ediscovery-permissions.md).
 
+- Si une boîte aux lettres est affectée à une stratégie de rétention à l’échelle de l’organisation, vous devez exclure la boîte aux lettres de la stratégie avant de pouvoir supprimer des éléments du dossier Éléments récupérables. La synchronisation de la modification de stratégie et la suppression de la boîte aux lettres de la stratégie peut prendre jusqu’à 24 heures. Pour plus d’informations, voir « Stratégies de rétention à l’échelle de l’organisation » dans la [section](#organization-wide-retention-policies) Supprimer toutes les conservations de la boîte aux lettres de cet article.
+
+- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres à qui des paramètres de rétention ont été affectés avec une stratégie de rétention verrouillée à l’aide du verrouillage de conservation. En effet, ce verrou vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie et de désactiver l’Assistant Dossier géré sur la boîte aux lettres. Pour plus d’informations sur les stratégies de verrouillage pour la rétention, voir Utiliser le verrouillage de conservation pour limiter les modifications apportées aux stratégies de rétention et aux stratégies [d’étiquette de rétention.](retention-preservation-lock.md)
+
 - La procédure décrite dans cet article n’est pas prise en charge pour les boîtes aux lettres inactives. Cela est dû au fait que vous ne pouvez pas réappliquer une conservation (ou une stratégie de rétention) à une boîte aux lettres inactive après l’avoir supprimée. Lorsque vous supprimez une boîte aux lettres inactive, elle devient une boîte aux lettres normale supprimée (suppression temporaire) et est définitivement supprimée de votre organisation après son traitement par l’Assistant Dossier géré.
 
-- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres à qui des paramètres de rétention ont été affectés avec une stratégie verrouillée à l’aide du verrouillage de conservation. En effet, ce verrou vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie et de désactiver l’Assistant Dossier géré sur la boîte aux lettres. Pour plus d’informations sur les stratégies de verrouillage pour la rétention, voir Utiliser le verrouillage de conservation pour limiter les modifications apportées aux stratégies de rétention et aux stratégies [d’étiquette de rétention.](retention-preservation-lock.md)
-
 - Si une boîte aux lettres n’est pas placée en attente (ou si la récupération d’élément unique n’est pas activée), vous pouvez supprimer les éléments du dossier Éléments récupérables. Pour plus d’informations sur la façon de le faire, voir Rechercher et supprimer des [messages électroniques dans votre organisation.](./search-for-and-delete-messages-in-your-organization.md)
-  
+
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Étape 1 : Collecter des informations sur la boîte aux lettres
 
 Cette première étape consiste à collecter les propriétés sélectionnées de la boîte aux lettres cible qui affecteront cette procédure. N’oubliez pas d’écrire ces paramètres ou de les enregistrer dans un fichier texte, car vous allez modifier certaines de ces propriétés, puis revenir aux valeurs d’origine à l’étape 6, après avoir supprimé des éléments du dossier Éléments récupérables. Voici une liste des propriétés de boîte aux lettres que vous devez collecter.
@@ -132,7 +134,7 @@ En outre, vous devez obtenir les paramètres d’accès client de boîte aux let
 
 Après avoir collecté et enregistrement des informations sur la boîte aux lettres, l’étape suivante consiste à préparer la boîte aux lettres en effectuer les tâches suivantes :
   
-- **Désactivez l’accès client** à la boîte aux lettres afin que le propriétaire de la boîte aux lettres ne puisse pas accéder à sa boîte aux lettres et apporter des modifications aux données de la boîte aux lettres au cours de cette procédure.
+- **Désactivez l’accès client à** la boîte aux lettres afin que le propriétaire de la boîte aux lettres ne puisse pas accéder à sa boîte aux lettres et apporter des modifications aux données de la boîte aux lettres au cours de cette procédure.
 
 - Augmentez la période **de** rétention des éléments supprimés à 30 jours (la valeur maximale dans Exchange Online) afin que les éléments ne sont pas purgés du dossier Éléments récupérables avant de pouvoir être supprimés à l’étape 5.
 
@@ -177,7 +179,7 @@ Effectuez les étapes suivantes dans Exchange Online PowerShell.
 La dernière étape avant de pouvoir supprimer des éléments du dossier Éléments récupérables consiste à supprimer toutes les mises en place (que vous avez identifiées à l’étape 1) placées sur la boîte aux lettres. Toutes les rétentions doivent être supprimées afin que les éléments ne soient pas conservés après leur suppression du dossier Éléments récupérables. Les sections suivantes contiennent des informations sur la suppression de différents types de boîtes aux lettres. Consultez la section [Plus d’informations](#more-information) pour obtenir des conseils sur l’identification du type de mise en attente qui peut être placé sur une boîte aux lettres. Pour plus d’informations, voir Comment identifier le type de mise en attente placée sur [Exchange Online boîte aux lettres.](identify-a-hold-on-an-exchange-online-mailbox.md)
   
 > [!CAUTION]
-> Comme indiqué précédemment, consultez vos services juridiques ou de gestion des enregistrements avant de supprimer une archive d’une boîte aux lettres. 
+> Comme indiqué précédemment, consultez vos services juridiques ou de gestion des enregistrements avant de supprimer une archive d’une boîte aux lettres.
   
 ### <a name="litigation-hold"></a>Conservation pour litige
   
@@ -212,17 +214,20 @@ Après avoir identifié la stratégie de rétention, go to the **Information gov
   
 ### <a name="organization-wide-retention-policies"></a>Stratégies de rétention à l’échelle de l’organisation
   
-Les stratégies de rétention Exchange à l’échelle Teams et à l’échelle de l’organisation sont appliquées à toutes les boîtes aux lettres de l’organisation. Elles sont appliquées au niveau de l’organisation (et non au niveau de la boîte aux lettres) et sont renvoyées lorsque vous exécutez la cmdlet **Get-OrganizationConfig** à l’étape 1. Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/exchange-online-powershell) pour identifier les stratégies de rétention à l’échelle de l’organisation. Utilisez le GUID (sans le préfixe) pour les stratégies de rétention à l’échelle de l’organisation que vous avez identifiées  `mbx` à l’étape 1.
+Les stratégies de rétention à l’échelle Exchange, à l’échelle Teams et à l’échelle de l’organisation sont appliquées à chaque boîte aux lettres de l’organisation. Elles sont appliquées au niveau de l’organisation (et non au niveau de la boîte aux lettres) et sont renvoyées lorsque vous exécutez la cmdlet **Get-OrganizationConfig** à l’étape 1. Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/exchange-online-powershell) pour identifier les stratégies de rétention à l’échelle de l’organisation. Utilisez le GUID (sans le préfixe) pour les stratégies de rétention à l’échelle de l’organisation que vous avez identifiées  `mbx` à l’étape 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié les stratégies de rétention à l’échelle de l’organisation, go to the **Information governance**  >  **Retention** page in the Centre de conformité Microsoft 365, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Cela supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. La réplication de la modification peut prendre jusqu’à 24 heures.
+Après avoir identifié les stratégies de rétention à l’échelle de l’organisation, go to the **Information governance**  >  **Retention** page in the Centre de conformité Microsoft 365, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Cela supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention.
+
+> [!IMPORTANT]
+> Après avoir exclu une boîte aux lettres d’une stratégie de rétention à l’échelle de l’organisation, la synchronisation de cette modification et la suppression de la boîte aux lettres de la stratégie peut prendre jusqu’à 24 heures.
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver du contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme étant en conservation pour litige ou affectée à une stratégie de rétention.
+Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver du contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme placée en conservation pour litige ou affectée à une stratégie de rétention.
 
 Pour afficher la valeur de la *propriété ComplianceTagHoldApplied,* exécutez la commande suivante dans Exchange Online PowerShell :
 
@@ -230,7 +235,11 @@ Pour afficher la valeur de la *propriété ComplianceTagHoldApplied,* exécutez 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le centre de sécurité et conformité pour rechercher des éléments étiquetés à l’aide de la condition de recherche ComplianceTag. Pour plus d’informations, voir la section « Conditions de recherche » dans requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md#conditions-for-common-properties)
+Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des éléments étiquetés à l’aide de la **condition** d’étiquette de rétention. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+
+- La section « Utilisation de la recherche de contenu pour rechercher tout le contenu avec une étiquette de rétention spécifique » dans En savoir plus sur les stratégies de rétention et les [étiquettes de rétention](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+
+- La section « Conditions de recherche » dans les requêtes par mot clé et [les conditions de recherche pour la recherche de contenu.](keyword-queries-and-search-conditions.md#conditions-for-common-properties)
 
 Pour plus d’informations sur les étiquettes, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
 
@@ -274,7 +283,7 @@ Vous devez avoir le rôle de Exchange Online pour utiliser le paramètre *Remove
 
 Vous êtes maintenant prêt à supprimer des éléments dans le dossier Éléments récupérables à l’aide des cmdlets [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) et [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) dans le Centre de sécurité & conformité PowerShell.
 
-Pour rechercher des éléments situés dans le dossier Éléments récupérables, nous vous recommandons d’effectuer une *collection ciblée.* Cela signifie que vous limitez l’étendue de votre recherche uniquement aux éléments situés dans le dossier Éléments récupérables. Pour ce faire, exécutez le script dans l’article Utiliser la recherche de contenu [pour les collections ciblées.](use-content-search-for-targeted-collections.md) Ce script renvoie la valeur de la propriété d’ID de dossier pour tous les sous-dossiers du dossier Éléments récupérables cible. Ensuite, vous utilisez l’ID de dossier dans une requête de recherche pour renvoyer les éléments situés dans ce dossier.
+Pour rechercher des éléments situés dans le dossier Éléments récupérables, nous vous recommandons d’effectuer une *collection ciblée.* Cela signifie que vous limitez l’étendue de votre recherche aux éléments situés dans le dossier Éléments récupérables. Pour ce faire, exécutez le script dans l’article Utiliser la recherche de contenu [pour les collections ciblées.](use-content-search-for-targeted-collections.md) Ce script renvoie la valeur de la propriété d’ID de dossier pour tous les sous-dossiers du dossier Éléments récupérables cible. Ensuite, vous utilisez l’ID de dossier dans une requête de recherche pour renvoyer les éléments situés dans ce dossier.
 
 Voici une vue d’ensemble du processus de recherche et de suppression d’éléments dans le dossier Éléments récupérables d’un utilisateur :
 
@@ -284,7 +293,7 @@ Voici une vue d’ensemble du processus de recherche et de suppression d’élé
 
    Voici une liste et une description des sous-dossiers du dossier Éléments récupérables à partir des éléments que vous pouvez rechercher et supprimer :
 
-   - **Suppressions :** contient les éléments supprimés (supprimés( ou supprimés) dont la période de rétention des éléments supprimés n’a pas expiré. Les utilisateurs peuvent récupérer des éléments supprimés (récupérables) à partir de ce sous-fichier à l’aide de l’outil Récupérer les éléments supprimés Outlook.
+   - **Suppressions :** contient les éléments supprimés (supprimés( ou supprimés) dont la période de rétention des éléments supprimés n’a pas expiré. Les utilisateurs peuvent récupérer des éléments supprimés (récupérables) à partir de ce sous-Outlook.
 
    - **Purges :** contient les éléments supprimés définitivement dont la période de rétention des éléments supprimés a expiré. Les utilisateurs peuvent également supprimer définitivement des éléments en purgeant les éléments de leur dossier Éléments récupérables. Si la boîte aux lettres est en conservation, les éléments supprimés définitivement sont conservés. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
 
@@ -337,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Étape 6 : Revenir à l’état précédent de la boîte aux lettres
 
-La dernière étape consiste à revenir à la configuration précédente de la boîte aux lettres. Cela implique de réinitialiser les propriétés que vous avez modifiées à l’étape 2 et de réappliquer les maintiens que vous avez supprimés à l’étape 3. Cela inclut les opérations suivantes :
+La dernière étape consiste à revenir à la configuration précédente de la boîte aux lettres. Cela implique de réinitialiser les propriétés que vous avez modifiées à l’étape 2 et de réappliquer les maintiens que vous avez supprimés à l’étape 3. Cela inclut les opérations suivantes :
   
 - Modification de la période de rétention des éléments supprimés à sa valeur précédente. Vous pouvez également laisser cette valeur définie sur 30 jours, la valeur maximale en Exchange Online.
 
@@ -376,7 +385,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
 
     **Conservation pour litige**
 
-    Exécutez la commande suivante pour activer à nouveau une boîte aux lettres en attente pour litige.
+    Exécutez la commande suivante pour activer à nouveau la boîte aux lettres en attente pour litige.
 
     ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
@@ -384,7 +393,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
 
     **In-Place Hold**
 
-    Utilisez le EAC (ou Exchange Online PowerShell) pour rajouter la boîte aux lettres à la In-Place de la boîte aux lettres.
+    Utilisez le EAC (ou Exchange Online PowerShell) pour rajouter la boîte aux lettres au In-Place de la boîte aux lettres.
 
     **Stratégies de rétention appliquées à des boîtes aux lettres spécifiques**
 
@@ -414,7 +423,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Plus d'informations
 
 Voici un tableau qui décrit comment identifier différents types de boîtes aux lettres en fonction des valeurs de la propriété *InPlaceHolds* lorsque vous exécutez les cmdlets **Get-Mailbox** ou **Get-OrganizationConfig.** Pour plus d’informations, voir Comment identifier le type de mise en attente placée sur [Exchange Online boîte aux lettres.](identify-a-hold-on-an-exchange-online-mailbox.md)
 

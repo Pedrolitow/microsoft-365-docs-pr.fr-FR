@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77e24e4c1f4040ee97fbbdfd3b7c0208955c17d9
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 9e31d0a75e8b891e4ab0e0293d7c0be98e625134
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972047"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064306"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -134,15 +134,10 @@ Vous êtes maintenant prêt à affecter la stratégie de mise en quarantaine à 
 
 ### <a name="create-quarantine-policies-in-powershell"></a>Créer des stratégies de mise en quarantaine dans PowerShell
 
-Si vous préférez utiliser PowerShell pour créer des stratégies de mise en quarantaine, connectez-vous à Exchange Online PowerShell ou Exchange Online Protection PowerShell et utilisez la cmdlet **New-QuarantinePolicy.** Vous avez le choix entre deux méthodes différentes :
-
-- [Utilisez le _paramètre EndUserQuarantinePermissionsValue_](#use-the-enduserquarantinepermissionsvalue-parameter).
-- [Utilisez le _paramètre EndUserQuarantinePermissions_](#use-the-enduserquarantinepermissions-parameter).
-
-Ces méthodes sont décrites dans les sections suivantes.
+Si vous préférez utiliser PowerShell pour créer des stratégies de mise en quarantaine, connectez-vous à Exchange Online PowerShell ou Exchange Online Protection PowerShell et utilisez la cmdlet **New-QuarantinePolicy.**
 
 > [!NOTE]
-> L’utilisation du _paramètre ESNEnabled_ et la valeur pour activer les notifications de mise en quarantaine dans la stratégie sont les mêmes `$true` pour les deux méthodes. Si vous n’utilisez pas ce paramètre, les notifications de mise en quarantaine sont désactivées.
+> Si vous n’utilisez pas le _paramètre ESNEnabled_ et la valeur, les notifications de mise en quarantaine `$true` sont désactivées.
 
 #### <a name="use-the-enduserquarantinepermissionsvalue-parameter"></a>Utiliser le paramètre EndUserQuarantinePermissionsValue
 
@@ -184,56 +179,6 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 
 ```
 
 Pour les autorisations personnalisées, utilisez le tableau précédent pour obtenir la valeur binaire qui correspond aux autorisations de votre choix. Convertissez la valeur binaire en valeur décimale et utilisez la valeur décimale pour le paramètre _EndUserQuarantinePermissionsValue._
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
-
-#### <a name="use-the-enduserquarantinepermissions-parameter"></a>Utiliser le paramètre EndUserQuarantinePermissions
-
-Pour créer une stratégie de mise en quarantaine à l’aide du paramètre _EndUserQuarantinePermissionsValue,_ utilisez les étapes suivantes :
-
-R : Stockez un objet d’autorisations de mise en quarantaine dans une variable à l’aide de la cmdlet **New-QuarantinePermissions.**
-
-<p>
-
-B. Utilisez la variable comme _valeur EndUserQuarantinePermissions_ dans la commande **New-QuarantinePolicy.**
-
-##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Étape A : Stocker un objet d’autorisations de mise en quarantaine dans une variable
-
-Utilisez la syntaxe suivante :
-
-```powershell
-$<VariableName> = New-QuarantinePermissions [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
-```
-
-La valeur par défaut pour les paramètres inutilisés est , de sorte que vous devez uniquement utiliser les paramètres où vous souhaitez définir `$false` la valeur sur `$true` .
-
-L’exemple suivant montre comment créer des  objets d’autorisation qui correspondent au groupe d’autorisations prédéfinës à accès limité :
-
-```powershell
-$LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
-```
-
-Pour voir les valeurs que vous avez définies, exécutez le nom de la variable en tant que commande (par exemple, exécutez la `$LimitedAccess` commande).
-
-Pour les autorisations personnalisées, ne définissez pas les paramètres _PermissionToRelease_ et _PermissionToRequestRelease_ sur `$true` . Définissez `$true` l’un sur et laissez l’autre en tant `$false` que , ou laissez les deux comme `$false` .
-
-Vous pouvez également modifier une variable objet d’autorisations existante après la création mais avant de l’utiliser à l’aide de la cmdlet **Set-QuarantinePermissions.**
-
-Pour obtenir des informations détaillées sur la syntaxe et les [paramètres, voir New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) et [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions).
-
-##### <a name="step-b-use-the-variable-in-the-new-quarantinepolicy-command"></a>Étape B : Utiliser la variable dans la commande New-QuarantinePolicy commande
-
-Après avoir créé et stocké l’objet Permissions dans une variable, utilisez la variable pour la valeur du paramètre _EndUserQuarantinePermission_ dans la commande **New-QuarantinePolicy** suivante :
-
-```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName> [-EsnEnabled $true]
-```
-
-Cet exemple crée une stratégie de mise en quarantaine avec des notifications de mise en quarantaine sous le nom LimitedAccess à l’aide de l’objet d’autorisations décrit et créé à `$LimitedAccess` l’étape précédente.
-
-```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess -EsnEnabled $true
-```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
@@ -441,7 +386,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Lorsque vous créez des stratégies anti-programme malveillant sans utiliser le paramètre QuarantineTag lorsque vous créez une stratégie anti-programme malveillant, la stratégie de mise en quarantaine par défaut pour les détections de programmes malveillants est utilisée (AdminOnlyAccessPolicy).
 
@@ -501,7 +446,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _valeurs_ du paramètre Action Block, Replace ou DynamicDelivery peuvent entraîner la mise en quarantaine des messages (la valeur Autoriser ne met pas les messages en quarantaine). La valeur du paramètre _Action_ n’est significative que lorsque la valeur du _paramètre Enable_ est `$true` .
 
@@ -637,7 +582,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Supprimer les stratégies de mise en quarantaine dans le portail Microsoft 365 Defender de mise en quarantaine
 
-**Remarques** :
+**Remarques** :
 
 - Vous ne pouvez pas supprimer les stratégies de mise en quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Vous pouvez supprimer la stratégie intégrée nommée NotificationEnabledPolicy[(si](#full-access-permissions-and-quarantine-notifications)vous l’avez) et les stratégies de mise en quarantaine personnalisées.
 - Avant de supprimer une stratégie de mise en quarantaine, vérifiez qu’elle n’est pas utilisée. Par exemple, exécutez la commande suivante dans PowerShell :

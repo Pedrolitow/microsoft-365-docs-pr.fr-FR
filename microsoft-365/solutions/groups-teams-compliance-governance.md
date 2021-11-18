@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options de conformité pour Microsoft 365 groupes, Teams et SharePoint collaboration.
-ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab840ea5652a13087ecc8d505391bac152ca1052
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207414"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063368"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour Microsoft 365 groupes, Teams et la collaboration SharePoint de conformité
 
@@ -36,7 +36,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 ||Conserver la conversation et les messages|[En savoir plus sur les stratégies de rétention dans Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Classification des informations|||
 ||Classifier les groupes et les équipes|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)|
+||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)|
 ||Chiffrer le contenu sensible|[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](../compliance/encryption-sensitivity-labels.md)|
 |Protection des informations|||
 ||Empêcher la perte d’informations sensibles|[En savoir plus sur la prévention des pertes de données](../compliance/dlp-learn-about-dlp.md)|
@@ -51,7 +51,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 
 Les stratégies de rétention sont disponibles pour conserver ou supprimer des éléments utilisés pour la collaboration dans des groupes et des équipes, notamment des fichiers, des messages et des messages électroniques. Les stratégies peuvent être définies pour conserver et supprimer, conserver uniquement ou supprimer uniquement. Les informations couvertes par une stratégie de rétention sont protégées en cas d’expiration ou de suppression du groupe ou de l’équipe.
 
-La configuration d’une stratégie de rétention pour Microsoft 365 groupes couvre la boîte aux lettres de groupe et le site et les fichiers SharePoint associés.
+La configuration d’une stratégie de rétention pour Microsoft 365 groupes couvre la boîte aux lettres de groupe et les SharePoint site et fichiers associés.
 
 - [En savoir plus sur les stratégies de rétention dans SharePoint et OneDrive](../compliance/retention-policies-sharepoint.md)
 
@@ -77,9 +77,9 @@ Vous pouvez utiliser des étiquettes de confidentialité pour régir l’accès 
 
 - [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-Vous pouvez configurer des Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection de types d’informations sensibles ou la correspondance de modèles avec des classifieurs entraidables.
+Vous pouvez configurer des Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection des types d’informations sensibles ou de la correspondance de modèles avec des classifieurs entraidables.
 
-- [Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)
+- [Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)
 
 Vous pouvez utiliser des étiquettes de niveau de sensibilité pour chiffrer des fichiers, en permettant uniquement à ceux qui ont des autorisations de les déchiffrer et de les lire.
 
@@ -108,7 +108,7 @@ Si vous avez des informations sensibles propres à votre organisation, telles qu
 
 ## <a name="user-segmentation"></a>Segmentation des utilisateurs
 
-Avec les obstacles à l’information, vous pouvez segmenter vos données et vos utilisateurs afin de restreindre la communication et la collaboration indésirables entre les groupes et d’éviter les conflits d’intérêt dans votre organisation. Les obstacles à l’information vous permettent de créer des stratégies pour autoriser ou empêcher la collaboration sur des fichiers, des conversations, des appels ou des invitations à des réunions entre des groupes de personnes de votre organisation.
+Avec les obstacles à l’information, vous pouvez segmenter vos données et vos utilisateurs pour limiter la communication et la collaboration indésirables entre les groupes et éviter les conflits d’intérêt au niveau de votre organisation. Les obstacles à l’information vous permettent de créer des stratégies pour autoriser ou empêcher la collaboration sur des fichiers, des conversations, des appels ou des invitations à des réunions entre des groupes de personnes de votre organisation.
 
 - [Obstacles aux informations](../compliance/information-barriers.md)
 
@@ -124,9 +124,9 @@ Avec Microsoft 365 Multi-Géo, vous pouvez mettre en service et stocker des donn
 
 - [Plan pour Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 

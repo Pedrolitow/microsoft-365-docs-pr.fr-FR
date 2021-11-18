@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Découvrez comment contrôler les utilisateurs qui peuvent créer Microsoft 365 groupes.
-ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217161"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064318"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gérer les personnes autorisées à créer des groupes Microsoft 365
 
 Par défaut, tous les utilisateurs peuvent créer Microsoft 365 groupes. Il s’agit de l’approche recommandée, car elle permet aux utilisateurs de commencer à collaborer sans nécessiter l’assistance de l’équipe technique.
 
-Si votre entreprise exige que vous restreignez les personnes qui peuvent créer des groupes, vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe Microsoft 365 particulier ou d’un groupe de sécurité.
+Si votre entreprise exige que vous restreignez les personnes qui peuvent créer des groupes, vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe Microsoft 365 ou d’un groupe de sécurité particulier.
 
 Si vous êtes préoccupé par le fait que les utilisateurs créent des équipes ou des groupes qui ne sont pas conformes à vos normes professionnelles, envisagez de demander aux utilisateurs de terminer un cours de formation, puis de les ajouter au groupe d’utilisateurs autorisés.
 
@@ -44,21 +44,21 @@ Lorsque vous limitez les personnes autorisées à créer un groupe, cela affecte
 - Power BI (classique)
 - Project pour le web / Feuille de route
 
-Les étapes de cet article n’empêchent pas les membres de certains rôles de créer des groupes. Office 365 Les administrateurs globaux peuvent créer des groupes via Centre d'administration Microsoft 365, planner, Exchange et SharePoint Online. D’autres rôles peuvent créer des groupes via des moyens limités, répertoriés ci-dessous.
+Les étapes de cet article n’empêchent pas les membres de certains rôles de créer des groupes. Office 365 administrateurs globaux peuvent créer des groupes via Centre d'administration Microsoft 365, planificateur, Exchange et SharePoint Online. D’autres rôles peuvent créer des groupes via des moyens limités, répertoriés ci-dessous.
 
-- Exchange Administrateur : Exchange admin center, Azure AD
+- Exchange administrateur : Exchange d’administration, Azure AD
 - Support partenaire de niveau 1 : centre Administration Microsoft 365, centre d’administration Exchange, Azure AD
 - Support partenaire de niveau 2 : centre Administration Microsoft 365, centre d’administration Exchange, Azure AD
 - Rédacteurs d’annuaire : Azure AD
-- SharePoint Administrateur : SharePoint admin center, Azure AD
-- Teams Administrateur de service : Teams admin center, Azure AD
+- SharePoint administrateur : SharePoint d’administration, Azure AD
+- Teams de service : Teams d’administration, Azure AD
 - Administrateur utilisateur : Administration Microsoft 365, Azure AD
 
 Si vous êtes membre de l’un de ces rôles, vous pouvez créer des groupes Microsoft 365 pour les utilisateurs restreints, puis affecter l’utilisateur en tant que propriétaire du groupe.
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Pour gérer les personnes qui créent des groupes, les personnes suivantes doivent Azure AD Premium licences Azure AD Basic EDU ou des licences Azure AD Basic EDU qui leur sont attribuées :
+Pour gérer les personnes qui créent des groupes, les personnes suivantes Azure AD Premium des licences Azure AD licences EDU de base qui leur sont attribuées :
 
 - Administrateur qui configure ces paramètres de création de groupe
 - Membres du groupe autorisés à créer des groupes
@@ -66,7 +66,7 @@ Pour gérer les personnes qui créent des groupes, les personnes suivantes doive
 > [!NOTE]
 > Voir [Attribuer ou supprimer des licences dans](/azure/active-directory/fundamentals/license-users-groups) le portail Azure Active Directory pour plus d’informations sur l’attribution de licences Azure.
 
-Les personnes suivantes n’ont pas besoin Azure AD Premium licences Azure AD Basic EDU leur sont attribuées :
+Les personnes suivantes n’ont pas besoin Azure AD Premium ou Azure AD licences EDU de base qui leur sont attribuées :
 
 - Personnes qui sont membres de Microsoft 365 groupes et qui n’ont pas la possibilité de créer d’autres groupes.
 
@@ -98,7 +98,7 @@ Vous devez utiliser la version d’aperçu de [Azure Active Directory PowerShell
 
 Copiez le script ci-dessous dans un éditeur de texte, tel que Bloc-notes, ou le [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
+Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
 
 `$GroupName = "Group Creators"`
 
@@ -151,7 +151,7 @@ Si vous souhaitez désactiver la restriction de création de groupe et autoriser
 
 ## <a name="step-3-verify-that-it-works"></a>Étape 3 : vérifier le bon fonctionnement
 
-L’application des modifications peut prendre trente minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
+L’application des modifications peut prendre 30 minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
 
 1. Connectez-vous Microsoft 365 avec un compte d’utilisateur d’une personne qui ne doit PAS avoir la possibilité de créer des groupes. Autrement dit, ils ne sont pas membres du groupe que vous avez créé ou administrateur.
 
@@ -166,15 +166,15 @@ Essayez à nouveau la même procédure avec un membre du groupe.
 > [!NOTE]
 > Si les membres du groupe ne sont pas en mesure de créer des groupes, vérifiez qu’ils ne sont pas bloqués par le biais de [leur stratégie OWA boîte aux lettres.](/powershell/module/exchange/set-owamailboxpolicy)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
 [Mise en route d’Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Configurer la gestion des groupes libre-service dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Configurer la gestion des groupes en libre-service dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 

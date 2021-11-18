@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les modèles de présentation des documents via le modèle d’échantillon
+title: En savoir plus sur la compréhension des modèles de document à l’aide de l’exemple de modèle dans Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez les modèles de présentation des documents via le modèle d’échantillon.
-ms.openlocfilehash: f17f768d5c56b036662ea717f394129c28935bcb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51eb92a2b6a511dd5b1340c9c435f63dd56299e5
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172106"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064426"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>En savoir plus sur les modèles de présentation des documents via un modèle d’échantillon
+# <a name="learn-about-document-understanding-models-through-the-sample-model-in-microsoft-sharepoint-syntex"></a>En savoir plus sur la compréhension des modèles de document à l’aide de l’exemple de modèle dans Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex offre un exemple de modèle permettant de mieux comprendre comment créer vos propres modèles. Ce modèle d’échantillon vous permet également d’examiner les composants du modèle, tels que son classifieur, ses extracteurs et ses explications. Vous pouvez également utiliser les fichiers échantillons pour former le modèle.
+SharePoint Syntex vous fournit un exemple de modèle que vous pouvez utiliser pour examiner, ce qui vous permet de mieux comprendre comment créer vos propres modèles. Ce modèle d’échantillon vous permet également d’examiner les composants du modèle, tels que son classifieur, ses extracteurs et ses explications. Vous pouvez également utiliser les fichiers échantillons pour former le modèle.
 
 ## <a name="import-the-sample-model"></a>Importer le modèle d’échantillon
 
@@ -42,6 +42,9 @@ Vous ne pouvez pas seulement examiner et analyser le modèle d’échantillon po
 - Ajouter un autre extracteur. Par exemple, ajoutez-en un qui extrait les *taux d’escompte*.
 - Appliquez le modèle à une bibliothèque de documents, puis chargez certains fichiers de formation vers celle-ci. Vous saurez ainsi comment le modèle classe les fichiers et en extrait les données.
 
+## <a name="get-sample-models"></a>Obtenir des exemples de modèles
+
+Vous pouvez accéder au référentiel [SharePoint Syntex Samples,](https://github.com/pnp/syntex-samples)qui contient des exemples de communauté qui montrent différents modèles d’utilisation des modèles de compréhension des documents. Les exemples de ce référentiel contiennent à la fois les fichiers de modèle de compréhension de document et les fichiers utilisés pour former le modèle. Une fois importés, vous pouvez utiliser ces modèles pour traiter des fichiers et pour afficher et modifier le classifieur et les extracteurs.
 
 ## <a name="see-also"></a>Voir aussi
 [Créer un classifieur](create-a-classifier.md)

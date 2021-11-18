@@ -18,16 +18,16 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Découvrez comment créer une stratégie d’attribution de noms pour Microsoft 365 groupes.
-ms.openlocfilehash: 9fb75feb255ee6d58313f4cfaf3486c4a8cd63b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acc521dd5be1dcf630b4801eeb914c45e765e00f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213408"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064510"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de noms de groupes
 
-Vous pouvez utiliser une stratégie de noms de groupes pour appliquer une stratégie d’attribution de noms cohérente pour les groupes créés par les utilisateurs de votre organisation. Une stratégie d’attribution de noms peut vous aider, ainsi que vos utilisateurs, à identifier la fonction du groupe, l’appartenance, la région géographique ou la personne qui a créé le groupe. La stratégie d’attribution de noms peut également aider à classer les groupes dans le carnet d’adresses. Vous pouvez utiliser la stratégie pour empêcher l’utilisation de mots spécifiques dans les noms de groupe et les alias.
+Vous pouvez utiliser une stratégie de noms de groupes pour appliquer une stratégie d’attribution de noms cohérente pour les groupes créés par les utilisateurs de votre organisation. Une stratégie d’attribution de noms peut vous aider, ainsi que vos utilisateurs, à identifier la fonction du groupe, de l’appartenance, de la région géographique ou de la personne qui a créé le groupe. La stratégie d’attribution de noms peut également aider à classer les groupes dans le carnet d’adresses. Vous pouvez utiliser la stratégie pour empêcher l’utilisation de mots spécifiques dans les noms de groupe et les alias.
 
 La stratégie d’attribution de noms s’applique aux groupes créés dans toutes les charges de travail de groupes (par exemple, Outlook, Microsoft Teams, SharePoint, Planificateur, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est également appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom du groupe, l’alias, la description ou l’avatar est modifié pour un groupe existant.
 
@@ -42,17 +42,17 @@ La stratégie de noms de groupes comprend les fonctionnalités suivantes :
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-L’utilisation d’une stratégie de noms Azure AD pour les groupes Microsoft 365 nécessite que vous possédiez, mais pas nécessairement attribuer une licence Azure Active Directory Premium P1 ou azure AD Basic EDU pour chaque utilisateur unique (y compris les invités) membre d’un ou de plusieurs groupes Microsoft 365.
+L’utilisation d’une stratégie de noms Azure AD pour les groupes Microsoft 365 nécessite que vous possédiez, mais pas nécessairement attribuer une licence Azure Active Directory Premium P1 ou une licence EDU de base Azure AD pour chaque utilisateur unique (y compris les invités) membre d’un ou plusieurs utilisateurs Microsoft 365 groupes.
 
 Cela est également requis pour l’administrateur qui crée la stratégie de noms de groupes.
 
 ## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix d’attribution de noms
 
-Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs utilisateur.
+Les préfixes et suffixes peuvent être des chaînes fixes ou des attributs utilisateur.
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
@@ -107,7 +107,7 @@ Aucune recherche de sous-chaîne n’est effectuée ; plus précisément, une co
 
 ## <a name="admin-override"></a>Remplacement par l’administrateur
 
-Certains administrateurs sont exemptés de ces stratégies, sur toutes les charges de travail de groupe et points de terminaison, afin qu’ils peuvent créer des groupes avec ces mots bloqués et avec leurs conventions d’attribution de noms souhaitées. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
+Certains administrateurs sont exemptés de ces stratégies, sur toutes les charges de travail de groupe et points de terminaison, afin qu’ils peuvent créer des groupes avec ces mots bloqués et avec les conventions d’attribution de noms souhaitées. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
 
 - Administrateur global
 
@@ -130,9 +130,9 @@ Pour configurer une stratégie d’attribution de noms :
 
 ![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 

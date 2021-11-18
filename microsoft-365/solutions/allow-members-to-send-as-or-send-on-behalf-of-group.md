@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Découvrez comment autoriser les membres d’un groupe à envoyer des messages électroniques en tant que Microsoft 365 groupe ou à envoyer du courrier électronique au nom d’Microsoft 365 groupe.
-ms.openlocfilehash: c06f8aa82f0c112e448e607d7fbc75f13e7d3b6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174194"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064062"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
@@ -31,15 +31,15 @@ Un membre d’un groupe Microsoft 365 qui  a obtenu  des autorisations Envoyer e
 
 Cet article explique comment un administrateur général ou Exchange peut définir ces autorisations.
   
-Par exemple, si Megan Bowen fait partie du groupe  **Microsoft 365** de formation et dispose d’autorisations Envoyer en tant que  sur le groupe, si elle envoie un courrier électronique en tant que groupe, il semblera que le groupe de formation a envoyé le message électronique. 
+Par exemple, si Megan Bowen fait partie du groupe  formation **Microsoft 365** et dispose des autorisations Envoyer en tant que sur  le groupe, si elle envoie un e-mail en tant que groupe, il semblera que le groupe de formation a envoyé le message électronique. 
   
-L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer des courriers électroniques au nom d’Microsoft 365 groupe. Par exemple, si Alex Wilber fait partie du groupe **Marketing** Microsoft 365, dispose des autorisations Envoyer de la part de et envoie un e-mail en tant que groupe, le message électronique semble avoir été envoyé par **Alex Wilber** pour le compte de Marketing. 
+L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer des messages électroniques au nom d’Microsoft 365 groupe. Par exemple, si Alex Wilber fait partie du groupe **Marketing** Microsoft 365, dispose des autorisations Envoyer de la part de et envoie un e-mail en tant que groupe, le message électronique semble avoir été envoyé par **Alex Wilber** pour le compte de Marketing. 
 
 > [!IMPORTANT]
 > Vous pouvez configurer **Envoyer en tant** que ou Envoyer de la part **d’un** utilisateur donné, mais pas les deux. Si vous configurez les deux, la valeur par défaut est **Envoyer en tant que**.
 
 > [!TIP]
-> Pour découvrir [Microsoft 365 comment](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) utiliser Outlook et Outlook sur le Web pour envoyer des messages électroniques à partir d’un groupe, voir Envoyer des courriers électroniques à partir d’un groupe ou de la part d’un groupe.
+> Pour découvrir [comment](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) utiliser Outlook et Outlook sur le Web pour envoyer des messages électroniques à partir d’un groupe, voir Envoyer des courriers électroniques depuis ou pour le compte d’un groupe Microsoft 365.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Autoriser les membres à envoyer des messages électroniques en tant que groupe
 
@@ -55,7 +55,7 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
     
     ![Capture d’écran de la boîte de dialogue Envoyer en tant que.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
-5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer.**
+5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrez.**
     
     ![Tapez pour rechercher ou sélectionner un utilisateur dans la liste.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
@@ -73,13 +73,13 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
     
     ![Capture d’écran de la boîte de dialogue Envoyer de la part de.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer.**
+5. Tapez pour rechercher ou sélectionner un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrez.**
     
     ![Tapez pour rechercher ou sélectionner un utilisateur dans la liste.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 

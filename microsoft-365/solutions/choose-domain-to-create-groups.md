@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: f909decd81c94ea04adb3a714dd1dfd282e7f40e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31b84304643190f343ae9ee74a947ecf6741f135
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149561"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063309"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes
 
@@ -46,7 +46,7 @@ Supposons que vous avez également des sous-domaines configurés dans votre orga
 Les deux scénarios suivants expliquent comment effectuer cette tâche.
 
 > [!NOTE]
-> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes à l’EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Consultez [Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) pour plus d’informations sur l’ajout d’un domaine accepté.
+> Lorsque vous avez des projets DPE, ils sont évalués dans l’ordre de priorité. Une valeur de 1 signifie la priorité la plus élevée. Une fois qu’un EAP correspond, aucun autre EAP n’est évalué et les adresses qui sont marqués sur le groupe sont conformes au EAP. > si aucun eaps ne correspond aux critères spécifiés, le groupe est provisioné dans le domaine accepté par défaut de l’organisation. Consultez [Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) pour plus d’informations sur l’ajout d’un domaine accepté.
   
 ### <a name="scenario-1"></a>Scénario 1
 
@@ -60,7 +60,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 Supposons que vous vouliez contrôler dans quels sous-domaines Microsoft 365 groupes sont créés. Vous souhaitez :
   
-- Groupes créés par des étudiants (utilisateurs dont le service **est** réservé aux **étudiants)** dans students.groups.contoso.com domaine. Utilisez la commande suivante :
+- Groupes créés par des étudiants (utilisateurs dont **le** service est d’étudiants) dans students.groups.contoso.com domaine. Utilisez la commande suivante :
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
@@ -80,7 +80,7 @@ Supposons que vous vouliez contrôler dans quels sous-domaines Microsoft 365 gro
 
 ## <a name="change-email-address-policies"></a>Modifier les stratégies d’adresse de messagerie
 
-Pour modifier les modèles de priorité ou d’adresse de messagerie d’un EAP existant, utilisez la cmdlet Set-EmailAddressPolicy de messagerie.
+Pour modifier les modèles de priorité ou d’adresse de messagerie d’un EAP existant, utilisez Set-EmailAddressPolicy cmdlet.
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
@@ -119,9 +119,9 @@ Il y a d’autres choses à savoir :
     
 - Une limite maximale de 100 stratégies d’adresse de messagerie peut être configurée pour une organisation.
     
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Planification pas à pas de la gouvernance de](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) la collaboration (article)
+[Recommandations en matière de planification de la gouvernance de la](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) collaboration (article)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md) (article)
 

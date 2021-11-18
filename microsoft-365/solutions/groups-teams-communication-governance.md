@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les scénarios de collaboration de gouvernance des communications.
-ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ace313ce20445aafc06b184a72cc45c2ce0118ef
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207426"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064498"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
@@ -42,11 +42,11 @@ Le tableau suivant fournit une référence rapide pour les contrôles de communi
 
 ## <a name="messaging"></a>Messagerie
 
-Vous pouvez contrôler les fonctionnalités de messagerie de conversation et de canal, telles que la modification ou la suppression de messages, qui sont disponibles pour les utilisateurs dans Microsoft Teams à l’aide de stratégies de messagerie. Vous pouvez créer différentes stratégies pour différents utilisateurs et groupes.
+Vous pouvez contrôler quelles fonctionnalités de messagerie de conversation et de canal, telles que la modification ou la suppression de messages, sont disponibles pour les utilisateurs dans Microsoft Teams à l’aide de stratégies de messagerie. Vous pouvez créer différentes stratégies pour différents utilisateurs et groupes.
 
 [Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams)
 
-Vous pouvez contrôler qui peut démarrer de nouveaux billets et répondre à des publications dans un canal Teams en configurant la modération des canaux.
+Vous pouvez contrôler qui peut démarrer de nouveaux billets et répondre à des billets dans un canal Teams en configurant la modération des canaux.
 
 [Configurer et gérer la modération des canaux dans Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
@@ -56,20 +56,20 @@ Vous pouvez contrôler les fonctionnalités disponibles pour les participants Te
 
 [Gérer les stratégies de réunion dans Teams](/microsoftteams/meeting-policies-in-teams)
 
-Vous pouvez contrôler la connexion anonyme pour Teams réunions, ce qui permet à toute personne ayant un lien vers la réunion de participer.
+Vous pouvez contrôler la rejoindre anonymement pour Teams réunions, ce qui permet à toute personne ayant un lien vers la réunion de participer.
 
 [Autoriser les utilisateurs anonymes à participer à des réunions](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
-La conformité des communications Microsoft 365 vous permet d’examiner les communications en cas de langage choquant, d’informations sensibles et d’informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et Yammer messages peuvent tous être surveillés, générant des alertes. Grâce aux outils d’administration, vous pouvez rapidement identifier et agir sur les messages avec des correspondances de stratégie.
+La conformité des communications Microsoft 365 vous permet d’examiner les communications en cas de langage choquant, d’informations sensibles et d’informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et Yammer messages peuvent tous être surveillés, générant ainsi des alertes. Grâce aux outils d’administration, vous pouvez rapidement identifier et agir sur les messages avec des correspondances de stratégie.
 
 [Conformité des communications dans Microsoft 365](../compliance/communication-compliance.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 

@@ -15,22 +15,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 144cc0159fbd717015a16251f21ac32d0601fcf4
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882752"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064123"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cette rubrique fournit des informations de dépannage pour vous aider à résoudre les problèmes qui peuvent survenir lorsque vous utilisez Microsoft Defender pour Endpoint sur iOS.
 
@@ -42,7 +42,7 @@ Cette rubrique fournit des informations de dépannage pour vous aider à résoud
 ## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Les applications ne fonctionnent pas lorsque le VPN est allumé
 Certaines applications cessent de fonctionner lorsqu’un VPN actif est détecté. Vous pouvez désactiver le VPN pendant la durée d’utilisation de ces applications. 
 
-Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
+Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
 
 Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certains cas dans l’obligation de désactiver le VPN. Par exemple, vous souhaitez exécuter certaines applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN directement à partir de l’application Defender for Endpoint ou en suivant les étapes suivantes :
 
@@ -58,13 +58,13 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistence avec plusieurs profils VPN
 
-Apple iOS ne prend pas en **charge** plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Même si plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois. Si vous devez utiliser un autre VPN sur l’appareil, vous pouvez désactiver Defender pour le VPN de point de terminaison lorsque vous utilisez l’autre VPN.
+Apple iOS ne prend pas en **charge** plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Alors que plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois. Si vous devez utiliser un autre VPN sur l’appareil, vous pouvez désactiver Defender pour le VPN de point de terminaison lorsque vous utilisez l’autre VPN.
 
 ## <a name="battery-consumption"></a>Consommation de batterie
 
 Pour vous fournir une protection en permanence contre les menaces basées sur le web, Microsoft Defender pour point de terminaison doit s’exécuter en arrière-plan en permanence. Cela peut entraîner une augmentation mineure de la consommation globale de la batterie de votre appareil. Si vous voyez un drainage important de la batterie, [envoyez-nous](ios-troubleshoot.md#send-in-app-feedback) vos commentaires et nous examinerons.
 
-En outre, dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pour cette durée et est calculée par iOS en fonction d’une multitude de facteurs, y compris l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/loop-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est affiché sur la page Paramètres batterie sur l’appareil.
+En outre, dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran est uniquement pour cette durée et est calculée par iOS en fonction d’une multitude de facteurs, y compris l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/de bouc-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est inférieure à ce qui est affiché sur la page Paramètres batterie sur l’appareil.
 
 Notez que le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
 
@@ -100,9 +100,15 @@ Après l’intégration, l’appareil peut s’afficher dans l’inventaire des 
 
 Pour plus d’informations sur les données collectées et la confidentialité, voir Informations sur la confidentialité - Microsoft Defender pour point de [terminaison sur iOS](ios-privacy.md).
 
+## <a name="connectivity-issue-on-cellular-network"></a>Problème de connectivité sur le réseau cellulaire
+
+Si vous êtes confronté à des problèmes de connectivité Internet sur le réseau cellulaire, vérifiez si Les données cellulaires de Microsoft Defender pour Endpoint sont activées : Ouvrez l’application Paramètres > MS Defender > assurez-vous que les « données cellulaires » sont activées pour MS Defender.
+
+Vérifiez si le mode Avion permet de résoudre le problème. Si le problème persiste, [envoyez-nous les journaux.](ios-troubleshoot.md#send-in-app-feedback)
+
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problèmes sur les appareils supervisés avec le profil de filtre de contenu installé
 
-Un problème se produit sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
+Il existe un problème sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité Internet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problèmes pendant les mises à jour de l’application à partir de l’App Store
 
@@ -116,7 +122,7 @@ Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les
   - Appuyez sur Menu (icône de profil) dans le coin supérieur gauche.
   - Appuyez **sur Envoyer des commentaires.**
   - Choisissez parmi les options données. Pour signaler un problème, sélectionnez **Je n’aime pas quelque chose.**
-  - Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer des données de diagnostic.** Nous vous recommandons d’inclure votre adresse de messagerie afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
+  - Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez **envoyer les données de diagnostic.** Nous vous recommandons d’inclure votre adresse de messagerie afin que l’équipe puisse vous contacter pour obtenir une solution ou un suivi.
   - Appuyez **sur Envoyer** pour envoyer correctement les commentaires.
 
 

@@ -15,15 +15,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 42cac5be8879b7db49175800b9c2b297bc91c569
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705056"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064414"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -41,7 +42,7 @@ Lorsque vous envoyez un message électronique pour analyse, vous obtenez les ré
 - **Vérification de l’authentification du** courrier électronique : détails sur la réussi ou l’échec de l’authentification de messagerie lors de sa livraison.
 - **Accès aux** stratégies : informations sur les stratégies qui ont autorisé ou bloqué le courrier entrant dans votre client, en remplacement de nos verdicts de filtre de service.
 - **Réputation/détonation de la** charge utile : examen à jour des URL et pièces jointes du message.
-- **Analyse du gradeur**: révision effectuée par des élèves humains afin de confirmer si les messages sont malveillants ou non.
+- **Analyse de l’analyse du** gradeur : révision effectuée par des élèves afin de confirmer si les messages sont malveillants ou non.
 
 > [!IMPORTANT]
 > L’analyse de réputation/détonation et de grader de la charge utile n’est pas effectuée dans tous les locataires. Les informations ne peuvent pas sortir de l’organisation lorsque les données ne sont pas supposées quitter la limite du client à des fins de conformité.
@@ -55,7 +56,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 - Pour envoyer des messages et des fichiers à Microsoft, vous devez être membre de l’un des groupes de rôles suivants :
   - **Lecteur Gestion de l’organisation** **ou Sécurité** dans [le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
   
-    Notez que l’appartenance à ce groupe de rôles est nécessaire pour afficher les [soumissions](#view-user-submissions-to-microsoft) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
+    Notez que l’appartenance à ce groupe de rôles est requise pour afficher les [envois](#view-user-submissions-to-microsoft) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
 
 - Les administrateurs peuvent envoyer des messages depuis 30 jours s’ils sont toujours disponibles dans la boîte aux lettres et qu’ils ne sont pas purgés par l’utilisateur ou un autre administrateur.
 
@@ -64,11 +65,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
   - Mêmes soumissions sur une période de 24 heures : 3 soumissions
   - Soumissions identiques sur une période de 15 minutes : 1 soumission
   
-- Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir Signaler des messages et [des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Pour plus d’informations sur la façon dont les utilisateurs peuvent envoyer des messages et des fichiers à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
 
 2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur  ![ L’icône Ad.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
 
@@ -76,6 +77,19 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    > [!NOTE]
    > Les envois de fichiers et d’URL ne sont pas disponibles dans les nuages qui n’autorisent pas les données à quitter l’environnement. La possibilité de sélectionner un fichier ou une URL est grisée.
+
+### <a name="notify-users-from-within-the-portal"></a>Avertir les utilisateurs à partir du portail
+
+1. In the Microsoft 365 Defender portal, go to the **Submissions** page at <https://security.microsoft.com/reportsubmission> .
+
+2. Sélectionnez **les messages signalés** par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
+
+3. Sélectionnez la **marque en tant que et notifier** la drop-down, puis sélectionnez Aucune menace **trouvée** comme \> **hameçonnage** ou courrier **indésirable**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Envoyer des messages à partir du portail.](../../media/admin-review-send-message-from-portal.png)
+
+Le message signalé est marqué comme faux positif ou faux négatif. Une notification par courrier électronique est envoyée automatiquement à partir du portail à l’utilisateur qui a signalé le message.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Envoyer un e-mail douteux à Microsoft
 
@@ -85,11 +99,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
    - Ajoutez **l’ID** du message réseau de messagerie : il s’agit d’une valeur GUID disponible dans l’en-tête **X-MS-Exchange-Organization-Network-Message-Id** dans le message ou dans l’en-tête **X-MS-Office365-Filtering-Correlation-Id** dans les messages mis en quarantaine.
    - **Télécharger fichier de courrier électronique (.msg ou .eml)**: cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier .eml ou .msg, puis cliquez sur **Ouvrir**.
 
-3. Dans la **zone Choisir un destinataire qui a eu** un problème, spécifiez le destinataire sur qui vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si le courrier électronique a contourné l’analyse en raison des stratégies utilisateur ou organisation.
+3. Dans la **zone Choisir un destinataire qui a eu un** problème, spécifiez le destinataire sur qui vous souhaitez exécuter une vérification de stratégie. La vérification de stratégie détermine si le courrier électronique a contourné l’analyse en raison des stratégies utilisateur ou organisation.
 
 4. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’e-mail doit avoir été catégorisé en tant que **section** qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur arrêt) :
+   - **Doit avoir été bloqué**: dans l’e-mail doit avoir été classé en tant que **section** qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur arrêt) :
      - **Hameçonnage**
      - **Courrier indésirable**
      - **Programme malveillant**
@@ -101,13 +115,13 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
-1. Dans la **zone Sélectionner le type de** soumission, sélectionnez **l’URL** dans la liste bas.
+1. Dans la **zone Sélectionner le type de** soumission, sélectionnez **l’URL** dans la liste liste.
 
 2. Dans la **zone URL** qui s’affiche, entrez l’URL complète (par exemple, `https://www.fabrikam.com/marketing.html` ).
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué :** dans l’URL, cette URL doit **avoir** été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **Programme malveillant**.
+   - **Doit avoir été bloqué :** dans l’URL doit **avoir** été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **programme malveillant**.
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -122,7 +136,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’URL qui s’affiche, le programme malveillant est le seul choix et est automatiquement sélectionné.  
+   - **Doit avoir été bloqué**: dans l’URL qui doit avoir été classée comme section qui s’affiche, un programme malveillant est le seul choix et est automatiquement sélectionné.  
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -130,11 +144,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 > ![Exemple de nouvelle soumission de pièce jointe.](../../media/submission-file-flyout.png)
 
 > [!NOTE]
-> Si le filtrage des programmes malveillants a remplacé les pièces jointes du message par le fichier Text.txt d’alerte anti-programme malveillant, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+> Si le filtrage des programmes malveillants a remplacé les pièces jointes des messages par le fichier Text.txt d’alerte de programmes malveillants, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
 
 2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis **pour** analyse est sélectionné.
 
@@ -171,11 +185,11 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nouvelles options de filtre pour les soumissions d’administrateur.](../../media/admin-submission-filters.png)
+     > ![Nouvelles options de filtre pour les soumissions d’administrateurs.](../../media/admin-submission-filters.png)
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
-     - **Type (Type)**
+     - **Type**
      - **Raison**
      - **État**
      - **Résultat rescan**
@@ -197,7 +211,7 @@ Si le programme a trouvé un remplacement, la nouvelle analyse doit se terminer 
 
 Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enable-the-report-phish-add-in.md)Signaler un message, le module de signalement du hameçonnage ou que des personnes utilisent les rapports intégrés dans  [Outlook sur le web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)vous pouvez voir quels utilisateurs signalent dans l’onglet Message signalé par l’utilisateur.
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
 
 2. Dans la page **Soumissions,** sélectionnez **l’onglet Messages signalés par l’utilisateur.**
 
@@ -225,7 +239,7 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **ID de message réseau**
      - **Sender**
      - **Raison signalée :** **pas de courrier indésirable,** **de hameçonnage** ou de **courrier indésirable.**
-     - **Simulation de hameçonnage**: **Oui** ou **Non**
+     - **Simulation de hameçonnage** **: Oui** ou **Non**
      - **Tags**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
@@ -248,7 +262,7 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
 
 ### <a name="undo-user-submissions"></a>Annuler les soumissions d’utilisateurs
 
-Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il pourra être récupéré dans les dossiers Éléments supprimés ou Courrier indésirable.
+Lorsqu’un utilisateur envoie un message suspect à la boîte aux lettres personnalisée, l’utilisateur et l’administrateur n’ont pas la possibilité d’annuler la soumission. Si l’utilisateur souhaite récupérer le courrier électronique, il sera disponible pour la récupération dans les dossiers Éléments supprimés ou Courrier indésirable.
 
 ### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>Conversion des messages signalés par l’utilisateur de la boîte aux lettres personnalisée en envoi d’administrateur 
 

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Base de test pour la documentation Microsoft 365 documentation
-summary: La base de test Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde. Il vous aidera à tester vos applications sans vous soucier de la difficulté, de l’engagement en temps et de la dépense de configuration et de maintenance d’environnements de test complexes. Plus important encore, il vous permettra d’accéder aux mises à jour Windows pré-publiées sur des machines virtuelles sécurisées (VM) et à l’intelligence de premier niveau pour vos applications.
+title: Base de test pour la documentation Microsoft 365 de test
+summary: Test Base for Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde. Il vous aidera à tester vos applications sans avoir à vous soucier de la difficulté, de l’engagement de temps et de la dépense liée à la configuration et à la maintenance d’environnements de test complexes. Plus important encore, il vous permettra d’accéder aux mises à jour Windows pré-publiées sur des machines virtuelles sécurisées (VM) et à l’intelligence de premier niveau pour vos applications.
 metadata:
   title: Base de test pour la documentation M365
-  description: La base de test Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde.
+  description: Test Base for Microsoft 365 est un service Azure qui facilite les tests d’applications pilotés par les données. Grâce à la puissance des données et du cloud, il permet aux professionnels de l’informatique de tirer parti de tests intelligents de n’importe où dans le monde.
   ms.service: service
   ms.subservice: subservice
   ms.topic: landing-page
@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 372143027462a20cecf4c7edc7e0eee31a480ba0
+  ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59202812"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064474"
 landingContent:
 - title: À propos de la base de test
   linkLists:
@@ -38,7 +38,7 @@ landingContent:
     links:
     - text: Créer un compte de base de test
       url: createAccount.md
-    - text: Télécharger votre application
+    - text: Téléchargement du package
       url: uploadApplication.md
     - text: Télécharger vos binaires
       url: binaries.md
