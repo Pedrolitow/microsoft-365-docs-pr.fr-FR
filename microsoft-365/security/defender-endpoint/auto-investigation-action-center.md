@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: a22850b6bc668e62e8db98884f61d264b529df79
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 08a81e94098f01cb91bc2f096a5e1946ff7a2e73
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963149"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111326"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le centre de mise en œuvre pour voir les actions de correction
 
@@ -40,7 +40,7 @@ Pendant et après un examen automatisé, les actions de correction des détectio
 
 Nous sommes heureux d’annoncer un nouveau centre de travail unifié ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )!
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centre de sécurité dans Microsoft 365 de sécurité.":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centre de actions dans le portail Microsoft 365 Defender web.":::
 
 Le tableau suivant compare le nouveau centre de l’action unifié au centre de l’action précédent.
 
@@ -48,7 +48,7 @@ Le tableau suivant compare le nouveau centre de l’action unifié au centre de 
 |---------|---------|
 |Répertorie les actions en attente et terminées pour les appareils et le courrier électronique dans un seul emplacement <br/>([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) plus Microsoft Defender pour [Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Répertorie les actions en attente et terminées pour les appareils <br/> ([Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md) uniquement)   |
 |Se trouve à l’emplacement :<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Se trouve à l’emplacement :<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, choose Action **center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de actions dans le centre de Microsoft 365 de sécurité."::: | In the Centre de sécurité Microsoft Defender, choose **Automated investigations** Action  >  **center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir du Centre de sécurité Microsoft Defender.":::  |
+| Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>choisissez **Centre de l’action.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigation vers le centre de actions dans le portail Microsoft 365 Defender web."::: | Dans le portail Microsoft 365 Defender, choisissez **Centre d’action**  >  **enquêtes automatisées.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigation vers le centre de l’action à partir Microsoft 365 Defender portail.":::  |
 
 Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Le point de terminaison et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée.
 
@@ -56,16 +56,16 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 
 - [Defender pour point de terminaison](microsoft-defender-endpoint.md)
 - [Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 
 > [!TIP]
 > Pour en savoir plus, consultez [La réglementation requise.](/microsoft-365/security/mtp/prerequisites)
 
 ## <a name="using-the-action-center"></a>Utilisation du centre de l’action
 
-Pour obtenir le centre de l’action unifiée dans le centre de sécurité Microsoft 365 amélioré :
+Pour obtenir le centre de l’action unifiée dans le portail Microsoft 365 Defender amélioré :
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 
 Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
@@ -86,7 +86,7 @@ Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centr
 - Utilisez des filtres pour afficher uniquement les éléments que vous souhaitez voir.
 - Sélectionnez **Exporter** pour exporter les résultats vers .csv fichier.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et approuver des actions de correction](manage-auto-investigation.md)
 - [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

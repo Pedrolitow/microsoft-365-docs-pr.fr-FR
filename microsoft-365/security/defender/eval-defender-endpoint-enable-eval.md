@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ddf7af50edd8f86ec7bc176d851ae2ba98b8fa51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0d577426477ea0ebc5fc4e6d83fa84fcfc113123
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181150"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111518"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -35,7 +35,7 @@ Cet article vous guide tout au long des étapes de configuration de l’environn
 
 
 > [!TIP]
-> Microsoft Defender pour le point de terminaison est également livré avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils pré-configurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. L’atelier est fourni avec une expérience de mise en place simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour point de terminaison, y compris des conseils pour de nombreuses fonctionnalités telles que la recherche avancée et l’analyse des menaces. Pour plus d’informations, voir [Évaluer les fonctionnalités.](../defender-endpoint/evaluation-lab.md) <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des périphériques de production alors que le laboratoire d’évaluation utilise des périphériques hors production. 
+> Microsoft Defender pour point de terminaison est également livré avec un laboratoire d’évaluation dans le produit où vous pouvez ajouter des appareils pré-configurés et exécuter des simulations pour évaluer les fonctionnalités de la plateforme. L’atelier est fourni avec une expérience de mise en place simplifiée qui peut vous aider à démontrer rapidement la valeur de Microsoft Defender pour point de terminaison, y compris des conseils pour de nombreuses fonctionnalités telles que la recherche avancée et l’analyse des menaces. Pour plus d’informations, voir [Évaluer les fonctionnalités.](../defender-endpoint/evaluation-lab.md) <br> La principale différence entre les instructions fournies dans cet article et le laboratoire d’évaluation est que l’environnement d’évaluation utilise des périphériques de production alors que le laboratoire d’évaluation utilise des périphériques hors production. 
 
 Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Endpoint.
 
@@ -52,9 +52,9 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
 1. Pour afficher vos licences, accédez au portail **Microsoft Azure et** accédez à la section [Microsoft Azure licences du portail.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Image de la page De gestion des licences Azure.](../../media/defender/atp-licensing-azure-portal.png)
+   ![Image de la page Gestion des licences Azure.](../../media/defender/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
+1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -66,7 +66,7 @@ Après avoir vérifié que l’état de la licence a été correctement mis en s
 
 Dans le but d’évaluer Microsoft Defender pour le point de terminaison, nous vous recommandons de choisir quelques appareils Windows pour effectuer l’évaluation.
 
-Vous pouvez choisir d’utiliser l’un des outils de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour le point](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)de terminaison dans Microsoft Intune .
+Vous pouvez choisir d’utiliser n’importe quel outil de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour endpoint dans Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
 La [rubrique Planifier le](../defender-endpoint/deployment-strategy.md) déploiement décrit les étapes générales à suivre pour déployer Defender pour Endpoint.  
 
@@ -80,7 +80,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 Point de terminaison | Options de l’outil
 :---|:---
-**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md) [,](../defender-endpoint/configure-endpoints-gp.md)stratégie de groupe , Microsoft Endpoint Manager/ Gestionnaire de [périphériques mobiles](../defender-endpoint/configure-endpoints-mdm.md), [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), intégration à [Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Fenêtres** | [Script local (jusqu’à 10 appareils)](../defender-endpoint/configure-endpoints-script.md) [,](../defender-endpoint/configure-endpoints-gp.md)stratégie de groupe , [Microsoft Endpoint Manager/ Gestionnaire](../defender-endpoint/configure-endpoints-mdm.md)de périphériques mobiles , [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), intégration à [Microsoft Defender pour le cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
 **MacOS** | [Scripts locaux,](../defender-endpoint/mac-install-manually.md) [Microsoft Endpoint Manager,](../defender-endpoint/mac-install-with-intune.md) [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Gestion des périphériques mobiles](../defender-endpoint/mac-install-with-other-mdm.md)
 **Serveur Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Séquence](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [Basée sur l’application](../defender-endpoint/ios-install.md)

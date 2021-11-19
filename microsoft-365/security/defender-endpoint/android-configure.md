@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 53eed34cfff6d2318b87e781b32a9963c372b279
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667385"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111398"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour le point de terminaison sur les fonctionnalités Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -61,7 +61,7 @@ Defender pour le point de terminaison sur Android permet aux administrateurs inf
 **Remarques sur la confidentialité liée aux applications à partir d’appareils personnels (BYOD) :**
 
 - Pour les Enterprise Android avec un profil de travail, seules les applications installées sur le profil de travail seront pris en charge.
-- Pour les autres modes BYOD, par défaut, l’évaluation des vulnérabilités des applications **n’est** pas activée. Toutefois, lorsque l’appareil est en mode administrateur, les administrateurs peuvent activer explicitement cette fonctionnalité via Microsoft Endpoint Manager pour obtenir la liste des applications installées sur l’appareil. Consultez la documentation pour en savoir plus.
+- Pour les autres modes BYOD, par défaut, l’évaluation des vulnérabilités des applications ne **sera** pas activée. Toutefois, lorsque l’appareil est en mode administrateur, les administrateurs peuvent activer explicitement cette fonctionnalité via Microsoft Endpoint Manager pour obtenir la liste des applications installées sur l’appareil. Consultez la documentation pour en savoir plus.
 
 ### <a name="configure-privacy-for-device-administrator-mode"></a>Configurer la confidentialité pour le mode administrateur d’appareil
 
@@ -70,7 +70,7 @@ Utilisez les étapes suivantes pour activer l’évaluation des **vulnérabilit�
 > [!NOTE]
 > Par défaut, cette option est désactivée pour les appareils inscrits avec le mode d’administration des appareils.
 
-1. Dans [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil  >    >   et entrez les paramètres suivants :
+1. Dans [Microsoft Endpoint Manager d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil et entrez les  >    >   paramètres suivants :
 
    - **Plateforme :** sélectionner un administrateur d’appareil Android
    - **Profil**: sélectionnez « Personnalisé », puis cliquez sur Créer
@@ -86,7 +86,7 @@ Utilisez les étapes suivantes pour activer l’évaluation des **vulnérabilit�
 
 4. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
 
-### <a name="configure-privacy-for-android-enterprise-work-profile"></a>Configurer la confidentialité pour le profil Enterprise Travail Android
+### <a name="configure-privacy-for-android-enterprise-work-profile"></a>Configurer la confidentialité pour le profil Enterprise travail Android
 
 Defender pour le point de terminaison prend en charge l’évaluation des vulnérabilités des applications dans le profil de travail. Toutefois, si vous souhaitez désactiver cette fonctionnalité pour des utilisateurs ciblés, vous pouvez suivre les étapes suivantes :
 
@@ -94,12 +94,11 @@ Defender pour le point de terminaison prend en charge l’évaluation des vulné
 2. Donnez un nom à la stratégie ; **Plateforme > android Enterprise**; sélectionnez le type de profil.
 3. Sélectionnez **Microsoft Defender pour le point de terminaison** comme application cible.
 4. Dans Paramètres page, sélectionnez Utiliser le concepteur de **configuration** et ajoutez **DefenderTVMPrivacyMode** comme clé et type de valeur sous la forme **Integer**
-   - Pour désactiver la vulnérabilité des applications dans le profil de travail, entrez la valeur 1 et affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur 0.
-   - Pour les utilisateurs dont la clé est définie sur « 0 » ( 0), Defender envoie la liste des applications du profil de travail au service principal pour l’évaluation des vulnérabilités.
+   - Pour désactiver la vulnérabilité des applications dans le profil de travail, entrez la valeur sous et `1` affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `0` .
+   - Pour les utilisateurs dont la clé est définie comme , Defender pour point de terminaison envoie la liste des applications du profil de travail au service principal pour l’évaluation `0` des vulnérabilités.
 5. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
 
 La mise en place ou la mise hors fonction des contrôles de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel.
-
 
 ## <a name="configure-privacy-for-malware-threat-report"></a>Configurer la confidentialité du rapport sur les menaces de programmes malveillants
 
@@ -110,7 +109,7 @@ Le contrôle de confidentialité du rapport sur les menaces de programmes malvei
 
 Utilisez les étapes suivantes pour l’activer pour les utilisateurs ciblés :
 
-1. Dans [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil  >    >   et entrez les paramètres suivants :
+1. Dans [Microsoft Endpoint Manager d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil et entrez les  >    >   paramètres suivants :
 
    - **Plateforme :** sélectionner un administrateur d’appareil Android
    - **Profil**: sélectionnez « Personnalisé », puis cliquez sur Créer
@@ -128,7 +127,7 @@ Utilisez les étapes suivantes pour l’activer pour les utilisateurs ciblés :
 
 L’utilisation de ce contrôle de confidentialité n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel. Par exemple, les appareils avec une application malveillante auront toujours un niveau de risque « Moyen ».
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

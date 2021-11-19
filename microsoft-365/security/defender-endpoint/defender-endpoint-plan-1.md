@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e49ab3b0cfcdf32bd152b7f2a8cc2b3dd7986665
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: e6f02abb96ff04271cfb84fa333b476b7120115f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940559"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111794"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -77,8 +77,8 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 
 | Fichier/Périphérique | Opération | Description |
 |:---|:---|:---|
-| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
 | Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
 | Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur des appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 
@@ -164,7 +164,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 ### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
-À l’aide du contrôle d’accès basé sur un rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). Avec RBAC, vous avez un contrôle fin sur les personnes qui peuvent accéder au centre de sécurité, ainsi que sur ce qu’elles peuvent voir et faire. 
+À l’aide du contrôle d’accès basé sur un rôle (RBAC), votre administrateur de sécurité peut créer des rôles et des groupes pour accorder un accès approprié au portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). Avec RBAC, vous avez un contrôle fin sur les personnes qui peuvent accéder à Defender for Cloud, ainsi que sur ce qu’elles peuvent voir et faire. 
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 

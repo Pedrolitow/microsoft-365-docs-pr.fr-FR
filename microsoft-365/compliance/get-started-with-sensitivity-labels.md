@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 7287b45a37a5da286a66ffdb2797c3e84746f326
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962674"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072167"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -97,7 +97,7 @@ Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de co
 |Appliquer et afficher les étiquettes dans Power BI, et protéger les données lorsqu’elles sont enregistrées en dehors du service.|[Étiquettes de confidentialité dans Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Surveiller et comprendre la manière dont les étiquettes de confidentialité sont utilisées dans mon organisation|[En savoir plus sur la classification des données](data-classification-overview.md)|
 |Étendre les étiquettes de confidentialité à des applications et services tiers|[Kit de développement logiciel (SDK) de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Étendez les étiquettes de confidentialité sur tout le contenu du Stockage Blob Azure, des fichiers Azure, d’Azure Data Lake Storage Gen1 et d’Azure Data Lake Storage Gen2|[Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label) |
+|Étendre les étiquettes de confidentialité sur le contenu de mes ressources Azure Purview, telles que Stockage Blob Azure, Azure Files, Azure Data Lake Storage et les sources de données multi-cloud|[Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentation sur les étiquettes de confidentialité pour l’utilisateur final

@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552727"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110798"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 
@@ -47,7 +47,7 @@ Vous pouvez spécifier le délai d’attente de blocage du cloud avec une strat�
 
 3. Sélectionnez (ou créez) une stratégie antivirus.
 
-4. Dans la **section Paramètres de** configuration, développez **Protection cloud.** Ensuite, dans la zone Délai d’out étendu de **Defender Cloud** en secondes, spécifiez la durée, en secondes, entre 1 seconde et 50 secondes. Tout ce que vous spécifiez est ajouté aux 10 secondes par défaut.
+4. Dans la **section Paramètres de** configuration, développez **Protection cloud.** Ensuite, dans la **Antivirus Microsoft Defender** Délai d’Antivirus Microsoft Defender en secondes, spécifiez la durée, en secondes, entre 1 seconde et 50 secondes. Tout ce que vous spécifiez est ajouté aux 10 secondes par défaut.
 
 5. (Cette étape est facultative) A apporter d’autres modifications à votre stratégie antivirus. (Vous avez besoin d’aide ? Voir [Paramètres la stratégie Antivirus Microsoft Defender dans Microsoft Intune.)](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
 
@@ -57,11 +57,11 @@ Vous pouvez spécifier le délai d’attente de blocage du cloud avec une strat�
 
 Vous pouvez utiliser la stratégie de groupe pour spécifier un délai d’accès étendu pour les vérifications dans le cloud.
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
-3. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
+3. Dans **l’Éditeur de gestion des stratégies** de groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 
 3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 

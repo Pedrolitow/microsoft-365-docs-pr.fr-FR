@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 36938380f46400b04e642d9cd8dfc4076e679a32
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962758"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111182"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils VDI (Virtual Desktop Infrastructure) non persistants dans Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "60962758"
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Les VDI persistants**  -  [L’intégration](configure-endpoints.md) d’un ordinateur VDI persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le Centre de sécurité, ( sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les https://security.microsoft.com) instructions pour ce type. 
+  > **Les VDI persistants**  -  [L’intégration](configure-endpoints.md) d’un ordinateur VDI persistant dans Microsoft Defender pour le point de terminaison est gérée de la même manière que pour un ordinateur physique, tel qu’un ordinateur de bureau ou un ordinateur portable. La stratégie de groupe, Microsoft Endpoint Manager et d’autres méthodes peuvent être utilisées pour intégrer un ordinateur persistant. Dans le portail Microsoft 365 Defender, ( sous intégration, sélectionnez votre méthode d’intégration préférée et suivez les https://security.microsoft.com) instructions pour ce type. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégration d’appareils VDI (Virtual Desktop Infrastructure) non persistants
 

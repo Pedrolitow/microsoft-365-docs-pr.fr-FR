@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2a3e2949cd05a72c949bad4a55c10fcb84b1f4f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc85703d5dd8db92f3f3e58b618907e34b3616af
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198084"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111710"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour l’identité
 
@@ -40,7 +40,7 @@ Avant d’activer Microsoft Defender pour l’identité, veillez à bien compren
 
 Microsoft Defender pour l’identité utilise l’apprentissage automatique et l’analyse comportementale pour identifier les attaques sur votre réseau local, ainsi que pour détecter et empêcher de manière proactive les risques de connecteur des utilisateurs associés aux identités cloud. Pour plus d’informations, [voir Qu’est-ce que Microsoft Defender pour l’identité ?](/defender-for-identity/what-is)
 
-Defender pour l’identité protège vos utilisateurs Active Directory locaux et/ou les utilisateurs synchronisés avec votre Azure Active Directory (Azure AD). Pour protéger un environnement composé uniquement d’utilisateurs Azure AD, consultez [Azure AD Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
+Defender pour l’identité protège vos utilisateurs Active Directory locaux et/ou les utilisateurs synchronisés avec Azure Active Directory (Azure AD). Pour protéger un environnement composé uniquement d’Azure AD utilisateurs, voir [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
@@ -50,7 +50,7 @@ Le diagramme suivant illustre l’architecture de base de Defender for Identity.
 
 Dans cette illustration :
 - Les capteurs installés sur les contrôleurs de domaine AD analysent les journaux et le trafic réseau et les envoient à Microsoft Defender pour identité pour analyse et rapport.
--  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne en pointillés dans l’illustration). 
+-  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne pointillée dans l’illustration). 
 - Microsoft Defender pour l’identité partage des signaux Microsoft 365 Defender pour la détection et la réponse étendues (XDR).
 
 
@@ -59,7 +59,7 @@ Les capteurs Defender for Identity peuvent être installés directement sur les 
 - Contrôleurs de domaine : le capteur surveille directement le trafic du contrôleur de domaine, sans avoir besoin d’un serveur dédié, ni de configuration de la mise en miroir des ports.
 - AD FS : le capteur surveille directement le trafic réseau et les événements d’authentification.
 
-Pour une analyse plus approfondie de l’architecture de Defender pour l’identité, y compris l’intégration avec Sécurité des applications cloud, voir [Microsoft Defender pour l’architecture d’identité.](/defender-for-identity/architecture)
+Pour une analyse plus approfondie de l’architecture de Defender pour l’identité, y compris l’intégration à Defender pour les applications cloud, voir [Microsoft Defender pour l’architecture d’identité.](/defender-for-identity/architecture)
 
 
 ## <a name="understand-key-concepts"></a>Comprendre les concepts clés
@@ -73,11 +73,11 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 | Alertes de sécurité    | Les alertes de sécurité Defender for Identity expliquent les activités suspectes détectées par les capteurs sur votre réseau, ainsi que les acteurs et ordinateurs impliqués dans chaque menace.   | [Microsoft Defender pour les alertes de sécurité des identités](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
 | Profils d’entité    | Les profils d’entité fournissent une enquête approfondie complète sur les utilisateurs, les ordinateurs, les appareils et les ressources, ainsi que leur historique d’accès.   | [Comprendre les profils d’entité](/defender-for-identity/entity-profiles)  |
 | Chemins de déplacement latéral    | Un composant clé des informations de sécurité MDI consiste à identifier les chemins de déplacement latéral dans lesquels un attaquant utilise des comptes non sensibles pour accéder à des comptes ou des ordinateurs sensibles dans l’ensemble de votre réseau.  | [Microsoft Defender for Identity Lateral Movement Paths (LMP)](/defender-for-identity/use-case-lateral-movement-path)  |
-| Résolution des noms réseau    |  La résolution de noms réseau (NNR) est un composant de la fonctionnalité MDI qui capture les activités basées sur le trafic réseau, les événements Windows, ETW, etc. et met en corrélation ces données brutes avec les ordinateurs concernés impliqués dans chaque activité.       | [Qu’est-ce que la résolution de noms réseau ?](/defender-for-identity/nnr-policy)      |
+| Résolution des noms réseau    |  La résolution de noms réseau (NNR) est un composant de la fonctionnalité MDI qui capture les activités basées sur le trafic réseau, les événements Windows, ETW, etc. et met en corrélation ces données brutes avec les ordinateurs concernés impliqués dans chaque activité.       | [Qu’est-ce que la résolution de nom de réseau ?](/defender-for-identity/nnr-policy)      |
 | Rapports    | Les rapports Defender for Identity vous permettent de planifier ou de générer et de télécharger immédiatement des rapports qui fournissent des informations sur l’état du système et de l’entité.  Vous pouvez créer des rapports sur l’état du système, les alertes de sécurité et les chemins de déplacement latéral potentiels détectés dans votre environnement.   | [Microsoft Defender pour les rapports d’identité ](/defender-for-identity/reports)       |
 | Groupes de rôles    | Defender pour l’identité offre des groupes basés sur des rôles et un accès délégué pour protéger les données en fonction des besoins spécifiques de votre organisation en matière de sécurité et de conformité, notamment les administrateurs, les utilisateurs et les visiteurs.        |  [Groupes de rôles dans Microsoft Defender pour Identity](/defender-for-identity/role-groups)       |
 | Portail d’administration    |  Outre le portail Microsoft 365 Defender, le cab du portail Defender pour l’identité permet de surveiller et de répondre à des activités suspectes.      | [Travailler avec le portail Microsoft Defender pour l’identité](/defender-for-identity/workspace-portal)        |
-| Microsoft Cloud App Security’intégration   | Microsoft Cloud App Security s’intègre à Microsoft Defender pour l’identité pour fournir l’analyse comportementale de l’entité utilisateur (UEBA) dans un environnement hybride : application cloud et local   | Intégration de Microsoft Defender pour l’identité  |
+| Intégration de Microsoft Defender pour les applications cloud   | Microsoft Defender pour les applications cloud s’intègre à Microsoft Defender pour l’identité pour fournir l’analyse comportementale de l’entité utilisateur (UEBA) dans un environnement hybride : application cloud et local   | Intégration de Microsoft Defender pour l’identité  |
 | | | |
 
 
@@ -86,7 +86,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : Microsoft Defender pour les conditions [préalables pour l’identité.](/defender-for-identity/prerequisites)
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation Defender for Identity](eval-defender-identity-enable-eval.md)
 

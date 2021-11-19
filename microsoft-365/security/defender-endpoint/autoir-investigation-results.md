@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b704a64e4428ede9af8992d22485a9d859ca4c98
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963190"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110114"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
@@ -86,7 +86,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |Tab|Description|
 |---|---|
 |**Graphique de l'examen**|Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation. <p> Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous permet d’utiliser l’onglet Preuves, où vous pouvez voir les entités détectées et leurs verdicts. |
-|**Alertes**|Répertorie les alertes associées à l’examen. Les alertes peuvent provenir des fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans les applications Office, Cloud App Security et d’autres fonctionnalités Microsoft 365 Defender.|
+|**Alertes**|Répertorie les alertes associées à l’examen. Les alertes peuvent être dues aux fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans les applications Office, Defender pour les applications cloud et d’autres fonctionnalités Microsoft 365 Defender cloud.|
 |**Appareils**|Répertorie les appareils inclus dans l’examen, ainsi que leur niveau de correction. (Les niveaux de correction correspondent au niveau [d’automatisation des groupes d’appareils.)](automation-levels.md)|
 |**Boîtes aux lettres**|Répertorie les boîtes aux lettres qui sont touchées par les menaces détectées.|
 |**Utilisateurs**|Répertorie les comptes d’utilisateurs qui sont touchés par les menaces détectées.|

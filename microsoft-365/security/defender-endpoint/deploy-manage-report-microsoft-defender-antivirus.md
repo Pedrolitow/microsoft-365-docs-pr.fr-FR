@@ -16,27 +16,27 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3fc0d1e927603a28cd622207cc1690e0ba5e413e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f7ba446eb074bc04ae4432595022d26f7f84b6e8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882355"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111782"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez déployer, gérer et signaler des Antivirus Microsoft Defender de plusieurs façons.
+Vous pouvez déployer, gérer et signaler les Antivirus Microsoft Defender de plusieurs façons.
 
-Étant donné que le client Antivirus Microsoft Defender est installé en tant que partie intégrante de Windows 10 et Windows 11, le déploiement traditionnel d’un client sur vos points de terminaison ne s’applique pas.
+Étant donné que Antivirus Microsoft Defender client est installé en tant que partie intégrante de Windows 10 et Windows 11, le déploiement traditionnel d’un client sur vos points de terminaison ne s’applique pas.
 
-Toutefois, dans la plupart des cas, vous devrez toujours activer le service de protection sur vos points de terminaison avec les objets de stratégie de groupe, Microsoft Intune, Microsoft Endpoint Configuration Manager ou Azure Defender, qui est décrit dans le tableau suivant.
+Toutefois, dans la plupart des cas, vous devrez toujours activer le service de protection sur vos points de terminaison avec Microsoft Intune, Microsoft Endpoint Configuration Manager, Microsoft Defender pour le Cloud ou les objets de stratégie de groupe, qui est décrit dans le tableau suivant.
 
 Vous verrez également des liens supplémentaires pour :
 
@@ -48,16 +48,16 @@ Vous verrez également des liens supplémentaires pour :
 
 Outil|Options de déploiement (<a href="#fn2" id="ref2">2</a>)|Options de gestion (configuration et stratégie à l’échelle du réseau ou déploiement de base) ([3](#fn3))|Options de rapport
 ---|---|---|---
-Microsoft Intune|[Ajouter des paramètres de protection des points de terminaison dans Intune](/intune/endpoint-protection-configure)|[Configurer les paramètres de restriction d’appareil dans Intune](/intune/device-restrictions-configure)| [Utiliser la console Intune pour gérer les appareils](/intune/device-management)
+Microsoft Intune|[Ajouter des paramètres de protection des points de terminaison dans Intune](/intune/endpoint-protection-configure)|[Configurer les paramètres de restriction d’appareil dans Intune](/intune/device-restrictions-configure)| [Utiliser la console Intune pour gérer les appareils](/intune/device-management)
 Microsoft Endpoint Manager ([1](#fn1))|Utiliser le rôle [Endpoint Protection de site point][] et [activer Endpoint Protection avec les paramètres client personnalisés][]|Avec [stratégies anti-programme malveillant par défaut et personnalisées][] et [gestion des clients][]|Avec les valeurs par défaut [Espace de travail Surveillance de Configuration Manager][] et [alertes par courrier électronique][]
 Stratégie de groupe et Active Directory (joint au domaine)|Utilisez un objet de stratégie de groupe pour déployer les modifications de configuration et Antivirus Microsoft Defender est activé.|Utiliser des objets de stratégie de groupe pour [Configurer les options de mise à jour pour Antivirus Microsoft Defender][] et [Configurer les fonctionnalités Windows Defender][]|Les rapports de point de terminaison ne sont pas disponibles avec la stratégie de groupe. Vous pouvez générer une liste de [stratégies de groupe pour déterminer si des paramètres ou des stratégies ne sont pas appliqués][]
 PowerShell|Déployer avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utilisez les cmdlets [Set-MpPreference] et [Update-MpSignature] disponibles dans le module Defender.|Utiliser les cmdlets [Get- disponibles dans le module Defender][]
 Windows Infrastructure de gestion|Déployer avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utilisez la méthode [Set de la classe MSFT_MpPreference][] et la méthode [Update de la classe MSFT_MpSignature][]|Utilisez la classe [MSFT_MpComputerStatus][] et la méthode get des classes associées dans le [Windows Defender fournisseur WMIv2][]
-Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à l’aide Visual Studio configuration de machine virtuelle ou à l’aide [Azure PowerShell cmdlets.](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios) Vous pouvez également [installer endpoint protection dans Azure Defender*](/azure/security-center/security-center-install-endpoint-protection)|Configurer des Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou utiliser [des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans Azure Active Directory pour déterminer une activité suspecte, notamment le rapport [Appareils potentiellement infectés][] et configurer un outil SIEM pour signaler [événements Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
+Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à l’aide Visual Studio configuration de machine virtuelle ou à l’aide [Azure PowerShell cmdlets.](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios) Vous pouvez également [installer endpoint protection dans Microsoft Defender pour cloud*](/azure/security-center/security-center-install-endpoint-protection)|Configurer des Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou utiliser [des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans Azure Active Directory pour déterminer une activité suspecte, notamment le rapport [Appareils potentiellement infectés][] et configurer un outil SIEM pour signaler [événements Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
 
 1. <span id="fn1" />La disponibilité de certaines fonctions et fonctionnalités, en particulier liées à la protection cloud, diffère entre Microsoft Endpoint Manager (Current Branch) et System Center 2012 Configuration Manager. Dans cette bibliothèque, nous nous sommes concentrés sur Windows 10, Windows 11, Windows Server 2016 et Microsoft Endpoint Manager (Current Branch). Voir [Utiliser la protection microsoft fournie](cloud-protection-microsoft-defender-antivirus.md) par le cloud Antivirus Microsoft Defender pour un tableau qui décrit les principales différences. [(Revenir au tableau)](#ref2)
 
-2. <span id="fn2" />Dans Windows 10 et Windows 11, Antivirus Microsoft Defender est un composant disponible sans installation ni déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou hors de date (sauf[sur Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Le déploiement classique n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
+2. <span id="fn2" />Dans Windows 10 et Windows 11, Antivirus Microsoft Defender est un composant disponible sans installation ni déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou hors de date (sauf[sur Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Le déploiement traditionnel n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
 
 3. <span id="fn3" />La configuration des fonctionnalités et de la protection, y compris la configuration des mises à jour du produit et de la protection, est décrite plus en détail dans la section Configurer [Antivirus Microsoft Defender fonctionnalités](configure-notifications-microsoft-defender-antivirus.md) de cette bibliothèque. [(Revenir au tableau)](#ref2)
 

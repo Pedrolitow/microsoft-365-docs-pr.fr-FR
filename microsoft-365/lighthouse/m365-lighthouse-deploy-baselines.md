@@ -16,24 +16,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer des Microsoft 365 Lighthouse de référence.
-ms.openlocfilehash: d449a7677e478111590a2fbeedfbd211e07d7027
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c241dae7839c6c0724a397912decc5da74ec556f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173198"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111446"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer les Microsoft 365 Lighthouse base de référence 
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse de référence vous permet de déployer des configurations de client géré standard pour sécuriser les utilisateurs, les appareils et les données au sein des clients. Il existe six configurations de référence par défaut qui sont standard avec le Contrôle :
 
 - Exiger l’mf pour les administrateurs
 - Exiger l’mf pour les utilisateurs finaux
 - Bloquer l’authentification héritée
-- Configurer l’inscription des appareils dans Microsoft Endpoint Manager - Azure AD Join
+- Configurer l’inscription des appareils dans Microsoft Endpoint Manager – Azure AD rejoindre
 - Configurer la stratégie antivirus Defender pour les Windows mobiles
 - Configurer la stratégie de conformité pour Windows appareils
 
@@ -43,7 +43,7 @@ Assurez-vous que vous et vos clients respectez les conditions requises répertor
 
 ## <a name="learn-more-about-the-default-baseline"></a>En savoir plus sur la ligne de base par défaut
 
-Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir la page Lignes de base. Vous verrez que la planification par défaut a déjà été ajoutée au groupe de locataires par défaut (tous les locataires). Pour afficher les configurations de référence par défaut, sélectionnez Afficher la ligne **de** base pour ouvrir la page de référence par défaut. Les configurations sont répertoriées en tant qu’étapes de déploiement. Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
+Sélectionnez **Lignes de** base dans le volet de navigation gauche pour ouvrir la page Lignes de base. Vous verrez que la planification par défaut a déjà été ajoutée au groupe de locataires par défaut (tous les locataires). Pour afficher les configurations de référence par défaut, sélectionnez Afficher la ligne **de** base pour ouvrir la page de référence par défaut. Les configurations sont répertoriées en tant qu’étapes de déploiement. Sélectionnez l’une des étapes de déploiement pour afficher les détails du déploiement et l’impact sur l’utilisateur.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Capture d’écran de la page de référence par défaut.>.":::
 
@@ -59,7 +59,7 @@ Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir 
 
 5. Sélectionnez **Appliquer** pour appliquer l’étape de déploiement sélectionnée au client. Si l’étape de déploiement indique « Cette action nécessite une étape manuelle », veillez à effectuer l’étape manuelle afin que l’étape de déploiement soit appliquée correctement.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de l’utilisation des lignes de base pour déployer](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) des configurations client standard (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

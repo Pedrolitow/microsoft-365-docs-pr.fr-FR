@@ -16,16 +16,16 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/26/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9ffbeb2b8b1f8095b79ebfce1466ecc4ee559cac
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6a2faec5ec3dca1fcd346aecc73edbbcd2cfa583
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882500"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110090"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
-**S’applique à :**
+**S’applique à :**
 
 - Antivirus Microsoft Defender
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,10 +35,10 @@ ms.locfileid: "60882500"
 Antivirus Microsoft Defender est automatiquement installé sur les points de terminaison exécutant les versions suivantes de Windows :
 
 - Windows 10 ou plus nouveau
-- Windows Server 2022
-- Windows Server 2019
-- Windows Serveur, version 1803 ou plus récente
-- Windows Server 2016
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server, version 1803 ou plus récente
+- Windows Server 2016
 
 Que se passe-t-il lorsqu’une autre solution antivirus/anti-programme malveillant non-Microsoft est utilisée ? Pouvez-vous exécuter Antivirus Microsoft Defender avec un autre produit antivirus ? Les réponses dépendent de plusieurs facteurs, tels que votre système d’exploitation et si vous utilisez [Microsoft Defender](microsoft-defender-endpoint.md) pour point de terminaison (Defender pour point de terminaison) avec votre protection antivirus.
 
@@ -61,8 +61,8 @@ Cette section décrit ce qui se passe avec Antivirus Microsoft Defender et les p
 |---|---|---|
 |Windows 10 <p> Windows 11|Antivirus Microsoft Defender|Mode actif|
 |Windows 10 <p> Windows 11|Une solution antivirus/anti-programme malveillant non-Microsoft|Mode désactivé (se produit automatiquement)|
-|Windows Server 2022 <p> Windows Server 2019<p> Windows Serveur, version 1803 ou plus récente <p> Windows Server 2016 |Antivirus Microsoft Defender|Mode actif|
-|Windows Server 2022<p>Windows Server 2019<p>Windows Serveur, version 1803 ou plus récente <p> Windows Server 2016 <p>  |Une solution antivirus/anti-programme malveillant non-Microsoft|Désactivé (définie manuellement) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2022 <p> Windows Server 2019<p> Windows Server, version 1803 ou plus récente <p> Windows Server 2016 |Antivirus Microsoft Defender|Mode actif|
+|Windows Server 2022<p>Windows Server 2019<p>Windows Server, version 1803 ou plus récente <p> Windows Server 2016 <p>  |Une solution antivirus/anti-programme malveillant non-Microsoft|Désactivé (définie manuellement) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) Sur Windows Server, si vous exécutez un produit antivirus non Microsoft, vous pouvez désactiver Antivirus Microsoft Defender à l’aide de la stratégie de groupe pour désactiver Antivirus Microsoft Defender ou à l’aide de la clé de Registre [DisableAntiSpyware.](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) Pour utiliser la clé de Registre, accédez `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` à , et définissez ou créez une entrée DWORD appelée `DisableAntiSpyware` . Définissez sa valeur sur (qui définit la valeur de la clé de Registre sur true), puis sélectionnez `1` **Hexadécimal** pour sa base. 
 
@@ -79,16 +79,16 @@ Le tableau suivant récapitule ce qui se passe avec Antivirus Microsoft Defender
 | Windows 10 <p> Windows 11 | Antivirus Microsoft Defender | Non   | Mode actif |
 | Windows 10 <p> Windows 11  | Une solution antivirus/anti-programme malveillant non-Microsoft | Oui  | Mode passif (automatiquement) |
 | Windows 10 <p> Windows 11  | Une solution antivirus/anti-programme malveillant non-Microsoft | Non   | Mode désactivé (automatiquement)    |
-| Windows Server 2019 <p>Windows Serveur, version 1803 ou plus récente  | Antivirus Microsoft Defender  | Oui |         Mode actif  |
-| Windows Server 2019 <p> Windows Serveur, version 1803 ou plus récente   | Antivirus Microsoft Defender | Non  | Mode actif |
-| Windows Server 2019 <p> Windows Serveur, version 1803 ou plus récente  | Une solution antivirus/anti-programme malveillant non-Microsoft | Oui  | Antivirus Microsoft Defender doit être définie en mode passif (manuellement) <sup> [[2](#fn2)]<sup>  | 
-| Windows Server 2019 <p> Windows Serveur, version 1803 ou plus récente  | Une solution antivirus/anti-programme malveillant non-Microsoft | Non  | Antivirus Microsoft Defender être désactivé (manuellement) <sup> [[3](#fn3)]<sup></sup>  |
-| Windows Server 2016 <br><br> Windows Server 2012 R2   | Antivirus Microsoft Defender | Oui | Mode actif |
-|Windows Server 2016 <br><br> Windows Server 2012 R2  | Antivirus Microsoft Defender | Non | Mode actif |
-| Windows Server 2016 <br><br> Windows Server 2012 R2  | Une solution antivirus/anti-programme malveillant non-Microsoft | Oui | Antivirus Microsoft Defender doit être définie en mode passif (manuellement) <sup> [[2](#fn2)]<sup> |
-|Windows Server 2016 <br><br> Windows Server 2012 R2  | Une solution antivirus/anti-programme malveillant non-Microsoft | Non | Antivirus Microsoft Defender être désactivé (manuellement) <sup> [[3](#fn3)]<sup> |
+| Windows Server 2019 <p>Windows Server, version 1803 ou plus récente  | Antivirus Microsoft Defender  | Oui |         Mode actif  |
+| Windows Server 2019 <p> Windows Server, version 1803 ou plus récente   | Antivirus Microsoft Defender | Non  | Mode actif |
+| Windows Server 2019 <p> Windows Server, version 1803 ou plus récente  | Une solution antivirus/anti-programme malveillant non-Microsoft | Oui  | Antivirus Microsoft Defender doit être définie en mode passif (manuellement) <sup> [[2](#fn2)]<sup>  | 
+| Windows Server 2019 <p> Windows Server, version 1803 ou plus récente  | Une solution antivirus/anti-programme malveillant non-Microsoft | Non  | Antivirus Microsoft Defender être désactivé (manuellement) <sup> [[3](#fn3)]<sup></sup>  |
+| Windows Server 2016 <br><br> Windows Server 2012 R2   | Antivirus Microsoft Defender | Oui | Mode actif |
+|Windows Server 2016 <br><br> Windows Server 2012 R2  | Antivirus Microsoft Defender | Non | Mode actif |
+| Windows Server 2016 <br><br> Windows Server 2012 R2  | Une solution antivirus/anti-programme malveillant non-Microsoft | Oui | Antivirus Microsoft Defender doit être définie en mode passif (manuellement) <sup> [[2](#fn2)]<sup> |
+|Windows Server 2016 <br><br> Windows Server 2012 R2  | Une solution antivirus/anti-programme malveillant non-Microsoft | Non | Antivirus Microsoft Defender être désactivé (manuellement) <sup> [[3](#fn3)]<sup> |
 
-(<a id="fn2">2</a>) Sur Windows Server 2019, Windows Server, version 1803 ou plus récente, Windows Server 2016 ou Windows Server 2012 R2, Antivirus Microsoft Defender n’entre pas en mode passif automatiquement lorsque vous installez un antivirus non Microsoft produit. Dans ce cas, [définissez Antivirus Microsoft Defender](microsoft-defender-antivirus-on-windows-server.md) en mode passif pour éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur. Vous pouvez définir Antivirus Microsoft Defender mode passif à l’aide de PowerShell, d’une stratégie de groupe ou d’une clé de Registre. 
+(<a id="fn2">2</a>) Sur Windows Server 2019, Windows Server, version 1803 ou plus récente, Windows Server 2016 ou Windows Server 2012 R2, Antivirus Microsoft Defender n’entre pas en mode passif automatiquement lorsque vous installez un non-Microsoft produit antivirus. Dans ce cas, [définissez Antivirus Microsoft Defender](microsoft-defender-antivirus-on-windows-server.md) en mode passif pour éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur. Vous pouvez définir Antivirus Microsoft Defender mode passif à l’aide de PowerShell, d’une stratégie de groupe ou d’une clé de Registre. 
 
   Vous pouvez définir Antivirus Microsoft Defender en mode passif en réglant la clé de Registre suivante :
 - Chemin d’accès : `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -99,7 +99,7 @@ Le tableau suivant récapitule ce qui se passe avec Antivirus Microsoft Defender
  > [!NOTE]
  > Pour que le mode passif fonctionne sur les points de terminaison exécutant Windows Server 2016 et Windows Server 2012 R2, ces points de terminaison doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) 
 
-(<a id="fn3">3</a>) Sur Windows Server 2016 ou Windows Server 2012 R2, si vous utilisez un produit antivirus non Microsoft et que ce point de terminaison n’est pas intégré à Microsoft Defender pour le point de terminaison, [désactivez/désinstallez](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016) les Antivirus Microsoft Defender manuellement pour éviter les problèmes causés par l’utilisation de plusieurs antivirus installés sur un serveur.
+(<a id="fn3">3</a>) Sur Windows Server 2016 ou Windows Server 2012 R2, si vous utilisez un produit antivirus non Microsoft et que ce point de terminaison n’est pas intégré à Microsoft Defender pour le point de terminaison, [désactivez/désinstallez](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016) Antivirus Microsoft Defender manuellement  pour éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur.
 
 > [!TIP]
 > Voir [Antivirus Microsoft Defender sur Windows Server pour](microsoft-defender-antivirus-on-windows-server.md) les principales différences et les options de gestion pour les installations Windows Server. Sur Windows Server 2016, vous pouvez voir *Antivirus Windows Defender* au lieu de *Antivirus Microsoft Defender*.
@@ -182,8 +182,8 @@ Le tableau de cette section décrit les différents états que vous pouvez voir 
  |  État  |  Action exécutée  | 
  |---|---| 
  |  Mode actif  |  En mode actif, Antivirus Microsoft Defender est utilisé comme application antivirus sur l’ordinateur. Paramètres configurés à l’aide de Configuration Manager, d’une stratégie de groupe, Microsoft Intune d’autres produits de gestion s’appliquent. Les fichiers sont analysés, les menaces sont corrigés et les informations de détection sont signalées dans votre outil de configuration (par exemple, Configuration Manager ou l’application Antivirus Microsoft Defender sur le point de terminaison lui-même).  | 
- |  Mode passif  |  En mode passif, Antivirus Microsoft Defender n’est pas utilisé comme  application antivirus et les menaces ne sont pas corrigés par Antivirus Microsoft Defender. Toutefois, les menaces peuvent être corrigés par la détection et la réponse des points [de terminaison (PEPT) en mode blocage.](edr-in-block-mode.md) <br/><br/> Les fichiers sont analysés et des rapports sont fournis pour détecter les menaces qui sont partagées avec le service Defender for Endpoint. Des alertes peuvent [](microsoft-defender-security-center.md) s’afficher dans le centre de sécurité indiquant Antivirus Microsoft Defender comme source, même si Antivirus Microsoft Defender est en mode passif. <br/><br/> Lorsque Antivirus Microsoft Defender est en mode passif, vous pouvez toujours gérer les mises à jour [pour Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md); toutefois, vous ne pouvez pas déplacer Antivirus Microsoft Defender en mode actif si vos appareils ont un produit antivirus non Microsoft qui fournit une protection en temps réel contre les programmes malveillants. <br/><br/> Pour une protection par couches de sécurité et une détection optimales, veillez à obtenir vos mises à jour antivirus et anti-programme malveillant, même si Antivirus Microsoft Defender est en cours d’exécution en mode passif. Voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md) <br/><br/> **REMARQUE**: le mode passif n’est pas pris en charge Windows Server 2016.  | 
- |  Désactivé <br/><br/> ou <br/><br/> Désinstallé  |  Lorsqu’il est désactivé ou désinstallé, Antivirus Microsoft Defender n’est pas utilisé comme application antivirus. Les fichiers ne sont pas analysés et les menaces ne sont pas corrigés. <br/><br/> La désactivation ou la désinstallation Antivirus Microsoft Defender est déconseillée en général ; si possible, conservez Antivirus Microsoft Defender en mode passif si vous utilisez une solution anti-programme malveillant/antivirus non Microsoft. <br/><br/> Dans les cas où Antivirus Microsoft Defender est automatiquement désactivé, il peut être réactivé automatiquement si le produit antivirus/anti-programme malveillant non-Microsoft expire ou cesse de fournir une protection en temps réel contre les virus, les programmes malveillants ou d’autres menaces. La réactivé automatique des Antivirus Microsoft Defender vous permet de vous assurer que la protection antivirus est conservée sur vos points de terminaison. <br/><br/> Vous pouvez également utiliser une analyse périodique [limitée,](limited-periodic-scanning-microsoft-defender-antivirus.md)qui fonctionne avec le moteur Antivirus Microsoft Defender pour vérifier régulièrement les menaces si vous utilisez une application antivirus non Microsoft.  | 
+ |  Mode passif  |  En mode passif, Antivirus Microsoft Defender n’est pas utilisé comme  application antivirus et les menaces ne sont pas corrigés par Antivirus Microsoft Defender. Toutefois, les menaces peuvent être corrigés par la détection et la réponse des points de terminaison [(PEPT) en mode blocage.](edr-in-block-mode.md) <br/><br/> Les fichiers sont analysés et des rapports sont fournis pour détecter les menaces qui sont partagées avec le service Defender for Endpoint. Il se peut que des alertes s’affichent dans [Defender pour le cloud](microsoft-defender-security-center.md) Antivirus Microsoft Defender en tant que source, même lorsque Antivirus Microsoft Defender est en mode passif. <br/><br/> Lorsque Antivirus Microsoft Defender est en mode passif, vous pouvez toujours gérer les mises à jour pour [Antivirus Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md); toutefois, vous ne pouvez pas déplacer Antivirus Microsoft Defender  en mode actif si vos appareils ont un produit antivirus non Microsoft qui fournit une protection en temps réel contre les programmes malveillants. <br/><br/> Pour une protection par couches de sécurité et une détection optimales, veillez à obtenir vos mises à jour antivirus et anti-programme malveillant, même si Antivirus Microsoft Defender est en cours d’exécution en mode passif. Voir [Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md) <br/><br/> **REMARQUE**: le mode passif n’est pas pris en charge Windows Server 2016.  | 
+ |  Désactivé <br/><br/> ou <br/><br/> Désinstallé  |  Lorsqu’il est désactivé ou désinstallé, Antivirus Microsoft Defender n’est pas utilisé comme application antivirus. Les fichiers ne sont pas analysés et les menaces ne sont pas corrigés. <br/><br/> La désactivation ou la désinstallation de Antivirus Microsoft Defender n’est pas recommandée en général ; si possible, conservez les Antivirus Microsoft Defender en mode passif si vous utilisez une solution anti-programme malveillant/antivirus non Microsoft. <br/><br/> Dans les cas où Antivirus Microsoft Defender est automatiquement désactivé, il peut être réactivé automatiquement si le produit antivirus/anti-programme malveillant non-Microsoft expire ou cesse de fournir une protection en temps réel contre les virus, les programmes malveillants ou d’autres menaces. La réactivé automatique des Antivirus Microsoft Defender vous permet de vous assurer que la protection antivirus est conservée sur vos points de terminaison. <br/><br/> Vous pouvez également utiliser une analyse périodique [limitée,](limited-periodic-scanning-microsoft-defender-antivirus.md)qui fonctionne avec le moteur Antivirus Microsoft Defender pour vérifier régulièrement les menaces si vous utilisez une application antivirus non Microsoft.  | 
 
 
 ## <a name="see-also"></a>Voir aussi

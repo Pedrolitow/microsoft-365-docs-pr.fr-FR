@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d9c212cf1c566050b21760ea9434eaba772f7fac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556087"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109862"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
@@ -38,7 +38,7 @@ Vous voulez voir comment cela fonctionne ? Regardez la vidéo suivante :
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-La technologie d’investigation automatisée utilise divers algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
+La technologie utilisée dans les enquêtes automatisées utilise différents algorithmes d’inspection et repose sur des processus utilisés par les analystes de sécurité. Les fonctionnalités AIR sont conçues pour examiner les alertes et prendre des mesures immédiates pour résoudre les violations. Les fonctionnalités AIR réduisent considérablement le volume d’alertes, ce qui permet aux opérations de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives à valeur élevée. Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Dans le centre de traitement des actions, les actions en attente sont approuvées (ou rejetées) et les actions terminées peuvent être annulées si nécessaire.
 
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
@@ -61,11 +61,11 @@ Une enquête automatisée peut commencer lorsqu’une alerte est déclenchée ou
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>Comment un examen automatisé étend son étendue
 
-Pendant l’exécution d’un examen, toutes les autres alertes générées à partir de l’appareil sont ajoutées à un examen automatisé en cours jusqu’à ce que l’enquête soit terminée. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
+Pendant l’exécution d’un examen, toutes les autres alertes générées à partir de l’appareil sont ajoutées à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 
-Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil, et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
+Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
 
-## <a name="how-threats-are-remediated"></a>Comment les menaces sont-elles corrigés ?
+## <a name="how-threats-are-remediated"></a>Comment les menaces sont corrigés
 
 Lorsque des alertes sont déclenchées et qu’une enquête automatisée s’exécute, un verdict est généré pour chaque élément de preuve examiné. Les verdicts peuvent être :
 
@@ -80,7 +80,7 @@ Selon le niveau [d’automatisation](automation-levels.md) définie pour votre o
 Toutes les actions de correction, qu’elles soient en attente ou terminées, sont suivis dans le centre [de correction.](auto-investigation-action-center.md) Si nécessaire, votre équipe des opérations de sécurité peut annuler une action de correction. Pour plus d’informations, voir [Examiner et approuver les actions de correction à la suite d’un examen automatisé.](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 > [!TIP]
-> Consultez la nouvelle page d’examen unifié dans le centre Microsoft 365 sécurité. Pour en savoir plus, [voir (NOUVEAU!) Page d’examen unifié](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consultez la nouvelle page d’examen unifié dans le portail Microsoft 365 Defender web. Pour en savoir plus, [voir (NOUVEAU!) Page d’examen unifié](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>Conditions requises pour AIR
 
@@ -91,14 +91,14 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows Server 2019
 - Windows Server 2022
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
-- Windows 10, version 1803 (os Build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
+- Windows 10, version 1803 (os build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
-- Windows 11
+- Windows 11
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
-- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurer des fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour endpoint](configure-automated-investigations-remediation.md)
 
 ## <a name="see-also"></a>Voir aussi

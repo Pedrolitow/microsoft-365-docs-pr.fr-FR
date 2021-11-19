@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1af399c8175a6e67bbf7e5e9e0a7f0900c4abd66
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0d0c372865f15c05e232f1af60a37d98cea582e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963166"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111746"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 
@@ -55,7 +55,7 @@ Le reste de cet article explique comment configurer ces stratégies.
 
 Pour vous donner le temps d’effectuer ces tâches, nous vous recommandons d’implémenter les stratégies de référence dans l’ordre répertorié dans ce tableau. Toutefois, les stratégies mfa pour les niveaux de protection sensibles et hautement réglementés peuvent être implémentées à tout moment.
 
-|Niveau de protection|Stratégies|Plus d'informations|Gestion des licences|
+|Niveau de protection|Stratégies|Plus d’informations|Licences|
 |---|---|---|---|
 |**Baseline**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-multi-factor)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les stratégies d’accès conditionnel, il est donc important de les bloquer.|Microsoft 365 E3 ou E5|
@@ -197,7 +197,7 @@ Dans la deuxième section **Affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Access|**Autoriser l’accès**||Sélectionner|
+|Accès|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
 |
 
@@ -223,7 +223,7 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et appareils, les [niveaux](microsoft-365-policies-configurations.md)de protection de référence et sensibles sont étroitement mapés avec les paramètres de protection des données améliorées d’entreprise de niveau 2. Le niveau de protection hautement réglementé est étroitement map avec les paramètres de protection des données élevées d’entreprise de niveau 3.
 
-|Niveau de protection|Stratégie de protection des applications|Plus d'informations|
+|Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
 |Baseline|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Sensible|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
@@ -311,7 +311,7 @@ Pour les appareils supervisés :
 
 En utilisant les principes décrits dans les configurations d’identité et d’accès aux appareils, les [niveaux](microsoft-365-policies-configurations.md)de protection de référence et sensibles sont étroitement mapés avec les paramètres de sécurité améliorés de niveau 2. Le niveau de protection hautement réglementé est étroitement map avec les paramètres de sécurité élevée de niveau 3.
 
-|Niveau de protection  |Stratégie d’appareil |Plus d'informations  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Baseline     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Sensible     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
@@ -343,7 +343,7 @@ Pour les appareils Android Entreprise entièrement gérés :
 
 Pour les appareils Enterprise profils de travail Android :
 
-|Niveau de protection  |Stratégie d’appareil |Plus d'informations  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Baseline     |Profil professionnel : sécurité renforcée (niveau 2)      |S/O         |
 |Sensible     |Profil professionnel : sécurité renforcée (niveau 2)         |S/O         |
@@ -385,8 +385,8 @@ Pour **la sécurité du** système, consultez ce tableau.
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Sécurité des appareils|Pare-feu|Require (Rendre obligatoire)|Sélectionner|
 ||Antivirus|Require (Rendre obligatoire)|Sélectionner|
-||Logiciel anti-espion|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution anti-espion inscrite auprès du Sécurité Windows.|
-|Defender|Logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)|Sélectionner|
+||Logiciel anti-espion|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution anti-espion inscrite auprès de l’Sécurité Windows app.|
+|Defender pour le cloud|Logiciel anti-programme malveillant Microsoft Defender|Require (Rendre obligatoire)|Sélectionner|
 ||Version minimale du logiciel anti-programme malveillant Microsoft Defender||Type <p> Uniquement pris en charge pour Windows 10 bureau. Microsoft recommande de ne pas avoir plus de cinq versions en retard par rapport à la version la plus récente.|
 ||Signature du logiciel anti-programme malveillant Microsoft Defender à jour|Require (Rendre obligatoire)|Sélectionner|
 ||Protection en temps réel|Require (Rendre obligatoire)|Sélectionner <p> Uniquement pris en charge pour Windows 10 bureau|

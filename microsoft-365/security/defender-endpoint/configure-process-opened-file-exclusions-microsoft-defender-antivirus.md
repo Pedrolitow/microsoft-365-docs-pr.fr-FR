@@ -15,17 +15,17 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 44107228cf0e05f43484bfb88a757335fe6c2b86
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d8a83811f29bef94a58047445c85265a0dd1ad9c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882728"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109718"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -80,7 +80,7 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
     2. Sous la section **Options,** cliquez sur **Afficher...**.
     3. Entrez chaque processus sur sa propre ligne sous la **colonne Nom de** la valeur. Consultez l’exemple de tableau pour les différents types d’exclusions de processus. Entrez **0 dans** la colonne **Valeur** pour tous les processus.
 
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser les cmdlets PowerShell pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
@@ -172,7 +172,7 @@ Utilisez l’cmdlet suivante :
 Get-MpPreference
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets Antivirus Microsoft Defender](/powershell/module/defender) et Antivirus Microsoft Defender pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Récupérer une liste d’exclusions spécifique à l’aide de PowerShell
 
@@ -183,7 +183,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets Antivirus Microsoft Defender](/powershell/module/defender) et Antivirus Microsoft Defender pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
 
 ## <a name="related-articles"></a>Articles connexes
 

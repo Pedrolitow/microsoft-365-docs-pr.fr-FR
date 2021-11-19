@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 5e9bb144330a00f5806f41ae986d7fe3f78d7165
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 5af87a3a2d8ca6d37816cbaf0fd35426c8e828a4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899593"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109958"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -100,7 +100,7 @@ Les services Microsoft 365 prennent automatiquement en charge les nouvelles mét
 
 - [Stratégies d’étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Stratégies de protection contre la perte de données qui utilisent des étiquettes de confidentialité en tant que conditions](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security configuré pour appliquer des étiquettes de niveau de confidentialité](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Defender for Cloud Apps configuré pour appliquer des étiquettes de confidentialité](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>Limites
 

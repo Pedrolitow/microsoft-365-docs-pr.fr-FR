@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785625"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110078"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -51,10 +51,10 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
-indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
+id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
+indicatorValue|String|Valeur de [l’indicateur](ti-indicator.md).
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
-application|String|Application associée à l’indicateur.
+application|Chaîne|Application associée à l’indicateur.
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
@@ -65,8 +65,8 @@ creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicat
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|Chaîne|Titre de l’indicateur.
-description|String|Description de l’indicateur.
+title|String|Titre de l’indicateur.
+description|Chaîne|Description de l’indicateur.
 recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
@@ -80,7 +80,7 @@ Les types d’action d’indicateur pris en charge par l’API sont :
 - Audit
 - Bloquer
 - BlockAndRemediate
-- Avertir (MCAS uniquement)
+- Avertir (Defender pour les applications cloud uniquement)
 
 Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
 

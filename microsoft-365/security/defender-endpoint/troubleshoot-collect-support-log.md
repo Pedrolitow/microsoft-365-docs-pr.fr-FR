@@ -1,5 +1,5 @@
 ---
-title: Collecter les journaux de support dans Microsoft Defender pour les points de terminaison à l’aide d’une réponse en direct
+title: Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 description: Découvrez comment collecter des journaux à l’aide d’une réponse en direct pour résoudre les problèmes de Microsoft Defender pour les points de terminaison
 keywords: support, journal, collecter, dépanner, réponse en direct, liveanalyzer, analyseur, en direct, réponse
 ms.prod: m365-security
@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: ad1a7b20aef4ae6073f589738fa0c591b0102463
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ae2a0b538fffc1644d3eb3e26c5b7cd4b512de1c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556015"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110702"
 ---
-# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour point de terminaison à l’aide d’une réponse en direct
+# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 
 Lorsque vous contactez le support technique, vous pouvez être invité à fournir le package de sortie de l’outil Microsoft Defender for Endpoint Client Analyzer.
@@ -49,7 +49,7 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 
 4. Sélectionnez **Choisir un fichier.**
 
-    ![Image de choisir le bouton1 du fichier.](images/choose-file.png)
+    ![Image du bouton de choix du fichier 1.](images/choose-file.png)
 
 5. Sélectionnez le fichier téléchargé nommé MDELiveAnalyzer.ps1 puis cliquez sur **Confirmer**
 
@@ -70,7 +70,7 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 >
 > - Le script LiveAnalyzer télécharge le package de dépannage sur l’ordinateur de destination à partir https://mdatpclientanalyzer.blob.core.windows.net de :
 >
->   Si vous ne pouvez pas autoriser l’ordinateur à atteindre l’URL ci-dessus, téléchargez MDEClientAnalyzerPreview.zip fichier vers la bibliothèque avant d’exécutez le script LiveAnalyzer :
+>   Si vous ne pouvez pas autoriser l’ordinateur à atteindre l’URL ci-dessus, téléchargez MDEClientAnalyzerPreview.zip fichier dans la bibliothèque avant d’exécutez le script LiveAnalyzer :
 >
 >   ```console
 >   PutFile MDEClientAnalyzerPreview.zip -overwrite
@@ -93,4 +93,3 @@ Cette rubrique fournit des instructions sur la façon d’exécuter l’outil vi
 - [Exécuter l’analyseur client sur macOS ou Linux](run-analyzer-macos-linux.md)
 - [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
 - [Comprendre le de rapport HTML de l’analyseur](analyzer-report.md)
-

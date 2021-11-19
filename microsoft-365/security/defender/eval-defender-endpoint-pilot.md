@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cd86f7c958e4e6912c18ddb3c345bfbcc6b6242e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75abd493e0ec2b80e4ff454ddec39f78169d01d9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149801"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110414"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 
@@ -34,14 +34,14 @@ Cet article vous guide dans le processus d’exécution d’un pilote pour Micro
 
 Utilisez les étapes suivantes pour configurer le pilote de Microsoft Defender pour Endpoint. 
 
-![Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - Étape 1. Vérifier le groupe pilote
 - Étape 2. Tester les fonctionnalités
 
 Lorsque vous pilotez Microsoft Defender pour endpoint, vous pouvez choisir d’intégrer quelques appareils au service avant d’intégrer l’ensemble de votre organisation.  
 
-Vous pouvez ensuite tester les fonctionnalités disponibles, telles que l’exécution de simulations d’attaques et l’analyse de la façon dont Defender pour le point de terminaison surface les activités malveillantes et vous permet d’effectuer une réponse efficace. 
+Vous pouvez ensuite essayer des fonctionnalités disponibles, telles que l’exécution de simulations d’attaques et l’analyse de la façon dont Defender pour le point de terminaison surface les activités malveillantes et vous permet d’effectuer une réponse efficace. 
 
 ## <a name="step-1-verify-pilot-group"></a>Étape 1. Vérifier le groupe pilote
 Après avoir effectué les étapes d’intégration décrites dans la [section](eval-defender-endpoint-enable-eval.md) Activer l’évaluation, vous devez voir les appareils dans la liste d’inventaire des appareils environ après une heure. 
@@ -59,10 +59,10 @@ Commençons par consulter les tableaux de bord.
 L’inventaire des appareils vous permet de voir la liste des points de terminaison, des périphériques réseau et des appareils IoT dans votre réseau. Non seulement elle vous fournit une vue des appareils de votre réseau, mais elle fournit également des informations détaillées sur ces appareils, telles que le domaine, le niveau de risque, la plateforme de système d’exploitation et d’autres détails pour faciliter l’identification des appareils les plus exposés.
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Afficher le tableau de bord Menaces gestion des vulnérabilités tableau de bord 
-Les menaces et gestion des vulnérabilités vous aident à vous concentrer sur les faiblesses qui posent le risque le plus urgent et le plus élevé pour l’organisation. À partir du tableau de bord, obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées. 
+Les menaces gestion des vulnérabilités vous aident à vous concentrer sur les faiblesses qui posent le risque le plus urgent et le plus élevé pour l’organisation. À partir du tableau de bord, obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées. 
 
 ### <a name="run-a-simulation"></a>Exécuter une simulation
-Microsoft Defender pour point de terminaison est livré avec des [scénarios](https://securitycenter.windows.com/tutorials) d’attaque « Faites-le vous-même » que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences en matière de système d’exploitation et d’application, ainsi que des instructions détaillées propres à un scénario d’attaque. Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
+Microsoft Defender pour point de terminaison est livré avec des [scénarios](https://securitycenter.windows.com/tutorials) d’attaque « Faites-le vous-même » que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences en matière de système d’exploitation et d’application, ainsi que des instructions détaillées propres à un scénario d’attaque. Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
 
 Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [un appareil intégré.](../defender-endpoint/onboard-configure.md)
 
@@ -83,8 +83,8 @@ Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [
 > [!NOTE]
 > Les fichiers ou les scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
 
-## <a name="next-steps"></a>Étapes suivantes
-[Évaluer Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+## <a name="next-steps"></a>Prochaines étapes
+[Évaluer Microsoft Defender pour les applications cloud](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour le point de terminaison](eval-defender-endpoint-overview.md)
 

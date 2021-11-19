@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: f6446fb61d0c38855a040da75a57ae85faafbb9f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962854"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110006"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -44,7 +44,7 @@ Vous pouvez également gérer ces fonctionnalités sur la page classification de
 - [Explorateur de contenu](data-classification-content-explorer.md)
 - [Explorateur d’activités](data-classification-activity-explorer.md)
 
-Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centre de sécurité Microsoft 365</a> > **Classification** > **Classification de données**.
+Vous trouverez la classification des données dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender</a> > **Classification** > **Classification des données**.
 
 Suivez une visite guidée par vidéo sur nos fonctionnalités de classification de données.
 

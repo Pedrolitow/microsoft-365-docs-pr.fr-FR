@@ -1,7 +1,7 @@
 ---
 title: Contrôle d’appareil pour macOS
 description: Découvrez comment configurer Microsoft Defender pour endpoint sur Mac afin de réduire les menaces liées au stockage amovible tel que les périphériques USB.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, appareil, contrôle, usb, amovible, média
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, appareil, contrôle, usb, amovible, média
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1be1598f1ff960a90e65de13ead5d1fd79b63173
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8992e6f5f4d4d37de06862675f999891fc4853c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150106"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111638"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "60150106"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Le contrôle d’appareil pour macOS présente les conditions préalables suivantes :
 
@@ -68,7 +68,7 @@ La stratégie de contrôle d’appareil peut être utilisée pour :
 - [Personnaliser la cible d’URL pour les notifications dues au contrôle d’appareil](#customize-url-target-for-notifications-raised-by-device-control)
 - [Autoriser ou bloquer les appareils amovibles](#allow-or-block-removable-devices)
 
-### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Personnaliser la cible d’URL pour les notifications dues au contrôle d’appareil
+### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Personnaliser la cible d’URL pour les notifications du contrôle d’appareil
 
 Lorsque la stratégie de contrôle d’appareil que vous avez mise en place est appliquée sur un appareil (par exemple, l’accès à un périphérique multimédia amovible est restreint), une notification s’affiche pour l’utilisateur.
 
@@ -90,7 +90,7 @@ Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s�
 
 ### <a name="allow-or-block-removable-devices"></a>Autoriser ou bloquer les appareils amovibles
 
-La section multimédia amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles.
+La section média amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles.
 
 > [!NOTE]
 > Les types de média amovible suivants sont actuellement pris en charge et peuvent être inclus dans la stratégie : les périphériques de stockage USB.
@@ -150,7 +150,7 @@ Sous la section Média amovible, il existe une option pour définir le niveau d�
 
 #### <a name="default-permission-level"></a>Niveau d’autorisation par défaut
 
-Au niveau supérieur de la section Média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
+Au niveau supérieur de la section média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
 
 Ce paramètre peut être définie sur :
 
@@ -183,7 +183,7 @@ Comme décrit dans [Autoriser](#allow-or-block-removable-devices)ou bloquer les 
 
 Au niveau supérieur de la stratégie de média amovible, vous pouvez éventuellement définir des restrictions plus précises au niveau du fournisseur.
 
-Le `vendors` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par l’ID du fournisseur.
+Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `vendors` identifiée par l’ID du fournisseur.
 
 <br>
 
@@ -207,10 +207,10 @@ Pour chaque fournisseur, vous pouvez spécifier le niveau d’autorisation souha
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|autorisation|
 |**Type de données**|Tableau de chaînes|
-|**Valeurs possibles**|Identique au [niveau d’autorisation Par défaut](#default-permission-level)|
+|**Valeurs possibles**|Identique au [niveau d’autorisation par défaut](#default-permission-level)|
 |
 
-En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus précises sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par `products` l’ID de produit.
+En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `products` identifiée par l’ID de produit.
 
 <br>
 
@@ -234,7 +234,7 @@ Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|autorisation|
 |**Type de données**|Tableau de chaînes|
-|**Valeurs possibles**|Identique au [niveau d’autorisation Par défaut](#default-permission-level)|
+|**Valeurs possibles**|Identique au [niveau d’autorisation par défaut](#default-permission-level)|
 |
 
 En outre, vous pouvez spécifier un ensemble facultatif de numéros de série pour lesquels des autorisations plus granulaires sont définies.
@@ -263,7 +263,7 @@ Pour chaque numéro de série, vous pouvez spécifier le niveau d’autorisation
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|autorisation|
 |**Type de données**|Tableau de chaînes|
-|**Valeurs possibles**|Identique au [niveau d’autorisation Par défaut](#default-permission-level)|
+|**Valeurs possibles**|Identique au [niveau d’autorisation par défaut](#default-permission-level)|
 |
 
 #### <a name="example-device-control-policy"></a>Exemple de stratégie de contrôle d’appareil
@@ -380,7 +380,7 @@ Après avoir lancé le profil de configuration via Intune ou JAMF, vous pouvez v
 mdatp device-control removable-media policy list
 ```
 
-Cette commande imprime en sortie standard la stratégie de contrôle d’appareil que le produit utilise. Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée sur votre appareil à partir de la console de gestion et (b) qu’il s’agit d’une stratégie de contrôle d’appareil valide, comme décrit dans ce `Policy is empty` document.
+Cette commande imprime en sortie standard la stratégie de contrôle d’appareil que le produit utilise. Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée vers votre appareil à partir de la console de gestion et (b) qu’il s’agit d’une stratégie de contrôle d’appareil valide, comme décrit dans ce `Policy is empty` document.
 
 Sur un appareil sur lequel la stratégie a été correctement livrée et où un ou plusieurs appareils sont branchés, vous pouvez exécuter la commande suivante pour lister tous les appareils et les autorisations effectives qui leur sont appliquées.
 
@@ -401,7 +401,7 @@ Exemple de sortie :
 
 Dans l’exemple ci-dessus, il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à `read` `execute` l’appareil.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
 - [Exemples de stratégies de contrôle d’appareil pour Intune](mac-device-control-intune.md)
 - [Exemples de stratégies de contrôle d’appareil pour JAMF](mac-device-control-jamf.md)

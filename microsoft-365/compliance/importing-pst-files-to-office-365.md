@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7424aeb482339da92c82afc3e50ac1f4471e741c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804928"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109754"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -238,10 +238,10 @@ Le coût d'utilisation de l'expédition du lecteur pour importer des fichiers PS
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>Quels types de disque dur est-il possible d’expédier ?
 
-Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 ou 3,5 pouces sont pris en charge par le service d’importation Office365. Vous pouvez utiliser des disques durs jusqu'à 365 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez connecter ce dernier directement au moyen d’un SSD 10 pouces ou d’un connecteur SATA II/III 2,5 ou 2,5 pouces, ou vous pouvez le connecter en externe au moyen d’un SSD externe de 3,5 pouces ou d’un adaptateur USB SATA II/III de 2,5 ou 2,5 pouces.
+Seuls les lecteurs SSD 2,5 pouces ou les disques durs internes 2,5 ou 3,5 pouces SATA II/III sont pris en charge par le Service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SSD de 2,5 pouces ou 2,5 pouces ou 3,5 pouces SATA II/III, ou vous pouvez l’attacher en externe à l’aide d’un SSD externe de 2,5 pouces ou d’un adaptateur USB SATA II/III de 2,5 pouces ou 3,5 pouces.
 
 > [!IMPORTANT]
-> Les disques durs externes qui sont fournis avec un adaptateur USB intégré ne sont pas pris en charge par le service Import Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer des disques durs externes.
+> Les disques durs externes fournis avec une carte USB intégrée ne sont pas pris en charge par le service d’importation Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Please don't ship external hard drives.
 
 #### <a name="how-many-hard-drives-can-i-ship-for-a-single-import-job"></a>How many hard drives can I ship for a single import job?
 

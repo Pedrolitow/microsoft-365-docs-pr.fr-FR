@@ -19,20 +19,20 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 06449ee6b2ce8df51d65dbf74e15ab583e42fc15
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0cd53d6d82a1052f91c7179f2c6f1dab33a8b125
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206024"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110510"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
-**Cet article est réservé aux administrateurs. Essayez-vous d’importer des fichiers PST dans votre propre boîte aux lettres ? Voir Importer le courrier électronique, les contacts et le calendrier à partir [Outlook fichier .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**Cet article est pour les administrateurs. Essayez-vous d’importer des fichiers PST dans votre propre boîte aux lettres ? Voir Importer le courrier électronique, les contacts et le calendrier à partir [Outlook fichier .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-Utilisez le service d Office 365 d’importation et d’expédition de disque pour importer en bloc des fichiers PST dans des boîtes aux lettres utilisateur. L’expédition de disque consiste à copier les fichiers PST sur un lecteur de disque dur et à expédier physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit votre disque dur, le personnel du centre de données copie les données du disque dur vers une zone de stockage dans le cloud Microsoft. Ensuite, vous avez la possibilité de découper les données PST importées dans les boîtes aux lettres cibles en définir des filtres qui contrôlent les données importées. Une fois la tâche d’importation commencée, le service d’importation importe les données PST de l’espace de stockage vers les boîtes aux lettres des utilisateurs. L’utilisation de l’expédition de disque pour importer des fichiers PST dans les boîtes aux lettres des utilisateurs est un moyen de migrer le courrier électronique de votre organisation vers Office 365.
+Utilisez le service d Office 365 d’importation et d’expédition de disque pour importer en bloc des fichiers PST dans des boîtes aux lettres utilisateur. L’expédition de disque consiste à copier les fichiers PST sur un lecteur de disque dur et à expédier physiquement le lecteur à Microsoft. Lorsque Microsoft reçoit votre disque dur, le personnel du centre de données copie les données du disque dur vers une zone de stockage dans le cloud Microsoft. Ensuite, vous avez la possibilité de découper les données PST importées dans les boîtes aux lettres cibles en définir des filtres qui contrôlent les données importées. Après avoir commencé la tâche d’importation, le service d’importation importe les données PST de l’espace de stockage vers les boîtes aux lettres des utilisateurs. L’utilisation de l’expédition de disque pour importer des fichiers PST dans les boîtes aux lettres des utilisateurs est un moyen de migrer le courrier électronique de votre organisation vers Office 365.
   
-Voici les étapes nécessaires à l’utilisation de l’expédition de disque pour importer des fichiers PST dans Microsoft 365 boîtes aux lettres :
+Voici les étapes à suivre pour utiliser l’expédition de disque pour importer des fichiers PST dans Microsoft 365 boîtes aux lettres :
   
 [Étape 1 : Télécharger l’outil d’importation PST](#step-1-download-the-pst-import-tool)
 
@@ -53,7 +53,7 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
   
 ## <a name="before-you-import-pst-files"></a>Avant d’importer des fichiers PST
 
-- Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué dans Exchange Online pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
+- Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué dans Exchange Online pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîtes aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
     
     En outre, pour créer des travaux d’importation dans le Centre de conformité Microsoft 365, l’une des conditions suivantes doit être remplie :
     
@@ -70,10 +70,10 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
 
 - Les fichiers PST volumineux peuvent avoir un impact sur les performances du processus d’importation PST. Nous vous recommandons donc que chaque fichier PST que vous copiez sur le disque dur à l’étape 2 ne doit pas être supérieur à 20 Go.
     
-- Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SSD 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces ou vous pouvez l’attacher en externe à l’aide d’un adaptateur USB EXTERNE DE 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces.
+- Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces, ou vous pouvez l’attacher en externe à l’aide d’un SSD externe de 2,5 pouces ou d’une carte USB SATA II/III de 2,5 pouces ou 3,5 pouces.
     
     > [!IMPORTANT]
-    > Les disques durs externes qui sont fournis avec un adaptateur USB intégré ne sont pas pris en charge par le service Import Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer des disques durs externes. 
+    > Les disques durs externes qui sont accompagnés d’une carte USB intégrée ne sont pas pris en charge par Office 365 service d’importation. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer de disques durs externes. 
   
 - Le disque dur sur lequel vous copiez les fichiers PST doit être chiffré avec BitLocker. L’outil WAImportExport.exe exécuté à l’étape 2 vous permet de configurer BitLocker. Il génère également une clé de chiffrement BitLocker que le personnel du centre de données Microsoft utilise pour accéder au lecteur afin de télécharger les fichiers PST dans la zone stockage Azure dans le cloud Microsoft.
     
@@ -100,7 +100,7 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
     > [!TIP]
     > Pour identifier la taille de réception des messages pour une boîte aux lettres, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :  `Get-Mailbox <user mailbox> | FL MaxReceiveSize` 
   
-- Vous pouvez importer des fichiers PST dans une boîte aux lettres inactive dans Office 365. Pour ce faire, vous devez spécifier le GUID de la boîte aux lettres inactive dans le paramètre `Mailbox` du fichier de mappage d’importation PST. Pour [plus d’informations,](#step-3-create-the-pst-import-mapping-file) voir Étape 3 : Créer le fichier de mappage d’importation PST. 
+- Vous pouvez importer des fichiers PST dans une boîte aux lettres inactive dans Office 365. Pour ce faire, vous devez spécifier le GUID de la boîte aux lettres inactive dans le paramètre `Mailbox` du fichier de mappage d’importation PST. Pour plus d’informations, voir Étape 3 : créer le fichier de [mappage d’importation PST.](#step-3-create-the-pst-import-mapping-file) 
     
 - Dans un déploiement hybride Exchange, vous pouvez importer des fichiers PST dans une boîte aux lettres d'archivage basé sur le cloud pour un utilisateur dont la boîte aux lettres principale est locale. Pour ce faire, procédez comme suit dans le fichier de mappage d’importation PST :
     
@@ -108,7 +108,7 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
     
   - Spécifiez la valeur **TRUE** dans le paramètre `IsArchive`. 
     
-    Pour [plus d’informations,](#step-3-create-the-pst-import-mapping-file) voir Étape 3 : Créer le fichier de mappage d’importation PST. 
+    Pour plus d’informations, voir Étape 3 : créer le fichier de [mappage d’importation PST.](#step-3-create-the-pst-import-mapping-file) 
 
 ## <a name="step-1-download-the-pst-import-tool"></a>Étape 1 : Télécharger l’outil d’importation PST
 
@@ -128,7 +128,7 @@ La première étape consiste à télécharger l’outil et à l’utiliser à l�
     
 4. Dans l’Assistant Importation, tapez un nom pour la tâche d’importation PST, puis cliquez sur **Suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
     
-5. Dans la page **Choisir le type de travail** d’importation, cliquez sur Expédier des **disques durs à** l’un de nos emplacements physiques, puis cliquez sur **Suivant.**
+5. Dans la page **Choisir le type de travail** d’importation, cliquez sur Expédier des **disques durs à** l’un de nos emplacements physiques, puis cliquez sur **Suivant**.
     
     ![Cliquez sur Expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’expédition de disque.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
@@ -231,12 +231,12 @@ Une fois que le personnel du centre de données Microsoft a chargé les fichiers
     
     |**Parameter**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Indique le service où les données seront importées. Pour importer des fichiers PST dans les boîtes aux lettres d’utilisateur, utilisez  `Exchange`.  <br/> | `Exchange` <br/> |
+    | `Workload` <br/> |Indique le service où les données seront importées. Pour importer des fichiers PST dans les boîtes aux lettres d’utilisateur, utilisez `Exchange`.  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> | Spécifie l’emplacement du dossier dans la stockage Azure où les fichiers PST seront copiés lors de l’expédition du disque dur à Microsoft.  <br/>  Ce que vous ajoutez dans cette colonne dans le fichier CSV dépend de ce que vous avez spécifié pour le paramètre à  `/dstdir:` l’étape précédente. Si vous avez des sous-dossiers sur l’emplacement source, la valeur dans le paramètre doit contenir le chemin d’accès relatif du sous-dossier , par `FilePath` exemple, /folder1/user1/.  <br/>  Si vous avez  `/dstdir:"ingestiondata/"` utilisé , laissez ce paramètre vide dans le fichier CSV.  <br/>  Si vous avez inclus un chemin d’accès facultatif pour la valeur du paramètre (par exemple, utilisez ce chemin d’accès (sans inclure « ingestiondata ») pour ce paramètre dans le fichier  `/dstdir:`  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` CSV. La valeur de ce paramètre est sensible à la casse.  <br/>  Dans tous les cas, n'incluez *pas* « ingestiondata » dans la valeur du paramètre `FilePath`. Laissez ce paramètre vide ou spécifiez uniquement le chemin d’accès facultatif.  <br/> > [!IMPORTANT]> le nom du chemin d’accès du fichier doit être identique à celui que vous avez spécifié dans le paramètre à  `/dstdir:` l’étape précédente. Par exemple, si vous avez utilisé le nom du sous-dossier à l’étape précédente, puis utilisé dans le paramètre dans le fichier CSV, l’importation du fichier  `"ingestiondata/FILESERVER01/PSTs"`  `fileserver01/psts`  `FilePath` PST échouera. Veillez à utiliser la même casse dans les deux instances.           |(Laisser vide)  <br/> Ou  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |Indique le nom du fichier PST qui sera importé dans la boîte aux lettres d’utilisateur. La valeur de ce paramètre est sensible à la casse.  <br/> > [!IMPORTANT]> Le nom du fichier PST dans le fichier CSV doit être identique au fichier PST qui a été téléchargé vers l’emplacement stockage Azure à l’étape 2. Par exemple, si vous utilisez  `annb.pst` dans le paramètre `Name` du fichier CSV, mais que le nom du fichier PST réel est  `AnnB.pst`, l’importation de ce fichier PST échouera. Assurez-vous que le nom du fichier PST dans le fichier CSV utilise la même casse que le fichier PST réel.           | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Indique l’adresse électronique de la boîte aux lettres dans laquelle le fichier PST est importé. Vous ne pouvez pas spécifier un dossier public, car le service d’importation PST ne prend pas en charge l’importation de fichiers PST dans les dossiers publics.  <br/> Pour importer un fichier PST dans une boîte aux lettres inactive, vous devez indiquer le GUID de la boîte aux lettres pour ce paramètre. Pour obtenir ce GUID, exécutez la commande PowerShell suivante dans Exchange Online :  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> parfois, vous pouvez avoir plusieurs boîtes aux lettres avec la même adresse de messagerie, où une boîte aux lettres est une boîte aux lettres active et l’autre boîte aux lettres est dans un état supprimé (ou inactif) à l’état supprimé (ou inactif). Dans ce cas, vous devez spécifier le GUID de boîte aux lettres pour identifier de façon unique la boîte aux lettres dans laquelle importer le fichier PST. Pour obtenir ce GUID des boîtes aux lettres actives, exécutez la commande PowerShell suivante :  `Get-Mailbox <identity of active mailbox> | FL Guid` Pour obtenir le GUID des boîtes aux lettres supprimées (ou inactives), exécutez la commande ci-après : `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Mailbox` <br/> |Indique l’adresse électronique de la boîte aux lettres dans laquelle le fichier PST est importé. Vous ne pouvez pas spécifier un dossier public, car le service d’importation PST ne prend pas en charge l’importation de fichiers PST dans les dossiers publics.  <br/> Pour importer un fichier PST dans une boîte aux lettres inactive, vous devez indiquer le GUID de la boîte aux lettres pour ce paramètre. Pour obtenir ce GUID, exécutez la commande PowerShell suivante dans Exchange Online :  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> parfois, vous pouvez avoir plusieurs boîtes aux lettres avec la même adresse de messagerie, où une boîte aux lettres est une boîte aux lettres active et l’autre est dans un état supprimé (ou inactif) à l’état supprimé (ou inactif). Dans ce cas, vous devez spécifier le GUID de boîte aux lettres pour identifier de façon unique la boîte aux lettres dans laquelle importer le fichier PST. Pour obtenir ce GUID des boîtes aux lettres actives, exécutez la commande PowerShell suivante :  `Get-Mailbox <identity of active mailbox> | FL Guid` Pour obtenir le GUID des boîtes aux lettres supprimées (ou inactives), exécutez la commande ci-après : `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Indique si vous importez le fichier PST dans la boîte aux lettres d’archivage de l’utilisateur. Il existe deux options :<br/> **FALSE** Importe le fichier PST dans la boîte aux lettres principale de l’utilisateur.  <br/> **TRUE** Importe le fichier PST dans la boîte aux lettres d’archivage de l’utilisateur. Cela implique l’[activation de la boîte aux lettres d’archivage de l’utilisateur](enable-archive-mailboxes.md). Si vous définissez ce paramètre sur `TRUE` et que la boîte aux lettres d’archivage de l’utilisateur n’est pas activée, l’importation échouera pour cet utilisateur. Si une importation échoue pour un utilisateur (car son archive n’est pas activée et que cette propriété est définie sur `TRUE`), les autres utilisateurs dans la tâche d’importation ne seront pas affectés.  <br/>  Si vous ne renseignez pas ce paramètre, le fichier PST est importé dans la boîte aux lettres principale de l’utilisateur.  <br/> **Remarque :** Pour importer un fichier PST dans une boîte aux lettres d’archivage dans le cloud pour un utilisateur dont la boîte aux lettres principale est accessible localement, indiquez `TRUE` pour ce paramètre et indiquez l’adresse de courrier de la boîte aux lettres locale de l’utilisateur pour le paramètre `Mailbox`.  <br/> | `FALSE` <br/> Ou  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Indique le dossier de la boîte aux lettres dans lequel le fichier PST est importé.  <br/>  Si vous laissez ce paramètre vide, le fichier PST est importé dans un nouveau dossier nommé **Importé** situé au niveau racine de la boîte aux lettres (au même niveau que le dossier Boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/>  Si vous spécifiez , les éléments du fichier PST sont importés directement dans le dossier Boîte de réception de  `/` l’utilisateur.  <br/>  Si vous spécifiez , les éléments du fichier PST seront  `/<foldername>` importés dans un dossier nommé  *\<foldername\>* . Par exemple, si vous utilisez  `/ImportedPst`, les éléments sont importés dans un dossier nommé **ImportedPst**. Ce dossier se trouve dans la boîte aux lettres de l’utilisateur au même niveau que le dossier boîte de réception.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | Indique le dossier de la boîte aux lettres dans lequel le fichier PST est importé.  <br/>  Si vous laissez ce paramètre vide, le fichier PST est importé dans un nouveau dossier nommé **Importé** situé au niveau racine de la boîte aux lettres (au même niveau que le dossier Boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/>  Si vous spécifiez , les éléments du fichier PST seront importés directement dans le dossier Boîte de réception de  `/` l’utilisateur.  <br/>  Si vous spécifiez , les éléments du fichier PST seront  `/<foldername>` importés dans un dossier nommé  *\<foldername\>* . Par exemple, si vous utilisez  `/ImportedPst`, les éléments sont importés dans un dossier nommé **ImportedPst**. Ce dossier se trouve dans la boîte aux lettres de l’utilisateur au même niveau que le dossier boîte de réception.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Ce paramètre facultatif indique une valeur numérique que la page de codes doit utiliser pour importer des fichiers PST au format de fichier ANSI. Ce paramètre permet d’importer des fichiers PST à partir d’organisations chinoises, japonaises et coréennes, car ces langues utilisent généralement un jeux de caractères à deux octets (DBCS) pour le codage de caractères. Si ce paramètre n’est pas utilisé pour importer des fichiers PST pour les langues qui utilisent des caractères DBCS pour les noms des dossiers de boîte aux lettres, les noms des dossiers sont souvent déformés une fois qu’ils sont importés.  <br/> Pour obtenir la liste des valeurs prises en charge à utiliser pour ce paramètre, consultez [Identificateurs de page de codes](/windows/win32/intl/code-page-identifiers).  <br/> > [!NOTE]> comme indiqué précédemment, il s’agit d’un paramètre facultatif et vous n’avez pas besoin de l’inclure dans le fichier CSV. Ou vous pouvez également l’inclure et conserver la valeur vide pour une ou plusieurs lignes.           |(Laisser vide)  <br/> Ou  <br/>  `932` (il s’agit de l’identificateur de page de codes pour le japonais ANSI/OEM)  <br/> |
     | `SPFileContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.  <br/> |Non applicable  <br/> |
     | `SPManifestContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.  <br/> |Non applicable  <br/> |
@@ -257,7 +257,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
   
 4. Entrez le nom de la tâche d’importation PST, puis cliquez sur **Suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
 
-5. Dans la page **Choisir le type de travail** d’importation, cliquez sur Expédier des **disques durs à** l’un de nos emplacements physiques, puis cliquez sur **Suivant.**
+5. Dans la page **Choisir le type de travail** d’importation, cliquez sur Expédier des **disques durs à** l’un de nos emplacements physiques, puis cliquez sur **Suivant**.
   
 6. À l’étape 6, cliquez sur j’ai préparé mes disques  durs et j’ai accès aux fichiers de journal de lecteur nécessaires et **j’ai** accès aux cases à cocher de fichier de mappage, puis cliquez sur **Suivant**.
 
@@ -303,7 +303,7 @@ L'étape suivante consiste à créer la tâche d'importation PST dans le service
 
     Lorsque la tâche d’importation est correctement créée, une page d’état s’affiche qui explique les étapes suivantes du processus d’expédition de disque.
 
-16. Sous **l’onglet Importer,** cliquez sur ![ Icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualisez** pour afficher la nouvelle tâche d’importation d’expédition de disque dans la liste des tâches d’importation. L’état est définie sur **En attente de numéro de suivi**. Vous pouvez également cliquer sur la tâche d’importation pour afficher la page de présentation de l’état, qui contient des informations plus détaillées sur la tâche d’importation.
+16. Sous **l’onglet Importer,** cliquez sur ![ Icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualisez** pour afficher la nouvelle tâche d’importation d’expédition de disque dans la liste des tâches d’importation. L’état est définie sur **En attente de numéro de suivi.** Vous pouvez également cliquer sur la tâche d’importation pour afficher la page de présentation de l’état, qui contient des informations plus détaillées sur la tâche d’importation.
 
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Étape 5 : Expédier le disque dur à Microsoft
 
@@ -316,7 +316,7 @@ L’étape suivante consiste à expédier le disque dur à Microsoft, puis à fo
 
 Gardez ces informations à l’esprit quand vous envoyez des disques durs à Microsoft :
   
-- N’expédiez pas l’adaptateur SATA-USB . vous devez uniquement expédier le disque dur.
+- N’expédiez pas l’adaptateur SATA-USB ; vous devez uniquement expédier le disque dur.
 
 - Emballez le disque dur correctement (par exemple, utilisez un sac anti-statique ou du papier bulle).
 
@@ -352,7 +352,7 @@ Une fois le disque dur envoyé à Microsoft, effectuez les étapes suivantes sur
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Étape 6 : Filtrer les données et démarrer la tâche d’importation PST
 
-Une fois votre disque dur reçu par Microsoft, l’état de la tâche d’importation sur la page Importer des fichiers **PST** passe à **Lecteurs reçus.** Le personnel du centre de données utilise les informations du fichier journal pour télécharger vos fichiers PST dans la stockage Azure de votre organisation. À ce stade, l’état est en **cours d’importation.** Comme indiqué précédemment, le chargement des fichiers PST prend entre 7 et 10 jours ou jours après la réception de votre disque dur.
+Une fois votre disque dur reçu par Microsoft, l’état de la tâche d’importation sur la page Importer des fichiers **PST** passe à **Lecteurs reçus.** Le personnel du centre de données utilise les informations du fichier journal pour télécharger vos fichiers PST dans la stockage Azure de votre organisation. À ce stade, l’état est en cours **d’importation.** Comme indiqué précédemment, le chargement des fichiers PST prend entre 7 et 10 jours ou jours après la réception de votre disque dur.
   
 Une fois les fichiers PST téléchargés vers Azure, l’état est modifié **en Analyse en cours.** Cela indique que Microsoft 365 analyse les données des fichiers PST (de manière sécurisée) pour identifier l’âge des éléments et les différents types de messages inclus dans les fichiers PST. Lorsque l’analyse est terminée et que les données sont prêtes à être importées, l’état de la tâche d’importation est modifié en **Analyse terminée.** À ce stade, vous avez la possibilité d’importer toutes les données contenues dans les fichiers PST ou vous pouvez découper les données importées en fixant des filtres qui contrôlent les données importées.
   
@@ -386,7 +386,7 @@ Une fois les fichiers PST téléchargés vers Azure, l’état est modifié **en
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>Afficher la liste des fichiers PST téléchargés vers Microsoft 365
 
-Vous pouvez installer et utiliser le Explorateur Stockage Microsoft Azure (qui est un outil open source gratuit) pour afficher la liste des fichiers PST que nous avons téléchargés (par le personnel du centre de données Microsoft) dans la zone stockage Azure de votre organisation. Vous pouvez le faire pour vérifier que les fichiers PST des disques durs que vous avez envoyés à Microsoft ont été chargés dans la stockage Azure de données.
+Vous pouvez installer et utiliser le Explorateur Stockage Microsoft Azure (qui est un outil open source gratuit) pour afficher la liste des fichiers PST que nous avons téléchargés (par le personnel du centre de données Microsoft) dans la zone stockage Azure de votre organisation. Vous pouvez le faire pour vérifier que les fichiers PST des disques durs que vous avez envoyés à Microsoft ont été chargés vers la stockage Azure de données.
   
 > [!IMPORTANT]
 > Vous ne pouvez pas utiliser l’Explorateur de stockage Azure pour charger ou modifier des fichiers PST. La seule méthode prise en charge pour importer des fichiers PST dans Microsoft 365 est d’utiliser AzCopy. Il est également impossible de supprimer les fichiers PST que vous avez chargés vers l’objet Blob Azure. Si vous essayez de supprimer un fichier PST, vous recevez une erreur de ne pas disposer des autorisations requises. Tous les fichiers PST sont automatiquement supprimés de votre stockage Azure de données. Si aucune tâche d’importation n’est en cours, tous les fichiers PST dans le conteneur ** ingestiondata ** sont supprimés 30 jours après la création de la tâche d’importation la plus récente.
@@ -403,7 +403,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
 
 4. Dans l’Assistant Importation, tapez un nom pour la tâche d’importation PST, puis cliquez sur **Suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
 
-5. Dans la page **Choisir le type de** travail d’importation, cliquez Télécharger **données,** puis cliquez sur **Suivant**.
+5. Dans la page **Choisir le type de travail** d’importation, cliquez Télécharger **données,** puis cliquez sur **Suivant**.
 
 6. À l’étape 2, cliquez sur **Afficher l’URL de la SAS de chargement réseau**.
 
@@ -422,7 +422,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
   
 11. Cliquez sur **Utiliser une URI de la signature d’accès partagé (SAS) ou une chaîne de connexion** puis cliquez sur **Suivant**.
 
-12. Cliquez **sur Utiliser un URI SAS,** collez l’URL SAS obtenue à l’étape 1 dans la zone sous **URI,** puis cliquez sur **Suivant**.
+12. Cliquez sur Utiliser **un URI SAS,** collez l’URL SAS obtenue à l’étape 1 dans la zone sous **URI,** puis cliquez sur **Suivant**.
 
 13. Sur la page **Résumé de connexion**, vous pouvez passer en revue les informations de connexion, puis cliquez sur **Se connecter**.
 
@@ -430,7 +430,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
 
     ![Explorateur Stockage Azure affiche la liste des fichiers PST que vous avez téléchargés.](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
-14. Lorsque vous avez fini d’utiliser l’Explorateur Stockage Microsoft Azure, cliquez avec le bouton droit sur **ingestiondata**, puis cliquez sur **Détacher** pour vous déconnecter de votre zone de stockage. Dans le cas contraire, vous recevrez un message d’erreur la prochaine fois que vous tenterez de joindre un élément. 
+14. Lorsque vous avez terminé d’utiliser l’Explorateur Stockage Azure, cliquez avec le bouton droit sur **ingestiondata**, puis sur **Détacher** pour vous déconnecter de votre espace de stockage Azure. Dans le cas contraire, vous recevrez une erreur la prochaine fois que vous tenterez de joindre un élément. 
 
     ![Cliquez avec le bouton droit sur ingestion et cliquez sur Détacher pour vous déconnecter de stockage Azure zone.](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
 

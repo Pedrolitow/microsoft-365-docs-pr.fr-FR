@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e79fbc82faada816d3499d6f05f285c544002b20
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553855"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111230"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -29,7 +29,7 @@ ms.locfileid: "60553855"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Microsoft Defender for Endpoint.
 
@@ -49,7 +49,7 @@ Assurez-vous `*.security.microsoft.com` qu’elle est incluse dans la liste d’
 
 ## <a name="microsoft-defender-for-endpoint-service-shows-event-or-error-logs-in-the-event-viewer"></a>Le service Microsoft Defender for Endpoint affiche les journaux des événements ou des erreurs dans l’Observateur d’événements
 
-Consultez [la liste](event-error-codes.md) des événements et des erreurs à l’aide de l’Observateur d’événements pour obtenir la liste des ID d’événement signalés par le service Microsoft Defender for Endpoint. L’article contient également les étapes de résolution des erreurs d’événement.
+Consultez [la liste des](event-error-codes.md) événements et des erreurs à l’aide de l’Observateur d’événements pour obtenir la liste des ID d’événement signalés par le service Microsoft Defender for Endpoint. L’article contient également les étapes de résolution des erreurs d’événement.
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Le service Microsoft Defender for Endpoint ne parvient pas à démarrer après un redémarrage et affiche l’erreur 577
 
@@ -70,12 +70,12 @@ Les formats de date suivants sont pris en charge :
 
 Les formats de date et d’heure suivants ne sont actuellement pas pris en charge :
 
-- Date au format aaa/MM/j/s
+- Date au format aaa/MM/j j/j/j j
 - Format de date j/MM/aa
-- Format de date avec yy. Affiche uniquement yyyy.
+- Format de date avec aa. Affiche uniquement yyyy.
 - Le format d’heure HH:mm:ss n’est pas pris en charge (le format 12 heures AM/PM n’est pas pris en charge). Seul le format 24 heures est pris en charge.
 
-### <a name="use-of-comma-to-indicate-thousand"></a>Utilisation de la virgule pour indiquer un millier
+### <a name="use-of-comma-to-indicate-thousand"></a>Utilisation de virgule pour indiquer un millier
 
 La prise en charge de l’utilisation de la virgule comme séparateur dans les nombres n’est pas prise en charge. Les régions où un nombre est séparé par une virgule pour indiquer un millier ne voient que l’utilisation d’un point comme séparateur. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.
 
@@ -83,9 +83,9 @@ La prise en charge de l’utilisation de la virgule comme séparateur dans les n
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Le client Microsoft Defender pour point de terminaison a été créé automatiquement en Europe
 
-Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Microsoft Defender pour Endpoint est automatiquement créé. Les données de Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
+Lorsque vous utilisez Microsoft Defender pour le Cloud pour surveiller les serveurs, un client Microsoft Defender pour endpoint est automatiquement créé. Les données de Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)
 - [Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements](event-error-codes.md)

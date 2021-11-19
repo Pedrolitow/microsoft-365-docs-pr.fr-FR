@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déployez Microsoft 365 fonctionnalités de sécurité et de conformité et protégez vos informations personnelles.
-ms.openlocfilehash: d605147b24c4f6ef3a12eedab2243bcaa4c6745b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 856df69d60df7ea255118bd559377e3d54267991
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785929"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110294"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -46,7 +46,7 @@ Voici une liste d’exemples de réglementations de confidentialité des donnée
 
 - R GDPR Article 5(1)(f))
 - Article R GDPR (32)(1)(a)
-- LGPD Article 46
+- LGPD, article 46
 - HIPAA-HITECH (45 CFR 164.312(e)(1))
 - HIPAA-HITECH (45 C.F.R. 164.312(e)(2)(ii))
 
@@ -66,20 +66,20 @@ Pour vous aider à démarrer avec un schéma de protection des informations dans
 
 Les [solutions de protection des informations](../compliance/information-protection.md) Microsoft incluent un certain nombre de fonctionnalités intégrées dans Microsoft 365, Microsoft Azure et Microsoft Windows. Dans Microsoft 365, les solutions de protection des informations sont les suivantes :
 
-- [Types d’informations sensibles](../compliance/sensitive-information-type-entity-definitions.md) (décrits dans l’article Évaluer les risques de confidentialité des données [et identifier les éléments sensibles)](information-protection-deploy-assess.md)
+- [Types d’informations sensibles](../compliance/sensitive-information-type-entity-definitions.md) (décrits dans l’article Évaluer les risques de confidentialité des [données et identifier les éléments sensibles)](information-protection-deploy-assess.md)
 - [Étiquettes de confidentialité](../compliance/sensitivity-labels.md)
   - Niveau service/conteneur
   - Côté client/niveau de contenu
   - Automatisé pour les données au repos dans SharePoint et OneDrive
 - Protection contre la perte de données (DLP)
-- [Microsoft 365 Protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-learn-about.md)
+- [Microsoft 365 protection contre la perte de données de point de terminaison](../compliance/endpoint-dlp-learn-about.md)
 - [chiffrement de messages Office 365 nouvelles fonctionnalités (OME)](../compliance/ome.md) et chiffrement [de messages](../compliance/ome-advanced-message-encryption.md) avancés OME
 
 En outre, la protection au niveau du site et de la bibliothèque est un mécanisme important à inclure dans n’importe quel schéma de protection.
 
 Pour plus d’informations sur les autres fonctionnalités de protection des informations en dehors Microsoft 365, voir :
 
-- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Protection des informations Windows](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
@@ -97,10 +97,10 @@ Effectuer ces activités avant d’implémenter l’une des fonctionnalités bas
 
 1. Comprenez les choses suivantes :
    - **Besoins de l'entreprise** Établissez les raisons professionnelles de l’application d’étiquettes de niveau de sensibilité dans votre entreprise. Par exemple, vos exigences de confidentialité des données pour la protection des informations.
-   - **Fonctionnalités des étiquettes de sensibilité.** L’étiquetage de la sensibilité peut devenir complexe. Veillez donc à lire la [documentation](../compliance/sensitivity-labels.md) sur les étiquettes de sensibilité avant de commencer.
+   - **Fonctionnalités des étiquettes de sensibilité.** L’étiquetage de la sensibilité peut devenir complexe. Veillez donc à lire la [documentation](../compliance/sensitivity-labels.md) des étiquettes de sensibilité avant de commencer.
    - **Éléments clés à retenir** Les étiquettes de sensibilité sont gérées dans le Centre d’administration de conformité Microsoft, mais les options de ciblage et d’application varient considérablement.
-      - Il existe des étiquettes de niveau de sensibilité pour les sites, les groupes et les Teams au niveau du conteneur (les paramètres ne s’appliquent pas au contenu à l’intérieur du conteneur). Ceux-ci sont publiés pour les utilisateurs et les groupes qui les appliquent lorsqu’un site, un groupe ou une équipe est en service.
-      - Il existe des étiquettes de niveau de sensibilité pour le contenu actif. Ils sont également publiés pour des utilisateurs ou des groupes, qui les appliquent manuellement ou sont automatiquement appliqués dans les cas ci-après :
+      - Il existe des étiquettes de niveau de sensibilité pour les sites, les groupes et les Teams au niveau du conteneur (les paramètres ne s’appliquent pas au contenu à l’intérieur du conteneur). Ceux-ci sont publiés pour les utilisateurs et les groupes qui les appliquent lorsqu’un site, un groupe ou une équipe est provisioné.
+      - Il existe des étiquettes de niveau de sensibilité pour le contenu actif. Ils sont également publiés pour des utilisateurs ou des groupes, qui les appliquent manuellement ou sont appliqués automatiquement dans les cas ci-après :
         - Le fichier est ouvert/modifié/enregistré, soit sur le bureau de l’utilisateur, soit sur SharePoint site.
         - Un e-mail est rédigé et envoyé.
       - Il existe des étiquettes de niveau de sensibilité pour l’application automatique aux fichiers au repos dans SharePoint et OneDrive en plus des e-mails en transit via Exchange. Elles sont ciblées sur tous les sites ou sur des sites spécifiques et s’appliquent automatiquement aux fichiers au repos dans ces environnements.
@@ -114,9 +114,9 @@ Effectuer ces activités avant d’implémenter l’une des fonctionnalités bas
 
       Si vous envisagez d’utiliser l’étiquetage de niveau de sensibilité moderne pour la protection du courrier électronique et que des méthodes de chiffrement de courrier électronique existantes telles que OME sont en place, elles peuvent co-exister, mais vous devez comprendre les scénarios dans lesquels l’une ou l’autre doit être appliquée. Voir chiffrement de messages Office 365 nouvelles fonctionnalités [(OME),](#office-365-message-encryption-ome-new-capabilities)qui inclut un tableau comparant la protection moderne du type d’étiquette de sensibilité à la protection basée sur OME.
 
-3. Planifier l’intégration dans un schéma de protection des informations plus large. En plus de la coexistence avec OME, les étiquettes de sensibilité peuvent être utilisées avec des fonctionnalités parallèles telles que la protection contre la perte de données Microsoft 365 (DLP) et Microsoft Cloud App Security. Consultez [Protection des données Microsoft la Microsoft 365](../compliance/information-protection.md) pour atteindre vos objectifs de protection des informations liées à la confidentialité des données.
+3. Planifier l’intégration dans un schéma de protection des informations plus large. En plus de la coexistence avec OME, les étiquettes de sensibilité peuvent être utilisées avec des fonctionnalités parallèles telles que la protection contre la perte de données Microsoft 365 (DLP) et Microsoft Defender pour les applications cloud. Consultez [Protection des données Microsoft la Microsoft 365](../compliance/information-protection.md) pour atteindre vos objectifs de protection des informations liées à la confidentialité des données.
 
-4. Développer une classification et un modèle de contrôle des étiquettes de sensibilité. Voir [Classification des données et taxonomie des étiquettes de sensibilité.](https://aka.ms/dataclassificationwhitepaper)
+4. Développer une classification et un schéma de contrôle des étiquettes de niveau de sensibilité. Voir [Classification des données et taxonomie des étiquettes de sensibilité.](https://aka.ms/dataclassificationwhitepaper)
 
 ### <a name="general-guidance"></a>Directives générales
 
@@ -129,12 +129,12 @@ Effectuer ces activités avant d’implémenter l’une des fonctionnalités bas
    - **Utilisez des scénarios et des cas d’utilisation.** Identifiez les cas d’utilisation courants au sein de votre organisation et utilisez des scénarios dérivés des réglementations en matière de confidentialité des données à laquelle vous êtes soumis. Vérifiez si la configuration d’étiquette et de classification envisagée fonctionne dans la pratique.
    - **Interrogez chaque demande pour une nouvelle étiquette.** Chaque scénario ou cas d’utilisation a-t-il vraiment besoin d’une nouvelle étiquette ou pouvez-vous utiliser ce que vous avez déjà ? Le fait de conserver un nombre minimal d’étiquettes améliore l’adoption.
    - **Utilisez des sous-étiquettes pour les services clés.** Certains services auront des besoins spécifiques qui nécessitent des étiquettes spécifiques. Définissez ces étiquettes en tant que sous-étiquettes d’une étiquette existante et envisagez d’utiliser des stratégies limitées qui sont affectées à des groupes d’utilisateurs plutôt que globalement.
-   - **Envisagez des stratégies limitées.** Les stratégies ciblées sur les sous-ensembles d’utilisateurs empêcheront la surcharge des étiquettes. Une stratégie étendue permet d’attribuer des étiquettes ou des sous-étiquettes spécifiques à un rôle ou à un service uniquement aux employés qui travaillent pour ce service spécifique.
+   - **Envisagez des stratégies limitées.** Les stratégies ciblées sur les sous-ensembles d’utilisateurs empêcheront la surcharge des étiquettes. Une stratégie étendue permet d’attribuer des étiquettes de rôle ou de service spécifiques ou des sous-étiquettes uniquement aux employés qui travaillent pour ce service spécifique.
    - **Utilisez des noms d’étiquette significatifs.** Essayez de ne pas utiliser de jargon, de normes ou d’acronymes comme noms d’étiquettes. Essayez d’utiliser des noms qui trouvent une écho auprès de l’utilisateur final pour améliorer l’adoption. Au lieu d’utiliser des étiquettes telles que PII, PCI, HIPAA, LBI, MBI et HBI, prenons des noms comme Non-Business, Public, General, Confidential et Highly Confidential.
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Créer et déployer des étiquettes de niveau de sensibilité pour des sites, des groupes et des équipes
 
-Lorsque vous créez [des étiquettes](../compliance/sensitivity-labels-teams-groups-sites.md) de niveau de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>vous pouvez désormais les appliquer à ces conteneurs :
+Lorsque vous créez [des étiquettes de](../compliance/sensitivity-labels-teams-groups-sites.md) niveau de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>vous pouvez désormais les appliquer à ces conteneurs :
 
 - Microsoft Teams sites
 - Microsoft 365 groupes de sécurité (anciennement Office 365 groupes)
@@ -142,7 +142,7 @@ Lorsque vous créez [des étiquettes](../compliance/sensitivity-labels-teams-gro
 
 Utilisez les paramètres d’étiquette suivants pour renforcer la protection du contenu de ces conteneurs :
 
-- Confidentialité (publique ou privée) des sites Microsoft 365 connectés à un groupe Teams sites
+- Confidentialité (publique ou privée) des sites Microsoft 365 connectés Teams groupe
 - Accès des utilisateurs externes
 - Accès à partir d’appareils enregistrés
 
@@ -150,7 +150,7 @@ Pour la confidentialité des données, pour empêcher le partage externe pour le
 
 ### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Créer et déployer des étiquettes de niveau de sensibilité pour le contenu
 
-Les étiquettes de niveau de sensibilité appliquées aux fichiers vous permettent de chiffrer leur contenu, de filigraner le contenu et de définir d’autres contrôles pour le contenu des applications Office, notamment Outlook et Office sur le Web.
+Les étiquettes de niveau de sensibilité appliquées aux fichiers vous permettent de chiffrer leur contenu, de le filigraner et de définir d’autres contrôles pour le contenu des applications Office, notamment les Outlook et Office sur le Web.
 
 Lorsque vous êtes prêt à commencer à protéger les données de votre organisation avec des étiquettes de sensibilité :
 
@@ -158,18 +158,18 @@ Lorsque vous êtes prêt à commencer à protéger les données de votre organis
 2. **Définissez l’incidence possible de chaque étiquette.** Configurez les paramètres de protection que vous voulez associer à chaque étiquette. Par exemple, vous souhaitez peut-être qu’un simple en-tête ou pied de page soit appliqué au contenu de niveau de confidentialité inférieur (par exemple, une étiquette « Général », par exemple), tandis que le contenu de niveau de confidentialité plus élevé (tel qu’une étiquette « Confidentiel » ) doit avoir un filigrane et activer le chiffrement.
 3. **Publiez les étiquettes.** Après avoir configuré vos étiquettes de confidentialité, publiez-les à l’aide d’une stratégie d’étiquette. Déterminez les utilisateurs et les groupes devant utiliser les étiquettes ainsi que les paramètres de stratégie à utiliser. Une seule étiquette est réutilisable. Vous la définissez une seule fois, puis vous pouvez l’inclure dans plusieurs stratégies d’étiquette attribuées à différents utilisateurs.
 
-Une fois que vous publiez des étiquettes de niveau de sensibilité à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>elles commencent à apparaître dans les applications [Office](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classifient et protègent le contenu tel qu’il est créé ou modifié.
+Une fois que vous avez publié des étiquettes de niveau de sensibilité à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>elles commencent à apparaître dans les applications [Office](../compliance/sensitivity-labels-office-apps.md) pour que les utilisateurs classifient et protègent le contenu tel qu’il est créé ou modifié.
 
 ![Flux de déploiement des étiquettes de niveau de Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 Pour la confidentialité des données, vous appliquez manuellement une étiquette de confidentialité avec chiffrement et d’autres règles au courrier électronique ou au contenu contenant des informations personnelles sensibles.
 
 > [!NOTE]
-> Les étiquettes de niveau de sensibilité avec chiffrement activé pour la messagerie électronique ont des fonctionnalités qui se chevauchent avec OME. Voir comparaison des scénarios de messagerie sécurisée avec [OME et les étiquettes de sensibilité.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
+> Les étiquettes de niveau de sensibilité avec chiffrement activé pour le courrier électronique ont certaines fonctionnalités qui se chevauchent avec OME. Voir comparaison des scénarios de messagerie sécurisée avec [OME et les étiquettes de sensibilité.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
 
 ### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Étiquetage automatique côté client lorsque les utilisateurs modifient des documents ou rédigent des messages électroniques
 
-Lorsque vous créez une étiquette [](../compliance/apply-sensitivity-label-automatically.md) de sensibilité, vous pouvez affecter automatiquement cette étiquette au contenu, y compris aux e-mails, lorsqu’elle correspond aux conditions que vous spécifiez.
+Lorsque vous créez une étiquette [](../compliance/apply-sensitivity-label-automatically.md) de sensibilité, vous pouvez affecter automatiquement cette étiquette au contenu, y compris aux messages électroniques, lorsqu’elle correspond aux conditions que vous spécifiez.
 
 La possibilité d’appliquer automatiquement des étiquettes à du contenu est importante pour les raisons suivantes :
 
@@ -212,7 +212,7 @@ Avec une stratégie DLP dans le <a href="https://go.microsoft.com/fwlink/p/?link
 
 Par exemple, vous pouvez identifier n’importe quel document contenant un numéro de carte de crédit stocké sur n’importe quel site OneDrive ou surveiller uniquement les sites OneDrive de personnes spécifiques.
 
-Vous pouvez également surveiller et protéger les éléments sensibles dans les versions installées localement de Excel, PowerPoint et Word, qui incluent la possibilité d’identifier les éléments sensibles et d’appliquer des stratégies DLP. La DLP assure une surveillance continue lorsque des personnes partagent du contenu à partir de Office applications.
+Vous pouvez également surveiller et protéger les éléments sensibles dans les versions installées localement de Excel, PowerPoint et Word, qui incluent la possibilité d’identifier les éléments sensibles et d’appliquer des stratégies DLP. La DLP assure une surveillance continue lorsque les utilisateurs partagent du contenu à partir de Office applications.
 
 > [!div class="mx-imgBorder"]
 > ![Charges de travail prise en charge pour la DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
@@ -230,17 +230,17 @@ Planifiez vos stratégies DLP pour :
 
 - Besoins de votre entreprise.
 
-- Une évaluation basée sur les risques de l’organisation, comme décrit dans l’article sur l’évaluation des risques de confidentialité des données et [l’identification des éléments sensibles.](information-protection-deploy-assess.md)
+- Une évaluation basée sur les risques de l’organisation, comme décrit dans l’article d’évaluation des risques de confidentialité des données [et d’identification des éléments sensibles.](information-protection-deploy-assess.md)
 
-- Autres mécanismes de protection et de gouvernance des informations en place ou dans la planification de la confidentialité des données.
+- Autres mécanismes de protection et de gouvernance des informations en place ou dans le cadre de la planification de la confidentialité des données.
 
 - Les types d’informations sensibles que vous avez identifiés pour les données personnelles en fonction de votre travail d’évaluation, comme décrit dans l’article d’évaluation des risques de confidentialité des données et d’identification des [éléments sensibles.](information-protection-deploy-assess.md) Les conditions de stratégie DLP peuvent être basées sur des types d’informations sensibles et des étiquettes de rétention.
 
-- Étiquettes de rétention dont vous aurez besoin pour spécifier les conditions DLP. Pour plus [d’informations,](information-protection-deploy-govern.md) voir les informations de gouvernance soumises à la réglementation sur la confidentialité des données dans votre organisation.
+- Les étiquettes de rétention dont vous aurez besoin pour spécifier les conditions DLP. Pour plus [d’informations,](information-protection-deploy-govern.md) voir les informations de gouvernance soumises à la réglementation sur la confidentialité des données dans votre organisation.
 
 - Gestion continue des stratégies DLP, qui exige que quelqu’un de l’organisation fonctionne et régler les stratégies pour les modifications apportées aux types d’informations sensibles, aux étiquettes de rétention, aux réglementations et aux stratégies de conformité.
 
-Bien que les étiquettes de confidentialité ne peuvent pas être utilisées dans les conditions de stratégie DLP, certains scénarios de protection pour empêcher l’accès peuvent être réalisables uniquement avec des étiquettes de confidentialité qui peuvent être appliquées automatiquement en fonction des types d’informations sensibles. Si un étiquetage de niveau de sensibilité robuste est en place, envisagez d’utiliser la protection contre la protection des données pour les raisons qui s’offrent à vous :
+Bien que les étiquettes de confidentialité ne peuvent pas être utilisées dans les conditions de stratégie DLP, certains scénarios de protection pour empêcher l’accès peuvent être réalisables uniquement avec des étiquettes de confidentialité qui peuvent être appliquées automatiquement en fonction des types d’informations sensibles. Si un étiquetage de niveau de sensibilité robuste est en place, envisagez si la protection contre la protection contre lalp doit être utilisée pour renforcer la protection, car :
 
   - DLP peut empêcher le partage de fichiers. Les étiquettes de sensibilité peuvent simplement empêcher l’accès.
 
@@ -271,15 +271,15 @@ Le tableau suivant répertorie trois configurations d’augmentation de la prote
 La première configuration, Sensibilisation, peut être utilisée comme point de départ et niveau de protection minimal pour répondre aux besoins de conformité des réglementations en matière de confidentialité des données.
 
 > [!NOTE]
-> À mesure que les niveaux de protection augmentent, la capacité des utilisateurs à partager et à accéder aux informations diminue dans certains cas et peut avoir un impact sur leur productivité ou leur capacité à effectuer des tâches quotidiennes.
+> À mesure que les niveaux de protection augmentent, la capacité des utilisateurs à partager des informations et à y accéder diminue dans certains cas et peut avoir un impact sur leur productivité ou leur capacité à effectuer des tâches quotidiennes.
 
 Pour aider vos employés à continuer à être productifs dans un environnement plus sécurisé lors de l’augmentation des niveaux de protection, prenez le temps de les former et de les former aux nouvelles stratégies et procédures de sécurité.
 
 ### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Exemple d’utilisation d’étiquettes de sensibilité avec DLP
 
-Les étiquettes de confidentialité peuvent fonctionner avec DLP pour assurer la confidentialité des données dans un environnement hautement réglementé. Voici les principales étapes du déploiement intégré :
+Les étiquettes de confidentialité peuvent fonctionner avec DLP pour assurer la confidentialité des données dans un environnement hautement réglementé. Voici les étapes clés du déploiement intégré :
 
-1. Les exigences réglementaires et autres exigences commerciales en matière de confidentialité des données sont documentées.
+1. Les exigences réglementaires et autres exigences commerciales relatives à la confidentialité des données sont documentées.
 2. Les sources de données cibles, les types et la propriété sont caractérisés par des problèmes de confidentialité des données.
 3. Une stratégie globale visant à répondre aux exigences et à protéger et à régir les points d’accès à la confidentialité des données est établie.
 4. Un plan d’action par phases pour répondre à la stratégie de contrôle de la confidentialité des données est mis en place.
@@ -291,7 +291,7 @@ Une fois ces éléments déterminés, vous pouvez utiliser les types d’informa
 
 [Voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-Voici quelques scénarios de protection des données qui utilisent ensemble des étiquettes de sensibilité et DLP, comme illustré dans la figure.
+Voici quelques scénarios de protection des données utilisant ensemble des étiquettes de protection contre la protection des données et des étiquettes de sensibilité, comme illustré dans la figure.
 
 | Scénario | Processus |
 |:-------|:-----|
@@ -311,7 +311,7 @@ Pour la confidentialité des données, vous utilisez OME pour protéger les mess
 
 Vous pouvez également définir des règles de flux de messagerie pour appliquer cette protection. Par exemple, vous pouvez créer une règle qui requiert le chiffrement de tous les messages adressés à un destinataire spécifique, ou qui contient des mots clés spécifiques dans la ligne d’objet, et spécifier que les destinataires ne peuvent pas copier ou imprimer le contenu du message.
 
-En outre, le chiffrement de messages avancé [OME](../compliance/ome-advanced-message-encryption.md) vous aide à respecter les obligations de conformité qui nécessitent des contrôles plus flexibles sur les destinataires externes et leur accès aux e-mails chiffrés. Avec le chiffrement de messages avancé OME dans Microsoft 365, vous pouvez contrôler les e-mails sensibles partagés en dehors de l’organisation avec des stratégies automatiques qui détectent les types d’informations sensibles.
+En outre, le chiffrement de messages avancé [OME](../compliance/ome-advanced-message-encryption.md) vous aide à respecter les obligations de conformité qui nécessitent des contrôles plus flexibles sur les destinataires externes et leur accès aux messages électroniques chiffrés. Avec le chiffrement de messages avancé OME Microsoft 365, vous pouvez contrôler les e-mails sensibles partagés à l’extérieur de l’organisation avec des stratégies automatiques qui détectent les types d’informations sensibles.
 
 Pour la confidentialité des données, si vous devez partager des messages électroniques avec une partie externe, vous pouvez spécifier une date d’expiration et révoquer des messages. Vous pouvez uniquement révoquer et définir une date d’expiration pour les messages envoyés à des destinataires externes.
 
@@ -319,13 +319,13 @@ Pour la confidentialité des données, si vous devez partager des messages élec
 
 Les étiquettes OME et de niveau de sensibilité appliquées aux e-mails avec chiffrement se chevauchent, il est donc important de comprendre les scénarios qui peuvent s’appliquer à l’un ou l’autre, comme indiqué dans ce tableau.
 
-| Scénario | Étiquettes de niveau de sensibilité | OME |
+| Scénario | Étiquettes de sensibilité | OME |
 |:-------|:-----|:-------|
 | Interne + partenaires <br> Communiquer et collaborer en toute sécurité entre les utilisateurs internes et les partenaires de confiance | Recommandation : étiquettes avec une classification et une protection entièrement personnalisées | Oui : chiffrer uniquement ou ne pas forwarder la protection sans classification |
-| Parties externes <br> Communiquer et collaborer en toute sécurité avec tous les utilisateurs externes/consommateurs | Oui : destinataires prédefine dans l’étiquette | Recommandation : protection juste-à-temps basée sur les destinataires |
-| Internes + partenaires, avec expiration/révocation <br> Contrôler l’accès au courrier et au contenu avec des utilisateurs internes et des partenaires de confiance avec expiration et révocation | Recommandation : protection entièrement personnalisée avec durée d’accès, l’utilisateur peut suivre et révoquer manuellement les fichiers | Non – pas de révocation ou d’expiration pour le courrier interne |
+| Parties externes <br> Communiquer et collaborer en toute sécurité avec tous les utilisateurs externes/consommateurs | Oui – destinataires pré-parés dans l’étiquette | Recommandation : protection juste-à-temps basée sur les destinataires |
+| Interne + partenaires, avec expiration/révocation <br> Contrôler l’accès au courrier et au contenu avec des utilisateurs internes et des partenaires de confiance avec expiration et révocation | Recommandation : protection entièrement personnalisée avec durée d’accès, l’utilisateur peut suivre et révoquer manuellement les fichiers | Non – pas de révocation ou d’expiration pour le courrier interne |
 | Parties externes avec expiration/révocation <br> Contrôler l’accès au courrier et au contenu avec des utilisateurs externes/consommateurs avec expiration et révocation | Oui : l’utilisateur peut suivre manuellement les fichiers | Recommandation (E5) : l’administrateur peut révoquer le courrier du Centre de sécurité & conformité |
-| Etiquetage automatique <br> L’organisation souhaite protéger automatiquement les messages/pièces jointes avec du contenu sensible spécifique et/ou des destinataires spécifiques | Recommandé (E5) : l’étiquetage automatique dans Exchange clients Outlook, augmente les règles de flux de messagerie et la stratégie DLP | Oui : règles de flux de messagerie et stratégie DLP avec la protection Chiffrer uniquement ou Ne pas forwardr |
+| Etiquetage automatique <br> L’organisation souhaite protéger automatiquement les messages/pièces jointes avec un contenu sensible spécifique et/ou des destinataires spécifiques | Recommandé (E5) : l’étiquetage automatique dans Exchange clients Outlook, augmente les règles de flux de messagerie et la stratégie DLP | Oui : règles de flux de messagerie et stratégie DLP avec la protection Chiffrer uniquement ou Ne pas forwardr |
 ||||
 
 Il existe également des différences entre ces deux méthodes dans les expériences utilisateur final et administrateur.

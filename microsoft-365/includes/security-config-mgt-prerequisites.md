@@ -1,17 +1,17 @@
 ---
-title: inclure un fichier
-description: inclure un fichier
+title: fichier descriptif
+description: inclure le fichier
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e8d19f8ab5423ccc0441d29efab2ecdb3eb27a04
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677068"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61112084"
 ---
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 Examinez les sections suivantes pour obtenir les conditions requises pour la gestion de la sécurité de Microsoft Defender pour le scénario de point de terminaison :
 
@@ -47,7 +47,7 @@ Les appareils doivent avoir accès aux points de terminaison suivants :
 Les stratégies de microsoft Defender pour la gestion de la sécurité des points de terminaison sont pris en charge pour les plateformes d’appareils suivantes :
 
 - Windows 10 Professional/Enterprise (avec [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
-- Windows Server 2012 R2 avec [Microsoft Defender pour Down-Level appareils mobiles](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
+- Windows Server 2012 R2 avec [Microsoft Defender pour Down-Level périphériques mobiles](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 avec [Microsoft Defender pour Down-Level appareils mobiles](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 (avec [KB5006744)](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0)
 - Windows Server 2022
@@ -57,7 +57,7 @@ Les stratégies de microsoft Defender pour la gestion de la sécurité des point
 
 Pour utiliser la gestion de la sécurité pour Microsoft Defender pour le point de terminaison, vous devez :
 
-- Un abonnement qui accorde des licences pour Microsoft Defender pour le point de terminaison, comme Microsoft 365, ou une licence autonome uniquement pour Microsoft Defender pour endpoint. Pour plus d’informations sur les options, voir [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements).
+- Un abonnement qui accorde des licences pour Microsoft Defender pour le point de terminaison, comme Microsoft 365, ou une licence autonome uniquement pour Microsoft Defender pour le point de terminaison. Pour plus d’informations sur les options, voir [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
   *Tout abonnement* qui accorde des licences Microsoft Defender pour les points de terminaison accorde également à votre client l’accès au nœud de sécurité endpoint du centre d Microsoft Endpoint Manager’administration. Le nœud de sécurité du point de terminaison est l’endroit où vous allez configurer et déployer des stratégies pour gérer Microsoft Defender pour le point de terminaison pour vos appareils et surveiller l’état de l’appareil.
 
@@ -84,11 +84,11 @@ Pour prendre en charge microsoft Defender pour la gestion de la configuration de
 
 1. Connectez-vous [Microsoft 365 Defender portail,](https://security.microsoft.com/) puis Paramètres l’étendue d’application de la gestion de la configuration des points de terminaison et activez les plateformes pour la gestion des  >    >    >   paramètres de sécurité :
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Activez Microsoft Defender pour la gestion des paramètres de point de terminaison dans la console Defender.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Activez Microsoft Defender pour la gestion des paramètres de point de terminaison dans Microsoft 365 Defender portail.":::
 
-2. Assurez-vous que les utilisateurs concernés sont autorisés à gérer les paramètres de sécurité des points de terminaison dans Microsoft Endpoint Manager ou à accorder ces autorisations en configurant un rôle dans le portail Defender. Go to **Paramètres**  >  **Roles**  >  **Add item:**
+2. Assurez-vous que les utilisateurs concernés sont autorisés à gérer les paramètres de sécurité des points de terminaison dans Microsoft Endpoint Manager ou à accorder ces autorisations en configurant un rôle dans le portail Microsoft 365 Defender. Go to **Paramètres**  >  **Roles**  >  **Add item:**
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Créez un rôle dans le portail Defender.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Créez un rôle dans le portail Microsoft 365 Defender web.":::
 
    > [!TIP]
    > Vous pouvez modifier les rôles existants et ajouter les autorisations nécessaires par rapport à la création de rôles supplémentaires dans Microsoft Defender for Endpoint
@@ -99,7 +99,7 @@ Pour prendre en charge microsoft Defender pour la gestion de la configuration de
 
 4. Connectez-vous au [Centre d’administration du Gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-5. Sélectionnez Sécurité du **point** de terminaison Microsoft Defender pour le point de terminaison et définissez Autoriser Microsoft Defender pour le point de terminaison à appliquer les configurations de sécurité de point de terminaison  >   **(prévisualisation)** **sur On**.
+5. Sélectionnez Sécurité des **points** de terminaison Microsoft Defender pour le point de terminaison et définissez Autoriser Microsoft Defender pour le point de terminaison à appliquer les configurations de sécurité des points de terminaison  >   **(prévisualisation)** **sur On**.
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Activez Microsoft Defender pour la gestion des paramètres de point de terminaison dans Microsoft Endpoint Manager’administration centrale.":::
 
@@ -121,7 +121,7 @@ Pour identifier les appareils qui ont été inscrits auprès de Microsoft Defend
 
 2. Go to **Devices**  >  **All devices**, and then select the column Managed **by** to sort the view of devices.
 
-   Les appareils qui sont intégrés à Microsoft Defender pour **Endpoint** et qui sont inscrits mais qui ne sont pas gérés par Intune ou Configuration Manager affichent Microsoft Defender pour le point de terminaison dans la colonne Géré *par.* Ce sont les appareils qui peuvent recevoir une stratégie de gestion de la sécurité pour Microsoft Defender pour endpoint.
+   Les appareils qui sont intégrés à Microsoft Defender pour Endpoint et qui sont inscrits mais qui ne sont pas gérés par Intune ou Configuration Manager affichent **Microsoft Defender pour point** de terminaison dans la colonne Géré *par.* Ce sont les appareils qui peuvent recevoir une stratégie de gestion de la sécurité pour Microsoft Defender pour endpoint.
 
 Vous pouvez créer des groupes pour ces appareils dans [Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) ou à partir du centre d Microsoft Endpoint Manager’administration. [](/mem/intune/fundamentals/groups-add)
 
@@ -137,7 +137,7 @@ Après avoir créé un ou plusieurs groupes Azure AD qui contiennent des apparei
 > [!TIP]
 > Évitez de déployer plusieurs stratégies qui gèrent le même paramètre sur un appareil.
 >
-> Microsoft Endpoint Manager prend en charge le déploiement de plusieurs instances de chaque type de stratégie de sécurité de point de terminaison sur le même appareil, chaque instance de stratégie étant reçue par l’appareil séparément. Par conséquent, un appareil peut recevoir des configurations distinctes pour le même paramètre à partir de différentes stratégies, ce qui entraîne un conflit. Certains paramètres (comme les exclusions antivirus) fusionnent sur le client et s’appliquent correctement.
+> Microsoft Endpoint Manager prend en charge le déploiement de plusieurs instances de chaque type de stratégie de sécurité de point de terminaison sur le même appareil, chaque instance de stratégie étant reçue par l’appareil séparément. Par conséquent, un appareil peut recevoir des configurations distinctes pour le même paramètre à partir de stratégies différentes, ce qui entraîne un conflit. Certains paramètres (comme les exclusions antivirus) fusionnent sur le client et s’appliquent correctement.
 
 1. Connectez-vous au [Centre d’administration du Gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -155,7 +155,7 @@ Après avoir créé un ou plusieurs groupes Azure AD qui contiennent des apparei
 
    - Pour la stratégie règles de pare-feu, sélectionnez :
      - Plateforme : **Windows 10, Windows 11 et Windows Server (prévisualisation)**
-     - Profil : règles **de pare-feu Microsoft Defender (aperçu)**
+     - Profil : règles **du pare-feu Microsoft Defender (aperçu)**
 
    - Pour la stratégie de détection et de réponse des points de terminaison, sélectionnez :
      - Plateforme : **Windows 10, Windows 11 et Windows Server (prévisualisation)**
@@ -167,21 +167,20 @@ Après avoir créé un ou plusieurs groupes Azure AD qui contiennent des apparei
 
 6. Dans la page **Paramètres de configuration,** sélectionnez les paramètres que vous souhaitez gérer avec ce profil. Pour en savoir plus sur un paramètre,  développez sa boîte de dialogue d’informations et sélectionnez le lien En savoir plus pour afficher les informations du programme CSP pour le paramètre dans la documentation en ligne.
 
-   Lorsque vous avez terminé la configuration des paramètres, sélectionnez **Suivant**.
+   Quand vous avez terminé de configurer les paramètres, sélectionner **Suivant**.
 
-7. Dans la page **Affectations,** sélectionnez les groupes Azure AD qui recevront ce profil. Pour plus d’informations sur l’attribution de profils, voir [Attribuer des profils utilisateur et d’appareil.](/mem/intune/configuration/device-profile-assign)
+7. Dans la page **Affectations,** sélectionnez les groupes Azure AD qui recevront ce profil. Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
 
    Sélectionnez **Suivant** pour continuer.
 
    > [!TIP]
    >
    > - Les filtres d’affectation ne sont pas pris en charge pour les profils de gestion de la configuration de la sécurité.
-   > - Seuls *les objets device sont* applicables à Microsoft Defender pour la gestion des points de terminaison. Le ciblage utilisateur n’est pas pris en charge.
+   > - Seuls *les objets device sont* applicables pour Microsoft Defender pour la gestion des points de terminaison. Le ciblage utilisateur n’est pas pris en charge.
    > - Les stratégies configurées s’appliquent aux clients Microsoft Intune et Microsoft Defender for Endpoint
 
-8. Terminez le processus de création de stratégie, puis sur la page **Révision +** créer, sélectionnez **Créer.** Le nouveau profil s’affiche dans la liste lorsque vous sélectionnez le type de stratégie pour le profil que vous avez créé.
+8. Terminez le processus de création de stratégie, puis sur la page **Révision +** créer, sélectionnez **Créer.** Le profil que vous venez de créer apparaît dans la liste lorsque vous sélectionnez le type de stratégie pour le nouveau profil.
 
 9. Attendez que la stratégie soit affectée et affichez une indication de réussite que la stratégie a été appliquée.
 
 10. Vous pouvez vérifier que les paramètres sont appliqués localement sur le client à l’aide de l’utilitaire de commande [Get-MpPreference.](/powershell/module/defender/get-mppreference#examples)
-

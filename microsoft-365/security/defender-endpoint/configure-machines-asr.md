@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 75e17dbeff38fd7e40c9a8f22217407773981c96
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963130"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111818"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimiser le déploiement et les détections des règles ASR
 
@@ -39,21 +39,21 @@ ms.locfileid: "60963130"
 <br>
 *Carte de gestion de la surface d’attaque*
 
-La *carte de gestion de la surface* d’attaque est un point d’entrée vers les outils Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre</a> de sécurité que vous pouvez utiliser pour :
+La *carte de gestion de la surface* d’attaque est un point d’entrée vers les outils Microsoft 365 Defender portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que</a> vous pouvez utiliser pour :
 
 * Comprendre comment les règles de la asr. sont actuellement déployées dans votre organisation.
 * Passer en revue les détections de la résurv et identifier les détections incorrectes possibles.
 * Analysez l’impact des exclusions et générez la liste des chemins d’accès aux fichiers à exclure.
 
-Sélectionnez **Go to attack surface management** \> **Reports** Attack surface \> **reduction rules** Add \> **exclusions**. À partir de là, vous pouvez accéder à d’autres sections du centre Microsoft 365 sécurité.
+Sélectionnez **Go to attack surface management** \> **Reports** Attack surface \> **reduction rules** Add \> **exclusions**. À partir de là, vous pouvez accéder à d’autres sections de Microsoft 365 Defender portail.
 
-![Ajoutez l’onglet Exclusions dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité.](images/secconmgmt_asr_m365exlusions.png)<br>
-Onglet ***Ajouter des exclusions** dans la page Règles de réduction de la surface d’attaque Microsoft 365 centre de sécurité*
+![Onglet Ajouter des exclusions dans la page Règles de réduction de la surface d’attaque Microsoft 365 Defender portail.](images/secconmgmt_asr_m365exlusions.png)<br>
+Onglet ***Ajouter des exclusions** dans la page Règles de réduction de la surface d’attaque Microsoft 365 Defender portail*
 
 > [!NOTE]
-> Pour accéder Microsoft 365 centre de sécurité, vous avez besoin d’une licence Microsoft 365 E3 ou E5 et d’un compte qui a certains rôles sur Azure Active Directory. [En savoir plus sur les licences et autorisations requises.](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
+> Pour accéder Microsoft 365 Defender portail, vous avez besoin d’une licence Microsoft 365 E3 ou E5 et d’un compte qui a certains rôles sur Azure Active Directory. [En savoir plus sur les licences et autorisations requises.](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
 
-Pour plus d’informations sur le déploiement de règles asr dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a>de sécurité, voir Surveiller et gérer le déploiement et les détections de règles [asr.](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)
+Pour plus d’informations sur le déploiement de règles asr dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail,</a>voir Surveiller et gérer le déploiement et les détections de règles [asr.](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)
 
 **Rubriques connexes**
 

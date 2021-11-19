@@ -17,18 +17,18 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 29719b023a669463ff7ad0bddca9fc9a569d8ab5
-  ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+  ms.openlocfilehash: 5fbf9c52cdef6541bc66fd2340748aa0d5b7e15d
+  ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/09/2021
-  ms.locfileid: "60882464"
+  ms.lasthandoff: 11/19/2021
+  ms.locfileid: "61110990"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-  **S’applique à :**
+  **S’applique à :**
 
   - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -43,7 +43,7 @@ sections:
   - question: >
       Ai-je besoin d’une licence d’entreprise pour exécuter des règles de RSA ?
     answer: >
-      L’ensemble complet des règles et des fonctionnalités de la fonctionnalité asr.asr est pris en charge uniquement si vous disposez d’une licence d’entreprise Windows 10 ou Windows 11. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
+      L’ensemble complet des règles et fonctionnalités de la fonctionnalité de r asr est uniquement pris en charge si vous disposez d’une licence d’entreprise pour Windows 10 ou Windows 11. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
 
 
       Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -72,7 +72,7 @@ sections:
       Pour les règles de la asr, si vous ajoutez une exclusion, elle affecte toutes les règles de la asr.
 
 
-      Les exclusions de règles asr supportent les caractères génériques, les chemins d’accès et les variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions en fonction de l’extension de fichier et de [l’emplacement du dossier.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
+      Les exclusions de règles de la asr prise en charge des caractères génériques, des chemins d’accès et des variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions en fonction de l’extension de fichier et de [l’emplacement du dossier.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
 
 
       N’ignorez pas les éléments suivants concernant les exclusions de règles asr (y compris les caractères génériques et les env. variables) :
@@ -86,7 +86,7 @@ sections:
 
       - Microsoft Endpoint Configuration Manager ne *prend pas en* charge les caractères génériques (* ou ?)
 
-      - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération automatique de fichiers), vous pouvez utiliser le symbole « ? » (par exemple, C:\Folder\fileversion?.docx)
+      - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération automatisée de fichiers), vous pouvez utiliser le symbole « ? » (par exemple, C:\Folder\fileversion?.docx)
 
       - Les exclusions asr dans la stratégie de groupe ne gèrent pas les guillemets (le moteur gère en natif le chemin d’accès long, les espaces, etc., il n’est donc pas nécessaire d’utiliser des guillemets)
 
@@ -94,7 +94,7 @@ sections:
   - question: >
       Comment savoir ce que je dois exclure ?
     answer: >
-      Différentes règles de la asr avec des flux de protection différents. Réfléchissez toujours aux protections de la règle asr que vous configurez et à la façon dont le flux d’exécution réel s’exécute.
+      Différentes règles de la RSA auront des flux de protection différents. Réfléchissez toujours aux protections de la règle asr que vous configurez et à la façon dont le flux d’exécution réel s’exécute.
 
 
       Exemple : bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité locale **Windows** lire directement à partir du processus LSASS (Local Security Authority Subsystem) peut être un risque de sécurité, car il peut exposer des informations d’identification d’entreprise.
@@ -106,7 +106,7 @@ sections:
       :::image type="content" source="images/asrfaq1.png" alt-text="bloquer le vol d’informations d’identification LSASS":::
 
 
-      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles asr ignoreront ce fichier/processus et ne le bloqueront pas/l’auditeront.
+      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles de asr ignorent ce fichier/processus et ne le bloquent pas/l’auditent.
 
 
       :::image type="content" source="images/asrfaq2.png" alt-text="exclure des fichiers asr":::
@@ -188,7 +188,7 @@ sections:
   - question: >
       J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender for Endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
     answer: >
-      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements de la surface d’attaque en visitant La gestion de la **surface** d’attaque, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
+      Chaque fois qu’une notification est déclenchée localement par une règle ASR, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements de la surface d’attaque en visitant La gestion de la **surface** d’attaque, à partir de l’icône Gestion de la **configuration** dans la barre des tâches De Defender pour le cloud. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
   - question: >
       J’ai appliqué une règle à l’aide d’un GPO. Maintenant, lorsque j’essaie de vérifier les options d’indexation de la règle dans Microsoft Outlook, je reçois un message indiquant « Accès refusé ».
     answer: >

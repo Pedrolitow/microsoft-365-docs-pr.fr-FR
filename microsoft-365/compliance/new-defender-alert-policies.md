@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 6ff33c64319e5fe9f9b3af655dcfc3bde7dd158f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 895a1fa51b9db5991bdb5235fd467bbac581d02e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963298"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109982"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -100,7 +100,7 @@ Les nouvelles alertes seront lancées et déclencheront les Enquêtes et répons
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Ce que vous devez faire pour vous préparer à ces changements
 
-La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Vous devrez modifier vos flux de travail si vous avez rendu les alertes opérationnelles et que vous les utilisez ou les consommez par le biais d'une API ou d'une notification d'alerte par e-mail soit dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> soit dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centre de sécurité Microsoft 365</a>.
+La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre les alertes et que vous les utilisez ou que vous les utilisez via une API, une notification par e-mail d’alerte ou dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a>, vous devez modifier vos flux de travail.
 
 **Si vous n’avez pas mis en œuvre ces alertes, vous pouvez effectuer l’une des opérations suivantes :**
 

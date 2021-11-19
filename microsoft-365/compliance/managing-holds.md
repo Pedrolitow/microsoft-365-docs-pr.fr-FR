@@ -21,12 +21,12 @@ description: Découvrez comment placer des conservations sur les dépositaires e
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 4d7e582125455d693459dfd3cef343614415b97e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cc149c65391642aebb124a96d0681ab1d99c04d1
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756490"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111026"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les Advanced eDiscovery
 
@@ -44,7 +44,7 @@ Pour afficher la stratégie de conservation des dépositaires :
 
 3. Go to the **Holds** tab and click **CustodianHold \<HoldId>**.
 
-4. Dans la page volante, vous pouvez voir les statistiques de la stratégie de hold. Vous pouvez également effectuer des actions telles que l’application d’une requête à votre conservation basée sur les dépositaires. Pour plus d’informations sur la création d’une requête de mise en attente et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
+4. Dans la page volante, vous pouvez voir les statistiques de la stratégie de hold. Vous pouvez également effectuer des actions telles que l’application d’une requête à votre conservation basée sur le dépositaire. Pour plus d’informations sur la création d’une requête de mise en attente et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
 
 ## <a name="manage-non-custodial-holds"></a>Gérer les placements non privatives
 
@@ -94,7 +94,7 @@ Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
 
      Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](/office365/SecurityCompliance/keyword-queries-and-search-conditions)
 
-11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant.**
+11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant**.
 
 12. Examinez vos paramètres, puis cliquez **sur Créer cette mise en attente.**
 
@@ -114,7 +114,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 - Il est normal que le nombre d’éléments en attente augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient ou reçoivent généralement de nouveaux messages électroniques et créent des documents SharePoint et OneDrive Entreprise.
 
-- Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéogé, les statistiques de ce site ne seront pas incluses dans les statistiques de la recherche. Toutefois, le contenu du site sera toujours en attente. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la mise en attente ne sera pas mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL.
+- Si un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigéogé, les statistiques de ce site ne seront pas incluses dans les statistiques de la recherche. Toutefois, le contenu du site est toujours en attente. En outre, si un site est déplacé vers une autre région, l’URL affichée dans la mise en attente ne sera pas mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Placer en attente les groupes Microsoft Teams et Office 365 de groupe
 
@@ -124,7 +124,7 @@ Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise 
 
   - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou à une équipe.
   
-  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe Microsoft 365 ou Microsoft Team. C’est un bon moyen d’obtenir l’URL du site associé à un groupe Microsoft 365 ou à une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team :
+  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe Microsoft 365 ou Microsoft Team. Il s’agit d’un bon moyen d’obtenir l’URL du site associé à un groupe Microsoft 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé Senior Leadership Team :
 
     ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -137,7 +137,7 @@ Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise 
     > [!NOTE]
     > Pour exécuter l'applet de commande Get-UnifiedGroup, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-  - Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucun groupe Microsoft 365 ou Microsoft Team dont l’utilisateur est membre n’est pas recherché. De même, lorsque vous placez une Microsoft 365 groupe ou microsoft Team, seules la boîte aux lettres de groupe et le site de groupe sont placés en attente . Les boîtes aux lettres et OneDrive Entreprise sites de membres du groupe ne sont pas placés en conservation, sauf si vous les ajoutez explicitement en tant que dépositaires ou que vous placez leurs sources de données en conservation. Par conséquent, si vous avez besoin de placer un groupe Microsoft 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de ma mappage du site de groupe et de la boîte aux lettres de groupe au dépositaire (voir Gestion des dépositaires dans Advanced eDiscovery). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribué à un seul dépositaire, envisagez d’ajouter la source à une conservation non indexiste.
+  - Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucun groupe Microsoft 365 ou Microsoft Team dont l’utilisateur est membre n’est pas recherché. De même, lorsque vous placez une conservation de groupe Microsoft 365 ou d’équipe Microsoft, seules la boîte aux lettres de groupe et le site de groupe sont placés en conservation ; les boîtes aux lettres et les sites OneDrive Entreprise des membres du groupe ne sont pas placés en conservation, sauf si vous les ajoutez explicitement en tant que dépositaires ou que vous placez leurs sources de données en conservation. Par conséquent, si vous avez besoin de placer un groupe Microsoft 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de ma mappage du site de groupe et de la boîte aux lettres de groupe au dépositaire (voir Gestion des dépositaires dans Advanced eDiscovery). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribué à un seul dépositaire, envisagez d’ajouter la source à une conservation non indexiste.
   - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés sur la page Groupes d’accueil dans le   >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855) Centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
     ```powershell
@@ -151,7 +151,7 @@ Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise 
   
   - En outre, les conversations qui font partie de la liste de conversation dans Microsoft Teams sont stockées dans la boîte aux lettres de l’utilisateur qui participe à la conversation.  Les fichiers qu’un utilisateur partage dans les conversations de conversation sont stockés dans le site OneDrive Entreprise de l’utilisateur qui partage le fichier. Par conséquent, vous devez placer les boîtes aux lettres des utilisateurs individuels et les sites OneDrive Entreprise en attente pour conserver les conversations et les fichiers dans la liste de conversation.
   
-  - Chaque équipe Microsoft ou canal d’équipe contient un Wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez mettre en attente le contenu du Wiki en mettant le site SharePoint de l’équipe en attente.
+  - Chaque équipe Ou canal d’équipe Microsoft contient un Wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez mettre en attente le contenu du Wiki en mettant le site SharePoint de l’équipe en attente.
 
     > [!NOTE]
     > La possibilité de conserver le contenu Wiki pour une équipe Microsoft ou un canal d’équipe (lorsque vous placez le site SharePoint de l’équipe en attente) a été publiée le 22 juin 2017. Si un site d’équipe est en attente, le contenu Wiki est conservé à partir de cette date. Toutefois, si un site d’équipe est en attente et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été conservé.

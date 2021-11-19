@@ -19,12 +19,12 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd23f0cdf35a9b7e236a957fed0922192091beb3
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963142"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111242"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Signaler et résoudre les problèmes de Règles asr de Microsoft Defender pour les points de terminaison
 
@@ -35,10 +35,10 @@ ms.locfileid: "60963142"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365</a> de sécurité est la nouvelle interface pour la surveillance et la gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft. Vous pouvez ici consulter facilement l’état de la sécurité de votre organisation, agir pour configurer les appareils, les utilisateurs et les applications ainsi que recevoir des alertes relatives aux activités suspectes. Le Centre de sécurité Microsoft 365 est destiné aux administrateurs de la sécurité et aux équipes d’exploitation de la sécurité pour améliorer la gestion et la protection de leur organisation. Visitez le centre Microsoft 365 sécurité sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender est</a> la nouvelle interface pour la surveillance et la gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft. Vous pouvez ici consulter facilement l’état de la sécurité de votre organisation, agir pour configurer les appareils, les utilisateurs et les applications ainsi que recevoir des alertes relatives aux activités suspectes. Le portail Microsoft 365 Defender est destiné aux administrateurs de sécurité et aux équipes en charge des opérations de sécurité afin de mieux gérer et protéger leur organisation. Visitez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
 
-Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de sécurité,</a>nous vous proposons un coup d’œil complet sur la configuration et les événements actuels des règles asr dans votre patrimoine. Notez que vos appareils doivent être intégrés au service Microsoft Defender for Endpoint pour que ces rapports soient remplis.
-Voici une capture d’écran du centre de sécurité Microsoft 365 (sous **Réduction** de la surface d’attaque des appareils \>  \> **de rapports).** Au niveau de l’appareil, **sélectionnez Configuration** dans le volet Règles de réduction de **la surface d’attaque.** L’écran suivant s’affiche, dans lequel vous pouvez sélectionner un appareil spécifique et vérifier sa configuration de règle asr individuelle.
+Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail,</a>nous vous proposons un coup d’œil complet sur la configuration actuelle des règles de la asr et les événements dans votre patrimoine. Notez que vos appareils doivent être intégrés au service Microsoft Defender for Endpoint pour que ces rapports soient remplis.
+Voici une capture d’écran du portail Microsoft 365 Defender (sous **Réduction** de la surface d’attaque des appareils \>  \> **de rapports).** Au niveau de l’appareil, **sélectionnez Configuration** dans le volet Règles de réduction de **la surface d’attaque.** L’écran suivant s’affiche, dans lequel vous pouvez sélectionner un appareil spécifique et vérifier sa configuration de règle asr individuelle.
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="Écran règles de la asr.":::
 

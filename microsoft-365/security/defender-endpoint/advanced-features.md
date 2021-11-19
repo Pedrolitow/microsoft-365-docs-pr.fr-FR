@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0b66558e74a0a71ab158621d5b8e9aa703f6d16
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963226"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110138"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
@@ -174,16 +174,16 @@ Sur les deux composants De l’Expert en menaces Microsoft, la notification d’
 > [!NOTE]
 > La Spécialistes des menaces Microsoft dans Defender for Endpoint est disponible avec une licence E5 [pour Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-L’activation de ce paramètre permet à Defender for Endpoint de Microsoft Cloud App Security fournir une visibilité plus approfondie de l’utilisation des applications cloud. Les données forwardées sont stockées et traitées au même emplacement que vos Sécurité des applications cloud données.
+L’activation de ce paramètre permet de faire suivre les signaux de Defender for Endpoint à Microsoft Defender pour les applications cloud afin de fournir une visibilité plus approfondie de l’utilisation des applications cloud. Les données forwardées sont stockées et traitées au même emplacement que vos données Defender pour les applications cloud.
 
 > [!NOTE]
 > Cette fonctionnalité sera disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10, version 1709 (os build 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (os build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809  (Os Build 17763.379 avec [KB4489899](https://support.microsoft.com/help/4489899)), versions Windows 10 versions ultérieures ou Windows 11.
 
 ## <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
-Envoie les signaux De Microsoft Defender pour point de terminaison au Niveau de sécurité Microsoft dans le centre Microsoft 365 de sécurité microsoft. L’turning on this feature gives Microsoft Secure Score visibility into the device’s security posture. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 Defender portal. L’turning on this feature gives Microsoft Secure Score visibility into the device’s security posture. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Activer l’intégration de Microsoft Defender for Endpoint à partir du portail Microsoft Defender for Identity
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: Découvrez les tâches qui vous aideront à prendre rapidement en charge la conformité dans Microsoft 365.
-ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963010"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111038"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -48,7 +48,7 @@ Pour obtenir des instructions pas à pas pour commencer avec le Gestionnaire de 
 > [!IMPORTANT]
 > La sécurité et la conformité sont étroitement intégrées pour la plupart des organisations. Il est important que votre organisation aborde les domaines de sécurité de base, de protection contre les menaces et de gestion des identités et des accès pour fournir une approche de défense en profondeur à la sécurité et à la conformité.
 >
-> Vérifiez votre [niveau Microsoft 365 sécurité](../security/defender/microsoft-secure-score.md) dans le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a> sécurité et terminez les tâches décrites dans les articles suivants :
+> Vérifiez votre [Microsoft 365 sécurisé dans](../security/defender/microsoft-secure-score.md) le portail Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">et</a> terminez les tâches décrites dans les articles suivants :
 >
 > - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](../security/office-365-security/security-roadmap.md)
 > - [12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)
@@ -125,7 +125,7 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 
 Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur d’activités, voir Commencer [avec l’Explorateur d’activités.](data-classification-activity-explorer.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez configuré les bases de la gestion de la conformité pour votre organisation, envisagez les solutions de conformité suivantes dans Microsoft 365 pour vous aider à protéger les informations sensibles, à détecter et à agir sur les risques internes supplémentaires.
 

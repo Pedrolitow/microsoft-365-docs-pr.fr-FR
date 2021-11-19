@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 158eb05c5c96712175dba6ba0b3a1b6011a26348
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 92e35fb75b26df6768860b4cb98b825086fa80d5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063344"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109802"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -62,7 +62,7 @@ Microsoft Defender pour le point de terminaison pour les clients du gouvernement
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft Defender pour Endpoint Server Cloud de la communauté du secteur public|Microsoft Defender for Endpoint Server for Cloud de la communauté du secteur public High|Microsoft Defender pour Endpoint Server pour DOD|
-|Azure Defender pour les serveurs|Azure Defender pour les serveurs - Gouvernement|Azure Defender pour les serveurs - Gouvernement|
+|Microsoft Defender pour les serveurs|Microsoft Defender pour les serveurs - Gouvernement|Microsoft Defender pour les serveurs - Gouvernement|
 |
 
 ## <a name="portal-urls"></a>URL du portail
@@ -128,9 +128,9 @@ iOS|![Non.](images/svg/check-no.svg) En cours de développement|![Non](images/sv
 >
 > <sup>3</sup> Lorsque vous utilisez [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vous devez choisir « Azure US Government » sous « Azure Cloud [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) » si vous utilisez l’Assistant [Installation,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)ou si vous utilisez une ligne de commande ou un [script,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1. <br /> La version minimale prise en charge par MMA est 10.20.18029 (mars 2020).
 
-### <a name="os-versions-when-using-microsoft-defender-for-cloud"></a>Versions du système d’exploitation lors de l’utilisation de Microsoft Defender pour le cloud
+### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation de Microsoft Defender pour les serveurs
 
-Les versions de système d’exploitation suivantes sont pris en charge lors de [l’utilisation de Microsoft Defender pour le Cloud](/azure/security-center/security-center-wdatp):
+Les versions de système d’exploitation suivantes sont pris en charge lors de [l’utilisation de Microsoft Defender pour les serveurs](/azure/security-center/security-center-wdatp):
 
 <br />
 
@@ -192,6 +192,6 @@ Voici les lacunes connues :
 |Évaluations réseau|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
-|Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|
+|Intégrations : Microsoft Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|
 |Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Spécialistes des menaces Microsoft|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|

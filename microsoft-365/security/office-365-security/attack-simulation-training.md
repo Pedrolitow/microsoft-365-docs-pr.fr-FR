@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962457"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111374"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage dans Defender pour Office 365
 
@@ -266,7 +266,7 @@ Dans la page **Détails du lancement,** vous choisissez quand lancer la simulati
 
 Les paramètres suivants sont disponibles :
 
-- Choisissez une des valeurs suivantes :
+- Choisissez une des valeurs suivantes :
   - **Lancer cette simulation dès que j’ai terminé**
   - **Planifier le lancement de cette simulation ultérieurement**: les options de configuration de cette valeur sont les suivantes :
     - **Sélectionner la date de lancement**

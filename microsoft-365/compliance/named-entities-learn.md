@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les entités nommées (aperçu)
+title: Découvrez les entités nommées (aperçu).
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,26 +16,26 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les entités nommées vous aident à détecter les éléments sensibles contenant des noms de personnes, des adresses physiques et des termes médicaux via des stratégies de protection contre la perte de données
-ms.openlocfilehash: 22019e3f3a270c6205b788a48544e2a462d9dfa7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661758"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110846"
 ---
-# <a name="learn-about-named-entities-preview"></a>En savoir plus sur les entités nommées (aperçu)
+# <a name="learn-about-named-entities-preview"></a>Découvrez les entités nommées (aperçu).
 
 > [!IMPORTANT]
 > La fonctionnalité entités nommées est en cours de déploiement et apparaît dans votre client lorsqu’elle est disponible pour vous. Recherchez-les dans l’Explorateur de contenu et dans le flux de authoring de stratégie de protection contre la perte de données (DLP). 
 
-*Les entités nommées* sont [des types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des dictionnaires et des modèles que vous pouvez utiliser pour détecter des noms de personnes, des adresses physiques et des conditions médicales. Vous pouvez les voir dans le Centre de conformité > classification des > **types d’informations sensibles.** Voici une liste partielle des endroits où vous pouvez utiliser les sits :
+*Les entités nommées* sont [des types d’informations sensibles](sensitive-information-type-learn-about.md) (SIT). Ce sont des classifieurs complexes basés sur des modèles et des dictionnaires que vous pouvez utiliser pour détecter des noms de personnes, des adresses physiques et des conditions médicales. Vous pouvez les voir dans le Centre de conformité > classification des > **types d’informations sensibles.** Voici une liste partielle des endroits où vous pouvez utiliser les sits :
 
 - [Stratégies de protection contre la perte de données (DLP)](dlp-learn-about-dlp.md) 
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Gestion des risques internes](insider-risk-management-solution-overview.md)
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
-DLP utilise spécifiquement des entités nommées dans les modèles de stratégie *améliorés,* qui sont des stratégies DLP pré-configurées que vous pouvez personnaliser pour les besoins de votre organisation. Vous pouvez également créer [vos propres stratégies DLP](create-test-tune-dlp-policy.md) à partir d’un modèle [vide](create-a-dlp-policy-from-a-template.md) et utiliser une entité nommée SIT comme condition.
+DLP fait un usage spécial des entités nommées dans les modèles de stratégie *améliorés,* qui sont des stratégies DLP pré-configurées que vous pouvez personnaliser pour les besoins de votre organisation. Vous pouvez également créer [vos propres stratégies DLP](create-test-tune-dlp-policy.md) à partir d’un modèle [vide](create-a-dlp-policy-from-a-template.md) et utiliser une entité nommée SIT comme condition.
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
@@ -49,7 +49,7 @@ Les sits d’entité nommée regroupées détectent toutes les correspondances p
 
 Les sits d’entité nommée dissociées ont un focus plus étroit, comme un seul pays. Utilisez-les lorsque vous avez besoin d’une stratégie DLP avec une portée de détection plus étroite.
  
-Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tous les 52 dans le Centre de conformité > classification des données **> types d’informations sensibles.**
+Voici quelques exemples de SIT d’entité nommée. Vous pouvez les trouver tous les 52 dans le Centre de conformité > classification des données > **types d’informations sensibles.**
 
 |Entité nommée |Description  |Bundled/Unbundled  |
 |---------|---------|---------|
@@ -66,14 +66,14 @@ Voici quelques exemples de stratégies DLP améliorées qui utilisent des sits d
 
 |Catégorie de stratégie  |Modèle  |Description  |
 |---------|---------|---------|
-|Financier|U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced         |Permet de détecter la présence d'informations protégées par la loi Gramm-Leach-Bliley Act (GLBA), notamment des informations comme des numéros de sécurité sociale ou des numéros de carte de crédit. Ce modèle amélioré étend l’original en détectant également les noms complets des personnes( États-Unis/Royaume-Uni). numéro de passeport, numéro de permis de conduire américain et adresses physiques des États-Unis.         |
+|Financier|U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced         |Permet de détecter la présence d'informations protégées par la loi Gramm-Leach-Bliley Act (GLBA), notamment des informations comme des numéros de sécurité sociale ou des numéros de carte de crédit. Ce modèle amélioré étend l’original en détectant également les noms complets des personnes( États-Unis/Royaume-Uni). numéro de passeport, numéro de permis de conduire américain et adresses physiques américaines.         |
 | Santé et médical   |Australia Health Records Act (HRIP Act) Enhanced         |Permet de détecter la présence d'informations généralement couvertes par la loi australienne sur la protection des renseignements personnels et des informations sur la santé, comme un numéro de dossier médical ou un numéro TFN (numéro de dossier fiscal). Ce modèle amélioré étend l’original en détectant également les noms complets des personnes, les conditions médicales et les adresses physiques de l’Australie.         |
-|Confidentialité   |Règlement général sur la protection des données (R GDPR) amélioré         | Permet de détecter la présence d’informations personnelles pour des individus au sein de l’Union européenne (UE) afin de répondre aux obligations de confidentialité du R GDPR. Ce modèle amélioré détecte les noms complets des personnes et les adresses physiques des pays de l’UE.        |
+|Confidentialité   |Règlement général sur la protection des données (R GDPR) amélioré         | Permet de détecter la présence d’informations personnelles pour des individus au sein de l’Union européenne (UE) afin de répondre aux obligations de confidentialité du R GDPR. Ce modèle amélioré détecte les noms complets et les adresses physiques des personnes pour les pays de l’UE.        |
 
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Utiliser des entités nommées dans vos stratégies de protection contre la perte de données (aperçu)](named-entities-use.md)
+- [Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)](named-entities-use.md)
 
 
 ## <a name="for-further-information"></a>Pour plus d’informations

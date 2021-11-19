@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 00717c828935acf417957ef25401056fe0036e10
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960807"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110786"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -43,9 +43,9 @@ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une d�
 
 > [!IMPORTANT]
 > Pour la prévisualisation, vous devez d’abord activer les fonctionnalités d’aperçu dans Microsoft 365 Defender.
-> Vous pouvez ensuite accéder à la configuration de découverte d’appareils <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dans Microsoft 365 de sécurité.</a> La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans le centre de sécurité Microsoft 365 Defender et Microsoft 365, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 centre de sécurité.
+> Vous pouvez ensuite accéder à la configuration de découverte <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">d’appareils dans Microsoft 365 Defender portail.</a> La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans les portails Microsoft 365 Defender et Microsoft 365 Defender, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 Defender portail.
 
-Prenez les étapes de configuration suivantes dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de sécurité :</a>
+Prenez les étapes de configuration suivantes dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
 
 1. Accédez à **Paramètres**  >  **détection d’appareil.**
 2. Sélectionnez le mode de découverte à utiliser sur vos appareils intégrés.

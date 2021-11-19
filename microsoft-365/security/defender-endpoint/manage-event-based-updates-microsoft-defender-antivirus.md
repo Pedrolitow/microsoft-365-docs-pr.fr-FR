@@ -16,19 +16,19 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f47787a137f9397ab8526ed202e60f44a7d52a55
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8e3237eefdf9f8a9a5419e9d01e32d73eb949360
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883628"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110930"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -44,7 +44,7 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** avant d’exécutez une analyse programmée et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser les cmdlets PowerShell pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -70,7 +70,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configurer et gérer l'Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Cmdlets Defender](/powershell/module/defender/index).
+Pour plus d’informations, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender et [Defender pour les cmdlets cloud.](/powershell/module/defender/index)
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser Windows Management Instruction (WMI) pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -96,7 +96,7 @@ Vous pouvez utiliser la stratégie de groupe pour forcer Antivirus Microsoft Def
 
 5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** au démarrage et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour configurer des Antivirus Microsoft Defender pour vérifier les mises à jour au démarrage, même lorsqu’elle n’est pas en cours d’exécution.
 
@@ -112,7 +112,7 @@ Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour
 
 5. Double-cliquez sur **Lancer la mise à jour de l’intelligence** de sécurité au démarrage et définissez l’option sur **Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser les cmdlets PowerShell pour télécharger les mises à jour lorsque Antivirus Microsoft Defender n’est pas présent
 
@@ -122,7 +122,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Pour plus d’informations, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour gérer les [cmdlets](/powershell/module/defender/index) Antivirus Microsoft Defender et Defender pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
+Pour plus d’informations, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour gérer les [cmdlets](/powershell/module/defender/index) Antivirus Microsoft Defender et Defender pour le cloud pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser Windows Management Instruction (WMI) pour télécharger les mises à jour lorsque Antivirus Microsoft Defender est pas présent
 

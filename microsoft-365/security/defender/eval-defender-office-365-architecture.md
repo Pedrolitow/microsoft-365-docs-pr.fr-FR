@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ff1cf191670dc2345293ebd8aa531b87b090a8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b5fdfb95b263d38c9b663176fd21b6c43e43db57
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205090"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110306"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue Microsoft Defender pour les exigences Office 365'architecture et les concepts clés
 
@@ -40,7 +40,7 @@ Avant d’activer Defender pour Office 365, veillez à bien comprendre l’archi
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
-Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (par exemple, les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
+Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (c’est-à-dire que les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
 
 ![Architecture de Microsoft Defender pour Office 365.](../../media/defender/m365-defender-office-architecture.png)
 
@@ -50,9 +50,9 @@ Le tableau suivant décrit cette illustration.
 |---------|---------|
 |1     | Le serveur hôte de l’expéditeur externe effectue généralement une recherche DNS publique pour un enregistrement MX qui fournit le serveur cible pour relayer le message.  Cette référence peut être Exchange Online (EXO) directement ou une passerelle SMTP qui a été configurée pour être relayée par rapport à EXO.  |
 |2     | Exchange Online Protection négocier et valider la connexion entrante et inspecte les en-têtes et le contenu des messages pour déterminer les stratégies, balises ou traitements supplémentaires requis.  |
-|3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction plus avancées contre les menaces. |
-|4      | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traitée et envoyée au destinataire dans EXO, où les préférences de l’utilisateur relatives au courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
-|5     | L’intégration avec Active Directory local peut être activée à l’aide d’Azure AD Connecter pour synchroniser et mettre en service des objets et des comptes à messagerie dans Azure Active Directory et, en fin de compte, Exchange Online. |
+|3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction des menaces plus avancées. |
+|4     | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traitée et envoyée au destinataire dans EXO, où les préférences de l’utilisateur relatives au courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
+|5     | L’intégration avec Active Directory local peut être activée à l’aide de Azure AD Connecter pour synchroniser et mettre en service des objets et des comptes à messagerie à Azure Active Directory et, en fin de compte, Exchange Online. |
 |6      | Lors de l’intégration d’un environnement local, il est vivement recommandé d’utiliser un serveur Exchange pour la gestion et l’administration des attributs, paramètres et configurations liés à la messagerie pris en charge |
 |7      | Microsoft Defender pour Office 365 partage des signaux Microsoft 365 Defender pour la détection et la réponse étendues (XDR).|
 
@@ -70,9 +70,9 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 |Protection anti-courrier indésirable     |   Les organisations avec des boîtes aux lettres dans EXO sont automatiquement protégées contre les stratégies de courrier indésirable et de courrier indésirable.      |  [Protection contre le courrier indésirable dans EOP](../office-365-security/anti-spam-protection.md)       |
 |Protection anti-hameçonnage |  MDO offre une protection anti-hameçonnage plus avancée liée au harponnage, à la whaling, aux ransomware et à d’autres activités malveillantes.   | [Protection supplémentaire contre les attaques par phishing dans Microsoft Defender pour Office 365](../office-365-security/anti-phishing-protection.md)   |
 |Protection contre l’usurpation d’identité     |   EOP inclut des fonctionnalités pour protéger votre organisation contre les expéditeurs falsifiés (falsifiés).      |   [Protection contre l’usurpation d’identité dans EOP](../office-365-security/anti-spoofing-protection.md)      |
-|Pièces jointes fiables     |   Coffre Les pièces jointes fournissent une couche de protection supplémentaire à l’aide d’un environnement virtuel pour vérifier et « désaérer » les pièces jointes dans les messages électroniques avant leur livraison.      |   [Coffre Pièces jointes dans Microsoft Defender pour Office 365](../office-365-security/safe-attachments.md)      |
+|Pièces jointes fiables     |   Coffre pièces jointes fournit une couche supplémentaire de protection à l’aide d’un environnement virtuel pour vérifier et « désaérer » les pièces jointes dans les messages électroniques avant leur livraison.      |   [Coffre pièces jointes dans Microsoft Defender pour Office 365](../office-365-security/safe-attachments.md)      |
 |Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams     |    En outre, Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams offre une couche de protection supplémentaire pour les fichiers qui ont été téléchargés vers des référentiels de stockage cloud.     |  [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md)       |
-|Liens fiables     | Coffre Les liens sont une fonctionnalité qui fournit l’analyse et la réécriture d’URL dans les messages électroniques entrants et permet de vérifier ces liens avant leur livraison ou leur clic.        |   [Coffre Liens dans Microsoft Defender pour Office 365](../office-365-security/safe-links.md)      |
+|Liens sûrs     | Coffre liens est une fonctionnalité qui fournit l’analyse et la réécriture d’URL dans les messages électroniques entrants et permet de vérifier ces liens avant leur livraison ou leur clic.        |   [Coffre liens vers Microsoft Defender pour Office 365](../office-365-security/safe-links.md)      |
 |    |         |         |
 
 Pour plus d’informations sur les fonctionnalités incluses dans Microsoft Defender pour Office, consultez Microsoft Defender pour obtenir [la description Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
@@ -82,22 +82,21 @@ Une évaluation MDO réussie ou un projet pilote de production suppose les condi
 - Toutes vos boîtes aux lettres de destinataire sont actuellement en Exchange Online.
 - Votre enregistrement MX public est résolu directement dans EOP ou une passerelle SMTP tierce qui relaie ensuite le courrier électronique externe entrant directement vers EOP.
 - Votre domaine de messagerie principal est configuré comme faisant *autorité* dans Exchange Online.
-- Vous avez correctement déployé  et configuré le blocage du edge basé sur l’annuaire (DBEB) selon le cas. Pour plus d'informations, consultez la rubrique [Utiliser le blocage du périmètre basé sur l'annuaire pour rejeter les messages envoyés à des destinataires non valides](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+- Vous avez correctement déployé  et configuré le blocage du périphérie basé sur l’annuaire (DBEB) selon le cas. Pour plus d'informations, consultez la rubrique [Utiliser le blocage du périmètre basé sur l'annuaire pour rejeter les messages envoyés à des destinataires non valides](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
 > [!IMPORTANT]
 > Si ces exigences ne sont pas applicables ou si vous êtes toujours dans un scénario de coexistence hybride, une évaluation de Microsoft Defender pour Office 365 peut nécessiter des configurations plus complexes ou plus avancées qui ne sont pas entièrement couvertes dans ces instructions.
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Vous pouvez intégrer Microsoft Defender pour Office 365 Azure Sentinel pour analyser de manière plus complète les événements de sécurité au sein de votre organisation et créer des playbooks pour obtenir une réponse efficace et immédiate. Pour plus d’informations, [voir Connecter alertes de Microsoft Defender pour Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).
+Vous pouvez intégrer Microsoft Defender pour Office 365 Microsoft Sentinel pour analyser de manière plus complète les événements de sécurité au sein de votre organisation et créer des playbooks pour obtenir une réponse efficace et immédiate. Pour plus d’informations, [voir Connecter alertes de Microsoft Defender pour Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).
 
 Microsoft Defender pour Office 365 peut également être intégré à d’autres solutions SIEM (Security Information and Event Management) à l’aide de [l’API Office 365 Gestion des activités.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation Microsoft Defender pour Office 365](eval-defender-office-365-enable-eval.md)
 
 Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender Office 365](eval-defender-office-365-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md) 
-

@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge des applications clientes et de services.
-ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db69da1203138435b22383de145ddde71f763c14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173327"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110330"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 prise en charge des applications client et de services
 
@@ -54,7 +54,7 @@ Pour plus d’informations sur l’authentification basée sur les certificats p
 
 ### <a name="conditional-access"></a>Accès conditionnel
 
-L’accès conditionnel est l’outil utilisé par Azure Active Directory pour rassembler des signaux, prendre des décisions et appliquer des stratégies d’accès organisationnel. L’accès conditionnel est au cœur du nouveau modèle de contrôle piloté par l’identité.
+L’accès conditionnel est l’outil utilisé par Azure Active Directory pour rassembler les signaux, prendre des décisions et appliquer des stratégies d’accès organisationnel. L’accès conditionnel est au cœur du nouveau modèle de contrôle piloté par l’identité.
 
 Les stratégies d’accès conditionnel sont des instructions if-then pour accorder l’accès aux ressources. Si un utilisateur souhaite accéder à une ressource, il doit effectuer une action. Les signaux courants que l’accès conditionnel peut utiliser lors de la prise de décision d’accès à une stratégie sont les suivants :
 
@@ -63,7 +63,7 @@ Les stratégies d’accès conditionnel sont des instructions if-then pour accor
 - Informations sur l’appareil
 - Informations sur l’application
 - Détection des risques calculés et en temps réel
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 Lorsque vous prenez ces décisions d’accès, les stratégies peuvent effectuer différentes actions :
 
@@ -72,13 +72,13 @@ Lorsque vous prenez ces décisions d’accès, les stratégies peuvent effectuer
 
     - Authentification multifacteur
     - L’appareil à marquer comme conforme
-    - L’appareil est joint à Azure AD hybride
+    - L’appareil est hybride Azure AD joint
     - Une application cliente approuvée
     - Stratégie de protection des applications configurée (aperçu)
 
 Pour plus d’informations sur l’accès conditionnel pour la prise en charge des applications client et de services, voir :
 
-- [Microsoft 365 Prise en charge des applications clientes : accès conditionnel basé sur l’appareil](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 prise en charge des applications clientes : accès conditionnel basé sur l’appareil](microsoft-365-client-support-conditional-access.md)
 
 ### <a name="mobile-application-management"></a>Gestion des applications mobiles
 
@@ -98,7 +98,7 @@ Pour le contenu géré par l’organisation, vous pouvez appliquer des stratégi
 - Fournir la configuration de l’application pour gérer le comportement et les paramètres de l’application
 - Limiter l’application gérée à une identité définie en désactivant les fonctionnalités multi-identité ou l’utilisation personnelle
 
-Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, voir [Qu’est-ce Microsoft Intune’application mobile ?](/mem/intune/apps/app-management)
+Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, consultez la Microsoft Intune [des applications mobiles ?](/mem/intune/apps/app-management)
 
 ### <a name="multi-factor-authentication"></a>Authentification multifacteur
 
@@ -125,7 +125,7 @@ L’authentification moderne permet aux clients de s’authentifier par rapport 
 - Prise en charge de l’authentification multifacteur pour l’interaction administrative avec le client et les services, et l’interaction de l’utilisateur final avec les applications et leurs données
 - Accès conditionnel
 - Se connecte au fournisseur d’identité tiers SAML
-- Connexion par carte à puce sur des ordinateurs personnels
+- Journal des cartes à puce sur des ordinateurs personnels
 - Authentification basée sur les certificats sur les appareils mobiles
 - Ne nécessite plus la transmission des informations d’identification sur l’authentification de base.
 
@@ -133,18 +133,18 @@ Pour plus d’informations sur la prise en charge des services d’authentificat
 
 ### <a name="azure-active-directory-conditional-access"></a>Accès conditionnel Azure Active Directory
 
-Azure Active Directory d’accès conditionnel (Azure AD) permettent aux clients de contrôler l’accès aux services en ligne, en fonction d’attributs tels que la conformité des appareils ou l’emplacement réseau. Les solutions suivantes peuvent être utilisées :
+Azure Active Directory (Azure AD) l’accès conditionnel permet aux clients de contrôler l’accès aux services en ligne, en fonction d’attributs tels que la conformité des appareils ou l’emplacement réseau. Les solutions suivantes peuvent être utilisées :
 
-- Accès conditionnel basé sur l’authentification multifacteur Azure AD
-- Accès conditionnel basé sur l’emplacement Azure AD
-- Accès conditionnel basé sur l’appareil Azure AD
+- Azure AD l’accès conditionnel basé sur l’authentification multifacteur
+- Azure AD l’accès conditionnel basé sur l’emplacement
+- Azure AD l’accès conditionnel basé sur l’appareil
 
-Les règles d’accès conditionnel Azure AD sont appliquées par application et sont disponibles pour que les clients contrôlent l’accès en fonction de différentes conditions. À l’aide de la gestion des périphériques mobiles [(MDM) ou d’Intune,](/mem/intune/fundamentals/what-is-device-management)les clients doivent être en mesure de restreindre l’accès aux Microsoft 365 uniquement aux utilisateurs qui utilisent un appareil de l’organisation ou qui ont inscrit leur appareil personnel pour la gestion. Par exemple, les clients peuvent configurer des règles d’accès conditionnel pour appliquer des contrôles tels que :
+Azure AD d’accès conditionnel sont appliquées par application et sont disponibles pour que les clients contrôlent l’accès en fonction de différentes conditions. À l’aide de la gestion des périphériques mobiles [(MDM) ou d’Intune,](/mem/intune/fundamentals/what-is-device-management)les clients doivent être en mesure de restreindre l’accès aux Microsoft 365 uniquement aux utilisateurs qui utilisent un appareil de l’organisation ou qui ont inscrit leur appareil personnel pour la gestion. Par exemple, les clients peuvent configurer des règles d’accès conditionnel pour appliquer des contrôles tels que :
 
 - Autoriser uniquement l’accès à partir d’appareils joints à un domaine ou conformes à un domaine
 - Appliquer l’authentification multifacteur pour tout accès Exchange Online services
 
-Pour plus d’informations sur Azure Active Directory l’accès conditionnel, voir [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview)
+Pour plus d’informations sur Azure Active Directory l’accès conditionnel, [voir Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview)
 
 ### <a name="tls-12-support"></a>Prise en charge de TLS 1.2
 

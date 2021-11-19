@@ -1,5 +1,5 @@
 ---
-title: Antivirus Microsoft Defender Guide de déploiement de l’infrastructure de bureau virtuel
+title: guide Antivirus Microsoft Defender déploiement de l’infrastructure virtual desktop
 description: Découvrez comment déployer des Antivirus Microsoft Defender dans un environnement de bureau virtuel pour un meilleur équilibre entre la protection et les performances.
 keywords: vdi, hyper-v, vm, machine virtuelle, windows defender, antivirus, av, bureau virtuel, rds, bureau à distance
 ms.prod: m365-security
@@ -15,16 +15,16 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882080"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110210"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -32,7 +32,7 @@ Outre les configurations matérielles ou locales standard, vous pouvez égalemen
 
 Pour [plus d’informations](/azure/virtual-desktop) sur la prise en charge des services Bureau à distance Microsoft VDI, voir la documentation Azure Virtual Desktop.
 
-Pour les machines virtuelles basées sur Azure, voir [Installer Endpoint Protection dans Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
+Pour les machines virtuelles basées sur Azure, voir [Installer Endpoint Protection dans Microsoft Defender pour le cloud.](/azure/security-center/security-center-install-endpoint-protection)
 
 Avec la possibilité de déployer facilement des mises à jour sur des ordinateurs VM en cours d’exécution dans des VDIs, nous avons raccourci ce guide pour vous concentrer sur la façon dont vous pouvez obtenir des mises à jour sur vos ordinateurs rapidement et facilement. Vous n’avez plus besoin de créer et de sceller régulièrement des images de base, car les mises à jour sont étendues dans leurs bits de composants sur le serveur hôte, puis téléchargées directement sur la VM lorsqu’elle est allumée.
 
@@ -71,7 +71,7 @@ Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intel
 
 6. Entrez `\\<sharedlocation\>\wdav-update` (pour obtenir de l’aide sur cette valeur, voir [Télécharger et décompresser).](#download-and-unpackage-the-latest-updates)
 
-7. Cliquez sur **OK**.
+7. Cliquez sur **OK**.
 
 8. Déployez l’GPO sur les VM que vous souhaitez tester.
 
@@ -155,7 +155,7 @@ Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse pro
 
 1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles** \> **d’administration Windows composants** \>  \> **Antivirus Microsoft Defender’analyse.**
 
-2. Sélectionnez **Spécifier le type d’analyse à utiliser pour une analyse** programmée, puis modifiez le paramètre de stratégie.
+2. Sélectionnez **Spécifier le type d’analyse à utiliser pour** une analyse programmée, puis modifiez le paramètre de stratégie.
 
 3. Définissez la stratégie **sur Activé,** puis sous **Options,** sélectionnez **Analyse rapide.**
 
@@ -180,7 +180,7 @@ La suppression des notifications empêche l’affichage Antivirus Microsoft Defe
 > [!TIP]
 > Pour ouvrir le Centre de Windows 10 ou Windows 11, prenez l’une des étapes suivantes :
 >
-> - À l’extrémité droite de la barre des tâches, sélectionnez l’icône centre de travail.
+> - À l’extrémité droite de la barre des tâches, sélectionnez l’icône Centre de tâches.
 > - Appuyez sur Windows touche de logo + A.
 > - Sur un appareil tactile, effectuez un balayage à partir du bord droit de l’écran.
 
@@ -191,7 +191,7 @@ La désactivation d’une analyse après une mise à jour empêche l’analyse d
 > [!IMPORTANT]
 > L’exécution d’analyses après une mise à jour permet de s’assurer que vos VM sont protégées avec les dernières mises à jour d’informations de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l’image de base.
 
-1. Dans votre Éditeur de stratégie de groupe, Windows **composants** Antivirus Microsoft Defender mises à jour \>  \> **security intelligence**.
+1. Dans votre Éditeur de stratégie de groupe, Windows **composants** Antivirus Microsoft Defender mises à jour \>  \> **de l’intelligence de la sécurité.**
 
 2. Sélectionnez **Activer l’analyse après la mise** à jour des informations de sécurité, puis modifiez le paramètre de stratégie.
 
@@ -221,11 +221,11 @@ Cette stratégie force une analyse si la VM a manqué au moins deux analyses pro
 
 1. Dans votre Éditeur de stratégie de groupe, Windows **composants** \> **Antivirus Microsoft Defender** \> **interface client.**
 
-2. Sélectionnez **Activer le mode d’interface utilisateur sans tête** et modifiez la stratégie.
+2. Sélectionnez **Activer le mode d’interface utilisateur** sans tête et modifiez la stratégie.
 
 3. Définissez la stratégie **sur Activé.**
 
-4. Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 5. Déployez votre objet de stratégie de groupe comme vous le faites généralement.
 

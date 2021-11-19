@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentation de sécurité Office 365
-summary: Le Centre de sécurité Microsoft 365 regroupe plusieurs technologies de sécurité au sein d’une seule console d’administration complète, avec des améliorations pour protéger votre entreprise.
+summary: Microsoft 365 Defender portail regroupe plusieurs technologies de sécurité dans une console d’administration complète, avec des améliorations pour protéger votre entreprise.
 metadata:
   title: Documentation de sécurité Office 365
   description: 'En savoir plus sur Microsoft Defender pour point de terminaison : comment il protège les points de terminaison contre les menaces informatiques et offre aux équipes des opérations de sécurité des fonctionnalités de correction des menaces.'
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 5902d5470a98e9915394de9f682bd0ea51ce2a08
-  ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+  ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
+  ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/03/2021
-  ms.locfileid: "60724690"
+  ms.lasthandoff: 11/19/2021
+  ms.locfileid: "61106418"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -64,21 +64,21 @@ landingContent:
       url: defender-endpoint/microsoft-defender-endpoint.md
     - text: Vue d’ensemble du portail du centre de sécurité de Microsoft Defender
       url: defender-endpoint/portal-overview.md
-- title: Azure Defender
+- title: Microsoft Defender pour le cloud
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Azure Defender ?
+    - text: Qu’est-ce que Microsoft Defender pour le cloud ?
       url: /azure/security-center/security-center-intro
     - text: Fonctionnalités prises en charge
       url: /azure/security-center/security-center-services
-- title: Microsoft Cloud App Security
+- title: Microsoft Defender for Cloud Apps
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft Cloud App Security ?
+    - text: Qu’est-ce que Microsoft Defender pour les applications cloud ?
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Pris en main de Microsoft Cloud App Security
+    - text: Mise en place de Microsoft Defender pour les applications cloud
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Gestion de la sécurité
   linkLists:
@@ -86,9 +86,9 @@ landingContent:
     links:
     - text: Niveau de sécurité
       url: defender/microsoft-secure-score.md
-- title: Azure Sentinel
+- title: Microsoft Sentinel
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Azure Sentinel ?
+    - text: Qu’est-ce que Microsoft Sentinel ?
       url: /azure/sentinel/overview

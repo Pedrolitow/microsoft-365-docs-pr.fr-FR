@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
-ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94118a66f7bb1468a8f27816151a3b4d087b5703
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170354"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111662"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -87,13 +87,13 @@ Les besoins commerciaux de Contoso se comptent en cinq catégories principales :
 
 - Améliorer la sécurité pour les travailleurs à distance et mobiles
 
-  Implémentez la gestion de votre propre appareil (BYOD) et de votre entreprise pour garantir un accès sécurisé, un comportement d’application correct et la protection des données d’entreprise.
+  Implémentez la gestion de votre propre appareil (BYOD) et de votre entreprise pour garantir un accès sécurisé, un comportement correct des applications et la protection des données d’entreprise.
 
 - Réduire l’infrastructure d’accès distant pour les employés
 
   Réduisez les coûts de maintenance et de support et améliorez les performances de la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la charge (B2B)
 
   Remplacez un extranet partenaire coûteux et coûteux par une solution basée sur le cloud qui utilise l’authentification fédérée.
 
@@ -121,10 +121,10 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Améliorer la productivité pour les travailleurs mobiles et à distance | Charges de travail Microsoft 365 et données informatiques |
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
-|  | Gestion des identités et des accès | Comptes d’administrateur général dédiés avec Azure AD Multi-Factor Authentication (MFA) et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Lecteur de sécurité <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Microsoft 365 et réponse aux menaces <BR> |
-|  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Gestion de la sécurité | Azure Defender  <BR> Centre de sécurité Windows Defender |
+|  | Gestion des identités et des accès | Comptes d’administrateur général dédiés Azure AD l’authentification multifacteur (MFA) et Azure AD Privileged Identity Management (PIM) <br> Authentification multifacteur pour tous les comptes d’utilisateur <br> Accès conditionnel <br> Lecteur de sécurité <br> Windows Hello <br> Windows Credential Guard |
+|  | Protection contre les menaces | Advanced Threat Analytics <br> Windows Defender <br> Defender pour Office 365 <br> Microsoft Defender pour Office 365 <br> Microsoft 365 et réponse aux menaces <br> |
+|  | Protection des informations | Azure Information Protection <br> Protection contre la perte de données (DLP) <br> Protection des informations Windows (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
+|  | Gestion de la sécurité | Microsoft Defender pour le cloud  <br> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
 |  | Meilleure sécurité pour les travailleurs mobiles et à distance | Microsoft Intune |
 |  | Réduire l’infrastructure d’accès distant pour les employés | Charges de travail Microsoft 365 et données informatiques |
@@ -132,7 +132,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 | Conformité |  |  |
 |  | Respecter les exigences réglementaires locales | Fonctionnalités R GDPR dans Microsoft 365 |
 | Gestion |  |  |
-|  | Réduire la surcharge pour l’installation des mises à jour client | Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
+|  | Réduire la surcharge pour l’installation des mises à jour client | Mises à jour pour Windows 10 Entreprise <br> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
 ||||
 
 ## <a name="next-step"></a>Étape suivante

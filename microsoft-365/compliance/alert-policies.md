@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: f942420a18a9f0bef947e215754eb1c1164eb08a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 4b919fa43e61f43b3c5f465a697cd976eb52db00
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963034"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110018"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -69,7 +69,7 @@ Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_b
 
 ### <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
-Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and under Email & **collaboration** select Policies **& rules**  >  **Alert policy**. Vous pouvez également y aller <https://security.microsoft.com/alertpolicies> directement.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under Email **& collaboration** select Policies & **rules**  >  **Alert policy**. Vous pouvez également y aller <https://security.microsoft.com/alertpolicies> directement.
 
 ![Dans le portail Defender, sélectionnez Stratégies & sous Collaboration & courrier électronique, puis sélectionnez Stratégie d’alerte pour afficher et créer des stratégies d’alerte.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -131,9 +131,9 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |:-----|:-----|:-----|:-----|
 |**Un clic d’URL potentiellement malveillant a été détecté**|Génère une alerte lorsqu’un utilisateur protégé par [Coffre liens](../security/office-365-security/safe-links.md) de votre organisation clique sur un lien malveillant. Cet événement est déclenché lorsque les modifications apportées au verdict d’URL sont identifiées par Microsoft Defender pour Office 365 ou lorsque les utilisateurs remplacent les pages de liens Coffre (en fonction de la stratégie de liens Microsoft 365 pour les entreprises Coffre entreprise). Cette stratégie d’alerte a un **paramètre** de gravité élevée. Pour les clients Office 365 P2, E5 et G5, cette alerte déclenche automatiquement une enquête et une réponse automatisées [dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer Coffre de liens.](../security/office-365-security/set-up-safe-links-policies.md)|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Résultat de soumission administrateur terminé**|Génère une alerte lorsqu’une soumission [d’administrateur](../security/office-365-security/admin-submission.md) termine la rescan de l’entité soumise. Une alerte est déclenchée chaque fois qu’un résultat de rescan est rendu à partir d’une soumission d’administrateur. Ces alertes sont destinées à vous rappeler de passer en revue les résultats des [soumissions précédentes,](https://compliance.microsoft.com/reportsubmission)d’envoyer les messages signalés par l’utilisateur pour obtenir la dernière vérification de stratégie et de rescaner les verdicts, et de vous aider à déterminer si les stratégies de filtrage de votre organisation ont l’impact prévu. Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces|E1/F1, E3/F3 ou E5|
-|**L’administrateur a déclenché une enquête manuelle sur le courrier électronique**|Génère une alerte lorsqu’un administrateur déclenche l’examen manuel d’un e-mail à partir de l’Explorateur de menaces. Pour plus d’informations, voir l’exemple : un administrateur de sécurité [déclenche une enquête à partir de l’Explorateur de menaces.](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) Cette alerte informe votre organisation que l’enquête a été lancée. L’alerte fournit des informations sur la personne qui l’a déclenchée et inclut un lien vers l’enquête. Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces| E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2| 
+|**L’administrateur a déclenché une enquête manuelle sur le courrier électronique**|Génère une alerte lorsqu’un administrateur déclenche l’examen manuel d’un e-mail à partir de l’Explorateur de menaces. Pour plus d’informations, voir l’exemple : un administrateur de sécurité [déclenche une enquête à partir de l’Explorateur de menaces.](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) Cette alerte informe votre organisation que l’enquête a été lancée. L’alerte fournit des informations sur la personne qui l’a déclenchée et inclut un lien vers l’enquête. Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces| E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
 |**Création de règle de redirection/transfert**|Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour sa boîte aux lettres qui redirige les messages vers un autre compte de messagerie. Cette stratégie suit uniquement les règles de boîte de réception créées à l’aide Outlook sur le web (anciennement Outlook Web App) ou Exchange Online PowerShell. Cette stratégie a un paramètre **de gravité** d’information. Pour plus d’informations sur l’utilisation des règles de boîte de réception pour le Outlook sur le web, voir Utiliser des règles dans Outlook sur le web pour envoyer automatiquement des messages vers un [autre compte.](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
-|**Recherche eDiscovery démarrée ou exportée**|Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans le Centre de sécurité et conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées : <br/><br/>* Une recherche de contenu est démarrée<br/>* Les résultats d’une recherche de contenu sont exportés<br/>* Un rapport de recherche de contenu est exporté<br/><br/>Les alertes sont également déclenchées lorsque les activités de recherche de contenu précédentes sont effectuées en association avec un cas eDiscovery. Cette stratégie a un paramètre **de gravité** d’information. Pour plus d’informations sur les activités de recherche de contenu, voir Rechercher des activités [eDiscovery dans le journal d’audit.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
+|**Recherche eDiscovery démarrée ou exportée**|Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans le Centre de sécurité et conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées : <br><br> <li> Une recherche de contenu est démarrée <li> Les résultats d’une recherche de contenu sont exportés <li> Un rapport de recherche de contenu est exporté <br><br> Les alertes sont également déclenchées lorsque les activités de recherche de contenu précédentes sont effectuées en association avec un cas eDiscovery. Cette stratégie a un paramètre **de gravité** d’information. Pour plus d’informations sur les activités de recherche de contenu, voir Rechercher des activités [eDiscovery dans le journal d’audit.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Élévation du privilège Exchange administrateur**|Génère une alerte lorsqu’une personne se voit attribuer des autorisations administratives dans Exchange Online organisation. Par exemple, lorsqu’un utilisateur est ajouté au groupe de rôles Gestion de l’organisation dans Exchange Online. Cette stratégie a un **paramètre de** gravité faible.|Autorisations|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Messages de courrier contenant un fichier malveillant supprimé après la remise**|Génère une alerte lorsque des messages contenant un fichier malveillant sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
 |**Messages de courrier contenant une URL malveillante supprimée après la remise**|Génère une alerte lorsqu’un message contenant une URL malveillante est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
@@ -141,8 +141,8 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Messages électroniques supprimés après la remise**|Génère une alerte lorsque des messages malveillants qui ne contiennent pas d’entité malveillante (URL ou fichier), ou associés à une campagne, sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**E-mail signalé par l’utilisateur en tant que programme malveillant ou hameçonnage**|Génère une alerte lorsque les utilisateurs de votre organisation signalent des messages comme courrier de hameçonnage à l’aide du module de rapport du message. Cette stratégie a un **paramètre de** gravité faible. Pour plus d’informations sur ce module complémentaire, voir Utiliser le module [complémentaire Message de rapport.](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) Pour les clients Office 365 P2, E5 et G5, cette alerte déclenche automatiquement une enquête et une réponse automatisées [dans Office 365](../security/office-365-security/office-365-air.md).|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Limite d’envoi de courrier électronique dépassée**|Génère une alerte lorsqu’une personne de votre organisation a envoyé plus de messages que ce qui est autorisé par la stratégie de courrier indésirable sortant. Cela indique généralement que l’utilisateur envoie trop de messages électroniques ou que le compte peut être compromis. Cette stratégie a un **paramètre de** gravité moyenne. Si vous recevez une alerte générée par cette stratégie d’alerte, il est bon de vérifier si le compte d’utilisateur [est compromis.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
-|**Formulaire bloqué en raison d’une tentative de hameçonnage potentielle**|Génère une alerte lorsqu’une personne de votre organisation a été restreinte au partage de formulaires et à la collecte de réponses à l’aide de Microsoft Forms en raison d’un comportement répété de tentative de hameçonnage. Cette stratégie a un **paramètre de gravité** élevée.|Gestion des menaces|E1, E3/F3 ou E5|
-|**Formulaire marqué et confirmé comme hameçonnage**|Génère une alerte lorsqu’un formulaire créé dans Microsoft Forms à partir de votre organisation a été identifié comme hameçonnage potentiel par le biais du signalement de l’abus et confirmé comme hameçonnage par Microsoft. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E1, E3/F3 ou E5|
+|**Formulaire bloqué en raison d’une tentative d’hameçonnage potentielle**|Génère une alerte lorsqu’une personne de votre organisation a été restreinte au partage de formulaires et à la collecte de réponses à l’aide de Microsoft Forms en raison d’un comportement répété de tentative de hameçonnage. Cette stratégie a un **paramètre de gravité** élevée.|Gestion des menaces|E1, E3/F3 ou E5|
+|**Formulaire marqué d'un indicateur et confirmé comme hameçonnage**|Génère une alerte lorsqu’un formulaire créé dans Microsoft Forms à partir de votre organisation a été identifié comme hameçonnage potentiel par le biais du signalement de l’abus et confirmé comme hameçonnage par Microsoft. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E1, E3/F3 ou E5|
 |**Les messages ont été retardés**|Génère une alerte lorsque Microsoft ne peut pas remettre de messages électroniques à votre organisation sur site ou à un serveur partenaire à l’aide d’un connecteur. Lorsque cela se produit, le message est mis en file d’attente Office 365. Cette alerte est déclenchée lorsqu’au moins 2 000 messages ont été mis en file d’attente pendant plus d’une heure. Cette stratégie a un **paramètre de** gravité élevée.|Flux de messagerie|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Campagne anti-programme malveillant détectée après la remise**|Génère une alerte lorsqu’un nombre anormalement élevé de messages contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
 |**Campagne anti-programme malveillant détectée et bloquée**|Génère une alerte lorsqu’une personne a tenté d’envoyer un nombre anormalement élevé de messages électroniques contenant un certain type de programme malveillant aux utilisateurs de votre organisation. Si cet événement se produit, les messages infectés sont bloqués par Microsoft et ne sont pas remis aux boîtes aux lettres. Cette stratégie a un **paramètre de** gravité faible.|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
@@ -162,16 +162,18 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Augmentation inhabituelle des e-mails signalés en tant que hameçonnage**|Génère une alerte lorsqu’il y a une augmentation significative du nombre de personnes dans votre organisation qui utilisent le add-in Signaler un message dans Outlook pour signaler des messages comme courrier de hameçonnage. Cette stratégie a un **paramètre de** gravité moyenne. Pour plus d’informations sur ce module complémentaire, voir Utiliser le module [complémentaire Message de rapport.](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Hameçonnage d’emprunt d’identité d’utilisateur remis dans la boîte de réception/le dossier**<sup>1,</sup><sup>2</sup>|Génère une alerte lorsque Microsoft détecte qu’un remplacement d’administrateur ou d’utilisateur a autorisé la remise d’un message de hameçonnage d’emprunt d’identité d’utilisateur dans la boîte de réception (ou un autre dossier accessible à l’utilisateur) d’une boîte aux lettres. Parmi les exemples de remplacements figurent une règle de boîte de réception ou de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie anti-courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un **paramètre de** gravité moyenne.|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Utilisateur restreint à l’envoi de courrier électronique**|Génère une alerte lorsqu’une personne de votre organisation est limitée à l’envoi de messages sortants. Cela se produit généralement lorsqu’un compte est compromis et que l’utilisateur est répertorié dans la **page** Utilisateurs restreints du Centre de conformité Microsoft 365. (Pour accéder à cette page, accédez à Gestion des **menaces > examiner > utilisateurs restreints).** Cette stratégie a un **paramètre de** gravité élevée. Pour plus d’informations sur les utilisateurs restreints, voir Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste d’adresses IP bloqués après l’envoi de [courrier indésirable.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
-|**Utilisateur restreint au partage de formulaires et à la collecte de réponses**|Génère une alerte lorsqu’une personne de votre organisation a été restreinte au partage de formulaires et à la collecte de réponses à l’aide de Microsoft Forms en raison d’un comportement répété de tentative de hameçonnage. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E1, E3/F3 ou E5|
+|**L’utilisateur ne peut pas partager de formulaires et collecter des réponses**.|Génère une alerte lorsqu’une personne de votre organisation a été restreinte au partage de formulaires et à la collecte de réponses à l’aide de Microsoft Forms en raison d’un comportement répété de tentative de hameçonnage. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E1, E3/F3 ou E5|
 
 > [!NOTE]
 > <sup>1</sup> Nous avons temporairement supprimé cette stratégie d’alerte par défaut en fonction des commentaires des clients. Nous travaillons pour l’améliorer et la remplacerons par une nouvelle version prochainement. En attendant, vous pouvez créer une stratégie d’alerte personnalisée pour remplacer cette fonctionnalité à l’aide des paramètres suivants : <ul><li>L’activité est le courrier de hameçonnage détecté au moment de la remise</li> <li>Le courrier n’est pas ZAP’d</li> <li>Sens du courrier entrant</li> <li>L’état de remise du courrier est remis</li> <li>La technologie de détection est la rétention d’URL malveillantes, la détonation d’URL, le filtre d’hameçonnage avancé, le filtre d’hameçonnage général, l’emprunt d’identité de domaine, l’emprunt d’identité d’utilisateur et l’emprunt d’identité de marque</li></ul> Pour plus d’informations sur l’anti-hameçonnage dans Office 365, voir Configurer des stratégies [anti-hameçonnage et anti-hameçonnage.](../security/office-365-security/set-up-anti-phishing-policies.md)<br/><br/><sup>2 Pour recréer</sup> cette stratégie d’alerte, suivez les instructions de la note de bas de page précédente, mais choisissez l’emprunt d’identité d’utilisateur comme seule technologie de détection.
 
 L’activité inhabituelle surveillée par certaines des stratégies intégrées est basée sur le même processus que le paramètre de seuil d’alerte précédemment décrit. Microsoft établit une valeur de référence qui définit la fréquence normale de l’activité « habituelle ». Les alertes sont ensuite déclenchées lorsque la fréquence des activités de suivi par la stratégie d’alerte intégrée dépasse largement la valeur de référence.
 
-## <a name="viewing-alerts"></a>Affichage des alertes
+<a name="viewing-alerts"></a>
 
-Lorsqu’une activité effectuée par les utilisateurs de votre organisation correspond aux paramètres d’une stratégie d’alerte, une alerte est générée et affichée sur la page **Alertes** dans le centre de conformité ou le portail Defender. Selon les paramètres d’une stratégie d’alerte, une notification par courrier électronique est également envoyée à une liste d’utilisateurs spécifiés lorsqu’une alerte est déclenchée. Pour chaque alerte, le tableau de bord de la page **Alertes** affiche le nom de la stratégie d’alerte correspondante, la gravité et la catégorie de l’alerte (définie dans la stratégie d’alerte) et le nombre de fois qu’une activité s’est produite et a généré l’alerte. Cette valeur est basée sur le paramètre de seuil de la stratégie d’alerte. Le tableau de bord affiche également l’état de chaque alerte. Pour plus d’informations sur l’utilisation de la propriété d’état pour gérer les alertes, voir [Gestion des alertes.](#managing-alerts)
+## <a name="view-alerts"></a>Afficher les alertes
+
+Lorsqu’une activité effectuée par les utilisateurs de votre organisation correspond aux paramètres d’une stratégie d’alerte, une alerte est générée et affichée sur la page **Alertes** dans le centre de conformité ou le portail Defender. Selon les paramètres d’une stratégie d’alerte, une notification par courrier électronique est également envoyée à une liste d’utilisateurs spécifiés lorsqu’une alerte est déclenchée. Pour chaque alerte, le tableau de bord de la page **Alertes** affiche le nom de la stratégie d’alerte correspondante, la gravité et la catégorie de l’alerte (définie dans la stratégie d’alerte) et le nombre de fois qu’une activité s’est produite et a généré l’alerte. Cette valeur est basée sur le paramètre de seuil de la stratégie d’alerte. Le tableau de bord affiche également l’état de chaque alerte. Pour plus d’informations sur l’utilisation de la propriété d’état pour gérer les alertes, voir [Gestion des alertes.](#manage-alerts)
 
 Pour afficher les alertes :
 
@@ -183,7 +185,7 @@ Pour afficher les alertes :
 
 ### <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
-Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and then select **Incidents &**  >  **alerts**. Vous pouvez également y aller <https://security.microsoft.com/alerts> directement.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and then select **Incidents &**  >  **alerts**. Vous pouvez également y aller <https://security.microsoft.com/alerts> directement.
 
 ![Dans le portail Microsoft 365 Defender, sélectionnez Incidents & alertes, puis sélectionnez Alertes.](../media/ViewAlertsDefenderPortal.png)
 
@@ -201,7 +203,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 
 - **Balises.** Utilisez ce filtre pour afficher les alertes à partir d’une ou plusieurs balises utilisateur. Les balises sont reflétées en fonction des boîtes aux lettres marquées ou des utilisateurs qui apparaissent dans les alertes. Pour en savoir plus, consultez les balises utilisateur [Office 356 ATP.](../security/office-365-security/user-tags.md)
 
-- **Source.** Utilisez ce filtre pour afficher les alertes déclenchées par les stratégies d’alerte dans le centre de conformité ou les alertes déclenchées par Sécurité des applications cloud Office 365 stratégies, ou les deux. Pour plus d’informations sur Sécurité des applications cloud Office 365 d’alertes, voir [Sécurité des applications cloud alertes.](#viewing-cloud-app-security-alerts)
+- **Source.** Utilisez ce filtre pour afficher les alertes déclenchées par les stratégies d’alerte dans le centre de conformité ou les alertes déclenchées par Sécurité des applications cloud Office 365 stratégies, ou les deux. Pour plus d’informations Sécurité des applications cloud Office 365 alertes, voir [Viewing Defender for Cloud Apps alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Le filtrage et le tri par balises utilisateur sont actuellement en prévisualisation publique.
@@ -220,7 +222,6 @@ La durée de l’intervalle d’agrégation dépend de votre abonnement Office 3
 |Module de conformité E5 ou module de découverte et audit E5|1 minute|
 |Office 365 ou Microsoft 365 E1/F1/G1 ou E3/F3/G3|15 minutes|
 |Defender for Office 365 Plan 1 ou Exchange Online Protection|15 minutes|
-
 
 Lorsque des événements qui correspondent à la même stratégie d’alerte se produisent dans l’intervalle d’agrégation, des détails sur l’événement suivant sont ajoutés à l’alerte d’origine. Pour tous les événements, les informations sur les événements agrégés sont affichées dans le champ Détails et le nombre de fois qu’un événement s’est produit avec l’intervalle d’agrégation est affiché dans le champ activité/nombre d’accès. Vous pouvez afficher plus d’informations sur toutes les instances d’événements agrégés en visualxant la liste d’activités.
 
@@ -258,15 +259,15 @@ Pour voir à quelle catégorie une stratégie d’alerte par défaut est affect�
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion de la disposition|||||||
-|Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
+|Gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
 |Analyste de la protection des informations||![Coche.](../media/checkmark.png)|||||
-|Enquêteur de la protection des informations||![Marque de vérification.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
+|Enquêteur de la protection des informations||![Coche.](../media/checkmark.png)|||||
+|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrement|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion des enregistrement|![Coche.](../media/checkmark.png)||||||
 |Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
@@ -278,27 +279,28 @@ Pour voir à quelle catégorie une stratégie d’alerte par défaut est affect�
 |Administrateur de la révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||
 |View-Only gestion des appareils|||||||
-|View-Only de conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
+|View-Only de conformité DLP||![Coche.](../media/checkmark.png)|||||
 |View-Only gérer les alertes||||||![Coche](../media/checkmark.png)|
 |Afficher uniquement les destinataires|||![Coche](../media/checkmark.png)||||
 |View-Only gestion des enregistrement|![Coche](../media/checkmark.png)||||||
 |View-Only rétention des données|![Coche](../media/checkmark.png)||||||
 
-
 > [!TIP]
 > Pour afficher les rôles attribués à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans le Centre de sécurité & conformité PowerShell :
-> 
+>
 > ```powershell
 > $RoleGroups = Get-RoleGroup
 > ```
-> 
+>
 > ```powershell
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >
 > Vous pouvez également afficher les rôles attribués à un groupe de rôles dans le Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender web. Go to the **Permissions** page, and select a role group. Les rôles attribués sont répertoriés dans la page volante.
 
-## <a name="managing-alerts"></a>Gestion des alertes
+<a name="manage-alerts"></a>
+
+## <a name="manage-alerts"></a>Gérer des alertes
 
 Une fois que les alertes ont été générées et affichées sur la page **Alertes** dans le centre de conformité, vous pouvez les trier, les examiner et les résoudre. Les mêmes [autorisations RBAC qui](#rbac-permissions-required-to-view-alerts) donnent aux utilisateurs l’accès aux alertes leur donnent également la possibilité de gérer les alertes.
 
@@ -324,19 +326,21 @@ Voici quelques tâches que vous pouvez effectuer pour gérer les alertes.
 
 - **Résoudre les alertes.** Vous pouvez marquer une alerte comme résolue sur la page volante d’une alerte (qui définit l’état de l’alerte **sur Résolu).** Sauf si vous modifiez le filtre, les alertes résolues ne sont pas affichées sur la page **Alertes.**
 
-## <a name="viewing-cloud-app-security-alerts"></a>Affichage Sécurité des applications cloud alertes
+<a name="viewing-cloud-app-security-alerts"></a>
 
-Les alertes déclenchées par Sécurité des applications cloud Office 365 stratégies sont désormais affichées dans la page **Alertes** du Centre de conformité. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par des stratégies de détection d’anomalies dans Sécurité des applications cloud Office 365. Cela signifie que vous pouvez afficher toutes les alertes dans le centre de conformité. Sécurité des applications cloud Office 365 est uniquement disponible pour les organisations Office 365 Entreprise un abonnement E5 ou Office 365 gouvernement américain G5. Pour plus d’informations, voir [Vue d’ensemble Sécurité des applications cloud](/cloud-app-security/what-is-cloud-app-security).
+## <a name="view-defender-for-cloud-apps-alerts"></a>Afficher les alertes De Defender pour les applications cloud
 
-Les organisations qui Microsoft Cloud App Security dans le cadre d’un abonnement Enterprise Mobility + Security E5 ou en tant que service autonome peuvent également afficher les alertes Sécurité des applications cloud associées à Microsoft 365  applications et services dans le Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender client.
+Les alertes déclenchées par Sécurité des applications cloud Office 365 stratégies sont désormais affichées dans la page **Alertes** du Centre de conformité. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par des stratégies de détection d’anomalies dans Sécurité des applications cloud Office 365. Cela signifie que vous pouvez afficher toutes les alertes dans le centre de conformité. Sécurité des applications cloud Office 365 est uniquement disponible pour les organisations Office 365 Entreprise un abonnement E5 ou Office 365 gouvernement américain G5. Pour plus d’informations, voir [Vue d’ensemble de Defender pour les applications cloud.](/cloud-app-security/what-is-cloud-app-security)
 
-Pour afficher uniquement Sécurité des applications cloud alertes dans le centre de conformité ou le portail Defender, utilisez le filtre **Source** et sélectionnez **Sécurité des applications cloud**.
+Les organisations qui ont Microsoft Defender pour les applications cloud dans le cadre d’un abonnement Enterprise Mobility + Security E5 ou en tant que service autonome peuvent également afficher les alertes Defender pour les applications cloud liées aux applications et services Microsoft 365 dans le Centre de conformité Microsoft 365 ou portail Microsoft 365 Defender’entreprise.
 
-![Utilisez le filtre Source pour afficher uniquement Sécurité des applications cloud alertes.](../media/FilterCASAlerts.png)
+Pour afficher uniquement les alertes Defender pour les applications cloud dans le centre de conformité ou le portail Defender, utilisez le filtre **Source** et sélectionnez **Defender pour les applications cloud.**
 
-Comme une alerte déclenchée par une stratégie d’alerte dans le centre de conformité, vous pouvez sélectionner une alerte Sécurité des applications cloud pour afficher une page de présentation avec des détails sur l’alerte. L’alerte inclut un lien pour afficher les détails et gérer l’alerte dans le portail Sécurité des applications cloud et un lien vers la stratégie Sécurité des applications cloud correspondante qui a déclenché l’alerte. Voir [Surveiller les alertes dans Sécurité des applications cloud](/cloud-app-security/monitor-alerts).
+![Utilisez le filtre Source pour afficher uniquement les alertes Defender pour les applications cloud.](../media/FilterCASAlerts.png)
 
-![Les détails de l’alerte contiennent des liens vers Sécurité des applications cloud portail.](../media/CASAlertDetail.png)
+Comme une alerte déclenchée par une stratégie d’alerte dans le centre de conformité, vous pouvez sélectionner une alerte Defender pour les applications cloud pour afficher une page de présentation avec des détails sur l’alerte. L’alerte inclut un lien pour afficher les détails et gérer l’alerte dans le portail Defender pour les applications cloud et un lien vers la stratégie Defender for Cloud Apps correspondante qui a déclenché l’alerte. Voir [Surveiller les alertes dans Defender pour les applications cloud.](/cloud-app-security/monitor-alerts)
+
+![Les détails de l’alerte contiennent des liens vers le portail Defender pour les applications cloud.](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> La modification de l’état d’Sécurité des applications cloud alerte dans le centre de conformité ne met pas à jour l’état de résolution de la même alerte dans le portail Sécurité des applications cloud web. Par exemple, si vous marquez  l’état de l’alerte comme Résolu dans le centre de conformité, l’état de l’alerte dans le portail Sécurité des applications cloud reste inchangé. Pour résoudre ou ignorer une alerte Sécurité des applications cloud, gérez l’alerte dans le portail Sécurité des applications cloud web.
+> La modification de l’état d’une alerte Defender pour les applications cloud dans le centre de conformité ne met pas à jour l’état de résolution de la même alerte dans le portail Defender pour les applications cloud. Par exemple, si vous marquez  l’état de l’alerte comme Résolu dans le centre de conformité, l’état de l’alerte dans le portail Defender pour les applications cloud est inchangé. Pour résoudre ou ignorer une alerte Defender pour les applications cloud, gérez l’alerte dans le portail Defender pour les applications cloud.

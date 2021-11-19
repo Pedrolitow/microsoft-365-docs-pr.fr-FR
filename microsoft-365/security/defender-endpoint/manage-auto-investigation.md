@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: d2f4eda359b64b1fe4f7be300980c15485fb2bf5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: fe3149eb4535a306d823c372c06f779aa8c0f379
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963394"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110942"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Examiner les actions de correction à la suite d’un examen automatisé
 
@@ -61,7 +61,7 @@ Qu’elle soit prise automatiquement ou après approbation, une enquête automat
 
 ## <a name="review-pending-actions"></a>Passer en revue les actions en attente
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
 3. Examinez les éléments sous **l’onglet En** attente.
 4. Sélectionnez une action pour ouvrir son volet volant.
@@ -73,7 +73,7 @@ Qu’elle soit prise automatiquement ou après approbation, une enquête automat
 
 ## <a name="review-completed-actions"></a>Passer en revue les actions terminées
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
 3. Examinez les éléments sous **l’onglet** Historique.
 4. Sélectionnez un élément pour afficher plus de détails sur cette action de correction.
@@ -126,7 +126,7 @@ Les niveaux d’automatisation affectent si certaines actions de correction sont
 
 Dans Microsoft Defender pour le point de terminaison, tous les verdicts sont suivis dans le centre [de l’action.](auto-investigation-action-center.md#new-a-unified-action-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les fonctionnalités de réponse en direct](live-response.md)
 - [Recherche proactive des menaces avec le chasse avancée](advanced-hunting-overview.md)

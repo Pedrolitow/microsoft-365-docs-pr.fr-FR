@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 556a76e2305de6137fa16303f9dcbf888384bee5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753182"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111866"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ Cet article fournit des solutions pour vous aider à résoudre les problèmes d'
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
 
-**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
+**Échec de la signature : erreur** *inattendue, essayez plus tard*
 
 :::image type="content" alt-text="Image de l’erreur d’échec de la signature. Erreur inattendue." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
@@ -110,7 +110,7 @@ Defender App demande l’autorisation Optimisation de la batterie/Protection per
 
 **Cause :**
 
-Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
+Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender pour le point de terminaison n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
 
 **Solution :**
 
@@ -133,15 +133,15 @@ Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisation
 
    ![Étape 2 pour modifier la dropdown pour afficher « Toutes les applications ».](images/show-all-apps-1.png)
 
-5. Recherchez « Point de terminaison Microsoft Defender » et **sélectionnez Ne pas optimiser.**
+5. Recherchez « Microsoft Defender pour le point de terminaison », puis **sélectionnez Ne pas optimiser.**
 
-   ![Recherchez « Microsoft Defender Endpoint » et sélectionnez « Ne pas optimiser ».](images/select-dont-optimise.png)
+   ![Recherchez « Microsoft Defender pour le point de terminaison », puis sélectionnez « Ne pas optimiser ».](images/select-dont-optimise.png)
 
-Revenir à l’écran d’intégration du point de terminaison Microsoft Defender, sélectionnez Autoriser **et** vous serez redirigé vers l’écran du tableau de bord.
+Revenir à l’écran d’intégration de Microsoft Defender for Endpoint, sélectionnez Autoriser **et** vous serez redirigé vers l’écran du tableau de bord.
 
 ## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
 
-Si un utilisateur est confronté à un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic**. Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
+Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic.** Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
 
 1.  Ouvrez **l’application MDE** sur votre appareil et cliquez sur l’icône **de profil** dans le coin supérieur gauche.
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e490123a06c2384568e4aabe9119936ed618b2c2
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: e5f76505191b552450440917bf616f7678464524
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240479"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110450"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -37,7 +37,7 @@ ms.locfileid: "60240479"
 Pour intégrer des appareils sans accès à Internet, vous devez suivre les étapes générales suivantes :
 
 > [!IMPORTANT] 
-> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures Windows 8.1 et versions antérieures.
+> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 et versions antérieures.
 
 > [!NOTE]
 > - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les périphériques Windows ou Windows Server déconnectés lorsqu’il est configuré via le Registre ou l’GPO « TelemetryProxyServer ».
@@ -65,13 +65,13 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
 
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 
-- Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
+- Configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
     - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
     - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vers la clé d’espace de travail Defender for Endpoint & ID
 - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
     - Configurer l’adresse IP Azure Log Analytics en tant que proxy
     - ID de clé d’espace de travail Azure Log Analytics & ID
-- Azure Defender
+- Microsoft Defender pour le cloud
     - [Espace de travail \> Analyse des journaux de stratégie de sécurité](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
     - [Détection des \> menaces : autoriser Defender pour le point de terminaison à accéder à mes données](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

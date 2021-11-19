@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756382"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109898"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,7 +44,9 @@ Dans la [rubrique Planification,](deployment-strategy.md) plusieurs méthodes on
 
 Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration.](onboarding.md)
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [des Microsoft Intune](/mem/intune/fundamentals/what-is-intune) pour la gestion des appareils en nuage.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+
+gestion des appareils basée sur la base de.
 
 Cette rubrique guide les utilisateurs dans :
 
@@ -63,7 +65,7 @@ Ces instructions d’intégration vous guident tout au long des étapes de base 
 Voici les liens dont vous aurez besoin pour le reste du processus :
 
 - [Portail MEM](https://aka.ms/memac)
-- [Centre de sécurité](https://securitycenter.windows.com/)
+- [Microsoft Defender pour point de terminaison](https://securitycenter.windows.com/)
 - [Bases de référence de sécurité Intune](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources ci-après :
@@ -81,7 +83,7 @@ Dans cette section, nous allons créer un groupe de test pour affecter vos confi
 > [!NOTE]
 > Intune utilise des groupes Azure Active Directory (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
 >
-> Pour plus d’informations, voir [Ajouter des groupes pour organiser les utilisateurs et les appareils.](/mem/intune/fundamentals/groups-add)
+> Pour plus d’informations, voir [Ajouter des groupes pour organiser les utilisateurs et les appareils](/mem/intune/fundamentals/groups-add).
 
 ### <a name="create-a-group"></a>Créer un groupe
 
@@ -180,7 +182,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Sélectionner **la plateforme - Windows 10 et ultérieures - Windows profil - créer Antivirus Microsoft Defender > .**
+3. Sélectionner **la plateforme - Windows 10 et ultérieures - Windows et profil - Antivirus Microsoft Defender > créer**.
 
 4. Entrez le nom et la description, puis sélectionnez **Suivant.**
 
@@ -278,7 +280,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal27.](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
-6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour la protection web, puis sélectionnez **Suivant.**
+6. Dans la **page Paramètres de configuration**: définissez les configurations dont vous avez besoin pour la protection web, puis sélectionnez  **Suivant**.
 
     > [!NOTE]
     > Nous configurons la protection Web sur Bloquer.
@@ -312,7 +314,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 ### <a name="confirm-policies-have-been-applied"></a>Confirmer que les stratégies ont été appliquées
 
-Une fois que la stratégie de configuration a été affectée, l’application prend un certain temps.
+Une fois la stratégie de configuration affectée, l’application prend un certain temps.
 
 Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune.](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 

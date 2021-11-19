@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960803"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111278"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
@@ -39,7 +39,7 @@ ms.locfileid: "60960803"
 > [!NOTE]
 > Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la détection des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte de périphériques réseau dans Defender pour le point de \) terminaison.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
 
-Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a> et des consoles Microsoft 365 Defender réseau.
+Les fonctionnalités de découverte de réseau sont disponibles dans la section **Inventaire** des appareils du portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender et</a> Microsoft 365 Defender consoles.
 
 Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
 
@@ -99,7 +99,7 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres** \> **rôles**. Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans Defender.** Vous pouvez trouver l’autorisation en allant à **Paramètres** \> **rôles**. Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
@@ -122,7 +122,7 @@ Pour terminer le processus d’inscription du scanneur réseau :
     > [!NOTE]
     > Vous devrez peut-être modifier les paramètres d’invite de commandes pour pouvoir copier l’URL.
 
-2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans le Centre de sécurité ».
+2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans Defender ».
 
 3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
 
@@ -189,7 +189,7 @@ Vérifier que le scanneur s’exécute correctement. Ensuite, allez à la défin
 
 ### <a name="required-threat-and-vulnerability-management-user-permission"></a>Autorisation utilisateur Gestion des menaces et des vulnérabilités requise
 
-L’inscription s’est terminée par une erreur : « Il semble que vous n’avez pas les autorisations suffisantes pour ajouter un nouvel agent. L’autorisation requise est « Gérer les paramètres de sécurité dans le Centre de sécurité ». »
+L’inscription s’est terminée par une erreur : « Il semble que vous n’avez pas les autorisations suffisantes pour ajouter un nouvel agent. L’autorisation requise est « Gérer les paramètres de sécurité dans Defender ». »
 
 Appuyez sur n’importe quelle touche pour quitter.
 

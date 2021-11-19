@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: e614c8abb46b9562db45afb0c3e67d990f627ce6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2992b05c2f5993ec0fb04f1310841a43850d7c36
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747213"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110870"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
@@ -51,7 +51,7 @@ Notre [page de présentation du Gestionnaire](compliance-manager.md) de conformi
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Montée en puissance : configurer le Gestionnaire de conformité pour gérer vos activités de conformité
 
-Une fois que vous êtes familiarisé avec les principes de base, il est temps de configurer les éléments pour répondre aux besoins de votre organisation. Vous pouvez commencer à utiliser les évaluations et à prendre des mesures d’amélioration pour implémenter des contrôles et améliorer votre score de conformité. Le fait de savoir comment effectuer toutes les activités à ce stade peut aider votre organisation à se conformer aux réglementations au sein de votre secteur et de votre région. Consultez les liens ci-dessous pour vous plonger dans :
+Une fois que vous êtes familiarisé avec les principes de base, il est temps de configurer des éléments pour répondre aux besoins de votre organisation. Vous pouvez commencer à utiliser les évaluations et à prendre des mesures d’amélioration pour implémenter des contrôles et améliorer votre score de conformité. Le fait de savoir comment effectuer toutes les activités à ce stade peut aider votre organisation à se conformer aux réglementations au sein de votre secteur et de votre région. Consultez les liens ci-dessous pour vous plonger dans :
 
 - [Choisir une évaluation pré-conçue pour créer et gérer votre première évaluation](compliance-manager-assessments.md)
 - [Comprendre comment utiliser des modèles pour la création d’évaluations](compliance-manager-templates.md)

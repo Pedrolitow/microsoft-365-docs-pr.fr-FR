@@ -1,5 +1,5 @@
 ---
-title: Utiliser des entités nommées dans vos stratégies de protection contre la perte de données (aperçu)
+title: Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti des entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: c1ee219594cc5406fc559ab9e9a489b1d6285af6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661755"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110810"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos stratégies de protection contre la perte de données (aperçu)
+# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 
 > [!IMPORTANT]
 > La fonctionnalité entités nommées est en cours de déploiement et apparaît dans votre client lorsqu’elle est disponible pour vous. Recherchez-les dans l’Explorateur de contenu et dans le flux de authoring de stratégie de protection contre la perte de données (DLP). 
@@ -38,7 +38,7 @@ Vous devez avoir l’un de ces abonnements
 
 - Protection et gouvernance des informations
 - Microsoft 365 E5 Conformité
-- Office 365 E5
+- Office 365 E5
 - Microsoft 365 E5
 
 Pour plus d’informations sur les licences, voir [la description du service.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
@@ -69,46 +69,46 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 
 
 - **Microsoft 3655 eDiscovery** prend en charge l’utilisation d’entités nommées dans les services substrat.
-- **Microsoft Cloud App Security (MCAS)** prend en charge l’utilisation d’entités nommées dans les stratégies MCAS.
-- **La gestion des risques internes prend** en charge l’utilisation d’entités nommées dans les services Substrate.
+- **Microsoft Defender pour les applications cloud prend** en charge l’utilisation d’entités nommées dans les stratégies de Defender for Cloud Apps.
+- **La gestion des risques internes prend** en charge l’utilisation d’entités nommées dans les services substrat.
 - **La conformité des** communications ne prend pas en charge l’utilisation d’entités nommées Exchange règles de transport et de données au repos.
-- **Microsoft Information Governance** (MIG) ne prend pas en charge l’utilisation d’entités nommées dans les règles de transport Exchange et les données au repos.
+- **Microsoft Information Governance** (MIG) ne prend pas en charge l’utilisation d’entités nommées dans Exchange règles de transport et de données au repos.
  
 ### <a name="unified-dlp"></a>DLP unifiée
 
 |Charge de travail/services  |Prise en charge de la prévisualisation publique pour les entités nommées  |
 |---------|---------|
-|Office Conseil de stratégie des clients Win32    |non pris en charge  |
-|Office Conseil de stratégie des clients WAC    |Pris en charge         |
+|Office conseil de stratégie des clients Win32    |non pris en charge  |
+|Office conseil de stratégie des clients WAC    |Pris en charge         |
 |OWA conseil de stratégie     |non pris en charge         |
 |Outlook conseil de stratégie     |non pris en charge |
 |Points de terminaison (Windows 10 périphériques)     |non pris en charge  |
-|Exchange Règles de transport     |non pris en charge |
+|Exchange transport     |non pris en charge |
 |OneDrive Entreprise données au repos     |Pris en charge         |
-|SharePoint Données au repos en ligne     |Pris en charge         |
+|SharePoint données au repos en ligne     |Pris en charge         |
 |Teams données au repos     |Pris en charge         |
 |Données au repos des messages électroniques     |non pris en charge         |
-|Microsoft Cloud App Security (MCAS)     |Pris en charge         |
+|Microsoft Defender for Cloud Apps     |Pris en charge         |
 
 ### <a name="autolabeling"></a>Autolabeling
 
 |Charge de travail/services |Prise en charge de la prévisualisation publique pour les entités nommées  |
 |---------|---------|
-|Office Clients Win32 hors connexion   |pris en charge, l’utilisateur doit sélectionner une étiquette et appliquer manuellement |
+|Office clients Win32 hors connexion   |pris en charge, l’utilisateur doit sélectionner une étiquette et appliquer manuellement |
 |Online Office clients Win32 en ligne|pris en charge avec l’ancien schéma de confiance |
 |Outlook en ligne   |pris en charge avec l’ancien schéma de confiance  |
-|Office Client WAC     |Pris en charge |
+|Office client WAC     |Pris en charge |
 |OWA     |Pris en charge |
 |Exchange transport     |non pris en charge |
 |OneDrive Entreprise données au repos     |Pris en charge |
-|SharePoint Données au repos en ligne|Pris en charge|
+|SharePoint données au repos en ligne|Pris en charge|
 |Scanneur Azure Information Protection (AIP)|non pris en charge|
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 |Problème  |Impact  |
 |---------|---------|
-|Conseils de stratégie DLP (OWA, Outlook, Office clients Win32)     |   Les conseils de stratégie avec condition d’entité entraînent « aucune correspondance »      |
+|Conseils de stratégie DLP (OWA, Outlook, Office clients Win32)     |   Les conseils de stratégie avec condition d’entité entraînent l’absence de correspondance      |
 | Prise en charge des langues asiatiques pour le nom de la personne (chinois, japonais, coréen)    | Entités nommées uniquement prise en charge pour le jeu de caractères en caractères latins (autrement dit, kanji non pris en charge) pour le nom de la personne        |
 |Charge de travail des appareils (point de terminaison)     | Non pris en charge en tant que charge de travail : la stratégie de authoring avec des entités nommées n’est pas autorisée        |
 |Référentiels locaux    | Non pris en charge en tant que charge de travail|

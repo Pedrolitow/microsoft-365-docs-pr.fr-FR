@@ -15,26 +15,26 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d968afeaf484387597d6672bf4db1a01180e52a4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643146"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110570"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
 6 minutes de lecture
 
-S’applique à :
+S’applique à :
 
 - Windows sessions multiples s’exécutant sur Azure Virtual Desktop (AVD)
 
-Microsoft Defender pour endpoint prend en charge la surveillance des sessions VDI et Azure Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Azure Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
+Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Azure Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Azure Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Familiarisez-vous avec [les considérations pour les VDI non persistants.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
+Familiarisez-vous avec les considérations pour [les VDI non persistants.](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Bien [qu’Azure Virtual Desktop](/azure/virtual-desktop/overview) ne propose pas d’options de non-persistance, il offre des moyens d’utiliser une image Windows de premier choix qui peut être utilisée pour mettre en service de nouveaux hôtes et redéployer des ordinateurs. Cela augmente la sécurité dans l’environnement et a un impact sur les entrées créées et conservées dans le portail Microsoft Defender pour points de terminaison, ce qui réduit potentiellement la visibilité de vos analystes de sécurité.
 
 > [!NOTE]
 > En fonction de votre choix de méthode d’intégration, les appareils peuvent apparaître dans le portail Microsoft Defender pour Endpoint comme :
@@ -42,7 +42,7 @@ Familiarisez-vous avec [les considérations pour les VDI non persistants.](/micr
 > - Entrée unique pour chaque bureau virtuel
 > - Plusieurs entrées pour chaque bureau virtuel
 
-Microsoft recommande l’intégration d’Azure Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint se trouve dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender pour Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment.
+Microsoft recommande l’intégration d’Azure Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender pour Point de terminaison est dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender for Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment.
 
 Microsoft recommande d’ajouter le script d’intégration Microsoft Defender for Endpoint à l’image de qualité WVD. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage au premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image WVD de premier niveau. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine.
 
@@ -55,7 +55,7 @@ Il existe plusieurs façons d’intégrer un ordinateur hôte WVD :
 
 - Exécutez le script dans l’image de choix (ou à partir d’un emplacement partagé) au démarrage.
 - Utilisez un outil de gestion pour exécuter le script.
-- Par le [biais de l’intégration à Azure Defender](azure-server-integration.md)
+- Par [le biais de l’intégration à Microsoft Defender pour le cloud](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Scénario 1 : utilisation d’une stratégie de groupe locale*
 
@@ -73,7 +73,7 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 1. Ouvrir le fichier de configuration du package VDI .zip (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. Dans le volet Microsoft 365 Defender navigation du  portail, sélectionnez Paramètres l’intégration des points de terminaison \>  \>  (sous **Gestion des appareils).**
+    1. Dans le volet Microsoft 365 Defender navigation du  portail, sélectionnez Paramètres l’intégration des points de \>  \>  terminaison (sous **Gestion des appareils).**
     1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le **champ Méthode de** déploiement, sélectionnez les scripts d’intégration VDI pour les points de terminaison non persistants.
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
@@ -88,11 +88,11 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 3. Cliquez avec le bouton droit **sur Tâches programmées,** **cliquez** sur Nouveau, puis sur **Tâche** immédiate (au moins Windows 7).
 
-4. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le** groupe, puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+4. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le groupe,** puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
 5. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
-6. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes :
+6. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes :
 
    `Action = "Start a program"`
 
@@ -144,7 +144,7 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 `\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
-**Exclure des processus :**
+**Exclure les processus :**
 
 `%ProgramFiles%\FSLogix\Apps\frxccd.exe`
 
@@ -154,8 +154,8 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 #### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Remarque sur la gestion des licences : lors de l’utilisation de Windows Enterprise multisessexe, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour le point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou faire en sorte que la VM soit sous licence via Azure Defender.
-Les conditions de licence pour Microsoft Defender pour le point de terminaison se trouvent dans : [Exigences de licence.](minimum-requirements.md#licensing-requirements)
+Remarque sur la gestion des licences : lors de l’utilisation de Windows Enterprise multisessexe, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour le point de terminaison (par utilisateur), Windows Enterprise E5, sécurité Microsoft 365 ou Microsoft 365 E5 ou avoir une licence d’utilisation de la VM via Microsoft Defender pour le cloud.
+Les conditions de licence pour Microsoft Defender pour le point de terminaison sont à l’aide des critères de licence [:](minimum-requirements.md#licensing-requirements)
 
 #### <a name="related-links"></a>Liens connexes
 

@@ -15,18 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f97a5ae486ff2ebd39a1adedeb008ac675ee9941
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 60f59796f585e472673d5c230fcbe303460e7372
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962818"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109886"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
-## <a name="licensing"></a>Gestion des licences
+## <a name="licensing"></a>Licences
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
@@ -136,18 +136,18 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Afficher les données de protection des imprimantes des contrôles d’appareil dans le portail Microsoft Defender pour les points de terminaison
 
-Le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de sécurité affiche</a> l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender affiche</a> l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
 
 ```kusto
 DeviceEvents
-| where ActionType == 'PrintJobBlocked'
-| extend parsed=parse_json(AdditionalFields)
-| extend PrintedFile=tostring(parsed.JobOrDocumentName)
-| extend PrintPortName=tostring(parsed.PortName)
-| extend PrinterName=tostring(parsed.PrinterName)
-| extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-| order by Timestamp desc
+| where ActionType == 'PrintJobBlocked'
+| extend parsed=parse_json(AdditionalFields)
+| extend PrintedFile=tostring(parsed.JobOrDocumentName)
+| extend PrintPortName=tostring(parsed.PortName)
+| extend PrinterName=tostring(parsed.PrinterName)
+| extend Policy=tostring(parsed.RestrictionReason) 
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| order by Timestamp desc
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="recherche avancée.":::
@@ -172,15 +172,3 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="recherche avancée":::
-
-
-
-
-
-
-
-
- 
- 
- 
- 

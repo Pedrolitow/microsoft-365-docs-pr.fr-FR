@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
-ms.openlocfilehash: 42a96a746317b85cd0634e5f4cb7964a6caeaa40
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 263791549e314a116f21231e8dc4cde5be380cb7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963262"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110606"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -41,7 +41,7 @@ Regardez cette vidéo pour obtenir un résumé rapide de la création d’un cla
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
@@ -106,7 +106,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
    > [!TIP]
    > Si vous créez un site et un dossier pour vos données d’amorçage, autorisez l’indexation d’au moins une heure de cet emplacement avant de créer le classifieur entraisable qui utilisera ces données d’amorçage.
 
-3. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> ou Microsoft 365 classification des données du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre</a>  >  **de sécurité.**
+3. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ou Microsoft 365 Defender classification</a>des données du  >  **portail.**
 
 4. Sélectionnez **l’onglet Classifieurs avec formation.**
 

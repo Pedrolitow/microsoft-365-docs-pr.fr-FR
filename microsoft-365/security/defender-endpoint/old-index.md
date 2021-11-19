@@ -14,19 +14,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c19189ab33fca3c537347c0d20d14d602fe99da3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206876"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109034"
 ---
 # <a name="threat-protection"></a>Protection contre les menaces
 
 [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Defender for Endpoint protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
 
 > [!TIP]
-> Permet à vos utilisateurs d’accéder facilement aux services cloud et aux applications sur site et d’activer des fonctionnalités de gestion modernes pour tous les appareils. Pour plus d’informations, voir [Sécuriser vos employés distants.](/enterprise-mobility-security/remote-work/) 
+> Permet à vos utilisateurs d’accéder facilement aux services cloud et aux applications sur site et d’activer les fonctionnalités de gestion modernes pour tous les appareils. Pour plus d’informations, voir [Sécuriser vos employés distants.](/enterprise-mobility-security/remote-work/) 
 
 <center><h2>Microsoft Defender pour point de terminaison</center></h2>
 <table>
@@ -55,7 +55,7 @@ ms.locfileid: "60206876"
 **[Menaces & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)**<br>
 Cette fonctionnalité intégrée utilise une approche basée sur le risque qui change la donne pour découvrir, hiérarchiser et corriger les vulnérabilités et erreurs de configuration des points de terminaison.
 
-- [Vue d’ensemble & gestion des vulnérabilités menace](next-gen-threat-and-vuln-mgt.md)
+- [Vue d’ensemble & gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Prise en main](tvm-prerequisites.md)
 - [Accéder à votre posture de sécurité](tvm-dashboard-insights.md)
 - [Améliorer votre état de la sécurité et réduire les risques](tvm-security-recommendation.md)
@@ -112,7 +112,7 @@ En plus de répondre rapidement aux attaques avancées, Microsoft Defender pour 
 <a name="mte"></a>
 
 **[Spécialistes des menaces Microsoft](microsoft-threat-experts.md)**<br>
-Le nouveau service de recherche contre les menaces gérées de Microsoft Defender pour point de terminaison fournit une recherche proactive, la hiér donc, ainsi que des informations et un contexte supplémentaires. Spécialistes des menaces Microsoft permet aux centres d’opérations de sécurité (SOC) d’identifier les menaces et d’y répondre rapidement et avec précision.
+Le nouveau service de recherche contre les menaces gérées de Microsoft Defender pour point de terminaison fournit une recherche proactive, la hiér donc, ainsi que des informations et un contexte supplémentaires. Spécialistes des menaces Microsoft permet aux centres d’opérations de sécurité (SOC) d’identifier les menaces et de répondre rapidement et avec précision aux menaces.
 
 - [Notification d’attaque ciblée](microsoft-threat-experts.md)
 - [Experts à la demande](microsoft-threat-experts.md)
@@ -130,13 +130,13 @@ Intégrez Microsoft Defender pour point de terminaison à vos flux de travail ex
 
 <a name="integration"></a>
 **[Intégration aux solutions Microsoft](threat-protection-integration.md)** <br>
- Microsoft Defender pour point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
+ Microsoft Defender pour le point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
 - Intune
 - Microsoft Defender pour Office 365
 - Microsoft Defender pour l’identité
-- Azure Defender
+- Microsoft Defender pour le cloud
 - Skype Entreprise
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>

@@ -1,6 +1,6 @@
 ---
 title: Promouvoir votre environnement d Microsoft 365 Defender d’évaluation en production
-description: Utilisez cet article pour promouvoir vos evals de MDI, MDO, MDE et MCAS dans votre environnement en Microsoft 365 Defender ou M365D.
+description: Utilisez cet article pour promouvoir vos evals de MDI, MDO, MDE et Defender pour les applications cloud dans votre environnement en Microsoft 365 Defender ou M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eb59cc540d2c77f2d4715aa1c6c12f4e36aec8b0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e43edc826594d5a9b373139707aaaf6b486591ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753046"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111506"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Pour promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production, achetez d’abord la licence nécessaire. Suivez les étapes de la procédure de création de l’environnement [eval](eval-create-eval-environment.md) et achetez la licence Office 365 E5 (au lieu de sélectionner Démarrer l’essai gratuit).
@@ -44,7 +44,7 @@ Defender for Identity ne nécessite aucune configuration supplémentaire. Assure
 
 Après avoir correctement évalué ou piloté MDO, il peut être promu dans l’ensemble de votre environnement de production.
 
-1. Achetez et provisionez les licences nécessaires et attribuez-les à vos utilisateurs de production.
+1. Achetez et provisionez les licences nécessaires et affectez-les à vos utilisateurs de production.
 2. Ré-exécutez les configurations de stratégie de base recommandées (standard ou strict) sur votre domaine de messagerie de production ou sur des groupes d’utilisateurs spécifiques.
 3. Vous pouvez éventuellement créer et configurer des stratégies MDO personnalisées par rapport à votre domaine de messagerie de production ou à des groupes d’utilisateurs.  Toutefois, n’oubliez pas que les stratégies de référence attribuées seront toujours prioritaires sur les stratégies personnalisées.
 4. Mettez à jour l’enregistrement MX public pour votre domaine de messagerie de production afin qu’il soit résolu directement dans EOP.
@@ -61,6 +61,6 @@ Utilisez les instructions générales suivantes pour intégrer davantage d’app
 3. Utilisez l’outil de gestion et la méthode de déploiement appropriés pour vos appareils.
 4. Exécutez un test de détection pour vérifier que les appareils sont correctement intégrés et qu’ils font des rapports au service.
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security ne nécessite aucune configuration supplémentaire. Assurez-vous simplement que vous avez acheté les licences nécessaires. Si vous avez étendue le déploiement à certains groupes d’utilisateurs, augmentez l’étendue de ces groupes jusqu’à ce que vous atteignez l’échelle de production.
+Microsoft Defender pour les applications cloud ne nécessite aucune configuration supplémentaire. Assurez-vous simplement que vous avez acheté les licences nécessaires. Si vous avez étendue le déploiement à certains groupes d’utilisateurs, augmentez l’étendue de ces groupes jusqu’à ce que vous atteignez l’échelle de production.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le modèle de détection des privilèges client-avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans Advanced eDiscovery cas.
-ms.openlocfilehash: 31520faef70f58fb2ac623645a50f2fa30336077
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 10a3f78537b17d8b74299e7960234c27fa3089ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071481"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111089"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurer la détection des privilèges client-avocat dans Advanced eDiscovery
 
@@ -79,7 +79,7 @@ Pour télécharger une liste d’avocats à utiliser par le modèle de détectio
 
    La page **Privilège client-avocat** s’affiche et le basculement de détection des privilèges **client-avocat** est allumé.
 
-   ![Page volant de privilège client-avocat.](../media/AeDUploadAttorneyList.png)
+   ![Page de volant de privilège client-avocat](..\media\AeDUploadAttorneyList1.png)
 
 3. Sélectionnez **Choisir** un fichier, puis recherchez et sélectionnez le .csv que vous avez créé à l’étape 1.
 

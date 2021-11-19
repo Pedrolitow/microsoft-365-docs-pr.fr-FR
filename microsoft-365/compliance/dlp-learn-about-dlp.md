@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: 2552fe2482ba06fd34403fe2ff690bdf11c7bd20
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950556"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106526"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -38,13 +38,13 @@ Microsoft 365 détecte les éléments sensibles à l’aide d’une analyse appr
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>La DLP fait partie de l’offre plus Microsoft 365 conformité
 
-Microsoft 365 DLP n’est qu’un des outils de conformité Microsoft 365 que vous utiliserez pour protéger vos éléments sensibles où qu’ils habitent ou se déplacent. Vous devez comprendre les autres outils de l’ensemble Microsoft 365 conformité, la façon dont ils s’interaraient et fonctionnent mieux ensemble.  Consultez la [Microsoft 365 conformité pour](protect-information.md) en savoir plus sur le processus de protection des informations.
+Microsoft 365 DLP n’est qu’un des outils de conformité Microsoft 365 que vous utiliserez pour protéger vos éléments sensibles où qu’ils habitent ou se déplacent. Vous devez comprendre les autres outils de l’ensemble Microsoft 365 conformité, la façon dont ils s’interaraient et fonctionnent mieux ensemble.  Consultez les [Microsoft 365 conformité pour](protect-information.md) en savoir plus sur le processus de protection des informations.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Actions de protection des stratégies DLP
 
 Microsoft 365 stratégies DLP vous permet de surveiller les activités des utilisateurs sur des éléments sensibles au repos, des éléments sensibles en transit ou des éléments sensibles en cours d’utilisation et de prendre des mesures de protection. Par exemple, lorsqu’un utilisateur tente d’agir de la sorte, par exemple en copiant un élément sensible vers un emplacement non approbé ou en partageant des informations médicales dans un e-mail ou dans d’autres conditions d’une stratégie, la DLP peut :
 
-- afficher un conseil de stratégie de fenêtre pop-up à l’utilisateur l’avertissant qu’il essaie peut-être de partager un élément sensible de manière inappropriée
+- afficher un conseil de stratégie de fenêtre pop-up à l’utilisateur l’avertissant qu’il essaie peut-être de partager un élément sensible de manière inappropriée ;
 - bloquer le partage et, via un conseil de stratégie, permettre à l’utilisateur de remplacer le bloc et de capturer la justification des utilisateurs ;
 - bloquer le partage sans l’option de remplacement
 - pour les données au repos, les éléments sensibles peuvent être verrouillés et déplacés vers un emplacement de mise en quarantaine sécurisé
@@ -77,7 +77,7 @@ Les stratégies DLP peuvent bloquer les activités interdites, telles que le par
 
 **Planification de la culture organisationnelle pour la DLP**
 
-Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement des conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
+Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement les conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -89,7 +89,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Sites SharePoint Online
 - Comptes OneDrive
 - conversation et messages de canal Teams
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Appareils Windows 10
 - Référentiels locaux
 
@@ -144,7 +144,7 @@ emplacement | Inclure/exclure par|
 |comptes OneDrive |comptes ou groupes de distribution |
 |conversation et messages de canal Teams |comptes |
 |appareils Windows 10 |utilisateurs ou groupe |
-|Microsoft Cloud App Security |instance |
+|Microsoft Defender for Cloud Apps |instance |
 |Référentiels locaux| chemin d’accès au fichier de référentiel|
 
 3. **Choisissez les conditions qui doivent correspondre** pour qu’une stratégie soit appliquée à un élément : vous pouvez accepter des conditions pré-configurées ou définir des conditions personnalisées. En voici quelques exemples :
@@ -158,7 +158,7 @@ emplacement | Inclure/exclure par|
 - SharePoint/Exchange/OneDrive : bloquer l’accès au contenu aux personnes extérieures à votre organisation. Affichez un conseil à l’utilisateur et envoyez-lui une notification par courrier électronique lui avertissant qu’il prend une action qui est interdite par la stratégie DLP.
 - Teams chat et canal : empêcher le partage d’informations sensibles dans la conversation ou le canal
 - Windows 10 : auditer ou restreindre la copie d’un élément sensible sur un périphérique USB à supprimer
-- Office applications : affichez une fenêtre popup pour avertir l’utilisateur qu’il s’engage dans un comportement risqué et qu’il bloque ou bloque, mais autorise le remplacement.
+- Office applications : afficher une fenêtre popup pour avertir l’utilisateur qu’il s’engage dans un comportement risqué et bloquer ou bloquer, mais autoriser le remplacement.
 - Partages de fichiers locaux : déplacer le fichier de l’endroit où il est stocké vers un dossier de mise en quarantaine
 
 > [!NOTE]
@@ -199,7 +199,7 @@ Vous pouvez également afficher les détails de l’événement associé avec de
 Les rapports [DLP montrent](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) de larges tendances au fil du temps et donnent des informations spécifiques sur :
 
 - **Correspondances de stratégies DLP** au fil du temps et filtrage par plage de dates, emplacement, stratégie ou action
-- **Les correspondances d’incident DLP** montrent également des correspondances au fil du temps, mais s’pivotent sur les éléments plutôt que sur les règles de stratégie.
+- **Les correspondances d’incident DLP** montrent également les correspondances au fil du temps, mais s’pivotent sur les éléments plutôt que sur les règles de stratégie.
 - **Les remplacements** et faux positifs DLP indiquent le nombre de faux positifs et, s’ils sont configurés, les remplacements par l’utilisateur, ainsi que la justification de l’utilisateur.
 
 ### <a name="dlp-activity-explorer"></a>Explorateur d’activités DLP
@@ -222,4 +222,4 @@ Pour découvrir comment utiliser la protection contre la perte de données pour 
 
 ## <a name="licensing-and-subscriptions"></a>Licences et abonnements
 
-Pour plus [d’informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) sur les abonnements qui la prise en charge de la protection contre lalp, consultez les conditions de
+Pour plus [d’informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) sur les abonnements qui offrent une prise en charge de la protection contre lalp, consultez les conditions de licence requises pour la Protection des informations.

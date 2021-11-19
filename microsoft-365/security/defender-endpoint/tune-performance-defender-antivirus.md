@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884012"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110438"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -53,7 +53,7 @@ Pour commencer à enregistrer les événements système, ouvrez PowerShell en mo
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlet, voir [Defender.](/powershell/module/defender)
+    où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlets, [voir Antivirus Microsoft Defender cmdlets.](/powershell/module/defender)
 
 2. S’il existe des processus ou des services qui semblent affecter les performances, reproduisez la situation en réalisation des tâches pertinentes.
 
@@ -87,7 +87,7 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 
 - **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Conditions requises
+### <a name="requirements"></a>Configuration requise
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et Windows Server 2016 versions ultérieures
@@ -123,14 +123,14 @@ Pour plus d’informations sur l’analyseur de performances, voir la documentat
 
 **Versions de système d’exploitation prise en charge**
 
-Windows Version 10 et ultérieures.
+Windows version 10 et ultérieures.
 
 > [!NOTE]
 > Cette fonctionnalité est disponible à partir de la plateforme 4.18.2108.X et versions ultérieures.
 
 #### <a name="examples-new-mpperformancerecording"></a>Exemples : New-MpPerformanceRecording
 
-##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : Collecter un enregistrement des performances et l’enregistrer
+##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : collecter un enregistrement des performances et l’enregistrer
 
 ```powershell
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
@@ -197,7 +197,7 @@ Pour plus d’informations sur l’analyseur de performances, voir la documentat
 
 **Versions de système d’exploitation prise en charge**
 
-Windows Version 10 et ultérieures.
+Windows version 10 et ultérieures.
 
 > [!NOTE]
 > Cette fonctionnalité est disponible à partir de la plateforme 4.18.2108.X et versions ultérieures.
@@ -457,4 +457,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-

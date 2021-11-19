@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00844614ea14b668fc3167f20ec2747d995aed17
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3500b43c15d9d239e8db8450fa3204323f52ca5f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703408"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109934"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -308,7 +308,7 @@ Les scénarios qui incluent l’application d’une étiquette de confidentialit
 
 - Données étiquetées et chiffrées exportées à partir de Power BI
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 Dans ces scénarios, à l’aide de leurs applications Office, un utilisateur avec une étiquette intégrée peut appliquer les marquages de contenu de l’étiquette en supprimant ou en remplaçant temporairement l’étiquette actuelle, puis en rappliquant l’étiquette d’origine.
 

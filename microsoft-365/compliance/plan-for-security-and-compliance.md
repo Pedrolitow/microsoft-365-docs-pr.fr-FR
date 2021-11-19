@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 446452c457dcf0ed56fb4b5c453a57c44662fad0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3138671bce7c2a659d0d7981c32e88d7ffdac0b8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206048"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110366"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
 
@@ -58,7 +58,7 @@ Examiner et planifier les fonctionnalités de protection des fichiers organisée
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre Microsoft 365 conformité &amp; de la sécurité
 
-Le Centre de conformité de sécurité vous offre une vue unique des contrôles que vous allez utiliser pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et &amp; l’examen. 
+Le Centre de conformité de sécurité vous offre une vue unique des contrôles que vous utiliserez pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et &amp; l’examen. 
   
 - [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
@@ -81,5 +81,5 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d’
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  SharePoint centre d’administration et OneDrive Entreprise’administration centrale  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender pour les applications cloud  <br/> |

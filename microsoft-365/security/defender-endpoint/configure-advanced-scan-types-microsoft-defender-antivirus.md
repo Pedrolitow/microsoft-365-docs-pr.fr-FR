@@ -16,16 +16,16 @@ ms.technology: mde
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 61092c0656f31bb04dd0f63ff61a55571781c160
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882428"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111830"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
 
@@ -63,8 +63,8 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Analyser les exécutables packés <p> **Analyse** \> **Analyser les exécutables packés**|Activé|Non disponible|
 |Analyser les lecteurs amovibles uniquement pendant les analyses complètes <p> **Analyse** \> **Analyser les lecteurs amovibles**|Désactivé|`-DisableRemovableDriveScanning`|
 |Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser <p>**Analyse** \> **Spécifier la profondeur maximale pour analyser les fichiers d’archivage**|0|Non disponible|
-|Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
-|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite|
+|Spécifiez la charge processeur maximale (en pourcentage) au cours d’une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
+|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut 0 ne s’applique pas à la limite|
 |Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse** \> **Configurer une faible priorité du processeur pour les analyses programmées**|Désactivé|Non disponible|
 
 > [!NOTE]
@@ -75,11 +75,11 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir
 
 - [Gérer Antivirus Microsoft Defender avec les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Cmdlets Defender](/powershell/module/defender/)
+- [Antivirus Microsoft Defender cmdlets](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utiliser WMI pour configurer les options d’analyse
 
-Voir [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Voir [Windows Defender API WMIv2.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="email-scanning-limitations"></a>Limitations de l’analyse du courrier électronique
 
@@ -91,7 +91,7 @@ L’analyse du courrier électronique permet d’analyser les fichiers de messag
 
 Les fichiers PST utilisés par Outlook 2003 ou une ancienne génération (où le type d’archive est non unicode) sont également analysés, mais Antivirus Microsoft Defender ne peut pas corriger les menaces détectées dans les fichiers PST.
 
-Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle affiche les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
+Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle vous indique les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
 
 - Sujet de l’e-mail
 - Nom de la pièce jointe

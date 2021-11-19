@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
-ms.openlocfilehash: 94200142a05eeed9e27f53c571afb5ba68d30c82
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064087"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111218"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
 
@@ -30,7 +30,7 @@ Vous pouvez utiliser jamf Pro pour intégrer des appareils macOS dans Microsoft 
 
 ## <a name="get-registered"></a>S’inscrire
 
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Voir, [inscrivez-vous à la prise en charge Microsoft 365 macOS.](https://aka.ms/EndpointDLPIgnite21-Previews)
+Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Afficher, [inscrivez-vous à la prise en charge Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **S’applique à :**
 
@@ -65,7 +65,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 > - netfilter.mobileconfig
 > - sysext.mobileconfig
 >
->Si l’un de ces fichiers individuels est mis à jour, vous devez télécharger à nouveau le fichier combiné ou le fichier unique mis à jour individuellement.
+>Si l’un de ces fichiers individuels est mis à jour, vous devez télécharger à nouveau le fichier combiné ou le fichier mis à jour individuellement.
 
 L’intégration d’un appareil macOS dans des solutions de conformité est un processus multiphase.
 
@@ -106,7 +106,7 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
 ### <a name="configure-preference-domain-using-the-jamf-pro-console"></a>Configurer le domaine de préférence à l’aide de la console JAMF PRO
 
 > [!IMPORTANT]
-> Vous devez utiliser ***com.microsoft.wdav** _ comme valeur de domaine de préférence. Microsoft Defender utilise ce nom et _ *_com.microsoft.wdav.ext_** pour charger ses paramètres gérés.
+> Vous devez utiliser ***com.microsoft.wdav** _ comme valeur de domaine de préférence. Microsoft Defender pour le point de terminaison utilise ce nom et _ *_com.microsoft.wdav.ext_** pour charger ses paramètres gérés.
 
 1. Créez un profil de configuration dans JAMF Pro. Reportez-vous [au guide jamf Pro administrateurs.](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Utilisez les valeurs ci-après :
     - Nom : `MDATP MDAV configuration settings`
@@ -286,4 +286,3 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
-

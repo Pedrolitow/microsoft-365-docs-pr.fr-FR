@@ -70,7 +70,7 @@
 
 
 
-#### [Intégration à Azure Defender](azure-server-integration.md)
+#### [Intégration de à Microsoft Defender pour le cloud](azure-server-integration.md)
 
 #### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
 #### [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)
@@ -487,7 +487,7 @@
 ### [Comprendre les concepts de veille des menaces](threat-indicator-concepts.md)
 ### [Configurer l’intégration avec d’autres solutions Microsoft]()
 #### [Configurer l’accès conditionnel](configure-conditional-access.md)
-#### [Configurer l’intégration de Microsoft Cloud App Security.](microsoft-cloud-app-security-config.md)
+#### [Configurer l’intégration de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-config.md)
 ### [Gestion et API]()
 #### [Vue d’ensemble de la gestion et des API](management-apis.md)
 #### [Notes de publication de l’API](api-release-notes.md)
@@ -645,7 +645,6 @@
 ##### [Événements de repérage avancé Stream vers le hub Événements Azure](raw-data-export-event-hub.md)
 ##### [Événements de repérage avancé Stream vers votre compte de stockage](raw-data-export-storage.md)
 
-
 #### [Intégration SIEM]()
 ##### [Intégrer les outils SIEM avec Microsoft Defender pour point de terminaison](configure-siem.md)
 ##### [Champs de détection de Microsoft Defender pour point de terminaison](api-portal-mapping.md)
@@ -685,7 +684,7 @@
 ### [Intégrations]()
 #### [Intégrations Microsoft Defender pour point de terminaison](threat-protection-integration.md)
 #### [Protéger les utilisateurs, données et appareils avec l’accès conditionnel](conditional-access.md)
-#### [Vue d’ensemble de l’intégration de Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
+#### [Vue d’ensemble de l’intégration de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)
 
 ### [Vue d’ensemble de la protection des informations dans Windows]()
 #### [Intégration de Windows](information-protection-in-windows-overview.md)
@@ -727,6 +726,7 @@
 #### [Règles de réduction de la surface d’attaque](troubleshoot-asr.md)
 #### [Migrer vers des règles de réduction de la surface d’attaque](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../defender/index.yml)
-# [Defender pour Office 365](../office-365-security/index.yml)
-# [Defender pour l’identité](/defender-for-identity/)
+# [Documents Microsoft 365 Defender]()
+## [Microsoft 365 Defender](../defender/index.yml)
+## [Defender pour Office 365](../office-365-security/index.yml)
+## [Defender pour l’identité](/defender-for-identity/)

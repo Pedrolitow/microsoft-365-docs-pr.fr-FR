@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 381257ced0dd229ab0a28ea37ac82144e0cb2ec6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 12a7bbaea045f24080241f092ea583ab051edf82
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703196"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110246"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,14 +40,14 @@ Avant de pouvoir suivre et gérer l’intégration d’appareils :
 
 ## <a name="discover-and-track-unprotected-devices"></a>Découvrir et suivre les appareils non protégés
 
-La  carte d’intégration fournit une vue d’ensemble de votre taux d’intégration en comparant le nombre d’appareils Windows réellement intégrés à Defender for Endpoint et le nombre total d’appareils Windows gérés par Intune.
+La  carte d’intégration fournit une vue d’ensemble de votre taux d’intégration en comparant le nombre d’appareils Windows qui ont réellement intégré Defender pour endpoint au nombre total d’appareils Windows gérés par Intune.
 
 ![Carte d’intégration de gestion de la configuration des appareils.](images/secconmgmt_onboarding_card.png)
 
-*Carte montrant les appareils intégrés par rapport au nombre total d’appareils gérés Windows Intune*
+*Carte affichant les appareils intégrés par rapport au nombre total d’appareils gérés Windows Intune*
 
 > [!NOTE]
-> Si vous avez utilisé Le Gestionnaire de configuration du Centre de sécurité, le script d’intégration ou d’autres méthodes d’intégration qui n’utilisent pas les profils Intune, vous pouvez rencontrer des incohérences de données. Pour résoudre ces incohérences, créez un profil de configuration Intune correspondant pour l’intégration de Defender for Endpoint et affectez ce profil à vos appareils.
+> Si vous avez utilisé Configuration Manager, le script d’intégration ou d’autres méthodes d’intégration qui n’utilisent pas de profils Intune, vous pouvez rencontrer des incohérences de données. Pour résoudre ces incohérences, créez un profil de configuration Intune correspondant pour l’intégration de Defender for Endpoint et affectez ce profil à vos appareils.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intégrer d’autres appareils avec des profils Intune
 
@@ -55,17 +55,17 @@ Defender pour le point de terminaison fournit plusieurs options pratiques pour [
 
 À partir de **la carte d’intégration,** sélectionnez **Intégrer d’autres appareils** pour créer et affecter un profil sur Intune. Le lien vous permet d’utiliser la page de conformité des appareils sur Intune, qui fournit une vue d’ensemble similaire de votre état d’intégration.
 
-![Page de conformité des appareils Microsoft Defender pour les points de terminaison sur la gestion des appareils Intune.](images/secconmgmt_onboarding_1deviceconfprofile.png)
+![Page de conformité des appareils Microsoft Defender for Endpoint sur la gestion des appareils Intune.](images/secconmgmt_onboarding_1deviceconfprofile.png)
 
 *Page de conformité des appareils Microsoft Defender for Endpoint sur la gestion des appareils Intune*
 
 > [!TIP]
-> Vous pouvez également accéder à la page de conformité d’intégration defender pour point de terminaison dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
+> Vous pouvez également accéder à la page de conformité de l’intégration de Defender for Endpoint dans le portail [Microsoft Azure](https://portal.azure.com/) à partir de Tous les **services > Intune > Conformité** des appareils > Microsoft Defender ATP .
 
 > [!NOTE]
 > Si vous souhaitez afficher les données d’appareil les plus récentes, cliquez sur Liste des appareils sans **capteur ATP.**
 
-À partir de la page de conformité des appareils, créez un profil de configuration spécifique pour le déploiement du capteur Defender for Endpoint et affectez ce profil aux appareils que vous souhaitez intégrer. Pour ce faire, vous pouvez :
+À partir de la page conformité des appareils, créez un profil de configuration spécifique pour le déploiement du capteur Defender for Endpoint et affectez ce profil aux appareils que vous souhaitez intégrer. Pour ce faire, vous pouvez :
 
 - Sélectionnez Créer un profil de configuration d’appareil pour configurer le capteur **ATP** afin qu’il commence par un profil de configuration d’appareil prédéféré.
 - Créez le profil de configuration de l’appareil de A à Z.
@@ -74,7 +74,7 @@ Pour plus d’informations, découvrez l’utilisation des profils de configurat
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
 - [Vérifier que vos appareils sont correctement configurés](configure-machines.md)
 - [Renforcer la conformité à la ligne de base de sécurité de Defender for Endpoint](configure-machines-security-baseline.md)

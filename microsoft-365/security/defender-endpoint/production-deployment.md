@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e81f1b468a01369d308c4585b2ffb82b596a66ce
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963382"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111285"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -81,7 +81,7 @@ Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour 
 
 L’intégration à Microsoft Defender pour le point de terminaison est facile. Dans le menu de navigation, sélectionnez n’importe quel élément sous la section Points de terminaison ou toute fonctionnalité Microsoft 365 Defender telle que les incidents, le chasse, le centre de mesures ou l’analyse des menaces pour lancer le processus d’intégration.
 
-À partir d’un navigateur web, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365 sécurité.</a>
+À partir d’un navigateur web, accédez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">au portail Microsoft 365 Defender.</a>
 
 ## <a name="network-configuration"></a>Configuration réseau
 

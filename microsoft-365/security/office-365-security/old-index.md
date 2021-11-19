@@ -1,5 +1,5 @@
 ---
-title: Office 365 Vue d’ensemble de la sécurité, Microsoft Defender pour Office 365, EOP, MSDO
+title: présentation Office 365 sécurité, Microsoft Defender pour Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et découvrez comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7c91f4dc28a28b0bab2102dc2a9ec6ec937f6f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206504"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110354"
 ---
 # <a name="office-365-security"></a>Sécurité Office 365
 
@@ -91,7 +91,7 @@ Ce qui fait de l'ajout des plans Microsoft Defender pour Office 365 un avantage
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique d’heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
+|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique en heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
 |
 
 Si vous souhaitez approfondir EOP, **[passez à cet article](exchange-online-protection-overview.md)**.
@@ -118,7 +118,7 @@ Gains avec **Defender pour Office 365, Plan 2** (à ce jour) :
 
 Ainsi, Microsoft Defender pour Office 365 P2 développe le côté ***enquête et réponse de la maison***, et ajoute une nouvelle force de repérage. Automatisation.
 
-Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez au Centre de sécurité, vous êtes dans Microsoft Defender pour Office 365 P2.
+Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez à Defender pour le Cloud, vous êtes dans Microsoft Defender pour Office 365 P2.
 
 Pour en savoir plus sur Microsoft Defender pour Office 365 P1 et P2, **[consulter cet article](defender-for-office-365.md)**.
 

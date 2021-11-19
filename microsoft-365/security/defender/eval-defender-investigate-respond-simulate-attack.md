@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fa9f41675c68f4d832c14b2cf1c33dcf1a9d9d6d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 424a6928c12642b90c44561b92483ef1398f855e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963286"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109790"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -52,7 +52,7 @@ Le Microsoft 365 Defender web dispose de fonctionnalités intégrées pour crée
   
   Dans le portail Microsoft 365 Defender, sélectionnez **Email & collaboration > attack simulation training**.
 
-- Didacticiels d& des simulations pour Microsoft 365 Defender pour les points de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
+- Didacticiels d& des simulations pour Microsoft 365 Defender point de terminaison à [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
 
   Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez Points de **terminaison > didacticiels & simulations.**
 
@@ -109,7 +109,7 @@ Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un 
 
    - Exécute Windows Server 2008 R2 ou une version ultérieure.
    - Signale à [Microsoft Defender pour l’identité et](/azure/security-center/security-center-wdatp) a activé la gestion à [distance.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Microsoft [Defender pour l’identité et Microsoft Cloud App Security’intégration](/cloud-app-security/mdi-integration) est activé.
+   - Microsoft [Defender pour l’identité et Microsoft Defender pour les applications cloud sont-ils](/cloud-app-security/mdi-integration) activés .
    - Un utilisateur test est créé dans le domaine de test. Les autorisations de niveau administrateur ne sont pas nécessaires.
 
 3. Vérifiez que votre périphérique de test :
@@ -209,7 +209,7 @@ Pour afficher l’incident :
 
 3. Sélectionnez l’élément le plus récent en cliquant sur le cercle situé à gauche du nom de l’incident. Un panneau latéral affiche des informations supplémentaires sur l’incident, y compris toutes les alertes associées. Chaque incident possède un nom unique qui le décrit en fonction des attributs des alertes qu’il inclut.
 
-   Les alertes affichées dans le tableau de bord peuvent être filtrées en fonction des ressources de service : Microsoft Defender pour l’identité, Microsoft Cloud App Security, Microsoft Defender pour le point de terminaison, Microsoft 365 Defender et Microsoft Defender pour Office 365.
+   Les alertes affichées dans le tableau de bord peuvent être filtrées en fonction des ressources de service : Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud, Microsoft Defender pour le point de terminaison, Microsoft 365 Defender et Microsoft Defender pour Office 365.
 
 3. Sélectionnez **Ouvrir la page Incident** pour obtenir plus d’informations sur l’incident.
 
@@ -279,13 +279,13 @@ Par exemple, faites défiler vers le bas jusqu’à ce que vous trouviez **l’�
 
 ![Exemple d’arborescence de processus pour le comportement de création de fichier PowerShell sélectionné.](../../media/mtp/fig12.png)
 
-#### <a name="review-the-user-information-with-microsoft-cloud-app-security"></a>Passer en revue les informations utilisateur à l’Microsoft Cloud App Security
+#### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Passer en revue les informations utilisateur avec Microsoft Defender pour les applications cloud
 
 Dans la page Incident, sélectionnez **l’onglet Utilisateurs** pour afficher la liste des utilisateurs impliqués dans l’attaque. Le tableau contient des informations supplémentaires sur chaque utilisateur, y compris le score de priorité d’examen **de chaque** utilisateur.
 
 Sélectionnez le nom d’utilisateur pour ouvrir la page de profil de l’utilisateur dans laquelle un examen plus approfondie peut être effectué. [En savoir plus sur l’étude des utilisateurs à risque.](/cloud-app-security/tutorial-ueba#identify)
 
-![Exemple de page Sécurité des applications cloud utilisateur.](../../media/mtp/fig13.png)
+![Exemple de page d’utilisateur Defender pour les applications cloud.](../../media/mtp/fig13.png)
 
 #### <a name="automated-investigation-and-remediation"></a>Investigation et résolution automatiques
 
@@ -322,7 +322,7 @@ Dans la page **Incident,** sélectionnez **Gérer l’incident.** Définissez l�
 
 ![Exemple de page incidents avec le panneau Gérer les incidents ouvert dans lequel vous pouvez cliquer sur le commutateur pour résoudre l’incident.](../../media/mtp/fig16.png)
 
-Lorsque l’incident est résolu, il résout toutes les alertes associées dans Microsoft 365 Defender portail et dans les portails associés.
+Lorsque l’incident est résolu, il résout toutes les alertes associées dans le portail Microsoft 365 Defender et les portails associés.
 
 Cela termine la simulation d’attaque pour l’analyse des incidents, l’examen automatisé et la résolution des incidents.
 

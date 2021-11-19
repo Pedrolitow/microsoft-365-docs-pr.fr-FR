@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1c15b0fe82e2d6dbadce7fe7a5efaa73c6b45940
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785619"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110918"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -39,7 +39,7 @@ L’indicateur de compromission (IoCs) est une fonctionnalité essentielle dans 
 
 Créez des indicateurs qui définissent la détection, la prévention et l’exclusion des entités. Vous pouvez définir l’action à prendre, ainsi que la durée de l’application de l’action, ainsi que l’étendue du groupe d’appareils à appliquer.
 
-Les sources actuellement pris en charge sont le moteur de détection cloud de Defender pour Endpoint, le moteur automatisé d’investigation et de correction et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
+Les sources actuellement pris en charge sont le moteur de détection cloud de Defender for Endpoint, le moteur automatisé d’investigation et de correction et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
 
 ## <a name="cloud-detection-engine"></a>Moteur de détection cloud
 
@@ -47,7 +47,7 @@ Le moteur de détection cloud de Defender for Endpoint analyse régulièrement l
 
 ## <a name="endpoint-prevention-engine"></a>Moteur de prévention des points de terminaison
 
-La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender AV est le principal antivirus configuré, les indicateurs de correspondance seront traités en fonction des paramètres. Par exemple, si l’action est « Alerte et bloquer », l’Antivirus Microsoft Defender empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est élevée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas et ne bloque pas l’exécuter.
+La même liste d’indicateurs est honorée par l’agent de prévention. Autrement dit, si Microsoft Defender AV est le principal antivirus configuré, les indicateurs de correspondance seront traités en fonction des paramètres. Par exemple, si l’action est « Alerte et bloquer », Microsoft Defender AV empêche les exécutions de fichiers (bloquer et corriger) et une alerte correspondante est élevée. En revanche, si l’action est définie sur « Autoriser », l’Antivirus Microsoft Defender ne détecte pas et ne bloque pas l’exécuter.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Moteur d’examen et de correction automatisé
 
@@ -59,7 +59,7 @@ Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suiva
 
 - Allow : l’IoC sera autorisé à s’exécuter sur vos appareils.
 - Audit : une alerte est déclenchée lors de l’ioC.
-- Avertir : l’IoC vous avertit que l’utilisateur peut contourner (MCAS uniquement) 
+- Avertir : l’IoC invite un avertissement que l’utilisateur peut contourner (Defender pour les applications cloud uniquement)
 - Bloquer l’exécution : l’IoC n’est pas autorisé à s’exécuter.
 - Bloquer et corriger : l’IoC n’est pas autorisé à s’exécuter et une action de correction est appliquée à l’IoC.
 
@@ -72,7 +72,7 @@ Vous pouvez créer un indicateur pour :
 - [Adresses IP, URL/domaines](indicator-ip-domain.md)
 - [Certificats](indicator-certificates.md)
 
-Le tableau ci-dessous indique exactement quelles actions sont disponibles par type d’indicateur (IoC) :
+Le tableau ci-dessous indique exactement les actions disponibles par type d’indicateur (IoC) :
 
 | Type IoC | Actions disponibles |
 |:---|:---|
@@ -93,7 +93,7 @@ Le schéma de l’API IoC et les ID de menace à l’avance de recherche ont ét
 >
 > Le format d’importation de nouveaux indicateurs (IOC) a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV disponible en bas du panneau d’importation.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Créer un IoC contextuel](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Utiliser l’API d’indicateurs microsoft Defender pour les points de terminaison](ti-indicator.md)

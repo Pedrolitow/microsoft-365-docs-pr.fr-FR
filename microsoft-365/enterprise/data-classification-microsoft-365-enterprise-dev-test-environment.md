@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3cb3a07b4f636fcf8770432a825356269ff6d94c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962566"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111158"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
@@ -53,7 +53,7 @@ Si vous souhaitez configurer des étiquettes de rétention dans une entreprise s
 
 Dans cette phase, créez les étiquettes de rétention pour les différents niveaux de rétention pour SharePoint dossiers de documents en ligne :
 
-1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365 sécurité</a> avec votre compte d’administrateur global.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender avec</a> votre compte d’administrateur global.
 1. Dans **l’onglet Accueil - Microsoft 365 de** sécurité de votre navigateur, sélectionnez   >  **Étiquettes de rétention de classification.**
 1. Sélectionnez **Créer une étiquette**.
 1. Dans le **volet Nom de votre étiquette,** entrez Public **interne** dans **Nom de** votre étiquette, puis sélectionnez **Suivant**.
