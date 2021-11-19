@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668321"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071406"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -65,7 +65,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Étendre les étiquettes de confidentialité à Power BI** : lorsque vous activez cette fonctionnalité, vous pouvez appliquer et afficher les étiquettes dans Power BI et protéger les données lorsqu’elles sont enregistrées en dehors du service.
 
-- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, actuellement en préversion, vous pouvez appliquer des étiquettes de confidentialité à des ressources tels que des colonnes SQL, des fichiers dans le Stockage Blob Azure, etc. 
+- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Azure Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosoms et AWS RDS.
 
 - **Étendre les étiquettes de confidentialité à des applications et services tiers.** Grâce à l'utilisation du SDK Microsoft informations Protection, des applications tierces peuvent lire des étiquettes de confidentialité et appliquer des paramètres de protection.
 
@@ -118,7 +118,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     ![Invitation de mise à attribuer une étiquette requise.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les fichiers et e-mails** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiqueter automatiquement vos données dans Azure Preview](/azure/purview/create-sensitivity-label).
+    Pour plus d’informations sur les paramètres d' **Étiquetage automatique pour les fichiers et e-mails** lorsque vous créez ou modifiez une étiquette de confidentialité, consultez [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md) pour les applications Office et [Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Étendues des étiquettes
 
@@ -126,7 +126,7 @@ Lorsque vous créez une étiquette de confidentialité, vous êtes invité à co
 - Les paramètres d’étiquette que vous pouvez configurer pour cette étiquette
 - L’emplacement où l’étiquette sera visible par les utilisateurs
 
-Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Nouveauté actuellement en préversion : vous pouvez également sélectionner l’étendue des ressources Azure Purview :
+Cette configuration d’étendue vous permet d’utiliser des étiquettes de confidentialité qui s’appliquent uniquement aux documents et e-mails et qui ne peuvent pas être sélectionnées pour les conteneurs. Il en va de même pour les étiquettes de confidentialité qui sont uniquement destinées aux conteneurs et qui ne peuvent pas être sélectionnées pour les documents et les courriers électroniques. Vous pouvez également sélectionner l’étendue des ressources Azure Purview :
 
 ![Options d’étendue des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
@@ -134,7 +134,7 @@ Par défaut, l’étendue **Fichiers et e-mails** est toujours sélectionnée. L
 
 - **Groupes et sites** : [activer les étiquettes de confidentialité pour les conteneurs et synchroniser les étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Ressources Azure Purview (préversion)** : [Étiqueter automatiquement le contenu dans Azure Purview](/azure/purview/create-sensitivity-label)
+- **Ressources de données schématisées** : [étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label)
 
 Si vous modifiez les valeurs par défaut pour que toutes les étendues ne soient pas sélectionnées, vous verrez la première page des paramètres de configuration des étendues que vous n’avez pas sélectionnées, mais vous ne pourrez pas configurer les paramètres. Par exemple, si l’étendue des fichiers et e-mails n’est pas sélectionnée, vous ne pouvez pas sélectionner les options de la page suivante :
 

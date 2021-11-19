@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 740c1c2a86b089f911fdbed7b8fce667de5e6f5c
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041929"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064258"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -320,7 +320,7 @@ Lorsque vous utilisez des classificateurs pouvant apprendre pour appliquer autom
 > [!NOTE]
 > Cette option est progressivement mise en place en prévisualisation et peut faire l’objet de changements.
 
-Vous devrez peut-être utiliser cette option si vous devez capturer et conserver toutes les copies des fichiers de votre client qui sont envoyés par le système de communication. Vous utilisez cette option conjointement avec les stratégies de rétention pour les services de communication eux-mêmes, Exchange et Teams.
+Vous devrez peut-être utiliser cette option si vous devez capturer et conserver toutes les copies de fichiers dans votre client qui sont envoyées via les communications par les utilisateurs. Vous utilisez cette option conjointement avec les stratégies de rétention pour les services de communication eux-mêmes, Exchange et Teams.
 
 > [!IMPORTANT]
 > Lorsque vous sélectionnez une étiquette à utiliser pour appliquer automatiquement des **étiquettes de rétention pour les pièces jointes cloud**, assurez-vous que le paramètre de rétention des étiquettes démarre la période de rétention en fonction de l’étiquette des **éléments.**
@@ -331,7 +331,7 @@ Lorsque vous choisissez l’option d’application d’une étiquette de rétent
 
 Si le fichier est modifié et partagé à nouveau, une nouvelle copie du fichier en tant que nouvelle version est enregistrée dans la bibliothèque de conservation et de préservation. Pour plus d’informations, notamment **sur la raison pour laquelle vous devez utiliser le paramètre** Lorsque les éléments ont été étiquetés, voir Comment fonctionne la rétention avec les pièces [jointes cloud](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-Les pièces jointes cloud prises en charge pour cette option sont des fichiers tels que des documents, des vidéos et des images qui sont stockés dans SharePoint et OneDrive. Pour Teams, les pièces jointes cloud partagées dans les messages de conversation et les canaux standard et privés sont pris en charge. Les pièces jointes cloud partagées sur les invitations aux réunions et les applications autres que Teams ou Outlook ne sont pas pris en charge.
+Les pièces jointes cloud prises en charge pour cette option sont des fichiers tels que des documents, des vidéos et des images qui sont stockés dans SharePoint et OneDrive. Pour Teams, les pièces jointes cloud partagées dans les messages de conversation et les canaux standard et privés sont pris en charge. Les pièces jointes cloud partagées sur les invitations aux réunions et les applications autres que Teams ou Outlook ne sont pas pris en charge. Les pièces jointes cloud doivent être partagées par les utilisateurs; les pièces jointes cloud envoyées via des bots ne sont pas pris en charge.
 
 Bien que cela ne soit pas obligatoire pour cette option, nous vous recommandons de vous assurer que le traitement des versions est activé pour vos sites SharePoint et comptes OneDrive afin que la version partagée puisse être capturée avec précision. Si le jeu de versions n’est pas activé, la dernière version disponible est conservée. Les documents en brouillon ou qui n’ont jamais été publiés ne sont pas pris en charge.
 
@@ -364,11 +364,11 @@ Vous devrez créer des stratégies de rétention distinctes si vous souhaitez co
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Délai d’activation des étiquettes de rétention
 
-Lorsque vous appliquez automatiquement des étiquettes de rétention basées sur des informations sensibles, des mots clés ou des propriétés interrogeables, une recherche, ou des classifieurs pouvant être formés, l’application des étiquettes de rétention peut prendre jusqu’à huit jours :
+Lorsque vous appliquez automatiquement des étiquettes de conservation de données basées sur des informations sensibles, des mots-clés ou des propriétés interrogeables, ou des classificateurs entraînables, l'application des étiquettes de conservation peut prendre jusqu'à huit jours :
   
 ![Diagramme indiquant quand les étiquettes d’application automatique prennent effet.](../media/retention-labels-autoapply-timings.png)
 
-Si les étiquettes attendues n’apparaissent pas après huit jours, vérifiez l’**État** de la stratégie d’application automatique en la sélectionnant dans la page **Stratégies des étiquettes** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes attendues n’apparaissent pas après huit jours, consultez l’**État** de la stratégie d’application automatique en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si vous voyez l’état de **Désactivé (erreur)** et dans les détails des emplacements, consultez un message indiquant qu’il prend plus de temps que prévu pour déployer la stratégie (pour SharePoint) ou essayez de redéployer la stratégie (pour OneDrive), essayez d’exécuter la commande PowerShell [RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 

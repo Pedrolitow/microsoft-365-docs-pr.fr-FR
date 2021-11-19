@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des essais d’évaluation Premium du Gestionnaire de conformité Microsoft
-ms.openlocfilehash: 3ef0cbf795c434018d049998744fe76aa222fbe2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677044"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063296"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations premium du Gestionnaire de conformité Microsoft
 
@@ -38,6 +38,9 @@ Vous pouvez vous inscrire à une version d’essai dans le Centre de conformité
 Cette évaluation premium est disponible pour les organisations qui utilisent le Gestionnaire de conformité sous une licence commerciale. Pour des informations sur le GCC et le DOD et les options d'essai, voir [Travailler avec les modèles de Gestionnaire de conformité](compliance-manager-templates.md).
 
 L’accès total aux fonctionnalités du Gestionnaire de conformité peut dépendre de votre contrat de licence pour le Gestionnaire de conformité. Pour en savoir plus sur la version d’essai de conformité gratuite qui inclut le Gestionnaire de conformité, consultez la version d’essai gratuit [Microsoft 365 conformité.](compliance-easy-trials.md)
+
+> [!NOTE]
+> Vérifiez vos paramètres Centre d'administration Microsoft 365 pour faciliter l’inscription à la version d’essai. Dans le centre d'administration de Microsoft 365, accédez à la page **Paramètres > Paramètres de l'organisation > Services**, puis sélectionnez **Apps et services appartenant à l'utilisateur**. Cochez ensuite la case pour que les utilisateurs démarrent des essais au nom de votre organisation. Lorsque l’installation se termine dans environ deux minutes, vous pouvez revenir en arrière et décocher la case pour désactiver ce paramètre. Vous pouvez également démarrer l’essai sans ajuster les paramètres de votre organisation en allant sur la page Facturation **> Acheter des services** et en recherchant l’évaluation premium du Gestionnaire de conformité.
 
 ## <a name="template-licensing"></a>Gestion des licences de modèles
 

@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555523"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064522"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -235,7 +236,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Pour activer la signature DKIM pour votre domaine personnalisé dans le portail Microsoft 365 Defender
 
-1. Ouvrez le portail Microsoft 365 Defender [à l’aide de votre compte professionnel ou scolaire](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender </a> à l’aide de votre compte scolaire ou professionnel..
 
 2. Accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **DKIM** dans la section **Règles**. Ou, pour accéder directement à la page DKIM, utilisez <https://security.microsoft.com/dkimv2>.
 
@@ -335,7 +336,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportement par défaut pour DKIM et Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si vous n’activez pas DKIM, Microsoft 365 crée automatiquement une clé publique DKIM 1024 bits pour votre adresse MOERA (Microsoft Online Email Routing Address)/domaine initial et la clé privée associée que nous stockons en interne dans notre centre de données. Par défaut, Microsoft 365 utilise une configuration de signature par défaut pour les domaines qui n’ont pas de stratégie en place. Cela signifie que si vous ne configurez pas DKIM vous-même, Microsoft 365 utilisera sa stratégie par défaut et les clés qu’il crée pour activer DKIM pour votre domaine.
+Si vous n’activez pas DKIM, Microsoft 365 crée automatiquement une clé publique DKIM 2048 bits pour votre adresse MoERA (Microsoft Online E-mail Routing Address)/domaine initial et la clé privée associée que nous stockons en interne dans notre centre de données. Par défaut, Microsoft 365 utilise une configuration de signature par défaut pour les domaines ne disposant d’aucune stratégie définie. Cela signifie que si vous ne configurez pas DKIM vous-même, Microsoft 365 utilise sa stratégie par défaut et les clés qu’il crée pour activer DKIM sur votre domaine.
 
 En outre, si vous désactivez la signature DKIM sur votre domaine personnalisé après l’avoir activé, au bout d’un certain temps, Microsoft 365 applique automatiquement la stratégie de domaine MOERA/initiale pour votre domaine personnalisé.
 
@@ -402,11 +403,11 @@ Ensuite, consultez [**Utiliser DMARC pour valider l'e-mail**](use-dmarc-to-valid
 **Ce test validera** que la configuration de signature DKIM a été correctement configurée et que les entrées DNS appropriées ont été publiées.
 
 <div class="nextstepaction">
-<p><a href="https://aka.ms/diagdkim" data-linktype="external">Exécuter des tests : DKIM</a></p>
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Exécuter des tests : DKIM</a></p>
 </div>
 
 ## <a name="more-information"></a>Plus d’informations
 
 Rotation des clés via PowerShell : [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Utiliser DMARC pour valider les messages électroniques](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Utiliser DMARC pour valider les messages électroniques](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

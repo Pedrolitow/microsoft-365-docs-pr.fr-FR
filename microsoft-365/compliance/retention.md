@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950592"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064050"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -582,6 +582,10 @@ Si vous utilisez actuellement ces fonctionnalités, elles continueront de foncti
     - Une stratégie d’archivage pour [archive mailboxes](enable-archive-mailboxes.md) pour déplacer automatiquement les e-mails de la boîte aux lettres principale d’un utilisateur vers sa boîte aux lettres d’archivage après une période spécifiée. Une stratégie d’archivage (avec tous les paramètres) peut être utilisée conjointement avec une stratégie de rétention Microsoft 365 qui s’applique à la boîte aux lettres principale et d’archivage d’un utilisateur.
     
     - Stratégies de rétention appliquées par un administrateur à des dossiers spécifiques au sein d’une boîte aux lettres. Une stratégie de rétention Microsoft 365 s’applique à tous les dossiers de la boîte aux lettres. Toutefois, un administrateur peut configurer différents paramètres de rétention à l’aide d’étiquettes de rétention qu’un utilisateur peut appliquer aux dossiers dans Outlook en tant que [étiquette de rétention par défaut](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Conservation pour litige](create-a-litigation-hold.md) (rétention uniquement)
+    
+   Bien que les conservations pour litige soient toujours prises en charge, nous vous recommandons d’utiliser Microsoft 365 rétention ou des conservations eDiscovery, [comme approprié](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
 
 **Anciennes fonctionnalités dans SharePoint et OneDrive :**
 
