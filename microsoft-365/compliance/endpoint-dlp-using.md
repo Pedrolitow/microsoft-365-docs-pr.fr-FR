@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064534"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111854"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -60,6 +60,9 @@ Ces versions Windows la prise en charge de l’analyse et de la protection avanc
 - Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versions 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
+
+> [!NOTE]
+> La prise en charge de la classification avancée est disponible pour les types de Office (Word, Excel, PowerPoint) et PDF.
 
 > [!NOTE]
 > L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.
@@ -352,7 +355,7 @@ Il existe trois procédures.
 
 2. Développez **Applications non autorisées**.
 
-3. Choisissez **Ajouter ou modifier des applications non autorisées** et ajoutez *OneDrive* en tant que nom d’affichage et le nom exécutable *onedrive.exe* pour empêcher onedrive.exe d’accéder aux éléments de l’étiquette **Hautement confidentiel**.
+3. Choisissez **Ajouter ou** modifier des applications non autorisé et ajouter des *OneDrive* en tant que nom d’affichage et le nom exécutableonedrive.exepour que les *onedrive.exe* n’accèdent pas aux **éléments de l’étiquette** Hautement confidentiel.
 
 4. Sélectionnez **Mise en quarantaine automatique** et **Enregistrer**.
 

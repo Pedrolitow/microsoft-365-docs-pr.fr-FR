@@ -4,12 +4,10 @@
   items:
     - name: Prise en main
       items:
+        - name: "Plan de déploiement zéro trust Microsoft\_365"
+          href: microsoft-365-zero-trust.md
         - name: Tâches prioritaires pour la prise en charge du travail depuis la maison
           href: top-security-tasks-for-remote-work.md
-        - name: Sécurité Microsoft 365 pour les décideurs d’entreprise
-          href: Microsoft-365-security-for-bdm.md
-        - name: Recommandations de sécurité pour les comptes prioritaires
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Configurations des identités Zéro confiance et de l’accès aux appareils
       items:
         - name: Présentation
