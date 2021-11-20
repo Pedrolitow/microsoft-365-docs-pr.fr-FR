@@ -402,11 +402,13 @@
                   href: ../defender-endpoint/troubleshoot-siem.md
             - name: Comprendre les concepts de veille des menaces
               href: ../defender-endpoint/threat-indicator-concepts.md
-    - name: Microsoft Defender pour Office 365
-      href: ../office-365-security/index.yml
-    - name: Microsoft Defender pour point de terminaison
-      href: ../defender-endpoint/index.yml
-    - name: "Microsoft\_Defender pour l’identité"
-      href: /defender-for-identity
-    - name: Microsoft Defender for Cloud Apps
-      href: /cloud-app-security
+    - name: Documents Microsoft 365 Defender
+      items:
+        - name: Defender pour Office 365
+          href: ../office-365-security/index.yml
+        - name: Defender pour point de terminaison
+          href: ../defender-endpoint/index.yml
+        - name: Defender pour l’identité
+          href: /defender-for-identity
+        - name: Défenseur pour les applications cloud
+          href: /cloud-app-security

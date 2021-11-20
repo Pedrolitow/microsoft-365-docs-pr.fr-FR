@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: efe24585981451ef91181ecc4caabb82d45d8ea4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 94ef0959c7e4de78080c54487ba017e1f75329ff
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753160"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072372"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -45,7 +45,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
-2. Sous la page **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant Nouvelle étiquette de confidentialité. 
+2. Dans la page **étiquettes** , sélectionnez **+ Créer une étiquette** pour démarrer la nouvelle configuration d’étiquette de confidentialité. 
 
     Par exemple, dans le Centre de conformité Microsoft 365 :
 
@@ -58,15 +58,15 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
     ![Étendues des étiquettes de confidentialité.](../media/sensitivity-labels-scopes.png)
 
-    - Si **Fichiers et e-mails** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les étiquettes ne sont pas disponibles à la sélection pour les utilisateurs dans ces applications.
+    - Si **Fichiers et e-mails** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les étiquettes ne seront pas disponibles à la sélection pour les utilisateurs dans ces applications.
 
-    - Si **Groupes et sites** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
+    - Si **Groupes et sites** est sélectionné, vous pouvez configurer les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, vous verrez la première page de ces paramètres, mais vous ne pourrez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
 
-    Si vous souhaitez en savoir plus sur l’étendue d’**Azure Purview (préversion)**, veuillez consulter la rubrique [Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label).
+    Pour plus d’informations sur les ressources de données **schématisées** étendue, consultez [Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label).
 
-4. Suivez les invites de l’Assistant pour les paramètres d’étiquette.
+4. Suivez les invites de configuration pour les paramètres d’étiquette.
 
-    Pour plus d’informations sur les paramètres d’étiquette, voir [Fonction des étiquettes de confidentialité](sensitivity-labels.md#what-sensitivity-labels-can-do) à partir des informations générales et utilisez l’aide de l’Assistant pour les paramètres individuels.
+    Pour plus d’informations sur les paramètres d’étiquette, voir [Fonction des étiquettes de confidentialité](sensitivity-labels.md#what-sensitivity-labels-can-do) à partir des informations générales et utilisez l’aide de l’UI pour les paramètres individuels.
 
 5. Répétez ces étapes pour créer d’autres étiquettes. Toutefois, si vous voulez créer une sous-étiquette, commencez par sélectionner l’étiquette parent, puis **...** pour **Plus d’actions**, enfin **Ajouter une sous-étiquette**.
 
@@ -76,12 +76,12 @@ Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bou
 
 ![Bouton Modifier l’étiquette pour modifier une étiquette de confidentialité](../media/edit-sensitivity-label-full.png)
 
-Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
+Ce bouton démarre la configuration **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
 
 Ne supprimez pas une étiquette, sauf si vous comprenez l’impact pour les utilisateurs. Pour plus d’informations, consultez la section [Retrait et suppression d’étiquettes](#removing-and-deleting-labels). 
 
 > [!NOTE]
-> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
+> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de la configuration. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
 Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être [ajoutées à une stratégie d'étiquette](#publish-sensitivity-labels-by-creating-a-label-policy) pour être publiées.
 
@@ -132,7 +132,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
-2. Sélectionnez l’onglet **Stratégies d’étiquette**, puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
+2. Sélectionnez **l’onglet Stratégies** d’étiquette, puis **Publiez** l’étiquette pour démarrer la configuration **de la stratégie** :
 
     Par exemple, dans le Centre de conformité Microsoft 365 :
 
@@ -141,7 +141,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!NOTE]
     > Par défaut, les clients n’ont pas de stratégies d’étiquette. Vous devez alors créer. 
 
-3. Dans l’Assistant, sélectionnez **Choisir des étiquettes de confidentialité à publier**. Sélectionnez les étiquettes que vous souhaitez rendre disponibles dans les applications et les services, puis choisissez **Ajouter**.
+3. Dans la **Choisissez des étiquettes de confidentialité pour publier** page, sélectionnez le **Choisir les étiquettes de confidentialité pour publier** lien. Sélectionnez les étiquettes que vous souhaitez rendre disponibles dans les applications et les services, puis choisissez **Ajouter**.
 
     > [!IMPORTANT]
     > Si vous sélectionnez une sous-étiquette, assurez-vous de sélectionner également son étiquette parente.
@@ -160,13 +160,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 7. Si vous créez plusieurs stratégies d’étiquette pouvant entraîner un conflit pour un utilisateur, vérifiez l’ordre des stratégies et, le cas échéant, déplacez-les vers le haut ou vers le bas. Pour modifier l’ordre d’une stratégie d'étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité de stratégie d'étiquette (trier les thèmes)](sensitivity-labels.md#label-policy-priority-order-matters) dans les informations générales.
 
-La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assistant. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
+L’exécution de la **Créer une stratégie** la configuration publie automatiquement la stratégie d’étiquette. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
 
 Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie** : 
 
 ![Modifier une étiquette de confidentialité.](../media/edit-sensitivity-label-policy-full.png)
 
-Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
+Ce bouton démarre la **Créer une stratégie** configuration, ce qui vous permet de modifier les étiquettes incluses et les paramètres d’étiquette. Une fois la configuration terminée, toutes les modifications sont automatiquement répliquées vers les utilisateurs et services sélectionnés.
 
 Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 

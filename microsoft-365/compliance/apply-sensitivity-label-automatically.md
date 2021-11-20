@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914283"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071437"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Si vous souhaitez en savoir plus sur l’application automatique des étiquette de confidentialité dans Azure Purview (préversion), consultez l’article [Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label).
+> Pour plus d’informations sur l’application automatique d’une étiquette de sensibilité dans Azure Purview, voir [Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label).
 
 Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement cette étiquette au contenu lorsque celle-ci répond aux conditions que vous spécifiez.
 
@@ -78,7 +78,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
     - Si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci n’est pas appliqué.
-    - Si l’étiquette est configurée pour appliquer des [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que cela peut donner lieu à des noms de personnes hors de votre organisation.
+    - Si l’étiquette est configurée pour appliquer des [marquages dynamiques,](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)sachez que cette configuration peut entraîner le nom des personnes extérieures à votre organisation.
     - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique. Il n’existe actuellement aucun moyen de définir le propriétaire du gestionnaire des droits pour tous les e-mails entrants qui sont automatiquement chiffrés.
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
@@ -393,7 +393,7 @@ Les améliorations récentes par rapport à la version précédente pour les str
 
 - Lorsque vous spécifiez des sites individuels dans une stratégie d’étiquetage automatique, jusqu’à 100 sites sont désormais pris en charge au lieu de 10.
 
-- Maximum de 1 000 000 fichiers correspondants par stratégie d’étiquetage automatique en mode simulation. Si un nombre de fichiers supérieur à ce nombre est mis en correspondance au cours de la simulation, vous ne pourrez pas activer la stratégie. Reconfigurez la stratégie d’étiquetage automatique pour qu’elle corresponde à un nombre réduit de fichiers et réexécutez la simulation.
+- Maximum de 1 000 000 fichiers correspondants par stratégie d’étiquetage automatique en mode simulation. Si un nombre de fichiers supérieur à ce nombre est mis en correspondance au cours de la simulation, vous ne pourrez pas activer la stratégie. Reconfigurez la stratégie d’étiquetage automatique pour qu’elle corresponde à un plus petit nombre de fichiers et réexécutez la simulation.
 
 - Améliorations des simulations :
   - L’exécution de la stratégie d’étiquetage automatique en mode simulation se termine dans un délai de 12 heures au lieu de 48 heures.
