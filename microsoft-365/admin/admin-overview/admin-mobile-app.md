@@ -19,38 +19,46 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenez l’Administration Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: 404b722861de6885491c95843a7e5058752503cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f3d42b899705988efd0beb320e73894a91494010
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154097"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128435"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’Microsoft 365 d’administration mobile
 
-Êtes-vous un administrateur qui est généralement en cours d’aller ? Même si ce n’est pas le cas, il peut arriver que vous devrez gérer les Microsoft 365 à partir de votre téléphone ou tablette. Consultez [l’application Administration Microsoft 365 gratuite,](https://go.microsoft.com/fwlink/?LinkID=627216)qui est le compagnon idéal de la Centre d'administration Microsoft 365 web. Vous pouvez télécharger l’application à partir de [l’App Store d’Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)et de [Google Play Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
+Êtes-vous un administrateur qui est généralement en cours d’aller ? Même si ce n’est pas le cas, il peut arriver que vous devrez gérer les Microsoft 365 à partir de votre téléphone ou tablette. Consultez [l’application Administration Microsoft 365 gratuite,](https://go.microsoft.com/fwlink/?LinkID=627216)qui est le compagnon idéal de la Centre d'administration Microsoft 365 web. Vous pouvez télécharger l’application à partir de [l’App Store d’Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)et du [Google Play Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app’s home page, displaying search, Message center, health, and quick links":::
 
-L’application d’administration dispose de nombreuses fonctionnalités qui vous permettent de gérer les Microsoft 365 à partir de votre appareil mobile ou tablette, lorsque vous ne pouvez pas vous rendre sur un ordinateur. Voici quelques-unes des tâches que vous pouvez effectuer à partir de l’application :
+L’application d’administration offre un grand nombre de fonctionnalités qui vous permettent de gérer les Microsoft 365 à partir de votre appareil mobile ou tablette, lorsque vous ne pouvez pas vous rendre sur un ordinateur. Voici quelques-unes des tâches que vous pouvez effectuer à partir de l’application :
 
 - **Gérer les utilisateurs et les appareils** Ajouter ou modifier un utilisateur, réinitialiser le mot de passe d’un utilisateur, attribuer un rôle, bloquer un utilisateur, supprimer un utilisateur, gérer l’alias, attribuer des licences, effacer les données de l’appareil, etc.
 - **Gérer les groupes** Ajoutez un groupe, ajoutez ou supprimez des utilisateurs de groupes.
 - **Gestion et facturation des licences** Affichez la liste des licences achetées et attribuées, attribuez des licences aux utilisateurs, achetez ou supprimez des licences et affichez et téléchargez des factures.
 - **Prise en charge** Créez une demande de service et suivez toutes les mises à jour liées aux demandes de service pendant que vous êtes en cours d’utilisation.
-- **Centre de messages** Restez au courant de toutes les modifications à venir, de la maintenance planifiée ou d’autres annonces importantes liées aux Microsoft 365
+- **Centre de messages** Restez au courant de toutes les modifications à venir, de la maintenance planifiée ou d’autres annonces importantes relatives aux Microsoft 365
 - **État du service** Surveillez l’état de tous les services en visualxant l’état actuel du service et des détails sur les interruptions et les pannes du service.
 - **Notifications** Restez informé de toutes les informations importantes et mises à jour relatives aux publications du centre de messages, à l’état du service et à la facturation par le biais de notifications Push. Vous pouvez même personnaliser ce dont vous souhaitez être averti.
 
-Si vous êtes un administrateur et que vous êtes responsable de plusieurs Microsoft 365 organisation, vous pouvez vous connectez à plusieurs organisations et passer rapidement d’une organisation à l’autre. L’application prend en charge le thème foncé et est disponible en 39 langues.
+Si vous êtes un administrateur et que vous êtes responsable de plusieurs Microsoft 365 organisation, vous pouvez vous connectez à plusieurs organisations et passer rapidement d’une organisation à l’autre. L’application prend en charge le thème foncé et est disponible dans 39 langues.
   
 > [!IMPORTANT]
 > Si vous avez des problèmes lors de l’utilisation de l’application mobile Admin sur iOS ou Android, contactez-nous [feedback365@microsoft.com](mailto:feedback365@microsoft.com) nous le faire savoir.
+
+## <a name="watch-install-the-admin-mobile-app"></a>Regarder : Installer l’application mobile d’administration
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
+1. Pour obtenir l’Administration Microsoft 365'application mobile,  recherchez les Administration Microsoft 365 dans l’App Store pour votre appareil et installez-le.
+2. Connectez-vous à l’aide de votre adresse de messagerie d’administrateur général, puis consultez le tableau de bord pour afficher l’état du service, surveiller les licences utilisateur et consulter les messages et les demandes de service.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -61,10 +69,6 @@ Vous devez être administrateur dans une organisation Microsoft 365 pour utilise
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-  
-## <a name="watch-install-the-admin-mobile-app"></a>Regarder : Installer l’application mobile d’administration
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -104,7 +108,7 @@ Si vous sélectionnez un incident de service spécifique ou un message, l’opti
 
 Oui, vous pouvez configurer plusieurs comptes ou organisations.
 
-### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>Je ne parvenez pas à me connecter ou mon application agit de façon étrange. Que puis-je faire pour résoudre le problème ?
+### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>Je ne parvenez pas à me connecter ou mon application agit de façon ole. Que puis-je faire pour résoudre le problème ?
 
 Vous pouvez tenter d'exécuter les étapes classiques de dépannage d'application mobile :
 
@@ -121,10 +125,10 @@ Dans le menu de navigation de gauche, Paramètres  >  **notifications.** Vous po
 
 Envoyez [un feedback365@microsoft.com](mailto:feedback365@microsoft.com) pour signaler un problème avec l’application. Vous pouvez également nous faire part de vos commentaires au bas de cet article.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez téléchargé l’appareil mobile de l’administrateur, vous pouvez ajouter des utilisateurs pour vous aider à démarrer.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml)

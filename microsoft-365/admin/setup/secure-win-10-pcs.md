@@ -20,16 +20,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser les WINDOWS 10 une fois que vous avez Microsoft 365 Business Premium.
-ms.openlocfilehash: 11b91796d5c838cdcba656de430b875327be3db4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bc970928c9e82bfefcc5a8f87007f14ef431c122
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554359"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128807"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
 
@@ -37,18 +38,30 @@ Cet article s’applique aux Microsoft 365 Business Premium.
 
 Une fois [que](business-set-up.md) vous avez Microsoft 365 Business Premium, il est temps de protéger les ordinateurs Windows 10 de votre organisation contre le vol et les menaces malveillantes telles que les virus et les programmes malveillants.
 
-## <a name="to-secure-your-windows-10-computers"></a>Pour sécuriser vos ordinateurs Windows 10 de bureau
+## <a name="watch-secure-your-windows-10-pcs"></a>Regardez : Sécurisation de Windows 10 PC
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
+
+Après avoir installé la protection des appareils dans Microsoft 365 Entreprise, suivez ces étapes pour protéger Windows 10 ordinateurs.
+
+1. In the Centre d'administration Microsoft 365, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. Sous **Sécuriser vos ordinateurs Windows,** sélectionnez **Afficher.**
+1. Sélectionnez **Commencer.**
+1. Sous Qui la stratégie **doit-elle** s’appliquer ? , choisissez si vos sélections seront appliquées à tous les membres de votre organisation ou à des groupes de sécurité spécifiques.
+1. Sélectionnez **Enregistrer les modifications.**
+
+## <a name="to-secure-your-windows-10-computers"></a>Pour sécuriser vos ordinateurs Windows 10 ordinateurs
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
-2. Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **connectez-vous** et sécurité, sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started.
+2. Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started.
 3. Dans la page **Sécuriser vos ordinateurs Windows 10,** lisez toutes les informations pour comprendre ce que vous lisez et quel est l’impact sur l’utilisateur.
 
     On the top of the page, choose **Get started**.
 
 4. Dans le **volet Sécuriser Windows 10 ordinateurs,** sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, voir [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article). 
     
-    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfinëes pour sécuriser vos appareils Windows 10. Pour plus d’informations, voir [les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
+    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfines pour sécuriser vos appareils Windows 10. Pour plus d’informations, [voir les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
 
 1. Sélectionnez **Appliquer les paramètres.**
 
-    Ces paramètres s’appliquent à tous les utilisateurs de votre organisation. Pour configurer différentes stratégies pour différents groupes de sécurité, voir Définir les paramètres de protection des appareils [Windows 10 PC.](../devices/protection-settings-for-windows-10-pcs.md)
+    Ces paramètres s’appliquent à tous les utilisateurs de votre organisation. Pour configurer différentes stratégies pour différents groupes de sécurité, voir Définir les paramètres de protection des appareils [pour Windows 10 PC.](../devices/protection-settings-for-windows-10-pcs.md)

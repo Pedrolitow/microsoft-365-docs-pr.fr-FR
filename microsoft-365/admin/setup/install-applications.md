@@ -22,23 +22,38 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 description: Maintenant que vous avez Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
-ms.openlocfilehash: da2a91d682d5bd565db65b86226a90d47a84d51b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e943e5dd07f51ff6885cbb5f2567643597f360b9
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199212"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128207"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
 Maintenant que vous avez Microsoft 365, vous pouvez installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
   
+## <a name="watch-install-office-apps"></a>Regardez : Installer Office applications
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+
+Microsoft Office applications sont disponibles dans votre menu **Démarrer.** Si vous ne les voyez pas, vous pouvez les installer vous-même.
+
+1. Go to office.com. Vous devrez peut-être vous connectez avec votre compte de travail.
+2. Sélectionnez **Installer Office**   >   **Microsoft 365 applications**   >   **s’exécuter,** puis sélectionnez **Oui**.
+3. Les Office applications sont installées. Le processus peut prendre plusieurs minutes. Une fois terminé, sélectionnez **Fermer.**
+4. Pour installer Microsoft Teams, go to the office.com page, and choose **Teams**.
+5. Obtenez l’application Windows, puis sélectionnez **Exécuter.** Teams affiche une invite lorsque l’installation est terminée.
+
+## <a name="next-steps"></a>Prochaines étapes
+
 Suivez ces liens pour plus d’informations sur la façon de :
   
 - Installer Office applications : [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- Installez d’autres [applications : Project,](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281) [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- Installer d’autres [applications : Project,](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281) [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
 - Configurer des appareils mobiles : configuration [Microsoft 365 mobile - Aide](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
@@ -52,6 +67,6 @@ Si vous avez acheté Azure Active Directory Premium (AADP) Plan 1 ou Plan 2, vou
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
   
 [Résoudre les problèmes d’installation Office et Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (article)

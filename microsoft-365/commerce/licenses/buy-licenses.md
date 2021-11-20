@@ -19,15 +19,16 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 09/16/2021
-ms.openlocfilehash: 6cdcad3c37db8475bcb64fa7a33e287f502dcd66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10ec13b1b20d386c24390b2bd3172a49c5f7165d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163647"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128711"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
@@ -38,7 +39,7 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md)
 - Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
@@ -46,13 +47,13 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, la prochaine chose à faire est d’ajouter des utilisateurs et d’attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
+Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, l’étape suivante consiste à ajouter des utilisateurs et à attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
 
 ## <a name="watch-remove-existing-licenses"></a>Regarder : Supprimer des licences existantes
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
 
-Si vous avez supprimé des licences d’un abonnement, la prochaine chose à faire est de supprimer des utilisateurs [de votre organisation.](../../admin/add-users/delete-a-user.md)
+Si vous avez supprimé des licences d’un abonnement, vous devez ensuite supprimer des utilisateurs [de votre organisation.](../../admin/add-users/delete-a-user.md)
 
 ## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Acheter ou supprimer des licences pour votre abonnement commercial
 
@@ -69,7 +70,7 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -87,7 +88,7 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 Ce tableau décrit les raisons pour lesquelles les boutons Acheter des **licences** ou Supprimer des **licences** ne sont pas disponibles et les solutions possibles.
 
-|Raison  |Description  |Solution  |
+|Reason  |Description  |Solution  |
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en attente, vous ne pouvez pas acheter ou supprimer de licences tant que la vérification de solvabilité n’est pas terminée.  | Vérifiez ultérieurement si la vérification de solvabilité est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br/>Une fois la vérification de solvabilité terminée, vous devez voir les boutons Acheter **des licences** et **Supprimer des licences.** |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l’abonnement a été acheté et activé à l’aide d’une clé  de produit de 25 caractères, vous voyez le mot « Prépayé » dans la colonne Canal d’achat de la page Vos **produits.**  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit.](add-licenses-using-product-key.md) |
@@ -105,13 +106,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre prochaine facture. Si vous payez annuellement, vous êtes facturé dans un mois pour ces modifications.
 - Sur votre relevé de facturation suivant, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons un frais au prorat pour la période avec le nombre de licences d’origine et un frais pour le nouveau nombre de licences. Il existe également un frais pour le nombre de licences actuel pour le restant de votre période de facturation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez acheté plus de licences pour votre abonnement, vous devez ensuite attribuer ces licences aux [utilisateurs de votre organisation.](../../admin/manage/assign-licenses-to-users.md)
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous pouvez supprimer le compte de cet utilisateur. Pour en savoir plus, [consultez Supprimer un ancien employé.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

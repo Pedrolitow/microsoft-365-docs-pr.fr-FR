@@ -20,26 +20,38 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie pour permettre aux utilisateurs de réinitialiser leur mot de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: a30c32239cb1c995beaaf725aaf5dc3821beec8e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d36ddc604ca73ab09fc2de8eed6c1c8675c61877
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161773"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128423"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
 En tant qu’administrateur Microsoft 365, vous pouvez laisser les utilisateurs utiliser l’outil de réinitialisation de mot de passe [libre-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) afin de ne pas avoir à réinitialiser les mots de passe pour eux. Moins de travail pour vous !
-  
+ 
+## <a name="watch-let-users-reset-their-own-passwords"></a>Regardez : laisser les utilisateurs réinitialiser leur mot de passe
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
+
+1. Dans la Centre d'administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez Paramètres  >  **paramètres** org, puis sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& confidentialité**</a>.
+1. Under **Let your people reset their own passwords,** select Azure AD admin **center**.
+1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
+1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
+
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+ 
 ## <a name="before-you-begin"></a>Avant de commencer
   
-- Vous obtenez la réinitialisation  du mot de passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quel plan Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec Microsoft 365 d’essai.
+- Vous obtenez la réinitialisation  du mot de passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quel plan Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec la Microsoft 365 d’essai.
 
 - Elle utilise Azure. Vous bénéficierez automatiquement et **gratuitement** de cette fonction dans Azure lorsque vous effectuerez ces étapes. L'activation de la réinitialisation du mot de passe libre-service ne vous coûtera rien si vous n'utilisez aucune autre fonctionnalité Azure.
 
@@ -48,12 +60,6 @@ En tant qu’administrateur Microsoft 365, vous pouvez laisser les utilisateurs 
 Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
-
-## <a name="watch-let-users-reset-their-own-passwords"></a>Regardez : laisser les utilisateurs réinitialiser leur mot de passe
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
-
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Étapes : laisser les utilisateurs réinitialiser leur mot de passe
 
@@ -71,7 +77,7 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
   
 6. Lorsque vos utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
 [Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\

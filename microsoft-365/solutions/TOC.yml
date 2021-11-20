@@ -29,6 +29,24 @@
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: Étape 6. Former vos employés
           href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: "Gérer les points de terminaison avec Intune et Microsoft\_365"
+      items:
+        - name: Vue d’ensemble
+          href: manage-devices-with-intune-overview.md
+        - name: "Étape 1. Mettre en œuvre des stratégies de protection des applications Niveau\_2"
+          href: manage-devices-with-intune-app-protection.md
+        - name: Étape 2. Inscrire des appareils dans la gestion
+          href: manage-devices-with-intune-enroll.md
+        - name: "Étape\_3. Configurer les stratégies de conformité"
+          href: manage-devices-with-intune-compliance-policies.md
+        - name: Étape 4. Exiger des appareils sains et conformes
+          href: manage-devices-with-intune-require-compliance.md
+        - name: Étape 5. Déployer les profils d’appareils
+          href: manage-devices-with-intune-configuration-profiles.md
+        - name: Étape 6. Surveiller le risque et la conformité des appareils aux lignes de base de sécurité
+          href: manage-devices-with-intune-monitor-risk.md
+        - name: "Étape\_7. Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations"
+          href: manage-devices-with-intune-dlp-mip.md
     - name: Configurer la collaboration sécurisée avec Microsoft 365
       items:
         - name: Vue d’ensemble

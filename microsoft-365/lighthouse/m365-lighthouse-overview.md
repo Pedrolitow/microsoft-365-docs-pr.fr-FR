@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: a97ee53ab106eac3db9455d80c02e1411562e090
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 41b5938e2cdacb8db8c0eb6f26220e9d22f38e89
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645882"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127811"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
@@ -32,7 +32,7 @@ Microsoft 365 Lighthouse est un portail d’administration qui permet aux fourni
 
 Cette méthode simplifie l’intégration de clients Microsoft 365 Business Premium et Microsoft 365 E3 en recommandant des lignes de base de configuration de sécurité adaptées aux clients SMB et en fournissant des vues multi-clients dans tous les environnements clients. Grâce au MSP, les MSP peuvent mettre à l’échelle la gestion de leurs clients, se concentrer sur ce qui est le plus important, trouver et examiner rapidement les risques, et prendre des mesures pour mettre leurs clients dans un état sain et sécurisé.
 
-Aucun coût supplémentaire n’est associé à l’utilisation de L’Outil de gestion des Microsoft 365 services et des appareils connectés. Actuellement en prévisualisation et disponible pour les MSP inscrits au programme fournisseur de solutions Cloud (CSP) et au service des clients SMB avec un abonnement Microsoft 365 Business Premium ou Microsoft 365 E3 client.
+Aucun coût supplémentaire n’est associé à l’utilisation de L’Outil de gestion des Microsoft 365 services et des appareils connectés. Actuellement en prévisualisation, il est disponible pour les MSP inscrits au programme fournisseur de solutions Cloud (CSP) et au service des clients SMB avec un abonnement Microsoft 365 Business Premium ou Microsoft 365 E3 client.
 
 L’utilisation de La boutique par les partenaires du canal CSP Microsoft qui ont des clients qui utilisent Microsoft 365 Business Premium ou Microsoft 365 E3 est prise en charge. Cela inclut les partenaires fournisseurs de solutions Microsoft qui transactent directement avec Microsoft et ceux qui par le biais d’un fournisseur indirect (distributeur). 
 
@@ -42,7 +42,7 @@ L’utilisation de La boutique par les partenaires du canal CSP Microsoft qui on
 Pour plus d’informations sur le programme CSP, voir la vue [d fournisseur de solutions Cloud du programme.](/partner-center/csp-overview)
 
 > [!NOTE]  
-> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour plus d’informations, voir [Qu’est-ce qu’Azure Azure ?](/azure/lighthouse/overview)   
+> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour plus d’informations, [voir Qu’est-ce qu’Azure Azure Azure ?](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse avantages
 
@@ -60,9 +60,9 @@ Ce dernier permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 > [!NOTE] 
 > Pour plus d’informations sur la façon de s’inscrire, voir [S’inscrire Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
-[Microsoft 365 Lighthouse vue d’ensemble de la liste des](m365-lighthouse-tenant-list-overview.md) locataires (article)\
-[Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Microsoft 365 Lighthouse page Tenants overview](m365-lighthouse-tenants-page-overview.md) (article)\
+[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

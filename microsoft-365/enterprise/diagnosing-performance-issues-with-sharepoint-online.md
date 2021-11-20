@@ -3,7 +3,7 @@ title: Diagnostic des problèmes de performances avec SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 7/9/2019
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -19,26 +19,35 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
-ms.openlocfilehash: bb12bc6b8b8f95c33ad35aafad760803e927e830
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664938"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128735"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
 Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
   
-Il existe trois façons différentes d’identifier qu’une page d’un site SharePoint Online présente un problème de performances avec les personnalisations.
+Il existe quatre façons différentes d’identifier qu’une page d’un site SharePoint Online présente un problème de performances avec les personnalisations.
+
+- Diagnostic des performances du site et de la page
   
 - Moniteur réseau de la barre d’outils F12
 
 - Comparaison à une ligne de base non personnalisée
 
-- SharePoint Mesures d’en-tête de réponse en ligne
+- SharePoint d’en-tête de réponse en ligne
 
-Cette rubrique décrit comment utiliser chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez compris la cause du problème, vous pouvez travailler à une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous pouvez trouver sur https://aka.ms/tune . Sinon, si vous êtes administrateur et que vous souhaitez diagnostiquer rapidement le problème, [exécutez cet outil de diagnostic.](https://aka.ms/PillarSiteandPagePerf) 
+Cette rubrique décrit comment utiliser chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez compris la cause du problème, vous pouvez travailler à une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous pouvez trouver sur https://aka.ms/tune .  
+
+## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>Utiliser le diagnostic des performances du site et de la page à partir Administration Microsoft 365 site
+
+> [!NOTE]
+> Si vous êtes un administrateur et que vous avez des difficultés avec les performances dans SharePoint, sélectionnez Exécuter les **tests** ci-dessous, qui remplit le diagnostic des performances du site et de la page dans le Centre Administration Microsoft 365. Ces tests vérifient votre configuration et recommandent rapidement les étapes suivantes pour améliorer SharePoint performances de votre client.
+>> [!div class="nextstepaction"]
+>> [Exécuter des tests : vérifier SharePoint performances](https://aka.ms/PillarSiteandPagePerf)
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilisation de la barre d’outils F12 pour diagnostiquer les performances dans SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -66,7 +75,7 @@ Cela vous donne une représentation visuelle de la durée de chargement du fichi
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Configuration d’une planification non personnalisée pour SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-La meilleure façon de déterminer les points faibles en terme de performances de votre site consiste à configurer une collection de sites entièrement prêt à l’SharePoint Online. De cette façon, vous pouvez comparer tous les différents aspects de votre site avec ce que vous obtenez sans personnalisation sur la page. La OneDrive Entreprise page d’accueil est un bon exemple d’une collection de sites distincte qui n’a probablement pas de personnalisations.
+La meilleure façon de déterminer les points faibles en terme de performances de votre site consiste à configurer une collection de sites complète dans SharePoint Online. De cette façon, vous pouvez comparer tous les différents aspects de votre site avec ce que vous obtenez sans personnalisation sur la page. La OneDrive Entreprise page d’accueil est un bon exemple d’une collection de sites distincte qui n’a probablement pas de personnalisations.
   
 ## <a name="viewing-sharepoint-response-header-information"></a>Affichage des SharePoint d’en-tête de réponse
 <a name="F12ToolInfo"> </a>
@@ -75,7 +84,7 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Pour afficher les SharePoint’en-tête de réponse
   
-1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir [Nouveautés des outils F12.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
+1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir Nouveautés [des outils F12.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
 2. Dans les outils F12, sous **l’onglet** Réseau, appuyez sur le bouton vert pour charger une page.
 
@@ -83,7 +92,7 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 
     ![Affiche les détails de l’en-tête de réponse.](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
-4. Cliquez sur **En-têtes de réponse.**
+4. Cliquez **sur En-têtes de réponse.**
 
     ![Diagramme montrant l’URL de l’en-tête de réponse.](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
@@ -92,6 +101,6 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 
 L’article Options de navigation pour [SharePoint Online](navigation-options-for-sharepoint-online.md) montre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle compliquée a provoqué un long processus de la page sur le serveur. En prenant une valeur pour un site de référence (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans [les options de navigation SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier .aspx principal. Ce fichier contient la plupart du code ASP.NET qui s’exécute pour le chargement de votre page. Selon le modèle de site que vous utilisez, il peut s’agit de start.aspx, home.aspx, default.aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est beaucoup plus élevé que votre site de référence, cela indique qu’un problème de performances est à l’origine d’un problème dans votre page.
   
-Une fois que vous avez identifié qu’un problème spécifique à votre site est identifié, la meilleure façon de déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter un par un au site. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page s’exécute bien, vous pouvez rajouter des personnalisations spécifiques une par une.
+Une fois que vous avez identifié qu’un problème spécifique à votre site est identifié, la meilleure façon de déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter au site une par une. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page s’exécute bien, vous pouvez rajouter des personnalisations spécifiques une par une.
   
 Par exemple, si vous avez une navigation très complexe, essayez de modifier la navigation pour ne pas afficher les sous-sites, puis vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de roll-ups de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et que vous les ajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui sont le problème le plus important, puis travailler à une solution.

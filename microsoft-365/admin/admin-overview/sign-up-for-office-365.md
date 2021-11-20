@@ -22,17 +22,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_signup
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
+description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 946482d5aceca7d5b92829649988072fbcf54d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154073"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128363"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -84,7 +85,7 @@ Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter 
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>Regardez : Configurer Microsoft 365 Business Premium
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -105,7 +106,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Pays** où les services seront utilisés. Vous **ne pourrez pas** modifier le pays ultérieurement, même pendant le processus d’inscription ; vous devez redémarrer l’Assistant d’inscription.
+  - **Pays** où les services seront utilisés. Vous **ne pourrez pas** modifier le pays ultérieurement, même pendant le processus d’inscription ; Vous devez redémarrer l’Assistant d’inscription.
 
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
@@ -123,7 +124,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
     Vous pouvez payer votre abonnement avec une carte de crédit. Si le coût atteint un certain montant, vous pourrez peut-être également payer par facture.
 
     > [!IMPORTANT]
-    >  Lorsque vous vous inscrivez, choisissez la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
+    >  Lorsque vous vous inscrivez, n’oubliez pas de choisir la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
 
 ## <a name="related-content"></a>Contenu associé
 

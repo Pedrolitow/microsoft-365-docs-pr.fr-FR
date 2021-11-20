@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,19 +27,28 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ba8e0794c1918095d029e862cbd8c860066ed51e
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554155"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128243"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
 
-Basé sur votre compréhension de [l’authentification multi-facteurs (MFA) et de sa prise en charge dans Microsoft 365](multi-factor-authentication-microsoft-365.md), c’est le moment de la configurer et de la déployer dans votre organisation.
+L’authentification multifacteur signifie que vous et vos employés devez fournir plusieurs méthodes pour vous connecter à Microsoft 365 est l’un des moyens les plus simples de sécuriser votre entreprise. Basé sur votre compréhension de [l’authentification multi-facteurs (MFA) et de sa prise en charge dans Microsoft 365](multi-factor-authentication-microsoft-365.md), c’est le moment de la configurer et de la déployer dans votre organisation. 
 
 > [!IMPORTANT]
 > Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019 et que vous êtes, de manière, invité à fournir une authentification multifacteur lors de la connexion, [les valeurs de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activées pour votre abonnement.
+
+## <a name="watch-turn-on-multifactor-authentication"></a>Regarder : activer l’authentification multifacteur
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. Accédez au Centre d'administration Microsoft 365 sur <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
+1. Sélectionnez **Afficher tout**, puis **Azure Active Directory Centre d’administration**.
+1. Sélectionnez **Azure Active Directory**, **Propriétés**, **Gérer les paramètres de sécurité par défaut**.
+1. Sous **Activer les paramètres de sécurité par défaut**, sélectionnez **Oui**, puis **Enregistrer**.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

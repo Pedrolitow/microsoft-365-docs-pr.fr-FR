@@ -19,15 +19,16 @@ ms.custom:
 - commerce_purchase
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid: GEA150
 description: Inscrivez-vous à une version d’essai gratuite de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e3ec002ceb47c7e4378ba28d833c2a3032472103
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754396"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128867"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 entreprise
 
@@ -39,7 +40,7 @@ Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exéc
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **Options de paiement pour Office 365 géré par 21Vianet en Chine** Les cartes de crédit internationales ne sont pas acceptées. Vous pouvez payer votre abonnement en :
+> Les options de paiement Office 365 les cartes de crédit **21Vianet** en Chine international ne sont pas acceptées. Vous pouvez régler votre abonnement en :
 >
 > - Facture
 > - Le paiement en ligne à l’aide d’Alipay ou de China UnionPay Proof of payment sera fourni sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, [voir Appliquer pour un fapiao Office 365 géré par 21Vianet.](../admin/services-in-china/apply-for-a-fapiao.md)
@@ -106,6 +107,15 @@ Lorsque vous ajoutez un abonnement via <a href="https://go.microsoft.com/fwlink/
 
 Si vous avez déjà un abonnement Microsoft 365 entreprise, vous pouvez passer par le Centre d'administration Microsoft 365 pour acheter un autre abonnement pour votre organisation.
 
+### <a name="watch-move-users-to-a-different-subscription"></a>Regarder : déplacer des utilisateurs vers un autre abonnement
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+
+À mesure que vos utilisateurs changent de rôle, ils peuvent avoir besoin de fonctionnalités qui ne sont pas disponibles dans leur abonnement Microsoft 365 Business Premium actuel. Dans ce cas, vous pouvez ajouter un nouvel abonnement qui inclut ces fonctionnalités et attribuer des licences aux personnes qui en ont besoin.
+
+> [!NOTE]
+> Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+
 Lorsque vous achetez un autre abonnement via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365,</a>le nouvel abonnement est associé à la même organisation (espace de nom de domaine) que votre abonnement existant. Cela facilite le déplacement des utilisateurs de votre organisation entre les abonnements ou leur attribuer une licence pour l’abonnement supplémentaire dont ils ont besoin.
 
 1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
@@ -121,7 +131,7 @@ Lorsque vous achetez un autre abonnement via <a href="https://go.microsoft.com/f
 
 ## <a name="payment-options"></a>Modes de paiement
 
-Vous pouvez payer votre abonnement en :
+Vous pouvez régler votre abonnement en :
 
 - Facture
 
@@ -133,7 +143,7 @@ La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer
 > Les cartes de crédit internationales ne sont pas acceptées.
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez un nouveau compte et que vous avez configuré votre premier abonnement, vous pouvez utiliser les articles de configuration guidés pour vous aider à commencer.
 
@@ -144,7 +154,7 @@ Si vous avez un nouveau compte et que vous avez configuré votre premier abonnem
 
 Si vous avez déjà un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 vidéos de formation pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\

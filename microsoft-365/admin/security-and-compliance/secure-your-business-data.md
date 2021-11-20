@@ -19,22 +19,31 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 4ae0f773f196d00855f426d52526e7a96938832d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e15240f70b99e649ae6451bfe81924fa5a0a140c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110030"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128351"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 
 Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’entreprise de Microsoft et que votre type d’organisation est ciblé par des cybercriminels et des pirates informatiques, utilisez les instructions de cet article pour renforcer la sécurité de votre organisation. Ces conseils aident votre organisation à atteindre les objectifs décrits dans le Manuel de campagne de cyber-sécurité de l’établissement d’état de [L’État de Nouvelle-France.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
+
+## <a name="watch-overview-of-security"></a>Regarder : Vue d’ensemble de la sécurité
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
+
+Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et l’accès non autorisé, ainsi qu’à protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
+
+## <a name="complete-top-security-tasks"></a>Effectuer les principales tâches de sécurité
 
 Microsoft recommande d’effectuer les tâches répertoriées dans le tableau suivant qui s’appliquent à votre plan de service.
 

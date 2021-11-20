@@ -18,18 +18,19 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 644e03fcfd5cfdc2997793097b26a3ca6a494d50
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4c4053760ad8f4810ea1c92a0d7ba4ecbaa61d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158825"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128123"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -37,17 +38,22 @@ L’abonnement Microsoft 365 ou Office 365 inclut un ensemble de rôles d'admini
 
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> vous permet de gérer les rôles Azure AD et Microsoft Intune. Toutefois, ces rôles sont un sous-ensemble des rôles disponibles sur le Portail Azure AD et le Centre d’administration Intune.
 
+## <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
+1. Lorsque vous êtes connecté à Microsoft 365, sélectionnez le lanceur d’applications. Si le bouton Administrateur s’affiche, cela signifie que vous êtes un administrateur.
+1. Sélectionnez **Administrateur** pour accéder au Centre d'administration Microsoft 365.
+1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs actifs**</a>.
+1. Sélectionnez la personne qui doit être administrateur. Les détails de l’utilisateur s’affichent dans la boîte de dialogue de droite.
+
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Vous recherchez la liste complète des descriptions de rôle Azure AD détaillées que vous pouvez gérer dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Microsoft 365</a>? Consultez la page Autorisations des rôles d’administrateur dans Azure Active Directory. [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference).
 
 Vous recherchez la liste complète des descriptions de rôle Intune détaillées que vous pouvez gérer dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Microsoft 365</a>?  Consultez la page [Contrôle d’accès basé sur un rôle dans Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-Si vous souhaitez en savoir plus sur l’attribution de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, consultez la page Web [Attribuer des rôles d’administrateur](assign-admin-roles.md).
-
-## <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+Si vous souhaitez en savoir plus sur l’attribution de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, consultez la page [Attribuer des rôles d’administrateur](assign-admin-roles.md).
 
 ## <a name="security-guidelines-for-assigning-roles"></a>Directives de sécurité pour l'attribution des rôles
 
@@ -96,7 +102,7 @@ Un partenaire peut attribuer ces rôles :
 
 - **Agent de support technique**, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
-Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](../misc/add-partner.md).
+Pour que le partenaire puisse attribuer ces rôles aux utilisateurs, vous devez l'ajouter en tant qu'administrateur délégué à votre compte. Ce processus est initié par un partenaire agréé. Le partenaire vous envoie un e-mail pour vous demander l'autorisation d'agir en tant qu'administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenariat](../misc/add-partner.md).
   
 ## <a name="related-content"></a>Contenu associé
 

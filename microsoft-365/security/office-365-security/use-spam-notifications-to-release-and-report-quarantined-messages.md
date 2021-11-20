@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d3c7296cff3f3f4f2d10a2c4358a889ac428880
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1950104e910733bfb3f846ff53411a6c75bbd68d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064074"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128939"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de mise en quarantaine pour libérer et signaler les messages mis en quarantaine
 
@@ -35,7 +35,7 @@ ms.locfileid: "61064074"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, [voir Messages mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
@@ -43,7 +43,7 @@ _Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs so
 
 Les notifications de mise en quarantaine ne sont pas allumées dans les notifications de mise en quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Les notifications de mise en quarantaine sont allumées dans la stratégie de mise en quarantaine intégrée nommée NotificationEnabledPolicy si [votre organisation l’a.](quarantine-policies.md#full-access-permissions-and-quarantine-notifications) Dans le cas contraire, pour activer les notifications de mise en quarantaine dans les stratégies de mise en quarantaine, vous devez créer et [configurer une nouvelle stratégie de mise en quarantaine.](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal)
 
-En outre, pour empêcher directement les expéditeurs de mettre en quarantaine les notifications, les utilisateurs doivent être activés pour PowerShell à distance. Pour obtenir des instructions, voir Activer ou [désactiver l’accès Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
+En outre, pour que l’option « Bloquer l’expéditeur » dans les notifications de mise en quarantaine fonctionne correctement, les utilisateurs doivent être activés pour PowerShell à distance. Pour obtenir des instructions, voir Activer ou [désactiver l’accès Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
 Les administrateurs peuvent également utiliser les paramètres globaux des stratégies de mise en quarantaine pour personnaliser le nom complet de l’expéditeur, le texte de la clause d’exclusion de responsabilité dans différentes langues et le logo de l’entreprise utilisé dans les notifications de mise en quarantaine. Pour obtenir des instructions, voir [Configurer les paramètres globaux de notification de mise en quarantaine.](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)
 

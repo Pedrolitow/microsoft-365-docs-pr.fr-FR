@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour sécuriser Windows 10 appareils.
-ms.openlocfilehash: 1217c6ad8be6b74c4b1fa05294f5bc51f275bea2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165471"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128027"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour Windows 10 PC
 
@@ -37,7 +38,7 @@ Cet article s’applique aux Microsoft 365 Business Premium.
 
 Une fois que vous avez configuré les paramètres de protection Windows par défaut sur la page d’installation, vous pouvez en ajouter de nouveaux qui s’appliquent à tous les utilisateurs ou à un ensemble d’utilisateurs. Vous pouvez également modifier les modifications que vous avez créées.
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>Créer des paramètres de protection pour Windows 10 appareils
+## <a name="watch-create-protection-settings-for-windows-10-devices"></a>Regarder : Créer des paramètres de protection pour Windows 10 appareils
 
 Regardez une vidéo sur la façon de sécuriser Windows 10 appareils à l’Microsoft 365 Business Premium :
   
@@ -70,12 +71,12 @@ Par défaut, tous les paramètres sont **Activés**. Les paramètres suivants so
 Pour plus d’informations, voir Comment les fonctionnalités [de protection Microsoft 365 Premium mappés aux paramètres Intune](map-protection-features-to-intune-settings.md). 
 
 
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |:-----|:-----|
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Utiliser des règles qui réduisent la surface d'attaque des appareils  <br/> |Quand elle est activée, la réduction de la surface d'attaque aide à bloquer les actions et applications que les logiciels malveillants utilisent généralement pour contaminer des appareils. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, voir [Réduire les surfaces d'attaque](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
-|Protéger les dossiers contre des menaces telles que des rançongiciels  <br/> |Ce paramètre utilise l'Accès contrôlé aux dossiers pour protéger les données de l'entreprise contre l'apport de modifications par des applications suspectes ou malveillantes, telles que les rançongiciels. L'apport de modifications aux dossiers protégés par des applications de ces types est bloqué. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en [savoir plus, consultez](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) Protéger les dossiers avec accès contrôlé aux dossiers.  <br/> |
+|Protéger les dossiers contre des menaces telles que des rançongiciels  <br/> |Ce paramètre utilise l'Accès contrôlé aux dossiers pour protéger les données de l'entreprise contre l'apport de modifications par des applications suspectes ou malveillantes, telles que les rançongiciels. L'apport de modifications aux dossiers protégés par des applications de ces types est bloqué. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour plus [d’informations, voir](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) Protéger les dossiers avec accès contrôlé aux dossiers.  <br/> |
 |Empêcher l'accès réseau à du contenu potentiellement malveillant sur Internet  <br/> |Utilisez ce paramètre pour bloquer les connexions des utilisateurs sortants à des emplacements Internet de faible réputation qui peuvent héberger des tentatives d’hameçonnage, des attaques ou d’autres contenus malveillants. Ce paramètre n’est disponible que si Antivirus Windows Defender est définie sur **On**. Pour plus d’informations, [voir Protéger votre réseau.](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)  <br/> |
 |Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d’informations, consultez la FAQ [sur Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Permet aux utilisateurs de télécharger et d'installer des applications à partir du Microsoft Store. Il peut s'agir de jeux ou d'outils de productivité, c'est pourquoi nous laissons ce paramètre **activé**, mais vous pouvez le désactiver pour plus de sécurité.  <br/> |

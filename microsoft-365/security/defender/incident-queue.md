@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 0705424080f58d58f8c45b4a403fae01beb53373
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914319"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128831"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -38,9 +39,9 @@ ms.locfileid: "60914319"
 
 Microsoft 365 Defender l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue offre à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
 
-La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. C’est également ce qu’on appelle le triage des incidents.
+La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. C’est également ce qu’on appelle le triage des incidents.
 
-Vous pouvez vous rendre dans la file d’attente des incidents à partir **d’incidents & alertes** > Incidents sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
+Vous arrivez à la file d’attente des incidents à partir **d’incidents & alertes > incidents** sur le lancement rapide du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a> Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -52,7 +53,7 @@ La file d’attente des incidents possède des colonnes personnalisables (sélec
 
 Pour une visibilité supplémentaire en un coup d’œil, l’appellation automatique des incidents génère des noms d’incident basés sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
@@ -65,22 +66,26 @@ Dans la file d’attente des incidents par défaut, vous pouvez sélectionner **
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
+Le filtre par défaut consiste à afficher toutes les alertes et tous les incidents avec l’état **Nouveau** et **En cours.**
+
 Ce tableau répertorie les noms de filtres disponibles.
 
 | Nom du filtre | Description |
 |:-------|:-----|
-| Affectée à | Vous pouvez choisir d’afficher les alertes qui vous sont affectées ou celles gérées par l’automatisation. |
+| État | Sélectionnez **Nouveau**, **En cours** ou **Résolu**. |
+| Severity | La gravité d’un incident indique l’impact qu’il peut avoir sur vos ressources. Plus la gravité est élevée, plus l’impact est important et nécessite généralement l’attention la plus immédiate. Select **High**, **Medium**, **Low**, or **Informational**. |
+| Affectation d’incident | Sélectionnez Affecté à tout le monde, Affecté à moi ou Non attribué. |
+| Plusieurs sources de service  | Spécifiez si le filtre est pour plusieurs sources de service. |
+| Sources de service  | Filtrez pour voir uniquement les incidents qui contiennent des alertes de : Gouvernance des applications, Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité, Microsoft Defender pour les applications cloud. |
+| Balises | Sélectionnez un ou plusieurs noms de balises dans la liste. |
+| Plusieurs catégories  | Spécifiez si le filtre s’agit de plusieurs catégories. |
 | Catégories | Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. |
-| Classification | Filtrer les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies. |
-| Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes. <br><br> Applicable uniquement si la protection des informations Microsoft est activée.|
-| Groupe d’appareils | Filtrer par groupes d’appareils définis. |
-| État de l’examen | Filtrer les incidents selon l’état de l’examen automatisé.  |
-| Plusieurs catégories | Vous pouvez choisir de ne voir que les incidents qui ont été mappés à plusieurs catégories et qui peuvent donc potentiellement causer davantage de dommages. |
-| Plusieurs sources de service  | Filtrez pour voir uniquement les incidents qui contiennent des alertes provenant de différentes sources (Microsoft Defender pour le point de terminaison, Microsoft Cloud App Security, Microsoft Defender pour l’identité, Microsoft Defender pour Office 365). |
 | Plateforme du système d’exploitation | Limitez l’affichage de la file d’attente des incidents par système d’exploitation. |
-| Sources de service | En sélectionnant une source spécifique, vous pouvez vous concentrer sur les incidents qui contiennent au moins une alerte de la source choisie. |
-| Severity | La gravité d’un incident indique l’impact qu’il peut avoir sur vos ressources. Plus la gravité est élevée, plus l’impact est important et nécessite généralement l’attention la plus immédiate. |
-| Statut | Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus. |
+| Classification | Filtrer les incidents en fonction des classifications définies des alertes associées. Sélectionnez **Alerte True,** **Alertes fausses** ou Non **définies.** |
+| État de l’examen | Filtrer les incidents selon l’état de l’examen automatisé.  |
+| Menace associée | Filtrer les incidents par une menace nommée.  |
+| Actors | Filtrer les incidents par un acteur de menace nommé.  |
+| Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes. <br><br>Ce filtre n’est disponible que si Protection des données Microsoft est allumé.|
 |||
 
 ## <a name="save-defined-filters-as-urls"></a>Enregistrer les filtres définis en tant qu’URL

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 entreprise.
-ms.openlocfilehash: 7e7d3a56d58c19e36372a4e3d8f32788bf19771d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193828"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128663"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
@@ -35,15 +35,19 @@ Cet article est réservé aux personnes qui se sont abonnées à une Microsoft 3
   
 Avant de déplacer votre organisation vers Microsoft 365, il existe des exigences que vous devez respecter, des informations dont vous avez besoin et des décisions que vous devez prendre.
 
+## <a name="overview-of-microsoft-365-business-premium-setup"></a>Vue d’ensemble de Microsoft 365 Business Premium configuration
 
-  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+Félicitations pour votre décision de déplacer votre entreprise vers le cloud avec Microsoft 365 ! Que votre entreprise compte une seule personne ou 20 personnes, un peu de planification vous permettra de mieux Microsoft 365 Business Premium.
+
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Informations à prendre en main avant d’exécuter l’Assistant Installation
 
 Lorsque vous êtes prêt à exécuter l’Assistant Installation et à déplacer votre domaine vers Microsoft 365, voici les informations dont vous aurez besoin :
   
 - Liste des personnes que vous souhaitez ajouter à Microsoft 365. Même si vous les avez déjà ajoutés à Microsoft 365, si vous actualisez vos informations de domaine, vous devez entrer leurs noms ici.
 
-- Comment vous allez informer vos employés de leur ID d’utilisateur et mot de passe afin qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
+- Comment informer vos employés de leur ID d’utilisateur et mot de passe pour qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
 
 - Si vous avez un nom de domaine pour votre organisation (par exemple, **contoso.com)** et que vous envisagez d’utiliser la messagerie Électronique Microsoft, vous devez savoir où votre domaine est enregistré et avoir des informations de connectez-vous.
 
@@ -70,7 +74,7 @@ Il existe quelques scénarios qui incluent la migration de données ou d’utili
 
 ## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>Passer à Microsoft 365 en une seule fois ou par étapes
 
-- **Voulez-vous déplacer votre organisation vers Microsoft 365 en même temps ?** Si c’est le cas, prévoyez de déplacer votre domaine vers Microsoft 365 immédiatement. Commencez par l’exécution de l Microsoft 365 de configuration de l’ordinateur . Il vous invite à configurer votre domaine.
+- **Voulez-vous déplacer votre organisation vers Microsoft 365 en même temps ?** Si c’est le cas, prévoyez de déplacer votre domaine vers Microsoft 365 immédiatement. Commencez par l’exécution de l Microsoft 365 de configuration de votre domaine. Il vous invite à configurer votre domaine.
 
 - **Voulez-vous passer à Microsoft 365 progressivement ?** Si vous souhaitez passer à Microsoft 365 par étapes, ignorez l’exécution de l’Assistant Installation de Microsoft 365 et envisagez d’adopter Microsoft 365 fonctionnalités dans l’ordre suivant :
 
@@ -123,7 +127,7 @@ Microsoft 365 offre un stockage cloud pour les individus, les petites organisati
   
 ## <a name="plan-for-teams"></a>Planifier les Teams
 
-Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide Teams sans configuration spéciale. Pour plus d’informations, [consultez La](/MicrosoftTeams/get-started-with-teams-quick-start)mise en Microsoft Teams .
+Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, [consultez La](/MicrosoftTeams/get-started-with-teams-quick-start)mise en Microsoft Teams .
 
 Pour les grandes organisations ou si vous débutez à partir de déploiements Skype Entreprise, locaux ou hybrides, voir comment déployer [Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   
@@ -131,7 +135,7 @@ Pour les grandes organisations ou si vous débutez à partir de déploiements Sk
 
 - **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide de Azure Active Directory Connecter. Pour obtenir des instructions, voir Configurer la synchronisation [d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
-- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres entreprises ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un [partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider dans votre déploiement.
+- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres sociétés ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un [partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider dans votre déploiement.
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>Voulez-vous que quelqu’un vous aide à configurer Microsoft 365 ?
 

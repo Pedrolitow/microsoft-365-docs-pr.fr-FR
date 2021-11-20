@@ -26,17 +26,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 9c2c9da3e9427f77f067001c5f244e7c6d4e247f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196200"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128039"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -45,6 +46,13 @@ ms.locfileid: "60196200"
 Regardez cette vidéo pour obtenir une vue d’ensemble Microsoft 365 Business Premium configuration.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>puis **sélectionnez Aller à l’installation.** L’Assistant Installation démarre.
+1. Une fois l’installation terminée, revenir au Centre d’administration Microsoft. Dans le Centre d’administration, vous pouvez continuer à configurer des fonctionnalités telles que Windows 10 stratégies, DLP, etc. sur la page **d’installation.**
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Ajouter votre domaine, vos utilisateurs et configurer des stratégies
 
@@ -86,7 +94,7 @@ Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatique
 
 ![Capture d’écran de la page Ajouter de nouveaux utilisateurs dans l’Assistant.](../../media/addnewuserspage.png)
 
-1. Si votre abonnement Microsoft 365 Business Premium a des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connecter), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
+1. Si votre abonnement Microsoft 365 Business Premium compte des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connecter), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
 
 2. Après avoir ajouté des utilisateurs, vous avez également la possibilité de partager des informations d'identification avec les nouveaux utilisateurs que vous avez ajouté. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou les télécharger.
 
@@ -124,7 +132,7 @@ Les stratégies que vous avez définies dans l’Assistant sont appliquées auto
 
 ## <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 
-Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **connectez-vous** et sécurité, sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started. Pour obtenir des instructions [complètes, Windows 10 vos ordinateurs](secure-win-10-pcs.md) de sécurité.
+Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started. Pour obtenir des instructions [complètes, Windows 10 vos ordinateurs](secure-win-10-pcs.md) de sécurité.
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer Office 365 applications clientes
 
@@ -132,7 +140,7 @@ Si vous avez choisi d’installer automatiquement des applications Office lors d
 
 Pour installer Office sur des appareils mobiles iOS ou Android, voir Configurer des appareils [mobiles pour Microsoft 365 Business Premium utilisateurs.](set-up-mobile-devices.md)
 
-Vous pouvez également installer Office individuellement. Pour [obtenir des instructions, voir Office’installation](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) sur un PC ou Mac.
+Vous pouvez également installer Office individuellement. Pour [plus d’Office, voir](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) l’installation sur un PC ou Mac.
 
 ## <a name="related-content"></a>Contenu associé
 

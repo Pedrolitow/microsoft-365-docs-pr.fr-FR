@@ -17,16 +17,17 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: eee8b2bb9484dfba34a278f7ee2b9b0077dda7e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161929"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128507"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
@@ -35,35 +36,6 @@ Chaque membres de votre équipe a besoin d'un compte d'utilisateur pour se conne
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Vous devez être un administrateur général, de licences ou d’utilisateurs pour attribuer des licences. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
-
-## <a name="add-a-user-in-the-admin-simplified-view"></a>Ajouter un utilisateur dans le mode simplifié administrateur
-
-Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **mode simplifié administrateur**. Suivez les étapes ci-dessous permettant d’ajouter un utilisateur.
-
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Capture d’écran : mode simplifié du Centre d'administration":::
-
-::: moniker range="o365-worldwide"
-
-1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
-
-::: moniker-end 
-
-2. Sélectionnez **Créer un compte pour une autre personne**.
-3. Sur la page **Ajouter un compte utilisateur**, remplissez le prénom et le nom, le nom d'affichage et le nom d'utilisateur qu’il utilisera pour se connecter.
-4. Ajoutez l’adresse e-mail de l’utilisateur dans la zone de texte **Jusqu’à 5 adresses e-mail...**. Ceci permettra de s’assurer que le nouvel utilisateur reçoive les informations dont il a besoin pour se connecter aux services Microsoft 365.
-5. Sélectionnez **Ajouter un utilisateur**, puis **Télécharger les informations de connexion** si vous souhaitez les enregistrer.
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>Vidéo : Ajouter des utilisateurs dans l’affichage du tableau de bord
 
@@ -104,6 +76,35 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 4. Dans le volet **Attribuer des licences de produits**, sélectionnez l’emplacement et la licence adaptée à l’utilisateur. Si vous n’avez pas de licence disponible, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires. Développez l’onglet **Applications** et sélectionnez ou désélectionnez les applications pour lesquelles attribuer les licences à l’utilisateur. Sélectionnez **Suivant**.
 5. Dans le volet **Paramètres facultatifs**, développez l’onglet **Rôles** et promouvez cet utilisateur au rôle d’administrateur. Développez l’onglet **Informations du profil** pour ajouter plus d’informations sur l’utilisateur.
 6. Sélectionnez **Suivant**, passez en revue les paramètres du nouvel utilisateur, effectuez les changements que vous souhaitez, puis sélectionnez **Finaliser l’ajout**, puis **Fermer**.
+
+## <a name="add-a-user-in-the-admin-simplified-view"></a>Ajouter un utilisateur dans le mode simplifié administrateur
+
+Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **mode simplifié administrateur**. Suivez les étapes ci-dessous permettant d’ajouter un utilisateur.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Capture d’écran : mode simplifié du Centre d'administration":::
+
+::: moniker range="o365-worldwide"
+
+1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Sélectionnez **Créer un compte pour une autre personne**.
+3. Sur la page **Ajouter un compte utilisateur**, remplissez le prénom et le nom, le nom d'affichage et le nom d'utilisateur qu’il utilisera pour se connecter.
+4. Ajoutez l’adresse e-mail de l’utilisateur dans la zone de texte **Jusqu’à 5 adresses e-mail...**. Ceci permettra de s’assurer que le nouvel utilisateur reçoive les informations dont il a besoin pour se connecter aux services Microsoft 365.
+5. Sélectionnez **Ajouter un utilisateur**, puis **Télécharger les informations de connexion** si vous souhaitez les enregistrer.
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Ajouter plusieurs utilisateurs simultanément
 

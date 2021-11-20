@@ -18,18 +18,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Apprenez comment un administrateur global Microsoft 365 peut modifier l'adresse électronique et le nom d'affichage d'un utilisateur lorsque son nom change. "
-ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Découvrez comment un administrateur général Microsoft 365 peut modifier l’adresse e-mail et le nom complet d’un utilisateur lorsque son nom change. '
+ms.openlocfilehash: 52ec631859411eef1d64fe44c85c27e2466d86c2
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161869"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128391"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -39,7 +40,14 @@ Vous devrez peut-être modifier l’adresse de messagerie et le nom complet d’
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs**</a>.
+1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
+1. Sélectionnez **Gérer les informations de contact**.
+1. Modifiez le nom complet, puis sélectionnez **Enregistrer les modifications**.
+
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+
+## <a name="before-you-begin"></a>Avant de commencer
 
 Vous devez être un[administrateur général](about-admin-roles.md) pour effectuer ces étapes.
 

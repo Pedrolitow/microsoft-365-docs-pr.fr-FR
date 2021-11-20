@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157217"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128392"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -54,13 +55,18 @@ Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateu
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
+1. Lorsqu’un utilisateur demande un nouveau mot de passe, vous recevez une demande de réinitialisation de mot de passe par courrier électronique. Pour réinitialiser le mot de passe, ouvrez le lanceur d’applications et sélectionnez **Admin**.
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs,** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs**</a>actifs, puis sélectionnez l’icône de clé en face de l’utilisateur qui a demandé la réinitialisation.
+1. Sélectionnez **Générer automatiquement le mot de passe** pour qu’un mot de passe aléatoire soit créé automatiquement.
+1. Sélectionnez **Réinitialiser.**
+
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Étapes : réinitialiser un mot de passe d’entreprise pour un utilisateur
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis réinitialisez **le mot de passe.**
+2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
 
 3. Suivez les instructions de la **page** Réinitialiser le mot de passe pour générer automatiquement un mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser.**  
 
@@ -129,5 +135,5 @@ Essayez cet article : [J'ai oublié le nom d'utilisateur ou le mot de passe du c
 [Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
 [Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
 [Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
-[Définir la stratégie d’expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
+[Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
 [Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml) (page de liens)

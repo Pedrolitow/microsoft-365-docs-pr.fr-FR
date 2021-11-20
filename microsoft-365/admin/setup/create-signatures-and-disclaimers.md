@@ -20,18 +20,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérez les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: 566cf595365a578f0e92d7e41e8ed7c7764c0cf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197797"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128231"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -40,6 +41,11 @@ ms.locfileid: "60197797"
 ## <a name="watch-create-a-company-wide-email-signature"></a>Regarder : Créer une signature électronique à l’échelle de l’entreprise
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
+
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a> **sélectionnez Exchange**.
+1. Sélectionnez **Flux de messagerie.**
+1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
+1. Dans la page **Nouvelle règle,** remplissez les étapes. 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
@@ -68,7 +74,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
    
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Centres d’administration,** puis **sélectionnez Exchange**.
     
@@ -104,7 +110,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérez la signature directement sous la dernière réponse ou envoi d’e-mail
+- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
     
 - Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
@@ -112,13 +118,13 @@ Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures 
     
 - Ignorer les lignes qui contiennent des variables qui n’ont pas pu être mises à jour (par exemple, parce que la valeur n’a pas été fournie pour un utilisateur)
     
-Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
+Pour obtenir ces fonctionnalités et d’autres pour gérer les signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
   
 ## <a name="more-resources"></a>Plus de ressources
 
 Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes de message à l’échelle de l’Exchange Online .
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
