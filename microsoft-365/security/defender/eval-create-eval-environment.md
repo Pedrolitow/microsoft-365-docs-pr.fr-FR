@@ -1,5 +1,5 @@
 ---
-title: Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
+title: Créer l’Microsoft 365 Defender d’évaluation de la sécurité
 description: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote en activant les licences d’essai. Ensuite, configurer Microsoft Defender pour l’identité (MDI) et toutes les autres évaluations M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,35 +21,37 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 9ab62cd50ab9d378c107928f73db71dc6bc14bc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f333b872ee89bf37dcf8404ba7d2ce05f6cc2703
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206612"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122344"
 ---
-# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
+# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’Microsoft 365 Defender d’évaluation de la sécurité
 
-Il existe deux façons courantes de faire cette étape suivante dans l’évaluation. Ce document suppose que vous avez déjà un client M365 de production et activera les licences d’évaluation E5 pour évaluer M365 Defender dans *l’environnement actuel.* Une évaluation sur place vous permet de conserver toutes les méthodes de sécurité avec l’achat de licences après la période d’évaluation.
+Il existe deux façons courantes de faire cette étape suivante dans l’évaluation. Ce document suppose que vous avez déjà un client Microsoft 365 production et activera les licences d’évaluation E5 pour évaluer les Microsoft 365 Defender dans *l’environnement actuel.* Une évaluation sur place vous permet de conserver les méthodes de sécurité avec l’achat de licences après la période d’évaluation.
 
-La seconde consiste à configurer votre environnement de laboratoire [d Microsoft 365 Defender d’évaluation](setup-m365deval.md) aux fins d’évaluation. Il n’y a peut-être pas beaucoup de signaux réels de l’entreprise, donc n’ignorez pas cette mise en garde.
+La seconde consiste à configurer votre environnement de laboratoire [d Microsoft 365 Defender d’évaluation](setup-m365deval.md) à des fins d’évaluation. Notez qu’il n’y a peut-être pas beaucoup de signaux réels de l’entreprise.
 
 ## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Pour activer les licences d’évaluation E5 afin d’évaluer Microsoft 365 Defender 
-1. Connectez-vous à votre portail d’administration des clients M365 existant.
-2. Sélectionnez *Acheter des services* dans le menu de navigation.
-3. Faites défiler vers le *bas jusqu Office 365* section et sélectionnez le bouton « Détails » sous Office 365 E5 licence.
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="La Office 365 section contient un bouton Détails sur le bouton Cliquer.":::
+1. Connectez-vous à votre portail d’administration Microsoft 365 client existant.
+2. Sélectionnez **Acheter des services** dans le menu de navigation.
+3. Faites défiler vers le bas jusqu Office 365 section et sélectionnez le bouton **Détails** sous Office 365 E5 licence.
 
-4. Sélectionnez *Démarrer le lien d’essai* gratuit.
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="La Office 365 section contient un bouton Détails à cliquer.":::
 
-:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Cliquez sur « Démarrer l’essai gratuit » (frais de 35 $).":::
+4. Sélectionnez **Démarrer le lien d’essai** gratuit.
 
-5. Confirmez votre demande et cliquez sur le bouton Essayer *maintenant.*
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Cliquez sur « Démarrer l’essai gratuit » (frais de 35 $).":::
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Il existe un bouton « Essayer maintenant » dans le panneau « Check out, confirm your order » (pour une version d’essai Office 365 E5 d’un mois pour 25 utilisateurs).":::
+5. Confirmez votre demande et cliquez sur le bouton Essayer **maintenant.**
 
-## <a name="next-steps"></a>Étapes suivantes
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Il existe un bouton « Essayer maintenant » dans le panneau « Check out, confirm your order » (pour une version d’Office 365 E5 d’un mois pour 25 utilisateurs).":::
+
+## <a name="next-steps"></a>Prochaines étapes
+
 [Activer la Microsoft 365 pour l’identité](eval-defender-identity-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)

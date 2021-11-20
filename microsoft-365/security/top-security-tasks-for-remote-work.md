@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: bc45df84ed1f8daa3faf5f042b7f3ca5c64c5625
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cca53040dac60664955770f4be0bfc585cfb3405
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110642"
+ms.locfileid: "61122308"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 
@@ -178,13 +178,13 @@ Vous pouvez également tirer parti des didacticiels suivants :
 Après avoir inscrit des appareils, utilisez les instructions des stratégies communes d’accès aux identités et aux appareils [pour](./office-365-security/identity-access-policies.md) créer ces stratégies :
 
 - [Définir des stratégies de conformité des](./office-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender pour le point de terminaison pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
-- [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel Azure AD qui applique les stratégies de conformité des appareils.
+- [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) : il s’agit de la règle d’accès conditionnel Azure AD qui applique les stratégies de conformité des appareils.
 
 Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./office-365-security/identity-access-policies-guest-access.md)
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9 : optimiser votre réseau pour la connectivité cloud
 
-Si vous permetz rapidement à la plupart de vos employés de travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à tolérance de travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
+Si vous permetz rapidement à la plupart de vos employés de travailler à domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à tolérance de travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
 
 Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent au travail à domicile.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e801cf81dff4b05995d5c9a47508fc16dcf8b524
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2348197f42e12e5fca64bee8beb881a9fdba909e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110762"
+ms.locfileid: "61122548"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -113,7 +113,7 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
 
 <a name="integration-with-azure-defender"></a>
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration à Microsoft Defender pour le cloud
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
 
 Microsoft Defender pour le point de terminaison s’intègre en toute transparence à Microsoft Defender pour le Cloud. Vous pouvez intégrer automatiquement des serveurs, faire en effet apparaître les serveurs surveillés par Azure Defender dans Defender pour le point de terminaison et mener des enquêtes détaillées en tant que client Microsoft Defender pour le Cloud.
 
@@ -155,11 +155,12 @@ Pour recevoir des correctifs et des améliorations régulières du produit pour 
 3. Sélectionnez **Télécharger le package d’installation** et enregistrez .msi fichier. Vous pouvez exécuter le package msi via l’Assistant d’installation ou suivre les étapes de ligne de commande dans Installer Microsoft Defender pour le point de terminaison à l’aide de [la ligne de commande.](#install-microsoft-defender-for-endpoint-using-command-line)
 
    > [!NOTE]
-   > Antivirus Microsoft Defender installé et actif, sauf si vous le définissez en mode passif. Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+   > Antivirus Microsoft Defender installé et actif, sauf si vous le définissez en mode passif. 
+ 
 
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez .zip fichier.
 
-5. Installez le package d’installation à l’aide de l’une des options d’installation Antivirus Microsoft Defender. (Voir [Antivirus Microsoft Defender sur Windows Server.)](microsoft-defender-antivirus-on-windows-server.md)
+5. Installez le package d’installation à l’aide de l’une des options d’installation Antivirus Microsoft Defender. 
 
 6. Suivez les étapes fournies dans la section [Étapes d’intégration.](#onboarding-steps)
 
@@ -173,13 +174,17 @@ Utilisez le package d’installation de l’étape précédente pour installer M
 
 Exécutez la commande suivante pour installer Microsoft Defender pour le point de terminaison :
 
-`msiexec /i md4ws.msi /quiet`
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 Pour désinstaller, assurez-vous que l’ordinateur est d’abord désint re désint re l aide du script de désint reboardage approprié. Ensuite, utilisez programmes et fonctionnalités du Panneau de \> contrôle pour effectuer la \> désinstallation.
 
 Vous pouvez également exécuter la commande de désinstallation suivante pour désinstaller Microsoft Defender pour le point de terminaison :
 
-`msiexec /x md4ws.msi /quiet`
+```console
+Msiexec /x md4ws.msi /quiet
+```
 
 Vous devez utiliser le même package que celui utilisé pour l’installation pour que la commande ci-dessus réussisse.
 
@@ -187,8 +192,6 @@ Le `/quiet` commutateur supprime toutes les notifications.
 
 > [!NOTE]
 > Antivirus Microsoft Defender ne passe pas automatiquement en mode passif. Vous pouvez choisir de définir Antivirus Microsoft Defender à exécuter en mode passif si vous exécutez une solution antivirus/anti-programme malveillant non-Microsoft. Pour les installations de ligne de commande, l’option facultative définit immédiatement `FORCEPASSIVEMODE=1` le Antivirus Microsoft Defender en mode passif afin d’éviter les interférences. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge des fonctionnalités telles que PEPT Block, définissez la clé de Registre « ForceDefenderPassiveMode ».
->
-> Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 >
 > - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
 > - Un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser une stratégie de groupe ou Microsoft Endpoint Configuration Manager.
@@ -232,7 +235,7 @@ Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à M
         ```
 
         > [!NOTE]
-        >
+
         > - L’intégration entre Microsoft Defender pour les serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge Windows Server 2022, [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
         > - La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
 
@@ -265,7 +268,9 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
     `sc.exe query Windefend`
 
-    Si le résultat est , vous devrez installer `The specified service doesn't exist as an installed service` Antivirus Microsoft Defender. Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server.](microsoft-defender-antivirus-on-windows-server.md)
+
+    Si le résultat est « Le service spécifié n’existe pas en tant que service installé », vous devez installer Antivirus Microsoft Defender. 
+
 
     Pour plus d’informations sur l’utilisation de la stratégie de groupe pour configurer et gérer des Antivirus Microsoft Defender sur vos serveurs Windows, voir Utiliser les [paramètres](use-group-policy-microsoft-defender-antivirus.md)de stratégie de groupe pour configurer et gérer Antivirus Microsoft Defender .
 

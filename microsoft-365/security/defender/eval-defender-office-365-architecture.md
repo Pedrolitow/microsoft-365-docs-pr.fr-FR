@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b5fdfb95b263d38c9b663176fd21b6c43e43db57
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ee1275f61f23fbca73f319d90dff7e9edfadb23b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110306"
+ms.locfileid: "61122281"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Passer en revue Microsoft Defender pour les exigences Office 365'architecture et les concepts clés
 
@@ -40,7 +40,7 @@ Avant d’activer Defender pour Office 365, veillez à bien comprendre l’archi
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
-Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (c’est-à-dire que les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
+Le diagramme suivant illustre l’architecture de base de Microsoft Defender pour Office, qui peut inclure une passerelle SMTP tierce ou une intégration locale. Les scénarios de coexistence hybride (c’est-à-dire que les boîtes aux lettres de production sont à la fois locales et en ligne) nécessitent des configurations plus complexes et ne sont pas abordés dans cet article ou dans les instructions d’évaluation.
 
 ![Architecture de Microsoft Defender pour Office 365.](../../media/defender/m365-defender-office-architecture.png)
 
@@ -48,7 +48,7 @@ Le tableau suivant décrit cette illustration.
 
 |Appel  |Description  |
 |---------|---------|
-|1     | Le serveur hôte de l’expéditeur externe effectue généralement une recherche DNS publique pour un enregistrement MX qui fournit le serveur cible pour relayer le message.  Cette référence peut être Exchange Online (EXO) directement ou une passerelle SMTP qui a été configurée pour être relayée par rapport à EXO.  |
+|1     | Le serveur hôte de l’expéditeur externe effectue généralement une recherche DNS publique pour un enregistrement MX, qui fournit le serveur cible pour relayer le message.  Cette référence peut être Exchange Online (EXO) directement ou une passerelle SMTP qui a été configurée pour être relayée par rapport à EXO.  |
 |2     | Exchange Online Protection négocier et valider la connexion entrante et inspecte les en-têtes et le contenu des messages pour déterminer les stratégies, balises ou traitements supplémentaires requis.  |
 |3     | Exchange Online s’intègre à Microsoft Defender pour Office 365 offrir une protection, une atténuation et une correction des menaces plus avancées. |
 |4     | Un message qui n’est pas malveillant, bloqué ou mis en quarantaine est traitée et envoyée au destinataire dans EXO, où les préférences de l’utilisateur relatives au courrier indésirable, aux règles de boîte aux lettres ou à d’autres paramètres sont évaluées et déclenchées. |
@@ -82,7 +82,7 @@ Une évaluation MDO réussie ou un projet pilote de production suppose les condi
 - Toutes vos boîtes aux lettres de destinataire sont actuellement en Exchange Online.
 - Votre enregistrement MX public est résolu directement dans EOP ou une passerelle SMTP tierce qui relaie ensuite le courrier électronique externe entrant directement vers EOP.
 - Votre domaine de messagerie principal est configuré comme faisant *autorité* dans Exchange Online.
-- Vous avez correctement déployé  et configuré le blocage du périphérie basé sur l’annuaire (DBEB) selon le cas. Pour plus d'informations, consultez la rubrique [Utiliser le blocage du périmètre basé sur l'annuaire pour rejeter les messages envoyés à des destinataires non valides](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+- Vous avez correctement déployé  et configuré le blocage du périphérie basé sur l’annuaire (DBEB) selon le cas. Pour plus d’informations, voir Utiliser le blocage Directory-Based edge pour rejeter les [messages envoyés à des destinataires non valides.](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
 
 > [!IMPORTANT]
 > Si ces exigences ne sont pas applicables ou si vous êtes toujours dans un scénario de coexistence hybride, une évaluation de Microsoft Defender pour Office 365 peut nécessiter des configurations plus complexes ou plus avancées qui ne sont pas entièrement couvertes dans ces instructions.

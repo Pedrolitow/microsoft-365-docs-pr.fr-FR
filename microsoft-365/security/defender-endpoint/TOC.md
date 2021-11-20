@@ -282,7 +282,6 @@
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
 ##### [Vue d’ensemble de l’antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
-##### [Antivirus Microsoft Defender sur Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison](why-use-microsoft-defender-antivirus.md)
 ##### [Mieux ensemble : Antivirus Microsoft Defender et Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Évaluer l’antivirus Microsoft Defender](evaluate-microsoft-defender-antivirus.md)

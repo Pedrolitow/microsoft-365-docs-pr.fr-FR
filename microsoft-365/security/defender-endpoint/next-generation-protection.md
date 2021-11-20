@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5bd2fb3fcd09e41b7da5aa6f75ecfd692dbc76fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 17b1a57a16c829bbeced091c9a8678e00e5b9735
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553843"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121948"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -48,4 +48,4 @@ Visitez le [site web de démonstration Microsoft Defender pour point de terminai
 Pour obtenir des informations sur la configuration des services de protection nouvelle génération, voir [Configurer les fonctionnalités de l'Antivirus Microsoft Defender](configure-microsoft-defender-antivirus-features.md).
 
 > [!NOTE]
-> La configuration et la gestion sont en grande partie les mêmes dans Windows Server que dans les clients Windows. Il existe cependant certaines différences. Pour en savoir plus, consultez [Antivirus Microsoft Defender sur Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+> La configuration et la gestion sont en grande partie les mêmes dans Windows Server que dans les clients Windows. Il existe cependant certaines différences. 

@@ -1,9 +1,9 @@
 ---
-title: 'Configurations d’accès aux identités et appareils : Microsoft 365 entreprise'
-description: Décrit les recommandations de Microsoft et les concepts de base pour le déploiement de configurations et de stratégies de messagerie sécurisées, de documents et d’applications.
+title: 'Configurations d’accès aux identités et appareils de confiance zéro : Microsoft 365 entreprise'
+description: Décrit les recommandations de Microsoft et les concepts de base pour le déploiement de stratégies et de configurations de messagerie sécurisée, de documents et d’applications pour La confiance zéro.
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -18,27 +18,65 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
+- m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: e3d807337cfa2e7fa6a27f63e58bd441d95716d5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 96aeb70da1bf31ca48858bef8db08911157ece71
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110066"
+ms.locfileid: "61121223"
 ---
-# <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
+# <a name="zero-trust-identity-and-device-access-configurations"></a>Configurations d’accès aux appareils et aux identités de confiance zéro
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Le périmètre de sécurité moderne de votre organisation s’étend désormais au-delà de votre réseau pour inclure les utilisateurs accédant à des applications basées sur le cloud à partir de n’importe quel emplacement avec une variété d’appareils. Votre infrastructure de sécurité doit déterminer si une demande d’accès donnée doit être accordée et dans quelles conditions.
+<!--
+The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
 
-Cette détermination doit être basée sur le compte d’utilisateur de la connectez-vous, l’appareil utilisé, l’application que l’utilisateur utilise pour l’accès, l’emplacement à partir duquel la demande d’accès est faite et une évaluation du risque de la demande. Cela permet de s’assurer que seuls les utilisateurs et les appareils approuvés ont accès aux ressources critiques de l’entreprise.
+This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
-Cette série d’articles décrit un ensemble de configurations requises pour l’accès aux identités et aux appareils, ainsi qu’un ensemble de stratégies d’accès conditionnel Azure Active Directory (Azure AD), de Microsoft Intune et d’autres stratégies pour sécuriser l’accès aux Microsoft 365  pour les applications et services cloud d’entreprise, d’autres services SaaS et les applications sur site publiées avec Azure AD proxy d’application.
+--> 
 
-Les paramètres et stratégies d’accès aux identités et appareils sont recommandés en trois niveaux : protection de référence, protection sensible et protection pour les environnements avec des données hautement réglementées ou classifiées. Ces niveaux de protection et les configurations correspondantes apportent des niveaux de protection cohérents selon les données, les identités et les appareils.
+Les architectures de sécurité qui reposent sur des pare-feux réseau et des réseaux privés virtuels (VPN) pour isoler et restreindre l’accès aux ressources et services technologiques d’une organisation ne sont plus suffisantes pour un personnel qui requiert régulièrement l’accès aux applications et aux ressources qui existent au-delà des limites traditionnelles du réseau d’entreprise.
+
+Pour faire face à ce nouveau monde de l’informatique, Microsoft recommande vivement le modèle de sécurité Confiance zéro, qui est basé sur les principes directeurs suivants :
+
+- Vérifier explicitement
+
+  Toujours authentifier et autoriser en fonction de tous les points de données disponibles. C’est là que les stratégies d’accès aux identités et aux appareils de confiance zéro sont essentielles pour la validation continue et de la signature.
+
+- Utiliser l’accès selon le privilège minimum
+
+  Limitez l’accès des utilisateurs avec un accès juste-à-temps et juste-suffisant (JIT/JEA), des stratégies adaptatives basées sur les risques et la protection des données.  
+
+- Supposer une violation
+
+  Réduisez le rayon d’explosion et l’accès aux segments. Vérifiez le chiffrement de bout en bout et utilisez l’analyse pour obtenir la visibilité, détecter les menaces et améliorer les défenses.
+
+Voici l’architecture globale de confiance zéro.
+
+:::image type="content" source="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png" alt-text="Architecture Microsoft Zero Trust" lightbox="../../media/microsoft-365-policies-configurations/zero-trust-architecture.png":::
+
+Les stratégies d’accès aux appareils et aux identités de confiance zéro s’adressent au principe **explicitement** directeur pour :
+
+- Identités
+
+  Lorsqu’une identité tente d’accéder à une ressource, vérifiez cette identité avec une authentification forte et assurez-vous que l’accès demandé est conforme et classique.
+
+- Appareils (également appelés points de terminaison)
+
+  Surveiller et appliquer les exigences d’état et de conformité de l’appareil pour un accès sécurisé.
+
+- Applications
+
+  Appliquez des contrôles et des technologies pour découvrir l’informatique parallèle, garantir les autorisations appropriées dans l’application, accéder aux portails en fonction de l’analyse en temps réel, surveiller le comportement anormal, contrôler les actions de l’utilisateur et valider les options de configuration sécurisée.
+
+Cette série d’articles décrit un ensemble de configurations requises pour l’accès aux identités et aux appareils, ainsi qu’un ensemble de stratégies d’accès conditionnel Azure Active Directory (Azure AD), d’Microsoft Intune et d’autres stratégies pour l’accès confiance zéro à Microsoft 365  pour les applications et services cloud d’entreprise, d’autres services SaaS et les applications sur site publiées avec Azure AD proxy d’application.
+
+Les paramètres et stratégies d’accès aux identités et appareils de confiance zéro sont recommandés en trois niveaux : le point de départ, l’entreprise et la sécurité spécialisée pour les environnements avec des données hautement réglementées ou classifiées. Ces niveaux et leurs configurations correspondantes fournissent des niveaux cohérents de protection de confiance zéro sur vos données, identités et appareils.
 
 Ces fonctionnalités et leurs recommandations :
 
@@ -81,19 +119,22 @@ La plupart des organisations ont des besoins spécifiques en matière de sécuri
 
 Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par secteur d’activité ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection qui peuvent être appliqués en fonction de la granularité de vos besoins.
 
-- **Protection de** référence : nous vous recommandons d’établir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de référence pour fournir une protection par défaut forte qui répond aux besoins de nombreuses organisations.
-- **Protection sensible**: certains clients ont un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou ils peuvent exiger que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à tous les ensembles de données ou à des jeux de données spécifiques dans votre Microsoft 365 de données. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.
-- **Hautement réglementé : certaines** organisations peuvent avoir une petite quantité de données hautement classifiées, constituent des secrets commerciaux ou sont réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
+- **Point de départ**: nous recommandons à tous les clients d’établir et d’utiliser une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations pour fournir une protection par défaut forte comme point de départ pour toutes les organisations.
+- **Enterprise**: certains clients ont un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou ils peuvent exiger que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à tous les ensembles de données ou à des jeux de données spécifiques dans votre Microsoft 365 de données. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.
+- **Sécurité spécialisée**: selon les besoins, quelques clients ont une petite quantité de données hautement classifiées, constituent des secrets commerciaux ou sont réglementées. Microsoft fournit des fonctionnalités pour aider ces clients à répondre à ces exigences, notamment une protection supplémentaire pour les identités et les appareils.
 
-![Cône de sécurité : tous les clients > certains clients > clients spécifiques. Application étendue à une application spécifique.](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Cône de sécurité : tous les clients > certains clients > quelques clients](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-Ces instructions vous montrent comment implémenter la protection des identités et des appareils pour chacun de ces niveaux de protection. Utilisez ces conseils comme point de départ pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
+Ces instructions vous montrent comment implémenter la protection de confiance zéro pour les identités et les appareils pour chacun de ces niveaux de protection. Utilisez ces conseils au minimum pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
-Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble de vos données, de vos identités et de vos appareils. Par exemple, si vous implémentez ces instructions, assurez-vous de protéger vos données à des niveaux comparables.
+Il est important d’utiliser des niveaux de protection cohérents pour vos identités, appareils et données. Par exemple, la protection des utilisateurs ayant des comptes prioritaires tels que les cadres, les responsables, les responsables et d’autres utilisateurs doit inclure le même niveau de protection pour leurs identités, leurs appareils et les données qu’ils &mdash; &mdash; accèdent. 
+<!--
 
-Le **modèle d’architecture de protection** des identités Microsoft 365 appareils vous indique les fonctionnalités comparables.
+The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![Image miniature de la protection de l’identité et de l’appareil Microsoft 365 affiche.](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Affichage au format PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Téléchargement en tant que Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+
+--> 
 
 En outre, consultez la solution Déployer la protection des [informations pour les](../../solutions/information-protection-deploy.md) réglementations en matière de confidentialité des données pour protéger les informations stockées dans Microsoft 365.
 
@@ -108,11 +149,11 @@ Les recommandations fournies sont basées sur les principes suivants :
 - Connaissez vos utilisateurs et soyez flexible à leurs exigences fonctionnelles et de sécurité.
 - Appliquez une stratégie de sécurité juste à temps et assurez-vous qu’elle est significative.
 
-## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Services et concepts pour la protection de l’accès aux identités et aux appareils
+## <a name="services-and-concepts-for-zero-trust-identity-and-device-access-protection"></a>Services et concepts pour la protection de l’accès aux appareils et aux identités de confiance zéro
 
 Microsoft 365 entreprise est conçu pour permettre aux grandes organisations d’être créatifs et de collaborer en toute sécurité.
 
-Cette section fournit une vue d’ensemble Microsoft 365 services et fonctionnalités essentiels pour l’accès aux identités et aux appareils.
+Cette section fournit une vue d’ensemble Microsoft 365 services et fonctionnalités essentiels pour l’accès aux appareils et aux identités de confiance zéro.
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -129,9 +170,9 @@ Azure AD offre une suite complète de fonctionnalités de gestion des identités
 |[Azure AD protection par mot de passe](/azure/active-directory/authentication/concept-password-ban-bad)|Détectez et bloquez les mots de passe faibles connus, leurs variantes et d’autres termes faibles propres à votre organisation. Les listes générales par défaut de mots de passe interdits sont automatiquement appliquées à tous les utilisateurs d’un client Azure AD. Vous pouvez définir d’autres entrées dans une liste personnalisée de mots de passe interdits. Lorsque les utilisateurs modifient ou réinitialisent leurs mots de passe, ces listes sont vérifiées de façon à garantir l’utilisation de mots de passe forts.|Microsoft 365 E3 ou E5|
 |
 
-Voici les composants de l’accès aux identités et aux appareils, notamment Intune et Azure AD objets, paramètres et sous-services.
+Voici les composants de l’accès aux appareils et aux identités de confiance zéro, notamment Intune et Azure AD objets, paramètres et sous-services.
 
-![Composants d’accès aux identités et aux appareils.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Composants de l’accès aux identités et appareils de confiance zéro." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -145,25 +186,25 @@ Ce guide vous montre comment créer des stratégies recommandées pour appliquer
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
-Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès aux services cloud Microsoft 365, notamment Microsoft Teams, Exchange Online, SharePoint Online et OneDrive Entreprise. En plus d’implémenter ces stratégies, nous vous recommandons d’augmenter le niveau de protection de votre client à l’aide des ressources ci-après :
+Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès aux services cloud Microsoft 365, notamment Microsoft Teams, Exchange, SharePoint et OneDrive. En plus d’implémenter ces stratégies, nous vous recommandons d’augmenter le niveau de protection de votre client à l’aide des ressources ci-après :
 
 - [Configurer votre client pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
 
-  Recommandations qui s’appliquent à la sécurité de référence pour votre client.
+  Recommandations qui s’appliquent à la sécurité de point de départ pour votre client.
 
 - [Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà](security-roadmap.md)
 
   Recommandations la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 et Microsoft 365 Apps for enterprise
+### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Windows 11 ou Windows 10 avec Applications Microsoft 365 pour les grandes entreprises
 
-Windows 10 avec Applications Microsoft 365 pour les grandes entreprises est l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10 car Azure est conçu pour offrir la meilleure expérience possible pour les utilisateurs locaux et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Applications Microsoft 365 pour les grandes entreprises inclut les dernières versions de Office applications. Celles-ci utilisent l’authentification moderne, qui est plus sécurisée et qui est requise pour l’accès conditionnel. Ces applications incluent également des outils de conformité et de sécurité améliorés.
+Windows 11 ou Windows 10 avec Applications Microsoft 365 pour les grandes entreprises’environnement client recommandé pour les PC. Nous vous recommandons Windows 11 ou Windows 10, car Azure est conçu pour fournir l’expérience la plus fluide possible pour les utilisateurs locaux et Azure AD. Windows 11 ou Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Applications Microsoft 365 pour les grandes entreprises inclut les dernières versions de Office applications. Celles-ci utilisent l’authentification moderne, qui est plus sécurisée et qui est requise pour l’accès conditionnel. Ces applications incluent également des outils de conformité et de sécurité améliorés.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Application de ces fonctionnalités sur les trois niveaux de protection
 
 Le tableau suivant récapitule nos recommandations pour l’utilisation de ces fonctionnalités sur les trois niveaux de protection.
 
-|Mécanisme de protection|Baseline|Sensible|Hautement réglementé|
+|Mécanisme de protection|Point de départ|Entreprise|Sécurité spécialisée|
 |---|---|---|---|
 |**Appliquer une authentification multifacteur**|En cas de risque de connexion moyen ou supérieur|En cas de risque de connexion faible ou supérieur|Pour toutes les nouvelles sessions|
 |**Appliquer la modification du mot de passe**|Pour les utilisateurs à risque élevé|Pour les utilisateurs à risque élevé|Pour les utilisateurs à risque élevé|
@@ -179,34 +220,34 @@ Nous vous recommandons de gérer les appareils gérés par l’organisation par 
 
 ## <a name="deployment-and-your-apps"></a>Déploiement et vos applications
 
-Avant de configurer et de déployer la configuration de l’identité et de l’accès aux appareils pour Azure AD applications intégrées, vous devez :
+Avant de configurer et de déployer la configuration de l’identité Zero Trust et de l’accès aux appareils pour Azure AD applications intégrées, vous devez :
 
 - Déterminez les applications utilisées dans votre organisation que vous souhaitez protéger.
 - Analysez cette liste d’applications pour déterminer les ensembles de stratégies qui fournissent les niveaux de protection appropriés.
 
   Vous ne devez pas créer d’ensembles de stratégies distincts pour chaque application, car leur gestion peut devenir fastidieuse. Microsoft recommande de grouper vos applications qui ont les mêmes exigences de protection pour les mêmes utilisateurs.
 
-  Par exemple, vous pouvez avoir un ensemble de stratégies qui incluent toutes les applications Microsoft 365 pour tous vos utilisateurs pour la protection de référence et un deuxième ensemble de stratégies pour toutes les applications sensibles, telles que celles utilisées par les ressources humaines ou les services financiers, et les appliquer à ces groupes.
+  Par exemple, vous pouvez avoir un ensemble de stratégies qui incluent toutes les applications Microsoft 365 pour tous vos utilisateurs pour la protection de point de départ et un deuxième ensemble de stratégies pour toutes les applications sensibles, telles que celles utilisées par les ressources humaines ou les services financiers, et les appliquer à ces groupes.
 
 Une fois que vous avez déterminé l’ensemble des stratégies pour les applications que vous souhaitez sécuriser, déployer les stratégies de manière incrémentielle pour vos utilisateurs, afin de résoudre les problèmes en cours de route.
 
-Par exemple, configurez les stratégies qui seront utilisées pour toutes vos applications Microsoft 365 uniquement pour Exchange Online avec les modifications supplémentaires pour Exchange. Déployer ces stratégies à vos utilisateurs et passer par tous les problèmes. Ensuite, ajoutez Teams avec ses modifications supplémentaires et lancez-la à vos utilisateurs. Ensuite, ajoutez SharePoint avec ses modifications supplémentaires. Continuez à ajouter le reste de vos applications jusqu’à ce que vous pouvez configurer en toute confiance ces stratégies de référence pour inclure toutes Microsoft 365 applications.
+Par exemple, configurez les stratégies qui seront utilisées pour toutes vos applications Microsoft 365 uniquement pour Exchange avec les modifications supplémentaires pour Exchange. Déployer ces stratégies à vos utilisateurs et passer par tous les problèmes. Ensuite, ajoutez Teams avec ses modifications supplémentaires et lancez-la à vos utilisateurs. Ensuite, ajoutez SharePoint avec ses modifications supplémentaires. Continuez à ajouter le reste de vos applications jusqu’à ce que vous pouvez configurer en toute confiance ces stratégies de point de départ pour inclure toutes Microsoft 365 applications.
 
 De même, pour vos applications sensibles, créez l’ensemble de stratégies et ajoutez une application à la fois et traversez tous les problèmes jusqu’à ce qu’ils soient tous inclus dans l’ensemble de stratégies d’application sensibles.
 
 Microsoft recommande de ne pas créer de jeux de stratégies qui s’appliquent à toutes les applications, car cela peut entraîner des configurations inattendues. Par exemple, les stratégies qui bloquent toutes les applications peuvent verrouiller vos administrateurs du portail Azure et les exclusions ne peuvent pas être configurées pour les points de terminaison importants tels que Microsoft Graph.
 
-## <a name="steps-to-configure-identity-and-device-access"></a>Étapes de configuration de l’accès aux identités et aux appareils
+## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Étapes de configuration de l’accès aux identités et appareils Avec confiance zéro
 
-![Étapes de configuration de l’accès aux identités et aux appareils.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+![Étapes de configuration de l’accès aux identités et appareils avec confiance zéro.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configurez les fonctionnalités d’identité prérequises et leurs paramètres.
 2. Configurez les stratégies communes d’accès conditionnel aux identités et aux accès.
 3. Configurer des stratégies d’accès conditionnel pour les utilisateurs invités et externes.
-4. Configurez des stratégies d’accès conditionnel pour Microsoft 365 applications cloud, telles que les stratégies Microsoft Teams, Exchange Online et SharePoint et Microsoft Defender pour les applications cloud.
+4. Configurez des stratégies d’accès conditionnel pour Microsoft 365 applications cloud telles que Microsoft Teams, Exchange et SharePoint et Microsoft Defender pour les &mdash; &mdash; stratégies Cloud Apps.
 
-Une fois que vous avez configuré l’accès aux identités et aux appareils, consultez le guide de déploiement des fonctionnalités [Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de contrôle progressive des fonctionnalités supplémentaires à prendre en compte et Azure AD [Identity Governance](/azure/active-directory/governance/) pour protéger, surveiller et auditer l’accès.
+Une fois que vous avez configuré l’accès aux identités et aux appareils Avec confiance zéro, consultez le guide de déploiement des fonctionnalités [Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) pour obtenir une liste de contrôle progressive des fonctionnalités supplémentaires à prendre en compte et Azure AD [Identity Governance](/azure/active-directory/governance/) pour protéger, surveiller et auditer l’accès.
 
 ## <a name="next-step"></a>Étape suivante
 
-[Travail prérequis pour l’implémentation de stratégies d’accès aux identités et appareils](identity-access-prerequisites.md)
+[Travail prérequis pour l’implémentation de stratégies d’accès aux identités et appareils de confiance zéro](identity-access-prerequisites.md)

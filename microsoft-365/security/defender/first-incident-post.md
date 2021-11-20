@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8219192416bc286714b3fddc3878ce8ed5de949b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a040b42b3d6006e99101596548105701aa36f935
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210674"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121686"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
 
@@ -38,7 +38,7 @@ ms.locfileid: "60210674"
 
 Le National Institute of Standards and Technology (NIST) recommande qu’une fois que toutes les mesures ont été prises pour récupérer après l’attaque, les organisations doivent passer en revue l’incident pour en savoir plus et améliorer la posture ou les processus de sécurité. L’évaluation des différents aspects de la gestion des incidents devient importante lors de la préparation du prochain incident.
 
-Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
+Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK.
 
 En m mappage des alertes à cette infrastructure du secteur, vous pouvez :
 
@@ -46,7 +46,7 @@ En m mappage des alertes à cette infrastructure du secteur, vous pouvez :
 - Déterminer l’adversaire et l’attribution de la campagne.
 - Effectuer une analyse de tendance.
 - Identifier les lacunes en matière de compétences dans la sensibilisation aux méthodes d’attaque.
-- Créez un Power Automate playbook pour une correction plus rapide. 
+- Créez un Power Automate playbook pour une correction plus rapide.
 
 L’activité de révision post-incident peut également entraîner un ajustement de la configuration de la sécurité et des processus de votre équipe de sécurité, ce qui améliore les capacités de réponse de votre organisation.
 

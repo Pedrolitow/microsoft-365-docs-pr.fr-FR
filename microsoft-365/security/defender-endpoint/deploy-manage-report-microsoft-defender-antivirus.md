@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f7ba446eb074bc04ae4432595022d26f7f84b6e8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f1ecba248046755a9258ffd94da66859a26a0c6d
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111782"
+ms.locfileid: "61122236"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
@@ -57,7 +57,7 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à 
 
 1. <span id="fn1" />La disponibilité de certaines fonctions et fonctionnalités, en particulier liées à la protection cloud, diffère entre Microsoft Endpoint Manager (Current Branch) et System Center 2012 Configuration Manager. Dans cette bibliothèque, nous nous sommes concentrés sur Windows 10, Windows 11, Windows Server 2016 et Microsoft Endpoint Manager (Current Branch). Voir [Utiliser la protection microsoft fournie](cloud-protection-microsoft-defender-antivirus.md) par le cloud Antivirus Microsoft Defender pour un tableau qui décrit les principales différences. [(Revenir au tableau)](#ref2)
 
-2. <span id="fn2" />Dans Windows 10 et Windows 11, Antivirus Microsoft Defender est un composant disponible sans installation ni déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou hors de date (sauf[sur Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Le déploiement traditionnel n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
+2. <span id="fn2" />Dans Windows 10 et Windows 11, Antivirus Microsoft Defender est un composant disponible sans installation ni déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou désinstallés (sauf sur Windows Server 2016). Le déploiement traditionnel n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
 
 3. <span id="fn3" />La configuration des fonctionnalités et de la protection, y compris la configuration des mises à jour du produit et de la protection, est décrite plus en détail dans la section Configurer [Antivirus Microsoft Defender fonctionnalités](configure-notifications-microsoft-defender-antivirus.md) de cette bibliothèque. [(Revenir au tableau)](#ref2)
 

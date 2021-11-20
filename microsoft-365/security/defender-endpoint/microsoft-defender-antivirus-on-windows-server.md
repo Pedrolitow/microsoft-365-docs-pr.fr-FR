@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b98145834eebee80a69846474b3395f90eac7fa6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d06793cbc0742e3f24ac09d1f9dd64680013eecd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111266"
+ms.locfileid: "61121661"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
@@ -35,7 +35,7 @@ Antivirus Microsoft Defender est disponible dans les éditions/versions suivante
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
+- Windows Server 2016
 - Windows Server 2012 R2 (Nécessite Microsoft Defender pour le point de terminaison)
 
 Dans certains cas, Antivirus Microsoft Defender est appelé *Endpoint Protection*; toutefois, le moteur de protection est le même. Bien que les fonctionnalités, la configuration et la gestion soient en grande partie identiques pour Antivirus Microsoft Defender sur [Windows 10](microsoft-defender-antivirus-windows.md) et Windows 11, il existe quelques différences clés sur Windows Server :
@@ -99,7 +99,7 @@ Si vous devez installer ou réinstaller Antivirus Microsoft Defender sur Windows
 
 Pour utiliser PowerShell pour installer Antivirus Microsoft Defender, exécutez l’cmdlet suivante :
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -109,13 +109,13 @@ Les messages d’événement pour le moteur de logiciel anti-programme malveilla
 
 Une Antivirus Microsoft Defender est installée, l’étape suivante consiste à vérifier qu’elle est en cours d’exécution. Sur votre point Windows serveur, exécutez l’cmdlet PowerShell suivante :
 
-```PowerShell
+```powershell
 Get-Service -Name windefend
 ```
 
 Pour vérifier que la protection pare-feu est allumée, exécutez l’cmdlet PowerShell suivante :
 
-```PowerShell
+```powershell
 Get-Service -Name mpssvc
 ```
 
@@ -219,7 +219,7 @@ Vous pouvez définir Antivirus Microsoft Defender en mode passif en réglant la 
 
 Pour désactiver l’interface Antivirus Microsoft Defender graphique graphique, utilisez l’cmdlet PowerShell suivante :
 
-```PowerShell
+```powershell
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 

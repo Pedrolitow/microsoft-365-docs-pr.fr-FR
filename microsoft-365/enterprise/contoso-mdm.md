@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise Microsoft Intune dans Microsoft 365 entreprise pour gérer ses appareils et les applications qui s’exécutent sur ces appareils.
-ms.openlocfilehash: 0dca8da328a3048413727410ebab7798d1068ac8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dedda98083dd5a27c4c7721b5ae8e5dc1fed4bad
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178850"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121673"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 
-Microsoft 365 entreprise inclut Intune et un ensemble de services Azure qui prise en charge la gestion et la sécurité des appareils mobiles et des applications.
+Microsoft 365 entreprise inclut Intune et un ensemble de services Azure qui offrent une prise en charge de la gestion et de la sécurité des appareils mobiles et des applications.
 
 Contoso compte de nombreux employés à mobilité fixe. Certains ont des bureaux à Contoso et d’autres n’ont pas de bureau. Contoso avait besoin d’un moyen de favoriser la productivité des employés tout en maintenant les appareils, les données Contoso stockées sur ces appareils et le comportement des applications sécurisés.
 
@@ -45,9 +45,9 @@ Contoso n’utilise pas Intune pour :
 Voici la configuration de l’infrastructure de gestion des appareils mobiles de Contoso :
 
 - Définir Intune comme autorité de gestion des périphériques mobiles (MDM) et utiliser Intune sur Azure pour administrer le contenu et gérer les appareils
-- Création Azure Active Directory groupes (Azure AD) pour les appareils pour l’inscription, les paramètres Intune et les stratégies d’accès conditionnel basé sur l’appareil
+- Création de Azure Active Directory (Azure AD) pour les appareils pour l’inscription, les paramètres Intune et les stratégies d’accès conditionnel basées sur l’appareil
 
-  Pour plus d’informations, voir [Stratégies d’accès conditionnel Contoso.](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)
+  Pour plus d’informations, voir [Stratégies d’accès conditionnel Contoso.](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access)
 
 - A activé la plateforme d’appareils Apple pour prendre en charge les employés avec des iPad, des iMacs et des iPhone, ainsi que des iPhones d’entreprise
 - Les politiques de conditions générales de Contoso ont été créées. Elles sont affichées pendant l’installation du portail de l’entreprise sur les appareils mobiles.
@@ -66,7 +66,7 @@ Contoso a inscrit les PC déployés et les smartphones et tablettes d’entrepri
 
 Voici l’architecture de déploiement de la gestion des appareils mobiles Contoso.
 
-![Infrastructure de déploiement de la gestion des appareils mobiles Contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Infrastructure de déploiement de gestion des appareils mobiles Contoso.](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Étape suivante
 

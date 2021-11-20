@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d539f34f72b5fe6c26325646452a15b5df76a5a7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199548"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121649"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
@@ -36,7 +36,7 @@ ms.locfileid: "60199548"
 **S’applique à :**
 - Microsoft 365 Defender
 
-À mesure que vous consacrez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique où vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps voulu.
+À mesure que vous consacrez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique dans laquelle vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps voulu.
 
 Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender présente les détails dont vous aurez besoin pour trier ou hiérarchiser un incident ou des incidents par rapport à d’autres. Après avoir déterminé la définition des priorités, les analystes peuvent alors se concentrer sur l’étude des cas qui leur sont attribués.
 
@@ -44,17 +44,18 @@ Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender pr
 
 Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plateformes de sécurité Microsoft en tant que sources de détection pour créer une image globale et un contexte d’activité malveillante. Voici les sources de détection possibles :
 
-- [Microsoft Defender pour le](../defender-endpoint/microsoft-defender-endpoint.md) point de terminaison est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender, ainsi que la protection avancée contre les menaces dans le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
+- [Microsoft Defender pour le](../defender-endpoint/microsoft-defender-endpoint.md) point de terminaison est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender et la protection avancée contre les menaces dans le cloud à l’aide de Microsoft Security Graph. Defender for Endpoint est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité.
 - [Microsoft Defender pour](/defender-for-identity/what-is) l’identité est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.
-- [Microsoft Cloud App Security](/cloud-app-security/) agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent.
-- [Microsoft Defender pour Office 365](../office-365-security/overview.md) votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration.
-- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud et localement.
+- [Microsoft Defender](/cloud-app-security/) pour les applications cloud agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent.
+- [Microsoft Defender for Office 365](../office-365-security/overview.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration.
+- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud et en local.
+
 
 Dans Microsoft 365 Defender, [les incidents sont identifiés](incidents-overview.md) en corrélant les alertes à partir de ces différentes sources de détection. Au lieu de passer des ressources en chaîne ou de distinguer plusieurs alertes dans leurs incidents respectifs, vous pouvez commencer par la file d’attente des incidents Microsoft 365 Defender immédiatement. Cela vous permet de trier efficacement les incidents entre les points de terminaison, les identités, le courrier électronique et les applications, et de réduire les dommages d’une attaque.
 
 ## <a name="triage-your-incidents"></a>Trier vos incidents
 
-La réponse aux incidents Microsoft 365 Defender commence une fois que vous avez trié la liste des incidents à l’aide de la méthode recommandée de hiérquisation de votre organisation. Pour trier, il faut affecter un niveau d’importance ou d’urgence aux incidents, ce qui détermine ensuite l’ordre dans lequel ils seront examinés.
+La réponse aux incidents Microsoft 365 Defender démarre une fois que vous avez trié la liste des incidents à l’aide de la méthode recommandée de hiérquisation de votre organisation. Pour trier, il faut affecter un niveau d’importance ou d’urgence aux incidents, ce qui détermine ensuite l’ordre dans lequel ils seront examinés.
 
 Un exemple de guide utile pour déterminer l’incident à hiérarchiser dans Microsoft 365 Defender peut être résumé par la formule : *Gravité + Impact = Priorité*.
 
@@ -71,7 +72,7 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Exemple de file d’attente d’incident.":::
 
-    Un exemple de la façon dont vous pouvez effectuer le tri pour cet ensemble d’incidents consiste à hiérarchiser les incidents qui ont affecté davantage d’utilisateurs et d’appareils. Dans cet exemple, vous pouvez hiérarchiser l’ID d’incident 6769, car il a affecté le plus grand nombre d’entités : 7 appareils, 6 utilisateurs et 2 boîtes aux lettres. En outre, l’incident semble contenir des alertes de Microsoft Defender pour l’identité qui indiquent une alerte basée sur l’identité et un vol possible d’informations d’identification.
+    Un exemple de la façon dont vous pouvez effectuer le tri pour cet ensemble d’incidents consiste à hiérarchiser les incidents qui ont affecté davantage d’utilisateurs et d’appareils. Dans cet exemple, vous pouvez hiérarchiser l’ID d’incident 6769, car il a affecté le plus grand nombre d’entités : 7 appareils, 6 utilisateurs et 2 boîtes aux lettres. En outre, l’incident semble contenir des alertes de Microsoft Defender pour l’identité, qui indiquent une alerte basée sur l’identité et un vol possible d’informations d’identification.
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Exemple d’incident à fort impact.":::
 
@@ -79,7 +80,7 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Exemple de volet latéral d’incident.":::
 
-   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, effectué des mouvements latérals et exfiltré certaines données. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
+   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, des mouvements latérals et des données exfiltrées. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
 
    En outre, si votre organisation a implémenté l’infrastructure Confiance zéro, vous considérerez l’accès aux informations d’identification comme une violation de sécurité importante qui vaut la peine d’être hiér donc.
 
@@ -87,7 +88,7 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-details.png" alt-text="Exemple de détails du volet latéral d’incident.":::
 
-3. Plus bas dans le volet latéral, vous pouvez trouver les alertes associées. Microsoft 365 Defender a déjà effectué la corrélation de ces alertes en un seul incident, ce qui vous permet de gagner du temps et des ressources pour résoudre les attaques. Les alertes sont des événements système suspects et, par conséquent, potentiellement malveillants, qui suggèrent la présence d’une personne malveillante sur un réseau.
+3. Plus bas dans le volet latéral, vous pouvez trouver les alertes associées. Microsoft 365 Defender a déjà effectué la corrélation de ces alertes en un seul incident, ce qui vous permet de gagner du temps et des ressources pour résoudre l’attaque. Les alertes sont des événements système suspects et, par conséquent, potentiellement malveillants, qui suggèrent la présence d’une personne malveillante sur un réseau.
 
    Dans cet exemple, 87 alertes individuelles ont été déterminées comme faisant partie d’un incident de sécurité. Vous pouvez afficher toutes les alertes pour obtenir un aperçu rapide de la façon dont l’attaque s’est joué.
 
@@ -99,7 +100,7 @@ Il est également important de comprendre le contexte qui entoure les alertes. S
 
 Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien Microsoft 365 Defender réduire considérablement le temps moyen de correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) par le biais de la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle. [](m365d-autoir.md)
 
-Voici un exemple :
+Voici un exemple :
 
 1. Une fois la priorité de tri déterminée, un analyste lance une analyse approfondie en sélectionnant le nom de l’incident. Cette page affiche le résumé de **l’incident** dans lequel les données sont affichées dans des onglets pour faciliter l’analyse. Sous **l’onglet Alertes,** le type d’alertes s’affiche. Les analystes peuvent cliquer sur chaque alerte pour descendre dans la source de détection respective.
 
@@ -107,23 +108,23 @@ Voici un exemple :
 
     Pour obtenir un guide rapide sur le domaine que couvre chaque source de détection, examinez la section [Détecter](#detection-by-microsoft-365-defender) de cet article.
 
-2. À partir de **l’onglet Alertes,** un analyste peut pivoter vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants Microsoft Cloud App Security comme source de détection, l’analyste est ajouté à sa page d’alerte correspondante.
+2. À partir de **l’onglet Alertes,** un analyste peut pivoter vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants avec Microsoft Defender pour les applications cloud comme source de détection, l’analyste est ajouté à sa page d’alerte correspondante.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Exemple de sélection d’une alerte d’incident.":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Cloud App Security.":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Defender pour les applications cloud.":::
 
-3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs concernés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
+3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Exemple de page d’utilisateur.":::
 
-4. La page de l’utilisateur affiche une liste chronologique des événements commençant par une sign-in risquée à partir d’une alerte d’adresse IP du réseau *TOR.* Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
+4. La page de l’utilisateur affiche une liste chronologique des événements commençant par une sign-in à risque à partir d’une alerte d’adresse IP du réseau *TOR.* Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Exemple de liste chronologique des événements pour un utilisateur.":::
 
 5. Chaque alerte peut être sélectionnée pour obtenir plus d’informations sur l’activité. Par exemple, la sélection de **l’activité à partir** d’une alerte d’adresse IP tor vous conduit à la propre page de cette alerte. An elle est administrateur de Office 365, ce qui signifie qu’elle dispose de privilèges élevés et que l’incident source a pu avoir conduit à l’accès à des informations confidentielles.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Exemple de détails d’alertes pour Microsoft Cloud App Security .":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Exemple de détails d’alertes pour Microsoft Defender pour les applications cloud.":::
 
 6. En sélectionnant d’autres alertes, un analyste peut obtenir une image complète de l’attaque.
 

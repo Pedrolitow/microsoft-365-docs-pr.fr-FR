@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111566"
+ms.locfileid: "61122356"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
@@ -100,7 +100,8 @@ EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\W
 6. Appliquer les mises à jour.
 7. Supprimez votre logiciel antivirus non Microsoft à l’aide de la console antivirus non Microsoft ou en utilisant Microsoft Endpoint Configuration Manager le cas échéant. Veillez à supprimer la configuration du mode passif.*
 
-CONSEIL : vous pouvez utiliser le [script d’installation](server-migration.md#installer script) dans le cadre de votre application pour automatiser les étapes ci-dessus. Pour activer le mode passif, appliquez l’indicateur -Passive. EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\WindowsDefenderATPOnboardingScript.cmd » -Passive
+> [!TIP]
+> Vous pouvez utiliser le [script d’installation dans](server-migration.md#installer script) le cadre de votre application pour automatiser les étapes ci-dessus. Pour activer le mode passif, appliquez l’indicateur -Passive. Par exemple, .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\WindowsDefenderATPOnboardingScript.cmd » -Passive
 
 *Ces étapes s’appliquent uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md)
 
@@ -108,7 +109,6 @@ Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 :
 
 Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protection avancée contre les menaces : ForceDefenderPassiveMode Type : REG_DWORD valeur : 0
 
-Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 ## <a name="other-migration-scenarios"></a>Autres scénarios de migration
 
@@ -136,7 +136,8 @@ Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to pa
 6. Créez et appliquez des stratégies à l’aide d’une stratégie de groupe, de PowerShell ou d’une solution de gestion tierce.
 
 > [!TIP]
-> Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) pour automatiser les étapes 1 à 4. Pour activer le mode passif, appliquez l’indicateur -Passive qui garantit que l’Antivirus Defender passe en mode passif avant l’intégration et n’interfère pas avec une solution anti-programme malveillant non Microsoft. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge les fonctionnalités PEPT telles que PEPT Block, veillez à définir la clé de Registre « ForceDefenderPassiveMode ». EXEMPLE : `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+> Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) pour automatiser les étapes 1 à 4. Pour activer le mode passif, appliquez l’indicateur -Passive qui garantit que l’Antivirus Defender passe en mode passif avant l’intégration et n’interfère pas avec une solution anti-programme malveillant non Microsoft. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge les fonctionnalités PEPT telles que PEPT Block, veillez à définir la clé de Registre « ForceDefenderPassiveMode ». EXEMPLE : `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+
 
 *Cette étape s’applique uniquement si vous avez l’intention de remplacer votre solution antivirus non-Microsoft. Nous vous recommandons d Antivirus Microsoft Defender, inclus dans Microsoft Defender pour endpoint, pour fournir l’ensemble complet des fonctionnalités. Voir [Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison.](why-use-microsoft-defender-antivirus.md)
 
@@ -144,7 +145,6 @@ Pour sortir un ordinateur du mode passif, définissez la clé suivante sur 0 :
 
 Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protection avancée contre les menaces : ForceDefenderPassiveMode Type : REG_DWORD valeur : 0
 
-Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>Scénarios Microsoft Defender pour le cloud
 

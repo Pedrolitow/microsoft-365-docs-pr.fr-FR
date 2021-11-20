@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment Microsoft 365 utilise l’enregistrement TXT SPF (Sender Policy Framework) dans DNS pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad620c1c1c08cbe92e6ad6b98c6554c4c5cd93b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76bc783dc624487b438ca41dcd9fc38bd9bce911
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190328"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121828"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 
@@ -33,9 +33,9 @@ ms.locfileid: "60190328"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Résumé :** Cet article décrit comment Microsoft 365 utilise l’enregistrement TXT SPF (Sender Policy Framework) dans DNS pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés à partir de votre domaine personnalisé. Cela s’applique aux messages sortants envoyés Microsoft 365. Les messages envoyés Microsoft 365 à un destinataire au sein Microsoft 365 passeront toujours SPF.
+ **Résumé :** Cet article explique comment Microsoft 365 utilise l’enregistrement TXT SPF (Sender Policy Framework) dans DNS pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés à partir de votre domaine personnalisé. Cela s’applique aux messages sortants envoyés Microsoft 365. Les messages envoyés Microsoft 365 à un destinataire au sein Microsoft 365 passeront toujours SPF.
 
 Un enregistrement TXT SPF est un enregistrement DNS qui permet d'éviter l' usurpation et le hameçonnage en vérifiant le nom du domaine à partir duquel les messages électroniques sont envoyés. SPF valide l'origine des messages électroniques en vérifiant l'adresse IP de l'expéditeur par rapport à celle du prétendu propriétaire du domaine d'expédition.
 
@@ -119,7 +119,7 @@ En plus des adresses IP, vous pouvez également configurer votre enregistrement 
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-Lorsque le serveur de réception voit cet enregistrement dans DNS, il effectue également une recherche DNS sur l’enregistrement TXT SPF pour contoso.net puis pour contoso.org. S’il trouve une instruction Include supplémentaire dans les enregistrements pour contoso.net ou contoso.org, elle les suivra également. Afin d’empêcher le refus d’attaque de service, le nombre maximal de recherches DNS pour un seul message est de 10. Chaque instruction Include représente une recherche DNS supplémentaire. Si un message dépasse la limite de 10, le message échoue lors de la vérification SPF. Une fois qu’un message atteint cette limite, en fonction de la façon dont le serveur de réception est configuré, l’expéditeur peut obtenir un message qui indique que le message a généré « trop de recherches » ou que le « nombre maximal de sauts pour le message a été dépassé » (ce qui peut se produire lorsque les recherches bouclent et dépassent le délai d’attente DNS). Pour obtenir des conseils sur la façon d’éviter cela, voir Résolution des problèmes : Meilleures pratiques [pour SPF dans Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Lorsque le serveur de réception voit cet enregistrement dans le DNS, il effectue également une recherche DNS sur l’enregistrement TXT SPF pour contoso.net puis pour contoso.org. S’il trouve une instruction Include supplémentaire dans les enregistrements pour contoso.net ou contoso.org, elle les suivra également. Afin d’empêcher le refus d’attaque de service, le nombre maximal de recherches DNS pour un seul message est de 10. Chaque instruction Include représente une recherche DNS supplémentaire. Si un message dépasse la limite de 10, le message échoue lors de la vérification SPF. Une fois qu’un message atteint cette limite, selon la façon dont le serveur de réception est configuré, l’expéditeur peut obtenir un message qui indique que le message a généré « trop de recherches » ou que le « nombre maximal de sauts pour le message a été dépassé » (ce qui peut se produire lorsque les recherches bouclent et dépassent le délai d’attente DNS). Pour obtenir des conseils sur la façon d’éviter cela, voir Résolution des problèmes : Meilleures pratiques [pour SPF dans Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
 ## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>Conditions requises pour votre enregistrement TXT SPF et votre Microsoft 365
 <a name="SPFReqsinO365"> </a>
@@ -164,7 +164,7 @@ où :
 
 - _IP address_ est l'adresse IP à ajouter à l'enregistrement TXT SPF. En règle générale, il s'agit de l'adresse IP du serveur de messagerie sortant pour votre organisation. Vous pouvez répertorier plusieurs serveurs de messagerie sortants. Pour plus d’informations, voir l’exemple : enregistrement [TXT SPF](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)pour plusieurs serveurs de messagerie locaux et serveurs de messagerie Microsoft 365 .
 
-- _domain name_ est le domaine que vous souhaitez ajouter en tant qu'expéditeur légitime. Pour obtenir la liste des noms de domaine que vous devez inclure pour Microsoft 365, voir [enregistrements DNS externes requis pour SPF.](../../enterprise/external-domain-name-system-records.md)
+- _domain name_ est le domaine que vous souhaitez ajouter en tant qu'expéditeur légitime. Pour obtenir la liste des noms de domaine que vous devez Microsoft 365, voir [enregistrements DNS externes requis pour SPF.](../../enterprise/external-domain-name-system-records.md)
 
 - La règle de mise en œuvre est généralement l'une des règles suivantes :
 
@@ -210,7 +210,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 ## <a name="next-steps-set-up-spf-for-microsoft-365"></a>Étapes suivantes : Configurer SPF pour Microsoft 365
 <a name="SPFNextSteps"> </a>
 
-Une fois que vous avez formulé votre enregistrement TXT SPF, suivez les étapes de la procédure de la procédure Set [up SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) dans Microsoft 365 pour éviter l’usurpation pour l’ajouter à votre domaine.
+Une fois que vous avez formulé votre enregistrement TXT SPF, suivez les étapes de la procédure de la procédure Set [up SPF dans Microsoft 365](set-up-spf-in-office-365-to-help-prevent-spoofing.md) pour empêcher l’usurpation pour l’ajouter à votre domaine.
 
 Bien que SPF soit conçu pour éviter l'usurpation, il existe des techniques d'usurpation contre lesquelles SPF ne peut pas vous protéger. Pour vous protéger contre ces problèmes, une fois que vous avez configuré SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md). Ensuite, consultez la rubrique [Utiliser DMARC pour valider les e-mails dans Microsoft 365](use-dmarc-to-validate-email.md).
 
@@ -251,7 +251,7 @@ Lorsque vous incluez des domaines tiers dans votre enregistrement TXT SPF, vous 
 ## <a name="how-to-view-your-current-spf-txt-record-and-determine-the-number-of-lookups-that-it-requires"></a>Comment afficher votre enregistrement TXT SPF et déterminer le nombre de recherches nécessaires
 <a name="SPFTroubleshoot"> </a>
 
-Vous pouvez utiliser nslookup pour afficher vos enregistrements DNS, y compris votre enregistrement TXT SPF. Sinon, si vous préférez, il existe plusieurs outils gratuits en ligne que vous pouvez utiliser pour afficher le contenu de votre enregistrement TXT SPF. En consultant votre enregistrement TXT SPF et en suivant la chaîne d'instructions Include et de redirections, vous pouvez déterminer le nombre de recherches DNS dont l'enregistrement a besoin. Certains outils en ligne peuvent même compter et afficher ces recherches pour vous. Le fait d'assurer le suivi de cette donnée permettra d'éviter que les messages envoyés depuis votre organisation ne déclenchent une erreur permanente, appelée permerror, sur le serveur de réception.
+Vous pouvez utiliser nslookup pour afficher vos enregistrements DNS, y compris votre enregistrement TXT SPF. Il existe un certain nombre d’outils en ligne gratuits que vous pouvez utiliser pour afficher le contenu de votre enregistrement TXT SPF. En consultant votre enregistrement TXT SPF et en suivant la chaîne d'instructions Include et de redirections, vous pouvez déterminer le nombre de recherches DNS dont l'enregistrement a besoin. Certains outils en ligne peuvent même compter et afficher ces recherches pour vous. Le suivi de ce numéro permet d’empêcher les messages envoyés par votre organisation de déclencher une erreur permanente, appelée erreur de perm, à partir du serveur de réception.
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="SPFTroubleshoot"> </a>

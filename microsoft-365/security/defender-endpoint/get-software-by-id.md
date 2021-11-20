@@ -1,5 +1,5 @@
 ---
-title: Obtenir le logiciel par ID
+title: Obtenir un logiciel par ID
 description: Récupère une liste de détails logiciels par ID.
 keywords: api, api de graphique, api pris en charge, obtenir, logiciel, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 098edd5b0857e7bd771be7d28fee965934b9bc67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d980bca8584bbd99cdc695e24a5a1d7a476ff8c9
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205450"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122086"
 ---
-# <a name="get-software-by-id"></a>Obtenir le logiciel par ID
+# <a name="get-software-by-id"></a>Obtenir un logiciel par ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}
 
 Nom|Type|Description
 ---|---|---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -72,7 +72,7 @@ Si elle réussit, cette méthode renvoie 200 OK avec les données logicielles sp
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la demande.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
@@ -96,7 +96,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets connexes
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

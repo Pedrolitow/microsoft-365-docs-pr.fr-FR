@@ -1,6 +1,6 @@
 ---
 title: Obtenir les informations de l’utilisateur lié à l’alerte
-description: Découvrez comment utiliser l’API Obtenir les informations utilisateur associées à l’alerte pour récupérer l’utilisateur associé à une alerte spécifique dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des informations utilisateur liées aux alertes pour récupérer l’utilisateur associé à une alerte spécifique dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, associé, utilisateur
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 56630e211d5d445e675e4f9af655c062db4ad4b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee59bb41e4c126d13db03fc570de9635c0fe7cf
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211303"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122466"
 ---
 # <a name="get-alert-related-user-information-api"></a>API Obtenir les informations utilisateur associées à une alerte
 
@@ -44,8 +44,8 @@ Récupère l’utilisateur associé à une alerte spécifique.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
+- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -86,7 +86,7 @@ En cas de réussite et d’alerte et si un utilisateur existe : 200 - OK avec l�
 
 ### <a name="request-example"></a>Exemple de requête
 
-Voici un exemple de demande.
+Voici un exemple de la demande.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user

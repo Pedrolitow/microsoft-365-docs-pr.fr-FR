@@ -1,7 +1,7 @@
 ---
 title: Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
-description: Suivre les détections d’état de l’appareil, l’état antivirus, la plateforme du système d’exploitation et les versions Windows 10 à l’aide du rapport d’état et de conformité de l’appareil
-keywords: état d’état d’état d’état, antivirus, plateforme de système d’exploitation, version de Windows 10, version, santé, conformité, état
+description: Suivre les détections d’état de l’appareil, l’état antivirus, la plateforme de système d’exploitation et les versions Windows 10 à l’aide du rapport d’état et de conformité de l’appareil
+keywords: état d’état d’état, antivirus, plateforme de système d’exploitation, version de Windows 10, version, santé, conformité, état
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db2b82f1f966946f66a1c23dbe8b1c708549dc8e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9efd1b6785c711855e32f80580d567a2d0befa93
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556159"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121170"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -30,13 +30,14 @@ ms.locfileid: "60556159"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Le rapport d’état des appareils fournit des informations de haut niveau sur les appareils de votre organisation. Le rapport inclut des informations de tendance montrant l’état d’état du capteur, l’état antivirus, les plateformes de système d’exploitation et les versions Windows 10 (et Windows 11).
 
 Le tableau de bord est structuré en deux sections :
 
-![Image du rapport de périphérique.](images/device-reports.png)
+:::image type="content" alt-text="Image du rapport de périphérique." source="images/device-reports.png" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -50,11 +51,11 @@ Le tableau de bord est structuré en deux sections :
 
 ## <a name="device-trends"></a>Tendances des appareils
 
-Par défaut, les tendances des appareils affichent les informations de l’appareil de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
+Par défaut, les tendances des appareils affichent les informations sur les appareils de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
 - 30 jours
-- 3 mois
-- 6 mois
+- Trois mois
+- Six mois
 - Personnalisé
 
 > [!NOTE]
@@ -92,7 +93,7 @@ Vous pouvez sélectionner plusieurs filtres à appliquer à partir des attributs
 Par exemple, pour afficher des données sur les Windows 10 avec l’état d’état d’état du capteur actif :
 
 1. Sous **Filtres > l’état d'> du capteur actif.**
-2. Sélectionnez ensuite **les plateformes de système d> Windows 10**.
+2. Sélectionnez ensuite **les plateformes de système d'> Windows 10**.
 3. Sélectionnez **Appliquer**.
 
 ## <a name="related-topic"></a>Rubrique connexe

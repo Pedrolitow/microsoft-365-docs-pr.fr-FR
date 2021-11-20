@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: 73b58f21ef24465332b902a36bba3d100d06d5b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202918"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122253"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -31,7 +31,7 @@ Contoso utilise une forêt AD DS (Active Directory Domain Services) unique pour 
 
 Voici la forêt Contoso avec des domaines régionaux pour les différentes régions du monde qui contiennent des centres régionaux.
 
-![La forêt et les domaines de Contoso dans le monde entier.](../media/contoso-identity/contoso-identity-fig1.png)
+:::image type="content" alt-text="La forêt et les domaines de Contoso dans le monde entier." source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
 Contoso a décidé d’utiliser les comptes et les groupes de la forêt contoso com pour l’authentification et l’autorisation pour ses charges Microsoft 365 charges de travail \. et services.
 
@@ -56,23 +56,23 @@ Contoso souhaitait utiliser sa forêt AD DS sur site pour l’authentification M
 
 PHS synchronise la forêt AD DS sur site avec le client Azure AD de son Microsoft 365 pour l’abonnement d’entreprise, en copiant les comptes d’utilisateur et de groupe et une version hachée des mots de passe de compte d’utilisateur.
 
-Pour la synchronisation d’annuaires, Contoso a déployé l’outil Connecter Azure AD sur un serveur dans son centre de données parisien.
+Pour la synchronisation d’annuaires, Contoso a déployé l’outil Azure AD Connecter sur un serveur dans son centre de données parisien.
 
-Voici le serveur exécutant Azure AD pour Connecter la forêt Contoso AD DS pour les modifications, puis la synchronisation de ces modifications avec le client Azure AD.
+Voici le serveur qui exécute Azure AD Connecter’interrogation de la forêt Contoso AD DS pour les modifications, puis la synchronisation de ces modifications avec le Azure AD client.
 
 ![Infrastructure de synchronisation d’annuaires PHS Contoso.](../media/contoso-identity/contoso-identity-fig4.png)
  
-## <a name="conditional-access-policies-for-identity-and-device-access"></a>Stratégies d’accès conditionnel basé sur l’identité et l’appareil
+## <a name="conditional-access-policies-for-zero-trust-identity-and-device-access"></a>Stratégies d’accès conditionnel pour l’accès aux identités et appareils de confiance zéro
 
 Contoso a créé un jeu d’Azure AD et Intune [stratégies d’accès conditionnel](../security/office-365-security/identity-access-policies.md) pour trois niveaux de protection :
 
-- *Les* protections de référence s’appliquent à tous les comptes d’utilisateur.
-- *Les* protections sensibles s’appliquent aux cadres supérieurs et aux cadres.
-- *Les protections hautement réglementées* s’appliquent à des utilisateurs spécifiques des services financiers, juridiques et de recherche qui ont accès aux données hautement réglementées.
+- *Les protections de point* de départ s’appliquent à tous les comptes d’utilisateurs.
+- *Enterprise* protections s’appliquent aux cadres supérieurs et aux cadres.
+- *Des* protections de sécurité spécialisées s’appliquent à des utilisateurs spécifiques des services financiers, juridiques et de recherche qui ont accès aux données hautement réglementées.
 
-Voici l’ensemble des stratégies d’accès conditionnel aux identités et appareils Contoso.
+Voici l’ensemble des stratégies d’accès conditionnel aux appareils et aux identités Contoso.
 
-![Stratégies d’accès conditionnel aux identités et appareils de Contoso.](../media/contoso-identity/contoso-identity-fig5.png)
+:::image type="content" alt-text="Stratégies d’accès conditionnel aux identités et appareils de Contoso." source="../media/contoso-identity/contoso-identity-fig5.png" lightbox="../media/contoso-identity/contoso-identity-fig5.png":::
  
 ## <a name="next-step"></a>Étape suivante
 

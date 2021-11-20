@@ -17,23 +17,24 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47e86a19f637278a9e9d82fd0b8fd260a77af6cd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702738"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121446"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Un centre des opérations de sécurité (SOC) établi doit avoir un catalogue de services qui peuvent inclure :
@@ -45,7 +46,7 @@ Un centre des opérations de sécurité (SOC) établi doit avoir un catalogue de
 - Recherche de recherche
 - Investigations
 - Réponse aux incidents 
-- Computer Security Incident Response Team (CSIRT) (qui peut être séparé de SOC) 
+- Équipe de réponse aux incidents de sécurité de l’ordinateur (CSIRT) (qui peut être séparée de SOC) 
 - Tests de conformité
 - Surveillance des menaces internes & fraude
 - Analyse des incidents de sécurité & événements 
@@ -65,7 +66,7 @@ Les composants de Microsoft 365 Defender sont les Microsoft 365 Defender :
 
  - **Microsoft Defender pour Office 365** est un service cloud de filtrage du courrier électronique qui permet de protéger les organisations contre les programmes malveillants et les virus inconnus en offrant une protection zero-day robuste et inclut des fonctionnalités permettant de protéger les organisations contre les liens dangereux en temps réel. Il offre également une gamme complète d’investigation et de recherche, de réponse et de correction, de sensibilisation et de formation, ainsi que de fonctionnalités de posture sécurisée.
 
-- **Microsoft Cloud App Security** est un courtier de sécurité d’accès cloud (CASB) qui prend en charge différents modes de déploiement, notamment la collecte de journaux, les connecteurs d’API et le proxy inverse. Il offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous les services cloud microsoft et tiers.
+- **Microsoft Defender pour les applications cloud** est un courtier de sécurité d’accès au cloud (CASB) qui prend en charge différents modes de déploiement, notamment la collecte de journaux, les connecteurs d’API et le proxy inverse. Il offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous les services cloud microsoft et tiers.
 
 Étant donné que Microsoft 365 Defender composants et technologies couvrent différentes fonctions, votre équipe SOC devra déterminer les rôles et responsabilités les plus adaptés pour gérer chaque composant de Microsoft 365 Defender et s’aligner sur la fonction de service.
 
@@ -74,9 +75,8 @@ Pour intégrer les fonctionnalités de Microsoft 365 Defender, vous devez affine
 - [Qu’est-ce que Microsoft Defender pour point de terminaison ?](/defender-endpoint/microsoft-defender-endpoint)
 - [Qu’est-ce que Microsoft Defender pour Identity ?](/defender-for-identity/what-is)
 - [Qu’est-ce que Defender pour Office 365 ?](/office-365-security/defender-for-office-365)
-- [Qu’est-ce que Microsoft Cloud App Security ?](/cloud-app-security/what-is-cloud-app-security)
+- [Qu’est-ce que Microsoft Defender pour les applications cloud ?](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>Étape suivante
 
 [Étape 4. Définir Microsoft 365 Defender rôles, responsabilités et supervision](integrate-microsoft-365-defender-secops-roles.md)
-

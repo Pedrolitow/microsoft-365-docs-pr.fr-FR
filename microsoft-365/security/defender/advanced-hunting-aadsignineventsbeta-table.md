@@ -18,23 +18,23 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c25132cc8743bf791123ae2cc4d29a195faa34a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 4df4b12d6b82a4738653485b7c32f954f26dccac
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755348"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122500"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de Azure Active Directory `AADSignInEventsBeta` (AAD) de signature. Les clients doivent avoir une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de ce tableau. Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de Azure Active Directory `AADSignInEventsBeta` (AAD). Les clients doivent avoir une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de ce tableau. Toutes les informations de schéma de la signature finiront par passer à la `IdentityLogonEvents` table.
 
-Le tableau dans le schéma de recherche avancé contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
+Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table. Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la [référence de recherche avancée.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)
 
@@ -47,7 +47,7 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`Timestamp`|DateHeure|Date et heure de génération de l’enregistrement|
 |`Application`|string|Application qui a effectué l’action enregistrée|
 |`ApplicationId`|string|Identificateur unique de l’application|
-|`LogonType`|string|Type de session d’ouverture de session, interactive, interactive, interactive à distance (RDP), réseau, lot et service|
+|`LogonType`|string|Type de session d’ouverture de session, interactive, interactive à distance (RDP), réseau, lot et service|
 |`ErrorCode`|int|Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .|
 |`CorrelationId`|string|Identificateur unique de l’événement de signature|
 |`SessionId`|string|Numéro unique attribué à un utilisateur par le serveur d’un site web pendant la visite ou la session|
@@ -59,14 +59,14 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`AlternateSignInName`|string|Nom d’utilisateur principal (UPN) local de l’utilisateur qui se Azure AD|
 |`LastPasswordChangeTimestamp`|DateHeure|Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe|
 |`ResourceDisplayName`|string|Nom d’affichage de la ressource accessible|
-|`ResourceId`|string|Identificateur unique de la ressource à accès|
+|`ResourceId`|string|Identificateur unique de la ressource accessible|
 |`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
 |`DeviceName`|string|Nom de domaine complet (FQDN) de la machine|
 |`AadDeviceId`|string|Identificateur unique de l’appareil dans Azure AD|
-|`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
+|`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
 |`DeviceTrustType`|string|Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.|
 |`IsManaged`|int|Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)|
-|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)|
+|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)|
 |`AuthenticationProcessingDetails`|string|Détails sur le processeur d’authentification|
 |`AuthenticationRequirement`|string|Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).|
 |`TokenIssuerType`|int|Indique si l’émetteur de jeton est Azure Active Directory (0) ou les services de fédération Active Directory (1)|

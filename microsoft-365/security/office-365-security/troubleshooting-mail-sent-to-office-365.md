@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception Microsoft 365 & meilleures pratiques en matière de publipostage en bloc Microsoft 365 clients.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5fe128989b66f110899e6af08180e830319b739
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203806"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121398"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -38,7 +38,7 @@ Cet article fournit des informations de dépannage pour les expéditeurs qui ren
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Vous gérez la réputation de l’expéditeur de votre IP et domaine ?
 
-Les technologies de filtrage EOP sont conçues pour fournir une protection contre le courrier indésirable pour Microsoft 365 ainsi que d’autres produits Microsoft tels que Exchange Server. Nous tirons également parti de SPF, DKIM et DMARC ; des technologies d'authentification de messagerie qui aident à résoudre le problème d'usurpation et d'hameçonnage en vérifiant que le domaine qui envoie l'e-mail est autorisé à le faire. Le filtrage EOP est affecté par de nombreux facteurs liés à l'IP d'envoi, le domaine, l'authentification, la précision de la liste, les taux de plaintes, le contenu, etc. Parmi ces facteurs, l'un des facteurs principaux responsable de la baisse de réputation d'un expéditeur et sa capacité à remettre un e-mail est son taux de plainte de courrier indésirable.
+Les technologies de filtrage EOP sont conçues pour fournir une protection contre le courrier indésirable pour Microsoft 365 et d’autres produits Microsoft tels que Exchange Server. Nous utilisons également SPF, DKIM et DMARC . technologies d’authentification de messagerie qui permettent de résoudre le problème d’usurpation d’identité et d’hameçonnage en vérifiant que le domaine qui envoie le courrier électronique est autorisé à le faire ; Le filtrage EOP est influencé par de nombreux facteurs liés à l’adresse IP d’envoi, au domaine, à l’authentification, à la précision des listes, aux taux de réclamations, au contenu et bien plus encore. Parmi ces facteurs, l'un des facteurs principaux responsable de la baisse de réputation d'un expéditeur et sa capacité à remettre un e-mail est son taux de plainte de courrier indésirable.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Vous envoyez des e-mails depuis de nouvelles adresses IP ?
 
@@ -120,9 +120,9 @@ Cette pratique est recommandée par le secteur si votre entreprise requiert que 
 
 Au cours du processus d'enregistrement, si la case à cocher « Oui, merci de m'envoyer votre bulletin d'informations » ou « Oui, merci de m'envoyer les offres spéciales » est sélectionnée par défaut, les utilisateurs qui ne font pas assez attention risquent de s'inscrire par inadvertance aux e-mails de marketing ou aux bulletins d'informations qu'ils ne souhaitent pas recevoir.
 
- Nous vous recommandons l'option de contrôle de consentement double à la place, ce qui signifie que la case à cocher pour les e-mails de marketing ou les bulletins d'informations est désactivée par défaut. En outre, une fois que le formulaire d'inscription a été envoyé, un e-mail de vérification est envoyé à l'utilisateur avec une URL qui leur permet de confirmer leur décision de recevoir des e-mails de marketing.
+ Microsoft recommande plutôt l’option de double choix, ce qui signifie que la case à cocher pour les e-mails marketing ou les bulletins d’informations est désactivée par défaut. En outre, une fois que le formulaire d'inscription a été envoyé, un e-mail de vérification est envoyé à l'utilisateur avec une URL qui leur permet de confirmer leur décision de recevoir des e-mails de marketing.
 
- Cela permet de garantir que seuls les utilisateurs qui souhaitent recevoir des e-mails de marketing sont inscrits pour les e-mails, en désactivant ensuite l'entreprise émettrice de toute pratique discutable.
+ Cela permet de garantir que seuls les utilisateurs qui souhaitent recevoir des e-mails de marketing sont inscrits pour les e-mails, en désactivant ensuite l’entreprise émettrice de toute pratique discutable.
 
 ### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Vérifier que le contenu des messages électroniques est transparent et qu’il est possible de le suivre
 

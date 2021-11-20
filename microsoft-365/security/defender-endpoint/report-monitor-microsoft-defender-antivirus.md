@@ -16,16 +16,16 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34b5718bb80b1af629edcd18ecc6771fc7a0c8f8
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9e2efd5f5354b84f7a10f1a9284ca812014240a1
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884036"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121960"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Signaler sur l’antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -46,5 +46,4 @@ Pour surveiller ou déterminer l’état avec PowerShell, WMI ou Microsoft Azure
 ## <a name="see-also"></a>Voir aussi
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Antivirus Microsoft Defender sur Windows Server 2016 et 2019](microsoft-defender-antivirus-on-windows-server.md)
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

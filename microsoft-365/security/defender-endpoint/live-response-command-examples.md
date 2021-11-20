@@ -1,6 +1,6 @@
 ---
 title: Exemples de commande Live response
-description: Apprenez à exécuter des commandes de réponse en direct de base ou avancées pour Microsoft Defender pour endpoint et consultez des exemples sur son utilisation.
+description: Apprenez à exécuter des commandes de réponse en direct de base ou avancées pour Microsoft Defender pour endpoint et consultez des exemples sur leur utilisation.
 keywords: exemple, commande, cli, distant, shell, connexion, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b234a27ccf011cdc20b7c1c5ab34e4322bfc5fd
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 39afd823c0d51494e5ad6e16f15f6cfc1eac131b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587709"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121936"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
@@ -30,13 +30,13 @@ ms.locfileid: "60587709"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
-Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
+Selon le rôle que vous avez, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
 
-## <a name="analyze"></a>analyser
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -48,7 +48,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a>connexions
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -60,7 +60,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a>dir
+## `dir`
 
 ```console
 # List files and sub-folders in the current folder
@@ -77,21 +77,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a>fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a>findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a>getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -105,18 +105,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> Les types de fichiers **suivants ne peuvent** pas être téléchargés à l’aide de cette commande à partir de Live Response :
+> Les types de fichiers *suivants ne peuvent* pas être téléchargés à l’aide de cette commande à partir de Live Response :
 >
 > - [Reparse point files](/windows/desktop/fileio/reparse-points/)
 > - [Fichiers dispersés](/windows/desktop/fileio/sparse-files/)
 > - Fichiers vides
 > - Fichiers virtuels ou fichiers qui ne sont pas entièrement présents localement
 >
-> Ces types de **fichiers sont pris** en charge par [PowerShell.](/powershell/scripting/overview)
+> Ces types de *fichiers sont pris* en charge par [PowerShell.](/powershell/scripting/overview)
 >
 > Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
 
-## <a name="library"></a>library
+## `library`
 
 ```console
 # List files in the library
@@ -128,7 +128,7 @@ library
 library delete script.ps1
 ```
 
-## <a name="processes"></a>Processus
+## `processes`
 
 ```console
 # Show all processes
@@ -150,7 +150,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a>putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -167,7 +167,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a>registre
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a>corriger
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -197,7 +197,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a>run
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -214,7 +214,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > Pour les commandes de longue durée telles que «**exécuter**» ou «**getfile**» , vous pouvez utiliser le symbole ' ' à la fin de la commande pour effectuer cette action en arrière-plan. **&**
 > Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l’aide de la commande de base «**fg** [».](live-response.md#basic-commands)
 
-## <a name="scheduledtask"></a>scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -231,7 +231,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## <a name="undo"></a>undo
+## `undo`
 
 ```console
 # Restore remediated registry

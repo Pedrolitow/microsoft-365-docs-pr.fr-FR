@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aeb78768db5426c249ab71f01a4e4d5d1fc154e0
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 56308de5f4bfacec7558f72e4fc1cb9e007f5d94
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552593"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121362"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -36,7 +36,7 @@ ms.locfileid: "60552593"
 
 ## <a name="summary"></a>Résumé
 
-Dans les organisations d’entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
+Dans les organisations d’entreprise, Microsoft Defender pour Endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe en charge des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
 
 Cet article décrit la structure du profil de configuration, inclut un profil recommandé que vous pouvez utiliser pour commencer et fournit des instructions sur la façon de déployer le profil.
 
@@ -151,11 +151,11 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|maximumOnDemandScanThreads|
 |**Type de données**|Entier|
-|**Valeurs possibles**|2 (valeur par défaut). Les valeurs autorisées sont des integers entre 1 et 64.|
+|**Valeurs possibles**|2 (par défaut). Les valeurs autorisées sont desgers entre 1 et 64.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.41.10 ou supérieure.|
 |||
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
 
 Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -168,11 +168,11 @@ Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure.|
 |||
 
-#### <a name="scan-exclusions"></a>Analyser les exclusions
+#### <a name="scan-exclusions"></a>Exclusions d’analyse
 
 Spécifiez les entités exclues de l’analyse. Les exclusions peuvent être spécifiées par des chemins d’accès complets, des extensions ou des noms de fichiers.
 (Les exclusions sont spécifiées en tant que tableau d’éléments, l’administrateur peut spécifier autant d’éléments que nécessaire, dans n’importe quel ordre.)
@@ -233,7 +233,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 |Exclusion|Définition|Exemples|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
-|File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`|
 |Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -298,7 +298,7 @@ Spécifiez un processus pour lequel toute l’activité de fichier est exclue de
 |Section|Valeur|
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
-|**Clé**|name|
+|**Clé**|nom|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Comments**|Applicable uniquement *si $type* est *excluFileName*|
@@ -319,7 +319,7 @@ Spécifiez les menaces par nom qui ne sont pas bloquées par Defender pour endpo
 |**Type de données**|Tableau de chaînes|
 |||
 
-#### <a name="disallowed-threat-actions"></a>Actions contre les menaces nonallées
+#### <a name="disallowed-threat-actions"></a>Actions de menace non autorisées
 
 Limite les actions que l’utilisateur local d’un appareil peut prendre lorsque des menaces sont détectées. Les actions incluses dans cette liste ne sont pas affichées dans l’interface utilisateur.
 
@@ -336,7 +336,7 @@ Limite les actions que l’utilisateur local d’un appareil peut prendre lorsqu
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure.|
 |||
 
-#### <a name="threat-type-settings"></a>Paramètres du type de menace
+#### <a name="threat-type-settings"></a>Paramètres des types de menaces
 
 Spécifiez comment certains types de menaces sont gérés par Microsoft Defender pour point de terminaison sur macOS.
 
@@ -401,7 +401,7 @@ Spécifiez la stratégie de fusion pour les paramètres de type de menace. Il pe
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure.|
 |||
 
@@ -435,7 +435,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure.|
 |||
 
@@ -455,7 +455,7 @@ Configurez les fonctionnalités de protection informatique de Microsoft Defender
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
 
-#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection livrée par le cloud
+#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection cloud
 
 Spécifiez s’il faut activer ou non la protection de l’appareil livrée par le cloud. Pour améliorer la sécurité de vos services, nous vous recommandons de maintenir cette fonctionnalité allumée.
 
@@ -489,7 +489,7 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Mic
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les envois automatiques d’échantillons
 
-Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à vous demander si le fichier envoyé est susceptible de contenir des informations personnelles.
+Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à savoir si le fichier envoyé est susceptible de contenir des informations personnelles.
 
 <br>
 
@@ -534,7 +534,7 @@ Gérez les préférences pour l’interface utilisateur de Microsoft Defender po
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
 
-#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu d’état
+#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu État
 
 Spécifiez s’il faut afficher ou masquer l’icône du menu d’état dans le coin supérieur droit de l’écran.
 
@@ -640,13 +640,13 @@ Spécifie la valeur de la balise
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 
-Pour commencer, nous vous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
+Pour commencer, nous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
 
 Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propriétés qui peut être téléchargée dans le profil de configuration des paramètres personnalisés) sera :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA)** sont bloquées
+  - **Les applications potentiellement indésirables (PUA) sont** bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans Microsoft Defender pour les journaux de point de terminaison
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
@@ -1076,7 +1076,7 @@ Une fois que vous avez créé le profil de configuration pour votre entreprise, 
 
 ### <a name="jamf-deployment"></a>Déploiement JAMF
 
-À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom \>  **Paramètres**. Créez une entrée avec comme domaine de préférence `com.microsoft.wdav` et téléchargez *le .plist* produit précédemment.
+À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom \>  **Paramètres**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez le *.plist* produit précédemment.
 
 > [!CAUTION]
 > Vous devez entrer le domaine de préférence correct ( ) ; sinon, les préférences ne seront pas reconnues par `com.microsoft.wdav` Microsoft Defender pour le point de terminaison.

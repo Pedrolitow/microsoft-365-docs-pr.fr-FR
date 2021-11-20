@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071406"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109946"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -59,13 +59,13 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Protéger le contenu dans les applications Office sur différents appareils et plateformes.** Pris en charge par Word, Excel, PowerPoint et Outlook sur les applications Office pour ordinateur de bureau et Office sur le web. Pris en charge sur Windows, macOS, iOS et Android.
 
-- **Protéger le contenu des applications et services tiers** à l’aide de Microsoft Cloud App Security. Avec la Sécurité des applications cloud, vous pouvez détecter, classifier, étiqueter et protéger le contenu des applications et services tiers, tels que SalesForce, Box ou DropBox, même si l’application ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de confidentialité.
+- **Protégez le contenu dans les services et les applications tiers** à l’aide de Microsoft Defender for Cloud Apps. Avec Defender for Cloud Apps, vous pouvez détecter, classifier, étiqueter et protéger le contenu dans des applications et des services tiers, tels que SalesForce, Box ou DropBox, même si l’application ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de sensibilité.
 
 - **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
 - **Étendre les étiquettes de confidentialité à Power BI** : lorsque vous activez cette fonctionnalité, vous pouvez appliquer et afficher les étiquettes dans Power BI et protéger les données lorsqu’elles sont enregistrées en dehors du service.
 
-- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Azure Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosoms et AWS RDS.
+- **Étendre les étiquettes de confidentialité aux ressources dans Azure Purview** : lorsque vous activez cette fonctionnalité, actuellement dans aperçu vous pouvez appliquer vos étiquettes de confidentialité aux fichiers et ressources de données schématisées dans Azure Purview. Les ressources de données schématisées incluent SQL, Azure SQL, Azure Synapse, Azure Cosoms et AWS RDS.
 
 - **Étendre les étiquettes de confidentialité à des applications et services tiers.** Grâce à l'utilisation du SDK Microsoft informations Protection, des applications tierces peuvent lire des étiquettes de confidentialité et appliquer des paramètres de protection.
 

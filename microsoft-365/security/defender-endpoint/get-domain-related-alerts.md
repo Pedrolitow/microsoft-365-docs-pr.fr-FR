@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 176daff75e39f8ed4dda2854d3448cb9fbaa5dad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aef9c876d9c2dc4ca8d68538d0742141525e2cfd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211146"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122224"
 ---
 # <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
 
@@ -43,8 +43,8 @@ Récupère une collection d’alertes [liées](alerts.md) à une adresse de doma
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
+- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/alerts
 
 |En-tête|Valeur|
 |---|---|
-|Autorisation|String|
+|Autorisation|Chaîne|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -87,7 +87,7 @@ En cas de réussite et si le domaine existe : 200 - OK avec la liste des entité
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de demande.
+Voici un exemple de la demande.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

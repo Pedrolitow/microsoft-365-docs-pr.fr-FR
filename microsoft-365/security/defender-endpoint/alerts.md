@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0d7649c4e39651cec8cdf293177abf66709964e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197148"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121374"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -30,7 +30,7 @@ ms.locfileid: "60197148"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,7 +52,7 @@ ms.locfileid: "60197148"
 |[Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines|Ré lister les URL associées à l’alerte.|
 |[Lister les fichiers associés](get-alert-related-files-info.md)|[Collection de](files.md) fichiers|Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)|
 |[Liste des IP associées](get-alert-related-ip-info.md)|Collection d’adresses IP|List IPs that are associated with the alert.|
-|[Obtenir les ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
+|[Obtenir des ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
 |[Obtenir des utilisateurs associés](get-alert-related-user-info.md)|[Utilisateur](user.md)|Utilisateur [associé](user.md) à [l’alerte.](alerts.md)|
 |
 
@@ -64,7 +64,7 @@ ms.locfileid: "60197148"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|ID d’alerte.|
+|id|Chaîne|ID d’alerte.|
 |title|String|Titre de l’alerte.|
 |description|String|Description de l’alerte.|
 |alertCreationTime|Nullable DateTimeOffset|Date et heure (au UTC) de création de l’alerte.|
@@ -73,23 +73,23 @@ ms.locfileid: "60197148"
 |lastUpdateTime|Nullable DateTimeOffset|Date et heure (au UTC) de la dernière mise à jour de l’alerte.|
 |resolvedTime|Nullable DateTimeOffset|Date et heure à laquelle l’état de l’alerte a été modifié en « Résolu ».|
 |incidentId|Nullable Long|ID [d’incident](view-incidents-queue.md) de l’alerte.|
-|investigationId|Nullable Long|ID [d’investigation](automated-investigations.md) lié à l’alerte.|
-|investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|investigationId|Nullable Long|ID [d’examen](automated-investigations.md) lié à l’alerte.|
+|investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
 |assignedTo|Chaîne|Propriétaire de l’alerte.|
-|rbacGroupName|Chaîne|Nom du groupe d’appareils RBAC.|
-|mitreTechniques|Chaîne|ID Enterprise technique mitre.|
-|relatedUser|String|Détails de l’utilisateur associé à une alerte spécifique.|
+|rbacGroupName|String|Nom du groupe d’appareils RBAC.|
+|mitreTechniques|String|Mitre Enterprise technique ID.|
+|relatedUser|Chaîne|Détails de l’utilisateur associé à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
-|statut|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).|
+|statut|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).|
 |classification|Nullable, enum|Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).|
 |détermination|Nullable, enum|Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
 |category|String|Catégorie de l’alerte.|
 |detectionSource|Chaîne|Source de détection.|
 |threatFamilyName|Chaîne|Famille de menaces.|
-|threatName|String|Nom de la menace.|
-|machineId|Chaîne|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
+|threatName|Chaîne|Nom de la menace.|
+|machineId|String|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
 |computerDnsName|Chaîne|[nom complet](machine.md) de l’ordinateur.|
-|aadTenantId|Chaîne|ID Azure Active Directory de l’ID de l’ID de l’Azure Active Directory.|
+|aadTenantId|Chaîne|ID Azure Active Directory de l’autre.|
 |détecteurId|Chaîne|ID du détecteur qui a déclenché l’alerte.|
 |commentaires|Liste des commentaires d’alerte|L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
 |Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f0f15f8a3cf7f40bd1fd2e64d4d37466cc12d67e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178286"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122083"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 
@@ -49,11 +49,11 @@ ms.locfileid: "60178286"
 
 |Méthode|Type renvoyé|Description|
 |---|---|---|
-|[Répertorier les logiciels](get-software.md)|Collection de logiciels|Liste de l’inventaire logiciel de l’organisation.|
-|[Obtenir un logiciel par ID](get-software-by-id.md)|Logiciels|Obtenez un logiciel spécifique par son ID logiciel.|
-|[Répertorier la distribution de versions du logiciel](get-software-ver-distribution.md)|Collection de distribution|Liste de la distribution des versions des logiciels par ID logiciel.|
-|[Répertorier les ordinateurs par logiciel](get-machines-by-software.md)|Collection MachineRef|Récupérez la liste des appareils associés à l’ID logiciel.|
-|[Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md)|[Collection de vulnérabilités](vulnerability.md)|Récupérez la liste des vulnérabilités associées à l’ID logiciel.|
+|[Répertorier les logiciels](get-software.md)|Collection de logiciels|Liste de l’inventaire logiciel de l’organisation|
+|[Obtenir un logiciel par ID](get-software-by-id.md)|Logiciels|Obtenir un logiciel spécifique par son ID logiciel|
+|[Répertorier la distribution de versions du logiciel](get-software-ver-distribution.md)|Collection de distribution|Liste de la distribution des versions des logiciels par ID logiciel|
+|[Répertorier les ordinateurs par logiciel](get-machines-by-software.md)|Collection MachineRef|Récupérer la liste des appareils associés à l’ID logiciel|
+|[Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md)|[Collection de vulnérabilités](vulnerability.md)|Récupérer la liste des vulnérabilités associées à l’ID logiciel|
 |[Obtenir des Ko manquants](get-missing-kbs-software.md)|Collection KB|Obtenir la liste des ko manquants associés à l’ID logiciel|
 |
 
@@ -67,7 +67,7 @@ ms.locfileid: "60178286"
 |---|---|---|
 |id|Chaîne|ID logiciel|
 |Nom|String|Nom du logiciel|
-|Fournisseur|Chaîne|Nom du fournisseur de logiciels|
+|Fournisseur|Chaîne|Nom de l’éditeur de logiciels|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
 |publicExploit|Booléen|Une exploitation publique existe pour certaines vulnérabilités|
 |activeAlert|Booléen|L’alerte active est associée à ce logiciel|

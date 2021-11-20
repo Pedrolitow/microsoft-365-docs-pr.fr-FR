@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7d2574cf97d6eb2c38348d2e291fee82d0adb43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78e729fb5db90f78febdb970792b959a85df533f
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213679"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122536"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtenir des informations d’alerte par API d’ID
 
@@ -42,12 +42,12 @@ Récupère une alerte [spécifique par](alerts.md) son ID.
 
 ## <a name="limitations"></a>Limites
 
-1. Vous pouvez obtenir la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
-2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
+- Vous pouvez obtenir la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
+- Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison.](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -60,7 +60,7 @@ Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrir
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -80,4 +80,4 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK et l’entité d’alerte dans le corps de la réponse. [](alerts.md) Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode renvoie 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse. Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.

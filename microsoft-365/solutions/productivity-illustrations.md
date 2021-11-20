@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f5f5a506cb2c9a2cfd3d81fb0f3fca6bcf3710de
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a3d576b5b507ea7a3468a472c3690495114d2410
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756630"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122560"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -33,7 +33,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
-Cette illustration inclut des informations pour les architectes de l’Microsoft 365 groupes. Pour en savoir plus sur la configuration et l’administration de groupes Microsoft 365 et d’équipes pour la collaboration dans votre organisation, voir Configurer la [collaboration](/microsoft-365/solutions/setup-secure-collaboration-with-teams) sécurisée avec Microsoft 365 et qu’est-ce que la gouvernance [de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
+Cette illustration contient des informations pour les architectes de l’Microsoft 365 groupes. Pour en savoir plus sur la configuration et l’administration de groupes Microsoft 365 et d’équipes pour la collaboration dans votre organisation, voir Configurer la [collaboration](/microsoft-365/solutions/setup-secure-collaboration-with-teams) sécurisée avec Microsoft 365 et qu’est-ce que la gouvernance [de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | Description |
 |:-----|:-----|
@@ -76,17 +76,22 @@ Selon votre environnement, certains outils conviennent mieux à certaines archit
 |[![Image miniature de la stratégie de déploiement de Point de terminaison Microsoft Defender.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Mise à jour de septembre 2021| Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
 
 
-<a name="BKMK_O365IDP"></a>
-## <a name="identity-and-device-protection-for-microsoft-365"></a>Protection des identités et des appareils pour Microsoft 365
+<!--
 
-Fonctionnalités recommandées pour la protection des identités et des appareils qui accèdent à Microsoft 365, à d’autres services SaaS et aux applications locales publiées avec Azure AD Proxy d’application.
+<a name="BKMK_O365IDP"></a>
+## Zero Trust identity and device protection for Microsoft 365
+
+Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
 | Item | Description |
 |:-----|:-----|
-|[![Affiche de modèle : Protection des identités et des appareils pour Microsoft 365.](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Affichage au format PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Téléchargement en tant que Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Mise à jour de septembre 2020|Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble de vos données, de vos identités et de vos appareils. Ce modèle vous montre quelles fonctionnalités sont comparables avec plus d’informations sur les fonctionnalités de protection des identités et des appareils.  <br/> |
+|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+
+--> 
+
 
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery architecture dans Microsoft 365
+##Advanced eDiscovery architecture dans Microsoft 365
 
 Advanced eDiscovery flux de travail et de données de bout en bout, y compris dans Microsoft 365 environnements multigéogé.
 
@@ -113,7 +118,7 @@ Avec Microsoft 365 et d’autres technologies cloud de Microsoft, vous pouvez fo
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
 Mise à jour de juin 2021
 
-Pour plus d’informations, voir l’article de cette affiche : Configurer votre infrastructure pour le travail hybride [avec Microsoft 365](empower-people-to-work-remotely.md).
+Pour plus d’informations, voir l’article de cette affiche : Configurer votre infrastructure pour un travail hybride [avec Microsoft 365](empower-people-to-work-remotely.md).
 
 ## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams avec isolation de sécurité
 

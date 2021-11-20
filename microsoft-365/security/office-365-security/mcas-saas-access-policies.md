@@ -15,17 +15,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f916aaab4c544b50cc06bfbd4fbb963f1987df03
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8d94207be88bd7c9e070057ac1790845a3be17ca
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111722"
+ms.locfileid: "61122007"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Stratégies Microsoft Defender pour les applications cloud recommandées pour les applications SaaS
+
 Microsoft Defender pour les applications cloud s’appuie sur des stratégies d’accès conditionnel Azure AD pour activer la surveillance et le contrôle en temps réel des actions granulaires avec les applications SaaS, telles que le blocage des téléchargements, des téléchargements, des copier-coller et des impressions. Cette fonctionnalité ajoute la sécurité aux sessions qui présentent des risques inhérents, par exemple lorsque des ressources d’entreprise sont accessibles à partir d’appareils nonmanagés ou par des utilisateurs invités.
 
-Microsoft Defender pour les applications cloud s’intègre également en mode natif à Protection des données Microsoft, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de sensibilité et prendre les mesures appropriées.
+Defender pour les applications cloud s’intègre également en mode natif à Protection des données Microsoft, en fournissant une inspection du contenu en temps réel pour rechercher des données sensibles basées sur des types d’informations sensibles et des étiquettes de sensibilité et prendre les mesures appropriées.
 
 Ces conseils incluent des recommandations pour ces scénarios :
 
@@ -35,22 +36,22 @@ Ces conseils incluent des recommandations pour ces scénarios :
 
 ## <a name="bring-saas-apps-into-it-management"></a>Faire entrer les applications SaaS dans la gestion des applications it
 
-La première étape de l’utilisation de Microsoft Defender pour les applications cloud pour gérer les applications SaaS consiste à les découvrir, puis à les ajouter à votre client Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau.](/cloud-app-security/tutorial-shadow-it) Une fois que vous avez découvert les applications, ajoutez-les [à votre Azure AD client.](/azure/active-directory/manage-apps/add-application-portal)
+La première étape de l’utilisation de Defender pour les applications cloud pour gérer les applications SaaS consiste à les découvrir, puis à les ajouter à Azure AD client. Si vous avez besoin d’aide pour la découverte, [consultez Découvrir et gérer les applications SaaS dans votre réseau.](/cloud-app-security/tutorial-shadow-it) Une fois que vous avez découvert les applications, ajoutez-les [à votre Azure AD client.](/azure/active-directory/manage-apps/add-application-portal)
 
 Vous pouvez commencer à gérer ces éléments en suivant les mesures suivantes :
 
 1. Tout d’abord, dans Azure AD, créez une stratégie d’accès conditionnel et configurez-la pour « Utiliser le contrôle d’application d’accès conditionnel ». Cela redirige la demande vers Defender pour les applications cloud. Vous pouvez créer une stratégie et ajouter toutes les applications SaaS à cette stratégie.
 1. Ensuite, dans Defender pour les applications cloud, créez des stratégies de session. Créez une stratégie pour chaque contrôle que vous souhaitez appliquer.
 
-Les autorisations d’accès aux applications SaaS sont généralement basées sur les besoins de l’entreprise pour accéder à l’application. Ces autorisations peuvent être très dynamiques. L’utilisation de Defender pour les applications cloud garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé à une protection de référence, sensible ou hautement réglementée.
+Les autorisations d’accès aux applications SaaS sont généralement basées sur les besoins de l’entreprise pour accéder à l’application. Ces autorisations peuvent être très dynamiques. L’utilisation de Defender pour les applications cloud garantit la protection des données d’application, que les utilisateurs soient affectés à un groupe Azure AD associé au point de départ, à l’entreprise ou à une protection de sécurité spécialisée.
 
 Pour protéger les données au sein de votre collection d’applications SaaS, le diagramme suivant illustre la stratégie d’accès conditionnel Azure AD nécessaire, ainsi que les stratégies suggérées que vous pouvez créer dans Defender pour les applications cloud. Dans cet exemple, les stratégies créées dans Defender pour les applications cloud s’appliquent à toutes les applications SaaS que vous gérez. Ces contrôles sont conçus pour appliquer les contrôles appropriés selon que les appareils sont gérés, ainsi que les étiquettes de niveau de sensibilité qui sont déjà appliquées aux fichiers.
 
-![Stratégies de gestion des applications SaaS dans Defender pour les applications cloud.](../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Stratégies de gestion des applications SaaS dans Defender pour les applications cloud." lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 Le tableau suivant répertorie la nouvelle stratégie d’accès conditionnel que vous devez créer dans Azure AD.
 
-|Niveau de protection|Stratégie|Plus d’informations|
+|Niveau de protection|Stratégie|Informations supplémentaires|
 |---|---|---|
 |Tous les niveaux de protection|[Utiliser le contrôle d’application d’accès conditionnel dans Defender pour les applications cloud](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|Cela configure votre IdP (Azure AD) pour qu’il fonctionne avec Defender pour les applications cloud.|
 ||||
@@ -59,9 +60,9 @@ Le tableau suivant répertorie les exemples de stratégies illustrées ci-dessus
 
 |Niveau de protection|Stratégie|
 |---|---|
-|Baseline|Surveiller le trafic provenant d’appareils non utilisés <p> Ajouter une protection aux téléchargements de fichiers à partir d’appareils nonmanagés|
-|Sensible|Bloquer le téléchargement de fichiers étiquetés avec des informations sensibles ou classifiées à partir d’appareils non utilisés (cela permet d’accéder uniquement au navigateur)|
-|Hautement réglementé|Bloquer le téléchargement des fichiers étiquetés avec classés à partir de tous les appareils (cela permet d’accéder uniquement au navigateur)|
+|Point de départ|Surveiller le trafic provenant d’appareils non utilisés <p> Ajouter une protection aux téléchargements de fichiers à partir d’appareils nonmanagés|
+|Entreprise|Bloquer le téléchargement de fichiers étiquetés avec des informations sensibles ou classifiées à partir d’appareils non utilisés (cela permet d’accéder uniquement au navigateur)|
+|Sécurité spécialisée|Bloquer le téléchargement des fichiers étiquetés avec classés à partir de tous les appareils (cela permet d’accéder uniquement au navigateur)|
 |||
 
 Pour obtenir des instructions de bout en bout sur la configuration du contrôle d’application d’accès conditionnel, voir [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). Cet article vous explique tout au long du processus de création de la stratégie d’accès conditionnel nécessaire dans Azure AD test de vos applications SaaS.
@@ -95,13 +96,13 @@ Defender pour les applications cloud peut être un outil précieux pour configur
 
 L’illustration et le tableau suivants fournissent plusieurs exemples de stratégies qui peuvent être configurées pour vous aider à respecter le Règlement général sur la protection des données (R GDPR). Dans ces exemples, les stratégies recherchent des données spécifiques. En fonction de la sensibilité des données, chaque stratégie est configurée pour prendre les mesures appropriées.
 
-![Exemple de stratégies Defender pour les applications cloud pour la protection contre la perte de données.](../../media/microsoft-365-policies-configurations/mcas-dlp.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="Exemple de stratégies Defender pour les applications cloud pour la protection contre la perte de données." lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |Niveau de protection|Exemples de stratégies|
 |---|---|
-|Baseline|Alerte lorsque les fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sont partagés à l’extérieur de l’organisation <p> >bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« numéro de carte de crédit ») sur les appareils non utilisés|
-|Sensible|Protéger les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils gérés <p> Bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils non utilisés <p> Alerte lorsqu’un fichier avec l’une de ces étiquettes est téléchargé vers OneDrive Entreprise ou Box (données client, ressources humaines : données de salaire, ressources humaines, données des employés)|
-|Hautement réglementé|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils non utilisés|
+|Point de départ|Alerte lorsque les fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sont partagés à l’extérieur de l’organisation <p> >bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« numéro de carte de crédit ») sur les appareils non utilisés|
+|Entreprise|Protéger les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils gérés <p> Bloquer les téléchargements de fichiers contenant ce type d’informations sensibles (« Numéro de carte de crédit ») sur les appareils non utilisés <p> Alerte lorsqu’un fichier avec l’une de ces étiquettes est téléchargé vers OneDrive Entreprise ou Box (données client, ressources humaines : données de salaire, ressources humaines, données des employés)|
+|Sécurité spécialisée|Alerte lorsque les fichiers avec cette étiquette (« Hautement classé ») sont téléchargés sur les appareils gérés <p> Bloquer les téléchargements de fichiers avec cette étiquette (« Hautement classé ») sur les appareils non utilisés|
 |||
 
 ## <a name="next-steps"></a>Prochaines étapes

@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 610b2959794bfa10faa5eeafb355c9ecb6e4676f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110402"
+ms.locfileid: "61121180"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies d’accès invité et d’accès des utilisateurs externes B2B
 
-Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités recommandées pour autoriser l’accès aux invités et aux utilisateurs externes qui ont un compte B2B Azure Active Directory (Azure AD). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils.](identity-access-policies.md)
+Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités De confiance zéro recommandées pour autoriser l’accès pour les invités et les utilisateurs externes qui ont un compte B2B Azure Active Directory (Azure AD) Business-to-Business (B2B). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils.](identity-access-policies.md)
 
-Ces recommandations sont conçues pour s’appliquer au **niveau de** protection de référence. Toutefois, vous pouvez également ajuster les  recommandations en fonction de vos besoins spécifiques en matière de protection sensible et **hautement réglementée.**
+Ces recommandations sont conçues pour s’appliquer au **niveau de départ** de la protection. Toutefois, vous pouvez également ajuster les recommandations en fonction de vos besoins spécifiques en matière de protection **de** la sécurité d’entreprise **et spécialisée.**
 
 Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier auprès de votre client Azure AD ne permet pas à ces comptes d’accéder à l’ensemble de votre environnement. Les utilisateurs B2B et leurs comptes ont accès à des services et des ressources, tels que des fichiers, partagés avec eux par la stratégie d’accès conditionnel.
 
@@ -38,21 +38,20 @@ Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier au
 
 Ce diagramme montre les stratégies à ajouter ou à mettre à jour parmi les stratégies d’accès aux identités et appareils courantes, pour l’accès des invités B2B et des utilisateurs externes.
 
-[![Résumé des mises à jour de stratégie pour la protection de l’accès invité.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Résumé des mises à jour de stratégie pour la protection de l’accès invité." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 Le tableau suivant répertorie les stratégies que vous devez créer et mettre à jour. Les stratégies courantes sont liées aux instructions de configuration associées dans l’article Des stratégies communes d’accès aux appareils [et aux](identity-access-policies.md) identités.
 
-|Niveau de protection|Stratégies|Plus d’informations|
+|Niveau de protection|Stratégies|Informations supplémentaires|
 |---|---|---|
-|**Baseline**|[Exiger l’mf toujours pour les invités et les utilisateurs externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette stratégie et configurez : <ul><li>Pour **les affectations > utilisateurs** et groupes > inclure, sélectionnez Sélectionner des utilisateurs et des **groupes,** puis sélectionnez Tous les utilisateurs **invités et externes.**</li><li>Pour **les affectations > conditions >** se connectez, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
+|**Point de départ**|[Exiger l’mf toujours pour les invités et les utilisateurs externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette stratégie et configurez : <ul><li>Pour **les affectations > utilisateurs** et groupes > inclure, sélectionnez Sélectionner des utilisateurs et des **groupes,** puis sélectionnez Tous les utilisateurs **invités et externes.**</li><li>Pour **les affectations > conditions >** se connectez, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
 ||[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
-||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 
 Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et  **externes.**
 
 ![capture d’écran des contrôles pour l’exclusion des invités et des utilisateurs externes.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Invités et accès des utilisateurs externes avec Microsoft Teams
 

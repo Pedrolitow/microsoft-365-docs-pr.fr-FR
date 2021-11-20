@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 424a6928c12642b90c44561b92483ef1398f855e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 6cc1735182a91819d38bc18ecb60de7d29085d28
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109790"
+ms.locfileid: "61122020"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -71,6 +71,8 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 3. Obtenir des informations
 
    Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations via une formation à la [simulation d’attaques.](/microsoft-365/security/office-365-security/attack-simulation-training-insights)
+
+   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
 Pour plus d’informations, voir [Simulations.](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations)
 

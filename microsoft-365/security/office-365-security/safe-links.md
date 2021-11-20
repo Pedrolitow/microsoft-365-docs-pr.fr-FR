@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f2f1695c10c7b5b9d03db38ab000410c20eb467
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064222"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121254"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens vers Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "61064222"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens sécurisés dans Outlook, voir Sécurité avancée [Outlook.com.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
@@ -80,7 +80,7 @@ Cet article contient des descriptions détaillées des types de liens Coffre sui
   - [Coffre paramètres de liens pour Office 365 applications](#safe-links-settings-for-office-365-apps)
   - [Liste « Bloquer les URL suivantes » pour les Coffre liens](#block-the-following-urls-list-for-safe-links)
 
-Le tableau suivant décrit les scénarios pour les liens Coffre dans les organisations Microsoft 365 et Office 365 qui incluent Defender pour Office 365 (en d’autres termes, l’absence de licence n’est jamais un problème dans les exemples).
+Le tableau suivant décrit les scénarios pour les liens Coffre dans les organisations Microsoft 365 et Office 365 qui incluent Defender pour Office 365 (notez que l’absence de licence n’est jamais un problème dans les exemples).
 
 <br>
 
