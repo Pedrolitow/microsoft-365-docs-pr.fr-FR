@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: de5b108c3e7a3fbd0831f4bb02385611a1c6ae3c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ea8df5216464feb0cd1807e7f64d8adbdde3f2e7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555883"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110198"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -153,7 +153,7 @@ Set-MpPreference -PUAProtection Disabled
 
 La configuration de la valeur de cette cmdlet sur `Disabled` désactive la fonctionnalité si elle a été activée.
 
-Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configurer et gérer l'Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Cmdlets Defender](/powershell/module/defender/index).
+Pour plus d’informations, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender et [cmdlets Defender pour les cloud](/powershell/module/defender/index).
 
 ## <a name="view-pua-events-using-powershell"></a>Afficher les événements d’applications potentiellement indésirables (PUA)
 

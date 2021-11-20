@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 860f43fe8bf82a9aed7983085b2b5d774229e2d0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159425"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110462"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -137,10 +137,10 @@ Intégrez Microsoft Defender pour point de terminaison à vos flux de travail ex
 
 Defender pour point de terminaison s’intègre directement aux différentes solutions Microsoft, notamment :
 
-- Azure Defender
-- Azure Sentinel
+- Microsoft Defender pour le cloud
+- Microsoft Sentinel
 - Intune
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender pour l’identité
 - Microsoft Defender pour Office
 - Skype Entreprise
@@ -160,4 +160,3 @@ Avec ce parcours d'apprentissage de Microsoft Learn, vous pouvez comprendre Defe
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/paths/defender-endpoint-fundamentals/)
-

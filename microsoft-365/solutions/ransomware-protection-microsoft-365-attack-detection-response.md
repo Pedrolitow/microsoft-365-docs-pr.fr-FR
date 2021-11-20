@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque d'extorsion, attaque de rançongiciel, chiffrement, cryptovirologie, confiance zéro
 description: Utilisez Microsoft 365 Defender et ses sources de signal de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 16e9f2add4b064a3091a836efe23f7fcd2299f22
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5336cdf3bca17cfdffa6c56ff3a29dbfacc1a539
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666697"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111686"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>Étape 2. Déployer la détection et la réponse des attaques
 
@@ -37,7 +37,7 @@ Pour plus d’informations, consultez ces ressources.
 | [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security) | Protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration <br><br> Protège contre les programmes malveillants, le hameçonnage, l’usurpation et d’autres types d’attaques  | [Vue d’ensemble](/microsoft-365/security/office-365-security/overview) | [Recherche de menaces](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
 | [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint) | Permet la détection et la réponse aux menaces avancées sur les points de terminaison (appareils) | [Vue d’ensemble](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Détection et réponse du point de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
 | [Azure Active Directory Identity Protection (Azure AD)](/azure/active-directory/identity-protection/) | Automatise la détection et la correction des risques basés sur l’identité et l’examen de ces risques | [Vue d’ensemble](/azure/active-directory/identity-protection/overview-identity-protection) | [Examiner le risque](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
-| [Microsoft Cloud App Security](/cloud-app-security) | Courtier de sécurité d’accès au cloud pour la découverte, l’examen et la gouvernance au sein de tous vos services cloud Microsoft et tiers. | [Vue d’ensemble](/cloud-app-security/what-is-cloud-app-security) | [Examiner](/cloud-app-security/investigate) |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security) | Courtier de sécurité d’accès au cloud pour la découverte, l’examen et la gouvernance au sein de tous vos services cloud Microsoft et tiers. | [Vue d’ensemble](/cloud-app-security/what-is-cloud-app-security) | [Examiner](/cloud-app-security/investigate) |
 
 >[!Note]
 >Tous ces outils nécessitent Microsoft 365 E5 ou Microsoft 365 E3 avec le module complémentaire Microsoft 365 E5 Sécurité.
@@ -59,23 +59,23 @@ Utilisez ces outils pour détecter et répondre aux menaces courantes d’attaqu
 - Élévation de privilèges
 
    - Azure AD Identity Protection
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - Comportement des applications malveillantes
 
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - Exfiltration, suppression ou chargement de données
 
    - Microsoft Defender pour Office 365
-   - Microsoft Cloud App Security [stratégies de détection des anomalies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
+   - Microsoft Defender for Cloud Apps avec [stratégies de détection des anomalies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
 
 Les outils suivants utilisent Microsoft 365 Defender et son portail (https://security.microsoft.com) comme un point d’analyse et de collecte des menaces courantes :
 
 - Microsoft Defender pour l’identité
 - Microsoft Defender pour Office 365
 - Microsoft Defender pour point de terminaison
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 Microsoft 365 Defender combine les signaux de menace en alertes et les alertes connectées dans un incident afin que vos analystes de sécurité puissent détecter, examiner et corriger plus rapidement les phases d’une attaque par rançongiciel.
 

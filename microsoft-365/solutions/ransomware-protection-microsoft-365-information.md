@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware opéré par l'homme, ransomware opéré par l'homme, HumOR, attaque d'extorsion, attaque de ransomware, cryptage, cryptovirologie, zero trust
-description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Cloud App Security pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Defender for Cloud Apps pour protéger vos Microsoft 365 sensibles.
+ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666733"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110042"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
@@ -92,7 +92,7 @@ Pour protéger vos informations sensibles au cas où un pirate par rançongiciel
 
 - Utilisez la [Protection contre la perte de données (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) Microsoft 365 pour détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié de données contenant des informations personnelles ou confidentielles basées sur des étiquettes de confidentialité, à la fois en interne et en externe.
 
-- Utilisez [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) pour bloquer les téléchargements d’informations sensibles telles que des fichiers. Vous pouvez également utiliser [des stratégies de détection d’anomalies Sécurité des applications cloud](/cloud-app-security/anomaly-detection-policy#ransomware-activity) pour détecter un taux élevé d’activités de téléchargements ou de suppressions de fichiers.
+- Utilisez [Microsoft Defender for Cloud Apps pour](/cloud-app-security/what-is-cloud-app-security) bloquer les téléchargements d’informations sensibles telles que des fichiers. Vous pouvez également utiliser des [stratégies de détection d’anomalies Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy#ransomware-activity) pour détecter un taux élevé d’activités de téléchargements ou de suppressions de fichiers.
 
 ## <a name="impact-on-users-and-change-management"></a>Impact sur les utilisateurs et la gestion des modifications
 
@@ -142,22 +142,22 @@ Microsoft Azure :
 - [Se protéger contre les rançongiciels avec la Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Détection de fusion pour rançongiciel dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Détection de fusion pour les ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security :
+Microsoft Defender for Cloud Apps :
 
--  [Créer des stratégies de détection des anomalies dans Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Créer des stratégies de détection des anomalies dans Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Billets de blog de l’équipe de sécurité Microsoft :
 
 - [3 étapes pour empêcher et récupérer à partir d’un rançongiciel (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [Guide de lutte contre les ransomwares exploités par l'homme : partie 1 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+- [Guide de la lutte contre les ransomware gérés par des personnes : Partie 1 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Étapes clés sur la façon dont l'équipe de détection et de réponse (DART) de Microsoft mène des enquêtes sur les incidents de ransomware.
+  Étapes clés sur la façon dont l’équipe de détection et de réponse de Microsoft (CAS) effectue des enquêtes sur les incidents de ransomware.
 
-- [Un guide pour lutter contre les ransomwares exploités par l'homme : Partie 2 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Guide de la lutte contre les ransomware gérés par des personnes : Partie 2 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
-  Recommandations et bonnes pratiques.
+  Recommandations meilleures pratiques
 
 - [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
@@ -169,4 +169,3 @@ Billets de blog de l’équipe de sécurité Microsoft :
 
 - [Réponse au rançongiciel : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro répond aux attaques par rançongiciel avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

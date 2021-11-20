@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1fcd154c3cd769cc7c721cf49f2d16b90a213e25
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552835"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110834"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -105,7 +105,7 @@ L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention e
 
    - **Activer la protection par le cloud** : Oui
    - **Niveau de protection par le cloud** : Élevé
-   - **Délai d’attente étendu du cloud Defender en secondes** : 50
+   - **Antivirus Microsoft Defender délai d’Antivirus Microsoft Defender** en secondes : 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Paramètres Bloquer à la première consultation dans Endpoint Manager.":::
 
@@ -173,7 +173,7 @@ Vous pouvez peut-être décider de désactiver Bloquer à la première consultat
 
    - Définissez **Activer la protection assurée par le cloud** sur **Non** ou sur **Non configuré**.
    - Définissez **Niveau de protection assuré par le cloud** sur **Non configuré**.
-   - Désactivez la case à cocher pour **Délai d’attente étendu du cloud Defender en secondes**.
+   - Désactivez la case à cocher pour **Antivirus Microsoft Defender délai d’expiration étendu en secondes**.
 
 6. Évaluez et enregistrez vos paramètres.
 
