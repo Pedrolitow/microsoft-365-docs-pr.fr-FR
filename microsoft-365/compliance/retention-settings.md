@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: d80ae2a6f3fac26acfc5d9f8a324e578677cb962
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063524"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110546"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -248,7 +248,7 @@ Lorsque vous configurez une stratégie d’application automatique qui utilise d
 
 Lorsque vous choisissez l’emplacement des **sites Microsoft Office SharePoint Online**, la stratégie de rétention peut conserver et supprimer les documents des sites de communication Microsoft Office SharePoint Online, des sites d’équipe qui ne sont pas connectés par des groupes Microsoft 365 ainsi que des sites classiques. À moins que vous n'utilisiez [des étendues de stratégie adaptative](#exceptions-for-adaptive-policy-scopes), les sites d'équipe connectés par des groupes Microsoft 365 ne sont pas pris en charge avec cette option et, à la place, utilisez l'emplacement des groupes **Microsoft 365** qui s'applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
 
-Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention de SharePoint et OneDrive, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
 Lorsque vous spécifiez vos emplacements pour les sites Microsoft Office SharePoint Online ou les comptes OneDrive, vous n’avez pas besoin d’autorisations pour accéder aux sites. Pour les étendues statiques, aucune validation n’est effectuée au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, les sites Microsoft Office SharePoint Online que vous spécifiez sont vérifiés qu’ils existent sur la dernière page de la dernière page de la configuration. Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que la stratégie de rétention ne peut être créée tant que la vérification de validation n’aura pas réussie. Si ce message apparaît, revenez au processus de configuration pour modifier l’URL ou supprimer le site de la stratégie de rétention.
 
@@ -256,9 +256,9 @@ Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de
 
 > [!NOTE]
 > Lorsque vous spécifiez des comptes OneDrive individuels, sachez qu'à moins que les comptes OneDrive ne soient [pré-approvisionnés](/onedrive/pre-provision-accounts), l'URL n'est pas créée tant qu'un utilisateur n'accède pas à son OneDrive pour la première fois.
-> 
-> De plus, l'URL OneDrive [change automatiquement](/onedrive/upn-changes) en cas de modification de l'UPN de l'utilisateur. Par exemple, un événement de changement de nom tel qu’un mariage. Ou un changement de nom de domaine pour prendre en charge le changement de nom ou la réorganisation de l’entreprise d’une organisation. Si l’UPN change, vous devez mettre à jour les URL OneDrive que vous spécifiez pour les paramètres de rétention.
-> 
+>
+> De plus, l'URL OneDrive [change automatiquement](/onedrive/upn-changes) en cas de modification de l'UPN de l'utilisateur. Par exemple, un événement de changement de nom tel qu’un mariage ou un changement de nom de domaine pour prendre en charge le changement de nom d’une organisation ou la restructuration de l’entreprise. Si l’UPN change, vous devez mettre à jour les URL OneDrive que vous spécifiez pour les paramètres de rétention.
+>
 > En raison des défis liés à la spécification fiable des URL que les utilisateurs individuels doivent inclure ou exclure pour les étendues statiques, [étendues adaptatives](retention.md#adaptive-or-static-policy-scopes-for-retention) avec le type d’étendue **utilisateur** qui convient mieux à cet effet.
 
 #### <a name="exceptions-for-adaptive-policy-scopes"></a>Exceptions pour les champs d'application de stratégie adaptative

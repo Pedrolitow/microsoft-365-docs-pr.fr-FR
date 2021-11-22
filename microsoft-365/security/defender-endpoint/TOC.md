@@ -9,7 +9,7 @@
 ### [Stockage de données et confidentialité](data-storage-privacy.md)
 ### [Vue d’ensemble du Centre de sécurité Microsoft Defender](use.md)
 ### [Vue d’ensemble du portail](portal-overview.md)
-### [Defender for Endpoint Plan 1 (aperçu)]()
+### [Defender pour Endpoint Plan 1]()
 #### [Vue d’ensemble](defender-endpoint-plan-1.md)
 #### [Installation et configuration](mde-p1-setup-configuration.md)
 #### [Prise en main](mde-plan1-getting-started.md)

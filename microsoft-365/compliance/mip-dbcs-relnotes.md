@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la prise en charge des jeux de caractères à double octets.
-ms.openlocfilehash: 3731e32594461df29a9cc5ec3f21bf3eb17ee79c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e87e88b63bf44c7ea4154fa24c05c0e8e252a446
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190676"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111494"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Prise en charge des notes de publication des jeux de caractères à double octets
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190676"
 - Korean
 - Japanese
 
-Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera reflétée dans la protection contre la perte de données (Exchange Online, Share Point Online, OneDrive Entreprise, et Teams), la conformité des communications, la détection automatique dans les applications Office et Microsoft Cloud App Security.
+Cette prise en charge est disponible pour les types d’informations sensibles et les dictionnaires de mots-clés et sera reflétée dans la protection contre la perte de données (Exchange Online, Share Point Online, OneDrive Entreprise, et Teams), la conformité des communications, la détection automatique dans les applications Office et Microsoft Defender for Cloud Apps.
 
 ## <a name="known-issues"></a>Problèmes connus
 
@@ -47,5 +47,3 @@ Cette prise en charge est disponible pour les types d’informations sensibles e
   - « La pièce jointe contient l’un de ces mots »
 
 Nous vous recommandons plutôt de créer un type d’informations sensibles personnalisé, avec un dictionnaire de mots-clés, qui détectera les modèles dans les messages et les pièces jointes, et d’utiliser ce type d’informations sensibles personnalisé comme condition de stratégie de conformité des communications.
-
-

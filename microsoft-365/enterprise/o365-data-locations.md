@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552619"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128855"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -139,6 +139,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Corée du Sud | Busan, Séoul |
 | Norvège | Oslo, Stavanger |
 | Afrique du Sud | Le Cap, Johannesburg |
+| Suède | Gävle, Sandviken, Staffanstorp |
 | Suisse | Genève, Zurich |
 | Émirats arabes unis | Dubai, Abu Dhabi |
 | Royaume-Uni | Durham, Londres, Cardiff |
@@ -151,8 +152,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -175,8 +176,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -199,8 +200,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -223,8 +224,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -247,8 +248,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -271,8 +272,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -295,8 +296,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -319,7 +320,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -343,7 +344,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -367,7 +368,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -391,7 +392,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -415,8 +416,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -439,7 +440,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -463,7 +464,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Australie |
+| Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
 | Skype Entreprise | Australie |
@@ -487,7 +488,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -500,7 +501,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -511,8 +512,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -535,7 +536,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -559,8 +560,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -583,8 +584,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -607,7 +608,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -631,8 +632,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -655,7 +656,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -668,7 +669,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -679,7 +680,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -703,8 +704,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -727,7 +728,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -751,8 +752,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -775,7 +776,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -799,7 +800,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -823,8 +824,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -847,8 +848,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -871,7 +872,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -919,8 +920,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -943,7 +944,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -967,8 +968,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -991,7 +992,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1004,7 +1005,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1015,8 +1016,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1039,8 +1040,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1063,8 +1064,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1087,8 +1088,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1111,7 +1112,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Canada |
+| Exchange Online | Canada |
 | OneDrive Entreprise | Canada |
 | SharePoint Online | Canada |
 | Skype Entreprise | Canada |
@@ -1135,8 +1136,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1159,7 +1160,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1183,8 +1184,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1207,8 +1208,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1231,7 +1232,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -1255,8 +1256,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1279,8 +1280,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1303,8 +1304,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1327,7 +1328,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1351,8 +1352,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1375,8 +1376,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1399,8 +1400,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1423,8 +1424,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1447,7 +1448,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1471,8 +1472,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1495,7 +1496,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1508,7 +1509,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1519,7 +1520,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -1543,7 +1544,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1556,7 +1557,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1567,7 +1568,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1580,7 +1581,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1591,7 +1592,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1604,7 +1605,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1615,8 +1616,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1639,7 +1640,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1663,7 +1664,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1687,7 +1688,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -1711,8 +1712,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1735,7 +1736,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -1759,8 +1760,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1783,8 +1784,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1807,7 +1808,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1820,7 +1821,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1831,8 +1832,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1855,7 +1856,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -1879,8 +1880,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -1903,8 +1904,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -1927,7 +1928,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Australie |
+| Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
 | Skype Entreprise | Australie |
@@ -1951,7 +1952,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -1964,7 +1965,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -1975,7 +1976,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | France |
+| Exchange Online | France |
 | OneDrive Entreprise | France |
 | SharePoint Online | France |
 | Skype Entreprise | Union européenne |
@@ -1999,7 +2000,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -2023,8 +2024,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2047,7 +2048,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2071,8 +2072,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2095,8 +2096,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2119,8 +2120,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2143,7 +2144,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Allemagne |
+| Exchange Online | Allemagne |
 | OneDrive Entreprise | Allemagne |
 | SharePoint Online | Allemagne |
 | Skype Entreprise | Union européenne |
@@ -2167,8 +2168,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2191,8 +2192,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2215,7 +2216,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -2228,7 +2229,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -2239,7 +2240,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2263,7 +2264,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2287,7 +2288,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2311,8 +2312,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2335,7 +2336,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2359,8 +2360,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2383,8 +2384,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2407,8 +2408,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2431,7 +2432,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -2455,7 +2456,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2479,7 +2480,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2503,8 +2504,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2527,8 +2528,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2551,7 +2552,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2575,8 +2576,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2599,7 +2600,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -2612,7 +2613,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -2623,8 +2624,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2647,7 +2648,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Inde |
+| Exchange Online | Inde |
 | OneDrive Entreprise | Inde |
 | SharePoint Online | Inde |
 | Skype Entreprise | Inde |
@@ -2671,8 +2672,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2695,8 +2696,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2719,7 +2720,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -2732,7 +2733,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -2743,8 +2744,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2767,8 +2768,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2791,7 +2792,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -2804,7 +2805,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -2815,7 +2816,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -2839,7 +2840,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Japon |
+| Exchange Online | Japon |
 | OneDrive Entreprise | Japon |
 | SharePoint Online | Japon |
 | Skype Entreprise | Japon |
@@ -2863,8 +2864,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2887,8 +2888,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2911,8 +2912,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2935,8 +2936,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -2959,8 +2960,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -2983,7 +2984,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Corée du Sud |
+| Exchange Online | Corée du Sud |
 | OneDrive Entreprise | Corée du Sud |
 | SharePoint Online | Corée du Sud |
 | Skype Entreprise | Corée du Sud |
@@ -3007,8 +3008,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3031,8 +3032,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3055,8 +3056,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3079,8 +3080,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3103,7 +3104,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -3116,7 +3117,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -3127,8 +3128,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3151,8 +3152,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3175,8 +3176,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3199,8 +3200,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3223,7 +3224,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Suisse |
+| Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
 | SharePoint Online | Suisse |
 | Skype Entreprise | Zone géographique 1 : EMEA |
@@ -3247,7 +3248,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -3260,7 +3261,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -3271,7 +3272,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -3284,7 +3285,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -3295,8 +3296,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3319,8 +3320,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3343,8 +3344,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3367,8 +3368,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3391,8 +3392,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3415,7 +3416,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -3428,7 +3429,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -3439,8 +3440,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3463,7 +3464,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -3487,8 +3488,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3511,8 +3512,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3535,8 +3536,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3559,7 +3560,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -3583,8 +3584,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3607,8 +3608,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3631,8 +3632,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3655,8 +3656,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3679,7 +3680,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -3703,8 +3704,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3727,8 +3728,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3751,8 +3752,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3775,8 +3776,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3799,8 +3800,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3823,8 +3824,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3847,7 +3848,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -3860,7 +3861,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -3871,7 +3872,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -3895,8 +3896,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3919,7 +3920,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Australie |
+| Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
 | Skype Entreprise | Australie |
@@ -3943,7 +3944,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -3967,8 +3968,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -3991,8 +3992,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4015,8 +4016,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4039,8 +4040,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4063,8 +4064,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4087,7 +4088,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Norvège |
+| Exchange Online | Norvège |
 | OneDrive Entreprise | Norvège |
 | SharePoint Online | Norvège |
 | Skype Entreprise | Zone géographique 1 : EMEA |
@@ -4111,8 +4112,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4135,8 +4136,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4159,8 +4160,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4183,8 +4184,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4207,7 +4208,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4231,8 +4232,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4255,7 +4256,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -4279,7 +4280,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -4303,8 +4304,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4327,8 +4328,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4351,7 +4352,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -4364,7 +4365,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -4375,7 +4376,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -4388,7 +4389,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -4399,7 +4400,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4423,8 +4424,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4447,8 +4448,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4471,8 +4472,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4495,7 +4496,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -4508,7 +4509,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -4519,8 +4520,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4543,8 +4544,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4567,8 +4568,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4591,7 +4592,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4615,7 +4616,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4639,7 +4640,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4663,7 +4664,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4687,7 +4688,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4711,7 +4712,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4735,8 +4736,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4759,8 +4760,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4783,8 +4784,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4807,8 +4808,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4831,8 +4832,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4855,8 +4856,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4879,8 +4880,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4903,8 +4904,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -4927,8 +4928,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -4951,7 +4952,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -4975,7 +4976,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -4988,7 +4989,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -4999,7 +5000,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -5012,7 +5013,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -5023,8 +5024,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5047,8 +5048,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5071,7 +5072,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Afrique du Sud |
+| Exchange Online | Afrique du Sud |
 | OneDrive Entreprise | Afrique du Sud |
 | SharePoint Online | Afrique du Sud |
 | Skype Entreprise | Zone géographique 1 : EMEA |
@@ -5084,7 +5085,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Afrique du Sud |
-| Flux | Zone géographique 1 : EMEA |
+| Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
 | Workplace Analytics | États-Unis |
@@ -5095,7 +5096,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5119,7 +5120,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
+| Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
 | Skype Entreprise | Union européenne |
@@ -5132,7 +5133,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Sway | États-Unis |
 | Yammer | Union européenne  |
 | Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -5143,8 +5144,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5167,7 +5168,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5191,8 +5192,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5215,8 +5216,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5239,20 +5240,20 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Union européenne |
-| OneDrive Entreprise | Union européenne |
-| SharePoint Online | Union européenne |
+| Exchange Online | Suède |
+| OneDrive Entreprise | Suède |
+| SharePoint Online | Suède |
 | Skype Entreprise | Union européenne |
-| Microsoft Teams | Union européenne |
-| Office Online Mobile &amp; | Union européenne |
-| Exchange Online Protection | Union européenne |
+| Microsoft Teams | Suède |
+| Office Online Mobile &amp; | Suède |
+| Exchange Online Protection | Suède |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
+| MyAnalytics | Suède |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
-| Services OneNote | Union européenne |
-| Flux | Union européenne |
+| Services OneNote | Suède |
+| Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
 | Analyse du temps de travail | États-Unis |
@@ -5263,7 +5264,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Suisse |
+| Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
 | SharePoint Online | Suisse |
 | Skype Entreprise | Zone géographique 1 : EMEA |
@@ -5287,8 +5288,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5311,8 +5312,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5335,8 +5336,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5359,8 +5360,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5383,8 +5384,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5407,8 +5408,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5431,8 +5432,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5455,8 +5456,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5479,7 +5480,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5503,8 +5504,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5527,8 +5528,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5551,8 +5552,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5575,7 +5576,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5599,8 +5600,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5623,7 +5624,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5647,8 +5648,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5671,8 +5672,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5695,7 +5696,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Émirats arabes unis |
+| Exchange Online | Émirats arabes unis |
 | OneDrive Entreprise | Émirats arabes unis |
 | SharePoint Online | Émirats arabes unis |
 | Skype Entreprise | Zone géographique 1 : EMEA |
@@ -5719,7 +5720,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Royaume-Uni |
+| Exchange Online | Royaume-Uni |
 | OneDrive Entreprise | Royaume-Uni |
 | SharePoint Online | Royaume-Uni |
 | Skype Entreprise | Royaume-Uni |
@@ -5743,7 +5744,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5767,7 +5768,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 3 : Amériques |
+| Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
 | Skype Entreprise | États-Unis |
@@ -5791,8 +5792,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5815,8 +5816,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5839,8 +5840,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5863,7 +5864,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | États-Unis |
+| Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
 | Skype Entreprise | États-Unis |
@@ -5887,8 +5888,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5911,8 +5912,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -5935,8 +5936,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5959,8 +5960,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -5983,8 +5984,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
@@ -6007,8 +6008,8 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| Exchange Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |

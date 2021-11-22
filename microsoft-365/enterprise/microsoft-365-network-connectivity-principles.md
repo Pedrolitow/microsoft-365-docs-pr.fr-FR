@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Cet article fournit les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212880"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111674"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principes de connectivité réseau Microsoft 365
 
@@ -206,7 +206,7 @@ Microsoft propose une large gamme de fonctionnalités de sécurité Microsoft 36
   
 - **Utiliser l’authentification multifacteur (MFA)** ajoute une couche de protection supplémentaire à une stratégie de mot de passe fort en obligeant les utilisateurs à accuser réception d’un appel téléphonique, d’un SMS ou d’une notification d’application sur leur smartphone après avoir entré correctement leur mot de passe.
 
-- **Utilisez les stratégies Microsoft Defender for Cloud Apps** Configure pour suivre les activités irrégulières et agir en conséquence. Configurez des alertes avec Microsoft Cloud App Security afin que les administrateurs puissent examiner les activités utilisateur inhabituelles ou risquées, telles que le téléchargement de grandes quantités de données, plusieurs tentatives de connexion infructueuses ou les connexions à partir d'adresses IP inconnues ou dangereuses.
+- **Utiliser Microsoft Defender for Cloud Apps** Configurez des stratégies pour suivre une activité anormale et agir dessus. Configurer des alertes avec Microsoft Defender for Cloud Apps afin que les administrateurs peuvent examiner les activités inhabituelles ou risquées des utilisateurs, telles que le téléchargement de grandes quantités de données, plusieurs tentatives de connexion ayant échoué ou les connexions à partir d’adresses IP inconnues ou dangereuses.
 
 - **Configurer la prévention de la perte de données (DLP)** DLP vous permet d’identifier les données sensibles et de créer des stratégies qui permettent d’empêcher vos utilisateurs de partager accidentellement ou intentionnellement les données. DLP fonctionne dans Microsoft 365, y compris dans Exchange Online, SharePoint Online et OneDrive afin que vos utilisateurs puissent rester conformes sans interrompre leur flux de travail.
 

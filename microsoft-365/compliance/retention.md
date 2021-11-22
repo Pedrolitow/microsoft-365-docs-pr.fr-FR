@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064050"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110522"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -467,7 +467,7 @@ Informations supplémentaires pour des emplacements spécifiques :
         
         Une stratégie de rétention implicite nécessite une étendue de stratégie statique avec la configuration **Tous les destinataires** (pour le courrier Exchange) ou **Tous les groupes** (pour les groupes Microsoft 365).
     
-    Pour plus d’informations sur les boîtes aux lettres inactives ayant des stratégies de rétention appliquées, voir [Boîtes aux lettres inactives et stratégies de rétention Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
+    Pour plus d’informations sur les boîtes aux lettres inactives pour qui des stratégies de rétention sont appliquées, voir [Boîtes aux lettres inactives et rétention de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Audit de la configuration et des actions de rétention
 
