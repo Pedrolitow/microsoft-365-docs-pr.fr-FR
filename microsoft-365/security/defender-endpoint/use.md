@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba63747b93bab97a987f2ab8b400bea9583d332d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c6522a2c6ca612636a91e8a730c903912e49c7
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157745"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144919"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Vue d’ensemble du Centre de sécurité Microsoft Defender
 
@@ -37,14 +37,12 @@ ms.locfileid: "60157745"
 
 Centre de sécurité Microsoft Defender est le portail sur lequel vous pouvez accéder aux fonctionnalités de Microsoft Defender pour les points de terminaison.
 
-Utilisez le tableau **de bord Opérations de** sécurité pour obtenir des informations sur les différentes alertes sur les appareils et les utilisateurs de votre réseau.
-
 Utilisez le **tableau de bord & gestion** des menaces et des vulnérabilités pour accroître votre visibilité sur la posture de sécurité globale de votre organisation. Vous verrez des appareils qui nécessitent une attention particulière et des recommandations qui peuvent vous aider à réduire la surface d’attaque dans votre organisation.
 
 Utilisez le tableau **de bord d’analyse des** menaces pour évaluer et contrôler en permanence l’exposition des risques à Spectre et À contre-feu.
 
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Guide interactif De Microsoft Defender pour point de terminaison
-Dans ce guide interactif, vous allez découvrir comment examiner les menaces qui pèsent sur votre organisation avec Microsoft Defender for Endpoint. Vous verrez comment Microsoft Defender pour le point de terminaison peut vous aider à identifier les activités suspectes, à examiner les risques pour votre organisation et à résoudre les menaces.
+Dans ce guide interactif, vous allez découvrir comment examiner les menaces qui pèsent sur votre organisation avec Microsoft Defender for Endpoint. Vous verrez comment Microsoft Defender pour point de terminaison peut vous aider à identifier les activités suspectes, à examiner les risques pour votre organisation et à corriger les menaces.
 
 [Consulter le guide interactif](https://aka.ms/MSDE-IG)
 
@@ -53,6 +51,5 @@ Dans ce guide interactif, vous allez découvrir comment examiner les menaces qui
 Rubrique | Description
 :---|:---
 [Vue d’ensemble du portail](portal-overview.md) | Comprendre la disposition du portail et les descriptions de zone.
-[Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md) | Le tableau de bord Des opérations microsoft Defender pour la sécurité  **des** points de terminaison fournit un instantané de votre réseau. Vous pouvez afficher des agrégats d’alertes, l’état global du service des appareils sur votre réseau, examiner des appareils, des fichiers et des URL, et afficher des instantanés des menaces vues sur les appareils.
 [Afficher le tableau de bord gestion & des menaces et des vulnérabilités](tvm-dashboard-insights.md) | Le  tableau de bord gestion des vulnérabilités de & menaces vous permet d’afficher l’exposition et le Degré de sécurisation Microsoft pour les appareils côte à côte avec les recommandations de sécurité les plus importantes, la vulnérabilité logicielle, les activités de correction et les appareils exposés.
 [Afficher le tableau de bord Analyse des menaces et prendre les mesures de prévention recommandées](threat-analytics.md) | Le tableau **de bord Analyse des menaces** vous permet d’évaluer et de contrôler en permanence l’exposition des risques aux menaces. Utilisez les graphiques pour identifier rapidement les appareils pour la présence ou l’absence d’atténuations.

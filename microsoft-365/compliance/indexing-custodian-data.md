@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans une recherche.
-ms.openlocfilehash: 205594031bcfb65b882d10217ccdcd10e4ed014d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans la recherche.
+ms.openlocfilehash: 9209732925c87277755c89381791154bf9dbe953
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201048"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148901"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
 Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou avec des erreurs d’indexation est réindexé pour le rendre entièrement utilisable dans une recherche.  Ce processus de réindexation est appelé *indexation avancée.* Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
 
-Pour en savoir plus sur le traitement de la prise en charge et des éléments partiellement indexés, voir :
+Pour en savoir plus sur la prise en charge du traitement et les éléments partiellement indexés, voir :
 
 - [Types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
@@ -41,7 +41,7 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage Des résultats  d’indexation avancée sous l’onglet Traitement d’un cas, le graphique répertorie le nombre d’éléments ajoutés à *l’index hybride.*  L’index hybride est l’emplacement où Advanced eDiscovery stocke le contenu retraite.
 
-Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d'informations, voir :
+Cette vue inclut également le nombre d’éléments qui nécessitent une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Correction d’erreur lors du traitement des données](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
@@ -49,7 +49,7 @@ Cette vue inclut également le nombre d’éléments qui nécessitent une correc
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>Mise à jour de l’index avancé pour les dépositaires
 
-Lorsqu’un dépositaire est ajouté à un Advanced eDiscovery, tous les éléments partiellement indexés sont retraités. Toutefois, au fil du temps, des éléments partiellement indexés peuvent être ajoutés à la boîte aux lettres ou au compte OneDrive utilisateur.  Si nécessaire, vous pouvez mettre à jour l’index pour un dépositaire spécifique. Pour plus d’informations, [voir Gérer les dépositaires dans Advanced eDiscovery cas.](manage-new-custodians.md#re-index-custodian-data) Vous pouvez également mettre à jour l’index pour tous les dépositaires dans un cas en cliquant sur **l’index** de mise à jour sous **l’onglet Traitement.**
+Lorsqu’un dépositaire est ajouté à un Advanced eDiscovery, tous les éléments partiellement indexés sont retraités. Toutefois, au fil du temps, des éléments partiellement indexés peuvent être ajoutés à la boîte aux lettres ou au compte OneDrive utilisateur.  Si nécessaire, vous pouvez mettre à jour l’index pour un dépositaire spécifique. Pour plus d’informations, [voir Gérer les dépositaires dans Advanced eDiscovery cas.](manage-new-custodians.md#reindex-custodian-data) Vous pouvez également mettre à jour l’index pour tous les dépositaires dans un cas en cliquant sur **l’index** de mise à jour sous **l’onglet Traitement.**
 
 > [!NOTE]
 > La mise à jour des index des dépositaires est un processus de longue durée. Il est recommandé de ne pas mettre à jour les index plus d’une fois par jour dans un cas.

@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bfcf100d4935895b66e781c7be0fa2e3c9cb829a
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c7a61e8806f6a937de241a2d546d34eadfa04df6
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110690"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148754"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "61110690"
 
 Vous pouvez utiliser PowerShell pour effectuer diverses fonctions dans Windows Defender. À l’exemple de l’invite de commandes ou de la ligne de commande, PowerShell est un shell de ligne de commande basé sur des tâches et un langage de script spécialement conçu pour l’administration du système. Pour en savoir plus, consultez le hub [PowerShell sur MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
 
-Pour obtenir la liste des cmdlets, leurs fonctions et les paramètres disponibles, consultez la rubrique [des cmdlets Defender pour le cloud.](/powershell/module/defender)
+Pour obtenir la liste des cmdlets, leurs fonctions et les paramètres disponibles, consultez la rubrique [cmdlets de l’Antivirus Defender.](/powershell/module/defender)
 
 Les cmdlets PowerShell sont particulièrement utiles dans les environnements Windows Server qui ne reposent pas sur une interface utilisateur graphique (GUI) pour configurer des logiciels.
 
@@ -65,7 +65,7 @@ Get-Help <cmdlet> -Online
 
 Omettez le `-online` paramètre pour obtenir de l’aide mise en cache localement.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

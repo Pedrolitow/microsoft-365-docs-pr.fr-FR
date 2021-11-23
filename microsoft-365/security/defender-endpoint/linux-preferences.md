@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9620fd5209bb72617cf41b6b9aff48f39d607b61
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585951"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144988"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "60585951"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -112,7 +112,7 @@ Détermine si la fonctionnalité de surveillance et de blocage du comportement e
 
 |Description|Valeur|
 |---|---|
-|**Clé**|name|
+|**Clé**|behaviorMonitoring|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|désactivé <p> activé (par défaut)|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.45.00 ou supérieure.|
@@ -161,7 +161,7 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 |---|---|
 |**Clé**|maximumOnDemandScanThreads|
 |**Type de données**|Entier|
-|**Valeurs possibles**|2 (valeur par défaut). Les valeurs autorisées sont desgers entre 1 et 64.|
+|**Valeurs possibles**|2 (par défaut). Les valeurs autorisées sont desgers entre 1 et 64.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.45.00 ou supérieure.|
 |||
   
@@ -182,7 +182,7 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une 
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
-#### <a name="scan-exclusions"></a>Analyser les exclusions
+#### <a name="scan-exclusions"></a>Exclusions d’analyse
 
 Entités exclues de l’analyse. Les exclusions peuvent être spécifiées par des chemins d’accès complets, des extensions ou des noms de fichiers.
 (Les exclusions sont spécifiées en tant que tableau d’éléments, l’administrateur peut spécifier autant d’éléments que nécessaire, dans n’importe quel ordre.)
@@ -271,7 +271,7 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 
 |Description|Valeur|
 |---|---|
-|**Clé**|name|
+|**Clé**|nom|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Comments**|Applicable uniquement *si $type* est *excluFileName*|
@@ -291,7 +291,7 @@ Liste des menaces (identifiées par leur nom) qui ne sont pas bloquées par le p
 |**Type de données**|Tableau de chaînes|
 |
 
-#### <a name="disallowed-threat-actions"></a>Actions contre les menaces nonallées
+#### <a name="disallowed-threat-actions"></a>Actions de menace non autorisées
 
 Limite les actions que l’utilisateur local d’un appareil peut prendre lorsque des menaces sont détectées. Les actions incluses dans cette liste ne sont pas affichées dans l’interface utilisateur.
 
@@ -307,7 +307,7 @@ Limite les actions que l’utilisateur local d’un appareil peut prendre lorsqu
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
-#### <a name="threat-type-settings"></a>Paramètres du type de menace
+#### <a name="threat-type-settings"></a>Paramètres des types de menaces
 
 La *préférence threatTypeSettings dans* le moteur antivirus est utilisée pour contrôler la façon dont certains types de menaces sont gérés par le produit.
 
@@ -368,7 +368,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -434,7 +434,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -491,7 +491,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA)** sont bloquées
+  - **Les applications potentiellement indésirables (PUA) sont** bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud

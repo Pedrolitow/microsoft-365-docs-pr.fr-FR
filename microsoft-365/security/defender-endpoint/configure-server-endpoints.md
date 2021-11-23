@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3109b4665142dd5825a088d66c63673459aec9f9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: e1dd5958893669012b78e57c57bd6b32c0e94d0c
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129551"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145055"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -132,6 +132,7 @@ Pour plus d’informations, [voir Intégration à Microsoft Defender pour le clo
 **Conditions préalables pour Windows Server 2012 R2**
 
 Si vous avez entièrement mis à jour vos ordinateurs avec le [dernier](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package de déploiement mensuel, aucune condition préalable supplémentaire **n’est** requise.
+
 
 Le package d’installation vérifie si les composants suivants ont déjà été installés via une mise à jour :
 
@@ -304,7 +305,7 @@ Pour les autres versions Windows serveur, deux options s’offrent à vous pour 
 >[!NOTE]
 >*Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)

@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f746f07f20c4a8eddba51bb37d86acf2aafdaa6b
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 0728c633b87b18d1bc4cec04d1ea6aeacab764d5
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899723"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144951"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +43,7 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre.
 
-Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
+Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu) pré-configurés pour avoir les dernières versions du système d’exploitation et les composants de sécurité en place, ainsi que Office 2019 Standard installé.
 
 Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 

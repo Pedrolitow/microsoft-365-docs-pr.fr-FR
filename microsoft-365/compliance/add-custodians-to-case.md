@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b0a15610c84c9e1142cd1afa6ebf121f387ce807
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753549"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148843"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un Advanced eDiscovery de données
 
-Utilisez l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail autour de la gestion des dépositaires et de l’identification des sources de données pertinentes et privatives associées à un cas. Lorsque vous ajoutez un dépositaire, le système peut automatiquement identifier et placer une conservation sur sa boîte aux lettres Exchange et son OneDrive Entreprise compte. Au cours du processus de découverte de votre enquête, vous pouvez également identifier d’autres sources de données (telles que des boîtes aux lettres, des sites ou des Teams) qu’un dépositaire a accédées ou à qui il a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des dépositaires pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des dépositaires à un cas et associé une autre source de données à celui-ci, vous pouvez rapidement conserver les données et rechercher les données de conservation.
+Utilisez l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail autour de la gestion des dépositaires et de l’identification des sources de données pertinentes et privatives associées à un cas. Lorsque vous ajoutez un dépositaire, le système peut automatiquement identifier et placer une conservation sur sa boîte aux lettres Exchange et son OneDrive Entreprise compte. Au cours du processus de découverte de votre enquête, vous pouvez également identifier d’autres sources de données (telles que des boîtes aux lettres, des sites ou des Teams) à qui un dépositaire a accédé ou a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des dépositaires pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des dépositaires à un cas et associé une autre source de données à celui-ci, vous pouvez rapidement conserver les données et rechercher les données de conservation.
 
 Vous pouvez ajouter et gérer des dépositaires dans Advanced eDiscovery cas en quatre étapes :
 
@@ -38,8 +38,6 @@ Vous pouvez ajouter et gérer des dépositaires dans Advanced eDiscovery cas en 
 
 4. Examinez les dépositaires et terminez le processus.
 
-   [![Onglet Sources dans Advanced eDiscovery cas. ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
-
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Assurez-vous que vous avez les autorisations nécessaires
 
 Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de rôles Gestionnaire eDiscovery. Vous disposez ainsi des autorisations nécessaires pour ajouter des dépositaires à un cas et placer une conservation sur les sources de données dépositaires. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
@@ -48,7 +46,7 @@ Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de r
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, sélectionnez Afficher toutes les Advanced eDiscovery  >  **eDiscovery,** puis sélectionnez l’onglet  >   <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank"> **Cas.**</a>
+2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, sélectionnez **eDiscovery**  >  **Advanced eDiscovery** et sélectionnez l’onglet [**Cas.**](https://go.microsoft.com/fwlink/p/?linkid=2173764)
 
 3. Sélectionnez le cas à ajouter aux dépositaires.
 
@@ -74,7 +72,7 @@ Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à 
 
 1. Développez un dépositaire pour afficher les services suivants afin d’associer des emplacements de données au dépositaire. Cliquez **sur Modifier** en côté d’un service pour ajouter un emplacement de données.
 
-   - **Exchange**: utilisez cette approche pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au moins trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
+   - **Exchange**: utiliser pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au moins trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
    - **SharePoint**: utilisez cette valeur pour associer SharePoint sites au dépositaire. Sélectionnez un site dans la liste ou recherchez un site en tapant une URL dans la zone de recherche. Sélectionnez les sites à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
@@ -83,7 +81,7 @@ Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à 
    - **Yammer**: utilisez cette valeur pour affecter les groupes Yammer dont le dépositaire est actuellement membre. Sélectionnez les groupes à affecter au dépositaire, puis cliquez sur **Ajouter.** Après avoir ajouté une équipe, le système identifie et localise automatiquement le site SharePoint et la boîte aux lettres de groupe associés à ce groupe et les affecte au dépositaire.
 
    > [!NOTE]
-   > Vous pouvez utiliser les s pickeurs d’emplacement **Exchange** et **SharePoint** pour associer d’autres équipes ou groupes Yammer (dont un dépositaire n’est pas membre) à un dépositaire. Pour ce faire, vous devez ajouter la boîte aux lettres et le site associés à chaque équipe Yammer groupe.
+   > Vous pouvez utiliser les **s** Exchange et **SharePoint’emplacement** pour associer une boîte aux lettres ou un site de votre organisation à un dépositaire. , cela inclut l’association de la boîte aux lettres et du site pour une équipe Microsoft ou un groupe Yammer dont un dépositaire n’est pas membre. Pour ce faire, vous devez ajouter la boîte aux lettres et le site associés à chaque équipe Yammer groupe.
 
 2. Vous pouvez afficher le nombre total de boîtes aux lettres, sites, Teams et groupes Yammer affectés à chaque dépositaire en développez chaque dépositaire dans la table. Une fois que vous avez finalisé les emplacements de données affectés pour chaque dépositaire, ces associations sont conservées et utilisées pendant les étapes de collecte, de traitement et de révision du flux de travail Advanced eDiscovery données.
 

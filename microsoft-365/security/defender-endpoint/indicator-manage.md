@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
-ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
+ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60225019"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144990"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -32,7 +32,7 @@ ms.locfileid: "60225019"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
@@ -48,13 +48,16 @@ Téléchargez l’exemple CSV pour connaître les attributs de colonne pris en c
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
-2. Sélectionnez l’onglet du type d’entité dont vous souhaitez importer des indicateurs.
+2. Sélectionnez l’onglet du type d’entité pour qui vous souhaitez importer des indicateurs.
 
 3. Sélectionnez **Importer** \> **un fichier .**
 
 4. Sélectionnez **Importer**. Faites-le pour tous les fichiers que vous souhaitez importer.
 
 5. Sélectionnez **Terminé**.
+
+> [!NOTE]
+> Seuls 500 indicateurs peuvent être téléchargés pour chaque lot.
 
 Le tableau suivant indique les paramètres pris en charge.
 
@@ -67,11 +70,11 @@ title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
 description|Chaîne| Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
 rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 category|String|Catégorie de l’alerte. Exemples : exécution et accès aux informations d’identification. **Optional**
 mitretechniques|Chaîne|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
-GenerateAlert|String|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
+GenerateAlert|Chaîne|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
 
 
 

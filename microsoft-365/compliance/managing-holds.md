@@ -21,12 +21,12 @@ description: Découvrez comment placer des conservations sur les dépositaires e
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: cc149c65391642aebb124a96d0681ab1d99c04d1
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2c19b608f01f30df83e914bbe34d29aa85bd5af3
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111026"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148634"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les Advanced eDiscovery
 
@@ -82,7 +82,7 @@ Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
       > [!NOTE]
       > L’URL du compte d’OneDrive utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouveau nom d’upn. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente non privative et que son UPN est modifié, vous devez mettre à jour la mise en attente et pointer vers la nouvelle URL de OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
-   1. **Exchange publics** : déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas mettre en attente les dossiers publics.
+   1. **Exchange publics** : déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas mettre en attente les dossiers publics.
 
 9. Lorsque vous avez terminé d’ajouter des emplacements de contenu à la attente, cliquez sur **Suivant**.
   
@@ -98,6 +98,9 @@ Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
 
 12. Examinez vos paramètres, puis cliquez **sur Créer cette mise en attente.**
 
+> [!NOTE]
+> Si l’adresse SMTP de l’utilisateur change après la place de la boîte aux lettres de l’utilisateur en attente, la boîte aux lettres reste en attente. Pour utiliser la nouvelle adresse SMTP pour placer une attente, créez une nouvelle attente.
+
 ## <a name="view-hold-statistics"></a>Afficher les statistiques de la prise en main
 
 Après un certain temps, les informations sur la nouvelle attente s’affichent dans le volet d’informations sous l’onglet **Attentes** pour la nouvelle attente sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en attente, ainsi que les statistiques sur le contenu placé en attente, telles que le nombre total et la taille des éléments placés en attente et la dernière fois que les statistiques de mise en attente ont été calculées. Ces statistiques de la découverte électronique vous aident à identifier la quantité de contenu liée au cas eDiscovery.
@@ -106,9 +109,9 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 - Le nombre total d’éléments en attente indique le nombre d’éléments de toutes les sources de contenu placés en attente. Si vous avez créé une attente basée sur une requête, cette statistique indique le nombre d’éléments qui correspondent à la requête.
   
-- Le nombre d’éléments en attente inclut également les éléments nonndex trouvés dans les emplacements de contenu. Notez que si vous créez une mise en attente basée sur une requête, tous les éléments nonndex dans les emplacements de contenu sont placés en attente. Cela inclut les éléments nonndex qui ne correspondent pas aux critères de recherche d’une attente basée sur une requête et les éléments nonndex qui peuvent se trouver en dehors d’une condition de plage de dates. Cela est différent de ce qui se produit lorsque vous exécutez une recherche de contenu, dans laquelle les éléments nonndex qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, voir Éléments partiellement [indexés](partially-indexed-items-in-content-search.md)dans la recherche de contenu dans Office 365 .
+- Le nombre d’éléments en attente inclut également les éléments nonndex trouvés dans les emplacements de contenu. Si vous créez une mise en attente basée sur une requête, tous les éléments nonndex situés dans les emplacements de contenu sont placés en attente. Cela inclut les éléments nonndex qui ne correspondent pas aux critères de recherche d’une attente basée sur une requête et les éléments nonndex qui peuvent se trouver en dehors d’une condition de plage de dates. Cela est différent de ce qui se produit lorsque vous exécutez une recherche de contenu, dans laquelle les éléments nonndex qui ne correspondent pas à la requête de recherche ou qui sont exclus par une condition de plage de dates ne sont pas inclus dans les résultats de la recherche. Pour plus d’informations sur les éléments non indexés, voir Éléments partiellement [indexés](partially-indexed-items-in-content-search.md)dans la recherche de contenu dans Office 365 .
 
-- Vous pouvez obtenir les dernières statistiques de mise en attente en cliquant sur Mettre à jour les statistiques pour ré-exécuter une estimation de la recherche qui calcule le nombre actuel d’éléments en attente.
+- Vous pouvez obtenir les dernières statistiques de mise en attente en cliquant sur Mettre à jour les statistiques pour réexécuter une estimation de la recherche qui calcule le nombre actuel d’éléments en attente.
 
 - Si nécessaire, cliquez sur Actualiser dans la barre d’outils pour mettre à jour les statistiques de mise en attente dans le volet d’informations.
 
@@ -118,9 +121,9 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Placer en attente les groupes Microsoft Teams et Office 365 de groupe
 
-Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise en attente Advanced eDiscovery est très similaire.
+Microsoft Teams est construit sur Office 365 groupes. Par conséquent, leur mise en attente Advanced eDiscovery est similaire.
 
-- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams à un dépositaire ? Et qu’en est-il du placement d’une mise en attente non Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams sont créés sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous Microsoft 365 groupes et Microsoft Teams en attente.
+- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams à un dépositaire ? Et qu’en est-il du placement d’une mise en attente non Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams est construit sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est similaire. Gardez les points suivants à l’esprit lorsque vous Microsoft 365 groupes et Microsoft Teams en attente.
 
   - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou à une équipe.
   
