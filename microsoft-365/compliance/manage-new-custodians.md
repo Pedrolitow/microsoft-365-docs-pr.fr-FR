@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43181a7e2e40da6209025d06baaa404952afe66d
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 794677c8675f044bafb1c9a441e6c2bbee3e1c86
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148712"
+ms.locfileid: "61152417"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
@@ -58,7 +58,7 @@ Pour afficher les détails sur un dépositaire, cliquez sur le dépositaire dans
 
   - **Emplacements de garde**. Indique le nombre et le type de sources de données (boîtes aux lettres, sites et Teams) qui sont associées au dépositaire et qui font partie du cas.
 
-    - Chaque emplacement de données affiche son état de mise en attente. Valeurs possibles pour les statistiques de la attente : **En attente,** Non en **attente** et **En cours**.
+    - Chaque emplacement de données affiche son état de mise en attente. Valeurs possibles pour l’état de la attente : **En attente,** Non **en attente** et **En cours**.
 
     - Si vous ne voyez pas d’état de conservation pour une source de données,  vérifiez l’état de la conservation du dépositaire répertorié dans l’onglet Conservation pour le cas. La conservation du dépositaire identifie les sources de données spécifiques qui sont en conservation.
 

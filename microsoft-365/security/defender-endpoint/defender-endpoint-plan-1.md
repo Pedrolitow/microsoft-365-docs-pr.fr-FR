@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 11/23/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 51f6d6e7e1c8d326b9cd2070e2ca79a67cedbd5a
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: b21c72c44f19e4f9aede5a72c4860cbd6fac1c5c
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127823"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152393"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -28,7 +28,7 @@ ms.locfileid: "61127823"
 
 Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise conçue pour aider des organisations telles que la vôtre à prévenir, détecter, examiner et répondre aux menaces avancées. Nous sommes heureux d’annoncer que Defender pour Point de terminaison est désormais disponible dans deux plans : 
 
-- **Defender for Endpoint Plan 1**, actuellement en prévisualisation, et décrit dans cet article ; et 
+- **Defender for Endpoint Plan 1**, décrit dans cet article ; et 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, généralement disponible, et anciennement [appelé Defender for Endpoint](microsoft-defender-endpoint.md).
 
 Les zones vertes de l’image suivante illustrent ce qui est inclus dans Defender pour Endpoint Plan 1 :
@@ -116,7 +116,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ranso
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -165,7 +165,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
-### <a name="reporting"></a>Rapports
+### <a name="reporting"></a>Reporting
 
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 
