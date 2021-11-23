@@ -1,17 +1,17 @@
 ---
 title: fichier descriptif
-description: inclure le fichier
+description: inclure fichier
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61112084"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61149559"
 ---
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 Examinez les sections suivantes pour obtenir les conditions requises pour la gestion de la sécurité de Microsoft Defender pour le scénario de point de terminaison :
 
@@ -108,6 +108,9 @@ Pour prendre en charge microsoft Defender pour la gestion de la configuration de
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
 Microsoft Defender pour le point de terminaison prend en charge plusieurs options pour intégrer des appareils. Pour obtenir des instructions actuelles, voir [outils](/microsoft-365/security/defender-endpoint/security-config-management) et méthodes d’intégration pour Windows dans la documentation de Defender for Endpoint.
+
+> [!IMPORTANT]
+> Après l’intégration d’un appareil avec Microsoft Defender pour le point de terminaison, il doit être marqué avec **MDE-Management** avant de pouvoir s’inscrire auprès de la Gestion de la sécurité de Microsoft Defender pour endpoint. Pour plus d’informations sur le marquage des appareils dans MDE, voir [*Créer et gérer des balises d’appareil.*](/microsoft-365/security/defender-endpoint/machine-tag)
 
 Les appareils que vous gérez avec Intune ou Configuration Manager ne sont pas pris en charge pour ce scénario.
 
