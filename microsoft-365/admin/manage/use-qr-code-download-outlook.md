@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: Découvrez comment utiliser un code QR pour authentifier et télécharger Outlook Mobile.
-ms.openlocfilehash: cd3467816649c0111cfa8c34d9c1d90dc8cfa8e7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 736628fb97cf2a6f4f6c6d175384a30c41bf642d
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176138"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137038"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour se connecter aux applications mobiles Outlook
 
@@ -51,6 +51,9 @@ Cette fonctionnalité est activée par défaut. Pour désactiver cette fonctionn
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
+
+> [!NOTE]
+> Lorsque vous utilisez la commande Exchange PowerShell, la propagation des modifications peut prendre jusqu’à 8 heures.
 
 ## <a name="related-content"></a>Contenu associé
 
