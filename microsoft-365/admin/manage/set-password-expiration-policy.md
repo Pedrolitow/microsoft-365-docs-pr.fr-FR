@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 9a9c01b292fcc4162e79b899b23f082e4f6413e2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 59d5469eb798b6bf93de34c6659c999e84b27ea5
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785785"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137062"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -57,10 +57,10 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
 1. Sélectionnez **Stratégie d’expiration du mot de passe**.
   
 1. Si vous ne voulez pas que les utilisateurs soient contraints de changer de mot de passe, décochez la case à côté de **Définir l’expiration des mots de passe d’utilisateur après un certain nombre de jours**.
-  
+
 1. Entrez la fréquence d'expiration des mots de passe. Choisissez un nombre de jours compris entre 14 et 730.
   
-6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être notifiés de l'expiration du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
+1. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être notifiés de l'expiration du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
 
 > [!IMPORTANT]
 > Les notifications d’expiration de mot de passe ne sont plus prises en charge dans le Centre d'administration Microsoft 365 ou les applications Office.

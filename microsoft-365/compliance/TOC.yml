@@ -774,9 +774,9 @@
           items:
             - name: Créer et gérer un cas
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: Utiliser des cas volumineux (préversion)
-              href: advanced-ediscovery-large-cases.md
-        - name: Flux de travail eDiscovery avancé pour le contenu Teams (préversion)
+            - name: Utiliser le nouveau format de cas
+              href: advanced-ediscovery-new-case-format.md
+        - name: "Flux de travail Advanced\_eDiscovery pour le contenu Teams"
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Gérer des sources de données consignataires et non consignataires
           href: managing-custodians.md

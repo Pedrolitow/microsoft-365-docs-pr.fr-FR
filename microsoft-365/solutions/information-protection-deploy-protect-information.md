@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déployez Microsoft 365 fonctionnalités de sécurité et de conformité et protégez vos informations personnelles.
-ms.openlocfilehash: 856df69d60df7ea255118bd559377e3d54267991
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c1223dac804e1a9e514f3a5d0effad9f138e403a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110294"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137122"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises à la réglementation sur la confidentialité des données
 
@@ -79,7 +79,7 @@ En outre, la protection au niveau du site et de la bibliothèque est un mécanis
 
 Pour plus d’informations sur les autres fonctionnalités de protection des informations en dehors Microsoft 365, voir :
 
-- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Protection des informations Windows](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)

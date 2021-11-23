@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: 1a4d7c69114821e10f301fda0ee408eef7389f9f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129172"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137146"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
@@ -235,7 +235,7 @@ Pour accéder à Advanced eDiscovery ou être ajouté en tant que membre d'un do
 De plus en plus d'organisations utilisent la solution Advanced eDiscovery dans Microsoft 365 pour les processus critiques d'eDiscovery. Cela comprend la réponse aux demandes réglementaires, aux enquêtes et aux litiges.
 
 1. Gérer Advanced eDiscovery – [découvrir comment configurer Advanced eDiscovery, gérer les cas à l'aide du Centre de sécurité et de conformité, gérer un flux de travail dans Advanced eDiscovery et analyser les résultats de la recherche Advanced eDiscovery](/learn/modules/manage-advanced-ediscovery).
-1. [Créez un cas eDiscovery en utilisant les capacités de cas volumineux d'Advance eDiscovery](advanced-ediscovery-large-cases.md)
+1. [Créer un cas eDiscovery à l’aide du nouveau format de cas d’Advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [Fermer ou supprimer un cas](close-or-delete-case.md) – Lorsque l'affaire judiciaire ou l'enquête est terminée, vous pouvez fermer ou supprimer. Vous pouvez également rouvrir un dossier clos.
 
 ### <a name="step-3-optional-settings"></a>Étape 3 (facultative) : Paramètres

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités.
-ms.openlocfilehash: 48e6f255361591f270ac95e525c4a1e33b6b7212
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747787"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137134"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery de gestion
 
@@ -41,7 +41,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sélectionnez **eDiscovery**  >  **Avancé,** puis sélectionnez l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank"> **Cas.**</a>
 
-1. Sélectionnez **Créer un cas**.
+3. Sélectionnez **Créer un cas**.
 
 4. Dans la page de vol du cas **Nouvelle** découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
 
@@ -67,11 +67,11 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ![Advanced eDiscovery flux de travail.](../media/AeDWorkflow.png)
 
-1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et [des sources de données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
+1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et des sources de [données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
 
    Voici quelques choses qui se produisent (ou que vous pouvez faire) lorsque vous ajoutez des dépositaires à un cas :
 
-   - Les données de la boîte aux lettres de Exchange, du compte OneDrive du dépositaire et de tous les groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » comme données de garde dans le cas.
+   - Les données de la boîte aux lettres Exchange, du compte OneDrive du dépositaire et de tous les groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » comme données de garde dans le cas.
   
    - Les données du dépositaire sont réindexées (par un processus appelé *Indexation avancée).* Cela permet d’optimiser sa recherche à l’étape suivante.
   
@@ -81,7 +81,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - Vous pouvez utiliser le flux [de travail de communication](managing-custodian-communications.md) dans Advanced eDiscovery pour envoyer une notification de conservation légale aux dépositaires.
 
-2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privées à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
+2. **[Collecter du contenu pertinent à partir de sources de données.](create-draft-collection.md)** Après avoir ajouté des dépositaires et des sources de données non privatives à un cas, utilisez l’outil de collecte intégré pour rechercher dans ces sources de données du contenu qui peut être pertinent pour le cas. Vous utilisez des mots clés, [](building-search-queries.md) des propriétés et des conditions pour créer des requêtes de recherche qui retournent des résultats de recherche avec les données les plus susceptibles d’être pertinentes pour le cas. Vous pouvez également :
 
    - Afficher [les statistiques de collection](collection-statistics-reports.md) qui peuvent vous aider à affiner une collection pour affiner les résultats.
 
@@ -101,7 +101,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - [Créer et utiliser des balises](tagging-documents.md). Vous pouvez appliquer des balises à des documents dans un jeu à réviser pour identifier ceux qui sont réactifs (ou non réactifs au cas), puis utiliser ces balises lors de la création de requêtes de recherche pour inclure ou exclure les documents marqués. Vous pouvez également baliser pour déterminer les documents à exporter.
 
-   - [Annoter et redessier des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et publier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
+   - [Annoter et redessier des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et redessier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
 
    - [Analyser les données de cas.](analyzing-data-in-review-set.md) La fonctionnalité d’analyse Advanced eDiscovery est puissante. Après avoir exécuté l’analyse sur les données du jeu à réviser, nous effectuerons des analyses telles que la détection des quasi-doublons, le thread de messagerie électronique et les thèmes qui peuvent aider à réduire le volume de documents à réviser. Nous générons également des rapports d’analyse qui résument le résultat de l’exécution de l’analyse. Comme indiqué précédemment, l’exécution de l’analyse exécute également le modèle de détection des privilèges [client-avocat.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 

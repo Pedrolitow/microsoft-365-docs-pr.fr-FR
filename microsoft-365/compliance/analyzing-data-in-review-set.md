@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc1bd7b8a717d5f53514209fe50499844644f27b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064462"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137074"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un jeu à réviser dans Advanced eDiscovery
 
@@ -75,7 +75,7 @@ La liste suivante décrit le résultat de la requête de filtre en termes de con
 Pour plus d’informations sur les types d’inclusion et l’unicité des documents, voir [Threads](email-threading-in-advanced-ediscovery.md)de messagerie dans Advanced eDiscovery .
 
 > [!NOTE]
-> Lors de la prévisualisation publique du format  grand cas en [Advanced eDiscovery,](advanced-ediscovery-large-cases.md)la requête de filtre Pour révision n’a pas renvoyé de conversations Teams ou Yammer pour les ensembles de révision (dans les cas qui utilisent le format grand cas) créés avant le 4 novembre 2021. Ce problème a été résolu. Cela signifie que si  vous réappliquez la requête Pour révision à un groupe de révision dans un cas qui utilise le format grand cas, davantage d’éléments qui correspondent à la requête de filtre peuvent être affichés, car toutes les conversations Teams ou Yammer sont incluses.
+> Lors de la prévisualisation publique du  nouveau [format](advanced-ediscovery-new-case-format.md) de cas dans Advanced eDiscovery, la requête de filtre Pour révision n’a pas renvoyé de conversations Teams ou Yammer pour les ensembles de révision (dans les cas qui utilisent le format grand cas) créés avant le 4 novembre 2021. Ce problème a été résolu. Cela signifie que si  vous réappliquez la requête Pour révision à un groupe de révision dans un cas qui utilise le format grand cas, davantage d’éléments qui correspondent à la requête de filtre peuvent être affichés, car toutes les conversations Teams ou Yammer sont incluses.
 
 ## <a name="analytics-report"></a>Rapport d’analyse
 

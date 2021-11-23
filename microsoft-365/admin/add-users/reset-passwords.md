@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a74eaf1524058d5a5c92e057290a37f2d812fee
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128392"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61136954"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -107,7 +107,7 @@ Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs.
 
 2. Sélectionnez l’option en plus **du nom complet** pour sélectionner tous les personnes de votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
 
-3. Sélectionnez **Réinitialiser le mot de passe.** 
+3. Sélectionnez **Réinitialiser le mot de passe.**
 
 4. Suivez les instructions de la **page** Réinitialiser le mot de passe, puis sélectionnez **Réinitialiser.**  Si vous avez choisi de générer automatiquement les mots de passe, les nouveaux mots de passe temporaires s’affichent.
 

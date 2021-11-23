@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 1f55631cf1687cc18e1e890d72b557ad288021fa
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2cce47f32e74039aa30cc95e8cce2f90b44e2df5
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111338"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137086"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -195,6 +195,12 @@ Le [guide](https://aka.ms/teamsguidance) de configuration Microsoft Teams fourni
 ### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams pour l'éducation de configuration
 
 Le [guide Microsoft Teams pour l'éducation](https://aka.ms/teamsedusetup) de configuration fournit à votre établissement scolaire des conseils qui rassemblent des salles de classe, des conversations, des réunions, des fichiers et des applications collaboratives au même endroit. Le guide fournit également des instructions pour préparer, planifier et configurer Teams pour votre établissement scolaire. Une fois votre déploiement terminé, utilisez les outils intégrés pour configurer les personnes qui peuvent créer des équipes, et éventuellement créer des équipes vous-même tout en complétant les membres avec un fichier .csv.
+
+### <a name="integrate-microsoft-lti-apps-with-your-lms"></a>Intégrer des applications Microsoft LTI à votre système de gestion des formations
+
+Pour que les enseignants fonctionnent efficacement et que les étudiants restent organisés, ils ont besoin d’une sign-on unique pour collaborer avec tous leurs supports d’apprentissage, devoirs et applications à portée de main. Les applications Microsoft Learning Tools Interoperability (LTI) apportent les meilleurs outils Microsoft directement dans votre système de gestion de l’apprentissage (LMS), afin que les étudiants et les enseignants peuvent se concentrer sur l’étude, sans trouver de fichiers ni créer d’outils.
+
+Si vous êtes un administrateur d’un LMS et que vous souhaitez accéder aux outils Microsoft directement à partir de votre LMS, utilisez nos applications Intégrer des applications Microsoft LTI avec vos applications [LMS](https://aka.ms/lmsintegrationguide) Intégrer les applications Microsoft LTI à votre guide LMS pour commencer. Ces outils incluent actuellement Microsoft Teams classes et Microsoft Teams réunions.
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint de configuration
 
