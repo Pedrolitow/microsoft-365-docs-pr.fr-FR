@@ -16,6 +16,8 @@
       items:
         - name: Présentation
           href: content-sources-365-admin-center.md
+        - name: Gérer l’affichage du contenu dans Viva Learning
+          href: use-tabs.md
         - name: Ajouter SharePoint
           href: configure-sharepoint-content-source.md
         - name: Ajouter des systèmes de gestion de l’apprentissage
