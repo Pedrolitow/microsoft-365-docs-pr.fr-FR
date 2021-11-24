@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: 4b919fa43e61f43b3c5f465a697cd976eb52db00
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fd062d94832063d2aa5221b49b3c28a35c84931e
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110018"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152429"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -137,7 +137,7 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Élévation du privilège Exchange administrateur**|Génère une alerte lorsqu’une personne se voit attribuer des autorisations administratives dans Exchange Online organisation. Par exemple, lorsqu’un utilisateur est ajouté au groupe de rôles Gestion de l’organisation dans Exchange Online. Cette stratégie a un **paramètre de** gravité faible.|Autorisations|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Messages de courrier contenant un fichier malveillant supprimé après la remise**|Génère une alerte lorsque des messages contenant un fichier malveillant sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
 |**Messages de courrier contenant une URL malveillante supprimée après la remise**|Génère une alerte lorsqu’un message contenant une URL malveillante est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
-|**Messages de courrier d’une campagne remis, puis supprimés ultérieurement**|Génère une alerte lorsque des messages associés à une [campagne](../security/office-365-security/campaigns.md) sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
+|**Messages électroniques d’une campagne supprimés après remise**|Génère une alerte lorsque des messages associés à une [campagne](../security/office-365-security/campaigns.md) sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Messages électroniques supprimés après la remise**|Génère une alerte lorsque des messages malveillants qui ne contiennent pas d’entité malveillante (URL ou fichier), ou associés à une campagne, sont remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](../security/office-365-security/zero-hour-auto-purge.md). Cette stratégie a un paramètre **de** gravité d’information et déclenche automatiquement une enquête et une [réponse automatisées dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur cette nouvelle stratégie, voir [Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365](new-defender-alert-policies.md).|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**E-mail signalé par l’utilisateur en tant que programme malveillant ou hameçonnage**|Génère une alerte lorsque les utilisateurs de votre organisation signalent des messages comme courrier de hameçonnage à l’aide du module de rapport du message. Cette stratégie a un **paramètre de** gravité faible. Pour plus d’informations sur ce module complémentaire, voir Utiliser le module [complémentaire Message de rapport.](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) Pour les clients Office 365 P2, E5 et G5, cette alerte déclenche automatiquement une enquête et une réponse automatisées [dans Office 365](../security/office-365-security/office-365-air.md).|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Limite d’envoi de courrier électronique dépassée**|Génère une alerte lorsqu’une personne de votre organisation a envoyé plus de messages que ce qui est autorisé par la stratégie de courrier indésirable sortant. Cela indique généralement que l’utilisateur envoie trop de messages électroniques ou que le compte peut être compromis. Cette stratégie a un **paramètre de** gravité moyenne. Si vous recevez une alerte générée par cette stratégie d’alerte, il est bon de vérifier si le compte d’utilisateur [est compromis.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
@@ -255,25 +255,25 @@ Pour voir à quelle catégorie une stratégie d’alerte par défaut est affect�
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion de la disposition|||||||
-|Gestion de la conformité DLP||![Marque de vérification.](../media/checkmark.png)|||||
+|Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
 |Analyste de la protection des informations||![Coche.](../media/checkmark.png)|||||
-|Enquêteur de la protection des informations||![Coche.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
-|Configuration de l’organisation||||||![Marque de vérification.](../media/checkmark.png)|
+|Enquêteur de la protection des informations||![Marque de vérification.](../media/checkmark.png)|||||
+|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
+|Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
 |Gestion des enregistrement|![Coche.](../media/checkmark.png)||||||
-|Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
+|Gestion de la rétention|![Marque de vérification.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
 |Gestion des rôles||||![Coche.](../media/checkmark.png)|||
 |Recherche et purge|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
 |Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)
 |Affichage De l’assurance service|||||||
 |Administrateur de la révision de surveillance|||||||
