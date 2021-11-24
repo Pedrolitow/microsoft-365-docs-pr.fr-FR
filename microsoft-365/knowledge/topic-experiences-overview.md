@@ -6,24 +6,25 @@ manager: pamgreen
 ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
-ms.service: ''
-ms.prod: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
-description: Découvrez comment utiliser Rubriques Dans votre organisation.
-ms.openlocfilehash: 9b719c77a54271078bf2ee80f657352a84d9713b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser Topics dans votre organisation.
+ms.openlocfilehash: 2e5aab7edd5b84ad9e1ee987bd90f2d4e9aec5a5
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173210"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153627"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Rubriques utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, recherche et autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et Recherche dans Word, PowerPoint, Outlook et Excel.
+Rubriques utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et Recherche dans Word, PowerPoint, Outlook et Excel.
 
 <br/>
 
@@ -40,7 +41,7 @@ Rubriques Viva utilise l’IA pour rechercher et identifier automatiquement *rub
 Les rubriques sont affichées pour les utilisateurs via :
 
 - [Rubriques mises en surbrill SharePoint](topic-experiences-overview.md#sharepoint-highlights) pages
-- Réponses de rubrique dans les [résultats de recherche](topic-experiences-overview.md#search-results)
+- Réponses de rubrique dans les [résultats de la recherche](topic-experiences-overview.md#search-results)
 - Recherche dans les [applications Office](topic-experiences-overview.md#office-application-search)
 - [Page d’accueil du centre](topic-experiences-overview.md#topic-center) de rubriques
 
@@ -58,11 +59,11 @@ Vous pouvez [](search.md#topic-answer) voir une réponse à une rubrique dans le
 
 ### <a name="office-application-search"></a>Office d’application
 
-Lorsque vous utilisez la recherche dans des applications Office telles que Word, PowerPoint, Outlook ou Excel (  par le biais de la zone de recherche ou en sélectionnant Rechercher dans le menu contexté), les réponses de rubrique sont affichées dans les résultats de la recherche.
+Lorsque vous utilisez la recherche dans des applications Office telles que Word, PowerPoint, Outlook ou Excel( par  le biais de la zone de recherche ou en sélectionnant Rechercher dans le menu contexté), les réponses de rubrique sont affichées dans les résultats de la recherche.
 
    ![Capture d’écran montrant la recherche dans Word via la zone de recherche.](../media/knowledge-management/word-search-2.png)
 
-   ![Capture d’écran montrant la recherche dans Word par le biais du menu contexto de recherche.](../media/knowledge-management/word-search-1.png)
+   ![Capture d’écran montrant la recherche dans Word par le biais du menu context de recherche.](../media/knowledge-management/word-search-1.png)
 
 ### <a name="topic-center"></a>Centre de rubriques
 
@@ -103,9 +104,9 @@ Lorsque vous utilisez Rubriques Viva dans votre environnement Microsoft 365, vo
 
 - Gestionnaires d’informations : utilisateurs qui guident les rubriques tout au long du cycle de vie des rubriques. Les gestionnaires de connaissances utilisent la page Gérer les **rubriques** dans le centre de rubriques pour confirmer les rubriques suggérées par l’IA, supprimer les rubriques qui ne sont plus pertinentes, ainsi que modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs d’informations attribuent des autorisations de gestionnaire d’informations aux utilisateurs via les paramètres administrateur de Rubriques Viva du Centre d’administration Microsoft 365. 
 
-- Administrateurs du savoir : les administrateurs définissent Topics et les gèrent via les contrôles d’administration dans le Centre d'administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
+- Administrateurs du savoir : les administrateurs définissent Rubriques Et les gèrent par le biais des contrôles d’administration dans le Centre d'administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
 
-Pour plus d’informations, voir [Rôles Rubriques.](topic-experiences-roles.md)
+Pour plus d’informations, voir [Rôles rubriques.](topic-experiences-roles.md)
 
 ## <a name="topic-management"></a>Gestion des rubriques
 
@@ -132,7 +133,7 @@ Les contrôles d’administration Centre d'administration Microsoft 365 vous per
 - Contrôler les utilisateurs qui peuvent créer et modifier des rubriques.
 - Contrôler les utilisateurs qui peuvent consulter les rubriques.
 
-Pour plus d’informations sur les contrôles d’administration, voir [attribuer des autorisations](./plan-topic-experiences.md#user-permissions) [utilisateur,](./topic-experiences-knowledge-rules.md)gérer la visibilité des rubriques et [gérer la découverte des rubriques.](./topic-experiences-discovery.md)
+Pour plus d’informations sur les contrôles d’administration, voir attribuer des autorisations aux [utilisateurs,](./plan-topic-experiences.md#user-permissions)gérer la visibilité des [rubriques](./topic-experiences-knowledge-rules.md)et [gérer la découverte des rubriques.](./topic-experiences-discovery.md)
 
 ## <a name="topic-curation-and-suggestions"></a>Curation de rubrique et suggestions
 
@@ -146,13 +147,13 @@ Pour plus d’informations, voir [Découverte et curation des rubriques.](./topi
 
 ## <a name="provide-us-feedback"></a>Fournissez-nous des commentaires
 
-Chez Microsoft, nous prenons très au sérieux les commentaires de nos clients. Les commentaires que vous fournissez pour Topics seront utilisés pour dépanner, corriger les bogues, améliorer les fonctionnalités existantes et en développer de nouvelles. 
+Chez Microsoft, nous prenons très au sérieux les commentaires de nos clients. Les commentaires que vous fournissez pour Rubriques Seront utilisés pour résoudre les problèmes, corriger les bogues, améliorer les fonctionnalités existantes et en développer de nouvelles. 
 
-Vous pouvez envoyer des commentaires à Microsoft directement à partir d’une page de rubrique et des pages Gérer les **rubriques** et Mes **rubriques.** Recherchez ce bouton dans le coin inférieur droit de la page.
+Vous pouvez envoyer des commentaires à Microsoft directement à partir d’une page de rubrique et des pages Gérer **les rubriques** et Mes **rubriques.** Recherchez ce bouton dans le coin inférieur droit de la page.
 
    ![Capture d’écran montrant le bouton Commentaires.](../media/knowledge-management/feedback-icon.png)
 
-Dans la page **Envoyer des commentaires à Microsoft,** faites-nous savoir si vous aimez quelque chose, si vous n’aimez pas quelque chose ou si vous avez une suggestion.
+Dans la page Envoyer des commentaires **à Microsoft,** faites-nous savoir si vous aimez quelque chose, si vous n’aimez pas quelque chose ou si vous avez une suggestion.
 
    ![Capture d’écran montrant la page Envoyer des commentaires à Microsoft.](../media/knowledge-management/feedback-page.png)
 

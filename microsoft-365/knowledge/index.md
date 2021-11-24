@@ -4,23 +4,23 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-ms.date: 10/10/2021
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
-ms.prod: microsoft-365-enterprise
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
-ms.openlocfilehash: a5e5d688a3838da95dde92e0adf27c1d1c833430
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ea158b266154cee1f911a40983c352d1f7b4cc43
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668275"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153675"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 
@@ -37,7 +37,7 @@ Les ressources de cette page sont conçues pour vous aider à commencer à déco
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics Et comment elle peut vous aider.
+Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics et comment elle peut vous aider.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
@@ -56,6 +56,7 @@ En savoir plus sur l’utilisation et l’implémenter de Rubriques Dans votre o
 |:-----|:-----|
 |Découvrez comment commencer à planifier l’utilisation de Rubriques |[Prise en main](topics-adoption-getstarted.md)|  
 |Configurer et exécuter un programme pilote d’essai pour Rubriques |[Exécuter une version d’évaluation](trial-topics.md)|
+|Trouvez des ressources pour aider votre organisation tout au long de votre parcours d’adoption avec Topics |[Ressources d’adoption](adoption-resources.md)|
 
 ## <a name="set-up-and-administration"></a>Configuration et personnalisation
 

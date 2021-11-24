@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: admindeeplinkTEAMS
 ms.localizationpriority: medium
 description: Découvrez comment obtenir des Apprentissage Microsoft Viva et les gérer dans le centre Teams’administration.
-ms.openlocfilehash: 98b1c86db2628a5dfd5beb71edbe1741cbabd0cc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5eb8839bb730a0f70fad2fa072a59d5177c3df92
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717494"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153735"
 ---
 # <a name="set-up-microsoft-viva-learning-in-the-teams-admin-center"></a>Configurer les Apprentissage Microsoft Viva dans le Centre d’administration Teams de gestion
 
@@ -29,6 +29,8 @@ Learning est activé par défaut pour tous les utilisateurs Microsoft Teams de v
 
 Pour autoriser ou bloquer des utilisateurs spécifiques de votre organisation à l’aide de Learning, assurez-vous que Le Learning de Contrôle est allumé pour votre organisation sur la **page** Gérer les applications dans le Centre d’administration Microsoft Teams. Créez ensuite une stratégie d’autorisation d’application personnalisée et affectez-la à ces utilisateurs. Pour plus d’informations, voir [Gérer les stratégies d’autorisation d’application dans Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-step"></a>Étape suivante
+## <a name="next-steps"></a>Prochaines étapes
 
 [Gérer les sources de contenu pour Les Learning dans le Centre d'administration Microsoft 365](content-sources-365-admin-center.md)
+
+[Configurer la façon dont le contenu s’affiche dans Le Learning](use-tabs.md)

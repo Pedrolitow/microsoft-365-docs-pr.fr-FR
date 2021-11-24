@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: dab209fc47db18875f0bc48d3b2816cd9d1927b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172208"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153699"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
@@ -39,11 +40,11 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 > [!NOTE]
 > Les types de contenus scellés ou en lecture seule ne peuvent pas être mis à jour. Ils ne peuvent donc pas être utilisés dans un modèle.
 
-Ajoutez des *classificateurs* et des *extracteurs* à votre document présentation des modèles pour effectuer les opérations suivantes : 
+Ajoutez *des classifieurs* et *des extracteurs* à vos modèles de compréhension de documents pour les actions suivantes : 
 
 - Les classificateurs sont utilisés pour identifier et classer les documents téléchargés vers la bibliothèque de documents. Par exemple, un classifieur peut être « exercé » pour identifier tous les documents *renouvellement de contrat* qui sont chargés dans la bibliothèque. Le type de contenu renouvellement contrat est défini par vous lorsque vous créez votre classifieur.
 
-- Les extracteurs extraient des informations de ces documents. Par exemple, pour tous les documents de renouvellement de contrat identifiés dans votre bibliothèque de documents, les colonnes s’affichent dans votre affichage qui indiquent également la *date de début du service* et *client* pour chaque document de renouvellement de contrat. 
+- Les extracteurs extraient des informations de ces documents. Par exemple, pour chaque document de renouvellement de contrat identifié dans votre bibliothèque de documents, des colonnes affichent la date de début du *service* et le *client* pour chaque document. 
 
 Vous pouvez utiliser des fichiers d’exemple pour former et tester vos classificateurs et extracteurs de votre modèle. Les exemples de fichiers fournissent vos exemples de modèles à rechercher lorsque vous essayez d’identifier et d’extraire des données de fichiers. Par exemple, vous devez former vos classificateurs et extracteurs de renouvellement de contrat avec des exemples de documents de renouvellement de contrat que votre entreprise utilise. Vous pouvez également utiliser des exemples de fichiers pour tester l’efficacité de votre modèle.
 
@@ -51,9 +52,9 @@ Une fois que vous avez publié votre modèle, utilisez le centre de contenu pour
 
 ## <a name="file-limitations"></a>Limitations de fichier
 
-Les modèles de compréhension des documents utilisent la technologie OCR (Optical Character Recognition) pour analyser les fichiers PDF, images et TIFF, à la fois lorsque vous entraînez un modèle avec des exemples de fichiers et lorsque vous l’exécutez sur des fichiers dans une bibliothèque de documents.
+Les modèles de compréhension des documents utilisent la technologie de reconnaissance optique de caractères (OCR) pour analyser les fichiers PDF, les images et les fichiers TIFF. Les fichiers sont analysés lorsque vous formez un modèle avec des exemples de fichiers et lorsque vous l’exécutez sur des fichiers d’une bibliothèque de documents.
 
-Notez les différences suivantes en ce qui concerne les fichiers texte Microsoft Office et les fichiers numérisés par OCR (PDF, image ou TIFF) :
+Notez les différences suivantes concernant Microsoft Office texte et les fichiers analysés par OCR (PDF, image ou TIFF) :
 
 - Fichiers Office : nous avons tronqué à 64 000 caractères (lors de la formation et de l’exécution sur des fichiers dans une bibliothèque de documents).
 

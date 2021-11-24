@@ -4,12 +4,12 @@ description: inclure fichier
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61149559"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61155423"
 ---
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -33,6 +33,7 @@ Lorsqu’un appareil joint à un domaine crée une relation d’Azure Active Dir
 - La joint Azure Active Directory hybride doit être configurée dans votre environnement (via federation ou AAD Connecter Sync)
 - AAD Connecter Sync doit inclure les objets  d’appareil dans l’étendue pour la synchronisation avec Azure Active Directory (si nécessaire pour la jointage)
 - AAD Connecter règles de synchronisation doivent être modifiées pour Server 2012 R2 (lorsque la prise en charge de Server 2012 R2 est nécessaire)
+- Tous les appareils doivent s’inscrire dans le Azure Active Directory du client qui héberge Microsoft Defender for Endpoint. Les scénarios entre locataires ne sont pas pris en charge. 
 
 ### <a name="connectivity-requirements"></a>Prérequis en matière de connectivité
 
