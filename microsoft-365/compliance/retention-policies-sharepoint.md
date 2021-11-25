@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 1194ba1aa2367980207d33e2ca4020b8e0ba57d1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 26dbe5729081c501f5a80e1ecfdde4a184938328
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753070"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167573"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -61,21 +61,27 @@ Pour les stratégies de rétention et les stratégies d’application automatiqu
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Fonctionnement de la rétention pour SharePoint et OneDrive
 
-Pour stocker les contenus qui doivent être conservés, SharePoint et OneDrive créent une bibliothèque de conservation et de préservation des documents si elle n'existe pas. La bibliothèque de conservation et de préservation des documents n’est pas conçue pour être utilisée de manière interactive, mais stocke automatiquement les fichiers lorsque cela est nécessaire pour des raisons de conformité.
+Pour stocker les contenus qui doivent être conservés, SharePoint et OneDrive créent une bibliothèque de conservation et de préservation des documents si elle n'existe pas. La bibliothèque de conservation et de préservation des documents n’est pas conçue pour être utilisée de manière interactive, mais stocke automatiquement les fichiers lorsque cela est nécessaire pour des raisons de conformité. Elle fonctionne de la manière suivante :
 
-Les articles dans SharePoint qui ont une étiquette de conservation standard (qui ne déclare pas que l'article est un enregistrement) n'ont pas besoin de la bibliothèque Preservation Hold car ces articles restent dans leur emplacement d'origine. SharePoint empêche les utilisateurs de supprimer des éléments lorsque l'étiquette de conservation appliquée est configurée pour conserver le contenu, et le versionnage SharePoint préserve les anciennes versions lorsque les éléments sont modifiés. Mais pour d'autres scénarios, la bibliothèque Preservation Hold est utilisée lorsque les articles doivent être conservés :
-- Articles dans OneDrive qui ont des étiquettes de conservation standard
-- Les éléments dans SharePoint ou OneDrive qui ont des étiquettes de conservation qui les déclarent comme un enregistrement, et l'élément est déverrouillé pour l'édition
-- Fichiers partagés en tant que pièces jointes cloud avec une étiquette de rétention appliquée automatiquement
-- Articles soumis à des politiques de rétention
+Lorsqu’un utilisateur modifie ou supprime un élément soumis à la rétention, une vérification est effectuée pour savoir si le contenu a été modifié depuis l’application des paramètres de rétention. S’il s’agit de la première modification depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet à l’utilisateur de modifier ou de supprimer le contenu d’origine.
 
-Pour conserver ce contenu lorsqu'un utilisateur tente de le modifier ou de le supprimer, on vérifie si le contenu a été modifié depuis que les paramètres de conservation ont été appliqués. S’il s’agit du premier changement depuis l’application des paramètres de rétention, le contenu est copié dans la bibliothèque de conservation et de préservation des documents, ce qui permet ensuite à la personne de modifier ou de supprimer le contenu d’origine.
-  
-Un travail du minuteur nettoie périodiquement la bibliothèque de conservation et de préservation des documents. Pour le contenu ayant passé plus de 30 jours dans la bibliothèque de conservation et de préservation des documents, ce travail compare le contenu à toutes les requêtes utilisées par les paramètres de rétention de ce contenu. Un contenu antérieur à la période de rétention configurée est alors supprimé de la bibliothèque de conservation et de préservation des documents, et de l’emplacement d’origine si celui-ci existe encore. Ce travail de timer s’exécute tous les sept jours, ce qui signifie qu’avec un minimum de 30 jours, la suppression du contenu de la bibliothèque de conservation et de préservation des documents peut prendre jusqu’à 37 jours.
+Un travail du minuteur s’exécute régulièrement dans la bibliothèque de conservation et de préservation des documents. Pour le contenu ayant passé plus de 30 jours dans la bibliothèque de conservation et de préservation des documents, ce travail compare le contenu à toutes les requêtes utilisées par les paramètres de rétention de ce contenu. Le contenu plus ancien que la période de rétention configurée est ensuite supprimé de la bibliothèque de conservation et de préservation des documents, et de l’emplacement d’origine s’il est toujours là. Ce travail de timer s’exécute tous les sept jours, ce qui signifie qu’avec un minimum de 30 jours, la suppression du contenu de la bibliothèque de conservation et de préservation des documents peut prendre jusqu’à 37 jours.
 
-Ce comportement de copie de fichiers dans la bibliothèque Preservation Hold s'applique au contenu qui existe lorsque les paramètres de conservation ont été appliqués. De plus, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son inclusion dans la stratégie sera conservé dans la bibliothèque de conservation. Cependant, le nouveau contenu n'est pas copié dans la bibliothèque Preservation Hold la première fois qu'il est modifié, uniquement lorsqu'il est supprimé. Pour conserver toutes les versions d'un fichier, vous devez activer la gestion des [versions](#how-retention-works-with-document-versions).
+Ce comportement pour la copie de fichiers dans la bibliothèque de conservation et de préservation des documents s’applique au contenu qui existe lorsque les paramètres de rétention ont été appliqués. En outre, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son ajout à la stratégie est conservé dans la bibliothèque de conservation et de préservation des documents. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, [le contrôle de version](#how-retention-works-with-document-versions) doit être activé pour le site d’origine.
   
 Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier s'ils déplacent ou suppriment d'abord tous les fichiers du dossier qui sont soumis à la conservation.
+
+Les utilisateurs voient également un message d’erreur s’ils tentent de supprimer un élément étiqueté dans l’une des situations suivantes. L’élément n’est pas copié dans la bibliothèque de conservation et de préservation des documents, mais reste à l’emplacement d’origine :
+
+- Le paramètre de gestion des enregistrements qui permet aux utilisateurs de supprimer des éléments étiquetés est désactivé.
+    
+    Pour vérifier ou modifier ce paramètre, accédez au nœud **Gestion des enregistrements** dans la Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**. Il existe des paramètres distincts pour SharePoint et OneDrive.
+
+- L’étiquette de rétention marque les éléments en tant qu’enregistrements et elle est [verrouillée](record-versioning.md).
+    
+    Ce n’est que lorsque l’enregistrement est déverrouillé qu’une copie de la dernière version est stockée dans la bibliothèque de conservation et de préservation des documents.
+
+- L’étiquette de rétention marque les éléments en tant qu’[enregistrements réglementaires](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), ce qui empêche continuellement la modification ou la suppression de l’élément.
 
 Une fois que les paramètres de rétention sont attribués à un compte OneDrive ou un site SharePoint, les chemins d’accès au contenu sont fonction des paramètres de rétention qui consistent à conserver et à supprimer, à conserver uniquement ou à supprimer uniquement.
 
