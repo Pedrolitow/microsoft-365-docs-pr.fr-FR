@@ -1,5 +1,5 @@
 ---
-title: Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
+title: Protection cloud et envoi d’exemples dans Antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
 keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection livrée par le cloud
 ms.prod: m365-security
@@ -15,19 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701728"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171547"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
+# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protection cloud et envoi d’exemples dans Antivirus Microsoft Defender
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
-- [Antivirus Microsoft Defender](microsoft-defender-antivirus-windows.md)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus Microsoft Defender
 
 Antivirus Microsoft Defender utilise de nombreux mécanismes intelligents pour détecter les programmes malveillants. L’une des fonctionnalités les plus puissantes est la possibilité d’appliquer la puissance du cloud pour détecter les programmes malveillants et effectuer une analyse rapide. La protection cloud et l’envoi automatique d’échantillons fonctionnent avec Antivirus Microsoft Defender pour vous protéger contre les menaces nouvelles et émergentes. 
 
@@ -62,9 +61,9 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
 
    2. Après avoir examiné les métadonnées, si Antivirus Microsoft Defender protection cloud ne peut pas parvenir à un verdict de première classe, elle peut demander un échantillon du fichier pour une inspection plus approfondie. Cette demande honore la configuration des paramètres pour l’envoi d’exemples :
 
-      1. **Envoyer automatiquement des échantillons sûrs** (par défaut)
+      1. **Envoyer automatiquement des échantillons sécurisés** (par défaut)
          - Coffre exemples sont des exemples considérés comme ne contenant pas fréquemment des données d’informations d'.bat, .scr, .dll, .exe.
-         - Si le fichier est susceptible de contenir des pii, l’utilisateur reçoit une demande d’autoriser l’envoi d’exemples de fichier.
+         - Si le fichier est susceptible de contenir des pii, l’utilisateur reçoit une demande d’autoriser l’envoi d’exemples de fichiers.
          - Cette option est la valeur par défaut sur Windows, macOS et Linux.
 
       2. **Always Prompt**
@@ -84,7 +83,7 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
    3. Une fois les métadonnées et/ou les fichiers envoyés à la protection cloud, vous pouvez utiliser des **exemples,** des **détonations** ou des modèles d’apprentissage automatique d’analyse de **big data** pour parvenir à un verdict. La non-fonctionnalité de protection fournie par le cloud limite l’analyse à ce que le client peut fournir par le biais de modèles d’apprentissage automatique locaux et de fonctions similaires.
 
 > [!IMPORTANT]
-> [Le service Bloquer à la première consultation (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) fournit une détonation et une analyse pour déterminer si un fichier ou un processus est sécurisé. BAFS peut retarder momentanément l’ouverture d’un fichier jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l’envoi d’échantillons, BAFS est également désactivé et l’analyse de fichier est limitée aux métadonnées uniquement. Nous vous recommandons de conserver l’envoi d’échantillons et BAFS activés. Pour plus d’informations, [voir « Bloquer à la première vue » ?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
+> Le service Bloquer [à la première consultation (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) fournit une analyse et une détonation pour déterminer si un fichier ou un processus est sécurisé. BAFS peut retarder momentanément l’ouverture d’un fichier jusqu’à ce qu’un verdict soit atteint. Si vous désactivez l’envoi d’échantillons, BAFS est également désactivé et l’analyse de fichier est limitée aux métadonnées uniquement. Nous vous recommandons de conserver l’envoi d’échantillons et BAFS activés. Pour plus d’informations, [voir « Bloquer à la première vue » ?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
 
 ## <a name="cloud-protection-levels"></a>Niveaux de protection cloud
 
@@ -94,7 +93,7 @@ La protection cloud est activée par défaut dans Antivirus Microsoft Defender. 
 
 En plus de configurer votre niveau de protection cloud, vous pouvez configurer vos paramètres d’envoi d’exemples. Vous pouvez choisir parmi plusieurs options :
 
-- **Envoyer automatiquement des échantillons sécurisés**  (comportement par défaut)
+- **Envoyer automatiquement des échantillons sûrs**  (comportement par défaut)
 - **Envoyer tous les échantillons automatiquement**  
 - **Ne pas envoyer d’exemples**  
 
@@ -114,7 +113,7 @@ Le tableau suivant répertorie des exemples de métadonnées envoyées pour anal
 
 ## <a name="samples-are-treated-as-customer-data"></a>Les exemples sont traités comme des données client
 
-Juste au cas où vous vous demanderiez ce qu’il advient des soumissions d’exemples, Defender for Endpoint traite tous les exemples de fichiers comme des données client. Microsoft honore les choix géographiques et de rétention des données que votre organisation a sélectionnés lors de l’intégration à Defender for Endpoint. 
+Juste au cas où vous vous demanderiez ce qui se passe avec les soumissions d’exemples, Defender for Endpoint traite tous les exemples de fichiers comme des données client. Microsoft honore les choix géographiques et de rétention des données que votre organisation a sélectionnés lors de l’intégration à Defender for Endpoint. 
 
 En outre, Defender pour point de terminaison a reçu plusieurs certifications de conformité, ce qui démontre l’adhésion continue à un ensemble sophistiqué de contrôles de conformité :
 
@@ -135,7 +134,7 @@ Il existe deux autres scénarios dans lequel Defender pour le point de terminais
 
 | Scénario | Description |
 |:---|:---|
-|Collection d’exemples de fichiers manuelle dans le portail Microsoft 365 Defender web | Lors de l’intégration d’appareils à Defender pour endpoint, vous pouvez configurer les paramètres de [protection évolutive des points de terminaison (PEPT)](overview-endpoint-detection-response.md). Par exemple, il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peuvent facilement être confondus avec les paramètres d’envoi d’exemples décrits dans cet article. <br/><br/>Le paramètre PEPT contrôle la collecte d’exemples de fichiers à partir d’appareils lorsqu’il est demandé via le portail Microsoft 365 Defender et est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans Microsoft 365 Defender portail. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons. <br/><br/>En savoir plus sur les paramètres de configuration de Defender pour les points de terminaison, voir : Outils et méthodes d’intégration pour les Windows 10 [dans Defender for Endpoint](configure-endpoints.md) |
+|Collection d’exemples de fichiers manuelle dans le portail Microsoft 365 Defender web | Lors de l’intégration d’appareils à Defender pour endpoint, vous pouvez configurer les paramètres [de protection évolutive des points de terminaison (PEPT)](overview-endpoint-detection-response.md). Par exemple, il existe un paramètre permettant d’activer des exemples de collections à partir de l’appareil, qui peuvent facilement être confondus avec les paramètres d’envoi d’exemples décrits dans cet article. <br/><br/>Le paramètre PEPT contrôle la collecte d’exemples de fichiers à partir d’appareils lorsqu’il est demandé via le portail Microsoft 365 Defender et est soumis aux rôles et autorisations déjà établis. Ce paramètre peut autoriser ou bloquer la collecte de fichiers à partir du point de terminaison pour des fonctionnalités telles que l’analyse approfondie dans Microsoft 365 Defender portail. Si ce paramètre n’est pas configuré, la valeur par défaut est d’activer la collection d’échantillons. <br/><br/>En savoir plus sur les paramètres de configuration de Defender pour les points de terminaison, voir : Outils et méthodes d’intégration pour les Windows 10 [dans Defender for Endpoint](configure-endpoints.md) |
 | Analyse automatisée du contenu d’examen et de réponse | Lorsque des [enquêtes](automated-investigations.md) automatisées sont en cours d’exécution sur des appareils (lorsqu’elles sont configurées pour s’exécuter automatiquement en réponse à une alerte ou s’exécutent manuellement), les fichiers identifiés comme suspects peuvent être collectés à partir des points de terminaison pour une inspection plus approfondie. Si nécessaire, la fonctionnalité d’analyse de contenu de fichier pour les examens automatisés peut être désactivée dans Microsoft 365 Defender portail. <br/><br/> Les noms d’extension de fichier peuvent également être modifiés pour ajouter ou supprimer des extensions pour d’autres types de fichiers qui seront automatiquement envoyés au cours d’un examen automatisé. <br/><br/> Pour plus d’informations, voir [Gérer les téléchargements de fichiers d’automatisation.](manage-automation-file-uploads.md) |
 
 ## <a name="see-also"></a>Voir aussi

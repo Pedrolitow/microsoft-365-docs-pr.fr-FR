@@ -16,14 +16,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 625b5dc2743f42d35a652582827454b3178e1786
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 73234fd929406da475455baf21fbbf463216c660
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881936"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170295"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
+
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Vous pouvez définir une liste d’exclusions pour les éléments que vous ne souhaitez Antivirus Microsoft Defender analyser. Ces éléments exclus peuvent contenir des menaces qui rendent votre appareil vulnérable. Cet article décrit une erreur courante que vous devez éviter lors de la définition d’exclusions.
 
@@ -40,7 +43,7 @@ Ne définissez pas d’exclusions pour les emplacements de dossiers, les extensi
 
 ### <a name="folder-locations"></a>Emplacements des dossiers
 
-En règle générale, ne définissez pas d’exclusions pour les emplacements de dossier suivants :
+En règle générale, ne définissez pas d’exclusions pour les emplacements de dossiers suivants :
 
 `%systemdrive%`
 
@@ -289,6 +292,6 @@ N’utilisez pas une seule liste d’exclusions pour définir des exclusions pou
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Utilisation de variables d’environnement incorrectes comme caractères génériques dans les listes d’exclusions de nom de fichier et de chemin d’accès au dossier ou d’extension
 
-Antivirus Microsoft Defender Le service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusions est limitée aux variables système et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas de variables d’environnement utilisateur comme caractères génériques lors de l Antivirus Microsoft Defender exclusions de dossiers et de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
+Antivirus Microsoft Defender Service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusions est limitée aux variables système et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas de variables d’environnement utilisateur comme caractères génériques lors de l Antivirus Microsoft Defender exclusions de dossiers et de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
 
-Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusions, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.
+Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusion, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.

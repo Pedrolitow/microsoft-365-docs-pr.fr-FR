@@ -19,21 +19,21 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 63c23b0ab0188abe0fb33d27789a437e1e445a2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111242"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166685"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Signaler et résoudre les problèmes de Règles asr de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender est</a> la nouvelle interface pour la surveillance et la gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft. Vous pouvez ici consulter facilement l’état de la sécurité de votre organisation, agir pour configurer les appareils, les utilisateurs et les applications ainsi que recevoir des alertes relatives aux activités suspectes. Le portail Microsoft 365 Defender est destiné aux administrateurs de sécurité et aux équipes en charge des opérations de sécurité afin de mieux gérer et protéger leur organisation. Visitez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
 
@@ -76,7 +76,7 @@ Voici quelques autres sources d’informations que vous Windows, pour résoudre 
 
 L’une des façons les plus simples de déterminer si les règles de la astérence sont déjà activées consiste à utiliser une cmdlet PowerShell, Get-MpPreference.
 
-Voici un exemple :
+Voici un exemple :
 
 :::image type="content" source="images/getmpreferencescriptnew.png" lightbox="images/getmpreferencescriptnew.png" alt-text="obtenir un script mppreference.":::
 

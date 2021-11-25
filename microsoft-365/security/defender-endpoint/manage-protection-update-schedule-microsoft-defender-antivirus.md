@@ -16,21 +16,21 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 32ca742e4b8a964200f0effac1b6186ed64a911b
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: fa67ff12ecfc2fb97bbc50642a5d7db99df91819
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148646"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167081"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gérer le calendrier de téléchargement et d’application des mises à jour de protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Antivirus Microsoft Defender vous permet de déterminer quand il doit rechercher et télécharger les mises à jour.
 

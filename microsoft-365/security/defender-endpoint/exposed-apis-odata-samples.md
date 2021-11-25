@@ -1,7 +1,7 @@
 ---
 title: Requêtes OData avec Microsoft Defender pour le point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour Endpoint.
+description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
 keywords: api, api pris en charge, odata, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,21 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d134cfb7d8c0aff1e7a50b1e0ce9cc2daa9a8b1
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209896"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167141"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,9 +45,9 @@ Toutes les propriétés ne sont pas filtrables.
 ## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter
 
 - [Alerte](alerts.md): `alertCreationTime` , , , et `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Ordinateur](machine.md): `ComputerDnsName` , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
-- [MachineAction](machineaction.md): `Status` , `MachineId` et `Type` `Requestor` `CreationDateTimeUtc` .
-- [Indicateur](ti-indicator.md): `indicatorValue` , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+- [Machine](machine.md): `ComputerDnsName` , , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
+- [MachineAction](machineaction.md): `Status` , , et `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
+- [Indicateur](ti-indicator.md): `indicatorValue` , , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 
 ### <a name="example-1"></a>Exemple 1
 
@@ -448,7 +449,7 @@ json{
 
 ### <a name="example-7"></a>Exemple 7
 
-Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
+Obtenez le nombre d’alertes ouvertes pour un appareil spécifique :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

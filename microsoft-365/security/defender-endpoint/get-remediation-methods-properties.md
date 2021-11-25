@@ -1,6 +1,6 @@
 ---
 title: Méthodes et propriétés des activités de correction
-description: La réponse de l’API contient les & gestion des vulnérabilités de correction des menaces créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
+description: La réponse d’API contient les & gestion des vulnérabilités de correction des menaces créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
 keywords: api, correction, api de correction, obtenir, tâches de correction, méthodes de correction, propriétés de correction,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,29 +16,29 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa40768a2ed11c112bd6fc57575dce3e4db1146a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbd37d48477cdd9b0a0dc7c6c5703b96ffb4b89e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152261"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168581"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Méthodes et propriétés des activités de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 La réponse de l’API [contient les & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)de correction des menaces qui ont été   créées dans votre client.
 
@@ -56,34 +56,34 @@ En savoir plus sur [les activités de correction.](tvm-remediation.md)
 
 ID de propriété|Type de données|Description
 :---|:---|:---
-category|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)
-completerEmail|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique
-completerId|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet
-completionMethod|Chaîne|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé ».
+Catégorie|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)
+completerEmail|String|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique
+completerId|String|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet
+completionMethod|String|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé ».
 createdOn|Date/heure|Heure de création de cette activité de correction
-description|String|Description de cette activité de correction
+Description|String|Description de cette activité de correction
 dueOn|Date/heure|Date d’échéance définie par le créateur pour cette activité de correction
 fixedDevices||Nombre d’appareils qui ont été corrigés
-id|Chaîne|ID de cette activité de correction
+ID|String|ID de cette activité de correction
 nameId|String|Nom du produit associé
-priorité|String|Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible)
+Priorité|String|Priorité définie par le créateur pour cette activité de correction (High\Medium\Low)
 productId|String|ID de produit associé
-productivityImpactRemediationType|Chaîne|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».
+productivityImpactRemediationType|String|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils qui n’affectent pas les utilisateurs. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».
 rbacGroupNames|String|Noms de groupes d’appareils associés
 recommendedProgram|String|Programme recommandé pour la mise à niveau vers
-recommendedVendor|Chaîne|Fournisseur recommandé pour la mise à niveau vers
+recommendedVendor|String|Fournisseur recommandé pour la mise à niveau vers
 recommendedVersion|String|Version recommandée pour la mise à jour/mise à niveau vers
 relatedComponent|String|Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité)
 requesterEmail|String|Adresse de messagerie du créateur
-requesterId|Chaîne|ID d’objet Creator
-requesterNotes|Chaîne|Notes (texte libre) ajoutées par le créateur pour cette activité de correction
-scid|Chaîne|SCID de la recommandation de sécurité associée
-status|Chaîne|État de l’activité de correction (actif/terminé)
+requesterId|String|ID d’objet Creator
+requesterNotes|String|Notes (texte libre) ajoutées par le créateur pour cette activité de correction
+Scid|String|SCID de la recommandation de sécurité associée
+État|String|État de l’activité de correction (actif/terminé)
 statusLastModifiedOn|Date/heure|Date de mise à jour du champ d’état
-targetDevices|Entier long|Nombre d’appareils exposés pour qui cette correction s’applique
-title|Chaîne|Titre de cette activité de correction
-type|Chaîne|Type de correction
-vendorId|Chaîne|Nom du fournisseur associé
+targetDevices|Entier long|Nombre d’appareils exposés à appliquer à cette correction
+Titre|Chaîne|Titre de cette activité de correction
+Type|String|Type de correction
+vendorId|String|Nom du fournisseur associé
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -95,4 +95,4 @@ vendorId|Chaîne|Nom du fournisseur associé
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

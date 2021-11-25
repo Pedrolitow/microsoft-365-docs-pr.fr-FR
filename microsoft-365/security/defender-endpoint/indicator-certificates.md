@@ -15,27 +15,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b87c249fad5f3d6e2dd4f5ce7076a7f1b00506c7
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 7140b5714dd3660fe8dead37c3b6341d026fbb7c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240091"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166865"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Vous pouvez créer des indicateurs pour les certificats. Voici quelques cas d’utilisation courants :
 
-- Scénarios dans le cas où vous devez déployer [](controlled-folders.md) des technologies de blocage, telles que les règles de réduction de la [surface](attack-surface-reduction.md) d’attaque et l’accès contrôlé aux dossiers, mais qui doivent autoriser les comportements des applications signées en ajoutant le certificat dans la liste d’autorisations.
+- Scénarios dans le cas où vous devez déployer [](controlled-folders.md) des technologies de blocage, telles que les règles de réduction de la [surface](attack-surface-reduction.md) d’attaque et l’accès contrôlé aux dossiers, mais que vous devez autoriser les comportements des applications signées en ajoutant le certificat dans la liste d’autorisations.
 - Blocage de l’utilisation d’une application signée spécifique au sein de votre organisation. En créant un indicateur pour bloquer le certificat de l’application, l’antivirus Windows Defender empêchera les exécutions de fichiers (blocage et correction) et les examens et corrections automatisés se comporteront de la même manière.
 
 ## <a name="before-you-begin"></a>Avant de commencer

@@ -1,5 +1,5 @@
 ---
-title: Intégration à Microsoft Defender pour le cloud
+title: Intégration de à Microsoft Defender pour le cloud
 description: En savoir plus sur l’intégration de Microsoft Defender for Endpoint à Microsoft Defender pour cloud
 keywords: intégration, serveur, azure, 2012r2, 2016, 2019, intégration de serveur, gestion des appareils, configuration de Microsoft Defender pour les serveurs endpoint, intégration de Microsoft Defender pour les serveurs Endpoint, intégration de Microsoft Defender pour les serveurs Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248b9aaf8affb3fc575b6624bef8cce18f14358d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4364855120524f7b6e993a3827a03a3bd5f79d96
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109850"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170523"
 ---
-# <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration à Microsoft Defender pour le cloud
+# <a name="integration-with-microsoft-defender-for-cloud"></a>Intégration de à Microsoft Defender pour le cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft Defender pour point de terminaison
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender pour le cloud
 
 Microsoft Defender pour le point de terminaison peut s’intégrer à Microsoft Defender pour le Cloud pour fournir une solution de protection Windows serveur complète. Avec cette intégration, Microsoft Defender pour le Cloud peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
@@ -52,6 +52,6 @@ La surveillance des points de terminaison de serveur utilisant cette intégratio
 
 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégration Windows Server 2012 R2, 2016, SAC version 1803 et 2019](configure-server-endpoints.md)

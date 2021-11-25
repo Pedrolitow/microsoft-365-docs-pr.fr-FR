@@ -1,5 +1,5 @@
 ---
-title: Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
+title: Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur Linux manuellement à partir de la ligne de commande.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, loi, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
@@ -16,23 +16,23 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d510ad9e2fb0609fa6eecf21f3d038a28f9cd0d8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c506f0ee86739bf17d46b8faafe69c6dcfdac82c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665690"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167237"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linux manuellement. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
@@ -46,7 +46,7 @@ Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linu
   - [Télécharger le package d’intégration](#download-the-onboarding-package)
   - [Configuration du client](#client-configuration)
   - [Script du programme d’installation](#installer-script)
-  - [Journal des problèmes d’installation](#log-installation-issues)
+  - [Journaux des problèmes d’installation](#log-installation-issues)
   - [Mises à niveau du système d’exploitation](#operating-system-upgrades)
   - [Désinstallation](#uninstallation)
 
@@ -56,7 +56,7 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -331,7 +331,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-3. Vérifiez que l’appareil est désormais associé à votre organisation et signale un identificateur d’organisation valide :
+3. Vérifiez que l’appareil est maintenant associé à votre organisation et signale un identificateur d’organisation valide :
 
     ```bash
     mdatp health --field org_id
@@ -350,7 +350,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     > mdatp health --field definitions_status
     > ```
     >
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](linux-static-proxy-configuration.md#post-installation-configuration)
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
 
 5. Exécutez un test de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 

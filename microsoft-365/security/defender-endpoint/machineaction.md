@@ -15,19 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209440"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171160"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,7 +45,7 @@ ms.locfileid: "60209440"
 |---|---|---|
 |[List MachineActions](get-machineactions-collection.md)|[Action de l’ordinateur](machineaction.md)|Liste des [entités d’action](machineaction.md) de l’ordinateur.|
 |[Obtenir MachineAction](get-machineaction-object.md)|[Action de l’ordinateur](machineaction.md)|Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.|
-|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir d’un [ordinateur.](machine.md)|
+|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir [d’un ordinateur.](machine.md)|
 |[Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)|[Action de l’ordinateur](machineaction.md)|Obtenez l’URI pour télécharger le package d’enquête.|
 |[Isoler l’ordinateur](isolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Isoler [l’ordinateur](machine.md) du réseau.|
 |[Libérer la machine de l’isolation](unisolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Libérer [l’ordinateur](machine.md) de l’isolation.|
@@ -70,16 +71,16 @@ ms.locfileid: "60209440"
 |externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 |requestSource|string|Nom de l’utilisateur/de l’application qui a soumis l’action.|
 |Commandes |tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
-|cancellationRequestor|Chaîne|Identité de la personne qui a annulé l’action.|
+|cancellationRequestor|String|Identité de la personne qui a annulé l’action.|
 |requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
-|cancellationComment|Chaîne|Commentaire écrit lors de l’annulation de l’action.|
+|cancellationComment|String|Commentaire écrit lors de l’annulation de l’action.|
 |statut|Énum|État actuel de la commande. Les valeurs possibles sont : « En attente », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
-|machineId|Chaîne|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
-|computerDnsName|Chaîne|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|machineId|String|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|computerDnsName|String|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
 |cancellationDateTimeUtc|DateTimeOffset|Date et heure d’annulation de l’action.|
 |lastUpdateDateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
-|title|Chaîne|Titre de l’action de l’ordinateur.|
+|title|String|Titre de l’action de l’ordinateur.|
 |relatedFileInfo|Classe|Contient deux propriétés. chaîne `fileIdentifier` , Enum `fileIdentifierType` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».|
 
 ## <a name="json-representation"></a>Représentation Json

@@ -18,18 +18,19 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 956a20030e61b47a1dfa66872fc2e4ecc5eca967
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962493"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171472"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Pourquoi les règles de réduction de la surface d’attaque sont-elles importantes ?
@@ -178,13 +179,13 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 |---|:---:|---|---|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
-|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
 |[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016|
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version Windows 11|
 |[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non pris en charge|[Windows 10 version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) ou version Windows 11|

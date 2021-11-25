@@ -1,6 +1,6 @@
 ---
-title: Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison
-description: Activez l’intégration SIEM pour recevoir des détections dans votre solution de gestion des informations et des événements de sécurité (SIEM).
+title: Activer l’intégration SIEM dans Microsoft Defender pour endpoint
+description: Activez l’intégration SIEM pour recevoir des détections dans votre solution de gestion des événements et des informations de sécurité (SIEM).
 keywords: activer un connecteur siem, un siem, un connecteur, des informations de sécurité et des événements
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c102583b2e3d8abc7995821870252946e48ccac6
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217137"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166973"
 ---
-# <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison
+# <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Activer l’intégration SIEM dans Microsoft Defender pour endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -38,7 +39,7 @@ Activez l’intégration des informations de sécurité et de la gestion des év
 >
 > - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
 > - [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
-> - L’API d’alerte microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
+> - L’API d’alerte Microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -60,7 +61,7 @@ Activez l’intégration des informations de sécurité et de la gestion des év
    > [!TIP]
    > Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres int gr es de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
 
-2. Sélectionnez **Activer l’intégration SIEM.** Cette action active la section détails d’accès au connecteur SIEM avec des **valeurs** pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD).
+2. Sélectionnez **Activer l’intégration SIEM.** Cette action active la section des détails d’accès au connecteur SIEM avec des **valeurs** pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD).
 
     > [!WARNING]
     > La secret client n’est affichée qu’une seule fois. Veillez à en conserver une copie en lieu sûr.
@@ -84,13 +85,13 @@ Activez l’intégration des informations de sécurité et de la gestion des év
    > [!NOTE]
    > Vous devez générer un nouveau jeton Actualiser tous les 90 jours.
 
-6. Suivez les instructions pour créer une inscription d’application Azure AD pour [Microsoft Defender pour endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) et attribuez-lui les autorisations correctes pour lire les alertes.
+6. Suivez les instructions de création d’une Azure AD [d’application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) microsoft Defender pour le point de terminaison et attribuez-lui les autorisations correctes pour lire les alertes.
 
-Vous pouvez maintenant configurer votre solution SIEM ou vous connecter à l’API REST de détections par le biais d’un accès par programme. Vous devrez utiliser les jetons lors de la configuration de votre solution SIEM pour lui permettre de recevoir des détections de la Microsoft 365 Defender.
+Vous pouvez maintenant configurer votre solution SIEM ou vous connecter à l’API REST de détections par le biais d’un accès par programme. Vous devrez utiliser les jetons lors de la configuration de votre solution SIEM pour lui permettre de recevoir des détections de Microsoft 365 Defender.
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Intégrer Microsoft Defender for Endpoint à IBM QRadar
 
-Vous pouvez configurer IBM QRadar pour collecter des détections à partir de Microsoft Defender for Endpoint. Pour plus d’informations, voir [le Centre de connaissances IBM.](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide)
+Vous pouvez configurer IBM QRadar pour collecter les détections à partir de Microsoft Defender for Endpoint. Pour plus d’informations, voir [le Centre de connaissances IBM.](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -16,18 +16,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e6bebd01ba3740efcf99677f83006e2d26c2157
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148865"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166433"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
 Les applications potentiellement indésirables (PUA) est une catégorie de logiciel qui peut amener votre ordinateur à fonctionner lentement, afficher des publicités inattendues ou, au pire, installer un autre programme pouvant être imprévu ou non souhaité. Les applications potentiellement indésirables (PUA) ne sont pas considérées comme des virus, des programmes malveillants ou d’autres types de menace, mais elles peuvent effectuer des actions sur les points de terminaison qui affectent négativement l’utilisation ou les performances des points de terminaison. Le terme *PUA* peut également faire référence à une application ayant une réputation médiocre, tel qu’évalué par Microsoft Defender pour point de terminaison, en raison de types de comportement indésirables.

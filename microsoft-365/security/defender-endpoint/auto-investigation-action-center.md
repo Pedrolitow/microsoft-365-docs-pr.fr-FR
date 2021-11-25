@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 08a81e94098f01cb91bc2f096a5e1946ff7a2e73
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2432b01e574e72b7163b1571d1e476bb9a807d30
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111326"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170331"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitez le centre de mise en œuvre pour voir les actions de correction
 
@@ -32,7 +32,7 @@ Pendant et après un examen automatisé, les actions de correction des détectio
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="new-a-unified-action-center"></a>(NOUVEAU!) Un centre de l’action unifié
@@ -56,7 +56,7 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 
 - [Defender pour point de terminaison](microsoft-defender-endpoint.md)
 - [Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp)
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 
 > [!TIP]
 > Pour en savoir plus, consultez [La réglementation requise.](/microsoft-365/security/mtp/prerequisites)

@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30e1fdb8baede9506af52ae844f456baed1097a9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 82d5fb32a9535a5b341bca8e5bee989d88ad8232
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882680"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167357"
 ---
 # <a name="feedback-loop-blocking"></a>Blocage de la boucle de commentaires
 
@@ -29,9 +29,9 @@ ms.locfileid: "60882680"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le blocage de boucle de commentaires, également appelé [](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) protection rapide, est un composant des fonctionnalités de blocage comportemental et de blocage de contenu dans [Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/) Avec le blocage de la boucle de commentaires, les appareils au sein de votre organisation sont mieux protégés contre les attaques. 
 

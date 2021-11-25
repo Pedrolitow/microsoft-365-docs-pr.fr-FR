@@ -16,22 +16,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d05cf31ab773aa1b2b6583aca290514077621b3a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b5061f0230a9704cb0fb9b80752c4d38954ad12
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152213"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168538"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour le point de terminaison sur Linux pour la découverte de proxy statique
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide de `HTTPS_PROXY` la variable d’environnement. Ce paramètre doit être configuré **à** la fois au moment de l’installation et après l’installation du produit.
 
@@ -65,7 +65,7 @@ Lors de l’installation, `HTTPS_PROXY` la variable d’environnement doit être
 
 La `HTTPS_PROXY` variable d’environnement peut être définie de la même manière lors de la désinstallation.
 
-Notez que l’installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais non configuré. Toutefois, la télémétrie n’est pas envoyée et l’opération peut prendre beaucoup plus de temps en raison de délai d’accès réseau.
+Notez que l’installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais n’est pas configuré. Toutefois, la télémétrie n’est pas envoyée et l’opération peut prendre beaucoup plus de temps en raison de délai d’accès réseau.
 
 ## <a name="post-installation-configuration"></a>Configuration post-installation
 

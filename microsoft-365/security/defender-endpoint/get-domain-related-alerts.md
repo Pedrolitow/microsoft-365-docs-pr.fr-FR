@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: aef9c876d9c2dc4ca8d68538d0742141525e2cfd
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9eb13c65c6df9bcf6a71ab9e59bcf0c3a2db713b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122224"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166937"
 ---
 # <a name="get-domain-related-alerts-api"></a>API Obtenir les alertes liées au domaine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -73,7 +74,7 @@ GET /api/domains/{domain}/alerts
 
 |En-tête|Valeur|
 |---|---|
-|Autorisation|Chaîne|
+|Autorisation|String|
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -16,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ada4ebd15d9a84241ca68b6e2664475f97ab7d6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ef30f7b21b760d8e3695fcd670cf5cebbd43bd79
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191826"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167446"
 ---
 # <a name="list-software-inventory-api"></a>API d’inventaire de logiciels de liste
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,7 +44,7 @@ Récupère l’inventaire logiciel de l’organisation.
 <br>```$filter``` on:  ```id``` , et les ```name``` ```vendor``` propriétés.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Consultez des exemples [dans les requêtes OData avec Microsoft Defender pour point de terminaison.](exposed-apis-odata-samples.md)
+<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -64,7 +65,7 @@ GET /api/Software
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

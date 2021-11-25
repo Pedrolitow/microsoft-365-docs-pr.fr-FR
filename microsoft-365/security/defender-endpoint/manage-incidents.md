@@ -18,20 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 051f339d1043aaea2c81954d51493cee1c52a969
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71d453bbc5b94b4685a65c1074244ae98b16448c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156245"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166805"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer Microsoft Defender pour les incidents de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +50,7 @@ Vous pouvez affecter des incidents à vous-même, modifier l’état et la class
 > [!TIP]
 > Pour une visibilité supplémentaire en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 >
-> Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+> Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 >
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leurs noms.
 >

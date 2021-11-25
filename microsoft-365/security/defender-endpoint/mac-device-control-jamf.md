@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7306782d62f91cea528a70ff0c3754085d0d3c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 20579b54e0ce9e58c1466afbbda348730ffad839
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195244"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168521"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exemples de stratégies de contrôle d’appareil pour JAMF
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,7 +38,7 @@ Ce document contient des exemples de stratégies de contrôle d’appareil que v
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations `none` sur les fichiers seront interdites.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur `none` les fichiers seront interdites.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +158,7 @@ L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restreindre des appareils spécifiques identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série
 
-L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du fournisseur, l’ID de produit `fff0` et les numéros de série et `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
+L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du `fff0` fournisseur, l’ID de produit `1000` et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

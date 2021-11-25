@@ -15,22 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e980cc5dd2f164acf8c63aab5511423d5a38d46b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554995"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171664"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
 La vignette **Appareils avec problèmes de** capteur se trouve dans le tableau de bord Opérations de sécurité. Cette vignette fournit des informations sur la capacité de chaque appareil à fournir des données de capteur et à communiquer avec le service Defender for Endpoint. Elle indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques et à prendre des mesures pour les corriger.
 
@@ -39,14 +40,14 @@ Il existe deux indicateurs d’état sur la vignette qui fournissent des informa
 - **Mal configuré :** ces appareils peuvent signaler partiellement des données de capteur au service Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
 - **Inactif** : appareils qui ont cessé de signaler au service Defender for Endpoint pendant plus de sept jours au cours du mois précédent.
 
-Cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
+Le fait de cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
 
 ![Capture d’écran de la vignette Appareils avec problèmes de capteur.](images/atp-devices-with-sensor-issues-tile.png)
 
-Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction de l’état suivant :
+Dans **la liste Appareils,** vous pouvez filtrer la liste d’état selon l’état suivant :
 
 - **Actif** : appareils qui font activement des rapports au service Defender for Endpoint.
-- **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :
+- **Mal configuré :** ces appareils peuvent signaler partiellement des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :
   - **Aucune donnée de capteur** : les appareils ont cessé d’envoyer des données de capteur. Des alertes limitées peuvent être déclenchées à partir de l’appareil.
   - **Communications réduites** : la capacité de communication avec l’appareil est réduite. Il est possible que l'envoi de fichiers pour une analyse approfondie, le blocage de fichiers, l'isolement de l'appareil du réseau et d'autres actions qui nécessitent une communication avec l'appareil ne fonctionnent pas.
 - **Inactif** : appareils qui ont cessé de signaler au service Defender for Endpoint.

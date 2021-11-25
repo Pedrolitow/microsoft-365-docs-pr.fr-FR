@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
+title: Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 description: Résolution des problèmes de performances dans Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, performances
 ms.prod: m365-security
@@ -16,21 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 973697b835e437a777838d2915b2a9cd88647ed3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0d2f270f093d08c00c5082a8da667c3f0fb927fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699241"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168869"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Defender pour Endpoint sur Linux.
 
@@ -54,7 +54,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     Configuration property updated
     ```
 
-    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions de définir les préférences pour [Defender pour Endpoint sur Linux.](linux-preferences.md)
+    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences pour [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
     Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être protection évolutive des points de terminaison composant. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures de prévention.
 

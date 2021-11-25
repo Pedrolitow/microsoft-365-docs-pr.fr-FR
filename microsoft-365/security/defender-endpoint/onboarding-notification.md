@@ -15,20 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199740"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166769"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +46,7 @@ Créez une règle de notification afin que, lorsqu’un script d’intégration 
 Vous devez avoir accès à :
 
 - Power Automate (plan par utilisateur au minimum). Pour plus d’informations, [voir Power Automate page de tarification.](https://flow.microsoft.com/pricing/)
-- Tableau ou SharePoint Liste ou bibliothèque /SQL DB Azure.
+- Table ou SharePoint Liste ou Bibliothèque /SQL DB Azure.
 
 ## <a name="create-the-notification-flow"></a>Créer le flux de notification
 
@@ -71,19 +72,19 @@ Vous devez avoir accès à :
    - Méthode : « GET » comme valeur pour obtenir la liste des appareils.
    - URI : Entrez `https://api.securitycenter.microsoft.com/api/machines` .
    - Authentification : sélectionnez « Active Directory OAuth ».
-   - Client : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
+   - Client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
    - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
+   - Secret : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
 
     ![Image des conditions HTTP.](images/http-conditions.png)
 
-6. Ajoutez une nouvelle étape en sélectionnant Ajouter une **nouvelle action,** puis recherchez opérations de **données** et sélectionnez Analyse **JSON**.
+6. Ajoutez une nouvelle étape en sélectionnant Ajouter **une nouvelle action,** puis recherchez Opérations de **données** et **sélectionnez Analyse JSON**.
 
     ![Image des opérations de données.](images/data-operations.png)
 
-7. Ajouter le corps dans **le champ** Contenu.
+7. Ajouter le corps dans le **champ** Contenu.
 
     ![Image de l’utilisation du JSON d’une parse.](images/parse-json.png)
 
@@ -178,7 +179,7 @@ Vous devez avoir accès à :
     - Si oui, aucune notification ne sera déclenchée
     - Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
 
-    ![Image d’application à chacun d’eux.](images/flow-apply.png)
+    ![Image de s’appliquer à chacun d’eux.](images/flow-apply.png)
 
     ![Image de s’appliquer à chacun avec obtenir des éléments.](images/apply-to-each.png)
 

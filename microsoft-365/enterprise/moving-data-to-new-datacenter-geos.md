@@ -3,7 +3,7 @@ title: Déplacement de données principales vers de nouvelles Microsoft 365 de c
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 11/16/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,26 +15,26 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles Office 365 de centres de données et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle géo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 724021bc3fb5fd8a0946bcf5f460e4848c44bf9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 590d1b7e72f79e0e6cfd4e29a0a78560f6c13433
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209644"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168845"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données
 
 Nous continuons à ouvrir de nouvelles géos de centres de données pour Microsoft 365 services. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. 
 
 Les données client essentielles sont un terme qui fait référence à un sous-ensemble de données client, notamment : 
-- Exchange Online de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes)
-- SharePoint Contenu du site en ligne et fichiers stockés dans ce site
+- Exchange Online contenu de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes)
+- SharePoint contenu du site en ligne et les fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive Entreprise
 - Teams messages de conversation, y compris les messages privés, les messages de canal et les images utilisées dans les conversations
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants répertoriés dans le tableau ci-dessous une option pour demander une migration anticipée des données client essentielles de leur organisation au repos vers leur nouvelle géodécenter de données.
   
-|**Clients dont le pays d’inscription client est**|**Précédente région de centre de données**|**Nouvelle géo de centre de données**|**Région disponible depuis**|
+| Clients dont le pays d’inscription client est | Précédente région de centre de données | Nouvelle région de centre de données | Région disponible depuis |
 |:-----|:-----|:-----|:-----|
 |**Japon**| Asie/Pacifique | Japon | Décembre 2014 |
 |**Australie, Nouvelle-Zélande, Fidji**| Asie/Pacifique | Australie | Mars 2015 |
@@ -45,10 +45,11 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**France**| Union européenne | France | Mars 2018 |
 |**Émirats arabes unis**| Union européenne | Émirats arabes unis | Juin 2019 |
 |**Afrique du Sud**| Union européenne | Afrique du Sud | Juillet 2019 |
-|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
-|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
-|**Norvège**| Union européenne | Norvège | Avril 2020 |
+|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
+|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
+|**Norvège**| Union européenne | Norvège | Avril 2020 |
 |**Brésil**| Amériques | Brésil | Novembre 2020 |
+|**Suède**| Union européenne | Suède | Novembre 2021 |
 
 Depuis le 1er octobre 2020, 2020 clients avec un abonnement Office 365 Éducation inclus dans le client ne sont pas éligibles pour la migration.
 

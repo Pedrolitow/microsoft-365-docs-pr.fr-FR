@@ -1,7 +1,7 @@
 ---
 title: Obtenir les ko manquants par ID d’appareil
 description: Récupère les mises à jour de sécurité manquantes par ID d’appareil
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm microsoft Defender pour point de terminaison
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fd8bb1d004259a3c3f8595b4686e5c78266495c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3fb1c443d8776d342e5e7937e7ca761bba9f842
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152247"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168948"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -54,7 +55,7 @@ Application | Software.Read.All | « Lire les informations sur les logiciels de 
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

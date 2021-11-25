@@ -17,25 +17,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1e31b032d75b6706f1aadf8a7cb340a7ef6d91f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7a4002e25cf5ad956f60b477a15ee5e5f2d395a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178298"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167717"
 ---
 # <a name="raw-data-streaming-api"></a>API de diffusion de données brutes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffuser des événements de recherche avancée vers des hubs d’événements et/ou un compte de stockage Azure
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Stream Advanced Hunting events to Event Hubs and/or Azure storage account
 
-Microsoft Defender pour le point [](../defender/advanced-hunting-overview.md) de terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
+Microsoft Defender pour point de [](../defender/advanced-hunting-overview.md) terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4ga]
 
@@ -50,4 +50,4 @@ Rubrique|Description
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [Documentation Azure Event Hubs](/azure/event-hubs/)
-- [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)
+- [stockage Azure de compte d’utilisateur](/azure/storage/common/storage-account-overview)

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-ms.date: 02/02/2021
+ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 738cdd4d312de4bb7c7f74404a6905cd02c1d3f4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109862"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167393"
 ---
 # <a name="overview-of-automated-investigations"></a>Vue d’ensemble des enquêtes automatisées
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -105,4 +105,4 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 
 - [Protection PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Examen et réponse automatisés dans Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Enquête et réponse automatisées dans Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Enquête et réponse automatisées dans Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

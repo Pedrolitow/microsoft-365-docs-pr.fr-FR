@@ -16,21 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e0d7649c4e39651cec8cdf293177abf66709964e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121374"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168821"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -64,7 +64,7 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|Chaîne|ID d’alerte.|
+|id|String|ID d’alerte.|
 |title|String|Titre de l’alerte.|
 |description|String|Description de l’alerte.|
 |alertCreationTime|Nullable DateTimeOffset|Date et heure (au UTC) de création de l’alerte.|
@@ -75,22 +75,22 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 |incidentId|Nullable Long|ID [d’incident](view-incidents-queue.md) de l’alerte.|
 |investigationId|Nullable Long|ID [d’examen](automated-investigations.md) lié à l’alerte.|
 |investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|assignedTo|Chaîne|Propriétaire de l’alerte.|
+|assignedTo|String|Propriétaire de l’alerte.|
 |rbacGroupName|String|Nom du groupe d’appareils RBAC.|
 |mitreTechniques|String|Mitre Enterprise technique ID.|
-|relatedUser|Chaîne|Détails de l’utilisateur associé à une alerte spécifique.|
+|relatedUser|String|Détails de l’utilisateur associé à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
 |statut|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).|
 |classification|Nullable, enum|Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).|
 |détermination|Nullable, enum|Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
 |category|String|Catégorie de l’alerte.|
-|detectionSource|Chaîne|Source de détection.|
-|threatFamilyName|Chaîne|Famille de menaces.|
-|threatName|Chaîne|Nom de la menace.|
+|detectionSource|String|Source de détection.|
+|threatFamilyName|String|Famille de menaces.|
+|threatName|String|Nom de la menace.|
 |machineId|String|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
-|computerDnsName|Chaîne|[nom complet](machine.md) de l’ordinateur.|
-|aadTenantId|Chaîne|ID Azure Active Directory de l’autre.|
-|détecteurId|Chaîne|ID du détecteur qui a déclenché l’alerte.|
+|computerDnsName|String|[nom complet](machine.md) de l’ordinateur.|
+|aadTenantId|String|ID Azure Active Directory de l’autre.|
+|détecteurId|String|ID du détecteur qui a déclenché l’alerte.|
 |commentaires|Liste des commentaires d’alerte|L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
 |Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|
 |

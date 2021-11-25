@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1744735008c201795a43344e7fb81c65cf2431
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8523439bbcc8958c1fcb01a6db181c05263ef411
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554287"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167705"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Rapport d’analyste dans l’analyse des menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,19 +48,19 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 
 |Section Rapport|Description|
 |---|---|
-|Résumé exécutif|Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur, de votre emplacement géographique et de votre réseau.|
+|Résumé exécutif|Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur d’activité, de votre emplacement géographique et de votre réseau.|
 |Analyse|Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque|
-|Techniques MITRE ATT&CK observées|Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/)|
+|Techniques MITRE ATT&CK observées|Mapilation des techniques observées avec l’infrastructure [d’attaque CK&ATT MITRE](https://attack.mitre.org/)|
 |[Atténuations](#apply-additional-mitigations)|Recommandations qui peuvent arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces.|
 |[Détails de la détection](#understand-how-each-threat-can-be-detected)|Détections spécifiques et génériques fournies par les solutions de sécurité Microsoft qui peuvent faire surface de l’activité ou des composants associés à la menace.|
-|[Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting)|[Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle de menace. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants.|
-|References|Publications Microsoft et tierces référencés par les analystes lors de la création du rapport. Le contenu de l’analyse des menaces est basé sur des données validées par des chercheurs Microsoft. Les informations provenant de sources tierces accessibles au public sont clairement identifiées en tant que telles.|
+|[Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting)|[Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle des menaces. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants.|
+|Références|Publications Microsoft et tierces référencés par les analystes lors de la création du rapport. Le contenu de l’analyse des menaces est basé sur des données validées par des chercheurs Microsoft. Les informations provenant de sources tierces accessibles au public sont clairement identifiées en tant que telles.|
 |Journal des modifications|L’heure de publication du rapport et les modifications importantes apportées au rapport.|
 |
 
 ## <a name="apply-additional-mitigations"></a>Appliquer des atténuations supplémentaires
 
-L’analyse des menaces suit dynamiquement [l’état des mises à jour de sécurité et des configurations sécurisées.](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices) Ces informations sont disponibles sous la mesure des graphiques et des tableaux de **l’onglet Atténuations.**
+L’analyse des menaces suit dynamiquement [l’état des mises à jour de sécurité et des configurations sécurisées.](threat-analytics.md#mitigations-review-list-of-mitigations-and-the-status-of-your-devices) Ces informations sont disponibles sous la mesure des graphiques et des tableaux sous **l’onglet Atténuations.**
 
 En plus de ces atténuations suivies, le rapport d’analyste traite également des atténuations qui ne sont _pas_ surveillées dynamiquement. Voici quelques exemples d’atténuations importantes qui ne sont pas suivis dynamiquement :
 
@@ -84,11 +84,11 @@ Ces détections sont disponibles sur les appareils [sur](/windows/security/threa
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertes de détection et de réponse (PEPT) de point de terminaison
 
-PEPT alertes sont élevées pour les [appareils intégrés à Microsoft Defender pour point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison (antivirus, protection réseau, protection contre la falsification) qui servent de sources de signal puissantes.
+PEPT alertes sont élevées pour les appareils [intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md) Ces alertes s’appuient généralement sur les signaux de sécurité collectés par le capteur Microsoft Defender for Endpoint et d’autres fonctionnalités de point de terminaison (antivirus, protection réseau, protection contre la falsification) qui servent de sources de signal puissantes.
 
-À l’exemple de la liste des détections antivirus, certaines alertes PEPT sont conçues pour indicateur générique d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
+À l’exemple de la liste des détections antivirus, certaines alertes PEPT sont conçues pour indicateurs génériques d’un comportement suspect qui n’est peut-être pas associé à la menace détectée. Dans ce cas, le rapport identifie clairement l’alerte comme « générique » et n’influence aucun graphique du rapport.
 
-## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Rechercher des artefacts de menace discrets à l’aide d’un chasse avancée
+## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Rechercher des artefacts de menace discrets à l’aide de la recherche avancée
 
 Bien que les détections vous permettent d’identifier et d’arrêter automatiquement la menace de suivi, de nombreuses activités d’attaque laissent des traces subtiles qui nécessitent une inspection supplémentaire. Certaines activités d’attaque présentent des comportements qui peuvent également être normaux, de sorte que leur détection dynamique peut entraîner un bruit opérationnel, voire des faux positifs.
 
@@ -96,7 +96,7 @@ Bien que les détections vous permettent d’identifier et d’arrêter automati
 
 Les requêtes de recherche avancées dans les rapports d’analyste ont été examinées par les analystes Microsoft et sont prêtes à être exécutés dans l’éditeur de requête [de recherche avancée.](https://securitycenter.windows.com/advanced-hunting) Vous pouvez également utiliser les requêtes pour créer des règles de [détection personnalisées](custom-detection-rules.md) qui déclenchent des alertes pour les correspondances futures.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble des analyses de menaces](threat-analytics.md)
 - [Rechercher de manière proactive les menaces avec le recherche avancée](advanced-hunting-overview.md)

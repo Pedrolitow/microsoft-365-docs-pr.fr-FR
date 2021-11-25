@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0bf6b5ed0d59e445eba4f8146d8321cf5bff1bf9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881710"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166649"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
@@ -28,8 +28,7 @@ ms.locfileid: "60881710"
 
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si vous rencontrez un problème avec Antivirus Microsoft Defender, vous pouvez rechercher dans les tableaux de cette rubrique un problème correspondant et une solution potentielle.
 
@@ -977,15 +976,15 @@ Utilisateur UAC </dt>
 <dt>État de l’action : &lt; Description des &gt; actions supplémentaires Code</dt>
 <dt>d’erreur : &lt; code de résultat de code &gt; d’erreur associé à l’état de la menace. Valeurs HRESULT standard.</dt> 
 <dt>Description de l’erreur : &lt; Description de &gt; l’erreur.</dt> 
-<dt>Version de la signature : &lt; &gt;</dt>Version du moteur de définition :
-<dt> &lt; Antimalware Engine version &gt; </dt> REMARQUE : chaque fois que Antivirus Microsoft Defender, Microsoft Security Essentials, outil de suppression de logiciels malveillants ou System Center Endpoint Protection détecte un programme malveillant, il restaure les paramètres et services système suivants qui ont pu être modifiés :<ul>
+<dt>Version de la signature : &lt; Version &gt; du moteur</dt>
+<dt>de définition : Antimalware Engine version &lt; : &gt; </dt> chaque fois que Antivirus Microsoft Defender, Microsoft Security Essentials, outil de suppression de logiciels malveillants ou System Center Endpoint Protection détecte un programme malveillant, il restaure les paramètres et services système suivants que le programme malveillant a peut-être modifiés :<ul>
 <li>Paramètre par défaut d’Internet Explorer Microsoft Edge paramètre</li>
 <li>Paramètres du contrôle d’accès utilisateur</li>
 <li>Paramètres Chrome</li>
 <li>Données du contrôle de démarrage</li>
 <li>Paramètres de Registre Regedit et du Gestionnaire des tâches</li>
-<li>Windows Mise à jour, service de transfert intelligent en arrière-plan et service d’appel de procédure distante</li>
-<li>Windows Fichiers du système d’exploitation</li></ul>
+<li>Windows mise à jour, service de transfert intelligent en arrière-plan et service d’appel de procédure distante</li>
+<li>Windows du système d’exploitation</li></ul>
 Le contexte ci-dessus s’applique aux versions client et serveur suivantes :
 <table>
 <tr>
@@ -1356,20 +1355,20 @@ Rapport d’état du client antivirus.
 <dt>Antimalware Engine &lt; &gt; version</dt>
 <dt> &lt; &gt; </dt>du moteur d’inspection en temps réel du réseau : version antivirus du moteur d’inspection du réseau : version de
 <dt> &lt; signature &gt; antivirus</dt>version
-<dt>antispyware signature : version de &lt; signature Antispyware &gt; version</dt>de la signature Network
-<dt>Realtime Inspection version : &lt; Network &gt;</dt>État RTP de la version RTP de la signature d’inspection en temps réel : état de protection en temps réel (activé ou désactivé) OA : état d’accès (activé ou
-<dt> &lt; &gt; désactivé)</dt>IOAV : état bm des pièces jointes rapide Outlook s (activé ou désactivé) d’IE : âge de signature antivirus (activé ou
-<dt> &lt; &gt; désactivé)</dt>: âge de signature antivirus
-<dt> &lt; &gt; </dt>(en
-<dt> &lt; &gt; jours)</dt>
-<dt> &lt; &gt; )</dt>Âge de signature antispyware : âge de signature
-<dt> &lt; antispyware &gt; (en jours)</dt>Âge de la dernière analyse rapide : Dernière analyse rapide
+<dt>antispyware signature : version de &lt; signature Antispyware version &gt; </dt>de la signature Network
+<dt>Realtime Inspection version : &lt; &gt;</dt>État RTP de la version RTP de l’inspection du réseau en temps réel : état de protection en temps réel (activé ou
+<dt> &lt; &gt; désactivé)</dt>OA : état d’accès (activé ou
+<dt> &lt; &gt; désactivé)</dt>IOAV : état bm des pièces jointes rapide Outlook s (activé ou désactivé)
+<dt>d’INTERNETE &lt; &gt; </dt>: état de surveillance du comportement (activé ou
+<dt> &lt; &gt; désactivé)</dt>âge de signature antivirus : âge de
+<dt>signature &lt; antivirus &gt;  (en jours)</dt> 
+<dt>Âge de signature antispyware : &lt; Âge de signature antispyware &gt; (en jours)</dt>Dernière analyse rapide : âge de la dernière analyse rapide
 <dt> &lt; &gt; (en jours)</dt>Âge de la dernière analyse complète : âge de la dernière analyse complète
 <dt> &lt; &gt; (en jours)</dt>Heure de création de la signature antivirus :
 <dt>? &lt; Heure de &gt; création de la signature</dt>antivirus Heure de création de
 <dt>la signature Antispyware : ? &lt; Heure de création de &gt; signature antispyware Heure</dt>de la dernière
 <dt>analyse rapide : ? &lt; Heure de début &gt; de la dernière analyse rapide</dt>Heure de fin de
-<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Dernière source d’analyse rapide : Dernière source d’analyse rapide (0 = analyse non exécuté, 1 = initié par
+<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Source de la dernière analyse rapide : Dernière source d’analyse rapide (0 = analyse non exécuté, 1 = initié par
 <dt> &lt; &gt; l’utilisateur, 2 =</dt>initié par le système) Heure de début de la dernière analyse complète :
 <dt>? &lt; Heure de début &gt; de la dernière analyse complète</dt>Heure de fin de
 <dt>l’analyse complète : ? &lt; &gt;</dt>Dernière heure de fin de l’analyse complète Dernière source d’analyse complète : Dernière
@@ -1405,7 +1404,7 @@ Description :
 La version de signature antivirus a été mise à jour.
 <dl>
 <dt>Version actuelle de la signature : &lt; Version actuelle &gt; de la signature</dt>Version précédente de la signature : type de
-<dt>signature &lt; version &gt; précédente</dt>: type de 
+<dt>signature &lt; &gt; version précédente</dt>: type de 
 <dt> &lt; &gt; signature, par exemple : <ul>
 <li>Antivirus</li>
 <li>Logiciel anti-espion</li>
@@ -1457,14 +1456,14 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 <dt>Version précédente de l’intelligence de la sécurité : &lt; Version &gt; précédente</dt>Mise à jour Source : Source de mise à 
 <dt> &lt; &gt; jour, par exemple :
 <ul>
-<li>Dossier de mise à jour des informations de sécurité</li>
+<li>Dossier de mise à jour de l’intelligence de la sécurité</li>
 <li>Serveur de mise à jour de l’intelligence de sécurité interne</li>
 <li>Microsoft Update Server</li>
 <li>Partage de fichiers</li>
 <li>Centre de protection Microsoft contre les programmes malveillants (MMPC)</li>
 </ul>
 </dt>
-<dt>Étape de mise à jour &lt; : étape de mise à &gt; jour, par exemple :
+<dt>Étape de mise à &lt; jour : étape de mise à &gt; jour, par exemple :
 <ul>
 <li>Rechercher</li>
 <li>Télécharger</li>
@@ -2225,7 +2224,7 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender La protection en temps réel a redémarré une fonctionnalité. Il est recommandé d’exécuter une analyse système complète pour détecter les éléments qui ont pu être manqués pendant que cet agent était en panne.
+Antivirus Microsoft Defender Protection en temps réel a redémarré une fonctionnalité. Il est recommandé d’exécuter une analyse système complète pour détecter les éléments qui ont pu être manqués pendant que cet agent était en panne.
 <dl>
 <dt>Fonctionnalité : &lt; &gt; fonctionnalité, par exemple :
 <ul>
@@ -2663,7 +2662,7 @@ Remarque : la taille du fichier de définitions téléchargé à partir du site 
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; Généralement, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement.
+Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; En commun, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement.
 </td>
 </tr>
 <tr>

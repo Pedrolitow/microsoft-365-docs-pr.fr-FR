@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62cc53910cb5f2c618a45f3ea755c6be7a49c853
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145009"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166781"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -100,10 +100,10 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 11 Éducation
 - Windows 11 Professionnel
 - Windows 11 Professionnel Éducation
-- Windows 10 Entreprise
+- Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
-- Windows 10 Éducation
-- Windows 10 Professionnel
+- Windows 10 Éducation
+- Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
   - Windows Server 2008 R2 SP1
@@ -117,6 +117,8 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 Les appareils de votre réseau doivent être en cours d’exécution dans l’une de ces éditions.
 
 La configuration matérielle requise pour Defender pour Endpoint sur les appareils est la même pour les éditions pris en charge.
+
+Pour plus d’informations sur les versions Windows 10, voir (/windows/release-health/release-information).
 
 > [!NOTE]
 > Les ordinateurs exécutant des versions mobiles de Windows (tels que Windows CE et Windows 10 Mobile) ne sont pas pris en charge.

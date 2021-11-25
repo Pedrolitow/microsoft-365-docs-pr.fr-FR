@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5875568c21fb9128e6d3edc8db31721f20d19b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176894"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166949"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -81,7 +83,7 @@ Autorisation|String|Porteur {token}. **Obligatoire**.
 Nom|Type|Description
 :---|:---|:---
 tag|String|Nom de la balise. **Obligatoire**.
-useStartsWithFilter|Booléen|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 

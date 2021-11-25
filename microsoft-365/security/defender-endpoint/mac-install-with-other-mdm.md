@@ -1,7 +1,7 @@
 ---
 title: Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur Mac
 description: Installez Microsoft Defender pour point de terminaison sur Mac sur d’autres solutions de gestion.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, macos, principal, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, macos, magasin, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,23 +16,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64847494bba34be838617842481ce6016e0b803a
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668023"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171316"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -47,15 +48,15 @@ Avant de commencer, consultez la page principale de Microsoft Defender pour poin
 
 Si votre organisation utilise une solution de gestion des périphériques mobiles (MDM) qui n’est pas officiellement prise en charge, cela ne signifie pas que vous ne pouvez pas déployer ou exécuter Microsoft Defender pour endpoint sur macOS.
 
-Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution DE GESTION DES SOLUTIONS QUI prend en charge les fonctionnalités suivantes :
+Microsoft Defender pour le point de terminaison sur macOS ne dépend d’aucune fonctionnalité propre au fournisseur. Il peut être utilisé avec n’importe quelle solution MDM qui prend en charge les fonctionnalités suivantes :
 
 - Déployez un .pkg macOS sur des appareils gérés.
-- Déployez les profils de configuration système macOS sur les appareils gérés.
+- Déployer des profils de configuration système macOS sur des appareils gérés.
 - Exécutez un outil/script arbitraire configuré par l’administrateur sur des appareils gérés.
 
 La plupart des solutions mdm modernes incluent ces fonctionnalités, mais elles peuvent les appeler différemment.
 
-Toutefois, vous pouvez déployer Defender pour endpoint sans la dernière condition requise de la liste précédente :
+Toutefois, vous pouvez déployer Defender pour Endpoint sans la dernière condition requise de la liste précédente :
 
 - Vous ne pourrez pas collecter l’état de manière centralisée.
 - Si vous décidez de désinstaller Defender pour endpoint, vous devez vous connecter localement à l’appareil client en tant qu’administrateur.

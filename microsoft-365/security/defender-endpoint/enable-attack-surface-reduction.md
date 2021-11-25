@@ -17,19 +17,19 @@ ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 1c5ee1fea543a18208d583b4acc5cc2f52acce7a
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1632a0e04ce232c7daed42b86cde0f9053d6aadf
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111806"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167177"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -167,7 +167,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
+6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l’une des opérations suivantes :
 
    - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant**.
    - Ou cliquez sur **Suivant**

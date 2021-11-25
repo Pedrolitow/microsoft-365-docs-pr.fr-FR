@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f372835ebcdd64225f3eb3952dc6b227d1a70627
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 23838ce85603abfb213e2ae0afdcb65ee6ba2ae3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699184"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170969"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -39,11 +40,11 @@ Ces applications ne sont pas considérées comme des virus, des programmes malve
 
 Ces applications peuvent augmenter le risque d’infection de votre réseau par des programmes malveillants, rendre l’identification des programmes malveillants plus difficile et entraîner une perte de ressources informatiques lors du nettoyage des applications.
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Microsoft Defender pour le point de terminaison sur macOS peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
-Lorsqu’une puA est détectée sur un point de terminaison, Microsoft Defender for Endpoint sur macOS présente une notification à l’utilisateur, sauf si les notifications ont été désactivées. Le nom de la menace contient le mot « Application ».
+Lorsqu’une puA est détectée sur un point de terminaison, Microsoft Defender pour Endpoint sur macOS présente une notification à l’utilisateur, sauf si les notifications ont été désactivées. Le nom de la menace contient le mot « Application ».
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
@@ -68,7 +69,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle que JAMF ou Intune, de la même façon que les autres paramètres de produit sont configurés. Pour plus d’informations, consultez la section [Paramètres](mac-preferences.md#threat-type-settings) du type de menace de la rubrique Définir les préférences de Microsoft Defender pour le point de terminaison [sur macOS.](mac-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle que JAMF ou Intune, de la même manière que les autres paramètres de produit sont configurés. Pour plus d’informations, consultez la section [Paramètres](mac-preferences.md#threat-type-settings) du type de menace de la rubrique Définir les préférences de Microsoft Defender pour le point de terminaison [sur macOS.](mac-preferences.md)
 
 ## <a name="related-topics"></a>Rubriques connexes
 

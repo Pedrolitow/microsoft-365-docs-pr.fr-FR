@@ -21,19 +21,20 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df72be4ce5965476801dea9ea804ea9ebf548210
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 8ae30dbf371afa6668de4846cebe85ae45fe09be
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755746"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171628"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -70,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
+|Autorisation|String|Porteur {token}. Obligatoire.|
 |Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande

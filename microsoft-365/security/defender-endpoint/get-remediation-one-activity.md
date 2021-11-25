@@ -1,5 +1,5 @@
 ---
-title: Obtenir une activité de correction par ID
+title: Obtenir une activité de correction par son ID
 description: Renvoie des informations pour l’activité de correction spécifiée.
 keywords: api, correction, api de correction, obtenir, tâches de correction, correction par ID,
 search.product: eADQiWindows 10XVcnh
@@ -16,43 +16,43 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e6dbf619854d3c6e2c14e49bac7227a7bd31116
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25040682cad424531aa4b0a6d51978639d71ef83
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150089"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167273"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par ID
+# <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par son ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
 
-Renvoie des informations pour l’activité de correction spécifiée. Présente les mêmes colonnes que [Obtenir toutes les](get-remediation-all-activities.md)activités de correction , mais renvoie des résultats uniquement pour l’activité de correction _spécifiée._
+Renvoie des informations pour l’activité de correction spécifiée. Présente les mêmes colonnes que [Obtenir toutes les](get-remediation-all-activities.md)activités de correction , mais renvoie les résultats uniquement pour l’activité de correction _spécifiée._
 
 [En savoir plus sur les activités de correction.](tvm-remediation.md)
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>Liste d’une activité de correction spécifiée pour (id)
+## <a name="list-a-specified-remediation-activity-for-id"></a>Liste d’une activité de correction spécifiée pour (ID)
 
 **URL :** GET: /api/remediationTasks/id \{\}
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -61,36 +61,36 @@ Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire 
 
 ## <a name="properties"></a>Propriétés
 
-Propriété (id)|Type de données|Description|Exemple de valeur renvoyée
+Propriété (ID)|Type de données|Description|Exemple de valeur renvoyée
 :---|:---|:---|:---
-category|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)|Logiciels
-completerEmail|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique|null
-completerId|String|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet|null
-completionMethod|Chaîne|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé »|Automatique
+Catégorie|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)|Logiciels
+completerEmail|String|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique|Null
+completerId|String|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet|Null
+completionMethod|String|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé »|Automatique
 createdOn|Date/heure|Heure de création de cette activité de correction|2021-01-12T18:54:11.5499478Z
-description|String|Description de cette activité de correction|Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
+Description|String|Description de cette activité de correction|Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
 dueOn|Date/heure|Date d’échéance définie par le créateur pour cette activité de correction|2021-01-13T00:00:00Z
 fixedDevices||Nombre d’appareils qui ont été corrigés|2
-id|String|ID de cette activité de correction|097d9735-5479-4899-b1b7-77398899df92
+ID|String|ID de cette activité de correction|097d9735-5479-4899-b1b7-77398899df92
 nameId|String|Nom du produit associé|Microsoft Silverlight
-priorité|Chaîne|Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible)|Élevé
-productId|Chaîne|ID de produit associé|microsoft-_-silverlight
-productivityImpactRemediationType|String|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».|AllExposedAssets
-rbacGroupNames|Chaîne|Noms de groupes d’appareils associés|[ « Windows Servers », « Windows 10 » ]
-recommendedProgram|Chaîne|Programme recommandé pour la mise à niveau vers|null
-recommendedVendor|String|Fournisseur recommandé pour la mise à niveau vers|null
-recommendedVersion|Chaîne|Version recommandée pour la mise à jour/mise à niveau vers|null
-relatedComponent|Chaîne|Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité)|Microsoft Microsoft Silverlight
-requesterEmail|Chaîne|Adresse de messagerie du créateur|globaladmin@UserName.contoso.com
-requesterId|Chaîne|ID d’objet Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|Chaîne|Notes (texte libre) ajoutées par le créateur pour cette activité de correction|null
-scid|Chaîne|SCID de la recommandation de sécurité associée|null
-status|Chaîne|État de l’activité de correction (actif/terminé)|Actif
+Priorité|String|Priorité définie par le créateur pour cette activité de correction (High\Medium\Low)|Élevé
+productId|String|ID de produit associé|microsoft-_-silverlight
+productivityImpactRemediationType|String|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils qui n’affectent pas les utilisateurs. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».|AllExposedAssets
+rbacGroupNames|String|Noms de groupes d’appareils associés|[ « Windows Serveurs », « Windows 10 » ]
+recommendedProgram|String|Programme recommandé pour la mise à niveau vers|Null
+recommendedVendor|String|Fournisseur recommandé pour la mise à niveau vers|Null
+recommendedVersion|String|Version recommandée pour la mise à jour/mise à niveau vers|Null
+relatedComponent|String|Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité)|Microsoft Silverlight
+requesterEmail|String|Adresse de messagerie du créateur|globaladmin@UserName.contoso.com
+requesterId|String|ID d’objet Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes|String|Notes (texte libre) ajoutées par le créateur pour cette activité de correction|Null
+Scid|String|SCID de la recommandation de sécurité associée|Null
+État|String|État de l’activité de correction (actif/terminé)|Actif
 statusLastModifiedOn|Date/heure|Date de mise à jour du champ d’état|2021-01-12T18:54:11.5499487Z
-targetDevices|Entier long|Nombre d’appareils exposés pour qui cette correction s’applique|43
-title|Chaîne|Titre de cette activité de correction|Microsoft Silverlight
-type|Chaîne|Type de correction|Update
-vendorId|Chaîne|Nom du fournisseur associé|Microsoft
+targetDevices|Entier long|Nombre d’appareils exposés à appliquer à cette correction|43
+Titre|Chaîne|Titre de cette activité de correction|Microsoft Silverlight
+Type|String|Type de correction|Update
+vendorId|String|Nom du fournisseur associé|Microsoft
 
 ## <a name="example"></a>Exemple
 

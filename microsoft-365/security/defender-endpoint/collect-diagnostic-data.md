@@ -17,21 +17,22 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665788"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170537"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Collecter des Antivirus Microsoft Defender de diagnostic
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation du Antivirus Microsoft Defender.
 
@@ -116,7 +117,7 @@ Lorsque le paramètre SupportLogLocation est utilisé, une structure de dossiers
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>Spécifier l’emplacement où les données de diagnostic sont créées
 
-Vous pouvez également spécifier l'.cab de diagnostic à l’aide d’un objet de stratégie de groupe ( GPO).
+Vous pouvez également spécifier l’endroit .cab de diagnostic sera créé à l’aide d’un objet de stratégie de groupe (GPO).
 
 1. Ouvrez l’Éditeur de stratégie de groupe local et recherchez l’GPO SupportLogLocation à `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation` l':.
 

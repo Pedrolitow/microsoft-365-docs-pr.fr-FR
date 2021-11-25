@@ -16,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6cb0fdb8b2fec03c616b1c0607e4f8be6476b96e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96a565456f0e95ffc33cbff9a36abcf24db94c24
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191694"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160538"
 ---
 # <a name="score-resource-type"></a>Type de ressource Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -54,5 +55,5 @@ Propriété|Type|Description
 :---|:---|:---
 Niveau|Double|Score actuel.
 Temps|Date/heure|Date et heure à laquelle l’appel de cette API a été effectué.
-RbacGroupName|Chaîne|Nom du groupe d’appareils.
-RbacGroupId|Chaîne|ID du groupe d’appareils.
+RbacGroupName|String|Nom du groupe d’appareils.
+RbacGroupId|String|ID du groupe d’appareils.

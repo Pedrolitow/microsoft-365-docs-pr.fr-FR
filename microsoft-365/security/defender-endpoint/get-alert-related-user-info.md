@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5ee59bb41e4c126d13db03fc570de9635c0fe7cf
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6276cac409133a119424181d4e358a51fbd3af90
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122466"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169001"
 ---
 # <a name="get-alert-related-user-information-api"></a>API Obtenir les informations utilisateur associées à une alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -72,7 +73,7 @@ GET /api/alerts/{id}/user
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -1,7 +1,7 @@
 ---
 title: Déployer des mises à jour pour Microsoft Defender pour endpoint sur Mac
 description: Contrôler les mises à jour de Microsoft Defender pour Endpoint sur Mac dans les environnements d’entreprise.
-keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, mises à jour, déployer
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, mises à jour, déployer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174674"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171436"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Déployer les mises à jour de Microsoft Defender pour endpoint sur macOS
 
@@ -31,7 +31,8 @@ ms.locfileid: "60174674"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +49,7 @@ Si vous décidez de déployer des mises à jour à l’aide de vos outils de dis
 
 MAU inclut un outil en ligne de commande, appelé *msupdate,* conçu pour les administrateurs informatiques afin qu’ils contrôlent plus précisément le moment où les mises à jour sont appliquées. Vous pouvez trouver des instructions sur l’utilisation de cet outil dans [Update Office pour Mac à l’aide de msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-Dans MAU, l’identificateur d’application pour Microsoft Defender pour le point de terminaison sur macOS est *WDAV00*. Pour télécharger et installer les dernières mises à jour de Microsoft Defender pour Endpoint sur macOS, exécutez la commande suivante à partir d’une fenêtre Terminal :
+Dans MAU, l’identificateur d’application pour Microsoft Defender pour endpoint sur macOS est *WDAV00*. Pour télécharger et installer les dernières mises à jour de Microsoft Defender pour Endpoint sur macOS, exécutez la commande suivante à partir d’une fenêtre Terminal :
 
 ```dos
 ./msupdate --install --apps wdav00
@@ -60,7 +61,7 @@ Cette section décrit les préférences les plus courantes qui peuvent être uti
 
 ### <a name="set-the-channel-name"></a>Définir le nom du canal
 
-Le canal détermine le type et la fréquence des mises à jour proposées via MAU. Les appareils peuvent `Beta` tester de nouvelles fonctionnalités avant d’utiliser `Preview` les appareils. `Current`
+Le canal détermine le type et la fréquence des mises à jour proposées via MAU. Les appareils peuvent `Beta` tester de nouvelles fonctionnalités avant d’utiliser `Preview` et `Current` .
 
 Le `Current` canal contient la version la plus stable du produit.
 
@@ -72,7 +73,7 @@ Le `Current` canal contient la version la plus stable du produit.
 > - `Current` a été nommé `Production`
 
 > [!TIP]
-> Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
+> Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
 
 <br>
 
@@ -124,7 +125,7 @@ Modifier la façon dont MAU recherche les mises à jour.
 |**Clé**|HowToCheck|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|Manual <p> AutomaticCheck <p> AutomaticDownload|
-|**Comment**|Notez que AutomaticDownload télécharge et installe en mode silencieux si possible.|
+|**Comment**|Notez que AutomaticDownload est téléchargé et installé en mode silencieux si possible.|
 |||
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Indique si le bouton « Vérifier les mises à jour » est activé.
@@ -145,7 +146,7 @@ Indiquez si les utilisateurs locaux pourront cliquer sur l’option « Vérifier
 
 ### <a name="disable-insider-checkbox"></a>Désactiver la case à cocher Insider
 
-Définissez la valeur sur True pour que le programme « Rejoindre le programme Office Insider... » case à cocher non disponible/grisée pour les utilisateurs.
+Définissez la valeur sur True pour que le programme « Rejoindre Office Programme Insider... » case à cocher non disponible/grisée pour les utilisateurs.
 
 <br>
 
@@ -161,7 +162,7 @@ Définissez la valeur sur True pour que le programme « Rejoindre le programme O
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limiter la télémétrie envoyée à partir de MAU
 
-Définissez ce dernier sur False pour envoyer des données d’pulsation minimales, aucune utilisation de l’application et aucun détail sur l’environnement.
+Définissez ce dernier sur False pour envoyer un minimum de données de pulsation, aucune utilisation de l’application et aucun détail sur l’environnement.
 
 <br>
 
@@ -188,7 +189,7 @@ Le profil de configuration suivant est utilisé pour :
 > La configuration ci-dessous est un exemple de configuration et ne doit pas être utilisée en production sans une révision appropriée des paramètres et une adaptation des configurations.
 
 > [!TIP]
-> Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
+> Pour afficher un aperçu des nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise sur `Beta` ou `Preview` .
 
 ### <a name="jamf"></a>JAMF
 

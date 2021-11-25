@@ -18,20 +18,20 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 36938380f46400b04e642d9cd8dfc4076e679a32
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c27fe45dd00ca5f0241869195daa697a268af92e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111182"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167525"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Intégrer des appareils VDI (Virtual Desktop Infrastructure) non persistants dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
@@ -173,7 +173,7 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 5. Resealez l’image de premier plan comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

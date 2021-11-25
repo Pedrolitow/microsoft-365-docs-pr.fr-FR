@@ -14,14 +14,18 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b21c72c44f19e4f9aede5a72c4860cbd6fac1c5c
-ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
+ms.openlocfilehash: 48d0884c84f6c609b2924875bfea579dcac3fcc4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152393"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167513"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
+
+**S’applique à**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
@@ -74,8 +78,8 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 
 | Fichier/Périphérique | Opération | Description |
 |:---|:---|:---|
-| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
 | Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
 | Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur des appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 

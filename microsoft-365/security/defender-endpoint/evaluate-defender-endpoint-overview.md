@@ -1,7 +1,7 @@
 ---
 title: Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 description: Configurer un laboratoire d Microsoft 365 Defender d’essai ou un environnement pilote. Testez et découvrez comment la solution de sécurité est conçue pour protéger les appareils, l’identité, les données et les applications de votre organisation.
-keywords: Microsoft 365 Defender d’évaluation, essayer Microsoft 365 Defender, évaluer Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender pilote, cyber sécurité, menace persistante avancée, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
+keywords: Microsoft 365 Defender d’évaluation, essayez Microsoft 365 Defender, évaluez Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender  pilote, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 948ebe7de82b4c187e5674bf5ed7042dedf7beb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5101f17bef65f20cf537ad9526c6acbb4d567c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157985"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168705"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 
-**S’applique à :**
-
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft 365 Defender
 
 ![Microsoft 365 Defender d’évaluation et de pilotage.](../../media/defender/m365-defender-eval-process.png)
@@ -49,10 +49,10 @@ Le laboratoire d’évaluation de Microsoft Defender for Endpoint est conçu pou
 
 À l’aide de l’expérience de mise en place simplifiée, vous pouvez vous concentrer sur l’exécution de vos propres scénarios de test et des simulations pré-réalisées pour voir les résultats de Defender for Endpoint.
 
-Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
+Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre.
 
 Vous pouvez ajouter des appareils Windows 10, Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour avoir les dernières versions du système d’exploitation et les composants de sécurité en place, ainsi que Office 2019 Standard installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
  Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation, puis voyez instantanément les résultats de la plateforme. Cette fonctionnalité est disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations, que vous pouvez accéder et exécuter à partir du catalogue de simulations.

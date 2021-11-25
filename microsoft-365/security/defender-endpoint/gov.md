@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92e35fb75b26df6768860b4cb98b825086fa80d5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fc3865ff4170fcce245f0971ab2cf1c6772bb346
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109802"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166889"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
 
@@ -92,7 +92,7 @@ Les versions de système d’exploitation suivantes sont pris en charge :
 
 ****
 
-Version du système d’exploitation|GCC|GCC High|DoD
+Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 21H1 et versions supérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -136,12 +136,12 @@ Les versions de système d’exploitation suivantes sont pris en charge lors de 
 
 ****
 
-Version du système d’exploitation|GCC|GCC High|DoD
+Version du système d'exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 |
 

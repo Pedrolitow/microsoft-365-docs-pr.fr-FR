@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f1d749eba67696fd2074283cd3c02ffe43330172
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: e17f50eb02fa6fbc3c34526ca064543b7afbdea2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883448"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167669"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 
@@ -28,8 +28,8 @@ ms.locfileid: "60883448"
 
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > Le 31 mars 2020, la fonctionnalité de Antivirus Microsoft Defender mise à jour de conformité sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l’Microsoft Endpoint Manager [,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)ce qui permet un contrôle plus fin des fonctionnalités de sécurité et des mises à jour.
@@ -44,7 +44,7 @@ En règle générale, les indicateurs les plus courants d’un problème sont :
 - Vous ne voyez aucun appareil
 - Les rapports et informations que vous voyez sont obsolètes (plus de quelques jours)
 
-Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à la mise à jour de conformité, voir [Antivirus Microsoft Defender événements.](troubleshoot-microsoft-defender-antivirus.md)
+Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à update compliance, voir Antivirus Microsoft Defender [événements .](troubleshoot-microsoft-defender-antivirus.md)
 
 La résolution de ces problèmes se fait en trois étapes :
 

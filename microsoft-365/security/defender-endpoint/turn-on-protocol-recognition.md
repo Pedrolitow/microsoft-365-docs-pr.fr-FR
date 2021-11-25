@@ -1,7 +1,7 @@
 ---
 title: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender
 description: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, anti-programme malveillant, sécurité, defender, reconnaissance de protocole
+keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, defender, reconnaissance de protocole
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,34 +17,34 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9baaedad2895c9d5a3b26cab0289f7bb86af17cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbb9b50714d252d86fcbaed9b43684351f903251
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193948"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167621"
 ---
 # <a name="turn-on-protocol-recognition"></a>Activer la reconnaissance de protocole
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Ce paramètre de stratégie vous permet de configurer la reconnaissance de protocole pour la protection du réseau contre les attaques de vulnérabilités connues. Si vous activez ou ne configurez pas ce paramètre, la reconnaissance de protocole est activée. Si vous désactivez ce paramètre, la reconnaissance de protocole sera désactivée.
 
 ## <a name="use-group-policy-to-configure-protocol-recognition"></a>Utiliser une stratégie de groupe pour configurer la reconnaissance de protocole
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Computer Configuration** \> **Administrative Templates** Windows \> **Components** \> **Antivirus Microsoft Defender** Network \> **Inspection System**.
 
-3. Sélectionnez **la reconnaissance de protocole.** Par défaut, cette stratégie est activée. Si la définition **n’est pas configurée,** le retrait de définition est activé.
+3. Sélectionnez **la reconnaissance de protocole.** Par défaut, cette stratégie est activée. Si la configuration **n’est pas configurée,** le retrait de définition est activé.
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
-5. Sélectionnez **Activé,** puis **OK**.
+5. Sélectionnez **Activé,** puis **OK.**
 
 6. Déployez votre objet de stratégie de groupe mis à jour. Voir [La Console de gestion des stratégies de groupe.](/windows/win32/srvnodes/group-policy)
 

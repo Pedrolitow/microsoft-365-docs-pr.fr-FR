@@ -1,7 +1,7 @@
 ---
 title: Utiliser les API Microsoft Defender pour les points de terminaison
 ms.reviewer: ''
-description: Découvrez comment concevoir une application Windows pour obtenir un accès par programmation à Microsoft Defender pour Endpoint sans utilisateur.
+description: Découvrez comment concevoir une application Windows pour obtenir un accès par programme à Microsoft Defender pour Endpoint sans utilisateur.
 keywords: api, api de graphique, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,20 +17,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747397d8baee103a311a6aec842af189403ef0fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190556"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168737"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser les API Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -48,14 +48,14 @@ Microsoft Defender pour point de terminaison expose la plupart de ses données e
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 
-- Créer une application AAD
+- Créer une application AAD application
 - Obtenir un jeton d’accès à l’aide de cette application
 - Utiliser le jeton pour accéder à l’API Defender for Endpoint
 
 Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft Defender pour le point de terminaison et valider le jeton.
 
 > [!NOTE]
-> Lorsque vous accédez à l’API Microsoft Defender pour endpoint pour le compte d’un utilisateur, vous avez besoin de l’autorisation d’application et de l’autorisation utilisateur correctes.
+> Lorsque vous accédez à l’API Microsoft Defender for Endpoint pour le compte d’un utilisateur, vous avez besoin des autorisations d’application et d’utilisateur correctes.
 > Si vous n’êtes pas familiarisé avec les autorisations utilisateur sur Microsoft Defender pour le point de terminaison, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur les rôles.](rbac.md)
 
 > [!TIP]
@@ -65,7 +65,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec un compte d’utilisateur ayant le **rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **Inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
 
@@ -92,7 +92,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
      Lorsque vous avez terminé, sélectionnez **Inscrire**.
 
-4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation « Lire les alertes » :
+4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à lui attribuer l’autorisation « Lire les alertes » :
 
    - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon \>  \>  organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
    - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
@@ -113,7 +113,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
    - Sélectionnez **Accorder le consentement**
 
-      **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
+      **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
       ![Image d’octroi d’autorisations.](images/grant-consent.png)
 
@@ -125,7 +125,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur les jetons AAD, voir [le didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur les jetons AAD, voir [Azure AD didacticiel](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Utilisation de C\#
 

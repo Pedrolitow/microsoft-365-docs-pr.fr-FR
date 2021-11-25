@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59c00d1e34cf97ce2012c3052283453dc23e38a1
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 63453b772123e9fe8440da3372d166503cee21e1
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110594"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171100"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -30,6 +30,8 @@ ms.locfileid: "61110594"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
@@ -43,7 +45,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur ma
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
@@ -55,9 +57,9 @@ Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Mi
 |---|---|---|
 |[Télécharger le package d’intégration](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |[Approuver l’extension système pour Microsoft Defender pour le point de terminaison](#approve-system-extensions)|MDATP_SysExt.xml|S/O|
-|[Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison](#download-the-onboarding-package)|MDATP_KExt.xml|S/O|
+|[Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
 |[Accorder un accès disque complet à Microsoft Defender pour le point de terminaison](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
-|[Stratégie d’extension réseau](#network-filter)|MDATP_NetExt.xml|S/O|
+|[Stratégie d’extension réseau](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configurer la mise à jour automatique Microsoft (AutoUpdate)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Paramètres de configuration de Microsoft Defender for Endpoint](mac-preferences.md#intune-full-profile) <p> **Remarque :** Si vous envisagez d’exécuter un antivirus tiers pour macOS, définissez sur `passiveMode` `true` .|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |[Configurer Microsoft Defender pour les notifications de point de terminaison et de mise à jour automatique MS (MAU)](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 ou com.microsoft.wdav.tray|

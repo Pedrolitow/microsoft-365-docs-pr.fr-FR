@@ -15,18 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a84fb78ef46c63016de936b035611b8fcabdebe
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c44435fe61acacce760b7920313e432e889a4f14
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109334"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168749"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 [La protection cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) offre une protection précise, en temps réel et intelligente. La protection cloud doit être activée par défaut . toutefois, vous pouvez configurer la protection cloud en fonction des besoins de votre organisation.

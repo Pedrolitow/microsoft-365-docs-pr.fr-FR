@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a49e2a862f3b95bde40620f3093d2f149111ad3d
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: d91bae340db5e52d04bd0263068892065dd3eebd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889818"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166661"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via un scénario d’interface graphique graphique
 
@@ -37,7 +37,7 @@ ms.locfileid: "60889818"
    > [!NOTE]
    > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : '34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834'.
 
-2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
@@ -65,7 +65,7 @@ Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les comm
 4. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine : `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> - Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaie de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 > 
 > - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 >

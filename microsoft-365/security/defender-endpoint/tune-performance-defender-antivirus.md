@@ -14,14 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110438"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167657"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
+
+**S’applique à**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Qu’est-ce Antivirus Microsoft Defender’analyseur de performances ?**
 

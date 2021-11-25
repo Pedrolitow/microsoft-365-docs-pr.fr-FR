@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8371129ff1b64681aee018802205a5f5a359fd86
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209476"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170527"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
 
@@ -31,14 +31,15 @@ ms.locfileid: "60209476"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>Échec de l’installation
 
-Pour l’installation manuelle, la page Résumé de l’Assistant d’installation indique : « Une erreur s’est produite lors de l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez le fabricant du logiciel pour obtenir de l’aide. » Pour les déploiements mdm, il s’affiche également comme un échec d’installation générique.
+Pour l’installation manuelle, la page Résumé de l’Assistant d’installation indique : « Une erreur s’est produite lors de l’installation. Le programme d’installation a rencontré une erreur qui a provoqué l’échec de l’installation. Contactez l’éditeur de logiciels pour obtenir de l’aide. » Pour les déploiements mdm, il s’affiche également sous la forme d’un échec d’installation générique.
 
 Bien que nous n’affichions pas une erreur exacte à l’utilisateur final, nous tenez un fichier journal avec la progression de l’installation dans `/Library/Logs/Microsoft/mdatp/install.log` . Chaque session d’installation s’y connecte. Vous pouvez utiliser la `sed` sortie de la dernière session d’installation uniquement :
 
@@ -59,7 +60,7 @@ L’installation a échoué car une mise à niveau vers une version antérieure 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Journal d’installation MDATP manquant ou non mis à jour
 
 Dans de rares cas, l’installation ne laisse aucune trace dans le fichier /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Vous pouvez vérifier qu’une installation s’est produite et analyser les erreurs possibles en interrogeant les journaux macOS (utile dans le déploiement mdm, lorsqu’il n’y a pas d’interface utilisateur client). Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer selon le nom du processus de journalisation, car il y aura une quantité considérable d’informations.
+Tout d’abord, vérifiez qu’une installation s’est produite. Ensuite, analysez les erreurs possibles en interrogeant les journaux macOS. Il est utile de le faire dans les déploiements mdm, lorsqu’il n’existe pas d’interface utilisateur client. Nous vous recommandons d’utiliser une fenêtre de temps étroite pour exécuter une requête et filtrer selon le nom du processus de journalisation, car il y aura une quantité considérable d’informations.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

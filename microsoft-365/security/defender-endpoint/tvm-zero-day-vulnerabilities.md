@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1ed6e23c462e78ad0aaf6e94e59aa1c8efb11e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d3a5fe0f04249a5d9573e74fa4f8ad6b81fe5395
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881756"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167645"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60881756"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -80,7 +80,7 @@ Recherchez une balise « zero-day » pour chaque logiciel affecté par la vulné
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
-Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
+Afficher des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 

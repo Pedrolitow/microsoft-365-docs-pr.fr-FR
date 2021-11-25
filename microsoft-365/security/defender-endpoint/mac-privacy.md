@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168325"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170976"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -93,21 +94,21 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 |hostname|Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
 |product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit.|
 |app_version|Version de Microsoft Defender pour point de terminaison sur l’application macOS. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-|sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées.|
+|sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 |supported_compressions|Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application.|
 |release_ring|Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la performance de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Microsoft Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Microsoft Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
 #### <a name="software-setup-and-inventory-data-events"></a>Événements de données liés à l’inventaire et à la configuration des logiciels
 
-**Installation/désinstallation** de Microsoft Defender for Endpoint :
+**Installation/désinstallation de Microsoft Defender** for Endpoint :
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -119,19 +120,19 @@ Les champs suivants sont affichés :
 
 **Configuration de Microsoft Defender pour point de terminaison**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Si la protection en temps réel est activée sur l’appareil ou non.|
 |antivirus_engine.passive_mode|Si le mode passif est activé sur l’appareil ou non.|
 |cloud_service.enabled|Si la protection cloud est activée sur l’appareil ou non.|
-|cloud_service.timeout|Délai d’arrêt lorsque l’application communique avec Microsoft Defender pour le cloud de point de terminaison.|
+|cloud_service.timeout|Délai d’arrêt lorsque l’application communique avec microsoft Defender pour le cloud de point de terminaison.|
 |cloud_service.heartbeat_interval|Intervalle entre les pulsations consécutives envoyées par le produit au cloud.|
 |cloud_service.service_uri|URI utilisé pour communiquer avec le cloud.|
 |cloud_service.diagnostic_level|Niveau de diagnostic de l’appareil (obligatoire, facultatif).|
 |cloud_service.automatic_sample_submission|Si l’envoi automatique d’échantillons est allumé ou non.|
-|cloud_service.automatic_definition_update_enabled|Si la mise à jour automatique des définitions est ou non.|
+|cloud_service.automatic_definition_update_enabled|Si la mise à jour automatique des définitions est ou non allumée.|
 |edr.early_preview|Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée.|
 |edr.group_id|Identificateur de groupe utilisé par le composant de détection et de réponse.|
 |edr.tags|Balises définies par l’utilisateur.|
@@ -141,7 +142,7 @@ Les champs suivants sont affichés :
 
 **Rapport de mise à jour de l’intelligence de la sécurité**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -158,7 +159,7 @@ Les champs suivants sont affichés :
 
 Collecte les informations système et l’état d’une application lorsqu’une application se quitte de façon inattendue.
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -168,7 +169,7 @@ Les champs suivants sont affichés :
 
 **Statistiques d’extension du noyau**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -188,7 +189,7 @@ Les journaux de diagnostic sont collectés uniquement avec le consentement de l�
 
 - Tous les fichiers *sous /Library/Logs/Microsoft/mdatp/*
 - Sous-ensemble de fichiers sous */Library/Application Support/Microsoft/Defender/* créés et utilisés par Microsoft Defender pour endpoint sur macOS
-- Sous-ensemble de fichiers sous */Library/Managed Preferences* utilisées par Microsoft Defender pour Endpoint sur macOS
+- Sous-ensemble de fichiers sous */Library/Managed Preferences* qui sont utilisés par Microsoft Defender pour Endpoint sur macOS
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
@@ -200,15 +201,15 @@ Si vous choisissez d’envoyer des données de diagnostic facultatives, les donn
 
 Les données de diagnostic facultatives collectées par Microsoft sur la configuration du produit (par exemple, le nombre d’exclusions définies sur l’appareil) et les performances du produit (mesures agrégées sur les performances des composants du produit) sont des exemples de données de diagnostic facultatives.
 
-#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données de configuration logicielle et d’inventaire pour les données de diagnostic facultatives
+#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données de configuration du logiciel et d’inventaire pour les données de diagnostic facultatives
 
 **Configuration de Microsoft Defender pour point de terminaison**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
-|connection_retry_timeout|Délai de nouvelle tentative de connexion lors de la communication avec le cloud.|
+|connection_retry_timeout|Délai d’délai de nouvelle tentative de connexion lors de la communication avec le cloud.|
 |file_hash_cache_maximum|Taille du cache du produit.|
 |crash_upload_daily_limit|Limite des journaux d’incident téléchargés quotidiennement.|
 |antivirus_engine.exclusions[].is_directory|Si l’exclusion de l’analyse est un répertoire ou non.|
@@ -217,7 +218,7 @@ Les champs suivants sont affichés :
 |antivirus_engine.exclusions[].name|Nom du fichier exclu de l’analyse.|
 |antivirus_engine.scan_cache_maximum|Taille du cache du produit.|
 |antivirus_engine.maximum_scan_threads|Nombre maximal de threads utilisés pour l’analyse.|
-|antivirus_engine.threat_restoration_exclusion_time|Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté.|
+|antivirus_engine.threat_restoration_exclusion_time|Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté.|
 |antivirus_engine.threat_type_settings|Configuration de la façon dont les différents types de menaces sont gérés par le produit.|
 |filesystem_scanner.full_scan_directory|Répertoire d’analyse complet.|
 |filesystem_scanner.quick_scan_directories|Liste des répertoires utilisés dans l’analyse rapide.|
@@ -226,11 +227,11 @@ Les champs suivants sont affichés :
 
 **Configuration de la mise à jour automatique Microsoft**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
-|how_to_check|Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles).|
+|how_to_check|Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles).|
 |channel_name|Canal de mise à jour associé à l’appareil.|
 |manifest_server|Serveur utilisé pour télécharger les mises à jour.|
 |update_cache|Emplacement du cache utilisé pour stocker les mises à jour.|
@@ -239,7 +240,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -250,7 +251,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -266,7 +267,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 **Statistiques d’extension du noyau**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|

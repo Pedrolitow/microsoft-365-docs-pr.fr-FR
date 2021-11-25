@@ -15,21 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 222659172b939587a74a2fd34deb53f6140f414b
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 60d587637f282b36c9d13280fc3f488ad86a80b5
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588360"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167105"
 ---
 # <a name="import-indicators-api"></a>API d’importation d’indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "60588360"
 
 ## <a name="api-description"></a>Description de l’API
 
-Envoie ou met à jour le lot [d’entités](ti-indicator.md) d’indicateur.
+Envoie ou met à jour le lot [d’entités](ti-indicator.md) d’indicateurs.
 
 La notation CIDR pour les IPs n’est pas prise en charge.
 
@@ -49,7 +51,7 @@ La notation CIDR pour les IPs n’est pas prise en charge.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---

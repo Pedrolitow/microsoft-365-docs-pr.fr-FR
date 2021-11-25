@@ -14,20 +14,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bf58173d2c17ef66b0cb74f0781038040d25898b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899719"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168725"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -86,7 +87,7 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (CSP) pour activer ou désactiver la protection réseau ou activer le mode audit.
 
-### <a name="microsoft-endpoint-manager"></a>Gestionnaire de point de terminaison Microsoft
+### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
 1. Connectez-vous au Microsoft Endpoint Manager’administration centrale ( https://endpoint.microsoft.com) .
 

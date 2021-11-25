@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ceeae633c85912d4c344ed8a74fe66def168efd5
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882584"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166817"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
@@ -31,8 +31,7 @@ ms.locfileid: "60882584"
 
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Il est important de s’assurer que les composants clients sont à jour pour offrir des fonctionnalités de protection critiques et empêcher les attaques.
 
@@ -66,7 +65,7 @@ Si vos ordinateurs reçoivent les mises à jour Defender de Windows Update, le p
 
 Pour les ordinateurs recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options de Microsoft Defender pour endpoint.
 
-- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans Gérer les mises à jour Antivirus Microsoft Defender et appliquer les lignes de base [- Windows sécurité](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans Gérer les mises à jour Antivirus Microsoft Defender et appliquer les lignes de base - Windows [sécurité](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Mettre à jour les canaux pour les mises à jour mensuelles
 
@@ -131,7 +130,7 @@ Adoption de ce modèle :
 Pour créer votre propre processus de déploiement progressif personnalisé pour les mises à jour mensuelles, vous pouvez utiliser les outils suivants :
 
 - Stratégie de groupe
-- Gestionnaire de point de terminaison Microsoft
+- Microsoft Endpoint Manager
 - PowerShell
 
 Pour plus d’informations sur l’utilisation de ces [outils,](configure-updates.md)voir Créer un processus de déploiement progressif personnalisé pour les mises à jour de Microsoft Defender.

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: d6265ec92e8827fd6b581dabba38c0d1e0275b24
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5ea3ffa3f326c8a38c6f8fe52a20ebf872474d56
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699196"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166709"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Passer en revue les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -30,9 +30,9 @@ ms.locfileid: "60699196"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 La page d’alerte dans Microsoft Defender pour le point de terminaison fournit un contexte complet à l’alerte, en combinant les signaux d’attaque et les alertes associées à l’alerte sélectionnée, pour créer un article d’alerte détaillé.
 
@@ -42,12 +42,12 @@ Triez rapidement, examinez et prenez des mesures efficaces sur les alertes qui a
 
 ## <a name="getting-started-with-an-alert"></a>Mise en place d’une alerte
 
-La sélection du nom d’une alerte dans Defender pour le point de terminaison vous placera sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
+Si vous sélectionnez le nom d’une alerte dans Defender pour le point de terminaison, vous serez sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
 
 1. **Le titre de l’alerte** affiche le nom de l’alerte et est là pour vous rappeler quelle alerte a démarré votre enquête en cours, indépendamment de ce que vous avez sélectionné sur la page.
-2. [**Les ressources affectées**](#review-affected-assets) répertorient les cartes d’appareils et d’utilisateurs affectés par cette alerte qui peuvent être cliquées pour obtenir plus d’informations et d’actions.
+2. [**Les ressources affectées**](#review-affected-assets) répertorient les cartes d’appareils et d’utilisateurs affectés par cette alerte qui peuvent être cliquées pour plus d’informations et d’actions.
 3. **L’article d’alerte** affiche toutes les entités liées à l’alerte, interconnectées par une arborescence. L’alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les entités dans l’article d’alerte sont ex expandables et cliquables, pour fournir des informations supplémentaires et accélérer la réponse en vous permettant d’agir directement dans le contexte de la page d’alerte. Utilisez l’article d’alerte pour lancer votre enquête. Découvrez comment examiner [les alertes dans Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/investigate-alerts)
-4. Le **volet d’informations** affiche d’abord les détails de l’alerte sélectionnée, avec les détails et les actions associés à cette alerte. Si vous sélectionnez l’une des ressources ou entités affectées dans l’article d’alerte, le volet d’informations change pour fournir des informations contextuelles et des actions pour l’objet sélectionné.
+4. Le **volet d’informations** affiche d’abord les détails de l’alerte sélectionnée, ainsi que les détails et les actions associés à cette alerte. Si vous sélectionnez l’une des ressources ou entités affectées dans l’article d’alerte, le volet d’informations change pour fournir des informations contextuelles et des actions pour l’objet sélectionné.
 
 Notez l’état de détection de votre alerte.
 
@@ -77,7 +77,7 @@ La sélection d’un appareil ou d’une carte utilisateur dans les sections res
 
    ![Extrait du volet d’informations lorsqu’un appareil est sélectionné.](images/device-page-details.png)
 
-- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur* pour poursuivre l’examen du point de vue de cet utilisateur.
+- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur pour* poursuivre l’examen du point de vue de cet utilisateur.
 
    ![Extrait du volet d’informations lorsqu’un utilisateur est sélectionné.](images/user-page-details.png)
 

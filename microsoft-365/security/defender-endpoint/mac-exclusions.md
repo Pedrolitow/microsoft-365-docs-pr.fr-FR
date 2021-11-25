@@ -16,23 +16,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d779ee570e310a2d8a07154d73fe353db8bce907
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207882"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167216"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit des informations sur la définition d’exclusions qui s’appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
@@ -83,7 +84,7 @@ Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les inv
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent en téléchargeant `curl` un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
 
 Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 

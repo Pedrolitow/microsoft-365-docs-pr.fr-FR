@@ -23,17 +23,17 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b704a64e4428ede9af8992d22485a9d859ca4c98
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: bed61ca559ff6fe387d76e9f56842ae765e186fe
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110114"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170307"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
-**S’applique à :**
-- Microsoft Defender pour point de terminaison
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Avec Microsoft Defender pour le [](automated-investigations.md) point de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
 

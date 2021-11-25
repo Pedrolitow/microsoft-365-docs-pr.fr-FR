@@ -1,5 +1,5 @@
 ---
-title: Récupérer des alertes à partir du client MSSP client
+title: Récupérer des alertes à partir du client MSSP
 description: Découvrez comment récupérer des alertes à partir d’un client
 keywords: fournisseur de services de sécurité géré, mssp, configurer, intégration
 search.product: eADQiWindows 10XVcnh
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804940"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169025"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP client
+# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > Cette action est prise par le MSSP.
@@ -87,7 +87,7 @@ Cette section vous guide sur l’utilisation d’un script PowerShell pour obten
 
 Après avoir fourni vos informations d’identification, vous devez donner votre consentement à l’application afin que l’application soit mise en service dans le client du client.
 
-1. Créez un dossier et nommez-le `MsspTokensAcquisition` :
+1. Créez un dossier et nommez-le : `MsspTokensAcquisition` .
 
 2. Téléchargez [le module LoginBrowser.psm1](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) et enregistrez-le dans le `MsspTokensAcquisition` dossier.
 
@@ -179,7 +179,7 @@ Vous pouvez maintenant télécharger le fichier de configuration approprié pour
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
 
-Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
+Pour plus d’informations sur la récupération des alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
 
 ## <a name="see-also"></a>Voir aussi
 

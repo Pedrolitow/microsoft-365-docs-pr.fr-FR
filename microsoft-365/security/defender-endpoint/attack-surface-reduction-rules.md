@@ -16,14 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9db0543a8d6c68c74b2ae6eba98a14bffb3411f7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882668"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171652"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
+
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Cet article fournit des informations sur les règles de réduction des attaques :
 
@@ -46,7 +51,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 > - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
 >
 
-| Nom de la règle | &nbsp;Windows Server 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| Nom de la règle | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v | v |
@@ -64,13 +69,13 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v | v |
-| **Nom de la règle** | **Windows &nbsp; Server 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **Nom de la règle** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
 
 (<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 _Fin de la prévisualisation publique : systèmes d’exploitation pris en charge_
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées à la disponibilité générale. Les règles sont répertoriées par ordre alphabétique.
 
@@ -79,7 +84,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 > - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
 >
 
-|Nom de la règle|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Serveur|&nbsp;Windows Server 2016|&nbsp;Windows Server 2012 R2|
+|Nom de la règle|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; Server|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure |  |  |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v  <br><br> |  |  |
@@ -92,12 +97,12 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |  |  |
 |[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |  |  |
 |[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Les exclusions de fichiers et de dossiers ne sont pas pris en charge._ | Y version 1903 (build 18362) ou version ultérieure| v | v <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Exclusions de fichiers et de dossiers non pris en charge._ | Y version 1903 (build 18362) ou version ultérieure| v | v <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 ou ultérieure | v <br><br> | v <br><br>  |  |  |
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |  |  |
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |  |  |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |  |  |
-| **Nom de la règle** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Serveur** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
+| **Nom de la règle** |  **Windows &nbsp; 10** | **Windows &nbsp; Server 2019** | **Windows &nbsp; Server** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de la configuration pris en charge
 
@@ -105,7 +110,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 
 |Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de <sup> groupe [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | O  | Y MEM OMA-URI |   | O  |  [pris en charge](images/checkmark.png) <br><br> |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [pris en charge](images/checkmark.png) <br><br> |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -316,7 +321,7 @@ Dépendances : MDAV, AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
-Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
+Cette règle empêche les applications Office, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
 
 Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de sortir de Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
 
@@ -380,12 +385,12 @@ Dépendances : MDAV
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquer la persistance via un abonnement à des événements WMI
 
-Cette règle empêche les programmes malveillants d’utiliser WMI pour atteindre la persistance sur un appareil.
+Cette règle empêche les programmes malveillants d’utiliser WMI à mauvais escient pour obtenir une persistance sur un appareil.
 
 > [!IMPORTANT]
 > Les exclusions de fichiers et de dossiers ne s’appliquent pas à cette règle de réduction de la surface d’attaque.
 
-Les menaces sans fichier utilisent différentes tactiques pour rester masquées, pour éviter d’être vues dans le système de fichiers et pour obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser le référentiel WMI et le modèle d’événement pour rester masqués.
+Les menaces sans fichier emploient diverses tactiques pour rester cachées, éviter d’être vues dans le système de fichiers et obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser à mauvais escient le dépôt WMI et le modèle d’événement pour rester cachées.
 
 Nom Intune : non disponible
 
@@ -446,7 +451,7 @@ Office VBA active les appels d’API Win32. Les programmes malveillants peuvent 
 Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 

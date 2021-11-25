@@ -1,7 +1,7 @@
 ---
 title: Rechercher des appareils par API IP interne
 description: Rechercher les appareils visibles avec l’adresse IP interne demandée dans l’plage de temps de 15 minutes avant et après un timestamp donné
-keywords: api, api de graphique, api pris en charge, obtenir, appareil, IP, rechercher, trouver un appareil, par ip, ip
+keywords: api, api de graphique, api pris en charge, obtenir, appareil, IP, rechercher, rechercher un appareil, par ip, ip
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,25 +16,27 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2b94dfee30e447aed553e2fdaca62af8ec82f8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f8040ce207faef8ec802ddb637b97917c822801
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157949"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168689"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Rechercher des appareils par API IP interne
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
 
@@ -88,7 +90,7 @@ Si l’timestamp n’est pas dans les 30 derniers jours - 400 demande mauvaise.
 
 ### <a name="request"></a>Demande
 
-Voici un exemple de demande.
+Voici un exemple de la demande.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2019-09-22T08:44:05Z)

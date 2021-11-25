@@ -14,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7dccc8992d808b5f9cea2b190a9b40cdf75f3392
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 04c722e7aea4cffee34846f38d9b313a3e7f8f3a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883172"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169061"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -27,7 +27,8 @@ ms.locfileid: "60883172"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -49,7 +50,7 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*

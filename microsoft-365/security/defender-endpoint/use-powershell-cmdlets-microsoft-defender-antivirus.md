@@ -17,21 +17,21 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7a61e8806f6a937de241a2d546d34eadfa04df6
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 075a475ef3135769e90362f441077b1638192e99
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148754"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167609"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer les Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Vous pouvez utiliser PowerShell pour effectuer diverses fonctions dans Windows Defender. À l’exemple de l’invite de commandes ou de la ligne de commande, PowerShell est un shell de ligne de commande basé sur des tâches et un langage de script spécialement conçu pour l’administration du système. Pour en savoir plus, consultez le hub [PowerShell sur MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
 

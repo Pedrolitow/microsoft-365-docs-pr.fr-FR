@@ -17,23 +17,23 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 96b1ca9e6a54675418e556d495635d3f689c8fed
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: aa158c38661ff3f3277594e222ef6648a1731fce
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585953"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167249"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatgeuser-abovefoldlink)
 
 ## <a name="investigate-user-account-entities"></a>Examiner les entités de compte d’utilisateur
 
@@ -65,7 +65,12 @@ Le  volet d’informations Utilisateur de gauche fournit des informations sur l�
 
 La vue d’ensemble, les alertes et les observations dans l’organisation sont des onglets différents qui affichent différents attributs sur le compte d’utilisateur.
 
-### <a name="overview"></a>Présentation
+
+>[!NOTE]
+>Pour les appareils Linux, les informations sur les utilisateurs connectés ne sont pas affichées.
+
+
+### <a name="overview"></a>Vue d’ensemble
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
@@ -95,7 +100,7 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 30 jours
 - 6 mois
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

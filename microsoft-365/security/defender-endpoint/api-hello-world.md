@@ -17,23 +17,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da2f7b17725c7acb54b50a6280492e8f45fa6215
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208660"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167597"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,7 +52,7 @@ Cela ne prend que 5 minutes en deux étapes :
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Ai-je besoin d’une autorisation pour me connecter ?
 
-Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d’administrateur général dans Azure Active Directory client (Azure AD).
+Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d’administrateur général dans votre client Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Étape 1 : créer une application dans Azure Active Directory
 
@@ -80,7 +81,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
      Par exemple,
 
      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-     - Pour [isoler un ordinateur, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+     - Pour [isoler un ordinateur,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** de l’API que vous souhaitez appeler.
 
 5. Cliquez sur **Accorder le consentement**
@@ -89,13 +90,13 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    ![Image d’octroi d’autorisations.](images/grant-consent.png)
 
-6. Ajoutez un secret à l’application.
+6. Ajoutez une secret à l’application.
 
    - Cliquez **sur Certificats & secrets,** ajoutez une description à la secret, puis cliquez sur **Ajouter**.
 
     **Important**: après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
-    ![Image de la clé de création d’application.](images/webapp-create-key2.png)
+    ![Image de la clé de création de l’application.](images/webapp-create-key2.png)
 
 7. Notez votre ID d’application et votre ID de client :
 
@@ -145,7 +146,7 @@ Terminé ! Vous avez réussi à inscrire une application !
 
 - Le script ci-dessous utilise **Get-Token.ps1** pour accéder à l’API et reçoit les dernières alertes de 48 heures.
 - Enregistrez ce script dans le dossier que vous avez enregistré le script **précédentGet-Token.ps1**.
-- Le script crée deux fichiers (json et csv) avec les données dans le même dossier que les scripts.
+- Le script crée deux fichiers (json et csv) avec les données du même dossier que les scripts.
 
   ```powershell
   # Returns Alerts created in the past 48 hours.
@@ -185,7 +186,7 @@ Terminé ! Vous avez réussi à inscrire une application !
 
 Vous avez terminé ! Vous avez réussi :
 
-- Créé, inscrit et application
+- Créé et inscrit et application
 - Autorisation accordée à cette application pour lire les alertes
 - Connecté à l’API
 - Utilisation d’un script PowerShell pour renvoyer les alertes créées au cours des dernières 48 heures

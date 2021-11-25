@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8cb7e42af129185b2c9c8d7f9c864388661547f3
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755826"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167009"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 L’analyseur client produit un rapport au format HTML. Découvrez comment consulter le rapport pour identifier les problèmes potentiels de capteur afin de pouvoir les résoudre.
 
@@ -46,7 +47,7 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
 -   Les **détails de sécurité des** points de terminaison fournissent des informations générales sur Microsoft Defender pour les processus liés aux points de terminaison, notamment les Antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur est rouge.
 
-![Image du résultat détaillé de l’analyseur client.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+  ![Image du résultat détaillé de l’analyseur client.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
 -   Lors **de la vérification du résumé** des résultats, vous aurez un nombre agrégé d’erreurs, d’avertissements ou d’événements d’information détectés par l’analyseur.
 

@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
+title: Résoudre les problèmes de performances pour Microsoft Defender pour le point de terminaison sur macOS
 description: Résolution des problèmes de performances dans Microsoft Defender pour point de terminaison sur macOS.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, performances
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26a8761b8df141626cf7fcffaeb18e2a32bae69a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad99fe597a9c445d1c7d0dcd07b1dcd19a5ac7d5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206958"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170600"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,24 +31,25 @@ ms.locfileid: "60206958"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cette rubrique fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Microsoft Defender pour Endpoint sur macOS.
 
-La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d’autres heuristiques.
+La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
 
 Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l’exécution de Microsoft Defender pour Endpoint sur macOS. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Microsoft Defender pour Endpoint sur macOS.
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances s’améliorent. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances sont améliorées. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
 
       Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à l’aide de l’une des options suivantes :
 
-    - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez à **Gérer les paramètres.**
+    - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez **à Gérer les paramètres.**
 
       ![Capture d’écran gérer la protection en temps réel.](images/mdatp-36-rtp.png)
 

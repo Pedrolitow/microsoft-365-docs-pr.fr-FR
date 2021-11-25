@@ -16,20 +16,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f547e6701e0b22c2d55d0fa68a236f85b821a11
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: a4c279dff6fa5a5c85a2f65144a301dde75a1615
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478912"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167219"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 >
 > L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Defender pour Endpoint sur Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
-Si un proxy statique est requis, ajoutez un paramètre de proxy à la commande ci-dessus, où correspond à l’adresse `proxy_address:port` proxy et au port :
+Si un proxy statique est requis, ajoutez un paramètre proxy à la commande ci-dessus, où correspond à l’adresse `proxy_address:port` proxy et au port :
 
 ```bash
 curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
@@ -111,4 +111,4 @@ Si le problème persiste, contactez le support technique.
 
 ## <a name="resources"></a>Ressources
 
-- Pour plus d’informations sur la configuration du produit afin qu’il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint](linux-static-proxy-configuration.md)pour la découverte de proxy statique.
+- Pour plus d’informations sur la configuration du produit afin qu’il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint pour](linux-static-proxy-configuration.md)la découverte de proxy statique.

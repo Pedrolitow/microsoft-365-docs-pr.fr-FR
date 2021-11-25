@@ -1,7 +1,7 @@
 ---
 title: La gestion des menaces et des vulnérabilités
 description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
-keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, évaluation de la configuration sécurisée, Microsoft Defender pour point de terminaison, vulnérabilités de point de terminaison, nouvelle génération
+keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités , évaluation des vulnérabilités, analyse des menaces et des vulnérabilités, évaluation de la configuration sécurisée, Microsoft Defender pour le point de terminaison, vulnérabilités de point de terminaison, nouvelle génération
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 54c198470d7fd3ee0a05ff40c7597018735b4e3b
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 1e37c20bf6bd9b31bd255d2ec47ea87cb219f66a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881689"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167057"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -86,7 +86,7 @@ Regardez cette vidéo pour une présentation complète des Gestion des menaces e
 
 |Zone|Description|
 |---|---|
-|**Tableau de bord**|Obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées.|
+|**Tableau de bord**|Obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données de périphérique les plus exposées.|
 |[**Recommandations en matière de sécurité**](tvm-security-recommendation.md)|Consultez la liste des recommandations de sécurité et des informations sur les menaces associées. Lorsque vous sélectionnez un élément dans la liste, un panneau volant s’ouvre avec des détails sur la vulnérabilité, un lien pour ouvrir la page logicielle, ainsi que des options de correction et d’exception. Vous pouvez également ouvrir un ticket dans Intune si vos appareils sont joints via Azure Active Directory et que vous avez activé vos connexions Intune dans Defender for Endpoint.|
 |[**Correction**](tvm-remediation.md)|Consultez les activités de correction que vous avez créées et les exceptions de recommandation.|
 |[**Inventaire des logiciels**](tvm-software-inventory.md)|Consultez la liste des logiciels vulnérables de votre organisation, ainsi que les informations sur les faiblesses et les menaces.|

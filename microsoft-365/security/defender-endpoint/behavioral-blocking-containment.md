@@ -19,22 +19,22 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 99f9756170345941f38918c5f31336c1e6bc5ad7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 6db146b7a564dceb5f8c7f9c3b023353e94a5950
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962782"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171388"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Le paysage actuel des menaces est dépassé par les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. [](/windows/security/threat-protection/intelligence/fileless-threats) Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, inclus dans Defender pour le point de [terminaison.](/windows/security)
 
@@ -117,7 +117,7 @@ Quelques minutes après le blocage de l’artefact, plusieurs instances du même
 
 Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et de blocage, les menaces sont détectées, contenues et bloquées automatiquement.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur Defender pour le point de terminaison](overview-endpoint-detection-response.md)
 

@@ -15,18 +15,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 330bde1a038e659783b3e03b9e6b4cc75f337ec3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553675"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171688"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection cloud et Antivirus Microsoft Defender
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Les technologies de nouvelle génération Antivirus Microsoft Defender fournissent une protection automatisée et quasi instantanée contre les menaces nouvelles et émergentes. Pour identifier les nouvelles menaces de manière dynamique, les technologies de nouvelle génération fonctionnent avec de grands ensembles de données interconnectées dans le Graph Microsoft Intelligent Security et des systèmes d’intelligence artificielle (IA) puissants pilotés par des modèles d’apprentissage automatique avancés. La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir une protection précise, en temps réel et intelligente. 
@@ -46,11 +45,11 @@ Les billets de blog suivants illustrent le fonctionnement de la protection cloud
 
 - [Pourquoi Antivirus Microsoft Defender est le plus déployé dans l’entreprise](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
 
-- [L’analyse du comportement combinée à l’apprentissage automatique a pour effet de sar une campagne massive de minage de pièces](https://www.microsoft.com/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)
+- [L’analyse du comportement combinée à l’apprentissage automatique a pour effet de sar une campagne massive d’exploration de pièces](https://www.microsoft.com/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)
 
 - [Comment l’intelligence artificielle a arrêté une épidémie « Emotet »](https://www.microsoft.com/security/blog/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)
 
-- [Détonation d’une mauvaise attaque : Antivirus Microsoft Defender défenses d’apprentissage automatique à plusieurs niveaux](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
+- [Désa malfaiteur : défenses Antivirus Microsoft Defender d’apprentissage machine à couches](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
 
 - [Antivirus Microsoft Defender service de protection cloud : défense avancée en temps réel contre les programmes malveillants jamais vus](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
 
@@ -70,4 +69,4 @@ Maintenant que vous avez une vue d’ensemble de la protection cloud Antivirus M
 
 1. Découvrez [pourquoi la protection cloud doit être activée pour Antivirus Microsoft Defender](why-cloud-protection-should-be-on-mdav.md).
 
-2. Activer [la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+2. Activer la [protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)

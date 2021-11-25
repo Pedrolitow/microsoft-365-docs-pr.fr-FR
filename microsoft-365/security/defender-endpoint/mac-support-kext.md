@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 description: Résoudre les problèmes liés à l’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, noyau, extension
+keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, noyau, extension
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9a6486985b0c6f0e1069c30889621d730361d65b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3ed4dd5f38369dd818d31e60e23de053dff4347
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152153"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170992"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
@@ -31,7 +31,8 @@ ms.locfileid: "60152153"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -42,7 +43,7 @@ Cet article fournit des informations sur la résolution des problèmes avec l’
 
 Si vous n’avez pas approuvé l’extension du noyau pendant le déploiement/l’installation de Microsoft Defender pour Endpoint sur macOS, l’application affiche une bannière vous invite à l’activer :
 
-   ![Capture d’écran rtp désactivée.](images/mdatp-32-main-app-fix.png)
+   ![Capture d’écran désactivée rtp.](images/mdatp-32-main-app-fix.png)
 
 Vous pouvez également exécuter ```mdatp health``` . Il indique si la protection en temps réel est activée mais non disponible. Cela indique que l’extension du noyau n’est pas approuvée pour s’exécuter sur votre appareil.
 
@@ -69,9 +70,9 @@ Consultez les instructions correspondant à l’outil de gestion que vous avez u
 
 Si moins de 30 minutes se sont écoulées depuis l’installation du produit, accédez à La sécurité des préférences système & Confidentialité , où vous devez autoriser les **logiciels** système des développeurs \> « Microsoft Corporation ». 
 
-Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension du noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
+Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l’extension de noyau n’a toujours pas été approuvée pour s’exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après la capture d’écran expirée de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Fenêtre de sécurité et de confidentialité après l’expiration de la capture d’écran de l’invite.](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d’approbation.
 

@@ -16,27 +16,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06e87fcb0f9f1521e77d254895ef4fc2c57cf1d5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fbd57bb648c2d1d4c1ed08ae4abaa12e834cea04
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646942"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171556"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
+**S’applique à :**
 - [Defender pour le point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Cette page vous guide à travers les étapes à suivre pour configurer des stratégies macOS dans Jamf Pro.
 
 Vous devez suivre les étapes suivantes :
 
-1. [Obtenir le package d’intégration Microsoft Defender for Endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [Obtenir le package d’intégration De Microsoft Defender pour point de terminaison](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 2. [Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 3. [Configurer les paramètres de Microsoft Defender pour les points de terminaison](#step-3-configure-microsoft-defender-for-endpoint-settings)
 4. [Configurer les paramètres de notification microsoft Defender pour les points de terminaison](#step-4-configure-notifications-settings)
@@ -74,7 +75,7 @@ Vous devez suivre les étapes suivantes :
 
 3. Entrez les détails suivants :
 
-   **Général**:
+   **Général** :
 
    - Nom : intégration MDATP pour macOS
    - Description : intégration PEPT MDATP pour macOS
@@ -160,7 +161,7 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
     ![Sélectionnez les paramètres gérés.](images/817b3b760d11467abe9bdd519513f54f.png)
 
-6. Modifiez les valeurs des paramètres en valeurs souhaitées. Vous pouvez cliquer **sur Plus d’informations** pour obtenir la documentation d’un paramètre particulier. (Vous pouvez cliquer sur **aperçu Plist** pour inspecter l’apparence de la liste de configuration. Cliquez **sur Éditeur de formulaire** pour revenir à l’éditeur visuel.)
+6. Modifiez les valeurs des paramètres en valeurs souhaitées. Vous pouvez cliquer **sur Plus d’informations** pour obtenir la documentation d’un paramètre particulier. (Vous pouvez cliquer sur **aperçu Plist** pour inspecter l’apparence de la liste de configuration. Cliquez **sur Éditeur de** formulaire pour revenir à l’éditeur visuel.)
 
     ![Modifier les valeurs des paramètres.](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
 
@@ -316,7 +317,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
 2. Enregistrez le fichier sous `MDATP_MDAV_configuration_settings.plist` .
 
-3. Dans le tableau de bord Jamf Pro, ouvrez **Ordinateurs,** et il y a des **profils de configuration.** Cliquez sur **Nouveau (* et basculez vers **l’onglet** Général.
+3. Dans le tableau de bord jamf Pro, ouvrez **Ordinateurs** et il y a des **profils de configuration.** Cliquez sur **Nouveau (* et basculez vers **l’onglet** Général.
 
     ![Nouveau profil.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
@@ -340,7 +341,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
     ![Image du fichier plist des paramètres de configuration.](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. In **Preferences Domain**, enter `com.microsoft.wdav` , then select Télécharger **PLIST File**.
+7. Dans **le domaine Préférences,** `com.microsoft.wdav` entrez, puis sélectionnez **Télécharger fichier PLIST.**
 
     ![Image du domaine des préférences de paramètres de configuration.](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -383,7 +384,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
     ![Image des paramètres de configuration addsav.](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
-    ![Image de l’ajout des paramètres de configuration.](images/6f093e42856753a3955cab7ee14f12d9.png)
+    ![Image des paramètres de configuration enregistrer ajouter.](images/6f093e42856753a3955cab7ee14f12d9.png)
 
 16. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration.**
 
@@ -501,7 +502,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
     ![Image des paramètres de configuration mdatpmdavmau.](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
 10. Sélectionnez **Télécharger**.
-    ![Image de la configuration de la configuration de délimitation.](images/4239ca0528efb0734e4ca0b490bfb22d.png)
+    ![Image du délimitement de configuration.](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Image de la configuration de la configuration de la délimitation.](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
@@ -525,7 +526,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
     ![Image du paramètre de configuration doneimage.](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
-## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>Étape 6 : Accorder un accès disque complet à Microsoft Defender pour le point de terminaison
+## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>Étape 6 : Accorder un accès disque total à Microsoft Defender pour le point de terminaison
 
 1. Dans le tableau de bord Jamf Pro, sélectionnez **Profils de configuration.**
 
@@ -598,7 +599,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
     ![Image de l’image addimage du paramètre de configuration.](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de > sélectionnez Groupe machine de **Contoso.**
+14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de groupe > sélectionnez Groupe MachineGroup de **Contoso.**
 
     ![Image du paramètre de configuration contoso machinegrp.](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
@@ -608,7 +609,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 17. Sélectionnez **Terminé**.
 
-    ![Image de donimg de paramètre de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
+    ![Image de donimg des paramètres de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
 
     ![Image du paramètre de configuration donimg2.](images/6c8b406ee224335a8c65d06953dc756e.png)
 
@@ -652,7 +653,7 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -707,7 +708,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -753,11 +754,11 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
 3. Sélectionnez **l’onglet** Étendue.
 
-   ![Image de l’onglet de tabulation des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
+   ![Image de l’onglet système des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
 
 4. Sélectionnez **+ Ajouter**.
 
-5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
+5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
 
 6. Sélectionnez **+ Ajouter**.
 
@@ -771,7 +772,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 
     ![Image des paramètres de configuration netextfinal.](images/netext-final.png)
 
-Vous pouvez également télécharger [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) et le télécharger dans les profils de configuration JAMF, comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Vous pouvez également télécharger [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) et le télécharger dans les profils de configuration JAMF comme décrit dans [Deploying Custom Configuration Profiles using Jamf Pro| Méthode 2 : Télécharger profil de configuration à Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Étape 10 : Planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
 
@@ -791,12 +792,12 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
     ![Image des paramètres de configuration jamfpro.](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
-4. Sélectionnez votre ordinateur et cliquez sur l’icône d’engrenage en haut, puis sélectionnez **Gestion de l’ordinateur.**
+4. Sélectionnez votre ordinateur et cliquez sur l’icône d’engrenage en haut, puis **sélectionnez Gestion de l’ordinateur.**
 
     ![Image des paramètres de configuration compmgmt.](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
 5. Dans **les packages,** **sélectionnez + Nouveau**.
-    ![Image contenant une nouvelle description des nouveaux packages généré automatiquement.](images/57aa4d21e2ccc65466bf284701d4e961.png)
+    ![Une image contenant une description d’volatile a généré automatiquement un nouveau package.](images/57aa4d21e2ccc65466bf284701d4e961.png)
 
 6. Dans **le nouveau package,** entrez les détails suivants :
 

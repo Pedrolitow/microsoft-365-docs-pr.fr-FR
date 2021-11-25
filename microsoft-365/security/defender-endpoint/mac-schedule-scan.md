@@ -1,6 +1,6 @@
 ---
-title: Planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
-description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour Endpoint dans macOS afin de mieux protéger les ressources de votre organisation.
+title: Comment planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
+description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender for Endpoint dans macOS afin de mieux protéger les ressources de votre organisation.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, analyses, antivirus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c1d785f88160a7e0ffd17285b384f54ba4f2f74a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8f957f1a6aa51380152441f26aaeb47b7df58e7b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156225"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171236"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -123,7 +124,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
  
 ### <a name="load-your-file"></a>Charger votre fichier
 
-1. Ouvrez **terminal**.
+1. Ouvrez **Terminal**.
 2. Entrez les commandes suivantes pour charger votre fichier :
 
     ```bash
@@ -131,9 +132,9 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
     launchctl start <your file name>
     ```
 
-3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste p. Dans les exemples ci-dessus, l’analyse s’exécute à 02:00 tous les vendredis. 
+3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste P. Dans les exemples ci-dessus, l’analyse s’exécute à 02:00 tous les vendredis. 
 
-    La `Weekday` valeur `StartCalendarInterval` d’utilise un nombre integer pour indiquer le cinquième jour de la semaine ou le vendredi.
+    La `Weekday` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le cinquième jour de la semaine ou le vendredi.
 
  > [!IMPORTANT]
  > Les agents exécutés *avec lancement* ne s’exécutent pas à l’heure prévue pendant que l’appareil est en veille. Ils s’exécutent à la place une fois que l’appareil reprend en mode veille.
@@ -142,6 +143,6 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
 
 ## <a name="schedule-a-scan-with-intune"></a>Planifier une analyse avec Intune
 
-Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) le point de terminaison est persistant lorsque l’appareil reprend le mode veille. 
+Vous pouvez également planifier des analyses avec Microsoft Intune. Le [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible dans [scripts pour Microsoft Defender pour le](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) point de terminaison est persistant lorsque l’appareil reprend du mode veille. 
 
 Voir Utiliser des scripts shell sur les appareils macOS dans [Intune](/mem/intune/apps/macos-shell-scripts) pour obtenir des instructions plus détaillées sur l’utilisation de ce script dans votre entreprise.

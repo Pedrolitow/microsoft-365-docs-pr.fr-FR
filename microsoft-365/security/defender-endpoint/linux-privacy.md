@@ -14,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1c15e5ba5b48380e20ddfd6c291df5c5afafa251
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d2da0f15b392da9a461c8a2e50e7110610fcc5a2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191754"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168893"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft s’engage à vous fournir les informations et les contrôles dont vous avez besoin pour faire des choix sur la façon dont vos données sont collectées et utilisées lorsque vous utilisez Defender pour Endpoint sur Linux.
 
-Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
+Cet article décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour Point de terminaison sur Linux
 
@@ -43,12 +43,12 @@ Cette section décrit les contrôles de confidentialité pour les différents ty
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits.
 
-Certaines données de diagnostic sont obligatoires, d’autres sont facultatives. Nous vous offrons la possibilité de configurer l’envoi des données de diagnostic requises ou facultatives via des contrôles de confidentialité, comme les paramètres de stratégie des organisations.
+Certaines données de diagnostic sont obligatoires, d’autres sont facultatives. Nous vous donnez la possibilité de choisir de nous envoyer les données de diagnostic requises ou facultatives à l’aide de contrôles de confidentialité, tels que les paramètres de stratégie pour les organisations.
 
 Vous pouvez choisir parmi deux niveaux de données de diagnostic pour le logiciel client Defender pour Endpoint :
 
 - **Obligatoire**: données minimales nécessaires pour assurer la sécurité, la mise à jour et les résultats de Defender for Endpoint sur l’appareil sur laquelle il est installé.
-- **Facultatif**: données supplémentaires qui aident Microsoft à améliorer les produits et fournissent des informations améliorées pour vous aider à détecter, diagnostiquer et résoudre les problèmes.
+- **Facultatif**: autres données qui aident Microsoft à améliorer les produits et fournissent des informations améliorées pour vous aider à détecter, diagnostiquer et résoudre les problèmes.
 
 Par défaut, seules les données de diagnostic requises sont envoyées à Microsoft.
 
@@ -65,7 +65,7 @@ Des exemples de données sont utilisés pour améliorer les fonctionnalités de 
 Il existe trois niveaux pour contrôler l’envoi d’échantillons :
 
 - **Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.
-- **Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.
+- **Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut.
 - **Tous**: tous les échantillons suspects sont envoyés à Microsoft.
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Gérer les Contrôles de protection des données avec des paramètres de stratégie
@@ -95,7 +95,7 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 |hostname|Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
 |product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit.|
 |app_version|Version du defender pour point de terminaison sur l’application Linux. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
-|sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées.|
+|sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 |supported_compressions|Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application.|
 |release_ring|Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
 
@@ -109,7 +109,7 @@ Les données de diagnostic requises permettent d’identifier les problèmes ave
 
 **Installation/désinstallation de Microsoft Defender** for Endpoint :
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -121,7 +121,7 @@ Les champs suivants sont affichés :
 
 **Configuration de Microsoft Defender pour point de terminaison**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -143,7 +143,7 @@ Les champs suivants sont affichés :
 
 **Rapport de mise à jour de l’intelligence de la sécurité**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -158,7 +158,7 @@ Les champs suivants sont affichés :
 
 **Statistiques d’extension du noyau**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -188,11 +188,11 @@ Si vous choisissez d’envoyer des données de diagnostic facultatives, les donn
 
 Les données de diagnostic facultatives collectées par Microsoft sur la configuration du produit (par exemple, le nombre d’exclusions définies sur l’appareil) et les performances du produit (mesures agrégées sur les performances des composants du produit) sont des exemples de données de diagnostic facultatives.
 
-#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données de configuration logicielle et d’inventaire pour les données de diagnostic facultatives
+#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Événements de données de configuration du logiciel et d’inventaire pour les données de diagnostic facultatives
 
 **Configuration de Microsoft Defender pour point de terminaison**:
 
-Les champs suivants sont affichés :
+Les champs suivants sont collectés :
 
 |Champ|Description|
 |---|---|
@@ -205,7 +205,7 @@ Les champs suivants sont affichés :
 |antivirus_engine.exclusions[].name|Nom du fichier exclu de l’analyse.|
 |antivirus_engine.scan_cache_maximum|Taille du cache du produit.|
 |antivirus_engine.maximum_scan_threads|Nombre maximal de threads utilisés pour l’analyse.|
-|antivirus_engine.threat_restoration_exclusion_time|Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté.|
+|antivirus_engine.threat_restoration_exclusion_time|Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté.|
 |antivirus_engine.threat_type_settings|Configuration de la façon dont les différents types de menaces sont gérés par le produit.|
 |filesystem_scanner.full_scan_directory|Répertoire d’analyse complet.|
 |filesystem_scanner.quick_scan_directories|Liste des répertoires utilisés dans l’analyse rapide.|
@@ -214,11 +214,11 @@ Les champs suivants sont affichés :
 
 **Configuration de la mise à jour automatique Microsoft**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
-|how_to_check|Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles).|
+|how_to_check|Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles).|
 |channel_name|Canal de mise à jour associé à l’appareil.|
 |manifest_server|Serveur utilisé pour télécharger les mises à jour.|
 |update_cache|Emplacement du cache utilisé pour stocker les mises à jour.|
@@ -227,7 +227,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-started-report"></a>Rapport de chargement démarré du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -238,7 +238,7 @@ Les champs suivants sont affichés :
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Rapport de chargement terminé du journal de diagnostic
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|
@@ -254,7 +254,7 @@ Sorties inattendues de l’application et état de celle-ci lorsque cela se prod
 
 **Statistiques d’extension du noyau**:
 
-Les champs suivants sont affichés :
+Les champs collectés sont les suivants :
 
 |Champ|Description|
 |---|---|

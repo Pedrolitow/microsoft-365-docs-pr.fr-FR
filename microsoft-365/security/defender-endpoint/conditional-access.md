@@ -16,22 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93b547718bca2fb157c3b4e0a4b08d383ec92e4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ee1b1542eb2e737da509ce12ad9c2a605a4ffa5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196992"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170526"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
 
 L’accès conditionnel est une fonctionnalité qui vous permet de mieux protéger vos utilisateurs et les informations d’entreprise en vous assurez que seuls les appareils sécurisés ont accès aux applications.
 
@@ -55,7 +56,7 @@ En fonction de la configuration des stratégies dans Intune, l’accès conditio
 
 Par exemple, vous pouvez configurer Intune pour appliquer l’accès conditionnel sur les appareils à risque élevé.
 
-Dans Intune, une stratégie de conformité des appareils est utilisée conjointement avec l’accès conditionnel Azure AD pour bloquer l’accès aux applications. En parallèle, un processus automatisé d’examen et de correction est lancé.
+Dans Intune, une stratégie de conformité des appareils est utilisée conjointement avec Azure AD accès conditionnel pour bloquer l’accès aux applications. En parallèle, un processus automatisé d’examen et de correction est lancé.
 
  Un utilisateur peut toujours utiliser l’appareil pendant l’examen et la correction automatisés, mais l’accès aux données d’entreprise est bloqué jusqu’à ce que la menace soit entièrement corrigé.
 
@@ -65,9 +66,9 @@ Il existe trois façons de résoudre un risque :
 
 1. Utilisez la correction manuelle ou automatisée.
 2. Résoudre les alertes actives sur l’appareil. Cela permet de supprimer le risque de l’appareil.
-3. Vous pouvez supprimer l’appareil des stratégies actives et, par conséquent, l’accès conditionnel ne sera pas appliqué sur l’appareil.
+3. Vous pouvez supprimer l’appareil des stratégies actives et, par conséquent, l’accès conditionnel ne sera pas appliqué à l’appareil.
 
-La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel.](configure-conditional-access.md)
+La correction manuelle nécessite qu’un administrateur secops examine une alerte et adresse le risque visible sur l’appareil. La correction automatisée est configurée par le biais des paramètres de configuration fournis dans la section suivante, [Configurer l’accès conditionnel](configure-conditional-access.md).
 
 Lorsque le risque est supprimé par le biais d’une correction manuelle ou automatisée, l’appareil revient à un état conforme et l’accès aux applications est accordé.
 
@@ -76,7 +77,7 @@ L’exemple de séquence d’événements suivant explique l’accès conditionn
 1. Un utilisateur ouvre un fichier malveillant et Defender for Endpoint signale l’appareil comme étant à risque élevé.
 2. L’évaluation à risque élevé est transmise à Intune. En parallèle, une enquête automatisée est lancée pour corriger la menace identifiée. Une correction manuelle peut également être effectuée pour corriger la menace identifiée.
 3. En fonction de la stratégie créée dans Intune, l’appareil est marqué comme non conforme. L’évaluation est ensuite communiquée à Azure AD par la stratégie d’accès conditionnel Intune. Dans Azure AD, la stratégie correspondante est appliquée pour bloquer l’accès aux applications.
-4. L’examen et la correction manuels ou automatisés sont terminés et la menace est supprimée. Defender pour le point de terminaison constate qu’il n’y a aucun risque sur l’appareil et Intune évalue que l’appareil est dans un état conforme. Azure AD applique la stratégie qui autorise l’accès aux applications.
+4. L’examen et la correction manuels ou automatisés sont terminés et la menace est supprimée. Defender pour le point de terminaison voit qu’il n’y a aucun risque sur l’appareil et Intune évalue que l’appareil est dans un état conforme. Azure AD applique la stratégie qui autorise l’accès aux applications.
 5. Les utilisateurs peuvent désormais accéder aux applications.
 
 ## <a name="related-topic"></a>Rubrique connexe

@@ -15,18 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 307896b583fe3c0e9999afaa789646dc7fafa550
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 803434179a616ddea718c543da4308f6af77b39e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148670"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167381"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md)et à la surveillance en temps réel toujours en cours. **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
@@ -164,7 +165,7 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> Pour plus d’informations, voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender [et les cmdlets antivirus Defender.](/powershell/module/defender/)
+> Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Windows Management Instruction (WMI) pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
@@ -334,7 +335,7 @@ Dans l’exemple suivant, les éléments contenus dans la `ExclusionExtension` l
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell pour Get-MpPreference.":::
 
-Pour plus d’informations, voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender [et les cmdlets antivirus Defender.](/powershell/module/defender/)
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Récupérer une liste d’exclusions spécifique à l’aide de PowerShell
 
@@ -350,7 +351,7 @@ Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque 
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell affichant uniquement les entrées de la liste d’exclusions.":::
 
-Pour plus d’informations, voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender [et les cmdlets antivirus Defender.](/powershell/module/defender/)
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
 <a id="validate"></a>
 

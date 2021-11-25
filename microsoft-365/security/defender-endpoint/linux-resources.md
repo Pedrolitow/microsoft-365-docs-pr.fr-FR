@@ -16,22 +16,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268553"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168881"
 ---
 # <a name="resources"></a>Ressources
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -51,7 +51,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 2. Reproduisez le problème.
 
-3. Exécutez la commande suivante pour enregistrer Defender pour les journaux du point de terminaison. Les fichiers sont stockés dans une archive .zip de données.
+3. Exécutez la commande suivante pour back up Defender for Endpoint’s logs. Les fichiers sont stockés dans une archive .zip de données.
 
    ```bash
    sudo mdatp diagnostic create
@@ -73,9 +73,9 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
    Log level configured successfully
    ```
 
-## <a name="log-installation-issues"></a>Journal des problèmes d’installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
-Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log` .
 Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
@@ -106,7 +106,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 
 ****
 
-|Groupe|Scénario|Commande|
+|Group|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Configuration|Activer/désactiver la surveillance du comportement|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -146,5 +146,5 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Détection et réponse des points de terminaison|Définir la prévisualisation (inutilisée)|`mdatp edr early-preview [enable|disable]`|
 |Détection et réponse des points de terminaison|Définir l’ID de groupe|`mdatp edr group-ids --group-id [group-id]`|
 |Détection et réponse des points de terminaison|Définir/supprimer une balise, uniquement `GROUP` prise en charge|`mdatp edr tag set --name GROUP --value [tag]`|
-|Détection et réponse des points de terminaison|Exclusions de liste (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|Détection et réponse des points de terminaison|Exclusions de listes (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |

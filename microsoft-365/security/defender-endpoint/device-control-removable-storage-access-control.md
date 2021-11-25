@@ -15,14 +15,17 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 11/02/2021
-ms.openlocfilehash: b9634b616214d62a540ffba59fabd4996de3c3b6
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: c65c9584626c85a7c91a6d410af3a7ab5fc01aa6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962481"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169073"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
+
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
 > La gestion de la stratégie de groupe de ce produit est désormais généralement disponible (4.18.2106) : consultez le blog Tech Community : Protéger votre stockage et votre imprimante amovibles avec Microsoft Defender pour [endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
@@ -127,7 +130,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 La fonctionnalité de contrôle d Stockage’accès amovible vous permet d’appliquer une stratégie via la stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
 
-### <a name="licensing"></a>Gestion des licences
+### <a name="licensing"></a>Licences
 
 Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
@@ -234,7 +237,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Écran illustrant le blocage du stockage amovible.":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>Quelle est la limite du support de stockage amovible pour le nombre maximal de objets de première utilisation ?
 
