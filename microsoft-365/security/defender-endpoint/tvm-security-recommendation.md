@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bdd92a4be90aca4e7ca85489923ff94850114391
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882968"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160491"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882968"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,7 +42,7 @@ Chaque recommandation de sécurité inclut des étapes de correction actionnable
 > [!TIP]
 > Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Chaque appareil de l’organisation est marqué en fonction de trois facteurs importants pour aider les clients à se concentrer sur les bonnes choses au bon moment.
 
@@ -112,7 +112,7 @@ Dans le volant, vous pouvez choisir l’une des options suivantes :
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Examiner les modifications apportées à l’exposition ou à l’impact de l’appareil
 
-S’il y a une augmentation importante du nombre d’appareils exposés ou une forte augmentation de l’impact sur le score d’exposition de votre organisation et le score de sécurité Microsoft pour les appareils, cette recommandation de sécurité vaut la peine d’être étudier.
+S’il y a une augmentation importante du nombre d’appareils exposés ou une augmentation significative de l’impact sur le score d’exposition de votre organisation et le score de sécurité Microsoft pour les appareils, cette recommandation de sécurité est utile.
 
 1. Sélectionnez la page Recommandation **et Ouvrir le logiciel**
 2. Sélectionnez **l’onglet Chronologie** des événements pour afficher tous les événements qui ont un impact sur ce logiciel, tels que les nouvelles vulnérabilités ou les nouvelles exploitations publiques. [En savoir plus sur la chronologie des événements](threat-and-vuln-mgt-event-timeline.md)

@@ -1,5 +1,5 @@
 ---
-title: Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
+title: tableau de bord Centre de sécurité Microsoft Defender opérations de sécurité de l’utilisateur
 description: Utilisez le tableau de bord pour identifier les appareils à risque, suivre l’état du service et consulter les statistiques et les informations sur les appareils et les alertes.
 keywords: tableau de bord, alertes, nouveau, en cours, résolu, risque, appareils à risque, infections, rapports, statistiques, graphiques, graphiques, santé, détections de programmes malveillants actifs, catégorie de menace, catégories, programme de vol de mot de passe, ransomware, exploit, menace, faible gravité, programmes malveillants actifs
 ms.prod: m365-security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2535de64276048f933fba4d12c654a46ab1991d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: bf0eb7b210ccb033e47b86b45a5f4dec00e9d795
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587136"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160490"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>tableau de bord Centre de sécurité Microsoft Defender opérations de sécurité de l’utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
@@ -126,7 +126,7 @@ Cliquez sur le compte d’utilisateur pour voir les détails sur le compte d’u
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Comprendre le portail Microsoft Defender pour les points de terminaison](use.md)
 - [Vue d’ensemble du portail](portal-overview.md)

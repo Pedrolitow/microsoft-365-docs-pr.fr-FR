@@ -17,22 +17,22 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63d994ce521f3915daea6a585f64c407fd241eee
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 129537fe810148f49628790e347479b8d376888d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963214"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61160511"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -78,7 +78,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de ce qui se trou
 
 Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison.](portal-overview.md#microsoft-defender-for-endpoint-icons)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d'exposition](tvm-exposure-score.md)
