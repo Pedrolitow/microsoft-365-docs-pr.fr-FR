@@ -1,7 +1,7 @@
 ---
 title: Créer une application pour accéder à Microsoft Defender pour le point de terminaison sans utilisateur
 ms.reviewer: ''
-description: Découvrez comment concevoir une application web pour obtenir un accès par programmation à Microsoft Defender pour endpoint sans utilisateur.
+description: Découvrez comment concevoir une application web pour obtenir un accès par programme à Microsoft Defender pour endpoint sans utilisateur.
 keywords: api, api de graphique, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,21 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d98a642450dd47088446144db01fab0a73e24855
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 343a1c8d8ca782f9562cad5aa42915e8ac65440d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157973"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167813"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Créer une application pour accéder à Microsoft Defender pour le point de terminaison sans utilisateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,10 +40,10 @@ ms.locfileid: "60157973"
 
 Cette page explique comment créer une application pour obtenir l’accès par programme à Defender for Endpoint sans utilisateur. Si vous avez besoin d’un accès par programme à Defender for Endpoint pour le compte d’un utilisateur, voir [Obtenir l’accès avec le contexte utilisateur.](exposed-apis-create-app-nativeapp.md) Si vous n’êtes pas sûr de l’accès dont vous avez besoin, [consultez La mise en place.](apis-intro.md)
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à faire preuve d’innovation en fonction des fonctionnalités de Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
-- Créez une Azure Active Directory application (Azure AD).
+- Créez une application Azure Active Directory (Azure AD).
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à l’API Defender for Endpoint.
 
@@ -61,7 +62,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 4. Pour permettre à votre application d’accéder à Defender pour le point de terminaison et de lui attribuer l’autorisation « Lire toutes les **alertes** ». Sur votre page d’application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon organisation utilise \>  \>  >, tapez **WindowsDefenderATP,** puis sélectionnez **WindowsDefenderATP**.
 
    > [!NOTE]
-   > *WindowsDefenderATP n’apparaît* pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
+   > *WindowsDefenderATP n’apparaît* pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
 
    ![ajouter une autorisation.](images/add-permission.png)
 
@@ -73,7 +74,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 
      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées ».
      - Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur ».
-     - Pour déterminer l’autorisation qui vous est nécessaire, regardez la section **Autorisations** de l’API que vous souhaitez appeler.
+     - Pour déterminer l’autorisation qui vous est nécessaire, regardez la section **Autorisations** de l’API que vous voulez appeler.
 
 5. Sélectionnez **Accorder le consentement.**
 
@@ -87,7 +88,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
     > [!NOTE]
     > Après avoir sélectionné **Ajouter,** **sélectionnez copier la valeur de secret générée.** Vous ne pourrez pas récupérer cette valeur après votre départ.
 
-    ![Image de la clé de création d’application.](images/webapp-create-key2.png)
+    ![Image de la clé de création de l’application.](images/webapp-create-key2.png)
 
 7. Notez votre ID d’application et votre ID de client. Dans la page de votre application, allez à **Vue d’ensemble** et copiez ce qui suit.
 
@@ -116,7 +117,7 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur les jetons Azure AD, voir le [didacticiel Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur les jetons Azure AD, voir le [didacticiel Azure AD'](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="use-powershell"></a>Utiliser PowerShell
 
@@ -173,7 +174,7 @@ Le code suivant a été testé avec NuGet Microsoft.IdentityModel.Clients.Active
 
 Voir [Obtenir un jeton à l’aide de Python.](run-advanced-query-sample-python.md#get-token)
 
-### <a name="use-curl"></a>Utiliser l’erreur
+### <a name="use-curl"></a>Utilisation de l’err.
 
 > [!NOTE]
 > La procédure suivante part du principe que La Windows est déjà installée sur votre ordinateur.
@@ -181,7 +182,7 @@ Voir [Obtenir un jeton à l’aide de Python.](run-advanced-query-sample-python.
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 1. Définissez CLIENT_SECRET sur votre secret d’application Azure.
 1. Définissez TENANT_ID sur l’ID de client Azure du client qui souhaite utiliser votre application pour accéder à Defender for Endpoint.
-1. Exécutez la commande suivante :
+1. Exécutez la commande suivante :
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -199,7 +200,7 @@ Assurez-vous que vous avez reçu le jeton correct :
 
 1. Copiez et collez le jeton obtenu à l’étape précédente dans [JWT](https://jwt.ms) afin de le décoder.
 1. Vérifier que vous obtenez une revendication « rôles » avec les autorisations souhaitées
-1. Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application avec des autorisations pour tous les rôles de Microsoft Defender pour endpoint :
+1. Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d’une application avec des autorisations pour tous les rôles de Microsoft Defender for Endpoint :
 
 ![Image de validation de jeton.](images/webapp-decoded-token.png)
 

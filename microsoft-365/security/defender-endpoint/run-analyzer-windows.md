@@ -1,7 +1,7 @@
 ---
 title: Exécuter l’analyse du client sur Windows
 description: Découvrez comment exécuter l’analyseur de client Microsoft Defender for Endpoint sur Windows.
-keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, windows
+keywords: analyseur client, dépannage du capteur, analyseur, mdeanalyzer, windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,22 +18,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 172c883ae5572be65903c0b19459c514a39882d0
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 6e0bc97e5f43c5527c0b4d443df030b76685dd8b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914114"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163265"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Téléchargez [l’outil MDE Client Analyzer](https://aka.ms/mdatpanalyzer) sur l Windows que vous devez examiner.
 
-2. Extrayez le contenu des MDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu du MDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -115,7 +114,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - MDEClientAnalyzer.txt
 
-      Description : il s’agit d’un fichier texte détaillé avec des détails sur l’exécution du script de l’analyseur.
+      Description : ce fichier texte détaillé s’affiche avec des détails sur l’exécution du script de l’analyseur.
 
     - MDEClientAnalyzer.xml
 

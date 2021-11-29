@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753564"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163901"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -55,11 +55,11 @@ Récupère un résultat de commande de réponse en direct spécifique par son in
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise en charge de Windows**.
+- **Vérifiez que vous exécutez une version prise** en charge de Windows .
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
-  - **Windows 10**
+  - **Windows 10**
     - [Version 1909 ou](/windows/whats-new/whats-new-windows-10-version-1909) ultérieure
     - [Version 1903 avec](/windows/whats-new/whats-new-windows-10-version-1903) [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
@@ -93,7 +93,7 @@ id}/GetLiveResponseResultDownloadLink(index={command-index})
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
+|Autorisation|String|Porteur {token}. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -149,7 +149,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Annuler l’action de l’ordinateur](cancel-machine-action.md)

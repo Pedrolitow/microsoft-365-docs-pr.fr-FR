@@ -14,33 +14,34 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 857f723012e88b03728de2b7d99f7c3bf852757b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883160"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163949"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [La protection du](network-protection.md) réseau empêche les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet.
 
 Cet article vous aide à évaluer la protection du réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site réplique le comportement qui se produit si un utilisateur a visité un site ou un domaine malveillant.
 
 > [!TIP]
-> Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) voir comment fonctionnent les autres fonctionnalités de protection.
+> Vous pouvez également consulter le site web des scénarios de démonstration de Microsoft Defender [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
 Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
 
-1. Tapez **powershell** dans la menu Démarrer, cliquez avec le bouton **droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -58,7 +59,7 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
     ![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide.](images/np-notif.png)
 
 > [!NOTE]
-> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [triple TCP.](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 

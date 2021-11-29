@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0abb5615b0c1a51b06ec47eeb0c0e0718ebb7f9b
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 43a60d12883dc639c4ee5b831d305010cef58533
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60479011"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163637"
 ---
 # <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Résoudre les problèmes de Microsoft Defender pour point de terminaison sur Linux RHEL6
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -72,7 +72,7 @@ Utilisez la commande suivante pour obtenir la version du noyau :
 ```bash
 uname -r
 ```
-## <a name="check-if-mdatp-audisp-process-is-running"></a>Vérifier si le processus mdatp ptsp est en cours d’exécution 
+## <a name="check-if-mdatp-audisp-process-is-running"></a>Vérifier si le processus mdatptptp est en cours d’exécution 
 Le résultat attendu est que le processus est en cours d’exécution.
 
 Utilisez la commande suivante pour vérifier :
