@@ -15,20 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144990"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217649"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -64,17 +65,17 @@ Le tableau suivant indique les paramètres pris en charge.
 Paramètre|Type|Description
 :---|:---|:---
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue|String|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
-description|Chaîne| Description de l’indicateur. **Obligatoire**
+title|String|Titre de l’alerte de l’indicateur. **Obligatoire**
+description|String| Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames|String|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 category|String|Catégorie de l’alerte. Exemples : exécution et accès aux informations d’identification. **Optional**
-mitretechniques|Chaîne|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
-GenerateAlert|Chaîne|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
+mitretechniques|String|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+GenerateAlert|String|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
 
 
 

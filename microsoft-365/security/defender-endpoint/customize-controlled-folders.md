@@ -15,17 +15,17 @@ ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff4b1f7b5fc271c01ef1d9eee079b4e4b4397ba2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9593b7798a969e5e8adca82c005c65bf7236eebb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883220"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218597"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -73,7 +73,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration des stratégies de **configuration** \>  \> **ordinateur.**
 
-4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
 
 5. Double-cliquez **sur Dossiers protégés configurés,** puis définissez l’option **sur Activé.** Sélectionnez **Afficher** et spécifiez chaque dossier à protéger.
 
@@ -101,12 +101,12 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>Autoriser des applications spécifiques à apporter des modifications aux dossiers contrôlés
 
-Vous pouvez spécifier si certaines applications sont toujours considérées comme sécurisées et accorder un accès en écriture aux fichiers dans les dossiers protégés. Autoriser les applications peut être utile si une application particulière que vous connaissez et que vous faites confiance est bloquée par la fonctionnalité d’accès contrôlé aux dossiers.
+Vous pouvez spécifier si certaines applications sont toujours considérées comme sûres et accorder un accès en écriture aux fichiers dans les dossiers protégés. Autoriser les applications peut être utile si une application particulière que vous connaissez et que vous faites confiance est bloquée par la fonctionnalité d’accès contrôlé aux dossiers.
 
 > [!IMPORTANT]
 > Par défaut, Windows ajoute des applications qui sont considérées comme conviviales à la liste autorisée. Ces applications ajoutées automatiquement ne sont pas enregistrées dans la liste affichée dans l’application Sécurité Windows ou à l’aide des cmdlets PowerShell associées. Vous ne devriez pas avoir besoin d’ajouter la plupart des applications. Ajoutez uniquement des applications si elles sont bloquées et que vous pouvez vérifier leur fiabilité.
 
-Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (avec le même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par l’accès contrôlé aux dossiers.
+Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (du même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par un accès contrôlé aux dossiers.
 
 Une application ou un service autorisé dispose uniquement d’un accès en écriture à un dossier contrôlé après son démarrage. Par exemple, un service de mise à jour continue de déclencher des événements une fois autorisé jusqu’à ce qu’il soit arrêté et redémarré.
 
@@ -128,7 +128,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
 
 4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option sur **Activé.** Sélectionnez **Afficher** et entrez chaque application.
 
@@ -147,7 +147,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"
     ```
 
-   Continuez à utiliser `Add-MpPreference -ControlledFolderAccessAllowedApplications` pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
+   Continuez à `Add-MpPreference -ControlledFolderAccessAllowedApplications` l’utiliser pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
 
    :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet PowerShell pour autoriser une application.":::
 
@@ -163,7 +163,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 Les indicateurs de certificat et de fichier Microsoft Defender pour point de terminaison peuvent autoriser les fichiers exécutables signés à accéder aux dossiers protégés. Pour plus d’informations sur l’implémentation, voir [Créer des indicateurs basés sur des certificats.](indicator-certificates.md)
 
 > [!Note]
-> Cela ne s’applique pas aux moteurs de script, y compris PowerShell
+> Cela ne s’applique pas aux moteurs de script, y compris Powershell
 
 ## <a name="customize-the-notification"></a>Personnaliser la notification
 

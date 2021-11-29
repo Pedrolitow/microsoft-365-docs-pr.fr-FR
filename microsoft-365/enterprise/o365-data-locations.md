@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128855"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218705"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -108,6 +108,20 @@ Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zo
 
 Quoi qu'il en soit, Microsoft ne contrôle ni ne limite les données géographiques à partir desquelles les clients ou leurs utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données client d'autres services sont ensuite intégrées dans Intune, les données client d'origine continueront d'être stockées sous réserve des propres engagements géographiques de l'autre service (le cas échéant) ; seule la copie des données client intégrées dans Intune sera stockée dans le Geo indiqué pour Intune.  
 
+### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Quelles sont les considérations relatives aux emplacements Microsoft Viva données ?
+
+- Viva Connections
+
+  - Les données du tableau de bord, des ressources et de l’application de bureau sont stockées dans SharePoint Online. 
+  
+  - Le flux inclut le contenu de SharePoint Online (Actualités), Stream (stocké au repos dans SharePoint Online) et Yammer (stocké au repos dans Yammer).  
+  
+- Viva Insights
+
+  - La résidence des données pour l’application Personnelle est basée sur l’emplacement de la boîte aux lettres de l’utilisateur.
+  
+  - La région de données Responsable/Responsable est déterminée par la région principale du client, et non par les utilisateurs individuels.
+
 ## <a name="data-center-locations"></a>Emplacements des centres de données
 
 La répartition ci-dessous précise l’emplacement des données pour divers services. Lorsque vous définissez les emplacements de services, veuillez vous référer à ces catégories.
@@ -155,12 +169,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -168,7 +180,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="aland-islands"></a>Îles Åland
@@ -179,12 +197,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -192,7 +208,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="albania"></a>Albanie
@@ -203,12 +225,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -216,7 +236,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="algeria"></a>Algérie
@@ -227,20 +253,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="american-samoa"></a>Samoa américaines
@@ -251,12 +281,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -264,7 +292,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="andorra"></a>Andorre
@@ -275,12 +309,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -288,7 +320,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="angola"></a>Angola
@@ -299,20 +337,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="anguilla"></a>Anguilla
@@ -323,12 +365,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -336,7 +376,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="antarctica"></a>Antarctique
@@ -347,12 +393,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -360,7 +404,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="antigua-and-barbuda"></a>Antigua-et-Barbuda
@@ -371,12 +421,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -384,7 +432,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="argentina"></a>Argentine
@@ -395,12 +449,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -408,7 +460,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="armenia"></a>Arménie
@@ -419,12 +477,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -432,7 +488,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="aruba"></a>Aruba
@@ -443,12 +505,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -456,7 +516,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="australia"></a>Australie
@@ -467,12 +533,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
-| Skype Entreprise | Australie |
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
 | Intune | Australie |
-| MyAnalytics | Australie |
 | Planificateur | Australie |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -480,7 +544,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Australie |
 | Tableau blanc | Australie |
 | Forms | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Australie |
+| Sujets Viva | Australie |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Australie |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="austria"></a>Autriche
@@ -491,12 +561,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -504,7 +572,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="azerbaijan"></a>Azerbaïdjan
@@ -515,20 +589,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur |  Zone géographique 1 : EMEA |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bahamas"></a>Bahamas
@@ -539,12 +617,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -552,7 +628,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bahrain"></a>Bahreïn
@@ -563,12 +645,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -576,7 +656,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bangladesh"></a>Bangladesh
@@ -587,12 +673,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -600,7 +684,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="barbados"></a>Barbade
@@ -611,12 +701,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -624,8 +712,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="belarus"></a>Bélarus
 <details><summary>Cliquez pour développer</summary><p>
@@ -635,12 +730,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -648,7 +741,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="belgium"></a>Belgique
@@ -659,12 +758,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -672,7 +769,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="belize"></a>Bélize
@@ -683,12 +786,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -696,7 +797,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="benin"></a>Bénin
@@ -707,20 +814,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bermuda"></a>Bermudes
@@ -731,12 +842,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -744,7 +853,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bhutan"></a>Bhoutan
@@ -755,12 +870,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -768,7 +881,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bolivia"></a>Bolivie
@@ -779,12 +898,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -792,7 +909,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bonaire"></a>Bonaire
@@ -803,12 +926,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -816,7 +937,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bosnia-and-herzegovina"></a>Bosnie-Herzégovine
@@ -827,20 +954,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur |  Zone géographique 1 : EMEA |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="botswana"></a>Botswana
@@ -851,20 +982,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bouvet-island"></a>Île Bouvet
@@ -875,12 +1010,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -888,7 +1021,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="brazil"></a>Brésil
@@ -899,20 +1038,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Brésil |
 | OneDrive Entreprise | Brésil |
 | SharePoint Online | Brésil |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | Brésil |
 | Office Online Mobile &amp; | Brésil |
 | Exchange Online Protection | Brésil |
 | Intune | États-Unis |
-| MyAnalytics | Brésil |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Brésil |
-| Stream | États-Unis |
+| Stream | Brésil |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Brésil |
+| Sujets Viva | Brésil |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Brésil |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="british-indian-ocean-territory"></a>Territoire britannique de l’Océan Indien
@@ -923,12 +1066,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -936,7 +1077,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="british-virgin-islands"></a>Îles Vierges britanniques
@@ -947,12 +1094,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -960,7 +1105,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="brunei"></a>Brunei
@@ -971,12 +1122,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -984,7 +1133,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="bulgaria"></a>Bulgarie
@@ -995,12 +1150,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1008,7 +1161,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="burkina-faso"></a>Burkina Faso
@@ -1019,20 +1178,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="burundi"></a>Burundi
@@ -1043,20 +1206,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cambodia"></a>Cambodge
@@ -1067,12 +1234,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1080,7 +1245,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cameroon"></a>Cameroun
@@ -1091,20 +1262,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="canada"></a>Canada
@@ -1115,12 +1290,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Canada |
 | OneDrive Entreprise | Canada |
 | SharePoint Online | Canada |
-| Skype Entreprise | Canada |
 | Microsoft Teams | Canada |
 | Office Online Mobile &amp; | Canada |
 | Exchange Online Protection | Canada |
 | Intune | États-Unis |
-| MyAnalytics | Canada |
 | Planificateur | Canada |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1128,7 +1301,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Canada |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Canada |
+| Sujets Viva | Canada |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | Canada |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cape-verde"></a>Cap-Vert
@@ -1139,20 +1318,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cayman-islands"></a>Îles Cayman
@@ -1163,12 +1346,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1176,7 +1357,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="central-african-republic"></a>République centrafricaine
@@ -1187,20 +1374,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="chad"></a>Tchad
@@ -1211,20 +1402,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="chile"></a>Chili
@@ -1235,12 +1430,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1248,7 +1441,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="china"></a>Chine
@@ -1259,12 +1458,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1272,7 +1469,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="christmas-island"></a>Île Christmas
@@ -1283,12 +1486,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1296,7 +1497,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cocos-keeling-islands"></a>Île Cocos (Keeling)
@@ -1307,12 +1514,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1320,7 +1525,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="colombia"></a>Colombie
@@ -1331,12 +1542,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1344,7 +1553,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="comoros"></a>Comores
@@ -1355,21 +1570,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="congo-brazzaville"></a>République du Congo (Brazzaville)
 <details><summary>Cliquez pour développer</summary><p>
@@ -1379,21 +1599,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="congo-kinshasa"></a>République démocratique du Congo (Kinshasa)
 <details><summary>Cliquez pour développer</summary><p>
@@ -1403,21 +1628,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="cook-islands"></a>Îles Cook
 <details><summary>Cliquez pour développer</summary><p>
@@ -1427,12 +1657,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1440,7 +1668,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="costa-rica"></a>Costa Rica
@@ -1451,12 +1685,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1464,7 +1696,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cote-divoire"></a>Côte d’Ivoire
@@ -1475,20 +1713,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="croatia"></a>Croatie
@@ -1499,12 +1741,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1512,7 +1752,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="curacao"></a>Curaçao
@@ -1523,12 +1769,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1536,7 +1780,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="cyprus"></a>Chypre
@@ -1547,12 +1797,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1560,7 +1808,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="czech-republic"></a>République tchèque
@@ -1571,12 +1825,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1584,7 +1836,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="denmark"></a>Danemark
@@ -1595,12 +1853,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1608,7 +1864,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="djibouti"></a>Djibouti
@@ -1619,20 +1881,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="dominica"></a>Dominique
@@ -1643,12 +1909,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1656,7 +1920,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="dominican-republic"></a>République dominicaine
@@ -1667,12 +1937,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1680,7 +1948,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="ecuador"></a>Équateur
@@ -1691,12 +1965,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1704,7 +1976,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="egypt"></a>Égypte
@@ -1715,20 +1993,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="el-salvador"></a>Salvador
@@ -1739,12 +2021,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1752,7 +2032,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="equatorial-guinea"></a>Guinée Équatoriale
@@ -1763,20 +2049,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="eritrea"></a>Érythrée
@@ -1787,20 +2077,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="estonia"></a>Estonie
@@ -1811,12 +2105,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1824,7 +2116,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="ethiopia"></a>Éthiopie
@@ -1835,20 +2133,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur |  États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="falkland-islands-malvinas"></a>Îles Malouines (Malvinas)
@@ -1859,12 +2161,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1872,7 +2172,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="faroe-islands"></a>Îles Féroé
@@ -1883,12 +2189,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -1896,7 +2200,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="federated-states-of-micronesia"></a>États fédérés de Micronésie
@@ -1907,12 +2217,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -1920,7 +2228,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="fiji"></a>Fidji
@@ -1931,20 +2245,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
-| Skype Entreprise | Australie |
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
-| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Australie |
-| Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Australie |
+| Planificateur | Australie |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Australie |
 | Stream | Australie |
-| Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Tableau blanc | Australie |
+| Forms | États-Unis |
+| Viva Connections | Australie |
+| Sujets Viva | Australie |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Australie |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="finland"></a>Finlande
@@ -1955,12 +2273,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -1968,7 +2284,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="france"></a>France
@@ -1979,12 +2301,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | France |
 | OneDrive Entreprise | France |
 | SharePoint Online | France |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | France |
 | Office Online Mobile &amp; | France |
 | Exchange Online Protection | France |
 | Intune | Union européenne |
-| MyAnalytics | France |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne |
@@ -1992,7 +2312,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | France |
+| Sujets Viva | France |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | France |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="french-guiana"></a>Guyane française
@@ -2003,12 +2329,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2016,7 +2340,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="french-polynesia"></a>Polynésie française
@@ -2027,12 +2357,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2040,7 +2368,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="french-southern-territories"></a>Territoires français du Sud
@@ -2051,12 +2385,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2064,7 +2396,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="gabon"></a>Gabon
@@ -2075,20 +2413,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="gambia"></a>Gambie
@@ -2099,20 +2441,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="georgia"></a>Géorgie
@@ -2123,12 +2469,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2136,7 +2480,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="germany"></a>Allemagne
@@ -2147,12 +2497,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Allemagne |
 | OneDrive Entreprise | Allemagne |
 | SharePoint Online | Allemagne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Allemagne |
 | Office Online Mobile &amp; | Allemagne |
 | Exchange Online Protection | Allemagne |
 | Intune | Union européenne |
-| MyAnalytics | Allemagne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne |
@@ -2160,7 +2508,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Allemagne |
+| Sujets Viva | Allemagne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Allemagne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="ghana"></a>Ghana
@@ -2171,20 +2525,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="gibraltar"></a>Gibraltar
@@ -2195,12 +2553,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2208,7 +2564,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="greece"></a>Grèce
@@ -2219,12 +2581,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -2232,8 +2592,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="greenland"></a>Groenland
 <details><summary>Cliquez pour développer</summary><p>
@@ -2243,12 +2610,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2256,7 +2621,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="grenada"></a>Grenade
@@ -2267,12 +2638,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2280,7 +2649,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guadeloupe"></a>Guadeloupe
@@ -2291,12 +2666,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2304,7 +2677,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guam"></a>Guam
@@ -2315,12 +2694,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2328,7 +2705,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guatemala"></a>Guatemala
@@ -2339,12 +2722,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2352,7 +2733,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guernsey"></a>Guernesey
@@ -2363,12 +2750,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2376,7 +2761,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guinea"></a>Guinée
@@ -2387,20 +2778,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guinea-bissau"></a>Guinée-Bissau
@@ -2411,20 +2806,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="guyana"></a>Guyane
@@ -2435,12 +2834,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2448,7 +2845,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="haiti"></a>Haïti
@@ -2459,12 +2862,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2472,7 +2873,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="heard-and-mcdonald-islands"></a>Îles Heard-et-MacDonald
@@ -2483,12 +2890,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2496,7 +2901,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="herzegovina"></a>Bosnie-Herzégovine
@@ -2507,12 +2918,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2520,7 +2929,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="holy-see-vatican-city-state"></a>Saint-Siège (Cité du Vatican)
@@ -2531,12 +2946,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2544,7 +2957,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="honduras"></a>Honduras
@@ -2555,12 +2974,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2568,7 +2985,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="hong-kong-sar"></a>Hong Kong (SAR)
@@ -2579,12 +3002,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2592,7 +3013,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="hungary"></a>Hongrie
@@ -2603,12 +3030,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -2616,7 +3041,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="iceland"></a>Islande
@@ -2627,12 +3058,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2640,8 +3069,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="india"></a>Inde
 <details><summary>Cliquez pour développer</summary><p>
@@ -2651,12 +3087,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Inde |
 | OneDrive Entreprise | Inde |
 | SharePoint Online | Inde |
-| Skype Entreprise | Inde |
 | Microsoft Teams | Inde |
 | Office Online Mobile &amp; | Inde |
 | Exchange Online Protection | Inde |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Inde |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2664,7 +3098,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Inde |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Inde |
+| Sujets Viva | Inde |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Inde |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="indonesia"></a>Indonésie
@@ -2675,12 +3115,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2688,7 +3126,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="iraq"></a>Irak
@@ -2699,12 +3143,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2712,7 +3154,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="ireland"></a>Irlande
@@ -2723,12 +3171,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -2736,7 +3182,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="isle-of-man"></a>Île de Man
@@ -2747,12 +3199,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2760,7 +3210,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="israel"></a>Israël
@@ -2771,12 +3227,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2784,7 +3238,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="italy"></a>Italie
@@ -2795,12 +3255,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -2808,7 +3266,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="jamaica"></a>Jamaïque
@@ -2819,12 +3283,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2832,7 +3294,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="japan"></a>Japon
@@ -2843,12 +3311,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Japon |
 | OneDrive Entreprise | Japon |
 | SharePoint Online | Japon |
-| Skype Entreprise | Japon |
 | Microsoft Teams | Japon |
 | Office Online Mobile &amp; | Japon |
 | Exchange Online Protection | Japon |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Japon |
 | Planificateur | Japon |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2856,7 +3322,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Japon |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Japon |
+| Sujets Viva | Japon |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Japon |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="jersey"></a>Jersey
@@ -2867,20 +3339,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
-| Yammer |  Zone géographique 1 : EMEA |
+| Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="jordan"></a>Jordanie
@@ -2891,12 +3367,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2904,7 +3378,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kazakhstan"></a>Kazakhstan
@@ -2915,12 +3395,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -2928,7 +3406,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kenya"></a>Kenya
@@ -2939,20 +3423,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kiribati"></a>Kiribati
@@ -2963,12 +3451,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -2976,7 +3462,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="south-korea"></a>Corée du Sud
@@ -2987,12 +3479,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Corée du Sud |
 | OneDrive Entreprise | Corée du Sud |
 | SharePoint Online | Corée du Sud |
-| Skype Entreprise | Corée du Sud |
 | Microsoft Teams | Corée du Sud |
 | Office Online Mobile &amp; | Corée du Sud |
 | Exchange Online Protection | Corée du Sud |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Corée du Sud |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3000,7 +3490,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Corée du Sud |
+| Sujets Viva | Corée du Sud |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Corée du Sud |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kosovo"></a>Kosovo
@@ -3011,12 +3507,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3024,7 +3518,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kuwait"></a>Koweït
@@ -3035,12 +3535,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3048,7 +3546,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="kyrgyzstan"></a>Kirghizstan
@@ -3059,12 +3563,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3072,7 +3574,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="laos"></a>Laos
@@ -3083,12 +3591,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3096,7 +3602,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="latvia"></a>Lettonie
@@ -3107,12 +3619,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -3120,7 +3630,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="lebanon"></a>Liban
@@ -3131,21 +3647,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
-| Yammer |  Zone géographique 1 : EMEA |
+| Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="lesotho"></a>Lesotho
 <details><summary>Cliquez pour développer</summary><p>
@@ -3155,21 +3676,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="liberia"></a>Libéria
 <details><summary>Cliquez pour développer</summary><p>
@@ -3179,20 +3705,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="libya"></a>Libye
@@ -3203,21 +3733,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Cliquez pour développer</summary><p>
@@ -3227,20 +3762,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
 | SharePoint Online | Suisse |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Suisse |
 | Office Online Mobile &amp; | Suisse |
 | Exchange Online Protection | Suisse |
-| Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Suisse |
-| Planificateur | Zone géographique 1 : EMEA |
+| Intune | Union européenne |
+| Planificateur | Union européenne |
 | Sway | États-Unis |
-| Yammer | Zone géographique 1 : EMEA |
+| Yammer | Union européenne |
 | Services OneNote | Suisse |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
-| Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Stream | Union européenne |
+| Tableau blanc collaboratif | Union européenne |
+| Formulaires | Union européenne |
+| Viva Connections | Suisse |
+| Sujets Viva | Suisse |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Suisse |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="lithuania"></a>Lituanie
@@ -3251,12 +3790,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -3264,7 +3801,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="luxembourg"></a>Luxembourg
@@ -3275,12 +3818,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -3288,7 +3829,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="madagascar"></a>Madagascar
@@ -3299,20 +3846,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="malawi"></a>Malawi
@@ -3323,20 +3874,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="malaysia"></a>Malaisie
@@ -3347,12 +3902,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3360,7 +3913,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="maldives"></a>Maldives
@@ -3371,12 +3930,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3384,7 +3941,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mali"></a>Mali
@@ -3395,20 +3958,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="malta"></a>Malte
@@ -3419,12 +3986,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -3432,7 +3997,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="marshall-islands"></a>Îles Marshall
@@ -3443,12 +4014,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3456,7 +4025,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="martinique"></a>Martinique
@@ -3467,12 +4042,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3480,7 +4053,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mauritania"></a>Mauritanie
@@ -3491,20 +4070,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mauritius"></a>Île Maurice
@@ -3515,20 +4098,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mayotte"></a>Mayotte
@@ -3539,20 +4126,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mexico"></a>Mexique
@@ -3563,12 +4154,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3576,7 +4165,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="moldova"></a>Moldavie
@@ -3587,12 +4182,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3600,7 +4193,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="monaco"></a>Monaco
@@ -3611,12 +4210,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3624,7 +4221,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mongolia"></a>Mongolie
@@ -3635,12 +4238,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3648,7 +4249,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="montenegro"></a>Monténégro
@@ -3659,12 +4266,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -3672,7 +4277,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="montserrat"></a>Montserrat
@@ -3683,12 +4294,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3696,7 +4305,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="morocco"></a>Maroc
@@ -3707,20 +4322,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="mozambique"></a>Mozambique
@@ -3731,20 +4350,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="myanmar"></a>Birmanie
@@ -3755,12 +4378,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3768,7 +4389,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="namibia"></a>Namibie
@@ -3779,20 +4406,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="nauru"></a>Nauru
@@ -3803,12 +4434,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3816,8 +4445,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="nepal"></a>Népal
 <details><summary>Cliquez pour développer</summary><p>
@@ -3827,12 +4463,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3840,8 +4474,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="netherlands"></a>Pays-Bas
 <details><summary>Cliquez pour développer</summary><p>
@@ -3851,12 +4492,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -3864,7 +4503,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="netherlands-antilles"></a>Antilles Néerlandaises
@@ -3875,12 +4520,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3888,8 +4531,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="new-caledonia"></a>Nouvelle-Calédonie
 <details><summary>Cliquez pour développer</summary><p>
@@ -3899,12 +4549,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3912,7 +4560,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="new-zealand"></a>Nouvelle-Zélande
@@ -3923,20 +4577,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Australie |
 | OneDrive Entreprise | Australie |
 | SharePoint Online | Australie |
-| Skype Entreprise | Australie |
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
-| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Australie |
-| Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Australie |
+| Planificateur | Australie |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Australie |
 | Stream | Australie |
-| Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Tableau blanc | Australie |
+| Forms | États-Unis |
+| Viva Connections | Australie |
+| Sujets Viva | Australie |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Australie |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="nicaragua"></a>Nicaragua
@@ -3947,12 +4605,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -3960,7 +4616,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="niger"></a>Niger
@@ -3971,20 +4633,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="nigeria"></a>Nigéria
@@ -3995,20 +4661,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="niue"></a>Niue
@@ -4019,12 +4689,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4032,7 +4700,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="norfolk-island"></a>Île Norfolk
@@ -4043,12 +4717,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4056,7 +4728,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="northern-mariana-islands"></a>Îles Mariannes du Nord
@@ -4067,12 +4745,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4080,7 +4756,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="norway"></a>Norvège
@@ -4091,20 +4773,25 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Norvège |
 | OneDrive Entreprise | Norvège |
 | SharePoint Online | Norvège |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Norvège |
 | Office Online &amp; Mobile | Norvège |
 | Exchange Online Protection | Norvège |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Norvège |
-| Planner | Zone géographique 1 : EMEA |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Norvège |
 | Flux | Zone géographique 1 : EMEA |
 | Tableau blanc | Zone géographique 1 : EMEA |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Norvège |
+| Sujets Viva | Norvège |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Norvège |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
+
 </p></details>
 
 ## <a name="oman"></a>Oman
@@ -4115,12 +4802,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4128,7 +4813,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="pakistan"></a>Pakistan
@@ -4139,12 +4830,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
-| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4152,7 +4841,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="palau"></a>Palaos
@@ -4163,12 +4858,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4176,7 +4869,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="palestinian-authority"></a>Autorité palestinienne
@@ -4187,12 +4886,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4200,7 +4897,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="panama"></a>Panama
@@ -4211,12 +4914,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4224,7 +4925,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="papua-new-guinea"></a>Papouasie-Nouvelle-Guinée
@@ -4235,12 +4942,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4248,7 +4953,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="paraguay"></a>Paraguay
@@ -4259,12 +4970,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4272,7 +4981,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="peru"></a>Pérou
@@ -4283,12 +4998,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4296,7 +5009,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="philippines"></a>Philippines
@@ -4307,12 +5026,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4320,7 +5037,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="pitcairn"></a>Île Pitcairn
@@ -4331,12 +5054,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4344,7 +5065,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="poland"></a>Pologne
@@ -4355,12 +5082,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -4368,7 +5093,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="portugal"></a>Portugal
@@ -4379,12 +5110,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -4392,7 +5121,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="puerto-rico"></a>Porto Rico
@@ -4403,12 +5138,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4416,7 +5149,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="qatar"></a>Qatar
@@ -4427,12 +5166,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4440,7 +5177,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>Macédoine du Nord
@@ -4451,12 +5194,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4464,7 +5205,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="runion"></a>Réunion
@@ -4475,20 +5222,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="romania"></a>Roumanie
@@ -4499,12 +5250,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -4512,23 +5261,28 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="russian-federation"></a>Russie
 <details><summary>Cliquez pour développer</summary><p>
+
 
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4536,55 +5290,71 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="rwanda"></a>Rwanda
 <details><summary>Cliquez pour développer</summary><p>
 
+
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-helena"></a>Sainte-Hélène, Ascension et Tristan da Cunha
 <details><summary>Cliquez pour développer</summary><p>
 
+
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-kitts-and-nevis"></a>Saint-Christophe-et-Niévès
@@ -4595,12 +5365,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4608,7 +5376,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-lucia"></a>Sainte-Lucie
@@ -4619,12 +5393,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4632,7 +5404,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-martin"></a>Saint-Martin
@@ -4643,12 +5421,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4656,7 +5432,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-pierre-and-miquelon"></a>Saint-Pierre-et-Miquelon
@@ -4667,12 +5449,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4680,7 +5460,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-vincent-and-the-grenadines"></a>Saint-Vincent-et-les-Grenadines
@@ -4691,12 +5477,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4704,7 +5488,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saint-barthlemy"></a>Saint-Barthélemy
@@ -4715,12 +5505,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4728,7 +5516,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="samoa"></a>État indépendant des Samoa
@@ -4739,12 +5533,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4752,7 +5544,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="san-marino"></a>Saint-Marin
@@ -4763,12 +5561,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4776,7 +5572,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="sao-tome-and-principe"></a>Sao Tomé-et-Principe
@@ -4787,20 +5589,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="saudi-arabia"></a>Arabie Saoudite
@@ -4811,20 +5617,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
-| Tableau blanc | Zone géographique 1 : EMEA |
+| Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="senegal"></a>Sénégal
@@ -4835,20 +5645,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="serbia"></a>Serbie
@@ -4859,12 +5673,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -4872,7 +5684,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="seychelles"></a>Seychelles
@@ -4883,20 +5701,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="sierra-leone"></a>Sierra Leone
@@ -4907,20 +5729,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="singapore"></a>Singapour
@@ -4931,12 +5757,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4944,7 +5768,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="sint-maarten"></a>Saint-Martin (néerlandais)
@@ -4955,12 +5785,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -4968,7 +5796,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="slovakia"></a>Slovaquie
@@ -4979,12 +5813,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -4992,7 +5824,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="slovenia"></a>Slovénie
@@ -5003,12 +5841,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -5016,7 +5852,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="solomon-islands"></a>Îles Salomon
@@ -5027,12 +5869,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5040,31 +5880,42 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="somalia"></a>Somalie
 <details><summary>Cliquez pour développer</summary><p>
+
 
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="south-africa"></a>Afrique du Sud
@@ -5075,12 +5926,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Afrique du Sud |
 | OneDrive Entreprise | Afrique du Sud |
 | SharePoint Online | Afrique du Sud |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Afrique du Sud |
 | Office Online Mobile &amp; | Afrique du Sud |
 | Exchange Online Protection | Afrique du Sud |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Afrique du Sud |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5088,8 +5937,14 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
-</p></details>
+| Viva Connections | Afrique du Sud |
+| Sujets Viva | Afrique du Sud |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Afrique du Sud |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
+ </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Géorgie du Sud-et-les Îles Sandwich du Sud
 <details><summary>Cliquez pour développer</summary><p>
@@ -5099,12 +5954,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5112,7 +5965,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="spain"></a>Espagne
@@ -5123,12 +5982,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Union européenne |
 | OneDrive Entreprise | Union européenne |
 | SharePoint Online | Union européenne |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
 | Intune | Union européenne |
-| MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne  |
@@ -5136,7 +5993,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Union européenne |
+| Sujets Viva | Union européenne |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Union européenne |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="sri-lanka"></a>Sri Lanka
@@ -5147,12 +6010,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5160,7 +6021,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="suriname"></a>Suriname
@@ -5171,12 +6038,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5184,7 +6049,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard et les Îles Jan Mayen
@@ -5195,12 +6066,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5208,7 +6077,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="swaziland"></a>Eswatini
@@ -5219,20 +6094,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="sweden"></a>Suède
@@ -5243,20 +6122,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Suède |
 | OneDrive Entreprise | Suède |
 | SharePoint Online | Suède |
-| Skype Entreprise | Union européenne |
 | Microsoft Teams | Suède |
 | Office Online Mobile &amp; | Suède |
 | Exchange Online Protection | Suède |
 | Intune | Union européenne |
-| MyAnalytics | Suède |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
-| Yammer | Union européenne  |
+| Yammer | Union européenne |
 | Services OneNote | Suède |
 | Stream | Union européenne |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Suède |
+| Sujets Viva | Suède |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Suède |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="switzerland"></a>Suisse
@@ -5267,20 +6150,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Suisse |
 | OneDrive Entreprise | Suisse |
 | SharePoint Online | Suisse |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Suisse |
 | Office Online Mobile &amp; | Suisse |
 | Exchange Online Protection | Suisse |
-| Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Suisse |
-| Planificateur | Zone géographique 1 : EMEA |
+| Intune | Union européenne |
+| Planificateur | Union européenne |
 | Sway | États-Unis |
-| Yammer | Zone géographique 1 : EMEA |
+| Yammer | Union européenne |
 | Services OneNote | Suisse |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc | Zone géographique 1 : EMEA |
-| Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Stream | Union européenne |
+| Tableau blanc collaboratif | Union européenne |
+| Formulaires | Union européenne |
+| Viva Connections | Suisse |
+| Sujets Viva | Suisse |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Suisse |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="taiwan"></a>Taïwan
@@ -5291,12 +6178,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5304,7 +6189,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="tajikistan"></a>Tadjikistan
@@ -5315,12 +6206,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5328,7 +6217,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="united-republic-of-tanzania"></a>Tanzanie
@@ -5339,20 +6234,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="thailand"></a>Thaïlande
@@ -5363,12 +6262,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5376,7 +6273,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="timor-leste"></a>Timor-Leste
@@ -5387,12 +6290,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5400,7 +6301,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="togo"></a>Togo
@@ -5411,20 +6318,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="tokelau"></a>Tokelau
@@ -5435,12 +6346,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5448,7 +6357,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="tonga"></a>Tonga
@@ -5459,12 +6374,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5472,7 +6385,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="trinidad-and-tobago"></a>Trinité-et-Tobago
@@ -5483,12 +6402,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5496,7 +6413,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="tunisia"></a>Tunisie
@@ -5507,20 +6430,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="turkey"></a>Turquie
@@ -5531,12 +6458,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5544,7 +6469,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="turkmenistan"></a>Turkménistan
@@ -5555,12 +6486,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5568,7 +6497,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="turks-and-caicos-islands"></a>Îles Turks et Caicos
@@ -5579,12 +6514,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5592,7 +6525,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="tuvalu"></a>Tuvalu
@@ -5603,12 +6542,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5616,7 +6553,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="us-virgin-islands"></a>Îles Vierges des États-Unis
@@ -5627,12 +6570,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5640,7 +6581,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="uganda"></a>Ouganda
@@ -5651,20 +6598,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="ukraine"></a>Ukraine
@@ -5675,12 +6626,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5688,7 +6637,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="united-arab-emirates"></a>Émirats arabes unis
@@ -5699,12 +6654,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Émirats arabes unis |
 | OneDrive Entreprise | Émirats arabes unis |
 | SharePoint Online | Émirats arabes unis |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Émirats arabes unis |
 | Office Online Mobile &amp; | Émirats arabes unis |
 | Exchange Online Protection | Émirats arabes unis |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Émirats arabes unis |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5712,8 +6665,14 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
-</p></details>
+| Viva Connections | Émirats arabes unis |
+| Sujets Viva | Émirats arabes unis |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Émirats arabes unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
+ </p></details>
 
 ## <a name="united-kingdom"></a>Royaume-Uni
 <details><summary>Cliquez pour développer</summary><p>
@@ -5723,12 +6682,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Royaume-Uni |
 | OneDrive Entreprise | Royaume-Uni |
 | SharePoint Online | Royaume-Uni |
-| Skype Entreprise | Royaume-Uni |
 | Microsoft Teams | Royaume-Uni |
 | Office Online Mobile &amp; | Royaume-Uni |
 | Exchange Online Protection | Royaume-Uni |
 | Intune | Union européenne |
-| MyAnalytics | Royaume-Uni |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
 | Yammer | Union européenne |
@@ -5736,7 +6693,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Royaume-Uni |
 | Tableau blanc collaboratif | Union européenne |
 | Formulaires | Union européenne |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Royaume-Uni |
+| Sujets Viva | Royaume-Uni |
+| Viva Learning | Union européenne |
+| Viva Insights - Personnel | Royaume-Uni |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Union européenne |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="united-states"></a>États-Unis
@@ -5747,12 +6710,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5760,7 +6721,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay
@@ -5771,12 +6738,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 3 : Amériques |
 | OneDrive Entreprise | Zone géographique mondiale 3 : Amériques |
 | SharePoint Online | Zone géographique mondiale 3 : Amériques |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
 | Intune | États-Unis |
-| MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5784,7 +6749,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 3 : Amériques |
+| Sujets Viva | Zone géographique mondiale 3 : Amériques |
+| Viva Learning | Zone géographique mondiale 3 : Amériques |
+| Viva Insights - Personnel | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 3 : Amériques |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="us-minor-outlying-islands"></a>Îles mineures éloignées des États-Unis
@@ -5795,12 +6766,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5808,7 +6777,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="uzbekistan"></a>Ouzbékistan
@@ -5819,12 +6794,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5832,7 +6805,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="vanuatu"></a>Vanuatu
@@ -5843,12 +6822,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5856,23 +6833,26 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="venezuela"></a>Venezuela
 <details><summary>Cliquez pour développer</summary><p>
-
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | États-Unis |
 | OneDrive Entreprise | États-Unis |
 | SharePoint Online | États-Unis |
-| Skype Entreprise | États-Unis |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
 | Intune | États-Unis |
-| MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5880,8 +6860,15 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | États-Unis |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | États-Unis |
+| Sujets Viva | États-Unis |
+| Viva Learning | États-Unis |
+| Viva Insights - Personnel | États-Unis |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | États-Unis |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
+
 
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Cliquez pour développer</summary><p>
@@ -5891,12 +6878,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5904,7 +6889,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="wallis-and-futuna-islands"></a>Wallis et Futuna
@@ -5915,12 +6906,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
-| MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
@@ -5928,7 +6917,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Viva Connections | Zone géographique mondiale 2 : Asie et Pacifique |
+| Sujets Viva | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Learning | Zone géographique mondiale 2 : Asie et Pacifique |
+| Viva Insights - Personnel | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique mondiale 2 : Asie et Pacifique |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="western-sahara"></a>Sahara occidental
@@ -5939,20 +6934,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="yemen"></a>Yémen
@@ -5963,12 +6962,10 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
@@ -5976,7 +6973,13 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
-| Analyse du temps de travail | États-Unis |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="zambia"></a>Zambie
@@ -5987,20 +6990,24 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>
 
 ## <a name="zimbabwe"></a>Zimbabwe
@@ -6011,18 +7018,22 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par dé
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
-| Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
 | Intune | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | États-Unis |
+| Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
-| Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Formulaires | Zone géographique 1 : EMEA |
+| Viva Connections | Zone géographique 1 : EMEA |
+| Sujets Viva | Zone géographique 1 : EMEA |
+| Viva Learning | Zone géographique 1 : EMEA |
+| Viva Insights - Personnel | Zone géographique 1 : EMEA |
+| Informations - Responsable/Leader AAD données d’organisation uniquement | Zone géographique 1 : EMEA |
+| Informations - Responsable/Responsable avec des données RH tierces uniquement | États-Unis |
+| Informations - Avancé | États-Unis |
 </p></details>

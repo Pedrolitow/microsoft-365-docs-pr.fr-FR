@@ -1,5 +1,5 @@
 ---
-title: Déployer des règles de réduction de la surface d’attaque
+title: Déployer des règles de réduction de la surface d’attaque (ASR)
 description: Fournit des conseils pour déployer des règles de réduction de la surface d’attaque.
 keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 44bdf99ea4f406e7bdfd8e0265a3b19274cd893f
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 92c8b601e9c1c766ae128f1ba290cfe9b9799644
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170452"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217877"
 ---
 # <a name="attack-surface-reduction-rules-deployment-guide"></a>Guide de déploiement des règles de réduction de la surface d’attaque
 
@@ -122,13 +122,13 @@ Comme avec toute nouvelle implémentation à grande échelle susceptible d’avo
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Phase 1 de déploiement des règles de réduction de la surface d’attaque : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase de déploiement des règles asr 1 : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Phase 2 du déploiement des règles de réduction de la surface d’attaque : test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase de déploiement asr 2 : test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3 de déploiement des règles asr : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Phase 4 du déploiement des règles de réduction de la surface d’attaque : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase de déploiement des règles asr 4 : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Référence
 
@@ -172,7 +172,7 @@ Comme avec toute nouvelle implémentation à grande échelle susceptible d’avo
 
 [Utiliser un contrôle d’accès basé sur un rôle (RBAC) et des balises d’étendue pour le service it distribué dans Intune](/mem/intune/fundamentals/scope-tags)
 
-[Affecter des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+[Attribuer des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 
 ### <a name="management-sites"></a>Sites de gestion
 

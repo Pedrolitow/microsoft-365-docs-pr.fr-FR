@@ -1,5 +1,5 @@
 ---
-title: 'Phase 1 de déploiement des règles de réduction de la surface d’attaque : planifier'
+title: 'Phase de déploiement des règles asr 1 : planifier'
 description: Fournit des conseils pour planifier le déploiement de vos règles de réduction de la surface d’attaque.
 keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8ce9e215af286c5a1a94d83f9f407a53eb9b8e3f
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ca6c7ed6265a1c68a513d6025227780fa429f6e8
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171758"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217397"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-1-plan"></a>Phase 1 de déploiement des règles de réduction de la surface d’attaque : planifier
 
@@ -79,10 +79,10 @@ Voir : [Créer un plan de déploiement pour Windows](/windows/deployment/update/
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Guide de déploiement des règles de réduction de la surface d’attaque : vue d’ensemble](attack-surface-reduction-rules-deployment.md)
+[Guide de déploiement des règles asr : vue d’ensemble](attack-surface-reduction-rules-deployment.md)
 
-[Phase 2 du déploiement des règles de réduction de la surface d’attaque : test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase de déploiement des règles asr 2 : test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3 de déploiement des règles asr : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Phase 4 du déploiement des règles de réduction de la surface d’attaque : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase de déploiement des règles asr 4 : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)

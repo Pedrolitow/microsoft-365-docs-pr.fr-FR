@@ -15,19 +15,20 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b428767dab4a3087c857de389ee8e6b66f3e42ab
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6e5ca79903824024eb906d9899c8fdb1ac6e1180
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588191"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217985"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 La protection toujours en cours se compose d’une protection en temps réel, d’une surveillance du comportement et d’une heuristique pour identifier les programmes malveillants en fonction d’activités suspectes et malveillantes connues.
 
@@ -77,7 +78,7 @@ Pour activer et configurer la protection toujours active :
 
 ### <a name="real-time-protection-policy-settings"></a>Paramètres de stratégie de protection en temps réel
 
-|Setting|Valeur par défaut|
+|Paramètre|Valeur par défaut|
 |---|---|
 |Activer l’analyse du comportement <p> Le moteur antivirus surveillera les processus de fichiers, les modifications de fichier et de Registre, ainsi que d’autres événements sur vos points de terminaison pour les activités malveillantes suspectes et connues.|Activé|
 |Analyser tous les fichiers et pièces jointes téléchargés <p> Les fichiers et pièces jointes téléchargés sont automatiquement analysés. Cette analyse fonctionne en plus du filtre Windows Defender SmartScreen, qui analyse les fichiers avant et pendant le téléchargement.|Activé|

@@ -16,19 +16,19 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 616c2376e8180a74380f1d6569c4e4612269f562
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: ad62cb795e1cd8c0b1affe030075ec9fedc5252a
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972023"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218549"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Antivirus Microsoft Defender sur Windows Server 2016 et Windows Server 2019 vous inscrit automatiquement dans certaines exclusions, telles que définies par votre rôle serveur spécifié. Ces exclusions n’apparaissent pas dans les listes d’exclusions standard affichées dans [Sécurité Windows application.](microsoft-defender-security-center-antivirus.md)

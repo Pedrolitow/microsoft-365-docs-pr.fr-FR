@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1dd5958893669012b78e57c57bd6b32c0e94d0c
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 09b3e3b3893cd413f3a8fa9c4a7e45af26b943b2
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145055"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217853"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -35,6 +35,7 @@ ms.locfileid: "61145055"
 - Windows Server 2019 et ultérieur
 - Windows Server 2019 Core Edition
 - Windows Server 2022
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -106,10 +107,7 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
   En outre, sur les ordinateurs avec un volume élevé de trafic réseau, les tests de performances dans votre environnement sont vivement recommandés avant d’activer cette fonctionnalité à grande étendue. Vous devrez peut-être tenir compte de la consommation supplémentaire de ressources.
 - Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez ensuite avant la mise à niveau.
-- Les exclusions automatiques pour les rôles serveur ne sont pas Windows Server 2012 R2. Pour plus d’informations sur l’ajout d’exclusions, voir [recommandations](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)d’analyse antivirus pour Enterprise ordinateurs exécutant actuellement des versions de Windows .
-
-- Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
-- Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez ensuite avant la mise à niveau.
+- Les exclusions automatiques pour *les* rôles serveur ne sont pas Windows Server 2012 R2 ; toutefois, les exclusions intégrées pour les fichiers de système d’exploitation le sont. Pour plus d’informations sur l’ajout d’exclusions, voir [recommandations](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)d’analyse antivirus pour Enterprise ordinateurs exécutant actuellement des versions de Windows .
 
 <a name="integration-with-azure-defender"></a>
 
@@ -141,7 +139,10 @@ Le package d’installation vérifie si les composants suivants ont déjà été
 
 **Conditions préalables pour Windows Server 2016** 
 
-Vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du catalogue [Microsoft Update ou](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) de [MMPC.](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)
+En plus de mettre entièrement à jour l’ordinateur avec la dernière mise à jour cumulative( LCU), vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du catalogue [Microsoft Update ou](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) de [MMPC.](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) 
+
+> [!NOTE]
+> Pour mettre à jour correctement la version intégrée de Windows Defender, dont le numéro de version commence à la version 4.10, vers la dernière plateforme disponible, une mise à jour de pile de maintenance doit avoir été appliquée, ainsi que la dernière mise à jour cumulative (LCU) égale ou ultérieure au 20 septembre 2018—KB4457127 (os Build 14393.2515).
 
 **Nouveau package de mise à jour pour Microsoft Defender pour endpoint Windows Server 2012 R2 et 2016**
 
@@ -201,7 +202,7 @@ La prise en charge de Windows Server fournit des informations plus approfondies 
 
 ### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>Installer Microsoft Defender pour le point de terminaison à l’aide d’un script
 
-Vous pouvez également utiliser le [script d’installation](server-migration.md#installer-script) pour vous aider à automatiser l’installation, la désinstallation et l’intégration.
+Vous pouvez également utiliser le [script d’installation](server-migration.md#installer-script) pour vous aider à automatiser l’installation, la désinstallation et l’intégration. 
 
 ## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 et Windows Server 2022
 

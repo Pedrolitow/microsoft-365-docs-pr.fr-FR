@@ -18,30 +18,31 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ecea6cdac4c254126c6f4bad1400a090505c9eb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194152"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218645"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 Représente une entité d’investigation automatisée dans Defender pour le point de terminaison.
 
-Pour plus [d’informations, voir Vue d’ensemble des enquêtes](automated-investigations.md) automatisées.
+Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
 ## <a name="methods"></a>Méthodes
 
@@ -55,15 +56,15 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|Chaîne|Identité de l’entité d’investigation. 
+ID|String|Identité de l’entité d’investigation. 
 startTime|DateTime Nullable|Date et heure de création de l’enquête.
 endTime|DateTime Nullable|Date et heure de fin de l’enquête.
-cancelledBy|Chaîne|ID de l’utilisateur/de l’application qui a annulé cet examen.
-state|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-statusDetails|Chaîne|Informations supplémentaires sur l’état de l’enquête.
+cancelledBy|String|ID de l’utilisateur/de l’application qui a annulé cet examen.
+État|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+statusDetails|String|Informations supplémentaires sur l’état de l’enquête.
 machineId|String|ID de l’appareil sur lequel l’enquête est exécutée.
-computerDnsName|Chaîne|Nom de l’appareil sur lequel l’enquête est exécutée.
-triggeringAlertId|Chaîne|ID de l’alerte qui a déclenché l’enquête.
+computerDnsName|String|Nom de l’appareil sur lequel l’enquête est exécutée.
+triggeringAlertId|String|ID de l’alerte qui a déclenché l’enquête.
 
 ## <a name="json-representation"></a>Représentation Json
 

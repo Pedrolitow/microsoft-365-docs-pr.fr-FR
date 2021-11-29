@@ -1,7 +1,7 @@
 ---
 title: Collecte de données pour la résolution avancée des problèmes sur Windows
 description: Découvrez comment utiliser l’analyseur client pour collecter des données pour des scénarios de dépannage complexes
-keywords: analzyer, collecter des données, dépannage de mdeclientanalyzer, résolution avancée des problèmes
+keywords: analzyer, collecter des données, dépanner mdeclientanalyzer, résolution avancée des problèmes
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 07660b2d15adae7eb2534b8b9a7bcfbb6b311571
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555907"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218213"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Lorsque vous collaborez avec des professionnels du support technique Microsoft, vous pouvez être invité à utiliser l’analyseur client pour collecter des données afin de résoudre les problèmes de scénarios plus complexes. Le script de l’analyseur prend en charge d’autres paramètres à cet effet et peut collecter un ensemble de journaux spécifique en fonction des symptômes observés qui doivent être examinés.
 
@@ -43,7 +44,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut s’avérer utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais qui sont difficiles à reproduire à la demande.
 
-**-c** - Appels dans le [moniteur](/sysinternals/downloads/procmon) de processus pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
+**-c** - Appels dans le moniteur de [processus](/sysinternals/downloads/procmon) pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
 
 **-i** : appelle une [](/windows/win32/winsock/netsh-exe) commandenetsh.exeintégrée pour démarrer un suivi du réseau et du pare-feu Windows qui est utile lors de la résolution de divers problèmes liés au réseau.
 
@@ -55,7 +56,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-t** : démarre la trace détaillée de tous les composants côté client pertinents pour le point de terminaison DLP. Cela est utile dans les scénarios où les [actions DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) ne se produisent pas comme prévu pour les fichiers.
 
-**-q** - Appelle un script DLPDiagnose.ps1'analyseur à partir du répertoire « Tools » qui valide la configuration de base et les conditions requises pour le point de terminaison DLP.
+**-q** - Appels dans DLPDiagnose.ps1 script à partir du répertoire « Tools » de l’analyseur qui valide la configuration de base et la configuration requise pour le point de terminaison DLP.
 
 **-d** - Collecte un vidage mémoire de MsSense **S**.exe (processus de capteur sur Windows Server 2016 ou un système d’exploitation plus ancien) et des processus associés.
 
@@ -82,4 +83,4 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 >
 >   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
 >   - **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés
->   - **-m** \# - Nombre de minutes d’exécuter (5 minutes dans l’exemple ci-dessus)
+>   - **-m** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)

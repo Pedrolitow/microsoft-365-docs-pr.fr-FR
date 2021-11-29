@@ -16,20 +16,21 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcfa13256807e5a3f55d2f26fb5c7bafd4645cda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4fc5d4fb51170a70edc8664d5ccba0943b93353d
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188888"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217385"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
@@ -42,9 +43,9 @@ Pour plus d’informations sur les questions de confidentialité les plus couran
 
 ## <a name="required-data"></a>Données requises
 
-Les données requises sont constituées de données qui sont nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications.
+Les données requises sont constituées de données nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications.
 
-Voici la liste des types de données collectées :
+Voici une liste des types de données collectées :
 
 ### <a name="web-page-or-network-information"></a>Page Web ou informations réseau
 
@@ -76,7 +77,7 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent :
 
-- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint.
+- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint.
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison.
 
 Les données de commentaires sont collectées par le biais de commentaires dans l’application fournis par l’utilisateur.

@@ -17,19 +17,20 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: aa158c38661ff3f3277594e222ef6648a1731fce
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 23eb3d53635334292b762941d39b9683f2a4dd9e
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167249"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218141"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Examiner un compte d’utilisateur dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -70,7 +71,7 @@ La vue d’ensemble, les alertes et les observations dans l’organisation sont 
 >Pour les appareils Linux, les informations sur les utilisateurs connectés ne sont pas affichées.
 
 
-### <a name="overview"></a>Vue d’ensemble
+### <a name="overview"></a>Vue d'ensemble
 
 **L’onglet** Vue d’ensemble affiche les détails des incidents et une liste des appareils sur qui l’utilisateur s’est connecté. Vous pouvez les développer pour voir les détails des événements de connexion pour chaque appareil.
 
@@ -97,7 +98,7 @@ Vous pouvez filtrer les résultats selon les périodes suivantes :
 - 1 jour
 - 3 jours
 - 7 jours
-- 30 jours
+- 30 jours
 - 6 mois
 
 ## <a name="related-topics"></a>Rubriques connexes

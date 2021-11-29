@@ -15,22 +15,22 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 82addf4b41ae41c67353a4045c8fdacce7bb8afa
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 19b482bd15ffc9c702d004f52b9aa9e60b2a5109
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963046"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218201"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -72,8 +72,8 @@ L’image suivante montre une instance de logiciel indésirable qui a été dét
 2. Choose **Paramètres** \> **Endpoints** \> **General** \> **Advanced features**.
 3. Faites défiler vers le bas, puis activez **Activer PEPT en mode bloc.**
 
-> [!NOTE]
-> PEPT en mode bloc ne peut être allumé que dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ou</a> l’ancien Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver PEPT en mode blocage.
+> [!IMPORTANT]
+> PEPT en mode bloc ne peut être allumé que dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> ou l’ancien Centre de sécurité Microsoft Defender ( ), et est appliqué à l’échelle [https://securitycenter.windows.com](https://securitycenter.windows.com) du client. Vous ne pouvez pas définir PEPT en mode blocage pour cibler des utilisateurs ou des groupes d’appareils spécifiques. Vous ne pouvez pas utiliser les clés de Registre, les Microsoft Intune ou la stratégie de groupe pour activer ou désactiver PEPT en mode blocage.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Conditions requises pour PEPT en mode bloc
 
@@ -90,7 +90,7 @@ L’image suivante montre une instance de logiciel indésirable qui a été dét
 > [!IMPORTANT]
 > Pour obtenir la meilleure valeur de protection, assurez-vous que votre solution antivirus est configurée pour recevoir des mises à jour régulières et des fonctionnalités essentielles, et que vos [exclusions sont configurées.](configure-exclusions-microsoft-defender-antivirus.md) PEPT en mode bloc respecte les exclusions définies pour Antivirus Microsoft Defender, [](manage-indicators.md) mais pas les indicateurs définis pour Microsoft Defender pour endpoint.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Ai-je besoin d’activer PEPT en mode blocage si j’ai Antivirus Microsoft Defender en cours d’exécution sur des appareils ?
 
@@ -153,8 +153,8 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 - Windows Server 2022
 - Windows Server 2019 
 - Windows Server 2016
-- Windows Server 2012 R2
-- Windows 11
+- Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md) pour que cette fonctionnalité fonctionne. 

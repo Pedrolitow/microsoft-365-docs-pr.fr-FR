@@ -1,7 +1,7 @@
 ---
 title: Créer des indicateurs pour les IP et URL/domaines
 ms.reviewer: ''
-description: Créez des indicateurs pour les adresses IPS et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
+description: Créez des indicateurs pour les adresses IP et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ip, url, domaine, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,23 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e90495ee1f803731296cc1df6b55ddf99bbdad35
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: da37abb5251a59f22f03cfb6462bc68ad4193dd7
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240480"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217721"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Defender pour le point de terminaison peut bloquer ce que Microsoft considère comme des ADRESSES/URL malveillantes, via Windows Defender SmartScreen pour navigateurs Microsoft et via la Protection du réseau pour les navigateurs non-Microsoft ou les appels effectués en dehors d’un navigateur.
 
@@ -50,7 +50,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
 - La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure. 
-- Pris en charge sur les ordinateurs sur Windows 10, version 1709 ou ultérieure, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 et Windows Server 2022.
+- Pris en charge sur les ordinateurs Windows 10, version 1709 ou ultérieure, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 et Windows Server 2022.
    
     >[!NOTE]
     >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
@@ -91,7 +91,7 @@ Lorsque vous utilisez le mode avertissement, vous pouvez configurer les contrôl
 
 Pour plus d’informations, voir [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
-## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Créer un indicateur pour les adresses IP, les URL ou les domaines à partir de la page des paramètres
+## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Créer un indicateur pour les adresses INTERNET, les URL ou les domaines à partir de la page des paramètres
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 

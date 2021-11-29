@@ -16,19 +16,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64c8b486041bd73c7cd32f19facd4121e6e76a45
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ad0372c82d0fdd0a869ff55d22025c35532140eb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111314"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217493"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -127,7 +128,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
 
 1. Dans la page *Créer une stratégie de configuration d’application,* fournissez les informations suivantes :
     - Nom de la stratégie
-    - Plateforme : sélectionner iOS/iPadOS
+    - Plateforme : sélectionnez iOS/iPadOS
     - Application ciblée : sélectionnez **Microsoft Defender pour le point de terminaison** dans la liste
 
     > [!div class="mx-imgBorder"]
@@ -143,7 +144,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
 
 1. Cliquez **sur Suivant** pour ouvrir la page **Balises d’étendue.** Les balises d’étendue sont facultatives. Cliquez sur **Suivant** pour continuer.
 
-1. Dans la page **Affectations**, sélectionner les groupes qui recevront ce profil. Pour ce scénario, il est préférable de cibler **tous les appareils.** Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
+1. Dans la page **Affectations**, sélectionnez les groupes qui recevront ce profil. Pour ce scénario, il est préférable de cibler **tous les appareils.** Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
 
    Lors du déploiement sur des groupes d’utilisateurs, un utilisateur doit se connecter à un appareil avant que la stratégie ne s’applique.
 

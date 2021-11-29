@@ -15,21 +15,22 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c97947ae081d6b01db2717cfc35a4c328e7c61ec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555763"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217447"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Utilisez une analyse périodique limitée dans Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 L’analyse périodique limitée est un type spécial de détection et de correction des menaces qui peut être activé lorsque vous avez installé un autre produit antivirus sur un Windows 10 ou Windows 11 périphérique.
 
@@ -49,7 +50,7 @@ Si un autre produit antivirus est installé et fonctionne correctement, Antiviru
 
 Sous les produits antivirus tiers, un nouveau lien s’affiche sous **la forme Antivirus Microsoft Defender options.** Cliquez sur ce lien pour afficher le bouton bascule qui permet une analyse périodique limitée. Notez que l’option périodique limitée est un basculement permettant d’activer ou de désactiver l’analyse périodique. 
 
-Le fait de faire glisser le commutateur sur **On** affiche les options standard de l’Antivirus Microsoft Defender sous le produit antivirus tiers. L’option d’analyse périodique limitée s’affiche en bas de la page.
+Le fait de faire glisser le commutateur sur **On** affiche les options standard de l’Antivirus Microsoft Defender sous le produit antivirus tiers. L’option d’analyse périodique limitée apparaît en bas de la page.
 
 ## <a name="related-articles"></a>Articles connexes
 
