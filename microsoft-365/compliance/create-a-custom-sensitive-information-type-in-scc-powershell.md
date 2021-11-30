@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804976"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220991"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -40,7 +40,7 @@ Voir [Éventuels problèmes de validation à prendre en compte](#potential-valid
 Pour plus d’informations sur le moteur Boost.RegEx (anciennement RegEx ++) utilisé pour traiter le texte, consultez [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
 > [!NOTE]
-> Si vous utilisez un caractère & (&) dans le cadre d’un mot clé dans votre type d’informations sensibles personnalisé, notez qu’il existe un problème connu. Vous devez ajouter un terme supplémentaire avec des espaces autour du caractère pour vous assurer que le caractère est correctement identifié, par exemple, L & P _et_ non L&P.
+> Si vous utilisez un caractère & (&) dans le cadre d’un mot clé dans votre type d’informations sensibles personnalisé, notez qu’il existe un problème connu. Vous devez ajouter un terme supplémentaire avec des espaces autour du caractère pour vous assurer que le caractère est correctement identifié, par exemple, L & P _et_ L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>Exemple de code XML d’un package de règles
 
@@ -485,6 +485,10 @@ Pour télécharger votre package de règles, procédez comme suit :
 ## <a name="potential-validation-issues-to-be-aware-of"></a>Problèmes de validation éventuels à prendre en compte
 
 Lorsque vous chargez votre fichier XML de package de règles, le système valide le fichier XML et recherche des modèles incorrects connus et des problèmes de performance évidents. Voici quelques-uns des problèmes connus que la validation contrôle. Une expression régulière :
+  
+- Les assertions lookbehind ou lookahead dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
+    
+  Par exemple, « (?<=^|\s| ) » ne réussira pas la validation, car la première option dans ce cas est « ^ », qui est de longueur nulle tandis que les options suivantes _('\s’et ')_ sont de longueur un. Une autre façon d’avoir cette expression régulière est « (?:^| (?<=\s|_) »
   
 - ne peut pas commencer ou se terminer par l’alternateur « | », qui correspond à tous les éléments, car il est considéré comme une correspondance vide ;
     

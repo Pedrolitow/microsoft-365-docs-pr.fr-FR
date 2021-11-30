@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c95a674c59e52c7bfe699b670a69fec468361d54
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128531"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220871"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Gérer Microsoft Defender pour Endpoint Plan 1
+
+**S’applique à**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
@@ -45,7 +48,7 @@ Pour gérer votre veille sur la sécurité et les mises à jour de produit, voir
 
 Defender pour le point de terminaison vous offre beaucoup de flexibilité et d’options de configuration. Vous pouvez ajuster et ajuster vos paramètres en fonction des besoins de votre organisation. Par exemple, vous pouvez utiliser Microsoft Endpoint Manager, une stratégie de groupe et d’autres méthodes pour gérer vos paramètres de sécurité de point de terminaison. 
 
-Pour plus d’informations, [voir Gérer Defender pour endpoint.](manage-atp-post-migration.md)
+Pour plus d’informations, [voir Gérer Defender pour endpoint.](manage-mde-post-migration.md)
 
 ## <a name="address-false-positivesnegatives"></a>Corriger les faux positifs/négatifs
 

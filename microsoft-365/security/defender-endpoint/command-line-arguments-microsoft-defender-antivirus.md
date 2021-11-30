@@ -15,16 +15,16 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0d9a2d84febb15dd626fb603faecc2bb0ba74af1
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171035"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220883"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lor
 
 |Message d’erreur|Raison possible|
 |---|---|
-|**ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA**|Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **CONSEIL**: dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*.|
+|**ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA**|Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **CONSEIL**: dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*.|
 |**0x80070667**|Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
 |**MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier de commandes.**|L’outil doit être exécuté à partir de l’un ou l’autre des deux ou (où il peut être différent étant donné que les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
 |**ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)**|La commande a été tentée à l’aide de privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|

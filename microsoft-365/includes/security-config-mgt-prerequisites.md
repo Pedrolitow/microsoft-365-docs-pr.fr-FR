@@ -4,12 +4,12 @@ description: inclure fichier
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61155423"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61222262"
 ---
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -19,7 +19,6 @@ Examinez les sections suivantes pour obtenir les conditions requises pour la ges
 
 Lorsqu’un appareil est intégré à Microsoft Defender pour le point de terminaison :
 
-- L’appareil est interrogé pour une présence Endpoint Manager existante, Configuration Manager ou Intune
 - Les appareils sans présence Endpoint Manager activent la fonctionnalité Gestion de la sécurité
 - Une relation d’Azure Active Directory si elle n’existe pas déjà
 - Azure Active Directory confiance est utilisée pour communiquer avec Endpoint Manager (Intune) et récupérer des stratégies
@@ -113,7 +112,10 @@ Microsoft Defender pour le point de terminaison prend en charge plusieurs option
 > [!IMPORTANT]
 > Après l’intégration d’un appareil avec Microsoft Defender pour le point de terminaison, il doit être marqué avec **MDE-Management** avant de pouvoir s’inscrire auprès de la Gestion de la sécurité de Microsoft Defender pour endpoint. Pour plus d’informations sur le marquage des appareils dans MDE, voir [*Créer et gérer des balises d’appareil.*](/microsoft-365/security/defender-endpoint/machine-tag)
 
-Les appareils que vous gérez avec Intune ou Configuration Manager ne sont pas pris en charge pour ce scénario.
+
+## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Coexistence avec les Microsoft Endpoint Configuration Manager
+Lorsque vous utilisez Configuration Manager, le meilleur chemin d’accès pour la gestion de la stratégie de sécurité est d’utiliser l’attachement [du client Configuration Manager.](/mem/configmgr/tenant-attach/endpoint-security-get-started) Dans certains environnements, il peut être souhaité d’utiliser la gestion de la sécurité pour Microsoft Defender. Lorsque vous utilisez la gestion de la sécurité pour Microsoft Defender avec Configuration Manager, la stratégie de sécurité des points de terminaison doit être isolée d’un plan de contrôle unique. Le contrôle de la stratégie via les deux canaux crée l’opportunité de conflits et de résultats non désirables.
+
 
 ## <a name="create-azure-ad-groups"></a>Créer Azure AD groupes
 
@@ -167,11 +169,11 @@ Après avoir créé un ou plusieurs groupes Azure AD qui contiennent des apparei
 
 4. Sélectionnez **Créer**.
 
-5. Dans la page **Informations de** base, entrez un nom et une description pour le profil, puis choisissez **Suivant**.
+5. Dans la page **De base**, entrez un nom et une description pour le profil, puis choisissez **Suivant**.
 
 6. Dans la page **Paramètres de configuration,** sélectionnez les paramètres que vous souhaitez gérer avec ce profil. Pour en savoir plus sur un paramètre,  développez sa boîte de dialogue d’informations et sélectionnez le lien En savoir plus pour afficher les informations du programme CSP pour le paramètre dans la documentation en ligne.
 
-   Quand vous avez terminé de configurer les paramètres, sélectionner **Suivant**.
+   Quand vous avez terminé de configurer les paramètres, sélectionnez **Suivant**.
 
 7. Dans la page **Affectations,** sélectionnez les groupes Azure AD qui recevront ce profil. Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
 

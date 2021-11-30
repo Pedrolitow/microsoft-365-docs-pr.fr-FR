@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e0e5a44811138604abeec4eb6f9b83668a6988ca
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 04e4fd2267cc3774e9a816539f0de044ae988dfb
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787085"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221183"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de recherche avancée pour Microsoft Defender pour Office 365
 
@@ -46,7 +46,7 @@ La section [Prise en main](/microsoft-365/security/office-365-security/defender-
 2. Tout configurer avec « Coffre » dans le nom.
    - Liens sûrs
    - Pièces jointes fiables
-3. Protégez les charges de travail (par exemple, SharePoint En ligne, OneDrive et Teams).
+3. Protégez les charges de travail (par exemple, SharePoint Online, OneDrive et Teams).
 4. Protégez-vous avec une purge automatique nulle heure.
 
 Vous pouvez également utiliser un [Lien](../office-365-security/protect-against-threats.md) pour vous aider à vous lancer directement dans la configuration dès le premier jour.
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/ah-query-example-new.png" alt-text="Page de recherche avancée (sous Chasse) avec requête sélectionnée en haut du panneau de requête et exécution d’une requête Kusto pour capturer les actions ZAP au cours des 7 derniers jours.":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="Page de recherche avancée (sous Chasse) avec requête sélectionnée en haut du panneau de requête et exécution d’une requête Kusto pour capturer les actions ZAP au cours des 7 derniers jours." lightbox="../../media/ah-query-example-new.png":::
 
 Les données de cette requête s’affichent dans le panneau de résultats sous la requête elle-même. Les résultats incluent des informations telles que « DeviceName », « AccountDisplayName », et « ZapTime » dans un jeu de résultats personnalisable. Les résultats peuvent également être exportés pour vos enregistrements. Si vous avez encore besoin de la requête, sélectionnez **Enregistrer** > **Enregistrer sous** et ajoutez la requête à votre liste de requêtes, vos partages, ou vos requêtes de la communauté.
 

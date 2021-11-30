@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb72c7affc98ed1ac5e74ecddabf7edd13c6a01c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786105"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221339"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -40,7 +40,7 @@ Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/q
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 
-Dans le portail Microsoft 365 Defender, recherchez **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
+Dans le Microsoft 365 Defender de recherche, allez sur **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -76,7 +76,7 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
-### <a name="set-the-time-range"></a>Définir la plage de temps
+### <a name="set-the-time-range"></a>Définir l’plage de temps
 Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation d’un intervalle de temps permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto
@@ -155,7 +155,7 @@ Pour en savoir plus sur ces types de données, consultez les types de données [
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique : lorsque** vous écrivez des requêtes, le recherche avancée fournit des suggestions de IntelliSense. 
+- **Suggestion automatique : lorsque** vous écrivez des requêtes, la recherche avancée fournit des suggestions de IntelliSense. 
 - **Arborescence de schéma**: une représentation de schéma qui inclut la liste des tableaux et leurs colonnes est fournie en de côté de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma :](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** référence dans le portail avec des descriptions de tableau et de colonne, ainsi que des types d’événements pris en charge (valeurs) et `ActionType` des exemples de requêtes
 
@@ -165,13 +165,13 @@ Vous pouvez utiliser l’éditeur de requête pour expérimenter plusieurs requ�
 - Séparez chaque requête par une ligne vide.
 - Placez le curseur sur n’importe quelle partie d’une requête pour sélectionner cette requête avant de l’exécutez. Cette requête n’exécutera que la requête sélectionnée. Pour exécuter une autre requête, déplacez le curseur en conséquence et sélectionnez **Exécuter la requête.**
 
-![Image de l’éditeur de requête avec plusieurs requêtes.](../../media/learn-work-with-multiple.png)
+:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="Exemple d’exécution de plusieurs requêtes dans la page **Nouvelle requête** du portail Microsoft 365 Defender web" lightbox="../../media/learn-work-with-multiple.png":::
 
 ## <a name="use-sample-queries"></a>Utiliser des exemples de requêtes
 
 La section **Prise en main** fournit quelques requêtes simples utilisant des opérateurs fréquemment utilisés. Essayez d’exécuter ces requêtes et de leur apporter de légères modifications.
 
-![Image de la fenêtre de recherche avancée.](../../media/get-started-section.png)
+:::image type="content" source="../../media/get-started-section.png" alt-text="Section **Mise en cours** dans la page **Recherche avancée** du portail Microsoft 365 Defender web" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
 >Hormis les exemples de requête de base, vous pouvez également accéder à des [requêtes partagées](advanced-hunting-shared-queries.md) pour des scénarios de repérage de menace spécifiques. Explorez les requêtes partagées sur le côté gauche de la page ou le [GitHub de requête.](https://aka.ms/hunting-queries)
@@ -181,9 +181,9 @@ La section **Prise en main** fournit quelques requêtes simples utilisant des op
 Pour plus d’informations sur le langage de requête Kusto et les opérateurs pris en charge, voir [documentation sur le langage de requête Kusto](/azure/kusto/query/).
 
 >[!NOTE]
->Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4bc9e21a586797d300b23126fc404c47ff11f08e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 07eb8847b21d9c6444cbd55d2e84e17282fb4c52
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218345"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221423"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -34,14 +34,12 @@ ms.locfileid: "61218345"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Le capteur Defender pour point de terminaison nécessite que Microsoft Windows HTTP (WinHTTP) signale les données du capteur et communique avec le service Defender for Endpoint.
-
-Le capteur Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise Microsoft Windows HTTP Services (WinHTTP) pour permettre la communication avec le service cloud Defender for Endpoint.
+Le capteur Defender pour point de terminaison nécessite que Microsoft Windows HTTP (WinHTTP) signale les données du capteur et communique avec le service Defender for Endpoint. Le capteur Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise Microsoft Windows HTTP Services (WinHTTP) pour permettre la communication avec le service cloud Defender for Endpoint.
 
 > [!TIP]
 > Pour les organisations qui utilisent des proxies avant comme passerelle vers Internet, vous pouvez utiliser la protection du réseau pour examiner les événements de connexion qui se produisent derrière des [proxies avant](investigate-behind-proxy.md).
 
-Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation d’Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
+Le paramètre de configuration WinHTTP est indépendant des paramètres proxy de navigation Windows Internet (WinINet) (voir [WinINet ou WinHTTP)](/windows/win32/wininet/wininet-vs-winhttp)et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
 
 - Méthodes de découverte automatique :
 
@@ -58,6 +56,9 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
   
   - WinHTTP configuré à l’aide de la commande netsh : convient uniquement aux ordinateurs de bureau dans une topologie stable (par exemple : un bureau dans un réseau d’entreprise derrière le même proxy)
 
+> [!NOTE]
+> L’antivirus defender et PEPT proxies peuvent être définies indépendamment.  Dans les sections qui suivent, n’ignorez pas ces distinctions.
+
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
 Configurez un proxy statique basé sur le Registre pour le capteur de détection et de réponse des points de terminaison (PEPT) Defender pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
@@ -73,7 +74,7 @@ Configurez un proxy statique basé sur le Registre pour le capteur de détection
 >
 > Ces mises à jour améliorent la connectivité et la fiabilité du canal CnC (Commande et contrôle).
 
-Le proxy statique est également configurable par le biais de la stratégie de groupe (GP). La stratégie de groupe se trouve sous :
+Le proxy statique est également configurable par le biais de la stratégie de groupe ( GP), les deux paramètres sous les valeurs de stratégie de groupe doivent être configurés pour configurer le serveur proxy à utiliser pour PEPT. La stratégie de groupe se trouve sous :
 
 - **Modèles d’administration > Windows composants >** collecte de données et builds d’aperçu > Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie.
 
@@ -129,6 +130,12 @@ Configurez le proxy statique à l’aide de la stratégie de groupe trouvée ici
 > - ProxyPacUrl 
 > - ProxyServer 
 
+> [!NOTE]
+> Pour utiliser le proxy correctement, configurez ces trois paramètres de proxy différents :
+>  - Microsoft Defender pour point de terminaison (MDE)
+>  - ANTIVIRUS (Antivirus)
+>  - Endpoint Detection and Response (PEPT)
+
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Configurer le serveur proxy manuellement à l’aide de la commande netsh
 
 Utiliser netsh pour configurer un proxy statique à l’échelle du système.
@@ -180,9 +187,12 @@ Dans votre pare-feu, ouvrez toutes les URL où la colonne de géographie est WW.
 >
 > Les URL qui incluent la version 20 sont nécessaires uniquement si vous avez des Windows exécutant la version 1803 ou ultérieure. Par exemple, est nécessaire pour un appareil Windows exécutant la version 1803 ou ultérieure et intégré à la région Stockage `us-v20.events.data.microsoft.com` données américaines.
 >
-> Si vous utilisez Antivirus Microsoft Defender dans votre environnement, voir Configurer les connexions réseau [au service cloud Antivirus Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+> La feuille de calcul ci-dessus concerne les PEPT MDE, si vous utilisez Antivirus Microsoft Defender dans votre environnement, voir Configurer les connexions réseau au [service cloud Antivirus Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Defender for Endpoint se connecte à partir du contexte système, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment.
+
+> [!NOTE]
+> Microsoft ne fournit pas de serveur proxy. Ces URL sont accessibles via le serveur proxy que vous configurez.
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) : exigences relatives au proxy et au pare-feu pour les versions antérieures Windows client ou Windows Server
 

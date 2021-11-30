@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b8941953d1a2d6eeae30458dfd003979c32f2f86
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704464"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220931"
 ---
 # <a name="hunt-for-ransomware"></a>Repérer des menaces de ransomware
 
@@ -35,11 +35,11 @@ ms.locfileid: "60704464"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Le ransomware est rapidement devenu un simple programme malveillant de produits affectant des utilisateurs individuels d’ordinateurs et une menace d’entreprise qui affecte gravement les secteurs et les institutions gouvernementales. Bien [que Microsoft 365 Defender](microsoft-365-defender.md) offre de nombreuses fonctionnalités qui détectent et bloquent les ransomware et les activités d’intrusion associées, l’utilisation de vérifications proactives de signes de compromission peut aider à maintenir la protection de votre réseau.
+Les ransomware sont rapidement devenu de simples programmes malveillants de produits affectant des utilisateurs individuels d’ordinateurs et une menace d’entreprise qui affecte gravement les secteurs et les institutions gouvernementales. Bien [que Microsoft 365 Defender](microsoft-365-defender.md) offre de nombreuses fonctionnalités qui détectent et bloquent les ransomware et les activités d’intrusion associées, l’utilisation de vérifications proactives de signes de compromission peut aider à maintenir la protection de votre réseau.
 
 > [En savoir plus sur les ransomware gérés par l’humain](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-Avec [le hunting avancé](advanced-hunting-overview.md) dans Microsoft 365 Defender, vous pouvez créer des requêtes qui localisent des artefacts individuels associés à une activité de ransomware. Vous pouvez également exécuter des requêtes plus sophistiquées qui peuvent rechercher des signes d’activité et évaluer ces signes pour rechercher des appareils nécessitant une attention immédiate.
+Avec [le hunting avancé](advanced-hunting-overview.md) dans Microsoft 365 Defender, vous pouvez créer des requêtes qui localisent des artefacts individuels associés à une activité de ransomware. Vous pouvez également exécuter des requêtes plus sophistiquées qui peuvent rechercher des signes d’activité et évaluer ces signes pour trouver les appareils qui nécessitent une attention immédiate.
 
 ## <a name="signs-of-ransomware-activity"></a>Signes d’activité de ransomware
 Les chercheurs en matière de sécurité Microsoft ont observé divers artefacts courants mais discrets dans de nombreuses campagnes de ransomware lancées par des intrus sophistiqués. Ces signes impliquent principalement l’utilisation d’outils système pour préparer le chiffrement, empêcher la détection et effacer les preuves légales.
@@ -96,7 +96,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Effacement des preuves légales des journaux des événements à _l’aide de wevtutil_
+### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Effacement des preuves d’investigation des journaux des événements à _l’aide de wevtutil_
 Cette requête recherche les tentatives d’effacer au moins 10 entrées du journal des journaux des événements à l’aide _de wevtutil_. [Exécuter la requête](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -236,7 +236,7 @@ La requête consolidée renvoie les résultats suivants :
 - **TotalEvidenceCount :** nombre de signes observés
 - **UniqueEvidenceCount :** nombre de types de signes observés
 
-![Image des résultats de la requête pour l’activité de ransomware.](../../media/advanced-hunting-ransomware-query.png)
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Exemple de requête consolidée pour une activité de ransomware dans le portail Microsoft 365 Defender web":::
 
 *Résultats de requête montrant les appareils affectés et le nombre de différents signes d’activité de ransomware*
 
@@ -282,11 +282,11 @@ Microsoft Azure :
 - [Protéger contre les ransomware avec Microsoft Azure sauvegarde](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Détection de fusion pour rançongiciel dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Détection de fusion pour les ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security :
+Microsoft Defender for Cloud Apps :
 
--  [Créer des stratégies de détection des anomalies dans Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Créer des stratégies de détection des anomalies dans Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Billets de blog de l’équipe de sécurité Microsoft :
 
@@ -297,7 +297,7 @@ Billets de blog de l’équipe de sécurité Microsoft :
 
 - [Guide de la lutte contre les ransomware gérés par des personnes : Partie 2 (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
-  Recommandations meilleures pratiques.
+  Recommandations meilleures pratiques
 
 - [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 

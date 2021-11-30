@@ -44,7 +44,7 @@ conceptualContent:
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Comparer les offres
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
           itemType: reference
           text: Description du service
         - url: ../admin/misc/microsoft-365-business-faqs.yml

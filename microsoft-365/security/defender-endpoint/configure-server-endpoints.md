@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09b3e3b3893cd413f3a8fa9c4a7e45af26b943b2
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 7bd84a327f6987a0449a5c9bc04afc0b643b05c5
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217853"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221411"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -96,7 +96,7 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
 - Assurez-vous que les exigences de connectivité spécifiées dans Activer l’accès aux URL de [service Microsoft Defender pour](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) les points de terminaison dans le serveur proxy sont remplies. Ils sont équivalents à ceux de Windows Server 2019.
 - Auparavant, l’utilisation de la Microsoft Monitoring Agent (MMA) sur Windows Server 2016 et en dessous est autorisée pour la passerelle OMS/Log Analytics afin de fournir la connectivité aux services cloud de Defender. La nouvelle solution, telle que Microsoft Defender pour endpoint sur Windows Server 2019, Windows Server 2022 et Windows 10, ne prend pas en charge cette passerelle.
 - Sur Windows Server 2016, vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du catalogue [Microsoft Update ou](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) de [MMPC.](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)  
-- Sur Windows Server 2012 R2, il n’existe aucune interface utilisateur pour Antivirus Microsoft Defender. En outre, l’interface utilisateur sur Windows Server 2016 autorise uniquement les opérations de base. Pour effectuer des opérations localement sur un appareil, reportez-vous à Gérer Microsoft Defender pour le point de terminaison avec [PowerShell, WMI et MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). Par conséquent, les fonctionnalités qui s’appuient spécifiquement sur l’interaction utilisateur, telles que l’endroit où l’utilisateur est invité à prendre une décision ou à effectuer une tâche spécifique, risquent de ne pas fonctionner comme prévu. Il est recommandé de désactiver ou de ne pas activer l’interface utilisateur, ni d’exiger une interaction utilisateur sur un serveur géré, car cela peut avoir un impact sur la fonctionnalité de protection.
+- Sur Windows Server 2012 R2, il n’existe aucune interface utilisateur pour Antivirus Microsoft Defender. En outre, l’interface utilisateur sur Windows Server 2016 autorise uniquement les opérations de base. Pour effectuer des opérations localement sur un appareil, reportez-vous à Gérer Microsoft Defender pour le point de terminaison avec [PowerShell, WMI et MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). Par conséquent, les fonctionnalités qui s’appuient spécifiquement sur l’interaction utilisateur, telles que l’endroit où l’utilisateur est invité à prendre une décision ou à effectuer une tâche spécifique, risquent de ne pas fonctionner comme prévu. Il est recommandé de désactiver ou de ne pas activer l’interface utilisateur, ni d’exiger une interaction utilisateur sur un serveur géré, car cela peut avoir un impact sur la fonctionnalité de protection.
 - Toutes les règles de Réduction de la surface d’attaque ne sont pas disponibles sur tous les systèmes d’exploitation. Consultez les règles de réduction de la [surface d’attaque (ASR).](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
 - Pour activer la [Protection du réseau,](/microsoft-365/security/defender-endpoint/network-protection)une configuration supplémentaire est requise :
   - `Set-MpPreference -EnableNetworkProtection Enabled`

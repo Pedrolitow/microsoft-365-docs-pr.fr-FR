@@ -23,20 +23,20 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 8dae7d3ce3c9473f99d8060dd35c3c6c4af1ea39
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2464b8443db2f12e524a33ee56ce90909fea1fc2
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962469"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221147"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146806)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Dans les solutions de protection des points de terminaison, un faux positif est une entité, telle qu’un fichier ou un processus, qui a été détectée et identifiée comme malveillante, même si l’entité n’est pas réellement une menace. Un faux négatif est une entité qui n’a pas été détectée comme une menace, même si elle est réellement malveillante. Les faux positifs/négatifs peuvent se produire avec n’importe quelle solution de protection contre les menaces, [y compris Microsoft Defender pour le point de terminaison.](microsoft-defender-endpoint.md)
 
@@ -210,7 +210,7 @@ Les procédures de cette section décrivent comment définir des exclusions et d
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusions pour les Antivirus Microsoft Defender
 
-En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
+En règle générale, il n’est pas nécessaire de définir des exclusions pour Antivirus Microsoft Defender. Veillez à définir les exclusions avec parcimonie et à n’inclure que les fichiers, dossiers, processus et fichiers ouverts par processus qui entraînent des faux positifs. En outre, veillez à examiner régulièrement vos exclusions définies. Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour définir ou modifier vos exclusions antivirus ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-mde-post-migration.md)
 
 > [!TIP]
 > Vous avez besoin d’aide sur les exclusions antivirus ? Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
@@ -354,7 +354,7 @@ Vérifiez votre niveau de protection dans le cloud pour Antivirus Microsoft Defe
 > [!TIP]
 > Pour en savoir plus sur la configuration de votre protection cloud, voir Spécifier le niveau de [protection livré par le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
-Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
+Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir vos paramètres de protection cloud ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-mde-post-migration.md)
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Utiliser Microsoft Endpoint Manager pour examiner et modifier les paramètres de protection cloud (pour les stratégies existantes)
 
@@ -398,7 +398,7 @@ Les applications potentiellement indésirables (PUA) sont une catégorie de logi
 
 Selon les applications utilisées par votre organisation, vous pouvez obtenir des faux positifs suite à vos paramètres de protection PUA. Si nécessaire, envisagez d’utiliser la protection PUA en mode audit pendant un certain temps, ou appliquez la protection PUA à un sous-ensemble d’appareils de votre organisation. La protection PUA peut être configurée pour Microsoft Edge navigateur et pour Antivirus Microsoft Defender.
 
-Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-atp-post-migration.md)
+Nous vous recommandons [d’utiliser Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour modifier ou définir les paramètres de protection PUA ; toutefois, vous pouvez utiliser d’autres méthodes, telles que la stratégie de groupe [(voir](/azure/active-directory-domain-services/manage-group-policy) [Gérer Microsoft Defender pour Endpoint).](manage-mde-post-migration.md)
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Utiliser Microsoft Endpoint Manager pour modifier la protection PUA (pour les profils de configuration existants)
 
@@ -446,7 +446,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions,](#indicators-for-microsoft-defender-for-endpoint)et conservez l’examen et la correction automatisés pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 
@@ -458,6 +458,6 @@ Si vous avez passé en revue toutes les étapes de cet article et que vous avez 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer Microsoft Defender pour le point de terminaison](manage-atp-post-migration.md)
+[Gérer Microsoft Defender pour le point de terminaison](manage-mde-post-migration.md)
 
 [Vue d’ensemble Microsoft 365 Defender portail](/microsoft-365/security/defender-endpoint/use)

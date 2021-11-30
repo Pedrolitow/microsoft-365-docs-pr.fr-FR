@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 10/19/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 39d198f01b1b6bce10ccb3d0f1c6a16971bc15c9
-  ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+  ms.openlocfilehash: e692e1a82183a46703cf3d09ac5ac803e6737ea5
+  ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/23/2021
-  ms.locfileid: "60552631"
+  ms.lasthandoff: 11/30/2021
+  ms.locfileid: "61220859"
 landingContent:
 - title: Guides des solutions de base
   linkLists:
@@ -128,7 +128,7 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: Passer d’une solution de protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
-      url: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+      url: ../security/defender-endpoint/switch-to-mde-overview.md
 - title: Ressources pour la charge de travail
   linkLists:
   - linkListType: reference

@@ -16,19 +16,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0728c633b87b18d1bc4cec04d1ea6aeacab764d5
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: a411de512d5e07eb58f5a93163882836af823906
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144951"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221255"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -105,7 +105,7 @@ Une fois le processus de configuration de l’atelier terminé, vous pouvez ajou
 
 ## <a name="add-devices"></a>Ajouter des appareils
 
-Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022.
+Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu).
 
 L’appareil sera configuré avec la version la plus récente du système d’exploitation et de Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
 
@@ -134,7 +134,7 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 1. Dans le tableau de bord, **sélectionnez Ajouter un appareil.**
 
-2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022.
+2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu).
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuration de laboratoire avec options d’appareil.":::
 
