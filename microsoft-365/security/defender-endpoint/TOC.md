@@ -33,18 +33,16 @@
 #### [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Guides de migration](migration-guides.md)
-### [Passer d’une protection de point de terminaison non-Microsoft à Defender pour point de terminaison](switch-to-microsoft-defender-migration.md)
-#### [Phase 1 : préparation](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2 : configuration](switch-to-microsoft-defender-setup.md)
-#### [Phase 3 : intégration](switch-to-microsoft-defender-onboard.md)
-
-
-
-### [Gérer Defender pour Point de terminaison après la migration](manage-atp-post-migration.md)
-#### [Utiliser Intune (recommandé)](manage-atp-post-migration-intune.md)
-#### [Utiliser le Gestionnaire de configuration](manage-atp-post-migration-configuration-manager.md)
-#### [Utiliser la stratégie de groupe](manage-atp-post-migration-group-policy-objects.md)
-#### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Vue d’ensemble de la migration](switch-to-mde-overview.md)
+#### [Phase 1 : préparation](switch-to-mde-phase-1.md)
+#### [Phase 2 : configuration](switch-to-mde-phase-2.md)
+#### [Phase 3 : intégration](switch-to-mde-phase-3.md)
+#### [Résolution des problèmes](switch-to-mde-troubleshooting.md)
+### [Gérer Defender pour Point de terminaison après la migration](manage-mde-post-migration.md)
+#### [Utiliser Intune (recommandé)](manage-mde-post-migration-intune.md)
+#### [Utiliser le Gestionnaire de configuration](manage-mde-post-migration-configuration-manager.md)
+#### [Utiliser la stratégie de groupe](manage-mde-post-migration-group-policy-objects.md)
+#### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Scénarios de migration de serveur](server-migration.md)
 
 ## [Configurer et intégrer des appareils]()

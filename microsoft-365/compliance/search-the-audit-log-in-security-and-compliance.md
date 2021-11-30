@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49cae704e9ee62801af7423ba10b45e0b13574d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646954"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220967"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -970,6 +970,13 @@ Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme,
 |Collaboration activée des personnes de mon organisation<sup>*</sup>|EnableSameOrgCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs de l’organisation actuelle à afficher et modifier le formulaire.|
 |Collaboration activée de personnes spécifiques<sup>*</sup>|EnableSpecificCollaboaration|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à afficher et modifier le formulaire.|
 |Connecté à un classeur Excel<sup>*</sup>|ConnectToExcelWorkbook|Formulaire connecté à un classeur Excel. <br><br>La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
+|Collection créée|CollectionCreated|Le propriétaire du formulaire a créé une collection.|
+|Collection mise à jour|CollectionUpdated|Le propriétaire du formulaire a mis à jour une propriété de collection.|
+|Collection supprimée de la Corbeille|CollectionHardDeleted|Propriétaire du formulaire a supprimé définitivement une collection de la Corbeille.|
+|Collection déplacée vers la Corbeille|CollectionSoftDeleted|Le propriétaire du formulaire a déplacé une collection vers la Corbeille.|
+|Collection renommée|CollectionRenamed|Le propriétaire du formulaire a modifié le nom d’une collection.|
+|Un formulaire a été déplacé dans la collection|MovedFormIntoCollection|Le propriétaire du formulaire a déplacé un formulaire dans une collection.|
+|Un formulaire a été déplacé hors de la collection|MovedFormOutofCollection|Le propriétaire du formulaire a déplacé un formulaire d’une collection.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
