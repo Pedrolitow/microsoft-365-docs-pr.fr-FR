@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ''
 description: ''
-ms.openlocfilehash: 8a4b2e8170d98261f0f3c6d1f77dd50e05de5d87
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: be6e24d1a9d02146ce196058115388c4b00290ea
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129107"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221052"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
 
@@ -27,7 +27,10 @@ Une fois que votre organisation a déployé Microsoft Defender pour point termi
 
 ![Illustration de l’intégration de Defender pour point de terminaison et Microsoft Intune](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
-Dans cette illustration, Microsoft Defender pour point de terminaison augmente considérablement la complexité de la protection contre les menaces pour les appareils. Bien que Microsoft Intune vous permette de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
+Dans cette illustration :
+- Microsoft Defender pour point de terminaison augmente considérablement la complexité de la protection contre les menaces pour les appareils. 
+- Bien que Microsoft Intune vous permette de définir des stratégies de protection des applications et de gérer les appareils (y compris les modifications de configuration), Defender pour point de terminaison surveille en permanence vos appareils contre les menaces et peut prendre des mesures automatisées pour corriger les attaques. 
+- Vous pouvez utiliser Intune pour intégrer des appareils à Defender pour point de terminaison. Dans ce cas, vous autorisez également ces appareils à utiliser Microsoft 365 protection contre la perte de données de point de terminaison (DLP).
 
 Cet article comprend les étapes suivantes :
 - Connecter Microsoft Intune à Defender pour point de terminaison

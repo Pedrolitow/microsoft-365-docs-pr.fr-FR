@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: fa8dab5e72f2e3833508bce92b5a9f0b9d699f6b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: bbde6e79f35bf69b29d589186054bc072124d1ea
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221514"
+ms.locfileid: "61234530"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 
@@ -99,6 +99,16 @@ Valeur : `1`
 > Pour que le mode passif fonctionne sur les points de terminaison exécutant Windows Server 2016 et Windows Server 2012 R2, ces points de terminaison doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
 
 Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server.](microsoft-defender-antivirus-on-windows-server.md)
+
+## <a name="i-am-having-trouble-reinstalling-microsoft-defender-antivirus-on-windows-server-2016"></a>J’ai des difficultés à réinstaller des Antivirus Microsoft Defender sur Windows Server 2016
+
+Si vous utilisez une solution antivirus/anti-programme malveillant non Microsoft sur Windows Server 2016, il se peut que votre solution existante Antivirus Microsoft Defender soit désactivée ou désinstallée. Vous pouvez utiliser l’utilitaire Command-Line protection contre les programmes[ malveillants](command-line-arguments-microsoft-defender-antivirus.md) pour ré-activer Antivirus Microsoft Defender sur Windows Server 2016.
+
+1. En tant qu’administrateur local sur le serveur, ouvrez l’invite de commandes.
+
+2. Exécutez la commande suivante : `MpCmdRun.exe -wdenable`
+
+3. Redémarrez lʼappareil.
 
 ## <a name="see-also"></a>Voir aussi
 

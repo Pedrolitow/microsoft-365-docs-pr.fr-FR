@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: f7f87b229528bd9f4a43592e9e6a9cf656359094
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e6c2387154108d54b429ec436c959925758a897b
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717458"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234554"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer les données d’audit ehr de santé (prévisualisation)
 
-Vous pouvez configurer un connecteur de données dans le Centre de conformité Microsoft 365 pour importer des données d’audit pour l’activité des utilisateurs dans le système EHR (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système EHR de santé incluent des données pour les événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit EHR pour la santé peuvent être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes Microsoft 365 pour protéger votre organisation contre tout accès non autorisé aux informations des patients.
+Vous pouvez configurer un connecteur de données dans le Centre de conformité Microsoft 365 pour importer des données d’audit pour l’activité des utilisateurs dans le système EHR (Electronic Healthcare Records) de votre organisation. Les données d’audit de votre système EHR de santé incluent des données pour les événements liés à l’accès aux dossiers de santé d’un patient. Les données d’audit ehr de santé peuvent être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes Microsoft 365 pour protéger votre organisation contre tout accès non autorisé aux informations des patients.
 
 La configuration d’un connecteur de soins de santé comprend les tâches suivantes :
 
@@ -59,7 +59,10 @@ Pour obtenir des instructions détaillées sur la création d’une application 
 
 ## <a name="step-2-prepare-a-text-file-with-healthcare-ehr-auditing-data"></a>Étape 2 : Préparer un fichier texte avec les données d’audit ehr de santé
 
-L’étape suivante consiste à créer un fichier texte qui contient des informations sur l’accès des employés aux dossiers de santé des patients dans le système ehr de votre organisation. Comme indiqué précédemment, vous devez déterminer comment générer ce fichier texte à partir de votre système ehr de santé. Le flux de travail Du connecteur de santé nécessite un fichier texte avec des valeurs séparées par des tabulations pour ma cartographier ces données dans le fichier texte avec le schéma de connecteur requis. Le format de fichier pris en charge est un fichier texte séparé par une virgule (.csv), un canal (.psv) ou un onglet (.tsv).
+L’étape suivante consiste à créer un fichier texte qui contient des informations sur l’accès des employés aux dossiers de santé des patients dans le système ehr de votre organisation. Comme indiqué précédemment, vous devez déterminer comment générer ce fichier texte à partir de votre système ehr de santé. Le flux de travail du connecteur de santé nécessite un fichier texte avec des valeurs séparées par des tabulations pour mammiser ces données dans le fichier texte avec le schéma de connecteur requis. Le format de fichier pris en charge est un fichier texte séparé par une virgule (.csv), un canal (.psv) ou un onglet (.tsv).
+
+> [!NOTE]
+> La taille maximale du fichier texte qui contient les données d’audit est de 3 Go. Le nombre maximal de lignes est de 5 millions. En outre, n’incluez que les données d’audit pertinentes de votre système ehr de santé.
 
 Le tableau suivant répertorie les champs requis pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrill plan avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
@@ -71,8 +74,8 @@ Le tableau suivant répertorie les champs requis pour activer les scénarios de 
 | Adresse de messagerie (UPN) ou SamAccountName*<br/>Nom d’utilisateur de l’employé <br/> ID d’employé <br/> Nom d’employé <sup>1</sup> <br/> Prénom de <sup>l’employé 1</sup> | Ces champs sont utilisés pour identifier les informations de profil d’employé pour la correspondance d’adresse et de nom requise pour déterminer l’accès aux enregistrements famille/voisin/employé. |
 |||
 
-> [!NOTE]
-> <sup>1</sup> Ce champ n’est peut-être pas disponible par défaut dans votre système de santé. Vous devez configurer l’exportation pour vous assurer que le fichier texte contient ce champ.
+> [!NOTE] 
+> <sup>1</sup> Ce champ n’est peut-être pas disponible par défaut dans votre système ehr de santé. Vous devez configurer l’exportation pour vous assurer que le fichier texte contient ce champ.
 
 ## <a name="step-3-create-the-healthcare-connector"></a>Étape 3 : Créer le connecteur de santé
 
@@ -80,7 +83,7 @@ L’étape suivante consiste à créer un connecteur de santé dans le Centre de
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors** in the left nav.
 
-2. Sous **l’onglet Vue** d’ensemble, cliquez **sur Soins de santé (aperçu).**
+2. Sous **l’onglet Vue** d’ensemble, cliquez **sur Soins de santé (prévisualisation).**
 
 3. Dans la page **Santé (prévisualisation),** cliquez **sur Ajouter un connecteur.**
 
@@ -94,7 +97,7 @@ L’étape suivante consiste à créer un connecteur de santé dans le Centre de
 
 6. Dans la page **méthode de mappage** de fichiers, sélectionnez l’une des options suivantes, puis cliquez sur **Suivant**.
 
-   - **Télécharger un exemple de fichier.** Si vous sélectionnez cette option, cliquez sur **Télécharger exemple de** fichier pour télécharger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier texte à partir d’une liste de listes de listes listes afin de mammiser les colonnes au schéma requis pour le connecteur de santé. 
+   - **Télécharger un exemple de fichier**. Si vous sélectionnez cette option, cliquez sur **Télécharger exemple de** fichier pour télécharger le fichier que vous avez préparé à l’étape 2. Cette option vous permet de sélectionner rapidement des noms de colonnes dans votre fichier texte à partir d’une liste de listes de listes listes afin de mammiser les colonnes au schéma requis pour le connecteur de santé. 
 
     Ou
 
@@ -110,7 +113,7 @@ L’étape suivante consiste à créer un connecteur de santé dans le Centre de
 
 8. Dans la page **Révision,** examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-   Une page d’état confirme que le connecteur a été créé. Cette page contient deux éléments importants que vous devez effectuer à l’étape suivante pour exécuter l’exemple de script pour télécharger vos données d’audit EHR de santé.
+   Une page d’état qui confirme que le connecteur a été créé s’affiche. Cette page contient deux éléments importants que vous devez effectuer à l’étape suivante pour exécuter l’exemple de script pour télécharger vos données d’audit EHR de santé.
 
     - **ID de travail.** Vous aurez besoin de cet ID de travail pour exécuter le script à l’étape suivante. Vous pouvez le copier à partir de cette page ou à partir de la page de flyout du connecteur.
 
@@ -118,17 +121,20 @@ L’étape suivante consiste à créer un connecteur de santé dans le Centre de
 
 9. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
 
 10. Cliquez sur le connecteur de soins de santé que vous avez créé pour afficher la page de présentation, qui contient des propriétés et d’autres informations sur le connecteur.
 
-Si ce n’est pas déjà fait, vous pouvez copier les valeurs de **l’ID** d’application Azure et de l’ID de travail **connecteur.** Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page volante (ou le télécharger à l’aide du lien de l’étape suivante).)
+Si ce n’est pas déjà fait, vous pouvez copier les valeurs de **l’ID d’application Azure** et de l’ID de travail **connecteur.** Vous en aurez besoin pour exécuter le script à l’étape suivante. Vous pouvez également télécharger le script à partir de la page volante (ou le télécharger à l’aide du lien de l’étape suivante).)
 
 Vous pouvez également cliquer sur **Modifier** pour modifier l’ID d’application Azure ou les noms d’en-tête de colonne que vous avez définis sur la page **de mappage de** fichiers.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>Étape 4 : Exécutez l’exemple de script pour télécharger vos données d’audit EHR de santé
 
 La dernière étape de la configuration d’un connecteur de santé consiste à exécuter un exemple de script qui téléchargera les données d’audit ehr de santé dans le fichier texte (que vous avez créé à l’étape 1) dans le cloud Microsoft. Plus précisément, le script télécharge les données vers le connecteur de santé. Après avoir exécuté le script, le connecteur de santé que vous avez créé à l’étape 3 importe les données d’audit ehr de santé dans votre organisation Microsoft 365 où il est accessible par d’autres outils de conformité, tels que la solution de gestion des risques internes. Après avoir exécuté le script, envisagez de planifier une tâche pour qu’elle s’exécute automatiquement quotidiennement afin que les données les plus récentes de résiliation d’employé sont chargées dans le cloud Microsoft. Voir [(Facultatif) Étape 6 : Planifier l’exécuter automatiquement.](#optional-step-6-schedule-the-script-to-run-automatically)
+
+> [!NOTE]
+> Comme indiqué précédemment, la taille maximale du fichier texte qui contient les données d’audit est de 3 Go. Le nombre maximal de lignes est de 5 millions. Le script que vous exécutez dans cette étape prendra environ 30 à 40 minutes pour importer les données d’audit à partir de fichiers texte de grande taille. En outre, le script divise les fichiers texte de grande taille en blocs plus petits de 100 000 lignes, puis importe ces blocs séquentiellement.
 
 1. Accédez à la fenêtre que vous avez laissée ouverte à partir de l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée.
 
@@ -152,7 +158,7 @@ Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs v
 
 |Paramètre  |Description|
 |:----------|:----------|
-|tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre d Azure AD’administration. Il est utilisé pour identifier votre organisation.|
+|tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
 |appId|Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 1. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation.|
 |appSecret|Il s’agit de la Azure AD’application secrète de l’application que vous avez créée Azure AD l’étape 1. Cette fonction est également utilisée pour l’authentification.|
 |jobId|Il s’agit de l’ID de travail pour le connecteur de santé que vous avez créé à l’étape 3. Il permet d’associer les données d’audit ehr de santé téléchargées vers le cloud Microsoft au connecteur santé.|
@@ -165,10 +171,10 @@ Voici un exemple de syntaxe pour le script connecteur de santé utilisant des va
 .\HealthcareConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\healthcare_audit_records.csv'
 ```
 
-Si le téléchargement réussit, le script affiche **l’Télécharger message** Réussite.
+Si le chargement réussit, le script affiche le message **Télécharger** réussite.
 
 > [!NOTE]
-> Si vous avez des problèmes lors de [](\powershell\module\microsoft.powershell.core\about\about_execution_policies) l’exécution de la commande précédente en raison de stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
+> Si vous avez des problèmes lors de [](\powershell\module\microsoft.powershell.core\about\about_execution_policies) l’exécution de la commande précédente en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>Étape 5 : Surveiller le connecteur santé
 
@@ -182,11 +188,11 @@ Après avoir créé le connecteur santé et envoyé vos données d’audit EHR, 
 
     Le `RecordsSaved` champ indique le nombre de lignes dans le fichier texte téléchargé. Par exemple, si le fichier texte contient quatre lignes, la valeur des champs est 4, si le script a correctement téléchargé toutes les lignes du fichier `RecordsSaved` texte.
 
-Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
+Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation.** Vous pouvez télécharger le script, puis suivre les étapes pour exécuter le script.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Facultatif) Étape 6 : Planifier l’exécuter automatiquement
 
-Pour vous assurer que les dernières données d’audit de votre système ehr de santé sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier l’exécuter automatiquement tous les jours. Pour ce faire, vous devez également mettre à jour les données d’audit EHR dans le fichier texte selon une planification similaire (si ce n’est pas la même) afin qu’elles contiennent les dernières informations sur les activités d’accès aux enregistrements de patients par vos employés. L’objectif est de télécharger les données d’audit les plus récentes afin que le connecteur de santé puisse les mettre à la disposition de la solution de gestion des risques internes.
+Pour vous assurer que les dernières données d’audit de votre système EHR de santé sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier l’exécuter automatiquement quotidiennement. Pour ce faire, vous devez également mettre à jour les données d’audit EHR dans le même fichier texte selon une planification similaire (si ce n’est pas la même) afin qu’elles contiennent les dernières informations sur les activités d’accès aux enregistrements de patients par vos employés. L’objectif est de télécharger les données d’audit les plus récentes afin que le connecteur santé puisse les mettre à la disposition de la solution de gestion des risques internes.
 
 Vous pouvez utiliser l’application Planification des tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
@@ -202,11 +208,11 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
     1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-    2. Assurez-vous que la **case à cocher** Exécuter avec les privilèges les plus élevés est cocher.
+    2. Assurez-vous que la case à cocher Exécuter avec **les privilèges** les plus élevés est sélectionnée.
 
 6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
 
-    1. Sous **Paramètres**, sélectionnez l’option  Tous les jours, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
+    1. Sous **Paramètres**, sélectionnez l’option  Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
     2. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
 
@@ -214,11 +220,13 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 7. Sélectionnez **l’onglet Actions,** cliquez **sur Nouveau,** puis faites les actions suivantes :
 
+   ![Paramètres d’action pour créer une tâche programmée pour le script de connecteur de santé.](../media/GenericHealthCareConnectorScheduleTask1.png)
+
     1. Dans la **liste liste de** listes d’actions, assurez-vous que démarrer un **programme** est sélectionné.
 
     2. Dans la **zone Programme/script,** cliquez sur Parcourir, puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone : C:.0.exe. 
 
-    3. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
+    3. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, C:\Santé\audit.
 
@@ -226,6 +234,10 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 8. Dans la **fenêtre Créer une** tâche, cliquez sur **OK** pour enregistrer la tâche programmée. Vous pouvez être invité à entrer vos informations d’identification de compte d’utilisateur.
 
-La dernière fois que le script a été exécuté et la prochaine fois qu’il est programmé pour s’exécuter, s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
+   La nouvelle tâche s’affiche dans la bibliothèque du Programmeur de tâches.
 
-Vous pouvez également vérifier la dernière fois que le script a été écrit sur la page volante du connecteur de santé correspondant dans le centre de conformité.
+   ![La nouvelle tâche pour le script de connecteur de soins de santé s’affiche dans la bibliothèque du Programmeur de tâches.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
+
+   La dernière fois que le script a été exécuté et la prochaine fois qu’il est programmé pour s’exécuter, s’affiche. Vous pouvez double-cliquer sur la tâche pour la modifier.
+
+   Vous pouvez également vérifier la dernière fois que le script a été écrit sur la page volante du connecteur de santé correspondant dans le centre de conformité.

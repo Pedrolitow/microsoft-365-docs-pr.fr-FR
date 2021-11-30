@@ -21,14 +21,14 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 5eb24f439c8f728a8c8d1c156df956451ca25cc2
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 8dc7dd0992626c60fcdc5fb4942f29a14d901b41
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221515"
+ms.locfileid: "61234577"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 1 : Préparer
 
@@ -66,7 +66,7 @@ Vous avez besoin d’aide pour mettre à jour les appareils de votre organisatio
 
 <br/><br/>
 
-|Système d’exploitation|Ressource|
+|Système d’exploitation|Resource|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Comment mettre à jour le logiciel sur votre Mac](https://support.apple.com/HT201541)|
@@ -117,12 +117,12 @@ Pour activer la communication entre vos appareils et Defender pour le point de t
 
 |Fonctionnalités|Système d’exploitation|Ressources|
 |---|---|---|
-|[Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurer les paramètres de proxy et de connectivité Internet de l’ordinateur](configure-proxy-internet.md)|
+|[Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT)|[Windows 10](/windows/release-health/release-information) ou ultérieure<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurer les paramètres de proxy et de connectivité Internet de l’ordinateur](configure-proxy-internet.md)|
 |PEPT|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configurer les paramètres de proxy et de connectivité Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|PEPT|macOS :<br/> 11.3.1 (Big Sur)<br/>10.15 (Île)<br/>10.14 (Mojave)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
+|PEPT|macOS (voir [La requise du système)](microsoft-defender-endpoint-mac.md)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 ou une ultérieure](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS :<br/> 11.3.1 (Big Sur)<br/>10.15 (Île)<br/>10.14 (Mojave)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
-|Antivirus|Linux :<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS ou un LTS supérieur<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|[Defender pour point de terminaison sur Linux : connexions réseau](microsoft-defender-endpoint-linux.md#network-connections)|
+|Antivirus|macOS (voir [La requise du système)](microsoft-defender-endpoint-mac.md)|[Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|Linux (voir [La exigences du système)](microsoft-defender-endpoint-linux.md#system-requirements)|[Defender pour point de terminaison sur Linux : connexions réseau](microsoft-defender-endpoint-linux.md#network-connections)|
 
 
 ## <a name="next-step"></a>Étape suivante
