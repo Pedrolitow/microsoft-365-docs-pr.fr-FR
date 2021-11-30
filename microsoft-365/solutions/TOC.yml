@@ -33,7 +33,7 @@
       items:
         - name: Vue d’ensemble
           href: manage-devices-with-intune-overview.md
-        - name: "Étape 1. Mettre en œuvre des stratégies de protection des applications Niveau\_2"
+        - name: Étape 1. Implémenter des stratégies de protection des applications
           href: manage-devices-with-intune-app-protection.md
         - name: Étape 2. Inscrire des appareils dans la gestion
           href: manage-devices-with-intune-enroll.md
@@ -222,7 +222,7 @@
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 2. Utiliser Microsoft Teams.
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: "Étape\_3. Power Automate"
+            - name: Étape 3. Power Automate
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Créer un intranet SharePoint intelligent
           items:
@@ -317,7 +317,7 @@
         - name: Déployer Microsoft Defender pour point de terminaison
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Passer d’une protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
-          href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+          href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Passer d'un outil de protection non Microsoft à Microsoft Defender pour Office 365
           href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365

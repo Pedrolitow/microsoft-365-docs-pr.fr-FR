@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Découvrez les étiquettes et les stratégies par défaut de Microsoft Information Protection (MIP) pour classer et protéger le contenu sensible.
-ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: dd9a2eef45e8ccb7ecb9c637a94f64ad6796a8f9
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962830"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221351"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Étiquettes et stratégies par défaut pour Microsoft Information Protection
 
@@ -58,6 +58,12 @@ Pour obtenir ces étiquettes et règles préconfigurées :
     :::image type="content" alt-text="Activation de Microsoft Information Protection pour les étiquettes et stratégies préconfigurées." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     Si vous ne voyez pas ces informations affichées avec l’option d’activation, vous n’êtes pas éligible pour la création automatique d’étiquettes de confidentialité et de stratégies. Vous pouvez essayer de vérifier ultérieurement si cet état a changé ou vous pouvez utiliser les informations de paramètres suivants pour créer manuellement les mêmes étiquettes et stratégies.
+
+3. Activez maintenant les étiquettes de confidentialité pour SharePoint et OneDrive. Cette étape supplémentaire est un prérequis pour utiliser des étiquettes de confidentialité dans Office pour le web et des stratégies d’étiquetage automatique pour SharePoint et OneDrive.
+
+    Sélectionnez l’onglet **Étiquettes**, puis **Activer maintenant.**
+    
+    Pour obtenir des instructions complètes, consultez [Comment activer les étiquettes de confidentialité pour SharePoint et OneDrive (abonnement)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
 ## <a name="default-sensitivity-labels"></a>Étiquettes de sensibilité par défaut
 
