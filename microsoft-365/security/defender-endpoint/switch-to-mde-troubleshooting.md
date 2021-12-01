@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: bbde6e79f35bf69b29d589186054bc072124d1ea
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: b16cd5c9642c017c7354b98c5445c2614bde10bf
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234530"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240803"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 
@@ -100,7 +100,7 @@ Valeur : `1`
 
 Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Server.](microsoft-defender-antivirus-on-windows-server.md)
 
-## <a name="i-am-having-trouble-reinstalling-microsoft-defender-antivirus-on-windows-server-2016"></a>J’ai des difficultés à réinstaller des Antivirus Microsoft Defender sur Windows Server 2016
+## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>J’ai des difficultés à réactiver Antivirus Microsoft Defender sur Windows Server 2016
 
 Si vous utilisez une solution antivirus/anti-programme malveillant non Microsoft sur Windows Server 2016, il se peut que votre solution existante Antivirus Microsoft Defender soit désactivée ou désinstallée. Vous pouvez utiliser l’utilitaire Command-Line protection contre les programmes[ malveillants](command-line-arguments-microsoft-defender-antivirus.md) pour ré-activer Antivirus Microsoft Defender sur Windows Server 2016.
 

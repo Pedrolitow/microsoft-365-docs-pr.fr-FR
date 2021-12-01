@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: f14e729858f3285f9cefc4d3db7da99d6c6f9e7d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189320"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241079"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -185,7 +185,7 @@ Le programme stocke les messages de réunion impromptue et planifiée de la mêm
 
 Lorsque des utilisateurs externes sont inclus dans une réunion organisée par votre organisation :
 
-- si un utilisateur externe se connecte à l’aide d’un compte invité dans votre client, il dispose d’une boîte aux lettres fantôme qui peut être soumise à la stratégie de rétention de votre organisation pour Teams. Les messages de la réunion sont stockés dans la boîte aux lettres de vos utilisateurs et dans la boîte aux lettres fantôme. 
+- Si un utilisateur externe rejoint la réunion à l’aide d’un compte invité dans votre client, tous les messages de la réunion sont stockés à la fois dans la boîte aux lettres de vos utilisateurs et dans une boîte aux lettres instantané qui est accordée au compte invité. Toutefois, les stratégies de rétention ne sont pas prises en charge pour les boîtes instantanées, même si elles peuvent être signalées comme incluses dans une stratégie de rétention pour l’ensemble de l’emplacement (parfois appelée « stratégie à l’échelle de l’organisation »).
 
 - Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Toutefois, pour la même réunion, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
 

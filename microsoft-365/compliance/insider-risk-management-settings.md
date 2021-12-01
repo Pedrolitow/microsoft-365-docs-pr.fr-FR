@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f7386d2b35308dbfd6da911e193d6e52fdd12cb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4cfeeac136026d50d96dab71622df0b3622fbb3a
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110174"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241139"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -105,7 +105,7 @@ Si vous disposez déjà d’appareils incorporés dans [Microsoft Defender pour 
 
 Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’ont pas encore été intégrés et vous souhaitez simplement surveiller les activités de risque internes sur Windows 10 appareils.
 
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
+1. Ouvrez le [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
 
    > [!NOTE]
@@ -131,7 +131,7 @@ Une fois terminé et le point de terminaison intégré, il doit être visible da
 
 Si Microsoft Defender pour le point de terminaison est déjà déployé et que des points de terminaison sont connectés, tous ces points de terminaison apparaissent dans la liste des appareils gérés. Vous pouvez continuer à intégrer de nouveaux appareils dans la gestion des risques internes pour étendre la couverture à l’aide de la section Étape 2 : [Intégration des appareils.](insider-risk-management-settings.md#OnboardStep2)
 
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
+1. Ouvrez le [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Activer la surveillance d’appareils**.
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. Vous devriez voir la liste des appareils qui sont déjà signalés dans Microsoft Defender pour le point de terminaison.
 4. Choisissez **l’intégration** si vous avez besoin d’intégrer davantage d’appareils.
@@ -295,7 +295,7 @@ Pour créer un nouveau groupe d’utilisateurs prioritaires, vous utiliserez les
 
 Pour créer un groupe d’utilisateurs prioritaire, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
 2. Sélectionnez la page **Groupes d’utilisateurs prioritaires (prévisualisation).**
 3. Dans la page **Groupes d’utilisateurs prioritaires (prévisualisation),** sélectionnez Créer un groupe d’utilisateurs prioritaire pour démarrer l’Assistant Création de groupe. 
 4. Dans la page **Nom et description,** complétez les champs suivants :
@@ -315,7 +315,7 @@ Pour mettre à jour un groupe d’utilisateurs prioritaires existant, vous utili
 
 Pour modifier un groupe d’utilisateurs prioritaires, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
 2. Sélectionnez la page **Groupes d’utilisateurs prioritaires (prévisualisation).**
 3. Sélectionnez le groupe d’utilisateurs prioritaire à modifier et sélectionnez **Modifier le groupe.**
 4. Dans la page **Nom et description,** mettez à jour le champ Description si nécessaire. Vous ne pouvez pas mettre à jour le nom du groupe d’utilisateurs prioritaire. Sélectionnez **Suivant** pour continuer.
@@ -334,7 +334,7 @@ Pour supprimer un groupe d’utilisateurs prioritaires existant, vous utiliserez
 
 Pour supprimer un groupe d’utilisateurs prioritaires, vous devez effectuer les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres de risque internes.**
 2. Sélectionnez la page **Groupes d’utilisateurs prioritaires (prévisualisation).**
 3. Sélectionnez le groupe d’utilisateurs prioritaire à modifier, puis **sélectionnez Supprimer** dans le menu tableau de bord.
 4. Dans la **boîte de dialogue** Supprimer, sélectionnez **Oui** pour supprimer le groupe d’utilisateurs prioritaire ou sélectionnez **Annuler** pour revenir au tableau de bord.
@@ -362,7 +362,7 @@ Pour configurer les ressources physiques prioritaires, complétez les étapes su
     > [!IMPORTANT]
     > Pour que les stratégies de gestion des risques internes utilisent et corrélent les données de signal liées aux utilisateurs qui quittent et se terminent par des données d’événement à partir de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur RH Microsoft 365. Si vous activez le connecteur de badging physique sans activer le connecteur RH Microsoft 365, les stratégies de gestion des risques internes ne traitera que les événements des activités d’accès physique pour les utilisateurs de votre organisation.
 
-2. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez à **Gestion** des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
+2. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **Gestion** des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
 3. Dans la **page** Ressources physiques prioritaires, vous pouvez ajouter manuellement les ID d’actifs physiques que vous souhaitez surveiller pour les événements d’actifs importés par le connecteur de badging physique ou importer un fichier .csv de tous les ID de biens physiques importés par le connecteur de badging physique : a) Pour ajouter manuellement des ID de ressources physiques, choisissez Ajouter des ressources physiques **prioritaires,**  entrez un ID de bien physique, puis sélectionnez **Ajouter.** Entrez d’autres ID de ressources physiques, puis sélectionnez **Ajouter** des ressources physiques de priorité pour enregistrer tous les biens entrés.
     b) Pour ajouter une liste d’ID de ressources physiques à partir d’un fichier .csv, choisissez Importer des ressources physiques **prioritaires.** Dans la boîte de dialogue explorateur de fichiers, sélectionnez le .csv que vous souhaitez importer, puis **sélectionnez Ouvrir**. Les ID de ressources physiques des fichiers .csv sont ajoutés à la liste.
 4. Accédez à la page **Indicateurs de stratégie** dans **Paramètres**.
@@ -408,7 +408,7 @@ Pour créer un flux Power Automate dans la zone des paramètres,  vous devez  ê
 
 Pour créer un flux de Power Automate à partir d’un modèle de gestion des risques internes recommandé, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez un modèle recommandé dans les **modèles** de gestion des risques internes que vous souhaitez peut-être voir dans la section de la page.
 3. Le flux répertorie les connexions incorporées nécessaires au flux et note si les états de connexion sont disponibles. Si nécessaire, mettez à jour les connexions qui ne sont pas affichées comme disponibles. Cliquez sur **Continuer**.
 4. Par défaut, les flux recommandés sont pré-configurés avec les champs de données de service Microsoft 365 et de gestion des risques internes recommandés requis pour effectuer la tâche affectée au flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle Afficher les **options** avancées et en configurant les propriétés disponibles pour le composant de flux.
@@ -446,7 +446,7 @@ Pour partager un flux Power Automate dans la zone des paramètres,  vous devez  
 
 Pour partager un flux de Power Automate, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez **l’onglet** Mes flux ou **Flux d’équipe.**
 3. Sélectionnez le flux à partager, puis **sélectionnez Partager dans** le menu options de flux.
 4. Sur la page de partage de flux, entrez le nom de l’utilisateur ou du groupe que vous souhaitez ajouter en tant que propriétaire du flux.
@@ -460,7 +460,7 @@ Pour modifier un flux Power Automate dans la zone des paramètres, vous  devez �
 
 Pour modifier un flux de Power Automate, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez un flux à modifier et sélectionnez **Modifier** dans le menu de contrôle de flux.
 3. Sélectionnez **les Paramètres** pour modifier un paramètre de composant de flux ou supprimer des  >   **ellipses** pour supprimer un composant de  >   flux.
 4. Sélectionnez **Enregistrer,** **puis Fermez** pour terminer la modification du flux.
@@ -473,7 +473,7 @@ Pour supprimer un flux Power Automate dans la zone des paramètres,  vous devez 
 
 Pour supprimer un flux de Power Automate, vous devez effectuer les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux** de flux, sélectionnez un flux à supprimer et sélectionnez **Supprimer** dans le menu de contrôle de flux.
 3. Dans la boîte de dialogue de confirmation de suppression, sélectionnez **Supprimer** pour supprimer le flux ou sélectionnez **Annuler** pour quitter l’action de suppression.
 
@@ -491,7 +491,7 @@ Pour plus d’informations sur l’utilisation des équipes et des canaux dans M
 
 L’activation Microsoft Teams prise en charge des cas est rapide et facile à configurer. Pour activer Microsoft Teams gestion des risques internes, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
+1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
 2. Sélectionnez **la Microsoft Teams** page.
 3. Activez Microsoft Teams’intégration pour la gestion des risques internes.
 4. Sélectionnez **Enregistrer** pour configurer et quitter.
@@ -506,7 +506,7 @@ Les utilisateurs doivent être autorisés à créer Microsoft 365 groupes de vot
 
 Pour créer une équipe pour un cas, vous devez utiliser le contrôle Créer une équipe Microsoft lorsque vous travaillez directement dans un cas existant. Pour créer une équipe, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez à **Cas** de gestion des risques internes  >   et sélectionnez un cas existant.
+1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **Cas** de gestion des risques internes  >   et sélectionnez un cas existant.
 2. Dans le menu d’action de cas, **sélectionnez Créer Microsoft Team**.
 3. Dans le **champ Nom de l’équipe,** entrez un nom pour la nouvelle Microsoft Teams équipe.
 4. Sélectionnez **Créer une équipe Microsoft,** puis **Fermez.**
@@ -537,7 +537,7 @@ Les analyses des analyses sont basées sur les mêmes signaux d’activité de r
 Pour activer l’analyse des risques internes, vous devez être membre du groupe de rôles d’administrateur de gestion des risques *internes,* d’administrateur de gestion des risques internes *ou* Microsoft 365 d’administrateur global.
 Pour activer l’analyse des risques internes, vous suivrez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La gestion des risques internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La gestion des risques internes.**
 2. Sélectionnez **Exécuter l’analyse** dans **l’analyse des risques** internes dans la carte de votre organisation, sous l’onglet Vue d’ensemble de la gestion **des** risques internes. Cela permet d’analyser l’analyse de votre organisation. Vous pouvez également activer l’analyse dans votre organisation en naviguant vers l’analyse des **paramètres** de risque internes et en activant  >   l’analyse de **l’activité** utilisateur de votre client pour identifier les risques internes potentiels.
 3. Dans le **volet Détails de l’analyse,** **sélectionnez Exécuter l’analyse** pour démarrer l’analyse pour votre organisation. Les résultats de l’analyse peuvent prendre jusqu’à 24 heures avant que les informations soient disponibles en tant que rapports à réviser.
 
@@ -567,7 +567,7 @@ Pour désactiver l’analyse des risques internes, vous devez être membre du gr
 
 Pour désactiver l’analyse des risques internes, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La gestion des risques internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La gestion des risques internes.**
 2. Sélectionnez la page **Analyse des paramètres de risque**  >  **internes.**
 3. Dans la page **Analyse,** désactiver **l’analyse de l’activité** utilisateur de votre client pour identifier les risques internes potentiels.
 
@@ -577,7 +577,7 @@ Les notifications d’administrateur envoient automatiquement une notification p
 
 Si vous préférez désactiver les notifications d’administrateur, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
+1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
 2. Sélectionnez la page **Notifications de l’administrateur.**
 3. Clear the **Send a notification email when the first alert is generated for a new policy** checkbox.
 4. Sélectionnez **Enregistrer** pour configurer et quitter.

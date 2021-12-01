@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: b370fe304dad0a32055a7bb2a29cdcd49373c000
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 13fda51ea3bd5434c44f9313dc511c0379e0f56e
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234566"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241211"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 2 : Installation
 
@@ -57,7 +57,7 @@ Lorsque vous basculez vers Defender pour le point de terminaison, vous devrez pe
 |Type de point de terminaison|Procédure|
 |---|---|
 |Windows clients (tels que les points de terminaison Windows 10 et Windows 11)|En règle générale, vous n’avez pas besoin d’agir pour Windows clients (sauf si Antivirus Microsoft Defender a été désinstallé). Voici pourquoi : <br/><br/> Antivirus Microsoft Defender doit toujours être installé, mais est probablement désactivé à ce stade du processus de migration. <br/><br/> Lorsqu’une solution antivirus/anti-programme malveillant non-Microsoft est installée et que les clients ne sont pas encore intégrés à Defender pour le point de terminaison, Antivirus Microsoft Defender est désactivé automatiquement. <br/><br/> Plus tard, lorsque les points de terminaison clients sont intégrés à Defender pour point de terminaison, si ces points de terminaison exécutent une solution antivirus non Microsoft, Antivirus Microsoft Defender passe en mode passif. <br/><br/> Si la solution antivirus non-Microsoft est désinstallée, Antivirus Microsoft Defender passe automatiquement en mode actif.|
-|Windows serveurs|Sur Windows server, vous devez réinstaller Antivirus Microsoft Defender et le définir manuellement en mode passif. Sur Windows serveurs, lorsqu’un antivirus/logiciel anti-programme malveillant non Microsoft est installé, Antivirus Microsoft Defender ne peut pas s’exécuter avec la solution antivirus non Microsoft. Dans ce cas, Antivirus Microsoft Defender est désactivé ou désinstallé manuellement. <br/><br/> Pour réinstaller ou activer Antivirus Microsoft Defender sur Windows Server, effectuez les tâches suivantes : <br/>- [Définir DisableAntiSpyware sur false sur Windows Server](#set-disableantispyware-to-false-on-windows-server) (uniquement si nécessaire)<br/>- [Réinstaller Antivirus Microsoft Defender sur Windows Server 2016](#reinstall-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Réinstaller Antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure](#reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Définir Antivirus Microsoft Defender en mode passif sur Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si vous êtes en train de réinstaller ou de réactiver des Antivirus Microsoft Defender sur Windows Server, consultez Résolution des problèmes : Antivirus Microsoft Defender est [désinstallé](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)sur Windows Server .|
+|Windows serveurs|Sur Windows server, vous devez réinstaller Antivirus Microsoft Defender et le définir manuellement en mode passif. Sur Windows serveurs, lorsqu’un antivirus/logiciel anti-programme malveillant non Microsoft est installé, Antivirus Microsoft Defender ne peut pas s’exécuter avec la solution antivirus non Microsoft. Dans ce cas, Antivirus Microsoft Defender est désactivé ou désinstallé manuellement. <br/><br/> Pour réinstaller ou activer Antivirus Microsoft Defender sur Windows Server, effectuez les tâches suivantes : <br/>- [Définir DisableAntiSpyware sur false sur Windows Server](#set-disableantispyware-to-false-on-windows-server) (uniquement si nécessaire)<br/>- [Réinstaller Antivirus Microsoft Defender sur Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Réinstaller Antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Définir Antivirus Microsoft Defender en mode passif sur Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si vous êtes en train de réinstaller ou de réactiver des Antivirus Microsoft Defender sur Windows Server, consultez Résolution des problèmes : Antivirus Microsoft Defender est [désinstallé](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)sur Windows Server .|
 
 > [!TIP]
 > Pour en savoir plus sur Antivirus Microsoft Defender états avec la protection antivirus non-Microsoft, voir [Antivirus Microsoft Defender compatibilité.](microsoft-defender-antivirus-compatibility.md)
@@ -81,7 +81,7 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 > [!TIP]
 > Pour en savoir plus sur cette clé de Registre, voir [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-2016"></a>Réinstaller Antivirus Microsoft Defender sur Windows Server 2016
+### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Ré-activer Antivirus Microsoft Defender sur Windows Server 2016
 
 Vous pouvez utiliser l’utilitaire Command-Line protection contre les programmes [malveillants](command-line-arguments-microsoft-defender-antivirus.md) pour ré-activer Antivirus Microsoft Defender sur Windows Server 2016.
 
@@ -92,7 +92,7 @@ Vous pouvez utiliser l’utilitaire Command-Line protection contre les programme
 3. Redémarrez lʼappareil.
 
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Réinstaller Antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure
+### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Ré-activer Antivirus Microsoft Defender sur Windows Server, version 1803 ou ultérieure
 
 > [!IMPORTANT]
 > La procédure suivante s’applique uniquement aux points de terminaison ou appareils qui exécutent les versions de Windows :

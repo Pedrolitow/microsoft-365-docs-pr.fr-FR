@@ -28,11 +28,17 @@
   items:
     - name: Vue d’ensemble de la page Utilisateurs
       href: m365-lighthouse-users-page-overview.md
+    - name: Bloquer la connectez-vous de l’utilisateur
+      href: m365-lighthouse-block-user-signin.md
     - name: Gérer l’authentification multifacteur
       href: m365-lighthouse-manage-mfa.md
     - name: Gérer la réinitialisation du mot de passe libre-service
       href: m365-lighthouse-manage-sspr.md
-- name: Gérer les appareils
+    - name: Réinitialiser le mot de passe de l’utilisateur
+      href: m365-lighthouse-reset-user-password.md
+    - name: Rechercher des utilisateurs
+      href: m365-lighthouse-search-for-users.md
+- name: Gestion des appareils
   items:
     - name: Vue d’ensemble de la page de conformité des appareils
       href: m365-lighthouse-device-compliance-page-overview.md

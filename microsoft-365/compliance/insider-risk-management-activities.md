@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f3e87e7c804793603ac4b5af464c052abcc857e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 447628d7ff9014606c59a11b81f3846540d54665
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786937"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241235"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -94,7 +94,7 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 - **Heure détectée :** sélectionnez les dates de début et de fin de la création de l’alerte. Ce filtre recherche les alertes entre 00:00 UTC à la date de début et 00:00 UTC à la date de fin. Pour filtrer les alertes pour un jour spécifique, entrez la date du jour dans le champ **Date** de début et la date du jour suivant dans le champ **Date de** fin.
 - **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
-## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche dans le tableau de bord d’alerte
+## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche sur le tableau de bord d’alerte
 
 Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande **Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
@@ -104,7 +104,7 @@ Cela peut permettre aux analystes et aux enquêteurs de faire disparaître immé
 
 Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com) **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez  l’alerte (ou les alertes) avec l’état De révision des besoins que vous souhaitez ignorer.
 3. Dans la barre de commandes Alertes, sélectionnez **Ignorer les alertes.**
 4. Dans le volet Détails Ignorer les **alertes,** vous pouvez passer en revue les détails de l’utilisateur et de la stratégie associés aux alertes sélectionnées.
@@ -114,9 +114,9 @@ Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
 
 Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com) **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
-3. Dans la **page** des détails de l’alerte, vous pouvez passer en revue les informations sur l’alerte et vous pouvez confirmer l’alerte et créer un nouveau cas, confirmer l’alerte et l’ajouter à un cas existant, ou pour ignorer l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
+3. Dans la **page** détails de l’alerte, vous pouvez passer en revue les informations sur l’alerte et vous pouvez confirmer l’alerte et créer un nouveau cas, confirmer l’alerte et l’ajouter à un cas existant, ou pour faire disparaître l’alerte. Cette page inclut également l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme élevé, moyen ou faible. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
 
     Les onglets de la page **détails de l’alerte** fournissent plus d’informations pour l’alerte :
     - **Résumé :** Cet onglet contient des informations générales sur l’alerte.
@@ -154,7 +154,7 @@ Utilisez les filtres d’étendue activité et d’informations sur les risques 
 
 Pour utiliser **l’Explorateur d’activités,** complétez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com) **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet Détails des alertes,** **sélectionnez Ouvrir en vue étendue.**
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités.**
@@ -170,9 +170,9 @@ Lorsque vous sélectionnez les événements d’une activité dans la chronologi
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-Lorsque l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
+À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La** Gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com) **sélectionnez** l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le **tableau de bord Alertes,** sélectionnez l’alerte pour qui vous souhaitez confirmer et créer un cas.
 3. Dans le **volet d’informations Alertes,** sélectionnez **Actions** Confirmer les  >  **alertes & créer un cas.**
 4. Dans la **boîte de** dialogue Confirmer l’alerte et créer un cas de risque interne, entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que contributeurs et ajoutez des commentaires le cas échéant. Les commentaires sont automatiquement ajoutés au cas en tant que note de cas.
@@ -207,4 +207,4 @@ Les utilisateurs de l’espace de travail moderne ont souvent un large éventail
 
 - **Concentrez d’abord les efforts de l’analyste et des enquêteurs sur les alertes à risque le plus élevé.** Selon vos stratégies, vous pouvez capturer des activités et générer des alertes avec différents degrés d’impact potentiel sur vos efforts de prévention des risques. [Filtrez les alertes](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) par gravité et hiérarchisez *les alertes de gravité* élevée.
 - **Affectez des utilisateurs en tant qu’analystes et enquêteurs.** Le fait que l’utilisateur approprié soit affecté aux rôles appropriés est une partie importante du processus de révision des alertes de risque internes. Assurez-vous que vous avez affecté les utilisateurs appropriés aux groupes de rôles *Analystes* de gestion des risques internes et *Enquêteurs* de gestion des risques internes.  
-- **Utilisez les fonctionnalités de risques internes automatisés pour découvrir les activités** à risque le plus élevé. La détection de [séquences de](insider-risk-management-policies.md#sequence-detection-preview) gestion des risques internes et les fonctionnalités de détection [d’exfiltration](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) cumulée peuvent vous aider à découvrir rapidement les risques plus difficiles à trouver dans votre organisation. Pensez à affiner vos scores de [risque,](insider-risk-management-settings.md#indicators)les [exclusions](insider-risk-management-settings.md#file-type-exclusions)de types de fichiers, les domaines et les [paramètres](insider-risk-management-settings.md#domains)de seuil d’indicateur minimum pour vos stratégies. [](insider-risk-management-settings.md#indicator-level-settings-preview)
+- **Utilisez les fonctionnalités de risques internes automatisés pour découvrir les activités** à risque le plus élevé. La détection [](insider-risk-management-policies.md#sequence-detection-preview) de séquences de gestion des risques internes et les fonctionnalités de détection [d’exfiltration](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) cumulatives peuvent vous aider à détecter rapidement les risques plus difficiles à trouver dans votre organisation. Pensez à affiner vos scores de [risque,](insider-risk-management-settings.md#indicators)les [exclusions](insider-risk-management-settings.md#file-type-exclusions)de types de fichiers, les domaines et les [paramètres](insider-risk-management-settings.md#domains)de seuil d’indicateur minimum pour vos stratégies. [](insider-risk-management-settings.md#indicator-level-settings-preview)

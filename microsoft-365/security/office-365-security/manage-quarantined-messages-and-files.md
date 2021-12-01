@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b3192c7531006b16d238899fe6ccbaa5390d815
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b2600599dfd6d638736e29fef198913d32fcd60e
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60663666"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240995"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -33,7 +34,7 @@ ms.locfileid: "60663666"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
@@ -43,16 +44,16 @@ Par défaut, seuls les administrateurs peuvent gérer les messages mis en quaran
 
 Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine par la mise en quarantaine par les pièces jointes Coffre pour [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)et Microsoft Teams .
 
-Vous affichez et gérez les messages mis en quarantaine dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
+Vous affichez et gérez les messages mis en quarantaine dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP Autonome PowerShell pour les organisations sans Exchange Online boîtes aux lettres).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour ouvrir la page Web de **quarantaine** directement, utilisez <https://security.microsoft.com/quarantine>.
+- Pour ouvrir le portail Microsoft 365 Defender, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Pour ouvrir la page Web de **quarantaine** directement, utilisez <https://security.microsoft.com/quarantine>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - Pour prendre des mesures sur les messages mis en quarantaine pour tous les  utilisateurs, vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Administrateur de la mise en <sup>\*</sup> quarantaine.
+  - Pour prendre des mesures sur les messages mis en quarantaine pour tous les  utilisateurs, vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Administrateur de la mise en <sup>\*</sup> quarantaine. Pour envoyer des messages à Microsoft, vous devez être membre du groupe de rôles **Administrateur** de la sécurité.
   - Pour accéder en lecture seule aux messages mis en quarantaine pour  tous  les utilisateurs, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
@@ -69,7 +70,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 
 ### <a name="view-quarantined-email"></a>Afficher les e-mails mis en quarantaine
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Review** \> **Quarantine**.
 2. Dans la page **Quarantaine,** vérifiez que **l’onglet** Courrier est sélectionné.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour modifier les colonnes qui s'affichent. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
@@ -93,7 +94,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 4. Pour filtrer les résultats, cliquez sur **Filtrer**. Les filtres suivants sont disponibles dans le menu déroulant **Filtres** qui apparaît :
    - **ID du message** : l’identificateur global unique du message.
 
-     Par exemple, [](message-trace-scc.md) vous avez utilisé le suivi des messages pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. Assurez-vous d’inclure la valeur complète de l’ID du message, qui peut inclure des crochets ( \<\> ). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+     Par exemple, [](message-trace-scc.md) vous avez utilisé le suivi des messages pour rechercher un message qui a été envoyé à un utilisateur de votre organisation, et vous déterminez que le message a été mis en quarantaine au lieu d’être remis. Assurez-vous d’inclure la valeur complète de l’ID du message, qui peut inclure des crochets ( \<\> ). Par exemple : `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Adresse de l’expéditeur**
    - **Adresse du destinataire**
@@ -109,8 +110,8 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
      -  **Règle de transport** (règle de flux de courrier)
      - **E-mail de masse**
      - **Courrier indésirable**
-     - **Programmes** malveillants : stratégies anti-programme malveillant dans EOP ou Coffre stratégies de pièces jointes dans Defender pour Office 365. La **valeur Type de** stratégie indique quelle fonctionnalité a été utilisée.
-     - **Hameçonnage**: le verdict  de filtrage du courrier indésirable était le hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message ( paramètres d’usurpation d’identité ou [protection contre l’usurpation d’identité](configurer des [stratégies](set-up-anti-phishing-policies.md#spoof-settings) anti-hameçonnage.
+     - **Programmes** malveillants : stratégies anti-programme malveillant dans EOP ou Coffre pièces jointes dans Defender pour Office 365. La **valeur Type de** stratégie indique quelle fonctionnalité a été utilisée.
+     - **Hameçonnage**: le verdict  de filtrage du courrier indésirable était le hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message ([paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou [protection contre l’usurpation d’identité](set-up-anti-phishing-policies.
      - **Hameçonnage à haute fiabilité**
    - **Destinataire**: **tous les utilisateurs** ou **uniquement moi**. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
    - **Statut de la version** : Une des valeurs suivantes :
@@ -151,7 +152,7 @@ Lorsque vous sélectionnez un message mis en quarantaine dans la liste, les info
 - **Nom de la stratégie**
 - **Nombre de destinataires**
 - **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
-- **Balise de destinataire**: pour plus d’informations, voir [Balises](user-tags.md)utilisateur dans Microsoft Defender pour Office 365 .
+- **Balise destinataire**: pour plus d’informations, voir [Balises utilisateur dans Microsoft Defender pour Office 365](user-tags.md).
 - **Expires** : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
 - **Déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
 - **Pas encore déplacé pour** : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
@@ -170,8 +171,8 @@ Après avoir sélectionné un message en quarantaine dans la liste, les actions 
 ![Actions disponibles dans les détails du menu flottant d'un message en quarantaine.](../../media/quarantine-message-details-flyout-actions.png)
 
 - ![Icône de version d’e-mail](../../media/m365-cc-sc-check-mark-icon.png) **Publier un e-mail**: dans le volet volant qui s’affiche, <sup>\*</sup> configurez les options suivantes :
-  - **Ajouter un expéditeur à la** liste d’adresses de votre organisation : sélectionnez cette option pour empêcher la mise en quarantaine des messages de l’expéditeur.
-  - Sélectionnez l’une des options suivantes :
+  - **Ajouter un expéditeur à la** liste d’adresses de votre organisation : sélectionnez cette option pour empêcher la mise en quarantaine des messages provenant de l’expéditeur.
+  - Sélectionnez l’une des options suivantes :
     - **Publication pour tous les destinataires**
     - **Libérer des destinataires spécifiques**: sélectionnez les destinataires dans la zone **Destinataires** qui s’affiche
   - **Envoyez une copie de ce message à d’autres destinataires**: sélectionnez cette option pour entrer les adresses de messagerie des destinataires dans la zone **Destinataires** qui s’affiche.
@@ -191,6 +192,7 @@ Après avoir sélectionné un message en quarantaine dans la liste, les actions 
 
   - Vous ne pouvez pas envoyer un message au même destinataire plusieurs fois.
   - Seuls les destinataires qui n’ont pas reçu le message apparaissent dans la liste des destinataires potentiels.
+  - Seuls les membres du groupe de **rôles Administrateurs** de la sécurité peuvent voir et utiliser l’option Envoyer le message à Microsoft pour améliorer la détection **(faux positif)** et autoriser les **messages** comme ces options. 
 
 - ![Icône Partager un e-mail.](../../media/m365-cc-sc-share-email-icon.png) **Partager un** e-mail : dans le volant qui s’affiche, ajoutez un ou plusieurs destinataires pour recevoir une copie du message. Lorsque vous avez terminé, cliquez sur **Partager.**
 
@@ -279,7 +281,7 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Review** \> **Quarantine**.
 2. Dans la page **Quarantaine,** sélectionnez **l’onglet Fichiers** **(l’e-mail** est l’onglet par défaut).
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez **sur Personnaliser les colonnes** pour modifier les colonnes affichées. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> :

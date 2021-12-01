@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans la recherche.
-ms.openlocfilehash: 9209732925c87277755c89381791154bf9dbe953
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 1c43f55f399f69d58e05c073e688170d53480b42
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148901"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241163"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
-Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou avec des erreurs d’indexation est réindexé pour le rendre entièrement utilisable dans une recherche.  Ce processus de réindexation est appelé *indexation avancée.* Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
+Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou avec des erreurs d’indexation est réindexé. Ce processus de réindexation est appelé *indexation avancée.* Il existe de nombreuses raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
 
 Pour en savoir plus sur la prise en charge du traitement et les éléments partiellement indexés, voir :
 

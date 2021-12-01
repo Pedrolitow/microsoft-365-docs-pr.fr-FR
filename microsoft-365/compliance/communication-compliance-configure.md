@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 423fe7b0c608aae668706cc72e578271f19d2386
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072700"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240839"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -99,7 +99,7 @@ Choisissez parmi ces options de groupe de rôles lors de la configuration de la 
 
 Utilisez cette option pour affecter des utilisateurs à des groupes de rôles spécifiques afin de segmenter l’accès à la conformité des communications et les responsabilités entre les différents utilisateurs de votre organisation.
 
-1. Connectez-vous au Centre de conformité Microsoft 365 à l’aide des informations d’identification d’un compte d’administrateur dans votre Microsoft 365 organisation, puis allez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Autorisations.**</a>
+1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365, puis allez aux **autorisations.** </a>
 
 2. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
@@ -123,9 +123,9 @@ Pour plus d’informations sur les groupes de rôles et les [autorisations, voir
 
 La conformité des communications nécessite des journaux d’audit pour afficher les alertes et suivre les mesures correctives prises par les réviseurs. Les journaux d’audit sont un résumé de toutes les activités associées à une stratégie organisationnelle définie ou à chaque modification d’une stratégie de conformité des communications.
 
-L’audit est activé pour les Microsoft 365 par défaut. Certaines organisations peuvent avoir désactivé l’audit pour des raisons spécifiques. Si l’audit est désactivé pour votre organisation, c’est peut-être parce qu’un autre administrateur l’a désactivé. Nous vous recommandons de confirmer qu’il est acceptable de remettre l’audit en marche au terme de cette étape.
+L'audit est activé par défaut pour les organisations Microsoft 365. Certaines organisations peuvent avoir désactivé l'audit pour des raisons spécifiques. Si l'audit est désactivé pour votre organisation, c'est peut-être parce qu'un autre administrateur l'a désactivé. Nous vous recommandons de confirmer que vous pouvez réactiver l'audit lorsque vous terminez cette étape.
 
-Pour obtenir des instructions détaillées sur l’activer, voir Activer ou désactiver la recherche dans le journal [d’audit.](turn-audit-log-search-on-or-off.md) Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous ne devez faire cette action qu’une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)
+Pour obtenir des instructions détaillées sur l'activation de l'audit, consultez [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous n'avez à faire cette action qu'une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Étape 3 (facultative) : configurer des groupes pour la conformité des communications
 
@@ -136,7 +136,7 @@ Utilisez le graphique suivant pour vous aider à configurer les groupes de votre
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en place** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucun changement | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
 
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques et Teams conversations de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques et les conversations Teams envoyées à ce groupe, et non les messages électroniques et conversations individuels reçus par chaque membre du groupe.
 
@@ -193,7 +193,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 >[!TIP]  
 >Vous souhaitez consulter une walkthrough détaillée de la configuration d’une nouvelle stratégie de conformité des communications et de la correction d’une alerte ? Regardez cette vidéo de [15 minutes](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) pour voir une démonstration de la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les messages inappropriés, à examiner les violations potentielles et à résoudre les problèmes de conformité.
 
-1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">au Centre de conformité Microsoft 365</a> à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
+1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
 2. Dans la Centre de conformité Microsoft 365, sélectionnez **Conformité des communications.**
 
@@ -248,7 +248,7 @@ Si vous souhaitez avoir la possibilité de répondre à une alerte de stratégie
 
 Vous pouvez également choisir d’activer l’anonymisation pour les noms d’utilisateur affichés lors de l’étude des correspondances de stratégie et de l’action sur les messages.
 
-1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">au Centre de conformité Microsoft 365</a> à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
+1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
 2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications.**
 

@@ -42,3 +42,5 @@
       href: ./index.yml
     - name: Conformité Microsoft 365
       href: ../compliance/index.yml
+    - name: Gérer le contenu actif dans les documents Office
+      href: active-content-in-trusted-docs.md

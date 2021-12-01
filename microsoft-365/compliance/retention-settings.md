@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110546"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240815"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -218,7 +218,7 @@ Les emplacements dans les stratégies de rétention identifient des services Mic
 
 L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées sont également prises en charge.
 
-Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** .
+Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur vous précisant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
 
 Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](create-and-manage-inactive-mailboxes.md) peuvent être incluses ou non :
 
@@ -269,10 +269,10 @@ Lorsque vous configurez une stratégie de rétention qui utilise des étendues d
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 
-Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Cet emplacement inclut la boîte aux lettres de groupe et le site d’équipes Microsoft Office SharePoint Online.
+Pour conserver ou supprimer le contenu d’un groupe Microsoft 365 (anciennement groupe Office 365), utilisez l’emplacement **Groupes Microsoft 365**. Pour les stratégies de rétention, cet emplacement inclut la boîte aux lettres de groupe et SharePoint site d’équipes. Pour les étiquettes de rétention, cet emplacement inclut SharePoint site d’équipes uniquement.
 
 > [!NOTE]
-> Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. 
+> Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365.
 
 Bien que l’emplacement de la **messagerie Exchange** vous permette initialement de spécifier une boîte aux lettres de groupe à inclure ou à exclure, vous recevez une erreur indiquant que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange, lorsque vous essayez d’enregistrer la stratégie de rétention.
 
@@ -293,7 +293,7 @@ Lorsque vous configurez une stratégie d’application automatique qui utilise d
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Que se passe-t-il si un groupe Microsoft 365 est supprimé après l'application d'une stratégie
 
-Une fois que vous avez appliqué une stratégie de rétention à un groupe Microsoft 365 et que ce groupe est ensuite supprimé d'Azure Active Directory Domain Services :
+Lorsqu’une stratégie de rétention (étendue de stratégie statique ou adaptative) est appliquée à un groupe Microsoft 365, et que ce groupe est ensuite supprimé de Azure Active Directory :
 
 - Le site SharePoint connecté au groupe est conservé et continue d'être géré par la politique de rétention avec l'emplacement des **groupes Microsoft 365**. Le site reste accessible aux personnes qui y avaient accès avant la suppression du groupe, et toute nouvelle autorisation doit désormais être gérée via Microsoft Office SharePoint Online.
     

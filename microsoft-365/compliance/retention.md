@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110522"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241115"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -356,7 +356,7 @@ Pour appliquer les principes en action avec une série de questions Oui et Non, 
 
 Explication des quatre principes différents :
   
-1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci. Bien que ce principe garantisse que le contenu est conservé pour des raisons de conformité, le processus de suppression est toujours lancé et peut supprimer le contenu de la vue et des recherches utilisateur. Pour SharePoint, par exemple, un document passe du dossier d’origine au dossier Conservation des préservations. Toutefois, la suppression permanente est suspendue. Pour plus d’informations sur la façon dont et où le contenu est conservé, utilisez les liens suivants pour chaque charge de travail :
+1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci. Bien que ce principe garantit que le contenu est conservé pour des raisons de conformité, le processus de suppression peut toujours être initié (initié par l’utilisateur ou initié par le système) et par conséquent, peut supprimer le contenu de l’affichage principal des utilisateurs. Toutefois, la suppression permanente est suspendue. Pour plus d’informations sur la façon dont et où le contenu est conservé, utilisez les liens suivants pour chaque charge de travail :
     
     - [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Fonctionnement de la rétention avec Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)

@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a924e53142d6fce9bc66b9bb473e40ce480739cf
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3a25466b26145691d579403a4ccb00410298d4e4
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111477"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241019"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -269,7 +269,7 @@ Pour créer une stratégie de gestion des risques internes, vous pouvez utiliser
 
 Achevez les étapes suivantes pour créer une stratégie :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
@@ -305,7 +305,7 @@ Achevez les étapes suivantes pour créer une stratégie :
     >[!IMPORTANT]
     >Si vous ne parvenez pas à sélectionner un indicateur répertorié, c’est parce qu’il n’est pas activé pour votre organisation. Pour les rendre disponibles pour les sélectionner et les affecter à la stratégie, activez les indicateurs dans la gestion des risques internes  >  **Paramètres**  >  **les indicateurs de stratégie.**
 
-    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape XX sans définir d’attributs de stratégie.
+    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape 23 sans définir d’attributs de stratégie.
 
 14. Sélectionnez **Suivant** pour continuer.
 15. Si vous avez sélectionné les fuites de données *générales* ou les *fuites* de données par modèles utilisateur prioritaires et que vous avez sélectionné l’utilisateur effectue une **activité d’exfiltration** et les indicateurs associés, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant des événements que vous avez sélectionnés. Choisissez les **seuils par défaut d’utilisation (recommandé)** ou utilisez **des seuils personnalisés pour les événements déclencheurs.**
@@ -331,7 +331,7 @@ Pour mettre à jour une stratégie existante de gestion des risques internes, vo
 
 Finalisez les étapes suivantes pour gérer une stratégie existante :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez gérer.
 3. Sur la page détaillée de la stratégie, sélectionnez **Modifier une stratégie**.
 4. Dans l’Assistant stratégie, vous ne pouvez pas modifier ce qui suit :
@@ -362,7 +362,7 @@ Finalisez les étapes suivantes pour gérer une stratégie existante :
     >[!IMPORTANT]
     >Si vous ne parvenez pas à sélectionner un indicateur répertorié, c’est parce qu’il n’est pas activé pour votre organisation. Pour les rendre disponibles pour les sélectionner et les affecter à la stratégie, activez les indicateurs dans la gestion des risques internes  >  **Paramètres**  >  **les indicateurs de stratégie.**
 
-    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape XX sans définir d’attributs de stratégie.
+    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape 23 sans définir d’attributs de stratégie.
 
 14. Sélectionnez **Suivant** pour continuer.
 15. Si vous avez sélectionné les fuites de données *générales* ou les *fuites* de données par modèles utilisateur prioritaires et que vous avez sélectionné l’utilisateur effectue une **activité d’exfiltration** et les indicateurs associés, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant des événements que vous avez sélectionnés. Choisissez les **seuils par défaut d’utilisation (recommandé)** ou utilisez **des seuils personnalisés pour les événements déclencheurs.**
@@ -388,7 +388,7 @@ Vous devrez peut-être créer une stratégie similaire à une stratégie existan
 
 Finalisez les étapes suivantes pour copier une stratégie existante :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez l’onglet Stratégies pour la gestion des risques internes.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez copier.
 3. Sur la page détaillée de la stratégie, sélectionnez Copier.
 4. Dans l’Assistant stratégie, nommez la nouvelle stratégie, puis mettez à jour sa configuration, le cas échéant.
@@ -408,7 +408,7 @@ Certains scénarios dans lesquels vous souhaitez commencer immédiatement à att
 
 Pour commencer manuellement l’activité d’attribution de scores pour les utilisateur dans au moins une stratégie de gestion des risques internes, finalisez les étapes suivantes :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la ou les stratégies auxquelles vous souhaitez ajouter des utilisateurs.
 3. Sélectionnez **Démarrer l’activité d’attribution de scores des utilisateurs**.
 4. Dans le **champ Raison** du volet **Ajouter des utilisateurs à plusieurs stratégies**, ajoutez une raison pour l’ajout des utilisateurs.
@@ -435,7 +435,7 @@ Pour arrêter l’attribution de score aux utilisateurs dans une stratégie, voi
 
 Pour supprimer une stratégie de gestion des risques internes existante, finalisez les étapes suivantes :
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Dans le tableau de bord des stratégies, sélectionnez la stratégie que vous souhaitez supprimer.
 3. Sélectionnez **Supprimer** sur la barre d’outils du tableau de bord.
 4. Dans la boîte de dialogue **Supprimer**, sélectionnez **Oui** pour supprimer la stratégie ou **Annuler** pour fermer la boîte de dialogue.

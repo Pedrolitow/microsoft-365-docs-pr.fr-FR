@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cf386bc306bf5ab3b509a6d34a020fae5ddfb2c9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e07c12ec434935b2e91e7248f1f1d16ea4074c8
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109994"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241175"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -49,7 +49,7 @@ Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez e
 
 Les actions recommandées peuvent aider votre organisation à démarrer rapidement et à utiliser au mieux les fonctionnalités de gestion des risques internes. Incluses dans la **page** Vue d’ensemble, les actions recommandées vous aident à suivre les étapes de configuration et de déploiement des stratégies et à prendre des mesures d’investigation pour les actions des utilisateurs qui génèrent des alertes à partir de correspondances de stratégie.
 
-![Actions recommandées pour la gestion des risques internes.](../media/insider-risk-recommended-actions.png)
+![Actions recommandées par la gestion des risques internes.](../media/insider-risk-recommended-actions.png)
 
 Les recommandations suivantes sont disponibles pour vous aider à démarrer ou à optimiser votre configuration de gestion des risques internes :
 
@@ -70,9 +70,9 @@ Chaque action recommandée incluse dans cette expérience possède quatre attrib
 - **Obligatoire ou facultatif :** si l’action recommandée est requise ou facultative pour que les fonctionnalités de gestion des risques internes fonctionnent comme prévu.
 - **Durée d’évaluation :** durée estimée de l’action recommandée en minutes.
 
-Sélectionnez une recommandation dans la liste pour commencer à configurer la gestion des risques internes. Chaque action recommandée vous guide à travers les activités requises pour la recommandation, y compris les exigences, ce à quoi vous devez vous attendre et l’impact de la configuration de la fonctionnalité dans votre organisation.   Chaque action recommandée est automatiquement marquée comme terminée lorsqu’elle est configurée ou vous devez sélectionner manuellement l’action comme étant terminée lorsqu’elle est configurée.
+Sélectionnez une recommandation dans la liste pour commencer à configurer la gestion des risques internes. Chaque action recommandée vous guide à travers les activités requises pour la recommandation, y compris les exigences, à quoi s'attendre et l'impact de la configuration de la fonctionnalité dans votre organisation.   Chaque action recommandée est automatiquement marquée comme terminée lorsqu’elle est configurée ou vous devez sélectionner manuellement l’action comme étant terminée lorsqu’elle est configurée.
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Étape 1 (obligatoire) : activer les autorisations pour la gestion des risques internes
+## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Étape 1 (obligatoire) : Activer les autorisations pour la gestion des risques internes
 
 > [!IMPORTANT]
 > Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
@@ -99,7 +99,7 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 
 Pour ajouter des utilisateurs à un groupe de rôles de gestion des risques internes, complétez les étapes suivantes :
 
-1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
+1. Connectez-vous [Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
 2. Dans le Centre &amp; de conformité de sécurité, allez à **Autorisations.** Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
@@ -117,19 +117,19 @@ Pour ajouter des utilisateurs à un groupe de rôles de gestion des risques inte
 
 La gestion des risques internes utilise Microsoft 365 journaux d’audit pour les informations et les activités utilisateur identifiées dans les stratégies et analyses. Les Microsoft 365 d’audit sont un résumé de toutes les activités au sein de votre organisation et les stratégies de gestion des risques internes peuvent utiliser ces activités pour générer des informations sur les stratégies.
 
-L’audit est activé pour les Microsoft 365 par défaut. Certaines organisations peuvent avoir désactivé l’audit pour des raisons spécifiques. Si l’audit est désactivé pour votre organisation, c’est peut-être parce qu’un autre administrateur l’a désactivé. Nous vous recommandons de confirmer qu’il est acceptable de remettre l’audit en marche au terme de cette étape.
+L'audit est activé par défaut pour les organisations Microsoft 365. Certaines organisations peuvent avoir désactivé l'audit pour des raisons spécifiques. Si l'audit est désactivé pour votre organisation, c'est peut-être parce qu'un autre administrateur l'a désactivé. Nous vous recommandons de confirmer que vous pouvez réactiver l'audit lorsque vous terminez cette étape.
 
-Pour obtenir des instructions détaillées sur l’activer, voir Activer ou désactiver la recherche dans le journal [d’audit.](turn-audit-log-search-on-or-off.md) Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous ne devez faire cette action qu’une seule fois. Pour plus d’informations sur l’utilisation Microsoft 365 journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)
+Pour obtenir des instructions détaillées sur l'activation de l'audit, consultez [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous n'avez à faire cette action qu'une seule fois. Pour plus d'informations sur l'utilisation du journal d'audit Microsoft 365, consultez [Rechercher dans le journal d'audit](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-enable-and-view-insider-risk-analytics-insights"></a>Étape 3 (facultative) : activer et afficher les informations d’analyse des risques internes
 
-L’analyse de la gestion des risques internes vous permet d’évaluer les risques internes potentiels dans votre organisation sans configurer de stratégies de risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Cette évaluation peut également vous aider à déterminer les besoins en matière de licences supplémentaires ou d’optimisation future des stratégies existantes. Les résultats de l’analyse peuvent prendre jusqu’à 48 heures avant que les informations soient disponibles en tant que rapports à réviser. Pour en savoir plus sur les analyses, voir Paramètres de gestion des risques internes : Analyse [(prévisualisation)](insider-risk-management-settings.md#analytics) et consultez la vidéo [Analyse](https://www.youtube.com/watch?v=5c0P5MCXNXk) de la gestion des risques internes pour mieux comprendre comment l’analyse peut aider à accélérer l’identification des risques internes potentiels et vous aider à prendre rapidement des mesures.
+L'analyse de la gestion des risques d'initiés vous permet d'effectuer une évaluation des risques d'initiés potentiels dans votre organisation sans configurer de politiques de risque d'initiés. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Cette évaluation peut également vous aider à déterminer les besoins en matière de licences supplémentaires ou d’optimisation future des stratégies existantes. Les résultats de l'analyse analytique peuvent prendre jusqu'à 48 heures avant que les informations ne soient disponibles sous forme de rapports pour examen. Pour en savoir plus sur les analyses, voir Paramètres de gestion des risques internes : Analyse [(prévisualisation)](insider-risk-management-settings.md#analytics) et consultez la vidéo [Analyse](https://www.youtube.com/watch?v=5c0P5MCXNXk) de la gestion des risques internes pour mieux comprendre comment l’analyse peut aider à accélérer l’identification des risques internes potentiels et vous aider à prendre rapidement des mesures.
 
 Pour activer l’analyse des risques internes, vous devez être membre du groupe de rôles d’administrateur de gestion des risques *internes,* d’administrateur de gestion des risques internes ou Microsoft 365 *d’administrateur* global.
 
 Pour activer l’analyse des risques internes, vous suivrez les étapes suivantes :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **La gestion des risques internes.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La gestion des risques internes.**
 2. Sélectionnez **Exécuter l’analyse** dans **l’analyse des risques** internes dans la carte de votre organisation, sous l’onglet Vue d’ensemble de la gestion **des** risques internes. Cette action permet d’analyser l’analyse de votre organisation. Vous pouvez également activer l’analyse dans votre organisation en naviguant vers l’analyse des **paramètres** de risque internes  >  **(prévisualisation)** et en activant **l’analyse de l’activité** utilisateur de votre client pour identifier les risques internes potentiels.
 3. Dans le **volet Détails de l’analyse,** **sélectionnez Exécuter l’analyse pour démarrer l’analyse pour votre organisation.** Les résultats de l’analyse peuvent prendre jusqu’à 24 heures avant que les informations soient disponibles en tant que rapports à réviser.
 
@@ -217,7 +217,7 @@ Consultez [l’article](/windows/security/threat-protection/microsoft-defender-a
 
 Avant de configurer une stratégie, définissez les paramètres de risque internes suivants :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>sélectionnez Gestion des risques internes et sélectionnez **Paramètres** des risques internes dans le coin supérieur droit de n’importe quelle page. 
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez Gestion des risques internes et sélectionnez **Paramètres** des risques internes dans le coin supérieur droit de n’importe quelle page. 
 2. Dans la page **Confidentialité,** sélectionnez un paramètre de confidentialité pour afficher les noms d’utilisateur des alertes de stratégie.
 3. Dans la page Indicateurs, sélectionnez les indicateurs d’alerte que vous souhaitez appliquer à toutes les **stratégies** de risque internes.
 
@@ -242,7 +242,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque intern
 
 Les stratégies de gestion des risques internes incluent les utilisateurs attribués et définissent quels types d’indicateurs de risque sont configurés pour les alertes. Pour que les activités puissent déclencher des alertes, une stratégie doit être configurée. Utilisez l’Assistant Stratégie pour créer des stratégies de gestion des risques internes.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
+1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **Gestion des risques internes**, puis sélectionnez l’onglet **Stratégies**.
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
@@ -278,7 +278,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
     >[!IMPORTANT]
     >Si vous ne parvenez pas à sélectionner un indicateur répertorié, c’est parce qu’il n’est pas activé pour votre organisation. Pour les rendre disponibles pour les sélectionner et les affecter à la stratégie, activez les indicateurs dans la gestion des risques internes  >  **Paramètres**  >  **les indicateurs de stratégie.**
 
-    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape XX sans définir d’attributs de stratégie.
+    Si vous avez sélectionné d’autres modèles de stratégie, les événements de déclenchement personnalisés ne sont pas pris en charge. Les événements de déclenchement de stratégie intégrés s’appliquent et vous allez passer à l’étape 23 sans définir d’attributs de stratégie.
 
 14. Sélectionnez **Suivant** pour continuer.
 15. Si vous avez sélectionné les fuites de données *générales* ou les *fuites* de données par modèles utilisateur prioritaires et que vous avez sélectionné l’utilisateur effectue une **activité d’exfiltration** et les indicateurs associés, vous pouvez choisir des seuils personnalisés ou par défaut pour l’indicateur déclenchant des événements que vous avez sélectionnés. Choisissez les **seuils par défaut d’utilisation (recommandé)** ou utilisez **des seuils personnalisés pour les événements déclencheurs.**
