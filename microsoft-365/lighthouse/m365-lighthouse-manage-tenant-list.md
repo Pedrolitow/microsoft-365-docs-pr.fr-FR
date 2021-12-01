@@ -16,14 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment gérer votre liste de clients.
-ms.openlocfilehash: 458a0fadfa883cd9f57a12c330af731c91c5aa01
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123281"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254392"
 ---
 # <a name="manage-your-tenant-list"></a>Gérer votre liste de locataires
+
+> [!NOTE]
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Pour vous aider à gérer votre liste de locataires dans Microsoft 365 Lighthouse, vous pouvez appliquer des balises personnalisées à vos locataires. Ces balises peuvent être utilisées pour organiser vos clients et peuvent également vous aider à filtrer les vues et informations existantes disponibles pour les ensembles pertinents de clients. Vous pouvez gérer vos balises à partir de la page Locataires. Une fois créé et affecté, vous pouvez filtrer les données dans les pages Clients, Utilisateurs, Appareils, Gestion des menaces et Windows 365 en fonction d’une balise.
 
@@ -103,7 +106,7 @@ Les balises actuellement affectées ont une coche à droite du nom. Vous pouvez 
 
 Une fois que vous avez créé et affecté des balises, vous pouvez les utiliser pour filtrer vos locataires. Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenant filter. Vous pouvez créer de nouvelles balises pour prendre en charge des affichages spécifiques en fonction de chaque page.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)  

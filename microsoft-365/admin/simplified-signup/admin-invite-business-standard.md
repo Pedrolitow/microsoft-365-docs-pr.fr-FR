@@ -14,14 +14,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
-ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151793"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254416"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Inviter des utilisateurs à Microsoft 365 Business Standard (administrateur)
+
+> [!IMPORTANT]
+> Ces étapes s’appliquent Microsoft 365 Business Standard et Applications Microsoft 365 pour les PME.
 
 En tant qu’administrateur d’un abonnement Microsoft 365 Business Standard, vous pouvez inviter vos collègues et collègues à partager et utiliser votre abonnement Microsoft 365 entreprise. Lorsque vous invitez vos collègues et collègues à votre abonnement, vous partagez toutes les fonctionnalités et services suivants :
 
@@ -31,20 +34,20 @@ En tant qu’administrateur d’un abonnement Microsoft 365 Business Standard, v
 - Utilisez une licence pour couvrir les applications Office entièrement installées sur cinq appareils mobiles, cinq tablettes et cinq PC ou Mac par utilisateur.
 - Obtenez de l’aide à tout moment avec le support web et téléphonique 24 heures sur 24 de Microsoft.
 
-> [!IMPORTANT]
+> [!Note]
 > La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Assurez-vous que vous êtes déjà inscrit à [Microsoft 365 Business Standard](signup-business-standard.md) et que vous [avez installé votre organisation Business Standard.](../setup/setup-business-standard.md) Une fois ces étapes terminées, vous pouvez partager une invitation avec vos utilisateurs.
+Assurez-vous que vous êtes déjà inscrit à [Microsoft 365 Business Standard](signup-business-standard.md) ou Applications Microsoft 365 pour les PME. Et assurez-vous que vous avez déjà installé votre organisation [Business Standard](../setup/setup-business-standard.md) ou [Applications Microsoft 365 pour les PME](../setup/setup-apps-for-business.md). Une fois ces étapes terminées, vous pouvez partager une invitation avec vos utilisateurs.
 
 ## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>Partager une invitation à un abonnement Microsoft 365 Business Standard abonnement
 
-1. Dans la Centre d'administration Microsoft 365, **sélectionnez Inviter des personnes à Microsoft 365**.
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Inviter des personnes à Microsoft 365**.
 
 2. Ajoutez les noms d’utilisateur et les adresses e-mail pour les personnes que vous souhaitez inviter et choisissez **Envoyer.** Un e-mail d’invitation est envoyé à tous les utilisateurs que vous avez sélectionnés pour ajouter leurs informations de compte d’utilisateur Microsoft 365.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par courrier électronique que vous avez envoyée sur le partage de Microsoft 365 Business Standard abonnement.
 
@@ -53,7 +56,7 @@ Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par co
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>J’ai partagé une invitation par courrier électronique, mais l’utilisateur n’a pas reçu l’e-mail ?
 
 - Demandez à l’utilisateur de vérifier son dossier de courrier indésirable.
-- Renvoyez le message d’invitation dans le Centre d'administration Microsoft 365. Dans le Centre d’administration, pointez sur l’utilisateur et sélectionnez l’action pour renvoyer l’invitation par courrier électronique.
+- Renvoyer l’e-mail d’invitation dans le Centre d'administration Microsoft 365. Dans le Centre d’administration, pointez sur l’utilisateur et sélectionnez l’action pour renvoyer l’invitation par courrier électronique.
 - Assurez-vous que l’adresse e-mail que vous avez entrée pour votre utilisateur est correcte.
 
 ### <a name="how-can-i-help-an-employee-join-my-business-and-leave-another-business"></a>Comment aider un employé à rejoindre mon entreprise et à quitter une autre entreprise ?
@@ -88,4 +91,4 @@ En fonction de la façon dont vous et d’autres utilisateurs enregistrez des do
 
 [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 
-[Accepter l’invitation à Microsoft 365 Business Standard (utilisateur)](user-invite-business-standard.md)
+[Accepter l’invitation Microsoft 365 Business Standard (utilisateur)](user-invite-business-standard.md)
