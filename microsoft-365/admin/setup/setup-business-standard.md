@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169346"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254440"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 
@@ -166,10 +166,18 @@ Microsoft 365 n'inclut pas de site web public pour votre entreprise. Si vous vou
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-## <a name="related-content"></a>Contenu associé
+## <a name="invite-users-to-join-your-subscription-and-organization"></a>Inviter des utilisateurs à rejoindre votre abonnement et votre organisation
+
+Une fois que vous avez configuré votre organisation, vous pouvez inviter d’autres utilisateurs à rejoindre votre abonnement d’entreprise Microsoft 365. Ils auront accès à toutes les fonctionnalités de l’abonnement.
+
+[Inviter des utilisateurs dans mon abonnement](../simplified-signup/admin-invite-business-standard.md)
+
+Informez vos utilisateurs qu’ils peuvent suivre la procédure des articles ci-dessous pour rejoindre votre organisation et votre abonnement.
+
+- [Accepter une invitation par e-mail](../simplified-signup/user-invite-business-standard.md)
+
+- [Accepter une invitation par e-mail à l’aide d’Outlook, de Yahoo, de Gmail ou d’un autre compte (utilisateur)](../simplified-signup/user-invite-msa-nodomain-join.md)
+
+## <a name="related-topics"></a>Rubriques connexes
 
 [Migrer des données vers mon abonnement Microsoft 365 Business Standard abonnement](../simplified-signup/migrate-data-business-standard.md)
-
-[S’inscrire à un abonnement Microsoft 365 Business Standard abonnement](../simplified-signup/signup-business-standard.md)
-
-[Accepter une invitation à un abonnement Microsoft 365 Business Standard client (utilisateur)](../simplified-signup/user-invite-business-standard.md)

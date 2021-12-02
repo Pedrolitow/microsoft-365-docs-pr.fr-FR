@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2a21ba525fa743b8a9105e571717d80d4eb42258
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188732"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254380"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 
@@ -115,4 +115,55 @@ Pour explorer Microsoft 365 et découvrir comment utiliser les différentes app
 
 ## <a name="add-a-custom-domain"></a>Ajouter un domaine personnalisé
 
-Pendant l’inscription, vous avez choisi un domaine .onmicrosoft. Vous pouvez également ajouter un domaine personnalisé, tel que *contoso.com*, à votre compte pour personnaliser les messages. Pour plus d’informations sur ce processus, consultez [Ajouter un domaine](add-domain.md).
+Vous pouvez également ajouter un domaine personnalisé, tel que *contoso.com*, à votre compte pour personnaliser les e-mails si vous ne l’avez pas déjà fait. Pour plus d’informations sur ce processus, consultez [Ajouter un domaine](add-domain.md).
+
+## <a name="finish-setting-up"></a>Terminez la configuration
+
+Suivez les étapes ci-dessous pour configurer Outlook et OneDrive.
+
+### <a name="step-set-up-outlook-for-email"></a>Étape : configurer Outlook pour le courrier électronique
+
+1. Dans le menu Démarrer de Windows, recherchez Outlook, puis sélectionnez-le.
+
+    (Si vous utilisez un Mac, ouvrez Outlook à partir de la barre d’outils ou recherchez-le à l’aide du Finder).
+
+    Si vous venez d’installer Outlook, sur la page Accueil, sélectionnez **Suivant**.
+
+2. Choisissez **Fichier** \> **Informations** \> **Ajouter un compte**.
+
+3. Entrez votre adresse e-mail Microsoft , puis sélectionnez **Se connecter**.
+
+## <a name="watch-set-up-outlook-for-email"></a>Observation : Configurer Outlook pour l’e-mail
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
+  
+Pour plus d’informations, voir [Configurer Outlook pour le courrier](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
+  
+### <a name="import-email"></a>Importer le courrier électronique
+
+Si vous utilisiez Outlook avec un autre compte de courrier, vous pouvez importer vos e-mails, votre calendrier et vos contacts antérieurs dans votre nouveau compte Microsoft.
+  
+1. **Exporter vos anciens e-mails**
+
+    Dans Outlook, choisissez **Fichier** \> **Ouvrir &amp; Exporter** \> **Importer/Exporter**.
+
+    Sélectionnez **Exporter vers un fichier**, puis suivez la procédure pour exporter votre fichier de données Outlook (.pst) et tous les sous-dossiers.
+
+2. **Importer vos anciens e-mails**
+
+    Dans Outlook, choisissez de nouveau **Fichier** \> **Ouvrir &amp; Exporter** \> **Importer/Exporter**.
+
+    Cette fois, sélectionnez **Importer à partir d’un autre programme ou fichier** et suivez la procédure pour importer le fichier de sauvegarde que vous avez créé lors de l’exportation de vos anciens e-mails.
+
+## <a name="watch-import-and-redirect-email"></a>Observation : Importer et rediriger un e-mail
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
+  
+Pour plus d’informations, voir [Importer le courrier avec Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
+
+Vous pouvez également utiliser le Centre d’administration Exchange pour importer le courrier électronique de tout le monde. Pour obtenir plus d'informations, consultez l'article [Migrer plusieurs comptes de messagerie](/Exchange/mailbox-migration/mailbox-migration).
+
+## <a name="set-up-onedrive-for-business"></a>Configurer OneDrive Entreprise
+
+Sélectionnez l'icône du cloud OneDrive dans votre barre des tâches et suivez les étapes pour déplacer vos fichiers vers votre nouveau dossier OneDrive Entreprise. Sélectionnez **Suivant** pour configurer Microsoft Teams.
+
