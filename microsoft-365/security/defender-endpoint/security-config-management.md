@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a890bf27cb24418faef52a56a29c902ad79fd374
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a8a57b14480c45ddbc154d71bc4f2ded315c83ae
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786145"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262852"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Gérer les paramètres de configuration de Microsoft Defender pour point de terminaison sur les appareils avec Microsoft Endpoint Manager
 
@@ -38,7 +38,7 @@ ms.locfileid: "60786145"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
 La gestion de la sécurité pour Microsoft Defender pour point de terminaison est une fonctionnalité qui permet aux appareils qui ne sont pas gérés par un Microsoft Endpoint Manager, Microsoft Intune ou Microsoft Endpoint Configuration Manager, de recevoir des configurations de sécurité pour Microsoft Defender. directement à partir Endpoint Manager.
@@ -66,7 +66,7 @@ Utilisez les étapes suivantes pour vérifier que vos points de terminaison ont 
 
 1.  Vérifiez que l’appareil apparaît dans la section Inventaire des appareils de [Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  Dans le [portail Azure Active Directory,](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers)vérifiez que l’appareil a été correctement inscrit.
+2.  Dans le [portail Azure Active Directory,](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)vérifiez que l’appareil a été correctement inscrit.
 
 3.  Dans le [Microsoft Endpoint Manager d’administration,](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)vérifiez que l’appareil a été correctement inscrit en le vérifiant dans la section Appareils **> tous les** appareils.
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 332a2b14bb74363091df8fc18423c347d1d8c6fb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60663027"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262790"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,9 +35,12 @@ Le déploiement centralisé est le moyen recommandé et le plus riche en fonctio
 
 Une déploiement centralisé offre les avantages suivants :
 
-- Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
+- Un administrateur général ou un administrateur Exchange peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
+- Exchange administrateur peut déployer le addin uniquement si la propriété Inscription de l’application est définie sur true dans Azure Active Directory centre d’administration, comme illustré dans l’image ci-dessous.
 
-- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+  ![image](../../media/AAD.png)
+
+- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
 
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -47,8 +50,8 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et soient inscrits à Office à l’aide de leur ID d’organisation) et qu’ils ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
-Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité [de déploiement centralisé.](#centralized-deployment-compatibility-checker)
+Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont Office à l’aide de leur ID d’organisation) et Exchange Online boîtes aux lettres Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
+Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
@@ -60,7 +63,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Déploiement de composants COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO) de composants.
 - Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online telles que les S SKUs : Microsoft 365 Apps for Business et Microsoft 365 Apps for Enterprise.
 
-### <a name="office-requirements"></a>Office Conditions requises
+### <a name="office-requirements"></a>Office requise
 
 - Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3).
@@ -92,7 +95,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 1. Démarrez une fenêtre avec PowerShell.exe élevée.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker

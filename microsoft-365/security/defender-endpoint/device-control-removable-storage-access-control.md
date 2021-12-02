@@ -14,21 +14,21 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 11/02/2021
-ms.openlocfilehash: c65c9584626c85a7c91a6d410af3a7ab5fc01aa6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.date: 12/01/2021
+ms.openlocfilehash: 13f8345df5c8ad056569c1e929b00c28d943cc76
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169073"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262810"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> La gestion de la stratégie de groupe de ce produit est désormais généralement disponible (4.18.2106) : consultez le blog Tech Community : Protéger votre stockage et votre imprimante amovibles avec Microsoft Defender pour [endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
+> La gestion des stratégies de groupe de ce produit est désormais généralement disponible (4.18.2106) : consultez le blog Tech Community : Protéger votre stockage amovible et votre imprimante avec Microsoft Defender pour le point de [terminaison](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
 
 
 Microsoft Defender for Endpoint Device Control Removable Stockage Access Control vous permet d’accomplir la tâche suivante :
@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 |Privilège|Autorisation|
 |---|---|
-|Access|Lecture, Écriture, Exécution|
+|Accès|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
 |Prise en charge du programme CSP|Oui|
 |Prise en charge des GPO|Oui|

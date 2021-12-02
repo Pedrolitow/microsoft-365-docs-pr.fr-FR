@@ -3,7 +3,7 @@ title: Prise en charge D’ipv6 dans les services Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 07/28/2021
+ms.date: 12/01/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,20 +18,20 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : Décrit la prise en charge d’IPv6 dans Microsoft 365 composants et dans Microsoft 365 offres gouvernementales.'
-ms.openlocfilehash: 07e79cdc5bbed28684f9c39c0226a2e40c658d90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d798f741caa1a9a2df69e1c4df1d45067d15ce3
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200112"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262771"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Prise en charge D’ipv6 dans les services Microsoft 365
 
-Microsoft 365 prend en charge IPv6 et IPv4 ; toutefois, toutes les Microsoft 365 fonctionnalités sont entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Microsoft 365. Si vous filtrez votre trafic sortant vers Microsoft 365, la liste complète des adresses IPv6 qui sont pris en charge par Microsoft 365 se trouve dans l’article Microsoft 365 URL et [plages d’adresses IP.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Microsoft 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
+Microsoft 365 prend en charge IPv6 et IPv4 ; toutefois, toutes les fonctionnalités Microsoft 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Microsoft 365. Si vous filtrez votre trafic sortant vers Microsoft 365, la liste complète des adresses IPv6 qui sont pris en charge par Microsoft 365 se trouve dans l’article Microsoft 365 URL et [plages d’adresses IP.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Microsoft 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
 
 > [!NOTE]
 > Permettre aux clients d’Microsoft 365 services SaaS à partir de n’importe quel emplacement et n’importe quel appareil est une priorité pour Microsoft. Cela inclut l’autoriser à se connecter et à utiliser des Microsoft 365 à partir de clients et de systèmes d’information IPv6 activés et IPv6 uniquement. Il inclut également la possibilité pour les clients du secteur gouvernemental de respecter les engagements IPv6 sur leurs réseaux tout en continuant à consommer Microsoft 365 scénarios de productivité sans interruption.  
-> Cet article fournit la liste des services SaaS Microsoft 365 qui autorisent actuellement la connectivité IPv6 directe. L’étendue des services permettant une connectivité IPv6 directe devrait continuer à se développer. Microsoft 365 services non explicitement mentionnés pour la prise en charge IPv6 directe, pour inclure les services d’authentification Azure Active Directory (AAD), doivent être considérés comme nécessitant la connexion DNS64/NAT64 à partir des clients et environnements IPv6 uniquement.  Cela est en adéquation avec l’intention actuellement décrite dans la documentation USGv6 NIST existante : les exigences de capacité du mécanisme de transition dans la composition spéciale [NIST 500-267A Revision 1](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.500-267Ar1.pdf) NAT64/DNS64 sont des technologies acceptables à utiliser.
+> Cet article fournit la liste des services SaaS Microsoft 365 qui autorisent actuellement la connectivité IPv6 directe. L’étendue des services permettant une connectivité IPv6 directe devrait continuer à se développer. Microsoft 365 services non explicitement mentionnés pour la prise en charge IPv6 directe, pour inclure les services d’authentification Azure Active Directory (AAD), doivent être considérés comme nécessitant la connexion DNS64/NAT64 à partir des clients et environnements IPv6 uniquement.  Cela est en adéquation avec l’intention actuellement décrite dans la documentation USGv6 NIST existante : les exigences en matière de fonctionnalités du mécanisme de transition dans la composition spéciale [NIST 500-267A Revision 1](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.500-267Ar1.pdf) NAT64/DNS64 sont des technologies acceptables à utiliser.
 > - Prise en charge de NAT64 pour le mécanisme de transition NAT64 [RFC6146 NAT64](https://datatracker.ietf.org/doc/html/rfc6146) avec état : adresse réseau et traduction de protocole des clients IPv6 vers les serveurs IPv4
 > - Prise en charge DNS64 du mécanisme de transition DNS64. [RFC6147](https://datatracker.ietf.org/doc/html/rfc6147) DNS64 : extensions DNS pour la traduction d’adresses réseau des clients IPv6 vers le serveur IPv4
 
@@ -40,9 +40,9 @@ Microsoft 365 prend en charge IPv6 et IPv4 ; toutefois, toutes les Microsoft 365
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online et IPv6
 
-Si le programme que vous utilisez pour vous connecter à Exchange Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications à Exchange Online, utilisez les plages d’adresses IP dans Microsoft 365 URL et les [plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Si le programme que vous utilisez pour vous connecter à Exchange Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications à Exchange Online, utilisez les plages d’adresses IP dans Microsoft 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
-### <a name="sharepoint-online-and-ipv6"></a>SharePoint En ligne et IPv6
+### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online et IPv6
 
  **Microsoft 365 gouvernement G1/G3/G4/K1** Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il tentera d’utiliser IPv6 par défaut.
   
@@ -56,9 +56,9 @@ Si le programme que vous utilisez pour vous connecter à SharePoint Online prend
 
 Sachez qu’IPv6 n’est pas pris en Skype Entreprise et ne peut plus être activé.
 
-### <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams et IPV6
+### <a name="microsoft-teams-sip-gateway-and-ipv6"></a>Microsoft Teams, passerelle SIP et IPV6
 
-Microsoft Teams Le routage direct prend uniquement en charge IPv4. Le service Microsoft Teams et le client sont tous deux en charge IPv4 et IPv6. Si vous souhaitez contrôler les communications à Microsoft Teams, utilisez les plages d’adresses IP dans Microsoft 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Microsoft Teams routage direct et la passerelle SIP ne prend en charge que IPv4. Le service Microsoft Teams et le client sont tous deux en charge IPv4 et IPv6. Si vous souhaitez contrôler les communications à Microsoft Teams, utilisez les plages d’adresses IP dans Microsoft 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection et IPv6
 
@@ -66,11 +66,11 @@ Exchange Online Protection (EOP) prend en charge IPv6 si la transmission se prod
   
 ### <a name="ipv6-support-for-microsoft-365-government-offerings"></a>Prise en charge d’IPv6 Microsoft 365 offres gouvernementales
 
-Microsoft 365 La prise en charge d’IPv6 pour les offres gouvernementales est conforme à la Office de gestion et de budget (OMB) Premier responsable des responsables de l’information des services et agences exécutifs, ainsi qu’au programme d’adoption du protocole IPv6 (Internet Protocol Version 6) par le gouvernement fédéral. [Microsoft Microsoft 365 pour le gouvernement](https://go.microsoft.com/fwlink/p/?LinkId=325414) est un service multi-clients qui stocke les données du gouvernement américain dans un cloud communautaire séparé. Comme d’autres Microsoft 365, il fournit des services de productivité et de collaboration, notamment Exchange Online, Skype Entreprise, SharePoint Online et Applications Microsoft 365 pour les grandes entreprises. 
+Microsoft 365 prise en charge du protocole IPv6 pour les offres gouvernementales est conforme à l’Office de gestion et de budget (OMB) Premier responsable de l’information des services et agences exécutifs, ainsi qu’à l’adoption par le gouvernement fédéral du protocole IPv6 (Internet Protocol Version 6). [Microsoft Microsoft 365 pour le gouvernement](https://go.microsoft.com/fwlink/p/?LinkId=325414) est un service multi-clients qui stocke les données du gouvernement américain dans un cloud communautaire séparé. Comme d’autres Microsoft 365, il fournit des services de productivité et de collaboration, notamment Exchange Online, Skype Entreprise, SharePoint Online et Applications Microsoft 365 pour les grandes entreprises. 
 
-Les offres Microsoft Microsoft 365 pour le gouvernement s’appliquent uniquement pour 2013 et les ultérieures. Pour plus d’informations sur les offres Microsoft 365 pour le gouvernement, voir [Annonces](https://go.microsoft.com/fwlink/p/?LinkId=325414)Microsoft 365 pour le gouvernement : une Cloud de la communauté du secteur public . La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations du gouvernement américain qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
+Les offres Microsoft Microsoft 365 gouvernement ne s’appliquent qu’en 2013 et ultérieures. Pour plus d’informations sur les offres Microsoft 365 pour le gouvernement, voir [Annonces](https://go.microsoft.com/fwlink/p/?LinkId=325414)Microsoft 365 pour le gouvernement : une Cloud de la communauté du secteur public . La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations du gouvernement américain qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
 
-Microsoft Microsoft 365 pour entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui permettent de prendre en charge les exigences de sécurité, de confidentialité et de conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
+Microsoft Microsoft 365 pour entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui assurent la sécurité, la confidentialité et la conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
   
 ## <a name="things-to-consider-when-using-ipv6-and-microsoft-365"></a>Éléments à prendre en compte lors de l’utilisation d’IPv6 Microsoft 365
 
