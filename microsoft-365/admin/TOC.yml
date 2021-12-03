@@ -29,16 +29,16 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrer des données vers mon abonnement Microsoft 365 Business Standard
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Configurer votre Microsoft 365 pour l’organisation des entreprises
+        - name: Configurer Microsoft Apps for business
+          items:
+            - name: S’inscrire à Microsoft 365 Apps for business
+              href: setup/signup--apps-business.md
+            - name: Configurer Microsoft 365 Apps for business
+              href: setup/setup-apps-for-business.md
+        - name: Configurer Microsoft 365 Business Basic
           items:
             - name: Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
-            - name: Microsoft 365 Business Standard
-              href: setup/setup-business-standard.md
-            - name: Microsoft 365 Business Premium
-              href: setup/business-set-up.md
-            - name: Applications Microsoft 365 pour les entreprises
-              href: setup/setup-apps-for-business.md
         - name: Découvrir la page et l’Assistant Installation
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Sécuriser des ordinateurs Windows 10
