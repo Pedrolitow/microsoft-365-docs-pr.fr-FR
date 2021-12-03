@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Donner à un utilisateur le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des courriels à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: 95075fca2fa39cfda497b71a1a320bc54fd2175d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd6f54ac578f1d1a65b20d3093b0efdeb1110567
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161785"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262762"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
@@ -75,7 +75,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 5. Sélectionnez **Ajouter des autorisations**, puis choisissez le nom de la personne à laquelle vous voulez que cet utilisateur puisse Envoyer en tant que. 
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Ajouter**.
  
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 4. Sélectionnez **Ajouter des autorisations**, puis choisissez le nom de la personne à laquelle vous voulez que cet utilisateur puisse Envoyer en tant que. 
     
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 4. Sélectionnez **Ajouter des autorisations**, puis choisissez le nom de la personne à laquelle vous voulez que cet utilisateur puisse Envoyer en tant que. 
     
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
   
@@ -121,11 +121,11 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
     
 5. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à lire du courrier à partir de cette boîte aux lettres.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Ajouter**.
 
 
 > [!NOTE]
-> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le centre d’administration Exchange. L’autorisation Accès complet n’octroie pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
+> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le centre d’administration Exchange. Cette autorisation permet à la boîte aux lettres de l’utilisateur affecté de lire et de gérer les e-mails dans la boîte aux lettres utilisateur bénéficiant de l’autorisation. L’autorisation Accès total n’accorde pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
 
 ::: moniker-end
 
@@ -139,7 +139,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
     
 4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à lire du courrier à partir de cette boîte aux lettres.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
@@ -153,7 +153,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
     
 4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à lire du courrier à partir de cette boîte aux lettres.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 5. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à envoyer du courrier pour le compte de cette boîte aux lettres.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
     
 4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à envoyer du courrier pour le compte de cette boîte aux lettres.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
     
 4. Sélectionnez **Ajouter des autorisations**, puis entrez le nom de l’utilisateur ou des utilisateurs que vous souhaitez autoriser à envoyer du courrier pour le compte de cette boîte aux lettres.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Ajouter**.
 
 ::: moniker-end
 
