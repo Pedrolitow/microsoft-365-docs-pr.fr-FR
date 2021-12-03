@@ -2,8 +2,7 @@
 title: API De liste des ordinateurs
 description: Découvrez comment utiliser l’API Des ordinateurs de liste pour récupérer une collection d’ordinateurs ayant communiqué avec Microsoft Defender pour le cloud endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,20 +15,20 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f52bae335a50a901b4a9e8fca2f758434aa37b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e522f2baac234097ed75d26eb1427719211a7de
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163649"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284648"
 ---
 # <a name="list-machines-api"></a>API De liste des ordinateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -113,7 +112,7 @@ Content-type: application/json
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "version": "1709",
             "osProcessor": "x64",
             "lastIpAddress": "172.17.230.209",
@@ -133,6 +132,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Requêtes OData avec Microsoft Defender pour le point de terminaison](exposed-apis-odata-samples.md)

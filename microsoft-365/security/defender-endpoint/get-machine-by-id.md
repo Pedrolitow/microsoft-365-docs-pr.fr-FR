@@ -2,8 +2,7 @@
 title: API Obtenir l’ordinateur par ID
 description: Découvrez comment utiliser l’API Obtenir un ordinateur par ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, entité, ID
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e77074c94578c36373cb1aee208b48b097437451
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 14b00e936111c54cd100e847a9ec18f921e34880
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163817"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283232"
 ---
 # <a name="get-machine-by-id-api"></a>API Obtenir l’ordinateur par ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -107,7 +106,7 @@ Content-type: application/json
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
     "lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
+    "osPlatform": "Windows10" "Windows11",
     "version": "1709",
     "osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",

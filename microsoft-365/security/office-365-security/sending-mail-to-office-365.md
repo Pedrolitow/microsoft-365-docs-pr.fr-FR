@@ -16,20 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez en tant qu’expéditeur invité comment augmenter la possibilité de remettre des messages électroniques aux utilisateurs Microsoft 365. Découvrez également comment signaler le courrier indésirable & tentatives de hameçonnage en tant qu’utilisateur invité.
+description: Découvrez en tant qu’expéditeur invité comment augmenter la possibilité de remettre des messages électroniques aux utilisateurs Microsoft 365. Découvrez également comment signaler le courrier indésirable & tentatives de hameçonnage en tant qu’invité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1e0cad4026b665e7bac62256339d8824c46ad8
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3f738b5575d4ac2831d067ca12993042a05a2024
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121434"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284408"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de messages Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Ces articles aident les expéditeurs externes à améliorer leur réputation et à améliorer leur capacité à remettre des messages électroniques aux utilisateurs Microsoft 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler le courrier indésirable et les tentatives de hameçonnage, même si vous n’êtes pas un Microsoft 365 vous-même.
 

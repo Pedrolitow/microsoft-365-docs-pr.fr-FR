@@ -2,8 +2,7 @@
 title: API Obtenir les utilisateurs de connexion de l’ordinateur
 description: Découvrez comment utiliser l’API Obtenir les utilisateurs de connexion de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, appareil, se connecter, utilisateurs
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 11091deb15e311797fbfd124600d4dff0e6499a5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b45ce1de5b2149251b691d81c29aea717d5dffc9
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163733"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282776"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
 
@@ -29,8 +28,8 @@ ms.locfileid: "61163733"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

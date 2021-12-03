@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 de déploiement de confiance zéro
+title: Plan de déploiement zéro trust Microsoft 365
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -15,15 +15,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
-description: Implémenter les principes, l’architecture et les fonctionnalités de confiance zéro pour Microsoft 365.
-ms.openlocfilehash: ef4f3795f5acb9e9c6011d800e930d16207a43b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: Implémentez les principes, l’architecture et les fonctionnalités de confiance zéro pour Microsoft 365.
+ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129154"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284612"
 ---
-# <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 de déploiement de confiance zéro
+# <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
 Cet article fournit un plan de déploiement pour la création **d’une** sécurité De confiance zéro avec Microsoft 365. La confiance zéro est un nouveau modèle de sécurité qui suppose une violation et vérifie chaque demande comme si elle provenait d’un réseau non contrôlé. Quel que soit l’origine de la demande ou la ressource à laquelle elle accède, le modèle de confiance zéro nous apprend à « ne jamais faire confiance, toujours vérifier ».
 
@@ -60,9 +60,9 @@ Microsoft 365 est conçue intentionnellement avec de nombreuses fonctionnalités
 Cette illustration représente le travail de déploiement des fonctionnalités de confiance zéro. Ce travail est divisé en unités de travail qui peuvent être configurées ensemble, en partant du bas et en travaillant jusqu’en haut pour s’assurer que le travail prérequis est terminé.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 de déploiement de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Pile de déploiement Microsoft 365 de confiance zéro" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
-Dans cette illustration :
+Dans cette illustration :
 - La confiance zéro commence par une base de protection des identités et des appareils. 
 - Les fonctionnalités de protection contre les menaces reposent sur ces bases pour fournir une surveillance et une correction en temps réel des menaces de sécurité. 
 - La protection et la gouvernance des informations fournissent des contrôles sophistiqués destinés à des types spécifiques de données afin de protéger vos informations les plus précieuses et de vous aider à respecter les normes de conformité, y compris la protection des informations personnelles.

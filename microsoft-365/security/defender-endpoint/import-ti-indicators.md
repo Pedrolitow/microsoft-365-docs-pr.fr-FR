@@ -2,7 +2,6 @@
 title: API d’importation d’indicateurs
 description: Découvrez comment utiliser le lot d’importation de l’API d’indicateur dans Microsoft Defender pour le point de terminaison.
 keywords: api, api pris en charge, envoyer, ti, indicateur, mettre à jour
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 60d587637f282b36c9d13280fc3f488ad86a80b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167105"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283700"
 ---
 # <a name="import-indicators-api"></a>API d’importation d’indicateurs
 
@@ -28,8 +27,8 @@ ms.locfileid: "61167105"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-ms.openlocfilehash: 065250c9e3d926251b8c3d543b66f6bf51e99f58
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 41b38a3e51644859a1ef10c514b3b6f31d44e76e
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111014"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284696"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 sécurité des décideurs d’entreprise (BDM)
 
@@ -59,7 +59,7 @@ Recommandations supplémentaires :
 
 La zone de focus suivante consiste à réduire la surface d’attaque. Cela peut être réalisé avec un minimum d’efforts et d’impact sur vos utilisateurs et services. En réduisant la surface d’attaque, les attaquants ont moins de moyens de lancer une attaque contre votre organisation.
 
-Voici quelques exemples :
+Voici quelques exemples :
 - Désactivez les protocoles POP3, IMAP et SMTP. La plupart des organisations modernes n’utilisent plus ces anciens protocoles. Vous pouvez les désactiver en toute sécurité et autoriser les exceptions uniquement si nécessaire. 
 - Réduisez et conservez le nombre minimal d’administrateurs globaux dans le client. Cela réduit directement la surface d’attaque pour toutes les applications cloud. 
 - Retirez les serveurs et les applications qui ne sont plus utilisés dans votre environnement. 

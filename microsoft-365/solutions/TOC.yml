@@ -133,7 +133,7 @@
               href: tenant-management-tenants.md
             - name: Étape 2. Mise en réseau optimale
               href: tenant-management-networking.md
-            - name: Étape 3. Identité
+            - name: "Étape\_3. Identité"
               href: tenant-management-identity.md
             - name: Étape 4. Migration
               href: tenant-management-migration.md
@@ -222,7 +222,7 @@
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 2. Utiliser Microsoft Teams.
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Étape 3. Power Automate
+            - name: "Étape\_3. Power Automate"
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Créer un intranet SharePoint intelligent
           items:
@@ -304,10 +304,10 @@
               href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Sécurité
       items:
+        - name: "Plan de déploiement zéro trust Microsoft\_365"
+          href: ../security/microsoft-365-zero-trust.md
         - name: Principales tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
           href: ../security/top-security-tasks-for-remote-work.md
-        - name: Sécurité Microsoft 365 pour les décideurs d’entreprise (BDM)
-          href: ../security/microsoft-365-security-for-bdm.md
         - name: Configurations des identités et de l’accès aux appareils
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Évaluer et piloter Microsoft 365 Defender
@@ -315,7 +315,7 @@
         - name: Répondre à votre premier incident
           href: ../security/defender/first-incident-overview.md
         - name: Déployer Microsoft Defender pour point de terminaison
-          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
+          href: ../security/defender-endpoint/deployment-phases.md
         - name: Passer d’une protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
           href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Passer d'un outil de protection non Microsoft à Microsoft Defender pour Office 365

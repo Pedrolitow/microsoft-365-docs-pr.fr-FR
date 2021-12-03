@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gouvernance des informations de Microsoft pour gérer vos données en matière de conformité ou d’obligations réglementaires.
-ms.openlocfilehash: 66b8bde34cefbb783e4de7c4c12f99b373bbe9b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0637913acf42a89fc82c7c8a6caacc029b5a0d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200472"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283425"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gouvernance des informations dans Microsoft 365
 
@@ -43,7 +43,7 @@ Pour conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas b
 |[Stratégies de rétention et étiquettes de rétention.](retention.md)| Conserver ou supprimer du contenu avec la gestion des stratégies et un flux de travail de suppression pour les e-mails, les documents, les messages instantanés, etc. <br /><br />Exemple de scénario : [appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md) | [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)|
 |[Service importation](importing-pst-files-to-office-365.md)| Importer en masse des fichiers PST dans des boîtes aux lettres Exchange Online pour conserver et rechercher des messages électroniques pour respecter la conformité ou les obligations réglementaires | [Utilisez le téléchargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365](use-network-upload-to-import-pst-files.md)|
 |[Archiver des données tierces](archiving-third-party-data.md)| Importer, archiver et appliquer des solutions de conformité aux données tierces des plateformes de réseaux sociaux, des plateformes de messagerie instantanée et des plateformes de collaboration sur les documents| [Connecteurs tiers](archiving-third-party-data.md#third-party-data-connectors)|
-|[Boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)| Conserver le contenu de la boîte aux lettres après le départ des employés de l’organisation | [Créer et gérer les boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)|
+|[Boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)| Conserver le contenu des boîtes aux lettres après que le départ des employés de l’organisation afin que ce contenu reste accessible aux administrateurs, aux responsables de la mise en conformité et aux responsables des enregistrements | [Créer et gérer les boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>Gestion des enregistrements
 

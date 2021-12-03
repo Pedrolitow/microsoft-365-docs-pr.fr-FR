@@ -2,7 +2,6 @@
 title: Créer une alerte à partir de l’API d’événement
 description: Découvrez comment utiliser l’API Créer une alerte pour créer une alerte en haut de l’événement dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, ID
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d513c29dc57dd169eb9a7760cb433d764ad78f6
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218465"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284504"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 

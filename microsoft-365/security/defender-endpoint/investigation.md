@@ -2,7 +2,6 @@
 title: Type de ressource Investigation
 description: Entité Microsoft Defender for Endpoint Investigation.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, enquêtes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4ecea6cdac4c254126c6f4bad1400a090505c9eb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218645"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283688"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 

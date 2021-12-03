@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d6465d1428ec66f1d80cc1b821fa816b794040a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b72b408ef08c125f016a356a2ceda21e86cf8cfd
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200268"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283568"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -326,7 +326,7 @@ Une fois la tâche d'importation créée à l'étape 5, Microsoft 365 analyse le
 
   - Recherche dans le [journal d’audit](search-the-audit-log-in-security-and-compliance.md) pour les événements liés aux boîtes aux lettres qui affectent les données que vous avez importées.
 
-  - Importation de données dans les [boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md) pour archiver les données à des fins de conformité. 
+  - Importation de données dans les [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md) pour archiver les données à des fins de conformité. 
 
   - Utilisation de [stratégies de prévention contre la perte de données](dlp-learn-about-dlp.md) pour empêcher les fuites de données sensibles à l'extérieur de votre organisation.
   

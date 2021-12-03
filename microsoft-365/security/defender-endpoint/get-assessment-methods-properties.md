@@ -2,7 +2,6 @@
 title: Exporter les méthodes et propriétés d’évaluation par appareil
 description: Fournit des informations sur les API qui tirent les données Gestion des menaces et des vulnérabilités données. Il existe différents appels d’API pour obtenir différents types de données. En règle générale, chaque appel d’API contient les données requises pour les appareils de votre organisation.
 keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e394513cdb3170eaa3f347d018bcc13382797271
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1d3f136f3715b81b245f6b157927ae98a9444c06
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167122"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284444"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter les méthodes et propriétés d’évaluation par appareil
 
@@ -29,7 +28,7 @@ ms.locfileid: "61167122"
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -84,7 +83,7 @@ deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
 isApplicable|Bool|Indique si la configuration ou la stratégie est applicable.
 isCompliant|Bool|Indique si la configuration ou la stratégie est correctement configurée.
 isExpectedUserImpact|Bool|Indique si l’utilisateur est affecté si la configuration est appliquée.
-osPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, tels que Windows 10 et Windows 7. Pour plus d’informations, voir systèmes d’exploitation et plateformes pris en charge par TVM.
+osPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, tels que Windows 10 et Windows 11. Pour plus d’informations, voir systèmes d’exploitation et plateformes pris en charge par TVM.
 osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
 rbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
@@ -119,7 +118,7 @@ DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appar
 EndOfSupportDate|String|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.
 EndOfSupportStatus|String|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|Int|Nombre de faiblesses sur ce logiciel sur cet appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
 RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
 RegistryPaths|Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
@@ -160,7 +159,7 @@ ExploitabilityLevel|String|Le niveau d’exploitabilité de cette vulnérabilit�
 FirstSeenTimestamp|String|Première fois que la CVE de ce produit a été vue sur l’appareil.
 ID|String|Identificateur unique de l’enregistrement.
 LastSeenTimestamp|String|Dernière fois que la CVE a été vue sur l’appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
 RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
 RecommendationReference|String|Référence à l’ID de recommandation associé à ce logiciel.
@@ -193,7 +192,7 @@ ExploitabilityLevel|String|Niveau d’exploitabilité de la vulnérabilité (NoE
 FirstSeenTimestamp|String|Première fois que la CVE du produit a été vue sur l’appareil.
 ID|String|Identificateur unique de l’enregistrement.  
 LastSeenTimestamp|String|Dernière fois que la CVE a été vue sur l’appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
 RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
 RecommendationReference|String|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |String|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.

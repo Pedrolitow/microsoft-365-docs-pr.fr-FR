@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9e07c12ec434935b2e91e7248f1f1d16ea4074c8
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0b26cd34cf38f8f2fbd7a0de96f8e34502054ecf
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241175"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283208"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -77,12 +77,28 @@ Sélectionnez une recommandation dans la liste pour commencer à configurer la g
 > [!IMPORTANT]
 > Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Il existe quatre groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de gestion des risques internes. Pour poursuivre ces étapes de configuration, vos administrateurs client doivent d’abord vous affecter au groupe de rôles Gestion des risques internes ou Administrateur de la gestion **des** risques internes.  Pour accéder aux fonctionnalités de gestion des risques internes et les gérer après la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de gestion des risques internes.
+Six groupes de rôles sont utilisés pour configurer les autorisations initiales afin de gérer les fonctionnalités de gestion des risques internes. Pour **rendre** la gestion des risques internes disponible en tant qu’option de menu dans Centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
 
->[!IMPORTANT]
->Assurez-vous que vous avez toujours  au moins  un utilisateur dans les groupes de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
+- Azure Active Directory administrateur [*général*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory [*d’administrateur de conformité de l’application*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centre de conformité Microsoft 365 groupe de [*rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- Centre de conformité Microsoft 365 [*de rôle Administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de l’application
+- *Groupe de rôles Gestion des risques internes*
+- *Groupe de rôles d’administrateur de gestion des* risques internes
 
-Selon la structure de votre équipe de gestion de la conformité, vous avez la choix d’affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Pour afficher l’onglet Autorisations dans le Centre de conformité Microsoft 365 et gérer les groupes  de **rôles,** vous devez être affecté au groupe de rôles Gestion de l’organisation ou avoir le rôle Gestion des *rôles.* Choisissez parmi ces options de groupe de rôles lors de la configuration de la gestion des risques internes :
+Les membres des rôles suivants ont les mêmes autorisations de solution incluses avec le groupe de rôles Administrateur de la gestion *des* risques internes :
+
+- Azure Active Directory administrateur *général*
+- Azure Active Directory *de conformité de l’application*
+- Centre de conformité Microsoft 365 *gestion de l’organisation*
+- Centre de conformité Microsoft 365 de *conformité de l’application*
+
+> [!IMPORTANT]
+> Assurez-vous que vous avez toujours  au moins  un utilisateur dans les groupes de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
+
+Selon la façon dont vous souhaitez gérer les stratégies et les alertes de gestion des risques internes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines de fonctionnalités de gestion des risques internes. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les  administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles Gestion des risques internes. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
+
+Choisissez parmi ces options de groupe de rôles de solution lors de la configuration et de la gestion de la gestion des risques internes :
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :------------- | :------------------- |
@@ -274,7 +290,7 @@ Les stratégies de gestion des risques internes incluent les utilisateurs attrib
     >Les utilisateurs qui configurent la stratégie et sélectionnent des sites Share Point prioritaires peuvent sélectionner SharePoint sites à qui ils sont autorisés à accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur avec les autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
-13. Si vous avez sélectionné les *fuites* de données générales ou les *fuites* de données par modèles d’utilisateurs prioritaires, des options s’offrent à vous dans la page Déclencheurs de cette stratégie pour les **événements** de déclenchement personnalisés et les indicateurs de stratégie. Vous avez la possibilité de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue du score d’activité. Si vous sélectionnez l’option Utilisateur correspond à une stratégie de protection contre la perte de données **(DLP)** déclenchant un événement, vous devez sélectionner une stratégie DLP dans la liste de listes de listes des stratégies DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez l’option d’événement déclenchant une **activité d’exfiltration,** vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement déclencheur de stratégie.
+13. Si vous avez sélectionné les *fuites* de données générales ou les *fuites* de données par modèles d’utilisateurs prioritaires, des options s’offrent à vous dans la page Déclencheurs de cette stratégie pour les **événements** de déclenchement personnalisé et les indicateurs de stratégie. Vous avez la possibilité de sélectionner une stratégie ou des indicateurs DLP pour déclencher des événements qui amènent les utilisateurs affectés à la stratégie dans l’étendue du score d’activité. Si vous sélectionnez l’option Utilisateur correspond à une stratégie de protection contre la perte de données **(DLP)** déclenchant un événement, vous devez sélectionner une stratégie DLP dans la liste de listes de listes des stratégies DLP pour activer les indicateurs de déclenchement de la stratégie DLP pour cette stratégie de gestion des risques internes. Si vous sélectionnez l’option d’événement déclenchant une **activité d’exfiltration,** vous devez sélectionner un ou plusieurs des indicateurs répertoriés pour l’événement déclencheur de stratégie.
     >[!IMPORTANT]
     >Si vous ne parvenez pas à sélectionner un indicateur répertorié, c’est parce qu’il n’est pas activé pour votre organisation. Pour les rendre disponibles pour les sélectionner et les affecter à la stratégie, activez les indicateurs dans la gestion des risques internes  >  **Paramètres**  >  **les indicateurs de stratégie.**
 

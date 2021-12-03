@@ -2,7 +2,6 @@
 title: DÉMARRER l’API d’examen
 description: Utilisez cette API pour lancer l’examen sur un appareil.
 keywords: api, api de graphique, api pris en charge, examen
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d930fdf8546a4fbb7106e6e0449d1446858bd624
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4a336824a3f7119de8b02f4ccff10dd7956a4f46
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217674"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283952"
 ---
 # <a name="start-investigation-api"></a>DÉMARRER l’API d’examen
 
@@ -58,6 +57,7 @@ Actuellement, AIR prend uniquement en charge les versions de système d’exploi
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
 - Windows 10, version 1803 (os build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
+- Windows 11
 
 ## <a name="permissions"></a>Autorisations
 

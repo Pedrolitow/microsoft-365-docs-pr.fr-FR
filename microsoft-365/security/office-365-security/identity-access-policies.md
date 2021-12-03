@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 446bcfc41b0317d5124b98ac828298f49de100d9
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 92834840bc020693d6edd203b04ad427ebb80045
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121794"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284168"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
 
@@ -66,7 +66,7 @@ Pour vous donner le temps d’effectuer ces tâches, nous vous recommandons d’
 |**Point de départ**|[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-multi-factor)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les stratégies d’accès conditionnel, il est donc important de les bloquer.|Microsoft 365 E3 ou E5|
 ||[Les utilisateurs à risque élevé doivent modifier leur mot de passe](#high-risk-users-must-change-password)|Oblige les utilisateurs à modifier leur mot de passe lors de la signature si une activité à risque élevé est détectée pour leur compte.|Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
-||[Appliquer la protection des données app (Application Protection Policies)](#apply-app-data-protection-policies)|Une stratégie Intune App Protection par plateforme (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 ou E5|
+||[Appliquer la protection des données des stratégies de protection des applications (APP)](#apply-app-data-protection-policies)|Une stratégie Intune App Protection par plateforme (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 ou E5|
 ||[Exiger la protection des applications et des applications approuvées](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes à l’aide d’iOS, iPadOS ou Android.|Microsoft 365 E3 ou E5|
 |**Enterprise**|[Exiger l’mf lorsque le risque de se connecte *est faible,* *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 ou Microsoft 365 E3 avec le module de sécurité E5|
 ||[Définir des stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme.|Microsoft 365 E3 ou E5|
@@ -117,7 +117,7 @@ Les tableaux suivants décrivent les paramètres de stratégie d’accès condit
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
@@ -139,7 +139,7 @@ Appliquez les paramètres de niveau de risque en fonction du niveau de protectio
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Grant access**||Sélectionner|
 |||**Exiger l’authentification multifacteur**|Chèque|
@@ -160,7 +160,7 @@ Consultez [cet article pour](../../enterprise/microsoft-365-client-support-multi
 
 Dans la section **Affectations** :
 
-|Setting|Propriétés|Valeurs|Remarques|
+|Paramètre|Propriétés|Valeurs|Remarques|
 |---|---|---|---|
 |Utilisateurs et groupes|Inclure|**Sélectionnez utilisateurs et groupes > utilisateurs et groupes**: sélectionnez des groupes spécifiques contenant des comptes d’utilisateurs ciblés.|Commencez par le groupe qui inclut les comptes d’utilisateurs pilotes.|
 ||Exclure|**Utilisateurs et groupes**: sélectionnez votre groupe d’exceptions d’accès conditionnel ; comptes de service (identités d’application).|L’appartenance doit être modifiée selon les besoins, de manière temporaire.|
@@ -170,7 +170,7 @@ Dans la section **Affectations** :
 
 Dans la section **Contrôles d’accès** :
 
-|Setting|Propriétés|Valeurs|Action|
+|Paramètre|Propriétés|Valeurs|Action|
 |---|---|---|---|
 |Accorder|**Bloquer l’accès**||Sélectionner|
 ||**Demander tous les contrôles sélectionnés**||Sélectionner|
@@ -220,9 +220,9 @@ Les API définissent les applications autorisées et les actions qu’elles peuv
 
 Le framework de protection des données des stratégies de protection des applications est organisé en trois niveaux de configuration distincts, chaque niveau s’appuyant sur le niveau précédent :
 
-- La **protection de base des données d’entreprise** (niveau 1) garantit que les applications sont protégées par un code PIN et chiffrées, et effectue des opérations de réinitialisation sélective. Pour les appareils Android, ce niveau valide l’attestation des appareils Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et présente l’informatique ainsi que le nombre des utilisateurs aux stratégies de protection des applications.
-- La **protection améliorée des données d’entreprise** (niveau 2) présente les mécanismes de prévention des fuites de données des stratégies de protection des applications et les exigences minimales du système d’exploitation. Il s’agit de la configuration qui s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires.
-- La **protection élevée des données d’entreprise** (niveau 3) présente les mécanismes avancés de protection des données, une configuration de code PIN améliorée et une protection contre les menaces mobiles pour les stratégies de protection des applications. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
+- **Niveau 1** : Enterprise protection des données de base garantit que les applications sont protégées par un code confidentiel et chiffrées et effectue des opérations de effacement sélective. Pour les appareils Android, ce niveau valide l’attestation des appareils Android. Il s’agit d’une configuration de niveau d’entrée qui fournit un contrôle de protection des données similaire dans les stratégies de boîte aux lettres Exchange Online et présente l’informatique ainsi que le nombre des utilisateurs aux stratégies de protection des applications.
+- **Niveau 2 : Enterprise protection améliorée des** données introduit des mécanismes de prévention des fuites de données d’APPLICATION et des exigences minimales en matière de système d’exploitation. Il s’agit de la configuration qui s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires.
+- **Niveau 3 : Enterprise protection** élevée des données introduit des mécanismes de protection des données avancés, une configuration améliorée du code confidentiel et la protection contre les menaces APP Mobile. Cette configuration est souhaitable pour les utilisateurs qui accèdent à des données à risque élevé.
 
 Pour afficher les recommandations spécifiques pour chaque niveau de configuration et les applications minimales à protéger, consultez [Framework de protection des données à l’aide de stratégies de protection des applications](/mem/intune/apps/app-protection-framework).
 
@@ -304,14 +304,14 @@ L’infrastructure de configuration de la sécurité iOS/iPadOS est organisée e
 
 Pour les appareils personnels :
 
-- Sécurité de base (niveau 1) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Pour ce faire, appliquez des stratégies de mot de passe, des caractéristiques de verrouillage d’appareil et désactivez certaines fonctions d’appareil (par exemple, les certificats non sécurisés).
-- Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration édicte des contrôles de partage de données. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données scolaires ou de travail sur un appareil.
+- Sécurité de base (niveau 1) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Cela s’effectue en appliquant des stratégies de mot de passe, des caractéristiques de verrouillage d’appareil et en désactivant certaines fonctions d’appareil (par exemple, les certificats non approuvés).
+- Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration enrôle les contrôles de partage de données. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires sur un appareil.
 - Haute sécurité (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques à risque élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration permet de renforcer les stratégies de mot de passe, de désactiver certaines fonctions d’appareil et d’appliquer des restrictions de transfert de données supplémentaires.
 
 Pour les appareils supervisés :
 
-- Sécurité de base (niveau 1) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils supervisés où les utilisateurs accèdent aux données scolaires ou professionnels. Pour ce faire, appliquez des stratégies de mot de passe, des caractéristiques de verrouillage d’appareil et désactivez certaines fonctions d’appareil (par exemple, les certificats non sécurisés).
-- Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration édicte des contrôles de partage de données et bloque l’accès aux périphériques USB. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données scolaires ou de travail sur un appareil.
+- Sécurité de base (niveau 1) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils supervisés où les utilisateurs accèdent aux données scolaires ou professionnels. Cela s’effectue en appliquant des stratégies de mot de passe, des caractéristiques de verrouillage d’appareil et en désactivant certaines fonctions d’appareil (par exemple, les certificats non approuvés).
+- Sécurité renforcée (niveau 2) : Microsoft recommande cette configuration pour les appareils où les utilisateurs accèdent à des informations sensibles ou confidentielles. Cette configuration permet d’effectuer des contrôles de partage de données et de bloquer l’accès aux périphériques USB. Cette configuration s’applique à la plupart des utilisateurs mobiles accédant à des données professionnelles ou scolaires sur un appareil.
 - Haute sécurité (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques à risque élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration permet de renforcer les stratégies de mot de passe, de désactiver certaines fonctions d’appareil, d’appliquer des restrictions de transfert de données supplémentaires et d’installer des applications via le programme d’achat en volume d’Apple.
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et aux appareils Avec confiance zéro, les [niveaux](microsoft-365-policies-configurations.md)de protection de point de départ et de Enterprise sont étroitement mapés avec les paramètres de sécurité améliorés de niveau 2. Le niveau de protection de la sécurité spécialisé est étroitement map avec les paramètres de sécurité élevés de niveau 3.
@@ -320,7 +320,7 @@ Pour les appareils supervisés :
 |---------|---------|---------|
 |Point de départ     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
-|Sécurité spécialisée     |Sécurité élevée (niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
+|Sécurité spécialisée     |Haute sécurité (Niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
 
 Pour voir les recommandations spécifiques en matière de conformité et de restriction d’appareil pour chaque niveau de configuration, consultez l’infrastructure de configuration de sécurité [iOS/iPadOS.](/mem/intune/enrollment/ios-ipados-configuration-framework)
 
@@ -335,7 +335,7 @@ L’infrastructure Enterprise de configuration de la sécurité Android est orga
 
 Pour les appareils Enterprise profils de travail Android :
 
-- Sécurité renforcée du profil professionnel (niveau 2) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Cette configuration introduit des exigences de mot de passe, sépare les données personnelles et de travail, et valide l’attestation d’appareil Android.
+- Sécurité renforcée du profil professionnel (niveau 2) : Microsoft recommande cette configuration comme configuration de sécurité minimale pour les appareils personnels où les utilisateurs accèdent aux données scolaires ou professionnels. Cette configuration introduit des exigences de mot de passe, sépare les données professionnelles et personnelles, et valide l’attestation des appareils Android.
 - Profil professionnel haute sécurité (niveau 3) : Microsoft recommande cette configuration pour les appareils utilisés par des utilisateurs ou des groupes spécifiques à risque élevé (les utilisateurs qui gèrent des données hautement sensibles lorsque la divulgation non autorisée entraîne une perte matérielle considérable pour l’organisation). Cette configuration introduit la protection contre les menaces mobiles ou Microsoft Defender pour le point de terminaison, définit la version minimale d’Android, met en place des stratégies de mot de passe plus puissantes et limite davantage la séparation personnelle et le travail.
 
 Pour les appareils Android Entreprise entièrement gérés :
@@ -354,7 +354,7 @@ Pour les appareils Enterprise profils de travail Android :
 |Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |S/O         |
 |Point de départ     |Gestion complète : sécurité renforcée (niveau 2)       |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Gestion complète : sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
-|Sécurité spécialisée     |Sécurité élevée (niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
+|Sécurité spécialisée     |Haute sécurité (Niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |
 
 Pour voir les recommandations spécifiques en matière de conformité et de restriction d’appareil pour chaque niveau de configuration, consultez l’infrastructure de configuration de sécurité [Enterprise Android.](/mem/intune/enrollment/android-configuration-framework)
 
@@ -379,15 +379,15 @@ Pour **la sécurité du** système, consultez ce tableau.
 
 |Type|Propriétés|Valeur|Action|
 |---|---|---|---|
-|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
+|Password|Exiger un mot de passe pour déverrouiller des appareils mobiles|Require (Rendre obligatoire)|Sélectionner|
 ||Mots de passe simples|Bloquer|Sélectionner|
 ||Type de mot de passe|Valeur par défaut de l’appareil|Sélectionner|
 ||Longueur minimale du mot de passe|6 |Type|
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et supérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et les appareils supérieurs.|
+||Nombre maximal de minutes d’inactivité avant demande du mot de passe|15 |Type <p> Ce paramètre est pris en charge pour les versions Android 4.0 et supérieures ou KNOX 4.0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8.0 et les appareils supérieurs.|
 ||Expiration du mot de passe (jours)|41|Type|
 ||Nombre de mots de passe précédents avant d’autoriser leur réutilisation|5|Type|
 ||Exiger un mot de passe lorsque l’appareil revient d’un état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour les Windows 10 et ultérieures|
-|Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
+|Chiffrement|Chiffrement du stockage de données sur l’appareil|Require (Rendre obligatoire)|Sélectionner|
 |Sécurité des appareils|Pare-feu|Require (Rendre obligatoire)|Sélectionner|
 ||Antivirus|Require (Rendre obligatoire)|Sélectionner|
 ||Logiciel anti-espion|Require (Rendre obligatoire)|Sélectionner <p> Ce paramètre nécessite une solution anti-espion inscrite auprès de l’Sécurité Windows app.|

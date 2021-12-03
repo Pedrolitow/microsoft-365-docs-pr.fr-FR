@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 0cd53d6d82a1052f91c7179f2c6f1dab33a8b125
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 6d1130dcfbc6f405a09db6263a5c075fc1c7db0a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110510"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283772"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
@@ -73,7 +73,7 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
 - Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces, ou vous pouvez l’attacher en externe à l’aide d’un SSD externe de 2,5 pouces ou d’une carte USB SATA II/III de 2,5 pouces ou 3,5 pouces.
     
     > [!IMPORTANT]
-    > Les disques durs externes qui sont accompagnés d’une carte USB intégrée ne sont pas pris en charge par Office 365 service d’importation. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Veuillez ne pas envoyer de disques durs externes. 
+    > Les disques durs externes fournis avec une carte USB intégrée ne sont pas pris en charge par le service d’importation Office 365. En outre, le disque à l’intérieur du boîtier d’un disque dur externe ne peut pas être utilisé. Please don't ship external hard drives. 
   
 - Le disque dur sur lequel vous copiez les fichiers PST doit être chiffré avec BitLocker. L’outil WAImportExport.exe exécuté à l’étape 2 vous permet de configurer BitLocker. Il génère également une clé de chiffrement BitLocker que le personnel du centre de données Microsoft utilise pour accéder au lecteur afin de télécharger les fichiers PST dans la zone stockage Azure dans le cloud Microsoft.
     
@@ -441,7 +441,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
     > [!NOTE]
     > Pour vous aider à résoudre les problèmes du fichier de mappage [CSV](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) d’importation PST, utilisez l’outil Explorateur Stockage Azure pour afficher la structure de dossiers dans le conteneur **ingestiondata** pour les fichiers PST à partir de votre disque dur qui ont été téléchargés vers la zone de stockage Azure. Les erreurs de fichier de mappage sont généralement causées par une valeur incorrecte dans le paramètre FilePath. Ce paramètre spécifie l’emplacement d’un fichier PST dans la zone de stockage Azure. Consultez la description du paramètre FilePath dans le tableau de [l’étape 3.](#step-3-create-the-pst-import-mapping-file) Comme indiqué précédemment, l’emplacement des fichiers PST dans la zone de stockage Azure a été spécifié par le paramètre lorsque vous avez lancé l’outil WAImportExport.exe à `/dstdir:` [l’étape 2.](#step-2-copy-the-pst-files-to-the-hard-drive) 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - L’expédition de disques est un moyen efficace d’importer de grandes quantités de données de messagerie d’archivage vers Microsoft 365 afin de tirer parti des fonctionnalités de conformité disponibles pour votre organisation. Une fois les données d’archivage importées dans les boîtes aux lettres des utilisateurs, vous pouvez :
 
@@ -455,7 +455,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
 
   - Recherchez [dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) les événements liés à ces données. 
 
-  - Importer des données dans des [boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md) pour archiver des données à des fins de conformité. 
+  - Importer des données dans des [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md) pour archiver des données à des fins de conformité. 
 
   - Protégez votre organisation contre [la perte de données](dlp-learn-about-dlp.md) d’informations sensibles. 
 

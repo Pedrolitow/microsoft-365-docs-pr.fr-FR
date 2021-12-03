@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu de la boîte aux lettres pour les anciens employés en la transformant en boîte aux lettres inactive.
-ms.openlocfilehash: e00edd01e3f439050bdacce99ae006665052d82d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0cc8e7fd980d48be44da824bad84343231c166ea
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106425"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284624"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>En savoir plus sur les boîtes aux lettres inactives
 
@@ -134,37 +134,6 @@ Toutefois, si cette stratégie de rétention MRM **a** été appliquée à une b
 
 À l’inverse, toutes les stratégies d’archivage (balises de rétention MRM configurées avec une action **MoveToArchive)** incluses dans la stratégie de rétention MRM affectée à une boîte aux lettres inactive sont ignorées. Cela signifie que les éléments dans une boîte aux lettres inactive qui sont marqués avec une stratégie d'archivage restent dans la boîte aux lettres principale à l'expiration de la période de rétention. Ils ne sont pas déplacés vers la boîte aux lettres d'archivage ni vers le dossier Éléments récupérables dans la boîte aux lettres d'archivage. Ils seront conservés indéfiniment.
 
-## <a name="creating-an-inactive-mailbox"></a>Création d’une boîte aux lettres inactive
+## <a name="next-steps"></a>Prochaines étapes
 
-Pour rendre une boîte aux lettres inactive, une licence Exchange Online Plan 2 (ou une licence Exchange Online Plan 1 avec une licence de module Archivage Exchange Online) doit lui être attribuée afin qu’une conservation pour litige ou une stratégie de rétention Microsoft 365 puisse être appliquée à la boîte aux lettres avant sa suppression. Une fois le compte d’utilisateur supprimé, toute licence Exchange Online associée au compte d’utilisateur peut être assignée à un nouvel utilisateur.
-
-Le tableau suivant résume le processus de création d'une boîte aux lettres inactive pour différents scénarios de rétention. Pour plus d’informations, voir [Gérer les boîtes aux lettres inactives.](create-and-manage-inactive-mailboxes.md)
-
-<br/>
-
-|À...|Vous devez…|Résultat|
-|---|---|---|
-|Conserver le contenu de la boîte aux lettres indéfiniment après le départ d’un employé de l’organisation|1. Appliquez Microsoft 365 de rétention avec des actions de rétention pour la boîte aux lettres (une stratégie de rétention) ou des éléments de courrier spécifiques (une ou plusieurs étiquettes de rétention). <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte d’Microsoft 365 utilisateur.|Tout le contenu de la boîte aux lettres inactive dont les paramètres de rétention sont appliqués, y compris les éléments du dossier Éléments récupérables, est conservé indéfiniment.|
-|Conserver tout le contenu de la boîte aux lettres pendant une période spécifique après le départ d’un employé de l’organisation, puis supprimer la boîte aux lettres|1. Appliquez une stratégie Microsoft 365 rétention à la boîte aux lettres avec des paramètres de rétention qui conservent puis suppriment des éléments à l’expiration de la période de rétention. <br /><br> 2. Attendez que les paramètres de rétention soient appliqués. <br /><br> 3. Supprimez le compte d’Microsoft 365 utilisateur.|Lorsque la période de rétention d’un élément de boîte aux lettres expire, l’élément est déplacé vers le dossier Éléments récupérables, puis supprimé définitivement (purgé) de la boîte aux lettres inactive à l’expiration de la période de rétention des éléments supprimés (pour les boîtes aux lettres Exchange). La période de rétention de la stratégie Microsoft 365 de rétention est toujours basée sur la date d’origine de réception ou de création d’un élément de boîte aux lettres.|
-
-
-> [!NOTE]
-> Si les paramètres de rétention de Microsoft 365 configurés pour conserver, ou conserver puis supprimer du contenu, sont déjà appliqués à la boîte aux lettres ou aux éléments de boîte aux lettres, ou si une conservation pour litige est déjà placée sur une boîte aux lettres, il vous s agit simplement de supprimer le compte d’utilisateur correspondant pour créer une boîte aux lettres inactive.
-
-## <a name="managing-inactive-mailboxes"></a>Gestion des boîtes aux lettres inactives
-
-Une fois que la boîte aux lettres est inactive, vous pouvez effectuer différentes tâches de gestion.
-
-- **Modifier la durée de la boîte aux lettres inactive.** Une fois qu’une boîte aux lettres est inactive, vous pouvez modifier la durée de la conservation pour litige ou la stratégie de rétention Microsoft 365 appliquée à la boîte aux lettres inactive. Pour obtenir des procédures pas à pas, voir Modifier la durée de la boîte aux lettres [inactive.](change-the-hold-duration-for-an-inactive-mailbox.md)
-
-  > [!NOTE]
-  > Vous ne pouvez pas appliquer d’autres stratégies de rétention à une boîte aux lettres inactive. Vous pouvez uniquement modifier la durée de rétention d’une stratégie de rétention existante appliquée à la boîte aux lettres inactive.
-
-- **Récupérez une boîte aux lettres inactive.** Si un ancien employé (ou un employé en congé) revient dans votre organisation, ou si un nouvel employé est embauché pour assumer les responsabilités de l’ancien employé, vous pouvez récupérer le contenu de la boîte aux lettres inactive. Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est convertie en nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d’utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus. Pour obtenir des procédures pas à pas et des informations sur ce qui se produit lorsque vous récupérez une boîte aux lettres inactive, voir [Récupérer une boîte aux lettres inactive.](recover-an-inactive-mailbox.md)
-
-  > [!NOTE]
-  > Si vous récupérez une boîte aux lettres inactive affectée à une stratégie de rétention avec verrouillage de conservation (appelée stratégie de rétention verrouillée), la boîte aux lettres récupérée est affectée à la même stratégie de rétention verrouillée. Si vous récupérez une boîte aux lettres inactive affectée à une stratégie de rétention sans verrouillage de conservation, la boîte aux lettres récupérée est supprimée de la stratégie de rétention déverrouillée. Toutefois, la conservation pour litige est activée sur la boîte aux lettres récupérée pour empêcher la suppression de contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu plus ancien qu’un âge spécifique.
-
-- **Restituer une boîte aux lettres inactive.** Si un autre employé assume les responsabilités de l'ancien employé, ou si un autre utilisateur doit accéder au contenu de la boîte aux lettres inactive, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive vers une boîte aux lettres existante. Lorsque vous restaurez une boîte aux lettres inactive, le contenu est copié vers une autre boîte aux lettres. La boîte aux lettres inactive est conservée et reste une boîte aux lettres inactive. La boîte aux lettres inactive peut toujours faire l’être à l’aide des outils eDiscovery, son contenu peut être restauré dans une autre boîte aux lettres et il peut être récupéré ou supprimé ultérieurement. Pour obtenir des procédures pas à pas, voir [Restaurer une boîte aux lettres inactive.](restore-an-inactive-mailbox.md)
-
-- **Supprimez une boîte aux lettres inactive.** Lorsque vous n’avez plus besoin de conserver le contenu d’une boîte aux lettres inactive, vous pouvez le supprimer définitivement en supprimant toutes les conservations ou stratégies de rétention Microsoft 365 appliquées à la boîte aux lettres inactive. Si une boîte aux lettres est devenue inactive depuis plus de 30 jours, elle est marquée pour suppression définitive après la suppression de la conservation. Si la boîte aux lettres est devenue inactive au cours des 30 derniers jours, vous pouvez la restaurer après avoir supprimé la conservation ou la stratégie de rétention. Pour obtenir des procédures pas à pas, voir [Supprimer une boîte aux lettres inactive.](delete-an-inactive-mailbox.md)
+Pour rendre une boîte aux lettres inactive et la gérer, telle que la récupération, la restauration et la suppression, voir Créer et gérer des boîtes aux lettres [inactives.](create-and-manage-inactive-mailboxes.md)

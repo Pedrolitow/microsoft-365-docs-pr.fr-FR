@@ -15,20 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/08/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6ef4b2097710c3e6094ef8190d0de7e94ddf4b3c
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882092"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284156"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Veillez à mettre à jour votre protection antivirus, même si Antivirus Microsoft Defender est en cours d’exécution en [mode passif.](microsoft-defender-antivirus-compatibility.md) Il existe deux types de mises à jour liées au Antivirus Microsoft Defender à jour :
@@ -139,7 +139,6 @@ Aucun problème connu
 - Publication d’un nouvel [analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 - Antivirus Microsoft Defender contre le chargement de DLLs malveillantes
 - Antivirus Microsoft Defender renforcé contre le contournement TrustedInstaller
-- Prise en charge supplémentaire de la configuration des exclusions de règles de réduction de la surface d’attaque [par règle](customize-attack-surface-reduction.md)
 - Extension des notifications de modification de fichier pour inclure plus de données pour Human-Operated ransomware (HumOR)
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -598,7 +597,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Correction d’un problème relatif aux fichiers de localisation
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2110.01</summary>
@@ -612,7 +611,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -623,10 +622,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -637,10 +636,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -654,7 +653,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -665,10 +664,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -679,10 +678,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -710,7 +709,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -721,10 +720,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -735,10 +734,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -752,7 +751,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -763,7 +762,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées
@@ -777,10 +776,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucun changement
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucun changement
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>

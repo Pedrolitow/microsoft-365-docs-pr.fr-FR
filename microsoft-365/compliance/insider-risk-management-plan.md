@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 848d1ea09cf64d107750e3a09580f2aaafff4887
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 9ea95245d983f14d57b15884fa8d1edbc54d5cb6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241199"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283196"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -51,10 +51,31 @@ Si vous avez besoin que des parties prenantes spécifiques soient impliquées da
 
 Sélectionnez des parties prenantes dédiées pour surveiller et examiner les alertes et les cas à une cadence régulière dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com). Assurez-vous de bien comprendre comment vous allez affecter différentes parties prenantes aux différents groupes de rôles disponibles dans la gestion des risques internes.
 
->[!IMPORTANT]
->Assurez-vous que vous avez toujours  au moins  un utilisateur dans les groupes de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
+> [!IMPORTANT]
+> Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Selon la structure de votre équipe de gestion de la conformité, vous avez la choix d’affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Pour afficher l’onglet Autorisations dans le Centre de conformité Microsoft 365 et gérer les groupes  de **rôles,** vous devez être affecté au groupe de rôles Gestion de l’organisation ou avoir le rôle Gestion des *rôles.* Choisissez parmi ces options de groupe de rôles lors de la configuration de la gestion des risques internes :
+Six groupes de rôles sont utilisés pour configurer les autorisations initiales afin de gérer les fonctionnalités de gestion des risques internes. Pour **rendre** la gestion des risques internes disponible en tant qu’option de menu dans Centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
+
+- Azure Active Directory administrateur [*général*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory [*d’administrateur de conformité de l’application*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centre de conformité Microsoft 365 groupe de [*rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- Centre de conformité Microsoft 365 [*de rôle Administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de l’application
+- *Groupe de rôles Gestion des risques internes*
+- *Groupe de rôles d’administrateur de gestion des* risques internes
+
+Les membres des rôles suivants ont les mêmes autorisations de solution incluses avec le groupe de rôles Administrateur de la gestion *des* risques internes :
+
+- Azure Active Directory administrateur *général*
+- Azure Active Directory *de conformité de l’application*
+- Centre de conformité Microsoft 365 *gestion de l’organisation*
+- Centre de conformité Microsoft 365 de *conformité de l’application*
+
+> [!IMPORTANT]
+> Assurez-vous que vous avez toujours  au moins  un utilisateur dans les groupes de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes (selon l’option que vous choisissez) afin que votre configuration de gestion des risques internes n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
+
+Selon la façon dont vous souhaitez gérer les stratégies et les alertes de gestion des risques internes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines de fonctionnalités de gestion des risques internes. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les  administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles Gestion des risques internes. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
+
+Choisissez parmi ces options de groupe de rôles de solution lors de la configuration et de la gestion de la gestion des risques internes :
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :------------- | :------------------- |

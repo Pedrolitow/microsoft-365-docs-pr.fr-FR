@@ -17,19 +17,19 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 10/18/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b812ffc9e3e476f05cd272a622f1a78a7ef9b93c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163337"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282764"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 La protection contre la falsification est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
@@ -38,13 +38,13 @@ La protection contre la falsification est disponible pour les appareils qui exé
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server 2012 R2
 
 > [!NOTE]
-> La protection contre la falsification Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans la solution unifiée moderne pour [Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> La protection contre la falsification Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans la solution unifiée moderne pour [Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -57,7 +57,7 @@ Avec la protection contre la falsification, les applications malveillantes ne pe
 - Désactivation de la protection cloud
 - Suppression des mises à jour de l’intelligence de la sécurité
 
-### <a name="how-it-works"></a>Fonctionnement
+### <a name="how-it-works"></a>Mode de fonctionnement
 
 La protection contre la falsification verrouille Antivirus Microsoft Defender à ses valeurs par défaut sécurisées et empêche vos paramètres de sécurité d’être modifiés par le biais d’applications et de méthodes telles que :
 
@@ -137,7 +137,7 @@ Pour plus d’informations sur les publication, [voir Windows 10 de publication.
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activer la protection contre la falsification dans Microsoft 365 Defender portail.":::
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
 2. Choisissez **Paramètres** \> **points de terminaison.**
 

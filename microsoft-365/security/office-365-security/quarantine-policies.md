@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e31d0a75e8b891e4ab0e0293d7c0be98e625134
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 81bb257d809eeb16988118faaced2035b527c491
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064306"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283721"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -50,7 +50,7 @@ Les autorisations de stratégie de mise en quarantaine individuelles contenues d
 |---|:---:|:---:|:---:|
 |**Bloquer l’expéditeur** (_PermissionToBlockSender_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |**Delete** (_PermissionToDelete_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|**Preview** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|**Preview** (_PermissionToPreview_)||![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à libérer un message de la quarantaine** (_PermissionToRelease_)|||![Coche.](../../media/checkmark.png)|
 |**Autoriser les destinataires à demander qu’un message soit libéré** de la quarantaine (_PermissionToRequestRelease_)||![Coche](../../media/checkmark.png)||
 |
@@ -111,7 +111,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
        - **Autoriser les destinataires à libérer un message de la quarantaine**
        - **Autoriser les destinataires à demander qu’un message soit libéré de la quarantaine**
      - **Sélectionnez des actions supplémentaires que les destinataires peuvent prendre** sur les messages mis en quarantaine : sélectionnez une partie, l’ensemble ou aucune des valeurs suivantes :
-       - **Supprimer**
+       - **Delete**
        - **Aperçu**
        - **Bloquer l’expéditeur**
 
@@ -149,33 +149,54 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 
 Le _paramètre EndUserQuarantinePermissionsValue_ utilise une valeur décimale convertie à partir d’une valeur binaire. La valeur binaire correspond aux autorisations de mise en quarantaine de l’utilisateur final disponibles dans un ordre spécifique. Pour chaque autorisation, la valeur 1 est égale à True et la valeur 0 à False.
 
-L’ordre et les valeurs requis pour chaque autorisation individuelle dans les groupes d’autorisations prédéfinits sont décrits dans le tableau suivant :
+L’ordre et les valeurs requis pour chaque autorisation individuelle sont décrits dans le tableau suivant :
+
+<br>
+
+****
+
+|Autorisation|Valeur décimale|Valeur binaire|
+|---|:---:|:---:|
+|PermissionToViewHeader<sup>\*</sup>|128|10000000|
+|PermissionToDownload<sup>\*\*</sup>|64|01000000|
+|PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
+|PermissionToBlockSender|16|00010000|
+|PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
+|PermissionToPreview|2|00000010|
+|PermissionToDelete|1|00000001|
+|
+
+<sup>\*</sup> La valeur 0 ne masque pas le bouton Afficher l’en-tête du **message** dans les détails du message mis en quarantaine (le bouton est toujours disponible).
+
+<sup>\*\*</sup> Ce paramètre n’est pas utilisé (la valeur 0 ou 1 ne fait rien).
+
+<sup>\*\*\*</sup> Ne définissez pas ces deux valeurs sur 1. Définissez l’un sur 1 et l’autre sur 0, ou définissez les deux sur 0.
+
+Pour les autorisations d’accès limité, les valeurs requises sont :
 
 <br>
 
 ****
 
 |Autorisation|Accès limité|
-|---|:---:|
+|---|:--:|
+|PermissionToViewHeader|0|
+|PermissionToDownload|0|
+|PermissionToAllowSender|0|
 |PermissionToBlockSender|1|
-|PermissionToDelete|1|
-|PermissionToDownload<sup>\*</sup>|0|
+|PermissionToRequestRelease|1|
+|PermissionToRelease|0|
 |PermissionToPreview|1|
-|PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1|
-|PermissionToViewHeader<sup>\*</sup>|0|
-|Valeur binaire|01101010|
-|Valeur décimale à utiliser|106|
+|PermissionToDelete|1|
+|Valeur binaire|00011011|
+|Valeur décimale à utiliser|27|
 |
-
-<sup>\*</sup> Actuellement, cette valeur est toujours 0. Pour PermissionToViewHeader, la valeur 0 ne masque pas le bouton Afficher l’en-tête du **message** dans les détails du message mis en quarantaine (le bouton est toujours disponible).
-
-<sup>\*\*</sup> Ne définissez pas ces deux valeurs sur 1. Définissez l’un sur 1 et l’autre sur 0, ou définissez les deux sur 0.
 
 Cet exemple crée une stratégie de mise en quarantaine nommée LimitedAccess avec des notifications de mise en quarantaine qui sont mises en quarantaine et qui attribue les autorisations d’accès limité comme décrit dans le tableau précédent.
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 -EsnEnabled $true
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
 Pour les autorisations personnalisées, utilisez le tableau précédent pour obtenir la valeur binaire qui correspond aux autorisations de votre choix. Convertissez la valeur binaire en valeur décimale et utilisez la valeur décimale pour le paramètre _EndUserQuarantinePermissionsValue._
@@ -238,7 +259,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Mise en quarantaine. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies de filtrage du courrier indésirable dans PowerShell. Pour les paramètres _SpamAction,_ _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de mise en quarantaine n’est effective que si la valeur est Mise en quarantaine.
 
@@ -446,7 +467,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _valeurs_ du paramètre Action Block, Replace ou DynamicDelivery peuvent entraîner la mise en quarantaine des messages (la valeur Autoriser ne met pas les messages en quarantaine). La valeur du paramètre _Action_ n’est significative que lorsque la valeur du _paramètre Enable_ est `$true` .
 
@@ -673,7 +694,7 @@ Si la stratégie de mise en quarantaine attribue les **autorisations** d’accè
 
 - **Notifications de mise en** quarantaine : les boutons suivants sont disponibles :
   - **Bloquer l’expéditeur**
-  - **Débloquer**
+  - **Version**
   - **Révision**
 
   ![Boutons disponibles dans la notification de mise en quarantaine si la stratégie de mise en quarantaine accorde à l’utilisateur des autorisations d’accès total.](../../media/quarantine-tags-esn-full-access.png)

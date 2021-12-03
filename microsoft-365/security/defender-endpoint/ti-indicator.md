@@ -2,7 +2,6 @@
 title: Type de ressource Indicateur
 description: Spécifiez les détails de l’entité et définissez l’expiration de l’indicateur à l’aide de Microsoft Defender pour endpoint.
 keywords: api, api pris en charge, get, TiIndicator, Indicateur, récent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8e8660574f65d614bacfe705d7fad19e39d501a6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110078"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282799"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -54,20 +54,20 @@ Propriété|Type|Description
 id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
 indicatorValue|String|Valeur de [l’indicateur](ti-indicator.md).
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
-application|Chaîne|Application associée à l’indicateur.
+application|String|Application associée à l’indicateur.
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
-|externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
+|externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
 createdBySource|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
-lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
+lastUpdatedBy|String|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
 title|String|Titre de l’indicateur.
-description|Chaîne|Description de l’indicateur.
-recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
+description|String|Description de l’indicateur.
+recommendedActions|String|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 generateAlert|Énum|**True si** la génération d’alerte est **requise, False** si cet indicateur ne doit pas générer d’alerte.

@@ -1,8 +1,7 @@
 ---
 title: Exporter l’évaluation de la configuration sécurisée par appareil
 description: Renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
-search.product: eADQiWindows 10XVcnh
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e2e312af0158aa2d55ae9d8589712eef618f51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150071"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284240"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,7 +39,7 @@ Il existe différents appels d’API pour obtenir différents types de données.
 
 - [Exporter la réponse **JSON** d’évaluation](#1-export-secure-configuration-assessment-json-response)de la configuration sécurisée : l’API tire toutes les données de votre organisation en tant que réponses Json. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-- [Exporter l’évaluation de la configuration **sécurisée via des fichiers**](#2-export-secure-configuration-assessment-via-files): cette solution API permet d’obtenir plus de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
+- [Exporter l’évaluation de la configuration **sécurisée via des fichiers**](#2-export-secure-configuration-assessment-via-files): cette solution API permet d’obtenir plus de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
@@ -53,7 +52,7 @@ Les données collectées (à l’aide de la réponse _JSON_ ou _via_ des fichier
 
 ## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exporter l’évaluation de la configuration sécurisée (réponse JSON)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
 
 Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
@@ -80,7 +79,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ### <a name="14-parameters"></a>1.4 Paramètres
 
-- valeur par \( défaut de pageSize = 50 000 \) : nombre de résultats en réponse.
+- pageSize \( par défaut = 50 000 : nombre de résultats en \) réponse.
 - \$top : le nombre de résultats à renvoyer ne \( retourne \@ pas odata.nextLink et, par conséquent, ne tire pas toutes les \) données.
 
 ### <a name="15-properties"></a>1.5 Propriétés
@@ -106,8 +105,8 @@ DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.euro
 IsApplicable|bool|Indique si la configuration ou la stratégie est applicable|true
 IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.|false
 IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée|true
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
-RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».|Serveurs
+OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10 et Windows 11
+RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.|sca-_-scid-20000
 Timestamp|string|Dernière fois que la configuration a été vue sur l’appareil|2020-11-03 10:13:34.8476880
 |
@@ -130,7 +129,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -147,7 +146,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -181,7 +180,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -198,7 +197,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",
@@ -218,7 +217,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Exporter l’évaluation de la configuration sécurisée (via des fichiers)
 
-### <a name="21-api-method-description"></a>2.1 Description de la méthode API
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
 Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
@@ -228,7 +227,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 ---|---|---

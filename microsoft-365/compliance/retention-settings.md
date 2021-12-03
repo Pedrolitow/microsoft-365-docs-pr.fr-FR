@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240815"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282980"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -220,7 +220,7 @@ L’emplacement **Courrier Exchange** prend en charge la rétention du courrier 
 
 Les boîtes aux lettres de ressources, les contacts et les boîtes aux lettres de groupe Microsoft 365 ne sont pas pris en charge pour les e-mails Exchange. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** . Bien que l’emplacement Exchange autorise initialement la sélection d’une boîte aux lettres de groupe pour une étendue statique, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur vous précisant que « RemoteGroupMailbox » n’est pas une sélection valide pour cet emplacement.
 
-Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](create-and-manage-inactive-mailboxes.md) peuvent être incluses ou non :
+Selon la configuration de votre stratégie, les boîtes aux lettres [inactives](inactive-mailboxes-in-office-365.md) peuvent être incluses ou non :
 
 - Les étendues de stratégie statique incluent les boîtes aux lettres inactives lorsque vous utilisez la configuration par défaut Tous les **destinataires,** mais ne sont pas pris en charge pour des [inclusions ou des exclusions spécifiques.](#a-policy-with-specific-inclusions-or-exclusions) Toutefois, si vous incluez ou excluez un destinataire qui possède une boîte aux lettres active au moment où la stratégie est appliquée et que la boîte aux lettres devient inactive par la suite, les paramètres de rétention continuent d’être appliqués ou exclus.
 

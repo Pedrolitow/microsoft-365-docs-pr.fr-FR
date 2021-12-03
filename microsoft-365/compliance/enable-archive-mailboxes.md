@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 0519853f526254173c086ff353c6e5f5cf0208a2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786373"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284004"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -51,15 +51,15 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
    > [!NOTE]
    > La page **Archive** affiche au maximum 500 utilisateurs.
 
-4. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage.
+3. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage.
 
    ![Cliquer sur Activer dans le volet d’informations de l’utilisateur sélectionné pour activer la boîte aux lettres d’archivage.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-5. Dans le volet d’informations de l’utilisateur sélectionné, cliquez sur **Activer**.
+4. Dans le volet d’informations de l’utilisateur sélectionné, cliquez sur **Activer**.
 
    Un avertissement s'affiche indiquant que si vous activez la boîte aux lettres d'archivage, les éléments de la boîte aux lettres de l'utilisateur qui sont plus anciens que la stratégie d'archivage attribuée à la boîte aux lettres seront déplacés vers la nouvelle boîte aux lettres d'archivage. La stratégie d'archivage par défaut qui fait partie de la stratégie de rétention attribuée aux boîtes aux lettres Exchange Online déplace les éléments vers la boîte aux lettres d'archivage deux ans après la date à laquelle l'élément a été remis à la boîte aux lettres ou créé par l'utilisateur. Pour plus d'informations, consultez la section **Plus d'informations** de cet article.
 
-6. Cliquez sur **Oui** pour activer la boîte aux lettres d’archivage.
+5. Cliquez sur **Oui** pour activer la boîte aux lettres d’archivage.
 
    La création de la boîte aux lettres d'archivage peut prendre quelques instants. Lorsqu'il est créé, **Archiver la boîte aux lettres : activé** s'affiche dans le volet de détails pour l'utilisateur sélectionné. Vous devrez peut-être cliquer sur **Actualiser** ![icône Actualiser.](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet de détails.
 
@@ -131,6 +131,16 @@ Pour désactiver la boîte aux lettres d’archivage pour tous les utilisateurs 
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
+
+## <a name="run-diagnostics-on-archive-mailboxes"></a>Exécuter des diagnostics sur des boîtes aux lettres d’archivage
+
+Vous pouvez exécuter une vérification de diagnostic automatisée sur la boîte aux lettres d’archivage d’un utilisateur pour identifier les problèmes et les résolutions suggérées.
+
+Pour exécuter la vérification de diagnostic, accédez à [Exécuter les tests :boîte aux lettres d’archivage](https://aka.ms/PillarArchiveMailbox).
+
+![Exécutez des diagnostics sur une boîte aux lettres d’archivage.](../media/ArchiveMailboxDiagnostics.png)
+
+Une page volante s’ouvre dans le Centre d'administration Microsoft 365. Entrez l’adresse e-mail de la boîte aux lettres que vous souhaitez vérifier, puis cliquez sur **Exécuter les tests.**
 
 ## <a name="more-information"></a>Plus d’informations
 

@@ -14,15 +14,16 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 03ed0e111e86a4283e5f54fd4cb61566e88979fb
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701406"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284468"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -31,7 +32,7 @@ ms.locfileid: "60701406"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou dans les organisations ayant Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
@@ -62,7 +63,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -83,7 +84,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 En créant une stratégie contre le courrier indésirable dans le Portail Microsoft 365 Defender, cela créé une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer.](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
@@ -166,10 +167,12 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      >
      > <sup>3</sup> Une valeur vide pour **Sélectionner une stratégie** signifie que la stratégie de mise en quarantaine par défaut pour ce verdict particulier est utilisé. Lorsque vous modifiez ultérieurement la stratégie anti-courrier indésirable ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage du courrier indésirable, consultez [ce tableau](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période expirée, le message est supprimé et ne peut plus être récupéré. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours.
+   - **Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période expirée, le message est supprimé et ne peut plus être récupéré. Une valeur valide est comprise entre 1 et 30 jours.
 
      > [!NOTE]
-     > Ce paramètre contrôle également la durée de rétention des messages mis en quarantaine par les stratégies anti-hameçonnage. Pour plus d’informations, [voir Messages mis en quarantaine dans EOP et Defender pour Office 365](quarantine-email-messages.md).
+     > La valeur par défaut est 15 jours dans la stratégie anti-courrier indésirable par défaut et dans les nouvelles stratégies anti-courrier indésirable que vous créez dans PowerShell. La valeur par défaut est 30 jours dans les nouvelles stratégies anti-courrier indésirable que vous créez dans le portail Microsoft 365 Defender courrier indésirable.
+     >
+     > Ce paramètre contrôle également la durée de rétention des messages mis en quarantaine par les stratégies **anti-hameçonnage.** Pour plus d’informations, [voir Messages mis en quarantaine dans EOP et Defender pour Office 365](quarantine-email-messages.md).
 
    - **Ajouter ce texte d’en-tête X**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné **Ajouter une en-tête X** comme verdict de filtrage du courrier indésirable. La valeur que vous spécifiez est le *nom* du champ d’en-tête ajouté à l’en-tête du message. La *valeur* du champ d’en-tête est toujours `This message appears to be spam`.
 
@@ -244,7 +247,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour afficher des stratégies anti-courrier indésirable
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
    - La valeur **Type** est **Stratégie anti-courrier indésirable personnalisée**
@@ -261,7 +264,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour modifier des stratégies anti-courrier indésirable
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
@@ -277,7 +280,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -302,7 +305,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 - Dans le Portail Microsoft 365 Defender, vous pouvez uniquement modifier la priorité de la stratégie de logiciel anti-courrier indésirable après l'avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
 - Les stratégies anti-courrier indésirable sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie possède la valeur **Priorité** 0). La stratégie anti-courrier indésirable par défaut contient la valeur priorité **la plus faible**, et vous ne pouvez pas la modifier.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -319,7 +322,7 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 
 Lorsque vous utilisez le Portail Microsoft 365 Defender pour supprimer une stratégie anti-courrier indésirable personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **Anti-courrier indésirable** dans la section **Stratégies**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
 
@@ -349,7 +352,7 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
 1. Créez la stratégie de filtrage du courrier indésirable.
 2. Créez la règle de filtrage du courrier indésirable qui spécifie la stratégie de filtrage du courrier indésirable à laquelle la règle s’applique.
 
- **Remarques** :
+ **Remarques** :
 
 - Vous pouvez créer une règle de filtrage de courrier indésirable et lui affecter une stratégie de filtrage de courrier indésirable existante, non associée. Une règle de filtrage anti-courrier indésirable ne peut pas être associée à plusieurs stratégies de filtrage de courrier indésirable.
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :
@@ -537,7 +540,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur 
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Remarque: pour définir la priorité d'une nouvelle règle lors de sa création, utilisez le paramètre _Priorité_ dans l’applet de commandes **New-HostedContentFilterRule**.
 - La stratégie de filtrage anti-courrier indésirable par défaut ne possède pas de règle de filtrage de courrier indésirable correspondante et contient toujours la valeur de priorité non modifiable **La plus faible**.

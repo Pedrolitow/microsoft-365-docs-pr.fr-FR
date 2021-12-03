@@ -2,7 +2,6 @@
 title: Type de ressource Machine
 description: Découvrez les méthodes et les propriétés du type de ressource Machine dans Microsoft Defender for Endpoint.
 keywords: api, api pris en charge, obtenir, ordinateurs
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f500c43aad99d36e2e40e0968f6093943c7f199
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 80ac3e9ed43de98d32fd14063261452cfd5b1372
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171184"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284048"
 ---
 # <a name="machine-resource-type"></a>Type de ressource Machine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -50,7 +49,7 @@ ms.locfileid: "61171184"
 |---|---|---|
 |[Répertorier les ordinateurs](get-machines.md)|[collection d’ordinateurs](machine.md)|Liste des [ensembles d’entités](machine.md) d’ordinateur dans l’organisation.|
 |[Obtenir un ordinateur](get-machine-by-id.md)|[ordinateur](machine.md)|Obtenir un [ordinateur par](machine.md) son identité.|
-|[Obtenir des utilisateurs connectés](get-machine-log-on-users.md)|Collection [user](user.md)|Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)|
+|[Obtenir des utilisateurs connectés](get-machine-log-on-users.md)|Collection d’[utilisateurs](user.md)|Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)|
 |[Obtenir les alertes associées](get-machine-related-alerts.md)|collection[alert](alerts.md)|Obtenir l’ensemble des [entités](alerts.md) d’alerte qui ont été élevés sur [l’ordinateur](machine.md).|
 |[Obtenir les logiciels installés](get-installed-software.md)|[collection de logiciels](software.md)|Extrait une collection de logiciels installés liés à un ID d’ordinateur donné.|
 |[Obtenir les vulnérabilités découvertes](get-discovered-vulnerabilities.md)|[collection de vulnérabilités](vulnerability.md)|Récupère une collection de vulnérabilités découvertes liées à un ID d’ordinateur donné.|

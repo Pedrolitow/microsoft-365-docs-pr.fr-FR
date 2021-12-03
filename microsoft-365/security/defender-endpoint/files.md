@@ -2,7 +2,6 @@
 title: Type de ressource Fichier
 description: Récupérer les alertes récentes de Microsoft Defender for Endpoint relatives aux fichiers.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205498"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283484"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,7 +43,7 @@ Représente une entité de fichier dans Defender pour le point de terminaison.
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Obtenir un fichier](get-file-information.md) | [file](files.md) | Obtenir un fichier unique 
+[Obtenir un fichier](get-file-information.md) | [fichier](files.md) | Obtenir un fichier unique 
 [Liste des alertes associées au fichier](get-file-related-alerts.md) | collection[alert](alerts.md) | Obtenez les [entités](alerts.md) d’alerte associées au fichier.
 [List file related machines](get-file-related-machines.md) | [collection d’ordinateurs](machine.md) | Obtenez les [entités de](machine.md) l’ordinateur associées à l’alerte.
 [statistiques de fichier](get-file-statistics.md) | Résumé des statistiques | Récupère la prévalence du fichier donné.
@@ -53,21 +54,21 @@ Méthode|Type renvoyé |Description
 |Propriété | Type | Description |
 |:---|:---|:---|
 |sha1 | String | Hachage Sha1 du contenu du fichier |
-|sha256 | Chaîne | Hachage Sha256 du contenu du fichier |
+|sha256 | String | Hachage Sha256 du contenu du fichier |
 |globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
 |taille | Nullable long | Taille du fichier |
-|fileType | Chaîne | Type du fichier |
+|fileType | String | Type du fichier |
 |isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
-|filePublisher | Chaîne | Éditeur de fichiers |
-|fileProductName | Chaîne | Nom du produit |
+|filePublisher | String | Éditeur de fichiers |
+|fileProductName | String | Nom du produit |
 |signataire | String | Signataire de fichiers |
-|émetteur | Chaîne | Émetteur de fichier |
+|émetteur | String | Émetteur de fichier |
 |signerHash | String | Hachage du certificat de signature |
-|isValidCertificate | Booléen | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
+|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
 |determinationType | String | Type de détermination du fichier |
-|determinationValue | Chaîne | Valeur de détermination |
+|determinationValue | String | Valeur de détermination |
 
 ## <a name="json-representation"></a>Représentation Json
 

@@ -1,10 +1,8 @@
 ---
-title: Configurer Microsoft Defender pour l’intégration des applications cloud
+title: Configurer l’intégration de Microsoft Defender for Cloud Apps
 ms.reviewer: ''
 description: Découvrez comment activer les paramètres pour activer l’intégration de Microsoft Defender for Endpoint avec Microsoft Defender pour les applications cloud.
 keywords: cloud, application, sécurité, paramètres, intégration, découverte, rapport
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 88952a3f2c8173b20b8ee81322a0312144197ad5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 666a0fd4a6f81db343082dd0c9c6209b6409fd53
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111602"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283676"
 ---
 # <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Configurer Microsoft Defender pour les applications cloud dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,8 +35,9 @@ ms.locfileid: "61111602"
 Pour tirer parti des signaux de découverte d’applications cloud Microsoft Defender pour endpoint, activer l’intégration de Microsoft Defender pour les applications cloud.
 
 > [!NOTE]
-> Cette fonctionnalité sera disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10, version 1709 (os build 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (os build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809  (Os Build 17763.379 avec [KB4489899](https://support.microsoft.com/help/4489899)) ou version Windows 10 versions ultérieures.
+> Cette fonctionnalité sera disponible avec une [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) licence E5 pour les Enterprise Mobility + Security sur les appareils exécutant Windows 10 et Windows 11.
 
+> [!TIP]
 > Consultez [Microsoft Defender pour l’intégration de point](/cloud-app-security/mde-integration) de terminaison avec Microsoft Defender pour les applications cloud pour une intégration détaillée de Microsoft Defender for Endpoint avec Microsoft Defender pour les applications cloud.
 
 ## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Activer Microsoft Defender pour les applications cloud dans Microsoft Defender pour le point de terminaison

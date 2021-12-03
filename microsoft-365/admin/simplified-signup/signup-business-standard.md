@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: 3a5fb932ac922f5555a0bbfaf18a3c1790cb2e8b
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: c7a217fa21b619de89e2f5f6a5605f3f301dfe12
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254368"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283028"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -105,7 +105,7 @@ Si vous souhaitez ajouter un domaine et créer un compte de messagerie professio
 - [Ajouter un domaine à Microsoft 365](../setup/add-domain.md)
 - [Terminez la configuration](../setup/setup-business-standard.md#finish-setting-up)
 
-## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Mise à jour des conditions d’utilisation pour le mode Sign-Up simplifié
+## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Mise à jour des conditions d’utilisation pour le mode d’inscription simplifié
 
 **S’applique à : abonnés existants de Microsoft 365 Business Standard qui** ont précédemment acheté en mode d’inscription simplifiée.
 

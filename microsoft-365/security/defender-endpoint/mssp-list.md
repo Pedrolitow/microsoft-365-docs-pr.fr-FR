@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97b6941d848cfc493097ef7f1e70c81bdff53b17
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e22ee784609ab04973d88de7539b567027cc98d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109108"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283124"
 ---
 # <a name="supported-managed-security-service-providers"></a>Fournisseurs de services de sécurité gérés pris en charge
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,11 +52,11 @@ Logo |Nom du partenaire   | Description
 ![Image du logo Quorum Cyber.](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un service d’ingénierie de sécurité de pointe & de recherche de menaces.
 ![Image du logo canary rouge.](images/redcanary-logo.png)| [Canary rouge](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary est un partenaire des opérations de sécurité pour les équipes modernes, mdr déployé en minutes
 ![Image du logo SecureWorks Managed Detection and Response Powered by Red Caption.](images/secureworks-logo.png)| [Détection et réponse gérées SecureWorks optimisées par l’environnement rouge](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combine l’intelligence des menaces et plus de 20 ans d’expérience dans SaaS et les solutions de sécurité gérées
-![Image du logo sepagoSOC.](images/sepago-logo.png)| [sepagoSOC](https://go.microsoft.com/fwlink/?linkid=2090491) | Garantir une sécurité globale par le biais de flux de travail automatisés sophistiqués dans votre environnement de confiance zéro
+![Image du logo sepagoSOC.](images/sepago-logo.png)| [sepagoSOC](https://go.microsoft.com/fwlink/?linkid=2090491) | Garantir une sécurité globale par le biais de flux de travail automatisés sophistiqués dans votre environnement De confiance zéro
 ![Image du logo Response Services de détection des menaces & Trustwave.](images/trustwave-logo.png)| [Trustwave Threat Detection & Response Services](https://go.microsoft.com/fwlink/?linkid=2127542) | Services de détection et de réponse aux menaces pour Azure à l’aide des intégrations avec Sentinel et Defender pour point de terminaison
 ![Image des services de sécurité gérés White Managed Security.](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |Véritable approche experte de la cybersécurité avec une tarification transparente sur chaque plateforme, mobile inclus.
 ![Image du logo SOC cloud de Captiontell.](images/wortell-logo.png)| [SOC cloud deTell](https://go.microsoft.com/fwlink/?linkid=2108415) | Service Defender pour point de terminaison géré 24 h/24 et 7 j/7 pour la surveillance & réponse
 ![Image du logo ZTAP (Zero Trust Analytics Platform).](images/ztap-logo.png)| [Plateforme d’analyse de confiance zéro (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Réduisez vos alertes de 99 % et accédez à une gamme complète de fonctionnalités de sécurité à partir d’appareils mobiles
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 - [Configurer l’intégration d’un fournisseur de sécurité de service géré](configure-mssp-support.md)

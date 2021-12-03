@@ -21,14 +21,14 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 11/30/2021
+ms.date: 12/02/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 198a6d5070a9766c4acd1a900e2eaa92b7f46a4e
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 8179d3fb8b5e24023dffab0d83695c33647e1c46
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234587"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284684"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 3 : Intégration
 
@@ -52,7 +52,7 @@ ms.locfileid: "61234587"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Intégrer des appareils à Microsoft Defender pour point de terminaison
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
 2. Choisissez **Paramètres** \> **l’intégration des points de** \> **terminaison** (sous **Gestion des appareils).**
 
@@ -65,12 +65,15 @@ ms.locfileid: "61234587"
 
 ### <a name="onboarding-methods"></a>Méthodes d’intégration
 
+> [!IMPORTANT]
+> Si vous utilisez Microsoft Defender pour le Cloud, consultez [Intégration à Microsoft Defender pour le Cloud.](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+
 Les méthodes de déploiement varient en fonction du système d’exploitation et des méthodes préférées. Le tableau suivant répertorie les ressources pour vous aider à intégrer Defender pour Endpoint :
 
 |Systèmes d’exploitation  |Méthodes  |
 |---------|---------|
-|Windows 10 ou ultérieure<br/><br/>Windows Server 2019 ou une ultérieure<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br><br/>   [Stratégie de groupe](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ou [Microsoft Defender pour le cloud](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
+|Windows 10 ou ultérieure<br/><br/>Windows Server 2019 ou une ultérieure<br/><br/>Windows Server, version 1803 ou ultérieure<br/><br/>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br><br/>   [Stratégie de groupe](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune. |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ou [Microsoft Defender pour le cloud](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  |
 |Windows 8.1 Entreprise<br/><br/>Windows 8.1 Professionnel<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
 | macOS (voir [La requise du système)](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Gestion des appareils mobiles](mac-install-with-other-mdm.md)   |
 | Linux (voir [La exigences du système)](microsoft-defender-endpoint-linux.md#system-requirements) |  [Script local](linux-install-manually.md) <br><br/> [Sondent](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  

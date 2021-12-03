@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109946"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254476"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -183,7 +183,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 - **Spécifiez une étiquette par défaut** pour les documents et e-mails sans étiquette, les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)), et maintenant une étiquette par défaut pour le [contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Les utilisateurs peuvent modifier l’étiquette de sensibilité par défaut appliquée pour mieux correspondre à la sensibilité de leur contenu ou conteneur.
     
     > [!NOTE]
-    > Déploiement pour les applications Office qui utilisent des étiquettes intégrées : ce paramètre prend désormais en charge les documents existants lorsqu’ils sont ouverts par les utilisateurs, ainsi que les nouveaux documents. Ce changement de comportement assure la parité avec le client d’étiquetage unifié Azure Information Protection. Pour plus d’informations sur le déploiement par application et les versions minimales, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
+    > En préversion pour les applications Office qui utilisent des étiquettes intégrées : ce paramètre prend désormais en charge les documents existants lorsqu’ils sont ouverts par les utilisateurs, ainsi que les nouveaux documents. Ce changement de comportement assure la parité avec le client d’étiquetage unifié Azure Information Protection. Pour plus d’informations sur le déploiement par application et les versions minimales, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
     
     Utilisez une étiquette par défaut pour définir des paramètres de protection de base à appliquer à votre contenu. Il faut noter que, sans formation des utilisateurs ou autres contrôles, ce paramètre peut également entraîner un étiquetage incorrect. Il est déconseillé de sélectionner une étiquette qui applique un chiffrement comme étiquette par défaut pour les documents. Par exemple, de nombreuses organisations doivent envoyer et partager des documents avec des utilisateurs externes qui ne possèdent peut-être pas des applications qui prennent en charge le chiffrement ou qui n’utilisent pas un compte pouvant être autorisé. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
     
