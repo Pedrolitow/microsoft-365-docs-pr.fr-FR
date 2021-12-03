@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: 0421a369964b30b767407cd99dba787edaff0e89
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 2207f7ef3988c83a527cbd046ad059ca225d411d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129131"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301353"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Étape 3. Configurer des stratégies de conformité pour des appareils avec Intune
 

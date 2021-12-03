@@ -1,9 +1,8 @@
 ---
 title: Connecteur d’Flow Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: Utilisez Microsoft Defender pour endpoint Flow connecteur pour automatiser la sécurité et créer un flux qui sera déclenché chaque fois qu’une nouvelle alerte se produit sur votre client.
+description: Utilisez Microsoft Defender for Endpoint Flow pour automatiser la sécurité et créer un flux qui sera déclenché chaque fois qu’une nouvelle alerte se produit sur votre client.
 keywords: flux, api pris en charge, api, flux Microsoft, requête, automatisation
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,29 +16,30 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 178e37e1906d219f7f503d6e76fad05afb09986f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c3ed9023df1cb7256265a116303fd6988677de4
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208060"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300477"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anciennement Microsoft Flow) et Azure Functions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-L’automatisation des procédures de sécurité est une exigence standard pour chaque centre des opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à fonctionner de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
+L’automatisation des procédures de sécurité est une exigence standard pour chaque centre des opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à travailler de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
 
 L’API Microsoft Defender dispose d’un connecteur Power Automate officiel avec de nombreuses fonctionnalités.
 
-![Image de modification des informations d’identification1.](images/api-flow-0.png)
+:::image type="content" alt-text="Image de modification des informations d’identification1." source="images/api-flow-0.png":::
 
 > [!NOTE]
 > Pour plus d’informations sur les conditions préalables de licence des connecteurs premium, voir [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
@@ -53,15 +53,15 @@ L’exemple suivant montre comment créer une Flow qui est déclenchée chaque f
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
-    ![Image de modification des informations d’identification2.](images/api-flow-1.png)
+    :::image type="content" alt-text="Image de modification des informations d’identification2." source="images/api-flow-1.png":::
 
 3. Choisissez un nom pour votre Flow, recherchez « Déclencheurs Microsoft Defender ATP » comme déclencheur, puis sélectionnez le nouveau déclencheur Alertes.
 
-    ![Image de modification des informations d’identification3.](images/api-flow-2.png)
+    :::image type="content" alt-text="Image de modification des informations d’identification3." source="images/api-flow-2.png":::
 
 Vous avez maintenant une Flow qui est déclenchée chaque fois qu’une nouvelle alerte se produit.
 
-![Image de modification des informations d’identification4.](images/api-flow-3.png)
+:::image type="content" alt-text="Image de modification des informations d’identification4." source="images/api-flow-3.png":::
 
 Il vous suffit maintenant de choisir les étapes suivantes.
 Par exemple, vous pouvez isoler l’appareil si la gravité de l’alerte est élevée et envoyer un e-mail à son sujet.
@@ -75,7 +75,7 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de l�
 
 3. Définissez **l’ID d’alerte** de la dernière étape en tant **qu’entrée.**
 
-    ![Image de modification des informations d’identification5.](images/api-flow-4.png)
+    :::image type="content" alt-text="Image de modification des informations d’identification5." source="images/api-flow-4.png" lightbox="images/api-flow-4.png":::
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Isoler l’appareil si la gravité de l’alerte est élevée
 
@@ -85,7 +85,7 @@ Le déclencheur d’alerte fournit uniquement l’ID d’alerte et l’ID de l�
 
    Si oui, ajoutez **l’action Microsoft Defender ATP - Isoler l’ordinateur** avec l’ID de l’ordinateur et un commentaire.
 
-    ![Image de modification des informations d’identification6.](images/api-flow-5.png)
+    :::image type="content" alt-text="Image de modification des informations d’identification6." source="images/api-flow-5.png" lightbox="images/api-flow-5.png":::
 
 3. Ajoutez une nouvelle étape pour l’envoi par courrier électronique de l’alerte et de l’isolation. Il existe plusieurs connecteurs de messagerie très faciles à utiliser, tels que Outlook ou Gmail.
 

@@ -3,7 +3,7 @@ title: Prise en charge D’ipv6 dans les services Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/01/2021
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : Décrit la prise en charge d’IPv6 dans Microsoft 365 composants et dans Microsoft 365 offres gouvernementales.'
-ms.openlocfilehash: 5d798f741caa1a9a2df69e1c4df1d45067d15ce3
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: a6a2e11ff2e312c02f10d152fe580bdead5fa7c9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262771"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301953"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Prise en charge D’ipv6 dans les services Microsoft 365
 
@@ -58,7 +58,7 @@ Sachez qu’IPv6 n’est pas pris en Skype Entreprise et ne peut plus être acti
 
 ### <a name="microsoft-teams-sip-gateway-and-ipv6"></a>Microsoft Teams, passerelle SIP et IPV6
 
-Microsoft Teams routage direct et la passerelle SIP ne prend en charge que IPv4. Le service Microsoft Teams et le client sont tous deux en charge IPv4 et IPv6. Si vous souhaitez contrôler les communications à Microsoft Teams, utilisez les plages d’adresses IP dans Microsoft 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Microsoft Teams routage direct et la passerelle SIP ne prisent en charge que le port IPv4. Le service Microsoft Teams et le client sont tous deux en charge IPv4 et IPv6. Si vous souhaitez contrôler les communications à Microsoft Teams, utilisez les plages d’adresses IP dans Microsoft 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection et IPv6
 

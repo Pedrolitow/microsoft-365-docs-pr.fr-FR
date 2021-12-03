@@ -18,41 +18,42 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4713621ab19f54d77c79fcd86aaebedf5a5be6a4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199656"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300429"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
+Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles fonctionnalités et améliorations.
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
 > [!TIP]
 > Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Point de terminaison.](whats-new-in-microsoft-defender-atp.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-endpoint.md)
 
 ## <a name="what-you-need-to-know"></a>Ce que vous devez savoir
 
-Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique, ces fonctionnalités :
+Les caractéristiques des fonctionnalités en préversion publique sont les suivantes :
 
-- Fonctionnalités restreintes ou limitées. Par exemple, la fonctionnalité ne peut s’appliquer qu’à une seule plateforme.
-- En règle générale, les modifications apportées aux fonctionnalités sont apportées avant d’être généralement disponibles.
-- Sont entièrement pris en charge par Microsoft.
-- Peut être disponible uniquement dans les régions géographiques ou les environnements cloud sélectionnés. Par exemple, la fonctionnalité n’existe peut-être pas dans le cloud du gouvernement.
-- Les fonctionnalités individuelles en prévisualisation peuvent avoir davantage de restrictions d’utilisation et de prise en charge. Si tel est le cas, ces informations sont généralement notées dans la documentation des fonctionnalités.
+- Elles peuvent avoir des fonctionnalités restreintes ou limitées. Par exemple, la fonctionnalité peut ne s’appliquer qu’à une seule plateforme.
+- Elles peuvent subir des modifications avant d’être généralement disponibles (GA).
+- Elles sont entièrement prises en charge par Microsoft.
+- Elles peuvent n’être disponibles que dans des régions géographiques ou des environnements cloud sélectionnés. Par exemple, la fonctionnalité peut ne pas exister dans le cloud Government.
+- Les fonctionnalités individuelles en préversion peuvent avoir des restrictions d’utilisation et de prise en charge supplémentaires. Si c’est le cas, ces informations sont généralement notées dans la documentation de la fonctionnalité.
 - Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production.
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
@@ -61,9 +62,9 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison \>  \>  \> **prévisualisation.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de \>  \>  \> **terminaison prévisualisation.**
 
-2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
 
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

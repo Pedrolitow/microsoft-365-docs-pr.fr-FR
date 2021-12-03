@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-overview
+ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: e0bcbfcadd1e604c4d75b3fa400b9028bf6eeee5
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: b16903ee5f93be193dd6973291aedb0d1099b931
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129100"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301166"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 

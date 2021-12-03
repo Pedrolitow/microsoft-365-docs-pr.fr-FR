@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse Vue d’ensemble de la page de conformité des appareils
+title: vue d Microsoft 365 Lighthouse de la page de conformité des appareils
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,29 +16,29 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page de conformité des appareils.
-ms.openlocfilehash: b3672c155f55d314f3e11a945e3a81d9a100142c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152513"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302349"
 ---
-# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page de conformité des appareils
+# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>vue d Microsoft 365 Lighthouse de la page de conformité des appareils
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse vous permet d’afficher des informations et des informations relatives à la conformité  des appareils Intune pour tous vos clients en sélectionnant Appareils dans le volet de navigation gauche pour ouvrir la page Conformité de l’appareil. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état de conformité entre les locataires, afficher une liste d’appareils pour chaque client et obtenir des rapports d’état sur les stratégies et paramètres de conformité.
+Microsoft 365 Lighthouse vous permet d’afficher des informations et des informations relatives à la conformité  des appareils Intune pour tous vos clients en sélectionnant Appareils dans le volet de navigation gauche pour ouvrir la page Conformité de l’appareil. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état de conformité entre les locataires, afficher la liste des appareils pour chaque client et obtenir des rapports d’état sur les stratégies et paramètres de conformité.
 
 ## <a name="overview-tab"></a>Onglet Overview  
   
-Sous l’onglet Vue d’ensemble, vous pouvez afficher l’état de conformité des appareils sur tous vos locataires, consulter les tendances mensuelles de conformité des appareils et déterminer si des stratégies de conformité leur sont affectées sur les appareils. Vous pouvez également afficher des informations sur les actions et les exigences de conformité des appareils clients en fonction des stratégies d’accès conditionnel. 
+Sous l’onglet Vue d’ensemble, vous pouvez afficher l’état de conformité des appareils sur tous vos locataires, consulter les tendances mensuelles de conformité des appareils et déterminer si des stratégies de conformité leur sont affectées sur les appareils. Vous pouvez également voir combien de locataires n’ont aucune exigence de conformité des appareils appliquée à l’aide de stratégies d’accès conditionnel. Vous pouvez sélectionner **Afficher plus pour** afficher plus de détails.
 
 Pour obtenir des informations détaillées sur la conformité des appareils pour un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce client. Cela ouvre l’onglet Appareils afin que vous pouvez afficher les détails de conformité de l’appareil pour le client sélectionné.
 
 Pour exporter les données de conformité de l’appareil vers Excel fichier de valeurs séparées par des virgules (.csv), sélectionnez **Exporter**.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Capture d’écran de l’onglet Vue d’ensemble.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Capture d’écran de l’onglet Vue d’ensemble." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## <a name="devices-tab"></a>Onglet Appareils
 
@@ -54,12 +54,12 @@ Sélectionnez n’importe quel nom d’appareil dans la liste pour afficher plus
 L’onglet Appareils inclut également les options suivantes :
 
 - **Exporter :** Choisissez d’exporter les données de conformité de l’appareil vers Excel fichier de valeurs séparées par des virgules (.csv).
-- **Actualiser :** Sélectionnez pour récupérer les données de conformité des appareils les plus récentes.
+- **Actualiser :** Sélectionnez cette sélection pour récupérer les données de conformité des appareils les plus récentes.
 - **Synchronisez :** Sélectionnez dans la liste un ou plusieurs appareils dont l’état est Non conforme, En période de grâce ou Non évalué, puis sélectionnez cette option pour forcer ces appareils à s’enregistrer auprès d’Intune et à recevoir immédiatement les stratégies qui leur ont été attribuées.
 - **Redémarrez :** Sélectionnez dans la liste un ou plusieurs appareils dont l’état est Non conforme, En période de grâce ou Non évalué, puis sélectionnez cette option pour redémarrer ces appareils.
 - **Recherche :** Entrez des mots clés pour localiser rapidement un appareil spécifique dans la liste.
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Capture d’écran de l’onglet Appareils.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Capture d’écran de l’onglet Appareils." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## <a name="policies-tab"></a>Onglet Stratégies
 
@@ -75,7 +75,7 @@ L’onglet Stratégies inclut également les options suivantes :
 - **Actualiser :** Sélectionnez pour récupérer les données de stratégie de conformité des appareils les plus récentes.
 - **Recherche :** Entrez des mots clés pour localiser rapidement une stratégie de conformité d’appareil spécifique dans la liste.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Capture d’écran de l’onglet Stratégies.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Capture d’écran de l’onglet Stratégies." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## <a name="settings-tab"></a>Paramètres’onglet
 
@@ -85,13 +85,13 @@ Pour voir les paramètres non conformes pour  les appareils sur une plateforme s
 
 Sélectionnez n’importe quel nom de paramètre non conforme dans la liste pour ouvrir un volet dans lequel vous pouvez afficher la liste des locataires qui ont des appareils avec ce paramètre non conforme spécifique. À partir de là, vous pouvez aller plus loin en sélectionnant n’importe quel client dans la liste pour afficher des informations sur les appareils au sein de ce client qui ont le paramètre non conforme spécifique. Vous pouvez également synchroniser ou redémarrer l’appareil, ou sélectionner Afficher l’appareil **dans Microsoft Endpoint Manager** si vous devez résoudre des problèmes ou prendre des mesures supplémentaires.
 
-L’Paramètres’onglet inclut également les options suivantes :
+L Paramètres’onglet inclut également les options suivantes :
 
 - **Exporter :** Choisissez d’exporter les données de paramètres non conformes vers un Excel valeurs séparées par des virgules (.csv).
 - **Actualiser :** Sélectionnez pour récupérer les données de paramètres non conformes les plus récentes.
 - **Recherche :** Entrez des mots clés pour localiser rapidement un paramètre non conforme spécifique dans la liste.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Capture d’écran de l Paramètres onglet.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Capture d’écran de l Paramètres onglet." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## <a name="related-content"></a>Contenu associé
 

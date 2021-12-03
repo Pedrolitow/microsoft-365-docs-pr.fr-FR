@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation avec des serveurs Skype Entreprise et Exchange locaux.
-ms.openlocfilehash: c6e12638ca0568bcf2ca692b53008971d897290e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9cb8db650a52b8789c66243d5d47bab1c9857230
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209752"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301701"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-_L’authentification moderne_ est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées. Elle est disponible pour les déploiements hybrides Office 365 du serveur Skype Entreprise local et serveur Exchange local, ainsi que pour les hybrides Skype Entreprise mixtes de domaines. Cet article contient des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et à certaines informations relatives aux clients (par exemple, les clients Outlook et Skype).
+_L’authentification moderne_ est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées. Il est disponible pour les déploiements hybrides Office 365 de serveurs Skype Entreprise locaux et Exchange locaux, ainsi que pour les déploiements hybrides Skype Entreprise domaines séparés. Cet article contient des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et à certaines informations relatives aux clients (par exemple, les clients Outlook et Skype).
 
 - [Qu’est-ce que l’authentification moderne ?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [Qu’est-ce qui change lorsque j’utilise l’authentification moderne ?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
@@ -40,13 +40,13 @@ _L’authentification moderne_ est une méthode de gestion des identités qui of
 
 L’authentification moderne est le terme générique d’une combinaison de méthodes d’authentification et d’autorisation entre un client (par exemple, votre ordinateur portable ou votre téléphone) et un serveur, ainsi que certaines mesures de sécurité basées sur les stratégies d’accès que vous connaissez peut-être déjà. Elle comprend :
 
-- **Méthodes d’authentification**: authentification multifacteur (MFA); authentification par carte à puce ; authentification basée sur les certificats clients
+- **Méthodes d’authentification**: authentification multifacteur (MFA) ; authentification par carte à puce ; authentification basée sur un certificat client
 - **Méthodes d’autorisation**: implémentation de l’autorisation Open de Microsoft (OAuth)
 - **Stratégies d’accès conditionnel** : accès conditionnel à la gestion des applications mobiles (GAM) et Azure Active Directory (Azure AD)
 
 La gestion des identités des utilisateurs avec une authentification moderne donne aux administrateurs de nombreux outils différents à utiliser dans le cadre de la sécurisation des ressources et offre des méthodes plus sécurisées de gestion des identités à la fois pour les scénarios locaux (Exchange et Skype pour les entreprises), Exchange hybride et Skype Entreprise hybride/domaine fractionné .
 
-Étant donné que Skype Entreprise fonctionne étroitement avec Exchange, le comportement de connexion des utilisateurs du client Skype Entreprise sera affecté par l’état d’authentification moderne d’Exchange. Cela s’applique également si vous disposez d’une architecture Skype Entreprise hybride _domaine séparé_, dans laquelle vous disposez de Skype Entreprise Online et de Skype Entreprise local, avec des utilisateurs hébergés aux deux emplacements.
+Étant donné Skype Entreprise fonctionne en étroite collaboration avec Exchange, le comportement de connexion Skype Entreprise les utilisateurs clients seront affectés par l’état d’authentification moderne Exchange. Cela s’applique également si vous disposez d’une architecture Skype Entreprise hybride _domaine séparé_, dans laquelle vous disposez de Skype Entreprise Online et de Skype Entreprise local, avec des utilisateurs hébergés aux deux emplacements.
 
 Pour plus d’informations sur l’authentification moderne dans Office 365, voir Office 365 [Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
@@ -60,7 +60,7 @@ Lorsque vous utilisez l'authentification moderne avec Skype Entreprises ou le se
 
 La modification apportée à evoSTS permet à vos serveurs locaux de tirer parti des fonctionnalités OAuth (émission de jeton) pour l’autorisation de vos clients, et permet également à vos serveurs locaux d’utiliser les méthodes de sécurité courantes dans le cloud (telles que l’authentification multifacteur). De plus, le evoSTS émet des jetons qui permettent aux utilisateurs de demander l’accès aux ressources sans fournir leur mot de passe dans le cadre de la demande. Quel que soit l'emplacement de vos utilisateurs (en ligne ou local), et quel que soit l'emplacement qui héberge la ressource nécessaire, EvoSTS devient le cœur de l'autorisation des utilisateurs et des clients une fois que l'authentification moderne configurée.
 
-Par exemple, si un client Skype Entreprise a besoin d’accéder au serveur Exchange pour obtenir des informations de calendrier pour le compte d’un utilisateur, il utilise la bibliothèque d’authentification Active Directory (ADAL) pour le faire. ADAL est une bibliothèque de code conçue pour rendre les ressources sécurisées de votre répertoire accessibles aux applications clientes à l’aide de jetons de sécurité OAuth. ADAL collabore avec OAuth pour vérifier les demandes et échanger des jetons (plutôt que des mots de passe), afin d'accorder à un utilisateur l'accès à une ressource. Dans le passé, l’autorité dans une transaction comme celle-ci, le serveur qui sait valider les revendications d’utilisateur et émettre les jetons nécessaires, peut avoir été un service d’émission de jeton de sécurité local, voire Active Directory Federation Services. Cependant, l’authentification moderne centralise cette autorité à l’aide d’Azure AD.
+Par exemple, si un client Skype Entreprise doit accéder au serveur Exchange pour obtenir des informations de calendrier au nom d’un utilisateur, il utilise la bibliothèque d’authentification Microsoft (MSAL) pour le faire. MSAL est une bibliothèque de code conçue pour mettre les ressources sécurisées de votre répertoire à la disposition des applications clientes à l’aide de jetons de sécurité OAuth. MSAL fonctionne avec OAuth pour vérifier les revendications et échanger des jetons (plutôt que des mots de passe), afin d’accorder à un utilisateur l’accès à une ressource. Dans le passé, l’autorité dans une transaction comme celle-ci (le serveur qui sait comment valider les revendications utilisateur et émettre les jetons nécessaires) peut avoir été un service d’émission de jeton de sécurité local, voire les services de fédération Active Directory. Cependant, l’authentification moderne centralise cette autorité à l’aide d’Azure AD.
 
 Cela signifie également que, même si vos environnements Exchange Server et Skype Entreprise peuvent être entièrement locaux, le serveur d’autorisation sera en ligne, et votre environnement local doit pouvoir créer et gérer une connexion à votre abonnement Office 365 dans le cloud (et l’instance Azure AD que votre abonnement utilise comme annuaire).
 
@@ -149,7 +149,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
 
     La disponibilité de l’authentification moderne est déterminée par la combinaison du client, du protocole et de la configuration. Si l’authentification moderne n’est pas prise en charge par le client, le protocole et/ou la configuration, le client continuera à tirer parti de l’authentification héritée.
   
-    Les protocoles et clients suivants permettent l’authentification moderne avec l’Exchange lorsque l’authentification moderne est activée dans l’environnement :
+    Les protocoles et clients suivants permettent l’authentification moderne avec les Exchange lorsque l’authentification moderne est activée dans l’environnement :
 
   |**Clients**|**Protocole principal**|**Notes**|
   |:-----|:-----|:-----|
@@ -161,7 +161,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
     Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne permettent pas l’authentification moderne avec les Exchange locaux et continuent à tirer parti des mécanismes d’authentification hérités même après l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
-  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour garantir que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
+  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour s’assurer que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.
   - Vos configurations d’identité sont les types pris en charge par Azure AD Connect, tels que la synchronisation de hachage de mot de passe, l’authentification relais et le STS local pris en charge par Office 365.
   - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.

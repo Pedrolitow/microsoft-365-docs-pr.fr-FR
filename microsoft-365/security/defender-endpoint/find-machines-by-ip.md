@@ -2,7 +2,6 @@
 title: Rechercher des appareils par API IP interne
 description: Rechercher les appareils visibles avec l’adresse IP interne demandée dans l’plage de temps de 15 minutes avant et après un timestamp donné
 keywords: api, api de graphique, api pris en charge, obtenir, appareil, IP, rechercher, rechercher un appareil, par ip, ip
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f8040ce207faef8ec802ddb637b97917c822801
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 702626d3e147bdd02c4988ffabbd158a44f911c7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168689"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302265"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Rechercher des appareils par API IP interne
 
@@ -29,8 +28,8 @@ ms.locfileid: "61168689"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

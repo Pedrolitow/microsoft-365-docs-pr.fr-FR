@@ -2,8 +2,6 @@
 title: Diffuser en continu des événements Microsoft Defender for Endpoint à votre Stockage client
 description: Découvrez comment configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: f853917497a34ff4cd82f10cc83d23f530572e45
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786293"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301401"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte
 
@@ -30,7 +28,7 @@ ms.locfileid: "60786293"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -38,7 +36,7 @@ ms.locfileid: "60786293"
 
 1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources > s’inscrire à **Microsoft.insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
@@ -52,9 +50,9 @@ ms.locfileid: "60786293"
 
 5. Choose **Forward events to stockage Azure**.
 
-6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) properties tab copy the text under Stockage account resource \> \> **ID:**
+6. Tapez votre **ID Stockage de ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) properties tab copy the text under Stockage account resource \> \> **ID:**
 
-   ![Image de l’ID1 de ressource du hub d’événements.](images/storage-account-resource-id.png)
+   :::image type="content" alt-text="Image de l’ID1 de ressource du hub d’événements." source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
 
 7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
@@ -62,16 +60,16 @@ ms.locfileid: "60786293"
 
 - Un conteneur d’objets blob est créé pour chaque type d’événement :
 
-  ![Image de l’ID2 de ressource du hub d’événements.](images/storage-account-event-schema.png)
+  :::image type="content" alt-text="Image de l’ID2 de ressource du hub d’événements." source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
 
 - Le schéma de chaque ligne d’un objet blob est le JSON suivant :
 
   ```json
   {
-          "time": "<The time WDATP received the event>"
-          "tenantId": "<Your tenant ID>"
-          "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+      "time": "<The time WDATP received the event>"
+      "tenantId": "<Your tenant ID>"
+      "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+      "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
@@ -79,7 +77,7 @@ ms.locfileid: "60786293"
 
 - Chaque ligne contient le nom de l’événement, le moment où Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée « properties ».
 
-- Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
+- Pour plus d’informations sur le schéma des événements De Microsoft Defender pour point de [terminaison, voir vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
 - Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. Pour plus [d’informations,](machine-groups.md) voir Groupes d’appareils.
 
@@ -104,6 +102,6 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 ## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
-- [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)
+- [API de diffusion en continu De Microsoft Defender pour les points de terminaison](raw-data-export.md)
 - [Diffuser des événements Microsoft Defender for Endpoint vers votre compte de stockage Azure](raw-data-export-storage.md)
-- [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)
+- [stockage Azure de compte d’utilisateur](/azure/storage/common/storage-account-overview)

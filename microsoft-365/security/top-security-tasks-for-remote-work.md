@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: cca53040dac60664955770f4be0bfc585cfb3405
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 2d68f65a711e5fc3b78f535a7125fb381475dbec
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122308"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301377"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 

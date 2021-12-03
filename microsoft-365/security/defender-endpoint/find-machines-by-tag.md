@@ -2,8 +2,7 @@
 title: Rechercher des appareils par API de balise
 description: Rechercher tous les appareils qui contiennent une balise specifc
 keywords: api, api pris en charge, obtenir, appareil, rechercher, rechercher un appareil, par balise, balise
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166949"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302193"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -29,8 +28,8 @@ ms.locfileid: "61166949"
 
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -82,7 +81,7 @@ Autorisation|String|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-tag|String|Nom de la balise. **Obligatoire**.
+tag|Chaîne|Nom de la balise. **Obligatoire**.
 useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande

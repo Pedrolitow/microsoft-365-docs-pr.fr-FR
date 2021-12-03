@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47613efb1f94b3e6fa4490fb981473574b0e5c4c
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bfd0b5e44eef9713d8a5cdda67948da9ef8a3709
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284180"
+ms.locfileid: "61300753"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -41,7 +41,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="whats-new-in-the-latest-release"></a>Nouveautés de la dernière version
 
-[Nouveautés dans Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md)
+[Nouveautés dans Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-endpoint.md)
 
 [Nouveautés de Microsoft Defender pour Point de terminaison sur Mac](mac-whatsnew.md)
 
@@ -86,7 +86,7 @@ La prise en charge des appareils macOS avec processeurs À puces M1 est officiel
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
-### <a name="licensing-requirements"></a>Conditions d'octroi de licence
+### <a name="licensing-requirements"></a>Critères de licence
 
 Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
 

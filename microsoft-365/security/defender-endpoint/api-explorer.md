@@ -3,8 +3,6 @@ title: Explorateur d’API dans Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Utiliser l’Explorateur d’API pour créer et faire des requêtes API, tester et envoyer des demandes pour n’importe quelle API disponible
 keywords: api, explorer, envoyer, demander, obtenir, publier,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aa2fabf744c1eeb272415fcd87bf5ef7b72d0ce3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e7d0e5927a85f2f3952221c294fe2387c268546
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168797"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300165"
 ---
 # <a name="api-explorer"></a>Explorateur d’API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 L’Explorateur d’API Microsoft Defender pour point de terminaison est un outil qui vous permet d’explorer différentes API Defender pour endpoint de manière interactive.
 

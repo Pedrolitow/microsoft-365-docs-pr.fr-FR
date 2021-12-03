@@ -16,24 +16,25 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2c0f342c62409e8bfcf782c22714d9fd707c24a7
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 4723b84e285e508e33ca4b54a1897bbed036a897
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555535"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300705"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Spécifier le niveau de protection cloud
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir une protection à vos points de terminaison beaucoup plus rapidement que par le biais de mises à jour d’informations de sécurité traditionnelles. Vous pouvez configurer votre niveau de protection cloud à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
 
 > [!NOTE]
-> La sélection **d’une** tolérance **élevée, élevée +** **ou** zéro peut entraîner la détection de certains fichiers légitimes. Si cela se produit, vous pouvez débloquer le fichier détecté ou en faire la demande dans le portail Microsoft 365 Defender.
+> La sélection **d’une** tolérance **élevée, élevée +** **ou** zéro peut entraîner la détection de certains fichiers légitimes. Si cela se produit, vous pouvez débloquer le fichier détecté ou le litige que la détection dans le portail Microsoft 365 Defender.
 
 ## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-protection"></a>Utiliser Microsoft Endpoint Manager pour spécifier le niveau de protection cloud
 
@@ -43,11 +44,12 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Sélectionnez **Propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
+5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
 
-    - **Élevé**: applique un niveau de détection élevé.
+    - **Non configuré :** état par défaut.
+    - **Élevé**: applique un niveau élevé de détection.
     - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut affecter les performances du client).
     - **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -63,16 +65,18 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
-3. Dans **l’Éditeur de gestion des stratégies de** groupe, allez **aux** \> **modèles d’administration de configuration ordinateur.**
+3. Dans **l’Éditeur de gestion des stratégies de** groupe, allez aux  \> **modèles d’administration de configuration ordinateur.**
 
 4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 
 5. Double-cliquez sur le paramètre Sélectionner le **niveau de protection cloud** et définissez-le sur **Activé.** Sélectionnez le niveau de protection :
+
+    - **Non configuré :** état par défaut.
     - **Le niveau de blocage par défaut** offre une détection forte sans augmenter le risque de détection de fichiers légitimes.
     - **Un niveau de blocage modéré** fournit un niveau modéré uniquement pour les détections à niveau de confiance élevé
-    - **Un niveau de blocage élevé** applique un niveau élevé de détection tout en optimisant les performances du client (mais peut également vous donner plus de chances de faux positifs).
+    - **Un niveau de blocage élevé** applique un niveau élevé de détection tout en optimisant les performances du client (mais peut également vous donner davantage de chances de faux positifs).
     - **Un niveau élevé + de blocage applique** des mesures de protection supplémentaires (peut affecter les performances du client et augmenter votre risque de faux positifs).
     - **Le niveau de blocage de tolérance zéro** bloque tous les exécutables inconnus.
 
@@ -81,7 +85,7 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 7. Déployez votre objet de stratégie de groupe mis à jour. Voir [La Console de gestion des stratégies de groupe](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Utilisez-vous des objets de stratégie de groupe en local ? Découvrez comment ils traduisent dans le cloud. [Analysez vos objets de stratégie](/mem/intune/configuration/group-policy-analytics)de groupe en local à l’aide de l’analyse de stratégie de groupe dans Microsoft Endpoint Manager - Aperçu . 
+> Utilisez-vous des objets de stratégie de groupe en local ? Découvrez comment ils traduisent dans le cloud. [Analysez vos objets de stratégie](/mem/intune/configuration/group-policy-analytics)de groupe en local à l’aide de l’analyse de stratégie de groupe dans Microsoft Endpoint Manager - Aperçu .
   
 ## <a name="see-also"></a>Voir aussi
 

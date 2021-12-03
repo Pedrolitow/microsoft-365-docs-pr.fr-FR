@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- remotework
+- m365solution-zerotrust
+- m365solution-overview
 description: Implémentez les principes, l’architecture et les fonctionnalités de confiance zéro pour Microsoft 365.
-ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284612"
+ms.locfileid: "61301673"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -82,7 +83,7 @@ Accédez [à la protection d’accès](office-365-security/microsoft-365-policie
 
 |Inclut  |Configuration requise  |N’inclut pas  |
 |---------|---------|---------|
-|Stratégies d’accès aux identités et appareils recommandées pour trois niveaux de protection :<br>- Point de départ<br>- Enterprise (recommandé)<br>- Spécialisé<br><br>Recommandations supplémentaires pour :<br>- Utilisateurs externes (invités)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 ou E5<br><br>Azure Active Directory dans l’un de ces modes :<br>- Cloud uniquement<br>- Hybride avec authentification de synchronisation de hachage de mot de passe (PHS)<br>- Hybride avec authentification directe (PTA)<br>- Fédéré     |Inscription des appareils pour les stratégies qui nécessitent des appareils gérés. Voir « Gérer les points de terminaison avec Intune » pour inscrire des appareils |
+|Stratégies d’accès aux identités et appareils recommandées pour trois niveaux de protection :<br>- Point de départ<br>- Enterprise (recommandé)<br>- Spécialisé<br><br>Recommandations supplémentaires pour :<br>- Utilisateurs externes (invités)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender pour les applications cloud| Microsoft E3 ou E5<br><br>Azure Active Directory dans l’un de ces modes :<br>- Cloud uniquement<br>- Hybride avec authentification de synchronisation de hachage de mot de passe (PHS)<br>- Hybride avec authentification directe (PTA)<br>- Fédéré     |Inscription des appareils pour les stratégies qui nécessitent des appareils gérés. Voir « Gérer les points de terminaison avec Intune » pour inscrire des appareils |
 | | | |
 
 Commencez par implémenter le niveau de départ. Ces stratégies ne nécessitent pas l’inscription d’appareils à la gestion. 
@@ -126,7 +127,7 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 
 |Inclut  |Configuration requise  |N’inclut pas  |
 |---------|---------|---------|
-| Configurer l’environnement d’évaluation et pilote pour tous les composants :<br>- Defender pour l’identité<br>- Defender for Office 365<br>- Defender pour le point de terminaison<br>- Microsoft Cloud App Security<br><br>Protéger contre les menaces<br><br> Examiner les menaces et y répondre   | Consultez les instructions pour en savoir plus sur les exigences en matière d’architecture pour chaque composant de Microsoft 365 Defender.        | Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Elle est incluse à l’étape 1 : Configurer la protection d’accès aux appareils et aux identités de confiance zéro.        |
+| Configurer l’environnement d’évaluation et pilote pour tous les composants :<br>- Defender pour l’identité<br>- Defender for Office 365<br>- Defender pour le point de terminaison<br>- Microsoft Defender pour les applications cloud<br><br>Protéger contre les menaces<br><br> Examiner les menaces et y répondre   | Consultez les instructions pour en savoir plus sur les exigences en matière d’architecture pour chaque composant de Microsoft 365 Defender.        | Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Elle est incluse à l’étape 1 : Configurer la protection d’accès aux appareils et aux identités de confiance zéro.        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Étape 5. Protéger et régir les données sensibles

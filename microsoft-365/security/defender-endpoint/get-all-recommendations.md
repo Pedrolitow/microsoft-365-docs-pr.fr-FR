@@ -2,7 +2,6 @@
 title: Répertorier toutes les actions d’amélioration
 description: Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
 keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm Microsoft Defender pour endpoint, api Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 66f7356b14b03b75804e849e6f7bb99faf37ca48
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727b20e6784016aac423a74c6b564fa96d6f5733
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168665"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301929"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -103,9 +102,9 @@ Voici un exemple de réponse.
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Recommendations",
     "value": [
         {
-            "id": "va-_-microsoft-_-windows_10",
-            "productName": "windows_10",
-            "recommendationName": "Update Windows 10",
+            "id": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11",
+            "productName": "windows_10" "Windows_11",
+            "recommendationName": "Update Windows 10" "Update Windows 11",
             "weaknesses": 397,
             "vendor": "microsoft",
             "recommendedVersion": "",
@@ -128,7 +127,7 @@ Voici un exemple de réponse.
             "totalMachineCount": 37,
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
-            "relatedComponent": "Windows 10"
+            "relatedComponent": "Windows 10" "Windows 11"
         }
         ...
      ]

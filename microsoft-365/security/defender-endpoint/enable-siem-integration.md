@@ -2,8 +2,6 @@
 title: Activer l’intégration SIEM dans Microsoft Defender pour endpoint
 description: Activez l’intégration SIEM pour recevoir des détections dans votre solution de gestion des événements et des informations de sécurité (SIEM).
 keywords: activer un connecteur siem, un siem, un connecteur, des informations de sécurité et des événements
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166973"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300177"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Activer l’intégration SIEM dans Microsoft Defender pour endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -56,7 +54,7 @@ Activez l’intégration des informations de sécurité et de la gestion des év
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **API Endpoints** \>  \> **SIEM**.
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="Image de l’intégration SIEM à partir Paramètres menu1.":::
+   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="Image de l’intégration SIEM à partir Paramètres menu1.":::
 
    > [!TIP]
    > Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres int gr es de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
@@ -66,7 +64,7 @@ Activez l’intégration des informations de sécurité et de la gestion des év
     > [!WARNING]
     > La secret client n’est affichée qu’une seule fois. Veillez à en conserver une copie en lieu sûr.
 
-    ![Image de l’intégration SIEM à partir Paramètres menu2.](images/siem_details.png)
+    :::image type="content" alt-text="Image de l’intégration SIEM à partir Paramètres menu2." source="images/siem_details.png" lightbox="images/siem_details.png":::
 
 3. Choisissez le type SIEM que vous utilisez dans votre organisation.
 

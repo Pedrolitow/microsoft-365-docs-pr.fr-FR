@@ -2,7 +2,6 @@
 title: API Isoler l’ordinateur
 description: Découvrez comment utiliser l’API Isoler l’ordinateur pour isoler un appareil de l’accès au réseau externe dans Microsoft Defender pour point de terminaison.
 keywords: api, api de graphique, api pris en charge, isoler l’appareil
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f01a63dd5a2fa5d5aa56f171617041044a267fbb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52063135280d9e91ca531546b4ae03cf5b42ccbf
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218129"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300789"
 ---
 # <a name="isolate-machine-api"></a>API Isoler l’ordinateur
 
@@ -52,8 +51,8 @@ Isole un appareil de l’accès au réseau externe.
 
 > [!IMPORTANT]
 >
-> - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
-> - L’isolation sélective est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
+> - L’isolation complète est disponible pour les appareils Windows 10 version 1703 et Windows 11.
+> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure, et Windows 11.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de fractionnement pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 ## <a name="permissions"></a>Autorisations

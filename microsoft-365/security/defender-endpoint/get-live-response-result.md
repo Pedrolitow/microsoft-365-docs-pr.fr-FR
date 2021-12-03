@@ -2,7 +2,6 @@
 title: Obtenir des résultats de réponse en direct
 description: Découvrez comment récupérer un résultat de commande de réponse en direct spécifique par son index.
 keywords: api, api de graphique, api pris en charge, téléchargement vers la bibliothèque
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,19 +20,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0301b43aa950969867f408c2cfcfa961a2a1d039
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163901"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300453"
 ---
 # <a name="get-live-response-results"></a>Obtenir des résultats de réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -59,7 +58,9 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
-  - **Windows 10**
+  - **Windows 11**
+  
+  - **Windows 10**
     - [Version 1909 ou](/windows/whats-new/whats-new-windows-10-version-1909) ultérieure
     - [Version 1903 avec](/windows/whats-new/whats-new-windows-10-version-1903) [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
@@ -149,7 +150,7 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Annuler l’action de l’ordinateur](cancel-machine-action.md)

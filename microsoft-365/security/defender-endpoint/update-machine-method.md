@@ -2,7 +2,6 @@
 title: API mettre à jour l’entité de l’ordinateur
 description: Découvrez comment mettre à jour des balises d’ordinateur à l’aide de cette API. Vous pouvez mettre à jour les balises et les propriétés devicevalue.
 keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, ID
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 12e4935c38a2c4748b05226237c5e31be756676c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 77876024faa7452ff284e30a587e72855068cc98
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203986"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301113"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -73,7 +73,7 @@ PATCH /api/machines/{machineId}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -86,7 +86,7 @@ Pour de meilleures performances, vous ne devez pas inclure de valeurs existantes
 
 Propriété|Type|Description
 :---|:---|:---
-machineTags|String collection|Ensemble de [balises d’ordinateur.](machine.md)
+machineTags|Collection de chaînes|Ensemble de [balises d’ordinateur.](machine.md)
 deviceValue|Nullable, enum|Valeur [de l’appareil.](tvm-assign-device-value.md) Les valeurs possibles sont : « Normal » (normal), « Low » (faible) et « High » (élevé).
 
 ## <a name="response"></a>Réponse
@@ -113,7 +113,7 @@ PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
-                     "Windows 10",
+                     "Windows 10" "Windows11",
                      "Windows Insider - Fast"
     ]
 }

@@ -2,7 +2,6 @@
 title: Type de ressource machineAction
 description: Découvrez les méthodes et les propriétés du type de ressource MachineAction dans Microsoft Defender for Endpoint.
 keywords: api, api pris en charge, obtenir, machineaction, récent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 625170f0e589ece6f6277dc8445f3af7bef11837
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171160"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301857"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -70,17 +69,17 @@ ms.locfileid: "61171160"
 |demandeur|String|Identité de la personne qui a exécuté l’action.|
 |externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 |requestSource|string|Nom de l’utilisateur/de l’application qui a soumis l’action.|
-|Commandes |tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
+|commandes|tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
 |cancellationRequestor|String|Identité de la personne qui a annulé l’action.|
 |requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
-|cancellationComment|String|Commentaire écrit lors de l’annulation de l’action.|
+|cancellationComment|Chaîne|Commentaire écrit lors de l’annulation de l’action.|
 |statut|Énum|État actuel de la commande. Les valeurs possibles sont : « En attente », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
 |machineId|String|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |computerDnsName|String|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
 |cancellationDateTimeUtc|DateTimeOffset|Date et heure d’annulation de l’action.|
 |lastUpdateDateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
-|title|String|Titre de l’action de l’ordinateur.|
+|title|Chaîne|Titre de l’action de l’ordinateur.|
 |relatedFileInfo|Classe|Contient deux propriétés. chaîne `fileIdentifier` , Enum `fileIdentifierType` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».|
 
 ## <a name="json-representation"></a>Représentation Json

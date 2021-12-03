@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: f553d303b0086483cabc8e60a7f0ec6a427c3486
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: f07a820de887179e89024a35cda3801c86fc1416
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221019"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300153"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7 Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations
 

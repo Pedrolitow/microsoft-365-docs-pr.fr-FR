@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 87e57c8744ebca36008e0c7767fc27309fa87617
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110462"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301461"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -75,7 +76,7 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 
 > [!TIP]
 >
-> - Découvrez les dernières améliorations apportées à Defender pour point de terminaison : [Nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md).
+> - Découvrez les dernières améliorations apportées à Defender pour point de terminaison : [Nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-endpoint.md).
 > - Microsoft Defender pour point de terminaison a démontré des fonctionnalités de détection et d’optique de pointe dans la dernière évaluation MITRE. Lire : [Aperçu de l'évaluation basée sur MITRE ATT&CK .](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>

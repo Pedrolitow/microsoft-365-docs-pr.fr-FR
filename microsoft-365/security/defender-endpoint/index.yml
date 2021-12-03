@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 08/30/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 09e17216ddc672c4126f83bad6c8326fb26e93cc
-  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+  ms.openlocfilehash: 2fb3ca5d1706556e4582aa5caeb4c33c952f5064
+  ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/20/2021
-  ms.locfileid: "61127956"
+  ms.lasthandoff: 12/03/2021
+  ms.locfileid: "61302133"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:
@@ -33,7 +33,7 @@ landingContent:
   - linkListType: whats-new
     links:
     - text: Nouveautés dans Microsoft Defender pour point de terminaison
-      url: whats-new-in-microsoft-defender-atp.md
+      url: whats-new-in-microsoft-defender-endpoint.md
     - text: Annonce de Microsoft Defender pour Endpoint Plan 1
       url: defender-endpoint-plan-1.md
   - linkListType: video

@@ -2,7 +2,6 @@
 title: Méthodes et propriétés du logiciel
 description: Récupère les principales alertes récentes.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,24 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f0f15f8a3cf7f40bd1fd2e64d4d37466cc12d67e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6b08b7c4ebb0a818dec5bdf799c3114d91764259
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122083"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301785"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -65,11 +63,11 @@ ms.locfileid: "61122083"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|Chaîne|ID logiciel|
+|id|String|ID logiciel|
 |Nom|String|Nom du logiciel|
 |Fournisseur|Chaîne|Nom de l’éditeur de logiciels|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
-|publicExploit|Booléen|Une exploitation publique existe pour certaines vulnérabilités|
+|publicExploit|Boolean|Une exploitation publique existe pour certaines vulnérabilités|
 |activeAlert|Booléen|L’alerte active est associée à ce logiciel|
 |exposedMachines|Entier long|Nombre d’appareils exposés|
 |impactScore|Double|Impact du score d’exposition de ce logiciel|

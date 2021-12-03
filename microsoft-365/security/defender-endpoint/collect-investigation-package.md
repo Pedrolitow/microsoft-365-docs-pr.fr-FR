@@ -2,7 +2,6 @@
 title: API collecter un package d’examen
 description: Utilisez cette API pour créer des appels liés à la collecte d’un package d’enquête à partir d’un appareil.
 keywords: api, api de graphique, api pris en charge, collecter un package d’enquête
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4359d2f135b965a06003d060def12b4ed053ca27
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171496"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302217"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -49,7 +48,7 @@ Collecter un package d’examen à partir d’un appareil.
 
 > [!IMPORTANT]
 >
-> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure.
+> - Ces actions de réponse sont uniquement disponibles pour les appareils Windows 10, version 1703 ou ultérieure, et Windows 11.
 
 ## <a name="permissions"></a>Autorisations
 

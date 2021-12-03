@@ -2,7 +2,6 @@
 title: Exécuter des commandes de réponse en direct sur un appareil
 description: Découvrez comment exécuter une séquence de commandes de réponse en direct sur un appareil.
 keywords: api, api de graphique, api pris en charge, téléchargement vers la bibliothèque
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,19 +20,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163121"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300957"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -72,7 +71,9 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
-  - **Windows 10**
+  - **Windows 11**
+  
+  - **Windows 10**
     - [Version 1909 ou](/windows/whats-new/whats-new-windows-10-version-1909) ultérieure
     - [Version 1903 avec](/windows/whats-new/whats-new-windows-10-version-1903) [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
@@ -228,7 +229,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Obtenir le résultat de la réponse en direct](get-live-response-result.md)

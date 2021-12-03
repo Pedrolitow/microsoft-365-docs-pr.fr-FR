@@ -2,7 +2,6 @@
 title: API d’ordinateur de tableau de bord
 description: Découvrez comment utiliser une API pour hors connexion d’un appareil à partir de Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, collecter un package d’enquête
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1b07ad9252b414dd84d2c73afa38c124851faef4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167045"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302385"
 ---
 # <a name="offboard-machine-api"></a>API d’ordinateur de tableau de bord
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +48,7 @@ Appareil de tableau de bord à partir de Defender pour point de terminaison.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Cette API est prise en charge Windows 10, les versions 1703 et ultérieures, ou Windows Server 2019 et versions ultérieures.
+> Cette API est prise en charge sur Windows 11, Windows 10, les versions 1703 et ultérieures ou Windows Server 2019 et versions ultérieures.
 >
 > Cette API n’est pas prise en charge sur les appareils MacOS ou Linux.
 

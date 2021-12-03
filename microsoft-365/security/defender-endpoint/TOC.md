@@ -4,7 +4,7 @@
 ### [Qu’est-ce que Microsoft Defender pour point de terminaison ?](microsoft-defender-endpoint.md)
 ### [Comparer Defender for Endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 ### [Configuration minimale requise](minimum-requirements.md)
-### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-atp.md)
+### [Qu’est-ce qui est nouveau dans Microsoft Defender pour point de terminaison ?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Fonctionnalités en préversion](preview.md)
 ### [Stockage de données et confidentialité](data-storage-privacy.md)
 ### [Vue d’ensemble du Centre de sécurité Microsoft Defender](use.md)
@@ -136,7 +136,7 @@
 ###### [Configuration du proxy statique](linux-static-proxy-configuration.md)
 ###### [Définir des préférences](linux-preferences.md)
 ###### [Détecter et bloquer des applications potentiellement indésirables](linux-pua.md)
-###### [Planifier des analyses avec Microsoft Defender pour point de terminaison Linux](linux-schedule-scan-atp.md)
+###### [Planifier des analyses avec Microsoft Defender pour point de terminaison Linux](linux-schedule-scan-mde.md)
 ###### [Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)](linux-update-MDE-Linux.md)
 
 

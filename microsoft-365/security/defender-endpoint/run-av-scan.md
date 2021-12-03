@@ -2,7 +2,6 @@
 title: API d’analyse antivirus
 description: Utilisez cette API pour créer des appels liés à l’exécution d’une analyse antivirus sur un appareil.
 keywords: api, api de graphique, api pris en charge, supprimer l’appareil de l’isolation
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f72c9c21318e7a571a7f6f47e825675e772ce7af
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 48788a50fc9794265103d838b4c8bbfb50d264ab
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163217"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302457"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :** 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +48,7 @@ Lancez Antivirus Microsoft Defender analyse sur un appareil.
 
 > [!IMPORTANT]
 >
-> - Cette action est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
+> - Cette action est disponible pour les appareils sur Windows 10 version 1709 ou ultérieure, et sur Windows 11.
 > - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, qu’Antivirus Microsoft Defender soit la solution antivirus active ou non. Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
 
 ## <a name="permissions"></a>Autorisations
