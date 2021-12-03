@@ -354,6 +354,8 @@
           href: energy-secure-collaboration.md
     - name: Santé
       items:
+        - name: Vue d’ensemble
+          href: healthcare-overview.md
         - name: Teams pour la santé publique
           href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
     - name: Éducation
