@@ -76,6 +76,8 @@
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Gérer les relations avec vos partenaires
   href: manage-partners.md
+- name: Évaluer les privilèges des partenaires
+  href: review-partner-admin-privileges.md
 - name: Fermer votre compte
   href: close-your-account.md
 - name: Contacter l’assistance
