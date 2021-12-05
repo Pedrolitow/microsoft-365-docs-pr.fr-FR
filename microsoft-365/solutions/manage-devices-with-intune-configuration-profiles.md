@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: cf97cda1d5d439877c7628611d35e6843e40fb7d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129128"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301341"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
@@ -30,7 +32,7 @@ Cet article offre des conseils sur la prise en main des profils de configuration
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-step-4.png#lightbox)
 
-Les profils de configuration vous permettent de configurer une protection importante et de mettre les appareils en conformité afin qu’ils puissent accéder à vos ressources. Ces types de modifications de configuration étaient précédemment configurés à l’aide des paramètres de stratégie de groupe dans Active Directory Domain Services. Une stratégie de sécurité moderne inclut le déplacement des contrôles de sécurité vers le cloud où leur application ne dépend pas de l’accès et des ressources locales. Les profils de configuration Intune sont le moyen de faire passer ces contrôles de sécurité vers le cloud. 
+Les profils de configuration vous permettent de configurer une protection importante et de mettre les appareils en conformité afin qu’ils puissent accéder à vos ressources. Ces types de modifications de configuration étaient précédemment configurés à l’aide des paramètres de stratégie de groupe dans Active Directory Domain Services. Une stratégie de sécurité moderne inclut le déplacement des contrôles de sécurité vers le cloud où l’application de ces contrôles ne dépend pas de l’accès et des ressources locales. Les profils de configuration Intune sont le moyen de faire passer ces contrôles de sécurité vers le cloud. 
 
 Pour vous donner une idée du type de profils de configuration que vous pouvez créer, voir [Appliquer des fonctionnalités et des paramètres sur vos appareils à l’aide des profils d’appareil dans Microsoft Intune](/mem/intune/configuration/device-profiles).
 
