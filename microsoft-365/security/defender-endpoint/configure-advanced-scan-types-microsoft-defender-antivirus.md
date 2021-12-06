@@ -13,21 +13,21 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2527a558d474fecaab813963dc38a9e76aa89d5c
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111830"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311745"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utiliser Microsoft Intune pour configurer les options d’analyse
 
@@ -38,6 +38,11 @@ Pour plus d’informations, voir Configurer les [paramètres](/intune/device-res
 Pour plus d’informations sur la configuration Microsoft Endpoint Manager (branche actuelle), voir Comment créer et déployer des stratégies de logiciel [anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)malveillant : Analyser les paramètres .
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Utiliser la stratégie de groupe pour configurer les options d’analyse
+
+> [!TIP]
+> Téléchargez la feuille de calcul de référence de stratégie de groupe, qui répertorie les paramètres de stratégie pour les configurations d’ordinateurs et d’utilisateurs qui sont inclus dans les fichiers de modèles d’administration Windows. Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe. <br/><br/> Voici les versions les plus récentes :
+> - [Tableur de Paramètres de référence de la stratégie de Windows 10 mise à jour de mai 2020 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Feuille de calcul Paramètres la stratégie de groupe pour Windows 11 mise à jour d’octobre 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
@@ -56,6 +61,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Élément de stratégie et emplacement|Paramètre par défaut (s’il n’est pas configuré)|Paramètre PowerShell `Set-MpPreference` ou propriété WMI pour la `MSFT_MpPreference` classe|
 |---|---|---|
 |Analyse du courrier électronique <p> **Analyse** \> **Activer l’analyse du courrier électronique**<p>Voir [limitations de l’analyse du](#email-scanning-limitations) courrier électronique (dans cet article)|Désactivé|`-DisableEmailScanning`|
+| Analyse des scripts | Activé  | Ce paramètre de stratégie vous permet de configurer l’analyse des scripts. Si vous activez ou ne configurez pas ce paramètre, l’analyse des scripts est activée. <p>Voir [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender)  | 
 |Analyser [les points d’analyse](/windows/win32/fileio/reparse-points) <p> **Analyse** \> **Activer l’analyse des points d’analyse**|Désactivé|Non disponible <p>Voir [Points d’parse](/windows/win32/fileio/reparse-points)|
 |Analyser les lecteurs réseau mappés <p> **Analyse** \> **Exécuter une analyse complète sur des lecteurs réseau mappés**|Désactivé|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Analyser les fichiers d’archive (tels .zip ou .rar fichiers). <p> **Analyse** \> **Analyser les fichiers d’archive**|Activé|`-DisableArchiveScanning` <p>La [liste d’exclusions des extensions](configure-extension-file-exclusions-microsoft-defender-antivirus.md) est prioritaire sur ce paramètre.|

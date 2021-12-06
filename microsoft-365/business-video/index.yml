@@ -17,7 +17,7 @@ productDirectory:
     - title: Prise en main
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Planifiez votre déplacement vers Microsoft 365 entreprise.
-      url: what-is-microsoft-365.md
+      url: ../admin/admin-overview/what-is-microsoft-365.md
     - title: Configurer Microsoft 365 Entreprises
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
       summary: 'Ajouter un domaine, ajouter des utilisateurs, configurer des stratégies de sécurité...'
@@ -64,7 +64,7 @@ productDirectory:
       url: get-help-support.md
 additionalContent:
   sections:
-    - title: En savoir plus
+    - title: Si vous souhaitez en savoir plus
       items:
         - title: En savoir plus sur Office
           summary: 'Découvrez comment utiliser Word, Excel, PowerPoint et d’autres Office applications.'

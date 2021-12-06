@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/03/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883676"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311818"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -30,7 +30,8 @@ ms.locfileid: "60883676"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Vous pouvez utiliser la [stratégie de](/windows/win32/srvnodes/group-policy) groupe pour configurer et gérer les Antivirus Microsoft Defender sur vos points de terminaison.
 
@@ -46,22 +47,22 @@ En règle générale, vous pouvez utiliser la procédure suivante pour configure
 
 4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender**.
 
-5. Développez la section (appelée Emplacement dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporter des modifications de configuration. 
+5. Développez la section (appelée Emplacement dans le tableau de cette rubrique) qui contient le paramètre que vous souhaitez configurer, double-cliquez sur le paramètre pour l’ouvrir et a apporté des modifications de configuration. 
 
 6. [Déployez l’GPO mis à jour comme vous le faites normalement.](/windows/win32/srvnodes/group-policy)
 
 ## <a name="group-policy-settings-and-resources"></a>Ressources et paramètres de stratégie de groupe
 
-Le tableau suivant de cette rubrique répertorie les paramètres de stratégie de groupe disponibles dans Windows 10, version 1703 et fournit des liens vers la rubrique appropriée dans cette bibliothèque de documentation (le cas échéant).
+Le tableau suivant répertorie les paramètres de stratégie de groupe couramment utilisés qui sont disponibles dans Windows 10.
 
 > [!TIP]
-> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe.<br/><br/>
+> Téléchargez la feuille de calcul de référence de stratégie de groupe, qui répertorie les paramètres de stratégie pour les configurations d’ordinateurs et d’utilisateurs qui sont inclus dans les fichiers de modèles d’administration Windows. Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe. <br/><br/> Voici les versions les plus récentes :
+> - [Tableur de Paramètres de référence de la stratégie de Windows 10 mise à jour de mai 2020 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Feuille de calcul Paramètres la stratégie de groupe pour Windows 11 mise à jour d’octobre 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
-<br>
+<br/><br/>
 
-****
-
-|Emplacement|Setting|Article|
+|Emplacement|Paramètre|Article|
 |---|---|---|
 |Interface client|Activer le mode d’interface utilisateur sans en-tête|[Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |Interface client|Afficher du texte supplémentaire pour les clients lorsqu’ils doivent effectuer une action|[Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)|
@@ -81,7 +82,7 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 |Système d’inspection du réseau|Activer le retrait des définitions|[Configurer le retrait des définitions](turn-on-definition-retirement.md)|
 |Système d’inspection du réseau|Activer la reconnaissance de protocole|[Activer la reconnaissance de protocole](turn-on-protocol-recognition.md)|
 |Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Quarantaine|Configurer la suppression des éléments du dossier de mise en quarantaine|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
+|Quarantaine|Configurer la suppression des éléments du dossier De quarantaine|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
 |Protection en temps réel|Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protection en temps réel|Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protection en temps réel|Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -98,21 +99,21 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 |Correction|Configurer le remplacement de paramètre local pour l’heure de la journée afin d’exécuter une analyse complète programmée pour terminer la correction|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Correction|Spécifier le jour de la semaine pour exécuter une analyse complète programmée afin de terminer la correction|[Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Correction|Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction|[Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Reporting|Désactiver les notifications améliorées|[Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
+|Rapports|Désactiver les notifications améliorées|[Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 |Root|Désactiver la Antivirus Microsoft Defender|Non utilisé (ce paramètre  doit être configuré sur Non configuré pour s’assurer que les applications antivirus tierces installées fonctionnent correctement)
 |Root|Définir des adresses pour contourner le serveur proxy|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Définir la connexion automatique du proxy (.pac) pour la connexion au réseau|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Définir un serveur proxy pour la connexion au réseau|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Configurer le comportement de fusion de l’administrateur local pour les listes|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Root|Autoriser le démarrage du service anti-programme malveillant avec une priorité normale|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
-|Root|Autoriser le service anti-programme malveillant à rester en cours d’exécution|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
+|Root|Autoriser le service anti-programme malveillant à rester toujours en cours d’exécution|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
 |Root|Désactiver la correction de routine|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
 |Root|Randomize scheduled task times|[Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Analyser|Autoriser les utilisateurs à suspendre l’analyse|[Empêcher les utilisateurs de voir ou d’interagir avec Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md) (non pris en charge sur Windows 10)|
 |Analyser|Vérifier les dernières définitions de virus et de logiciels espions avant d’exécution d’une analyse programmée|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Analyser|Définir le nombre de jours après lesquels une analyse de rattrapage est forcée|[Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Analyser|Activer l’analyse complète de rattrapage|[Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Analyser|Activer l’analyse rapide de rattrapage|[Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Analyser|Définir le nombre de jours après lesquels une analyse de rattrapage est forcée|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Analyser|Activer l’analyse complète de rattrapage|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Analyser|Activer l’analyse rapide de rattrapage|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Analyser|Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Analyser|Configurer le remplacement de paramètre local pour le jour de l’analyse de planification|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Analyser|Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -127,6 +128,7 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 |Analyser|Analyser les fichiers d’archive|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Analyser|Analyser les fichiers réseau|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Analyser|Analyser les exécutables packés|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+| Analyser | Analyser les scripts | [Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) <p>Voir également [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender).|
 |Analyser|Analyser les lecteurs amovibles|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Analyser|Spécifier la profondeur maximale pour analyser les fichiers d’archivage|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Analyser|Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse|[Configurer les options d’analyse dans Antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
@@ -144,7 +146,7 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 |Mises à jour de l’intelligence de la sécurité|Recherchez les dernières définitions de virus et de logiciels espions au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Mises à jour de l’intelligence de la sécurité|Définir des partages de fichiers pour le téléchargement des mises à jour d’informations de sécurité|[Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
 |Mises à jour de l’intelligence de la sécurité|Définir le nombre de jours après lesquels une mise à jour de l’intelligence de sécurité de rattrapage est requise|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Mises à jour de l’intelligence de la sécurité|Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme non à jour|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Mises à jour de l’intelligence de la sécurité|Définir le nombre de jours avant que les définitions de logiciels espions soient considérées comme non à jour|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Mises à jour de l’intelligence de la sécurité|Définir le nombre de jours avant que les définitions de virus soient considérées comme non à jour|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Mises à jour de l’intelligence de la sécurité|Définir l’ordre des sources pour le téléchargement des mises à jour de l’intelligence de la sécurité|[Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md)|
 |Mises à jour de l’intelligence de la sécurité|Lancer la mise à jour des informations de sécurité au démarrage|[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)|
@@ -154,7 +156,7 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 |Mises à jour de l’intelligence de la sécurité|Activer l’analyse après la mise à jour des informations de sécurité|[Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Menaces|Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
 |Menaces|Spécifier les menaces sur lesquelles l’action par défaut ne doit pas être prise lorsqu’elle est détectée|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
-|
+
 
 ## <a name="see-also"></a>Voir aussi
 

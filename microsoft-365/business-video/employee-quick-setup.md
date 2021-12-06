@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Aidez vos employés à apprendre à configurer Office applications qu’ils obtiennent avec Microsoft 365 Business Premium.
-ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 396af5d94b7bf68aef6998e86388306303ea1f26
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156953"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311781"
 ---
 # <a name="employee-quick-setup"></a>Configuration rapide pour les employés
 
-Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Regardez cette vidéo](what-is-microsoft-365.md) pour en savoir plus. Procédez ensuite comme suit.
+Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Regardez cette vidéo](../admin/admin-overview/what-is-microsoft-365.md) pour en savoir plus. Procédez ensuite comme suit.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Image montrant les étapes de configuration rapide de l’employé.":::
 
@@ -66,7 +66,7 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 
 - Vous pouvez également copier des fichiers du Bureau ou du dossier Documents dans **OneDrive**.
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer pour OneDrive à partir du dossier Documents.":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer dans une OneDrive dossier Documents.":::
 
     > [!TIP]
     > Vous pouvez également stocker des fichiers sur [des sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) Microsoft 365.
@@ -82,7 +82,7 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Obtenir des Outlook sur votre téléphone
 
-- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou de Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre courrier électronique et votre mot de passe.
+- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou du Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre courrier électronique et votre mot de passe.
 - Vous pouvez également ouvrir Outlook sur un appareil Android ou iOS et accéder aux **Paramètres**.
 
     Sélectionnez **Ajouter un compte**, **Ajouter un compte de courrier**, puis entrez votre adresse de courrier et votre mot de passe.

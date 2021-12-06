@@ -20,20 +20,20 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS (Transport Layer Security) utilisés pour le chiffrement dans Office 365 et Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e5fb8bc724e25fb6dfd948d20fd5ea77cdbbcf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167197"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311793"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
 Reportez-vous à cet article pour en savoir plus sur les certificats, les technologies et les suites de chiffrement TLS utilisés pour le chiffrement [dans Office 365](encryption.md). Cet article fournit également des détails sur les annulations planifiées.
   
 - Si vous recherchez des informations générales, voir [Chiffrement dans Office 365](encryption.md).
-- Si vous recherchez des informations d’installation, voir Configurer le chiffrement [dans Office 365 Entreprise](set-up-encryption.md).
-- Pour plus d’informations sur les suites de chiffrement pris en charge par des versions spécifiques de Windows, voir [Cipher Suites dans TLS/SSL (SSP Schannel).](/windows/desktop/SecAuthN/cipher-suites-in-schannel)
+- Si vous recherchez des informations d’installation, voir [Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md).
+- Pour plus d’informations sur les suites de chiffrement pris en charge par des versions spécifiques de Windows, voir Suites de chiffrement dans [TLS/SSL (SSP Schannel).](/windows/desktop/SecAuthN/cipher-suites-in-schannel)
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gestion et propriété de certificats Microsoft Office 365
 
@@ -41,7 +41,7 @@ Vous n’avez pas besoin d’acheter ou de gérer des certificats pour Office 36
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Normes de chiffrement actuelles et dépréciations planifiées
 
-Pour fournir un chiffrement de qualité supérieure, Office 365 examine régulièrement les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles deviennent plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprécations planifiées.
+Pour fournir un chiffrement de qualité supérieure, Office 365 examine régulièrement les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles sont devenues plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprécations planifiées.
 
 ## <a name="fips-compliance-for-office-365"></a>Conformité FIPS pour les Office 365
 
@@ -49,9 +49,9 @@ Toutes les suites de chiffrement Office 365 utilisent des algorithmes acceptable
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versions de TLS prises en charge par Office 365
 
-Les protocoles TLS et SSL qui étaient avant le protocole TLS sont des protocoles de chiffrement qui sécurisationnt les communications via un réseau à l’aide de certificats de sécurité pour chiffrer une connexion entre les ordinateurs. Office 365 prend en charge TLS version 1.2 (TLS 1.2).
+TLS et SSL qui sont arrivés avant le protocole TLS sont des protocoles de chiffrement qui sécurisationnt les communications via un réseau à l’aide de certificats de sécurité pour chiffrer une connexion entre les ordinateurs. Office 365 prend en charge TLS version 1.2 (TLS 1.2).
 
-TLS version 1.3 (TLS 1.3) n’est actuellement pas pris en charge.
+TLS version 1.3 (TLS 1.3) est pris en charge par certains services.
 
 > [!IMPORTANT]
 > N’oubliez pas que les versions TLS sont  dépréciées et qu’elles ne doivent pas être utilisées lorsque des versions plus récentes sont disponibles. Si vos services hérités ne nécessitent pas TLS 1.0 ou 1.1, vous devez les désactiver.
@@ -64,7 +64,7 @@ Pour maintenir une connexion sécurisée aux services Office 365 et Microsoft 36
   
 ## <a name="deprecating-support-for-3des"></a>Désaccatation de la prise en charge de 3DES
 
-Depuis le 31 octobre 2018, Office 365 ne prend plus en charge l’utilisation des suites de chiffrement 3DES pour la communication Office 365. Plus spécifiquement, Office 365 ne prend plus en charge la suite TLS_RSA_WITH_3DES_EDE_CBC_SHA chiffrement. Depuis le 28 février 2019, cette suite de chiffrement est désactivée dans Office 365. Les clients et serveurs qui communiquent Office 365 doivent prendre en charge un ou plusieurs chiffrements pris en charge. Pour obtenir la liste des chiffrements pris en charge, voir les suites de chiffrement [TLS](#tls-cipher-suites-supported-by-office-365)pris en charge par Office 365 .
+Depuis le 31 octobre 2018, Office 365 ne prend plus en charge l’utilisation des suites de chiffrement 3DES pour la communication Office 365. Plus spécifiquement, Office 365 ne prend plus en charge la suite TLS_RSA_WITH_3DES_EDE_CBC_SHA chiffrement. Depuis le 28 février 2019, cette suite de chiffrement a été désactivée dans Office 365. Les clients et serveurs qui communiquent Office 365 doivent prendre en charge un ou plusieurs chiffrements pris en charge. Pour obtenir la liste des chiffrements pris en charge, voir les suites de chiffrement [TLS](#tls-cipher-suites-supported-by-office-365)pris en charge par Office 365 .
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Arrêt de la prise en charge du certificat SHA-1 dans Office 365
 
@@ -72,7 +72,7 @@ Depuis juin 2016, Office 365 n’accepte plus de certificat SHA-1 pour les conne
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Suites de chiffrement TLS pris en charge par Office 365
 
-TLS utilise *des suites de chiffrement,* des collections d’algorithmes de chiffrement, pour établir des connexions sécurisées. Office 365 prend en charge les suites de chiffrement répertoriées dans le tableau suivant. Le tableau répertorie les suites de chiffrement par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier.
+TLS utilise des *suites de chiffrement,* des collections d’algorithmes de chiffrement, pour établir des connexions sécurisées. Office 365 prend en charge les suites de chiffrement répertoriées dans le tableau suivant. Le tableau répertorie les suites de chiffrement par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier.
 
 Office 365 répond à une demande de connexion en essayant d’abord de se connecter à l’aide de la suite de chiffrement la plus sécurisée. Si la connexion ne fonctionne pas, Office 365 la deuxième suite de chiffrement la plus sécurisée de la liste, et ainsi de suite. Le service continue dans la liste jusqu’à ce que la connexion soit acceptée. De même, lorsque Office 365 demande une connexion, le service de réception choisit si TLS sera utilisé et quelle suite de chiffrement utiliser.
 

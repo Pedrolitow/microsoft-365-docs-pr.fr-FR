@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 entreprise.
-ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128663"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311699"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
@@ -60,7 +60,7 @@ L’Assistant Installation vous permet d’installer les applications Microsoft 
   
 Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser les mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Microsoft 365 configuration et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
 
-Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider.](../../business-video/get-help-support.md)
+Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider !](../../business-video/get-help-support.md).
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>Cas où l'Assistant Configuration ne doit pas être utilisé : Synchronisation Active Directory et environnements hybrides
 

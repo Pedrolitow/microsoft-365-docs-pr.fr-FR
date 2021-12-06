@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: c7a217fa21b619de89e2f5f6a5605f3f301dfe12
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 37543ff91f9c3d46c73a07b9bb9110294b250ae2
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283028"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311723"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -147,7 +147,7 @@ Lorsque Facturation périodique est activée, votre abonnement sera toujours fac
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Que faire si je souhaite modifier mon nom d’entreprise ?
 
-Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à modifier votre nom d’entreprise. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../../business-video/get-help-support.md)
+Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à modifier votre nom d’entreprise. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../get-help-support.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

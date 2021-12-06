@@ -19,42 +19,44 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 00717c828935acf417957ef25401056fe0036e10
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110786"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311841"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification d’appareil plus riche.
 
+Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 et Windows 2019 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
-Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
+## <a name="set-up-device-discovery"></a>Configurer la découverte d’appareils
 
-> [!IMPORTANT]
-> Pour la prévisualisation, vous devez d’abord activer les fonctionnalités d’aperçu dans Microsoft 365 Defender.
-> Vous pouvez ensuite accéder à la configuration de découverte <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">d’appareils dans Microsoft 365 Defender portail.</a> La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans les portails Microsoft 365 Defender et Microsoft 365 Defender, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 Defender portail.
+Pour configurer la découverte d’appareils, prenez les étapes de configuration suivantes <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dans Microsoft 365 Defender portail :</a>
 
-Prenez les étapes de configuration suivantes dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail :</a>
+Accéder à la **Paramètres**  >  **détection d’appareils**
 
-1. Accédez à **Paramètres**  >  **détection d’appareil.**
-2. Sélectionnez le mode de découverte à utiliser sur vos appareils intégrés.
-3. Si vous avez choisi d’utiliser la découverte standard, sélectionnez les appareils à utiliser pour l’analyse active : tous les appareils ou sur un sous-ensemble en spécifiant leurs balises d’appareil.
-4. Cliquez sur **Enregistrer**.
+1. Si vous souhaitez configurer Basic comme mode de découverte à utiliser sur vos appareils intégrés, sélectionnez **Basic,** puis **Enregistrer**
+2. Si vous avez choisi d’utiliser la découverte standard, sélectionnez les appareils à utiliser pour l’analyse active : tous les appareils ou sur un sous-ensemble en spécifiant leurs balises d’appareil, puis sélectionnez **Enregistrer**
+
+> [!NOTE]
+>La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Exclure les appareils d’être activement sondés dans la découverte standard
 
-S’il existe des appareils sur votre réseau qui ne doivent pas être analysés activement (par exemple, les appareils utilisés comme des honeypots pour un autre outil de sécurité), vous pouvez également définir une liste d’exclusions pour empêcher leur analyse. Notez que les appareils peuvent toujours être découverts à l’aide du mode de découverte de base et peuvent également être découverts par le biais de tentatives de découverte multidiffusion. Ces appareils seront découverts passivement, mais ne seront pas activement sondés.   
+S’il existe des appareils sur votre réseau qui ne doivent pas être analysés activement (par exemple, les appareils utilisés comme des honeypots pour un autre outil de sécurité), vous pouvez également définir une liste d’exclusions pour les empêcher d’être analysés. Notez que les appareils peuvent toujours être découverts à l’aide du mode de découverte de base et peuvent également être découverts par le biais de tentatives de découverte multidiffusion. Ces appareils seront découverts passivement, mais ne seront pas activement sondés.
+
+Vous pouvez configurer les appareils à exclure dans la page **Exclusions.**
 
 ## <a name="select-networks-to-monitor"></a>Sélectionner les réseaux à surveiller
 
@@ -65,7 +67,7 @@ Vous pouvez configurer l’endroit où la découverte d’appareils peut être e
 La liste des réseaux sur lequel la découverte d’appareils peut être effectuée est affichée dans la page **Réseaux surveillés.**
 
 > [!NOTE]
-> La liste affiche les réseaux identifiés comme réseaux d’entreprise. Si moins de 50 réseaux sont identifiés comme réseaux d’entreprise, la liste affiche jusqu’à 50 réseaux avec le plus d’appareils intégrés. 
+> La liste affiche les réseaux identifiés comme réseaux d’entreprise. Si moins de 50 réseaux sont identifiés comme réseaux d’entreprise, la liste affiche jusqu’à 50 réseaux avec le plus d’appareils intégrés.
 
 La liste des réseaux surveillés est triée en fonction du nombre total d’appareils observés sur le réseau au cours des 7 derniers jours.
 
