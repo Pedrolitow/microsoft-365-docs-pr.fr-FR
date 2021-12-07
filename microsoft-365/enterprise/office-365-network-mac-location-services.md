@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Services de localisation de connectivité réseau
+title: Microsoft 365 Network Connectivity Location Services
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,17 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
-description: Microsoft 365 Services de localisation de connectivité réseau
-ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365 Network Connectivity Location Services
+ms.openlocfilehash: 6150102471b03fbc83be09b503a6969ca6615a87
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199920"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327663"
 ---
-# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Services de localisation de connectivité réseau
+# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Network Connectivity Location Services
 
-Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> affiche désormais les **recommandations** en matière Informations réseau et de performances, qui sont des mesures de performances en direct collectées à partir de Microsoft 365 client. Ces mesures ne peuvent être vues que par les utilisateurs administratifs de votre client. La connectivité réseau organisationnelle est conçue par emplacement de bureau via un emplacement de sortie réseau vers Internet. Microsoft 365 client utilise cet itinéraire, puis via Internet vers les serveurs de porte du service Microsoft. L’identification des emplacements de bureau est essentielle pour pouvoir afficher ces informations réseau.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> affiche désormais les **recommandations** Informations performances réseau, qui sont des mesures de performances en direct collectées à partir de Microsoft 365 client. Ces mesures ne peuvent être vues que par les utilisateurs administratifs de votre client. La connectivité réseau organisationnelle est conçue par emplacement de bureau via un emplacement de sortie réseau vers Internet. Microsoft 365 client utilise cet itinéraire, puis via Internet vers les serveurs de porte du service Microsoft. L’identification des emplacements de bureau est essentielle pour pouvoir afficher ces informations réseau.
 
 ## <a name="location-in-network-measurements"></a>Emplacement dans les mesures réseau
 
@@ -40,12 +40,12 @@ Tout contenu fourni par le biais Bing Cartes, y compris les géocodes, ne peut �
 
 Cette fonctionnalité, fournie via Bing Cartes, est également prise en charge par **TomTom**. Plus d’informations sur les produits et services de TomTom sont disponibles sur [https://www.tomtom.com/legal](https://www.tomtom.com/legal) .
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
+[Connectivité réseau dans le centre Administration Microsoft 365 de connexion](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 informations sur les performances du réseau (aperçu)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 informations sur les performances du réseau](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365'évaluation réseau (prévisualisation)](office-365-network-mac-perf-score.md)
+[Microsoft 365'évaluation du réseau](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 test de connectivité dans le Centre d'administration Microsoft 365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 test de connectivité dans le Centre d'administration Microsoft 365](office-365-network-mac-perf-onboarding-tool.md)

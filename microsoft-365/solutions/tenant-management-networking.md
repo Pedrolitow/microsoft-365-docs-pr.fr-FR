@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: dc31a1e400de0d428076406b100eb0a52c705546
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203698"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327615"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
 Microsoft 365 entreprise inclut des applications de productivité cloud telles que Teams et Exchange Online et Microsoft Intune, ainsi que de nombreux services d’identité et de sécurité Microsoft Azure. Tous ces services basés sur le cloud reposent sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients sur votre réseau local ou sur n’importe quel emplacement sur Internet. 
 
@@ -33,11 +33,11 @@ Pour optimiser l’accès réseau pour votre client, vous devez :
 - Optimisez l’accès au réseau global Microsoft pour vos utilisateurs distants qui utilisent une solution VPN d’accès à distance.
 - Utilisez network Informations pour concevoir le périmètre réseau de vos bureaux.
 - Optimisez l’accès à des ressources spécifiques hébergées sur SharePoint sites avec le Office 365 CDN.
-- Configurez les périphériques de périphérie réseau et proxy pour contourner le traitement du trafic Microsoft 365 approuvé avec la liste des points de terminaison et automatisez la mise à jour de la liste au fil des modifications.
+- Configurez les périphériques proxy et réseau edge pour contourner le traitement du trafic Microsoft 365 approuvé avec la liste des points de terminaison et automatisez la mise à jour de la liste au fil des modifications.
 
 ## <a name="enterprise-on-premises-workers"></a>Enterprise des employés locaux
 
-Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams sur une faible latence afin que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé soient sans problème.
+Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams sur une faible latence afin que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé ne rencontrent aucun problème.
 
 L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau global Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence, des points d’entrée d’application cloud haute disponibilité, appelés portes d’entrée, répartis dans le monde entier.
 
@@ -45,7 +45,7 @@ Voici un exemple de réseau d’entreprise traditionnel.
 
 ![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet.](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans les régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
+Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans les régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement et la sécurité des paquets supplémentaires pour le trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
 
 Les problèmes liés à cette configuration pour les services Microsoft 365 cloud sont les Microsoft 365 :
 
@@ -86,7 +86,7 @@ La segmentation de tunnel vous permet de configurer votre client VPN pour empêc
 
 Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, voir Office 365 [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) [catégories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) de points de terminaison et les listes des points de terminaison de catégorie Optimiser pour la tunnellation fractionner.
 
-Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la plupart du trafic vers Microsoft 365 applications cloud contournent la connexion VPN.
+Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la majeure partie du trafic vers Microsoft 365 applications cloud contourne la connexion VPN.
 
 ![Trafic réseau provenant de clients VPN avec tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
@@ -100,8 +100,8 @@ Les informations réseau sont des mesures de performances collectées à partir 
 
 Il existe deux informations réseau au niveau du client qui peuvent être affichées pour le client :
 
-- [Exchange exemples de connexions touchés par des problèmes de connectivité](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
-- [SharePoint exemples de connexions touchés par des problèmes de connectivité](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
+- [Exchange exemples de connexions touchés par des problèmes de connectivité](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
+- [SharePoint exemples de connexions touchés par des problèmes de connectivité](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
 
 Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
@@ -113,7 +113,7 @@ Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 - [Sortie réseau optimale de l’utilisateur chinois](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
 > [!IMPORTANT]
-> Les informations réseau, les recommandations en matière de performances et les évaluations dans le centre Administration Microsoft 365 sont actuellement en état d’aperçu. Il est uniquement disponible pour les Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+> Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le centre Administration Microsoft 365 sont actuellement en état d’aperçu. Il est uniquement disponible pour les Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 Pour plus d’informations, [voir Microsoft 365 Network Informations](../enterprise/office-365-network-mac-perf-insights.md).
 
@@ -125,7 +125,7 @@ Le réseau de distribution de contenu Office 365 est composé de plusieurs rés
 
 Lorsqu’elle est déployée et configurée, la Office 365 CDN télécharge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
 
-![Office 365 CDN déployés pour les utilisateurs.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
+![Office 365 CDN pour les utilisateurs.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
 
 Pour plus d’informations, [voir Utiliser la Office 365 CDN avec SharePoint Online.](../enterprise/use-microsoft-365-cdn-with-spo.md)
 
@@ -139,7 +139,7 @@ Vous pouvez utiliser PowerShell, Python ou d’autres langages pour déterminer 
 
 Le processus de base est :
 
-1. Utilisez le service web Office 365 d’URL et d’adresse IP et le mécanisme de configuration de votre choix pour configurer vos fichiers PAC et périphériques réseau avec l’ensemble actuel Microsoft 365 points de terminaison.
+1. Utilisez le service web Office 365 ADRESSE IP et URL et le mécanisme de configuration de votre choix pour configurer vos fichiers PAC et périphériques réseau avec l’ensemble actuel de points de terminaison Microsoft 365 réseau.
 2. Exécutez une activité périodique quotidienne pour vérifier les modifications apportées aux points de terminaison ou utilisez une méthode de notification.
 3. Lorsque des modifications sont détectées, régénérez et redistribuez le fichier PAC pour les ordinateurs clients et a apporter les modifications à vos périphériques réseau.
 
@@ -149,7 +149,7 @@ Pour plus d’informations, [voir Office 365'adresse IP et le service web d’UR
 
 Pour votre client Microsoft 365 avec une mise en réseau optimale, vous avez déterminé :
 
-- Comment optimiser les performances du réseau pour les utilisateurs locaux en ajoutant des connexions Internet à tous les succursales et en éliminant les épingles de réseau.
+- Comment optimiser les performances réseau pour les utilisateurs locaux en ajoutant des connexions Internet à tous les succursales et en éliminant les épingles de réseau.
 - Comment implémenter la liste des points de terminaison fiables automatisés pour vos fichiers PAC basés sur le client et vos périphériques et services réseau, y compris les mises à jour en cours (les plus adaptées aux réseaux d’entreprise).
 - Comment prendre en charge l’accès des travailleurs à distance aux ressources sur site.
 - Utilisation des réseaux Informations

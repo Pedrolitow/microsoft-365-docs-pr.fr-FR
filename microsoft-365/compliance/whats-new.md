@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d0b8b819f01c0fa41b15d037743dc6ed2395ef71
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 6b4e915a41c6c9dd04452fa968df2e23401b39d3
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320682"
+ms.locfileid: "61327519"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -62,7 +62,7 @@ Les articles suivants ont été ajoutés pour l’intégration d’appareil :
 - [Utilisez le nouveau format de cas dans Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nouveau format de cas a été publié à la disponibilité générale et renommé à partir du « grand format de cas »
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
-- Nouveaux paramètres de gestion des enregistrement qui contrôlent si les éléments étiquetés dans SharePoint et OneDrive peuvent être supprimés par les utilisateurs. Auparavant, les étiquettes de rétention configurées pour conserver le contenu et qui ne marquent pas les éléments comme enregistrements empêchaient les utilisateurs de supprimer le contenu étiqueté dans SharePoint lorsque cette action était autorisée dans OneDrive. Pour plus d’informations, voir Comment fonctionne la rétention [SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+- Déploiement : nouveaux paramètres de gestion des enregistrement qui contrôlent si les éléments étiquetés dans SharePoint et OneDrive peuvent être supprimés par les utilisateurs. Auparavant, les étiquettes de rétention configurées pour conserver le contenu et qui ne marquent pas les éléments comme enregistrements empêchaient les utilisateurs de supprimer le contenu étiqueté dans SharePoint lorsque cette action était autorisée dans OneDrive. Pour plus d’informations, voir Comment fonctionne la rétention [SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ### <a name="sensitive-information-types"></a>Types d'informations sensibles
 

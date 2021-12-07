@@ -2,8 +2,8 @@
 title: Microsoft 365 routage réseau informé
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/12/2021
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 routage réseau informé
-ms.openlocfilehash: 84b16d696c5c99a7f917e8d1dacc6f1f27626f37
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: f35257520385f8d4287c9a0839cd1e4e0e6b0aa3
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064402"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327668"
 ---
 # <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 routage réseau informé
 
@@ -163,7 +163,7 @@ Les données sont conservées à cet emplacement pendant 30 jours au plus. Lorsq
 
 Les données à cet emplacement sont échangées avec la solution SD-WAN sélectionnée et l’emplacement de la solution SD-WAN configurée peut ne pas se trouver dans la même région. Les clients doivent travailler avec leur fournisseur de solutions SD-WAN pour évaluer les besoins en emplacement de stockage de données avant le déploiement de production.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connectivité réseau dans le Centre d'administration Microsoft 365](office-365-network-mac-perf-overview.md)
 

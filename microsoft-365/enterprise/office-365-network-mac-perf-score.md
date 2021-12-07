@@ -2,8 +2,8 @@
 title: Microsoft 365'évaluation du réseau
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365'évaluation du réseau
-ms.openlocfilehash: 18a175f0eef62793cb2aba8e0ed46ce08eea8e9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d7fea3d4f2dfbe846a873b6ce0ea34d8373bcc12
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202870"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327555"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365'évaluation du réseau
 
-Dans le centre Administration Microsoft 365, les évaluations  réseau regroupent de nombreuses mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations offrent aux administrateurs Microsoft 365 un moyen simple d’obtenir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
+Dans le centre Administration Microsoft 365, les évaluations  réseau regroupent de nombreuses mesures de performances réseau dans un instantané de l’état du périmètre de votre réseau d’entreprise. Une évaluation réseau vous indique l’impact de la conception de réseau responsable du client sur Office 365 l’expérience utilisateur. Les évaluations réseau sont limitées à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client. Les évaluations permettent aux administrateurs Microsoft 365 d’avoir instantanément une idée de l’état du réseau de l’entreprise et d’obtenir rapidement un rapport détaillé pour n’importe quel emplacement de bureau global.
 
 La valeur des points d’évaluation réseau est de 0 à 100 et est une moyenne de la latence TCP, de la vitesse de téléchargement et des mesures de qualité de connexion UDP. Ces mesures sont compilées une fois par jour. Les mesures de performances pour les réseaux microsoft sont exclues de ces mesures pour s’assurer que les résultats de l’évaluation sont non ambigus et spécifiques au réseau d’entreprise.
 
 > [!div class="mx-imgBorder"]
 > ![Valeur d’évaluation du réseau.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité ou la réactivité Microsoft 365 en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
+Une très faible valeur d’évaluation du réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité Microsoft 365 ou la réactivité en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
 
 | Évaluation du réseau | Expérience utilisateur attendue |
 | :----------------- | :----------------------- |
@@ -51,15 +51,15 @@ Chaque évaluation réseau, qu’elle soit limitée au client ou à un emplaceme
 > [!div class="mx-imgBorder"]
 > ![Exemple de valeur d’évaluation réseau.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-La **répartition de l’évaluation** dans le panneau présente l’évaluation de chacune des charges de travail de composant.
+La **répartition de l’évaluation** dans le panneau affiche l’évaluation pour chacune des charges de travail de composant.
 
-**L’historique des** évaluations indique les 30 derniers jours de l’évaluation et le critère. Vous pouvez également faire un rapport sur l’historique des mesures pour n’importe quel emplacement de bureau pendant deux ans à l’aide de l’onglet Historique. L’onglet Historique vous permet de sélectionner vos attributs à signaler. En choisissant une période de rapport, vous pouvez mettre en évidence l’impact d’un projet de mise à jour réseau et constater l’amélioration de votre évaluation du réseau.
+**L’historique des** évaluations indique les 30 derniers jours de l’évaluation et le critère. Vous pouvez également signaler l’historique des mesures pour n’importe quel emplacement de bureau pendant deux ans à l’aide de l’onglet Historique. L’onglet Historique vous permet de sélectionner vos attributs à signaler. En choisissant une période de rapport, vous pouvez mettre en évidence l’impact d’un projet de mise à jour réseau et voir l’amélioration de votre évaluation du réseau.
 
 ## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Évaluations réseau des locataires et évaluations du réseau de l’emplacement du bureau
 
 Une évaluation du réseau mesure la conception du périmètre réseau d’un emplacement de bureau sur le réseau de Microsoft. Il est préférable d’améliorer le périmètre réseau à chaque emplacement de bureau.
 
-Nous montrons une valeur d’évaluation réseau pour l’ensemble Microsoft 365 client dans la page vue d’ensemble des performances réseau. Cette valeur est une moyenne pondérée des évaluations réseau pour tous les bureaux. Il existe également une valeur d’évaluation réseau spécifique pour chaque emplacement de bureau détecté sur la page récapitulatif de cet emplacement.
+Nous montrons une valeur d’évaluation réseau pour l’ensemble Microsoft 365 client sur la page vue d’ensemble des performances réseau. Cette valeur est une moyenne pondérée des évaluations réseau pour tous les bureaux. Il existe également une valeur d’évaluation réseau spécifique pour chaque emplacement de bureau détecté sur la page récapitulatif de cet emplacement.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -97,12 +97,12 @@ Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP,
 
 Nous calculons un score d’opinion moyenne à partir de ces mesures UDP pour une échelle de 1 à 5. Ensuite, nous mions cela à l’échelle de 0 à 100 points pour l’évaluation Microsoft Teams réseau.  La valeur globale est de plus de 87,5 points et la valeur globale est inférieure à 50 points.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
+[Connectivité réseau dans le centre Administration Microsoft 365 de connexion](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 informations sur les performances du réseau (aperçu)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 informations sur les performances du réseau](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 de test de connectivité réseau (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 de test de connectivité réseau](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Services de localisation de connectivité réseau (prévisualisation)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)
