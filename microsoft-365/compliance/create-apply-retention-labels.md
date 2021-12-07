@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: 3fe6e976d5b71bc7534eaadf2e45ac076dc5d978
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 8b923085f0832db193588cdb60ef91a2b66ce229
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240863"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320706"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
@@ -68,7 +68,7 @@ L’emplacement dans lequel vous créez et configurez vos étiquettes de rétent
     - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
 
 2. Suivez les invites de l’Assistant.
     
@@ -120,13 +120,13 @@ Pour modifier une stratégie d’étiquettes de rétention existante (le type de
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
-Pour les emplacements OneDrive et SharePoint, les étiquettes publiées s’affichent généralement pour permettre aux utilisateurs de les sélectionner dans un délai d’un ou deux jours. Toutefois, autorisez jusqu’à huit jours.
+Pour les emplacements OneDrive et SharePoint, les étiquettes publiées s’affichent généralement pour permettre aux utilisateurs de les sélectionner dans un délai d’un ou deux jours. Vous pouvez toutefois autoriser jusqu’à sept jours.
 
-Pour les emplacements Exchange et groupes Microsoft 365, l’apparition d’étiquettes de rétention publiées pour les utilisateurs dans Outlook peut prendre jusqu’à huit jours et la boîte aux lettres doit contenir au moins 10 Mo de données.
+L’apparition d’étiquettes de rétention publiées pour les utilisateurs dans Outlook peut prendre jusqu’à sept jours pour les emplacements de groupes Exchange et Microsoft 365, et la boîte aux lettres doit contenir au moins 10 Mo de données.
 
 ![Diagramme du moment où les étiquettes publiées prennent effet.](../media/retention-labels-published-timings.png)
 
-Si les étiquettes n’apparaissent pas après huit jours, vérifiez **l’état** de la stratégie d’étiquette en la sélectionnant dans la page **Stratégies d’étiquette** dans le Centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
+Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État** de la stratégie d’étiquette en sélectionnant celle-ci dans la page des **Stratégies d’étiquette** dans le centre de conformité. Si l’état de **Désactivé (erreur)** s’affiche, ainsi qu’un message dans les détails des emplacements indiquant que le déploiement de la stratégie (SharePoint) ou le redéploiement de la stratégie (OneDrive) prend plus de temps que prévu, exécutez une commande PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) pour réessayer la distribution de la stratégie :
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
 

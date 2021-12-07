@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137146"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320790"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
@@ -425,6 +425,8 @@ Aidez votre organisation à évaluer les risques et à répondre efficacement au
 Identifiez et protégez de manière proactive les risques de confidentialité tels que la thésaurisation des données, les transferts de données et le partage excessif des données, et aidez votre organisation à automatiser et à gérer les demandes de sujets à grande échelle.
 
 [En savoir plus sur la gestion de la confidentialité pour Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
+
+[Manuel d’essai : Gestion de la confidentialité pour Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
