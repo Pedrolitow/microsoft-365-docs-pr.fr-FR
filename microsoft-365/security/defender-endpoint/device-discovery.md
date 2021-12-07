@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a827330541dba24dff54b59cf8c14b1f58162daa
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: e32880b46b04ce9ee755c09b6cbff2e3e484f4ff
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311889"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320850"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
@@ -99,7 +99,7 @@ Pour plus d’informations, voir [Périphériques réseau.](network-devices.md)
 
 Pour relever le défi de gagner suffisamment de visibilité pour localiser, identifier et sécuriser votre inventaire complet des ressources OT/IOT, Microsoft Defender pour endpoint prend désormais en charge les intégrations suivantes :
 
-- **Corelight**: Microsoft a associé Corelight pour recevoir des données à partir d’appliances réseau Corelight. Cela permet Microsoft 365 Defender une meilleure visibilité sur les activités réseau des appareils nonmanagés, notamment la communication avec d’autres appareils nonmanagés ou des réseaux externes. Pour plus d’informations, voir [Activer l’intégration de Corelight.](corelight-integration.md)
+- **Corelight**: Microsoft s’est associé à Corelight pour recevoir des données à partir d’appliances réseau Corelight. Cela permet Microsoft 365 Defender une meilleure visibilité sur les activités réseau des appareils nonmanagés, notamment la communication avec d’autres appareils nonmanagés ou des réseaux externes. Pour plus d’informations, voir [Activer l’intégration des données Corelight.](corelight-integration.md)
 
 - Microsoft Defender pour **IoT**: cette intégration combine les fonctionnalités de découverte d’appareils de Microsoft Defender pour Endpoint, avec les fonctionnalités de surveillance sans agent de Microsoft Defender pour IoT, pour sécuriser les appareils IoT d’entreprise connectés à un réseau informatique (par exemple, VoIP, imprimantes et téléviseurs intelligents). Pour plus d’informations, [voir Activer Microsoft Defender pour l’intégration IoT.](enable-microsoft-defender-for-iot-integration.md)
 

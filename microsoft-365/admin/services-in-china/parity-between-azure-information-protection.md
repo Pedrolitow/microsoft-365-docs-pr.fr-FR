@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3235bf77ec8cd7be96910614bdde41fb60f9f556
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199236"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320802"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour Office 365 géré par 21Vianet
 
@@ -45,7 +45,7 @@ La liste suivante inclut les lacunes existantes entre AIP pour Office 365 géré
   
 - Le partage de documents et de pièces jointes de courrier électronique avec des utilisateurs dans le cloud commercial n’est actuellement pas disponible. Cela inclut les Office 365 gérés par les utilisateurs de 21Vianet dans le cloud commercial, les Office 365 non gérés par les utilisateurs 21Vianet dans le cloud commercial et les utilisateurs titulaires d’une licence RMS pour les particuliers.
   
-- La gestion des droits SharePoint (sites et bibliothèques protégés par IRM) n’est actuellement pas disponible.
+- Irm avec SharePoint (sites et bibliothèques protégés par IRM) n’est actuellement pas disponible.
   
 - L’extension d’appareil mobile pour AD RMS n’est actuellement pas disponible.
 
@@ -77,16 +77,24 @@ Pour que le chiffrement fonctionne correctement, RMS doit être activé pour le 
     1. Lancez PowerShell en tant qu’administrateur.
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService` .
     3. Importer le module à l’aide `Import-Module AipService` de .
-    4. Connecter service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
-    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état `Enabled` est .
+    4. Connecter au service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
+    5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’état est `Enabled` .
 
 2. Si l’état fonctionnel est `Disabled` , exécutez `Enable-AipService` .
 
 ### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Étape 2 : Ajouter le principal Protection des données Microsoft service de synchronisation
 
-Le **principal Protection des données Microsoft** service de synchronisation n’est pas disponible dans les clients Azure Chine par défaut et est requis pour Azure Information Protection.
+Le **principal Protection des données Microsoft** service de synchronisation n’est pas disponible dans les clients Azure Chine par défaut et est requis pour Azure Information Protection. Créez ce principal de service manuellement via le module Azure Az PowerShell.
 
-1. Créez ce principal de service manuellement à l’aide de l’cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de `870c4f2e-85b6-4d43-bdda-6ed9a579b725` l’ID d’application pour Protection des données Microsoft service de synchronisation. 
+1. Si le module Azure Az n’est pas installé, installez-le ou utilisez une ressource dans laquelle le module Azure Az est préinstallé, comme [Azure Cloud Shell.](/azure/cloud-shell/overview) Pour plus d’informations, voir [Installer le module Azure Az PowerShell.](/powershell/azure/install-az-ps)
+
+1.  Connecter service à l’aide de la cmdlet [Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de `azurechinacloud` l’environnement :
+
+    ```powershell
+    Connect-azacount -environmentname azurechinacloud
+    ```
+
+1. Créez le principal **Protection des données Microsoft** service de synchronisation manuellement à l’aide de l’cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID d’application `870c4f2e-85b6-4d43-bdda-6ed9a579b725` pour Protection des données Microsoft service de synchronisation :
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -106,7 +114,7 @@ En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’
 
     1. Lancez PowerShell en tant qu’administrateur.
     2. Si le module AIPService n’est pas installé, exécutez `Install-Module AipService` .
-    3. Connecter service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
+    3. Connecter au service à l’aide `Connect-AipService -environmentname azurechinacloud` de .
     4. Exécutez `(Get-AipServiceConfiguration).RightsManagementServiceId` pour obtenir l’ID RMS.
 
 2. Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine, puis ajoutez un nouvel enregistrement SRV.
@@ -119,7 +127,7 @@ En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’
 
 3. Associez le domaine personnalisé au client dans [le portail Azure.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Cela ajoute une entrée dans DNS, qui peut prendre plusieurs minutes pour être vérifiée après avoir ajouté la valeur aux paramètres DNS.
 
-4. Connectez-vous au Centre d'administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour la `contoso.cn` création d’utilisateur. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
+4. Connectez-vous au Centre d'administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, ) pour `contoso.cn` la création d’utilisateurs. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification effectuée, les utilisateurs peuvent être créés.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Configurer le chiffrement DNS - Mac, iOS, Android
 
@@ -128,7 +136,7 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 - Service = `_rmsdisco`
 - Protocole = `_http`
 - Name = `_tcp`
-- Cible = `api.aadrm.cn`
+- Target = `api.aadrm.cn`
 - Port = `80`
 - Priority, Weight, Seconds, TTL = default values
 
@@ -137,12 +145,12 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 
 Téléchargez et installez le client d’étiquetage unifié AIP à partir du [Centre de téléchargement Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
 
-Pour plus d'informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Documentation AIP](/azure/information-protection/)
 - [Historique des versions AIP et stratégie de support](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 - [Conditions requises pour le système AIP](/azure/information-protection/requirements)
-- [Démarrage rapide d’AIP : déployer le client AIP](/azure/information-protection/quickstart-deploy-client)
+- [Démarrage rapide AIP : déployer le client AIP](/azure/information-protection/quickstart-deploy-client)
 - [Guide de l’administrateur AIP](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [Guide de l’utilisateur AIP](/azure/information-protection/rms-client/clientv2-user-guide)
 - [En savoir plus sur Microsoft 365 étiquettes de sensibilité](../../compliance/sensitivity-labels.md)
@@ -161,7 +169,7 @@ Les applications AIP sur Windows ont besoin de la clé de Registre suivante pour
 
 ### <a name="step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Étape 6 : Installer le scanneur AIP local et gérer les travaux d’analyse de contenu
 
-Installez l’analyseur AIP local pour analyser vos partages réseau et de contenu à la recherche de données sensibles, et appliquez des étiquettes de classification et de protection comme configuré dans la stratégie de votre organisation.
+Installez le scanneur AIP local pour analyser vos partages réseau et de contenu pour les données sensibles, et appliquez des étiquettes de classification et de protection comme configuré dans la stratégie de votre organisation.
 
 Lors de la configuration et de la gestion de vos travaux d’analyse de contenu, utilisez la procédure suivante au lieu de [l’interface](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only) du portail Azure utilisée par les offres commerciales.
 
@@ -169,7 +177,7 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
 
 **Pour installer et configurer votre scanneur**:
 
-1. Connectez-vous à l Windows server qui exécutera le scanneur. Utilisez un compte qui dispose de droits d’administrateur local et qui dispose des autorisations d’écriture dans SQL Server base de données principale.
+1. Connectez-vous à Windows Server qui exécutera le scanneur. Utilisez un compte qui dispose de droits d’administrateur local et qui dispose des autorisations d’écriture dans SQL Server base de données principale.
 
 1. Commencez avec PowerShell fermé. Si vous avez déjà installé le client et le scanneur AIP, assurez-vous que le service **AIPScanner** est arrêté.
 
@@ -191,23 +199,23 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
 
 1. Obtenez un jeton Azure à utiliser avec votre scanneur. Un jeton Azure AD permet au scanneur de s’authentifier au service Azure Information Protection, ce qui lui permet de s’exécuter de manière non interactive. 
 
-    1. Ouvrez le portail Azure et créez une application Azure AD pour spécifier un jeton d’accès pour l’authentification. Pour plus d’informations, voir [Comment étiqueter des fichiers de](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)manière non interactive pour Azure Information Protection .
+    1. Ouvrez le portail Azure et créez une application Azure AD pour spécifier un jeton d’accès pour l’authentification. Pour plus d’informations, [voir Comment étiqueter des fichiers de](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)manière non interactive pour Azure Information Protection .
     
         > [!TIP]
-        > Lorsque vous créez et configurez des applications Azure AD pour la commande [Set-AIPAuthentication,](/powershell/module/azureinformationprotection/set-aipauthentication) le volet Demander des **autorisations d’API** affiche les API que mon organisation utilise l’onglet au lieu de l’onglet API **Microsoft.**  Sélectionnez **les API que mon organisation utilise** pour sélectionner Azure Rights Management **Services.** 
+        > Lors de la création et de la configuration d’applications Azure AD pour la commande  [Set-AIPAuthentication,](/powershell/module/azureinformationprotection/set-aipauthentication) le volet Demander des **autorisations d’API** affiche les API que mon organisation utilise à la place de l’onglet API **Microsoft.** Sélectionnez les API que mon organisation utilise pour sélectionner **Azure Rights Management Services.**  
         >
 
-    1. À partir de l’ordinateur Windows Server, si votre  compte de service scanneur a reçu l’autorisation Se connecter localement pour l’installation, connectez-vous avec ce compte et démarrez une session PowerShell. 
+    1. À partir de l’ordinateur Windows Server, si votre  compte de service de scanneur a reçu l’autorisation Se connecter localement pour l’installation, connectez-vous avec ce compte et démarrez une session PowerShell. 
     
         Si votre compte de service  scanneur ne peut pas être autorisé à se connecter localement pour l’installation, utilisez le paramètre *OnBehalfOf* avec [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), comme décrit dans la section Comment étiqueter des fichiers de manière non interactive pour [Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
-    1. Exécutez [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), en spécifiant les valeurs copiées à partir de votre application Azure AD :
+    1. Exécutez [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), en spécifiant les valeurs copiées à partir de Azure AD application :
 
       ```PowerShell
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      Par exemple :
+      Par exemple :
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -215,9 +223,9 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    Le scanneur dispose désormais d’un jeton pour s’authentifier sur Azure AD. Ce jeton est valide pendant un an, deux ans ou jamais, en fonction de votre configuration de la question secrète client de **l’application Web /API** dans Azure AD. Lorsque le jeton expire, vous devez répéter cette procédure.
+    Le scanneur dispose maintenant d’un jeton pour s’authentifier Azure AD. Ce jeton est valide pendant un an, deux ans ou jamais, en fonction de votre configuration de la question secrète client de **l’application Web /API** dans Azure AD. Lorsque le jeton expire, vous devez répéter cette procédure.
 
-1. Exécutez la cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour configurer le scanneur de façon à ce qu’il fonctionne en mode hors connexion. Exécutez :  
+1. Exécutez la cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) pour configurer le scanneur de façon à ce qu’il fonctionne en mode hors connexion. Exécuter : 
 
     ```powershell
     Set-AIPScannerConfiguration -OnlineConfiguration Off
@@ -225,7 +233,7 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
 
 1. Exécutez la cmdlet [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) pour créer un travail d’analyse de contenu par défaut.
 
-    Le seul paramètre requis dans la cmdlet **Set-AIPScannerContentScanJob** est **Enforce**. Toutefois, vous pouvez définir d’autres paramètres pour votre travail d’analyse de contenu pour le moment. Par exemple :
+    Le seul paramètre requis dans la cmdlet **Set-AIPScannerContentScanJob** est **Enforce**. Toutefois, vous pouvez définir d’autres paramètres pour votre travail d’analyse de contenu pour le moment. Par exemple :
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>
@@ -258,7 +266,7 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
     > [!NOTE]
     > Les caractères génériques ne sont pas pris en charge et les emplacements WebDav ne le sont pas.
     >
-    > Pour modifier le référentiel ultérieurement, utilisez plutôt la cmdlet [Set-AIPScannerRepository.](/powershell/module/azureinformationprotection/set-aipscannerrepository) 
+    > Pour modifier le référentiel ultérieurement, utilisez la cmdlet [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) à la place. 
 
 
 Si nécessaire, poursuivez les étapes suivantes :
@@ -281,7 +289,7 @@ Le tableau suivant répertorie les cmdlets PowerShell pertinentes pour l’insta
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Définit les paramètres d’un référentiel existant dans votre travail d’analyse de contenu. |
 | | |
 
-Pour plus d'informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Qu’est-ce que le scanneur d’étiquetage unifié Azure Information Protection ?](/azure/information-protection/deploy-aip-scanner)
 - [Configuration et installation du scanneur d’étiquetage unifié Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

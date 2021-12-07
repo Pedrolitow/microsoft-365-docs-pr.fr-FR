@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez utiliser l’éditeur KQL pour configurer des requêtes de recherche eDiscovery dans la recherche de contenu, core eDiscovery et Advanced eDiscovery.
-ms.openlocfilehash: cc63b0d945d6807178a801d8e6e1a69311916365
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c553a20116eba478961b606f30fa7af8c4c322e
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190975"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320766"
 ---
-# <a name="use-the-kql-editor-to-build-search-queries-preview"></a>Utiliser l’éditeur KQL pour générer des requêtes de recherche (préversion)
+# <a name="use-the-kql-editor-to-build-search-queries"></a>Utiliser l’éditeur KQL pour générer des requêtes de recherche
 
 La nouvelle expérience de requête KQL dans la recherche d’outils eDiscovery Microsoft 365 fournit des commentaires et des conseils lorsque vous créez des requêtes de recherche dans la recherche de contenu, la découverte électronique principale et Advanced eDiscovery. Lorsque vous tapez des requêtes dans l’éditeur, il fournit lacompletion automatique pour les propriétés et conditions utilisables dans une recherche prise en charge et fournit des listes de valeurs pris en charge pour les propriétés et conditions standard. Par exemple, si vous spécifiez la propriété de messagerie dans votre requête, l’éditeur présente une liste de valeurs que `kind` vous pouvez sélectionner. L’éditeur KQL affiche également les erreurs de requête potentielles en temps réel que vous pouvez corriger avant d’exécuter la recherche. Mieux encore, vous pouvez coller des requêtes complexes directement dans l’éditeur sans avoir à créer manuellement des requêtes à l’aide des mots clés et des cartes de conditions dans le générateur de conditions standard.
   
@@ -55,7 +55,7 @@ Les sections suivantes montrent des exemples de la façon dont l’éditeur KQL 
 
 ### <a name="autocompletion-of-search-properties-and-operators"></a>Autocompletion des propriétés et des opérateurs de recherche
 
-Lorsque vous commencez à taper une requête de recherche dans l’éditeur KQL, l’éditeur affiche une suggestion decompletion automatique des propriétés de recherche prise en charge (également *appelées restrictions* de propriété) que vous pouvez sélectionner. Vous devez taper au moins deux caractères pour afficher la liste des propriétés prise en charge qui commencent par ces deux caractères. Par exemple, la capture d’écran suivante montre les propriétés de recherche suggérées qui commencent par `Se` .
+Lorsque vous commencez à taper une requête de recherche dans l’éditeur KQL, l’éditeur affiche une suggestion decompletion automatique des propriétés de recherche (également *appelées restrictions* de propriété) que vous pouvez sélectionner. Vous devez taper au moins deux caractères pour afficher la liste des propriétés prise en charge qui commencent par ces deux caractères. Par exemple, la capture d’écran suivante montre les propriétés de recherche suggérées qui commencent par `Se` .
 
 ![L’éditeur KQL suggère les propriétés pris en charge](../media/KQLEditorAutoCompleteProperties.png)
 
@@ -81,9 +81,9 @@ L’éditeur KQL détecte les erreurs potentielles dans les requêtes de recherc
 
 ![Détection des erreurs d’éditeur KQL](../media/KQLEditorErrorDetection.png)
 
-Dans ce cas, vous pouvez utiliser les conseils d’erreur potentiels pour résoudre les problèmes et résoudre la requête.
+Dans ce cas, vous pouvez utiliser les conseils d’erreur potentiels pour résoudre les problèmes de la requête.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Vous pouvez faire bascule entre le générateur de condition et l’éditeur KQL. Par exemple, si vous utilisez le générateur de condition pour configurer une requête à l’aide de la zone Mots clés et de plusieurs cartes de condition, vous pouvez afficher la requête résultante dans l’éditeur KQL. Toutefois, si vous créez une requête complexe (avec des mots clés et des conditions) dans l’éditeur KQL, la requête résultante s’affiche uniquement dans la zone Mots clés lorsque vous l’affichez dans le générateur de conditions.
 

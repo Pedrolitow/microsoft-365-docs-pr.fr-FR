@@ -13,21 +13,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 12/06/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 803434179a616ddea718c543da4308f6af77b39e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167381"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320730"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md)et à la surveillance en temps réel toujours en cours. **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
@@ -89,7 +89,7 @@ Vous pouvez choisir parmi plusieurs méthodes pour définir des exclusions pour 
 
 Consultez les articles suivants :
 
-- [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure)
+- [Configurer des paramètres de restriction d’appareils dans Microsoft Intune](/intune/device-restrictions-configure)
 - [Antivirus Microsoft Defender de restriction d’appareil pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Configuration Manager pour configurer des exclusions de nom de fichier, de dossier ou d’extension de fichier
@@ -167,7 +167,7 @@ Add-MpPreference -ExclusionExtension ".test"
 > [!TIP]
 > Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Windows Management Instruction (WMI) pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
+### <a name="use-windows-management-instrumentation-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Utiliser Windows Management Instrumentation (WMI) pour configurer les exclusions de nom de fichier, de dossier ou d’extension de fichier
 
 Utilisez les [méthodes Set, Add et Remove](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) de la classe MSFT_MpPreference pour les propriétés suivantes :
 

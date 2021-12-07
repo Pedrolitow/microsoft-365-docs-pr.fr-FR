@@ -14,29 +14,29 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 1632a0e04ce232c7daed42b86cde0f9053d6aadf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 676cdfd959c39baef6baf10e383288aeb4c58629
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167177"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320778"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -68,7 +68,7 @@ Chaque règle asr contient l’un des quatre paramètres ci-après :
 > [!IMPORTANT]
 > Actuellement, le mode avertissement n’est pas pris en charge pour trois règles de récupération automatique lorsque vous configurez des règles asr dans Microsoft Endpoint Manager (MEM). Pour en savoir plus, consultez [les cas où le mode d’avertissement n’est pas pris en charge.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence SKU de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la assurance sont déclenchées (par exemple, le forwarding d’événement).
+Nous vous recommandons d’utiliser des règles asr avec une licence Windows E5 (ou une référence SKU de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la assurance sont déclenchées (par exemple, le forwarding d’événement).
 
 > [!TIP]
 > Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -102,6 +102,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 ## <a name="intune"></a>Intune
 
 **Profils de configuration d’appareil**
+
 1. Sélectionnez **Profils de configuration** \> **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
 2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez **Réduction de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
@@ -113,6 +114,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 4. Sélectionnez **OK** dans les trois volets de configuration. Sélectionnez **Ensuite Créer** si vous créez un fichier de protection de point de terminaison ou **Enregistrer** si vous modifiez un fichier existant.
 
 **Stratégie de sécurité des points de terminaison**
+
 1. Sélectionnez **Réduction de la** surface \> **d’attaque de sécurité du point de terminaison.** Choisissez une règle de RSA existante ou créez-en une nouvelle. Pour en créer une nouvelle, **sélectionnez Créer** une stratégie et entrez des informations pour ce profil. Pour le **type de profil,** sélectionnez **Règles de réduction de la surface d’attaque.** Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
 2. Dans le **volet Paramètres de configuration,** sélectionnez Réduction de **la surface** d’attaque, puis sélectionnez le paramètre souhaité pour chaque règle de réduction de la surface d’attaque.
@@ -127,7 +129,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 
 Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer des règles asr personnalisées. La procédure suivante utilise la règle Bloquer l’abus des pilotes [signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
 
-1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez sur **Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
+1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez sur **Appareils,** sélectionnez **Profils de configuration,** puis cliquez **sur Créer un profil.**
 
    > [!div class="mx-imgBorder"]
    > ![MEM Create Profile.](images/mem01-create-profile.png)
@@ -137,7 +139,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures**
    - Dans **le type de profil,** **sélectionnez Modèles**
 
-   Sélectionnez **Personnalisé,** puis cliquez sur **Créer.**
+   Sélectionnez **Personnalisé,** puis **Créez.**
 
    > [!div class="mx-imgBorder"]
    > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
@@ -159,6 +161,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle Azure Site Recovery, voir les [descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
    - Dans **type de données,** sélectionnez **Chaîne**.
    - Dans **Value**, tapez ou collez la valeur GUID, le signe et la valeur State sans \= espaces (_GUID=StateValue_). Où :
+     
      - 0 : Désactiver (désactiver la règle asr)
      - 1 : Bloquer (activer la règle asr)
      - 2 : Audit (évaluer l’impact de la règle asr sur votre organisation si elle est activée)
@@ -167,12 +170,12 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l’une des opérations suivantes :
+6. Sélectionnez **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** sélectionnez **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l’une des opérations suivantes :
 
-   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant**.
-   - Ou cliquez sur **Suivant**
+   - Sélectionnez **Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis sélectionnez **Suivant**.
+   - Ou sélectionnez **Suivant**
 
-7. À **l’étape 4 Affectations,** dans **Groupes** inclus - pour les groupes que vous souhaitez que cette règle applique - sélectionnez l’une des options suivantes :
+7. À **l’étape 4 Affectations,** dans **Groupes** inclus, pour les groupes que vous souhaitez que cette règle s’applique, sélectionnez l’une des options suivantes :
 
    - **Ajouter des groupes**
    - **Ajouter tous les utilisateurs**
@@ -181,7 +184,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Affectations MEM.](images/mem06-4-assignments.png)
 
-8. Dans **les groupes exclus,** sélectionnez les groupes que vous souhaitez exclure de cette règle, puis cliquez sur **Suivant**.
+8. Dans **les groupes exclus,** sélectionnez les groupes que vous souhaitez exclure de cette règle, puis sélectionnez **Suivant.**
 
 9. À **l’étape 5, règles d’applicabilité** pour les paramètres suivants, appliquez les étapes suivantes :
 
@@ -192,7 +195,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Règles d’applicabilité MEM.](images/mem07-5-applicability-rules.png)
 
-10. Cliquez sur **Suivant**. À **l’étape 6 Révision + création,** examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis cliquez sur **Créer.**
+10. Sélectionnez **Suivant**. À **l’étape 6, examinez + créez,** examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis sélectionnez **Créer**.
 
     > [!div class="mx-imgBorder"]
     > ![Révision et création de MEM.](images/mem08-6-review-create.png)
@@ -247,7 +250,7 @@ Exemple :
 
 5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
 
-6. Une fois la stratégie créée, **fermez**.
+6. Une fois la stratégie créée, sélectionnez **Fermer.**
 
 ## <a name="group-policy"></a>Stratégie de groupe
 

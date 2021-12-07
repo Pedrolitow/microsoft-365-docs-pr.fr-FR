@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5e62e982603ef62d4b2d0c8d0edf21223e3b98c
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 540273109d0168e14b2f87b328b57f65d53b4c22
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312013"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320754"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>Activer Microsoft Defender pour l’intégration IoT
 
@@ -36,7 +36,7 @@ ms.locfileid: "61312013"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender pour le point de terminaison peut désormais s’intégrer à Microsoft Defender pour IoT. Cette intégration étend vos fonctionnalités de découverte d’appareils avec les fonctionnalités de surveillance sans agent fournies par Microsoft Defender pour IoT. Cela permet de sécuriser les appareils IoT d’entreprise connectés aux réseaux informatiques, tels que les appareils VoIP (Voice over Internet Protocol), les imprimantes et les appareils photo. Il permet aux organisations de tirer parti d’une solution intégrée unique qui sécurisation l’ensemble de leur infrastructure IoT et des technologies opérationnelles. Pour plus d’informations, [voir Microsoft Defender pour IoT.](/azure/defender-for-iot/organizations/overview)
+Microsoft Defender pour le point de terminaison peut désormais s’intégrer à Microsoft Defender pour IoT. Cette intégration étend vos fonctionnalités de découverte d’appareils avec les fonctionnalités de surveillance sans agent fournies par Microsoft Defender pour IoT. Cela permet de sécuriser les appareils IoT d’entreprise connectés aux réseaux informatiques, tels que les appareils VoIP (Voice over Internet Protocol), les imprimantes et les appareils photo. Il permet aux organisations de tirer parti d’une solution intégrée unique qui sécurisation l’ensemble de leur infrastructure IoT et des technologies opérationnelles. Pour plus d’informations, [Enterprise protection réseau IoT.](/azure/defender-for-iot/organizations/overview-eiot.md)
 
 Avec cette intégration activée, Microsoft Defender pour point de terminaison gagne en visibilité pour vous aider à localiser, identifier et sécuriser les appareils IoT dans votre réseau. Les appareils IoT découverts par Microsoft Defender pour IoT ou Microsoft Defender pour point de terminaison seront synchronisés automatiquement sur les deux portails. Vous aurez ainsi une vue unifiée de l’inventaire complet de votre ot/IoT, ainsi que du reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles).
 

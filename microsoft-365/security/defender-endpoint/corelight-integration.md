@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de7b4fafd70c3c11a18f59fb7b4c68e4dfb4eca
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311950"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320838"
 ---
 # <a name="enable-corelight-data-integration"></a>Activer l’intégration des données Corelight
 
@@ -61,7 +61,7 @@ Pour activer l’intégration de Corelight, vous devez suivre les étapes suivan
 > [!NOTE]
 > Vous devez être un administrateur global pour accorder à Corelight l’autorisation d’accéder aux ressources de votre organisation.
 
-1. En tant qu’administrateur général client, allez à : <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> pour accorder l’autorisation.
+1. En tant qu’administrateur général du client, allez sur ce [lien](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) pour accorder l’autorisation.
 2. Go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Paramètres** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. Vous aurez besoin de ces informations lors de la configuration de votre appliance Corelight.
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Étape 3 : Configurer votre appliance Corelight pour envoyer des données à Microsoft 365 Defender
@@ -72,7 +72,7 @@ Pour activer l’intégration de Corelight, vous devez suivre les étapes suivan
 > Pour activer une version précédente qui prend en charge l’envoi de données, vous devez d’abord exécuter `corelight-client configuration update --enable.adfiot 1` :
 
 > [!NOTE]
->Notez que vous aurez besoin d’une connectivité Internet pour que votre capteur atteigne les services cloud Defender et Corelight pour que la solution fonctionne.
+> Vous aurez besoin d’une connectivité Internet pour que votre capteur atteigne les services cloud Defender et Corelight pour que la solution fonctionne.
 
 #### <a name="enabling-in-the-corelight-sensor-gui"></a>Activation dans l’interface graphique graphique du capteur Corelight
 
