@@ -258,6 +258,8 @@
 ### [Découverte d’appareils]()
 #### [Vue d’ensemble de la découverte d’appareils](device-discovery.md)
 #### [Configurer la découverte d’appareils](configure-device-discovery.md)
+#### [Microsoft Defender pour l'intégration IoT](enable-microsoft-defender-for-iot-integration.md)
+#### [Permettre l'intégration des données Corelight](corelight-integration.md)
 #### [Forum aux questions sur la découverte d’appareils](device-discovery-faq.md)
 
 ### [Appareils de réseau](network-devices.md)
