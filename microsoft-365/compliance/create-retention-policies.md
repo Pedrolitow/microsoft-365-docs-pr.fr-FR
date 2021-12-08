@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 961390fab02344d38ddeb6889f8aec2c8a779d46
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757012"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327540"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -210,3 +210,25 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
     Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content) sur cette page.
 
 6. Terminez l’assistant pour enregistrer vos paramètres.
+
+## <a name="how-long-it-takes-for-retention-policies-to-take-effect"></a>Durée d’application des stratégies de rétention
+
+Lorsque vous créez et soumettez une stratégie de rétention, l’application de la stratégie de rétention peut prendre jusqu’à sept jours :
+  
+![Diagramme de l’application de la stratégie de rétention.](../media/retention-policy-timings.png)
+
+Tout d’abord, la stratégie de rétention doit être distribuée aux emplacements que vous avez sélectionnés, puis appliquée au contenu. Vous pouvez toujours vérifier l’état de distribution de la stratégie de rétention en la sélectionnant dans la page **Stratégies de rétention** dans le Centre de conformité. Dans le volet volant, si vous voyez l’état de **Désactivé (Erreur)** et, dans les détails des emplacements, un message indiquant que le déploiement de la stratégie (pour SharePoint) ou le redéploiement de la stratégie (pour OneDrive) prend plus de temps que prévu, essayez d’exécuter la [commande Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell pour réessayer la distribution de stratégie :
+
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
+
+2. Exécutez la commande suivante :
+    
+    ```PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+    ```
+
+## <a name="updating-retention-policies"></a>Mise à jour des stratégies de rétention
+
+Lorsque les paramètres de la stratégie de rétention sont déjà appliqués au contenu, une modification de la configuration de la stratégie est automatiquement appliquée à ce contenu en plus du contenu qui vient d’être identifié.
+
+Certains paramètres ne peuvent pas être modifiés après la création et l’enregistrement de la stratégie, notamment le nom de la stratégie de rétention, le type d’étendue (adaptatif ou statique) et les paramètres de rétention à l’exception de la période de rétention.

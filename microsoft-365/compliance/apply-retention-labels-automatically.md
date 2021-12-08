@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320613"
+ms.locfileid: "61327579"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -385,7 +385,7 @@ Pour appliquer automatiquement les politiques d'étiquetage de conservation qui 
 Pour les stratégies d’étiquette de rétention à appliquer automatiquement qui sont configurées pour les pièces jointes dans le cloud : étant donné que cette stratégie s’applique aux nouveaux fichiers partagés plutôt qu’aux fichiers existants, une modification de la configuration de l’étiquette et de la stratégie sélectionnées sera automatiquement appliquée au contenu nouvellement partagé uniquement.
 
 Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
-- Étiquette de rétention et le nom de la stratégie, et les paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
+- Noms pour les étiquettes de rétention et leurs stratégies, le type d’étendue (adaptatif ou statique) et les paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
 - Option de marquage des éléments comme enregistrement.
 
 ### <a name="deleting-retention-labels"></a>Suppression des étiquettes de rétention.
