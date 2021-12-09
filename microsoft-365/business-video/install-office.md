@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer Microsoft Office applications.
-ms.openlocfilehash: 55f384350db4763d7e93aa887191691583c7b421
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5bef05c11735b6ff95e7add6f9e542885c1e8599
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173894"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369899"
 ---
 # <a name="install-office-apps"></a>Installer les applications Office 
 
@@ -49,7 +49,6 @@ Les Office que vous avez installées apparaissent maintenant dans **votre** menu
 
 [Installer l Administration Microsoft 365'application mobile sur votre téléphone](admin-mobile.md) (vidéo)
 
-[Prendre en Microsoft Teams dans votre petite entreprise](get-started-teams-small-business.md) (vidéo)
+[Prendre en Microsoft Teams dans votre petite entreprise](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937) (vidéo)
 
-[Partager facilement des fichiers en externe](share-files-externally.md) (vidéo)
-
+[Partager facilement des fichiers en externe](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) (vidéo)

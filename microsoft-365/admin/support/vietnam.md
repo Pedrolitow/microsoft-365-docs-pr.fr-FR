@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 910d1d6800a954fbb8c42472c3325c1689f30fc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b4426c17bebcb3774fca73d6bd77924b60c1a37
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189813"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371531"
 ---
 # <a name="contact-support-for-vietnam"></a>Contacter le support pour le Vietnam
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 120 852 137

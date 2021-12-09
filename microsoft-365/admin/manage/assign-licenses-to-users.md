@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 68124f26037e6d21e9b3f1cb0b7888edc005fe77
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164547"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371099"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -61,12 +61,6 @@ Lorsque vous utilisez la page **Licences** pour l'attribution de licences, vous 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licences</a>.
@@ -93,12 +87,6 @@ S’il existe un conflit, un message s’affiche, vous indiquant la nature du pr
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licences</a>.
@@ -120,12 +108,6 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -155,12 +137,6 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans Microsoft 365 centres de données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 75df83b5827fa3c2b5832c634c1de15ab7d619dd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbfcb7063f839506b81ee244eadfce622c513c45
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205018"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370669"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 
@@ -31,7 +31,7 @@ ms.locfileid: "60205018"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les serveurs de messagerie dans Microsoft 365 centres de données peuvent être temporairement en raison de l’envoi de courrier indésirable. Par exemple, une attaque de programme malveillant ou de courrier indésirable malveillant dans une organisation de messagerie sur site qui envoie des messages sortants via Microsoft 365 ou compromis Microsoft 365 comptes. Les attaquants tentent également d’éviter la détection en relayant des messages via Microsoft 365 de messages.
 
@@ -40,7 +40,7 @@ Ces scénarios peuvent entraîner l’apparition de l’adresse IP Microsoft 365
 ## <a name="high-risk-delivery-pool"></a>Pool de remise à risque élevé
 Pour éviter cela, tous les messages sortants provenant de serveurs de centres de données Microsoft 365 qui sont [](configure-the-outbound-spam-policy.md) déterminés comme courrier indésirable ou qui dépassent les limites d’envoi du [service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou des stratégies de courrier indésirable sortant sont envoyés via le _pool_ de remise à risque élevé.
 
-Le pool de remise à risque élevé est un pool d’adresses IP distinct pour les messages sortants qui est uniquement utilisé pour envoyer des messages de « faible qualité » (par exemple, courrier indésirable et [backscatter).](backscatter-messages-and-eop.md) L’utilisation du pool de remise à risque élevé permet d’empêcher le pool d’adresses IP normal pour le courrier sortant d’envoyer du courrier indésirable. Le pool d’adresses IP normal pour le courrier sortant conserve la réputation d’envoi de messages de « haute qualité », ce qui réduit la probabilité que ces adresses IP apparaissent sur les listes d’adresses IP bloqués.
+Le pool de remise à risque élevé est un pool d’adresses IP distinct pour les messages sortants qui est uniquement utilisé pour envoyer des messages de « faible qualité » (par exemple, courrier indésirable et [backscatter](backscatter-messages-and-eop.md). L’utilisation du pool de remise à risque élevé permet d’empêcher le pool d’adresses IP normal pour le courrier sortant d’envoyer du courrier indésirable. Le pool d’adresses IP normal pour le courrier sortant conserve la réputation d’envoi de messages de « haute qualité », ce qui réduit la probabilité que ces adresses IP apparaissent sur les listes d’adresses IP bloqués.
 
 La possibilité très réelle que les adresses IP du pool de remise à risque élevé soient placées sur des listes d’adresses IP bloqués demeure, mais cela est tout à fait possible. La remise aux destinataires prévus n’est pas garantie, car de nombreuses organisations de messagerie n’acceptent pas les messages provenant du pool de remise à risque élevé.
 
@@ -65,7 +65,7 @@ Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de ND
 
 ### <a name="relay-pool"></a>Pool de relais
 
-Les messages qui sont transmis ou relayés via Microsoft 365 dans certains scénarios sont envoyés à l’aide d’un pool de relais spécial, car la destination ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est important pour nous d’isoler ce trafic de messagerie, car il existe des scénarios légitimes et non valides pour le transport automatique ou le relais du courrier électronique hors Microsoft 365. Comme pour le pool de remise à risque élevé, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié car il peut changer souvent et ne fait pas partie de l’enregistrement SPF publié pour Microsoft 365.
+Les messages qui sont transmis ou relayés via Microsoft 365 dans certains scénarios sont envoyés à l’aide d’un pool de relais spécial, car la destination ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est important pour nous d’isoler ce trafic de messagerie, car il existe des scénarios légitimes et non valides pour le transport automatique ou le relais de messages électroniques en dehors de Microsoft 365. Comme pour le pool de remise à risque élevé, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié car il peut changer souvent et ne fait pas partie de l’enregistrement SPF publié pour Microsoft 365.
 
 Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime afin de pouvoir remettre en toute confiance le message transmis.
 
@@ -83,5 +83,5 @@ Pour que DKIM fonctionne, veillez à activer DKIM pour l’envoi du domaine. Par
 
 Pour ajouter un domaine personnalisé, suivez les étapes de [l’étape Ajouter un](../../admin/setup/add-domain.md)domaine à Microsoft 365 .
 
-Si l’enregistrement MX de votre domaine pointe vers un service tiers ou un serveur de messagerie local, vous devez utiliser le filtrage amélioré pour les [connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Le filtrage amélioré garantit que la validation SPF est correcte pour les messages entrants et évite d’envoyer des messages électroniques via le pool de relais.
+Si l’enregistrement MX de votre domaine pointe vers un service tiers ou un serveur de messagerie local, vous devez utiliser le filtrage amélioré pour les [connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Le filtrage amélioré garantit que la validation SPF est correcte pour le courrier entrant et évite d’envoyer des messages électroniques via le pool de relais.
 

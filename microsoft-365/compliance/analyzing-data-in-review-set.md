@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 829e6e6441403cf5a934e81a1a437f65d2de3db3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137074"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369695"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un jeu à réviser dans Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Pour analyser les données d’un jeu à réviser :
 
 Vous pouvez vérifier la progression de l’analyse sous **l’onglet Travaux** du cas.
 
- Une fois l’analyse terminée, vous pouvez afficher le rapport d’analyse, exécuter des requêtes dans votre jeu à réviser sur les sorties de l’analyse (voir Requête dans votre jeu à [réviser)](review-set-search.md)et voir les documents associés d’un document donné (voir Données de révision dans le jeu à [réviser).](reviewing-data-in-review-set.md)
+ Une fois l’analyse terminée, vous pouvez afficher le rapport d’analyse, exécuter des requêtes dans votre jeu à réviser sur les sorties de l’analyse (voir Requête dans votre jeu à réviser [et](review-set-search.md)voir les documents associés d’un document donné (voir Données de révision dans le jeu à [réviser).](reviewing-data-in-review-set.md)
 
 ## <a name="using-the-for-review-filter-query"></a>Utilisation de la requête filtre Pour révision
 

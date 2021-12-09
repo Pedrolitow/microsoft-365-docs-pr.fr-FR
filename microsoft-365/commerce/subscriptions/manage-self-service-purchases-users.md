@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203350"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372899"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -41,12 +41,6 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
@@ -58,12 +52,6 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -85,12 +73,6 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licences</a>.
@@ -98,7 +80,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 ::: moniker-end
 2. Choisissez l’abonnement pour qui vous souhaitez attribuer des licences.
 3. Choisissez **Attribuer des licences.**
-4. Dans le volet **Attribuer des licences aux utilisateurs**, commencez à saisir un nom, puis sélectionnez-le dans les résultats pour l’ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
+4. Dans le volet **Attribuer des licences aux utilisateurs** , commencez à saisir un nom, puis choisissez-le dans les résultats pour l'ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
     > [!NOTE]
     > Vous pouvez uniquement attribuer des licences à des personnes de votre organisation.
 5. Choose **Assign,** then choose **Close**.
@@ -108,12 +90,6 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 :: moniker range="o365-worldwide »
 
 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
 
 ::: moniker-end
 
@@ -135,19 +111,13 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 ::: moniker-end
 2. Dans l'onglet **Produits**, recherchez l'abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l’abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Si vous le souhaitez, fournissez vos commentaires.
-4. Sélectionnez **Enregistrer**.
+4. Cliquez sur **Enregistrer**.
 
 ## <a name="manage-your-payment-details"></a>Gérer vos détails de paiement
 
@@ -156,7 +126,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 3. Dans la page des détails du profil de facturation, sous **Mode de paiement,** choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **Modifier**.
     - Si vous souhaitez ajouter un nouveau mode de paiement, sélectionnez **Remplacer.**
-4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer**.
+4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer.**
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
@@ -176,8 +146,8 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 1. Dans le Centre d’administration, allez sur la page **Factures**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
 2. Sous **l’onglet Factures,** sélectionnez la facture à afficher. Si aucune facture n’est visible, modifiez les **3** derniers mois en **6 derniers** mois ou spécifiez **une plage de dates.**
 
-## <a name="need-help-contact-us"></a>Vous avez besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez [le FAQ sur les achats en libre-service.](self-service-purchase-faq.yml)
 
-Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../business-video/get-help-support.md)
+Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../admin/get-help-support.md)

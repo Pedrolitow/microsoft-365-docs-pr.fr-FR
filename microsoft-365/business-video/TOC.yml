@@ -25,22 +25,16 @@
           href: connect.md
         - name: Installer des applications Microsoft Office
           href: install-office.md
-        - name: Configurer Outlook pour le courrier électronique
-          href: setup-outlook.md
         - name: Importer et rediriger un courrier
           href: import-email.md
-        - name: Déplacer vos fichiers sur OneDrive
-          href: files-to-onedrive.md
-        - name: Déplacer des fichiers de l’entreprise sur SharePoint
-          href: files-to-sharepoint.md
     - name: Mobile
       items:
         - name: Travailler en tout lieu
           href: work-from-anywhere.md
         - name: Installer des applications sur Android
-          href: install-apps-android.md
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
         - name: Installer des applications sur iOS
-          href: install-apps-ios.md
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
         - name: Télécharger l’application mobile Admin
           href: admin-mobile.md
     - name: Collaborer
@@ -48,35 +42,35 @@
         - name: Utiliser Outlook et Teams
           href: collab-outlook-teams.md
         - name: Commencez avec Teams
-          href: get-started-teams-small-business.md
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
         - name: Créer une adresse e-mail de groupe
-          href: group-email.md
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
         - name: Créer un calendrier partagé
-          href: shared-calendar.md
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
         - name: Créer une équipe à l’échelle de l’organisation dans Teams
-          href: org-wide-team.md
+          href: /microsoftteams/create-an-org-wide-team
         - name: Créer une équipe avec des invités
-          href: team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: Rejoindre une équipe en tant qu’invité
-          href: join-team-guest.md
+          href: /microsoftteams/guest-experience
         - name: Discutez avec vos employés et vos clients
-          href: start-and-pin-chats.md
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
         - name: Vue d’ensemble des réunions en ligne
           href: overview-online-meetings.md
         - name: Planifier une réunion Teams avec des invités
-          href: schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: Rejoindre une réunion Teams avec des invités
-          href: join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: Stockage cloud
       items:
         - name: Présentation du partage
           href: overview-file-sharing.md
         - name: Choisir un emplacement de stockage pour vos fichiers
-          href: store-files.md
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
         - name: Partager en toute sécurité des fichiers en externe
-          href: securely-share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
         - name: Partager aisément des fichiers en externe
-          href: share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
     - name: Business Voice
       items:
         - name: Vue d’ensemble de Business Voice
@@ -86,7 +80,7 @@
     - name: Applications de productivité
       items:
         - name: Vue d’ensemble de Bookings
-          href: overview-bookings.md
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
         - name: Suivre les informations professionnelles avec les Listes Microsoft
           href: track-info-lists.md
         - name: Planifier un événement
@@ -95,8 +89,6 @@
       items:
         - name: Qu’est-ce qu’un administrateur ?
           href: what-is-admin.md
-        - name: Vue d’ensemble du centre d’administration
-          href: admin-center-overview.md
         - name: 'Afficher, télécharger ou imprimer votre facture'
           href: view-bill.md
         - name: Acheter de nouvelles licences
@@ -111,8 +103,6 @@
           href: set-up-self-serve-password-reset.md
         - name: Ajouter un utilisateur
           href: add-user.md
-        - name: Supprimer un utilisateur
-          href: delete-user.md
         - name: Ajouter un autre administrateur
           href: add-admin.md
         - name: Modifier un nom d’utilisateur et une adresse de messagerie
@@ -123,8 +113,6 @@
           href: company-wide-signature.md
         - name: Prendre des mesures sur la base du rapport sur l’utilisation
           href: act-on-report.md
-        - name: Ajouter un autre domaine
-          href: add-domain.md
         - name: Configurer une nouvelle adresse professionnelle
           href: set-up-a-new-business-email-address.md
     - name: Gestion des appareils
@@ -140,7 +128,7 @@
         - name: Sécuriser les comptes des employés avec une authentification multifacteur
           href: turn-on-mfa.md
         - name: Configurer la connexion à deux facteurs sur votre téléphone
-          href: set-up-mfa.md
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
         - name: Activer la détection de programmes malveillants
           href: anti-malware.md
         - name: Créer des règles pour vos e-mails pour les rançongiciels
@@ -157,8 +145,6 @@
           href: create-sensitivity-labels.md
     - name: Assistance
       items:
-        - name: Obtenir de l’aide ou une assistance technique
-          href: get-help-support.md
         - name: Rechercher des documents et une formation
           href: find-help-answers.md
         - name: Configuration rapide pour les employés

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3954ef585ee3a4f51677f3e5e26b6309d3b75889
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bbb669d485336d1840e414f1f9d85507c175dd14
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661458"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370871"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "60661458"
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur les activités dans diverses applications et services cloud couverts par `CloudAppEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Pour obtenir la liste complète, voir [Applications et services couverts.](#apps-and-services-covered) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
+Le tableau du schéma de recherche avancée contient des informations sur les activités dans différentes applications et services cloud couverts par `CloudAppEvents` Microsoft Defender pour les applications cloud. [](advanced-hunting-overview.md) Pour obtenir la liste complète, voir [Applications et services couverts.](#apps-and-services-covered) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
 
 >[!IMPORTANT]
 >Ce tableau inclut des informations qui étaient disponibles dans le `AppFileEvents` tableau. À compter du 7 mars 2021, les utilisateurs qui recherchent des activités liées aux fichiers dans les services cloud et au-delà de cette date doivent utiliser le `CloudAppEvents` tableau à la place. <br><br>Veillez à rechercher les requêtes et les règles de détection personnalisées qui utilisent toujours le tableau et à les `AppFileEvents` modifier pour utiliser le `CloudAppEvents` tableau. Pour plus d’informations sur la conversion des requêtes affectées, voir La recherche dans les activités d’application [cloud avec Microsoft 365 Defender de recherche avancée.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
@@ -46,42 +46,43 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
-| `Application` | chaîne | Application qui a effectué l’action enregistrée |
-| `ApplicationId` | chaîne | Identificateur unique de l’application |
-| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure Active Directory |
-| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `IsAdminOperation` | chaîne | Indique si l’activité a été effectuée par un administrateur |
-| `DeviceType` | chaîne | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
-| `OSPlatform` | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette colonne indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
-| `IPAddress` | chaîne | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `IsAnonymousProxy` | chaîne | Indique si l’adresse IP appartient à un proxy anonyme connu |
-| `CountryCode` | chaîne | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
-| `City` | chaîne | Ville où l’adresse IP du client est géolocalisé |
-| `Isp` | chaîne | Fournisseur de services Internet (ISP) associé à l’adresse IP |
-| `UserAgent` | chaîne | Informations sur l’agent utilisateur à partir du navigateur web ou d’une autre application cliente |
-| `ActivityType` | chaîne | Type d’activité qui a déclenché l’événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement |
+| `Application` | string | Application qui a effectué l’action enregistrée |
+| `ApplicationId` | string | Identificateur unique de l’application |
+| `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
+| `AccountId` | string | Identificateur du compte trouvé par Microsoft Cloud App Security. Peut être Azure Active Directory ID, nom d’utilisateur principal ou autres identificateurs. |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `IsAdminOperation` | string | Indique si l’activité a été effectuée par un administrateur |
+| `DeviceType` | string | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
+| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette colonne indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
+| `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `IsAnonymousProxy` | string | Indique si l’adresse IP appartient à un proxy anonyme connu |
+| `CountryCode` | string | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
+| `City` | string | Ville où l’adresse IP du client est géolocalisé |
+| `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP |
+| `UserAgent` | string | Informations sur l’agent utilisateur à partir du navigateur web ou d’une autre application cliente |
+| `ActivityType` | string | Type d’activité qui a déclenché l’événement |
 | `ActivityObjects` | dynamic | Liste des objets, tels que des fichiers ou des dossiers, qui ont été impliqués dans l’activité enregistrée |
-| `ObjectName` | chaîne | Nom de l’objet à qui l’action enregistrée a été appliquée |
-| `ObjectType` | chaîne | Type d’objet, tel qu’un fichier ou un dossier, à qui l’action enregistrée a été appliquée |
-| `ObjectId` | chaîne | Identificateur unique de l’objet à qui l’action enregistrée a été appliquée |
-| `ReportId` | chaîne | Identificateur unique de l’événement |
-| `RawEventData` | chaîne | Informations d’événement brutes de l’application ou du service source au format JSON |
+| `ObjectName` | string | Nom de l’objet à qui l’action enregistrée a été appliquée |
+| `ObjectType` | string | Type d’objet, tel qu’un fichier ou un dossier, à qui l’action enregistrée a été appliquée |
+| `ObjectId` | string | Identificateur unique de l’objet à qui l’action enregistrée a été appliquée |
+| `ReportId` | string | Identificateur unique de l’événement |
+| `RawEventData` | string | Informations d’événement brutes de l’application ou du service source au format JSON |
 | `AdditionalFields` | dynamic | Informations supplémentaires sur l’entité ou l’événement |
-| `AccountType` | chaîne | Type de compte d’utilisateur, indiquant son rôle général et les niveaux d’accès, tels que Normal, Système, Administrateur, DcAdmin, Système, Application | 
-| `IsExternalUser` | valeur booléenne | Indique si un utilisateur au sein du réseau n’appartient pas au domaine de l’organisation | 
-| `IsImpersonated` | valeur booléenne | Indique si l’activité a été effectuée par un utilisateur au nom d’un autre utilisateur (dont l’identité a été usurpée) | 
+| `AccountType` | string | Type de compte d’utilisateur, indiquant son rôle général et les niveaux d’accès, tels que Normal, Système, Administrateur, DcAdmin, Système, Application | 
+| `IsExternalUser` | valeur booléenne | Indique si un utilisateur à l’intérieur du réseau n’appartient pas au domaine de l’organisation | 
+| `IsImpersonated` | valeur booléenne | Indique si l’activité a été effectuée par un utilisateur pour un autre utilisateur (dont l’identité a été usurpée) | 
 | `IPTags` | dynamic | Informations définies par le client appliquées à des adresses IP et plages d’adresses IP spécifiques | 
-| `IPCategory` | chaîne | Informations supplémentaires sur l’adresse IP | 
-| `UserAgentTags` | dynamic | Plus d’informations fournies par Microsoft Cloud App Security dans une balise dans le champ agent utilisateur. Peut avoir l’une des valeurs suivantes : client natif, navigateur obsolète, système d’exploitation obsolète, robot | 
+| `IPCategory` | string | Informations supplémentaires sur l’adresse IP | 
+| `UserAgentTags` | dynamic | Plus d’informations fournies par Microsoft Defender pour les applications cloud dans une balise dans le champ agent utilisateur. Peut avoir l’une des valeurs suivantes : client natif, navigateur obsolète, système d’exploitation obsolète, robot | 
 
 ## <a name="apps-and-services-covered"></a>Applications et services couverts
 
 - Dropbox
 - Dynamics 365
-- Exchange Online
+- Exchange Online
 - Microsoft Teams
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Power Automate
 - Power BI
 - SharePoint Online
@@ -89,7 +90,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - Office 365
 - Yammer 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

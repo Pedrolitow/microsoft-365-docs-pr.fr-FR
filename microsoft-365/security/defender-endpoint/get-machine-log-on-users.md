@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b45ce1de5b2149251b691d81c29aea717d5dffc9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b5c016d3368231b146be61da086e77ece1fa3dd9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282776"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369875"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
 
@@ -70,7 +70,7 @@ GET /api/machines/{id}/logonusers
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

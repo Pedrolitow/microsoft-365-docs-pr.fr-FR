@@ -384,5 +384,7 @@
           href: ../defender-endpoint/index.yml
         - name: Defender pour l’identité
           href: /defender-for-identity
-        - name: Defender pour les applications cloud
+        - name: Defender for Cloud Apps
           href: /cloud-app-security
+        - name: Défenseur des affaires
+          href: ../defender-business/index.yml

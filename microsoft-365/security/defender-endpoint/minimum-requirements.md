@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2a22d579adb10f82f24a1246d89d6ef0e3e6a74
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166781"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370331"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -100,13 +100,13 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 11 Éducation
 - Windows 11 Professionnel
 - Windows 11 Professionnel Éducation
-- Windows 10 Entreprise
+- Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
-- Windows 10 Éducation
-- Windows 10 Professionnel
+- Windows 10 Éducation
+- Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1[(EsU](/windows-server/get-started/extended-security-updates-deploy)est nécessaire pour la prise en charge)
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 ou ultérieure
@@ -221,7 +221,7 @@ Si vous exécutez Antivirus Microsoft Defender comme produit anti-programme malv
 
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Créez des groupes de distribution ou des listes dans le Centre d'administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 4eb98e0be0dcfef8d1648aabe4c9a35106814e52
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 128f7bb028a115f521f65412e3e8a36c48119a6c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197820"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373955"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d'administration Microsoft 365
   
@@ -41,12 +41,6 @@ Les groupes de distribution sont parfois appelés listes de distribution.
 ::: moniker range="o365-worldwide"
 
 Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 

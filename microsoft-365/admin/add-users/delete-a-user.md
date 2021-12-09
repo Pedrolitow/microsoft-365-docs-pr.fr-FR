@@ -19,17 +19,17 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Découvrez comment supprimer un compte d’utilisateur et que faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
-ms.openlocfilehash: 852ebe9a99718be9bf025fbc8347bc2ca7854cc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment supprimer un compte d’utilisateur et comment faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
+ms.openlocfilehash: 462e9bcec4dac7e9d708618777ea58fb5d182473
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161821"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370607"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
-**Vous recherchez comment supprimer votre *propre compte* Microsoft 365 utilisateur que vous utilisez au travail ou à l’école ? Contactez le support technique de votre entreprise ou de votre université pour suivre ces étapes à votre place.**
+**Vous recherchez comment supprimer votre *propre compte* Microsoft 365 utilisateur que vous utilisez au travail ou à l’école ? Contactez le support technique de votre entreprise ou université pour suivre ces étapes à votre place.**
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -47,11 +47,11 @@ Si vous êtes un administrateur général, lorsque vous supprimez un utilisateur
 
 Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier électronique et le contenu OneDrive de l’utilisateur, et si vous souhaitez conserver la licence ou arrêter de payer pour elle.
   
-|Élément | Description |
+|Item | Description |
 |:-----|:-----|
 |Licences de produit  <br/> |Vous pouvez supprimer la licence de l’utilisateur et la supprimer de vos abonnements pour arrêter de payer pour cette licence. Si vous sélectionnez cette option, la licence sera automatiquement supprimée de vos abonnements.  <br/><br/> **Vous ne pouvez pas supprimer la licence si** vous l’avez achetée via un partenaire ou une licence en volume. Si vous payez pour une offre annuelle ou si vous êtes au milieu d’un cycle de facturation, vous ne pourrez pas supprimer la licence de votre abonnement tant que votre engagement n’est pas terminé.  <br/> |
 |OneDrive contenu  <br/> |Si l’utilisateur a enregistré ses fichiers OneDrive, vous pouvez accorder à un autre utilisateur l’accès à ces fichiers.  <br/><br/> Vous devez déplacer les fichiers que vous souhaitez conserver pendant la période de rétention définie pour OneDrive fichiers. **Par défaut, la période de rétention est de 30 jours.** Si vous ne déplacez pas les fichiers au cours de la période de rétention après la suppression de l’utilisateur, le OneDrive de l’utilisateur supprimé est déplacé vers la Corbeille de la collection de sites, où il est conservé pendant 93 jours. Pendant ce temps, les utilisateurs ne pourront plus accéder au contenu partagé dans le OneDrive. Pour restaurer le OneDrive, vous devez utiliser PowerShell. Pour plus d’informations, [voir Restaurer une OneDrive](/onedrive/restore-deleted-onedrive).<br/><br/> Pour augmenter le nombre de jours pendant OneDrive fichiers de rétention pour les comptes supprimés, voir Définir la OneDrive rétention des utilisateurs [supprimés.](/onedrive/set-retention)  <br/><br/> **Important !** Si l’utilisateur supprimé a utilisé un ordinateur personnel pour télécharger des fichiers à partir de SharePoint et OneDrive, vous ne pouvez pas effacer les fichiers qu’il a stockés sur son ordinateur. Ils continueront d’avoir accès à tous les fichiers qui ont été synchronisés à partir OneDrive.           |
-|E-mail  <br/> | Donner à un autre utilisateur l’accès au courrier électronique de l’utilisateur supprimé convertira la boîte aux lettres de l’utilisateur supprimé en boîte aux lettres partagée. Le nouveau propriétaire de la boîte aux lettres peut ensuite accéder à la boîte aux lettres et surveiller les nouveaux messages électroniques. Vous avez également les options suivantes :  <br/>  <br/>Modifier le nom complet : nous vous recommandons de modifier le nom d’affichage afin qu’il soit facile d’identifier la boîte aux lettres partagée dans la **liste** des utilisateurs actifs.  <br/>  Activer les réponses automatiques : nous avons déjà écrit une réponse automatique polie pour vous. Vous pouvez envoyer différentes réponses automatiques à des personnes au sein de votre organisation et à des personnes extérieures à votre organisation.  <br/> <br/> Nettoyer les alias : les alias sont des adresses de messagerie supplémentaires pour les utilisateurs. Certaines organisations ne les utilisent pas, donc si vous n’en avez pas, vous n’avez rien d’autre à faire ici. Si l’utilisateur a des alias, nous vous recommandons de les supprimer afin de pouvoir réutiliser ces adresses e-mail. Sinon, vous ne pouvez pas réutiliser ces adresses de messagerie tant que la période de rétention des boîtes aux lettres supprimées n’est pas écoulée. Par défaut, une boîte aux lettres supprimée est récupérable pendant 30 jours. Pour plus d’informations, voir Supprimer ou restaurer des boîtes aux [lettres utilisateur dans Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
+|E-mail  <br/> | Donner à un autre utilisateur l’accès au courrier de l’utilisateur supprimé convertira la boîte aux lettres de l’utilisateur supprimé en boîte aux lettres partagée. Le nouveau propriétaire de la boîte aux lettres peut ensuite accéder à la boîte aux lettres et surveiller les nouveaux messages électroniques. Vous avez également les options suivantes :  <br/>  <br/>Modifier le nom complet : nous vous recommandons de modifier le nom d’affichage afin qu’il soit facile d’identifier la boîte aux lettres partagée dans la **liste** des utilisateurs actifs.  <br/>  Activer les réponses automatiques : nous avons déjà écrit une réponse automatique polie pour vous. Vous pouvez envoyer différentes réponses automatiques à des personnes au sein de votre organisation et à des personnes extérieures à votre organisation.  <br/> <br/> Nettoyer les alias : les alias sont des adresses de messagerie supplémentaires pour les utilisateurs. Certaines organisations ne les utilisent pas, donc si vous n’en avez pas, vous n’avez rien d’autre à faire ici. Si l’utilisateur a des alias, nous vous recommandons de les supprimer afin de pouvoir réutiliser ces adresses e-mail. Sinon, vous ne pouvez pas réutiliser ces adresses de messagerie tant que la période de rétention des boîtes aux lettres supprimées n’est pas écoulée. Par défaut, une boîte aux lettres supprimée est récupérable pendant 30 jours. Pour plus d’informations, [voir Supprimer ou restaurer des](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)boîtes aux lettres utilisateur dans Exchange Online . <br/> |
 |Active Directory  <br/> |Si votre entreprise utilise **Active Directory** qui se synchronise avec Azure Active Directory, vous devez supprimer le compte d'utilisateur d'Active Directory. Vous ne pouvez pas le faire via Office 365. Pour obtenir des instructions, [voir Supprimer un compte d’utilisateur.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))  <br/> |
 
 ### <a name="get-started"></a>Prise en main
@@ -61,12 +61,6 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -89,12 +83,6 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
@@ -114,15 +102,9 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement dont vous souhaitez supprimer des licences.
@@ -131,7 +113,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
 
 4. Dans le **volet Supprimer des licences,** sous Nouvelle **quantité,** dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 100 licences et que vous souhaitez en supprimer cinq, entrez 95.
 
-5. Sélectionnez **Enregistrer**.
+5. Cliquez sur **Enregistrer**.
 
 Plus tard, lorsque vous suivrez les étapes pour ajouter une autre personne à votre entreprise, vous serez invité à acheter une licence en même temps, en une seule étape !
 

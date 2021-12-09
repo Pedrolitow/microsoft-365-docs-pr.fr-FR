@@ -1,6 +1,6 @@
 ---
 title: Illustrations de productivité Microsoft 365
-description: Utilisez ces illustrations, telles que le diagramme Teams’architecture, pour comprendre les principes de base de l’architecture pour l’Microsoft 365 solutions de productivité.
+description: Découvrez comment implémenter des Microsoft 365 et Microsoft Teams de productivité à l’aide de ces diagrammes d’architecture.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a3d576b5b507ea7a3468a472c3690495114d2410
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122560"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372467"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs de leur organisation.
 ms.date: 03/26/2021
-ms.openlocfilehash: edfacf8ebd1cd6815ec715e975b8bebc273dafc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158457"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371915"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -39,12 +39,6 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -64,12 +58,6 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, choisissez la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
 
 ::: moniker-end
 
@@ -108,12 +96,6 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page Des services  > **d’achat de facturation.**
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>allez à la page Des services  > **d’achat de facturation.**
@@ -128,7 +110,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Prendre en compte un abonnement d’achat en libre-service
 
-Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, vous avez deux options :
+Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, deux options s’offrent à vous :
 
 1. Déplacez les utilisateurs vers un autre abonnement et annulez l’abonnement d’origine.
 2. Annulez l’abonnement d’achat en libre-service et supprimez les licences des utilisateurs affectés.
@@ -146,12 +128,6 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration,</a>allez à la page  > **Facturation de vos produits.**
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration,</a>allez à la page  > **Facturation de vos produits.**
@@ -161,7 +137,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
 3. Sélectionnez l’abonnement à prendre en compte.
 4. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres,** sélectionnez **Prendre le contrôle de cet abonnement.**
-5. Dans le volet droit, sélectionnez **Déplacer des utilisateurs.**
+5. Dans le volet droit, sélectionnez **Déplacer les utilisateurs.**
 6. Sélectionnez le produit vers qui vous souhaitez déplacer les utilisateurs, puis **sélectionnez Déplacer les utilisateurs.**
 7. Dans la **zone Déplacer les utilisateurs vers,** **sélectionnez Déplacer les utilisateurs.** Le processus de déplacement peut prendre plusieurs minutes. Ne fermez pas votre navigateur pendant l’opération.
 8. Lorsque le processus de déplacement est terminé, fermez le **volet Déplacer terminé.**
@@ -173,13 +149,7 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration,</a>allez à la page  > **Facturation de vos produits.**
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -193,13 +163,13 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 3. Sélectionnez l'abonnement que vous voulez annuler.
 4. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres,** sélectionnez **Prendre le contrôle de cet abonnement.**
 5. Dans le volet droit, sélectionnez **Annuler l’abonnement.**
-6. Sélectionnez une raison pour votre annulation dans la liste de listes listes, puis sélectionnez **Annuler l’abonnement.**
+6. Sélectionnez une raison pour votre annulation dans la liste de listes listes, puis **sélectionnez Annuler l’abonnement.**
 7. Dans la **zone Voulez-vous vraiment** annuler ? sélectionnez **Annuler l’abonnement.**
 8. Fermez le volet droit.
 9. Dans la page des détails de l’abonnement, **l’état de l’abonnement** s’affiche **comme supprimé.**
 
-## <a name="need-help-contact-us"></a>Vous avez besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez [le FAQ sur les achats en libre-service.](self-service-purchase-faq.yml)
 
-Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../business-video/get-help-support.md)
+Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../admin/get-help-support.md)

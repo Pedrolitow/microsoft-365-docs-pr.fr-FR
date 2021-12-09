@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0e6cb244bf4beeab1d282e46196262ea681a13c2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284156"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372611"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -597,7 +597,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Correction d’un problème relatif aux fichiers de localisation
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2110.01</summary>
@@ -611,7 +611,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -622,10 +622,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun changement
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2108.01</summary>
@@ -636,10 +636,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -650,10 +650,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -695,7 +695,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -709,7 +709,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -723,7 +723,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -737,7 +737,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -748,10 +748,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -762,7 +762,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées
@@ -776,10 +776,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun changement
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun changement
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -790,7 +790,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.
@@ -808,4 +808,3 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 |[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) | Vous pouvez définir des mises à jour de protection à télécharger au démarrage ou après certains événements de protection livrés par le cloud. |
 |[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Vous pouvez spécifier des paramètres, par exemple si des mises à jour doivent être mises à jour sur l’alimentation de la batterie, qui sont particulièrement utiles pour les appareils mobiles et les ordinateurs virtuels. |
 | [Mise à jour de Microsoft Defender pour le point de terminaison PEPT capteur](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Vous pouvez mettre à jour le capteur PEPT (MsSense.exe) inclus dans le nouveau package de solution unifiée Microsoft Defender for Endpoint publié en 2021.   |
-

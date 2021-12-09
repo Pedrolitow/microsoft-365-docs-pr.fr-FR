@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Prenez les mesures nécessaires pour commencer la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70ccdf6fe80a802bafec6617c19488af88040478
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779114"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370655"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 2 : Installation
 
@@ -63,11 +63,11 @@ Pour plus de clarté, nous allons utiliser ces noms de groupes spécifiques tout
 
 Lorsque vous êtes prêt à commencer le test, ajoutez ces groupes en tant qu’exceptions à la règle de flux de messagerie [SCL=-1.](#step-3-maintain-or-create-the-scl-1-mail-flow-rule) Lorsque vous créez des stratégies pour les différentes fonctionnalités de protection de Defender pour Office 365, vous utilisez ces groupes comme conditions qui définissent à qui s’applique la stratégie.
 
-**Remarques** :
+**Remarques** :
 
 - Les termes Standard et Strict proviennent de nos paramètres de sécurité [recommandés,](recommended-settings-for-eop-and-office365.md)qui sont également utilisés dans les stratégies [de sécurité prédéfines.](preset-security-policies.md) Dans l’idéal, nous vous indiquerons de définir vos utilisateurs pilotes dans les stratégies de sécurité standard et stricte, mais nous ne pouvons pas le faire. Pourquoi ? Étant donné que vous ne pouvez pas personnaliser les paramètres dans les stratégies de sécurité prédéfinie (en particulier, les actions entreprises sur les messages ou l’ajustement des paramètres de protection contre l’emprunt d’identité). Au cours de vos tests de migration, vous voudrez voir ce que Defender pour Office 365 ferait pour les messages, vérifier que c’est ce que vous voulez faire et éventuellement ajuster les configurations de stratégie pour autoriser ou empêcher ces résultats.
 
-  Par conséquent, au lieu d’utiliser des stratégies de sécurité prédéfines, vous allez créer manuellement des stratégies personnalisées avec des paramètres très similaires, mais dans certains cas sont différents de ceux des stratégies de sécurité prédéfines Standard et Strict.
+  Par conséquent, au lieu d’utiliser des stratégies de sécurité prédéfines, vous allez créer manuellement des stratégies personnalisées avec des paramètres très similaires aux paramètres des stratégies de sécurité standard et stricte, mais dans certains cas sont différents.
 
 - Si vous souhaitez expérimenter  des paramètres qui diffèrent considérablement de nos valeurs standard ou stricte recommandées, vous devez envisager de créer et d’utiliser des groupes de distribution supplémentaires et spécifiques pour les utilisateurs pilotes dans ces scénarios. Vous pouvez utiliser l’Analyseur de configuration pour voir si vos paramètres sont sécurisés. Pour obtenir des instructions, [consultez l’analyseur de](configuration-analyzer-for-security-policies.md)configuration pour les stratégies de protection dans EOP et Microsoft Defender pour Office 365 .
 
@@ -89,7 +89,7 @@ Vous devez également vérifier que tous les utilisateurs du projet pilote ont i
 
 Ne sous-estimez pas l’importance de cette étape. Les données issues des soumissions d’utilisateurs vous donnent la boucle de commentaires dont vous avez besoin pour vérifier une bonne expérience cohérente de l’utilisateur final avant et après la migration. Ces commentaires vous aident à prendre des décisions de configuration de stratégie éclairées, ainsi qu’à fournir à votre direction des rapports sur la bonne déroulement de la migration.
 
-Au lieu de s’appuyer sur des données reposant sur l’expérience de l’ensemble de l’organisation, plusieurs migrations ont donné lieu à des crises d’émulation basées sur une expérience utilisateur négative unique. En outre, si vous exécutez des simulations de hameçonnage, vous pouvez utiliser les commentaires de vos utilisateurs pour vous informer lorsqu’ils voient un risque qui peut nécessiter une enquête.
+Au lieu de s’appuyer sur des données reposant sur l’expérience de l’ensemble de l’organisation, plusieurs migrations ont donné lieu à des émo gations d’émulation basées sur une expérience utilisateur négative unique. En outre, si vous exécutez des simulations de hameçonnage, vous pouvez utiliser les commentaires de vos utilisateurs pour vous informer lorsqu’ils voient un risque qui peut nécessiter une enquête.
 
 ## <a name="step-3-maintain-or-create-the-scl-1-mail-flow-rule"></a>Étape 3 : Gérer ou créer la règle de flux de messagerie SCL=-1
 
@@ -121,7 +121,7 @@ Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour
 
 La première chose à faire est de configurer le filtrage amélioré pour les [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (également appelé ignorer la *liste)* sur le connecteur utilisé pour le flux de messagerie de votre service de protection existant vers Microsoft 365. Vous pouvez utiliser le rapport [des messages entrants pour](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) identifier le connecteur.
 
-Le filtrage amélioré pour les connecteurs est requis par Defender Office 365 pour voir d’où les messages Internet sont réellement issus. Le filtrage amélioré pour les connecteurs améliore considérablement la précision de la pile de filtrage Microsoft [](threat-explorer.md) (en particulier la veille contre l’usurpation d’informations), [](anti-spoofing-protection.md)ainsi que les fonctionnalités post-violation dans l’Explorateur de menaces et la réponse d'& [automatisée (AIR)](automated-investigation-response-office.md).
+Le filtrage amélioré pour les connecteurs est requis par Defender Office 365 pour voir d’où les messages Internet sont réellement issus. Le filtrage amélioré pour les connecteurs améliore considérablement la précision de la pile de filtrage Microsoft [](threat-explorer.md) (en particulier la veille contre l’usurpation d’informations, [](anti-spoofing-protection.md)ainsi que les fonctionnalités post-violation dans l’Explorateur de menaces et la réponse d’investigation automatisée & [(AIR)](automated-investigation-response-office.md).
 
 Pour activer correctement le filtrage amélioré pour les connecteurs, vous devez ajouter les adresses **IP** publiques \* \* **\* \*** de tous les services tiers et/ou hôtes du système de messagerie local qui routent le courrier entrant vers Microsoft 365.
 
@@ -135,11 +135,11 @@ Pour vérifier que le filtrage amélioré des connecteurs fonctionne, vérifiez 
 En créant des stratégies de production, même si elles ne sont [](threat-explorer.md) pas appliquées à tous les utilisateurs, vous pouvez tester les fonctionnalités post-violation telles que l’Explorateur de menaces et tester l’intégration de Defender pour Office 365 dans les processus de votre équipe de réponse à la sécurité.
 
 > [!IMPORTANT]
-> Les stratégies peuvent être limitées aux utilisateurs, groupes ou domaines. Nous vous déconseillons de combiner les trois dans une stratégie, car seuls les utilisateurs qui correspondent à ces trois stratégies entreront dans le cadre de la stratégie. Pour les stratégies pilotes, nous vous recommandons d’utiliser des groupes ou des utilisateurs. Pour les stratégies de production, nous vous recommandons d’utiliser des domaines. Il est extrêmement important de  comprendre que seul le domaine de messagerie principal de l’utilisateur détermine si l’utilisateur entre dans le cadre de la stratégie. Ainsi, si vous basculez l’enregistrement MX pour le domaine secondaire d’un utilisateur, assurez-vous que son domaine principal est également couvert par une stratégie.
+> Les stratégies peuvent être limitées aux utilisateurs, groupes ou domaines. Nous vous déconseillons de combiner les trois dans une stratégie, car seuls les utilisateurs qui correspondent à ces trois stratégies entreront dans le cadre de la stratégie. Pour les stratégies pilotes, nous vous recommandons d’utiliser des groupes ou des utilisateurs. Pour les stratégies de production, nous vous recommandons d’utiliser des domaines. Il est extrêmement important de  comprendre que seul le domaine de messagerie principal de l’utilisateur détermine si l’utilisateur entre dans l’étendue de la stratégie. Ainsi, si vous basculez l’enregistrement MX pour le domaine secondaire d’un utilisateur, assurez-vous que son domaine principal est également couvert par une stratégie.
 
 ### <a name="create-pilot-safe-attachments-policies"></a>Créer des stratégies Coffre pièces jointes pilotes
 
-[Coffre pièces jointes](safe-attachments.md) est la fonctionnalité Defender pour Office 365 la plus simple à activer et à tester avant de changer d’enregistrement MX. Coffre Les pièces jointes ont les avantages suivants :
+[Coffre pièces jointes](safe-attachments.md) est la fonctionnalité Defender pour Office 365 la plus simple à activer et à tester avant de changer d’enregistrement MX. Coffre pièces jointes présente les avantages suivants :
 
 - Configuration minimale.
 - Probabilité extrêmement faible de faux positifs.
@@ -157,7 +157,7 @@ Pour les paramètres recommandés, voir [Recommandations Coffre stratégie pièc
 > [!NOTE]
 > Nous ne prisons pas en charge l’habillage ou la réécriture de liens déjà wrapped ou rewritten. Si votre service de protection actuel encapsule ou réécrit déjà les liens dans les messages électroniques, vous devez désactiver cette fonctionnalité pour vos utilisateurs pilotes. Une façon de s’assurer que cela ne se produit pas consiste à exclure le domaine d’URL de l’autre service dans la stratégie Coffre liens.
 >
-> Coffre La protection des liens pour les applications Office prise en charge est un paramètre global qui s’applique à tous les utilisateurs sous licence. Vous pouvez l’activer ou le désactiver globalement, et non pour des utilisateurs spécifiques. Pour plus d’informations, [voir Configure Coffre Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+> Coffre de liens pour les applications Office pris en charge est un paramètre global qui s’applique à tous les utilisateurs sous licence. Vous pouvez l’activer ou le désactiver globalement, et non pour des utilisateurs spécifiques. Pour plus d’informations, [voir Configure Coffre Links protection for Office 365 apps.](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal)
 
 Créez une stratégie Coffre liens pour vos utilisateurs pilotes. Les probabilités de faux positifs dans Coffre Liens sont également assez faibles, mais vous devez envisager de tester la fonctionnalité sur un nombre d’utilisateurs pilotes inférieur à celui Coffre pièces jointes. Étant donné que la fonctionnalité a une incidence sur l’expérience utilisateur, vous devez envisager un plan pour former les utilisateurs.
 
@@ -179,7 +179,7 @@ Pour les paramètres standard et strict recommandés, voir Paramètres de strat�
 
 Créez deux stratégies anti-hameçonnage pour les utilisateurs pilotes :
 
-- Stratégie qui utilise les paramètres Standard, à l’exception des actions de détection d’emprunt d’identité, comme décrit ci-dessous. Utilisez le groupe **MDOPilot \_ SpamPhish \_ Standard** comme condition de la stratégie (à qui s’applique la stratégie).
+- Stratégie qui utilise les paramètres Standard, à l’exception des actions de détection d’emprunt d’identité comme décrit ci-dessous. Utilisez le groupe **MDOPilot \_ SpamPhish \_ Standard** comme condition de la stratégie (à qui s’applique la stratégie).
 - Stratégie qui utilise les paramètres Strict, à l’exception des actions de détection d’emprunt d’identité comme décrit ci-dessous. Utilisez le groupe **MDOPilot \_ SpamPhish \_ Strict** comme condition de la stratégie (à qui s’applique la stratégie). Cette stratégie doit avoir une priorité plus élevée (nombre inférieur) que la stratégie avec les paramètres Standard.
 
 Pour les détections d’usurpation d’adresses, l’action standard recommandée est Déplacer le message vers les dossiers Courrier indésirable des **destinataires** et l’action stricte recommandée est Mettre le message en **quarantaine.** Utilisez la veille contre l’usurpation d’informations pour observer les résultats. Les remplacements sont expliqués dans la section suivante. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).

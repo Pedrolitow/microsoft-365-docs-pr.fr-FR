@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 5af87a3a2d8ca6d37816cbaf0fd35426c8e828a4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109958"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373067"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -149,7 +149,7 @@ Une fois que vous avez activé la co-édition de fichiers avec des étiquettes d
 
 ![Option indiquant que la co-édition est activée pour les étiquettes de confidentialité.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](../business-video/get-help-support.md) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre client. Attendez-vous à ce que les frais de support habituels s'appliquent. 
+Comme vous le voyez sur la capture d'écran lorsque ce paramètre a été activé, vous pouvez contacter le [Support Microsoft](../admin/get-help-support.md) et demander à ce que ce paramètre soit désactivé. Cette demande peut prendre plusieurs jours et vous devrez prouver que vous êtes un administrateur général pour votre client. Attendez-vous à ce que les frais de support habituels s'appliquent. 
 
 Si un ingénieur du support technique désactive ce paramètre pour votre client :
 

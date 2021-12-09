@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 64ee2649127445e8438d915734dad9f2aa965933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165039"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371147"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -51,12 +51,6 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 ::: moniker range="o365-worldwide"
 
 2. Dans le Centre d’administration, allez à la page **Teams et groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-2. Dans le [centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=848041), allez à la page **Teams et groupes** \> **Boîtes aux lettres partagées**.
 
 ::: moniker-end
 
@@ -117,12 +111,6 @@ Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 

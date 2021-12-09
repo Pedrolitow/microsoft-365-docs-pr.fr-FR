@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754776"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372887"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de proposition
 
@@ -43,7 +43,7 @@ Avant de pouvoir acheter des éléments pour une proposition, vous devez avoir u
 
 Vous utilisez un compte de facturation pour gérer vos paramètres de compte, factures, profils de facturation et produits et services. Si vous n’avez pas encore de compte de facturation, votre représentant Microsoft en crée un pour vous. Dans le cas contraire, ils utilisent un compte de facturation existant pour votre organisation, tant que vous êtes autorisé à utiliser ce compte de facturation.
 
-Les autorisations de compte de facturation sont gérées par le propriétaire du compte de facturation. Les administrateurs globaux peuvent s’attribuer eux-mêmes le rôle de propriétaire du compte de facturation, puis faire d’autres personnes propriétaires du compte de facturation.
+Les autorisations de compte de facturation sont gérées par le propriétaire du compte de facturation. Les administrateurs globaux peuvent s’attribuer eux-mêmes le rôle de propriétaire du compte de facturation, puis désigner d’autres propriétaires de compte de facturation.
 
 Pour plus d’informations sur les comptes de facturation, voir [Gérer les comptes de facturation.](manage-billing-accounts.md)
 
@@ -53,7 +53,7 @@ Le contrat client Microsoft (MCA) permet à une organisation d’acheter des pro
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Autorisations nécessaires pour signer un contrat ou payer les éléments
 
-Si vous n’avez pas de rôle attribué dans le compte de facturation, lorsque vous affichez la proposition, le rôle de lecteur de base vous est attribué. Ce rôle vous permet d’afficher la proposition, mais pas d’agir sur celle-ci. Le propriétaire du compte de facturation ou le rôle de collaborateur de compte de facturation doit vous être attribué avant de signer un contrat ou d’acheter des produits et services. Le propriétaire de votre compte de facturation peut vous attribuer ce rôle.
+Si vous n’avez pas de rôle attribué dans le compte de facturation, lorsque vous affichez la proposition, le rôle de lecteur de base vous est attribué. Ce rôle vous permet d’afficher la proposition, mais pas d’agir sur celle-ci. Le propriétaire du compte de facturation ou le rôle de collaborateur de compte de facturation doivent vous être attribués avant de pouvoir signer un contrat ou acheter des produits et services. Le propriétaire de votre compte de facturation peut vous attribuer ce rôle.
 
 Pour plus d’informations sur les rôles de compte de facturation, voir [Comprendre l’accès aux comptes de facturation.](manage-billing-accounts.md#understand-access-to-billing-accounts)
 
@@ -80,7 +80,7 @@ Le tableau suivant contient les termes et définitions qui apparaissent dans vot
 
 | **Terme** | **Définition** |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Compte de facturation | Compte utilisé pour gérer les paramètres, factures, modes de paiement et produits de votre compte. |
+| Compte de facturation | Compte utilisé pour gérer les paramètres, les factures, les modes de paiement et les produits de votre compte. |
 | Profil de facturation | Informations sur votre organisation qui vous permet de personnaliser les éléments inclus sur votre facture et la façon dont vous payez vos factures. Le profil de facturation inclut le nom du compte de facturation, les modes de paiement utilisés pour le profil de facturation spécifique, les informations de contact, les paramètres de facture et les autorisations qui vous permet de modifier le profil de facturation, de payer les factures et d’acheter des produits et services. |
 | Contrats existants | Tout accord que votre organisation a déjà mis en place avec Microsoft. Cela peut inclure, sans s’y limiter, un contrat Accord Entreprise, un contrat de & produit Microsoft ou un contrat client Microsoft. |
 | Contrat client Microsoft (MCA) | Contrat qui décrit les conditions générales du compte détenu par votre organisation avec Microsoft. |
@@ -97,11 +97,11 @@ Une fois que vous vous êtes connecté, la première chose que vous faites est d
 
 La section **Votre organisation** affiche le compte de facturation qui lui est associé. Les informations de compte de facturation sont tirées d’un compte de facturation existant ou créées pour vous par le représentant Microsoft. Si votre organisation est une filiale d’une autre organisation, vous voyez également une **section** Sur l’organisation en chef avec le nom et l’adresse de cette organisation.
 
-Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de compte mca, si les informations sous Votre organisation ou Responsable sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service.](../business-video/get-help-support.md)
+Si c’est la première fois que votre organisation établit une relation commerciale avec Microsoft et que  vous  n’avez pas encore signé de compte mca, si les informations sous Votre organisation ou Responsable sont incorrectes, contactez le représentant pour apporter des modifications à votre place. Une fois que vous avez accepté un compte mca, vous pouvez consulter et modifier l’adresse et les [coordonnées](https://go.microsoft.com/fwlink/p/?linkid=2084771) de votre organisation dans la page Comptes de facturation du Centre d'administration Microsoft 365. Si le nom de votre organisation change, ouvrez une demande de service pour la mettre à jour. [Découvrez comment ouvrir une demande de service.](../admin/get-help-support.md)
 
 ### <a name="your-information"></a>Vos informations
 
-Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis **sélectionnez Enregistrer.**
+Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis sélectionnez **Enregistrer.**
 
 Lorsque vous êtes prêt, sélectionnez **Continuer** pour passer à l’étape suivante.
 
@@ -119,14 +119,14 @@ La proposition contient les informations suivantes :
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nom de l’organisation | Nom de l’organisation pour laquelle la proposition a été préparée. |
 | Valide jusqu’à la date | Date d’expiration de l’offre de proposition. Si vous manquez cette date d’expiration, contactez votre représentant Microsoft pour lui faire savoir que la proposition vous intéresse toujours. |
-| Monétaire | Devise utilisée pour calculer le coût des éléments dans la proposition. |
+| Devise | Devise utilisée pour calculer le coût des éléments dans la proposition. |
 | Préparé pour | Nom du compte de facturation, adresse, adresse de messagerie du contact et numéro de téléphone de la personne qui a demandé la proposition. |
 | Préparé par | Adresse e-mail du représentant Microsoft qui a préparé la proposition. |
 | Résumé | Indique le sous-totaux associé à la proposition. Si nécessaire, il affiche également le taux de change utilisé pour calculer les coûts. |
 | Éléments de ligne de proposition | Cette section contient la quantité, le prix unitaire et le sous-total de tous les éléments inclus dans la proposition. |
 | Étape suivante | Cette section indique l’action nécessaire que vous devez prendre. |
 
-Pour signer un MCA, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
+Pour signer un mca, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
 
 Une fois que vous avez signé les contrats nécessaires ou les termes supplémentaires, **sélectionnez Go to checkout**.
 
@@ -136,13 +136,13 @@ La page d’checkout contient les sections suivantes :
 
 ### <a name="sold-to"></a>Vendu à
 
-Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez le **lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
+Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez **le lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
 
 Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez informations [fiscales.](billing-and-payments/tax-information.md)
 
 ### <a name="billed-to"></a>Facturé à
 
-Cette section indique le profil de facturation utilisé pour déterminer quels éléments sont inclus sur votre facture et comment vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un virement bancaire, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
+Cette section présente le profil de facturation utilisé pour déterminer les éléments inclus sur votre facture et la façon dont vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un virement bancaire, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
 
 Pour plus d’informations sur les profils de facturation, voir [Gérer les profils de facturation.](billing-and-payments/manage-billing-profiles.md)
 
@@ -153,7 +153,7 @@ Cette section affiche la liste de tous les éléments inclus dans la proposition
 - **Termes supplémentaires** Liste des modifications apportées au MCA qui contiennent des termes pour votre organisation. Par exemple, cette liste peut inclure des termes HIPAA ou R GDPR.
 - **Acheter maintenant** Liste des éléments que vous payez lors de l’enregistrement à la fin du flux de travail d’acceptation des propositions.
 - **Remises (appliquées aux futurs frais)** Liste des remises que vous recevez dans le cadre de la proposition.
-- **Inclus** Liste des éléments inclus dans le package de propositions sans frais supplémentaires. Certains de ces éléments peuvent être associés à un coût à l’avenir.
+- **Inclus** Liste des éléments inclus dans le package de propositions sans frais supplémentaires. Certains de ces éléments peuvent avoir un coût qui leur est associé à l’avenir.
 
 ### <a name="summary"></a>Résumé
 

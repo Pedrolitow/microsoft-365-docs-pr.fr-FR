@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez comment Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service d’analyse métier.
-ms.openlocfilehash: 4b9a8df06cbb486afa878054c24d820bcb2af2e1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f89f03470561cd9c8dcddf4e0bbde60d4d9d4fa2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190112"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370523"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -58,14 +58,14 @@ Dans ce scénario, l’utilisateur dispose d’une adresse de messagerie dans le
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scénario 3 : votre organisation n’a pas d’environnement Microsoft 365 connecté à votre domaine de messagerie.
 
-Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti des Power BI.
+Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti Power BI.
   
 > [!IMPORTANT]
-> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer des utilisateurs entre des clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
+> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer les utilisateurs entre les clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Quelles seront les conséquences sur ma méthode actuelle de gestion des identités pour les utilisateurs de mon organisation ?
 
-Si votre organisation dispose déjà d’un environnement Microsoft 365 et que tous les utilisateurs de votre organisation disposent Microsoft 365 comptes, la gestion des identités ne change pas.
+Si votre organisation dispose déjà d’un environnement Microsoft 365 existant et que tous les utilisateurs de votre organisation disposent Microsoft 365 comptes, la gestion des identités ne change pas.
   
 Si votre organisation dispose déjà d’un environnement Microsoft 365, mais que tous les utilisateurs de votre organisation ne disposent pas de comptes Microsoft 365, nous allons créer un utilisateur dans le client et attribuer des licences en fonction de l’adresse e-mail scolaire ou scolaire de l’utilisateur. Cela signifie que le nombre d'utilisateurs que vous gérez à un moment donné augmente à mesure que les utilisateurs de votre organisation s'inscrivent au service.
   
@@ -84,12 +84,6 @@ Si un client a été créé par Microsoft, vous pouvez le revendiquer et le gér
 ::: moniker range="o365-worldwide"
 
 3. Accédez à <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-3. Atteindre <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
@@ -139,7 +133,7 @@ Pour désactiver l'association automatique au client des nouveaux utilisateurs :
 Pour activer l'association automatique au client des nouveaux utilisateurs :  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> Ce blocage empêche les nouveaux utilisateurs de votre organisation de s’inscrire à Power BI. Les utilisateurs qui s’Power BI avant de désactiver de nouvelles inscriptions pour votre organisation conserveront leurs licences. Pour obtenir des instructions sur la façon de supprimer l’accès aux Power BI pour les utilisateurs qui s’étaient précédemment inscrits au service, voir comment supprimer les [Power BI](#how-do-i-remove-power-bi-for-users-that-already-signed-up) pour les utilisateurs déjà inscrits au service.
+> Ce blocage empêche les nouveaux utilisateurs de votre organisation de s’inscrire à Power BI. Les utilisateurs qui s’Power BI avant de désactiver de nouvelles inscriptions pour votre organisation conserveront leurs licences. Pour obtenir des instructions sur la façon de supprimer l’accès aux Power BI pour les utilisateurs qui s’étaient précédemment inscrits au service, voir comment supprimer les [Power BI](#how-do-i-remove-power-bi-for-users-that-already-signed-up) pour les utilisateurs qui s’étaient déjà inscrits au service.
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Comment autoriser les utilisateurs à rejoindre mon client existant ?
 
@@ -171,12 +165,6 @@ Si un utilisateur s’est inscrit à Power BI, mais que vous ne souhaitez plus q
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206156"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370355"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
@@ -33,19 +33,13 @@ Si vous avez plusieurs abonnements, que vous avez des utilisateurs titulaires d�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global, de licence ou d'utilisateur pour attribuer des licences. Pour plus d'informations, consultez [À propos des rôles d'administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -63,7 +57,7 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 5. En bas, sélectionnez **Enregistrer les modifications** \> **fermer.**
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs,](../../managed-desktop/get-started/assign-licenses.md)envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
 

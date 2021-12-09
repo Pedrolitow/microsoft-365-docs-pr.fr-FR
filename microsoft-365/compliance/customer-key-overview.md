@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 0fd94e5d293f05f0ad80c0d6aadaa60284e394c0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172370"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370367"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
@@ -42,7 +42,7 @@ La clé client chiffre uniquement les données au repos dans le cloud. La clé c
 
 Une stratégie de chiffrement de données (DEP) définit la hiérarchie de chiffrement. Cette hiérarchie est utilisée par le service pour chiffrer les données à l’aide de chacune des clés que vous gérez et de la clé de disponibilité protégée par Microsoft. Vous créez des PDP à l’aide des cmdlets PowerShell, puis vous les affectez pour chiffrer les données d’application. Il existe trois types de PDP pris en charge par Microsoft 365 clé client, chaque type de stratégie utilise des cmdlets différentes et fournit une couverture pour un type de données différent. Les DPS que vous pouvez définir sont les suivants :
 
-**PD DEP pour plusieurs charges Microsoft 365 charges de travail** Ces DPS chiffrent les données sur plusieurs charges de travail M365 pour tous les utilisateurs au sein du client. Ces charges de travail sont les suivantes :
+**PD DEP pour plusieurs charges Microsoft 365 charges** de travail. Ces dep chiffrent les données entre plusieurs charges de travail M365 pour tous les utilisateurs au sein du client. Ces charges de travail sont les suivantes :
 
 - Teams messages de conversation (conversations 1:1, conversations de groupe, conversations de réunion et conversations de canal)
 - Teams messages multimédias (images, extraits de code, messages vidéo, messages audio, images Wiki)
@@ -52,6 +52,7 @@ Une stratégie de chiffrement de données (DEP) définit la hiérarchie de chiff
 - Teams messages d’état
 - Informations sur l’utilisateur et le signal Exchange Online
 - Exchange Online boîtes aux lettres qui ne sont pas déjà chiffrées par des deps de boîte aux lettres
+- Stockage du journal d’audit unifié
 - Protection des données Microsoft :
 
   - Données de correspondance de données exactes (EDM), y compris les schémas de fichiers de données, les packages de règles et les sels utilisés pour hachage des données sensibles. Pour EDM et Microsoft Teams, le PED à charges multiples chiffre les nouvelles données à partir du moment où vous affectez le PED au client. Par Exchange Online, la clé client chiffre toutes les données existantes et nouvelles.
@@ -60,18 +61,18 @@ Une stratégie de chiffrement de données (DEP) définit la hiérarchie de chiff
 
 Les dep multi-charges de travail ne chiffrent pas les types de données suivants. Au lieu de cela, Microsoft 365 utilise d’autres types de chiffrement pour protéger ces données.
 
-- SharePoint et OneDrive Entreprise données.
-- Microsoft Teams fichiers et certains enregistrements Teams appels et de réunions enregistrés dans OneDrive Entreprise et SharePoint Online sont chiffrés à l’aide de SharePoint DeP online.
+- SharePoint données OneDrive Entreprise données.
+- Microsoft Teams fichiers et certains enregistrements Teams appels et réunions enregistrés dans OneDrive Entreprise et SharePoint Online sont chiffrés à l’aide de SharePoint DeP online.
 - D Microsoft 365 charges de travail telles que Yammer et planner qui ne sont actuellement pas pris en charge par la clé client.
-- Teams Données d’événements en direct.
+- Teams données d’événements en direct.
 
-Vous pouvez créer plusieurs dep par client, mais n’attribuer qu’une seule PD DEP à la fois. Lorsque vous affectez le dep, le chiffrement commence automatiquement, mais prend un certain temps en fonction de la taille de votre client.
+Vous pouvez créer plusieurs dep par client, mais n’en affecter qu’un à la fois. Lorsque vous affectez le deP, le chiffrement commence automatiquement, mais prend un certain temps en fonction de la taille de votre client.
 
-**DePs pour les boîtes Exchange Online aux lettres** Les DEP de boîtes aux lettres permettent de contrôler plus précisément les boîtes aux lettres individuelles au sein Exchange Online. Utilisez des deP de boîte aux lettres pour chiffrer les données stockées dans des boîtes aux lettres EXO de différents types tels que UserMailbox, MailUser, Group, PublicFolder et Les boîtes aux lettres partagées. Vous pouvez avoir jusqu’à 50 DEP actifs par client et les affecter à des boîtes aux lettres individuelles. Vous pouvez affecter un deP à plusieurs boîtes aux lettres.
+**Les deps pour Exchange Online boîtes** aux lettres de boîtes aux lettres fournissent un contrôle plus précis sur les boîtes aux lettres individuelles au sein Exchange Online. Utilisez des deP de boîte aux lettres pour chiffrer les données stockées dans des boîtes aux lettres EXO de différents types tels que UserMailbox, MailUser, Group, PublicFolder et Les boîtes aux lettres partagées. Vous pouvez avoir jusqu’à 50 DEP actifs par client et les affecter à des boîtes aux lettres individuelles. Vous pouvez affecter un deP à plusieurs boîtes aux lettres.
 
 Par défaut, vos boîtes aux lettres sont chiffrées à l’aide de clés gérées par Microsoft. Lorsque vous affectez un deP de clé client à une boîte aux lettres :
 
-- Si la boîte aux lettres est chiffrée à l’aide d’une PED multi-charge de travail, le service retente la boîte aux lettres à l’aide de la nouvelle boîte aux lettres à condition qu’un utilisateur ou une opération système accède aux données de la boîte aux lettres.
+- Si la boîte aux lettres est chiffrée à l’aide d’une PED à charges multiples, le service réécrit la boîte aux lettres à l’aide de la nouvelle boîte aux lettres, tant qu’un utilisateur ou une opération système accède aux données de la boîte aux lettres.
 
 - Si la boîte aux lettres est déjà chiffrée à l’aide de clés gérées par Microsoft, le service réécrit la boîte aux lettres à l’aide de la nouvelle boîte aux lettres PED tant qu’un utilisateur ou une opération système accède aux données de la boîte aux lettres.
 
@@ -85,13 +86,13 @@ Pour les DPS de clé client que vous affectez à des boîtes aux lettres individ
 
 Lorsque vous révoquez l’accès à vos clés dans le cadre de la sortie du service, la clé de disponibilité est supprimée, ce qui entraîne la suppression par chiffrement de vos données. La suppression cryptographique atténue le risque de rémanence des données, ce qui est important pour respecter les obligations de sécurité et de conformité.
 
-**PDN pour SharePoint Online et OneDrive Entreprise** Cette PDV est utilisée pour chiffrer le contenu stocké dans SPO et OneDrive Entreprise, y compris Microsoft Teams fichiers stockés dans SPO. Si vous utilisez la fonctionnalité multigéogé, vous pouvez créer un PD DEP par géo pour votre organisation. Si vous n’utilisez pas la fonctionnalité multigéogé, vous ne pouvez créer qu’une seule PD DEP par client. Reportez-vous aux détails dans [Configurer la clé client.](customer-key-set-up.md)
+**PD DEP pour SharePoint Online** et OneDrive Entreprise Ce PDV est utilisé pour chiffrer le contenu stocké dans SPO et OneDrive Entreprise, y compris Microsoft Teams fichiers stockés dans SPO. Si vous utilisez la fonctionnalité multigéogé, vous pouvez créer un PD DEP par géo pour votre organisation. Si vous n’utilisez pas la fonctionnalité multigéogé, vous ne pouvez créer qu’un seul dep par client. Reportez-vous aux détails dans [Configurer la clé client.](customer-key-set-up.md)
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>Chiffrements de chiffrement utilisés par la clé client
 
 La clé client utilise différents chiffrements de chiffrement pour chiffrer les clés, comme illustré dans les figures suivantes.
 
-La hiérarchie clé utilisée pour les dep qui chiffrent des données pour plusieurs charges de travail Microsoft 365 est similaire à la hiérarchie utilisée pour les dep pour les boîtes aux lettres Exchange Online individuelles. La seule différence est que la clé de boîte aux lettres est remplacée par la clé Microsoft 365 charge de travail correspondante.
+La hiérarchie clé utilisée pour les PD DEP qui chiffrent les données de plusieurs charges de travail Microsoft 365 est similaire à la hiérarchie utilisée pour les dep pour les boîtes aux lettres Exchange Online individuelles. La seule différence est que la clé de boîte aux lettres est remplacée par la clé Microsoft 365 charge de travail correspondante.
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Chiffrements de chiffrement utilisés pour chiffrer les clés pour Exchange Online et Skype Entreprise
 

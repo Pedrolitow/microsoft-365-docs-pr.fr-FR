@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: e15240f70b99e649ae6451bfe81924fa5a0a140c
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 52bd0e76a7ddefbc7879ab2f4e8ce6b4c840a812
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128351"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372323"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 
@@ -73,7 +73,7 @@ Avant de commencer, vérifiez votre [score Microsoft 365 sécurisé dans](../../
 L’utilisation de l’authentification multifacteur est l’un des moyens les plus simples et les plus efficaces d’augmenter la sécurité de votre organisation. C’est plus simple que cela n’y paraît : lorsque vous vous connectez, l’authentification multifacteur signifie que vous tapez un code à partir de votre téléphone pour accéder à Microsoft 365. Cela peut empêcher les pirates informatiques de prendre le contrôle s’ils connaissent votre mot de passe. L’authentification multifacteur est également appelée vérification en deux étapes. Les utilisateurs peuvent facilement ajouter la vérification en deux étapes à la plupart des comptes, par exemple, à leurs comptes Google ou Microsoft. Voici comment ajouter la vérification en [deux étapes à votre compte Microsoft personnel.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
 
 Pour les entreprises utilisant Microsoft 365, ajoutez un paramètre qui exige que vos utilisateurs se connectent à l’aide de l’authentification multifacteur. Lorsque vous a effectuer cette modification, les utilisateurs sont invités à configurer leur téléphone pour l’authentification à deux facteurs la prochaine fois qu’ils se connectent.
-Pour voir une vidéo de formation sur la façon de configurer l’famf et la façon dont les utilisateurs terminent la mise en place, voir [configurer](../../business-video/turn-on-mfa.md) l’mf et configurer [l’utilisateur.](../../business-video/set-up-mfa.md)
+Pour voir une vidéo de formation sur la façon de configurer l’famf et la façon dont les utilisateurs terminent la mise en place, voir [configurer](../../business-video/turn-on-mfa.md) l’mf et configurer [l’utilisateur.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 Pour configurer l’authentification multifacteur, vous devez activer les paramètres de sécurité par défaut :
 
@@ -165,9 +165,9 @@ Pour créer une règle de transport de messagerie, regardez une courte vidéo de
 
 5. Appliquez les paramètres du tableau suivant pour chaque règle. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
     
-| Setting | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : bloquer les types de fichiers  <br/> |
 |Appliquez cette règle si . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |
@@ -201,9 +201,9 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
-|Setting|Rejeter les e-mails de forward automatique vers des domaines externes|
+|Paramètre|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -339,7 +339,7 @@ Pour modifier la stratégie par défaut :
 
 3. Sous **Paramètres** qui s’appliquent au contenu à l’exception de la messagerie, sélectionnez **Office 365 applications**, Ne pas suivre quand les utilisateurs cliquent sur les liens sécurisés et Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.  
 
-4. Sélectionnez **Enregistrer**.
+4. Cliquez sur **Enregistrer**.
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
@@ -347,7 +347,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -359,7 +359,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes de priorité](../setup/priority-accounts.md) (article)\

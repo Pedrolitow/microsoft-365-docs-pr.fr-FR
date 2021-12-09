@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 111e8d20f6d01f124b87cf29fac39ac55ffd4e35
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8e24242639362bddca7540cd8dfb390b0edb5e8c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111734"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370889"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>À l’identité et au-delà : l’identité d’un architecte
 

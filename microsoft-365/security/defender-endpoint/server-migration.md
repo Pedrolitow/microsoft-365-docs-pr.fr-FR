@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 551f1f73626fe3820e347917b1d06ab0df3a6117
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122356"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373259"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-
+**S’applique à :**
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -55,7 +55,7 @@ Pour faciliter les mises à niveau lorsque Microsoft Endpoint Configuration Mana
 4. Installez Microsoft Defender pour le point de terminaison.
 5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com).
 
-Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir Configurer les points de terminaison [du serveur).](configure-server-endpoints.md)
+Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir Configurer les points de terminaison [du serveur.](configure-server-endpoints.md)
 
 EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\WindowsDefenderATPOnboardingScript.cmd »
 
@@ -75,7 +75,7 @@ EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\W
    1. Supprimez la configuration de l’espace de travail MMA pour Microsoft Defender pour le point de terminaison. Voir [Supprimer un espace de travail à l’aide de PowerShell.](/azure/azure-monitor/agents/agent-manage) Cette étape est facultative . le capteur de PEPT s’arrête une fois que le nouveau capteur devient actif (notez que cela peut prendre plusieurs heures).
    2. Désinstallez SCEP.
    3. Installez les [conditions préalables le](configure-server-endpoints.md#prerequisites) cas échéant.
-   4. Installez Microsoft Defender pour le point de terminaison (voir [Configurer les points de terminaison du serveur).](configure-server-endpoints.md)
+   4. Installez Microsoft Defender pour le point de terminaison (voir [Configurer les points de terminaison du serveur.](configure-server-endpoints.md)
    5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
 
    > [!TIP]

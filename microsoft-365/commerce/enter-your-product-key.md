@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195868"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370103"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
@@ -63,7 +63,7 @@ Si vous êtes nouveau dans Microsoft 365 pour les entreprises, découvrez comme
 
 Consultez cette liste des erreurs et des solutions courantes : [Problèmes liés à votre clé de produit Microsoft 365 pour les entreprises ?](product-key-errors-and-solutions.md)
   
-Sinon, [appelez le Support Microsoft](../business-video/get-help-support.md).
+Sinon, [appelez le Support Microsoft](../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenu associé
 

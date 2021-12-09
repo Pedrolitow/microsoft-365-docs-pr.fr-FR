@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42cac5be8879b7db49175800b9c2b297bc91c569
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: d84ce2b2ec6131419f8344976335dc681fdc002c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064414"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374015"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -69,25 +69,24 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
 
-2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, puis cliquez sur  ![ L’icône Ad.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
+2. Dans la page **Soumissions,** vérifiez que l’onglet **Courriers** électroniques est sélectionné, sélectionnez l’e-mail à signaler, puis cliquez sur ![ L’icône De la nouvelle page.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
 
-3. Utilisez le **volant Envoyer à Microsoft** pour révision qui apparaît pour envoyer le message, l’URL ou la pièce jointe d’un e-mail, comme décrit dans les sections suivantes.
+3. Utilisez le **volant Envoyer à Microsoft pour** l’analyse qui apparaît pour envoyer le courrier électronique, l’URL ou la pièce jointe de l’e-mail, comme décrit dans les sections suivantes.
 
    > [!NOTE]
    > Les envois de fichiers et d’URL ne sont pas disponibles dans les nuages qui n’autorisent pas les données à quitter l’environnement. La possibilité de sélectionner un fichier ou une URL est grisée.
 
 ### <a name="notify-users-from-within-the-portal"></a>Avertir les utilisateurs à partir du portail
 
-1. In the Microsoft 365 Defender portal, go to the **Submissions** page at <https://security.microsoft.com/reportsubmission> .
+1. Dans le portail Microsoft 365 Defender, sous **Actions & soumissions,** allez aux **soumissions.**
 
-2. Sélectionnez **les messages signalés** par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
+2. Sélectionnez **l’onglet Messages** signalés par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
 
 3. Sélectionnez la **marque en tant que et notifier** la drop-down, puis sélectionnez Aucune menace **trouvée** comme \> **hameçonnage** ou courrier **indésirable**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Envoyer des messages à partir du portail.](../../media/admin-review-send-message-from-portal.png)
+   :::image type="content" alt-text="Envoyer des messages à partir du portail." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 Le message signalé est marqué comme faux positif ou faux négatif. Une notification par courrier électronique est envoyée automatiquement à partir du portail à l’utilisateur qui a signalé le message.
 
@@ -103,15 +102,15 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 
 4. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’e-mail doit avoir été classé en tant que **section** qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur arrêt) :
+   - Doit avoir été bloqué **(faux négatif)**: dans l’e-mail doit avoir été classé en tant que **section** qui s’affiche, sélectionnez l’une des valeurs suivantes (si vous n’êtes pas sûr, utilisez votre meilleur résultat) :
      - **Hameçonnage**
-     - **Courrier indésirable**
      - **Programme malveillant**
+     - **Courrier indésirable**
 
-5. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
+5. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-> [!div class="mx-imgBorder"]
-> ![Exemple de nouvelle soumission d’URL.](../../media/submission-flyout-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exemple de nouvelle soumission d’URL.](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
@@ -121,46 +120,45 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué :** dans l’URL doit **avoir** été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **programme malveillant**.
+   - **Doit avoir été bloqué (Faux négatif)**: dans l’URL, cette **URL** doit avoir été classée en tant que section qui s’affiche, sélectionnez **Hameçonnage** ou **Programme malveillant.**
 
-4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
+4. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-> [!div class="mx-imgBorder"]
-> ![Exemple de nouvel envoi de courrier électronique.](../../media/submission-url-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exemple de nouvel envoi de courrier électronique.](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Envoyer une pièce jointe suspecte à Microsoft
 
-1. Dans la **zone Sélectionner le type de** soumission, **sélectionnez Fichier** dans la liste liste.
+1. Dans la **zone Sélectionner le type d’envoi,** sélectionnez Pièce **jointe** dans la liste liste.
 
 2. Dans la section **Fichier** qui s’affiche, cliquez **sur Parcourir les fichiers.** Dans la boîte de dialogue qui s’ouvre, recherchez et sélectionnez le fichier, puis cliquez sur **Ouvrir.**
 
 3. Dans la section **Sélectionner une raison d’envoyer à Microsoft,** sélectionnez l’une des options suivantes :
    - **Ne doit pas avoir été bloqué (faux positif)**
-   - **Doit avoir été bloqué**: dans l’URL qui doit avoir été classée comme section qui s’affiche, un programme malveillant est le seul choix et est automatiquement sélectionné.  
+   - **Doit avoir été bloqué (faux négatif)**: dans le fichier, ce fichier doit avoir été classé en tant que **section** qui s’affiche,  un programme malveillant est le seul choix et est automatiquement sélectionné.
 
-4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
+4. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
-> [!div class="mx-imgBorder"]
-> ![Exemple de nouvelle soumission de pièce jointe.](../../media/submission-file-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![Exemple de nouvelle soumission de pièce jointe.](../../media/submission-file-flyout.png)
 
 > [!NOTE]
 > Si le filtrage des programmes malveillants a remplacé les pièces jointes des messages par le fichier Text.txt d’alerte de programmes malveillants, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
 
-2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis **pour** analyse est sélectionné.
+2. Dans la page **Soumissions,** vérifiez que l’onglet **Courrier électronique,** **URL** ou Pièce jointe est sélectionné. 
 
    - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez **sur Personnaliser les colonnes** pour afficher un maximum de sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
      - **Nom de la soumission**<sup>\*</sup>
      - **Expéditeur**<sup>\*</sup>
+     - **Destinataire**
      - **Date d’soumise**<sup>\*</sup>
-     - **Type de soumission**<sup>\*</sup>
      - **Raison de l’envoi**<sup>\*</sup>
      - **État rescan**<sup>\*</sup>
      - **Résultat rescan**<sup>\*</sup>
-     - **Balises**<sup>\*</sup>
      - **Verdict du filtre**
      - **Raison de la remise/du blocage**
      - **ID de soumission**
@@ -171,16 +169,23 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      - **Destination**
      - **Action de stratégie**
      - **Soumis par**
+     - **Simulation de hameçonnage**
+     - **Balises**<sup>\*</sup>
+     - **Allow**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
+     > [!div class="mx-imgBorder"]
+     > ![Nouvelles options de personnalisation des colonnes pour les envois d’administrateur.](../../media/admin-submission-customize-columns.png)
+
    - Pour filtrer les entrées, cliquez sur **Filtrer.** Les filtres disponibles sont :
      - **Date envoyée**: **date de début** et date de **fin.**
-     - **Type de soumission**: **e-mail,** **URL** ou **fichier**.
      - **ID de soumission**: valeur GUID attribuée à chaque soumission.
      - **ID de message réseau**
      - **Sender**
-     - **Tags**
+     - **Destinataire**
+     - **Name**
+     - **Soumis par**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
@@ -189,10 +194,11 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
-     - **Type**
+     - **Type (Type)**
      - **Raison**
      - **État**
      - **Résultat rescan**
+     - **Tags**
 
    - Pour exporter les entrées, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’affiche, enregistrez .csv fichier.
 
@@ -211,11 +217,11 @@ Si le programme a trouvé un remplacement, la nouvelle analyse doit se terminer 
 
 Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enable-the-report-phish-add-in.md)Signaler un message, le module de signalement du hameçonnage ou que des personnes utilisent les rapports intégrés dans  [Outlook sur le web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)vous pouvez voir quels utilisateurs signalent dans l’onglet Message signalé par l’utilisateur.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Submissions**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
 
 2. Dans la page **Soumissions,** sélectionnez **l’onglet Messages signalés par l’utilisateur.**
 
-   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez **sur Personnaliser les colonnes** pour afficher un maximum de sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
+   - Vous pouvez trier les entrées en cliquant sur un en-tête de colonne disponible. Cliquez **sur Personnaliser les colonnes** pour afficher les options. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
      - **Objet de l’e-mail**<sup>\*</sup>
      - **Signalé par**<sup>\*</sup>
@@ -223,11 +229,15 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **Expéditeur**<sup>\*</sup>
      - **Raison signalée**<sup>\*</sup>
      - **Résultat rescan**<sup>\*</sup>
-     - **Balises**<sup>\*</sup>
      - **ID de message signalé**
      - **ID de message réseau**
      - **IP de l’expéditeur**
+     - **Signalé à partir de**
      - **Simulation de hameçonnage**
+     - **Balises**<sup>\*</sup>
+     - **Marqué comme**<sup>\*</sup>
+     - **Marqué par**
+     - **Date marquée**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
@@ -253,8 +263,10 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
      - **Sender**
      - **Auteur du rapport**
      - **Résultat rescan**
+     - **Signalé à partir de**
      - **Simulation de hameçonnage**
-
+     - **Tags**
+   
    - Pour exporter les entrées, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’affiche, enregistrez .csv fichier.
 
 > [!NOTE]

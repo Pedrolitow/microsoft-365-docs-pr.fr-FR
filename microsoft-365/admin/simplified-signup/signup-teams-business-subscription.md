@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Suivez les étapes de cet article pour vous inscrire à Microsoft Teams dans le cadre d’un abonnement pour les entreprises.
-ms.openlocfilehash: 61243f2b165a0c6172014eb8205c6eca3c1004b3
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: c011419f499d832ea383bc9b5f8f61a7cea5c430
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254558"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372599"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>S’inscrire à Microsoft Teams dans le cadre d’un abonnement pour les entreprises
 
@@ -43,7 +43,7 @@ Consultez le tableau ci-dessous pour obtenir les options d’inscription et les 
 |Connaissances requises  <br/> |Commençons sans savoir-faire technique requis pour exécuter un domaine.  <br/> |Nécessite l’achat d’un domaine ou la propriété d’un domaine. Si vous souhaitez utiliser un domaine existant, vous aurez besoin des informations d’identification d’accès pour le domaine et vous aurez peut-être besoin de connaissances techniques pour prouver la propriété. <br/> |
 |Contrat de gouvernance et gestion des données  <br/> |Disponible dans le cadre du Supplément du Contrat de [services Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) et est la meilleure pour les entreprises qui souhaitent des outils de travail et de collaboration à distance et qui sont à l’aise avec **Microsoft** en tant que contrôleur de vos données dans le cadre de la déclaration de confidentialité [Microsoft.](https://go.microsoft.com/fwlink/?LinkId=521839) Les abonnés (« vous ») aux services utilisant cette option n’auront pas accès au contenu ou aux données d’un autre utilisateur invité (« utilisateurs invités »). <br/> Par exemple, si vous travaillez en collaboration avec d’autres utilisateurs invités sur un document stocké dans leur compte, ils peuvent choisir de rendre ces documents inaccessibles. <br/> Séparément, les utilisateurs invités peuvent choisir de ne pas transférer de documents dans leur compte Sign-Up simplifié vers votre abonnement de compte de domaine, même après les avoir invités à le faire. Cela signifie que leurs documents peuvent également ne pas être accessibles même si vous ajoutez un compte de domaine ultérieurement. En tant que tel, vous devez évaluer les considérations relatives à la propriété des données et aux droits de propriété intellectuelle en conséquence. <br/> |Disponible dans le cadre du contrat d’abonnement [Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) et est la meilleure pour les entreprises qui ont besoin que **Microsoft** agisse en tant que responsable du traitement de leurs données dans le cadre de notre [Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) de protection des données et qui ont besoin de notre suite complète d’outils de collaboration et de travail à distance. Les abonnés qui sont dans des secteurs réglementés ou qui recherchent un contrôle plus élevé, à la fois sur l’utilisation des services par vos employés et sur le traitement des données associées par **Microsoft,** doivent choisir l’inscription au compte de domaine auprès de Microsoft Business Basic et l’inscription dans le cadre du contrat de niveau entreprise Compte de domaine. <br/> |
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Qu’est-ce qu’un courrier électronique d’entreprise et quels sont les avantages de sa configuration ?
 
@@ -67,4 +67,6 @@ Lorsque la facturation périodique est en cours, votre abonnement continue d’�
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Que faire si je souhaite modifier mon nom d’entreprise ?
 
-Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à modifier votre nom d’entreprise. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../../business-video/get-help-support.md)
+
+Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à modifier votre nom d’entreprise. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../get-help-support.md)
+

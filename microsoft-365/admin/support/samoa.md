@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 343308406fcd5452c79bb851754ea7095b0c67d3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 60002811d83054f4b299096a1a2cf14f912c9e7e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189884"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369767"
 ---
 # <a name="contact-support-for-samoa"></a>Contacter le support technique pour les Samoa
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5148

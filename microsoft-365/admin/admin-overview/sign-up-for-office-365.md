@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128363"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370199"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -67,15 +67,6 @@ Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## <a name="choose-a-plan"></a>Choisir une offre
-
-Avant d’acheter, pensez à l’offre pour qui vous vous inscrivez. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
-  
-Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Il vous suffit [d’aller comparer tous les](https://products.office.com/compare-all-microsoft-office-products?tab=2) produits et de choisir l’une des options de support de contact répertoriées sur le côté gauche de la page. 
-  
-::: moniker-end
-
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire à une version d’essai gratuite ou acheter un abonnement ?
 
@@ -89,17 +80,6 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>Vous êtes prêt à vous inscrire à une version d’essai gratuite ou acheter un abonnement ?
-
-Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
-  
-Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter ultérieurement.](../../commerce/try-or-buy-microsoft-365.md) Les utilisateurs et données associés à la version d'évaluation seront conservés.
-  
-Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
-  
 ::: moniker-end
 
 ## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>Vous serez invité à fournir les informations suivantes lorsque vous vous inscrivez.

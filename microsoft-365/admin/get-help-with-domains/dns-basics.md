@@ -25,28 +25,18 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bbd099a7c44aecdd37772cd97333a905585e33f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164775"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370019"
 ---
 # <a name="dns-basics"></a>Principes de base
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
 ::: moniker range="o365-worldwide"
-
-Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
-
-## <a name="watch-domains--dns-an-overview"></a>À regarder : Domaines et DNS : vue d’ensemble
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
 
@@ -119,12 +109,6 @@ Admettons que l'enregistrement de serveur de nom pour contoso.com indique « god
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Admettons que l'enregistrement de serveur de nom pour contoso.com indique « godaddy.com ». Internet saura désormais qu'il faut rechercher dans GoDaddy.com pour trouver le fichier de zone recensant les autres enregistrements DNS pour contoso.com. Ces enregistrements DNS comprennent un enregistrement MX qui indique où envoyer les courriers électroniques pour contoso.com ainsi que d'autres enregistrements. Si l'enregistrement MX comprend une valeur qui indique (en termes techniques) « envoyer un courrier électronique à Microsoft 365 », les courriers électroniques envoyés vers une adresse contoso.com (comme joe@contoso.com) y seront tous redirigés. Ensuite, dès lors qu'une boîte aux lettres nommée « Joe » se trouve à cet emplacement, le message sera remis.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 Admettons que l'enregistrement de serveur de nom pour contoso.com indique « hichina.com ». Internet saura désormais qu'il faut rechercher dans hichina.com pour trouver le fichier de zone recensant les autres enregistrements DNS pour contoso.com. Ces enregistrements DNS comprennent un enregistrement MX qui indique où envoyer les courriers électroniques pour contoso.com ainsi que d'autres enregistrements. Si l'enregistrement MX comprend une valeur qui indique (en termes techniques) « envoyer un courrier électronique à Microsoft 365 », les courriers électroniques envoyés vers une adresse contoso.com (comme joe@contoso.com) y seront tous redirigés. Ensuite, dès lors qu'une boîte aux lettres nommée « Joe » se trouve à cet emplacement, le message sera remis.
@@ -134,12 +118,6 @@ Admettons que l'enregistrement de serveur de nom pour contoso.com indique « hic
 Les valeurs réelles que vous devez entrer pour que tout cela fonctionne avec Microsoft 365 sont répertoriées automatiquement lorsque vous définissez votre domaine, dans le cadre de la configuration des domaines. Si vous effectuez les étapes de configuration manuellement, vous copiez et collez les valeurs dans les enregistrements DNS corrects (enregistrement MX, enregistrements CNAME, etc.) au niveau de votre hôte DNS, lequel peut éventuellement être votre bureau d’enregistrement de domaines.
   
 ::: moniker range="o365-worldwide"
-
-Pour quelle raison le fichier de zone de votre domaine peut-il être stocké ailleurs qu'au niveau de votre bureau d'enregistrement de domaines ? Vous pouvez enregistrer votre nom de domaine auprès d'un bureau d'enregistrement de domaines tel que GoDaddy, mais vos enregistrements DNS peuvent être gérés par un autre fournisseur d'hébergement DNS ou d'hébergement web. Les enregistrements de serveur de noms pour votre domaine stockent ces informations afin que tous les serveurs DNS identifient l'emplacement dans lequel rechercher.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 Pour quelle raison le fichier de zone de votre domaine peut-il être stocké ailleurs qu'au niveau de votre bureau d'enregistrement de domaines ? Vous pouvez enregistrer votre nom de domaine auprès d'un bureau d'enregistrement de domaines tel que GoDaddy, mais vos enregistrements DNS peuvent être gérés par un autre fournisseur d'hébergement DNS ou d'hébergement web. Les enregistrements de serveur de noms pour votre domaine stockent ces informations afin que tous les serveurs DNS identifient l'emplacement dans lequel rechercher.
 
@@ -165,25 +143,6 @@ Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrier
 - **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](../setup/domains-faq.yml) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Microsoft 365) maurice@contoso.com. 
     
 - **Site web :** si vous avez un abonnement Microsoft 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
-    
-- **Messagerie instantanée :** votre adresse Skype Entreprise Online peut également être personnalisée pour utiliser votre nom de domaine, afin que les personnes de votre organisation puissent se contacter sur Skype Entreprise Online en utilisant une adresse plus courte et plus facile à mémoriser (telle que joe@contoso.com). 
-    
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="why-add-a-domain-in-microsoft-365"></a>Pourquoi ajouter un domaine dans Microsoft 365 ?
-
-
-L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Microsoft 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](../setup/domains-faq.yml) lorsque vous vous inscrivez pour bénéficier d'un compte Microsoft 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation de Microsoft 365 pour le courrier électronique. 
-  
-> [!NOTE]
-> Si vous souhaitez simplement télécharger et utiliser les applications Microsoft 365, telles que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
-  
-Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
-  
-- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](../setup/domains-faq.yml) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Microsoft 365) maurice@contoso.com. 
-    
-- **Site web :** si vous avez un abonnement incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
 - **Messagerie instantanée :** votre adresse Skype Entreprise Online peut également être personnalisée pour utiliser votre nom de domaine, afin que les personnes de votre organisation puissent se contacter sur Skype Entreprise Online en utilisant une adresse plus courte et plus facile à mémoriser (telle que joe@contoso.com). 
     

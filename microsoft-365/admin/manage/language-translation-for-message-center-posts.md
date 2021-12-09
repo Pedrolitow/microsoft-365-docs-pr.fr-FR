@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: 0afdd98b56b6cb13a5f4bef014d8612c30dfbf11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c9d0c20045805029774fa37f2eeb5f992cbd49
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164331"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369959"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 
@@ -40,7 +40,7 @@ Nous rédigeons les publications du Centre de messages uniquement en anglais en 
   
 ## <a name="set-your-preferred-language"></a>Définir la langue par défaut
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> ou la page d’accueil, sélectionnez l’icône des paramètres dans le coin supérieur droit de la fenêtre.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> page d’accueil, sélectionnez l’icône paramètres dans le coin supérieur droit de la fenêtre.
   
 2. Sous **Langue et fuseau horaire**, sélectionnez **Afficher tout** pour afficher les options disponibles. Sélectionnez la langue désirée dans le menu déroulant, puis cliquez sur **Enregistrer**. Microsoft 365 tentera alors d’actualiser votre choix, puis d’afficher la nouvelle langue. Si cela n'est pas immédiat ou semble prendre trop de temps, vous pouvez actualiser votre navigateur ou vous déconnecter, puis vous reconnecter.
   
@@ -52,7 +52,7 @@ Pour configurer la traduction automatique des publications du Centre de messages
 
 ## <a name="related-content"></a>Contenu associé
 
-[Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
+[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
 [Quel abonnement ai-je ?](../admin-overview/what-subscription-do-i-have.md) (article)\
 [Rester au fait des modifications](../manage/stay-on-top-of-updates.md) (article)
 

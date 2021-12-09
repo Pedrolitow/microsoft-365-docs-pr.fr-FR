@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 et modèles d’architecture
-description: Icônes à utiliser dans la création de diagrammes d’architecture pour Microsoft 365.
+title: Microsoft 365 modèles et icônes de diagramme d’architecture
+description: Créez Microsoft 365 diagrammes d’architecture Visio à l’aide de ces icônes, gabarits et modèles.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,14 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556267"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372455"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 et modèles d’architecture
+# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365 et icônes d’architecture
 
 Il est important d’aider nos partenaires et clients à concevoir et à concevoir de nouvelles solutions. Les diagrammes d’architecture comme ceux inclus dans nos conseils peuvent vous aider à communiquer les décisions de conception et les relations entre les composants dans un environnement. Nous utilisons un ensemble de symboles et d’icônes avec des modèles Visio pour créer les diagrammes d’architecture que nous fournissons et fournissons ces outils ici pour vous aider à créer un diagramme d’architecture personnalisé pour votre prochaine solution.
 

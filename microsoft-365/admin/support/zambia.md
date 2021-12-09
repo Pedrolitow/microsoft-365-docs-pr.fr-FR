@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aad7f59d0c1479c540b94e945d58cde7164d2292
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ac836b812f11b28b96a09d5a5cacf2e3edcbde7a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169129"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373859"
 ---
 # <a name="contact-support-for-zambia"></a>Contacter le support technique pour la Tanzanie
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +27 21 427 3315

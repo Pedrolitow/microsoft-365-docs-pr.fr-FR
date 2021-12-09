@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 27c977076774839b708edb835cc3a279c39f105f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7f08ec6c7e5dc34733aa3ea148c96f09916b0627
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667739"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370739"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -77,7 +77,7 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 
 ## <a name="understand-templates-before-creating-assessments"></a>Comprendre les modèles avant de créer des évaluations
 
-Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés.
+Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que tous les modèles premium supplémentaires que vous avez achetés.
 
 Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 (ou d’autres produits Microsoft disponibles) et une version universelle qui peut être adaptée pour évaluer les autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
 
@@ -98,9 +98,9 @@ Pour commencer à créer des évaluations, suivez ces étapes.
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; ou
     - Recherchez le modèle que vous souhaitez utiliser sous l’onglet **Modèles** d’évaluation, affichez ses détails et sélectionnez **Créer une évaluation.** Cela remplit le champ de sélection de modèle de l’Assistant pour vous.
 
-3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (pour plus d’informations, voir Disponibilité et [gestion](compliance-manager-templates.md#template-availability-and-licensing) des licences des modèles). Sélectionnez la bouton d’radio en haut de votre modèle, puis sélectionnez **Suivant.**
+3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (pour plus d’informations, voir Disponibilité et [gestion](compliance-manager-templates.md#template-availability-and-licensing) des licences des modèles). Sélectionnez la bouton d’radio en de côté du modèle choisi, puis sélectionnez **Suivant**.
 
-4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisir le produit qu’elle va évaluer et l’affecter à un groupe.
+4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisissez le produit qu’elle va évaluer et affectez-la à un groupe.
 
     - **Produit**: sélectionnez le produit à appliquer à votre évaluation. Si vous utilisez un modèle Microsoft, tel qu’un modèle conçu pour Microsoft 365, ce champ est rempli pour indiquer le produit approprié et ne peut pas être modifié. Si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner un produit Microsoft prédéfiny lors de l’utilisation d’un modèle universel.
     - **Nom**: entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
@@ -110,9 +110,9 @@ Pour commencer à créer des évaluations, suivez ces étapes.
             - Déterminez un nom pour votre groupe et entrez-le dans le champ sous la bouton d’radio.
             - Vous pouvez copier des données à partir d’un groupe **existant,** comme les détails et les documents d’implémentation et de test, en sélectionnant les zones appropriées.
 
-    Lorsque vous avez terminé, sélectionnez **Suivant**.
+    Quand vous avez terminé, sélectionner **Suivant**.
 
-5. **Examinez et terminez :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
+5. **Révision et fin :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
 
 6. L’écran suivant confirme que vous avez bien créé votre nouvelle évaluation. Sélectionnez **Terminé** pour fermer l’Assistant et la page de détails de votre nouvelle évaluation s’affiche à l’écran.
 
@@ -134,7 +134,7 @@ Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet 
 
 ### <a name="controls-tab"></a>Onglet Contrôles
 
-L’onglet Contrôles affiche des informations détaillées pour chaque contrôle mappé à l’évaluation. Un **graphique de répartition de** l’état des contrôles affiche l’état des contrôles par famille, de sorte que vous pouvez voir d’un coup d’œil les regroupements de contrôles qui doivent être pris en main.
+L’onglet Contrôles affiche des informations détaillées pour chaque contrôle mappé à l’évaluation. Un **graphique de répartition de** l’état des contrôles affiche l’état des contrôles par famille, afin que vous pouvez voir d’un coup d’œil les regroupements de contrôles qui doivent être pris en main.
 
 Sous le graphique, un tableau répertorie des informations détaillées sur chaque contrôle de l’évaluation. Les contrôles sont regroupés par famille de contrôles. Développez chaque nom de famille pour révéler les contrôles qu’elle contient. Les informations répertoriées pour chaque contrôle incluent :
 
@@ -164,7 +164,7 @@ Sélectionnez une action d’amélioration pour afficher  sa page de détails, p
 
 L’onglet Actions de Microsoft s’affiche pour les évaluations basées sur des modèles qui supportent les produits Microsoft. Il répertorie toutes les actions de l’évaluation qui sont gérées par Microsoft. La liste affiche les détails clés de l’action, notamment : l’état du test, les points qui contribuent à votre score de conformité global, les réglementations et normes associées, la solution applicable, le type d’action et la famille de contrôles. Sélectionnez une action d’amélioration pour afficher sa page de détails.
 
-En savoir plus sur le suivi et les scores des contrôles et [des actions d’amélioration.](compliance-score-calculation.md)
+En savoir plus sur le suivi et le score des contrôles et [des actions d’amélioration.](compliance-score-calculation.md)
 
 ## <a name="accept-updates-to-assessments"></a>Accepter les mises à jour des évaluations
 
@@ -172,7 +172,7 @@ Lorsqu’une mise à jour est disponible pour une évaluation, vous verrez une n
 
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
+Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent [](compliance-manager-templates-modify.md) provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est modifié, ainsi que de Microsoft.
 
 Si Microsoft met à jour un modèle gestionnaire de conformité que vous avez étendu, votre évaluation héritera de ces mises à jour une fois que vous les aurez acceptées. Votre évaluation conserve les attributs supplémentaires que vous avez appliqués à l’évaluation lorsque vous l’avez étendue.
 
@@ -185,9 +185,9 @@ Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jo
 
 La page détails de l’évaluation affiche également une **étiquette de** mise à jour en attente en plus de l’évaluation avec une mise à jour. Sélectionnez cette évaluation pour obtenir sa page de détails.
 
-Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la** mise à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
+Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la mise** à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
 
-La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en [savoir plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
+La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en savoir [plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
 
 #### <a name="review-update-to-accept-or-defer"></a>Passer en revue la mise à jour pour accepter ou différer
 
@@ -199,7 +199,7 @@ Après avoir sélectionné la mise à **jour révision** dans la page détails d
 - Présentation de la mise à jour
 - Détails spécifiques sur les modifications, y compris l’impact sur votre score de conformité, la progression vers la fin de l’évaluation et le nombre spécifique de modifications apportées aux actions et contrôles d’amélioration.
 
-La sélection du **lien** du modèle mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection du **lien** du modèle Mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, **sélectionnez Accepter la mise à jour.** Les modifications acceptées sont permanentes.
 
@@ -223,7 +223,7 @@ Le rapport est un instantané de l’évaluation à la date et à l’heure de l
 
 La suppression d’une évaluation la supprime de la liste de votre page d’évaluations. Notez ces points importants sur la suppression des évaluations :
 
-- **La suppression d’une évaluation est permanente . vous ne pouvez pas l’obtenir.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
+- **La suppression d’une évaluation est permanente . vous ne pouvez pas la récupérer.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
 - Si les actions d’amélioration de l’évaluation n’apparaissent dans aucune autre évaluation, elles seront supprimées lors de la suppression de l’évaluation.
 - Nous vous [recommandons d’exporter un rapport de](#export-an-assessment-report) l’évaluation avant de le supprimer définitivement.
 
@@ -233,7 +233,7 @@ Pour supprimer une évaluation, suivez les étapes ci-dessous :
 
 2. Sélectionnez **Supprimer l’évaluation** dans le coin supérieur droit de votre écran.
 
-3. Une fenêtre s’affiche et vous demande de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
+3. Une fenêtre s’affiche vous demandant de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
 
 Si vous supprimez la seule évaluation d’un groupe, ce groupe est également supprimé du Gestionnaire de conformité.
 

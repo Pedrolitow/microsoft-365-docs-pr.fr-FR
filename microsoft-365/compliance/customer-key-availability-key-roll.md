@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment déployer les clés racine du client stockées dans Azure Key Vault qui sont utilisées avec la clé client. Les services incluent Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Teams fichiers.
-ms.openlocfilehash: 22cf7d1ee9635a92684d377d05a4c53a909eb4bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5f2de108d493e4b6d4233f4a932a24f524e468bb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553963"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373271"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
 
@@ -26,14 +26,14 @@ ms.locfileid: "60553963"
 
 ## <a name="about-rolling-the-availability-key"></a>À propos du déploiement de la clé de disponibilité
 
-Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) client pour ces chiffres clés. Microsoft 365 la clé de disponibilité à l’aide Microsoft 365 code de service dans un processus automatisé et non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas disponible pour les administrateurs Microsoft. Le déploiement de clé de disponibilité utilise le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, voir [Comprendre la clé de disponibilité.](customer-key-availability-key-understand.md)
+Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) client pour ces chiffres clés. Microsoft 365 la clé de disponibilité à l’aide Microsoft 365 code de service dans un processus automatisé et non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas disponible pour les administrateurs Microsoft. Le déploiement de la clé de disponibilité exploite le mécanisme utilisé initialement pour générer la clé. Pour plus d’informations sur la clé de disponibilité, voir [Comprendre la clé de disponibilité.](customer-key-availability-key-understand.md)
 
 > [!IMPORTANT]
 > Exchange Online et Skype Entreprise clés de disponibilité peuvent être correctement déployées par les clients qui créent une nouvelle dep, car une clé de disponibilité unique est générée pour chaque deP que vous créez. Les clés de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams existent au niveau de la forêt et sont partagées entre les PD DEP et les clients, ce qui signifie que le déploiement se produit uniquement selon une planification définie en interne par Microsoft. Pour atténuer le risque de ne pas déployer la clé de disponibilité chaque fois qu’un nouveau dep est créé, SharePoint, OneDrive et Teams la clé intermédiaire du client (TIK), la clé wrapped par les clés racine du client et la clé de disponibilité, chaque fois qu’un nouveau dep est créé.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>Demander une nouvelle version de chaque clé racine existante que vous souhaitez déployer
 
-Lorsque vous rollez une clé, vous demandez une nouvelle version d’une clé existante. Pour demander une nouvelle version d’une clé existante, utilisez la même cmdlet, [Add-AzKeyVaultKey,](/powershell/module/az.keyvault/add-azkeyvaultkey)avec la même syntaxe que celle utilisée pour créer la clé. Une fois que vous avez terminé le déploiement d’une clé associée à une stratégie de chiffrement de données ( DEP), vous exécutez une autre cmdlet pour vous assurer que la clé client commence à utiliser la nouvelle clé. Faites cette étape dans chaque coffre de clés Azure (AKV).
+Lorsque vous rollez une clé, vous demandez une nouvelle version d’une clé existante. Pour demander une nouvelle version d’une clé existante, utilisez la même cmdlet, [Add-AzKeyVaultKey,](/powershell/module/az.keyvault/add-azkeyvaultkey)avec la même syntaxe que celle utilisée pour créer la clé. Une fois que vous avez terminé de déployer une clé associée à une stratégie de chiffrement de données (DEP), vous exécutez une autre cmdlet pour vous assurer que la clé client commence à utiliser la nouvelle clé. Faites cette étape dans chaque coffre de clés Azure (AKV).
 
 Par exemple :
 
@@ -45,15 +45,15 @@ Par exemple :
    Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version de clé précédente pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
+   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version précédente de la clé pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
   
 ## <a name="update-the-keys-for-multi-workload-deps"></a>Mettre à jour les clés pour les ppp multi-charges de travail
 
-Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utilisé avec plusieurs charges de travail, vous devez mettre à jour le dep pour pointer vers la nouvelle clé. Ce processus ne fait pas pivoter la clé de disponibilité.
+Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utilisé avec plusieurs charges de travail, vous devez mettre à jour le deP pour pointer vers la nouvelle clé. Ce processus ne fait pas pivoter la clé de disponibilité.
 
-Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, complétez les étapes suivantes :
+Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, effectuer les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 2. Exécutez lSet-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -81,7 +81,7 @@ Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer les 
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de déterminer le [dep](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
+2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de la procédure de déterminer le [deP](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
   
 ## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Mettre à jour les clés pour SharePoint en ligne, OneDrive Entreprise et Teams fichiers
 
@@ -93,12 +93,12 @@ SharePoint Online ne vous permet de déployer qu’une seule clé à la fois. Si
    Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   Bien que cette cmdlet démarre l’opération de SharePoint Online et OneDrive Entreprise, l’action ne se termine pas immédiatement.
+   Bien que cette cmdlet démarre l’opération de SharePoint En ligne et OneDrive Entreprise, l’action ne se termine pas immédiatement.
 
 2. Pour voir la progression de l’opération de roulis de touches, exécutez Get-SPODataEncryptionPolicy cmdlet comme suit :
 
    ```powershell
-   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
 ## <a name="related-articles"></a>Articles connexes

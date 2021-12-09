@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 53460bdffa9ee078d4ad07875841c9aad8b36c3f
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: bb0709aad16da6da08ba8643d4f24084b0fe9201
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311929"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370187"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ Lorsque vous souscrivez un abonnement à Microsoft 365 Business Premium, vous b�
 
 |Fonctionnalité|Description|
 | --- | --- |
-| Protéger contre les menaces | Microsoft 365 Business Premium contribue à vous protéger contre les menaces grâce à une protection avancée contre les menaces, ainsi qu’avec la protection avec les pièces jointes fiables et liens fiables. |
+| Protéger contre les menaces | Microsoft 365 Business Premium vous protège contre les menaces grâce à des fonctionnalités avancées de protection contre les menaces. Ces fonctionnalités incluent les pièces jointes fiables et la protection des liens fiables. <br/><br/>Consultez la[vue d’ensemble de Microsoft Defender pour Entreprises](../../security/defender-business/mdb-overview.md) (préversion!) pour obtenir des fonctionnalités de sécurité et de protection contre les menaces supplémentaires. |
 | Sécuriser les données professionnelles | Vos données personnelles sont protégées sur les appareils personnels avec accès par code confidentiel, ainsi que par la limitation de la copie et de l’enregistrement. Vous pouvez également ajouter la protection des informations afin de vous assurer que seules les personnes autorisées peuvent accéder aux informations sensibles. |
 | Sécuriser vos appareils | Vous pouvez protéger vos fichiers de travail sur les appareils en restreignant l’accès mobile (par exemple, les actions Copier et Coller). Vous pouvez également effacer de façon sélective les données professionnelles provenant d’appareils mobiles inscrits en cas de perte ou de vol. |
 | Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Microsoft Defender pour Office 365 Plan 1, les stratégies de prévention des pertes de données (DLP), l'archivage Exchange Online, Azure Information Protection et Intune. |

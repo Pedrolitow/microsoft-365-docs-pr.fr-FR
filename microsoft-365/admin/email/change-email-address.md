@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Modifiez votre adresse e-mail en une adresse de messagerie conviviale comme tom@fourthcoffee.com en achetant un nom de domaine et en l’ajoutant à Microsoft 365.
-ms.openlocfilehash: bf6de4115b37e6f83da7b924cc41f4d2c13ac427
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127979"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370571"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -41,12 +41,6 @@ ms.locfileid: "61127979"
 ::: moniker range="o365-worldwide"
 
 Votre adresse de messagerie initiale dans Microsoft 365 inclut .onmicrosoft.com, comme tom@fourthcoffee.onmicrosoft.com. Vous pouvez la remplacer par une adresse plus conviviale telle que tom@fourthcoffee.com. Vous devez disposer de votre propre nom de domaine, par exemple fourthcoffee.com. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Votre adresse de messagerie initiale en Office 365 Allemagne inclut .onmicrosoft.de, comme tom@fourthcoffee.onmicrosoft.de. Vous pouvez la modifier en une adresse plus conviviale comme tom@fourthcoffee.de. Vous aurez besoin de votre propre nom de domaine, comme fourthcoffee.de d’abord. Si c'est déjà le cas, tant mieux. Sinon, découvrez comment en [acheter un auprès d'un bureau d'enregistrement de domaines](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -88,12 +82,6 @@ Vous devez être un Administrateur général pour procéder à ces étapes.
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>admin center at .
@@ -113,7 +101,7 @@ Vous devez être un Administrateur général pour procéder à ces étapes.
 > [!NOTE]
 > Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques du client Microsoft 365 client.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Acheter un domaine personnalisé à l’Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
 [Gérer les domaines](/admin) (page de liens)\

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262790"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371111"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,10 +35,7 @@ Le déploiement centralisé est le moyen recommandé et le plus riche en fonctio
 
 Une déploiement centralisé offre les avantages suivants :
 
-- Un administrateur général ou un administrateur Exchange peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
-- Exchange administrateur peut déployer le addin uniquement si la propriété Inscription de l’application est définie sur true dans Azure Active Directory centre d’administration, comme illustré dans l’image ci-dessous.
-
-  ![image](../../media/AAD.png)
+- Un administrateur peut déployer et affecter un module complémentaire directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation (pour plus d’informations, voir la section sur les conditions requises de l’administrateur).
 
 - Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
 
@@ -55,7 +52,7 @@ Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, o
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
-- des compléments ciblant Word, Excel ou PowerPoint dans Office 2013 ;
+- Les add-ins qui ciblent Office version MSI (sauf Outlook 2016)
 - un service d'annuaire local ;
 - Déploiement de la mise en Exchange d’une boîte aux lettres sur place
 - le déploiement de compléments vers SharePoint ;
@@ -85,6 +82,15 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 Microsoft Exchange les manifestes de votre organisation. L’administrateur déployant des applications et les utilisateurs qui les reçoivent doivent se trouver sur une version de Exchange Online qui prend en charge l’authentification OAuth.
 
 Pour connaître la configuration utilisée, consultez l'administrateur Exchange de votre organisation. Vous pouvez vérifier la connectivité OAuth de chaque utilisateur à l'aide de l'applet de commande PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity).
+
+### <a name="admin-requirements"></a>Configuration requise pour l’administrateur
+
+Pour déployer un add-in via le déploiement centralisé, vous devez être administrateur général ou administrateur Exchange de l’organisation.
+
+> [!NOTE]
+> Un administrateur Exchange peut déployer un application uniquement si la propriété **Inscriptions** de l’application est définie sur true dans le Centre d’administration Azure Active Directory, comme illustré dans l’image suivante :
+>
+> ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Contrôle de compatibilité du déploiement centralisé
@@ -139,7 +145,7 @@ Le déploiement centralisé prend en charge les affectations à des utilisateurs
 
 Examinons l'exemple suivant où un complément est affecté à Nicoletta, à Ariane et au groupe Service commercial. Le Service des ventes Région ouest étant un groupe imbriqué, aucun complément n'est affecté à Noël et Jérôme.
 
-![Diagramme du service des ventes.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Déterminer si un groupe contient des groupes imbriqués
@@ -156,11 +162,11 @@ Vous pouvez également utiliser l'API Graph Azure Active Directory pour exécute
 
 ### <a name="contacting-microsoft-for-support"></a>Contacter Microsoft pour obtenir une assistance
 
-Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../../business-video/get-help-support.md)découvrez comment ). Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
+Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-in lors de l’utilisation d’applications Office pour le web (Word, Excel, etc.), qui ont été déployées de manière centralisée, vous devrez peut-être contacter le support Microsoft[(](../../business-video/get-help-support.md)découvrez comment . Fournissez les informations suivantes sur votre environnement Microsoft 365 dans le ticket de support.
 
 | Plateforme | Informations de débogage |
 |:-----|:-----|
-|Bureau | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Office | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)** |
 
 ## <a name="related-content"></a>Contenu associé

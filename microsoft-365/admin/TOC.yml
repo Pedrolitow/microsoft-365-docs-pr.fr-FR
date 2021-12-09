@@ -53,6 +53,12 @@
           href: setup/set-up-windows-devices.md
         - name: Configurer des appareils mobiles
           href: setup/set-up-mobile-devices.md
+        - name: Configurer Outlook pour Microsoft 365 pour la messagerie professionnelle (vidéo)
+          href: setup/setup-outlook.md
+        - name: Déplacer des fichiers vers OneDrive (vidéo)
+          href: setup/files-to-onedrive.md
+        - name: Déplacer des fichiers vers Microsoft Office SharePoint Online (vidéo)
+          href: setup/files-to-sharepoint.md
         - name: Migrer vos données vers Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Déployer Teams
@@ -78,7 +84,7 @@
     - name: Vue d’ensemble du centre d’administration Microsoft 365
       items:
         - name: Vue d’ensemble du centre d’administration
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: À propos des rôles d’administrateur
           href: add-users/about-admin-roles.md
         - name: Application mobile Admin
@@ -435,11 +441,11 @@
         - name: Partager des calendriers avec des utilisateurs invités
           href: manage/share-calendars-with-external-users.md
         - name: Créer une équipe avec les utilisateurs invités
-          href: ../business-video/team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: Planifier une réunion Teams avec des utilisateurs invités
-          href: ../business-video/schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: Rejoindre une réunion Teams avec des utilisateurs invités
-          href: ../business-video/join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: Résoudre les problèmes
       href: /office/troubleshoot/
     - name: Contacter l’assistance

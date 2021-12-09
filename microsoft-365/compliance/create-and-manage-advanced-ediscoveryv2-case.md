@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités.
-ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: f647421dcaba3d50f1cb8b7a6b1e58a792f23403
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137134"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372719"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery de gestion
 
@@ -97,7 +97,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - [Afficher des documents.](view-documents-in-review-set.md) Cela inclut l’affichage des métadonnées de chaque document dans un jeu à réviser et l’affichage du document dans sa version native ou sa version texte.
 
-   - [Créer des requêtes et des filtres.](review-set-search.md) Vous créez des requêtes de recherche à l’aide de différents critères de recherche (y compris la possibilité de rechercher toutes les propriétés de métadonnées de [fichier)](document-metadata-fields-in-advanced-ediscovery.md)afin d’affiner et d’affiner les données de cas sur ce qui est le plus pertinent pour le cas. Vous pouvez également utiliser des filtres de jeu à réviser pour appliquer rapidement d’autres conditions aux résultats d’une requête de recherche afin d’affiner ces résultats. 
+   - [Créer des requêtes et des filtres.](review-set-search.md) Vous créez des requêtes de recherche à l’aide de différents critères de recherche (y compris la possibilité de rechercher toutes les propriétés de métadonnées de fichier afin d’affiner et d’affiner les données de cas sur les éléments les plus pertinents pour le cas). [](document-metadata-fields-in-advanced-ediscovery.md) Vous pouvez également utiliser des filtres de jeu à réviser pour appliquer rapidement d’autres conditions aux résultats d’une requête de recherche afin d’affiner ces résultats. 
 
    - [Créer et utiliser des balises](tagging-documents.md). Vous pouvez appliquer des balises à des documents dans un jeu à réviser pour identifier ceux qui sont réactifs (ou non réactifs au cas), puis utiliser ces balises lors de la création de requêtes de recherche pour inclure ou exclure les documents marqués. Vous pouvez également baliser pour déterminer les documents à exporter.
 

@@ -8,37 +8,37 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f20739d13d4b8ef9e9b570d7c12b8e2cd1108cb6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c0c776d7e00ee890a8cafbc15db02b45a1474b24
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169037"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371867"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender pour endpoint Plan 1 et Plan 2
 
 **S’applique à**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Defender pour le point de terminaison fournit une protection avancée contre les menaces qui inclut des antivirus, des logiciels anti-programme malveillant, des préventions de ransomware, etc., ainsi que la gestion centralisée et la rapports. Deux plans seront bientôt disponibles :   
  
-- [Microsoft Defender pour endpoint Plan 1,](defender-endpoint-plan-1.md)actuellement en prévisualisation ; et 
-- [Microsoft Defender pour endpoint Plan 2](microsoft-defender-endpoint.md), désormais disponible, et [appelé Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md); et 
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), anciennement [appelé Microsoft Defender pour Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Comparer les plans Defender pour les points de terminaison
 
 Le tableau suivant décrit ce qui est inclus dans chaque plan à un niveau élevé. <br/><br/>
 
-| [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(aperçu) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(disponible maintenant) |
+| [Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
 | [Protection de nouvelle génération](defender-endpoint-plan-1.md#next-generation-protection) <br/>(inclut les logiciels anti-programme malveillant et antivirus) <p> [Réduction de la surface d’attaque](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Actions de réponse manuelles](defender-endpoint-plan-1.md#manual-response-actions) <p> [Gestion centralisée](defender-endpoint-plan-1.md#centralized-management) <p>[Rapports de sécurité](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender pour le point de terminaison Plan 1,](defender-endpoint-plan-1.md)plus : <p> [Découverte d’appareils](device-discovery.md) <p> [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md) <p> [Examen et réponse automatisés](automated-investigations.md) <p> [Repérage avancé](advanced-hunting-overview.md) <p> [Détection et réponse du point de terminaison](overview-endpoint-detection-response.md) <p> [Spécialistes des menaces Microsoft](microsoft-threat-experts.md)  |
 | [Prise en charge Windows 10, iOS, Android OS et macOS](defender-endpoint-plan-1.md#cross-platform-support) | Prise en charge Windows plateformes (client et serveur) et non Windows client<br/> (macOS, iOS, Android et Linux) |

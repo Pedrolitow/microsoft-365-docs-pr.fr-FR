@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d8a2af9ff38a4dec7a4708106bc0289c03bb449e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106526"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371231"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -30,7 +30,7 @@ Dans Microsoft 365, vous implémentez la protection contre la perte de données 
 
 - Microsoft 365 services tels que Teams, Exchange, SharePoint et OneDrive
 - Office applications telles que Word, Excel et PowerPoint
-- Windows 10 de terminaison
+- Windows 10, Windows 11 macOS et macOS (Rapport 10.15 et supérieur) points de terminaison
 - applications cloud non-Microsoft
 - partages de fichiers locaux et partages de fichiers SharePoint.
 
@@ -69,7 +69,7 @@ Microsoft 365 la surveillance et la protection DLP sont natives aux applications
 
 **Planification de la technologie pour la DLP**
 
-N’oubliez pas que la DLP en tant que technologie peut surveiller et protéger vos données au repos, les données en cours d’utilisation et les données en mouvement sur les services Microsoft 365, les appareils Windows 10, les partages de fichiers locaux et les SharePoint locaux. Il existe des implications en matière de planification pour les différents emplacements, le type de données que vous souhaitez surveiller et protéger, ainsi que les actions à prendre lorsqu’une correspondance de stratégie se produit.
+N’oubliez pas que la DLP en tant que technologie peut surveiller et protéger vos données au repos, les données en cours d’utilisation et les données en mouvement sur les services Microsoft 365, les Windows 10, les Windows 11 et les appareils macOS (État 10.15 et supérieur), les partages de fichiers locaux et les SharePoint locaux. Il existe des implications en matière de planification pour les différents emplacements, le type de données que vous souhaitez surveiller et protéger, ainsi que les actions à prendre lorsqu’une correspondance de stratégie se produit.
 
 **Planification des processus métiers pour la DLP**
 
@@ -89,8 +89,8 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Sites SharePoint Online
 - Comptes OneDrive
 - conversation et messages de canal Teams
-- Microsoft Defender for Cloud Apps
-- Appareils Windows 10
+- Microsoft Cloud App Security
+- Windows 10, Windows 11 macOS et macOS (État 10.15 et supérieur)
 - Référentiels locaux
 
 Chacune d’elles a des conditions préalables différentes. Les éléments sensibles dans certains emplacements, tels que Exchange en ligne, peuvent être placés sous le cadre de la DLP en configurant simplement une stratégie qui s’applique à eux. D’autres, telles que les référentiels de fichiers locaux, nécessitent un déploiement du scanneur Azure Information Protection (AIP). Vous devez préparer votre environnement, les stratégies de brouillon de code et les tester minutieusement avant d’activer les actions de blocage.
@@ -143,8 +143,8 @@ emplacement | Inclure/exclure par|
 |sites SharePoint |sites |
 |comptes OneDrive |comptes ou groupes de distribution |
 |conversation et messages de canal Teams |comptes |
-|appareils Windows 10 |utilisateurs ou groupe |
-|Microsoft Defender for Cloud Apps |instance |
+|Windows 10, Windows 11 macOS et macOS (État 10.15 et supérieur) |utilisateurs ou groupe |
+|Microsoft Cloud App Security |instance |
 |Référentiels locaux| chemin d’accès au fichier de référentiel|
 
 3. **Choisissez les conditions qui doivent correspondre** pour qu’une stratégie soit appliquée à un élément : vous pouvez accepter des conditions pré-configurées ou définir des conditions personnalisées. En voici quelques exemples :
@@ -157,7 +157,7 @@ emplacement | Inclure/exclure par|
 
 - SharePoint/Exchange/OneDrive : bloquer l’accès au contenu aux personnes extérieures à votre organisation. Affichez un conseil à l’utilisateur et envoyez-lui une notification par courrier électronique lui avertissant qu’il prend une action qui est interdite par la stratégie DLP.
 - Teams chat et canal : empêcher le partage d’informations sensibles dans la conversation ou le canal
-- Windows 10 : auditer ou restreindre la copie d’un élément sensible sur un périphérique USB à supprimer
+- appareils Windows 10, Windows 11 et macOS (Contrôle 10.15 et version supérieure) : auditer ou limiter la copie d’un élément sensible sur un périphérique USB à supprimer
 - Office applications : afficher une fenêtre popup pour avertir l’utilisateur qu’il s’engage dans un comportement risqué et bloquer ou bloquer, mais autoriser le remplacement.
 - Partages de fichiers locaux : déplacer le fichier de l’endroit où il est stocké vers un dossier de mise en quarantaine
 

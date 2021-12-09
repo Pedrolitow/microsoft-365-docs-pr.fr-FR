@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1fa733efcb43feeaf076f8671dc63ca6eb25ec76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bfe8b29b6528f3c191098d14469db192ebd71488
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153725"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372419"
 ---
 # <a name="contact-support-for-togo"></a>Contacter le support technique pour le Togo
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5147
@@ -29,7 +29,7 @@ ms.locfileid: "60153725"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 8 H 00 à 4 h 00
+Français : Mon-Fri 8H00 à 16h00
 
 Anglais : Mon-Fri 8H00 à 16h00
 

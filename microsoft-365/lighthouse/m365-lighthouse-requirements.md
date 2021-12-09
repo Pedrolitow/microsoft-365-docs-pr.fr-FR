@@ -1,6 +1,6 @@
 ---
 title: Conditions requises pour Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,17 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés, obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 70aaefc7e19268a5ad4c33c50b2e165361f2c362
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a502e056d570ef81e1bdb02321f0492c2b50395
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188924"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371891"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont disponibles uniquement pour les partenaires qui répondent aux exigences répertoriées dans cet article. Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux exigences répertoriées dans cet article. Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse est un portail d’administration qui permet aux fournisseurs de services gérés (MSP) de sécuriser et de gérer les appareils, les données et les utilisateurs à grande échelle pour les petites et moyennes entreprises (SMB).  
 
@@ -47,7 +47,7 @@ Pour afficher les appareils clients sur les pages de gestion des appareils, un M
 
 ## <a name="requirements-for-enabling-usermanagement"></a>Conditions requises pour l’activation de la gestion des utilisateurs 
 
-Pour que les données client s’affichent dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une ultérieure. Azure AD Premium P1 est inclus dans les Microsoft 365 Business Premium et Microsoft 365 E3.   
+Pour que les données client s’afficheront dans les rapports sur les pages de gestion des utilisateurs, y compris les utilisateurs à risque, l’authentification multifacteur et la réinitialisation du mot de passe, les clients doivent avoir des licences pour Azure Active Directory Premium P1 ou une ultérieure. Azure AD Premium P1 est inclus dans les Microsoft 365 Business Premium et Microsoft 365 E3.   
 
 ## <a name="requirements-for-enablingthreat-management"></a>Conditions requises pour activer la gestion des menaces 
 
@@ -63,8 +63,8 @@ Antivirus Microsoft Defender fait partie du système d Windows d’exploitation 
 ## <a name="related-content"></a>Contenu associé   
 
 [Configurer la Microsoft 365 Lighthouse du portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
 [Microsoft 365 Lighthouse de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse de la page Gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\
-[MICROSOFT 365 LIGHTHOUSE FAQ](m365-lighthouse-faq.yml)   (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml)   (article)
 

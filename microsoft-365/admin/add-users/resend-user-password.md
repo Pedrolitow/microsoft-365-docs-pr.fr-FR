@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Découvrez comment réinitialiser le mot de passe et envoyer un message électronique à un nouvel Microsoft 365 utilisateur.
-ms.openlocfilehash: cbd89d2a3f39df90425f6a5b701f3af19bd681a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc7504970da6e3844c359fe0652b051c0f9d0225
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161569"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370595"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 
@@ -33,7 +33,7 @@ Cet article explique comment renvoyer l’e-mail de notification à un nouvel ut
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](/microsoft-365/business-video/admin-center-overview)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] ([Vue d’ensemble du Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -41,7 +41,7 @@ Vous devez être administrateur général ou administrateur de [mot de](about-ad
   
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis réinitialisez **le mot de passe.**
+2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
 
 3. Suivez les instructions de la **page** Réinitialiser le mot de passe pour générer automatiquement un mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser.**  
 

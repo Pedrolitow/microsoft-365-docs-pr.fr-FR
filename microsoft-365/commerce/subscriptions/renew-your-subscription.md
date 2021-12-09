@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
 ms.date: 05/04/2021
-ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188432"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370079"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -49,12 +49,6 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 

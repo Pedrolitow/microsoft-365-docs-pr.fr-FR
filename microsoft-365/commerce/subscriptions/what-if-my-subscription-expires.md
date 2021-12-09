@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 09/16/2021
-ms.openlocfilehash: 491a279aac94b4242252df801bd9f65fcb9f8a5b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b53b62d62a385ca8cad7367da342aa0b4184281
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151241"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372659"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
 Si votre abonnement prend fin (parce qu'il est arrivé à expiration ou que vous avez décidé de l'annuler), votre accès aux services, applications et données client Microsoft 365 passent par plusieurs états avant la désactivation complète de l'abonnement ou sa *suppression*. Conscient de cette progression, vous aurez toutes les cartes en main pour réactiver votre abonnement avant qu'il ne soit trop tard. Si vous ne souhaitez plus utiliser Microsoft 365, nous vous conseillons de sauvegarder vos données avant leur suppression finale.
 
-Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](../../business-video/get-help-support.md).
+Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](../../admin/get-help-support.md).
 
 > [!NOTE]
 > Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.

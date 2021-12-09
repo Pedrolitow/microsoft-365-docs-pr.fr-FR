@@ -1,6 +1,6 @@
 ---
 title: S’inscrire à Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Pour les fournisseurs de services gérés,découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 9a69b8a261d3a5faebd7ad7aa72336d0c9f5977c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Pour les fournisseurs de services gérés (MSP), découvrez comment s’inscrire à Microsoft 365 Lighthouse.
+ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213996"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374051"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ ms.locfileid: "60213996"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Microsoft 365 Lighthouse est déployé dans le client partenaire uniquement pas dans les locataires du client, mais assurez-vous que vous et vos clients respectez les conditions requises répertoriées dans Microsoft 365 Lighthouse &mdash; [client.](m365-lighthouse-requirements.md)
+- Microsoft 365 Lighthouse est déployé dans le client partenaire uniquement pas dans les locataires du client, mais assurez-vous que vous et vos clients respectez les exigences répertoriées dans Microsoft 365 Lighthouse &mdash; [client.](m365-lighthouse-requirements.md)
 
 - Vous devez être administrateur général dans le client partenaire que vous êtes en train de vous inscrire.
 
@@ -60,11 +60,12 @@ ms.locfileid: "60213996"
     > [!NOTE]
     > Une fois l’inscription terminée, l’affichage des données client dans le Dossier peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
+[Microsoft 365 Lighthouse et Microsoft Defender pour les entreprises](../security/defender-business/mdb-lighthouse-integration.md) (article)

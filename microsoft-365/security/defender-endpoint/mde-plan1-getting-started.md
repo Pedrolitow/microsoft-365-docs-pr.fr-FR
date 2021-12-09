@@ -7,24 +7,21 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f22f2c17e87b676d6522173e8540bf4833d0215d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 81b11caa5663677499d7a6fb78d8b48e5ffdebf6
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128267"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373835"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1
-
-> [!TIP]
-> Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
 
 Le portail Microsoft 365 Defender ( ) vous permet d’afficher des informations sur les menaces détectées, de gérer vos alertes et incidents, d’agir sur les menaces détectées et de gérer les [https://security.microsoft.com](https://security.microsoft.com) appareils. Le portail Microsoft 365 Defender est l’endroit où vous pouvez commencer à interagir avec les fonctionnalités de protection contre les menaces que vous obtenez avec Defender for Endpoint Plan 1. Les sections suivantes décrivent comment commencer :
 
@@ -98,7 +95,7 @@ Utilisez les **onglets Alertes,** Périphériques et Utilisateurs pour afficher 
 > [!TIP]
 > Pour en savoir plus sur l’utilisation de **l’affichage Incident,** voir [Gérer les incidents.](manage-incidents.md)
 
-## <a name="manage-devices"></a>Gérer les appareils
+## <a name="manage-devices"></a>Gestion des appareils
 
 Pour afficher et gérer les appareils de votre organisation, dans la barre de navigation, sous Points de terminaison, sélectionnez **Inventaire des appareils.** Une liste d’appareils s’affiche, comme illustré dans l’image suivante :
 

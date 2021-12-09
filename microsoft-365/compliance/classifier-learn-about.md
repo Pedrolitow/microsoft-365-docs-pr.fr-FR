@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classificateur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 69074baf8ce39352341a484c1d0aa6ce99bf94cd
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13e16394e9be1a2dd6b3d9cdcf4e18a736de158b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302181"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373775"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -43,7 +43,7 @@ Cette catégorie de mécanismes de classification inclut la recherche de contenu
 - Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression avec le doigt du document).](document-fingerprinting.md)
 - Utilisation de la présence de chaînes exactes [correspondance exacte de données](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour rendre le contenu disponible pour une utilisation dans En savoir plus sur la protection contre la perte de données [)](dlp-learn-about-dlp.md)et appliquer automatiquement des stratégies pour les [étiquettes de rétention.](apply-retention-labels-automatically.md)
+Les étiquettes de sensibilité et de rétention peuvent ensuite [](dlp-learn-about-dlp.md) être appliquées automatiquement pour rendre le contenu disponible pour utilisation dans En savoir plus sur la protection contre la perte de données et appliquer automatiquement des stratégies pour les [étiquettes de rétention.](apply-retention-labels-automatically.md)
 
 ## <a name="classifiers"></a>Classifieurs
 
@@ -69,7 +69,7 @@ Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditio
 Microsoft 365 est livré avec plusieurs classifieurs pré-formés :
 
 > [!CAUTION]
-> Nous déconseillons le classificateur **Langage choquant** pré-formé, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs pré-formés contre les menaces, les blasphémités et le harcèlement.  
+> Nous supprimons le classificateur pré-entraîné **Langage offensif** car il a produit un nombre élevé de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs pré-formés contre les menaces, les blasphémités et le harcèlement.  
 
 - Cv : détecte les éléments qui sont des comptes textuels des **qualifications** personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub

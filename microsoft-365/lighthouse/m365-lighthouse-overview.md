@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: 41b5938e2cdacb8db8c0eb6f26220e9d22f38e89
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 269927ee46d821c38a6ad8f6d0b92f76b7fdc64e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127811"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373703"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
@@ -60,9 +60,10 @@ Ce dernier permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 > [!NOTE] 
 > Pour plus d’informations sur la façon de s’inscrire, voir [S’inscrire Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
-[Microsoft 365 Lighthouse page Tenants overview](m365-lighthouse-tenants-page-overview.md) (article)\
-[Microsoft 365 Lighthouse vue d’ensemble de la page de conformité des](m365-lighthouse-device-compliance-page-overview.md) appareils (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
+[vue d’ensemble de la page Microsoft 365 Lighthouse client](m365-lighthouse-tenants-page-overview.md) (article)   
+[Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
+[Microsoft Defender pour les entreprises](../security/defender-business/index.yml)

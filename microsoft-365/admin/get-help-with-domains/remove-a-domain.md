@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 1077f7c2cec8b99581c28b177e73f9c7b32f50c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164631"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370007"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan d Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
 
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : Déplacer des utilisateurs vers un autre domaine
 
@@ -44,12 +44,6 @@ Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan d 
 ::: moniker range="o365-worldwide"
 
 1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre administratif</a>.      
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre administratif</a>.      
 
 ::: moniker-end
 
@@ -77,12 +71,6 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre administratif</a>.      
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.      
@@ -93,7 +81,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 3. Sous **l’onglet** Compte, **sélectionnez Gérer** le nom d’utilisateur, puis choisissez un autre domaine.
 
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -104,11 +92,6 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groupes.</a>
-
-::: moniker-end
-::: moniker range="o365-germany"
-
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration,</a>allez à la page  > **Groupes.**
 
 ::: moniker-end
 
@@ -132,12 +115,6 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines d’installation.</a>
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines d’installation.</a>
@@ -156,23 +133,14 @@ La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minute
 
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 
-## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviennent à l’adresse « .onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
+> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
 
 Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md) et nous vous aiderons à effectuer cette tâche.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« .onmicrosoft.de »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .onmicrosoft.de » en tant que SMTP/UserprincipalName principal.
-
-Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) et nous vous aiderons à effectuer cette tâche.
 
 ::: moniker-end
 

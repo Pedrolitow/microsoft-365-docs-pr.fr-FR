@@ -20,24 +20,24 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 entreprise.
 ms.date: 10/21/2020
-ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5192454ad202fb5ca79c018fb7e90271d06e32c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177626"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370391"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrer votre clé de produit achetée auprès de Microsoft Open
 
 Si vous avez acheté Microsoft 365 entreprise dans le cadre d’un programme de licence [Microsoft Open,](https://go.microsoft.com/fwlink/p/?LinkID=613298)cet article est pour vous. Les clients qui ont acheté une clé de produit peuvent suivre cette rubrique pour activer, renouveler ou ajouter des licences à un abonnement.
   
- **Vous avez besoin d’aide immédiatement ?** [Appelez le support Microsoft.](..//business-video/get-help-support.md) 
+ **Vous avez besoin d’aide immédiatement ?** [Appelez le support Microsoft.](../admin/get-help-support.md) 
   
  **Vous avez besoin d’autres informations ?**
  
- **Pour obtenir de l’aide Microsoft 365 famille ou personnel,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Pour obtenir de l’aide Microsoft 365 famille, ou personnel,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
- **Pour obtenir de l’aide Microsoft 365 Business Standard acheté** dans un magasin de vente au détail, voir Entrer votre clé de produit achetée dans [un magasin de vente au détail.](enter-your-product-key.md) 
+ **Pour obtenir de l’aide Microsoft 365 Business Standard acheté dans** un magasin de vente au détail, voir Entrer votre clé de produit achetée dans [un magasin de vente au détail.](enter-your-product-key.md) 
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Activer, renouveler ou ajouter des licences à un abonnement acheté auprès de Microsoft Open
 
@@ -65,4 +65,4 @@ Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé d
   
 Les clients ayant acquis des licences en volume peuvent en apprendre davantage en visitant le site [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Ou, si vous souhaitez parler à une personne, [appelez le Support Microsoft](../business-video/get-help-support.md).
+Ou, si vous souhaitez parler à une personne, [appelez le Support Microsoft](../admin/get-help-support.md).

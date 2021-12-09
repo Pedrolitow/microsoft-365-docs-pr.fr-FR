@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60655443"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370307"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -44,12 +44,6 @@ Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les donn
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre d'administration</a>, accédez à la page **Rapports** \> **sur l'Utilisation**.
 
 ::: moniker-end
 

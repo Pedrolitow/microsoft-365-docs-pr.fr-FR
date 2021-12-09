@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Acceptez une invitation par courrier électronique pour rejoindre une organisation Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte.
-ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 810fa60a5f59d1e4ebede25b23a841769779cdaf
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196120"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370823"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’Outlook, Yahoo, Gmail ou d’un autre compte (utilisateur)
 
@@ -32,7 +32,7 @@ Lorsqu’une personne vous ajoute à un Microsoft 365 entreprise, vous recevez u
 
 Votre courrier électronique ressemble à ceci pour configurer votre compte d’utilisateur. Lorsque vous recevez cet e-mail, vous devez effectuer quelques étapes avant de commencer à utiliser votre nouveau compte d’utilisateur.
 
-:::image type="content" source="../../media/ssu-accept-invite-msa.png" alt-text="Screenshot: Accept invite to join Microsoft 365 Business Standard":::
+:::image type="content" source="../../media/ssu-accept-invite-msa.png" alt-text="Capture d’écran : accepter l’invitation à rejoindre Microsoft 365 Business Standard":::
 
 1. Dans l’e-mail d’invitation, **sélectionnez Accepter.**
 
@@ -46,11 +46,11 @@ Votre courrier électronique ressemble à ceci pour configurer votre compte d’
 
 6. Dans la page Bienvenue dans Microsoft 365, vous pouvez télécharger Office applications mobiles et de bureau, et configurer OneDrive.
 
-### <a name="next-steps"></a>Étapes suivantes
+### <a name="next-steps"></a>Prochaines étapes
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>La page web m’demande d’accepter que mon entreprise a accès à mon nom, ma connectez-vous et d’autres informations : qu’est-ce que cela signifie ?
 
@@ -83,7 +83,7 @@ Vous devez d’abord quitter votre abonnement Microsoft 365 Entreprise. Demandez
 
 ### <a name="i-have-a-question-about-using-this-account-who-can-i-talk-to"></a>J’ai une question sur l’utilisation de ce compte. Qui puis-je parler ?
 
-Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à mettre à niveau Microsoft 365 abonnement. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../../business-video/get-help-support.md)
+Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à mettre à niveau Microsoft 365 abonnement. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../get-help-support.md)
 
 ### <a name="the-gmail-outlook-yahoo-or-other-email-account-that-im-using-as-a-microsoft-account-already-has-some-personal-files-in-it-can-the-technical-administrator-or-business-owner-see-these"></a>Le compte gmail, Outlook, Yahoo ou tout autre compte de messagerie que j’utilise en tant que compte Microsoft possède déjà des fichiers personnels. L’administrateur technique ou le chef d’entreprise peut-il voir ces éléments ?
 

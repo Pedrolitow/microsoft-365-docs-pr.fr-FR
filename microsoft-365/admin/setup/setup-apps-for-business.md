@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 2a21ba525fa743b8a9105e571717d80d4eb42258
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 48b26e3c19ba8c02798e9eb365ab763b03a1029a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254380"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373427"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 
@@ -40,12 +40,6 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
  ::: moniker range="o365-worldwide"
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
@@ -73,12 +67,6 @@ Accédez à [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.micr
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Si vous utilisez Office 365 Germany, accédez à la page [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 Si vous utilisez Office 365 géré par 21Vianet, accédez à [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
@@ -99,7 +87,7 @@ Découvrez les étapes à suivre en fonction de votre appareil : [Android](https
   
 ## <a name="store-files-online"></a>Stocker des fichiers en ligne
 
-Microsoft facilite le stockage de fichiers en ligne. Pour découvrir quels emplacements de stockage sont les plus adaptés à votre entreprise, voir [Où stocker des fichiers dans Office 365 ?](../../business-video/store-files.md).
+Microsoft facilite le stockage de fichiers en ligne. Pour découvrir quels emplacements de stockage sont les plus adaptés à votre entreprise, voir [Où stocker des fichiers dans Office 365 ?](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
 Toutes les personnes reçoivent automatiquement un emplacement de stockage en ligne **OneDrive** lorsque vous créez des comptes Microsoft pour chacune d’entre elles. Avec OneDrive, vous pouvez accéder aux fichiers sur vos ordinateurs, téléphones et tablettes.  
   

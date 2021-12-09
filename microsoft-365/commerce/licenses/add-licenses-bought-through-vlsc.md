@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté par le biais d’un partenaire tiers, reconnu par Microsoft.
 ms.date: 08/27/2021
-ms.openlocfilehash: d5c8c689db74c1e12588ab1ad1bcefc102f9476d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ebba7e0a27efdd0a49ba9719c93e04f5c2760b4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203458"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369743"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Ajouter des licences à un abonnement acheté auprès du Centre de gestion des licences en volume
 
@@ -36,15 +36,9 @@ Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entrepri
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sélectionnez l’abonnement auquel vous souhaitez ajouter des licences, puis sélectionnez le lien Centre de gestion des licences en **volume(VLSC).**

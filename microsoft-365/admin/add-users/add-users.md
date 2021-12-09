@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: dad5c6693489fd62eb77df46de6d538da93da515
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128507"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370643"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
@@ -51,12 +51,6 @@ Vous devez être un administrateur général, de licences ou d’utilisateurs po
 ::: moniker range="o365-worldwide"
 
 1. Accédez au centre d’administration sur<https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
@@ -86,12 +80,6 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 ::: moniker range="o365-worldwide"
 
 1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 

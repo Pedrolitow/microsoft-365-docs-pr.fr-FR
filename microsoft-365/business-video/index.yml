@@ -45,7 +45,7 @@ productDirectory:
     - title: Configurer des applications d’entreprise
       imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
       summary: 'Configurer et en savoir plus sur les réservations, les listes, les tâches...'
-      url: overview-bookings.md
+      url: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
     - title: Gérer votre abonnement
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
       summary: 'Gérer les utilisateurs, réinitialiser les mots de passe, afficher votre facture...'
@@ -61,7 +61,7 @@ productDirectory:
     - title: Obtenir une assistance
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
       summary: Obtenez de l’aide Microsoft 365 entreprise.
-      url: get-help-support.md
+      url: ../admin/get-help-support.md
 additionalContent:
   sections:
     - title: Si vous souhaitez en savoir plus

@@ -20,14 +20,14 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
-description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
+description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et le courrier électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: 3488991d6db386f7dcbd6f57271347da41a6489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cd590478ada0777a37e551d247bfa1aeed99a0d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164463"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369983"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -55,7 +55,7 @@ Chaque champ est décrit ci-dessous.
 |**Field**  |**Description**  |
 |---------|---------|
 |Nom  <br/>   | Le nom que vous entrez ici est celui que les utilisateurs verront dans les pages suivantes :  <br/>  Page de connexion : si vos utilisateurs ont configuré d'autres comptes Microsoft avec leur adresse de courrier professionnelle ou scolaire, ils peuvent voir le nom de l'organisation sur la page de connexion. Cela leur permet de faire la distinction entre leur compte professionnel ou scolaire et leurs autres comptes, ils peuvent ainsi identifier celui à utiliser quand ils se connectent.  <br/>  Page et lien du profil de l'organisation : le lien vers le profil de votre organisation affiche le nom de l'organisation.  <br/>  Yammer navigation : dans Yammer, le navigation de gauche utilise le nom de l’organisation comme nom du réseau Yammer accueil.  <br/> client Synchronisation OneDrive : le nom de l’organisation s’affiche dans l’Explorateur de fichiers sur Windows et Finder sur Mac, les chemins d’accès aux fichiers, le centre d’activité OneDrive, l’info-bulle de l’icône cloud OneDrive et la fenêtre des paramètres OneDrive. Actuellement, la mise à jour du nom de l’organisation ne le met pas à jour pour les clients configurés. <br/> MS Teams : le S switcher d’organisation Teams affiche le nom de l’organisation <br/>  |
-|Adresse, Ville, Département/région, Code postal  <br/>     | L’adresse entrée ici est ce que vous verrez sur votre facture, sous Vendu à : l’adresse Vendu à sur votre facture est identique à l’adresse de votre organisation sur votre page de profil (voir Comprendre votre facture pour [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)pour les entreprises).  <br/>        |
+|Adresse, Ville, Département/région, Code postal  <br/>     | L’adresse entrée ici est ce que vous verrez sur votre facture, sous Vendu à : l’adresse Vendu à sur votre facture est identique à l’adresse de votre organisation sur votre page de profil (voir Comprendre votre facture pour [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)pour les entreprises .  <br/>        |
 |Pays ou région  <br/>    | Pays ou région dans lequel se trouve le siège social de votre entreprise. Le pays ou la région sélectionné détermine les services qui sont à votre disposition, les taxes et la devise de facturation applicables à votre pays ou région ainsi que l'emplacement du centre de données le plus proche (voir [À propos des restrictions de licence Microsoft Office](https://office.microsoft.com/redir/FX103037529).  <br/>REMARQUE : une fois sélectionné, le pays ou la région ne peut pas être modifié. Si vous tenez absolument à changer votre sélection, vous devez annuler votre abonnement et en souscrire un autre. Pour obtenir de l’aide sur ce processus, [contactez le support technique.](../../business-video/get-help-support.md)        |
 |Téléphone  <br/>     | Il s'agit du numéro de téléphone principal de votre société. Généralement, il s'agit du numéro de téléphone du siège social.  <br/>        |
 |Contact technique  <br/> |Il s’agit de l’adresse e-mail de la personne technique principale qui gère votre abonnement Microsoft 365 abonnement. Il s’agit de la personne qui recevra des communications sur Microsoft 365 statut du service.  <br/> |
@@ -65,7 +65,7 @@ Chaque champ est décrit ci-dessous.
 
 En tant qu’administrateur, vous pouvez modifier votre adresse de messagerie de remplacement pour réinitialiser les mots de passe.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 
 2. Dans l’en-tête, sélectionnez l’icône de votre profil, puis **sélectionnez Afficher le compte.**
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
-ms.openlocfilehash: e0d809e4f21f8fac798029a403242504b394fb68
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161833"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370283"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
@@ -35,7 +35,7 @@ Si vous êtes un administrateur global ou de gestion des utilisateurs d’un abo
 Lorsque vous créez, modifiez ou supprimez un affichage  utilisateur personnalisé, les modifications s’afficheront dans la liste De filtres que tous les administrateurs de votre entreprise voient lorsqu’ils vont sur la **page** Utilisateurs. Vous pouvez créer jusqu’à 50 affichages personnalisés. 
 
 > [!TIP]
->  Les affichages utilisateur standard sont affichés par défaut dans **la** liste de listes listes des filtres. Les filtres standard incluent tous les utilisateurs, les utilisateurs sous **licence,** les utilisateurs invités, les utilisateurs autorisés à se connecter, les **utilisateurs bloqués,** les utilisateurs sans **licence,** les utilisateurs avec erreur, les **administrateurs** de facturation, les **administrateurs** globaux, les administrateurs du **helpdesk,** les **administrateurs** de service et les administrateurs de gestion des **utilisateurs.** Vous ne pouvez pas modifier ou supprimer des affichages standard. 
+>  Les affichages utilisateur standard sont affichés par défaut dans **la** liste de listes listes des filtres. Les filtres standard incluent tous les utilisateurs, les utilisateurs sous **licence,** les utilisateurs invités, les utilisateurs autorisés à se connecter, les **utilisateurs bloqués,** les utilisateurs sans **licence,** les utilisateurs ayant des **erreurs,** les administrateurs de facturation, les **administrateurs** globaux, les administrateurs du **helpdesk,** les **administrateurs** de service et les administrateurs de gestion des **utilisateurs.** Vous ne pouvez pas modifier ou supprimer des affichages standard. 
 
 Quelques éléments à noter concernant les affichages standard : 
 
@@ -55,17 +55,17 @@ Vous pouvez créer et modifier vos affichages personnalisés dans le **volet** F
   
  **D - Licence de produit attribuée** Choisissez dans une liste des licences disponibles au niveau de votre organisation. Utilisez ce filtre pour afficher les utilisateurs qui ont la licence que vous avez sélectionnée. Les utilisateurs peuvent également avoir des licences supplémentaires. 
   
-Vous pouvez également filtrer en fonction des détails de profil utilisateur supplémentaires utilisés dans votre organisation, tels que le service, la ville, l’État ou la province, le pays ou la région, ou la fonction.
+Vous pouvez également filtrer en fonction des informations de profil utilisateur supplémentaires utilisées dans votre organisation, telles que le service, la ville, l’état ou la province, le pays ou la région, ou la fonction.
   
  **Autres conditions :**
   
 - **Utilisateurs synchronisés uniquement** Activez cette case pour afficher tous les utilisateurs qui ont été synchronisés avec Active Directory local, que les utilisateurs soient activés ou non. 
     
-- **Utilisateurs avec erreurs** Sélectionnez cette zone pour afficher les utilisateurs qui peuvent avoir des erreurs d’approvisionnement. 
+- **Utilisateurs avec erreurs** Sélectionnez cette case pour afficher les utilisateurs qui peuvent avoir des erreurs d’approvisionnement. 
     
 - **Utilisateurs sans permis** Sélectionnez cette case pour rechercher tous les utilisateurs qui n’ont pas reçu de licence. Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une boîte aux lettres Exchange mais qui n’ont pas de licence. Pour suivre ces utilisateurs spécifiquement, utilisez le filtre Utilisateurs sans permis Exchange boîtes aux lettres **ou d’archives.** Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une archive Exchange, mais n’ont pas de licence.
     
-- **Utilisateurs sans permis avec des boîtes aux lettres Exchange ou des archives** Sélectionnez cette case pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été affectés à Microsoft 365 licence. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à une archive Exchange de données. 
+- Utilisateurs sans licence avec boîtes aux lettres Exchange ou archives : sélectionnez cette zone pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été **affectés** à une licence Microsoft 365. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à Exchange archive. 
 
 > [!NOTE]
 > Le **filtre des utilisateurs** sans Exchange boîtes aux lettres fonctionne dans les cas ci-après :
@@ -83,12 +83,6 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
 
 1. Dans le Centre d’administration, allez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs.</a>
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, allez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">actifs.</a> 
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -109,12 +103,6 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, allez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">actifs.</a> 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, allez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">actifs.</a> 
@@ -130,9 +118,9 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
 
 ## <a name="related-content"></a>Contenu associé
 
-[Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
+[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
 [À propos des rôles d’administrateur](../add-users/about-admin-roles.md) (vidéo)\
-[Personnaliser le thème Microsoft 365 pour votre organisation](../setup/customize-your-organization-theme.md) (article)
+[Personnaliser le thème Microsoft 365 pour votre organisation](../setup/customize-your-organization-theme.md) (article)
 
 
      

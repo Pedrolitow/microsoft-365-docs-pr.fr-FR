@@ -15,16 +15,16 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Trouvez les derniers conseils, conseils, ressources et conseils sur le travail à distance pour les entreprises qui utilisent Microsoft 365.
-ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158729"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370847"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Permettre à votre petite entreprise de travailler à distance 
 
-À mesure que les entreprises s’adaptent au besoin accru de faire travailler des personnes à distance et de se connecter virtuellement à leurs clients, ce site est mis à jour avec les dernières informations, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
+À mesure que les entreprises s’adaptent au besoin accru de travail à distance et de connexion virtuelle avec leurs clients, ce site est mis à jour avec les dernières instructions, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
 
 > [!TIP]
 > Vous n’avez pas Microsoft_Teams ? Obtenez 6 mois de Microsoft Teams dans Office gratuitement (lorsque vous vous inscrivez pour 1 an). Obtenez les technologies décrites dans cet article dans le cadre de l’offre. Pour plus d’informations, [voir Try 1 month free](https://aka.ms/SMBTeamsOffer).
@@ -37,7 +37,7 @@ ms.locfileid: "60158729"
 
 À la lumière de l’épidémie COVID-19 (Novel Coronavirus), de nombreux propriétaires d’entreprise se retrouvent avec un personnel de travail totalement distant. Voici ce que vous pouvez faire pour effectuer une transition vers un travail à distance sécurisé, sécurisé et productif.
 
-Pour plus d’informations, voir [Prendre en Microsoft Teams dans votre petite entreprise.](../../business-video/get-started-teams-small-business.md)
+Pour plus d’informations, voir [Prendre en Microsoft Teams dans votre petite entreprise.](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 Vous avez déjà un abonnement, mais vous devez vous y installer ? Voir [Microsoft 365 formation pour les petites entreprises.](../../business-video/index.yml)
 
@@ -49,7 +49,7 @@ Vous pouvez toujours vous connecter avec des employés, des clients, des clients
 
 Hébergez des réunions audio, vidéo et web avec des employés, des clients ou des partenaires via Microsoft Teams.
 
-Pour plus d’informations, voir [Réunions en ligne d’hôte](../../business-video/start-and-pin-chats.md) et [conversation avec les employés et les clients.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
+Pour plus d’informations, voir [Réunions en ligne d’hôte](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) et [conversation avec les employés et les clients.](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92)
 
 ### <a name="store-and-share-files"></a>Stocker et partager des fichiers
 
@@ -61,7 +61,7 @@ Pour plus d’informations, voir cette [vue d’ensemble](../../business-video/o
 
 Invitez les employés et les clients à une équipe afin que vous pouvez travailler directement avec eux pour coordonner et collaborer au même endroit.
 
-Pour plus d’informations, voir [Créer une équipe et](../../business-video/team-with-guests.md) activer [l’accès invité.](/MicrosoftTeams/guest-access)
+Pour plus d’informations, voir [Créer une équipe et](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) activer [l’accès invité.](/MicrosoftTeams/guest-access)
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>Gérer et sécuriser votre entreprise pour qu’elle s’exécute à distance
 

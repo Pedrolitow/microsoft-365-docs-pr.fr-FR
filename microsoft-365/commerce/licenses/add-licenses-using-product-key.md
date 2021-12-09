@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Découvrez comment ajouter des licences à votre abonnement ou l’étendre avec une clé de produit.
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194716"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370955"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Ajouter ou étendre des licences à un abonnement payé pour l’utilisation d’une clé de produit
 
@@ -42,15 +42,9 @@ Les licences prépayées vous sont délivrées sous la mesure d’un code alphan
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement auquel vous souhaitez ajouter des licences.
@@ -65,13 +59,7 @@ Les licences prépayées vous sont délivrées sous la mesure d’un code alphan
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
-
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9f1a00173228cf973ed0149d88c81b3d3f2c6fa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 179b3bf9ecd1ff7f7045f386d740eff4e83a12c9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283064"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373091"
 ---
 # <a name="get-domain-related-machines-api"></a>API Obtenir les ordinateurs liés au domaine
 
@@ -60,8 +60,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écr
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (pour plus d’informations, voir [Créer et gérer des rôles)](user-roles.md)
-> - La réponse inclut uniquement les appareils accessibles à l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils).](machine-groups.md)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (pour plus d’informations, voir [Créer et gérer des rôles](user-roles.md)
+> - La réponse inclut uniquement les appareils accessibles à l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

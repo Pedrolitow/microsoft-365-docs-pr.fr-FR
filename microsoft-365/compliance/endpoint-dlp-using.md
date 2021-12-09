@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111854"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372911"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -43,9 +43,20 @@ Ou
   > [!div class="mx-imgBorder"]
   > ![Paramètres DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
+
+|Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
+|---------|---------|---------|---------|
+|Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
+|Applications non autorisées     |Pris en charge         |Pris en charge         |         |
+|Applications Bluetooth non autorisées    |Pris en charge         |Non pris en charge         |         |
+|Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
+|Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
+|Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
+
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
 
-## <a name="get-registered"></a>S’inscrire
+#### <a name="get-registered"></a>S’inscrire
 
 Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Afficher, [inscrivez-vous à la prise en charge Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews)
 
@@ -66,19 +77,6 @@ Ces versions Windows la prise en charge de l’analyse et de la protection avanc
 
 > [!NOTE]
 > L'évaluation de la stratégie DLP se produit toujours dans le cloud, même si le contenu utilisateur n'est pas envoyé.
-
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
-
-|Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
-|---------|---------|---------|---------|
-|Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
-|Applications non autorisées     |Pris en charge         |Pris en charge         |         |
-|Applications Bluetooth non autorisées    |Pris en charge         |non pris en charge         |         |
-|Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
-|Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
-|Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
-
-
 
 ### <a name="file-path-exclusions"></a>Exclusions de chemin d’accès de fichier
 

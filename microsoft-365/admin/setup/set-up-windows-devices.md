@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configurer des Windows en cours d Windows 10 Professionnel pour Microsoft 365 Business Premium utilisateurs, ce qui permet de centraliser la gestion et les contrôles de sécurité.
-ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128651"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373055"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurer des Windows pour les utilisateurs Microsoft 365 Business Premium utilisateurs
 
@@ -77,7 +77,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
 
  **Connecter des utilisateurs à Azure AD :**
   
-1. Sur le PC Windows de l'utilisateur exécutant Windows 10 Professionnel, version 1703 (Creators Update) (voir [conditions préalables](../security-and-compliance/pre-requisites-for-data-protection.md)), cliquez sur le logo Windows, puis sur l'icône Paramètres.
+1. Sur le PC Windows de votre utilisateur, qui exécute Windows 10 Professionnel, version 1703 (Creators Update) (voir les conditions [préalables,](../security-and-compliance/pre-requisites-for-data-protection.md)cliquez sur le logo Windows, puis sur l’icône Paramètres).
   
    ![Dans la menu Démarrer, cliquez sur Windows Paramètres icône.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   

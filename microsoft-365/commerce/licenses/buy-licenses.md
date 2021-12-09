@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 09/16/2021
-ms.openlocfilehash: 10ec13b1b20d386c24390b2bd3172a49c5f7165d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 2341fdb66d680a0e8b61b7cffe0670f668b57267
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128711"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369731"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
@@ -62,12 +62,6 @@ Si vous avez supprimé des licences d’un abonnement, vous devez ensuite suppri
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
@@ -79,7 +73,7 @@ Si vous avez supprimé des licences d’un abonnement, vous devez ensuite suppri
 
 4. Pour acheter ou supprimer  des licences, sous Nouvelle quantité dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter cinq, entrez 105. Si vous souhaitez en supprimer cinq, entrez 95.
 
-5. Sélectionnez **Enregistrer**.
+5. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
 > Vous ne pouvez pas réduire le nombre de licences pour votre abonnement si toutes les licences sont actuellement attribuées à des utilisateurs. Pour réduire le nombre de licences, supprimez d’abord une ou plusieurs licences des [utilisateurs,](../../admin/manage/remove-licenses-from-users.md)puis supprimez les licences de l’abonnement.
@@ -112,7 +106,7 @@ Si vous avez acheté plus de licences pour votre abonnement, vous devez ensuite 
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous pouvez supprimer le compte de cet utilisateur. Pour en savoir plus, [consultez Supprimer un ancien employé.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

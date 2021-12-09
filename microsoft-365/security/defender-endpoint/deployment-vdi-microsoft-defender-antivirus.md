@@ -10,27 +10,27 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/08/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 46eab67f459e763a212178d768f9a411aaf7adb7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110210"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372623"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Outre les configurations matérielles ou locales standard, vous pouvez également utiliser Antivirus Microsoft Defender dans un environnement bureau à distance (RDS) ou vDI (Virtual Desktop Infrastructure).
 
-Pour [plus d’informations](/azure/virtual-desktop) sur la prise en charge des services Bureau à distance Microsoft VDI, voir la documentation Azure Virtual Desktop.
+Pour plus d’informations sur Bureau à distance Microsoft services et la prise en charge VDI, voir [la documentation Azure Virtual Desktop](/azure/virtual-desktop).
 
 Pour les machines virtuelles basées sur Azure, voir [Installer Endpoint Protection dans Microsoft Defender pour le cloud.](/azure/security-center/security-center-install-endpoint-protection)
 
@@ -107,6 +107,29 @@ Nous vous suggérons de commencer une fois par jour, mais vous devez essayer d�
 
 Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. Il n’est pas conseillé de définir une fréquence de moins de quatre heures, car cela augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
 
+Vous pouvez également configurer votre serveur ou ordinateur unique pour récupérer les mises à jour pour le compte des machines vm à intervalles réguliers et les placer dans le partage de fichiers pour utilisation.
+Cela est possible lorsque les appareils ont les autorisations de partage et NTFS pour l’accès en lecture au partage afin qu’ils peuvent récupérer les mises à jour.
+
+Pour cela :
+ 1. Créez un partage de fichiers SMB/CIFS. 
+ 
+ 2. Utilisez l’exemple suivant pour créer un partage de fichiers avec les autorisations de partage suivantes.
+
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
+
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
+   
+    > [!NOTE]
+    > Une autorisation NTFS est ajoutée pour les utilisateurs authentifiés **:Read:**. 
+
+    Pour cet exemple, le partage de fichiers est :
+
+    \\fileserver.fqdn\mdatp$\wdav-update
+
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Définir une tâche programmée pour exécuter le script PowerShell
 
 1. Sur l’ordinateur de gestion, ouvrez le menu Démarrer et tapez **Le Programmeur de tâches.** Ouvrez-le et **sélectionnez Créer une tâche...** sur le panneau latéral.
@@ -145,7 +168,7 @@ Si vous préférez tout faire manuellement, voici comment répliquer le comporte
 
 Les analyses programmées s’exécutent en plus de la protection et de [l’analyse en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-L’heure de début de l’analyse elle-même est toujours basée sur la stratégie d’analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne Antivirus Microsoft Defender démarrer une analyse sur chaque ordinateur dans une fenêtre de 4 heures à partir de la période définie pour l’analyse programmée.
+L’heure de début de l’analyse elle-même est toujours basée sur la stratégie d’analyse programmée (**ScheduleDay**, **ScheduleTime** et **ScheduleQuickScanTime**). La randomisation entraîne Antivirus Microsoft Defender démarrer une analyse sur chaque ordinateur dans une fenêtre de quatre heures à partir de l’heure définie pour l’analyse programmée.
 
 Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defender-antivirus.md) les autres options de configuration disponibles pour les analyses programmées.
 

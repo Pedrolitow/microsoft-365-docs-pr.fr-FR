@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56fff54805db76f7022747bdd911317aac0dd97c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188564"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369791"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
-Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Traitez votre travail de n’importe où Office sur votre téléphone ou tablette.
+Absent(s) de votre bureau ? Plus de batterie d’ordinateur portable ? Ne vous inquiétez pas ! Traitez votre travail de n’importe où Office sur votre téléphone ou tablette.
 
-**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
+**Pro conseil :** maintenez votre équilibre entre vie professionnelle et vie privée à l’aide de la notification de vos applications de travail sur vos appareils personnels.
 
-Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouveriez.
+Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouvez.
 
 Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
 
@@ -41,17 +41,17 @@ Téléchargez une infographie pour obtenir des conseils pour travailler n’impo
 
 **Vous envisagez de travailler régulièrement à domicile ?**
 
-Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous maintenir efficace et en déplacement. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Utilisez ce modèle pour analyser vos habitudes et la façon dont vous souhaitez travailler pour créer un plan qui fonctionne lorsque vous faites la transition vers un bureau à domicile. Collectez le matériel et les fournitures pour optimiser votre espace et vous assurer une efficacité et une utilisation efficace. [Télécharger le modèle](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installer Outlook et rester en contact
 
 Vous pouvez rester au fait des e-mails et des rendez-vous Outlook sur votre téléphone. Téléchargez l’application, lancez-la, connectez-vous et définissez votre compte.
 
-Obtenez plus de détails sur la façon [d’installer Outlook sur un téléphone.](install-apps-android.md)
+Obtenez plus de détails sur la façon [d’installer Outlook sur un téléphone.](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)
 
 ## <a name="save-your-files-to-the-cloud"></a>Enregistrer vos fichiers dans le nuage
 
-Stockez vos fichiers d’entreprise Microsoft Teams ou SharePoint. Ainsi, vous et les autres membres de votre entreprise pouvez y accéder même lorsque vous n’êtes pas au bureau.
+Stockez vos fichiers métier dans Microsoft Teams ou SharePoint. Ainsi, vous et les autres membres de votre entreprise pouvez y accéder même lorsque vous n’êtes pas au bureau.
 
 **Configurer les applications SharePoint et Microsoft Teams mobiles**
 
@@ -65,15 +65,15 @@ Vous pouvez stocker vos fichiers personnels dans OneDrive et les synchroniser à
 1. Ouvrez OneDrive et connectez-vous.
 1. Suivez les instructions pour terminer l’installation et commencer la synchronisation.
 
-Vous avez besoin d’aide ? Obtenez des conseils [sur l’endroit](store-files.md)où stocker des fichiers, comment utiliser l’application [mobile OneDrive](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) et comment synchroniser des fichiers et [des dossiers.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
+Vous avez besoin d’aide ? Obtenez des conseils [sur l’endroit](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)où stocker des fichiers, comment utiliser l’application [mobile OneDrive et](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) comment synchroniser des fichiers et des [dossiers.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>Ouvrir et modifier vos fichiers à partir de n’importe quel appareil
 
 ### <a name="work-on-your-phone-or-tablet"></a>Travailler sur votre téléphone ou tablette
 
-Installez les Office sur un téléphone ou une tablette et travaillez où que vous vous trouvez. Téléchargez les applications, puis lancez,connectez-vous et définissez votre compte.
+Installez les Office sur un téléphone ou une tablette et travaillez où que vous vous trouvez. Téléchargez les applications, lancez-les, connectez-vous et définissez votre compte.
 
-En savoir plus sur l’installation application Office sur : [Android](install-apps-android.md)  |  [iOS](install-apps-ios.md).
+En savoir plus sur l’installation application Office sur : [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)  |  [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f).
 
 Vous ne savez pas ce que vous pouvez faire sur votre téléphone ou tablette ? En savoir plus sur l’utilisation Office applications :
 
@@ -81,8 +81,8 @@ Vous ne savez pas ce que vous pouvez faire sur votre téléphone ou tablette ? E
 | :------------------- | :------------------- |
 | [application Office pour iOS](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)  | [application Office pour Android](https://support.microsoft.com/en-us/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)| 
 | [Utiliser Word sur un appareil mobile](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)|[Utiliser Word sur un appareil mobile](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)| 
-| [PowerPoint’aide iPhone’aide](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint pour Android Aide sur les tablettes](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
-| [PowerPoint pour iPad Aide](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint pour Android Aide sur les téléphones](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
+| [PowerPoint’aide iPhone’aide](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint pour Android’aide des tablettes](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
+| [PowerPoint pour iPad’aide](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[Aide PowerPoint pour Android téléphones mobiles](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
 
 ### <a name="work-in-a-browser"></a>Travailler dans un navigateur
 
@@ -102,7 +102,7 @@ Vous pouvez également créer et modifier des documents directement à partir de
 
 À partir de votre ordinateur portable :
 
-- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: pour la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
+- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: de la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
 
 À partir de votre téléphone :
 

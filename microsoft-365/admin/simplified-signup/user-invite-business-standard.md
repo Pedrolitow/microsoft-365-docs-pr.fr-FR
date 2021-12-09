@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Accepter l’invitation à rejoindre une Microsoft 365 Business Standard organisation
-ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176042"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372443"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Accepter une invitation par courrier électronique à un abonnement Microsoft 365 Business Standard client (utilisateur)
 
@@ -60,7 +60,7 @@ Suivez les étapes de l’abonnement Migrer des données vers mon [Microsoft 365
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>Je n’ai pas reçu d’e-mail de mise à niveau ?
 
@@ -68,11 +68,11 @@ Vérifiez votre dossier de courrier indésirable. Si ce n’est pas le cas, cont
 
 ### <a name="i-have-a-question-about-upgrading-my-account-who-can-i-talk-to"></a>J’ai une question sur la mise à niveau de mon compte, à qui puis-je parler ?
 
-Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à mettre à niveau Microsoft 365 abonnement. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../../business-video/get-help-support.md)
+Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à mettre à niveau Microsoft 365 abonnement. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../get-help-support.md)
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>Qu’advient-il de mes données et de mon compte lors de la mise à niveau ?
 
-Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous pourrez toujours vous inscrire à votre ancien compte de messagerie Gmail, Outlook, Yahoo ou autre comme vous l’avez fait auparavant. Vous devez maintenant déplacer vos fichiers de travail vers votre nouveau compte de travail. Découvrez comment le faire ici : Migrez des données [vers mon abonnement Microsoft 365 Business Standard.](migrate-data-business-standard.md)
+Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous pourrez toujours vous inscrire à votre ancien compte de messagerie Gmail, Outlook, Yahoo ou autre comme vous l’avez fait auparavant. Vous devez maintenant déplacer vos fichiers de travail vers votre nouveau compte de travail. Découvrez comment le faire ici : Migrez des données [vers mon abonnement Microsoft 365 Business Standard'](migrate-data-business-standard.md)
 
 ### <a name="how-can-i-copy-data-to-my-business-account"></a>Comment copier des données dans mon compte d’entreprise ?
 
@@ -81,7 +81,7 @@ Vos données resteront dans votre ancien compte, rien ne sera supprimé.  Vous p
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>Pourquoi mon administrateur gère-t-il désormais mes données ?
 
-Lorsque vous utilisez un compte Microsoft 365 Business mis à niveau, vos documents, vos e-mails et vos données que vous créez dans Microsoft Office (et dans d’autres applications dans Microsoft 365 Business Standard) appartiendront à l’administrateur technique de votre organisation. Par exemple, la personne qui vous a envoyé l’e-mail d’invitation ou le propriétaire de votre entreprise.
+Lorsque vous utilisez un compte Microsoft 365 Business mis à niveau, vos documents, e-mails et données que vous créez dans Microsoft Office (et dans d’autres applications dans Microsoft 365 Business Standard) appartiendront à l’administrateur technique de votre organisation. Par exemple, la personne qui vous a envoyé l’e-mail d’invitation ou le propriétaire de votre entreprise.
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>Comment commencer avec mon nouveau compte ?
 
@@ -95,7 +95,7 @@ Non, vous pouvez toujours vous connecter de la même manière qu’auparavant.
 
 Lorsque vous lancez Microsoft Outlook à l’aide de votre nouveau compte d’entreprise, votre nouvelle boîte aux lettres est automatiquement définie pour vous.
 
-1. Première étape : [configurer Outlook courrier électronique pour les entreprises.](../../business-video/setup-outlook.md)
+1. First follow: [Set up Outlook for business email]([Set up Outlook pour Microsoft 365 for business email](../setup/setup-outlook.md).
 2. Ensuite, suivez : [Créez et envoyez des e-mails dans Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>Comment quitter cette entreprise (et arrêter d’utiliser cette licence) ?

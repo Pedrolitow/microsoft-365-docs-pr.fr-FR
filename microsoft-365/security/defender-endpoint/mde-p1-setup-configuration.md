@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 03f9a8268ac3d1652840a9d99d3493358cf71ee4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128015"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370379"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
-> [!TIP]
-> Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Cet article explique comment configurer Defender pour Endpoint Plan 1. Que vous donnez de l’aide ou que vous le faisiez vous-même, vous pouvez utiliser cet article comme guide tout au long de votre déploiement.  
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les conditions de base requises pour Defender pou
 
 | Conditions requises | Description |
 |:---|:---|
-| Conditions d'octroi de licence | Defender for Endpoint Plan 1 <br/><br/>*Si vous avez Microsoft 365 E3 ou A3, vous pouvez rejoindre le programme d’aperçu.* |
+| Conditions d'octroi de licence | Defender pour Endpoint Plan 1 |
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Systèmes d’exploitation | Windows 10, version 1709 ou ultérieure <br/>macOS : 11.5 (Big Sur), 10.15.7 (Contrôle), ou 10.14.6 (Mojave) <br/>iOS <br/>Système d’exploitation Android  |
 | Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
@@ -233,7 +233,7 @@ Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou aut
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in. 
 
-2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme,** **sélectionnez Windows 10 et ultérieures,** et pour le type de **profil,** **sélectionnez Modèles.** 
 
@@ -266,7 +266,7 @@ Grâce à la protection du réseau, vous pouvez protéger votre organisation con
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in. 
 
-2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme,** **sélectionnez Windows 10 et ultérieures,** et pour le type de **profil,** **sélectionnez Modèles.** 
 
@@ -295,7 +295,7 @@ Grâce à la protection du réseau, vous pouvez protéger votre organisation con
 
 ### <a name="web-protection"></a>Protection Web
 
-Grâce à la protection web, vous pouvez protéger les appareils de votre organisation contre les menaces web et le contenu indésirable. Votre protection web inclut la [protection contre les menaces web](#configure-web-threat-protection) et le filtrage de contenu [web](#configure-web-content-filtering) (aperçu). Configurez les deux ensembles de fonctionnalités. Nous vous recommandons d’Microsoft Endpoint Manager pour configurer vos paramètres de protection web.
+Grâce à la protection web, vous pouvez protéger les appareils de votre organisation contre les menaces web et le contenu indésirable. Votre protection web inclut la [protection contre les menaces web](#configure-web-threat-protection) et le filtrage de contenu [web.](#configure-web-content-filtering) Configurez les deux ensembles de fonctionnalités. Nous vous recommandons d’Microsoft Endpoint Manager pour configurer vos paramètres de protection web.
 
 #### <a name="configure-web-threat-protection"></a>Configurer la protection contre les menaces web
 
@@ -309,7 +309,7 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection Web,** spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Setting | Recommandation |
+   | Paramètre | Recommandation |
    |:---|:---|
    | **Activer la protection du réseau** | Définir sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour les Version antérieure de Microsoft Edge** | Définir sur **Oui**. Permet de protéger les utilisateurs contre les tentatives de hameçonnage et les logiciels malveillants. |
@@ -328,9 +328,6 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 > Pour en savoir plus sur la protection contre les menaces web, voir Protéger votre organisation contre [les menaces web.](web-threat-protection.md)
 
 #### <a name="configure-web-content-filtering"></a>Configurer le filtrage de contenu web
-
-> [!NOTE]
-> Le filtrage de contenu Web est actuellement en prévisualisation.
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com/](https://security.microsoft.com/) ) and sign in.
 

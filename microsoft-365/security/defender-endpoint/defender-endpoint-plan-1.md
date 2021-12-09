@@ -7,28 +7,25 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/23/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48d0884c84f6c609b2924875bfea579dcac3fcc4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: bd0270ae5fdffe5335666fa1ae9c74143bff7658
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167513"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371879"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
 **S’applique à**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise conçue pour aider des organisations telles que la vôtre à prévenir, détecter, examiner et répondre aux menaces avancées. Nous sommes heureux d’annoncer que Defender pour Point de terminaison est désormais disponible dans deux plans : 
 
@@ -169,7 +166,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
-### <a name="reporting"></a>Reporting
+### <a name="reporting"></a>Rapports
 
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 

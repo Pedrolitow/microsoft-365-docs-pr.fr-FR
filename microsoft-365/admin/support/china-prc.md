@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 118e836fbd55f9b69acfc892cf16edb1b19d2eff
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 080e48d62d7ef6417da92703c3fd3266337771e3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554431"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371063"
 ---
 # <a name="contact-support-for-china"></a>Contacter le support technique pour la Chine
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 800 988 0365
@@ -29,13 +29,13 @@ ms.locfileid: "60554431"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Chinois (Mandarin) : Mon-Fri 9h00-18h00
+Chinois (Mandarin) : Mon-Fri 9 h à 18 h
 
 Anglais : Mon-Fri 9h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Chinois (Mandarin) : Mon-Fri 9h00-18h00
+Chinois (Mandarin) : Mon-Fri 9 h à 18 h
 
 Anglais : 24h/24, 7j/7
 

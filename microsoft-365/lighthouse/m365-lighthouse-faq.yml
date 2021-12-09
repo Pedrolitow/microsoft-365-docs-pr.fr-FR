@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, obtenez des réponses aux questions fréquemment posées sur les Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 834bab4a146b72fc4e4b6598ee54758ad5a55095
-  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+  ms.openlocfilehash: 948b4584f2f10cdfd3f709cfe007d1367ba110a9
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/20/2021
-  ms.locfileid: "61127931"
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61373727"
 title: Microsoft 365 Lighthouse questions fréquemment posées (FAQ)
 summary: >
   > [!NOTE]
@@ -63,7 +63,7 @@ sections:
       Le chargement des données client au sein de l’espace d’attente peut prendre jusqu’à 48 heures. Si cela fait plus de 48 heures que vous avez terminé l’intégration, contactez notre équipe de support technique pour obtenir de l’aide. Vous devez les faire savoir lorsque vous avez terminé l’intégration et fournir des captures d’écran et des journaux pertinents. Pour plus d’informations, voir [Obtenir de l’aide et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Pourquoi puis-je voir des données pour certains locataires de clients, mais pas pour d’autres ?
     answer: >
-      Pour que les données client s’affichent dans l’Établissement, les partenaires doivent établir des privilèges d’administration délégués (DAP) avec les clients via l’Partner Center. Pour plus d’informations, voir [Demander une relation de revendeur avec un client dans l’Partner Center](/partner-center/request-a-relationship-with-a-customer). Les clients doivent également avoir au moins un abonnement Microsoft 365 Business Premium ou Microsoft 365 E3 et moins de 500 utilisateurs sous licence dans leur client. Pour plus d’informations, voir [La Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      Pour que les données client s’affichent dans l’Établissement, les partenaires doivent établir des privilèges d’administration délégués (DAP) avec les clients via l’Partner Center. Pour plus d’informations, voir [Demander une relation de revendeur avec un client dans l’Partner Center](/partner-center/request-a-relationship-with-a-customer). Les clients doivent également avoir au moins un abonnement Microsoft 365 Business Premium ou Microsoft 365 E3 et moins de 500 utilisateurs sous licence dans leur client. Pour plus d’informations, voir [La](m365-lighthouse-requirements.md) Microsoft 365 Lighthouse et [la page Microsoft 365 Lighthouse client.](m365-lighthouse-tenants-page-overview.md)
   - question: Que se passe-t-il si je ne souhaite pas voir certains locataires dans Microsoft 365 Lighthouse ?
     answer: >
       Si vous ne souhaitez pas voir certains clients et leurs données dans le Groupement, vous pouvez désactiver ces clients. Pour désactiver un client, suivez les étapes suivantes :
@@ -91,4 +91,12 @@ sections:
     answer: >
       Dans Le Phare, sélectionnez **le ?** en haut du portail pour ouvrir le volet **d’aide.** À partir de là, vous pouvez accéder à des articles en libre-assistance ou contacter le support technique. Pour plus d’informations sur les options d’aide et de support, voir Obtenir de l’aide [et du support pour Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Où puis-je envoyer des commentaires et des idées ?
-    answer: "Vos commentaires sont importants pour nous . Vous pouvez envoyer vos commentaires de deux manières différentes :\n\n- Sélectionnez l’icône Commentaires dans le coin supérieur droit de l’Angle. \n- Répondez à la fenêtre pop-up occasionnelle (pas plus d’une fois par mois) dans le Navigateur qui vous demande de nous faire part de vos commentaires."
+    answer: >-
+      Vos commentaires sont importants pour nous . Il existe plusieurs façons d’envoyer des commentaires :
+
+
+      - Go to the [Microsoft 365 Lighthouse feedback page](https://aka.ms/m365lighthouseuservoice). Vous pouvez démarrer des conversations sur les fonctionnalités de Windows 365, publier des questions pour d’autres partenaires ou employés de Microsoft, fournir des commentaires et des idées de fonctionnalités, et bien plus encore.
+
+      - Sélectionnez l’icône Commentaires dans le coin supérieur droit de l’Angle.
+
+      - Répondez à la fenêtre pop-up occasionnelle (pas plus d’une fois par mois) dans le Navigateur qui vous demande de nous faire part de vos commentaires.

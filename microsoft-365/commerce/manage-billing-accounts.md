@@ -21,16 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les comptes de facturation et leur utilisation pour gérer les paramètres de compte, les factures, les modes de paiement et les achats.
 ms.date: 03/17/2021
-ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5107ca7bd545eb202999d96266e6ab7688db767c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151325"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370931"
 ---
 # <a name="understand-billing-accounts"></a>Comprendre les comptes de facturation
 
-Un compte de facturation est créé lorsque vous vous inscrivez pour essayer ou acheter des produits Microsoft. Vous utilisez votre compte de facturation pour gérer vos paramètres de compte, factures, modes de paiement et achats. Vous pouvez avoir accès à plusieurs comptes de facturation. Par exemple, vous vous êtes inscrit à Microsoft 365 directement, ou vous avez accès au contrat de Accord Entreprise de votre organisation, au contrat de services Microsoft Product & ou au contrat client Microsoft. Pour chacun de ces scénarios, vous avez un compte de facturation distinct.
+Un compte de facturation est créé lorsque vous vous inscrivez pour essayer ou acheter des produits Microsoft. Vous utilisez votre compte de facturation pour gérer vos paramètres de compte, factures, modes de paiement et achats. Vous pouvez avoir accès à plusieurs comptes de facturation. Par exemple, vous vous êtes inscrit à Microsoft 365 directement, ou vous avez accès au contrat de Accord Entreprise, au contrat de service Microsoft Product & ou au contrat client Microsoft de votre organisation. Pour chacun de ces scénarios, vous avez un compte de facturation distinct.
 
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> prend actuellement en charge le type de compte de facturation suivant :
 
@@ -42,9 +42,9 @@ La page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_bla
 
 ## <a name="understand-billing-account-details"></a>Comprendre les détails du compte de facturation
 
-La partie supérieure de la page **de détails** des comptes de facturation est votre profil de compte et contient des informations juridiques et fiscales sur votre organisation. Vous pouvez mettre à jour votre profil pour modifier votre adresse juridique et votre numéro de téléphone. Ce compte est l’entité juridique qui paie pour les produits que vous achetez.
+La partie supérieure de la page **de détails des comptes** de facturation est votre profil de compte et contient des informations juridiques et fiscales sur votre organisation. Vous pouvez mettre à jour votre profil pour modifier votre adresse juridique et votre numéro de téléphone. Ce compte est l’entité juridique qui paie pour les produits que vous achetez.
 
-Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails** des comptes de facturation.
+Le tableau suivant répertorie les termes importants que vous voyez dans la page de **détails des comptes** de facturation.
 
 | Nom du champ | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,12 +56,12 @@ Le tableau suivant répertorie les termes importants que vous voyez dans la page
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, telles que la personne qui reçoit la facture, la manière dont la facture est livrée, les conditions de paiement et un numéro de bon de réception. Pour distribuer la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [comprenez les profils de facturation.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Si vous devez modifier le nom ou l’adresse «  Vendu à [](../business-video/get-help-support.md) » mais que vous ne voyez pas de lien Modifier, vous devez contacter le support technique pour le modifier.  Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
+> Si vous devez  modifier le nom ou l’adresse de  vente, mais que vous ne voyez pas de lien Modifier, vous devez contacter le [support](../admin/get-help-support.md) technique pour le modifier. Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
 >
 > - Document émis par le gouvernement ou lettre d’inscription
-> - Imprimer à partir du Registre de la société locale
+> - Imprimer à partir du Registre de l’entreprise locale
 >
-> Le support peut vous aider à modifier le nom et l’adresse lorsque seul le nom du client change, mais que l’entité reste la même. La documentation fournie doit clairement montrer que seul le nom de l’entité a changé. Si la modification est le résultat d’une transaction, y compris la vente d’entreprise, un changement de contrôle ou une scission ou une « rotation » d’une filiale du client, contactez votre vendeur Microsoft.
+> Le support peut vous aider à modifier le nom et l’adresse lorsque seul le nom du client change, mais que l’entité reste la même. La documentation fournie doit clairement montrer que seul le nom de l’entité a changé. Si la modification est le résultat d’une transaction, y compris la vente de l’entreprise, un changement de contrôle ou une scission ou une « rotation » d’une filiale du client, contactez votre vendeur Microsoft.
 
 ## <a name="shipping-addresses"></a>Adresses d’expédition
 
@@ -69,7 +69,7 @@ Cette section répertorie les adresses d’expédition associées à votre compt
 
 ## <a name="understand-access-to-billing-accounts"></a>Comprendre l’accès aux comptes de facturation
 
-Vous pouvez fournir à d’autres utilisateurs l’accès au compte de facturation dans le Centre d'administration Microsoft 365 par le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">biais</a> de rôles et d’autorisations. Seul un propriétaire de compte de facturation peut accorder l’accès à un compte de facturation. Vous pouvez attribuer l’un des rôles suivants aux utilisateurs :
+Vous pouvez fournir à d’autres utilisateurs l’accès au compte de facturation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> par le biais de rôles et d’autorisations. Seul un propriétaire de compte de facturation peut accorder l’accès à un compte de facturation. Vous pouvez attribuer l’un des rôles suivants aux utilisateurs :
 
 - **Propriétaire du compte de facturation** &mdash; Peut attribuer des autorisations, modifier des comptes, signer des contrats et afficher des comptes.
 - **Collaborateur de compte de facturation** &mdash; Peut modifier des comptes, signer des contrats et afficher des comptes.

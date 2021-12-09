@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202056"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371279"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -46,13 +46,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, allez à la page **Comptes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**de facturation.**</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page  > **Comptes de facturation.**
+1. Dans le Centre d’administration, allez à la page **Comptes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**de facturation.**</a>
 
 ::: moniker-end
 
@@ -74,12 +68,6 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration,</a>allez à la page **Méthodes** > **de paiement de facturation.**
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration,</a>allez à la page **Méthodes** > **de paiement de facturation.**
@@ -90,19 +78,13 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page **Détails du mode de paiement,** sélectionnez **Modifier.**
 
-4. Mettez à jour votre adresse de facturation, puis sélectionnez **Enregistrer** \> **terminé.**
+4. Mettez à jour votre adresse de facturation, puis **sélectionnez Enregistrer** \> **terminé.**
 
 ## <a name="change-your-service-usage-address"></a>Modifier votre adresse d'utilisation du service
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -124,7 +106,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 Par défaut, les notifications de facturation de votre organisation sont envoyées à l’adresse de messagerie Microsoft et à l’adresse de messagerie de remplacement de chaque administrateur global et de facturation de votre organisation. Les administrateurs peuvent modifier leur adresse de courrier de secours en mettant à jour leurs informations de profil.
   
-1. Connectez-vous Microsoft 365 avec votre compte scolaire ou scolaire en tant qu’administrateur global. Découvrez [comment vous y connectez.](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+1. Connectez-vous à Microsoft 365 avec votre compte professionnel ou scolaire en tant qu'administrateur général. [Découvrez comment vous connecter](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
   
@@ -141,12 +123,6 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
 
 ::: moniker-end
 

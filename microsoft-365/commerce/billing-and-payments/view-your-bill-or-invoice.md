@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128195"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371255"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -38,7 +38,7 @@ Cet article s’adresse aux personnes disposant d’un abonnement Microsoft 365 
   
 Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   
-**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../business-video/get-help-support.md).
+**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../admin/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -57,12 +57,6 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures & paiements</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Factures & paiements</a>.
 
 ::: moniker-end
 

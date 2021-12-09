@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f685e1aaa7b88cd2a86b2c4d7af4c9015edc225
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196632"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372167"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -36,7 +36,7 @@ ms.locfileid: "60196632"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365, les organisations avec des boîtes aux lettres dans Exchange Online ou une organisation Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, EOP comprend des fonctionnalités permettant de protéger votre organisation contre les faux expéditeurs (falsifiés).
 
@@ -168,7 +168,7 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
   - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements, comme décrit dans [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md) et [Gérer les listes rouge/verte du client](tenant-allow-block-list.md).
 
-  - Créez un ticket de support auprès de Microsoft 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes. Pour plus d’informations, voir [Contacter le support concernant les produits pour les entreprises – Aide de l’administrateur](../../business-video/get-help-support.md).
+  - Créez un ticket de support auprès de Microsoft 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes. Pour plus d’informations, voir [Contacter le support concernant les produits pour les entreprises – Aide de l’administrateur](../../admin/get-help-support.md).
 
 En cas d’échec de l’opération, vous pouvez signaler le message à Microsoft comme étant un faux positif. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 

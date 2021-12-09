@@ -18,12 +18,12 @@ ms.custom:
 description: L’administrateur peut apprendre à configurer la prise en charge du courrier entrant anonyme à partir de sources IPv6 Exchange Online et Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ba52efb6ad18bc0515084b3aee4a8bbdd6c7312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203866"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373655"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge du courrier entrant anonyme sur IPv6 dans Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "60203866"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online prendre en charge le courrier entrant anonyme sur IPv6. Le serveur de messagerie IPv6 source doit répondre aux deux exigences suivantes :
 
@@ -40,7 +40,7 @@ Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et des 
 
 - L'expéditeur doit répondre aux exigences de l'étape de vérification SPF (définie dans le fichier [RFC 7208](https://tools.ietf.org/html/rfc7208)) ou de l'étape de [vérification DKIM](http://dkim.org/) (définie dans le fichier [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Avant que votre organisation puisse recevoir des messages entrants anonymes sur IPv6, un administrateur doit contacter le support Microsoft et le demander. Pour obtenir des instructions sur l’ouverture d’une demande de support, voir Contacter le support technique pour les [produits d’entreprise - Aide de l’administrateur.](../../business-video/get-help-support.md)
+Avant que votre organisation puisse recevoir des messages entrants anonymes sur IPv6, un administrateur doit contacter le support Microsoft et le demander. Pour obtenir des instructions sur l’ouverture d’une demande de support, voir Contacter le support technique pour les [produits d’entreprise - Aide de l’administrateur.](../../admin/get-help-support.md)
 
 Une fois que la prise en charge des messages IPv6 entrants anonymes est activée dans votre organisation, le message passe par le filtrage des messages normal fourni par le service.
 
@@ -58,6 +58,6 @@ Une fois que la prise en charge des messages IPv6 entrants anonymes est activée
 
   > Service 550 5.2.1 indisponible, [contoso.com] n’accepte pas le courrier électronique sur IPv6.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Prise en charge de la validation des messages signés DKIM](support-for-validation-of-dkim-signed-messages.md)

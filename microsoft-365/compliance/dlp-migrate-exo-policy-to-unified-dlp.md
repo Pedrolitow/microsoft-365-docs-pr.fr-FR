@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment planifier et migrer vos stratégies Exchange protection contre la perte de données en ligne vers Microsoft 365 DLP.
-ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 744ba3edbee1c6b84df9b8b5316c7df7e734cd6d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201876"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374063"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrer des stratégies de protection contre la perte de données Exchange Online vers le Centre de conformité
 
@@ -32,10 +32,10 @@ Exchange Online stratégies de protection contre la perte de données [(DLP)](/e
 L’Assistant Migration fonctionne en lisant la configuration de vos stratégies DLP dans Exchange puis en créant des stratégies en double dans le Centre de conformité. Par défaut, l’Assistant crée les nouvelles versions des stratégies en mode **Test,** afin que vous pouvez voir l’impact qu’elles auraient dans votre environnement sans appliquer aucune des actions. Une fois que vous êtes prêt à passer entièrement aux versions du Centre de conformité, **_vous devez_**:
 
 1. Désactivez ou supprimez la stratégie source dans le Exchange Admin Center (EAC).
-1. Modifiez la version du centre de conformité de la stratégie et modifiez son état de **Test** à **Appliquer.** 
+1. Modifiez la version du Centre de conformité de la stratégie et modifiez son état de **Test** à **Appliquer.** 
 
 > [!WARNING]
-> Si vous ne supprimez pas ou ne désactivez pas la stratégie  source dans le CENTRE de conformité avant de définir la version du Centre de conformité pour appliquer les deux ensembles de stratégies, vous tenterez d’appliquer des actions et vous recevrez des événements en double. **_Il s’agit d’une configuration non pris en défaut._**
+> Si vous ne supprimez pas ou ne désactivez pas la stratégie  source dans le CENTRE de conformité avant de définir la version du Centre de conformité pour appliquer les deux ensembles de stratégies, vous tenterez d’appliquer des actions et vous recevrez des événements en double. **_Il s’agit d’une configuration non pris en place._**
 
 
 L’Assistant Migration migre uniquement les stratégies EXO et les règles de flux de messagerie associées. Les règles Exchange de flux de messagerie ne sont pas migrées.
@@ -103,10 +103,10 @@ Une fois que vous avez évalué toutes vos stratégies DLP Exchange et du centre
 7. Si vous le souhaitez, vous pouvez créer des stratégies supplémentaires basées sur les stratégies Exchange DLP pour d’autres emplacements DLP unifiés. Cela entraîne la génération d’une nouvelle stratégie DLP unifiée pour la stratégie Exchange migrée et d’une nouvelle stratégie DLP unifiée pour tous les emplacements supplémentaires que vous sélectionnez ici.
 
 > [!IMPORTANT]
-> Toutes les conditions et actions de stratégie DLP Exchange qui ne sont pas prises en charge par d’autres emplacements DLP, tels que périphériques, SharePoint, OneDrive, sur site, MCAS ou les messages de conversation et de canal Teams seront supprimés de la stratégie supplémentaire. En outre, des travaux préalables doivent être effectués pour les autres emplacements. Voir :
+> Toutes les conditions et actions de stratégie DLP Exchange qui ne sont pas prises en charge par d’autres emplacements DLP, tels que périphériques, SharePoint, OneDrive, locaux, MCAS ou les messages de conversation et de canal Teams seront supprimés de la stratégie supplémentaire. En outre, des travaux préalables doivent être effectués pour les autres emplacements. Voir :
 >- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 >- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
->- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+>- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 >- [En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [Prise en main du scanneur local de protection contre la perte de données(préversion)](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
 >- [Utiliser le scanner local de prévention des pertes de données Microsoft 365 ](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
@@ -116,6 +116,17 @@ Une fois que vous avez évalué toutes vos stratégies DLP Exchange et du centre
 9. Examinez le rapport de migration. Prêtez attention aux défaillances impliquant Exchange règles de flux de messagerie. Vous pouvez les résoudre et migrer à partir de là les stratégies associées.
 
 Les stratégies migrées apparaissent désormais dans la liste des stratégies DLP dans la console DLP du centre de conformité. 
+
+## <a name="common-errors-and-mitigation"></a>Erreurs courantes et atténuation
+|Message d’erreur  |Reason  | Atténuation/Étapes recommandées|
+|---------|---------|---------|
+|Une stratégie de conformité avec un nom `<Name of the policy>` existe déjà dans les scénarios. `Dlp`    |Il est probable que cette migration de stratégie a été effectuée précédemment, puis réattribuée dans la même session. |Actualisez la session pour mettre à jour la liste des stratégies disponibles pour la migration. Toutes les stratégies précédemment migrées doivent être à `Already migrated` l’état.|
+|Une stratégie de conformité avec un nom `<Name of the policy>` existe déjà dans les scénarios. `Hold`     |Une stratégie de rétention du même nom existe dans le même client.       |- Renommer la stratégie DLP dans le EAC sous un autre nom. </br> - Réessayez la migration pour la stratégie impactée. |
+|`DLP-group@contoso.com` ne peut pas être utilisé comme valeur pour la condition Shared By, car il s’agit d’un groupe de distribution ou d’un groupe de sécurité à messagerie. Utilisez le prédicat Partagé par un membre pour détecter les activités des membres de certains groupes.     |Les règles de transport permettent d’utiliser des groupes dans la condition, mais `sender is` la DLP unifiée ne l’autorise pas.         | Mettez à jour la règle de transport pour supprimer toutes les adresses de messagerie de groupe de la condition et ajoutez le groupe `sender is` à la condition si `sender is a member of` nécessaire. Nouvelle tentative de migration pour la stratégie impactée|
+|Le destinataire n’a pas pu `DLP-group@contoso.com` être trouvé. Si vous débutez, réessayez l’opération après un certain temps. Si vous avez supprimé ou expiré, réinitialisez-le avec des valeurs valides et réessayez.     |Il est probable que l’adresse de groupe utilisée dans `sender is a member of` ou la condition a expiré ou `recipient is a member of` n’est pas valide.         | - Supprimez/remplacez toutes les adresses de messagerie de groupe non valides dans la règle de transport Exchange centre d’administration. </br> - Réessayez la migration pour la stratégie impactée.|
+|La valeur spécifiée dans `FromMemberOf` le prédicat doit être un groupe de sécurité à messagerie.     |Les règles de transport permettent d’utiliser des utilisateurs individuels dans la condition, mais `sender is a member of` la DLP unifiée ne l’autorise pas.         | - Mettez à jour la règle de transport pour supprimer toutes les adresses de messagerie des utilisateurs individuels de la condition et ajoutez les utilisateurs `sender is a member of` à la condition si `sender is` nécessaire. </br> - Réessayez la migration pour la stratégie impactée.|
+|La valeur spécifiée dans `SentToMemberOf` le prédicat doit être un groupe de sécurité à messagerie.    |Les règles de transport permettent aux utilisateurs individuels d’être utilisés dans la condition, mais `recipient is a member of` la DLP unifiée ne l’autorise pas.         | - Mettez à jour la règle de transport pour supprimer toutes les adresses de messagerie des utilisateurs individuels de la condition et ajoutez les utilisateurs `recipient is a member of` à la condition si `recipient is` nécessaire. </br> - Réessayez la migration pour la stratégie impactée.|
+|L’utilisation `<Name of condition>` du paramètre est prise en charge uniquement pour Exchange. Supprimez ce paramètre ou n’allumez que Exchange emplacement.         | Il est probable qu’une autre stratégie du même nom existe dans le Centre de conformité avec d’autres emplacements tels que SPO/ODB/Teams pour lesquels la condition mentionnée n’est pas prise en charge. | Renommez la stratégie DLP dans Exchange centre d’administration et réessayez la migration.|
 
 ## <a name="testing-and-validation---prateek-and-aakash-to-provide-a-list-of-supported-predicates-and-known-issues-before-publishing--"></a>Test et validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 

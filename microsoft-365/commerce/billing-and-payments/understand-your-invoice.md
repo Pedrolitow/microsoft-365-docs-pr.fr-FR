@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: f7f61baea5e965da2a6edf3d66075f2eaa12a95f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756201"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371267"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -145,11 +145,11 @@ Les instructions de paiement dépendent de votre mode de paiement et sont dispon
 
 Le paiement anticipé Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles
 
-## <a name="need-help-contact-support"></a>Vous avez besoin d’aide ? Contacter le support technique
+## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
 Si vous avez des questions ou si vous avez besoin d’aide relativement à vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créer une demande de support avec support Azure</a>.
 
-Si vous avez des questions ou si vous avez besoin d’aide relativement à votre facture dans le centre d’administration Microsoft 365, [contacter le support technique pour les produits professionnels](../../business-video/get-help-support.md).
+Si vous avez des questions ou si vous avez besoin d’aide relativement à votre facture dans le centre d’administration Microsoft 365, [contacter le support technique pour les produits professionnels](../../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenu associé
 

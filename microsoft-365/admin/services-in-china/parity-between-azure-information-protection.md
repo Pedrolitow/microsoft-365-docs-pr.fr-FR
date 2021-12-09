@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 92c9460d9a2be4e09021073c455dd5287cba222b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320802"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372683"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour Office 365 géré par 21Vianet
 
@@ -37,9 +37,9 @@ Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales
 
 La liste suivante inclut les lacunes existantes entre AIP pour Office 365 géré par 21Vianet et nos offres commerciales depuis janvier 2021 :
 
-- La gestion des droits de l’information (IRM) est prise en charge uniquement pour Applications Microsoft 365 pour les grandes entreprises (build 11731.10000 ou supérieure). Office 2010, Office 2013 et les autres versions Office 2016 ne sont pas pris en charge.
+- services AD RMS (Active Directory Rights Management Services) chiffrement (AD RMS) est pris en charge uniquement dans Applications Microsoft 365 pour les grandes entreprises (build 11731.10000 ou ultérieure). Office Professionnel Plus ne prend pas en charge AD RMS.
 
-- La migration de services AD RMS (Active Directory Rights Management Services) (AD RMS) vers AIP n’est actuellement pas disponible.
+- La migration d’AD RMS vers AIP n’est actuellement pas disponible.
   
 - Le partage de messages électroniques protégés avec des utilisateurs dans le cloud commercial est pris en charge.
   
@@ -88,10 +88,10 @@ Le **principal Protection des données Microsoft** service de synchronisation n�
 
 1. Si le module Azure Az n’est pas installé, installez-le ou utilisez une ressource dans laquelle le module Azure Az est préinstallé, comme [Azure Cloud Shell.](/azure/cloud-shell/overview) Pour plus d’informations, voir [Installer le module Azure Az PowerShell.](/powershell/azure/install-az-ps)
 
-1.  Connecter service à l’aide de la cmdlet [Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de `azurechinacloud` l’environnement :
+1.    Connecter service à l’aide de la cmdlet [Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de `azurechinacloud` l’environnement :
 
     ```powershell
-    Connect-azacount -environmentname azurechinacloud
+    Connect-azaccount -environmentname azurechinacloud
     ```
 
 1. Créez le principal **Protection des données Microsoft** service de synchronisation manuellement à l’aide de l’cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) et de l’ID d’application `870c4f2e-85b6-4d43-bdda-6ed9a579b725` pour Protection des données Microsoft service de synchronisation :

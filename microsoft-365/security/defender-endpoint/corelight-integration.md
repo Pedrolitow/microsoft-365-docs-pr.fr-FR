@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320838"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372515"
 ---
-# <a name="enable-corelight-data-integration"></a>Activer l’intégration des données Corelight
+# <a name="enable-corelight-data-integration"></a>Permettre l'intégration des données Corelight
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -66,7 +66,7 @@ Pour activer l’intégration de Corelight, vous devez suivre les étapes suivan
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Étape 3 : Configurer votre appliance Corelight pour envoyer des données à Microsoft 365 Defender
 
-**S’applique** à : Corelight Sensor software v24.2 and later
+**S’applique** à : Corelight Sensor software v23.2 and later
 
 > [!NOTE]
 > Pour activer une version précédente qui prend en charge l’envoi de données, vous devez d’abord exécuter `corelight-client configuration update --enable.adfiot 1` :

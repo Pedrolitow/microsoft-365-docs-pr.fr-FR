@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Ajoutez le stockage de fichiers dans Microsoft 365 abonnement. Avec un stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 7046d8a78ebbf79fa25018c80b3c4ad0c5e1f166
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: 027d4d92296b4dcc7d4867af101af00c80a0c0c1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262750"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370115"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Ajouter davantage SharePoint stockage à votre abonnement
 Si vous commencez à être à court de stockage pour vos sites SharePoint, vous pouvez ajouter du stockage à votre abonnement si votre plan est éligible. Si vous ne voyez  pas le Stockage de fichiers supplémentaire Office 365 dans la liste des modules add-on disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, voir [Mon plan est-il éligible ?](#is-my-plan-eligible-for-office-365-extra-file-storage)
@@ -70,14 +70,14 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Augmenter ou diminuer votre espace de stockage supplémentaire
 
-Si vous avez déjà acheté du  stockage de fichiers supplémentaire via le module Stockage de fichiers supplémentaire Office 365, vous pouvez suivre ces étapes pour augmenter ou réduire l’espace de stockage supplémentaire pour votre abonnement. Vous pouvez réduire le stockage jusqu’à 1 gigaoctet. Pour supprimer tout l’espace de stockage supplémentaire, [contactez le support technique.](../business-video/get-help-support.md)
+Si vous avez déjà acheté du  stockage de fichiers supplémentaire via le module Stockage de fichiers supplémentaire Office 365, vous pouvez suivre ces étapes pour augmenter ou réduire l’espace de stockage supplémentaire pour votre abonnement. Vous pouvez réduire le stockage jusqu’à 1 gigaoctet. Pour supprimer tout l’espace de stockage supplémentaire, [contactez le support technique.](../admin/get-help-support.md)
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement qui contient **Stockage de fichiers supplémentaire Office 365** module.
 3. Dans la page détails du produit, dans la section **Modules,** sélectionnez **Gérer les modules.**
 4. In the **Manage add-ons** pane, from the **Add-on** list, choose **Stockage de fichiers supplémentaire Office 365**.
 5. Dans la **zone de texte** Quantité, entrez le nombre de GB d’espace de stockage que vous souhaitez pour l’abonnement.
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Mon plan est-il éligible au stockage de fichiers supplémentaire Office 365 ?
 

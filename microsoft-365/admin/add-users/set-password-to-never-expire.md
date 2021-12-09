@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
-ms.openlocfilehash: 480ab751b9ccc97f0a4fcd51d3f7a698790cf675
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff2fa9b6dd4e63a1dcdee8280dfdaddc70388ae8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157205"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370235"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
@@ -36,11 +36,11 @@ Cet article explique comment définir un mot de passe pour qu’un utilisateur i
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] ([Vue d’ensemble du Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md).
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
-Un administrateur global d’un service cloud Microsoft peut utiliser la Azure Active Directory [PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) pour définir les mots de passe de ne pas expirer pour des utilisateurs spécifiques. Vous pouvez également utiliser les cmdlets [AzureAD](/powershell/module/Azuread) pour supprimer la configuration n’expire jamais ou pour voir les mots de passe utilisateur qui ne doivent jamais expirer.
+Un administrateur global d’un service cloud Microsoft peut utiliser la Azure Active Directory [PowerShell pour Graph](/powershell/azure/active-directory/install-adv2) pour définir les mots de passe de ne pas expirer pour des utilisateurs spécifiques. Vous pouvez également utiliser des cmdlets [AzureAD](/powershell/module/Azuread) pour supprimer la configuration qui n’expire jamais ou pour voir les mots de passe utilisateur qui ne doivent jamais expirer.
 
 Ce guide s’applique à d’autres fournisseurs, tels que Intune et Microsoft 365, qui s’appuient également sur Azure AD pour les services d’identité et d’annuaire. L’expiration du mot de passe est la seule partie de la stratégie qui peut être modifiée.
 
@@ -83,7 +83,7 @@ Exécutez une des commandes suivantes :
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le nom **ReportPasswordNeverExpires.csv**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le **nomReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -113,7 +113,7 @@ Run one of the following commands:
 
 Exécutez une des commandes suivantes :
 
-- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez la cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
+- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez l’cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
@@ -129,4 +129,4 @@ Exécutez une des commandes suivantes :
 
 [Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
 [Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
-[Définir la stratégie d’expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)
+[Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)

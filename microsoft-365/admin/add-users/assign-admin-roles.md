@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils peuvent effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd38bb9ed378e6b3ffc20a79ca71eb2943599dcc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128411"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370619"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
@@ -49,7 +49,7 @@ Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne  leur attribuez pas de
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 1. Lorsque vous vous inscrivez à Microsoft 365 Business, vous devenez automatiquement un administrateur global. Pour vous aider à gérer l’entreprise, vous pouvez également faire d’autres administrateurs de personnes. 
-1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs**</a>.
 1. Choisissez l’utilisateur que vous souhaitez rendre administrateur, puis sélectionnez **Gérer les rôles.**
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
@@ -75,12 +75,6 @@ Vous pouvez affecter des utilisateurs à un rôle de 2 manières différentes :
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, allez à la page  > [Utilisateurs actifs.](https://go.microsoft.com/fwlink/p/?linkid=834822)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 

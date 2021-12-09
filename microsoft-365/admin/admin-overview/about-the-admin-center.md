@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Connectez-vous avec des autorisations d’administrateur au Centre d’administration Microsoft 365 pour configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements.
-ms.openlocfilehash: 7b281934cd593c4c389d191c73ddcaea593c72e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 07881fd0307653e0633ed6e5ea1e38c3de8f58f9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154111"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370211"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -56,7 +56,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
-Voici les fonctionnalités et les paramètres que vous trouverez dans la navigation de gauche du centre d’administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur](../../business-video/admin-center-overview.md).
+Les fonctionnalités et paramètres suivants sont disponibles dans la barre de navigation gauche du centre d'administration. En savoir plus sur les tâches d’administration dans [aide de l’administrateur]([Vue d’ensemble de la Centre d'administration Microsoft 365](admin-center-overview.md).
 
 <br>
 

@@ -7,27 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c950730586363312999488ea15c82293388058fa
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b6fcb95a0a0f784a73de823c55d0a830a7faf1a9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302469"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370691"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Gérer Microsoft Defender pour Endpoint Plan 1
 
 **S’applique à**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
 
 Lorsque vous utilisez Defender pour endpoint Plan 1 dans votre organisation, votre équipe de sécurité peut prendre certaines mesures pour maintenir votre solution de sécurité. Lorsque votre équipe de sécurité réunit votre plan de maintenance et d’exploitation, veillez à inclure au moins les activités suivantes :
 

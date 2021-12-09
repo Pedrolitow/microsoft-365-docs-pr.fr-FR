@@ -20,16 +20,16 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des Office pour Microsoft 365 organisation.
-ms.openlocfilehash: 6d99b3867560f7eba0f143933d996e4e30b8c7c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acdda1c30dbd0a19762040140b1bb3bf1a7715d4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173222"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371207"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
-En tant qu’administrateur Microsoft 365 général, vous pouvez déployer des Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir [Déployer](../admin/manage/manage-deployment-of-add-ins.md)des Office dans le Centre d’administration). En plus de déployer Office compléments via le Centre d'administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+En tant qu’administrateur Microsoft 365 général, vous pouvez déployer des Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir [Déployer](../admin/manage/manage-deployment-of-add-ins.md)des Office dans le Centre d’administration. En plus de déployer Office compléments via le Centre d'administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et exécutez l’cmdlet suivante :
 
@@ -49,7 +49,7 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
   Connect-OrganizationAddInService
   ```
 
-3. Dans la page **Entrer les informations d’identification,** entrez Microsoft 365 administrateur **utilisateur** ou **administrateur** global. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
+3. Dans la page **Entrer les informations d’identification,** entrez Microsoft 365 **d’administrateur** utilisateur ou **d’administrateur** global. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
     
     Exécutez l’cmdlet suivante en spécifiant les informations d’identification d’administrateur de votre entreprise en tant qu’objet PSCredential.
     

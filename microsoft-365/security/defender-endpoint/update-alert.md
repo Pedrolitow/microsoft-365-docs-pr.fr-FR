@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e18874eabbd2f1ddf31a9a303718eb9430f8d34e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282788"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370319"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 
@@ -62,7 +62,7 @@ Déléguée (compte professionnel ou scolaire)|Alert.ReadWrite|« Lire et écrir
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (pour plus d’informations, voir [Créer et gérer des rôles)](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils)](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes [d’appareils](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -74,7 +74,7 @@ PATCH /api/alerts/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -87,10 +87,10 @@ Pour de meilleures performances, vous ne devez pas inclure de valeurs existantes
 
 Propriété|Type|Description
 :---|:---|:---
-État|String|Spécifie l’état actuel de l’alerte. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+État|Chaîne|Spécifie l’état actuel de l’alerte. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
 assignedTo|String|Propriétaire de l’alerte
 Classification|String|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
-Détermination|String|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+Détermination|Chaîne|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 Commentaire|Chaîne|Commentaire à ajouter à l’alerte.
 
 ## <a name="response"></a>Réponse
