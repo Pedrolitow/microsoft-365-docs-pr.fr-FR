@@ -1,6 +1,6 @@
 ---
 title: Codes d’Microsoft 365 Defender l’API REST courants
-description: En savoir plus sur les codes d’Microsoft 365 Defender l’API REST les plus courants
+description: En savoir plus sur les codes d’Microsoft 365 Defender l’API REST courants
 keywords: api, erreur, codes, erreurs courantes, Microsoft 365 Defender, codes d’erreur d’api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: aa85de2f9dc6a5cbc8a7f22660fd96487f7d8aaf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b43f9548419d3bab10501aa133637b8e2c5583fd
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154560"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374753"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 Defender l’API REST courants
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ InvalidDomainName | BadRequest (400) | Le nom de \<the invalid domain\> domaine 
 InvalidIpAddress | BadRequest (400) | L’adresse IP \<the invalid IP\> n’est pas valide.
 InvalidUrl | BadRequest (400) | \<the invalid URL\>L’URL n’est pas valide.
 MaximumBatchSizeExceeded | BadRequest (400) | La taille maximale du lot est dépassée. Reçu : \<batch size received\> , autorisé : {taille de lot autorisée}.
-MissingRequiredParameter | BadRequest (400) | Paramètre \<the missing parameter\> manquant.
+MissingRequiredParameter | BadRequest (400) | Le \<the missing parameter\> paramètre est manquant.
 OsPlatformNotSupported | BadRequest (400) | La plateforme du \<the client OS Platform\> système d’exploitation n’est pas prise en charge pour cette action.
 ClientVersionNotSupported | BadRequest (400) | \<The requested action\> est pris en charge sur la version du client \<supported client version\> et versions supérieures.
 Non autorisé (Unauthorized) | Non autorisé (401) | Non autorisé (Unauthorized) <br /><br />*Remarque : généralement causée par un en-tête d’autorisation non valide ou expiré.*
@@ -62,7 +62,7 @@ DisabledFeature | Interdit (403) | La fonctionnalité client n’est pas activé
 DisallowedOperation | Interdit (403) | \<the disallowed operation and the reason\>.
 NotFound | In found (404) | Message d’erreur Général in trouvé.
 ResourceNotFound | In found (404) | Ressource \<the requested resource\> in trouvée.
-InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou [contacter Microsoft](/microsoft-365/business-video/get-help-support) si elle n’est pas résolue*
+InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou [contacter Microsoft](../../admin/get-help-support.md) si elle n’est pas résolue*
 
 ## <a name="examples"></a>Exemples
 
@@ -99,7 +99,7 @@ Chaque réponse d’erreur contient un paramètre d’ID unique pour le suivi. L
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [présentation Microsoft 365 Defender API de Microsoft 365 Defender’api](api-overview.md)
 - [API Microsoft 365 Defender prises en charge](api-supported.md)
 - [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)

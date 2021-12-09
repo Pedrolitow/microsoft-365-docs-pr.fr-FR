@@ -20,24 +20,24 @@ search.appverid: MET150
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les deux abonnements sont répertoriés et actifs.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 7239cda6c00785626471b35be19c1d550acf91e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173678"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374591"
 ---
 # <a name="change-plans-manually"></a>Modifier manuellement les plans
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Étape 1 : Décider comment modifier les plans
 
-La meilleure façon de faire passer tous vos utilisateurs d’un plan à un autre consiste à utiliser [l’onglet Mise à niveau.](upgrade-to-different-plan.md) Parfois, cela n’est pas possible. Modifiez les plans manuellement à la place :
+La meilleure façon de changer tous vos utilisateurs d’un plan à un autre consiste à [utiliser l’onglet Mise à niveau.](upgrade-to-different-plan.md) Parfois, cela n’est pas possible. Modifiez les plans manuellement à la place :
 
 - Si **l’onglet** Mise à niveau indique que vous ne pouvez pas mettre à niveau le plan actuel.
 
 - Si, lorsque vous sélectionnez **l’onglet** Mise à niveau, le plan que vous souhaitez n’est pas répertorié.
 
-- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Utilisez une modification manuelle pour ce faire.
+- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Pour ce faire, utilisez une modification manuelle.
 
 Pour continuer avec une modification manuelle, lisez [Étape 2 : Acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
 
@@ -57,9 +57,9 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : Vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
-2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’est pas là lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
+2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’existe pas lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
 
 3. **Vérifier que vous avez suffisamment de licences pour chaque utilisateur** Chaque utilisateur a besoin d’une licence qui correspond à son abonnement. Ainsi, si vous souhaitez déplacer dix utilisateurs vers Microsoft 365 Business Premium, vous devez vous assurer que dix licences sont disponibles.
 
@@ -72,7 +72,7 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 - **Si vous avez acheté deux abonnements** et qu’ils ne sont pas répertoriés ici, ils peuvent avoir été achetés pour différentes organisations (pour différents domaines). Les abonnements ne peuvent pas traverser les limites de l’organisation.
 
-- **Si vous savez que vous avez** un abonnement supplémentaire et qu’il n’est pas répertorié ici ou n’est pas actif, appelez le support [Microsoft.](../../business-video/get-help-support.md)
+- **Si vous savez que vous avez** un abonnement supplémentaire et qu’il n’est pas répertorié ici ou n’est pas actif, appelez le support [Microsoft.](../../admin/get-help-support.md)
 
 ### <a name="what-about-the-old-licenses"></a>Qu’en est-il des anciennes licences ?
 
@@ -88,7 +88,7 @@ Lorsque vous faites une mise à niveau d Office 365 plan de Microsoft 365 plan, 
 
 2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur auquel vous souhaitez attribuer une licence.
 
-3. Sous **l’onglet Licences et** applications, développez **Licences,** sélectionnez les zones des licences que vous souhaitez attribuer, puis **sélectionnez Enregistrer les modifications.**
+3. Sous **l’onglet Licences** et applications, développez **Licences,** sélectionnez les zones des licences que vous souhaitez attribuer, puis sélectionnez **Enregistrer les modifications.**
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réaffecter des licences à plusieurs utilisateurs à la fois
 
@@ -115,4 +115,5 @@ Si vous avez déplacé tous les utilisateurs d’un abonnement vers un autre et 
 Si vous avez déplacé uniquement certains utilisateurs vers un autre abonnement, supprimez les [licences](../licenses/buy-licenses.md) dont vous n’avez plus besoin.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Appeler le support pour vous aider à modifier les plans
-[Appeler le support Microsoft](../../business-video/get-help-support.md)
+
+[Appelez le support Microsoft.](../../admin/get-help-support.md)

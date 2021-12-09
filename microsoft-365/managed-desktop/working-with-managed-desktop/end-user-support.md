@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e7d616f9644c7f81e4a0abf55e2d33d54016c55
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d10f2e938e201fa25505abc820d05b03af04e543
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150305"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374411"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -31,7 +31,7 @@ Avant de demander un accès élevé à un appareil, il est préférable de passe
     - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
     - Résolution des problèmes des applications métier
     - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)
-    - Élévation de la fonction Gestionnaire de périphériques pour qu’il recherche de nouvelles modifications, telles que la mise à jour des pilotes, la désinstallation d’un appareil ou l’analyse des nouvelles modifications
+    - Élévation de la fonction Gestionnaire de périphériques pour faire des opérations telles que les pilotes de mise à jour, désinstaller un appareil ou analyser les nouvelles modifications
 
 - **Les actions qui ne sont pas recommandées sont** les suivantes :
     - Installation de logiciels ou de navigateurs
@@ -46,16 +46,19 @@ Avant de demander un accès élevé à un appareil, il est préférable de passe
 
 ### <a name="to-request-elevation"></a>Pour demander une élévation
 
-1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
-2. Sélectionnez **Nouvelle demande d’élévation.**
-3. Fournissez les détails ci-après :
+1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils.**
+2. Recherchez la section **Microsoft Manged Desktop,** puis sélectionnez le volet Périphériques,  qui contient deux onglets : l’onglet Périphériques et l’onglet Demandes **d’élévation.**  
+3. Pour créer une demande  d’élévation sous l’onglet Appareil, sélectionnez un  seul appareil à élever, puis sélectionnez Demander l’élévation à partir du menu déroulant Actions de l’appareil. Un nouveau volet volant de demande d’élévation s’affiche avec le nom de l’appareil prére implémenté dans ce champ.
+4. Sinon, pour créer une demande d’élévation sous l’onglet **Demandes d’élévation,** sélectionnez **+Nouvelle demande d’élévation.**
+5. Fournissez les détails ci-après :
     - **ID de ticket de support** à partir de votre propre système de tickets de support.
-    - **Nom de l’appareil**: entrez le numéro de série de l’appareil, puis sélectionnez l’appareil dans le menu.
+    - **Nom de l’appareil**(uniquement lors de la création d’une demande à partir de l’onglet **Demandes** d’élévation) : entrez le numéro de série de l’appareil, puis sélectionnez l’appareil dans le menu.
     - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème. Si aucune option ne semble proche, sélectionnez **Autre**. Il est préférable de sélectionner une catégorie si possible.
-    - **Sous-catégorie :** sélectionnez celle qui répond le mieux au problème. Si aucune option ne semble proche, sélectionnez **Autre**.
     - **Titre**: fournissez une brève description du problème sur l’appareil.
-    - **Plan d’action**: fournissez les étapes de résolution des problèmes que vous prévoyez de suivre une fois l’élévation accordée. 
-4. Sélectionnez **Envoyer**.
+    - **Plan d’action**: fournissez les étapes de résolution des problèmes que vous prévoyez d’suivre une fois l’élévation accordée. 
+6. Sélectionnez **Envoyer**.
+7. La liste et les détails de toutes les demandes actives et fermées sont visibles sous l’onglet **Demandes d’élévation.**
+
 
 
 ## <a name="escalation-requests"></a>Demandes d’escalade
@@ -63,15 +66,15 @@ Avant de demander un accès élevé à un appareil, il est préférable de passe
 
 Si vous devez faire [une escalade d’un](../service-description/user-support.md#escalation-portal) problème à Microsoft, suivez les étapes suivantes :
 
-1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
-2. Sélectionnez **Demandes d’escalade,** puis Nouvelle **demande d’escalade.**
-3. Fournissez les détails ci-après :
-    - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème.
-    - **Titre**: fournissez une brève description.
+1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **d’administration du** client.
+2. Recherchez la section Microsoft Manged Desktop, puis sélectionnez **Demandes de service.**
+3. Dans le bouton **Demandes de service,** **sélectionnez + Nouvelle demande de support.**
+4. Fournissez une brève description dans la **zone Titre.** Ensuite, définissez **le type de demande** sur **Incident**. 
+5. Sélectionnez **la catégorie** et la **sous-catégorie** qui s’adaptent le mieux à votre **problème,** puis sélectionnez Suivant .
+6. Dans la section **Détails,** fournissez les informations suivantes :
     - **Description**: ajoutez tous les détails supplémentaires qui pourraient aider notre équipe à comprendre le problème. Si vous devez joindre des fichiers, vous pouvez le faire en revenir à la demande après l’avoir soumis.
     - **Informations de contact principales**: fournissez des informations sur la façon de contacter la personne principale responsable de l’collaboration avec notre équipe.
-4. Sélectionnez **Envoyer**.
-5. Revenir sur le ticket dans le même portail pour interagir avec notre équipe.
-
-> [!NOTE]
-> Seuls les problèmes de gravité C peuvent être escalades via ce chemin d’accès. Pour d’autres problèmes, contactez votre administrateur informatique pour déposer la demande via le portail d’administration.
+7. Sélectionnez **le niveau de** gravité. Pour plus d’informations, voir définitions de gravité des demandes de support.
+8. Fournissez autant d’informations que possible sur la demande pour aider l’équipe à répondre rapidement. En fonction du type de demande, vous pouvez être tenu de fournir des détails différents.
+9. Examinez toutes les informations que vous avez fournies pour plus d’informations.
+10. Quand vous êtes prêt, sélectionnez **Créer**.

@@ -1,6 +1,6 @@
 ---
 title: Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: c68f2441db5bdac2f2da693ee6c99baa7a9ff213
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c40805267320488e79c774954fd8f6bd696449fa
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122512"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374255"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
@@ -88,7 +88,7 @@ Le tableau suivant répertorie les rôles des clients partenaires et leurs autor
 | Administrateur du client partenaire avec au moins un<br> Azure AD rôle affecté avec le jeu de propriétés suivant :<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Pour obtenir la liste des rôles Azure AD, voir Azure AD [rôles intégrés.)](/azure/active-directory/roles/permissions-reference) | <ul><li>Créer des demandes de service d’accès.</li></ul> |
 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
 [S’inscrire à Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\

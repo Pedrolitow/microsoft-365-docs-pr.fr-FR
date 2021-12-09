@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9a0dede2477c4aaa64e3e1474cf013a288deeea5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f255e9c1bc6a194ae5ad58fda55bbf6db755f843
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203578"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374447"
 ---
 # <a name="contact-support-for-kyrgyzstan"></a>Contacter le support technique pour le Kirghizistan
 
-[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
+[Rechercher un autre pays ou une autre région](../get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +7 499 922 86 23

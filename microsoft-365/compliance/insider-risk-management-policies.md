@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3a25466b26145691d579403a4ccb00410298d4e4
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241019"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374615"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -104,7 +104,7 @@ Microsoft Defender pour point de terminaison doit être configuré dans votre or
 
 La protection des données des dossiers de santé et la prévention de l’utilisation abusive des données personnelles des patients est une préoccupation majeure pour les organisations du secteur de la santé. Cette mauvaise utilisation peut inclure des fuites de données confidentielles vers des personnes non autorisées, la modification frauduleuse des dossiers des patients ou le vol de dossiers médicaux de patients. La prévention de cette mauvaise utilisation des données des patients, soit par un manque de sensibilisation, une négligence ou une fraude de la part des utilisateurs, est également un élément essentiel pour répondre aux exigences réglementaires de la loi HIPAA (Health Insurance Portability and Accountability Act) et de la loi HITECH (Health Information Technology for Economic and Health). Ces deux actes établissent les conditions requises pour la protection des informations de santé protégées par les patients.
 
-Ce modèle de stratégie permet l’évaluation des risques pour les utilisateurs internes qui détectent des activités suspectes associées à des enregistrements hébergés sur des systèmes de dossiers médicaux électroniques existants. La détection se concentre sur l’accès non autorisé, l’affichage, la modification et l’exportation des données des patients. Vous devrez configurer un connecteur (connecteur [Microsoft Health ou](import-healthcare-data.md) [Connecteur](import-epic-data.md)) pour prendre en charge la détection des activités d’accès, d’exfiltration ou d’obfuscation dans votre système EMR.
+Ce modèle de stratégie permet l’évaluation des risques pour les utilisateurs internes qui détectent des activités suspectes associées à des enregistrements hébergés sur des systèmes de dossiers médicaux électroniques existants. La détection se concentre sur l’accès non autorisé, l’affichage, la modification et l’exportation des données des patients. Vous devrez configurer un connecteur (le connecteur [Microsoft Health ou](import-healthcare-data.md) Connecteur Connecteur [d’assistance](import-epic-data.md) pour prendre en charge la détection des activités d’accès, d’exfiltration ou d’obfuscation dans votre système emfuscation).
 
 Lorsque vous utilisez ce modèle, vous devez également configurer un connecteur RH Microsoft 365 pour importer régulièrement des données de profil d’organisation pour les utilisateurs de votre organisation. Consultez l’article Importer des données avec le connecteur RH pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 

@@ -1,0 +1,69 @@
+### YamlMime:FAQ
+metadata:
+  title: Questions fréquemment posées sur Microsoft Defender entreprise
+  description: Obtenez des réponses à vos questions sur Microsoft Defender entreprise
+  search.appverid: MET150
+  author: denisebmsft
+  ms.author: deniseb
+  manager: dansimp
+  audience: Admin
+  ms.topic: overview
+  ms.date: 12/08/2021
+  ms.prod: m365-security
+  ms.technology: mdb
+  localization_priority: Normal
+  ms.reviewer: inbadian, shlomiakirav
+  f1.keywords: NOCSH
+  ms.collection:
+  - SMB
+  - M365-security-compliance
+  ms.openlocfilehash: aca2266e8cf48e0c8d0d960ed943313a79f2c4e4
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61375186"
+title: Microsoft Defender pour les entreprises - Questions et réponses fréquemment posées
+summary: ''
+sections:
+- name: Général
+  questions:
+  - question: J’ai Microsoft Defender pour Endpoint Plan 2. Pourquoi ne vois-je pas Microsoft Defender Entreprise dans mon portail ?
+    answer: >
+      Actuellement, chaque fois qu’un client a plusieurs abonnements, l’abonnement le plus élevé est prioritaire. Si vous avez Microsoft Defender pour Endpoint Plan 2 (achat ou abonnement d’évaluation) et que vous obtenez Microsoft Defender pour Entreprise, Defender pour Endpoint Plan 2 est prioritaire. Dans ce cas, vous ne verrez pas l’expérience Defender entreprise.
+  - question: Quelles sont les différences entre Defender pour Entreprise et Defender pour les plans de point de terminaison 1 et 2 ?
+    answer: "Defender pour les entreprises a été conçu pour les petites et moyennes entreprises (jusqu’à 300 employés). Grâce à un processus de [configuration](mdb-simplified-configuration.md) simplifié et à des [options](mdb-onboard-devices.md)d’intégration d’appareil, Defender entreprise permet aux clients qui n’ont pas nécessairement de connaissances en matière de sécurité de configurer, configurer et utiliser Defender pour les entreprises.  \n\nDefender pour les entreprises et Defender pour le point de terminaison fournissent des fonctionnalités de protection contre les menaces fortes pour les points de terminaison de votre entreprise. Pour en savoir plus sur les différences, voir [Comparer Microsoft Defender](compare-mdb-m365-plans.md)entreprise à Microsoft 365 Business Premium .\n"
+  - question: Comment puis-je m’inscrire à la prévisualisation de Defender for Business ?
+    answer: >
+      Visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) le site pour vous inscrire au programme d’aperçu. Pour plus d’informations, [voir Comment obtenir Microsoft Defender pour Entreprise](get-defender-business.md).
+  - question: Existe-t-il des conditions préalables pour la prévisualisation de Defender for Business ?
+    answer: >
+      Votre société doit être l’une des suivantes :
+
+      - Un partenaire qui offre des services aux petites et moyennes entreprises
+
+      - Une petite ou moyenne entreprise de 300 employés au plus
+
+
+      Vous n’avez pas encore besoin d’un autre abonnement Microsoft 365 abonnement.
+
+
+      Consultez [les exigences de Microsoft Defender pour les entreprises.](mdb-requirements.md)
+  - question: Quel sera le modèle de licence au niveau de la ga ?
+    answer: "Lorsque Microsoft Defender entreprise atteint la disponibilité générale, il est inclus dans Microsoft 365 Business Premium.\n\nPour les clients qui n’ont pas Microsoft 365 Business Premium, Defender entreprise sera disponible en tant qu’offre autonome. \n"
+  - question: Si j’utilise déjà Microsoft 365 Business Premium, pourquoi ai-je besoin de Defender for Business ?
+    answer: >
+      Microsoft 365 Business Premium inclut actuellement une protection Antivirus Microsoft Defender nouvelle génération pour Windows appareils. Defender pour les entreprises étend ces fonctionnalités avec des fonctionnalités & gestion des vulnérabilités menaces, des fonctionnalités de réduction de la surface d’attaque, des protection évolutive des points de terminaison et des examens et réponses automatisés. Pour en savoir plus, consultez les articles suivants :
+
+
+      - [Vue d’ensemble de Defender for Business](mdb-overview.md)
+
+      - [Comparer Microsoft Defender entreprise à Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+additionalContent: >-
+  ## <a name="see-also"></a>Voir aussi
+
+
+  - [Vue d’ensemble de Microsoft Defender pour les entreprises](mdb-overview.md)
+
+
+  - [Comparer Microsoft Defender entreprise à Microsoft 365 Business Premium](compare-mdb-m365-plans.md)

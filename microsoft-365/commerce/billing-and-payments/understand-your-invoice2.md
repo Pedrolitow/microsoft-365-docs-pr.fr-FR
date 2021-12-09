@@ -20,14 +20,14 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 entreprise et comment modifier un numéro de bon de commande.
+description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 pour les entreprises et comment modifier un numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7b6f82570416b84d1b0b8c5b65cf13ce94522063
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 946f403d05150a4995aeacf8adc99f02ffb6c761
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151457"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374627"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -93,7 +93,7 @@ Le tableau suivant décrit les termes pouvant figurer sur votre facture. Il est 
 |Adresse d'utilisation du service|L'adresse de l'endroit où le service est utilisé, généralement le même que votre adresse de vente. Pour mettre à jour votre adresse d’utilisation du service, consultez [Modifier vos adresses de facturation](change-your-billing-addresses.md).|
 |Vente|Le nom et l'adresse de votre société. Pour plus d'informations, consultez [Modifier l'adresse physique et l'adresse de courrier électronique, ainsi que d'autres informations de votre organisation](../../admin/manage/change-address-contact-and-more.md).  |
 |Sous-total|Chaque abonnement répertorié sur votre facture a une ligne de sous-total distincte pour toutes les colonnes Frais, Remises, Crédits, Sous-total, Taxes et Total pour cet abonnement.|
-|Taxes|La page 1 de votre facture indique le total des taxes. La page 2 indique le taux d'imposition appliqué et le montant total des taxes pour chaque ligne. Si votre facture contient des taxes dont votre entreprise est exonérée, veuillez [contacter le support technique](../../business-video/get-help-support.md).  |
+|Taxes|La page 1 de votre facture indique le total des taxes. La page 2 indique le taux d'imposition appliqué et le montant total des taxes pour chaque ligne. Si votre facture contient des taxes dont votre entreprise est exonérée, veuillez [contacter le support technique](../../admin/get-help-support.md).  |
 |Total|Le montant dû pour la période de facturation de la facture.|
 
 ## <a name="change-your-purchase-order-number"></a>Changer votre numéro de bon de commande
@@ -106,12 +106,6 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 

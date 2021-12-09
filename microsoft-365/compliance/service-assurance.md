@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Téléchargez des audits tiers, découvrez comment Microsoft protège les données client et découvrez comment vous pouvez vous conformer à la norme ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: df0cf99a3cfba0c6f5358fb48c45cfd3da62799e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b836df70de9905c0bd55edce4a2d9f5beeccbda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150989"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374567"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Certification de service dans le Centre de sécurité et conformité
 
@@ -41,11 +41,11 @@ Vous pouvez également découvrir comment les Office 365 peuvent aider les clien
     
 - Programme FedRAMP (Federal Risk and Authorization Management Program)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui pouvez accéder à l’assurance Office 365 service et comment ?
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui pouvez accéder à Office 365'assurance service et comment ?
 
  **Les nouveaux clients et** les clients qui évaluent les services en ligne Microsoft peuvent accéder à l’assurance service incluse dans les plans Office 365 Entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer l’assurance service, vous pouvez vous inscrire à une version d’essai [Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
- **Les membres de l’abonnement O365** peuvent accéder à la section Assurance de service dans Office 365 Protection Center par défaut. L’assurance service fournit des rapports et des documents qui décrivent les pratiques de sécurité de Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365.
+ **Les membres de l’abonnement O365** peuvent accéder à la section Assurance de service dans Office 365 Protection Center par défaut. L’assurance de service fournit des rapports et des documents qui décrivent les pratiques de sécurité de Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365.
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Choisir vos paramètres régionaux et du secteur
 <a name="Chooseyourindustryregional"> </a>
@@ -60,7 +60,7 @@ Lorsque vous accédez à l’assurance service pour la première fois, la premi�
     
 3. Sélectionnez la flèche vers le bas en regard **du** secteur d’activité et vérifiez les secteurs appropriés pour votre organisation. 
     
-4. Une fois que vous avez sélectionné des régions et des secteurs, sélectionnez **Enregistrer.**
+4. Une fois que vous avez sélectionné des régions et des secteurs, **sélectionnez Enregistrer.**
     
 ## <a name="find-review-and-download-compliance-and-trust-content"></a>Rechercher, examiner et télécharger du contenu de conformité et d’confiance
 <a name="Chooseyourindustryregional"> </a>
@@ -95,7 +95,7 @@ Selon votre programme d’affichage spécifique, les options incluses dans votre
 ## <a name="get-help-with-service-assurance"></a>Obtenir de l’aide sur l’assurance de service
 <a name="addother"> </a>
 
-[Contacter le support relatif aux produits d’entreprises - Aide de l’administration](../business-video/get-help-support.md).
+[Contacter le support relatif aux produits d’entreprises - Aide de l’administration](../admin/get-help-support.md).
   
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 <a name="addother"> </a>
