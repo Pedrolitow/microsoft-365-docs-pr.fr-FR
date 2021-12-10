@@ -22,12 +22,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 26d883984dedae52285a343d573e0aa2cad0c005
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8270c6050f640b1c49b4f82c361812a019ae44d1
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372347"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401305"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de Office 365 Defender dans le portail Microsoft 365 Defender web
 
@@ -118,6 +118,10 @@ Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
 Le rapport d’état **de la protection** contre les menaces est un affichage unique qui regroupe des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et Microsoft Defender pour Office 365. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
+
+## <a name="top-senders-and-recipients-report"></a>Rapport sur les principaux expéditeurs et destinataires
+
+Le **rapport Sur les principaux expéditeurs** et destinataires affiche les principaux destinataires pour EOP et Defender pour Office 365 fonctionnalités de protection. Pour plus d’informations, consultez le rapport des [principaux expéditeurs et destinataires.](view-email-security-reports.md#top-senders-and-recipients-report)
 
 ## <a name="url-protection-report"></a>Rapport sur la protection des URL
 

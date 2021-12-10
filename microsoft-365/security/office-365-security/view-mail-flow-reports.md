@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b73410170b0a869010f0c0c40b9363eed7475e6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f742fc9f19d7b360e9402c9bc6331a84d2622979
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370902"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401317"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -87,62 +87,17 @@ Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https
 
 ## <a name="top-senders-and-recipients-report"></a>Rapport sur les principaux expéditeurs et destinataires
 
-Le **rapport Des principaux expéditeurs et destinataires** est un graphique en secteurs montrant vos principaux expéditeurs et destinataires de courrier électronique.
+Les principaux expéditeurs et destinataires indiquent les principaux **expéditeurs** de messages de votre organisation, ainsi que les principaux destinataires des messages détectés par EOP et Defender pour Office 365 protection.
 
-Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord des rapports et sélectionnez Principaux \>  **expéditeurs et destinataires.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Pour afficher le rapport, ouvrez le Centre de sécurité & conformité à l’adresse , go <https://protection.office.com> to **Reports** \> **Dashboard** and select **Top senders and recipients**. Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
 
-![Widget des principaux expéditeurs et destinataires dans le tableau de bord Rapports.](../../media/top-senders-and-recipients-widget.png)
+- Defender pour Office 365 :<https://protection.office.com/TopSenderRecipientsATP>
+- EOP : <https://protection.office.com/TopSenderRecipients>
 
-### <a name="report-view-for-the-top-senders-and-recipient-report"></a>Affichage du rapport pour le rapport des principaux expéditeurs et destinataires
+![Widget des principaux expéditeurs et destinataires dans le tableau de bord Rapports.](../../media/scc-top-senders-and-recipients-widget.png)
 
-Les graphiques suivants sont disponibles dans l’affichage de rapport :
-
-- **Afficher les données pour \> les principaux expéditeurs de courrier**
-- **Afficher les données pour \> les principaux destinataires du courrier**
-- **Afficher les données des \> principaux destinataires du courrier indésirable**
-- **Afficher les données pour \> Principaux destinataires des programmes malveillants** (EOP)
-- **Afficher les données \> des principaux destinataires de programmes malveillants (Defender pour Office 365)**
-
-La composition du graphique en secteurs change en fonction de ces sélections.
-
-Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nombre de messages envoyés ou reçus.
-
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
-
-![Graphique en secteurs en affichage Rapport dans le rapport Des principaux expéditeurs et destinataires.](../../media/top-senders-and-recipients-report-view.png)
-
-### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Vue de table Détails pour le rapport des principaux expéditeurs et destinataires
-
-Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
-
-- **Afficher les données pour \> les principaux expéditeurs de courrier**
-
-  - **Principaux expéditeurs de courrier**
-  - **Count**
-
-- **Afficher les données pour \> les principaux destinataires du courrier**
-
-  - **Principaux destinataires du courrier**
-  - **Count**
-
-- **Afficher les données des \> principaux destinataires du courrier indésirable**
-
-  - **Principaux destinataires du courrier indésirable**
-  - **Count**
-
-- **Afficher les données pour \> Principaux destinataires des programmes malveillants** (EOP)
-
-  - **Principaux destinataires de programmes malveillants**
-  - **Count**
-
-- **Afficher les données \> des principaux destinataires de programmes malveillants (Defender pour Office 365)**
-
-  - **Principaux destinataires des programmes malveillants (Defender pour Office 365)**
-  - **Count**
-
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
-
-Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
+> [!NOTE]
+> Bien que le fait de cliquer sur le widget pour ce rapport dans le Centre de sécurité & conformité vous permet d’obtenir une page protection.office.com, le contenu de la page est à partir du portail Microsoft 365 Defender. Pour plus d’informations sur le rapport, consultez le rapport des [principaux expéditeurs et destinataires.](view-email-security-reports.md#top-senders-and-recipients-report)
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles autorisations sont nécessaires pour afficher ces rapports ?
 

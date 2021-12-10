@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9be6475143f887fb0a4ec3a5f441962bb7eac31
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 079228cb10c00246f37cb4f34f156ca36595e9ae
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372359"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401329"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité du courrier dans le portail Microsoft 365 Defender messagerie
 
@@ -916,7 +916,7 @@ Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’
 
 Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nom d’un type de programme malveillant et le nombre de messages détectés comme ayant ce programme malveillant.
 
-Dans la page **Rapport de programmes malveillants en haut,** une version plus grande du graphique en secteurs s’affiche sur la page du rapport. Le tableau de détails sous le graphique présente les informations suivantes :
+Dans la page **Rapport de programmes malveillants en haut,** une version plus grande du graphique en secteurs s’affiche. Le tableau de détails sous le graphique présente les informations suivantes :
 
 - **Principaux programmes malveillants**
 - **Count**
@@ -926,6 +926,45 @@ Si vous cliquez **sur Filtre,** vous pouvez spécifier une plage de dates avec l
 Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créez une planification et](#schedule-report)** ![ une icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
 ![Affichage des principaux rapports sur les programmes malveillants.](../../media/top-malware-report-view.png)
+
+## <a name="top-senders-and-recipients-report"></a>Rapport sur les principaux expéditeurs et destinataires
+
+Le **rapport des principaux expéditeurs** et destinataires est disponible dans EOP et Defender pour Office 365 ; toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les principaux destinataires de programmes malveillants, de courrier indésirable et d’hameçonnage (usurpation d’identité), mais pas sur les programmes [malveillants détectés](safe-attachments.md) par les pièces jointes Coffre ou le hameçonnage détectés par la protection contre l’usurpation d’identité. [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+
+Les principaux expéditeurs et destinataires indiquent les principaux **expéditeurs** de messages de votre organisation, ainsi que les principaux destinataires des messages détectés par EOP et Defender pour Office 365 protection. Par défaut, le rapport affiche les données de la semaine précédente, mais les données sont disponibles pour les 90 derniers jours.
+
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to **Reports** Email \> **& collaboration** Email & collaboration \> **reports**. Dans la page **Rapports de collaboration &** courrier électronique, recherchez le rapport des principaux expéditeurs et **destinataires,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
+
+- Defender pour Office 365 :<https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP : <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![Widget des principaux expéditeurs et destinataires dans le tableau de bord Rapports.](../../media/top-senders-and-recipients-widget.png)
+
+Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nombre de messages pour l’expéditeur ou le destinataire.
+
+Dans la page Principaux expéditeurs et **destinataires,** une version plus grande du graphique en secteurs s’affiche. Les graphiques suivants sont disponibles :
+
+- **Afficher les données pour les principaux expéditeurs** de courrier (il s’agit de l’affichage par défaut)
+- **Afficher les données pour les principaux destinataires du courrier**
+- **Afficher les données des principaux destinataires du courrier indésirable**
+- **Afficher les données des principaux destinataires de programmes malveillants** (EOP)
+- **Afficher les données des principaux destinataires du hameçonnage**
+- **Afficher les données pour les principaux destinataires de programmes malveillants (MDO)**
+- **Afficher les données pour les principaux destinataires du hameçonnage (MDO)**
+
+Les données changent en fonction de votre sélection.
+
+Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nombre de messages pour cet expéditeur ou destinataire spécifique.
+
+Le tableau de détails sous le graphique indique les expéditeurs ou les destinataires et le nombre de messages en fonction de l’affichage que vous avez sélectionné.
+
+Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant **Date** de début et **date de fin.**
+
+Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Le bouton** Exporter est disponible.
+
+![Afficher les données pour l’affichage des principaux expéditeurs de courrier dans le rapport Des principaux expéditeurs et destinataires.](../../media/top-senders-and-recipients-report-view.png)
 
 ## <a name="url-protection-report"></a>Rapport sur la protection des URL
 

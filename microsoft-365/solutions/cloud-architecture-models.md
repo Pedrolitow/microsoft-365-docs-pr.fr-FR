@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373691"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401497"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrations du cloud Microsoft pour les architectes informatiques
 
@@ -51,7 +51,7 @@ Découvrez tout ce que les architectes informatiques doivent savoir sur la sécu
   
 | Item | Description |
 |:-----|:-----|
-|[![La sécurité cloud Microsoft pour les architectes d’entreprise modélise la miniature.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Mise à jour de novembre 2021 | Ce modèle contient : <ul><li>Responsabilités de Microsoft et de sécurité client</li><li>Accès aux identités et appareils</li><li>Protection contre les menaces</li><li>Protection des informations </ul><br/>|
+|[![La sécurité cloud Microsoft pour les architectes d’entreprise modélise la miniature.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Mise à jour de décembre 2021 | Ce modèle contient : <ul><li>Responsabilités de Microsoft et de sécurité client</li><li>Accès aux identités et appareils</li><li>Protection contre les menaces</li><li>Protection des informations </li><li>Protection des applications cloud </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>Mise en réseau cloud Microsoft pour les architectes informatiques

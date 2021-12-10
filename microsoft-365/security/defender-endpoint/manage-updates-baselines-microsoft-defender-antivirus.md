@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/09/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0e6cb244bf4beeab1d282e46196262ea681a13c2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 284ed70877564b3f402eb910f27cb7c62bbcd0b6
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372611"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401185"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -586,6 +586,20 @@ Nous vous recommandons de mettre à jour vos images d’installation de Windows 
 Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
+<summary>1.1.2112.01</summary>
+
+&ensp;Version du package **: 1.1.2112.01**<br/>
+&ensp;Version de la plateforme **: 4.18.2110.6**<br/>
+&ensp;Version du moteur **: 1.1.18700.4**<br/>
+&ensp;Version de signature **: 1.353.2283.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucune
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+<br/>
+</details><details>
 <summary>1.1.2111.02</summary>
 
 &ensp;Version du package **: 1.1.2111.02**<br/>
@@ -611,7 +625,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -636,7 +650,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -653,7 +667,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucun
+- Aucune
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -678,10 +692,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -695,7 +709,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -706,7 +720,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -734,7 +748,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -748,7 +762,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -762,7 +776,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées

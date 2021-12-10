@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6ead5c1c23facbab1e80c29cac664ef50a6e8a0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168905"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401485"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -29,8 +29,8 @@ ms.locfileid: "61168905"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -595,7 +595,34 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 }
 ```
 
-## <a name="configuration-profile-validation"></a>Validation du profil de configuration
+  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Ajouter une balise ou un ID de groupe au profil de configuration
+
+Lorsque vous exécutez la commande pour la première fois, la valeur de la balise et de l’ID de `mdatp health` groupe est vide. Pour ajouter une balise ou un ID de groupe au `mdatp_managed.json` fichier, suivez les étapes ci-dessous :
+  
+  1. Ouvrez le profil de configuration à partir du chemin `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` d’accès.
+  2. Descendez jusqu’au bas du fichier, où se `cloudService` trouve le bloc.
+  3. Ajoutez la balise ou l’ID de groupe requis comme exemple suivant à la fin du crochet fermant pour `cloudService` le .
+
+  ```JSON
+    },
+     "cloudService":{
+        "enabled":true,
+        "diagnosticLevel":"optional",
+        "automaticSampleSubmissionConsent":"safe",
+        "automaticDefinitionUpdateEnabled":true,
+        "proxy": "http://proxy.server:port/"
+     },
+     "edr":{
+          "groupIds":"GroupIdExample",
+          "tags":"MDETagExample"
+          }
+  }
+  ```
+
+  > [!NOTE]
+  > N’oubliez pas d’ajouter la virgule après le crochet fermant à la fin du `cloudService` bloc. Assurez-vous également qu’il existe deux crochets fermants après l’ajout d’un bloc Balise ou ID de groupe (voir l’exemple ci-dessus).
+  
+  ## <a name="configuration-profile-validation"></a>Validation du profil de configuration
 
 Le profil de configuration doit être un fichier au format JSON valide. Il existe un certain nombre d’outils qui peuvent être utilisés pour vérifier cela. Par exemple, si vous avez `python` installé sur votre appareil :
 
@@ -616,7 +643,7 @@ Pour vérifier que votre /etc/opt/microsoft/mdatp/managed/mdatp_managed.json fon
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> Pour que mdatp_managed.json prenne effet, aucun redémarrage du wdavdaemon n’est requis.
+> Pour que le mdatp_managed.json prenne effet, aucun redémarrage `mdatp` du deamon n’est requis.
 
 ## <a name="configuration-profile-deployment"></a>Déploiement de profil de configuration
 

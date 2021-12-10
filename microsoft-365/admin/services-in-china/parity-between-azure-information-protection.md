@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92c9460d9a2be4e09021073c455dd5287cba222b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7d5faeef81c59e068a1a61272f267379b9ce23f3
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372683"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401437"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour Office 365 géré par 21Vianet
 
@@ -88,7 +88,7 @@ Le **principal Protection des données Microsoft** service de synchronisation n�
 
 1. Si le module Azure Az n’est pas installé, installez-le ou utilisez une ressource dans laquelle le module Azure Az est préinstallé, comme [Azure Cloud Shell.](/azure/cloud-shell/overview) Pour plus d’informations, voir [Installer le module Azure Az PowerShell.](/powershell/azure/install-az-ps)
 
-1.    Connecter service à l’aide de la cmdlet [Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de `azurechinacloud` l’environnement :
+1. Connecter service à l’aide de la cmdlet [Connecter-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) et du nom de `azurechinacloud` l’environnement :
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud

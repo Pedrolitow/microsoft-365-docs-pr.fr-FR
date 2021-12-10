@@ -71,8 +71,6 @@
           href: setup/customize-sign-in-page.md
         - name: Personnaliser le thème de votre organisation
           href: setup/customize-your-organization-theme.md
-        - name: En savoir plus sur Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
         - name: Accéder aux utilisateurs et ressources locaux
           items:
             - name: Synchroniser les utilisateurs de domaine avec Microsoft 365
