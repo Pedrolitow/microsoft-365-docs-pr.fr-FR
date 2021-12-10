@@ -16,21 +16,21 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b9e6247a8bf17f047eade35fc1b2597fe8072ac4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148889"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165989"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Une fois Antivirus Microsoft Defender analyse complète, qu’il s’agit d’une analyse à la demande ou d’une analyse [programmée,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)les résultats sont enregistrés et vous pouvez afficher les résultats. [](run-scan-microsoft-defender-antivirus.md) 
 

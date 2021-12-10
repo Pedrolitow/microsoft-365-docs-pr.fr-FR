@@ -16,18 +16,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1acd1a95ddc3aa679f0e5f1295e14cf33b4f97a0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110798"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168293"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Lorsque Antivirus Microsoft Defender trouve un fichier suspect, il peut empêcher l’exécution du fichier pendant qu’il interroge [Antivirus Microsoft Defender service cloud.](cloud-protection-microsoft-defender-antivirus.md)
 

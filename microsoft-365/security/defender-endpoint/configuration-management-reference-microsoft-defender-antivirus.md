@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 49d61529c966771004ae9c7aed881f98a718bdec
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c73936bd32381988a03ad527a83847497eab71d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884108"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168317"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer Antivirus Microsoft Defender dans votre entreprise
 
@@ -30,8 +30,10 @@ ms.locfileid: "60884108"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
-- [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus Microsoft Defender
 
 Vous pouvez gérer et configurer les Antivirus Microsoft Defender à l’aide des outils suivants :
 

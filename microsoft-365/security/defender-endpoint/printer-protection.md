@@ -15,14 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 60f59796f585e472673d5c230fcbe303460e7372
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109886"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164861"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
+
+**S’applique à**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 

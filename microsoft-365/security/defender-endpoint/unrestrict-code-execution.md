@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 57eb7969dad812c4ed3d87642dbc7f05592f4212
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c2fe35d73cd9abf3483c32067bf59334c6ad016b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169670"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167957"
 ---
 # <a name="remove-app-restriction-api"></a>SUPPRIMER l’API de restriction d’application
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +53,7 @@ Activez l’exécution de n’importe quelle application sur l’appareil.
 >
 > - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
 > - L’isolation sélective est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
-> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de fractionnement pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -79,7 +80,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -94,7 +95,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
-Si vous envoyez plusieurs appels d’API pour supprimer des restrictions d’application pour le même appareil, il renvoie « Action de l’ordinateur en attente » ou HTTP 400 avec le message « L’action est déjà en cours ».
+Si vous envoyez plusieurs appels d’API pour supprimer des restrictions d’application pour le même appareil, elle renvoie « Action de l’ordinateur en attente » ou HTTP 400 avec le message « L’action est déjà en cours ».
 
 ## <a name="example"></a>Exemple
 

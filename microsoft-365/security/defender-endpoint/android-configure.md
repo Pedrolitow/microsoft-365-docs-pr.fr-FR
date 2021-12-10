@@ -15,20 +15,21 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: debb16afb5e9edbdac0b31916bf39fc72dd38220
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111398"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167885"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour le point de terminaison sur les fonctionnalités Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Accès conditionnel avec Defender pour point de terminaison sur Android
 
@@ -81,7 +82,7 @@ Utilisez les étapes suivantes pour activer l’évaluation des **vulnérabilit�
 
    - **Nom**: entrez un nom et une description uniques pour ce paramètre OMA-URI afin de le trouver facilement plus tard.
    - OMA-URI : **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
-   - Type de données : sélectionnez Integer dans la liste liste.
+   - Type de données : sélectionnez Entier dans la liste déroulante.
    - Valeur : entrez 0 pour désactiver le paramètre de confidentialité (par défaut, la valeur est 1)
 
 4. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
@@ -120,14 +121,14 @@ Utilisez les étapes suivantes pour l’activer pour les utilisateurs ciblés :
 
    - **Nom**: entrez un nom et une description uniques pour ce paramètre OMA-URI afin de le trouver facilement plus tard.
    - OMA-URI : **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
-   - Type de données : sélectionnez Integer dans la liste liste.
+   - Type de données : sélectionnez Entier dans la liste déroulante.
    - Valeur : Entrez 1 pour activer le paramètre de confidentialité (par défaut, la valeur est 0)
 
 4. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
 
 L’utilisation de ce contrôle de confidentialité n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel. Par exemple, les appareils avec une application malveillante auront toujours un niveau de risque « Moyen ».
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

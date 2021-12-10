@@ -16,21 +16,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1cddc1fd238c31f8e3f8f2646875fd1539b8723a
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: a708bf6ef34767b338c40cf8004e4c497658fc36
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148853"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164441"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour de l'antivirus Microsoft Defender et les analyses des points de terminaison qui ne sont pas à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Antivirus Microsoft Defender vous permet de définir la durée pendant combien de temps un point de terminaison peut éviter une mise à jour ou le nombre d’analyses qu’il peut manquer avant d’être tenu de se mettre à jour et de s’analyser lui-même. Cela est particulièrement utile dans les environnements où les appareils ne sont pas souvent connectés à un réseau d’entreprise ou externe, ou les appareils qui ne sont pas utilisés quotidiennement.
 

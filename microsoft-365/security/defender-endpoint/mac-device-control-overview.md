@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8992e6f5f4d4d37de06862675f999891fc4853c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111638"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166169"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -84,7 +85,7 @@ Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s�
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|navigationTarget|
-|**Type de données**|Chaîne|
+|**Type de données**|String|
 |**Comments**|S’il n’est pas défini, le produit utilise une URL par défaut pointant vers une page générique expliquant l’action entreprise par le produit.|
 |
 
@@ -401,7 +402,7 @@ Exemple de sortie :
 
 Dans l’exemple ci-dessus, il n’existe qu’un seul périphérique multimédia amovible branché et il dispose d’autorisations et d’autorisations, conformément à la stratégie de contrôle d’appareil qui a été remis à `read` `execute` l’appareil.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Exemples de stratégies de contrôle d’appareil pour Intune](mac-device-control-intune.md)
 - [Exemples de stratégies de contrôle d’appareil pour JAMF](mac-device-control-jamf.md)

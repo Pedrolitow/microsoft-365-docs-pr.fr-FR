@@ -16,23 +16,23 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1fcb62897f1feabe0ca8c447c51e61c7d752138c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189152"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164633"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
-Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
+Les déplacements de données sont des opérations de base ayant un impact minimal sur les utilisateurs finaux. Aucune action de votre part n’est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
   
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géo de centres de données.   
+Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
 
-|**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
+| Clients dont le pays d’inscription est | Tous les déplacements terminés d’ici le |
 |:-----|:-----|
 |Australie, Nouvelle-Zélande, Fidji  <br/> |1er juillet 2022  <br/> |
 |Japon  <br/> |1er juillet 2022  <br/> |
@@ -47,6 +47,7 @@ Regardez le centre Microsoft 365 message de confirmation lorsque les déplacemen
 |Norvège  <br/> |1er novembre 2022  <br/> |
 |Allemagne  <br/> |1er mai 2023  <br/> |
 |Brésil  <br/> |1er juin 2023  <br/> |
+|Suède  <br/> |1er juin 2024  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -56,18 +57,18 @@ Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique 
 
 Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une autre boîte aux lettres (sur laquelle l'utilisateur a des autorisations en lecture ou en écriture) dans Outlook Web Access à l'aide de la fonctionnalité « Dossier partagé ». Le tableau suivant indique comment fonctionne l'accès aux dossiers partagés au cours d'un déplacement de boîte aux lettres. Notez que les utilisateurs disposant d'autorisations complètes sur une boîte aux lettres partagée peuvent ouvrir la boîte aux lettres à l'aide d'Outlook Web Access lors du déplacement. 
   
-|**Configuration**|**Description**|
+| Configuration | Description |
 |:-----|:-----|
-|L'utilisateur dispose d'autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
+|L’utilisateur dispose d’autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
 |Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur A dispose de l’autorisation « Accès total » à la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le panneau de navigation gauche de Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’Outlook Web Access pendant le déplacement sans aucun impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
 Lors du déplacement de SharePoint Online, les données des services suivants sont également déplacées :
   
-- OneDrive Entreprise
+- OneDrive Entreprise
     
-- Microsoft 365 Services vidéo
+- Microsoft 365 services vidéo
     
 - Office dans un navigateur
     
@@ -75,9 +76,9 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Visio Pro pour Microsoft 365
     
-Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez éventuellement observer certains des effets suivants.
+Une fois le déplacement de vos données SharePoint Online terminé, vous pouvez voir certains des effets suivants.
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365 Services vidéo
+### <a name="microsoft-365-video-services"></a>Microsoft 365 Video Services
 
 - Le déplacement de vidéos prend plus de temps que le déplacement d'autres contenus dans SharePoint Online.
     

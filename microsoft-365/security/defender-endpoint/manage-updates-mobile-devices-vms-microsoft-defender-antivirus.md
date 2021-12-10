@@ -1,7 +1,7 @@
 ---
 title: Définir la façon dont les appareils mobiles sont mis à jour par Antivirus Microsoft Defender
 description: Gérer la façon dont les appareils mobiles, tels que les ordinateurs portables, doivent être mis à jour avec Antivirus Microsoft Defender de protection.
-keywords: mises à jour, protection, planification des mises à jour, batterie, appareil mobile, ordinateur portable, bloc-notes, opt-in, microsoft update, wsus, override
+keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d39f2de9d1dcfed8b81e2c4aba2350796005daa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3fc6d5a8b8fa7889f65f21111b3af82e124516b4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883640"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168089"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Gérer les mises à jour pour les appareils mobiles et les machines virtuelles
 
@@ -29,7 +29,8 @@ ms.locfileid: "60883640"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Les appareils mobiles et les ordinateurs VM peuvent nécessiter une configuration plus importante pour s’assurer que les mises à jour n’ont pas d’impact sur les performances.
 
@@ -53,7 +54,7 @@ Vous pouvez choisir Microsoft Update sur l’appareil mobile de l’une des mani
 
 - Modifiez le paramètre avec la stratégie de groupe.
 - Utilisez un script VBScript pour créer un script, puis exécutez-le sur chaque ordinateur de votre réseau.
-- Optez manuellement pour chaque ordinateur  de votre réseau via le menu Paramètres’utilisateur.
+- Choisissez manuellement chaque ordinateur de  votre réseau via le menu Paramètres’utilisateur.
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Utiliser la stratégie de groupe pour opter pour Microsoft Update
 
@@ -79,7 +80,7 @@ Vous pouvez choisir Microsoft Update sur l’appareil mobile de l’une des mani
 
 2. Sélectionnez **Options avancées.**
 
-3. Cochez la case **pour me fournir des mises à jour pour d’autres** produits Microsoft lorsque je met à jour Windows .
+3. Cochez la case **Donnez-moi les mises à jour d’autres** produits Microsoft lorsque je met à jour Windows .
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Empêcher les mises à jour des informations de sécurité lors de l’exécution sur batterie
 
@@ -93,7 +94,7 @@ Vous pouvez configurer Antivirus Microsoft Defender pour télécharger les mises
 
 3. Sélectionnez **stratégies** **puis modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des \>  \> **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez l’alimentation sur batterie **sur Désactivé.** Puis sélectionnez **OK**.
+4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des \>  \> **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez une batterie sur **Désactivé.** Puis sélectionnez **OK**.
 
 Cette action empêche le téléchargement des mises à jour de protection lorsque le PC est sur batterie.
 

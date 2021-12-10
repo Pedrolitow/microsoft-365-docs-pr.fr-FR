@@ -1,7 +1,7 @@
 ---
 title: Expérience microsoft Defender pour le point de terminaison (MDE) par le biais d’attaques simulées
 description: Pilotez votre Microsoft 365 Defender d’essai ou votre environnement pilote.
-keywords: Microsoft 365 Defender d’évaluation, essayer Microsoft 365 Defender, évaluer Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender pilote, cyber sécurité, menace persistante avancée, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
+keywords: Microsoft 365 Defender d’évaluation, essayez Microsoft 365 Defender, évaluez Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender  pilote, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,21 +21,25 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 93e5b0cb5a152868749a68d34ac476660b41cc92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 832d7095f635c51aefe17b1fa82f9e3b42e9e2d4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152405"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163985"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-mde-through-simulated-attacks"></a>Expérience microsoft Defender pour le point de terminaison (MDE) par le biais d’attaques simulées
+
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
 
 > [!TIP]
 >
 > - Découvrez les dernières améliorations apportées à Microsoft Defender pour le point de terminaison : Nouveautés [de Defender pour Point de terminaison .](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-Vous souhaitez peut-être faire l’expérience de Defender for Endpoint avant d’intégrer plusieurs appareils au service. Pour ce faire, vous pouvez exécuter des simulations d’attaques contrôlées sur quelques périphériques de test. Après avoir réalisé les attaques simulées, vous pouvez examiner la façon dont Defender pour le point de terminaison fait face à une activité malveillante et découvrir comment elle permet une réponse efficace.
+Vous souhaitez peut-être faire l’expérience de Defender for Endpoint avant d’intégrer plusieurs appareils au service. Pour ce faire, vous pouvez exécuter des simulations d’attaque contrôlée sur quelques périphériques de test. Après avoir réalisé les attaques simulées, vous pouvez examiner la façon dont Defender pour le point de terminaison fait face à des activités malveillantes et découvrir comment elle permet une réponse efficace.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -60,7 +64,7 @@ Lisez le document pas à pas fourni avec chaque scénario d’attaque. Chaque do
 4. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document pas à pas.
 
 > [!NOTE]
-> Les fichiers ou scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
+> Les fichiers ou les scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
 
 ## <a name="alternate-topic-text"></a>TEXTE DE LA RUBRIQUE DE REMPLACEMENT
 
@@ -73,11 +77,11 @@ Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
 - Scénarios d’attaque « Faire [vous-même »](https://securitycenter.windows.com/tutorials)
 - Simulateurs de menaces
 
-Vous pouvez également utiliser le service [de recherche avancée](advanced-hunting-overview.md) pour interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
+Vous pouvez également utiliser la recherche [avancée pour](advanced-hunting-overview.md) interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 
-Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://securitycenter.windows.com/tutorials)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
+Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://securitycenter.windows.com/tutorials)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
 
 > [!NOTE]
 > La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
@@ -93,7 +97,7 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [sc�
     > [!NOTE]
     > Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
     >
-    > ![Image de réinitialisation du mot de passe.](images/reset-password-test-machine.png)
+    > ![Image du mot de passe de réinitialisation.](images/reset-password-test-machine.png)
     >
     > L’appareil change son état en « Exécution de la réinitialisation du mot de passe », puis votre nouveau mot de passe vous sera présenté dans quelques minutes.
 
@@ -105,7 +109,7 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [sc�
 
 ### <a name="threat-simulator-scenarios"></a>Scénarios de simulateur de menaces
 
-Si vous avez choisi d’installer l’un des simulateurs de menaces pris en charge pendant l’installation de l’atelier, vous pouvez exécuter les simulations intégrées sur les périphériques du laboratoire d’évaluation.
+Si vous avez choisi d’installer l’un des simulateurs de menaces pris en charge pendant l’installation de l’atelier, vous pouvez exécuter les simulations intégrées sur les périphériques de laboratoire d’évaluation.
 
 L’exécution de simulations de menaces à l’aide de plateformes tierces est un bon moyen d’évaluer microsoft Defender pour les fonctionnalités de point de terminaison dans les limites d’un environnement de laboratoire.
 
@@ -125,7 +129,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
    Vous pouvez obtenir la galerie de simulations à partir de :
 
-   - Tableau de bord d’évaluation principal dans la **vignette de vue d’ensemble simulations** ou
+   - Tableau de bord d’évaluation principal dans la **vignette Vue d’ensemble simulations** ou
    - En naviguant à partir  du volet de navigation Évaluation et didacticiels \> **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
@@ -136,6 +140,6 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
     ![Image de l’onglet Simulations.](images/simulations-tab.png)
 
-Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender for Endpoint qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
+Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender pour le point de terminaison qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
 
-Recherchez des preuves d’attaque par le biais d’une recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
+Recherchez des preuves d’attaque par le biais d’un recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.

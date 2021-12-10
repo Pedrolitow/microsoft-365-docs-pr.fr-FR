@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 408f310f10324d8815a9d6d871b32a4ef540a24d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c2f98baae8ceafb04be939b007e76fe2badda62d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110258"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167837"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Outils et méthodes d’intégration pour les Windows dans Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Microsoft 365 risques internes](/microsoft-365/compliance/insider-risk-management)
 
@@ -46,7 +46,7 @@ Selon le point Windows que vous souhaitez intégrer, utilisez l’outil ou la m�
 
 Windows appareil | Outil ou méthode d’intégration
 :---|:---
-|<ul><li> Windows 10</li> <li>Windows Server 1803 et 2019 et 2022</li> <li>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br>   [Stratégie de groupe](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
+|<ul><li> Windows 10</li> <li>Windows Server 1803 et 2019 et 2022</li> <li>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br>   [Stratégie de groupe](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
 |<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Intégrer les versions précédentes de Windows](onboard-downlevel.md) [ou Microsoft Defender pour le cloud](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
 |<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Professionnel </li> <li> Windows 8.1 Entreprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)
 

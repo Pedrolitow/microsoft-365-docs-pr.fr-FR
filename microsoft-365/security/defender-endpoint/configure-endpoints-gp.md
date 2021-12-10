@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: 51950846b1e445bf9fecb3111e827e1ca9b6d1e4
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 264196cab7669b7c64a44a5be879e454d60685f0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962962"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168329"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
@@ -29,11 +29,11 @@ ms.locfileid: "60962962"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -77,7 +77,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 11. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
+12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
@@ -317,7 +317,7 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

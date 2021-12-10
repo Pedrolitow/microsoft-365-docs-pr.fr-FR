@@ -1,7 +1,7 @@
 ---
 title: Questions fréquemment posées sur la découverte d’appareils
 description: Trouvez des réponses aux questions fréquemment posées sur la découverte d’appareils
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,20 +18,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: df0488f8ae9aad5ab00b39f85d638fae2dc0eabc
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 52d9a939a75e012181183d8a6419f44868d1e509
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882704"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164069"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -103,7 +103,7 @@ Temporairement, l’état d’état d’état de l’appareil non gestioné sera
 Lorsque vous envisagez la découverte standard, vous vous demandez peut-être quelles sont les implications de l’analyse et si les outils de sécurité peuvent suspecter une telle activité comme malveillante. La sous-section suivante explique pourquoi, dans presque tous les cas, les organisations ne doivent pas avoir de préoccupations concernant l’activation de la découverte standard.  
 
 ### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>L’analyse est distribuée sur tous les Windows sur le réseau
-Par opposition aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, l’analyse de découverte standard de Microsoft Defender for Endpoint est lancée à partir de tous les appareils Windows intégrés rendant l’activité anormale et non anormale. L’analyse est gérée de manière centralisée à partir du cloud pour équilibrer la tentative d’analyse entre tous les appareils intégrés pris en charge dans le réseau.  
+Par opposition aux activités malveillantes, qui analysent généralement l’ensemble du réseau à partir d’un petit nombre d’appareils compromis, l’analyse de découverte standard de Microsoft Defender for Endpoint est lancée à partir de tous les appareils Windows intégrés rendant l’activité normale et non anormale. L’analyse est gérée de manière centralisée à partir du cloud pour équilibrer la tentative d’analyse entre tous les appareils intégrés pris en charge dans le réseau.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>L’analyse active génère une quantité négligeable de trafic supplémentaire
 En règle générale, les appareils non utilisés ne sont sondés qu’une seule fois par période de trois semaines et génèrent moins de 50 000 To de trafic. Les activités malveillantes incluent généralement des tentatives d’analyse répétitives élevées et, dans certains cas, une exfiltration de données qui génère une quantité importante de trafic réseau qui peut être identifiée comme une anomalie par les outils de surveillance du réseau. 

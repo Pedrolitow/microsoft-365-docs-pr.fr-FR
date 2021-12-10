@@ -14,14 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf57eb6e08278625ac8887985a39d355266f47d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cc1c2a5fc05b795c0fc69ebc8a3b50dbf556960b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962926"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165473"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
+
+
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 La protection du stockage amovible des contrôles d’appareil dans Microsoft Defender pour point de terminaison empêche les utilisateurs, les points de terminaison ou les deux d’utiliser un support de stockage amovible non autorisé.
 
@@ -100,7 +107,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Protection vou
 |---|---|---|---|
 |Classe Device|[Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, voir [la classe d’installation de l’appareil.](/windows-hardware/drivers/install/overview-of-device-setup-classes) Les deux liens suivants fournissent la liste complète des classes d’installation de périphériques. Les classes « Utilisation du système » font principalement référence à des appareils qui sont produits avec un ordinateur ou un ordinateur à partir de la fabrique, tandis que les classes « Fournisseur » font principalement référence à des appareils qui peuvent être connectés à un ordinateur/ordinateur existant : classes d’installation de périphériques [définies](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) par le système disponibles pour les fournisseurs - pilotes Windows et classes d’installation de périphériques définies par le système [réservées](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)à l’utilisation du système - pilotes Windows . **Remarque**: l’installation de l’appareil peut être appliquée à n’importe quel appareil, pas seulement au stockage amovible.|
 |ID principal|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows|L’ID principal inclut le stockage amovible, le CD/DVD et Windows appareil portable/WPD.|
-|ID d’appareil|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md); <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, voir Identificateurs [USB](/windows-hardware/drivers/install/standard-usb-identifiers)standard, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
+|ID d'appareil|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md); <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, voir Identificateurs [USB](/windows-hardware/drivers/install/standard-usb-identifiers)standard, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
 |ID matériel|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md) <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Une chaîne a identifié l’appareil dans le système, par exemple USBSTOR\DiskGeneric_Flash_Disk___8.07 ; **Remarque**: l’ID matériel n’est pas unique ; différents appareils peuvent partager la même valeur.|
 |ID d’instance|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md) <p> Installation d’appareil|Windows|Une chaîne identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |Nom convivial|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows|Chaîne attachée à l’appareil, par exemple, périphérique USB de disque mémoire générique|

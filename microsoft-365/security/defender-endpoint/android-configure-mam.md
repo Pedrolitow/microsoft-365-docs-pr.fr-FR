@@ -17,34 +17,35 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b497d93b18136bbc64f296c8277df1d483ec1541
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2382dc157120b34bf100cf320807e2683f64bbb8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335585"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165173"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurer Microsoft Defender pour les signaux de risque de point de terminaison à l’aide des stratégies de protection des applications (MAM)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
 Microsoft Defender pour endpoint sur Android, qui protège déjà les utilisateurs d’entreprise sur les scénarios de gestion des périphériques mobiles (MDM), étend désormais la prise en charge de la gestion des applications mobiles (MAM) pour les appareils qui ne sont pas inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles (MAM). Cette fonctionnalité vous permet de gérer et de protéger les données de votre organisation au sein d’une application.
 
-Les informations sur les menaces Microsoft Defender pour Endpoint sur Android sont utilisées par les stratégies intune App Protection pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation restent sécurisées ou contenues dans une application gérée. Une application gérée dispose de stratégies de protection des applications qui lui sont appliquées et peut être gérée par Intune.  
+Les informations sur les menaces Microsoft Defender pour Endpoint sur Android sont utilisées par les stratégies intune App Protection pour protéger ces applications. Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une application gérée dispose de stratégies de protection des applications qui lui sont appliquées et peut être gérée par Intune.  
 
 Microsoft Defender pour point de terminaison sur Android prend en charge les deux configurations de MAM
 - **Intune MDM + MAM**: les administrateurs informatiques peuvent uniquement gérer les applications à l’aide des stratégies de protection des applications sur les appareils inscrits auprès de la gestion des périphériques mobiles Intune.
-- **MAM sans** inscription d’appareils : MAM sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies de [protection](/mem/intune/app/app-protection-policy) des applications sur les appareils non inscrits auprès de la gestion des appareils mobiles Intune. Cela signifie que les applications peuvent être gérées par Intune sur les appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications à l’aide des deux configurations ci-dessus, les clients doivent utiliser Intune [dans Microsoft Endpoint Manager’administration centrale](https://go.microsoft.com/fwlink/?linkid=2109431)
+- **MAM sans** inscription d’appareils : MAM sans inscription d’appareil, ou MAM-WE, permet aux administrateurs informatiques de gérer les applications à l’aide de stratégies de [protection](/mem/intune/app/app-protection-policy) des applications sur les appareils non inscrits auprès de la gestion des appareils mobiles Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits auprès de fournisseurs EMM tiers. Pour gérer les applications à l’aide des deux configurations ci-dessus, les clients doivent utiliser Intune [dans Microsoft Endpoint Manager’administration centrale](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 Pour activer cette fonctionnalité, un administrateur doit configurer la connexion entre Microsoft Defender pour Endpoint et Intune, créer la stratégie de protection des applications et appliquer la stratégie sur les appareils et applications ciblés. 
  
-Les utilisateurs finaux doivent également prendre des mesures pour installer Microsoft Defender pour point de terminaison sur leur appareil et activer le flux d’intégration.
+Les utilisateurs finaux doivent également prendre des mesures pour installer Microsoft Defender pour le point de terminaison sur leur appareil et activer le flux d’intégration.
 
 
 ## <a name="admin-prerequisites"></a>Conditions préalables pour l’administrateur
@@ -81,24 +82,24 @@ Bloquez l’accès ou effacez les données d’une application gérée en foncti
 Microsoft Defender pour le point de terminaison peut être configuré pour envoyer des signaux de menace à utiliser dans les stratégies de protection des applications (APP, également appelée MAM). Avec cette fonctionnalité, vous pouvez utiliser Microsoft Defender pour point de terminaison pour protéger les applications gérées.
 
 1. Créer une stratégie <br>
-Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation restent sécurisées ou contenues dans une application gérée. Une stratégie peut être une règle appliquée lorsque l’utilisateur tente d’accéder ou de déplacer des données « d’entreprise », ou un ensemble d’actions qui sont interdites ou surveillées lorsque l’utilisateur se trouve à l’intérieur de l’application. 
+Les stratégies de protection des applications (APP) sont des règles qui garantissent que les données d’une organisation sont sécurisées ou restent dans une application managée. Une stratégie peut être une règle qui est appliquée lorsque l’utilisateur tente d’accéder à des données « d’entreprise » ou de les déplacer, ou s’il tente un ensemble d’actions interdites ou surveillées lorsqu’il se trouve dans l’application. 
 
 ![Image de création de stratégie](images/create-policy.png)
 
 2. Ajouter des applications <br>
     a. Choisissez la façon dont vous souhaitez appliquer cette stratégie aux applications sur différents appareils. Ajoutez ensuite au moins une application. <br>
     Utilisez cette option pour spécifier si cette stratégie s’applique aux appareils non utilisés. Dans le cas d’Android, vous pouvez spécifier que la stratégie s’applique aux appareils Android Enterprise, Administrateur d’appareil ou Appareils non utilisés. Vous pouvez également choisir de cibler votre stratégie sur les applications sur les appareils de n’importe quel état de gestion.
-Étant donné que la gestion des applications mobiles ne nécessite pas la gestion des appareils, vous pouvez protéger les données d’entreprise sur les appareils gérés et non gérés. La gestion est centrée sur l’identité de l’utilisateur, ce qui supprime l’exigence de gestion des appareils. Les entreprises peuvent utiliser des stratégies de protection des applications avec ou sans mdm en même temps. Par exemple, considérez un employé qui utilise à la fois un téléphone émis par l’entreprise et sa propre tablette personnelle. Le téléphone de l’entreprise est inscrit dans la gestion des périphériques de gestion des périphériques et protégé par les stratégies de protection des applications, tandis que l’appareil personnel est protégé uniquement par les stratégies de protection des applications.
+Étant donné que la gestion des applications mobiles ne nécessite pas de gestion des appareils, vous pouvez protéger les données d’entreprise à la fois sur les appareils gérés et non gérés. La gestion est centrée autour de l’identité de l’utilisateur, ce qui supprime la nécessité de gérer les appareils. Les entreprises peuvent utiliser des stratégies de protection des applications avec ou sans mdm en même temps. Considérons, par exemple, un employé qui utilise à la fois un téléphone fourni par l’entreprise et sa propre tablette personnelle. Le téléphone de l’entreprise est inscrit dans la gestion des périphériques de gestion des périphériques multi-appareils et protégé par les stratégies de protection des applications, tandis que l’appareil personnel est protégé uniquement par les stratégies de protection des applications.
 
     b. Sélectionner des applications<br>
-    Une application gérée est une application dont des stratégies de protection d’application lui sont appliquées et qui peut être gérée par Intune. Toute application intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou enveloppée par le App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de stratégies de protection des applications Intune. Consultez la liste officielle des [applications Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été conçues à l’aide de ces outils et sont disponibles pour une utilisation publique.
+    Une application gérée est une application à laquelle des stratégies de protection d’application sont appliquées et pouvant être gérée par Intune. Toute application qui a été intégrée au [SDK Intune](/mem/intune/developer/app-sdk) ou enveloppée par le App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) peut être gérée à l’aide de stratégies de protection des applications Intune. Voir la liste officielle des [applications protégées Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) qui ont été construites à l'aide de ces outils et sont disponibles pour un usage public.
 
     *Exemple : Outlook en tant qu’application gérée*
 
     ![Image Outlook en tant qu’application gérée](images/managed-app.png)
 
  3. Définissez les exigences de sécurité de la signature pour votre stratégie de protection. <br>
-Sélectionnez **Paramètre > niveau de menace** maximum autorisé de l’appareil dans Les **conditions** d’appareil et entrez une valeur. Ensuite,  **sélectionnez Action : « Bloquer l’accès**». Microsoft Defender pour point de terminaison sur Android partage ce niveau de menace d’appareil.
+Sélectionnez **Paramètre > niveau de menace** d’appareil autorisé maximum dans Les **conditions** d’appareil et entrez une valeur. Ensuite,  **sélectionnez Action : « Bloquer l’accès**». Microsoft Defender pour point de terminaison sur Android partage ce niveau de menace d’appareil.
 
     ![Image du lancement conditionnel](images/conditional-launch.png)
 
@@ -121,7 +122,7 @@ Sélectionnez **Paramètre > niveau de menace** maximum autorisé de l’apparei
 
 2. Cliquez sur **Continuer**. Un écran s’affiche, qui recommande le téléchargement et la configuration de Microsoft Defender pour Endpoint sur l’application Android.
 
-3. Sélectionnez **Télécharger**. Vous serez redirigé vers l’App Store (Google Play). 
+3. Sélectionnez **Télécharger.** Vous serez redirigé vers l’App Store (Google Play). 
 
 4.  Installez l’application Microsoft Defender pour point de terminaison (mobile) et lancez à nouveau l’écran d’intégration de l’application gérée.
 
@@ -133,7 +134,7 @@ Sélectionnez **Paramètre > niveau de menace** maximum autorisé de l’apparei
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

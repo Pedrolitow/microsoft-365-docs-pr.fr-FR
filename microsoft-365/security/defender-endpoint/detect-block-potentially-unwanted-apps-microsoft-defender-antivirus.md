@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166433"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374531"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 

@@ -1,7 +1,7 @@
 ---
 title: Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 description: Corriger les faiblesses de sécurité découvertes par le biais de recommandations de sécurité et créer des exceptions si nécessaire, Gestion des menaces et des vulnérabilités.
-keywords: Correction tvm de Microsoft Defender pour les points de terminaison, Microsoft Defender pour endpoint tvm, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, tvm correction sccm
+keywords: Correction tvm de Microsoft Defender pour les points de terminaison, tvm Microsoft Defender pour les points de terminaison, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, sccm de correction tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8126021051f939a08fb0ea5ef6bd07d8f67c1662
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c4f00e28e4dfa1c7806167c789a869be70c6fb78
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883400"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164261"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

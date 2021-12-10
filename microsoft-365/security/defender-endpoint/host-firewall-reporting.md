@@ -15,21 +15,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 843a359459eef01d6c7aae35e924a462e537d34e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e8124e9f2445ad2bf2b9fd6f5c56869d5feaaa07
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110186"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164465"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si vous êtes un administrateur, vous pouvez désormais héberger des rapports de pare-feu sur [le portail Microsoft 365 Defender.](https://security.microsoft.com) Cette fonctionnalité vous permet d’afficher les rapports de pare-feu Windows 10, Windows 11, Windows Server 2019 et Windows Server 2022 à partir d’un emplacement centralisé.
 

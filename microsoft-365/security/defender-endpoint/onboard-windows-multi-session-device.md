@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110570"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168077"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
 6 minutes de lecture
 
-S’applique à :
-
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows sessions multiples s’exécutant sur Azure Virtual Desktop (AVD)
 
 Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Azure Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Azure Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.

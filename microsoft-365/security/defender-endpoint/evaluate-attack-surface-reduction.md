@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e16899f831a8c7e937ea1c1600591572f8ecb445
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6ed8100db6bb5eee14276ef99c959d2ee29a0879
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882116"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165353"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Évaluer les règles de réduction de la surface d’attaque
 
@@ -27,7 +27,7 @@ ms.locfileid: "60882116"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -38,11 +38,11 @@ Définissez des règles de réduction de la surface d’attaque pour les apparei
 
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
-- Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
+- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 -  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
-- Windows Server 2022
+- Windows Server 2022
 
 > [!WARNING]
 > L’activation des règles de réduction du service d’Windows Server 2016 risque d’entraîner des résultats inattendus et d’avoir un impact sur les performances du serveur. Nous vous déconseillons d’activer ou de déployer des règles de réduction de la surface d’attaque sur des plateformes non pris en charge.

@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217077"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165593"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -37,12 +38,12 @@ Si vous recevez un message d’erreur, Microsoft 365 Defender fournit une explic
 
 ## <a name="no-subscriptions-found"></a>Aucun abonnement trouvé
 
-Si, lors de l’accès à Microsoft 365 Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail, n’a pas de licence Microsoft Defender pour endpoint.
+Si, lors de l’accès à Microsoft 365 Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail n’a pas de licence Microsoft Defender pour le point de terminaison.
 
 Raisons potentielles :
 
 - Les licences Windows E5 et Office E5 sont des licences distinctes.
-- La licence a été achetée, mais elle n’a pas été mise en service pour cette instance Azure AD.
+- La licence a été achetée, mais elle n’a pas été mise en service Azure AD instance.
   - Il peut s’agit d’un problème de mise en service de licence.
   - Il se peut que vous avez mis en service par inadvertance la licence sur une autre Microsoft Azure AD que celle utilisée pour l’authentification dans le service.
 

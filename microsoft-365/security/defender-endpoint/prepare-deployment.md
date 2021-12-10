@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e577108f92abe0c704cd812e61445f8d0f83f13
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49e4fa7d283219c3eaf981184f1239cf80534e38
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191742"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166085"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer le déploiement de Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -48,7 +48,7 @@ La préparation est essentielle pour tout déploiement réussi. Dans cet article
 
 La section suivante sert à identifier toutes les parties prenantes impliquées dans le projet et qui doivent approuver, réviser ou rester informées.
 
-Ajoutez des parties prenantes au tableau ci-dessous, le cas échéant, pour votre organisation.
+Ajoutez les parties prenantes au tableau ci-dessous selon le cas pour votre organisation.
 
 - SO = Approuver le projet
 - R = Examiner ce projet et fournir une entrée
@@ -86,13 +86,13 @@ Cette section permet de s’assurer que votre environnement est bien compris par
 
 ## <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
-Microsoft recommande d’utiliser le concept de privilèges minimum. Defender for Endpoint tire parti des rôles intégrés dans Azure Active Directory. Microsoft recommande de [passer en revue les différents](/azure/active-directory/roles/permissions-reference) rôles disponibles et de choisir celui qui vous permet de répondre à vos besoins pour chaque personnage de cette application. Certains rôles devront peut-être être temporairement et supprimés une fois le déploiement terminé.
+Microsoft recommande d’utiliser le concept de privilèges minimum. Defender for Endpoint tire parti des rôles intégrés dans Azure Active Directory. Microsoft recommande de [passer en revue les différents rôles](/azure/active-directory/roles/permissions-reference) disponibles et de choisir celui qui vous permet de répondre à vos besoins pour chaque personnage de cette application. Certains rôles devront peut-être être temporairement appliqués et supprimés une fois le déploiement terminé.
 
 <br>
 
 ****
 
-|Personas|Rôles|Rôle Azure AD (si nécessaire)|Affecter à|
+|Personas|Rôles|Azure AD rôle (si nécessaire)|Affecter à|
 |---|---|---|---|
 |Administrateur de sécurité||||
 |Analyste de sécurité||||
@@ -103,7 +103,7 @@ Microsoft recommande d’utiliser le concept de privilèges minimum. Defender fo
 
 Microsoft recommande [d’utiliser Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs ayant des autorisations d’annuaire.
 
-Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
+Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
 
 - **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur Globa ou Administrateur de la sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
 
@@ -122,7 +122,7 @@ Le tableau d’exemple suivant sert à identifier la structure du Centre des op�
 |Niveau|Description|Autorisation requise|
 |---|---|---|
 |Niveau 1|**Équipe des opérations de sécurité locale/équipe informatique** <p> Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.||
-|Niveau 2|**Équipe des opérations de sécurité régionales** <p> Cette équipe peut voir tous les appareils pour leur région et effectuer des actions de correction.|Afficher les données|
+|Niveau 2|**Équipe des opérations de sécurité régionales** <p> Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.|Afficher les données|
 |Niveau 3|**Équipe des opérations de sécurité globale** <p> Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail.|Afficher les données <p> Alertes examen Actions de correction actives <p> Alertes examen Actions de correction actives <p> Gérer les paramètres système du portail <p> Gérer les paramètres de sécurité|
 ||||
 
@@ -140,12 +140,12 @@ Choisissez le composant de Defender for Endpoint à utiliser et supprimez ceux q
 
 |Composant|Description|Classement des commandes d’adoption|
 |---|---|---|
-|Endpoint Detection & Response (PEPT)|Les fonctionnalités de protection évolutive des points de terminaison de Defender for Endpoint fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’étendue d’une faille et prendre des mesures correctives pour remédier aux menaces. <p> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)|1|
-|Gestion & des menaces et des vulnérabilités (TVM)|Threat & Vulnerability Management est un composant de Microsoft Defender pour endpoint et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <ul><li>Informations sur la détection et la réponse au point de terminaison en temps réel (EDR) corrélées avec les vulnérabilités de point de terminaison</li><li>Contexte de vulnérabilité d’appareil précieux pendant les enquêtes d’incident</li><li>Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager</li></ul> <p> [En savoir plus](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).|2|
+|Endpoint Detection & Response (PEPT)|Les fonctionnalités de protection évolutive des points de terminaison de Defender for Endpoint fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’étendue d’une faille et prendre des mesures correctives pour remédier aux menaces. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)|1|
+|Gestion & des menaces et des vulnérabilités (TVM)|Threat & Vulnerability Management est un composant de Microsoft Defender pour endpoint et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <ul><li>Informations sur la détection et la réponse au point de terminaison en temps réel (EDR) corrélées avec les vulnérabilités de point de terminaison</li><li>Contexte de vulnérabilité d’appareil précieux pendant les examens d’incident</li><li>Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager</li></ul> <p> [En savoir plus](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).|2|
 |Protection de nouvelle génération (NGP)|Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants : <ul><li>Protection fournie par le cloud pour une détection et un blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.</li><li>Analyse toujours continue à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelée « protection en temps réel »).</li><li>Mises à jour de la protection dédiées, fondées sur l’apprentissage automatique, l’analyse humaine et automatisée du Big Data, et des recherches approfondies sur la résistance aux menaces.</li></ul> <p> [En savoir plus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).|3|
-|Réduction de la surface d’attaque (ASR)|Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. <br> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4 |
-|Auto Investigation & Remediation (AIR)|Microsoft Defender pour le point de terminaison utilise des examens automatisés pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée exploite divers algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures correctives immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. <p> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|Non applicable|
-|Spécialistes des menaces Microsoft (MTE)|Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées. <p> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|Non applicable|
+|Réduction de la surface d’attaque (ASR)|Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. <br> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)|4|
+|Auto Investigation & Remediation (AIR)|Microsoft Defender pour le point de terminaison utilise des examens automatisés pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée exploite divers algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures correctives immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)|Non applicable|
+|Spécialistes des menaces Microsoft (MTE)|Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées. <p> [En savoir plus.](/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)|Non applicable|
 
 ## <a name="next-step"></a>Étape suivante
 

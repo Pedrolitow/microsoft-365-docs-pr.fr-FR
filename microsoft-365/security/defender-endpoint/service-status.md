@@ -14,28 +14,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 728d152d8c755464669d59e11746566472acd737
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ab79b6e2aa1653e6b2987434fcfdc49e1050b630
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553867"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165893"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Vérifier l’état du service Point de terminaison Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-servicestatus-abovefoldlink)
 
 **L’état** du service fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels. S’il existe des problèmes, vous verrez des informations telles que le moment où le problème a été détecté, la cause racine préliminaire et le temps de résolution attendu.
 
-Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état d’état sain.
+Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état sain.
 
-Vous pouvez afficher des détails sur l’état  du service en cliquant sur la vignette à partir du tableau de bord Opérations de sécurité ou en sélectionnant le menu d’état du **service** dans le volet de navigation.
+Vous pouvez afficher des détails sur l’état  du service en cliquant sur la vignette du tableau de bord Opérations de sécurité ou en sélectionnant le menu d’état du **service** dans le volet de navigation.
 
 La page **Détails de l’état** du service possède les onglets suivants :
 
@@ -44,7 +45,7 @@ La page **Détails de l’état** du service possède les onglets suivants :
 
 ## <a name="current-status"></a>État actuel
 
-**L’onglet État** actuel affiche l’état actuel du service Defender for Endpoint. Lorsque le service s’exécute sans problème, l’état d’un service sain s’affiche. S’il existe des problèmes, les détails de service suivants sont affichés pour vous aider à mieux comprendre le problème :
+**L’onglet État** actuel affiche l’état actuel du service Defender for Endpoint. Lorsque le service s’exécute sans problème, l’état du service est indiqué. S’il existe des problèmes, les détails de service suivants sont affichés pour vous aider à mieux comprendre le problème :
 
 - Date et heure de détection du problème
 - Brève description du problème

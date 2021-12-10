@@ -15,20 +15,21 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 78ee4e8beba06c61ee15f76f5e3bdf669c809884
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6ea89e3e062cfa0ab5a4bd684fed309a041db769
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883328"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168281"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses
 
 **S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par des processus Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par le processus de Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurer et valider des exclusions
 

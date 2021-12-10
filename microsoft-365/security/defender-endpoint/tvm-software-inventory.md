@@ -1,7 +1,7 @@
 ---
 title: Inventaire logiciel dans Gestion des menaces et des vulnérabilités
 description: La page d’inventaire des logiciels du point de terminaison de Microsoft Defender Gestion des menaces et des vulnérabilités le nombre de faiblesses et de vulnérabilités détectées dans les logiciels.
-keywords: Gestion des menaces et des vulnérabilités, Microsoft Defender pour le point de terminaison, Inventaire logiciel Microsoft Defender pour les points de terminaison, Microsoft Defender pour les & gestion des vulnérabilités de menaces de point de terminaison, Inventaire logiciel microsoft Defender pour les menaces de point de terminaison & gestion des vulnérabilités, inventaire logiciel tvm de Microsoft Defender pour endpoint, inventaire des logiciels tvm
+keywords: Gestion des menaces et des vulnérabilités, Microsoft Defender pour le point de terminaison, Inventaire logiciel Microsoft Defender pour les points de terminaison, Microsoft Defender pour les menaces de point de terminaison & gestion des vulnérabilités, Microsoft Defender pour endpoint threat & gestion des vulnérabilités  inventaire des logiciels, Inventaire logiciel Microsoft Defender pour endpoint tvm, inventaire des logiciels tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,27 +16,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: b0e32fe31b69149bac4bac1796a0260763e9a078
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883832"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164237"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 L’inventaire logiciel dans Gestion des menaces et des vulnérabilités liste des logiciels connus de votre organisation avec les [énumérations officielles de plateforme commune (CPE)](https://nvd.nist.gov/products/cpe). Les produits logiciels sans CPE officiel n’ont pas de vulnérabilités publiées. Il inclut également des détails tels que le nom du fournisseur, le nombre de faiblesses, les menaces et le nombre d’appareils exposés.
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Dans le domaine de la découverte, nous tirent parti du même ensemble de signaux qui est responsable de l’évaluation de la détection et de la vulnérabilité dans Microsoft Defender pour les fonctionnalités de détection et de réponse des points de [terminaison.](overview-endpoint-detection-response.md)
 

@@ -16,19 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 13c8591d03bd0c4c6649f6afbdb383ad54089499
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f6429afa9b5e038b44a60c35754a0a3db93c4c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883556"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164921"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +52,7 @@ La protection réseau nécessite Windows 10 Professionnel ou Enterprise, et Anti
 
 |Version de Windows|Antivirus Microsoft Defender|
 |---|---|
-|Windows 10 version 1709 ou ultérieure <p> Windows 11 <p> Windows Serveur 1803 ou ultérieur|[Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) et la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud doivent être activées|
+|Windows 10 version 1709 ou ultérieure <p> Windows 11 <p> Windows Server 1803 ou ultérieur|[Antivirus Microsoft Defender protection en temps réel](configure-real-time-protection-microsoft-defender-antivirus.md) et la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud doivent être activées|
 |
 
 Après avoir activé les services, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions entre les services et vos appareils (également appelés points de terminaison).
@@ -112,9 +112,9 @@ Voici un exemple de fonctionnement :
 
 1. Supposons qu’un utilisateur tente d’accéder à un site web sur son appareil. Le site est hébergé sur un domaine dangereux et il doit être bloqué par la protection du réseau.  
 
-2. La négociation triple via TCP/IP commence. Avant d’être terminée, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple est terminé, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
+2. La négociation triple via TCP/IP commence. Avant d’être terminée, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple est terminé, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); c’est lorsque la négociation triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
 
-3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec l’actionType de `ConnectionSuccess` .
+3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec le type d’action `ConnectionSuccess` de .
 
 ## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considérations à prendre en compte Windows de bureau virtuel exécutant Windows 10 Entreprise multisess session
 

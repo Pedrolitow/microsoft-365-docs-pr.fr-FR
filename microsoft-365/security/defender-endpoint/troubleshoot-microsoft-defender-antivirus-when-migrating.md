@@ -15,20 +15,20 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a4fe04d563cd531e1f17916fcb54164e5010b62
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c1b60b66977c4f93591bce20a5cf6ace0b7fc567
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882476"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168005"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 Vous trouverez de l’aide ici si vous rencontrez des problèmes lors de la migration d’une solution de sécurité tierce vers Antivirus Microsoft Defender.
@@ -52,7 +52,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d’événement di
 ID d’événement|Nom du journal|Description|Source
 ---|---|---|---
 15 |Application|Mise à jour Windows Defender statut de l’SECURITY_PRODUCT_STATE_OFF.|Centre de sécurité
-5007|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender La configuration a changé. S’il s’agit d’un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 <p> **Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender configuration a changé. S’il s’agit d’un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 <p> **Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender recherche de logiciels espions et d’autres logiciels potentiellement indésirables est désactivée.|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Comment savoir si Antivirus Microsoft Defender ne démarre pas car un antivirus tiers est installé
@@ -126,7 +126,7 @@ Votre administrateur imaginant peut avoir définie la stratégie de **[sécurit�
 Antivirus Microsoft Defender s’active automatiquement si aucun autre antivirus n’est actif. Vous devez désactiver complètement l’antivirus tiers pour vous assurer Antivirus Microsoft Defender’exécuter avec toutes les fonctionnalités.
 
 > [!WARNING]
-> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv,* *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
+> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv*, *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
 
 Le mode passif est disponible si vous commencez à utiliser Microsoft Defender pour endpoint et un antivirus tiers avec Antivirus Microsoft Defender. Le mode passif permet Antivirus Microsoft Defender analyser les fichiers et de se mettre à jour, mais il ne remédie pas aux menaces. En outre, la surveillance du comportement via [la Protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel n’est pas disponible en mode passif, sauf si la protection contre la perte de données de point de terminaison [(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) est déployée.
 

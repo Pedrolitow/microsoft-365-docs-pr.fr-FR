@@ -16,19 +16,20 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: aec2283b1d55e395f0080d412a3ea0a836cc8b39
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ec916b008ddb3e0669111efe2bd493c709327296
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882332"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168257"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Par défaut, Antivirus Microsoft Defender paramètres déployés via un objet de stratégie de groupe sur les points de terminaison de votre réseau empêcheront les utilisateurs de modifier localement les paramètres. Vous pouvez le modifier dans certains cas.
 

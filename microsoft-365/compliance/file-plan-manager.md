@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 47f9c3646968dc54aaa9b2d78182585560a8ba1f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555076"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372767"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -135,7 +135,11 @@ Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles �
 
    ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide](../media/file-plan-blank-template-option.png)
 
-3. Une fois le modèle téléchargé, ajoutez une ligne pour chaque étiquette, puis enregistrez le fichier. Consultez [la section suivante](#information-about-the-label-properties-for-import) pour obtenir des informations qui décrivent les propriétés et les valeurs valides de chaque propriété. 
+3. Une fois le modèle téléchargé, ajoutez une ligne pour chaque étiquette, puis enregistrez le fichier. Consultez [la section suivante](#information-about-the-label-properties-for-import) pour obtenir des informations qui décrivent les propriétés et les valeurs valides de chaque propriété.
+    
+    Exemple de modèle rempli :
+    
+    ![Modèle de plan de fichier avec des informations renseignées.](../media/file-plan-filled-out-template.png)
 
 4. Sélectionnez **Télécharger fichier** pour télécharger le modèle rempli.
     

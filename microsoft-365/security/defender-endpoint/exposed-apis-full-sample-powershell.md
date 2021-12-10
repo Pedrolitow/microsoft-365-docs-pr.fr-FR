@@ -18,18 +18,19 @@ ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c0589818e35ef065f41f40f3b101ba0daab060b1
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6b1f501b942512500c11c7f9fe1e9308d67706e9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588372"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165317"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

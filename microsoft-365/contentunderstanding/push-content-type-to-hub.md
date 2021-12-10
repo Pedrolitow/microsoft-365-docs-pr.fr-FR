@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-ms.openlocfilehash: bf16a9700cd2d171486caacf7037f34e9fbacf7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dcd4bae638a9193e1fba2c0719339a5ddedc18d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195436"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372851"
 ---
 # <a name="push-content-types-to-a-hub"></a>Envoyer (push) des types de contenu à un hub
 
@@ -43,6 +43,6 @@ Pour envoyer (push) des types de contenu à un hub
 
 Lors du premier envoi (push) d’un type de contenu à un hub existant et à ses sites associés, la mise à jour des paramètres sur le site peut prendre jusqu’à une heure à compter de la visite du hub ou des sites associés. Pour les nouvelles associations au hub, ce temps d’attente ne sera pas nécessaires, et la prise en compte des paramètres ne prendra que quelques minutes.
 
-Une fois les paramètres mis à jour, le type de contenu avec ces paramètres sera disponible dans tout site récemment associé avec le hub dans quelques minutes. Ensuite, le type de contenu est automatiquement ajouté à la nouvelle liste ou bibliothèque quelques minutes après la création de celle-ci. Un type de contenu envoyé (push) est ajouté à une bibliothèque de documents uniquement s’il provient directement ou indirectement du type de contenu Document. D’autre part, un type de contenu est ajouté à une liste uniquement s’il ne provient pas directement ou indirectement du type de contenu Document.
+Une fois les paramètres mis à jour, le type de contenu avec ces paramètres sera disponible dans tout site récemment associé avec le hub dans quelques minutes. L’affichage de la bibliothèque par défaut sera changé en l’un de ces affichages créés automatiquement. Ensuite, le type de contenu est automatiquement ajouté à la nouvelle liste ou bibliothèque quelques minutes après la création de celle-ci. Un type de contenu envoyé (push) est ajouté à une bibliothèque de documents uniquement s’il provient directement ou indirectement du type de contenu Document. D’autre part, un type de contenu est ajouté à une liste uniquement s’il ne provient pas directement ou indirectement du type de contenu Document.
 
 ## <a name="see-also"></a>Voir aussi

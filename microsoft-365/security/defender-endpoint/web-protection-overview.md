@@ -15,20 +15,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 004c3c3617f97fe9b37037a5af7d55ed27bc664c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 503db220cc9df0d643a9ad9a0b76b34cae05e88d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106648"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164717"
 ---
 # <a name="web-protection"></a>Protection Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -136,7 +137,7 @@ Le tableau ci-dessous présente les réponses et leurs fonctionnalités corrél�
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|Indicateurs personnalisés|
-|CasbPolicy|Defender pour les applications cloud|
+|CasbPolicy|Defender for Cloud Apps|
 |Malveillant|Menaces web|
 |Hameçonnage|Menaces web|
 |||

@@ -16,21 +16,22 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f1ecba248046755a9258ffd94da66859a26a0c6d
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 1ce212bf01b8c464760192a4bbd6355498d19c3c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122236"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164129"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Vous pouvez déployer, gérer et signaler les Antivirus Microsoft Defender de plusieurs façons.
 
@@ -48,7 +49,7 @@ Vous verrez également des liens supplémentaires pour :
 
 Outil|Options de déploiement (<a href="#fn2" id="ref2">2</a>)|Options de gestion (configuration et stratégie à l’échelle du réseau ou déploiement de base) ([3](#fn3))|Options de rapport
 ---|---|---|---
-Microsoft Intune|[Ajouter des paramètres de protection des points de terminaison dans Intune](/intune/endpoint-protection-configure)|[Configurer les paramètres de restriction d’appareil dans Intune](/intune/device-restrictions-configure)| [Utiliser la console Intune pour gérer les appareils](/intune/device-management)
+Microsoft Intune|[Ajouter des paramètres de protection des points de terminaison dans Intune](/intune/endpoint-protection-configure)|[Configurer les paramètres de restriction d’appareil dans Intune](/intune/device-restrictions-configure)| [Utiliser la console Intune pour gérer les appareils](/intune/device-management)
 Microsoft Endpoint Manager ([1](#fn1))|Utiliser le rôle [Endpoint Protection de site point][] et [activer Endpoint Protection avec les paramètres client personnalisés][]|Avec [stratégies anti-programme malveillant par défaut et personnalisées][] et [gestion des clients][]|Avec les valeurs par défaut [Espace de travail Surveillance de Configuration Manager][] et [alertes par courrier électronique][]
 Stratégie de groupe et Active Directory (joint au domaine)|Utilisez un objet de stratégie de groupe pour déployer les modifications de configuration et Antivirus Microsoft Defender est activé.|Utiliser des objets de stratégie de groupe pour [Configurer les options de mise à jour pour Antivirus Microsoft Defender][] et [Configurer les fonctionnalités Windows Defender][]|Les rapports de point de terminaison ne sont pas disponibles avec la stratégie de groupe. Vous pouvez générer une liste de [stratégies de groupe pour déterminer si des paramètres ou des stratégies ne sont pas appliqués][]
 PowerShell|Déployer avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utilisez les cmdlets [Set-MpPreference] et [Update-MpSignature] disponibles dans le module Defender.|Utiliser les cmdlets [Get- disponibles dans le module Defender][]

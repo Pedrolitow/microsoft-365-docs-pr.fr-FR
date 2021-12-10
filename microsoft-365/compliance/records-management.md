@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158165"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165197"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -91,7 +91,7 @@ Une étiquette de rétention standard comporte des paramètres et des actions de
 
 Notes de bas de page :
 
-<sup>1</sup> Prise en charge par OneDrive et Exchange en conservant une copie dans un emplacement sécurisé, mais bloqué par SharePoint.
+<sup>1</sup> Pour SharePoint et OneDrive, peut être bloqué en tant que paramètre **client dans les paramètres de gestion des enregistrements Centre de conformité Microsoft 365 > Gestion des enregistrements Suppression des** > **étiquettes** >  **de rétention des**  >  **éléments**.
 
 Lorsque vous appliquez une étiquette de rétention à un élément de liste qui contient une pièce jointe au document, ce document n’hérite pas des paramètres de rétention et peut être supprimé de l’élément de liste. En comparaison, si cet élément de liste a été déclaré comme un enregistrement avec une étiquette de rétention, la pièce jointe au document hériterait des paramètres de rétention et n’a pas pu être supprimée.
 

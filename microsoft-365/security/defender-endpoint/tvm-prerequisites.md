@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 343a5fd1033a6d954c7cd62e2558a4b401f69b20
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881743"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165545"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations : Gestion des menaces et des vulnérabilités
 
@@ -27,7 +27,7 @@ ms.locfileid: "60881743"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,12 +41,12 @@ Assurez-vous que vos appareils :
 
 - Installez et déployez les mises à jour obligatoires suivantes dans votre réseau pour augmenter les taux de détection de l’évaluation des vulnérabilités :
 
-  > Débloquer | Numéro et lien de la mise à jour de sécurité de la KB
+  > Version | Numéro et lien de la mise à jour de sécurité de la KB
   > :---|:---
-  > Windows 10 Version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-  > Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) et [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-  > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-  > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+  > Windows 10 version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10 version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) et [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+  > Windows 10 version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+  > Windows 10 version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Sont intégrés à [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) et [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) pour vous aider à résoudre les menaces trouvées par les Gestion des menaces et des vulnérabilités. Si vous utilisez Configuration Manager, mettez à jour votre console vers la dernière version.
 

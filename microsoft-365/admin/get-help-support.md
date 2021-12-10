@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 9ac6d422de569bf990528af6b25bf57a6c0f3ba1
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6109498aed5522e0ad7c128208463f33f99eeba2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311933"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370031"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -48,7 +48,7 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Allez dans le centre d'administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration?](../business-video/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si vous recevez un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action, vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Qui dispose d’autorisations d’administrateur dans mon entreprise ?] ([Vue d’ensemble du Centre d'administration Microsoft 365](../admin/admin-overview/admin-center-overview.md).
 2. Dans le coin inférieur droit de la page, sélectionnez **Aide & support technique.**
 3. Tapez une question ou un mot clé dans la zone de texte. Si vous obtenez une liste de listes, sélectionnez celle qui est la plus proche de votre question, ou continuez à taper votre question, puis appuyez sur **Entrée**.
 4. Si les résultats ne vous aident pas, en bas, sélectionnez **Contacter le support technique.**
@@ -217,34 +217,6 @@ Pour afficher la disponibilité des fonctionnalités entre les plans Office 365,
 Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
 
 ![QR code pour mises à jour Office 365 géré par 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Cet article s’applique aux clients d’Office 365 Germany, qui inclut des domaines se terminent par onmicrosoft.de. Pour plus d’informations, voir [en savoir plus sur Office 365 Germany](../admin/admin-overview/learn-about-office-365-germany.md).
-
-En tant qu'administrateur pour Office 365 Germany pour les entreprises, vous pouvez contacter gratuitement nos agents d’assistance qualifiés pour les questions relatives à l'avant-vente, à la gestion des comptes ou à la facturation, et pour obtenir de l'aide pour résoudre les problèmes techniques. Vous pouvez également contacter le support pour le compte des utilisateurs d'Office 365 Germany dans votre organisation.
-
-> [!NOTE]
-> Tous les options d’assistance ci-dessous s’appliquent au cloud Microsoft allemand. Si vous souhaitez en savoir plus sur la manière dont Microsoft utilise les données que vous fournissez lorsque vous contactez le support Microsoft, consultez la [déclaration de confidentialité](https://go.microsoft.com/fwlink/p/?LinkId=512132).
-
-## <a name="get-assisted-support"></a>Obtenir l’assistance
-
-Les options d’assistance ne concernent que les administrateurs des organisations ayant souscrit à Office 365 Germany. Si vous utilisez Office 365 Germany mais vous n’êtes pas un administrateur, vous pouvez toujours obtenir une assistance dans les forums de la Communauté ou contacter votre administrateur.
-
-- **Ouvrez une demande en ligne.** Gagnez du temps en créant votre demande de service en ligne. Dans le centre  d’administration, sélectionnez **Assistance**\> **Nouvelle demande de service.** Nous vous aiderons à trouver une solution ou à communiquer avec un expert qui vous contactera par email ou téléphone.
-
-- **Appelez l’assistance.** Nous sommes ici pour vous aider. En tant qu’administrateur, vous devez avoir vos informations de compte prêtes lorsque vous appelez l’assistance.
-
-| Région | Numéro de téléphone | Heures |
-|-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Allemagne | 0800&nbsp;589&nbsp;2330 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin</li><li>Anglais : Lun-Ven 9h-17h Berlin</li></ul><br />Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul><br />Autre numéro de téléphone : 069 380 789 305 (frais d’appel local applicables) |
-| Tous les autres marchés au sein de l’espace économique européen | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin (UTC+1)</li><li>Anglais : Lun-Ven 9h-17h Berlin (UTC+1)</li></ul><br />Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul><br />L’assistance téléphonique est disponible via un appel téléphonique international vers l’Allemagne. Frais d’appel international applicables. Les frais d’appel peuvent être évités, envoyez un ticket d’assistance via le Centre d’administration. |
-
-## <a name="let-our-community-help"></a>Laissez la Communauté vous aider
-
-Vous pouvez également [rechercher dans les forums de la Communauté Microsoft 365 pour entreprises](https://go.microsoft.com/fwlink/p/?LinkId=518605) pour rechercher des problèmes connus et des sujets populaires, ou pour poser une nouvelle question. Les forums de la communauté sont modérés par des agents d’assistance Microsoft qui peuvent vous aider à résoudre votre problème.
 
 ::: moniker-end
 

@@ -17,12 +17,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 10/14/2021
-ms.openlocfilehash: 5da8e3bf024745ed38142779e982e17b59c26439
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f1f7888b216f0c94241f5249c82e952cdaf294fd
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884060"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164373"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Vue d’ensemble des fonctionnalités de réduction de la surface d’attaque
 
@@ -30,7 +30,8 @@ ms.locfileid: "60884060"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -46,7 +47,7 @@ Comme mentionné dans la vidéo, Defender pour le point de terminaison inclut pl
 
 | Article | Description |
 |:---|:---|
-| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et maintenez l’intégrité d’un système au démarrage et pendant son exécution. Valider l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation de conteneur Microsoft Edge pour vous protéger contre les sites web malveillants. |
+| [Isolation basée sur le matériel](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protégez et maintenez l’intégrité d’un système au démarrage et pendant son exécution. Valider l’intégrité du système par le biais d’une attestation locale et distante. Utilisez l’isolation de conteneur pour Microsoft Edge pour vous protéger contre les sites web malveillants. |
 | [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Utilisez le contrôle d’application pour que vos applications gagnent en confiance pour pouvoir s’exécuter. |
 | [Accès contrôlé aux dossiers](controlled-folders.md) | Empêcher les applications malveillantes ou suspectes (y compris les programmes malveillants de ransomware de chiffrement de fichiers) d’apporter des modifications aux fichiers dans vos dossiers système clés (nécessite Antivirus Microsoft Defender) |
 | [Protection du réseau](network-protection.md) | Étendez la protection au trafic réseau et à la connectivité sur les appareils de votre organisation. (Nécessite une Antivirus Microsoft Defender) |

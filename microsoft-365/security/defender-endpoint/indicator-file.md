@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5136da918480d2ae9b9543b410e8ae45ade9dc7d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a2a8ae2197b957299277bae3eeeee8383d1bda00
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755592"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165221"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -28,8 +28,8 @@ ms.locfileid: "60755592"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -55,7 +55,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
    >[!NOTE]
     >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
-- Pour commencer à bloquer les fichiers, vous devez d’abord [activer](advanced-features.md) la fonctionnalité « bloquer ou autoriser » dans Paramètres.
+- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) Paramètres.
 
 Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers .exe et .dll portables. La couverture sera étendue au fil du temps.
 
@@ -63,7 +63,7 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de programm
 
 1. Dans le volet de navigation, sélectionnez  **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
-2. Sélectionnez **l’onglet Hchéths fichier.**  
+2. Sélectionnez **l’onglet Haits**   fichier.
 
 3. Sélectionnez **Ajouter un indicateur**.
 
@@ -85,7 +85,7 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 > [!IMPORTANT]
 > Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent la version préliminaire du produit qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Les actions actuellement prises en charge pour le ioc de fichier sont autoriser, auditer et bloquer et corriger. Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
+Les actions actuellement prises en charge pour le ioc de fichier sont autoriser, auditer et bloquer et corriger. Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes en matière d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
 
 In Microsoft 365 Defender, go to **Paramètres**  >  **Endpoints**  >  **Indicators**  >  **Add New File Hash**.
 
@@ -142,12 +142,12 @@ L’activité d’action de réponse peut également être vue dans la chronolog
 
 Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-dessous :
 
-- Si le fichier n’est pas autorisé par Windows Defender application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
+- Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
 - Sinon, si le fichier est autorisé par l’exclusion Antivirus Microsoft Defender, **autorisez**
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 - Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**
-- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 

@@ -17,20 +17,20 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9deaa216de6cc8c744c6f8eca94dbf8868be0d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7b940604272035dc37b170eb759fa0ec45582b6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166253"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165869"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau à l’aide de la stratégie de groupe.
 
@@ -44,7 +44,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
-5. Sélectionnez **Activé,** puis dans la section **Options,** **sélectionnez Afficher...**.
+5. Sélectionnez **Activé,** puis, dans la section **Options,** **sélectionnez Afficher...**.
 
 6. Ajoutez des entrées à la liste, puis sélectionnez **OK**.
 

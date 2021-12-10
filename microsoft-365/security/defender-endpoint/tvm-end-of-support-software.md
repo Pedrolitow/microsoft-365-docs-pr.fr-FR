@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf09fb75ca14a35f0ca29c9352864329459b3203
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 65842d0bd56308b6a5e5476f84c089b63a04987b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881732"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168017"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planifier les versions logicielles et logicielles de fin de prise en charge avec Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60881732"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -55,7 +55,7 @@ Il est essentiel que les administrateurs informatiques et de sécurité travaill
 
 ## <a name="list-of-versions-and-dates"></a>Liste des versions et des dates
 
-Pour afficher la liste des versions qui ont atteint la fin de la prise en charge, ou qui ont pris fin ou bientôt prise en charge, ainsi que ces dates, suivez les étapes ci-dessous :
+Pour afficher la liste des versions qui ont atteint la fin de la prise en charge, ou la fin ou la prise en charge prochainement, et ces dates, suivez les étapes ci-dessous :
 
 1. Un message s’affiche dans le volant de recommandations de sécurité pour les logiciels dont les versions ont atteint la fin de la prise en charge ou qui arriveront bientôt à la fin du support.
 

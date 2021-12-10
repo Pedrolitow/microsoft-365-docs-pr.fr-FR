@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 393f58020880c6e69813e536cc692590ed1a8368
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3f59b381e74dee32a438722b09044570bf8d870e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883100"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165821"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60883100"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -60,7 +60,7 @@ Si aucun événement n’affecte vos appareils ou votre score pour les appareils
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
-La sélection **d’Afficher tous** les événements de ce jour vous place sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
+Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
 ![Chronologie des événements : plage de dates personnalisée sélectionnée.](images/tvm-event-timeline-drilldown.png)
 
@@ -114,7 +114,7 @@ La flèche sous « tendance de score » vous permet de déterminer si cet évén
 
 ![Volant de chronologie des événements.](images/tvm-event-timeline-flyout500.png)
 
-À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the security [recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
+À partir de là, **sélectionnez** Go to related security recommendation view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
 
 ## <a name="view-event-timelines-in-software-pages"></a>Afficher les chronologies des événements dans les pages logicielles
 

@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 801eabd49beae39c4d926b4c370229f5308fb35b
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 552209e6a93ba70c0cf279694fdc703923bcc509
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882212"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164753"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -115,7 +115,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 4. Sélectionnez la vulnérabilité que vous souhaitez examiner pour plus d’informations sur les détails de la vulnérabilité
 
-    ![Windows Vue d’ensemble de l’drill down de Server 2019.](images/windows-server-drilldown.png)
+    ![Windows vue d’ensemble de l’accès à l’avant vers le bas pour Server 2019.](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Découvrir les vulnérabilités dans la page d’appareil
 

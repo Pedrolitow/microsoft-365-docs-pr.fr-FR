@@ -14,17 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 185ffab8d4fb67040d11dbf8b36459b94341a0d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176906"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164597"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -65,7 +66,7 @@ Informations sur **les** packages d’application Android malveillants (APK) sur
 
 - Informations sur le client, l’appareil et l’utilisateur
   - Azure Active Directory (AD) ID d’appareil et ID utilisateur Azure : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
-  - ID de client Azure : GUID qui identifie votre organisation au sein Azure Active Directory.
+  - ID client Azure : GUID qui identifie votre organisation au sein Azure Active Directory.
   - ID d’organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées.
   - Nom d’utilisateur principal : ID de messagerie de l’utilisateur
 

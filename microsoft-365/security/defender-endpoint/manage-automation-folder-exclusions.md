@@ -14,23 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09bd7b0318169e69e91a511c9d27033c5aeb0efa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c0f7f67b62216eae4264c8e7a55c0e34c82fb0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151971"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166121"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Les exclusions de dossiers Automation vous permettent de spécifier les dossiers que l’examen automatisé ignorera.
 
@@ -41,13 +41,13 @@ Vous pouvez contrôler les attributs suivants concernant le dossier que vous sou
   > [!NOTE]
   > Pour l’instant, l’utilisation de caractères wild cards comme moyen d’exclure des fichiers sous un répertoire n’est pas encore prise en charge.
 
-- **Extensions des fichiers :** vous pouvez spécifier les extensions à exclure dans un répertoire spécifique. Les extensions sont un moyen d’empêcher un attaquant d’utiliser un dossier exclu pour masquer une attaque. Les extensions définissent explicitement les fichiers à ignorer.
+- **Extensions des fichiers**: vous pouvez spécifier les extensions à exclure dans un répertoire spécifique. Les extensions sont un moyen d’empêcher un attaquant d’utiliser un dossier exclu pour masquer une attaque. Les extensions définissent explicitement les fichiers à ignorer.
 
 - **Noms de** fichiers : vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un répertoire spécifique. Les noms sont un moyen d’empêcher un attaquant d’utiliser un dossier exclu pour masquer une attaque. Les noms définissent explicitement les fichiers à ignorer.
 
 ## <a name="add-an-automation-folder-exclusion"></a>Ajouter une exclusion de dossier d’automatisation
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
 
 2. Cliquez **sur Exclusion de nouveau dossier.**
 
@@ -65,13 +65,13 @@ Vous pouvez contrôler les attributs suivants concernant le dossier que vous sou
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modifier une exclusion de dossier d’automatisation
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
 2. Cliquez **sur Modifier** sur l’exclusion de dossier.
 3. Mettez à jour les détails de la règle et cliquez sur **Enregistrer.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Supprimer une exclusion de dossier d’automatisation
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
 2. Cliquez sur **Supprimer l’exclusion.**
 
 ## <a name="related-topics"></a>Rubriques connexes

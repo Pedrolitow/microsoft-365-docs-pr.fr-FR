@@ -14,16 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 88d7750519690717070e090ddc42042866412d33
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f066610fec75b9c8f32e021460ae2f4b3471503c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109838"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165425"
 ---
 # <a name="device-control-report"></a>Rapport de contrôle d’appareil
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Le contrôle d’appareil Microsoft Defender pour points de terminaison protège contre la perte de données en surveillant et en contrôlant l’utilisation des supports par les appareils de votre organisation, tels que l’utilisation de périphériques de stockage amovibles et de lecteurs USB.
 

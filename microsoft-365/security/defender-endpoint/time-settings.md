@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151817"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165638"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
@@ -55,7 +56,7 @@ La définition du fuseau horaire De Microsoft Defender pour le point de terminai
 
 Vous pouvez choisir que Microsoft Defender pour le point de terminaison utilise les paramètres de fuseau horaire local. Toutes les alertes et événements s’affichent à l’aide de votre fuseau horaire local.
 
-Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour Endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
+Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
 
 Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de mettre en corrélation les événements avec l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
 
@@ -65,7 +66,7 @@ Le fuseau horaire De Microsoft Defender pour le point de terminaison est défini
 
 Pour définir le fuseau horaire :
 
-1. Cliquez sur **l’icône 3** des paramètres de fuseau horaire du menu Fuseau ![ horaire. ](images/atp-time-zone.png)
+1. Cliquez sur **l’icône 3** des paramètres de fuseau horaire du menu ![ Fuseau horaire. ](images/atp-time-zone.png)
 2. Sélectionnez **l’indicateur UTC** de fuseau horaire.
 3. Sélectionnez **le fuseau horaire UTC** ou votre fuseau horaire local, par exemple -7:00.
 
@@ -86,15 +87,15 @@ Il existe des problèmes connus avec les formats d’heure et de date. Si vous c
 Les formats de date et d’heure suivants sont pris en charge :
 
 - Format de date MM/j j/aaie
-- Date format jd/MM/a
+- Date format jd/MM/aaa
 - Format d’heure hh:mm:ss (format 12 heures)
 
 Les formats de date et d’heure suivants ne sont actuellement pas pris en charge :
 
-- Format de date aay-MM-j j j j
+- Format de date aay-MM-j j j
 - Date format dd-MMM-yy
 - Format de date j/MM/aa
-- Format de date MM/j/j/aa
+- Format de date MM/j j/j/aa
 - Format de date avec aa. Affiche uniquement yyyy.
 - Format d’heure HH:mm:ss (format 24 heures)
 

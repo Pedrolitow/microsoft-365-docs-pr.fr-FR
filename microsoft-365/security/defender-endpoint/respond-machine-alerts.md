@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6e2a55fb1dc924ba278510f6a379240cb9fba39e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587408"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164789"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 Répondez rapidement aux attaques détectées en isolant les appareils ou en collectant un package d’enquête. Après avoir pris des mesures sur les appareils, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
@@ -73,7 +73,7 @@ Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemb
 
 ## <a name="initiate-live-response-session"></a>Lancer une session de réponse en direct
 
-La réponse en direct est une fonctionnalité qui vous permet d’accéder instantanément à un appareil à l’aide d’une connexion Shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
+La réponse en direct est une fonctionnalité qui vous permet d’accéder instantanément à un appareil à l’aide d’une connexion Shell distante. Cela vous donne la puissance d’un travail d’examen approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
 
 La réponse dynamique est conçue pour améliorer les enquêtes en vous permettant de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 
@@ -113,13 +113,13 @@ Le package contient les dossiers suivants :
 |---|---|
 |Autoruns|Contient un ensemble de fichiers qui représentent chacun le contenu du Registre d’un point d’entrée de démarrage automatique connu (ASEP) pour vous aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>REMARQUE :</b> Si la clé de Registre est in trouvée, le fichier contient le message suivant : « ERREUR : Le système n’a pas pu trouver la clé de Registre ou la valeur spécifiée. »<div>|
 |Programmes installés|Ce .CSV contient la liste des programmes installés qui peuvent vous aider à identifier ce qui est actuellement installé sur l’appareil. Pour plus d’informations, [voir Win32_Product classe.](https://go.microsoft.com/fwlink/?linkid=841509)|
-|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité aux URL suspectes, l’infrastructure de commande et de contrôle (C&C) de l’attaquant, tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de nom résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir Configurer le [pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Fichiers de préréférion|Windows Les fichiers de préréférion sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont pu être supprimées, mais qui se trouvent toujours dans la liste des fichiers de préréférion. <ul><li>Dossier de préréférion : contient une copie des fichiers de préréférion à partir de `%SystemRoot%\Prefetch` . REMARQUE : il est suggéré de télécharger une visionneuse de fichiers de préréférion pour afficher les fichiers de préréférion.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour suivre s’il y a eu des échecs de copie dans le dossier de préréférion.</li></ul>|
+|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité à des URL suspectes, l’infrastructure de commande et de contrôle (C&C), tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de noms résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir Configurer le [pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Fichiers de préréférion|Windows préréférents sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont pu être supprimées, mais qui se trouvent toujours dans la liste des fichiers de préréférion. <ul><li>Dossier de préréférion : contient une copie des fichiers de préréférion à partir de `%SystemRoot%\Prefetch` . REMARQUE : il est suggéré de télécharger une visionneuse de fichiers de préréférion pour afficher les fichiers de préréférion.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour suivre s’il y a eu des échecs de copie dans le dossier de préréférion.</li></ul>|
 |Processus|Contient un fichier .CSV répertoriant les processus en cours d’exécution et permet d’identifier les processus en cours d’exécution sur l’appareil. Cela peut être utile lors de l’identification d’un processus suspect et de son état.|
 |Tâches programmées|Contient un fichier .CSV répertoriant les tâches programmées, qui peut être utilisé pour identifier les routines exécutées automatiquement sur un appareil choisi afin de rechercher du code suspect qui a été mis en place pour s’exécuter automatiquement.|
 |Journal des événements de sécurité|Contient le journal des événements de sécurité, qui contient les enregistrements de l’activité de connexion ou de connexion, ou d’autres événements liés à la sécurité spécifiés par la stratégie d’audit du système. <p><div class="alert"><b>REMARQUE :</b> Ouvrez le fichier journal des événements à l’aide de l’Observateur d’événements.</div>|
 |Services|Contient un fichier .CSV qui répertorie les services et leurs états.|
-|Windows Sessions SMB (Server Message Block)|Répertorie l’accès partagé aux fichiers, imprimantes et ports série, ainsi que les communications diverses entre les nodes sur un réseau. Cela peut aider à identifier l’exfiltration des données ou les mouvements latérals. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>REMARQUE :</b> S’il n’existe aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
+|Windows sessions SMB (Server Message Block)|Répertorie l’accès partagé aux fichiers, imprimantes et ports série, ainsi que les communications diverses entre les nodes sur un réseau. Cela peut aider à identifier l’exfiltration des données ou les mouvements latérals. <p> Contient des fichiers pour SMBInboundSessions et SMBOutboundSession. <p> <div class="alert"><b>REMARQUE :</b> S’il n’existe aucune session (entrante ou sortante), vous obtenez un fichier texte qui vous indique qu’aucune session SMB n’a été trouvée.</div>|
 |System Information|Contient un fichier SystemInformation.txt qui répertorie les informations système telles que la version du système d’exploitation et les cartes réseau.|
 |Répertoires temporaires|Contient un ensemble de fichiers texte qui répertorie les fichiers situés dans %Temp% pour chaque utilisateur du système. <p> Cela peut aider à suivre les fichiers suspects qu’un attaquant a peut-être déposés sur le système. <p> <div class="alert"><b>REMARQUE :</b> Si le fichier contient le message suivant : « Le système ne peut pas trouver le chemin d’accès spécifié », cela signifie qu’il n’existe pas de répertoire temporaire pour cet utilisateur, et peut-être parce que l’utilisateur ne s’est pas connecté au système.</div>|
 |Utilisateurs et groupes|Fournit une liste de fichiers qui représentent chacun un groupe et ses membres.|
@@ -137,7 +137,7 @@ Dans le cadre du processus d’examen ou de réponse, vous pouvez lancer à dist
 
 Un que vous avez sélectionné Exécuter **l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
-![Image de la notification pour sélectionner une analyse rapide ou complète et ajouter un commentaire.](images/run-antivirus.png)
+![Image de notification pour sélectionner une analyse rapide ou complète et ajouter un commentaire.](images/run-antivirus.png)
 
 Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement, reflétant qu’une action d’analyse a été envoyée sur l’appareil. Les alertes De l’Antivirus Microsoft Defender reflètent toutes les détections qui ont été détectées pendant l’analyse.
 
@@ -155,7 +155,7 @@ En plus de contenir une attaque en arrêtant les processus malveillants, vous po
 >[!IMPORTANT]
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2016. 
 > - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
-> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code application Control et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature.](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)
+> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code du contrôle d’application et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature.](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)
 
 Pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
 
@@ -177,13 +177,13 @@ Lorsqu’une application est restreinte, la notification suivante s’affiche po
 
 ## <a name="isolate-devices-from-the-network"></a>Isoler les appareils du réseau
 
-Selon la gravité de l’attaque et la sensibilité de l’appareil, vous souhaitez peut-être isoler l’appareil du réseau. Cette action peut aider à empêcher l’attaquant de contrôler l’appareil compromis et d’effectuer d’autres activités telles que l’exfiltration des données et les mouvements latérals.
+Selon la gravité de l’attaque et la sensibilité de l’appareil, vous souhaitez peut-être isoler l’appareil du réseau. Cette action peut aider à empêcher l’attaquant de contrôler l’appareil compromis et d’effectuer d’autres activités telles que l’exfiltration des données et le mouvement latéral.
 
 >[!IMPORTANT]
 >- Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md)
 >- L’isolation complète est disponible pour les appareils sur Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
 >- L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure et Windows 11.
->- Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
+>- Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de fractionnement pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 Cette fonctionnalité d’isolation de périphérique déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender for Endpoint, qui continue de surveiller l’appareil.
 
@@ -209,11 +209,11 @@ Lorsqu’un appareil est isolé, la notification suivante s’affiche pour infor
 
 Vous pouvez consulter un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft peuvent être engagés directement à partir du Centre de sécurité Microsoft Defender pour une réponse précise et opportune. Les experts fournissent des informations non seulement sur un appareil potentiellement compromis, mais également pour mieux comprendre les menaces complexes, les notifications d’attaque ciblées que vous recevez, ou si vous avez besoin d’informations supplémentaires sur les alertes ou d’un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
-Pour [plus d’informations, consultez un expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) microsoft en matière de menaces.
+Pour [plus d’informations, consultez un Expert en](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) menaces Microsoft.
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
-Le **centre de sécurité fournit** des informations sur les actions qui ont été prises sur un appareil ou un fichier. Vous pourrez afficher les détails suivants :
+Le **centre de données fournit** des informations sur les actions qui ont été entreprises sur un appareil ou un fichier. Vous pourrez afficher les détails suivants :
 
 - Collection de packages d’examen
 - Analyse antivirus
@@ -222,10 +222,10 @@ Le **centre de sécurité fournit** des informations sur les actions qui ont ét
 
 Tous les autres détails connexes sont également affichés, par exemple, date/heure de soumission, utilisateur d’envoi et si l’action a réussi ou échoué.
 
-![Image du centre de l’action avec des informations.](images/action-center-details.png)
+![Image du centre de actions avec des informations.](images/action-center-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Prendre des mesures de réponse sur un fichier](respond-file-alerts.md)
-- [Actions de réponse manuelles dans Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
-- [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [Actions de réponse manuelles dans Microsoft Defender pour endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Inaccuracy de rapport](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

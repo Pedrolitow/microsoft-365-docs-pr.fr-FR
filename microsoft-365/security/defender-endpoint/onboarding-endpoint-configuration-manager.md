@@ -18,19 +18,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: a4668969982563bdc050a8e71b00980d52a7e6ff
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963418"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166181"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -193,8 +193,8 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    L’agent MMA doit être installé sur Windows appareils mobiles. Pour installer l’agent, certains systèmes doivent télécharger la mise à jour pour l’expérience client et la [télémétrie](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) de diagnostic afin de collecter les données avec MMA. Ces versions système incluent, sans s’y limiter, les éléments suivants :
 
    - Windows 8.1
-   - Windows 7
-   - Windows Server 2016
+   - Windows 7
+   - Windows Server 2016
    - Windows Server 2012 R2
    - Windows Server 2008 R2
 

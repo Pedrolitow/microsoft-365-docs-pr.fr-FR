@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8135ce430773eae051f1214e685638073ef07809
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: dffae27148d91ccedfd0009b1ce2942f75430824
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899718"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164201"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60899718"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,16 +46,16 @@ Dans le tableau suivant, « Oui » indique qu’une fonctionnalité Gestion des 
 
 Système d’exploitation ou plateforme pris en charge|Vulnérabilités du système d’exploitation|Vulnérabilités des produits logiciels|Évaluation de la configuration du système d’exploitation|Évaluation de la configuration des contrôles de sécurité|Évaluation de la configuration du produit logiciel
 :---|:---|:---|:---|:---|:---
-Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
+Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 Windows 8.1|Oui|Oui|Oui|Oui|Oui
 Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
 Windows 11|Oui|Oui|Oui|Oui|Oui
 Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
-Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
-Windows Server 2016|Oui|Oui|Oui|Oui|Oui
+Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
+Windows Server 2016|Oui|Oui|Oui|Oui|Oui
 Windows Server 2019|Oui|Oui|Oui|Oui|Oui
-Windows Server 2022|Oui|Oui|Oui|Oui|Oui
+Windows Server 2022|Oui|Oui|Oui|Oui|Oui
 macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui 
 Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-dessous)|Oui|Oui|Oui|Oui|Oui
 CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui

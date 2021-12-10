@@ -16,19 +16,21 @@ ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2ebf14a2fe24b9ddf38e694eb8ca008697ea9761
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 52556d3193843eecfb9130ead349a20bd16fab34
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553507"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164141"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
 
@@ -36,11 +38,11 @@ Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’o
 - Stratégie de groupe
 - Cmdlets PowerShell
 - WMI (Windows Management Instrumentation)
-- [Attachement du client](/mem/configmgr/tenant-attach/)
+- [Joint au client](/mem/configmgr/tenant-attach/)
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection cloud. Voir [protection et](cloud-protection-microsoft-defender-antivirus.md) Antivirus Microsoft Defender
+- Protection cloud. Voir protection et protection des services [cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
 - Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Voir [Configurer la protection comportementale, heuristique et en temps réel.](configure-protection-features-microsoft-defender-antivirus.md)
 

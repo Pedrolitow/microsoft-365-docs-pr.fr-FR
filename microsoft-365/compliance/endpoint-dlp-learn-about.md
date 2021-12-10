@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: c8f9ee3405d6c79577603cde008796244b3a49ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1c46f89a9a1a8d354facbc6c3f1d095e42b3f5e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109766"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373763"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -34,6 +34,9 @@ Vous pouvez utiliser la prévention des pertes de données (DLP) de Microsoft 36
 
 > [!TIP]
 > Si vous recherchez le contrôle d’appareil pour le stockage amovible, consultez [Contrôle d’accès Stockage amovible Contrôle d’appareil Microsoft Defender pour Point de terminaison ](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
+
+> [!NOTE]
+> Dans Microsoft 365 conformité, l’évaluation de la stratégie DLP des éléments sensibles se produit de manière centralisée, de sorte qu’il n’y a pas de délai pour que les stratégies et les mises à jour des stratégies soient distribuées aux appareils individuels. Lorsqu’une stratégie est mise à jour dans le centre de conformité, la synchronisation de ces mises à jour dans le service prend généralement environ une heure. Une fois les mises à jour de stratégie synchronisées, les éléments des appareils ciblés sont automatiquement réévalués la prochaine fois qu’ils sont accédés ou modifiés. »
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 

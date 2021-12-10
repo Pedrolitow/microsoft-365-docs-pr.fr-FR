@@ -1,5 +1,5 @@
 ---
-title: Fournir des commentaires sur l’outil Analyseur de client Microsoft Defender pour Endpoint
+title: Fournir des commentaires sur l’outil Analyseur de client Microsoft Defender for Endpoint
 description: Fournir des commentaires sur l’outil d’analyseur client Microsoft Defender for Endpoint
 keywords: capteur, état du capteur, mal configuré, inactif, aucune donnée de capteur, données du capteur, communications altérées, communication
 ms.prod: m365-security
@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 774bad728b8cac0eadf71c3b97ceff0b1f9aabc8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554980"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165185"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Fournir des commentaires sur l’outil d’analyseur client Microsoft Defender for Endpoint
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Si vous avez des commentaires ou des suggestions qui nous aideraient à améliorer l’analyseur client Microsoft Defender pour Endpoint, utilisez l’une des options suivantes pour envoyer vos commentaires :
 

@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6386ea1e0cd25db1b13d763d618b4ced315b858b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554563"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168065"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Client Analyzer (MDECA) peut être utile lors du [](/microsoft-365/security/defender-endpoint/onboard-configure) diagnostic des problèmes d’état ou de fiabilité du capteur sur les appareils intégrés exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de l’état d’état du capteur [affiché](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) (Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
 
-Outre les problèmes d’état du capteur évidents, MDECA peut collecter d’autres suivis, journaux et informations de diagnostic pour résoudre des problèmes complexes tels que :
+Outre les problèmes d’état du capteur évidents, MDECA peut collecter d’autres suivis, journaux et informations de diagnostic pour résoudre des scénarios complexes tels que :
 
 - Compatibilité des applications (AppCompat), performances, connectivité réseau ou
 - Comportement inattendu lié à [endpoint Data Loss Prevention](/microsoft-365/compliance/endpoint-dlp-learn-about).
 
 ## <a name="privacy-notice"></a>Avis de confidentialité
 
-- L’outil Analyseur de client Microsoft Defender pour point de terminaison est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations qui vous aideront à résoudre les problèmes que vous rencontrez avec Microsoft Defender pour Endpoint.
+- L’outil Microsoft Defender for Endpoint Client Analyzer est régulièrement utilisé par les services de support technique Microsoft (CSS) pour collecter des informations qui vous aideront à résoudre les problèmes que vous rencontrez avec Microsoft Defender pour Endpoint.
 
 - Les données collectées peuvent contenir des informations d’identification personnelle (PII) et/ou des données sensibles, telles que (mais sans s’y limiter) des adresses IP, des noms de PC et des noms d’utilisateur.
 

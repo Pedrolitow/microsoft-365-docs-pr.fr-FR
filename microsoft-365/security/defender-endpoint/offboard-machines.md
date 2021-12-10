@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a84885f26273a731bbda72f81c51502aa137b21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168217"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163421"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Hors-carte des appareils à partir du service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateformes**
 - macOS
@@ -36,7 +36,7 @@ ms.locfileid: "60168217"
 - Windows Server 2012 R2
 - Windows Server 2016
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-offboarddevices-abovefoldlink)
 
 Suivez les instructions correspondantes en fonction de votre méthode de déploiement préférée.
 
@@ -55,7 +55,7 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 
 - [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Appareils de tableau de bord à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Appareils hors appareil à l’aide des outils de gestion des périphériques mobiles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Appareils de tableau de bord à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 
 ## <a name="offboard-servers"></a>Serveurs horsboard
 

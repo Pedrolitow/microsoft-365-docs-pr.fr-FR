@@ -20,6 +20,8 @@
               href: microsoft-365-security-mdo-redirection.md
         - name: intégration de Microsoft 365 Defender à Microsoft Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
+        - name: Microsoft Defender 365 pour les clients du gouvernement des États-Unis
+          href: usgov.md
         - name: Tests sectoriels
           href: ./top-scoring-industry-tests.md
     - name: Planification
@@ -208,6 +210,8 @@
               href: advanced-hunting-take-action.md
             - name: Examiner rapidement avec l’option Go hunt
               href: advanced-hunting-go-hunt.md
+            - name: Lier les résultats d'une requête à un incident
+              href: advanced-hunting-link-to-incident.md
             - name: Optimiser et gérer les erreurs
               items:
                 - name: Appliquer les meilleures pratiques de requête
@@ -412,3 +416,5 @@
           href: /defender-for-identity
         - name: Defender for Cloud Apps
           href: /cloud-app-security
+        - name: Défenseur des affaires
+          href: ../defender-business/index.yml

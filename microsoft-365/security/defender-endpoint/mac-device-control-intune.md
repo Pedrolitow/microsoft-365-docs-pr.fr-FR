@@ -1,7 +1,7 @@
 ---
 title: Exemples de stratégies de contrôle d’appareil pour Intune
 description: Découvrez comment utiliser des stratégies de contrôle d’appareil à l’aide d’exemples qui peuvent être utilisés avec Intune.
-keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, appareil, contrôle, usb, amovible, média, intune
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, appareil, contrôle, usb, amovible, média, intune
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -16,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76befd49bea5429baee388b7cfc5d2b4693fb644
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13aa99264d6e7adc5cfc5cb82df11830f01bfd59
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205402"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166205"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,7 +38,7 @@ Ce document contient des exemples de stratégies de contrôle d’appareil que v
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations de `none` fichier seront non autorisées.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur les fichiers `none` seront non autorisées.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

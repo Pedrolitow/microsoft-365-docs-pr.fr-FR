@@ -18,17 +18,19 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: fe3149eb4535a306d823c372c06f779aa8c0f379
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f6886cd109e8727dd05c7de0b4055f839b847de2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110942"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164981"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Examiner les actions de correction à la suite d’un examen automatisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="remediation-actions"></a>Actions de correction
 

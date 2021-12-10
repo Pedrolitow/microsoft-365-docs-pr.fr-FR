@@ -16,25 +16,25 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0b840da9ad0bda3360265f997c0473c4b70fadae
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 91e3acee5fb3ab2542c2beed4681f07959e9fe05
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556027"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167993"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurer des analyses antivirus Microsoft Defender rapides ou complètes
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Outre les analyses antivirus en temps [](run-scan-microsoft-defender-antivirus.md) réel et toujours en temps réel, vous pouvez configurer des analyses antivirus régulières et programmées. Vous pouvez configurer le type d’analyse, le moment où l’analyse doit se produire et si l’analyse doit se produire après une mise à jour de [la protection](manage-protection-updates-microsoft-defender-antivirus.md) ou lorsqu’un point de terminaison n’est pas utilisé. Vous pouvez également configurer des analyses spéciales pour effectuer des actions de correction si nécessaire.
 
 ## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
 - [En savoir plus sur les analyses rapides, les analyses complètes et les analyses personnalisées](#quick-scan-full-scan-and-custom-scan)
-- [Utiliser la stratégie de groupe pour planifier des analyses antivirus](schedule-antivirus-scans-group-policy.md)
+- [Utiliser une stratégie de groupe pour planifier des analyses antivirus](schedule-antivirus-scans-group-policy.md)
 - [Utiliser Windows PowerShell pour planifier des analyses antivirus](schedule-antivirus-scans-powershell.md)
 - [Utiliser Windows Management Instrumentation pour planifier des analyses antivirus](schedule-antivirus-scans-wmi.md)
 
@@ -46,7 +46,7 @@ Outre les analyses antivirus en temps [](run-scan-microsoft-defender-antivirus.m
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Analyse rapide, analyse complète et analyse personnalisée
 
-Lorsque vous définissez des analyses programmées, vous pouvez spécifier si l’analyse doit être complète ou rapide. Dans la plupart des cas, une analyse rapide est recommandée.
+Lorsque vous définissez des analyses programmées, vous pouvez spécifier si l’analyse doit être une analyse complète ou rapide. Dans la plupart des cas, une analyse rapide est recommandée.
 
 <br>
 
@@ -54,7 +54,7 @@ Lorsque vous définissez des analyses programmées, vous pouvez spécifier si l�
 
 |Analyse rapide|Analyse complète|Analyse personnalisée|
 |---|---|---|
-|(Recommandé) Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus. <p> Combinée à une protection toujours en temps réel, qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier, une analyse rapide permet de fournir une protection forte contre les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. <p> Dans la plupart des cas, une analyse rapide est suffisante et constitue l’option recommandée pour les analyses programmées.|Une analyse complète commence par l’exécution d’une analyse rapide, puis se poursuit avec une analyse séquentielle de tous les disques fixes montés et des lecteurs amovibles/réseau (si l’analyse complète est configurée pour le faire). <p> L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser. <p> Une fois l’analyse complète terminée, de nouvelles informations de sécurité sont disponibles, et une nouvelle analyse est ensuite nécessaire pour s’assurer qu’aucune autre menace n’est détectée avec la nouvelle intelligence de sécurité. <p> En raison du temps et des ressources impliqués dans une analyse complète, en général, Microsoft ne recommande pas la planification d’analyses complètes.|Une analyse personnalisée est une analyse rapide qui s’exécute sur les fichiers et dossiers que vous spécifiez. Par exemple, vous pouvez choisir d’analyser un lecteur USB ou un dossier spécifique sur le lecteur local de votre appareil.|
+|(Recommandé) Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus. <p> Combinée à une protection toujours en temps réel, qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier, une analyse rapide permet de fournir une protection forte contre les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. <p> Dans la plupart des cas, une analyse rapide est suffisante et constitue l’option recommandée pour les analyses programmées.|Une analyse complète commence par l’exécution d’une analyse rapide, puis se poursuit avec une analyse séquentielle de tous les disques fixes montés et lecteurs amovibles/réseau (si l’analyse complète est configurée pour le faire). <p> L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser. <p> Une fois l’analyse complète terminée, de nouvelles informations de sécurité sont disponibles et une nouvelle analyse est ensuite nécessaire pour s’assurer qu’aucune autre menace n’est détectée avec la nouvelle intelligence de sécurité. <p> En raison du temps et des ressources impliqués dans une analyse complète, en général, Microsoft ne recommande pas la planification d’analyses complètes.|Une analyse personnalisée est une analyse rapide qui s’exécute sur les fichiers et dossiers que vous spécifiez. Par exemple, vous pouvez choisir d’analyser un lecteur USB ou un dossier spécifique sur le lecteur local de votre appareil.|
 |
 
 > [!NOTE]
@@ -80,7 +80,7 @@ Utilisez le tableau suivant pour choisir un type d’analyse.
 
 - Les fichiers malveillants peuvent être stockés dans des emplacements qui ne sont pas inclus dans une analyse rapide. Toutefois, la protection en temps réel toujours en cours examine tous les fichiers ouverts et fermés, ainsi que tous les fichiers qui se contiennent dans des dossiers accessibles par un utilisateur. La combinaison d’une protection en temps réel et d’une analyse rapide permet de fournir une protection forte contre les programmes malveillants.
 
-- La protection à l’accès avec une protection assurée par le [cloud](cloud-protection-microsoft-defender-antivirus.md) permet de s’assurer que tous les fichiers accessibles sur le système sont analysés avec les dernières informations de sécurité et les derniers modèles d’apprentissage automatique dans le Cloud.
+- La protection à l’accès avec une protection assurée par le [cloud](cloud-protection-microsoft-defender-antivirus.md) permet de s’assurer que tous les fichiers accessibles sur le système sont analysés avec les derniers modèles d’intelligence de sécurité et d’apprentissage automatique dans le Cloud.
 
 - Lorsque la protection en temps réel détecte des programmes malveillants et que l’étendue des fichiers affectés n’est pas déterminée initialement, Antivirus Microsoft Defender lance une analyse complète dans le cadre du processus de correction.
 

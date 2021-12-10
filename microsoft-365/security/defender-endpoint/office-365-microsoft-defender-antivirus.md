@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d674e5d2724dc25652ddb8d9c0aa8c528665df39
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fbbac9e2b2c30748158cf245cdf55aa6a1a82333
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129539"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163385"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mieux ensemble : Antivirus Microsoft Defender et Office 365
 
@@ -31,7 +31,8 @@ ms.locfileid: "61129539"
 
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 - Microsoft 365
 

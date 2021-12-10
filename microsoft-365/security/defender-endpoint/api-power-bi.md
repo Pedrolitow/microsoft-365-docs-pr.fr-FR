@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 738256199ea784109e74b21efc0029f77d1e85eb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 765af5e4a2e880aa9b6c1208495537ad8cf5f26b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587740"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165113"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Créer des rapports personnalisés à l’aide Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -141,7 +141,7 @@ Pour plus d’informations, [voir Power BI modèles de rapport.](https://github.
 
 Affichez les exemples de rapport microsoft Defender pour Power BI de point de terminaison. Pour plus d’informations, voir [Parcourir les exemples de code.](/samples/browse/?products=mdatp)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [API Defender pour les points de terminaison](apis-intro.md)
 - [API de recherche avancée de menaces](run-advanced-query-api.md)

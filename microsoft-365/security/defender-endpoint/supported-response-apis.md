@@ -15,20 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 096f169daee45630be4cdf4b14f8b74b2f439464
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcf73669ab780ec23cbd5551039dc8c74f0502ef
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159365"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165797"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>API de requête Microsoft Defender pour point de terminaison prise en charge
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-supported-response-apis-abovefoldlink)
@@ -58,5 +59,5 @@ Découvrez les appels d’API liés à la réponse pris en charge que vous pouve
 |Obtenir la collection MachineActions|Exécutez cette action pour obtenir la collection MachineAction.|
 |Obtenir une collection FileActions|Exécutez cette API pour obtenir la collection FileActions.|
 |Obtenir un objet FileMachineAction|Exécutez cette API pour obtenir l’objet FileMachineAction.|
-|Obtenir la collection FileMachineActions|Exécutez cette API pour obtenir la collection FileMachineAction.|
+|Obtenir une collection FileMachineActions|Exécutez cette API pour obtenir la collection FileMachineAction.|
 |

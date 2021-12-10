@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f0b66558e74a0a71ab158621d5b8e9aa703f6d16
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0d0faebdf3b815bdca968cdd790767c5d36179b6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110138"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165209"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurer des fonctionnalités avancées dans Defender pour le point de terminaison
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -181,7 +181,7 @@ L’activation de ce paramètre permet de faire suivre les signaux de Defender f
 > [!NOTE]
 > Cette fonctionnalité sera disponible avec une licence E5 pour [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) sur les appareils exécutant Windows 10, version 1709 (os build 16299.1085 avec [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (os build 17134.704 avec [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809  (Os Build 17763.379 avec [KB4489899](https://support.microsoft.com/help/4489899)), versions Windows 10 versions ultérieures ou Windows 11.
 
-## <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
+## <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 Defender portal. L’turning on this feature gives Microsoft Secure Score visibility into the device’s security posture. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
@@ -243,7 +243,7 @@ Vous aurez accès aux fonctionnalités à venir, sur lesquelles vous pourrez nou
 
 Sauvegardez les fichiers mis en quarantaine dans un emplacement sécurisé et conforme afin qu’ils soient téléchargés directement à partir de la quarantaine. Le **bouton Télécharger** le fichier sera toujours disponible dans la page du fichier. Ce paramètre est allumé par défaut. [En savoir plus sur les conditions requises](respond-file-alerts.md#download-quarantined-files)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer des notifications d’alerte](configure-email-notifications.md)

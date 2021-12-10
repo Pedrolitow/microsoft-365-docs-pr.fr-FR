@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cee924ea4529b45635f5df16bc3868d09ec3929e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 897a8691bc7cbc3c03adcbf5befc2a2da8b12294
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174614"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165787"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniques dans la chronologie de l’appareil
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Vous pouvez obtenir plus d’informations dans une enquête en analysant les événements qui se sont produit sur un appareil spécifique. Tout d’abord, sélectionnez l’appareil qui vous intéresse dans la [liste Appareils.](machines-view-overview.md) Dans la page Appareil,  vous pouvez sélectionner l’onglet Chronologie pour afficher tous les événements qui se sont produits sur l’appareil.
+Vous pouvez obtenir plus d’informations dans une enquête en analysant les événements qui se sont produit sur un appareil spécifique. Tout d’abord, sélectionnez l’appareil qui vous intéresse dans la [liste Appareils.](machines-view-overview.md) Dans la page Appareil, vous pouvez sélectionner l’onglet **Chronologie** pour afficher tous les événements qui se sont produits sur l’appareil.
 
 ## <a name="understand-techniques-in-the-timeline"></a>Comprendre les techniques dans la chronologie
 
@@ -49,7 +49,7 @@ Les options de recherche et d’exportation sont également disponibles pour les
 
 ## <a name="investigate-using-the-side-pane"></a>Examiner l’utilisation du volet latéral
 
-Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous pouvez y voir des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées.
+Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous y verrez des informations et des informations supplémentaires, telles que des techniques, des tactiques et des descriptions att&CK associées.
 
 Sélectionnez la *technique d’attaque* spécifique pour ouvrir la page de technique att&CK associée dans laquelle vous trouverez plus d’informations à ce sujet.
 

@@ -14,22 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 08d3a70ad9456af8d26bf76cffbbc38f31d6b023
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 4a3bab27a4e2efd6b196167754303f35d5553de6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555463"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164729"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Résoudre les problèmes de réponse en direct de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Cette page fournit des étapes détaillées pour résoudre les problèmes de réponse en direct.
 
@@ -63,11 +64,11 @@ Si, lors d’une tentative d’action au cours d’une session de réponse en di
 
 Live Response tire parti de Defender pour l’inscription du capteur de point de terminaison auprès du service WNS dans Windows. Si vous avez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
 
-1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir [configurer les paramètres de proxy](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)d’appareil et de connectivité Internet.
+1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir Configurer [les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 2. WpnService (Windows Service système de notifications Push) n’est pas désactivé.
 
 Reportez-vous aux articles ci-dessous pour bien comprendre le comportement et les exigences du service WpnService :
 
-- [Windows Vue d’Notification Services (WNS) Push](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise Configurations de pare-feu et de proxy pour prendre en charge le trafic WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows vue d’Notification Services WNS (Push Notification Services)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise pare-feu et les configurations proxy pour prendre en charge le trafic WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Plages IP publiques MPNS (Microsoft Push Notifications Service)](https://www.microsoft.com/download/details.aspx?id=44535)

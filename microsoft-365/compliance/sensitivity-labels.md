@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 459a72d7d6e8686dfa5ec1241808c21d9b8a4cfd
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254476"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372707"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
