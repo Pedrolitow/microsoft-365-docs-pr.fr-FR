@@ -16,27 +16,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cdf2bbedb7dbfb5d3a87d6b28b441998283f3cb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 12475d72341eee97915990c61339be7d297349f9
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659383"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168413"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateforme** macOS
 
 Cette rubrique décrit comment résoudre les problèmes de connectivité cloud pour Microsoft Defender pour Endpoint sur macOS.
 
 ## <a name="run-the-connectivity-test"></a>Exécuter le test de connectivité
-Pour tester si Defender pour point de terminaison sur Mac peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
+Pour tester si Defender pour Point de terminaison sur Mac peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
 
 ```Bash
 mdatp connectivity test

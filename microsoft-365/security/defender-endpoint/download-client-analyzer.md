@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ef1a35516858128c8baf4f119dc3f421592daf2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6dd14da2955cf9ee701f7b2bf6031bf27c78beda
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555811"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166409"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Télécharger l’analyseur client Microsoft Defender for Endpoint
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Découvrez comment télécharger l’analyseur client Microsoft Defender pour Endpoint sur les systèmes d’exploitation Windows, macOS et Linux pris en charge.
 

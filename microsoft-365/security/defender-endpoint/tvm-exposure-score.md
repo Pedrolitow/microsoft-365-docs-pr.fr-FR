@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b994513d28c2714aecba05453af5c0a62a3912
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881690"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168389"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Score d’exposition : Gestion des menaces et des vulnérabilités
 
@@ -29,7 +29,7 @@ ms.locfileid: "60881690"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,7 +45,7 @@ La carte vous donne une vue générale de la tendance de votre score d’exposit
 
 ![Carte de score d’exposition.](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Le score d’exposition est décomposé selon les niveaux suivants :
 

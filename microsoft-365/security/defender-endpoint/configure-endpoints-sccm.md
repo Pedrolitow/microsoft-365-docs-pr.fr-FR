@@ -16,21 +16,22 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962590"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166517"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Intégrer des Windows à l’aide de Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager branche actuelle
 - System Center 2012 Configuration Manager R2
 
@@ -199,7 +200,7 @@ Value: "1"
 
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

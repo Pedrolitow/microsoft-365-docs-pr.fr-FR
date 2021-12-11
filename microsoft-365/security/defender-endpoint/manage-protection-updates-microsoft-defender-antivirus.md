@@ -15,20 +15,21 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: db3bdb7fc7c4dec7697fc8881687f70ad21e0642
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 2636756a3a91156041843c1375211a8640c5e701
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148877"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168509"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=22154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->

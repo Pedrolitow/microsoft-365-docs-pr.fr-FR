@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 01914a99c627237568cadbc5b5a3f6205ac3ce55
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963406"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168141"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Vue d’ensemble du portail Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -73,7 +73,7 @@ Zone|Description
 **Évaluation et didacticiels** | Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas dans un environnement d’évaluation.
 **Intégrité des services** | Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
 **Gestion de la configuration** | Affiche les appareils connectés, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
-**Paramètres** | Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
+**Settings** | Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
 **(2) Recherche, centre Community, localisation, aide et support, commentaires** |  Effectuer une recherche par appareil, fichier, utilisateur, URL, adresse IP, vulnérabilité, logiciel et recommandation. La recherche prend en charge l’utilisation des formats de hachage de chiffrement SHA1 et SHA256. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
 
 > [!NOTE]
@@ -131,7 +131,7 @@ Icône|Description
 ![Icône d’alerte active possible.](images/tvm_alert_icon.png)|Gestion des & des menaces : alerte active possible
 ![Icône Informations sur les recommandations.](images/tvm_insight_icon.png)|Gestion des & des menaces : recommandations
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble Microsoft 365 Defender](use.md)
 - [Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md)

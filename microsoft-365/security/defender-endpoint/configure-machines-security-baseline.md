@@ -14,22 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 052ba7710d7c3561a93d8a67cf933a20a8cf7b99
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 95790626461d7db02f3837321e0d9075e0597515
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882608"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166529"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Renforcer la conformité à la ligne de base de sécurité microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Les lignes de base de sécurité garantissent que les fonctionnalités de sécurité sont configurées conformément aux conseils des experts en sécurité et des Windows administrateurs système. Lorsqu’elle est déployée, la ligne de base de sécurité defender pour point de terminaison définit les contrôles de sécurité Defender pour les points de terminaison afin de fournir une protection optimale.
 
@@ -42,12 +43,12 @@ Avant de pouvoir déployer et suivre la conformité aux lignes de base de sécur
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparer les lignes de base de sécurité Microsoft Defender pour endpoint et Windows intune
 
-La ligne de base de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant Windows, notamment les paramètres de navigateur, les paramètres PowerShell et les paramètres de certaines fonctionnalités de sécurité telles que Antivirus Microsoft Defender. En revanche, la ligne de base de Defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour les points de terminaison, y compris les paramètres de protection évolutive des points de terminaison (PEPT) ainsi que les paramètres également trouvés dans la ligne de base de sécurité Windows Intune. Pour plus d’informations sur chaque ligne de base, voir :
+La ligne de base de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant Windows, notamment les paramètres du navigateur, les paramètres PowerShell et les paramètres de certaines fonctionnalités de sécurité telles que Antivirus Microsoft Defender. En revanche, la ligne de base de Defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour les points de terminaison, y compris les paramètres de protection évolutive des points de terminaison (PEPT) ainsi que les paramètres également trouvés dans la ligne de base de sécurité Windows Intune. Pour plus d’informations sur chaque ligne de base, voir :
 
 - [Windows de base de sécurité pour Intune](/intune/security-baseline-settings-windows)
 - [Paramètres de référence de Microsoft Defender pour point de terminaison pour Intune](/intune/security-baseline-settings-defender-atp)
 
-Dans l’idéal, les appareils intégrés à Defender pour point de terminaison sont déployés à la fois sur les deux lignes de base : la ligne de base de sécurité Windows Intune pour sécuriser initialement les Windows, puis la ligne de base de sécurité De Defender pour point de terminaison superposée sur le haut pour configurer de manière optimale les contrôles de sécurité Defender pour les points de terminaison. Pour tirer parti des données les plus récentes sur les risques et les menaces et réduire les conflits à mesure que les lignes de base évoluent, appliquez toujours les dernières versions des lignes de base sur tous les produits dès leur publication.
+Les appareils intégrés à Defender pour point de terminaison devraient être déployés sur les deux lignes de base : la ligne de base de sécurité Windows Intune pour sécuriser initialement Windows, puis la ligne de base de sécurité de Defender pour point de terminaison comme couche supplémentaire pour configurer de manière optimale les contrôles de sécurité Defender pour point de terminaison. Pour tirer parti des données les plus récentes sur les risques et les menaces et réduire les conflits à mesure que les lignes de base évoluent, appliquez toujours les dernières versions des lignes de base sur tous les produits dès leur publication.
 
 > [!NOTE]
 > La ligne de base de sécurité defender pour point de terminaison a été optimisée pour les appareils physiques et n’est actuellement pas recommandée pour une utilisation sur des ordinateurs virtuels (VM) ou des points de terminaison VDI. Certains paramètres de la base de référence peuvent impacter les sessions interactives à distance sur les environnements virtualisés.

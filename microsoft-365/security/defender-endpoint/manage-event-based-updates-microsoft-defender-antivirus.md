@@ -16,21 +16,21 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d206b41e6aa4ff2bcac74aa0eb229b50f1fae2ee
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: c99e4e085de32ac4e7ec77a2155182f1a930d432
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148658"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168497"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection livré par le cloud.
 
@@ -70,7 +70,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Pour plus d’informations, voir [Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter Antivirus Microsoft Defender [et les cmdlets antivirus Defender.](/powershell/module/defender/index)
+Pour plus d’informations, consultez [Utiliser les applets de commande PowerShell pour configurer et exécuter l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et les [Applets de commande de l’antivirus Defender](/powershell/module/defender/index).
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser Windows Management Instruction (WMI) pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 

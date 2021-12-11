@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a1e5926233d5e1e86101d2f22dfe3e149746a120
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 717efaff970165c52c15e0422e6e2be4bc832d00
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884024"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168425"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
 
@@ -29,8 +29,8 @@ ms.locfileid: "60884024"
 
 
 **S’applique à :**
-
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si Antivirus Microsoft Defender est configuré pour détecter et corriger les menaces sur votre appareil, Antivirus Microsoft Defender met en quarantaine les fichiers suspects. Si vous êtes certain qu’un fichier mis en quarantaine n’est pas une menace, vous pouvez le restaurer.
 

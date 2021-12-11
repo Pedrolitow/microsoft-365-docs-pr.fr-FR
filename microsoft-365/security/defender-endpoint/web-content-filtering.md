@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2bf43507b624cc1dae78534d579d01c1f2cef096
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962626"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167945"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -47,7 +48,7 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 

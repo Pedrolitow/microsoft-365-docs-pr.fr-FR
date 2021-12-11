@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: ae2a0b538fffc1644d3eb3e26c5b7cd4b512de1c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: b6d4b6f78cc677f9be5f664d86d8734ebd8df2f7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110702"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168401"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour le point de terminaison à l’aide d’une réponse en direct
 
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 

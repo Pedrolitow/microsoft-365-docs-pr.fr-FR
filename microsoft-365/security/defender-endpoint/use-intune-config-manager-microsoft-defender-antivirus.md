@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eed1b0d19efe21d4bb1ba81dfb36964c6d80894c
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 74814304460c33b108b6216db853504f1956e59b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881709"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168377"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Utilisez Microsoft Endpoint Manager pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -31,7 +31,8 @@ ms.locfileid: "60881709"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Vous pouvez utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour configurer des analyses Antivirus Microsoft Defender’analyse. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) Configuration [Manager](/mem/configmgr/core/understand/introduction) font désormais partie de Endpoint Manager.
 
@@ -54,7 +55,7 @@ Vous pouvez utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview
 8. Choose **Review + save**
 
 > [!TIP]
-> Vous avez besoin d’aide ? Voir [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
+> Besoin d’aide ? Voir [Gérer la sécurité des points de terminaison dans Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 ## <a name="related-articles"></a>Articles connexes
 

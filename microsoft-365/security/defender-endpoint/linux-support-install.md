@@ -17,20 +17,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8f30a42fac3cc52de38e06b4193ab4098258262
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 9d9b764425807f45f41f0be5c57ad872223e0c3f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478900"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166301"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -125,7 +125,7 @@ service mdatp status
 
     où `<systemd_path>` est pour les `/lib/systemd/system` distributions Ubuntu et Debian et /usr/lib/systemd/system' pour Rhel, CentOS, Oracle et SLES. Réexécutez ensuite l’étape 2.
 
-4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d’application. Si c’est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d’informations, consultez la page de l’homme du sélinux.
+4. Si les étapes ci-dessus ne fonctionnent pas, vérifiez si SELinux est installé et en mode d’application. Si c’est le cas, essayez de le définir sur le mode permissif (de préférence) ou désactivé. Pour ce faire, vous pouvez définir le paramètre sur « permissif » ou « désactivé » dans le fichier, puis par `SELINUX` `/etc/selinux/config` redémarrage. Pour plus d’informations, consultez la page d’homme du sélinux.
 Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. Revert the configuration change immediately though for security reasons after trying it andboot.
 
 5. Si `/opt` le répertoire est un lien symbolique, créez un montage de liaison pour `/opt/microsoft` .

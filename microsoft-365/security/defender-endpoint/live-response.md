@@ -14,25 +14,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07091dfaa997ff0415ecdb981b0b26f301cf0dce
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587172"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166217"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
+La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion Shell distante. Cela vous donne la puissance d’un travail d’examen approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
 
 La réponse dynamique est conçue pour améliorer les enquêtes en permettant à votre équipe des opérations de sécurité de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 
@@ -50,7 +50,7 @@ Avec la réponse en direct, les analystes peuvent effectuer toutes les tâches s
 
 Avant de lancer une session sur un appareil, veillez à respecter les conditions suivantes :
 
-- **Vérifiez que vous exécutez une version prise en charge de Windows**.
+- **Vérifiez que vous exécutez une version prise** en charge de Windows .
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
@@ -69,7 +69,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   
   - **Windows Server 2016** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
-  - **Windows Server 2019**
+  - **Windows Server 2019**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
@@ -89,18 +89,18 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   > [!NOTE]
   > Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
 
-- **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.
+- **Assurez-vous qu’un niveau de correction Automation** est affecté à l’appareil.
 
-  Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir de session Live Response à un membre de ce groupe.
+  Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir une session Live Response à un membre de ce groupe.
 
   Vous recevrez l’erreur suivante :
 
   ![Image du message d’erreur.](images/live-response-error.png)
 
-- **Activer l’exécution de script non signé de réponse en** direct (facultatif).
+- **Activer l’exécution de scripts non signés de** réponse en direct (facultatif).
 
   >[!IMPORTANT]
-  >La vérification de signature s’applique uniquement aux scripts PowerShell. 
+  >La vérification des signatures s’applique uniquement aux scripts PowerShell. 
 
   > [!WARNING]
   > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -112,8 +112,8 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
 
   > [!IMPORTANT]
-  > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
-  > Le bouton est grisé pour les utilisateurs ayant uniquement des autorisations déléguées.
+  > L’option de téléchargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
+  > Le bouton est grisé pour les utilisateurs qui n’ont que des autorisations déléguées.
 
   Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC.
 
@@ -130,19 +130,19 @@ Le tableau de bord vous donne également accès à :
 - Inscription de l’application dans Azure Active Directory
 - Télécharger fichiers dans la bibliothèque
 - Console de commande
-- Journal des commandes
+- Journal de commandes
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>Lancer une session de réponse en direct sur un appareil
 
 1. Connectez-vous Microsoft 365 Defender portail.
 
-2. Accédez **aux points de terminaison >'inventaire des** appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
+2. Accédez **aux points de terminaison >'inventaire** des appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
 4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
 
-5. Une fois l’examen terminé, sélectionnez **Déconnecter la session,** puis **confirmez.**
+5. Après avoir terminé votre enquête, sélectionnez **Déconnecter la session,** puis sélectionnez **Confirmer**.
 
 ## <a name="live-response-commands"></a>Commandes de réponse en direct
 
@@ -153,7 +153,7 @@ Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de
 
 ### <a name="basic-commands"></a>Commandes de base
 
-Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse en direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
+Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont la possibilité d’exécuter des commandes de réponse **en** direct de base. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
 
 <br>
 
@@ -198,7 +198,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | putfile  | Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.  | v  | v  | v  |
 | corriger  | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: This command has a prerequisite command. Vous pouvez utiliser la commande -auto conjointement avec la correction pour exécuter automatiquement la commande prérequise.  | v  | v  | v  |
 | analyse  | Déconnecte l’appareil du réseau tout en conservant la connectivité au service Defender for Endpoint  | N  | v  | v  |
-| annuler  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
+| undo  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
 
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
@@ -260,7 +260,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 6. Cliquez **sur Confirmer.**
 
-7. (Facultatif) Pour vérifier que le fichier a été chargé dans la bibliothèque, exécutez la `library` commande.
+7. (Facultatif) Pour vérifier que le fichier a été téléchargé vers la bibliothèque, exécutez la `library` commande.
 
 ### <a name="cancel-a-command"></a>Annuler une commande
 
@@ -275,7 +275,7 @@ Avant de pouvoir exécuter des scripts PowerShell/Bash, vous devez d’abord le 
 
 Après avoir téléchargé le script dans la bibliothèque, utilisez `run` la commande pour exécuter le script.
 
-Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités](advanced-features.md) avancées.
+Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
 
 > [!WARNING]
 > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -288,7 +288,7 @@ Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, 
   help <command name>
   ```
 
-- Lorsque vous appliquez des paramètres aux commandes, notez que les paramètres sont gérés selon un ordre fixe :
+- Lorsque vous appliquez des paramètres à des commandes, notez que les paramètres sont gérés selon un ordre fixe :
 
   ```powershell
   <command name> param1 param2
@@ -314,7 +314,7 @@ Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, 
 
 ## <a name="supported-output-types"></a>Types de sortie pris en charge
 
-La réponse en direct prend en charge les types de sortie de tableau et de format JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
+La réponse en direct prend en charge les types de sortie au format JSON et tableau. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
 
 - `-output json`
 - `-output table`
@@ -339,12 +339,12 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 - ID
 - Ligne de commande
 - Durée
-- Barre côté état et entrée ou sortie
+- Barre d’état et d’entrée ou de sortie
 
 ## <a name="limitations"></a>Limites
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
-- Le délai d’inactivité de la session de réponse en direct est de 30 minutes.
+- La valeur du délai d’inactivité de la session de réponse active est de 30 minutes.
 - Un utilisateur peut démarrer jusqu’à 10 sessions simultanées.
 - Un appareil ne peut être connecté qu’à une seule session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :
