@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373067"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401413"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -66,6 +66,11 @@ En raison de ces modifications, n'activez pas ce paramètre si vous avez des app
 Consultez la section suivante pour obtenir la liste des applications et services qui prennent en charge ce paramètre et les modifications apportées aux métadonnées d’étiquetage.
 
 ## <a name="prerequisites"></a>Prerequisites
+
+> [!IMPORTANT]
+> Cette fonctionnalité nécessite que tous les utilisateurs disposent de Applications Microsoft 365 pour les grandes entreprises. La prise en charge de cette fonctionnalité de co-auteur n’est pas encore disponible avec le Canal Entreprise semestriel pour Office mises à jour. Si vous utilisez ce canal de mise à jour pour vos applications Office, changez-le en Canal actuel ou Canal Enterprise mensuel.
+> 
+> Pour plus d’informations, [afficher Comment configurer et gérer les canaux de mise à jour.](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels)
 
 Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditions préalables suivantes.
 

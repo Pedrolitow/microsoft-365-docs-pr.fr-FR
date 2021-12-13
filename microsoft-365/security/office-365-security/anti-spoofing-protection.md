@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f685e1aaa7b88cd2a86b2c4d7af4c9015edc225
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372167"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401299"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -168,11 +168,9 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
   - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements, comme décrit dans [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md) et [Gérer les listes rouge/verte du client](tenant-allow-block-list.md).
 
-  - Créez un ticket de support auprès de Microsoft 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes. Pour plus d’informations, voir [Contacter le support concernant les produits pour les entreprises – Aide de l’administrateur](../../admin/get-help-support.md).
+  - Utilisez la liste d’adresses client autoriser/bloquer pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime. Pour plus d’informations, affichez Ajouter des autoriser dans la liste des locataires [autoriser/bloquer.](manage-tenant-allows.md)
 
 En cas d’échec de l’opération, vous pouvez signaler le message à Microsoft comme étant un faux positif. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
-
-Vous pouvez également contacter votre administrateur qui peut ouvrir un ticket de support auprès de Microsoft. L’équipe d’ingénierie de Microsoft examinera pourquoi le message a été marqué comme usurpation d’identité.
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Considérations relatives à la protection contre l’usurpation d’identité
 
