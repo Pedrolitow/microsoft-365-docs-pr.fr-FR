@@ -126,19 +126,11 @@
         - name: Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
           href: overview-m365-security.md
         - name: Sécuriser les comptes des employés avec une authentification multifacteur
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Configurer la connexion à deux facteurs sur votre téléphone
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: Activer la détection de programmes malveillants
-          href: anti-malware.md
-        - name: Créer des règles pour vos e-mails pour les rançongiciels
-          href: prevent-ransom-in-email.md
-        - name: Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
-          href: setup-anti-phishing.md
         - name: Gérer les pièces jointes fiables
           href: safe-attachments.md
-        - name: Gérer les liens fiables
-          href: safe-links.md
         - name: Éviter les pertes de données
           href: set-up-dlp.md
         - name: Créer des étiquettes de sensibilité

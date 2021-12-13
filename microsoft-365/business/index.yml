@@ -61,7 +61,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Configurer Teams
-        - url: ../business-video/install-office.md
+        - url: ../admin/setup/install-applications.md
           itemType: get-started
           text: 4. Installer Office
     - title: Ressources destinées aux partenaires (en anglais uniquement)
@@ -191,7 +191,7 @@ conceptualContent:
           text: Communauté technique pour les petites et moyennes entreprises
     - title: Procédures
       links:
-        - url: ../business-video/sign-up.md
+        - url: ../admin/admin-overview/sign-up-for-office-365.md
           itemType: get-started
           text: S’inscrire à Microsoft 365 Business Premium
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md

@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’outil Advanced eDiscovery gestion des dépositaires pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 561744ac803c99d06f811eb625db9ce4ab623fd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: d0ea6e94bd48c055cac23d8a96477e036369dd5c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200232"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423382"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
@@ -30,7 +32,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 ## <a name="get-permissions"></a>Obtenir des autorisations
 
-Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit Advanced eDiscovery avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
+Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont attribués aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page Autorisations du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d Exchange de conformité.</a> Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit Advanced eDiscovery avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 
 > [!IMPORTANT]
 > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page Autorisations dans le Centre de conformité Microsoft 365, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
@@ -43,13 +45,13 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
   
 3. Dans la page **Des dépositaires,** sélectionnez un dépositaire dans la liste, puis cliquez sur **Afficher** l’activité des dépositaires dans la page de flyout.
 
-    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
+    La page de recherche activités du dépositaire s’affiche. Notez que le dépositaire que vous avez  sélectionné à l’étape précédente s’affiche dans la zone de présentation du dépositaire. Vous pouvez sélectionner différents dépositaires dans la zone de drop-down, mais vous pouvez uniquement rechercher des activités pour un dépositaire à la fois.
 
-    ![Page de recherche des activités des dépositaires.](../media/AeDCustodianActivities1.png)
+    ![Page de recherche des activités du consignataire.](../media/AeDCustodianActivities1.png)
    
 4. Configurez les critères de recherche suivants : 
       
-   1. **Activités :** cliquez sur la liste liste de listes pour afficher les activités que vous pouvez rechercher. Une fois la recherche terminée, seuls les enregistrements d’audit correspondant aux activités sélectionnées apparaissent. La sélection **Afficher les résultats pour toutes** les activités affiche les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
+   1. **Activités :** cliquez sur la liste liste de listes pour afficher les activités que vous pouvez rechercher. Une fois la recherche terminée, seuls les enregistrements d’audit correspondant aux activités sélectionnées apparaissent. La sélection **Afficher les résultats pour toutes les** activités affiche les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
 
       ![Liste des activités.](../media/CustodianActivityAudit.PNG)
       
@@ -78,7 +80,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 ## <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
-Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats d’un utilisateur ou d’une activité spécifique. 
+Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats pour un utilisateur ou une activité spécifique. 
 
 Pour filtrer les résultats :
 
@@ -102,7 +104,7 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
     - **Enregistrez les résultats chargés :** Choisissez cette option pour exporter uniquement les  entrées qui sont affichées sous Résultats sur la page de recherche du journal d’audit **du** dépositaire. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (intitulée **Plus)** est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page Recherche dans le journal d’audit, 5 000 entrées au maximum sont exportées.
         
-    - **Téléchargez tous les résultats :** Choisissez cette option pour exporter toutes les entrées du journal d’audit qui répondent aux critères de recherche. Pour un grand nombre de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats qui peuvent être affichés dans la page de recherche du journal **d’audit** du dépositaire. Cette option télécharge les données brutes du journal d’audit dans un fichier CSV et contient des informations supplémentaires à partir de l’entrée du journal d’audit dans une colonne nommée AuditData. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
+    - **Téléchargez tous les résultats :** Choisissez cette option pour exporter toutes les entrées du journal d’audit qui répondent aux critères de recherche. Pour un grand nombre de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats qui peuvent être affichés sur la page de recherche du journal **d’audit** du dépositaire. Cette option télécharge les données brutes du journal d’audit dans un fichier CSV et contient des informations supplémentaires à partir de l’entrée du journal d’audit dans une colonne nommée AuditData. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
     
       > [!IMPORTANT]
       > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.

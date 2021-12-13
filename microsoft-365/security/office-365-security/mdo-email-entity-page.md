@@ -15,14 +15,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: 6a742653f5c249da356b9295572085733ecec5bf
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 037ab81dd0c657906c59cf485c9da25c58804dab
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960645"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423274"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -112,7 +114,7 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
 
 *Détails de l’e-mail*: détails requis pour une compréhension approfondie du courrier électronique disponible dans *l’onglet Analyse.*
 
-- *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Elles peuvent uniquement être créées et modifiées dans le Centre d’administration Exchange, mais si une etr s’applique à un message, le nom et le GUID DER s’afficheront ici. Informations précieuses à des fins de suivi.
+- *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Ils peuvent uniquement être créés et modifiés dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange,</a>mais si une etr s’applique à un message, le nom et le GUID ETR s’afficheront ici. Informations précieuses à des fins de suivi.
 
 - *Remplacements système*: il s’agit d’un moyen d’effectuer des exceptions à l’emplacement de remise prévu pour un message en remplacement de l’emplacement de remise donné par le système (selon la technologie de détection et de menace).
 

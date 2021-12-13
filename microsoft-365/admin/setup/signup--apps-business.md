@@ -1,5 +1,5 @@
 ---
-title: S’inscrire à Applications Microsoft 365 pour les PME
+title: S’inscrire à Microsoft 365 Apps for business
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Inscrivez-vous à Applications Microsoft 365 pour les PME.
-ms.openlocfilehash: 1a647f86fd98ed865772aa7d9117ba965c987e50
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 4b0dab60a8deaa5b8e2b945877906bfc6331f044
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254550"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421569"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>S’inscrire à un abonnement Applications Microsoft 365 pour les PME abonnement
 
@@ -41,7 +41,7 @@ Il existe deux façons de commencer :
 Pour vous inscrire et acheter des Applications Microsoft 365 pour les PME, complétez les étapes suivantes.
 
 > [!IMPORTANT]
-> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus d’informations, voir Attribuer des [rôles](../add-users/assign-admin-roles.md) d’administrateur.
 
 1. Dans la [page Pour les entreprises,](https://go.microsoft.com/fwlink/?linkid=2181424)voir ce qui est inclus dans Microsoft 365. Sous Applications Microsoft 365 pour les PME, sélectionnez **Acheter maintenant.**
 2. Dans la page **Que vous avez Applications Microsoft 365 pour les PME,** entrez une adresse de messagerie que vous utilisez déjà. Il peut s’y trouver n’importe quelle adresse que Vous souhaitez que Microsoft utilise pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Ensuite, **sélectionnez, Configurer le compte**.

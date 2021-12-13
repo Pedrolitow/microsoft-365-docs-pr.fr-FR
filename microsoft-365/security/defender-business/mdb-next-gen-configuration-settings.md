@@ -1,13 +1,13 @@
 ---
-title: Comprendre les paramètres de configuration de la protection nouvelle génération dans Microsoft Defender entreprise
-description: Comprendre les paramètres de configuration pour la protection nouvelle génération dans Microsoft Defender pour les entreprises
+title: Comprendre les paramètres de configuration de la protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation)
+description: Comprendre les paramètres de configuration pour la protection nouvelle génération dans Microsoft Defender entreprise (prévisualisation)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 71d781458d33e73cfb81622d281b48c960d0d07c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 619d3a03789eab7e525a6d4d07621d7950e907cb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375177"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423262"
 ---
-# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender entreprise
+# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
 
-La nouvelle génération de protection dans Microsoft Defender pour les entreprises inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité . Toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. 
+La protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation) inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité . Toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. 
 
 **Cet article décrit**:
 
@@ -39,7 +39,7 @@ La nouvelle génération de protection dans Microsoft Defender pour les entrepri
 
 Le tableau suivant répertorie vos paramètres et options :<br/><br/>
 
-| Paramètre | Description |
+| Setting | Description |
 |:---|:---|
 | **Protection en temps réel**  |  |
 | **Activer la protection en temps réel** | Activée par défaut, la protection en temps réel localise et arrête l’exécution des programmes malveillants sur les appareils. *Nous vous recommandons de maintenir la protection en temps réel allumée.*<br/><br/>Lorsque la protection en temps réel est désactivée, elle configure les paramètres suivants :<br/>- La surveillance du comportement est désactivée ([AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender))<br/>- Tous les fichiers et pièces jointes téléchargés sont analysés ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender))<br/>- Les scripts utilisés dans les navigateurs Microsoft sont analysés ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender))   |
@@ -53,7 +53,7 @@ Le tableau suivant répertorie vos paramètres et options :<br/><br/>
 | **Heure de la journée pour exécuter une analyse programmée** | Sélectionnez un moment pour exécuter vos analyses antivirus régulièrement programmées. |
 | **Utiliser des performances faibles** | Ce paramètre est désactivé par défaut. *Nous vous recommandons de conserver ce paramètre désactivé.* Toutefois, vous pouvez activer ce paramètre pour limiter la mémoire et les ressources de l’appareil utilisées lors des analyses programmées. <br/><br/>**IMPORTANT** Si vous turn **Use low performance** on, il configure les paramètres suivants pour Antivirus Microsoft Defender : <br/>- Les fichiers d’archivage ne sont pas analysés ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender))<br/>- Une faible priorité du processeur est attribuée aux analyses ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender)) <br/>- Si une analyse antivirus complète est manquée, aucune analyse de rattrapage ne s’exécutera ([DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- Si une analyse antivirus rapide est manquée, aucune analyse de rattrapage ne s’exécutera ([DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- Réduit le facteur de charge moyenne du processeur pendant une analyse antivirus de 50 % à 20 % ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender)) |
 | **Expérience utilisateur**   |  |
-| **Autoriser les utilisateurs à accéder à l Sécurité Windows appl;** | Activez ce paramètre pour permettre aux utilisateurs d’ouvrir l’Sécurité Windows sur leurs appareils. Les utilisateurs ne pourront pas remplacer les paramètres que vous configurez dans Microsoft Defender pour les entreprises, mais ils pourront exécuter une analyse rapide si nécessaire ou afficher les menaces détectées. |
+| **Autoriser les utilisateurs à accéder à l Sécurité Windows appl;** | Activez ce paramètre pour permettre aux utilisateurs d’ouvrir l’Sécurité Windows sur leurs appareils. Les utilisateurs ne pourront pas remplacer les paramètres que vous configurez dans Microsoft Defender pour Entreprise (prévisualisation), mais ils pourront exécuter une analyse rapide si nécessaire ou afficher les menaces détectées. |
 | **Exclusions antivirus** | Les exclusions sont des processus, des fichiers ou des dossiers ignorés par Antivirus Microsoft Defender analyses. *En règle générale, il n’est pas nécessaire de définir des exclusions.* Antivirus Microsoft Defender inclut de nombreuses exclusions automatiques basées sur les comportements connus du système d’exploitation et les fichiers de gestion classiques.<br/><br/>[En savoir plus sur les exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **Exclusions de processus** | Les exclusions de processus empêchent les fichiers ouverts par des processus spécifiques d’être analysés par Antivirus Microsoft Defender. <br/><br/>[En savoir plus sur les exclusions de processus](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
 | **Exclusions d’extension de fichier** | Les exclusions d’extension de fichier empêchent l’analyse des fichiers avec des extensions spécifiques par Antivirus Microsoft Defender.<br/><br/>[En savoir plus sur les exclusions d’extension de fichier](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
@@ -61,7 +61,7 @@ Le tableau suivant répertorie vos paramètres et options :<br/><br/>
 
 ## <a name="additional-preconfigured-settings"></a>Paramètres préconfigurés supplémentaires
 
-Les paramètres supplémentaires suivants sont préconfigurés pour la protection nouvelle génération dans Defender for Business :
+Les paramètres supplémentaires suivants sont préconfigurés pour la protection nouvelle génération dans Defender for Business (prévisualisation) :
 
 - L’analyse des lecteurs amovibles est allumée ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender))
 - Les analyses rapides quotidiennes n’ont pas de temps prédéfini ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender))
@@ -70,9 +70,9 @@ Les paramètres supplémentaires suivants sont préconfigurés pour la protectio
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)
 
@@ -81,6 +81,6 @@ Les paramètres supplémentaires suivants sont préconfigurés pour la protectio
 
 - [Visitez le portail Microsoft 365 Defender web](mdb-get-started.md)
 
-- [Gérer les paramètres de pare-feu dans Microsoft Defender entreprise](mdb-custom-rules-firewall.md)
+- [Gérer les paramètres de pare-feu dans Microsoft Defender entreprise (aperçu)](mdb-custom-rules-firewall.md)
 
 - [CSP Stratégie - Defender](/windows/client-management/mdm/policy-csp-defender)

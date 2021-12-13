@@ -7,17 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.custom: admindeeplinkEXCHANGE
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4652cfda1010fc0b3a416c0be7f68095b11e4ad4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59974eca9512fc634701e932610f07239f89f038
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162157"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423166"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
@@ -26,9 +27,9 @@ ms.locfileid: "60162157"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Lorsque des messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
+Lorsque les messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
 
 - Le connecteur n’est pas correctement configuré.
 - Des modifications ont été apportées au réseau ou au pare-feu dans votre environnement local.
@@ -45,7 +46,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 - Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **Messages qui a été retardée.** Pour configurer les paramètres de notification pour cette alerte, consultez la section suivante.
 
-  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le Centre de [sécurité & conformité.](../../compliance/alert-policies.md)
+  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le [Centre de sécurité & conformité.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d’attente
 
@@ -74,14 +75,14 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Informations sur les files d’attente dans le tableau de bord de flux de messagerie
 
-Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et prendre des mesures avant que le nombre de messages mis en file d’attente devienne trop important.
+Même si le volume de messages en file d’attente n’a pas  dépassé le [](mail-flow-insights-v2.md) seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu des files d’attente dans le tableau de bord de flux de messagerie pour voir les messages mis en file d’attente depuis plus d’une heure et agir avant que le nombre de messages mis en file d’attente ne devienne trop élevé.
 
 ![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-queues-widget.png)
 
 Si vous cliquez sur le nombre  de messages sur le widget, un message volant Messages mis en file d’attente apparaît avec les informations suivantes :
 
 - **Nombre de messages mis en file d’attente**
-- **Nom du** connecteur : cliquez sur le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC).
+- **Nom du** connecteur : sélectionnez le nom du connecteur pour gérer le connecteur dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">le Centre d’administration Exchange (EAC).</a>
 - **Heure de début de la file d’attente**
 - **Messages les plus anciens arrivés à expiration**
 - **Serveur de destination**

@@ -12,32 +12,34 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: 2362731a3837950ecbf0f3fea5e6887311e94d97
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Exchange administrateurs en ligne gèrent le courrier électronique et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162013"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421389"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
-Pour vous aider à administrer les [](assign-admin-roles.md) Microsoft 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre [d’administration Exchange.](/exchange/exchange-admin-center) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
+Pour vous aider à administrer Microsoft 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange.</a> [](assign-admin-roles.md) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
   
- **Conseil**: lorsque vous affectez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d'administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
+ **Conseil**: lorsque vous attribuez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d'administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
 
 Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés Exchange rôle d’administrateur principal :
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+- [Configurer une stratégie d’archivage et de](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres de votre organisation.
 
 - Configurer des fonctionnalités de boîte aux lettres telles que la stratégie de partage de boîte aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes extérieures à votre organisation.
 
@@ -51,7 +53,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online groupes de rôles
 
-Si vous avez une grande organisation, l’administrateur Exchange souhaite peut-être affecter des utilisateurs à Exchange groupes de rôles. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
+Si vous avez une grande organisation, l’administrateur Exchange peut affecter des utilisateurs à Exchange groupes de rôles. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
   
  Par exemple, l’administrateur Exchange peut affecter une personne au groupe de rôles Gestion de la découverte afin qu’elle puisse effectuer des recherches de données dans les boîtes aux lettres qui répondent à certains critères. Pour plus d’informations, [voir Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) et gérer les groupes de [rôles.](/exchange/manage-role-groups-exchange-2013-help)
   

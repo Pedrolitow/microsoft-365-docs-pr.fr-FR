@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: 326188e0000d3c59eb411222d3e3c47177b383ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5643c12f46fb09f76f16dc2632baf1538d358dd5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161689"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421341"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -44,10 +45,10 @@ Si vous devez empêcher immédiatement l’accès à la signature d’un utilisa
 3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser.** (Ne leur envoyez pas de message.)
 4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Se sortir **de toutes les sessions.**
 
-Dans l’heure qui s’affiche( ou après avoir quitté la page Microsoft 365 leur page actuelle), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
+Dans l’heure qui s’affiche( ou après avoir quitté la page Microsoft 365 leur page actuelle), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont ils sortent de leur page web actuelle.
   
 > [!IMPORTANT]
-> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
+> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, OneDrive, ou actualisent leur navigateur, la signature est lancée.
   
 Pour utiliser PowerShell pour décrémenter un utilisateur immédiatement, consultez l’cmdlet [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   
@@ -56,7 +57,7 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
 ## <a name="block-a-former-employees-access-to-microsoft-365-services"></a>Bloquer l’accès d’un ancien employé Microsoft 365 services
 
 > [!IMPORTANT]
- > Le blocage d’un compte peut prendre jusqu’à 24 heures. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
+ > Le blocage d’un compte peut prendre jusqu’à 24 heures pour prendre effet. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole Bloquer **cet utilisateur.**
@@ -64,15 +65,14 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquer l'accès d'un ancien employé aux courriers (Exchange Online)
 
-Si vous avez des messages électroniques dans le cadre de votre abonnement Microsoft 365, connectez-vous au Centre d’administration Exchange et suivez ces étapes pour empêcher votre ancien employé d’accéder à son courrier électronique.
+Si vous avez des messages électroniques dans le cadre de votre abonnement Microsoft 365, connectez-vous au Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> et suivez ces étapes pour empêcher votre ancien employé d’accéder à son courrier électronique.
   
-1. Accédez au <a href="https://admin.exchange.microsoft.com/" target="_blank">Centre d’administration Exchange</a>.
-2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
-3. Sélectionnez la boîte aux lettres utilisateur dans la liste, puis, dans le volet d’informations *(à* droite), sélectionnez Gérer les **paramètres** des applications de messagerie sous Applications de **messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
-4. Cliquez sur **Enregistrer**.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Sélectionnez la boîte aux lettres utilisateur dans la liste, puis, dans le volet d’informations *(à* droite), sélectionnez Gérer les **paramètres** des applications de messagerie sous Applications **de messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
+1. Cliquez sur **Enregistrer**.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)
+[Exchange centre d’administration dans Exchange Online](/exchange/exchange-admin-center) (article)\
 
-[Restaurer un utilisateur](restore-user.md)
+[Restaurer un utilisateur](restore-user.md) (article)

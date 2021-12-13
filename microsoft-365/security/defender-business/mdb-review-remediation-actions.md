@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les actions de correction dans Microsoft Defender pour les entreprises
+title: Passer en revue les actions de correction dans Microsoft Defender pour Entreprise (prévisualisation)
 description: Afficher les corrections qui ont été prises automatiquement ou qui sont en attente d’approbation dans le centre de mise en œuvre
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5550892a1d16ff8872d2a634f8a7560932cef6e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 314bb913a161e21ef61c09568cd87aad61ccd10e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375241"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421869"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Passer en revue les actions de correction dans le centre de mise à jour
 
@@ -49,7 +49,7 @@ ms.locfileid: "61375241"
 
 ## <a name="remediation-actions"></a>Actions de correction
 
-Microsoft Defender pour les entreprises inclut plusieurs actions de correction. Ces actions incluent les actions de réponse manuelles, les actions qui suivent un examen automatisé et les actions de réponse en direct.
+Microsoft Defender pour Entreprise (prévisualisation) inclut plusieurs actions de correction. Ces actions incluent les actions de réponse manuelles, les actions qui suivent un examen automatisé et les actions de réponse en direct.
 
 Le tableau suivant répertorie les actions de correction disponibles :
 
@@ -61,6 +61,6 @@ Le tableau suivant répertorie les actions de correction disponibles :
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
 
-- [Gérer les appareils dans Microsoft Defender pour les entreprises](mdb-manage-devices.md)
+- [Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-manage-devices.md)

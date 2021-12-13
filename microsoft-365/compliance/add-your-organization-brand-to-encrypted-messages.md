@@ -21,13 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: Découvrez comment Office 365 administrateurs globaux peuvent appliquer la marque de votre organisation aux messages électroniques chiffrés & contenu du portail de chiffrement.
-ms.openlocfilehash: 063a46c94578cbd3cd01184d25086d5246da3fa8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98534c74b836b87eb4ca6af42a3ec9535c274716
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195772"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423922"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Ajouter la marque de votre organisation à votre Microsoft 365 chiffrement de messages pour les entreprises
 
@@ -63,7 +64,7 @@ Une fois que vous avez créé les modèles, vous pouvez les appliquer aux e-mail
 
 ## <a name="work-with-ome-branding-templates"></a>Utiliser des modèles de branding OME
 
-Vous pouvez modifier plusieurs fonctionnalités dans un modèle de branding. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous avez un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de branding à la fois.
+Vous pouvez modifier plusieurs fonctionnalités au sein d’un modèle de branding. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous avez un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de branding à la fois.
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) : modifier le modèle de personnalisation par défaut ou un modèle de personnalisation que vous avez créé.
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) : créer un modèle de branding, Chiffrement de messages avancé uniquement.
@@ -89,12 +90,12 @@ Utilisez Windows PowerShell pour modifier un modèle de branding à la fois. Si 
 |URL du lien déclaration de confidentialité|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|Pour activer ou désactiver l’authentification avec un code de passe unique pour ce modèle personnalisé|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **Exemples :** <br/>Pour activer les codes secret à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Pour désactiver les codes secret à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|Pour activer ou désactiver l’authentification avec un code de passage unique pour ce modèle personnalisé|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **Exemples :** <br/>Pour activer les codes secret à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Pour désactiver les codes secret à usage unique pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |Pour activer ou désactiver l’authentification avec les identités Microsoft, Google ou Yahoo pour ce modèle personnalisé|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **Exemples :** <br/>Pour activer les ID sociaux pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Pour désactiver les ID sociaux pour ce modèle personnalisé <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Créer un modèle de branding OME (chiffrement de messages avancé)
 
-Si vous avez Chiffrement avancé de messages Office 365, vous pouvez créer des modèles de personnalisation pour votre organisation à l’aide de l’cmdlet [New-OMEConfiguration.](/powershell/module/exchange/new-omeconfiguration) Une fois que vous avez créé le modèle, vous modifiez le modèle à l’aide de l'Set-OMEConfiguration, comme décrit dans Modifier un modèle de [branding OME.](#modify-an-ome-branding-template) Vous pouvez créer plusieurs modèles.
+Si vous avez Chiffrement avancé de messages Office 365, vous pouvez créer des modèles de personnalisation personnalisés pour votre organisation à l’aide de l’cmdlet [New-OMEConfiguration.](/powershell/module/exchange/new-omeconfiguration) Une fois que vous avez créé le modèle, vous le modifiez à l’aide de la cmdlet Set-OMEConfiguration comme décrit dans Modifier un modèle de [branding OME.](#modify-an-ome-branding-template) Vous pouvez créer plusieurs modèles.
 
 Pour créer un modèle de personnalisation :
 
@@ -161,7 +162,7 @@ Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de p
 
 - Si le courrier électronique a été chiffré manuellement par l’utilisateur final à l’aide Outlook ou Outlook sur le web, anciennement Outlook Web App
 
-- Si le courrier a été automatiquement chiffré par une règle de flux Exchange de messagerie ou une stratégie de protection contre la perte de données
+- Si le courrier électronique a été automatiquement chiffré par une règle de flux Exchange de messagerie ou une stratégie de protection contre la perte de données
 
 Pour plus d’informations sur la création d’une règle Exchange de flux de messagerie qui applique le chiffrement, voir Définir des règles de flux de messagerie pour chiffrer les messages électroniques [dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -169,21 +170,21 @@ Pour plus d’informations sur la création d’une règle Exchange de flux de m
 
 2. Choisissez la **vignette** Administrateur.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
+3. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>choisissez **Centres d’administration** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Branding for sales department.
 
-6. Dans **Appliquer cette règle si**, sélectionnez la condition L’expéditeur se trouve à l’intérieur de l’organisation et d’autres conditions que vous souhaitez dans la liste des conditions disponibles.  Par exemple, vous pouvez appliquer un modèle de branding particulier à :
+6. Dans **Appliquer cette règle si**, sélectionnez la condition L’expéditeur se trouve à l’intérieur de l’organisation et d’autres conditions que vous souhaitez dans la liste des conditions disponibles.  Par exemple, vous pouvez appliquer un modèle de marque particulier à :
 
    - Tous les e-mails chiffrés envoyés par des membres du service financier
-   - Messages électroniques chiffrés envoyés avec un certain mot clé, tel que « Externe » ou « Partenaire »
+   - Messages électroniques chiffrés envoyés avec un certain mot clé tel que « Externe » ou « Partenaire »
    - Messages électroniques chiffrés envoyés à un domaine particulier
 
-7. Dans **l’exemple suivant,** **sélectionnez Modifier la sécurité des messages** Appliquer une \> **personnalisation aux messages OME.** Ensuite, dans la baisse, sélectionnez un modèle de branding.
+7. Dans **l’exemple suivant,** **sélectionnez Modifier** la sécurité des messages Appliquer une \> **personnalisation aux messages OME.** Ensuite, dans la baisse, sélectionnez un modèle de branding.
 
-8. (Facultatif) Vous pouvez configurer la règle de flux de messagerie pour appliquer le chiffrement et la personnalisation. Dans **l’exemple suivant,** **sélectionnez Modifier la** sécurité des messages, puis chiffrement de messages Office 365 protection des **droits.** Sélectionnez un modèle RMS dans la liste, **sélectionnez Enregistrer,** puis **ok.**
+8. (Facultatif) Vous pouvez configurer la règle de flux de messagerie pour appliquer le chiffrement et la personnalisation. Dans **l’exemple suivant,** **sélectionnez Modifier la** sécurité des messages, puis chiffrement de messages Office 365 protection des **droits.** Sélectionnez un modèle RMS dans la liste, choisissez **Enregistrer,** puis **ok.**
   
    La liste des modèles inclut les modèles et options par défaut, ainsi que les modèles personnalisés que vous créez. Si la liste est vide, assurez-vous que vous avez chiffrement de messages Office 365 avec les nouvelles fonctionnalités. Pour obtenir des instructions, voir [Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md) Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations sur l’option Ne pas **forwarder,** consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations sur **l’option chiffrer uniquement,** voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
@@ -191,11 +192,11 @@ Pour plus d’informations sur la création d’une règle Exchange de flux de m
 
 ## <a name="background-color-reference"></a>Référence de couleur d’arrière-plan
 
-Les noms de couleur que vous pouvez utiliser pour la couleur d’arrière-plan sont limités. Au lieu d’un nom de couleur, vous pouvez utiliser une valeur de code hexadée (#RRGGBB). Vous pouvez utiliser une valeur de code hexas qui correspond à un nom de couleur, ou vous pouvez utiliser une valeur de code hexadée personnalisée. N’oubliez pas de mettre la valeur de code hexa entre guillemets (par exemple, `"#f0f8ff"` ).
+Les noms de couleur que vous pouvez utiliser pour la couleur d’arrière-plan sont limités. Au lieu d’un nom de couleur, vous pouvez utiliser une valeur de code hexax (#RRGGBB). Vous pouvez utiliser une valeur de code hexas qui correspond à un nom de couleur, ou vous pouvez utiliser une valeur de code hexadée personnalisée. N’oubliez pas de mettre la valeur de code hexa entre guillemets (par exemple, `"#f0f8ff"` ).
 
 Les noms de couleur d’arrière-plan disponibles et les valeurs de code hexades correspondantes sont décrits dans le tableau suivant.
 
-|**Nom de la couleur**|**Code couleur**|
+|**Nom de la couleur**|**Code de couleur**|
 |---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|

@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Découvrez comment autoriser les membres d’un groupe à envoyer des messages électroniques en tant que Microsoft 365 groupe ou à envoyer du courrier électronique au nom d’Microsoft 365 groupe.
-ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064062"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421581"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
@@ -43,9 +44,9 @@ L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer 
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Autoriser les membres à envoyer des messages électroniques en tant que groupe
 
-Cette section explique comment autoriser les utilisateurs à envoyer des messages électroniques en tant que groupe dans le Centre d’administration [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) dans Exchange Online.
+Cette section explique comment autoriser les utilisateurs à envoyer des messages électroniques en tant que groupe dans le Centre d’administration<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange (EAC)</a> dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange' administration,</a>allez à **Groupes de destinataires.** \> 
+1. Dans le centre Exchange’administration, allez à **Groupes de** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**destinataires.**</a>
     
 2. Sélectionnez **Modifier** ![ l’icône Modifier le groupe.  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) sur le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que. 
     
@@ -61,9 +62,9 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Autoriser les membres à envoyer des courriers électroniques au nom d’un groupe
 
-Cette section explique comment autoriser les utilisateurs à envoyer des messages électroniques au nom d’un groupe dans le Centre d’administration Exchange (EAC) dans Exchange Online.
+Cette section explique comment autoriser les utilisateurs à envoyer des messages électroniques au nom d’un groupe dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange (EAC)</a> dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange' administration,</a>allez à **Groupes de destinataires.** \> 
+1. Dans le centre Exchange’administration, allez à **Groupes de** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**destinataires.**</a>
     
 2. Sélectionnez **Modifier** ![ l’icône Modifier le groupe.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) sur le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que. 
     

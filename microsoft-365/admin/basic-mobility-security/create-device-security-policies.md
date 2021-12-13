@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: aabac06a8936728ad1b37ee69fa22cc74e1a712e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0fa9cec0b9029d2cd55aace0c758e6c81e265b0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166131"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421833"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Basic Mobility and Security
 
@@ -35,13 +36,13 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour créer des strat
 > [!IMPORTANT]
 > Avant de pouvoir créer une stratégie d’appareil mobile, vous devez activer et configurer Basic Mobility and Security. Pour plus d’informations, voir Vue d’ensemble de la mobilité et de la sécurité de base.
 
-- Découvrez les appareils, les applications d’appareils mobiles et les paramètres de sécurité que basic Mobility and Security prend en charge. Voir [fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
-- Créez des groupes de sécurité qui incluent Microsoft 365 utilisateurs sur qui vous souhaitez déployer des stratégies et pour les utilisateurs que vous souhaitez peut-être exclure du blocage de l’accès Microsoft 365. Avant de déployer une nouvelle stratégie vers votre organisation, nous vous recommandons de la tester en la déployant vers un petit nombre d'utilisateurs. Vous pouvez créer et utiliser un groupe de sécurité qui inclut uniquement vous-même ou un petit nombre Microsoft 365 utilisateurs qui peuvent tester la stratégie pour vous. Pour en savoir plus sur les groupes de sécurité, voir [Créer, modifier ou supprimer un groupe de sécurité.](../email/create-edit-or-delete-a-security-group.md)
+- Découvrez les appareils, les applications pour appareils mobiles et les paramètres de sécurité que Basic Mobility and Security prend en charge. Voir [fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
+- Créez des groupes de sécurité qui incluent Microsoft 365 utilisateurs sur qui vous souhaitez déployer des stratégies et pour les utilisateurs que vous souhaitez exclure du blocage de l’accès Microsoft 365. Avant de déployer une nouvelle stratégie vers votre organisation, nous vous recommandons de la tester en la déployant vers un petit nombre d'utilisateurs. Vous pouvez créer et utiliser un groupe de sécurité qui inclut uniquement vous-même ou un petit nombre Microsoft 365 utilisateurs qui peuvent tester la stratégie pour vous. Pour en savoir plus sur les groupes de sécurité, voir [Créer, modifier ou supprimer un groupe de sécurité.](../email/create-edit-or-delete-a-security-group.md)
 - Pour créer et déployer des stratégies de mobilité et de sécurité de base dans Microsoft 365, vous devez être un administrateur Microsoft 365 globale. Pour plus d’informations, voir Autorisations dans le [Centre de sécurité & conformité.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-- Avant de déployer des stratégies, faites savoir à votre organisation les impacts potentiels de l’inscription d’un appareil dans Basic Mobility and Security. Selon la façon dont vous avez installé les stratégies, les appareils non conformes peuvent être bloqués pour accéder aux Microsoft 365 et aux données, y compris les applications installées, les photos et les informations personnelles sur un appareil inscrit, et les données peuvent être supprimées.
+- Avant de déployer des stratégies, faites savoir à votre organisation les impacts potentiels de l’inscription d’un appareil dans Basic Mobility and Security. En fonction de la façon dont vous définissez les stratégies, les appareils non conformes peuvent être bloqués pour accéder aux Microsoft 365 et aux données, y compris les applications installées, les photos et les informations personnelles sur un appareil inscrit, et les données peuvent être supprimées.
 
 > [!NOTE]
-> Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans le Centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile Exchange ActiveSync ou règle d’accès à l’appareil appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange.</a> Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile ou règle d’accès aux appareils Exchange ActiveSync appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Étape 1 : Créer une stratégie d’appareil et déployer sur un groupe de test
 
@@ -61,7 +62,7 @@ Avant de commencer, assurez-vous que vous avez activé et installé Basic Mobili
 
 6. Sélectionnez **Créer cette stratégie.**
 
-La stratégie est poussée vers l’appareil de chaque utilisateur que la stratégie applique à la prochaine fois qu’il se connecte Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à leur appareil mobile auparavant, après avoir déployé la stratégie, les utilisateurs obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, aux OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide Portail d'entreprise Intune’application, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
+La stratégie est poussée vers l’appareil de chaque utilisateur que la stratégie applique à la prochaine fois qu’il se connecte Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à l’appareil mobile des utilisateurs auparavant, après avoir déployé la stratégie, ils obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide Portail d'entreprise Intune’application, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Étape 2 : Vérifier que votre stratégie fonctionne
 
@@ -69,7 +70,7 @@ Une fois que vous avez créé une stratégie d’appareil, vérifiez que la stra
 
 1. À partir de votre navigateur, tapez [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 2. Sélectionnez **Afficher la liste des appareils gérés.**
-3. Vérifiez le statut des appareils utilisateur auxquels la stratégie est appliquée. Vous souhaitez **que l’état** des appareils soit **géré.**
+3. Vérifiez le statut des appareils utilisateur auxquels la stratégie est appliquée. Vous souhaitez que **l’état** des appareils soit **géré.**
 4. Vous pouvez également faire une réinitialisation complète ou  sélective sur  un appareil en cliquant sur réinitialiser aux usine ou supprimer les données d’entreprise du bouton Gérer après avoir sélectionné un appareil.  Pour obtenir des instructions, voir [Effacer un appareil mobile dans Microsoft 365.
 
 ## <a name="step-3-deploy-a-policy-to-your-organization"></a>Étape 3 : Déployer une stratégie pour votre organisation
@@ -77,16 +78,16 @@ Une fois que vous avez créé une stratégie d’appareil, vérifiez que la stra
 Une fois que vous avez créé une stratégie d’appareil et vérifié qu’elle fonctionne comme prévu, déployez-la dans votre organisation.
 
 1. À partir de votre type de navigateur [https://protection.office.com/devicev2](https://protection.office.com/devicev2) : .
-2. Sélectionnez la stratégie que vous souhaitez déployer, puis **sélectionnez Modifier** en plus des **groupes appliqués.**
+2. Sélectionnez la stratégie que vous souhaitez déployer, puis **sélectionnez Modifier** en plus **des groupes appliqués.**
 3. Recherchez un groupe à ajouter et cliquez sur **Sélectionner.**
 4. Sélectionnez **Fermer** et **modifier le paramètre.**
 5. Sélectionnez **Fermer** et **modifier la stratégie.**
 
-La stratégie est poussée vers l’appareil mobile de chaque utilisateur à la prochaine fois qu’elle s’applique à la Microsoft 365 à partir de son appareil mobile. Si aucune stratégie n’a été appliquée à leur appareil mobile, les utilisateurs obtiennent une notification sur leur appareil avec les étapes nécessaires pour l’inscrire et l’activer pour Basic Mobility and Security. Une fois l’inscription terminée, la stratégie est appliquée à son appareil. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md).
+La stratégie est poussée vers l’appareil mobile de chaque utilisateur que la stratégie applique à la prochaine fois qu’il se connecte Microsoft 365 à partir de son appareil mobile. Si aucune stratégie n’a été appliquée à leur appareil mobile, les utilisateurs obtiennent une notification sur leur appareil avec les étapes nécessaires pour l’inscrire et l’activer pour Basic Mobility and Security. Une fois l’inscription terminée, la stratégie est appliquée à son appareil. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md).
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Étape 4 : Bloquer l’accès à la messagerie pour les appareils non pris en compte
 
-Pour sécuriser les informations de votre organisation, vous devez bloquer l’accès de l’application à Microsoft 365 courrier électronique pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Pour obtenir la liste des appareils pris en charge, voir [Appareils pris en charge.](../../admin/basic-mobility-security/capabilities.md)
+Pour sécuriser les informations de votre organisation, vous devez bloquer l’accès de l’application à Microsoft 365 messagerie électronique pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Pour obtenir la liste des appareils pris en charge, voir [Appareils pris en charge.](../../admin/basic-mobility-security/capabilities.md)
 
 **Pour bloquer l’accès à l’application :**
 
@@ -120,7 +121,7 @@ Si vous souhaitez exclure certaines personnes des vérifications d’accès cond
 
 Lorsque vous appliquez une stratégie aux appareils des utilisateurs, l’impact sur chaque appareil varie légèrement d’un type d’appareil à l’autre. Consultez le tableau suivant pour obtenir des exemples de l’impact des stratégies sur les différents appareils.
 
-|**Stratégie de sécurité**|**Android 4 et version ultérieure**|**Samsung KNOX**|**iOS 6 et les ultérieures**|**Notes**|
+|**Stratégie de sécurité**|**Android 4 et versions ultérieures**|**Samsung KNOX**|**iOS 6 et les ultérieures**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Exiger la sauvegarde chiffrée|Non|Oui|Oui|Sauvegarde chiffrée iOS requise.|
 |Bloquer la sauvegarde sur le cloud|Oui|Oui|Oui|Sauvegarde Google bloquée sur Android (grisé), sauvegarde sur le cloud sous iOS.|
@@ -131,7 +132,7 @@ Lorsque vous appliquez une stratégie aux appareils des utilisateurs, l’impact
 |Bloquer l’envoi de données de diagnostic |Non|Oui|Oui|Bloquer l’envoi des rapports d’incident Google sur Android.|
 |Bloquer l’accès au magasin d’applications |Non|Oui|Oui|Icône du magasin d’applications manquante sur la page d’accueil Android, désactivée sous Windows, manquante sous iOS.|
 |Exiger le mot de passe pour le magasin d’applications |Non|Non|Oui|iOS : Mot de passe requis pour les achats iTunes.|
-|Bloquer la connexion au stockage amovible |Non|Oui|N/D|Android : la carte SD est grisée dans les paramètres, Windows avertit l’utilisateur, les applications installées ne sont pas disponibles|
+|Bloquer la connexion au stockage amovible |Non|Oui|N/A|Android : la carte SD est grisée dans les paramètres, Windows avertit l’utilisateur, les applications installées ne sont pas disponibles|
 |Bloquer la connexion Bluetooth |Voir les remarques|Voir les remarques|Oui|Nous ne pouvons pas désactiver BlueTooth en tant que paramètre sur Android. Au lieu de cela, nous désactivons toutes les transactions qui nécessitent BlueTooth : distribution audio avancée, contrôle à distance audio/vidéo, appareils mains libres, casque, accès au carnet d’Téléphone et port série. Un petit message flottant apparaît en bas de la page lorsque l’une d’entre elles est utilisée.|
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>Que se passe-t-il lorsque vous supprimez une stratégie ou un utilisateur de la stratégie ?

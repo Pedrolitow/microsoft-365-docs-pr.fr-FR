@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: 37543ff91f9c3d46c73a07b9bb9110294b250ae2
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: b966bcdf799ab97135cb350fb154723c97d06964
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311723"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422854"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -41,7 +41,7 @@ Il existe deux façons de commencer :
 Pour vous inscrire et acheter Microsoft 365 Business Standard, complétez les étapes suivantes.
 
 > [!IMPORTANT]
-> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus d’informations, voir Attribuer des [rôles](../add-users/assign-admin-roles.md) d’administrateur.
 
 1. Dans la [page Microsoft 365 entreprise,](https://go.microsoft.com/fwlink/?linkid=2109654)sélectionnez **Voir les plans & tarifs.**
 2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur ce qui est inclus dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**

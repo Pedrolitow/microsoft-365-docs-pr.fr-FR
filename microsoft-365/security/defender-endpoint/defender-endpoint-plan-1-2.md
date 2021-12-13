@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 12/09/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c0c776d7e00ee890a8cafbc15db02b45a1474b24
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c9a1d35a4de97174a49d7a69ec7776f31528376e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371867"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422494"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender pour endpoint Plan 1 et Plan 2
 
@@ -29,7 +29,7 @@ ms.locfileid: "61371867"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Defender pour le point de terminaison fournit une protection avancée contre les menaces qui inclut des antivirus, des logiciels anti-programme malveillant, des préventions de ransomware, etc., ainsi que la gestion centralisée et la rapports. Deux plans seront bientôt disponibles :   
+Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Defender pour le point de terminaison fournit une protection avancée contre les menaces qui inclut des antivirus, des logiciels anti-programme malveillant, des préventions de ransomware, etc., ainsi que la gestion centralisée et la rapports. Deux plans sont disponibles :   
  
 - [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md); et 
 - [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), anciennement [appelé Microsoft Defender pour Endpoint](microsoft-defender-endpoint.md).

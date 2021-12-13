@@ -1,13 +1,13 @@
 ---
-title: Comprendre l’ordre des stratégies dans Microsoft Defender pour les entreprises
-description: En savoir plus sur l’ordre de priorité avec les stratégies dans Microsoft Defender entreprise
+title: Comprendre l’ordre des stratégies dans Microsoft Defender pour les entreprises (prévisualisation)
+description: En savoir plus sur l’ordre de priorité avec les stratégies dans Microsoft Defender entreprise (prévisualisation)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 94361ddc8ed5baf27424235279c40641a3986686
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: efb246e07c7a55dbf71102f06e90fbbd9b0c202b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375304"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422998"
 ---
-# <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Comprendre l’ordre des stratégies dans Microsoft Defender pour les entreprises
+# <a name="understand-policy-order-in-microsoft-defender-for-business-preview"></a>Comprendre l’ordre des stratégies dans Microsoft Defender pour les entreprises (prévisualisation)
 
 > [!IMPORTANT]
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>Ordre des stratégies dans Microsoft Defender pour les entreprises
 
-Microsoft Defender pour les entreprises inclut des stratégies prédéfines pour garantir la protection des appareils utilisés par vos employés. Votre équipe de sécurité peut également ajouter de nouvelles stratégies. Par exemple, supposons que vous souhaitez appliquer certains paramètres à certains appareils et différents paramètres à d’autres appareils. Pour ce faire, vous pouvez ajouter des stratégies, telles que des stratégies de protection nouvelle génération ou des stratégies de pare-feu.
+Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies prédéfines pour garantir la protection des appareils utilisés par vos employés. Votre équipe de sécurité peut également ajouter de nouvelles stratégies. Par exemple, supposons que vous souhaitez appliquer certains paramètres à certains appareils et différents paramètres à d’autres appareils. Pour ce faire, vous pouvez ajouter des stratégies, telles que des stratégies de protection nouvelle génération ou des stratégies de pare-feu.
 
 À mesure que des stratégies sont ajoutées, vous remarquerez qu’un ordre de priorité est affecté. Vous pouvez modifier l’ordre de priorité des stratégies que vous définissez, mais vous ne pouvez pas modifier l’ordre de priorité des stratégies par défaut. Par exemple, supposons que pour vos Windows clients, vous avez trois stratégies de protection nouvelle génération. Dans ce cas, votre stratégie par défaut est numéro 3 en priorité. Vous pouvez modifier l’ordre de vos stratégies numéroées 1 et 2, mais la stratégie par défaut reste le numéro 3 dans votre liste. 
 
@@ -48,12 +48,12 @@ Microsoft Defender pour les entreprises inclut des stratégies prédéfines pour
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-- [Commencer à utiliser Defender pour les entreprises](mdb-get-started.md)
+- [Commencer à utiliser Defender pour les entreprises (prévisualisation)](mdb-get-started.md)
 
 - [Gérer les appareils](mdb-manage-devices.md)
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)

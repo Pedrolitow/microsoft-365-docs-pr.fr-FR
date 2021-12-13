@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128675"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421317"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -100,7 +100,7 @@ Pour créer une règle de transport de messagerie :
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
-|Nom|Règle anti-ransomware : avertir les utilisateurs|
+|Name|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
 |Spécifier des mots ou des expressions|Ajoutez les types de fichiers ci-après :  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|
 |Faites les choses suivantes . . .|Avertir le destinataire avec un message|
@@ -132,7 +132,7 @@ Pour créer une règle de transport de messagerie, suivez les étapes suivantes 
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
-|Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
+|Name|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
 |Ajouter une condition|Propriétés du message . . . inclure le type de message . . . Auto-forward|
 |Faites les choses suivantes ...|Bloquer le message . . . rejeter le message et inclure une explication.|
@@ -217,7 +217,7 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 - Ajoutez une nouvelle stratégie destinée à tous les destinataires de votre domaine.
 
-Pour configurer des Coffre, regardez cette courte vidéo de [formation](../../business-video/safe-links.md)ou suivez les étapes suivantes :
+Pour configurer Coffre liens, complétez les étapes suivantes :
 
 1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
 

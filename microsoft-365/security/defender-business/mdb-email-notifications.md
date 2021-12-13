@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c99184fe90e5bbce8e878d15fae3ded8a14285b6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60d0c58edba42b8a32062c2f7adaf417fd8c7203
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375075"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421077"
 ---
 # <a name="set-up-email-notifications"></a>Configurer les notifications par courrier électronique
 
@@ -48,9 +48,9 @@ Lorsque vous définissez des notifications par courrier électronique, vous pouv
 > [!TIP]
 > Les notifications par courrier électronique ne sont pas le seul moyen pour votre équipe de sécurité de découvrir les nouvelles **alertes ou vulnérabilités.**
 > 
-> Les notifications par courrier électronique sont un moyen pratique pour aider votre équipe de sécurité à rester informée, en temps réel. Mais il en existe d’autres ! Par exemple, chaque fois que votre équipe de sécurité se Microsoft 365 Defender portail ( ), des cartes mettant en évidence les nouvelles [https://security.microsoft.com](https://security.microsoft.com) menaces, alertes et vulnérabilités s’afficheront. Defender for Business est conçu pour mettre en évidence les informations importantes qui intéressent votre équipe de sécurité dès qu’elle se connecte.
+> Les notifications par courrier électronique sont un moyen pratique pour aider votre équipe de sécurité à rester informée, en temps réel. Mais il en existe d’autres ! Par exemple, chaque fois que votre équipe de sécurité se Microsoft 365 Defender portail ( ), des cartes mettant en évidence les nouvelles [https://security.microsoft.com](https://security.microsoft.com) menaces, alertes et vulnérabilités s’afficheront. Defender for Business (prévisualisation) est conçu pour mettre en évidence les informations importantes qui intéressent votre équipe de sécurité dès qu’elle se connecte.
 > 
-> Votre équipe de sécurité peut également choisir **Incidents** dans le volet de navigation pour afficher des informations. Pour plus d’informations, voir [Afficher et gérer les incidents dans Microsoft Defender pour Entreprises.](mdb-view-manage-incidents.md)
+> Votre équipe de sécurité peut également choisir **Incidents** dans le volet de navigation pour afficher des informations. Pour plus d’informations, voir [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation).](mdb-view-manage-incidents.md)
 
 ## <a name="view-and-edit-email-notifications"></a>Afficher et modifier les notifications par courrier électronique
 
@@ -72,5 +72,5 @@ Pour afficher ou modifier les paramètres de notification par courrier électron
 
 Procédez comme il se doit pour :
 
-- [Étape 4 : Intégrer des appareils à Microsoft Defender pour Entreprises](mdb-onboard-devices.md)
+- [Étape 4 : Intégrer des appareils à Microsoft Defender pour Entreprises (prévisualisation)](mdb-onboard-devices.md)
 

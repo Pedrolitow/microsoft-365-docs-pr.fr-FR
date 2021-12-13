@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: 83be677871d05b7f0f4e88327622a9647a35276a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 460de9426dfb249da17d5df79becaca725ee36ed
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373643"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422398"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
 
@@ -178,5 +178,5 @@ Dans la Centre d'administration Microsoft 365, vous pouvez configurer les <a hre
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Activer l’authentification multi-facteurs](../../business-video/turn-on-mfa.md) (vidéo)\
+[Activer l’authentification multi-facteurs](set-up-multi-factor-authentication.md) (vidéo)\
 [Activer l’authentification multi-facteurs sur votre téléphone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (vidéo)

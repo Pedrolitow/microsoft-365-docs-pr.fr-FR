@@ -734,5 +734,5 @@
 ## [Defender pour Office 365](../office-365-security/index.yml)
 ## [Defender pour l’identité](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
-## [Microsoft Defender pour les PME](../defender-business/index.yml)
+## [Défenseur des affaires](../defender-business/index.yml)
 

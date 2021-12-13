@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3d6d1a0b4099e52124a4965061fe85f46049815b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8f36d64b14dccdb445f1c4115811f571b55e49b8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375226"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423250"
 ---
-# <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business"></a>Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les entreprises
+# <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
 
-Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises, l’étape suivante consiste à afficher et, si nécessaire, à modifier vos paramètres et stratégies de sécurité. 
+Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises (prévisualisation), l’étape suivante consiste à afficher et, si nécessaire, à modifier vos paramètres et stratégies de sécurité. 
 
 ## <a name="what-to-do"></a>Procédure
 
@@ -44,11 +44,11 @@ En ce qui concerne la gestion de vos paramètres et stratégies de sécurité, v
 
 | Option | Description |
 |:---|:---|
-| **Utiliser les stratégies et paramètres de** sécurité par défaut dans le portail Microsoft 365 Defender *(recommandé)* | Defender for Business a été conçu pour les petites et moyennes entreprises occupées à l’esprit. Les stratégies et paramètres de sécurité par défaut dans Defender pour les entreprises sont conçus pour protéger les appareils de votre entreprise dès le premier jour.<br/><br/>Vous pouvez utiliser le portail Microsoft 365 Defender ( ) pour afficher et gérer vos [https://security.microsoft.com/](https://security.microsoft.com/) paramètres et stratégies de sécurité.<br/><br/>Pour plus d’informations, voir [Afficher ou modifier des stratégies d’appareil.](mdb-view-edit-policies.md) |
+| **Utiliser les stratégies et paramètres de** sécurité par défaut dans le portail Microsoft 365 Defender *(recommandé)* | Defender pour les entreprises (prévisualisation) a été conçu pour les petites et moyennes entreprises occupées à l’esprit. Les stratégies et paramètres de sécurité par défaut dans Defender pour les entreprises sont conçus pour protéger les appareils de votre entreprise dès le premier jour.<br/><br/>Vous pouvez utiliser le portail Microsoft 365 Defender ( ) pour afficher et gérer vos [https://security.microsoft.com/](https://security.microsoft.com/) paramètres et stratégies de sécurité.<br/><br/>Pour plus d’informations, voir [Afficher ou modifier des stratégies d’appareil.](mdb-view-edit-policies.md) |
 | **Utiliser Microsoft Endpoint Manager** | Si votre entreprise utilise Microsoft Endpoint Manager pour gérer les paramètres et stratégies de sécurité, vous pouvez continuer à utiliser Endpoint Manager et appliquer des stratégies et paramètres de sécurité à certains appareils ou à tous. Pour plus d’informations, voir [Gérer la sécurité des appareils avec les stratégies](/mem/intune/protect/endpoint-security-policy)de sécurité des points de terminaison dans Microsoft Intune . <br/><br/>Envisagez de passer au [processus de configuration simplifiée dans Defender pour Entreprise.](mdb-simplified-configuration.md) Si vous faites le changement, vous serez invité à supprimer les stratégies de sécurité existantes dans Microsoft Endpoint Manager avant de poursuivre le processus de configuration simplifié dans Defender for Business. La suppression de vos stratégies dans Microsoft Endpoint Manager éviter les conflits de stratégie ultérieurement. |
 
 > [!TIP]
-> Si vous souhaitez vous inscrire au programme d’aperçu de Microsoft Defender entreprise, visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Pour plus d’informations, [voir Obtenir Microsoft Defender pour Entreprise.](get-defender-business.md)
+> Si vous souhaitez vous inscrire au programme d’aperçu de Microsoft Defender entreprise, visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Pour plus d’informations, [voir Obtenir Microsoft Defender entreprise (prévisualisation).](get-defender-business.md)
 
 ## <a name="view-your-security-settings-and-policies"></a>Afficher vos paramètres et stratégies de sécurité
 
@@ -64,11 +64,11 @@ Pour afficher vos paramètres et stratégies de sécurité, utilisez l’une des
 
 Procédez à une ou plusieurs des tâches suivantes :
 
-- [Commencer à utiliser Microsoft Defender pour les entreprises](mdb-get-started.md)
+- [Commencer à utiliser Microsoft Defender pour les entreprises (prévisualisation)](mdb-get-started.md)
 
-- [Gérer les appareils dans Microsoft Defender pour les entreprises](mdb-manage-devices.md)
+- [Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-manage-devices.md)
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
-- [Afficher ou modifier des stratégies dans Microsoft Defender entreprise](mdb-view-edit-policies.md)
+- [Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)](mdb-view-edit-policies.md)
 

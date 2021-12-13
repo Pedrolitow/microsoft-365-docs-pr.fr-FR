@@ -48,6 +48,8 @@
   items:
     - name: Vue d’ensemble de la page Gestion des menaces
       href: m365-lighthouse-threat-management-page-overview.md
+    - name: Atténuer les menaces à l’Antivirus Microsoft Defender
+      href: m365-lighthouse-mitigate-threats.md
 - name: Obtenir de l’aide et de l’assistance
   items:
     - name: Obtenir de l’aide et de l’assistance

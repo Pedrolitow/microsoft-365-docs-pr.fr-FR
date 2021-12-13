@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -22,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d2fee0e8714e2cff51a2c763caa659bf226adff
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 33970df6b108cd5538f14e7bb6c9c7f235d55ca1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240983"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421965"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de contenu inappropriée pour Microsoft Teams, Exchange et Yammer communications
 
@@ -174,7 +175,7 @@ Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, de s
 
     ![Groupes.](../media/communication-compliance-case-all-employees.png)
 
-3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Exchange d’administration** [( https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) et naviguent jusqu’Exchange **groupes** de  >  **destinataires du Centre d’administration.**  >   Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé et sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
+3. Une fois le groupe créé, ils doivent ajouter tous les utilisateurs Contoso à celui-ci. Ils ouvrent le **Exchange d’administration** [( https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) et naviguent jusqu’Exchange **groupes** de  >  **destinataires du Centre d’administration.**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a> Les administrateurs informatiques de Contoso  sélectionnent la zone d’appartenance et le nouveau groupe Tous les employés qu’ils ont créé et sélectionnent le contrôle Modifier pour ajouter tous les utilisateurs Contoso au nouveau groupe dans l’Assistant. 
 
     ![Exchange’administration centrale.](../media/communication-compliance-case-eac.png)
 

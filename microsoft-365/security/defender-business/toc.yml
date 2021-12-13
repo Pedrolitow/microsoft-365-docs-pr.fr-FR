@@ -1,13 +1,13 @@
-- name: Microsoft Defender pour les entreprises
+- name: Microsoft Defender pour Les Entreprises (prévisualisation)
   href: index.yml
   items:
-    - name: Aperçu
+    - name: Présentation
       items:
-        - name: Qu’est-ce que Microsoft Defender pour Les Entreprises ?
+        - name: Qu’est-ce que Microsoft Defender pour Entreprises (prévisualisation) ?
           href: mdb-overview.md
         - name: Processus de configuration simplifié
           href: mdb-simplified-configuration.md
-        - name: Comment obtenir Defender pour les entreprises
+        - name: Comment obtenir Defender pour les entreprises (prévisualisation)
           href: get-defender-business.md
         - name: Comparer les plans pour les petites et moyennes entreprises
           href: compare-mdb-m365-plans.md
@@ -33,7 +33,7 @@
           href: mdb-get-started.md
         - name: Essayer des didacticiels et des simulations
           href: mdb-tutorials.md
-    - name: Utiliser Microsoft Defender pour les entreprises
+    - name: Utiliser Microsoft Defender pour les entreprises (prévisualisation)
       items:
         - name: Afficher et gérer des appareils
           href: mdb-manage-devices.md
@@ -65,7 +65,7 @@
       items:
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
-        - name: Questions fréquemment posées
+        - name: Foire aux questions
           href: mdb-faq.yml
         - name: Résolution des problèmes
           href: mdb-troubleshooting.yml

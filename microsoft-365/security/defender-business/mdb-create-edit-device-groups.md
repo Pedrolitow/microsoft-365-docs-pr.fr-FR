@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: efa840909915653d0aa0a8af51f3c75c7d16a25d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 350228d45124ddf9f1c6e0b9e030ef125bc3ff2c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375111"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423886"
 ---
-# <a name="device-groups-in-microsoft-defender-for-business"></a>Groupes d’appareils dans Microsoft Defender entreprise
+# <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Groupes d’appareils dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
 
-Dans Microsoft Defender entreprise, les stratégies sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
+Dans Microsoft Defender pour Entreprises (prévisualisation), les stratégies sont appliquées aux appareils via certaines collections appelées groupes d’appareils. 
 
 **Cet article décrit**:  
 
@@ -37,15 +37,15 @@ Dans Microsoft Defender entreprise, les stratégies sont appliquées aux apparei
 
 ## <a name="what-is-a-device-group"></a>Qu’est-ce qu’un groupe d’appareils ?
 
-Un groupe d’appareils est un ensemble d’appareils regroupés en raison de certains critères spécifiés, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender entreprise, les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils. 
+Un groupe d’appareils est un ensemble d’appareils regroupés en raison de certains critères spécifiés, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. Dans Microsoft Defender entreprise (prévisualisation), les stratégies sont appliquées aux appareils à l’aide de groupes d’appareils. 
 
-Defender pour les entreprises inclut des groupes d’appareils par défaut que vous pouvez utiliser. Les groupes d’appareils par défaut incluent tous les appareils intégrés à Defender for Business. Toutefois, vous pouvez également créer des groupes d’appareils pour affecter des stratégies avec des paramètres spécifiques à certains appareils. 
+Defender for Business (aperçu) inclut des groupes d’appareils par défaut que vous pouvez utiliser. Les groupes d’appareils par défaut incluent tous les appareils intégrés à Defender pour Entreprise (prévisualisation). Toutefois, vous pouvez également créer des groupes d’appareils pour affecter des stratégies avec des paramètres spécifiques à certains appareils. 
 
 Tous les groupes d’appareils, y compris vos groupes d’appareils par défaut et tous les groupes d’appareils personnalisés que vous définissez, sont stockés dans [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
 ## <a name="create-a-new-device-group"></a>Créer un groupe d’appareils
 
-Actuellement, dans Defender pour Entreprises, vous pouvez créer un groupe d’appareils pendant que vous êtes en train de créer ou de modifier une stratégie, comme décrit dans la procédure suivante : 
+Actuellement, dans Defender pour Entreprises (prévisualisation), vous pouvez créer un groupe d’appareils pendant que vous êtes en train de créer ou de modifier une stratégie, comme décrit dans la procédure suivante : 
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
@@ -81,8 +81,8 @@ Choisissez une ou plusieurs des tâches suivantes :
 
 - [Créer une stratégie](mdb-create-new-policy.md)
 
-- [Afficher et gérer les incidents dans Microsoft Defender entreprise](mdb-view-manage-incidents.md)
+- [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
-- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise](mdb-respond-mitigate-threats.md)
+- [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)

@@ -16,15 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent en savoir plus sur les autorisations disponibles dans le Centre de sécurité & conformité dans Microsoft 365.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ccbfec83f857153156dc50c983de50d92edcec0
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3b05f210262c05e48665350670784ea82ee51fe0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401301"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422542"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Autorisations dans le Centre de sécurité et de conformité
 
@@ -55,7 +57,7 @@ Le Centre de sécurité & conformité inclut des groupes de rôles par défaut p
 
 Le tableau suivant répertorie les groupes de rôles par défaut qui sont disponibles dans le Centre de sécurité & conformité et les rôles affectés aux groupes de rôles par défaut. Pour accorder des autorisations à un utilisateur pour effectuer une tâche de conformité, ajoutez-les au groupe de rôles centre de sécurité & conformité approprié.
 
-La gestion des autorisations dans le Centre de sécurité & conformité permet uniquement aux utilisateurs d’accéder aux fonctionnalités de conformité disponibles dans le Centre de sécurité & conformité lui-même. Si vous souhaitez accorder des autorisations à d’autres fonctionnalités de conformité qui ne sont pas dans le Centre de sécurité & conformité, telles que les règles de flux de messagerie Exchange (également appelées règles de transport), vous devez utiliser le Centre d’administration Exchange.
+La gestion des autorisations dans le Centre de sécurité & conformité permet uniquement aux utilisateurs d’accéder aux fonctionnalités de conformité disponibles dans le Centre de sécurité & conformité lui-même. Si vous souhaitez accorder des autorisations à d’autres fonctionnalités de conformité qui ne sont pas dans le Centre de sécurité & conformité, telles que les règles de flux de messagerie Exchange (également appelées règles de transport), vous devez utiliser le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
 
 Pour savoir comment accorder l’accès au Centre de sécurité & conformité, consultez La page Donner aux utilisateurs l’accès [Microsoft 365 Centre d’administration de la conformité.](grant-access-to-the-security-and-compliance-center.md)
 

@@ -17,13 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente légale.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1be368bb57e16f657d70b701d29265a6dbc1316
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 89022e39aef17609774c90696e7bab54e66a95e0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063332"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421653"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -200,7 +202,7 @@ Exécutez la commande suivante dans Exchange Online PowerShell pour identifier l
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
 
-Après avoir identifié la In-Place, vous pouvez utiliser le Centre d’administration Exchange (EAC) ou Exchange Online PowerShell pour supprimer la boîte aux lettres de la boîte aux lettres de la boîte aux lettres. Pour plus d'informations, voir [Créer ou supprimer une conservation inaltérable](/exchange/security-and-compliance/create-or-remove-in-place-holds).
+Après avoir identifié la In-Place, vous pouvez utiliser le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange (EAC)</a> ou Exchange Online PowerShell pour supprimer la boîte aux lettres de la boîte aux lettres de la boîte aux lettres. Pour plus d'informations, voir [Créer ou supprimer une conservation inaltérable](/exchange/security-and-compliance/create-or-remove-in-place-holds).
   
 ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Stratégies de rétention appliquées à des boîtes aux lettres spécifiques
   
@@ -423,7 +425,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Voici un tableau qui décrit comment identifier différents types de boîtes aux lettres en fonction des valeurs de la propriété *InPlaceHolds* lorsque vous exécutez les cmdlets **Get-Mailbox** ou **Get-OrganizationConfig.** Pour plus d’informations, voir Comment identifier le type de mise en attente placée sur [Exchange Online boîte aux lettres.](identify-a-hold-on-an-exchange-online-mailbox.md)
 

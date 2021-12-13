@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c04d7eed5957fbb5633710ec07af28ca66809356
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: e60ab6c42a48a0eb69a3a643b6c0a502b56f93b3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724798"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423818"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
@@ -60,7 +60,7 @@ Dans **l’onglet & des** tendances, il existe plusieurs graphiques et graphique
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparer votre score à des organisations comme la vôtre
 
-Il existe deux endroits pour comparer votre score aux organisations qui vous ressemblent. Dans les deux graphiques, vous pouvez sélectionner **Gérer les comparaisons** pour afficher et modifier les informations de votre organisation. Vous pouvez également créer une comparaison personnalisée basée sur l’industrie, la taille de l’organisation, les licences et les régions.
+Il existe deux endroits pour comparer votre score aux organisations qui sont similaires au vôtre.
 
 #### <a name="comparison-bar-chart"></a>Graphique à barres de comparaison
 
@@ -75,15 +75,6 @@ Le graphique à barres de comparaison est **l’onglet Vue** d’ensemble. Point
     4. Les produits Microsoft utilisés sont similaires à 80 %
     5. Opportunité (score max qui peut être obtenu par la licence actuelle) dans une plage de 20 % à partir de votre client
 
-- **Comparaison personnalisée**: doit être définie en sélectionnant **Gérer** la comparaison en fonction des critères suivants :
-    1. Secteur(s) sélectionné(s)
-    2. Taille(s) d’organisation sélectionnée(s)
-    3. Région(s) sélectionnée(s)
-    4. Licences sélectionnées
-    5. Les produits Microsoft utilisés sont similaires à 80 %
-    6. Opportunité (score max qui peut être obtenu par la licence actuelle) dans une plage de 20 % à partir de votre client
-
-Si vous avez effectué une sélection personnalisée, mais que les résultats ont moins de cinq autres clients que nous pouvons comparer, vous verrez « Non disponible en raison de données limitées ».
 
 #### <a name="comparison-trend"></a>Tendance de comparaison
 

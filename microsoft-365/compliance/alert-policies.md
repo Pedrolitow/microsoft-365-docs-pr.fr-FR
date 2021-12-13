@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: fd062d94832063d2aa5221b49b3c28a35c84931e
-ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
+ms.openlocfilehash: d4b9c334092cf7c0f6b3c5fad2e284accbb384ae
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152429"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422001"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -61,7 +61,7 @@ Une stratégie d’alerte se compose d’un ensemble de règles et de conditions
 
 Pour afficher et créer des stratégies d’alerte :
 
-### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
+### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
 Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, and then select **Policies**  >  **Alert**  >  **Alert policies**.
 
@@ -161,6 +161,7 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Volume inhabituel de suppression de fichiers**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers sont supprimés dans SharePoint ou OneDrive dans un court laps de temps. Cette stratégie a un **paramètre de** gravité moyenne.|Gouvernance des informations|E5/G5, Defender pour Office 365 P2 ou un abonnement Microsoft 365 E5 modules|
 |**Augmentation inhabituelle des e-mails signalés en tant que hameçonnage**|Génère une alerte lorsqu’il y a une augmentation significative du nombre de personnes dans votre organisation qui utilisent le add-in Signaler un message dans Outlook pour signaler des messages comme courrier de hameçonnage. Cette stratégie a un **paramètre de** gravité moyenne. Pour plus d’informations sur ce module complémentaire, voir Utiliser le module [complémentaire Message de rapport.](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Hameçonnage d’emprunt d’identité d’utilisateur remis dans la boîte de réception/le dossier**<sup>1,</sup><sup>2</sup>|Génère une alerte lorsque Microsoft détecte qu’un remplacement d’administrateur ou d’utilisateur a autorisé la remise d’un message de hameçonnage d’emprunt d’identité d’utilisateur dans la boîte de réception (ou un autre dossier accessible à l’utilisateur) d’une boîte aux lettres. Parmi les exemples de remplacements figurent une règle de boîte de réception ou de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie anti-courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un **paramètre de** gravité moyenne.|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
+|**L’utilisateur a demandé à libérer un message mis en quarantaine**|Génère une alerte lorsqu’un utilisateur demande la libération d’un message mis en quarantaine. Pour demander la libération des messages mis en quarantaine, l’autorisation Autoriser les **destinataires** à demander qu’un message soit libéré de  la quarantaine (_PermissionToRequestRelease_) est requise dans la stratégie de mise en quarantaine (par exemple, à partir du groupe d’autorisations prédéfinës à accès limité). Pour plus d’informations, voir Autoriser les destinataires à demander la libération d’un [message de l’autorisation de mise en quarantaine.](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Utilisateur restreint à l’envoi de courrier électronique**|Génère une alerte lorsqu’une personne de votre organisation est limitée à l’envoi de messages sortants. Cela se produit généralement lorsqu’un compte est compromis et que l’utilisateur est répertorié dans la **page** Utilisateurs restreints du Centre de conformité Microsoft 365. (Pour accéder à cette page, accédez à Gestion des **menaces > examiner > utilisateurs restreints).** Cette stratégie a un **paramètre de** gravité élevée. Pour plus d’informations sur les utilisateurs restreints, voir Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste d’adresses IP bloqués après l’envoi de [courrier indésirable.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**L’utilisateur ne peut pas partager de formulaires et collecter des réponses**.|Génère une alerte lorsqu’une personne de votre organisation a été restreinte au partage de formulaires et à la collecte de réponses à l’aide de Microsoft Forms en raison d’un comportement répété de tentative de hameçonnage. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E1, E3/F3 ou E5|
 
@@ -177,7 +178,7 @@ Lorsqu’une activité effectuée par les utilisateurs de votre organisation cor
 
 Pour afficher les alertes :
 
-### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
+### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
  Go to <https://compliance.microsoft.com> and then select **Alerts**. Vous pouvez également y aller <https://compliance.microsoft.com/compliancealerts> directement.
 
@@ -255,26 +256,26 @@ Pour voir à quelle catégorie une stratégie d’alerte par défaut est affect�
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Journaux d’audit|||||||
 |Gestion des cas|||||||
-|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|
+|Administrateur de conformité|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|
 |Recherche de conformité|||||||
 |Gestion des appareils|||||||
 |Gestion de la disposition|||||||
 |Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
-|Analyste de la protection des informations||![Coche.](../media/checkmark.png)|||||
-|Enquêteur de la protection des informations||![Marque de vérification.](../media/checkmark.png)|||||
+|Analyste de la protection des informations||![Marque de vérification.](../media/checkmark.png)|||||
+|Enquêteur de la protection des informations||![Coche.](../media/checkmark.png)|||||
 |Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
 |Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrement|![Coche.](../media/checkmark.png)||||||
-|Gestion de la rétention|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion des enregistrement|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
-|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
+|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
 |Recherche et purge|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
 |Affichage De l’assurance service|||||||
 |Administrateur de la révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||

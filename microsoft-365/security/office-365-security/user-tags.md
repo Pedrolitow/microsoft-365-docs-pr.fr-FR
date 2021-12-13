@@ -13,16 +13,18 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Les administrateurs peuvent apprendre à identifier des groupes spécifiques d’utilisateurs à l’aide de balises utilisateur dans Microsoft Defender Office 365 Plan 2. Le filtrage des balises est disponible pour les alertes, les rapports et les enquêtes dans Microsoft Defender Office 365 pour identifier rapidement les utilisateurs marqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db06c2a60ddc0cfb4d6bb2efce4e030eed6386a5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: a3472a7625082e21d88e01db12cd5d8d14f86c27
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962686"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422746"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -48,7 +50,7 @@ Après avoir appliqué des balises système ou des balises personnalisées aux u
 - [Rapport sur l’état de la protection contre les menaces](view-email-security-reports.md#threat-protection-status-report)
 - [Vues de campagne](campaigns.md)
 - [Soumissions d’administrateurs et d’utilisateurs](admin-submission.md)
-- Pour les comptes prioritaires, [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le Centre d’administration Exchange (EAC).
+- Pour les comptes prioritaires, [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) vous pouvez utiliser le rapport Problèmes de messagerie pour les comptes prioritaires dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d Exchange’administration.</a>
 
 Cet article explique comment configurer des balises utilisateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a> Il n’existe aucune cmdlet dans Microsoft 365 Defender portail pour gérer les balises utilisateur.
 
@@ -56,7 +58,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a> . Pour aller directement à la page **des balises utilisateur,** ouvrez <https://security.microsoft.com/securitysettings/userTags> .
+- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://security.microsoft.com/securitysettings/userTags> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
   - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
@@ -128,7 +130,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 3. Dans le volet d’informations qui s’affiche, le même Assistant et les mêmes paramètres sont disponibles comme décrit dans la section Utiliser le portail [Microsoft 365 Defender](#use-the-microsoft-365-defender-portal-to-create-user-tags) pour créer des balises utilisateur plus tôt dans cet article.
 
-   **Remarques** :
+   **Remarques** :
 
    - La **page Définir la** balise n’est pas disponible pour la balise système de compte priorité intégrée, vous ne pouvez donc pas renommer cette balise ou modifier la description. 
    - Vous ne pouvez pas renommer une balise personnalisée, mais vous pouvez modifier la description.

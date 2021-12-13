@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2636756a3a91156041843c1375211a8640c5e701
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5124b517592fb7561925b0cbd5e5045d4c1ecc9b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168509"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423802"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -28,8 +28,8 @@ ms.locfileid: "61168509"
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -48,7 +48,7 @@ Cet article explique comment spécifier à partir de quel endroit les mises à j
 
 ## <a name="fallback-order"></a>Ordre de retour
 
-En règle générale, vous configurez les points de terminaison pour télécharger individuellement les mises à jour à partir d’une source principale suivie d’autres sources par ordre de priorité, en fonction de la configuration de votre réseau. Les mises à jour sont obtenues à partir de sources dans l’ordre que vous spécifiez. Si une source n’est pas disponible, la source suivante de la liste est utilisée immédiatement.
+En règle générale, vous configurez les points de terminaison pour télécharger individuellement les mises à jour à partir d’une source principale suivie d’autres sources par ordre de priorité, en fonction de la configuration de votre réseau. Les mises à jour sont obtenues à partir de sources dans l’ordre que vous spécifiez. Si les mises à jour de la source actuelle ne sont pas à jour, la source suivante de la liste est utilisée immédiatement.
 
 Lorsque des mises à jour sont publiées, une logique est appliquée pour réduire la taille de la mise à jour. Dans la plupart des cas, seules les différences entre la dernière mise à jour et la mise à jour actuellement installée (appelée delta) sur l’appareil sont téléchargées et appliquées. Toutefois, la taille du delta dépend de deux facteurs principaux :
 
@@ -117,7 +117,7 @@ Les procédures de cet article décrivent d’abord comment définir  la command
 
    5. Spécifiez la source de partage de fichiers. Si vous avez plusieurs sources, entrez chaque source dans l’ordre où elles doivent être utilisées, séparées par un seul canal. Utilisez [la notation UNC standard](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) pour le chemin d’accès, par exemple : `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` . Si vous n’entrez aucun chemin d’accès, cette source est ignorée lorsque l’VM télécharge les mises à jour.
 
-   6. Cliquez sur **OK**. Cela définit l’ordre des partages de fichiers lorsque cette source est référencé dans le paramètre de stratégie de groupe Définir l’ordre des **sources...**
+   6. Cliquez sur **OK**. Cela définit l’ordre des partages de fichiers lorsque cette source est référencé dans le paramètre de stratégie de groupe Définir l’ordre des **sources...**
 
 > [!NOTE]
 > Pour Windows 10, versions 1703 jusqu’à 1809 inclus, le chemin d’accès de stratégie est **Windows Components > Antivirus Microsoft Defender > Signature Updates** For Windows 10, version 1903, le chemin d’accès de stratégie est **Windows Components > Antivirus Microsoft Defender > mises à jour de l’Intelligence de la sécurité**

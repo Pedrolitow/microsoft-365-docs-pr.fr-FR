@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad0372c82d0fdd0a869ff55d22025c35532140eb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217493"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423518"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -79,6 +79,8 @@ Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise
 
 Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
+Cette étape simplifie le processus d’intégration en mettant en place le profil VPN. Pour une expérience d’intégration sans toucher ou sans écran, consultez la section suivante : [Intégration sans tactile.](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.
 1. Tapez un nom pour le profil, puis cliquez sur **Suivant.**
@@ -92,10 +94,37 @@ Les administrateurs peuvent configurer la configuration automatique du profil VP
     - Type de VPN automatique = VPN à la demande
     - Cliquez **sur** Ajouter pour **les règles à** la demande et sélectionnez « Je veux faire ce qui suit = Établir un **VPN**, je souhaite me limiter à = Tous **les domaines**».
 
-    ![Capture d’écran de la configuration de profil VPN.](images/ios-deploy-8.png)
+    ![Capture d’écran des paramètres de configuration de profil VPN](images/ios-deploy-8.png)
 
 1. Cliquez sur Suivant et affectez le profil à des utilisateurs ciblés.
 1. Dans la section *Révision + Créer,* vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**
+
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>Intégration sans contact de Microsoft Defender pour point de terminaison
+
+Les administrateurs peuvent configurer Microsoft Defender pour le point de terminaison pour déployer et activer en mode silencieux. Dans ce flux, l’utilisateur est simplement informé de l’installation. Defender pour le point de terminaison est installé automatiquement sans que l’utilisateur n’a besoin d’ouvrir l’application. Suivez les étapes ci-dessous pour configurer le déploiement zero-touch ou silencieux de Defender for Endpoint sur les appareils iOS inscrits :
+
+1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   >  **Profils de configuration des**  >  **appareils.**
+1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Sélectionnez **Créer**.
+1. Tapez un nom pour le profil et sélectionnez **Suivant.**
+1. Sélectionnez **VPN personnalisé** pour le type de connexion et, dans la section VPN **de base,** entrez ce qui suit :
+    - Nom de connexion = Microsoft Defender pour le point de terminaison
+    - Adresse du serveur VPN = 127.0.0.1
+    - Méthode Auth = « Nom d’utilisateur et mot de passe »
+    - Tunneling fractionner = Désactiver
+    - Identificateur VPN = com.microsoft.scmx
+    - Dans les paires clé-valeur, entrez la **clé SilentOnboard** et définissez la valeur sur **True**.
+    - Type de VPN automatique = VPN à la demande
+    - Sélectionnez **Ajouter** pour **les règles à** la demande et sélectionnez Je souhaite faire les choses suivantes = Établir un **VPN**, je souhaite me limiter à = Tous **les domaines**.
+
+    ![Capture d’écran de la configuration de profil VPN.](images/ios-deploy-9.png)
+
+1. Sélectionnez **Suivant** et affectez le profil à des utilisateurs ciblés.
+1. Dans la section *Révision + Créer,* vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**
+
+Une fois la configuration ci-dessus effectuée et synchronisée avec l’appareil, les actions suivantes ont lieu sur les appareils iOS ciblés :
+    - Microsoft Defender pour le point de terminaison sera déployé et intégré en mode silencieux, et l’appareil sera visible dans le portail Defender pour les points de terminaison.
+    - Une notification provisoire sera envoyée à l’appareil de l’utilisateur.
+    - La protection web et d’autres fonctionnalités seront activées.
 
 ## <a name="complete-onboarding-and-check-status"></a>Terminer l’intégration et vérifier l’état
 
@@ -128,7 +157,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
 
 1. Dans la page *Créer une stratégie de configuration d’application,* fournissez les informations suivantes :
     - Nom de la stratégie
-    - Plateforme : sélectionnez iOS/iPadOS
+    - Plateforme : sélectionner iOS/iPadOS
     - Application ciblée : sélectionnez **Microsoft Defender pour le point de terminaison** dans la liste
 
     > [!div class="mx-imgBorder"]

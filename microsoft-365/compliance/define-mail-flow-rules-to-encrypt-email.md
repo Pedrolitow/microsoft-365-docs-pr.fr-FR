@@ -15,18 +15,20 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide chiffrement de messages Office 365.
-ms.openlocfilehash: 73ff2ae12d6d0857760909c43cf12c4bbd84c13b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c546c151b7bcb1720f9903d43b8d310650f92d35
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206144"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421689"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
-En tant qu’administrateur qui gère Exchange Online, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez configurer des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de l’intérieur de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le Centre Exchange d’administration (EAC) ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuels pour les utilisateurs finaux.
+En tant qu’administrateur qui gère Exchange Online, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez configurer des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de l’intérieur de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre Exchange d’administration (EAC)</a> ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuels pour les utilisateurs finaux.
 
 Vous ne pouvez pas chiffrer le courrier entrant provenant d’expéditeurs extérieurs à votre organisation.
 
@@ -45,9 +47,9 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Sélectionnez la **vignette** Administrateur.
+2. Choisissez la **vignette** Administrateur.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
+3. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>choisissez **Centres d’administration** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -61,7 +63,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
       - Pour sélectionner un nom existant, sélectionnez-le dans la liste et cliquez sur **OK**.
 
-      - Pour entrer un nouveau nom, tapez une adresse de messagerie dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
+      - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
 7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis **ajoutez une condition** et sélectionnez-la dans la liste.
 
@@ -69,7 +71,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 8. Pour activer le chiffrement à l’aide des nouvelles fonctionnalités OME, dans La suite des **choses,** sélectionnez Modifier la sécurité des **messages,** puis appliquer chiffrement de messages Office 365 protection **des** droits. Sélectionnez un modèle RMS dans la liste, choisissez **Enregistrer,** puis **ok.**
   
-  La liste des modèles inclut tous les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous avez créés pour être utilisés par Office 365. Si la liste est vide, assurez-vous que vous avez chiffrement de messages Office 365 avec les nouvelles fonctionnalités, comme décrit dans Configurer les nouvelles fonctionnalités [chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md) Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations **sur l’option** Ne pas forwarder, consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations **sur l’option chiffrer uniquement,** voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+  La liste des modèles inclut tous les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous avez créés pour être utilisés par Office 365. Si la liste est vide, assurez-vous que vous avez chiffrement de messages Office 365 avec les nouvelles fonctionnalités, comme décrit dans Configurer les nouvelles fonctionnalités [chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md) Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations sur l’option Ne pas **forwarder,** consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations **sur l’option chiffrer uniquement,** voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
   Vous pouvez choisir **d’ajouter une action** si vous souhaitez spécifier une autre action.
 
@@ -77,9 +79,9 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Sélectionnez la **vignette** Administrateur.
+2. Choisissez la **vignette** Administrateur.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
+3. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>choisissez **Centres d’administration** \> **Exchange**.
 
 4. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
@@ -87,7 +89,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 6. Pour activer le chiffrement à l’aide des nouvelles fonctionnalités OME, dans l’exemple **suivant,** sélectionnez Modifier la sécurité des **messages,** puis appliquer chiffrement de messages Office 365 **protection des** droits. Sélectionnez un modèle RMS dans la liste, **sélectionnez Enregistrer,** puis **OK.**
 
-   La liste des modèles inclut tous les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous avez créés pour être utilisés par Office 365. Si la liste est vide, assurez-vous que vous avez installé chiffrement de messages Office 365 avec les nouvelles fonctionnalités, comme décrit dans Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 intégrées à [Azure Information Protection](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations sur l’option Ne pas forwarder, consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations sur l’option chiffrer uniquement, voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+   La liste des modèles inclut tous les modèles et options par défaut, ainsi que tous les modèles personnalisés que vous avez créés pour être utilisés par Office 365. Si la liste est vide, assurez-vous que vous avez installé chiffrement de messages Office 365 avec les nouvelles fonctionnalités décrites dans Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 intégrées à [Azure Information Protection](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations sur l’option Ne pas forwarder, consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations sur l’option chiffrer uniquement, voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
    Vous pouvez choisir **d’ajouter une action** si vous souhaitez spécifier une autre action.
 
@@ -105,15 +107,15 @@ Vous pouvez supprimer le chiffrement appliqué par votre organisation.
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Sélectionnez la **vignette** Administrateur.
+2. Choisissez la **vignette** Administrateur.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
+3. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>choisissez **Centres d’administration** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 
-6. Dans **Appliquer cette règle si**, sélectionnez les conditions dans laquelle le chiffrement doit être supprimé des messages. Ajouter **L’expéditeur se trouve à l’intérieur** de l’organisation pour l’envoi de messages ou Le destinataire se trouve à l’intérieur de l’organisation pour la réception du \>    \>  courrier.
+6. Dans **Appliquer cette règle si**, sélectionnez les conditions dans laquelle le chiffrement doit être supprimé des messages. Ajouter **L’expéditeur se trouve à l’intérieur** de l’organisation pour l’envoi de messages ou Le destinataire se trouve à l’intérieur de l’organisation pour la réception du courrier \>    \>  électronique.
 
 7. In **Do the following**, select Modify the message **security** Remove chiffrement de messages Office 365 and \> **rights protection**.
 

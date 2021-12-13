@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: dce31c0787ab85898dc48cc94cefb54ac19b1304
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a3c77fe9a4e6d26e62525c6267ab32a81c78289b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374327"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422818"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -50,7 +50,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Of
 
 ![Image du résumé exécutif Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Présentation
 
 Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
@@ -217,4 +217,4 @@ Oui, voir [Rendre anonymes les données collectées.](enable-usage-analytics.md#
 
 [Activer l'analyse de l'utilisation de Microsoft 365](enable-usage-analytics.md) (article)\
 [Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation](navigate-and-utilize-reports.md) (article)\
-[Passer en revue les rapports d’utilisation Microsoft 365](../../business-video/act-on-report.md) (vidéo)
+[Microsoft 365 rapports dans le Centre d’administration](../activity-reports/activity-reports.md) (vidéo)

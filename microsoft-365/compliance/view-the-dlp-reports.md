@@ -15,18 +15,20 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
-description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, remplacements ou faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
-ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, de remplacements ou de faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
+ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264935"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423619"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
-Après avoir créé vos stratégies de protection contre la perte de données (DLP), vous pouvez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP dans le Centre de conformité de &amp; sécurité, vous pouvez rapidement afficher :
+Après avoir créé vos stratégies de protection contre la perte de données (DLP), vous devez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP dans le Centre de conformité de &amp; sécurité, vous pouvez rapidement afficher :
   
 - **Correspondances de stratégie DLP** Ce rapport indique le nombre de correspondances de stratégies DLP au fil du temps. Vous pouvez filtrer les rapports par date, emplacement, stratégie ou action. Vous pouvez utiliser ce rapport pour : 
     
@@ -44,7 +46,7 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
   - Consulter la liste des principaux types d’informations sensibles au sein de votre organisation.
     
-- **Incidents DLP** Ce rapport affiche également les correspondances de stratégie au fil du temps, comme le rapport de correspondances de stratégie. Toutefois, le rapport de correspondances de stratégie affiche les correspondances au niveau d’une règle ; par exemple, si un e-mail correspond à trois règles différentes, le rapport de correspondances de stratégie affiche trois lignes différentes. En revanche, le rapport des incidents affiche les correspondances au niveau de l’élément ; par exemple, si un message électronique correspond à trois règles différentes, le rapport d’incidents affiche un élément de ligne unique pour cet élément de contenu. 
+- **Incidents DLP** Ce rapport affiche également les correspondances de stratégie au fil du temps, comme le rapport de correspondances de stratégie. Toutefois, le rapport de correspondances de stratégie affiche les correspondances au niveau d’une règle ; par exemple, si un e-mail correspond à trois règles différentes, le rapport de correspondances de stratégie affiche trois lignes différentes. En revanche, le rapport des incidents affiche les correspondances au niveau de l’élément ; par exemple, si un e-mail correspond à trois règles différentes, le rapport d’incidents affiche un élément de ligne unique pour cet élément de contenu. 
     
   Étant donné que le nombre de rapports est agrégé différemment, le rapport de correspondances de stratégie est préférable pour identifier les correspondances avec des règles spécifiques et affiner les stratégies DLP. Le rapport sur les incidents est plus pertinent pour identifier des éléments de contenu spécifiques qui posent problème pour vos stratégies protection contre la perte de données.
     
@@ -58,7 +60,7 @@ Après avoir créé vos stratégies de protection contre la perte de données (D
     
 Tous les rapports DLP peuvent afficher les données de la période de quatre mois la plus récente. Les données les plus récentes peuvent nécessiter jusqu'à 24 heures avant de s’afficher dans les rapports.
   
-Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de conformité &amp; \> **de** \> **sécurité.**
+Vous trouverez ces rapports dans le tableau de bord des rapports du Centre de &amp; \> **conformité** \> **de sécurité.**
   
 ![Rapport de correspondances de stratégie DLP.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -78,17 +80,17 @@ Les rapports peuvent afficher des informations et des recommandations dans le ca
 
 Pour afficher les rapports DLP dans le Centre de sécurité & conformité, vous devez avoir :
 
-- **Rôle lecteur de** sécurité dans le centre d Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur sécurité dans le centre d Exchange’administration.
+- **Rôle lecteur de** sécurité dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a> Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Lecteur de sécurité dans Exchange’administration centrale.
 
-- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur sécurité dans le Centre de sécurité & conformité.
+- **Rôle de gestion de la conformité DLP** en affichage seul dans le Centre de sécurité & conformité. Par défaut, ce rôle est attribué aux groupes de rôles Administrateur de conformité, Gestion de l’organisation, Administrateur de la sécurité et Lecteur Sécurité dans le Centre de sécurité & conformité.
 
-- **Rôle Destinataires en affichage** seul dans le centre Exchange’administration. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation View-Only Gestion de l’organisation dans Exchange d’administration.
+- **Rôle Destinataires en affichage** seul dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a> Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité, Gestion de l’organisation View-Only Gestion de l’organisation dans Exchange d’administration.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les cmdlets pour les rapports DLP
 
 Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
   
-1. [Connecter au Centre de conformité de sécurité à &amp; l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell)
+1. [Connecter sécurité &amp; Centre de conformité à l’aide de PowerShell à distance](/powershell/exchange/connect-to-scc-powershell)
     
 2. Utiliser l’une de ces [ &amp; cmdlets du Centre](/powershell/exchange/exchange-online-powershell) de conformité de la sécurité
     

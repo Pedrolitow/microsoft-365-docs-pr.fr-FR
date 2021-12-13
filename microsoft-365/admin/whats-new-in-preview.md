@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centre d'administration Microsoft 365 - learn about the features that were added this month.
-ms.openlocfilehash: 31ae9f1b1c4bf8255ef1105089ffe2637dc36e0b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374387"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422770"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -400,9 +400,9 @@ Nouveautés de la série de vidéos **Microsoft 365 :** ce mois-ci, nous couvren
 #### <a name="for-admins-and-business-owners"></a>Pour les administrateurs et les propriétaires d’entreprise
 
 - [Permettre à votre petite entreprise de travailler à distance ](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Gestion d’une petite entreprise distante](../business-video/sign-up.md)
-- [S’inscrire à Microsoft Business Basic](../business-video/sign-up.md)
-- [Configuration de la sign-in à deux facteurs](../business-video/sign-up.md)
+- [Gestion d’une petite entreprise distante](admin-overview/sign-up-for-office-365.md)
+- [S’inscrire à Microsoft Business Basic]()
+- [Configuration de la sign-in à deux facteurs](admin-overview/sign-up-for-office-365.md)
 
 ## <a name="march-2020"></a>Mars 2020
 

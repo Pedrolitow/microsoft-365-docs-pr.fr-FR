@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
+ms.custom: admindeeplinkEXCHANGE
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 84029f2f3387913b810c6886a2ac546e587aaca7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0ebc48a39294bb3487d157f76000f545a00f27bb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169490"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423790"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -28,7 +29,7 @@ ms.locfileid: "60169490"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
@@ -42,7 +43,7 @@ En règle générale, cette erreur signifie Microsoft 365 tentative de connexion
 
 - Votre domaine a expiré récemment, l'enregistrement MX ne peut donc pas être extrait.
 
-- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont encore mis en cache les informations DNS de votre domaine.
+- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont toujours mis en cache les informations DNS de votre domaine.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Comment corriger le code d’erreur 450 4.4.312 ?
 
@@ -66,7 +67,7 @@ En règle générale, cela signifie Microsoft 365 ne peut pas se connecter au se
 
 ## <a name="error-code-450-44316-connection-refused"></a>Code d’erreur : 450 4.4.316 Connexion refusée.
 
-En règle générale, cette erreur signifie Microsoft 365 a rencontré une erreur de connexion lors de la connexion au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à Microsoft 365 adresses IP. Ou bien, cette erreur peut se faire par conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
+En règle générale, cette erreur signifie Microsoft 365 a rencontré une erreur de connexion lors de la connexion au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à partir Microsoft 365 adresses IP. Sinon, cette erreur peut être du fait de votre conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
@@ -74,15 +75,15 @@ En règle générale, cette erreur signifie Microsoft 365 a rencontré une erreu
 
 - Si aucun autre message ne doit être remis à  votre environnement local, cliquez sur Corriger maintenant dans l’alerte pour que Microsoft 365 puisse immédiatement rejeter les messages avec des destinataires non valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
-  - Dans le [Centre d Exchange(EAC),](/Exchange/exchange-admin-center)désactivez ou supprimez le connecteur qui fournit le courrier électronique depuis Microsoft 365 vers votre environnement de messagerie local :
+  - Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange d’administration,</a>désactivez ou supprimez le connecteur qui Microsoft 365 à votre environnement de messagerie local :
 
     1. Dans le EAC, allez à **Connecteurs de flux** \> **de messagerie.**
 
     2. Sélectionnez le  connecteur avec la valeur **De Office 365** et la valeur **À** du serveur de messagerie de votre organisation et faites **l’une** des étapes suivantes :
        - Supprimez le connecteur en cliquant sur **Supprimer** ![ l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Désactivez le connecteur en cliquant sur **l’icône** ![ Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et effacer **l’activer.**
+       - Désactivez le connecteur en cliquant sur **Modifier** ![ l’icône Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et effacer **l’activer.**
 
-  - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à **Faisant autorité**. Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à Faisant **autorité.** Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
@@ -102,7 +103,7 @@ En règle générale, cette erreur signifie Microsoft 365 connecté au serveur d
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d’erreur : 450 4.4.318 La connexion a été interrompue brusquement
 
-En règle générale, cette erreur signifie Microsoft 365 a des difficultés à communiquer avec votre environnement de messagerie local, de sorte que la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
+En règle générale, cette erreur signifie Microsoft 365 a des difficultés à communiquer avec votre environnement de messagerie local, donc la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
 
 - Votre pare-feu utilise des règles d'examen de paquet SMTP, lesquelles ne fonctionnent pas correctement.
 - Votre serveur de messagerie local ne fonctionne pas correctement (par exemple, les incidents de service ou les ressources système faibles), ce qui entraîne le délai d’accès du serveur et la fermeture de la connexion à Microsoft 365.

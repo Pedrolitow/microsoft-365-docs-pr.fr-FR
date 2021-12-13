@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
-ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: bdf5c9e0f5957c07a024b14384fa825858618ba4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254416"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421413"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Inviter des utilisateurs à Microsoft 365 Business Standard (administrateur)
 
@@ -35,7 +35,7 @@ En tant qu’administrateur d’un abonnement Microsoft 365 Business Standard, v
 - Obtenez de l’aide à tout moment avec le support web et téléphonique 24 heures sur 24 de Microsoft.
 
 > [!Note]
-> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus d’informations, voir Attribuer des [rôles](../add-users/assign-admin-roles.md) d’administrateur.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

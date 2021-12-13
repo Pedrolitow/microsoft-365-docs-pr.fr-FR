@@ -13,14 +13,15 @@ ms.reviewer: georgiah
 ms.custom:
 - it-pro
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 1948a426e7f7088af92f734385d3b47565537151
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137170"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422974"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -356,7 +357,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [Pour obtenir un exemple de fichier CSV, cliquez ici](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-L’envoi de lot de migration est également pris en charge à partir du nouveau centre d Exchange’administration lorsque vous sélectionnez l’option entre les locataires.
+L’envoi de lot de migration est également pris en charge à partir du nouveau <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration</a> lorsque vous sélectionnez l’option entre les locataires.
 
 ### <a name="update-on-premises-mailusers"></a>Mettre à jour les mailusers locaux
 
@@ -536,7 +537,7 @@ Actuellement, la fonctionnalité migrations de boîtes aux lettres entre locatai
 
 Non, après une migration de boîtes aux lettres entre les locataires, eDiscovery par rapport à la boîte aux lettres de l’utilisateur migré dans la source ne fonctionne pas. Cela est dû au fait qu’il n’existe plus de boîte aux lettres dans la source à rechercher, car la boîte aux lettres a été miggrée vers le client cible et appartient maintenant au client cible. eDiscovery, la migration post-boîte aux lettres peut uniquement être effectuée dans le client cible (où la boîte aux lettres existe maintenant). Si une copie de la boîte aux lettres source doit être persistante dans le client source après la migration, l’administrateur de la source peut copier le contenu dans une autre boîte aux lettres avant la migration pour les futures opérations eDiscovery sur les données.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - **Problème : la fonctionnalité de Teams post-migration dans le client source sera limitée.** Une fois la boîte aux lettres migrée vers le client cible, Teams dans le client source n’aura plus accès à la boîte aux lettres de l’utilisateur. Ainsi, si un utilisateur se connecte à Teams avec les informations d’identification du client source, il y aura une perte de fonctionnalités telles que l’impossibilité de mettre à jour votre image de profil, aucune application de calendrier et l’impossibilité de rechercher et rejoindre des équipes publiques.
 

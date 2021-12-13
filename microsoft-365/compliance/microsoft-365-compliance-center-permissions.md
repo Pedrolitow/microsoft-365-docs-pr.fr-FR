@@ -11,13 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Découvrez la gestion des autorisations dans le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 45540713452b91da171f6fc52eef8210fa256c4e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786433"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423694"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorisations dans le Centre de conformité Microsoft 365
 
@@ -27,7 +29,7 @@ Pour afficher l’onglet Autorisations dans le Centre de conformité Microsoft 
 
 ![Page Autorisations dans Centre de conformité Microsoft 365.](../media/m365-compliance-center-permissions.png)
 
-Les autorisations dans le Centre de conformité Microsoft 365 sont basées sur le modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC). Le RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Ainsi, si vous êtes familiarisé avec la structure des autorisations dans ces services, l’octroi d’autorisations dans le Centre de conformité Microsoft 365 sera familier. Il est important de se souvenir que les autorisations gérées dans le Centre de conformité Microsoft 365 ne couvrent pas la gestion de toutes les autorisations nécessaires dans chaque service individuel. Vous devrez toujours gérer certaines autorisations spécifiques au service dans le Centre d’administration pour le service spécifique. Par exemple, si vous devez attribuer des autorisations pour les stratégies d’archivage, d’audit et de rétention MRM, vous devez gérer ces autorisations dans le Centre d’administration Exchange.
+Les autorisations dans le Centre de conformité Microsoft 365 sont basées sur le modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC). Le RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Ainsi, si vous êtes familiarisé avec la structure des autorisations dans ces services, l’octroi d’autorisations dans le Centre de conformité Microsoft 365 sera familier. Il est important de se souvenir que les autorisations gérées dans le Centre de conformité Microsoft 365 ne couvrent pas la gestion de toutes les autorisations nécessaires dans chaque service individuel. Vous devrez toujours gérer certaines autorisations spécifiques au service dans le Centre d’administration pour le service spécifique. Par exemple, si vous devez attribuer des autorisations pour les stratégies d’archivage, d’audit et de rétention MRM, vous devez gérer ces autorisations dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relation entre les membres, les rôles et les groupes de rôles
 
@@ -39,9 +41,9 @@ Un groupe de rôles est un ensemble de rôles qui permettent aux utilisateurs d�
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Autorisations nécessaires pour utiliser les fonctionnalités du Centre de conformité Microsoft 365
 
-Pour afficher tous les groupes de rôles par défaut qui sont disponibles dans le Centre de conformité Microsoft 365 et les rôles qui sont attribués aux groupes de rôles par défaut, consultez les [autorisations](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)dans le Centre de sécurité & conformité.
+Pour afficher tous les groupes de rôles par défaut disponibles dans le Centre de conformité Microsoft 365 et les rôles qui sont attribués aux groupes de rôles par défaut, consultez les [autorisations](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)dans le Centre de sécurité & conformité.
 
-La gestion des autorisations dans le Centre de conformité Microsoft 365 permet uniquement aux utilisateurs d’accéder aux fonctionnalités de conformité disponibles dans le Centre de conformité Microsoft 365. Si vous souhaitez accorder des autorisations à d’autres fonctionnalités qui ne sont pas dans le Centre de conformité Microsoft 365, telles que les règles de flux de messagerie Exchange (également appelées règles de transport), vous devez utiliser le Centre d’administration Exchange.
+La gestion des autorisations dans le Centre de conformité Microsoft 365 permet uniquement aux utilisateurs d’accéder aux fonctionnalités de conformité disponibles dans le Centre de conformité Microsoft 365. Si vous souhaitez accorder des autorisations à d’autres fonctionnalités qui ne sont pas dans le Centre de conformité Microsoft 365, telles que les règles de flux de messagerie Exchange (également appelées règles de transport), vous devez utiliser le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
 
 ## <a name="azure-roles-in-the-microsoft-365-compliance-center"></a>Rôles Azure dans le Centre de conformité Microsoft 365
 
@@ -95,7 +97,7 @@ Pour créer un groupe de rôles personnalisé, vous pouvez effectuer les étapes
 1. Dans la page **Choisir des rôles,** **sélectionnez Choisir des rôles.**
 1. **Sélectionnez** Ajouter, puis choisissez les rôles à ajouter au groupe de rôles personnalisé. Sélectionnez **Ajouter** pour ajouter le groupe de rôles, puis **sélectionnez Terminé.**
 1. Sélectionnez **Suivant** pour continuer.
-1. Dans la page **Choisir des membres,** **sélectionnez Choisir les membres.**
+1. Dans la page **Choisir les membres,** **sélectionnez Choisir les membres.**
 1. **Sélectionnez** Ajouter, puis choisissez les membres à ajouter au groupe de rôles personnalisé. Sélectionnez **Ajouter** pour ajouter les membres, puis **sélectionnez Terminé.**
 1. Sélectionnez **Suivant** pour continuer.
 1. Dans la page **Examiner vos paramètres,** examinez les détails du groupe de rôles personnalisé. Si vous devez modifier les informations, sélectionnez **Modifier** dans la section appropriée. Lorsque tous les paramètres  sont corrects, sélectionnez Créer un groupe de rôles pour créer le groupe de rôles personnalisé ou sélectionnez **Annuler** pour ignorer les modifications et ne pas créer le groupe de rôles personnalisé.

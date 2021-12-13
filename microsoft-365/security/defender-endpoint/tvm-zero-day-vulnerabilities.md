@@ -16,26 +16,26 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3a5fe0f04249a5d9573e74fa4f8ad6b81fe5395
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167645"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421449"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Une vulnérabilité « zero-day » est une vulnérabilité publiquement divulguée pour laquelle aucune mise à jour de sécurité ou correctifs officiels n’a été publié. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
+Une vulnérabilité « zero-day » est une faille dans le logiciel pour lequel aucun correctif officiel ou mise à jour de sécurité n’a été publié. Un fournisseur de logiciels peut être conscient ou non de la vulnérabilité et aucune information publique sur ce risque n’est disponible. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
 
 Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérabilités zero-day dont ils disposent d’informations.
 

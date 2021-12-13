@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Trouvez les derniers conseils, conseils, ressources et conseils sur le travail à distance pour les entreprises qui utilisent Microsoft 365.
-ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 673d323a64687b9f2413993d7ddd386529e1ffc8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370847"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422374"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Permettre à votre petite entreprise de travailler à distance 
 
@@ -71,7 +71,7 @@ Quelques étapes peuvent vous aider à préserver la sécurité de votre entrepr
 
 Utilisez l’authentification multifacteur pour protéger vos données et appareils.
 
-Pour plus d’informations, voir [Activer l’authentification multifacteur.](../../business-video/turn-on-mfa.md)
+Pour plus d’informations, voir [Activer l’authentification multifacteur.](../security-and-compliance/set-up-multi-factor-authentication.md)
 
 ### <a name="secure-your-devices"></a>Sécuriser vos appareils
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,22 +16,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: caa6013a68ab8ed50b16d26dcc24e91ac7d55616
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375129"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421101"
 ---
-# <a name="create-a-new-policy-in-microsoft-defender-for-business"></a>Créer une stratégie dans Microsoft Defender pour les entreprises
+# <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Créer une stratégie dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
 
-Microsoft Defender pour les entreprises inclut des stratégies par défaut qui utilisent les paramètres recommandés pour protéger les appareils de votre entreprise dès le premier jour. Par exemple, vous avez des  stratégies de protection nouvelle génération et des stratégies de **pare-feu** intégrées à l’aide des paramètres de sécurité recommandés. Mais vous n’êtes pas limité à vos stratégies par défaut. Vous pouvez également créer de nouvelles stratégies, comme décrit dans cet article.
+Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies par défaut qui utilisent les paramètres recommandés pour protéger les appareils de votre entreprise dès le premier jour. Par exemple, vous avez des  stratégies de protection nouvelle génération et des stratégies de **pare-feu** intégrées à l’aide des paramètres de sécurité recommandés. Mais vous n’êtes pas limité à vos stratégies par défaut. Vous pouvez également créer de nouvelles stratégies, comme décrit dans cet article.
 
 > [!TIP]
-> Si vous souhaitez modifier une stratégie existante, voir Afficher ou modifier des stratégies [dans Microsoft Defender pour Entreprises.](mdb-view-edit-policies.md)
+> Si vous souhaitez modifier une stratégie existante, voir Afficher ou modifier des stratégies [dans Microsoft Defender entreprise (prévisualisation).](mdb-view-edit-policies.md)
 
 ## <a name="create-a-new-policy"></a>Créer une stratégie
 
@@ -58,7 +58,7 @@ Microsoft Defender pour les entreprises inclut des stratégies par défaut qui u
 
    Pour en savoir plus sur les groupes d’appareils, voir . 
 
-8. Sous **l’onglet Paramètres de configuration,** spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, voir [Paramètres de configuration de Microsoft Defender pour Entreprise.](mdb-next-gen-configuration-settings.md)
+8. Sous **l’onglet Paramètres de configuration,** spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, voir Paramètres de configuration de [Microsoft Defender pour Entreprise (prévisualisation).](mdb-next-gen-configuration-settings.md)
 
 9. Sous **l’onglet Examiner votre stratégie,** examinez les informations générales, les appareils ciblés et les paramètres de configuration. 
 
@@ -69,7 +69,7 @@ Microsoft Defender pour les entreprises inclut des stratégies par défaut qui u
 
 Choisissez une ou plusieurs des tâches suivantes :
 
-- [Commencer à utiliser Defender pour les entreprises](mdb-get-started.md)
+- [Commencer à utiliser Defender pour les entreprises (prévisualisation)](mdb-get-started.md)
 
 - [Afficher ou modifier des stratégies](mdb-view-edit-policies.md)
 

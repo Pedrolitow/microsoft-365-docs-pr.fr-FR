@@ -1,5 +1,5 @@
 ---
-title: Référence de protection contre la perte de données
+title: Référence de la protection contre la perte de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,15 +21,16 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204418"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422866"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
 
@@ -72,7 +73,7 @@ With a DLP policy, you can:
 
 Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
 
-![Page Protection contre la perte de données dans le Centre Office 365 &amp; conformité de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Page protection contre la perte de données dans le Centre Office 365 &amp; conformité de la sécurité.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -528,7 +529,7 @@ La protection contre la perte de données évalue le contenu pouvant être index
 
 Lorsque vous créez une stratégie DLP incluant Exchange Online en tant qu’emplacement, celle-ci est synchronisée à partir du centre de conformité et de sécurité Office 365 avec Exchange Online, puis d’Exchange Online vers Outlook sur le web et Outlook.
 
-Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois le message envoyé, il est évalué par rapport aux stratégies DLP comme élément normal du flux de messagerie, en même temps que les règles de flux de courrier Exchange (règles de transport) et les stratégies DLP créées dans le centre d’administration Exchange. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
+Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les conseils de stratégie, puisque le contenu en cours de création est évalué par rapport aux stratégies DLP. Une fois qu’un message est envoyé, il est évalué par rapport aux stratégies DLP dans le cadre normal du flux de messagerie, ainsi qu’aux règles de flux de messagerie Exchange (également appelées règles de transport) et aux stratégies DLP créées dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>. Les stratégies DLP analysent le message ainsi que les éventuelles pièces jointes.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office
 

@@ -20,12 +20,13 @@ description: Attribuez les autorisations requises pour effectuer des tâches li�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 040d47123c789fba7aacc1b120eecdab8a7f210e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 426430f705fa85be440df39c6a40f8872d7024ad
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106661"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422782"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Attribuer des autorisations eDiscovery dans le Centre de conformité Microsoft 365
 
@@ -88,9 +89,9 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le Centr
 |Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Consignataire <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Révision <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
+|Révision <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrement RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
 |Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)           <br/> | <br/> |
 ||||
@@ -199,7 +200,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange groupes de distribution et Microsoft 365 groupes de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le Centre d’administration Exchange ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). L’ajout d’un nouveau groupe de sécurité à messagerie au groupe de rôles Gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création.
+    Exchange groupes de distribution et Microsoft 365 groupes de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). L’ajout d’un nouveau groupe de sécurité à messagerie au groupe de rôles Gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création.
 
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à messagerie un administrateur eDiscovery à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans le Centre de sécurité & conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 
