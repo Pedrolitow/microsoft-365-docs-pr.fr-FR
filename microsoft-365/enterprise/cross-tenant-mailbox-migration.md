@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422974"
+ms.locfileid: "61426494"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -206,7 +206,10 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+> [!NOTE]
+> L’ID de client que vous entrez comme $sourceTenantId et $targetTenantId est le GUID et non le nom de domaine du client. Pour obtenir un exemple d’ID de client et des informations sur la recherche de votre ID de client, voir Rechercher [votre ID Microsoft 365 client.](/onedrive/find-your-office-365-tenant-id)
+   
 ### <a name="how-do-i-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Vous pouvez vérifier la configuration de la migration de boîtes aux lettres entre les locataires en exécutant la cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) sur le point de terminaison de migration entre locataires que vous avez créé sur votre client cible.

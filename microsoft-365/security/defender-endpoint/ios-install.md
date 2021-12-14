@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423518"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436691"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -79,7 +79,7 @@ Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise
 
 Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
-Cette étape simplifie le processus d’intégration en mettant en place le profil VPN. Pour une expérience d’intégration sans toucher ou sans écran, consultez la section suivante : [Intégration sans tactile.](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+Cette étape simplifie le processus d’intégration en mettant en place le profil VPN. Pour une expérience d’intégration sans toucher ou sans écran, consultez la section suivante : [Intégration sans tactile.](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.
@@ -99,7 +99,12 @@ Cette étape simplifie le processus d’intégration en mettant en place le prof
 1. Cliquez sur Suivant et affectez le profil à des utilisateurs ciblés.
 1. Dans la section *Révision + Créer,* vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**
 
-## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>Intégration sans contact de Microsoft Defender pour point de terminaison
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>Intégration zero-touch de Microsoft Defender pour point de terminaison (prévisualisation)
+
+
+> [!IMPORTANT]
+> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+
 
 Les administrateurs peuvent configurer Microsoft Defender pour le point de terminaison pour déployer et activer en mode silencieux. Dans ce flux, l’utilisateur est simplement informé de l’installation. Defender pour le point de terminaison est installé automatiquement sans que l’utilisateur n’a besoin d’ouvrir l’application. Suivez les étapes ci-dessous pour configurer le déploiement zero-touch ou silencieux de Defender for Endpoint sur les appareils iOS inscrits :
 
