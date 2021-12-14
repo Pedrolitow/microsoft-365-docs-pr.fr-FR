@@ -15,14 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer un grand nombre d'enregistrements d'audit à chaque fois que vous l'exécutez. Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: d104ac5bb056d898dd03aaf3765a35950a7ea094
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 60f78f5a5eebeaa90f01b4b251d917f178c06ae9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268565"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421353"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -48,7 +50,7 @@ Lorsque vous devez récupérer manuellement des données d’audit pour une enqu
 
   La valeur `True` de la propriété **UnifiedAuditLogIn élémentsenabled** indique que vous avez activé la recherche dans le journal d’audit.
 
-- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour exécuter correctement le script. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour plus d’informations, voir la section « Exigences pour effectuer une recherche dans le journal d’audit » dans [Effectuer des recherches dans le journal d’audit dans le Centre de conformité](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
+- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour exécuter correctement le script. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Pour plus d’informations, voir la section « Exigences pour effectuer une recherche dans le journal d’audit » dans [Effectuer des recherches dans le journal d’audit dans le Centre de conformité](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
 
 - La fin du script peut prendre un certain temps. Le temps d’exécuter dépend de la plage de dates et de la taille de l’intervalle pour laquelle vous configurez le script afin de récupérer les enregistrements d’audit. Des plages de dates plus grandes et des intervalles plus petits entraînent une durée d’exécution longue. Pour plus d’informations sur la plage de dates et les intervalles, consultez le tableau de l’étape 2.
 

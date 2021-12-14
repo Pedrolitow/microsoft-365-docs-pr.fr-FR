@@ -14,17 +14,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176126"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421329"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -136,7 +137,7 @@ Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 36
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurer un connecteur depuis Microsoft 365 ou Office 365 vers votre serveur de messagerie.
 
-Pour créer un connecteur dans Microsoft 365 ou Office 365, cliquez sur **Admin**, puis sur **Exchange** pour accéder au centre d'administration Exchange. Ensuite, cliquez sur **flux de messagerie**, puis sur **connecteurs**.
+Pour créer un connecteur dans Microsoft 365 ou Office 365, sélectionnez **Admin** > **Exchange** pour accéder au Centre d’administration Exchange. Ensuite, sélectionnez **flux de messagerie** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Connecteurs**</a>.
 
 Configuration de connecteurs à l’aide de l’Assistant.
 

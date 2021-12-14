@@ -21,13 +21,14 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374303"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422338"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
@@ -38,7 +39,7 @@ L’archivage dans Microsoft 365 (également appelé *Archivage inaltérable*) f
 
 ## <a name="get-the-necessary-permissions"></a>Obtenir les autorisations nécessaires
 
-Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez être affecté au rôle Destinataires du courrier dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion des destinataires et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange. Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft 365, demandez à votre administrateur de vous attribuer les autorisations nécessaires.
+Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez être affecté au rôle Destinataires du courrier dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion des destinataires et Gestion de l’organisation sur la page **Autorisations** du <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Si vous ne voyez pas la page **Archive** dans le Centre de conformité Microsoft 365, demandez à votre administrateur de vous attribuer les autorisations nécessaires.
 
 ## <a name="enable-an-archive-mailbox"></a>Activer une boîte aux lettres d’archivage
 

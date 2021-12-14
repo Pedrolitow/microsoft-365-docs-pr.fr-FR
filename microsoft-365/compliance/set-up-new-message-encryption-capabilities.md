@@ -20,12 +20,13 @@ description: Découvrez les nouvelles fonctionnalités de chiffrement de message
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188096"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422986"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages
 
@@ -125,7 +126,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie pou
 
 Pour mettre à jour les règles existantes afin d’utiliser les nouvelles fonctionnalités OME :
 
-1. Dans le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), accédez à **Centres d’administration > Exchange**.
+1. Dans le Centre d’administration Microsoft 365, accédez à **Centres d’administration** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 2. Dans le Centre d’administration Exchange, accédez à **Flux de messagerie > Règles**.
 3. Pour chaque règle, dans **Procédez comme suit** :
     - Sélectionnez **Modifier la sécurité des messages**.

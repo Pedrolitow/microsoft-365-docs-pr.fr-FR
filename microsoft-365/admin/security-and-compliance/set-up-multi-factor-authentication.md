@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c99d856382f88d9938a124770179610d8a16a33c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 384e904a77b1582c65ef24c22fe2f96d2946c381
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373043"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421161"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
 
@@ -118,7 +118,6 @@ Pour la plupart des abonnements, l’authentification moderne est automatiquemen
 
 ## <a name="related-content"></a>Contenu connexe
 
-
-[Activer l’authentification multifacteur](../../business-video/turn-on-mfa.md) (vidéo)
+[Configurer l’authentification multifacteur](set-up-multi-factor-authentication.md) (vidéo)
 
 [Activer l’authentification multifacteur sur votre téléphone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (vidéo)

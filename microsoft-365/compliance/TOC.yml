@@ -541,6 +541,8 @@
               href: archive-rogers-network-archiver-data.md
             - name: Archiveur de signal
               href: archive-signal-archiver-data.md
+            - name: Archiveur réseau StarHub (préversion)
+              href: archive-starhub-network-archiver-data.md
             - name: Archiveur de télégramme
               href: archive-telegram-archiver-data.md
             - name: Réseau TELUS

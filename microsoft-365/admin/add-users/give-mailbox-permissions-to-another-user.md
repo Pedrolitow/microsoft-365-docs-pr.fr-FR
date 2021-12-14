@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Donner à un utilisateur le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des courriels à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370271"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421557"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
@@ -111,7 +112,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 
 > [!NOTE]
-> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le centre d’administration Exchange. Cette autorisation permet à la boîte aux lettres de l’utilisateur affecté de lire et de gérer les e-mails dans la boîte aux lettres utilisateur bénéficiant de l’autorisation. L’autorisation Accès total n’accorde pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
+> Les autorisations **Lecture** et **Gestion** sont appelées autorisations **Accès complet** lorsqu’elles sont accordées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>. Cette autorisation permet à la boîte aux lettres de l’utilisateur affecté de lire et de gérer les e-mails dans la boîte aux lettres utilisateur bénéficiant de l’autorisation. L’autorisation Accès total n’accorde pas les autorisations **Envoyer en tant que** ou **Envoyer de la part de**.
 
 ::: moniker-end
 

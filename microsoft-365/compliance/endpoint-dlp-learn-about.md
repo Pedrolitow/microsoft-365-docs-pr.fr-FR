@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: e1c46f89a9a1a8d354facbc6c3f1d095e42b3f5e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4094df4d465256475e09f8bbaf706c90bbebe34e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373763"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422326"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -42,17 +42,17 @@ Vous pouvez utiliser la prévention des pertes de données (DLP) de Microsoft 36
 
 Microsoft Endpoint DLP vous permet d’auditer et de gérer les types d’activités suivants que les utilisateurs prennent sur les éléments sensibles qui sont stockés physiquement sur des appareils Windows 10, Windows 11 ou macOS.
 
-|Activité |Description  | Auditable/restrictable|
-|---------|---------|---------|
-|téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’ils utilisent un navigateur répertorié dans DLP en tant que navigateur non interdit, l’activité de téléchargement est bloquée et l’utilisateur est redirigé pour utiliser Edge Chromium. Edge Chromium autorisera ou bloquera alors le téléchargement ou l'accès en fonction de la configuration de la politique DLP         |auditable et restreint|
-|copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.         | auditable et restreint|
-|copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.         | auditable et restreint|
-|copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé         |auditable et restreint|
-|imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.| auditable et restreint         |
-|copier vers une session à distance|Détecte lorsqu'un utilisateur tente de copier un élément vers une session de bureau à distance |  auditable et restreint|
-|copier vers appareil Bluetooth|Détecte lorsqu'un utilisateur tente de copier un élément vers une application Bluetooth non autorisée (telle que définie dans la liste des applications Bluetooth non autorisées dans les paramètres DLP de point de terminaison).| auditable et restreint|
-|créer un élément|Détecte lorsqu'un utilisateur crée un article| vérifiable|
-|renommer un article|Détecte lorsqu'un utilisateur renomme un article| vérifiable|
+|Activité |Description  |Windows 10 1809 et ultérieures/ Windows 11| macOS Catalina 10.15 (préversion) | Auditable/restrictable|
+|---------|---------|---------|---------|---------|
+|téléchargement vers un service en ligne, ou accès par des navigateurs non autorisés    | Détecte lorsqu'un utilisateur tente de télécharger un article dans un domaine de service restreint ou d'accéder à un article par le biais d'un navigateur.  S’ils utilisent un navigateur répertorié dans DLP en tant que navigateur non autorisé, l’activité de chargement est bloquée et l’utilisateur est redirigé pour utiliser Microsoft Edge . Microsoft Edge autorisez ou bloquez le chargement ou l’accès en fonction de la configuration de la stratégie DLP         |Pris en charge | Pris en charge|auditable et restreint|
+|copie vers une autre application    |Détecte lorsqu'un utilisateur tente de copier des informations d'un élément protégé et de les coller ensuite dans une autre application, un autre processus ou un autre élément. Copier et coller des informations dans la même application, le même processus ou le même élément n'est pas détecté par cette activité.|Pris en charge|Pris en charge         | auditable et restreint|
+|copie sur support USB amovible |Détecte lorsqu'un utilisateur tente de copier un élément ou une information sur un support amovible ou un périphérique USB.|Pris en charge|Pris en charge         | auditable et restreint|
+|copier vers un partage réseau    |Détecte lorsqu'un utilisateur tente de copier un élément vers un partage réseau ou un disque réseau mappé |Pris en charge|Pris en charge         |auditable et restreint|
+|imprimer un document    |Détecte lorsqu'un utilisateur tente d'imprimer un élément protégé sur une imprimante locale ou réseau.|Pris en charge|Pris en charge|auditable et restreint         |
+|copier vers une session à distance|Détecte lorsqu'un utilisateur tente de copier un élément vers une session de bureau à distance |Pris en charge|non pris en charge|  auditable et restreint|
+|copier vers appareil Bluetooth|Détecte lorsqu'un utilisateur tente de copier un élément vers une application Bluetooth non autorisée (telle que définie dans la liste des applications Bluetooth non autorisées dans les paramètres DLP de point de terminaison).|Pris en charge|non pris en charge| auditable et restreint|
+|créer un élément|Détecte lorsqu'un utilisateur crée un article|Pris en charge | |vérifiable|
+|renommer un article|Détecte lorsqu'un utilisateur renomme un article|Pris en charge | |vérifiable|
 
 ## <a name="monitored-files"></a>Fichiers analysées
 
