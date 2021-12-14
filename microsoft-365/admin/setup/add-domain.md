@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d'administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: 7bb853e777ee0377ac0fb6ec6f7de453d4c4d4c7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373235"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426326"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "61373235"
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour ajouter, modifier ou supprimer des domaines, vous **devez** être administrateur **général** d’un [plan d’entreprise ou d’entreprise.](https://products.office.com/business/office) Ces modifications affectent l’ensemble du client . *Les administrateurs personnalisés* *ou* les utilisateurs réguliers ne pourront pas apporter ces modifications.
+Pour ajouter, modifier ou supprimer  des domaines, vous devez être administrateur de nom de domaine ou administrateur **général** d’un plan d’entreprise [ou d’entreprise.](https://products.office.com/business/office)  Ces modifications affectent l’ensemble du client . *Les administrateurs personnalisés* *ou* les utilisateurs réguliers ne pourront pas apporter ces modifications.
 
 ## <a name="watch-add-a-domain"></a>Regarder : Ajouter un domaine
 
@@ -112,7 +112,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 5. Sélectionnez le type d’enregistrement DNS à ajouter et tapez les informations du nouvel enregistrement.
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 ## <a name="registrars-with-domain-connect"></a>Bureaux d’enregistrement avec Connecter
 
@@ -145,5 +145,8 @@ Si vous avez un site web que vous utilisez dans le cadre de votre activité, il 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les](domains-faq.yml) domaines (article) [Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article) [Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Ajouter des enregistrements DNS pour connecter](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) votre domaine (article) [Modifier](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines (article)
+[FAQ sur les domaines](domains-faq.yml) (article)</br>
+[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)</br>
+[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)</br>
+[Ajouter des enregistrements DNS pour connecter votre domaine](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)</br>
+[Modifier les serveurs de noms de manière à configurer Microsoft 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)

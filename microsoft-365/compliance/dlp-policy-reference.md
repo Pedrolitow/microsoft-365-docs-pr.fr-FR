@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 3c1b98c3825d783685976d2e56583eccb7ba96b4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4588ef4ead22ebae147ea7fdae1d3dafaa3ca1dc
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111002"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426434"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -161,15 +161,17 @@ Les règles sont la logique métier des stratégies DLP. Elles sont composées d
 
 ### <a name="the-priority-by-which-rules-are-processed"></a>La priorité de traitement des règles
 
-Une priorité est attribuée à chaque règle dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+#### <a name="hosted-service-workloads"></a>Charges de travail de service hébergées
+
+Pour les charges de travail de service hébergées, telles que Exchange Online, SharePoint Online et OneDrive Entreprise, une priorité est attribuée à chaque règle dans l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
-Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, la première règle évaluée qui a l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 3 est appliquée, car c’est celle qui a la priorité la plus élevée et est la plus restrictive :
+Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles,  la première règle évaluée qui a l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle *3* est appliquée car il s’agit de la règle la plus prioritaire et la plus restrictive :
   
 - Règle 1 : informe seulement les utilisateurs
 - Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
-- Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur
+- *Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur*
 - Règle 4 : restreint l’accès
 
 Les règles 1, 2 et 4 sont évaluées, mais ne sont pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la règle la plus restrictive est appliquée.
@@ -179,6 +181,21 @@ Vous pouvez utiliser une règle pour répondre à une exigence de protection par
 Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la présence d’informations visées par la loi américaine sur l’assurance maladie (Health Insurance Portability Accountability Act, ou HIPAA). Cette stratégie DLP peut contribuer à protéger les données HIPAA (quoi) sur tous les sites SharePoint Online et tous les sites OneDrive Entreprise (où) en recherchant les documents contenant ces informations sensibles partagées avec des personnes extérieures à votre organisation (conditions), et en bloquant l’accès au document et en envoyant une notification (actions). Ces conditions sont stockées en tant que règles individuelles et regroupées sous la forme d’une stratégie DLP pour simplifier la gestion et la création de rapports.
   
 ![Diagramme montrant que la stratégie DLP contient les règles et les emplacements](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+
+#### <a name="for-endpoints"></a>Pour les points de terminaison
+
+La priorité des règles sur les points de terminaison est également attribuée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
+
+Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec des restrictions est celle qui est appliquée au contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est appliquée, car il *s’agit* de la règle de priorité la plus élevée configurée avec une restriction .
+  
+- Règle 1 : informe seulement les utilisateurs
+- *Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur*
+- Règle 3 : informe les utilisateurs, limite l’accès et ne permet pas le remplacement de l’utilisateur
+- Règle 4 : restreint l’accès
+
+Les règles 1, 3 et 4 sont évaluées, mais ne sont pas appliquées. Dans cet exemple, les correspondances pour toutes les règles sont enregistrées dans les journaux d’audit et affichées dans les rapports DLP, même si seule la première règle avec restriction est appliquée.
+
+Pour les règles qui sont appliquées aux points de terminaison, vous pouvez tirer parti de la possibilité de ré-commander la priorité de la règle pour vous assurer que les restrictions que vous souhaitez appliquer sont appliquées.
 
 ### <a name="conditions"></a>Conditions
 
@@ -375,7 +392,7 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 
 L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)que vous pouvez surveiller et prendre des mesures sur . 
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender pour les applications cloud :
+#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps :
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Restreindre les applications tierces
@@ -451,7 +468,7 @@ Les options de configuration des notifications utilisateur et des conseils de st
 - SharePoint
 - OneDrive
 - Teams chat et canal
-- Defender pour les applications cloud
+- Defender for Cloud Apps
 
 
 Vous pouvez activer/désactiver les notifications des utilisateurs pour différentes applications Microsoft. Consultez la référence des conseils de stratégie de protection [contre la perte de données.](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)

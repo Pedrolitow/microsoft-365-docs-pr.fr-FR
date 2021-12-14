@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Découvrez les types d’informations sensibles exacts basés sur les correspondances de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552d86e4c460ee0195ec83d88965592298a17d90
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914811"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426470"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles exacts basés sur la correspondance de données
 
-Les [types](sensitive-information-type-learn-about.md) d’informations sensibles permettent d’identifier les éléments sensibles afin de pouvoir les empêcher d’être partagés par inadvertance ou de manière inappropriée, de faciliter la recherche de données pertinentes dans eDiscovery et d’appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) basé sur :
+Les [types](sensitive-information-type-learn-about.md) d’informations sensibles permettent d’identifier les éléments sensibles afin de pouvoir les empêcher d’être partagés par inadvertance ou de manière inappropriée, pour faciliter la recherche de données pertinentes dans eDiscovery et pour appliquer des actions de gouvernance à certains types d’informations. Vous définissez un type d’informations sensibles personnalisé (SIT) basé sur :
 
 - modèles
 - preuve de mot clé telle *que l’employé,* le numéro *de sécurité sociale* ou *l’ID*
@@ -71,7 +71,7 @@ Le schéma est un fichier xml qui définit :
 
 ### <a name="sensitive-information-source-table"></a>Tableau des sources d’informations sensibles
 
-Table source sensible qui contient les valeurs d’informations sensibles que l’EDM SIT recherche. Il est composé de colonnes et de colonnes. Les en-têtes de colonne sont les noms de champ, les lignes sont une instance de données et chaque cellule contient les valeurs de cette instance pour ce champ.
+La table source sensible contient les valeurs d’informations sensibles que l’EDM SIT recherchera. Il est composé de colonnes et de lignes. Les en-têtes de colonne sont les noms de champ, les lignes sont une instance de données et chaque cellule contient les valeurs de cette instance pour ce champ.
 
 Voici un exemple simple de tableau de sources d’informations sensibles.
 
@@ -94,7 +94,7 @@ Proximité : nombre de caractères entre l’élément principal et l’élémen
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Vous fournissez vos propres schémas et données
 
-Microsoft 365 est livré avec plus de [200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinits, des modèles regex, des mots clés et des niveaux de confiance. Avec les sits EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données principales [](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) et secondaires sont hautement sensibles, vous les [](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) chiffrez via une fonction de hachage qui inclut une valeur salt générée de manière aléatoire ou auto-fournie. Ces valeurs hachées sont ensuite téléchargées vers le service, afin que vos données sensibles ne soient jamais ouvertes.
+Microsoft 365 est livré avec plus de [200 SITS](sensitive-information-type-entity-definitions.md) avec des schémas prédéfinits, des modèles regex, des mots clés et des niveaux de confiance. Avec les sits EDM, vous êtes responsable de la définition du schéma, ainsi que des champs principaux et secondaires qui identifient les éléments sensibles. Étant donné que le schéma et les valeurs de données principales [](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) et secondaires sont hautement sensibles, vous les [](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) chiffrez via une fonction de hachage qui inclut une valeur salt générée de manière aléatoire ou fournie automatiquement. Ces valeurs hachées sont ensuite téléchargées vers le service, afin que vos données sensibles ne soient jamais ouvertes.
 
 ### <a name="primary-and-secondary-support-elements"></a>Éléments de prise en charge principaux et secondaires
 
@@ -106,9 +106,9 @@ Lorsque vous créez un sit EDM, vous définissez un champ *d’élément princip
 EDM trouve des correspondances en comparant le contenu qu’il trouve à une table de données sensibles que vous définissez. Le test de correspondance est effectué à l’aide d’une combinaison de règles et de modèles traditionnels pour vous assurer que les données de correspondance sont une instance réelle des données que vous souhaitez rechercher et protéger. EDM fonctionne en comparant les chaînes de vos documents et e-mails aux valeurs d’une table de données sensibles que vous fournissez pour savoir si les valeurs de votre contenu sont présentes dans le tableau en comparant les hchéthages cryptographiques à sens seul.
 
 > [!TIP]
-> Une pratique courante consiste à combiner l’utilisation des types d’informations sensibles EDM et des types d’informations sensibles réguliers sur lesquels ils sont basés dans des règles DLP, avec des seuils différents. Par exemple, vous pouvez utiliser un type d’informations sensibles EDM qui recherche des numéros de sécurité sociale et d’autres données, avec des exigences strictes et une faible tolérance où une ou plusieurs correspondances entraînent une alerte DLP et utilisez le type d’informations sensibles normal, comme le numéro de sécurité sociale américain intégré, pour un nombre plus élevé.  
+> Une pratique courante consiste à combiner l’utilisation de types d’informations sensibles EDM et les types d’informations sensibles réguliers sur lesquels ils sont basés dans des règles DLP, avec des seuils différents. Par exemple, vous pouvez utiliser un type d’informations sensibles EDM qui recherche des numéros de sécurité sociale et d’autres données, avec des exigences strictes et une faible tolérance où une ou plusieurs correspondances entraînent une alerte DLP et utilisez le type d’informations sensibles normal, comme le numéro de sécurité sociale américain intégré, pour un nombre plus élevé.  
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commencer avec les types d’informations sensibles exacts de correspondance de données](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [Démarrage avec des types d’informations sensibles basés sur des correspondances de données exactes](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
    

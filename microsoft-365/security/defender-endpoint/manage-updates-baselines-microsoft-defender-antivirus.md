@@ -15,18 +15,18 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/09/2021
+ms.date: 12/13/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 284ed70877564b3f402eb910f27cb7c62bbcd0b6
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 0c36d0e1f1c4ced84bbc914a3c0a4ce61e699b28
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401185"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426374"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
@@ -44,8 +44,7 @@ Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appa
 Antivirus Microsoft Defender utilise la protection fournie par le [cloud](cloud-protection-microsoft-defender-antivirus.md) (également appelée Microsoft Advanced Protection Service ou MAPS) et télécharge régulièrement les mises à jour de l’intelligence de sécurité pour fournir une protection.
 
 > [!NOTE]
-> Les mises à jour sont publiées sous les numéros de la Ko ci-dessous :
->
+> Les mises à jour sont publiées sous les Ko suivants :
 > - Antivirus Microsoft Defender : KB2267602
 > - System Center Endpoint Protection : KB2461484
 
@@ -68,7 +67,6 @@ Vous pouvez gérer la distribution des mises à jour via l’une des méthodes s
 Pour plus d’informations, [voir Gérer les sources pour les mises à jour Antivirus Microsoft Defender protection des données.](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 > [!NOTE]
->
 > - Les mises à jour mensuelles sont publiées par phases, ce qui entraîne la mise à jour de plusieurs packages dans vos services de mise à jour [de serveur Window.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 > - Cet article répertorie les modifications incluses dans le canal de publication étendu. [Consultez la dernière version de canal étendu ici.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 > - Pour en savoir plus sur le processus de déploiement progressif et pour plus d’informations sur la prochaine version, voir Gérer le processus de déploiement progressif pour les mises à jour [de Microsoft Defender.](manage-gradual-rollout.md)
@@ -86,6 +84,23 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary> Novembre-2021 (plateforme : 4.18.2111.X| Moteur : 1.1.18800.4)</summary>
+
+&ensp;Version de mise à jour des informations de sécurité **: 1.353.3.0**<br/>
+&ensp;Publication : **9 décembre 2021**<br/>
+&ensp;Plateforme : **4.18.2111.X**<br/>
+&ensp;Moteur : **1.1.18800.4**<br/>
+&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+
+Version du moteur : 1.1.18800.4 Version de mise à jour de l’intelligence de sécurité : 1.353.3.0
+
+### <a name="whats-new"></a>Nouveautés
+Aucune nouvelle fonctionnalité
+
+### <a name="known-issues"></a>Problèmes connus
+Aucun problème connu
+<br/>
+</details><details>
 <summary> Octobre-2021 (plateforme : 4.18.2110.6| Moteur : 1.1.18700.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.353.3.0**<br/>
@@ -125,14 +140,21 @@ Version du moteur : 1.1.18600.4 Version de mise à jour de l’intelligence de s
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
+
+Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
+
+<details>
 <summary> Août-2021 (plateforme : 4.18.2108.7 | Moteur : 1.1.18500.10)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.349.22.0**<br/>
 &ensp;Publication : **2 septembre 2021**<br/>
 &ensp;Plateforme : **4.18.2108.7**<br/>
 &ensp;Moteur : **1.1.18500.10**<br/>
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
 ### <a name="whats-new"></a>Nouveautés
 - Améliorations apportées au moteur d’analyse du comportement
@@ -144,14 +166,7 @@ Aucun problème connu
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
-
-Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.<br/><br/>
-
-<details>
+</details><details>
 <summary> Juillet-2021 (plateforme : 4.18.2107.4 | Moteur : 1.1.18400.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.345.13.0**<br/>
@@ -594,7 +609,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.353.2283.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -625,7 +640,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2109.01</summary>
@@ -650,7 +665,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -664,10 +679,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -678,10 +693,10 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -720,7 +735,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -734,7 +749,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -776,7 +791,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Signatures Antivirus Microsoft Defender actualisées
@@ -790,7 +805,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -804,7 +819,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.

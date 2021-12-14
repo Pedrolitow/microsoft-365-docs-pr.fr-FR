@@ -15,18 +15,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés à partir du système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans les stratégies de gestion des risques internes pour vous aider à détecter les activités de certains utilisateurs qui peuvent poser une menace interne à votre organisation.
-ms.openlocfilehash: ec09fd2c139b90b37811eea2467b275864ec9a06
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 80038c649d17b3a75896422d4c68880f1ef6a962
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401473"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436679"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
 Vous pouvez configurer un connecteur de données dans le Centre de conformité Microsoft 365 pour importer des données de ressources humaines (RH) liées à des événements tels que la merci de l’utilisateur ou un changement dans le niveau de travail d’un utilisateur. Les données RH peuvent ensuite être utilisées par la [solution](insider-risk-management.md) de gestion des risques internes pour générer des indicateurs de risque qui peuvent vous aider à identifier les activités malveillantes possibles ou le vol de données par les utilisateurs au sein de votre organisation.
 
 La configuration d’un connecteur pour les données RH que les stratégies de gestion des risques internes peuvent utiliser pour générer des indicateurs de risque consiste à créer un fichier CSV qui contient les données RH, à créer une application dans Azure Active Directory utilisée pour l’authentification, à créer un connecteur de données RH dans le Centre de conformité Microsoft 365 et exécutez ensuite un script (sur une base programmée) qui inséra les données RH dans les fichiers CSV dans le cloud Microsoft afin qu’il soit disponible pour la solution de gestion des risques internes.
+
+> [!IMPORTANT]
+> Une nouvelle version du connecteur RH est désormais disponible en prévisualisation publique. Pour créer un connecteur RH ou [](#csv-file-for-employee-profile-data-preview) importer des données pour le nouveau scénario de profil d’employé pour le scénario de stratégie de santé pour la gestion des risques internes, allez à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365, sélectionnez l’onglet **Connecteurs,** puis cliquez sur Ajouter un connecteur **> RH (prévisualisation)** pour démarrer la mise en place. Les connecteurs RH existants continueront de fonctionner sans interruption.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -259,9 +262,9 @@ Une fois cette étape terminée, assurez-vous de copier l’ID de travail géné
 
 1. Go to the Centre de conformité Microsoft 365, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. Dans la page **Connecteurs de données** sous **RH,** cliquez sur **Afficher.**
+2. Dans la page **Connecteurs de données,** cliquez **sur RH (aperçu).**
 
-3. Dans la page **Personnalisée RH,** cliquez **sur Ajouter un connecteur.**
+3. Dans la page **RESSOURCES HUMAINES (aperçu),** cliquez **sur Ajouter un connecteur.**
 
 4. Dans la page **Configuration de la connexion,** faites ce qui suit, puis cliquez sur **Suivant**:
 
@@ -333,7 +336,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations obtenues lors des étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   | Parameter | Description |
+   | Paramètre | Description |
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 2. Vous pouvez également obtenir l’ID  de locataire de votre organisation dans le panneau Vue d’ensemble du centre Azure AD’administration. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 2. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation. | 
@@ -409,7 +412,7 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    1. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple : `C:\Users\contosoadmin\Desktop\Scripts`.
 
    1. Cliquez **sur OK** pour enregistrer les paramètres de la nouvelle action.
 
@@ -425,6 +428,6 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
 ## <a name="existing-hr-connectors"></a>Connecteurs RH existants
 
-Le 20 juillet 2020, nous avons publié des scénarios supplémentaires pris en charge par les connecteurs RH. Voici les scénarios RH précédemment décrits dans cet article. Tout connecteur RH créé avant cette date prend uniquement en charge le scénario employé. Si vous avez créé un connecteur RH avant le 20 juillet 2020, nous l’avons migré afin qu’il continue à migrer vos données RH vers le cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser le connecteur sans interruption.
+Le 13 décembre 2021, nous avons publié le scénario de données de profil d’employé pour les connecteurs RH. Si vous avez créé un connecteur RH avant cette date, nous migrerons les instances existantes ou les connecteurs RH de votre organisation afin que vos données RH continuent d’être importées dans le cloud Microsoft. Vous n’avez rien à faire pour maintenir cette fonctionnalité. Vous pouvez continuer à utiliser ces connecteurs sans interruption.
 
-Si vous souhaitez implémenter des scénarios rh supplémentaires, créez un connecteur RH et configurez-le pour les scénarios RH supplémentaires qui ont été publiés. Vous devez également créer un ou plusieurs nouveaux fichiers CSV qui contiennent les données pour prendre en charge les scénarios rh supplémentaires. Après avoir créé un connecteur RH, exécutez le script à l’aide de l’ID de travail du nouveau connecteur et du ou des fichiers CSV avec les données de vos scénarios RH supplémentaires.
+Si vous souhaitez implémenter le scénario de données de profil d’employé, vous créez un connecteur RH et le configurez selon les besoins. Après avoir créé un connecteur RH, exécutez le script à l’aide [](#csv-file-for-employee-profile-data-preview) de l’ID de travail du nouveau connecteur et des fichiers CSV avec les données de profil d’employé décrites précédemment dans cet article.

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 75a343e34fb7ca16bab90f4c10155dca96fe9d16
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372911"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421173"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -43,9 +43,9 @@ Ou
   > [!div class="mx-imgBorder"]
   > ![Paramètres DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Paramètres DLP de point de terminaison Windows 10 et macOS
+### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Paramètres de point de terminaison DLP Windows 10/11 et macOS
 
-|Setting |Windows 10, 1809 et versions ultérieures  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
+|Setting |Windows 10, versions 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
 |---------|---------|---------|---------|
 |Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
 |Applications non autorisées     |Pris en charge         |Pris en charge         |         |
@@ -53,6 +53,9 @@ Ou
 |Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
 |Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
 |Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
+|Fichier de mise en quarantaine automatique des applications non autorisées | Pris en charge | Non pris en charge| |
+|Classification avancée | Pris en charge | Non pris en charge| |
+|Justification métier dans les conseils de stratégie | Pris en charge | Pris en charge| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
 
@@ -169,7 +172,7 @@ Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’êtr
 
 #### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient s’afficher une notification leur demandant d’ouvrir le fichier via le Chromium Edge.
+Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
 
 #### <a name="service-domains"></a>Domaines de service
 
@@ -220,7 +223,7 @@ L’activité des fichiers sera toujours auditée pour les appareils intégrés,
 
 Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez limiter le partage involontaire des éléments sensibles aux applications et services Cloud non autorisés. Le Chromium Edge comprend les conditions dans lesquelles un élément est limité par une stratégie DLP de point de terminaison et applique les restrictions d’accès.
 
-Lorsque vous utilisez la fonctionnalité point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et le navigateur Chromium Edge, les navigateurs non autorisés que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés pour utiliser Edge Chromium qui, avec sa compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
+Lorsque vous utilisez le point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et dans le navigateur Microsoft Edge, les navigateurs non autorisé que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés vers Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
 Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
 

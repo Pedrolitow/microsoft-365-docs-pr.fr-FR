@@ -21,17 +21,18 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254440"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421401"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 
@@ -44,7 +45,7 @@ Dans cet article, nous allons vous aider à passer en revue les étapes d’ajou
 Pour ajouter, modifier ou supprimer des domaines, vous devez être administrateur général. Pour plus d’informations, voir [à propos des rôles d’administrateur.](../add-users/about-admin-roles.md)
 
 > [!IMPORTANT]
-> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus d’informations, consultez [Attribuer des rôles d’administrateur](../add-users/assign-admin-roles.md).
 
 ## <a name="watch-add-an-existing-domain-to-your-microsoft-365-business-standard-subscription"></a>Regarder : Ajouter un domaine existant à votre abonnement Microsoft 365 Business Standard abonnement
 
@@ -146,7 +147,7 @@ Si vous utilisiez Outlook avec un autre compte de courrier, vous pouvez importer
   
 Pour plus d’informations, voir [Importer le courrier avec Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
 
-Vous pouvez également utiliser le Centre d’administration Exchange pour importer le courrier électronique de tout le monde. Pour obtenir plus d'informations, consultez l'article [Migrer plusieurs comptes de messagerie](/Exchange/mailbox-migration/mailbox-migration).
+Vous pouvez également utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a> pour importer le courrier électronique de tout le monde. Pour obtenir plus d'informations, consultez l'article [Migrer plusieurs comptes de messagerie](/Exchange/mailbox-migration/mailbox-migration).
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Configurer Microsoft Teams et OneDrive pour les entreprises
 

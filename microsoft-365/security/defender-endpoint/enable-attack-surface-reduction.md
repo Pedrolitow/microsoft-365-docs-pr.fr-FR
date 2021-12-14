@@ -17,16 +17,16 @@ ms.topic: how-to
 ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 676cdfd959c39baef6baf10e383288aeb4c58629
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 362414da07fbc71520c390c8dab45fc85b7a0872
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320778"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426446"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -158,7 +158,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
    - Dans **Nom,** tapez un nom pour la règle.
    - Dans **Description,** tapez une brève description.
-   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle Azure Site Recovery, voir les [descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
+   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
    - Dans **type de données,** sélectionnez **Chaîne**.
    - Dans **Value**, tapez ou collez la valeur GUID, le signe et la valeur State sans \= espaces (_GUID=StateValue_). Où :
      
