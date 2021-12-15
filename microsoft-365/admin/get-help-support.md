@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 2be324661fa80ed58b9f9e5dc351726ad0c9f69a
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0e76dc387ac8522948a113129316a2eb36b5fb80
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422026"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520895"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -222,6 +222,6 @@ Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les derniè
 
 ## <a name="related-content"></a>Contenu associé
 
-[Rechercher des documents et une formation](../business-video/find-help-answers.md) (article)\
-[Configuration rapide pour les employés](../business-video/employee-quick-setup.md) (article)\
+[Rechercher des documents et des formations](index.yml) (page de liens)\
+[Configuration rapide pour les employés](setup/employee-quick-setup.md) (article)\
 [Vue d’ensemble de l’installation de Microsoft 365 Business Premium](setup/plan-your-setup.md) (vidéo)

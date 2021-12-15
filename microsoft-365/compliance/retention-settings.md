@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282980"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520931"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -158,23 +158,30 @@ Pour exécuter une requête à l’aide de PowerShell :
 
 1. [Connecter à Exchange Online PowerShell à l’aide](/powershell/exchange/connect-to-exchange-online-powershell) d’un compte avec les [autorisations Exchange Online administrateur appropriés.](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)
 
-2. Utilisez [Get-Recipient](/powershell/module/exchange/get-recipient) ou [Get-Mailbox](/powershell/module/exchange/get-mailbox) avec le paramètre *-Filter* et votre requête [OPATH](/powershell/exchange/filter-properties) pour l’étendue adaptative entre crochets ( `{` , `}` ). Si les valeurs de vos attributs comprennent des espaces, mettez ces valeurs entre guillemets doubles ou simples. 
+2. Utilisez [Get-Recipient](/powershell/module/exchange/get-recipient) ou [Get-Mailbox](/powershell/module/exchange/get-mailbox) avec le paramètre *-Filter* et votre requête [OPATH](/powershell/exchange/filter-properties) pour l’étendue adaptative entre crochets ( `{` , `}` ). Si vos valeurs d’attribut sont des chaînes, mettez ces valeurs entre guillemets doubles ou simples.  
 
-    Si vous validez une étendue **Utilisateur,** incluez dans la commande, sinon pour les Microsoft 365 `-RecipientTypeDetails UserMailbox` **groupe,** incluez `-RecipientTypeDetails GroupMailbox` .
+    Vous pouvez déterminer s’il faut utiliser `Get-Mailbox` ou `Get-Recipient` pour la validation en identifiant l’applet de commande prise en charge par la propriété [OPATH](/powershell/exchange/filter-properties) que vous choisissez pour votre requête.
 
-    > [!TIP]
-    > Vous pouvez déterminer s’il faut valider à l’aide des cmdlets ou en fonction des cmdlets que vous choisissez d’utiliser dans la prise en charge `Get-Mailbox` `Get-Recipient` de votre requête. [](/powershell/exchange/filter-properties)
+    > [!IMPORTANT]
+    > `Get-Mailbox` ne prend pas en charge le type de destinataire *MailUser*, vous devez donc utiliser `Get-Recipient` pour valider les requêtes qui incluent des boîtes aux lettres locales dans un environnement hybride.
+
+    Pour valider une étendue **Utilisateur,** utilisez l’une ou l’autre des utilisations :
+    - `Get-Mailbox` avec `-RecipientTypeDetails UserMailbox` ou
+    - `Get-Recipient` avec le `-RecipientTypeDetails UserMailbox,MailUser`
+    
+    Pour valider une étendue **groupe Microsoft 365** utilisez :
+    - `Get-Mailbox` ou `Get-Recipient` avec `-RecipientTypeDetails GroupMailbox`
 
     Par exemple, pour valider une **étendue Utilisateur,** vous pouvez utiliser :
     
     ````PowerShell
-    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
     
     Pour valider une **étendue Microsoft 365 groupe,** vous pouvez utiliser :
     
     ```PowerShell
-    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
 3. Vérifiez que la sortie correspond aux utilisateurs ou groupes attendus pour votre étendue adaptative. Si ce n’est pas le cas, vérifiez votre requête et les valeurs auprès de l’administrateur approprié pour Azure AD ou Exchange.

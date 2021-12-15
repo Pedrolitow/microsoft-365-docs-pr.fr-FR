@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f84c9e93c92c40ce40cc2835100ef2786a23a69d
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174026"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520871"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -133,7 +133,7 @@ Si vous stockez des documents physiques avec des données personnelles, vérifie
 Si vous décidez de stocker des données personnelles dans le cloud, tel que via Microsoft 365, vous disposez de fonctionnalités de sécurité telles la possibilité de vous aider à gérer les autorisations vers des fichiers et des dossiers, des emplacements sécurisés et centralisés pour enregistrer vos fichiers (bibliothèques de documents OneDrive ou SharePoint) et un chiffrement de données lors de l’envoi et de la récupération de vos fichiers. 
 
 #### <a name="microsoft-365-features-that-can-help"></a>Fonctionnalités Microsoft 365 pouvant être utiles
-Vous pouvez utiliser la [Protection contre la perte de données (DLP) Microsoft](/microsoft-365/business-video/set-up-dlp) pour protéger les informations sensibles de votre entreprise. Vous pouvez [configurer une stratégie DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) qui utilise le [modèle RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+Vous pouvez utiliser [les fonctionnalités configurer DLP](set-up-compliance.md#watch-set-up-dlp-features) pour protéger les informations sensibles de votre entreprise. Vous pouvez [configurer une stratégie DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) qui utilise le [modèle RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Étape 5 : conserver la documentation sur vos activités de traitement des données
 
