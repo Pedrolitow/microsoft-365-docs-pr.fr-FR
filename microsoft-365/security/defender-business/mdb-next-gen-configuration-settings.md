@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 619d3a03789eab7e525a6d4d07621d7950e907cb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: ab2d82c3b5db6b114b8172e0f4bf4aa3658eb28a
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423262"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507241"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 La protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation) inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité . Toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. 
 
@@ -39,7 +41,7 @@ La protection nouvelle génération dans Microsoft Defender pour Entreprises (pr
 
 Le tableau suivant répertorie vos paramètres et options :<br/><br/>
 
-| Setting | Description |
+| Paramètre | Description |
 |:---|:---|
 | **Protection en temps réel**  |  |
 | **Activer la protection en temps réel** | Activée par défaut, la protection en temps réel localise et arrête l’exécution des programmes malveillants sur les appareils. *Nous vous recommandons de maintenir la protection en temps réel allumée.*<br/><br/>Lorsque la protection en temps réel est désactivée, elle configure les paramètres suivants :<br/>- La surveillance du comportement est désactivée ([AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender))<br/>- Tous les fichiers et pièces jointes téléchargés sont analysés ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender))<br/>- Les scripts utilisés dans les navigateurs Microsoft sont analysés ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender))   |
@@ -68,7 +70,7 @@ Les paramètres supplémentaires suivants sont préconfigurés pour la protectio
 - Les mises à jour des informations de sécurité sont vérifiées avant l’analyse antivirus ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender))
 - Les vérifications des informations de sécurité ont lieu toutes les quatre heures ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender))
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 

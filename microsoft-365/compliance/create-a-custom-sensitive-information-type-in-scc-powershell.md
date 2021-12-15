@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422566"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507313"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -307,7 +307,7 @@ En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède 
 
 Si votre équipe de conformité utilise le Centre de conformité Microsoft 365 pour créer des stratégies avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
   
-![Nombre d’instances et options de précision de correspondance.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Nombre d’instances et configuration de précision de correspondance.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 L’élément Rules doit contenir un élément LocalizedStrings, qui contient un élément Resource référençant le GUID de votre entité personnalisée. À son tour, chaque élément Resource contient un ou plusieurs éléments Name et Description qui utilisent l’attribut langcode afin de fournir une chaîne localisée pour une langue spécifique.
   
@@ -487,8 +487,8 @@ Pour télécharger votre package de règles, procédez comme suit :
 Lorsque vous chargez votre fichier XML de package de règles, le système valide le fichier XML et recherche des modèles incorrects connus et des problèmes de performance évidents. Voici quelques-uns des problèmes connus que la validation contrôle. Une expression régulière :
   
 - Les assertions lookbehind ou lookahead dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
-    
-  Par exemple, « (?<=^|\s| ) » ne réussira pas la validation, car la première option dans ce cas est « ^ », qui est de longueur nulle tandis que les options suivantes _('\s’et ')_ sont de longueur un. Une autre façon d’avoir cette expression régulière est « (?:^| (?<=\s|_) »
+
+    Par exemple, cette expression regex ne réussira pas la validation, car la première option est celle qui présente une longueur nulle tandis que les deux options suivantes ont une longueur `"(?<=^|\s|_)"` `^` `\s` `_` d’une.  Une autre façon d’écrire cette expression régulière afin qu’elle soit validée est `"(?:^|(?<=\s|_))"` .
   
 - ne peut pas commencer ou se terminer par l’alternateur « | », qui correspond à tous les éléments, car il est considéré comme une correspondance vide ;
     

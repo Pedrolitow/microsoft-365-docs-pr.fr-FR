@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9eb12db41e48fce814c2c0cb1c934d3fa388086f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962866"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507294"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -41,7 +41,7 @@ Cet article explique comment afficher et examiner les programmes malveillants et
 **S’applique à :**
 
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>Afficher les programmes malveillants détectés dans le courrier électronique
 
@@ -64,6 +64,23 @@ Pour voir les programmes malveillants détectés dans les [**\>**](threat-explor
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="technologie de détection sélectionnée.":::
 
    Le rapport est actualisé pour afficher les résultats détectés par les programmes malveillants détectés dans le courrier électronique, à l’aide de l’option technologique que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus approfondie.
+
+### <a name="report-a-message-as-clean-in-explorer"></a>Signaler un message comme propre dans l’Explorateur
+
+Vous pouvez utiliser l’option Signaler **propre** dans l’Explorateur pour signaler un message comme faux positif. 
+
+1. Dans le portail Microsoft 365 Defender,  allez dans l’Explorateur de collaboration & courrier électronique, puis, dans la liste de listes listes, vérifiez que le hameçonnage \> est sélectionné.  
+
+2. Vérifiez que vous êtes  sous l’onglet Courrier électronique, puis, dans la liste des messages signalés, sélectionnez celui que vous souhaitez signaler comme propre. 
+
+3. Cliquez **sur Actions** pour développer la liste des options.
+
+4. Faites défiler la liste des options pour aller à la **section** Démarrer une nouvelle soumission, puis sélectionnez **Rapport propre**. Un volant s’affiche.
+
+   > [!div class="mx-imgBorder"]
+   > ![Option Signaler propre dans l’Explorateur.](../../media/report-clean-option-explorer.png) 
+
+5. Basculez le curseur sur **Sur**. Dans la liste de listes, spécifiez le nombre de jours pendant combien de jours vous souhaitez que le message soit supprimé, ajoutez une note si nécessaire, puis sélectionnez **Envoyer.** 
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Afficher l’URL de hameçonnage et cliquer sur les données de verdict
 

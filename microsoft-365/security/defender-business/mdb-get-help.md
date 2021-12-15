@@ -16,17 +16,19 @@ search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: Découvrez comment obtenir de l’aide ou contacter le support technique dans Microsoft Defender Pour Entreprises (prévisualisation)
 ms.date: 12/10/2021
-ms.openlocfilehash: 2e9f3549b2bc0c2c4087a8a5a7407d4420447368
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0a49dcb9f94491b189fda46947643793007c75e9
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422062"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507265"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business-preview"></a>Obtenir de l’aide et du support pour Microsoft Defender pour les entreprises (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 ## <a name="get-help-and-support"></a>Obtenir de l’aide et de l’assistance
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 75a343e34fb7ca16bab90f4c10155dca96fe9d16
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421173"
+ms.locfileid: "61426398"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -45,7 +45,7 @@ Ou
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Paramètres de point de terminaison DLP Windows 10/11 et macOS
 
-|Setting |Windows 10, versions 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
+|Setting |Windows 10, 1809 et ultérieures, Windows 11  |macOS Catalina 10.15 ou version ultérieure (préversion)  |Notes  |
 |---------|---------|---------|---------|
 |Exclusions de chemin d’accès de fichier     |Pris en charge         |Pris en charge         |macOS inclut une liste recommandée d'exclusions activée par défaut          |
 |Applications non autorisées     |Pris en charge         |Pris en charge         |         |
@@ -53,7 +53,7 @@ Ou
 |Restrictions de navigateur et de domaine aux éléments sensibles      |Pris en charge         |Pris en charge         |         |
 |Paramètres supplémentaires pour Endpoint DLP     |Pris en charge         |Pris en charge         |Seules les justifications commerciales par défaut sont prises en charge pour les appareils macOS         |
 |Toujours auditer l’activité des fichiers pour les appareils     |Pris en charge         |Pris en charge         |         |
-|Fichier de mise en quarantaine automatique des applications non autorisées | Pris en charge | Non pris en charge| |
+|Mise en quarantaine automatique des fichiers provenant d'applications non autorisées | Pris en charge | Non pris en charge| |
 |Classification avancée | Pris en charge | Non pris en charge| |
 |Justification métier dans les conseils de stratégie | Pris en charge | Pris en charge| |
 
@@ -142,6 +142,7 @@ Tout comme sur les appareils Windows, vous pourrez désormais empêcher les appl
 > Notez que les applications multiplateformes doivent être saisies avec leurs chemins uniques respectifs au système d'exploitation sur lequel elles s'exécutent.
 
 Pour trouver le chemin complet des applications Mac :
+
 1. Sur l'appareil macOS, ouvrez **Activity Monitor**. Recherchez et double-cliquez sur le processus que vous souhaitez restreindre
 
 2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
@@ -172,7 +173,15 @@ Empêchez les fichiers sensibles, qui correspondent à vos stratégies, d’êtr
 
 #### <a name="unallowed-browsers"></a>Navigateurs non autorisés
 
-Vous ajoutez des navigateurs, identifiés par leurs noms de exécutables, qui ne peuvent pas accéder à des fichiers qui remplissent les conditions d’une stratégie DLP appliquée dans laquelle la restriction de chargement vers les services Cloud est définie sur bloquer ou annuler le blocage. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
+Pour les appareils Windows vous ajoutez des navigateurs, identifiés par leur nom exécutable, qui ne pourront pas accéder aux fichiers qui correspondent aux conditions d’une stratégie DLP appliquée dans laquelle la restriction de téléchargement vers les services cloud est définie pour bloquer ou bloquer le remplacement. Lorsque ces navigateurs ne peuvent pas accéder à un fichier, les utilisateurs finaux voient une notification toast leur demandant d’ouvrir le fichier via Microsoft Edge.
+
+Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fichier. Pour trouver le chemin complet des applications Mac :
+
+1. Sur l'appareil macOS, ouvrez **Activity Monitor**. Recherchez et double-cliquez sur le processus que vous souhaitez restreindre
+
+2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
+  
+3. Le nom de l'application est situé à la fin du chemin complet.
 
 #### <a name="service-domains"></a>Domaines de service
 
@@ -223,7 +232,7 @@ L’activité des fichiers sera toujours auditée pour les appareils intégrés,
 
 Avec les points de terminaison DLP et le navigateur Chromium Edge, vous pouvez limiter le partage involontaire des éléments sensibles aux applications et services Cloud non autorisés. Le Chromium Edge comprend les conditions dans lesquelles un élément est limité par une stratégie DLP de point de terminaison et applique les restrictions d’accès.
 
-Lorsque vous utilisez le point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et dans le navigateur Microsoft Edge, les navigateurs non autorisé que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés vers Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
+Lorsque vous utilisez le point de terminaison DLP comme emplacement dans une stratégie DLP correctement configurée et dans le navigateur Microsoft Edge, les navigateurs non autorisé que vous avez définis dans ces paramètres ne pourront pas accéder aux éléments sensibles qui correspondent à vos contrôles de stratégie DLP. Au lieu de cela, les utilisateurs sont redirigés vers des Microsoft Edge qui, avec leur compréhension des restrictions DLP imposées, peuvent bloquer ou restreindre les activités lorsque les conditions de la stratégie DLP sont remplies.
 
 Pour utiliser cette restriction, vous devrez configurer trois éléments importants :
 

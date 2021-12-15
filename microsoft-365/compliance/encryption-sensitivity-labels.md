@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 024759362cd2e329655935c784a77a1789603f37
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239959"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426338"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -310,7 +310,7 @@ Les documents Office non chiffrés joints à un e-mail héritent automatiquement
 
 Dans Word, PowerPoint et Excel, lorsqu’un utilisateur applique une étiquette de confidentialité qui lui permet d’attribuer des autorisations à un document, il est invité à préciser son choix en matière d'utilisateurs et d'autorisations au moment où le chiffrement est appliqué.
 
-Par exemple, avec un client d’étiquetage unifié Azure Information Protection, les utilisateurs peuvent :
+Par exemple, avec le client d’étiquetage unifié Azure Information Protection, sauf si le [co-auteur](sensitivity-labels-coauthoring.md)est activé, les utilisateurs peuvent :
 
 - Sélectionner un niveau d’autorisation, tel que visionneuse (qui attribue l’autorisation Afficher uniquement) ou co-auteur (qui affecte les autorisations afficher, modifier, copier et imprimer).
 - Sélectionner les utilisateurs, les groupes ou les organisations. Cela peut inclure des personnes à l’intérieur ou à l’extérieur de votre organisation.
@@ -318,11 +318,14 @@ Par exemple, avec un client d’étiquetage unifié Azure Information Protection
 
 ![Options de protection pour l’utilisateur avec les autorisations personnalisées.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de dialogue s’ils sélectionnent ce qui suit :
+Pour l’étiquetage intégré et pour le client d’étiquetage unifié Azure Information Protection lorsque le [co-auteur](sensitivity-labels-coauthoring.md)est activé, les utilisateurs voient la même boîte de dialogue que s’ils sélectionnaient les informations suivantes :
 
 - Windows : onglet **Fichier** > **Informations** > **Protéger le document** > **Restreindre l'accès** > **Accès restreint**
 
 - macOS : onglet **Révision** > **Protection** > **Autorisations** > **Accès restreint**
+
+> [!TIP]
+> Si les utilisateurs étaient familiarisés avec la configuration des autorisations personnalisées avec le client d’étiquetage unifié Azure Information Protection avant que la [co-création](sensitivity-labels-coauthoring.md)ne soit activée, il peut vous être utile de passer en revue le mappage des niveaux d’autorisation aux droits d’utilisation individuels : droits inclus dans les [niveaux](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)d’autorisation.
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Exemples de configurations pour les paramètres de chiffrement
 

@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ff1a50a0ba04880680e663d1f960d3f10582d628
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423466"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507355"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Didacticiels et simulations dans Microsoft Defender pour Entreprise (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 Si vous avez terminé la configuration de Microsoft Defender Pour Entreprises (prévisualisation), vous vous demandez peut-être où commencer pour en savoir plus sur le fonctionnement de Defender entreprise (prévisualisation). Cet article décrit les scénarios d’aperçu à essayer, ainsi que plusieurs didacticiels et simulations disponibles pour Defender for Business (prévisualisation). Ces ressources sont conçues pour vous aider à voir comment Defender entreprise (prévisualisation) peut fonctionner pour votre entreprise.
 
@@ -74,7 +76,7 @@ Chaque didacticiel inclut un document pas à pas qui explique le scénario, son 
    - **Didacticiel Live Response**
    - **Gestion & des menaces et des vulnérabilités (scénarios principaux)**
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-manage-devices.md)
 

@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5370a820a912b382ff23a8533d64ae88b182cb04
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421845"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61506700"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Commencer à utiliser Microsoft Defender pour les entreprises (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 Une fois votre processus d’installation et de configuration terminé pour votre entreprise, la meilleure façon de commencer à utiliser Microsoft Defender pour Les entreprises (prévisualisation) consiste à visiter votre portail Microsoft 365 Defender ( ), et à vous inscrire avec votre compte d’utilisateur pour [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365. 
 
@@ -68,7 +70,7 @@ Consultez le module d’apprentissage, Détecter et répondre aux problèmes [de
 > [!NOTE]
 > Bien que le module d’apprentissage[(](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)Détecter et répondre aux problèmes de sécurité ) soit en fait pour Microsoft Defender pour Endpoint, les concepts de base et le flux global sont similaires à ce que vous verrez dans Defender pour Entreprise (prévisualisation).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez une vue d’ensemble de Defender for Business (prévisualisation), essayez une ou plusieurs des tâches suivantes :
 

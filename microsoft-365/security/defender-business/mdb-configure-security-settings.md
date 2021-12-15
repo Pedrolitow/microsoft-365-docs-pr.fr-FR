@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8f36d64b14dccdb445f1c4115811f571b55e49b8
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 18b259278f7f6053cdd7629eea114c3f61c82bb0
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423250"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508346"
 ---
 # <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises (prévisualisation), l’étape suivante consiste à afficher et, si nécessaire, à modifier vos paramètres et stratégies de sécurité. 
 
@@ -60,7 +62,7 @@ Pour afficher vos paramètres et stratégies de sécurité, utilisez l’une des
 | Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ) | 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ), and sign in. <br/><br/>2. Dans le volet de navigation, choisissez **Configuration de l’appareil.** Les stratégies sont organisées par système d’exploitation et type de stratégie.<br/><br/>3. Sélectionnez un onglet de système d’exploitation (par **exemple, Windows clients).**<br/><br/>4. Développez une catégorie (telle que la protection nouvelle génération ou le **pare-feu)** pour afficher votre liste de stratégies.<br/><br/>5. Sélectionnez une stratégie pour afficher plus de détails sur la stratégie. Pour apporter des modifications ou en savoir plus sur les paramètres de stratégie, consultez les articles suivants : <br/>- [Afficher ou modifier des stratégies d’appareil](mdb-view-edit-policies.md)<br/>- [Comprendre les paramètres de configuration nouvelle génération](mdb-next-gen-configuration-settings.md)<br/>- [Paramètres du pare-feu](mdb-firewall.md)  |
 | Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. Vous êtes maintenant dans le centre d Microsoft Endpoint Manager’administration.<br/><br/>2. Sélectionnez **Sécurité des points de terminaison.**<br/><br/>3. Sélectionnez une catégorie, telle **qu’Antivirus,** **Pare-feu,** Détection et réponse des points de terminaison ou Réduction de la **surface** d’attaque pour afficher les stratégies de cette catégorie. <br/><br/>Pour obtenir de l’aide sur la gestion de vos paramètres de sécurité dans Microsoft Endpoint Manager, commencez par gérer la sécurité des points de terminaison [dans Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Procédez à une ou plusieurs des tâches suivantes :
 

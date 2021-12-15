@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,20 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421101"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508274"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Créer une stratégie dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article inclut des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Microsoft Defender pour Entreprises (prévisualisation).
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> 
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
+
 
 Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies par défaut qui utilisent les paramètres recommandés pour protéger les appareils de votre entreprise dès le premier jour. Par exemple, vous avez des  stratégies de protection nouvelle génération et des stratégies de **pare-feu** intégrées à l’aide des paramètres de sécurité recommandés. Mais vous n’êtes pas limité à vos stratégies par défaut. Vous pouvez également créer de nouvelles stratégies, comme décrit dans cet article.
 
@@ -65,7 +68,7 @@ Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies pa
    - A apporter les modifications nécessaires en sélectionnant **Modifier.**
    - Lorsque vous êtes prêt à continuer, choisissez **Créer une stratégie.**
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Choisissez une ou plusieurs des tâches suivantes :
 

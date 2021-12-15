@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: Admin
   ms.topic: overview
-  ms.date: 12/10/2021
+  ms.date: 12/13/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -17,14 +17,14 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 74bfe8abd006b07f634285182fb1620213cc904f
-  ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+  ms.openlocfilehash: c732382adf1db8add348f7e4922edd3506bbd45b
+  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/13/2021
-  ms.locfileid: "61423502"
+  ms.lasthandoff: 12/14/2021
+  ms.locfileid: "61507445"
 title: 'Microsoft Defender Pour Entreprises (prévisualisation) : questions et réponses fréquemment posées'
-summary: ''
+summary: "Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités. \n\nCertaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici.\n\nUtilisez cet article pour obtenir des réponses aux questions que vous pourriez avoir sur Defender entreprise (prévisualisation).\n"
 sections:
 - name: Général
   questions:
