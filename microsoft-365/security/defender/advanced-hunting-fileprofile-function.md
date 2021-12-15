@@ -18,42 +18,42 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c7ad9678f797fd3e8df34b40fe39fea5672e13d5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2cd8c91717af8390160bf45a625ae3a3044ee387
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704476"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531482"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes `FileProfile()` aux fichiers trouvés par la requête. [](advanced-hunting-overview.md)
+La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes aux `FileProfile()` fichiers trouvés par la requête. [](advanced-hunting-overview.md)
 
 | Colonne | Type de données | Description |
 |------------|---------------|-------------|
-| `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | string | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
-| `MD5` | chaîne | Hachage MD5 du fichier à l’application de l’action enregistrée |
-| `FileSize` | int | Taille du fichier en octets |
-| `GlobalPrevalence` | int | Nombre d’instances de l’entité observées globalement par Microsoft |
-| `GlobalFirstSeen` | DateHeure | Date et heure à laquelle l’entité a été observée pour la première fois par Microsoft globalement |
-| `GlobalLastSeen` | DateHeure | Date et heure de la dernière observation de l’entité par Microsoft au niveau global |
-| `Signer` | chaîne | Informations sur le signataire du fichier |
-| `Issuer` | chaîne | Informations sur l’autorité de certification émettrice |
-| `SignerHash` | chaîne | Valeur de hachage unique identifiant le signataire |
-| `IsCertificateValid` | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
-| `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
-| `SignatureState` | chaîne | État de la signature du fichier : SignedValid - le fichier est signé avec une signature valide, SignedInvalid - le fichier est signé mais le certificat n’est pas valide, Non signé - le fichier n’est pas signé, Inconnu - les informations sur le fichier ne peuvent pas être récupérées
-| `IsExecutable` | valeur booléenne | Si le fichier est un fichier Exécutable portable (PE) |
-| `ThreatName` | chaîne | Nom de détection des programmes malveillants ou autres menaces détectés |
-| `Publisher` | chaîne | Nom de l’organisation qui a publié le fichier |
-| `SoftwareName` | string | Nom du produit logiciel |
+| `SHA1` | `string` | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
+| `SHA256` | `string` | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
+| `MD5` | `string` | Hachage MD5 du fichier à l’application de l’action enregistrée |
+| `FileSize` | `int` | Taille du fichier en octets |
+| `GlobalPrevalence` | `int` | Nombre d’instances de l’entité observées globalement par Microsoft |
+| `GlobalFirstSeen` | `datetime` | Date et heure à laquelle l’entité a été observée pour la première fois par Microsoft globalement |
+| `GlobalLastSeen` | `datetime` | Date et heure de la dernière observation de l’entité par Microsoft au niveau global |
+| `Signer` | `string` | Informations sur le signataire du fichier |
+| `Issuer` | `string` | Informations sur l’autorité de certification émettrice |
+| `SignerHash` | `string` | Valeur de hachage unique identifiant le signataire |
+| `IsCertificateValid` | `boolean` | Si le certificat utilisé pour signer le fichier est valide |
+| `IsRootSignerMicrosoft` | `boolean` | Indique si le signataire du certificat racine est Microsoft |
+| `SignatureState` | `string` | État de la signature du fichier : SignedValid - le fichier est signé avec une signature valide, SignedInvalid - le fichier est signé mais le certificat n’est pas valide, Non signé - le fichier n’est pas signé, Inconnu - les informations sur le fichier ne peuvent pas être récupérées
+| `IsExecutable` | `boolean` | Si le fichier est un fichier Exécutable portable (PE) |
+| `ThreatName` | `string` | Nom de détection des programmes malveillants ou autres menaces détectés |
+| `Publisher` | `string` | Nom de l’organisation qui a publié le fichier |
+| `SoftwareName` | `string` | Nom du produit logiciel |
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -82,7 +82,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers de faible prévalence
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Enrichir les 500 premiers enregistrements et lister les fichiers à faible prévalence
 
 ```kusto
 DeviceFileEvents
@@ -92,7 +92,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

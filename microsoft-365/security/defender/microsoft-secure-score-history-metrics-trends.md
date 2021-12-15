@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e60ab6c42a48a0eb69a3a643b6c0a502b56f93b3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423818"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530934"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
@@ -66,7 +66,7 @@ Il existe deux endroits pour comparer votre score aux organisations qui sont sim
 
 Le graphique à barres de comparaison est **l’onglet Vue** d’ensemble. Pointez sur le graphique pour afficher le score et l’opportunité de score. Les données de comparaison sont rendues anonymes, donc nous ne savons pas exactement quels autres clients sont dans la combinaison.
 
-![Graphique à barres des scores d’une organisation similaire.](../../media/secure-score/secure-score-comparison-bar.png)
+![Graphique à barres des scores d’une organisation similaire.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
 - **Organisations telles** que la vôtre : note moyenne d’autres locataires (à condition que nous 5 locataires ou plus à comparer) éligibles avec les critères suivants :
     1. Même secteur d’activité

@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 551f1f73626fe3820e347917b1d06ab0df3a6117
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ac8f2102424e908093484829eacb34b918326ea8
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373259"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531566"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -53,7 +53,7 @@ Pour faciliter les mises à niveau lorsque Microsoft Endpoint Configuration Mana
 2. Supprimez System Center Endpoint Protection client s’il est installé.
 3. Téléchargez et installez (Windows Server 2012 [R2)](configure-server-endpoints.md#prerequisites) si nécessaire.
 4. Installez Microsoft Defender pour le point de terminaison.
-5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com).
+5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Microsoft 365 Defender](https://security.microsoft.com).
 
 Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir Configurer les points de terminaison [du serveur.](configure-server-endpoints.md)
 
@@ -96,7 +96,7 @@ EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\W
    1. Supprimez la configuration de l’espace de travail MMA pour Microsoft Defender pour le point de terminaison. Voir [Supprimer un espace de travail à l’aide de PowerShell.](/azure/azure-monitor/agents/agent-manage) Cette étape est facultative . le capteur de PEPT s’arrête une fois que le nouveau capteur devient actif (notez que cela peut prendre plusieurs heures).
    2. Installez les [conditions préalables le](configure-server-endpoints.md#prerequisites) cas échéant.
    3. Installez Microsoft Defender for Endpoint pour Windows Server 2012 package R2 et 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)
-   4. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com).
+   4. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Microsoft 365 Defender](https://security.microsoft.com).
 6. Appliquer les mises à jour.
 7. Supprimez votre logiciel antivirus non Microsoft à l’aide de la console antivirus non Microsoft ou en utilisant Microsoft Endpoint Configuration Manager le cas échéant. Veillez à supprimer la configuration du mode passif.*
 
@@ -130,7 +130,7 @@ Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protectio
 
 1. Mettez entièrement à jour l’ordinateur, Antivirus Microsoft Defender (Windows Server 2016).
 2. Installez microsoft Defender pour le point de terminaison pour Windows Server 2012 package R2 & 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)
-3. Appliquez le script d’intégration, approprié à votre environnement, téléchargé à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
+3. Appliquez le script d’intégration, approprié à votre environnement, téléchargé à partir [de Microsoft 365 Defender](https://security.microsoft.com). 
 4. Supprimez la solution de protection de point de terminaison ou de protection évolutive des points de terminaison Non-Microsoft et supprimez le mode passif.*
 5. Appliquer les mises à jour.
 6. Créez et appliquez des stratégies à l’aide d’une stratégie de groupe, de PowerShell ou d’une solution de gestion tierce.

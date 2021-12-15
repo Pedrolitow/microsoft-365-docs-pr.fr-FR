@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: 891c579bd1fe2f7b9d4596ef1ef0415734f46ce5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 2d79a1e7ea24782102c821100493b3b2eb8349ed
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370223"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530404"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -45,7 +45,7 @@ Cet article explique comment réinitialiser les mots de passe pour vous-même et
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] ([Vue d’ensemble du Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md).
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -107,7 +107,7 @@ Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs.
 
 2. Sélectionnez l’option en plus **du nom complet** pour sélectionner tous les personnes de votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
 
-3. Sélectionnez **Réinitialiser le mot de passe.**
+3. Cliquez sur **Réinitialiser le mot de passe**.
 
 4. Suivez les instructions de la **page** Réinitialiser le mot de passe, puis sélectionnez **Réinitialiser.**  Si vous avez choisi de générer automatiquement les mots de passe, les nouveaux mots de passe temporaires s’affichent.
 

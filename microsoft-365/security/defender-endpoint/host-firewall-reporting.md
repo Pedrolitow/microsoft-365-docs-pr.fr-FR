@@ -15,20 +15,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: e8124e9f2445ad2bf2b9fd6f5c56869d5feaaa07
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b5aaad7363b42e18a0ca21e4d56d118218cec1a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164465"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531797"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si vous êtes un administrateur, vous pouvez désormais héberger des rapports de pare-feu sur [le portail Microsoft 365 Defender.](https://security.microsoft.com) Cette fonctionnalité vous permet d’afficher les rapports de pare-feu Windows 10, Windows 11, Windows Server 2019 et Windows Server 2022 à partir d’un emplacement centralisé.
 
@@ -70,7 +70,7 @@ Ces rapports sont également accessibles en accédant à la section Périphériq
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>De « Ordinateurs avec une connexion bloquée » à l’appareil
 
-Les cartes supportent les objets interactifs. Vous pouvez consulter l’activité d’un appareil en cliquant sur le nom de l’appareil, qui sera lancé dans un nouvel onglet, et vous diriger directement vers l’onglet Chronologie de <https://securitycenter.microsoft.com> l’appareil. 
+Les cartes supportent les objets interactifs. Vous pouvez vous lancer dans l’activité d’un appareil en cliquant sur le nom de l’appareil,  ce qui lance le portail Microsoft 365 Defender dans un nouvel onglet et vous dirige directement vers l’onglet Chronologie de l’appareil.
 
 > [!div class="mx-imgBorder"]
 > ![Ordinateurs avec une connexion bloquée.](\images\firewall-reporting-blocked-connection.png)

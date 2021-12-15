@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 362414da07fbc71520c390c8dab45fc85b7a0872
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 848002d94d36d00e90942df5424b111f6630288f
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426446"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530522"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -36,7 +36,7 @@ ms.locfileid: "61426446"
 
 [Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -127,7 +127,7 @@ Les procédures suivantes pour l’activation des règles de la asr. incluent de
 
 ## <a name="mem"></a>MEM
 
-Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer des règles asr personnalisées. La procédure suivante utilise la règle Bloquer l’abus des pilotes [signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
+Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer des règles asr personnalisées. La procédure suivante utilise la règle Bloquer l’abus des pilotes [signés vulnérables exploités](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
 
 1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez sur **Appareils,** sélectionnez **Profils de configuration,** puis cliquez **sur Créer un profil.**
 
@@ -158,7 +158,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
    - Dans **Nom,** tapez un nom pour la règle.
    - Dans **Description,** tapez une brève description.
-   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
+   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
    - Dans **type de données,** sélectionnez **Chaîne**.
    - Dans **Value**, tapez ou collez la valeur GUID, le signe et la valeur State sans \= espaces (_GUID=StateValue_). Où :
      
@@ -170,7 +170,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Configuration OMA URI MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Sélectionnez **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** sélectionnez **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l’une des opérations suivantes :
+6. Sélectionnez **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** sélectionnez **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
 
    - Sélectionnez **Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis sélectionnez **Suivant**.
    - Ou sélectionnez **Suivant**
@@ -214,7 +214,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) (CSP) pour activer et définir individuellement le mode pour chaque règle.
 
-Voici un exemple de référence, à l’aide de valeurs GUID pour les règles de réduction [de la surface d’attaque.](attack-surface-reduction-rules.md)
+Voici un exemple de référence, à l’aide des valeurs GUID pour la référence des règles de [réduction de la surface d’attaque.](attack-surface-reduction-rules-reference.md)
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
@@ -290,7 +290,7 @@ Exemple :
 
 1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur.**
 
-2. Tapez l’une des cmdlets suivantes. (Reportez-vous aux règles de réduction [de la surface](attack-surface-reduction-rules.md) d’attaque pour plus d’informations, telles que l’ID de règle.)
+2. Tapez l’une des cmdlets suivantes. (Reportez-vous à la référence des règles de réduction de la [surface](attack-surface-reduction-rules-reference.md) d’attaque pour plus d’informations, telles que l’ID de règle.)
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -348,6 +348,6 @@ Exemple :
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
+- [Référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 - [Évaluer la réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
 - [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

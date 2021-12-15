@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9348e0de384850a24a9173c46ab331466f26f912
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 73d814c36db44ad22d0a998c6539472095feb7e3
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163469"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530225"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,6 +51,7 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 >
 > - Protection contre la perte de données
 > - Réponse en direct
+> - Gestion de la sécurité pour Microsoft Defender pour le point de terminaison
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -58,18 +59,13 @@ Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalité
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender for Endpoint sur Linux.
 
-> [!NOTE]
-> Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
->
-> - Protection contre la perte de données
-> - Réponse en direct
 
 > [!NOTE]
 > Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
 >
 > - Protection contre la perte de données
 > - Réponse en direct
-> - SIEM
+> - Gestion de la sécurité pour Microsoft Defender pour le point de terminaison
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 

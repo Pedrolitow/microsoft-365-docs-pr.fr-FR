@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 31ef425bf82f40d9720eec0a65b3278e63186ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172574"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531896"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour utiliser le module **PowerShell MSCommerce,** vous devez :
 
@@ -100,14 +100,18 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (autonome) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project (plan 1) | CFQ7TTC0KXND |
-| Project (plan 3) | CFQ7TTC0KXNC |
-| Visio (plan 1) | CFQ7TTC0KXN9 |
-| Visio (plan 2) | CFQ7TTC0KXN8 |
-| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Project (plan 1)* | CFQ7TTC0HDB1 |
+| Project (plan 3)* | CFQ7TTC0HDB0 |
+| Visio (plan 1)* | CFQ7TTC0HD33 |
+| Visio (plan 2)* | CFQ7TTC0HD32 |
+| Windows 365 Entreprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business avec Windows Hybrid Benefit | CFQ7TTC0HX99 |
+
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’état de AllowSelfServicePurchase
+
+>[!NOTE] 
+> Ces ID ont changé. Si vous avez précédemment bloqué les produits utilisant les anciens ID, ils sont automatiquement bloqués à l’aide des nouveaux ID. Aucun travail supplémentaire n’est requis.
 
 Une fois que vous avez vu la liste des produits disponibles pour l’achat en libre-service, vous pouvez afficher ou modifier le paramètre d’un produit spécifique.
 

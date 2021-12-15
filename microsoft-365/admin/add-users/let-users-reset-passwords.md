@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie pour permettre aux utilisateurs de réinitialiser leur mot de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 7a284e4b24fb21ff100e1be99998103026e320ca
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 486fd0b22c93d233897963a8295bf2048b01aa6c
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370259"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530210"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
@@ -57,7 +57,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 - **Si vous utilisez un active directory** local, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette offre, mais elle **nécessite un abonnement** payant pour Azure AD Premium .
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] ([Vue d’ensemble de la Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md)
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 

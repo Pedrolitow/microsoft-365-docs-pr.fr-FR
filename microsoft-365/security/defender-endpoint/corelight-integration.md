@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372515"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531701"
 ---
 # <a name="enable-corelight-data-integration"></a>Permettre l'intégration des données Corelight
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -66,10 +66,12 @@ Pour activer l’intégration de Corelight, vous devez suivre les étapes suivan
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Étape 3 : Configurer votre appliance Corelight pour envoyer des données à Microsoft 365 Defender
 
-**S’applique** à : Corelight Sensor software v23.2 and later
-
 > [!NOTE]
-> Pour activer une version précédente qui prend en charge l’envoi de données, vous devez d’abord exécuter `corelight-client configuration update --enable.adfiot 1` :
+>  L’intégration sera publique dans le logiciel corelight Sensor v24 et ultérieur. 
+
+Pour afficher un aperçu dans v23 ou v22.1, vous devez exécuter pour activer la `corelight-client configuration update --enable.adfiot 1` section de configuration dans l’interface utilisateur graphique.
+
+En outre, la validation de l’interface graphique graphique nécessite qu’un broker soit configuré dans la section de configuration sur toutes les version v23.  Le broker que vous fournissez est obligatoire, mais ne sera pas réellement utilisé. Entrez `127.0.0.1:1234` le champ broker de contrôle _d’accès_ pour garantir la validation avant de suivre les étapes ci-dessous pour activer l’envoi de données Microsoft 365 Defender.
 
 > [!NOTE]
 > Vous aurez besoin d’une connectivité Internet pour que votre capteur atteigne les services cloud Defender et Corelight pour que la solution fonctionne.

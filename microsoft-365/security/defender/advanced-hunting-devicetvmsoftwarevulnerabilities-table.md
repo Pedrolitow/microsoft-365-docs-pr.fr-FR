@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121694"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531522"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -46,18 +46,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificateur unique de la machine dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
-| `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
-| `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
-| `SoftwareVendor` | string | Nom de l’éditeur de logiciels |
-| `SoftwareName` | string | Nom du produit logiciel |
-| `SoftwareVersion` | string | Numéro de version du produit logiciel |
-| `CveId` | string | Identificateur unique affecté à la vulnérabilité de sécurité dans le système Common Vulnerabilities and Exposures (CVE) |
-| `VulnerabilitySeverityLevel` | string | Niveau de gravité affecté à la vulnérabilité de sécurité sur la base du score CVSS et des facteurs dynamiques influencés par le paysage des menaces |
-| `RecommendedSecurityUpdate` | string | Nom ou description de la mise à jour de sécurité fournie par l’éditeur de logiciels pour résoudre la vulnérabilité |
-| `RecommendedSecurityUpdateId` | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants |
+| `DeviceId` | `string` | Identificateur unique de la machine dans le service |
+| `DeviceName` | `string` | Nom de domaine complet (FQDN) de la machine |
+| `OSPlatform` | `string` | Plateforme du système d’exploitation client s’exécutant sur la machine. Indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
+| `OSVersion` | `string` | Version du système d’exploitation s’exécutant sur la machine |
+| `OSArchitecture` | `string` | Architecture du système d’exploitation s’exécutant sur la machine |
+| `SoftwareVendor` | `string` | Nom de l’éditeur de logiciels |
+| `SoftwareName` | `string` | Nom du produit logiciel |
+| `SoftwareVersion` | `string` | Numéro de version du produit logiciel |
+| `CveId` | `string` | Identificateur unique affecté à la vulnérabilité de sécurité dans le système Common Vulnerabilities and Exposures (CVE) |
+| `VulnerabilitySeverityLevel` | `string` | Niveau de gravité affecté à la vulnérabilité de sécurité sur la base du score CVSS et des facteurs dynamiques influencés par le paysage des menaces |
+| `RecommendedSecurityUpdate` | `string` | Nom ou description de la mise à jour de sécurité fournie par l’éditeur de logiciels pour résoudre la vulnérabilité |
+| `RecommendedSecurityUpdateId` | `string` | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants |
 
 
 

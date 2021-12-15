@@ -18,72 +18,70 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a9163924cb03665ec75f792b37e3388db687d80d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3aa5270dc38f2cc7b51894dfd0e035786eeb4560
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665506"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530834"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
-
-
 
 Le `DeviceImageLoadEvents` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les événements de chargement DLL. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par un tableau, utilisez la référence de schéma intégrée disponible dans `ActionType` Defender for Cloud.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `DeviceId` | string | Identificateur unique de la machine dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
-| `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
-| `FileSize` | long | Taille du fichier en octets |
-| `InitiatingProcessAccountDomain` | chaîne | Domaine du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountName` | chaîne | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | chaîne | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessAccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
-| `InitiatingProcessAccountObjectId` | chaîne | Azure AD’objet du compte d’utilisateur qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessIntegrityLevel` | chaîne | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple, si elles ont été lancées à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
-| `InitiatingProcessTokenElevation` | chaîne | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
-| `InitiatingProcessSHA1` | chaîne | SHA-1 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessSHA256` | chaîne | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessFileName` | chaîne | Nom du processus à l’origine de l’événement |
-| `InitiatingProcessFileSize` | long | Taille du fichier qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessVersionInfoCompanyName` | chaîne | Nom de la société à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoProductName` | chaîne | Nom du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoProductVersion`| chaîne | Version du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoInternalFileName` | chaîne | Nom de fichier interne à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoOriginalFileName` | chaîne | Nom de fichier d’origine à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoFileDescription` | chaîne | Description à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |
-| `InitiatingProcessCommandLine` | chaîne | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
-| `InitiatingProcessCreationTime` | DateHeure | Date et heure de début du processus à l’origine de l’événement |
-| `InitiatingProcessFolderPath` | chaîne | Dossier contenant le processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessParentId` | int | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
-| `InitiatingProcessParentFileName` | chaîne | Nom du processus parent qui a généré le processus responsable de l’événement |
-| `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
-| `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `AppGuardContainerId` | chaîne | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `Timestamp` | `datetime` | Date et heure d’enregistrement de l’événement |
+| `DeviceId` | `string` | Identificateur unique de la machine dans le service |
+| `DeviceName` | `string` | Nom de domaine complet (FQDN) de la machine |
+| `ActionType` | `string` | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `FileName` | `string` | Nom du fichier auquel l’action enregistrée a été appliquée |
+| `FolderPath` | `string` | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
+| `SHA1` | `string` | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
+| `SHA256` | `string` | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
+| `MD5` | `string` | Hachage MD5 du fichier à l’application de l’action enregistrée |
+| `FileSize` | `long` | Taille du fichier en octets |
+| `InitiatingProcessAccountDomain` | `string` | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountName` | `string` | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | `string` | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | `string` | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | `string` | Azure AD’objet du compte d’utilisateur qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessIntegrityLevel` | `string` | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple, si elles ont été lancées à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| `InitiatingProcessTokenElevation` | `string` | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
+| `InitiatingProcessSHA1` | `string` | SHA-1 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessSHA256` | `string` | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
+| `InitiatingProcessMD5` | `string` | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessFileName` | `string` | Nom du processus à l’origine de l’événement |
+| `InitiatingProcessFileSize` | `long` | Taille du fichier qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessVersionInfoCompanyName` | `string` | Nom de la société à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoProductName` | `string` | Nom du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoProductVersion`| `string` | Version du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoInternalFileName` | `string` | Nom de fichier interne à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoOriginalFileName` | `string` | Nom de fichier d’origine à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoFileDescription` | `string` | Description à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessId` | `int` | ID de processus (PID) du processus à l’origine de l’événement |
+| `InitiatingProcessCommandLine` | `string` | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
+| `InitiatingProcessCreationTime` | `datetime` | Date et heure de début du processus à l’origine de l’événement |
+| `InitiatingProcessFolderPath` | `string` | Dossier contenant le processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessParentId` | `int` | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
+| `InitiatingProcessParentFileName` | `string` | Nom du processus parent qui a généré le processus responsable de l’événement |
+| `InitiatingProcessParentCreationTime` | `datetime` | Date et heure de début du parent du processus responsable de l’événement |
+| `ReportId` | `long` | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
+| `AppGuardContainerId` | `string` | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

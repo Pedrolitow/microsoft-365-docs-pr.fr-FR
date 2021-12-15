@@ -17,12 +17,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 5fbf9c52cdef6541bc66fd2340748aa0d5b7e15d
-  ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+  ms.openlocfilehash: f413eccdf669219d4f8f39ceec38ab6118d8c509
+  ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/19/2021
-  ms.locfileid: "61110990"
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "61530438"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -121,37 +121,37 @@ sections:
       couvrant plusieurs piliers de la protection, tels que les Office, les informations d’identification, les scripts, le courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
 
-      * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+      * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [Bloquer le contenu exécutable du client de messagerie et de la messagerie web](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
+      * [Bloquer le contenu exécutable du client de messagerie et de la messagerie web](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
 
-      * [Empêcher toutes les applications Office de créer des processus enfants](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
+      * [Empêcher toutes les applications Office de créer des processus enfants](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
 
-      * [Empêcher Office applications de créer du contenu exécutable](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
+      * [Empêcher Office applications de créer du contenu exécutable](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
 
-      * [Empêcher Office applications d’injecter du code dans d’autres processus](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [Empêcher Office applications d’injecter du code dans d’autres processus](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [Bloquer l’exécution de scripts potentiellement obscurcis](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
+      * [Bloquer l’exécution de scripts potentiellement obscurcis](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [Bloquer les appels d’API Win32 à partir Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
+      * [Bloquer les appels d’API Win32 à partir Office macro](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
 
-      * [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
+      * [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
 
-      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) de sécurité locale (lsass.exe)
+      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) de sécurité locale (lsass.exe)
 
-      * [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [Empêcher Office applications de communication de créer des processus enfants](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
+      * [Empêcher Office applications de communication de créer des processus enfants](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
 
-      * [Empêcher Adobe Reader de créer des processus enfants](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
+      * [Empêcher Adobe Reader de créer des processus enfants](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
 
-      * [Bloquer la persistance via un abonnement à des événements WMI](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
+      * [Bloquer la persistance via un abonnement à des événements WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
   - question: >
       Quelles sont les bonnes recommandations pour la mise en place de la R ASR ?
     answer: >

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3487ced09cfd0bbd3a25f8e8124f84a05368d290
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035969"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530702"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -43,18 +43,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
-| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
-| `Timestamp` | DateHeure | Date et heure de génération de l’enregistrement |
-| `ConfigurationId` | string | Identificateur unique pour une configuration spécifique |
-| `ConfigurationCategory` | string | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité |
-| `ConfigurationSubcategory` | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, la chaîne décrit des fonctionnalités spécifiques. |
-| `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
-| `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
-| `IsApplicable` | Booléen | Indique si la configuration ou la stratégie s’applique à l’appareil |
-| `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
-| `IsExpectedUserImpact` | valeur booléenne | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
+| `DeviceId` | `string` | Identificateur unique de l’appareil dans le service |
+| `DeviceName` | `string` | Nom de domaine complet (FQDN) de l’appareil |
+| `OSPlatform` | `string` | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
+| `Timestamp` | `datetime` | Date et heure de génération de l’enregistrement |
+| `ConfigurationId` | `string` | Identificateur unique pour une configuration spécifique |
+| `ConfigurationCategory` | `string` | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité |
+| `ConfigurationSubcategory` | `string` | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, la chaîne décrit des fonctionnalités spécifiques. |
+| `ConfigurationImpact` | `string` | Impact nominal de la configuration sur la note de configuration globale (1-10) |
+| `IsCompliant` | `boolean` | Indique si la configuration ou la stratégie est correctement configurée. |
+| `IsApplicable` | `boolean` | Indique si la configuration ou la stratégie s’applique à l’appareil |
+| `Context` | `string` | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
+| `IsExpectedUserImpact` | `boolean` | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
 
 Vous pouvez essayer cette requête d’exemple pour retourner des informations sur les appareils avec des configurations antivirus non conformes, ainsi que les métadonnées de configuration pertinentes du `DeviceTvmSecureConfigurationAssessmentKB` tableau :
 

@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6386ea1e0cd25db1b13d763d618b4ced315b858b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9b4363b529ce9087e640c9bfaa32c8d21f410710
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168065"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531062"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Client Analyzer (MDECA) peut être utile lors du [](/microsoft-365/security/defender-endpoint/onboard-configure) diagnostic des problèmes d’état ou de fiabilité du capteur sur les appareils intégrés exécutant Windows, Linux ou macOS. Par exemple, vous pouvez exécuter l’analyseur sur un ordinateur qui semble défectueux en fonction de l’état d’état du capteur [affiché](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) (Inactif, Aucune donnée de capteur ou Communications altérées) dans le portail de sécurité.
 
@@ -60,4 +60,4 @@ Pour plus d’informations sur notre déclaration de confidentialité, voir [dé
 - Pour Windows appareils, si vous exécutez l’analyseur directement sur des ordinateurs spécifiques et non à distance via [Live Response,](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log)SysInternals [PsExec.exe](/sysinternals/downloads/psexec) doit être autorisé (au moins temporairement) à s’exécuter. L’analyseur appelle PsExec.exe'outil pour exécuter des vérifications de connectivité cloud en tant que système local et émuler le comportement du service SENSE.
 
     > [!NOTE]
-    > Sur les appareils Windows, si vous utilisez des créations de processus de blocage de processus de réduction de la surface d’attaque (ASR) provenant de commandes [PSExec et WMI,](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)vous pouvez désactiver temporairement la règle ou configurer une exclusion à la règle [de](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) réduction de la surface d’attaque pour permettre à l’analyseur d’exécuter des vérifications de connectivité dans le cloud comme prévu.
+    > Sur les appareils Windows, si vous utilisez des créations de processus de blocage de processus de réduction de la surface d’attaque (ASR) provenant de commandes [PSExec et WMI,](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)vous pouvez désactiver temporairement la règle ou configurer une exclusion à la règle [de](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) réduction de la surface d’attaque pour permettre à l’analyseur d’exécuter des vérifications de connectivité dans le cloud comme prévu.

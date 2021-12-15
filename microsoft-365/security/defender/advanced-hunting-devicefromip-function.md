@@ -18,33 +18,33 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705350"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531578"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des périphériques qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
+Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des appareils qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
 | Colonne | Type de données | Description |
 |------------|-------------|-------------|
-| `IP` | string | Adresse IP  |
-| `DeviceId` | chaîne | Identificateur unique de l’appareil dans le service |
+| `IP` | `string` | Adresse IP  |
+| `DeviceId` | `string` | Identificateur unique de l’appareil dans le service |
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -72,7 +72,7 @@ DeviceNetworkEvents
 | invoke DeviceFromIP()
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

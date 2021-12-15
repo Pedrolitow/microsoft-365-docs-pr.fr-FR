@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Accepter l’invitation à rejoindre une Microsoft 365 Business Standard organisation
-ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c29c51dc378debef566746c734b74e08f3b3b3ff
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372443"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530822"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Accepter une invitation par courrier électronique à un abonnement Microsoft 365 Business Standard client (utilisateur)
 
@@ -60,7 +60,7 @@ Suivez les étapes de l’abonnement Migrer des données vers mon [Microsoft 365
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>Je n’ai pas reçu d’e-mail de mise à niveau ?
 
@@ -95,7 +95,7 @@ Non, vous pouvez toujours vous connecter de la même manière qu’auparavant.
 
 Lorsque vous lancez Microsoft Outlook à l’aide de votre nouveau compte d’entreprise, votre nouvelle boîte aux lettres est automatiquement définie pour vous.
 
-1. First follow: [Set up Outlook for business email]([Set up Outlook pour Microsoft 365 for business email](../setup/setup-outlook.md).
+1. Premier suivi : [Configurer Outlook courrier électronique pour les entreprises](Configurer Outlook pour Microsoft 365 courrier électronique pour les entreprises](.. /setup/setup-outlook.md).
 2. Ensuite, suivez : [Créez et envoyez des e-mails dans Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>Comment quitter cette entreprise (et arrêter d’utiliser cette licence) ?

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aa6a8745ad8e9369b81f1f035d5755ff3efec515
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6d9c0c215d37458eab1deaf19f5818f07c1a9f3a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121098"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531494"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -45,25 +45,25 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 |Nom de colonne|Type de données|Description|
 |---|---|---|
-|`Timestamp`|DateHeure|Date et heure de génération de l’enregistrement|
-|`Application`|string|Application qui a effectué l’action enregistrée|
-|`ApplicationId`|string|Identificateur unique de l’application|
-|`IsManagedIdentity`|valeur booléenne|Indique si la connectez-vous a été démarrée par une identité gérée|
-|`ErrorCode`|int|Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .|
-|`CorrelationId`|string|Identificateur unique de l’événement de signature|
-|`ServicePrincipalName`|string|Nom du principal de service qui a démarré la signature|
-|`ServicePrincipalId`|string|Identificateur unique du principal de service qui a démarré la signature|
-|`ResourceDisplayName`|string|Nom d’affichage de la ressource accessible|
-|`ResourceId`|string|Identificateur unique de la ressource accessible|
-|`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
-|`IPAddress`|string|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
-|`Country`|string|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|
-|`State`|string|État où la se connecte s’est produite, si disponible|
-|`City`|string|Ville où se trouve l’utilisateur du compte|
-|`Latitude`|string|Coordonnées nord à sud de l’emplacement de la signature|
-|`Longitude`|string|Coordonnées est à ouest de l’emplacement de la signature|
-|`RequestId`|string|Identificateur unique de la demande|
-|`ReportId`|string|Identificateur unique de l’événement|
+|`Timestamp`|`datetime`|Date et heure de génération de l’enregistrement|
+|`Application`|`string`|Application qui a effectué l’action enregistrée|
+|`ApplicationId`|`string`|Identificateur unique de l’application|
+|`IsManagedIdentity`|`boolean`|Indique si la connectez-vous a été démarrée par une identité gérée|
+|`ErrorCode`|`int`|Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .|
+|`CorrelationId`|`string`|Identificateur unique de l’événement de signature|
+|`ServicePrincipalName`|`string`|Nom du principal de service qui a démarré la signature|
+|`ServicePrincipalId`|`string`|Identificateur unique du principal de service qui a démarré la signature|
+|`ResourceDisplayName`|`string`|Nom d’affichage de la ressource accessible|
+|`ResourceId`|`string`|Identificateur unique de la ressource accessible|
+|`ResourceTenantId`|`string`|Identificateur unique du client de la ressource à accès|
+|`IPAddress`|`string`|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
+|`Country`|`string`|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|
+|`State`|`string`|État où la se connecte s’est produite, si disponible|
+|`City`|`string`|Ville où se trouve l’utilisateur du compte|
+|`Latitude`|`string`|Coordonnées nord à sud de l’emplacement de la signature|
+|`Longitude`|`string`|Coordonnées est à ouest de l’emplacement de la signature|
+|`RequestId`|`string`|Identificateur unique de la demande|
+|`ReportId`|`string`|Identificateur unique de l’événement|
 ||||
 
 ## <a name="related-articles"></a>Articles connexes

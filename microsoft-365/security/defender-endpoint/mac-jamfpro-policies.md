@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbd57bb648c2d1d4c1ed08ae4abaa12e834cea04
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171556"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530229"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -51,7 +51,7 @@ Vous devez suivre les étapes suivantes :
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Étape 1 : Obtenir le package d’intégration De Microsoft Defender pour point de terminaison
 
-1. In [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com), navigate to **Paramètres > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Paramètres > Onboarding**.
 
 2. Sélectionnez macOS comme système d’exploitation et Gestion des périphériques mobiles/Microsoft Intune comme méthode de déploiement.
 
@@ -61,7 +61,7 @@ Vous devez suivre les étapes suivantes :
 
 4. Extraire `WindowsDefenderATPOnboardingPackage.zip` .
 
-5. Copiez le fichier à votre emplacement préféré. Par exemple, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
+5. Copiez le fichier à votre emplacement préféré. Par exemple : `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
 ## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Étape 2 : Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration
 
@@ -209,7 +209,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - étiquettes
+    - balises
     - hideStatusMenuIcon
 
      Pour plus d’informations, [voir Liste des propriétés pour le profil de configuration complet JAMF.](mac-preferences.md#property-list-for-jamf-full-configuration-profile)

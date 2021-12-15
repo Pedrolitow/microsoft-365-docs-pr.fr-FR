@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c60f9ff0b302948d5fd2d8c450e33a12768e8db0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b82a079a476ee6ed3d5465b52bca381cd49746b5
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665526"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530909"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières `AssignedIPAddresses()` adresses IP attribuées à [](advanced-hunting-overview.md) un appareil. Si vous spécifiez un argument d’timestamp, cette fonction obtient les adresses IP les plus récentes à l’heure spécifiée. 
@@ -39,11 +39,11 @@ Cette fonction renvoie un tableau avec les colonnes suivantes :
 
 | Colonne | Type de données | Description |
 |------------|-------------|-------------|
-| `Timestamp` | DateHeure | Heure de la dernière observation de l’appareil à l’aide de l’adresse IP |
-| `IPAddress` | chaîne | Adresse IP utilisée par l’appareil |
-| `IPType` | chaîne | Indique si l’adresse IP est une adresse publique ou privée |
-| `NetworkAdapterType` | int | Type de carte réseau utilisé par l’appareil à qui l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | int | Réseaux à qui l’adaptateur avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
+| `Timestamp` | `datetime` | Heure de la dernière observation de l’appareil à l’aide de l’adresse IP |
+| `IPAddress` | `string` | Adresse IP utilisée par l’appareil |
+| `IPType` | `string` | Indique si l’adresse IP est une adresse publique ou privée |
+| `NetworkAdapterType` | `int` | Type de carte réseau utilisé par l’appareil à qui l’adresse IP a été attribuée. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | `int` | Réseaux à qui l’adaptateur avec l’adresse IP affectée est connectée. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -79,7 +79,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370379"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530954"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
@@ -65,7 +65,7 @@ Lorsque vous planifiez votre déploiement, vous pouvez choisir parmi différente
 |:---|:---|
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (inclus dans Microsoft Endpoint Manager) | Utiliser Intune pour gérer les points de terminaison dans un environnement natif cloud |
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) configuration [manager](/mem/configmgr/core/understand/introduction) (inclus dans Microsoft Endpoint Manager) | Utiliser Intune et Configuration Manager pour gérer les points de terminaison et les charges de travail qui couvrent un environnement local et cloud |
-| [Gestionnaire de configuration](/mem/configmgr/core/understand/introduction) | Utiliser Configuration Manager pour protéger les points de terminaison locaux avec la puissance basée sur le cloud de Defender for Endpoint |
+| [Configuration Manager](/mem/configmgr/core/understand/introduction) | Utiliser Configuration Manager pour protéger les points de terminaison locaux avec la puissance basée sur le cloud de Defender for Endpoint |
 | Script local téléchargé à partir du portail Microsoft 365 Defender | Utiliser des scripts locaux sur les points de terminaison pour exécuter un pilote ou intégrer seulement quelques appareils |
 
 Pour en savoir plus sur les options de déploiement, voir [Planifier votre defender pour le déploiement de point de terminaison.](deployment-strategy.md) Téléchargez également l’affiche suivante : 
@@ -117,7 +117,7 @@ Lorsque vous êtes prêt à intégrer les points de terminaison de votre organis
 
 |Système d’exploitation de point de terminaison | Méthodes d’intégration|
 |---|---|
-| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
+| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
 | macOS | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | iOS |[Basée sur l’application](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
@@ -188,7 +188,7 @@ Les règles de réduction de la surface d’attaque sont disponibles sur les app
 > [!TIP]
 > Pour en savoir plus sur les règles de réduction de la surface d’attaque, consultez les ressources suivantes :
 > - [Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants](attack-surface-reduction.md)
-> - [Afficher la liste des règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
+> - [Afficher la liste des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 > - [Personnaliser les règles de réduction de la surface d’attaque](customize-attack-surface-reduction.md)
 
 ### <a name="ransomware-mitigation"></a>Atténuation des ransomware
@@ -233,7 +233,7 @@ Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou aut
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in. 
 
-2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme,** **sélectionnez Windows 10 et ultérieures,** et pour le type de **profil,** **sélectionnez Modèles.** 
 
@@ -266,7 +266,7 @@ Grâce à la protection du réseau, vous pouvez protéger votre organisation con
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in. 
 
-2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme,** **sélectionnez Windows 10 et ultérieures,** et pour le type de **profil,** **sélectionnez Modèles.** 
 
@@ -309,7 +309,7 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection Web,** spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Paramètre | Recommandation |
+   | Setting | Recommandation |
    |:---|:---|
    | **Activer la protection du réseau** | Définir sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour les Version antérieure de Microsoft Edge** | Définir sur **Oui**. Permet de protéger les utilisateurs contre les tentatives de hameçonnage et les logiciels malveillants. |
@@ -397,7 +397,7 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 - [Windows Defender de contrôle d’application dans différents scénarios : types d’appareils](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez passé par le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour Endpoint. 
 

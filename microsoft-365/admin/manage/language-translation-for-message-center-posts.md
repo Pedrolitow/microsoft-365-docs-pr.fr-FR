@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: 54c9d0c20045805029774fa37f2eeb5f992cbd49
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d622118b63b5fdfdab4fea4f62362e1df468e6aa
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369959"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530630"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 
@@ -52,7 +52,7 @@ Pour configurer la traduction automatique des publications du Centre de messages
 
 ## <a name="related-content"></a>Contenu associé
 
-[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
+[Overview of the Centre d'administration Microsoft 365](Overview of the Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) (vidéo)\
 [Quel abonnement ai-je ?](../admin-overview/what-subscription-do-i-have.md) (article)\
 [Rester au fait des modifications](../manage/stay-on-top-of-updates.md) (article)
 

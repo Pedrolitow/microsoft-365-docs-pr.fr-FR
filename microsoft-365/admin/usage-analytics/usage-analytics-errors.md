@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Découvrez comment résoudre les problèmes avec l’application Microsoft 365 d’analyse de l’utilisation.
-ms.openlocfilehash: e9bb73eea33e882fb5c9b138610cdc0f8fe9a7c5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: afa9841b38beefcfdd091f27e7b1f328cdf52a5e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373751"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531074"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Résolution des problèmes Microsoft 365'utilisation
 
@@ -48,7 +48,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Cause :** Lorsque vous [choisissez de](enable-usage-analytics.md) voir les données dans l’application modèle à partir du Centre d'administration Microsoft 365, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. En fonction de la taille de votre locataire, cette étape peut prendre 2 à 48 heures. 
   
- **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, il est prêt après 3 jours, [contactez Microsoft 365 support technique pour les entreprises]( Obtenez un [support technique.](../get-help-support.md)
+ **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, il est prêt au bout de 3 jours, [contactez Microsoft 365 support technique pour les entreprises](.. /get-help-support.md).
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>Nous ne sommes pas en mesure de traiter votre demande pour le moment. Les données relatives à votre organisation sont en cours de préparation
 

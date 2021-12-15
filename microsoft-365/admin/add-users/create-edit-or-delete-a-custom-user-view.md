@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
-ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370283"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530186"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
@@ -118,7 +118,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
 
 ## <a name="related-content"></a>Contenu associé
 
-[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
+[Overview of the Centre d'administration Microsoft 365](Overview of the Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) (vidéo)\
 [À propos des rôles d’administrateur](../add-users/about-admin-roles.md) (vidéo)\
 [Personnaliser le thème Microsoft 365 pour votre organisation](../setup/customize-your-organization-theme.md) (article)
 

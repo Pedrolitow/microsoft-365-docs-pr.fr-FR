@@ -14,16 +14,16 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3965b02e4bf4e4b6bce35a6abaf368dc4f47be83
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 992c8802f3a4f44b1558004e2ee27ddbedf70a1a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218285"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531170"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -71,31 +71,7 @@ Une exclusion est appliquée uniquement au démarrage de l’application ou du s
 La réduction de la surface d’attaque prend en charge les variables d’environnement et les caractères génériques. Pour plus d’informations sur l’utilisation de caractères génériques, voir les caractères génériques dans le nom de fichier et le chemin d’accès du dossier ou les [listes d’exclusion d’extension.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 Si vous rencontrez des problèmes avec des règles détectant des fichiers qui, selon vous, ne doivent pas être détectés, utilisez le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
 
-<br>
-
-****
-
-|Description de la règle|GUID|
-|---|---|
-|Bloquer l’utilisation abusive des pilotes signés vulnérables exploités|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
-|Empêcher Adobe Reader de créer des processus enfants|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
-|Empêcher toutes les applications Office de créer des processus enfants|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
-|Bloquer le contenu exécutable du client de messagerie et de la messagerie web|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
-|Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
-|Bloquer l’exécution de scripts potentiellement obscurcis|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
-|Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé|`d3e037e1-3eb8-44c8-a917-57927947596d`|
-|Empêcher Office applications de créer du contenu exécutable|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|Empêcher Office applications d’injecter du code dans d’autres processus|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
-|Empêcher Office applications de communication de créer des processus enfants|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
-|Bloquer la persistance via un abonnement à des événements WMI|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
-|Bloquer les créations de processus provenant de commandes PSExec et WMI|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
-|Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
-|Bloquer les appels d’API Win32 à partir Office macro|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
-|Utiliser la protection avancée contre les ransomware|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
-|
-
-Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d’attaque pour plus d’informations sur chaque règle.
+Consultez la rubrique [de référence des règles](attack-surface-reduction-rules-reference.md) de réduction de la surface d’attaque pour plus d’informations sur chaque règle.
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser une stratégie de groupe pour exclure des fichiers et des dossiers
 
@@ -133,7 +109,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez [l’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) Sécurité Windows’article.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)

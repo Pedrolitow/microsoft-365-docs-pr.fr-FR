@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee45db291cef56784f254ea1af481d873d2810ca
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914571"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531884"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -58,20 +58,31 @@ Il existe deux façons de créer un type d’informations sensibles :
 Utilisez cette procédure pour créer un type d’informations sensibles que vous définissez entièrement. 
 
 1. Dans le Centre de conformité, go to **Data classification** Sensitive \> **info types** and choose Create sensitive info **type**.
+
 2. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
+
 3. Choisissez **Créer un motif**. Vous pouvez créer plusieurs motifs, chacun avec des éléments et des niveaux de confiance différents, lorsque vous définissez votre nouveau type d’informations sensibles.
+
 4. Choisissez le niveau de confiance par défaut pour le motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
+
 5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md). Pour plus d’informations sur la date et les validateurs de la checksum, voir Plus d’informations sur les [validateurs d’expression régulière.](#more-information-on-regular-expression-validators)
+
 6. Remplissez une valeur pour la **Proximité de caractère**.
+
 7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. Les éléments de prise en charge peuvent avoir leur propre configuration **de proximité des** caractères. 
+
 8. (Facultatif) Ajouter des [**vérifications supplémentaires**](#more-information-on-additional-checks) à partir de la liste des vérifications disponibles.
+
 9. Sélectionnez **Créer**.
+
 10. Cliquez sur **Suivant**.
+
 11. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
+
 12. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
 
-> [!IMPORTANT]
-> Microsoft 365 utilise le robot de recherche pour identifier et classer des informations sensibles sur les sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans du contenu existant, celui-ci doit être ré-analysé. Le contenu est analysé sur la base d’un planning, mais vous pouvez le réanalyser manuellement pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content).
+    > [!IMPORTANT]
+    > Microsoft 365 utilise le robot de recherche pour identifier et classer des informations sensibles sur les sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans du contenu existant, celui-ci doit être ré-analysé. Le contenu est analysé sur la base d’un planning, mais vous pouvez le réanalyser manuellement pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content).
 
 13. Tous les types d’informations sensibles s’affichent sur la page **Classification des données**. Sélectionnez **Actualiser**, puis recherchez ou utilisez l’outil de recherche pour trouver le type d’informations sensibles que vous avez créé.
 
@@ -80,13 +91,34 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 Vous pouvez tester n’importe quel type d’informations sensibles dans la liste. Nous vous suggérons de tester chaque type d’informations sensibles que vous créez avant de l’utiliser dans une stratégie.
 
 1. Préparez deux fichiers, comme un document Word. Un fichier avec un contenu qui correspond aux éléments que vous avez spécifiés dans votre type d’informations sensibles et un autre qui ne correspond pas.
+
 2. Dans le Centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste pour ouvrir le volet des détails, puis sélectionnez **Tester**.
+
 3. Téléchargez un fichier, puis sélectionnez **Tester**.
+
 4. Sur la page **Résultats de correspondances**, examinez les résultats et sélectionnez **Terminer**.
+
+## <a name="custom-sensitive-information-types-limits"></a>Limites des types d’informations sensibles personnalisés
+
+Pour garantir des performances élevées et une latence moindre, il existe des limitations dans les configurations SIT personnalisées.
+
+|Limite|Valeur|
+|--------|--------|
+|nombre maximal de sits personnalisés créés via le Centre de conformité| 500 |
+|longueur maximale de l’expression régulière| 1 024 caractères|
+|Longueur maximale d’un terme donné dans une liste de mots clés| 50 caractères|
+|nombre maximal de termes dans la liste de mots clés| 2048|
+|nombre maximal d’regex distinctes par type d’informations sensibles| 20|
+|taille maximale d’un dictionnaire de mots clés (post-compression)| 1 Mo (environ 1 000 000 caractères)|
+|nombre maximal d’outils SIT basés sur un dictionnaire de mots clés dans un client|50 |
+
+> [!NOTE] 
+> Si votre entreprise a besoin de créer plus de 500 sits personnalisés, veuillez générer un ticket de support.
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le centre de conformité
 
 1. Dans le centre de conformité, accédez à **Classification de données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles dans la liste que vous voulez modifier, puis sélectionnez **Modifier**.
+
 2. Vous pouvez ajouter d’autres motifs, avec des éléments principaux et de prise en charge uniques, des niveaux de confiance, la proximité des caractères et des [**vérifications supplémentaires**](#more-information-on-additional-checks), ou modifier/supprimer les éléments existants.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Supprimer des types d’informations sensibles personnalisés dans le centre de Conformité 
@@ -98,6 +130,7 @@ Vous pouvez tester n’importe quel type d’informations sensibles dans la list
 > Avant de supprimer un type d’informations sensibles personnalisé, vérifiez qu’aucune stratégie DLP ou règle de flux de courrier Exchange (également appelées règles de transport) ne référence toujours le type d’informations sensibles.
 
 1. Dans le centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis choisissez le type d’informations sensibles dans la liste que vous voulez supprimer.
+
 2. Dans le lanceur qui s’ouvre, sélectionnez **Supprimer**.
 
 ## <a name="copy-and-modify-a-sensitive-information-type"></a>Copier et modifier un type d’informations sensibles
@@ -105,18 +138,31 @@ Vous pouvez tester n’importe quel type d’informations sensibles dans la list
 Utilisez cette procédure pour créer un type d’informations sensibles basé sur un type d’informations sensibles existant. 
 
 1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
+
 2. Dans le lanceur, sélectionnez **Copier**.
+
 3. Sélectionnez **Actualiser** dans la liste des types d’informations sensibles, puis recherchez la copie que vous avez faite. La recherche partielle cherche le travail de sorte à limiter votre recherche à `copy`rendant tous les types d’informations sensibles ayant le mot `copy` dans le nom. 
+
 4. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
+
 5. Sélectionnez la copie du type d’informations sensibles, puis sélectionnez **Modifier**. 
+
 6. Donnez un **Nom** et une **Description** à votre nouveau type d’informations sensibles.
+
 7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
+
 8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
+
 9. Remplissez une valeur pour la **Proximité de caractère**.
+
 10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des [**Contrôles supplémentaires**](#more-information-on-additional-checks), ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
+
 11. Sélectionnez **Créer**.
+
 12. Cliquez sur **Suivant**.
+
 13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
+
 14. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
 
 > [!NOTE]
@@ -141,7 +187,14 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 
 Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
 
-Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide si mod valeur != chiffre 8 numéro de compte n’est pas valide
+```console
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
+Mod value = Sum % 9
+If Mod value == digit 8
+    Account number is valid
+If Mod value != digit 8
+    Account number is invalid
+```
 
 1. Définissez l’élément principal avec cette expression régulière :
 
@@ -150,12 +203,13 @@ Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffr
    ```
 
 2. Ajoutez ensuite le validateur de la checksum.
+
 3. Ajoutez les valeurs de poids séparées par des virgules, la position du chiffre de contrôle et la valeur Mod. Pour plus d’informations sur l’opération Mod sous, consultez [l’opération Mod mode.](https://en.wikipedia.org/wiki/Modulo_operation)
 
-> [!NOTE]
-> Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
+   > [!NOTE]
+   > Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
 
-![Capture d’écran du validateur de la checkum configurée.](../media/checksum-validator.png)
+   :::image type="content" alt-text="Capture d’écran du validateur de la checkum configurée." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### <a name="date-validator"></a>Validateur de date
 
@@ -168,9 +222,10 @@ Si une valeur de date incorporée dans une expression régulière fait partie d�
    ```
 
 2. Ajoutez ensuite le validateur de date.
+
 3. Sélectionnez le format de date et le décalage de début. Étant donné que la chaîne de date est les six premiers chiffres, le décalage est `0` .
 
-![Capture d’écran du validateur de date configuré.](../media/date-validator.png)
+   :::image type="content" alt-text="Capture d’écran du validateur de date configuré." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>Processeurs fonctionnels en tant que validateurs
 

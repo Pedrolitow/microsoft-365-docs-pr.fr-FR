@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centre d'administration Microsoft 365 - learn about the features that were added this month.
-ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7d01786878c9bb87347d9207b0863593842e526b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422770"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531908"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "61422770"
 
 ::: moniker-end
 
-We’re continuously adding new features to [the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
+We’re continuously adding new features to [the Centre d'administration Microsoft 365](Overview of the Centre d'administration Microsoft 365](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
 
 Et si vous souhaitez savoir quelles sont les nouveautés des autres services cloud de Microsoft :
 
@@ -77,7 +77,7 @@ Nous avons également ajouté 2 nouveaux **champs,** Gravité et **Date** de fer
 
 Pour consulter ces mises à jour dans  <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365,</a>rendez-vous sur Support  >  **View Service requests** in left navigation pane.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="microsoft-365-admin-center-search"></a>Centre d'administration Microsoft 365 recherche
 
@@ -89,7 +89,7 @@ Nous avons ajouté quelques nouvelles catégories à la fonctionnalité de reche
 
 Pour en savoir plus sur la recherche dans le Centre d’administration, voir [Recherche dans le Centre d'administration Microsoft 365](manage/search-in-the-mac.md).
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="admin-mobile-app"></a>Application mobile Admin
 

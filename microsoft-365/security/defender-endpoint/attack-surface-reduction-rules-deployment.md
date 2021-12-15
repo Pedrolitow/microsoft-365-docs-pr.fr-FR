@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 92c8b601e9c1c766ae128f1ba290cfe9b9799644
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 9b9ef111fe704e1d65176dd90222d404d684e87e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217877"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531322"
 ---
 # <a name="attack-surface-reduction-rules-deployment-guide"></a>Guide de déploiement des règles de réduction de la surface d’attaque
 
@@ -43,7 +43,7 @@ Lors de votre préparation initiale, il est essentiel de comprendre les fonction
 >[!IMPORTANT]
 >Ce guide fournit des images et des exemples pour vous aider à décider comment configurer les règles de la asr. Ces images et exemples peuvent ne pas refléter les meilleures options de configuration pour votre environnement.
 
-Avant de commencer, examinez La vue d’ensemble de la réduction de [la surface](overview-attack-surface-reduction.md)d’attaque et la [démystification](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) des règles de réduction de la surface d’attaque - Partie 1 pour obtenir des informations de base. Pour comprendre les domaines de couverture et l’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles asr. voir [Règles de réduction de la surface d’attaque.](attack-surface-reduction-rules.md)
+Avant de commencer, examinez La vue d’ensemble de la réduction de [la surface](overview-attack-surface-reduction.md)d’attaque et la [démystification](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) des règles de réduction de la surface d’attaque - Partie 1 pour obtenir des informations de base. Pour comprendre les domaines de couverture et l’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles asr. voir [la référence des règles de réduction de la surface d’attaque.](attack-surface-reduction-rules-reference.md)
 
 Les règles de réduction de la surface d’attaque ne sont qu’une fonctionnalité des fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender for Endpoint. Ce document détaille le déploiement efficace des règles de la asr pour arrêter les menaces avancées telles que les ransomware gérés par l’homme et d’autres menaces.  
 
@@ -68,7 +68,7 @@ Comme indiqué dans utiliser les règles de réduction de la surface d’attaque
 
 Bien qu’il soit possible d’implémenter plusieurs méthodes d’implémentation des règles de la asr, ce guide est basé sur une infrastructure composée des points ci-après :
 
-- Azure Active Directory
+- Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - Windows 10 et Windows 11 périphériques
 - Microsoft Defender pour le point de terminaison E5 ou Windows licences E5
@@ -122,13 +122,13 @@ Comme avec toute nouvelle implémentation à grande échelle susceptible d’avo
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Phase de déploiement des règles asr 1 : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1 du déploiement des règles ASR : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
 
 [Phase de déploiement asr 2 : test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Phase 3 de déploiement des règles asr : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3 du déploiement des règles ASR : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Phase de déploiement des règles asr 4 : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4 de déploiement des règles ASR : opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Référence
 
@@ -150,7 +150,7 @@ Comme avec toute nouvelle implémentation à grande échelle susceptible d’avo
 
 [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 
-[Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
+[Référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 
 [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 

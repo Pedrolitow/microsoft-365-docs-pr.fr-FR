@@ -30,12 +30,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Découvrez comment importer des contacts, des calendriers et des courriers électroniques à partir de Gmail ou d’un autre fournisseur de messagerie et les migrer vers Microsoft 365.
-ms.openlocfilehash: 16573cd9658762c1b04417ef03bd3e96373fd349
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 91e079d24595c7c7f7d9e37eaddb49d34df886d1
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371855"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530429"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrer le courrier électronique et les contacts vers Microsoft 365
 
@@ -105,4 +105,4 @@ En fonction de votre système de courrier source, plusieurs méthodes de migrati
 
 [Planifier votre configuration de Microsoft 365 entreprise](plan-your-setup.md) (article)\
 [Installer Office applications](install-applications.md) (page de liens)\
-[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Centre d'administration Microsoft 365](Overview of the Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) (vidéo)

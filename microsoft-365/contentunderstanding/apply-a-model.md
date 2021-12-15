@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer un modèle publié à une bibliothèque SharePoint documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245728"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531757"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -53,7 +53,7 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
     ![Sélectionnez une bibliothèque de documents.](../media/content-understanding/select-doc-library.png)
 
-4. Étant donné que le modèle est associé à un type de contenu, lorsque vous l’appliquez à la bibliothèque, il ajoute le type de contenu et son affichage avec les étiquettes que vous avez extraites en tant que colonnes. Par défaut, cet affichage est l’affichage par défaut de la bibliothèque. Toutefois, vous pouvez éventuellement choisir de ne pas en faire l’affichage par défaut en sélectionnant **Paramètres** avancés et en effasant la case à cocher définir cette nouvelle vue comme **case à** cocher par défaut.
+4. Étant donné que le modèle est associé à un type de contenu, lorsque vous l’appliquez à la bibliothèque, il ajoute le type de contenu et son affichage avec les étiquettes que vous avez extraites en tant que colonnes. Par défaut, cet affichage est l’affichage par défaut de la bibliothèque. Toutefois, vous pouvez éventuellement choisir de ne pas en faire l’affichage par défaut en sélectionnant **Paramètres** avancés et en effanant cette nouvelle vue comme case à cocher **par** défaut.
 
     ![Affichage Bibliothèque.](../media/content-understanding/library-view.png)
 
@@ -72,6 +72,24 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 Une fois le modèle appliqué à la bibliothèque de documents, vous pouvez commencer à télécharger des documents sur le site et afficher les résultats.
 
 Le modèle identifie les fichiers et dossiers associés au type de contenu associé au modèle et les répertorie dans votre affichage. Si votre modèle possède des extracteurs, l’affichage affiche des colonnes pour les données que vous extrayez à partir de chaque fichier ou dossier.
+
+## <a name="sync-changes-to-one-or-more-libraries"></a>Synchroniser les modifications apportées à une ou plusieurs bibliothèques
+
+Lorsque vous publiez un modèle dans plusieurs bibliothèques de documents, puis mettez à jour le modèle, comme l’ajout ou la suppression d’un extracteur, vous devez appliquer la mise à jour à toutes les bibliothèques appliquées par le modèle.
+
+Pour synchroniser les modifications apportées à toutes les bibliothèques appliquées :
+
+1. Sur la page d’accueil du modèle, dans la section Où le modèle **est appliqué,** sélectionnez **Synchroniser tout**.
+
+    ![Capture d’écran montrant la section Où le modèle est appliqué et le bouton Synchroniser tout mis en évidence.](../media/content-understanding/sync-all-button.png) 
+
+Pour synchroniser les modifications apportées à une ou à une seule bibliothèque sélectionnée :
+
+1. Sur la page d’accueil du modèle, dans la **section** Où le modèle est appliqué, sélectionnez la ou les bibliothèques à laquelle vous souhaitez appliquer les modifications.
+
+2. Sélectionnez **Synchroniser**.
+
+    ![Capture d’écran montrant la section Où le modèle est appliqué et le bouton Synchroniser mis en évidence.](../media/content-understanding/sync-button.png) 
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Appliquer le modèle aux fichiers et au contenu de dossiers déjà présents dans la bibliothèque de documents
 
@@ -98,7 +116,7 @@ Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-
 
    ![Flow déclencheur.](../media/content-understanding/trigger.png)
 
-**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension de contenu, il peut être utilisé pour démarrer un autre flux de travail à l’aide des informations extraites du fichier ou du dossier.
+**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension du contenu, il peut être utilisé pour démarrer un autre flux de travail à l’aide des informations extraites du fichier ou du dossier.
 
 
 

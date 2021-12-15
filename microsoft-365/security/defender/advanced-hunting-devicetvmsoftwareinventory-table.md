@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c6cae9e8d4d043ced17129b49493a95e13bc8fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661082"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530912"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
@@ -41,22 +41,22 @@ ms.locfileid: "60661082"
 Le tableau du schéma de recherche avancée contient l’inventaire de gestion des menaces & vulnérabilités des logiciels actuellement installés sur les appareils de votre réseau, y compris les informations de fin `DeviceTvmSoftwareInventory` de support. [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Vous pouvez, par exemple, chercher des événements impliquant des appareils installés avec une version logicielle actuellement vulnérable. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 
 >[!NOTE]
-> Les `DeviceTvmSoftwareInventory` tableaux `DeviceTvmSoftwareVulnerabilities` et les tables ont remplacé le `DeviceTvmSoftwareInventoryVulnerabilities` tableau. Ensemble, les deux premiers tableaux incluent d’autres colonnes que vous pouvez utiliser pour vous aider à informer vos activités de gestion de la vulnerablity ou à la recherche d’appareils vulnérables.
+> Les `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` tableaux et les tables ont remplacé `DeviceTvmSoftwareInventoryVulnerabilities` le tableau. Ensemble, les deux premiers tableaux incluent d’autres colonnes que vous pouvez utiliser pour vous aider à informer vos activités de gestion de la vulnerablity ou à la recherche d’appareils vulnérables.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificateur unique de la machine dans le service |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
-| `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
-| `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
-| `SoftwareVendor` | string | Nom du fournisseur de logiciels |
-| `SoftwareName` | string | Nom du produit logiciel |
-| `SoftwareVersion` | string | Numéro de version du produit logiciel |
-| `EndOfSupportStatus` | string | Indique l’étape de cycle de vie du produit logiciel par rapport à sa date de fin de prise en charge (EOS) ou de fin de vie (EOL) spécifiée |
-| `EndOfSupportDate` | chaîne | Date de fin de support (EOS) ou de fin de vie (EOL) du produit logiciel |
+| `DeviceId` | `string` | Identificateur unique de la machine dans le service |
+| `DeviceName` | `string` | Nom de domaine complet (FQDN) de la machine |
+| `OSPlatform` | `string` | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
+| `OSVersion` | `string` | Version du système d’exploitation s’exécutant sur la machine |
+| `OSArchitecture` | `string` | Architecture du système d’exploitation s’exécutant sur la machine |
+| `SoftwareVendor` | `string` | Nom du fournisseur de logiciels |
+| `SoftwareName` | `string` | Nom du produit logiciel |
+| `SoftwareVersion` | `string` | Numéro de version du produit logiciel |
+| `EndOfSupportStatus` | `string` | Indique l’étape de cycle de vie du produit logiciel par rapport à sa date de fin de prise en charge (EOS) ou de fin de vie (EOL) spécifiée |
+| `EndOfSupportDate` | `string` | Date de fin de support (EOS) ou de fin de vie (EOL) du produit logiciel |
 
 
 

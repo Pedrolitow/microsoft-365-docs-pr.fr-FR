@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment définir des exigences de mot de passe strictes pour vos utilisateurs, à l’aide Windows PowerShell.
-ms.openlocfilehash: 25e0db3da797fbcaa78dbf91bd81abce0104d725
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370583"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530486"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe strictes pour les utilisateurs
 
@@ -34,7 +34,7 @@ Cet article explique comment désactiver les exigences de mot de passe strictes 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article est réservé aux personnes qui gèrent la stratégie de mot de passe pour une entreprise, une école ou une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] ([Vue d’ensemble Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) vous devez être administrateur [général](about-admin-roles.md) ou administrateur de mot de passe pour effectuer ces étapes.
+Cet article est réservé aux personnes qui gèrent la stratégie de mot de passe pour une entreprise, une école ou une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md) Vous devez être administrateur [général](about-admin-roles.md) ou administrateur de mot de passe pour effectuer ces étapes.
 
 Vous devez également vous connecter à Microsoft 365 avec PowerShell.
 

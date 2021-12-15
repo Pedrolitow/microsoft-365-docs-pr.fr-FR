@@ -18,19 +18,19 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3b961990d7826a7e1d58586fcc5bf2e016fa5d37
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704300"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531434"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de différents services, notamment `IdentityInfo` Azure Active Directory. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
@@ -42,24 +42,24 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
-| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte |
-| `OnPremSid` | chaîne | Identificateur de sécurité local (SID) du compte |
-| `CloudSid` | chaîne | Identificateur de sécurité cloud du compte |
-| `GivenName` | chaîne | Prénom ou nom de l’utilisateur du compte |
-| `Surname` | chaîne | Nom de famille, nom de famille ou nom de l’utilisateur du compte |
-| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `Department` | chaîne | Nom du service à qui appartient l’utilisateur du compte |
-| `JobTitle` | chaîne | Fonction de l’utilisateur du compte |
-| `AccountName` | chaîne | Nom d’utilisateur du compte |
-| `AccountDomain` | chaîne | Domaine du compte |
-| `EmailAddress` | chaîne | Adresse SMTP du compte |
-| `SipProxyAddress` | chaîne | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
-| `City` | chaîne | Ville où se trouve l’utilisateur du compte |
-| `Country` | chaîne | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non |
+| `AccountObjectId` | `string` | Identificateur unique du compte dans Azure AD |
+| `AccountUpn` | `string` | Nom d’utilisateur principal (UPN) du compte |
+| `OnPremSid` | `string` | Identificateur de sécurité local (SID) du compte |
+| `CloudSid` | `string` | Identificateur de sécurité cloud du compte |
+| `GivenName` | `string` | Prénom ou nom de l’utilisateur du compte |
+| `Surname` | `string` | Nom de famille, nom de famille ou nom de l’utilisateur du compte |
+| `AccountDisplayName` | `string` | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `Department` | `string` | Nom du service à qui appartient l’utilisateur du compte |
+| `JobTitle` | `string` | Fonction de l’utilisateur du compte |
+| `AccountName` | `string` | Nom d’utilisateur du compte |
+| `AccountDomain` | `string` | Domaine du compte |
+| `EmailAddress` | `string` | Adresse SMTP du compte |
+| `SipProxyAddress` | `string` | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
+| `City` | `string` | Ville où se trouve l’utilisateur du compte |
+| `Country` | `string` | Pays/région où se trouve l’utilisateur du compte |
+| `IsAccountEnabled` | `boolean` | Indique si le compte est activé ou non |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

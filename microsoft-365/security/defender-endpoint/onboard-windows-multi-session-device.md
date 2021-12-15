@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 71c1768a3cb5cc96f68818def7e9a582d5e258ac
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168077"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530198"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
 6 minutes de lecture
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows sessions multiples s’exécutant sur Azure Virtual Desktop (AVD)
 
 Microsoft Defender pour point de terminaison prend en charge la surveillance des sessions VDI et Azure Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Azure Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
@@ -109,7 +109,7 @@ Si vous envisagez de gérer vos ordinateurs à l’aide d’un outil de gestion,
 Pour plus d’informations, [voir Onboard Windows à l’aide de Configuration Manager.](configure-endpoints-sccm.md)
 
 > [!WARNING]
-> Si vous envisagez d’utiliser les règles de réduction de la [surface](attack-surface-reduction-rules.md)d’attaque, notez que la règle « Bloquer les créations de processus provenant de commandes[PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)et WMI » ne doit pas être utilisée, car cette règle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Si vous prévoyez d’utiliser la référence des règles de réduction de la [surface](attack-surface-reduction-rules-reference.md)d’attaque, notez que la règle « Bloquer les créations de processus provenant de commandes[PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)et WMI » ne doit pas être utilisée, car cette règle est incompatible avec la gestion via Microsoft Endpoint Configuration Manager. La règle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
