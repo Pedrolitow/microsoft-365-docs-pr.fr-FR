@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111374"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521003"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage dans Defender pour Office 365
 
@@ -231,17 +231,27 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 Dans la **page d’accueil,** vous configurez la page web vers qui l’utilisateur est pris s’il ouvre la charge utile dans la simulation.
 
+Les pages d’accueil organisées par Microsoft sont disponibles en 12 langues : chinois (simplifié), chinois (traditionnel), anglais, français, allemand, italien, japonais, coréen, portugais, russe, espagnol et néerlandais.
+
 - **Sélectionnez la préférence de page d’accueil**: les valeurs disponibles sont les suivantes :
   - **Utilisez la page d’accueil par** défaut de Microsoft : il s’agit de la valeur par défaut à configurer avec les options suivantes :
     - **Sélectionnez la mise en page d’accueil**: sélectionnez l’un des modèles disponibles.
-    - **Ajouter le logo**: cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier.
-    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages de hameçonnage.
+    - **Ajouter le logo**: cliquez **sur Parcourir** pour rechercher et sélectionner un .png, .jpeg ou .gif fichier. Pour supprimer le logo, cliquez sur **Supprimer.**
+    - **Ajouter des indicateurs de charge** utile à l’e-mail  : ce paramètre n’est pas disponible si vous avez précédemment sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page Sélectionner [une technique.](#select-a-social-engineering-technique) 
+
+      Sélectionnez **Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
 
     Vous pouvez afficher un aperçu des résultats en cliquant sur le bouton Ouvrir le panneau **d’aperçu** en bas de la page.
 
-  - **Utilisez une URL personnalisée**: si vous sélectionnez cette valeur, vous devez ajouter l’URL dans la zone Entrée de l’URL de **page** d’accueil personnalisée qui s’affiche. Aucune autre option n’est disponible sur la page.
+  - **Utilisez une URL personnalisée :** ce paramètre n’est  pas disponible si vous avez précédemment sélectionné la pièce jointe programme malveillant ou l’accès à un programme malveillant dans la page Sélectionner [une technique.](#select-a-social-engineering-technique) 
+
+    Si vous **sélectionnez Utiliser une URL** personnalisée, vous devez ajouter l’URL dans la zone Entrer l’URL de la **page** d’accueil personnalisée qui s’affiche. Aucune autre option n’est disponible sur la page.
+
   - **Créez votre propre page d’accueil**: cette valeur est associée aux options suivantes pour configurer :
-    - **Ajouter des indicateurs de charge utile à la messagerie électronique**: sélectionnez ce paramètre pour aider les utilisateurs à découvrir comment identifier les messages de hameçonnage.
+    - **Ajouter des indicateurs de charge** utile à l’e-mail  : ce paramètre n’est pas disponible si vous avez précédemment sélectionné une pièce jointe anti-programme malveillant ou un lien vers un programme malveillant dans la page Sélectionner [une technique.](#select-a-social-engineering-technique) 
+
+      Sélectionnez **Ajouter des indicateurs de charge utile à la messagerie pour** aider les utilisateurs à découvrir comment identifier les messages d’hameçonnage.
+
     - Contenu de la page : deux onglets sont disponibles :
       - **Texte**: un éditeur de texte enrichi est disponible pour créer votre page d’accueil. Outre les paramètres de police et de mise en forme classiques, les paramètres suivants sont disponibles :
         - **Balise dynamique**: sélectionnez l’une des balises suivantes :

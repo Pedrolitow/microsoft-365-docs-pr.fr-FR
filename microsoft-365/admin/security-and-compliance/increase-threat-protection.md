@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 20e939b0717e73e3148b3bbaf93e3190414609d4
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421317"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520991"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -96,11 +96,11 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant pour la règle. Utilisez les valeurs par défaut pour le reste des paramètres, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
-|Name|Règle anti-ransomware : avertir les utilisateurs|
+|Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
 |Spécifier des mots ou des expressions|Ajoutez les types de fichiers ci-après :  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|
 |Faites les choses suivantes . . .|Avertir le destinataire avec un message|
@@ -128,11 +128,11 @@ Pour créer une règle de transport de messagerie, suivez les étapes suivantes 
 
 5. Appliquez les paramètres du tableau suivant. Utilisez les valeurs par défaut pour le reste des paramètres, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
-|Name|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
+|Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
 |Ajouter une condition|Propriétés du message . . . inclure le type de message . . . Auto-forward|
 |Faites les choses suivantes ...|Bloquer le message . . . rejeter le message et inclure une explication.|
@@ -169,11 +169,24 @@ Nous vous recommandons de commencer avec cette protection en créant une straté
 |Ajouter des expéditeurs et domaines de confiance|Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.|
 |Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Cochez la case en regard du nom du domaine, par *exemple, contoso. <span> <span> com*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.|
 
-## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Se protéger contre les pièces jointes et les fichiers malveillants Coffre pièces jointes
+## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Watch: Protect against malicious attachments and files with Coffre Attachments
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365, anciennement appelé protection avancée contre les menaces Microsoft 365, inclut la protection contre les Coffre pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
-Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](../../business-video/safe-attachments.md)vidéo ou suivez les étapes suivantes :
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
+
+1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
+1. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Afficher,** **Gérer,** puis **Pièces jointes sécurisées ATP.**
+1. Sélectionnez votre règle de pièces jointes sécurisées, puis sélectionnez **l’icône** Modifier.
+1. Sélectionnez **les paramètres,** puis vérifiez que Bloquer est sélectionné.
+1. Faites défiler vers le bas. Sélectionnez **Activer la redirection,** puis entrez votre adresse e-mail ou l’adresse de la personne que vous souhaitez consulter les pièces jointes bloquées.
+1. Sélectionnez **Appliqué à,** puis sélectionnez votre nom de domaine.
+1. Choisissez les domaines supplémentaires que vous possédez (tels que onmicrosoft.com domaine) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
+1. Cliquez sur **Enregistrer**.
+
+Votre règle de pièces jointes sécurisées ATP a été mise à jour. Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir de Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés auront des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
+
+Une fois votre stratégie en place pendant un certain temps, visitez la page Rapports pour voir ce qui a été analysé.
 
 1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
 
@@ -231,7 +244,7 @@ Pour modifier la stratégie par défaut :
 
 2. Sous **Paramètres qui s’appliquent au** contenu à l’exception de la messagerie, sélectionnez **Applications Microsoft 365 pour les grandes entreprises, Office pour iOS et Android**.
 
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
@@ -239,7 +252,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|

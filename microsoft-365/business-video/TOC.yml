@@ -55,8 +55,6 @@
           href: /microsoftteams/guest-experience
         - name: Discutez avec vos employés et vos clients
           href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
-        - name: Vue d’ensemble des réunions en ligne
-          href: overview-online-meetings.md
         - name: Planifier une réunion Teams avec des invités
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: Rejoindre une réunion Teams avec des invités
@@ -81,10 +79,6 @@
       items:
         - name: Vue d’ensemble de Bookings
           href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
-        - name: Suivre les informations professionnelles avec les Listes Microsoft
-          href: track-info-lists.md
-        - name: Planifier un événement
-          href: plan-event.md
     - name: Gérer les services
       items:
         - name: Qu’est-ce qu’un administrateur ?
@@ -129,17 +123,9 @@
           href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Configurer la connexion à deux facteurs sur votre téléphone
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: Gérer les pièces jointes fiables
-          href: safe-attachments.md
-        - name: Éviter les pertes de données
-          href: set-up-dlp.md
-        - name: Créer des étiquettes de sensibilité
-          href: create-sensitivity-labels.md
-    - name: Assistance
+    - name: Support
       items:
         - name: Rechercher des documents et une formation
-          href: find-help-answers.md
-        - name: Configuration rapide pour les employés
-          href: employee-quick-setup.md
+          href: ../admin/index.yml
     - name: Passer de Google Workspace
       href: moveto-microsoft-365/move-from-google-workspace-overview.md

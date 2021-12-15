@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment identifier les différents types de mise en attente qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: 708d6e18428d090a6ba5291aea95e1a690dac556
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 669f1543bddfe88d89b6ec046afd82f4ec11791a
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422530"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520979"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -169,16 +169,19 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 ## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identification des boîtes aux lettres en conservation car une étiquette de rétention a été appliquée à un dossier ou à un élément
 
-Chaque fois qu’un utilisateur applique une étiquette de rétention configurée pour conserver du contenu ou conserver, puis supprimer du contenu dans un dossier ou un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme étant en conservation, comme si elle était placée en conservation pour litige ou affectée à une stratégie Microsoft 365 rétention. Lorsque la *propriété ComplianceTagHoldApplied* est définie sur **True,** les choses suivantes peuvent se produire :
+Chaque fois qu’un utilisateur applique une  étiquette  de rétention configurée pour conserver ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Lorsque cela se produit, la boîte aux lettres est traitée de la même manière que si elle a été placée en conservation, par exemple lorsqu’elle a été affectée à une stratégie de rétention Microsoft 365 ou placée en conservation pour litige, toutefois avec quelques avertissements. Lorsque la *propriété ComplianceTagHoldApplied* est définie sur **True,** les choses suivantes se produisent :
 
-- Si la boîte aux lettres ou le compte d’utilisateur de l’utilisateur est supprimé, la boîte aux lettres devient [une boîte aux lettres inactive.](inactive-mailboxes-in-office-365.md)
+- Si la boîte aux lettres ou le compte Microsoft 365 utilisateur est supprimé, la boîte aux lettres devient [une boîte aux lettres inactive.](inactive-mailboxes-in-office-365.md)
 - Vous ne pouvez pas désactiver la boîte aux lettres (la boîte aux lettres principale ou la boîte aux lettres d’archivage, si elle est activée).
-- Les éléments de la boîte aux lettres peuvent être conservés plus longtemps que prévu. Cela est dû au fait que la boîte aux lettres est en attente et qu’aucun objet n’est supprimé définitivement (purgé).
+- Les éléments qui ont été supprimés de la boîte aux lettres suivent un processus différent de celui dans le cas où aucune attente ne s’applique :
+    - **Les éléments non élibés** seront initialement conservés un peu plus longtemps que si aucune rétention ne s’appliquait à la boîte aux lettres.  Le temps qu’il faut pour que ces éléments soient supprimés définitivement est déterminé par la [configuration](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) de rétention des éléments supprimés et la durée d’arrivée de l’élément dans le sous-dossier Purges du dossier éléments [récupérables.](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)
+    - **Les éléments étiquetés** sont conservés, puis supprimés de la même manière qu’ils le seraient si une stratégie de rétention Microsoft 365 appliquée, mais au niveau de l’élément individuel.  Si plusieurs éléments ont des étiquettes  différentes configurées pour conserver ou conserver, puis supprimer le contenu à différents intervalles, chaque élément est conservé en fonction de la configuration de l’étiquette appliquée. 
+- D’autres conservations, telles que les stratégies de rétention Microsoft 365, les conservations eDiscovery ou la conservation pour litige peuvent prolonger la durée de conservation des éléments [étiquetés](retention.md#the-principles-of-retention-or-what-takes-precedence)en fonction des principaux de rétention.
 
-Pour afficher la valeur de la *propriété ComplianceTagHoldApplied,* exécutez la commande suivante dans Exchange Online PowerShell :
+Pour afficher la valeur de la *propriété ComplianceTagHoldApplied* pour une seule boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell :
 
 ```powershell
-Get-Mailbox <username> |FL ComplianceTagHoldApplied
+Get-Mailbox <username> | FL ComplianceTagHoldApplied
 ```
 
 Pour plus d’informations sur les étiquettes de rétention, voir [étiquettes de rétention.](retention.md#retention-labels)

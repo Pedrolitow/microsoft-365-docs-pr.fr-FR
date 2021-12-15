@@ -13,15 +13,15 @@ metadata:
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
-  description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
+  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les tâches d’administration déléguées dans Microsoft 365 pour les partenaires et revendeurs Microsoft.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b3bf371ef0e726082c2d775bb63222f795b36671
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 7f011829110481f6cd7b9238deadccad0d2a1264
+  ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60190364"
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "61520943"
 title: FAQ sur l’administration déléguée
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -35,22 +35,12 @@ sections:
   - question: >
       Je suis revendeur et je dois gérer mes clients. Comment cela fonctionne-t-il ?
     answer: >
-      Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander des fonctionnalités _d’administration_ déléguée dans l’organisation Microsoft 365 de votre client.
+      Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit en tant que Fournisseur de solutions Microsoft Cloud (CSP), vous pouvez demander des fonctionnalités _d’administration_ déléguées dans l’organisation Microsoft 365 de votre client. Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 
-      L’administration déléguée vous permet de gérer les Microsoft 365 (y compris les paramètres EOP) comme si vous étiez un administrateur au sein de cette organisation. Les étapes de configuration de l’administration déléguée sont décrites dans la liste suivante :
+      - [fournisseur de solutions Cloud programme](/partner-center/csp-overview)
 
-
-      1. Inscrivez-vous pour devenir [partenaire Microsoft Office 365](https://partner.microsoft.com/?cloudbenefits).
-
-
-      2. Inscrivez-vous à l’administration déléguée. Avant de commencer à administrer le client d’un client, il doit vous autoriser en tant qu’administrateur délégué. Pour obtenir leur approbation, vous devez d'abord [leur envoyer une offre d'administration déléguée](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Vous pouvez également proposer une administration déléguée à votre client ultérieurement.
-
-
-      3. Créez le compte d’administrateur délégué à l’aide des étapes de [l’étape Ajouter, modifier ou supprimer un partenaire conseiller en abonnement.](../../admin/misc/add-partner.md)
-
-
-      Visitez [les partenaires : développez votre entreprise et administrez](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) un abonnement partenaire pour plus d’informations sur la façon de configurer l’administration déléguée.
+      - [Obtenez des autorisations pour gérer le service ou l’abonnement d’un client.](/customers-revoke-admin-privileges)
   - question: >
       Je suis un client, pas un revendeur. Comment configurer un administrateur délégué pour mes sous-clients ?
     answer: >
@@ -61,4 +51,4 @@ sections:
       Non. Microsoft 365 ne dispose pas actuellement de cette fonctionnalité.
   - question: >
       Puis-je obtenir des rapports consolidés sur tous mes sous-traitants ?
-    answer: Les rapports consolidés au sein des entreprises que vous gérez ne sont pas disponibles dans Centre d'administration Microsoft 365 de travail. Toutefois, vous pouvez obtenir des rapports à l’aide [de Microsoft Graph](/graph/overview).
+    answer: Les rapports consolidés au sein des entreprises que vous gérez ne sont pas disponibles dans Centre d'administration Microsoft 365 rapports. Toutefois, vous pouvez obtenir des rapports à l’aide [de Microsoft Graph](/graph/overview).

@@ -21,18 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 9b8ee897502f76dbdb63e3fbac99e4223f378a1a
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785449"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521028"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
 Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le nouveau tableau de bord de gestion des alertes DLP dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
-
-<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>Fonctionnalités
 
@@ -92,11 +90,22 @@ Si vous êtes éligible pour les options de [configuration](#licensing-for-alert
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Capture d’écran montrant les options des rapports d’incident pour les utilisateurs éligibles pour les options de configuration d’alerte agrégées." border="false":::
 
-Vous pouvez utiliser ces options de configuration d’alerte pour configurer un paramètre qui définit la fréquence de correspondance d’une règle DLP avant le déclenchement d’une alerte. Cette configuration vous permet de configurer une stratégie pour générer une alerte chaque fois qu’une activité correspond aux conditions de la stratégie ou lorsqu’un certain seuil est dépassé, en fonction du nombre d’activités ou du volume de données exfiltrées.
+Cette configuration vous permet de configurer une stratégie pour générer une alerte :
 
-Si vous êtes éligible pour les options de [configuration](#licensing-for-alert-configuration-options)d’alerte à événement unique, l’option de configuration d’alerte suivante s’offre à vous dans l’expérience de authoring de stratégie DLP. Utilisez cette option pour créer une alerte qui est élevée chaque fois qu’une correspondance de règle DLP se produit en raison d’une activité de l’utilisateur.
+- chaque fois qu’une activité correspond aux conditions de stratégie
+- lorsque le seuil défini est atteint ou dépassé
+- en fonction du nombre d’activités
+- basé sur le volume de données exfiltrées
 
-:::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Capture d’écran montrant les options des rapports d’incident pour les utilisateurs éligibles pour les options de configuration d’alerte à événement unique." border="false":::
+Pour éviter un débordement d’e-mails de notification, toutes les correspondances qui se produisent dans une fenêtre de temps d’une minute et qui sont pour la même règle DLP et au même emplacement sont regroupées dans la même alerte. La fonctionnalité de fenêtre de temps d’agrégation d’une minute est disponible dans : 
+
+- Un abonnement E5 ou G5
+- Un abonnement E1, F1 ou G1, ou un abonnement E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
+    - Office 365 – Protection avancée contre les menaces Plan 2
+    - Microsoft 365 E5 Conformité
+    - Microsoft 365 licence de modules de découverte électronique et d’audit
+ 
+Pour les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3, la fenêtre de temps d’agrégation est de 15 minutes.
 
 ## <a name="dlp-alert-management-dashboard"></a>Tableau de bord de gestion des alertes DLP
 
@@ -124,13 +133,13 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |                   | Nom d'hôte                      | Nom d’hôte de l’ordinateur sur lequel la violation DLP a été détectée              | Événements d’appareils                           |
     |                   | Adresse IP                    | Adresse IP de l’ordinateur                                                  | Événements d’appareils                           |
     |                   | File path                     | Chemin d’accès absolu du fichier impliqué dans la violation                        | SharePoint, OneDrive et appareils |
-    |                   | Destinataires d’un e-mail              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
+    |                   | Destinataires du courrier électronique              | Destinataires de l’e-mail qui a enfreint la stratégie DLP                       | Exchange événements                          |
     |                   | Sujet de l’e-mail                 | Objet de l’e-mail qui a enfreint la stratégie DLP                          | Exchange événements                          |
     |                   | Pièces jointes             | Noms des pièces jointes dans l’e-mail qui ont enfreint la stratégie DLP         | Exchange événements                          |
     |                   | Propriétaire du site                    | Nom du propriétaire du site                                                     | SharePoint et OneDrive événements           |
     |                   | URL du site                      | URL complète du site SharePoint ou OneDrive site                                | SharePoint et OneDrive événements           |
     |                   | Fichier créé                  | Heure de création du fichier                                                      | SharePoint et OneDrive événements           |
-    |                   | Fichier de la dernière modification            | Heure de la dernière modification du fichier                                  | SharePoint et OneDrive événements           |
+    |                   | Dernier fichier modifié            | Heure de la dernière modification du fichier                                  | SharePoint et OneDrive événements           |
     |                   | La taille des fichiers                     | Taille du fichier                                                           | SharePoint et OneDrive événements           |
     |                   | Propriétaire du fichier                    | Propriétaire du fichier                                                          | SharePoint et OneDrive événements           |
     |*Détails de la stratégie*||
@@ -143,7 +152,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     
 1.  Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance et le nombre.
 
-2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif** **,** En cours d’examen, Rejeté ou **Résolu**). Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
+2.  Après avoir examiné l’alerte, choisissez **Gérer** l’alerte pour modifier l’état (**Actif,** En cours d’examen, Rejeté ou **Résolu**).  Vous pouvez également ajouter des commentaires et affecter l’alerte à une personne de votre organisation.
 
     -   Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion.**
     -   Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu.**

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes'
+title: Microsoft 365 rapports dans le Centre d’administration - Microsoft 365 groupes
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Microsoft 365 groupes de recherche pour en savoir plus sur les groupes et leurs activités.
-ms.openlocfilehash: 6ef375e1aab13f4ec01514967a90ce726680efbc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648866"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520847"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 rapports dans le Centre d’administration - Microsoft 365 groupes
 
 Le tableau Microsoft 365 de rapports d’entreprise vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
   
@@ -48,9 +48,9 @@ Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colon
 
 :::image type="content" alt-text="Office 365 d’activité des groupes : choisissez des colonnes." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-Le **rapport des** groupes permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
+Le **rapport des** groupes permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
 
 |Métrique|Définition|
 |:-----|:-----|
@@ -65,16 +65,16 @@ Le **rapport des** groupes permet d’afficher les tendances des 7, 30, 90 ou 18
 |SharePoint fichiers (total) |Nombre de fichiers stockés dans SharePoint sites de groupe. |
 |SharePoint fichiers (actifs) |Nombre de fichiers du site de groupe SharePoint qui ont été modifiés (vues ou modifiées, synchronisés, partagés en interne ou en externe) au cours de la période de rapport. |
 |Stockage total du site utilisé pour SharePoint (Mo) |Quantité de stockage en Mo utilisée pendant la période de rapport. |
-|Messages dans Yammer (publié) |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. |
+|Messages en Yammer (publié) |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. |
 |Messages en Yammer (lecture) |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport. |
 |Messages en Yammer (aimé) |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport. |
 |Members |Nombre de membres du groupe. |
 |Membres externes |Nombre d’utilisateurs externes dans le groupe.|
 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 rapports dans le Centre d’administration](activity-reports.md) (article)\
-[Rapports dans le Centre de sécurité & conformité](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Rapports intelligents et informations dans le Centre](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) de sécurité & conformité (article)\
 [Microsoft 365 rapports dans le Centre d’administration - Utilisateurs actifs](../../admin/activity-reports/active-users-ww.md) (article)
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8407d1f1b53bcb56edd9aea3bd988752ee80268
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: b7a12d2eb88998496c4998396a5d7bf5084656e8
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171484"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520967"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de licence pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -51,8 +51,13 @@ Contactez votre administrateur pour obtenir de l'aide.
 
 **Cause :** 
 
-Vous avez déployé et/ou installé le package Microsoft Defender for Endpoint pour macOS (« Télécharger le package d’installation ») mais vous n’avez peut-être pas exécuté le script de configuration (« Télécharger le package d’intégration ») ou vous n’avez pas attribué de licence à l’utilisateur.
+Vous avez déployé et/ou installé microsoft Defender pour le point de terminaison sur le package macOS (« Télécharger le package d’installation ») mais vous n’avez peut-être pas exécuté le script de configuration (« Télécharger le package d’intégration ») ou vous n’avez pas attribué de licence à l’utilisateur.
+
+Vous pouvez également rencontrer cette erreur lorsque l’agent Microsoft Defender for Endpoint sur macOS n’est pas à jour. 
+
 
 **Solution :**
 
 Suivez les instructions MicrosoftDefenderATPOnboardingMacOs.py documentées ici : [Configuration du client](mac-install-manually.md#client-configuration)
+
+Pour les scénarios où Microsoft Defender pour endpoint sur macOS n’est pas à jour, vous devez mettre à jour l’agent. 

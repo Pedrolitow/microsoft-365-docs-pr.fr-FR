@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: e0f2595bc6717fde3dc9d0d31e285ec2ae0a7767
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 9fbb327ff38d2de46f70c9aaa33b5217ed3c1c02
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421185"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521065"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 
@@ -160,7 +160,7 @@ Pour créer une règle de transport de messagerie, regardez une courte vidéo de
 
 5. Appliquez les paramètres du tableau suivant pour chaque règle. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
     
 | Setting | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
@@ -195,11 +195,11 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
 |Setting|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
-|Name|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
+|Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
 |Ajouter une condition|Le destinataire . . . est externe/interne . . . En dehors de l’organisation|
 |Ajouter une condition|Propriétés du message . . . inclure le type de message . . . Auto-forward|
@@ -276,7 +276,7 @@ Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage d
 
 Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
-Pour créer une stratégie Coffre pièces jointes, regardez une courte vidéo de [formation](../../business-video/safe-attachments.md)ou complétez les étapes suivantes :
+Pour créer une stratégie Coffre pièces jointes, regardez une courte vidéo de [formation](increase-threat-protection.md)ou complétez les étapes suivantes :
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
@@ -329,7 +329,7 @@ Pour modifier la stratégie par défaut :
 
 3. Sous **Paramètres** qui s’appliquent au contenu à l’exception de la messagerie, sélectionnez **Office 365 applications**, Ne pas suivre quand les utilisateurs cliquent sur les liens sécurisés et Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.  
 
-4. Sélectionnez **Enregistrer**.
+4. Cliquez sur **Enregistrer**.
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
@@ -337,7 +337,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -349,7 +349,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes de priorité](../setup/priority-accounts.md) (article)\
