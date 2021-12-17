@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: fabfc66a6624cac16675d1276758b4ef16d35392
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: be8715942639b3e00fc3a8d49782684bbef99fbf
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372863"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530846"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -163,4 +163,4 @@ Partagez vos idées sur le niveau de productivité et vos idées pour l’améli
 
 [Surveiller l’activité de Microsoft 365 à l’aide des rapports](../../admin/activity-reports/activity-reports.md) (article)\
 [Activer l'analyse de l'utilisation de Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (article)\
-[Overview of the Centre d'administration Microsoft 365]([Overview of the Centre d'administration Microsoft 365](../admin-overview/admin-center-overview.md) (video)
+[Aperçu du centre d'administration de Microsoft 365](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (vidéo)
