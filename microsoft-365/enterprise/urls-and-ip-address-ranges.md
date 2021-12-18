@@ -24,18 +24,18 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).'
 hideEdit: true
-ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c4bde6517bc2dfe22d8e52161ee1f47917ee0fb3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700880"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566710"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL et plages d’adresses IP Office 365
 
 Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).
   
-*Office 365 Worldwide (+GCC)* \| [Office 365 géré par 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Allemagne](microsoft-365-germany-endpoints.md) \| [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
+*Office 365 dans le monde entier (+Cloud de la communauté du secteur public)*\|[Office 365 géré par 21 vianet](urls-and-ip-address-ranges-21vianet.md)\|[Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
 
 |Remarques|Télécharger|Utilisation|
 |---|---|---|
@@ -84,8 +84,6 @@ Les colonnes de données affichées sont :
 [Les gammes d'IP et les étiquettes de service de Microsoft Azure - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 
 [Les gammes d'IP et les étiquettes de service de Microsoft Azure - Cloud du gouvernement américain](https://www.microsoft.com/download/details.aspx?id=57063)
-
-[Les gammes d'IP et les étiquettes de service de Microsoft Azure - Allemagne Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
 [Les gammes d'IP et les étiquettes de service de Microsoft Azure - China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
   

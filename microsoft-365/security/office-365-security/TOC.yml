@@ -162,6 +162,8 @@
               href: attack-simulation-training-simulation-automations.md
             - name: Automatisation des charges utiles dans la formation à la simulation d'attaque
               href: attack-simulation-training-payload-automations.md
+            - name: Automatisations de charge utile pour la formation à la simulation d’attaque
+              href: attack-simulation-traning-end-user-notifications.md
             - name: Informations et rapports dans la formation à la simulation d’attaque
               href: attack-simulation-training-insights.md
             - name: Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
