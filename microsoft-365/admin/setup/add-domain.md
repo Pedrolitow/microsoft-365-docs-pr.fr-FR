@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d'administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426326"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559927"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -142,6 +142,22 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 Une fois l’installation terminé, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
   
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.
+
+### <a name="add-an-onmicrosoftcom-domain"></a>Ajouter un domaine onmicrosoft.com domaine
+
+Chaque Microsoft 365 organisation peut avoir jusqu’à trois onmicrosoft.com domaines.
+
+> [!NOTE]
+> Vous devez être administrateur global ou administrateur de nom de domaine pour ajouter un domaine.
+
+
+Pour ajouter un domaine onmicrosoft.com:
+
+1. Go to the Microsoft admin center, **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+
+2. Sous **l’onglet** Vue d’ensemble, **sélectionnez Ajouter onmicrosoft.com domaine.**
+
+Vous pouvez définir n’importe quel domaine que vous possédez comme domaine par défaut.
 
 ## <a name="related-content"></a>Contenu associé
 

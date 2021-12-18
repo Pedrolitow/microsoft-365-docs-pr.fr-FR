@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Pour les adresses IP de destination et les URL pour le trafic Microsoft 365, utilisez cette liste d’articles pour les points de terminaison Internet des différents Microsoft 365 nuages.
-ms.openlocfilehash: 56e67304998a4031244fdbad63848f556fe94039
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197316"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566650"
 ---
 # <a name="microsoft-365-endpoints"></a>Points de terminaison Microsoft 365
 
@@ -44,7 +44,6 @@ Il existe actuellement cinq nuages Microsoft 365 différents. Ce tableau vous pe
 | [Points de terminaison DoD du gouvernement américain](microsoft-365-u-s-government-dod-endpoints.md) | Les points de terminaison pour les abonnements aux États-Unis Department of Defense (DoD). |
 | [Points de terminaison GCC High du gouvernement américain](microsoft-365-u-s-government-gcc-high-endpoints.md) | Les points de terminaison pour les abonnements aux États-Unis pour le secteur public Communauté Cloud élevé (GCC élevé). |
 | [Microsoft 365 gérés par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Les points de terminaison Microsoft 365 gérés par 21Vianet, conçus pour répondre aux besoins des Microsoft 365 en Chine. |
-| [Microsoft 365 Points de terminaison allemands](microsoft-365-germany-endpoints.md) | Les points de terminaison pour un cloud en Europe distinct, pour les clients plus régulés en Allemagne, Union européenne (UE) et l’Association européenne de libre-échange (AELE). |
 |||
 
 Pour automatiser l’obtention de la dernière liste de points de terminaison pour votre cloud Microsoft 365, consultez l’adresse IP Office 365 le [service Web d’URL.](microsoft-365-ip-web-service.md)

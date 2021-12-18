@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 12/16/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 154f67645062f6816ebdbfa24a2935c779f48c72
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507355"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559855"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Didacticiels et simulations dans Microsoft Defender pour Entreprise (prévisualisation)
 
@@ -44,7 +44,7 @@ Le tableau suivant récapitule plusieurs scénarios à essayer pendant la prévi
 | Intégrer des appareils à l’aide Microsoft Intune     | Si vous utilisiez déjà Microsoft Intune avant d’obtenir Defender pour le point de terminaison, vous pouvez utiliser Microsoft Intune pour intégrer des appareils. Essayez d’intégrer des appareils macOS, iOS, Linux et Android avec Microsoft Intune. Pour en savoir plus, [consultez Inscription d’appareil dans Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Modifier les stratégies et paramètres de sécurité     | Si vous gérez vos stratégies et paramètres de sécurité dans Defender pour Entreprise (prévisualisation), utilisez la page **configuration** de l’appareil pour afficher et modifier vos stratégies. Pour plus d’informations, voir [Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation).](mdb-view-edit-policies.md)        |
 | Exécuter une attaque simulée   | Plusieurs didacticiels et simulations sont disponibles dans Defender for Business (prévisualisation). Ces didacticiels et simulations sont conçus pour vous montrer comment les fonctionnalités de protection contre les menaces de Defender for Business (prévisualisation) peuvent fonctionner pour votre entreprise. Pour essayer un ou plusieurs des didacticiels, consultez les didacticiels recommandés pour [Microsoft Defender pour Entreprise (prévisualisation).](#recommended-tutorials-for-defender-for-business)         |
-| Afficher les incidents dans Microsoft 365 Lighthouse     | Si vous êtes un partenaire Microsoft utilisant Microsoft 365 Lighthouse, vous pouvez afficher les incidents au sein des locataires de vos clients dans votre portail Microsoft 365 Lighthouse client. Pour en savoir plus, [voir Microsoft 365 Lighthouse et Microsoft Defender entreprise (prévisualisation).](mdb-lighthouse-integration.md)       |
+| Afficher les incidents dans Microsoft 365 Lighthouse     | Si vous utilisez [Fournisseur de solutions Microsoft Cloud](/partner-center/enrolling-in-the-csp-program) Microsoft 365 Lighthouse, vous pourrez bientôt afficher les incidents sur les clients de vos clients dans votre portail Microsoft 365 Lighthouse client. Pour en savoir plus, [voir Microsoft 365 Lighthouse et Microsoft Defender entreprise (prévisualisation).](mdb-lighthouse-integration.md)       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Didacticiels recommandés pour Defender for Business
@@ -76,7 +76,7 @@ Chaque didacticiel inclut un document pas à pas qui explique le scénario, son 
    - **Didacticiel Live Response**
    - **Gestion & des menaces et des vulnérabilités (scénarios principaux)**
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-manage-devices.md)
 

@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 81b11caa5663677499d7a6fb78d8b48e5ffdebf6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 419ebd04b7c83c2d0545efcc3ff6da7161c30c6b
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373835"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560575"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1
+
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Le portail Microsoft 365 Defender ( ) vous permet d’afficher des informations sur les menaces détectées, de gérer vos alertes et incidents, d’agir sur les menaces détectées et de gérer les [https://security.microsoft.com](https://security.microsoft.com) appareils. Le portail Microsoft 365 Defender est l’endroit où vous pouvez commencer à interagir avec les fonctionnalités de protection contre les menaces que vous obtenez avec Defender for Endpoint Plan 1. Les sections suivantes décrivent comment commencer :
 
@@ -74,7 +77,7 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 | **Santé**  >  **État du service** | Accédez à la page État du service dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’état d’état dans tous les services disponibles avec les abonnements de votre organisation.   |
 | **Santé**  >  **Centre de messages** | Navigue vers le centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui arrive, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations d’utilisation du Microsoft 365 Defender web. Les autorisations sont accordées par le biais de rôles Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le flyout contient un lien vers Azure AD où vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)  |
-| **Paramètres** | Permet d’accéder aux paramètres généraux de votre portail Microsoft 365 Defender (répertorié en tant que centre de **sécurité)** et de Defender pour les points de terminaison (répertoriés en tant que points **de terminaison).** <br/><br/> Pour en savoir plus, [voir Paramètres](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
+| **Settings** | Permet d’accéder aux paramètres généraux de votre portail Microsoft 365 Defender (répertorié en tant que centre de **sécurité)** et de Defender pour les points de terminaison (répertoriés en tant que points **de terminaison).** <br/><br/> Pour en savoir plus, [voir Paramètres](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
 | **Autres ressources** | Affiche une liste d’autres portails et centres, tels que les Azure Active Directory et les Centre de conformité Microsoft 365. <br/><br/> Pour en savoir plus, consultez [les portails de sécurité Microsoft et les centres d’administration.](../defender/portals.md) |
 
 > [!TIP]
@@ -95,7 +98,7 @@ Utilisez les **onglets Alertes,** Périphériques et Utilisateurs pour afficher 
 > [!TIP]
 > Pour en savoir plus sur l’utilisation de **l’affichage Incident,** voir [Gérer les incidents.](manage-incidents.md)
 
-## <a name="manage-devices"></a>Gestion des appareils
+## <a name="manage-devices"></a>Gérer les appareils
 
 Pour afficher et gérer les appareils de votre organisation, dans la barre de navigation, sous Points de terminaison, sélectionnez **Inventaire des appareils.** Une liste d’appareils s’affiche, comme illustré dans l’image suivante :
 

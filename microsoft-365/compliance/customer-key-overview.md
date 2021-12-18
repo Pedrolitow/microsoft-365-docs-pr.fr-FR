@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7e81c6eb7e6ce6f7ac2ea2f8a61f15084032e955
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370367"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560167"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
@@ -52,7 +52,6 @@ Une stratégie de chiffrement de données (DEP) définit la hiérarchie de chiff
 - Teams messages d’état
 - Informations sur l’utilisateur et le signal Exchange Online
 - Exchange Online boîtes aux lettres qui ne sont pas déjà chiffrées par des deps de boîte aux lettres
-- Stockage du journal d’audit unifié
 - Protection des données Microsoft :
 
   - Données de correspondance de données exactes (EDM), y compris les schémas de fichiers de données, les packages de règles et les sels utilisés pour hachage des données sensibles. Pour EDM et Microsoft Teams, le PED à charges multiples chiffre les nouvelles données à partir du moment où vous affectez le PED au client. Par Exchange Online, la clé client chiffre toutes les données existantes et nouvelles.

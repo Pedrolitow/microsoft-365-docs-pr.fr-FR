@@ -1,6 +1,6 @@
 ---
 title: Centre de sécurité Microsoft Defender
-description: Centre de sécurité Microsoft Defender est le portail où vous pouvez accéder à Microsoft Defender pour endpoint.
+description: Centre de sécurité Microsoft Defender est le portail sur lequel vous pouvez accéder à Microsoft Defender pour endpoint.
 keywords: windows, defender, sécurité, centre, defender, avancé, menace, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,19 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 793fa5bb18fbf766b8174866d7741f8419af66cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67aea0004e38ca5aee14e16fba47612e0e44f5ff
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206864"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560467"
 ---
 # <a name="microsoft-defender-security-center"></a>Centre de sécurité Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +50,7 @@ Centre de sécurité Microsoft Defender est le portail sur lequel vous pouvez ac
 |[Intégration des appareils](onboard-configure.md)|Découvrez l’intégration de clients, de serveurs et d’appareils Windows externes. Découvrez comment exécuter un test de détection, configurer les paramètres de proxy et de connectivité Internet, et comment résoudre les problèmes d’intégration potentiels.|
 |[Comprendre le portail](use.md)|Comprendre les opérations de sécurité, le score de sécurité et les tableaux de bord d’analyse des menaces, ainsi que la navigation dans le portail.|
 |Examiner et corriger les menaces|Examiner les alertes, les appareils et prendre des mesures de réponse pour corriger les menaces.|
-|Prise en charge de l’API et du SIEM|Utilisez les API pris en charge pour tirer et créer des alertes personnalisées, ou automatiser les flux de travail. Utilisez les outils SIEM pris en charge pour tirer des alertes Centre de sécurité Microsoft Defender.|
+|Prise en charge de l’API et du SIEM|Utilisez les API pris en charge pour tirer et créer des alertes personnalisées ou automatiser les flux de travail. Utilisez les outils SIEM pris en charge pour tirer des alertes de Centre de sécurité Microsoft Defender.|
 |Rapports|Créez et créez des Power BI à l’aide de Microsoft Defender pour les données de point de terminaison.|
 |Vérifier l’état du capteur et de l’état du service|Vérifiez que le service est en cours d’exécution et vérifiez l’état du capteur sur les appareils.|
 |[Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md)|Configurez les paramètres généraux, activez l’expérience d’aperçu, les notifications et activez d’autres fonctionnalités.|

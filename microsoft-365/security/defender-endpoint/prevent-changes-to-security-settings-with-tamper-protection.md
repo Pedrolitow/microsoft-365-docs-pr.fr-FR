@@ -17,24 +17,26 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 6259cafb34922d170c1c22429e3a06805f0cc0e3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282764"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566698"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 La protection contre la falsification est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
 - Windows 10
 - Windows 11
+- Windows 10 Entreprise à sessions multiples
+- Windows 11 Entreprise sessions multiples 
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server, version 1803 ou ultérieure
@@ -44,7 +46,7 @@ La protection contre la falsification est disponible pour les appareils qui exé
 > [!NOTE]
 > La protection contre la falsification Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans la solution unifiée moderne pour [Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -56,6 +58,7 @@ Avec la protection contre la falsification, les applications malveillantes ne pe
 - Désactivation de l’antivirus (par exemple, IOfficeAntivirus (IOAV))
 - Désactivation de la protection cloud
 - Suppression des mises à jour de l’intelligence de la sécurité
+- Désactivation des actions automatiques sur les menaces détectées
 
 ### <a name="how-it-works"></a>Mode de fonctionnement
 
@@ -69,9 +72,7 @@ La protection contre la falsification ne vous empêche pas d’afficher vos para
 
 ### <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
-<br>
-
-****
+<br/><br/>
 
 |Pour effectuer cette tâche...|Consultez cette section...|
 |---|---|
@@ -82,22 +83,18 @@ La protection contre la falsification ne vous empêche pas d’afficher vos para
 |Afficher les détails sur les tentatives de falsification sur les appareils|[Afficher des informations sur les tentatives de falsification](#view-information-about-tampering-attempts)|
 |Passer en revue vos recommandations en matière de sécurité|[Examiner les recommandations de sécurité](#review-your-security-recommendations)|
 |Consulter la liste des questions fréquemment posées (FAQ)|[Parcourir les FAQ](#view-information-about-tampering-attempts)|
-|
 
 Selon la méthode ou l’outil de gestion que vous utilisez pour activer la protection contre la falsification, il peut y avoir une dépendance sur la protection livrée par le cloud.
 
 Le tableau suivant fournit des détails sur les méthodes, les outils et les dépendances.
 
-<br>
-
-****
+<br/><br/>
 
 |Comment la protection contre la falsification est activée|Dépendance à la protection cloud (MAPS)|
 |---|---|
-|Microsoft Intune|Non|
+|Microsoft Intune|Non|
 |Microsoft Endpoint Configuration Manager + attachement de client|Non|
 |Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) )|Oui|
-|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Gérer la protection contre la falsification pour votre organisation à l’aide Microsoft 365 Defender portail
 
@@ -116,16 +113,16 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 - Des autorisations appropriées doivent vous être [attribuées, telles](/microsoft-365/security/defender-endpoint/assign-portal-access) que l’administrateur global, l’administrateur de sécurité ou les opérations de sécurité.
 
 - Vos Windows doivent être en cours d’exécution dans l’une des versions suivantes Windows :
+  
   - Windows 10
   - Windows 11
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-  - Windows Server 2022
+  - Windows Server 2022
   - Windows Server, version [1803 ou](/windows/release-health/status-windows-10-1803) ultérieure
   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
   - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Pour plus d’informations sur les publication, [voir Windows 10 de publication.](/windows/release-health/release-information)
-
 
 - Vos appareils doivent être [intégrés à Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/onboarding)
 
@@ -151,7 +148,7 @@ Si vous faites partie de l’équipe de sécurité de votre organisation et que 
 
 - Des autorisations appropriées doivent vous être [attribuées, telles](/microsoft-365/security/defender-endpoint/assign-portal-access) que l’administrateur global, l’administrateur de sécurité ou les opérations de sécurité.
 
-- Votre organisation utilise [Intune pour gérer les appareils.](/intune/fundamentals/what-is-device-management) ([Les licences Intune](/intune/fundamentals/licenses) sont requises ; Intune est inclus dans Microsoft 365 E5.)
+- Votre organisation utilise [Intune pour gérer les appareils.](/intune/fundamentals/what-is-device-management) ([Les licences Intune](/intune/fundamentals/licenses) sont requises ; Intune est inclus dans Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Gouvernement G5/G3, et Intune pour l’Éducation.)
 
 - Vos Windows doivent s’Windows 11 ou Windows 10 OS [1709,](/windows/release-health/status-windows-10-1709) [1803,](/windows/release-health/status-windows-10-1803) [1809 ou](/windows/release-health/status-windows-10-1809-and-windows-server-2019) ultérieur. (Pour plus d’informations sur les publication, voir [Windows 10 de publication.)](/windows/release-health/release-information)
 
@@ -258,7 +255,7 @@ Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, consul
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)ou ultérieur avec [Microsoft Defender pour Endpoint](/microsoft-365/security/defender-endpoint).
 
-Windows 11
+Windows 11
 
 Si vous utilisez Configuration Manager, version 2006, avec attachement client, la protection contre la falsification peut être étendue à Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022. Voir Attachement client : créer et déployer une stratégie antivirus de sécurité de point de terminaison [à partir du Centre d’administration (prévisualisation).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
 

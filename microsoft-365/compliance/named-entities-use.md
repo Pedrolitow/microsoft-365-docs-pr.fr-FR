@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti des entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110810"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560431"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 
@@ -55,10 +55,11 @@ Vous pouvez utiliser des sits d’entité nommée et des stratégies améliorée
 - Sites SharePoint
 - Les comptes OneDrive
 - conversation et messages de canal Teams
+- Appareils (Windows 10 de point de terminaison)
 
 Les sits d’entité nommée et les stratégies améliorées ne sont pas pris en charge pour :
 
-- Appareils (Windows 10 de point de terminaison)
+
 - Référentiels locaux
 
 ## <a name="create-and-edit-enhanced-policies"></a>Créer et modifier des stratégies améliorées
@@ -104,14 +105,15 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 |SharePoint données au repos en ligne|Pris en charge|
 |Scanneur Azure Information Protection (AIP)|non pris en charge|
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 |Problème  |Impact  |
 |---------|---------|
 |Conseils de stratégie DLP (OWA, Outlook, Office clients Win32)     |   Les conseils de stratégie avec condition d’entité entraînent l’absence de correspondance      |
 | Prise en charge des langues asiatiques pour le nom de la personne (chinois, japonais, coréen)    | Entités nommées uniquement prise en charge pour le jeu de caractères en caractères latins (autrement dit, kanji non pris en charge) pour le nom de la personne        |
-|Charge de travail des appareils (point de terminaison)     | Non pris en charge en tant que charge de travail : la stratégie de authoring avec des entités nommées n’est pas autorisée        |
 |Référentiels locaux    | Non pris en charge en tant que charge de travail|
+
+<!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
 ## <a name="for-further-information"></a>Pour plus d’informations
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->

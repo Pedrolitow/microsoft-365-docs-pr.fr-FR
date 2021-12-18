@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Trouvez des informations sur le déplacement d’un site OneDrive vers un autre emplacement géographique, notamment sur la planification des déplacements de sites et la communication des attentes aux utilisateurs.
-ms.openlocfilehash: 232654ac0cea95fee6dfef036ecb87768e5768d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd601c135ec59a51a413cb4867e567d5dd269752
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195352"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560815"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
@@ -62,7 +62,7 @@ Lorsque vous utilisez les cmdlets de déplacement géographique, connectez-vous 
 
 Par exemple : pour déplacer OneDrive de l’utilisateur « Matt@contosoenergy.onmicrosoft.com » , connectez-vous au Centre d’administration EUR SharePoint car le OneDrive de l’utilisateur se trouve dans l’emplacement géographique EUR :
 
-`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Capture d’écran de la fenêtre PowerShell montrant l’cmdlet connect-sposervice.](../media/move-onedrive-between-geo-locations-image1.png)
 
@@ -171,7 +171,7 @@ Les utilisateurs autorisé à OneDrive contenu continueront d’avoir accès au 
 
 ### <a name="onedrive-sync-app"></a>Synchronisation OneDrive application 
 
-L Synchronisation OneDrive’application détecte et transfère automatiquement la synchronisation de façon transparente vers le nouvel emplacement OneDrive une fois le déplacement OneDrive géo terminé. L’utilisateur n’a pas besoin de se connecter à nouveau ou d’agir autrement.  (Version 17.3.6943.0625 ou ultérieure de l’application de synchronisation requise.)
+L Synchronisation OneDrive application détecte et transfère automatiquement la synchronisation de façon transparente vers le nouvel emplacement OneDrive une fois le déplacement OneDrive la géolocalisation terminée. L’utilisateur n’a pas besoin de se connecter à nouveau ou d’agir autrement.  (Version 17.3.6943.0625 ou ultérieure de l’application de synchronisation requise.)
 
 Si un utilisateur met à jour un fichier alors que le déplacement géographique OneDrive est en cours, l’application de synchronisation l’informe que les téléchargements de fichiers sont en attente pendant le déplacement.
 
@@ -193,14 +193,14 @@ Le client OneNote win32 client et l’application UWP (universelle) détecteront
 
 Lorsque le déplacement géographique de OneDrive est terminé, les utilisateurs ont accès à leurs fichiers OneDrive sur l’application Teams. En outre, les fichiers partagés via la conversation Teams de leur site OneDrive avant le déplacement géographique continuent à fonctionner après le déplacement.
 
-### <a name="onedrive-mobile-app-ios"></a>OneDrive Application mobile (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobile App (iOS) 
 
 Lorsque le déplacement géographique de OneDrive est terminé, l’utilisateur doit se déconnecter et se reconnecter sur l’application mobile iOS pour réaliser la synchronisation avec le nouvel emplacement OneDrive.
 
 ### <a name="existing-followed-groups-and-sites"></a>Sites et groupes suivis existants
 
-Les sites et les groupes suivis s’afficheront dans l’OneDrive de l’utilisateur, quel que soit son emplacement géographique. Les sites et les groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet distinct.
+Les sites suivis et les groupes s’afficheront dans les OneDrive de l’utilisateur, quel que soit leur emplacement géographique. Les sites et les groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet distinct.
 
-### <a name="delve-geo-url-updates"></a>Delve Mises à jour de l’URL géographique
+### <a name="delve-geo-url-updates"></a>Delve d’URL géographiques
 
 Les utilisateurs sont envoyés vers la Delve géographique correspondant à leur PDL uniquement après que leur OneDrive a été déplacée vers la nouvelle géographique.

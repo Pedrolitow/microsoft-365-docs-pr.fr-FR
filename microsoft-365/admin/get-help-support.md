@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: 1da14a8cd017ce9b1a63a00ff042271b0582e6ed
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 54c25cd9b6a7fcca46bd434f4e195c088d8d0986
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530642"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560107"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -48,7 +48,7 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si vous recevez un message qui indique que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action, c’est que vous n’êtes pas un administrateur. Pour plus d’informations, voir [Qui dispose des autorisations d’administrateur dans mon entreprise ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin/admin-overview/admin-center-overview.md).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si vous recevez un message qui indique que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action, vous n’êtes pas un administrateur. Pour plus d’informations, voir [Qui des autorisations d’administrateur dans mon entreprise ?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. Dans le coin inférieur droit de la page, sélectionnez **Aide & support technique.**
 3. Tapez une question ou un mot clé dans la zone de texte. Si vous obtenez une liste de listes, sélectionnez celle qui est la plus proche de votre question, ou continuez à taper votre question, puis appuyez sur **Entrée**.
 4. Si les résultats ne vous aident pas, en bas, sélectionnez **Contacter le support technique.**

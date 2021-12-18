@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: c427bdbe26c93e8f8854c5357bb218d0728904b6
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 13edbb7ea06e9666c6c318cb3fa19072f369e3bc
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520799"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560803"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -280,6 +280,71 @@ Dans la **page d’accueil,** vous configurez la page web vers qui l’utilisate
   - **Utilisez une URL personnalisée :** ajoutez l’URL dans la zone Entrer l’URL de la **page** d’accueil personnalisée qui s’affiche. Aucune autre option n’est disponible sur la page.
 
 Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+## <a name="select-end-user-notification"></a>Sélectionner la notification de l’utilisateur final
+
+Dans la page **Sélectionner la notification de l’utilisateur** final, sélectionnez l’une des options de notification suivantes :
+
+- **Ne pas envoyer de notifications**: cliquez **sur Continuer** dans la boîte de dialogue d’alerte qui s’affiche. Si vous sélectionnez cette option, vous êtes conduit à la [page](#simulation-schedule) Planification de simulation lorsque vous cliquez sur **Suivant**.
+
+- **Notification microsoft par défaut (recommandée)**: les paramètres supplémentaires suivants sont disponibles sur la page :
+  - **Sélectionnez** la langue par défaut : les valeurs disponibles sont : **chinois (simplifié),** chinois **(traditionnel),** **anglais**, **français** **,** allemand **,** italien **,** japonais **,** coréen **,** portugais **,** **russe**, espagnol et néerlandais **.**
+  - Par défaut, la seule notification disponible à sélectionner est la **notification positive de Microsoft.** Les informations suivantes sont disponibles pour la notification :
+    - **Notifications** (nom) : la valeur est une notification positive par **défaut de Microsoft.**
+    - **Langue**: si la notification contient plusieurs traductions, les deux premières langues sont affichées directement. Pour voir les langues restantes, pointez sur l’icône numérique (par exemple, **+10**).
+    - **Type**: la valeur est **positive.**
+    - **Préférences de remise**: sélectionnez parmi les valeurs suivantes :
+      - **Ne pas fournir**
+      - **Fournir après la fin de la campagne**
+      - **Fournir pendant la campagne**
+    - **Deliver to**: La valeur n’est **pas applicable.**
+    - **Actions**: si vous cliquez sur ![ l’icône Afficher.](../../media/m365-cc-sc-view-icon.png) **Icône Afficher,** la page **de notification révision** s’affiche avec les informations suivantes :
+      - **Onglet Aperçu** : afficher le message de notification. Pour afficher le message dans différentes langues, utilisez la **zone Sélectionner la langue.**
+      - **Onglet Détails** : afficher les détails de la notification :
+        - **Description de la notification**
+        - **Source**: pour les notifications intégrées, la valeur est **Global**. Pour les notifications personnalisées, la valeur est **Client**.
+        - **Type de notification**
+        - **Modifié par**
+        - **Dernière modification**
+
+        Lorsque vous avez terminé, cliquez sur **Fermer**.
+
+  Si vous sélectionnez cette option, vous êtes conduit à la [page](#simulation-schedule) Planification de simulation lorsque vous cliquez sur **Suivant**.
+
+- **Notifications personnalisées** pour l’utilisateur final : lorsque vous cliquez sur **Suivant,** vous êtes conduit à la page de **notification** de réception positive, comme décrit dans la section suivante, dans laquelle vous pouvez choisir parmi les notifications existantes ou créer de nouvelles notifications.
+
+Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+### <a name="positive-reinforcement-notification"></a>Notification de réception positive
+
+La page **de notification de réception** positive est disponible uniquement si vous avez sélectionné des **notifications personnalisées** pour l’utilisateur final sur la page précédente.
+
+- **Préférences de remise**: sélectionnez l’une des valeurs suivantes :
+  - **Ne pas fournir**
+  - **Fournir une fois que l’utilisateur signale la fin d’un hameçonnage et d’une campagne**
+  - **Remettre immédiatement après que l’utilisateur a fait état d’un hameçonnage**
+
+- **Sélectionnez une notification de réception positive**: vous pouvez sélectionner une notification existante ou créer une notification de type Notification positive à utiliser : 
+  - Pour sélectionner une notification existante, cliquez dans la zone vierge en regard du nom de la notification. Si vous cliquez sur le nom de la notification, la notification est sélectionnée et un aperçu volant s’affiche. Pour désélectionner la notification, désélectionnez la case en regard de la notification.
+  - Pour rechercher une notification existante, utilisez ![ l’icône Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de** recherche pour rechercher le nom.
+  - Pour créer une notification, cliquez sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez une nouvelle**.
+  - Pour modifier une notification personnalisée existante, sélectionnez-la, puis cliquez sur ![ Modifier l’icône de notification.](../../media/m365-cc-sc-edit-icon.png) **Notification de modification**.
+
+#### <a name="create-new-notification-wizard"></a>Créer un assistant de notification
+
+Si vous avez cliqué sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en une** nouvelle sur la page **de notification de réception positive,** un assistant de création de notification s’ouvre.
+
+Les étapes de création sont identiques à celles décrites dans [Créer des notifications à l’utilisateur final.](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications)
+
+> [!NOTE]
+> Dans la page **Définir les détails,** n’oubliez pas de sélectionner la valeur Notification d’accueil **positive** pour sélectionner le type **de notification.** Ne sélectionnez pas notification **de simulation.**
+
+Lorsque vous avez terminé, vous êtes revenir à la page de **notification** d’accueil positive où la notification que vous vient de créer apparaît dans la liste Sélectionner une **notification** positive.
+
+- Pour créer une notification, cliquez sur ![Créez une icône.](../../media/m365-cc-sc-create-icon.png).
+- Pour modifier la notification ou ajouter des traductions supplémentaires, sélectionnez la notification dans la liste, puis cliquez sur ![ Modifier l’icône de notification.](../../media/m365-cc-sc-edit-icon.png) **Modifiez la notification** pour démarrer l’Assistant notification comme décrit précédemment (avec la plupart des valeurs déjà remplies). Si la notification a déjà des traductions pour les 12 langues prise en charge, vous ne pouvez pas ajouter de traductions.
+
+Sélectionnez la notification que vous souhaitez utiliser, puis cliquez sur **Suivant**.
 
 ## <a name="simulation-schedule"></a>Planification de simulation
 

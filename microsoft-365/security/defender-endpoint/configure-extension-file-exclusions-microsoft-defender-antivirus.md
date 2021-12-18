@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 12/06/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 616dde760ab24d12efe5c4621a1ee1829cb1798f
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320730"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566662"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -138,7 +138,7 @@ Le format des cmdlets est le suivant :
 
 Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cmdlet>` partie de l’cmdlet PowerShell :
 
-<br/>
+<br/><br/>
 
 |Action de configuration|Cmdlet PowerShell|
 |:---|:---|
@@ -148,7 +148,7 @@ Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cm
 
 Le tableau suivant répertorie les valeurs que vous pouvez utiliser dans la `<exclusion list>` partie de l’cmdlet PowerShell :
 
-<br/>
+<br/><br/>
 
 |Type d’exclusion|Paramètre PowerShell|
 |---|---|
@@ -203,7 +203,7 @@ Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variable
     
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés et fournit quelques exemples.
 
-<br/>
+<br/><br/>
 
 |Caractère générique|Exemples|
 |---|---|
@@ -224,7 +224,7 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 
 Le tableau suivant répertorie et décrit les variables d’environnement de compte système.
 
-<br/>
+<br/><br/>
 
 |Cette variable d’environnement système...|Redirige vers cette|
 |---|---|
@@ -316,12 +316,12 @@ Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe,
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.2110-6.0 (publiée en novembre 2021) ou ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.2111-5.0 (publiée en décembre 2021) ou version ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 

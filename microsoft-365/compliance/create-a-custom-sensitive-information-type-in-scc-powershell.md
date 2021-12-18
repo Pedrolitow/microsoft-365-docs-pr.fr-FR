@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: d4d41ef638ecdc54e99fa6d52d9212189b0bc231
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507313"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559783"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -486,9 +486,9 @@ Pour télécharger votre package de règles, procédez comme suit :
 
 Lorsque vous chargez votre fichier XML de package de règles, le système valide le fichier XML et recherche des modèles incorrects connus et des problèmes de performance évidents. Voici quelques-uns des problèmes connus que la validation contrôle. Une expression régulière :
   
-- Les assertions lookbehind ou lookahead dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
+- Les assertions lookbehind dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
 
-    Par exemple, cette expression regex ne réussira pas la validation, car la première option est celle qui présente une longueur nulle tandis que les deux options suivantes ont une longueur `"(?<=^|\s|_)"` `^` `\s` `_` d’une.  Une autre façon d’écrire cette expression régulière afin qu’elle soit validée est `"(?:^|(?<=\s|_))"` .
+    Par exemple, cette expression regex ne réussira pas la validation, car la première option est celle qui présente une longueur nulle tandis que les deux options suivantes ont une longueur `"(?<=^|\s|_)"` `^` `\s` `_` d’une.  Une autre façon d’écrire cette expression régulière est `"(?:^|(?<=\s|_))"` .
   
 - ne peut pas commencer ou se terminer par l’alternateur « | », qui correspond à tous les éléments, car il est considéré comme une correspondance vide ;
     

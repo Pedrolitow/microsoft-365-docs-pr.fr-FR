@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: a107cd297c7ca80ff7cd740a8195d57badbc4df4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111110"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560383"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Vue d’ensemble de Microsoft Defender for Cloud Apps in Defender for Endpoint
 
@@ -29,8 +29,9 @@ ms.locfileid: "61111110"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**S’applique à :**
-- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -59,4 +60,4 @@ Pour plus d’informations sur la découverte cloud, voir [Working with discover
 
 ## <a name="related-topic"></a>Rubrique connexe
 
-- [Configurer Microsoft Defender pour l’intégration des applications cloud](microsoft-cloud-app-security-config.md)
+- [Configurer l’intégration de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-config.md)

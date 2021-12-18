@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c36d0e1f1c4ced84bbc914a3c0a4ce61e699b28
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 054016a9db24c508c5eb9418b8e7d049b30389ce
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426374"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560035"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -84,18 +84,27 @@ Toutes nos mises à jour contiennent
 - Améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> Novembre-2021 (plateforme : 4.18.2111.X| Moteur : 1.1.18800.4)</summary>
+<summary>Novembre-2021 (plateforme : 4.18.2111.5| Moteur : 1.1.18800.4)</summary>
 
-&ensp;Version de mise à jour des informations de sécurité **: 1.353.3.0**<br/>
+&ensp;Version de mise à jour des informations de sécurité **: 1.355.2.0**<br/>
 &ensp;Publication : **9 décembre 2021**<br/>
-&ensp;Plateforme : **4.18.2111.X**<br/>
+&ensp;Plateforme : **4.18.2111.5**<br/>
 &ensp;Moteur : **1.1.18800.4**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
-Version du moteur : 1.1.18800.4 Version de mise à jour de l’intelligence de sécurité : 1.353.3.0
+Version du moteur : 1.1.18800.4 Version de mise à jour de l’intelligence de sécurité : 1.355.2.0
 
 ### <a name="whats-new"></a>Nouveautés
-Aucune nouvelle fonctionnalité
+
+- Amélioration de l’efficacité de l’utilisation du processeur de certains scénarios intensifs sur Exchange serveurs
+- Ajout de nouveaux champs d’état de contrôle d’appareil Get-MpComputerStatus dans le module Defender PowerShell. Pour plus d’informations, [voir Microsoft Defender for Endpoint Device Control Removable Stockage Access Control](device-control-removable-storage-access-control.md).
+- Bogue résolu dans lequel `SharedSignatureRoot` la valeur n’a pas pu être supprimée lorsqu’elle est définie avec PowerShell
+- Bogue résolu dans lequel la [protection](prevent-changes-to-security-settings-with-tamper-protection.md) contre la falsification n’a pas été activée, même si Microsoft Defender pour le point de terminaison a indiqué que la protection contre la falsification était activée
+- Ajout de la prise en charge et des correctifs de bogues à l’analyseur de performances pour Antivirus Microsoft Defender’outil. Pour plus d’informations, [voir Analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md).   
+   - Prise en charge de PowerShell ISE ajoutée pour `New-MpPerformanceRecording`
+   - Correction des erreurs de bogue pour `Get-MpPerformanceReport -TopFilesPerProcess`
+   - Fuite de session d’enregistrement des performances fixe lors de l’utilisation dans `New-MpPerformanceRecording` PowerShell 7.x, les sessions à distance et PowerShell ISE
+
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu

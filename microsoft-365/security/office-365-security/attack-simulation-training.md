@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 9e33da3aa34c30f273581de97cd27c2ca534e3d3
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521003"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560784"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage dans Defender pour Office 365
 
@@ -269,6 +269,71 @@ Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 > [!NOTE]
 > Certaines marques, logos, symboles, insignias et autres identificateurs source bénéficient d’une protection renforcée en vertu de lois et lois locales, nationales et fédérales. L’utilisation non autorisée de ces indicateurs peut imposer des sanctions aux utilisateurs, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste complète, il s’agit notamment des personnes qui ont l’avantage de ne pas avoir à se servir de cette liste. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce impliquent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risquée, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est approprié ou non à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.
+
+## <a name="select-end-user-notification"></a>Sélectionner la notification de l’utilisateur final
+
+Dans la page **Sélectionner la notification de l’utilisateur** final, sélectionnez l’une des options de notification suivantes :
+
+- **Ne pas envoyer de notifications**: cliquez **sur Continuer** dans la boîte de dialogue d’alerte qui s’affiche. Si vous sélectionnez cette option, vous êtes conduit à la page [Détails du](#launch-details) lancement lorsque vous cliquez sur **Suivant**.
+
+- **Notification microsoft par défaut (recommandée)**: les paramètres supplémentaires suivants sont disponibles sur la page :
+  - **Sélectionnez** la langue par défaut : les valeurs disponibles sont : **chinois (simplifié),** chinois **(traditionnel),** **anglais**, **français** **,** allemand **,** italien **,** japonais **,** coréen **,** portugais **,** **russe**, espagnol et néerlandais **.**
+  - Par défaut, la seule notification disponible à sélectionner est la **notification positive de Microsoft.** Les informations suivantes sont disponibles pour la notification :
+    - **Notifications** (nom) : la valeur est une notification positive par **défaut de Microsoft.**
+    - **Langue**: si la notification contient plusieurs traductions, les deux premières langues sont affichées directement. Pour voir les langues restantes, pointez sur l’icône numérique (par exemple, **+10**).
+    - **Type**: la valeur est **positive.**
+    - **Préférences de remise**: sélectionnez parmi les valeurs suivantes :
+      - **Ne pas fournir**
+      - **Fournir après la fin de la campagne**
+      - **Fournir pendant la campagne**
+    - **Deliver to**: La valeur n’est **pas applicable.**
+    - **Actions**: si vous cliquez sur ![ l’icône Afficher.](../../media/m365-cc-sc-view-icon.png) **Icône Afficher,** la page **de notification révision** s’affiche avec les informations suivantes :
+      - **Onglet Aperçu** : afficher le message de notification. Pour afficher le message dans différentes langues, utilisez la **zone Sélectionner la langue.**
+      - **Onglet Détails** : afficher les détails de la notification :
+        - **Description de la notification**
+        - **Source**: pour les notifications intégrées, la valeur est **Global**. Pour les notifications personnalisées, la valeur est **Client**.
+        - **Type de notification**
+        - **Modifié par**
+        - **Dernière modification**
+
+        Lorsque vous avez terminé, cliquez sur **Fermer**.
+
+  Si vous sélectionnez cette option, vous êtes conduit à la page [Détails du](#launch-details) lancement lorsque vous cliquez sur **Suivant**.
+
+- **Notifications personnalisées** pour l’utilisateur final : lorsque vous cliquez sur **Suivant,** vous êtes conduit à la page de **notification** de réception positive, comme décrit dans la section suivante, dans laquelle vous pouvez choisir parmi les notifications existantes ou créer de nouvelles notifications.
+
+Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+### <a name="positive-reinforcement-notification"></a>Notification de réception positive
+
+La page **de notification de réception** positive est disponible uniquement si vous avez sélectionné des **notifications personnalisées** pour l’utilisateur final sur la page précédente.
+
+- **Préférences de remise**: sélectionnez l’une des valeurs suivantes :
+  - **Ne pas fournir**
+  - **Fournir une fois que l’utilisateur signale la fin d’un hameçonnage et d’une campagne**
+  - **Remettre immédiatement après que l’utilisateur a fait état d’un hameçonnage**
+
+- **Sélectionnez une notification de réception positive**: vous pouvez sélectionner une notification existante ou créer une notification de type Notification positive à utiliser : 
+  - Pour sélectionner une notification existante, cliquez dans la zone vierge en regard du nom de la notification. Si vous cliquez sur le nom de la notification, la notification est sélectionnée et un aperçu volant s’affiche. Pour désélectionner la notification, désélectionnez la case en regard de la notification.
+  - Pour rechercher une notification existante, utilisez ![ l’icône Rechercher.](../../media/m365-cc-sc-search-icon.png) **Zone de** recherche pour rechercher le nom.
+  - Pour créer une notification, cliquez sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez une nouvelle**.
+  - Pour modifier une notification personnalisée existante, sélectionnez-la, puis cliquez sur ![ Modifier l’icône de notification.](../../media/m365-cc-sc-edit-icon.png) **Notification de modification**.
+
+#### <a name="create-new-notification-wizard"></a>Créer un assistant de notification
+
+Si vous avez cliqué sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Créez-en une** nouvelle sur la page **de notification de réception positive,** un assistant de création de notification s’ouvre.
+
+Les étapes de création sont identiques à celles décrites dans [Créer des notifications à l’utilisateur final.](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications)
+
+> [!NOTE]
+> Dans la page **Définir les détails,** n’oubliez pas de sélectionner la valeur Notification d’accueil **positive** pour sélectionner le type **de notification.** Ne sélectionnez pas notification **de simulation.**
+
+Lorsque vous avez terminé, vous êtes revenir à la page de **notification** d’accueil positive où la notification que vous vient de créer apparaît dans la liste Sélectionner une **notification** positive.
+
+- Pour créer une notification, cliquez sur ![Créez une icône.](../../media/m365-cc-sc-create-icon.png).
+- Pour modifier la notification ou ajouter des traductions supplémentaires, sélectionnez la notification dans la liste, puis cliquez sur ![ Modifier l’icône de notification.](../../media/m365-cc-sc-edit-icon.png) **Modifiez la notification** pour démarrer l’Assistant notification comme décrit précédemment (avec la plupart des valeurs déjà remplies). Si la notification a déjà des traductions pour les 12 langues prise en charge, vous ne pouvez pas ajouter de traductions.
+
+Sélectionnez la notification que vous souhaitez utiliser, puis cliquez sur **Suivant**.
 
 ## <a name="launch-details"></a>Détails du lancement
 
