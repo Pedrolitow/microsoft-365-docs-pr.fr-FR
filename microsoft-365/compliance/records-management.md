@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165197"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559867"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -80,22 +80,24 @@ Une étiquette de rétention standard comporte des paramètres et des actions de
 |Action| Étiquette de rétention |Enregistrement – colonne verrouillée| Enregistrement – colonne déverrouillée| Enregistrement réglementaire |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Modifier les contenus|Autorisé | **Bloqué** | Autorisé | **Bloqué**|
-|Modifier les propriétés, y compris Renommer|Autorisé |Autorisé | Autorisé| **Bloqué**|
-|Supprimer|<sup>1</sup> autorisé |**Bloqué** |**Bloqué**| **Bloqué**|
+|Modifier les propriétés, y compris Renommer|Autorisé |<sup>1</sup> autorisé | Autorisé | **Bloqué**|
+|Supprimer|<sup>2</sup> autorisé |**Bloqué** |**Bloqué**| **Bloqué**|
 |Copier|Autorisé |Autorisé | Autorisé| Autorisé|
-|Se déplacer au sein du conteneur <sup>2</sup>|Autorisé |Autorisé | Autorisé| Autorisé|
-|Se déplacer dans les conteneurs <sup>2</sup>|Autorisé |Autorisé si jamais déverrouillé | **Bloqué** | **Bloqué**|
+|Déplacer au sein du conteneur <sup>3</sup>|Autorisé |Autorisé | Autorisé| Autorisé|
+|Déplacer sur les conteneurs <sup>3</sup>|Autorisé |Autorisé si jamais déverrouillé | **Bloqué** | **Bloqué**|
 |Ouvert/lu|Autorisé |Autorisé | Autorisé| Autorisé|
 |Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
 |Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement| **Bloqué**
 
 Notes de bas de page :
 
-<sup>1</sup> Pour SharePoint et OneDrive, peut être bloqué en tant que paramètre **client dans les paramètres de gestion des enregistrements Centre de conformité Microsoft 365 > Gestion des enregistrements Suppression des** > **étiquettes** >  **de rétention des**  >  **éléments**.
+<sup>1</sup> Autorisé par défaut, mais peut être bloqué par un paramètre client pour les fichiers dont la taille est supérieure à 0 octets : accédez au nœud **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Autoriser la modification des propriétés de l’enregistrement**, puis désactivez le paramètre **Autoriser les utilisateurs à modifier les propriétés d’enregistrement**.
+
+<sup>2</sup> Pour SharePoint et OneDrive, peut être bloqué en tant que paramètre client dans le Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**
 
 Lorsque vous appliquez une étiquette de rétention à un élément de liste qui contient une pièce jointe au document, ce document n’hérite pas des paramètres de rétention et peut être supprimé de l’élément de liste. En comparaison, si cet élément de liste a été déclaré comme un enregistrement avec une étiquette de rétention, la pièce jointe au document hériterait des paramètres de rétention et n’a pas pu être supprimée.
 
-<sup>2</sup> Les conteneurs incluent les bibliothèques de documents SharePoint, les comptes OneDrive et les boîtes aux lettres Exchange.
+<sup>3</sup> Les conteneurs incluent les bibliothèques de documents SharePoint, les comptes OneDrive et les boîtes aux lettres Exchange.
 
 > [!IMPORTANT]
 > La principale différence pour un enregistrement réglementaire est qu’une fois qu’il est appliqué au contenu, personne, pas même un administrateur général, peut supprimer l’étiquette.

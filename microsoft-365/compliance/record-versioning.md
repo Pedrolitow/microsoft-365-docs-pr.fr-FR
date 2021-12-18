@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177386"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559999"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
@@ -30,6 +30,8 @@ ms.locfileid: "60177386"
 
 > [!NOTE]
 > Parce que les enregistrements réglementaires bloquent la modification, la version de l’enregistrement n’est pas disponible pour les enregistrements réglementaires.
+>
+> Vous pouvez également empêcher le contrôle de version des enregistrements pour votre client, même si vous n’utilisez pas d’enregistrements réglementaires : accédez au nœud de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Configurer le contrôle de version des enregistrements** puis désactiver le paramètre pour **Activer le contrôle de version des enregistrements**.
 
 La possibilité de marquer un document en tant qu’[enregistrement](records-management.md#records) et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Toutefois, une collaboration peut également être nécessaire pour que les utilisateurs puissent créer les versions suivantes.
 
@@ -53,14 +55,14 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations de modification standard peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est encore considéré comme un enregistrement. Lorsque la modification est terminée, un utilisateur peut basculer vers la bascule de l’**État de l’enregistrement** de **Déverrouillé** vers **Verrouillé**, ce qui empêche les modifications ultérieures dans ce statut.
 <br/><br/>
 
-![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement.](../media/recordversioning8.png)
+:::image type="content" alt-text="Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 ## <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 
 Lorsqu’une étiquette de rétention qui marque le contenu en tant qu’enregistrement est appliquée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
 <br/><br/>
 
-![Le statut de l’enregistrement indique que le document enregistré est déverrouillé.](../media/recordversioning9.png)
+:::image type="content" alt-text="Le statut de l’enregistrement indique que le document enregistré est déverrouillé." source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
 Lorsqu’un utilisateur déverrouille un enregistrement, il se produit les actions suivantes :
 
@@ -81,7 +83,7 @@ Lorsqu’un utilisateur verrouille un enregistrement, le document d’origine ne
 Chaque fois qu’un utilisateur déverrouille un enregistrement, la version la plus récente est copiée dans la bibliothèque de conservation et de préservation des documents et cette version contient la valeur **Enregistrement** dans le champ **Commentaires** de l’historique des versions.
 <br/><br/>
 
-![Enregistrement affiché dans la bibliothèque de conservation et de préservation.](../media/recordversioning10.png)
+:::image type="content" alt-text="Enregistrement affiché dans la bibliothèque de conservation et de préservation." source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 Pour afficher l’historique des versions, sélectionnez un document dans la bibliothèque de documents, puis cliquez sur **Historique des versions** dans le menu élément.
 
