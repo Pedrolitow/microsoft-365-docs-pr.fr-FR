@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3e833d4115eb71d766d33666f6da36cbdad99d02
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 3daa63ace419ed1a73511647c28b8fab9ac12d0d
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560755"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566458"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
@@ -48,7 +48,7 @@ L Sécurité Windows’application est une interface client Windows 10 version 1
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows’application.":::
 
-1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender pour cloud dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Sécurité Windows dans le menu **Démarrer.**
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
@@ -97,9 +97,9 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
+3. Sous **Paramètres de protection contre les virus et les menaces**, sélectionnez **Gérer les paramètres**.
 
-4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.**
+4. Sous **Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.**
 
 5. Sélectionnez l’icône plus ( **+** ) pour choisir le type et définir les options pour chaque exclusion.
 
