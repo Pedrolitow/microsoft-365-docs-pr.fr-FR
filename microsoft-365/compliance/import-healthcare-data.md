@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: e6c2387154108d54b429ec436c959925758a897b
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 119ab63fd88df421a6a6707def8c6e6f924cff2d
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234554"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578230"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer les données d’audit ehr de santé (prévisualisation)
 
@@ -66,7 +66,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs requis pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrill plan avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Champ|Catégorie|
+|Field|Catégorie|
 |:----|:----------|
 | Nom de l’événement *<br/> d’heure de création*<br/>ID de station de travail<br/>Event, section<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système EHR de santé.|
 | Patient Reg Id<br/>Prénom du patient - Nom du patient du deuxième *<br/> prénom du <br/> patient* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Patient City* <br/>Code postal patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil de patient.|
@@ -136,7 +136,7 @@ La dernière étape de la configuration d’un connecteur de santé consiste à 
 > [!NOTE]
 > Comme indiqué précédemment, la taille maximale du fichier texte qui contient les données d’audit est de 3 Go. Le nombre maximal de lignes est de 5 millions. Le script que vous exécutez dans cette étape prendra environ 30 à 40 minutes pour importer les données d’audit à partir de fichiers texte de grande taille. En outre, le script divise les fichiers texte de grande taille en blocs plus petits de 100 000 lignes, puis importe ces blocs séquentiellement.
 
-1. Accédez à la fenêtre que vous avez laissée ouverte à partir de l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée.
+1. Accédez à la fenêtre que vous avez laissée ouverte à partir de l’étape précédente pour accéder au site GitHub avec l’exemple de script. Vous pouvez également ouvrir le site avec signet ou utiliser l’URL que vous avez copiée. Vous pouvez également accéder au script [ici.](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1)
 
 2. Cliquez sur **le bouton Brut** pour afficher le script en affichage texte.
 

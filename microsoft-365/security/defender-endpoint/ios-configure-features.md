@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1953dfe4c4c9f1e8303448f1d29aa9a8c4273102
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218417"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578530"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -85,6 +85,27 @@ Pour plus d’informations sur la stratégie de protection des applications ou d
 Microsoft Defender pour le point de terminaison sur iOS active le scénario de stratégie de protection des applications et est disponible dans l’App Store d’Apple.
 
 Les utilisateurs finaux doivent installer la dernière version de l’application directement à partir de l’App Store d’Apple.
+
+## <a name="privacy-controls"></a>Contrôles de confidentialité
+
+> [!IMPORTANT]
+> Les contrôles de confidentialité pour Microsoft Defender pour point de terminaison sur iOS sont en prévisualisation. Les informations suivantes concernent les produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+
+### <a name="configure-privacy-in-phish-alert-report"></a>Configurer la confidentialité dans le rapport d’alerte d’hameçonnage
+
+Les clients peuvent désormais activer le contrôle de confidentialité pour le rapport de hameçonnage envoyé par Microsoft Defender pour Endpoint sur iOS. Cela garantit que le nom de domaine n’est pas envoyé dans le cadre de l’alerte de hameçonnage chaque fois qu’un site web de hameçonnage est détecté et bloqué par Microsoft Defender pour le point de terminaison.
+
+Utilisez les étapes suivantes pour activer la confidentialité et ne pas collecter le nom de domaine dans le cadre du rapport d’alerte de hameçonnage.
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** App  >  **configuration policies**  >  **Add** Managed  >  **devices**.
+1. Nommez la stratégie, **Plateforme > iOS/iPadOS,** sélectionnez le type de profil.
+1. Sélectionnez **Microsoft Defender pour le point de terminaison** comme application cible.
+1. In Paramètres page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**
+   - Pour activer la confidentialité et ne pas collecter le nom de domaine, entrez la valeur en tant que et `true` affectez cette stratégie aux utilisateurs. Par défaut, cette valeur est définie sur `false` .
+   - Pour les utilisateurs dont la clé est définie comme étant , l’alerte de hameçonnage ne contient pas les informations de nom de domaine chaque fois qu’un site malveillant est détecté et bloqué par `true` Defender for Endpoint.
+1. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
+
+La mise en place ou la mise hors fonction des contrôles de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurer la stratégie de conformité contre les appareils jailbreakés
 

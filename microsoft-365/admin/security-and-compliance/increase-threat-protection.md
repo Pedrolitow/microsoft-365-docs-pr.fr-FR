@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 20e939b0717e73e3148b3bbaf93e3190414609d4
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: a02bb4be1a998cec95ea2d906e7693a3af76e313
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520991"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578194"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -45,25 +45,25 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>choisissez **Afficher plus,** **Centres** d’administration, puis Sécurité **& Conformité**.
-1. Choisissez **Gestion des menaces,** puis **Stratégie**.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choisissez **Afficher plus,** **Centres d’administration,** puis **Sécurité**.
+
+1. Go to **Email & collaboration** Policies & \> **rules** \> **Threat policies**.
+
 1. Dans les stratégies disponibles, choisissez **Anti-programme malveillant.**
 
 Pour renforcer la protection contre les programmes malveillants dans la messagerie électronique :
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>dans la section Stratégies de **&,** & stratégies \>  \>  \> **anti-programme** malveillant. 
 
-2. Dans le Centre de conformité de sécurité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez &amp; **Stratégie**  \> **anti-programme malveillant.**
+2. Dans la page **Anti-programme** malveillant, double-cliquez sur **Par défaut (par défaut).** Un volant s’affiche. 
 
-3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
+3. Sélectionnez **Modifier les paramètres de protection** en bas du volant. 
 
-4. Sélectionnez **Paramètres**.
-
-5. Sous **Filtre Types de pièces jointes courants,** **sélectionnez Sur**. Les types de fichiers bloqués sont répertoriés dans la fenêtre directement sous ce contrôle. Veillez à ajouter les types de fichiers ci-après :
+4. sous **Paramètres de protection,** activez la case à cocher en regard de **Activer le filtre des pièces jointes communes.** Les types de fichiers bloqués sont répertoriés directement sous ce contrôle. Veillez à ajouter les types de fichiers ci-après :
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
-   Si nécessaire, vous pouvez ajouter ou supprimer des types de fichiers ultérieurement.
+   Pour ajouter ou supprimer des types de fichiers, **sélectionnez Personnaliser** les types de fichiers à la fin de la liste.
 
 6. Sélectionnez **Enregistrer.**
 
@@ -80,8 +80,11 @@ Outre les fichiers que vous avez bloqués à l’étape précédente, il est bon
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
 1. Dans le Centre d’administration, [https://admin.microsoft.com](https://admin.microsoft.com) **sélectionnez Exchange** sous **Centres d’administration.**
+
 1. Dans le menu de gauche, choisissez **flux de messagerie.**
+ 
 1. Sous l’onglet Règles, choisissez la flèche en haut du symbole plus (+), puis choisissez Créer **une règle.**
+
 1. Dans la **page nouvelle règle,** entrez un nom pour votre règle, faites défiler vers le bas, puis choisissez **Plus d’options.**
 
 Pour créer une règle de transport de messagerie :
@@ -96,7 +99,7 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant pour la règle. Utilisez les valeurs par défaut pour le reste des paramètres, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
@@ -128,7 +131,7 @@ Pour créer une règle de transport de messagerie, suivez les étapes suivantes 
 
 5. Appliquez les paramètres du tableau suivant. Utilisez les valeurs par défaut pour le reste des paramètres, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 |Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
@@ -146,17 +149,15 @@ Nous vous recommandons de commencer avec cette protection en créant une straté
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. Go to **Email & collaboration** Policies \> **&** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
-3. Dans la page **Stratégie,** choisissez **Anti-hameçonnage.**
+3. Dans la page **Anti-hameçonnage,** **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
 
-4. Dans la page **Anti-hameçonnage,** **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
+4. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le tableau suivant. Pour plus d’informations, voir La stratégie [anti-hameçonnage](../../security/office-365-security/set-up-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 options.
 
-5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le tableau suivant. Pour plus d’informations, voir La stratégie [anti-hameçonnage](../../security/office-365-security/set-up-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 options.
-
-6. Une fois que vous avez examiné vos paramètres, choisissez **Créer cette** stratégie ou **Enregistrer,** le cas échéant.
+5. Une fois que vous avez examiné vos paramètres, choisissez **Créer cette** stratégie ou **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -182,25 +183,21 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 1. Faites défiler vers le bas. Sélectionnez **Activer la redirection,** puis entrez votre adresse e-mail ou l’adresse de la personne que vous souhaitez consulter les pièces jointes bloquées.
 1. Sélectionnez **Appliqué à,** puis sélectionnez votre nom de domaine.
 1. Choisissez les domaines supplémentaires que vous possédez (tels que onmicrosoft.com domaine) que vous souhaitez que la règle s’applique. Sélectionnez **Ajouter,** puis **OK**.
-1. Cliquez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Votre règle de pièces jointes sécurisées ATP a été mise à jour. Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir de Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés auront des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
 
 Une fois votre stratégie en place pendant un certain temps, visitez la page Rapports pour voir ce qui a été analysé.
 
-1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>and sign in with your admin account.
 
-2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. Go to **Email & collaboration** Policies \> **&** Threat \> **policies** \> **Anti-malware** in the **Policies** section.
 
-3. Dans la page Stratégie, choisissez **Coffre pièces jointes.**
+3. Sélectionnez **+ Créer** pour créer une stratégie.
 
-4. Sur la page Coffre pièces jointes, appliquez cette protection à grande étendue en élecntant la case à cocher Activer la protection **SharePoint, OneDrive** et Microsoft Teams protection.
+4. Appliquez les paramètres du tableau suivant.
 
-5. Sélectionnez **+** pour créer une stratégie.
-
-6. Appliquez les paramètres du tableau suivant.
-
-7. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
+5. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -221,8 +218,10 @@ Les pirates informatiques masquent parfois des sites web malveillants dans des l
 Microsoft Defender pour Office 365 , anciennement appelé protection avancée contre les menaces Microsoft 365, permet de protéger votre entreprise contre les sites malveillants lorsque les utilisateurs cliquent sur des liens dans Office applications.
 
 1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
-2. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Gérer,** puis **Coffre liens.**
-3. Sélectionnez **Global Paramètres** et dans Bloquer les URL **suivantes,** entrez l’URL que vous souhaitez bloquer.
+
+1. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Gérer,** puis **Coffre liens.**
+
+1. Sélectionnez **Global Paramètres** et dans Bloquer les URL **suivantes,** entrez l’URL que vous souhaitez bloquer.
 
 Nous vous recommandons d’y faire les choses suivantes :
 
@@ -232,27 +231,19 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 Pour configurer Coffre liens, complétez les étapes suivantes :
 
-1. Go to [https://protection.office.com](https://protection.office.com) , and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>and sign in with your admin account.
 
-2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. o to **Email & collaboration** Policies \> **&** Threat \> **policies** \> **Anti-malware** in the **Policies** section.
 
-3. Dans la page Stratégie, choisissez **Coffre liens.**
+3. Sélectionnez **+ Créer** pour créer une stratégie ou modifiez la stratégie par défaut.
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, sélectionnez la **stratégie par** défaut.
+1. Double-cliquez sur la **stratégie par** défaut. Un volant s’affiche. 
 
-2. Sous **Paramètres qui s’appliquent au** contenu à l’exception de la messagerie, sélectionnez **Applications Microsoft 365 pour les grandes entreprises, Office pour iOS et Android**.
+2. Sélectionnez **Modifier les paramètres de protection** en bas du volant.
 
-3. Cliquez sur **Enregistrer**.
-
-Pour créer une stratégie destinée à tous les destinataires de votre domaine :
-
-1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, sélectionnez **+** pour créer une stratégie.
-
-2. Appliquez les paramètres répertoriés dans le tableau suivant.
-
-3. Cliquez sur **Enregistrer**.
+3. Après avoir modifié la stratégie par défaut, sélectionnez **Enregistrer.**
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|

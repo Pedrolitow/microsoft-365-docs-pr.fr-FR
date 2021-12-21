@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: d4b9c334092cf7c0f6b3c5fad2e284accbb384ae
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2c017490fd0b5b01c7cd2563a895b3930aafef58
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422001"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578218"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
@@ -132,6 +132,7 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Un clic d’URL potentiellement malveillant a été détecté**|Génère une alerte lorsqu’un utilisateur protégé par [Coffre liens](../security/office-365-security/safe-links.md) de votre organisation clique sur un lien malveillant. Cet événement est déclenché lorsque les modifications apportées au verdict d’URL sont identifiées par Microsoft Defender pour Office 365 ou lorsque les utilisateurs remplacent les pages de liens Coffre (en fonction de la stratégie de liens Microsoft 365 pour les entreprises Coffre entreprise). Cette stratégie d’alerte a un **paramètre** de gravité élevée. Pour les clients Office 365 P2, E5 et G5, cette alerte déclenche automatiquement une enquête et une réponse automatisées [dans Office 365](../security/office-365-security/office-365-air.md). Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer Coffre de liens.](../security/office-365-security/set-up-safe-links-policies.md)|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Résultat de soumission administrateur terminé**|Génère une alerte lorsqu’une soumission [d’administrateur](../security/office-365-security/admin-submission.md) termine la rescan de l’entité soumise. Une alerte est déclenchée chaque fois qu’un résultat de rescan est rendu à partir d’une soumission d’administrateur. Ces alertes sont destinées à vous rappeler de passer en revue les résultats des [soumissions précédentes,](https://compliance.microsoft.com/reportsubmission)d’envoyer les messages signalés par l’utilisateur pour obtenir la dernière vérification de stratégie et de rescaner les verdicts, et de vous aider à déterminer si les stratégies de filtrage de votre organisation ont l’impact prévu. Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces|E1/F1, E3/F3 ou E5|
 |**L’administrateur a déclenché une enquête manuelle sur le courrier électronique**|Génère une alerte lorsqu’un administrateur déclenche l’examen manuel d’un e-mail à partir de l’Explorateur de menaces. Pour plus d’informations, voir l’exemple : un administrateur de sécurité [déclenche une enquête à partir de l’Explorateur de menaces.](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) Cette alerte informe votre organisation que l’enquête a été lancée. L’alerte fournit des informations sur la personne qui l’a déclenchée et inclut un lien vers l’enquête. Cette stratégie a un paramètre **de gravité** d’information.|Gestion des menaces| E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
+|**Examen de compromission utilisateur déclenchée par l’administrateur**|Génère une alerte lorsqu’un administrateur déclenche l’examen de compromission manuelle par l’utilisateur d’un expéditeur de courrier électronique ou d’un destinataire de l’Explorateur de menaces. Pour plus d’informations, voir l’exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de [menaces,](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)qui indique le déclenchement manuel associé d’une enquête sur un e-mail. Cette alerte informe votre organisation que l’examen de la compromission de l’utilisateur a été démarré. L’alerte fournit des informations sur la personne qui l’a déclenchée et inclut un lien vers l’enquête. Cette stratégie a un **paramètre de** gravité moyenne.|Gestion des menaces| E5/G5 ou Microsoft Defender pour l’abonnement Office 365 modules add-on P2|
 |**Création de règle de redirection/transfert**|Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour sa boîte aux lettres qui redirige les messages vers un autre compte de messagerie. Cette stratégie suit uniquement les règles de boîte de réception créées à l’aide Outlook sur le web (anciennement Outlook Web App) ou Exchange Online PowerShell. Cette stratégie a un paramètre **de gravité** d’information. Pour plus d’informations sur l’utilisation des règles de boîte de réception pour le Outlook sur le web, voir Utiliser des règles dans Outlook sur le web pour envoyer automatiquement des messages vers un [autre compte.](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Recherche eDiscovery démarrée ou exportée**|Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans le Centre de sécurité et conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées : <br><br> <li> Une recherche de contenu est démarrée <li> Les résultats d’une recherche de contenu sont exportés <li> Un rapport de recherche de contenu est exporté <br><br> Les alertes sont également déclenchées lorsque les activités de recherche de contenu précédentes sont effectuées en association avec un cas eDiscovery. Cette stratégie a un paramètre **de gravité** d’information. Pour plus d’informations sur les activités de recherche de contenu, voir Rechercher des activités [eDiscovery dans le journal d’audit.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Élévation du privilège Exchange administrateur**|Génère une alerte lorsqu’une personne se voit attribuer des autorisations administratives dans Exchange Online organisation. Par exemple, lorsqu’un utilisateur est ajouté au groupe de rôles Gestion de l’organisation dans Exchange Online. Cette stratégie a un **paramètre de** gravité faible.|Autorisations|E1/F1/G1, E3/F3/G3 ou E5/G5|
@@ -263,19 +264,19 @@ Pour voir à quelle catégorie une stratégie d’alerte par défaut est affect�
 |Gestion de la conformité DLP||![Coche.](../media/checkmark.png)|||||
 |Exporter|||||||
 |Suspension|||||||
-|Analyste de la protection des informations||![Marque de vérification.](../media/checkmark.png)|||||
+|Analyste de la protection des informations||![Coche.](../media/checkmark.png)|||||
 |Enquêteur de la protection des informations||![Coche.](../media/checkmark.png)|||||
-|Gérer les alertes||||||![Marque de vérification.](../media/checkmark.png)|
+|Gérer les alertes||||||![Coche.](../media/checkmark.png)|
 |Configuration de l’organisation||||||![Coche.](../media/checkmark.png)|
 |Aperçu|||||||
-|Gestion des enregistrement|![Marque de vérification.](../media/checkmark.png)||||||
+|Gestion des enregistrement|![Coche.](../media/checkmark.png)||||||
 |Gestion de la rétention|![Coche.](../media/checkmark.png)||||||
 |Révision|||||||
 |Déchiffrement RMS|||||||
-|Gestion des rôles||||![Marque de vérification.](../media/checkmark.png)|||
+|Gestion des rôles||||![Coche.](../media/checkmark.png)|||
 |Recherche et purge|||||||
-|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
-|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
+|Administrateur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|
+|Lecteur de sécurité||![Coche.](../media/checkmark.png)||![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)
 |Affichage De l’assurance service|||||||
 |Administrateur de la révision de surveillance|||||||
 |Journaux d'audit en affichage seul|||||||

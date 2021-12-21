@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 9fbb327ff38d2de46f70c9aaa33b5217ed3c1c02
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 92d2e4defbaf5cf92443f432eae63f87b68478c0
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521065"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578206"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 
@@ -63,20 +63,22 @@ Microsoft recommande d’effectuer les tâches répertoriées dans le tableau su
 
 Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe De Protection Microsoft pour protéger tous les clients des petites entreprises contre les cybermenaces lancées par des pirates informatiques sophistiqués.
 
-Avant de commencer, vérifiez votre [score Microsoft 365 sécurisé dans](../../security/defender/microsoft-secure-score.md) le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender.</a> À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de votre Microsoft 365, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Grâce à des informations supplémentaires et à une visibilité accrue sur un ensemble plus large de produits et de services Microsoft, vous pouvez être certain de signaler l’état de sécurité de votre organisation.
+Avant de commencer, vérifiez votre [score Microsoft 365 sécurisé dans](../../security/defender/microsoft-secure-score.md) le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender.</a> À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de votre Microsoft 365, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Grâce à des informations ajoutées et à une meilleure visibilité sur un ensemble plus large de produits et services Microsoft, vous pouvez être certain de signaler l’état de sécurité de votre organisation.
 
 ![Capture d’écran du score de sécurité Microsoft.](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1 : configurer l’authentification multifacteur
 
-L’utilisation de l’authentification multifacteur est l’une des méthodes les plus simples et les plus efficaces pour renforcer la sécurité de votre organisation. C’est plus simple qu’il n’y paraît : lorsque vous vous connectez, l’authentification multifacteur signifie que vous tapez un code à partir de votre téléphone pour accéder à Microsoft 365. Cela peut empêcher les pirates informatiques de prendre le contrôle s’ils connaissent votre mot de passe. L’authentification multifacteur est également appelée vérification en deux étapes. Les utilisateurs peuvent facilement ajouter la vérification en deux étapes à la plupart des comptes, par exemple, à leurs comptes Google ou Microsoft. Voici comment ajouter la vérification en [deux étapes à votre compte Microsoft personnel.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
+
+L’utilisation de l’authentification multifacteur est l’un des moyens les plus simples et les plus efficaces d’augmenter la sécurité de votre organisation. C’est plus simple que cela n’y paraît : lorsque vous vous connectez, l’authentification multifacteur signifie que vous tapez un code à partir de votre téléphone pour accéder à Microsoft 365. Cette étape supplémentaire peut empêcher les pirates informatiques de prendre le contrôle s’ils connaissent votre mot de passe. L’authentification multifacteur est également appelée vérification en deux étapes. Les utilisateurs peuvent facilement ajouter la vérification en deux étapes à la plupart des comptes, par exemple, à leurs comptes Google ou Microsoft. Voici comment ajouter la vérification en [deux étapes à votre compte Microsoft personnel.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
 
 Pour les entreprises utilisant Microsoft 365, ajoutez un paramètre qui exige que vos utilisateurs se connectent à l’aide de l’authentification multifacteur. Lorsque vous a effectuer cette modification, les utilisateurs sont invités à configurer leur téléphone pour l’authentification à deux facteurs la prochaine fois qu’ils se connectent.
-Pour voir une vidéo de formation sur la façon de configurer l’famf et la façon dont les utilisateurs terminent la mise en place, voir [configurer](set-up-multi-factor-authentication.md) l’mf et configurer [l’utilisateur.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+Pour voir une vidéo de formation sur la configuration de l’mf et la façon dont les utilisateurs terminent l’installation, voir [configurer](set-up-multi-factor-authentication.md) l’mf et [configurer l’utilisateur.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+
 
 Pour configurer l’authentification multifacteur, vous devez activer les paramètres de sécurité par défaut :
 
-Pour la plupart des organisations, les valeurs de sécurité par défaut offrent un niveau de sécurité de connexion supplémentaire. Pour plus d’informations, voir [Présentation des paramètres de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Pour la plupart des organisations, les paramètres de sécurité par défaut offrent un bon niveau de sécurité de la signature ajoutée. Pour plus d’informations, voir [Présentation des paramètres de sécurité par défaut](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 Si votre abonnement est nouveau, les paramètres par défaut de sécurité peuvent déjà être activés automatiquement.
 
@@ -84,7 +86,7 @@ Pour activer ou désactiver les paramètres de sécurité par défaut, accédez 
 
 1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec des informations d'identification d'administrateur général.
 2. Dans le volet de navigation gauche, sélectionnez **Afficher tout** puis sous **Centres d’administration**, sélectionnez **Azure Active Directory**.
-3. Dans le centre d’administration **Azure Active Directory** sélectionnez **Azure Active Directory** > **Propriétés**.
+3. Dans le **centre Azure Active Directory' administration,** choisissez **Azure Active Directory**  >  **propriétés.**
 4. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
 5. Sélectionnez **Oui** pour activer les paramètres de sécurité par défaut ou **Non** pour désactiver les paramètres de sécurité par défaut, puis choisissez **Enregistrer**.
 
@@ -96,7 +98,7 @@ Pour obtenir des informations complètes et des recommandations complètes, voir
 
 Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/p/?linkid=2015598) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
-En plus de ces conseils, Microsoft recommande à vos utilisateurs d’prendre les mesures décrites dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Ces actions incluent :
+En outre, Microsoft recommande à vos utilisateurs d’prendre les mesures décrites dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Ces actions incluent :
 
 - Utilisation de mots de passe forts
 
@@ -124,17 +126,15 @@ Les comptes d’administration que vous utilisez pour administrer Microsoft 365 
 
 Votre environnement Microsoft 365 inclut une protection contre les programmes malveillants, mais vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. Pour faire monter la protection contre les programmes malveillants dans le courrier électronique, regardez une courte vidéo de [formation](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail)ou complétez les étapes suivantes :
 
-1. Go to <https://protection.office.com> and sign in with your admin account credentials.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>dans la section Stratégies de **&,** & stratégies \>  \>  \> **anti-programme** malveillant. 
 
-2. Dans le Centre de sécurité & conformité, dans le volet de  navigation de gauche, sous Gestion des menaces, choisissez Stratégie \> **anti-programme malveillant.**
+2. Dans la page **Anti-programme** malveillant, double-cliquez sur **Par défaut (par défaut).** Un volant s’affiche. 
 
-3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
+3. Sélectionnez **Modifier les paramètres de protection** en bas du volant. 
 
-4. Sélectionnez **Paramètres**.
+4. Dans la page suivante, sous **Paramètres de protection,** activez la case à cocher en regard de **Activer le filtre des pièces jointes communes.** Les types de fichiers bloqués sont répertoriés directement sous cette option. Pour ajouter ou supprimer des types de fichiers, **sélectionnez Personnaliser** les types de fichiers à la fin de la liste. 
 
-5. Sous **Filtre Types de pièces jointes courants,** **sélectionnez Sur**. Les types de fichiers bloqués sont répertoriés dans la fenêtre directement sous ce contrôle. Vous pouvez ajouter ou supprimer des types de fichiers ultérieurement, si nécessaire.
-
-6. Sélectionnez **Enregistrer.**
+5. Sélectionnez **Enregistrer**. 
 
 Pour plus d’informations, voir [Protection contre les programmes malveillants dans EOP.](../../security/office-365-security/anti-malware-protection.md)
 
@@ -160,7 +160,7 @@ Pour créer une règle de transport de messagerie, regardez une courte vidéo de
 
 5. Appliquez les paramètres du tableau suivant pour chaque règle. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
 | Setting | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
@@ -181,7 +181,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 ## <a name="6-stop-auto-forwarding-for-email"></a>6 : Arrêter le forwarding automatique pour le courrier électronique
 
-Les pirates informatiques qui accèdent à la boîte aux lettres d’un utilisateur peuvent exfiltrer le courrier en configurant la boîte aux lettres de manière à ce qu’elle le soit automatiquement. Cela peut se produire même sans la sensibilisation de l’utilisateur. Vous pouvez empêcher cela en configurant une règle de flux de messagerie.
+Les pirates informatiques qui accèdent à la boîte aux lettres d’un utilisateur peuvent exfiltrer le courrier en configurant la boîte aux lettres de manière à ce qu’elle le soit automatiquement. Ce problème peut se produire même sans la sensibilisation de l’utilisateur. Vous pouvez empêcher cela en configurant une règle de flux de messagerie.
 
 Pour créer une règle de transport de messagerie :
 
@@ -195,7 +195,7 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 |Setting|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
@@ -216,7 +216,7 @@ Office chiffrement de messages fournit deux options de protection lors de l’en
 
 - Chiffrer
 
-Votre organisation a peut-être configuré des options supplémentaires qui appliquent une étiquette à un e-mail, telles que Confidentiel.
+Votre organisation a peut-être configuré d’autres options qui appliquent une étiquette à un e-mail, telles que Confidentiel.
 
 ### <a name="to-send-protected-email"></a>Pour envoyer des e-mails protégés
 
@@ -242,21 +242,17 @@ Si vous avez configuré un ou plusieurs domaines personnalisés pour votre envir
 
 Nous vous recommandons de commencer avec cette protection en créant une stratégie pour protéger vos utilisateurs les plus importants et votre domaine personnalisé.
 
-![Création d’une stratégie anti-hameçonnage dans Microsoft Defender pour Office 365.](../../media/security-and-compliance-center.png)
-
 Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, regardez une courte vidéo de [formation](increase-threat-protection.md#protect-your-email-from-phishing-attacks)ou complétez les étapes suivantes :
 
-1. Accédez à <https://protection.office.com>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
+2. Go to **Email & collaboration** Policies \> **&** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
-3. Dans la page Stratégie, **sélectionnez Anti-hameçonnage.**
+3. Dans la page Anti-hameçonnage, **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
 
-4. Dans la page Anti-hameçonnage, **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
+4. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le graphique ci-dessous. Pour plus d’informations, voir [La stratégie anti-hameçonnage](../../security/office-365-security/set-up-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 options.
 
-5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le graphique ci-dessous. Pour [plus d’informations,](../../security/office-365-security/set-up-anti-phishing-policies.md) voir la stratégie anti-hameçonnage dans Microsoft Defender Office 365 options de protection.
-
-6. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
+5. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -278,19 +274,15 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
 Pour créer une stratégie Coffre pièces jointes, regardez une courte vidéo de [formation](increase-threat-protection.md)ou complétez les étapes suivantes :
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>and sign in with your admin account.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
+2. Go to **Email & collaboration** Policies \> **&** Threat \> **policies** \> **Anti-malware** in the **Policies** section.
 
-3. Dans la page Stratégie, **sélectionnez Coffre pièces jointes.**
+3. Sélectionnez **+ Créer** pour créer une stratégie.
 
-4. Sur la page Coffre pièces jointes, appliquez cette protection à grande étendue en élecntant la case à cocher Activer la protection **SharePoint, OneDrive** et Microsoft Teams protection.
+4. Appliquez les paramètres du tableau suivant.
 
-5. Sélectionnez **+** pour créer une stratégie.
-
-6. Appliquez les paramètres du tableau suivant.
-
-7. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
+5. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -307,7 +299,7 @@ Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage d
 
 Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Coffre liens, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office documents. La protection est définie par le biais Coffre de liens.
 
-Nous vous recommandons d’y faire les choses suivantes :
+Pour vous protéger contre les attaques, vous pouvez :
 
 - Modifiez la stratégie par défaut pour renforcer la protection.
 
@@ -315,29 +307,19 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 Pour obtenir des Coffre, regardez une courte vidéo de [formation](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links)ou complétez les étapes suivantes :
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>and sign in with your admin account.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
+2. Go to **Email & collaboration** Policies \> **&** Threat \> **policies** \> **Anti-malware** in the **Policies** section.
 
-3. Dans la page Stratégie, sélectionnez **Coffre liens.**
+3. Sélectionnez **+ Créer** pour créer une stratégie ou modifiez la stratégie par défaut.
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, double-cliquez sur la **stratégie par** défaut.
+1. Double-cliquez sur la **stratégie par** défaut. Un volant s’affiche. 
 
-2. Sous Paramètres qui s’appliquent au contenu dans **Office 365,** entrez une URL à bloquer, telle que _example.com,_ puis sélectionnez **+** .
+2. Sélectionnez **Modifier les paramètres de protection** en bas du volant.
 
-3. Sous **Paramètres** qui s’appliquent au contenu à l’exception de la messagerie, sélectionnez **Office 365 applications**, Ne pas suivre quand les utilisateurs cliquent sur les liens sécurisés et Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.  
-
-4. Cliquez sur **Enregistrer**.
-
-Pour créer une stratégie destinée à tous les destinataires de votre domaine :
-
-1. Dans la page Coffre liens, sous Stratégies qui s’appliquent à des **destinataires spécifiques,** sélectionnez **+** pour créer une stratégie.
-
-2. Appliquez les paramètres répertoriés dans le tableau suivant.
-
-3. Cliquez sur **Enregistrer**.
+3. Après avoir modifié la stratégie par défaut, sélectionnez **Enregistrer.**
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -349,7 +331,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes de priorité](../setup/priority-accounts.md) (article)\

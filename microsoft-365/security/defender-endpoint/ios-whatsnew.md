@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b529f5dcbe444ef86c90be163d714695e68c9d8c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: ad37c15c16edb03dddf7c9899d160eaca435e53e
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217457"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578488"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
@@ -37,6 +37,12 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 ## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
 
 Le 2 novembre 2021, nous avons annoncé la prévisualisation publique de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, [consultez le billet techcommunity ici.](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)
+
+## <a name="1123250104"></a>1.1.23250104
+
+- Optimisation des performances : testez les performances de la batterie avec cette version et faites-nous part de vos commentaires.
+- Intégration zero touch pour les appareils **iOS** inscrits : avec cette version, l’aperçu de l’intégration zero touch pour les appareils inscrits via Microsoft Endpoint Manager (Intune) a été ajouté. Pour plus d’informations, [consultez cette documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) pour plus d’informations sur l’installation et la configuration.
+- **Contrôles de confidentialité** : configurez les contrôles de confidentialité pour le rapport d’alerte de hameçonnage. Pour plus d’informations, voir [Configurer les fonctionnalités iOS.](ios-configure-features.md)
 
 ## <a name="1123010101"></a>1.1.23010101
 

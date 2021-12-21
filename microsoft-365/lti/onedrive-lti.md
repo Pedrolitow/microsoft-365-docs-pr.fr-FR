@@ -13,19 +13,16 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez et classez des devoirs, créez et organisez du contenu de cours et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: d8243580b32b8ba3b42297d1d5ec4183f7eee7d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173174"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578170"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
-> [!IMPORTANT]
-> Certaines informations concernent un produit pré-commercialisé, qui peut être considérablement modifié avant sa commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
-
-L’intégration Microsoft OneDrive LTI à Canvas est un processus en deux étapes. La première étape active la Microsoft OneDrive canvas, et la deuxième étape rend l’Microsoft OneDrive LTI disponible dans les cours Canvas.
+L’intégration Microsoft OneDrive LTI à Canvas est un processus en deux étapes. La première étape active la Microsoft OneDrive canvas et la deuxième étape rend le LTI Microsoft OneDrive disponible dans les cours Canvas.
 
 ## <a name="recommended-browser-settings"></a>Paramètres de navigateur recommandés
 
@@ -65,14 +62,14 @@ L’intégration Microsoft OneDrive LTI à Canvas est un processus en deux étap
 6. Dans la page Configurer,  dans la zone de texte Méthode, sélectionnez Coller **JSON** comme méthode et collez le texte JSON que vous avez copié à l’étape 5 dans le champ de texte qui s’affiche.
 7. Enregistrez la clé et elle devient disponible dans Canvas dans un **état Off.** Activer la clé **et** copier la clé donnée dans la colonne **Détails** à utiliser à l’étape suivante.
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Page Canvas avec la touche définie dans un état « off ». Elle doit être allumée et la clé doit être copiée à partir de la colonne de détails de cette page.":::
+:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Page Canvas avec la clé définie dans un état « off ». Elle doit être allumée et la clé doit être copiée à partir de la colonne de détails de cette page.":::
 
-8. Revenir au portail Microsoft OneDrive inscription LTI et collez la clé dans le champ **ID client** canvas. Sélectionnez **Suivant** lorsque vous êtes prêt.
+8. Revenir au portail Microsoft OneDrive inscription LTI et coller la clé dans le champ **ID client** canvas. Sélectionnez **Suivant** lorsque vous êtes prêt.
 
 :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Page d’inscription du client LTI, qui affiche le texte JSON et la zone de texte dans laquelle la clé doit être copiée.":::
 
 9. Examinez et enregistrez vos modifications. Un message s’affiche lors de l’inscription réussie.
-10. Vous pouvez également examiner vos détails d’inscription en sélectionnant le bouton Afficher les locataires **LTI** sur la page d’accueil.
+10. Vous pouvez également consulter les détails de votre inscription en sélectionnant le bouton Afficher les locataires **LTI** sur la page d’accueil.
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Activer Microsoft OneDrive LTI dans les cours de canevas
 

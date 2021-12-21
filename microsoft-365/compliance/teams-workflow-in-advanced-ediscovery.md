@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, réviser et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
-ms.openlocfilehash: 1197d54206abaa42b59f7c3b81365065191904cf
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 27f3ada633f7af37b657e59cce64ef1c8e102177
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137107"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578151"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery flux de travail pour le contenu dans Microsoft Teams
 
@@ -42,7 +42,7 @@ Une condition préalable à la gestion du contenu Teams dans Advanced eDiscovery
 ||Emplacement des messages de conversation et des publications  |Emplacement des fichiers et des pièces jointes |
 |:---------|:---------|:---------|
 |Teams conversations 1:1     |Les messages des conversations 1:1 sont stockés dans la boîte Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans une conversation 1:1 sont stockés dans le compte OneDrive Entreprise de la personne qui a partagé le fichier. |
-|Teams de groupe     |Les messages des conversations de groupe sont stockés dans la boîte Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans les conversations de groupe sont stockés dans le OneDrive Entreprise de la personne qui a partagé le fichier. |
+|Teams de groupe     |Les messages des conversations de groupe sont stockés dans la boîte Exchange Online de tous les participants à la conversation. |Les fichiers partagés dans des conversations de groupe sont stockés dans OneDrive Entreprise compte de la personne qui a partagé le fichier. |
 |Équipes et canaux     |Tous les messages et publications de canal sont stockés dans Exchange Online boîte aux lettres associée à l’équipe.|Les fichiers partagés dans un canal sont stockés dans le site SharePoint Online associé à l’équipe.           |
 |Canaux Teams privés     |Les messages envoyés dans un canal privé sont stockés dans Exchange Online boîtes aux lettres de tous les membres du canal privé.|Les fichiers partagés dans un canal privé sont stockés dans un site SharePoint Online dédié associé au canal privé.|
 ||||
@@ -265,13 +265,13 @@ Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 |:---------|:---------|
 |ContainsEditedMessage      | Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers de transcription et les pièces jointes de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation concatenés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple, `eDiscovery vNext, General`.          |
+|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation concatenés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple : `eDiscovery vNext, General`.          |
 |ConversationType     | Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group` . Pour les Teams canal privé et privé, la valeur est `Channel` .|
 |Date | Horodaté du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription d’une conversation. Les pièces jointes auront la même valeur pour cette propriété que le fichier de transcription qui contient le message à qui le fichier a été joint.|
 |FileClass     |Indique ce type de contenu. Les éléments de Teams conversations ont la valeur `Conversation` . En revanche, Exchange messages électroniques ont la valeur `Email` .|          |
 |MessageKind     | Propriété du type de message. Teams contenu a la valeur `microsoftteams , im` . |
-|Recipients     | Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
+|Destinataires     | Liste de tous les utilisateurs qui ont reçu un message dans la conversation de transcription.|
 |TeamsChannelName     | Nom Teams canal privé ou de la transcription.|
 |||
 
@@ -296,3 +296,11 @@ Voici quelques conseils et meilleures pratiques pour afficher Teams contenu dans
 - Colonnes utiles qui vous aident à passer en revue Teams contenu inclut **le** dépositaire, les **destinataires** et le **type** de fichier ou **le type de message**.
 
 - Utilisez [des filtres](review-set-search.md) pour Teams propriétés liées à l’affichage rapide Teams contenu. Il existe des filtres pour la plupart des propriétés de métadonnées décrites dans la section précédente.
+
+## <a name="reference-guide"></a>Guide de référence
+
+Voici un guide de référence rapide pour l’utilisation Advanced eDiscovery pour Microsoft Teams. Ce guide récapitule les points clés d’utilisation des Advanced eDiscovery pour conserver, collecter, examiner et exporter du contenu à partir de Microsoft Teams.
+
+![Miniature du guide de référence pour l’utilisation Advanced eDiscovery pour Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+
+[Télécharger en tant que fichier PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)
