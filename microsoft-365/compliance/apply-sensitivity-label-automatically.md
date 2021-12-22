@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071437"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586674"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -382,41 +382,6 @@ Pour plus d’informations sur les applets de commande PowerShell qui prennent e
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
-
-## <a name="recent-enhancements-for-auto-labeling-policies"></a>Améliorations récentes apportées aux stratégies d’étiquetage automatique
-
-Les améliorations récentes par rapport à la version précédente pour les stratégies d’étiquetage automatique pour OneDrive et SharePoint sont les suivantes :
-
-- Maximum de 100 stratégies d’étiquetage automatique par client au lieu de 10.
-
-- Prise en charge de tous les sites OneDrive et SharePoint (par défaut pour les nouvelles stratégies) et possibilité de sélectionner les sites SharePoint disponibles au lieu d’avoir à entrer chaque site par URL. Lorsque vous utilisez la nouvelle valeur par défaut **Tous**, tous les sites SharePoint et comptes OneDrive existants dans votre client, et tous les sites et comptes nouvellement créés sont automatiquement inclus dans la stratégie. Lorsque vous sélectionnez **Choisir les sites** pour SharePoint, vous pouvez toujours entrer manuellement les sites en indiquant leur URL si nécessaire.
-
-- Lorsque vous spécifiez des sites individuels dans une stratégie d’étiquetage automatique, jusqu’à 100 sites sont désormais pris en charge au lieu de 10.
-
-- Maximum de 1 000 000 fichiers correspondants par stratégie d’étiquetage automatique en mode simulation. Si un nombre de fichiers supérieur à ce nombre est mis en correspondance au cours de la simulation, vous ne pourrez pas activer la stratégie. Reconfigurez la stratégie d’étiquetage automatique pour qu’elle corresponde à un plus petit nombre de fichiers et réexécutez la simulation.
-
-- Améliorations des simulations :
-  - L’exécution de la stratégie d’étiquetage automatique en mode simulation se termine dans un délai de 12 heures au lieu de 48 heures.
-  - De meilleures performances en fournissant jusqu’à 100 fichiers correspondants échantillonnées aléatoirement pour révision pour chaque site (OneDrive ou SharePoint) au lieu de chaque élément correspondant à réviser.
-  - Une fois la simulation terminée, une notification par courrier est envoyée à l’utilisateur configuré pour recevoir les [alertes d’activité](alert-policies.md).
-
-- Améliorations pour vous aider à examiner les éléments correspondants :
-  - Informations de métadonnées supplémentaires pour les éléments correspondants échantillonnés.
-  - Possibilité d’exporter des informations sur les éléments correspondants, tels que le nom du site SharePoint et le propriétaire du fichier. Vous pouvez utiliser ces informations pour pivoter et analyser les fichiers correspondants, et déléguer aux propriétaires de fichiers pour révision si nécessaire.
-
-> [!TIP]
-> Pour tirer parti du plus grand nombre de stratégies et de sites pris en charge, utilisez PowerShell pour créer efficacement des stratégies et ajouter des sites supplémentaires aux stratégies existantes. Pour plus d’informations, consultez la section [Utiliser PowerShell pour les stratégies d’étiquetage automatique](#use-powershell-for-auto-labeling-policies) de cette page.
-
-### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>Comment déterminer si votre client dispose des nouvelles améliorations
-
-Lorsque votre client bénéficie des nouvelles améliorations, la notification suivante s’affiche sous l’onglet **Étiquetage automatique** :
-
-![Bannière confirmant qu’un client dispose des nouvelles améliorations.](../media/auto-labeling-updatedbanner.png)
-
-> [!NOTE]
-> Si vous aviez des stratégies d’étiquetage automatique qui étaient en mode simulation lorsque votre client a reçu les nouvelles améliorations, vous devez réexécuter la simulation. Si ce scénario vous concerne, vous êtes invité à sélectionner **Redémarrer la simulation** lorsque vous examinez la simulation. Si vous ne redémarrez pas la simulation, elle ne se terminera pas.
->
-> Toutefois, les améliorations s’appliquent toujours à toutes les stratégies d’étiquetage automatique exécutées sans simulation et à toutes les nouvelles stratégies d’étiquetage automatique que vous créez.
 
 ## <a name="tips-to-increase-labeling-reach"></a>Conseils pour augmenter la portée de l’étiquetage
 

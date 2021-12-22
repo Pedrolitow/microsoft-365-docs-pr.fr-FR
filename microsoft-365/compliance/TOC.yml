@@ -144,6 +144,8 @@
   items:
     - name: 'Connaissez vos données, protégez-les et évitez les pertes de données'
       href: information-protection.md
+    - name: Déployer une solution Microsoft Information Protection (MIP)
+      href: information-protection-solution.md
     - name: Étiquettes et stratégies par défaut pour Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Types d’informations sensibles
@@ -511,6 +513,8 @@
               href: archive-symphony-data.md
             - name: Délimité par le texte
               href: archive-text-delimited-data.md
+            - name: Twitter (préversion)
+              href: archive-veritas-twitter-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Pages web

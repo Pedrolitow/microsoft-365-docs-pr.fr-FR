@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
-ms.openlocfilehash: ff29ebf19f292a2d052c7172f31779ca48cae428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0be302a3e26b92ff08941720fad57b811922de3c
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201912"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586568"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur pour archiver des données Twitter (aperçu)
+# <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur Microsoft pour archiver les données Twitter (aperçu)
 
 Utilisez un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Twitter vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte au compte Twitter de votre organisation (de manière programmée), convertit le contenu d’un élément au format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
@@ -40,7 +40,7 @@ Remplissez les conditions préalables suivantes avant de pouvoir configurer un c
 
     - [S’inscrire à un abonnement Azure gratuit d’un an](https://azure.microsoft.com/free) 
 
-    - [S’inscrire à un abonnement Azure paiement par abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [S’inscrire à un abonnement Azure de paiement par abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > [L’abonnement Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuit inclus dans votre abonnement Microsoft 365 ne prend pas en charge les connecteurs dans le Centre de conformité Microsoft 365.
@@ -55,11 +55,11 @@ La première étape consiste à inscrire une nouvelle application dans Azure Act
 
 Pour obtenir des instructions détaillées, voir [Créer une application dans Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).
 
-Au terme de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs seront utilisées dans les étapes ultérieures du processus de déploiement.
+À la fin de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs seront utilisées dans les étapes ultérieures du processus de déploiement.
 
-- ID d’application AAD
+- AAD’application
 
-- Secret d’application AAD
+- AAD’application secrète
 
 - ID de client
 
@@ -97,7 +97,7 @@ Pour obtenir des instructions détaillées, voir [Créer l’application Twitter
 
 - Jeton d’accès Twitter
 
-- Secret de jeton d’accès Twitter
+- Secret du jeton d’accès Twitter
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>Étape 4 : Configurer l’application connecteur Twitter
 
@@ -115,15 +115,15 @@ Au cours de cette étape (en suivant les instructions pas à pas), vous fournire
 
 - Secret du jeton d’accès Twitter (obtenu à l’étape 3)
 
-- Azure Active Directory’ID d’application (ID d’application AAD obtenu à l’étape 1)
+- Azure Active Directory’ID d’application (ident AAD’application obtenue à l’étape 1)
 
-- Azure Active Directory’application secrète (secret d’application AAD obtenu à l’étape 1)
+- Azure Active Directory’application secrète (la AAD de l’application obtenue à l’étape 1)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Étape 5 : Configurer un connecteur Twitter dans le Centre de conformité Microsoft 365
 
 La dernière étape consiste à configurer le connecteur Twitter dans le Centre de conformité Microsoft 365 qui importera les données du compte Twitter de votre organisation vers une boîte aux lettres spécifiée dans Microsoft 365. Une fois cette étape terminée, le service d’importation Microsoft 365 commence à importer des données à partir du compte Twitter de votre organisation vers Microsoft 365.
 
-Pour obtenir des instructions détaillées, voir Configurer un connecteur [Twitter dans la Centre de conformité Microsoft 365](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
+Pour obtenir des instructions détaillées, voir Configurer un connecteur [Twitter dans le Centre de conformité Microsoft 365](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
 
 Au cours de cette étape (en suivant les instructions pas à pas), vous fournirez les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes).
 

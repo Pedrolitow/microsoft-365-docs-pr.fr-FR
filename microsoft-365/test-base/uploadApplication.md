@@ -3,7 +3,7 @@ title: Téléchargement du package
 description: Comment télécharger votre application, les fichiers binaires et les dépendances sur la base de test
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99b25757b3f7b0b3d4fcd43f97bab2ac303de6fa
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154133"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586180"
 ---
 # <a name="step-2-uploading-a-package"></a>Étape 2 : Téléchargement d’un package
 
@@ -42,7 +42,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
     > [!NOTE]
     > Le nom du package et la combinaison de version entrés doivent être uniques au sein de votre organisation. Cette vérification est validée par la coche, comme illustré ci-dessous.
 
-    - Si vous choisissez de réutiliser le nom d’un package, le numéro de version doit être unique (c’est-à-dire qu’il n’a jamais été utilisé avec un package portant ce nom particulier).
+    - Si vous choisissez de réutiliser le nom d’un package, le numéro de version doit être unique (autrement dit, n’a jamais été utilisé avec un package portant ce nom particulier).
 
     - Si la combinaison du nom du package + de la version ne passe pas la vérification de l’unicité, vous verrez un message d’erreur qui indique « Le package avec cette version de *package* existe déjà ».
 
@@ -54,7 +54,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
 3. Sélectionnez le type de test que vous souhaitez exécuter sur ce package.
 
-    Un **test OOB (Out-of-Box)** effectue une *installation,* *un* *lancement,* une fermeture et *une désinstallation* de votre package. Après l’installation, la routine de fermeture de lancement est répétée 30 fois avant l’opération de désinstallation unique.
+    Un test **OOB (Out-of-Box)** effectue une  *installation,* un *lancement,* une fermeture et *une désinstallation* de votre package. Après l’installation, la routine de fermeture de lancement est répétée 30 fois avant l’opération de désinstallation unique.
 
     Ce test OOB vous fournit une télémétrie normalisée sur votre package à comparer entre Windows builds.
 
@@ -66,7 +66,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 4. Sélectionnez le type de mise à jour du système d’exploitation.
 
     - Les « mises à jour de sécurité » permettent de tester votre package contre les évolutions incrémentielles de Windows mises à jour de sécurité mensuelles pré-publiées.
-    - Les « mises à jour des fonctionnalités » permettent de tester votre package par rapport à Windows mises à jour de fonctionnalités bi-annuelles pré-publiées à partir du programme Windows Insider.
+    - Les « mises à jour des fonctionnalités » permettent de tester votre package par rapport aux mises à jour de fonctionnalités Windows pré-publication bi-annuelles à partir du programme Windows Insider.
     <!---
     Change to the correct picture
     -->
@@ -76,9 +76,9 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
     Dans la sélection multiple, sélectionnez la ou les versions du système d’exploitation Windows votre package sera installé.
 
-    - Pour tester votre package uniquement sur Windows d’exploitation client, sélectionnez les versions Windows système d’exploitation 11 dans la liste de menus.
-    - Pour tester votre package uniquement sur les systèmes d’exploitation Windows Server, sélectionnez les versions Windows système d’exploitation server applicables dans la liste de menus.
-    - Pour tester votre package uniquement par rapport aux systèmes d’Windows client et Windows Server, sélectionnez tous les systèmes d’exploitation applicables dans la liste de menus.
+    - Pour tester votre package uniquement sur les systèmes d Windows client, sélectionnez les versions Windows système d’exploitation client applicables dans la liste de menus.
+    - Pour tester votre package uniquement par rapport aux systèmes d’exploitation Windows Server, sélectionnez les versions Windows système d’exploitation server applicables dans la liste de menus.
+    - Pour tester votre package par rapport aux systèmes d Windows client et Windows Server, sélectionnez tous les systèmes d’exploitation applicables dans la liste de menus.
 
     > [!NOTE]
     > Si vous choisissez de tester votre package par rapport aux OS serveur et client, assurez-vous que le package est compatible et qu’il peut s’exécuter sur les deux OSes
@@ -97,7 +97,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
     - Dans l’option « Sélectionner la ligne de base du système d’exploitation pour Insight », sélectionnez la version Windows système d’exploitation à utiliser comme base pour comparer les résultats de vos tests.
 
     > [!NOTE]
-    > Pour l’instant, nous ne supportons PAS les tests de mise à jour des fonctionnalités pour les serveurs OS
+    > Pour le moment, nous ne supportons PAS les tests de mise à jour des fonctionnalités pour les OS de serveur.
     <!---
     Note to actual note format for markdown
     -->
@@ -110,7 +110,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
     :::image type="content" alt-text="Affichage des détails du test." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Notre article suivant traite du chargement de vos fichiers binaires vers notre service.
 

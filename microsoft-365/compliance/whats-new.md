@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6b4e915a41c6c9dd04452fa968df2e23401b39d3
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 13221dbe9abcb4a7f40391f14232950c7561b87a
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327519"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586148"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -236,7 +236,7 @@ Ajout des nouveaux articles suivants :
 - [Flowchart pour déterminer quand](retention-flowchart.md) un élément sera conservé ou définitivement supprimé pour compléter les concepts et les exemples des principes de rétention.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-- Améliorations apportées aux stratégies d’étiquetage automatique qui incluent des nombres plus [élevés](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies) pris en charge pour les sites et stratégies, la prise en charge de tous les sites OneDrive et SharePoint et la possibilité de sélectionner les sites SharePoint disponibles au lieu d’avoir à entrer chaque site par URL et améliorations de simulation.
+- Améliorations apportées aux stratégies d’étiquetage automatique qui incluent des nombres plus [élevés](apply-sensitivity-label-automatically.md) pris en charge pour les sites et stratégies, la prise en charge de tous les sites OneDrive et SharePoint et la possibilité de sélectionner les sites SharePoint disponibles au lieu d’avoir à entrer chaque site par URL et améliorations de simulation.
 - L’étiquetage automatique dans Office applications en tant que paramètre d’étiquette de sensibilité prend désormais en charge la correspondance exacte des données [(EDM).](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)
 - Les étiquettes par défaut sont désormais étendues [Power BI (en prévisualisation).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
 - Les événements d’audit [](data-classification-activity-explorer-available-events.md) pour les Outlook sur le web qui s’surfacent dans l’Explorateur d’activités sont désormais entièrement déployés, ce qui signifie que l’activité des utilisateurs pour les étiquettes intégrées est désormais disponible pour toutes les applications Office sur toutes les plateformes.

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/21/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1793e487b3d58e2ae608249c64d32635f18b02e0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: e61bf570c8e239d8379704d57e0fbdd988a4562d
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508210"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586556"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Vue d’ensemble de Microsoft Defender pour Les Entreprises (prévisualisation)
 
@@ -35,6 +35,9 @@ Microsoft Defender pour Entreprise (prévisualisation) est une nouvelle solution
 Cet article décrit les fonctionnalités incluses dans Defender for Business (prévisualisation), avec des liens pour en savoir plus sur ces fonctionnalités.
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Fonctionnalités et fonctionnalités de Microsoft Defender pour Entreprise (prévisualisation).":::
+
+> [!NOTE]
+> Toutes les fonctionnalités ne sont pas disponibles pendant la prévisualisation.
 
 Avec Defender pour Entreprise (prévisualisation), vous pouvez protéger les appareils et les données que votre entreprise utilise avec :
 
@@ -63,13 +66,14 @@ Avec Defender pour Entreprise (prévisualisation), vous pouvez protéger les app
 
 - **Aide à commencer à utiliser Defender pour les entreprises (prévisualisation),** en commençant par Microsoft 365 Defender portail 
    - [Naviguer dans le Microsoft 365 Defender web](mdb-get-started.md)
+   - [Essayer des scénarios d’aperçu, des didacticiels et des simulations](mdb-tutorials.md)
 
 - **Fournir des conseils sur la gestion des appareils et des stratégies et paramètres de sécurité**
    - [Gérer les appareils](mdb-manage-devices.md)
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
    - [Gérer des règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-simplified-configuration.md)
 
