@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/21/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: b871288b836463918cdb2fa5a0bf50551010cdcf
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 253386571d96c5d2b0e4a4f85896e28eec400f8f
+ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508322"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61597566"
 ---
 # <a name="microsoft-defender-for-business-preview-requirements"></a>Conditions requises pour Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -58,7 +58,7 @@ Le tableau suivant répertorie les conditions de base requises pour configurer e
 > - Si vous avez un autre abonnement Microsoft 365 lorsque vous démarrez votre version d’essai de Defender pour Entreprise (prévisualisation), vous pouvez utiliser votre service Azure AD existant. 
 > - Si vous utilisez [Microsoft 365 Business Premium](../../business/index.yml) lorsque vous démarrez votre version d’essai de Defender pour Entreprise (prévisualisation), vous avez la possibilité de gérer les appareils dans Microsoft Intune. 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Procédez comme il se doit pour :
 
