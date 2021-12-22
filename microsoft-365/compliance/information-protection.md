@@ -17,36 +17,37 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 45448ee509b580a5fbd35388b95f130b684325d4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Implémentez des fonctionnalités de Microsoft Information Protection (MIP) pour vous aider à protéger les informations sensibles partout où elles résident ou voyagent.
+ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369683"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61577780"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
 >*[Licences de sécurité et de conformité Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implémentez Microsoft Information Protection (MIP) pour vous permettre de découvrir, classifier et protéger les informations sensibles où qu’elles se trouvent.
+Implémentez des fonctionnalités de Microsoft Information Protection (MIP) pour vous aider à découvrir, classer et protéger les informations sensibles où qu’elles résident ou voyagent.
 
 Les fonctionnalités MIP sont incluses dans la Conformité Microsoft 365 et vous donnent les outils nécessaires pour vous permettre de [connaître vos données](#know-your-data), [protéger vos données](#protect-your-data) et [éviter la perte de vos données](#prevent-data-loss).
 
 ![Image qui illustre la façon dont MIP vous permet de découvrir, de classifier et de protéger les données sensibles.](../media/powered-by-intelligent-platform.png)
 
+Pour obtenir des instructions prescriptives sur le déploiement d’une solution MIP pour votre organisation, consultez [Déployer une solution Microsoft Information Protection](information-protection-solution.md).
+
 Si vous souhaitez en savoir plus sur la gestion de vos données, consultez l’article [Gouvernance des données Microsoft dans Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Connaître vos données
 
-Pour comprendre votre paysage de données, puis identifier les données importantes dans votre environnement hybride, utilisez les fonctionnalités suivantes :
+Pour comprendre le paysage de vos données et identifier les données sensibles dans votre environnement hybride, utilisez les fonctionnalités suivantes :
 
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|:--------------------|
 |[Types d’informations sensibles](sensitive-information-type-learn-about.md)| Identifie les données sensibles à l’aide d’expressions régulières intégrées ou personnalisées, ou à l’aide d'une fonction. Les preuves corroborantes comprennent des mots clés, des niveaux de confiance et la proximité.| [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)|
 |[Classifieurs avec capacité d’apprentissage](classifier-learn-about.md)| Identifie les données sensibles à l’aide d’exemples de données qui vous intéressent au lieu d’identifier les éléments dans l’élément (mise en correspondance des modèles). Vous pouvez utiliser des classifieurs intégrés ou former un classifieur avec votre propre contenu.| [Prise en main des classifieurs présentant une capacité d’apprentissage](classifier-get-started-with.md) |
 |[Classification des données](data-classification-overview.md) | Identification graphique d’éléments de votre organisation qui ont une étiquette de niveau de fidélité, une étiquette de rétention ou qui ont été classés. Vous pouvez également utiliser ces informations pour en savoir plus sur les actions effectuées par vos utilisateurs sur ces éléments. | [Prise en main de l’explorateur de contenu](data-classification-content-explorer.md) <p> [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |Identifie les données sensibles et applique un étiquetage automatique à tout contenu dans les actifs Azure Purview, tels que Stockage Blob Azure, Azure Files, Azure Data Lake Storage et les sources de données multi-cloud. |[Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>Protéger ses données
 
@@ -63,6 +64,7 @@ Pour appliquer des actions de protection flexibles qui incluent le chiffrement, 
 [Connecteur de gestion des droits](/azure/information-protection/deploy-rms-connector) |Offre uniquement une protection pour les déploiements locaux existants qui utilisent Exchange ou SharePoint Server, ou les serveurs de fichiers qui fonctionnent avec Windows Server et l’infrastructure de classification de fichiers. | [Étapes de déploiement du connecteur RMS](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner)| Découvre, étiquette, puis protège les informations sensibles résidant dans des magasins de données locaux. | [Configurer et installer le scanner d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Découvre, étiquette, puis protège les informations sensibles résidant dans les magasins de données situés dans le cloud. | [Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |Identifie les données sensibles et applique l’étiquetage automatique au contenu des ressources Azure Purview. Ceux-ci incluent des fichiers dans le stockage comme Azure Data Lake et Azure Files, ainsi que des données schématisées telles que des colonnes dans Azure SQL base de données et Cosmos DB. |[Étiquetage dans Azure Purview](/azure/purview/create-sensitivity-label) |
 |[Kit de développement logiciel (SDK) de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|Étend les étiquettes de confidentialité aux applications et services tiers. <p> Exemple de scénario : [définir et obtenir une étiquette de confidentialité (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Configuration et paramétrage du kit de développement logiciel (SDK) de Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
 
 

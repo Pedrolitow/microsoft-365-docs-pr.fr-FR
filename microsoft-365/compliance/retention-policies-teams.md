@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241079"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586590"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -65,10 +65,10 @@ Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que 
 
 Teams utilise un service de conversation fourni par Azure comme espace de stockage principal pour tous les messages (conversations et messages de canaux). Si vous devez supprimer des messages Teams pour des raisons de conformité, les stratégies de rétention pour Teams peuvent supprimer les messages après une période spécifique, en fonction de leur moment de création. Les messages sont ensuite supprimés définitivement des boîtes aux lettres Exchange où ils sont stockés pour des opérations de conformité et du stockage principal utilisé par le service de conversation sous-jacent fourni par Azure. Pour plus d’informations sur l’architecture sous-jacente, voir la page [Sécurité et conformité dans Microsoft Teams](/MicrosoftTeams/security-compliance-overview) et plus précisément, la section [Architecture de protection des informations](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange.
+Même si les données des conversations et des messages de canal Teams sont stockées dans des boîtes aux lettres, vous devez configurer une stratégie de rétention pour les emplacements des **messages de canal Teams** et des **conversations Teams**. Les conversations et les messages de canal Teams ne sont pas inclus dans les stratégies de rétention configurées pour les boîtes aux lettres d’utilisateurs ou de groupes Exchange. Si un utilisateur est ajouté à une conversation, une copie de tous les messages partagés avec lui est ingérée dans sa boîte aux lettres. La date de création de ces messages ne change pas pour le nouvel utilisateur et reste identique pour tous les utilisateurs.
 
 > [!NOTE]
-> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve des messages Teams et que vous supprimez sa boîte aux lettres, la boîte aux lettres est convertie en [Boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
+> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve des messages Teams et que vous supprimez sa boîte aux lettres, la boîte aux lettres est convertie en [Boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez le compte d’utilisateur de la stratégie de rétention et [attendez que cette modification prenne effet](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) avant de supprimer sa boîte aux lettres. 
 
 Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages des Teams. Le travail du minuteur prend généralement de 1 à 7 jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés. 
 
