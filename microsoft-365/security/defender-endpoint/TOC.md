@@ -267,11 +267,7 @@
 ### [Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison](host-firewall-reporting.md)
 
 ### [Réduction de la surface d’attaque]()
-#### [Vue d’ensemble de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
-#### [Configurer les fonctionnalités de la réduction de la surface d’attaque](configure-attack-surface-reduction.md)
-#### [Utiliser le mode audit pour la réduction de la surface d’attaque](audit-windows-defender.md)
-#### [Afficher les événements de la réduction de la surface d’attaque](event-views.md)
-#### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
+#### [Comprendre et utiliser la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Règles de réduction de la surface d’attaque (ASR)]()
 ##### [Découvrez les règles du RSA](attack-surface-reduction.md).
 ##### [Déployez les règles du RSA](attack-surface-reduction-rules-deployment.md).
@@ -283,6 +279,7 @@
 ##### [Évaluer les règles ASR](evaluate-attack-surface-reduction.md)
 ##### [Activer les règles ASR](enable-attack-surface-reduction.md)
 ##### [Personnaliser les règles ASR](customize-attack-surface-reduction.md)
+#### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 
 ### Protection de nouvelle génération
 #### [Vue d’ensemble de la protection nouvelle génération](next-generation-protection.md)
