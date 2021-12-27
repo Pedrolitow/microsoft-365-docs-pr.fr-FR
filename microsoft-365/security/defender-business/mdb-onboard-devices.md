@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/23/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2b86836926546c8efdb17d760a406c0be31dc65d
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: c5c5d2116ab3a1f06bc7b1d3f5e3be7aceaee78b
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507720"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609096"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business-preview"></a>Intégrer des appareils à Microsoft Defender pour Entreprises (prévisualisation)
 
@@ -36,7 +36,7 @@ Avec Microsoft Defender entreprise (prévisualisation), vous avez le choix entre
 
 1. [Découvrez les méthodes d’intégration](#types-of-onboarding-methods)et déterminez si vous utilisez l’intégration automatique ou manuelle.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des opérations suivantes :
 
    - Si vous utilisez l’intégration automatique, allez à l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les entreprises [(prévisualisation).](mdb-configure-security-settings.md)
    - Si vous procédez manuellement à l’intégration des appareils, procédez à l’intégration d’un appareil à l’aide d’un [script local dans Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-defender-for-business).
@@ -55,9 +55,9 @@ Le tableau suivant décrit les types de méthodes d’intégration qui sont pris
 
 | Méthode d’intégration  | Description  |
 |---------|---------|
-| **Intégration automatique**<br/>(*disponible pour les clients qui utilisent déjà Microsoft Endpoint Manager*) | Si vous utilisiez déjà Microsoft Endpoint Manager avant d’obtenir Defender entreprise (prévisualisation), Defender for Business le détectera. Vous serez invité à savoir si vous souhaitez utiliser le processus d’intégration automatique pour les appareils précédemment intégrés à Microsoft Endpoint Manager. L’intégration automatique permet de mettre en place une connexion entre Defender entreprise (prévisualisation) et Microsoft Endpoint Manager, puis d’intégrer des appareils à Defender for Business (prévisualisation). Cette option vous permet d’intégrer des appareils à Defender for Business (prévisualisation) rapidement et efficacement.<br/><br/>Si vous choisissez le processus d’intégration *automatique,* tous les appareils inscrits Microsoft Endpoint Manager seront intégrés à Defender for Endpoint. <br/><br/>Si vous souhaitez utiliser l’intégration automatique, ignorez les procédures de cet article et passez à l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les entreprises [(prévisualisation).](mdb-configure-security-settings.md)  |
-| **Script local**<br/>(*recommandé lors de la prévisualisation ; utile pour l’intégration de quelques appareils à la fois)*  | Pendant la prévisualisation, vous pouvez intégrer des appareils dans Defender for Business (prévisualisation) à l’aide d’un script local. Microsoft Defender pour Entreprise (prévisualisation) héberge un script téléchargeable que vous pouvez utiliser sur Windows 10 ou 11 appareils. L’exécution du script sur un appareil crée une relation d’Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune.<br/><br/>Si vous souhaitez utiliser cette méthode, procédez à l’intégration d’un appareil à l’aide d’un [script local dans Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-defender-for-business). |
-| **Microsoft Intune** <br/>(*disponible pour les clients qui utilisent déjà Microsoft Intune*) | Si vous utilisiez déjà Microsoft Intune avant d’obtenir Defender entreprise (prévisualisation), vous pouvez utiliser Microsoft Intune pour intégrer des appareils. Lors de la prévisualisation, par exemple, vous pouvez intégrer des appareils iOS, macOS, Linux et Android à Defender for Business (prévisualisation). <br/><br/>Si vous souhaitez utiliser cette méthode, consultez Inscription [d’appareil dans Intune.](/mem/intune/enrollment/device-enrollment) |
+| **Intégration automatique**<br/>(*disponible pour les clients qui utilisent déjà Microsoft Endpoint Manager*) | Si vous utilisiez déjà Microsoft Endpoint Manager avant d’obtenir Defender entreprise (prévisualisation), Defender for Business le détectera. Vous serez invité à savoir si vous souhaitez utiliser le processus d’intégration automatique pour les appareils précédemment intégrés à Microsoft Endpoint Manager. <br/><br/>L’intégration automatique permet de mettre en place une connexion entre Defender entreprise (prévisualisation) et Microsoft Endpoint Manager, puis d’intégrer des appareils à Defender for Business (prévisualisation). Cette option vous permet d’intégrer des appareils à Defender for Business (prévisualisation) rapidement et efficacement. Tous Windows appareils actuellement inscrits dans Microsoft Endpoint Manager seront intégrés à Defender pour Entreprise. <br/><br/>Si vous choisissez l’intégration automatique, ignorez les procédures de cet article et passez à l’étape 5 : Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender pour les entreprises [(prévisualisation).](mdb-configure-security-settings.md)  |
+| **Script local**<br/>(*recommandé lors de la prévisualisation ; utile pour l’intégration de quelques appareils à la fois)*  | Pendant la prévisualisation, vous pouvez intégrer des appareils dans Defender for Business (prévisualisation) à l’aide d’un script que vous téléchargez et exécutez sur des appareils macOS, Windows 10 ou 11 et Linux. L’exécution du script sur un appareil crée une relation d’Azure Active Directory (Azure AD) et inscrit l’appareil avec Microsoft Intune. Le processus est très similaire à celui de [l’intégration d’appareils à Microsoft Defender for Endpoint](../defender-endpoint/onboarding.md).<br/><br/>Pour utiliser cette méthode, procédez à [l’intégration d’un appareil à l’aide](#onboard-a-device-using-a-local-script-in-defender-for-business)d’un script local Microsoft 365 Defender . |
+| **Microsoft Intune** <br/>(*disponible pour les clients qui utilisent déjà Microsoft Intune*) | Si vous utilisiez déjà [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) avant d’obtenir Defender entreprise (prévisualisation), vous pouvez utiliser Microsoft Intune pour intégrer des appareils. Pendant la prévisualisation, vous pouvez utiliser Microsoft Intune pour intégrer des appareils Windows, iOS, macOS, Linux et Android à Defender for Business (prévisualisation). <br/><br/>Pour utiliser cette méthode, voir [Inscription des appareils dans Intune.](/mem/intune/enrollment/device-enrollment) |
 
 > [!TIP]
 > Si un problème se produit lors de l’intégration d’appareils, consultez La résolution des problèmes de Microsoft Defender entreprise [(prévisualisation).](mdb-troubleshooting.yml) 
@@ -68,19 +68,17 @@ Le tableau suivant décrit les types de méthodes d’intégration qui sont pris
 
 2. Dans le volet de navigation, choisissez **Paramètres** points de terminaison, puis sous Gestion des appareils  >  , choisissez **Intégration.** 
 
-3. Sélectionnez **Windows 10 et 11,** puis, sous Intégrer un **appareil,** dans la **section** Méthode de déploiement, choisissez Script **local.** 
+3. Sélectionnez un système d’exploitation, **tel que Windows 10 et 11,** puis, sous Intégrer un appareil, dans la section Méthode de déploiement, choisissez Script   **local.** 
 
 4. Sélectionnez **Télécharger le package d’intégration.** Nous vous recommandons d’enregistrer le package d’intégration sur un lecteur amovible.
 
-5. Sur chaque appareil, suivez les étapes suivantes : 
+5. Suivez les instructions des articles suivants :
 
-   1. Copiez `WindowsDefenderATPOnboardingPackage.zip` le fichier que vous avez téléchargé sur un appareil et extrayez son contenu. Vous pouvez extraire le contenu dans le dossier **Bureau de l’appareil.**
-   
-   2. Ouvrez l’invite de commandes en tant qu’administrateur.
-   
-   3. Dans la fenêtre Invite de commandes, tapez l’emplacement du fichier de script. Par exemple, si vous avez  copié le fichier dans le dossier Bureau, tapez, puis `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd` appuyez sur Entrée.
+   - Windows : intégrer [des appareils Windows à l’aide d’un script local](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
+   - Appareils macOS : [déploiement manuel de Microsoft Defender pour endpoint sur macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
+   - Appareils Linux : [déployer Microsoft Defender pour point de terminaison sur Linux manuellement](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-6. Exécutez [un test de détection.](#run-a-detection-test)
+6. Exécutez un [test de détection pour](#run-a-detection-test) Windows appareils.
 
 > [!IMPORTANT]
 > Si un problème se produit et que votre processus d’intégration échoue, consultez La résolution des problèmes de Microsoft Defender entreprise [(prévisualisation).](mdb-troubleshooting.yml)
@@ -91,9 +89,9 @@ Si vous utilisiez déjà Microsoft Intune avant d’obtenir Defender entreprise 
 
 ## <a name="run-a-detection-test"></a>Exécuter un test de détection
 
-Une fois que vous avez intégré manuellement un appareil, vous pouvez exécuter un test de détection pour vous assurer que tout fonctionne correctement avec Defender for Business (prévisualisation).
+Une fois que vous avez intégré un Windows manuellement, vous pouvez exécuter un test de détection pour vous assurer que tout fonctionne correctement avec Defender for Business (prévisualisation).
 
-1. Sur l’appareil, créez un dossier : `C:\test-MDATP-test` .
+1. Sur le Windows, créez un dossier : `C:\test-MDATP-test` .
 
 2. Ouvrez l’invite de commandes en tant qu’administrateur.
 
@@ -115,21 +113,24 @@ Si vous souhaitez hors d’un appareil, suivez les étapes suivantes :
 
 3. Sous **Gestion des appareils,** choisissez **Offboarding**.
 
-4. Sélectionnez **Windows 10 et 11,** puis, sous Horsboard **d’un** appareil, dans la **section** Méthode de déploiement, choisissez **Script local.** 
+4. Sélectionnez un système d’exploitation, tel que **Windows 10 et 11,** puis, sous Horsboard d’un **appareil,** dans la **section** Méthode de déploiement, choisissez Script **local.** 
 
 5. Dans l’écran de confirmation, examinez les informations, puis choisissez **Télécharger** pour continuer.
 
-6. Enregistrez le dossier compressé à un emplacement, tel qu’un lecteur amovible.
+6. Select **Download offboarding package**. Nous vous recommandons d’enregistrer le package de déboardage sur un lecteur amovible.
 
-7. Sur chaque appareil, suivez les étapes suivantes : 
+7. Exécutez le script sur chaque appareil que vous souhaitez hors d’board. 
 
-   1. Copiez le package de configuration ( ) que vous avez téléchargé sur `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD` l’appareil et extrayez son contenu. Vous pouvez extraire le contenu dans le dossier **Bureau de l’appareil.** ( `YYYY-MM-DD` fait référence à la date d’expiration du package.)
+   Vous avez besoin d’aide pour cette tâche ? Consultez les ressources suivantes :   
 
-   2. Ouvrez l’invite de commandes en tant qu’administrateur.
+   - Windows périphériques : [hors Windows à l’aide d’un script local](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   - Appareils macOS : [désinstallation sur macOS](../defender-endpoint/mac-resources.md#uninstalling)
+   - Appareils Linux [: désinstallation sur Linux](../defender-endpoint/linux-resources.md#uninstall)
 
-   3. Dans la fenêtre Invite de commandes, tapez l’emplacement du fichier de script. Par exemple, si vous avez  copié le fichier dans le dossier Bureau, tapez, puis `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd` appuyez sur Entrée.
+> [!IMPORTANT]
+> L’arrêt de l’board d’un appareil entraîne l’arrêt de l’envoi de données à Defender for Business (prévisualisation). Toutefois, les données reçues avant laboarding sont conservées pendant six (6) mois au plus.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Procédez comme il se doit pour :
 

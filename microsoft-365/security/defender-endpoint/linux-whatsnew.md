@@ -16,19 +16,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: a9d5b274b5d5c3414206c5770be043cc2a543ce7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d70579c3e1b89fa220edbacd92a61f8fbbebe14d
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166265"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609132"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
+
+- Ajout d’une fonctionnalité pour détecter les fioles log4j vulnérables en cours d’utilisation Java applications. L’ordinateur est régulièrement inspecté pour l’exécution Java processus avec des jais log4j chargés. Les informations sont signalées au système principal de Microsoft Defender for Endpoint et sont exposées dans la zone Gestion des vulnérabilités du portail.
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 

@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/17/2021
+ms.date: 12/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6259cafb34922d170c1c22429e3a06805f0cc0e3
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: b13eaa93103759d072960ba0ea4e322e8f5a642c
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566698"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609120"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -46,7 +46,7 @@ La protection contre la falsification est disponible pour les appareils qui exé
 > [!NOTE]
 > La protection contre la falsification Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans la solution unifiée moderne pour [Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Aperçu
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -104,7 +104,7 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 
 - Lorsque vous utilisez le portail Microsoft 365 Defender pour gérer la protection contre la falsification, vous n’avez pas besoin d’utiliser Intune ou la méthode d’attachement du client.
 
-- Lorsque vous gérez la protection contre les falsifications dans le Centre de sécurité Microsoft Defender, le paramètre est appliqué à l’échelle du client, affectant tous vos appareils exécutant Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 ou Windows Server 2022. Pour affiner la protection contre la falsification (par exemple, une protection contre la falsification sur certains appareils, mais pas pour d’autres), utilisez [Intune](#manage-tamper-protection-for-your-organization-using-intune) ou Configuration Manager avec attachement [client.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- Lorsque vous gérez la protection contre les falsifications dans le Centre de sécurité Microsoft Defender, le paramètre est appliqué à l’échelle du client, ce qui affecte tous vos appareils exécutant Windows 10, Windows 10 Entreprise plusieurs sessions, Windows 11, Windows 11 Entreprise plusieurs sessions, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 ou Windows Server 2022. Pour affiner la protection contre la falsification (par exemple, une protection contre la falsification sur certains appareils, mais pas pour d’autres), utilisez [Intune](#manage-tamper-protection-for-your-organization-using-intune) ou Configuration Manager avec attachement [client.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 
 - Si vous avez un environnement hybride, les paramètres de protection contre la falsification configurés dans Intune prévalent sur les paramètres configurés dans le portail Microsoft 365 Defender client.
 
@@ -116,6 +116,8 @@ La protection contre la falsification peut être allumée ou désactivée pour v
   
   - Windows 10
   - Windows 11
+  - Windows 10 Entreprise à sessions multiples
+  - Windows 11 Entreprise sessions multiples 
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
   - Windows Server 2022
   - Windows Server, version [1803 ou](/windows/release-health/status-windows-10-1803) ultérieure
@@ -189,10 +191,10 @@ Sur Windows Server 2016, l’application Paramètres ne reflète pas préciséme
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Gérer la protection contre la falsification pour votre organisation avec Configuration Manager, version 2006
 
-Si vous utilisez la [version 2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)de Configuration Manager, vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’un appelée *« attachement de client*». L’attachement client vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le Centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux collections & périphériques.
+Si vous utilisez la [version 2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)de Configuration Manager, vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise sessions multiples, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement *de client*. L’attachement client vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le Centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux collections & périphériques.
 
 > [!NOTE]
-> La procédure peut être utilisée pour étendre la protection contre la falsification aux appareils exécutant Windows 10, Windows 11, Windows Server 2019 et Windows Server 2022. Veillez à examiner les conditions préalables et d’autres informations dans les ressources mentionnées dans cette procédure.
+> La procédure peut être utilisée pour étendre la protection contre la falsification aux appareils exécutant Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise multisession, Windows Server 2019 et Windows Server 2022. Veillez à examiner les conditions préalables et d’autres informations dans les ressources mentionnées dans cette procédure.
 
 1. Configurer l’attachement du client. Pour plus d’informations, [voir Microsoft Endpoint Manager de l’attachement de client : synchronisation de l’appareil et actions de l’appareil.](/mem/configmgr/tenant-attach/device-sync-actions)
 
@@ -254,9 +256,13 @@ Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, consul
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre la falsification ?
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)ou ultérieur avec [Microsoft Defender pour Endpoint](/microsoft-365/security/defender-endpoint).
+  
+Windows 10 Entreprise à sessions multiples
 
-Windows 11
+Windows 11
 
+Windows 11 Entreprise sessions multiples
+  
 Si vous utilisez Configuration Manager, version 2006, avec attachement client, la protection contre la falsification peut être étendue à Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022. Voir Attachement client : créer et déployer une stratégie antivirus de sécurité de point de terminaison [à partir du Centre d’administration (prévisualisation).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>La protection contre la falsification affectera-t-elle l’inscription d’antivirus non Microsoft dans l Sécurité Windows app; ?
