@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 287097aac61817347b6d4a56eadda8dd7a5a2c46
-ms.sourcegitcommit: b51e58f42a68b42f3e0b43564415dc5c1e9effb6
+ms.openlocfilehash: 0d0c36fafbd3c35613e0efd50f842b80aa30b9cf
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/28/2021
-ms.locfileid: "61614289"
+ms.locfileid: "61620407"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender entreprise (prévisualisation)
 
@@ -78,7 +78,7 @@ Le tableau suivant décrit les paramètres préconfigurés pour Defender pour En
 
 | Setting  | Description  |
 |---------|---------|
-| [Protection cloud](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | Parfois appelée protection cloud ou Microsoft Advanced Protection Service (MAPS), la protection cloud fonctionne avec Antivirus Microsoft Defender et le cloud Microsoft pour identifier les nouvelles menaces, parfois même avant qu’un seul appareil ne soit affecté. La protection cloud est désactivée par défaut. <br/><br/>[En savoir plus sur la protection cloud.](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)         |
+| [Protection cloud](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | Parfois appelée protection cloud ou Microsoft Advanced Protection Service (MAPS), la protection cloud fonctionne avec Antivirus Microsoft Defender et le cloud Microsoft pour identifier les nouvelles menaces, parfois même avant qu’un seul appareil ne soit affecté. Par défaut, [AllowCloudProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) est allumé. <br/><br/>[En savoir plus sur la protection cloud.](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)         |
 | [Surveillance des fichiers entrants et sortants](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | Pour surveiller les fichiers entrants et sortants, [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) est définie pour surveiller tous les fichiers.         |
 | [Analyser les fichiers réseau](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | Par défaut, [AllowScanningNetworkFiles n’est](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) pas activé et les fichiers réseau ne sont pas analysés. |
 | [Analyser les messages électroniques](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | Par défaut, [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) n’est pas activé et les messages électroniques ne sont pas analysés. |

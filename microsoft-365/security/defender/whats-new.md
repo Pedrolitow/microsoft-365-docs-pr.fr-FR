@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e22a237a5e8369093a83063f784fdba3ed75401c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7c41ff83bffaa6c0e982f4dc0dd3c36e614c0fb
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300813"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620455"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -46,6 +46,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour l’identité](/defender-for-identity/whats-new)
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="december-2021"></a>Décembre 2021
+- (Aperçu) `DeviceTvmSoftwareEvidentBeta` a été ajoutée dans le hunting avancé pour vous permettre d’afficher la preuve de l’endroit où un logiciel spécifique a été détecté sur un appareil. 
+ 
 ## <a name="november-2021"></a>Novembre 2021
 
 - (Aperçu) La fonctionnalité de module de gouvernance des applications de Defender pour les applications cloud est désormais disponible dans Microsoft 365 Defender. La gouvernance des applications fournit une fonctionnalité de gestion de la sécurité et des stratégies conçue pour les applications activées pour OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées. [En savoir plus sur la gouvernance des applications.](/cloud-app-security/app-governance-manage-app-governance)

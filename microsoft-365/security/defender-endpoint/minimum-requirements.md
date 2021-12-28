@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84bcb13f955c1972e9e3b22359a8a787e345ba07
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: fdc22ecb1e540c2408cc6178c0190dbce676d761
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560300"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620467"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -117,6 +117,8 @@ Les appareils de votre réseau doivent être en cours d’exécution dans l’un
 
 La configuration matérielle requise pour Defender pour Endpoint sur les appareils est la même pour les éditions pris en charge.
 
+> Cœurs : 2 minimum, 4 mémoire préférée : 1 Go minimum, 4 préféré
+
 Pour plus d’informations sur les versions Windows 10, voir (/windows/release-health/release-information).
 
 > [!NOTE]
@@ -125,6 +127,8 @@ Pour plus d’informations sur les versions Windows 10, voir (/windows/release-h
 > Les ordinateurs virtuels Windows 10 Entreprise 2016 LTSB peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
 >
 > Pour les environnements virtuels, nous vous recommandons Windows 10 Entreprise LTSC 2019 ou une ultérieure.
+
+
 
 ### <a name="other-supported-operating-systems"></a>Autres systèmes d’exploitation pris en charge
 
