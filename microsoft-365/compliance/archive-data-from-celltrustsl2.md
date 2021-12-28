@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 4d54e424f326c42ac92ec5f0fc71a22e06351b7a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d412f00fda12a44fc9d09d9c61d5c59ea17cb8a2
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158429"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612559"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver les données de CellTrust SL2 vers Microsoft 365
 
@@ -37,7 +37,7 @@ La plateforme SL2 de CellTrust capture les données de communication à partir d
 
 3. Après avoir créé le connecteur de données Sl2 CellTrust, votre domaine et vos E/S (quel que soit votre plan SL2), commencez à envoyer des données Microsoft 365. Le flux de données est structuré pour prendre en charge les rapports basés sur des sources de données, des OUS ou le domaine par lui-même. Par conséquent, votre organisation n’a besoin que d’un connecteur pour alimenter toutes vos sources de données Microsoft 365.
 
-4. Le connecteur crée un dossier sous chaque utilisateur mappé avec une licence Office 365 appropriée intitulée **CellTrust SL2**. Ce mappage connecte un utilisateur CellTrust SL2 à une boîte aux lettres Office 365 à l’aide d’une adresse de messagerie. Si un ID d’utilisateur dans CellTrust SL2 n’a aucune correspondance dans Office 365, les données de l’utilisateur ne seront pas archivées.
+4. Le connecteur crée un dossier sous chaque utilisateur mappé avec une licence Office 365 appropriée intitulée **CellTrust SL2**. Ce mappage connecte un utilisateur CellTrust SL2 à une boîte aux lettres Office 365 à l’aide d’une adresse e-mail. Si un ID d’utilisateur dans CellTrust SL2 n’a aucune correspondance dans Office 365, les données de l’utilisateur ne seront pas archivées.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -65,21 +65,21 @@ La première étape consiste à créer un connecteur de données dans le Centre 
 
 5. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
-6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifiera le connecteur sur la page **Connecteurs de données** après sa création.
+6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifie le connecteur sur la page **Connecteurs de données** après sa création.
 
 7. Dans la page **Se connectez à votre compte CellTrust,** cliquez sur **Se connectez à CellTrust**. Vous serez redirigé vers le **portail CellTrust** pour Microsoft 365 dans une nouvelle fenêtre de navigateur.
 
 ## <a name="step-2-select-the-domains-or-ous-to-archive"></a>Étape 2 : Sélectionnez les domaines ou les OUS à archiver
 
-L’étape suivante consiste à se connecter à un compte d’administrateur pour votre domaine CellTrust SL2 et à sélectionner les domaines et les O à archiver dans Microsoft 365.
+L’étape suivante consiste à se connecter à un compte d’administrateur pour votre domaine CellTrust SL2 et à sélectionner les domaines et les utilisateurs à archiver dans Microsoft 365.
 
 1. Dans la page Connecteur **Microsoft 365** CellTrust, sélectionnez votre environnement dans le service cloud SL2 pour afficher une page de connexion.
 
-   En règle générale, vous devriez voir une option représentant votre environnement. Toutefois, si vous avez des domaines dans plusieurs environnements, vous verrez des options pour chaque environnement. Après avoir fait une sélection, vous êtes redirigé vers la page de connexion SL2.
+   En règle générale, vous devriez voir une option représentant votre environnement. Toutefois, si vous avez des domaines dans plusieurs environnements, vous verrez des options pour chaque environnement. Une fois que vous avez fait une sélection, vous êtes redirigé vers la page de connexion SL2.
 
 2. Connectez-vous avec vos informations d’identification de compte d’administrateur de domaine ou d’administrateur d’une ou de l’autre.
 
-   Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les O dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’ou, vous ne voyez que le nom de votre ou.
+   Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les utilisations dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’une ou plusieurs ou, vous ne voyez que le nom de votre ou de votre bureau.
 
 3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque OU séparément pour l’archiver.
 
@@ -91,7 +91,7 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
 La dernière étape consiste à ma cartographier les utilisateurs et à terminer la configuration du connecteur dans le Centre de conformité Microsoft 365.
 
-1. Dans la page **Mappage des** utilisateurs, sélectionnez Activer le mappage automatique des utilisateurs si l’adresse de messagerie des utilisateurs est la même dans SL2 et Microsoft 365.  Dans le cas contraire, vous devez manuellement charger les adresses de messagerie des utilisateurs en chargeant un fichier CSV qui m’indique l’adresse SL2 des utilisateurs Microsoft 365'adresse.
+1. Dans la page **Mappage** des utilisateurs, sélectionnez Activer le mappage automatique des utilisateurs si l’adresse de messagerie des utilisateurs est la même dans SL2 et Microsoft 365.  Dans le cas contraire, vous devez manuellement charger les adresses de messagerie des utilisateurs en chargeant un fichier CSV qui m’indique l’adresse SL2 des utilisateurs Microsoft 365'adresse.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
@@ -103,12 +103,12 @@ Consultez la page Du support client [CellTrust](https://www.celltrust.com/contac
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Un administrateur de domaine peut configurer un connecteur pour le domaine ou n’importe quelle OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
+- Un administrateur de domaine peut configurer un connecteur pour le domaine ou toute autre OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
 
 - Pour effectuer correctement les étapes ci-dessus, vous devez avoir une licence Microsoft 365 E5 et avoir les droits d’administrateur Microsoft Office appropriés.
 
 - Pour tester le nouveau connecteur, envoyez un sms à l’aide de votre application mobile SL2 ou à partir de votre portail SL2. Go to your Microsoft 365 mailbox and open the **CellTrust SL2** folder in your Inbox. L’exposition des messages texte dans votre boîte aux lettres peut prendre quelques minutes.
 
-- De nombreuses lois et réglementations exigent que la communication électronique soit conservée de telle sorte que, lorsqu’elle est demandée, elle puisse être produite en tant que preuve. La découverte électronique (eDiscovery) est utilisée pour se conformer à la production de communications électroniques. Enterprise Les solutions d’archivage des informations (EIA) sont conçues pour effectuer la découverte électronique et fournissent des fonctionnalités telles que la gestion des stratégies de rétention, la classification des données et la surveillance du contenu. Microsoft 365 offre une solution de rétention à long terme pour se conformer aux réglementations et normes qui affectent votre organisation.
+- De nombreuses lois et réglementations exigent que la communication électronique soit conservée de telle sorte que, lorsqu’elle est demandée, elle puisse être produite en tant que preuve. La découverte électronique (eDiscovery) est utilisée pour se conformer à la production de communication électronique. Enterprise solutions d’archivage des informations (EIA) sont conçues pour effectuer la découverte électronique et fournissent des fonctionnalités telles que la gestion des stratégies de rétention, la classification des données et la surveillance du contenu. Microsoft 365 offre une solution de rétention à long terme pour se conformer aux réglementations et normes qui affectent votre organisation.
 
-- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation au sein d’une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisées pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.
+- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation au sein d’une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisés pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.

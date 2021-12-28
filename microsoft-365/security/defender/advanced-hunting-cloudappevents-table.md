@@ -1,7 +1,7 @@
 ---
 title: Table CloudAppEvents dans le schéma de recherche avancé
 description: En savoir plus sur les événements des applications et services cloud dans la table CloudAppEvents du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Sécurité des applications cloud, MCAS
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 128d4f9ce80bff6192771ee1806f708d0d15c00f
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: daed3fb87aab498cdf91247a59e48af685aed010
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531134"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612535"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Application` | `string` | Application qui a effectué l’action enregistrée |
 | `ApplicationId` | `string` | Identificateur unique de l’application |
 | `AccountObjectId` | `string` | Identificateur unique du compte dans Azure Active Directory |
-| `AccountId` | `string` | Identificateur du compte trouvé par Microsoft Cloud App Security. Peut être Azure Active Directory ID, nom d’utilisateur principal ou autres identificateurs. |
+| `AccountId` | `string` | Identificateur du compte trouvé par Microsoft Defender pour les applications cloud. Peut être Azure Active Directory ID, nom d’utilisateur principal ou autres identificateurs. |
 | `AccountDisplayName` | `string` | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
 | `IsAdminOperation` | `string` | Indique si l’activité a été effectuée par un administrateur |
 | `DeviceType` | `string` | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
@@ -80,7 +80,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 
 - Dropbox
 - Dynamics 365
-- Exchange Online
+- Exchange Online
 - Microsoft Teams
 - OneDrive Entreprise
 - Power Automate

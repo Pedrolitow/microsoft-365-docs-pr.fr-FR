@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: bb6ec4c3488eff847933935ce7cf84ec5194c3cc
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508274"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612511"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Créer une stratégie dans Microsoft Defender entreprise (prévisualisation)
 
@@ -59,7 +59,7 @@ Microsoft Defender pour Entreprise (prévisualisation) inclut des stratégies pa
    - Lorsque vous définissez votre groupe d’appareils, vous spécifiez certains critères, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. 
    - Tous les groupes d’appareils, y compris les groupes d’appareils par défaut et personnalisés que vous définissez, sont stockés dans Azure Active Directory (Azure AD).
 
-   Pour en savoir plus sur les groupes d’appareils, voir . 
+   Pour en savoir plus sur les groupes d’appareils, voir [Groupes d’appareils dans Defender pour Entreprises (prévisualisation).](mdb-create-edit-device-groups.md)
 
 8. Sous **l’onglet Paramètres de configuration,** spécifiez les paramètres de votre stratégie, puis choisissez **Suivant**. Pour plus d’informations sur les paramètres individuels, voir Paramètres de configuration de [Microsoft Defender pour Entreprise (prévisualisation).](mdb-next-gen-configuration-settings.md)
 

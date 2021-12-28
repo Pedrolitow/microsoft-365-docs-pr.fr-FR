@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers Microsoft 365 Groupes dans Outlook et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: bf68d5c0e9c00536013e89a690e5708ca79739fe
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422506"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612571"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
@@ -73,9 +73,11 @@ Vous devez être administrateur global ou administrateur Exchange pour mettre à
 
 Les listes de distribution qui échouent à la mise à niveau restent inchangées.
 
-Si une ou plusieurs listes **de** distribution éligibles ne peuvent pas être mises à niveau, ouvrez un [ticket de support.](../../business-video/get-help-support.md) Le problème doit être recalcalé à l’équipe d’ingénierie des groupes pour qu’il en soit ainsi.
+Si une ou plusieurs listes **de** distribution éligibles ne peuvent pas être mises à niveau, 
 
-Il est possible que la liste de distribution n’a pas été mise à niveau en raison d’une panne de service, mais peu probable. Si vous le souhaitez, patientez un certain temps, puis essayez de mettre à niveau la DL à nouveau.
+1. Utilisez ce [script](https://aka.ms/DLToM365Group) pour analyser les problèmes possibles qui peuvent empêcher la mise à niveau de la liste de distribution vers un groupe Microsoft 365, résoudre les problèmes signalés par le script et essayer de mettre à niveau la liste de distribution une fois de plus. 
+
+2. Si le script ci-dessus ne vous aide pas ou si le problème persiste, ouvrez un [ticket de support.](../../business-video/get-help-support.md) Le problème doit être recalcalé à l’équipe d’ingénierie des groupes pour qu’il en soit ainsi.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution en même temps
 
@@ -185,6 +187,11 @@ Dans certains cas, la DL est éligible, mais n’a pas pu être mise à niveau. 
 - Lorsque l’administrateur a appliqué la stratégie d’adresse de messagerie de groupe pour les groupes d’une organisation et qu’il essaie de mettre à niveau les DL qui ne remplissent pas les critères, la DL n’est pas mise à niveau 
 
 - DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
+
+- La création Microsoft 365 groupe est autorisée uniquement pour peu d’utilisateurs, en suivant les étapes de [cet article.](/microsoft-365/solutions/manage-creation-of-groups) Dans ce scénario, si le propriétaire de la liste de distribution n’est pas autorisé à créer Microsoft 365 Groupe, la liste de distribution ne sera pas mise à niveau vers Microsoft 365 Groupe. Solution de contournement : utilisez l’une des solutions de contournement suivantes pour le scénario ci-dessus :
+1)  Assurez-vous que tous les utilisateurs mentionnés en tant que propriétaires de la DL sont autorisés à créer le groupe M365, c’est-à-dire qu’ils sont membres du groupe de sécurité autorisé au groupe M365.
+OR
+2)  Remplacez temporairement le propriétaire de la DL qui n’est pas autorisé à créer le groupe M365 par l’utilisateur autorisé à créer le groupe M365.
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Qu’advient-il de la DL en cas d’échec de la mise à niveau à partir du EAC ?
 
