@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/23/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 60ae1dee49e8d5d1ed44cdb78c74f7165b102edb
-ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
+ms.openlocfilehash: 287097aac61817347b6d4a56eadda8dd7a5a2c46
+ms.sourcegitcommit: b51e58f42a68b42f3e0b43564415dc5c1e9effb6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609108"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61614289"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Comprendre les paramètres de configuration nouvelle génération dans Microsoft Defender entreprise (prévisualisation)
 
@@ -30,13 +30,13 @@ ms.locfileid: "61609108"
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-La protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation) inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité . Toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. Et, si vous utilisez Microsoft Endpoint Manager, vous pouvez l’utiliser pour gérer vos stratégies et paramètres de sécurité.
+La protection nouvelle génération dans Defender for Business (prévisualisation) inclut une protection antivirus et anti-programme malveillant robuste. Vos stratégies par défaut sont conçues pour protéger vos appareils et vos utilisateurs sans entraver la productivité . Toutefois, vous pouvez également personnaliser vos stratégies en fonction des besoins de votre entreprise. Et, si vous utilisez Microsoft Endpoint Manager, vous pouvez l’utiliser pour gérer vos stratégies et paramètres de sécurité.
 
 **Cet article décrit**:
 
 - [Options et paramètres de protection nouvelle génération](#next-generation-protection-settings-and-options)
 - [Autres paramètres préconfigurés dans Defender for Business (aperçu)](#other-preconfigured-settings-in-defender-for-business) 
-- [Paramètres que vous pouvez configurer dans Microsoft Endpoint Manager](#settings-you-can-configure-in-microsoft-endpoint-manager)
+- [Paramètres et paramètres par défaut de Defender for Business Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Options et paramètres de protection nouvelle génération
 
@@ -71,27 +71,26 @@ Les paramètres de sécurité suivants sont préconfigurés dans Defender pour E
 - Les mises à jour des informations de sécurité sont vérifiées avant l’analyse antivirus ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - Les vérifications des informations de sécurité ont lieu toutes les quatre heures ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## <a name="settings-you-can-configure-in-microsoft-endpoint-manager"></a>Paramètres que vous pouvez configurer dans Microsoft Endpoint Manager
+## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Paramètres et paramètres par défaut de Defender for Business Microsoft Endpoint Manager
 
-Si vous utilisez Microsoft Endpoint Manager (ou Microsoft Intune) pour gérer les appareils et les paramètres de sécurité, vous pouvez définir ou modifier les paramètres dans le tableau suivant :
+Le tableau suivant décrit les paramètres préconfigurés pour Defender pour Entreprise (prévisualisation) et comment ces paramètres correspondent à ce que vous pouvez voir dans Microsoft Endpoint Manager (ou Microsoft Intune). Si vous utilisez le processus de configuration simplifié dans [Defender pour Entreprises](mdb-simplified-configuration.md) (prévisualisation), vous n’avez pas besoin de modifier ces paramètres.
 <br/><br/>
-
 
 | Setting  | Description  |
 |---------|---------|
-| [Protection cloud](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | Parfois appelée protection cloud ou Microsoft Advanced Protection Service (MAPS), la protection cloud fonctionne avec Antivirus Microsoft Defender et le cloud Microsoft pour identifier les nouvelles menaces, parfois même avant qu’un seul appareil ne soit affecté. La protection cloud est désactivée par défaut. <br/><br/>[En savoir plus sur la protection cloud](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md) et activer la protection [cloud.](../defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus.md)         |
-| [Surveillance des fichiers entrants et sortants](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | Pour configurer la surveillance des fichiers entrants et sortants, vous pouvez définir le [paramètre RealTimeScanDirection.](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) Par défaut, cette fonctionnalité est définie pour surveiller tous les fichiers.         |
-| [Analyser les fichiers réseau](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | Par défaut, ce paramètre n’est pas activé et les fichiers réseau ne sont pas analysés. Pour modifier ce paramètre, [activez AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles). |
-| [Analyser les messages électroniques](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | Par défaut, ce paramètre n’est pas activé et les messages électroniques ne sont pas analysés par Defender for Business. Pour modifier ce paramètre, [activez AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning). |
-| [Nombre de jours (0-90) pour conserver les programmes malveillants mis en quarantaine](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | Par défaut, ce paramètre est fixé à zéro (0) jours et les artefacts mis en quarantaine ne sont pas automatiquement supprimés. Pour modifier ce paramètre, modifiez le [paramètre DaysToRetainCleanedMalware.](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) |
-| [Envoyer le consentement des exemples](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Si un fichier suspect ou malveillant est détecté, un échantillon est envoyé au service cloud pour analyse, Antivirus Microsoft Defender bloque le fichier. Dès qu’une décision est prise, ce qui se produit rapidement, le fichier est libéré ou bloqué par Antivirus Microsoft Defender. Par défaut, Defender for Business envoie automatiquement des exemples sécurisés. Les exemples d’exemples sécurisés incluent , et les fichiers qui ne contiennent pas `.bat` `.scr` `.dll` `.exe` d’informations d’identification personnelle (PII). Si un fichier ne contient pas d’informations d’pii, l’utilisateur reçoit une demande pour autoriser l’envoi de l’exemple.<br/><br/>[En savoir plus sur la protection cloud et l’envoi d’exemples](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
-| [Analyser les lecteurs amovibles](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | Vous pouvez déterminer si Antivirus Microsoft Defender pouvez analyser les lecteurs amovibles, tels que les lecteurs USB sur les appareils. Par défaut, l’analyse des lecteurs amovibles est autorisée . Toutefois, vous pouvez modifier ce paramètre en éditant le paramètre [AllowFullScanRemovableDriveScanning.](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) <br/><br/>[En savoir plus sur les paramètres de stratégie anti-programme malveillant](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
-| [Exécuter le temps d’analyse rapide quotidien](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | Vous pouvez spécifier l’heure à utiliser pour exécuter une analyse antivirus/anti-programme malveillant rapide en éditant le paramètre ScheduleQuickScanTime. <br/><br/>[En savoir plus sur les paramètres d’analyse.](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)   |
-| [Vérifier les mises à jour des signatures avant d’exécution de l’analyse](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | Par défaut, Defender pour les entreprises est configuré pour vérifier les mises à jour de l’intelligence de sécurité avant l’exécution des analyses antivirus/anti-programme malveillant. Vous pouvez modifier votre configuration en éditant le [paramètre CheckForSignaturesBeforeRunningScan.](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan)<br/><br/>[En savoir plus sur les paramètres d’analyse](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) et [les mises à jour de l’intelligence de sécurité.](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)   |
-| [Fréquence (0 à 24 heures) de vérification des mises à jour des informations de sécurité](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | Par défaut, Defender pour les entreprises est configuré pour vérifier les mises à jour des informations de sécurité toutes les quatre heures. Toutefois, vous pouvez modifier cet intervalle en éditant le [paramètre SignatureUpdateInterval.](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) <br/><br/>[En savoir plus sur les paramètres d’analyse](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) et [les mises à jour de l’intelligence de sécurité.](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates) |
+| [Protection cloud](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | Parfois appelée protection cloud ou Microsoft Advanced Protection Service (MAPS), la protection cloud fonctionne avec Antivirus Microsoft Defender et le cloud Microsoft pour identifier les nouvelles menaces, parfois même avant qu’un seul appareil ne soit affecté. La protection cloud est désactivée par défaut. <br/><br/>[En savoir plus sur la protection cloud.](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)         |
+| [Surveillance des fichiers entrants et sortants](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | Pour surveiller les fichiers entrants et sortants, [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) est définie pour surveiller tous les fichiers.         |
+| [Analyser les fichiers réseau](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | Par défaut, [AllowScanningNetworkFiles n’est](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) pas activé et les fichiers réseau ne sont pas analysés. |
+| [Analyser les messages électroniques](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | Par défaut, [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) n’est pas activé et les messages électroniques ne sont pas analysés. |
+| [Nombre de jours (0-90) pour conserver les programmes malveillants mis en quarantaine](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | Par défaut, [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) ce paramètre est définie sur zéro (0) jours. Artifacts que la mise en quarantaine n’est pas supprimée automatiquement.  |
+| [Envoyer le consentement des exemples](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Par défaut, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) est et envoie automatiquement des échantillons sécurisés. Les exemples d’exemples sécurisés incluent , et les fichiers qui ne contiennent pas `.bat` `.scr` `.dll` `.exe` d’informations d’identification personnelle (PII). Si un fichier ne contient pas d’informations d’pii, l’utilisateur reçoit une demande pour autoriser l’envoi de l’exemple.<br/><br/>[En savoir plus sur la protection cloud et l’envoi d’exemples](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [Analyser les lecteurs amovibles](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | Par défaut, [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) est configuré pour analyser les lecteurs amovibles, tels que les lecteurs USB sur les appareils.<br/><br/>[En savoir plus sur les paramètres de stratégie anti-programme malveillant](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
+| [Exécuter le temps d’analyse rapide quotidien](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | Par défaut, [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) est définie sur 2:00 AM.<br/><br/>[En savoir plus sur les paramètres d’analyse.](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)   |
+| [Vérifier les mises à jour des signatures avant d’exécution de l’analyse](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | Par défaut, [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) est configuré pour vérifier les mises à jour de l’intelligence de sécurité avant l’exécution des analyses antivirus/anti-programme malveillant.<br/><br/>[En savoir plus sur les paramètres d’analyse](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) et [les mises à jour de l’intelligence de sécurité.](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)   |
+| [Fréquence (0 à 24 heures) de vérification des mises à jour des informations de sécurité](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | Par défaut, [SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) est configuré pour vérifier les mises à jour des informations de sécurité toutes les quatre heures.<br/><br/>[En savoir plus sur les paramètres d’analyse](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) et [les mises à jour de l’intelligence de sécurité.](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates) |
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 
