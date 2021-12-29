@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241115"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612631"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -126,7 +126,7 @@ Les éléments héritent des paramètres de rétention de leur conteneur spécif
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
+Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
   
 - Formulaires fiscaux qui doivent être conservés pendant une période minimale de temps. 
     
@@ -271,6 +271,19 @@ Vous ne devez pas choisir entre les stratégies de rétention uniquement et les 
 2. Vous créez et configurez une étiquette de rétention qui conserve du contenu de façon définitive et l’ajoutez à une stratégie d’étiquette que vous publiez sur tous les comptes OneDrive. Vous expliquez aux utilisateurs comment appliquer manuellement cette étiquette à des documents spécifiques, qui ne doivent pas être supprimés automatiquement, même s’ils n’ont pas été modifiés depuis cinq ans.
 
 Pour plus d’informations sur la façon dont les stratégies et les étiquettes de rétention fonctionnent conjointement, et sur la manière de déterminer le résultat de leur combinaison, voir la section suivante, qui explique les principes de la rétention et l’application des priorités.
+
+## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Combien de temps est nécessaire pour appliquer les paramètres de rétention
+
+Lorsque vous soumettez des stratégies de rétention pour les charges de travail et les stratégies d’étiquette pour appliquer automatiquement une étiquette de rétention, autorisez jusqu’à 7 jours pour que les paramètres de rétention soient appliqués au contenu :
+
+- [Durée d’application des stratégies de rétention](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [Délai d’activation des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+De même, autorisez jusqu’à 7 jours pour que les étiquettes de rétention soient visibles dans les applications après avoir publié les étiquettes :
+
+- [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+Souvent, les stratégies prennent effet et les étiquettes sont visibles plus rapidement que 7 jours. Toutefois, avec de nombreuses variables potentielles qui peuvent avoir un impact sur ce processus, il est préférable de planifier un maximum de 7 jours.
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Étendues de stratégie adaptatives ou statiques pour la rétention
 
