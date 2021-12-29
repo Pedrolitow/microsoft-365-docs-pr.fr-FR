@@ -469,6 +469,8 @@
               href: archive-linkedin-data.md
             - name: Données de badges physiques
               href: import-physical-badging-data.md
+            - name: Slack eDiscovery (aperçu)
+              href: archive-slack-data-microsoft.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
         - name: Connecteurs de données Veritas
