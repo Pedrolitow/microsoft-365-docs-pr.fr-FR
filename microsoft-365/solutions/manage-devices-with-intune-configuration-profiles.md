@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Commencer à utiliser des profils de configuration pour appliquer des paramètres sécurisés sur des appareils utilisant Intune pour transférer ces contrôles de sécurité vers le cloud.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301341"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645049"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 
@@ -44,13 +44,13 @@ Pour déployer les bases de référence de sécurité Windows pour Intune, dispo
 
 Pour l’instant, déployez simplement la base de référence de sécurité MDM la plus appropriée. Voir [Gérer des profils de bases de référence de sécurité dans Microsoft Intune](/mem/intune/protect/security-baselines-configure) pour créer le profil et choisir la version de base de référence.
 
-Plus tard, lorsque Microsoft Defender pour point de terminaison est installé et que vous avez connecté Intune, déployez les bases de référence de Defender pour point de terminaison. Cela est abordé dans l’article suivant de cette série : [Étape 6. Surveillez les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).
+Plus tard, lorsque Microsoft Defender pour point de terminaison est installé et que vous avez connecté Intune, déployez les bases de référence de Defender pour point de terminaison. Cette rubrique est traitée dans l’article suivant de cette série : [Étape 6. Surveillez les risques et la conformité des appareils aux bases de référence de sécurité](manage-devices-with-intune-monitor-risk.md).
 
 Il est important de comprendre que ces bases de référence de sécurité ne sont pas conformes au CIS ou NIST, mais reflètent étroitement leurs recommandations. Pour plus d’informations, voir [Les bases de référence de sécurité Intune sont-elles conformes au CIS ou NIST](/mem/intune/protect/security-baselines) ?
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personnaliser les profils de configuration pour votre organisation
 
-Outre le déploiement des bases de référence pré-configurées, de nombreuses organisations à l’échelle de l’entreprise implémentent des profils de configuration pour un contrôle plus granulaire. Cela permet de réduire la dépendance aux objets de stratégie de groupe dans l’environnement Active Directory local et de déplacer les contrôles de sécurité vers le cloud. 
+Outre le déploiement des bases de référence pré-configurées, de nombreuses organisations à l’échelle de l’entreprise implémentent des profils de configuration pour un contrôle plus granulaire. Cette configuration permet de réduire la dépendance aux objets de stratégie de groupe dans l’environnement Active Directory local et de déplacer les contrôles de sécurité vers le cloud. 
 
 Les nombreux paramètres que vous pouvez configurer à l’aide de profils de configuration peuvent être regroupés en quatre catégories, comme illustré ci-dessous.
 

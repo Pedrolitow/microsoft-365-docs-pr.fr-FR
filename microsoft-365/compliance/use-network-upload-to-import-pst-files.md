@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b189be60efb48af33d26ea459bbee77878d4a93c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560287"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643867"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -49,15 +49,9 @@ Vous ne devez effectuer l’étape 1 qu’une seule fois pour importer des fichi
 
 ## <a name="before-you-import-pst-files"></a>Avant d’importer des fichiers PST
   
-- Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué dans Exchange Online pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîtes aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
+- Le rôle Importation/Exportation de boîte aux lettres doit vous être attribué dans Exchange Online pour créer des tâches d’importation dans le Centre de conformité Microsoft 365 et importer des fichiers PST dans les boîtes aux lettres des utilisateurs. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
 
-    En outre, pour créer des tâches d’importation dans le Centre de conformité Microsoft 365, l’une des conditions suivantes doit être remplie :
-
-  - Vous devez avoir le rôle de destinataire de courrier dans Exchange Online. Par défaut, ce rôle est assigné aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.
-
-    Ou
-
-  - Vous devez être un administrateur général au sein de votre organisation.
+    En plus du rôle Importation/Exportation de boîte aux lettres, vous devez également avoir le rôle Destinataires de messagerie dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Gestion des destinataires dans Exchange Online.
 
     > [!TIP]
     > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres.
