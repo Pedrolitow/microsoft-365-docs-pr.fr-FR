@@ -12,14 +12,15 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ba05a27ae571f99a1d0185f249dfe38ed637c06
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b633753af17fea1fbf35a1559ceb4f537b467601
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560515"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645563"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd71e4b3554b2cd45b648300f84ec96a73e5116b
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 7fd064b906e4afe5e337df85d9dc6f174edc99cf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620543"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645837"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 
@@ -35,7 +35,8 @@ ms.locfileid: "61620543"
 - Microsoft Defender pour point de terminaison
 
 > [!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé pour vous permettre de trouver rapidement des preuves indiquant l’existence de logiciels `DeviceTvmSoftwareEvidenceBeta` sur un appareil.
+> Le `DeviceTvmSoftwareEvidenceBeta` tableau est actuellement en version bêta. Une fois qu’il quitte la version bêta, le nom de la table finale change et les noms de colonne peuvent également changer. Les modifications ruptureront probablement les requêtes qui utilisent encore des noms précédents. Il est conseillé aux utilisateurs d’examiner et d’ajuster leurs requêtes lors de la finalisation de ce tableau. 
+
 
 Le tableau dans le schéma de recherche avancée contient les données de `DeviceTvmSoftwareEvidenceBeta` [threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) liées à la section preuve [logicielle.](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence) Ce tableau vous permet d’afficher les preuves de l’endroit où un logiciel spécifique a été détecté sur un appareil. Vous pouvez utiliser ce tableau, par exemple, pour identifier les chemins d’accès aux fichiers de logiciels spécifiques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 

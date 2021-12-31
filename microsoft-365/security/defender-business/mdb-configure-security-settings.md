@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/29/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 18b259278f7f6053cdd7629eea114c3f61c82bb0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 06fa057455c506fe1cd467ab1fc780e5f5801e87
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508346"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645883"
 ---
 # <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Configurer vos paramètres et stratégies de sécurité dans Microsoft Defender entreprise (prévisualisation)
 
@@ -30,19 +30,36 @@ ms.locfileid: "61508346"
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises (prévisualisation), l’étape suivante consiste à afficher et, si nécessaire, à modifier vos paramètres et stratégies de sécurité. 
+Une fois que vous avez intégré les appareils de votre entreprise à Microsoft Defender pour Entreprises (prévisualisation), l’étape suivante consiste à afficher et, si nécessaire, à modifier vos paramètres et stratégies de sécurité. Dans Defender pour Entreprise (prévisualisation), les paramètres de sécurité sont appliqués aux appareils par le biais de stratégies. Ces stratégies sont appliquées aux [groupes d’appareils.](mdb-create-edit-device-groups.md#what-is-a-device-group) 
+
+Vous pouvez également configurer d’autres paramètres dans Defender for Business (prévisualisation). Ces paramètres incluent votre fuseau horaire, la réception ou non des fonctionnalités d’aperçu, et bien plus encore.
 
 ## <a name="what-to-do"></a>Procédure
 
-1. [Choisissez où gérer vos paramètres et stratégies de sécurité.](#choose-where-to-manage-security-settings-and-policies)
+1. [Obtenir une vue d’ensemble rapide des stratégies de sécurité par défaut dans Defender for Business](#default-policies-in-defender-for-business)
 
-2. [Afficher vos paramètres et stratégies de sécurité.](#view-your-security-settings-and-policies) 
+2. [Choisissez où gérer vos stratégies et appareils de sécurité.](#choose-where-to-manage-security-policies-and-devices)
 
-3. [Procédez comme vous le faire pour les étapes suivantes.](#next-steps)
+3. [Afficher vos stratégies de sécurité.](#view-your-security-policies)
 
-## <a name="choose-where-to-manage-security-settings-and-policies"></a>Choisir où gérer les paramètres et stratégies de sécurité
+4. [Afficher et modifier d’autres paramètres dans le portail Microsoft 365 Defender web](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal) 
 
-En ce qui concerne la gestion de vos paramètres et stratégies de sécurité, vous pouvez choisir parmi plusieurs options, comme décrit dans le tableau suivant : <br/><br/>
+5. [Procédez comme vous le faire pour les étapes suivantes.](#next-steps)
+
+## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender for Business
+
+Defender for Business (aperçu) inclut des stratégies par défaut qui utilisent les paramètres recommandés. Ces stratégies sont les suivantes :
+
+- [Les paramètres de protection nouvelle](mdb-next-gen-configuration-settings.md) génération qui déterminent la configuration Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces ; et 
+- [Paramètres de pare-feu](mdb-firewall.md) qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils clients Windows de votre entreprise.
+
+Vous pouvez appliquer vos stratégies par défaut aux Windows clients pendant le processus de configuration initial. Vous pouvez également définir de nouvelles stratégies et modifier des stratégies existantes en fonction des besoins de votre entreprise. 
+
+## <a name="choose-where-to-manage-security-policies-and-devices"></a>Choisir où gérer les stratégies et les appareils de sécurité
+
+Defender for Business (prévisualisation) propose un processus [de configuration simplifié](mdb-simplified-configuration.md) qui simplifie le processus d’installation et de configuration. Si vous sélectionnez le processus de configuration simplifié, vous pouvez afficher et gérer vos stratégies de sécurité dans le portail Microsoft 365 Defender ( [https://security.microsoft.com/](https://security.microsoft.com/) ). Toutefois, vous n’êtes pas limité à cette option. Si vous avez utilisé Microsoft Endpoint Manager (qui inclut Microsoft Intune) ou une solution de productivité non Microsoft pour gérer vos stratégies et appareils de sécurité, vous pouvez continuer à utiliser votre solution actuelle.
+
+Le tableau suivant peut vous aider à choisir l’endroit où gérer vos stratégies et appareils de sécurité. <br/><br/>
 
 | Option | Description |
 |:---|:---|
@@ -52,15 +69,46 @@ En ce qui concerne la gestion de vos paramètres et stratégies de sécurité, v
 > [!TIP]
 > Si vous souhaitez vous inscrire au programme d’aperçu de Microsoft Defender entreprise, visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Pour plus d’informations, [voir Obtenir Microsoft Defender entreprise (prévisualisation).](get-defender-business.md)
 
-## <a name="view-your-security-settings-and-policies"></a>Afficher vos paramètres et stratégies de sécurité
+## <a name="view-your-security-policies"></a>Afficher vos stratégies de sécurité
 
-Pour afficher vos paramètres et stratégies de sécurité, utilisez l’une des procédures du tableau suivant :
+Pour afficher votre liste de stratégies de sécurité, utilisez l’une des procédures du tableau suivant :
 <br/><br/>
 
 | Portail | Procedure |
 |:---|:---|
 | Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ) | 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ), and sign in. <br/><br/>2. Dans le volet de navigation, choisissez **Configuration de l’appareil.** Les stratégies sont organisées par système d’exploitation et type de stratégie.<br/><br/>3. Sélectionnez un onglet de système d’exploitation (par **exemple, Windows clients).**<br/><br/>4. Développez une catégorie (telle que la protection nouvelle génération ou le **pare-feu)** pour afficher votre liste de stratégies.<br/><br/>5. Sélectionnez une stratégie pour afficher plus de détails sur la stratégie. Pour apporter des modifications ou en savoir plus sur les paramètres de stratégie, consultez les articles suivants : <br/>- [Afficher ou modifier des stratégies d’appareil](mdb-view-edit-policies.md)<br/>- [Comprendre les paramètres de configuration nouvelle génération](mdb-next-gen-configuration-settings.md)<br/>- [Paramètres du pare-feu](mdb-firewall.md)  |
 | Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. Vous êtes maintenant dans le centre d Microsoft Endpoint Manager’administration.<br/><br/>2. Sélectionnez **Sécurité des points de terminaison.**<br/><br/>3. Sélectionnez une catégorie, telle **qu’Antivirus,** **Pare-feu,** Détection et réponse des points de terminaison ou Réduction de la **surface** d’attaque pour afficher les stratégies de cette catégorie. <br/><br/>Pour obtenir de l’aide sur la gestion de vos paramètres de sécurité dans Microsoft Endpoint Manager, commencez par gérer la sécurité des points de terminaison [dans Microsoft Intune](/mem/intune/protect/endpoint-security). |
+
+## <a name="view-and-edit-other-settings-in-the-microsoft-365-defender-portal"></a>Afficher et modifier d’autres paramètres dans le portail Microsoft 365 Defender web
+
+Outre les stratégies de sécurité appliquées aux appareils, il existe d’autres paramètres que vous pouvez afficher et modifier dans Defender for Business (prévisualisation). Par exemple, vous spécifiez le fuseau horaire à utiliser, et vous pouvez intégrer (ou horsboard) des appareils. 
+
+> [!NOTE]
+> Vous pouvez voir plus de paramètres dans votre client que ceux répertoriés dans cet article. Nous allons mettre en surbrillance les paramètres que vous devez examiner dans Defender for Business (prévisualisation).
+
+### <a name="settings-to-review-for-defender-for-business"></a>Paramètres à réviser pour Defender for Business
+
+Le tableau suivant décrit les paramètres à afficher (et si nécessaire, modifier) dans Defender pour Entreprise (prévisualisation).
+
+<br/><br/>
+
+| Catégorie | Setting | Description |
+|:---|:---|:---|
+| **Centre de sécurité** | **Fuseau horaire** | Sélectionnez le fuseau horaire à utiliser pour les dates et heures affichées dans les incidents, les menaces détectées et les examens automatisés & correction. Vous pouvez utiliser l’heure UTC ou votre fuseau horaire local *(recommandé).*  |
+| **Microsoft 365 Defender** | **Account** | Afficher des détails, tels que l’endroit où vos données sont stockées, votre ID de client et votre ID d’entreprise (organisation). |
+| **Microsoft 365 Defender**  | **Fonctionnalités en préversion**  | Activer les fonctionnalités d’aperçu pour essayer les fonctionnalités à venir et les nouvelles fonctionnalités. Vous pouvez être parmi les premiers à afficher un aperçu des nouvelles fonctionnalités et à fournir des commentaires. |
+| **Points de terminaison**  | **Notifications par courrier électronique** | Configurer ou modifier vos règles de notification par courrier électronique. Lorsque des vulnérabilités sont détectées ou qu’une alerte est créée, les destinataires spécifiés dans vos règles de notification par courrier électronique reçoivent un e-mail. [En savoir plus sur les notifications par courrier électronique.](mdb-email-notifications.md) |
+| **Points de terminaison**   | **Gestion des appareils**  >  **Intégration** | Intégrer des appareils à Defender for Business à l’aide d’un script téléchargeable. Pour plus d’informations, [voir Intégrer un appareil à l’aide d’un script local dans Defender for Business.](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)   |  
+| **Points de terminaison**  |  **Gestion des appareils**  >  **Offboarding** | Déboard (supprimer) des appareils de Defender for Business (prévisualisation). Lorsque vousboardez un appareil, il n’envoie plus de données à Defender for Business (prévisualisation), mais les données reçues avant laboardisation sont conservées. Pour plus d’informations, voir [« Horsboard » d’un appareil.](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device)  |
+
+### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>Accéder à vos paramètres dans le portail Microsoft 365 Defender web
+
+1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com/](https://security.microsoft.com/) ), and sign in.
+
+2. Sélectionnez **Paramètres,** puis sélectionnez une catégorie (par **exemple,** Centre de sécurité, **Microsoft 365 Defender** ou Points **de terminaison).**
+
+3. Dans la liste des paramètres, sélectionnez un élément à afficher ou à modifier.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

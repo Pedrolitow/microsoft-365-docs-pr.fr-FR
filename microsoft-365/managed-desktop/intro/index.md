@@ -7,15 +7,16 @@ audience: ITpro
 author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.custom: intro-overview
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fc76ad5e41610c23f60392c2f13655049018a1eb
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 29db9d25d81c7f68f3bac9e57a2430b5393a8ff7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364590"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643041"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 

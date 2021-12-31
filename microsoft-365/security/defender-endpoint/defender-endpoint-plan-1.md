@@ -14,12 +14,13 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bd0270ae5fdffe5335666fa1ae9c74143bff7658
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom: intro-overview
+ms.openlocfilehash: 0025abb9aa900da4b6e22b7ecf1a48014f25552a
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371879"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645541"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -75,8 +76,8 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 
 | Fichier/Périphérique | Opération | Description |
 |:---|:---|:---|
-| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
 | Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
 | Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur des appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 
@@ -117,7 +118,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ranso
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
-### <a name="device-control"></a>Contrôle des appareils
+### <a name="device-control"></a>Contrôle d’appareil
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -192,7 +193,7 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Comparer Microsoft Defender pour endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)

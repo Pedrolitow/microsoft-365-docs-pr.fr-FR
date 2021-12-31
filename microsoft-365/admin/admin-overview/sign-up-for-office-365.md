@@ -23,17 +23,18 @@ ms.custom:
 - commerce_signup
 - AdminTemplateSet
 - adminvideo
+- intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370199"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643711"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 

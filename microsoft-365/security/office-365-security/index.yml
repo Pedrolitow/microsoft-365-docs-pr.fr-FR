@@ -9,16 +9,17 @@ metadata:
   ms.technology: mdo
   ms.topic: landing-page
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas
   ms.author: macapara
   ms.date: 04/13/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 65f9f10ae0697842dfeca7a5e17a382cc720707c
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60169574"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61645191"
 landingContent:
 - title: Defender for Office 365 & Exchange Online Protection
   linkLists:
@@ -50,7 +51,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Configurer SPF pour empêcher l’usurpation
+    - text: Configurer SPF pour empêcher l’usurpation d’identité
       url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
     - text: Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
       url: use-dkim-to-validate-outbound-email.md

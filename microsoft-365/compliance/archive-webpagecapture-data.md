@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de capture de page Web à partir de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 28d8347c8749e040b778d1efe230e403210095a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: de6d00c9835f850dfef779cbff207694ffddd716
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168757"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643395"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurer un connecteur pour archiver des données de page web
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la source de la page web pour configurer un site de capture de pages Web.
 
-2. Une fois toutes les 24 heures, les éléments sources de la page web sont copiés sur le site Veritas Merge1. Le connecteur convertit et joint également le contenu d’une page web à un message électronique.
+2. Toutes les 24 heures, les éléments sources de la page web sont copiés sur le site Veritas Merge1. Le connecteur convertit et joint également le contenu d’une page web à un message électronique.
 
 3. Le connecteur de capture de page web que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les éléments de page web vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -47,7 +47,9 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - L’utilisateur qui crée le connecteur de capture de page web à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
-## <a name="step-1-set-up-the-webpage-capture-connector"></a>Étape 1 : Configurer le connecteur de capture de pages web
+- Ce connecteur de données Veritas est en prévisualisation publique dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+
+## <a name="step-1-set-up-the-webpage-capture-connector"></a>Étape 1 : Configurer le connecteur de capture de page web
 
 La première étape consiste à accéder aux **connecteurs** de données et à créer un connecteur pour les données sources de page Web.
 
@@ -71,7 +73,7 @@ Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’ut
 
 Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes ci-dessous :
 
-1. Dans la page **Web Mappage Capture users to Microsoft 365 users** page, enable automatic user mapping. Les éléments de capture de page Web incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la **page Web Mappage Capture users to Microsoft 365 users** page, enable automatic user mapping. Les éléments de capture de page Web incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
@@ -87,4 +89,4 @@ Après avoir créé le connecteur de capture de page web, vous pouvez afficher l
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

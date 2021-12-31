@@ -11,13 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Découvrez les Centre de conformité Microsoft 365, notamment ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 42c00004c0bf6e6f41a082d5ca6fdddb8fb446d7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- intro-overview
+ms.openlocfilehash: 329cb9f2bb35e4ca6cbbb9a278f4564de7570584
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110390"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643235"
 ---
 # <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
@@ -75,7 +77,7 @@ Outre les liens dans les cartes sur la page d’accueil, vous verrez un volet de
 - Si vous n’avez pas encore la nouvelle Centre de conformité Microsoft 365, vous l’aurez bientôt. Le Centre de conformité Microsoft 365 est généralement disponible maintenant pour Microsoft 365 clients SKU.
 - Pour visiter le Centre de conformité Microsoft 365, en tant qu’administrateur général, administrateur de conformité ou administrateur de données de conformité, [https://compliance.microsoft.com](https://compliance.microsoft.com) connectez-vous.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Pourquoi la nouvelle Centre de conformité Microsoft 365 pas encore ?**
 
@@ -83,7 +85,7 @@ Tout d’abord, assurez-vous que vous avez les licences et autorisations appropr
 
 ![Plus de ressources.](../media/m365-compliance-center-more-resources.png)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - **Visitez le Gestionnaire de conformité Microsoft** pour consulter votre score de conformité et commencer à gérer la conformité pour votre organisation. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
 

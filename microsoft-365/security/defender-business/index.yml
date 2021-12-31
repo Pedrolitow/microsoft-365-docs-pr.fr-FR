@@ -10,15 +10,16 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
   ms.date: 12/13/2021
-  ms.openlocfilehash: 4b6e48f130b3cf89d097b552f8d536df989a867e
-  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+  ms.openlocfilehash: cf805d8d05d9ca9fadc25c5ee49124020c386f68
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/14/2021
-  ms.locfileid: "61508309"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61643843"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -72,7 +73,7 @@ landingContent:
       url: mdb-review-remediation-actions.md
     - text: Afficher et utiliser les rapports
       url: mdb-reports.md
-- title: Gérer
+- title: Gestion
   linkLists:
   - linkListType: how-to-guide
     links:

@@ -672,8 +672,6 @@
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Rechercher des données de conversation Teams pour les utilisateurs locaux
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: Préparer un fichier CSV pour une recherche de liste d’ID
-              href: csv-file-for-an-id-list-content-search.md
             - name: Relancer une recherche ayant échoué
               href: retry-failed-content-search.md
             - name: Conserver les destinataires Cci pour la recherche

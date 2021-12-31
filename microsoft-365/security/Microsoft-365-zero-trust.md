@@ -6,6 +6,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: Découvrez comment déployer une sécurité Microsoft 365 confiance zéro dans votre environnement pour vous défendre contre les menaces et protéger les données sensibles.
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,16 +14,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-- m365solution-zerotrust
-- m365solution-overview
-description: Implémentez les principes, l’architecture et les fonctionnalités de confiance zéro pour Microsoft 365.
-ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+- deploy zero trust
+- zero trust strategy
+ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301673"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643327"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -81,7 +80,7 @@ Accédez [à la protection d’accès](office-365-security/microsoft-365-policie
 
 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
 |Stratégies d’accès aux identités et appareils recommandées pour trois niveaux de protection :<br>- Point de départ<br>- Enterprise (recommandé)<br>- Spécialisé<br><br>Recommandations supplémentaires pour :<br>- Utilisateurs externes (invités)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender pour les applications cloud| Microsoft E3 ou E5<br><br>Azure Active Directory dans l’un de ces modes :<br>- Cloud uniquement<br>- Hybride avec authentification de synchronisation de hachage de mot de passe (PHS)<br>- Hybride avec authentification directe (PTA)<br>- Fédéré     |Inscription des appareils pour les stratégies qui nécessitent des appareils gérés. Voir « Gérer les points de terminaison avec Intune » pour inscrire des appareils |
 | | | |
@@ -102,12 +101,12 @@ Ensuite, inscrivez vos appareils à la gestion et commencez à les protéger ave
 Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
 |Inscrire des appareils avec Intune<br>- Appareils d’entreprise<br>- Autopilot/automated<br>- inscription<br><br>Configurer des stratégies<br>- Stratégies de protection des applications<br>- Stratégies de conformité<br>- Stratégies de profil d’appareil | Inscrire les points de terminaison avec Azure AD     | Configuration des fonctionnalités de protection des informations, notamment :<br>- Types d’informations sensibles<br>- Étiquettes<br>- Stratégies DLP<br>Pour ces fonctionnalités, voir l’étape 5. Protéger et régir les données (plus loin dans cet article).       |
 |    |         |         |
 
-## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Étape 3. Ajouter une protection d’identité et d’accès aux appareils de confiance Enterprise stratégies
+## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>Étape 3. Ajouter une protection d’identité et d’accès aux appareils de confiance Enterprise stratégies
 
 Une fois les appareils inscrits à la gestion, vous pouvez désormais implémenter l’ensemble complet des stratégies d’accès aux appareils et aux identités Zero Trust recommandées, nécessitant des appareils conformes.
 
@@ -125,7 +124,7 @@ Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qu
 
 Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
-|Inclut  |Configuration requise  |N’inclut pas  |
+|Inclut  |Conditions préalables  |N’inclut pas  |
 |---------|---------|---------|
 | Configurer l’environnement d’évaluation et pilote pour tous les composants :<br>- Defender pour l’identité<br>- Defender for Office 365<br>- Defender pour le point de terminaison<br>- Microsoft Defender pour les applications cloud<br><br>Protéger contre les menaces<br><br> Examiner les menaces et y répondre   | Consultez les instructions pour en savoir plus sur les exigences en matière d’architecture pour chaque composant de Microsoft 365 Defender.        | Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Elle est incluse à l’étape 1 : Configurer la protection d’accès aux appareils et aux identités de confiance zéro.        |
 |    |         |         |

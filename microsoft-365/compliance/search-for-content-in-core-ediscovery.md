@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas core eDiscovery.
-ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 57ea95458df568de3687e1b0d38a70991b09a850
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189284"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643363"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas core eDiscovery
 
@@ -39,9 +39,6 @@ Pour créer une recherche de découverte électronique principale :
 4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches,** puis sur **Nouvelle recherche.**
 
    ![Cliquez sur Nouvelle recherche pour créer une recherche de découverte électronique principale.](../media/CoreeDiscoverySearch1.png)
-
-   > [!NOTE]
-   > L’option **Recherche par liste d'identification** vous permet de rechercher des messages électroniques spécifiques et d'autres éléments de la boîte aux lettres à l'aide d'une liste d'ID Exchange. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour obtenir des instructions, voir [Préparer un fichier CSV pour une recherche de liste d'identification](csv-file-for-an-id-list-content-search.md).
 
 5. Dans **l’Assistant Nouvelle recherche,** tapez un nom pour la recherche et une description facultative qui permet d’identifier la recherche. Le nom de la conservation doit être unique dans toute votre organisation.
 
@@ -70,7 +67,7 @@ Pour créer une recherche de découverte électronique principale :
       > [!NOTE]
       > Pour réduire les problèmes liés aux longues listes de mots clés, vous êtes limité à 20 lignes au maximum dans la liste de mots clés.
 
-   3. Vous pouvez ajouter des conditions dans une requête de recherche pour affiner une recherche et obtenir un ensemble de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur logique (**c:c**), qui est similaire dans son fonctionnement à l’opérateur **ET**. Cela signifie que les éléments doivent satisfaire la requête de mot-clé et une ou plusieurs conditions pour être inclus dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la rubrique [Conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).
+   3. Vous pouvez ajouter des conditions de recherche pour affiner une recherche et retourner un ensemble plus affiné de résultats. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée logiquement à la requête de mot clé (spécifiée dans la zone de mot clé) par un opérateur logique (**c:c**) qui est similaire en termes de fonctionnalité à l’opérateur **AND** . Cela signifie que les éléments doivent satisfaire à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats. C’est ainsi que les conditions aident à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez [Conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).
 
 8. Examinez les paramètres de recherche (et modifiez-les si nécessaire), puis envoyez la recherche pour la démarrer.
 
@@ -80,6 +77,6 @@ Une fois la recherche terminée, vous pouvez prévisualiser les résultats de re
 
 - Lorsque vous cliquez **sur Choisir des utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à rechercher, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur Choisir des **utilisateurs,** des groupes ou des équipes, tapez un nom (un minimum de trois caractères) dans la zone de recherche, cochez la case en regard du nom, puis cliquez sur **Choisir.**
 
-- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou des groupes Office 365, la boîte aux lettres de groupe ou d’équipe est recherché ; les boîtes aux lettres des membres du groupe ne sont pas recherchés.
+- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou Office 365, la boîte aux lettres de groupe ou d’équipe est recherché ; les boîtes aux lettres des membres du groupe ne sont pas recherchés.
 
 - Pour ajouter des sites à la recherche, sélectionnez le bouton bascule, puis cliquez **sur Choisir des sites.** Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365 web.

@@ -8,7 +8,9 @@ metadata:
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
-  ms.custom: AdminSurgePortfolio
+  ms.custom:
+    - AdminSurgePortfolio
+    - intro-hub-or-landing
   author: efrene
   ms.author: efrene
   ms.date: 8/25/2021

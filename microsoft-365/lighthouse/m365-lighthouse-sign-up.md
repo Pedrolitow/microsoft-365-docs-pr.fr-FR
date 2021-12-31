@@ -14,14 +14,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-get-started
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP), découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374051"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641596"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -60,7 +61,7 @@ ms.locfileid: "61374051"
     > [!NOTE]
     > Une fois l’inscription terminée, l’affichage des données client dans le Dossier peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) 
 

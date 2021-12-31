@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- intro-get-started
 ms.localizationpriority: medium
 description: Découvrez les tâches qui vous aideront à prendre rapidement en charge la conformité dans Microsoft 365.
-ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111038"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643065"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -59,7 +61,7 @@ Maintenant que vous avez déterminé l’état actuel de votre organisation et q
 
 Informations données fournies par le journal d’audit sont un outil précieux pour vous aider à faire correspondre vos exigences de conformité aux solutions qui peuvent vous aider à gérer et surveiller les domaines de conformité qui ont besoin d’être améliorés. L’enregistrement d’audit doit être activé avant l’enregistrement des activités et avant de pouvoir effectuer une recherche dans le journal d’audit. Lorsqu’elle est activée, l’activité des utilisateurs et des administrateurs de votre organisation est enregistrée dans le journal d’audit et conservée pendant 90 jours, et jusqu’à un an en fonction de la licence attribuée aux utilisateurs.
 
-Pour obtenir des instructions détaillées sur l’activer, voir Activer ou désactiver la recherche dans le journal [d’audit.](turn-audit-log-search-on-or-off.md)
+Pour obtenir des instructions détaillées sur l'activation de l'audit, consultez [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md).
 
 ## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>Tâche 4 : créer des stratégies pour vous alerter sur les problèmes de conformité potentiels
 
@@ -125,7 +127,7 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 
 Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur d’activités, voir Commencer [avec l’Explorateur d’activités.](data-classification-activity-explorer.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez configuré les bases de la gestion de la conformité pour votre organisation, envisagez les solutions de conformité suivantes dans Microsoft 365 pour vous aider à protéger les informations sensibles, à détecter et à agir sur les risques internes supplémentaires.
 

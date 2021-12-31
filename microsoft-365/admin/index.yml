@@ -12,7 +12,9 @@ metadata:
   ms.author: kwekua
   ms.date: 11/08/2019
   ms.localizationpriority: high
-  ms.custom: AdminSurgePortfolio
+  ms.custom:
+    - AdminSurgePortfolio
+    - intro-hub-or-landing
   ms.collection: Adm_TOC
 highlightedContent:
   items:
@@ -22,7 +24,7 @@ highlightedContent:
     - title: Nouveautés du Centre d’administration Microsoft 365 !
       itemType: whats-new
       url: whats-new-in-preview.md
-    - title: Restez informé des modifications apportées à Microsoft 365
+    - title: "Restez informé des modifications apportées à Microsoft\_365"
       itemType: how-to-guide
       url: manage/stay-on-top-of-updates.md
 productDirectory:

@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 En savoir plus pour importer et archiver des données dans Microsoft 365.
-ms.openlocfilehash: f26fe081708ca6130a63338261144e98691e269a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Deparser pour importer et archiver des données à l’Microsoft 365.
+ms.openlocfilehash: b949b646c227f26575182d173f1d34d54f40b3ed
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188324"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643783"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Configurer un connecteur pour archiver des données à partir de Usby
 
-Utilisez [l’analyseur](https://www.17a-4.com/Symphony-dataparser/) de données de 17a-4 LLC afin d’importer et d’archiver des données de communications à des boîtes aux lettres d’utilisateurs dans Microsoft 365 organisation. DataParser inclut un connecteur Deparsy configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DeParser de données deLyser convertit les données de Lassy au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
+Utilisez [l’analyseur](https://www.17a-4.com/Symphony-dataparser/) de données de 17a-4 LLC pour importer et archiver les données de communications De Lasy dans les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Deparsy configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DataParser de TypeMenty convertit les données Deparse au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
 Une fois les données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -29,9 +29,9 @@ Une fois les données stockées dans les boîtes aux lettres des utilisateurs, v
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur de données pour archiver des données à l’Microsoft 365.
 
-![Flux de travail d’archivage pour les données De 17a-4.](../media/SymphonyDataParserConnectorWorkflow.png)
+![Flux de travail d’archivage pour les données de 17a-4.](../media/SymphonyDataParserConnectorWorkflow.png)
 
-1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données DeParser.
+1. Votre organisation travaille avec le 17a-4 pour configurer l’analyseur de données DeParser.
 
 2. Régulièrement, les éléments de la collection Sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
@@ -43,15 +43,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte DataParser pour les connecteurs Microsoft. Pour ce faire, contactez [17a-4 LLC.](https://www.17a-4.com/contact/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres à l’Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
-- Ce connecteur de données est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données 17a-4 est disponible dans les environnements Cloud de la communauté du secteur public dans le cloud Microsoft 365 gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-a-symphony-dataparser-connector"></a>Étape 1 : Configurer un connecteur DataParser de qualité
 
 La première étape consiste à accéder à la page Connecteurs de données dans le Centre de conformité Microsoft 365 et à créer un connecteur 17a-4 pour les données de Type.
 
-1. Allez sur <https://compliance.microsoft.com> **DataParser,** puis cliquez sur Connecteurs  >  **de données .**
+1. Allez sur <https://compliance.microsoft.com> **DataParser,** puis cliquez sur  >  **Connecteurs de données .**
 
 2. Dans la page de description du produit **DataParser,** cliquez sur **Ajouter un connecteur.**
 
@@ -59,7 +59,7 @@ La première étape consiste à accéder à la page Connecteurs de données dans
 
 4. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**.
 
-5. Connectez-vous à votre compte 17a-4 et complétez les étapes de l’Assistant Connexion à DataParser.
+5. Connectez-vous à votre compte 17a-4 et complétez les étapes de l’Assistant Connexion DataParser.
 
 ## <a name="step-2-configure-the-symphony-dataparser-connector"></a>Étape 2 : Configurer le connecteur DataParser de Type de données
 
@@ -67,11 +67,11 @@ Travaillez avec la prise en charge 17a-4 pour configurer le connecteur DataParse
 
 ## <a name="step-3-map-users"></a>Étape 3 : Ma cartographier les utilisateurs
 
-Le connecteur DeParser de données en question masaie automatiquement les utilisateurs à leurs adresses Microsoft 365 courrier avant d’importer des données dans Microsoft 365.
+Le connecteur DataParser de TypeMenty maie automatiquement les utilisateurs à leurs adresses Microsoft 365 courrier avant d’importer des données dans Microsoft 365.
 
 ## <a name="step-4-monitor-the-symphony-dataparser-connector"></a>Étape 4 : Surveiller le connecteur DataParser
 
-Une fois que vous avez créé un connecteur DataParser, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
+Après avoir créé un connecteur DataParser, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
@@ -81,4 +81,4 @@ Une fois que vous avez créé un connecteur DataParser, vous pouvez afficher l�
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

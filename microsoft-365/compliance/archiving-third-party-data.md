@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents pour Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: c1d2d293b1439c2459a35c2f92d9cce1829982b0
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 787b4b5c48ec882692991b7c140761361f7d74d5
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620443"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645961"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
@@ -263,7 +263,42 @@ Pour plus d’informations sur la création de requêtes de recherche eDiscovery
 
 Certains connecteurs de données sont disponibles dans le cloud du gouvernement des États-Unis. Les sections suivantes indiquent les environnements secteur public spécifiques qui supportent des connecteurs de données tiers. Pour plus d’informations sur les clouds du gouvernement des États-Unis, [voir Microsoft 365 gouvernement américain.](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
 
-### <a name="telemessage-data-connectors"></a>Connecteurs de données de télémessage
+### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>Connecteurs de données Veritas dans le cloud pour le gouvernement des États-Unis (prévisualisation)
+
+|Connecteur de données  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust| Oui | Non | Non |
+|Cisco Jabber sur MS SQL| Oui | Non | Non |
+|Cisco Jabber sur Oracle| Oui | Non | Non |
+|Cisco Jabber sur PostgreSQL| Oui | Non | Non |
+|EML| Oui | Non | Non |
+|FX Connect| Oui | Non | Non |
+|Jive| Oui | Non | Non |
+|Base de données MS SQL| Oui | Non | Non |
+|Pivot| Oui | Non | Non |
+|Redtail Speak| Oui | Non | Non |
+|Gestion de Reuters| Oui | Non | Non |
+|Reuters Eikon| Oui | Non | Non |
+|Reuters FX| Oui | Non | Non |
+|RingCentral| Oui | Non | Non |
+|Salesforce Chatter| Oui | Non | Non |
+|ServiceNow| Oui | Non | Non |
+|Skype Entreprise| Oui | Non | Non |
+|Découverte électronique de marge| Oui | Non | Non |
+|Symphony| Oui | Non | Non |
+|Délimité par le texte| Oui | Non | Non |
+|Twitter| Oui | Non | Non |
+|Webex Teams| Oui | Non | Non |
+|Pages web| Oui | Non | Non |
+|Espace de travail sur Facebook| Oui | Non | Non |
+|XIP| Oui | Non | Non |
+|XSLT/XML| Oui | Non | Non |
+|Yieldbroker| Oui | Non | Non |
+|YouTube| Non | Non | Non |
+|Réunions Zoom| Oui | Non | Non |
+|||||
+
+### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>Connecteurs de données TeleMessage dans le cloud du gouvernement des États-Unis
 
 |Connecteur de données  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -281,14 +316,7 @@ Certains connecteurs de données sont disponibles dans le cloud du gouvernement 
 |Archiveur WhatsApp | Oui | Non | Non |
 |||||
 
-### <a name="celltrust-data-connectors"></a>Connecteurs de données CellTrust
-
-|Connecteur de données  |GCC  |GCC High  |DoD  |
-|:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Oui | Non | Non |
-|||||
-
-### <a name="17a-4-data-connectors"></a>Connecteurs de données 17a-4
+### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>17a-4 connecteurs de données dans le cloud du gouvernement des États-Unis
 
 |Connecteur de données  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -310,6 +338,13 @@ Certains connecteurs de données sont disponibles dans le cloud du gouvernement 
 |SQL DataParser  | Oui | Non | Non |
 |Symphony DataParser | Oui | Non | Non |
 |Zoom DataParser | Oui | Non | Non |
+|||||
+
+### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>Connecteurs de données CellTrust dans le cloud du gouvernement des États-Unis
+
+|Connecteur de données  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Oui | Non | Non |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire Microsoft pour archiver des données tierces

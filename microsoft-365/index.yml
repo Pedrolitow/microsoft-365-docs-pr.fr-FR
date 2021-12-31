@@ -8,6 +8,7 @@ metadata:
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: samanro
   ms.author: samanro
   ms.date: 06/08/2021
@@ -180,7 +181,7 @@ additionalContent:
               url: /MicrosoftTeams
         - title: Déployer Office
           links:
-            - text: "Microsoft\_365 Apps"
+            - text: Microsoft 365 Apps
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office pour Mac
               url: /DeployOffice/mac

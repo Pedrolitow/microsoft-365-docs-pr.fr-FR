@@ -9,16 +9,17 @@ metadata:
   ms.subservice: subservice
   ms.topic: landing-page
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas
   ms.author: macapara
   ms.date: 09/13/2019
   ms.localizationpriority: high
-  ms.openlocfilehash: c40e4c113dd746738e6d64c572b4ba4aba1a4267
-  ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+  ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/19/2021
-  ms.locfileid: "61110630"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61645167"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:

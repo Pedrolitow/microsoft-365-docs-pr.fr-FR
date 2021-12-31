@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 6d1130dcfbc6f405a09db6263a5c075fc1c7db0a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2b0e6e08d6c324914aaf2fdd9ce24b9b55ca2d95
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283772"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643053"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
@@ -53,23 +53,17 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
   
 ## <a name="before-you-import-pst-files"></a>Avant d’importer des fichiers PST
 
-- Le rôle Importation/Exportation de boîtes aux lettres doit vous avoir été attribué dans Exchange Online pour pouvoir importer des fichiers PST dans des boîtes aux lettres Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîtes aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
-    
-    En outre, pour créer des travaux d’importation dans le Centre de conformité Microsoft 365, l’une des conditions suivantes doit être remplie :
-    
-  - Vous devez avoir le rôle de destinataire de courrier dans Exchange Online. Par défaut, ce rôle est assigné aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.
-    
-    Ou
-    
-  - Vous devez être un administrateur général au sein de votre organisation.
-    
+- Le rôle Importation/Exportation de boîte aux lettres doit vous être attribué dans Exchange Online pour créer des tâches d’importation dans le Centre de conformité Microsoft 365 et importer des fichiers PST dans les boîtes aux lettres des utilisateurs. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation. Vous pouvez aussi créer un nouveau groupe de rôles, lui attribuer le rôle Importation/Exportation de boîtes aux lettres, puis vous ajouter en tant que membre. Pour plus d’informations, consultez les sections « Ajouter un rôle à un groupe de rôles » ou « Créer un groupe de rôles » dans [Gérer les groupes de rôles](/Exchange/permissions-exo/role-groups).
+
+    En plus du rôle Importation/Exportation de boîte aux lettres, vous devez également avoir le rôle Destinataires de messagerie dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de l’organisation et Gestion des destinataires dans Exchange Online.
+
     > [!TIP]
-    > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST vers Office 365. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres. 
+    > Envisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement conçu pour importer les fichiers PST vers Office 365. Pour obtenir le niveau minimum de privilèges requis pour importer des fichiers PST, affectez les rôles d’importation/exportation de boîte aux lettres et de destinataire de courrier au nouveau groupe de rôles et ajoutez ensuite les membres.
   
 - Vous devez stocker les fichiers PST que vous souhaitez copier vers un disque dur sur un serveur de fichiers ou un dossier partagé dans votre organisation. À l’étape 2, vous exécutez l’outil Azure Import Export (WAImportExport.exe) qui copie les fichiers PST stockés sur ce serveur de fichiers ou ce dossier partagé sur le disque dur.
 
 - Les fichiers PST volumineux peuvent avoir un impact sur les performances du processus d’importation PST. Nous vous recommandons donc que chaque fichier PST que vous copiez sur le disque dur à l’étape 2 ne doit pas être supérieur à 20 Go.
-    
+
 - Seuls les disques SSD de 2,5 pouces ou les disques durs internes SATA II/III de 2,5 pouces ou 3,5 pouces sont pris en charge pour une utilisation avec le service d’importation Office 365. Vous pouvez utiliser des disques durs jusqu'à 10 To. Pour les tâches d’importation, uniquement le premier volume de données sur le disque dur est traité. Le volume de données doit être au format NTFS. Lorsque vous copiez des données sur un disque dur, vous pouvez les attacher directement à l’aide d’un connecteur SATA II/III de 2,5 pouces ou SATA II/III de 2,5 pouces ou 3,5 pouces, ou vous pouvez l’attacher en externe à l’aide d’un SSD externe de 2,5 pouces ou d’une carte USB SATA II/III de 2,5 pouces ou 3,5 pouces.
     
     > [!IMPORTANT]
@@ -441,7 +435,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
     > [!NOTE]
     > Pour vous aider à résoudre les problèmes du fichier de mappage [CSV](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) d’importation PST, utilisez l’outil Explorateur Stockage Azure pour afficher la structure de dossiers dans le conteneur **ingestiondata** pour les fichiers PST à partir de votre disque dur qui ont été téléchargés vers la zone de stockage Azure. Les erreurs de fichier de mappage sont généralement causées par une valeur incorrecte dans le paramètre FilePath. Ce paramètre spécifie l’emplacement d’un fichier PST dans la zone de stockage Azure. Consultez la description du paramètre FilePath dans le tableau de [l’étape 3.](#step-3-create-the-pst-import-mapping-file) Comme indiqué précédemment, l’emplacement des fichiers PST dans la zone de stockage Azure a été spécifié par le paramètre lorsque vous avez lancé l’outil WAImportExport.exe à `/dstdir:` [l’étape 2.](#step-2-copy-the-pst-files-to-the-hard-drive) 
   
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - L’expédition de disques est un moyen efficace d’importer de grandes quantités de données de messagerie d’archivage vers Microsoft 365 afin de tirer parti des fonctionnalités de conformité disponibles pour votre organisation. Une fois les données d’archivage importées dans les boîtes aux lettres des utilisateurs, vous pouvez :
 

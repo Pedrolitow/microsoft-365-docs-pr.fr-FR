@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur DataParser 17a-4 pour archiver des données FX Connecter données dans Microsoft 365
+title: Configurer un connecteur DataParser 17a-4 pour archiver les données fx Connecter données dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 FX Connecter pour importer et archiver des données FX Connecter dans Microsoft 365.
-ms.openlocfilehash: 4f2e0d7e4458fc7a9b4b58d6e54bf964deef6583
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc92ad3dea5c53f208078cc05b0f4cc3661b8ac6
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155285"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646208"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>Configurer un connecteur pour archiver des données à partir de FX Connecter
 
@@ -25,9 +25,9 @@ Utilisez [FX Connecter DataParser](https://www.17a-4.com/dataparser-roadmap/) de
 
 Une fois que les données de Connecter FX sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Connecter FX pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-fx-connect-data"></a>Vue d’ensemble des données de Connecter FX d’archivage
+## <a name="overview-of-archiving-fx-connect-data"></a>Vue d’ensemble des données de Connecter fx d’archivage
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur de données pour archiver des données fx Connecter dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur de données pour archiver des données FX Connecter dans Microsoft 365.
 
 ![Flux de travail d’archivage pour fx Connecter données de 17a-4.](../media/FXConnectDataParserConnectorWorkflow.png)
 
@@ -37,15 +37,15 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur DataParser fx Connecter que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Un sous-dossier dans le dossier Boîte de réception nommé **FX Connecter DataParser** est créé dans les boîtes aux lettres de l’utilisateur et les éléments de Connecter FX sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément de Connecter FX contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
+4. Un sous-dossier dans le dossier Boîte de réception nommé **FX Connecter DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments de Connecter FX sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément de Connecter FX contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
 - Créez un compte DataParser pour les connecteurs Microsoft. Pour ce faire, contactez [17a-4 LLC.](https://www.17a-4.com/contact/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur FX Connecter DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur FX Connecter DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres à l’Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
-- Ce connecteur de données est disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
+- Ce connecteur de données 17a-4 est disponible dans les environnements Cloud de la communauté du secteur public dans le cloud Microsoft 365 gouvernement américain. Les applications et services tiers peuvent impliquer le stockage, la transmission et le traitement des données client de votre organisation sur des systèmes tiers qui sont en dehors de l’infrastructure Microsoft 365 et qui, par conséquent, ne sont pas couverts par les engagements en matière de conformité et de protection des données Microsoft 365. Microsoft ne fait aucune représentation que l’utilisation de ce produit pour se connecter à des applications tierces implique que ces applications tierces sont conformes FEDRAMP.
 
 ## <a name="step-1-set-up-a-fx-connect-dataparser-connector"></a>Étape 1 : Configurer un connecteur FX Connecter DataParser
 
@@ -53,7 +53,7 @@ La première étape consiste à accéder à la page Connecteurs de données dans
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors**  >  **FX Connecter DataParser**.
 
-2. Dans la page de description **Connecter produit DataParser,** cliquez sur **Ajouter un connecteur.**
+2. Dans la page de description **Connecter produit DataParser** de FX, cliquez sur **Ajouter un connecteur.**
 
 3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder à la page Connecteurs de données dans
 
 ## <a name="step-2-configure-the-fx-connect-dataparser-connector"></a>Étape 2 : Configurer le connecteur FX Connecter DataParser
 
-Travaillez avec la prise en charge 17a-4 pour configurer le connecteur CONNECTER DataParser.
+Travaillez avec la prise en charge 17a-4 pour configurer le connecteur Connecter DataParser.
 
 ## <a name="step-3-map-users"></a>Étape 3 : Ma cartographier les utilisateurs
 

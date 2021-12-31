@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e61bf570c8e239d8379704d57e0fbdd988a4562d
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.custom: intro-overview
+ms.openlocfilehash: 2324bb04e388ae94e2c6b3004b9bd07e72eca4d7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586556"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643831"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Vue d’ensemble de Microsoft Defender pour Les Entreprises (prévisualisation)
 
@@ -73,7 +74,7 @@ Avec Defender pour Entreprise (prévisualisation), vous pouvez protéger les app
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
    - [Gérer des règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-simplified-configuration.md)
 

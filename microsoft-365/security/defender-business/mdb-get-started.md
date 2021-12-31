@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.custom: intro-get-started
+ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61506700"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641584"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Commencer à utiliser Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -60,7 +61,7 @@ Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder
 | **Rapports** | Répertorie vos rapports de sécurité disponibles. Ces rapports vous permettent d’afficher vos tendances de sécurité, d’afficher des détails sur les détections de menaces et les alertes, et d’en savoir plus sur les appareils vulnérables de votre entreprise. |
 | **État d'intégrité** | Vous permet d’afficher l’état d’état de votre service et de planifier les modifications à venir. <br/>- Sélectionnez **l’état du** service pour afficher l’état d’Microsoft 365 services inclus dans l’abonnement de votre entreprise. <br/>- **Sélectionnez centre de messages** pour en savoir plus sur les modifications planifiées et à quoi s’attendre.  |
 | **Autorisations & rôles** | Vous permet d’attribuer des autorisations aux personnes de votre entreprise qui gèreront votre sécurité et afficheront les incidents et les rapports dans le portail Microsoft 365 Defender. Vous permet également de configurer et de gérer des groupes d’appareils pour intégrer les appareils de votre entreprise et d’affecter vos stratégies de protection contre les menaces.  |
-| **Settings** | Permet de modifier les paramètres pour le portail Microsoft 365 Defender et Microsoft Defender entreprise (prévisualisation). Par exemple, vous pouvez intégrer (ou hors-carte) et les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression des alertes, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
+| **Paramètres** | Permet de modifier les paramètres pour le portail Microsoft 365 Defender et Microsoft Defender entreprise (prévisualisation). Par exemple, vous pouvez intégrer (ou hors-carte) et les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression des alertes, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
 | **Autres ressources** | Accédez à d’autres portails, tels que Azure Active Directory. N’oubliez pas que le Microsoft 365 Defender web doit répondre à vos besoins sans que vous n’exigeiez que vous accédiez à d’autres portails. |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Compléter un module d’apprentissage sur les incidents et les actions de réponse

@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- intro-overview
 search.appverid:
 - MET150
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: bb0709aad16da6da08ba8643d4f24084b0fe9201
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: dfc19c2f603f7f561fec01e3879d9e5e234a5158
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370187"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643659"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 

@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9d61f28e6dd2fc777fed62c1f7d4a6da1a18907c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586312"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645155"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Recherche d’éléments partiellement indexés dans eDiscovery
 
@@ -77,7 +77,7 @@ Dans les cas où vous devez examiner des éléments partiellement indexés pour 
   
 ![Choisissez la deuxième ou la troisième option pour exporter des éléments partiellement indexés.](../media/PartiallyIndexedItemsExportOptions.png)
   
-Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv. Ce rapport inclut la plupart des mêmes informations que le ResultsLog.csv de données . toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés **:** les balises d’erreur et les propriétés **d’erreur.** Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation d’un type particulier a un impact sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche ciblée, récupérer et exporter des messages électroniques et des documents SharePoint ou OneDrive spécifiques afin de pouvoir les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions détaillées, voir Préparer un fichier [CSV](csv-file-for-an-id-list-content-search.md)pour une recherche ciblée dans Office 365 .
+Lorsque vous exportez des résultats de recherche eDiscovery ou un rapport de recherche à l’aide de l’une de ces options, l’exportation inclut un rapport nommé Items.csv. Ce rapport inclut la plupart des mêmes informations que le ResultsLog.csv de données . toutefois, le fichier Items.csv non indexé inclut également deux champs liés aux éléments partiellement indexés **:** les balises d’erreur et les propriétés **d’erreur.** Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation d’un type particulier a un impact sur votre enquête. 
 
 > [!NOTE]
 > Le fichier Items.csv non Items.csv contient également des champs **nommés Type d’erreur** et **Message d’erreur.** Il s’agit de champs hérités qui  contiennent  des informations similaires aux informations des champs Balises d’erreur et Propriétés d’erreur, mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité.
@@ -119,7 +119,7 @@ Les champs d’erreur décrivent les champs affectés par l’erreur de traiteme
 
 Les étapes suivantes vous montrent comment exécuter un script PowerShell qui recherche tous les éléments dans toutes les boîtes aux lettres Exchange, puis génère un rapport sur le rapport entre les éléments de courrier partiellement indexés de votre organisation (par nombre et par taille) et affiche le nombre d’éléments (et leur type de fichier) pour chaque erreur d’indexation qui se produit. Utilisez les descriptions de balise d’erreur de la section précédente pour identifier l’erreur d’indexation.
   
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier .ps1 ; par exemple, `PartiallyIndexedItems.ps1` .
+1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de .ps1 ; par exemple, `PartiallyIndexedItems.ps1` .
 
    ```powershell
      write-host "**************************************************"

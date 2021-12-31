@@ -11,16 +11,16 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 298a9f371d652a1da547ba91b437aa0300c1621b
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203002"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645927"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 groupes.
+Utilisez l'outil de recherche de contenu dans le centre de conformité Microsoft 365 pour rechercher rapidement des e-mails dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 Groups.
   
 ## <a name="search-for-content"></a>Recherche de contenu
 
@@ -33,8 +33,6 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 - [Créer des requêtes de recherche et utiliser des conditions pour](keyword-queries-and-search-conditions.md) affiner votre recherche
 
 - [Configurer le filtrage des autorisations](permissions-filtering-for-content-search.md) de recherche afin qu’un gestionnaire eDiscovery ne puisse rechercher que le sous-ensemble de boîtes aux lettres ou de sites de votre organisation
-
-- [Exécuter une recherche de liste d’ID](csv-file-for-an-id-list-content-search.md) pour rechercher des messages électroniques spécifiques
 
 - [Rechercher des boîtes aux lettres dans le cloud](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Microsoft 365
 
@@ -70,7 +68,7 @@ La recherche de contenu est facile à utiliser, mais il s’agit également d’
 
 - [Dédoplication dans les résultats de recherche](de-duplication-in-ediscovery-search-results.md) que vous pouvez activer lorsque vous exportez des messages électroniques qui sont les résultats d’une recherche
 
-## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
+## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
 Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser les commandes dans le Centre de sécurité & conformité PowerShell. Pour faciliter cette tâche, nous avons créé un certain nombre de scripts powerShell du Centre de sécurité et conformité & pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
 

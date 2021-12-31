@@ -9,16 +9,17 @@ metadata:
   ms.technology: mde
   ms.topic: landing-page
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas
   ms.author: macapara
   ms.date: 10/18/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: bd6707bcd27ba8fa434359ea6f887abb0b7fb7b7
-  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/09/2021
-  ms.locfileid: "61374519"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61643029"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:

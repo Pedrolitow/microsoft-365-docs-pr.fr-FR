@@ -14,14 +14,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-overview
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: 269927ee46d821c38a6ad8f6d0b92f76b7fdc64e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d7e2d67b62f8db9d767154ea6049e52a496bc4e7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373703"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645179"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
@@ -66,4 +67,4 @@ Ce dernier permet aux MSP de sécuriser et de gérer Microsoft 365 services et p
 [vue d’ensemble de la page Microsoft 365 Lighthouse client](m365-lighthouse-tenants-page-overview.md) (article)   
 [Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)   
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
-[Microsoft Defender pour les entreprises](../security/defender-business/index.yml)
+[Microsoft Defender pour les PME](../security/defender-business/index.yml)
