@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754900"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643383"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
@@ -46,7 +46,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 ## <a name="before-you-run-a-search"></a>Avant d’exécuter une recherche
 
-- Pour accéder à l’outil de recherche de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la mise en conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de conformité Microsoft 365. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour accéder à l’outil Recherche de contenu dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> (afin d’exécuter des recherches, de prévisualiser les résultats et d’exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le Centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
 
 - Dans un déploiement Exchange hybride, vous ne pouvez pas utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres sur site. Vous pouvez uniquement utiliser l’outil pour rechercher des boîtes mail dans le cloud.
 
@@ -57,9 +57,6 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Recherche de contenu**.
 
 3. Sur la **page de recherche** de contenu, cliquez **sur Nouvelle recherche**.
-
-   > [!NOTE]
-   > L’option **Recherche par liste d'identification** vous permet de rechercher des messages électroniques spécifiques et d'autres éléments de la boîte aux lettres à l'aide d'une liste d'ID Exchange. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour obtenir des instructions, voir [Préparer un fichier CSV pour une recherche de liste d'identification](csv-file-for-an-id-list-content-search.md).
 
 4. Tapez un nom pour la recherche, une description facultative qui vous permet d’identifier la recherche. Le nom de la conservation doit être unique dans toute votre organisation.
 

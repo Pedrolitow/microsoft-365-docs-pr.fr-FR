@@ -6,22 +6,21 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Découvrez comment créer des stratégies de conformité d’appareil qui spécifient la configuration minimale requise pour qu’un appareil accède à votre environnement.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Create compliance policies
+- Intune device compliance policy
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 2207f7ef3988c83a527cbd046ad059ca225d411d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 46507c17562c7f7d60363d931fccadc6a67683f1
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301353"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645871"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Étape 3. Configurer des stratégies de conformité pour des appareils avec Intune
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: ff003d22df59023233705c216a1c5fdd3207931c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371219"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645949"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -32,7 +32,7 @@ ms.locfileid: "61371219"
 
 Pour en savoir plus sur les étiquettes de confidentialité et la façon dont elles peuvent vous aider à protéger les données de votre organisation, voir [Plus d'informations sur les étiquettes de confidentialité](sensitivity-labels.md).
 
-Si vous avez [Azure Information Protection](/azure/information-protection/what-is-information-protection) et que vous utilisez toujours des étiquettes Azure Information Protection qui ont été gérées à partir du portail Azure, vous devez les migrer vers la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Pour les ordinateurs Windows, vous pouvez ensuite [choisir quel client d'étiquetage utiliser](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) pour vos étiquettes de confidentialité publiées.
+Si vous avez [Azure Information Protection](/azure/information-protection/what-is-information-protection) et que vous utilisez toujours des étiquettes Azure Information Protection qui ont été gérées à partir du Portail Azure, vous devez migrer ces étiquettes vers la [plateforme d’étiquetage unifiée](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Pour les ordinateurs Windows, vous pouvez ensuite [choisir quel client d'étiquetage utiliser](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) pour vos étiquettes de confidentialité publiées.
 
 Lorsque vous êtes prêt à protéger les données de votre organisation en utilisant des étiquettes de confidentialité :
 
