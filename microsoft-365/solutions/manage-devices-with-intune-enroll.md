@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Utilisez Intune et Autopilot pour inscrire des appareils dans la gestion afin de veiller à ce que les applications qui s’exécutent sur ceux-ci soient conformes et d’empêcher les fuites de données d’entreprise.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 56226aee898dad607d3dd85641b7736e764b2be2
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301329"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645607"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Étape 2. Inscrire des appareils dans la gestion avec Intune
 
@@ -31,7 +31,7 @@ Qu'il s'agisse d'un appareil BYOD personnel ou d'un appareil appartenant à l'en
 
 Le processus d'inscription de l'appareil établit une relation entre l'utilisateur, l'appareil et le service Microsoft Intune. L'utilisation de Microsoft Intune en tant que service autonome vous permet d'utiliser une console d'administration Web unique pour gérer les PC Windows, macOS et les plates-formes d'appareils mobiles les plus populaires.
 
-Cet article recommande des méthodes pour inscrire des appareils dans la gestion à l'aide d'Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview?view=o365-worldwide).
+Cet article recommande des méthodes pour inscrire des appareils dans la gestion à l'aide d'Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview).
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-steps-1.png#lightbox)
 
