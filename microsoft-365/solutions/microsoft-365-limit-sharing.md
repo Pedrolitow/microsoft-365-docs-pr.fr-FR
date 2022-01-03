@@ -22,12 +22,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Découvrez les options pour limiter ou désactiver le partage dans Microsoft 365.
-ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154157"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660165"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limiter le partage dans Microsoft 365
 
@@ -183,13 +183,13 @@ Pour désactiver les liens *Tout le monde* d’un site
 Par défaut, les membres d'un site peuvent partager des fichiers et des dossiers avec d'autres personnes de votre organisation en utilisant un lien *Personnes dans votre organisation*. Vous pouvez désactiver les liens des *personnes de votre organisation* à l'aide de PowerShell :
 
 ```powershell
-Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
 ```
 
 Par exemple :
 
 ```powershell
-Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
 ## <a name="create-sites-groups-and-teams"></a>Créer des sites, des groupes et des équipes

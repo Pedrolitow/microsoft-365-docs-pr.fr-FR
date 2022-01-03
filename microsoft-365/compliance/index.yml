@@ -14,12 +14,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   ms.localizationpriority: high
-  ms.openlocfilehash: d779e5cb063cb31b939651fa0876cc9819b829e8
-  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.openlocfilehash: 2e29c9e97a266fdf2ea4b6c712c400143971f447
+  ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/30/2021
-  ms.locfileid: "61645575"
+  ms.lasthandoff: 01/03/2022
+  ms.locfileid: "61660141"
 landingContent:
 - title: Gérer la protection et la gouvernance des informations
   linkLists:
@@ -79,6 +79,8 @@ landingContent:
     links:
     - text: Sécuriser les données avec une confiance zéro
       url: /security/zero-trust/data
+    - text: Déployer une solution Microsoft Information Protection (MIP)
+      url: information-protection-solution.md
     - text: Déployer la protection des informations pour la confidentialité des données
       url: ../solutions/information-protection-deploy.md
     - text: Illustrations sur la conformité et la protection des informations
