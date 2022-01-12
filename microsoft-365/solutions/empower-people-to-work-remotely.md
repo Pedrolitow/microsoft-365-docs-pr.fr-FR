@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554515"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871910"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -60,7 +60,7 @@ Pour les professionnels de l’informatique qui gèrent une infrastructure sur s
 
 - Sécurisé
 
-  Les connexions sont sécurisées par une authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 10 protègent contre les logiciels malveillants, les attaques malveillantes et la perte de données.
+  Les connexions sont sécurisées avec l’authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 11 ou 10 protègent contre les programmes malveillants, les attaques malveillantes et la perte de données.
 
 - Géré
 
@@ -76,7 +76,7 @@ Pour les professionnels de l’informatique qui gèrent une infrastructure sur s
 
   - Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches.
 
-Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
+Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 11 ou 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
 
 ![Infrastructure de base pour les travailleurs hybrides avec Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
@@ -90,13 +90,13 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 |Réinitialisation du mot de passe libre-service (SSPR)|Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.|Microsoft 365 E3 ou E5|
 |Proxy d’application Azure AD|Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.|Nécessite un abonnement Azure payé séparément|
 |VPN point à site Azure|Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.|Nécessite un abonnement Azure payé séparément|
-|Windows Virtual Desktop|Prise en charge de travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des bureaux virtuels exécutés dans Azure.|Nécessite un abonnement Azure payé séparément|
+|Windows 365|Prendre en charge les travailleurs à distance qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des PC Windows 365 Cloud.|Nécessite un abonnement Azure payé séparément|
 |Bureau à distance |Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet.|Microsoft 365 E3 ou E5|
 |Passerelle des services Bureau à distance|Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet.|Nécessite des licences Windows Server distinctes|
-|Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
+|Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
 |Configuration Manager|Gérer les installations, mises à jour et paramètres logiciels de vos appareils|Nécessite des licences de gestionnaire de configuration distinctes|
-|Analyses du bureau|Déterminer la disponibilité des mises à jour de vos clients Windows.|Nécessite des licences de gestionnaire de configuration distinctes|
-|Windows Autopilot|Installer et configurer de nouveaux appareils Windows 10 à des fins productives.|Microsoft 365 E3 ou E5|
+|Analyse des points de terminaison|Déterminer la disponibilité des mises à jour de vos clients Windows.|Nécessite des licences de gestionnaire de configuration distinctes|
+|Windows Autopilot|Configurez et préconfigurez les nouveaux appareils Windows 11 ou 10 pour une utilisation productive.|Microsoft 365 E3 ou E5|
 |Microsoft Teams, Exchange Online, SharePoint Online et OneDrive, Microsoft 365 Apps, Microsoft Power Platform et Yammer|Créer, communiquer et collaborer.|Microsoft 365 E3 ou E5|
 ||||
 
@@ -106,15 +106,13 @@ Pour plus d’informations sur la sécurité et la conformité, consultez [Dépl
 
 [![Affiche Autonomiser les travailleurs hybrides.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-Vous pouvez également télécharger cette affiche au format [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
-
 ## <a name="provide-hybrid-working-for-all-of-your-workers"></a>Permettre à tous vos employés de travailler de manière hybride
 
 Vous pouvez permettre à tous vos employés de rester productifs où que vous soyez grâce à ces appareils :
 
-- Un appareil moderne, tel qu’un ordinateur portable surface et Windows 10, qui dispose des fonctionnalités, de la sécurité et des performances pour accéder aux applications et services Cloud de Microsoft 365 directement sur le Web.
+- Un appareil moderne, tel qu’un ordinateur portable Surface et Windows 11 ou 10, qui dispose des fonctionnalités, de la sécurité et des performances pour accéder à Microsoft 365 applications et services cloud directement sur le web.
 
-- Tout appareil, y compris les ordinateurs portables ou bureaux plus anciens utilisés à domicile, qui peuvent accéder indirectement aux applications et services cloud Microsoft 365 via un [bureau virtuel Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices) rapidement déployé. Cette option offre des performances élevées, une sécurité renforcée et une gestion informatique simplifiée.
+- Tout appareil, y compris les ordinateurs portables ou bureaux plus anciens utilisés à domicile, qui peuvent accéder indirectement à Microsoft 365 applications et services cloud via un [Windows 365 Cloud PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices). Cette option offre des performances élevées, une sécurité renforcée et une gestion informatique simplifiée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

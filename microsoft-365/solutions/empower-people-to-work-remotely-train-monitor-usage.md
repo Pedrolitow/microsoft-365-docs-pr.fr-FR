@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: 36133cab7e5fa11e311fb089f2bcbf5c1f862d08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed2b1ab30de5c7c2a808a78ce99727e6e77e6e63
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190136"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936785"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Étape 6 : former vos employés et répondre aux commentaires sur l’utilisation
 
@@ -31,7 +31,7 @@ Entraînez vos travailleurs hybrides sur :
 - Procédures de connexion appropriées utilisant l’authentification multifacteur, incluant l’inscription d’une méthode de vérification supplémentaire.
 - Utilisation des appareils et stratégies de gestion des points de terminaison pour bloquer l’accès d’appareils non conformes ou non gérés.
 - Utilisation des applications autorisées et stratégies d’applications de gestion des points de terminaison pour bloquer l’utilisation de certaines applications.
-- Fonctionnalités de sécurité de Windows 10 Entreprise.
+- Fonctionnalités de sécurité Windows 11 ou 10 Entreprise.
 - Utilisation de [Teams](/microsoftteams/training-microsoft-teams-landing-page) pour les conversations, les visioconférences, le partage de documents et les conversations thématiques.
 - Utilisation d’[Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) pour le courrier et la planification.
 - Utilisation de sites d’équipe et de communication [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23), ainsi que de dossiers [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) pour rechercher des fichiers stockés dans la bibliothèque d’un utilisateur ou appartenant à un groupe, et collaborer sur ceux-ci.

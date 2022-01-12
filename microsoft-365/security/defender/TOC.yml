@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Activer les foires aux questions sur Microsoft 365 Defender
           href: m365d-enable-faq.md
+        - name: Former votre personnel de sécurité
+          href: microsoft-365-defender-train-security-staff.md
     - name: Protéger contre les menaces
       items:
         - name: Degré de sécurisation Microsoft

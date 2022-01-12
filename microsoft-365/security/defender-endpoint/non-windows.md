@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73d814c36db44ad22d0a998c6539472095feb7e3
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: c8887f9e26c53d57aa49ec6fb65733cac6e562a9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530225"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942715"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -38,7 +38,7 @@ Microsoft est en train d’étendre ses principales fonctionnalités de sécurit
 
 Les organisations sont confrontées à des menaces sur divers appareils et plateformes. Nos équipes s’engagent à créer des solutions de sécurité non seulement pour *Microsoft,* mais aussi pour *permettre* à nos clients de protéger et de sécuriser leurs environnements hetératifs. Nous sommes à l’écoute des commentaires des clients et nous travaillons en étroite collaboration avec nos clients pour créer des solutions qui répondent à leurs besoins.
 
-Avec Microsoft Defender pour point de terminaison, les clients bénéficient d’une vue unifiée de toutes les menaces et alertes dans le Centre de sécurité Microsoft Defender, sur les plateformes Windows et non-Windows, ce qui leur permet d’obtenir une vue complète de ce qui se passe dans leur environnement, ce qui leur permet d’évaluer et de répondre plus rapidement aux menaces.
+Avec Microsoft Defender pour point de terminaison, les clients bénéficient d’une vue unifiée de toutes les menaces et alertes sur le portail Microsoft 365 Defender, sur les plateformes Windows et non-Windows, ce qui leur permet d’obtenir une vue complète de ce qui se passe dans leur environnement, ce qui leur permet d’évaluer et de répondre plus rapidement aux menaces.
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender pour point de terminaison macOS
 
@@ -55,7 +55,7 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
-Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives (AV), protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, ansible ou à l’aide de votre outil de gestion de la configuration Linux existant. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
+Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités antivirus préventives, protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, ansible ou à l’aide de votre outil de gestion de la configuration Linux existant. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender for Endpoint sur Linux.
 

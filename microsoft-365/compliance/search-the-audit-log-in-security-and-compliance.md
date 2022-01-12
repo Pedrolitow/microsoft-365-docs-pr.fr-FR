@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a2a94a47ca9f19087bfa5cf9b8d027ae2c551641
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560083"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937483"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -997,7 +997,7 @@ Le tableau suivant décrit les activités d’audit et les informations figurant
 
 ### <a name="sensitivity-label-activities"></a>Activités des étiquettes de confidentialité
 
-Le tableau suivant répertorie les événements provoquant des activités d’étiquetage pour les sites SharePoint Online et Teams.
+Le tableau suivant répertorie les événements qui résultent de l’utilisation d’[étiquettes de confidentialité](sensitivity-labels.md).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|

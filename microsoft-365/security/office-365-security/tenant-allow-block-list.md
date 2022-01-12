@@ -1,5 +1,5 @@
 ---
-title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer le client
+title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer des locataires
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c344f4462b258d4ffbacd94ddfb0f3afd4b7ed4
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914643"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942559"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -45,16 +46,16 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 - URL à bloquer.
 - Fichiers à bloquer.
 - Messages électroniques ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’adresses ou de verdicts d’usurpation d’adresse, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’adresses ou de verdicts d’usurpation d’adresse, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresse.
 - URL à autoriser.
 - Fichiers à autoriser.
 - Messages électroniques ou domaines de l’expéditeur à autoriser.
 
-Cet article explique comment configurer des entrées dans la liste d’adresses client autoriser/bloquer dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
+Cet article explique comment configurer des entrées dans la liste d’adresses client autoriser/bloquer dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à la page Des listes **d’accueil/de** blocage des clients, utilisez <https://security.microsoft.com/tenantAllowBlockList> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page Des listes **d’accueil/de** blocage des clients, utilisez <https://security.microsoft.com/tenantAllowBlockList> .
 
 - Vous spécifiez des fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
 
@@ -94,13 +95,13 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’accès au client
+## <a name="configure-the-tenant-allowblock-list"></a>Configurer la liste d’attente des locataires
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender
 
-Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Policies **&** \> **Threat Policies** Tenant \> **Allow/Block Lists** in the **Rules** section. Pour aller directement à la page Des listes **d’accueil/de** blocage des clients, utilisez <https://security.microsoft.com/tenantAllowBlockList> .
 
-Pour ajouter tous les blocs, voir [Ajouter des blocs dans la liste d’attente des locataires.](manage-tenant-blocks.md)
+Pour ajouter tous les blocs, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer.](manage-tenant-blocks.md)
 
 Pour ajouter tous les autoriser, voir Ajouter des autoriser dans la liste des locataires [autoriser/bloquer](manage-tenant-allows.md).
 
@@ -108,11 +109,11 @@ Pour modifier et supprimer tous les blocs et tous les blocs, voir Modifier et su
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome
 
-Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la liste d’attente [du](manage-tenant-blocks.md)client, Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
+Pour gérer tous les blocs et les autoriser, voir Ajouter des blocs dans la liste des locataires [autoriser/bloquer,](manage-tenant-blocks.md)Ajouter des autoriser dans la liste des locataires [autoriser/bloquer,](manage-tenant-allows.md)et modifier et supprimer des entrées dans la liste d’inscriptions client [autoriser/bloquer](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Afficher les entrées dans la liste des locataires autoriser/bloquer
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Policies **&** \> **Threat Policies** Tenant \> **Allow/Block Lists** in the **Rules** section. Pour aller directement à la page Des listes **d’accueil/de** blocage des clients, utilisez <https://security.microsoft.com/tenantAllowBlockList> .
 
 2. Sélectionnez l’onglet de votre choix. Les colonnes disponibles dépendent de l’onglet que vous avez sélectionné :
 
@@ -142,7 +143,7 @@ Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **Expéditeurs**: vous pouvez grouper les résultats par **action.**
    - **URL : vous** pouvez grouper les résultats par **action.**
@@ -196,7 +197,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ## <a name="view-spoofed-sender-entries"></a>Afficher les entrées d’expéditeur usurpées
 

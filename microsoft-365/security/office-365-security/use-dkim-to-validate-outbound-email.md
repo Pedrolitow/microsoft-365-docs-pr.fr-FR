@@ -17,16 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064522"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939632"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -35,7 +34,7 @@ ms.locfileid: "61064522"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  Cet article répertorie les étapes de l’utilisation de DomainKeys Identified Mail (DKIM) avec Microsoft 365 pour vous assurer que les systèmes d’e-mail de destination approuvent les messages sortants envoyés à partir de votre domaine personnalisé.
 
@@ -85,7 +84,7 @@ Dans cet exemple, si vous aviez publié un seul enregistrement SPF TXT pour votr
 
 ## <a name="steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal"></a>Étapes de création, d’activation et de désactivation de DKIM à partir du Portail Microsoft 365 Defender
 
-Tous les domaines acceptés de votre client s’affichent dans le Portail Microsoft 365 Defender sous la page DKIM. Si vous ne le voyez pas, ajoutez votre domaine accepté à partir de la [page domaines](/microsoft-365/admin/setup/add-domain#add-a-domain).
+Tous les domaines acceptés de votre locataire s’affichent dans le portail Microsoft 365 Defender sous la page DKIM. Si vous ne le voyez pas, ajoutez votre domaine accepté à partir de la [page domaines](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Une fois votre domaine ajouté, suivez les étapes ci-dessous pour configurer DKIM.
 
 Étape 1 : cliquer sur le domaine sur lequel vous souhaitez configurer DKIM sur la page DKIM (https://security.microsoft.com/dkimv2 ou https://protection.office.com/dkimv2)).
@@ -133,7 +132,7 @@ Si vous souhaitez désactiver DKIM, basculez vers le mode Désactiver
 - Lorsque vous **avez déjà configuré DKIM**, vous pouvez faire pivoter le nombre de bits en exécutant la commande suivante :
 
   ```powershell
-  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity <DkimSigningConfigIdParameter>
   ```
 
   **ou**
@@ -185,22 +184,22 @@ Si vous avez configuré des domaines personnalisés en plus du domaine initial d
 Utilisez le format suivant pour les enregistrements CNAME.
 
 > [!IMPORTANT]
-> Si vous êtes l’un de nos clients GCC High, nous calculons _domainGuid_ différemment. Au lieu de rechercher l’enregistrement MX pour votre _initialDomain_ afin de calculer _domainGuid_, nous le calculons directement à partir du domaine personnalisé. Par exemple, si votre domaine personnalisé est « contoso.com », les points étant remplacés par des tirets, votre domainGuid devient « contoso-com ». Par conséquent, quel que soit l’enregistrement MX sur lequel pointe votre initialDomain, vous devez toujours utiliser la méthode ci-dessus pour calculer la domainGuid à utiliser dans vos enregistrements CNAMe.
+> Si vous êtes l’un de nos clients GCC High, nous calculons _customDomainIdentifier_ différemment ! Au lieu de chercher l’enregistrement MX de votre _initialDomain_ pour calculer _customDomainIdentifier_, nous le calculons directement à partir du domaine personnalisé. Par exemple, si votre domaine personnalisé est « contoso.com » votre _customDomainIdentifier_ devient « contoso-com », tous les points sont remplacés par un tiret. Ainsi, quel que soit l’enregistrement MX vers lequel pointe votre _initialDomain_, vous utiliserez toujours la méthode ci-dessus pour calculer la _customDomainIdentifier_ à utiliser dans vos enregistrements CNAME.
 
 ```console
 Host name:            selector1._domainkey
-Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector1-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 
 Host name:            selector2._domainkey
-Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector2-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 Où :
 
 - Pour Microsoft 365, les sélecteurs seront toujours « selector1 » ou « selector2 ».
-- _domainGUID_ est identique à _domainGUID_ dans l'enregistrement MX personnalisé pour votre domaine personnalisé qui se trouve avant mail.protection.outlook.com. Par exemple, dans cet enregistrement MX pour le domaine contoso.com, l'élément  _domainGUID_ est contoso-com :
+- _CustomDomainIdentifier_ est identique au _customDomainIdentifier_ dans l’enregistrement MX personnalisé de votre domaine personnalisé qui apparaît avant mail.protection.outlook.com. Par exemple, dans l’enregistrement MX suivant pour le domaine contoso.com, _customDomainIdentifier_ est contoso-com :
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -236,19 +235,17 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Pour activer la signature DKIM pour votre domaine personnalisé dans le portail Microsoft 365 Defender
 
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender </a> à l’aide de votre compte scolaire ou professionnel..
+1. Dans le portail Microsoft 365 Defender à <https://security.microsoft.com>, accédez à **E-mail et Collaboration**\>**Stratégies et règles**\>**Stratégies de menace**\>**DKIM** dans la section **Règles**. Pour accéder directement à la page DKIM, utilisez <https://security.microsoft.com/dkimv2>.
 
-2. Accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **DKIM** dans la section **Règles**. Ou, pour accéder directement à la page DKIM, utilisez <https://security.microsoft.com/dkimv2>.
+2. Dans la page **DKIM**, sélectionnez le domaine en cliquant sur le nom.
 
-3. Dans la page **DKIM**, sélectionnez le domaine en cliquant sur le nom.
-
-4. Dans le menu volant des détails qui s’affiche, changez le paramètre **Signer les messages pour ce domaine avec des signatures DKIM** à **Activé** (![Basculer sur.](../../media/scc-toggle-on.png))
+3. Dans le menu volant des détails qui s’affiche, changez le paramètre **Signer les messages pour ce domaine avec des signatures DKIM** à **Activé** (![Basculer sur.](../../media/scc-toggle-on.png))
 
    Lorsque vous avez terminé, cliquez sur **Rotation des clés DKIM**.
 
-5. Répétez ces étapes pour chaque domaine personnalisé.
+4. Répétez ces étapes pour chaque domaine personnalisé.
 
-6. Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine », vous devez utiliser Windows PowerShell pour activer la signature DKIM, comme expliqué à l’étape suivante.
+5. Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine », vous devez utiliser Windows PowerShell pour activer la signature DKIM, comme expliqué à l’étape suivante.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Activation de la signature DKIM pour votre domaine personnalisé à l’aide de PowerShell
 
@@ -314,7 +311,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    $p = Get-DkimSigningConfig -Identity contoso.com
@@ -396,7 +393,7 @@ Par exemple, l’enregistrement DKIM se présente comme suit :
 
 **Bien que DKIM soit conçu pour éviter l’usurpation, DKIM fonctionne mieux avec SPF et DMARC.**
 
-Une fois que vous avez configuré DKIM, si vous n'avez pas encore configuré SPF, vous devez le faire. Pour une introduction rapide à SPF et pour le configurer rapidement, voir [**Configurer SPF dans Microsoft 365 pour aider à prévenir l'usurpation d'identité**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour une compréhension plus approfondie de la façon dont Microsoft 365 utilise SPF, ou pour le dépannage ou les déploiements non standard tels que les déploiements hybrides, commencez par [Comment Microsoft 365 utilise Sender Policy Framework (SPF) pour empêcher l'usurpation d'identité](how-office-365-uses-spf-to-prevent-spoofing.md). 
+Une fois que vous avez configuré DKIM, si vous n'avez pas encore configuré SPF, vous devez le faire. Pour une introduction rapide à SPF et pour le configurer rapidement, voir [**Configurer SPF dans Microsoft 365 pour aider à prévenir l'usurpation d'identité**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour une compréhension plus approfondie de la façon dont Microsoft 365 utilise SPF, ou pour le dépannage ou les déploiements non standard tels que les déploiements hybrides, commencez par [Comment Microsoft 365 utilise Sender Policy Framework (SPF) pour empêcher l'usurpation d'identité](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 Ensuite, consultez [**Utiliser DMARC pour valider l'e-mail**](use-dmarc-to-validate-email.md). [Les en-têtes des messages anti-courrier indésirable](anti-spam-message-headers.md) incluent la syntaxe et les champs d’en-tête utilisés par Microsoft 365 pour les contrôles DKIM.
 
@@ -410,4 +407,4 @@ Ensuite, consultez [**Utiliser DMARC pour valider l'e-mail**](use-dmarc-to-valid
 
 Rotation des clés via PowerShell : [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Utiliser DMARC pour valider les messages électroniques](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Utiliser DMARC pour valider les messages électroniques](use-dmarc-to-validate-email.md)

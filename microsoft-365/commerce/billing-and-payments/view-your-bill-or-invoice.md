@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371255"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941371"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -100,10 +100,19 @@ Vous pouvez envoyer une copie de votre relevé de facturation par courrier élec
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Pour recevoir votre relevé de facturation par e-mail
 
+::: moniker range="o365-worldwide"
+
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-    - Si vous utilisez Office 365 Allemagne, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
-    - Si vous utilisez Office 365 géré par 21Vianet, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
-1. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
+    
+::: moniker-end
+
+2. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
 
     Vous pouvez arrêter de recevoir les courriers électroniques incluant les relevés de facturation à tout moment en positionnant le bouton bascule sur **Désactiver**.
 

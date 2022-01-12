@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8cf2ae8e17898753be43c9e2160d8a473f8db8d
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 1771ca1bd4a3b941d7fbb22d4dfd14d56510c416
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508285"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940589"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business-preview"></a>Processus de configuration simplifié dans Microsoft Defender entreprise (prévisualisation)
 
@@ -64,6 +64,11 @@ Le tableau suivant décrit chaque expérience :
 Defender for Business (prévisualisation) est conçu pour fournir une protection renforcée tout en vous faisant gagner du temps et des efforts dans la configuration de vos paramètres de sécurité. L’expérience simplifiée dans le portail Microsoft 365 Defender facilite l’intégration des appareils et leur gestion. En outre, les stratégies par défaut sont incluses afin que les appareils de votre entreprise soient protégés dès qu’ils sont intégrés. Vous pouvez conserver vos paramètres par défaut tels qu’ils sont ou apporter des modifications en fonction des besoins de votre entreprise. Vous pouvez également ajouter de nouvelles stratégies pour gérer les appareils selon vos besoins.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 - [Installer et configurer Microsoft Defender pour les entreprises (prévisualisation)](mdb-setup-configuration.md)
 

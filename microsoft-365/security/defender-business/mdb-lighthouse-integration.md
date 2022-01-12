@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/16/2021
+ms.date: 01/04/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d05f22f38e3195348a5f4601c77e2cce6c6a44e2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: bfbaf7fc4ebb38aca1270f6d5c2912018f4439da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560719"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942871"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business-preview"></a>Microsoft 365 Lighthouse et Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -32,7 +32,7 @@ ms.locfileid: "61560719"
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender entreprise s’intègre à Microsoft 365 Lighthouse
 
-Si vous utilisez Microsoft 365 Lighthouse pour gérer la sécurité des petites et moyennes entreprises, Microsoft Defender pour Entreprises (prévisualisation) s’intègre à Microsoft 365 Lighthouse. Lorsque ces fonctionnalités seront disponibles, vous serez en mesure d’afficher les incidents de sécurité entre les locataires dans votre portail Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
+Si vous êtes un Fournisseur de solutions Microsoft Cloud (CSP) et que vous avez [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), vous pouvez gérer la sécurité pour vos clients (petites et moyennes entreprises). Microsoft Defender pour Entreprise (prévisualisation) est conçu pour s’intégrer à Microsoft 365 Lighthouse. Lorsque ces fonctionnalités seront disponibles, vous serez en mesure d’afficher les incidents de sécurité entre les locataires dans votre portail Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Capture d’écran de la liste des incidents dans Microsoft 365 Lighthouse":::
 

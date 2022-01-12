@@ -17,16 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Apprenez à intégrer PIM afin d’accorder un accès limité dans le temps et juste-à-temps aux utilisateurs pour effectuer des tâches de privilège élevé dans Microsoft Defender pour Office 365, réduisant ainsi les risques pour vos données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a5088b72cd7739c5f203293a8ac569af093bf4b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3be90ff1113e25ea418aaf1a25b12574b3bbbe1f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960993"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939476"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) et pourquoi l’utiliser avec Microsoft Defender pour Office 365
@@ -52,7 +51,7 @@ Dans cet exemple, nous allons configurer « Alex », un membre de notre équipe 
 3. Définissez la « **Durée maximale de l’activation (heures)** »sur un jour normal de travail et « Sur l’activation » pour exiger **Azure MFA**.
 4. Comme il s’agit du niveau de privilège normal d’Alex pour les opérations quotidiennes, nous décochons Exiger une justification lors de **l’activation**> mise à **jour .**
 5. Sélectionnez **Ajouter des devoirs**  >  **Aucun membre sélectionné** > sélectionnez ou tapez le nom pour rechercher le membre correct.
-6. Cliquez **sur** le bouton Sélectionner pour choisir le membre que vous devez ajouter pour les privilèges PIM > cliquez sur  **Suivant** > ne modifiez pas la page Ajouter une affectation (les deux *types* d’affectation éligible et durée éligible par défaut seront les valeurs par défaut) et **Affecter**.
+6. Cliquez sur le bouton **Sélectionnez** pour choisir le membre que vous devez ajouter pour les privilèges PIM > cliquez sur **Suivant** > n’apportez aucune modification sur la page Ajouter une affectation (le type d’affectation *Éligible* et la durée *Éligible définitivement* sont les valeurs par défaut ) et **Affecter**.
 
 Le nom de votre utilisateur (ici 'Alex') apparaîtra sous Affectations admissibles sur la page suivante, ce qui signifie qu'il est en mesure de PIM dans le rôle avec les paramètres configurés précédemment.
 
@@ -67,33 +66,36 @@ Le nom de votre utilisateur (ici 'Alex') apparaîtra sous Affectations admissibl
 
 ### <a name="create-a-role-group-requiring-the-permissions-we-need"></a>Créez un groupe de rôles nécessitant les autorisations dont nous avons besoin.
 
-Dans le portail de sécurité, créez un groupe de rôles personnalisé qui contient les autorisations que nous voulons.
+Dans le portail Microsoft 365 Defender, créez un groupe de rôles personnalisé qui contient les autorisations souhaitées.
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> > **Autorisations et rôles** > sélectionnez **Rôles** sous E-mail et collaboration > **Créer**.
-2. Nommez votre groupe pour refléter son objectif tel que « Search and Purge PIM ».
-3. N’ajoutez pas de membres, enregistrez simplement le groupe et passe à la partie suivante!
+1. Dans le portail Microsoft 365 Defender à <https://security.microsoft.com>, accédez à **Autorisations et rôles**, puis sélectionnez **Rôles** sous **E-mail et collaboration**. Pour aller directement à la page **Autorisations,** utilisez <https://security.microsoft.com/emailandcollabpermissions> .
+2. Dans la page **Autorisations,** cliquez sur ![Icône Créer.](../../media/m365-cc-sc-create-icon.png) **Création**.
+3. Nommez votre groupe pour refléter son objectif tel que « Search and Purge PIM ».
+4. N’ajoutez pas de membres, enregistrez simplement le groupe et passe à la partie suivante!
 
 ### <a name="create-the-security-group-in-azure-ad-for-elevated-permissions"></a>Créer le groupe de sécurité dans Azure AD pour les autorisations élevées
 
 1. Revenir au [Centre d’administration Azure AD](https://aad.portal.azure.com/) et accédez à **Groupe Azure AD**  >  **Nouveau**  >  **groupe.**
-2. Nommez votre groupe AAD pour refléter son objectif, aucun propriétaire ou membre **n’est requis** pour le moment.
+2. Nommez votre groupe Azure AD pour refléter son objectif, **aucun propriétaire ou membre n’est requis** pour le moment.
 3. Tourner **les rôles Azure AD peuvent être assignés au groupe** à **Oui**.
 4. N’ajoutez pas de rôles, de membres ou de propriétaires, créez le groupe.
 5. Revenir au groupe que vous viennent de créer, puis sélectionnez **Accès privilégié**  >  **Activer l’accès privilégié**.
-6. Dans le groupe, sélectionnez **Affectations éligibles** Ajouter des affectations > Ajouter l’utilisateur qui a besoin de la & purge en tant que rôle  >   de **membre.**
+6. Dans le groupe, sélectionnez **Affectations éligibles** > **Ajouter des affectations** > Ajouter l’utilisateur qui a besoin de Rechercher et purger en tant que rôle de **Membre**.
 7. Configurez le **Paramètres** dans le volet Accès privilégié du groupe. Choisissez de **modifier** les paramètres pour le rôle de **membre.**
 8. Modifiez le temps d’activation en fonction de votre organisation. Dans cet exemple, vous avez *besoin d’Azure MFA,* *de justification* et d’informations sur les *tickets* avant de sélectionner Mettre **à jour.**
 
-### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>Imbriquez le groupe de sécurité nouvellement créé dans le groupe de rôles.
+### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>Imbriquer le groupe de sécurité nouvellement créé dans le groupe de rôles
 
-1. [Connecter dans le Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez ce qui suit :
+1. [Connectez-vous à Centre de sécurité et de conformité](/powershell/exchange/connect-to-scc-powershell) PowerShell et exécutez la commande suivante :
 
-    `Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   ```powershell
+   Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
+   ```
 
 ## <a name="test-your-configuration-of-pim-with-defender-for-office-365"></a>Testez votre configuration de PIM avec Defender pour Office 365
 
 1. Connectez-vous à l’utilisateur de test (Alex), qui ne doit pas avoir d’accès administratif dans le portail [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center) à ce stade.
-2. Accédez à PIM, où l’utilisateur peut activer son rôle de lecteur de sécurité au quotidien.
+2. Accédez à PIM, où l’utilisateur peut activer son rôle de lecteur de sécurité quotidien.
 3. Si vous essayez de purger un e-mail à l’aide de l’Explorateur de menaces, vous obtenez une erreur indiquant que vous avez besoin d’autorisations supplémentaires.
 4. PIM une deuxième fois dans le rôle plus élevé, après un court délai, vous devriez maintenant être en mesure de purger les e-mails sans problème.
 

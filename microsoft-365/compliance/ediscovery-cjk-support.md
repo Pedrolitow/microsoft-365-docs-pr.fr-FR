@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,16 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Advanced eDiscovery en Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (JCK), qui utilisent un jeu de caractères sur deux sur deux caractères.
-ms.openlocfilehash: 0d6287afb373c6c1c51ea61de3906ce994590e87
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a2ed33c75fabfa92f8ddd8f6fc8a704a2e8a15f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197616"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942175"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Prise en charge linguistique DE LASK pour Advanced eDiscovery
 
-Advanced eDiscovery prend en charge les langues de jeu de caractères sur deux caractères (notamment le chinois simplifié, le chinois traditionnel, le japonais et le coréen, qui sont collectivement appelés *langues DUK),* pour les scénarios avancés suivants dans un jeu à réviser :
+Advanced eDiscovery prend en charge les langues de jeu de caractères sur deux sur deux caractères (notamment le chinois simplifié, le chinois traditionnel, le japonais et le coréen, qui sont collectivement appelés langues *DUK),* pour les scénarios avancés suivants dans un jeu à réviser :
 
 - Lorsque vous [interrogez les données dans un jeu à réviser](review-set-search.md).
 
@@ -33,15 +33,15 @@ Advanced eDiscovery prend en charge les langues de jeu de caractères sur deux c
 
 - Lorsque vous [analysez des données de cas dans un jeu à réviser](analyzing-data-in-review-set.md) à l’aide de la détection des quasi-doublons, du thread de messagerie électronique et de l’analyse des thèmes.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Comment créer une recherche pour collecter des éléments qui contiennent des caractères DUKS ?**
 
-Vous pouvez utiliser des caractèresJCK pour les [recherches](building-search-queries.md#keyword-searches)par mot clé, les requêtes par mot clé et les [conditions](keyword-queries-and-search-conditions.md) de recherche lors de la recherche de contenu dans Advanced eDiscovery. La recherche de caractères DUKS est également prise en charge lors de la recherche de contenu dans core eDiscovery et la recherche de contenu.
+Vous pouvez utiliser des caractèresJCK pour les [recherches](building-search-queries.md#keyword-searches)par mot clé, les requêtes par mot clé et les [conditions](keyword-queries-and-search-conditions.md) de recherche lors de la recherche de contenu dans Advanced eDiscovery. La recherche de caractères DUKS est également prise en charge lors de la recherche de contenu dans core eDiscovery et recherche de contenu.
 
 Nous fournissons la [](keyword-queries-and-search-conditions.md#search-operators) prise en charge DE LASK pour tous les opérateurs de recherche et [conditions](keyword-queries-and-search-conditions.md#search-conditions)de recherche, y compris les opérateurs booléens **ET**, **OU**, **NOT** et **NEAR**.
 
-Si vous êtes certain que les emplacements de contenu ou les éléments contiennent des caractèresJC, mais que les recherches ne retournent aucun résultat, cliquez sur l’icône langue-pays/région de la requête ![Icône De la langue-pays/de la région de requête dans la recherche de contenu.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionnez la valeur de code de culture correspondant au pays de la langue pour la recherche. La langue/région par défaut est neutre.
+Si vous êtes certain que les emplacements de contenu ou les éléments contiennent des caractèresJC, mais que les recherches ne retournent aucun résultat, cliquez sur l’icône langue-pays/région de la requête ![Icône De la langue-pays/de la région de requête dans la recherche de contenu.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionnez la valeur de code de culture correspondant au pays/la langue pour la recherche. La langue/région par défaut est neutre.
 
 **Puis-je rechercher plusieurs langues à la fois ?**
 
@@ -71,9 +71,9 @@ Non, aucune de vos recherches et jeux de révision existants ne change. Vous n�
 
 Pour plus d’informations sur la modification de la langue d’affichage et du fuseau horaire, voir Comment définir les [paramètres](/office365/troubleshoot/access-management/set-language-and-region)de langue et de région pour Office 365 .
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
-- OcR ne prend pas en charge les caractères DE LASK à partir de fichiers image
+- OcR ne prend pas en charge les caractères DUKS À partir de fichiers image
 
 - Les fichiers e-mail (tels que *.eml et *.msg) en affichage [Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langues DUKCO.
 

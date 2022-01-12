@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -19,14 +19,13 @@ ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Attribuez les autorisations requises pour effectuer des tâches liées à eDiscovery à l’aide Centre de conformité Microsoft 365.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-ms.openlocfilehash: 426430f705fa85be440df39c6a40f8872d7024ad
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 129363fe614bafef653fe65b39fa15d50a3b1c8a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422782"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942487"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Attribuer des autorisations eDiscovery dans le Centre de conformité Microsoft 365
 
@@ -59,7 +58,7 @@ Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Micr
   
 ## <a name="assign-ediscovery-permissions"></a>Attribution d’autorisations de eDiscovery
 
-1. Go to <https://compliance.microsoft.com> and sign in using an account that can assign permissions.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> and sign in using an account that can assign permissions.
   
 2. Dans le volet gauche, sélectionnez **Autorisations.**
 
@@ -89,7 +88,7 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le Centr
 |Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Consignataire <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Suspension <br/>  |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
 |Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrement RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
@@ -102,7 +101,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès à core eDiscovery et Advanced eDiscovery cas dans le Centre de conformité Microsoft 365. Comme indiqué précédemment, un utilisateur doit se voir attribuer le rôle Gestion des cas avant de pouvoir utiliser la cmdlet **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
 - [Prise en main de la découverte électronique de base](get-started-core-ediscovery.md)
 

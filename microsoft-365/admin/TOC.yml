@@ -1,6 +1,10 @@
 - name: Aide du centre d’administration Microsoft 365
   href: index.yml
   items:
+    - name: 20 principaux articles d’aide sur l’administrateur
+      href: top-m365-admin-articles.yml
+    - name: Vidéothèque de formation de l’administrateur
+      href: admin-video-library.yml
     - name: Prise en main
       items:
         - name: S’inscrire

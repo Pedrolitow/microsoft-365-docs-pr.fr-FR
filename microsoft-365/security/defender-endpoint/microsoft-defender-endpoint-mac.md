@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6982d6b0140b02aa677d78120fbd2fddee47f45
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560348"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941887"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -53,7 +53,7 @@ Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnali
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -95,6 +95,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 - Microsoft 365 E5 Sécurité
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Entreprise E5
+- Microsoft 365 Business Premium
 - Windows 11 Entreprise E5
 - Microsoft Defender pour point de terminaison
 

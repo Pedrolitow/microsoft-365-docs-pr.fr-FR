@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 71a8154ee822d12ee755d120a4113dcaa14b9957
-  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.openlocfilehash: 839469f1aa872ff89c4dd488ed441cf51c911a8d
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/02/2021
-  ms.locfileid: "60667827"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61941443"
 title: FAQ sur les messages mis en quarantaine
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -79,7 +79,7 @@ sections:
 
       - **Stratégies anti-courrier** indésirable : courrier indésirable, courrier électronique en masse et messages d’hameçonnage (pas les messages de hameçonnage à haut niveau de confiance).
 
-      - Stratégies **anti-hameçonnage**: expéditeurs usurpés, protection contre l’usurpation d’identité d’utilisateur (Defender pour Office 365), protection contre l’usurpation d’identité de domaine (Defender pour Office 365) et protection contre l’intelligence des boîtes aux lettres (Defender pour Office 365).
+      - Stratégies **anti-hameçonnage**: expéditeurs usurpés, protection contre l’usurpation d’identité d’utilisateur (Defender pour Office 365), protection contre l’usurpation d’identité de domaine (Defender pour Office 365) et protection contre l’usurpation d’identité de boîte aux lettres (Defender pour Office 365).
 
 
       Pour plus d’informations, voir [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)
@@ -105,7 +105,7 @@ sections:
   - question: >
       Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?
     answer: >
-      Dans le portail Microsoft 365 Defender, vous pouvez sélectionner et libérer jusqu’à 100 messages à la fois.
+      Dans le Microsoft 365 Defender, vous pouvez sélectionner et libérer jusqu’à 100 messages à la fois.
 
 
       Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou EOP PowerShell autonome pour rechercher et libérer les messages mis en quarantaine en bloc et signaler les faux positifs en bloc.
@@ -118,7 +118,7 @@ sections:
       Par exemple, copiez le code PowerShell suivant dans le Bloc-notes et enregistrez le fichier en tant que .ps1 à un emplacement facile à trouver (par exemple, C:\Data\QuarantineRelease.ps1).
 
 
-      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) ou [Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
+      Ensuite, après vous être connecté [à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [ou Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)exécutez la commande suivante pour exécuter le script :
 
 
       ```powershell

@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Utilisez les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams des utilisateurs locaux dans un déploiement Exchange hybride.
+description: Les administrateurs peuvent utiliser les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams pour les utilisateurs locaux dans un déploiement exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2398ff8328b075403906c460f51a738664fec42d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192150"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871456"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -52,29 +52,23 @@ Le graphique suivant montre comment Teams peut consulter les données de convers
   
 En plus de cette fonctionnalité, vous pouvez également utiliser les outils eDiscovery pour rechercher, afficher un aperçu, et exporter du contenu Teams sur le site SharePoint utilisant le cloud et sur la boîte aux lettres Exchange associée à chaque donnée de conversation Microsoft Teams et 1xN Teams dans la boîte aux lettres Exchange Online pour les utilisateurs du cloud.
 
-### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>Prise en charge de cette fonctionnalité dans les outils de Recherche de contenu et Core eDiscovery
-
-Ces éléments d’interface utilisateur de la recherche de contenu et de l’outil de recherche associés aux cas Core eDiscovery principaux dans le Centre de conformité Microsoft 365 :
-  
-- La case à cocher **Ajouter du contenu d’application pour des utilisateurs locaux** s’affiche dans la page de l’Assistant **Emplacements** de l’outil de recherche de contenu et est sélectionnée par défaut. Conservez cette case à cocher sélectionnée pour inclure le stockage basé sur le cloud pour les utilisateurs locaux dans une recherche de contenu.
-
-    ![La case à cocher « Ajouter du contenu d’application Office pour les utilisateurs locaux » est ajoutée à l’interface de recherche de contenu.](../media/EHAMShardCheckBox.png)
-  
-- Vous pouvez rechercher des utilisateurs locaux lorsque vous sélectionnez des utilisateurs spécifiques à rechercher.
-
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Recherche du contenu de conversations Teams pour des utilisateurs locaux
 
-Voici comment utiliser la recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des données de conversation de Teams des utilisateurs locaux.
+Voici comment utiliser la recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des données de conversation de Teams des utilisateurs locaux. Vous pouvez également utiliser l’outil de recherche dans Core eDiscovery pour rechercher des données de conversation pour les utilisateurs locaux.
   
 1. Dans le centre de conformité Microsoft 365, accédez à **Recherche de contenu**.
 
 2. Sous l’onglet **Recherches** , cliquez sur **Nouvelle recherche**, puis nommez la nouvelle recherche.
 
-3. Dans la page **Emplacements** , définissez la bascule sur **Activé** pour les boîtes aux lettres Exchange. Notez que la case à cocher **Ajouter du contenu d’application pour les utilisateurs locaux** est affichée et sélectionnée par défaut.
+3. Dans la page **Emplacements** , définissez la bascule sur **Activé** pour les boîtes aux lettres Exchange.
 
-4. Pour rechercher du contenu Teams pour des utilisateurs spécifiques, sélectionnez **Sélectionner un utilisateur, des groupes ou des équipes**, puis choisissez les utilisateurs spécifiques à inclure dans la recherche. Sinon, cliquez sur **Suivant** pour rechercher du contenu Teams pour tous les utilisateurs, y compris les utilisateurs locaux.
+4. Pour rechercher du contenu Teams pour des utilisateurs spécifiques (y compris des utilisateurs locaux), sélectionnez **Choisir un utilisateur, des groupes ou des équipes** et choisissez des utilisateurs spécifiques à inclure dans la recherche. Si vous ne répertoriez pas d’utilisateurs spécifiques, la recherche inclut tous les utilisateurs, y compris les utilisateurs locaux.
 
-5. Dans la page **Définir vos conditions de recherche**, créez une requête mot clé et ajoutez des conditions à la requête de recherche si nécessaire. Pour rechercher uniquement les données de conversations Teams, vous pouvez ajouter la requête suivante dans la zone **Mots clés** :
+5. Vérifiez que la case à cocher **Ajouter du contenu d’application pour les utilisateurs locaux** est cochée. Cela garantit que le stockage de bases cloud pour les utilisateurs locaux sera recherché.
+
+    ![Activez la case à cocher « Ajouter du contenu d’application Office pour les utilisateurs locaux » dans la page de l’Assistant Emplacements.](../media/EHAMShardCheckBox.png)
+
+6. Dans la page **Définir vos conditions de recherche**, créez une requête mot clé et ajoutez des conditions à la requête de recherche si nécessaire. Pour rechercher uniquement les données de conversations Teams, vous pouvez ajouter la requête suivante dans la zone **Mots clés** :
 
     ```text
     kind:im AND kind:microsoftteams
@@ -90,7 +84,7 @@ Voici comment utiliser la recherche de contenu dans le Centre de conformité Mic
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Utilisation de PowerShell pour la recherche de données de conversations Teams pour les utilisateurs locaux
 
-Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **ComplianceSearch** dans le centre de sécurité et conformité PowerShell pour effectuer une recherche de données de conversations Teams pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
+Vous pouvez utiliser les applets de commande **New-ComplianceSearch** dans Centre de sécurité et de conformité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. Comme indiqué précédemment, vous n’êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux.
   
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
@@ -113,8 +107,6 @@ Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **Compl
 Pour plus d’informations sur l’utilisation de ces applets de commande, consultez :
   
 - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
-
-- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
@@ -146,4 +138,4 @@ Non. Lorsque vous migrez la boîte aux lettres principale d’un utilisateur loc
   
  **Puis-je appliquer une conservation eDiscovery ou des stratégies de rétention à des utilisateurs locaux ?**
   
-Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux pour les utilisateurs locaux. Toutefois, pour préserver ou conserver le contenu Teams des utilisateurs locaux, une licence Exchange Online Plan 2 doit leur être attribuée.
+Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux pour les utilisateurs locaux. Toutefois, pour conserver ou conserver le contenu Teams pour les utilisateurs locaux, un utilisateur local doit se voir attribuer une licence Exchange Online Plan 2.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 8ad336e411c5ce83129496fb10490442b43a1aeb
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586674"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936605"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -210,7 +210,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 - Mode de simulation :
   - L’audit de Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas si l’audit est déjà activé, consultez [Activez ou désactivez la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
-  - Pour afficher le contenu d’un fichier ou d’un e-mail dans la vue source, vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu**.Les administrateurs généraux n’ont pas ce genre de ce rôle par défaut.Si vous ne disposez pas de cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
+  - Pour afficher le contenu d’un fichier ou d’un e-mail dans la vue source, vous devez disposer du rôle **Visionneuse de contenu de classification des données**, qui est inclus dans le groupe de rôles **Visionneuse de contenu de l’Explorateur de contenu**  ou les groupes de rôles **Information Protection** et **Investigateurs Information Protection** (actuellement en préversion). Sans le rôle requis, vous ne voyez pas le volet d’aperçu lorsque vous sélectionnez un élément à partir de l’onglet **Éléments correspondants**. Les administrateurs généraux n’ont pas ce rôle par défaut.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
   - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -332,12 +332,20 @@ Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
     Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer la stratégie**.
 
-Vos stratégies automatiques fonctionnent en continu jusqu’à leur suppression. Par exemple, les documents nouveaux et modifiés sont inclus dans les paramètres de la stratégie actuelle.
+Les stratégies automatiques s’exécutent en continu jusqu’à ce qu’elles soient supprimées. Par exemple, les fichiers nouveaux et modifiés sont inclus dans les paramètres de stratégie actuels.
+
+### <a name="monitoring-your-auto-labeling-policy"></a>Surveillance de votre stratégie d’étiquetage automatique
+
+Une fois votre stratégie d’étiquetage automatique activée, vous pouvez afficher la progression de l’étiquetage des fichiers dans les emplacements SharePoint et OneDrive que vous avez choisis. Les e-mails ne sont pas inclus dans la progression de l’étiquetage, car ils sont automatiquement étiquetés à mesure qu’ils sont envoyés.
+
+La progression de l’étiquetage inclut les fichiers à étiqueter par la stratégie, les fichiers étiquetés au cours des 7 derniers jours, et le nombre total de fichiers étiquetés. En raison du nombre maximal de 25 000 fichiers étiquetés par jour, ces informations vous donnent une visibilité sur la progression actuelle de l’étiquetage de votre stratégie et le nombre de fichiers à étiqueter.
+
+Lorsque vous activez votre stratégie pour la première fois, la valeur 0 s’affiche pour les fichiers à étiqueter jusqu’à ce que les données les plus récentes soient récupérées. Ces informations de progression sont mises à jour toutes les 48 heures. Vous pouvez donc vous attendre à voir les données les plus récentes tous les deux jours. Lorsque vous sélectionnez une stratégie d’étiquetage automatique, vous pouvez voir plus de détails sur la stratégie dans un volet volant, qui inclut la progression de l’étiquetage par les 10 principaux sites. Les informations de ce volet volant peuvent être plus à jour que les informations de stratégie agrégées affichées sur la page principale de **l’étiquetage automatique**.
 
 Vous pouvez également afficher les résultats de votre stratégie d’étiquetage automatique à l’aide de l’[explorateur de contenu](data-classification-content-explorer.md) lorsque vous disposez des [autorisations](data-classification-content-explorer.md#permissions) appropriées :
 
-- La **visionneuse de liste de l’Explorateur de contenu** vous permet de voir l’étiquette d’un fichier, mais pas le contenu du fichier.
-- La **visionneuse de contenu de l’Explorateur de contenu** vous permet de voir le contenu du fichier.
+- Le groupe de rôles **Visionneuse de listes de l’Explorateur de contenu** vous permet de d’afficher l’étiquette d’un fichier, mais pas le contenu du fichier.
+- Le groupe de rôles **Visionneuse de contenu de l’Explorateur de contenu**, et les groupes de rôles de **Information Protection** et **investigateurs Information Protection** (actuellement en préversion) vous permettent d’afficher le contenu du fichier.
 
 > [!TIP]
 > Vous pouvez également utiliser l’Explorateur de contenu pour identifier les emplacements qui ont des documents contenant des informations sensibles, mais qui ne sont pas étiquetés. À l’aide de ces informations, songez à ajouter ces emplacements à votre stratégie d’étiquetage automatique, et incluez les types d’informations sensibles identifiés comme règles.

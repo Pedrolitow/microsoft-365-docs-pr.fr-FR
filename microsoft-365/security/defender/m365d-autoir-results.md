@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 3bfdca63325516394c78626899c6b83e3f3f0e20
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e38de9e864fa063e3e56dc99c1d9c671b6409023
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914367"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940925"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -35,15 +37,15 @@ ms.locfileid: "60914367"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Avec Microsoft 365 Defender, lorsqu’un [](m365d-autoir.md) examen automatisé s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des [autorisations](m365d-action-center.md#required-permissions-for-action-center-tasks)nécessaires, vous pouvez afficher ces détails dans une vue des détails de l’enquête qui vous fournit l’état à jour et la possibilité d’approuver les actions en attente. 
+Avec Microsoft 365 Defender, lorsqu’une [](m365d-autoir.md) enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des [autorisations](m365d-action-center.md#required-permissions-for-action-center-tasks)nécessaires, vous pouvez afficher ces détails dans une vue des détails de l’enquête qui vous fournit l’état à jour et la possibilité d’approuver les actions en attente. 
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU) Page Examen unifié
 
 La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les examens automatiques dans Microsoft Defender pour [Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) et [Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md). Pour accéder à la page d’enquête unifiée, sélectionnez le lien dans la bannière jaune qui s’affiche :
 
-- N’importe quelle page d’enquête dans Office 365 centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) )
-- N’importe quelle page d’enquête dans le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Toute expérience d’incident ou de centre de Microsoft 365 Defender dans le portail d’action ( [https://security.microsoft.com](https://security.microsoft.com) )
+- N’importe quelle page d’enquête dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">le Centre Office 365 sécurité & conformité</a>
+- N’importe quelle page d’examen dans Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Toute expérience d’incident ou de centre d’action <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dans le portail Microsoft 365 Defender client</a>
 
 ## <a name="open-the-investigation-details-view"></a>Ouvrir la vue Détails de l’examen
 
@@ -59,7 +61,7 @@ Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions d
 > [!TIP]
 > Vous devez avoir [certaines autorisations pour](m365d-action-center.md#required-permissions-for-action-center-tasks) approuver, rejeter ou annuler des actions.
 
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
@@ -75,7 +77,7 @@ Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions d
 
 La page Détails de l’incident permet d’afficher des informations détaillées sur un incident, notamment des alertes qui ont déclenché des informations sur les appareils, les comptes utilisateurs ou les boîtes aux lettres concernés.
 
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. Dans le volet de navigation, sélectionnez **Incidents &**  >  **alertes Incidents**. 
 
@@ -103,7 +105,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 | Tab | Description |
 |:--------|:--------|
 | **Graphique de l'examen** | Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation.<br/>Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous permet d’utiliser l’onglet Preuves, où vous pouvez voir les entités détectées et leurs verdicts.  |
-| **Alertes** | Répertorie les alertes associées à l’examen. Les alertes peuvent être le fait de fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans Office applications, Microsoft Cloud App Security et d’autres fonctionnalités Microsoft 365 Defender de sécurité.|
+| **Alertes** | Répertorie les alertes associées à l’examen. Les alertes peuvent être dues aux fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans les applications Office, Microsoft Defender pour les applications cloud et d’autres fonctionnalités Microsoft 365 Defender cloud.|
 | **Appareils** | Répertorie les appareils inclus dans l’examen, ainsi que leur niveau de correction. (Les niveaux de correction correspondent [au niveau d’automatisation des groupes d’appareils.)](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Boîtes aux lettres** |Répertorie les boîtes aux lettres qui sont touchées par les menaces détectées.  |
 | **Utilisateurs**  | Répertorie les comptes d’utilisateurs qui sont touchés par les menaces détectées. |
@@ -112,7 +114,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |**Log** | Fournit une vue chronologique et détaillée de toutes les actions d’investigation entreprises après le déclenchement d’une alerte.|
 | **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) to approve pending actions. |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
 - [En savoir plus sur les actions de correction](m365d-remediation-actions.md)

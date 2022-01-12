@@ -17,15 +17,16 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à supprimer des utilisateurs de la page Utilisateurs restreints dans le portail Microsoft 365 Defender. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9a4cea0a21dce8115c31f39033639c90fdd1bf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180734"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941431"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -66,7 +67,7 @@ Les administrateurs peuvent supprimer des utilisateurs de la page Utilisateurs r
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer un utilisateur de la liste des Utilisateurs restreints
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Utilisateurs restreints**.
+1. Dans le portail Microsoft 365 Defender sur <https://security.microsoft.com>, accédez à **Courrier électronique et collaboration**\>**Examiner**\>**Utilisateurs restreints**. Pour accéder directement à la page **Utilisateurs restreints**, utilisez <https://security.microsoft.com/restrictedusers>.
 
 2. Dans la page **Utilisateurs restreints** , recherchez et sélectionnez l’utilisateur que vous souhaitez débloquer en cliquant sur l’utilisateur.
 

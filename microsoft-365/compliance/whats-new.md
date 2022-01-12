@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 13221dbe9abcb4a7f40391f14232950c7561b87a
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: dd85c6c9875fc6e5cf596a4decffdd4fe97d7c4e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586148"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940937"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -40,6 +40,35 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Visitez également la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+
+## <a name="december-2021"></a>Décembre 2021
+
+### <a name="compliance-and-service-assurance"></a>Conformité et assurance de service
+
+- Notification de violation [Azure, Dynamics 365](/compliance/regulatory/gdpr-breach-notification) et Windows dans le cadre du R GDPR : mise à jour pour clarifier que les clients n’ont pas besoin d’utiliser un service de salaire tel que Defender for Cloud pour recevoir des notifications de sécurité et de confidentialité
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Advanced eDiscovery flux](teams-workflow-in-advanced-ediscovery.md#reference-guide) de travail pour le contenu dans Microsoft Teams - mis à jour avec un nouveau guide de référence rapide téléchargeable pour la gestion Teams contenu dans Advanced eDiscovery
+
+### <a name="information-governance"></a>Gouvernance des informations
+
+- [Activer les boîtes aux lettres d’archivage dans le](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) centre de conformité : ajout d’une section sur le nouvel outil de diagnostic pour les boîtes aux lettres d’archivage
+- Utiliser le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365 : [l’importation](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) PST prend désormais en charge AzCopy v10
+- [Restaurer une boîte aux lettres inactive](restore-an-inactive-mailbox.md) : procédure révisée pour restaurer une boîte aux lettres inactive en ajoutant d’abord LegacyExchangeDN de la boîte aux lettres inactive à la boîte aux lettres cible
+
+### <a name="information-protection"></a>Protection des informations
+
+- [Déployer une solution MIP](information-protection-solution.md) : nouvelles instructions pas à pas pour les clients qui recherchent une feuille de route normative pour déployer Protection des données Microsoft (MIP)
+
+### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
+
+- Nouvelles recommandations sur [la durée d’application des stratégies de rétention](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- Nouveaux paramètres de client en cours de déploiement : paramètre de gestion des enregistrements qui empêche la modification des propriétés des éléments SharePoint étiquetés marqués comme étant un enregistrement et verrouillés, et d’autres paramètres pour empêcher les utilisateurs de déverrouiller les éléments marqués comme enregistrements
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- L’étiquetage obligatoire et une étiquette par défaut pour Power BI sont désormais généralement disponibles (GA)
 
 ## <a name="november-2021"></a>Novembre 2021
 
@@ -311,29 +340,3 @@ Les pages suivantes ont été ajoutées :
 - L’étiquetage obligatoire est désormais étendu à Power BI [(en prévisualisation)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - Pour [la co-auteur]( sensitivity-labels-coauthoring.md)pour les fichiers chiffrés avec des étiquettes de confidentialité : déploiement de la prise en charge des stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions et pièces jointes non chiffrées pour les e-mails
 - Les événements d’audit Outlook sont désormais disponibles pour macOS, iOS et Android, et sont également Outlook sur le web
-
-## <a name="june-2021"></a>Juin 2021
-
-### <a name="customer-key"></a>Clé client
-
-- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
-
-### <a name="data-connectors"></a>Connecteurs de données
-
-- Nous avons publié 17 nouveaux connecteurs de données en partenariat avec [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) et un nouveau connecteur en partenariat avec [CellTrust](archiving-third-party-data.md#celltrust-data-connectors). Nous avons également publié des connecteurs de données supplémentaires en partenariat avec [Veritas](archiving-third-party-data.md#veritas-data-connectors) et [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). À ce jour, 65 connecteurs de données sont disponibles pour importer et archiver des données tierces vers des Microsoft 365.
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Interroger et filtrer le contenu](review-set-search.md) d’un jeu à réviser (nouvelle fonctionnalité de requête et de filtrage dans un nouveau format d’UX pour filtrer et rechercher du contenu dans un jeu à réviser)
-- Baliser des documents dans un jeu à réviser dans [Advanced eDiscovery](tagging-documents.md) (nouvelle fonctionnalité de balise et expérience UX pour accélérer et faciliter le marquage des documents dans un jeu à réviser ; inclut une nouvelle fonctionnalité de marquage des documents à l’aide d’une requête et de filtres pour rechercher ou exclure rapidement les éléments de jeu à réviser en fonction de la façon dont un élément est balisé)
-- Configurer des limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) (Microsoft a supprimé l’obligation de contacter le support MS pour demander qu’un attribut de conformité soit synchronisé avec les comptes OneDrive ; désormais, un filtre d’autorisations de recherche de boîte aux lettres est utilisé pour appliquer les limites de conformité pour OneDrive)
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en [charge Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
-- La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
-- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, pour les stratégies d’étiquetage automatique Exchange, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre ; l’expéditeur l’est.
-- Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities)
-- Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
-- Les fichiers étiquetés et chiffrés par un nom principal de service (par exemple, Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [ SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-- La [co-création](sensitivity-labels-coauthoring.md) et l’auto-ave ne sont plus limités aux locataires de test et sont désormais pris en charge en production lorsque vous utilisez la version 2105 : 18 juin pour Windows et version 16.50+ pour macOS. Notez que cette fonctionnalité n’est toujours pas prise en charge par iOS et Android et reste en prévisualisation.

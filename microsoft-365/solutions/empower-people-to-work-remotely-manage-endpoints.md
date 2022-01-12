@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 6033ee8f84d72aa8cfb163dc41ef03e427226790
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199296"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939429"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4 : déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
@@ -40,7 +40,7 @@ Microsoft Intune est un service basé sur le cloud qui se concentre sur la gesti
 
 - **Gestion des applications mobiles (MAM) :** les travailleurs distants ne souhaitent peut-être pas que vous disposiez d’un contrôle total sur leurs appareils personnels, appelés également appareils Apportez votre propre appareil (BYOD). Vous pouvez fournir des options à vos travailleurs hybrides tout en continuant de protéger votre organisation. Par exemple, les employés peuvent inscrire leurs appareils s’ils veulent obtenir un accès total aux ressources de votre organisation. Vous pouvez également utiliser les stratégies de protection des applications qui requièrent l’authentification multifacteur (MFA) pour utiliser ces applications si ces utilisateurs souhaitent seulement accéder à la messagerie ou Microsoft Teams.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de Microsoft Intune](/intune/fundamentals/what-is-intune).
+Pour plus d’informations, consultez la solution de base[Gérer les points de terminaison avec Intune et Microsoft 365](manage-devices-with-intune-overview.md).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -50,17 +50,17 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Configurat
 
 ## <a name="co-management"></a>Cogestion
 
-La cogestion combine votre investissement Configuration Manager local existant avec le cloud, à l’aide d’Intune et d’autres services cloud Microsoft 365. Vous devez choisir entre Configuration Manager ou Intune et décidez lequel doit être l’autorité de gestion pour les charges de travail différentes. 
+La cogestion combine votre investissement Configuration Manager local existant avec le cloud, à l’aide d’Intune et d’autres services cloud Microsoft 365. Vous choisissez si Gestionnaire de configuration ou Intune est l’autorité de gestion pour différentes charges de travail. 
 
 La co-gestion utilise les fonctionnalités cloud basées sur Intune, y compris l’accès conditionnel et l’application de la conformité des appareils. Vous conservez certaines tâches en local, tout en exécutant d’autres tâches dans le cloud.
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de la cogestion](/mem/configmgr/comanage/overview).
 
-## <a name="desktop-analytics"></a>Analyses du bureau
+## <a name="endpoint-analytics"></a>Analyse des points de terminaison
 
-L’Analyse du bureau est un service basé sur le cloud, qui s’intègre à Configuration Manager et vous fournit des informations et des renseignements, afin que vous puissiez prendre des décisions éclairées concernant vos clients Windows. Elle combine des données de votre organisation à des données cumulées de millions d’autres appareils connectés aux services de cloud computing Microsoft. 
+Endpoint Analytics est un service cloud qui s’intègre à Gestionnaire de configuration et vous fournit des informations et des informations pour vous permettre de prendre des décisions éclairées sur vos clients Windows. Elle combine des données de votre organisation à des données cumulées de millions d’autres appareils connectés aux services de cloud computing Microsoft. 
 
-Avec les Analyses de bureau, vous pouvez :
+Avec Endpoint Analytics, vous pouvez :
 
 - Créez un inventaire des applications exécutées au sein de votre organisation.
 - Évaluer la compatibilité des applications avec les dernières mises à jour de fonctionnalités Windows 10.
@@ -68,7 +68,7 @@ Avec les Analyses de bureau, vous pouvez :
 - Créer des groupes pilotes représentant l’ensemble de l’application et du pilote dans un groupe minimal d’appareils.
 - Déployer Windows 10 sur des appareils pilotes et gérés en production.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de l’Analyse du bureau](/mem/configmgr/desktop-analytics/overview).
+Pour plus d’informations, voir cette [vue d’ensemble de Endpoint Analytics](/mem/configmgr/desktop-analytics/overview)
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

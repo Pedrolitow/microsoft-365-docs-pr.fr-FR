@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: cfa2c8fa8725e96326faac4cbe4b83cd1b039641
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110282"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934720"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
@@ -34,7 +34,7 @@ Le travail à distance nécessite les éléments suivants en matière de sécuri
 
 - Accès contrôlé aux applications de productivité utilisées par les travailleurs hybrides, par exemple Microsoft Teams
 - Accès contrôlé et protection des données que les travailleurs hybrides créent et utilisent, telles que les conversations ou les fichiers partagés
-- Protection des appareils Windows 10 contre les programmes malveillants et les autres types de cyberattaques
+- Protection des appareils Windows 11 ou 10 contre les programmes malveillants et d’autres types de cyberattaques
 - Protection des courriers électroniques, des fichiers et des sites avec un étiquetage cohérent pour les niveaux de confidentialité et de protection
 - Prévention des fuites d’informations
 - Respect des réglementations régionales relatives aux données
@@ -87,7 +87,7 @@ Pour vos travailleurs hybrides, vous avez implémenté :
 
 - Sécurité
   - Accès contrôlé aux applications et aux données utilisés par les travailleurs hybrides pour communiquer et collaborer
-  - Protection contre les programmes malveillants pour les données de services cloud, les courriers électroniques et les appareils Windows 10
+  - Protection contre les programmes malveillants pour les données de service cloud, la messagerie électronique et les appareils Windows 11 ou 10
 - Conformité
   - Étiquetage cohérent pour les niveaux de confidentialité et de protection
   - Stratégies de prévention des fuites d’informations

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 1b34ac4d8c9afead9ed72b060f8417affc2062b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179234"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942343"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -49,7 +49,7 @@ En outre :
 
 - Pour afficher le contenu des éléments pendant le processus de disposition, ajoutez des utilisateurs au groupe de rôles **Content Explorer Content Viewer**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent toujours sélectionner une action de révision de la disposition pour terminer la révision de la disposition, mais doivent le faire sans pouvoir afficher le contenu de l'élément à partir du mini-volet d'aperçu du centre de conformité.
 
-- Par défaut, chaque personne qui accède à la page **Disposition** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour l'examen de disposition : accédez à **Paramètres de gestion des enregistrements** > **Groupe de** > **sécurité général pour que le gestionnaire d'enregistrements** sélectionne, puis active un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
+- Par défaut, chaque personne qui accède à la page de **Disposition** voit uniquement les éléments qu’elle est affectée à réviser. Pour qu’un administrateur de gestion des enregistrements puisse voir tous les éléments affectés à tous les utilisateurs et toutes les étiquettes de rétention configurées pour la révision de la destruction : accédez à **Paramètres de gestion des enregistrements** > **Disposition** pour sélectionner et activer un groupe de sécurité à extension messagerie qui contient les comptes d’administrateur.
     
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
@@ -86,7 +86,7 @@ Lorsqu'une révision de disposition est déclenchée à la fin de la période de
 
 Vous pouvez personnaliser l’e-mail qu’ils reçoivent, notamment les instructions dans d’autres langues. Pour un support multilingue, vous devez vous-même spécifier les traductions et ce texte personnalisé s’affiche pour tous les réviseurs indépendamment de leurs paramètres régionaux.
 
-Les utilisateurs reçoivent une notification par e-mail initiale par étiquette à la fin de la période de rétention de l’élément, avec un rappel par étiquette une fois par semaine de toutes les révisions avant destruction qui leur sont affectées. Ils peuvent cliquer sur le lien dans les e-mails de notification et de rappel pour accéder à la page **Destruction** dans le Centre de conformité Microsoft 365 pour réviser le contenu et prendre des mesures. Les réviseurs peuvent également accéder directement à la page **Destruction** dans le Centre de conformité. Ensuite :
+Les utilisateurs reçoivent une notification par e-mail initiale par étiquette à la fin de la période de rétention de l’élément, avec un rappel par étiquette une fois par semaine de toutes les révisions avant destruction qui leur sont affectées. Ils peuvent cliquer sur le lien dans les e-mails de notification et de rappel pour accéder directement à la page de **Gestion des enregistrements** > **Disposition** dans le Centre de conformité Microsoft 365 pour examiner le contenu et effectuer une action. Les réviseurs peuvent également accéder à cette page **Disposition** dans le Centre de conformité. Ensuite :
 
 - Les réviseurs voient uniquement les révisions avant destruction qui leur sont affectées, tandis que les administrateurs qui sont ajoutés au Groupe de sécurité du gestionnaire des enregistrements voient toutes les révisions avant destruction.
 
@@ -155,11 +155,11 @@ Exemple de notification par défaut envoyée par e-mail au réviseur :
 
 Vous pouvez personnaliser les messages électroniques envoyés aux relecteurs de disposition pour la notification initiale, puis les rappels.
 
-À partir de l’une des pages Destruction dans le Centre de conformité, sélectionnez **Paramètres de gestion des enregistrements** :  
+Dans l’une des pages de gestion des enregistrements du Centre de conformité, sélectionnez **Paramètres de gestion des enregistrements**:  
 
 ![Paramètres de gestion des enregistrements.](../media/record-management-settings.png)
 
-Sélectionnez ensuite l’onglet **Notifications de destruction**, puis spécifiez si vous voulez utiliser simplement le courrier électronique par défaut ou ajouter votre texte au message par défaut. Votre texte personnalisé est ajouté aux instructions de l’e-mail après les informations sur l’étiquette de rétention et avant les instructions des étapes suivantes.
+Sous l’onglet **Disposition**, dans la section **Notifications par e-mail pour les révisions de destruction**, sélectionnez et spécifiez si vous souhaitez utiliser uniquement le message électronique par défaut ou ajouter votre propre texte au message par défaut. Votre texte personnalisé est ajouté aux instructions de l’e-mail après les informations sur l’étiquette de rétention et avant les instructions des étapes suivantes.
 
 Un texte dans toutes les langues peut être ajouté, cependant, la mise en forme et les images ne sont actuellement pas prises en charge. Les adresses e-mail et les URL peuvent être saisies en tant que texte et, en fonction du client d’e-mail, affichées en tant que lien hypertexte ou de texte non mis en forme dans l’e-mail personnalisé.
 
@@ -204,7 +204,7 @@ Lors d’une révision avant destruction, le contenu ne quitte jamais son emplac
 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
-Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistrements** pour identifier :
+À partir de la page principale **Gestion des enregistrements** > l’onglet **Disposition**, vous pouvez identifier les éléments suivants :
 
 - Éléments supprimés suite à une révision avant destruction.
 - Les éléments marqués comme enregistrement ou enregistrement réglementaire qui ont été automatiquement supprimés à la fin de leur période de rétention.

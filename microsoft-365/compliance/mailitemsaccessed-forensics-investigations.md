@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152969"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872620"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
 Un compte d’utilisateur compromis (également appelé *prise de contrôle de compte*) est un type d’attaque permettant à une personne malveillante d’accéder à un compte utilisateur et d'agir à sa place. Ces types d’attaques peuvent parfois occasionner des dommages plus importants que ceux que la personne malveillante a initialement prévu. Lors de l'analyse de comptes de messagerie compromis, considérez que beaucoup plus de données de courrier sont compromises par rapport à ce qui peut être indiqué en suivant la présence réelle de l’attaquant. Selon le type de données figurant dans les messages électroniques, vous devez supposer que les informations sensibles ont été compromises, ou font face à des sanctions pour infraction à un règlement, sauf si vous pouvez prouver que les informations sensibles n’ont pas été exposées. Par exemple, les organisations réglementées par le HIPAA sont confrontées à des amendes importantes s’il s'avère que des informations sur la santé des patients ont été exposées. Dans ces cas, il est peu probable que les personnes malveillantes s'intéressent aux dossiers contenant des renseignements médicaux protégés (PHI), mais les organisations doivent tout de même signaler les violations de données, sauf si elles peuvent prouver le cas contraire.
 
-Pour faciliter votre enquête sur des comptes de courrier compromis, nous auditons désormais les accès aux données de messages par protocoles de courrier et clients avec l’action d’audit de boîte aux lettres *MailItemsAccessed*. Cette nouvelle action d’audit aidera les investigateurs à mieux comprendre les violations de données de messagerie et vous permettra d'identifier l’étendue des compromissions de certains éléments de courrier précis susceptibles d’être corrompus. La défendabilité légale est l'objectif de l'emploi de cette nouvelle action d'audit pour affirmer que des données précises d'un e-mail ne sont pas compromise. Si une personne malveillante accède à un message spécifique, Exchange Online audite l’événement, même si rien n'indique que le courrier a été véritablement lu.
+Pour faciliter votre enquête sur des comptes de courrier compromis, nous auditons désormais les accès aux données de messages par protocoles de courrier et clients avec l’action d’audit de boîte aux lettres *MailItemsAccessed*. Cette nouvelle action d’audit aidera les investigateurs à mieux comprendre les violations de données de messagerie et vous permettra d'identifier l’étendue des compromissions de certains éléments de courrier précis susceptibles d’être corrompus. La défendabilité légale est l'objectif de l'emploi de cette nouvelle action d'audit pour affirmer que des données précises d'un e-mail ne sont pas compromise. Si un attaquant a obtenu l’accès à un élément de messagerie spécifique, Exchange Online audite l’événement même s’il n’existe aucune indication indiquant que l’élément de courrier a été lu.
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Action d’audit de boîte aux lettres MailItemsAccessed
 
@@ -37,7 +37,7 @@ L’action d’audit de boîte aux lettres MailItemsAccessed englobe tous les pr
 
 ### <a name="auditing-sync-access"></a>Audit de l’accès à la synchronisation
 
-Les opérations de synchronisation sont uniquement enregistrées lorsqu’une boîte aux lettres est consultée par une version de bureau du client Outlook pour Windows ou Mac. Pendant l’opération de synchronisation, ces clients téléchargent généralement un grand nombre de courriers du cloud vers un ordinateur local. Le volume d’audit pour les opérations de synchronisation est important. Par conséquent, au lieu de générer un enregistrement d’audit par courrier synchronisé, un événement d’audit est tout simplement créé pour le dossier de courrier contenant les éléments qui ont été synchronisés. Ainsi, l’hypothèse est que *tous* les éléments de courrier présents dans le dossier synchronisé sont corrompus. Le type d’accès est enregistré dans le champ OperationProperties de l’enregistrement d’audit.
+Les opérations de synchronisation sont uniquement enregistrées lorsqu’une boîte aux lettres est consultée par une version de bureau du client Outlook pour Windows ou Mac. Pendant l’opération de synchronisation, ces clients téléchargent généralement un grand nombre de courriers du cloud vers un ordinateur local. Le volume d’audit pour les opérations de synchronisation est important. Par conséquent, au lieu de générer un enregistrement d’audit pour chaque élément de courrier synchronisé, nous générons un événement d’audit pour le dossier de messagerie contenant des éléments synchronisés et supposons que *tous les* éléments de courrier du dossier synchronisé ont été compromis. Le type d’accès est enregistré dans le champ OperationProperties de l’enregistrement d’audit.
 
 Pour consulter un exemple d’affichage du type d’accès à la synchronisation dans un enregistrement d’audit, voir l’étape 2 de la section [Utiliser les enregistrements d’audit MailItemsAccessed pour des investigations criminalistiques](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
 
@@ -49,7 +49,7 @@ Pour consulter un exemple d’affichage du type d’accès à la liaison dans un
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>Limitation des enregistrements d’audit MailItemsAccessed
 
-Si plus de 1 000 enregistrements d’audit MailItemsAccessed sont générés en moins de 24 heures, Exchange Online stoppe la génération des enregistrements d’audit pour l’activité MailItemsAccessed. Lorsqu’une boîte aux lettres est limitée, l’activité MailItemsAccessed n’est pas enregistrée durant les 24 heures suivant la limitation de la boîte aux lettres. Si cela se produit, il est possible que la boîte aux lettres ait été compromise au cours de cette période. L’enregistrement de l’activité MailItemsAccessed reprend après un délai de 24 heures.
+Si plus de 1 000 enregistrements d’audit MailItemsAccessed sont générés en moins de 24 heures, Exchange Online stoppe la génération des enregistrements d’audit pour l’activité MailItemsAccessed. Lorsqu’une boîte aux lettres est limitée, l’activité MailItemsAccessed n’est pas enregistrée durant les 24 heures suivant la limitation de la boîte aux lettres. Si la boîte aux lettres a été limitée, il est possible que cette boîte aux lettres ait été compromise pendant cette période. L’enregistrement de l’activité MailItemsAccessed reprend après un délai de 24 heures.
 
 Voici quelques éléments à se rappeler sur la limitation :
 
@@ -101,7 +101,7 @@ Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItem
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
    ```
 
-2. Vérifier les activités de synchronisation. Si une personne malveillante utilise un client de courrier pour télécharger les messages d'une boîte aux lettres, il peut déconnecter l’ordinateur d’internet et accéder aux messages en local sans interagir avec le serveur. L'audit de boîtes aux lettres ne peut donc pas auditer ces activités.
+2. Vérifier les activités de synchronisation. Si une personne malveillante utilise un client de courrier pour télécharger les messages d'une boîte aux lettres, il peut déconnecter l’ordinateur d’internet et accéder aux messages en local sans interagir avec le serveur. Dans ce cas, l’audit de boîte aux lettres ne serait pas en mesure d’auditer ces activités.
 
    Pour effectuer la recherche des enregistrements MailItemsAccessed dans lesquels les courriers ont été consultés par une opération de synchronisation, exécutez la commande suivante :
 
@@ -129,7 +129,7 @@ Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItem
    |---|---|
    |ClientInfoString|Décrit le protocole, le client (inclut la version).|
    |ClientIPAddress|Adresse IP de l’ordinateur client.|
-   |SessionId|ID de session vous permettant de différencier les activités de personnes malveillantes de celles des utilisateur au quotidien sur le même compte (dans le cas d’un compte compromis)|
+   |SessionId|L’ID de session permet de différencier les actions de l’attaquant et les activités quotidiennes des utilisateurs sur le même compte (utile pour les comptes compromis)|
    |UserId|Nom d’utilisateur principal (UPN) de l’utilisateur lisant le message.|
    |
 
@@ -154,7 +154,7 @@ Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItem
    Vous pouvez utiliser les données d’audit pour les opérations de liaison de deux façon différentes :
 
    - Accéder ou recueillir tous les courriers électroniques auxquels la personne malveillante a eu accès en utilisant l’InternetMessageId pour les retrouver, puis vérifiez si l’un de ces messages contient des informations sensibles.
-   - Utilisez l’InternetMessageId pour rechercher des enregistrements d’audit relatifs à un groupe de courriers électroniques potentiellement sensibles. Ceci est utile si un petit nombre de message vous préoccupe.
+   - Utilisez l’InternetMessageId pour rechercher des enregistrements d’audit relatifs à un groupe de courriers électroniques potentiellement sensibles. Cela est utile si vous ne vous souciez que de quelques messages.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtrage des enregistrements d’audit dupliqués
 

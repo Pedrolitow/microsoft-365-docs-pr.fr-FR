@@ -23,12 +23,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06413dc1d33136e5fa7fd23a0770f98bc6c6e408
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d94cae13c4379061ce95b17d284e27d435cd9918
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646264"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942571"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -200,6 +200,30 @@ Les cartes sont dans les catégories suivantes :
 - **Données :** permettent de suivre l’activité des utilisateurs qui peut entraîner une divulgation non autorisée des données.
 - **Appareils** : obtenez des informations à jour sur les alertes, l’activité de violation et d’autres menaces sur vos appareils.
 - **Applications** : obtenir des informations sur la façon dont les applications cloud sont utilisées dans votre organisation. [En savoir plus sur les applications découvertes dans Defender pour les applications cloud.](/cloud-app-security/discovered-apps)
+
+
+#### <a name="search-across-entities-preview"></a>Rechercher entre entités (prévisualisation)
+
+>[!IMPORTANT]
+> Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+La barre de recherche se trouve en haut de la page. Lorsque vous tapez, des suggestions sont fournies afin de faciliter la recherche d’entités. La page des résultats de recherche améliorés centralise les résultats de toutes les entités.
+
+Vous pouvez effectuer des recherches dans les entités suivantes dans Defender for Endpoint et Defender for Identity : 
+
+- **Appareils** - pris en charge à la fois pour Defender pour endpoint et Defender pour l’identité. Prend en charge l’utilisation des opérateurs de recherche. 
+- **Utilisateurs** - pris en charge pour Defender pour le point de terminaison, Defender pour l’identité et Defender pour les applications cloud. 
+- **Fichiers, adresses IPS** et URL : mêmes fonctionnalités que dans Defender pour le point de terminaison.
+
+    >[!NOTE]
+    >Les recherches d’ADRESSES IP et d’URL correspondent exactement et n’apparaissent pas dans la page des résultats de la recherche : elles mènent directement à la page d’entité. 
+
+- **TVM** - mêmes fonctionnalités que dans Defender pour point de terminaison (vulnérabilités, logiciels et recommandations). 
+
+ 
+
+
+
+
 
 ### <a name="threat-analytics-with-better-data-coverage"></a>Analyse des menaces avec une meilleure couverture de données
 

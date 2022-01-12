@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 5ac00352c64f1403f87ff1c16f3fa44e8c737896
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198588"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993415"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
@@ -134,6 +134,37 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
 3. Téléchargez des fichiers dans votre bibliothèque de documents. Tous les fichiers que le modèle identifie comme son type de contenu répertorient les fichiers dans votre vue et affichent les données extraites dans les colonnes.
 
     ![OK.](../media/content-understanding/doc-lib-done.png) 
+
+### <a name="use-flows-to-extract-information"></a>Utiliser des flux pour extraire des informations
+
+Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fichiers dans une bibliothèque dans laquelle un modèle de traitement de formulaire a été appliqué.
+
+- **Extraire des informations** d’une image ou d’un fichier PDF avec un modèle de traitement de formulaire : utilisez cette procédure pour extraire du texte d’une image sélectionnée ou d’un fichier PDF en exécutant un modèle de traitement de formulaire. Prend en charge un seul fichier sélectionné à la fois et uniquement les fichiers PDF et les fichiers image (PNG, JPG et JPEG). Pour exécuter le flux, sélectionnez un fichier, puis sélectionnez **Automatiser les informations**  >  **d’extraction.**
+
+    ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
+
+- **Extraire des informations à partir de fichiers avec un** modèle de traitement de formulaire : utilisez-les avec des modèles de traitement de formulaire pour lire et extraire des informations d’un lot de fichiers. Traite jusqu’à 5 000 fichiers SharePoint à la fois. Lorsque vous exécutez ce flux, vous pouvez définir certains paramètres. Vous pouvez :
+
+    - Choisissez d’inclure ou non les fichiers précédemment traitées (la valeur par défaut n’inclut pas les fichiers précédemment traitées).
+    - Sélectionnez le nombre de fichiers à traiter (la valeur par défaut est 100 fichiers).
+    - Spécifiez l’ordre dans lequel traiter les fichiers (les choix sont par ID de fichier, nom de fichier, heure de création du fichier ou heure de dernière modification).
+    - Spécifiez le tri de l’ordre (ordre croissant ou décroit).
+
+    ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
+
+### <a name="classification-date-field"></a>Champ Date de classification
+
+Lorsqu’un SharePoint Syntex de traitement de formulaire (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date** de classification est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traitées et classées par un modèle, ce champ est mis à jour avec un horodat de fin. 
+
+Lorsqu’un modèle est marqué avec la date de **classification,** vous pouvez utiliser l’envoi d’un courrier électronique après que **SharePoint Syntex a** traitée un flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traitée et classée par un modèle dans la bibliothèque de documents SharePoint.
+
+Pour exécuter le flux :
+
+1. Sélectionnez un fichier, puis **sélectionnez**  >  **Intégrer Power Automate**  >  **créer un flux.**
+
+2. On the **Create a flow** panel, select Send an email after SharePoint Syntex processes a **file**.
+
+    ![Capture d’écran montrant l’option Créer un panneau de flux et le flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>Voir aussi
   

@@ -3,7 +3,10 @@ title: Étape 6. Surveiller les risques et la conformité des appareils aux lign
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 manager: dougeby
 audience: ITPro
 description: Découvrez comment connecter Microsoft Intune à Defender pour point de terminaison et surveiller le risque de l’appareil en tant que condition d’accès.
@@ -15,14 +18,16 @@ ms.collection:
 - monitor device risk
 - monitor device compliance
 - deploy security baselines
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 067608134caeafd9a07fbe692de037e96063b4dd
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d96e713943a8b8c9437d440f62c46c9138a68db4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645399"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939200"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
 

@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 264196cab7669b7c64a44a5be879e454d60685f0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ccadbb21de4e86de9bc030252cc8e54cdaa0b685
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168329"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942068"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
@@ -29,11 +29,11 @@ ms.locfileid: "61168329"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -125,7 +125,7 @@ Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Adminis
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -133,7 +133,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -141,7 +141,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -150,7 +150,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -163,7 +163,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -171,7 +171,7 @@ Recherchez les dernières informations sur la sécurité des virus et logiciels 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Réduction de la surface d’attaque
 
-Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir des règles de personnalisation de la [réduction de la surface d’attaque](customize-attack-surface-reduction.md)
+Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir de la phase 3 du déploiement des règles de réduction de [la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
 1. Ouvrez la **stratégie Configurer la Réduction de la surface d’attaque.**
 
@@ -185,9 +185,9 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Stratégie|Setting
----|---
-Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
+Stratégie|Emplacement|Paramètre
+---|---|---
+Configurer l’accès contrôlé aux dossiers| \Windows Components\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Controlled Folder Access| Activé, mode Audit
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
@@ -268,6 +268,8 @@ Créez une stratégie de groupe ou groupez ces paramètres avec les autres strat
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **protection en temps réel.**
 
+ Étant donné que la valeur « Analyser les fichiers entrants et sortants » (par défaut) est 0, la stratégie de groupe « Configurer la surveillance des activités de programme et de fichiers entrants et sortants » pour le paramètre « bi-directionnel (accès complet) » est désactivée.
+
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurer la surveillance de l’activité des fichiers sortants entrants.":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>Configurer Windows Defender paramètres SmartScreen
@@ -302,7 +304,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
-Accédez aux **modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
+Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> mises **à** jour security intelligence .
 
 :::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature.":::
 
@@ -317,7 +319,7 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)

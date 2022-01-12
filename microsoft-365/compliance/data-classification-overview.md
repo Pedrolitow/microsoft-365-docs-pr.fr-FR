@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110006"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942979"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -67,6 +67,25 @@ La classification de données analyse votre contenu sensible et le contenu étiq
 
 > [!NOTE]
 > Il est recommandé de toujours utiliser le rôle avec le moins de privilèges pour garantir l’accès à la classification des données de Microsoft 365.
+
+#### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
+
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
+
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
+
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Types d’informations sensibles utilisés le plus fréquemment dans votre contenu
 

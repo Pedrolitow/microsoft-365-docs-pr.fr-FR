@@ -16,15 +16,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord Rapports du Centre de sécurité & conformité.
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5445a55fad5d580aa1af02271a50d4494f866ec4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c72e1b82a7e6336510c3b997d077c544f4169aea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422314"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942499"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -33,11 +33,11 @@ ms.locfileid: "61422314"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 >
-> La plupart des rapports de cet article sont également disponibles dans le portail Microsoft 365 Defender ou le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre d Exchange’administration.</a> Pour plus d’informations, voir les rubriques suivantes :
+> La plupart des rapports de cet article sont également disponibles dans le portail Microsoft 365 Defender ou le Centre d’administration Exchange (EAC). Pour plus d’informations, voir les rubriques suivantes :
 >
 > - [Rapports de flux de messagerie dans le nouveau centre Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [Afficher les rapports de sécurité du courrier dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)
@@ -55,14 +55,8 @@ Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-repo
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le Exchange de règles de **transport** de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
-
-Pour afficher le rapport, ouvrez le Centre de sécurité & conformité à l’Exchange, puis sélectionnez La <https://protection.office.com>  \>  règle **de transport.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/ETRRuleReport> .
-
-![Exchange widget de règle de transport dans le tableau de bord Rapports.](../../media/scc-transport-rule-report-widget.png)
-
 > [!NOTE]
-> Cliquer sur le widget pour ce rapport dans le Centre de sécurité & conformité (protection.office.com) vous permet désormais d’obtenir le rapport complet dans le portail Microsoft 365 Defender (security.microsoft.com). Pour plus d’informations sur le rapport, voir [Exchange de règles de transport.](view-email-security-reports.md#exchange-transport-rule-report)
+> Le **Exchange de règles de transport est** désormais disponible dans le EAC. Pour plus d’informations, Exchange rapport de règles de [transport dans le nouveau EAC.](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)
 
 ## <a name="forwarding-report"></a>Rapport de forwarding
 

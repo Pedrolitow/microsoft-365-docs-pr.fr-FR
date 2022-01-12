@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950676"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938828"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -74,6 +74,25 @@ Les données du point de terminaison DLP peuvent être affichées dans [l’Expl
 - Lecteur général
 - Lecteur Sécurité
 - Lecteur de rapports
+
+#### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
+
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
+
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
+
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ### <a name="overall-installation-workflow"></a>Flux de travail d’installation global
 

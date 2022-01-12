@@ -16,30 +16,32 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dc7f3a88f26ae738f3de718bd590933f44ed4906
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167189"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943387"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Intégrer les appareils Windows utilisant un script local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Vous pouvez également intégrer manuellement des appareils individuels à Defender for Endpoint. Vous pouvez d’abord le faire lors du test du service avant de vous engager à intégrer tous les appareils de votre réseau.
 
 > [!IMPORTANT]
-> Ce script a été optimisé pour une utilisation sur jusqu’à 10 appareils.
->
-> Pour déployer à grande échelle, utilisez [d’autres options de déploiement.](configure-endpoints.md) Par exemple, vous pouvez déployer un script d’intégration sur plus de 10 appareils en production avec le script disponible dans les appareils Windows à l’aide de la stratégie [de groupe.](configure-endpoints-gp.md)
+> Ce script a été optimisé pour une utilisation sur dix appareils au plus.
+> L’écriture de scripts locaux est une méthode d’intégration spéciale pour l’évaluation de Microsoft Defender pour endpoint.
+> La fréquence des rapports de données est supérieure à celle des autres méthodes d’intégration lors de l’intégration à l’aide d’un script local.
+> Ce paramètre est utilisé à des fins d’évaluation et n’est normalement pas utilisé dans les déploiements de production. Pour cette raison, il existe des préoccupations concernant l’impact sur l’environnement, c’est pourquoi nous vous recommandons de limiter le nombre de déploiements utilisant des scripts locaux à dix.
+> Si vous déployez dans un environnement de production comme décrit précédemment, utilisez d’autres [options](configure-endpoints.md) de déploiement telles que la stratégie de groupe ou Microsoft Endpoint Configuration Manager.
 
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint. 
 
@@ -140,7 +142,7 @@ La surveillance peut également être effectuée directement sur le portail ou �
 2. Cliquez sur **Inventaire des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

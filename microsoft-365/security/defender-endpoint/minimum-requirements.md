@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdc22ecb1e540c2408cc6178c0190dbce676d761
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: b48503eddbb0093bc5e022d981fb719cd6f42e47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620467"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941803"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -40,38 +40,8 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
+Pour plus d’informations sur les licences requises pour Microsoft Defender pour endpoint, voir Microsoft Defender pour les informations de licence [de point de terminaison.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)
 
-Microsoft Defender for Endpoint nécessite l’une des offres de licence en volume Microsoft suivantes :
-
-- Windows 11 Entreprise E5
-- Windows 11 Éducation A5
-- Windows 10 Entreprise E5
-- Windows 10 Éducation A5
-- Microsoft 365 E5 (M365 E5) qui inclut Windows 10 Entreprise E5 ou Windows 11 Entreprise E5
-- Microsoft 365 A5 (M365 A5) 
-- Microsoft 365 E3 (M365 E3) avec un Enterprise Mobility + Security E5
-- Microsoft 365 Business Premium lors de l’achat auprès [d’un Fournisseur de solutions Microsoft Cloud](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
-- Microsoft 365 E5 Sécurité
-- Sécurité Microsoft 365 A5
-- Microsoft Defender pour point de terminaison
-
-> [!NOTE]
-> Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
-> Microsoft Defender for Endpoint est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP).
-> Les VM RDSH ne nécessitent pas de licence Defender for Endpoint distincte.
-
-Microsoft Defender pour le point de terminaison pour les serveurs nécessite l’une des options de licence suivantes :
-
-- [Microsoft Defender pour le Cloud avec fonctionnalités de sécurité améliorées activées](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (un par serveur couvert)
-
-> [!NOTE]
-> Les clients peuvent acquérir des licences serveur (une par environnement de système d’exploitation de serveur couvert) pour Microsoft Defender pour Endpoint for Servers s’ils ont un minimum combiné de 50 licences pour une ou plusieurs des licences utilisateur suivantes :
->
-> - Microsoft Defender pour point de terminaison
-> - Windows E5/A5
-> - Microsoft 365 E5/A5
-> - Microsoft 365 sécurité E5/A5
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site](https://www.microsoft.com/licensing/terms/) Termes du produit et travaillez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 

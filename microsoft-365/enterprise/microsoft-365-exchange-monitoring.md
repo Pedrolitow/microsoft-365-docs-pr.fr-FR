@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22985d1fd6e79693a526c8ec008e189593543ae6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197328"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933334"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
@@ -191,3 +191,5 @@ La surveillance se concentre sur les métadonnées de service et le contenu util
 - [Utilisation de comptes prioritaires dans Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
 
 - [Alertes de service pour l’utilisation des boîtes aux lettres dans la surveillance Exchange Online](microsoft-365-mailbox-utilization-service-alerts.md)
+
+- [Alertes de service pour les retards de source MRS dans la surveillance Exchange Online](microsoft-365-mrs-source-delays-service-alerts.md)

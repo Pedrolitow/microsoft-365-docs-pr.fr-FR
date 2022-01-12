@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Validez vos résultats de recherche en visualxant les statistiques générées après avoir exécuté une recherche de collection dans Advanced eDiscovery.
-ms.openlocfilehash: ec339cd28fdd25457a668f992f20e59a4f10b289
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5eed0f888da717cbf68db837a6d9ff230dbf674
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167233"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942079"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 
@@ -28,7 +28,7 @@ Une façon de valider vos résultats de recherche consiste à examiner les stati
 
 - Nombre et volume d’éléments récupérés par la recherche
 
-- Nombre et volume d’éléments partiellement indexés ou non indexés trouvés dans les emplacements de recherche
+- Nombre et volume d’éléments partiellement indexés ou non indexés trouvés aux emplacements de recherche
 
 - Nombre de boîtes aux lettres et d’emplacements recherchés.
 Pour afficher des statistiques plus détaillées, cliquez sur « Statistiques » dans le volant des détails de la recherche.

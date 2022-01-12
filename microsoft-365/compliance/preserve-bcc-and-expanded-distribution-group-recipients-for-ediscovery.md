@@ -7,21 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: In-Place conservation, conservation pour litige et stratégies de rétention Microsoft 365 vous permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de conformité réglementaire et eDiscovery.
-ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: In-Place conservation, conservation pour litige et stratégies de rétention Microsoft 365 vous permettent de conserver le contenu des boîtes aux lettres pour répondre aux exigences de conformité réglementaire et eDiscovery.
+ms.openlocfilehash: c157f2fb0b74e679bf1252b6f24208b77a657d8c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175130"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942163"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
-Les conservations pour litige, les [](./retention.md) conservations eDiscovery et les stratégies de rétention Microsoft 365 (créées dans le Centre de conformité Microsoft 365) vous permettent de conserver le contenu des boîtes aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
+Les conservations pour litige, les [](./retention.md) conservations eDiscovery et les stratégies de rétention Microsoft 365 (créées dans le Centre de conformité Microsoft 365) vous permettent de conserver le contenu des boîtes aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement adressés dans les champs À et Cc d’un message sont incluses dans tous les messages par défaut. Toutefois, votre organisation peut avoir besoin de la possibilité de rechercher et de reproduire des détails sur tous les destinataires d’un message. Cela inclut les opérations suivantes :
   
 - **Destinataires adressés à l’aide du champ Bcc d’un message :** Les destinataires Bcc sont stockés dans le message dans la boîte aux lettres de l’expéditeur, mais ne sont pas inclus dans les en-têtes du message remis aux destinataires. 
     
@@ -58,17 +58,17 @@ Scénario 1 : John est membre du groupe de distribution Ventes aux États-Unis. 
    
 Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cci, directement ou indirectement via un groupe de distribution). Le tableau ci-dessous montre les résultats de la recherche de découverte électronique.
   
-| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Remarques |
+| Lorsque vous recherchez... | Pour les messages envoyés... | Les résultats incluent le message... | Notes |
 |:-----|:-----|:-----|:-----|
 |Boîte aux lettres de Bob  <br/> |À/Cc:John  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
 |Boîte aux lettres de Bob  <br/> |Cci:Jack  <br/> |Oui  <br/> |Indique que Jack était inclus dans le champ Cci  <br/> |
-|Boîte aux lettres de Bob  <br/> |Cci:Jack (via un groupe de distribution)  <br/> |Oui  <br/> |La liste des membres du groupe de distribution Bcc’ed, étendue lors de l’envoi du message, est visible dans l’aperçu de recherche eDiscovery, l’exportation et les journaux.  <br/> |
+|Boîte aux lettres de Bob  <br/> |Cci:Jack (via un groupe de distribution)  <br/> |Oui  <br/> |La liste des membres du groupe de distribution Bcc’ed, étendue lors de l’envoi du message, est visible dans l’aperçu, l’exportation et les journaux de recherche eDiscovery.  <br/> |
 |Boîte aux lettres de John  <br/> |À/Cc:John  <br/> |Oui  <br/> |Aucune indication des destinataires en copie carbone invisible.  <br/> |
 |Boîte aux lettres de John  <br/> |Cci:Jack (directement ou via un groupe de distribution)  <br/> |Non  <br/> |Les informations du champ Cci ne sont pas stockées dans le message remis aux destinataires. Vous devez les rechercher dans la boîte aux lettres de l'expéditeur.  <br/> |
 |Boîte aux lettres de Jack  <br/> |À/Cc:John (directement ou via un groupe de distribution)  <br/> |Oui  <br/> |Les informations des champs À/Cc sont incluses dans le message remis à tous les destinataires.  <br/> |
 |Boîte aux lettres de Jack  <br/> |Cci:Jack (directement ou via un groupe de distribution)  <br/> |Non  <br/> |Les informations du champ Cci ne sont pas stockées dans le message remis aux destinataires. Vous devez les rechercher dans la boîte aux lettres de l'expéditeur.  <br/> |
    
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
  **Q. Quand les informations sur le destinataire en Cci sont-elles stockées et à quel emplacement ?**
   
@@ -84,7 +84,7 @@ R. Non. Ces informations ne sont pas incluses dans les en-têtes de message et n
   
  **Q. Comment puis-je m’assurer que les destinataires de groupe de distribution étendu sont toujours conservés ?**
   
-A. Pour vous assurer que les membres du groupe de distribution étendu sont toujours conservés avec un [message,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) placez toutes les boîtes aux lettres en conservation ou créez une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. 
+R. Pour vous assurer que les membres du groupe de distribution étendu sont toujours conservés avec un [message,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) placez toutes les boîtes aux lettres en conservation ou créez une stratégie de rétention Microsoft 365 à l’échelle de l’organisation. 
   
  **Q. Quels types de groupe sont pris en charge ?**
   

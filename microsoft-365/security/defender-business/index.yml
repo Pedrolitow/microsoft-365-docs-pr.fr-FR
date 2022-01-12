@@ -13,13 +13,13 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/13/2021
-  ms.openlocfilehash: cf805d8d05d9ca9fadc25c5ee49124020c386f68
-  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.date: 01/03/2022
+  ms.openlocfilehash: 702be8910e5d0201086de6f564a335e43af4ff7c
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/30/2021
-  ms.locfileid: "61643843"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61941359"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -77,10 +77,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Afficher et modifier vos stratégies
-      url: mdb-view-edit-policies.md
-    - text: Créer une stratégie
-      url: mdb-create-new-policy.md
+    - text: Afficher, modifier et créer des stratégies
+      url: mdb-view-edit-create-policies.md
     - text: Créer des groupes d’appareils
       url: mdb-create-edit-device-groups.md
     - text: Gérer les règles pour les stratégies de pare-feu

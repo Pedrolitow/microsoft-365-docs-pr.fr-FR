@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: babe21ec9026ac78849b86c8310b24a83bdf41c0
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 380e2ecb9ee8df7eb066eef600f796685215662f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531725"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941239"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune
 
@@ -56,7 +56,7 @@ Découvrez comment déployer Defender pour le point de terminaison sur Android s
 
 2. Dans la page **Ajouter une** application et dans la section Informations sur *l’application,* entrez :
 
-   - **Name**
+   - **Nom**
    - **Description**
    - **Publisher** microsoft.
    - **URL du Magasin d’applications** sous (URL du Google Play Store de l’application https://play.google.com/store/apps/details?id=com.microsoft.scmx Defender for Endpoint)
@@ -90,7 +90,7 @@ Découvrez comment déployer Defender pour le point de terminaison sur Android s
 
 2. Appuyez sur l’icône de l’application Microsoft Defender for Endpoint et suivez les instructions à l’écran pour terminer l’intégration de l’application. Les détails incluent l’acceptation par l’utilisateur final des autorisations Android requises par Defender pour Endpoint sur Android.
 
-3. Une fois l’intégration réussie, l’appareil commence à s’afficher dans la liste Appareils dans Centre de sécurité Microsoft Defender.
+3. Une fois l’intégration réussie, l’appareil commence à s’afficher dans la liste Appareils du portail Microsoft 365 Defender web.
 
     :::image type="content" alt-text="Image de l’appareil dans le portail Defender for Endpoint." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 

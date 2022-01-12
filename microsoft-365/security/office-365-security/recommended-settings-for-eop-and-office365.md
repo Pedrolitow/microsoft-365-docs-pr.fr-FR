@@ -3,8 +3,8 @@ title: Recommandations Microsoft pour EOP et Defender pour les paramètres Offic
 keywords: recommandations en matière de sécurité Office 365, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365 , configurer EOP, configuration de la sécurité
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 ms.date: ''
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous souhaitez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 194d255099b3847a648d083f925489abf0e22a49
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b2b894344362556200362d486853d56a2aed00b6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373679"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943111"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -33,11 +33,11 @@ ms.locfileid: "61373679"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Exchange Online Protection (EOP)** est le cœur de la sécurité des abonnements Microsoft 365 et permet d’empêcher les e-mails malveillants d’atteindre les boîtes de réception de vos employés. Toutefois, avec de nouvelles attaques plus sophistiquées émergentes chaque jour, des protections améliorées sont souvent nécessaires. **Microsoft Defender pour Office 365** Plan 1 ou Plan 2 contient des fonctionnalités supplémentaires qui donnent aux administrateurs davantage de couches de sécurité, de contrôle et d’enquête.
 
-Bien que nous donnent la possibilité aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Microsoft Defender pour Office 365 que nous recommandons : **Standard** et **Strict**. L’environnement et les besoins de chaque client sont différents, mais nous pensons que ces niveaux de filtrage contribueront à empêcher les messages indésirables d’atteindre la boîte de réception de vos employés dans la plupart des situations.
+Bien que nous donnent la possibilité aux administrateurs de sécurité de personnaliser leurs paramètres de sécurité, il existe deux niveaux de sécurité dans EOP et Microsoft Defender pour Office 365 que nous recommandons : **Standard** et **Strict**. Bien que les environnements et les besoins des clients soient différents, ces niveaux de filtrage permettent d’éviter que les messages indésirables n’atteignent la boîte de réception de vos employés dans la plupart des cas.
 
 Pour appliquer automatiquement les paramètres Standard ou Strict aux utilisateurs, voir Stratégies de sécurité prédéfini dans [EOP](preset-security-policies.md)et Microsoft Defender pour Office 365 .
 
@@ -67,8 +67,8 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Ce paramètre est uniquement disponible dans PowerShell.|
 |**Augmenter les paramètres du score** de courrier indésirable|Désactivé|Désactivé|Désactivé|Tous ces paramètres font partie du filtre de courrier indésirable avancé (ASF). Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
 |**Marquer comme paramètres de** courrier indésirable|Désactivé|Désactivé|Désactivé|La plupart de ces paramètres font partie d’ASF. Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
-|**Contient des langues spécifiques** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**Off** <p> `$false` <p> Vide|**Off** <p> `$false` <p> Vide|**Off** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages dans des langues spécifiques en fonction des besoins de votre entreprise.|
-|**À partir de ces pays** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**Off** <p> `$false` <p> Vide|**Off** <p> `$false` <p> Vide|**Off** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages provenant de pays spécifiques en fonction des besoins de votre entreprise.|
+|**Contient des langues spécifiques** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages dans des langues spécifiques en fonction des besoins de votre entreprise.|
+|**À partir de ces pays** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|**Désactivé** <p> `$false` <p> Vide|Nous n’avons aucune recommandation spécifique pour ce paramètre. Vous pouvez bloquer les messages provenant de pays spécifiques en fonction des besoins de votre entreprise.|
 |**Mode test** (_TestModeAction_)|**Aucune**|**Aucune**|**Aucune**|Ce paramètre fait partie d’ASF. Pour plus d’informations, consultez la section paramètres ASF dans la section des [stratégies anti-courrier](#asf-settings-in-anti-spam-policies) indésirable de cet article.|
 |**Actions**||||Où que vous sélectionniez le **message de mise** en quarantaine, une zone sélectionner une stratégie de mise **en** quarantaine est disponible. Les stratégies de mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine. <p> Lorsque vous créez une stratégie anti-courrier indésirable, une valeur vide signifie que la stratégie de mise en quarantaine par défaut est utilisée pour définir les fonctionnalités historiques des messages mis en quarantaine par ce verdict particulier (AdminOnlyAccessPolicy pour le hameçonnage à haut niveau de confiance **;** DefaultFullAccessPolicy pour tout le reste). <p> Les administrateurs peuvent créer et sélectionner des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités plus restrictives ou moins restrictives pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).|
 |**Action de** détection du courrier indésirable <p> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
@@ -231,7 +231,7 @@ Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d�
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil de hameçonnage & protection**|||||
-|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
+|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration. Les stratégies de sécurité prédéfines ne peuvent pas être modifiées ; Ils doivent être désactivés si vous souhaitez ajouter des utilisateurs dans des rôles clés comme suggéré.|
 |**Activer les domaines à protéger** (protection de domaine dont l’identité est usurpée)|Non sélectionnée|Sélectionné|Sélectionné||
 |**Inclure les domaines que je possède** <p> _EnableOrganizationDomainsProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment.|
@@ -313,7 +313,7 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeAttachmentPolicy](/powershel
 
 |Nom de la fonctionnalité de sécurité|Valeur par défaut dans custom|Protection intégrée|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|:---:|---|
-|**Coffre de programmes malveillants inconnus des pièces jointes** <p> _Activer_ et _action_|**Off** <p> `-Enable $false` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|Lorsque le _paramètre Enable_ est $false, la valeur du paramètre _Action_ n’a pas d’importance.|
+|**Coffre de programmes malveillants inconnus des pièces jointes** <p> _Activer_ et _action_|**Désactivé** <p> `-Enable $false` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|**Bloquer** <p> `-Enable $true` et `-Action Block`|Lorsque le _paramètre Enable_ est $false, la valeur du paramètre _Action_ n’a pas d’importance.|
 |**Stratégie de mise en quarantaine** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Lorsque vous créez une stratégie de pièces jointes Coffre, une valeur vide signifie que la stratégie de mise en quarantaine par défaut est utilisée pour définir les fonctionnalités historiques des messages mis en quarantaine par Coffre Attachments (AdminOnlyAccessPolicy). <p> Les administrateurs peuvent créer et sélectionner des stratégies de mise en quarantaine personnalisées qui définissent davantage de fonctionnalités pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).|
 |**Rediriger la pièce jointe avec les pièces jointes détectées** : **activer la redirection** <p> _Redirect_ <p> _RedirectAddress_|Non sélectionné et aucune adresse de messagerie spécifiée. <p> `-Redirect $false` <p> _RedirectAddress_ est vide ( `$null` )|Non sélectionné et aucune adresse de messagerie spécifiée. <p> `-Redirect $false` <p> _RedirectAddress_ est vide ( `$null` )|Sélectionné et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse e-mail|Sélectionné et spécifiez une adresse de messagerie. <p> `$true` <p> une adresse e-mail|Rediriger les messages vers un administrateur de sécurité pour révision. <p> **Remarque**: ce paramètre n’est pas configuré dans les stratégies de sécurité prédéfinées **Standard,** **Strict** ou **Built-in Protection.** Les **valeurs Standard** et **Strict** indiquent nos **valeurs** recommandées dans les nouvelles stratégies Coffre pièces jointes que vous créez.|
 |**Appliquer la réponse Coffre détection des pièces jointes si l’analyse ne peut pas se terminer (délai d’Coffre ou erreurs)** <p> _ActionOnError_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
@@ -366,8 +366,8 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeLinksPolicy](/powershell/mod
 |Nom de la fonctionnalité de sécurité|Valeur par défaut dans custom|Protection intégrée|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|:---:|---|
 |**Paramètres de protection**||||||
-|**Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les messages** <p> _IsEnabled_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
-|**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** <p> _EnableSafeLinksForTeams_|**Off** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
+|**Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les messages** <p> _IsEnabled_|**Désactivé** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
+|**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** <p> _EnableSafeLinksForTeams_|**Désactivé** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`|**On** <p> `$true`||
 |**Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** <p> _ScanUrls_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <p> _DeliverMessageAfterScan_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Appliquer Coffre liens vers les messages électroniques envoyés au sein de l’organisation** <p> _EnableForInternalSenders_|Non sélectionnée <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||

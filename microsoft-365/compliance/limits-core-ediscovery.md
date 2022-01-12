@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article décrit les limites du cas eDiscovery principal Microsoft 365.
-ms.openlocfilehash: 82caa5214f777effb912ab1a2a3054b1e4432ae6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28db179aea27bfff2520199d89b93c8260b7f089
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190700"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940961"
 ---
-# <a name="limits-in-core-ediscovery"></a>Limites dans core eDiscovery
+# <a name="limits-in-core-ediscovery"></a>Limites dans Core eDiscovery
 
-Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et les cas de découverte électronique principaux associés à un cas eDiscovery principal. Pour plus d’informations sur Core eDiscovery, voir [Overview of Core eDiscovery](./get-started-core-ediscovery.md).
+Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et les cas de découverte électronique principaux associés à un cas eDiscovery principal. Pour plus d’informations sur Core eDiscovery, voir [Vue d’ensemble de Core eDiscovery](./get-started-core-ediscovery.md).
     
   | Description de la limite | Limite |
   |:-----|:-----|
-  |Nombre maximal de cas pour une organisation.  <br/> |Aucune limite  <br/> |
+  |Nombre maximal de cas pour une organisation.  <br/> |Sans limite  <br/> |
   |Nombre maximal de cas d’une organisation.  <br/> |10 000  <br/> |
   |Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes.  <br/> |1 000  <br/> |
   |Nombre maximal de sites dans une seule et même période d’attente. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Microsoft 365, Microsoft Teams et Yammer groupes.  <br/> |100  <br/> |
@@ -38,7 +38,7 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery principaux et
   |||
 
    > [!NOTE]
-   > <sup>1</sup> Pour afficher une liste de plus de 1 000 cas, de mise en attente, de recherches ou d’exportations, vous pouvez utiliser les cmdlets PowerShell de sécurité Office 365 & conformité correspondantes :
+   > <sup>1</sup> Pour afficher une liste de plus de 1 000 cas, de mise en attente, de recherche ou d’exportation, vous pouvez utiliser les cmdlets PowerShell de sécurité Office 365 & conformité correspondantes :
    > 
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)

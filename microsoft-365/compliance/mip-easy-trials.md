@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Découvrez les étiquettes et les stratégies par défaut de Microsoft Information Protection (MIP) pour classer et protéger le contenu sensible.
-ms.openlocfilehash: dd9a2eef45e8ccb7ecb9c637a94f64ad6796a8f9
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221351"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938615"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Étiquettes et stratégies par défaut pour Microsoft Information Protection
 
@@ -59,11 +59,13 @@ Pour obtenir ces étiquettes et règles préconfigurées :
     
     Si vous ne voyez pas ces informations affichées avec l’option d’activation, vous n’êtes pas éligible pour la création automatique d’étiquettes de confidentialité et de stratégies. Vous pouvez essayer de vérifier ultérieurement si cet état a changé ou vous pouvez utiliser les informations de paramètres suivants pour créer manuellement les mêmes étiquettes et stratégies.
 
-3. Activez maintenant les étiquettes de confidentialité pour SharePoint et OneDrive. Cette étape supplémentaire est un prérequis pour utiliser des étiquettes de confidentialité dans Office pour le web et des stratégies d’étiquetage automatique pour SharePoint et OneDrive.
-
-    Sélectionnez l’onglet **Étiquettes**, puis **Activer maintenant.**
+3. Activez maintenant les étiquettes de confidentialité pour SharePoint et OneDrive. Cette étape est un prérequis pour utiliser des étiquettes de confidentialité dans Office pour le web et des stratégies d’étiquetage automatique pour SharePoint et OneDrive.
+   
+    Utilisez la bannière suivante en haut de l’onglet **Vue d’ensemble Information Protection**, puis sélectionnez **Activer maintenant**. Si vous ne voyez pas cette bannière, les étiquettes de confidentialité pour SharePoint et OneDrive ont déjà été activées pour votre locataire.
     
-    Pour obtenir des instructions complètes, consultez [Comment activer les étiquettes de confidentialité pour SharePoint et OneDrive (abonnement)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
+    ![Activez les étiquettes de confidentialité pour les bannières SharePoint et OneDrive.](../media/turn-on-mip-labels.png)
+    
+    Pour plus d’informations sur cette fonctionnalité, consultez [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="default-sensitivity-labels"></a>Étiquettes de sensibilité par défaut
 

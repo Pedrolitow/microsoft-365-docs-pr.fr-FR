@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121254"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943063"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens vers Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "61121254"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens sécurisés dans Outlook, voir Sécurité avancée [Outlook.com.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
@@ -302,15 +302,19 @@ Pour ajouter des entrées à la liste dans les stratégies de liens Coffre nouve
 **Remarques** :
 
 - Les clients suivants ne reconnaissent pas la liste Ne pas réécrire les URL **suivantes** dans Coffre de liens. Les utilisateurs inclus dans les polices peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse Coffre liens dans ces clients :
-  - Microsoft Teams
+  - Microsoft Teams
   - Office web apps
 
-  Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md)
+  Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md) Toutefois, notez que les URL ajoutées ne seront pas exclues de la réécriture de liens Coffre, car cela doit être effectué dans une stratégie Coffre liens.
 
 - Envisagez d’ajouter des URL internes couramment utilisées à la liste pour améliorer l’expérience utilisateur. Par exemple, si vous avez des services locaux, tels que Skype Entreprise ou SharePoint, vous pouvez ajouter ces URL pour les exclure de l’analyse.
 - Si vous n’avez pas encore réécrit les entrées d’URL suivantes dans vos **stratégies** de liens Coffre, n’oubliez pas de passer en revue les listes et d’ajouter des caractères génériques si nécessaire. Par exemple, votre liste a une entrée comme celle-ci et vous décidez ultérieurement `https://contoso.com/a` d’inclure des sous-chemins comme `https://contoso.com/a/b` . Au lieu d’ajouter une nouvelle entrée, ajoutez un caractère générique à l’entrée existante afin qu’elle devienne `https://contoso.com/a/*` .
 - Vous pouvez inclure jusqu’à trois caractères génériques `*` () par entrée d’URL. Les caractères génériques incluent explicitement des préfixes ou des sous-domaine. Par exemple, l’entrée n’est pas la même que , car elle permet aux utilisateurs de visiter des sous-domaines et des chemins d’accès `contoso.com` `*.contoso.com/*` dans le domaine `*.contoso.com/*` spécifié.
 - Si une URL utilise la redirection automatique pour HTTP vers HTTPS (par exemple, la redirection 302 vers ), et que vous essayez d’entrer les entrées HTTP et HTTPS pour la même URL dans la liste, vous remarquerez peut-être que la deuxième entrée d’URL remplace la première `http://www.contoso.com` entrée d’URL. `https://www.contoso.com` Ce comportement ne se produit pas si les versions HTTP et HTTPS de l’URL sont complètement séparées.
+- Ne spécifiez http:// ou https:// (c’est-à-dire, contoso.com) pour exclure les versions HTTP et HTTPS.
+- `*.contoso.com` ne **couvre** pas contoso.com, vous devez donc exclure les deux pour couvrir à la fois le domaine spécifié et tous les domaines enfants.
+- `contoso.com/*` couvre **uniquement** contoso.com, il n’est donc pas nécessaire d’exclure les deux et `contoso.com` , ce serait `contoso.com/*` `contoso.com/*` suffisant.
+- Pour exclure toutes les itérations d’un domaine, deux entrées d’exclusion sont nécessaires ; `contoso.com/*` et `*.contoso.com/*` . Ces deux éléments sont combinés pour exclure à la fois HTTP et HTTPS, le contoso.com de domaine principal et tous les domaines enfants, ainsi que toute partie de fin ou non (par exemple, contoso.com et contoso.com/vdir1 sont couverts).
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Syntaxe d’entrée pour la liste « Ne pas réécrire les URL suivantes »
 

@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a156b7232c20703c0f2eb320592a596e671d16f9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530954"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942727"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
@@ -189,7 +189,7 @@ Les règles de réduction de la surface d’attaque sont disponibles sur les app
 > Pour en savoir plus sur les règles de réduction de la surface d’attaque, consultez les ressources suivantes :
 > - [Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants](attack-surface-reduction.md)
 > - [Afficher la liste des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
-> - [Personnaliser les règles de réduction de la surface d’attaque](customize-attack-surface-reduction.md)
+> - [Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
 ### <a name="ransomware-mitigation"></a>Atténuation des ransomware
 
@@ -309,7 +309,7 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection Web,** spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Setting | Recommandation |
+   | Paramètre | Recommandation |
    |:---|:---|
    | **Activer la protection du réseau** | Définir sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour les Version antérieure de Microsoft Edge** | Définir sur **Oui**. Permet de protéger les utilisateurs contre les tentatives de hameçonnage et les logiciels malveillants. |

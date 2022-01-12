@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser un organigramme pour déterminer le résultat lorsqu’un élément possède plusieurs stratégies de rétention ou une étiquette de rétention et des stratégies de rétention
-ms.openlocfilehash: b99f54178adc05987249f05c0f2d1c00194f0db0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159765"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935824"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Organigramme pour déterminer quand un élément sera conservé ou supprimé définitivement
 
@@ -35,7 +35,7 @@ Ce flux logique est utilisé pour un élément lorsque l’une des conditions su
 - Plusieurs stratégies de rétention sont appliquées
 - Il existe une étiquette de rétention et une ou plusieurs stratégies de rétention
 
-Lorsqu’un élément est soumis à une conservation eDiscovery, il est toujours conservé avant le flux de décision pour les stratégies de rétention et une étiquette de rétention.
+Lorsqu’un élément est soumis à une conservation eDiscovery (ou aux anciennes technologies de conservation pour litige ou de conservation inaltérable), il est toujours conservé avant les flux de décision pour les stratégies de rétention et une étiquette de rétention.
 
 Si l’un des termes utilisés dans cet organigramme ne vous est pas familier, consultez [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
 

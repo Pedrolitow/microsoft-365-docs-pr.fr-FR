@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment appliquer un modèle publié à une bibliothèque SharePoint documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a761fc7d0474f8324d6bae9303fb97371672ab01
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531757"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993442"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -108,17 +108,25 @@ Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossie
 
 ### <a name="classification-date-field"></a>Champ Date de classification
 
-Lorsqu’un SharePoint Syntex de document ou un modèle de traitement de formulaire est appliqué à une bibliothèque de documents, le champ **Date** de classification est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traitées et classées par un modèle, ce champ est mis à jour avec un horodat de fin. 
+Lorsqu’SharePoint Syntex modèle de compréhension de document (ou un modèle de traitement de formulaire) est appliqué à une bibliothèque de documents, le champ **Date** de classification est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traitées et classées par un modèle, ce champ est mis à jour avec un horodat de fin. 
 
    ![Capture d’écran d’une bibliothèque de documents affichant la colonne Date de classification.](../media/content-understanding/class-date-column.png) 
 
-Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate après qu’un modèle de compréhension du contenu Syntex a terminé le traitement d’un fichier ou d’un dossier et mis à jour le champ **Date** de classification.
+Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate après qu’un modèle a terminé le traitement du contenu d’un fichier ou d’un dossier et a mis à jour le champ **Date** de classification.
 
    ![Flow déclencheur.](../media/content-understanding/trigger.png)
 
-**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension du contenu, il peut être utilisé pour démarrer un autre flux de travail à l’aide des informations extraites du fichier ou du dossier.
+**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension du contenu, il peut être utilisé pour démarrer un flux à l’aide des informations extraites du fichier ou du dossier.
 
+Par exemple, lorsqu’un modèle est marqué avec la date de **classification,** vous pouvez utiliser l’envoi d’un courrier électronique après que **SharePoint Syntex a** traitée un flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traitée et classée par un modèle dans la bibliothèque de documents SharePoint.
 
+Pour exécuter le flux :
+
+1. Sélectionnez un fichier, puis **sélectionnez**  >  **Intégrer Power Automate**  >  **créer un flux.**
+
+2. On the **Create a flow** panel, select Send an email after SharePoint Syntex processes a **file**.
+
+    ![Capture d’écran montrant l’option Créer un panneau de flux et le flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
 
 ## <a name="see-also"></a>Voir aussi
 

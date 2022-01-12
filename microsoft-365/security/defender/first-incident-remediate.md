@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 894cd4a13ed7ff3253ea7badcd19a1649c03105b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b58e2ddd2b4282bd3abcd36147db89970e21fb19
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212136"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943291"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -44,11 +44,11 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 
 - **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud du service Microsoft Defender pour l’identité afin que Microsoft Defender pour l’identité puisse continuer à surveiller l’appareil. 
 - **Restreindre l’exécution** de l’application : pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée, qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
-- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit ou non la solution antivirus active. Si un autre produit fournisseur antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
+- **Exécuter une analyse antivirus** : une analyse Antivirus Microsoft Defender peut s’exécuter avec d’autres solutions antivirus, que l’Antivirus Defender soit ou non la solution antivirus active. Si un autre produit fournisseur d’antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif.
 - **Lancer une enquête automatisée** : vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil. Pendant l’exécution d’un examen, toute autre alerte générée à partir de l’appareil est ajoutée à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 - **Lancer une réponse en direct** : la réponse en direct est une fonctionnalité qui vous permet d’accéder instantanément à un appareil à l’aide d’une connexion Shell distante. Cela vous permet d’approfondir votre travail d’investigation et de prendre des mesures de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel. La réponse dynamique est conçue pour améliorer les enquêtes en vous permettant de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 - **Collecter un package d’examen** : dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un package d’enquête à partir d’un appareil. En collectant le package d’examen, vous pouvez identifier l’état actuel de l’appareil et mieux comprendre les outils et techniques utilisés par l’attaquant. 
-- Consultez un expert en menaces (disponible dans Actions sur les appareils et les fichiers) : vous pouvez consulter un **expert** microsoft en matière de menaces pour obtenir plus d’informations sur les appareils potentiellement compromis ou ceux qui sont déjà compromis. Les experts microsoft en matière de menaces peuvent être impliqués directement à partir du Centre de sécurité Microsoft Defender pour obtenir une réponse précise et opportune. 
+- Consultez un expert en menaces (disponible dans Actions sur les appareils et les fichiers) : vous pouvez consulter un **expert** microsoft en matière de menaces pour obtenir plus d’informations sur les appareils potentiellement compromis ou ceux qui sont déjà compromis. Les experts microsoft en matière de menaces peuvent être impliqués directement à partir Microsoft 365 Defender pour obtenir une réponse précise et rapide. 
 
 ## <a name="actions-on-files"></a>Actions sur les fichiers
 
@@ -64,20 +64,20 @@ En continuant l’exemple dans Détecter, trier et analyser les [incidents,](fir
 3. Vérifier que le fichier malveillant a été mis en quarantaine à partir SharePoint
 4. Vérifier les points de terminaison affectés par les programmes malveillants
 5. Reconstruire des systèmes
-6. Recherchez des alertes Microsoft Cloud App Security similaires pour d’autres utilisateurs
+6. Recherchez des alertes Microsoft Defender pour les applications cloud similaires pour d’autres utilisateurs
 7. Créer un indicateur personnalisé dans Microsoft Defender pour le point de terminaison pour bloquer une adresse IP tor
-8. Créez une action de gouvernance dans Microsoft Cloud App Security pour ce type d’alerte, comme ceux illustrés dans l’image suivante :
+8. Créez une action de gouvernance dans Microsoft Defender pour les applications cloud pour ce type d’alerte, comme celui illustré dans l’image suivante :
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Exemple d’actions de gouvernance dans le portail Microsoft Cloud App Security web."::: 
- 
-La plupart des actions de correction peuvent être appliquées et suivis dans Microsoft 365 Defender. 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Exemple d’actions de gouvernance dans le portail Microsoft Defender pour les applications cloud.":::
+
+La plupart des actions de correction peuvent être appliquées et suivis dans Microsoft 365 Defender.
 
 ## <a name="using-playbooks"></a>Utilisation de playbooks
 
 En outre, des corrections automatisées peuvent être créées à l’aide de manuels. Actuellement, Microsoft dispose [de modèles Playbook GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) qui fournissent des manuels pour les scénarios suivants :
 
 - Supprimer le partage de fichiers sensibles après avoir demandé la validation de l’utilisateur
-- Alertes de pays de tri automatique rares
+- Alertes de pays peu fréquentes de tri automatique
 - Demander une action du responsable avant de désactiver un compte
 - Désactiver les règles de boîte de réception malveillantes
 
@@ -85,7 +85,7 @@ Les playbooks utilisent Power Automate créer des flux d’automatisation de pro
 
 Voici un exemple.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple de flux d Power Automate processus automatisé personnalisé."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Exemple d’un flux Power Automate processus automatisé personnalisé."::: 
  
 Les playbooks peuvent également être créés lors de la révision [post-incident](first-incident-post.md) pour créer des actions de correction à partir d’incidents afin d’accélérer les actions de correction. 
 

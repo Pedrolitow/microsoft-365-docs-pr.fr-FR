@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 68ac9febd12faa9d9ee70d97f293db80494f48f5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586590"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936581"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -74,8 +74,10 @@ Une fois qu'une politique de rétention est configurée pour les messages de con
 
 Les messages restent dans le dossier SubstrateHolds pendant au moins 1 jour. Ensuite, s’ils peuvent être supprimés, le travail du minuteur les supprime définitivement lors de sa prochaine exécution.
 
-> [!NOTE]
-> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence), la suppression définitive est toujours suspendue si le même élément doit être retenu à cause d’une autre stratégie de rétention ou qu’il est bloqué pour des raisons juridiques ou d’enquête.
+> [!IMPORTANT]
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence) et étant donné que les messages de conversation et de canal Teams sont stockés dans les boîtes aux lettres Exchange Online, la suppression définitive du dossier SubstrateHolds est toujours suspendue si la boîte aux lettres est affectée par une autre stratégie de rétention (y compris les stratégies appliquées à l’emplacement Exchange), la conservation pour litige, la conservation différée ou si une conservation eDiscovery est appliquée à la boîte aux lettres pour des raisons juridiques ou d’investigation.
+>
+> Bien que la boîte aux lettres soit incluse dans une conservation applicable, les messages de conversation et de canal Teams qui ont été supprimés ne seront plus visibles dans l’application Teams, mais continueront à être détectables avec eDiscovery.
 
 Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, les chemins que prend le contenu dépendent du fait que la politique de rétention doit conserver puis supprimer, conserver seulement ou supprimer seulement.
 

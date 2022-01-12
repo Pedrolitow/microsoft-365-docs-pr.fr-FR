@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: fabe83372822f401fdf8ddd1330bc974dc710fd2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787129"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942967"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
@@ -46,13 +46,31 @@ Pour plus d’informations sur les licences, consultez [instructions relatives a
 
 ### <a name="permissions"></a>Autorisations
 
-
 Les données du scanneur local de protection contre la perte de données peuvent être affichées dans [l’Explorateur d’activités](data-classification-activity-explorer.md). Il existe quatre rôles qui accordent l’autorisation à l’Explorateur d’activités, le compte que vous utilisez pour accéder aux données doit être membre de l’un d’eux.
 
 - Administrateur général
 - Administrateur de conformité
 - Administrateur de sécurité
 - Administrateur de conformité des données
+
+#### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
+
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
+
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
+
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Conditions préalables pour un scanneur local de protection contre la perte de données
 

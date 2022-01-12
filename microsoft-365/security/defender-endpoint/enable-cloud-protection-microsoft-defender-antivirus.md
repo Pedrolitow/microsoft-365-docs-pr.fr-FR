@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/18/2021
+ms.date: 01/10/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 210d2e4ff5864607a39297f08c505c491b8580b1
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: f4b3ef5cb8e923e3bd522c80d78e64c7be8b79de
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597578"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941179"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
@@ -137,11 +137,9 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 
 1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant le menu Démarrer **Sécurité Windows**.
 
-2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette **paramètres** de protection contre & virus :
+2. Sélectionnez la vignette protection contre **&** virus (ou l’icône de bouclier dans la barre de menus de gauche), puis sous Paramètres de protection contre les virus & contre les **menaces,** sélectionnez Gérer les **paramètres.**
 
-    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran des paramètres de protection contre & virus":::
-
-3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont **activés.**
+3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont tous deux **activés.**
 
    > [!NOTE]
    > Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.

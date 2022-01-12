@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acba50ec85e0d8d2f61a51aa902a26e5bcbed6f9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 245a9aa11bcaf10ba6f3b8fe0fe429267a355560
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530799"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941743"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OSPlatform` | `string` | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
 | `OSBuild` | `string` | Version de build du système d’exploitation en cours d’exécution sur l’ordinateur |
 | `IsAzureADJoined` | `boolean` | Indicateur booléen pour savoir si l’ordinateur est joint au Azure Active Directory |
-| `AadObjectId` | `string` | Identificateur unique de l’appareil dans Azure AD |
+| `AadDeviceId` | `string` | Identificateur unique de l’appareil dans Azure AD |
 | `LoggedOnUsers` | `string` | Liste de tous les utilisateurs connectés à l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | `string` | Balise d’ordinateur ajoutée via le Registre |
 | `OSVersion` | `string` | Version du système d’exploitation s’exécutant sur la machine |
@@ -59,9 +59,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |`AdditionalFields` | `string` | Informations supplémentaires sur l’événement au format de tableau JSON |
 |`DeviceCategory` | `string` | Classification plus large qui groupe certains types d’appareils sous les catégories suivantes : Point de terminaison, Périphérique réseau, IoT, Inconnu |
 |`DeviceType` | `string` | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que l’appareil réseau, la station de travail, le serveur, l’appareil mobile, la console de jeu ou l’imprimante |
-|`DeviceSubType` | `string` | Modificateur supplémentaire pour certains types d’appareils, par exemple, un appareil mobile peut être une tablette ou un smartphone |
-|`Model` | `string` | Nom du modèle ou numéro du produit du fournisseur ou du fabricant |
-|`Vendor` | `string` | Nom du fournisseur ou du fabricant du produit |
+|`DeviceSubType` | `string` | Modificateur supplémentaire pour certains types d’appareils, par exemple, un appareil mobile peut être une tablette ou un smartphone ; disponible uniquement si la découverte d’appareils trouve suffisamment d’informations sur cet attribut |
+|`Model` | `string` | Nom du modèle ou numéro du produit du fournisseur ou du fabricant, disponible uniquement si la découverte d’appareils trouve suffisamment d’informations sur cet attribut |
+|`Vendor` | `string` | Nom du fabricant ou du fournisseur du produit, disponible uniquement si la découverte d’appareils trouve suffisamment d’informations sur cet attribut |
 |`OSDistribution` | `string` | Distribution de la plateforme du système d’exploitation, telle que Ubuntu ou RedHat pour les plateformes Linux |
 |`OSVersionInfo` | `string` | Informations supplémentaires sur la version du système d’exploitation, telles que le nom populaire, le nom de code ou le numéro de version |
 |`MergedDeviceIds` | `string` | ID d’appareil précédents qui ont été affectés au même appareil |

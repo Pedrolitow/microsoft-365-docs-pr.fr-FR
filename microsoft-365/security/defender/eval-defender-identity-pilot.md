@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1679d69675a219c1f8cda3578d5cfe020b81026f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be297e48cd4d5569b295215ce497ef913f4aa8d7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196740"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941551"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -38,7 +36,7 @@ Cet article est [l’étape 3 sur 3 dans](eval-defender-identity-overview.md) le
 
 Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant les services de domaine Active Directory (AD DS) et les services AD FS (Active Directory Federated Services).
 
-![Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
+![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 Le tableau suivant décrit les étapes de l’illustration.
 
@@ -49,11 +47,11 @@ Le tableau suivant décrit les étapes de l’illustration.
 
 Microsoft fournit des recommandations d’évaluation de la sécurité pour les clients qui utilisent les services Microsoft Cloud. Le [critère de sécurité Azure](/security/benchmark/azure/overview) (ASB) fournit des recommandations et des meilleures pratiques normatives pour vous aider à améliorer la sécurité des charges de travail, des données et des services sur Azure.
 
-Ces recommandations de référence incluent la ligne [de base de sécurité Azure pour Microsoft Defender pour l’identité.](/security/benchmark/azure/baselines/defender-for-identity-security-baseline) La mise en œuvre de ces recommandations peut prendre un certain temps pour planifier et implémenter. Bien qu’elles augmentent grandement la sécurité de votre environnement d’identité, elles ne doivent pas vous empêcher de continuer à évaluer et à implémenter Microsoft Defender pour l’identité. Ceux-ci sont fournis ici pour votre sensibilisation.
+Ces recommandations de référence incluent la ligne [de base de sécurité Azure pour Microsoft Defender pour l’identité.](/security/benchmark/azure/baselines/defender-for-identity-security-baseline) La mise en œuvre de ces recommandations peut prendre un certain temps à planifier et à implémenter. Bien qu’elles augmentent grandement la sécurité de votre environnement d’identité, elles ne doivent pas vous empêcher de continuer à évaluer et à implémenter Microsoft Defender pour l’identité. Ceux-ci sont fournis ici pour votre sensibilisation.
 
 ## <a name="step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types"></a>Étape 2. Tester les fonctionnalités : parcourir des didacticiels pour identifier et corriger différents types d’attaques
 
-La documentation de Microsoft Defender pour l’identité comprend une série de didacticiels qui guident le processus d’identification et de correction de différents types d’attaques.
+La documentation de Microsoft Defender pour l’identité inclut une série de didacticiels qui guident le processus d’identification et de correction de différents types d’attaques.
 
 Essayez les didacticiels Defender pour l’identité :
 - [Alertes de reconnaissance](/defender-for-identity/reconnaissance-alerts)

@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 212d6464fa471e848eb83d06004bdf2796dc0a64
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217637"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941923"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -44,7 +44,7 @@ Une fois le classeur créé, créez un dossier de fichiers à l’intérieur du 
 mkdir mdatp/files
 ```
 
-Transférez le fichier zip d’intégration Linux Server qui peut être téléchargé à partir du portail Centre de sécurité Microsoft Defender vers ce nouveau dossier de fichiers.
+Transférez le fichier zip d’intégration Linux Server qui peut être téléchargé à partir du portail Microsoft 365 Defender vers ce nouveau dossier de fichiers.
 
 Sur la station de travail Chef, accédez au dossier mdatp/recipes. Ce dossier est créé lors de la création du classeur. Utilisez votre éditeur de texte préféré (comme vi ou nano) pour ajouter les instructions suivantes à la fin du fichier default.rb :
 

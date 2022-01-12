@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 161cb29c99ac442805685417195fe1dfd07fa4a2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560395"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941755"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Opportunités de partenariat avec un fournisseur de services de sécurité gérés
 
@@ -42,7 +42,7 @@ Pour répondre à cette demande, les fournisseurs de services de sécurité gér
 
 Defender pour le point de terminaison ajoute des opportunités de partenariat pour ce scénario et permet aux MSSP d’agir comme suit :
 
-- Accéder au portail Centre de sécurité Microsoft Defender client MSSP
+- Accéder au portail de Microsoft 365 Defender du client MSSP
 - Obtenir des notifications par courrier électronique et 
 - Récupérer des alertes via les outils de gestion des événements et des informations de sécurité (SIEM)
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: e07279a2de421985b0ba6f97d2b6ad843d2ba9fa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645949"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874027"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -65,7 +65,17 @@ Par défaut, les administrateurs généraux de votre client ont accès à ce cen
 
 Au lieu d'utiliser les rôles par défaut, vous pouvez créer un groupe de rôles, puis ajouter les rôles **Administrateur des étiquettes de confidentialité** ou **Configuration d'organisation** à ce groupe. Pour un rôle en lecture seule, utilisez **Lecteur d’étiquettes de confidentialité**. 
 
-Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
+> [!NOTE]
+> Désormais en préversion, vous pouvez utiliser les groupes de rôles suivants :
+> - **Protection des informations**
+> - **Administrateurs Information Protection**
+> - **Analystes Information Protection**
+> - **Enquêteurs Information Protection**
+> - **Lecteurs Information Protection**
+>
+> Pour obtenir une explication de chacun d’eux et des nouveaux rôles qu’ils contiennent, sélectionnez un groupe de rôles dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> > **Autorisations et rôles** > **Centre de conformité** > **Rôles**, puis passez en revue la description dans le volet de menu volant. Vous pouvez également consulter [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+
+Pour obtenir des instructions pour ajouter des utilisateurs au groupe de rôles, rôles par défaut ou créer vos propres groupes de rôles, consultez [Autorisations dans le Centre de conformité Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
 Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services. Si d’autres autorisations sont nécessaires pour des configurations spécifiques liées aux étiquettes de confidentialité, celles-ci sont répertoriées dans les instructions de documentation qui leur sont propres.
 

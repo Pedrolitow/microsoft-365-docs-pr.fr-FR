@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4cfeeac136026d50d96dab71622df0b3622fbb3a
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: d43df547d3da290bc5a92475f3c13d799cad7a06
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241139"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941057"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -259,7 +259,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | AlertType | Type de l’alerte est *Personnalisé*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. À mesure que l’état de l’alerte change, un nouveau journal avec le même ID d’alerte est généré. Ce AlertID peut être utilisé pour corréler les mises à jour d’une alerte. |
 | Catégorie | La catégorie de l’alerte *est InsiderRiskManagement*. Cette catégorie peut être utilisée pour distinguer ces alertes des autres alertes de sécurité & conformité. |
-| Commentaires | Commentaires par défaut pour l’alerte. Les valeurs *sont Nouvelle* alerte (consignée lors de la création d’une alerte) et Alerte mise à jour *(consignée* lorsqu’une alerte est mise à jour). Utilisez alertID pour corréler les mises à jour d’une alerte. |
+| Comments | Commentaires par défaut pour l’alerte. Les valeurs *sont Nouvelle* alerte (consignée lors de la création d’une alerte) et Alerte mise à jour *(consignée* lorsqu’une alerte est mise à jour). Utilisez alertID pour corréler les mises à jour d’une alerte. |
 | Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal et la date et l’heure (UTC) à laquelle l’utilisateur a été déclenché dans une stratégie. |
 | Nom | Nom de la stratégie de gestion des risques internes qui a généré l’alerte. |
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
@@ -518,7 +518,7 @@ Selon le nombre d’utilisateurs affectés à des groupes de rôles de gestion d
 L’analyse des risques internes vous permet d’effectuer une évaluation des risques internes potentiels au sein de votre organisation sans aucune configuration de stratégie des risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Les analyses d’analyse offrent les avantages suivants pour votre organisation :
 
 - Facile à configurer : pour commencer à utiliser les analyses d’analyse, vous pouvez sélectionner Exécuter l’analyse lorsque vous y êtes invité par la recommandation d’analyse ou passer à l’analyse des **paramètres** de risque insider et activer  >   l’analyse.
-- Exigences de confidentialité minimales : les résultats de l’analyse et les informations sont renvoyés en tant qu’activité utilisateur rendue anonyme, les noms d’utilisateur individuels ne sont pas identifiables par les réviseurs.
+- Confidentialité par conception : les résultats de l’analyse et les informations sont renvoyés en tant qu’activité utilisateur agrégée et rendue anonyme, les noms d’utilisateur individuels ne sont pas identifiables par les réviseurs.
 - Comprenez les risques potentiels par le biais d’informations consolidées : les résultats de l’analyse peuvent vous aider à identifier rapidement les zones de risque potentielles pour vos utilisateurs et la stratégie la mieux à même d’atténuer ces risques.
 
 Regardez la vidéo [Analyse de](https://www.youtube.com/watch?v=5c0P5MCXNXk) la gestion des risques internes pour comprendre comment l’analyse peut vous aider à accélérer l’identification des risques internes potentiels et à prendre rapidement des mesures.

@@ -276,9 +276,7 @@
 ###### [Phase 3 du déploiement des règles ASR : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [Phase 4 de déploiement des règles ASR : opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [Référence des règles ASR](attack-surface-reduction-rules-reference.md)
-##### [Évaluer les règles ASR](evaluate-attack-surface-reduction.md)
-##### [Activer les règles ASR](enable-attack-surface-reduction.md)
-##### [Personnaliser les règles ASR](customize-attack-surface-reduction.md)
+##### [Activer les méthodes alternatives de règles ASR](enable-attack-surface-reduction.md)
 #### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 
 ### Protection de nouvelle génération

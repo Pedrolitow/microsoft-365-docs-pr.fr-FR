@@ -14,21 +14,18 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c848a62793e6397f4cfd489c68d156a194b7911d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: bdce44bc54c71d03e8064fa10187c06237d38b5b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421113"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941419"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -37,7 +34,7 @@ ms.locfileid: "61421113"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Résumé** Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Microsoft 365.
 
@@ -62,11 +59,9 @@ Les utilisateurs peuvent remarquer et signaler une activité inhabituelle dans l
 - La fonctionnalité de transfert du courrier a été ajoutée récemment.
 - Une signature inhabituelle a été récemment ajoutée, par exemple, une signature apocryphe prétendant être une banque ou faisant référence à une ordonnance médicale.
 
-Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un examen approfondi. Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et le portail Azure proposent des outils pour vous aider à enquêter sur l'activité d'un compte d'utilisateur que vous pensez être compromis.
+Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un examen approfondi. Le Portail Microsoft 365 Defender et le portail Azure proposent des outils pour vous aider à enquêter sur l'activité d'un compte d'utilisateur que vous pensez être compromis.
 
-- **journaux d’audit unifiés dans le portail Microsoft 365 Defender**: passez en revue toutes les activités du compte suspect en filtrant les résultats de la plage de dates comprise entre immédiatement avant l’activité suspecte et la date actuelle. Ne filtrez pas sur les activités pendant la recherche.
-
-- **Journaux d'audit administrateur dans le CAE** : dans Exchange Online, vous pouvez utiliser le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC)</a> pour rechercher et afficher des entrées dans le journal d'audit administrateur. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur les cmdlets Exchange Online PowerShell, effectuées par les administrateurs, et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
+- **Journaux d’audit unifiés dans le portail Microsoft 365 Defender**: passez en revue toutes les activités du compte suspect en filtrant les résultats de la plage de dates comprise entre immédiatement avant l’activité suspecte et la date actuelle. Ne pas filtrer sur les activités au cours de la recherche. Pour plus d’informations, consultez [Rechercher dans le journal d’audit dans le centre de conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 - **Utilisez les journaux de connexion Azure AD et autres rapports de risque du portail Azure AD** : examinez les valeurs de ces colonnes :
   - Examen des adresses IP
@@ -102,9 +97,9 @@ Suivez les procédures décrites dans [Réinitialiser un mot de passe d’entrep
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 : Supprimer des adresses de transfert de courrier suspectes
 
-1. Accédez au Centre d'administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Dans le Centre d’administration Microsoft 365 sur <https://admin.microsoft.com>, accédez à **Utilisateurs**\>**Utilisateurs actifs**. Pour aller directement à la page **Utilisateurs actifs,** utilisez <https://admin.microsoft.com/Adminportal/Home#/users> .
 
-2. Accédez à **Utilisateurs**\>**utilisateurs actifs**. Recherchez le compte d’utilisateur en question, puis sélectionnez l’utilisateur (ligne) sans cocher la case.
+2. Dans la page **Utilisateurs actifs**, recherchez le compte d’utilisateur en question, puis sélectionnez l’utilisateur (ligne) sans cocher la case.
 
 3. Dans le menu volant de détails qui s’affiche, sélectionnez l’onglet **Courrier**.
 
@@ -131,16 +126,16 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 > [!IMPORTANT]
 > Vous pouvez bloquer le compte soupçonné d'avoir été compromis et l’empêcher de se connecter jusqu'à ce qu’à votre avis, il est sûr de réactiver l’accès.
 
-1. Accédez au centre d'administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> et accédez à **Utilisateurs** \> **Utilisateurs actifs**.
+1. Dans le Centre d’administration Microsoft 365 sur <https://admin.microsoft.com>, accédez à **Utilisateurs**\>**Utilisateurs actifs**. Pour aller directement à la page **Utilisateurs actifs,** utilisez <https://admin.microsoft.com/Adminportal/Home#/users> .
 
-2. Recherchez et sélectionnez le compte d’utilisateur, cliquez sur l’![icône Plus](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Modifier l’état de connexion**.
+2. Dans la page **Utilisateurs actifs** , recherchez et sélectionnez le compte d’utilisateur, cliquez sur ![Icône Plus.](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Modifier l’état de connexion**.
 
 3. Dans le volet **Bloquer la connexion** qui s’affiche, sélectionnez **Bloquer la connexion de cet utilisateur**, puis cliquez sur **Enregistrer les modifications**.
 
-4. Ouvrez le centre d'administration Exchange (EAC) et accédez à **Boîtes** aux \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">**lettres des destinataires**</a>.
+4. Dans le Centre d’administration Exchange (CAE) à <https://admin.exchange.microsoft.com>, accédez à **Destinataires**\>**Boîtes aux lettres**. Pour accéder directement à la page **Boîtes aux lettres**, utilisez <https://admin.exchange.microsoft.com/#/mailboxes>.
 
-5. Chercher and sélectionner l’utilisateur. Dans le menu volant des détails de boîte aux lettres qui s’ouvre, procédez comme suit:
-   - Dans la section **Applications de messagerie**, bloquez tous les paramètres disponibles en déplaçant le bouton bascule vers la droite ![Désactivez](../../media/scc-toggle-on.png):
+5. Dans la page **Boîtes aux lettres**, recherchez et sélectionnez l’utilisateur. Dans le menu volant des détails de boîte aux lettres qui s’ouvre, procédez comme suit :
+   - Dans la section **Applications de messagerie**, sélectionnez **Gérer les paramètres des applications de messagerie**. Dans le menu volant **Gérer les paramètres des applications de messagerie** qui s’affiche, bloquez tous les paramètres disponibles en déplaçant le bouton bascule vers la droite ![Désactiver.](../../media/scc-toggle-on.png):
      - **Outlook sur le web**
      - **Bureau Outlook (MAPI)**
      - **Services Web Exchange**
@@ -155,13 +150,13 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 > [!NOTE]
 > L’appartenance au groupe de rôles d’administration peut être restaurée une fois que le compte a été sécurisé.
 
-1. Accédez au centre d'administration Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> avec un compte d'administrateur global et procédez comme suit :
-   1. Accédez à **Utilisateurs** \> **Utilisateurs actifs**.
-   2. Recherchez et sélectionnez le compte d’utilisateur, cliquez sur l’![icône Plus](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Gérer les rôles**.
+1. Dans le Centre d’administration Microsoft 365 à <https://admin.microsoft.com>, procédez comme suit :
+   1. Accédez à **Utilisateurs** \> **Utilisateurs actifs**. Pour aller directement à la page **Utilisateurs actifs,** utilisez <https://admin.microsoft.com/Adminportal/Home#/users> .
+   2. Dans la page **Utilisateurs actifs**, recherchez et sélectionnez le compte d’utilisateur, cliquez sur ![Icône Plus.](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Gérer les rôles**.
    3. Supprimez les rôles d’administrateur attribués au compte. Lorsque vous avez terminé, cliquez sur **Enregistrer les modifications**.
 
-2. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portail Microsoft 365 Defender</a> et procédez comme suit :
-   1. Accédez à **Autorisations et rôles** \> **E-mail et rôles de collaboration** \> **Rôles**.
+2. dans le portail Microsoft 365 Defender à <https://security.microsoft.com>, procédez comme suit :
+   1. Accédez à **Autorisations et rôles** \> **E-mail et rôles de collaboration** \> **Rôles**. Pour aller directement à la page **Autorisations,** utilisez <https://security.microsoft.com/emailandcollabpermissions> .
    2. Dans la page **Autorisations** , sélectionnez chaque groupe de rôles dans la liste et recherchez le compte d’utilisateur dans la section **Membres** du menu volant des détails qui s’affiche. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
       1. Dans la section **Membres**, cliquez sur **Modifier**.
       2. Dans le menu volant **Modification des membres choisis** qui apparaît, cliquez sur **Modifier**.
@@ -170,8 +165,8 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 
          Lorsque vous avez terminé, cliquez sur **Terminé**, **Enregistrer**, puis **Fermer**.
 
-3. Ouvrez le CAE et procédez comme suit :
-   1. Sélectionnez **Rôles** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank">**Rôles d'administrateur**</a>.
+3. Dans le Centre d’administration Exchange à <https://admin.exchange.microsoft.com/>, procédez comme suit :
+   1. Sélectionnez **Rôles** \> **Rôles d’administrateur**. Pour accéder directement à la page **Rôles d’administrateur**, utilisez <https://admin.exchange.microsoft.com/#/adminRoles>.
    2. Dans la page **Rôles d’administrateur**, sélectionnez manuellement chaque groupe de rôles, puis, dans le volet d’informations, sélectionnez l’onglet **Affecté** pour vérifier les comptes d’utilisateur. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
       1. Sélectionnez le compte d’utilisateur.
       2. Cliquez sur l’ ![Icône Supprimer.](../../media/m365-cc-sc-delete-icon.png).

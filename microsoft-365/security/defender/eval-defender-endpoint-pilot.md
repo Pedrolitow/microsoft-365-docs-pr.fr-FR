@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 75abd493e0ec2b80e4ff454ddec39f78169d01d9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7008b78ae5b01925e97143841b453a2c5c573fcc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110414"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941069"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 
@@ -83,7 +81,7 @@ Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [
 > [!NOTE]
 > Les fichiers ou les scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 [Évaluer Microsoft Defender pour les applications cloud](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour le point de terminaison](eval-defender-endpoint-overview.md)

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 53212ec1d593f90aad7a804486b82cdf729c1643
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52d564f631c0129dea20608aac20e77141fb0be0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217451"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943375"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,7 +46,7 @@ Si vous êtes un client Defender for Endpoint, vous devez demander Spécialistes
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées
 
-Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer via le Centre de sécurité Microsoft Defender.
+Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer via Microsoft 365 Defender portail.
 
 1. Dans le volet de navigation, Paramètres > général > fonctionnalités avancées > Spécialistes des menaces Microsoft - Notifications d’attaque **ciblées.**
 
@@ -94,7 +94,7 @@ Il est disponible en tant que service d’abonnement. Si vous êtes déjà un cl
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulter un expert microsoft en matière de menaces sur les activités de cybersécurité suspectes dans votre organisation
 
-Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft qui peuvent être impliqués directement à partir du Centre de sécurité Microsoft Defender pour obtenir une réponse précise et rapide. Les experts fournissent des informations pour mieux comprendre les menaces complexes, les notifications d’attaque ciblées que vous recevez, ou si vous avez besoin d’informations supplémentaires sur les alertes, un appareil potentiellement compromis ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
+Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft qui peuvent être impliqués directement à partir du portail Microsoft 365 Defender pour obtenir une réponse précise et opportune. Les experts fournissent des informations pour mieux comprendre les menaces complexes, les notifications d’attaque ciblées que vous recevez, ou si vous avez besoin d’informations supplémentaires sur les alertes, un appareil potentiellement compromis ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
 > [!NOTE]
 >

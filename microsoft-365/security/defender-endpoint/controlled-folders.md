@@ -17,18 +17,18 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 45446cf3d3346df10620f5ef6020949e401e7d75
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2fa55e3bdf0ca9c06093e843e9dca4d8ed502128
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218489"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940553"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +58,7 @@ Les applications peuvent également être ajoutées manuellement à la liste de 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Pourquoi l’accès contrôlé aux dossiers est-il important ?
 
-L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware.](https://www.microsoft.com/wdsi/threats/ransomware) Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les informations et les coordonnées de l’entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques analysées par la fonctionnalité.
+L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware.](https://www.microsoft.com/wdsi/threats/ransomware) Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) avec les informations et les coordonnées de l’entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques analysées par la fonctionnalité.
 
 Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access-events-in-windows-event-viewer) système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers.](customize-controlled-folders.md#protect-additional-folders) Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
@@ -67,9 +67,9 @@ Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l�
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 
 - [Windows 10, version 1709 et](/windows/whats-new/whats-new-windows-10-version-1709) ultérieures
-- Windows 11
+- Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- Windows Server 2022
+- Windows Server 2022
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
 

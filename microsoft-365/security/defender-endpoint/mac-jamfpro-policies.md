@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: ae3745840d8160aa896accf97540dc79194326d3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530229"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941911"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -69,7 +69,7 @@ Vous devez suivre les étapes suivantes :
 
    ![Image du fichier WindowsDefenderATPOnboarding.](images/plist-onboarding-file.png)
 
-2. Dans le tableau de bord Pro Jamf, sélectionnez **Nouveau**.
+2. Connectez-vous à Jamf Pro, accédez aux **profils** de configuration des  >  **ordinateurs,** puis sélectionnez **Nouveau**.
 
     ![Image de la création d’un tableau de bord Pro Jamf.](images/jamf-pro-configure-profile.png)
 
@@ -83,7 +83,7 @@ Vous devez suivre les étapes suivantes :
    - Méthode de distribution : installer automatiquement
    - Niveau : niveau ordinateur
 
-4. In **Application & Custom Paramètres** select **Configure**.
+4.  Accédez à la page **Application & custom Paramètres** et sélectionnez **Télécharger**  >  **Ajouter.**
 
     ![Image de configuration de l’application et des paramètres personnalisés.](images/jamfpro-mac-profile.png)
 
@@ -209,7 +209,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - balises
+    - étiquettes
     - hideStatusMenuIcon
 
      Pour plus d’informations, [voir Liste des propriétés pour le profil de configuration complet JAMF.](mac-preferences.md#property-list-for-jamf-full-configuration-profile)
@@ -724,7 +724,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 ## <a name="step-9-configure-network-extension"></a>Étape 9 : Configurer l’extension réseau
 
-Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Centre de sécurité Microsoft Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
+Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
 Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouveaux.
 
@@ -751,6 +751,9 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
         Notez que **l’identificateur,** le filtre de **socket** et le **filtre de socket désignent** les valeurs exactes requises comme spécifié ci-dessus.
 
         ![Image du paramètre de configuration mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf prend en charge les paramètres de filtrage de contenu intégrés qui peuvent être définies directement via l’interface.
 
 3. Sélectionnez **l’onglet** Étendue.
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: aa4cda3d005d0433c56b77d30d24c789cdd70f2e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 84b7a63f61091a799978fd3d880666b81f5a5df4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218357"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942883"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -72,8 +72,8 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
 |DocIndex*|||Index de la famille. **-1 ou** **0 signifie** qu’il s’agit de la racine.|
 |Mots clés de document||Doc_keywords|Mots clés des métadonnées du document.|
-|Document modifié par||Doc_modified_by|Date de la dernière modification à partir des métadonnées du document.|
-|Révision de document|Doc_Version|Doc_Version|Révision à partir des métadonnées du document.|
+|Document modifié par||Doc_modified_by|L’utilisateur qui a modifié le document en dernier à partir des métadonnées du document.|
+|Révision du document|Doc_Version|Doc_Version|Révision à partir des métadonnées du document.|
 |Objet du document||Doc_subject|Objet des métadonnées du document.|
 |Modèle de document||Doc_template|Modèle à partir des métadonnées du document.|
 |DocLastSavedBy||Doc_last_saved_by|Nom de l’utilisateur qui a enregistré le document pour la dernière fois.|

@@ -16,17 +16,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 - intro-overview
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d6d237b489848870d58a8288ee787c3634072742
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645619"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873536"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -97,7 +96,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurer les stratégies de Microsoft Defender pour Office 365
 
-Avec Microsoft Defender pour Office 365, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> \> **E-mail & collaboration** \> **Stratégies et règles** \> **Stratégies contre les menaces**).
+Avec Microsoft Defender pour Office 365, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> sur **E-mail et collaboration**\>**Stratégies et règles**\>**Stratégies de menace**. Vous pouvez également accéder directement à la page **Stratégies de menace** à l’aide de <https://security.microsoft.com/threatpolicy>.
 
 Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -118,7 +117,7 @@ Les stratégies définies pour votre organisation déterminent le comportement e
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Afficher les rapports de Microsoft Defender pour Office 365
 
-Microsoft Defender pour Office 365 inclut des [rapports](view-reports-for-mdo.md) pour surveiller les performances de votre Defender pour Office 365. Vous pouvez accéder aux rapports dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender</a> en accédant aux **Rapports** \> **E-mail et collaboration** \> **Rapports d’e-mails et de collaboration** ou directement à <https://security.microsoft.com/securityreports>.
+Microsoft Defender pour Office 365 inclut des [rapports](view-reports-for-mdo.md) pour surveiller les performances de votre Defender pour Office 365. Vous pouvez accéder aux rapports dans le portail Microsoft 365 Defender à <https://security.microsoft.com> sur **Rapports**\>**E-mail et collaboration**\>**E-mail et rapports de collaboration**. Vous pouvez également accéder directement à la page **Rapports d’e-mail et de collaboration** à l’aide de <https://security.microsoft.com/securityreports>.
 
 Les rapports sont mis à jour en temps réel, ce qui vous fournit les informations les plus récentes. Ces rapports fournissent également des recommandations et vous informent contre les menaces imminentes. Les rapports prédéfinis incluent les données suivantes :
 
@@ -178,5 +177,5 @@ De nouvelles fonctionnalités sont ajoutées à Microsoft Defender pour Office 3
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 - [Enquêtes et réponses automatisées (AIR) dans Microsoft 365 Defender](../defender/m365d-autoir.md)

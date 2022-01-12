@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213492"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873488"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -48,7 +48,7 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |---|:---:|:---:|:---:|
 |**Stratégies anti-courrier indésirable**||||
 |En nombre|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Hameçonnage à haute fiabilité||||
@@ -72,7 +72,7 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour ouvrir la page Web de **quarantaine** directement, utilisez <https://security.microsoft.com/quarantine>.
+- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour accéder directement à la page de **mise en quarantaine**, utilisez <https://security.microsoft.com/quarantine>.
 
 - Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés dans les stratégies anti-courrier indésirable. Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -83,7 +83,8 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 > [!NOTE]
 > Votre capacité à afficher les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de mise en quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
-1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
+1. Dans le portail Microsoft 365 Defender à <https://security.microsoft.com>, accédez à **E-mail et collaboration**\>**Examiner**\>**Mise en quarantaine**. Pour accéder directement à la page de **mise en quarantaine**, utilisez <https://security.microsoft.com/quarantine>.
+
 2. Sur la page Web **Quarantaine**, vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour modifier les colonnes qui s'affichent. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 
    - **Heure de réception**<sup>\*</sup>

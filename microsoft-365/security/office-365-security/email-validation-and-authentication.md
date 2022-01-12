@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f358f6c20e6c4643a7a6aeb0ae3aae2513aad34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212031"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934032"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -87,7 +87,7 @@ Le fait de se fier uniquement aux enregistrements d'authentification de messager
 
 L’authentification composite peut résoudre ces limites en transférant les messages qui, autrement, échoueraient aux contrôles d'authentification de messagerie électronique.
 
-Par souci de simplicité, les exemples suivants se concentrent sur les résultats d’authentification de messagerie électronique. D’autres facteurs d’intelligence en aval peuvent identifier les messages qui franchissent l’authentification de messagerie électronique comme étant usurpés, ou les messages qui échouent à l'authentification de messagerie électronique comme étant légitimes.
+Par souci de simplicité, les exemples suivants se concentrent sur les résultats d’authentification de messagerie électronique. D’autres facteurs d’intelligence back-end peuvent identifier les messages qui passent l’authentification par e-mail comme usurpés, ou les messages qui échouent à l’authentification du courrier comme légitimes.
 
 Par exemple, le domaine fabrikam.com ne disposent pas d’enregistrements SPF, DKIM ou DMARC. Les messages en provenance des expéditeurs du domaine fabrikam.com peuvent échouer à l'authentification composite (notez la valeur `compauth` et la raison) :
 
