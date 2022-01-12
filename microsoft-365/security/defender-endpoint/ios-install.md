@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: fca46fa50c332d31ea18faf90e8372c1a9947b1f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436691"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935620"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -75,9 +75,84 @@ Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Centre d’administration 3.](images/ios-deploy-3.png)
 
+## <a name="complete-deployment-for-supervised-devices"></a>Déploiement complet pour les appareils supervisés
+
+Microsoft Defender pour le point de terminaison sur l’application iOS dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, étant donné les fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection Web **sans configuration d’un VPN local sur l’appareil.** Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégé contre le hameçonnage et d’autres attaques basées sur le web.
+
+Pour configurer la Protection Web avec des fonctionnalités anti-hameçonnage améliorées, vous devez déployer un profil personnalisé sur les appareils iOS supervisés. Suivez les étapes ci-dessous :
+
+- Télécharger le profil de config à partir de [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+- Accéder aux **profils**  ->  **de configuration iOS/iPadOS** Des appareils  ->    ->  **créent un profil**
+
+
+    > [!div class="mx-imgBorder"]
+    > ![Image de Microsoft Endpoint Manager Centre d’administration 7.](images/ios-deploy-7.png)
+
+
+    
+- Fournissez le nom du profil. Lorsque vous avez été invité à importer un fichier de profil de configuration, sélectionnez celui téléchargé à l’étape précédente.
+- Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Sélectionnez **Suivant**.
+- Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
+
+### <a name="configure-supervised-mode-via-intune"></a>Configurer le mode Supervisé via Intune
+
+Ensuite, configurez le mode supervisé pour l’application Defender for Endpoint via une stratégie de configuration d’application.
+
+   > [!NOTE]
+   > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour tous les appareils iOS gérés en tant que meilleure pratique.
+
+1. Connectez-vous au [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) et allez aux stratégies de configuration **des applications** \> **.** \>  Sélectionnez **Appareils gérés**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image de Microsoft Endpoint Manager Centre d’administration 4.](images/ios-deploy-4.png)
+
+1. Dans la page *Créer une stratégie de configuration d’application,* fournissez les informations suivantes :
+    - Nom de la stratégie
+    - Plateforme : sélectionner iOS/iPadOS
+    - Application ciblée : sélectionnez **Microsoft Defender pour le point de terminaison** dans la liste
+
+    > [!div class="mx-imgBorder"]
+    > ![Image de Microsoft Endpoint Manager Centre d’administration 5.](images/ios-deploy-5.png)
+
+1. Dans l’écran suivant, sélectionnez Utiliser **le concepteur de configuration** comme format. Spécifiez la propriété suivante :
+    - Clé de configuration : issupervised
+    - Type de valeur : Chaîne
+    - Valeur de configuration : {{issupervised}}
+
+    > [!div class="mx-imgBorder"]
+    > ![Image de Microsoft Endpoint Manager Centre d’administration 6.](images/ios-deploy-6.png)
+
+1. Sélectionnez **Suivant** pour ouvrir la page **Balises d’étendue**. Les balises d’étendue sont facultatives. Sélectionnez **Suivant** pour continuer.
+
+1. Dans la page **Affectations**, sélectionnez les groupes qui recevront ce profil. Pour ce scénario, il est préférable de cibler **tous les appareils.** Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
+
+   Lors du déploiement sur des groupes d’utilisateurs, un utilisateur doit se connecter à un appareil avant que la stratégie ne s’applique.
+
+   Cliquez sur **Suivant**.
+
+1. Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
+
+1. Ensuite, pour les fonctionnalités anti-hameçonnage améliorées, vous pouvez déployer un profil personnalisé sur les appareils iOS supervisés. Suivez les étapes ci-dessous :
+
+    - Télécharger le profil de config à partir de [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+    - Accéder aux **profils**  ->  **de configuration iOS/iPadOS** Des appareils  ->    ->  **créent un profil**
+
+    > [!div class="mx-imgBorder"]
+    > ![Image de Microsoft Endpoint Manager Centre d’administration 7.](images/ios-deploy-7.png)
+    
+    - Fournissez le nom du profil. Lorsque vous avez été invité à importer un fichier de profil de configuration, sélectionnez celui téléchargé à l’étape précédente.
+    - Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Sélectionnez **Suivant**.
+    - Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
+
+
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Intégration automatique du profil VPN (intégration simplifiée)
 
-Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+Pour les appareils non pris en compte, un VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+
+>[!NOTE]
+>Pour les appareils supervisés, un VPN n’est pas nécessaire pour la fonctionnalité de protection web et nécessite que les administrateurs configurer un profil de configuration sur les appareils supervisés. Pour configurer les appareils supervisés, suivez les étapes de la section Déploiement [complet des appareils supervisés.](#complete-deployment-for-supervised-devices)
+
+Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. 
 
 Cette étape simplifie le processus d’intégration en mettant en place le profil VPN. Pour une expérience d’intégration sans toucher ou sans écran, consultez la section suivante : [Intégration sans tactile.](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
 
@@ -100,7 +175,6 @@ Cette étape simplifie le processus d’intégration en mettant en place le prof
 1. Dans la section *Révision + Créer,* vérifiez que toutes les informations entrées sont correctes, puis sélectionnez **Créer.**
 
 ## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>Intégration zero-touch de Microsoft Defender pour point de terminaison (prévisualisation)
-
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -131,6 +205,9 @@ Une fois la configuration ci-dessus effectuée et synchronisée avec l’apparei
     - Une notification provisoire sera envoyée à l’appareil de l’utilisateur.
     - La protection web et d’autres fonctionnalités seront activées.
 
+   > [!NOTE]
+   > Pour les appareils supervisés, bien qu’un profil VPN ne soit pas requis, les administrateurs peuvent toujours configurer l’intégration zero-touch en configurant le profil VPN Defender for Endpoint via Intune. Le profil VPN sera déployé sur l’appareil, mais il sera uniquement présent sur l’appareil en tant que profil pass-through et peut être supprimé après l’intégration initiale.
+
 ## <a name="complete-onboarding-and-check-status"></a>Terminer l’intégration et vérifier l’état
 
 1. Une fois Defender pour le point de terminaison sur iOS installé sur l’appareil, vous verrez l’icône de l’application.
@@ -144,47 +221,6 @@ Une fois la configuration ci-dessus effectuée et synchronisée avec l’apparei
     > [!div class="mx-imgBorder"]
     > ![Capture d’écran d’une description de téléphone portable générée automatiquement.](images/device-inventory-screen.png)
 
-## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configurer Microsoft Defender pour le point de terminaison pour le mode Supervisé
-
-Microsoft Defender pour le point de terminaison sur l’application iOS dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, étant donné les fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Pour tirer parti de ces fonctionnalités, l’application Defender for Endpoint doit savoir si un appareil est en mode Supervisé.
-
-### <a name="configure-supervised-mode-via-intune"></a>Configurer le mode Supervisé via Intune
-
-Intune vous permet de configurer l’application Defender pour iOS via une stratégie de configuration d’application.
-
-   > [!NOTE]
-   > Cette stratégie de configuration d’application pour les appareils supervisés s’applique uniquement aux appareils gérés et doit être ciblée pour tous les appareils iOS gérés en tant que meilleure pratique.
-
-1. Connectez-vous au [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) et allez aux stratégies de configuration **des applications** \> **.** \>  Cliquez sur **Appareils gérés.**
-
-    > [!div class="mx-imgBorder"]
-    > ![Image de Microsoft Endpoint Manager Centre d’administration 4.](images/ios-deploy-4.png)
-
-1. Dans la page *Créer une stratégie de configuration d’application,* fournissez les informations suivantes :
-    - Nom de la stratégie
-    - Plateforme : sélectionner iOS/iPadOS
-    - Application ciblée : sélectionnez **Microsoft Defender pour le point de terminaison** dans la liste
-
-    > [!div class="mx-imgBorder"]
-    > ![Image de Microsoft Endpoint Manager Centre d’administration 5.](images/ios-deploy-5.png)
-
-1. Dans l’écran suivant, sélectionnez Utiliser **le concepteur de configuration** comme format. Spécifiez la propriété suivante :
-    - Clé de configuration : issupervised
-    - Type de valeur : Chaîne
-    - Valeur de configuration : {{issupervised}}
-
-    > [!div class="mx-imgBorder"]
-    > ![Image de Microsoft Endpoint Manager Centre d’administration 6.](images/ios-deploy-6.png)
-
-1. Cliquez **sur Suivant** pour ouvrir la page **Balises d’étendue.** Les balises d’étendue sont facultatives. Cliquez sur **Suivant** pour continuer.
-
-1. Dans la page **Affectations**, sélectionnez les groupes qui recevront ce profil. Pour ce scénario, il est préférable de cibler **tous les appareils.** Pour plus d’informations sur l’affectation de profils, consultez [Affecter des profils d’utilisateur et d’appareil](/mem/intune/configuration/device-profile-assign).
-
-   Lors du déploiement sur des groupes d’utilisateurs, un utilisateur doit se connecter à un appareil avant que la stratégie ne s’applique.
-
-   Cliquez sur **Suivant**.
-
-1. Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
