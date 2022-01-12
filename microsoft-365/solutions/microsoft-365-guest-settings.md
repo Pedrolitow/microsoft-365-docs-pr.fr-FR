@@ -19,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202344"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660109"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -79,7 +79,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **activé** pour tout scénario dans lequel des invités interagissent avec Groupes Microsoft 365 ou Teams.|
-|Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
+|Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Lorsque ce paramètre est **Désactivé**, ils ne peuvent pas. Ce paramètre doit être **Activé** pour tout scénario dans lequel des invités doivent être ajoutés à des groupes.|
 
 Ces paramètres se situent au niveau de l'organisation. Consultez la section [Créer des paramètres pour un groupe](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) spécifique pour savoir comment modifier ces paramètres au niveau du groupe à l'aide de PowerShell.
 
