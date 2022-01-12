@@ -17,17 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 4dc32ba44f97ef65a727c24409db6c96531daca6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 22831163863e64347029cb9e39b5e52046fd6b3f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421629"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932850"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloter Microsoft Defender pour Office 365
 
@@ -142,7 +140,7 @@ Le tableau ci-dessous fournit des références et des instructions supplémentai
 |Anti-usurpation|Protéger les utilisateurs contre les tentatives d’usurpation d’informations à l’aide de la veille contre l’usurpation d’informations et de l’usurpation d’informations.|[Configurer la veille contre l’usurpation d’Office 365](../office-365-security/learn-about-spoof-intelligence.md)|
 |Anti-courrier indésirable|Protéger les utilisateurs contre le courrier indésirable, y compris les actions à prendre si du courrier indésirable est détecté.|[Configurer des stratégies anti-courrier indésirable dans Defender pour Office 365](../office-365-security/configure-your-spam-filter-policies.md)|
 |Anti-hameçonnage|Protéger les utilisateurs contre les attaques par hameçonnage et configurer des conseils de sécurité sur les messages suspects|[Pour plus d’informations, voir Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](../office-365-security/configure-mdo-anti-phishing-policies.md)|
-|Pièces jointes sûres|Protéger les utilisateurs contre le contenu malveillant dans les pièces jointes et les fichiers de courrier électronique SharePoint, OneDrive et Teams.|[Configurer des stratégies de pièces jointes sécurisées dans Defender pour Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
+|Pièces jointes fiables|Protéger les utilisateurs contre le contenu malveillant dans les pièces jointes et les fichiers de courrier électronique SharePoint, OneDrive et Teams.|[Configurer des stratégies de pièces jointes sécurisées dans Defender pour Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
 |Liens sûrs|Protégez les utilisateurs contre l’ouverture et le partage de liens malveillants dans des messages électroniques ou Office applications de bureau.|[Configurer des stratégies de liens sécurisés dans Defender pour Office 365](../office-365-security/set-up-safe-links-policies.md)|
 |
 

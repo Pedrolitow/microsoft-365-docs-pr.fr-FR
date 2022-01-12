@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2600599dfd6d638736e29fef198913d32fcd60e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 1c216a84caefc783293cc1a4ce5b76357f4353a5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240995"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935353"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -48,7 +47,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le portail Microsoft 365 Defender, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Pour ouvrir la page Web de **quarantaine** directement, utilisez <https://security.microsoft.com/quarantine>.
+- Pour ouvrir le Portail Microsoft 365 Defender, accédez à <https://security.microsoft.com>. Pour aller directement à la page de mise **en** quarantaine, utilisez <https://security.microsoft.com/quarantine> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -70,7 +69,8 @@ Vous affichez et gérez les messages mis en quarantaine dans le portail Microsof
 
 ### <a name="view-quarantined-email"></a>Afficher les e-mails mis en quarantaine
 
-1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration** \> **Review** \> **Quarantine**. Pour aller directement à la page de mise **en** quarantaine, utilisez <https://security.microsoft.com/quarantine> .
+
 2. Dans la page **Quarantaine,** vérifiez que **l’onglet** Courrier est sélectionné.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour modifier les colonnes qui s'affichent. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
@@ -281,7 +281,8 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 
-1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration** \> **Review** \> **Quarantine**. Pour aller directement à la page de mise **en** quarantaine, utilisez <https://security.microsoft.com/quarantine> .
+
 2. Dans la page **Quarantaine,** sélectionnez **l’onglet Fichiers** **(l’e-mail** est l’onglet par défaut).
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez **sur Personnaliser les colonnes** pour modifier les colonnes affichées. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> :

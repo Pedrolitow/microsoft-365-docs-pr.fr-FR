@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: d619438a8fdf2eb0da2a5b2f55b43bb064d3cea4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: d2d1c4d36bf37ad82ac5c720931146c0dfb2220d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552739"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935836"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
-Office vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) 
+Office complémentaires vous aident à personnaliser vos documents et à simplifier la façon dont vous accédez aux informations sur le web. Voir [Commencer à utiliser votre Office de base.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) 
 
 Une fois qu’un administrateur a déployé des modules pour les utilisateurs d’une organisation, il peut désactiver ou activer les modules, modifier, supprimer et gérer l’accès aux modules.
 
@@ -40,7 +40,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état On** ou **Off.**
+Un add-in peut être à **l’état « On** » ou « **Off** ».
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -54,31 +54,31 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **applications intégrées.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **applications intégrées.**
 
-2. Sélectionnez le add-in déployé, puis sélectionnez **l’onglet Configuration.**
+2. Sélectionnez le complément déployé, puis **l’onglet Configuration.**
 
 3. Dans le **volet Configuration,** go to **Advanced Paramètres**  >  **Add-ins**.
 
 4. Sélectionnez de nouveau le module dans la liste.
 
-5. Choose **Remove Add-In**. Supprimez le bouton du complément dans le coin inférieur droit.
+5. Choisir **Supprimer les compléments** Supprimez le bouton du complément dans le coin inférieur droit.
 
 6. Validez vos sélections, puis choisissez **Supprimer.**
 
 ## <a name="edit-add-in-access"></a>Modification de l’accès d’un complément
 
-Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
+Après le déploiement, les administrateurs peuvent également gérer l'accès des utilisateurs aux modules complémentaires.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **applications intégrées.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **applications intégrées.**
 
-2. Sélectionnez le add-in déployé.
+2. Sélectionnez l'add-in déployé.
 
-3. Cliquez sur **Modifier sous** **Qui’accès.**
+3. Cliquez sur **Modifier sous** **Qui a accès.**
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de add-ins en Office store sur tous les clients (sauf Outlook)
 
 > [!NOTE]
 > Outlook’installation du module est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
@@ -95,7 +95,7 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
 
     Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le Store.
       
-    - Les add-ins pour Word, Excel et PowerPoint 2016 à partir de :
+    - Les compléments pour Word, Excel et PowerPoint 2016 à partir de :
         
       - Windows
       - Mac
@@ -104,7 +104,7 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
         
     - Acquisitions à partir **d’AppSource**
         
-    - Les Microsoft 365
+    - Compléments dans Microsoft 365
         
     Un utilisateur qui tente d’accéder au Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de Office store.
   
@@ -130,13 +130,13 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office de travail. Le add-in apparaît sur toutes les plateformes qu’il prend en charge. Voir [Commencer à utiliser votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) 
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
 ![Office ruban avec citations de recherche.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
+Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 

@@ -7,20 +7,20 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 0025abb9aa900da4b6e22b7ecf1a48014f25552a
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 139015e1e1b12dd14510fa0cdd8b546b4ad52405
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645541"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872440"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -118,7 +118,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ranso
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -193,7 +193,7 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Comparer Microsoft Defender pour endpoint Plan 1 à Plan 2](defender-endpoint-plan-1-2.md)
 - [Configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)

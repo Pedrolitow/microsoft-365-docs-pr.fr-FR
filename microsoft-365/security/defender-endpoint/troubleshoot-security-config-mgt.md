@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 898522d5305641532d3eeeec7d687d60897a2c09
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9bff729d81a3db568560730d71ecd379fc60d5ce
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61108230"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867804"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Résoudre les problèmes d’intégration liés à la gestion de la sécurité pour Microsoft Defender pour le point de terminaison 
 
@@ -202,6 +202,9 @@ Pour la gestion de la sécurité de Microsoft Defender pour le point de terminai
     ```
 
 7.  Sélectionnez **Enregistrer** pour enregistrer la nouvelle règle.
+
+> [!NOTE]
+> Une fois cette modification de règle effectuée, une synchronisation complète de votre annuaire Active Directory est requise. Pour les environnements de grande taille, il est recommandé de planifier cette modification de règle et la synchronisation complète pendant les périodes de silence Active Directory sur site.
 
 ## <a name="related-topic"></a>Rubrique connexe
 - [Gérer Microsoft Defender pour le point de terminaison sur les appareils avec Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)

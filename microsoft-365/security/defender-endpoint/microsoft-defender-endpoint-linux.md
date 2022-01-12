@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aefa9c38be0ec25545b64e28514b48c91cfbcdd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560240"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867840"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -96,6 +96,9 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
        - Pour 6,8 : 2.6.32-642.* 
        - Pour 6,9 : 2.6.32-696.* 
        - Pour 6,10 : 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2 :
+
+ > [!NOTE]
+ > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
 
     Liste des versions :
 

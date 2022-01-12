@@ -6,21 +6,21 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
+description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, le converti ou l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1fd0d6a5001a2d01b542a276aad142e6d52821c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4086d79b611596b8a32a15f994174a0f8f58b0bc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205964"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937471"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Afficher des documents dans un jeu à réviser dans Advanced eDiscovery
 
@@ -76,4 +76,4 @@ L’affichage Annotate fournit des fonctionnalités qui permettent aux utilisate
 
 ## <a name="dashboard-view"></a>Affichage Tableau de bord
 
-L’affichage tableau de bord vous permet de visualiser et de résumer les données de votre grille de résultats de recherche. Dans cette vue, vous pouvez créer des widgets personnalisés pour faciliter l’analyse et la création de rapports sur votre jeu à réviser. Une fois que vous avez créé vos widgets, vous pouvez interagir avec eux pour obtenir le nombre d’éléments ou pour créer une recherche.
+L’affichage tableau de bord vous permet de visualiser et de résumer les données dans votre grille de résultats de recherche. Dans cette vue, vous pouvez créer des widgets personnalisés pour faciliter l’analyse et la création de rapports sur votre jeu à réviser. Une fois que vous avez créé vos widgets, vous pouvez interagir avec eux pour obtenir le nombre d’éléments ou pour créer une recherche.

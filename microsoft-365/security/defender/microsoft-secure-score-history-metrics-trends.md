@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530934"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932819"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
@@ -64,17 +64,13 @@ Il existe deux endroits pour comparer votre score aux organisations qui sont sim
 
 #### <a name="comparison-bar-chart"></a>Graphique à barres de comparaison
 
-Le graphique à barres de comparaison est **l’onglet Vue** d’ensemble. Pointez sur le graphique pour afficher le score et l’opportunité de score. Les données de comparaison sont rendues anonymes, donc nous ne savons pas exactement quels autres clients sont dans la combinaison.
+Le graphique à barres de comparaison est disponible sous **l’onglet Vue d’ensemble.** Pointez sur le graphique pour afficher le score et l’opportunité de score. 
+
+**Les organisations** comme la vôtre sont un score moyen d’autres locataires dans la même région (à condition que nous 5 ou plus locataires à comparer) avec une taille d’organisation similaire à la vôtre.
+
+Les données de comparaison sont rendues anonymes, donc nous ne savons pas exactement quels autres clients sont dans la combinaison.
 
 ![Graphique à barres des scores d’une organisation similaire.](../../media/secure-score/secure-score-comparison-screenshot.png)
-
-- **Organisations telles** que la vôtre : note moyenne d’autres locataires (à condition que nous 5 locataires ou plus à comparer) éligibles avec les critères suivants :
-    1. Même secteur d’activité
-    2. Même taille d’organisation
-    3. Toutes les régions
-    4. Les produits Microsoft utilisés sont similaires à 80 %
-    5. Opportunité (score max qui peut être obtenu par la licence actuelle) dans une plage de 20 % à partir de votre client
-
 
 #### <a name="comparison-trend"></a>Tendance de comparaison
 

@@ -15,15 +15,14 @@ ms.collection:
 description: Utilisez l’Explorateur de menaces ou les détections en temps réel dans le portail Microsoft 365 Defender pour examiner les menaces et y répondre efficacement.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a12d83e3345936e0eb02e3d5f687dbda67715d00
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: de9121320e339ecff2b665737a6b4ccebe5e0fd0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963202"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933778"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Recherche de menaces dans l’Explorateur de menaces pour Microsoft Defender Office 365
 
@@ -35,7 +34,7 @@ Contenu de cet article :
 - [Améliorations de l’expérience de recherche de menaces](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md)
+> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les détections de l’Explorateur et en temps réel **(telles** que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et l’Explorateur de menaces et [les détections en temps réel.](real-time-detections.md)
 
 
 **S’applique à**
@@ -44,7 +43,7 @@ Contenu de cet article :
 
 Si votre organisation dispose de [Microsoft Defender](defender-for-office-365.md)pour Office 365 et que vous disposez des [autorisations,](#required-licenses-and-permissions)vous pouvez utiliser l’Explorateur ou les  **détections** en temps réel pour détecter et corriger les menaces.
 
-Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez **Email & collaboration,** puis choisissez **Explorer** ou **Détections en temps réel.** Pour le faire directement sur la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports>
+In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration,** and then choose **Explorer** or **Real-time detections**. Pour aller directement à la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports> .
 
 Avec ces outils, vous pouvez :
 
@@ -245,11 +244,11 @@ Vous devez avoir [Microsoft Defender pour que Office 365](defender-for-office-36
 
 Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, vous devez avoir les autorisations suivantes :
 
-- Pour le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender :</a>
+- Dans le portail Microsoft 365 Defender:
   - Gestion de l’organisation
   - Administrateur de sécurité (peut être affecté dans le centre d’administration Azure Active Directory de sécurité ( <https://aad.portal.azure.com> )
   - Lecteur de sécurité
-- Pour Exchange Online :
+- Dans Exchange Online :
   - Gestion de l’organisation
   - Afficher uniquement la gestion de l’organisation
   - Afficher uniquement les destinataires
@@ -258,10 +257,10 @@ Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, 
 Pour en savoir plus sur les rôles et les autorisations, consultez les ressources suivantes :
 
 - [Autorisations dans le Portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-- [Autorisations des fonctionnalités dans Exchange Online](/exchange/permissions-exo/feature-permissions)
+- [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 - [Afficher les fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)

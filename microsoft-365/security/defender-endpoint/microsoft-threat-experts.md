@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34390890f2b49c3058c50a12d3ce67454e4dd37
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560767"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936076"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 
@@ -63,7 +63,7 @@ Spécialistes des menaces Microsoft - La notification d’attaque ciblée permet
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Spécialistes des menaces Microsoft - Experts à la demande
 
-Les clients peuvent faire appel à nos experts en matière de sécurité directement Centre de sécurité Microsoft Defender pour obtenir une réponse précise et opportune. Les experts fournissent des informations nécessaires pour mieux comprendre les menaces complexes qui affectent votre organisation, depuis les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte, jusqu’à des informations supplémentaires sur les menaces concernant les campagnes avancées persistantes en cours sur les menaces. Avec cette fonctionnalité, vous pouvez :
+Les clients peuvent faire appel à nos experts en matière de sécurité directement Microsoft 365 Defender pour obtenir une réponse précise et opportune. Les experts fournissent des informations nécessaires pour mieux comprendre les menaces complexes qui affectent votre organisation, depuis les demandes d’alerte, les appareils potentiellement compromis, la cause première d’une connexion réseau suspecte, jusqu’à des informations supplémentaires sur les menaces concernant les campagnes avancées persistantes en cours sur les menaces. Avec cette fonctionnalité, vous pouvez :
 
 - Obtenir une clarification supplémentaire sur les alertes, y compris la cause racine ou l’étendue de l’incident
 - Clarifier le comportement suspect de l’appareil et les étapes suivantes en cas d’attaque avancée

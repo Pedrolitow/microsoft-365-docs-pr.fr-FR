@@ -16,15 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir le fonctionnement de l’aperçu de l’emprunt d’identité. Ils peuvent rapidement déterminer quels expéditeurs envoient légitimement des messages électroniques à leur organisation à partir de domaines qui ne passent pas les vérifications d’authentification du courrier électronique (SPF, DKIM ou DMARC).
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a7125646b14df3aa1b36dd0324184f41a8e0993
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0d9d8ee89aaa551c5fecf7c38fe0dbba97ed7fc8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169682"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939800"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Aperçu de l’emprunt d’identité dans Defender pour Office 365
 
@@ -50,7 +51,7 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à l’aperçu de l’emprunt d’identité sur la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> . Pour aller directement à la page d’informations **sur l’emprunt d’identité,** utilisez <https://security.microsoft.com/impersonationinsight> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> . Pour aller directement à la page d’informations **sur l’emprunt d’identité,** utilisez <https://security.microsoft.com/impersonationinsight> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
   - **Gestion de l'organisation**
@@ -60,13 +61,13 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
   Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 - Vous activez et configurez la protection contre l’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La protection contre l’emprunt d’identité n’est pas activée par défaut. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’emprunt d’identité dans Microsoft 365 Defender web
 
-1. Dans le portail Microsoft 365 Defender, dans la section **Stratégies,** & stratégies de collaboration & règles \>  \>  \> **anti-hameçonnage.** 
+1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
 
 2. Dans la page **Anti-hameçonnage,** l’aperçu de l’emprunt d’identité ressemble à ceci :
 
@@ -89,7 +90,7 @@ Dans **la** page Informations sur l’emprunt d’identité qui s’affiche apr�
 - **Domaine de l’expéditeur**: domaine d’emprunt d’identité, qui est le domaine utilisé pour envoyer le message électronique.
 - **Nombre de** messages : nombre de messages provenant de l’emprunt d’identité du domaine de l’expéditeur au cours des 7 derniers jours.
 - **Type d’emprunt** d’identité : cette valeur indique l’emplacement détecté de l’emprunt d’identité (par exemple, **Domaine dans l’adresse).**
-- **Domaine dont** l’identité est usurpée : le domaine dont l’identité doit ressembler étroitement au domaine configuré pour la protection contre l’emprunt d’identité dans la stratégie anti-hameçonnage.
+- **Domaine dont** l’identité est usurpée : le domaine dont l’identité doit ressembler au domaine configuré pour la protection contre l’emprunt d’identité dans la stratégie anti-hameçonnage.
 - **Type de domaine**: cette valeur est **le domaine de la** société pour les domaines internes ou le domaine **personnalisé** pour les domaines personnalisés.
 - **Stratégie**: stratégie anti-hameçonnage qui a détecté le domaine dont l’identité a été usurpée.
 - **Autorisé à usurper l’identité**: l’une des valeurs suivantes :
@@ -104,10 +105,10 @@ Pour filtrer les résultats, vous pouvez utiliser ![ l’icône Rechercher.](../
 
 Sous **l’onglet Domaines** de **la** page Informations sur l’emprunt d’identité, sélectionnez l’une des détections d’emprunt d’identité disponibles. Le volant de détails qui s’affiche contient les informations et fonctionnalités suivantes :
 
-- **Stratégie d’emprunt d’identité** de sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée que vous souhaitez modifier. Seules les stratégies où le domaine dont l’identité est définie dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection du domaine dont l’identité a été usurpée (probablement en fonction du destinataire et de la priorité de la stratégie).
+- **Stratégie d’emprunt d’identité de** sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée à modifier. Seules les stratégies où le domaine dont l’identité est définie dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection du domaine dont l’identité est usurpée (probablement en fonction du destinataire et de la priorité de la stratégie).
 - Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Non,** le basculement est éteint. Pour exempter tous les expéditeurs de ce domaine de l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez. ](../../media/scc-toggle-on.png) Le domaine est ajouté à la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
-  - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Oui,** le basculement est sur. Pour renvoyer tous les expéditeurs de ce domaine à l’évaluation par la protection contre l’emprunt d’identité, faites glisser le basculement sur : ![ Basculez vers le large. ](../../media/scc-toggle-off.png) Le domaine est supprimé de la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
+  - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Oui,** le basculement est sur. Pour renvoyer tous les expéditeurs de ce domaine à l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez vers le large. ](../../media/scc-toggle-off.png) Le domaine est supprimé de la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
 - Pourquoi nous l’avons capturé.
 - Ce que vous devez faire.
 - Résumé du domaine qui résume le domaine dont l’identité est emprunt d’identité.
@@ -120,9 +121,9 @@ Sous **l’onglet Domaines** de **la** page Informations sur l’emprunt d’ide
 Dans la page **Informations sur** l’emprunt d’identité qui s’affiche après avoir cliqué sur Afficher les **emprunts** d’identité dans l’aperçu de l’emprunt d’identité, cliquez sur **l’onglet** Utilisateurs. **L’onglet** Utilisateurs contient les informations suivantes :
 
 - **Expéditeur :** adresse de messagerie de l’expéditeur qui a envoyé le message électronique.
-- **Nombre de** messages : nombre de messages provenant de l’expéditeur qui usurpe l’identité au cours des 7 derniers jours.
+- **Nombre de** messages : nombre de messages de l’expéditeur qui usurpe l’identité au cours des 7 derniers jours.
 - **Type d’emprunt d’identité**: cette valeur est **Utilisateur dans le nom complet.**
-- **Utilisateur** dont l’identité est usurpée : adresse de messagerie de l’expéditeur dont l’identité doit ressembler à celle de l’utilisateur configuré pour la protection contre l’usurpation d’identité dans la stratégie anti-hameçonnage.
+- **Utilisateur** dont l’identité est usurpée : adresse de messagerie de l’expéditeur dont l’identité doit ressembler à celle de l’utilisateur configuré pour la protection contre l’emprunt d’identité dans la stratégie anti-hameçonnage.
 - **Type d’utilisateur**: cette valeur indique le type de protection appliqué (par exemple, utilisateur **protégé** ou **Mailbox Intelligence).**
 - **Stratégie**: stratégie anti-hameçonnage qui a détecté l’expéditeur dont l’identité a été usurpée.
 - **Autorisé à usurper l’identité**: l’une des valeurs suivantes :
@@ -131,14 +132,14 @@ Dans la page **Informations sur** l’emprunt d’identité qui s’affiche apr�
 
 Vous pouvez cliquer sur les en-tête de colonne sélectionnés pour trier les résultats.
 
-Pour filtrer les résultats,  vous pouvez utiliser la zone Filtrer l’expéditeur pour entrer une liste de valeurs séparées par des virgules pour filtrer les résultats.
+Pour filtrer les résultats,  vous pouvez utiliser la zone Expéditeur du filtre pour entrer une liste de valeurs séparées par des virgules pour filtrer les résultats.
 
 ### <a name="view-details-about-messages-from-impersonated-senders"></a>Afficher les détails sur les messages provenant d’expéditeurs dont l’identité a été usurpée
 
 Sous **l’onglet** Utilisateurs de **la** page Informations sur l’emprunt d’identité, sélectionnez l’une des détections d’emprunt d’identité disponibles. Le volant de détails qui s’affiche contient les informations et fonctionnalités suivantes :
 
-- **Stratégie d’emprunt d’identité** de sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée que vous souhaitez modifier. Seules les stratégies où l’expéditeur dont l’identité est définie dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection de l’expéditeur usurpé d’identité (probablement en fonction du destinataire et de la priorité de la stratégie).
-- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et des expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
+- **Stratégie d’emprunt d’identité de** sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée à modifier. Seules les stratégies où l’expéditeur dont l’identité est définie dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection de l’expéditeur dont l’identité est usurpée (probablement en fonction du destinataire et de la priorité de la stratégie).
+- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Non,** le basculement est éteint. Pour exempter l’expéditeur de l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez. ](../../media/scc-toggle-on.png) L’expéditeur est ajouté  à la liste des utilisateurs de confiance dans les paramètres de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Oui,** le basculement est sur. Pour renvoyer l’expéditeur à l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur vers l’autre pour ![ l’éteindre . ](../../media/scc-toggle-off.png) L’expéditeur est supprimé  de la liste des utilisateurs de confiance dans les paramètres de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
 - Pourquoi nous l’avons capturé.

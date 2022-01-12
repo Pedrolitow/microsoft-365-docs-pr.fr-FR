@@ -13,18 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-- admindeeplinkDEFENDER
+ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d84ce2b2ec6131419f8344976335dc681fdc002c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374015"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935524"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -69,9 +67,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to the **Submissions** page at **Email & collaboration** \> **Submissions**. Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
-2. Dans la page **Soumissions,** vérifiez que l’onglet **Courriers** électroniques est sélectionné, sélectionnez l’e-mail à signaler, puis cliquez sur ![ L’icône De la nouvelle page.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
+2. Dans la page **Soumissions,** vérifiez que l’onglet Soumis pour analyse est sélectionné, sélectionnez le courrier électronique à signaler, puis cliquez sur Envoyer à Microsoft pour l’icône  ![ d’analyse.](../../media/m365-cc-sc-create-icon.png) **Envoyer à Microsoft pour analyse.**
 
 3. Utilisez le **volant Envoyer à Microsoft pour** l’analyse qui apparaît pour envoyer le courrier électronique, l’URL ou la pièce jointe de l’e-mail, comme décrit dans les sections suivantes.
 
@@ -80,9 +78,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ### <a name="notify-users-from-within-the-portal"></a>Avertir les utilisateurs à partir du portail
 
-1. Dans le portail Microsoft 365 Defender, sous **Actions & soumissions,** allez aux **soumissions.**
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to the **Submissions** page at **Email & collaboration** \> **Submissions**. Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
-2. Sélectionnez **l’onglet Messages** signalés par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
+2. Dans la page **Soumissions,** sélectionnez l’onglet **Messages** signalés par l’utilisateur, puis sélectionnez le message que vous souhaitez marquer et notifier.
 
 3. Sélectionnez la **marque en tant que et notifier** la drop-down, puis sélectionnez Aucune menace **trouvée** comme \> **hameçonnage** ou courrier **indésirable**.
 
@@ -147,7 +145,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to the **Submissions** page at **Email & collaboration** \> **Submissions**. Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
 2. Dans la page **Soumissions,** vérifiez que l’onglet **Courrier électronique,** **URL** ou Pièce jointe est sélectionné. 
 
@@ -184,7 +182,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      - **ID de message réseau**
      - **Sender**
      - **Destinataire**
-     - **Name**
+     - **Nom**
      - **Soumis par**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
@@ -217,7 +215,7 @@ Si le programme a trouvé un remplacement, la nouvelle analyse doit se terminer 
 
 Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enable-the-report-phish-add-in.md)Signaler un message, le module de signalement du hameçonnage ou que des personnes utilisent les rapports intégrés dans  [Outlook sur le web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)vous pouvez voir quels utilisateurs signalent dans l’onglet Message signalé par l’utilisateur.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sous **Actions & soumissions,** allez aux **soumissions.**
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to the **Submissions** page at **Email & collaboration** \> **Submissions**. Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
 2. Dans la page **Soumissions,** sélectionnez **l’onglet Messages signalés par l’utilisateur.**
 

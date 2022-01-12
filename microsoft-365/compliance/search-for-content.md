@@ -7,16 +7,16 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: 298a9f371d652a1da547ba91b437aa0300c1621b
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 21e07f09c21bbf0196b6ba113b82ec3030aada32
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645927"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936497"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
@@ -28,9 +28,9 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
   
 - [Créer et exécuter une](content-search.md) recherche de contenu
 
-- [Référence des fonctionnalités](content-search-reference.md) pour la recherche de contenu
-
 - [Créer des requêtes de recherche et utiliser des conditions pour](keyword-queries-and-search-conditions.md) affiner votre recherche
+
+- [Référence des fonctionnalités](content-search-reference.md) pour la recherche de contenu
 
 - [Configurer le filtrage des autorisations](permissions-filtering-for-content-search.md) de recherche afin qu’un gestionnaire eDiscovery ne puisse rechercher que le sous-ensemble de boîtes aux lettres ou de sites de votre organisation
 
@@ -39,8 +39,6 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 - [Afficher les statistiques de](view-keyword-statistics-for-content-search.md) mot clé pour les résultats d’une recherche, puis affiner la requête si nécessaire
 
 - [Rechercher des données tierces que](use-content-search-to-search-third-party-data-that-was-imported.md) votre organisation a importées dans Microsoft 365
-
-- [Réessayer une recherche de contenu](retry-failed-content-search.md) pour résoudre une erreur d’emplacement de contenu
 
 - [Conserver les destinataires Bcc](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) afin de pouvoir les rechercher
 
@@ -58,13 +56,13 @@ Une fois que vous avez exécuté une recherche et que vous l’avez affinée si 
 
 La recherche de contenu est facile à utiliser, mais il s’agit également d’un outil puissant. En arrière-plan, il se passe beaucoup de choses. Plus vous en sconnaissez et que vous comprenez son comportement et ses limitations, plus vous l’utiliserez pour répondre aux besoins de recherche et d’examen de votre organisation. Pour en savoir plus, approfondissez les sujets suivants :
   
+- [Limites de recherche de](limits-for-content-search.md)contenu, telles que le nombre maximal de recherches que vous pouvez exécuter en même temps et le nombre maximal d’emplacements de contenu que vous pouvez inclure dans une recherche unique
+
+- [Résultats de recherche estimés](differences-between-estimated-and-actual-ediscovery-search-results.md) et réels et raisons pour lesquelles il peut y avoir des différences entre eux lorsque vous exportez et téléchargez des résultats de recherche
+
 - [Éléments partiellement indexés](partially-indexed-items-in-content-search.md) dans Exchange et SharePoint et comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche
 
 - [Examiner les éléments partiellement indexés et](investigating-partially-indexed-items-in-ediscovery.md) déterminer l’exposition de votre organisation à ces éléments
-
-- [Limites de](limits-for-content-search.md)l’outil de recherche de contenu, telles que le nombre maximal de recherches que vous pouvez exécuter en même temps et le nombre maximal d’emplacements de contenu que vous pouvez inclure dans une recherche unique
-
-- [Résultats de recherche estimés](differences-between-estimated-and-actual-ediscovery-search-results.md) et réels et raisons pour lesquelles il peut y avoir des différences entre eux lorsque vous exportez et téléchargez des résultats de recherche
 
 - [Dédoplication dans les résultats de recherche](de-duplication-in-ediscovery-search-results.md) que vous pouvez activer lorsque vous exportez des messages électroniques qui sont les résultats d’une recherche
 
@@ -72,7 +70,7 @@ La recherche de contenu est facile à utiliser, mais il s’agit également d’
 
 Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser les commandes dans le Centre de sécurité & conformité PowerShell. Pour faciliter cette tâche, nous avons créé un certain nombre de scripts powerShell du Centre de sécurité et conformité & pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
 
-- [Rechercher des dossiers de boîte](use-content-search-for-targeted-collections.md) aux lettres et de site spécifiques (appelés collection *ciblée) lorsque vous êtes certain que les éléments qui répondent à un cas se trouvent dans ce dossier
+- [Rechercher des dossiers de](use-content-search-for-targeted-collections.md) boîte  aux lettres et de site spécifiques (appelés collection ciblée) lorsque vous êtes certain que les éléments qui répondent à un cas se trouvent dans ce dossier
 
 - [Rechercher une liste d’utilisateurs dans OneDrive boîte](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) aux lettres et dans l’emplacement de l’utilisateur
 

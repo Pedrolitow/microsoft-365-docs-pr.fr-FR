@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/16/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 154f67645062f6816ebdbfa24a2935c779f48c72
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 15c596a921c38df20c40788ec3dbbf791dea79ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559855"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874003"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Didacticiels et simulations dans Microsoft Defender pour Entreprise (prévisualisation)
 
@@ -31,6 +31,11 @@ ms.locfileid: "61559855"
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 Si vous avez terminé la configuration de Microsoft Defender Pour Entreprises (prévisualisation), vous vous demandez peut-être où commencer pour en savoir plus sur le fonctionnement de Defender entreprise (prévisualisation). Cet article décrit les scénarios d’aperçu à essayer, ainsi que plusieurs didacticiels et simulations disponibles pour Defender for Business (prévisualisation). Ces ressources sont conçues pour vous aider à voir comment Defender entreprise (prévisualisation) peut fonctionner pour votre entreprise.
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 ## <a name="try-these-preview-scenarios"></a>Essayez ces scénarios d’aperçu
 

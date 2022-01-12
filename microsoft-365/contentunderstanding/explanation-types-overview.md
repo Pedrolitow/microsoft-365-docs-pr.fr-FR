@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4f155b4a7e6aef9c12b97f56e414de9fcda88536
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152825"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872536"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
 
@@ -211,6 +211,17 @@ Vous pouvez choisir l'une des trois options suivantes :
    ![Plage personnalisée.](../media/content-understanding/custom-file.png)
 
     Dans la visionneuse, vous pouvez ajuster manuellement la case à sélectionner de manière à inclure l’emplacement où la phase a lieu. Pour ce paramètre, vous devez sélectionner une position de **Début** et une position de **Fin**. Ces valeurs représentent le nombre de jetons dès le début du document. Bien que vous pouvez entrer manuellement ces valeurs, il est plus facile d’ajuster manuellement la case à sélectionner dans la visionneuse.
+    
+## <a name="considerations-when-configuring-explanations"></a>Considérations lors de la configuration des explications
+Lors de la formation d’un classificateur, gardez à l’esprit quelques éléments qui produisent des résultats plus prévisibles :
+
+- Plus vous formez de documents, plus le classifieur est précis.  Dans la mesure du possible, utilisez plus de 5 bons documents et utilisez plus d’un document non bon.  Si les bibliothèques avec qui vous travaillez ont plusieurs types de documents différents, plusieurs de chaque type entraînent des résultats plus prévisibles.
+- L’étiquetage du document joue un rôle important dans le processus de formation.  Elles sont utilisées avec des explications pour former le modèle.  Vous pouvez voir certaines anomalies lors de la formation d’un classifieur avec des documents qui n’ont pas beaucoup de contenu.  Il se peut que l’explication ne corresponde à rien dans le document, mais comme il a été étiqueté comme « bon » document, il se peut qu’il corresponde au cours de l’entraînement.
+- Lors de la création d’explications, elle utilise la logique OR en combinaison avec l’étiquette pour déterminer s’il s’agit d’une correspondance.  L’expression régulière qui utilise la logique AND peut être plus prévisible.  Voici un exemple d’expression régulière à utiliser sur des documents réels pour les former.  Notez que le texte en rouge est la ou les expressions que vous recherchez.
+
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
+    
+- Les étiquettes et les explications fonctionnent ensemble et sont utilisées dans la formation du modèle.  Il ne s’agit pas d’une série de règles qui peuvent être découplés et des pondérations ou prédictions précises appliquées à chaque variable qui a été configurée.  Plus la variante de documents utilisée dans la formation est importante, plus le modèle est précis.
 
 ### <a name="see-also"></a>Voir aussi
 

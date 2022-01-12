@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371111"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933766"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -47,7 +47,7 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont Office à l’aide de leur ID d’organisation) et Exchange Online boîtes aux lettres Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
+Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des licences Microsoft 365 Business (Business Basic, Business Standard, Business Premium), des licences Office 365 Entreprise (E1/E3/E5/F3) ou des licences Microsoft 365 Entreprise (E3/E5/F3) (et sont Office à l’aide de leur ID d’organisation), de licences Office 365 Éducation (A1/A3/A5) ou de licences Microsoft 365 Éducation (A3/A5), et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
 Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
@@ -101,7 +101,7 @@ Pour déployer un add-in via le déploiement centralisé, vous devez être admin
 
 1. Démarrez une fenêtre avec PowerShell.exe élevée.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker

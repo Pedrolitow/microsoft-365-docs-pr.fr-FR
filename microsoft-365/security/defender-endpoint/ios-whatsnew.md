@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ad37c15c16edb03dddf7c9899d160eaca435e53e
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 5f7d3074d8ebf4f62719cd7ca36d627f94dbc897
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578488"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938431"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Nouveautés de Microsoft Defender pour Endpoint sur iOS
 
@@ -37,6 +37,11 @@ Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez
 ## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
 
 Le 2 novembre 2021, nous avons annoncé la prévisualisation publique de la gestion des menaces et des vulnérabilités sur Android et iOS. Pour plus d’informations, [consultez le billet techcommunity ici.](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691)
+
+## <a name="1124210103"></a>1.1.24210103
+
+- Résolution des problèmes de connectivité Internet sur les appareils supervisés. Pour plus d’informations, [voir Deploy Defender for Endpoint sur les appareils iOS inscrits.](ios-install.md)
+- Corrections de bogues.
 
 ## <a name="1123250104"></a>1.1.23250104
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e7d27e892b79c1b4b7d5d95f3f951490b6aabf7
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: cbea3514d9f2f12a8adce0f74ca0203dcc4195ae
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560249"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936197"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "61560249"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes sont disponibles via un seul volet de la Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
+**Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes seront disponibles via un seul volet de verre dans le portail Microsoft 365 Defender web. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
 
 > [!CAUTION]
 > L’exécution d’autres produits de protection de point de terminaison tiers avec Defender for Endpoint sur iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
@@ -61,7 +61,7 @@ ms.locfileid: "61560249"
 
 **Pour les administrateurs**
 
-- Accès au portail Centre de sécurité Microsoft Defender web.
+- Accès au portail Microsoft 365 Defender web.
 
 - Accès à [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)à :
    - Déployez l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
@@ -76,7 +76,7 @@ ms.locfileid: "61560249"
 
 - Appareil iOS exécutant iOS 12.0 et supérieur. Les iPads sont également pris en charge.
 
-- L’appareil est inscrit auprès de [l’application Portail d'entreprise Intune ou](https://apps.apple.com/us/app/intune-company-portal/id719171358) inscrit auprès Azure Active Directory via [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+- L’appareil est inscrit auprès de [l’application Portail d'entreprise Intune ou](https://apps.apple.com/us/app/intune-company-portal/id719171358) est inscrit auprès Azure Active Directory via [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) avec le même compte.
 
 ## <a name="installation-instructions"></a>Instructions d’installation
 

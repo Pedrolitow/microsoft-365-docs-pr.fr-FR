@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide de la formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 9e33da3aa34c30f273581de97cd27c2ca534e3d3
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: e1196a686cd2223327ae85e596417b051f01abd5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560784"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934104"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simuler une attaque par hameçonnage dans Defender pour Office 365
 
@@ -30,7 +30,7 @@ Pour plus d’informations sur la formation à la simulation d’attaques, voir 
 
 Pour lancer une attaque par hameçonnage simulée, vous pouvez suivre les étapes suivantes :
 
-1. Dans le portail Microsoft 365 Defender à l’adresse , go <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> to Email & **collaboration** \> **Attack** \> **simulations simulations** tab.
+1. Dans le portail Microsoft 365 Defender à l’adresse , go <https://security.microsoft.com> to Email & **collaboration** \> **Attack** \> **simulations simulations** tab.
 
    Pour aller directement à **l’onglet Simulations,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 
@@ -51,7 +51,7 @@ Dans la page Sélectionner une **technique,** sélectionnez une technique d’in
 - **Pièce jointe malveillante**: ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
 - **Lien dans la pièce jointe**: type d’hybride de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
 - **Lien vers un programme malveillant**: exécute du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
-- **URL** de lecteur par : l’URL malveillante dans le message permet à l’utilisateur d’accéder à un site web familier qui s’exécute en mode silencieux et/ou installe le code sur l’appareil de l’utilisateur.
+- **URL de lecteur** par : l’URL malveillante dans le message permet à l’utilisateur d’accéder à un site web familier qui s’exécute en mode silencieux et/ou installe le code sur l’appareil de l’utilisateur.
 
 Si vous cliquez sur le lien Afficher les **détails** dans la description, un volant de détails s’ouvre qui décrit la technique et les étapes de simulation qui en résultent.
 
@@ -74,7 +74,7 @@ Dans la page **Sélectionner la** charge utile, vous devez sélectionner une cha
 
 Les détails suivants sont affichés dans la liste des charges utiles pour vous aider à choisir :
 
-- **Name**
+- **Nom**
 - **Langue**: langue du contenu de la charge utile. Le catalogue de charge utile de Microsoft (global) fournit des charges utiles dans plus de 10 langues qui peuvent également être filtrées.
 - **Taux de clic**: nombre de personnes qui ont cliqué sur cette charge utile.
 - **Taux de compromission prévu**: données historiques de la charge utile dans Microsoft 365 qui prévoit le pourcentage de personnes qui seront compromises par cette charge utile.

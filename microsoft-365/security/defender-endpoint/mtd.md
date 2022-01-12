@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83871a547aa2f644d70ada5cb121d3b32a6d9bdb
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b77e44b7e60c5255f4fb6fb25d00cef1df5e102c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560355"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940318"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour le point de terminaison - Défense contre les menaces mobiles
 
@@ -104,7 +104,7 @@ Cela permet de réduire les problèmes potentiels qui peuvent survenir lors du d
 
 - [Configurer les fonctionnalités Android](android-configure.md)
 - [Configurer des fonctionnalités iOS](ios-configure-features.md)
-- [Configurer le mode Supervisé pour les appareils iOS supervisés](ios-install.md#configure-microsoft-defender-for-endpoint-for-supervised-mode)
+- [Configurer la protection Web sans VPN pour les appareils iOS supervisés](ios-install.md#complete-deployment-for-supervised-devices)
 
 ## <a name="resources"></a>Ressources
 

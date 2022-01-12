@@ -1,5 +1,5 @@
 ---
-title: Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
+title: Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote
 description: Configurer des simulations d’attaques dans Microsoft 365 Defender laboratoire d’essai ou un environnement pilote pour essayer la solution de sécurité conçue pour apprendre aux utilisateurs à protéger les appareils, l’identité, les données et les applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,18 +17,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1a470516fc743333e90322ef0dbdee0623a1403d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b511bb5818ae923c30347dfe71853ca791061ae
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212124"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933214"
 ---
-# <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
+# <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote
 
 **S’applique à :**
 - Microsoft 365 Defender
@@ -49,4 +49,4 @@ Le tableau suivant décrit les étapes de l’illustration.
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement](eval-create-eval-environment.md)
+[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)

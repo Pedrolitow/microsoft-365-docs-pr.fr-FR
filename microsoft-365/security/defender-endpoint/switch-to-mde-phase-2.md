@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 13fda51ea3bd5434c44f9313dc511c0379e0f56e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: e7d75dc0b55c945a1cc84c194609f3a48a100949
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241211"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867684"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 2 : Installation
 
@@ -126,7 +126,7 @@ Vous pouvez utiliser l’utilitaire Command-Line protection contre les programme
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Définir Antivirus Microsoft Defender en mode passif sur Windows Server
 
 > [!TIP]
-> Vous pouvez maintenant exécuter Antivirus Microsoft Defender en mode passif sur Windows Server 2012 R2 et 2016. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)
+> Vous pouvez maintenant exécuter Antivirus Microsoft Defender en mode passif sur Windows Server 2012 R2 et 2016. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
 
 1. Ouvrez l’Éditeur du Registre, puis accédez à
 
@@ -141,6 +141,10 @@ Vous pouvez utiliser l’utilitaire Command-Line protection contre les programme
 
 > [!NOTE]
 > Après l’intégration à Defender pour le point de terminaison, vous de Antivirus Microsoft Defender le mode passif sur Windows Server. Pour valider que le mode passif a été définie comme prévu, recherchez l’événement *5007* dans le journal des opérations **de Microsoft-Windows-Windows Defender** (situé à l’emplacement ), et confirmez que les clés de Registre `C:\Windows\System32\winevt\Logs` **ForceDefenderPassiveMode** ou **PassiveMode** ont été définies sur **0x1**.
+
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>Utilisez-vous Windows Server 2012 R2 ou Windows Server 2016 ?
+
+Vous pouvez maintenant exécuter Antivirus Microsoft Defender en mode passif sur Windows Server 2012 R2 et 2016 à l’aide de la méthode ci-dessus. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
 
 ## <a name="configure-defender-for-endpoint"></a>Configurer Microsoft Defender pour point de terminaison
 
@@ -169,8 +173,8 @@ Les exclusions spécifiques à configurer dépendent de la version de Windows vo
 
 | Système d’exploitation |Exclusions |
 |:--|:--|
-|Windows 11 <br/><br/>Windows 10, [version 1803 ou](/windows/release-health/status-windows-10-1803) ultérieure (voir Windows 10 de [publication)](/windows/release-health/release-information)<br/><br/>Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>En outre, sur Windows Server 2012 R2 et 2016 exécutant la solution moderne et unifiée, les exclusions suivantes sont requises après la mise à jour du composant Sense PEPT à l’aide de [la KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` |
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**REMARQUE**: La surveillance des fichiers temporaires de l’hôte 6\45 peut être un sous-dossier numéroté différent.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+|Windows 11 <br/><br/>Windows 10, [version 1803 ou](/windows/release-health/status-windows-10-1803) ultérieure (voir Windows 10 de [publication)](/windows/release-health/release-information)<br/><br/>Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>En outre, sur Windows Server 2012 R2 et 2016 exécutant la solution moderne et unifiée, les exclusions suivantes sont requises après la mise à jour du composant Sense PEPT à l’aide de [la KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` |
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**REMARQUE**: La surveillance des fichiers temporaires de l’hôte 6\45 peut être un sous-dossier numéroté différent.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender
 

@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fc85703d5dd8db92f3f3e58b618907e34b3616af
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4306468919aceb911361084cdde7a8a91dd510c2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111710"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940136"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour l’identité
 
@@ -48,7 +46,7 @@ Le diagramme suivant illustre l’architecture de base de Defender for Identity.
 
 ![Architecture de Microsoft Defender pour l’identité.](../../media/defender/m365-defender-identity-architecture.png)
 
-Dans cette illustration :
+Dans cette illustration :
 - Les capteurs installés sur les contrôleurs de domaine AD analysent les journaux et le trafic réseau et les envoient à Microsoft Defender pour identité pour analyse et rapport.
 -  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne pointillée dans l’illustration). 
 - Microsoft Defender pour l’identité partage des signaux Microsoft 365 Defender pour la détection et la réponse étendues (XDR).

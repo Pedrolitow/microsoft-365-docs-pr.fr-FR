@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 3b724fcd11fb9acb32bd6c4cec551156f8a86cda
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 43c881d340b5832a3403a6e47f664163f10dea00
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369707"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939920"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et
 
 L’application d’enquêtes automatisées et l’action de correction automatique ou seulement après approbation de vos appareils dépendent de certains paramètres, tels que les stratégies de groupe d’appareils de votre organisation. Examinez le niveau d’automatisation configuré pour vos stratégies de groupe d’appareils.
 
-1. Go to the Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) and sign in.
+1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
 2. Go to **Paramètres**  >  **Permissions**  >  **Device groups**.
 

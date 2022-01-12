@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment éliminer les résultats de recherche de découverte électronique en double afin qu’une seule copie d’un message électronique soit exportée.
-ms.openlocfilehash: 21f992aca12da53b758b72366ecda0312777d872
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: d09a0e09166928627be01d623963146cfd416bd2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426386"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938924"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
@@ -68,7 +68,7 @@ Les messages uniques peuvent également être marqués comme doublons lorsque la
 > [!IMPORTANT]
 > Si les limitations de l’algorithme de dédoplication peuvent avoir un impact sur la qualité de vos résultats de recherche, vous ne devez pas activer la dédoplication lorsque vous exportez des éléments. Si les situations décrites dans cette section sont peu susceptibles d’être un facteur dans vos résultats de recherche et que vous souhaitez réduire le nombre d’éléments les plus susceptibles d’être des doublons, vous devez envisager d’activer la déduplication. 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Les informations de cet article s’appliquent lors de l’exportation des résultats de recherche à l’aide de l’un des outils eDiscovery suivants :
 

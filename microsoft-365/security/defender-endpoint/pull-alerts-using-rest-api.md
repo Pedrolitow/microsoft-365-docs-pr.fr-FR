@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f4f5dbcde4a80b01c3df7ee7c32b41afc89dbba6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5baf1619b97be0be7225ac9042c64cf4f1532696
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301005"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61890934"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST SIEM
 
@@ -63,7 +63,7 @@ Le _flux d’informations d’identification_ du client utilise les informations
 Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour tirer les détections au format JSON.
 
 > [!NOTE]
-> Centre de sécurité Microsoft Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous définissez, ce qui vous permet d’appliquer vos propres regroupements et filtrages.
+> Microsoft 365 Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous définissez, ce qui vous permet d’appliquer vos propres regroupements et filtrages.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -131,11 +131,11 @@ Nom|Valeur|Description
 ---|---|---
 sinceTimeUtc|Date/heure|Définit les alertes liées au temps inférieur à partir de, en fonction du champ : <p> `LastProcessedTimeUtc` <p> L’intervalle de temps sera : de l’heure sinceTimeUtc à l’heure actuelle. <p> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes générées au cours des deux dernières heures sont récupérées.
 untilTimeUtc|Date/heure|Définit les alertes liées au temps supérieur qui sont récupérées. <p> L’plage de temps est : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <p> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
-ago|string|Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <p> La valeur doit être définie selon le format de durée **ISO 8601** <p> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
+ago|chaîne|Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <p> La valeur doit être définie selon le format de durée **ISO 8601** <p> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
 limit|int|Définit le nombre d’alertes à récupérer. Les alertes les plus récentes sont récupérées en fonction du nombre défini.<p> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes disponibles dans l’plage de temps sont récupérées.
-machinegroups|string|Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <p> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <p> Exemple : <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
-DeviceCreatedMachineTags|string|Balise d’appareil unique à partir du Registre.
-CloudCreatedMachineTags|string|Balises de périphérique créées dans Centre de sécurité Microsoft Defender.
+machinegroups|chaîne|Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <p> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <p> Exemple : <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
+DeviceCreatedMachineTags|chaîne|Balise d’appareil unique à partir du Registre.
+CloudCreatedMachineTags|chaîne|Balises de périphérique créées dans Microsoft 365 Defender.
 
 ### <a name="request-example"></a>Exemple de requête
 

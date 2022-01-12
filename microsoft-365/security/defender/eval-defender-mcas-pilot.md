@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4b8293be5123ac57aefa3f8c5a5212e9fc8f1e95
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111050"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933037"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Piloter Microsoft Defender pour les applications cloud avec Microsoft 365 Defender
 

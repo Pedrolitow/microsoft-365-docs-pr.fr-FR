@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Prise en charge de la définition et de la gestion des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747341"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933526"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Prise en main du tableau de bord des alertes de protection contre la perte de données
 
@@ -70,7 +70,6 @@ La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les
 
 ### <a name="roles"></a>Rôles
 
-
 Si vous souhaitez afficher le tableau de bord de gestion des alertes DLP ou modifier les options de configuration des alertes dans une stratégie DLP, vous devez être membre de l’un de ces groupes de rôles :
 
 - Administrateur de conformité
@@ -93,6 +92,25 @@ Pour accéder à la fonctionnalité d’aperçu de contenu et aux fonctionnalit�
 - Groupe de rôles Visionneuse de contenu de l’Explorateur de contenu
 
 dont le rôle visionneuse de contenu de classification des données est pré-attribué.
+
+### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en prévisualisation
+
+Il existe des rôles et des groupes de rôles en prévisualisation que vous pouvez tester pour affiner vos contrôles d’accès.
+
+Voici une liste des rôles Protection des données Microsoft (MIP) en prévisualisation. Pour en savoir plus à ce sujet, voir [Rôles](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) dans le Centre de sécurité & conformité
+
+- Administrateur de la protection des informations
+- Analyste de la protection des informations
+- Enquêteur de la protection des informations
+- Lecteur de protection des informations
+
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur les groupes de rôles, voir Groupes de [rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protection des informations
+- Administrateurs de la protection des informations
+- Analystes de la protection des informations
+- Enquêteurs de la protection des informations
+- Lecteurs de protection des informations
 
 ## <a name="dlp-alert-configuration"></a>Configuration des alertes DLP
 

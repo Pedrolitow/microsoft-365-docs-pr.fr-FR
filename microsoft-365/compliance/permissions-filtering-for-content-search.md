@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche pour autoriser les gestionnaires eDiscovery à rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 190ed836c30dbb08015c662f948d6b3dc9310c94
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6310334bdbfd1a94456d5e826daebb9f2945af14
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553375"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936593"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurer le filtrage des autorisations pour eDiscovery
 
-Vous pouvez utiliser le filtrage des autorisations de recherche pour laisser un gestionnaire eDiscovery rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous créez un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez laisser un gestionnaire eDiscovery rechercher uniquement des sites SharePoint de votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
+Vous pouvez utiliser le filtrage des autorisations de recherche pour laisser un gestionnaire eDiscovery rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation. Vous pouvez également utiliser le filtrage des autorisations pour permettre à ce gestionnaire de rechercher uniquement le contenu de boîte aux lettres ou de site qui répond à des critères de recherche spécifiques. Par exemple, vous voudrez peut-être permettre à un gestionnaire de découverte électronique de rechercher uniquement les boîtes aux lettres des utilisateurs dans un lieu ou un service spécifique. Pour ce faire, vous créez un filtre qui utilise un filtre de destinataires pris en charge pour limiter les boîtes aux lettres qu’un utilisateur ou un groupe d’utilisateurs spécifique peut rechercher. Vous pouvez également créer un filtre qui spécifie le contenu de boîte aux lettres qu’un utilisateur peut rechercher. Pour cela, vous devez créer un filtre qui utilise une propriété de message pouvant faire l’objet d’une recherche. De même, vous pouvez laisser un gestionnaire eDiscovery rechercher uniquement des SharePoint sites spécifiques dans votre organisation. Pour ce faire, vous devez créer un filtre limitant les sites pouvant faire l’objet d’une recherche. Vous pouvez aussi créer un filtre qui spécifie le contenu de site pouvant être recherché. Pour ce faire, vous devez créer un filtre qui utilise une propriété de site pouvant faire l’objet d’une recherche.
 
 Les filtres d’autorisations de recherche sont appliqués lorsque vous recherchez du contenu à l’aide de la recherche de contenu, de core eDiscovery et de Advanced eDiscovery dans le Centre de conformité Microsoft 365. Lorsqu’un filtre d’autorisations de recherche est appliqué à un utilisateur spécifique, cet utilisateur peut effectuer les actions liées à la recherche suivantes :
 
@@ -61,7 +61,7 @@ Les quatre cmdlets suivantes dans Security & Compliance PowerShell vous permette
 
 - Consultez la section [More information](#more-information) pour plus d’informations sur les filtres d’autorisations de recherche.
 
-- Le filtrage des autorisations de recherche s’applique aux boîtes aux lettres inactives, ce qui signifie que vous pouvez utiliser le filtrage de contenu de boîte aux lettres et de boîtes aux lettres pour limiter les recherches dans une boîte aux lettres inactive. Pour plus [d’informations](#more-information) sur le filtrage des autorisations et les boîtes aux lettres inactives, consultez la section Plus d’informations.
+- Le filtrage des autorisations de recherche s’applique aux boîtes aux lettres inactives, ce qui signifie que vous pouvez utiliser le filtrage de contenu de boîte aux lettres et de boîtes aux lettres pour limiter les recherches dans une boîte aux lettres inactive. Pour plus [d’informations sur](#more-information) le filtrage des autorisations et les boîtes aux lettres inactives, consultez la section Plus d’informations.
 
 - Le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes autorisées à rechercher des dossiers publics dans Exchange.
 
@@ -81,13 +81,13 @@ Avant de pouvoir exécuter correctement le script dans cette section, vous devez
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
-2. Sur votre ordinateur local, ouvrez Windows PowerShell, allez dans le dossier où se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script . par exemple :
+2. Sur votre ordinateur local, ouvrez Windows PowerShell, allez dans le dossier où se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
 
     ```powershell
     .\ConnectEXO-SCC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter les cmdlets powerShell du centre Exchange Online sécurité et sécurité & conformité. Par exemple, vous pouvez exécuter **et Get-Mailbox** et **Get-ComplianceSearch**.
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter les cmdlets PowerShell du centre Exchange Online sécurité et sécurité & conformité. Par exemple, vous pouvez exécuter **Et Get-Mailbox** et **Get-ComplianceSearch**.
 
 Pour résoudre les erreurs de connexion PowerShell, voir :
 
@@ -113,7 +113,7 @@ Le  _paramètre FilterName_ spécifie le nom du filtre d’autorisations. Ce nom
 
 Le  _paramètre Filters_ spécifie les critères de recherche pour le filtre de sécurité de conformité. Vous pouvez créer trois types de filtres :  
 
-- **Filtrage de boîtes aux lettres OneDrive de boîtes aux lettres :** Ce type de filtre spécifie les boîtes aux lettres et OneDrive comptes que les utilisateurs affectés (spécifiés par le paramètre _Users)_ peuvent rechercher. Ce type de filtre est appelé *filtre* d’emplacement de contenu, car il définit les emplacements de contenu qu’un utilisateur peut rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_, où _MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour l’étendue des boîtes aux lettres et des comptes OneDrive qui peuvent être recherchés. Par exemple, le filtre de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les boîtes aux lettres et les comptes OneDrive dont la valeur est « OttawaUsers » dans la propriété `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` CustomAttribute10.
+- **Filtrage des** boîtes aux lettres ou des OneDrive : ce type de filtre spécifie les boîtes aux lettres et OneDrive comptes que les utilisateurs affectés (spécifiés par le paramètre _Utilisateurs)_ peuvent rechercher. Ce type de filtre est appelé *filtre* d’emplacement de contenu, car il définit les emplacements de contenu qu’un utilisateur peut rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_, où _MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour l’étendue des boîtes aux lettres et des comptes OneDrive qui peuvent être recherchés. Par exemple, le filtre de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les boîtes aux lettres et les comptes OneDrive dont la valeur est « OttawaUsers » dans la propriété `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` CustomAttribute10.
 
   Toute propriété de destinataire filtrable prise en charge peut être utilisée pour la propriété _MailboxPropertyName_ dans une boîte aux lettres ou un OneDrive filtre. Le tableau suivant liste quatre propriétés de destinataire couramment utilisées pour créer une boîte aux lettres ou un OneDrive filtre. Le tableau inclut également un exemple d’utilisation de la propriété dans un filtre.
 
@@ -125,7 +125,7 @@ Le  _paramètre Filters_ spécifie les critères de recherche pour le filtre de 
   |Service |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **Filtrage de contenu de boîte aux lettres :** Ce type de filtre est appliqué au contenu qui peut être recherché. Ce type de filtre est appelé *filtre* de contenu car il spécifie le contenu de boîte aux lettres que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_** _SearchablePropertyName: value_, où  _SearchablePropertyName_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche. Par exemple, le filtre de contenu de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les messages envoyés aux  `MailboxContent_recipients:contoso.com` destinataires dans contoso.com domaine. Pour obtenir la liste des propriétés de message utilisables dans une recherche, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md#searchable-email-properties)
+- **Filtrage de contenu de boîte aux lettres :** Ce type de filtre est appliqué au contenu qui peut être recherché. Ce type de filtre  est appelé filtre de contenu, car il spécifie le contenu de la boîte aux lettres ou les propriétés de courrier utilisables dans une recherche que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_** _SearchablePropertyName,  _où SearchablePropertyName_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche. Par exemple, le filtre de contenu de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les messages envoyés aux `"MailboxContent_Recipients  -like 'contoso.com'"` destinataires dans contoso.com domaine. Pour obtenir la liste des propriétés de messagerie utilisables dans une recherche, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md#searchable-email-properties)
 
   > [!IMPORTANT]
   > Un seul filtre de recherche ne peut pas contenir de filtre de boîte aux lettres et de contenu de boîte aux lettres. Pour les combiner dans un seul filtre, vous devez utiliser une liste [de filtres.](#using-a-filters-list-to-combine-filter-types)  Toutefois, un filtre peut contenir une requête plus complexe du même type. Par exemple, `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -145,7 +145,7 @@ Gardez les considérations suivantes à l’esprit lors de la configuration du p
 
 - Contrairement aux boîtes aux lettres, il n’existe pas de filtre d’emplacement de contenu pour les sites, même si le filtre *Site* ressemble à un filtre d’emplacement. Tous les filtres pour SharePoint et OneDrive sont des filtres de contenu (c’est également la raison pour laquelle les filtres *Site_* et *SiteContent_* sont interchangeables), car les propriétés liées au site telles que *Path* sont estampillées directement sur les documents. Pourquoi ? C’est le résultat de la façon dont SharePoint est conçu. Dans SharePoint, il n’existe pas d'« objet de site » avec des propriétés, comme c’est le cas avec Exchange boîtes aux lettres. Par conséquent, la *propriété Path* est estampillée sur le document et contient l’URL du site où se trouve le document. C’est pourquoi un filtre *de site* est considéré comme un filtre de contenu et non comme un filtre d’emplacement de contenu.
 
-- Vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour permettre aux administrateurs SharePoint de rechercher uniquement des sites SharePoint, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
+- Vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour autoriser SharePoint administrateurs à rechercher uniquement SharePoint sites, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
 
 ### <a name="users"></a>*Utilisateurs*
 
@@ -165,11 +165,11 @@ Lorsqu’un filtre qui contient une liste de filtres est traitement pendant l’
 
 Une alternative à l’utilisation d’une liste de filtres serait de créer deux filtres d’autorisations de recherche distincts. Ainsi, dans l’exemple précédent, vous créez un filtre pour l’attribut de boîte aux lettres et un filtre pour l’attribut de site. Dans les deux cas, les résultats sont identiques. L’utilisation d’une liste de filtres ou la création de filtres d’autorisations de recherche distincts est une question de préférence.
 
-Gardez les éléments suivants à l’esprit concernant l’utilisation d’une liste de filtres :
+Gardez les points suivants à l’esprit concernant l’utilisation d’une liste de filtres :
 
 - Vous devez utiliser une liste de filtres pour créer un filtre qui inclut un filtre **de** boîte aux lettres et un filtre **MailboxContent.**
 
-- Chaque composant d’une liste de filtres peut contenir une syntaxe de filtre complexe. Par exemple, la boîte aux lettres et les filtres de site peuvent contenir plusieurs filtres séparés par **un opérateur :**
+- Chaque composant d’une liste de filtres peut contenir une syntaxe de filtre complexe. Par exemple, les filtres de boîte aux lettres et de site peuvent contenir plusieurs filtres séparés par **un opérateur :**
 
    ```powershell
    -Filters "Mailbox_Department -eq 'CohoWinery' -or Mailbox_CustomAttribute10 -eq 'CohoUsers'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'"
@@ -197,7 +197,7 @@ Cet exemple permet aux utilisateurs donh et supf de rechercher uniquement les bo
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
 ```
 
-Cet exemple permet aux membres du groupe de rôles « Fourth Coffee eDiscovery Managers » de rechercher uniquement les boîtes aux lettres et les comptes OneDrive qui ont la valeur « FourthCoffee » pour la propriété de boîte aux lettres Department. Le filtre permet également aux membres du groupe de rôles de rechercher des documents dans le site fourth coffee SharePoint.
+Cet exemple permet aux membres du groupe de rôles « Fourth Coffee eDiscovery Managers » de rechercher uniquement les boîtes aux lettres et les comptes OneDrive dont la valeur est « FourthCoffee » pour la propriété de boîte aux lettres Department. Le filtre permet également aux membres du groupe de rôles de rechercher des documents dans le site Fourth Coffee SharePoint.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
@@ -256,7 +256,7 @@ Cet exemple empêche toute personne de l’organisation d’effectuer des action
 New-ComplianceSecurityFilter -FilterName NoSaraJanet -Users All -Filters "MailboxContent_Participants -notlike 'janets@contoso.onmicrosoft.com' -and MailboxContent_Participants -notlike 'sarad@contoso.onmicrosoft.com'"
 ```
 
-Cet exemple utilise une liste de filtres pour combiner des filtres de boîte aux lettres et de site. Dans cet exemple, le filtre de boîte aux lettres est un filtre d’emplacement de contenu et le filtre de site est un filtre de contenu.
+Cet exemple utilise une liste de filtres pour combiner les filtres de boîte aux lettres et de site. Dans cet exemple, le filtre de boîte aux lettres est un filtre d’emplacement de contenu et le filtre de site est un filtre de contenu.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery'"
@@ -276,7 +276,7 @@ Le  _paramètre FilterName_ spécifie le nom du filtre d’autorisations.
 
 ### <a name="users"></a>*Utilisateurs*
 
-Le  _paramètre Users_ spécifie les utilisateurs qui obtiennent ce filtre appliqué à leurs recherches. Étant donné qu’il s’agit d’une propriété à valeurs multiples, la spécification d’un utilisateur ou d’un groupe d’utilisateurs avec ce paramètre a pour effet de réécrire la liste d’utilisateurs existante. Consultez les exemples suivants pour obtenir la syntaxe qui permet d’ajouter et de supprimer des utilisateurs sélectionnés.
+Le  _paramètre Users_ spécifie les utilisateurs qui obtiennent ce filtre appliqué à leurs recherches. Étant donné qu’il s’agit d’une propriété à valeurs multiples, la spécification d’un utilisateur ou d’un groupe d’utilisateurs avec ce paramètre a pour effet de réécrire la liste d’utilisateurs existante. Consultez les exemples suivants pour obtenir la syntaxe d’ajout et de suppression des utilisateurs sélectionnés.
 
 Vous pouvez également utiliser le paramètre _Users_ pour spécifier un groupe Centre de conformité Microsoft 365 rôle principal. Cela vous permet de créer un groupe de rôles personnalisé, puis d’attribuer à ce groupe de rôles un filtre d’autorisations de recherche. Par exemple, supposons que vous disposez d’un groupe de rôles personnalisé pour les gestionnaires de découverte électronique de la filiale américaine d’une multinationale. Vous pouvez utiliser le paramètre  _Users_ pour spécifier ce groupe de rôles (à l’aide de la propriété Name du groupe de rôles), puis utiliser le paramètre  _Filter_ pour autoriser uniquement la recherche de boîtes aux lettres aux États-Unis. Vous ne pouvez pas spécifier de groupes de distribution avec ce paramètre.
 
@@ -284,9 +284,9 @@ Vous pouvez également utiliser le paramètre _Users_ pour spécifier un groupe 
 
 Le  _paramètre Filters_ spécifie les critères de recherche pour le filtre de sécurité de conformité. Vous pouvez créer trois types de filtres :
 
-- **Filtrage des boîtes aux OneDrive et des boîtes aux lettres :** Ce type de filtre spécifie les boîtes aux lettres et OneDrive comptes que les utilisateurs affectés (spécifiés par le paramètre _Users)_ peuvent rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_,  _où MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour l’étendue des boîtes aux lettres qui peuvent être recherchés. Par exemple, le filtre de boîte aux lettres autoriserait l’utilisateur affecté à ce filtre à rechercher uniquement les boîtes aux lettres dont la valeur est « OttawaUsers » dans la  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` propriété CustomAttribute10.  Toute propriété de destinataire filtrable prise en charge peut être utilisée pour la _propriété MailboxPropertyName._ Pour obtenir la liste des propriétés pris en charge, voir [Propriétés filtrables pour le paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties).
+- **Filtrage des** boîtes aux lettres et des OneDrive : ce type de filtre spécifie les boîtes aux lettres et OneDrive comptes que les utilisateurs affectés (spécifiés par le paramètre _Utilisateurs)_ peuvent rechercher. La syntaxe de ce type de filtre est **Mailbox_** _MailboxPropertyName_,  _où MailboxPropertyName_ spécifie une propriété de boîte aux lettres utilisée pour l’étendue des boîtes aux lettres qui peuvent être recherchés. Par exemple, le filtre de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les boîtes aux lettres dont la valeur est « OttawaUsers » dans la  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` propriété CustomAttribute10.  Toute propriété de destinataire filtrable prise en charge peut être utilisée pour la _propriété MailboxPropertyName._ Pour obtenir la liste des propriétés pris en charge, voir [Propriétés filtrables pour le paramètre -RecipientFilter](/powershell/exchange/recipientfilter-properties).
 
-- **Filtrage de contenu de boîte aux lettres :** Ce type de filtre est appliqué au contenu qui peut être recherché. Il spécifie le contenu de boîte aux lettres que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_** _SearchablePropertyName:value_,  _où SearchablePropertyName_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche. Par exemple, le filtre de contenu de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les messages envoyés aux  `MailboxContent_recipients:contoso.com` destinataires dans contoso.com domaine.  Pour obtenir la liste des propriétés de message utilisables dans une recherche, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md) 
+- **Filtrage de contenu de boîte aux lettres :** Ce type de filtre est appliqué au contenu qui peut être recherché. Il spécifie le contenu de boîte aux lettres que les utilisateurs affectés peuvent rechercher. La syntaxe de ce type de filtre est **MailboxContent_**_SearchablePropertyName_,  _où SearchablePropertyName_ spécifie une propriété KQL (Keyword Query Language) qui peut être spécifiée dans une recherche. Par exemple, le filtre de contenu de boîte aux lettres permet à l’utilisateur affecté à ce filtre de rechercher uniquement les messages envoyés aux `"MailboxContent_Recipients  -like 'contoso.com'"` destinataires dans contoso.com domaine.  Pour obtenir la liste des propriétés de messagerie utilisables dans une recherche, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md)
 
 - **Filtrage de contenu de site et de site :** Il existe deux filtres SharePoint et OneDrive Entreprise de site que vous pouvez utiliser pour spécifier le site ou le contenu de site que les utilisateurs affectés peuvent rechercher :
 
@@ -339,7 +339,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   <SearchQuery> AND <PermissionsFilter>
   ```
 
-  Par exemple, vous avez un filtre d’autorisations qui permet à Bob d’effectuer toutes les actions de recherche sur les boîtes aux lettres des membres du groupe de distribution Workers. Ensuite, Bob exécute une recherche sur toutes les boîtes aux lettres de l’organisation avec la requête de  `sender:jerry@adatum.com` recherche. Étant donné que le filtre d’autorisations et la requête de recherche sont combinés logiquement par un opérateur **AND,** la recherche renvoie tout message envoyé par jerry@adatum.com à tout membre du groupe de distribution Workers. 
+  Par exemple, vous avez un filtre d’autorisations qui permet à Bob d’effectuer toutes les actions de recherche sur les boîtes aux lettres des membres du groupe de distribution Workers. Ensuite, Bob exécute une recherche sur toutes les boîtes aux lettres de l’organisation avec la requête de  `sender:jerry@adatum.com` recherche. Étant donné que le filtre d’autorisations et la requête de recherche sont combinés logiquement par un opérateur **AND,** la recherche renvoie tous les messages envoyés par jerry@adatum.com à tout membre du groupe de distribution Workers. 
 
 - **Que se passe-t-il si vous disposez de plusieurs filtres d’autorisations de recherche ?** Dans une requête de recherche, plusieurs filtres d’autorisations sont combinés par **des opérateurs booléens OR.** Par conséquent, des résultats sont renvoyés si l’un des filtres détecte une condition recherchée. Dans une recherche, tous les filtres (combinés par des opérateurs **OR)** sont ensuite combinés à la requête de recherche par **l’opérateur AND.**
 
@@ -353,7 +353,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   
 - **Le filtrage des autorisations de recherche fonctionne-t-il pour les dossiers publics ?** Non. Comme indiqué précédemment, le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes autorisées à rechercher des dossiers publics dans Exchange. Par exemple, les éléments des emplacements de dossiers publics ne peuvent pas être exclus des résultats de la recherche par un filtre d’autorisations.
 
-- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme indiqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour permettre aux administrateurs SharePoint de rechercher uniquement des sites SharePoint, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
+- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme expliqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour autoriser SharePoint administrateurs à rechercher uniquement SharePoint sites, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
 
 - **Les filtres d’autorisations de recherche sont-ils comptabilisés dans les limites des caractères de requête de recherche ?** Oui. Les filtres d’autorisations de recherche comptent par rapport à la limite de caractères pour les requêtes de recherche. Pour plus d’informations, [voir Limites dans Advanced eDiscovery](limits-ediscovery20.md).
 

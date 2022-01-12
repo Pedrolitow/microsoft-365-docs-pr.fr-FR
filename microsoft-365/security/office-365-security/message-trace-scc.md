@@ -11,17 +11,15 @@ ms.localizationpriority: medium
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 description: Les administrateurs peuvent utiliser le lien de suivi des messages dans le portail Microsoft 365 Defender pour savoir ce qui est arrivé aux messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7d4437ef6029024452f17d51753a3ca6c865166
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 934a8a0cf3c6eb0b828e334252707043d0d87e03
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423190"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938155"
 ---
 # <a name="message-trace-in-the-microsoft-365-defender-portal"></a>Suivi des messages dans le portail Microsoft 365 Defender web
 
@@ -32,12 +30,12 @@ ms.locfileid: "61423190"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le suivi des messages dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">le portail Microsoft 365 Defender suit</a> les messages électroniques lors de leur déplacement dans Exchange Online organisation. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
+Le suivi des message suit les messages électroniques pendant leur circulation dans votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
 Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions des utilisateurs sur ce qui est arrivé aux messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
-> Le suivi des messages dans Microsoft 365 Defender portail d’administration est simplement un accès au suivi des messages dans Exchange d’administration. Pour plus d’informations, voir [suivi des messages dans le centre d’administration Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">moderne.</a>](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)
+> Le suivi des messages dans Microsoft 365 Defender portail d’administration est simplement un accès au suivi des messages dans Exchange d’administration. Pour plus d’informations, voir [suivi des messages dans le centre d’administration Exchange moderne.](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -49,6 +47,6 @@ Vous pouvez utiliser les informations du suivi des messages pour répondre effic
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
-Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & collaboration** Exchange message \> **trace**. Ou, pour aller directement à la page de suivi des messages, utilisez <https://admin.exchange.microsoft.com/#/messagetrace> .
+In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration** Exchange \> **message trace**. Pour aller directement à la page de suivi des messages, utilisez <https://admin.exchange.microsoft.com/#/messagetrace> .
 
 À ce stade, le suivi des messages dans le EAC s’ouvre. Pour plus d’informations, voir [suivi des messages dans le centre d’administration Exchange moderne.](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 6519cf97fb35bfb0eb7b325475d4ce350ec0c3bb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724439"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936979"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -37,7 +37,7 @@ Pour vous aider à trouver les informations dont vous avez besoin plus rapidemen
 
 - Identité (Azure Active Directory comptes & rôles)
 - Appareil (Microsoft Defender pour point de terminaison, appelé [Score de sécurité Microsoft pour les appareils)](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
-- Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Cloud App Security)
+- Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Defender pour les applications cloud)
 
 >[!NOTE]
 >Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
@@ -50,11 +50,11 @@ Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la rép
 
 Pour vérifier votre score actuel, consultez la page vue d’ensemble du niveau de sécurisation Microsoft et recherchez la vignette qui indique **Votre score de sécurité.** Votre score s’affiche sous la mesure d’un pourcentage, ainsi que le nombre de points que vous avez obtenus sur le nombre total de points possibles.
 
-En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, vous pouvez choisir différents affichages de votre score. Ces différentes vues de score s’affichent dans le graphique sur la vignette de score et le graphique de répartition des points.
+En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, vous pouvez choisir différentes vues de votre score. Ces différentes vues de score s’affichent dans le graphique sur la vignette de score et le graphique de répartition des points.
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -95,7 +95,7 @@ Choisissez les états et les notes d’enregistrement spécifiques à l’action
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d& gestion des vulnérabilités d’amélioration des menaces
 
-Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) serez dirigé vers la recommandation de sécurité Gestion des menaces et des vulnérabilités associée dans la [Centre de sécurité Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) pour prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
+Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous serez dirigé vers les recommandations Gestion des menaces et des vulnérabilités [sécurité](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) de l’Centre de sécurité Microsoft Defender [pour](/windows/security/threat-protection/microsoft-defender-atp/use) prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Actions d’amélioration terminées
 
@@ -109,9 +109,9 @@ La section appelée **En un coup d’œil** vous indique la catégorie, les atta
 
 ### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
 
-La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et les liens supplémentaires.
+La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et d’autres liens.
 
-Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration ne soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

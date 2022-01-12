@@ -18,16 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 51d5c07c444a7fe16fbbde0f8cdeeee3a0c3b718
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: b7ea947623ec14d14f0be60c867f2c647d8ff811
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422734"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932488"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluer Microsoft Defender pour Office 365
 
@@ -43,17 +41,17 @@ L’expérience d’évaluation de [Microsoft Defender](defender-for-office-365.
 Si vous n’avez pas encore de licence qui prend en charge Microsoft Defender pour Office 365, vous pouvez démarrer une évaluation gratuite de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) jours et tester les fonctionnalités dans le portail Microsoft 365 Defender sur <https://security.microsoft.com> . Vous pourrez profiter de la mise en place rapide et la désactiver facilement si nécessaire.
 
 > [!NOTE]
-> Si vous êtes dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>vous pouvez démarrer une évaluation defender pour Office 365 ici : Envoyer un e-mail **& Stratégies** de collaboration & Règles stratégies de menace Mode d’évaluation dans la \>  \>  \>  section Autres. 
+> Si vous êtes dans le portail Microsoft 365 Defender à l’adresse , vous pouvez démarrer une évaluation defender pour Office 365 ici : Email <https://security.microsoft.com> **& Collaboration** Policies \> **& Rules** Threat \> **policies** \> **Evaluation mode** in the **Others** section. Ou, pour aller directement à la page **mode d’évaluation,** utilisez <https://security.microsoft.com/atpEvaluation> .
 
 ## <a name="how-the-evaluation-works"></a>Fonctionnement de l’évaluation
 
 Defender for Office 365 en mode d’évaluation crée Defender pour les stratégies de messagerie Office 365 qui enregistrent les verdicts, tels que les programmes malveillants, mais n’agissent pas sur les messages. Vous n’êtes pas obligé de modifier la configuration de votre enregistrement MX.
 
-Avec le mode [d’évaluation, Coffre pièces jointes,](safe-attachments.md)les liens [Coffre](safe-links.md)et l’intelligence des boîtes aux lettres dans les stratégies [anti-ishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sont définies en votre nom. Toutes les stratégies defender Office 365 sont créées en mode non d’application en arrière-plan et ne sont pas visibles pour vous.
+Avec le mode [d’évaluation, Coffre pièces jointes,](safe-attachments.md)les liens [Coffre](safe-links.md)et l’intelligence des boîtes aux lettres dans les stratégies [anti-ishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) sont définies en votre nom. Toutes les stratégies defender Office 365 sont créées en mode non d’application en arrière-plan et ne sont pas visibles pour vous.
 
-Dans le cadre de l’installation, le mode d’évaluation configure également le filtrage amélioré pour les  [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (également appelé ignorer la _liste)._ Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies anti-courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
+Dans le cadre de l’installation, le mode d’évaluation configure également le filtrage amélioré pour les [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (également appelé ignorer la _liste)._ Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies anti-courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
 
-Le filtrage amélioré pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous disposez d’un esG devant Defender pour Office 365 et que vous ne contournez actuellement pas le filtrage EOP. L’impact est limité aux stratégies EOP ; Defender for Office 365 stratégies définies dans le cadre de l’évaluation sont créées en mode non d’application. Pour minimiser l’impact potentiel sur la production, vous pouvez contourner la plupart du filtrage EOP en créant une règle de flux de messagerie (également appelée règle de transport) pour définir le niveau de confiance du courrier indésirable (SCL) des messages sur -1. Voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)dans les messages Exchange Online   pour plus d’informations.
+Le filtrage amélioré pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous disposez d’un esG devant Defender pour Office 365 et que vous ne contournez actuellement pas le filtrage EOP. L’impact est limité aux stratégies EOP ; Defender for Office 365 stratégies définies dans le cadre de l’évaluation sont créées en mode non d’application. Pour minimiser l’impact potentiel sur la production, vous pouvez contourner la plupart du filtrage EOP en créant une règle de flux de messagerie (également appelée règle de transport) pour définir le niveau de confiance du courrier indésirable (SCL) des messages sur -1. Voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) dans les messages Exchange Online pour plus d’informations.
 
 Lorsque le mode d’évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu’à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer au courrier indésirable, mettre en quarantaine). Des rapports sont générés pour toutes les détections Defender Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l’emprunt d’identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour des messages de profondeur à l’aide de l’Explorateur.
 
@@ -121,7 +119,7 @@ Les liens d’URL dans les corps des messages électroniques ne seront pas encap
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur. [ En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur. [En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Les scénarios de routage de courrier pris en charge sont les suivants :
 
@@ -148,7 +146,7 @@ Vous serez en mesure d’élargir l’étendue de l’évaluation à un connecte
 
 ## <a name="get-started-with-the-evaluation"></a>Mise en place de l’évaluation
 
-Recherchez la carte de Office 365 d’évaluation Microsoft Defender dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender à</a> partir de trois points d’accès :
+Recherchez la carte de Office 365 d’évaluation Microsoft Defender pour entreprise dans le portail Microsoft 365 Defender à partir des points d’accès suivants :
 
 - **Points de terminaison** \> **Gestion des vulnérabilités** \> **Tableau de bord** ( <https://security.microsoft.com/tvm_dashboard> )
 - **Collaboration par & messagerie** \> **Stratégies & règles** \> **Stratégies de menace** ( <https://security.microsoft.com/threatpolicy> )
@@ -168,7 +166,7 @@ Votre rapport d’évaluation Office 365 Microsoft Defender pour entreprise est 
 
 ### <a name="exchange-mail-flow-rules-optional"></a>Exchange de flux de messagerie (facultatif)
 
-Si vous avez une passerelle existante, l’activation du mode d’évaluation active le filtrage amélioré pour les connecteurs. Cette fonctionnalité améliore la précision du filtrage en modifiant l’adresse IP de l’expéditeur entrant. Cette fonctionnalité peut modifier les verdicts de filtre et, si vous ne contournez pas Exchange Online Protection, cela peut modifier la livrabilité de certains messages. Dans ce cas, vous pouvez ignorer temporairement le filtrage pour analyser l’impact. Pour contourner le filtrage, ouvrez le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> et créez une règle de flux de messagerie qui définit le SCL des messages sur -1 (si vous n’en avez pas déjà). Pour obtenir des instructions, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)dans les messages Exchange Online .
+Si vous avez une passerelle existante, l’activation du mode d’évaluation active le filtrage amélioré pour les connecteurs. Cette fonctionnalité améliore la précision du filtrage en modifiant l’adresse IP de l’expéditeur entrant. Cette fonctionnalité peut modifier les verdicts de filtre et, si vous ne contournez pas Exchange Online Protection, cela peut modifier la livrabilité de certains messages. Dans ce cas, vous pouvez ignorer temporairement le filtrage pour analyser l’impact. Pour contourner le filtrage, créez une règle de flux de messagerie (également appelée règle de transport) dans le Centre d’administration Exchange (EAC) qui définit le SCL des messages sur -1 (si vous n’en avez pas <https://admin.exchange.microsoft.com/#/transportrules> déjà). Pour obtenir des instructions, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)dans les messages Exchange Online .
 
 ## <a name="evaluate-capabilities"></a>Évaluer les fonctionnalités
 

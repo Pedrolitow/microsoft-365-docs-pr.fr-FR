@@ -11,24 +11,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis à l’aide de fonctionnalités automatisées d’examen et de réponse dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8561abc3477ccf0dd627b7d69f2761940972435d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962890"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937687"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et une réponse automatisés
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
 [Microsoft Defender pour Office 365 Plan 2 inclut](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) de puissantes fonctionnalités d’investigation [et](office-365-air.md) de réponse automatisées (AIR). Ces fonctionnalités peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité pour gérer les menaces. Microsoft continue d’améliorer les fonctionnalités de sécurité. Récemment, les fonctionnalités AIR ont été améliorées pour inclure un manuel de sécurité utilisateur compromis (actuellement en prévisualisation). Lisez cet article pour en savoir plus sur le manuel de sécurité des utilisateurs compromis. Pour plus d’informations, voir le billet de blog Accélérer le temps de détection et de réponse à la compromission de l’utilisateur et limiter l’étendue des violations avec [Microsoft Defender pour Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) plus d’informations.
@@ -68,7 +68,7 @@ Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées
 
 Vous avez plusieurs options pour naviguer vers une liste d’utilisateurs restreints. Par exemple, dans le portail Microsoft 365 Defender, vous pouvez aller à **Email & collaboration** \> **Review** \> **Restricted Users**. La procédure suivante décrit la navigation à l’aide du tableau de bord **Alertes,** qui est un bon moyen de voir différents types d’alertes qui ont pu être déclenchées.
 
-1. Ouvrez le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender et</a> allez à **Incidents &** \> **alertes**. Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
+1. Ouvrez le portail Microsoft 365 Defender et allez à <https://security.microsoft.com> **Incidents &** \> **alertes**. Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
 
 2. Dans la page **Alertes,** filtrez les résultats par période et la stratégie nommée Utilisateur ne peut pas envoyer **de courrier électronique.**
 
@@ -92,7 +92,7 @@ Pour en savoir plus, [consultez les détails d’une enquête.](air-view-investi
 
 - **Ne comptez pas sur une alerte de connexion suspecte comme seul indicateur.** Lorsqu’un compte d’utilisateur est compromis, il peut ou non déclencher une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produisent après qu’un compte est compromis qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Voir [stratégies d’alerte.](../../compliance/alert-policies.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

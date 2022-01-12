@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217649"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938479"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -62,19 +62,19 @@ Téléchargez l’exemple CSV pour connaître les attributs de colonne pris en c
 
 Le tableau suivant indique les paramètres pris en charge.
 
-Paramètre|Type|Description
+Parameter|Type|Description
 :---|:---|:---
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|String|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-title|String|Titre de l’alerte de l’indicateur. **Obligatoire**
-description|String| Description de l’indicateur. **Obligatoire**
-expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. **Optional**
+title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
+description|Chaîne| Description de l’indicateur. **Obligatoire**
+expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. L’indicateur est supprimé si le délai d’expiration est passé et que tout ce qui se produit au moment de l’expiration se produit aux secondes (SS). **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|String|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 category|String|Catégorie de l’alerte. Exemples : exécution et accès aux informations d’identification. **Optional**
-mitretechniques|String|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+mitretechniques|Chaîne|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
 GenerateAlert|String|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
 
 

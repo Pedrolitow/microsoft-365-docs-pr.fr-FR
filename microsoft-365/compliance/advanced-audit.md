@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 5f132f5e17f92f4a155a68d2f0151588034d3a9d
-ms.sourcegitcommit: 678e827a1c3bc9f4edfc48003f9b29f7bbf20ab5
+ms.openlocfilehash: 4a378071a59d2462cff1af5b87f9ab99d1e1337f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61649522"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939152"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 

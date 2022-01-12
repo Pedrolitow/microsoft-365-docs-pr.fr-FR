@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f370e1a491006a5dc42df807994db97f68abcb0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168917"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937843"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Accorder un accès au fournisseur de services de sécurité gérés (MSSP) (prévisualisation)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
@@ -55,7 +55,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint.
 
-    Pour activer RBAC dans l’Centre de sécurité Microsoft Defender client, accédez aux **autorisations Paramètres > > Rôles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le portail d’Microsoft 365 Defender du client, accédez aux **autorisations Paramètres > > Rôles** et « Activer les rôles », à partir d’un compte d’utilisateur ayant des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP.](images/mssp-access.png)
 
@@ -128,9 +128,9 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Approuver ou refuser des demandes dans la section **Approbations** de l’interface utilisateur.
 
-    À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder aux informations du client Centre de sécurité Microsoft Defender :`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    À ce stade, l’accès analyste a été mis en service et chaque analyste doit pouvoir accéder au portail Microsoft 365 Defender client :`https://security.microsoft.com/?tid=<CustomerTenantId>`
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Accéder au portail client MSSP](access-mssp-portal.md)
 - [Configurer des notifications d’alerte](configure-mssp-notifications.md)

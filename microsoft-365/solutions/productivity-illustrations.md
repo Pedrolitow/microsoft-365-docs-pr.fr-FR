@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372467"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867628"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -30,6 +30,16 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 | Item | Description |
 |:-----|:-----|
 |[![Teams’architecture logique.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Mise à jour de janvier 2021   |Microsoft fournit une suite de services de productivité qui fonctionnent ensemble pour fournir une expérience de collaboration avec la gouvernance des données, la sécurité et la conformité. <br/> <br/>Cette série d’illustrations fournit une visibilité de l’architecture logique de services de productivité pour les architectes d’entreprise, fonctionnant avec Microsoft Teams.|
+
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Communications d’entreprise avec Microsoft 365 : étude de cas Contoso
+L’engagement des employés contribue de manière significative à la satisfaction, à la rétention et à la productivité de l’espace de travail au niveau de n’importe quelle organisation. Dans Microsoft 365, il existe plusieurs façons de communiquer et d’impliquer votre public. 
+
+Le fait de connaître la méthode (ou les combinaisons de méthodes) à utiliser et quand les utiliser dépend de votre public et de la culture de communication de votre organisation. 
+
+| Item | Description |
+|:-----|:-----|
+|[![Teams’architecture logique.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Mise à jour de janvier 2022   |Cette affiche montre comment Contoso tient les employés informés et impliqués dans les scénarios de communication les plus courants. Contoso utilise une variété d’applications M365, y compris une nouvelle offre, Connections Connections.<br/><br/>**Guides de solution associés** <br/> <ul><li>[Communications organisationnelles : conseils, méthodes et produits](/sharepoint/corporate-communications-overview)|
+
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique

@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: f333b872ee89bf37dcf8404ba7d2ce05f6cc2703
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 8f8ef31b037709f7b5b87c888f40b1a5a3a5b438
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122344"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940161"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’Microsoft 365 Defender d’évaluation de la sécurité
 

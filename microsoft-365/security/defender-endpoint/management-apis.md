@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93c6a162d164a473d480df4595a05e36206f8526
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 48628ce70c64e37306a346459c65fef855975778
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283040"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937339"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API
 
@@ -88,7 +88,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender API de diffusion en con
 
 ## <a name="siem-api"></a>SIEM API
 
-Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cette action active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
+Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Microsoft 365 Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cette action active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
 
 ## <a name="related-topics"></a>Voir aussi
 

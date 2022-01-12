@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d3cf5259aeb070175d5d2a4a95154974c6cd4d56
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560383"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867821"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Vue d’ensemble de Microsoft Defender for Cloud Apps in Defender for Endpoint
 
@@ -52,7 +52,7 @@ L’intégration apporte les améliorations majeures suivantes à la découverte
 
 - Disponible partout : étant donné que l’activité réseau est collectée directement à partir du point de terminaison, elle est disponible partout où l’appareil se trouve, sur ou en dehors du réseau d’entreprise, car il ne dépend plus du trafic acheminé via le pare-feu d’entreprise ou les serveurs proxy.
 
-- Ne fonctionne pas, aucune configuration n’est requise : le transport des journaux de trafic cloud vers Defender pour les applications cloud nécessite une configuration de pare-feu et de serveur proxy. Avec l’intégration de Defender for Endpoint et Defender for Cloud Apps, aucune configuration n’est requise. Il vous suffit de l’Centre de sécurité Microsoft Defender dans les paramètres de votre environnement. \
+- Ne fonctionne pas, aucune configuration n’est requise : le transport des journaux de trafic cloud vers Defender pour les applications cloud nécessite une configuration de pare-feu et de serveur proxy. Avec l’intégration de Defender for Endpoint et Defender for Cloud Apps, aucune configuration n’est requise. Il vous suffit de l’Microsoft 365 Defender paramètres et vous êtes bon à aller.
 
 - Contexte de périphérique : les journaux de trafic cloud n’ont pas de contexte de périphérique. L’activité réseau de Defender for Endpoint est signalée avec le contexte de périphérique (quel appareil a accédé à l’application cloud), afin que vous compreniez exactement où (appareil) l’activité réseau a eu lieu, en plus de qui (utilisateur) l’a effectuée.
 

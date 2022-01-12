@@ -1,5 +1,5 @@
 ---
-title: 'Phase de déploiement des règles asr 2 : test'
+title: 'Phase 2 du déploiement des règles ASR : tester'
 description: Fournit des conseils pour tester le déploiement de vos règles de réduction de la surface d’attaque.
 keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33e62ce97b5fa1374369a0d212b0c615b47f4c5f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 996727e59108b13f32b4138713a6e54d9192218c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218117"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940565"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>Phase 2 du déploiement des règles de réduction de la surface d’attaque : test
 
@@ -164,12 +164,45 @@ Cet onglet fournit une méthode pour sélectionner les entités détectées (par
 > [!Note]
 >Si vous avez une licence Microsoft Defender 365 E5 (ou Windows E5 ?), ce lien ouvre l’onglet Réductions [](https://security.microsoft.com/asr?viewid=exclusions) de la surface d’attaque de Microsoft Defender 36 > 5 > de la surface d’attaque.
 
+### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>Utiliser PowerShell comme méthode alternative pour activer les règles de la asr
+
+Vous pouvez utiliser PowerShell , comme alternative à MEM, pour activer les règles asr en mode audit afin d’afficher un enregistrement des applications qui auraient été bloquées si la fonctionnalité était entièrement activée. Vous pouvez également avoir une idée de la fréquence de tir des règles lors d’une utilisation normale.
+
+Pour activer une règle de réduction de la surface d’attaque en mode audit, utilisez l’cmdlet PowerShell suivante :
+
+```PowerShell
+Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+```
+
+Où `<rule ID>` se trouve une valeur GUID de la règle de réduction de la surface [d’attaque](attack-surface-reduction-rules-reference.md).
+
+Pour activer toutes les règles de réduction de la surface d’attaque ajoutées en mode audit, utilisez l’cmdlet PowerShell suivante :
+
+```PowerShell
+(Get-MpPreference).AttackSurfaceReductionRules_Ids | Foreach {Add-MpPreference -AttackSurfaceReductionRules_Ids $_ -AttackSurfaceReductionRules_Actions AuditMode}
+```
+
+> [!TIP]
+> Si vous souhaitez auditer entièrement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
+
+Vous pouvez également utiliser une stratégie de groupe, Intune ou des fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer et déployer le paramètre. En savoir plus dans l’article principal des règles de [réduction de la surface d’attaque.](attack-surface-reduction.md)
+
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Utiliser la Windows de l’Observateur d’événements comme alternative à la page de rapport des règles de réduction de la surface d’attaque dans Microsoft 365 Defender portail
+
+Pour passer en revue les applications qui auraient été bloquées, ouvrez l’Observateur d’événements et filtrez l’ID d’événement 1121 dans le journal microsoft-Windows-Windows Defender/opérationnel. Le tableau suivant répertorie tous les événements de protection réseau.
+
+ID d’événement | Description
+-|-
+ 5007 | Événement lorsque les paramètres sont modifiés
+ 1121 | Événement lorsqu’une règle de réduction de la surface d’attaque se déclenche en mode blocage
+ 1122 | Événement lorsqu’une règle de réduction de la surface d’attaque se déclenche en mode audit
+
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
 [Guide de déploiement des règles asr : vue d’ensemble](attack-surface-reduction-rules-deployment.md)
 
-[Phase de déploiement des règles asr 1 : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1 du déploiement des règles ASR : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Phase 3 de déploiement des règles asr : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3 du déploiement des règles ASR : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Phase de déploiement des règles asr 4 : opérationnel](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4 de déploiement des règles ASR : opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)

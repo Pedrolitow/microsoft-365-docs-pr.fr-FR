@@ -13,23 +13,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f0828d24ddb4c02d533d0fced2389ca3cb61ce4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 61b28cc51eefed92aeb3319e8972a31c3cf310dc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167069"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938383"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Installation de l’appareil de contrôle d’appareil Microsoft Defender for Endpoint 
 
 **S’applique à**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint Device Control Removable Stockage Access Control vous permet d’accomplir la tâche suivante :
 
 - Empêcher les personnes d’installer des appareils spécifiques.
-- Autoriser les utilisateurs à installer des appareils spécifiques, mais en empêcher d’autres.
+- Autoriser les utilisateurs à installer des appareils spécifiques, mais à en empêcher d’autres.
 
 > [!NOTE]
 > Pour trouver la différence entre l’installation de l’appareil et le contrôle d’accès au stockage amovible, voir [Microsoft Defender for Endpoint Device Control Removable Stockage Protection.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)
@@ -271,7 +271,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="bloquer le stockage":::
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>Comment savoir si l’ordinateur cible obtient la stratégie déployée ? 
 Vous pouvez utiliser la requête suivante pour obtenir la version du client anti-programme malveillant sur le portail Microsoft 365 sécurité :

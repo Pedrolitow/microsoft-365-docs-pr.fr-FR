@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166217"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873608"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -345,6 +345,7 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
 - La valeur du délai d’inactivité de la session de réponse active est de 30 minutes.
+- La valeur du délai d’inactivité de la commande Getfile est de 30 minutes. Il est considéré comme inactif pendant l’exécution de la commande en arrière-plan.
 - Un utilisateur peut démarrer jusqu’à 10 sessions simultanées.
 - Un appareil ne peut être connecté qu’à une seule session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :

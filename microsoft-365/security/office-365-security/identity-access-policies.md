@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 92834840bc020693d6edd203b04ad427ebb80045
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4f725a74d63feaffeba43dd832ed4eb1df744d7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284168"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935401"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
 
@@ -202,7 +202,7 @@ Dans la deuxième section **Affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Accès|**Autoriser l’accès**||Sélectionner|
+|Access|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
 |
 
@@ -244,16 +244,14 @@ Pour créer une stratégie de protection des applications pour chaque plateforme
 
 Pour appliquer les stratégies de protection des applications que vous avez appliquées dans Intune, vous devez créer une stratégie d’accès conditionnel pour exiger des applications clientes approuvées et les conditions définies dans les stratégies de protection des applications.
 
-L’application de stratégies de protection des applications nécessite un ensemble de stratégies décrites dans la stratégie Exiger la protection des applications pour l’accès aux applications [cloud avec accès conditionnel.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Ces stratégies sont incluses dans cet ensemble recommandé de stratégies de configuration des identités et des accès.
+L’application de stratégies de protection des applications nécessite un ensemble de stratégies décrites dans La stratégie Exiger la protection des applications pour l’accès aux applications [cloud avec accès conditionnel.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Ces stratégies sont incluses dans cet ensemble recommandé de stratégies de configuration des identités et des accès.
 
-Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et la protection des applications, suivez « Étape 1 : Configurer une stratégie d’accès conditionnel Azure AD pour Microsoft 365 » dans le scénario [1](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies): Microsoft 365 les applications nécessitent des applications approuvées avec des stratégies de protection des applications, ce qui permet de Outlook pour iOS et Android, mais bloque OAuth capable Exchange ActiveSync clients de se connecter à Exchange Online.
+Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et la protection des applications, suivez les étapes de l’accès conditionnel : exiger des applications [clientes](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection)approuvées ou une stratégie de protection des applications, qui permet uniquement aux comptes au sein des applications protégées par les stratégies de protection des applications d’accéder aux points de terminaison Microsoft 365.
 
    > [!NOTE]
-   > Cette stratégie garantit que les utilisateurs mobiles peuvent accéder à tous Office terminaison à l’aide des applications applicables.
+   > Cette stratégie garantit que les utilisateurs mobiles peuvent accéder à tous Microsoft 365 terminaison à l’aide des applications applicables.
 
-Si vous activez l’accès mobile à Exchange Online, implémentez les [clients Block ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)ce qui empêche les clients Exchange ActiveSync utilisant l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
-
-Pour créer la stratégie d’accès conditionnel qui nécessite Edge pour iOS et Android, suivez « Étape 2 : Configurer une stratégie d’accès conditionnel Azure AD pour Microsoft 365 » dans le scénario [2](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies): les applications de navigateur nécessitent des applications approuvées avec des stratégies de protection des applications, ce qui permet à Edge pour iOS et Android, mais empêche les autres navigateurs web d’appareils mobiles de se connecter aux points de terminaison Microsoft 365.
+Cette stratégie empêche également Exchange ActiveSync clients de se connecter à Exchange Online. Toutefois, vous pouvez créer une stratégie distincte pour la gestion des Exchange ActiveSync. Pour plus d’informations, voir Bloquer les [clients ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)qui empêche les clients Exchange ActiveSync qui exploitent l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
 
  Ces stratégies exploitent les contrôles d’octroi [Exiger une application cliente approuvée](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) et Exiger une stratégie de protection des [applications.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 

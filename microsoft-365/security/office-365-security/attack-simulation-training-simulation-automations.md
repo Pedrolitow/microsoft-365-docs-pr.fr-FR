@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des simulations automatisées qui contiennent des techniques et des charges utiles spécifiques qui se lancent lorsque les conditions spécifiées sont remplies dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 13edbb7ea06e9666c6c318cb3fa19072f369e3bc
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 383229ed51002c4f13c499960f4b38e830c12951
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560803"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932750"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatisations de simulation pour la formation à la simulation d’attaques
 
@@ -57,7 +57,7 @@ Dans la page Sélectionner des **techniques** d’ingénierie sociale, sélectio
 - **Pièce jointe malveillante**: ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
 - **Lien dans la pièce jointe**: type d’hybride de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
 - **Lien vers un programme malveillant**: exécute du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
-- **URL** de lecteur par : l’URL malveillante dans le message permet à l’utilisateur d’accéder à un site web familier qui s’exécute en mode silencieux et/ou installe le code sur l’appareil de l’utilisateur.
+- **URL de lecteur** par : l’URL malveillante dans le message permet à l’utilisateur d’accéder à un site web familier qui s’exécute en mode silencieux et/ou installe le code sur l’appareil de l’utilisateur.
 
 Si vous cliquez sur le lien Afficher les **détails** dans la description, un volant de détails s’ouvre qui décrit la technique et les étapes de simulation qui en résultent.
 

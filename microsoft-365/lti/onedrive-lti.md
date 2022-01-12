@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez et classez des devoirs, créez et organisez du contenu de cours et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 68622305e6a277b44538d4a05ee42a6b680749f3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578170"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905624"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
@@ -59,7 +59,13 @@ L’intégration Microsoft OneDrive LTI à Canvas est un processus en deux étap
 
 :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Capture d’écran montrant la barre de navigation de gauche avec les clés de développeur sélectionnées, et l’entrée de clé LTI sélectionnée dans une dropdown à droite de la page.":::
 
-6. Dans la page Configurer,  dans la zone de texte Méthode, sélectionnez Coller **JSON** comme méthode et collez le texte JSON que vous avez copié à l’étape 5 dans le champ de texte qui s’affiche.
+6. Dans la page Configurer,  dans la zone de texte Méthode, sélectionnez Coller **JSON** comme méthode et collez le texte JSON que vous avez copié à l’étape 4 dans le champ de texte qui s’affiche.
+
+    > [!TIP]
+    > **Étape facultative :** Si les enseignants de votre établissement scolaire souhaitent contrôler eux-mêmes les liens qui apparaissent dans la navigation de leurs cours, vous pouvez modifier le paramètre dans le ``default`` JSON copié. Le ``default`` paramètre est automatiquement paramétrez ; toutefois, la modification du paramètre permet aux enseignants de choisir la navigation de leurs propres ``enabled`` ``default`` ``disabled`` cours.
+    >
+    > Pour plus d’informations sur la façon dont les enseignants peuvent modifier leurs liens de navigation de cours, voir Comment gérer les liens [de navigation de cours ?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+
 7. Enregistrez la clé et elle devient disponible dans Canvas dans un **état Off.** Activer la clé **et** copier la clé donnée dans la colonne **Détails** à utiliser à l’étape suivante.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Page Canvas avec la clé définie dans un état « off ». Elle doit être allumée et la clé doit être copiée à partir de la colonne de détails de cette page.":::

@@ -15,16 +15,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom:
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
+ms.custom: ''
 description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: 037ab81dd0c657906c59cf485c9da25c58804dab
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 263411d6f0c9931dfd03fbf8b89fd24a86c3c9e6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423274"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939744"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -38,7 +36,7 @@ Les administrateurs de Microsoft Defender pour Office 365 E5 et de Defender pour
 
 ## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité de messagerie
 
-La page d’entité de messagerie est disponible dans le portail Microsoft 365 Defender **l’Explorateur** de collaboration & courrier <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> \> **électronique.** Ou, pour aller directement à la page **De l’Explorateur,** utilisez <https://security.microsoft.com/threatexplorer> .
+La page entité de messagerie est disponible dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> **Email & collaboration** \> **Explorer**. Ou, pour aller directement à la page **De l’Explorateur,** utilisez <https://security.microsoft.com/threatexplorer> .
 
 Dans **l’Explorateur,** sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
 
@@ -92,7 +90,7 @@ Ces détails sont spécifiques aux pièces jointes et URL des e-mails. Les utili
 
 Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il comprend la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et désaxtée.
 
-1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été causés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
+1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL affectés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
 
     > [!NOTE]
     > Cela peut afficher uniquement l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été trouvée problématique ou a été désaxée.
@@ -114,7 +112,7 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
 
 *Détails de l’e-mail*: détails requis pour une compréhension approfondie du courrier électronique disponible dans *l’onglet Analyse.*
 
-- *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Ils peuvent uniquement être créés et modifiés dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange,</a>mais si une etr s’applique à un message, le nom et le GUID ETR s’afficheront ici. Informations précieuses à des fins de suivi.
+- *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Les règles de flux de messagerie sont créées et modifiées dans le Centre d’administration Exchange à l’adresse , mais si une règle de flux de messagerie s’applique à un message, le nom et le GUID de la règle s’afficheront <https://admin.exchange.microsoft.com/#/transportrules> ici. Informations précieuses à des fins de suivi.
 
 - *Remplacements système*: il s’agit d’un moyen d’effectuer des exceptions à l’emplacement de remise prévu pour un message en remplacement de l’emplacement de remise donné par le système (selon la technologie de détection et de menace).
 
@@ -153,3 +151,47 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
   - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans le DNS.
 
 *Authentification* composite : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie électronique telle que SPF, DKIM et DMARC, afin de déterminer si le message est authentique. Il utilise le *domaine De :* du courrier comme base d’évaluation.
+
+### <a name="email-summary-panel"></a>Panneau récapitulatif de l’e-mail
+
+Le panneau de synthèse du courrier électronique est une vue récapitulée de la page d’entité de courrier électronique complète. Il contient des détails standardisés sur le courrier électronique (par exemple, les détections), ainsi que des informations spécifiques au contexte (par exemple, pour les métadonnées de mise en quarantaine ou de soumissions). Le panneau de synthèse du courrier électronique remplace les volants classiques Détections en temps réel, Explorateur de menaces, Soumissions et Rapports.
+
+> [!div class="mx-imgBorder"]
+> ![Ouvrez le lien de l’entité de messagerie.](../../media/open-email-entity-mdo.png)
+
+> [!NOTE]
+> Pour afficher tous les composants, cliquez sur le lien Ouvrir l’entité **de** messagerie électronique pour ouvrir la page complète de l’entité de messagerie.  
+
+Le panneau de synthèse du courrier électronique est divisé en sections suivantes :  
+
+- *Détails de remise*: contient des informations sur les menaces et le niveau de confiance correspondant, les technologies de détection et l’emplacement de remise d’origine et le dernier.
+
+- *Détails de l’e-mail*: contient des informations sur les propriétés de messagerie telles que le nom de l’expéditeur, l’adresse de l’expéditeur, l’heure de réception, les détails d’authentification et d’autres détails.
+
+- *URL : par* défaut, vous verrez 3 URL et leurs menaces correspondantes. Vous pouvez toujours cliquer **sur Afficher toutes les URL pour** les développer et afficher toutes les URL et les exporter.  
+
+- *Pièces jointes*: par défaut, vous verrez 3 pièces jointes. Vous pouvez toujours cliquer sur **Afficher toutes les pièces jointes** pour les développer et afficher toutes les pièces jointes. 
+
+Outre les sections ci-dessus, vous verrez également des sections spécifiques à quelques expériences intégrées au panneau de synthèse : 
+
+- Soumissions : 
+
+    - *Détails de la soumission*: contient des informations sur les soumissions spécifiques, telles que :
+        - Date d’soumise
+        - Sujet
+        - Type de soumission
+        - Raison de l’envoi
+        - ID de soumission
+        - Soumis par
+
+    - *Détails des résultats*: les messages envoyés sont examinés. Vous pouvez voir le résultat de votre soumission ainsi que les étapes suivantes recommandées.
+
+- Mise en quarantaine :  
+
+    - *Détails de mise en quarantaine*: contient des détails spécifiques à la mise en quarantaine. Pour plus d’informations, voir [Gérer les messages mis en quarantaine.](manage-quarantined-messages-and-files.md#view-quarantined-message-details)
+
+        - Expires : Date et heure auxquelles le message sera automatiquement et définitivement supprimé de la quarantaine.
+        - Déplacé pour : toutes les adresses e-mail (le cas échéant) auxquelles le message a été envoyé.
+        - Pas encore déplacé pour : toutes les adresses e-mail (le cas échéant) auxquelles le message n'a pas encore été envoyé.
+
+    - *Actions de mise en* quarantaine : pour plus d’informations sur les différentes actions de mise en quarantaine, voir [Gérer les messages mis en quarantaine.](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email)

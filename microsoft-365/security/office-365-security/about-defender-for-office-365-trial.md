@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: 444e2acc789cec0c569cbd4904a40794886f40dc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369671"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937699"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 

@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires au Microsoft 365 organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 17143da7310542a4f77074ee83562f2626d28aa5
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2e0964d9b023a3a7c1efdda121cc34c1f37edd06
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422290"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937951"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -104,7 +104,7 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 |Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou les détections en temps réel (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille de messagerie et le volant Détails de l’e-mail.  Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur.](threat-explorer.md#tags-in-threat-explorer)|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables des affichages campagne dans Microsoft Defender Office 365 Plan 2. Pour plus d’informations, voir [Affichages de campagne.](campaigns.md)|
 |Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de la **protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
-|Rapport sur les problèmes de messagerie pour le rapport des comptes prioritaires|Le rapport Problèmes de messagerie pour les comptes de priorité dans le centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">d’administration Exchange</a> contient des informations sur les messages non reçus et **différés** pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
+|Rapport sur les problèmes de messagerie pour le rapport des comptes prioritaires|Le **rapport** Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et différés pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Former les utilisateurs

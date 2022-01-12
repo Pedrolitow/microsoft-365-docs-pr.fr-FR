@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser des stratégies de mise en quarantaine pour contrôler ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cbd10a0989d4dbae01cbcd4424da620929fd94b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ee73e6cb8870bdab30a234af593cd036f9cde54c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521015"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935004"
 ---
 # <a name="quarantine-policies"></a>Stratégies de mise en quarantaine
 
@@ -97,7 +97,7 @@ Pour les nouvelles organisations ou les organisations plus anciennes qui n’ont
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Étape 1 : Créer des stratégies de mise en quarantaine dans le portail Microsoft 365 Defender de mise en quarantaine
 
-1. Dans le portail [Microsoft 365 Defender,](https://security.microsoft.com)sélectionnez **e-mail & stratégies** de collaboration contre les menaces Section Stratégies de mise en \>  \>  \>  quarantaine, puis sélectionnez **Stratégies de mise en quarantaine.**
+1. Dans le portail [Microsoft 365 Defender,](https://security.microsoft.com)dans la section Règles, & stratégies de **collaboration** & stratégies de mise en quarantaine des règles de \>  \>  \>  menace. 
 
 2. Dans la page **Stratégie de** mise en quarantaine, cliquez sur Ajouter une icône de ![ stratégie personnalisée.](../../media/m365-cc-sc-create-icon.png) **Ajouter une stratégie personnalisée**.
 
@@ -259,7 +259,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - La valeur par défaut des paramètres _PhishSpamAction_ et _HighConfidencePhishAction_ est Mise en quarantaine. Vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez de nouvelles stratégies de filtrage du courrier indésirable dans PowerShell. Pour les paramètres _SpamAction,_ _HighConfidenceSpamAction_ et _BulkSpamAction_ dans les stratégies anti-courrier indésirable nouvelles ou existantes, la stratégie de mise en quarantaine n’est effective que si la valeur est Mise en quarantaine.
 
@@ -342,7 +342,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _\* paramètres Enable_ sont requis pour activer les fonctionnalités de protection spécifiques. La valeur par défaut des paramètres _EnableMailboxIntelligence_ et _EnableSpoofIntelligence_ est $true, vous n’avez donc pas besoin d’utiliser ces paramètres lorsque vous créez des stratégies anti-hameçonnage dans PowerShell. Tous les _autres paramètres Enable \*_ doivent avoir la valeur $true afin que vous pouvez définir la valeur Mise en quarantaine dans les paramètres _\* d’action_ correspondants pour affecter ensuite une stratégie de mise en quarantaine. Aucun des paramètres _*\Action_ n’a la valeur par défaut Quarantaine.
 
@@ -467,7 +467,7 @@ Si vous préférez utiliser PowerShell pour affecter des stratégies de mise en 
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Les _valeurs_ du paramètre Action Block, Replace ou DynamicDelivery peuvent entraîner la mise en quarantaine des messages (la valeur Autoriser ne met pas les messages en quarantaine). La valeur du paramètre _Action_ n’est significative que lorsque la valeur du _paramètre Enable_ est `$true` .
 
@@ -503,7 +503,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Les paramètres globaux des stratégies de mise en quarantaine vous permettent de personnaliser les notifications de mise en quarantaine qui sont envoyées aux destinataires des messages mis en quarantaine si les notifications de mise en quarantaine sont mises en quarantaine dans la stratégie de mise en quarantaine. Pour plus d’informations sur ces notifications, voir [notifications de mise en quarantaine.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
-1. Dans le portail Microsoft 365 Defender, sélectionnez Stratégies de mise en quarantaine & stratégies de **collaboration** sur les menaces, puis \>  \>  \>  sélectionnez **Stratégies de mise en quarantaine.**
+1. Dans le portail Microsoft 365 Defender, dans la section Règles, & stratégies de **collaboration** & stratégies de mise en quarantaine des stratégies de \>  \>  \>  menace. 
 
 2. Dans la page **Stratégie de** mise en quarantaine, sélectionnez **Paramètres globaux.**
 
@@ -541,7 +541,7 @@ Les paramètres globaux des stratégies de mise en quarantaine vous permettent d
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Afficher les stratégies de mise en quarantaine dans le Microsoft 365 Defender web
 
-1. Dans le portail [Microsoft 365 Defender,](https://security.microsoft.com)sélectionnez **e-mail & stratégies** de collaboration contre les menaces Section Stratégies de mise en \>  \>  \>  quarantaine, puis sélectionnez **Stratégies de mise en quarantaine.**
+1. Dans le portail Microsoft 365 Defender, dans la section Règles, & stratégies de **collaboration** & stratégies de mise en quarantaine des stratégies de \>  \>  \>  menace. 
 
 2. La page **Stratégie de** mise en quarantaine affiche la liste des stratégies par **nom** et date de dernière mise **à** jour.
 
@@ -577,7 +577,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Vous ne pouvez pas modifier les stratégies de mise en quarantaine intégrées nommées AdminOnlyAccessPolicy ou DefaultFullAccessPolicy. Vous pouvez modifier la stratégie intégrée nommée NotificationEnabledPolicy[(si](#full-access-permissions-and-quarantine-notifications)vous l’avez) et les stratégies de mise en quarantaine personnalisées.
 
-1. Dans le portail [Microsoft 365 Defender,](https://security.microsoft.com)sélectionnez **e-mail & stratégies** de collaboration contre les menaces Section Stratégies de mise en \>  \>  \>  quarantaine, puis sélectionnez **Stratégies de mise en quarantaine.**
+1. Dans le portail Microsoft 365 Defender, dans la section Règles, & stratégies de **collaboration** & stratégies de mise en quarantaine des stratégies de \>  \>  \>  menace. 
 
 2. Dans la page **Stratégies de** mise en quarantaine, sélectionnez la stratégie en cliquant sur le nom.
 
@@ -614,7 +614,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
   Si la stratégie de mise en quarantaine est utilisée, [remplacez la stratégie](#step-2-assign-a-quarantine-policy-to-supported-features) de mise en quarantaine attribuée avant de la supprimer.
 
-1. Dans le portail [Microsoft 365 Defender,](https://security.microsoft.com)sélectionnez **e-mail & stratégies** de collaboration contre les menaces Section Stratégies de mise en \>  \>  \>  quarantaine, puis sélectionnez **Stratégies de mise en quarantaine.**
+1. Dans le portail Microsoft 365 Defender, dans la section Règles, & stratégies de **collaboration** & stratégies de mise en quarantaine des stratégies de \>  \>  \>  menace. 
 
 2. Dans la page **Stratégie de** mise en quarantaine, sélectionnez la stratégie de mise en quarantaine personnalisée à supprimer en cliquant sur le nom.
 

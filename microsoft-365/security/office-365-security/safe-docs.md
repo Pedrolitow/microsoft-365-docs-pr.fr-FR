@@ -16,12 +16,12 @@ ms.collection:
 description: Découvrez comment Coffre documents dans Microsoft 365 E5/A5 ou Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64995aca1542087682c2871f434698cc20d3ac91
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: beb34c04f93fe853678b30bcd9b5f7a621f4666b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262822"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934992"
 ---
 # <a name="safe-documents-in-microsoft-365-e5a5"></a>Coffre documents dans Microsoft 365 E5/A5
 
@@ -49,7 +49,7 @@ Les utilisateurs n’ont pas besoin que Defender for Endpoint soit installé sur
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Pour aller directement à la page **Coffre pièces jointes,** utilisez <https://security.microsoft.com/safeattachmentv2> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **Coffre pièces jointes,** utilisez <https://security.microsoft.com/safeattachmentv2> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -73,7 +73,7 @@ Les fichiers envoyés par Coffre documents ne sont pas conservés dans Defender 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>Utiliser le portail Microsoft 365 Defender pour configurer Coffre documents
 
-1. Ouvrez le portail Microsoft 365 Defender de messagerie et & stratégies de **collaboration** & règles de menace Coffre pièces jointes dans la \>  \>  \> section **Stratégies.** 
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** \> **Threat policies** \> **Coffre Attachments** in the **Policies** section. Pour aller directement à la page **Coffre pièces jointes,** utilisez <https://security.microsoft.com/safeattachmentv2> .
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 

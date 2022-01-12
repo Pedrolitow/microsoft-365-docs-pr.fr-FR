@@ -20,16 +20,19 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Créez des stratégies d’alerte dans Centre de conformité Microsoft 365 ou le portail Microsoft 365 Defender pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: 2c017490fd0b5b01c7cd2563a895b3930aafef58
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: fb629f434a73e3265929b9055ab7d616e4bac457
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578218"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871862"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Stratégies d’alerte dans Microsoft 365
 
-Vous pouvez utiliser les outils de stratégie d’alerte et de tableau de bord d’alerte dans le portail Centre de conformité Microsoft 365 ou Microsoft 365 Defender pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie d’alerte. Il existe plusieurs stratégies d’alerte par défaut qui vous permettent de surveiller des activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppressions de fichiers et de partage externe.
+Vous pouvez utiliser les stratégies d’alerte et le tableau de bord d’alerte dans le portail Centre de conformité Microsoft 365 ou Microsoft 365 Defender pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie d’alerte. Il existe plusieurs stratégies d’alerte par défaut qui vous permettent de surveiller des activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppressions de fichiers et de partage externe.
+
+> [!TIP]
+> Pour obtenir [la](#default-alert-policies) liste et la description des stratégies d’alerte disponibles, voir la section Stratégies d’alerte par défaut de cet article.
 
 Les stratégies d’alerte vous permet de catégoriser les alertes déclenchées par une stratégie, d’appliquer la stratégie à tous les utilisateurs de votre organisation, de définir un niveau de seuil pour le déclenchement d’une alerte et de décider s’il faut recevoir des notifications par courrier électronique lorsque des alertes sont déclenchées. Il existe également une page **Alertes** dans laquelle vous pouvez afficher et filtrer les alertes, définir un état d’alerte pour vous aider à gérer les alertes, puis ignorer les alertes après avoir traité ou résolu l’incident sous-jacent.
 
@@ -61,7 +64,7 @@ Une stratégie d’alerte se compose d’un ensemble de règles et de conditions
 
 Pour afficher et créer des stratégies d’alerte :
 
-### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
+### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
 Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, and then select **Policies**  >  **Alert**  >  **Alert policies**.
 
@@ -69,7 +72,7 @@ Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_b
 
 ### <a name="microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
-Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under Email **& collaboration** select Policies & **rules**  >  **Alert policy**. Vous pouvez également y aller <https://security.microsoft.com/alertpolicies> directement.
+Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under Email **& collaboration** select Policies & **rules**  >  **Alert policy**. Vous pouvez également y aller <https://security.microsoft.com/alertpolicies> directement.
 
 ![Dans le portail Defender, sélectionnez Stratégies & sous Collaboration & courrier électronique, puis sélectionnez Stratégie d’alerte pour afficher et créer des stratégies d’alerte.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -156,7 +159,9 @@ Le tableau indique également les Office 365 Entreprise et Office 365 pour le go
 |**Hameçonnage remis en raison du remplacement du** client ou de l’utilisateur <sup>1</sup>|Génère une alerte lorsque Microsoft détecte qu’un remplacement d’administrateur ou d’utilisateur a autorisé la remise d’un message de hameçonnage à une boîte aux lettres. Parmi les exemples de remplacements figurent une règle de boîte de réception ou de flux de messagerie qui autorise les messages provenant d’un expéditeur ou d’un domaine spécifique, ou une stratégie anti-courrier indésirable qui autorise les messages provenant d’expéditeurs ou de domaines spécifiques. Cette stratégie a un **paramètre de** gravité élevée.|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Activité suspecte de transfert d’e-mail**|Génère une alerte lorsqu’une personne de votre organisation a reçu automatiquement des messages électroniques vers un compte externe suspect. Il s’agit d’un avertissement précoce pour un comportement qui peut indiquer que le compte est compromis, mais pas assez grave pour restreindre l’utilisateur. Cette stratégie a un **paramètre de** gravité élevée. Bien que cela soit rare, une alerte générée par cette stratégie peut être une anomalie. Il est bon de vérifier si le [compte d’utilisateur est compromis.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Modèles d’envoi de courrier suspects détectés**|Génère une alerte lorsqu’une personne de votre organisation a envoyé des messages suspects et risque d’être limitée à l’envoi de courriers électroniques. Il s’agit d’un avertissement précoce pour un comportement qui peut indiquer que le compte est compromis, mais pas assez grave pour restreindre l’utilisateur. Cette stratégie a un **paramètre de** gravité moyenne. Bien que cela soit rare, une alerte générée par cette stratégie peut être une anomalie. Toutefois, il est bon de vérifier si le compte [d’utilisateur est compromis.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5  |
+|**L’entrée de liste d’attente du client est sur le point d’expirer**|Génère une alerte lorsqu’une entrée de liste d’attente du client est sur le point d’être supprimée. Cet événement est déclenché trois jours avant la date d’expiration, qui est basée sur la date de création ou de dernière mise à jour de l’entrée. Cette stratégie d’alerte a un **paramètre de** gravité d’information. Il s’agit d’informer les administrateurs des modifications à venir dans les filtres, car le blocage ou l’autoriser pourrait disparaître. Pour les blocs, vous pouvez étendre la date d’expiration pour conserver le bloc en place. Pour les autoriser, vous devez resoumettre l’élément afin que nos analystes prennent une autre apparence. Toutefois, si l’allow a déjà été classé comme faux positif, l’entrée expire uniquement lorsque les filtres système ont été mis à jour pour autoriser naturellement l’entrée. Pour plus d’informations sur les événements qui déclenchent cette alerte, voir Gérer la liste des locataires [autoriser/bloquer.](../security/office-365-security/tenant-allow-block-list.md)|Gestion des menaces|E5/G5 ou Defender pour Office 365 abonnement au module add-on P2|
 |**Client restreint à l’envoi de courrier électronique**|Génère une alerte lorsque la plupart du trafic de courrier provenant de votre organisation a été détecté comme suspect et que Microsoft a restreint l’envoi de courriers électroniques à votre organisation. Examinez les comptes d’utilisateur et d’administrateur potentiellement compromis, les nouveaux connecteurs ou les relais ouverts, puis contactez le Support Microsoft pour débloquer votre organisation. Cette stratégie a un **paramètre de** gravité élevée. Pour plus d’informations sur la raison pour laquelle les organisations sont bloquées, voir Corriger les problèmes de remise des e-mails pour le code d’erreur [5.7.7xx dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
+|**Client restreint à l’envoi de messages électroniques non limités**|Génère une alerte lorsque trop de messages électroniques sont envoyés à partir de domaines non enregistrés (également appelés domaines *non* mis en service). Office 365 autorise l'envoi d'un certain nombre d'e-mails à partir de domaines non enregistrés, mais nous vous recommandons de configurer chaque domaine utilisé pour envoyer du courrier en tant que domaine accepté. Cette alerte indique que tous les utilisateurs de l’organisation ne peuvent plus envoyer de courrier électronique. Cette stratégie a un **paramètre de** gravité élevée. Pour plus d’informations sur la raison pour laquelle les organisations sont bloquées, voir Corriger les problèmes de remise des e-mails pour le code d’erreur [5.7.7xx dans Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Gestion des menaces|E1/F1/G1, E3/F3/G3 ou E5/G5|
 |**Activité inhabituelle de fichier d’utilisateur externe**|Génère une alerte lorsqu’un nombre anormalement élevé d’activités est effectué sur des fichiers dans SharePoint ou OneDrive par des utilisateurs en dehors de votre organisation. Cela inclut des activités telles que l’accès aux fichiers, le téléchargement de fichiers et la suppression de fichiers. Cette stratégie a un **paramètre de** gravité élevée.|Gouvernance des informations|E5/G5, Microsoft Defender pour Office 365 P2 ou un abonnement Microsoft 365 E5 modules logiciels|
 |**Volume inhabituel de partage de fichiers externes**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers dans SharePoint ou OneDrive sont partagés avec des utilisateurs en dehors de votre organisation. Cette stratégie a un **paramètre de** gravité moyenne.|Gouvernance des informations|E5/G5, Defender pour Office 365 P2 ou un abonnement Microsoft 365 E5 modules|
 |**Volume inhabituel de suppression de fichiers**|Génère une alerte lorsqu’un nombre anormalement élevé de fichiers sont supprimés dans SharePoint ou OneDrive dans un court laps de temps. Cette stratégie a un **paramètre de** gravité moyenne.|Gouvernance des informations|E5/G5, Defender pour Office 365 P2 ou un abonnement Microsoft 365 E5 modules|
@@ -179,7 +184,7 @@ Lorsqu’une activité effectuée par les utilisateurs de votre organisation cor
 
 Pour afficher les alertes :
 
-### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
+### <a name="microsoft-365-compliance-center"></a>Centre de conformité Microsoft 365
 
  Go to <https://compliance.microsoft.com> and then select **Alerts**. Vous pouvez également y aller <https://compliance.microsoft.com/compliancealerts> directement.
 

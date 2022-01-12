@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da37abb5251a59f22f03cfb6462bc68ad4193dd7
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: db1190d72bb721dbbbd3a75bb7d8a9821d5f8ff3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217721"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873759"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -55,13 +55,13 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
     >[!NOTE]
     >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
-- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Centre de sécurité Microsoft Defender > Paramètres > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
+- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Microsoft 365 Defender > Paramètres > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
 - Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 > [!IMPORTANT]
 > Seules les IP externes peuvent être ajoutées à la liste d’indicateurs. Les indicateurs ne peuvent pas être créés pour les IP internes.
 > Pour les scénarios de protection web, nous vous recommandons d’utiliser les fonctionnalités intégrées dans Microsoft Edge. Microsoft Edge utilise la [Protection](network-protection.md) du réseau pour inspecter le trafic réseau et autorise les blocs pour TCP, HTTP et HTTPS (TLS).
-> S’il existe des stratégies d’indicateur d’URL en conflit, le chemin d’accès le plus long est appliqué. Par exemple, la stratégie d’indicateur d’URL `https:\\support.microsoft.com/office` est prioritaire sur la stratégie d’indicateur d’URL. `https:\\support.microsoft.com`
+> S’il existe des stratégies d’indicateur d’URL en conflit, le chemin d’accès le plus long est appliqué. Par exemple, la stratégie d’indicateur d’URL `https://support.microsoft.com/office` est prioritaire sur la stratégie d’indicateur d’URL. `https://support.microsoft.com`
 
 > [!NOTE]
 > Pour tous les autres processus, les scénarios de protection web tirent parti de la Protection du réseau pour l’inspection et l’application :
@@ -106,7 +106,7 @@ Pour plus d’informations, voir [Govern apps discovered by Microsoft Defender f
 
 5. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)

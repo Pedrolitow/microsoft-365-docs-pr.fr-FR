@@ -18,16 +18,14 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment rechercher et utiliser les rapports de sécurité de messagerie disponibles dans le portail Microsoft 365 Defender messagerie.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3e5e7ba4688f4ec4a54856bc5b4e8e3c14aed090
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc60c0ed388a8bc30158fbf7366e16776b0b5dd5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421761"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872092"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité du courrier dans le portail Microsoft 365 Defender messagerie
 
@@ -44,7 +42,7 @@ De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour
 >
 > Certains rapports de la page rapports de collaboration & **courrier** électronique nécessitent Microsoft Defender pour Office 365. Pour plus d’informations sur ces rapports, voir [View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)
 >
-> Les rapports liés au flux de messagerie sont désormais dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centre Exchange’administration.</a> Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans le nouveau [centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Les rapports liés au flux de messagerie sont désormais dans le centre Exchange’administration. Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans le nouveau [centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Rapport utilisateurs compromis
 
@@ -83,13 +81,8 @@ Dans la page principale du rapport, ![ l’icône Créer une planification.](../
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le **rapport Exchange** règles de transport de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
-
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez Exchange de **transport,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/ETRRuleReport> .
-
-![Exchange widget de règle de transport dans la page rapports de collaboration & courrier électronique.](../../media/transport-rule-report-widget.png)
-
-Dans la page Exchange rapport de règles de **transport,** les graphiques et données disponibles sont décrits dans les sections suivantes.
+> [!NOTE]
+> Le **Exchange de règles de transport est** désormais disponible dans le EAC. Pour plus d’informations, Exchange rapport de règles de [transport dans le nouveau EAC.](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)
 
 ### <a name="chart-breakdown-by-direction"></a>Répartition du graphique par direction
 
@@ -391,7 +384,7 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
-- **Name**
+- **Nom**
 - **Soumis par**
 - **Raison de l’envoi**:
   - **Non indésirable**
@@ -539,11 +532,11 @@ Dans **l’affichage des données par courrier \> indésirable** et répartition
 - **Réputation d’URL malveillante**
 - **Filtre avancé**
 - **Filtre général**
-- **Détection d’analyse mixte**
-- **Correspondance de l’empreinte**
+- **Détection d’analyse** mixte : plusieurs filtres ont contribué au verdict du message.
+- **Correspondance d’empreinte** digitale : le message a été marqué comme étant mauvais en raison de messages précédents.
 - **Réputation du domaine**
-- **E-mail de masse**
-- **Réputation d’IP**
+- **En bloc**: éléments détectés comme dépassant le paramètre en bloc pour l’utilisateur.
+- **Réputation d’IP**: le message a été considéré comme courrier indésirable en fonction de la réputation de l’adresse IP d’envoi.
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
@@ -1126,7 +1119,7 @@ Pour gérer les rapports programmés que vous avez déjà créés, vous devez su
 
 2. Dans la page **Rapports de téléchargement,** les informations suivantes sont affichées pour chaque rapport disponible :
    - **Date de début**
-   - **Name**
+   - **Nom**
    - **Type de rapport**
    - **Dernière envoi**
    - **Direction**

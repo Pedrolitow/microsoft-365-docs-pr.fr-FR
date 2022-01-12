@@ -16,16 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e62a87188eb3a092399ef03647a9c70318f37197
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933143"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour les applications cloud
 

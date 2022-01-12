@@ -1,0 +1,160 @@
+### YamlMime:Landing
+title: Bibliothèque vidéo de formation pour les administrateurs
+summary: Découvrez comment configurer et gérer les Microsoft 365 pour votre entreprise avec de courtes vidéos.
+metadata:
+  title: Bibliothèque vidéo de formation pour les administrateurs
+  description: Découvrez comment configurer et gérer les Microsoft 365 pour votre entreprise avec de courtes vidéos.
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 11/29/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: b454a6938a28c4f14f1678ae2d8a47430a0086de
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61934731"
+landingContent:
+- title: Prise en main
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Qu’est-ce que Microsoft 365 ?
+      url: admin-overview/what-is-microsoft-365.md
+    - text: Vue d’ensemble de la configuration
+      url: setup/plan-your-setup.md
+    - text: Choisissez un abonnement
+      url: admin-overview/sign-up-for-office-365.md
+- title: Configuration cloud
+  linkLists:
+  - linkListType: video
+    links:
+    - text: S’inscrire pour un abonnement
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Configurer le service
+      url: setup/business-set-up.md
+    - text: Sécuriser les PC Windows 10
+      url: setup/secure-win-10-pcs.md
+- title: Configuration des appareils
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Connecter des PC à Microsoft 365 Business Premium
+      url: setup/set-up-windows-devices.md
+    - text: Installer des applications Microsoft Office
+      url: setup/install-applications.md
+    - text: Configurer Outlook pour le courrier électronique
+      url: setup/setup-outlook.md
+    - text: Importer et rediriger un courrier
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: Déplacer vos fichiers sur OneDrive
+      url: setup/files-to-onedrive.md
+    - text: Déplacer des fichiers de l’entreprise sur SharePoint
+      url: setup/files-to-sharepoint.md
+- title: Mobile
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Télécharger l’application mobile Admin
+      url: admin-overview/admin-mobile-app.md
+- title: Business Voice
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Qu’est-ce que Business Voice ?
+      url: /microsoftteams/business-voice/whats-business-voice
+    - text: Configurer Business Voice
+      url: /microsoftteams/business-voice/set-up-overview
+- title: Gérer les services
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Qu’est-ce qu’un administrateur ?
+      url: add-users/about-admin-roles.md
+    - text: Vue d’ensemble du centre d’administration
+      url: admin-overview/admin-center-overview.md
+    - text: Créer une signature pour toute l’entreprise
+      url: setup/create-signatures-and-disclaimers.md
+    - text: Prendre des mesures sur la base du rapport sur l’utilisation
+      url: activity-reports/activity-reports.md
+    - text: Ajouter un autre domaine
+      url: setup/add-domain.md
+    - text: Configurer une nouvelle adresse professionnelle
+      url: email/change-email-address.md
+- title: Gestion des utilisateurs
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Réinitialiser les mots de passe des utilisateurs
+      url: add-users/reset-passwords.md
+    - text: Utiliser la réinitialisation de mot de passe en libre-service
+      url: add-users/let-users-reset-passwords.md
+    - text: Ajouter un utilisateur
+      url: add-users/add-users.md
+    - text: Supprimer un utilisateur
+      url: add-users/remove-former-employee.md
+    - text: Ajouter un autre administrateur
+      url: add-users/assign-admin-roles.md
+    - text: Modifier un nom d’utilisateur et une adresse de messagerie
+      url: add-users/change-a-user-name-and-email-address.md
+    - text: Transférer des utilisateurs vers un autre abonnement
+      url: ../commerce/try-or-buy-microsoft-365.md
+- title: Gérer les licences et la facturation
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Afficher, télécharger ou imprimer votre facture
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+    - text: Acheter de nouvelles licences
+      url: ../commerce/licenses/buy-licenses.md
+    - text: Supprimer les licences existantes
+      url: ../commerce/licenses/buy-licenses.md
+    - text: Mettre à jour votre mode de paiement
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
+- title: Gestion des appareils
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Sécuriser les appareils Windows 10
+      url: devices/protection-settings-for-windows-10-pcs.md
+    - text: Sécuriser les applications Office sur iOS
+      url: devices/app-protection-settings-for-android-and-ios.md
+- title: Sécurité et conformité
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
+      url: security-and-compliance/secure-your-business-data.md
+    - text: Sécuriser les comptes des employés avec une authentification multifacteur
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+    - text: Activer la détection de programmes malveillants
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
+    - text: Créer des règles pour vos e-mails pour les rançongiciels
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
+    - text: Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
+    - text: Gérer les pièces jointes fiables
+      url: security-and-compliance/increase-threat-protection.md
+    - text: Gérer les liens fiables
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
+    - text: Éviter les pertes de données
+      url: security-and-compliance/set-up-compliance.md
+    - text: Créer des étiquettes de sensibilité
+      url: security-and-compliance/set-up-compliance.md
+- title: Assistance
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Obtenir de l’aide ou une assistance technique
+      url: get-help-support.md
+    - text: Configuration rapide pour les employés
+      url: ../business-video/employee-quick-setup.md
+- title: Passer de Google Workspace
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Passer de Google Workspace
+      url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md

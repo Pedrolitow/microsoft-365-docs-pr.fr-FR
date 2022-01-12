@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: 079e392a234339493fb293406d6e85d4ddb7c5f6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 793ae9410ff40d989fffa4dfeae457ff0e61e392
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423058"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934524"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -149,6 +149,8 @@ Par exemple, il se peut qu’une stratégie DLP soit appliquée aux sites OneDri
 
 3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action Bloquer l’accès au contenu restreint les autorisations pour le fichier et l’action Envoyer une **notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle, car les informations sont partagées en externe. En aucun cas les membres de votre organisation ne doivent être autorisés à partager des données d’informations personnelles à l’extérieur de l’organisation.
 
+### <a name="user-override-support"></a>Prise en charge du remplacement par l’utilisateur
+
 Voici quelques points à comprendre sur l’utilisation d’un conseil de stratégie pour remplacer une règle :
 
 - L’option de remplacement est par règle et elle remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être substituer).
@@ -156,6 +158,25 @@ Voici quelques points à comprendre sur l’utilisation d’un conseil de strat�
 - Il est possible que le contenu corresponde à plusieurs règles dans une stratégie DLP, mais seul le conseil de stratégie de la règle la plus restrictive et la plus prioritaire s’affiche. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
 - Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
+
+- Si l’action NotifyAllowOverride est définie avec WithoutJustification ou WithJustification ou FlasePositives, assurez-vous que BlockAccess est définie sur true et que BlockAccessScope possède la valeur appropriée. Dans le cas contraire, un conseil de stratégie s’offre à vous, mais l’utilisateur ne trouve pas d’option pour remplacer l’e-mail avec justification.
+
+#### <a name="availability-of-override"></a>Disponibilité du remplacement
+
+|Règle de notification |Action Notifier/Bloquer  |Remplacement disponible  |Exiger une justification  |
+|---------|---------|---------|---------|
+|Notifier uniquement     |Notification         |Non         |Non         |
+|Notify + AllowOverride     |Notification         |Non         |Non         |
+|Notify + AllowOverride + False positif     |Notification         |Non         |Non         |
+|Notify + AllowOverride + Avec justification     |Notification         |Non         |Non         |
+|Notify + AllowOverride + False positif + sans justification    |Notification         |Non         |Non         |
+|Notify + AllowOverride + False positif + avec justification     |Notification         |Non         |Non         |
+|Notifier + bloquer     |Bloquer         |Non         |Non         |
+|Notify + Block + AllowOverride     |Bloquer         |Oui         |Non         |
+|Notify + Block + AllowOverride + False positif     |Bloquer         |Oui         |Non         |
+|Notify + Block + AllowOverride + Avec justification     |Bloquer         |Oui         |Oui         |
+|Notify + Block + AllowOverride + False positif + Sans justification     |Bloquer         |Oui         |Non         |
+|Avertir + Bloquer + AllowOverride + Faux positif + avec justification     |Bloquer         |Oui         |Oui         |
 
 
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Conseils de stratégie sur OneDrive Entreprise sites et sites SharePoint Online

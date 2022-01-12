@@ -14,21 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 79c637f815ad4f31dd611d6ba05ca566806f71db
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167261"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937903"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Devenir un partenaire Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -44,11 +44,7 @@ La meilleure façon pour les partenaires technologiques de certifier que leur in
 
 Une fois que l’équipe Microsoft Defender pour le point de terminaison a examiné et approuvé l’intégration, nous vous dirigeons vers l’intégration en tant que partenaire auprès de l’Association de sécurité intelligente de Microsoft.
 
-## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>Étape 3 : devenir membre de l’Association de sécurité intelligente Microsoft
-
-[Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) est un programme spécifiquement conçu pour les partenaires de sécurité Microsoft afin d’enrichir vos produits de sécurité et d’améliorer la découverte par les clients de vos intégrations aux produits de sécurité Microsoft.
-
-## <a name="step-4-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>Étape 4 : Obtenir une liste dans le portail d’application partenaire Microsoft Defender pour Endpoint
+## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>Étape 3 : Obtenir une liste dans le portail d’application partenaire Microsoft Defender pour Endpoint
 
 Microsoft Defender pour le point de terminaison prend en charge la découverte et l’intégration d’applications tierces à l’aide de la [page](partner-applications.md) partenaire intégrée au produit incorporée dans le portail de gestion microsoft Defender pour les points de terminaison.
 
@@ -79,6 +75,6 @@ Pour que votre société soit répertoriée en tant que partenaire dans la page 
 
 Les partenariats avec Microsoft Defender pour point de terminaison aident nos clients mutuels à rationaliser, intégrer et orchestrer davantage les défenses. Nous sommes heureux que vous choisissiez de devenir un partenaire Microsoft Defender pour Points de terminaison et d’atteindre notre objectif commun de protéger efficacement les clients et leurs biens en empêchant les menaces modernes et en y répondant ensemble.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Opportunités de partenariat technique](partner-integration.md)

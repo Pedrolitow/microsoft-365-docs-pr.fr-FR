@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
-ms.openlocfilehash: b98dc0612698dd3a2832e63d1c86aa4d6f9db6ce
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530498"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61911532"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
@@ -36,7 +36,7 @@ Cet article explique comment définir un mot de passe pour qu’un utilisateur i
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?] (Vue d’ensemble Centre d'administration Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. Voir [vue d’ensemble du Centre d'administration Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 

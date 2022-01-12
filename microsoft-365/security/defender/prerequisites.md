@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b56d407381633853ea683b50ac969f88f15ff45
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d36fa53266245ea99f93c12eda14817b39d3eafa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373439"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936833"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender conditions préalables
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Découvrez les licences et autres conditions requises pour l’approvisionnement et [l’utilisation Microsoft 365 Defender](microsoft-365-defender.md).
@@ -42,6 +42,7 @@ L’une de ces licences vous donne accès aux fonctionnalités Microsoft 365 Def
 
 - Microsoft 365 E5 ou A5
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
+- Microsoft 365 E3 avec le module Enterprise Mobility + Security E5
 - Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5
 - Windows 10 Entreprise E5 ou A5
 - Windows 11 Entreprise E5 ou A5
@@ -79,6 +80,7 @@ Actuellement, l’intégration de Microsoft Defender for Office 365 dans les fon
 - Norvège 
 - Singapour 
 - Afrique du Sud
+- Suède
 - Suisse 
 - Émirats arabes unis 
 

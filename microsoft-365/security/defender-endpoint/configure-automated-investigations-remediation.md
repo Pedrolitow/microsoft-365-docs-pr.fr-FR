@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: f98461071de0db8179339b28b1c67c2bc9437c52
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3f51ce7c0eb45861a8b5277266b18e6d03e53178
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166505"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872488"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurer des fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -42,14 +42,14 @@ Pour configurer l’examen et la correction automatisés :
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Activer l’examen et la correction automatisés
 
-1. En tant qu’administrateur général ou administrateur de sécurité, Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ) et connectez-vous.
+1. En tant qu’administrateur général ou administrateur de sécurité, go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
 2. Dans le volet de navigation, choisissez **Paramètres**.
 3. Dans la section **Général,** sélectionnez **Fonctionnalités avancées.**
 4. Activer **l’examen automatisé et** résoudre automatiquement les **alertes.**
 
 ## <a name="set-up-device-groups"></a>Configurer des groupes d’appareils
 
-1. In the Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> ), on the **Paramètres** page, under **Permissions**, select **Device groups**.
+1. Dans le portail Microsoft 365 Defender ( ), sur la <https://security.microsoft.com> page **Paramètres,** sous **Autorisations,** sélectionnez **Groupes d’appareils.**
 2. Sélectionnez **+ Ajouter un groupe d’appareils.**
 3. Créez au moins un groupe d’appareils, comme suit :
    - Spécifiez un nom et une description pour le groupe d’appareils.

@@ -17,12 +17,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: f413eccdf669219d4f8f39ceec38ab6118d8c509
-  ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+  ms.openlocfilehash: d7c24bc14252dc514bf8b1518a99a51d64719a5e
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/15/2021
-  ms.locfileid: "61530438"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61938491"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -228,7 +228,7 @@ sections:
 
       * [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
 
-      * [Personnaliser les règles de réduction de la surface d’attaque](customize-attack-surface-reduction.md)
+      * [Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
       * [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 

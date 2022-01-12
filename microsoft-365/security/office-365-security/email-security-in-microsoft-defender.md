@@ -15,15 +15,14 @@ ms.collection:
 description: Afficher et examiner les tentatives de hameçonnage de programmes malveillants.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3ee97c54174fc7aaa2cd6d653dcd9fdd8298376d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507294"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872296"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -34,7 +33,7 @@ Contenu de cet article :
 - [Démarrer un examen et une réponse automatisés](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md)
+> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les détections de l’Explorateur et en temps réel **(telles** que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les [détections en temps réel.](real-time-detections.md)
 
 Cet article explique comment afficher et examiner les programmes malveillants et les tentatives de hameçonnage détectés dans le courrier électronique par Microsoft 365 fonctionnalités de sécurité.
 
@@ -47,7 +46,9 @@ Cet article explique comment afficher et examiner les programmes malveillants et
 
 Pour voir les programmes malveillants détectés dans les [**\>**](threat-explorer-views.md#email--malware) e-mails triés par Microsoft 365, utilisez la vue Programmes malveillants de l’Explorateur (ou détections en temps réel). Les programmes malveillants étant l’affichage par défaut, ils peuvent être sélectionnés dès que vous ouvrez l’Explorateur.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez **Email & Collaboration** \> **Explorer** (ou **Détections en temps réel ;** Cet exemple utilise l’Explorateur).
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration,** and then choose **Explorer** or **Real-time detections**. Pour aller directement à la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports> .
+
+   Cet exemple utilise **l’Explorateur**.
 
    À partir de là, commencez à l’affichage, choisissez une période particulière pour [](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)examiner (si nécessaire) et concentrez vos filtres, comme le décrit l’Explorateur.
 
@@ -86,8 +87,9 @@ Vous pouvez utiliser l’option Signaler **propre** dans l’Explorateur pour si
 
 Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le courrier électronique, y compris une liste d’URL qui ont été autorisées, bloquées et bloquées. Pour identifier les URL sur qui vous avez cliqué, [Coffre liens](safe-links.md) doivent être configurés. Veillez à configurer [](set-up-safe-links-policies.md) des stratégies Coffre liens pour la protection au moment du clic et la journalisation des verdicts de clic en Coffre liens.
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>sélectionnez **Email & Collaboration** \> **Explorer** (ou **Détections en temps réel ;** Cet exemple utilise l’Explorateur).
-, **sélectionnez Email & Collaboration** \> **Explorer** (ou **Détections en temps réel**; Cet exemple utilise l’Explorateur).
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration,** and then choose **Explorer** or **Real-time detections**. Pour aller directement à la page, utilisez <https://security.microsoft.com/threatexplorer> ou <https://security.microsoft.com/realtimereports> .
+
+   Cet exemple utilise **l’Explorateur**.
 
 2. In the **View** drop down list, choose **Email** \> **Phish**.
 

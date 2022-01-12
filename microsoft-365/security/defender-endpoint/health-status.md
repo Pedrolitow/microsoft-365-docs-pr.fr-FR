@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 12fdabadf5c2479ff65f18f7d8bc514a26f7ddc7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 13407c78f89058efe15ed0f5d8f23272716e0237
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164489"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937363"
 ---
 # <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque vous exécutez `mdatp health` la commande et leurs descriptions correspondantes.
 
@@ -50,7 +50,7 @@ Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque v
 |edr_configuration_version|PEPT version de configuration.|
 |edr_device_tags|Liste des balises associées à l’appareil.|
 |edr_group_ids|ID de groupe associé à l’appareil.|
-|edr_machine_id|Identificateur d’appareil utilisé dans Centre de sécurité Microsoft Defender.|
+|edr_machine_id|Identificateur d’appareil utilisé dans Microsoft 365 Defender.|
 |engine_version|Version du moteur antivirus.|
 |healthy|True si le produit est sain, false dans le cas contraire.|
 |licensed|True si l’appareil est intégré à un client, false dans le cas contraire.|

@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Les administrateurs peuvent découvrir comment la formation à la simulation d’attaques dans le portail Microsoft 365 Defender affecte les utilisateurs et peut obtenir des informations à partir des résultats de simulation et de formation.
 ms.technology: mdo
-ms.openlocfilehash: 362f094d340b4f80a7b6fd54b1325540b812fa3e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: c06cea01fcc7bb8fdc9c869fe8117f85eb627685
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962914"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935476"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Informations et rapports pour la formation à la simulation d’attaques dans Defender pour Office 365
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur la formation à la simulation d’attaques, voir 
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Informations et rapports sous l’onglet Vue d’ensemble de la formation à la simulation d’attaque
 
-Pour aller  à l’onglet Vue d’ensemble, ouvrez le portail Microsoft 365 Defender à l’adresse , allez à la formation sur la simulation d’attaques de collaboration sur la messagerie & et vérifiez que <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> l’onglet Vue d’ensemble est sélectionné (il  \>   s’agit de la valeur par défaut). Pour aller directement à l’onglet **Vue** d’ensemble de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=overview> .
+Pour aller  à l’onglet Vue d’ensemble, ouvrez le portail Microsoft 365 Defender à l’adresse , allez à la formation sur la simulation d’attaques de collaboration sur la messagerie & et vérifiez que <https://security.microsoft.com> l’onglet Vue d’ensemble est sélectionné (il  \>   s’agit de la valeur par défaut). Pour aller directement à l’onglet **Vue** d’ensemble de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=overview> .
 
 Le reste de cette section décrit les informations  disponibles sous l’onglet Vue d’ensemble de la formation sur la simulation d’attaque.
 
@@ -249,7 +249,7 @@ Si vous cliquez sur ![ l’icône Exporter.](../../media/m365-cc-sc-download-ico
 
 ## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Informations rapports dans les détails de simulation de la formation à la simulation d’attaques
 
-Pour aller à l’onglet **Simulations,** ouvrez le portail Microsoft 365 Defender à l’adresse e-mail & formation sur la simulation d’attaques de collaboration, puis cliquez sur l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \>  **Simulations.** Pour aller directement à l’onglet **Simulations** de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
+Pour aller à l’onglet **Simulations,** ouvrez le portail Microsoft 365 Defender à l’adresse e-mail & collaboration sur la simulation d’attaques, puis sélectionnez l’onglet <https://security.microsoft.com>  \>  **Simulations.** Pour aller directement à l’onglet **Simulations** de la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 
 Lorsque vous sélectionnez une simulation dans la liste, une page de détails s’ouvre. Cette page contient les paramètres de configuration de la simulation que vous vous attendez à voir (état, date de lancement, charge utile utilisée, etc.).
 

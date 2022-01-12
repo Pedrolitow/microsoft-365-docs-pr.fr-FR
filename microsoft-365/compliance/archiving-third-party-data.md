@@ -21,16 +21,20 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents pour Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: 787b4b5c48ec882692991b7c140761361f7d74d5
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: c96e1f6d1663fd932ceb7ffd56a727cb718f5d22
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645961"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874087"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
 Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de Microsoft 365 organisation. L’un des principaux avantages de l’utilisation de connecteurs de données pour importer et archiver des données tierces dans Microsoft 365 est que vous pouvez y appliquer diverses solutions de conformité Microsoft 365 après leur importation. Cela vous permet de vous assurer que les données non Microsoft de votre organisation sont conformes aux réglementations et normes qui affectent votre organisation.
+
+Regardez ce guide interactif qui montre comment créer des connecteurs de données pour archiver des données tierces et des exemples d’application de solutions de conformité aux données après leur importation dans Microsoft 365.
+
+> [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 
 ## <a name="third-party-data-connectors"></a>Connecteurs de données tiers
 

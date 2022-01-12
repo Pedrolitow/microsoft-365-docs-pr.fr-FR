@@ -18,15 +18,14 @@ ms.collection:
 description: Utilisez les détections De l’Explorateur et en temps réel dans le portail Microsoft 365 Defender pour examiner les menaces et y répondre efficacement.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b4509b02d03a487554463921cd4202765e20b30
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: de26921b0067cbcb5ad6019e0da62d6e5511d440
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422806"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934984"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Détections en temps réel et de l’Explorateur de menaces
 
@@ -212,7 +211,7 @@ Les améliorations sont les suivantes :
 
 - Affichez l’URL sur le clic complet (y compris les paramètres de requête qui font partie de l’URL) dans la section **Clics** du volant d’URL. Actuellement, le domaine et le chemin d’accès de l’URL apparaissent dans la barre de titre. Nous étendons ces informations pour afficher l’URL complète.
 
-- Correctifs entre les filtres d’URL *(URL* par rapport au domaine et au chemin d’accès de l’URL) : les mises à jour affectent la recherche de messages contenant un verdict URL/clic.   Nous avons activé la prise en charge des recherches non spécifiques au protocole, afin que vous pouvez rechercher une URL sans utiliser `http` . Par défaut, la recherche d’URL est m’indique http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
+- Correctifs entre les filtres d’URL *(URL* par rapport au domaine et au chemin d’accès de l’URL) : les mises à jour affectent la recherche de messages contenant un verdict URL/clic.   Nous avons activé la prise en charge des recherches non spécifiques au protocole, afin que vous pouvez rechercher une URL sans utiliser `http` . Par défaut, la recherche d’URL est m’indique http, sauf si une autre valeur est explicitement spécifiée. Par exemple :
   - Recherchez avec et sans le préfixe dans les champs de filtre URL, Domaine d’URL et Domaine `http://` **d’URL et** Chemin d’accès.   Les recherches doivent afficher les mêmes résultats.
   - Recherchez le `https://` préfixe dans **l’URL.** Lorsqu’aucune valeur n’est spécifiée, le `http://` préfixe est supposé.
   - `/`est ignoré au début et à la fin du chemin **d’URL,** du domaine **d’URL,** du domaine **d’URL et des champs de chemin d’accès.** `/` à la fin du champ **URL** est ignoré.
@@ -358,7 +357,13 @@ Cet exemple utilise l’Explorateur de menaces.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Afficher un aperçu de l’en-tête du courrier électronique et télécharger le corps de l’e-mail
 
-Vous pouvez maintenant afficher un aperçu d’un en-tête d’e-mail et télécharger le corps de l’e-mail dans l’Explorateur de menaces. Les administrateurs peuvent analyser les en-têtes/messages électroniques téléchargés pour les menaces. Étant donné que le téléchargement de messages électroniques peut exposer des informations, ce processus est contrôlé par le contrôle d’accès basé sur un rôle (RBAC). Un nouveau rôle, *Preview,* doit être ajouté à un autre groupe de rôles (par exemple, Opérations de sécurité ou Administrateur de la sécurité) pour accorder la possibilité de télécharger des messages électroniques dans l’affichage des messages électroniques. Toutefois, l’affichage de l’en-tête de courrier électronique ne nécessite aucun rôle supplémentaire (autre que celui requis pour afficher les messages dans l’Explorateur de menaces).
+Vous pouvez maintenant afficher un aperçu d’un en-tête d’e-mail et télécharger le corps de l’e-mail dans l’Explorateur de menaces. Les administrateurs peuvent analyser les en-têtes/messages électroniques téléchargés pour les menaces. Étant donné que le téléchargement de messages électroniques peut exposer des informations, ce processus est contrôlé par le contrôle d’accès basé sur un rôle (RBAC). Un nouveau rôle, *Preview,* est nécessaire pour accorder la possibilité de télécharger des messages dans l’affichage de tous les messages électroniques. Toutefois, l’affichage de l’en-tête de courrier électronique ne nécessite aucun rôle supplémentaire (autre que celui requis pour afficher les messages dans l’Explorateur de menaces). Pour créer un groupe de rôles avec le rôle Aperçu :
+
+1. Sélectionnez un groupe de rôles intégré qui possède uniquement le rôle Aperçu, tel que l’enquêteur de données ou le Gestionnaire eDiscovery.
+2. Sélectionnez **Copier le groupe de rôles.**
+3. Choisissez un nom et une description pour votre nouveau groupe de rôles, puis sélectionnez **Suivant.**
+4. Modifiez les rôles en ajoutant et en supprimant des rôles si nécessaire, mais en laissant le rôle Aperçu.
+5. Ajoutez des membres, puis **sélectionnez Créer un groupe de rôles.**
 
 Les détections de l’explorateur et du temps réel obtiennent également de nouveaux champs qui fournissent une image plus complète de l’endroit où vos messages électroniques sont envoyés. Ces modifications facilitent le recherche pour les opérations de sécurité. Mais le résultat principal est que vous pouvez connaître l’emplacement des messages électroniques problématiques en un coup d’œil.
 
@@ -551,7 +556,7 @@ Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, 
   - Administrateur de sécurité (peut être affecté dans le centre d’administration Azure Active Directory de sécurité ( <https://aad.portal.azure.com> )
   - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez avoir l’un des rôles suivants attribués dans le Centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> ou [dans Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- Pour Exchange Online, vous devez avoir l’un des rôles suivants attribués dans le Centre d’administration Exchange (EAC) ou [dans Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Gestion de l’organisation
   - Afficher uniquement la gestion de l’organisation

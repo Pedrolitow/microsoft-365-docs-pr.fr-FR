@@ -1,7 +1,7 @@
 - name: Microsoft Defender pour Les Entreprises (prévisualisation)
   href: index.yml
   items:
-    - name: Présentation
+    - name: Vue d’ensemble
       items:
         - name: Qu’est-ce que Microsoft Defender pour Entreprises (prévisualisation) ?
           href: mdb-overview.md
@@ -47,10 +47,8 @@
           href: mdb-reports.md
     - name: Gérer les paramètres et les stratégies
       items:
-        - name: Afficher et modifier des stratégies
-          href: mdb-view-edit-policies.md
-        - name: Créer une stratégie
-          href: mdb-create-new-policy.md
+        - name: 'Afficher, modifier et créer des stratégies'
+          href: mdb-view-edit-create-policies.md
         - name: Ordre des stratégies
           href: mdb-policy-order.md
         - name: Créer des groupes d’appareils
@@ -65,7 +63,7 @@
       items:
         - name: Comment obtenir de l’aide ou contacter le support technique
           href: mdb-get-help.md
-        - name: Foire aux questions
+        - name: Questions fréquemment posées
           href: mdb-faq.yml
         - name: Résolution des problèmes
           href: mdb-troubleshooting.yml

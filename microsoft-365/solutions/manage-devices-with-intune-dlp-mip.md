@@ -3,7 +3,9 @@ title: Étape 7 Implémenter la protection contre la perte de données (DLP) av
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Endpoint dlp
+- data loss prevention
+- dlp policies
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -13,15 +15,17 @@ ms.collection:
 - endpoint dlp
 - data loss prevention
 - dlp policies
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: e041e03b1318553937f094868e4e40675b06d47e
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: a27c94a6d98fc23afc80b0e368330cf10e0a33ed
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645825"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936773"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7 Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations
 

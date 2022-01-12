@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a73a1dcaf8b30e566b665e078d061ea0a7b4cf18
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 62036779aec92b08679d1213c1605b42388760af
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508370"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940577"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)
 
@@ -37,6 +37,11 @@ Lorsque des menaces sont détectées et que des alertes sont déclenchées, des 
 - [Comment surveiller vos incidents et alertes](#monitor-your-incidents--alerts)
 - [Gravité de l’alerte](#alert-severity)
 - [Étapes suivantes](#next-steps)
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 ## <a name="monitor-your-incidents--alerts"></a>Surveiller vos incidents et & alertes
 
@@ -65,7 +70,7 @@ Microsoft Defender pour Entreprise (prévisualisation) affecte une gravité d’
 | Les programmes malveillants en exécution sont détectés par Microsoft Defender entreprise (prévisualisation). Le programme malveillant est bloqué presque immédiatement. | Moyenne ou élevée | Le programme malveillant représente une menace pour les points de terminaison individuels et pour votre entreprise. |
 | Un comportement suspect est détecté, mais aucune action de correction n’est encore prise. | Faible, Moyen ou Élevé | La gravité dépend du degré auquel le comportement pose une menace pour votre entreprise. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)](mdb-respond-mitigate-threats.md)
 

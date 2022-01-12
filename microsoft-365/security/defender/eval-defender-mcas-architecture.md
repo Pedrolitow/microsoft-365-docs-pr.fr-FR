@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 065dd43af376c16ee9e5daa332a08bc25b0d6b11
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7e9542e152b2c218a83fd4a431588c14afecbda8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110318"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933155"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour les applications cloud
 
@@ -58,7 +56,7 @@ La première étape de gestion de l’utilisation des applications cloud consist
 ![Architecture de Microsoft Defender pour les applications cloud : découverte cloud.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 Dans cette illustration, deux méthodes peuvent être utilisées pour surveiller le trafic réseau et découvrir les applications cloud utilisées par votre organisation.
-- R : Cloud App Discovery s’intègre à Microsoft Defender pour Endpoint en natif. Defender pour les points de terminaison signale que les applications et les services cloud sont accessibles à partir d’appareils gérés Windows 10 et Windows 11 informatiques. 
+- R. Cloud App Discovery s’intègre à Microsoft Defender pour Endpoint en natif. Defender pour les points de terminaison signale que les applications et les services cloud sont accessibles à partir d’appareils gérés Windows 10 et Windows 11 informatiques. 
 - B. Pour une couverture sur tous les appareils connectés à un réseau, le collecteur de journaux Defender for Cloud Apps est installé sur les pare-feux et autres proxies pour collecter des données à partir des points de terminaison. Ces données sont envoyées à Defender pour les applications cloud pour analyse.
 
 #### <a name="managing-cloud-apps"></a>Gestion des applications cloud
@@ -67,7 +65,7 @@ Après avoir découvert les applications cloud et analysé le comportement de le
 
 ![Architecture de Microsoft Defender pour les applications cloud : gestion des applications cloud.](../../media/defender/m365-defender-mcas-architecture-c.png)
 
-Dans cette illustration :
+Dans cette illustration :
 - Certaines applications sont sanctionn es pour une utilisation. Il s’agit d’un moyen simple de commencer à gérer les applications.
 - Vous pouvez accroître la visibilité et le contrôle en connectant des applications avec des connecteurs d’application. Les connecteurs d’application utilisent les API des fournisseurs d’applications.
 
@@ -78,7 +76,7 @@ Microsoft Defender pour les applications cloud sert de proxy inverse, fournissan
 
 ![Architecture de Microsoft Defender pour les applications cloud : contrôle de session d’accès proxy.](../../media/defender/m365-defender-mcas-architecture-d.png)
 
-Dans cette illustration :
+Dans cette illustration :
 - L’accès aux applications cloud prises en compte par les utilisateurs et les appareils de votre organisation est acheminé via Defender pour les applications cloud.
 - Cet accès proxy permet d’appliquer des contrôles de session.
 - Les applications cloud que vous n’avez pas sanctionn es ou explicitement non affectées ne sont pas affectées.
@@ -91,7 +89,7 @@ Il se peut que des applications SaaS soient déjà ajoutées à votre client Azu
 
 ![Architecture de Microsoft Defender pour les applications cloud : applications SaaS.](../../media/defender/m365-defender-mcas-architecture-e.png)
 
-Dans cette illustration :
+Dans cette illustration :
 - Les applications SaaS sont intégrées au client Azure AD client. Cela permet aux Azure AD d’appliquer des stratégies d’accès conditionnel, notamment l’authentification multifacteur.
 - Une stratégie est ajoutée à Azure Active Directory pour diriger le trafic des applications SaaS vers Defender pour les applications cloud. La stratégie spécifie les applications SaaS à appliquer à cette stratégie. Par conséquent, une fois Azure AD les stratégies d’accès conditionnel qui s’appliquent à ces applications SaaS, Azure AD dirige (par proxies) le trafic de session via Defender pour les applications Cloud.
 - Defender pour les applications cloud surveille ce trafic et applique toutes les stratégies de contrôle de session qui ont été configurées par les administrateurs. 

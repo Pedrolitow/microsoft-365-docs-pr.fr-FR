@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Découvrez comment contrôler les utilisateurs qui peuvent créer Microsoft 365 groupes.
-ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422098"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939404"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gérer les personnes autorisées à créer des groupes Microsoft 365
 
@@ -38,7 +38,7 @@ Lorsque vous limitez les personnes autorisées à créer un groupe, cela affecte
 - Outlook
 - SharePoint
 - Yammer
-- Microsoft Teams
+- Microsoft Teams
 - Microsoft Stream
 - Planificateur
 - Power BI (classique)
@@ -58,7 +58,7 @@ Si vous êtes membre de l’un de ces rôles, vous pouvez créer des groupes Mic
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Pour gérer les personnes qui créent des groupes, les personnes suivantes Azure AD Premium des licences Azure AD licences EDU de base qui leur sont attribuées :
+Pour gérer les personnes qui créent des groupes, les personnes suivantes doivent Azure AD Premium licences qui leur sont attribuées :
 
 - Administrateur qui configure ces paramètres de création de groupe
 - Membres du groupe autorisés à créer des groupes
@@ -66,7 +66,7 @@ Pour gérer les personnes qui créent des groupes, les personnes suivantes Azure
 > [!NOTE]
 > Voir [Attribuer ou supprimer des licences dans](/azure/active-directory/fundamentals/license-users-groups) le portail Azure Active Directory pour plus d’informations sur l’attribution de licences Azure.
 
-Les personnes suivantes n’ont pas besoin Azure AD Premium ou Azure AD licences EDU de base qui leur sont attribuées :
+Les personnes suivantes n’ont pas besoin Azure AD Premium licences qui leur sont attribuées :
 
 - Personnes qui sont membres de Microsoft 365 groupes et qui n’ont pas la possibilité de créer d’autres groupes.
 
@@ -98,7 +98,7 @@ Vous devez utiliser la version d’aperçu de [Azure Active Directory PowerShell
 
 Copiez le script ci-dessous dans un éditeur de texte, tel que Bloc-notes, ou le [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
+Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
 
 `$GroupName = "Group Creators"`
 

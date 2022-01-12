@@ -7,20 +7,20 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 24ad63d5f49154a8a167b90a08d7d838655dc65d
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: c2eb73b241bf49ef4f89598874a6648a3f9c8d70
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645081"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61891918"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1
 
@@ -169,7 +169,7 @@ Faites défiler vers le bas pour voir tous les affichages dans le rapport de pro
 > [!TIP]
 > Pour en savoir plus, consultez [La protection Web.](web-protection-overview.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Gérer Microsoft Defender pour Endpoint Plan 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md)

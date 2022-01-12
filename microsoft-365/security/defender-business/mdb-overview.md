@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/21/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 2324bb04e388ae94e2c6b3004b9bd07e72eca4d7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 8d3802abb429c3cc64056316d81be6769c416f38
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643831"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61899306"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Vue d’ensemble de Microsoft Defender pour Les Entreprises (prévisualisation)
 
@@ -74,7 +74,12 @@ Avec Defender pour Entreprise (prévisualisation), vous pouvez protéger les app
    - [Afficher ou modifier des stratégies de sécurité](mdb-view-edit-policies.md)
    - [Gérer des règles personnalisées pour les stratégies de pare-feu](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 - [En savoir plus sur le processus de configuration simplifié dans Microsoft Defender pour Entreprises (prévisualisation)](mdb-simplified-configuration.md)
 

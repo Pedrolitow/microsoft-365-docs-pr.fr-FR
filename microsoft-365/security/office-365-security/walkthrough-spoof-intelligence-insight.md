@@ -18,16 +18,15 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser la stratégie d’intelligence contre l’usurpation d’adresse et l’information sur l’usurpation d’informations pour autoriser ou bloquer les expéditeurs usurpés détectés.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1509a83b47b4f23ab5f99ba752b231479985269
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373823"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872080"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de veille contre l’usurpation d’informations et des informations sur l’usurpation d’informations dans EOP
 
@@ -48,8 +47,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresses dans le portail 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
-  - Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -85,7 +83,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 > [!IMPORTANT]
 > Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’informations sur l’usurpation d’adresse [dans EOP.](learn-about-spoof-intelligence.md)
 
-1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, accédez à **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menaces** \> **Anti-courrier indésirable** dans la section **Stratégies**.
+1. Dans le Portail Microsoft 365 Defender sur <https://security.microsofot.com>, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez stratégie de **veille** contre l’usurpation d’adresse en cliquant sur le nom.
 

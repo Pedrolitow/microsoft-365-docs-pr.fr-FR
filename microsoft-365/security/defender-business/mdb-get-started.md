@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 5df69a578c5f4d3db7c366a0369e7efdbf934b79
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61641584"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61904784"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Commencer à utiliser Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -32,6 +32,11 @@ ms.locfileid: "61641584"
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
 Une fois votre processus d’installation et de configuration terminé pour votre entreprise, la meilleure façon de commencer à utiliser Microsoft Defender pour Les entreprises (prévisualisation) consiste à visiter votre portail Microsoft 365 Defender ( ), et à vous inscrire avec votre compte d’utilisateur pour [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365. 
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 ## <a name="navigate-the-microsoft-365-defender-portal"></a>Naviguer dans le Microsoft 365 Defender web
 
@@ -71,7 +76,7 @@ Consultez le module d’apprentissage, Détecter et répondre aux problèmes [de
 > [!NOTE]
 > Bien que le module d’apprentissage[(](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)Détecter et répondre aux problèmes de sécurité ) soit en fait pour Microsoft Defender pour Endpoint, les concepts de base et le flux global sont similaires à ce que vous verrez dans Defender pour Entreprise (prévisualisation).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez une vue d’ensemble de Defender for Business (prévisualisation), essayez une ou plusieurs des tâches suivantes :
 

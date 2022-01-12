@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/16/2021
+ms.date: 01/06/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 054016a9db24c508c5eb9418b8e7d049b30389ce
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a6495d27c315ea66426e208a8116059406c2ae0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560035"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940529"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -610,6 +610,20 @@ Nous vous recommandons de mettre à jour vos images d’installation de Windows 
 Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
+<summary>20220105.1</summary>
+
+&ensp;Version du package **: 20220105.1**<br/>
+&ensp;Version de la plateforme **: 4.18.2111.5**<br/>
+&ensp;Version du moteur **: 1.1.18800.4**<br/>
+&ensp;Version de signature **: 1.355.1482.0**<br/>
+
+### <a name="fixes"></a>Correctifs
+- Aucun
+
+### <a name="additional-information"></a>Informations supplémentaires
+- Aucun
+<br/>
+</details><details>
 <summary>1.1.2112.01</summary>
 
 &ensp;Version du package **: 1.1.2112.01**<br/>

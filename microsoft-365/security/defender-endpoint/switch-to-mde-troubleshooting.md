@@ -12,22 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-migratetomdatp
-- m365solution-overview
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- m365solution-scenario
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 01/11/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: b16cd5c9642c017c7354b98c5445c2614bde10bf
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 6729d136da90c674c0d726f2bfe7321a75bdb79a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240803"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937171"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Résolution des problèmes lors du basculement vers Microsoft Defender pour point de terminaison
 

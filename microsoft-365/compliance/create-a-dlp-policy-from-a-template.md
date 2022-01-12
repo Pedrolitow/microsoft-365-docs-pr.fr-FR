@@ -20,22 +20,59 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747237"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939104"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
-Le moyen le plus simple et le plus courant de commencer à utiliser les stratégies DLP consiste à utiliser l’un des modèles inclus dans le centre de conformité Microsoft 365 de sécurité. Vous pouvez utiliser l’un de ces modèles tel qu’il est ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
+Le moyen le plus simple et le plus courant de commencer à utiliser les stratégies DLP consiste à utiliser l’un des modèles inclus dans le centre de conformité Microsoft 365 de données. Vous pouvez utiliser l’un de ces modèles tel qu’il est ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
 
 Microsoft 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à un large éventail de besoins courants en matière de réglementation et de stratégie d’entreprise. Voir ; [Modèles de stratégie](dlp-policy-reference.md#policy-templates) pour une liste complète. 
 
 Vous pouvez affiner un modèle en modifiant l’une de ses règles existantes ou en ajoutant de nouvelles règles. Par exemple, vous pouvez ajouter de nouveaux types d’informations sensibles à une règle, modifier les décomptes dans une règle pour rendre son déclenchement plus facile ou plus difficile, permettre aux utilisateurs de remplacer les actions d’une règle en fournissant une justification ou modifier les destinataires des notifications et des rapports d’incident. Un modèle de stratégie DLP est un point de départ flexible pour de nombreux scénarios de conformité courants.
 
 Vous pouvez également choisir le modèle personnalisé, sans règle par défaut, et configurer votre stratégie DLP de A à Z, pour répondre aux exigences de conformité spécifiques de votre organisation.
+
+## <a name="permissions"></a>Autorisations
+
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité. Par défaut, votre administrateur client aura accès aux responsables de la mise en conformité et aux autres personnes. Procédez comme suit :
+  
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
+    
+2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
+
+3. Lors de la création du groupe de rôles, utilisez la **section** Choisir des rôles pour ajouter le rôle suivant au groupe de rôles : **DLP Compliance Management**.
+    
+4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
+
+Utilisez le rôle Gestion de la conformité **DLP** en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
+
+Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP et non pour appliquer des stratégies.
+
+### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en prévisualisation
+
+Il existe des rôles et des groupes de rôles en prévisualisation que vous pouvez tester pour affiner vos contrôles d’accès.
+
+Voici une liste des rôles Protection des données Microsoft (MIP) en prévisualisation. Pour en savoir plus à ce sujet, voir [Rôles](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) dans le Centre de sécurité & conformité
+
+- Administrateur de la protection des informations
+- Analyste de la protection des informations
+- Enquêteur de la protection des informations
+- Lecteur de protection des informations
+
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur les groupes de rôles, voir Groupes de [rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protection des informations
+- Administrateurs de la protection des informations
+- Analystes de la protection des informations
+- Enquêteurs de la protection des informations
+- Lecteurs de protection des informations
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Créer la stratégie DLP à partir d’un modèle
 
@@ -61,8 +98,8 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
  
 1. <!-->, faites l’une des choses suivantes :
 
-   - Choisissez **tous les emplacements dans Office 365** \> **suivant**.
-   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, sélectionnez ceci.
+   - Choose **All locations in Office 365** \> **Next**.
+   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, choisissez ceci.
 
    Pour inclure ou exclure un emplacement entier tel que tous les e-mails  Exchange ou tous les comptes OneDrive, mettez l’état de cet emplacement sur ou hors service.
 
@@ -78,11 +115,11 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
     ![Règles étendues dans le modèle de stratégie PII des États-Unis.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-9. Choisissez de détecter quand ce contenu est partagé au sein de votre organisation ou en dehors de votre organisation si vous avez sélectionné l’un de ces emplacements :
+9. Choisissez de détecter le moment où ce contenu est partagé au sein de votre organisation ou en dehors de votre organisation si vous avez sélectionné l’un de ces emplacements :
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams Messages de conversation et de canal 
+    1. Teams chat et messages de canal 
 
 10. Cliquez sur **Suivant**.
 

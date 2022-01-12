@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b84f458649a79583f384621739f37e5880179e28
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: acdfe0c4c9dac2d936c2986b42869cad458e7c3a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531206"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935752"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -280,7 +280,7 @@ Si au moins une des options de connectivité renvoie un état (200), le client D
 Toutefois, si les résultats du contrôle de la connectivité indiquent un échec, une erreur HTTP est affichée (voir Codes d'état HTTP). Vous pouvez ensuite utiliser les URL dans le tableau indiqué dans Activer l’accès aux URL de [service Defender for Endpoint dans le serveur proxy.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Les URL que vous utiliserez dépendent de la région sélectionnée au cours de la procédure d’intégration.
 
 > [!NOTE]
-> Les vérifications de connectivité cloud de l’outil Analyseur de connectivité ne sont pas compatibles avec les créations de processus de blocage de règles de réduction de la surface d’attaque provenant des commandes [PSExec et WMI.](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité. Vous pouvez également ajouter temporairement des [exclusions DE LAS](customize-attack-surface-reduction.md#exclude-files-and-folders) lors de l’exécution de l’analyseur.
+> Les vérifications de connectivité cloud de l’outil Analyseur de connectivité ne sont pas compatibles avec les créations de processus de blocage de règles de réduction de la surface d’attaque provenant des commandes [PSExec et WMI.](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands) Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité. Vous pouvez également ajouter temporairement des [exclusions DE LAS](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) lors de l’exécution de l’analyseur.
 >
 > Lorsque telemetryProxyServer est défini, dans le Registre ou via la stratégie de groupe, Defender pour le point de terminaison revient à direct s’il ne peut pas accéder au proxy défini.
 

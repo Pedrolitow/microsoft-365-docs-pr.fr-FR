@@ -19,12 +19,12 @@ ms.custom:
 ms.technology: mde
 ms.date: 12/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b13eaa93103759d072960ba0ea4e322e8f5a642c
-ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
+ms.openlocfilehash: 3c6954b683287ffaaec793dfffefff25f1d4def8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609120"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936064"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -40,13 +40,13 @@ La protection contre la falsification est disponible pour les appareils qui exé
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
+- Windows Server 2016
 - Windows Server 2012 R2
 
 > [!NOTE]
 > La protection contre la falsification Windows Server 2012 R2 est disponible pour les appareils intégrés à l’aide du package de solution unifiée moderne. Pour plus d’informations, voir Nouvelle fonctionnalité dans la solution unifiée moderne pour [Windows Server 2012 R2 et 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Vue d’ensemble
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -104,7 +104,7 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 
 - Lorsque vous utilisez le portail Microsoft 365 Defender pour gérer la protection contre la falsification, vous n’avez pas besoin d’utiliser Intune ou la méthode d’attachement du client.
 
-- Lorsque vous gérez la protection contre les falsifications dans le Centre de sécurité Microsoft Defender, le paramètre est appliqué à l’échelle du client, ce qui affecte tous vos appareils exécutant Windows 10, Windows 10 Entreprise plusieurs sessions, Windows 11, Windows 11 Entreprise plusieurs sessions, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 ou Windows Server 2022. Pour affiner la protection contre la falsification (par exemple, une protection contre la falsification sur certains appareils, mais pas pour d’autres), utilisez [Intune](#manage-tamper-protection-for-your-organization-using-intune) ou Configuration Manager avec attachement [client.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- Lorsque vous gérez la protection contre la falsification dans le portail Microsoft 365 Defender, le paramètre est appliqué à l’échelle du client, affectant tous vos appareils exécutant Windows 10, Windows 10 Entreprise multisession, Windows 11, Windows 11 Entreprise  multisessage, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 ou Windows Server 2022. Pour affiner la protection contre la falsification (par exemple, une protection contre la falsification sur certains appareils, mais pas pour d’autres), utilisez [Intune](#manage-tamper-protection-for-your-organization-using-intune) ou Configuration Manager avec attachement [client.](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 
 - Si vous avez un environnement hybride, les paramètres de protection contre la falsification configurés dans Intune prévalent sur les paramètres configurés dans le portail Microsoft 365 Defender client.
 
@@ -251,7 +251,7 @@ La protection contre la falsification s’intègre aux fonctionnalités [& gesti
 
 Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, consultez [threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre la falsification ?
 

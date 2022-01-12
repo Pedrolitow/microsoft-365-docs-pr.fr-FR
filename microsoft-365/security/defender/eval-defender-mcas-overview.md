@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 48f315842deadfeda9d8e46b40bf5271b23c4cdb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 5c63c2c60b6f3554660ad8802180fa37e4dd2113
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110678"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933059"
 ---
 # <a name="evaluate-microsoft-defender-for-cloud-apps"></a>Évaluer Microsoft Defender pour les applications cloud
 

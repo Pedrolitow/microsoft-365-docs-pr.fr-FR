@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Cette page permet de créer votre liste de membres du personnel et de gérer les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553975"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933670"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -38,14 +38,14 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
 3. Lorsque vous ajoutez du personnel au  sein de votre organisation, tapez son nom dans le champ Ajouter des personnes et sélectionnez-les lorsqu’ils apparaissent dans le menu déroulant. Les autres champs sont automatiquement remplis.
 
-    Une fois qu’un membre du personnel est ajouté, vous pouvez modifier le nom qui s’affiche sur toutes les communications Bookings en sélectionnant **le x** en fonction de leur nom et en éditant le champ Ajouter des personnes.  Cela peut être utile si vous souhaitez que les membres du personnel affichent un titre ou un nom spécifique pour les clients, par exemple, en répertoriant Adele Vance en tant que « Dr Vance, MD ».
+    Une fois qu’un membre du personnel est ajouté, vous pouvez modifier le nom qui apparaît  sur toutes les communications Bookings en sélectionnant **le x** en-de côté de leur nom et en éditant le champ Ajouter des personnes. Cela peut être utile si vous souhaitez que les membres du personnel affichent un titre ou un nom spécifique pour les clients, par exemple, en répertoriant Adele Vance en tant que « Dr Vance, MD ».
 
-4. Pour ajouter du personnel en dehors de votre organisation, remplissez manuellement son courrier électronique et d’autres informations.
+4. Pour ajouter du personnel externe à votre organisation, remplissez manuellement son courrier électronique et d’autres informations.
 
     > [!NOTE]
     > Les employés extérieurs à votre client ne pourront pas partager d’informations de libre/occupé avec Bookings.
 
-5. Pour chaque membre du personnel, sélectionnez un rôle : Administrateur, Visionneuse ou Invité.
+5. Pour chaque membre du personnel, sélectionnez un rôle : administrateur, visionneuse ou invité.
     - **Les administrateurs** peuvent modifier tous les paramètres, ajouter et supprimer du personnel, et créer, modifier ou supprimer des réservations.
     - **Les** visiteurs peuvent voir toutes les réservations dans le calendrier, mais ils ne peuvent pas les modifier ou les supprimer. Ils ont un accès en lecture seule aux paramètres.
     - **Les** invités peuvent être affectés à des réservations, mais ils ne peuvent pas ouvrir la boîte aux lettres de réservation.
@@ -54,7 +54,7 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un e-mail de notification de Bookings.":::
 
-7. La sélection d’événements **Office 365 votre** calendrier affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services bookings via Bookings.
+7. La sélection d’événements **Office 365 le calendrier** affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services bookings via Bookings.
 
     Par exemple, si un membre du personnel a une réunion d’équipe ou un rendez-vous personnel prévu pour 15h00 le mercredi, Bookings indique que ce membre du personnel n’est pas disponible pour être réservé dans ce créneau horaire. Cette heure apparaîtra comme occupée ou provisoire dans l’affichage Calendrier Bookings, comme illustré dans l’exemple ci-dessous.
 
@@ -65,14 +65,14 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
 8. Sélectionnez Utiliser **les** heures d’ouverture pour définir toutes les heures de réservation pour que les membres de votre personnel soient uniquement pendant les heures d’ouverture que vous avez définies dans la **section** Heures d’ouverture de la page Informations professionnelles.
 
-    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent davantage la durée de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement les mardis et mercredis sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
+    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent les heures de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement le mardi et le mercredi sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
 
     > [!NOTE]
-    > Seuls les 31 premiers membres du personnel que vous ajoutez à la page de votre personnel s’affichent lorsque vous affectez des membres du personnel à un service.
+    > Les 100 premiers membres du personnel que vous ajoutez à votre page de personnel s’affichent lorsque vous affectez des membres du personnel à un service.
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Faire d’un utilisateur Bookings un super utilisateur sans l’ajouter en tant que personnel dans Bookings
 
-Vous pouvez ajouter une personne à votre liste de membres du personnel dans Bookings sans les mettre à la disposition des clients. Une fois que vous en aurez fait un super utilisateur, ils deviendront administrateur de la boîte aux lettres de réservation. Être administrateur d’une boîte aux lettres de réservation est défini comme ayant un accès total et des autorisations d’envoi en tant que pour la boîte aux lettres de réservation.
+Vous souhaitez peut-être ajouter une personne à votre liste de membres du personnel dans Bookings sans les mettre à la disposition des clients ou des clients. Une fois que vous en aurez fait un super utilisateur, ils deviendront administrateur de la boîte aux lettres de réservation. Être administrateur d’une boîte aux lettres de réservation est défini comme ayant un accès total et des autorisations d’envoi en tant que pour la boîte aux lettres de réservation.
 
 > [!NOTE]
 > Ces étapes fonctionnent uniquement si l’utilisateur  ajouté n’est pas déjà affecté à un rôle de visionneuse dans Bookings.
@@ -91,7 +91,7 @@ Vous pouvez ajouter une personne à votre liste de membres du personnel dans Boo
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-Voici un exemple de commande PowerShell pour ajouter Allie Bellew à la boîte aux lettres de réservation de rendez-vous de contoso.
+Voici un exemple de commande PowerShell pour ajouter Allie Bellew à la boîte aux lettres de réservation de réservation de la salle de réservation Contoso.
 
 1. Exécutez d’abord la commande ci-après :
 
@@ -102,7 +102,7 @@ Voici un exemple de commande PowerShell pour ajouter Allie Bellew à la boîte a
 2. Exécutez ensuite la commande ci-après :
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew dispose désormais d’un** accès administrateur, mais n’apparaît pas en tant que personnel bookable dans Bookings.

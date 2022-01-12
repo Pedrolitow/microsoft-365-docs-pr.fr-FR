@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/03/2021
+ms.date: 01/04/2022
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 3659f0f532b14babd256f3310c4e7da8dde67e3c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311818"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938647"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -78,9 +78,9 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe courammen
 |MAPS|Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|Configurer la vérification cloud étendue|[Configurer le délai de blocage du cloud](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|Sélectionner le niveau de protection cloud|[Spécifier le niveau de protection pour le cloud](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Système d’inspection du réseau|Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau|[Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau](specify-additional-definitions-network-traffic-inspection-mdav.md)|
-|Système d’inspection du réseau|Activer le retrait des définitions|[Configurer le retrait des définitions](turn-on-definition-retirement.md)|
-|Système d’inspection du réseau|Activer la reconnaissance de protocole|[Activer la reconnaissance de protocole](turn-on-protocol-recognition.md)|
+|Système d’inspection du réseau|Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau| Non utilisé (supprimé) |
+|Système d’inspection du réseau|Activer le retrait des définitions| Non utilisé (supprimé)|
+|Système d’inspection du réseau|Activer la reconnaissance de protocole| Non utilisé (supprimé)|
 |Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Quarantaine|Configurer la suppression des éléments du dossier De quarantaine|[Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md)|
 |Protection en temps réel|Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur|[Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -100,7 +100,7 @@ Le tableau suivant répertorie les paramètres de stratégie de groupe courammen
 |Correction|Spécifier le jour de la semaine pour exécuter une analyse complète programmée afin de terminer la correction|[Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Correction|Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction|[Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Rapports|Désactiver les notifications améliorées|[Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
-|Root|Désactiver la Antivirus Microsoft Defender|Non utilisé (ce paramètre  doit être configuré sur Non configuré pour s’assurer que les applications antivirus tierces installées fonctionnent correctement)
+|Root|Désactiver la Antivirus Microsoft Defender|Non utilisé. Si vous utilisez ou envisagez d’utiliser un produit antivirus non Microsoft, voir Antivirus Microsoft Defender compatibilité avec [d’autres produits de sécurité.](microsoft-defender-antivirus-compatibility.md)|
 |Root|Définir des adresses pour contourner le serveur proxy|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Définir la connexion automatique du proxy (.pac) pour la connexion au réseau|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Root|Définir un serveur proxy pour la connexion au réseau|[Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|

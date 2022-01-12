@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Découvrez quels événements sont consignés lorsque les utilisateurs affectés aux autorisations eDiscovery effectuent une recherche de contenu, une découverte électronique principale et des tâches Advanced eDiscovery dans le Centre de conformité Microsoft 365.
+description: Découvrez quels événements sont consignés lorsque les utilisateurs affectés à des autorisations eDiscovery effectuent une recherche de contenu, une découverte électronique principale et des tâches Advanced eDiscovery dans le Centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e033864b15032e66995be439e1de750da06e988b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eb1a6f1ee0ff9c84f4dbfc7f42427ae9dda499de
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151013"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867852"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit
 
-Les activités liées à la recherche de contenu et à la découverte électronique (pour core eDiscovery et Advanced eDiscovery) effectuées dans Centre de conformité Microsoft 365 ou en exécutant les cmdlets PowerShell correspondantes sont enregistrées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou tout utilisateur 2013 2013 2013) effectuent les tâches de recherche de contenu et de découverte électronique principale suivantes dans le Centre de conformité Microsoft 365 :
+Les activités liées à la recherche de contenu et à la découverte électronique (pour core eDiscovery et Advanced eDiscovery) effectuées dans Centre de conformité Microsoft 365 ou en exécutant les cmdlets PowerShell correspondantes sont enregistrées dans le journal d’audit. Les événements sont consignés lorsque les administrateurs ou les gestionnaires eDiscovery (ou tout utilisateur 2013 2013 2013) effectuent les tâches de recherche de contenu et de découverte électronique principales suivantes dans le Centre de conformité Microsoft 365 :
   
 - Création et gestion de cas principaux Advanced eDiscovery de gestion
 
@@ -50,10 +50,10 @@ Actuellement, vous devez faire quelques actions spécifiques pour afficher les a
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **Audit.**
 
-3. Dans la liste des **activités,** sous activités **eDiscovery** ou Advanced eDiscovery activités **de** découverte électronique, cliquez sur une ou plusieurs activités à rechercher.
+3. Dans la liste des **activités,** sous Activités **eDiscovery** ou Advanced eDiscovery **activités,** cliquez sur une ou plusieurs activités à rechercher.
 
     > [!NOTE]
-    > La **liste** de listes des activités inclut également un groupe d’activités nommées activités de **cmdlet eDiscovery** qui retournent des enregistrements à partir du journal d’audit de la cmdlet.
+    > La **liste des activités** inclut également un groupe d’activités nommées activités de **cmdlet eDiscovery** qui retournent des enregistrements à partir du journal d’audit de la cmdlet.
   
 4. Sélectionnez une plage de dates et d’heures pour afficher les événements eDiscovery qui se sont produits au cours de cette période.
 
@@ -67,7 +67,7 @@ Actuellement, vous devez faire quelques actions spécifiques pour afficher les a
 
     Une page **volante Détails** s’affiche et contient les propriétés détaillées de l’enregistrement d’événement. Pour afficher des détails supplémentaires, cliquez sur **Plus d’informations.** Pour obtenir une description de ces propriétés, consultez la section Propriétés détaillées des activités [eDiscovery.](#detailed-properties-for-ediscovery-activities)
 
-9. Si vous le souhaitez, vous pouvez exporter les résultats de recherche du journal d’audit dans un fichier CSV, puis utiliser la fonctionnalité power query Excel pour mettre en forme et filtrer ces enregistrements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
+9. Si vous le souhaitez, vous pouvez exporter les résultats de recherche du journal d’audit dans un fichier CSV, puis utiliser la fonctionnalité power query Excel pour mettre en forme et filtrer ces enregistrements. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Activités de découverte électronique
 
@@ -90,7 +90,7 @@ Le tableau suivant décrit les activités de recherche de contenu et de découve
 |Élément d’aperçu de recherche de contenu présenté  <br/> |PreviewItemRendered  <br/> |S/O  <br/> |Un gestionnaire eDiscovery a vu un élément en cliquant dessus lors de l’aperçu des résultats de recherche.  <br/> |
 |Recherche de contenu créée  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Une nouvelle recherche de contenu a été créée.  <br/> |
 |Administrateur eDiscovery créé  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Un utilisateur a été ajouté en tant qu’administrateur eDiscovery dans l’organisation.  <br/> |
-|Cas eDiscovery créé  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Un cas eDiscovery a été créé. Lorsqu’un cas est créé, vous ne devez lui donner qu’un nom. D’autres tâches liées à la cas, telles que l’ajout de membres, la création de holds et la création de recherches de contenu associées au cas, entraînent la consigner d’autres événements.  <br/> |
+|Cas eDiscovery créé  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Un cas eDiscovery a été créé. Lorsqu’un cas est créé, vous ne devez lui donner qu’un nom. D’autres tâches liées à la cas, telles que l’ajout de membres, la création de mise en réserve et la création de recherches de contenu associées au cas, entraînent la consigner d’autres événements.  <br/> |
 |Filtre d’autorisations de recherche créé  <br/> |SearchPermissionCreated  <br/> |New-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été créé.  <br/> |
 |Requête de recherche créée pour la attente de cas eDiscovery  <br/> |HoldCreated  <br/> |New-CaseHoldRule  <br/> |Une attente basée sur une requête associée à un cas eDiscovery a été créée.  <br/> |
 |Recherche de contenu supprimée  <br/> |SearchRemoved  <br/> |Remove-ComplianceSearch  <br/> |Une recherche de contenu existante a été supprimée.  <br/> |
@@ -98,7 +98,7 @@ Le tableau suivant décrit les activités de recherche de contenu et de découve
 |Cas de découverte électronique supprimée  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Un cas eDiscovery a été supprimé. Toute attente associée au cas doit être supprimée avant de pouvoir être supprimée.  <br/> |
 |Filtre des autorisations de recherche supprimées  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été supprimé.  <br/> |
 |Requête de recherche supprimée pour la attente de cas eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Une attente basée sur une requête associée à un cas eDiscovery a été supprimée. La suppression de la requête de la attente est souvent le résultat de la suppression d’une attente. Lorsqu’une requête de mise en attente ou de mise en attente est supprimée, les emplacements de contenu qui étaient en attente sont libérés.  <br/> |
-|Exportation téléchargée de la recherche de contenu  <br/> |SearchExportDownloaded  <br/> |S/O  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur son ordinateur local. Une **exportation démarrée de l’activité** de recherche de contenu doit être lancée avant que les résultats de la recherche ne soient téléchargés.  <br/> |
+|Exportation téléchargée de la recherche de contenu  <br/> |SearchExportDownloaded  <br/> |S/O  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur son ordinateur local. Une **exportation démarrée de l’activité de** recherche de contenu doit être lancée avant que les résultats de la recherche ne soient téléchargés.  <br/> |
 |Résultats prévisualés de la recherche de contenu  <br/> |SearchPreviewed  <br/> |S/O  <br/> |Un utilisateur a aperçu des résultats d’une recherche de contenu.  <br/> |
 |Résultats supprimés de la recherche de contenu  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a purgé les résultats d’une recherche de contenu en exécutant la commande **New-ComplianceSearchAction -Purge.**  <br/> |
 |Suppression de l’analyse de la recherche de contenu  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Une action de préparation de recherche de contenu (pour préparer les résultats de la Advanced eDiscovery) a été supprimée. Si l’action de préparation a moins de deux semaines, les résultats de la recherche qui ont été préparés pour la Advanced eDiscovery ont été supprimés de la Microsoft Azure de stockage. Si l’action de préparation date de plus de 2 semaines, cet événement indique que seule l’action de préparation correspondante a été supprimée.  <br/> |
@@ -111,7 +111,7 @@ Le tableau suivant décrit les activités de recherche de contenu et de découve
 |Recherche de contenu démarrée  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Une recherche de contenu a été lancée. Lorsque vous créez ou modifiez une recherche de contenu à l’Centre de conformité Microsoft 365, la recherche est automatiquement démarrée.<br/> |
 |Exportation démarrée de la recherche de contenu  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a exporté les résultats d’une recherche de contenu.  <br/> |
 |Rapport d’exportation démarré  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a exporté un rapport de recherche de contenu.  <br/> |
-|Recherche de contenu arrêtée  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un utilisateur a arrêté une recherche de contenu.  <br/> |
+|Arrêt de la recherche de contenu  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un utilisateur a arrêté une recherche de contenu.  <br/> |
 |(aucun)|CaseViewed|Get-ComplianceCase|Un utilisateur a vu un cas eDiscovery principal dans le centre de conformité. L’enregistrement d’audit pour cet événement inclut le nom du cas qui a été vu. |
 |(aucun)|SearchViewed|Get-ComplianceSearch|Un utilisateur a vu une recherche de contenu dans  le centre de conformité en accédant à la recherche sous l’onglet Recherches dans un cas core eDiscovery ou en y accédant sur la **page** de recherche de contenu. L’enregistrement d’audit pour cet événement inclut l’identité de la recherche qui a été vue.|
 |(aucun)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Un utilisateur a vu une exportation de recherche de contenu dans le centre de conformité en accédant à l’exportation sous l’onglet Exportation **sur** la page **de recherche de** contenu. Cette activité est également consignée lorsqu’un utilisateur voit une exportation associée à un cas core eDiscovery.|
@@ -166,7 +166,7 @@ Comme indiqué précédemment, l’apparition des activités de cmdlet eDiscover
 |Requête de recherche créée pour la attente de cas eDiscovery  <br/> |[New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule) <br/> |Une attente basée sur une requête associée à un cas eDiscovery a été créée.  <br/> |
 |Requête de recherche supprimée pour la attente de cas eDiscovery  <br/> |[Remove-CaseHoldRule](/powershell/module/exchange/remove-caseholdrule) <br/> |Une attente basée sur une requête associée à un cas eDiscovery a été supprimée. La suppression de la requête de la attente est souvent le résultat de la suppression d’une attente. Lorsqu’une requête de mise en attente ou de mise en attente est supprimée, les emplacements de contenu qui étaient en attente sont libérés.  <br/> |
 |Requête de recherche modifiée pour la attente de cas eDiscovery  <br/> |[Set-CaseHoldRule](/powershell/module/exchange/set-caseholdrule) <br/> |Une attente basée sur une requête associée à un cas eDiscovery a été modifiée. Les modifications possibles incluent la modification de la requête ou de la plage de dates pour une mise en attente basée sur une requête.  <br/> |
-|Cas eDiscovery créé  <br/> |[New-ComplianceCase](/powershell/module/exchange/new-compliancecase) <br/> |Un cas eDiscovery a été créé. Lorsqu’un cas est créé, vous ne devez lui donner qu’un nom. D’autres tâches liées à la cas, telles que l’ajout de membres, la création de holds et la création de recherches de contenu associées au cas, entraînent la consigner d’autres événements.  <br/> |
+|Cas eDiscovery créé  <br/> |[New-ComplianceCase](/powershell/module/exchange/new-compliancecase) <br/> |Un cas eDiscovery a été créé. Lorsqu’un cas est créé, vous ne devez lui donner qu’un nom. D’autres tâches liées à la cas, telles que l’ajout de membres, la création de mise en réserve et la création de recherches de contenu associées au cas, entraînent la consigner d’autres événements.  <br/> |
 |Cas de découverte électronique supprimée  <br/> |[Remove-ComplianceCase](/powershell/module/exchange/remove-compliancecase) <br/> |Un cas eDiscovery a été supprimé. Toute attente associée au cas doit être supprimée avant de pouvoir être supprimée.  <br/> |
 |Cas eDiscovery modifié  <br/> |[Set-ComplianceCase](/powershell/module/exchange/set-compliancecase) <br/> |Un cas eDiscovery a été modifié. Les modifications incluent la fermeture d’un cas ouvert ou la réouverture d’un cas fermé.  <br/> |
 |Membre ajouté au cas eDiscovery  <br/> |[Add-ComplianceCaseMember](/powershell/module/exchange/add-compliancecasemember) <br/> |Un utilisateur a été ajouté en tant que membre d’un cas eDiscovery. En tant que membre d’un cas, un utilisateur peut effectuer diverses tâches liées à la cas, selon qu’il a reçu ou non les autorisations nécessaires.  <br/> |
@@ -176,7 +176,7 @@ Comme indiqué précédemment, l’apparition des activités de cmdlet eDiscover
 |Recherche de contenu supprimée  <br/> |[Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) <br/> |Une recherche de contenu existante a été supprimée.  <br/> |
 |Recherche de contenu modifiée  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |Une recherche de contenu existante a été modifiée. Les modifications peuvent inclure l’ajout ou la suppression d’emplacements de contenu recherchés et la modification de la requête de recherche.  <br/> |
 |Recherche de contenu démarrée  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |Une recherche de contenu a été lancée. Lorsque vous créez ou modifiez une recherche de contenu à l’aide de l’interface utilisateur graphique du centre de conformité, la recherche est automatiquement démarrée. Si vous créez ou modifiez une recherche à l’aide de la cmdlet **New-ComplianceSearch** ou **Set-ComplianceSearch,** vous devez exécuter la cmdlet **Start-ComplianceSearch** pour démarrer la recherche.  <br/> |
-|Recherche de contenu arrêtée  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |Une recherche de contenu en cours d’exécution a été arrêtée.  <br/> |
+|Arrêt de la recherche de contenu  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |Une recherche de contenu en cours d’exécution a été arrêtée.  <br/> |
 |Action de recherche de contenu créée  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |Une action de recherche de contenu a été créée. Les actions de recherche de contenu incluent l’aperçu des résultats de recherche, l’exportation des résultats de recherche, la préparation des résultats de recherche pour analyse dans Advanced eDiscovery et la suppression définitive des éléments qui correspondent aux critères de recherche d’une recherche de contenu.  <br/> |
 |Action de recherche de contenu supprimée  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |Une action de recherche de contenu a été supprimée.  <br/> |
 |Filtre d’autorisations de recherche créé  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |Un filtre d’autorisations de recherche a été créé.  <br/> |
@@ -187,20 +187,20 @@ Comme indiqué précédemment, l’apparition des activités de cmdlet eDiscover
 |Changement de l’appartenance à l’administrateur eDiscovery  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |La liste des administrateurs eDiscovery de votre organisation a été modifiée. Cette activité est consignée lorsque la liste des administrateurs eDiscovery est remplacée par un groupe de nouveaux utilisateurs. Si un seul utilisateur est ajouté ou supprimé, l’opération **Add-eDiscoveryCaseAdmin** ou **Remove-eDiscoveryCaseAdmin** est enregistrée.  <br/> |
 |(aucun)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|Cette activité est consignée lorsqu’un utilisateur a vu une liste de core eDiscovery ou Advanced eDiscovery cas. Cette activité est également consignée lorsqu’un utilisateur voit un cas spécifique dans Core eDiscovery. Lorsqu’un utilisateur affiche un cas spécifique, l’enregistrement d’audit inclut l’identité du cas qui a été vu. Si l’utilisateur n’a vu qu’une liste de cas, l’enregistrement d’audit ne contient pas d’identité de cas.|
 |(aucun)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|Cette activité est consignée lorsqu’un utilisateur a vu une liste de recherches de contenu ou de recherches associées à un cas core eDiscovery. Cette activité est également consignée lorsqu’un utilisateur voit une recherche de contenu spécifique ou une recherche spécifique associée à un cas core eDiscovery. Lorsqu’un utilisateur affiche une recherche spécifique, l’enregistrement d’audit inclut l’identité de la recherche qui a été vue. Si l’utilisateur n’a vu qu’une liste de recherches, l’enregistrement d’audit ne contient pas d’identité de recherche.
-|(aucun)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|Cette activité est enregistrée lorsqu’un utilisateur a vu une liste d’actions de recherche de conformité (telles que les exportations, les aperçus ou les purges) ou les actions associées à un cas core eDiscovery. Cette activité est également enregistrée lorsqu’un utilisateur voit une action de recherche de conformité spécifique (par exemple, une exportation) ou une action spécifique associée à un cas core eDiscovery. Lorsqu’un utilisateur affiche une action de recherche, l’enregistrement d’audit inclut l’identité de l’action de recherche qui a été vue. Si l’utilisateur n’a vu qu’une liste d’actions, l’enregistrement d’audit ne contient pas d’identité d’action.|
+|(aucun)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|Cette activité est enregistrée lorsqu’un utilisateur a vu une liste d’actions de recherche de conformité (telles que les exportations, les aperçus ou les purges) ou les actions associées à un cas core eDiscovery. Cette activité est également consignée lorsqu’un utilisateur voit une action de recherche de conformité spécifique (par exemple, une exportation) ou une action spécifique associée à un cas core eDiscovery. Lorsqu’un utilisateur affiche une action de recherche, l’enregistrement d’audit inclut l’identité de l’action de recherche qui a été vue. Si l’utilisateur n’a vu qu’une liste d’actions, l’enregistrement d’audit ne contient pas d’identité d’action.|
 ||||
 
 ## <a name="detailed-properties-for-ediscovery-activities"></a>Propriétés détaillées des activités eDiscovery
 
-Le tableau suivant décrit les propriétés incluses dans la page volante d’une activité eDiscovery répertoriée dans les résultats de la recherche. Ces propriétés sont également incluses dans le fichier CSV lorsque vous exportez les résultats de recherche du journal d’audit. Un enregistrement du journal d’audit pour une activité eDiscovery n’inclut pas toutes les propriétés détaillées répertoriées ci-dessous.
+Le tableau suivant décrit les propriétés incluses dans la page volante d’une activité eDiscovery répertoriée dans les résultats de la recherche. Ces propriétés sont également incluses dans le fichier CSV lorsque vous exportez les résultats de recherche du journal d’audit. Un enregistrement de journal d’audit pour une activité eDiscovery n’inclut pas toutes les propriétés détaillées répertoriées ci-dessous.
   
 > [!TIP]
-> Lorsque vous exportez les résultats de la recherche, le fichier CSV contient une colonne nommée **AudtiData**, qui contient les propriétés détaillées décrites dans le tableau suivant dans une propriété à valeurs multiples. Vous pouvez utiliser la fonctionnalité Power Query dans Excel pour fractionner cette colonne en plusieurs colonnes afin que chaque propriété possède sa propre colonne. Cela vous permettra de trier et de filtrer une ou plusieurs de ces propriétés. Pour plus d’informations, consultez la section « Exporter les résultats de la recherche dans un fichier » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file) 
+> Lorsque vous exportez les résultats de la recherche, le fichier CSV contient une colonne nommée **AudtiData**, qui contient les propriétés détaillées décrites dans le tableau suivant dans une propriété à valeurs multiples. Vous pouvez utiliser la fonctionnalité Power Query dans Excel pour fractionner cette colonne en plusieurs colonnes afin que chaque propriété possède sa propre colonne. Cela vous permettra de trier et de filtrer une ou plusieurs de ces propriétés. Pour plus d’informations, voir la section « Exporter les résultats de la recherche dans un fichier » dans le [journal d’audit.](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file) 
   
 |**Propriété**|**Description**|
 |:-----|:-----|
 |Cas  <br/> |Identité (GUID) du cas eDiscovery qui a été créé, modifié ou supprimé.  <br/> |
-|ClientApplication  <br/> |Les activités de cmdlet eDiscovery ont une valeur **EMC** pour cette propriété. Cela indique que l’activité a été effectuée à l’aide de l’interface graphique graphique du centre de conformité ou en exécutant l’cmdlet dans PowerShell.  <br/> |
+|ClientApplication  <br/> |Les activités de cmdlet eDiscovery ont la valeur **EMC** pour cette propriété. Cela indique que l’activité a été effectuée à l’aide de l’interface graphique graphique du centre de conformité ou en exécutant l’cmdlet dans PowerShell.  <br/> |
 |ClientIP  <br/> |Adresse IP du périphérique utilisé lors de la journalisation de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.  <br/> |
 |ClientRequestId  <br/> | Pour les activités eDiscovery, cette propriété est généralement vide.  <br/> |
 |CmdletVersion  <br/> |Numéro de build de la version du centre de conformité en cours d’exécution dans votre organisation.  <br/> |
@@ -226,6 +226,6 @@ Le tableau suivant décrit les propriétés incluses dans la page volante d’un
 |UserId  <br/> |L’utilisateur qui a effectué l’activité (spécifiée dans la propriété Operation) qui a entraîné la journal de l’enregistrement. Les enregistrements pour l’activité eDiscovery effectuée par les comptes système (tels que NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit.  <br/> |
 |UserKey  <br/> |Autre ID pour l’utilisateur identifié dans la propriété UserId. Pour les activités eDiscovery, la valeur de cette propriété est généralement identique à celle de la propriété UserId.  <br/> |
 |UserServicePlan  <br/> |Abonnement utilisé par votre organisation. Pour les activités eDiscovery, cette propriété est généralement vide.  <br/> |
-|UserType  <br/> |Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur.  <br/> 0 Utilisateur normal. 2 Administrateur de votre organisation. 3 Un compte système d’administrateur de centre de données Microsoft ou de centre de données. 4 Un compte système. 5 Application. 6 Principal de service. |
+|UserType  <br/> |Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur.  <br/> 0 Utilisateur normal. 2 Administrateur de votre organisation. 3 Un compte d’administrateur de centre de données Microsoft ou de système de centres de données. 4 Un compte système. 5 Application. 6 Principal de service. |
 |Version  <br/> |Indique le numéro de version de l’activité (identifiée par la propriété Operation) enregistrée.  <br/> |
 |Charge de travail  <br/> |Service dans lequel l’activité s’est produite. Pour les activités eDiscovery, la valeur **est SecurityComplianceCenter**.  <br/> |

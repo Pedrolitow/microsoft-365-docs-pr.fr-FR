@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 747cfe06ef69703a9baf7bd360935c364b3c7832
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 498330ffdf791a0688b9d6bfad432ba5ebea3b2a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213180"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935812"
 ---
 # <a name="windows-security-updates-report"></a>Rapport des mises à jour de sécurité Windows
 
-Ce rapport fournit une vue d’ensemble de l’avancement du déploiement d’une mise à jour Windows sécurité pour vos appareils Microsoft Manged Desktop données. Au début de chaque cycle de publication des mises à jour de sécurité, Microsoft Manged Desktop prend un instantané de tous les appareils dont l’état est **Actif** et définit sa cible de déploiement à 95 % de cette population. Le graphique indique l’avancement de votre déploiement pour une date de publication sélectionnée par rapport à la Microsoft Manged Desktop moyenne. Bien que nous nous concentrions sur la population active, vous pouvez également faire pivoter ce rapport pour afficher vos populations d’appareils **actives +** synchronisées et **non** synchronisées. Vous pouvez afficher l’avancement du déploiement pour les versions précédentes en modifiant les filtres disponibles, mais les détails au niveau de l’appareil sont disponibles uniquement pour la version actuelle. Les informations d’appareil consultables dans le tableau suivant le graphique sont également exportables pour l’analyse hors connexion.
+Ce rapport fournit une vue d’ensemble de l’avancement du déploiement d’une mise à jour Windows sécurité pour vos appareils Microsoft Manged Desktop données. Au début de chaque cycle de publication des mises à jour de sécurité, Microsoft Manged Desktop prend un instantané de tous les appareils inscrits. La cible de déploiement est définie sur 95 % des **appareils actifs** de cette population. Le graphique indique l’avancement de votre déploiement pour une date de publication sélectionnée par rapport à la Microsoft Manged Desktop moyenne. Bien que nous nous concentrions sur la population active, vous pouvez également faire pivoter ce rapport pour afficher vos populations d’appareils **actives +** synchronisées et **non** synchronisées. Vous pouvez afficher l’avancement du déploiement pour les versions précédentes en modifiant les filtres disponibles, mais les détails au niveau de l’appareil sont disponibles uniquement pour la version actuelle. Les informations d’appareil consultables dans le tableau suivant le graphique sont également exportables pour l’analyse hors connexion.
 
 :::image type="content" source="../../media/mmd-security-updates.png" alt-text="Rapport montrant la progression de l’installation de la mise à jour dans le temps en haut à gauche, filtre dans le coin supérieur droit avec un bouton pour générer le rapport et tableau des détails du rapport le long du bas":::
 

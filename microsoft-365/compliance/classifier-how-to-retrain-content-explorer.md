@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment fournir des commentaires à un classifieur entraidable dans l’Explorateur de contenu.
-ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment fournir des commentaires à un classifieur entraisable dans l’Explorateur de contenu.
+ms.openlocfilehash: bbc724b94997a4668115314df0c627dcfa5ddc77
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203278"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933610"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
-Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément à appliquer Office étiquettes de confidentialité, stratégies de conformité des communications et stratégies d’étiquette de rétention.
+Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier les éléments à appliquer aux étiquettes de confidentialité Office, aux stratégies de conformité des communications et aux stratégies d’étiquette de rétention.
 
-Cet article vous montre comment améliorer les performances des classifieurs entraçables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
+Cet article vous montre comment améliorer les performances des classifieurs entra nessables personnalisés en leur fournissant des commentaires supplémentaires.
 
 Pour en savoir plus sur les différents types de classifieurs, voir En savoir plus sur les [classifieurs entraisables.](classifier-learn-about.md)
 
@@ -36,6 +36,8 @@ Regardez cette vidéo pour obtenir un résumé rapide du processus d’ajustemen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> Les classifieurs pré-formés ne peuvent pas être réentraînés.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -50,14 +52,14 @@ Vous aurez besoin de comptes avec ces autorisations pour utiliser des classifieu
 ## <a name="overall-workflow"></a>Flux de travail global
 
 > [!IMPORTANT]
-> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange les éléments et utilise le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classificateur comme condition, arrêtez-vous ici.**
+> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange éléments et vous devez utiliser le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classificateur comme condition, arrêtez-vous ici.**
 
 Lorsque vous utilisez vos classifieurs, vous souhaitez peut-être augmenter la précision des classifications qu’ils sont en train d’effectuer. Pour ce faire, vous évaluez la qualité des classifications des éléments qu’il a identifiés comme étant une correspondance ou non. Une fois que vous avez fait 30 évaluations pour un classificateur, il prend ce retour d’expérience et se réévalue automatiquement.
 
 Pour en savoir plus sur le flux de travail global de la nouvelle formation d’un classificateur, voir Flux de processus pour former à nouveau [un classificateur.](classifier-learn-about.md#retraining-classifiers)
 
 > [!NOTE]
-> Un classifieur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
+> Un classificateur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
@@ -67,7 +69,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 > [!IMPORTANT]
 > L’apparition des éléments agrégés sous l’en-tête classifieurs entraçables peut prendre jusqu’à huit jours.
 
-3. Choisissez le classifieur entra vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
+3. Choisissez le classifieur entraisable que vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
 
 > [!NOTE]
 > Si un élément possède une entrée dans la **colonne** Étiquette de rétention, cela signifie que l’élément a été classé en tant que `match` .  Si un élément n’a pas  d’entrée dans la colonne Étiquette de rétention, cela signifie qu’il a été classé en tant que `close match` . Vous pouvez améliorer le plus la précision du classificateur en fournissant des commentaires sur `close match` les éléments. 
@@ -80,7 +82,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 5. Choose **Provide feedback**.
 6. Dans le **volet commentaires détaillés,** si l’élément est un vrai positif, choisissez, **Match**.  Si l’élément est un faux positif, c’est-à-dire qu’il a été inclus de manière incorrecte dans la catégorie, **sélectionnez Ne pas correspondre.**
 7. S’il existe un autre classificateur qui serait plus approprié pour l’élément, vous pouvez le choisir dans la liste Suggérer d’autres **classifieurs entra nessifiables.** Cela déclenche l’évaluation de l’élément par l’autre classificateur.
-8. Choose **Send feedback** to send your evaluation of the , `match` `not a match` classifications and suggest other trainable classifiers. Lorsque vous avez fourni 30 instances de commentaires à un classifieur, il se formera automatiquement. La formation peut prendre entre une et quatre heures. Les classifieurs ne peuvent être formés que deux fois par jour.
+8. Choose **Send feedback** to send your evaluation of the , `match` `not a match` classifications and suggest other trainable classifiers. Une fois que vous avez fourni 30 instances de commentaires à un classifieur, il se formera automatiquement. La formation peut prendre entre une et quatre heures. Les classifieurs ne peuvent être formés que deux fois par jour.
 
 > [!IMPORTANT]
 > Ces informations sont ensuite données au classifieur de votre client, elles ne sont **pas revenir à Microsoft.**
@@ -94,13 +96,13 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 
 ![vue d’ensemble des résultats de la nouvelle formation du classificateur.](../media/classifier-retraining-overview.png)
 
-12. Examinez l’action recommandée, ainsi que les comparaisons de prédictions des versions du classifieur actuellement publiées et retentées.
+12. Examinez l’action recommandée et les comparaisons de prédictions des versions réétrainées et actuellement publiées du classificateur.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.
 14. Si vous n’êtes pas satisfait des résultats de la nouvelle formation, vous pouvez choisir de fournir des commentaires supplémentaires au classificateur dans l’interface de l’Explorateur de contenu et de démarrer un autre cycle de formation ou de ne rien faire, auquel cas la version actuellement publiée du classificateur continuera d’être utilisée. 
 
 ## <a name="details-on-republishing-recommendations"></a>Détails sur la republier des recommandations
 
-Voici quelques informations sur la façon dont nous vous suggérons de publier à nouveau un classifieur retrained ou de suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
+Voici quelques informations sur la façon dont nous formulerons la recommandation pour publier à nouveau un classifieur retrained ou suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
 
 Après une nouvelle formation, nous évaluons les performances du classificateur à la fois sur les éléments avec des commentaires, ainsi que sur tous les éléments utilisés à l’origine pour former le classificateur. 
 

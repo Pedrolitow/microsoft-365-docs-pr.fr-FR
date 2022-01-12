@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 79e530a6635079bcf262b23e887f06ab5ebe79b3
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: df939ac031035f8771314bc1941bf44535d65610
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962878"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939836"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Defender pour Office 365
 
@@ -28,7 +28,7 @@ Dans la formation à la simulation d’attaque, une charge _utile_ est le messag
 
 Cet article explique comment créer vos propres charges utiles dans une formation à la simulation d’attaques. Vous pouvez créer des charges utiles personnalisées aux emplacements suivants :
 
-- Onglet **Charges utiles** : Dans le portail Microsoft 365 Defender à l’adresse , go <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> to Email & **collaboration** Attack \> **simulation** \> **payloads** tab. Pour aller directement à l’onglet **Charges utiles,** utilisez <https://security.microsoft.com/attacksimulator?viewid=payload> .
+- Onglet **Charges utiles** : Dans le portail Microsoft 365 Defender à l’adresse , go <https://security.microsoft.com> to Email & **collaboration** Attack \> **simulation** \> **payloads** tab. Pour aller directement à l’onglet **Charges utiles,** utilisez <https://security.microsoft.com/attacksimulator?viewid=payload> .
 - Lors de la création de la simulation : vous pouvez créer des charges utiles personnalisées dans la **page** Sélectionner une charge utile (la troisième page) de l’Assistant de création de simulation. Pour plus d’informations, voir Simuler une attaque par [hameçonnage dans Defender pour Office 365](attack-simulation-training.md).
 
 Pour plus d’informations sur la formation à la simulation d’attaques, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)

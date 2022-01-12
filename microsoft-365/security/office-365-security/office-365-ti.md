@@ -18,16 +18,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Découvrez les fonctionnalités d’examen et de réponse aux menaces dans Microsoft Defender Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9056f1e63910ace9dfe525c45e3e549d225b2d85
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e14cda205405b90a73689bde59fcccf22095f2df
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371159"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933826"
 ---
 # <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -39,16 +38,16 @@ ms.locfileid: "61371159"
 
 Les fonctionnalités d’examen et de réponse aux menaces dans [Microsoft Defender](defender-for-office-365.md) pour Office 365 aident les analystes et les administrateurs de sécurité à protéger le Microsoft 365 de leur organisation pour les utilisateurs professionnels en :
 
-- Faciliter l’identification, la surveillance et la compréhension des cyberattaques
-- Aide à résoudre rapidement les menaces dans Exchange Online, SharePoint Online, OneDrive Entreprise et Microsoft Teams
-- Fournir des informations et des connaissances pour aider les opérations de sécurité à empêcher les cyberattaques contre leur organisation
-- L’emploi [d’examens et de réponses automatisés Office 365](automated-investigation-response-office.md) pour les menaces critiques basées sur la messagerie
+- Faciliter l’identification, la surveillance et la compréhension des cyberattaques.
+- Aide à résoudre rapidement les menaces dans Exchange Online, SharePoint Online, OneDrive Entreprise et Microsoft Teams.
+- Fournir des informations et des connaissances pour aider les opérations de sécurité à empêcher les cyberattaques contre leur organisation.
+- L’emploi [d’examens et](automated-investigation-response-office.md) de réponses automatisés Office 365 les menaces critiques basées sur la messagerie.
 
 Les fonctionnalités d’examen et de réponse aux menaces fournissent des informations sur les menaces et les actions de réponse associées qui sont disponibles dans Microsoft 365 Defender portail. Ces informations peuvent aider l’équipe de sécurité de votre organisation à protéger les utilisateurs contre les attaques par courrier électronique ou basées sur des fichiers. Les fonctionnalités permettent de surveiller les signaux et de collecter des données à partir de plusieurs sources, telles que l’activité des utilisateurs, l’authentification, la messagerie, les PC compromis et les incidents de sécurité. Les décideurs d’entreprise et votre équipe en matière de sécurité peuvent utiliser ces informations pour comprendre et répondre aux menaces contre votre organisation et protéger votre propriété intellectuelle.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Se familiariser avec les outils d’examen et de réponse aux menaces
 
-Les fonctionnalités d’examen et de réponse aux menaces s’offrent à vous dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>sous la mesure d’un ensemble d’outils et de flux de travail de réponse, notamment :
+Les fonctionnalités d’examen et de réponse aux menaces dans le portail Microsoft 365 Defender sont un ensemble d’outils et de flux de travail de réponse qui <https://security.microsoft.com> incluent :
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
@@ -61,7 +60,7 @@ Utilisez [l’Explorateur (et](threat-explorer.md) les détections en temps rée
 
 ![Explorateur de menaces.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-Pour afficher et utiliser ce rapport, dans le portail Microsoft 365 Defender, consultez l’Explorateur de collaboration &  >  **courrier électronique.**
+Pour afficher et utiliser ce rapport dans le portail Microsoft 365 Defender, consultez l’Explorateur de collaboration & <https://security.microsoft.com>  \> **courrier électronique.** Ou, pour aller directement à la page **De l’Explorateur,** utilisez <https://security.microsoft.com/threatexplorer> .
 
 ### <a name="incidents"></a>Incidents
 
@@ -69,7 +68,7 @@ Utilisez la liste Incidents (également appelée Investigations) pour voir la li
 
 ![Liste des incidents de menace en cours dans Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Pour afficher la liste des incidents actuels pour votre organisation, dans le portail Microsoft 365 Defender, consultez **Incidents**&  >  **alertes Incidents**.
+Pour afficher la liste des incidents actuels pour votre organisation dans le portail Microsoft 365 Defender, consultez <https://security.microsoft.com> **Incidents &** \> **alertes Incidents**. Ou, pour aller directement à la page **Incidents,** utilisez <https://security.microsoft.com/incidents> .
 
 ![Dans le Centre de sécurité & conformité, choisissez Révision de la gestion des \> menaces.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -77,7 +76,7 @@ Pour afficher la liste des incidents actuels pour votre organisation, dans le po
 
 Utilisez une formation sur la simulation d’attaques pour configurer et exécuter des cyberattaques réalistes dans votre organisation et identifier les personnes vulnérables avant qu’une cyberattaque réelle affecte votre entreprise. Pour plus d’informations, voir [Simuler une attaque par hameçonnage.](attack-simulation-training.md)
 
-Pour afficher et utiliser cette fonctionnalité dans le portail Microsoft 365 Defender, consultez la & **formation** à la  >  **simulation d’attaques** de collaboration.
+Pour afficher et utiliser cette fonctionnalité dans le portail Microsoft 365 Defender, consultez la & formation sur la simulation d’attaques de <https://security.microsoft.com> **collaboration.**  >   Ou, pour aller directement à la page de formation sur la **simulation d’attaque,** utilisez <https://security.microsoft.com/attacksimulator?viewid=overview> .
 
 ### <a name="automated-investigation-and-response"></a>Enquêtes et réponses automatisées
 

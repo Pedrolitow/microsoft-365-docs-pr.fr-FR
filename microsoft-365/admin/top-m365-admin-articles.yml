@@ -1,0 +1,91 @@
+### YamlMime:Landing
+title: 20 principaux articles d’aide pour les administrateurs les plus populaires ce mois-ci
+summary: 'Vous êtes curieux de savoir quels articles d’aide sont les plus populaires auprès des administrateurs ? Consultez cette collection des 20 articles d’aide les plus populaires, mis à jour tous les mois. Dernière mise à jour : 05/01/2022'
+metadata:
+  title: 20 principaux articles d’aide pour les administrateurs les plus populaires ce mois-ci
+  description: Consultez cette collection des 20 principaux articles d’aide les plus populaires auprès des administrateurs, mis à jour tous les mois.
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: SKjerland
+  ms.author: sharik
+  ms.date: 10/01/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: c34dfad8e3a022d3dcc142eaf213cef30b5014c2
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61937865"
+landingContent:
+- title: Informatif
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: À propos des rôles d’administrateur
+      url: admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: Obtenir de l’aide ou une assistance technique
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: Domaines
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ajouter des enregistrements DNS pour connecter votre domaine
+      url: setup/setup-business-basic.md
+    - text: Ajouter un domaine à Microsoft 365
+      url: setup/setup-business-standard.md
+- title: Sécurité
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configurez l’authentification multi-facteurs.
+      url: setup/migrate-email-and-contacts-admin.md
+- title: Factures et abonnements
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Annuler votre abonnement
+      url: setup/setup-business-basic.md
+    - text: Régler votre abonnement
+      url: setup/setup-business-standard.md
+    - text: Gérer les méthodes de paiement
+      url: setup/setup-business-standard.md
+    - text: Consulter votre facture
+      url: setup/setup-business-standard.md
+- title: E-mail
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: À propos des boîtes aux lettres partagées
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: Configurer le forwarding du courrier électronique dans Microsoft 365
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Créer une boîte aux lettres partagée
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Accorder des autorisations de boîte aux lettres à un autre utilisateur
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Modifier un nom d’utilisateur et une adresse de courrier
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
+      url: admin-overview/sign-up-for-office-365.md
+- title: Utilisateurs, groupes et mots de passe
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Comparer les groupes
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: Ajouter des utilisateurs et attribuer des licences simultanément
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Attribuer des licences aux utilisateurs
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Définir la stratégie d’expiration des mots de passe pour votre organisation
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Permettre aux utilisateurs de se Outlook applications mobiles avec un code QR
+      url: admin-overview/sign-up-for-office-365.md

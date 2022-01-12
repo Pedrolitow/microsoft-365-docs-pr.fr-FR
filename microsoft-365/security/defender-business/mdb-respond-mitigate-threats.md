@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0858f4bf59aa9c5a5eb713e50c382bdf475e5126
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 6ed538eac8d60acbd8ff2947207c79dfb7d9e482
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507229"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937039"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Répondre aux menaces et les atténuer dans Microsoft Defender entreprise (prévisualisation)
 
@@ -30,7 +30,14 @@ ms.locfileid: "61507229"
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répondre aux menaces détectées et de les atténuer.
+Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répondre aux menaces détectées et de les atténuer. Cet article vous présente un exemple d’utilisation de Defender pour Entreprises (prévisualisation).
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
+
+## <a name="view-detected-threats"></a>Afficher les menaces détectées
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
@@ -54,7 +61,7 @@ Le portail Microsoft 365 Defender permet à votre équipe de sécurité de répo
 
 6. Sélectionnez une action disponible. Par exemple, vous pouvez choisir Exécuter **l’analyse antivirus,** ce qui Antivirus Microsoft Defender démarrer une analyse rapide sur l’appareil. Vous pouvez également sélectionner Lancer **une enquête automatisée** pour déclencher une enquête automatisée sur l’appareil.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Passer en revue les actions de correction dans le centre de mise à jour](mdb-review-remediation-actions.md)
 

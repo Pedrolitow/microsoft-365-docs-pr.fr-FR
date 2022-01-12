@@ -1,7 +1,7 @@
 ---
 title: Ressources Utiles de Microsoft Defender pour les points de terminaison
 description: Accéder à des ressources utiles telles que des liens vers des blogs et d’autres ressources liées à Microsoft Defender for Endpoint
-keywords: Centre de sécurité Microsoft Defender, produit bref, bref, fonctionnalités, gestion des licences
+keywords: Microsoft 365 Defender, produit bref, bref, fonctionnalités, gestion des licences
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cfd0a95e16c07ae000a0f0dad69e44d0864a9a7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164477"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937351"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources Utiles de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

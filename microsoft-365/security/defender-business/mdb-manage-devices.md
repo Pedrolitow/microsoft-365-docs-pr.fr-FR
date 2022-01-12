@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: bf12e3f0e726745ae9064381f72a3c0cc4ccf3eb
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 53bdc9a2da917a16a27b48f1420ffbbb89cdbd47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507744"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933322"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)
 
@@ -36,6 +36,11 @@ Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les a
 - [Prendre des mesures sur un appareil qui présente](#take-action-on-a-device-that-has-threat-detections) des détections de menaces
 - [Intégrer un appareil à Defender for Business (prévisualisation)](#onboard-a-device)  
 - [Hors-carte d’un appareil de Defender for Business (prévisualisation)](#offboard-a-device)
+
+>
+> **Avez-vous un peu de temps ?**
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+>
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
@@ -69,7 +74,7 @@ Voir [Appareils intégrés à Microsoft Defender pour Entreprises (prévisualisa
 
 Voir [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)](mdb-view-manage-incidents.md)
 

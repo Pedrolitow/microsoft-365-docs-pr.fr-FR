@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 71c1768a3cb5cc96f68818def7e9a582d5e258ac
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: d09898b29b9efda6b6911e9542d75d36a8e38f7e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530198"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867636"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
@@ -69,7 +69,7 @@ Suivez les instructions pour une entrée unique pour chaque appareil.
 
 Ce scénario utilise un script central et l’exécute à l’aide d’une stratégie de groupe basée sur un domaine. Vous pouvez également placer le script dans l’image d’or et l’exécuter de la même manière.
 
-##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-defender-security-center"></a>Télécharger le fichier WindowsDefenderATPOnboardingPackage.zip à partir du Centre de Windows Defender de sécurité
+##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-365-defender-portal"></a>Télécharger le fichier WindowsDefenderATPOnboardingPackage.zip à partir du portail Windows 365 Defender
 
 1. Ouvrir le fichier de configuration du package VDI .zip (WindowsDefenderATPOnboardingPackage.zip)
 

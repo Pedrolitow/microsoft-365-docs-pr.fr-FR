@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426494"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936462"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -31,7 +31,7 @@ Les administrateurs peuvent utiliser la cmdlet New-MigrationBatch, disponible vi
 
 Les utilisateurs qui migrent doivent être présents dans le système d’Exchange Online client cible en tant que MailUsers, marqués avec des attributs spécifiques pour activer les déplacements entre clients. Les déplacements du système échouent pour les utilisateurs qui ne sont pas correctement configurer dans le client cible.
 
-Lorsque les déplacements sont terminés, la boîte aux lettres de l’utilisateur source est convertie en MailUser et l’adresse cible (affichée sous le nom ExternalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise une période de coexistence et de routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
+Lorsque les déplacements sont terminés, la boîte aux lettres de l’utilisateur source est convertie en MailUser et l’adresse cible (affichée sous le nom ExternalEmailAddress dans Exchange) est estampillée avec l’adresse de routage vers le client de destination. Ce processus laisse l’utilisateur mailuser hérité dans le client source et autorise la coexistence et le routage du courrier. Lorsque les processus d’entreprise le permettent, le client source peut supprimer la source MailUser ou les convertir en contact de messagerie.
 
 Les migrations Exchange boîtes aux lettres entre les locataires sont uniquement pris en charge pour les locataires hybrides ou cloud, ou toute combinaison des deux.
 
@@ -63,72 +63,66 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. Sous les services Azure, cliquez sur Azure Active Directory.
+2. Cliquez sur Afficher sous Gérer Azure Active Directory.
 
-3. Dans la barre de navigation de gauche, sélectionnez Enterprise Applications.
+   ![bouton Azure Active Directory](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-4. Sélectionner une nouvelle application
+3. Dans la barre de navigation de gauche, sélectionnez Inscriptions d’applications.
+
+4. Sélectionnez Nouvelle inscription
 
    ![Nouvelle application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Sélectionnez Créer votre propre application
-
-   ![AAD Gallery](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
-
-6. Entrez un nom pour votre application (peut être spécifique aux conventions d’attribution de noms de votre organisation), sélectionnez Inscrire une application à intégrer à Azure AD, puis Créer.
-
-   ![Création d’applications](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
-
-7. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez les comptes directement dans n’importe quelle organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com> . Enfin, sélectionnez Enregistrer.
+5. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez les comptes directement dans n’importe quelle organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com> . Enfin, sélectionnez Enregistrer.
 
    ![Inscription de l’application](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
-8. Dans le coin supérieur droit de la page, vous verrez une fenêtre de notification qui indique que l’application a été correctement créée.
+6. Dans le coin supérieur droit de la page, vous verrez une fenêtre de notification qui indique que l’application a été correctement créée.
 
-9. Revenir à La page d’accueil, Azure Active Directory cliquez sur Inscriptions d’applications.
+7. Revenir à La page d’accueil, Azure Active Directory cliquez sur Inscriptions d’applications.
 
-10. Sous Applications propriétés, recherchez l’application que vous avez créée et cliquez dessus.
+8. Sous Applications propriétés, recherchez l’application que vous avez créée et cliquez dessus.
 
-11. Sous ^Essentials, vous devrez copier l’ID de l’application (client), car vous en aurez besoin ultérieurement pour créer une URL pour le client cible.
+9. Sous ^Essentials, vous devrez copier l’ID de l’application (client), car vous en aurez besoin ultérieurement pour créer une URL pour le client cible.
 
-12. À présent, dans la barre de navigation de gauche, cliquez sur autorisations d’API pour afficher les autorisations attribuées à votre application.
+10. À présent, dans la barre de navigation de gauche, cliquez sur autorisations d’API pour afficher les autorisations attribuées à votre application.
 
-13. Par défaut, les autorisations User.Read sont attribuées à l’application que vous avez créée, mais nous ne les exigeons pas pour les migrations de boîtes aux lettres, vous pouvez supprimer cette autorisation.
+11. Par défaut, Utilisateur. Les autorisations de lecture sont attribuées à l’application que vous avez créée, mais nous ne les exigeons pas pour les migrations de boîtes aux lettres, vous pouvez supprimer cette autorisation.
 
     ![Autorisations d’application](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
-14. Maintenant, nous devons ajouter des autorisations pour la migration de boîtes aux lettres, sélectionnez Ajouter une autorisation
+12. Maintenant, nous devons ajouter des autorisations pour la migration de boîtes aux lettres, sélectionnez Ajouter une autorisation
 
-15. Dans les fenêtres Demander des autorisations d’API, sélectionnez les API des utilisateurs de mon organisation, puis recherchez Office 365 exchange online, sélectionnez-le.
+13. Dans les fenêtres Demander des autorisations d’API, sélectionnez les API des utilisateurs de mon organisation, puis recherchez Office 365 exchange online, sélectionnez-le.
 
     ![Sélectionner l’API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
-16. Ensuite, sélectionnez Autorisations d’application
+14. Ensuite, sélectionnez Autorisations d’application
 
-17. Ensuite, sous Sélectionner des autorisations, développez Boîte aux lettres, vérifiez Mailbox.Migration et Ajoutez les autorisations en bas de l’écran.
+15. Ensuite, sous Sélectionner des autorisations, développez Boîte aux lettres, vérifiez Mailbox.Migration et Ajoutez les autorisations en bas de l’écran.
 
     ![Définir l’API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
-18. Maintenant, sélectionnez Certificats & secrets dans la barre de navigation de gauche de votre application.
+16. Maintenant, sélectionnez Certificats & secrets dans la barre de navigation de gauche de votre application.
 
-19. Sous Les secrets client, sélectionnez nouvelle secret client.
+17. Sous Les secrets client, sélectionnez nouvelle secret client.
 
     ![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
 
-20. Dans la fenêtre Ajouter une secret client, entrez une description et configurez les paramètres d’expiration souhaités.
+18. Dans la fenêtre Ajouter une secret client, entrez une description et configurez les paramètres d’expiration souhaités.
 
       > [!NOTE]
       > Il s’agit du mot de passe qui sera utilisé lors de la création de votre point de terminaison de migration. Il est extrêmement important de copier ce mot de passe dans le Presse-papiers ou de copier ce mot de passe dans un emplacement sécurisé/secret. C’est la seule fois que vous pourrez voir ce mot de passe ! Si vous la perdez ou si vous devez la réinitialiser, vous pouvez vous connecter à notre portail Azure, vous connecter aux inscriptions d’application, rechercher votre application de migration, sélectionner des certificats Secrets & et créer une nouvelle question secrète pour votre application.
 
-21. Maintenant que vous avez créé l’application de migration et la question secrète, vous devez consentir à l’application. Pour consentir à l’application, revenir à la page d’accueil de Azure Active Directory, cliquez sur les applications Enterprise dans le navigation de gauche, recherchez votre application de migration que vous avez créée, sélectionnez-la, puis sélectionnez Autorisations sur le navigation de gauche.
+19. Maintenant que vous avez créé l’application de migration et la question secrète, vous devez consentir à l’application. Pour consentir à l’application, revenir à la page d’accueil Azure Active Directory, cliquez sur les applications Enterprise dans le navigation de gauche, recherchez votre application de migration que vous avez créée, sélectionnez-la, puis sélectionnez Autorisations sur le navigation de gauche.
 
-22. Cliquez sur le bouton Accorder le consentement administrateur pour [votre client].
+20. Cliquez sur le bouton Accorder le consentement administrateur pour [votre client].
 
-23. Une nouvelle fenêtre de navigateur s’ouvre et sélectionnez Accepter.
+21. Une nouvelle fenêtre de navigateur s’ouvre et sélectionne Accepter.
 
-24. Vous pouvez revenir à la fenêtre de votre portail et sélectionner Actualiser pour confirmer votre acceptation.
+22. Vous pouvez revenir à la fenêtre de votre portail et sélectionner Actualiser pour confirmer votre acceptation.
 
-25. Formuler l’URL à envoyer à votre partenaire approuvé (administrateur client source) afin qu’il puisse également accepter l’application pour activer la migration de boîtes aux lettres. Voici un exemple de l’URL à leur fournir, vous aurez besoin de l’ID d’application de l’application que vous avez créée :
+23. Formuler l’URL à envoyer à votre partenaire approuvé (administrateur client source) afin qu’il puisse également accepter l’application pour activer la migration de boîtes aux lettres. Voici un exemple de l’URL à leur fournir, vous aurez besoin de l’ID d’application de l’application que vous avez créée :
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -227,7 +221,7 @@ Les utilisateurs qui migrent doivent être présents dans le client cible et le 
 
 ### <a name="prerequisites-for-target-user-objects"></a>Conditions préalables pour les objets utilisateur cibles
 
-Vous devez vous assurer que les objets et attributs suivants sont définies dans l’organisation cible.
+Assurez-vous que les objets et attributs suivants sont définies dans l’organisation cible.
 
 1. Pour toute boîte aux lettres à partir d’une organisation source, vous devez mettre en service un objet MailUser dans l’organisation cible :
 
@@ -237,7 +231,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définies dans
       - LegacyExchangeDN (flow as proxyAddress, « x500: « ) : LegacyExchangeDN doit être présent sur mailUser cible en tant que \<LegacyExchangeDN> x500 : proxyAddress. En outre, vous devez également copier toutes les adresses x500 de la boîte aux lettres source vers l’utilisateur de messagerie cible. Les processus de déplacement ne se déroulent pas s’ils ne sont pas présents sur l’objet cible.
       - UserPrincipalName : UPN s’alignera sur la nouvelle identité ou la société cible de l’utilisateur (par exemple, user@northwindtraders.onmicrosoft.com).
       - Adresse SMTP principale : l’adresse SMTP principale s’alignera sur la société NEW de l’utilisateur (par exemple, user@northwind.com).
-      - TargetAddress/ExternalEmailAddress : MailUser référencera la boîte aux lettres actuelle de l’utilisateur hébergée dans le client source (par exemple, user@contoso.onmicrosoft.com). Lors de l’affectation de cette valeur, vérifiez que vous avez/attribuez également PrimarySMTPAddress, sinon cette valeur définira PrimarySMTPAddress qui provoquera des échecs de déplacement.
+      - TargetAddress/ExternalEmailAddress : MailUser référencera la boîte aux lettres actuelle de l’utilisateur hébergée dans le client source (par exemple, user@contoso.onmicrosoft.com). Lors de l’affectation de cette valeur, vérifiez que vous avez/attribuez également PrimarySMTPAddress, sinon cette valeur définira PrimarySMTPAddress, ce qui provoquera des échecs de déplacement.
       - Vous ne pouvez pas ajouter d’adresses proxy smtp héritées de la boîte aux lettres source à mailUser cible. Par exemple, vous ne pouvez pas conserver contoso.com sur l’fabrikam.onmicrosoft.com objets client). Les domaines sont associés à un seul Azure AD ou Exchange Online client uniquement.
 
      Exemple **d’objet** MailUser cible :
@@ -275,7 +269,7 @@ Vous devez vous assurer que les objets et attributs suivants sont définies dans
      |                      | SMTP:Lara.Newton@contoso.com                                            |
      |                      |                                                                         |
 
-   - Des attributs supplémentaires peuvent déjà être inclus dans Exchange’écriture hybride. Si ce n’est pas le cas, elles doivent être incluses.
+   - Des attributs supplémentaires peuvent déjà être inclus Exchange’écriture en écriture hybride. Si ce n’est pas le cas, elles doivent être incluses.
    - msExchBlockedSendersHash : écrit en ligne les données d’expéditeurs sécurisés et bloqués des clients vers Active Directory local.
    - msExchSafeRecipientsHash : écrit en ligne les données d’expéditeurs sécurisés et bloqués des clients vers Active Directory local.
    - msExchSafeSendersHash : écrit en ligne les données d’expéditeurs sécurisés et bloqués des clients vers Active Directory local.
@@ -366,7 +360,7 @@ L’envoi de lot de migration est également pris en charge à partir du nouveau
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement **est contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Devons-nous mettre à jour RemoteMailboxes dans la source sur site après le déplacement ?**
 
@@ -374,7 +368,7 @@ Oui, vous devez mettre à jour l’adresse cible (RemoteRoutingAddress/ExternalE
 
 **Les réunions Teams-elles migrer entre les locataires ?**
 
-Les réunions se déplacent, mais l’URL Teams réunion n’est pas mise à jour lorsque les éléments migrent entre les locataires. Étant donné que l’URL n’est pas valide dans le client cible, vous devez supprimer et recréer Teams réunions.
+Les réunions se déplacent, mais l’URL Teams réunion n’est pas mise à jour lorsque les éléments migrent entre les locataires. Étant donné que l’URL n’est pas valide dans le client cible, vous devez supprimer et recréer les Teams réunions.
 
 **Le contenu Teams de conversation migre-t-il entre les locataires ?**
 
@@ -431,7 +425,7 @@ Get-MoveRequest -Flags "CrossTenant"
 
 Étant donné qu’un seul client peut posséder un domaine, l’ancienne adresse SMTP principale n’est pas associée à l’utilisateur dans le client cible une fois le déplacement de la boîte aux lettres terminé . uniquement les domaines associés au nouveau client. Outlook utilise le nouvel UPN des utilisateurs pour s’authentifier au service et le profil Outlook s’attend à trouver l’adresse SMTPAddress principale héritée pour correspondre à la boîte aux lettres dans le système cible. Étant donné que l’adresse héritée ne se trouve pas dans le système cible, le profil Outlook ne se connecte pas pour rechercher la boîte aux lettres nouvellement déplacée.
 
-Pour ce déploiement initial, les utilisateurs devront reconstruire leur profil avec leur nouvel UPN, l’adresse SMTP principale et synchroniser à nouveau le contenu OST.
+Pour ce déploiement initial, les utilisateurs devront reconstruire leur profil avec leur nouvel UPN, l’adresse SMTP principale et le contenu OST de resync.
 
 > [!NOTE]
 > Planifiez en conséquence le traitement par lots de vos utilisateurs. Vous devez tenir compte de l’utilisation et de la capacité du réseau lorsque Outlook profils clients sont créés et que les fichiers OST et OAB suivants sont téléchargés vers les clients.
@@ -524,13 +518,13 @@ Pour vous aider à planifier [](/exchange/mailbox-migration/office-365-migration
 
 N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation et le SLA, et que les niveaux de service applicables ne s’appliquent pas aux problèmes de performances ou de disponibilité pendant l’état d’aperçu de cette fonctionnalité.
 
-**Rendre les documents protégés dans le client source consommable par les utilisateurs dans le client de destination.**
+**Protection des documents dans le consommable client source par les utilisateurs dans le client de destination.**
 
-La migration entre clients migre uniquement les données de boîte aux lettres et rien d’autre. Plusieurs autres options, documentées dans le billet de blog suivant, peuvent vous aider : <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
+La migration entre clients migre uniquement les données de boîte aux lettres et rien d’autre. Il existe plusieurs autres options, qui sont documentées dans le billet de blog suivant, qui peuvent vous aider : <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
 **Puis-je avoir les mêmes étiquettes dans le client de destination que dans le client source, soit comme le seul ensemble d’étiquettes, soit comme un ensemble supplémentaire d’étiquettes pour les utilisateurs migrés en fonction de l’alignement entre les organisations.**
 
-Étant donné que les migrations entre locataires n’exportent pas d’étiquettes et qu’il n’existe aucun moyen de partager des étiquettes entre les locataires, vous ne pouvez y parvenir qu’en recréant les étiquettes dans le client de destination.
+Étant donné que les migrations entre locataires n’exportent pas d’étiquettes et qu’il n’existe aucun moyen de partager des étiquettes entre les locataires, vous pouvez uniquement y parvenir en recréant les étiquettes dans le client de destination.
 
 **Prise en charge du déplacement Microsoft 365 groupes ?**
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 215c98cde0cf526eeca62d4d0cb5644d0c406421
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: b3fa261f78f06089ebf110d0c20a3cd685ab3279
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597590"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937051"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -50,10 +50,10 @@ Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris
 Windows 8.1|Oui|Oui|Oui|Oui|Oui
 Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
-Windows 11|Oui|Oui|Oui|Oui|Oui
+Windows 11|Oui|Oui|Oui|Oui|Oui
 Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
 Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
-Windows Server 2016|Oui|Oui|Oui|Oui|Oui
+Windows Server 2016|Oui|Oui|Oui|Oui|Oui
 Windows Server 2019|Oui|Oui|Oui|Oui|Oui
 Windows Server 2022|Oui|Oui|Oui|Oui|Oui
 macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui 
@@ -63,8 +63,8 @@ Ubuntu 16.04 LTS ou une LTS supérieure|Oui|Oui|Oui|Oui|Oui
 Oracle Linux 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
 SUSE Linux Enterprise Server 12 ou supérieur|Oui|Oui|Oui|Oui|Oui
 Linux Debian 9 ou supérieur|Oui|Oui|Oui|Oui|Oui
-Android 6.0 ou version supérieure (en prévisualisation)|Oui|Oui|Non pris en charge|Non pris en charge|Non pris en charge
-iOS 12.0 ou version supérieure (en prévisualisation)|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
+Android 6.0 ou version supérieure|Oui|Oui|Non pris en charge|Non pris en charge|Non pris en charge
+iOS 12.0 ou supérieur|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
 
 > [!NOTE]
 > Certaines fonctionnalités ne sont pas disponibles pour le système d’exploitation de bas niveau, consultez le portail Microsoft 365 Defender pour plus d’informations sur le système d’exploitation pris en charge.

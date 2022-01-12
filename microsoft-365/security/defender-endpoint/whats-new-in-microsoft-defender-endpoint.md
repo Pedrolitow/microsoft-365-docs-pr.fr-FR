@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ff5eeb85409bdcf79fa448804c86d961a2ac446
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311823"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940293"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -61,6 +61,8 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 
 ## <a name="december-2021"></a>Décembre 2021
+
+- Les menaces et gestion des vulnérabilités peuvent aider à identifier les vulnérabilités Log4j dans les applications et les composants. [En savoir plus](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - Découvrez les appareils IoT (aperçu) : la découverte d’appareils a désormais la possibilité de vous aider à trouver des appareils IoT non utilisés connectés à votre réseau d’entreprise. [](device-discovery.md) Cela vous offre une vue unifiée unique de votre inventaire IoT, ainsi que le reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles).
 
@@ -117,7 +119,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 
 ## <a name="march-2021"></a>Mars 2021
-- [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client.*
+- [Gérer la protection contre les falsifications à l’aide Microsoft 365 Defender portail](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client.*
 
 
 ## <a name="january-2021"></a>Janvier 2021

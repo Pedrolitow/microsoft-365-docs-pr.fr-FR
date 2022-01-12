@@ -3,7 +3,7 @@ title: Comment configurer Exchange Server en local pour utiliser l’authentific
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 12/27/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer une Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5ddf30a3409c01e44fd731002cc97ef339ed9819
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d0889008595717308695c1ad9c5d2a9f1766d1ea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587367"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934488"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -36,9 +36,9 @@ Avant de commencer, vous devez connaître certaines définitions :
 
 - Authentification moderne \> hybride HMA
 
-- Exchange \> EXCH local
+- Exchange local \> EXCH
 
-- \>Exchange Online EXO
+- Exchange Online \> EXO
 
 En outre, si un graphique de cet article possède un objet « grisé » ou « grisé » qui signifie que l’élément affiché en gris n’est pas inclus dans la configuration propre à *HMA.*
 
@@ -97,9 +97,9 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Prenez note (et capture d’écran pour comparaison ultérieure) de la sortie de cette commande, qui doit inclure un  *autodiscover.yourdomain.com*  https:// et une URL  *https:// mail.yourdomain.com,* mais principalement des SSN qui commencent par 00000002-0000-0ff1-ce00-0000000000000/. Si des URL https:// de votre site local sont manquantes, nous devons ajouter ces enregistrements spécifiques à cette liste.
+   Prenez note (et capture d’écran pour comparaison ultérieure) de la sortie de cette commande, qui doit inclure une URL et une url, mais principalement composée de `https://*autodiscover.yourdomain.com*` SNS qui commencent `https://*mail.yourdomain.com*` par `00000002-0000-0ff1-ce00-000000000000/` . Si des URL de votre site local sont manquantes, ces enregistrements spécifiques doivent être ajoutés `https://` à cette liste.
 
-3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (les exemples d’URL sont « ' » et « ' , mais vous devez remplacer les `mail.corp.contoso.com` `owa.contoso.com` **exemples d’URL** par les vôtres ) :
+3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (les exemples d’URL sont et, mais vous devez remplacer les exemples d’URL par les `mail.corp.contoso.com` `owa.contoso.com` **vôtres)**:
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -108,7 +108,7 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant à nouveau Get-MsolServicePrincipal commande de l’étape 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques  `https://mail.corp.contoso.com`  et  `https://owa.contoso.com` .
+4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant à nouveau la commande de l’étape `Get-MsolServicePrincipal` 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques `https://mail.corp.contoso.com` et `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Vérifier que les répertoires virtuels sont correctement configurés
 
@@ -147,7 +147,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 Votre sortie doit afficher un AuthServer du nom EvoSts avec un GUID et l’état « Activé » doit être True. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
 
 > [!NOTE]
-> Dans le cas où EXCH est dans un scénario hybride avec plusieurs **locataires,** votre sortie doit afficher un AuthServer du nom EvoSts - {GUID} pour chaque client hybride avec EXCH et l’état « Activé » doit être True pour tous ces objets AuthServer.
+> Dans le cas où EXCH est hybride avec plusieurs **locataires,** votre sortie doit afficher un AuthServer du nom pour chaque client dans un scénario hybride avec EXCH et l’état Activé doit être True pour tous ces objets `EvoSts - {GUID}` AuthServer. 
 
 > [!IMPORTANT]
 > Si vous exécutez Exchange 2010 dans votre environnement, le fournisseur d’authentification EvoSTS ne sera pas créé.
@@ -168,7 +168,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 > Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 > ```
 
-Si la version EXCH est Exchange 2016 (CU18 ou version supérieure) ou Exchange 2019 (CU7 ou version supérieure) et que l’hybride a été configuré avec HCW téléchargé après septembre 2020, exécutez la commande suivante dans l’Exchange Management Shell local :
+Si la version EXCH est Exchange 2016 (CU18 ou version supérieure) ou Exchange 2019 (CU7 ou version supérieure) et que l’hybride a été configuré avec HCW téléchargé après septembre 2020, exécutez la commande suivante dans l’Exchange Management Shell, en local :
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
@@ -177,12 +177,14 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 > [!NOTE]
 > Dans le cas où EXCH est hybride avec plusieurs **locataires,** il existe plusieurs objets AuthServer présents dans EXCH avec des domaines correspondant à chaque client.  **L’indicateur IsDefaultAuthorizationEndpoint** doit être égal à true (à l’aide de la cmdlet **IsDefaultAuthorizationEndpoint)** pour l’un de ces objets AuthServer. Cet indicateur ne peut pas être définie sur true pour tous les objets Authserver et HMA serait activé même si l’un de ces indicateurs **IsDefaultAuthorizationEndpoint** de l’objet AuthServer est définie sur true.
+> 
+> Pour le **paramètre DomainName,** utilisez la valeur de domaine client, qui se trouve généralement sous la forme `contoso.onmicrosoft.com` .
 
 ## <a name="verify"></a>Vérifier
 
 Une fois que vous avez activé HMA, la connexion suivante d’un client utilise le nouveau flux d’authentification. Notez que le simple fait d’allumer HMA ne déclenche pas de réauthentication pour un client et que la sélection des nouveaux paramètres par Exchange peut prendre un certain temps.
 
-Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
+Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type **Authn** de , qui représente le jeton du porteur utilisé `Bearer\*` dans OAuth.
 
 > [!NOTE]
 > Vous devez configurer Skype Entreprise avec HMA ? Vous aurez besoin de deux articles : un qui répertorie les [topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)pris en charge et un qui vous montre comment [faire la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).

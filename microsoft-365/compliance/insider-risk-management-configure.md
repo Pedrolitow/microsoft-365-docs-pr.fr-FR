@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0b26cd34cf38f8f2fbd7a0de96f8e34502054ecf
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9e5b3e2e98e6316ff1f136699c368bc0646b0312
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283208"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933466"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -151,7 +151,7 @@ Pour activer l’analyse des risques internes, vous suivrez les étapes suivante
 
 Après avoir passé en revue les analyses, choisissez les stratégies de risques internes et configurez les conditions préalables associées qui répondent le mieux à la stratégie de prévention des risques internes de votre organisation.
 
-## <a name="step-4-required-configure-prerequisites-for-policies"></a>Étape 4 (obligatoire) : configurer les conditions préalables pour les stratégies
+## <a name="step-4-recommended-configure-prerequisites-for-policies"></a>Étape 4 (recommandée) : configurer les conditions préalables pour les stratégies
 
 La plupart des stratégies de gestion des risques internes ont des conditions préalables qui doivent être configurées pour que les indicateurs de stratégie génèrent des alertes d’activité pertinentes. Configurez les conditions préalables appropriées en fonction des stratégies que vous prévoyez de configurer pour votre organisation.
 

@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167657"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936016"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
 **S’applique à**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Qu’est-ce Antivirus Microsoft Defender’analyseur de performances ?**
 
@@ -96,7 +96,7 @@ Antivirus Microsoft Defender’analyseur de performances présente les condition
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et Windows Server 2016 versions ultérieures
 - Version de la plateforme : 4.18.2108.7+
-- Version PowerShell : PowerShell Version 5.1
+- Version de PowerShell : PowerShell version 5.1, PowerShell ISE
 
 ## <a name="powershell-reference"></a>Référence PowerShell
 Deux nouvelles cmdlets PowerShell sont utilisées pour régler les performances des Antivirus Microsoft Defender : 

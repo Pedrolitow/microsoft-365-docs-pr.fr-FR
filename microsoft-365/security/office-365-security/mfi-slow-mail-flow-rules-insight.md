@@ -12,16 +12,15 @@ ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkEXCHANGE
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu corriger les règles de flux de messagerie lent dans le Centre de sécurité & conformité pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0781ba01504751c1c612e46ed8cf214a732a05f8
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 9866761e683e15d34d81b8ea0962d974b0b474da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422518"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935220"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Résoudre les problèmes de règles de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -48,7 +47,7 @@ Vous pouvez utiliser cette notification pour vous aider à identifier et affiner
 
 Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’affiche avec plus d’informations :
 
-- **Règle**: vous pouvez pointer sur le résumé pour voir toutes les conditions, les exceptions et les actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange (EAC).</a>
+- **Règle**: vous pouvez pointer sur le résumé pour voir toutes les conditions, les exceptions et les actions de la règle. Vous pouvez cliquer sur le résumé pour modifier la règle dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/transportrules> .
 - **Nombre de messages évalués**: vous pouvez [](message-trace-scc.md) cliquer sur Afficher les exemples de **messages** pour afficher les résultats du suivi des messages pour un échantillon des messages affectés par la règle.
 - **Temps moyen passé sur chaque message**
 - **Temps moyen passé sur un message**: valeur intermédiaire qui sépare la moitié supérieure de la moitié inférieure des données de temps.

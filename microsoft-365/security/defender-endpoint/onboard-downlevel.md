@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39e01e614ebe2467899f179bc1ef3905ac0ca388
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 60fd10024be0b214aed4cbc7ae89d7129df99e79
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164909"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867820"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateformes**
 
@@ -35,7 +35,7 @@ ms.locfileid: "61164909"
 - Windows 7 SP1 Pro
 - Windows 8.1 Professionnel
 - Windows 8.1 Entreprise
-- Windows Server 2008 R2 SP1
+- Windows Server 2008 R2 SP1
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
@@ -128,7 +128,7 @@ Une fois terminé, vous devriez voir les serveurs Windows intégrés dans le por
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Intégrer Windows serveurs de messagerie via Microsoft Defender pour le cloud
 
-1. Dans le volet Centre de sécurité Microsoft Defender navigation, **sélectionnez** Paramètres  >  **intégration de la gestion des**  >  **appareils.**
+1. Dans le volet Microsoft 365 Defender navigation, **sélectionnez** Paramètres  >  **intégration de la gestion des**  >  **appareils.**
 
 2. Sélectionnez **Windows Server 2008 R2 SP1** comme système d’exploitation.
 

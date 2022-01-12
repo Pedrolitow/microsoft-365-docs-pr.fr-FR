@@ -1,7 +1,8 @@
 ---
 title: Plan de déploiement zéro trust Microsoft 365
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -16,12 +17,15 @@ search.appverid:
 ms.collection:
 - deploy zero trust
 - zero trust strategy
-ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+- M365-security-compliance
+- m365solution-zerotrust
+- m365solution-overview
+ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643327"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934476"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 
@@ -80,7 +84,7 @@ Accédez [à la protection d’accès](office-365-security/microsoft-365-policie
 
 
 
-|Inclut  |Conditions préalables  |N’inclut pas  |
+|Inclut  |Configuration requise  |N’inclut pas  |
 |---------|---------|---------|
 |Stratégies d’accès aux identités et appareils recommandées pour trois niveaux de protection :<br>- Point de départ<br>- Enterprise (recommandé)<br>- Spécialisé<br><br>Recommandations supplémentaires pour :<br>- Utilisateurs externes (invités)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender pour les applications cloud| Microsoft E3 ou E5<br><br>Azure Active Directory dans l’un de ces modes :<br>- Cloud uniquement<br>- Hybride avec authentification de synchronisation de hachage de mot de passe (PHS)<br>- Hybride avec authentification directe (PTA)<br>- Fédéré     |Inscription des appareils pour les stratégies qui nécessitent des appareils gérés. Voir « Gérer les points de terminaison avec Intune » pour inscrire des appareils |
 | | | |
@@ -101,7 +105,7 @@ Ensuite, inscrivez vos appareils à la gestion et commencez à les protéger ave
 Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
 
 
-|Inclut  |Conditions préalables  |N’inclut pas  |
+|Inclut  |Configuration requise  |N’inclut pas  |
 |---------|---------|---------|
 |Inscrire des appareils avec Intune<br>- Appareils d’entreprise<br>- Autopilot/automated<br>- inscription<br><br>Configurer des stratégies<br>- Stratégies de protection des applications<br>- Stratégies de conformité<br>- Stratégies de profil d’appareil | Inscrire les points de terminaison avec Azure AD     | Configuration des fonctionnalités de protection des informations, notamment :<br>- Types d’informations sensibles<br>- Étiquettes<br>- Stratégies DLP<br>Pour ces fonctionnalités, voir l’étape 5. Protéger et régir les données (plus loin dans cet article).       |
 |    |         |         |
@@ -124,7 +128,7 @@ Microsoft 365 Defender est une solution XDR (détection et réponse étendue) qu
 
 Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
-|Inclut  |Conditions préalables  |N’inclut pas  |
+|Inclut  |Configuration requise  |N’inclut pas  |
 |---------|---------|---------|
 | Configurer l’environnement d’évaluation et pilote pour tous les composants :<br>- Defender pour l’identité<br>- Defender for Office 365<br>- Defender pour le point de terminaison<br>- Microsoft Defender pour les applications cloud<br><br>Protéger contre les menaces<br><br> Examiner les menaces et y répondre   | Consultez les instructions pour en savoir plus sur les exigences en matière d’architecture pour chaque composant de Microsoft 365 Defender.        | Azure AD Identity Protection n’est pas inclus dans ce guide de solution. Elle est incluse à l’étape 1 : Configurer la protection d’accès aux appareils et aux identités de confiance zéro.        |
 |    |         |         |
@@ -144,4 +148,6 @@ Protection des données Microsoft fournit une infrastructure, un processus et de
 
 ![Protection des données Microsoft framework (MIP)](../media/zero-trust/mip-solution-overview.png)
 
-Pour plus d’informations, [voir Protection des données Microsoft dans Microsoft 365](../compliance/information-protection.md). 
+Pour plus d’informations sur la façon de planifier et de déployer la protection des informations, voir [Déployer Protection des données Microsoft solution.](../compliance/information-protection-solution.md) 
+
+Si vous déployez la protection des informations pour les réglementations en matière de confidentialité des données, ce guide de solution fournit une infrastructure recommandée pour l’ensemble du processus : Déployer la protection des informations pour les réglementations en matière de confidentialité des données [avec Microsoft 365](../solutions/information-protection-deploy.md).

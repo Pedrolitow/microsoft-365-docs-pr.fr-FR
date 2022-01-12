@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8626b256b1e0e3d6d19ab532388ab8ba1cf5c8f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168101"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61896404"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
@@ -51,7 +51,7 @@ Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter 
 
 ## <a name="suppress-alerts"></a>Supprimer des alertes
 
-Il peut y avoir des scénarios dans lequel vous devez supprimer l’apparition d’alertes dans Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
+Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans Microsoft 365 Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
 
 Les règles de suppression peuvent être créées à partir d’une alerte existante. Elles peuvent être désactivées et réactivées si nécessaire.
 
@@ -128,7 +128,7 @@ Chaque fois qu’une modification ou un commentaire est apporté à une alerte, 
 
 Les commentaires ajoutés apparaissent instantanément dans le volet.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gérer des règles de suppression](manage-suppression-rules.md)
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)

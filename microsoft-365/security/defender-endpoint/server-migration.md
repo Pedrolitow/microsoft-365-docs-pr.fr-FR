@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac8f2102424e908093484829eacb34b918326ea8
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: de39cc220c537af5d0ec5da4b404ec653ea56c1c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531566"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938215"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
@@ -76,7 +76,7 @@ EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\W
    2. Désinstallez SCEP.
    3. Installez les [conditions préalables le](configure-server-endpoints.md#prerequisites) cas échéant.
    4. Installez Microsoft Defender pour le point de terminaison (voir [Configurer les points de terminaison du serveur.](configure-server-endpoints.md)
-   5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
+   5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Microsoft 365 Defender](https://security.microsoft.com). 
 
    > [!TIP]
    > Vous pouvez utiliser le [script d’installation](server-migration.md#installer-script) dans le cadre de votre application pour automatiser les étapes ci-dessus.
@@ -95,7 +95,7 @@ EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\W
 5. Créez une application pour effectuer les tâches suivantes :
    1. Supprimez la configuration de l’espace de travail MMA pour Microsoft Defender pour le point de terminaison. Voir [Supprimer un espace de travail à l’aide de PowerShell.](/azure/azure-monitor/agents/agent-manage) Cette étape est facultative . le capteur de PEPT s’arrête une fois que le nouveau capteur devient actif (notez que cela peut prendre plusieurs heures).
    2. Installez les [conditions préalables le](configure-server-endpoints.md#prerequisites) cas échéant.
-   3. Installez Microsoft Defender for Endpoint pour Windows Server 2012 package R2 et 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)
+   3. Installez Microsoft Defender for Endpoint pour Windows Server 2012 package R2 et 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)
    4. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Microsoft 365 Defender](https://security.microsoft.com).
 6. Appliquer les mises à jour.
 7. Supprimez votre logiciel antivirus non Microsoft à l’aide de la console antivirus non Microsoft ou en utilisant Microsoft Endpoint Configuration Manager le cas échéant. Veillez à supprimer la configuration du mode passif.*
@@ -119,7 +119,7 @@ Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protectio
 3. Désinstaller System Center Endpoint Protection (Windows Server 2012 R2).
 4. Installez les [conditions préalables le](configure-server-endpoints.md#prerequisites) cas échéant. 
 5. Installez Microsoft Defender pour le point de terminaison (voir [Configurer les points de terminaison du serveur).)](configure-server-endpoints.md)
-6. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com). 
+6. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Microsoft 365 Defender](https://security.microsoft.com). 
 7. Appliquer les mises à jour.
 8. Créez et appliquez des stratégies à l’aide d’une stratégie de groupe, de PowerShell ou d’une solution de gestion tierce.
 
@@ -129,7 +129,7 @@ Chemin d’accès : HKLM\SOFTWARE\Policies\Microsoft\Windows Nom de la protectio
 ### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Vous avez un serveur sur lequel vous souhaitez installer Microsoft Defender pour le point de terminaison. Il dispose d’une solution de protection de point de terminaison non-Microsoft protection évolutive des points de terminaison solution installée. Vous n’avez pas l’intention d’utiliser Microsoft Endpoint Configuration Manager ou Microsoft Defender pour le cloud. Vous utilisez votre propre mécanisme de déploiement. 
 
 1. Mettez entièrement à jour l’ordinateur, Antivirus Microsoft Defender (Windows Server 2016).
-2. Installez microsoft Defender pour le point de terminaison pour Windows Server 2012 package R2 & 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line)
+2. Installez microsoft Defender pour le point de terminaison pour Windows Server 2012 package R2 & 2016 et **activez le mode passif.** Voir [Installer Antivirus Microsoft Defender à l’aide de la ligne de commande.](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)
 3. Appliquez le script d’intégration, approprié à votre environnement, téléchargé à partir [de Microsoft 365 Defender](https://security.microsoft.com). 
 4. Supprimez la solution de protection de point de terminaison ou de protection évolutive des points de terminaison Non-Microsoft et supprimez le mode passif.*
 5. Appliquer les mises à jour.

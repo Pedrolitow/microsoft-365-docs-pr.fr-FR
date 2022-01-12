@@ -22,20 +22,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3bce20b1b86ea569014313f345bcf7e4f6dd2cc0
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 91371583a6dde3a7fcb97037146b3eab1410e86c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724319"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936884"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
-En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 données.
 
 Score sécurisé aide les organisations :  
 
@@ -81,8 +81,8 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Microsoft 365 (y compris Exchange Online)
 - Azure Active Directory
 - Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
-- Cloud App Security
+- Microsoft Defender pour l’identité
+- Defender for Cloud Apps
 - Microsoft Teams
 
 Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles constituent une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par un tiers ou une autre atténuation.

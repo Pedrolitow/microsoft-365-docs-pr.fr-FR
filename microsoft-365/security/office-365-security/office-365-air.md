@@ -20,15 +20,14 @@ description: Commencer à utiliser les fonctionnalités d’investigation et de 
 ms.custom:
 - air
 - seo-marvel-mar2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 130fb0fc09567e66c17018c45b7dcbd8785fd9e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 469a85866f722539c35bcc0305aa1e8fc39d58be
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370673"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935100"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
@@ -134,13 +133,13 @@ Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Of
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée.":::
 
-Le portail d’Microsoft 365 Defender nouveau et amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour le point de [terminaison.](../defender-endpoint/automated-investigations.md) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a> Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
+Le portail d’Microsoft 365 Defender nouveau et amélioré regroupe les fonctionnalités AIR dans Microsoft Defender pour Office 365 et <https://security.microsoft.com> dans Microsoft Defender pour le point de [terminaison.](../defender-endpoint/automated-investigations.md) [](defender-for-office-365.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
 
 > [!TIP]
-> Le nouveau <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender remplace</a> les centres suivants :
+> Le nouveau portail Microsoft 365 Defender remplace les centres d’administration suivants :
 >
 > - Centre de sécurité & conformité ( <https://protection.office.com> )
-> - Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> )
+> - Microsoft 365 Defender ( <https://security.microsoft.com> )
 >
 > En plus de la modification de l’URL, il existe une nouvelle apparence, conçue pour donner à votre équipe de sécurité une expérience plus rationalisée, avec une visibilité à un plus grand nombre de détections de menaces au même endroit.
 

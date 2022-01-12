@@ -20,15 +20,14 @@ ms.collection:
 description: Découvrez comment utiliser les fonctionnalités d’alertes dans le portail Microsoft 365 Defender pour afficher et gérer les alertes, y compris la gestion des alertes avancées.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82f7120d59635b71fc94b2a98e4522856403b884
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 311b11a1c6ea3ffa450a89eff596ff39e91f3827
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612595"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61881177"
 ---
 # <a name="alerts-in-the-microsoft-365-defender-portal"></a>Alertes dans le portail Microsoft 365 Defender web
 
@@ -42,13 +41,11 @@ Utilisez les fonctionnalités d’alertes du portail Microsoft 365 Defender pour
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Comment obtenir les fonctionnalités d’alertes
 
-Les alertes sont dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a> Voici comment obtenir la page :
-
-Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>allez aux **alertes.** Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
+Les alertes sont disponibles dans le portail Microsoft 365 Defender à l'& <https://security.microsoft.com>  \> **alertes.** Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
 
 ## <a name="alerts-features"></a>Fonctionnalités des alertes
 
-Le tableau suivant décrit les outils disponibles sous **Alertes** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a>
+Le tableau suivant décrit les outils disponibles dans la page **Alertes.**
 
 <br>
 

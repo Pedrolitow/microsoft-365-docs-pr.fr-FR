@@ -15,20 +15,20 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166649"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884082"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si vous rencontrez un problème avec Antivirus Microsoft Defender, vous pouvez rechercher dans les tableaux de cette rubrique un problème correspondant et une solution potentielle.
 
@@ -1287,6 +1287,60 @@ Antivirus Microsoft Defender client est opérationnel dans un état sain.
 </td>
 </tr>
 <tr>
+<th colspan="2">ID d’événement : 1127</th>
+</tr>
+<tr><td>
+Nom symbolique :
+</td>
+<td >
+<b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
+</td>
+</tr>
+<tr>
+<td>
+Message :
+</td>
+<td >
+<b>L’accès contrôlé aux dossiers (CFA) a empêché un processus non autorisé d’apporter des modifications à la mémoire. </b>
+</td>
+</tr>
+<tr>
+<td>
+Description :
+</td>
+<td >
+L’accès contrôlé aux dossiers a empêché un processus non autorisé de modifier potentiellement les secteurs de disque.
+<br/> Pour plus d’informations sur l’enregistrement d’événement, consultez les informations suivantes :
+<dl>
+<dt>EventID : &lt; EventID , par exemple &gt; : 1127</dt>Version : Version , par exemple
+<dt>: &lt; &gt; 0</dt>Niveau : Niveau , par exemple
+<dt>: &lt; &gt; win:Warning</dt>
+<dt>TimeCreated: &lt; SystemTime &gt; ,</dt>heure à partir de la création de l’événement
+<dt> &lt; EventRecordID : EventRecordID , &gt; </dt>numéro d’index de l’événement dans le journal des événements
+<dt>Execution ProcessID : Execution &lt; ProcessID &gt; ,</dt>processus qui a généré le canal d’événement : canal d’événement , par exemple :
+<dt> &lt; &gt; Microsoft- Windows-Windows Defender/Ordinateur</dt>
+<dt> &lt; &gt; </dt>opérationnel : UserID de sécurité de nom d’ordinateur : Nom du produit
+<dt> &lt; UserID &gt; </dt>de sécurité : nom du produit , par exemple :
+<dt> &lt; &gt; Antivirus Microsoft Defender</dt>version du produit : heure de détection de
+<dt>la &lt; &gt; version</dt>du produit
+<dt>: &lt;Heure de détection , heure à &gt; l’heure</dt>de blocage d’un processus non
+<dt>fiable Utilisateur : Domaine &lt; &gt; \& lt; Chemin &gt; </dt>d’accès de l’utilisateur : nom de l’appareil, nom de l’appareil ou du disque accessible par un processus non autorisé pour la
+<dt> &lt; &gt; modification</dt>Nom du processus : chemin d’accès du processus , nom du chemin d’accès du processus que l’fa
+<dt> &lt; &gt; CFA</dt>a bloqué pour accéder au périphérique ou au disque pour la modification Security Intelligence Version : Version du moteur de
+<dt>la &lt; &gt; version</dt>security intelligence :
+<dt> &lt; version &gt; </dt> Antimalware Engine
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+Action de l’utilisateur :
+</td>
+<td >
+L’utilisateur peut ajouter le processus bloqué à la liste <i>des</i> processus autorisés pour l’fc, à l’aide de Powershell ou Sécurité Windows Center.
+</td>
+</tr>
+<tr>
 <th colspan="2">ID d’événement : 1150</th>
 </tr>
 <tr><td>
@@ -1465,7 +1519,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 </dt>
 <dt>Étape de mise à &lt; jour : étape de mise à &gt; jour, par exemple :
 <ul>
-<li>Rechercher</li>
+<li>Recherche</li>
 <li>Télécharger</li>
 <li>Installer</li>
 </ul>
@@ -3113,7 +3167,7 @@ Il s’agit d’une erreur interne. Il se peut qu’il se soit déclenché lorsq
 </tr>
 </table>
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Rapport sur la protection Antivirus Microsoft Defender de données](report-monitor-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

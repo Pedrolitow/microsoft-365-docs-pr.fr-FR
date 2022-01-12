@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3faecae3965cfc51104a707eaa82f375ba169f84
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300177"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935632"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Activer l’intégration SIEM dans Microsoft Defender pour endpoint
 
@@ -30,6 +30,9 @@ ms.locfileid: "61300177"
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+> [!IMPORTANT]
+> L’API REST SIEM de Microsoft Defender pour point de terminaison est retirée le 1er mars 2022, en tant qu’API Microsoft Defender pour l’alerte de point de terminaison et l’API d’incident Microsoft 365 Defender qui la remplacent fournissent des métadonnées plus riches, y compris l’état à jour de l’alerte, les entités de preuve liées à l’alerte, les commentaires entrés par les analystes et ils permettent de mettre à jour l’état, assignedTo,  champs de classification et de détermination par programme. **À compter de maintenant, aucune nouvelle intégration client à l’API REST SIEM n’est prise en charge.**
 
 Activez l’intégration des informations de sécurité et de la gestion des événements (SIEM) afin de pouvoir tirer les détections de Microsoft 365 Defender. Tirez les détections à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections.
 

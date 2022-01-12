@@ -17,16 +17,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Les administrateurs peuvent en savoir plus sur les informations sur l’usurpation d’Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcb930094e084e6ffccb3a7e42305cf99d438272
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5bf0ed143f5bfb78ff1d6af4005a4b5ec64fd90e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372335"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934020"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’intelligence contre l’usurpation d’adresse dans EOP
 
@@ -42,7 +41,7 @@ ms.locfileid: "61372335"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresses. EOP utilise **la veille contre** l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresse dans EOP.](anti-spoofing-protection.md)
 
-Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie du courrier électronique à votre organisation. Les personnes malveillantes qui usurpent des expéditeurs pour envoyer du courrier indésirable ou du hameçonnage doivent être bloquées. Toutefois, il existe des scénarios dans lequel des expéditeurs légitimes usurpent l’adresse. Par exemple :
+Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’agit d’un utilisateur dans l’un des domaines de votre organisation ou d’un utilisateur d’un domaine externe qui envoie du courrier électronique à votre organisation. Les personnes malveillantes qui usurpent des expéditeurs pour envoyer du courrier indésirable ou du hameçonnage doivent être bloquées. Toutefois, il existe des scénarios dans lequel des expéditeurs légitimes usurpent l’adresse. Par exemple :
 
 - Scénarios légitimes pour l’usurpation d’un domaine interne :
   - Les expéditeurs tiers utilisent votre domaine pour envoyer des messages en bloc à vos propres employés pour les sondages de l’entreprise.
@@ -60,7 +59,7 @@ En permettant aux expéditeurs connus d’envoyer des messages usurpés à parti
 
 De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par la veille contre l’usurpation d’adresses et bloquer manuellement ces expéditeurs de l’analyse de l’usurpation d’intelligence.
 
-Le reste de cet article explique comment utiliser les informations sur l’intelligence contre l’usurpation d’adresse dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP Autonome PowerShell pour les organisations sans Exchange Online boîtes aux lettres).
+Le reste de cet article explique comment utiliser les informations sur l’intelligence contre l’usurpation d’adresse dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans Exchange Online boîtes aux lettres).
 
 > [!NOTE]
 >
@@ -72,7 +71,7 @@ Le reste de cet article explique comment utiliser les informations sur l’intel
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires **autoriser/bloquer,** utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Pour aller directement à la page Informations sur **l’usurpation d’intelligence,** utilisez <https://security.microsoft.com/spoofintelligence> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires **autoriser/bloquer,** utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Pour aller directement à la page Informations sur **l’usurpation d’intelligence,** utilisez <https://security.microsoft.com/spoofintelligence> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -93,7 +92,7 @@ Le reste de cet article explique comment utiliser les informations sur l’intel
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Ouvrir les informations sur l’usurpation d’Microsoft 365 Defender web
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender,</a>go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** Tenant \> **Allow/Block Lists** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires **autoriser/bloquer,** utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> .
 
 2. Dans la page **Listes d’attente des clients,** l’aperçu de l’usurpation d’intelligence se présente comme ceci :
 

@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc4ffb2d2a1c60c9c58be4f6f3fe7439f1aab074
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167681"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884166"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes de règles de réduction de la surface d’attaque
 
@@ -30,9 +30,9 @@ ms.locfileid: "61167681"
 
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -88,7 +88,7 @@ Si vous avez testé la règle avec l’outil de démonstration et avec le mode a
 
 Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez ajouter des exclusions pour empêcher les règles de réduction de la surface d’attaque d’évaluer les fichiers ou dossiers exclus.
 
-Pour ajouter une exclusion, voir [Personnaliser la réduction de la surface d’attaque.](customize-attack-surface-reduction.md)
+Pour ajouter une exclusion, voir [Personnaliser la réduction de la surface d’attaque.](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules)
 
 > [!IMPORTANT]
 > Vous pouvez spécifier des fichiers et dossiers individuels à exclure, mais vous ne pouvez pas spécifier des règles individuelles.

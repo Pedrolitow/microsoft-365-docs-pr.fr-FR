@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez les versions historiques dans Advanced eDiscovery pour collecter du contenu à partir de toutes les versions des documents stockés SharePoint et OneDrive.
-ms.openlocfilehash: 8da7b390a982b9be0a4752e167399ad633377854
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5ecbb9c9216482223ce756aed5742e25a3b851a1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779071"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936653"
 ---
 # <a name="set-up-historical-versions-in-advanced-ediscovery-preview"></a>Configurer des versions historiques dans Advanced eDiscovery (prévisualisation)
 
@@ -31,7 +31,7 @@ Pour prendre en charge la fonctionnalité de versions historiques dans Advanced 
 
 Une fois qu’un administrateur eDiscovery a activé les versions historiques de l’organisation, puis l’a activé pour des sites SharePoint spécifiques, le service push de contenu SharePoint analyse toutes les versions principales et mineures des documents sur les sites activés, puis envoie ces versions pour indexation. Une fois le processus d’analyse et d’indexation terminé, les documents et leurs versions sont disponibles pour la recherche de découverte électronique. Tant qu’une version spécifique est accessible (par l’historique des versions), cette version est alors découvrable dans une recherche Advanced eDiscovery collection.
 
-## <a name="set-up-historical-versions"></a>Configurer des versions historiques
+## <a name="set-up-historical-versions"></a>Configurer les versions historiques
 
 Pour activer les versions historiques dans Advanced eDiscovery, votre organisation doit l’activer, puis activer des sites spécifiques afin que toutes les versions des documents stockés sur ces sites soient indexées pour la recherche. Avant de configurer Advanced eDiscovery pour les versions historiques, vous devez activer la prise en charge du suivi des versions dans SharePoint.
 
@@ -93,13 +93,13 @@ Les versions historiques sont différentes et plus efficaces que la « collecte 
 
 **Lorsque les versions historiques sont activées pour un site, cela a-t-il un impact sur les performances du site ?**
 
-Non. Une fois que les versions historiques sont activées pour un site, les performances du site sont identiques à ce qu’elles étaient avant l’exécution du site. Les processus d’analyse et d’indexation effectués sur le site une fois activés se produisent à un rythme plus lent et sont exécutés pendant les heures creuses. L’activation des versions historiques d’un site lance un processus de recalage, qui recherche toutes les versions des documents sur le site, puis envoie ces versions à l’index. Selon le nombre de versions de document pour le site, ce processus de recalage peut avoir un impact sur l’état du service. Nous avons atténué cet impact potentiel des manières suivantes :
+Non. Une fois que les versions historiques sont activées pour un site, les performances du site sont identiques à ce qu’elle était avant l’exécution du site. Les processus d’analyse et d’indexation effectués sur le site une fois activés se produisent à un rythme plus lent et sont exécutés pendant les heures creuses. L’activation des versions historiques d’un site lance un processus de recalage, qui recherche toutes les versions des documents sur le site, puis envoie ces versions à l’index. Selon le nombre de versions de document pour le site, ce processus de recalage peut avoir un impact sur l’état du service. Nous avons atténué cet impact potentiel des manières suivantes :
 
 - Nous faisons de notre mieux pour traiter ces versions pendant les heures creuses.
 
 - Nous traiterons les versions de documents dans nos files d’attente de priorité la plus faible, ce qui permet de déléguer la plupart des ressources de service aux modifications apportées aux utilisateurs.
 
-**Combien de temps dois-je attendre qu’un site soit activé jusqu’à ce que toutes les versions historiques des documents de ce site soient toutes indexées et disponibles pour la recherche eDiscovery ?**
+**Combien de temps dois-je attendre qu’un site soit activé jusqu’à ce que toutes les versions historiques des documents de ce site soient toutes indexées et disponibles pour la recherche de découverte électronique ?**
 
 En fonction du nombre de documents pour un site et du nombre moyen de versions par document, nous essayons d’estimer le nombre total de fichiers par site. Sur cette base, une estimation du temps d’indexation est la suivante :
 

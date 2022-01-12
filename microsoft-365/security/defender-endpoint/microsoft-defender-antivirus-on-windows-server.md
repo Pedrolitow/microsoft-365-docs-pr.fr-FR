@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5dff73dda3d10cdc477bdce7424b209ae8ceb93f
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 6632604e426d6dad5dc7c272d343c2d6b8b59aac
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560503"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940409"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
@@ -34,7 +34,7 @@ Antivirus Microsoft Defender est disponible dans les éditions/versions suivante
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
+- Windows Server 2016
 - Windows Server 2012 R2 (Nécessite Microsoft Defender pour le point de terminaison)
 
 Dans certains cas, Antivirus Microsoft Defender est appelé *Endpoint Protection*; toutefois, le moteur de protection est le même. Bien que les fonctionnalités, la configuration et la gestion soient en grande partie identiques pour Antivirus Microsoft Defender sur [Windows 10](microsoft-defender-antivirus-windows.md) et Windows 11, il existe quelques différences clés sur Windows Server :
@@ -62,7 +62,7 @@ Par défaut, Antivirus Microsoft Defender est installé et fonctionnel sur Windo
 Si l’interface graphique graphique n’est pas installée sur  votre serveur et que vous souhaitez l’installer, l’Assistant Ajout de rôles et de fonctionnalités ou les cmdlets PowerShell.
 
 > [!NOTE]
-> Cette option n’est pas disponible Windows Server 2012 R2. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)
+> Cette option n’est pas disponible Windows Server 2012 R2. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>Activer l’interface graphique à l’aide de l’Assistant Ajout de rôles et de fonctionnalités
 
@@ -172,7 +172,7 @@ Pour activer l’envoi automatique d’échantillons, démarrez une console Wind
 
 <br/><br/>
 
-|Setting|Description|
+|Paramètre|Description|
 |---|---|
 | **0**  -  **Toujours invite** | Le service Antivirus Microsoft Defender vous invite à confirmer l’envoi de tous les fichiers requis. Il s’agit du paramètre par défaut pour Antivirus Microsoft Defender, mais il n’est pas recommandé pour les installations sur Windows Server 2016 ou 2019, ou Windows Server 2022 sans interface graphique graphique. |
 | **1**   -  **Envoyer automatiquement des échantillons sécurisés** | Le service Antivirus Microsoft Defender envoie tous les fichiers marqués comme « sûrs » et demande le reste des fichiers. |
@@ -224,7 +224,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>Utilisez-vous Windows Server 2012 R2 ou Windows Server 2016 ?
 
-Vous pouvez désormais exécuter Antivirus Microsoft Defender en mode passif sur Windows Server 2012 R2 et Windows Server 2016. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint)
+Vous pouvez désormais exécuter Antivirus Microsoft Defender en mode passif sur Windows Server 2012 R2 et Windows Server 2016. Pour plus d’informations, voir [Options d’installation de Microsoft Defender pour le point de terminaison.](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
 
 <br/><br/>
 

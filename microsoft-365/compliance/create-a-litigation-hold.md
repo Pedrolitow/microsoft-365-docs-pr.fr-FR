@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-audience: ITPro
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
@@ -16,12 +16,13 @@ description: Découvrez comment placer une boîte aux lettres en attente pour li
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: d105813d7e34ece7641421bc7fed10919dda618e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753128"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871838"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une attente pour litige
 
@@ -48,17 +49,15 @@ Pour placer une boîte aux lettres Exchange Online en attente pour litige, une l
 
 Voici les étapes à suivre pour placer une boîte aux lettres en attente pour litige à l’aide du Centre d'administration Microsoft 365.
 
-1. Accédez à <https://admin.microsoft.com> et connectez-vous.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centre d'administration Microsoft 365</a> and then click **Users**  >  **Active users**.
 
-2. Dans le volet de navigation du Centre d’administration, cliquez sur **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
+2. Sélectionnez l’utilisateur que vous souhaitez placer en attente pour litige.
 
-3. Sélectionnez l’utilisateur que vous souhaitez placer en attente pour litige.
+3. Dans la page de diffusion des propriétés, cliquez sur l’onglet **Courrier,** puis sous Plus **d’actions,** cliquez sur Gérer la attente **pour litige.**
 
-4. Dans la page de diffusion des propriétés, cliquez sur l’onglet **Courrier,** puis sous Plus **d’actions,** cliquez sur Gérer la attente **pour litige.**
+   ![Cliquez sur Gérer la attente pour litige dans l’onglet Courrier de la page volant des propriétés utilisateur.](../media/M365AdminCenterLitHold1.png)
 
-   ![Cliquez sur Gérer la attente pour litige dans l’onglet Courrier de la page volant des propriétés de l’utilisateur.](../media/M365AdminCenterLitHold1.png)
-
-5. Dans la page Gérer la attente  **pour** litige, cochez la case Activer la attente pour litige, puis entrez les informations facultatives suivantes :
+4. Dans la page Gérer la attente  **pour** litige, cochez la case Activer la attente pour litige, puis entrez les informations facultatives suivantes :
 
     1. Durée de la mise en attente **(jours)**: cette zone vous indique la durée de la mise en attente des éléments de boîte aux lettres lorsque la boîte aux lettres est placée en attente pour litige. La durée est calculée à compter de la date de réception ou de création de l'élément de boîte aux lettres. Lorsque la durée de la conservation expire pour un élément spécifique, cet élément n’est plus conservé. Si vous laissez cette zone vide, les éléments sont conservés indéfiniment ou jusqu’à ce que la conservation soit supprimée. Indiquez la période en nombre de jours.
 
@@ -66,7 +65,7 @@ Voici les étapes à suivre pour placer une boîte aux lettres en attente pour l
 
     3. **Page Web avec plus d’informations pour** l’utilisateur : cette zone vous aide à diriger l’utilisateur vers un site web pour plus d’informations sur la mise en attente pour litige. Cette URL apparaît sur la page Informations sur le compte dans la boîte aux lettres de l’utilisateur s’il utilise Outlook 2010 ou une ultérieure. Pour accéder à cette page, les utilisateurs peuvent cliquer **sur Fichier** Outlook.
 
-6. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente.
+. Cliquez **sur Enregistrer les modifications** dans la page de la page de **la** attente pour litige pour créer la attente.
 
    Le système affiche une bannière qui vous demande de prendre jusqu’à 240 minutes pour que la modification prenne effet.
 

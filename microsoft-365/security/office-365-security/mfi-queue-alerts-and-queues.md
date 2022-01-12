@@ -7,18 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 59974eca9512fc634701e932610f07239f89f038
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 197dbf1c50451f205b9a6f692faa7bab3c40fd11
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423166"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935304"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
@@ -82,7 +82,7 @@ Même si le volume de messages en file d’attente n’a pas  dépassé le [](ma
 Si vous cliquez sur le nombre  de messages sur le widget, un message volant Messages mis en file d’attente apparaît avec les informations suivantes :
 
 - **Nombre de messages mis en file d’attente**
-- **Nom du** connecteur : sélectionnez le nom du connecteur pour gérer le connecteur dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">le Centre d’administration Exchange (EAC).</a>
+- **Nom du** connecteur : sélectionnez le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC) à l’adresse <https://admin.exchange.microsoft.com/#/connectors> .
 - **Heure de début de la file d’attente**
 - **Messages les plus anciens arrivés à expiration**
 - **Serveur de destination**

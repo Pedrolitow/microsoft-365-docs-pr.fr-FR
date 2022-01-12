@@ -13,25 +13,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations de hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3de4e7a468280914854c7cc0b7f68a9cb7965632
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: bf564765b9bb896fcfcdac01961d414139199603
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072658"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934092"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
@@ -60,7 +60,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Pour aller directement à la page **de remise avancée,** ouvrez <https://security.microsoft.com/advanceddelivery> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **de remise avancée,** ouvrez <https://security.microsoft.com/advanceddelivery> .
 
 - Pour vous connecter à l’interface PowerShell du Centre de sécurité et conformité, consultez [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
@@ -75,7 +75,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** \> **Advanced delivery** in the **Rules** section. Pour aller directement à la page **de remise avancée,** utilisez <https://security.microsoft.com/advanceddelivery> .
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
@@ -95,7 +95,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations d’hameçonnage tiers dans la stratégie de remise avancée
 
-1. Dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \> **policies** \> **Advanced delivery** in the **Rules** section. Pour aller directement à la page **de remise avancée,** utilisez <https://security.microsoft.com/advanceddelivery> .
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.

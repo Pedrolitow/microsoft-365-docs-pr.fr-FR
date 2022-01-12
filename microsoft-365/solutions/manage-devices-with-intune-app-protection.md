@@ -3,7 +3,11 @@ title: Étape 1. Implémenter des stratégies de protection des applications
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -16,14 +20,16 @@ ms.collection:
 - mobile application management
 - MAM
 - set up mobile ap protection
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 8e458dd52121d6c7686798db85c8729ceaba9d1c
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 0fef855ef30afe3c2c496bf15676b4f8d86760b3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643819"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939356"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Étape 1. Implémenter des stratégies de protection des applications
 

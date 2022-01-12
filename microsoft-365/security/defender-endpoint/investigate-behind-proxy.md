@@ -15,18 +15,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218441"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934200"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,11 +44,11 @@ La surveillance de la connexion réseau derrière un proxy avant est possible en
 
 La protection réseau peut être contrôlée à l’aide des modes suivants :
 
-- **Bloquer**: les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Centre de sécurité Microsoft Defender.
-- **Audit**: la connexion aux domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Centre de sécurité Microsoft Defender.
+- **Bloquer**: les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Microsoft 365 Defender.
+- **Audit**: la connexion aux domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Microsoft 365 Defender.
 
 
-Si vous désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Centre de sécurité Microsoft Defender.
+Si vous désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Microsoft 365 Defender.
 
 Si vous ne la configurez pas, le blocage du réseau est désactivé par défaut.
 
@@ -90,6 +90,6 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Application de la protection réseau avec la stratégie de groupe - CSP de stratégie](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
