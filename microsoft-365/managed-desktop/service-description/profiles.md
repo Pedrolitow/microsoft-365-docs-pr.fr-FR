@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9f2d0d20d9df68cb10a5a84d6f2ba07d11a4e478
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 353bda15ee1eb5f50cf5814e06e4ccbb64e1b8d4
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210112"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009020"
 ---
 # <a name="device-profiles"></a>Profils d’appareil
 
@@ -35,7 +35,7 @@ Fondamentalement, chaque Microsoft Manged Desktop a une base qui inclut une lign
 
 Les profils d’appareil apparaissent au niveau supérieur suivant. Chaque Microsoft Manged Desktop appareil doit avoir un (et un seul) profil affecté. Les administrateurs peuvent choisir le profil attribué à un appareil.
 
-À un niveau encore plus élevé, il existe des [personnalisations supplémentaires.](customizing.md) Chaque appareil peut avoir une ou plusieurs personnalisations (ou aucune). Ils peuvent modifier une couche de niveau inférieur (profils d’appareil ou configuration de base) ou être une toute nouvelle demande superposée à la configuration standard.
+Des personnalisations supplémentaires sont encore plus [importantes.](customizing.md) Chaque appareil peut avoir une ou plusieurs personnalisations (ou aucune). Ils peuvent modifier une couche de niveau inférieur (profils d’appareil ou configuration de base) ou être une toute nouvelle demande superposée à la configuration standard.
 
 En haut, vous avez vos propres modifications, telles que les détails du réseau ou les applications. Un appareil peut avoir n’importe quel nombre de ces modifications, qui ne sont pas gérées ou bloquées par Microsoft Manged Desktop.
 
@@ -51,10 +51,10 @@ Le tableau suivant récapitule les paramètres et leurs valeurs par défaut pour
 |Fonctionnalité|Données sensibles|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**Bloquer les Stockage**|Oui|Oui|Non|
-|**[Niveau de blocage cloud](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|Élevé|Élevé|Élevé|
+|**[Niveau de blocage cloud](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|Élevé|Élevé|Élevé|
 |**Désactiver les comptes Microsoft**|Oui|Oui|Non|
 |**Désactiver les OneDrive**|Oui|Oui|Non|
-|**Basculer vers un bureau sécurisé pour l’élévation**|Non|Oui|Non|
+|**[Basculer vers un bureau sécurisé pour l’élévation](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)**|Non|Oui|Non|
 |**Balise d’appareil Microsoft Defender pour point de terminaison**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
 |**Administrateur sur l’appareil ?**|Non|Oui|Non|
 |**Profil Autopilot**|MMD Standard|Utilisateur d’alimentation MMD|MMD Standard|
@@ -64,8 +64,8 @@ Le tableau suivant récapitule les paramètres et leurs valeurs par défaut pour
 
 Chaque profil d’appareil implique également les éléments ci-après :
 
-- Un groupe d’Azure Active Directory d’appartenance dynamique (AAD)
-- Un groupe d’appareils AAD d’appartenance statique
+- Un groupe d’Azure Active Directory (AAD) d’appartenance dynamique
+- Un groupe d’AAD statique
 - Profil Microsoft Endpoint Manager configuration de l’ordinateur
 
 > [!IMPORTANT]
@@ -73,6 +73,6 @@ Chaque profil d’appareil implique également les éléments ci-après :
 
 ## <a name="limitations"></a>Limites
 
-Vous pouvez demander des exceptions aux profils d’appareil et à leurs détails comme vous le feriez avec n’importe quelle autre stratégie. N’oubliez pas que vous ne pouvez avoir qu’un seul profil d’appareil dans votre organisation Azure Active Directory « client ». Par exemple, vous ne pouvez pas demander que le profil d’appareil de données sensibles désactive AppLocker pour certains de vos utilisateurs uniquement. Tous les appareils avec le profil de données sensibles doivent avoir la même configuration.
+Vous pouvez demander des exceptions aux profils d’appareil et à leurs détails comme vous le feriez avec n’importe quelle autre stratégie. N’oubliez pas que vous ne pouvez avoir qu’un seul profil d’appareil dans votre organisation Azure Active Directory ( « client »). Par exemple, vous ne pouvez pas demander que le profil d’appareil de données sensibles désactive AppLocker pour certains de vos utilisateurs uniquement. Tous les appareils avec le profil de données sensibles doivent avoir la même configuration.
 
 Chaque appareil ne peut avoir qu’un seul profil. Si un appareil donné est utilisé par plusieurs utilisateurs, tous les utilisateurs de cet appareil auront la même configuration.

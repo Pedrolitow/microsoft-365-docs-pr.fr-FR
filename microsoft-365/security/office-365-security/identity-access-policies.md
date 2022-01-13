@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 4f725a74d63feaffeba43dd832ed4eb1df744d7d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3bb7b8135e178ac219b56afd67e466976487e3cb
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935401"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62008996"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
 
@@ -202,7 +202,7 @@ Dans la deuxième section **Affectations** :
 
 |Type|Propriétés|Valeurs|Action|
 |---|---|---|---|
-|Access|**Autoriser l’accès**||Sélectionner|
+|Accès|**Autoriser l’accès**||Sélectionner|
 |||**Exiger le changement du mot de passe**|Chèque|
 |
 
@@ -228,7 +228,7 @@ Pour afficher les recommandations spécifiques pour chaque niveau de configurati
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et aux appareils confiance zéro, les [niveaux](microsoft-365-policies-configurations.md)de protection de point de départ et de Enterprise sont étroitement mis en relation avec les paramètres de protection des données améliorées d’entreprise de niveau 2. Le niveau de protection de la sécurité spécialisé est étroitement map avec les paramètres de protection des données élevées d’entreprise de niveau 3.
 
-|Niveau de protection|Stratégie de protection des applications|Informations supplémentaires|
+|Niveau de protection|Stratégie de protection des applications|Plus d’informations|
 |---|---|---|
 |Point de départ|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
 |Entreprise|[Protection améliorée des données de niveau 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.|
@@ -246,14 +246,14 @@ Pour appliquer les stratégies de protection des applications que vous avez appl
 
 L’application de stratégies de protection des applications nécessite un ensemble de stratégies décrites dans La stratégie Exiger la protection des applications pour l’accès aux applications [cloud avec accès conditionnel.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Ces stratégies sont incluses dans cet ensemble recommandé de stratégies de configuration des identités et des accès.
 
-Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et la protection des applications, suivez les étapes de l’accès conditionnel : exiger des applications [clientes](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection)approuvées ou une stratégie de protection des applications, qui permet uniquement aux comptes au sein des applications protégées par les stratégies de protection des applications d’accéder aux points de terminaison Microsoft 365.
+Pour créer la stratégie d’accès conditionnel qui nécessite des applications approuvées et la protection des applications, suivez les étapes de la procédure Exiger l’approbation des applications [clientes](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices)ou de la stratégie de protection des applications avec des appareils mobiles, qui permet uniquement aux comptes au sein des applications mobiles protégées par les stratégies de protection des applications d’accéder aux points de terminaison Microsoft 365.
 
    > [!NOTE]
    > Cette stratégie garantit que les utilisateurs mobiles peuvent accéder à tous Microsoft 365 terminaison à l’aide des applications applicables.
 
-Cette stratégie empêche également Exchange ActiveSync clients de se connecter à Exchange Online. Toutefois, vous pouvez créer une stratégie distincte pour la gestion des Exchange ActiveSync. Pour plus d’informations, voir Bloquer les [clients ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)qui empêche les clients Exchange ActiveSync qui exploitent l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
+Cette stratégie empêche également les clients Exchange ActiveSync appareils mobiles de se connecter à Exchange Online. Toutefois, vous pouvez créer une stratégie distincte pour la gestion des Exchange ActiveSync sur tous les appareils. Pour plus d’informations, voir Bloquer les [clients ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)qui empêche les clients Exchange ActiveSync qui exploitent l’authentification de base de se connecter à Exchange Online. Cette stratégie n’est pas illustré dans l’illustration en haut de cet article. Il est décrit et présenté dans les recommandations de stratégie [pour la sécurisation du courrier électronique.](secure-email-recommended-policies.md)
 
- Ces stratégies exploitent les contrôles d’octroi [Exiger une application cliente approuvée](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) et Exiger une stratégie de protection des [applications.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
+ Cette stratégie exploite les contrôles d’octroi [Exiger une application cliente approuvée](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) et Exiger la stratégie de protection des [applications.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
 Enfin, le blocage de l’authentification héritée pour d’autres applications clientes sur les appareils iOS et Android garantit que ces clients ne peuvent pas contourner les stratégies d’accès conditionnel. Si vous êtes en train de suivre les instructions de cet article, vous avez déjà configuré des clients De blocage qui ne sont pas pris en charge par [l’authentification moderne.](#block-clients-that-dont-support-multi-factor)
 
@@ -314,7 +314,7 @@ Pour les appareils supervisés :
 
 À l’aide des principes décrits dans les configurations d’accès aux identités et aux appareils Avec confiance zéro, les [niveaux](microsoft-365-policies-configurations.md)de protection de point de départ et de Enterprise sont étroitement mapés avec les paramètres de sécurité améliorés de niveau 2. Le niveau de protection de la sécurité spécialisé est étroitement map avec les paramètres de sécurité élevés de niveau 3.
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Point de départ     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
@@ -346,7 +346,7 @@ Pour les appareils Android Entreprise entièrement gérés :
 
 Pour les appareils Enterprise profils de travail Android :
 
-|Niveau de protection  |Stratégie d’appareil |Informations supplémentaires  |
+|Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
 |Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |S/O         |
 |Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |S/O         |

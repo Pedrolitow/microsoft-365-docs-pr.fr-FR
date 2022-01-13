@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Découvrez comment autoriser les membres d’un groupe à envoyer des messages électroniques en tant que Microsoft 365 groupe ou à envoyer du courrier électronique au nom d’Microsoft 365 groupe.
-ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: e3742b645d1efb2acb4bd14d109314947d781246
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421581"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009032"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
@@ -39,8 +39,8 @@ L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer 
 > [!IMPORTANT]
 > Vous pouvez configurer **Envoyer en tant** que ou Envoyer de la part **d’un** utilisateur donné, mais pas les deux. Si vous configurez les deux, la valeur par défaut est **Envoyer en tant que**.
 
-> [!TIP]
-> Pour découvrir [comment](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) utiliser Outlook et Outlook sur le Web pour envoyer des messages électroniques à partir d’un groupe, voir Envoyer des courriers électroniques depuis ou pour le compte d’un groupe Microsoft 365.
+> [!NOTE]
+> **Envoyer en** tant **que et Envoyer de la part de ne** sont pas pris en charge Outlook pour Mac dans les configurations Exchange hybrides.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Autoriser les membres à envoyer des messages électroniques en tant que groupe
 
@@ -79,6 +79,8 @@ Cette section explique comment autoriser les utilisateurs à envoyer des message
     ![Tapez pour rechercher ou sélectionner un utilisateur dans la liste.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Articles connexes
+
+[Envoyer des courriers électroniques à partir d’un groupe de Microsoft 365 ou au nom de ceux-là](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
 
 [Recommandations en matière de planification de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
