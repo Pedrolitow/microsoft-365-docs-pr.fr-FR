@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 459a72d7d6e8686dfa5ec1241808c21d9b8a4cfd
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372707"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940637"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -49,7 +49,7 @@ Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
 > [!NOTE]
-> Pour les clients du gouvernement américain, les étiquettes de niveau de vie privée sont désormais pris en charge pour toutes les plateformes :
+> Pour les clients du gouvernement américain, les étiquettes de confidentialité sont prises en charge sur toutes les plateformes.
 >
 > Si vous utilisez le client d’étiquettes et le scanneur unifiés de Azure Information Protection, consultez la [Description du service public premium Azure Information Protection](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
