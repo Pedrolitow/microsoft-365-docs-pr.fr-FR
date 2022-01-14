@@ -3,18 +3,18 @@ title: Affecter des appareils à un groupe de déploiement
 description: Comment spécifier le groupe de déploiement dans lequel vous souhaitez que les appareils soient connectés
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 88445e3ce29084de6141930d36bbdc7f4b2e247d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 227bb532331f2636c06be7929c25938e71905d92
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166633"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035449"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>Affecter des appareils à un groupe de déploiement
 
@@ -25,8 +25,8 @@ Microsoft Manged Desktop affectera des appareils aux différents groupes de dép
 
 Pour affecter des appareils à un groupe de déploiement, suivez ces étapes. Si vous souhaitez déplacer des appareils distincts vers différents groupes, répétez ces étapes pour chaque groupe.
 
-1. Dans Microsoft Endpoint Manager, sélectionnez **Appareils** dans le volet gauche. Dans la **section Microsoft Manged Desktop,** sélectionnez **Appareils.**
-2. Sélectionnez les appareils que vous souhaitez affecter. Tous les appareils sélectionnés seront affectés au groupe que vous spécifiez.
+1. Dans Microsoft Endpoint Manager, **sélectionnez Appareils** dans le volet gauche. Dans la **section Microsoft Manged Desktop,** sélectionnez **Appareils.**
+2. Sélectionnez les appareils que vous souhaitez affecter. Tous les appareils sélectionnés sont affectés au groupe que vous spécifiez.
 3. Sélectionnez **les actions de** l’appareil dans le menu.
 4. Sélectionnez **Affecter l’appareil au groupe.** Un volant s’ouvre.
 5. Utilisez le menu déroulant pour sélectionner le groupe vers qui déplacer les appareils, puis sélectionnez **Enregistrer.** Le **groupe affecté par** sera changé en En **attente**.

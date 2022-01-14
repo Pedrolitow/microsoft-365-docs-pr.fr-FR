@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941887"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041101"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -78,7 +78,7 @@ Les trois plus récentes publication majeures de macOS sont pris en charge.
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur) et les appareils supérieurs, Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur les nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](mac-sysext-policies.md)
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Île), 10.14 (Mojave)
+- 12 (Monterey), 11 (Big Sur), 10,15 (Île)
 - Espace disque : 1 Go
 
 Les versions bêta de macOS ne sont pas pris en charge.

@@ -3,18 +3,18 @@ title: Support pour les utilisateurs
 description: Explique les options de prise en charge par les clients et les partenaires.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea2e6e95ec76965e01d73bb1ecbd53c798eeca71
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a6d01320c7a302cb75986df52db0de96352e6241
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205712"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035485"
 ---
 # <a name="user-support"></a>Support pour les utilisateurs
 
@@ -34,7 +34,7 @@ Pour garantir la qualité de service sans compromettre la sécurité, le fournis
 
 Toute personne qui fournit un support (vous pour le support client ou un partenaire pour un partenaire) est responsable des éléments ci-après :
 
-- Fourniture de toute l’assistance technique et de l’assistance technique du premier contact jusqu’à la résolution de l’utilisateur
+- Fourniture de toute l’assistance technique et du support technique du premier contact jusqu’à la résolution de l’utilisateur
 - Respect de tous les contrats de niveau de service pour le support utilisateur établi par votre organisation ou en partenariat avec le fournisseur de support choisi
 - Effectuer des actions de dépannage spécifiques, telles que la demande de privilèges d’appareil élevés, comme décrit dans Obtenir de [l’aide pour les utilisateurs](../working-with-managed-desktop/end-user-support.md)
 - Résolution des problèmes liés aux utilisateurs et correction de ces problèmes, notamment :
@@ -68,7 +68,7 @@ En tant que fournisseur de services, nous sommes responsables des éléments ci-
 
 Que le support soit dirigé par le client ou par un partenaire, le flux d’activité pour une demande de support utilisateur suit ce chemin d’accès :
 
-:::image type="content" source="../../media/mmd-support-flow.png" alt-text="Lorsqu’un utilisateur contacte le support, il passe par votre système de personnel à plusieurs niveaux comme vous l’avez conçu. Il est important de désigner un groupe de personnel de support technique qui aura les capacités d’élévation et d’escalade, appelée équipe d’escalade de support. Pour des Microsoft Manged Desktop spécifiques, ils peuvent s’en prendre à notre équipe des opérations. Ou pour d’autres problèmes de Microsoft, ils peuvent être acheminés vers votre canal de support existant, Unifié ou Premier. Les problèmes matériels doivent toujours être acheminés vers votre fournisseur ou fournisseur établi.":::
+:::image type="content" source="../../media/mmd-support-flow.png" alt-text="Lorsqu’un utilisateur contacte le support, il passe par votre système de personnel à plusieurs niveaux comme vous l’avez conçu. Il est important de désigner un groupe d’équipes de support technique qui auront les capacités d’élévation et d’escalade, appelées équipe de prise en charge de l’escalade. Pour des Microsoft Manged Desktop spécifiques, ils peuvent s’en prendre à notre équipe des opérations. Ou pour d’autres problèmes de Microsoft, ils peuvent être acheminés vers votre canal de support existant, Unifié ou Premier. Les problèmes matériels doivent toujours être acheminés vers votre fournisseur ou fournisseur établi.":::
 
 L’intégration de vos processus existants à ce flux de travail Microsoft Manged Desktop les appareils mobiles est flexible, de sorte que les détails peuvent être différents. En règle générale, le fournisseur de support suit une approche de niveau ou de passage existante, en désignant des utilisateurs spécifiques qui ont la possibilité d’élever les autorisations ou de réamorcer les problèmes Microsoft Manged Desktop opérations. Il est préférable de maintenir ce groupe plus petit que l’équipe de support technique la plus large.
 

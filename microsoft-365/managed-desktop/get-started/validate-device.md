@@ -2,21 +2,21 @@
 title: Valider les nouveaux appareils
 description: Avant de commander des appareils, obtenez l’un de chaque modèle et testez-le
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 71f9512715caed3ad138df9eeb7d2924eb1eb8e3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364614"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035569"
 ---
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
@@ -29,14 +29,14 @@ Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée,
     - [Localiser l’expérience utilisateur](localization.md)
     - [Expérience de première exécution avec le pilote automatique et la page état d’inscription](esp-first-run.md)
     - [Service d’emplacement Windows 10](device-location.md)
-    - [Prendre en main le contrôle d’application](get-started-app-control.md)
+    - [Prise en main du contrôle d’application](get-started-app-control.md)
     - [Déployer les applications sur les appareils](deploy-apps.md)
 2. Vérifiez que les expériences suivantes fonctionnent sans erreurs, erreurs ou invites :
     - Expérience Autopilot après avoir rejoint le réseau et l’utilisateur s’est
     - Si vous avez activé la [page](esp-first-run.md)État de l’inscription, cela fonctionne.
     - L’utilisateur peut se Office applications
     - OneDrive synchronisation des dossiers, notamment Windows Bureau, Documents et Images
-    - L’appareil reçoit les mises à jour, les stratégies et les applications métier
+    - L’appareil reçoit les mises à jour, les stratégies et les applications métiers
 3. Examinez les appareils signalés et la configuration matérielle requise dans le rapport [d’inventaire](../working-with-managed-desktop/device-inventory-report.md) des appareils pour vérifier qu’ils correspondent à ce que vous attendez.
 
 Si des problèmes se produisent, vous pouvez demander [de l’aide](../working-with-managed-desktop/admin-support.md) dans le portail d’administration.

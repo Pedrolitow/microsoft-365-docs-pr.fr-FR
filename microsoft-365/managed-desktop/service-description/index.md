@@ -3,21 +3,21 @@ title: Description du service Bureau géré Microsoft
 description: Décrit ce qui est inclus dans Bureau géré Microsoft en tant que service
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1be229c443fac2c034e5cfe56471880089bebd2f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81311b0f5e6b9f1366c8acf21de95336b1947596
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201504"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034628"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 

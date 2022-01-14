@@ -4,21 +4,21 @@ description: Cet article répertorie les articles nouveaux et mis à jour Micros
 keywords: historique des modifications
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 ms.topic: article
 audience: ITPro
-manager: laurawi
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 8a2720a4b01992396a06fc4109887bd759d539ce
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 4b3c08f23f6ba21e839501f9b7925733bbf6bbd1
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588384"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034520"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
@@ -54,7 +54,7 @@ Article nouveau ou modifié | Description
 ## <a name="july-2021"></a>Juillet 2021
 Article nouveau ou modifié | Description
 --- | ---
-[Images d’un appareil](service-description/device-images.md)| Article mis à jour
+[Images d’appareil](service-description/device-images.md)| Article mis à jour
 [Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
 [Rôles et responsabilités de Bureau géré Microsoft](intro/roles-and-responsibilities.md) | Article mis à jour
 [Activer les fonctionnalités de support utilisateur](get-started/enable-support.md) | Nouvel article
@@ -104,7 +104,7 @@ Article nouveau ou modifié | Description
 [Valider les nouveaux appareils](get-started/validate-device.md) | Nouvel article
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Article mis à jour
 [Microsoft Manged Desktop cycle de vie du produit](service-description/device-lifecycle.md) | Article mis à jour
-[Microsoft Manged Desktop périphériques](service-description/device-list.md) |Article mis à jour
+[Microsoft Manged Desktop appareils](service-description/device-list.md) |Article mis à jour
 
 ## <a name="march-2021"></a>Mars 2021
 Article nouveau ou modifié | Description
@@ -112,7 +112,7 @@ Article nouveau ou modifié | Description
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Expérience de première exécution avec le pilote automatique et la page état d’inscription](get-started/esp-first-run.md) | Article mis à jour
 [Service d’emplacement Windows 10](get-started/device-location.md) | Nouvel article
-[Images d’un appareil](service-description/device-images.md) | Nouvel article
+[Images d’appareil](service-description/device-images.md) | Nouvel article
 [Microsoft Manged Desktop régions pris en charge](service-description/regions-languages.md) | Article mis à jour
 [Localiser l’expérience utilisateur](get-started/localization.md) | Nouvel article
 
@@ -123,7 +123,7 @@ Article nouveau ou modifié | Description
 [Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
 [Configuration requise de l’appareil](service-description/device-requirements.md) | Article mis à jour
 [Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
-[Microsoft OneDrive](get-started/onedrive.md) | Nouvel article
+[Microsoft OneDrive](get-started/onedrive.md) | Nouvel article
 [Conformité](intro/compliance.md) | Mis à jour
 [Applications Microsoft 365 pour les entreprises](get-started/m365-apps.md) | Article mis à jour
 [Outils d’évaluation de la préparation](get-ready/readiness-assessment-tool.md) | Article mis à jour
@@ -197,7 +197,7 @@ Utiliser les informations| Article mis à jour
 Article nouveau ou modifié | Description
 --- | ---
 [Rapport d’inventaire des appareils](working-with-managed-desktop/device-inventory-report.md) | Nouvel article
-[Nouvelle application Microsoft Edge’application](get-started/edge-browser-app.md) | Article mis à jour
+[Nouvelle Microsoft Edge application](get-started/edge-browser-app.md) | Article mis à jour
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
@@ -206,7 +206,7 @@ Article nouveau ou modifié | Description
 [Applications Microsoft 365 pour les entreprises](get-started/m365-apps.md) | Nouvel article
 [Confidentialité et données personnelles](service-description/privacy-personal-data.md) | Nouvel article
 
-## <a name="july-2020"></a>Juillet 2020
+## <a name="july-2020"></a>Juillet 2020
 Article nouveau ou modifié | Description
 --- | ---
 [Microsoft Manged Desktop’application requise](service-description/mmd-app-requirements.md) | Article mis à jour
@@ -249,7 +249,7 @@ Article nouveau ou modifié | Description
 
 
 
-## <a name="march-2020"></a>Mars 2020
+## <a name="march-2020"></a>Mars 2020
 Article nouveau ou modifié | Description
 --- | ---
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md)| Article mis à jour
@@ -257,7 +257,7 @@ Article nouveau ou modifié | Description
 [Préparer des ressources d’impression pour le Bureau géré Microsoft](get-ready/printing.md) | Nouvel article
 
 
-## <a name="february-2020"></a>Février 2020
+## <a name="february-2020"></a>Février 2020
 Article nouveau ou modifié | Description
 --- | ---
 [Sécurité dans Microsoft Manged Desktop](service-description/security.md)| Article mis à jour
@@ -317,7 +317,7 @@ Article nouveau ou modifié | Description
 --- | ---
 [Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Article mis à jour
-[Microsoft Manged Desktop périphériques](service-description/device-list.md) | Article mis à jour
+[Microsoft Manged Desktop appareils](service-description/device-list.md) | Article mis à jour
 [Déployer et suivre les paramètres configurables : Microsoft Manged Desktop](working-with-managed-desktop/config-setting-deploy.md) | Article mis à jour
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
@@ -359,7 +359,7 @@ Article nouveau ou modifié | Description
 Article nouveau ou modifié | Description
 --- | ---
 [Microsoft Manged Desktop régions et langues pris en charge](service-description/regions-languages.md) | Article mis à jour
-[Microsoft Manged Desktop périphériques](service-description/device-list.md) | Article mis à jour
+[Microsoft Manged Desktop appareils](service-description/device-list.md) | Article mis à jour
 [Microsoft Manged Desktop archivés](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article

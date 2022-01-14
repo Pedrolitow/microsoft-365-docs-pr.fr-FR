@@ -3,19 +3,19 @@ title: Microsoft Teams
 description: Comment Teams est installé sur les appareils et mis à jour par la suite
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 525dc7b89e302cdc076336daa7a98c6317855e73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212736"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034796"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,13 +23,13 @@ ms.locfileid: "60212736"
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Comme la plupart des fournisseurs de matériel n’incluent pas encore Teams dans leurs images, Microsoft Manged Desktop déploie des Teams sur vos appareils à l’aide de Microsoft Intune. Tous les appareils gérés ont [le package Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installé, ce qui garantit que tous les utilisateurs qui se connectent à un appareil Microsoft Teams prêt à l’emploi. Lorsque le package a terminé l’installation pour la première fois, Teams démarre automatiquement et ajoute un raccourci au Bureau.
+La plupart des fournisseurs de matériel n’incluent pas encore Teams dans leurs images. Par Microsoft Manged Desktop déploie Teams sur vos appareils à l’aide de Microsoft Intune. Tous les appareils gérés ont [le package Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installé, ce qui garantit que tous les utilisateurs qui se connectent à un appareil Microsoft Teams prêt à l’emploi. Lorsque le package a terminé l’installation pour la première fois, Teams démarre automatiquement et ajoute un raccourci au Bureau.
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune modifications
 
 Microsoft Manged Desktop ajoute deux applications à votre organisation Azure AD pour Microsoft Teams. Ils sont déployés sur des clients 64 bits ou 32 bits selon les besoins de l’appareil :  
 
-- Espace de travail moderne – Teams du programme d’installation à l’échelle de l’ordinateur x64  
+- Espace de travail moderne – Teams d’installation à l’échelle de l’ordinateur x64  
 - Espace de travail moderne – Teams d’installation à l’échelle de l’ordinateur x32
 
 ## <a name="updates"></a>Mises à jour

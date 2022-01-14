@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 75a8c5e86d2d07a0b6a33e93029f5d650eef3f52
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283016"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034664"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -153,7 +153,7 @@ Utilisez le graphique suivant pour vous aider à configurer les groupes de votre
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en place** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucun changement | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
 
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques et Teams conversations de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques et les conversations Teams envoyées à ce groupe, et non les messages électroniques et conversations individuels reçus par chaque membre du groupe.
 
@@ -304,8 +304,10 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
 
 4. Corriger l’alerte à l’aide des contrôles de correction et vérifier que l’alerte est correctement résolue.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
 
 Pour en savoir plus sur l’examen des alertes de conformité des communications, voir Examiner et corriger [les alertes de conformité des communications.](communication-compliance-investigate-remediate.md)
+
+Pour suivre les dernières mises à  jour de conformité des communications, sélectionnez Nouveautés de la [conformité des communications](https://compliance.microsoft.com/) pour votre organisation.

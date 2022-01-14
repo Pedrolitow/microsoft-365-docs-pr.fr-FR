@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous souhaitez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2b894344362556200362d486853d56a2aed00b6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 66d221b422236c6818ebb146babc0cc90eab1206
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943111"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041077"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et pour la sécurité Microsoft Defender pour Office 365
 
@@ -121,6 +121,9 @@ Pour créer et configurer des stratégies de courrier indésirable sortant, voir
 
 Pour plus d’informations sur les limites d’envoi par défaut dans le service, voir [Limites d’envoi.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
+> [!NOTE]
+> Les stratégies de courrier indésirable sortant ne font pas partie des stratégies de sécurité standard ou stricte. Les **valeurs Standard**  et **Strict** indiquent nos valeurs recommandées dans la stratégie de courrier indésirable sortant par défaut ou les stratégies personnalisées que vous créez.
+
 <br>
 
 ****
@@ -163,7 +166,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, voir Confi
 |**De nom** <p> _CustomFromName_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Adresse de provenance** <p> _CustomFromAddress_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Personnaliser les notifications pour les messages provenant d’expéditeurs internes**||||Ces paramètres sont utilisés uniquement si les expéditeurs internes  sont avertis lorsque des **messages** sont mis en quarantaine en tant que programmes malveillants ou si les messages non envoyés provenant d’expéditeurs internes sont sélectionnés.|
-|**Sujet** <p> _CustomInternalSubject_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
+|**Subject** <p> _CustomInternalSubject_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Message** <p> _CustomInternalBody_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
 |**Personnaliser les notifications pour les messages provenant d’expéditeurs externes**||||Ces paramètres sont utilisés uniquement si les expéditeurs externes sont avertis lorsque des **messages** sont mis en quarantaine en tant que programmes malveillants ou si les **messages** non envoyés provenant d’expéditeurs externes sont sélectionnés.|
 |**Sujet** <p> _CustomExternalSubject_|Vide <p> `$null`|Vide <p> `$null`|Vide <p> `$null`||
@@ -231,16 +234,16 @@ Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d�
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil de hameçonnage & protection**|||||
-|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration. Les stratégies de sécurité prédéfines ne peuvent pas être modifiées ; Ils doivent être désactivés si vous souhaitez ajouter des utilisateurs dans des rôles clés comme suggéré.|
+|**Permettre aux utilisateurs de se protéger** (protection des utilisateurs dont l’identité est usurpée) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Non sélectionnée <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of users\>|Sélectionné <p> `$true` <p> \<list of users\>|Nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration. <p> Dans les stratégies de sécurité prédéfines, vous ne pouvez pas spécifier les utilisateurs à protéger. Vous devez désactiver les stratégies de sécurité prédéfinie et utiliser des stratégies anti-hameçonnage personnalisées pour ajouter des utilisateurs dans des rôles clés, comme suggéré.|
 |**Activer les domaines à protéger** (protection de domaine dont l’identité est usurpée)|Non sélectionnée|Sélectionné|Sélectionné||
 |**Inclure les domaines que je possède** <p> _EnableOrganizationDomainsProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
-|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment.|
+|**Inclure des domaines personnalisés** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Désactivé <p> `$false` <p> none|Sélectionné <p> `$true` <p> \<list of domains\>|Sélectionné <p> `$true` <p> \<list of domains\>|Nous vous recommandons d’ajouter des domaines (domaines d’expéditeur) que vous ne possédez pas, mais avec qui vous interagissez fréquemment. <p> Dans les stratégies de sécurité prédéfines, vous ne pouvez pas spécifier les domaines custm à protéger. Vous devez désactiver les stratégies de sécurité prédéfinie et utiliser des stratégies anti-hameçonnage personnalisées pour ajouter des domaines personnalisés à protéger comme suggéré.|
 |**Ajouter des expéditeurs et des domaines de confiance** <p> _ExcludedSenders_ <p> _ExcludedDomains_|Aucun|Aucun|Aucun|En fonction de votre organisation, nous vous recommandons d’ajouter des expéditeurs ou des domaines qui sont identifiés à tort comme des tentatives d’emprunt d’identité.|
 |**Activer l’intelligence des boîtes aux lettres** <p> _EnableMailboxIntelligence_|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Activer la veille pour la protection contre l’emprunt d’identité** <p> _EnableMailboxIntelligenceProtection_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`|Ce paramètre autorise l’action spécifiée pour les détections d’emprunt d’identité par l’intelligence des boîtes aux lettres.|
 |**Actions**||||Où que vous sélectionniez la **mise en quarantaine du message,** une zone sélectionner une stratégie **de** mise en quarantaine est disponible. Les stratégies de mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine. <p> Lorsque vous créez une stratégie anti-hameçonnage, une valeur vide signifie que la stratégie de mise en quarantaine par défaut est utilisée pour définir les fonctionnalités historiques des messages mis en quarantaine par ce verdict (DefaultFullAccessPolicy pour tous les types de détection d’emprunt d’identité). <p> Les administrateurs peuvent créer et sélectionner des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).|
-|**Si le message est détecté comme un utilisateur dont l’identité est usurpée** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
-|**Si le message est détecté comme un domaine dont l’identité est usurpée** <p> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
+|**Si le message est détecté comme un utilisateur dont l’identité est usurpée** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`|N’oubliez pas que les stratégies de sécurité prédéfines ne vous permettent pas de spécifier les utilisateurs à protéger, de sorte que ce paramètre ne fait rien dans les stratégies de sécurité prédéfines.|
+|**Si le message est détecté comme un domaine dont l’identité est usurpée** <p> _TargetedDomainProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`|N’oubliez pas que les stratégies de sécurité prédéfines ne vous permettent pas de spécifier les domaines personnalisés à protéger, de sorte que ce paramètre affecte uniquement les domaines que vous possédez, et non les domaines personnalisés.|
 |**Si l’intelligence de boîte aux lettres détecte et usurpe l’identité de l’utilisateur** <p> _MailboxIntelligenceProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`||
 |**Afficher les informations d’emprunt d’conseil de sécurité** <p> _EnableSimilarUsersSafetyTips_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||
 |**Afficher les conseil de sécurité** <p> _EnableSimilarDomainsSafetyTips_|Désactivé <p> `$false`|Sélectionné <p> `$true`|Sélectionné <p> `$true`||

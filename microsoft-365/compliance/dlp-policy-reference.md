@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4588ef4ead22ebae147ea7fdae1d3dafaa3ca1dc
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 18b56a4e427053f29dcc054ec9384b4e34307c40
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426434"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034616"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -97,11 +97,11 @@ mise à jour : 23/06/2021
 |Confidentialité| U.S. State Breach Notification Laws|- [Numéro de carte de crédit](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Numéro de compte bancaire américain](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[Numéro de permis de conduire américain](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |Confidentialité| U.S. State Social Security Number Confidentiality Laws|- [Numéro de sécurité sociale (SSN) des États-Unis](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)| 
 
-## <a name="locations"></a>Emplacements
+## <a name="locations"></a>Locations
 
 Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
 
-|Emplacement  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
+|Location  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
 |---------|---------|---------|---------|
 |Exchange en ligne |groupe de distribution | data-in-motion| Non |
 |SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
@@ -124,7 +124,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 > [!IMPORTANT]
 > Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs de sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint ***sites*** et Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT.
 
-|Emplacement| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
+|Location| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
 |Exchange en ligne|Oui| Oui| Non|
 |SharePoint sites en ligne| Oui| Oui| Oui|
@@ -214,9 +214,12 @@ Les conditions sont inclusives et vous permet de définir ce que vous souhaitez 
 
 en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
 
-Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie d’une à neuf, la sit doit avoir lieu au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
-
 La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
+
+Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) 
+
+> [!IMPORTANT]
+> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances pris en charge pour SIT.](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -487,7 +490,7 @@ Si vous avez sélectionné Uniquement les appareils, vous obtenez les mêmes opt
 
 Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le corps de texte prend en charge les éléments ci-après :
 
-|Nom commun  |Paramètre  |Exemple
+|Nom commun  |Parameter  |Exemple
 |---------|---------|---------|
 |nom du fichier     |%%FileName%% | Contoso doc 1 |
 |nom du processus     |%%ProcessName%% | Word |

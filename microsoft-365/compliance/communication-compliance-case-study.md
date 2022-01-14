@@ -1,6 +1,6 @@
 ---
-title: 'Étude de cas : Contoso configure rapidement une stratégie de contenu inappropriée pour Microsoft Teams, Exchange et Yammer communications'
-description: Étude de cas pour Contoso et configuration rapide d’une stratégie de conformité des communications pour surveiller le contenu inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer communications.
+title: 'Étude de cas : Contoso configure rapidement une stratégie de texte inappropriée pour Microsoft Teams, Exchange et Yammer communications'
+description: Étude de cas pour Contoso et configuration rapide d’une stratégie de conformité des communications pour surveiller le texte inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer communications.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -23,20 +23,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 33970df6b108cd5538f14e7bb6c9c7f235d55ca1
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7532051d649be4d0e9320a372c53686879c31972
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421965"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035497"
 ---
-# <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de contenu inappropriée pour Microsoft Teams, Exchange et Yammer communications
+# <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de texte inappropriée pour Microsoft Teams, Exchange et Yammer communications
 
-La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages avec du contenu inapproprié dans votre organisation. Le contenu inapproprié peut inclure des blasphémités, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques, Microsoft Teams, Yammer ou tiers analysés dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
+La conformité des communications Microsoft 365 réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages avec du texte inapproprié dans votre organisation. Le texte inapproprié peut inclure des blasphémités, des menaces, du harcèlement et des images inappropriées. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques, Microsoft Teams, Yammer ou tiers analysés dans votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux normes de message de votre organisation.
 
-Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour surveiller le contenu inapproprié. Ils utilisent Microsoft 365 principalement pour la messagerie électronique, les Microsoft Teams et la Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise en matière de harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
+Contoso Corporation est une organisation fictive qui doit configurer rapidement une stratégie pour surveiller les textes inappropriés. Ils utilisent Microsoft 365 principalement pour la messagerie électronique, les Microsoft Teams et la Yammer pour leurs utilisateurs, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise en matière de harcèlement au travail. Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont une connaissance de base des principes de base de l’utilisation de Microsoft 365 et recherchent des conseils de bout en bout sur la façon de se lancer rapidement dans la conformité des communications.
 
-Cette étude de cas couvre les bases de la configuration rapide d’une stratégie de conformité des communications afin de surveiller les communications pour le contenu inapproprié. Ce guide se compose de :
+Cette étude de cas couvre les bases de la configuration rapide d’une stratégie de conformité des communications afin de surveiller les communications en cas de texte inapproprié. Ce guide se compose de :
 
 - Étape 1 : Planifier la conformité des communications
 - Étape 2 : Accéder à la conformité des communications dans Microsoft 365
@@ -45,12 +45,12 @@ Cette étude de cas couvre les bases de la configuration rapide d’une stratég
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Étape 1 : Planification de la conformité des communications
 
-Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveille le contenu inapproprié des conversations envoyées dans les Microsoft Teams, les messages privés et les conversations de la communauté en Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
+Les administrateurs informatiques et les spécialistes de la conformité de Contoso ont participé à des webinaires en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aideront à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement au travail. En travaillant ensemble, ils ont développé un plan pour créer et activer une stratégie de conformité des communications qui surveillera le texte inapproprié pour les conversations envoyées dans les Microsoft Teams, les messages privés et les conversations de la communauté en Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut les déterminations suivantes :
 
 - Administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Les spécialistes de la conformité qui doivent créer et gérer des stratégies de communication.
 - Les spécialistes de la conformité et d’autres collègues dans d’autres services (ressources humaines, juridiques, etc.) qui doivent examiner et corriger les alertes de conformité des communications.
-- Utilisateurs qui seront dans l’étendue de la stratégie de contenu inappropriée de conformité des communications.
+- Utilisateurs qui seront dans l’étendue de la stratégie de texte inappropriée de conformité des communications.
 
 ### <a name="licensing"></a>Licences
 
@@ -150,7 +150,7 @@ Après avoir sélectionné **Afficher tout,** les administrateurs informatiques 
 
 ## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>Étape 3 : Configuration des conditions préalables et création d’une stratégie de conformité des communications
 
-Pour commencer à mettre en place une stratégie de conformité des communications, les administrateurs informatiques de Contoso doivent configurer plusieurs conditions préalables avant de configurer la nouvelle stratégie afin de surveiller le contenu inapproprié. Une fois ces conditions préalables achevées, les administrateurs informatiques et les spécialistes de la conformité de Contoso peuvent configurer la nouvelle stratégie et les spécialistes de la conformité peuvent démarrer une enquête et corriger les alertes générées.
+Pour commencer à mettre en place une stratégie de conformité des communications, les administrateurs informatiques de Contoso doivent configurer plusieurs conditions préalables avant de configurer la nouvelle stratégie afin de surveiller les textes inappropriés. Une fois ces conditions préalables achevées, les administrateurs informatiques et les spécialistes de la conformité de Contoso peuvent configurer la nouvelle stratégie et les spécialistes de la conformité peuvent démarrer une enquête et corriger les alertes générées.
 
 ### <a name="enabling-auditing-in-microsoft-365"></a>Activation de l’audit dans Microsoft 365
 
@@ -160,13 +160,13 @@ Les administrateurs informatiques de Contoso étudient et complètent les [instr
 
 ### <a name="configuring-yammer-tenant-for-native-mode"></a>Configuration du Yammer client pour le mode natif
 
-La conformité des communications nécessite que le client Yammer d’une organisation soit en mode natif pour surveiller le contenu inapproprié dans les messages privés et les conversations de la communauté publique.
+La conformité des communications nécessite que le client Yammer d’une organisation soit en mode natif pour surveiller le texte inapproprié dans les messages privés et les conversations de la communauté publique.
 
 Les administrateurs informatiques contoso s’assurent qu’ils examinent les informations de [l’article](/yammer/configure-your-yammer-network/overview-native-mode) Vue d’ensemble du mode natif Yammer dans Microsoft 365 et suivent les étapes d’exécution de l’outil de migration dans l’article Configurer votre réseau Yammer pour le mode natif pour [Microsoft 365.](/yammer/configure-your-yammer-network/native-mode)
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuration d’un groupe pour des utilisateurs dans l’étendue
 
-Les spécialistes de la conformité Contoso souhaitent ajouter tous les utilisateurs à la stratégie de communication qui surveille le contenu inapproprié. Ils peuvent décider d’ajouter chaque compte d’utilisateur à la stratégie séparément, mais ils ont décidé qu’il est beaucoup plus facile et gagnent du temps d’utiliser un groupe de **distribution** Tous les utilisateurs pour les utilisateurs de cette stratégie.
+Les spécialistes de la conformité Contoso souhaitent ajouter tous les utilisateurs à la stratégie de communication qui surveille le texte inapproprié. Ils peuvent décider d’ajouter chaque compte d’utilisateur à la stratégie séparément, mais ils ont décidé qu’il est beaucoup plus facile et gagnent du temps d’utiliser un groupe de **distribution** Tous les utilisateurs pour les utilisateurs de cette stratégie.
 
 Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, de sorte qu’ils prennent les mesures suivantes :
 
@@ -179,21 +179,21 @@ Ils doivent créer un groupe pour inclure tous les utilisateurs de Contoso, de s
 
     ![Exchange’administration centrale.](../media/communication-compliance-case-eac.png)
 
-### <a name="creating-the-policy-to-monitor-for-inappropriate-content"></a>Création de la stratégie pour surveiller le contenu inapproprié
+### <a name="creating-the-policy-to-monitor-for-inappropriate-text"></a>Création de la stratégie pour surveiller le texte inapproprié
 
-Une fois toutes les conditions préalables terminées, les administrateurs informatiques et les spécialistes de la conformité de Contoso sont prêts à configurer la stratégie de conformité des communications pour surveiller le contenu inapproprié. À l’aide du nouveau modèle de stratégie de contenu inapproprié, la configuration de cette stratégie est simple et rapide.
+Une fois toutes les conditions préalables terminées, les administrateurs informatiques et les spécialistes de la conformité de Contoso sont prêts à configurer la stratégie de conformité des communications pour surveiller les textes inappropriés. À l’aide du nouveau modèle de stratégie de texte inapproprié, la configuration de cette stratégie est simple et rapide.
 
-1. Les administrateurs informatiques et les spécialistes de la conformité de Contoso se connectent au **Centre de conformité Microsoft 365**, puis sélectionnent **Conformité des communications** dans le volet de navigation gauche. Cette action ouvre le tableau de bord de **Vue d’ensemble** comportant des liens rapides pour des modèles de stratégie de conformité des communications. Ils choisissent le **moniteur pour le modèle de contenu** inapproprié en sélectionnant **Commencer** pour le modèle.
+1. Les administrateurs informatiques et les spécialistes de la conformité de Contoso se connectent au **Centre de conformité Microsoft 365**, puis sélectionnent **Conformité des communications** dans le volet de navigation gauche. Cette action ouvre le tableau de bord de **Vue d’ensemble** comportant des liens rapides pour des modèles de stratégie de conformité des communications. Ils choisissent le **moniteur pour le modèle de texte inapproprié** en sélectionnant **Commencer** pour le modèle.
 
-    ![Modèle de contenu inapproprié de conformité des communications.](../media/communication-compliance-case-template.png)
+    ![Modèle de texte inapproprié de conformité des communications.](../media/communication-compliance-case-template.png)
 
 2. Dans l’Assistant modèle de stratégie, les administrateurs informatiques et les spécialistes de la conformité de Contoso collaborent pour compléter les trois champs obligatoires : **Nom de la stratégie**, **Utilisateurs ou groupes à surveiller**, puis **Réviseurs**.
 3. Étant donné que l’Assistant de stratégie a déjà suggéré un nom pour la stratégie, les administrateurs informatiques et les spécialistes de la conformité décident de conserver le nom suggéré et de se concentrer sur les champs restants. Ils sélectionnent le groupe  Tous les utilisateurs pour le champ Utilisateurs ou groupes à surveiller et sélectionnent les spécialistes de la conformité qui doivent examiner et corriger les alertes de stratégie pour le champ **Relecteurs.**  La dernière étape pour configurer la stratégie et commencer à collecter des informations d’alerte consiste à sélectionner **Créer une stratégie.**
 
-    ![Assistant Contenu inapproprié de conformité des communications.](../media/communication-compliance-case-wizard.png)
+    ![Assistant Texte inapproprié de conformité des communications.](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>Étape 4 : Enquêter et corriger les alertes
 
-Maintenant que la stratégie de conformité des communications à surveiller pour le contenu inapproprié est configurée, l’étape suivante pour les spécialistes de la conformité Contoso consiste à examiner et corriger les alertes générées par la stratégie. Le traitement total des communications dans tous les canaux sources par la stratégie et l’affichage des alertes dans le **Tableau de bord d’alerte** peut prendre jusqu’à 24 heures.
+Maintenant que la stratégie de conformité des communications à surveiller pour le texte inapproprié est configurée, l’étape suivante pour les spécialistes de la conformité Contoso consiste à examiner et corriger les alertes générées par la stratégie. Le traitement total des communications dans tous les canaux sources par la stratégie et l’affichage des alertes dans le **Tableau de bord d’alerte** peut prendre jusqu’à 24 heures.
 
-Une fois les alertes générées, les spécialistes de la conformité Contoso suivent les [instructions](communication-compliance-investigate-remediate.md) de flux de travail pour examiner et corriger les problèmes de contenu inappropriés.
+Une fois les alertes générées, les spécialistes de la conformité Contoso suivent les [instructions](communication-compliance-investigate-remediate.md) de flux de travail pour examiner et corriger les problèmes de texte inappropriés.

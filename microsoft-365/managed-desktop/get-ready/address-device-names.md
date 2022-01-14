@@ -2,21 +2,21 @@
 title: Dépendance de nom d’appareil d’adresse
 description: Supprimer la dépendance aux noms d’appareils ou demander une exception
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 8642fd7c7c154359a31386fa5491932e19de7a43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ec12c89b9c93725b3c23c15977981c912e01e8cd
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173138"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034508"
 ---
 # <a name="address-device-name-dependency"></a>Dépendance de nom d’appareil d’adresse
 

@@ -17,14 +17,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-- m365solution-overview
+- m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ba810e129d7f2634e3708ecc32b7e20a1db8f170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f0fc824b4498e2cde0e0c024902289f056396f55
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110954"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035713"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation de l’accès continu pour Microsoft 365
 
@@ -106,7 +106,7 @@ Les clients suivants supportent l’évaluation de l’accès continu sur le web
 
 - Outlook
 - Teams
-- Bureau\*
+- Office\*
 - SharePoint
 - OneDrive
 

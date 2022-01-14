@@ -3,18 +3,18 @@ title: Technologies associées de Bureau géré Microsoft
 description: Cet article répertorie les technologies et applications utilisées dans Microsoft Manged Desktop.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 167c518231b62251637e3deb89fd6a753664af85
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ec99a478cb085e3e7692d2e489851d4abf4c2bb4
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110342"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034436"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 

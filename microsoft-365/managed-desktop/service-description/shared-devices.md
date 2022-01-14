@@ -3,22 +3,22 @@ title: Appareils partagés
 description: Comment et quand utiliser le mode d’appareil partagé
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756196"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034532"
 ---
 # <a name="shared-devices"></a>Appareils partagés
 
-Microsoft Manged Desktop vous permet d’inscrire des appareils en « mode d’appareil partagé », comme le mode d’appareil partagé proposé [par Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Les appareils de ce mode sont optimisés pour les situations dans lesquelles les utilisateurs ne sont pas liés à un seul bureau et changent fréquemment d’appareil, en général, pour les travailleurs de la sécurité tels que les collaborateurs de la banque ou les employés. Vous pouvez appliquer n’importe quel profil Microsoft Manged Desktop [aux](profiles.md) appareils dans ce mode. Les appareils inscrits dans ce mode ont des différences importantes :
+Microsoft Manged Desktop vous permet d’inscrire des appareils en « mode d’appareil partagé », comme le mode d’appareil partagé proposé [par Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Les appareils dans ce mode sont optimisés pour les situations dans lesquelles les utilisateurs ne sont pas liés à un seul bureau et changent fréquemment d’appareil, en général, pour les travailleurs de la sécurité tels que les collaborateurs de banque ou les employés de la maison. Vous pouvez appliquer n’importe quel profil Microsoft Manged Desktop [aux](profiles.md) appareils dans ce mode. Les appareils inscrits dans ce mode ont des différences importantes :
 
 - [Le stockage de l’appareil](#device-storage) est optimisé pour les utilisateurs partagés.
 - [Les comptes inactifs](#deletion-of-inactive-accounts) sont supprimés.
@@ -33,7 +33,7 @@ Toute situation dans laquelle les utilisateurs changent fréquemment d’apparei
 
 Par exemple, les courtiers bancaires peuvent se trouver dans un emplacement de gestion des dépôts, mais se déplacer vers un back office pour aider les clients avec un prêt immobilier. À chacun de ces emplacements, l’appareil exécute différentes applications et est optimisé pour ces tâches, bien qu’elles soient utilisées par plusieurs personnes.
 
-En règle générale, les employés se déplacent entre les salles et les bureaux pendant qu’ils interagissent avec des patients, afin qu’ils peuvent se connecter à une station de travail dans un bureau, mais se connecter à leur bureau à distance et prendre des notes, uniquement pour répéter cela dans une autre salle avec un patient différent.
+En règle générale, les employés se déplacent entre les salles et les bureaux pendant qu’ils interagissent avec des patients, afin qu’ils peuvent se connecter à une station de travail dans un bureau, mais se connecter à leur bureau à distance et prendre des notes, uniquement pour répéter cette opération dans une autre salle avec un autre patient.
 
 ## <a name="when-not-to-use-shared-device-mode"></a>Quand ne pas utiliser le mode d’appareil partagé
 
@@ -66,7 +66,7 @@ Si vous avez un partenaire inscrit des appareils, suivez les étapes de la proc�
 
 Les utilisateurs d’appareils partagés doivent avoir leurs données dans le cloud pour pouvoir les suivre sur d’autres appareils. Une fois que vous avez inscrit des appareils en mode d’appareil [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) partagé, veillez à activer les fonctionnalités de redirection de fichiers à la demande et de [dossiers](/onedrive/redirect-known-folders) connus de OneDrive. Cette approche réduit l’impact de chaque profil utilisateur sur le stockage de l’appareil. Les appareils en mode d’appareil partagé suppriment automatiquement les profils utilisateur si l’espace disque disponible descend en dessous de 25 %. Cette activité est prévue à minuit à l’heure locale de l’appareil, sauf si le stockage devient extrêmement limité.
 
-Microsoft Manged Desktop le programme CSP [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) pour effectuer ces opérations, veillez donc à ne pas utiliser ces CSP vous-même.
+Microsoft Manged Desktop le CSP [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) pour effectuer ces opérations, veillez donc à ne pas utiliser ces CSP vous-même.
 
 > [!IMPORTANT]
 > Formez vos utilisateurs qu’une fois qu’ils ont téléchargé un fichier de grande taille, ils doivent vérifier qu’ils voient l’icône de coche verte sur le fichier avant de se dé connecter. Si son compte est supprimé dans le cadre des opérations de nettoyage et que le fichier n’est pas entièrement chargé dans OneDrive, le fichier est définitivement perdu.
@@ -79,7 +79,7 @@ Le mode appareil partagé supprime tous les comptes qui n’ont pas été connec
 
 Les appareils en mode d’appareil partagé autorisent uniquement les comptes joints à un domaine. Si vous avez besoin de comptes invités sur un appareil, vous pouvez déposer une [demande](../working-with-managed-desktop/admin-support.md) de modification pour les demander à être activés.
 
-### <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 pour les entreprises
+### <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
 [Applications Microsoft 365 pour les grandes entreprises](/microsoft-365/managed-desktop/get-started/m365-apps) permet généralement à un utilisateur donné d’installer ces applications sur cinq appareils en même temps. En mode d’appareil partagé, les applications ne sont pas comptabilisées dans la limite, elles peuvent donc les utiliser en itinérance entre les appareils. Le déploiement et les mises à jour Applications Microsoft 365 pour les grandes entreprises fonctionnent comme d’habitude.
 
@@ -87,7 +87,7 @@ Les appareils en mode d’appareil partagé autorisent uniquement les comptes jo
 
 En mode d’appareil partagé, vous ne pouvez avoir qu’un seul [profil d’appareil](profiles.md) sur un appareil donné. En outre, le profil d’appareil de l’utilisateur Power n’est actuellement pas pris en charge en mode d’appareil partagé.
 
-### <a name="apps-and-policies-assigned-to-users"></a>Applications et stratégies affectées aux utilisateurs
+### <a name="apps-and-policies-assigned-to-users"></a>Applications et stratégies attribuées aux utilisateurs
 
 Sur les appareils partagés, vous devez affecter les applications ou stratégies que vous gérez vous-même à des groupes d’appareils, et non à des groupes d’utilisateurs. Cela garantit que chaque utilisateur dispose d’une expérience plus cohérente. L’exception est [Portail d'entreprise](#deploying-apps-with-company-portal).
 
@@ -95,7 +95,7 @@ Sur les appareils partagés, vous devez affecter les applications ou stratégies
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello l’émulation de carte à puce pour mettre en cache en toute sécurité les pins des [utilisateurs,](/windows/security/identity-protection/hello-for-business/hello-faq)réduisant ainsi le nombre de fois que les utilisateurs doivent s’authentifier. Toutefois, Windows autorise uniquement 10 cartes à puce à la fois sur un appareil donné. Lorsqu’un onzième utilisateur se signe pour la première fois, l’un des comptes existants perd sa carte à puce. Ils pourront se connecter, mais leur code confidentiel ne sera pas mis en cache.
+Windows Hello l’émulation de carte à puce pour mettre en cache en toute sécurité les [pins](/windows/security/identity-protection/hello-for-business/hello-faq)utilisateur, réduisant ainsi le nombre de fois que les utilisateurs doivent s’authentifier. Toutefois, Windows autorise uniquement 10 cartes à puce à la fois sur un appareil donné. Lorsqu’un onzième utilisateur se signe pour la première fois, l’un des comptes existants perd sa carte à puce. Ils pourront se connecter, mais leur code confidentiel ne sera pas mis en cache.
 
 ### <a name="universal-print"></a>Impression universelle
 

@@ -3,18 +3,18 @@ title: Microsoft Manged Desktop’application requise
 description: Outils de gestion que nous utilisons
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 29c531599e1122ae596281efbd187081348def6a
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: eeec38806b792ea9799b9359e473d1fd030f4f2a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587956"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035629"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Manged Desktop’application requise
 
@@ -27,16 +27,16 @@ Microsoft Manged Desktop exige que nous gérions les appareils à l’aide d’u
 
 |Domaine de gestion  |Microsoft Manged Desktop approche  |
 |---------|---------|
-|Configuration de l’appareil ou gestion des stratégies     |  Microsoft Intune       |
+|Configuration de l’appareil ou gestion des stratégies     |  Microsoft Intune       |
 |Gestion des applications     | Microsoft Intune et Portail d'entreprise        |
 |Déploiement de pilotes     |  Pilotes inclus avec l’appareil, Windows Update ou Intune       |
-|Sécurité de l’appareil     | Voir [Sécurité de l’appareil](security.md#device-security)      |
+|Sécurité des appareils     | Voir [Sécurité de l’appareil](security.md#device-security)      |
 |Gestion des identités et des accès     | Voir [Gestion des identités et des accès](security.md#identity-and-access-management)        |
 |Sécurité réseau     | Voir [Sécurité du réseau](security.md#network-security)        |
 |Sécurité des informations     |  Voir [Sécurité des informations](security.md#information-security)       |
 |Récupération des données     | OneDrive Entreprise        |
-|Productivité de base     | Applications Microsoft 365 pour les entreprises    |
-|Navigateur     | Microsoft Edge        |
+|Productivité de base     | Applications Microsoft 365 for entreprise    |
+|Navigateur     | Microsoft Edge        |
 
 
 

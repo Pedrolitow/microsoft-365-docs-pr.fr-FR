@@ -3,19 +3,19 @@ title: Applications dans le Bureau géré Microsoft
 description: Explique comment les applications sont gérées, notamment comment les packager, les déployer et les prendre en charge.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e3ac937a4ff98d853ad16ef4ae5854da70fa4d99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c53d6c03855da15e71d7d62ec6c26533e0a0db6e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213960"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035605"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 

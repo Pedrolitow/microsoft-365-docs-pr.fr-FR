@@ -1,30 +1,30 @@
 ---
-title: Microsoft OneDrive
+title: Microsoft OneDrive
 description: Comment Microsoft Manged Desktop la OneDrive pour les appareils inscrits
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: a599f36692cbca6cbf67ddfd4a6ca1c05e02351f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b5725de70446ee69452fabd02702e587ff13fa2
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214032"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035027"
 ---
-# <a name="microsoft-onedrive"></a>Microsoft OneDrive
+# <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
-Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop pour s’assurer que les appareils sont aussi sans état que possible. L’utilisateur peut trouver ses fichiers quel que soit l’appareil auquel il se connecte. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouvel appareil, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
+Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop pour s’assurer que les appareils sont aussi sans état que possible. L’utilisateur peut trouver ses fichiers quel que soit l’appareil auquel il se connecte. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouveau, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
 
 Nous configurons automatiquement ces paramètres par défaut sur les appareils gérés Microsoft :
 
 - OneDrive est configuré en mode silencieux avec le compte d’utilisateur et se connecte automatiquement (sans intervention de l’utilisateur) au compte d’utilisateur qui a été utilisé pour se Windows. Pour plus d’informations, voir Configuration silencieuse des comptes [d’utilisateurs - OneDrive](/onedrive/use-silent-account-configuration)
 
-- La fonctionnalité Fichiers à la demande est activée pour permettre aux utilisateurs d’accéder aux fichiers à partir de leur stockage cloud dans OneDrive sans avoir à utiliser inutilement de l’espace disque. Pour plus d’informations, voir [Save disk space with OneDrive Files On-Demand for Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e).
+- La fonctionnalité Fichiers à la demande est activée afin que les utilisateurs peuvent accéder aux fichiers à partir de leur stockage cloud dans OneDrive sans avoir à utiliser inutilement de l’espace disque. Pour plus d’informations, voir [Save disk space with OneDrive Files On-Demand for Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e).
 
 - La fonctionnalité De déplacement de dossiers connus est activée en mode silencieux pour la protection des données des utilisateurs dans le cloud, ce qui leur permet d’accéder à leurs fichiers à partir de n’importe quel appareil. Pour plus d’informations, voir [Back up your Documents, Pictures, and Desktop folders with OneDrive](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057).
 
@@ -32,11 +32,11 @@ Nous configurons automatiquement ces paramètres par défaut sur les appareils g
 
 ## <a name="user-experience"></a>Expérience utilisateur
 
-Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils bénéficient d’une expérience de première expérience d’évaluation en entrant leurs informations d’identification Azure lors de la configuration de l’appareil. Une fois ce processus terminé, ils peuvent accéder à leur bureau et avoir la OneDrive expérience utilisateur.
+Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils bénéficient d’une première expérience d’expérience d’utilisateur en entrant leurs informations d’identification Azure lors de la configuration de l’appareil. Une fois ce processus terminé, ils peuvent accéder à leur bureau et avoir la OneDrive expérience utilisateur.
 
-1. Le système indique aux utilisateurs que OneDrive a été configuré et qu’ils ont été automatiquement OneDrive.
+1. Le système indique aux utilisateurs que OneDrive ont été configurés et qu’ils ont été automatiquement OneDrive.
 
-:::image type="content" source="media/onedrive-sync.png" alt-text="La lecture des notifications que vous synchronisez OneDrive et vous pouvez modifier des fichiers dans OneDrive. cliquez ici pour afficher vos fichiers.":::
+:::image type="content" source="media/onedrive-sync.png" alt-text="La lecture des notifications que vous synchronisez OneDrive et vous pouvez modifier des fichiers dans OneDrive. Cliquez ici pour afficher vos fichiers.":::
 
 2. Le système indique aux utilisateurs que OneDrive déplacement de dossier connu a été configuré pour eux.
 
@@ -51,9 +51,9 @@ Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils
 
 Si vous devez restreindre les Synchronisation OneDrive, nous vous recommandons de contrôler l’accès avec une stratégie Azure Active Directory’accès conditionnel. Pour plus d’informations, voir Activer la prise en charge de l’accès conditionnel dans [l Synchronisation OneDrive app.](/onedrive/enable-conditional-access)
 
-Si vous ne pouvez pas utiliser une stratégie d’accès conditionnel Azure AD dans votre organisation, votre administrateur informatique doit suivre les étapes suivantes :
+Si vous ne pouvez pas utiliser une stratégie Azure AD’accès conditionnel dans votre organisation, votre administrateur informatique doit suivre les étapes suivantes :
 
-1. Si vous ne le connaissez pas déjà, recherchez votre ID de client, comme décrit dans La recherche de [votre ID Microsoft 365 client.](/onedrive/find-your-office-365-tenant-id)
+1. Si vous ne le connaissez pas déjà, recherchez votre ID de client, comme décrit dans Rechercher [votre ID Microsoft 365 client.](/onedrive/find-your-office-365-tenant-id)
 2. Connectez-vous au OneDrive d’administration, puis sélectionnez **Synchroniser** dans le volet gauche. Cochez la case Autoriser la synchronisation uniquement sur les PC joints à des domaines **spécifiques,** puis ajoutez l’ID de client à la liste des domaines. Pour plus d’informations, voir Autoriser la synchronisation uniquement sur les [ordinateurs joints à des domaines spécifiques.](/onedrive/allow-syncing-only-on-specific-domains)
 
 > [!NOTE]

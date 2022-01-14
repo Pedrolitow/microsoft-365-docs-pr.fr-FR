@@ -20,12 +20,12 @@ description: Découvrez comment les administrateurs peuvent supprimer des élém
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 89022e39aef17609774c90696e7bab54e66a95e0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c349166477b610e48fd3a1b63c27d4dd4188012c
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421653"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041065"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
@@ -237,7 +237,7 @@ Pour afficher la valeur de la *propriété ComplianceTagHoldApplied,* exécutez 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des éléments étiquetés à l’aide de la **condition** d’étiquette de rétention. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Une fois que vous avez identifié qu’une boîte aux lettres est en attente parce qu’une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 pour rechercher des éléments étiquetés à l’aide de la **condition** d’étiquette de rétention. Pour plus d’informations, voir :
 
 - La section « Utilisation de la recherche de contenu pour rechercher tout le contenu avec une étiquette de rétention spécifique » dans En savoir plus sur les stratégies de rétention et les [étiquettes de rétention](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 
@@ -273,7 +273,7 @@ Si la valeur de la *propriété DelayHoldApplied* ou *DelayReleaseHoldApplied* e
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Ou
+Or
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -297,16 +297,14 @@ Voici une vue d’ensemble du processus de recherche et de suppression d’élé
 
    - **Suppressions :** contient les éléments supprimés (supprimés( ou supprimés) dont la période de rétention des éléments supprimés n’a pas expiré. Les utilisateurs peuvent récupérer des éléments supprimés (récupérables) à partir de ce sous-Outlook.
 
-   - **Purges :** contient les éléments supprimés définitivement dont la période de rétention des éléments supprimés a expiré. Les utilisateurs peuvent également supprimer définitivement des éléments en purgeant les éléments de leur dossier Éléments récupérables. Si la boîte aux lettres est en conservation, les éléments supprimés définitivement sont conservés. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
-
    - **DiscoveryHolds**: contient les éléments supprimés définitivement qui ont été conservés par une conservation eDiscovery ou une stratégie de rétention. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
 
    - **SubstrateHolds**: contient des éléments supprimés définitivement de Teams et d’autres applications basées sur le cloud qui ont été conservées par une stratégie de rétention ou tout autre type de conservation. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
 
-3. Utilisez la cmdlet **New-ComplianceSearch** (dans le Centre de sécurité & conformité PowerShell) ou utilisez l’outil de recherche de contenu dans le centre de conformité pour créer une recherche de contenu qui renvoie des éléments à partir du dossier Éléments récupérables de l’utilisateur cible. Pour ce faire, vous pouvez inclure folderId dans la requête de recherche pour tous les sous-dossiers que vous souhaitez rechercher. Par exemple, la requête suivante renvoie tous les messages dans les sous-foldeurs Purges et eDiscoveryHolds :
+3. Utilisez la cmdlet **New-ComplianceSearch** (dans le Centre de sécurité & conformité PowerShell) ou utilisez l’outil de recherche de contenu dans le centre de conformité pour créer une recherche de contenu qui renvoie des éléments à partir du dossier Éléments récupérables de l’utilisateur cible. Pour ce faire, vous pouvez inclure folderId dans la requête de recherche pour tous les sous-dossiers que vous souhaitez rechercher. Par exemple, la requête suivante renvoie tous les messages dans les sous-foldeurs Deletions et eDiscoveryHolds :
 
    ```text
-   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
    Pour plus d’informations et des exemples sur l’exécution de recherches de contenu qui utilisent la propriété d’ID de dossier, voir Utiliser un ID de dossier ou pour [effectuer une collection ciblée.](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection)

@@ -3,25 +3,25 @@ title: Activer les fonctionnalités de support utilisateur
 description: Comment activer les fonctionnalités d’élévation et d’escalade pour la prise en charge des utilisateurs
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e8d679eea96c221ee245ac0029ea291436fd84da
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f0c6283d6e5a2fec722c3051420ea7d52ad3f64
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168397"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034724"
 ---
 # <a name="enable-user-support-features"></a>Activer les fonctionnalités de support utilisateur
 
-Que vous fournissiez votre propre support utilisateur ou que vous travailliez avec un partenaire pour le fournir, suivez ces étapes pour permettre au fournisseur de support de demander un accès élevé à l’appareil ou de faire resserr les problèmes vers Microsoft Manged Desktop, si nécessaire.
+Que vous fournissiez votre propre support utilisateur ou que vous travailliez avec un partenaire pour le fournir, suivez ces étapes pour permettre au fournisseur de support de demander un accès élevé à l’appareil ou de faire part de problèmes à Microsoft Manged Desktop, si nécessaire.
 
 1. S’ils n’en ont pas encore, les utilisateurs ont besoin d’un compte dans le même domaine Azure Active Directory (AAD) que les Microsoft Manged Desktop périphériques.
-2. Ajoutez les comptes d’utilisateur de l’étape 1 au groupe de sécurité Roles-Support l’espace de **travail** moderne dans AAD.
+2. Ajoutez les comptes d’utilisateur de l’étape 1 au groupe de sécurité **Roles-Support l’espace** de travail moderne dans AAD.
 
 <!--when available, add link to downloadable articles at DLC--> 
 

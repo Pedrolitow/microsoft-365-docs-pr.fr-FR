@@ -3,18 +3,18 @@ title: Obtenir la prise en charge des utilisateurs pour Microsoft Manged Desktop
 description: Comment les utilisateurs peuvent obtenir de l’aide sur le service et les appareils
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d10f2e938e201fa25505abc820d05b03af04e543
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: dbbc783607afb482bf31b985828b59b834784bba
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374411"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035425"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 

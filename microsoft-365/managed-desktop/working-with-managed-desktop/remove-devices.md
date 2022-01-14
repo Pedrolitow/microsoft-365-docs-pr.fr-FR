@@ -2,21 +2,21 @@
 title: Supprimer des appareils
 description: Supprimer des appareils de la gestion Microsoft Manged Desktop gestion
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7da1bac830df352e776d9a9f59dc33cf5a22b8ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79694b6c33543acc00636676891ee336bce3f8f8
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169874"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034928"
 ---
 # <a name="remove-devices"></a>Supprimer des appareils
 
@@ -26,12 +26,12 @@ Lorsque vous supprimez un appareil, toutes les choses suivantes se produisent :
 
 - Nous ôtons l’appareil d’Autopilot.
 - Nous ôtons l’appareil de tous les groupes d’appareils « Espace de travail moderne ».
-- Nous ôtons l’appareil du panneau **Périphériques** dans le portail d’administration.
+- Nous ôtons l’appareil du panneau **Appareils** dans le portail d’administration.
 
-Lorsque vous supprimez un appareil, vous pouvez également le supprimer de Azure Active Directory (Azure AD) et de Microsoft Intune.
+Lorsque vous supprimez un appareil, vous pouvez également le supprimer des Azure Active Directory (Azure AD) et Microsoft Intune.
  
 > [!CAUTION]
-> La suppression des objets liés à un appareil à partir d’Azure AD et Microsoft Intune est permanente. Si vous supprimez les objets, vous ne pourrez pas afficher ou gérer les appareils à partir des portails Intune et Azure. Les appareils ne pourront pas accéder aux ressources d’entreprise de leur entreprise. Les données d’entreprise peuvent leur être supprimées si les appareils tentent de se connecter après leur suppression.
+> La suppression des objets liés à un appareil de Azure AD et Microsoft Intune est permanente. Si vous supprimez les objets, vous ne pourrez pas afficher ou gérer les appareils à partir des portails Intune et Azure. Les appareils ne pourront pas accéder aux ressources d’entreprise de leur entreprise. Les données d’entreprise peuvent leur être supprimées si les appareils tentent de se connecter après leur suppression.
 
 1. Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/) **sélectionnez Appareils** dans le volet de navigation de gauche.
 2. Recherchez la **Microsoft Manged Desktop** section du menu et sélectionnez **Appareils.**

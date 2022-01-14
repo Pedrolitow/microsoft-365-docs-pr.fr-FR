@@ -3,22 +3,22 @@ title: Journaux de diagnostic
 description: Journaux qui peuvent être collectés à partir d’appareils lors de la résolution des problèmes et comment ils sont stockés
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 62c96c4badd9659879bad81a631a496423259754
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201528"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035641"
 ---
 # <a name="diagnostic-logs"></a>Journaux de diagnostic
 
-Lorsque nous dépannageons un problème sur un appareil géré par Microsoft Manged Desktop, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
+Lorsque nous dépannageons un problème sur un appareil géré par Microsoft Manged Desktop, qu’il s’en soit un que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
 
 Nous stockons tous les journaux collectés pendant 28 jours, puis les supprimons. Nous traiterons tous les journaux collectés à partir d’un appareil en suivant nos normes [de gestion des données.](privacy-personal-data.md)
 
@@ -97,7 +97,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
 - Microsoft-Windows-AppLocker/Packaged app-Deployment
 - Microsoft-Windows-AppLocker/Packaged app-Execution
 - Microsoft-Windows-Bitlocker/Bitlocker Management
-- Microsoft-Windows-SENSE/Opérationnel
+- Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
 - Configuration
 - Système

@@ -3,21 +3,21 @@ title: Localiser l’expérience utilisateur
 description: Comment trouver des appareils pour les utilisateurs
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4ff4d72f22faef32b1fabb52e10332af62e50bc7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dae4ed7bce805dbaca712984de68fe06160bdab
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170058"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034820"
 ---
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
@@ -41,7 +41,7 @@ Pendant le processus de configuration, les utilisateurs peuvent sélectionner la
 
 ## <a name="after-completing-setup"></a>Après avoir terminé l’installation
 
-Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps pour Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
+Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps pour Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
 
 - Windows 10 fonctionnalités linguistiques :
     - Langue d’affichage

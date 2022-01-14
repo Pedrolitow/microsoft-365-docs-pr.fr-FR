@@ -3,19 +3,19 @@ title: Configurer des appareils pour Microsoft Manged Desktop
 description: Comment obtenir de nouveaux appareils ou réutiliser des appareils existants éligibles
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 98adf2e8d6faeb089b74a2ec4050b7ec53620e0f
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 41b10fe4a09a79d50973c478ebd8b6351d13cbeb
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364626"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035149"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurer les appareils Bureau géré Microsoft
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser des appareils nouveaux et existants dans Microsoft Manged D
 
 ## <a name="to-obtain-new-devices"></a>Pour obtenir de nouveaux appareils
 
-Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareils approuvés. Vous pouvez travailler avec votre contact de compte Microsoft pour obtenir de l’aide sur la configuration d’un partenariat d’appareil. Par nature, toutefois, le processus est comme ceci :
+Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareils approuvés. Vous pouvez travailler avec votre contact de compte Microsoft pour obtenir de l’aide sur la configuration d’un partenariat d’appareil. Par essence, toutefois, le processus est comme ceci :
 
 1. Examinez la liste des appareils actuellement recommandés en filtrant les Microsoft Manged Desktop sur le site [Windows Pro d’entreprise.](https://www.microsoft.com/windows/business/devices)
 2. Commandez un ou quelques exemples d’appareils que vous souhaitez utiliser avec une image conforme. Le traitement des commandes peut nécessiter [des étapes de commande spécifiques.](../service-description/device-images.md)

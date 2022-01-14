@@ -3,19 +3,19 @@ title: Expérience de première exécution avec le pilote automatique et la page
 description: Comment déployer l’expérience ESP, les paramètres utilisés et les modifications de configuration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8c73ff558165a370e5709a1e43482d689dd7953d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4393478ca787f24d22f44cfc426bc2bcf7157f9e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178610"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034832"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
@@ -37,7 +37,7 @@ Microsoft Manged Desktop utilise ces paramètres dans le profil Autopilot utilis
 |Paramètre|Valeur|
 |---|---|
 |Mode de déploiement|Piloté par l’utilisateur|
-|Rejoindre Azure AD en tant que|Joint à Azure AD|
+|Rejoindre l’Azure AD en tant que|Joint à Azure AD|
 |Langue (Région)|Sélection de l’utilisateur|
 |Configurer automatiquement le clavier|Non|
 |Termes du contrat de licence logiciel Microsoft|Masquer|
@@ -60,29 +60,29 @@ Microsoft Manged Desktop utilise ces paramètres pour l’expérience Page d’�
 |Paramètre|Valeur|
 |---|---|
 |Afficher l’avancement de la configuration des applications et des profils|Oui|
-|Afficher une erreur lorsque l’installation prend plus de temps que le nombre de minutes spécifié|60|
+|Afficher l’erreur lorsque l’installation prend plus de minutes que le nombre de minutes spécifié|60|
 |Afficher un message personnalisé en cas d’erreur de limite de temps|Non|
 |Autoriser les utilisateurs à collecter des journaux sur les erreurs d’installation|Oui|
-|Afficher uniquement la page sur les appareils provisionés par l’expérience OOBE (Out-of-Box Experience)|Oui|
-|Bloquer l’utilisation de l’appareil jusqu’à ce que toutes les applications et les profils soient installés|Oui|
-|Autoriser les utilisateurs à réinitialiser l’appareil en cas d’erreur d’installation|Oui|
-|Autoriser les utilisateurs à utiliser l’appareil en cas d’erreur d’installation|Oui|
+|Afficher uniquement la page sur les appareils approvisionnés par l’expérience OOBE (Out-of-Box Experience)|Oui|
+|Bloquer l’utilisation de l’appareil jusqu’à ce que toutes les applications et tous les profils soient installés|Oui|
+|Autoriser les utilisateurs à réinitialiser l’appareil si une erreur d’installation se produit|Oui|
+|Autoriser les utilisateurs à utiliser l’appareil si une erreur d’installation se produit|Oui|
 |Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil|Espace de travail moderne - Correction du temps|Espace de travail moderne - Bibliothèque cliente|
 
 
-L’expérience page État de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
+L’expérience Page d’état de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
 
 L’expérience se déroule comme suit :
 
 1. L’expérience Autopilot démarre et l’utilisateur entre ses informations d’identification.
-2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de configuration de l’appareil. La troisième étape (configuration  du compte) est actuellement ignorée dans la configuration Microsoft Manged Desktop,car l’esp utilisateur est désactivée. L’appareil redémarre.
+2. L’appareil ouvre la page État de l’inscription et passe par les phases de préparation et de configuration de l’appareil. La troisième étape (configuration  du compte) est actuellement ignorée dans la configuration Microsoft Manged Desktop car l’esp utilisateur est désactivée. L’appareil redémarre.
 3. Après le redémarrage, l’appareil ouvre Windows page de Windows avec **un autre utilisateur.**
 4. Les utilisateurs entrent à nouveau leurs informations d’identification et le Bureau s’ouvre.
 
 > [!NOTE]
 > Les applications Win32 sont déployées uniquement pendant esp si la version Windows 10 est 1903 ou ultérieure.
 
-![Page de démarrage de l’installation d’Autopilot affichant les phases de « préparation de l’appareil » et de « configuration de l’appareil ».](../../media/mmd-autopilot-screenshot.png)
+![Page de démarrage du programme d’installation d’Autopilot affichant les phases de « préparation de l’appareil » et de « configuration de l’appareil ».](../../media/mmd-autopilot-screenshot.png)
 
 
 ## <a name="additional-prerequisites-for-autopilot-for-pre-provisioned-deployment"></a>Conditions préalables supplémentaires pour Autopilot pour le déploiement pré-provisioné
@@ -90,7 +90,7 @@ L’expérience se déroule comme suit :
 - L’appareil doit avoir une connexion réseau câblé.
 - Si vous avez des appareils qui ont été enregistrés à l’aide du portail Microsoft Manged Desktop d’août 2020, désins inscrivez-les et inscrivez-les à nouveau.
 - Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) ou [20H1 2020.11C de novembre 2020,](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) si nécessaire, installée ou doit être réinventée avec la dernière image Microsoft Manged Desktop.
-- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise les Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement pré-mis en service d’Autopilot dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
 
@@ -112,11 +112,11 @@ Après le redémarrage, l’appareil affiche l’écran d’état vert, avec un 
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification des paramètres Autopilot et Page d’état de l’inscription
 
-Si la configuration utilisée par Microsoft Manged Desktop ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le portail [d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
+Si la configuration utilisée par Microsoft Manged Desktop ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le [portail d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
 
 ### <a name="autopilot-settings-change"></a>Modification des paramètres Autopilot
 
-Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure AD As, Paramètres confidentialité ou type de compte d’utilisateur.
+Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne pouvez pas modifier le mode de déploiement, rejoindre Azure AD en tant que, Paramètres confidentialité ou type de compte d’utilisateur.
 
 ### <a name="enrollment-status-page-settings-change"></a>Modification des paramètres de la page d’état de l’inscription
 
@@ -127,7 +127,7 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 ## <a name="required-applications"></a>Applications requises
 
 - Vous devez cibler des applications dans les groupes d’appareils Workplace modernes *Test,* First, Fast et Broad. Les applications doivent être installées dans le contexte « Système ». Veillez à effectuer le test avec ESP dans le groupe Test avant de les affecter à tous les groupes.
-- Aucune application ne doit nécessiter le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
+- Aucune application ne doit exiger le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
 - Limitez les applications requises aux applications principales dont un utilisateur a besoin immédiatement lorsqu’il se connecte à l’appareil.
 - Conservez la taille totale de toutes les applications collectivement sous 1 Go pour éviter les délai d’accès pendant la phase d’installation de l’application.
 - Dans l’idéal, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, assurez-vous de les configurer, de les tester et de les valider dans le cadre de votre évaluation ESP.

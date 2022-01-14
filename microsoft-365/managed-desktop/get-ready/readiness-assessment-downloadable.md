@@ -3,19 +3,19 @@ title: Vérifier la préparation d’évaluation téléchargeable
 description: Vérifie les paramètres du périphérique et du réseau, y compris les points de terminaison requis
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 57739b657f3aa296b92b67c16b7b7c5c3628e8b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 126819ac8d08841165c94503ddf1d3feb72e91ba
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152441"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035161"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Vérifier la préparation d’évaluation téléchargeable
 
@@ -67,7 +67,7 @@ Si l’outil **signale** un résultat non prêt, consultez le rapport détaillé
 
 #### <a name="enterprise-wi-fi-profiles"></a>Enterprise wi-fi
 
-Un **résultat d’avis** signifie que vous utilisez certains profils Wi-Fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
+Un **résultat d’avis** signifie que vous utilisez certains profils wi-fi qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir Déployer des certificats et profil [Wi-Fi/VPN.](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)
 
 #### <a name="lan-profiles"></a>Profils LAN
 

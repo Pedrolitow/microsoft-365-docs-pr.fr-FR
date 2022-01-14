@@ -1,29 +1,29 @@
 ---
 title: Inscrivez vous-même les nouveaux appareils
-description: Inscrivez vous-même les appareils afin qu’ils soient gérés Microsoft Manged Desktop
+description: Inscrivez vous-même les appareils afin qu’ils soient gérés par Microsoft Manged Desktop
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b051ea3c1ea04eb90584654389f335ad6ecedefc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 566472128cef48a14aa18de6d9e82a4bc0f2b91c
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213924"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035701"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
 Microsoft Manged Desktop peuvent fonctionner avec de nouveaux appareils ou vous pouvez réutiliser les appareils que vous avez peut-être déjà (ce qui nécessitera de les réimager). Vous pouvez inscrire des appareils avec des Microsoft Manged Desktop dans le portail Microsoft Endpoint Manager web.
 
 > [!NOTE]
-> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre de partenaires.](/partner-center/request-a-relationship-with-a-customer) Une fois cette relation établie, votre partenaire enregistre simplement les appareils en votre nom ; aucune action supplémentaire n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez étapes pour les partenaires [pour inscrire des appareils.](register-devices-partner.md) Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
+> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas besoin de vous soucier de l’obtention des hashes matériels ; Ils s’en chargeront pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans [l’Partner Center](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide de l’Centre de partenaires.](/partner-center/request-a-relationship-with-a-customer) Une fois cette relation établie, votre partenaire enregistre simplement des appareils en votre nom ; aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez étapes pour les partenaires [pour inscrire des appareils.](register-devices-partner.md) Une fois les appareils inscrits, vous pouvez vérifier [l’image](#check-the-image) et [remettre](#deliver-the-device) les appareils à vos utilisateurs.
 
 
 
@@ -51,20 +51,20 @@ Microsoft Manged Desktop identifie chaque appareil de manière unique en référ
 Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) sur le site web de la galerie PowerShell. Pour plus d’informations sur l’identification de l’appareil et le hachage matériel, voir Ajout d’appareils [Windows Autopilot](/mem/autopilot/add-devices#device-identification).
 
 1. Ouvrez une invite PowerShell avec des droits d’administration.
-2. Exécuter `Install-Script -Name Get-WindowsAutoPilotInfo`
-3. Exécuter `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+2. Exécutez `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Exécutez `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. Exécutez `powershell -ExecutionPolicy restricted` cette exécution pour empêcher l’exécution de scripts non restreints ultérieurs.
 
 #### <a name="flash-drive-method"></a>Méthode de lecteur Flash
 
 1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
-3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’expérience d’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+3. Exécutez `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience d’installation.* Si vous démarrez accidentellement l’expérience d’installation, vous devez réinitialiser ou réinitialiser l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
-7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Exécuter `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+7. Exécutez `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+8. Exécutez `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Supprimez le lecteur USB, puis fermez l’appareil en exécutant `shutdown -s -t 0`
 
 > [!IMPORTANT]
@@ -87,7 +87,7 @@ Dans [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/) **sélection
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
-Procédez comme suit :
+Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 2. Sélectionnez [un profil d’appareil](../service-description/profiles.md) dans le menu déroulant.
@@ -102,7 +102,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 |---------------|-------------|
 | Inscription en attente | L’inscription n’est pas encore terminée. Revenir plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu être terminée. Pour plus [d’informations, voir](#troubleshooting-device-registration) Résolution des problèmes d’inscription de l’appareil. |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guide tout au long de la première mise en place, vous n’avez donc pas besoin d’autres préparations. |
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guidera tout au long de la première mise en place, il n’est donc pas nécessaire d’en faire d’autres. |
 | Actif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Cet état indique également qu’ils utilisent régulièrement l’appareil. |
 | Inactif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Toutefois, ils n’ont pas utilisé l’appareil récemment (au cours des 7 derniers jours).  | 
 
@@ -132,4 +132,4 @@ Le service surveille tous les Microsoft Manged Desktop jour et affecte la balise
 > [!IMPORTANT]
 > Avant de remettre l’appareil à votre utilisateur, assurez-vous que vous avez obtenu et appliqué les [licences](../get-ready/prerequisites.md) appropriées pour cet utilisateur.
 
-Si toutes les licences sont appliquées, vous pouvez préparer vos utilisateurs à utiliser des [appareils,](get-started-devices.md)puis démarrer l’appareil et passer à l’expérience de Windows de configuration.
+Si toutes les licences sont appliquées, vous pouvez préparer vos utilisateurs à utiliser des [appareils,](get-started-devices.md)puis démarrer l’appareil et passer à l’expérience d’installation Windows’installation.

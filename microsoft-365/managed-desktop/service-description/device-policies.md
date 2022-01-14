@@ -3,18 +3,18 @@ title: Configuration des appareils
 description: Découvrez les stratégies par défaut appliquées Microsoft Manged Desktop appareils.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ec545a54988c2634c651ec07084c005467afd565
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b770fd7abb8c569d115891824c264f4d32dd20e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210148"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035136"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -23,22 +23,22 @@ ms.locfileid: "60210148"
 
 <!-- Device configuration and Security Addendum-->
 
-Lorsqu’un nouvel Microsoft Manged Desktop est en cours de configuration, nous nous assurons qu’il dispose de la configuration Microsoft Manged Desktop. Cette configuration inclut un ensemble de stratégies par défaut définies dans le cadre du processus d’intégration. Ces stratégies sont livrées à l’aide de la Gestion des périphériques mobiles (MDM) chaque fois que possible. Pour plus d’informations, voir [Gestion des périphériques mobiles.](/windows/client-management/mdm/) 
+Lorsqu’un nouvel Microsoft Manged Desktop est en cours de configuration, nous nous assurons qu’il dispose de la configuration Microsoft Manged Desktop. Cette configuration inclut un ensemble de stratégies par défaut définies dans le cadre du processus d’intégration. Dans la mesure du possible, ces stratégies sont livrées à l’aide de la Gestion des périphériques mobiles (MDM). Pour plus d’informations, voir [Gestion des périphériques mobiles.](/windows/client-management/mdm/) 
 
 >[!NOTE]
 >Pour éviter les conflits, ne modifiez pas ces stratégies.
 
-Les appareils arrivent avec une image de signature, puis rejoignent le Azure Active Directory lorsque le premier utilisateur se connecté. L’appareil installe automatiquement les stratégies et applications requises sans intervention de votre personnel technique.
+Les appareils arrivent avec une image de signature, puis rejoignent le Azure Active Directory lorsque le premier utilisateur se connecté. L’appareil installe automatiquement les stratégies et applications requises sans aucune intervention de votre personnel technique.
 
 ## <a name="default-policies"></a>Stratégies par défaut
 
-Ce tableau met en évidence les stratégies par défaut qui sont appliquées à tous les Microsoft Manged Desktop lors de la mise en service des appareils. Toutes les modifications détectées non approuvées par Microsoft Manged Desktop Operations Team sur les objets gérés par Microsoft Manged Desktop seront de retour.
+Ce tableau met en évidence les stratégies par défaut qui sont appliquées à tous les Microsoft Manged Desktop lors de la mise en service des appareils. Toutes les modifications détectées non approuvées par Microsoft Manged Desktop Operations Team aux objets gérés par Microsoft Manged Desktop seront de retour.
 
 Stratégie | Description
 --- | ---
 Base de référence de sécurité | [La ligne de base](/windows/device-security/windows-security-baselines) de sécurité Microsoft pour la gestion des périphériques mobiles est configurée pour tous les Microsoft Manged Desktop mobiles. Cette ligne de base est la configuration standard du secteur. Il est publié publiquement, bien testé et a été examiné par des experts en sécurité Microsoft pour garantir la sécurité Microsoft Manged Desktop et des applications dans l’espace de travail moderne. <br><br>Pour atténuer les menaces dans le paysage des menaces de sécurité en constante évolution, la ligne de base de sécurité Microsoft sera mise à jour et déployée sur les appareils Microsoft Manged Desktop avec chaque mise à jour Windows 10 fonctionnalités.<br><br>Pour plus d’informations, [voir Windows de sécurité.](/windows/security/threat-protection/windows-security-baselines)
 Microsoft Manged Desktop de sécurité recommandé | Ensemble de modifications recommandées apportées à la ligne de base de sécurité qui optimisent l’expérience utilisateur.  Ces modifications sont documentées dans [le addendum de sécurité.](#security-addendum) Les mises à jour du addendum de stratégie se produisent selon les besoins.  
-Mettre à jour le déploiement | Utilisez Windows Update for Business pour effectuer un déploiement progressif des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres des stratégies de groupe de déploiement. Pour plus d’informations sur le déploiement basé sur un groupe, voir Comment les mises à jour sont [gérées dans Microsoft Manged Desktop](updates.md).
+Mettre à jour le déploiement | Utilisez Windows Update for Business pour effectuer un déploiement progressif des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres des stratégies de groupe de déploiement. Pour plus d’informations sur le déploiement basé sur un groupe, voir comment les mises à jour sont [gérées dans Microsoft Manged Desktop](updates.md).
 Connexions avec des compteurs | Par défaut, les mises à jour sur les connexions avec compteurs (telles que les réseaux LTE) sont désactivées, même si chaque utilisateur peut activer indépendamment cette fonctionnalité dans **Paramètres > Updates > Options** avancées . Si vous souhaitez autoriser tous les utilisateurs à activer les mises à jour sur les connexions avec connexions avec [compteur,](../working-with-managed-desktop/admin-support.md)envoyez une demande de modification, qui activera ce paramètre pour tous les appareils.
 | Conformité des appareils | Ces stratégies sont configurées pour tous Microsoft Manged Desktop appareils. Un appareil est signalé comme non conforme lorsqu’il dérive de notre configuration de sécurité requise.
 
@@ -54,4 +54,4 @@ Connexions avec des compteurs | Par défaut, les mises à jour sur les connexion
 
  Ces stratégies sont ajoutées pour renforcer la sécurité des secteurs hautement réglementés. 
  - **Surveillance de la** sécurité : Microsoft surveille les appareils à l’aide [de Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) Si une menace est détectée, Microsoft avertit le client, isole l’appareil et rectifie le problème à distance. 
- - **Désactiver PowerShell V2 :** Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous Microsoft Manged Desktop appareils. Pour plus d’informations sur cette [modification, voir Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Désactiver PowerShell V2 :** Microsoft a supprimé PowerShell V2 en août 2017. Cette fonctionnalité a été désactivée sur tous les Microsoft Manged Desktop appareils. Pour plus d’informations sur cette [modification, voir Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

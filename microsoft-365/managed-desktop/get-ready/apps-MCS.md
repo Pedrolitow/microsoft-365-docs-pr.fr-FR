@@ -3,21 +3,21 @@ title: Utilisation de Microsoft Consulting Services
 description: Préparation et étapes à suivre pour travailler avec MCS afin de mettre en package vos applications
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2b68d9d36e52e84867bf6411f4e723e7551fa55b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9054f77c88ba506a16ce74d364a5a0eea0327793
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211548"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035617"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -33,7 +33,7 @@ Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir l
 
 **MCS s’occupe des actions ci-après :**
 
-- Vérification de l’interdiction ou de la restriction de l’application dans l Microsoft Manged Desktop de l’application.
+- Vérification de l’interdiction ou de la restriction de l’application dans l’environnement Microsoft Manged Desktop’application.
 - Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, il va remettre l’application au programme [App Assure](/fasttrack/products-and-capabilities#app-assure) pour correction.
 - Empaquetage de l’application selon vos spécifications, puis test du déploiement de l’application à l’aide Microsoft Intune.
 
@@ -50,11 +50,11 @@ Une fois l’application livrée, vous en serez informé. À ce stade, vous avez
 Pour que l’équipe de packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
 
 - Accès aux fonctionnalités Microsoft Intune déploiement d’application du programme de package pour ajouter et affecter l’application
-- Tester les groupes, les comptes d’utilisateur et les licences des packageurs pour pouvoir tester les applications
+- Tester les groupes, les comptes d’utilisateur et les licences pour que les packageurs puissent tester les applications
 
 MCS utilisera ces autorisations pour effectuer les actions suivantes :
 
 - S’assurer que l’application fonctionne sur une machine virtuelle configurée pour Microsoft Manged Desktop
-- Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
+- Téléchargement de l’application vers Microsoft Intune déploiement à vos utilisateurs
 
-Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications vers votre environnement.
+Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications dans votre environnement.

@@ -3,18 +3,18 @@ title: Ajuster les paramètres après l’inscription
 description: Comment exclure certains comptes Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: c46932ea1173e515d0c3b880cb20a80b247ae586
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a9d218c40d7aafef7de293381b639515c84439f8
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202690"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034652"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’inscription
 
@@ -25,18 +25,18 @@ Une fois que vous avez terminé l’inscription Microsoft Manged Desktop, certai
 3. Si vous souhaitez vérifier que tous les paramètres sont [](https://aka.ms/mmdart) corrects, vous pouvez réexécuter l’outil d’évaluation de la disponibilité pour vous assurer qu’aucun conflit n’entre en Microsoft Manged Desktop.
 
 > [!NOTE]
-> À mesure que vos opérations se poursuivent au cours des mois suivants, si vous a apporté des modifications après l’inscription à des stratégies en Microsoft Intune, Azure Active Directory ou Microsoft 365 qui affectent Microsoft Manged Desktop, il est possible que Microsoft Manged Desktop ne fonctionne plus correctement. Pour éviter les problèmes avec le service, vérifiez les paramètres spécifiques [décrits](../get-ready/readiness-assessment-fix.md) dans Résoudre les problèmes trouvés par l’outil d’évaluation de la disponibilité avant de modifier les stratégies répertoriées ici. Vous pouvez également réexécuter l’outil d’évaluation de la préparation à tout moment.
+> À mesure que vos opérations se poursuivent au cours des mois suivants, si vous az apporté des modifications après l’inscription à des stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365 qui affectent Microsoft Manged Desktop, il est possible que Microsoft Manged Desktop pouvez arrêter de fonctionner correctement. Pour éviter les problèmes avec le service, vérifiez les paramètres spécifiques [décrits](../get-ready/readiness-assessment-fix.md) dans Résoudre les problèmes trouvés par l’outil d’évaluation de la disponibilité avant de modifier les stratégies répertoriées ici. Vous pouvez également réexécuter l’outil d’évaluation de la préparation à tout moment.
 
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune paramètres
 
 - Profil autopilot deployment : si vous utilisez des stratégies Autopilot, mettez à jour chacune d’elles pour exclure le groupe Modern **Workplace Devices -All** Azure AD. Pour les mettre à jour, dans la **section** Groupes exclus sous **Affectations,** sélectionnez le groupe Modern **Workplace Devices -All** Azure AD qui a été créé lors de l Microsoft Manged Desktop inscription. Microsoft Manged Desktop également créé un profil Autopilot, dont le nom doit être « Espace de travail moderne » (profil **Autopilot** De l’espace de travail moderne). Lorsque vous mettez à jour vos propres  profils Autopilot, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD du profil **Autopilot** Workplace moderne créé par Microsoft Manged Desktop.
 
-- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel **liées** à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel ( Espace de travail  moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies d’accès conditionnel Azure AD créées par Microsoft Manged Desktop dont le nom indique « Espace de travail moderne ».
+- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel liées à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription au Microsoft Manged Desktop, excluez le groupe Azure AD Comptes de service Workplace modernes de ces **stratégies.** Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel ( Espace de travail  moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies Azure AD’accès conditionnel créées par les Microsoft Manged Desktop dont le nom indique « Espace de travail moderne ».
 
-- Authentification multifacteur : si vous créez des exigences d’authentification multifacteur dans les stratégies d’accès conditionnel **liées** à Azure AD, Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès aux membres de ce groupe. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel **(** Espace de travail moderne ), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel **dans** **Endpoint Security**. 
+- Authentification multifacteur : si vous créez des exigences d’authentification multifacteur dans les stratégies d’accès conditionnel liées à Azure AD, Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez le groupe Azure AD Comptes de service Workplace modernes de ces **derniers.** Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès aux membres de ce groupe. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel **(** Espace de travail moderne ), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel **dans** **Endpoint Security**. 
 
-- Windows 10 sonnerie de mise à jour : pour toutes les stratégies de sonnerie de mise à jour Windows 10 que vous avez créées, excluez le groupe Modern **Workplace Devices -All** Azure AD de chaque stratégie. Pour obtenir la procédure à suivre, [voir Créer et affecter des anneaux de mise à jour.](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft Manged Desktop aura également créé des stratégies de sonnerie de mise à jour, qui auront toutes le nom « Espace de travail moderne » (par exemple, Stratégie de mise à jour de l’espace de travail moderne **[Large]**, Stratégie de mise à jour de l’espace de travail moderne **[Fast]**, Stratégie de mise à jour de l’espace de travail moderne **[Premier]** et Stratégie de mise à jour de l’espace de travail **moderne [Test]**). Lorsque vous mettez à jour vos  propres stratégies, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD de ceux Microsoft Manged Desktop créés.
+- Windows 10 sonnerie de mise à jour : pour Windows 10 stratégies d’anneau de mise à jour que vous avez créées, excluez le groupe Modern **Workplace Devices -All** Azure AD de chaque stratégie. Pour obtenir la procédure à suivre, [voir Créer et affecter des anneaux de mise à jour.](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft Manged Desktop aura également créé des stratégies de sonnerie de mise à jour, qui auront toutes le nom « Espace de travail moderne » (par exemple, Stratégie de mise à jour de l’espace de travail moderne **[Large]**, Stratégie de mise à jour de l’espace de travail moderne **[Fast]**, Stratégie de mise à jour de l’espace de travail moderne **[Premier]** et Stratégie de mise à jour de l’espace de travail **moderne [Test]**). Lorsque vous mettez à jour vos  propres stratégies, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD de ceux Microsoft Manged Desktop créés.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory paramètres
@@ -49,7 +49,7 @@ Pour vous aider à rechercher et exclure les comptes de service, voici un exempl
 (user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
 ```
 
-Dans cette requête, remplacez @TENANT par votre nom de domaine client.
+Dans cette requête, remplacez @TENANT par le nom de domaine de votre client.
 
 
 

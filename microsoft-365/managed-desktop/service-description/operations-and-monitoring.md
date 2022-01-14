@@ -3,20 +3,20 @@ title: Microsoft Manged Desktop et surveillance
 description: Qui fait quoi pour différents processus de modification
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 7a12a1304d562ae74d4d1e7e4e6d14a947934636
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29144da5c9dffb3bfe37d8068bdbc2b56f1ab401
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197100"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034676"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Manged Desktop et surveillance
 
@@ -63,7 +63,7 @@ Toutes les modifications n’ont pas le même impact sur vos utilisateurs et ne 
 **Nécessite une action de l’administrateur global** | Parfois | Rarement | Rarement 
 **Type d’action** | Modifier les paramètres | Communiquer les modifications aux utilisateurs | Modifier les paramètres d’administration  
 **Nécessite des tests** | Vérifier les applications métiers, y compris les services d’accès à distance | Parfois : tests du correctif par rapport aux processus ou aux personnalisations | Rarement 
-**Exemples de modification** | - Mises à jour des fonctionnalités : portail d’administration informatique simplifie l’envoi et la révision des tickets de support<br>- Nouvelles fonctionnalités ou applications : Semi-Annual d’une mise à jour Windows 10 fonctionnalités | Correctifs basés sur les bogues signalés par le client |
+**Exemples de modification** | - Mises à jour des fonctionnalités : envoi et révision des tickets de support simplifiés par le portail d’administration informatique<br>- Nouvelles fonctionnalités ou applications : Semi-Annual publication d’une mise à jour Windows 10 fonctionnalités | Correctifs basés sur les bogues signalés par le client |
 
 ## <a name="standard-operating-procedures"></a>Procédures d’exploitation standard
 
@@ -71,15 +71,15 @@ Le service Microsoft Manged Desktop est implémenté et géré par Microsoft dan
 
 Pour les produits locaux, votre organisation assume toutes les responsabilités de gestion de l’installation, ainsi que de la configuration et des activités opérationnelles.
 
-Catégories | Microsoft | Le client
+Categories | Microsoft | Le client
 --- | --- | ---
-Réseau (proxy, inspection des paquets, VPN)  | Conseillez les clients et planifiez-les pour minimiser les risques pour les utilisateurs professionnels. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.
-Comptes de service |- Implémenter, stocker et gérer les informations d’identification en toute sécurité.<br> - Communiquez l’accès non autorisé ou l’utilisation de ces informations d’identification à votre équipe des opérations de sécurité. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.<br>- N’affectez pas de stratégie, d’authentification multifacteur, d’accès conditionnel ou de déploiement d’application aux comptes Microsoft Manged Desktop service.<br>- Ne pas réinitialiser le mot de passe ou utiliser les informations d’identification.<br>- Ouvrez une demande de support Sev C à Microsoft Manged Desktop Operations si une activité suspecte est observée dans les journaux d’audit Intune ou Azure, liés à ces comptes de service.
-Groupes d’appareils | - Implémenter et affecter l’appartenance des appareils au sein Microsoft Manged Desktop groupes.<br>- Utilisez les groupes Microsoft Manged Desktop pour gérer l’affectation et la publication de la configuration et des mises à jour sur les appareils. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.<br>- Affectez uniquement des appareils à un groupe Microsoft Manged Desktop suivant les étapes décrites dans Affecter des appareils [à un groupe de déploiement.](../working-with-managed-desktop/assign-deployment-group.md)<br>- Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que VPN, Windows Hello Entreprise ou le chiffrement de courrier ou la configuration de profil Wifi d’entreprise.<br>- Lorsque la cogestion existe, excluez explicitement tous les groupes Microsoft Manged Desktop lors du déploiement du client Configuration Manager.
-Politiques | - Implémenter et gérer les stratégies Microsoft Manged Desktop qui régissent l’état de configuration des appareils au sein du service.<br>- Déployer des mises à jour, à des Windows, à l’aide de groupes d’appareils de manière incrémentielle.<br> - Exclure explicitement le ciblage de groupes Microsoft Manged Desktop non professionnels. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.<br>- Ne modifiez ni n’affectez Microsoft Manged Desktop stratégies de gestion aux appareils ou aux utilisateurs qui ne sont pas gérés par Microsoft Manged Desktop service.
+Réseau (proxy, inspection des paquets, VPN)  | Conseillez les clients et planifiez-les pour minimiser les risques pour les utilisateurs professionnels. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.
+Comptes de service |- Implémenter, stocker et gérer les informations d’identification en toute sécurité.<br> - Communiquez l’accès non autorisé ou l’utilisation de ces informations d’identification à votre équipe des opérations de sécurité. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.<br>- N’affectez pas de stratégie, d’authentification multifacteur, d’accès conditionnel ou de déploiement d’application aux comptes Microsoft Manged Desktop service.<br>- Ne pas réinitialiser le mot de passe ou utiliser les informations d’identification.<br>- Ouvrez une demande de support Sev C à Microsoft Manged Desktop Operations si une activité suspecte est observée dans les journaux d’audit Intune ou Azure, liés à ces comptes de service.
+Groupes d’appareils | - Implémenter et affecter l’appartenance des appareils au sein Microsoft Manged Desktop groupes.<br>- Utilisez les groupes Microsoft Manged Desktop pour gérer l’affectation et la publication de la configuration et des mises à jour sur les appareils. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.<br>- Affectez uniquement des appareils à un groupe Microsoft Manged Desktop suivant les étapes décrites dans Affecter des appareils [à un groupe de déploiement.](../working-with-managed-desktop/assign-deployment-group.md)<br>- Utilisez uniquement les groupes pour attribuer des certificats d’entreprise pour des services tels que VPN, Windows Hello Entreprise ou le chiffrement de courrier ou la configuration de profil Wifi d’entreprise.<br>- Lorsque la cogestion existe, excluez explicitement tous les groupes Microsoft Manged Desktop lors du déploiement du client Configuration Manager.
+Stratégies | - Implémenter et gérer les stratégies Microsoft Manged Desktop qui régissent l’état de configuration des appareils au sein du service.<br>- Déployer des mises à jour, à des Windows, à l’aide de groupes d’appareils de manière incrémentielle.<br> - Exclure explicitement le ciblage de groupes Microsoft Manged Desktop non professionnels. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.<br>- Ne modifiez ni n’affectez Microsoft Manged Desktop stratégies de gestion aux appareils ou aux utilisateurs qui ne sont pas gérés par Microsoft Manged Desktop service.
 Microsoft Defender pour point de terminaison | Surveillez et examinez les appareils dans l’étendue Microsoft Manged Desktop service. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquer une modification uniquement une fois que Microsoft Manged Desktop Opérations a évalué et conseillé
-Microsoft Store pour Entreprises | Configurez et maintenez le Windows Autopilot pour le service Microsoft Manged Desktop service. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.<br>- Ne modifiez pas la configuration du profil Autopilot Microsoft Manged Desktop Windows ou ajoutez/supprimez des appareils affectés.
-Certificats | | - Créez une demande de support 60 jours avant l’expiration d’un certificat, en demandant des informations sur une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois que Microsoft Manged Desktop opérations a été évaluée et recommandée.<br>- Mettez à jour tous les certificats requis pour configurer les profils de certificat, les profils VPN et Wi-Fi profils.
+Microsoft Store pour Entreprises | Configurez et maintenez le Windows Autopilot pour le service Microsoft Manged Desktop service. | - Créez une demande de support demandant des informations pour une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.<br>- Ne modifiez pas la configuration du profil Autopilot Microsoft Manged Desktop Windows ou ajoutez/supprimez des appareils affectés.
+Certificats | | - Créez une demande de support 60 jours avant l’expiration d’un certificat, en demandant des informations sur une modification de configuration planifiée, y compris les détails de configuration, l’étendue, la chronologie et d’autres détails pertinents que Microsoft peut examiner.<br>- Appliquez une modification uniquement une fois Microsoft Manged Desktop Opérations a évalué et conseillé.<br>- Mettez à jour tous les certificats requis pour configurer les profils de certificat, les profils VPN et Wi-Fi profils.
 
 ## <a name="device-wipe-with-factory-reset"></a>Réinitialisation d’appareil avec réinitialisation aux usine
 
@@ -89,7 +89,7 @@ Il existe quelques conditions requises :
 
 - Votre administrateur général doit envoyer une demande de service.
 - Incluez le nom de l’ordinateur de l’appareil dans la demande.
-- Le compte d’utilisateur doit se trouver dans Azure AD avant de réinitialiser l’appareil.
+- Le compte d’utilisateur doit être Azure AD avant de réinitialiser l’appareil.
 
 L’équipe Des opérations de bureau gérés va :
 
@@ -97,11 +97,11 @@ L’équipe Des opérations de bureau gérés va :
 - Envoyer la commande de réinitialisation d’usine à l’appareil
 
 > [!NOTE]
-> Ne supprimez pas le compte d’utilisateur d’Azure AD avant la réinitialisation de l’appareil. Si l’utilisateur n’est pas dans Azure AD, Intune ne peut pas envoyer la commande de réinitialisation d’usine à l’appareil.
+> Ne supprimez pas le compte d’utilisateur Azure AD avant la réinitialisation de l’appareil. Si l’utilisateur n’est pas Azure AD, Intune ne peut pas envoyer la commande de réinitialisation d’usine à l’appareil.
 
-L’appareil démarre dans l'« expérience préinstallée », et toutes les applications et paramètres préinstallés sont à nouveau appliqués. L’utilisateur de l’appareil doit fournir à nouveau les informations d’installation initiales. 
+L’appareil démarre dans l’expérience « out of box experience », et toutes les applications et paramètres préinstallés sont à nouveau appliqués. L’utilisateur de l’appareil doit fournir à nouveau les informations d’installation initiales. 
 
-Lorsque l’appareil a été réinitialisé, vous pouvez le donner à une autre personne de votre organisation. Aucune des données de l’utilisateur précédent ou des données d’entreprise ne sera sur l’appareil. L’utilisateur suivant va passer par le même processus que la personne précédente avec un nouvel Microsoft Manged Desktop appareil.
+Lorsque l’appareil a été réinitialisé, vous pouvez le donner à une autre personne de votre organisation. Aucune des données de l’utilisateur précédent ou des données d’entreprise ne sera sur l’appareil. L’utilisateur suivant va passer par le même processus que la personne précédente l’a fait avec un nouvel Microsoft Manged Desktop appareil.
 
 BitLocker est un composant clé de la sécurité des données dans ce processus. Avec le chiffrement BitLocker sur Microsoft Manged Desktop, les données du lecteur restent sécurisées même après la réinitialisation d’usine de l’appareil. Les données qui se trouvaient sur le lecteur ne seront pas disponibles pour le prochain utilisateur de l’appareil. Pour plus d’informations, voir [vue d’ensemble de BitLocker.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 

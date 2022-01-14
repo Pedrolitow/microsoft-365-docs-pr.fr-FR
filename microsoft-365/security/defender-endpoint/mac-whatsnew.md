@@ -16,22 +16,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: bfea41b11a441b10fda3c9c6a4ac7ce66bf718b6
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265190"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041125"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
+
+- macOS 10.14 (Mojave) n’est plus pris en charge
+- Une fois qu’un paramètre de produit cesse d’être géré par l’administrateur via la gestion des données de gestion des données, il revient à la valeur qu’il avait avant d’être géré (valeur configurée localement par l’utilisateur final ou, si aucune valeur locale n’a été explicitement fournie, la valeur par défaut utilisée par le produit). Avant cette modification, après l’arrêt de la gestion d’un paramètre, sa valeur gérée persistait et était toujours utilisée par le produit.
+- Améliorations des performances & résolutions de bogues
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0)
 

@@ -3,18 +3,18 @@ title: Déployer des paramètres configurables dans Microsoft Manged Desktop
 description: Déployez et suivez les modifications des paramètres configurables dans Microsoft Manged Desktop.
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, déployer, déploiement par étapes, paramètres configurables
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4950afb8446eb9b687749fc657a6826bb1eb7768
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177014"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035437"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables : Microsoft Manged Desktop
 
@@ -34,7 +34,7 @@ Révérence | La modification a été revenir à la dernière modification qui a
 
 ## <a name="deploy-changes"></a>Déployer les modifications
 
-Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions. Une fois que vous avez mis en place un déploiement, vous déployez les modifications à partir de la page État du déploiement.
+Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions. Après avoir mis en place un déploiement, vous déployez les modifications à partir de la page État du déploiement.
 
 **Pour déployer les modifications**
 
@@ -56,7 +56,7 @@ Lorsque les modifications sont terminées dans chaque groupe, l’état est **te
 
 ## <a name="revert-deployment"></a>Revert deployment
 
-Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée pour tous les groupes.
+Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée sur tous les groupes.
 
 Nous allons vous montrer les étapes à suivre pour inverser une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 

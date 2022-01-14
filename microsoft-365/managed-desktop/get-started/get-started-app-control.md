@@ -3,25 +3,25 @@ title: Prise en main du contrôle d’application
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 375357e52e7aedf416b4a0d9988da18f39bda5ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bafbb32d83f1b9f4381f62b41254f5666d7f3a49
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211524"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034700"
 ---
 # <a name="get-started-with-app-control"></a>Prise en main du contrôle d’application
 
 Avant d’activer le contrôle d’application dans votre environnement, n’oubliez pas de passer en revue et de comprendre comment Microsoft Manged Desktop l’implémente, ainsi que vos [rôles](../service-description/app-control.md) et responsabilités.
 
-Microsoft Manged Desktop simplifie le contrôle des applications en prenant en charge les aspects les plus complexes liés à l’obtention d’une stratégie de base sécurisée. Vos administrateurs informatiques doivent toujours tester vos applications dans l’anneau Test et consulter les journaux pour y trouver des avertissements ou des erreurs. Si une application a besoin d’une exemption, vous pouvez déposer une demande, ou Microsoft Manged Desktop Operation peut le faire, selon qui la détecte en premier.
+Microsoft Manged Desktop simplifie le contrôle des applications en prenant en charge les aspects les plus complexes liés à l’obtention d’une stratégie de base sécurisée. Vos administrateurs informatiques doivent toujours tester vos applications dans l’anneau Test et consulter les journaux pour y trouver des avertissements ou des erreurs. Si une application a besoin d’une exemption, vous pouvez déposer une demande, ou Microsoft Manged Desktop operation peut, selon qui la détecte en premier.
 
 ## <a name="initial-deployment-of-apps"></a>Déploiement initial des applications
 
@@ -33,7 +33,7 @@ Si vous n’avez pas encore d’appareils en cours d’utilisation, ouvrez un ti
 
 |Groupe de déploiement  |Type de stratégie  |Calendrier  |
 |---------|---------|---------|
-|Test     |  Audit       |  Jour 0       |
+|Tester     |  Audit       |  Jour 0       |
 |Premier     | Enforced        | Jour 1        |
 |Rapide     | Enforced        |  Jour 2       |
 |Larges     | Enforced        |  Jour 3       |
@@ -50,7 +50,7 @@ Si vous avez déjà au moins Microsoft Manged Desktop appareil en cours d’util
 
 |Groupe de déploiement  |Type de stratégie  |Calendrier  |
 |---------|---------|---------|
-|Test     |  Audit       |  Jour 0       |
+|Tester     |  Audit       |  Jour 0       |
 |Premier     | Enforced        | Jour 1        |
 |Rapide     | Enforced        |  Suspendu, déploiement sur demande       |
 |Larges     | Enforced        |  Suspendu, déploiement sur demande       |

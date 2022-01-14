@@ -1,22 +1,22 @@
 ---
-title: Travail sur des rapports
+title: Utiliser les rapports
 description: Les différents rapports disponibles dans Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 4a0a1d674d14b6569acc07d65ec3f2cc886deeaa
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: bf4338663e25dc68f8555a6cbe090b73f857b894
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364145"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034772"
 ---
-# <a name="work-with-reports"></a>Travail sur des rapports
+# <a name="work-with-reports"></a>Utiliser les rapports
 
 La console Microsoft Endpoint Manager regroupe les rapports de plusieurs produits dans un emplacement unique pour vous aider à surveiller et à examiner les problèmes de configuration et d’appareils de votre organisation Azure AD (« client »). Bureau géré Microsoft comprend une section dans le **menu** Rapports dans laquelle vous pouvez trouver des rapports spécifiques Microsoft Manged Desktop gestion des appareils que vous avez enregistrés. En outre, dans plusieurs emplacements dans Microsoft Endpoint Manager vous pouvez filtrer les rapports provenant d’autres groupes de produits afin d’inclure ou d’exclure spécifiquement vos appareils gérés par Microsoft Manged Desktop. 
 

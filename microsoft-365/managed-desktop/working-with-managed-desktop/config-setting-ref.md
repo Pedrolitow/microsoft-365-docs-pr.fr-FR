@@ -3,18 +3,18 @@ title: Référence des paramètres configurables pour Microsoft Manged Desktop
 description: Définition de catégories pour les paramètres configurables dans Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 344fe8ff79976f2517e5b9b7e790193b5000803e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 33347a6dc42183d4ffa1b1e069fd93f63099bdee
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150317"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034604"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables : Microsoft Manged Desktop
 
@@ -53,7 +53,7 @@ Vous devez fournir le nom de domaine complet (FQDN) pour les sites intranet ou I
 2. Recherchez la section Microsoft Manged Desktop, sélectionnez **Paramètres**.
 3. Dans **Paramètres** de travail, sélectionnez **les pages de démarrage du navigateur.** 
 4. Sélectionnez **Ajouter une page de démarrage.**
-5. Dans **la page d’accueil Ajouter** un navigateur, entrez l’URL du site que vous souhaitez utiliser, puis sélectionnez Ajouter une page de **démarrage.** 
+5. Sur **la page d’accueil Ajouter** un navigateur, entrez l’URL du site que vous souhaitez utiliser, puis sélectionnez Ajouter une page de **démarrage.** 
 6. Répétez les étapes 1 à 5 pour les pages de démarrage de navigateur supplémentaires. 
 7. Sélectionnez **Le déploiement par** étapes pour enregistrer vos modifications et les déployer dans le groupe test.
 
@@ -104,7 +104,7 @@ Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet 
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Microsoft Manged Desktop, sélectionnez **Paramètres**.
-3. In **Paramètres** workspace, select **Trusted sites,** and then select **Add trusted site**. 
+3. Dans **Paramètres** de travail, sélectionnez **Sites** de confiance, puis **Ajoutez un site approuvé.** 
 4. Sur **Ajouter un site approuvé,** entrez l’URL, choisissez une zone de sécurité, puis **sélectionnez Ajouter un site approuvé.** 
 5. Répétez les étapes 1 à 4 pour chaque site approuvé que vous souhaitez ajouter. 
 6. Sélectionnez **Le déploiement par** étapes pour enregistrer vos modifications et les déployer dans le groupe test.

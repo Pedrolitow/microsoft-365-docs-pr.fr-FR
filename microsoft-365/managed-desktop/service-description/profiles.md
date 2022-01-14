@@ -3,21 +3,21 @@ title: Comprendre les profils d’appareil
 description: Les différents profils que les administrateurs peuvent affecter aux appareils
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 353bda15ee1eb5f50cf5814e06e4ccbb64e1b8d4
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 0b2bf3b0b4912d9e9b25c38b06262efb696f0cf2
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009020"
+ms.locfileid: "62034952"
 ---
 # <a name="device-profiles"></a>Profils d’appareil
 

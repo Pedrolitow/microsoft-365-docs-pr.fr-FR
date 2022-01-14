@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 43c881d340b5832a3403a6e47f664163f10dea00
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b748fec72c81284a10af10752580d18b9969104
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939920"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034760"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 
@@ -61,9 +61,9 @@ L’application d’enquêtes automatisées et l’action de correction automati
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
-2. Go to **Paramètres**  >  **Permissions**  >  **Device groups**.
+2. Go to **Paramètres**  >  **Endpoints**  >  **Device groups** under **Permissions**.
 
-3. Examinez vos stratégies de groupe d’appareils. En particulier, regardez la colonne **de niveau correction.** Nous vous recommandons **d’utiliser Full - corriger les menaces automatiquement**.  Vous devrez peut-être créer ou modifier vos groupes d’appareils pour obtenir le niveau d’automatisation voulu. Pour obtenir de l’aide sur cette tâche, consultez les articles suivants :
+3. Examinez vos stratégies de groupe d’appareils. En particulier, regardez la colonne **de niveau** Automation. Nous vous recommandons **d’utiliser Full - corriger les menaces automatiquement**.  Vous devrez peut-être créer ou modifier vos groupes d’appareils pour obtenir le niveau d’automatisation voulu. Pour obtenir de l’aide sur cette tâche, consultez les articles suivants :
    - [Comment les menaces sont corrigés](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Créer et gérer des groupes d’appareils](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
@@ -100,12 +100,10 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
    - Si des **incidents s'& alertes,** **de** recherche et de **centre** de Microsoft 365 Defender sont désactivés. Consultez la section [Examiner ou modifier le niveau d’automatisation pour les groupes d’appareils](#review-or-change-the-automation-level-for-device-groups) de cet article.
    - Si vous ne *voyez pas* **incidents,** centre de l’action ou de **Microsoft 365 Defender,** il se peut que les Microsoft 365 Defender ne soient pas allumés.  Dans ce cas, [visitez le centre de l’action.](m365d-action-center.md)
 
-3. Dans le volet de navigation, choisissez **Paramètres**  >  **Microsoft 365 Defender**. Confirmez que Microsoft 365 Defender est allumé.
-
 > [!TIP]
-> Besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
+> Vous avez besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Actions de correction dans Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visiter le Centre de notifications](m365d-action-center.md)

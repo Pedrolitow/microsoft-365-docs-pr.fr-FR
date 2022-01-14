@@ -3,39 +3,39 @@ title: Déployer les applications sur les appareils
 description: Informations pour l’ajout et le déploiement d’applications sur Microsoft Manged Desktop appareils.
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 15b41681d94d8f33176d140ebc00cc74319e69ff
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: ab4f1719d03cb3bc08a265611a45544762c2de96
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334497"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034892"
 ---
 # <a name="deploy-apps-to-devices"></a>Déployer les applications sur les appareils
 Une partie de l’intégration à Microsoft Manged Desktop inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail Microsoft Manged Desktop, vous pouvez ajouter et déployer vos applications. 
 
 Le processus global ressemble à ceci :
 1. [Ajoutez](#1) des applications au portail Microsoft Manged Desktop : il peut s’y trouver des applications métier existantes ou des applications de Microsoft Store pour Entreprises que vous avez synchronisées avec Intune. 
-2. [Créez Azure Active Directory groupes (AD)](#2) pour l’affectation d’application : vous utiliserez ces groupes pour gérer l’attribution d’application.
+2. [Créez Azure Active Directory groupes (AD)](#2) pour l’affectation d’application : vous utiliserez ces groupes pour gérer l’affectation d’application.
 3. [Affecter des applications à vos utilisateurs](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Étape 1 : Ajouter des applications au portail Microsoft Manged Desktop web
-Vous pouvez ajouter [Win32 ou Windows applications MSI,](#lob-apps)ou [Microsoft Store pour Entreprises des](#msfb-apps) applications à Microsoft Manged Desktop, puis les déployer sur Microsoft Manged Desktop appareils.
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Étape 1 : Ajouter des applications à Microsoft Manged Desktop portail
+Vous pouvez ajouter [Win32 ou Windows applications MSI,](#lob-apps)ou [Microsoft Store pour Entreprises des applications](#msfb-apps) à Microsoft Manged Desktop, puis les déployer sur Microsoft Manged Desktop appareils.
 
 <span id="lob-apps">
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 ou Windows applications basées sur MSI pour Microsoft Manged Desktop
 
-Vous pouvez ajouter vos applications métier à Microsoft Manged Desktop portail. Pour plus d’informations sur les conditions requises pour les applications installées sur Microsoft Manged Desktop, voir [Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
+Vous pouvez ajouter vos applications métier à votre Microsoft Manged Desktop web. Pour plus d’informations sur les conditions requises pour les applications installées Microsoft Manged Desktop appareils mobiles, voir [Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
 
-Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et charger la source de l’application. 
+Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et télécharger la source de l’application. 
 
 **Pour ajouter votre application LOB ou votre Windows à Microsoft Manged Desktop portail**
 
@@ -64,12 +64,12 @@ Si vous ne vous êtes pas inscrit à Microsoft Store pour Entreprises, vous pouv
 1. Connectez-vous [Microsoft Store pour Entreprises](https://businessstore.microsoft.com) avec votre compte Microsoft Store pour Entreprises administrateur.
 2. Sélectionnez **Gérer**.
 3. Sélectionnez **Paramètres** puis **distribuer.**
-4. Sous **Outils de** gestion, vérifiez qu’Intune est répertorié et que l’état est **Actif.**  
+4. Sous **Outils de** gestion, vérifiez qu’Intune est répertorié et que l’état est **Actif**.  
     
 **Pour forcer une synchronisation entre Intune et Microsoft Store pour Entreprises**
-1. Connectez-vous au [centre Microsoft Endpoint Manager’administration.](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Connectez-vous au [Centre d’administration du Gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Sélectionnez **les**  >  **connecteurs et jetons d’administration**  >  **des Microsoft Store pour Entreprises**.
-3. **L’activation de** la synchronisation Microsoft Store pour Entreprises activée vous permet d’accéder aux applications achetées en **volume avec Intune.** 
+3. Select **Enabled** for Enabling Microsoft Store pour Entreprises sync vous permet d’accéder aux applications achetées en **volume avec Intune.** 
 4. Sélectionnez votre langue préférée, puis sélectionnez **Synchroniser** pour obtenir les applications que vous avez achetées à partir du Microsoft Store dans Intune.
 
 <span id="2" />
@@ -80,8 +80,8 @@ Créez trois Azure AD pour chaque application. Ce tableau présente les groupes 
 
 Type d’affectation d’application |    Utilisation de groupe    | Exemple Azure AD nom
 --- | --- | ---
-Disponible |  L’application sera disponible à partir Portail d'entreprise’application ou du site web. | MMD – *nom de l’application* – Disponible
-Obligatoire |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
+Disponible |  L’application sera disponible à partir Portail d'entreprise application ou site web. | MMD – *nom de l’application* – Disponible
+Requis |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
 Désinstaller |  L’application est désinstallée des appareils des groupes sélectionnés. | MMD – *nom de l’application* – Désinstaller
 
 Ajoutez vos utilisateurs à ces groupes pour rendre l’application disponible, installer l’application ou supprimer l’application de Microsoft Manged Desktop appareil. 

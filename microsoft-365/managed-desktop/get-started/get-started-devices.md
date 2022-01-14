@@ -3,20 +3,20 @@ title: Préparer vos utilisateurs à l’utilisation des appareils
 description: Informations pour vous aider à préparer vos utilisateurs à utiliser des appareils
 keywords: Microsoft Manged Desktop, appareil, mise en Microsoft 365
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 846efb6da0bc955ea2f93f38f71fb2f4348f2c96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ee8e032c06587a3d8ac92f3be7ccdb5f6a5f6b1e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197112"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034964"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
@@ -27,8 +27,8 @@ Pour faciliter encore cette tâche, nous proposons un guide qui guide vos utilis
 ## <a name="to-prepare-the-guide"></a>Pour préparer le guide
 
 1. Téléchargez le guide [: Microsoft Manged Desktop - Commencer à utiliser votre appareil.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)
-2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour compléter les détails pertinents pour votre organisation :
-    - Nom du réseau avec qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide)
+2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour fournir des détails pertinents pour votre organisation :
+    - Nom du réseau à qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide)
     - Nom du compte client Azure de votre organisation (étape 4 du guide)
     - Coordonnées du support technique interne de votre organisation (en haut de la deuxième page)
 3. Enregistrez le fichier PDF modifié, puis distribuez-le à vos utilisateurs. 

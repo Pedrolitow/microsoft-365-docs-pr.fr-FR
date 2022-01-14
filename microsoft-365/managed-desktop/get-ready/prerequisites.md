@@ -3,19 +3,19 @@ title: Configuration requise pour le Bureau géré Microsoft
 description: Licences, comptes Azure, paramètres d’authentification et paramètres de Microsoft 365 à configurer avant de s’inscrire Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b8bba3832572b6834c46806eca048b568cc3d761
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 8b2fc786ee8887c6050dd67721f8c8a23d54e2a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284396"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035173"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Configuration requise pour le Bureau géré Microsoft
 
@@ -48,7 +48,7 @@ Microsoft Manged Desktop nécessite certaines options de licence pour fonctionne
 - Microsoft Intune
 - Windows 10 Entreprise  
 - Microsoft Defender pour point de terminaison
-- Applications Microsoft 365 for entreprise
+- Microsoft 365 Apps for enterprise
 - Microsoft Teams
 - [SharePoint Online Plan 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online Plan 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans)

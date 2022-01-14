@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531884"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035051"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -114,6 +114,28 @@ Pour garantir des performances élevées et une latence moindre, il existe des l
 
 > [!NOTE] 
 > Si votre entreprise a besoin de créer plus de 500 sits personnalisés, veuillez générer un ticket de support.
+
+### <a name="instance-count-supported-values-for-sit"></a>Nombre d’instances pris en charge par les valeurs pour SIT
+
+La limite de nombre d’instances SIT s’applique lorsque des sits sont utilisés dans ces solutions :
+
+- Stratégies de protection contre la perte de données
+- Protection des informations
+- Gouvernance des informations
+- Conformité des communications
+- Gestion des enregistrements
+- Microsoft Cloud App Security
+- Gestion de la confidentialité
+
+Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un sit dans un élément unique doit être entre les valeurs min et max. Il s’agit du nombre **d’instances.**
+
+- **Champ Min** : limite inférieure (nombre minimal) d’instances uniques d’un sit qui doit être trouvée dans un élément pour déclencher une correspondance. Le champ min prend en charge les valeurs de :
+    - 1 à 500
+- **Champ** max : limite supérieure du nombre d’instances uniques d’un sit qui se trouvent dans un élément et déclenchent toujours une correspondance. Le champ max prend en charge les valeurs de :
+    - 1 à 500 : utilisez cette fonction lorsque vous souhaitez définir une limite supérieure spécifique inférieure ou inférieure à 500 sur le nombre d’instances d’un sit dans un élément.
+    - Tout : permet de répondre aux critères de nombre d’instances uniques lorsqu’un nombre indéfini d’instances uniques d’un sit est trouvé dans un élément analysé et que ce nombre d’instances uniques répond au nombre minimal d’instances uniques ou dépasse le nombre `Any` minimal d’instances uniques. En d’autres termes, les critères de nombre d’instances uniques sont satisfaits tant que la valeur min est remplie.
+
+Par exemple, si vous souhaitez que la règle déclenche une correspondance lorsqu’au moins 500 instances uniques d’un sit sont trouvées dans un seul élément, définissez la valeur **min** sur et la valeur maximale sur `500`  `Any` .
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le centre de conformité
 

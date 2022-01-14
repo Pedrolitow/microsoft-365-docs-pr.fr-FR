@@ -1,22 +1,22 @@
 ---
 title: Procédure permettant aux partenaires d’inscrire des appareils
-description: Comment les partenaires peuvent inscrire des appareils afin qu’ils soient gérés Microsoft Manged Desktop
+description: Comment les partenaires peuvent inscrire des appareils afin qu’ils soient gérés par Microsoft Manged Desktop
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2849857b2196a863c236352ca4c7fd3c0dda1e6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: da55965a95251319467f86caebeb8909bb8585a0
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211488"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035653"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procédure permettant aux partenaires d’inscrire des appareils
 
@@ -57,7 +57,7 @@ Une fois que vous avez établi la relation avec vos clients, vous pouvez utilise
 
 Si vous recevez un message d’erreur lors de la tentative de chargement .csv fichier, vérifiez le format du fichier. Assurez-vous que l’ordre des colonnes correspond à ce qui est décrit dans Utiliser les profils Autopilot Windows sur les nouveaux appareils pour personnaliser l’expérience pré-encadrée [d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account) Vous pouvez également utiliser l’exemple .csv fichier fourni à partir du lien en dessous d’Ajouter des appareils **pour** créer une liste d’appareils. 
 
-Pour plus d’informations sur Autopilot dans les scénarios partenaires, voir Ajouter des appareils au [compte d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account)
+Pour plus d’informations sur Autopilot dans les scénarios partenaires, voir Ajouter des [appareils au compte d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account)
 
 
 ## <a name="register-devices-by-using-the-oem-api"></a>Inscrire des appareils à l’aide de l’API OEM

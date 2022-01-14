@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: 4ab7376b234b1f2299723c39a6f9c226d2f40a00
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c57d3f1f4e6c05cf5fe346440d59e7c5f9daac2
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933478"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041041"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
@@ -46,7 +46,7 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 - [En-têtes de message](#message-headers)
 - [Propriétés de message](#message-properties)
 
-### <a name="senders"></a>Expéditeurs
+### <a name="senders"></a>Senders
 
 Si vous utilisez l’adresse de l’expéditeur comme condition ou exception, le champ réel dans lequel la valeur est recherche varie en fonction du type de règle que vous utilisez. Pour les règles DLP, l’adresse d’enveloppe est utilisée comme adresse de l’expéditeur. Pour Exchange de transport, l’adresse d’en-tête est utilisée comme adresse de l’expéditeur.
 <!-- REMOVE COMMENTS ON 1/20/2022
@@ -116,7 +116,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 |L’objet ou le corps contient des mots|condition : *SubjectOrBodyContainsWords* <br/> exception : *ExceptIfSubjectOrBodyContainsWords*|Mots|Messages qui ont les mots spécifiés dans le champ d’objet ou le corps du message|
 |
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>Pièces jointes
 
 <br>
 
@@ -179,7 +179,8 @@ Ce tableau décrit les actions disponibles dans DLP.
 |Transmettre le message pour approbation à des approuveurs spécifiques|Modéré|Première propriété : *ModerateMessageByUser*</br>Deuxième propriété : *Addresses*|Le paramètre Moderate spécifie une action pour la règle DLP qui envoie le message électronique à un modérateur. Ce paramètre utilise la syntaxe : @{ ModerateMessageByUser = @(« emailaddress1 »,"emailaddress2 »,..."emailaddressN »)}|
 |Ajouter un destinataire|AddRecipients|Première propriété : *Field*</br>Deuxième propriété : *Addresses*|Ajoute un ou plusieurs destinataires au champ À/Cc/Cci du message. Ce paramètre utilise la syntaxe : @{<AddToRecipients \| CopyTo \| BlindCopyTo> = « emailaddress"}|
 |Ajouter le responsable de l’expéditeur en tant que destinataire|AddRecipients|Première propriété : *AddedManagerAction*</br>Deuxième propriété : *Field*|Ajoute le responsable de l’expéditeur au message en tant que type de destinataire spécifié (To, Cc, Bcc) ou redirige vers le responsable de l’expéditeur sans notification à l’expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « <To \| Cc \| Bcc>"}|
-Prédépender l’objet|PrependSubject|Chaîne|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  </br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
+Prédépender l’objet|PrependSubject|String|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  </br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
+|Modifier l’objet|ModifySubject|PswsHashTable | Supprimez du texte de la ligne d’objet qui correspond à un modèle spécifique et remplacez-le par un texte différent. Voir l'exemple ci-dessous. Vous pouvez : </br>- **Remplacer** toutes les correspondances dans l’objet par le texte de remplacement </br>- **Ajoute pour** supprimer toutes les correspondances dans l’objet et insère le texte de remplacement à la fin de l’objet. </br>- **Ajoutez un** prédépendant pour supprimer toutes les correspondances et insère le texte de remplacement au début de l’objet.|
 |Appliquer une clause d’exclusion de responsabilité HTML|ApplyHtmlDisclaimer|Première propriété : *Text*</br>Deuxième propriété : *Location*</br>Troisième propriété : *action de retour*|Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.</br>Ce paramètre utilise la syntaxe : @{ Text = " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
 |Supprimer la chiffrement de messages Office 365 et la protection des droits|RemoveRMSTemplate|s/o|Supprime le chiffrement Office 365 appliqué à un e-mail|
 |

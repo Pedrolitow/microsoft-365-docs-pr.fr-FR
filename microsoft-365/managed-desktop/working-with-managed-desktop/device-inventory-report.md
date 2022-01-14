@@ -3,18 +3,18 @@ title: Rapport d’inventaire des appareils
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e45bb0064554e9a0e5b9266c37aff86f101f6d99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 531410fb840675dc8930078570aab84e9a1f1425
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150329"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035677"
 ---
 # <a name="device-inventory-report"></a>Rapport d’inventaire des appareils
 
@@ -36,9 +36,9 @@ Dans la vue **Appareils,**  vous pouvez sélectionner l’onglet Exporter tout p
 - Stockage - Total en Go
 - Inscrit par l’UPN de l’utilisateur
 - Utilisateur affecté
-- Statut
+- État
 - Âge (mois)
-- Profils
+- Profil
 - Utilisateurs connectés
 - Version du TPM
 - Démarrage sécurisé activé

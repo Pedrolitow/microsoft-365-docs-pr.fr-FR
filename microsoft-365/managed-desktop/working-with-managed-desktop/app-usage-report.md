@@ -1,28 +1,28 @@
 ---
-title: Rapport d’utilisation des applications
+title: Rapport d'utilisation de l'application
 description: Utilisation du rapport d’utilisation de l’application
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d738a90655ce4c24f982d60c4d7c8fc11ad0074c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 241bb500ae7f89aac175c4b84ebd8d29ff3b6dcd
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364894"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034856"
 ---
-# <a name="app-usage-report"></a>Rapport d’utilisation des applications
+# <a name="app-usage-report"></a>Rapport d'utilisation de l'application
 
 Ce rapport vous aide à comprendre comment les applications sont utilisées sur Microsoft Manged Desktop appareils. Il peut également agir comme référence pour vous aider à évaluer l’impact sur vos utilisateurs lorsque des problèmes d’application sont détectés. 
 
 Les informations de ce rapport incluent : 
 
-- Nom de l’application : les applications avec n’importe quelle quantité d’utilisation signalée apparaissent dans cette liste. 
+- Nom de l’application : les applications avec une quantité quelconque d’utilisation signalée apparaissent dans cette liste 
 - Utilisation au premier plan : temps passé à interagir avec l’application au premier plan affichée en heures. 
 - Utilisation moyenne des jours de la semaine : utilisation moyenne par appareil à l’exception des week-ends 
 - Nombre d’appareils : nombre d’appareils de rapports qui contribuent à l’utilisation par application 

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 7e81c6eb7e6ce6f7ac2ea2f8a61f15084032e955
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 14760bfcb26fa1bf45c54661cbb6fc189bad7d93
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560167"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041089"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 

@@ -3,19 +3,19 @@ title: Conditions préalables pour les comptes invité
 description: Instructions de configuration pour les comptes invités et comment les ajuster
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db07ca3bb7577aed7b334ba21893f6fe026819a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64b0acabf76e1ceb12bd056b02cb2b949df9c957
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197136"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035039"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
@@ -39,12 +39,12 @@ Pour plus d’informations, voir [Activer la collaboration externe B2B et gérer
 
 ## <a name="unlicensed-intune-admin"></a>Administrateur Intune sans permis
 
-Le **paramètre Autoriser l’accès aux administrateurs** sans permis doit être activé. Si ce paramètre n’est pas activé, des erreurs peuvent se produire lorsque nous essayons d’accéder à votre organisation Azure AD pour le service. Vous pouvez activer ce paramètre en toute sécurité sans vous soucier des implications en matière de sécurité, car l’étendue de l’accès est définie par les rôles attribués aux utilisateurs, y compris le personnel opérationnel.
+Le **paramètre Autoriser l’accès aux administrateurs** sans permis doit être activé. Si ce paramètre n’est pas activé, des erreurs peuvent se produire lorsque nous essayons d’accéder à Azure AD organisation pour le service. Vous pouvez activer ce paramètre en toute sécurité sans vous soucier des implications en matière de sécurité, car l’étendue de l’accès est définie par les rôles attribués aux utilisateurs, y compris le personnel opérationnel.
 
 Pour activer ce paramètre, suivez les étapes suivantes :
 
 1. Go to the Microsoft Endpoint Manager [admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Accédez à **gestion des**  >  **licences Administrateur de**  >  **rôles d’administration des locataires.**
+2. Accédez à **gestion des licences Administrateur**  >  **de rôles**  >  **d’administration des locataires.**
 3. Dans **Autoriser l’accès aux administrateurs** sans permis, sélectionnez **Oui.**
 
 > [!IMPORTANT]

@@ -4,21 +4,21 @@ description: Comment déployer des Microsoft 365 Apps, comment ils sont mis à j
 keywords: historique des modifications
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 675b9d32c60febd7e70dfd64f49b7869c489aa0b
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199824"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034808"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
+# <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
@@ -29,7 +29,7 @@ Microsoft Manged Desktop garantit que Applications Microsoft 365 pour les grande
 - PowerPoint
 - Outlook
 - Éditeur
-- Accès
+- Access
 - Skype Entreprise
 - OneNote
 
@@ -50,20 +50,20 @@ Microsoft Manged Desktop ne prend pas en charge le déploiement de la version 32
 
 Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
 
-Microsoft Manged Desktop chaque version afin d’identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Microsoft Manged Desktop les mises à jour de différents groupes afin de laisser le temps à la validation et aux tests de la manière suivante : 
+Microsoft Manged Desktop chaque version afin d’identifier les problèmes potentiels dans votre environnement. Le déploiement est terminé 28 jours après la publication du groupe de produits Microsoft 365 App. Microsoft Manged Desktop les mises à jour de différents groupes afin de laisser le temps à la validation et aux tests de la manière suivante : 
 
 - Test : zéro jour
 - First: zero days
 - Rapide : 3 jours
 - Étendue : 7 jours
 
-Microsoft Manged Desktop définit une échéance de mise à jour de sept [jours](/deployoffice/configure-update-settings-microsoft-365-apps) pour les appareils. Une fois la mise à jour disponible, elle doit être installée dans un délai de sept jours. Les [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utilisateurs sont avertis que des mises à jour sont requises à plusieurs emplacements : l’application, dans la bac système 12 heures avant l’échéance, et ils reçoivent un avertissement de 15 minutes avant l’échéance. Toutes les Microsoft 365 Apps doivent être fermées pour que la mise à jour soit terminée.
+Microsoft Manged Desktop définit une échéance de mise à jour de sept [jours](/deployoffice/configure-update-settings-microsoft-365-apps) pour les appareils. Une fois la mise à jour disponible, elle doit être installée dans un délai de sept jours. Les [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utilisateurs sont avertis que des mises à jour sont requises à plusieurs emplacements : l’application, dans le bac système 12 heures avant l’échéance, et ils reçoivent un avertissement de 15 minutes avant l’échéance. Toutes les Microsoft 365 Apps doivent être fermées pour que la mise à jour soit terminée.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Interruption ou interruption d’une mise à jour
 
 Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur via Microsoft Manged Desktop portail.
 
-Au cours d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
+Lors d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
@@ -83,7 +83,7 @@ Microsoft Manged Desktop tous les paramètres de mise à jour des appareils [gé
 
 **Valeur par défaut**: Activé
 
-Cette stratégie est configurée afin de garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
+Cette stratégie est configurée pour garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
 
 ### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>Définir une échéance lorsque des mises à jour doivent être appliquées
 
@@ -114,7 +114,7 @@ Une combinaison des **stratégies UpdatePath** et **UpdateChannel** est utilisé
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Spécifier la version cible de Microsoft 365 Apps
 
-La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop pour revenir en arrière ou épingler une version spécifique d Office. 
+La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop afin de revenir en arrière ou épingler une version spécifique de Office. 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Masquer l’option permettant d’activer ou de désactiver Office mises à jour automatiques
@@ -125,7 +125,7 @@ Ce paramètre est requis pour que Microsoft Manged Desktop atteindre ses objecti
 
 ### <a name="first-run-settings"></a>Paramètres de première run 
 
-Plusieurs paramètres affectent le comportement lors de la première Office’exécuter.
+Plusieurs paramètres affectent le comportement lors de la première Office’est exécuté.
 
 ### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>Accepter les termes du contrat de licence pour le compte de l’utilisateur final
 
@@ -147,21 +147,21 @@ Il existe d’Microsoft 365 de l’application que Microsoft Manged Desktop pouv
 
 **Valeur par défaut**: Disabled
 
-Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Microsoft Manged Desktop des opérations de l’utilisateur afin que ce paramètre soit activé. 
+Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l’Microsoft Manged Desktop operations qui demande l’activer. 
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 
 Il existe de nombreuses autres stratégies que Microsoft Manged Desktop n’a pas encore définies dans le cadre de notre service. Vous pouvez configurer ces stratégies à l’aide Microsoft Intune, qui utilise le service [Office stratégie cloud.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Pour définir ces stratégies, suivez les étapes suivantes :
 
-1. Connectez-vous au centre Microsoft Endpoint Manager’administration.
+1. Connectez-vous au Centre d’administration Microsoft Endpoint Manager.
 2. Sélectionner **des stratégies > applications pour Office applications > créer**
 3. Dans la page **Créer une** configuration de stratégie, faites les choses suivantes :
     - Entrez un nom.
     - Fournissez une description (facultative).
     - Dans **les affectations,** choisissez si cette stratégie s’applique à tous les utilisateurs de Applications Microsoft 365 pour les grandes entreprises ou uniquement aux utilisateurs qui accèdent anonymement aux documents à l’aide de Office sur le Web.
-    - Sélectionnez le groupe de sécurité basé sur AAD affecté à la configuration de la stratégie. Chaque configuration de stratégie ne peut être affectée qu’à un seul groupe, et chaque groupe ne peut être affecté qu’à une seule configuration de stratégie.
+    - Sélectionnez le AAD de sécurité basé sur la stratégie qui est affecté à la configuration de stratégie. Chaque configuration de stratégie ne peut être affectée qu’à un seul groupe, et chaque groupe ne peut être affecté qu’à une seule configuration de stratégie.
     - Configurez les paramètres de stratégie à inclure dans la configuration de stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée à Applications Microsoft 365 pour les grandes entreprises pour Windows appareils, Office sur le Web ou tous.
 4. Une fois que vous avez effectué vos sélections, choisissez **Créer.**
 
 > [!NOTE]
-> Office Les stratégies de configuration ne prisent en charge que le déploiement basé sur l’utilisateur
+> Office stratégies de configuration ne supportent que le déploiement basé sur l’utilisateur

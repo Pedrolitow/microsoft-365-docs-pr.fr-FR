@@ -78,7 +78,7 @@
           href: communication-compliance-reports-audits.md
         - name: Conformité de la communication avec les solutions SIEM
           href: communication-compliance-siem.md
-        - name: Étude de cas - Contoso configure rapidement une politique de contenu inapproprié.
+        - name: "Étude de cas\_: Contoso configure rapidement une stratégie de contenu inappropriée."
           href: communication-compliance-case-study.md
     - name: Gestion des risques internes
       items:

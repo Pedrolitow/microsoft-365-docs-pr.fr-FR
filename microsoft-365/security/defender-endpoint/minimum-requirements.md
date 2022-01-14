@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b48503eddbb0093bc5e022d981fb719cd6f42e47
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 05a3505e3fb77b4286eb87445380713b2831beaf
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941803"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041110"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -97,6 +97,11 @@ Pour plus d’informations sur les versions Windows 10, voir (/windows/release-h
 > Les ordinateurs virtuels Windows 10 Entreprise 2016 LTSB peuvent rencontrer des problèmes de performances s’ils sont exécutés sur des plateformes de virtualisation autres que Microsoft.
 >
 > Pour les environnements virtuels, nous vous recommandons Windows 10 Entreprise LTSC 2019 ou une ultérieure.
+
+Lorsque les composants sont à jour sur les systèmes d’exploitation Microsoft Windows, la prise en charge de Microsoft Defender for Endpoint suit le cycle de vie du système d’exploitation respectif. Pour plus d’informations, voir [FAQ sur le cycle de vie.](/lifecycle/faq/general-lifecycle) De nouvelles fonctionnalités sont généralement fournies uniquement sur les systèmes d’exploitation qui n’ont pas encore atteint la fin de leur cycle de vie. Les mises à jour de l’intelligence de la sécurité (mises à jour de définition et de moteur) et la logique de détection continueront d’être fournies jusqu’au minimum :
+
+- Date [de fin du support](/lifecycle/products/) (pour les systèmes d’exploitation qui n’ont pas de programme ESU (Extended Security Updates).
+- La [fin de la date ESU](/lifecycle/faq/extended-security-updates) (pour les systèmes d’exploitation qui ont un programme ESU).
 
 
 

@@ -3,19 +3,19 @@ title: Accès au portail d’administration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 description: Découvrez comment rechercher et utiliser le portail d’administration, y compris le contrôle de l’accès à celui-ci.
 ms.service: m365-md
-ms.author: jaimeo
-author: jaimeo
+ms.author: tiaraquan
+author: tiaraquan
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
-ms.openlocfilehash: 6d327c88da229947ab47aee1fba2dd41def94bfb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+manager: dougeby
+ms.openlocfilehash: 9b3e170931fc45eaed98767bd524767a5c03744a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943555"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034460"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 

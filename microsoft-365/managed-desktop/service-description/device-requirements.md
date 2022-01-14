@@ -3,22 +3,22 @@ title: Configuration requise de l’appareil
 description: Résumé de la configuration matérielle et logicielle minimale requise pour que les appareils fonctionnent Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209464"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034556"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Microsoft Manged Desktop sur le site [Windows Pro d’entreprise](https://www.microsoft.com/en-us/windows/business/devices)
+Microsoft Manged Desktop évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Microsoft Manged Desktop sur le site [Windows Pro d’entreprise](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
 > Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par <b>\*</b> . 
@@ -45,7 +45,7 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 
 Ce logiciel doit être préinstallé sur l’appareil :
 
-- <b>\*</b>Windows 10 ou Windows 11 : édition Enterprise, Pro ou Pro Workstation
+- <b>\*</b>Windows 10 ou Windows 11 : Enterprise, Pro ou Pro Workstation Edition
 - la version 64 bits de Applications Microsoft 365 pour les grandes entreprises 
 - Tous les pilotes de périphérique applicables
 
@@ -63,7 +63,7 @@ Pour plus d’informations sur ces fonctionnalités et les technologies qui y so
 
 > [!NOTE]
 >- ARM processeurs ne sont pas pris en charge.
->- <b>\*</b>Windows 11 présente une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
+>- <b>\*</b>Windows 11 a une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
 
 Les appareils doivent respecter ou dépasser les limites suivantes pour le stockage et la mémoire :
 
@@ -75,7 +75,7 @@ Si l’appareil a été effectué après le 1er juillet 2020, il doit également
 
 ## <a name="recommended-features"></a>Fonctionnalités recommandées
 
-Vos utilisateurs auront une bien meilleure expérience si vous choisissez les appareils qui disposent de ces fonctionnalités :
+Vos utilisateurs auront une bien meilleure expérience si vous choisissez des appareils dotés de ces fonctionnalités :
 
 - Soit un processeur intel vPro-platform, soit un processeur Pro AMD Ryzen
 - Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go

@@ -31,6 +31,14 @@ productDirectory:
   title: Prise en main
   summary: 'Configurez votre abonnement et votre e-mail, ajoutez des utilisateurs, puis installez les applications.'
   items:
+    - title: 20 principaux articles d’aide pour les administrateurs les plus populaires ce mois-ci
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: Consultez les articles d’aide les plus populaires auprès des autres administrateurs.
+      url: top-m365-admin-articles.yml
+    - title: Vidéothèque de formation de l’administrateur
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
+      summary: Découvrez comment configurer et gérer les Microsoft 365 pour votre entreprise avec de courtes vidéos.
+      url: admin-video-library.yml
     - title: Prise en main
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
       summary: 'Inscrivez-vous, puis configurez Microsoft 365.'

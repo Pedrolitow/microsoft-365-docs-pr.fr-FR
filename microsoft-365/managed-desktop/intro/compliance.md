@@ -3,18 +3,18 @@ title: Conformité
 description: Cet article répertorie les normes de conformité applicables aux Microsoft Manged Desktop.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b2200a649394c750aaaee76ce736934410affa5e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212748"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035075"
 ---
 # <a name="compliance"></a>Conformité
 
@@ -45,7 +45,7 @@ Microsoft Manged Desktop a obtenu les certifications suivantes :
 Vous trouverez des informations pertinentes, notamment des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir des informations sur les offres Microsoft Cloud Service client. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
 
 > [!NOTE]
-> Comme Microsoft Manged Desktop s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous trouverez généralement des Microsoft Manged Desktop sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
+> Comme Microsoft Manged Desktop s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous pouvez généralement trouver Microsoft Manged Desktop sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
 
 ## <a name="shared-responsibility"></a>Responsabilité partagée
 
