@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 18b56a4e427053f29dcc054ec9384b4e34307c40
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 4fef837b053f71e2bd725f07204605d3ab0a55a1
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034616"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041169"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -372,6 +372,7 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 - Ajouter le responsable de l’expéditeur en tant que destinataire
 - Suppression du chiffrement de messages O365 et de la protection des droits
 - Prédépender l’objet de l’e-mail
+- Modifier l’objet du message électronique
 - Ajouter une clause d’exclusion de responsabilité HTML
 
 #### <a name="sharepoint-sites-location-actions"></a>SharePoint actions d’emplacement des sites :

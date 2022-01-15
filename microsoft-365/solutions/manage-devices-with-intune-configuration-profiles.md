@@ -13,19 +13,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Configuration profiles
-- Windows security baselines for Intune
-- customize configuration profiles-
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 94825143349b329cf571c9735a3573f8fc65e8b8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939296"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049250"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Étape 5. Déployer des profils d’appareil dans Microsoft Intune
 

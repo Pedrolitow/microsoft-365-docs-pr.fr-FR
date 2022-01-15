@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent des informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 806c5043d21be15d965814101fe87c00785ca996
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
+ms.openlocfilehash: 10bcaa4286f2d3036241ef44e411e7dd0e235bb6
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914607"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049335"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -50,11 +50,11 @@ Chaque entité de type d’informations sensibles est définie par les champs ci
 
 - name: how the sensitive information type is referred to
 - description : décrit ce que le type d’informations sensibles recherche
-- modèle : un modèle définit ce qu’un type d’informations sensibles détecte. Il se compose des composants suivants :
+- modèle : un modèle définit ce qu’un type d’informations sensibles détecte. Il se compose des composants suivants.
     - Élément principal : élément principal que le type d’informations sensibles recherche. Il peut s’agit **d’une expression** régulière avec ou sans validation de la liste de contrôle, d’une liste de mots **clés,** d’un dictionnaire de mots clés **ou** d’une **fonction.**
     - Élément de prise en charge : éléments qui agissent en tant que preuves justificatives qui contribuent à augmenter la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agit d’une expression régulière avec ou sans validation de la liste de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés.
     - Niveau de confiance : les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves justificatives détectées avec l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez.
-    - Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge
+    - Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge.
 
 ![Diagramme de preuve corroborante et fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
@@ -87,7 +87,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_argentina_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_argentina_national_id est trouvé.
 
@@ -101,12 +101,12 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Keywords
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identité 
+- Identity 
 - Carte d’identité nationale d’identification 
 - DNI 
 - Registre national des personnes de la NIC 
@@ -117,15 +117,15 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ### <a name="more-on-confidence-levels"></a>Plus d’informations sur les niveaux de confiance
 
-Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent davantage de preuves justificatives à proximité immédiate de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves à proximité. 
+Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent plus de preuves justificatives à proximité de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves justificatives à proximité immédiate. 
 
 Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entraîner davantage de faux négatifs. Les niveaux de confiance faibles ou moyens renvoient plus de faux positifs, mais peu à zéro faux négatifs.
 
-- **faible niveau de** confiance : valeur 65, les éléments qui correspondent contiennent le moins de faux négatifs, mais le plus de faux positifs. Une confiance faible renvoie toutes les correspondances de confiance faible, moyenne et élevée.
-- **confiance moyenne**: valeur de 75, les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée.  
-- **niveau de confiance** élevé : valeur 85, les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance.  
+- **faible niveau de confiance**: les éléments qui correspondent contiennent le moins de faux négatifs, mais le plus de faux positifs. Une confiance faible renvoie toutes les correspondances de confiance faible, moyenne et élevée. Le niveau de confiance faible a une valeur de 65.
+- **confiance moyenne**: les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée. Le niveau de confiance moyen a une valeur de 75.
+- **niveau de confiance élevé**: les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance et a une valeur de 85.  
 
-Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles nombres, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
+Vous devez utiliser des modèles de niveau de confiance élevé avec un nombre faible, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
 
 > [!NOTE]
 > Si vous avez des stratégies existantes ou des types d’informations sensibles personnalisés (SIT) définis à l’aide de niveaux de confiance basés sur le nombre (également défini comme précision), ils seront automatiquement mappés aux trois niveaux de confiance discrets ; confiance faible, confiance moyenne et confiance élevée, dans l’interface utilisateur du Centre de sécurité @ conformité.
@@ -135,32 +135,30 @@ Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles 
 
 ## <a name="creating-custom-sensitive-information-types"></a>Création de types d’informations sensibles personnalisés
 
-Pour créer des types d’informations sensibles personnalisés dans le Centre de sécurité et conformité, vous disposez des options suivantes :
+Vous pouvez choisir parmi plusieurs options pour créer des types d’informations sensibles personnalisés dans le Centre de conformité.
 
-- **Utiliser l’interface utilisateur** Vous pouvez configurer un type d’informations sensibles personnalisé à l’aide de l’interface utilisateur du Centre de sécurité et de conformité. Cette méthode vous permet d’utiliser des expressions régulières, des mots clés et des dictionnaires de mots clés. Pour en savoir plus, voir [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
+- **Utilisez l’interface utilisateur** : vous pouvez configurer un type d’informations sensibles personnalisé à l’aide de l’interface utilisateur du Centre de conformité. Cette méthode vous permet d’utiliser des expressions régulières, des mots clés et des dictionnaires de mots clés. Pour en savoir plus, voir [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
 
-- **Utiliser EDM** Vous pouvez configurer des types d’informations sensibles personnalisés à l’aide d’une classification de correspondance exacte des données (EDM). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir [En savoir plus sur les types d’informations](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)sensibles basés sur la correspondance de données exactes.
+- **Utiliser EDM** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de la classification EDM (Exact Data Match). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir En savoir plus sur les types d’informations sensibles basés sur les [correspondances de données exactes.](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
-- **Utiliser PowerShell** vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
-
-
+- **Utiliser PowerShell** : vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > Des niveaux de confiance améliorés sont disponibles pour une utilisation immédiate dans la protection contre la perte de données pour les services Microsoft 365, les Protection des données Microsoft pour les services Microsoft 365, la conformité des communications, la gouvernance des informations et la gestion des enregistrements.
-> Microsoft 365 La Protection des informations prend désormais en charge les langues de jeu de caractères à doubles caractères pour :
+> Microsoft 365 Protection des informations prend désormais en charge les langues de jeu de caractères à doubles caractères pour :
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
 > 
-> Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+> Cette prise en charge est disponible pour les types d’informations sensibles. Pour plus [d’informations,](mip-dbcs-relnotes.md) voir la prise en charge de la protection des informations pour les jeux de caractères à doubles caractères.
 
 > [!TIP]
 > Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex.
 > - Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
 > 
-> En plus des caractères chinois/japonais/caractères sur deux octets, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), il est recommandé de créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux octets et un autre pour l’anglais uniquement. 
-> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密性が高い » et « document 机密的 », vous devez créer deux listes de mots clés. 
+> En plus des caractères chinois/japonais/sur deux caractères d’byte, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), vous devez créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux octets et un autre pour l’anglais uniquement. 
+> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密 « 機密 « « « 机密secument » et « 机密socument », vous devez créer deux listes de mots clés. 
 >     1. Extrêmement confidentiel
 >     2. Document 機密性が高い, 机密的 et document 机密的
 > 

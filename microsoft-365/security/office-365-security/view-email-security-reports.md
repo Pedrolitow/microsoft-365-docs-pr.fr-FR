@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc60c0ed388a8bc30158fbf7366e16776b0b5dd5
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d8277a26ace7b2fa2fcd2eee6f622c70ad77b205
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872092"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054939"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité du courrier dans le portail Microsoft 365 Defender messagerie
 
@@ -34,7 +34,7 @@ ms.locfileid: "61872092"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités <https://security.microsoft.com> anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-these-reports)vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
@@ -384,7 +384,7 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
-- **Nom**
+- **Name**
 - **Soumis par**
 - **Raison de l’envoi**:
   - **Non indésirable**
@@ -534,14 +534,14 @@ Dans **l’affichage des données par courrier \> indésirable** et répartition
 - **Filtre général**
 - **Détection d’analyse** mixte : plusieurs filtres ont contribué au verdict du message.
 - **Correspondance d’empreinte** digitale : le message a été marqué comme étant mauvais en raison de messages précédents.
-- **Réputation du domaine**
+- **Réputation du domaine**: ce message a été considéré comme courrier indésirable en fonction de la réputation du domaine de l’expéditeur.
 - **En bloc**: éléments détectés comme dépassant le paramètre en bloc pour l’utilisateur.
 - **Réputation d’IP**: le message a été considéré comme courrier indésirable en fonction de la réputation de l’adresse IP d’envoi.
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -643,7 +643,7 @@ Dans l’affichage des données par hameçonnage de **messagerie, \>** affichage
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -1026,8 +1026,8 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
-- **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur sécurité**
+- **Lecteur global**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -1119,7 +1119,7 @@ Pour gérer les rapports programmés que vous avez déjà créés, vous devez su
 
 2. Dans la page **Rapports de téléchargement,** les informations suivantes sont affichées pour chaque rapport disponible :
    - **Date de début**
-   - **Nom**
+   - **Name**
    - **Type de rapport**
    - **Dernière envoi**
    - **Direction**

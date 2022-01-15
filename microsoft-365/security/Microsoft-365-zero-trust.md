@@ -15,17 +15,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- deploy zero trust
-- zero trust strategy
-- M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- M365-security-compliance
+ms.openlocfilehash: 5451d0876530cce1e372dd8f5308f75596c37513
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934476"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049274"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de déploiement zéro trust Microsoft 365
 

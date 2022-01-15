@@ -12,18 +12,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Create compliance policies
-- Intune device compliance policy-
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 19f14ded031e86de13a7fc2da5cab1032b2ef985
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7e55ad6bf1d1cb7d95e43cb23b9c74decc8548df
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939344"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049298"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Étape 3. Configurer des stratégies de conformité pour des appareils avec Intune
 

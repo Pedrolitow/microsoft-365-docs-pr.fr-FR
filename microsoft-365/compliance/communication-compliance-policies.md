@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5078943e9b2bf158a457d263b2db65e9bfca7659
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: f27feb9a68340bdb39fa57269c4d64f0d9ea561e
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034991"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041017"
 ---
 # <a name="communication-compliance-policies"></a>Stratégies de conformité des communications
 
@@ -117,6 +117,9 @@ Vous avez la possibilité d’inclure des types d’informations sensibles dans 
 - Santé et médical
 - Confidentialité
 - Type d’informations personnalisé
+
+> [!IMPORTANT]
+> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances pris en charge pour SIT.](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, voir Définitions d’entités de [type d’informations sensibles.](sensitive-information-type-entity-definitions.md)
 

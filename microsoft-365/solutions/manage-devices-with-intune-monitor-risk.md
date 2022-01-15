@@ -14,20 +14,18 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Connect Intune to Defender
-- monitor device risk
-- monitor device compliance
+- M365-security-compliance
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d96e713943a8b8c9437d440f62c46c9138a68db4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939200"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049130"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Étape 6. Surveiller les risques et la conformité des appareils aux lignes de base de sécurité
 

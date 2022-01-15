@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/14/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a156b7232c20703c0f2eb320592a596e671d16f9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 58b1ed0ab43481d8c35244efbb25d8e46c830272
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942727"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055003"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les conditions de base requises pour Defender pou
 
 | Conditions requises | Description |
 |:---|:---|
-| Conditions d'octroi de licence | Defender pour Endpoint Plan 1 |
+| Conditions d'octroi de licence | Defender for Endpoint Plan 1 (anciennement appelé Microsoft Defender for Endpoint Lite)|
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Systèmes d’exploitation | Windows 10, version 1709 ou ultérieure <br/>macOS : 11.5 (Big Sur), 10.15.7 (Contrôle), ou 10.14.6 (Mojave) <br/>iOS <br/>Système d’exploitation Android  |
 | Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
@@ -136,7 +136,7 @@ Pour configurer votre protection nouvelle génération dans Microsoft Endpoint M
 
 2. Sélectionnez **l’Antivirus de sécurité des** points de  >  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante, créez-en une.)
 
-3. Définissez ou modifiez vos paramètres de configuration antivirus. Besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
+3. Définissez ou modifiez vos paramètres de configuration antivirus. Vous avez besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
 
    - [Paramètres pour Windows 10 Antivirus Microsoft Defender stratégie dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configurer Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)
@@ -397,7 +397,7 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 - [Windows Defender de contrôle d’application dans différents scénarios : types d’appareils](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez passé par le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour Endpoint. 
 

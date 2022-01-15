@@ -15,21 +15,17 @@ description: Configurez la protection des applications mobiles avec des stratég
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Intune App Protection policies
-- APP
-- mobile application management
-- MAM
-- set up mobile ap protection
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 0fef855ef30afe3c2c496bf15676b4f8d86760b3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4535e4a05ac8408e57c767999de66c39a4bf0274
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939356"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049238"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Étape 1. Implémenter des stratégies de protection des applications
 

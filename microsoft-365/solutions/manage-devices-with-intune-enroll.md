@@ -13,19 +13,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- enroll devices into management
-- enroll devices with Intune
-- Intune mobile device platforms
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b4beeeb31602eca35d421f11f045307effb401ae
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b1f14944e89f94ab48e61103cdd7b9d78a3bdfea
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939284"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049226"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Étape 2. Inscrire des appareils dans la gestion avec Intune
 

@@ -15,16 +15,16 @@ ms.localizationpriority: high
 ms.collection:
 - Conditional access policy
 - Microsoft Intune
-- Intune device management
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: ''
-ms.openlocfilehash: 3549dda4551c1a1e7facad1fd665867f8339bf8f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8a953c76a3461b0f6dbf1b3663d5cef41f038371
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940805"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049118"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Étape 4. Exiger des appareils sains et conformes avec Intune
 

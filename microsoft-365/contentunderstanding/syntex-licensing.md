@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: En savoir plus sur les licences pour SharePoint Syntex
-ms.openlocfilehash: c8ed6b8b5864e0d859e0cbf8655406966e78ff3b
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 497952498e3ead2166f7cda11f050d929e6b6b9c
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660153"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054919"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Gestion des licences pour SharePoint Syntex
 
@@ -35,7 +35,6 @@ Les tâches suivantes nécessitent une [licence SharePoint Syntex](https://www.m
 - Création d’un modèle de traitement de formulaire via le point d’entrée dans une bibliothèque
 - Chargement de contenu dans une bibliothèque où un modèle de compréhension des documents ou de traitement des formulaires a été appliqué.
 - Exécution d'un modèle de compréhension des documents à la demande
-- Affichage des métadonnées extraites de fichiers à l’aide d’un modèle de compréhension de document ou de traitement de formulaires (Les utilisateurs doivent être titulaires d’une licence d’accès et d’utilisation des métadonnées associées aux fichiers traitées, quel que soit l’endroit où les fichiers sont déplacés.)
 - Utilisez les services de taxonomie Premium. (Les services de taxonomie Premium comprennent l’importation d’ensembles de termes basés sur SKOS, l’envoi de types de contenu d’entreprise aux sites associés au hub et les rapports de magasin de termes.)
 
 Les utilisateurs sans licence peuvent avoir accès à un centre de contenu et créer des modèles de compréhension de document, mais ne peuvent pas les appliquer à une bibliothèque de documents.

@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery Microsoft 365.
-ms.openlocfilehash: c007ccd969adca67c10a1324f64cbf6df32c8e74
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ea1b9d4d9d6b68bd4b37c285d9b9229995ef3140
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064111"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054895"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes par mot clé et conditions de recherche pour eDiscovery
 
@@ -68,7 +68,7 @@ Le tableau suivant répertorie les propriétés des messages électroniques qui 
 |Kind|Type de message électronique à rechercher. Valeurs possibles : <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (renvoie des éléments de conversations, de réunions et d’appels Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie des messages électroniques, des conversations de messagerie instantanée (y compris Skype Entreprise conversations et conversations dans Microsoft Teams) et des messages vocaux qui répondent aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres dans Microsoft 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, [voir l’archivage](https://www.microsoft.com/?ref=go)de données tierces dans Office 365 .|
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont De, À, Cc et<sup>Cci. 1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|Messages reçus le 15 avril 2021. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2021 et le 31 mars 2021.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et<sup>Cci. 1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et<sup>Cci. 1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400` <p> `size:1..1048567`|Messages dont la taille est supérieure à 25 Mo. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique. <p> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne retourne pas uniquement les messages qui ont une correspondance exacte. Par exemple, si vous recherchez, vos résultats incluront des messages dont l’objet est «  `subject:"Quarterly Financials"` Quarterly Financials 2018 ».|`subject:"Quarterly Financials"` <p> `subject:northwind`|Messages contenant l’expression « Quarterly Financials » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -110,7 +110,7 @@ Pour obtenir la liste complète des propriétés SharePoint qui peuvent être re
 |SharedWithUsersOWSUser|Documents qui ont été partagés avec l’utilisateur spécifié et affichés sur la **page** Partagé avec moi sur le site OneDrive Entreprise’utilisateur. Ce sont des documents qui ont été explicitement partagés avec l’utilisateur spécifié par d’autres personnes de votre organisation. Lorsque vous exportez des documents qui correspondent à une requête de recherche qui utilise la propriété SharedWithUsersOWSUser, les documents sont exportés à partir de l’emplacement de contenu d’origine de la personne qui a partagé le document avec l’utilisateur spécifié. Pour plus d’informations, voir [Recherche de contenu de site partagé au sein de votre organisation.](#searching-for-site-content-shared-within-your-organization)|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|Les deux exemples retournent tous les documents internes qui ont été explicitement partagés avec Garth Fort et qui apparaissent sur la **page** Partagé avec moi dans le compte OneDrive Entreprise de Garth Fort.|
 |Site|URL d’un site ou d’un groupe de sites de votre organisation.|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|Le premier exemple renvoie des éléments à partir des sites OneDrive Entreprise pour tous les utilisateurs de l’organisation. Le second exemple renvoie les éléments de tous les sites d’équipe.|
 |Size|Taille d'un élément, en octets.|`size>=1` <p> `size:1..10000`|Le premier exemple renvoie les éléments dont la taille est supérieure à 1 octet. Le deuxième exemple renvoie les éléments dont la taille est comprise entre 1 et 10 000 octets.|
-|Titre|Titre du document. La propriété Title est une métadonnées spécifiée dans Microsoft Office documents. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
+|Title|Titre du document. La propriété Title est une métadonnées spécifiée dans Microsoft Office documents. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
 
 ## <a name="searchable-contact-properties"></a>Propriétés de contact utilisables dans une recherche
 
@@ -138,7 +138,7 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 |OfficeLocation|Valeur de la **propriété Office** ou **Office’emplacement.**|
 |OtherAddress|Valeur de la propriété **d’adresse Other.**|
 |Surname|Nom dans la **propriété Nom** de famille.|
-|Titre|Titre dans la **propriété Fonction.**|
+|Title|Titre dans la **propriété Fonction.**|
 
 ## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
 
@@ -222,15 +222,15 @@ Créez une condition à l’aide des propriétés de messagerie lors de la reche
 
 |Condition|Description|
 |---|---|
-|Type de message|Type de message à rechercher. Il s’agit de la même propriété que la propriété de messagerie Kind. Valeurs possibles : <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>faxe</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
+|Type de message|Type de message à rechercher. Il s’agit de la même propriété que la propriété de messagerie Kind. Valeurs possibles : <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>fax</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont De, À, Cc et Cci.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s’agit de la même propriété que la propriété de messagerie ItemClass. Il s’agit également d’une condition à valeurs multiples. Pour sélectionner plusieurs classes de messages, maintenez la touche **Ctrl** en main, puis cliquez sur deux ou plusieurs classes de message dans la liste de listes que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est connectée logiquement par l’opérateur **OR** dans la requête de recherche correspondante. <p> Pour obtenir la liste des classes de message (et leur ID de classe de message  correspondant) qui sont utilisées par Exchange et que vous pouvez sélectionner dans la liste des classes de message, voir Types d’éléments et Classes de [messages.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et Cci.|
-|Expéditeur|Expéditeur d’un message électronique.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et Cci.|
+|Sender|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
-|À|Destinataire d’un message électronique dans le champ À.|
+|To|Destinataire d’un message électronique dans le champ À.|
 
 ### <a name="conditions-for-document-properties"></a>Conditions des propriétés de document
 
@@ -239,7 +239,7 @@ Créez une condition à l’aide des propriétés de document lors de la recherc
 |Condition|Description|
 |---|---|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une autre personne qui le télécharge ensuite sur SharePoint, le document conserve l’auteur d’origine.|
-|Titre|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
+|Title|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
 |Created|Date de création d’un document.|
 |Dernière modification|Date de la dernière modification apportée à un document.|
 |Type de fichier|Extension d’un fichier ; par exemple, docx, one, pptx ou xlsx. Il s’agit de la même propriété que la propriété de site FileExtension. <p> **Remarque :** Si vous incluez une condition de type de fichier à l’aide de l’opérateur **Equals** ou **Equals dans** une requête de recherche, vous ne pouvez pas utiliser une recherche de préfixe (en incluant le caractère générique ( ) à la fin du type de fichier) pour renvoyer toutes les versions d’un type de \* fichier. Si vous le faites, le caractère générique sera ignoré. Par exemple, si vous incluez la condition, seuls les fichiers avec `Equals any of doc*` une extension `.doc` seront renvoyés. Les fichiers avec une extension `.docx` de ne seront pas renvoyés. Pour renvoyer toutes les versions d’un type de fichier, la paire *property:value* a été utilisée dans une requête de mot clé ; par exemple, `filetype:doc*` .|
@@ -257,7 +257,7 @@ Lorsque vous ajoutez une condition, vous pouvez sélectionner un opérateur pert
 |Ne contient pas|`-property:value` <p> `NOT property:value`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui ne contiennent aucune partie de la valeur de chaîne spécifiée.|
 |N’est pas égal à|`-property=value` <p> `NOT property=value`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui ne contiennent pas la chaîne spécifique.|
 |Égal à|`size=value`|Renvoie les éléments qui sont égaux à la taille spécifiée. <sup>1</sup>|
-|Est égal à l’un des éléments|`(property=value) OR (property=value)`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui correspondent exactement à une ou plusieurs valeurs de chaîne spécifiées.|
+|Est égal à l’un des éléments|`(property=value) OR (property=value)`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui correspondent à une ou plusieurs valeurs de chaîne spécifiées.|
 |Supérieur|`size>value`|Renvoie les éléments dont la propriété spécifiée est supérieure à la valeur spécifiée. <sup>1</sup>|
 |Supérieur ou égal|`size>=value`|Renvoie les éléments dont la propriété spécifiée est supérieure ou égale à la valeur spécifiée. <sup>1</sup>|
 |Moins|`size<value`|Renvoie les éléments supérieurs ou égaux à la valeur spécifique. <sup>1</sup>|
@@ -278,6 +278,8 @@ Gardez les points suivants à l’esprit lorsque vous utilisez des critères de 
 - Si vous ajoutez plusieurs conditions pour la même propriété, celles-ci sont connectées sur le plan logique par l’opérateur **OR**. Cela signifie que les éléments renvoyés sont ceux qui satisfont la requête de mot-clé et l’une des conditions. Par conséquent, les groupes de mêmes conditions sont connectés par l’opérateur **OR** et les ensembles de conditions uniques sont connectés par l’opérateur **AND**.
 
 - Si vous ajoutez plusieurs valeurs (séparées par des virgules ou des points-virgules) à une condition unique, ces valeurs sont connectées par l’opérateur **OU**. Les éléments renvoyés sont ceux qui contiennent l’une des valeurs spécifiées pour la propriété dans la condition.
+
+- Toute condition qui utilise un opérateur avec la logique **Contains** et Equals retourne des résultats de recherche **similaires** pour les recherches de chaînes simples. Une recherche de chaîne simple est une chaîne dans la condition qui n’inclut pas de caractère générique). Par exemple, une condition qui utilise **equals any of** retourne les mêmes éléments qu’une condition qui utilise **Contains any of**.
 
 - La requête de recherche créée à l’aide de la zone de mots clés et des conditions s’affiche dans la **page** Recherche, dans le volet d’informations de la recherche sélectionnée. Dans une requête, tout ce qui se place à droite de la notation indique les conditions qui  `(c:c)` sont ajoutées à la requête.
 

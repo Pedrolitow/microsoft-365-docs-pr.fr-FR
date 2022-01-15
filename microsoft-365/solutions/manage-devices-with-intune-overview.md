@@ -3,7 +3,10 @@ title: Gérer des appareils avec Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -11,18 +14,17 @@ description: Inscrivez vos appareils de point de terminaison dans Microsoft Intu
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- enroll devices into Intune
-- manage device endpoints
-- zero trust deployment stack
-- device management with zero trust
+- M365-security-compliance
+- m365solution-managedevices
+- m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 7a5a4ceb9f96a90d5778e1f2470bfda29a681e49
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 70824645edbf7c56a77aed76ec8fd07784bc43da
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645037"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049311"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Vue d’ensemble de la gestion des appareils avec Intune
 
