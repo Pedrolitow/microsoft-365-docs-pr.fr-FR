@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: ecb4a580eb3ada9bcb3d38a8bdfdbc12c9dc7107
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327579"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049347"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -190,6 +190,9 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
 - Le contenu comprend entre 1 et 9 instances de n’importe quel de ces trois types d’informations sensibles. La valeur par défaut de **à** est **N’importe lequel**.
 
 Pour plus d’informations sur ces options, reportez-vous aux instructions suivantes de la documentation DLP : [Affiner les réglages pour rendre la correspondance plus ou moins précise](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+> [!IMPORTANT]
+> Les types d’informations sensibles ont deux manières différentes de définir les paramètres de nombre d’instances uniques maximum. Pour plus d’informations, voir [Nombre d’instances prises en charge pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Lorsque vous utilisez des types d’informations sensibles pour appliquer automatiquement des étiquettes de rétention :
 
@@ -372,7 +375,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

@@ -317,6 +317,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: TLS 1.2 dans Office 365
           href: prepare-tls-1.2-in-office-365.md
+        - name: Modifications du certificat TLS Office
+          href: encryption-office-365-tls-certificates-changes.md
     - name: Protection contre la perte de données (DLP)
       items:
         - name: En savoir plus sur DLP
@@ -449,7 +451,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: Archiver des données tierces
       items:
-        - name: Vue d’ensemble de l’archivage de données tierces
+        - name: Découvrez les connecteurs pour les données tierces
           href: archiving-third-party-data.md
         - name: Connecteurs de données Microsoft
           items:

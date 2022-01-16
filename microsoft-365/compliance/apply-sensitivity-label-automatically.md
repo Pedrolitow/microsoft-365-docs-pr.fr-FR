@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 8ad336e411c5ce83129496fb10490442b43a1aeb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91b8da486d3e9fbae6981f3038cbab8725065476
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936605"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049371"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -76,10 +76,9 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
         - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md).
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
-    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
-    - Si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci n’est pas appliqué.
+    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Si l’étiquette est configurée pour [chiffrement](encryption-sensitivity-labels.md), ce chiffrement est appliqué lorsque l’expéditeur est de votre organisation, mais pas appliqué lorsque l’expéditeur est en dehors de votre organisation.
     - Si l’étiquette est configurée pour appliquer des [marquages dynamiques,](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)sachez que cette configuration peut entraîner le nom des personnes extérieures à votre organisation.
-    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique. Il n’existe actuellement aucun moyen de définir le propriétaire du gestionnaire des droits pour tous les e-mails entrants qui sont automatiquement chiffrés.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique.
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
 
@@ -143,6 +142,9 @@ De même, lorsque vous configurez les stratégies DLP, vous pouvez affiner votre
 ![Options de précision de correspondance et de nombre d’instances.](../media/sit-confidence-level.png)
 
 Vous pouvez en savoir plus sur ces options de configuration dans la documentation de DLP : [Optimisation des règles pour une correspondance plus facile ou plus difficile](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+> [!IMPORTANT]
+> Les types d’informations sensibles ont deux manières différentes de définir le nombre maximal de paramètres de d’instances uniques. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 De même, comme pour la configuration de la stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles, ou un seul d’entre eux. Pour rendre vos conditions plus flexibles ou complexes, vous pouvez ajouter[ groups et utiliser des opérateurs](data-loss-prevention-policies.md).
 
