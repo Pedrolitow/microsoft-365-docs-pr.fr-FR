@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937483"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054979"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -668,7 +668,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d'informations, voir la section "Événements d'audit avancé" dans [Audit avancé](advanced-audit.md#advanced-audit-events). |
-|Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres.|
+|Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres. L’enregistrement d’audit de cette activité est également généré lorsqu’un compte système dans le service Microsoft 365 effectue régulièrement des tâches de maintenance pour le compte de votre organisation. Une tâche courante effectuée par un compte système consiste à mettre à jour les autorisations pour les boîtes aux lettres système. Pour plus d’informations, voir [Comptes système dans les enregistrements d’audits de boîte aux lettres Exchange.](#system-accounts-in-exchange-mailbox-audit-records)|
 |Utilisateur ajouté ou supprimé avec accès délégué au dossier calendrier|UpdateCalendarDelegation|Un utilisateur a été ajouté ou supprimé en tant que délégué au calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|
 |Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
 |Messages copiés vers un autre dossier|Copy|Un message a été copié vers un autre dossier.|
@@ -691,6 +691,12 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Utilisateur connecté à la boîte aux lettres|MailboxLogin|L’utilisateur s’est connecté à sa boîte aux lettres.|
 |Étiqueter un message en tant qu’enregistrement||Un utilisateur a appliqué une étiquette de rétention à un message électronique. Cette étiquette est configurée pour identifier l’élément en tant qu’enregistrement. |
 ||||
+
+#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Comptes système dans les enregistrements d’audits de boîte aux lettres Exchange
+
+Dans les enregistrements d’audit de certaines activités de boîte aux lettres (en particulier **Add-MailboxPermissions**), vous pouvez remarquer que l’utilisateur qui a effectué l’activité (et est identifié dans les champs User et UserId) est NT AUTHORITY\SYSTEM ou NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). Cela indique que l'« utilisateur » qui a effectué l’activité était un compte système dans le service Exchange dans le cloud Microsoft. Ce compte système effectue souvent des tâches de maintenance planifiées pour le compte de votre organisation. Par exemple, une activité auditée courante effectuée par le compte NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) consiste à mettre à jour les autorisations sur discoverySearchMailbox, qui est une boîte aux lettres système. L’objectif de cette mise à jour est de vérifier que l’autorisation FullAccess (qui est la valeur par défaut) est affectée au groupe de rôles Gestion de la découverte pour DiscoverySearchMailbox. Cela garantit que les administrateurs eDiscovery peuvent effectuer les tâches nécessaires dans leur organisation.
+
+Un autre compte d’utilisateur système qui peut être identifié dans un enregistrement d’audit pour **Add-MailboxPermission** est Administrator@apcprd03.prod.outlook.com. Ce compte de service est également inclus dans les enregistrements d’audit de boîte aux lettres liés à la vérification et à la mise à jour de l’autorisation FullAccess est attribué au groupe de rôles Gestion de la découverte pour la boîte aux lettres système DiscoverySearchMailbox. Plus précisément, les enregistrements d’audit qui identifient le compte Administrator@apcprd03.prod.outlook.com sont généralement déclenchés lorsque le personnel du support Microsoft exécute un outil de diagnostic de rôle RBAC pour le compte de votre organisation.
 
 ### <a name="user-administration-activities"></a>Activités d’administration des utilisateurs
 
