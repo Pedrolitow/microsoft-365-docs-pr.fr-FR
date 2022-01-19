@@ -1,15 +1,15 @@
 ---
 title: fichier descriptif
-description: inclure fichier
+description: fichier descriptif
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 55b0bc3800ba31c325d9c27906e72d6dd7e9bbea
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262849"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62079600"
 ---
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -61,6 +61,10 @@ Pour utiliser la gestion de la sécurité pour Microsoft Defender pour le point 
 - Un abonnement qui accorde des licences pour Microsoft Defender pour le point de terminaison, comme Microsoft 365, ou une licence autonome uniquement pour Microsoft Defender pour le point de terminaison. Pour plus d’informations sur les options, voir [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
 
   *Tout abonnement* qui accorde des licences Microsoft Defender pour les points de terminaison accorde également à votre client l’accès au nœud de sécurité endpoint du centre d Microsoft Endpoint Manager’administration. Le nœud de sécurité du point de terminaison est l’endroit où vous allez configurer et déployer des stratégies pour gérer Microsoft Defender pour le point de terminaison pour vos appareils et surveiller l’état de l’appareil.
+
+>[!NOTE]
+> Actuellement, si un abonnement Microsoft Defender pour point de terminaison est obtenu via Azure Security Center/Defender pour le cloud, cette licence Microsoft Defender pour point de terminaison n’est pas une licence éligible pour cette fonctionnalité. 
+
 
 ## <a name="architecture"></a>Architecture
 
@@ -124,7 +128,7 @@ Pour prendre en charge microsoft Defender pour la gestion de la configuration de
 
    :::image type="content" source="../media/add-role.png" alt-text="Accorder aux utilisateurs des autorisations pour gérer les paramètres.":::
 
-4. Connectez-vous au [Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Connectez-vous au [Centre d’administration du Gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Sélectionnez Sécurité des **points** de terminaison Microsoft Defender pour le point de terminaison et définissez Autoriser Microsoft Defender pour le point de terminaison à appliquer les configurations de sécurité des points de terminaison  >   **(prévisualisation)** **sur On**.
 
@@ -178,7 +182,7 @@ Après avoir créé un ou plusieurs groupes Azure AD qui contiennent des apparei
 >
 > Microsoft Endpoint Manager prend en charge le déploiement de plusieurs instances de chaque type de stratégie de sécurité de point de terminaison sur le même appareil, chaque instance de stratégie étant reçue par l’appareil séparément. Par conséquent, un appareil peut recevoir des configurations distinctes pour le même paramètre à partir de stratégies différentes, ce qui entraîne un conflit. Certains paramètres (comme les exclusions antivirus) fusionnent sur le client et s’appliquent correctement.
 
-1. Connectez-vous au [Centre d’administration Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Connectez-vous au [Centre d’administration du Gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Go to **Endpoint security** and then select the type of policy you want to configure, either Antivirus or Firewall, and then select **Create Policy**.
 
