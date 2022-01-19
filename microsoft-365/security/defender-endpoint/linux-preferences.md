@@ -16,19 +16,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401485"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074497"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -104,7 +104,7 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 
 #### <a name="enabledisable-behavior-monitoring"></a>Activer/désactiver la surveillance du comportement 
 
-Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil.Pour améliorer l’efficacité de la protection de la sécurité, nous vous recommandons de maintenir cette fonctionnalité allumée.
+Détermine si la fonctionnalité de surveillance et de blocage du comportement est activée ou non sur l’appareil. Pour améliorer l’efficacité de la protection de la sécurité, nous vous recommandons de maintenir cette fonctionnalité allumée.
 
 <br>
 
@@ -595,7 +595,7 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 }
 ```
 
-  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Ajouter une balise ou un ID de groupe au profil de configuration
+## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Ajouter une balise ou un ID de groupe au profil de configuration
 
 Lorsque vous exécutez la commande pour la première fois, la valeur de la balise et de l’ID de `mdatp health` groupe est vide. Pour ajouter une balise ou un ID de groupe au `mdatp_managed.json` fichier, suivez les étapes ci-dessous :
   
@@ -622,7 +622,7 @@ Lorsque vous exécutez la commande pour la première fois, la valeur de la balis
   > [!NOTE]
   > N’oubliez pas d’ajouter la virgule après le crochet fermant à la fin du `cloudService` bloc. Assurez-vous également qu’il existe deux crochets fermants après l’ajout d’un bloc Balise ou ID de groupe (voir l’exemple ci-dessus).
   
-  ## <a name="configuration-profile-validation"></a>Validation du profil de configuration
+## <a name="configuration-profile-validation"></a>Validation du profil de configuration
 
 Le profil de configuration doit être un fichier au format JSON valide. Il existe un certain nombre d’outils qui peuvent être utilisés pour vérifier cela. Par exemple, si vous avez `python` installé sur votre appareil :
 

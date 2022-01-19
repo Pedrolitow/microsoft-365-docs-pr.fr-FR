@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db1190d72bb721dbbbd3a75bb7d8a9821d5f8ff3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8865bf2138947238980b533b8b47ee9663fd5448
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873759"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074533"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
@@ -39,23 +39,23 @@ Le jeu de données d’intelligence contre les menaces a été géré par Micros
 
 En créant des indicateurs pour les adresses IP, les URL ou les domaines, vous pouvez désormais autoriser ou bloquer des adresses IP, des URL ou des domaines en fonction de vos propres renseignements sur les menaces. Vous pouvez également avertir les utilisateurs à l’invite s’ils ouvrent une application à risque. L’invite ne les empêche pas d’utiliser l’application, mais vous pouvez fournir un message personnalisé et des liens vers une page d’entreprise qui décrit l’utilisation appropriée de l’application. Les utilisateurs peuvent toujours ignorer l’avertissement et continuer à utiliser l’application s’ils en ont besoin.
 
-
 Pour ce faire, vous pouvez utiliser la page des paramètres ou des groupes d’ordinateurs si vous estez d’après certains groupes plus ou moins à risque que d’autres.
 
 > [!NOTE]
 > La notation CIDR (Classless Inter-Domain Routing) pour les adresses IP n’est pas prise en charge.
 
 ## <a name="before-you-begin"></a>Avant de commencer
+
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour IPS, URL ou domaines :
 
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
 - La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure. 
 - Pris en charge sur les ordinateurs Windows 10, version 1709 ou ultérieure, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 et Windows Server 2022.
-   
-    >[!NOTE]
-    >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
-- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Microsoft 365 Defender > Paramètres > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
+    > [!NOTE]
+    > Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne.
+
+- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans **Microsoft 365 Defender** \> **Paramètres** \> **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
 - Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 > [!IMPORTANT]

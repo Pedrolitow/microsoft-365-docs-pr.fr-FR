@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Les administrateurs peuvent apprendre à créer des stratégies pour bloquer le contenu actif dans Office documents
-ms.openlocfilehash: 4bf71e6032efc398e48c7679dee3fb42760d52cc
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 5bc187caaeac2fb83cb7d5a8026af2e1548c5622
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221231"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074665"
 ---
-# <a name="manage-active-content-in-office-documents"></a>Gérer le contenu actif dans Office documents
+# <a name="manage-active-content-in-office-documents"></a>Gérer le contenu actif dans les documents Office
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, ne sont pas disponibles pour tout le monde et peuvent faire l’objet de changements.
@@ -64,13 +64,13 @@ La logique mise à jour du Centre de confiance est décrite dans le diagramme su
 
 ## <a name="what-is-a-trusted-document"></a>Qu’est-ce qu’un document approuvé ?
 
-Les documents Office documents qui s’ouvrent sans invite de sécurité pour les macros, ActiveX contrôles et autres types de contenu actif dans le document. Le affichage protégé ou Application Guard n’est pas utilisé pour ouvrir le document. Lorsque les utilisateurs ouvrent un document approuvé et que tout le contenu actif est activé.Même si le document contient un nouveau contenu actif ou des mises à jour de contenu actif existant, les utilisateurs ne reçoivent pas d’invites de sécurité la prochaine fois qu’ils ouvrent le document.
+Les documents Office documents qui s’ouvrent sans invite de sécurité pour les macros, ActiveX contrôles et autres types de contenu actif dans le document. Le affichage protégé ou Application Guard n’est pas utilisé pour ouvrir le document. Lorsque les utilisateurs ouvrent un document approuvé et que tout le contenu actif est activé. Même si le document contient un nouveau contenu actif ou des mises à jour de contenu actif existant, les utilisateurs ne reçoivent pas d’invites de sécurité la prochaine fois qu’ils ouvrent le document.
 
 En raison de ce comportement, les utilisateurs doivent clairement faire confiance aux documents uniquement s’ils font confiance à la source du document.
 
 Si un administrateur bloque le contenu actif à l’aide d’une stratégie ou si les utilisateurs définissent un paramètre du Centre de gestion de la confidentialité qui bloque le contenu actif, le contenu actif reste bloqué.
 
-Pour plus d’informations, consultez les articles suivants :
+Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 - [Documents de confiance](https://support.microsoft.com/topic/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53)
 - [Ajouter, supprimer ou modifier un emplacement approuvé](https://support.microsoft.com/topic/add-remove-or-change-a-trusted-location-7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4)
@@ -78,13 +78,17 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="configure-trusted-document-settings-in-office-policies"></a>Configurer les paramètres de document approuvé dans Office stratégies
 
-Les administrateurs ont plusieurs façons de configurer les Office dans une organisation. Par exemple :
+Les administrateurs ont plusieurs façons de configurer les Office dans une organisation. Par exemple :
 
 - **Office service** de stratégie cloud : configurer une stratégie utilisateur qui s’applique à un utilisateur sur tout appareil accédant à des fichiers dans des applications Office avec son compte Azure AD client. Consultez les étapes de [création d’Office de stratégie cloud](/DeployOffice/overview-office-cloud-policy-service) dans le Office Cloud Policy [Service.](https://config.office.com/officeSettings/officePolicies)
 - Office dans **Intune**: utilisez le catalogue Intune Paramètres ou des modèles d’administration pour déployer des stratégies  HKCU sur des PC Windows 10 : dans le Centre d’administration [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) sous Profils de configuration des \> appareils.
   - ***Modèles d’administration***: consultez les instructions pour utiliser Windows 10 modèles d’administration pour configurer des [modèles d’administration.](/mem/intune/configuration/administrative-templates-windows)
   - ***Paramètres catalogue (prévisualisation)***: voir les instructions pour utiliser le catalogue [Paramètres (prévisualisation).](/mem/intune/configuration/settings-catalog)
 - **Stratégie de groupe**: utilisez votre annuaire Active Directory local pour déployer des objets de stratégie de groupe sur les utilisateurs et les ordinateurs. Pour créer un GPO pour ce paramètre, téléchargez les derniers fichiers de modèle d’administration [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)et l’outil de personnalisation Office pour Applications Microsoft 365 pour les grandes entreprises, Office 2019 et Office 2016.
+
+## <a name="known-issues"></a>Problèmes détectés
+
+- Lorsque la stratégie **VBA Macro notifications** (Access, PowerPoint, Visio, Word) ou **les notifications** de macro (Excel) est définie sur la valeur Désactiver tout sauf les  **macros signées** numériquement, la barre de confiance attendue n’est pas affichée et les informations de sécurité en arrière-plan ne listent pas les détails des macros bloquées, même si le paramètre fonctionne comme prévu. L Office de travail de l’équipe de recherche travaille à résoudre ce problème.
 
 ## <a name="admin-options-for-restricting-active-content"></a>Options d’administration pour limiter le contenu actif
 
@@ -133,7 +137,8 @@ Les tableaux des sections suivantes décrivent les paramètres qui contrôlent l
 |Jscript & VBScript|Outlook|Autoriser les scripts dans les formulaires Outlook uniques |**Disabled**|Non|
 |Jscript & VBScript|Outlook|Ne pas autoriser Outlook scripts de modèle objet à s’exécuter pour les dossiers publics|**Enabled**|Non|
 |Jscript & VBScript|Outlook|Ne pas autoriser Outlook scripts de modèle objet à s’exécuter pour les dossiers partagés|**Enabled**|Non|
-|Macros|Accès <p> Excel <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Notification de macro VBA Paramètres|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger la signature des macros par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
+|Macros|Excel|Macro Notifications|**Désactiver toutes les macros à l’exception des macros signées numériquement**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
+|Macros|Access <p> PowerPoint <p> Project <p> Éditeur <p> Visio <p> Word|Notification de macro VBA Paramètres|**Désactiver toutes les macros à l’exception des macros signées numériquement** <p> et <p> **Exiger la signature des macros par un éditeur approuvé**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|Accès <p> Excel <p> PowerPoint <p> Visio <p> Word|Empêcher les macros de s’Office fichiers à partir d’Internet|**Enabled**|**Oui** pour les valeurs suivantes : <ul><li>**Disabled**</li><li>**Non configuré**</li></ul>|
 |Macros|Excel|Analyser les macros chiffrées dans Excel de travail Open XML|**Analyser les macros chiffrées (valeur par défaut)**|Non|
 |Macros|Office|Autoriser VBA à charger les références typelib par chemin d’accès à partir d’emplacements intranet non confiance|**Disabled**|Non|

@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fd8b4e021ce99bc5b048a2379cf5be2ac9f82e06
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1dfe480f36d99acfdc9dcb36e63d2eed4f22054a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167729"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074785"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -29,8 +29,8 @@ ms.locfileid: "61167729"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si votre système présente des problèmes élevés d’utilisation du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour le point de terminaison, vous pouvez soumettre un ticket au support Microsoft. Suivez les étapes de [collecte Antivirus Microsoft Defender données de diagnostic.](collect-diagnostic-data.md)
 
@@ -65,7 +65,7 @@ Dans **MPLog-xxxxxxxx-xxxxxx.log,** vous pouvez trouver les informations d’imp
 |---|---|
 |ProcessImageName|Nom de l’image de processus|
 |TotalTime|Durée cumulée en millisecondes passées dans les analyses des fichiers accessibles par ce processus|
-|Compte|Nombre de fichiers analysés accédés par ce processus|
+|Count|Nombre de fichiers analysés accédés par ce processus|
 |MaxTime|Durée en millisecondes de l’analyse unique la plus longue d’un fichier accessible par ce processus|
 |MaxTimeFile|Chemin d’accès au fichier accessible par ce processus pour lequel l’analyse la plus longue `MaxTime` de la durée a été enregistrée|
 |EstimatedImpact|Le pourcentage de temps passé dans les analyses pour les fichiers accédés par ce processus en dehors de la période pendant laquelle ce processus a connu une activité d’analyse|

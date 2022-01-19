@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
-ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111218"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074545"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
 
@@ -53,7 +53,7 @@ Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire a
 |accessibilité |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filtre réseau| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|Extensions système |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|Extensions système |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |Préférence MDE     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |Préférence MAU|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |Package d’installation     |téléchargé à partir du **package d’installation** du portail de conformité, nom de *\* fichier wdav.pkg*\* |
@@ -176,9 +176,9 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
     - Méthode de distribution : `install automatically`
     - Niveau : `computer level`
 
-1. Dans le **profil d’étendues système,** entrez les valeurs ci-après :
+1. Dans **le profil des extensions système,** entrez les valeurs ci-après :
     - Nom complet : `Microsoft Corp. System Extensions`
-    - Types d’extenstion système : `Allowed System Extensions`
+    - Types d’extension système : `Allowed System Extensions`
     - Identificateur d’équipe : `UBF8T346G9`
     - Extensions système autorisées `com.microsoft.wdav.epsext` : et `com.microsoft.wdav.netext`
 
@@ -192,13 +192,13 @@ L’intégration d’un appareil macOS dans des solutions de conformité est un 
 
 ### <a name="configure-network-extension"></a>Configurer l’extension réseau
 
-1.  Utilisez le **fichier netfilter.mobileconfig**  que vous avez téléchargé à partir de Github.
+1.  Utilisez le **fichier netfilter.mobileconfig** que vous avez téléchargé à partir de GitHub.
 
 2.  Télécharger à JAMF comme décrit dans le déploiement de profils de configuration personnalisés à l’aide de [Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Accorder l’accès à l’accessibilité à la DLP
 
-1. Utilisez le **fichier accessibility.mobileconfig** que vous avez téléchargé à partir de Github.
+1. Utilisez le **fichier accessibility.mobileconfig** que vous avez téléchargé à partir GitHub.
 
 2.  Télécharger à JAMF comme décrit dans le déploiement de profils de configuration personnalisés à l’aide de [Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 

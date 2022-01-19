@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5afa98c4455387be673186854528dcd776e151f2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: dad3ea9fe4297d93864032130e3f6d6b5f6e4e82
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531848"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074617"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,7 +34,7 @@ ms.locfileid: "61531848"
 > [!IMPORTANT]
 > Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de Azure Active Directory `AADSignInEventsBeta` (AAD). Les clients doivent avoir une licence Azure Active Directory Premium P2 pour collecter et afficher les activités de ce tableau. Toutes les informations de schéma de la signature finiront par passer à la `IdentityLogonEvents` table.
 
-Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
+Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table. Pour plus d’informations sur les autres tableaux du schéma de chasse avancé, voir la [référence de recherche avancée.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)
 

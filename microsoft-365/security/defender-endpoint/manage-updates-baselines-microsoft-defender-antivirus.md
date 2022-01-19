@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 01/06/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4a6495d27c315ea66426e208a8116059406c2ae0
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a97c221b9b03d1b454997cb8474fad4b4630cd87
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940529"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073687"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 

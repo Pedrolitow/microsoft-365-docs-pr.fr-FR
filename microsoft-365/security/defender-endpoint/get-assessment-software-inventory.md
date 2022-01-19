@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 950892e39d91c1aeaa2179eac56d58bfa2ef9030
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283451"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074569"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -62,7 +62,7 @@ Cette réponse API contient toutes les données des logiciels installés par app
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
@@ -99,7 +99,7 @@ EndOfSupportDate|string|Date à laquelle la prise en charge de ce logiciel a ou 
 EndOfSupportStatus|string|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.|EOS à venir
 ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp !
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
-OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Ce sont des systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10 et Windows 11
+OSPlatform|chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Ce sont des systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10 et Windows 11
 RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».|Serveurs
 RegistryPaths|Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.|[ « HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion \\ Uninstall Microsoft \\ Silverlight » ]
 SoftwareFirstSeenTimestamp|string|La première fois que ce logiciel a été vu sur l’appareil.|2019-04-07 02:06:47
@@ -224,7 +224,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Software.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Software.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'

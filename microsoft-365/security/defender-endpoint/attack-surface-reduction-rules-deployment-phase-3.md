@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fb67e6bdd5a6ddbfa61147f1d7adba558c8cf02
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8cd03198fb94bfba582fb148b1f8f0da00beecf1
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873919"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074761"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter
+# <a name="asr-rules-deployment-phase-3-implement"></a>Phase 3 de déploiement des règles asr : implémenter
 
 La phase d’implémentation déplace l’anneau du test à l’état fonctionnel.
 
@@ -127,10 +127,10 @@ Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée e
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Guide de déploiement des règles asr : vue d’ensemble](attack-surface-reduction-rules-deployment.md)
+[Vue d’ensemble du déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1 du déploiement des règles ASR : planifier](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1 : Planifier](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Phase 2 du déploiement des règles ASR : tester](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2 : Test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Phase 4 de déploiement des règles ASR : opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4 : Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)

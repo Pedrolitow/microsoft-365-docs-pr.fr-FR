@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2fc9870871641bb7239a6dcdcdf9f54334726384
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284240"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074713"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -66,7 +66,7 @@ Cette réponse API contient l’évaluation de la configuration sécurisée sur 
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Vulnerability.Read.All|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
@@ -101,7 +101,7 @@ ConfigurationImpact|string|Impact nominal de la configuration sur la note de con
 ConfigurationName|string|Nom d’affichage de la configuration|Intégrer des appareils à Microsoft Defender pour point de terminaison
 ConfigurationSubcategory|string|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques.|Appareils intégrés
 DeviceId|string|Identificateur unique de l’appareil dans le service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
+DeviceName|chaîne|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.europe.contoso.com
 IsApplicable|bool|Indique si la configuration ou la stratégie est applicable|true
 IsCompliant|bool|Indique si la configuration ou la stratégie est correctement configurée.|false
 IsExpectedUserImpact|bool|Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée|true
@@ -229,7 +229,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Vulnerability.Read.All|\'Lire les informations Gestion des menaces et des vulnérabilités vulnérabilité « Gestion des menaces et des vulnérabilités »\'
 Déléguée (compte professionnel ou scolaire)|Vulnerability.Read|\'Lire les informations Gestion des menaces et des vulnérabilités vulnérabilité « Gestion des menaces et des vulnérabilités »\'

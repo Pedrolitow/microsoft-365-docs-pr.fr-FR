@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6a1698be8d0221987d3e70ed0004feb1148e03d2
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972059"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074377"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Découvrez les stratégies de gestion des risques internes dans Microsoft 365
 
@@ -59,7 +59,7 @@ La gestion des risques internes est centrée sur les principes suivants :
 - **Intégré :** flux de travail intégré dans Microsoft 365 solutions de conformité.
 - **Actionnable**: fournit des informations pour activer les notifications du réviseur, les investigations de données et les enquêtes utilisateur.
 
-## <a name="identifying-potential-risks-with-analytics-preview"></a>Identification des risques potentiels avec l’analyse (aperçu)
+## <a name="identifying-potential-risks-with-analytics"></a>Identification des risques potentiels avec l’analyse
 
 L’analyse des risques internes vous permet d’effectuer une évaluation des risques internes potentiels au sein de votre organisation sans aucune configuration de stratégie des risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Cette évaluation peut également vous aider à déterminer les besoins en matière de licences supplémentaires ou d’optimisation future des stratégies de risque internes existantes.
 

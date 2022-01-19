@@ -19,16 +19,16 @@ ms.custom: migrationguides
 description: Prenez les mesures nécessaires pour commencer la migration d’un service ou d’un appareil de protection tiers vers Microsoft Defender pour Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: cc16da76f4b863800bb4f1e7573bbe2fa106b4cf
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370655"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074725"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrer vers Microsoft Defender pour Office 365 - Phase 2 : Installation
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
 <br>
@@ -104,13 +104,13 @@ La règle de flux de messagerie SCL=-1 est importante pendant la migration pour 
 
   Avant ou pendant le passage de votre enregistrement MX à Microsoft 365, vous désactivez cette règle pour activer la protection complète de la pile de protection Microsoft 365 pour tous les destinataires de votre organisation.
 
-Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](https://docs.microsoft.comexchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)dans les messages Exchange Online .
+Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)dans les messages Exchange Online .
 
 **Remarques** :
 
 - Si vous prévoyez d’autoriser le flux de messagerie Internet via votre **service** de protection existant et directement dans Microsoft 365 en même temps, vous devez limiter la règle de flux de messagerie SCL=-1 (courrier qui contourne le filtrage du courrier indésirable) aux messages qui ont été envoyés via votre service de protection existant uniquement. Vous ne souhaitez pas que le courrier Internet non filtré soit envoyé dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-  Pour identifier correctement les messages qui ont déjà été analysés par votre service de protection existant, vous pouvez ajouter une condition à la règle de flux de messagerie SCL=-1. Par exemple :
+  Pour identifier correctement les messages qui ont déjà été analysés par votre service de protection existant, vous pouvez ajouter une condition à la règle de flux de messagerie SCL=-1. Par exemple :
 
   - **Pour les services de protection en nuage**: vous pouvez utiliser une valeur d’en-tête et d’en-tête propre à votre organisation. Les messages qui ont l’en-tête ne sont pas analysés Microsoft 365. Les messages sans l’en-tête sont analysés par Microsoft 365
   - **Pour les services ou appareils de protection** locaux : vous pouvez utiliser les adresses IP sources. Les messages provenant des adresses IP sources ne sont pas analysés par Microsoft 365. Les messages qui ne sont pas issus des adresses IP sources sont analysés par Microsoft 365.

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873608"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074689"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -64,7 +64,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **macOS** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.43.84 
   
   - **Linux** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.45.13 
-    
+
   - **Windows Server 2012 R2** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,10 +72,8 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **Windows Server 2019**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **Activez la réponse en direct à partir de la page paramètres avancés.**
 
@@ -199,7 +197,6 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | corriger  | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: This command has a prerequisite command. Vous pouvez utiliser la commande -auto conjointement avec la correction pour exécuter automatiquement la commande prérequise.  | v  | v  | v  |
 | analyse  | Déconnecte l’appareil du réseau tout en conservant la connectivité au service Defender for Endpoint  | N  | v  | v  |
 | undo  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
-
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 

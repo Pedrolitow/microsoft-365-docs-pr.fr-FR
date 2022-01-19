@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d3f136f3715b81b245f6b157927ae98a9444c06
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c10f454919afc725b37537aa354fed05b95cb571
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284444"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074473"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter les méthodes et propriétés d’évaluation par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -73,29 +73,29 @@ Exporter l’évaluation de la configuration **sécurisée (via des fichiers)**|
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-configurationCategory|String|Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité.
-configurationId|String|Identificateur unique pour une configuration spécifique.
-configurationImpact|String|Impact de la configuration sur le score de configuration global (1-10).
-configurationName|String|Nom complet de la configuration.
-configurationSubcategory|String|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, des fonctionnalités ou fonctionnalités spécifiques.
+configurationCategory|Chaîne|Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité.
+configurationId|Chaîne|Identificateur unique pour une configuration spécifique.
+configurationImpact|Chaîne|Impact de la configuration sur le score de configuration global (1-10).
+configurationName|Chaîne|Nom complet de la configuration.
+configurationSubcategory|Chaîne|Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, des fonctionnalités ou fonctionnalités spécifiques.
 deviceId|String|Identificateur unique de l’appareil dans le service.
 deviceName|String|Nom de domaine complet (FQDN) de l’appareil.
 isApplicable|Bool|Indique si la configuration ou la stratégie est applicable.
 isCompliant|Bool|Indique si la configuration ou la stratégie est correctement configurée.
 isExpectedUserImpact|Bool|Indique si l’utilisateur est affecté si la configuration est appliquée.
-osPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, tels que Windows 10 et Windows 11. Pour plus d’informations, voir systèmes d’exploitation et plateformes pris en charge par TVM.
+osPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, tels que Windows 10 et Windows 11. Pour plus d’informations, voir systèmes d’exploitation et plateformes pris en charge par TVM.
 osVersion|String|Version spécifique du système d’exploitation en cours d’exécution sur l’appareil.
-rbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
-recommendationReference|String|Référence à l’ID de recommandation lié au logiciel.
-timestamp|String|Dernière fois que la configuration a été vue sur l’appareil.
+rbacGroupName|Chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si l’appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+rbacGroupId|Chaîne|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
+recommendationReference|Chaîne|Référence à l’ID de recommandation lié au logiciel.
+timestamp|Chaîne|Dernière fois que la configuration a été vue sur l’appareil.
 
 ### <a name="13-properties-via-files"></a>1.3 Propriétés (via des fichiers)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 Exporter des fichiers|chaîne de \[ tableau\]|Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation.
-GeneratedTime|String|Heure de la générer.
+GeneratedTime|Chaîne|Heure de la générer.
 
 ## <a name="2-export-software-inventory-assessment"></a>2. Exportation de l’évaluation de l’inventaire logiciel
 
@@ -112,27 +112,27 @@ Renvoie tous les logiciels installés et leurs détails sur chaque appareil.
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-DeviceId|String|Identificateur unique de l’appareil dans le service.
-DeviceName|String|Nom de domaine complet (FQDN) de l’appareil.
+DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
+DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.
-EndOfSupportDate|String|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.
-EndOfSupportStatus|String|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.
+EndOfSupportDate|Chaîne|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.
+EndOfSupportStatus|Chaîne|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|Int|Nombre de faiblesses sur ce logiciel sur cet appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+RbacGroupName|Chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+rbacGroupId|Chaîne|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
 RegistryPaths|Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
-SoftwareFirstSeenTimestamp|String|La première fois que ce logiciel a été vu sur l’appareil.
-SoftwareName|String|Nom du produit logiciel.
-SoftwareVendor|String|Nom du fournisseur de logiciels.
-SoftwareVersion|String|Numéro de version du produit logiciel.
+SoftwareFirstSeenTimestamp|Chaîne|La première fois que ce logiciel a été vu sur l’appareil.
+SoftwareName|Chaîne|Nom du produit logiciel.
+SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
+SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
 
 ### <a name="23-properties-via-files"></a>2.3 Propriétés (via des fichiers)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 Exporter des fichiers|chaîne de \[ tableau\]|Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation.
-GeneratedTime|String|Heure de la générer.
+GeneratedTime|Chaîne|Heure de la générer.
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. Exportation de l’évaluation des vulnérabilités logicielles
 
@@ -150,59 +150,59 @@ Exporter l’évaluation des vulnérabilités **logicielles (via des fichiers)**
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-CveId|String|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
-CvssScore|String|Score CVSS de la CVE.
-DeviceId|String|Identificateur unique de l’appareil dans le service.
-DeviceName|String|Nom de domaine complet (FQDN) de l’appareil.
+CveId|Chaîne|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
+CvssScore|Chaîne|Score CVSS de la CVE.
+DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
+DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Chaîne de \[ tableau\]|Preuve disque que le produit est installé sur l’appareil.
-ExploitabilityLevel|String|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|String|Première fois que la CVE de ce produit a été vue sur l’appareil.
-ID|String|Identificateur unique de l’enregistrement.
-LastSeenTimestamp|String|Dernière fois que la CVE a été vue sur l’appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-rbacGroupId|String|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
-RecommendationReference|String|Référence à l’ID de recommandation associé à ce logiciel.
-RecommendedSecurityUpdate|String|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId|String|Identificateur des mises à jour de sécurité applicables ou de l’identificateur pour les articles de base de connaissances ou d’aide correspondants.
+ExploitabilityLevel|Chaîne|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|Chaîne|Première fois que la CVE de ce produit a été vue sur l’appareil.
+ID|Chaîne|Identificateur unique de l’enregistrement.
+LastSeenTimestamp|Chaîne|Dernière fois que la CVE a été vue sur l’appareil.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+RbacGroupName|Chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+rbacGroupId|Chaîne|ID de groupe RBAC (Contrôle d’accès basé sur un rôle).
+RecommendationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
+RecommendedSecurityUpdate|Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
+RecommendedSecurityUpdateId|Chaîne|Identificateur des mises à jour de sécurité applicables ou de l’identificateur pour les articles de base de connaissances ou d’aide correspondants.
 Chaîne de tableau des chemins \[ d’accès du Registre\]|Preuve dans le Registre que le produit est installé sur l’appareil.
-SoftwareName|String|Nom du produit logiciel.
-SoftwareVendor|String|Nom du fournisseur de logiciels.
-SoftwareVersion|String|Numéro de version du produit logiciel.
-VulnerabilitySeverityLevel|String|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
+SoftwareName|Chaîne|Nom du produit logiciel.
+SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
+SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
+VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
 
 ### <a name="33-properties-via-files"></a>3.3 Propriétés (via des fichiers)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
 Exporter des fichiers|chaîne de \[ tableau\]|Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation.
-GeneratedTime|String|Heure de la générer.
+GeneratedTime|Chaîne|Heure de la générer.
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 Propriétés (réponse JSON d’exportation delta)
 
 Propriété (ID)|Type de données|Description
 :---|:---|:---
-CveId |String|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
-CvssScore|String|Score CVSS de la CVE.
-DeviceId|String|Identificateur unique de l’appareil dans le service.
-DeviceName|String|Nom de domaine complet (FQDN) de l’appareil.
+CveId |Chaîne|Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures).
+CvssScore|Chaîne|Score CVSS de la CVE.
+DeviceId|Chaîne|Identificateur unique de l’appareil dans le service.
+DeviceName|Chaîne|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.
-EventTimestamp|String|Heure de la découverte de l’événement delta.
-ExploitabilityLevel|String|Niveau d’exploitabilité de la vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|String|Première fois que la CVE du produit a été vue sur l’appareil.
-ID|String|Identificateur unique de l’enregistrement.  
-LastSeenTimestamp|String|Dernière fois que la CVE a été vue sur l’appareil.
-OSPlatform|String|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName|String|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
-RecommendationReference|String|Référence à l’ID de recommandation associé à ce logiciel.
-RecommendedSecurityUpdate |String|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId |String|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants
-RegistryPaths |Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
-SoftwareName|String|Nom du produit logiciel.
-SoftwareVendor|String|Nom du fournisseur de logiciels.
-SoftwareVersion|String|Numéro de version du produit logiciel.
-État|String|**Nouveau**   (pour une nouvelle vulnérabilité introduite sur un appareil).  **Fixed**   (pour une vulnérabilité qui n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigé). **Mise à jour**   (pour une vulnérabilité sur un appareil qui a changé. Les modifications possibles sont les suivants : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|String|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
+EventTimestamp|Chaîne|Heure de la découverte de l’événement delta.
+ExploitabilityLevel|Chaîne|Niveau d’exploitabilité de la vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|Chaîne|Première fois que la CVE du produit a été vue sur l’appareil.
+ID|Chaîne|Identificateur unique de l’enregistrement.  
+LastSeenTimestamp|Chaîne|Dernière fois que la CVE a été vue sur l’appareil.
+OSPlatform|Chaîne|Plateforme du système d’exploitation en cours d’exécution sur l’appareil ; systèmes d’exploitation spécifiques avec des variantes au sein de la même famille, telles que Windows 10 et Windows 11. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
+RbacGroupName|Chaîne|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RecommendationReference|Chaîne|Référence à l’ID de recommandation associé à ce logiciel.
+RecommendedSecurityUpdate |Chaîne|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
+RecommendedSecurityUpdateId |Chaîne|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants
+RegistryPaths |Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
+SoftwareName|Chaîne|Nom du produit logiciel.
+SoftwareVendor|Chaîne|Nom du fournisseur de logiciels.
+SoftwareVersion|Chaîne|Numéro de version du produit logiciel.
+État|Chaîne|**Nouveauté** (pour une nouvelle vulnérabilité introduite sur un appareil). **Correction** (pour une vulnérabilité qui n’existe plus sur l’appareil, ce qui signifie qu’elle a été corrigée). **Mise à** jour (pour une vulnérabilité sur un appareil qui a changé. Les modifications possibles sont les suivants : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+VulnerabilitySeverityLevel|Chaîne|Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces.
 
 ## <a name="see-also"></a>Voir aussi
 

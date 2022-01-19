@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: fb76ec7c64e61faccc106f3db874756867fdeddc
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374615"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073711"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -39,11 +39,11 @@ Le **Tableau de bord de stratégie** vous permet de consulter rapidement les str
 
 ![Tableau de bord de la stratégie de gestion des risques internes.](../media/insider-risk-policy-dashboard.png)
 
-## <a name="policy-recommendations-from-analytics-preview"></a>Recommandations de la stratégie à partir d’une analyse (préversion)
+## <a name="policy-recommendations-from-analytics"></a>Recommandations en matière de stratégie à partir de l’analyse
 
 L’analyse des risques internes vous permet d’effectuer une évaluation des risques internes potentiels au sein de votre organisation sans aucune configuration de stratégie des risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer.
 
-Si vous souhaitez en savoir plus sur les recommandations de stratégie et l’analyse des risques internes, consultez [Paramètres de gestion des risques internes : analyse (préversion)](insider-risk-management-settings.md#analytics).
+Pour en savoir plus sur l’analyse des risques internes et les recommandations de stratégie, voir Paramètres de gestion des risques internes [: Analyse.](insider-risk-management-settings.md#analytics)
 
 ## <a name="policy-templates"></a>Modèles de stratégie
 

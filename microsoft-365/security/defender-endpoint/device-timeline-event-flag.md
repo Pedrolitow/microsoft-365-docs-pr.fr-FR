@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 145cdf623ea3eb2c8c8268958862f0aa3fc9fafc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e6661a03043095ed2ae1ece194179d26476a703f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167165"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074773"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Indicateurs d’événement de chronologie d’appareil Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -47,9 +47,11 @@ Lors de la navigation dans la chronologie de l’appareil, vous pouvez recherche
 ## <a name="flag-an-event"></a>Indicateur d’un événement
 
 1. Rechercher l’événement que vous souhaitez indicateur
-2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur. 
-![Image de l’indicateur de chronologie de l’appareil.](images/device-flags.png)
 2. Cliquez sur l’icône d’indicateur dans la colonne Indicateur.
+
+   ![Image de l’indicateur de chronologie de l’appareil.](images/device-flags.png)
+
+3. Cliquez sur l’icône d’indicateur dans la colonne Indicateur.
 
    ![Image de l’indicateur de chronologie de l’appareil](images/device-flags.png)
 
@@ -57,8 +59,11 @@ Lors de la navigation dans la chronologie de l’appareil, vous pouvez recherche
 
 1. Dans la section **Filtres de** chronologie, activez **les événements marqués.**
 2. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés.
-Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.  
-![Image de l’indicateur de chronologie de l’appareil avec le filtre sur.](images/device-flag-filter.png)
-2. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés. Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.
+
+   Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.  
+
+   ![Image de l’indicateur de chronologie de l’appareil avec le filtre sur.](images/device-flag-filter.png)
+
+3. Cliquez sur **Appliquer**. Seuls les événements marqués sont affichés. Vous pouvez appliquer des filtres supplémentaires en cliquant sur la barre d’heure. Cela affiche uniquement les événements antérieurs à l’événement marqué.
 
    ![Image de l’indicateur de chronologie de l’appareil avec le filtre sur](images/device-flag-filter.png)

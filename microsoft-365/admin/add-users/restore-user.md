@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Dans les 30 jours suivant la suppression d’un compte d’utilisateur, vous pouvez restaurer le compte et toutes les données, et l’utilisateur peut se connecter avec le même compte.
-ms.openlocfilehash: 093e3d34f4f92e633fb7ece232d4f5abcc912e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161557"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074485"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
    
@@ -39,17 +39,17 @@ Voici quelques conseils :
   
 - Assurez-vous que les licences peuvent être assignées au compte.
     
-- Si votre entreprise utilise Active Directory, pour les problèmes de restauration d’un compte d’utilisateur, voir Comment résoudre les problèmes de comptes d’utilisateur [supprimés dans Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- Si votre entreprise utilise Active Directory, pour obtenir des instructions sur la restauration d’un compte d’utilisateur, voir Comment résoudre les problèmes des comptes d’utilisateur [supprimés dans Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurer un ou plusieurs comptes d'utilisateur
 
 Vous devez être administrateur Microsoft 365 administrateur global ou administrateur de gestion des utilisateurs pour suivre ces étapes. 
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
 
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs que vous souhaitez restaurer, puis sélectionnez **Restaurer.**
     
-3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer**.
+3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer.**
     
 4. Si l’utilisateur est correctement restauré, sélectionnez **Envoyer un e-mail et fermez.** Si vous rencontrez un conflit de noms ou d'adresses de proxy, consultez les instructions ci-dessous pour savoir comment restaurer ces comptes.
     
@@ -61,7 +61,7 @@ Un conflit de noms d'utilisateur survient lorsque vous supprimez un compte d'uti
   
 Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur actif par celui que vous restaurez, soit attribuer un autre nom au compte restauré, afin que les deux comptes ne se servent plus du même nom d'utilisateur. Voici comment procéder.
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
   
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs à restaurer, puis sélectionnez **Restaurer.**
     
@@ -72,9 +72,9 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
     
 4. Un message indiquant qu'un problème s'est produit lors de la restauration du compte s'affiche. Effectuez l'une des opérations suivantes :
     
-  - Annulez la restauration et renommez l'utilisateur actif. Essayez d'effectuer la restauration de nouveau.
+     - Annulez la restauration et renommez l'utilisateur actif. Essayez d'effectuer la restauration de nouveau.
     
-  - OU, tapez une nouvelle adresse de messagerie principale pour l’utilisateur et sélectionnez **Restaurer**.
+     - OU, tapez une nouvelle adresse de messagerie principale pour l’utilisateur et sélectionnez **Restaurer**.
     
 5. Examinez les résultats, puis sélectionnez **Fermer**.
     
@@ -84,7 +84,7 @@ Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisat
   
 Pour ce [faire,](about-admin-roles.md) vous devez Microsoft 365 administrateur. 
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
 
 2. Sur la page **Utilisateurs supprimés**, sélectionnez l'utilisateur à restaurer, puis **Restaurer**. 
     
