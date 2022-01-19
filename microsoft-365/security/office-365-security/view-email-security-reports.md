@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8277a26ace7b2fa2fcd2eee6f622c70ad77b205
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 2393950b97c8f8f6a6c625d8f31487d08c9c1cb7
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054939"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083116"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité du courrier dans le portail Microsoft 365 Defender messagerie
 
@@ -34,7 +34,7 @@ ms.locfileid: "62054939"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités <https://security.microsoft.com> anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-these-reports)vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
@@ -371,7 +371,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 Le graphique présente les informations suivantes :
 
-- **Pending**
+- **En attente**
 - **Terminée**
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
@@ -392,7 +392,7 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
   - **Programme malveillant**
   - **Courrier indésirable**
 - **État de rescan :**
-  - **Pending**
+  - **En attente**
   - **Terminée**
 
 Le tableau de détails sous le graphique  affiche les mêmes informations  et possède les  mêmes **options** de colonnes De groupe ou de personnalisation que sous l’onglet Soumis pour analyse dans envois de collaboration & courrier \> **électronique.** Pour plus d’informations, voir [Afficher les soumissions d’administrateurs à Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
@@ -541,7 +541,7 @@ Dans **l’affichage des données par courrier \> indésirable** et répartition
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -643,7 +643,7 @@ Dans l’affichage des données par hameçonnage de **messagerie, \>** affichage
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
 - **Technologie de détection**
@@ -777,19 +777,23 @@ Dans la page principale du rapport, ![ l’icône Créer une planification.](../
 Dans la **vue \> Afficher les données par programme** malveillant de contenu, les informations suivantes sont affichées dans le graphique de Microsoft Defender pour Office 365 organisations :
 
 - **Moteur anti-programme** malveillant : fichiers malveillants détectés dans SharePoint, OneDrive et Microsoft Teams par la détection de virus intégrée dans [Microsoft 365](virus-detection-in-spo.md).
-- **Détonation de fichiers**: fichiers malveillants détectés Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Détonation MDO**: fichiers malveillants détectés par Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Réputation des fichiers**
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
-- **Date (UTC)** **Date de début et** date de **fin**
-- **Location**
+- **Date (UTC)**
+- **Nom de fichier des pièces jointes**
+- **Charge de travail**
 - **Technologie de détection**
-- **Nom du programme malveillant**
+- **Taille du fichier**
+- **Dernier utilisateur en cours de modification**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Détection :** **moteur anti-programme malveillant** ou **détonation de fichiers**
+- **Détection**: **moteur anti-programme malveillant,** **détonation MDO** et **détonation de fichiers**
+- **Charge** de **travail : Teams,** **SharePoint** et **OneDrive**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
@@ -1025,7 +1029,7 @@ Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le portail Microsoft 365 Defender:
 
 - **Gestion de l'organisation**
-- **Administrateur de sécurité**
+- **Administrateur de la sécurité**
 - **Lecteur sécurité**
 - **Lecteur global**
 

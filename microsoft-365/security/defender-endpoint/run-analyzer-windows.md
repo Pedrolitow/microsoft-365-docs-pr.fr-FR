@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6e0bc97e5f43c5527c0b4d443df030b76685dd8b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163265"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083084"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Téléchargez [l’outil MDE Client Analyzer](https://aka.ms/mdatpanalyzer) sur l Windows que vous devez examiner.
 
@@ -47,15 +47,15 @@ ms.locfileid: "61163265"
    **Remplacez HardDrivePath par le chemin d’accès vers lequel l’outil a été extrait, par exemple :**
 
    ```dos
-   C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd
+   C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
 En plus des informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> Sur Windows 10, Windows Server 2019 ou les éditions ultérieures du système d’exploitation, ou Windows 11, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité vers les URL de `MDEClientAnalyzer.exe` service cloud.
+> Sur Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) unifiée moderne installée, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité aux URL de `MDEClientAnalyzer.exe` service cloud.
 >
-> Sur Windows 8.1, Windows Server 2016 ou des éditions antérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil de connectivité Microsoft Monitoring Agent pour les URL de canal de `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cyber-données.
+> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation dans laquelle Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant `MDEClientAnalyzerPreviousVersion.exe` Microsoft Monitoring Agent’outil de connectivité `TestCloudConnection.exe` pour les URL de canal de données cyber.
 
 
 Tous les scripts et modules PowerShell inclus dans l’analyseur sont signés par Microsoft.
