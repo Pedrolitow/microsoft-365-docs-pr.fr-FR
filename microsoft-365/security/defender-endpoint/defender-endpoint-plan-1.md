@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 139015e1e1b12dd14510fa0cdd8b546b4ad52405
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872440"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156411"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -188,6 +188,8 @@ Pour en savoir plus, [consultez l’api Defender pour les points de terminaison.
 
 La plupart des organisations utilisent différents appareils et systèmes d’exploitation. Actuellement, Defender for Endpoint Plan 1 prend en charge les systèmes d’exploitation suivants :
 
+- Windows 7 (ESU requis)
+- Windows 8.1
 - Windows 10, version 1709 ou ultérieure
 - macOS : 11.5 (Big Sur), 10.15.7 (Contrôle), ou 10.14.6 (Mojave)
 - iOS

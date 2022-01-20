@@ -1,5 +1,5 @@
 ---
-title: Effectuer une prise de contrôle d’administrateur interne
+title: Supprimer un domaine d’un autre compte
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,26 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un compte non pris en charge créé par une inscription d’utilisateur en libre-service dans Microsoft 365.
-ms.openlocfilehash: 74ba60191004e5b980621ce6a6b58feb42cdcb92
+description: Découvrez comment joindre un compte nonmana créé par une inscription d’utilisateur libre-service dans Microsoft 365.
+ms.openlocfilehash: 23fff52a4c42da05f787bfbe8207d3e090c0105c
 ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156207"
+ms.locfileid: "62156583"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez.
 
-Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’un compte non pris en charge créé par une inscription d’utilisateur libre-service, vous pouvez effectuer une prise de contrôle d’administrateur interne en suivant les étapes de cet article.
+Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’un compte non pris en charge créé par une inscription d’utilisateur libre-service, vous pouvez le faire en faisant une prise de contrôle d’administrateur interne.
 
 > [!NOTE]
 > Une inscription en libre-service pour tout service cloud qui utilise Azure AD ajoute l’utilisateur à un répertoire Azure AD non gestion ou « shadow » et crée un compte nonmanaté. Un compte non gérant est un répertoire sans administrateur général. Pour déterminer si un compte est géré ou non, voir [Déterminer le type de client.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Lorsqu’un utilisateur s’Microsoft 365 services de messagerie à l’aide d’une adresse de messagerie, un compte est automatiquement créé pour lui. Si un administrateur souhaite gérer les utilisateurs sur le compte ou acheter des services Microsoft 365 supplémentaires, il doit devenir administrateur sur le compte en suivant ces étapes pour effectuer une prise de contrôle par l’administrateur.
+Parfois, vous ne pouvez pas ajouter un domaine à votre compte d’organisation, car quelqu’un d’autre s’est déjà inscrit à Microsoft 365 à l’aide d’une adresse de messagerie associée à ce nom de domaine. Toutefois, vous pouvez supprimer le domaine de l’autre compte non géré et l’ajouter au compte géré de votre organisation.
+
+Avant de pouvoir supprimer le domaine de l’autre compte et de l’ajouter à votre compte, vous devez joindre le compte nonmanaté et devenir administrateur de ce compte. Ensuite, vous supprimez le domaine du compte non géré, vous vous connectez à votre compte et vous ajoutez le domaine à votre compte géré.
+
+Les étapes décrites dans cet article décrivent uniquement comment rejoindre l’autre compte (étapes 1 et 2) et suivre les étapes de l’Assistant Prise de contrôle de l’administrateur pour devenir l’administrateur sur le compte nonmanaté (étape 3).
+
+Une fois que vous êtes devenu administrateur du compte nonmana, vous pouvez supprimer le domaine du compte nonmanaté et l’ajouter à votre compte. 
 
 ## <a name="step-1-verify-your-email-address"></a>Étape 1 : Vérifier votre adresse de messagerie
 
@@ -57,7 +63,7 @@ Lorsqu’un utilisateur s’Microsoft 365 services de messagerie à l’aide d�
 
 1. Lorsque vous entrez le code de vérification, vous êtes amené à une page dans laquelle vous pouvez créer un compte.
 
-2. Remplissez les champs nom d’utilisateur et mot de passe avec le compte que vous souhaitez utiliser, puis complétez les étapes de création du compte.
+2. Remplissez les champs nom d’utilisateur et mot de passe avec le compte que vous souhaitez utiliser, puis sélectionnez **Démarrer.**
 
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Étape 3 : Vérifier la propriété du domaine et devenir l’administrateur
 
@@ -65,16 +71,13 @@ Lorsqu’un utilisateur s’Microsoft 365 services de messagerie à l’aide d�
 
     Vous êtes redirigé vers l’Assistant Prise de contrôle de l’administrateur.
 
-1. Sélectionnez **Suivant** et vérifiez que vous êtes propriétaire du domaine à prendre en compte en ajoutant un enregistrement TXT à votre bureau d’enregistrement de domaines.
+1. Sélectionnez **Suivant** et vérifiez que vous êtes propriétaire du domaine à prendre en compte en ajoutant un enregistrement TXT à votre bureau d’enregistrement de domaines. 
 
     L’Assistant vous fournira l’enregistrement TXT à ajouter, ainsi qu’un lien vers le site web de votre bureau d’enregistrement et un lien vers des instructions pas à pas.
 
 1. On the **You’re now the admin** page, select **Go to the admin center**.
 
-    Vous avez les privilèges d’administrateur requis pour gérer le compte dans le Centre d’administration. Par exemple, vous pouvez gérer les utilisateurs et les groupes de comptes, acheter de nouveaux abonnements, effectuer des affectations d’utilisateurs et gérer les domaines de compte.
-
-    Si vous souhaitez supprimer votre domaine de ce compte afin de pouvoir l’ajouter à un autre compte, voir Supprimer un domaine [d’un autre compte.](remove-a-domain-from-another-account.md)
-  
+    Vous avez maintenant les privilèges d’administrateur requis pour supprimer le domaine de l’autre compte. 
 ## <a name="related-content"></a>Contenu associé
 
 YouTube : [3 étapes pour une](https://www.youtube.com/watch?v=xt5EsrQBZZk) prise de contrôle d’administrateur informatique pour Power BI et Microsoft 365 (vidéo)\

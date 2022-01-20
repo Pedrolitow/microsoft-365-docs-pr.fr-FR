@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164501"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156387"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
 
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -44,7 +44,7 @@ Dans la [rubrique Planification,](deployment-strategy.md) plusieurs méthodes on
 
 Bien que Defender pour point de terminaison prend en charge l’intégration de différents points de terminaison et outils, cet article ne les traite pas. Pour plus d’informations sur l’intégration générale à l’aide d’autres outils et méthodes de déploiement pris en charge, voir [vue d’ensemble de l’intégration.](onboarding.md)
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) est une plateforme de solution qui unifie plusieurs services. Il inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 gestion des appareils basée sur la base de.
 
@@ -65,7 +65,7 @@ Ces instructions d’intégration vous guident tout au long des étapes de base 
 Voici les liens dont vous aurez besoin pour le reste du processus :
 
 - [Portail MEM](https://aka.ms/memac)
-- [Microsoft Defender pour point de terminaison](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Bases de référence de sécurité Intune](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources ci-après :
@@ -81,7 +81,7 @@ Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources 
 Dans cette section, nous allons créer un groupe de test pour affecter vos configurations.
 
 > [!NOTE]
-> Intune utilise des groupes Azure Active Directory (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
+> Intune utilise les groupes Azure Active Directory (Azure AD) pour gérer les utilisateurs et les appareils. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.
 >
 > Pour plus d’informations, consultez [Ajouter des groupes pour organiser les utilisateurs et les appareils](/mem/intune/fundamentals/groups-add).
 

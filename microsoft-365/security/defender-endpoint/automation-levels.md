@@ -19,16 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 61c09938d0fece07d313898a7256bee8ed8c6e16
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f4baefadc2fe08b7fe909a135228278c8a696f14
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171460"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156003"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveaux d’automatisation dans les fonctionnalités d’investigation et de correction automatisées
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -36,7 +37,7 @@ Les fonctionnalités d’investigation et de correction automatisées (AIR) dans
 
 - *L’automatisation complète* (recommandée) signifie que des actions de correction sont prises automatiquement sur les artefacts déterminés comme malveillants.
 - *La semi-automatisation signifie* que certaines actions de correction sont prises automatiquement, mais que d’autres actions de correction attendent l’approbation avant d’être prises. (Consultez le tableau dans [Niveaux d’automatisation.)](#levels-of-automation)
-- Toutes les actions de correction, qu’elles soient en attente ou terminées, sont effectuées dans le centre de actions ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+- Toutes les actions de correction, qu’elles soient en attente ou terminées, sont effectuées dans le centre de actions ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 > [!TIP]
 > Pour de meilleurs résultats, nous vous recommandons d’utiliser l’automatisation complète lorsque vous [configurez AIR.](configure-automated-investigations-remediation.md) Les données collectées et analysées au cours de l’année précédente montrent que les clients qui utilisent l’automatisation complète ont supprimé 40 % plus d’échantillons de programmes malveillants à haut niveau de confiance que les clients qui utilisent des niveaux d’automatisation inférieurs. L’automatisation complète peut vous aider à libérer vos ressources d’opérations de sécurité pour vous concentrer davantage sur vos initiatives stratégiques.

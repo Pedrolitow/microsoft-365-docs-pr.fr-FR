@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9962520b08f8feee85ae1e74816fa87b2cd20923
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 862a7a746455d33bdf6779c2b74b76127bc8f010
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074605"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156459"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -64,7 +64,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. Vous pouvez voir la disponibilité et l’état des types d’événements dans les types d’Microsoft 365 Defender pris en charge [dans l’API de diffusion en continu.](supported-event-types.md)
 - (GA) Microsoft Defender pour Office 365 données disponibles dans le recherche avancée est désormais généralement disponible.
-- (Aperçu) Affecter des incidents et des alertes aux comptes d’utilisateurs
+- (GA) Affecter des incidents et des alertes aux comptes d’utilisateurs
 
   Vous pouvez affecter un incident, ainsi que toutes les alertes qui lui sont associées, à un compte d’utilisateur de **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
 

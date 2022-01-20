@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le Centre d'administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 8562d3bd3dc4e3d550c3c8365fdfc2dcf9220f94
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559927"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155991"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -149,6 +149,8 @@ Chaque Microsoft 365 organisation peut avoir jusqu’à trois onmicrosoft.com do
 
 > [!NOTE]
 > Vous devez être administrateur global ou administrateur de nom de domaine pour ajouter un domaine.
+> La création d’un domaine .onmicrosoft supplémentaire et son utilisation par défaut n’a pas pour résultat de renommer SharePoint Online. Pour apporter des modifications à votre domaine .onmicrosoft SharePoint, vous devez utiliser l’aperçu de changement de nom de domaine [SharePoint](/sharepoint/change-your-sharepoint-domain-name) (actuellement disponible pour tout client avec moins de 1 000 sites).
+> Si vous utilisez des services Microsoft 365 messagerie, la suppression de votre domaine .onmicrosoft initial n’est pas prise en charge.
 
 
 Pour ajouter un domaine onmicrosoft.com:

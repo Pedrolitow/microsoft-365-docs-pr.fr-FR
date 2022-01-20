@@ -16,18 +16,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f957f1a6aa51380152441f26aaeb47b7df58e7b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171236"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156327"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -110,7 +110,7 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -132,10 +132,14 @@ Le code suivant montre le schéma que vous devez utiliser pour planifier une ana
     launchctl start <your file name>
     ```
 
-3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste P. Dans les exemples ci-dessus, l’analyse s’exécute à 02:00 tous les vendredis. 
+3. Votre analyse programmée s’exécutera à la date, à l’heure et à la fréquence que vous avez définies dans votre liste P. Dans les exemples précédents, l’analyse s’exécute à 2 h 50 tous les vendredis. 
 
-    La `Weekday` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le cinquième jour de la semaine ou le vendredi.
-
+    - La `Weekday` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le cinquième jour de la semaine ou le vendredi. La plage est entre 0 et 7, 7 représentant Dimanche.
+    - La `Day` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer le troisième jour du mois. La plage est entre 1 et 31.
+    - La `Hour` valeur de utilise un nombre nombre `StartCalendarInterval` integer pour indiquer la deuxième heure de la journée. La plage est entre 0 et 24.
+    La `Minute` valeur de utilise un nombre total pour indiquer `StartCalendarInterval` 50 minutes de l’heure. La plage est entre 0 et 59.
+    
+    
  > [!IMPORTANT]
  > Les agents exécutés *avec lancement* ne s’exécutent pas à l’heure prévue pendant que l’appareil est en veille. Ils s’exécutent à la place une fois que l’appareil reprend en mode veille.
  >

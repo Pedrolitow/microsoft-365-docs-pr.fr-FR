@@ -14,20 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165593"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156543"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -75,7 +76,7 @@ Si le tableau de bord du portail et d’autres sections indiquent un message d�
 
 ![L’image des données n’est actuellement pas disponible.](images/atp-data-not-available.png)
 
-Vous devez autoriser tous les sous-domaine sous celui-ci `security.windows.com` sur votre navigateur web. Par exemple, `*.security.windows.com`.
+Vous devez autoriser tous les sous-domaine sous celui-ci `security.windows.com` sur votre navigateur web. Par exemple : `*.security.windows.com`.
 
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail
 
@@ -84,11 +85,11 @@ Si vous rencontrez des problèmes d’accès au portail, de données manquantes 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com`
-- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://*.security.microsoft.com`
+- `https://automatediracs-eus-prd.security.microsoft.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `https://securitycenter.windows.com`
+- `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`

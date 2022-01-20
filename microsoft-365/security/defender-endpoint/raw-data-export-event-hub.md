@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b1d313ed2980f84318a590df55e0a8d8e7b152ab
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300188"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156555"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers vos Hubs d’événements Azure
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**S’applique à :**
 
-**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
@@ -36,13 +36,13 @@ ms.locfileid: "61300188"
 
 1. Créez [un hub d’événements](/azure/event-hubs/) dans votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
-1. Connectez-vous au [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com) en tant **qu’administrateur** général * ou _*_Administrateur_ de sécurité **.
+1. Connectez-vous au [Microsoft 365 Defender](https://security.microsoft.com) en tant **qu’administrateur** général * ou _*_Administrateur_ de sécurité **.
 
-2. Go to the [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Centre de sécurité Microsoft Defender.
+2. Go to the [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in the Microsoft Defender portal.
 
 3. Cliquez sur **Ajouter des paramètres d’exportation de données.**
 
@@ -86,7 +86,7 @@ ms.locfileid: "61300188"
 
 Pour obtenir les types de données pour les propriétés d’événement, faites les choses suivantes :
 
-1. Connectez-vous [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com) et allez à la [page Recherche avancée.](https://securitycenter.windows.com/hunting-package)
+1. Connectez-vous [Microsoft 365 Defender](https://security.microsoft.com) et allez à la [page Recherche avancée.](https://security.microsoft.com/hunting-package)
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 

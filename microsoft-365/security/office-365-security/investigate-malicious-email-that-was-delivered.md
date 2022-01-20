@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc76f546286597c12469e849eab6e62f9a58a6cc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8b3ff937b014eae69c501812ac542f6537b25f8d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938167"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156531"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
@@ -66,7 +66,7 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 |---|---|---|
 |Utiliser l’Explorateur de menaces (et détections en temps réel) pour analyser les menaces|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
 |Utiliser l’Explorateur de menaces (et détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que prévisualiser et télécharger les messages électroniques mis en quarantaine|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité|Non|
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes, prévisualiser le courrier électronique (uniquement dans la page d’entité de messagerie) et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Aperçu|Oui|
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes, prévisualiser le courrier électronique (uniquement dans la page d’entité de messagerie) et télécharger les messages électroniques remis aux boîtes aux lettres|Administrateur général <p> Administrateur de sécurité <p> Lecteur de sécurité <p> Preview|Oui|
 |
 
 > [!NOTE]
@@ -83,7 +83,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 > [!NOTE]
 > Les recherches par défaut dans l’Explorateur n’incluent pas actuellement les éléments remis qui ont été supprimés de la boîte aux lettres cloud par purge automatique d’heure zéro (ZAP). Cette limitation s’applique à tous les affichages (par exemple, les affichages **Programme \>** malveillant ou **Hameçonnage \>** du courrier électronique). Pour inclure les éléments supprimés par ZAP, vous devez ajouter un jeu **d’actions** de remise pour inclure **Supprimé par ZAP**. Si vous incluez toutes les options, vous verrez tous les résultats de l’action de remise, y compris les éléments supprimés par ZAP.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com> , go to Email & **collaboration** \> **Explorer** . Pour aller directement à la page **De l’Explorateur,** utilisez <https://security.microsoft.com/threatexplorer> .
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **collaboration** \> **Explorer** . Pour aller directement à la page **De l’Explorateur,** utilisez <https://security.microsoft.com/threatexplorer> .
 
    Dans la page **Explorateur,** la colonne **Actions supplémentaires** indique aux administrateurs le résultat du traitement d’un e-mail. La **colonne Actions supplémentaires** est accessible au même endroit que l’action de **remise** et **l’emplacement de remise.** Des actions spéciales peuvent être mises à jour à la fin de la chronologie des e-mails de l’Explorateur de menaces, qui est une nouvelle fonctionnalité visant à améliorer l’expérience de recherche pour les administrateurs.
 

@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d4b83457fb8f8dc16891882cd8ca5c131659d35
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 231adb590bc737c646566417db1891ac96fdb455
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167549"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156471"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateformes**
 - macOS
@@ -65,9 +65,9 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 
 Pour les appareils macOS et Linux, vous pouvez choisir de passer par Microsoft Defender for Endpoint. Dans le volet de navigation, sélectionnez **Paramètres** Horsboard Sélectionner le système d’exploitation pour démarrer le processus \>  \> **deboarding.**
 
-Vous pouvez également désinserrez les appareils Windows en désactivant l’intégration tierce. Activer la couverture pour les appareils exécutant des plateformes Windows en intégrant des [solutions tierces.](https://securitycenter.windows.com/interoperability/partners) 
+Vous pouvez également désinserrez les appareils Windows en désactivant l’intégration tierce. Activer la couverture pour les appareils exécutant des plateformes Windows en intégrant des [solutions tierces.](https://security.microsoft.com/interoperability/partners)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)

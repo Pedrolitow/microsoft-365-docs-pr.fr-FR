@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265198"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156351"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -88,6 +88,14 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 - Ouvrez **Finder > Applications.** Cliquez avec le bouton **droit sur Microsoft Defender pour le point de terminaison > déplacer vers la corbeille.**
 
+### <a name="supported-output-types"></a>Types de sortie pris en charge
+
+Prend en charge les types de sortie de format tableau et JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
+
+`-output json`
+
+`-output table`
+
 ### <a name="from-the-command-line"></a>À partir de la ligne de commande
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -96,7 +104,7 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 Les tâches importantes, telles que le contrôle des paramètres du produit et le déclenchement d’analyses à la demande, peuvent être réalisées à partir de la ligne de commande :
 
-|Groupe|Scénario|Commande|
+|Group|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuration|Activer/désactiver la protection cloud|`mdatp config cloud --value [enabled/disabled]`|

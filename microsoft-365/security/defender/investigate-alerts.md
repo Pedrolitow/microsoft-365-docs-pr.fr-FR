@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: cdc853ff4d22708143a9f23fd9399917e7fe91f6
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 2dcc7e57182df3fe0a06bb1713b3a0786f35e144
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128007"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156135"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -108,8 +108,8 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 
 | Source de l’alerte | Caractère en prédépendant |
 | :---|:--- |
-| Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> |
+| Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender pour Point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> |
 | Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
@@ -141,7 +141,7 @@ Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des al
 Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
 
 - État de l’alerte (Nouveau, Résolu, En cours).
-- Compte d’utilisateur qui a reçu l’alerte
+- Compte d’utilisateur qui a reçu l’alerte.
 - Classification de l’alerte (non définie, alerte true, fausse alerte).
 - Pour la classification en tant qu’alerte réelle, le type de menace pour l’alerte dans le **champ Détermination.**
 - Commentaire de l’alerte.

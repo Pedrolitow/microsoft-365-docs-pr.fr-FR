@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121816"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156483"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -38,8 +38,7 @@ ms.locfileid: "61121816"
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
 
-Ratulac-acrolinx-updates You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
-
+Vous pouvez gérer les incidents à partir **d’incidents & alertes** > incidents dans le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exemple de file d’attente d’incident." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -80,7 +79,7 @@ Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des 
 
 ## <a name="assign-an-incident"></a>Affecter un incident
 
-Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur (aperçu). Vous ré assignez un incident, supprimez le compte d’affectation actuel en sélectionnant « x » en côté du nom du compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
+Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur. Pour ré assigner un incident, supprimez le compte d’affectation actuel en sélectionnant « x » à côté du nom du compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
 
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 

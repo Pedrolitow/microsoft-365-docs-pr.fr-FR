@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f2cc71b13965311340dda5f8007f072d6e9220d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3824f8e0ee2821e3f112f6e39833281b167e36e1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935800"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156423"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Outils et méthodes d’intégration pour les Windows dans Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
@@ -42,6 +43,7 @@ En règle générale, vous identifiez l’appareil Windows que vous intégrerez,
 ![Image des outils et méthodes d’intégration](images/onboarding-config-tools.png)
 
 ## <a name="endpoint-onboarding-tools"></a>Outils d’intégration de point de terminaison
+
 Selon le point Windows que vous souhaitez intégrer, utilisez l’outil ou la méthode correspondant décrit dans le tableau suivant.
 
 Windows appareil | Outil ou méthode d’intégration
@@ -50,14 +52,10 @@ Windows appareil | Outil ou méthode d’intégration
 |<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Intégrer les versions précédentes de Windows](onboard-downlevel.md) [ou Microsoft Defender pour le cloud](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
 |<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Professionnel </li> <li> Windows 8.1 Entreprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)
 
-
-
 (<a id="fn1">1</a>) Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
-
 
 >[!IMPORTANT]
 >Pour pouvoir acheter Microsoft Defender pour Endpoint Server SKU, vous devez avoir déjà acheté un minimum combiné des licences d’abonnement suivantes, Windows E5/A5, Microsoft 365 E5/A5 ou Microsoft 365 E5 Sécurité.  Pour plus d’informations sur les licences, consultez les conditions [d’utilisation du produit.](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all)  
-
 
 Rubrique|Description
 :---|:---
@@ -68,6 +66,5 @@ Rubrique|Description
 [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)|Découvrez comment utiliser le package de configuration pour configurer des appareils VDI.
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
-
 
 Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)

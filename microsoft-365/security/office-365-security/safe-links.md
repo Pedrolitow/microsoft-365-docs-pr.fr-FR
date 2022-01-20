@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Découvrez comment Coffre protection des liens dans Defender for Office 365 pour protéger une organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes. Découvrez Teams Coffre liens et consultez les graphiques des messages Coffre liens.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: fc043da2763bf6984062bec903e4f2df7bd6d10d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943063"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156147"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Coffre liens vers Microsoft Defender pour Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "61943063"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens sécurisés dans Outlook, voir Sécurité avancée [Outlook.com.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
@@ -208,6 +208,7 @@ Coffre protection des liens pour Office 365 applications a les exigences client 
   - Office applications sur les appareils iOS ou Android.
   - Visio sur Windows.
   - OneNote dans un navigateur web.
+  - Outlook’Windows lors de l’ouverture de fichiers EML ou MSG enregistrés.
 
 - Office 365 sont configurées pour utiliser l’authentification moderne. Pour plus d’informations, voir Fonctionnement de l’authentification moderne [pour Office 2013, Office 2016 et Office applications clientes 2019.](../../enterprise/modern-auth-for-office-2013-and-2016.md)
 
@@ -262,7 +263,7 @@ Lorsqu’un utilisateur dans une stratégie de liens Coffre active clique sur un
 
 Vous configurez la liste des URL dans les paramètres globaux pour Coffre liens. Pour obtenir des instructions, voir Configurer la liste [« Bloquer les URL suivantes](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)».
 
-**Remarques** :
+**Remarques** :
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
 - Limites pour la **liste Bloquer les URL suivantes** :
@@ -302,7 +303,7 @@ Pour ajouter des entrées à la liste dans les stratégies de liens Coffre nouve
 **Remarques** :
 
 - Les clients suivants ne reconnaissent pas la liste Ne pas réécrire les URL **suivantes** dans Coffre de liens. Les utilisateurs inclus dans les polices peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse Coffre liens dans ces clients :
-  - Microsoft Teams
+  - Microsoft Teams
   - Office web apps
 
   Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md) Toutefois, notez que les URL ajoutées ne seront pas exclues de la réécriture de liens Coffre, car cela doit être effectué dans une stratégie Coffre liens.

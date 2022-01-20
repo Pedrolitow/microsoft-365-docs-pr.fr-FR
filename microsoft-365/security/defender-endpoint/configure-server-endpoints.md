@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 314699973a26820782f2ae899047029d999cdc8a
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: a284ae69ddf299256c3c91a9a63682f41f95211f
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009044"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156495"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -132,7 +132,7 @@ Pour plus d’informations, [voir Intégration à Microsoft Defender pour le clo
 > [!NOTE]
 > Bien que cette méthode d’intégration Windows Server 2012 R2 et Windows Server 2016 soit en prévisualisation, vous pouvez choisir de continuer à utiliser la méthode d’intégration précédente à l’aide de Microsoft Monitoring Agent (MMA). Pour plus d’informations, voir Installer et configurer des points de [terminaison à l’aide de MMA.](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 **Conditions préalables pour Windows Server 2012 R2**
 
@@ -168,7 +168,13 @@ Vous devez télécharger les packages **d’installation** et **d’intégration
 
 > [!div class="mx-imgBorder"]
 > ![Image du tableau de bord d’intégration](images/install-agent-onboard.png)
- 
+
+
+   > [!NOTE]
+   > Sur Windows Server 2012R2, Antivirus Microsoft Defender sera installé par le package d’installation et sera actif, sauf si vous le définissez en mode passif. Sur Windows Server 2016, Antivirus Microsoft Defender doit d’abord être installé en tant que fonctionnalité (voir Basculer vers [MDE)](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)et entièrement mis à jour avant de poursuivre l’installation.
+   > 
+   > Si vous exécutez une solution anti-programme malveillant non Microsoft, veillez à ajouter des exclusions pour Antivirus Microsoft Defender (à partir de cette liste de processus[Microsoft Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)sous l’onglet Processus Defender) à la solution non Microsoft avant l’installation.  Il est également recommandé d’ajouter des solutions de sécurité non Microsoft à la liste d’exclusions de l’Antivirus Defender.
+
 
 Le **package d’installation** contient un fichier MSI qui installe l’agent Microsoft Defender pour Endpoint.
 
@@ -186,6 +192,8 @@ Pour télécharger les packages, utilisez les étapes suivantes :
 3. Sélectionnez **Télécharger le package d’installation** et enregistrez .msi fichier. 
  
 4. Sélectionnez **Télécharger le package d’intégration** et enregistrez .zip fichier.
+
+5. Installez le package d’installation à l’aide de l’une des options d’installation Antivirus Microsoft Defender. L’installation nécessite des autorisations administratives.
 
 
 
@@ -228,9 +236,6 @@ Le `/quiet` commutateur supprime toutes les notifications.
 
 > [!NOTE]
 > Antivirus Microsoft Defender ne passe pas automatiquement en mode passif. Vous pouvez choisir de définir Antivirus Microsoft Defender à exécuter en mode passif si vous exécutez une solution antivirus/anti-programme malveillant non-Microsoft. Pour les installations de ligne de commande, l’option facultative définit immédiatement `FORCEPASSIVEMODE=1` le Antivirus Microsoft Defender en mode passif afin d’éviter les interférences. Ensuite, pour vous assurer que l’Antivirus Defender reste en mode passif après l’intégration pour prendre en charge des fonctionnalités telles que PEPT Block, définissez la clé de Registre « ForceDefenderPassiveMode ».
->
-> - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
-> - Un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser une stratégie de groupe ou Microsoft Endpoint Configuration Manager.
 
 La prise en charge de Windows Server fournit des informations plus approfondies sur les activités du serveur, la couverture de la détection des attaques du noyau et de la mémoire, et permet des actions de réponse.
 
@@ -301,6 +306,9 @@ Les étapes suivantes ne s’appliquent que si vous utilisez une solution anti-p
 Les données collectées par Defender pour le point de terminaison sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
 > - Si vous utilisez Defender pour endpoint avant d’utiliser Microsoft Defender pour le cloud, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Microsoft Defender pour le Cloud ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client.
+> - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
+> - Un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser une stratégie de groupe ou Microsoft Endpoint Configuration Manager.
+
 
 
 ## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 et Windows Server 2022
