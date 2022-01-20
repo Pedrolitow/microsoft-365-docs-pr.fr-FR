@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559867"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083061"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -51,7 +51,7 @@ Les fonctionnalités suivantes permettent la prise en charge votre solution de g
 
 Grâce à ces capacités, vous pouvez intégrer les calendriers de rétention et les exigences de votre organisation dans une solution de gestion des documents qui gère la rétention, la déclaration et l'élimination des enregistrements, afin de prendre en charge le cycle de vie complet de votre contenu.
 
-En plus de la documentation en ligne, nous vous conseillons d’écouter l’[enregistrement du webinaire](https://aka.ms/MIPC/Video-RecordsManagementWebinar) sur la gestion des enregistrements et de télécharger la [documentation associée à cette présentation, ainsi que les FAQ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
+Outre la documentation en ligne, il peut s’avérer utile de télécharger une [série de FAQ](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) à partir d’un webinaire de gestion des enregistrements. L’enregistrement du webinaire réel n’est plus disponible.
 
 ## <a name="records"></a>Enregistrements
 
