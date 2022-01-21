@@ -14,21 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et mettre hors service des appareils macOS dans Microsoft 365 solutions de conformité à l’aide Microsoft Intune pour les clients MDE (prévisualisation)
-ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962998"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159528"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide d'Intune pour les clients de Microsoft Defender pour point de terminaison (aperçu)
 
 > [!IMPORTANT]
 > Utilisez cette procédure ***si vous avez*** déployé Microsoft Defender pour le point de terminaison (MDE) sur vos appareils macOS
-
-<!--## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **S’applique à :**
 
@@ -80,7 +76,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Choisissez le **fichier accessibility.mobileconfig** que vous avez téléchargé à l’étape 1 comme fichier de profil de configuration.
 
-1. Choose **Next**
+1. Sélectionnez **Suivant**
 
 1. Sous **l’onglet Affectations,** ajoutez le groupe sur qui vous souhaitez déployer ces configurations et choisissez **Suivant.**
 

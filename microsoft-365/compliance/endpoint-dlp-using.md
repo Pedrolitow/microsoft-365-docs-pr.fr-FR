@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: e6ab91d8baf3182cd857e7e6002f61b57a8f101e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560599"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159732"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -58,12 +58,6 @@ Ou
 |Justification métier dans les conseils de stratégie | Pris en charge | Pris en charge| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Analyse et protection avancées de la classification
-
-<!--#### Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
-When enabled,--> 
 
 L'analyse et la protection par classification avancée permettent au service de classification des données basé sur le cloud Microsoft 365, plus avancé, d'analyser les éléments, de les classer et de renvoyer les résultats à la machine locale. Cela signifie que vous pouvez tirer parti de la [classification de correspondance exacte](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) des données, des techniques de classification des [entités nommées (aperçu)](named-entities-learn.md#learn-about-named-entities-preview) dans vos stratégies DLP.
 

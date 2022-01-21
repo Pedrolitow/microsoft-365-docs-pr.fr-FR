@@ -1,6 +1,6 @@
 ---
-title: Champs d’alerte Microsoft Defender pour point de terminaison
-description: Comprendre comment les champs d’alerte sont maprés avec les valeurs dans Microsoft Defender pour le point de terminaison
+title: Champs de détection de Microsoft Defender pour point de terminaison
+description: Comprendre comment les champs de détection sont mapés avec les valeurs dans Microsoft Defender pour le point de terminaison
 keywords: détections, champs de détections, champs, api, champs, pull Detections, api rest, demande, réponse
 search.appverid: met150
 ms.prod: m365-security
@@ -16,36 +16,44 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bb199a8ca0f8734da6562304b15cbf2cb4170cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32bec44cfcc3e89dd44dbe89557a9faf2d6850b
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167417"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159612"
 ---
-# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Champs d’alerte Microsoft Defender pour point de terminaison
+# <a name="microsoft-defender-for-endpoint-detection-fields"></a>Champs de détection de Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+
+> [! REMARQUE] L’API REST SIEM de Microsoft Defender pour point de terminaison est prévue pour l’arrêt, car l’API Microsoft Defender pour l’alerte de point de terminaison et l’API d’incident Microsoft 365 Defender qui la remplacent fournissent des métadonnées beaucoup plus riches, y compris l’état à jour de l’alerte, toutes les entités de preuve liées à l’alerte, tous les commentaires entrés par les analystes et autorise la mise à jour de l’état,  Champs assignedTo, classification et détermination par programme.
+> 
+> Aucune nouvelle intégration à l’API SIEM de Microsoft Defender pour point de terminaison ne sera prise en charge . À la place, voir Activer l’intégration [SIEM](enable-siem-integration.md) dans Defender pour le point de terminaison pour plus d’informations sur l’intégration à l’API d’alerte microsoft Defender pour point de terminaison ou à l’API d’incident Microsoft 365 Defender.
+> 
+> Pour plus d’informations sur les outils SIEM d’intégration (Splunk, ArcSight et QRadar), voir Intégrer vos outils SIEM à [Microsoft Defender pour Endpoint.](../defender-endpoint/configure-siem.md)
 
 Comprendre les champs de données qui sont exposés dans le cadre de l’API de détections et la façon dont ils sont map Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - [Defender for Endpoint Alert](alerts.md) se compose d’une ou de plusieurs détections.
-> - **La détection Microsoft Defender ATP est** composée de l’événement suspect qui s’est produit sur l’appareil et de ses détails **d’alerte** associés.
+> - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
+> - **Microsoft Defender pour la détection des points** de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails **d’alerte** associés.
 > - L’API d’alerte Microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Champs API détections et mappage de portail
 
 Le tableau suivant répertorie les champs disponibles exposés dans la charge utile de l’API de détections. Il présente des exemples pour les valeurs remplies et une référence sur la façon dont les données sont reflétées sur le portail.
-
+> 
+> Le MicroFocus ArcSight FlexConnector décrit ci-dessous a été remplacé par un SmartConnector officiel qui appelle l’API Microsoft 365 Defender incident. Pour plus d’informations, voir [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
+> 
 La colonne de champ ArcSight contient le mappage par défaut entre les champs Defender pour le point de terminaison et les champs intégrés dans ArcSight. Vous pouvez télécharger le fichier de mappage à partir du portail lorsque vous activez la fonctionnalité d’intégration SIEM et le modifier pour répondre aux besoins de votre organisation. Pour plus d’informations, voir [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 Les numéros de champ correspondent aux numéros dans les images ci-dessous.
@@ -102,7 +110,7 @@ Les numéros de champ correspondent aux numéros dans les images ci-dessous.
 
 :::image type="content" alt-text="Alerte d’acteur d’image." source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)

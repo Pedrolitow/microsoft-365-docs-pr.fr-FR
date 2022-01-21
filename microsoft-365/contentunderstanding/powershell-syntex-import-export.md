@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: Découvrez comment exporter et importer des modèles de présentation de documents avec PowerShell dans SharePoint Syntex
-ms.openlocfilehash: 289d802fdea50daa0261ec16ea760e9a57b0e9c5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: Découvrez comment exporter et importer des modèles de présentation de documents avec PowerShell SharePoint Syntex.
+ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074851"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159504"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Exporter et importer des modèles de présentation de documents avec PowerShell
 
@@ -47,9 +47,9 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-L’extract.json définit les modèles que vous souhaitez exporter, ce qui permet de spécifier le modèle par nom ou ID et éventuellement configurer pour ne pas extraire les données de formation
+L’extract.json définit les modèles que vous souhaitez exporter, ce qui permet de spécifier le modèle par nom ou ID et éventuellement configurer pour ne pas extraire les données de formation.
 
-### <a name="example--specify-model-by-name"></a>Exemple : spécifier le modèle par nom
+### <a name="example---specify-model-by-name"></a>Exemple : spécifier le modèle par nom
 
 ```json
 {
@@ -68,7 +68,7 @@ L’extract.json définit les modèles que vous souhaitez exporter, ce qui perme
 }
 ```
 
-### <a name="example--specify-model-by-id"></a>Exemple : spécifier le modèle par ID
+### <a name="example---specify-model-by-id"></a>Exemple : spécifier le modèle par ID
 
 ```json
 {
@@ -90,7 +90,8 @@ L’extract.json définit les modèles que vous souhaitez exporter, ce qui perme
 
 Si vous n’incluez pas la propriété « includeTrainingData », le comportement par défaut est à inclure.
 
-> REMARQUE : les données de formation sont requises pour qu’un modèle soit modifiable lorsqu’il est importé dans un centre de contenu de destination
+> [!NOTE]
+> Les données de formation sont requises pour qu’un modèle soit modifiable lorsqu’il est importé dans un centre de contenu de destination.
 
 ## <a name="import-models-to-a-content-center"></a>Importer des modèles dans un centre de contenu
 Document understanding models that have been exported to PnP templates can be imported to a content center on any tenant. Si l’exportation inclut des données de formation, le modèle est modifiable une fois importé.

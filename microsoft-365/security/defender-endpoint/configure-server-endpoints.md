@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a284ae69ddf299256c3c91a9a63682f41f95211f
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: efb152c3c72c77f49110b8a4e337107cff5819b0
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156495"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159684"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -111,6 +111,7 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
 - Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez ensuite avant la mise à niveau.
 - Les exclusions automatiques pour *les* rôles serveur ne sont pas Windows Server 2012 R2 ; toutefois, les exclusions intégrées pour les fichiers de système d’exploitation le sont. Pour plus d’informations sur l’ajout d’exclusions, voir [recommandations](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)d’analyse antivirus pour Enterprise ordinateurs exécutant actuellement des versions de Windows .
+
 
 <a name="integration-with-azure-defender"></a>
 

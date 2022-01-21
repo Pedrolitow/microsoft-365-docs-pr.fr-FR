@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et désinsser des appareils macOS dans Microsoft 365 solutions de conformité à l’aide de JAMF Pro (prévisualisation)
-ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074545"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159487"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide de JAMF Pro (préversion)
 
@@ -27,10 +27,6 @@ Vous pouvez utiliser jamf Pro pour intégrer des appareils macOS dans Microsoft 
 
 > [!IMPORTANT]
 > Utilisez cette procédure si ***Microsoft*** Defender pour point de terminaison (MDE) n’est pas déployé sur vos appareils macOS
-
-## <a name="get-registered"></a>S’inscrire
-
-Pour accéder à cette fonctionnalité, vous devez enregistrer votre locataire auprès de Microsoft. Afficher, [inscrivez-vous à la prise en charge Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews)
 
 **S’applique à :**
 

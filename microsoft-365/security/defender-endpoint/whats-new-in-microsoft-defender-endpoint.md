@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b452c0aea4932903c47f0874e839770caa2a6850
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940293"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159589"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -84,7 +84,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 - [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non-catégorie. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
 
-## <a name="august-2021"></a>Août 2021
+## <a name="august-2021"></a>Août 2021
 
 - (Aperçu) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (prévisualisation) est une solution de protection de point de terminaison qui inclut la protection nouvelle génération, la réduction de la surface d’attaque, la gestion centralisée et la génération de rapports, ainsi que les API. Defender pour endpoint Plan 1 (prévisualisation) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, ont des Microsoft 365 E3 et n’ont pas encore Microsoft 365 E5. 
 
@@ -96,7 +96,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 - (Aperçu) [Rapport sur l’état et la conformité de l’appareil](machine-reports.md) <br>  Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 - [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel d’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
@@ -118,10 +118,10 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Détection jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 
 
-## <a name="march-2021"></a>Mars 2021
+## <a name="march-2021"></a>mars 2021
 - [Gérer la protection contre les falsifications à l’aide Microsoft 365 Defender portail](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client.*
 
 
 ## <a name="january-2021"></a>Janvier 2021
 
-- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint ajoute désormais la prise en charge Windows Virtual Desktop.
+- [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint ajoute désormais la prise en charge d’Azure Virtual Desktop.

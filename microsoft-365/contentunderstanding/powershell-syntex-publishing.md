@@ -13,23 +13,23 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: Découvrez comment publier un document SharePoint Syntex modèles de présentation avec PowerShell.
-ms.openlocfilehash: 4aa5639d50145cabe5b95a11d3d927b7d2e06749
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 215a073ea5cabe7c701d24a9b8972268c4dd21ff
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074831"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159696"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>Publier des modèles de présentation de documents avec PowerShell
 
 > [!IMPORTANT]
 > Les SharePoint Syntex PowerShell et tous les autres composants PnP sont des outils open source soutenus par une communauté active qui les aide. Il n’existe aucun contrat de niveau de service pour la prise en charge des outils open source des canaux de support Microsoft officiels.
 
-SharePoint Syntex modèles sont généralement déployés dans des bibliothèques de documents au sein de votre client. Pour ce faire, vous pouvez utiliser le site Centre de contenu, mais également à l’aide de [PowerShell PnP,](https://pnp.github.io/powershell/) comme expliqué dans cet article.
+SharePoint Syntex modèles sont généralement déployés dans des bibliothèques de documents au sein de votre client. Pour ce faire, vous pouvez utiliser le site du centre de contenu, mais également à l’aide de [PowerShell PnP,](https://pnp.github.io/powershell/) comme expliqué dans cet article.
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>Liste des modèles disponibles dans un centre de contenu
 
-Pour obtenir une vue d’ensemble des modèles ajoutés au site centre de contenu SharePoint Syntex utilisez la cmdlet [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) :
+Pour obtenir une vue d’ensemble des modèles ajoutés au site de centre de contenu SharePoint Syntex actuel, utilisez la cmdlet [Get-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) :
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -38,7 +38,7 @@ Get-PnPSyntexModel
 
 ## <a name="apply-a-model-to-a-library"></a>Appliquer un modèle à une bibliothèque
 
-Pour appliquer un modèle à une bibliothèque, vous pouvez utiliser la cmdlet [Publish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) :
+Pour appliquer un modèle à une bibliothèque, utilisez la cmdlet [Publish-PnPSyntexModel](https://pnp.github.io/powershell/cmdlets/Publish-PnPSyntexModel.html) :
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -65,9 +65,7 @@ Unpublish-PnPSyntexModel -Model "Invoice model" -ListWebUrl "https://contoso.sha
 
 ## <a name="apply-models-in-bulk"></a>Appliquer des modèles en bloc
 
-Si vous souhaitez publier plusieurs modèles dans plusieurs bibliothèques, 
-
-Tout d’abord, créez un fichier CSV d’entrée répertoriant les modèles et les emplacements cibles :
+Si vous souhaitez publier plusieurs modèles dans plusieurs bibliothèques, créez un fichier CSV d’entrée répertoriant les modèles et les emplacements cibles :
 
 ```CSV
 ModelName,TargetSiteUrl,TargetWebServerRelativeUrl,TargetLibraryServerRelativeUrl
@@ -76,7 +74,7 @@ Contract Notice,https://contoso.sharepoint.com/sites/Site1,/sites/Site1,/sites/s
 Trade Confirmation,https://contoso.sharepoint.com/sites/Site2,/sites/Site2,/sites/site2/shared%20documents
 ```
 
-Ce fichier CSV peut ensuite être utilisé comme entrée dans un script qui publiera les modèles répertoriés dans les bibliothèques appropriées. Dans l’exemple ci-dessous, le traitement par lots est utilisé pour augmenter l’efficacité des demandes.
+Ce fichier CSV peut ensuite être utilisé comme entrée dans un script qui publiera les modèles répertoriés dans les bibliothèques appropriées. Dans l’exemple suivant, le traitement par lots est utilisé pour augmenter l’efficacité des demandes.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourSite"

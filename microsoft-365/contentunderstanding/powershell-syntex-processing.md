@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: Découvrez comment utiliser PowerShell pour demander le traitement par un modèle SharePoint Syntex document.
-ms.openlocfilehash: a4bdf9b450306686d19218e13a7a708b37fdb04e
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074836"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159672"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Utiliser PowerShell pour demander le traitement par un modèle de présentation de document
 
@@ -56,7 +56,7 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 
 ## <a name="request-processing-of-all-items-based-on-a-property"></a>Demander le traitement de tous les éléments en fonction d’une propriété
 
-Si vous souhaitez limiter le traitement à un sous-ensemble spécifique d’éléments dans une bibliothèque, vous pouvez utiliser un script pour sélectionner un groupe spécifique de fichiers. Dans l’exemple ci-dessous, le script permet de sélectionner un champ et d’en filtrer une valeur. Des requêtes plus complexes peuvent être effectuées [à l’aide de Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
+Si vous souhaitez limiter le traitement à un sous-ensemble spécifique d’éléments dans une bibliothèque, vous pouvez utiliser un script pour sélectionner un groupe spécifique de fichiers. Dans l’exemple suivant, le script permet de sélectionner un champ et d’en filtrer une valeur. Des requêtes plus complexes peuvent être effectuées [à l’aide de Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

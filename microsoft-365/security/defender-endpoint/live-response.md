@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074689"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159596"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -64,7 +64,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **macOS** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.43.84 
   
   - **Linux** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.45.13 
-
+    
   - **Windows Server 2012 R2** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,8 +72,10 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **Windows Server 2019**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-
+    
   - **Windows Server 2022**
+
+       
 
 - **Activez la réponse en direct à partir de la page paramètres avancés.**
 
@@ -158,24 +160,26 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 ****
 | Command  | Description  | Windows et Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | Modifie le répertoire actuel.  | v  | v | v |
+| cd  | Modifie le répertoire actuel.  | v  | v  | v  |
 | cls  | Cette commande permet d’effacer l’écran de la console.  | v  | v  | v  |
 | connect  | Lance une session de réponse en direct sur l’appareil.  | v  | v  | v  |
-| connexions  | Affiche toutes les connexions actives.  | v  | N | N |
-| dir  | Affiche une liste de fichiers et de sous-répertoires dans un répertoire.  | v  | v  |v  |
-| drivers  | Affiche tous les pilotes installés sur l’appareil.  | v |  N | N  |
+| connexions  | Affiche toutes les connexions actives.  | v  | N  | N  |
+| dir  | Affiche une liste de fichiers et de sous-répertoires dans un répertoire.  | v  | v  | v  |
+| drivers  | Affiche tous les pilotes installés sur l’appareil.  | v  | N  | N  |
 | fg `<command ID>`  | Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel.  REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non un piD  | v  | v  | v  |
-| fileinfo  | Récupération d’informations sur un fichier.  |v  | v  | v  |
-| findfile  | Localise les fichiers sous un nom donné sur l’appareil.  | v | v  | v  |
+| fileinfo  | Récupération d’informations sur un fichier.  | v  | v  | v  |
+| findfile  | Localise les fichiers sous un nom donné sur l’appareil.  | v  | v  | v  |
 | getfile <file_path>  | Télécharge un fichier.  | v  | v  | v  |
-| Aide  | Fournit des informations d’aide pour les commandes de réponse en direct.  |v  | v | v  |
-| tâches  | Indique les travaux en cours d’exécution, leur ID et leur état.  | v  | v | v |
-| persistance  | Affiche toutes les méthodes de persistance connues sur l’appareil.  | v  | N | N |
+| Aide  | Fournit des informations d’aide pour les commandes de réponse en direct.  | v  | v  | v  |
+| tâches  | Indique les travaux en cours d’exécution, leur ID et leur état.  | v  | v  | v  |
+| persistance  | Affiche toutes les méthodes de persistance connues sur l’appareil.  | v  | N  | N  |
 | Processus  | Affiche tous les processus en cours d’exécution sur l’appareil.  | v  | v  | v  |
-| registre  | Affiche les valeurs du Registre.  | v  | N | N |
-| scheduledtasks  | Affiche toutes les tâches programmées sur l’appareil.  | v | N | N |
-| services  | Affiche tous les services sur l’appareil.  | v  | N | N |
-| trace  | Définit le mode de journalisation du terminal pour le débogage.  | v  | v  |v  |
+| registre  | Affiche les valeurs du Registre.  | v  | N  | N  |
+| scheduledtasks  | Affiche toutes les tâches programmées sur l’appareil.  | v  | N  | N  |
+| services  | Affiche tous les services sur l’appareil.  | v  | N  | N  |
+| startupfolders  | Affiche tous les fichiers connus dans les dossiers de démarrage sur l’appareil.  | v  | N  | N  |
+| status  | Indique l’état et la sortie d’une commande spécifique.  | v  | N  | N  |
+| trace  | Définit le mode de journalisation du terminal pour le débogage.  | v  | v  | v  |
 
 ### <a name="advanced-commands"></a>Commandes avancées
 
@@ -195,8 +199,9 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | library  | Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.  | v  | v  | v  |
 | putfile  | Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.  | v  | v  | v  |
 | corriger  | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: This command has a prerequisite command. Vous pouvez utiliser la commande -auto conjointement avec la correction pour exécuter automatiquement la commande prérequise.  | v  | v  | v  |
-| analyse  | Déconnecte l’appareil du réseau tout en conservant la connectivité au service Defender for Endpoint  | N  | v  | v  |
+| analyse  | Exécute une analyse antivirus (rapide) pour identifier et corriger les programmes malveillants.  | N  | v  | v  |
 | undo  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
+
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 
@@ -223,7 +228,7 @@ Pour permettre à votre équipe des opérations de sécurité de continuer à ex
 - Si vous attendez le téléchargement d’un fichier, vous pouvez le déplacer vers l’arrière-plan à l’aide de Ctrl + Z.
 - Pour mettre un téléchargement de fichier au premier plan, dans la console de commande de réponse en direct, tapez `fg <command_id>` .
 
-Voici quelques exemples :
+Voici quelques exemples :
 
 <br>
 
@@ -342,7 +347,6 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
 - La valeur du délai d’inactivité de la session de réponse active est de 30 minutes.
-- La valeur du délai d’inactivité de la commande Getfile est de 30 minutes. Il est considéré comme inactif pendant l’exécution de la commande en arrière-plan.
 - Un utilisateur peut démarrer jusqu’à 10 sessions simultanées.
 - Un appareil ne peut être connecté qu’à une seule session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :

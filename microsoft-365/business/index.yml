@@ -71,12 +71,18 @@ conceptualContent:
         - url: 'https://www.microsoft.com/microsoft-365/partners/business'
           itemType: overview
           text: Page du partenaire
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx'
+        - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: download
-          text: Présentation (centrée sur le client)
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx'
+          text: Business Premium Partner Playbook
+        - url: 'https://aka.ms/bpbdmpitchdeck'
           itemType: download
-          text: Présentation (centrée sur le partenaire)
+          text: Business Premium business decision maker (BDM) pitch deck
+        - url: 'https://aka.ms/bpitdmpitchdeck'
+          itemType: download
+          text: Business Premium it decision maker (ITDM) pitch deck
+        - url: 'https://aka.ms/bppartneropportunitydeck'
+          itemType: download
+          text: Présentation des opportunités Premium entreprise
         - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
           itemType: download
           text: Les principes fondamentaux de la technologie
@@ -101,7 +107,7 @@ conceptualContent:
           itemType: how-to-guide
           text: Réinitialiser le mot de passe d’une personne
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: Afficher plus
     - title: Gestion des menaces
       links:
@@ -118,7 +124,7 @@ conceptualContent:
           itemType: overview
           text: Accès conditionnel
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: Afficher plus
     - title: Gestion des données
       links:
