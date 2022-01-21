@@ -32,6 +32,8 @@
       href: apply-a-model.md
     - name: Créer un modèle de traitement de formulaire
       href: create-a-form-processing-model.md
+    - name: Créer des documents à l’aide de l’assembly de contenu
+      href: content-assembly.md
     - name: Publier et découvrir un modèle
       href: model-discovery.md
     - name: Appliquer une autre étiquette de rétention

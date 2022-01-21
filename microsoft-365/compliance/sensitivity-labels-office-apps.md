@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 3dd46502fc4e54e298e1f3be4f776e1e325259a8
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074701"
+ms.locfileid: "62083072"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -317,7 +317,7 @@ Dans ces scénarios, à l’aide de leurs applications Office, un utilisateur av
 ### <a name="dynamic-markings-with-variables"></a>Marquages dynamiques avec des variables
 
 > [!IMPORTANT]
-> Actuellement, toutes les applications, sur toutes les plateformes, ne prennent pas en charge les marquages de contenu dynamiques que vous pouvez spécifier pour vos en-têtes, pieds de page et filigranes. Pour les applications qui ne prennent pas en charge cette fonctionnalité, elles appliquent les marquages comme le texte original spécifié dans la configuration de l'étiquette, plutôt que de résoudre les variables.
+> Pour les applications qui ne prennent pas en charge cette fonctionnalité, elles appliquent les marquages comme le texte original spécifié dans la configuration de l'étiquette, plutôt que de résoudre les variables.
 > 
 > Le client d’étiquetage unifié Azure Information Protection prend en charge les marquages dynamiques. Pour l’étiquetage intégré à Office, consultez les tableaux de la section [Fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour connaître les versions minimales prises en charge.
 
