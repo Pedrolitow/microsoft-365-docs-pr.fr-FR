@@ -17,33 +17,52 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
-description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
-ms.date: 09/16/2021
-ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
+ms.date: 01/20/2022
+ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373307"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156171"
 ---
-# <a name="cancel-your-subscription"></a>Annuler un abonnement
+# <a name="cancel-your-subscription"></a>Annuler votre abonnement
+
+Vous pouvez annuler votre abonnement à tout moment dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d'administration Microsoft 356</a>. Cependant, pour recevoir un remboursement, vous devez répondre à certaines conditions d'éligibilité au remboursement. Pour plus d'informations, voir [Comprendre l'éligibilité au remboursement](#understand-refund-eligibility).
+
+Si vous avez plusieurs abonnements au même produit, comme Microsoft 365 Business Premium, l'annulation d'un abonnement n'aura pas d'incidence sur les licences ou services achetés dans les autres.
 
 > [!IMPORTANT]
-> Cet article s'applique uniquement aux abonnements Microsoft 365 pour entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
-
-*Conditions :* Si vous disposez de moins de 25 licences attribuées à vos utilisateurs, vous pouvez à tout moment annuler votre abonnement payant ou version d’évaluation de Microsoft 365 dans le centre d’administration Microsoft 365. Si vous disposez de plus de 25 licences attribuées à vos utilisateurs, réduisez ce nombre à moins de 25 ou bien [appelez le service clientèle pour annuler votre abonnement](../../admin/get-help-support.md).
-
-*Remboursement :* Tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
-
-> [!NOTE]
-> 
-> - Si vous disposez de plusieurs abonnements pour un même produit tel que Microsoft 365 Business Premium, l’annulation d’un de ces abonnements n’impacte pas les licences ou les services relatifs aux autres abonnements.
-> - Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Cet article s'applique uniquement aux abonnements Dynamics 365, Intune, Power Platform et Microsoft 365 pour les entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, voir [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Pour effectuer les étapes de cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, voir [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+
+## <a name="understand-refund-eligibility"></a>Comprendre l'éligibilité au remboursement
+
+### <a name="if-you-have-a-billing-profile"></a>Si vous avez un profil de facturation
+
+Vous devez annuler dans les 72 heures suivant le début d'un abonnement payant pour obtenir un remboursement au prorata du temps inutilisé que vous avez déjà payé. Les remboursements ne sont pas disponibles après 72 heures.
+
+Par exemple, supposons que vous ayez acheté un abonnement d'un an pour lequel vous payez 20 $ par mois pour une seule licence. Vous avez acheté l'abonnement le 1er février 2022 à 11 h 00 UST et décidez de l'annuler le 3 février 2022 à 11 h 00 UST. Nous déduisons 1,43 $ pour les deux jours d'abonnement et vous recevez un remboursement au prorata de 18,57 $.
+
+**Vous ne savez pas si vous avez un profil de facturation ?** Pour savoir comment savoir si vous avez un profil de facturation, consultez [Afficher mes profils de facturation](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+
+### <a name="if-you-dont-have-a-billing-profile"></a>Si vous n'avez pas de profil de facturation
+
+Utilisez le tableau suivant pour vous aider à déterminer si vous pouvez annuler vous-même votre abonnement.
+
+|Si votre abonnement a  |Vous pouvez  |
+|--------------|--------------|
+|25 licences ou moins  | Annuler votre essai ou votre abonnement payant en ligne dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d'administration Microsoft 356</a> à tout moment.        |
+|Plus de 25 licences   | Réduire le nombre de licences à 25 ou moins et réessayer, ou [appeler l'assistance pour annuler votre abonnement](../../admin/get-help-support.md).        |
+
+Pour les abonnements qui n'ont pas de profil de facturation, vous ne pouvez annuler que pendant une période limitée après avoir acheté ou renouvelé votre abonnement. Si la fenêtre d'annulation est passée, [désactiver la facturation récurrente](renew-your-subscription.md) pour annuler l'abonnement à la fin de sa durée.
+
+Si vous annulez pendant la fenêtre de temps limitée, tout crédit au prorata vous sera restitué au cours du prochain cycle de facturation.
 
 ## <a name="steps-to-cancel-your-subscription"></a>Étapes d’annulation d’un abonnement
 
