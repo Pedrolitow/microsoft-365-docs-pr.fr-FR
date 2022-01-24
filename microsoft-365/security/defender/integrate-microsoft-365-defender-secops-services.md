@@ -16,19 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 7c2cebc256299bd529b8dfcc23787fcc0a16d85d
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121446"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172018"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
 
@@ -75,7 +74,7 @@ Pour intégrer les fonctionnalités de Microsoft 365 Defender, vous devez affine
 - [Qu’est-ce que Microsoft Defender pour point de terminaison ?](/defender-endpoint/microsoft-defender-endpoint)
 - [Qu’est-ce que Microsoft Defender pour Identity ?](/defender-for-identity/what-is)
 - [Qu’est-ce que Defender pour Office 365 ?](/office-365-security/defender-for-office-365)
-- [Qu’est-ce que Microsoft Defender pour les applications cloud ?](/cloud-app-security/what-is-cloud-app-security)
+- [Qu'est-ce que Microsoft Defender pour les applications cloud ?](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>Étape suivante
 

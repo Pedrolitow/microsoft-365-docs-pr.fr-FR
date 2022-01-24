@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942667"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62170974"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour l’identité
 
@@ -64,7 +66,7 @@ Ensuite, téléchargez, installez et configurez le capteur Defender for Identity
 |4     | Configurer le capteur       |  [Configurer les paramètres du capteur d’identité Microsoft Defender ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
-## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
+## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur
 
 Sur les ordinateurs sur qui vous avez installé le capteur, configurez Windows collection de journaux d’événements et les paramètres proxy Internet pour activer et améliorer les fonctionnalités de détection.
 
@@ -82,7 +84,7 @@ Pour vous assurer que Windows clients et serveurs autorisent votre compte Defend
 
 Pour obtenir des instructions sur la façon de faire, voir Configurer Microsoft Defender pour l’identité pour effectuer des [appels distants à SAM.](/defender-for-identity/install-step8-samr) 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 3 sur 3 : Piloter [Microsoft Defender pour l’identité](eval-defender-identity-pilot.md)
 

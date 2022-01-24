@@ -17,18 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom:
 - admindeeplinkDEFENDER
 - admindeeplinkEXCHANGE
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0253d0ac64443562053765c9f0cdaaee69aeaad6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc49494d924129ed2771bc399467f3e9101e7620
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421857"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172354"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirection des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 

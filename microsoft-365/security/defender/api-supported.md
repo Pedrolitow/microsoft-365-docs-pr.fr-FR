@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c77e825fa680a038ba89a9054e04ce939dcb7941
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1785186f778c489cb4a254fe39cc41921a4de86e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203914"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171007"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
@@ -55,11 +56,11 @@ L’URI de base pour les deux API principales est : https://api.security.microso
 
 Les jetons peuvent être acquis en accédant à https://api.security.microsoft.com .
 
-Toutes les API le long du `/api` chemin d’accès utilisent le [protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
+Toutes les API le long du `/api` chemin d’accès utilisent [le protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [présentation Microsoft 365 Defender API de Microsoft 365 Defender’api](api-overview.md)
 - [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [API de diffusion en continu](../defender-endpoint/raw-data-export.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)

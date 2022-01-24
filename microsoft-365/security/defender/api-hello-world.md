@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4280999786cda02c183bb0eb03bea8c2c93c84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1c83a64c3bf1e721ea54b526c0db0c5d7c403fba
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202642"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172438"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>API REST Hello World pour Microsoft 365 Defender web
 
@@ -46,7 +47,7 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
 1. Connectez-vous [à Azure](https://portal.azure.com) en tant qu’utilisateur avec le **rôle d’administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
@@ -56,7 +57,7 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
-   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection d’autorisation d’API.](../../media/apis-in-my-org-tab.PNG)
 
    - Sélectionnez **Application permissions**  >  **Incident.Read.All** et **sélectionnez Ajouter des autorisations.**
 
@@ -66,12 +67,12 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
     ![Image d’octroi d’autorisations.](../../media/grant-consent.PNG)
 
-6. Ajoutez un secret à l’application. Select **Certificates & secrets,** add a description to the secret, then select **Add**.
+6. Ajoutez une secret à l’application. Select **Certificates & secrets,** add a description to the secret, then select **Add**.
 
     > [!TIP]
     > Après avoir sélectionné **Ajouter,** **sélectionnez copier la valeur de secret générée.** Vous ne pourrez pas récupérer la valeur secrète après votre départ.
 
-    ![Image de la clé de création d’application.](../../media/webapp-create-key2.png)
+    ![Image de la clé de création de l’application.](../../media/webapp-create-key2.png)
 
 7. Enregistrez votre ID d’application et votre ID de client dans un endroit sûr. Ils sont répertoriés sous Vue **d’ensemble** sur la page de votre application.
 
@@ -79,7 +80,7 @@ La réalisation de ce projet doit prendre entre 5 et 10 minutes. Cette estimatio
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtenir un jeton à l’aide de l’application et utiliser le jeton pour accéder à l’API
 
-Pour plus d’informations Azure Active Directory jetons, voir le [didacticiel Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur les jetons Azure Active Directory, voir le [didacticiel Azure AD'](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
 > Bien que l’exemple de cette application de démonstration vous encourage à coller votre valeur secrète à des fins de test, vous ne devez jamais coder en dur des **secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, voir Gérer les secrets dans vos applications serveur avec [Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -172,7 +173,7 @@ Vous avez terminé ! Vous avez réussi :
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [présentation Microsoft 365 Defender API de Microsoft 365 Defender’api](api-overview.md)
 - [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md)
 - [Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur](api-create-app-user-context.md)

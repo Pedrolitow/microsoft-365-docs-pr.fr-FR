@@ -16,14 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4c8f0ff2ca13d7f1c0e8adfcf4e0bdf09aa1c2ac
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933143"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172042"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour les applications cloud
 
@@ -73,7 +75,7 @@ Pour effectuer ces tâches, consultez Microsoft Defender pour l’intégration d
 
 <a name="step-3"></a>
 
-## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Étape 3. Déployer le collecteur de journaux Defender pour les applications cloud sur vos pare-feu et autres proxies
+## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Étape 3. Déployer le collecteur de journaux Defender pour les applications cloud sur vos pare-feu et autres proxies
 
 Pour une couverture sur tous les appareils connectés à votre réseau, déployez le collecteur de journaux Defender for Cloud Apps sur vos pare-feu et autres proxies pour collecter des données à partir de vos points de terminaison et les envoyer à Defender for Cloud Apps pour analyse.
 

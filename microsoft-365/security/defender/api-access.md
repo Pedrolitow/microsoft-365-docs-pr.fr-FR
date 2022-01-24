@@ -1,7 +1,7 @@
 ---
 title: Accéder aux API Microsoft 365 Defender de données
 description: Découvrez comment accéder aux API Microsoft 365 Defender de données
-keywords: accès, api, contexte d’application, contexte utilisateur, application aad, jeton d’accès
+keywords: access, api, contexte d’application, contexte utilisateur, application aad, jeton d’accès
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc9c90effd91c2fddc390e7338beca8ae87ea312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: a8406c0ec27c238615b25f60b988efbb50a8d7d7
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212232"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172234"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accéder aux API Microsoft 365 Defender de données
 
@@ -44,7 +45,7 @@ En règle générale, vous devez suivre les étapes suivantes pour utiliser les 
 
 - Créer une application Azure Active Directory application
 - Obtenir un jeton d’accès à l’aide de cette application
-- Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
+- Utiliser le jeton pour accéder à l’API Microsoft 365 Defender de connexion
 
 > [!NOTE]
 > L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
@@ -88,7 +89,7 @@ Pour plus d’informations, voir Créer une application avec un accès partenair
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [présentation Microsoft 365 Defender API de Microsoft 365 Defender’api](api-overview.md)
 - [Autorisation OAuth 2.0 pour la connexion de l’utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Créer une application « Hello World » qui accède aux API Microsoft 365'application](api-hello-world.md)

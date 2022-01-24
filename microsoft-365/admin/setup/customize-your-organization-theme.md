@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: f6aa013d20cfedcc8d61d005e21db11c58cb5f6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 307d322c441a2f56e43e02abb947c6c9ba8cff2d
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197807"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171058"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -40,7 +40,7 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
 
 1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis sélectionnez l’onglet Profil de \>  **l’organisation.**
 
-2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
+2. Sous **l’onglet Profil de** l’organisation, **sélectionnez Thèmes personnalisés.**
 
 Tous les thèmes d’organisation peuvent être personnalisés à l’aide des onglets suivants.
 
@@ -58,14 +58,14 @@ Votre expérience sous l’onglet Général varie selon que vous ajoutez ou modi
 
 Le thème par défaut est le premier thème affiché.  
 
-1. Si vous avez précédemment personnalisé un  thème pour votre organisation, sélectionnez Thème par défaut et utilisez l’une de vos personnalisations enregistrées, ou sélectionnez **Ajouter un thème.**
+1. Si vous avez précédemment personnalisé un  thème pour votre organisation, sélectionnez Thème par défaut et utilisez l’une de vos personnalisations enregistrées, ou **sélectionnez Ajouter un thème.**
 2. Dans la page **Général,** vous pouvez empêcher les utilisateurs de remplacement de leur thème et afficher le nom complet de l’utilisateur.
 3. Sélectionnez **Enregistrer** pour enregistrer vos modifications.  
 
 > [!IMPORTANT]
 > Le thème par défaut est unique, il ne peut pas être renommé et s’applique à tous les membres de votre organisation. Pour supprimer le thème par défaut, vous devez d’abord supprimer tous les autres thèmes.
 
-:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour votre organisation":::
 
 ### <a name="create-a-group-theme"></a>Créer un thème de groupe
 
@@ -77,11 +77,11 @@ Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
 3. Sélectionnez **Enregistrer**.
 
-:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour un groupe d’utilisateurs de votre organisation":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logos : spécifier vos logos de thème
 
-Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers laquelle les utilisateurs navigueront lorsqu’ils sélectionnent le logo.
+Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers laquelle les utilisateurs navigueront lorsqu’ils sélectionneront le logo.
 
 - **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS. Ajoutez une URL d’image HTTPS qui autorise l’accès anonyme et ne nécessite pas d’authentification. Pour le thème par défaut, vous avez également la possibilité de télécharger une image de logo inférieure à 10 000 livres. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG. Pour les images SVG, elles seront resa taille pour s’ajuster à 24 pixels verticalement. Les images JPG, PNG et GIF seront adaptées à une taille de 200 x 48 pixels. Les proportions de logo seront toujours conservées.
 - **Autre logo**: ajoutez un emplacement d’URL qui pointe vers votre logo. Votre autre logo doit être optimisé pour une utilisation dans Office thèmes foncés. Mêmes exigences que le logo par défaut.
@@ -106,11 +106,11 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
-### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation a déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
 Le thème par défaut continuera d’être affiché pour tous les employés.L’ajout d’un nouveau thème de groupe sera uniquement mis à la disposition Microsoft 365 groupes associés à ce thème.
 
-### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi ne vois-je pas les thèmes de groupe dans le Centre d’administration ?
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi les thèmes de groupe ne s’y voient-ils pas dans le Centre d’administration ?
 
 Seuls les administrateurs généraux peuvent personnaliser les thèmes d’entreprise.Les lecteurs globaux ont un accès en lecture seule.
 
@@ -127,7 +127,7 @@ Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs gro
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Puis-je attribuer manuellement un thème indépendamment de Microsoft 365 groupes ?  
 
-Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs Microsoft 365 groupes. Les utilisateurs membres du groupe Microsoft 365 rechercheront le thème appliqué à leur groupe. Vous pouvez [créer et ajouter de nouveaux](../create-groups/create-groups.md) membres à **** un groupe Microsoft 365 en allant aux groupes Paramètres   >  **dans** le Centre d’administration.
+Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs Microsoft 365 groupes. Les utilisateurs qui sont membres du groupe Microsoft 365 rechercheront le thème appliqué à leur groupe. Vous pouvez [créer et ajouter de nouveaux](../create-groups/create-groups.md) membres à **** un groupe Microsoft 365 en allant aux groupes Paramètres   >  **dans** le Centre d’administration.
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>Que se passe-t-il si un utilisateur est affecté à plusieurs thèmes de groupe ?  
 
@@ -145,11 +145,11 @@ Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adres
 
 Le coefficient de contraste recommandé entre le texte, la couleur de l’icône ou du bouton et la couleur d’arrière-plan est de 4,5:1. Vous pouvez remplacer cette recommandation et tout de même enregistrer votre thème, car ce n’est pas obligatoire.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 seront-ils utilisés ?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 sera-t-il utilisé ?
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter des vignettes personnalisées à la page Mes applications et au lanceur d’applications](../manage/customize-the-app-launcher.md) (article)\
-[Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)
+[Vue d’Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

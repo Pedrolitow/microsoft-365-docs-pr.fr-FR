@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 484924d936f348fb29421b6bcc1789df4a44dc90
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933037"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172402"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Piloter Microsoft Defender pour les applications cloud avec Microsoft 365 Defender
 
@@ -64,7 +66,7 @@ Pour plus d’informations, notamment sur les applications et les clients pris e
 
 Pour obtenir des exemples de stratégies, voir [Stratégies Recommandées de Microsoft Defender pour les applications cloud pour les applications SaaS.](../office-365-security/mcas-saas-access-policies.md) Ces stratégies s’appuient sur un ensemble de stratégies communes d’accès aux identités et aux appareils qui sont recommandées comme point de départ pour tous les clients. [](../office-365-security/microsoft-365-policies-configurations.md) 
 
-## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
+## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Étape 3. Tester les fonctionnalités : parcourir les didacticiels pour protéger votre environnement 
 
 La documentation de Microsoft Defender pour les applications cloud inclut une série de didacticiels pour vous aider à découvrir les risques et à protéger votre environnement. 
 

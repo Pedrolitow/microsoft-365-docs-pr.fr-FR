@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c407c0ad050a0275f370ea534d62ee9d290903e3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 77ccebb394230c38140bc8cd62c97262ff1ddf7a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873548"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171801"
 ---
 # <a name="evaluate-microsoft-defender-for-identity-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender pour l’identité
 

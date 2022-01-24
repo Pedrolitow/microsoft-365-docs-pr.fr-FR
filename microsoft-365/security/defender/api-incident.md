@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fc2e7f92a48cf94c0092dbcf7da051642949180c
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.custom: api
+ms.openlocfilehash: a1a3f119e0aafe75b58df9c2330a950d5ab31ead
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221387"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172306"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API des incidents et le type de ressource incidents
 
@@ -68,12 +69,12 @@ Propriété | Type | Description
 -|-|-
 incidentId | long | ID unique de l’incident.
 redirectIncidentId | nullable long | L’ID d’incident dans le cas de l’incident en cours a été fusionné.
-incidentName | string | Nom de l’incident.
+incidentName | chaîne | Nom de l’incident.
 createdTime | DateTimeOffset | Date et heure (en UTC) de création de l’incident.
 lastUpdateTime | DateTimeOffset | Date et heure (en UTC) de la dernière mise à jour de l’incident.
-assignedTo | string | Propriétaire de l’incident.
+assignedTo | chaîne | Propriétaire de l’incident.
 Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles ```UnSpecified``` sont : , , et ```Informational``` ```Low``` ```Medium``` ```High``` .
-statut | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles sont : ```Active```, ```InProgress```, ```Resolved```, et ```Redirected```
+status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles sont : ```Active```, ```InProgress```, ```Resolved```, et ```Redirected```
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
 étiquettes | string List | Liste des balises d’incident.

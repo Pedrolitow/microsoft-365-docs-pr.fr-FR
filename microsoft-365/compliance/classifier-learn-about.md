@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les classifieurs entraisables peuvent reconnaître différents types de contenu pour l’étiquetage ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 863f30819988d5f2ecfdc7c9bac858ef357d6ede
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 9301379e55865fc0524dbf814365239d700aa962
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940649"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172150"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -48,6 +48,10 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite [](dlp-learn-ab
 ## <a name="classifiers"></a>Classifieurs
 
 Cette méthode de classification est bien adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèles. Cette méthode de classification consiste davantage à utiliser un classificateur pour identifier un élément en fonction de ce qu’est l’élément, et non par des éléments qui se trouve dans l’élément (correspondance de modèle). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples de contenu que vous souhaitez classer.
+
+> [!NOTE]
+> Vous pouvez afficher les classifieurs entraisables dans l’Explorateur de contenu en développez les **classifieurs** avec formation dans le panneau filtres. Les classifieurs entra nements afficheront automatiquement le nombre d’incidents trouvés dans SharePoint, Teams et OneDrive, sans nécessiter d’étiquetage.
+> Si vous ne souhaitez pas utiliser cette fonctionnalité, vous devez déposer une demande auprès du Support Microsoft pour désactiver la classification pré- Cela désactive l’analyse de votre contenu sensible et étiqueté avant de créer des stratégies d’étiquetage.
 
 ### <a name="where-you-can-use-classifiers"></a>Où utiliser des classifieurs
 

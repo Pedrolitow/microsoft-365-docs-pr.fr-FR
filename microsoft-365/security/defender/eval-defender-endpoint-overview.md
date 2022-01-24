@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 39f2fda4864e017991e323aa576d4f97d78f1d2b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940148"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172126"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 
@@ -48,7 +49,7 @@ Le tableau suivant décrit les étapes de l’illustration.
  |Étape   |Description
 |---------|---------|
 | [Étape 1. Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-endpoint-architecture.md)    | Comprendre l’architecture de Defender for Endpoint et les fonctionnalités à votre disposition.       |
-|[Étape 2. Activer l’environnement d’évaluation](eval-defender-office-365-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
-|[Étape 3. Configurer le pilote ](eval-defender-office-365-pilot.md)    |    Vérifiez votre groupe pilote, exécutez des simulations et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
+|[Étape 2. Activer l’environnement d’évaluation](eval-defender-endpoint-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
+|[Étape 3. Configurer le pilote ](eval-defender-endpoint-pilot.md)    |    Vérifiez votre groupe pilote, exécutez des simulations et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
 
 

@@ -17,13 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 9750fc75e5fc90a0f5ea0c308870a4342070a427
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209032"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171046"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
 
@@ -38,15 +37,15 @@ ms.locfileid: "60209032"
 
 Pour implémenter une solution d’accès délégué multi-locataire, prenez les mesures suivantes :
 
-1. Activez [le contrôle d’accès](/windows/security/threat-protection/microsoft-defender-atp/rbac) basé sur les rôles dans Defender pour le point de terminaison dans Microsoft 365 Defender portail et connectez-vous à Azure Active Directory groupes (Azure AD).
+1. Activez le contrôle d’accès basé sur les rôles pour Defender pour le point de terminaison via le portail Microsoft 365 Defender et [connectez-vous](/windows/security/threat-protection/microsoft-defender-atp/rbac) à des groupes Azure Active Directory (Azure AD).
 
-2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et la mise en service.
+2. Configurer des [packages d’accès de gouvernance pour](/azure/active-directory/governance/identity-governance-overview) la demande d’accès et l’approvisionnement.
 
 3. Gérer les demandes d’accès et les audits [dans Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Activer les contrôles d’accès basés sur les rôles dans Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender portail
 
-1. **Créer des groupes d’accès pour les ressources MSSP dans Customer AAD : Groupes**
+1. **Créer des groupes d’accès pour les ressources MSSP dans Customer AAD: Groups**
 
     Ces groupes seront liés aux rôles que vous créez dans Defender for Endpoint dans Microsoft 365 Defender portail. Pour ce faire, dans le client AD client, créez trois groupes. Dans notre exemple d’approche, nous créons les groupes suivants :
 
@@ -54,9 +53,9 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
     - Analyste de niveau 2
     - Approuveurs d’analyste MSSP  
 
-2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint dans Microsoft 365 Defender rôles et groupes portail.
+2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint Microsoft 365 Defender rôles et groupes portail.
 
-    Pour activer RBAC dans le portail d’Microsoft 365 Defender du client, accédez aux **autorisations > Rôles** points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le portail d’Microsoft 365 Defender client, accédez aux **autorisations > Rôles** points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP.](../../media/mssp-access.png)
 
@@ -68,13 +67,13 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
       Effectuez toutes les actions à l’exception de la réponse en direct et gérez les paramètres de sécurité.
 
     - **Analystes de niveau 2** <br>
-      Fonctionnalités de niveau 1 avec l’ajout de la [réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      Fonctionnalités de niveau 1 avec ajout à la [réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
     Pour plus d’informations, voir [Utiliser le contrôle d’accès basé sur un rôle.](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ## <a name="configure-governance-access-packages"></a>Configurer les packages d’accès de gouvernance
 
-1. **Ajouter MSSP en tant qu’organisation connectée dans Customer AAD : Gouvernance des identités**
+1. **Ajouter MSSP en tant qu’organisation connectée dans customer AAD : Identity Governance**
 
     L’ajout du MSSP en tant qu’organisation connectée permettra au MSSP de demander et de mettre en service des accès. 
 
@@ -90,7 +89,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     Pour plus d’informations, voir [Créer un catalogue de ressources.](/azure/active-directory/governance/entitlement-management-catalog-create)
 
-3. **Créer des packages d’accès pour les ressources MSSP Client AAD : Gouvernance des identités**
+3. **Créer des packages d’accès pour les ressources MSSP AAD : Gouvernance des identités**
 
     Les packages d’accès sont la collection de droits et d’accès accordés à un demandeur lors de l’approbation. 
 
@@ -98,14 +97,14 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - Nécessite un membre du groupe AD **MSSP Analyst Approvers** pour autoriser les nouvelles demandes
     - Possède des révisions d’accès annuel, où les analystes SOC peuvent demander une extension d’accès
-    - Peut uniquement être demandé par les utilisateurs du client SOC MSSP
+    - Peut uniquement être demandé par les utilisateurs dans le client SOC MSSP
     - L’accès automatique expire après 365 jours
 
     ![Image du nouveau package d’accès.](../../media/new-access-package.png)
 
-    Pour plus d’informations, [voir Créer un package d’accès.](/azure/active-directory/governance/entitlement-management-access-package-create)
+    Pour plus d’informations, voir [Créer un package d’accès.](/azure/active-directory/governance/entitlement-management-access-package-create)
 
-4. **Fournir un lien de demande d’accès aux ressources MSSP à partir de Customer AAD: Identity Governance**
+4. **Fournir un lien de demande d’accès aux ressources MSSP à partir de customer AAD: Identity Governance**
 
     Le lien du portail Mon accès est utilisé par les analystes SOC MSSP pour demander l’accès via les packages d’accès créés. Le lien est durable, ce qui signifie qu’il peut être utilisé au fil du temps pour de nouveaux analystes. La demande d’analyste est entrée dans une file d’attente pour approbation par les approuveurs d’analyste **MSSP.**
 

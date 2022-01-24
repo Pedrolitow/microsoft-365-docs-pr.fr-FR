@@ -17,34 +17,34 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 64a9926253ea699fa6cc62d1ec2d80d07f25fd29
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724654"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172274"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirection des comptes de Microsoft Defender pour le point de terminaison vers Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 - Defender pour point de terminaison
 
-Dans l’alignement de l’approche entre domaines de Microsoft en matière de protection contre les menaces avec LA DÉTECTION SIEM et la détection et réponse étendue (XDR), nous avons renommé Microsoft Defender – Protection avancée contre les menaces en Microsoft Defender pour point de terminaison et l’avons unifié en un portail intégré unique : Microsoft 365 Defender.
+Dans l’alignement de l’approche multi-domaines de Microsoft en matière de protection contre les menaces avec LA DÉTECTION SIEM et la détection et réponse étendues (XDR), nous avons renommé Microsoft Defender – Protection avancée contre les menaces en Microsoft Defender pour point de terminaison et l’avons unifié en un portail intégré unique : Microsoft 365 Defender.
 
-Ce guide explique comment router les comptes vers Microsoft 365 Defender en activant la redirection automatique à partir de l’ancien portail Microsoft Defender pour points de terminaison (securitycenter.windows.com ou securitycenter.microsoft.com), vers le portail Microsoft 365 Defender (security.microsoft.com).
+Ce guide explique comment router les comptes vers Microsoft 365 Defender en activant la redirection automatique à partir de l’ancien portail Microsoft Defender pour points de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">terminaison</a>(securitycenter.windows.com ou securitycenter.microsoft.com), vers Microsoft 365 Defender .
 
 > [!NOTE]
-> Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender prend en charge l’octroi de l’accès aux fournisseurs de services de sécurité [gérés (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) de la même façon que l’accès est accordé dans le Centre de sécurité [Microsoft Defender.](./mssp-access.md)
+> Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender prend en charge l’octroi de l’accès aux fournisseurs de services de sécurité [gérés (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) de la même façon que l’accès est accordé dans [le Centre de sécurité Microsoft Defender](./mssp-access.md).
 
 ## <a name="what-to-expect"></a>À quoi s’attendre
 
-Une fois la redirection automatique activée, les comptes accédant à l’ancien portail Microsoft Defender for Endpoint sur securitycenter.windows.com ou securitycenter.microsoft.com sont automatiquement acheminés vers le portail Microsoft 365 Defender sur security.microsoft.com.
+Une fois la redirection automatique activée, les comptes accédant à l’ancien portail Microsoft Defender for Endpoint sur securitycenter.windows.com ou securitycenter.microsoft.com sont automatiquement acheminés vers le portail Microsoft 365 Defender sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
 
 En savoir plus sur ce qui a changé : Microsoft Defender pour le point de [terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md).
 
@@ -68,8 +68,8 @@ Pour plus d’informations sur les liens et le routage, voir le tableau ci-desso
 |---------|---------|---------|
 | Page d’alerte | Page d’alerte dans securitycenter.windows.com | Page d’alerte dans security.microsoft.com |
 | Page Incident |Page Incident dans securitycenter.windows.com | Page Incident dans security.microsoft.com |
-| Page Alerte dans le portail du centre de sécurité | Page d’alerte dans security.microsoft.com | Page d’alerte dans security.microsoft.com |
-| Page Incident dans le portail du centre de sécurité | Page Incident dans security.microsoft.com | Page Incident dans security.microsoft.com |
+| Page d’alerte dans le portail Defender pour le cloud | Page d’alerte dans security.microsoft.com | Page d’alerte dans security.microsoft.com |
+| Page Incident dans le portail Defender pour le cloud | Page Incident dans security.microsoft.com | Page Incident dans security.microsoft.com |
 
 ## <a name="when-does-this-take-effect"></a>Quand cela prend-il effet ?
 
@@ -81,7 +81,7 @@ Pour démarrer le routage des comptes vers Microsoft 365 Defender :
 
 1. Assurez-vous que vous êtes un administrateur général ou que vous avez des autorisations d’administrateur de sécurité dans Azure Active Directory.
 
-2. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender.
+2. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">à Microsoft 365 Defender</a>.
 
 3. Accédez à **Paramètres**  >  **redirection du** portail général des points de terminaison ou cliquez  >    >   [ici.](https://security.microsoft.com/preferences2/portal_redirection)  
 
@@ -90,7 +90,7 @@ Pour démarrer le routage des comptes vers Microsoft 365 Defender :
 5. Cliquez **sur Activer** pour appliquer la redirection automatique à Microsoft 365 Defender.
 
 >[!IMPORTANT]
->L’activation de ce paramètre ne met pas fin aux sessions utilisateur actives. Les comptes qui sont dans une session active pendant l’application de ce paramètre ne seront dirigés vers les Microsoft 365 Defender qu’après avoir mis fin à leur session active et se sont à nouveau signés.
+>L’activation de ce paramètre ne met pas fin aux sessions utilisateur actives. Les comptes qui sont dans une session active pendant que ce paramètre est appliqué ne sont dirigés vers les Microsoft 365 Defender qu’après avoir mis fin à leur session active et se sont à nouveau signés.
 
 >[!NOTE]
 >Vous devez être administrateur général ou avoir des autorisations d’administrateur de sécurité Azure Active Directory pour activer ou désactiver ce paramètre.  
@@ -101,7 +101,7 @@ Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vou
 
 Pour revenir à l’ancien portail Microsoft Defender pour points de terminaison :
 
-1. [Connectez-vous](https://security.microsoft.com/) Microsoft 365 Defender en tant qu’administrateur général ou en utilisant et compte avec les autorisations d’administrateur de sécurité dans Azure Active Directory.
+1. Connectez-vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> en tant qu’administrateur général ou en utilisant et compte avec des autorisations d’administrateur de sécurité dans Azure Active Directory.
 
 2. Accédez à **Paramètres** redirection du portail général des points de terminaison  >    >    >   [ou ouvrez la page ici.](https://security.microsoft.com/preferences2/portal_redirection)  
 

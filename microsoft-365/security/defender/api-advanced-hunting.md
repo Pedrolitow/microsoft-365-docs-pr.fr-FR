@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender API de recherche avancée
-description: Découvrez comment exécuter des requêtes de recherche avancées à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
+description: Découvrez comment exécuter des requêtes de recherche avancée à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
 keywords: Recherche avancée, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.custom: api
+ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264863"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172275"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
 
@@ -58,7 +59,7 @@ Les conditions suivantes concernent toutes les requêtes.
 
 L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir Les API [Access Microsoft 365 Defender Protection](api-access.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+Type d’autorisation | Permission | Nom d’affichage de l’autorisation
 -|-|-
 Application | AdvancedHouting.Read.All | Exécuter des requêtes avancées
 Déléguée (compte professionnel ou scolaire) | AdvancedHouting.Read | Exécuter des requêtes avancées

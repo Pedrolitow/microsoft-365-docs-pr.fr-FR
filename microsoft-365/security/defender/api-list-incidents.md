@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162385"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172138"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API de liste des incidents dans Microsoft 365 Defender
 
@@ -41,11 +42,11 @@ ms.locfileid: "60162385"
 
 ## <a name="api-description"></a>Description de l’API
 
-L’API d’incidents de liste vous permet de trier les incidents pour créer une réponse de cybersécurité informée. Il expose un ensemble d’incidents qui ont été signalés dans votre réseau, dans la plage de temps que vous avez spécifiée dans votre stratégie de rétention d’environnement. Les incidents les plus récents sont affichés en haut de la liste. Chaque incident contient un tableau d’alertes associées et leurs entités connexes.
+L’API d’incidents de liste vous permet de trier les incidents pour créer une réponse de cybersécurité informée. Elle expose une collection d’incidents marqués dans votre réseau, dans l’intervalle de temps que vous avez spécifié dans votre stratégie de rétention d’environnement. Les incidents les plus récents sont affichés en haut de la liste. Chaque incident contient un tableau d’alertes associées et leurs entités connexes.
 
 L’API prend en charge les opérateurs **OData suivants** :
 
-- `$filter` sur `lastUpdateTime` le `createdTime` , et les `status` `assignedTo` propriétés
+- `$filter`sur `lastUpdateTime` les `createdTime` propriétés `status` , et `assignedTo`
 - `$top`, avec une valeur maximale de **100**
 - `$skip`
 
@@ -58,7 +59,7 @@ L’API prend en charge les opérateurs **OData suivants** :
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez les API [Access Microsoft 365 Defender](api-access.md)
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Incident.Read.All|Lire tous les incidents
 Application|Incident.ReadWrite.All|Lire et écrire tous les incidents
@@ -105,9 +106,9 @@ lastUpdateTime|Heure de la dernière mise à jour de l’incident sur le back-en
 assignedTo|Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté.|secop2@contoso.com
 classification|Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive*|Inconnu
 détermination|Spécifie la détermination de l’incident. Les valeurs de propriété *sont : NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other*|NotAvailable
-detectionSource|Spécifie la source de détection.|MCAS
-statut|Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents.|Actif
-Sévérité |Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate. <p> Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*.|Moyenne
+detectionSource|Spécifie la source de détection.|Defender for Cloud Apps
+status|Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents.|Actif
+Sévérité |Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate. <p> Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*.|Moyen
 étiquettes|Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune.|\[\]
 commentaires|Tableau de commentaires créés par des secops lors de la gestion de l’incident, par exemple des informations supplémentaires sur la sélection de classification.|\[\]
 alertes|Tableau contenant toutes les alertes liées à l’incident, ainsi que d’autres informations, telles que la gravité, les entités impliquées dans l’alerte et la source des alertes.|\[\] (voir les détails sur les champs d’alerte ci-dessous)
@@ -118,20 +119,20 @@ Nom du champ|Description|Exemple de valeur
 ---|---|---
 alertId|Identificateur unique pour représenter l’alerte|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|Identificateur unique représentant l’incident associé à cette alerte|924565
-serviceSource|Service dont provient l’alerte, tel que Microsoft Defender pour le point de terminaison, Microsoft Cloud App Security, Microsoft Defender pour l’identité ou Microsoft Defender pour Office 365.|MicrosoftCloudAppSecurity
+serviceSource|Service dont provient l’alerte, tel que Microsoft Defender pour le point de terminaison, Microsoft Defender pour les applications cloud, Microsoft Defender pour l’identité ou Microsoft Defender pour Office 365.|MicrosoftCloudAppSecurity
 creationTime|Heure à partir de la première création de l’alerte.|2020-09-06T14:46:55.7182276Z
 lastUpdatedTime|Heure de la dernière mise à jour de l’alerte sur le système arrière.|2020-09-06T14:46:57.2433333Z
 resolvedTime|Heure de résolution de l’alerte.|2020-09-10T05:22:59Z
-firstActivity|Heure à partir de la première alerte signalé que l’activité a été mise à jour sur le système back-end.|2020-09-04T05:22:59Z
+firstActivity|Heure à partir de la première fois où l’alerte a signalé que l’activité a été mise à jour sur le système back-end.|2020-09-04T05:22:59Z
 title|Brève identification de la valeur de chaîne disponible pour chaque alerte.|Activité de rançongiciel
 description|Valeur de chaîne décrivant chaque alerte.|L’utilisateur Test User2 (testUser2@contoso.com) a manipulé 99 fichiers avec plusieurs extensions se terminant par l’extension *rare herunterladen*. Il s’agit d’un nombre inhabituel de manipulations de fichiers et qui indique une attaque potentielle par ransomware.
 category|Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [mitre ATT&CK™.](https://attack.mitre.org/)|Impact
-statut|Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes.|Nouveau
-Sévérité |Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,* *Medium* et *High*.|Moyenne
+status|Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes.|Nouveau
+Sévérité |Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,* *Medium* et *High*.|Moyen
 investigationId|ID d’examen automatisé déclenché par cette alerte.|1234
 investigationState|Informations sur l’état actuel de l’enquête. Une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*.|UnsupportedAlertType
 classification|Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* ou *null*|Inconnu
-détermination|Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* ou  *null*|Apt
+détermination|Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, SecurityPersonnel , *SecurityTesting*, *UnwantedSoftware*, *Other* ou *null* |Apt
 assignedTo|Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté.|secop2@contoso.com
 actorName|Le groupe d’activités, le caser, le groupe associé à cette alerte.|BORON
 threatFamilyName|Famille de menaces associée à cette alerte.|null

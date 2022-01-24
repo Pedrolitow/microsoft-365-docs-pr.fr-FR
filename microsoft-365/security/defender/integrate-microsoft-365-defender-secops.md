@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 - m365solution-overview
 ms.topic: conceptual
@@ -24,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5c88d6530fe8316f0297f716d51a28a64ede72f9
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121422"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171994"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 
@@ -50,7 +49,7 @@ Si vous ne connaissez pas déjà Microsoft 365 Defender, consultez les articles 
 Si votre organisation a déjà implémenté certains aspects de Microsoft 365 Defender, ces articles peuvent contribuer à améliorer votre architecture et vos processus existants.
 
 >[!Note]
->En tant que partenaire Microsoft, Protiviti a contribué et fourni des remarques importantes sur le contenu de cet article.
+>En sa qualité de partenaire Microsoft, Protiviti a contribué et fourni des commentaires importants sur le contenu de cet article.
 >
 
 ## <a name="target-audience"></a>Public cible

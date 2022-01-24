@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 703b1df0bbe58874295e809ebe94ec748678e401
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 447a4b5eb3f4eb521e7cc3bd2df23a42f16d2ef1
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209224"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171849"
 ---
 # <a name="update-incidents-api"></a>API de mise à jour des incidents
 
@@ -45,7 +46,7 @@ Met à jour les propriétés d’un incident existant. Les propriétés updatabl
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quotas, allocation de ressources et autres contraintes
 
 1. Vous pouvez effectuer jusqu’à 50 appels par minute ou 1 500 appels par heure avant d’atteindre le seuil de limitation.
-2. Vous ne pouvez définir la propriété que si elle est `determination` `classification` définie sur TruePositive.
+2. Vous ne pouvez définir `determination` la propriété que si elle est définie sur `classification` TruePositive.
 
 Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps de la réponse indique le moment où vous pouvez commencer à effectuer de nouveaux appels.
 
@@ -53,7 +54,7 @@ Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender API](api-access.md).
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 ---|---|---
 Application|Incident.ReadWrite.All|Lire et écrire tous les incidents
 Déléguée (compte professionnel ou scolaire)|Incident.ReadWrite|Lire et écrire des incidents
@@ -89,7 +90,7 @@ comment|string|Commentaire à ajouter à l’incident.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contiendra l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
+Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contient l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
 
 ## <a name="example"></a>Exemple
 

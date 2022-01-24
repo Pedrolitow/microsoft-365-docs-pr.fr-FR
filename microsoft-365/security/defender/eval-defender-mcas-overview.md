@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c63c2c60b6f3554660ad8802180fa37e4dd2113
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c517f863f54678de0d3559c5853472a5bb97c2b6
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933059"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172102"
 ---
 # <a name="evaluate-microsoft-defender-for-cloud-apps"></a>Évaluer Microsoft Defender pour les applications cloud
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: En savoir plus sur les conditions et les exceptions de stratégie dlp
-ms.openlocfilehash: 1b6d37356a17fcb9cd5b1aa4ec97a69790c733c0
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: a0354fe6392d739fa1b616e92625b7507cca823f
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159516"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172258"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Conditions, exceptions et actions de stratégie DLP
 
@@ -50,26 +50,27 @@ Les tableaux des sections suivantes décrivent les conditions et les exceptions 
 
 Si vous utilisez l’adresse de l’expéditeur comme condition ou exception, le champ réel dans lequel la valeur est recherche varie en fonction du type de règle que vous utilisez. Pour les règles DLP, l’adresse d’enveloppe est utilisée comme adresse de l’expéditeur. Pour Exchange de transport, l’adresse d’en-tête est utilisée comme adresse de l’expéditeur.
 
+<!--
 > [!NOTE]
-> À compter du 20 janvier 2022, l’emplacement de l’adresse de l’expéditeur par défaut sera déplacé vers l’adresse d’en-tête avec la disponibilité du paramètre -SenderAddressLocation pour configurer le comportement souhaité au niveau d’une règle DLP.
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
 ![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
-Au niveau du client, vous pouvez configurer un emplacement d’adresse de l’expéditeur pour qu’il soit utilisé dans toutes les règles, sauf si une règle unique l’a été. Pour revenir à la configuration de stratégie DLP du client afin d’évaluer l’adresse de l’expéditeur à partir de l’enveloppe dans toutes les règles, vous pouvez exécuter la commande suivante :
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’une règle DLP, le paramètre _est SenderAddressLocation_. Les valeurs disponibles sont :
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
 
-- **En-tête**: examinez uniquement les expéditeurs dans les  **en-têtes** de message (par exemple, les champs De, Expéditeur ou Répondre à). Il s’agit de la valeur par défaut.
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
-- **Enveloppe**: examinez uniquement les expéditeurs de l’enveloppe de message (la valeur **MAIL FROM** utilisée dans la transmission SMTP, généralement stockée dans le champ **Return-Path).**
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
 
-- **En-tête ou enveloppe** ( `HeaderOrEnvelope` ) Examinez les expéditeurs dans l’en-tête et l’enveloppe du message.
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
-
+-->
 |condition ou exception dans DLP|paramètres condition/exception dans Microsoft 365 PowerShell|type de propriété|description|
 |---|---|---|---|
 |L’expéditeur est|condition : *From* <br/> exception : *ExceptIfFrom*|Adresses|Messages envoyés par les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie ou les groupes Microsoft 365 spécifiés dans l’organisation.|
@@ -83,7 +84,7 @@ Pour configurer l’emplacement de l’adresse de l’expéditeur au niveau d’
 |Les propriétés spécifiées de l'expéditeur correspondent à ces modèles de texte|condition : *SenderADAttributeMatchesPatterns* <br/> exception : *ExceptIfSenderADAttributeMatchesPatterns*|Première propriété : `ADAttribute` <p> Deuxième propriété : `Patterns`|Messages dans lesquels l'attribut Active Directory spécifié de l'expéditeur contient des modèles de texte qui correspondent aux expressions régulières spécifiées.|
 |
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>Destinataires
 
 <br>
 
@@ -179,8 +180,10 @@ Ce tableau décrit les actions disponibles dans DLP.
 |Ajouter un destinataire|AddRecipients|Première propriété : *Field*</br>Deuxième propriété : *Addresses*|Ajoute un ou plusieurs destinataires au champ À/Cc/Cci du message. Ce paramètre utilise la syntaxe : @{<AddToRecipients \| CopyTo \| BlindCopyTo> = « emailaddress"}|
 |Ajouter le responsable de l’expéditeur en tant que destinataire|AddRecipients|Première propriété : *AddedManagerAction*</br>Deuxième propriété : *Field*|Ajoute le responsable de l’expéditeur au message en tant que type de destinataire spécifié (To, Cc, Bcc) ou redirige vers le responsable de l’expéditeur sans notification à l’expéditeur ou au destinataire. Cette action fonctionne uniquement si l'attribut Manager de l'expéditeur est défini dans Active Directory. Ce paramètre utilise la syntaxe : @{AddManagerAsRecipientType = « <To \| Cc \| Bcc>"}|
 Prédépender l’objet|PrependSubject|Chaîne|Ajoute le texte spécifié au début du champ Subject du message. Envisagez d'utiliser un espace ou un signe deux-points (:) comme dernier caractère du texte spécifié pour le différencier du texte de l'objet d'origine.  </br>Pour empêcher l’ajout de la même chaîne aux messages qui contiennent déjà le texte dans l’objet (par exemple, les réponses), ajoutez l’exception « L’objet contient des mots » (ExceptIfSubjectContainsWords) à la règle.|
-|Modifier l’objet|ModifySubject|PswsHashTable | Supprimez du texte de la ligne d’objet qui correspond à un modèle spécifique et remplacez-le par un texte différent. Voir l'exemple ci-dessous. Vous pouvez : </br>- **Remplacer** toutes les correspondances dans l’objet par le texte de remplacement </br>- **Ajoute pour** supprimer toutes les correspondances dans l’objet et insère le texte de remplacement à la fin de l’objet. </br>- **Ajoutez un** prédépendant pour supprimer toutes les correspondances et insère le texte de remplacement au début de l’objet.|
 |Appliquer une clause d’exclusion de responsabilité HTML|ApplyHtmlDisclaimer|Première propriété : *Text*</br>Deuxième propriété : *Location*</br>Troisième propriété : *action de retour*|Applique la clause d’exclusion de responsabilité HTML spécifiée à l’emplacement requis du message.</br>Ce paramètre utilise la syntaxe : @{ Text = " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
 |Supprimer la chiffrement de messages Office 365 et la protection des droits|RemoveRMSTemplate|s/o|Supprime le chiffrement Office 365 appliqué à un e-mail|
 |Remettre le message en quarantaine hébergé |_Quarantine_|s/o| Cette action est actuellement en **prévisualisation publique.** Au cours de cette phase, les e-mails mis en quarantaine par les stratégies DLP afficheront le type de stratégie ExchangeTransportRule.</br> Met le message en quarantaine dans EOP. Pour plus d’informations, voir [Messages électroniques mis en quarantaine dans EOP.](/microsoft-365/security/office-365-security/quarantine-email-messages)|
 |
+
+<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+

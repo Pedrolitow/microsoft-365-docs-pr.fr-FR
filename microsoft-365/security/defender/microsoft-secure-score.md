@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365initiative-m365-defender
 - Adm_TOC
 ms.topic: article
 search.appverid:
@@ -22,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 91371583a6dde3a7fcb97037146b3eab1410e86c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 60d804594b3e4f1daad2ea4813a55205c24a3dac
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61936884"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172162"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 

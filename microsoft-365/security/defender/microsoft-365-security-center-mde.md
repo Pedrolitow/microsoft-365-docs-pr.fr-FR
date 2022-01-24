@@ -18,14 +18,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 8400723f06d760657536fc85a711ce9efb2b82eb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0a8ec594f59285f1b4e861ec464bbbeb6083f001
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937711"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172390"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender
 
@@ -45,12 +44,12 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 
 | Centre de sécurité Microsoft Defender | Microsoft 365 Defender |
 |---------|---------|
-| Tableaux de bord <ul><li>Opérations de sécurité</li><li>Analyses de menaces</li></ul>  |Famille <ul><li>Analyses de menaces</li></ul>   |
+| Tableaux de bord <ul><li>Opérations de sécurité</li><li>Analyses de menaces</li></ul>  |Accueil <ul><li>Analyses de menaces</li></ul>   |
 | Incidents | Incidents et alertes |
 | Inventaire des appareils | Inventaire des appareils |
 | File d’attente des alertes | Incidents et alertes |
 | Enquêtes automatisées | Centre de notifications |
-| Repérage avancé | Repérage |
+| Recherche avancée de menaces | Repérage |
 | Rapports | Rapports |
 | API & partenaires | API & partenaires |
 | Gestion des & des menaces | Gestion des vulnérabilités |
@@ -90,14 +89,14 @@ Ce tableau est une référence rapide des modifications apportées entre les Cen
 |---------|---------|
 | [Incidents & alertes](incidents-overview.md)  | Dans Microsoft 365 Defender, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
 | [Repérage](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure des tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes s’affichent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>La `DeviceAlertEvents` table de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques au périphérique dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tables pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
-|[Centre de actions](m365d-action-center.md)    | Répertorie les actions en attente et terminées qui ont été effectuées à la suite d’examens automatisés et d’actions de correction. Auparavant, le centre de gestion des Centre de sécurité Microsoft Defender listait les actions en attente et terminées pour les actions de correction effectuées uniquement sur les appareils, tandis que les enquêtes automatisées listaient les alertes et l’état. Dans le Microsoft 365 Defender amélioré, le centre de mise en œuvre regroupe les actions de correction et les enquêtes sur les messages électroniques, les appareils et les utilisateurs, le tout dans un seul emplacement.  |
+|[Centre de notifications](m365d-action-center.md)    | Répertorie les actions en attente et terminées qui ont été effectuées à la suite d’examens automatisés et d’actions de correction. Auparavant, le centre de gestion des Centre de sécurité Microsoft Defender listait les actions en attente et terminées pour les actions de correction effectuées uniquement sur les appareils, tandis que les enquêtes automatisées listaient les alertes et l’état. Dans le Microsoft 365 Defender amélioré, le centre de mise en œuvre regroupe les actions de correction et les enquêtes sur les messages électroniques, les appareils et les utilisateurs, le tout dans un seul emplacement.  |
 | [Analyses de menaces](threat-analytics.md) |  Déplacé vers le haut de la barre de navigation pour faciliter la découverte et l’utilisation. Inclut désormais des informations sur les menaces pour les points de terminaison et la messagerie et la collaboration.    |
 
 ### <a name="endpoints"></a>Points de terminaison
 
 | Zone | Description de la modification |
 |---------|---------|
-|Recherche   |  La barre de recherche se trouve en haut de la page. Les suggestions sont fournies à mesure que vous tapez. Vous pouvez effectuer des recherches dans les entités suivantes dans Defender for Endpoint et Defender for Identity : <br><br> - **Appareils** - pris en charge à la fois pour Defender pour endpoint et Defender pour l’identité. Vous pouvez même utiliser des opérateurs de recherche, par exemple, vous pouvez utiliser « contains » pour rechercher une partie d’un nom d’hôte. <br><br> - **Utilisateurs** - pris en charge à la fois pour Defender pour le point de terminaison et Defender pour l’identité. <br><br> - **Fichiers, adresses IPS** et URL : mêmes fonctionnalités que dans Defender pour le point de terminaison. <br> REMARQUE : *Les recherches d’ADRESSES IP et d’URL correspondent exactement et n’apparaissent pas dans la page des résultats de la recherche : elles mènent directement à la page d’entité.  <br><br> - **TVM** - mêmes fonctionnalités que dans Defender pour point de terminaison (vulnérabilités, logiciels et recommandations). <br><br>  La page des résultats de recherche améliorés centralise les résultats de toutes les entités.  |
+|Rechercher   |  La barre de recherche se trouve en haut de la page. Les suggestions sont fournies à mesure que vous tapez. Vous pouvez effectuer des recherches dans les entités suivantes dans Defender for Endpoint et Defender for Identity : <br><br> - **Appareils** - pris en charge à la fois pour Defender pour endpoint et Defender pour l’identité. Vous pouvez même utiliser des opérateurs de recherche, par exemple, vous pouvez utiliser « contains » pour rechercher une partie d’un nom d’hôte. <br><br> - **Utilisateurs** - pris en charge à la fois pour Defender pour le point de terminaison et Defender pour l’identité. <br><br> - **Fichiers, adresses IPS** et URL : mêmes fonctionnalités que dans Defender pour le point de terminaison. <br> REMARQUE : *Les recherches d’ADRESSES IP et d’URL correspondent exactement et n’apparaissent pas dans la page des résultats de la recherche : elles mènent directement à la page d’entité.  <br><br> - **TVM** - mêmes fonctionnalités que dans Defender pour point de terminaison (vulnérabilités, logiciels et recommandations). <br><br>  La page des résultats de recherche améliorés centralise les résultats de toutes les entités.  |
 |[Tableau de bord](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Il s’agit de votre tableau de bord des opérations de sécurité. Consultez une vue d’ensemble du nombre d’alertes actives déclenchées, des appareils à risque, des utilisateurs à risque et du niveau de gravité pour les alertes, les appareils et les utilisateurs. Vous pouvez également voir si des appareils ont des problèmes de capteur, l’état global de votre service et la façon dont des alertes non résolues ont été détectées. |
 |Inventaire des appareils | Aucune modification. |
 |[Gestion des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Le nom a été raccourci pour tenir dans le volet de navigation. Il est identique à la section Gestion des menaces et des vulnérabilités, avec toutes les pages en dessous.     |

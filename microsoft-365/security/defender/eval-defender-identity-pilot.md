@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: be297e48cd4d5569b295215ce497ef913f4aa8d7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941551"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172114"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -64,7 +66,7 @@ Essayez les didacticiels Defender pour l’identité :
 - [Enquêter sur les chemins de déplacement latéral](/defender-for-identity/investigate-lateral-movement-path)
 - [Examiner des entités](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Évaluer Microsoft Defender pour Office 365](eval-defender-office-365-overview.md)
 

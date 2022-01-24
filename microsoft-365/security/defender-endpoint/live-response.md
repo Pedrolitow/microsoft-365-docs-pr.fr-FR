@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159596"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171909"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -63,6 +63,10 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   - **macOS** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.43.84 
   
+   > [!NOTE]
+   > Actuellement, seuls les systèmes MacOS Intel sont pris en charge.
+    
+
   - **Linux** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.45.13 
     
   - **Windows Server 2012 R2** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -199,7 +203,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 | library  | Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.  | v  | v  | v  |
 | putfile  | Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.  | v  | v  | v  |
 | corriger  | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: This command has a prerequisite command. Vous pouvez utiliser la commande -auto conjointement avec la correction pour exécuter automatiquement la commande prérequise.  | v  | v  | v  |
-| analyse  | Exécute une analyse antivirus (rapide) pour identifier et corriger les programmes malveillants.  | N  | v  | v  |
+| analyse | Exécute une analyse antivirus pour identifier et corriger les programmes malveillants. | N | v | v |
 | undo  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
 
 
