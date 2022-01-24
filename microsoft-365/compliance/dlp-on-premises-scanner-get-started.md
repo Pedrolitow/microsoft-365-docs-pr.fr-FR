@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942967"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159482"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
@@ -43,6 +43,9 @@ Avant de commencer à utiliser le scanneur local de DLP, vous devez confirmer vo
 
 
 Pour plus d’informations sur les licences, consultez [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
+> [!IMPORTANT]
+> Tous les utilisateurs qui contribuent à l’emplacement analysé, soit en ajoutant ou en consommant des fichiers, doivent disposer d’une licence, pas seulement l’utilisateur du scanneur.
 
 ### <a name="permissions"></a>Autorisations
 
