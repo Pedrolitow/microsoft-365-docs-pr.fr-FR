@@ -275,7 +275,7 @@
 ###### [Phase 3 : Implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [Phase 4 : Opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [Référence des règles ASR](attack-surface-reduction-rules-reference.md)
-##### [Activer les règles ASR, d’autres méthodes de configuration](enable-attack-surface-reduction.md)
+##### [Activer les méthodes de configuration alternatives des règles ASR](enable-attack-surface-reduction.md)
 #### [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 
 ### Protection de nouvelle génération
@@ -645,7 +645,7 @@
 
 #### [Intégration SIEM]()
 ##### [Intégrer les outils SIEM avec Microsoft Defender pour point de terminaison](configure-siem.md)
-##### [Champs de détection de Microsoft Defender pour point de terminaison](api-portal-mapping.md)
+##### [Activer l'intégration SIEM dans Microsoft Defender pour point de terminaison](enable-siem-integration.md)
 ##### [Extraire des détections à l’aide de l’API SIEM REST](pull-alerts-using-rest-api.md)
 ##### [Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)
 
