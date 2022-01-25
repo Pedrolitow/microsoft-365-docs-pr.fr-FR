@@ -4,12 +4,12 @@ description: fichier descriptif
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 126454f65f8f0e92161f1d51321390ffb60c1308
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62079600"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202781"
 ---
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -58,12 +58,15 @@ Les stratégies de microsoft Defender pour la gestion de la sécurité des point
 
 Pour utiliser la gestion de la sécurité pour Microsoft Defender pour le point de terminaison, vous devez :
 
-- Un abonnement qui accorde des licences pour Microsoft Defender pour le point de terminaison, comme Microsoft 365, ou une licence autonome uniquement pour Microsoft Defender pour le point de terminaison. Pour plus d’informations sur les options, voir [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
+- Un abonnement qui accorde des licences pour Microsoft Defender pour le point de terminaison, comme Microsoft 365, ou une licence autonome uniquement pour Microsoft Defender pour le point de terminaison. Un abonnement qui accorde des licences Microsoft Defender pour les points de terminaison accorde également à votre client l’accès au nœud de sécurité endpoint du centre d Microsoft Endpoint Manager’administration.
 
-  *Tout abonnement* qui accorde des licences Microsoft Defender pour les points de terminaison accorde également à votre client l’accès au nœud de sécurité endpoint du centre d Microsoft Endpoint Manager’administration. Le nœud de sécurité du point de terminaison est l’endroit où vous allez configurer et déployer des stratégies pour gérer Microsoft Defender pour le point de terminaison pour vos appareils et surveiller l’état de l’appareil.
+  > [!NOTE]  
+  > **Exception**: si vous avez accès à Microsoft Defender pour le point de terminaison dans le cadre d’une licence Microsoft Defender pour le Cloud uniquement (anciennement Azure Security Center), la gestion de la sécurité de Microsoft Defender pour les points de terminaison n’est pas disponible.
 
->[!NOTE]
-> Actuellement, si un abonnement Microsoft Defender pour point de terminaison est obtenu via Azure Security Center/Defender pour le cloud, cette licence Microsoft Defender pour point de terminaison n’est pas une licence éligible pour cette fonctionnalité. 
+Le nœud de sécurité du point de terminaison est l’endroit où vous allez configurer et déployer des stratégies pour gérer Microsoft Defender pour le point de terminaison pour vos appareils et surveiller l’état de l’appareil.
+
+Pour plus d’informations sur les options, voir [Minimum requirements for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
+
 
 
 ## <a name="architecture"></a>Architecture

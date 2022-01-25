@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu de la boîte aux lettres pour les anciens employés en la transformant en boîte aux lettres inactive.
-ms.openlocfilehash: 0cc8e7fd980d48be44da824bad84343231c166ea
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 5aa20b780ed49edcbd46770c9f7f470bf9bb0db1
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284624"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202136"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>En savoir plus sur les boîtes aux lettres inactives
 
@@ -62,7 +62,7 @@ Si une stratégie de rétention Microsoft 365 est appliquée à une boîte aux l
 - Les paramètres de rétention doivent être configurés pour conserver [le contenu, ou conserver, puis supprimer le contenu.](retention-settings.md#settings-for-retaining-and-deleting-content) Si l’action de rétention est configurée pour supprimer uniquement du contenu, la boîte aux lettres ne devient pas inactive lorsque le compte d’utilisateur est supprimé. Pour les boîtes aux lettres inactives, nous vous recommandons d’utiliser l’option conserver puis supprimer.
 
 - Les paramètres de rétention doivent être appliqués à un emplacement [de](retention-settings.md#locations) rétention associé à une boîte aux Exchange de rétention :
-    - Messagerie électronique Exchange
+    - La messagerie électronique Exchange
     - Groupes Microsoft 365
     - Skype Entreprise
     - Dossiers publics Exchange
@@ -134,6 +134,6 @@ Toutefois, si cette stratégie de rétention MRM **a** été appliquée à une b
 
 À l’inverse, toutes les stratégies d’archivage (balises de rétention MRM configurées avec une action **MoveToArchive)** incluses dans la stratégie de rétention MRM affectée à une boîte aux lettres inactive sont ignorées. Cela signifie que les éléments dans une boîte aux lettres inactive qui sont marqués avec une stratégie d'archivage restent dans la boîte aux lettres principale à l'expiration de la période de rétention. Ils ne sont pas déplacés vers la boîte aux lettres d'archivage ni vers le dossier Éléments récupérables dans la boîte aux lettres d'archivage. Ils seront conservés indéfiniment.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour rendre une boîte aux lettres inactive et la gérer, telle que la récupération, la restauration et la suppression, voir Créer et gérer des boîtes aux lettres [inactives.](create-and-manage-inactive-mailboxes.md)

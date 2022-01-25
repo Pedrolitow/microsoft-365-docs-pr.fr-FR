@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 62be716a9663820f90d5c4f125f4634b3b399547
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872080"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202148"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de veille contre l’usurpation d’informations et des informations sur l’usurpation d’informations dans EOP
 
@@ -83,7 +83,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 > [!IMPORTANT]
 > Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’informations sur l’usurpation d’adresse [dans EOP.](learn-about-spoof-intelligence.md)
 
-1. Dans le Portail Microsoft 365 Defender sur <https://security.microsofot.com>, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+1. Dans le Portail Microsoft 365 Defender sur <https://security.microsoft.com>, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez stratégie de **veille** contre l’usurpation d’adresse en cliquant sur le nom.
 

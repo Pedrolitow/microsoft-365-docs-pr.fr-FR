@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98a32a9a65106be0336837117daaec1867f90693
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943159"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202160"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "61943159"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les stratégies de sécurité prédéfinisées fournissent un emplacement centralisé pour l’application de toutes les stratégies recommandées de courrier indésirable, de programmes malveillants et de hameçonnage aux utilisateurs à la fois. Les paramètres de stratégie ne sont pas configurables. Au lieu de cela, elles sont définies par nous et sont basées sur nos observations et expériences dans les centres de données pour trouver un équilibre entre le fait de conserver du contenu dangereux à l’écart des utilisateurs et d’éviter les interruptions inutiles.
 
@@ -129,7 +129,7 @@ Par exemple, si un paramètre de sécurité existe dans la **Protection standard
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité standard et stricte aux utilisateurs
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \>  \> **policies Preset Security Policies** in the **Templated policies** section. Pour aller directement à la page Des stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \>  \> **policies Preset Security Policies** in the **Templated policies** section. Pour aller directement à la page Des stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. Dans la page **Stratégies de sécurité** prédéfines, cliquez sur **Gérer** dans les sections **Protection standard** ou **Protection** stricte.
 
@@ -166,7 +166,7 @@ N’oubliez pas que la stratégie de sécurité prédéfini de **la protection**
 
 Par conséquent, nous ne recommandons généralement pas d’exceptions à la stratégie de sécurité prédéfinit de **protection** intégrée.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \>  \> **policies Preset Security Policies** in the **Templated policies** section. Pour aller directement à la page Des stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com> , go to Email & **Collaboration** Policies \> **& Rules** Threat \>  \> **policies Preset Security Policies** in the **Templated policies** section. Pour aller directement à la page Des stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. Dans la page **Stratégies** de sécurité prédéfinëes, sélectionnez Ajouter des **exclusions (non recommandé)** dans la section **Protection** intégrée.
 

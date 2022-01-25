@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implémentez le point de terminaison DLP en travaillant avec votre équipe de protection et de gouvernance d’information pour créer des stratégies DLP pour votre organisation.
-ms.openlocfilehash: 747a8ca3cd8301b83bfb98401989e21946248981
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: c38171d790ffd376c7886da0547345cf7e74e36c
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049286"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202076"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Étape 7 Implémenter la protection contre la perte de données (DLP) avec les fonctionnalités de protection des informations
 
@@ -35,7 +35,7 @@ Si votre organisation a déjà mis le temps nécessaire à la compréhension de 
 
 La protection contre la perte de données des points de terminaison Microsoft (Endpoint DLP) s’applique actuellement aux éléments suivants :
 - Windows 10, Windows 11
-- MacOS
+- macOS
 
 Les stratégies DLP sont créées par votre équipe de protection et de gouvernance des informations. Chaque stratégie DLP définit les éléments à rechercher dans un ensemble de données, tels que les types ou étiquettes d’informations sensibles, et comment protéger ces données. 
 

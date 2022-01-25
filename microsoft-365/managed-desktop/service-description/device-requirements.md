@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 5fb600434c8f6d7b62e7fd7408c3567a34c0eda0
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034556"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202052"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
@@ -40,6 +40,9 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 - Lenovo
 - Microsoft
 
+> [!NOTE] 
+> Depuis le 01 mars 2022, les appareils gérés par Microsoft Manged Desktop doivent être pris en charge par l’OEM. Travaillez avec votre OEM pour savoir quand les appareils de votre portefeuille atteindront la prise en charge de la fin de vie. Les clients sont chargés de s’assurer que les appareils sont remplacés avant la fin de vie. Tous les appareils ne faisant pas partie de la prise en charge OEM continueront d’être gérés par Microsoft Manged Desktop, mais la prise en charge de ces appareils peut être limitée car ils sont exposés à des problèmes de sécurité et de performances qui risquent de ne pas pouvoir être atténués par notre service.
+</b>
 
 ### <a name="installed-software"></a>Logiciels installés
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041125"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202177"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -32,6 +32,19 @@ ms.locfileid: "62041125"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> À partir de la fin du mois de janvier 2022, Microsoft Defender pour endpoint (anciennement appelé Microsoft Defender ATP) sera référencé sous le nom de « Microsoft Defender » dans les expériences MDE pour l’utilisateur final sur macOS. 
+> 
+> Cette modification est actuellement disponible dans les canaux de mise à jour bêta (précédemment appelés Insider Fast) et Preview (précédemment appelés Insider Slow). La version minimale du produit qui inclut cette modification est 101.54.24.
+> 
+> Les utilisateurs finaux observeront les modifications suivantes : 
+> - Le chemin d’installation de l’application est devenu `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` .
+> - Dans l’expérience utilisateur, les occurrences de « Microsoft Defender ATP » ont été remplacées par « Microsoft Defender »
+> 
+> Cette modification n’a pas d’impact sur `mdatp` l’outil en ligne de commande.
+>
+> **Action requise**: si votre entreprise possède des configurations personnalisées qui reposent sur le nom du produit ou le chemin d’installation de l’application, ces configurations doivent être mises à jour avec les nouvelles valeurs répertoriées ci-dessus.
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 
