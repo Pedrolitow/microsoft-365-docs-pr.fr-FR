@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1e584a252f93acfa6429c4f67c89c814c27ce4c8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c1d55718f93efd9b1053e7ab106c397e0c1d409b
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283004"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187412"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
 Avant de commencer à mettre en place la conformité des [communications](communication-compliance.md) dans votre organisation, il existe d’importantes activités de planification et des considérations qui doivent être examinées par vos équipes de gestion des technologies de l’information et de la conformité. Une compréhension approfondie et la planification du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et l’utilisation des fonctionnalités de conformité des communications se déroulent sans problème et sont conformes aux meilleures pratiques pour la solution.
+
+> [!IMPORTANT]
+> La conformité des communications est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [disponibilité des dépendances Azure par pays/région.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transition à partir de la surveillance dans Office 365
 
@@ -112,7 +115,7 @@ Utilisez le graphique suivant pour vous aider à configurer les groupes de votre
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en place** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucune | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
 
 ### <a name="privacy"></a>Confidentialité
 

@@ -1,22 +1,22 @@
 ---
-title: Office des certificats TLS
+title: Modifications du certificat TLS Office
 description: Comment préparer les modifications à venir apportées Office certificats TLS.
 author: pshelton-skype
 ms.author: pshelton
-manager: elenip
+manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/7/2021
+ms.date: 1/21/2021
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 57183aff11671a86261789a1978e804317da69ca
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: c104f5bdc28966d080318ce0559dfe5acbfec8ea
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055030"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187268"
 ---
-# <a name="office-tls-certificate-changes"></a>Office des certificats TLS
+# <a name="office-tls-certificate-changes"></a>Modifications du certificat TLS Office
 
 Microsoft 365 met à jour les services de messagerie, de réunions, de téléphonie, de voix et de vidéo pour utiliser les certificats TLS d’un autre ensemble d’autorités de certification racines. Cette modification est en cours, car l’ac racine actuelle expirera en mai 2025.
 
@@ -43,7 +43,7 @@ Toutes les informations de certificat de cet article ont été précédemment fo
 
 ## <a name="when-will-this-change-happen"></a>Quand cette modification aura-t-elle lieu ?
 
-Services will begin transitioning to the new Root CAs beginning in Jan 2022, possibly continuing into the third quarter (July-Sept) 2022.
+Les services commenceront la transition vers les nouvelles CA racines à partir de janvier 2022, jusqu’en octobre 2022.
 
 ## <a name="what-is-changing"></a>Qu’est-ce qui change ?
 
@@ -57,8 +57,8 @@ avec l’une des CA intermédiaires suivantes :
 
 | Nom commun de l’ac | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft RSA TLS CA 01](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
-| [Microsoft RSA TLS CA 02](http://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
+| [Microsoft RSA TLS CA 01](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2001.crt) | 703d7a8f0ebf55aaa59f98eaf4a206004eb2516a |
+| [Microsoft RSA TLS CA 02](https://www.microsoft.com/pki/mscorp/Microsoft%20RSA%20TLS%20CA%2002.crt) | b0c2d2d13cdd56cdaa6ab6e2c04440be4a429c75 |
 
 Les nouveaux certificats TLS utilisés par Microsoft 365 services de contrôle d’accès sont désormais chaînés jusqu’à l’une des certifications racines suivantes :
 
@@ -72,10 +72,10 @@ avec l’une des CA intermédiaires suivantes :
 
 | Nom commun de l’ac | Thumbprint (SHA1) |
 |--|--|
-| [Microsoft Azure TLS émettrice CA 01](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
-| [Microsoft Azure TLS émettrice CA 02](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
-| [Microsoft Azure TLS émettrice CA 05](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
-| [Microsoft Azure TLS émettrice CA 06](http://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+| [Microsoft Azure TLS émettrice CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
+| [Microsoft Azure TLS émettrice CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
+| [Microsoft Azure TLS émettrice CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
+| [Microsoft Azure TLS émettrice CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
 
 ## <a name="will-this-change-affect-me"></a>Cette modification va-t-elle m’affecter ?
 
@@ -101,16 +101,16 @@ Voici quelques méthodes pour détecter si votre application peut être impacté
    - **Appareils IoT** ou incorporés : les appareils incorporés tels que les zones supérieure de l’écran de TV sont souvent intégrés avec un ensemble limité de certificats d’autorité racine et ne peuvent pas facilement mettre à jour le magasin de certificats. Si vous écrivez du code ou gérez des déploiements d’appareils IoT ou incorporés personnalisés, assurez-vous que les appareils font confiance aux nouvelles CA racines. Vous devrez peut-être contacter le fabricant de l’appareil.
 
 - Si vous avez un environnement dans lequel les règles de pare-feu autorisent les appels sortants uniquement vers des points de terminaison spécifiques, autorisez les URL de liste de révocation de certificats (CRL) ou OCSP (Online Certificate Status Protocol) suivantes :
-   - http://crl3.digicert.com
-   - http://crl4.digicert.com
-   - http://ocsp.digicert.com
-   - http://crl.microsoft.com
-   - http://oneocsp.microsoft.com
-   - http://ocsp.msocsp.com
-   - http://www.microsoft.com/pkiops
+   - `http://crl3.digicert.com`
+   - `http://crl4.digicert.com`
+   - `http://ocsp.digicert.com`
+   - `http://crl.microsoft.com`
+   - `http://oneocsp.microsoft.com`
+   - `http://ocsp.msocsp.com`
+   - `http://www.microsoft.com/pkiops`
 
 - Si vous êtes touché par cette modification, vous pouvez voir des messages d’erreur dépendant du type d’environnement que vous exécutez et du scénario dont vous êtes impacté. Vérifiez Windows journaux des événements de l’application, les journaux d’événements CAPI2 et les journaux d’applications personnalisés pour les messages qui ressemblent à :
-   ```
+   ```output
    An operation failed because the following certificate has validation errors:
    
    Subject Name: CN=teams.microsoft.com
@@ -123,4 +123,4 @@ Voici quelques méthodes pour détecter si votre application peut être impacté
 
 ## <a name="when-can-i-retire-the-old-ca-information"></a>Quand puis-je retirer les anciennes informations de l’ac ?
 
-Les certificats racines, intermédiaires et feuilles actuels ne seront pas révoqués. Les noms communs de l’ac et/ou les empreintes numériques existants seront requis jusqu’au moins février 2023 en fonction de la durée de vie des certificats existants.
+Les certificats racines, intermédiaires et feuilles actuels ne seront pas révoqués. Les noms communs de l’ac et/ou les empreintes numériques existants seront requis jusqu’en octobre 2023 au moins en fonction de la durée de vie des certificats existants.

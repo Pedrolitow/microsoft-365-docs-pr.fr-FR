@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
-ms.openlocfilehash: 63a0975b1391c2734d7933fe64094be868a34526
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: ce0878037a3741ad440d0bddeefcca86b7b62f74
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327651"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187436"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
@@ -41,7 +41,7 @@ Lorsque vous accédez pour la première fois à la page de performances réseau,
 
 Vous pouvez être invité à participer à la prévisualisation publique pour cette fonctionnalité au nom de votre organisation. L’acceptation se produit généralement immédiatement, après quoi vous voyez la page de connectivité réseau.
 
-Pour accéder à la page de connectivité réseau, vous devez être administrateur de l’organisation au sein Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur, tel que le rôle d’administrateur de prise en charge du service.
+Pour accéder à la page de connectivité réseau, vous devez être administrateur de l’organisation au sein Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit avoir le rôle Administrateur du support technique.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’apparition des évaluations de la connectivité réseau
 

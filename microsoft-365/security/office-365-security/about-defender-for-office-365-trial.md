@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937699"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187316"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
@@ -62,7 +62,7 @@ Une version d’essai de Microsoft Defender pour Office 365 est un moyen simple 
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurer une version d’Office 365 Defender
 
-Une version d’essai permet aux organisations de configurer et de configurer facilement Defender pour Office 365 fonctionnalités. Lors de l’installation, les stratégies qui sont [exclusives](safe-attachments.md)à Defender pour Office 365 (en particulier, les pièces jointes Coffre pour les messages électroniques, les liens [Coffre](safe-links.md)pour les messages électroniques et les Microsoft Teams et la protection contre l’emprunt d’identité dans les stratégies [anti-courrier](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)indésirable) sont appliquées à l’aide du modèle Standard pour les stratégies de sécurité prédéfinie. [](preset-security-policies.md)
+Une version d’essai permet aux organisations de configurer et de configurer facilement Defender pour Office 365 fonctionnalités. Lors de l’installation, les stratégies qui sont [exclusives](safe-attachments.md)à Defender pour Office 365 (en particulier, les pièces jointes Coffre pour les messages électroniques, les liens Coffre pour les messages électroniques et les [Microsoft Teams](safe-links.md)et la protection contre l’emprunt d’identité dans les stratégies [anti-hameçonnage)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)sont appliquées à l’aide du modèle Standard pour les stratégies de sécurité prédéfinie. [](preset-security-policies.md)
 
 Par défaut, ces stratégies sont limitées à tous les utilisateurs de l’organisation, mais pendant ou après la configuration de la version d’essai, vous pouvez modifier l’attribution de stratégie à des utilisateurs spécifiques.
 
@@ -111,7 +111,7 @@ La version d’évaluation de Defender pour Office 365 est progressivement mise 
 
 Pour plus d’informations, [consultez Microsoft Defender pour obtenir Office 365 conditions d'& conditions générales.](defender-for-office-365-trial-terms-and-conditions.md)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="q-how-do-i-extend-the-trial"></a>Q : Comment prolonger la version d’essai ?
 

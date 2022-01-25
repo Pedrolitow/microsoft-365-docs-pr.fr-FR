@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f1911dcfa697d620e8d5d2109cc0d21e9638e5b5
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074377"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187244"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Découvrez les stratégies de gestion des risques internes dans Microsoft 365
 
@@ -36,6 +36,9 @@ Regardez les vidéos ci-dessous pour découvrir comment la gestion des risques i
 
 **Flux de travail de gestion des risques internes**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+> [!IMPORTANT]
+> La gestion des risques internes est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la gestion des risques internes est prise en charge pour votre organisation, consultez disponibilité des dépendances [Azure par pays/région.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="modern-risk-pain-points"></a>Points de mal à risque modernes
 

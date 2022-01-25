@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9ea95245d983f14d57b15884fa8d1edbc54d5cb6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 824a31780a377fc91d834db6d37068a425428ec8
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283196"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187232"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -90,6 +90,9 @@ Choisissez parmi ces options de groupe de rôles de solution lors de la configur
 Selon la façon dont vous prévoyez d’implémenter des stratégies de gestion des risques internes, vous devez avoir les abonnements aux licences Microsoft 365 appropriés et comprendre et planifier certaines conditions préalables de solution.
 
 **Licences :** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements Microsoft 365 licences. Pour plus d’informations, consultez l’article Prise en charge de la gestion [des risques internes.](insider-risk-management-configure.md#subscriptions-and-licensing)
+
+> [!IMPORTANT]
+> La gestion des risques internes est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la gestion des risques internes est prise en charge pour votre organisation, consultez disponibilité des dépendances [Azure par pays/région.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez essayer la gestion des risques [](https://www.microsoft.com/microsoft-365/enterprise) internes, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
 

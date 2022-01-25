@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer automatiquement des documents et d’autres contenus à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 3613b65a7505d736897e51fcc37714d3203a2b03
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083495"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187280"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Créer des documents à l’aide de l’assembly de contenu dans Microsoft SharePoint Syntex
 
@@ -152,6 +152,7 @@ Vous pouvez utiliser un modèle *moderne publié* pour créer rapidement des doc
 > [!NOTE]
 > - Actuellement, seuls Microsoft Word documents (.docx extension) sont pris en charge pour la création d’un modèle. Avant de télécharger le document, assurez-vous que le suivi des modifications n’est pas **activé** ou que les commentaires ne sont pas activés sur le document Word. Si votre document contient des espaces de texte pour les images, assurez-vous qu’ils ne sont pas wrapped texte.
 >- Le modèle et le document sont associés à une bibliothèque de documents. Pour utiliser le modèle dans une autre bibliothèque de documents, vous devez le créer à nouveau dans cette bibliothèque de documents.
+>- Le document téléchargé utilisé pour créer le modèle moderne sera enregistré en tant que copie distincte et placé dans le répertoire /forms de la bibliothèque de documents. Le fichier d’origine sur le disque n’est pas affecté.
 >- Vous pouvez créer des espaces réservé uniquement pour le texte. Actuellement, les images, les images intelligentes, les tableaux et les listes à puces ne sont pas pris en charge.
 >- Une fois qu’un document est créé à partir d’un modèle, il n’est pas associé au modèle.
 

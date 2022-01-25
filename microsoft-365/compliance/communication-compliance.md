@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ab331c9e93799290348d60ede4e814f3f12675fc
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 24a910fee1b6a8b502e42f17f002b286e4fbf337
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034592"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187304"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
@@ -51,6 +51,9 @@ Pour obtenir une vue d’ensemble rapide de la conformité des communications, c
 Découvrez comment [les valeurs TD Securities utilisent](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) la conformité des communications pour répondre à leurs obligations réglementaires et répondre à leurs besoins de sécurité et de stabilité.
 
 Pour suivre les dernières mises à  jour de conformité des communications, sélectionnez Nouveautés de la [conformité des communications](https://compliance.microsoft.com/) pour votre organisation.
+
+> [!IMPORTANT]
+> La conformité des communications est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [disponibilité des dépendances Azure par pays/région.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="scenarios-for-communication-compliance"></a>Scénarios de conformité des communications
 

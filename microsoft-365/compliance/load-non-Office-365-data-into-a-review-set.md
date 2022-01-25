@@ -14,18 +14,18 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment importer des données non Microsoft 365 dans un groupe de révision pour analyse dans Advanced eDiscovery cas.
+description: Découvrez comment importer des données non Microsoft 365 dans un jeu à réviser pour analyse dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9de9c4044b9c8ba4af5112475e51e517d0c73946
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175142"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187424"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
-Tous les documents que vous devez analyser dans Advanced eDiscovery sont pas situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Microsoft 365 dans un groupe de révision. Cet article vous montre comment faire entrer vos documents non Microsoft 365 dans des Advanced eDiscovery pour analyse.
+Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Microsoft 365 dans un groupe de révision. Cet article vous montre comment faire entrer vos documents non Microsoft 365 dans des Advanced eDiscovery pour analyse.
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>Conditions requises pour télécharger du contenu non Office 365 contenu
 
@@ -53,7 +53,7 @@ L’utilisation de la fonctionnalité de chargement non Microsoft 365 décrite d
 
 - Compte affecté au groupe de rôles Gestionnaire eDiscovery (et ajouté en tant qu’administrateur eDiscovery).
 
-- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu non Microsoft 365 de contenu. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données non Microsoft 365 dans Advanced eDiscovery.
+- L’outil AzCopy v8.1 installé sur un ordinateur qui a accès à la structure de dossiers de contenu Microsoft 365 non complet. Pour installer AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Assurez-vous d’installer AzCopy à l’emplacement par défaut, à savoir **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v8.1. D’autres versions d’AzCopy peuvent ne pas fonctionner lors du chargement de données non Microsoft 365 dans Advanced eDiscovery.
 
 
 ## <a name="upload-non-microsoft-365-content-into-advanced-ediscovery"></a>Télécharger contenu non Microsoft 365 contenu dans Advanced eDiscovery
@@ -62,9 +62,11 @@ L’utilisation de la fonctionnalité de chargement non Microsoft 365 décrite d
 
 2. Cliquez **sur Ensembles** de révision, puis sélectionnez le jeu à réviser vers Microsoft 365 données non définies.  Si vous n’avez pas de jeu à réviser, vous pouvez en créer un. 
  
-3. Dans l’ensemble de révision, cliquez sur **Gérer l’ensemble de révision**, puis cliquez sur **Afficher les téléchargements** sur la mosaïque **Données non-Microsoft 365**.
+3. Ouvrez le jeu à réviser en cliquant dessus ou en le sélectionnant et en cliquant sur Ouvrir le jeu **à réviser.**
 
-4. Cliquez sur **Charger des fichiers** pour démarrer l’Assistant importation de données.
+4. Dans le jeu à réviser, cliquez sur Gérer le jeu à réviser **(flèche** vers le bas juste après l’option **Actions),** puis cliquez sur l’option De données **Office 365 données** non définies.
+
+5. Cliquez sur **Charger des fichiers** pour démarrer l’Assistant importation de données.
 
    ![Télécharger fichiers.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
