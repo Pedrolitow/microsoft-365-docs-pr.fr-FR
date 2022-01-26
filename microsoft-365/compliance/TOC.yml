@@ -297,6 +297,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Comment fonctionne SMTP DANE
+              href: how-smtp-dane-works.md
             - name: BitLocker et Distributed Key Manager (DKM) pour le chiffrement
               href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
             - name: Legacy OME
