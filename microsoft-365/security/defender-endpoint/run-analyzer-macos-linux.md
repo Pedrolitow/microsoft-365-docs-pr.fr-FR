@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d91bae340db5e52d04bd0263068892065dd3eebd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e79ccf29695f0bc74c75cf12d617e273d974b24b
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166661"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213684"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via un scénario d’interface graphique graphique
 
 1. Téléchargez [l’outil Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : '34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834'.
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » qui est téléchargé à partir du lien ci-dessus est : '34C0DA20A6B38A16951394958991CD74EF7E07EB1DE06923547B351665A32DF6'.
 
 2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
 
