@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936462"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218920"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -69,11 +69,11 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 3. Dans la barre de navigation de gauche, sélectionnez Inscriptions d’applications.
 
-4. Sélectionnez Nouvelle inscription
+4. Sélectionner Une nouvelle inscription
 
    ![Nouvelle application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez les comptes directement dans n’importe quelle organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com> . Enfin, sélectionnez Enregistrer.
+5. Dans la page Enregistrer une application, sous Types de comptes pris en charge, sélectionnez Comptes dans n’importe quel répertoire d’organisation (n’importe quel Azure AD - Multi-client). Ensuite, sous URI de redirection (facultatif), sélectionnez Web et entrez <https://office.com> . Enfin, sélectionnez Enregistrer.
 
    ![Inscription de l’application](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -93,7 +93,7 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
 
 12. Maintenant, nous devons ajouter des autorisations pour la migration de boîtes aux lettres, sélectionnez Ajouter une autorisation
 
-13. Dans les fenêtres Demander des autorisations d’API, sélectionnez les API des utilisateurs de mon organisation, puis recherchez Office 365 exchange online, sélectionnez-le.
+13. Dans les fenêtres Demander des autorisations d’API, sélectionnez les API que mon organisation utilise, recherchez Office 365 Exchange Online api, puis sélectionnez-la.
 
     ![Sélectionner l’API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
@@ -360,7 +360,7 @@ L’envoi de lot de migration est également pris en charge à partir du nouveau
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement **est contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Devons-nous mettre à jour RemoteMailboxes dans la source sur site après le déplacement ?**
 
@@ -534,7 +534,7 @@ Actuellement, la fonctionnalité migrations de boîtes aux lettres entre locatai
 
 Non, après une migration de boîtes aux lettres entre les locataires, eDiscovery par rapport à la boîte aux lettres de l’utilisateur migré dans la source ne fonctionne pas. Cela est dû au fait qu’il n’existe plus de boîte aux lettres dans la source à rechercher, car la boîte aux lettres a été miggrée vers le client cible et appartient maintenant au client cible. eDiscovery, la migration post-boîte aux lettres peut uniquement être effectuée dans le client cible (où la boîte aux lettres existe maintenant). Si une copie de la boîte aux lettres source doit être persistante dans le client source après la migration, l’administrateur de la source peut copier le contenu dans une autre boîte aux lettres avant la migration pour les futures opérations eDiscovery sur les données.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - **Problème : la fonctionnalité de Teams post-migration dans le client source sera limitée.** Une fois la boîte aux lettres migrée vers le client cible, Teams dans le client source n’aura plus accès à la boîte aux lettres de l’utilisateur. Ainsi, si un utilisateur se connecte à Teams avec les informations d’identification du client source, il y aura une perte de fonctionnalités telles que l’impossibilité de mettre à jour votre image de profil, aucune application de calendrier et l’impossibilité de rechercher et rejoindre des équipes publiques.
 

@@ -42,6 +42,8 @@
   items:
     - name: Vue d’ensemble de la page de conformité des appareils
       href: m365-lighthouse-device-compliance-page-overview.md
+    - name: Comparer les paramètres de stratégie de conformité des appareils
+      href: m365-lighthouse-compare-compliance-policies.md
     - name: vue Windows page 365 (PC cloud)
       href: m365-lighthouse-win365-page-overview.md
 - name: Gestion des menaces

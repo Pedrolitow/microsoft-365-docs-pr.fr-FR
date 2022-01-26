@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 951e49ddb7cb9ed0154fa70f66d54944a8aae066
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170644"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214134"
 ---
 # <a name="create-and-manage-device-groups"></a>Créer et gérer des groupes d’appareils
 
@@ -65,7 +65,7 @@ Dans le cadre du processus de création d’un groupe d’appareils, vous devez 
 3. Entrez le nom du groupe et les paramètres d’automatisation et spécifiez la règle correspondante qui détermine quels appareils appartiennent au groupe. Découvrez [comment l’enquête automatisée démarre.](automated-investigations.md#how-the-automated-investigation-starts)
 
     > [!TIP]
-    > Si vous souhaitez grouper des appareils par unité d’organisation, vous pouvez configurer la clé de Registre pour l’affiliation au groupe. Pour plus d’informations sur le marquage des appareils, voir [Créer et gérer des balises d’appareil.](machine-tags.md)
+    > Si vous souhaitez utiliser le marquage pour le regroupement d’appareils, voir [Créer et gérer des balises d’appareil.](machine-tags.md)
 
 4. Affichez un aperçu de plusieurs appareils qui seront en correspondance avec cette règle. Si vous êtes satisfait de la règle, cliquez sur **l’onglet Accès** utilisateur.
 
@@ -104,7 +104,7 @@ Les définitions de groupe d’appareils peuvent également inclure plusieurs va
 
 Pour plus d’informations sur la liaison aux définitions de groupes d’appareils, voir Groupes d’appareils [- Microsoft 365 sécurité.](https://sip.security.microsoft.com/homepage)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle](rbac.md)
 - [Créer et gérer des balises d’appareils](machine-tags.md)

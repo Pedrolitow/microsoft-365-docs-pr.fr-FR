@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165638"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213987"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
@@ -42,9 +42,7 @@ Les enquêtes cyberforensiques s’appuient souvent sur des horodatés pour rass
 
 Microsoft Defender pour le point de terminaison peut afficher le temps universel coordonné (UTC) ou l’heure locale.
 
-Votre paramètre de fuseau horaire actuel s’affiche dans le menu Microsoft Defender pour le point de terminaison. Vous pouvez modifier le fuseau horaire affiché dans le menu **Fuseau** horaire.
-
-![Icône 2 des paramètres de fuseau horaire.](images/atp-time-zone-menu.png).
+Votre paramètre de fuseau horaire actuel est affiché dans les paramètres de Microsoft Defender. Vous pouvez modifier le fuseau horaire affiché dans le **menu** Fuseau horaire sous Paramètres > **de sécurité.**
 
 ### <a name="utc-time-zone"></a>Fuseau horaire UTC
 
@@ -66,9 +64,9 @@ Le fuseau horaire De Microsoft Defender pour le point de terminaison est défini
 
 Pour définir le fuseau horaire :
 
-1. Cliquez sur **l’icône 3** des paramètres de fuseau horaire du menu ![ Fuseau horaire. ](images/atp-time-zone.png)
-2. Sélectionnez **l’indicateur UTC** de fuseau horaire.
-3. Sélectionnez **le fuseau horaire UTC** ou votre fuseau horaire local, par exemple -7:00.
+1. Cliquez sur le menu **Paramètres** dans l’icône [Microsoft 365 Defender paramètres](https://security.microsoft.com/) de fuseau horaire du ![ portail. ](images/atp-time-zone.png)
+2. Sélectionnez **Centre de sécurité.**
+3. Sélectionnez **Fuseau horaire** et définissez le fuseau horaire sur UTC ou votre fuseau horaire local.
 
 ### <a name="regional-settings"></a>Paramètres régionaux
 

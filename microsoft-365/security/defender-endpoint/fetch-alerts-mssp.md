@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dce95b2053d95ebb03502d38cf35619c596253e1
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e2ac36689f9f41badb2f4216198d8818e568778b
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300417"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214176"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
 
@@ -177,7 +177,7 @@ Vous pouvez maintenant télécharger le fichier de configuration approprié pour
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
 
-Pour plus d’informations sur la récupération des alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
+Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir Récupérer des alertes à partir du [client MSSP client](fetch-alerts-mssp.md).
 
 ## <a name="see-also"></a>Voir aussi
 

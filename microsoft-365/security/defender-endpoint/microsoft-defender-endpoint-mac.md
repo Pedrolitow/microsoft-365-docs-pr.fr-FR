@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: ea88381a82036af34f228725d1f8149895ad5c3f
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041101"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214116"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -38,7 +38,7 @@ ms.locfileid: "62041101"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour endpoint sur Mac.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Mac est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité Defender for Endpoint sur Mac PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif.](mac-preferences.md#enable--disable-passive-mode)
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Mac est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de la fonctionnalité Defender for Endpoint sur Mac PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif.](mac-preferences.md#enforcement-level-for-antivirus-engine)
 
 ## <a name="whats-new-in-the-latest-release"></a>Nouveautés de la dernière version
 
@@ -53,7 +53,7 @@ Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnali
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH

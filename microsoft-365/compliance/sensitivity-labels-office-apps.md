@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dd46502fc4e54e298e1f3be4f776e1e325259a8
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083072"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213672"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -102,7 +102,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Ne pas transférer](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Chiffrer uniquement](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Oui                |
-|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Semi-Annual Enterprise canal : en cours de révision | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
+|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semi-annuel : 2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |

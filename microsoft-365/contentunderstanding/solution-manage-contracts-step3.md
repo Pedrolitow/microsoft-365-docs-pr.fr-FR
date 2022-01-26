@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Découvrez comment utiliser les Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez comment utiliser Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
+ms.openlocfilehash: d83fb6e5ca911cbafc6f064c615ab15ae0f570c7
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159591"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62219004"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer le flux pour traiter vos contrats
 
@@ -160,7 +160,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
     | État d’approbation  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
     | Approuvé par     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responder'] ['displayName']        |
     | Date d’approbation     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
-    | Commentaire     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data'] ['acComments']         |
+    | Commentaire     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data']? ['acComments']         |
     
     L’exemple suivant montre comment utiliser la zone de formule dans Power Automate pour écrire une expression.
 
@@ -232,7 +232,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
                         },
                         {
                             "title": "Approval comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",
@@ -255,7 +255,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 ## <a name="if-the-contract-is-rejected"></a>Si le contrat est rejeté
 
-Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
+Lorsqu’un contrat a été rejeté, les choses suivantes se produisent :
 
 - Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Rejeté**.
 
@@ -267,7 +267,7 @@ Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
 
 - Dans votre flux, vous créez une carte adaptative indiquant que le contrat a été rejeté.
 
-   ![Flow’état de la carte adaptative est rejeté.](../media/content-understanding/reject-flow-item.png)
+   ![Flow’état de la carte adaptative s’affiche.](../media/content-understanding/reject-flow-item.png)
 
 Le code suivant est le JSON utilisé pour cette étape dans le Power Automate flux.
 
@@ -328,7 +328,7 @@ Le code suivant est le JSON utilisé pour cette étape dans le Power Automate fl
                         },
                         {
                             "title": "Comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",

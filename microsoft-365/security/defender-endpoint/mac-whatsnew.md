@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202177"
+ms.locfileid: "62214212"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -291,7 +291,7 @@ ms.locfileid: "62202177"
 
 ## <a name="1006899"></a>100.68.99
 
-- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute [en mode passif](mac-preferences.md#enable--disable-passive-mode)
+- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute [en mode passif](mac-preferences.md#enforcement-level-for-antivirus-engine)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1006528"></a>100.65.28

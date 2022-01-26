@@ -13,13 +13,14 @@ search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
+ROBOTS: noindex,nofollow
 description: Découvrez comment créer une conservation inaltérable pour une boîte aux lettres supprimée (récupérable) pour la rendre inactive et conserver son contenu.
-ms.openlocfilehash: 67eacbd3b702f35fc8d71680238037d87ae529c8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0746081db76bd5b21947ff20ff7615f09cc08ba4
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110822"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218908"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Placer une conservation inaltérable dans une boîte aux lettres supprimée (récupérable) dans Exchange Online
 

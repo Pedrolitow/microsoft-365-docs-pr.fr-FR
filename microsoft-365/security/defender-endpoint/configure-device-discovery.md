@@ -19,18 +19,18 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311841"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214080"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -38,7 +38,7 @@ ms.locfileid: "61311841"
 
 La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification d’appareil plus riche.
 
-Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 et Windows 2019 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
+Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - Windows 10 ou ultérieur et appareils Windows Server 2019 ou ultérieur uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
 ## <a name="set-up-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -50,7 +50,7 @@ Accéder à la **Paramètres**  >  **détection d’appareils**
 2. Si vous avez choisi d’utiliser la découverte standard, sélectionnez les appareils à utiliser pour l’analyse active : tous les appareils ou sur un sous-ensemble en spécifiant leurs balises d’appareil, puis sélectionnez **Enregistrer**
 
 > [!NOTE]
->La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+>La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple : `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Exclure les appareils d’être activement sondés dans la découverte standard
 

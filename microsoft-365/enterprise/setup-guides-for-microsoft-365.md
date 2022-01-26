@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 2cce47f32e74039aa30cc95e8cce2f90b44e2df5
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 893ee5716621d988d006f9f3a67b183da3f65b14
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137086"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218980"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -85,11 +85,11 @@ Le [guide Windows virtual desktop](https://aka.ms/wvdsetupguide) fournit aux adm
 
 Microsoft Edge a été entièrement reconstruit pour vous apporter des performances et des compatibilités de premier niveau, la sécurité et la confidentialité que vous méritez, ainsi que de nouvelles fonctionnalités conçues pour vous donner le meilleur du web.
 
-Le guide d’installation de [Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites Enterprise pour voir quels sites accédés dans votre organisation devront peut-être utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies de conformité pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger des Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec la stratégie de groupe, Configuration Manager ou Microsoft Intune.
+Le guide d’installation de [Microsoft Edge](https://aka.ms/edgeadvisoradmin) vous aidera à configurer la découverte de sites Enterprise pour voir quels sites accédés dans votre organisation devront peut-être utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies de conformité pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger des Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec la stratégie de groupe, Configuration Manager ou Microsoft Intune.
 
 ### <a name="configure-ie-mode-for-microsoft-edge"></a>Configurer le mode IE pour Microsoft Edge
 
-Si vous avez déjà déployé Microsoft Edge et que vous souhaitez uniquement configurer le mode [IE,](https://aka.ms/configureiemode) le guide Configurer le mode IE pour Microsoft Edge vous donne des scripts pour automatiser la configuration de la découverte de sites Enterprise. Vous recevrez également des recommandations en mode IE à partir d’un outil basé sur le cloud qui vous aidera à créer une liste des sites en mode Enterprise à déployer pour vos utilisateurs.
+Si vous avez déjà déployé Microsoft Edge et que vous souhaitez uniquement configurer le mode [IE,](https://aka.ms/configureiemodeadmin) le guide Configurer le mode IE pour Microsoft Edge vous donne des scripts pour automatiser la configuration de la découverte de sites Enterprise. Vous recevrez également des recommandations en mode IE à partir d’un outil basé sur le cloud qui vous aidera à créer une liste des sites en mode Enterprise à déployer pour vos utilisateurs.
 
 ### <a name="microsoft-search-setup-guide"></a>Recherche Microsoft de configuration
 

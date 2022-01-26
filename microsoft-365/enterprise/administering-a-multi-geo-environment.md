@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
-ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205844"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214191"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -34,13 +34,16 @@ Le [centre SharePoint’administration](https://admin.microsoft.com/sharepoint) 
 
 Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour vos emplacements satellites est disponible dans la page de recherche dans le journal d’audit de Microsoft 365. Vous pouvez consulter toutes les entrées de journal d’audit des emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage, et vous pouvez appliquer les filtres existants pour voir les activités de certains utilisateurs.
 
+> [!NOTE]
+> Exchange d’audit de l’administrateur sont disponibles uniquement pour l’emplacement par défaut.
+
 ## <a name="bcs-secure-store-apps"></a>BCS, service Banque d’informations sécurisé, applications
 
 BCS, le service Banque d’informations sécurisé et les applications ont des instances distinctes dans chaque emplacement satellite. Ainsi, l’administrateur SharePoint Online doit gérer et configurer ces services séparément à partir de chaque emplacement satellite.
 
 ## <a name="compliance-admin-center"></a>Centre d’administration de la conformité
 
-Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365 d’administration de la conformité.](https://compliance.microsoft.com/)
+Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité.](https://compliance.microsoft.com/)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -74,13 +77,13 @@ Par défaut, tous les emplacements géographiques d’un environnement multigéo
 
 Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les OneDrive et SharePoint sites dans chaque emplacement géographique respectent uniquement les paramètres de partage spécifiques à la région correspondants. (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
 
-## <a name="stream"></a>Stream
+## <a name="stream"></a>Flux
 
 Les vidéos téléchargées sur Stream dans une conversation 1:1 sont stockées dans la OneDrive de la personne qui a téléchargé. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Nous 2016 2013 2016 et 2016, et les métadonnées gérées par l’entreprise sont gérées par l’entreprise sur plusieurs emplacements géographiques, le master étant hébergé dans l’emplacement central de votre entreprise. [](/sharepoint/managed-metadata) Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
+Nous prise en charge une [taxonomie](/sharepoint/managed-metadata) unifiée pour les métadonnées gérées par l’entreprise sur plusieurs emplacements géographiques, avec le master hébergé dans l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
 
 Pour plus de détails et pour obtenir des instructions de développement, voir [Gérer les métadonnées dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 

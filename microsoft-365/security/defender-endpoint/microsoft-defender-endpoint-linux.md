@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eea9aca5e1c6ac791581e6fab93c768a06b0dc98
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156519"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213984"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "62156519"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enable--disable-passive-mode)passif.
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enforcement-level-for-antivirus-engine)passif.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
@@ -91,51 +91,35 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
     > [!NOTE]
     > Les distributions et les versions qui ne sont pas explicitement répertoriées ne sont pas pris en charge (même s’ils sont dérivés des distributions officiellement pris en charge).
 
+- Liste des versions de noyau prise en charge
+  - Red Hat Enterprise Linux 6 et CentOS 6 :
+    - Pour 6,7 : 2.6.32-573.*
+    - Pour 6,8 : 2.6.32-642.*
+    - Pour 6,9 : 2.6.32-696.*
+    - Pour 6,10 : 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2 :
+    
+        |||||
+        |--|--|--|--|
+        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
+        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
+        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
+        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
+        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
+        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
+        |2.6.32-754.28.1.el6.x86_64|
 
-    Pour Red Hat Enterprise Linux 6 et CentOS 6, la liste des versions de noyau pris en charge est la :
-       - Pour 6,7 : 2.6.32-573.* 
-       - Pour 6,8 : 2.6.32-642.* 
-       - Pour 6,9 : 2.6.32-696.* 
-       - Pour 6,10 : 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2 :
+    > [!NOTE]
+    > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
 
- > [!NOTE]
- > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
+  - Pour le reste des distributions prise en charge, la version minimale du noyau requise est 3.10.0-327
 
-    Liste des versions :
+- Mécanisme du fournisseur d’événements
+  - Red Hat Enterprise Linux 6 et CentOS 6 : solution basée sur `Talpa` un module noyau
+  - Pour le reste des distributions pris en charge : `Fanotify`
+    - `fanotify`L’option noyau doit être activée
 
-    - 2.6.32-754.2.1.el6.x86_64 
-    - 2.6.32-754.17.1.el6.x86_64
-    - 2.6.32-754.29.1.el6.x86_64
-    - 2.6.32-754.3.5.el6.x86_64 
-    - 2.6.32-754.18.2.el6.x86_64
-    - 2.6.32-754.29.2.el6.x86_64
-    - 2.6.32-754.6.3.el6.x86_64 
-    - 2.6.32-754.22.1.el6.x86_64
-    - 2.6.32-754.30.2.el6.x86_64
-    - 2.6.32-754.9.1.el6.x86_64 
-    - 2.6.32-754.23.1.el6.x86_64
-    - 2.6.32-754.33.1.el6.x86_64
-    - 2.6.32-754.10.1.el6.x86_64
-    - 2.6.32-754.24.2.el6.x86_64
-    - 2.6.32-754.35.1.el6.x86_64
-    - 2.6.32-754.11.1.el6.x86_64
-    - 2.6.32-754.24.3.el6.x86_64
-    - 2.6.32-754.39.1.el6.x86_64
-    - 2.6.32-754.12.1.el6.x86_64
-    - 2.6.32-754.25.1.el6.x86_64
-    - 2.6.32-754.41.2.el6.x86_64
-    - 2.6.32-754.14.2.el6.x86_64
-    - 2.6.32-754.27.1.el6.x86_64
-    - 2.6.32-754.15.3.el6.x86_64
-    - 2.6.32-754.28.1.el6.x86_64       
-
-
-- Version minimale du noyau 3.10.0-327
-
-- `fanotify`L’option noyau doit être activée
-
-  > [!CAUTION]
-  > L’exécution de Defender pour Endpoint sur Linux côte à côte avec d’autres solutions de sécurité basées sur `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
+      > [!CAUTION]
+      > L’exécution de Defender pour Endpoint sur Linux côte à côte avec d’autres solutions de sécurité basées sur `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
 
 - Espace disque : 1 Go
 

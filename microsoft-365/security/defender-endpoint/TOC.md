@@ -645,8 +645,6 @@
 
 #### [Intégration SIEM]()
 ##### [Intégrer les outils SIEM avec Microsoft Defender pour point de terminaison](configure-siem.md)
-##### [Activer l'intégration SIEM dans Microsoft Defender pour point de terminaison](enable-siem-integration.md)
-##### [Extraire des détections à l’aide de l’API SIEM REST](pull-alerts-using-rest-api.md)
 ##### [Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)
 
 #### [Partenaires et API]()

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283664"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214224"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
@@ -53,7 +53,7 @@ La notation CIDR pour les IPs n’est pas prise en charge.
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
-Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
+Type d’autorisation|Permission|Nom d’affichage de l’autorisation
 :---|:---|:---
 Application|Ti.ReadWrite|« Lire et écrire des indicateurs »
 Application|Ti.ReadWrite.All|« Lire et écrire tous les indicateurs »
@@ -69,7 +69,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -78,17 +78,17 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre|Type|Description
 :---|:---|:---
-indicatorValue|String|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileMd5 », « CertificateThumbprint », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « Warn », « Block », « Audit », « BlockAndRemediate », « AlertAndBlock » et « Allowed ». **Obligatoire**. Le paramètre GenerateAlert doit avoir la valeur « TRUE » lors de la création d’une action avec « Audit ».
-application|String|Application associée à l’indicateur. Ce champ fonctionne uniquement pour les nouveaux indicateurs. Il ne met pas à jour la valeur d’un indicateur existant. **Optional**
+application|Chaîne|Application associée à l’indicateur. Ce champ fonctionne uniquement pour les nouveaux indicateurs. Il ne met pas à jour la valeur d’un indicateur existant. **Optional**
 title|String|Titre de l’alerte de l’indicateur. **Obligatoire**
-description|String|Description de l’indicateur. **Obligatoire**
+description|Chaîne|Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur. **Optional**
-Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames|String|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
-
+Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
+recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+generateAlert|Énum|**True si** la génération d’alerte est **requise, False** si cet indicateur ne doit pas générer d’alerte.
 ## <a name="response"></a>Réponse
 
 - Si elle réussit, cette méthode renvoie le code de réponse [](ti-indicator.md) 200 - OK et l’entité d’indicateur créée/mise à jour dans le corps de la réponse.

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 015375b1405d878019e87afbc11de4cd67d241f0
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f171bd8ce62e8e3d3b35c8dbab6740ad62b172fd
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202176"
+ms.locfileid: "62214200"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer le déploiement de Microsoft Defender pour point de terminaison
 
@@ -105,7 +105,7 @@ Microsoft recommande [d’utiliser Privileged Identity Management](/azure/active
 
 Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
 
-- **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de la sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
+- **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Les utilisateurs ayant des rôles d’administrateur général ou d Azure Active Directory de sécurité ont un accès total. Le rôle lecteur sécurité dispose d’un accès en lecture seule et n’accorde pas l’accès à l’affichage de l’inventaire des ordinateurs/appareils.
 
 - Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
 

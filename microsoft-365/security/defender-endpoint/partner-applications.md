@@ -15,18 +15,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301233"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213974"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -114,7 +114,7 @@ Logo|Nom du partenaire|Description
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Defender pour point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes. Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
+Defender pour point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.
 
 ## <a name="ticketing-and-it-service-management"></a>Gestion des tickets et du service it
 

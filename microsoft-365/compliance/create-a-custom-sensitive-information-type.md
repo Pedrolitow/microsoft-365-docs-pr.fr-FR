@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035051"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213936"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -86,6 +86,38 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 
 13. Tous les types d’informations sensibles s’affichent sur la page **Classification des données**. Sélectionnez **Actualiser**, puis recherchez ou utilisez l’outil de recherche pour trouver le type d’informations sensibles que vous avez créé.
 
+### <a name="copy-and-modify-a-sensitive-information-type"></a>Copier et modifier un type d’informations sensibles
+
+Utilisez cette procédure pour créer un type d’informations sensibles basé sur un type d’informations sensibles existant. 
+
+1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
+
+2. Dans le lanceur, sélectionnez **Copier**.
+
+3. Sélectionnez **Actualiser** dans la liste des types d’informations sensibles, puis recherchez la copie que vous avez faite. La recherche partielle cherche le travail de sorte à limiter votre recherche à `copy`rendant tous les types d’informations sensibles ayant le mot `copy` dans le nom. 
+
+4. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
+
+5. Sélectionnez la copie du type d’informations sensibles, puis sélectionnez **Modifier**. 
+
+6. Donnez un **Nom** et une **Description** à votre nouveau type d’informations sensibles.
+
+7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
+
+8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
+
+9. Remplissez une valeur pour la **Proximité de caractère**.
+
+10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des [**Contrôles supplémentaires**](#more-information-on-additional-checks), ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
+
+11. Sélectionnez **Créer**.
+
+12. Cliquez sur **Suivant**.
+
+13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
+
+14. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
+
 ## <a name="test-a-sensitive-information-type"></a>Tester un type d’informations sensibles
 
 Vous pouvez tester n’importe quel type d’informations sensibles dans la liste. Nous vous suggérons de tester chaque type d’informations sensibles que vous créez avant de l’utiliser dans une stratégie.
@@ -124,7 +156,7 @@ La limite de nombre d’instances SIT s’applique lorsque des sits sont utilis�
 - Gouvernance des informations
 - Conformité des communications
 - Gestion des enregistrements
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Gestion de la confidentialité
 
 Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un sit dans un élément unique doit être entre les valeurs min et max. Il s’agit du nombre **d’instances.**
@@ -154,38 +186,6 @@ Par exemple, si vous souhaitez que la règle déclenche une correspondance lorsq
 1. Dans le centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis choisissez le type d’informations sensibles dans la liste que vous voulez supprimer.
 
 2. Dans le lanceur qui s’ouvre, sélectionnez **Supprimer**.
-
-## <a name="copy-and-modify-a-sensitive-information-type"></a>Copier et modifier un type d’informations sensibles
-
-Utilisez cette procédure pour créer un type d’informations sensibles basé sur un type d’informations sensibles existant. 
-
-1. Dans le centre de conformité, accédez à **Classifications des données** \> **Types d’informations sensibles**, puis sélectionnez le type d’informations sensibles que vous voulez copier.
-
-2. Dans le lanceur, sélectionnez **Copier**.
-
-3. Sélectionnez **Actualiser** dans la liste des types d’informations sensibles, puis recherchez la copie que vous avez faite. La recherche partielle cherche le travail de sorte à limiter votre recherche à `copy`rendant tous les types d’informations sensibles ayant le mot `copy` dans le nom. 
-
-4. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
-
-5. Sélectionnez la copie du type d’informations sensibles, puis sélectionnez **Modifier**. 
-
-6. Donnez un **Nom** et une **Description** à votre nouveau type d’informations sensibles.
-
-7. Vous pouvez choisir de modifier ou de supprimer les motifs existants et d’en ajouter de nouveaux. Choisissez le niveau de confiance par défaut pour le nouveau motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
-
-8. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière**, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Consultez, [Éléments recherchés par les fonctions DLP ](what-the-dlp-functions-look-for.md).
-
-9. Remplissez une valeur pour la **Proximité de caractère**.
-
-10. (Facultatif) Si vous avez des **Éléments de prise en charge** ou des [**Contrôles supplémentaires**](#more-information-on-additional-checks), ajoutez les. Si nécessaire, vous pouvez grouper vos **Éléments de prise en charge**.
-
-11. Sélectionnez **Créer**.
-
-12. Cliquez sur **Suivant**.
-
-13. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
-
-14. Vérifiez votre paramètre, puis sélectionnez **Soumettre**.
 
 > [!NOTE]
 > Ces sits ne peuvent pas être copiés :

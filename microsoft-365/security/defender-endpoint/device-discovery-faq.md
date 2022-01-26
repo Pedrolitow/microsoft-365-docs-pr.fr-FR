@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0094042faeb1b8c9eaabe500e298f99d234c109
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f871d612acbc8c9fadf3a4f2e92e999ddebe9044
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073723"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213979"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
@@ -72,8 +72,8 @@ Le moteur de découverte fait la distinction entre les événements réseau reç
 Par défaut, tous les appareils intégrés s’exécutant sur Windows 10 version 1809 ou ultérieure, ou Windows 11 capturent et analysent les protocoles suivants : ARP, CDP, DHCP, DHCPv6, IP (en-têtes), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (en-têtes SYN), UDP (en-têtes), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Quels protocoles utilisez-vous pour l’analyse active dans la découverte standard ?
+Lorsqu’un appareil est configuré pour exécuter la découverte standard, les services exposés sont sondés à l’aide des protocoles suivants : ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, RPC, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP
 
-Lorsqu’un appareil est configuré pour exécuter la découverte standard, les services exposés sont sondés à l’aide des protocoles suivants : ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, PIC, CrestonCIP, IphoneSync, WinRM, VNC, SLP
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>Comment puis-je exclure les cibles de l’analyse de la découverte standard ?
 

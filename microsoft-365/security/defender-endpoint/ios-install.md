@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fca46fa50c332d31ea18faf90e8372c1a9947b1f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a2e17e5b7a2a5a5a7abed9c7f2a3f42c0cf63b37
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935620"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213976"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -78,21 +78,6 @@ Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise
 ## <a name="complete-deployment-for-supervised-devices"></a>Déploiement complet pour les appareils supervisés
 
 Microsoft Defender pour le point de terminaison sur l’application iOS dispose d’une capacité spécialisée sur les appareils iOS/iPadOS supervisés, étant donné les fonctionnalités de gestion accrues fournies par la plateforme sur ces types d’appareils. Il peut également fournir une protection Web **sans configuration d’un VPN local sur l’appareil.** Cela offre aux utilisateurs finaux une expérience transparente tout en étant protégé contre le hameçonnage et d’autres attaques basées sur le web.
-
-Pour configurer la Protection Web avec des fonctionnalités anti-hameçonnage améliorées, vous devez déployer un profil personnalisé sur les appareils iOS supervisés. Suivez les étapes ci-dessous :
-
-- Télécharger le profil de config à partir de [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
-- Accéder aux **profils**  ->  **de configuration iOS/iPadOS** Des appareils  ->    ->  **créent un profil**
-
-
-    > [!div class="mx-imgBorder"]
-    > ![Image de Microsoft Endpoint Manager Centre d’administration 7.](images/ios-deploy-7.png)
-
-
-    
-- Fournissez le nom du profil. Lorsque vous avez été invité à importer un fichier de profil de configuration, sélectionnez celui téléchargé à l’étape précédente.
-- Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Sélectionnez **Suivant**.
-- Dans la page **Vérifier + créer**, quand vous avez terminé, choisir **Créer**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 
 ### <a name="configure-supervised-mode-via-intune"></a>Configurer le mode Supervisé via Intune
 
@@ -180,7 +165,7 @@ Cette étape simplifie le processus d’intégration en mettant en place le prof
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 
-Les administrateurs peuvent configurer Microsoft Defender pour le point de terminaison pour déployer et activer en mode silencieux. Dans ce flux, l’utilisateur est simplement informé de l’installation. Defender pour le point de terminaison est installé automatiquement sans que l’utilisateur n’a besoin d’ouvrir l’application. Suivez les étapes ci-dessous pour configurer le déploiement zero-touch ou silencieux de Defender for Endpoint sur les appareils iOS inscrits :
+Les administrateurs peuvent configurer Microsoft Defender pour le point de terminaison pour déployer et activer en mode silencieux. Dans ce flux, l’administrateur crée un profil de déploiement et l’utilisateur est simplement informé de l’installation. Defender pour le point de terminaison est installé automatiquement sans que l’utilisateur n’a besoin d’ouvrir l’application. Suivez les étapes ci-dessous pour configurer le déploiement zero-touch ou silencieux de Defender for Endpoint sur les appareils iOS inscrits :
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   >  **Profils de configuration des**  >  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Sélectionnez **Créer**.

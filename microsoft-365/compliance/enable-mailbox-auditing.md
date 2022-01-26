@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: L’enregistrement d’audit de boîte aux lettres est Microsoft 365 par défaut (également appelé audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). Cela signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, où vous pouvez rechercher les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 06386651c163fa3e4408f2e7a918fe30030ede06
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 957e0a00a480746d6a70bf70ee02d725f43194f8
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423406"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213816"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -68,9 +68,9 @@ Le tableau suivant indique les types de boîtes aux lettres actuellement pris en
 
 |Type de boîte aux lettres|Pris en charge|
 |---|:---:|
-|Boîtes aux lettres utilisateur|![Marque de vérification.](../media/checkmark.png)|
+|Boîtes aux lettres utilisateur|![Coche.](../media/checkmark.png)|
 |Boîtes aux lettres partagées|![Coche.](../media/checkmark.png)|
-|Microsoft 365 boîtes aux lettres de groupe|![Marque de vérification.](../media/checkmark.png)|
+|Microsoft 365 boîtes aux lettres de groupe|![Coche.](../media/checkmark.png)|
 |Boîtes aux lettres de ressources||
 |Boîtes aux lettres de dossiers publics||
 |
@@ -102,7 +102,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 
 ****
 
-|Action de boîte aux lettres|Description|Administrateur|Délégué|Propriétaire|
+|Action de boîte aux lettres|Description|Administrateur|Délégué|Owner|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**ApplyRecord**|Un élément est étiqueté en tant qu’enregistrement.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|
@@ -116,7 +116,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**ModifyFolderPermissions**|Bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**Déplacer**|Un message a été déplacé vers un autre dossier.|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
-|**RecordDelete**|Un élément étiqueté en tant qu’enregistrement a été supprimé (déplacé vers le dossier Éléments récupérables). Les éléments étiquetés en tant qu’enregistrements ne peuvent pas être supprimés définitivement (purgés du dossier Éléments récupérables).|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
+|**RecordDelete**|Un élément étiqueté en tant qu’enregistrement a été supprimé (déplacé vers le dossier Éléments récupérables). Les éléments étiquetés en tant qu’enregistrements ne peuvent pas être supprimés définitivement (purgés du dossier Éléments récupérables).|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
 |**SearchQueryInitiated**|**Remarque**: cette valeur est disponible uniquement pour les utilisateurs de l’abonnement au module de conformité E5 ou E5. Pour plus d’informations, [voir Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <p> Une personne utilise Outlook (Windows, Mac, iOS, Android ou Outlook sur le web) ou l’application de messagerie pour Windows 10 pour rechercher des éléments dans une boîte aux lettres.|||![Coche](../media/checkmark.png)|
 |**Send**|**Remarque**: cette valeur est disponible uniquement pour les utilisateurs de l’abonnement au module de conformité E5 ou E5. Pour plus d’informations, [voir Configurer l’audit avancé dans Microsoft 365](set-up-advanced-audit.md). <p> L’utilisateur envoie un message électronique, répond à un message électronique ou le renvoie.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>||![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -145,7 +145,7 @@ N’oubliez pas qu’un administrateur ayant une autorisation d’accès total M
 
 ****
 
-|Action de boîte aux lettres|Description|Administrateur|Délégué|Propriétaire|
+|Action de boîte aux lettres|Description|Administrateur|Délégué|Owner|
 |---|---|:---:|:---:|:---:|
 |**Créer**|Création d’un élément de calendrier. Notez que la création, l’envoi ou la réception d’un message ne sont pas audités.|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Marque de vérification](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|![Coche](../media/checkmark.png)<sup>\*</sup>|
@@ -313,7 +313,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Pour l’instant, vous ne pouvez pas désactiver l’audit de boîte aux lettres pour les boîtes aux lettres spécifiques lorsque l’audit de boîte aux lettres activé par défaut est activé dans votre organisation. Par exemple, la définition de la propriété de boîte aux lettres *AuditEnabled* sur **False** est ignorée.
 
-Toutefois, vous pouvez toujours utiliser la cmdlet **Set-MailboxAuditBypassAssociation**  dans Exchange Online PowerShell pour empêcher la journalisation de toutes les actions de boîte aux lettres des utilisateurs spécifiés, quel que soit l’endroit où elles se produisent. Par exemple :
+Toutefois, vous pouvez toujours utiliser la cmdlet **Set-MailboxAuditBypassAssociation**  dans Exchange Online PowerShell pour empêcher la journalisation de toutes les actions de boîte aux lettres des utilisateurs spécifiés, quel que soit l’endroit où elles se produisent. Par exemple :
 
 - Les actions du propriétaire de boîte aux lettres effectuées par les utilisateurs contourné ne sont pas enregistrées.
 - Les actions de délégation effectuées par les utilisateurs contourné sur les boîtes aux lettres d’autres utilisateurs (y compris les boîtes aux lettres partagées) ne sont pas enregistrées.
@@ -381,4 +381,4 @@ La valeur **True indique** que l’enregistrement d’audit de boîte aux lettre
 
 - Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention dans le Centre de conformité, les enregistrements du journal d’audit sont conservés pendant la durée définie par la propriété *AuditLogAgeLimit* de la boîte aux lettres (90 jours par défaut). Pour conserver les enregistrements du journal d’audit plus longtemps pour les boîtes aux lettres en attente, vous devez augmenter la valeur *AuditLogAgeLimit de la* boîte aux lettres.
 
-- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée.
+- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Exchange’audit de l’administrateur sont actuellement disponibles uniquement pour l’emplacement par défaut.

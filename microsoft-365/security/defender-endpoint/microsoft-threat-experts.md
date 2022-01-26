@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f49274f6a166bd071ebec470ed26fd2ccd6763ec
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936076"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218992"
 ---
 # <a name="microsoft-threat-experts"></a>Spécialistes des menaces Microsoft
 

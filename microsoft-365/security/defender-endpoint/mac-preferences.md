@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171700"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214152"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -29,7 +29,7 @@ ms.locfileid: "61171700"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
@@ -66,31 +66,19 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
 
-#### <a name="enable--disable-real-time-protection"></a>Activer/désactiver la protection en temps réel
+#### <a name="enforcement-level-for-antivirus-engine"></a>Niveau d’application pour le moteur antivirus
 
-Spécifiez s’il faut activer la protection en temps réel, qui analyse les fichiers à mesure qu’ils sont accessibles.
+Spécifie la préférence d’application du moteur antivirus. Il existe trois valeurs pour définir le niveau d’application :
 
-<br>
-
-****
-
-|Section|Valeur|
-|---|---|
-|**Domaine**|`com.microsoft.wdav`|
-|**Clé**|enableRealTimeProtection|
-|**Type de données**|Valeur booléenne|
-|**Valeurs possibles**|true (par défaut) <p> false|
-|||
-
-#### <a name="enable--disable-passive-mode"></a>Activer/désactiver le mode passif
-
-Spécifiez si le moteur antivirus s’exécute en mode passif. Le mode passif a les implications suivantes :
-
-- La protection en temps réel est désactivée
-- L’analyse à la demande est désactivée
-- La correction automatique des menaces est désactivée
-- Les mises à jour de l’intelligence de la sécurité sont allumées
-- L’icône du menu État est masquée
+- En temps réel ( ) : la protection en temps réel (analyser les fichiers à mesure qu’ils sont `real_time` accessibles) est activée.
+- À la demande ( `on_demand` ) : les fichiers sont analysés uniquement à la demande. Dans les cas ci-après :
+  - La protection en temps réel est désactivée.
+- Passive ( `passive` ) : exécute le moteur antivirus en mode passif. Dans les cas ci-après :
+  - La protection en temps réel est désactivée.
+  - L’analyse à la demande est désactivée.
+  - La correction automatique des menaces est désactivée.
+  - Les mises à jour de l’intelligence de la sécurité sont allumées.
+  - L’icône du menu État est masquée.
 
 <br>
 
@@ -99,10 +87,10 @@ Spécifiez si le moteur antivirus s’exécute en mode passif. Le mode passif a 
 |Section|Valeur|
 |---|---|
 |**Domaine**|`com.microsoft.wdav`|
-|**Clé**|passiveMode|
-|**Type de données**|Valeur booléenne|
-|**Valeurs possibles**|false (par défaut) <p> true|
-|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.67.60 ou supérieure.|
+|**Clé**|enforcementLevel|
+|**Type de données**|Chaîne|
+|**Valeurs possibles**|real_time (par défaut) <p> on_demand <p> passive|
+|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.10.72 ou supérieure.|
 |||
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
@@ -231,7 +219,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 
 ****
 
-|Exclusion|Définition|Exemples|
+|Exclusion|Définition|範例|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
 |Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
@@ -662,8 +650,8 @@ Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propri
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>threatTypeSettings</key>
         <array>
             <dict>
@@ -741,10 +729,8 @@ Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propri
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -789,10 +775,8 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>scanAfterDefinitionUpdate</key>
         <true/>
         <key>scanArchives</key>
@@ -904,6 +888,10 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
 ### <a name="intune-full-profile"></a>Profil complet Intune
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -945,10 +933,8 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>scanAfterDefinitionUpdate</key>
                     <true/>
                     <key>scanArchives</key>
@@ -1055,6 +1041,8 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## <a name="property-list-validation"></a>Validation de liste de propriétés

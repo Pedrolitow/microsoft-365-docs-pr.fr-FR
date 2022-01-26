@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Découvrez les fonctionnalités multigé géographiques dans Exchange Online, telles que les limitations de fonctionnalités et l’emplacement des boîtes aux lettres.
-ms.openlocfilehash: 8938808a857a70a865678589e9a70e4ee0eb083c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c45c5c8e8856206fc2afc3e08005821f24dcd028
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177290"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214092"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Lorsque la valeur de la propriété **PreferredDataLocation** n’est pas spécifiée sur un utilisateur, quand vous approvisionnez la boîte aux lettres, celle-ci est configurée dans l’emplacement géographique central.
 
-- Si le code **PreferredDataLocation** est incorrect (par exemple, une faute de frappe DE TYPE AU lieu de NAM), la boîte aux lettres est mise en service dans l’emplacement géographique central.
+- Si le code **PreferredDataLocation** est incorrect (par exemple, une faute de frappe DE TYPE au lieu de NAM), la boîte aux lettres est mise en service dans l’emplacement géographique central.
 
 **Remarque** : les fonctionnalités multigéographiques et les réunions Skype Entreprise Online hébergées au niveau régional utilisent toutes deux la propriété **PreferredDataLocation** sur les objets utilisateur pour localiser les services. Si vous configurez les valeurs de **PreferredDataLocation** sur des objets utilisateur pour des réunions organisées par région, la boîte aux lettres des utilisateurs correspondants est automatiquement déplacée vers l’emplacement géographique spécifié après activation de la fonction multigéographique sur le client Microsoft 365.
 
@@ -59,4 +59,4 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Les dossiers publics sont pris en charge dans les organisations multigéographiques. Toutefois, ils doivent rester dans l’emplacement géographique central. Vous ne pouvez pas déplacer des dossiers publics vers des emplacements géographiques satellites.
 
-- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md).
+- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Exchange d’audit de l’administrateur sont également disponibles uniquement pour l’emplacement par défaut. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md).

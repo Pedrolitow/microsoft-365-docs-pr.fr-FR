@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300429"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214130"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -41,7 +41,7 @@ Le service Defender for Endpoint est constamment mis à jour pour inclure de nou
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
 > [!TIP]
-> Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-endpoint.md)
 

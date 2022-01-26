@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
-ms.date: 04/07/2021
-ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.date: 01/24/2022
+ms.openlocfilehash: 888e371cb81475b385ecd9d5cd3a3898039a5e94
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371279"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214104"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -102,41 +102,8 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 4. Dans le **volet Modifier l’adresse d’utilisation du service,** mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
 
-## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Modifier l'adresse de messagerie de secours à laquelle les notifications de facturation sont envoyées
 
-Par défaut, les notifications de facturation de votre organisation sont envoyées à l’adresse de messagerie Microsoft et à l’adresse de messagerie de remplacement de chaque administrateur global et de facturation de votre organisation. Les administrateurs peuvent modifier leur adresse de courrier de secours en mettant à jour leurs informations de profil.
-  
-1. Connectez-vous à Microsoft 365 avec votre compte professionnel ou scolaire en tant qu'administrateur général. [Découvrez comment vous connecter](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
-
-2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
-  
-3. Sélectionnez **Informations personnelles.**
-  
-4. Dans la **zone Détails du contact,** sélectionnez **Modifier.**
-
-5. Dans la **zone de courrier de** remplacement, tapez l’adresse de messagerie de remplacement que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
-  
-## <a name="change-the-alternate-email-address-for-another-admin"></a>Modifier l'adresse de messagerie de secours pour un autre administrateur
-
-Vous pouvez également modifier l'adresse de messagerie de secours d'autres administrateurs généraux et de facturation de votre organisation.
-  
-::: moniker range="o365-worldwide"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
-
-::: moniker-end
-
-2. Dans la page **Notifications de facturation,** sélectionnez l’administrateur à modifier.
-
-3. Dans le **volet Modifier les rôles** d’utilisateur, tapez l’adresse de messagerie de remplacement que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
-
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture](understand-your-invoice2.md) (article)\
