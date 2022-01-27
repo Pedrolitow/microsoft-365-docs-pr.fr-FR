@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 133bdc1e14c9e4b0c93ea190b4a6c58a529b2f16
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940306"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244714"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -227,5 +227,5 @@ Tous les autres détails connexes sont également affichés, par exemple, date/h
 ## <a name="see-also"></a>Voir aussi
 
 - [Prendre des mesures de réponse sur un fichier](respond-file-alerts.md)
-- [Actions de réponse manuelles dans Microsoft Defender pour endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Actions de réponse manuelles dans Microsoft Defender pour endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Inaccuracy de rapport](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

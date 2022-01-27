@@ -1,5 +1,5 @@
 ---
-title: Intégrer des Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
+title: Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -15,21 +15,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1454afceb8537cdb88b75f99924a5d6475e117cc
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950826"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244894"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Intégrer des Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
+# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
 
 **S’applique à :**
 
-- [Microsoft 365 protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
+- [Protection contre la perte de données de point de terminaison (DLP) pour Microsoft 365](./endpoint-dlp-learn-about.md)
 - [Gestion des risques internes](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer des appareils. Microsoft 365 protection des informations prend en charge les appareils mobiles en fournissant OMA-URIs pour créer des stratégies pour gérer les appareils.
+Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer des appareils. Microsoft 365 protection des informations mobiles prend en charge les appareils mobiles en OMA-URIs de créer des stratégies pour gérer les appareils.
 
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -55,11 +55,13 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **l’intégration**  >  **de l’appareil.**
 
-3. Dans le **champ Méthode de déploiement,** sélectionnez Gestion des périphériques **mobiles /Microsoft Intune**.
+3. Dans le **champ Méthode de déploiement,** sélectionnez **Gestion des périphériques mobiles /Microsoft Intune**.
 
 4. Cliquez **sur Télécharger le package,** puis enregistrez .zip fichier.
 
 5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
+
+
 
 6. Utilisez la stratégie Microsoft Intune de configuration personnalisée pour déployer les paramètres OMA-URI pris en charge suivants.
 
@@ -68,11 +70,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
     Date type: String
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
-
-Pour plus d’informations Microsoft Intune paramètres de stratégie, voir [Windows 10 paramètres de](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)stratégie dans Microsoft Intune .
+> [!NOTE]
+> Si Microsoft Defender pour le point de  terminaison est déjà configuré, vous pouvez activer l’intégration de l’appareil et l’étape 6 n’est plus nécessaire.
 
 > [!NOTE]
-> La **stratégie État d’état d’état des appareils** déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
+> La **stratégie État d’état d’état des** appareils déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.

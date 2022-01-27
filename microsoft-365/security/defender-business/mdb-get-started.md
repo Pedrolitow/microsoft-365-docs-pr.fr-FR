@@ -16,13 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
+- m365initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 5df69a578c5f4d3db7c366a0369e7efdbf934b79
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 38c43f8b097ceff26ff0a5c354dca3f4e2c4ae2f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61904784"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245254"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Commencer à utiliser Microsoft Defender pour les entreprises (prévisualisation)
 
@@ -54,7 +55,7 @@ Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder
 |:---|:---|
 | **Accueil** | Vous prend à votre page d’accueil dans Microsoft 365 Defender. La page d’accueil inclut des cartes qui mettent en évidence les menaces actives détectées, ainsi que des recommandations pour sécuriser les données et les appareils de votre entreprise. <br/><br/>Recommandations sont inclus dans Defender for Business (prévisualisation) peut économiser du temps et des efforts pour votre équipe de sécurité. Recommandations sont basées sur les meilleures pratiques du secteur. Pour en savoir plus sur les recommandations, voir [Recommandations en](../defender-endpoint/tvm-security-recommendation.md)matière de sécurité - Gestion des menaces et des vulnérabilités . |
 | **Incidents** | Vous permet d’avoir accès à votre liste des incidents récents. Lorsque des alertes sont déclenchées, des incidents sont créés. Un incident peut inclure plusieurs alertes. Veillez à passer régulièrement en revue vos incidents. <br/><br/>Pour en savoir plus sur les incidents, voir Afficher et [gérer les incidents dans Microsoft Defender pour Entreprises (prévisualisation).](mdb-view-manage-incidents.md)|
-| **Centre de actions** | Vous place dans votre liste d’actions de réponse, y compris les actions terminées ou en attente. <br/>- Sélectionnez **l’onglet** Historique pour voir les actions qui ont été entreprises. Certaines actions sont prises automatiquement ; d’autres sont prises manuellement ou se terminent une fois qu’elles sont approuvées. <br/>- Sélectionnez **l’onglet En** attente pour afficher les actions qui nécessitent une approbation pour continuer. <br/><br/>Pour en savoir plus sur le centre de mise en œuvre, consultez La révision des [actions de correction dans le centre de actions.](mdb-review-remediation-actions.md) |
+| **Centre de notifications** | Vous place dans votre liste d’actions de réponse, y compris les actions terminées ou en attente. <br/>- Sélectionnez **l’onglet** Historique pour voir les actions qui ont été entreprises. Certaines actions sont prises automatiquement ; d’autres sont prises manuellement ou se terminent une fois qu’elles sont approuvées. <br/>- Sélectionnez **l’onglet En** attente pour afficher les actions qui nécessitent une approbation pour continuer. <br/><br/>Pour en savoir plus sur le centre de mise en œuvre, consultez La révision des [actions de correction dans le centre de actions.](mdb-review-remediation-actions.md) |
 | **Analyses de menaces** | Vous donne un aperçu des menaces actuelles et vous offre une vue d’un coup d’œil de votre paysage des menaces. L’analyse des menaces inclut également des rapports et des informations de chercheurs en matière de sécurité Microsoft. <br/><br/>Pour en savoir plus sur l’analyse des menaces, voir Suivre et répondre aux menaces émergentes par le biais de [l’analyse des menaces.](../defender-endpoint/threat-analytics.md) |
 | **Degré de sécurisation** | Fournit une représentation de la position de sécurité de votre entreprise et propose des suggestions pour l’améliorer.<br/><br/>Pour en savoir plus sur le score de sécurisation, voir [Le Score de sécurisation Microsoft pour les appareils.](../defender-endpoint/tvm-microsoft-secure-score-devices.md) |
 | **Learning hub** | Permet d’accéder à des formations sur la sécurité et à d’autres ressources par le biais de parcours d’apprentissage inclus dans votre abonnement. Vous pouvez filtrer par produit, niveau de compétence, rôle, etc. Le hub Learning peut aider votre équipe de sécurité à se développer sur les fonctionnalités de sécurité & fonctionnalités dans Defender pour Entreprise (prévisualisation) et d’autres offres Microsoft, telles que Microsoft Defender pour [Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](../office-365-security/defender-for-office-365.md).  |
@@ -66,7 +67,7 @@ Utilisez la barre de navigation sur le côté gauche de l’écran pour accéder
 | **Rapports** | Répertorie vos rapports de sécurité disponibles. Ces rapports vous permettent d’afficher vos tendances de sécurité, d’afficher des détails sur les détections de menaces et les alertes, et d’en savoir plus sur les appareils vulnérables de votre entreprise. |
 | **État d'intégrité** | Vous permet d’afficher l’état d’état de votre service et de planifier les modifications à venir. <br/>- Sélectionnez **l’état du** service pour afficher l’état d’Microsoft 365 services inclus dans l’abonnement de votre entreprise. <br/>- **Sélectionnez centre de messages** pour en savoir plus sur les modifications planifiées et à quoi s’attendre.  |
 | **Autorisations & rôles** | Vous permet d’attribuer des autorisations aux personnes de votre entreprise qui gèreront votre sécurité et afficheront les incidents et les rapports dans le portail Microsoft 365 Defender. Vous permet également de configurer et de gérer des groupes d’appareils pour intégrer les appareils de votre entreprise et d’affecter vos stratégies de protection contre les menaces.  |
-| **Paramètres** | Permet de modifier les paramètres pour le portail Microsoft 365 Defender et Microsoft Defender entreprise (prévisualisation). Par exemple, vous pouvez intégrer (ou hors-carte) et les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression des alertes, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
+| **Settings** | Permet de modifier les paramètres pour le portail Microsoft 365 Defender et Microsoft Defender entreprise (prévisualisation). Par exemple, vous pouvez intégrer (ou hors-carte) et les appareils de votre entreprise (également appelés points de terminaison). Vous pouvez également définir des règles, telles que des règles de suppression des alertes, et configurer des indicateurs pour bloquer ou autoriser certains fichiers ou processus.  |
 | **Autres ressources** | Accédez à d’autres portails, tels que Azure Active Directory. N’oubliez pas que le Microsoft 365 Defender web doit répondre à vos besoins sans que vous n’exigeiez que vous accédiez à d’autres portails. |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Compléter un module d’apprentissage sur les incidents et les actions de réponse

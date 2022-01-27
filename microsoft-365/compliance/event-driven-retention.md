@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: a16daf7e360260ecbdc4e0a16e291cd3cd411838
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158213"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241442"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
@@ -89,7 +89,7 @@ Flux de travail général pour la rétention basée sur un événement :
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
-Pour créer et configurer votre étiquette de rétention, consultez les instructions pour [Créer des étiquettes de rétention](./create-apply-retention-labels.md#step-1-create-retention-labels). Mais spécifique à la rétention basée sur les événements, sur la page **Définir** les paramètres de rétention de l'assistant Créer une étiquette de rétention, après **Démarrer la période de rétention basée sur**, sélectionnez l'un des types d'événement par défaut dans la liste déroulante ou créez le vôtre en sélectionnant **Créer un nouvel événement taper** :
+Pour créer et configurer votre étiquette de rétention, consultez les instructions pour [Créer des étiquettes de rétention](file-plan-manager.md#create-retention-labels) pour la gestion des enregistrements, ou [Comment créer des étiquettes de rétention pour la gouvernance des informations](create-retention-labels-information-governance.md). Mais pour ce qui spécifique à la rétention basée sur les événements, dans la page **Définissez les paramètres de rétention** lorsque vous créez l’étiquette de rétention, après **Démarrer la période de rétention en fonction de**, sélectionnez l’un des types d’événements par défaut dans la liste déroulante ou créez le vôtre en sélectionnant **Créer un type d’événement**:
 
 ![Créer un nouveau type d’événement pour une étiquette de rétention.](../media/SPRetention6.png)
 

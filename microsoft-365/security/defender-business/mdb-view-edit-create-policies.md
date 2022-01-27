@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 368266545b78cf86ab6f76f35239671bb28db2be
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 1bba8ee25e172cf893bd337e3f15198110873e1d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61944833"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245290"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)
 
@@ -122,7 +123,7 @@ Dans Microsoft Defender entreprise (prévisualisation), les paramètres de sécu
    - Lorsque vous êtes prêt à continuer, choisissez **Créer une stratégie.**
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Choisissez une ou plusieurs des tâches suivantes :
 

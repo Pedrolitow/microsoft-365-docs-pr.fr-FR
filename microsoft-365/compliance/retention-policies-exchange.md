@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: e757bc41b7291f7a71ba44aec6bb6dc0ac917924
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f92df4bd25ddeff44472865c9ae221014050afaa
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192174"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242022"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -97,7 +97,7 @@ Lorsque les paramètres de rétention ne s’appliquent plus, car les données s
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous n’avez jamais configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md).
+Si vous débutez avec la configuration de la rétention dans Microsoft 365, consultez [Démarrage avec la gouvernance des informations](get-started-with-information-governance.md).
 
 Si vous êtes prêt à configurer une stratégie ou une étiquette de rétention pour Exchange, consultez les instructions suivantes :
 - [Créer et configurer des stratégies de rétention](create-retention-policies.md)

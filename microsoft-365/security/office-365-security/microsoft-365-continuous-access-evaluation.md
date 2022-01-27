@@ -9,7 +9,6 @@ ms.topic: article
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
@@ -19,18 +18,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f0fc824b4498e2cde0e0c024902289f056396f55
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 376b15a6faa84b26ab7e48356e54c0456da16072
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035713"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244666"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Évaluation de l’accès continu pour Microsoft 365
-
-**S’applique à**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
 Les services cloud modernes qui utilisent OAuth 2.0 pour l’authentification s’appuient traditionnellement sur l’expiration du jeton d’accès pour révoquer l’accès d’un compte d’utilisateur. En pratique, cela signifie que même si un administrateur révoque l’accès d’un compte d’utilisateur, l’utilisateur aura toujours accès jusqu’à l’expiration du jeton d’accès, qui, pour Microsoft 365 par défaut, était jusqu’à une heure après l’événement de révocation initial.
 

@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372767"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241406"
 ---
-# <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
+# <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -113,6 +113,36 @@ Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultati
 
 ![Créer un descripteur de plan de fichier pour l’approvisionnement/citation.](../media/file-plan-descriptors-create.png)
 
+## <a name="create-retention-labels"></a>Créer des étiquettes de rétention
+
+1. Dans la page **Plan de fichiers**, sélectionnez **+ Créer une étiquette** >  **Étiquette de rétention**
+
+2. Suivez les invites pour le processus de configuration.
+    
+    
+    
+    Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
+
+3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Enregistrez simplement l’étiquette pour l'instant**, puis sélectionnez **Terminé**.
+
+4. Répétez ces étapes pour créer d’autres étiquettes.
+
+## <a name="edit-retention-labels"></a>Modifier les étiquettes de rétention
+
+Pour modifier une étiquette de rétention existante, sélectionnez-la dans la page **Plan de fichiers**, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer le processus de Modifier la rétention qui vous permet de modifier la description de l’étiquette et les paramètres éligibles.
+
+Certains paramètres ne peuvent pas être modifiés après la création et l’enregistrement de l’étiquette, notamment :
+- Nom de l’étiquette de rétention et paramètres de rétention à l’exception de la période de rétention. Cependant, vous ne pouvez pas modifier la période de rétention lorsque la période de rétention est basée sur la période d’étiquetage des éléments.
+- Option de marquage des éléments comme enregistrement.
+
+## <a name="delete-retention-labels"></a>Supprimer des étiquettes de rétention
+
+Vous pouvez supprimer les étiquettes de conservation qui ne sont pas actuellement incluses dans les politiques d'étiquettes de conservation [publiées](create-apply-retention-labels.md) ou [appliquées](apply-retention-labels-automatically.md) automatiquement, qui ne sont pas configurées pour la conservation basée sur des événements, ou marquer les éléments comme des documents réglementaires.
+
+Pour les étiquettes de rétention que vous pouvez supprimer, si elles ont été appliquées à des éléments, la suppression échoue et un lien vers l’explorateur de contenu permettant d’identifier les éléments étiquetés s’affiche.
+
+Toutefois, l’affichage des éléments étiquetés par l’explorateur de contenu peut prendre deux jours maximum. Dans ce scénario, l’étiquette de rétention pourrait être supprimée sans l’affichage du lien vers l’explorateur de contenu.
+
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exporter toutes les étiquettes de rétention pour analyse ou activer les révisions en mode hors connexion
 
 Depuis le plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
@@ -186,6 +216,6 @@ Utilisez les informations suivantes pour vous aider à remplir le modèle télé
 
 ## <a name="next-steps"></a>Prochaines étapes
 
-Pour plus d’informations sur la création, la modification et l’application d’étiquettes de rétention, voir les deux scénarios suivants :
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+Maintenant que vous avez créé des étiquettes de rétention, elles sont prêtes à être ajoutées aux éléments en les publiant ou en les appliquant automatiquement :
+- [Publier des étiquettes de rétention et les appliquer dans des applications](create-apply-retention-labels.md)
 - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

@@ -20,19 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 3bb7b8135e178ac219b56afd67e466976487e3cb
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 90bdb8dbbb90009b10015591732d0257789884cd
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62008996"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244390"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Stratégies courantes d’accès aux appareils et aux identités de confiance zéro
-
-**S’applique à**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- Azure
 
 Cet article décrit les stratégies d’accès aux appareils et aux identités Zero Trust recommandées pour sécuriser l’accès aux services cloud Microsoft 365, y compris les applications sur site publiées avec le proxy d’application Azure Active Directory (Azure AD).
 
@@ -348,8 +343,8 @@ Pour les appareils Enterprise profils de travail Android :
 
 |Niveau de protection  |Stratégie d’appareil |Plus d’informations  |
 |---------|---------|---------|
-|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |S/O         |
-|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |S/O         |
+|Point de départ     |Profil professionnel : sécurité de base (niveau 1)      |N/A         |
+|Entreprise     |Profil professionnel : sécurité de base (niveau 1)         |N/A         |
 |Point de départ     |Gestion complète : sécurité renforcée (niveau 2)       |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Entreprise     |Gestion complète : sécurité renforcée (niveau 2)         |Les paramètres de stratégie appliqués au niveau 2 incluent tous les paramètres de stratégie recommandés pour le niveau 1 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 1.         |
 |Sécurité spécialisée     |Haute sécurité (Niveau 3)         |Les paramètres de stratégie appliqués au niveau 3 incluent tous les paramètres de stratégie recommandés pour les niveaux 1 et 2 et ajoutent ou mettent uniquement à jour les paramètres de stratégie ci-dessous pour implémenter davantage de contrôles et une configuration plus sophistiquée que le niveau 2.         |

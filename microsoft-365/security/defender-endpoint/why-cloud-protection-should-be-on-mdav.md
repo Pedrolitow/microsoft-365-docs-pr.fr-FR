@@ -15,20 +15,22 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 10/22/2021
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 83c1165cee576898b3f32242aebcbb3436691b8e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection:
+- m365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 0dc1279f59ac272031067c415354f1f615ead205
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167201"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244990"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Pourquoi la protection cloud doit-elle être activée pour Antivirus Microsoft Defender
 
 **S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus Microsoft Defender
 
 Antivirus Microsoft Defender protection cloud permet de se protéger contre les programmes malveillants sur vos points de terminaison et sur votre réseau. Nous vous recommandons de maintenir la protection cloud activée, car certaines fonctionnalités et fonctionnalités de sécurité dans Microsoft Defender pour le point de terminaison fonctionnent uniquement lorsque la protection cloud est activée. 
@@ -49,7 +51,7 @@ Le tableau suivant récapitule les fonctionnalités qui dépendent de la protect
 | Indicateurs de compromis (IOC) | Microsoft Defender pour endpoint Plan 2 (autonome ou inclus dans un plan comme Microsoft 365 E5) | Les IoCs dans Defender pour point de terminaison peuvent être configurés pour définir la détection, la prévention et l’exclusion des entités. Par exemple, les indicateurs « autoriser » peuvent être utilisés pour définir des exceptions pour Antivirus Microsoft Defender analyses et des actions de correction dans Defender for Endpoint. Autre exemple : les indicateurs « alerte et blocage » peuvent être utilisés pour empêcher l’exécution de fichiers ou de processus, et pour suivre ces activités avec des alertes qui sont consultables dans le portail Microsoft 365 Defender. <br/><br/>Pour plus d’informations, voir [Créer des indicateurs.](manage-indicators.md)    |
 
 > [!TIP]
-> Pour en savoir plus sur les plans Defender pour les points de terminaison, voir [Microsoft Defender pour Endpoint Plan 1 (prévisualisation) et Plan 2](defender-endpoint-plan-1-2.md).
+> Pour en savoir plus sur les plans Defender pour les points de terminaison, consultez [Microsoft Defender pour Endpoint Plan 1 et Plan 2.](defender-endpoint-plan-1-2.md)
 
 ## <a name="next-steps"></a>Prochaines étapes
 

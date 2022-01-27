@@ -14,13 +14,15 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: e05655aa088a1ad87b9452f255c5b44a31647315
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: b0d2edb53df4b12c66ad010e536ede033996810f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941191"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244606"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Microsoft Defender pour endpoint Plan 1 et Plan 2
 
@@ -44,7 +46,7 @@ Le tableau suivant décrit ce qui est inclus dans chaque plan à un niveau élev
 | [Prise en charge Windows 10, iOS, Android OS et macOS](defender-endpoint-plan-1.md#cross-platform-support) | Prise en charge Windows plateformes (client et serveur) et non Windows client<br/> (macOS, iOS, Android et Linux) |
 | Pour essayer Defender pour endpoint Plan 1, visitez [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) . | Pour essayer Defender pour endpoint Plan 2, visitez [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) . |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Obtenir une vue d’ensemble de Microsoft Defender pour Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Configurer Defender pour Endpoint Plan 1](mde-p1-setup-configuration.md)

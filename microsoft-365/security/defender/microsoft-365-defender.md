@@ -18,17 +18,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365-defender
+- m365solution-scenario
+- m365solution-overview
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d94cae13c4379061ce95b17d284e27d435cd9918
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 691db83111ba14e9fed7eed36a819479bda15ff5
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942571"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245314"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -108,7 +111,7 @@ Microsoft 365 Defender licences doivent être satisfaites avant de pouvoir activ
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 
-## <a name="the-microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
+## <a name="the-microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
 Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender combine</a> la protection, la détection, l’examen et la  réponse aux e-mails, à la *collaboration,* à l’identité, aux appareils et aux menaces d’application, à un endroit central.
 

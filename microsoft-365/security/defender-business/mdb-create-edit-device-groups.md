@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aeccd145f8bc7e5dd65ea98696fd10a63fc86def
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365initiative-defender-business
+ms.openlocfilehash: 780173c292fd218564a203377cb18cd274e26de2
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508358"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244834"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Groupes d’appareils dans Microsoft Defender entreprise (prévisualisation)
 
@@ -75,7 +76,7 @@ Actuellement, dans Defender pour Entreprises (prévisualisation), vous pouvez cr
 
 10. Dans **l’étape Examiner** votre stratégie, examinez tous les paramètres, a apporter les modifications nécessaires, puis choisissez Créer une stratégie **ou** mettre à jour la **stratégie.**
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Choisissez une ou plusieurs des tâches suivantes :
 

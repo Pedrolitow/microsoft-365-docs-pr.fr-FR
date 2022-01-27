@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 253386571d96c5d2b0e4a4f85896e28eec400f8f
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+- m365initiative-defender-business
+ms.openlocfilehash: e848fdb2625d1acc9d3d68363d71707237858c4c
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597566"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245398"
 ---
 # <a name="microsoft-defender-for-business-preview-requirements"></a>Conditions requises pour Microsoft Defender pour les entreprises (prévisualisation)
 

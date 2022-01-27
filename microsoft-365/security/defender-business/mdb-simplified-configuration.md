@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1771ca1bd4a3b941d7fbb22d4dfd14d56510c416
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 221879ee28a2a358074b4ced918a8f1479ca8968
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940589"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244678"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business-preview"></a>Processus de configuration simplifié dans Microsoft Defender entreprise (prévisualisation)
 
@@ -63,7 +64,7 @@ Le tableau suivant décrit chaque expérience :
 
 Defender for Business (prévisualisation) est conçu pour fournir une protection renforcée tout en vous faisant gagner du temps et des efforts dans la configuration de vos paramètres de sécurité. L’expérience simplifiée dans le portail Microsoft 365 Defender facilite l’intégration des appareils et leur gestion. En outre, les stratégies par défaut sont incluses afin que les appareils de votre entreprise soient protégés dès qu’ils sont intégrés. Vous pouvez conserver vos paramètres par défaut tels qu’ils sont ou apporter des modifications en fonction des besoins de votre entreprise. Vous pouvez également ajouter de nouvelles stratégies pour gérer les appareils selon vos besoins.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 >
 > **Avez-vous un peu de temps ?**

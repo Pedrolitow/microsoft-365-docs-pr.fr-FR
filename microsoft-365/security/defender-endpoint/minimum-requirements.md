@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a3505e3fb77b4286eb87445380713b2831beaf
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041110"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245170"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -35,11 +35,11 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 
 > [!TIP]
 >
-> - Cet article décrit les conditions minimales requises pour Microsoft Defender pour Endpoint Plan 2. Si vous recherchez des informations sur Defender pour Endpoint Plan 1 (prévisualisation), voir [Requirements for Defender for Endpoint Plan 1 (preview).](mde-p1-setup-configuration.md#review-the-requirements)
+> - Cet article décrit les conditions minimales requises pour Microsoft Defender pour Endpoint Plan 2. Si vous recherchez des informations sur Defender pour Endpoint Plan 1, voir [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
 > - Découvrez les dernières améliorations apportées à Defender for Endpoint : [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
-## <a name="licensing-requirements"></a>Conditions d'octroi de licence
+## <a name="licensing-requirements"></a>Critères de licence
 Pour plus d’informations sur les licences requises pour Microsoft Defender pour endpoint, voir Microsoft Defender pour les informations de licence [de point de terminaison.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)
 
 
@@ -63,8 +63,8 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 
 - Windows 7 SP1 Enterprise ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
-- Windows 8.1 Entreprise
-- Windows 8.1 Professionnel
+- Windows 8,1 Entreprise
+- Windows 8.1 Professionnel
 - Windows 11 Entreprise
 - Windows 11 Éducation
 - Windows 11 Professionnel
@@ -72,7 +72,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
 - Windows 10 Éducation
-- Windows 10 Professionnel
+- Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
   - Windows Server 2008 R2 SP1[(EsU](/windows-server/get-started/extended-security-updates-deploy)est nécessaire pour la prise en charge)

@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 62036779aec92b08679d1213c1605b42388760af
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: ad0b7a3aa9f68c44a594a9a27906f2fb765bd121
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940577"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244846"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Afficher et gérer les incidents dans Microsoft Defender entreprise (prévisualisation)
 

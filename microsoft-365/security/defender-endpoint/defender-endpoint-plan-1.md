@@ -13,14 +13,16 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156411"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245050"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1
 
@@ -76,8 +78,8 @@ Les actions de réponse manuelles sont des actions que votre équipe de sécurit
 
 | Fichier/Périphérique | Opération | Description |
 |:---|:---|:---|
-| Appareil | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
-| Appareil | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
+| Device | Exécuter une analyse antivirus | Démarre une analyse antivirus. Si des menaces sont détectées sur l’appareil, ces menaces sont souvent traitées lors d’une analyse antivirus. |
+| Device | Isoler l’appareil | Déconnecte un appareil du réseau de votre organisation tout en conservant la connectivité à Defender for Endpoint. Cette action vous permet de surveiller l’appareil et de prendre des mesures supplémentaires si nécessaire. |
 | Fichier | Arrêter et mettre en quarantaine |Arrête l’exécution des processus et met en quarantaine les fichiers associés. |
 | Fichier | Ajouter un indicateur pour bloquer ou autoriser un fichier | Les indicateurs de blocage empêchent la lecture, l’écriture ou l’exécution de fichiers exécutables portables sur des appareils. <p>Les indicateurs d’autoriser empêchent le blocage ou la correction des fichiers. |
 
@@ -118,7 +120,7 @@ Avec l’accès contrôlé aux dossiers, vous obtenez une atténuation par ranso
 
 Pour plus d’informations, voir [Protéger les dossiers importants avec un accès contrôlé aux dossiers.](controlled-folders.md)
 
-### <a name="device-control"></a>Contrôle des appareils
+### <a name="device-control"></a>Contrôle d’appareil
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
@@ -129,7 +131,7 @@ Pour en savoir plus, [consultez Les périphériques USB de contrôle et les supp
 Grâce à la protection web, vous pouvez protéger les appareils de votre organisation contre les menaces web et le contenu indésirable. La protection Web inclut la protection contre les menaces web et le filtrage de contenu web.
 
 - [La protection contre](web-threat-protection.md) les menaces web empêche l’accès aux sites de hameçonnage, aux vecteurs de programmes malveillants, aux sites d’exploitation, aux sites non protégés ou à faible réputation et aux sites que vous bloquez explicitement.
-- [Le filtrage de contenu Web](web-content-filtering.md) (prévisualisation) empêche l’accès à certains sites en fonction de leur catégorie. Les catégories peuvent inclure du contenu pour adultes, des sites de divertissement, des sites de responsabilité juridique, etc.
+- [Le filtrage de contenu Web](web-content-filtering.md) empêche l’accès à certains sites en fonction de leur catégorie. Les catégories peuvent inclure du contenu pour adultes, des sites de divertissement, des sites de responsabilité juridique, etc.
 
 Pour en savoir plus, consultez [la protection web.](web-protection-overview.md)
 
@@ -167,7 +169,7 @@ Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overvi
 
 Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
-### <a name="reporting"></a>Rapports
+### <a name="reporting"></a>Reporting
 
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 

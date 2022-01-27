@@ -17,17 +17,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-incidentresponse
+- m365solution-scenario
+- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: abd075ae76eefc4a86d3e99471f092b3f4f03b34
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: a8ade86c701b35cf8526bf51fafaacaacaa628ec
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724813"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245242"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Examiner et répondre à l’Microsoft 365 Defender
 
@@ -52,7 +55,7 @@ Pour chaque incident, utilisez votre flux de travail de réponse aux incidents p
 
 ## <a name="automated-investigation-and-remediation"></a>Investigation et résolution automatiques
 
-Si votre organisation utilise Microsoft 365 Defender, votre équipe des opérations de sécurité reçoit une alerte dans le portail Microsoft 365 Defender chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux sans fin des menaces qui peuvent survenir, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à traiter les menaces plus efficacement.
+Si votre organisation utilise Microsoft 365 Defender, votre équipe des opérations de sécurité reçoit une alerte dans le portail Microsoft 365 Defender chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux sans fin des menaces qui peuvent survenir, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à gérer les menaces plus efficacement et efficacement.
 
 Lorsqu’une enquête automatisée se termine, un verdict est atteint pour chaque élément de preuve d’un incident impliqué. Selon le verdict, les actions de correction sont identifiées. Dans certains cas, des actions de correction sont prises automatiquement . dans d’autres cas, les actions de correction attendent l’approbation du centre Microsoft 365 Defender actions. 
 

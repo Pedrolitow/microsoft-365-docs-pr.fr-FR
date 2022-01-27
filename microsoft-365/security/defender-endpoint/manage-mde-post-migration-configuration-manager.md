@@ -15,15 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-scenario
+- m365initiative-defender-endpoint
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 1da8a079016b09b9398d48be85f7815adf2998da
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: f7c43c0c72e3505608e3bd656dc7819bdd5ea9fd
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221520"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244978"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender for Endpoint avec Configuration Manager
 

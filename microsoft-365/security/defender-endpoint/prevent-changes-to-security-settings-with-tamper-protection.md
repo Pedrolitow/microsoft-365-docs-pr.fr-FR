@@ -18,13 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.date: 01/18/2022
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 6cab8e776bea3d9317794df9f96e44610948a0a1
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: dd3bbc2ef37879dd90509de35c45c8aa0c5aa9e3
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156195"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245374"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -40,7 +42,7 @@ La protection contre la falsification est disponible pour les appareils qui exé
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server, version 1803 ou ultérieure
-- Windows Server 2016
+- Windows Server 2016
 - Windows Server 2012 R2
 
 > [!NOTE]
@@ -121,7 +123,7 @@ La protection contre la falsification peut être allumée ou désactivée pour v
   - Windows Server 2019
   - Windows Server 2022
   - Windows Server, version 1803 ou ultérieure
-  - Windows Server 2016
+  - Windows Server 2016
   - Windows Server 2012 R2
 
 Pour plus d’informations sur les publication, [voir Windows 10 de publication.](/windows/release-health/release-information)
@@ -251,7 +253,7 @@ La protection contre la falsification s’intègre aux fonctionnalités [& gesti
 
 Pour en savoir plus sur la gestion & des menaces et des [vulnérabilités,](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management)voir Informations sur le tableau de bord - Gestion des menaces et des vulnérabilités .
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre la falsification ?
 

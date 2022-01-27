@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti des entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560431"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245098"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 
@@ -83,7 +83,7 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 |Office conseil de stratégie des clients WAC    |Pris en charge         |
 |OWA conseil de stratégie     |non pris en charge         |
 |Outlook conseil de stratégie     |non pris en charge |
-|Points de terminaison (Windows 10 périphériques)     |non pris en charge  |
+|Points de terminaison (Windows 10 périphériques)     |Pris en charge  |
 |Exchange transport     |non pris en charge |
 |OneDrive Entreprise données au repos     |Pris en charge         |
 |SharePoint données au repos en ligne     |Pris en charge         |
@@ -105,7 +105,7 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 |SharePoint données au repos en ligne|Pris en charge|
 |Scanneur Azure Information Protection (AIP)|non pris en charge|
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 |Problème  |Impact  |
 |---------|---------|

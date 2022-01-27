@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,13 +15,14 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 42cd947dec6e954ae675cda233dc4126c2bb2b39
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365initiative-defender-business
+- m365-security-compliance
+ms.openlocfilehash: b2337ddf5367242d077fb2f75fa45eaa6262e6d9
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507433"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245110"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender entreprise (prévisualisation) à Microsoft 365 Business Premium
 
@@ -53,7 +54,7 @@ Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurit�
 | Fonctionnalité/fonctionnalité | [Microsoft Defender pour Les Entreprises](mdb-overview.md) (prévisualisation) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | Protection de la messagerie | Oui[(analyse du courrier](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) électronique Antivirus Microsoft Defender) | Oui ([Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)) |
-| Protection contre lepam | Oui (pour les appareils) | Oui (pour Microsoft 365 de courrier électronique, tels que les messages et les pièces jointes) |
+| Protection anti-courrier indésirable | Oui (pour les appareils) | Oui (pour Microsoft 365 de courrier électronique, tels que les messages et les pièces jointes) |
 | Protection anti-programme malveillant | Oui (pour les appareils) | Oui (pour Microsoft 365 de courrier électronique, tels que les messages et les pièces jointes) |
 | [Protection de nouvelle génération](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protection antivirus et anti-programme malveillant) | Oui (Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures)  | Oui (Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures) |
 | [Réduction de la surface d’attaque](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(règles de réduction de la surface d’attaque et autres protections)  | Oui (règles de réduction de la surface d’attaque intégrées Windows 10 et ultérieures, ainsi que les fonctionnalités gérées de manière centralisée) | Oui (règles de réduction de la surface d’attaque intégrées Windows 10 et ultérieures) |
@@ -91,7 +92,7 @@ Defender pour les entreprises (prévisualisation) apporte des fonctionnalités d
 
 (<a id="fn3">3</a>) Pendant le programme d’aperçu, les Windows clients sont pris en charge dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Voir les conditions requises pour Microsoft Defender pour les entreprises (prévisualisation)](mdb-requirements.md)
 

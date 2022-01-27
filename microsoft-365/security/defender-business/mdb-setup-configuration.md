@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3453645f9c28149bedf617e21f28c89d828028d6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 57d27a616917c19f24bab35a08d3b067888c0b23
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937375"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245410"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business-preview"></a>Installer et configurer Microsoft Defender pour les entreprises (prévisualisation)
 

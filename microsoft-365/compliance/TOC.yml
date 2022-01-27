@@ -54,6 +54,166 @@
           href: device-onboarding-offboarding-macos-jamfpro.md
         - name: Intégration et retrait des appareils macOS dans les solutions de conformité à l'aide de JAMF Pro pour les clients de Microsoft Defender pour point de terminaison (aperçu)
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
+- name: Gérer les connecteurs pour les données tierces
+  items:
+    - name: Découvrez les connecteurs pour les données tierces
+      href: archiving-third-party-data.md
+    - name: Connecteurs de données Microsoft
+      items:
+        - name: Message Bloomberg
+          href: archive-bloomberg-message-data.md
+        - name: Données sur les soins de santé du DSE Epic (aperçu)
+          href: import-epic-data.md
+        - name: Facebook Business
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Données génériques du DSE sur les soins de santé (aperçu)
+          href: import-healthcare-data.md
+        - name: Données RH
+          href: import-hr-data.md
+        - name: Conversation ICE
+          href: archive-icechat-data.md
+        - name: Instant Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: LinkedIn
+          href: archive-linkedin-data.md
+        - name: Données de badges physiques
+          href: import-physical-badging-data.md
+        - name: Slack eDiscovery (aperçu)
+          href: archive-slack-data-microsoft.md
+        - name: Twitter
+          href: archive-twitter-data-with-sample-connector.md
+    - name: Connecteurs de données Veritas
+      items:
+        - name: CellTrust
+          href: archive-celltrust-data.md
+        - name: Cisco Jabber sur MS SQL
+          href: archive-ciscojabberonmssql-data.md
+        - name: Cisco Jabber sur Oracle
+          href: archive-ciscojabberonoracle-data.md
+        - name: Cisco Jabber sur PostgreSQL
+          href: archive-ciscojabberonpostgresql-data.md
+        - name: EML
+          href: archive-eml-data.md
+        - name: FX Connect
+          href: archive-fxconnect-data.md
+        - name: Jive
+          href: archive-jive-data.md
+        - name: Base de données MS SQL
+          href: archive-mssqldatabaseimporter-data.md
+        - name: Pivot
+          href: archive-pivot-data.md
+        - name: Redtail Speak
+          href: archive-redtailspeak-data.md
+        - name: Gestion de Reuters
+          href: archive-reutersdealing-data.md
+        - name: Reuters Eikon
+          href: archive-reuterseikon-data.md
+        - name: Reuters FX
+          href: archive-reutersfx-data.md
+        - name: RingCentral
+          href: archive-ringcentral-data.md
+        - name: Salesforce Chatter
+          href: archive-salesforcechatter-data.md
+        - name: ServiceNow
+          href: archive-servicenow-data.md
+        - name: Skype Entreprise
+          href: archive-skypeforbusiness-data.md
+        - name: Découverte électronique de marge
+          href: archive-slack-data.md
+        - name: Symphony
+          href: archive-symphony-data.md
+        - name: Délimité par le texte
+          href: archive-text-delimited-data.md
+        - name: Twitter (préversion)
+          href: archive-veritas-twitter-data.md
+        - name: Webex Teams
+          href: archive-webexteams-data.md
+        - name: Pages web
+          href: archive-webpagecapture-data.md
+        - name: Espace de travail sur Facebook
+          href: archive-workplacefromfacebook-data.md
+        - name: XIP
+          href: archive-xip-data.md
+        - name: XSLT/XML
+          href: archive-xslt-xml-data.md
+        - name: Yieldbroker
+          href: archive-yieldbroker-data.md
+        - name: YouTube
+          href: archive-youtube-data.md
+        - name: Réunions Zoom
+          href: archive-zoommeetings-data.md
+    - name: Connecteurs de données de TeleMessage
+      items:
+        - name: Archiveur Android
+          href: archive-android-archiver-data.md
+        - name: Archiveur réseau AT&T SMS/MMS
+          href: archive-att-network-archiver-data.md
+        - name: Archiveur réseau SMS/MMS Bell
+          href: archive-bell-network-data.md
+        - name: Archiveur de numéros d’entreprise
+          href: archive-enterprise-number-data.md
+        - name: Archiveur de réseau vocal et SMS O2 Telefonica
+          href: archive-o2-network-data.md
+        - name: Archiveur réseau de Lars
+          href: archive-rogers-network-archiver-data.md
+        - name: Archiveur de signal
+          href: archive-signal-archiver-data.md
+        - name: Archiveur de télégramme
+          href: archive-telegram-archiver-data.md
+        - name: Réseau TELUS
+          href: archive-telus-network-data.md
+        - name: Archiveur réseau SMS/MMS Verizon
+          href: archive-verizon-network-data.md
+        - name: Archiveur WeChat
+          href: archive-wechat-data.md
+        - name: Archiveur WhatsApp
+          href: archive-whatsapp-data.md
+    - name: Connecteurs de données 17a-4
+      items:
+        - name: Analyseur de données BlackBerry
+          href: archive-17a-4-blackberry-data.md
+        - name: Analyseur de données Bloomberg
+          href: archive-17a-4-bloomberg-data.md
+        - name: Cisco Jabber DataParser
+          href: archive-17a-4-cisco-jabber-data.md
+        - name: Cisco Webex DataParser
+          href: archive-17a-4-webex-teams-data.md
+        - name: FactSet DataParser
+          href: archive-17a-4-factset-data.md
+        - name: Fuze DataParser
+          href: archive-17a-4-fuze-data.md
+        - name: FX Connect DataParser
+          href: archive-17a-4-fxconnect-data.md
+        - name: ICE DataParser
+          href: archive-17a-4-ice-im-data.md
+        - name: InvestEdge DataParser
+          href: archive-17a-4-investedge-data.md
+        - name: LivePerson Conversational Cloud DataParser
+          href: archive-17a-4-liveperson-data.md
+        - name: Quip DataParser
+          href: archive-17a-4-quip-data.md
+        - name: Refinitiv Eikon Messenger DataParser
+          href: archive-17a-4-refinitiv-messenger-data.md
+        - name: ServiceNow DataParser
+          href: archive-17a-4-servicenow-data.md
+        - name: Analyseur de données Skype Entreprise Server
+          href: archive-17a-4-skype-for-business-server-data.md
+        - name: Slack DataParser
+          href: archive-17a-4-slack-data.md
+        - name: SQL DataParser
+          href: archive-17a-4-sql-database-data.md
+        - name: Symphony DataParser
+          href: archive-17a-4-symphony-data.md
+        - name: Zoom DataParser
+          href: archive-17a-4-zoom-data.md
+    - name: Connecteurs CellTrust
+      items:
+        - name: CellTrust SL2
+          href: archive-data-from-celltrustsl2.md
+    - name: Collaborer avec un partenaire pour archiver des données tierces
+      href: work-with-partner-to-archive-third-party-data.md
+    - name: Rechercher des données tierces
+      href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Gérer les risques internes
   items:
     - name: Solutions de risque interne Microsoft 365
@@ -395,258 +555,108 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Référence des conseils de stratégie de prévention contre la perte de données
               href: dlp-policy-tips-reference.md
-- name: Gérer la gouvernance des informations
+- name: Gérer la gouvernance des informations et les enregistrements
   items:
     - name: Gouvernez vos données
       href: manage-information-governance.md
-    - name: Conserver et supprimer des données
+    - name: Comprendre la conservation et la suppression des données
       items:
-        - name: En savoir plus sur la rétention
+        - name: En savoir plus sur les stratégies de rétention et les étiquettes de rétention
+          href: retention.md
+        - name: Organigramme pour la rétention et les résultats de suppression
+          href: retention-flowchart.md
+        - name: Rétention et suppression des charges de travail Microsoft 365
           items:
-            - name: Stratégies et étiquettes de rétention
-              href: retention.md
-            - name: Organigramme de la rétention
-              href: retention-flowchart.md
-            - name: La rétention pour SharePoint et OneDrive
+            - name: SharePoint et OneDrive
               href: retention-policies-sharepoint.md
-            - name: La rétention pour Microsoft Teams
+            - name: Microsoft Teams
               href: retention-policies-teams.md
-            - name: Conservation pour Yammer
+            - name: Yammer
               href: retention-policies-yammer.md
-            - name: La rétention pour Exchange
+            - name: Exchange
               href: retention-policies-exchange.md
             - name: Paramètres courants pour la rétention
               href: retention-settings.md
-            - name: Limites de rétention
-              href: retention-limits.md
-        - name: Prise en main de la rétention
-          href: get-started-with-retention.md
+        - name: Limites de rétention et de suppression
+          href: retention-limits.md
+    - name: Gouvernance des informations
+      items:
+        - name: En savoir plus sur la gouvernance des informations
+          href: information-governance.md
+        - name: Démarrage avec la gouvernance des informations
+          href: get-started-with-information-governance.md
         - name: Créer des stratégies de rétention
           href: create-retention-policies.md
-        - name: Utiliser un plan de fichiers
+        - name: Utiliser des étiquettes de rétention pour les exceptions
+          href: create-retention-labels-information-governance.md
+        - name: Archiver les données de boîte aux lettres
+          items:
+            - name: En savoir plus sur les boîtes aux lettres d’archivage
+              href: archive-mailboxes.md
+            - name: Activation des boîtes aux lettres d’archivage
+              href: enable-archive-mailboxes.md
+            - name: En savoir plus sur l’archivage à extension automatique
+              href: autoexpanding-archiving.md
+            - name: Activer l'archivage à expansion automatique
+              href: enable-autoexpanding-archiving.md
+            - name: Personnaliser une stratégie d’archivage et de suppression pour les boîtes aux lettres (MRM)
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: Gestion des boîtes aux lettres inactives
+          items:
+            - name: En savoir plus sur les boîtes aux lettres inactives
+              href: inactive-mailboxes-in-office-365.md
+            - name: Créer et gérer des boîtes aux lettres inactives
+              href: create-and-manage-inactive-mailboxes.md
+            - name: Modifier la durée de la conservation pour une boîte aux lettres inactive
+              href: change-the-hold-duration-for-an-inactive-mailbox.md
+            - name: Récupérer une boîte aux lettres inactive
+              href: recover-an-inactive-mailbox.md
+            - name: Restaurer une boîte aux lettres inactive
+              href: restore-an-inactive-mailbox.md
+            - name: Suppression d’une boîte aux lettres inactive
+              href: delete-an-inactive-mailbox.md
+        - name: Importer des fichiers PST
+          items:
+            - name: En savoir plus sur l’importation de fichiers PST
+              href: importing-pst-files-to-office-365.md
+            - name: Utiliser le chargement réseau pour importer des fichiers PST
+              href: use-network-upload-to-import-pst-files.md
+            - name: Utiliser l’envoi de lecteurs pour importer des fichiers PST
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: Filtrer les données lors de l’importation de fichiers PST
+              href: filter-data-when-importing-pst-files.md
+            - name: FAQ sur l’importation de fichiers PST
+              href: faqimporting-pst-files-to-office-365.yml
+    - name: Gestion des enregistrements
+      items:
+        - name: Comprendre la gestion des enregistrements
+          items:
+            - name: Découvrez la gestion des enregistrements
+              href: records-management.md
+            - name: Ressources pour les exigences réglementaires
+              href: retention-regulatory-requirements.md
+            - name: Déclarer des enregistrements à l’aide d’étiquettes de rétention
+              href: declare-records.md
+            - name: Utiliser le contrôle de version des enregistrements pour les fichiers
+              href: record-versioning.md
+        - name: Prise en main de la gestion des enregistrements
+          href: get-started-with-records-management.md
+        - name: Créer et gérer des étiquettes de rétention avec un plan de fichiers
           href: file-plan-manager.md
-        - name: Créer des étiquettes de rétention et les appliquer dans les applications
+        - name: Débuter la rétention lorsqu’un événement se produit
+          href: event-driven-retention.md
+        - name: Publier et appliquer des étiquettes de rétention dans les applications
           href: create-apply-retention-labels.md
-        - name: Appliquer automatiquement une étiquette de rétention au contenu
+        - name: Appliquer automatiquement des étiquettes de rétention au contenu
           href: apply-retention-labels-automatically.md
         - name: Verrouiller des stratégies pour restreindre les modifications
           href: retention-preservation-lock.md
-        - name: Créer des étiquettes de rétention avec PowerShell
+        - name: Utiliser PowerShell pour créer et publier des étiquettes de rétention
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Débuter la rétention lorsqu’un événement se produit
-          href: event-driven-retention.md
-        - name: Utiliser des étiquettes de rétention pour gérer les cycles de vie des documents
+        - name: Utiliser des étiquettes de rétention pour gérer des documents dans SharePoint
           href: auto-apply-retention-labels-scenario.md
         - name: Gérer la destruction des données
           href: disposition.md
-    - name: Importer les données de la boîte aux lettres
-      items:
-        - name: Vue d’ensemble de l’importation de fichiers PST
-          href: importing-pst-files-to-office-365.md
-        - name: Utiliser le chargement réseau pour importer des fichiers PST
-          href: use-network-upload-to-import-pst-files.md
-        - name: Utiliser l’envoi de lecteurs pour importer des fichiers PST
-          href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: Filtrer les données lors de l’importation de fichiers PST
-          href: filter-data-when-importing-pst-files.md
-        - name: FAQ sur l’importation de fichiers PST
-          href: faqimporting-pst-files-to-office-365.yml
-    - name: Archiver des données tierces
-      items:
-        - name: Découvrez les connecteurs pour les données tierces
-          href: archiving-third-party-data.md
-        - name: Connecteurs de données Microsoft
-          items:
-            - name: Message Bloomberg
-              href: archive-bloomberg-message-data.md
-            - name: Données sur les soins de santé du DSE Epic (aperçu)
-              href: import-epic-data.md
-            - name: Facebook Business
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Données génériques du DSE sur les soins de santé (aperçu)
-              href: import-healthcare-data.md
-            - name: Données RH
-              href: import-hr-data.md
-            - name: Conversation ICE
-              href: archive-icechat-data.md
-            - name: Instant Bloomberg
-              href: archive-instant-bloomberg-data.md
-            - name: LinkedIn
-              href: archive-linkedin-data.md
-            - name: Données de badges physiques
-              href: import-physical-badging-data.md
-            - name: Slack eDiscovery (aperçu)
-              href: archive-slack-data-microsoft.md
-            - name: Twitter
-              href: archive-twitter-data-with-sample-connector.md
-        - name: Connecteurs de données Veritas
-          items:
-            - name: CellTrust
-              href: archive-celltrust-data.md
-            - name: Cisco Jabber sur MS SQL
-              href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber sur Oracle
-              href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber sur PostgreSQL
-              href: archive-ciscojabberonpostgresql-data.md
-            - name: EML
-              href: archive-eml-data.md
-            - name: FX Connect
-              href: archive-fxconnect-data.md
-            - name: Jive
-              href: archive-jive-data.md
-            - name: Base de données MS SQL
-              href: archive-mssqldatabaseimporter-data.md
-            - name: Pivot
-              href: archive-pivot-data.md
-            - name: Redtail Speak
-              href: archive-redtailspeak-data.md
-            - name: Gestion de Reuters
-              href: archive-reutersdealing-data.md
-            - name: Reuters Eikon
-              href: archive-reuterseikon-data.md
-            - name: Reuters FX
-              href: archive-reutersfx-data.md
-            - name: RingCentral
-              href: archive-ringcentral-data.md
-            - name: Salesforce Chatter
-              href: archive-salesforcechatter-data.md
-            - name: ServiceNow
-              href: archive-servicenow-data.md
-            - name: Skype Entreprise
-              href: archive-skypeforbusiness-data.md
-            - name: Découverte électronique de marge
-              href: archive-slack-data.md
-            - name: Symphony
-              href: archive-symphony-data.md
-            - name: Délimité par le texte
-              href: archive-text-delimited-data.md
-            - name: Twitter (préversion)
-              href: archive-veritas-twitter-data.md
-            - name: Webex Teams
-              href: archive-webexteams-data.md
-            - name: Pages web
-              href: archive-webpagecapture-data.md
-            - name: Espace de travail sur Facebook
-              href: archive-workplacefromfacebook-data.md
-            - name: XIP
-              href: archive-xip-data.md
-            - name: XSLT/XML
-              href: archive-xslt-xml-data.md
-            - name: Yieldbroker
-              href: archive-yieldbroker-data.md
-            - name: YouTube
-              href: archive-youtube-data.md
-            - name: Réunions Zoom
-              href: archive-zoommeetings-data.md
-        - name: Connecteurs de données de TeleMessage
-          items:
-            - name: Archiveur Android
-              href: archive-android-archiver-data.md
-            - name: Archiveur réseau AT&T SMS/MMS
-              href: archive-att-network-archiver-data.md
-            - name: Archiveur réseau SMS/MMS Bell
-              href: archive-bell-network-data.md
-            - name: Archiveur de numéros d’entreprise
-              href: archive-enterprise-number-data.md
-            - name: Archiveur de réseau vocal et SMS O2 Telefonica
-              href: archive-o2-network-data.md
-            - name: Archiveur réseau de Lars
-              href: archive-rogers-network-archiver-data.md
-            - name: Archiveur de signal
-              href: archive-signal-archiver-data.md
-            - name: Archiveur de télégramme
-              href: archive-telegram-archiver-data.md
-            - name: Réseau TELUS
-              href: archive-telus-network-data.md
-            - name: Archiveur réseau SMS/MMS Verizon
-              href: archive-verizon-network-data.md
-            - name: Archiveur WeChat
-              href: archive-wechat-data.md
-            - name: Archiveur WhatsApp
-              href: archive-whatsapp-data.md
-        - name: Connecteurs de données 17a-4
-          items:
-            - name: Analyseur de données BlackBerry
-              href: archive-17a-4-blackberry-data.md
-            - name: Analyseur de données Bloomberg
-              href: archive-17a-4-bloomberg-data.md
-            - name: Cisco Jabber DataParser
-              href: archive-17a-4-cisco-jabber-data.md
-            - name: Cisco Webex DataParser
-              href: archive-17a-4-webex-teams-data.md
-            - name: FactSet DataParser
-              href: archive-17a-4-factset-data.md
-            - name: Fuze DataParser
-              href: archive-17a-4-fuze-data.md
-            - name: FX Connect DataParser
-              href: archive-17a-4-fxconnect-data.md
-            - name: ICE DataParser
-              href: archive-17a-4-ice-im-data.md
-            - name: InvestEdge DataParser
-              href: archive-17a-4-investedge-data.md
-            - name: LivePerson Conversational Cloud DataParser
-              href: archive-17a-4-liveperson-data.md
-            - name: Quip DataParser
-              href: archive-17a-4-quip-data.md
-            - name: Refinitiv Eikon Messenger DataParser
-              href: archive-17a-4-refinitiv-messenger-data.md
-            - name: ServiceNow DataParser
-              href: archive-17a-4-servicenow-data.md
-            - name: Analyseur de données Skype Entreprise Server
-              href: archive-17a-4-skype-for-business-server-data.md
-            - name: Slack DataParser
-              href: archive-17a-4-slack-data.md
-            - name: SQL DataParser
-              href: archive-17a-4-sql-database-data.md
-            - name: Symphony DataParser
-              href: archive-17a-4-symphony-data.md
-            - name: Zoom DataParser
-              href: archive-17a-4-zoom-data.md
-        - name: Connecteurs CellTrust
-          items:
-            - name: CellTrust SL2
-              href: archive-data-from-celltrustsl2.md
-        - name: Collaborer avec un partenaire pour archiver des données tierces
-          href: work-with-partner-to-archive-third-party-data.md
-        - name: Rechercher des données tierces
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-    - name: Stocker les données de boîte aux lettres
-      items:
-        - name: Activation des boîtes aux lettres d’archivage
-          href: enable-archive-mailboxes.md
-        - name: Aperçu de l'archivage en auto-expansion
-          href: autoexpanding-archiving.md
-        - name: Activer l'archivage à expansion automatique
-          href: enable-autoexpanding-archiving.md
-        - name: Configurer une stratégie d’archivage et de suppression de boîtes aux lettres
-          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Gestion des boîtes aux lettres inactives
-      items:
-        - name: En savoir plus sur les boîtes aux lettres inactives
-          href: inactive-mailboxes-in-office-365.md
-        - name: Créer et gérer des boîtes aux lettres inactives
-          href: create-and-manage-inactive-mailboxes.md
-        - name: Modifier la durée de la conservation pour une boîte aux lettres inactive
-          href: change-the-hold-duration-for-an-inactive-mailbox.md
-        - name: Récupérer une boîte aux lettres inactive
-          href: recover-an-inactive-mailbox.md
-        - name: Restaurer une boîte aux lettres inactive
-          href: restore-an-inactive-mailbox.md
-        - name: Suppression d’une boîte aux lettres inactive
-          href: delete-an-inactive-mailbox.md
-    - name: Gestion des enregistrements
-      items:
-        - name: Découvrez la gestion des enregistrements
-          href: records-management.md
-        - name: Prise en main de la gestion des enregistrements
-          href: get-started-with-records-management.md
-        - name: Déclarer les enregistrements
-          href: declare-records.md
-        - name: Utiliser le contrôle de version d’enregistrement
-          href: record-versioning.md
-        - name: Ressources pour les exigences réglementaires
-          href: retention-regulatory-requirements.md
 - name: Gestion de l’eDiscovery
   items:
     - name: Solutions eDiscovery Microsoft 365
