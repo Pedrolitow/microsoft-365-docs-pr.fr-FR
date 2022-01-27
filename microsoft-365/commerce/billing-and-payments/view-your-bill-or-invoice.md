@@ -24,13 +24,13 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
-ms.date: 07/31/2020
-ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.date: 01/25/2022
+ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941371"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218968"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -86,10 +86,9 @@ Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao]
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Microsoft 365 services ne fournissent pas de reçus de paiement.
 > Pour les paiements par carte de crédit, utilisez le relevé de facturation de la facture et de la carte de crédit pour faire correspondre votre paiement.
-
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recevoir une copie de votre relevé de facturation par courrier électronique
 
@@ -109,12 +108,24 @@ Vous pouvez envoyer une copie de votre relevé de facturation par courrier élec
 ::: moniker range="o365-21vianet"
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
-    
+
 ::: moniker-end
 
 2. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
 
     Vous pouvez arrêter de recevoir les courriers électroniques incluant les relevés de facturation à tout moment en positionnant le bouton bascule sur **Désactiver**.
+
+## <a name="run-the-unknown-charge-diagnostic"></a>Exécuter le diagnostic de frais inconnus
+
+En tant qu’administrateur général Microsoft 365, vous pouvez utiliser un outil de diagnostic qui s’exécute dans le Centre d’administration Microsoft 365 pour rechercher des frais inattendus de Microsoft qui apparaissent sur votre relevé bancaire ou de carte de crédit.
+
+> [!NOTE]
+> Le diagnostic de frais inconnus est uniquement disponible pour les clients qui ont acheté leurs produits et services auprès de Microsoft.com, notamment Microsoft 365 Entreprise, Éducation et à but non lucratif.
+
+Sélectionnez le lien **Exécuter les tests** ci-dessous pour ouvrir l’outil de diagnostic dans le Centre d’administration Microsoft 365.
+
+>[!div class="nextstepaction"]
+>[Exécuter des tests: de frais inconnus](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
