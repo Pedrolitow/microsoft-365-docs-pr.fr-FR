@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213936"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241926"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -293,6 +293,6 @@ Voici des définitions et des exemples pour les contrôles supplémentaires disp
 >     2. Document 機密性が高い, 机密的 et document 机密的
 >
 > Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9] {4} )
 >
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.

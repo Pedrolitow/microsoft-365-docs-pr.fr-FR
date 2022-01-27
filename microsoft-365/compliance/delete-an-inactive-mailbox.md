@@ -2,8 +2,8 @@
 title: Suppression d’une boîte aux lettres inactive
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’Microsoft 365 boîte aux lettres inactive, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: 386e03bd9518f0db9c37a306c71d0cd9c4230e3a
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 71223c0b5f53e03d51797e32f249f24146e96dee
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127962"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242082"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -204,7 +204,7 @@ Si le blocage sur place contient un grand nombre de boîtes aux lettres source, 
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - **Une boîte aux lettres inactive est un type de boîte aux lettres supprimée (récupérable).** Dans Exchange Online, une boîte aux lettres supprimée (récupérable) est une boîte aux lettres qui a été supprimée mais qui peut être récupérée pendant une période de rétention spécifique. Pour les boîtes aux lettres supprimées (récupérables) qui ne sont pas en attente, la boîte aux lettres est récupérable dans les 30 jours. Une boîte aux lettres inactive (une boîte aux lettres en attente avant sa suppression) reste dans un état de suppression (avec état de attente) jusqu’à ce que la boîte aux lettres soit supprimée. Une fois la boîte aux lettres inactive supprimée, la boîte aux lettres n’est plus dans un état inactif. Au lieu de cela, il devient supprimé (récupérable) et reste en Exchange Online pendant 183 jours à partir du jour où la période de la période de attente a été supprimée et récupérable pendant cette période. Après 183 jours, une boîte aux lettres supprimée (récupération) est marquée pour suppression définitive et ne peut pas être récupérée.
 

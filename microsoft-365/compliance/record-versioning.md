@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 2aabfbf1b3e0aedd8ec7ba54d452cb01ad81776a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559999"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242046"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
@@ -50,7 +50,7 @@ Vous pouvez effectuer les actions suivantes :
 > [!TIP]
 > Lorsque vous utilisez le contrôle de version d’enregistrement avec une étiquette de rétention ayant une action de suppression, nous vous recommandons de configurer également le paramètre de rétention **Démarrer la période de rétention sur la base de :** sur **Quand des éléments ont été étiquetés**. Avec ce paramètre d’étiquette, le début de la période de rétention est réinitialisé pour chaque nouvelle version d’enregistrement, ce qui garantit que les versions antérieures seront supprimées avant les versions plus récentes.
 
-Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui marque l’élément comme enregistrement et qui est [publiée sur le site](create-apply-retention-labels.md#step-2-publish-retention-labels). Lorsqu’un utilisateur affiche les propriétés du document à l’aide du volet Détails, il peut basculer le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. Cette action crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention.
+Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui marque l’élément comme enregistrement et qui est [publiée sur le site](create-apply-retention-labels.md). Lorsqu’un utilisateur affiche les propriétés du document à l’aide du volet Détails, il peut basculer le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. Cette action crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention.
 
 Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations de modification standard peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est encore considéré comme un enregistrement. Lorsque la modification est terminée, un utilisateur peut basculer vers la bascule de l’**État de l’enregistrement** de **Déverrouillé** vers **Verrouillé**, ce qui empêche les modifications ultérieures dans ce statut.
 <br/><br/>
@@ -108,4 +108,4 @@ Pour plus d’informations sur la recherche de ces événements, consultez [Effe
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour les autres scénarios pris en charge par la gestion des enregistrements, consultez [Scénarios courants pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios-for-records-management).
+Pour les autres scénarios pris en charge par la gestion des enregistrements, consultez [Scénarios courants pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios).

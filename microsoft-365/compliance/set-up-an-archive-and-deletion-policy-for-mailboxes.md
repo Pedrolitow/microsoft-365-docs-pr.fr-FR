@@ -1,9 +1,9 @@
 ---
-title: Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
+title: Personnaliser une stratégie d’archivage et de suppression (MRM) pour les boîtes aux lettres de votre organisation
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,19 +22,23 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Découvrez comment créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: eff76a5d06b975e161a4d12302ac8bd1f20e612e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Comment créer une stratégie personnalisée d’archivage et de suppression de gestion des enregistrements de messagerie (MRM) pour déplacer automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
+ms.openlocfilehash: 192bed6be6c3129410f4e51144402c6c19e12d37
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423706"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242070"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
+# <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personnaliser une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
-Dans Microsoft 365, les administrateurs peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres. Pour ce faire, l’administrateur crée une stratégie de rétention affectée aux boîtes aux lettres et déplace les éléments vers la boîte aux lettres d’archivage d’un utilisateur après un certain laps de temps et supprime également les éléments de la boîte aux lettres une fois qu’ils ont atteint une certaine limite d’âge. Les règles réelles qui déterminent quels éléments sont déplacés ou supprimés et quand cela se produit sont appelées balises de rétention. Les balises de rétention sont liées à une stratégie de rétention, qui est à son tour attribuée à la boîte aux lettres d’un utilisateur. Une balise de rétention applique des paramètres de rétention à des messages et dossiers individuels dans la boîte aux lettres d’un utilisateur. Il définit la durée de conservation d’un message dans la boîte aux lettres et l’action à prendre lorsque le message atteint l’âge de rétention spécifié. Lorsqu’un message atteint son âge de rétention, il est déplacé vers la boîte aux lettres d’archivage de l’utilisateur ou supprimé.
+Microsoft 365 de conformité peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement des éléments vers la boîte aux lettres [d’archivage](archive-mailboxes.md) d’un utilisateur et supprime automatiquement des éléments de la boîte aux lettres.
+
+Pour ce faire, créez une stratégie de rétention MRM (Messaging Records Management) affectée aux boîtes aux lettres et déplacez les éléments vers la boîte aux lettres d’archivage d’un utilisateur après un certain laps de temps et supprimez également les éléments de la boîte aux lettres une fois qu’ils ont atteint une certaine limite d’âge. 
+
+Les règles réelles qui déterminent quels éléments sont déplacés ou supprimés et quand cela se produit sont appelées balises de rétention. Les balises de rétention sont liées à une stratégie de rétention MRM, qui est à son tour attribuée à la boîte aux lettres d’un utilisateur. Une balise de rétention applique des paramètres de rétention à des messages et dossiers individuels dans la boîte aux lettres d’un utilisateur. Il définit la durée de conservation d’un message dans la boîte aux lettres et l’action à prendre lorsque le message atteint l’âge de rétention spécifié. Lorsqu’un message atteint son âge de rétention, il est déplacé vers la boîte aux lettres d’archivage de l’utilisateur ou supprimé.
   
-Les étapes de cet article vont configurer une stratégie d’archivage et de rétention pour une organisation fictive nommée House House. La configuration de cette stratégie inclut les tâches suivantes :
+Les étapes de cet article définissent une stratégie d’archivage et de rétention pour une organisation fictive nommée House House. La configuration de cette stratégie inclut les tâches suivantes :
   
 - Activation d’une boîte aux lettres d’archivage pour chaque utilisateur de l’organisation. Cela permet aux utilisateurs de stocker davantage de boîtes aux lettres et est nécessaire pour qu’une stratégie de rétention puisse déplacer des éléments vers la boîte aux lettres d’archivage. Il permet également à un utilisateur de stocker des informations d’archivage en déplaçant des éléments vers sa boîte aux lettres d’archivage.
 

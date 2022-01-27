@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560743"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242034"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -62,6 +62,7 @@ Vous pouvez planifier les déplacements de sites SharePoint (voir plus loin dans
 
 - Vous pouvez planifier jusqu’à 4 000 déplacements à la fois.
 - Lorsque les déplacements commencent, vous pouvez planifier plus d’informations, avec un maximum de 4 000 déplacements dans la file d’attente et à un moment donné.
+- La taille maximale d’un site SharePoint qui peut être déplacé est de 1 téraoctet (1 To).
 
 Pour planifier un déplacement géographique de site SharePoint, lorsque vous commencez le déplacement, incluez parmi l’un des paramètres suivants :
 

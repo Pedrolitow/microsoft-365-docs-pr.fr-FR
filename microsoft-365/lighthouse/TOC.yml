@@ -12,6 +12,8 @@
   items:
     - name: Configurer la sécurité du portail
       href: m365-lighthouse-configure-portal-security.md
+    - name: Examiner les journaux d’audit
+      href: m365-lighthouse-review-audit-logs.md
 - name: Protéger les clients avec des lignes de base
   items:
     - name: Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard

@@ -16,12 +16,12 @@ ms.custom:
 - intro-get-started
 ms.localizationpriority: medium
 description: Découvrez les tâches qui vous aideront à prendre rapidement en charge la conformité dans Microsoft 365.
-ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 1fb1a94e41550e10288bc42b3900cb10e76362bc
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643065"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241370"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour démarrer avec la conformité Microsoft 365
 
@@ -77,17 +77,17 @@ Pour mener à bien leur travail, les membres de votre organisation collaborent a
 
 [Les étiquettes de niveau](sensitivity-labels.md) de sensibilité vous permet de classifier et de protéger les données de votre organisation, tout en vous assurez que la productivité des utilisateurs et leur capacité à collaborer ne sont pas ralenties. Utilisez les étiquettes de niveau de sensibilité pour appliquer des restrictions de chiffrement et d’utilisation en appliquant des marquages visuels et protéger les informations sur les plateformes et les appareils, en local et dans le cloud.
 
-Pour obtenir des instructions pas à pas sur la configuration et l’utilisation des étiquettes de sensibilité, consultez La mise en place [des étiquettes de sensibilité.](get-started-with-sensitivity-labels.md) Pour plus d’informations sur les licences d’étiquettes de niveau de Microsoft 365, consultez les recommandations en matière de [licences pour la sécurité & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+Pour obtenir des instructions pas à pas sur la configuration et l’utilisation des étiquettes de sensibilité, consultez La mise en place [des étiquettes de sensibilité.](get-started-with-sensitivity-labels.md)
 
-## <a name="task-6-configure-a-retention-policy"></a>Tâche 6 : Configurer une stratégie de rétention
+## <a name="task-6-configure-retention-policies"></a>Tâche 6 : Configurer les stratégies de rétention
 
 Une [stratégie de](retention.md) rétention vous permet de décider de manière proactive s’il faut conserver du contenu, supprimer du contenu ou les deux, conserver puis supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations du secteur et aux stratégies internes, et réduire les risques en cas de litige ou de violation de la sécurité.
 
 Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier le contenu et à l’utiliser comme si rien n’était modifié. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si quelqu’un modifie ou supprime le contenu soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où il est conservé pendant que la stratégie de rétention de ce contenu est en vigueur.
 
-Vous pouvez rapidement mettre en place une stratégie de rétention pour plusieurs emplacements de votre environnement Microsoft 365 tels que la messagerie Exchange, les sites SharePoint, les comptes OneDrive et les groupes Microsoft 365 de rétention. Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que cette stratégie peut inclure automatiquement. Toutefois, si vous devez être plus sélectif, vous pouvez le faire en configurant une stratégie de rétention pour des emplacements spécifiques et inclure ou exclure des sites ou des utilisateurs.
+Vous pouvez rapidement mettre en place des stratégies de rétention pour plusieurs services dans votre environnement Microsoft 365 qui incluent des messages Teams et Yammer, des messages Exchange, des sites SharePoint et des comptes OneDrive. Il n’existe aucune limite au nombre d’utilisateurs, de boîtes aux lettres ou de sites qu’une stratégie de rétention peut inclure automatiquement. Toutefois, si vous devez être plus sélectif, vous pouvez le faire en configurant une étendue adaptative basée sur une requête pour cibler dynamiquement des instances spécifiques ou une étendue statique qui spécifie des instances spécifiques à toujours inclure ou à exclure.
 
-Pour obtenir des instructions pas à pas pour configurer une stratégie de rétention, voir [Créer et configurer des stratégies de rétention.](create-retention-policies.md) Si vous n’avez jamais configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md).
+Pour obtenir des instructions pas à pas sur la configuration des stratégies de rétention, voir [Créer et configurer des stratégies de rétention.](create-retention-policies.md) Étant donné que les stratégies de rétention constituent la base d’une stratégie de gouvernance des informations pour Microsoft 365, voir Prendre en main [la gouvernance des informations.](get-started-with-information-governance.md)
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tâche 7 : Configurer des informations sensibles et des stratégies de langage choquant
 
@@ -104,7 +104,7 @@ Pour obtenir des instructions pas à pas pour planifier et configurer la conform
 Les étiquettes de confidentialité, les types d’informations sensibles, les étiquettes et stratégies de rétention et les classifieurs entraidables peuvent être utilisés pour classer et étiqueter des éléments sensibles sur Exchange, SharePoint et OneDrive comme vous l’avez vu dans les tâches précédentes. La dernière étape de votre parcours de tâche rapide consiste à voir quels éléments ont été étiquetés et quelles actions vos utilisateurs prennent sur ces éléments sensibles. [L’Explorateur de](data-classification-content-explorer.md) contenu [et l’Explorateur d’activités](data-classification-activity-explorer.md) fournissent cette visibilité.
 
 ### <a name="content-explorer"></a>Explorateur de contenu
- L’Explorateur de contenu vous permet d’afficher, dans leur format natif, tous les éléments qui ont été classés en tant que type d’informations sensibles ou appartenant à une certaine classification par un classifieur entraisable, ainsi que tous les éléments qui ont une étiquette de sensibilité ou de rétention appliquée.
+L’Explorateur de contenu vous permet d’afficher, dans leur format natif, tous les éléments qui ont été classés en tant que type d’informations sensibles ou appartenant à une certaine classification par un classifieur entraisable, ainsi que tous les éléments qui ont une étiquette de sensibilité ou de rétention appliquée.
 
 Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur de contenu, voir Connaître vos données - vue d’ensemble de la [classification](data-classification-overview.md)des données et commencer à [utiliser l’explorateur de contenu.](data-classification-content-explorer.md)
 
@@ -127,21 +127,17 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 
 Pour obtenir des instructions pas à pas sur l’utilisation de l’Explorateur d’activités, voir Commencer [avec l’Explorateur d’activités.](data-classification-activity-explorer.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez configuré les bases de la gestion de la conformité pour votre organisation, envisagez les solutions de conformité suivantes dans Microsoft 365 pour vous aider à protéger les informations sensibles, à détecter et à agir sur les risques internes supplémentaires.
 
 ### <a name="configure-retention-labels"></a>Configurer des étiquettes de rétention
 
-Alors que les stratégies de rétention s’appliquent au niveau du conteneur à des emplacements tels que des sites SharePoint et des boîtes aux lettres [Exchange,](retention.md#retention-labels) les étiquettes de rétention permettent un ciblage plus spécifique pour vos stratégies de rétention et de suppression. Par exemple, au niveau du document ou du message électronique, que les utilisateurs finaux peuvent appliquer manuellement en plus de l’application automatique par les administrateurs. Vous pouvez également appliquer une étiquette de rétention à une bibliothèque de documents, un dossier ou un ensemble de documents dans SharePoint, afin que tous les documents stockés à cet emplacement héritent de l’étiquette de rétention par défaut.
+Alors que les stratégies de rétention s’appliquent automatiquement à tous les éléments au [](retention.md#retention-labels) niveau du conteneur (tels que les sites SharePoint, les boîtes aux lettres utilisateur, etc.), les étiquettes de rétention s’appliquent à des éléments individuels, tels qu’un document SharePoint ou un message électronique. Vous pouvez appliquer ces étiquettes manuellement ou automatiquement.
 
-En outre, les étiquettes de rétention prise [en charge la gestion des](records-management.md) enregistrements pour marquer le contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette impose des restrictions supplémentaires sur le contenu qui peut être nécessaire pour aider votre organisation à se conformer aux exigences réglementaires.
+Les étiquettes de rétention peuvent être utilisées dans le cadre de votre stratégie d’informations de gouvernance pour conserver ce dont vous avez besoin et supprimer ce dont vous n’avez pas besoin. Utilisez ces étiquettes lorsque vous avez besoin d’exceptions à vos stratégies de rétention lorsque des documents ou messages électroniques spécifiques ont besoin de paramètres de rétention ou de suppression différents. Par exemple, votre stratégie SharePoint conserve tous les documents pendant trois ans, mais les documents métier spécifiques doivent être conservés pendant cinq ans. Pour plus d’informations, voir [Créer des étiquettes de rétention pour les exceptions à vos stratégies de rétention.](create-retention-labels-information-governance.md)
 
-Pour obtenir des instructions pas à pas pour créer et publier des étiquettes de rétention, consultez les conseils suivants :
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
-- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
-
-Pour commencer à gérer les enregistrements, voir [Prise en charge de la gestion des enregistrements.](get-started-with-records-management.md)
+Toutefois, les étiquettes de rétention, lorsqu’elles sont utilisées avec la gestion des [enregistrements,](records-management.md)offrent beaucoup plus d’options de gestion pour prendre en charge le cycle de vie complet des documents et des e-mails. Ce niveau de gestion des données est bien adapté aux éléments à valeur élevée pour les exigences de conservation des registres d’entreprise, juridiques ou réglementaires. Pour plus d’informations, voir [Prise en charge de la gestion des enregistrements.](get-started-with-records-management.md)
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identifier et définir des types d’informations sensibles
 

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des courriers électroniques suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour une rescannation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 57dedee4f2502f5fd9db293fb4ea947cf50bee1d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935524"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241938"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -52,7 +52,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
 - Pour envoyer des messages et des fichiers à Microsoft, vous devez être membre de l’un des groupes de rôles suivants :
-  - **Lecteur Gestion de l’organisation** **ou Sécurité** dans [le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+  - **Administrateur de sécurité** **ou lecteur de sécurité** dans le portail [Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
   
     Notez que l’appartenance à ce groupe de rôles est requise pour afficher les [envois](#view-user-submissions-to-microsoft) d’utilisateurs à la boîte aux lettres personnalisée, comme décrit plus loin dans cet article.
 
@@ -182,7 +182,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      - **ID de message réseau**
      - **Sender**
      - **Destinataire**
-     - **Nom**
+     - **Name**
      - **Soumis par**
 
      Lorsque vous avez terminé, cliquez sur **Appliquer**.
@@ -194,7 +194,7 @@ Le message signalé est marqué comme faux positif ou faux négatif. Une notific
      - **Aucune**
      - **Type (Type)**
      - **Raison**
-     - **État**
+     - **Status**
      - **Résultat rescan**
      - **Tags**
 

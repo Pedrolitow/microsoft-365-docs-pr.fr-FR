@@ -2,8 +2,8 @@
 title: En savoir plus sur les boîtes aux lettres inactives
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu de la boîte aux lettres pour les anciens employés en la transformant en boîte aux lettres inactive.
-ms.openlocfilehash: 5aa20b780ed49edcbd46770c9f7f470bf9bb0db1
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 72d048bc99876c0f252feffe3159d3ce01303028
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202136"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241514"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>En savoir plus sur les boîtes aux lettres inactives
 
@@ -134,6 +134,6 @@ Toutefois, si cette stratégie de rétention MRM **a** été appliquée à une b
 
 À l’inverse, toutes les stratégies d’archivage (balises de rétention MRM configurées avec une action **MoveToArchive)** incluses dans la stratégie de rétention MRM affectée à une boîte aux lettres inactive sont ignorées. Cela signifie que les éléments dans une boîte aux lettres inactive qui sont marqués avec une stratégie d'archivage restent dans la boîte aux lettres principale à l'expiration de la période de rétention. Ils ne sont pas déplacés vers la boîte aux lettres d'archivage ni vers le dossier Éléments récupérables dans la boîte aux lettres d'archivage. Ils seront conservés indéfiniment.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour rendre une boîte aux lettres inactive et la gérer, telle que la récupération, la restauration et la suppression, voir Créer et gérer des boîtes aux lettres [inactives.](create-and-manage-inactive-mailboxes.md)

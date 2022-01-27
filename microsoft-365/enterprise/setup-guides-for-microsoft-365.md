@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 893ee5716621d988d006f9f3a67b183da3f65b14
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 9d8533b8a10535e79e0e42c546df72b6714d690a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218980"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241950"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -161,6 +161,15 @@ Le guide de configuration de [Microsoft Defender pour Office 365](https://aka.ms
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Guide de configuration de Microsoft Defender for Identity
 
 Le [guide de configuration de Microsoft Defender pour l’identité](https://aka.ms/DefenderforIdentitysetup) fournit des conseils de configuration de solution de sécurité pour identifier, détecter et examiner les menaces avancées qui peuvent compromettre les identités des utilisateurs. Il s’agit notamment de la détection d’activités suspectes d’utilisateurs et d’actions internes malveillantes dirigées vers votre organisation. Vous allez créer une instance de Defender pour l’identité, vous connecter à Active Directory de votre organisation, puis configurer des capteurs, des alertes, des notifications et configurer vos préférences de portail uniques.
+
+### <a name="insider-risk-solutions-setup-guide"></a>Guide de configuration des solutions à risque internes
+
+Le [guide de configuration des solutions de risques internes vous](https://aka.ms/Insiderrisksetup) aide à protéger votre organisation contre les risques internes qui peuvent être difficiles à identifier et difficiles à atténuer. Les risques internes se produisent dans différents domaines et peuvent entraîner des problèmes majeurs pour les organisations, allant de la perte de propriété intellectuelle au harcèlement en lieu de travail, etc.
+
+Les solutions de ce guide vous aideront à gagner en visibilité sur les activités, les actions et les communications des utilisateurs à l’aide de signaux et d’enrichissements natifs au sein de votre organisation :
+
+* Avec la solution de conformité des communications, vous pouvez identifier et agir sur les risques de communication pour des éléments tels que la violence sur le lieu de travail, le délit d’initié, le harcèlement, le code de conduite et les violations de conformité réglementaire.
+* La solution de gestion des risques internes vous permet d’identifier, d’examiner et d’agir sur les risques de vol de propriété intellectuelle, de fuites de données sensibles, de violations de sécurité, de débordement de données et de violations de confidentialité.
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Protection des données Microsoft de configuration
 

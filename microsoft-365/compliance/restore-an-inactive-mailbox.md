@@ -2,8 +2,8 @@
 title: Restaurer une boîte aux lettres inactive
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Découvrez comment restaurer (ou fusionner) le contenu d’une boîte aux lettres inactive dans une boîte aux lettres existante.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aeea08b692dc1bfb77a225a27f3dfc1f1df899e
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: aaf0ce7f67ae0146beceeeb667263908d7cff75d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320814"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241550"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
@@ -140,7 +140,7 @@ Si une boîte aux lettres inactive possède une boîte aux lettres d'archivage, 
    Set-Mailbox <identity of target mailbox> -EmailAddresses @{Remove="X500:<LegacyExchangeDN of inactive mailbox>"}
    ```
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - **Quelle est la principale différence entre la récupération et la restauration d'une boîte aux lettres inactive ?** Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est convertie en nouvelle boîte aux lettres. Le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d’utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus et les modifications apportées au contenu dans la nouvelle boîte aux lettres affectent le contenu placé en attente dans la boîte aux lettres inactive. À l'inverse, lorsque vous restaurez une boîte aux lettres inactive, le contenu est simplement copié vers une autre boîte aux lettres. La boîte aux lettres inactive est conservée et reste une boîte aux lettres inactive. Toute modification apportée au contenu de la boîte aux lettres cible n'affecte pas le contenu d'origine conservé dans la boîte aux lettres inactive. La boîte aux lettres inactive peut toujours être recherché à l’aide de l’outil de recherche de [contenu,](content-search.md)son contenu peut être restauré dans une autre boîte aux lettres ou il peut être récupéré ou supprimé à une date ultérieure.
 

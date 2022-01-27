@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 7092b4ed30400fb559751d4d939801c1982407f8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221339"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241974"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -36,11 +36,17 @@ ms.locfileid: "61221339"
 - Microsoft 365 Defender
 - Microsoft Defender pour point de terminaison
 
-Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser des opérateurs et des instructions Kusto pour créer des requêtes qui recherchent des informations dans un [schéma spécialisé.](advanced-hunting-schema-tables.md) Pour mieux comprendre ces concepts, exécutez votre première requête.
+Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser des opérateurs et des instructions Kusto pour créer des requêtes qui recherchent des informations dans un [schéma spécialisé.](advanced-hunting-schema-tables.md) 
+
+Regardez cette courte vidéo pour découvrir quelques informations pratiques sur le langage de requête Kusto.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+Pour mieux comprendre ces concepts, exécutez votre première requête.
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 
-Dans le Microsoft 365 Defender de recherche, allez sur **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
+Dans le Microsoft 365 Defender de recherche, allez sur **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit : 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -183,7 +189,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

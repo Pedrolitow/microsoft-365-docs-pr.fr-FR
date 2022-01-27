@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0825f73ed001aa67129c9024955f58df021fa22e
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 43f6a5dff0a1908818714042012d0fef11ec9b51
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187256"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241746"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -61,7 +61,7 @@ Les actions recommandées peuvent aider votre organisation à se lancer dans les
 
 L’activité dans les messages contenant du contenu inapproprié est agrégée par type de [classifieur](/microsoft-365/compliance/communication-compliance-policies#classifiers) à partir de stratégies existantes qui utilisent le modèle de contenu inapproprié ou des stratégies personnalisées qui utilisent des classifieurs pour du contenu inapproprié. Examinez les alertes pour ces messages dans le tableau de bord d’alerte pour vos stratégies.
 
-L’activité [impliquant des types d’informations](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) sensibles est détectée dans les messages couverts par les stratégies existantes et pour les messages qui ne sont pas couverts par les stratégies existantes. Informations sont regroupés pour tous les types d’informations sensibles, y compris ceux que votre organisation n’a pas précédemment définis dans une stratégie de conformité des communications existante. Utilisez ces informations pour créer une stratégie de conformité des communications ou pour mettre à jour les stratégies existantes.
+[L’activité impliquant des types d’informations](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) sensibles est détectée dans les messages couverts par les stratégies existantes et pour les messages qui ne sont pas couverts par les stratégies existantes. Informations sont regroupés pour tous les types d’informations sensibles, y compris ceux que votre organisation n’a pas précédemment définis dans une stratégie de conformité des communications existante. Utilisez ces informations pour créer une stratégie de conformité des communications ou pour mettre à jour les stratégies existantes.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Étape 1 (obligatoire) : activer les autorisations pour la conformité des communications
 
@@ -156,7 +156,7 @@ Utilisez le graphique suivant pour vous aider à configurer les groupes de votre
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en place** |
 |:-----|:-----|:-----|
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
-| Relecteurs | Aucune | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
+| Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
 
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques et Teams conversations de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques et les conversations Teams envoyées à ce groupe, et non les messages électroniques et conversations individuels reçus par chaque membre du groupe.
 
@@ -208,7 +208,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Étape 5 (obligatoire) : créer une stratégie de conformité des communications
 
 >[!IMPORTANT]
->L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications.](https://compliance.microsoft.com/supervisoryreview)
+>L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications.](https://compliance.microsoft.com/supervisoryreview)
 
 >[!TIP]  
 >Vous souhaitez consulter une walkthrough détaillée de la configuration d’une nouvelle stratégie de conformité des communications et de la correction d’une alerte ? Regardez cette vidéo de [15 minutes](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) pour voir une démonstration de la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les messages inappropriés, à examiner les violations potentielles et à résoudre les problèmes de conformité.
@@ -262,7 +262,24 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
 6. La page **Votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
-## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Étape 6 (facultative) : créer des modèles d’avis et configurer l’anonymisation des utilisateurs
+## <a name="step-6-optional-update-compliance-boundaries-for-communication-compliance-policies"></a>Étape 6 (facultative) : mettre à jour les limites de conformité pour les stratégies de conformité des communications
+
+Les limites de conformité créent des limites logiques au sein d'une organisation qui contrôlent les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les comptes OneDrive et les sites Microsoft Office SharePoint Online) que les gestionnaires de découverte électronique peuvent rechercher.
+
+Si vous avez configuré des limites de conformité dans votre organisation, vous devez mettre à jour les limites de conformité pour permettre à certains utilisateurs d’accéder aux boîtes aux lettres qui prendre en charge les stratégies de conformité des communications. Vous devez autoriser l’accès aux administrateurs de conformité des communications et aux réviseurs de conformité des communications pour que vos actions de gestion et d’examen et de correction des stratégies fonctionnent correctement.
+
+Pour autoriser l’accès aux administrateurs et aux réviseurs de conformité des communications, exécutez les commandes PowerShell suivantes. Vous ne devez exécuter ces commandes qu’une seule fois, même si vous ajoutez de nouvelles stratégies de conformité des communications à l’avenir :
+
+```powershell
+Import-Module ExchangeOnlineManagement
+$UserCredential = Get-Credential
+Connect-IPPSSession -Credential $UserCredential
+New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communication compliance admins and reviewers user alias or email address> -Filters "Mailbox_Name -like 'SupervisoryReview{*'" -Action All
+```
+
+Pour plus d’informations sur la syntaxe de cmdlet, voir [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).
+
+## <a name="step-7-optional-create-notice-templates-and-configure-user-anonymization"></a>Étape 7 (facultative) : créer des modèles d’avis et configurer l’anonymisation des utilisateurs
 
 Si vous souhaitez avoir la possibilité de répondre à une alerte de stratégie en envoyant une notification de rappel à l’utilisateur associé, vous devez créer au moins un modèle de notification dans votre organisation. Les champs du modèle d’avis sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes, et la création d’un modèle de notification personnalisé pour chaque stratégie de conformité des communications est recommandée.
 
@@ -290,7 +307,7 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
 
 8. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
 
-## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Étape 7 (facultative) : tester votre stratégie de conformité des communications
+## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Étape 8 (facultative) : tester votre stratégie de conformité des communications
 
 Après avoir créé une stratégie de conformité des communications, il est bon de la tester pour vous assurer que les conditions que vous avez définies sont correctement appliquées par la stratégie. Vous pouvez également tester vos stratégies de protection contre la perte de données [(DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité des communications incluent des types d’informations sensibles. Veillez à laisser à vos stratégies le temps de s’activer afin que les communications que vous souhaitez tester soient capturées.
 
@@ -307,7 +324,7 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
 
 4. Corriger l’alerte à l’aide des contrôles de correction et vérifier que l’alerte est correctement résolue.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Après avoir effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
 

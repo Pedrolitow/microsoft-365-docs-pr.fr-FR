@@ -16,20 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: ecb4a580eb3ada9bcb3d38a8bdfdbc12c9dc7107
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
+ms.openlocfilehash: d34d2e2348c2e2319e31410c144565108ec9ae5f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049347"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241574"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md#step-2-publish-retention-labels).
+> Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md).
 
 L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité de les appliquer automatiquement au contenu qui remplit les conditions spécifiées. Dans ce cas, les membres de votre organisation n’ont pas besoin d’appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
@@ -59,59 +59,29 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 > - Application d’une étiquette de rétention par défaut pour SharePoint et Outlook
 > - Application d’une étiquette de rétention pour les e-mails à l’aide de règles Outlook
 >
-> Pour ces scénarios, voir [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md).
+> Pour ces scénarios, consultez [Publier les étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de confidentialité](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, consultez les informations d’autorisation pour la[gestion des enregistrements](get-started-with-records-management.md#permissions) ou la [gouvernance des informations](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en fonction de la solution que vous utilisez.
+
+Vérifiez que vous avez [créé les étiquettes de rétention](file-plan-manager.md#create-retention-labels)que vous souhaitez appliquer aux éléments.
+
+## <a name="how-to-create-an-auto-apply-retention-label-policy"></a>Comment créer une stratégie d’étiquette de rétention d’application automatique
 
 Déterminez avant de créer votre stratégie d’étiquette de rétention si elle sera **adaptative** ou **statique.** Pour plus d’informations, voir étendues de stratégie adaptative ou statique [pour la rétention.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si vous décidez d’utiliser une stratégie adaptative, vous devez créer une ou plusieurs étendues adaptatives avant de créer votre stratégie d’étiquette de rétention, puis les sélectionner au cours du processus de création de stratégie d’étiquette de rétention. Pour obtenir des instructions, [consultez les informations de configuration pour les étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
-
-## <a name="how-to-auto-apply-a-retention-label"></a>Application automatique d’étiquettes de rétention
-
-Tout d’abord, créez votre étiquette de rétention. Créez ensuite une stratégie automatique pour appliquer l’étiquette. Si vous avez déjà créé votre étiquette de rétention, passez à [Création d’une stratégie automatique](#step-2-create-an-auto-apply-policy).
-
-Les instructions de navigation varient selon que vous utilisez ou non [la gestion des enregistrements](records-management.md). Des instructions sont fournies pour les deux scénarios.
-
-### <a name="step-1-create-a-retention-label"></a>Étape 1 : créer une étiquette de rétention
-
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
-    
-    - Si vous utilisez la gestion des enregistrements :
-        - **Solutions** > **Gestion des enregistrements** > **Plan de fichiers** onglet > **+ Créer une étiquette** > **Étiquette de rétention**
-        
-    - Si vous n’utilisez pas la gestion des enregistrements :
-       - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
-    
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
-
-2. Suivez les instructions de l’Assistant pour effectuer la configuration.
-    
-    Pour plus d’informations sur les paramètres de rétention, voir Paramètres pour [conserver et supprimer du contenu.](retention-settings.md#settings-for-retaining-and-deleting-content) Toutefois, si l’étiquette est utilisée pour les pièces [jointes](#auto-apply-labels-to-cloud-attachments)cloud, veillez à configurer le début de la période de rétention sur « Lorsque les éléments ont **été étiquetés**».
-    
-    Si vous utilisez la gestion des enregistrements :
-    
-    - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
-    
-    - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
-
-3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé**. 
-
-Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer la configuration **Modifier l’étiquette de rétention** qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
-
-### <a name="step-2-create-an-auto-apply-policy"></a>Étape 2 : créer une stratégie d’application automatique
 
 Lorsque vous créez une stratégie d’application automatique, vous sélectionnez une étiquette de rétention pour l’appliquer automatiquement à du contenu, en fonction des conditions spécifiées.
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
-    - Si vous utilisez la gestion des enregistrements : **Gouvernance d’informations** :
-        - **Solutions** > **Gestion des enregistrements** > **Stratégies des étiquettes** onglet > **Auto-appliquer une étiquette**
+    - Si vous utilisez la gestion des enregistrements :
+        - **Solutions** > **Gestion des enregistrements** > > onglet des **Stratégies d’étiquette** > **Appliquer automatiquement une étiquette**
     
-    - Si vous n’utilisez pas la gestion des enregistrements :
+    - Si vous utilisez la gouvernance des informations :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies des étiquettes** onglet > **Auto-appliquer une étiquette**
     
-    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation? Sélectionnez tout d’abord **Afficher tout**.
 
 2. Entrez un nom et une description pour cette stratégie d’étiquetage automatique, puis sélectionnez **Suivant**.
 
@@ -129,7 +99,7 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
 
 6. Suivez les instructions de l'assistant pour sélectionner une étiquette de conservation, puis révisez et soumettez vos choix de configuration.
 
-Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer la configuration **Modifier une stratégie de rétention** qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
+Pour modifier une stratégie d’étiquette de rétention existante (le type de stratégie est **Appliquer automatiquement**), sélectionnez-la, puis sélectionnez l’option **Modifier** pour démarrer la configuration de l’action **Modifier la stratégie de rétention**.
 
 Une fois le contenu étiqueté à l'aide d'une stratégie d'étiquette d'application automatique, l'étiquette appliquée ne peut pas être automatiquement supprimée ou modifiée en modifiant le contenu ou la stratégie, ou par une nouvelle stratégie d'étiquette d'application automatique. Pour plus d'informations, voir [Une seule étiquette de rétention à la fois](retention.md#only-one-retention-label-at-a-time).
 

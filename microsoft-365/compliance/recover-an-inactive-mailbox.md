@@ -2,8 +2,8 @@
 title: Récupérer une boîte aux lettres inactive
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment récupérer le contenu d’une boîte aux lettres inactive dans Office 365 en le convertissant en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive.
-ms.openlocfilehash: d4776b5b11647409a1c96e3301e22e8b78fae91b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ce09d218d86e7cd949da1df80cc75a19fce64159
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188120"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241502"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
@@ -73,7 +73,7 @@ Utilisez la cmdlet **New-Mailbox** avec le  *paramètre InactiveMailbox*  pour r
 
    L’adresse SMTP principale de la boîte aux lettres inactive récupérée aura la même valeur que celle spécifiée par le paramètre *MicrosoftOnlineServicesID.*
 
-Après avoir récupéré une boîte aux lettres inactive, un nouveau compte d’utilisateur est également créé. Vous devez activer ce compte d’utilisateur en attribuant une licence. Pour attribuer une licence dans le Centre d'administration Microsoft 365, voir Ajouter des [utilisateurs et attribuer des licences en même temps.](../admin/add-users/add-users.md)
+Une fois que vous avez récupéré une boîte aux lettres inactive, un nouveau compte d’utilisateur est également créé. Vous devez activer ce compte d’utilisateur en attribuant une licence. Pour attribuer une licence dans le Centre d'administration Microsoft 365, voir Ajouter des [utilisateurs et attribuer des licences en même temps.](../admin/add-users/add-users.md)
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -89,7 +89,7 @@ Après avoir récupéré une boîte aux lettres inactive, un nouveau compte d’
 
     - **Microsoft 365 rétention avec verrouillage de conservation.** Si la boîte aux lettres inactive *a* été affectée à une stratégie de rétention avec verrouillage de conservation (appelée stratégie de rétention verrouillée), la boîte aux lettres récupérée est affectée à la même stratégie de rétention verrouillée. Pour plus d’informations sur les stratégies de rétention verrouillées, voir [ Utiliser le verrouillage de conservation pour limiter les modifications apportées aux stratégies de rétention et aux stratégies[d’étiquette de rétention](retention-preservation-lock.md).
 
-    - **Microsoft 365 stratégie de rétention sans verrouillage de conservation.** La boîte aux lettres inactive est supprimée de toute stratégie de rétention Microsoft 365 déverrouillée qui lui a été appliquée. Toutefois, la conservation pour litige est activée sur la boîte aux lettres récupérée pour empêcher la suppression de contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu plus ancien qu’un âge spécifique. Vous pouvez conserver la attente pour litige ou la supprimer. Pour plus d’informations, [voir Créer une attente pour litige.](create-a-litigation-hold.md)
+    - **Microsoft 365 rétention sans verrouillage de conservation.** La boîte aux lettres inactive est supprimée de toute stratégie de rétention Microsoft 365 déverrouillée qui lui a été appliquée. Toutefois, la conservation pour litige est activée sur la boîte aux lettres récupérée pour empêcher la suppression de contenu de boîte aux lettres en fonction des stratégies de rétention à l’échelle de l’organisation qui suppriment du contenu plus ancien qu’un âge spécifique. Vous pouvez conserver la attente pour litige ou la supprimer. Pour plus d’informations, [voir Créer une attente pour litige.](create-a-litigation-hold.md)
 
   - La période de récupération d'élément unique (définie par la propriété de boîte aux lettres **RetainDeletedItemsFor** ) est paramétrée sur 30 jours. En général, lorsqu'une boîte aux lettres est créée dans Exchange Online, cette période de rétention est définie sur 14 jours. En définissant ce paramètre sur la valeur maximale de 30 jours, vous gagnez du temps pour récupérer toutes les données définitivement supprimées (ou purgées) de la boîte aux lettres inactive. Vous pouvez également désactiver la récupération d'élément unique ou redéfinir la période de récupération d'élément unique sur la valeur par défaut de 14 jours. Pour plus d'informations, consultez la rubrique [Enable or disable single item recovery for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery).
 

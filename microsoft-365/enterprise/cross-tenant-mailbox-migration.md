@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218920"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241998"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -145,6 +145,11 @@ Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au [Centre d'
    > Vous aurez besoin de l’ID d’application de l’application de migration de boîte aux lettres que vous avez créée et du mot de passe (la question secrète) que vous avez configuré au cours de ce processus. En outre, selon la Microsoft 365 instance cloud que vous utilisez votre point de terminaison peut être différente. Reportez-vous à la page [Microsoft 365](/microsoft-365/enterprise/microsoft-365-endpoints) points de terminaison et sélectionnez l’instance correcte pour votre client et consultez l’Exchange Online Optimiser l’adresse requise et remplacer le cas échéant.
 
    ```powershell
+   
+   # Enable customization if tenant is dehydrated
+     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
@@ -360,7 +365,7 @@ L’envoi de lot de migration est également pris en charge à partir du nouveau
 
 Une fois que la boîte aux lettres passe de la source à la cible, vous devez vous assurer que les utilisateurs de messagerie locaux, à la fois dans la source et la cible, sont mis à jour avec la nouvelle adresse cible. Dans les exemples, le targetDeliveryDomain utilisé dans le déplacement **est contoso.onmicrosoft.com**. Mettez à jour les utilisateurs de messagerie avec cette adresse cible.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Devons-nous mettre à jour RemoteMailboxes dans la source sur site après le déplacement ?**
 
@@ -534,7 +539,7 @@ Actuellement, la fonctionnalité migrations de boîtes aux lettres entre locatai
 
 Non, après une migration de boîtes aux lettres entre les locataires, eDiscovery par rapport à la boîte aux lettres de l’utilisateur migré dans la source ne fonctionne pas. Cela est dû au fait qu’il n’existe plus de boîte aux lettres dans la source à rechercher, car la boîte aux lettres a été miggrée vers le client cible et appartient maintenant au client cible. eDiscovery, la migration post-boîte aux lettres peut uniquement être effectuée dans le client cible (où la boîte aux lettres existe maintenant). Si une copie de la boîte aux lettres source doit être persistante dans le client source après la migration, l’administrateur de la source peut copier le contenu dans une autre boîte aux lettres avant la migration pour les futures opérations eDiscovery sur les données.
 
-## <a name="known-issues"></a>Problèmes détectés
+## <a name="known-issues"></a>Problèmes connus
 
 - **Problème : la fonctionnalité de Teams post-migration dans le client source sera limitée.** Une fois la boîte aux lettres migrée vers le client cible, Teams dans le client source n’aura plus accès à la boîte aux lettres de l’utilisateur. Ainsi, si un utilisateur se connecte à Teams avec les informations d’identification du client source, il y aura une perte de fonctionnalités telles que l’impossibilité de mettre à jour votre image de profil, aucune application de calendrier et l’impossibilité de rechercher et rejoindre des équipes publiques.
 

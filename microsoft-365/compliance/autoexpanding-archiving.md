@@ -1,9 +1,9 @@
 ---
-title: Aperçu de l'archivage en auto-expansion
+title: En savoir plus sur l’archivage à extension automatique
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l'archivage en auto-expansion, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: d1833416ad4ff1d2dbb3241fde466e31bb6d8a74
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400046"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241334"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>Aperçu de l'archivage en auto-expansion
+# <a name="learn-about-auto-expanding-archiving"></a>En savoir plus sur l’archivage à extension automatique
 
 Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go de stockage supplémentaire sont disponibles. Dans le passé, lorsque le quota de stockage de 100 Go était atteint, les organisations deviez contacter Microsoft pour demander de l’espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Ce n’est plus le cas.
 
@@ -112,6 +112,8 @@ Cette section explique la fonctionnalité entre l’archivage en auto-expansion 
 
 - **Service d’importation :** Vous pouvez utiliser le service d Office 365 pour importer des fichiers PST dans l’archive en auto-expansion d’un utilisateur. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST vers la boîte aux lettres d’archivage de l’utilisateur.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour plus d’informations techniques sur l’archivage en auto-expansion, consultez [Microsoft 365 : FAQ sur l’archivage en auto-expansion](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).
+
+Si vous êtes prêt à activer l’archivage à extension automatique, consultez [Activer l’archivage à extension automatique](enable-autoexpanding-archiving.md).
