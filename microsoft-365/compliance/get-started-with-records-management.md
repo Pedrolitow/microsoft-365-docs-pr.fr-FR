@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère des contenus à forte valeur pour les obligations légales, professionnelles, ou réglementaires, mais vous ne savez pas où commencer ? Lisez des instructions pratiques pour démarrer.
-ms.openlocfilehash: 5ed6d75e8a7365e0dcb2aeba700bce225899f307
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: ba23aed20cbef05272bc33306df5fc1eebc6cb3f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785845"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241178"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
@@ -31,24 +31,28 @@ ms.locfileid: "60785845"
 
 Etes-vous prêt à démarrer la gestion de contenus à forte valeur de votre organisation relatifs aux obligations légales, professionnelles, ou réglementaires à l’aide d’une solution de gestion des enregistrements dans Microsoft 365? Suivez ces instructions pour démarrer :
 
-1. **Comprenez le fonctionnement de la solution de gestion des enregistrements** et identifiez les actions autorisées ou bloquées lorsque les documents et les messages électroniques sont des enregistrements déclarés : [En savoir plus sur la gestion des enregistrements](records-management.md).
+1. **Comprendre le fonctionnement de la rétention et de la suppression** dans Microsoft 365 et déterminer si vous devez utiliser des stratégies de rétention pour compléter les étiquettes de rétention qui gèrent les documents et les e-mails au niveau de l’élément : [En savoir plus sur les stratégies de rétention et les étiquettes de rétention](retention.md)
+    
+    Si nécessaire, [créer des stratégies de rétention](create-retention-policies.md) pour la gouvernance de base des données sur Microsoft 365 charges de travail.
+    
+2. **Comprendre la solution de gestion des enregistrements** et comment les étiquettes de rétention peuvent être utilisées pour autoriser ou bloquer des actions lorsque des documents et des e-mails sont déclarés des enregistrements : [En savoir plus sur la gestion des enregistrements](records-management.md)
 
-2. **Comprenez le fonctionnement de la rétention et des étiquettes de rétention** pour SharePoint et Exchange, car les étiquettes de rétention sont utilisées pour déclarer des enregistrements : [En savoir plus sur les stratégies et les étiquettes de rétention](retention.md)
-
-3. **Créez votre plan de gestion de fichiers pour les actions et les paramètres de rétention** en [important un plan existant](file-plan-manager.md#import-retention-labels-into-your-file-plan) si vous en avez un, ou créez des [étiquettes de rétention qui déclarent des enregistrements](declare-records.md).
+3. **Créer votre plan de fichiers pour les paramètres et actions de rétention et de suppression, et quand les éléments doivent être marqués comme enregistrements** en important un plan existant si vous en avez un, ou créez de nouvelles étiquettes de rétention : [Utilisez le plan de fichiers pour créer et gérer des étiquettes de rétention](file-plan-manager.md)
 
 4. **Publiez et appliquez vos étiquettes de rétention**. Les étiquettes de rétention sont des blocs de construction réutilisables dans plusieurs stratégies et qui peuvent être incorporés dans les flux de travail des utilisateurs :
 
     - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
     - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-records-management"></a>Conditions d’abonnement et d’acquisition de licence pour la gestion des enregistrements
+Indépendamment de ces étapes, **Utilisez des connecteurs pour importer et archiver des** de données tierces qui incluent des données provenant de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents. Lorsque ces données sont importées dans des boîtes aux lettres en ligne, elles prennent en charge non seulement la gestion des enregistrements à partir de Microsoft 365 Conformité, mais également d’autres solutions de conformité telles que la conformité des communications, la gestion des risques internes et eDiscovery. Pour plus d’informations, voir[En savoir plus sur les connecteurs pour les données tierces.](archiving-third-party-data.md)
+
+## <a name="subscription-and-licensing-requirements"></a>Conditions d’abonnement et de licence
 
 Différents abonnements prennent en charge la gestion des enregistrements et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
 
 Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft 365, voir les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour la gestion des enregistrements, voir la section [Gestion des enregistrements](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) ainsi que le fichier PDF téléchargeable associé aux exigences de licences au niveau des fonctionnalités.
 
-## <a name="permissions-required-for-records-management"></a>Autorisations requises pour la gestion des enregistrements
+## <a name="permissions"></a>Autorisations
 
 Les membres de votre équipe de conformité qui sont chargés de la gestion des enregistrements ont besoin d’autorisations pour accéder au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>. Par défaut, l’administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations pour cette administration limitée, nous vous recommandons d'ajouter les utilisateurs au groupe de rôles d’administrateur de la **Gestion des Enregistrements** qui autorise toutes les fonctionnalités liées à la gestion des enregistrements, y compris l'[examen et la vérification de la destruction](disposition.md).
 
@@ -58,12 +62,12 @@ Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défa
 
 Ces autorisations sont requises uniquement pour créer, configurer et appliquer des étiquettes de rétention qui déclarent des enregistrements et gère la suppression. La personne qui configure ces étiquettes n’a pas besoin d’accéder au contenu.
 
-## <a name="common-scenarios-for-records-management"></a>Scénarios courants de gestion des enregistrements
+## <a name="common-scenarios"></a>Scénarios courants
 
 Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins métier aux scénarios pris en charge par la gestion des enregistrements.
 
-> [!NOTE]
-> La gestion des enregistrements utilisant des étiquettes de rétention pour marquer un élément comme enregistrement, de nombreux scénarios dans ce tableau sont également répertoriés comme [scénarios courants pour les stratégies et les étiquettes de rétention](get-started-with-retention.md#common-scenarios-for-retention-policies-and-retention-labels).
+> [!TIP]
+> Vous devez vous conformer à une réglementation spécifique du secteur ? Consultez [Exigences réglementaires pour la gouvernance des informations et la gestion des enregistrements](retention-regulatory-requirements.md) pour obtenir des conseils spécifiques à la réglementation.
 
 |Je veux...|Documentation|
 |----------------|---------------|
@@ -81,10 +85,10 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Obtenez une preuve de destruction permanente du contenu à la fin de sa période de rétention.|[Destruction des enregistrements](disposition.md#disposition-of-records) |
 | Contrôler la manière dont les paramètres conserver et supprimer sont appliqués aux éléments | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
 
-## <a name="end-user-documentation-for-records"></a>Documentation de l’utilisateur final sur les enregistrements
+## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 
-Les étiquettes de rétention utilisées pour la gestion des enregistrements sont associées à une présence d’interface utilisateur dans Microsoft 365 Apps. Veillez à fournir des conseils aux utilisateurs finaux et à votre support technique avant de déployer les étiquettes sur votre réseau de production.
+Si vous utilisez des stratégies de rétention pour la gouvernance des données de base, elles fonctionnent généralement de manière discrète en arrière-plan sans intervention de l’utilisateur. Par conséquent, ils ont besoin de peu de documentation pour les utilisateurs. Les stratégies de rétention pour Teams informe les utilisateurs lorsque leurs messages ont été supprimés avec un lien vers [Messages Teams concernant les stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
-Pour aider les utilisateurs à appliquer des étiquettes de rétention dans SharePoint et OneDrive, incluant des informations sur le déverrouillage d’enregistrements pour la modification, consultez [Appliquer des étiquettes de rétention aux fichiers dans SharePoint ou OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
+En comparaison, les étiquettes de rétention étant présentes dans Microsoft 365 applications, veillez à fournir des conseils aux utilisateurs finaux et au support technique avant de déployer ces étiquettes sur votre réseau de production. Pour aider les utilisateurs à appliquer des étiquettes de rétention dans SharePoint et OneDrive, ainsi que des informations sur le déverrouillage des enregistrements à modifier, consultez [Appliquer des étiquettes de rétention aux fichiers dans SharePoint ou OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Toutefois, la documentation la plus efficace de l’utilisateur final sera un guide personnalisé pour les noms d’étiquette de rétention et les configurations que vous choisissez. Consultez le billet de blog suivant pour obtenir un package de téléchargement que vous pouvez utiliser pour former les utilisateurs et développer l’adoption : [Formation de l’utilisateur final pour les étiquettes de rétention dans M365, comment accélérer l’adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Toutefois, la documentation la plus efficace pour l’utilisateur final sera la personnalisation des instructions que vous fournissez pour les noms et configurations d’étiquettes de fidélisation que vous choisissez. Consultez la page suivante et les téléchargements que vous pouvez utiliser pour former vos utilisateurs : [Formation des utilisateurs finaux pour les étiquettes de rétention](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
