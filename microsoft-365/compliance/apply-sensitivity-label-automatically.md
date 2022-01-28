@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 91b8da486d3e9fbae6981f3038cbab8725065476
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: c3af2b179d5f33195ba61a7e236745d2b48c626a
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049371"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265714"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -62,10 +62,10 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
     
     - Les fichiers Office de Word (.docx), PowerPoint (.pptx) et Excel (.xlsx) sont pris en charge.
-        - Ces fichiers peuvent être étiquetés automatiquement au repos avant ou après la création des stratégies d’étiquette automatique. Les fichiers ne peuvent pas être étiquetés automatiquement s’ils font partie d’une session ouverte (le fichier est ouvert).
+        - Ces fichiers peuvent être étiquetés automatiquement au repos avant ou après la création des stratégies d’étiquette automatique. Les fichiers ne peuvent pas être étiquetés automatiquement s'ils font partie d'une session ouverte (le fichier est ouvert).
         - Les pièces jointes aux éléments de liste ne sont actuellement pas prises en charge et ne seront pas étiquetées automatiquement.
     - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
-    - Jusqu’à 100 stratégies d’attribution automatique de nom par client, chacune ciblant 100 sites (SharePoint ou OneDrive) lorsqu’ils sont spécifiés de manière individuelle. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
+    - Maximum de 100 politiques d'étiquetage automatique par locataire, chacune visant jusqu'à 100 sites (SharePoint ou OneDrive) lorsqu'elles sont spécifiées individuellement. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
     - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
     - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier. Si ce compte n’est plus dans Azure Active Directory Domain Services, l’étiquette ne sera pas appliquée, car ces valeurs ne peuvent pas être définies.
 
@@ -73,7 +73,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     
     - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
         - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers sont chiffrés à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md).
+        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide de [chiffrement de messages Office 365 (OME)](ome.md).
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Si l’étiquette est configurée pour [chiffrement](encryption-sensitivity-labels.md), ce chiffrement est appliqué lorsque l’expéditeur est de votre organisation, mais pas appliqué lorsque l’expéditeur est en dehors de votre organisation.
@@ -224,7 +224,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées ](create-sensitivity-labels.md)(à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes : 
   - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
-  - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
+  - Si les étiquettes que vous souhaitez utiliser pour l'étiquetage automatique sont configurées pour utiliser des marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
   - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
     - Lorsque la stratégie d’étiquetage automatique inclut des emplacements pour SharePoint ou OneDrive, vous devez configurer l’étiquette pour le paramètre **Attribuer des autorisations maintenant**.
     - Lorsque la stratégie d’étiquetage automatique s’applique uniquement à Exchange, vous pouvez configurer l’étiquette pour **Attribuer des autorisations maintenant** ou **Autoriser les utilisateurs à attribuer des autorisations** (pour les options Ne pas transférer ou Chiffrer uniquement).
@@ -233,7 +233,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 Le mode simulation est propre aux stratégies d’étiquetage automatique et est intégré au flux de travail. Vous ne pourrez étiqueter automatiquement les documents et les courriers que lorsque votre stratégie aura exécuté au moins une simulation.
 
-Le mode simulation prend en charge jusqu’à 1 000 000 fichiers mis en correspondance. Si le nombre de fichiers correspond à un nombre supérieur à celui d’une stratégie d’étiquetage automatique, vous ne pouvez pas activer la stratégie pour appliquer les étiquettes. Dans ce cas, vous devez reconfigurer la stratégie d’étiquetage automatique pour que moins de fichiers correspondent et afin de ré-exécuter la simulation. Ce maximum de 1 000 000 fichiers mis en correspondance s’applique uniquement au mode simulation et non à une stratégie d’étiquetage automatique déjà activée pour appliquer des étiquettes de confidentialité.
+Le mode simulation prend en charge jusqu’à 1 000 000 fichiers mis en correspondance. Si le nombre de fichiers correspond à un nombre supérieur à celui d’une stratégie d’étiquetage automatique, vous ne pouvez pas activer la stratégie pour appliquer les étiquettes. Dans ce cas, vous devez reconfigurer la politique d'étiquetage automatique de manière à ce que moins de fichiers soient mis en correspondance, puis relancer la simulation. Ce maximum de 1 000 000 fichiers mis en correspondance s’applique uniquement au mode simulation et non à une stratégie d’étiquetage automatique déjà activée pour appliquer des étiquettes de confidentialité.
 
 Flux de travail pour une stratégie d’étiquetage automatique :
 
@@ -247,7 +247,7 @@ Flux de travail pour une stratégie d’étiquetage automatique :
 
 5. Déployez en production.
 
-Le déploiement simulé s’exécute comme le paramètre WhatIf pour PowerShell. Vous voyez les résultats signalés comme si la stratégie d’étiquetage automatique avait appliqué l’étiquette sélectionnée en utilisant les règles que vous avez définies. Vous pouvez ensuite affiner vos règles de précision si nécessaire et exécuter de nouveau la simulation. Cependant, comme l’étiquetage automatique pour Exchange s’applique aux courriers envoyés et reçus, plutôt qu’aux courriers stockés dans les boîtes aux lettres, ne vous attendez pas à ce que les résultats des courriers dans une simulation soient cohérents, sauf si vous êtes en mesure d’envoyer et de recevoir exactement les mêmes courriers électroniques.
+Le déploiement simulé s’exécute comme le paramètre WhatIf pour PowerShell. Vous voyez les résultats signalés comme si la stratégie d’étiquetage automatique avait appliqué l’étiquette sélectionnée en utilisant les règles que vous avez définies. Vous pouvez ensuite affiner vos règles de précision si nécessaire et exécuter de nouveau la simulation. Cependant, comme l'étiquetage automatique pour Exchange s'applique aux courriels envoyés et reçus, plutôt qu'aux courriels stockés dans les boîtes aux lettres, ne vous attendez pas à ce que les résultats pour les courriels dans une simulation soient cohérents, à moins que vous puissiez envoyer et recevoir exactement les mêmes courriels.
 
 Le mode simulation vous permet également d’augmenter progressivement l’étendue de votre stratégie d’étiquetage automatique avant de procéder au déploiement. Par exemple, vous pouvez commencer avec un seul emplacement, comme un site SharePoint, avec une seule bibliothèque de documents. Ensuite, avec des modifications itératives, augmentez l’étendue sur plusieurs sites, puis sur un autre emplacement, comme OneDrive.
 
@@ -282,6 +282,11 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
     Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
+    
+    > [!NOTE]
+    > Lorsque [les comptes OneDrive sont supprimés](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (par exemple, lorsqu'un employé quitte l'organisation), l'emplacement est marqué comme un site SharePoint pour permettre un accès continu pendant la période de rétention OneDrive.
+    > 
+    > À ce stade de la suppression, les fichiers du compte OneDrive ne seront pas inclus dans le paramètre **Tout** pour l'emplacement des **comptes OneDrive** mais seront inclus dans le paramètre **Tout** pour l'emplacement des **sites SharePoint**. Tous les fichiers de ces comptes OneDrive supprimés affichent SharePoint comme leur emplacement source dans les résultats de simulation et les données d'audit.
 
 7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 
@@ -289,7 +294,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     - Vous pouvez sélectionner des types d’informations sensibles intégrés et personnalisés.
     - Pour les options partagées, vous pouvez choisir **uniquement avec des personnes au sein de mon organisation** ou **avec des personnes extérieures à mon organisation**.
 
-    Si votre seul emplacement est **Exchange**, ou si vous sélectionnez **Paramètres avancés**, vous pouvez sélectionner des conditions supplémentaires :
+    Si votre seul emplacement est **Exchange**, ou si vous sélectionnez **Règles avancées**, vous pouvez sélectionner d'autres conditions :
     - L’adresse IP de l’expéditeur est
     - Le domaine du destinataire est
     - Le destinataire est
@@ -312,7 +317,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
     Les options de configuration pour les types d’informations sensibles sont identiques à celles que vous sélectionnez pour l’étiquetage automatique pour les applications Office. Si vous souhaitez en savoir plus, consultez l’article [Configuration des types d’informations sensibles pour une étiquette](#configuring-sensitive-info-types-for-a-label).
 
-    Lorsque vous avez défini toutes les règles dont vous avez besoin et confirmé que leur état est activé, sélectionnez **suivant** pour passer à la sélection automatique d’une étiquette.
+    Lorsque vous avez défini toutes les règles dont vous avez besoin et confirmé que leur statut est activé, sélectionnez **Suivant** pour passer au choix d'une étiquette à appliquer automatiquement.
 
 9. Pour la page **Choisir une étiquette à appliquer automatiquement** : sélectionnez **+ Choisir une étiquette**, puis, sélectionnez une étiquette dans le volet **Choisir une étiquette de confidentialité**, et enfin, sélectionnez **Suivant**.
 
@@ -334,15 +339,15 @@ Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
     Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer la stratégie**.
 
-Les stratégies automatiques s’exécutent en continu jusqu’à ce qu’elles soient supprimées. Par exemple, les fichiers nouveaux et modifiés sont inclus dans les paramètres de stratégie actuels.
+Les polices automatiques fonctionnent en continu jusqu'à ce qu'elles soient supprimées. Par exemple, les fichiers nouveaux et modifiés sont inclus dans les paramètres de stratégie actuels.
 
 ### <a name="monitoring-your-auto-labeling-policy"></a>Surveillance de votre stratégie d’étiquetage automatique
 
-Une fois votre stratégie d’étiquetage automatique activée, vous pouvez afficher la progression de l’étiquetage des fichiers dans les emplacements SharePoint et OneDrive que vous avez choisis. Les e-mails ne sont pas inclus dans la progression de l’étiquetage, car ils sont automatiquement étiquetés à mesure qu’ils sont envoyés.
+Une fois votre stratégie d’étiquetage automatique activée, vous pouvez afficher la progression de l’étiquetage des fichiers dans les emplacements SharePoint et OneDrive que vous avez choisis. Les courriels ne sont pas inclus dans la progression de l'étiquetage car ils sont automatiquement étiquetés au fur et à mesure de leur envoi.
 
 La progression de l’étiquetage inclut les fichiers à étiqueter par la stratégie, les fichiers étiquetés au cours des 7 derniers jours, et le nombre total de fichiers étiquetés. En raison du nombre maximal de 25 000 fichiers étiquetés par jour, ces informations vous donnent une visibilité sur la progression actuelle de l’étiquetage de votre stratégie et le nombre de fichiers à étiqueter.
 
-Lorsque vous activez votre stratégie pour la première fois, la valeur 0 s’affiche pour les fichiers à étiqueter jusqu’à ce que les données les plus récentes soient récupérées. Ces informations de progression sont mises à jour toutes les 48 heures. Vous pouvez donc vous attendre à voir les données les plus récentes tous les deux jours. Lorsque vous sélectionnez une stratégie d’étiquetage automatique, vous pouvez voir plus de détails sur la stratégie dans un volet volant, qui inclut la progression de l’étiquetage par les 10 principaux sites. Les informations de ce volet volant peuvent être plus à jour que les informations de stratégie agrégées affichées sur la page principale de **l’étiquetage automatique**.
+Lorsque vous activez votre police pour la première fois, vous voyez initialement une valeur de 0 pour les fichiers à étiqueter jusqu'à ce que les dernières données soient récupérées. Ces informations de progression sont mises à jour toutes les 48 heures. Vous pouvez donc vous attendre à voir les données les plus récentes tous les deux jours. Lorsque vous sélectionnez une stratégie d’étiquetage automatique, vous pouvez voir plus de détails sur la stratégie dans un volet volant, qui inclut la progression de l’étiquetage par les 10 principaux sites. Les informations de ce volet volant peuvent être plus à jour que les informations de stratégie agrégées affichées sur la page principale de **l’étiquetage automatique**.
 
 Vous pouvez également afficher les résultats de votre stratégie d’étiquetage automatique à l’aide de l’[explorateur de contenu](data-classification-content-explorer.md) lorsque vous disposez des [autorisations](data-classification-content-explorer.md#permissions) appropriées :
 
@@ -366,14 +371,14 @@ New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocatio
 
 Cette commande crée une stratégie d’étiquetage automatique pour un site SharePoint que vous spécifiez. Pour un emplacement OneDrive, utilisez plutôt le paramètre *OneDriveLocation*.
 
-Pour ajouter des sites à une stratégie d’étiquetage automatique existante :
+Pour ajouter d'autres sites à une politique d'étiquetage automatique existante :
 
 ```powershell
 $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-Cette commande spécifie les URL SharePoint supplémentaires dans une variable qui est ensuite ajoutée à une stratégie d’étiquetage automatique existante. Pour ajouter à la place des emplacements OneDrive, utilisez le paramètre *AddOneDriveLocation* avec une variable différente, comme *$OneDriveLocations*.
+Cette commande spécifie les nouvelles URL SharePoint dans une variable qui est ensuite ajoutée à une politique d'étiquetage automatique existante. Pour ajouter à la place des emplacements OneDrive, utilisez le paramètre *AddOneDriveLocation* avec une variable différente, comme *$OneDriveLocations*.
 
 Pour créer une règle de stratégie d’étiquetage automatique :
 
@@ -395,15 +400,15 @@ Pour plus d’informations sur les applets de commande PowerShell qui prennent e
 
 ## <a name="tips-to-increase-labeling-reach"></a>Conseils pour augmenter la portée de l’étiquetage
 
-Bien que l’étiquetage automatique soit l’une des méthodes les plus efficaces pour classifier, étiqueter et protéger les fichiers Office appartenant à votre organisation, vérifiez si vous pouvez le compléter avec l’une des méthodes supplémentaires pour augmenter votre portée d’étiquetage :
+Bien que l'étiquetage automatique soit l'un des moyens les plus efficaces de classer, d'étiqueter et de protéger les fichiers Office que possède votre organisation, vérifiez si vous pouvez le compléter par l'une des méthodes suivantes pour augmenter la portée de votre étiquetage :
 
 - Avec SharePoint Syntex, vous pouvez [appliquer une étiquette de confidentialité à un modèle de compréhension de document](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), afin que les documents identifiés dans une bibliothèque SharePoint soient automatiquement étiquetés.
 
 - Lorsque vous utilisez le[Client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) :
 
-  - Pour les fichiers des magasins de données locaux tels que les partages réseau et les bibliothèques SharePoint Server : utilisez le [scanneur](/azure/information-protection/deploy-aip-scanner) pour découvrir des informations sensibles dans ces fichiers et les étiqueter de manière appropriée. Si vous envisagez de migrer ou de charger ces fichiers vers SharePoint dans Microsoft 365, utilisez le scanneur pour étiqueter les fichiers avant de les déplacer vers le cloud.
+  - Pour les fichiers des magasins de données locaux tels que les partages réseau et les bibliothèques SharePoint Server : utilisez le [scanneur](/azure/information-protection/deploy-aip-scanner) pour découvrir des informations sensibles dans ces fichiers et les étiqueter de manière appropriée. Si vous prévoyez de migrer ou de télécharger ces fichiers vers SharePoint dans Microsoft 365, utilisez le scanner pour étiqueter les fichiers avant de les déplacer vers le cloud.
 
-  - Si vous avez utilisé une autre solution d’étiquetage avant d’utiliser des étiquettes de confidentialité : utilisez PowerShell et [un paramètre avancé pour réutiliser les étiquettes](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) à partir de ces solutions.
+  - Si vous avez utilisé une autre solution d'étiquetage avant d'utiliser des étiquettes de sensibilité : Utilisez PowerShell et [un paramètre avancé pour réutiliser les étiquettes](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) de ces solutions.
 
 - Encouragez [d’étiquetage manuel](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) après avoir fourni aux utilisateurs une formation sur les étiquettes de confidentialité à appliquer. Lorsque vous êtes certain que les utilisateurs comprennent quelle étiquette appliquer, envisagez de configurer une étiquette par défaut et l’étiquetage obligatoire en tant que [paramètres de stratégie](sensitivity-labels.md#what-label-policies-can-do).
 

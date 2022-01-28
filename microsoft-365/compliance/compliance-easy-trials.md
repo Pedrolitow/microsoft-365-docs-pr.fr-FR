@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des essais de solutions de conformité
-ms.openlocfilehash: 6a6c07ef6a0353cfe6c97381f8858e86c34121a1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d18cb21e3dfd0a5c318ec41a50c2926c1f692ab
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665131"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265678"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>À propos de la version d’essai des solutions de conformité
 
@@ -33,7 +33,7 @@ Consultez les [conditions générales](terms-conditions.md) pour les essais de c
 
 ## <a name="set-up-a-compliance-trial"></a>Configurer une version d’essai de la conformité
 
-Vous pouvez vous inscrire à une version d’essai dans le Centre de conformité Microsoft 365 à l’aide du lien **Essais** dans le volet de navigation de gauche.
+Vous pouvez vous inscrire à un essai dans le [centre de conformité Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2077149) en utilisant le lien **Essais** dans le volet de navigation de gauche.
 
 ## <a name="licensing"></a>Gestion des licences
 
@@ -79,6 +79,11 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
     Tirez parti d’un flux de travail de bout en bout pour conserver, collecter, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Les équipes juridiques peuvent également gérer l’ensemble du processus de notification de conservation légale en communiquant avec les dépositaires impliqués dans un cas. [En savoir plus sur eDiscovery](ediscovery.md)
 
+- **Gouvernance des informations**
+
+    Automatisez la couverture de votre politique de rétention à l'aide de Adaptive Policy Scopes. Cette fonction vous permet de cibler dynamiquement les politiques de rétention sur des utilisateurs, des groupes ou des sites spécifiques. Ces politiques sont automatiquement mises à jour lorsque des changements surviennent dans votre organisation. En outre, les politiques de conservation utilisant des périmètres adaptatifs ne sont pas soumises à des limites d'emplacement. [En savoir plus sur les étendues de stratégie adaptative.](create-retention-policies.md)
+
+
 - **Protection des informations**
 
     Implémentez des [ Protection des données Microsoft Corporation](sensitivity-labels.md) avec [ des étiquettes de confidentialité et des stratégies de protection](dlp-learn-about-dlp.md) contre la perte de données pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve ou se déplace.
@@ -111,4 +116,4 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
 - **Gestion des enregistrements**
 
-    Utilisez les fonctionnalités intégrées de gestion des enregistrements pour automatiser la planification de rétention pour les enregistrements organisationnels réglementaires, juridiques et critiques pour l’entreprise. Elle prend en charge le cycle de vie complet du contenu, de la création à la collaboration, de la déclaration d’enregistrement, de la rétention basée sur les événements et de la suppression. [En savoir plus sur la gestion des enregistrements](records-management.md)
+    Utilisez les fonctionnalités intégrées de Records Management pour :       - classer le contenu en tant que document afin d'empêcher les utilisateurs de le modifier, conformément aux réglementations, aux lois ou à la politique de l'entreprise ; - appliquer automatiquement des étiquettes de conservation au contenu lorsqu'il correspond aux critères que vous spécifiez, à l'aide de politiques d'étiquetage automatique ; - utiliser des politiques de portée adaptative pour cibler dynamiquement vos politiques d'étiquetage de conservation sur des emplacements, sans limite quant au nombre d'emplacements inclus ; - bénéficier d'une prise en charge complète du cycle de vie du contenu, y compris la possibilité d'effectuer un examen des dispositions sur le contenu avant qu'il ne soit définitivement supprimé à la fin Pour plus d'informations sur la gamme complète de fonctionnalités de Microsoft Records Management, veuillez consulter la rubrique [En savoir plus sur Records Management](records-management.md). 
