@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 10bcaa4286f2d3036241ef44e411e7dd0e235bb6
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 920934e8961110aae3333a30979878483cac51b3
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049335"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265492"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -42,7 +42,7 @@ Les types d’informations sensibles sont des classifieurs basés sur des modèl
 - [Conformité des communications](communication-compliance.md)
 - [À l’intérieur de la gestion des risques](insider-risk-management-solution-overview.md)
 - [Stratégies de étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Gestion de la confidentialité](/privacy/solutions/privacymanagement/privacy-management)
+- [Microsoft Priva](/privacy/priva)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Parties fondamentales d’un type d’informations sensibles
 
@@ -106,7 +106,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- Identité 
 - Carte d’identité nationale d’identification 
 - DNI 
 - Registre national des personnes de la NIC 

@@ -20,14 +20,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft 365 conformité à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: 0957cb0f874964740697516a1cd8a37a2f8dca27
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 8d76d18ea37280bbd3765ebacea8dc8aac365347
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940733"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265654"
 ---
-# <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 conformité des données
+# <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365 conformité et extensibilité De Microsoft Priva
 
 Microsoft 365 solutions de conformité permettent aux organisations d’évaluer intelligemment leurs risques de conformité, de régir et de protéger les données sensibles et de répondre efficacement aux exigences réglementaires. Microsoft 365 conformité est riche en scénarios d’extensibilité et permet aux organisations d’adapter, d’étendre, d’intégrer, d’accélérer et de prendre en charge leurs solutions de conformité.
 
@@ -49,13 +49,19 @@ La plupart des connecteurs de données disponibles dans le Centre de conformité
 
 Pour les connecteurs de données dans le Centre de conformité Microsoft 365 fourni par l’un des partenaires de Microsoft, votre organisation aura besoin d’une relation professionnelle avec le partenaire avant de pouvoir déployer un connecteur.
 
-Pour les exigences en matière de licences pour les connecteurs de données tiers, consultez la section « Connecteurs de données » dans Microsoft 365 conseils en matière de licences pour la sécurité [& conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)
+Pour les exigences en matière de licences pour les connecteurs de données tiers, consultez la section « Connecteurs de données » dans Microsoft 365 conseils en matière de licences pour la sécurité [& conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="apis"></a>API
 
-Microsoft 365 api de conformité sont disponibles dans le SDK Protection des données Microsoft, l’API Microsoft Graph et l’API activité Office 365 gestion des données. Certaines API de conformité font partie d’un nouvel ensemble d’API de sécurité et de conformité qui permettent aux développeurs pour les clients Microsoft 365, les éditeurs de logiciels indépendants, les intégrateurs de système et les fournisseurs de services de sécurité gérés de créer des solutions de sécurité et de conformité à valeur élevée.
+Microsoft 365 conformité et les API Microsoft Priva sont disponibles dans le SDK Protection des données Microsoft, l’API Microsoft Graph et l’API activité Office 365 gestion des données. Certaines API de conformité font partie d’un nouvel ensemble d’API de sécurité et de conformité qui permettent aux développeurs pour les clients Microsoft 365, les éditeurs de logiciels indépendants, les intégrateurs de système et les fournisseurs de services de sécurité gérés de créer des solutions de sécurité et de conformité à valeur élevée.
 
-Pour en savoir plus sur la façon d’accéder Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
+Pour en savoir plus sur l’accès Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
+
+### <a name="microsoft-graph-apis-for-subject-rights-requests"></a>API microsoft Graph pour les demandes de droits d’objet
+
+Conformément à certaines réglementations en matière de confidentialité dans le monde entier, les individus peuvent effectuer des demandes de révision ou de gestion des données personnelles collectées par les entreprises. Ces demandes sont appelées demandes de droits d’objet au *sein* de la solution Demandes des droits d’objet de Microsoft Priva. Les demandes de droits d’objet sont également appelées demandes d’accès des personnes à l’aide de données  (DSR) ou DSAR *(Data Subject Subject Access Requests).* Les API Graph Microsoft pour les demandes de droits des personnes associées permettent aux développeurs d’intégrer Microsoft 365 des demandes de droits d’objet liées à l’ensemble de l’écosystème de confidentialité. Cette extensibilité basée sur l’API permet aux organisations de répondre aux demandes de droits de l’objet de manière unifiée sur l’ensemble de leur patrimoine de données couvrant les environnements Microsoft et non-Microsoft. Cette fonctionnalité facilite également l’automatisation à grande échelle et aide les organisations à respecter les réglementations du secteur plus efficacement sans retenter sur des processus manuels.
+
+Pour en savoir plus, [consultez les API microsoft Graph pour obtenir des droits d’objet.](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview)
 
 ### <a name="microsoft-information-protection-mip-sdk"></a>SDK Protection des données Microsoft (MIP)
 
@@ -73,11 +79,11 @@ Pour en savoir plus sur le SDK MIP, les conditions préalables, les scénarios s
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>API Graph Microsoft pour Teams DLP
 
-Les fonctionnalités de protection contre la perte de données [(DLP)](dlp-microsoft-teams.md) sont largement utilisées dans Microsoft Teams en particulier lorsque les organisations ont été décalées vers le travail à distance. Plus tôt cette [année,](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) nous avons annoncé la prévisualisation publique de l’API de notification de modification Graph Microsoft pour les messages Teams. Cette API permet aux développeurs de créer des applications qui peuvent écouter Microsoft Teams messages en temps quasi réel, puis d’implémenter des scénarios DLP pour les clients et les partenaires. En outre, Microsoft Graph API patch vous permet d’appliquer des actions DLP à Teams messages.
+Les fonctionnalités de protection contre la perte de données [(DLP)](dlp-microsoft-teams.md) sont largement utilisées dans Microsoft Teams en particulier lorsque les organisations ont été décalées vers le travail à distance. Récemment, [nous avons annoncé la disponibilité](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) générale de l’API de notification de modification Graph Microsoft pour les messages Teams. Cette API permet aux développeurs de créer des applications qui peuvent écouter Microsoft Teams messages en temps quasi réel, puis d’implémenter des scénarios DLP pour les clients et les partenaires. En outre, Microsoft Graph API patch vous permet d’appliquer des actions DLP à Teams messages.
 
-Ces deux API forment l’API microsoft Graph pour Teams DLP. Vous pouvez commencer en essayant [l’exemple d’application.](https://github.com/microsoftgraph/csharp-webhook-with-resource-data) Pour plus d’informations sur Microsoft Teams webhooks de messagerie, consultez la [documentation.](/graph/api/subscription-post-subscriptions)
+Ces deux API forment l’API microsoft Graph pour Teams DLP. Vous pouvez commencer en essayant [l’exemple d’application.](https://github.com/microsoftgraph/aspnetcore-webhooks-sample) Pour plus d’informations sur Microsoft Teams webhooks de messagerie, consultez la [documentation.](/graph/api/subscription-post-subscriptions)
 
-Pour les exigences de licence pour Teams DLP, voir Microsoft 365 licences pour la sécurité [et & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)
+Pour les exigences de licence pour Teams DLP, voir Microsoft 365 licences pour la sécurité [et & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>API microsoft Graph pour eDiscovery (prévisualisation)
 
@@ -97,4 +103,4 @@ Pour les conditions de licence requises pour l’utilisation des API d’exporta
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>API Microsoft Graph Connector (prévisualisation)
 
-Avec [les connecteurs Graph Microsoft,](/microsoftsearch/connectors-overview)les organisations peuvent indexer des données tierces afin qu’elles apparaissent dans Recherche Microsoft résultats. Cette fonctionnalité élargit les types de sources de contenu disponibles dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus vaste. Les données tierces peuvent être hébergées en local ou dans des clouds publics ou privés. À partir Advanced eDiscovery, nous activons la prévisualisation pour développeurs de la valeur de conformité intégrée de Microsoft 365 applications connectées. Cela permet la conformité des applications intégrées à l’écosystème Microsoft 365 pour permettre aux utilisateurs d’obtenir des expériences de conformité transparentes. Pour en savoir plus sur l’intégration des API Microsoft Graph Connector dans l’affichage de vos applications, voir Créer, mettre à jour et supprimer des [connexions](/graph/search-index-manage-connections)dans microsoft Graph .
+Avec [les connecteurs Graph Microsoft,](/microsoftsearch/connectors-overview)les organisations peuvent indexer des données tierces afin qu’elles apparaissent dans Recherche Microsoft résultats. Cette fonctionnalité élargit les types de sources de contenu disponibles dans vos applications de productivité Microsoft 365 et dans l’écosystème Microsoft plus vaste. Les données tierces peuvent être hébergées en local ou dans des clouds publics ou privés. À partir Advanced eDiscovery, nous activons la prévisualisation pour développeurs de la valeur de conformité intégrée de Microsoft 365 applications connectées. Cela permet la conformité des applications intégrées à l’écosystème Microsoft 365 pour permettre aux utilisateurs d’obtenir des expériences de conformité transparentes. Pour en savoir plus sur l’intégration des API Microsoft Graph Connector dans l’affichage de vos applications, voir Créer, mettre à jour et supprimer des [connexions](/graph/connecting-external-content-connectors-api-overview)dans microsoft Graph .

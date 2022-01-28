@@ -16,17 +16,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment consulter les journaux d’audit.
-ms.openlocfilehash: b07f308e5098ab5b7c9b091d3fe55b882cbb8649
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: bbc0aadff1f77e2720f87ca3b5d23a0aa920b3e9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242163"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265582"
 ---
 # <a name="review-audit-logs"></a>Examiner les journaux d’audit
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Microsoft 365 Lighthouse journaux d’audit enregistrent les actions qui génèrent une modification dans le Groupement ou d’Microsoft 365 services. Créer, modifier, supprimer, affecter et actions distantes créent tous des événements d’audit que vous pouvez examiner. Par défaut, l’audit est activé pour tous les clients. Elle ne peut pas être désactivée.
 
 ## <a name="before-you-begin"></a>Avant de commencer

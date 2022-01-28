@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
+ms.date: 01/27/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ae02edab2028cee78c59dfe643a073f1ea493ae
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884082"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265558"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
@@ -1519,8 +1519,8 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 </dt>
 <dt>Étape de mise à &lt; jour : étape de mise à &gt; jour, par exemple :
 <ul>
-<li>Recherche</li>
-<li>Télécharger</li>
+<li>Rechercher</li>
+<li>Téléchargement</li>
 <li>Installer</li>
 </ul>
 </dt>Chemin d’accès source : nom de partage de fichiers pour la convention d’attribution de noms universelle (UNC), nom de serveur 
@@ -1821,7 +1821,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour récupérer</i>
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1832,7 +1832,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour récupérer</i>
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -1877,7 +1877,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1889,7 +1889,7 @@ Antivirus Microsoft Defender service <i>signature dynamique pour</i> ignorer les
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -1944,7 +1944,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’ut
 <ul>
 <li>Version</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 <li>Durée</li>
 </ul>
 </dt>
@@ -1955,7 +1955,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative d’ut
 <ul>
 <li>Version VDM</li>
 <li>Timestamp</li>
-<li>Sans limite</li>
+<li>Aucune limite</li>
 </ul>
 </dt>
 <dt>Limite de persistance : limite de persistance de la signature fastpath.</dt>
@@ -2583,6 +2583,33 @@ Description :
 </td>
 <td >
 Antivirus Microsoft Defender recherche de virus est désactivée.
+</td>
+</tr>
+<tr>
+<th colspan="2">ID d’événement : 5013</th>
+</tr>
+<tr><td>
+Nom symbolique :
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Message :
+</td>
+<td >
+<b>La protection contre la falsification a bloqué une modification Antivirus Microsoft Defender.</b>
+</td>
+</tr>
+<tr>
+<td>
+Description :
+</td>
+<td >
+Si la protection contre la falsification est activée, toute tentative de modification des paramètres de Defender en cas de blocage et la création de l’ID d’événement 5013 indiquent quelle modification de paramètre a été bloquée.
 </td>
 </tr>
 <tr>

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 91fcc60c667ef656999ead1505227dfb39bd71a3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936209"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265486"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
@@ -29,6 +29,10 @@ ms.locfileid: "61936209"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
+
+- Correction d’un incident de produit introduit dans la 101.53.02 et qui a eu un impact sur plusieurs clients
 
 ## <a name="1015302-30121112153020"></a>101.53.02 (30.121112.15302.0)
 

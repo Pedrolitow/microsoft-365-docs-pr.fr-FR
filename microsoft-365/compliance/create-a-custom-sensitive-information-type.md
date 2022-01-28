@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 049d6b4045e19f5f9d4de7f52e5e8b99bd81a2b9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241926"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265534"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -157,7 +157,7 @@ La limite de nombre d’instances SIT s’applique lorsque des sits sont utilis�
 - Conformité des communications
 - Gestion des enregistrements
 - Microsoft Defender for Cloud Apps
-- Gestion de la confidentialité
+- Microsoft Priva
 
 Pour qu’un élément analysé réponde aux critères de règle, le nombre d’instances uniques d’un sit dans un élément unique doit être entre les valeurs min et max. Il s’agit du nombre **d’instances.**
 

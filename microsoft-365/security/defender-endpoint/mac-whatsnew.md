@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214212"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265690"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -36,15 +36,22 @@ ms.locfileid: "62214212"
 > [!NOTE]
 > À partir de la fin du mois de janvier 2022, Microsoft Defender pour endpoint (anciennement appelé Microsoft Defender ATP) sera référencé sous le nom de « Microsoft Defender » dans les expériences MDE pour l’utilisateur final sur macOS. 
 > 
-> Cette modification est actuellement disponible dans les canaux de mise à jour bêta (précédemment appelés Insider Fast) et Preview (précédemment appelés Insider Slow). La version minimale du produit qui inclut cette modification est 101.54.24.
-> 
-> Les utilisateurs finaux observeront les modifications suivantes : 
-> - Le chemin d’installation de l’application est devenu `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` .
-> - Dans l’expérience utilisateur, les occurrences de « Microsoft Defender ATP » ont été remplacées par « Microsoft Defender »
+> Cette modification est actuellement disponible dans les canaux de mise à jour bêta (précédemment appelés Insider Fast) et Preview (précédemment appelés Insider Slow). La version minimale du produit qui inclut cette modification est 101.56.35. Pour plus d’informations, voir les notes de publication ci-dessous correspondant à cette version.
 > 
 > Cette modification n’a pas d’impact sur `mdatp` l’outil en ligne de commande.
 >
 > **Action requise**: si votre entreprise possède des configurations personnalisées qui reposent sur le nom du produit ou le chemin d’installation de l’application, ces configurations doivent être mises à jour avec les nouvelles valeurs répertoriées ci-dessus.
+
+## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
+
+- L’application a été renommée « Microsoft Defender ATP » en « Microsoft Defender ». Les utilisateurs finaux observeront les modifications suivantes :
+  - Le chemin d’installation de l’application est devenu `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` .
+  - Dans l’expérience utilisateur, les occurrences de « Microsoft Defender ATP » ont été remplacées par « Microsoft Defender »
+- Résolution d’un problème : certaines applications VPN ne pouvaient pas se connecter en raison du filtre de contenu réseau distribué avec Microsoft Defender pour endpoint pour Mac
+- Nous avons résolu un problème détecté dans macOS 12.2 bêta 2 dans lequel le package d’installation n’a pas pu être ouvert en raison d’une modification du système d’exploitation qui empêche l’installation de packages avec certaines caractéristiques. Bien qu’il semble que cette modification du système d’exploitation ne soit pas incluse dans la version finale de macOS 12.2, il est probable qu’elle sera réintroduite dans une prochaine version de macOS. En tant que tel, nous encourageons tous les administrateurs d’entreprise à actualiser le package Microsoft Defender pour Endpoint dans leur console de gestion vers cette version du produit (ou une version plus récente).
+- Nous avons résolu un problème sur certains appareils M1 où le produit était bloqué avec des définitions de logiciel anti-programme malveillant non valides et n’a pas pu être mis à jour avec succès vers un ensemble de définitions de travail.
+- `mdatp health` la sortie a été étendue avec un attribut supplémentaire appelé qui peut être utilisé pour déterminer si l’accès disque total a été accordé à tous les composants de `full_disk_access_enabled` Microsoft Defender pour Endpoint pour Mac.
+- Améliorations des performances & résolutions de bogues
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 
