@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942979"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241562"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -79,7 +79,7 @@ Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en pr
 - Enquêteur Information Protection
 - Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur ces groupes, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
 - Administrateurs Information Protection
@@ -102,7 +102,7 @@ Pour déterminer le nombre d’éléments dans une catégorie de classification 
 > [!NOTE]
 > Si la carte affiche le message « Aucune donnée trouvée avec des informations sensibles », cela signifie qu’aucun élément de votre organisation n’a été classé comme étant un type d’informations sensibles ou qu’aucun élément n’a été analysé. Pour commencer à utiliser les étiquettes, voir :
 >- [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md)
->- [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)
+>- [Prise en main de la gestion des enregistrements](get-started-with-records-management.md)
 >- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Principales étiquettes de confidentialité appliquées au contenu
@@ -134,7 +134,7 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 
 > [!NOTE]
 > Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucun contenu n’a eu d’étiquette appliquée. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
->- [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)
+>- [Prise en main de la gouvernance des informations](get-started-with-information-governance.md)
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
 

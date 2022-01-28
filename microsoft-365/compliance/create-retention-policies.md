@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327540"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241538"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -40,7 +40,7 @@ Pour en savoir plus sur les stratégies de rétention et le fonctionnement de la
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les stratégies de confidentialité. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de confidentialité](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les stratégies de confidentialité. Si vous n'êtes pas connecté en tant qu'administrateur général, consultez les [ informations sur les autorisations pour la gouvernance de l'information](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
 
 Déterminez avant de créer votre stratégie de rétention si elle sera **adaptative** ou **statique.** Pour plus d’informations, voir étendues de stratégie adaptative ou statique [pour la rétention.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si vous décidez d’utiliser une stratégie adaptative, vous devez créer une ou plusieurs étendues adaptatives avant de créer votre stratégie de rétention, puis les sélectionner au cours du processus de création de stratégie de rétention. Pour obtenir des instructions, [consultez les informations de configuration pour les étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
 
@@ -90,8 +90,8 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
         
        Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](retention-settings.md#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
         
-        - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu'une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies de messages continueront d'être renvoyées dans les résultats d'eDiscovery pour les utilisateurs auxquels la politique n'a pas été attribuée.
-        - Pour les utilisateurs qui n’ont pas reçu la stratégie, les messages supprimés sont renvoyés dans les résultats de recherche de leur Teams, mais n’affichent pas le contenu du message suite à la suppression définitive de la stratégie affectée aux utilisateurs.
+        - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu’une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies des messages continueront d’être renvoyées dans les résultats eDiscovery des utilisateurs qui n’ont pas été affectés à la stratégie.
+        - Pour les utilisateurs qui n'ont pas été affectés à la stratégie, les messages supprimés en raison de cette stratégie seront affichés dans les résultats de recherche de Teams, mais le contenu du message ne sera pas affiché.
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 
@@ -232,3 +232,9 @@ Tout d’abord, la stratégie de rétention doit être distribuée aux emplaceme
 Lorsque les paramètres de la stratégie de rétention sont déjà appliqués au contenu, une modification de la configuration de la stratégie est automatiquement appliquée à ce contenu en plus du contenu qui vient d’être identifié.
 
 Certains paramètres ne peuvent pas être modifiés après la création et l’enregistrement de la stratégie, notamment le nom de la stratégie de rétention, le type d’étendue (adaptatif ou statique) et les paramètres de rétention à l’exception de la période de rétention.
+
+## <a name="next-steps"></a>Prochaines étapes
+
+Si certains éléments pour Exchange, SharePoint, OneDrive ou Groupes Microsoft 365 ont besoin de paramètres de rétention différents des paramètres de stratégie de rétention que vous avez configurés, [créez des étiquettes de rétention pour ces exceptions.](create-retention-labels-information-governance.md)
+
+Toutefois, si vous cherchez à gérer le cycle de vie d'éléments de grande valeur pour des raisons commerciales, juridiques ou réglementaires, [Utilisez le plan de gestion de fichiers pour créer et gérer des étiquettes de rétention](file-plan-manager.md).

@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166745"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244474"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 
@@ -35,7 +35,7 @@ Microsoft Defender pour point de terminaison inclut une protection nouvelle gén
 - [Mises à jour produit et protection dédiée](manage-updates-baselines-microsoft-defender-antivirus.md) qui comprend les mises à jour liées au maintien de l’Antivirus Microsoft Defender à jour.
 
 > [!TIP]
-> La protection de nouvelle génération est incluse dans Microsoft Defender pour point de terminaison Plan 1 (prévisualisation) et Plan 2. [En savoir plus sur Defender pour Endpoint Plan 1 (prévisualisation) et Plan 2](defender-endpoint-plan-1-2.md)
+> La protection de nouvelle génération est incluse dans Microsoft Defender pour Endpoint Plan 1 et Plan 2. [En savoir plus sur Defender pour Endpoint Plan 1 et Plan 2](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>Essayez une version de démonstration !
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e14eec3cd24604a1aedc12683b37d12c2fb6f377
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213672"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241770"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -81,7 +81,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 
 **Notes de bas de page :**
 
-<sup>\*</sup> N’inclut pas de texte de justification pour supprimer une étiquette ou abaisser le niveau de classification pour le moment
+<sup>\*</sup> Le texte de justification pour supprimer une étiquette ou réduire le niveau de classification est en cours de déploiement
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Fonctionnalités d’étiquettes de confidentialité dans Outlook
 
