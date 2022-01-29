@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: b535d24bc295a28f2aebf5152c3771cc3e999202
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153149"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271741"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
-Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une *règle*. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
+Lorsque vous recherchez des informations sensibles dans un contenu, vous devez décrire ces informations dans ce que l'on appelle une *règle*. La prévention des pertes de données (DLP) comprend des règles pour les types d'informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Il se peut que vous souhaitiez ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, ce que vous pouvez faire en créant un type d'information sensible personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d'informations potentielles sur les cartes de crédit.
 
 Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informations sensibles intégrés. Pour obtenir la liste des types d’informations sensibles par défaut et des définitions XML, voir [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md).
 
@@ -47,10 +47,10 @@ Pour exporter le fichier XML, vous devez vous [connecter au Centre de sécurité
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-3. Saisissez ce qui suit pour créer un fichier XML mis en forme avec toutes ces données (`Set-content` est la partie de la cmdlet qui écrit le code XML dans le fichier).
+3. Créez un fichier XML formaté avec toutes ces données en tapant ce qui suit.
 
    ```powershell
-   Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\custompath\exportedRules.xml', $ruleCollections.SerializedClassificationRuleCollection)
    ```
 
    > [!IMPORTANT]
@@ -157,7 +157,7 @@ Vous obtenez maintenant quelque chose qui ressemble au XML suivant. Étant donn�
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Supprimer l’exigence de preuve crédible d’un type d’informations sensibles
 
-Maintenant que vous disposez d’un nouveau type d’informations sensibles que vous pouvez télécharger vers le Centre de sécurité &amp; conformité, la prochaine étape consiste à rendre la règle plus spécifique. Modifiez la règle de sorte qu’elle recherche uniquement un nombre à 16 chiffres qui passe la somme de contrôle, mais qu’elle ne nécessite pas de preuve (crédible) supplémentaire (par exemple, des mots clés). Pour ce faire, vous devez retirer la partie du XML qui recherche la preuve crédible. La preuve crédible est très utile pour réduire les faux positifs, car il existe généralement certains mots clés ou une date d’expiration près du numéro de carte de crédit. Si vous supprimez cette preuve, vous devez également ajuster votre probabilité de trouver un numéro de carte de crédit en abaissant le paramètre `confidenceLevel`, qui est défini sur 85 dans l’exemple.
+Maintenant que vous avez un nouveau type d'information sensible que vous pouvez télécharger dans le Centre de conformité &amp; de sécurité, l'étape suivante consiste à rendre la règle plus spécifique. Modifiez la règle de manière à ce qu'elle ne recherche qu'un nombre à 16 chiffres qui passe la somme de contrôle mais qui ne nécessite pas de preuve supplémentaire (corroborante), comme des mots-clés. Pour ce faire, vous devez supprimer la partie du XML qui recherche les preuves corroborantes. Les preuves corroborantes sont très utiles pour réduire les faux positifs. Dans ce cas, on trouve généralement certains mots clés ou une date d'expiration à proximité du numéro de carte de crédit. Si vous supprimez ces preuves, vous devez également ajuster le degré de confiance que vous avez dans le fait d'avoir trouvé un numéro de carte de crédit en diminuant la valeur de `confidenceLevel`, ce qui retourne 85 dans l'exemple.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -169,7 +169,7 @@ Maintenant que vous disposez d’un nouveau type d’informations sensibles que 
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>Rechercher des mots clés propres à votre organisation
 
-Vous voulez peut-être exiger des preuves crédibles, mais aussi des mots clés différents ou supplémentaires, et vous voulez aussi peut-être modifier l’endroit où rechercher ces preuves. Vous pouvez ajuster le paramètre `patternsProximity` afin de développer ou réduire la fenêtre pour la preuve probante autour du numéro à 16 chiffres. Pour ajouter vos propres mots clés, vous devez définir une liste de mots clés et la référencer dans votre règle. Le XML suivant ajoute les mots clés « company card » et « Contoso card » de sorte que tous les messages qui contiennent ces expressions au sein des 150 caractères d’un numéro de carte de crédit soient identifiés comme des numéros de carte de crédit.
+Vous voulez peut-être exiger des preuves crédibles, mais aussi des mots clés différents ou supplémentaires, et vous voulez aussi peut-être modifier l’endroit où rechercher ces preuves. Vous pouvez ajuster le paramètre `patternsProximity` afin de développer ou réduire la fenêtre pour la preuve probante autour du numéro à 16 chiffres. Pour ajouter vos propres mots clés, vous devez définir une liste de mots clés et la référencer dans votre règle. Le XML suivant ajoute les mots clés « company card » et « Contoso card » de sorte que tous les messages qui contiennent ces expressions au sein des 150 caractères d’un numéro de carte de crédit soient identifiés comme des numéros de carte de crédit.
 
 ```xml
 <Rules>
@@ -206,7 +206,7 @@ Pour télécharger votre règle, vous devez procéder comme suit.
 3. Dans PowerShell, saisissez la commande suivante.
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\custompath\MyNewRulePack.xml'))
    ```
 
    > [!IMPORTANT]
@@ -226,16 +226,21 @@ Pour commencer à utiliser la nouvelle règle afin de détecter des informations
 
 Voici les définitions des termes que vous avez rencontrés au cours de cette procédure.
 
-|**Terme**|**Définition**|
-|:-----|:-----|
-|Entité|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
-|Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent pour nos règles intégrées. Étant donné que tout ceci se passe dans le code, certaines variables ne figurent pas dans le fichier XML.|
+<br>
+
+****
+
+|Terme|Définition|
+|---|---|
+|Entity|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
+|Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent avec nos règles intégrées). Comme cela se passe dans le code, certaines des variables n'apparaissent pas dans le fichier XML.|
 |IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit.|
-|Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l’intérieur du paramètre `patternsProximity` pour l’entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
+|Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l'intérieur du paramètre `patternsProximity` pour l'entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
 |Modèle|Le modèle contient la liste de ce que le type sensible recherche. Cela inclut des mots clés, des expressions régulières et des fonctions internes, qui effectuent des tâches telles que la vérification des sommes de contrôle. Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques. Ceci est utile lors de la création d’un type d’informations sensibles qui renvoie un niveau de confiance élevé si des preuves crédibles sont trouvées et un niveau de confiance faible dans le cas contraire.|
 |confidenceLevel|Il s’agit du niveau de confiance appliqué lorsque le moteur DLP trouve une correspondance. Ce niveau de confiance est associé à une correspondance pour le modèle si les exigences du modèle sont remplies. C’est la mesure de confiance à prendre en considération lorsque vous utilisez des règles de flux de messagerie Exchange (également appelées règles de transport).|
-|patternsProximity|Lorsque nous trouvons ce qui ressemble à un modèle de numéro de carte de crédit, `patternsProximity` correspond à la proximité de recherche de preuves crédibles autour de ce numéro.|
-|recommendedConfidence|Il s’agit du niveau de confiance recommandé pour cette règle. La confiance recommandée s’applique aux entités et aux affinités. Pour les entités, ce nombre n’est jamais évalué par rapport au paramètre `confidenceLevel` pour le modèle. Il s’agit d’une simple suggestion pour vous aider à choisir un niveau de confiance, si vous voulez en appliquer un. Pour les affinités, le paramètre `confidenceLevel` du modèle doit être supérieur au nombre `recommendedConfidence` pour une action de règle de flux de messagerie à appeler. Le paramètre `recommendedConfidence` correspond au niveau de confiance par défaut utilisé dans les règles de flux de messagerie qui appelle une action. Si vous le souhaitez, vous pouvez modifier manuellement la règle de flux de messagerie à appeler pour le faire à partir du niveau de confiance du modèle.|
+|patternsProximity|Lorsque nous trouvons ce qui ressemble à un modèle de numéro de carte de crédit, `patternsProximity` correspond à la proximité de recherche de preuves corroborantes autour de ce numéro.|
+|recommendedConfidence|Il s’agit du niveau de confiance que nous recommandons pour cette règle. Le niveau de confiance recommandé s’applique aux entités et aux affinités. Pour les entités, ce nombre n’est jamais évalué par rapport au paramètre `confidenceLevel` pour le modèle. Il s’agit d’une simple suggestion pour vous aider à choisir un niveau de confiance, si vous voulez en appliquer un. Pour les affinités, le paramètre `confidenceLevel` du modèle doit être supérieur au nombre `recommendedConfidence` pour une action de règle de flux de messagerie à appeler. Le paramètre `recommendedConfidence` correspond au niveau de confiance par défaut utilisé dans les règles de flux de messagerie qui appelle une action. Si vous le souhaitez, vous pouvez modifier manuellement la règle de flux de courrier pour qu'il soit invoqué en fonction du niveau de confiance du modèle.|
+|
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
