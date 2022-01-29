@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne l’authentification DNS SMTP des entités nommées (DANE) pour sécuriser les communications électroniques entre les serveurs de messagerie.
-ms.openlocfilehash: 596e1b04576edc025eda8b3486b42c5e7e0b29bc
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 32c39859d9bfdf292fd9c7a315a0ee1ee08eae2e
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214268"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272029"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Fonctionnement de l’authentification DNS SMTP des entités nommées (DANE)
 
@@ -35,7 +35,7 @@ Après avoir reçu l’enregistrement TLSA authentique, le serveur de messagerie
 
 ### <a name="tlsa-resource-record"></a>Enregistrement de ressource TLSA
 
-L’enregistrement TLS Authentication (TLSA) permet d’associer le certificat X.509 d’un serveur ou la valeur de clé publique au nom de domaine qui contient l’enregistrement. Les enregistrements TLSA ne peuvent être fiables que si DNSSEC est activé sur votre domaine. Si vous utilisez un fournisseur DNS pour héberger votre domaine, il peut s’agit d’un paramètre proposé lors de la configuration d’un domaine avec eux. Pour en savoir plus sur la signature de zone DNSSEC, consultez ce lien : Vue d’ensemble de la signature de [zone DNSSEC | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
+L’enregistrement TLS Authentication (TLSA) permet d’associer le certificat X.509 d’un serveur ou la valeur de clé publique au nom de domaine qui contient l’enregistrement. Les enregistrements TLSA ne peuvent être fiables que si DNSSEC est activé sur votre domaine. Si vous utilisez un fournisseur DNS pour héberger votre domaine, il peut s’agit d’un paramètre proposé lors de la configuration d’un domaine avec eux. Pour en savoir plus sur la signature de zone DNSSEC, consultez ce lien : Vue d’ensemble de [la signature de zone DNSSEC | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
   
 Exemple d’enregistrement TLSA :
   
@@ -47,16 +47,16 @@ Il existe quatre champs configurables propres au type d’enregistrement TLSA :
 
 |Valeur  |Acronyme  |Description |
 |---------|---------|---------|
-|0<sup>1</sup>     |PKIX-TA          |Le certificat utilisé est l’ac publique d’ancrage d’autorisation de la chaîne d’autorisation X.509.          |
-|1<sup>1</sup>     |PKIX-EE         |Le certificat vérifié est le serveur de destination . Les vérifications DNSSEC doivent vérifier son authenticité.          |
+|01<sup></sup>     |PKIX-TA          |Le certificat utilisé est l’ac publique d’ancrage d’autorisation de la chaîne d’autorisation X.509.          |
+|11<sup></sup>     |PKIX-EE         |Le certificat vérifié est le serveur de destination . Les vérifications DNSSEC doivent vérifier son authenticité.          |
 |2     |DANE-TA         |Utilisez la clé privée du serveur à partir de l’arborescence X.509 qui doit être validée par un ancrage d’trust dans la chaîne d’confiance. L’enregistrement TLSA spécifie l’ancrage d’autorisation à utiliser pour valider les certificats TLS pour le domaine.         |
 |3     |DANE-EE         |Correspond uniquement au certificat du serveur de destination.           |
 
-<sup>1 Exchange Online</sup>suit les recommandations d’implémentation RFC selon que les valeurs de champ d’utilisation de certificat 0 ou 1 ne doivent pas être utilisées lorsque DANE est implémenté avec SMTP.   Lorsqu’un enregistrement TLSA dont la valeur du champ Utilisation du certificat est 0 ou 1 est renvoyé à Exchange Online, Exchange Online le traite comme non utilisable. Si tous les enregistrements TLSA sont inutilisables, Exchange Online n’effectue pas les étapes de validation DANE pour 0 ou 1 lors de l’envoi du message électronique. Au lieu de cela, en raison de la présence d’un enregistrement TLSA, Exchange Online applique l’utilisation de TLS pour envoyer le courrier électronique, l’envoyer si le serveur de messagerie de destination prend en charge TLS ou déposer le courrier électronique et générer une NDR si le serveur de messagerie de destination ne prend pas en charge TLS.     
+<sup>1</sup> Exchange Online suit les instructions d’implémentation RFC selon que les valeurs de champ d’utilisation de certificat 0 ou 1 ne doivent pas être utilisées lorsque DANE est implémenté avec SMTP.   Lorsqu’un enregistrement TLSA dont la valeur du champ Utilisation du certificat est 0 ou 1 est renvoyé à Exchange Online, Exchange Online le traite comme non utilisable. Si tous les enregistrements TLSA sont inutilisables, Exchange Online n’effectue pas les étapes de validation DANE pour 0 ou 1 lors de l’envoi du message électronique. Au lieu de cela, en raison de la présence d’un enregistrement TLSA, Exchange Online applique l’utilisation de TLS pour envoyer le courrier électronique, l’envoyer si le serveur de messagerie de destination prend en charge TLS ou déposer le courrier électronique et générer une NDR si le serveur de messagerie de destination ne prend pas en charge TLS.     
 
 Dans l’exemple d’enregistrement TLSA, le champ Utilisation du certificat est définie sur « 3 » ; les données d’association de certificats ('abc123... xyz789') correspond au certificat du serveur de destination uniquement.
 
-**Champ Sélecteur**: indique quelles parties du certificat du serveur de destination doivent être vérifiées. 
+**Champ Sélecteur** : indique quelles parties du certificat du serveur de destination doivent être vérifiées. 
 
 |Valeur  |Acronyme  |Description  |
 |---------|---------|---------|
@@ -73,11 +73,11 @@ Dans l’exemple d’enregistrement TLSA, le champ Sélecteur est défini sur «
 |1     |SHA-256         |Les données de l’enregistrement TSLA sont un hachage SHA-256 du certificat ou du SPKI.          |
 |2     |SHA-512         |Les données de l’enregistrement TSLA sont un hachage SHA-512 du certificat ou du SPKI.         |
 
-Dans l’exemple de l’enregistrement TLSA, le champ de type correspondant est « 1 » de sorte que les données d’association de certificat sont un hachage SHA-256 des informations de clé publique de l’objet du certificat de serveur de destination
+Dans l’exemple d’enregistrement TLSA, le champ de type correspondant est « 1 » de sorte que les données d’association de certificat sont un hachage SHA-256 des informations de clé publique de l’objet du certificat de serveur de destination
 
 **Données d’association** de certificat : spécifie les données de certificat utilisées pour la mise en correspondance avec le certificat de serveur de destination. Ces données dépendent de la valeur du champ sélecteur et de la valeur de type correspondante.
 
-Dans l’exemple de l’enregistrement TLSA, les données d’association de certificats sont définies sur « abc123... xyz789'. Étant donné que la valeur du champ Sélecteur dans l’exemple est définie sur « 1 » , elle fait référence à la clé publique du certificat de serveur de destination et à l’algorithme identifié pour être utilisé avec elle. Et comme la valeur du champ Type correspondant dans l’exemple est définie sur « 1 » , elle fait référence au hachage SHA-256 des informations de clé publique de l’objet à partir du certificat de serveur de destination.
+Dans l’exemple d’enregistrement TLSA, les données d’association de certificats sont définies sur « abc123... xyz789'. Étant donné que la valeur du champ Sélecteur dans l’exemple est définie sur « 1 » , elle fait référence à la clé publique du certificat de serveur de destination et à l’algorithme identifié pour être utilisé avec elle. Et comme la valeur du champ Type correspondant dans l’exemple est définie sur « 1 » , elle fait référence au hachage SHA-256 des informations de clé publique de l’objet à partir du certificat de serveur de destination.
 
 ## <a name="how-can-exchange-online-customers-use-smtp-dane-outbound"></a>Comment les Exchange Online peuvent-ils utiliser SMTP DANE Outbound ?
 
@@ -117,7 +117,7 @@ Il existe seulement deux scénarios dans lequel une défaillance SMTP DANE entra
 Actuellement, il existe quatre codes d’erreur pour DANE lors de l’envoi de messages électroniques Exchange Online. Microsoft met activement à jour cette liste de codes d’erreur. Les erreurs sont visibles dans :
 1.  Le Exchange du Centre d’administration via la vue Détails du suivi des messages.
 2.  Des NDR sont générées lorsqu’un message n’est pas envoyé en raison d’une défaillance DANE ou DNSSEC.
-3.  Outil Analyseur de connectivité à distance [Microsoft Analyseur de connectivité à distance.](https://testconnectivity.microsoft.com/tests/o365)
+3.  Outil Analyseur de connectivité à distance [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 |NDR Code  |Description  |
 |---------|---------|
@@ -170,13 +170,13 @@ Actuellement, il existe deux méthodes qu’un administrateur d’un domaine de 
 1. Adopter SMTP TLS-RPT (Transport Layer Security Reporting) introduit dans [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460) 
 2. Utiliser l’outil Analyseur de connectivité à distance [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)
 
-TLS-RPT est un mécanisme de rapport permettant aux expéditeurs de fournir des détails aux administrateurs de domaine de destination sur les réussites et les échecs DANE et MTA-STS avec ces domaines de [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) destination respectifs. Pour recevoir des rapports TLS-RPT, vous devez uniquement ajouter un enregistrement TXT dans les enregistrements DNS de votre domaine qui inclut l’adresse e-mail ou l’URI à qui vous souhaitez envoyer les rapports. Exchange Online envoie des rapports TLS-RPT au format JSON. 
+TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) est un mécanisme de rapport permettant aux expéditeurs de fournir des détails aux administrateurs de domaine de destination sur les réussites et les échecs DANE et MTA-STS avec ces domaines de destination respectifs. Pour recevoir des rapports TLS-RPT, vous devez uniquement ajouter un enregistrement TXT dans les enregistrements DNS de votre domaine qui inclut l’adresse e-mail ou l’URI à qui vous souhaitez envoyer les rapports. Exchange Online envoie des rapports TLS-RPT au format JSON. 
 
 Exemple d’enregistrement :
 
 :::image type="content" source="../media/compliance-trial/example-record.png" alt-text="Exemple d’enregistrement" lightbox="../media/compliance-trial/example-record.png":::
 
-La deuxième méthode consiste à utiliser l’analyseur de connectivité à distance [Microsoft Remote Connectivity Analyzer,](https://testconnectivity.microsoft.com/tests/o365)qui peut faire les mêmes vérifications DNSSEC et DANE par rapport à votre configuration DNS que Exchange Online fera lors de l’envoi de messages électroniques à l’extérieur du service. Il s’agit du moyen le plus direct de dépanner les erreurs dans votre configuration pour recevoir des messages électroniques de Exchange Online à l’aide de ces normes. 
+La deuxième méthode consiste à utiliser l’analyseur de connectivité à distance [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365), qui peut faire les mêmes vérifications DNSSEC et DANE par rapport à votre configuration DNS que Exchange Online fera lors de l’envoi de messages électroniques à l’extérieur du service. Il s’agit du moyen le plus direct de dépanner les erreurs dans votre configuration pour recevoir des messages électroniques de Exchange Online à l’aide de ces normes. 
 
 Lors du dépannage, les codes d’erreur ci-dessous peuvent être générés :
 

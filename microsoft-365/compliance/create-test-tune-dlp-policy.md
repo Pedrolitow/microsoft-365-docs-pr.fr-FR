@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez découvrir comment créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc31d067eaf2684c17a09d7b2731a5cc3500af76
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938936"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271945"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -44,34 +44,34 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
     
 2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
 
-3. Lors de la création du groupe de rôles, utilisez la **section** Choisir des rôles pour ajouter le rôle suivant au groupe de rôles : **DLP Compliance Management**.
+3. Lors de la création du groupe de rôles, utilisez **la section Choisir** des rôles pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
 4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
 
-Utilisez le rôle Gestion de la conformité **DLP** en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
+Utilisez le **rôle Gestion** de la conformité DLP en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
 
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP et non pour appliquer des stratégies.
 
-### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en prévisualisation
+### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
 
-Il existe des rôles et des groupes de rôles en prévisualisation que vous pouvez tester pour affiner vos contrôles d’accès.
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Protection des données Microsoft (MIP) en prévisualisation. Pour en savoir plus à ce sujet, voir [Rôles](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) dans le Centre de sécurité & conformité
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrateur de la protection des informations
-- Analyste de la protection des informations
-- Enquêteur de la protection des informations
-- Lecteur de protection des informations
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur les groupes de rôles, voir Groupes de [rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour plus d’informations, voir [Groupes de rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
-- Administrateurs de la protection des informations
-- Analystes de la protection des informations
-- Enquêteurs de la protection des informations
-- Lecteurs de protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Détection des informations sensibles par DLP
 
@@ -92,9 +92,9 @@ Voir [définitions d’entités de type Informations sensibles](sensitive-inform
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de savoir exactement où vous devez commencer avec l’implémentation de la protection contre la perte de données. Heureusement, les stratégies DLP peuvent être exécutés en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d Exchange’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Stratégie de protection contre la perte **de**  >  **données.** Choisissez **Créer une stratégie** à démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d Exchange’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Protection contre la perte **de** >  **données.** Choisissez **Créer une stratégie** à démarrer.
 
-Microsoft 365 fournit une gamme de modèles de stratégie [DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australien. Vous pouvez filtrer les modèles sur l’Australie et choisir Financial, Medical and Health et Privacy.
+Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australien. Vous pouvez filtrer les modèles sur l’Australie et choisir Financial, Medical and Health et Privacy.
 
 ![Option de choix du pays ou de la région.](../media/DLP-create-test-tune-choose-country.png)
 
@@ -130,7 +130,7 @@ Dans l’écran de révision final, cliquez sur **Créer** pour terminer la cré
 
 ## <a name="test-a-dlp-policy"></a>Tester une stratégie DLP
 
-Vous pouvez patienter et attendre que la stratégie soit déclenchée par une activité normale de l’utilisateur, ou vous pouvez essayer de la déclencher vous-même. Précédemment, j’ai lié à des définitions d’entités de type informations [sensibles,](sensitive-information-type-entity-definitions.md)qui vous fournit des informations sur la façon de déclencher des correspondances DLP.
+Vous pouvez patienter et attendre que la stratégie soit déclenchée par une activité normale de l’utilisateur, ou vous pouvez essayer de la déclencher vous-même. Précédemment, j’ai lié des [définitions d’entités de types](sensitive-information-type-entity-definitions.md) d’informations sensibles, qui vous fournissent des informations sur la façon de déclencher des correspondances DLP.
 
 Par exemple, la stratégie DLP que j’ai créée pour cet article détectera les numéros de fichiers fiscaux australiens (TFN). Selon la documentation, la correspondance est basée sur les critères suivants.
 
@@ -192,7 +192,7 @@ Après avoir enregistrer ces modifications dans les paramètres de stratégie, j
 
 ![Option d’afficher les conseils de stratégie en mode test.](../media/DLP-create-test-tune-show-policy-tips.png)
 
-Côté serveur (ou côté cloud si vous préférez), la modification peut ne pas prendre effet immédiatement, en raison de différents intervalles de traitement. Si vous modifiez une stratégie DLP qui affiche de nouveaux conseils de stratégie pour un utilisateur, il se peut que les modifications ne prennent pas effet immédiatement dans son client Outlook, qui recherche les modifications de stratégie toutes les 24 heures. Si vous souhaitez accélérer les choses pour les tests, vous pouvez utiliser ce correctif du Registre pour effacer l’horodat de dernier téléchargement à partir de la clé [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook téléchargez les dernières informations de stratégie la prochaine fois que vous les redémarrez et commencez à composer un message électronique.
+Côté serveur (ou côté cloud si vous préférez), la modification peut ne pas prendre effet immédiatement, en raison de différents intervalles de traitement. Si vous modifiez une stratégie DLP qui affiche de nouveaux conseils de stratégie pour un utilisateur, il se peut que les modifications ne prennent pas effet immédiatement dans son client Outlook, qui recherche les modifications de stratégie toutes les 24 heures. Si vous souhaitez accélérer les choses pour les tests, vous pouvez utiliser ce correctif du Registre pour effacer l’horodat de dernier téléchargement de la clé [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook téléchargez les dernières informations de stratégie la prochaine fois que vous les redémarrez et commencez à composer un message électronique.
 
 Si vous avez activé les conseils de stratégie, l’utilisateur commence à voir les conseils dans Outlook et peut vous signaler les faux positifs lorsqu’ils se produisent.
 
@@ -223,9 +223,9 @@ Une autre option consiste à augmenter le nombre d’instances afin qu’un faib
 
 ![Option de modification du nombre d’instances.](../media/DLP-create-test-tune-edit-instance-count.png)
 
-En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de correspondance (ou le niveau de confiance). Si votre type d’informations sensibles possède plusieurs modèles, vous pouvez ajuster la précision de correspondance dans votre règle, afin que votre règle ne corresponde qu’à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de correspondance de votre règle afin qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Pour plus d’informations sur les niveaux de confiance, voir comment utiliser le niveau [de confiance pour régler vos règles.](data-loss-prevention-policies.md#match-accuracy)
+En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de correspondance (ou le niveau de confiance). Si votre type d’informations sensibles possède plusieurs modèles, vous pouvez ajuster la précision de correspondance dans votre règle, afin que votre règle ne corresponde qu’à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de correspondance de votre règle afin qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Pour plus d’informations sur les niveaux de confiance, voir [Comment utiliser le niveau de confiance pour régler vos règles](data-loss-prevention-policies.md#match-accuracy).
 
-Enfin, si vous souhaitez obtenir encore un peu plus d’informations avancées, vous pouvez personnaliser n’importe quel type [d’informations](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)sensibles : par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots clés pour le numéro de permis de conduire australien, afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment faire à l’aide de XML et PowerShell, voir la personnalisation d’un [type d’informations sensibles intégré.](customize-a-built-in-sensitive-information-type.md)
+Enfin, si vous souhaitez obtenir encore un peu plus d’informations avancées, vous pouvez personnaliser [n’importe quel type d’informations](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) sensibles : par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots clés pour le numéro de permis de conduire australien, afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment faire à l’aide de XML et PowerShell, voir la personnalisation d’un [type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activer une stratégie DLP
 
@@ -233,10 +233,11 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte précisément et 
 
 ![Option d’activer la stratégie.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez que la stratégie prenne effet, Connecter au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
+Si vous attendez que la stratégie prenne effet, Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
 
-![Exécution de l’cmdlet dans PowerShell.](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 Après avoir exécuté la stratégie DLP, vous devez effectuer vos propres tests final pour vous assurer que les actions de stratégie attendues se produisent. Si vous essayez de tester des éléments tels que des données de carte de crédit, il existe des sites web en ligne avec des informations sur la façon de générer des exemples de carte de crédit ou d’autres informations personnelles qui passeront des sommes de contrôle et déclencheront vos stratégies.
 
 Les stratégies qui autorisent les substitutions utilisateur présentent cette option à l’utilisateur dans le cadre du conseil de stratégie.

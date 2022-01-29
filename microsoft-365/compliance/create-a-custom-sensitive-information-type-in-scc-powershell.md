@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.article: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,37 +15,43 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: d4d41ef638ecdc54e99fa6d52d9212189b0bc231
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4e9a6eb7c4766fa598b0a28f7632c7c3ed530f9e
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559783"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272065"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
-Cette rubrique vous montre comment utiliser PowerShell pour créer une *Règle de package* qui définit vos propres [Types d’informations sensibles](sensitive-information-type-entity-definitions.md) personnalisés. Vous devez savoir comment créer une expression régulière. À titre d’exemple, cette rubrique permet de créer un type d’informations sensibles personnalisé qui identifie un ID d’employé. Vous pouvez utiliser cet exemple de code XML comme point de départ de votre propre fichier XML. Si vous découvrez les types d’informations sensibles pour la première fois, consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md).
+Cet article vous montre comment créer un fichier de *package* de règles XML qui définit des [types d’informations sensibles personnalisés](sensitive-information-type-entity-definitions.md). Cet article décrit un type d’informations sensibles personnalisé qui identifie un ID d’employé. Vous pouvez utiliser l’exemple de XML de cet article comme point de départ pour votre propre fichier XML.
 
-Après avoir créé un fichier XML bien formé, vous pouvez le charger sur Microsoft 365 à l’aide de Microsoft 365 PowerShell. Ensuite, vous pouvez utiliser votre type d’informations sensibles personnalisé dans vos stratégies et vérifier qu’il détecte bien les informations sensibles comme souhaité.
+Pour plus d’informations sur les types d’informations sensibles, voir [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md).
+
+Une fois que vous avez créé un fichier XML bien formé, vous pouvez le télécharger dans Microsoft 365 à l’aide de PowerShell. Ensuite, vous êtes prêt à utiliser votre type d’informations sensibles personnalisé dans les stratégies. Vous pouvez tester son efficacité dans la détection des informations sensibles comme prévu.
 
 > [!NOTE]
-> Si vous n’avez pas besoin du contrôle parfait offert par PowerShell, vous pouvez créer des types d’informations sensibles personnalisés dans le centre de conformité. Pour en savoir plus, consulter [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
+> Si vous n’avez pas besoin du contrôle fin que PowerShell fournit, vous pouvez créer des types d’informations sensibles personnalisés dans le Centre de conformité Microsoft 365. Pour en savoir plus, consulter [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Clause d’exclusion de responsabilité importante
 
- En raison des différences dans les environnements client et les exigences de correspondance de contenu, le support Microsoft ne peut pas fournir de définitions de correspondance de contenu personnalisée, par exemple, en définissant des classifications personnalisées ou des modèles d’expressions régulières (« RegEx »). Pour le développement, le test et le débogage liés à la correspondance de contenu personnalisée, les clients Microsoft 365 doivent s’appuyer sur leurs ressources informatiques internes ou recourir à une ressource de conseil externe telle que Microsoft Consulting Services (MCS). Les ingénieurs du support peuvent fournir une assistance limitée pour la fonctionnalité, mais ils ne peuvent pas fournir de garanties en matière d’adéquation entre les obligations ou exigences d’un client et le développement de correspondances de contenu personnalisées. Dans le cadre de l’assistance susceptible d’être fournie, des exemples de modèles d’expression régulière peuvent être donnés à des fins de test. Le support peut également aider à résoudre un problème de modèle RegEx existant dont le déclenchement ne fonctionne pas comme prévu avec un exemple de contenu spécifique unique.
+Le support Microsoft ne peut pas vous aider à créer des définitions de correspondance de contenu.
 
-Voir [Éventuels problèmes de validation à prendre en compte](#potential-validation-issues-to-be-aware-of) dans cette rubrique.
+Pour le développement, les tests et le débogage de correspondance de contenu personnalisés, vous devez utiliser vos propres ressources informatiques internes ou utiliser des services de conseil, tels que Microsoft Consulting Services (MCS). Les ingénieurs du support Microsoft peuvent fournir une prise en charge limitée de cette fonctionnalité, mais ils ne peuvent pas garantir que les suggestions personnalisées de correspondance de contenu répondent entièrement à vos besoins.
+
+McS peut fournir des expressions régulières à des fins de test. Ils peuvent également fournir une assistance pour résoudre les problèmes d’un modèle RegEx existant qui ne fonctionne pas comme prévu avec un seul exemple de contenu spécifique.
+
+[Consultez les problèmes de validation potentiels à prendre en compte](#potential-validation-issues-to-be-aware-of) dans cet article.
 
 Pour plus d’informations sur le moteur Boost.RegEx (anciennement RegEx ++) utilisé pour traiter le texte, consultez [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
 > [!NOTE]
-> Si vous utilisez un caractère & (&) dans le cadre d’un mot clé dans votre type d’informations sensibles personnalisé, notez qu’il existe un problème connu. Vous devez ajouter un terme supplémentaire avec des espaces autour du caractère pour vous assurer que le caractère est correctement identifié, par exemple, L & P _et_ L&P.
+> Si vous utilisez un caractère & (&) dans le cadre d’un mot clé dans votre type d’informations sensibles personnalisé, vous devez ajouter un terme supplémentaire avec des espaces autour du caractère. Par exemple, n’utilisez _pas_ `L&P``L & P` .
 
 ## <a name="sample-xml-of-a-rule-package"></a>Exemple de code XML d’un package de règles
 
-Voici l’exemple de code XML du package de règles que nous allons créer dans cette rubrique. Les éléments et les attributs sont expliqués dans les sections ci-après.
-  
+Voici l’exemple de XML du package de règles que nous allons créer dans cet article. Les éléments et attributs sont expliqués dans les sections ci-dessous.
+
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
@@ -129,107 +135,121 @@ Voici l’exemple de code XML du package de règles que nous allons créer dans
 
 ## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>Quelles sont vos principales exigences ? [éléments Rule, Entity et Pattern]
 
-Avant de commencer, il est utile de comprendre la structure de base du schéma XML d’une règle et comment utiliser cette structure pour définir votre type d’informations sensibles personnalisé afin qu’il identifie le contenu approprié.
-  
-Une règle définit une ou plusieurs entités (types d’informations sensibles), et chaque entité définit un ou plusieurs modèles. Un motif est l’élément recherché par une stratégie lors de l’évaluation d’un contenu tel qu’un e-mail et des documents.
+Il est important que vous compreniez la structure de base du schéma XML d’une règle. Votre compréhension de la structure permettra à votre type d’informations sensibles personnalisé d’identifier le contenu pertinent.
 
-Dans cette rubrique, les marques XML utilisent la règle pour désigner les motifs qui définissent une entité, également appelée type d’informations sensibles. Par conséquent, lorsqu’une règle s’affiche, vous devez le comprendre comme une entité ou type d’informations sensibles, et pas comme conditions et actions.
-  
+Une règle définit une ou plusieurs entités (également appelées types d’informations sensibles). Chaque entité définit un ou plusieurs modèles. Un modèle est ce qu’une stratégie recherche lorsqu’elle évalue du contenu (par exemple, e-mail et documents).
+
+Dans le markup XML, « rules » signifie les modèles qui définissent le type d’informations sensibles. N’associez pas les références aux règles de cet article à des « conditions » ou des « actions » courantes dans d’autres fonctionnalités de Microsoft.
+
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Scénario le plus simple : entité avec un modèle
 
-Voici le scénario le plus simple : vous souhaitez que votre stratégie identifie le contenu qui comprend l’ID d’employé de votre organisation, sous la forme d’un nombre à neuf chiffres. Par conséquent, le modèle référence une expression régulière contenue dans la règle qui identifie le nombre à neuf chiffres. Tout contenu comprenant un nombre à neuf chiffres correspond au modèle.
-  
+Voici un scénario simple : vous souhaitez que votre stratégie identifie le contenu qui contient les ID d’employé à neuf chiffres utilisés dans votre organisation. Un modèle fait référence à l’expression régulière dans la règle qui identifie les nombres à neuf chiffres. Tout contenu contenant un nombre à neuf chiffres satisfait au modèle.
+
 ![Diagramme d’entité avec un modèle.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
-  
-Même s’il est simple, ce modèle peut identifier de nombreux faux positifs en faisant correspondre du contenu comprenant un nombre à neuf chiffres qui n’est pas nécessairement un ID d’employé.
-  
+
+Toutefois, ce modèle peut  identifier tout nombre à neuf chiffres, y compris les numéros plus longs ou d’autres types de numéros à neuf chiffres qui ne sont pas des ID d’employé. Ce type de correspondance indésirable est appelé *faux positif*.
+
 ### <a name="more-common-scenario-entity-with-multiple-patterns"></a>Scénario le plus courant : entité avec plusieurs modèles
 
-Pour cette raison, il est plus courant de définir une entité à l’aide de plusieurs modèles, où ces derniers identifient la preuve à l’appui (par exemple, un mot clé ou une date) en plus de l’entité (par exemple, un nombre à neuf chiffres).
-  
-Par exemple, pour augmenter la probabilité d’identifier le contenu qui contient un ID d’employé, vous pouvez définir un autre modèle qui identifie également une date d’embauche, et définir un autre modèle qui identifie une date d’embauche et un mot clé (par exemple, « ID d’employé ») en plus du nombre à neuf chiffres.
-  
+En raison du risque de faux positifs, vous utilisez généralement plusieurs modèles pour définir une entité. Plusieurs modèles fournissent des preuves à l’appui pour l’entité cible. Par exemple, des mots clés, des dates ou un autre texte peuvent aider à identifier l’entité d’origine (par exemple, le numéro d’employé à neuf chiffres).
+
+Par exemple, pour augmenter la probabilité d’identifier le contenu qui contient un ID d’employé, vous pouvez définir d’autres modèles à rechercher :
+
+- Modèle qui identifie une date d’embauche.
+- Modèle qui identifie à la fois une date d’embauche et le mot clé « ID d’employé ».
+
 ![Diagramme d’entité avec plusieurs modèles.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
-  
-Voici quelques aspects importants de cette structure à prendre en compte :
-  
-- Les modèles qui nécessitent plus de preuves ont un niveau de confiance plus élevé. Ceci est utile, car lorsque vous utilisez ultérieurement ce type d’informations sensibles dans une stratégie, vous pouvez utiliser des actions plus restrictives (par exemple, le blocage de contenu) avec uniquement les correspondances dont le niveau de confiance est le plus élevé, et vous pouvez utiliser les actions moins restrictives (par exemple, l’envoi de notification) avec les correspondances dont le niveau de confiance est le moins élevé.
 
-- Les éléments de soutien IdMatch et Match font référence à des regex (expressions régulières) et à des mots clés qui sont des enfants de l’élément Rule, pas de l’élément Pattern. Ces éléments de soutien sont référencés par le modèle, mais inclus dans la règle. Cela signifie qu’une seule définition d’un élément de soutien, par exemple, une expression régulière ou une liste de mots clés, peut être référencée par plusieurs entités et modèles.
+Il existe des points importants à prendre en compte pour plusieurs correspondances de modèle :
 
-## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Quelle entité devez-vous identifier ? [élément Entity, attribut id]
+- Les modèles qui nécessitent plus de preuves ont un niveau de confiance plus élevé. En fonction du niveau de confiance, vous pouvez prendre les mesures suivantes :
+  - Utilisez des actions plus restrictives (par exemple, bloquer du contenu) avec des correspondances plus à niveau de confiance.
+  - Utilisez des actions moins restrictives (par exemple, envoyer des notifications) avec des correspondances de confiance inférieure.
+
+- La prise en `IdMatch` charge et `Match` les éléments font référence à des RegExes et des mots clés qui sont en fait des enfants `Rule` de l’élément, et non le `Pattern`. Ces éléments de prise en charge sont référencés par `Pattern`le , mais sont inclus dans le `Rule`. Ce comportement signifie qu’une définition unique d’un élément de prise en charge, telle qu’une expression régulière ou une liste de mots clés, peut être référencé par plusieurs entités et modèles.
+
+## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Quelle entité devez-vous identifier ? [Élément Entity, attribut ID]
 
 Une entité est un type d’informations sensibles, tel qu’un numéro de carte de crédit, associé à un modèle bien défini. Chaque entité possède un GUID unique en tant qu’ID.
-  
+
 ### <a name="name-the-entity-and-generate-its-guid"></a>Nommer l’entité et générer son GUID
 
-1. Dans l’éditeur XML de votre choix, ajoutez les éléments Règles et Entité.
-2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée – dans cet exemple, l’ID d’employé. Plus tard, vous allez ajouter le nom de l’entité à la section de chaînes localisées et ce nom s’affiche dans l’interface utilisateur lorsque vous créez une stratégie.
-3. Générez un GUID pour votre entité. Vous disposez de plusieurs méthodes pour générer des GUID, mais cette opération peut être effectuée facilement dans PowerShell en saisissant **[guid]::NewGuid()**. Plus tard, vous ajouterez également le GUID de l’entité à la section de chaînes localisées.
-  
+1. Dans l’éditeur XML de votre choix, ajoutez les éléments `Rules` `Entity` .
+2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée, telle que L’ID d’employé. Plus tard, vous ajouterez le nom de l’entité à la section chaînes localisées et ce nom apparaîtra dans le centre d’administration lorsque vous créerez une stratégie.
+3. Générez un GUID unique pour votre entité. Par exemple, dans Windows PowerShell, vous pouvez exécuter la commande`[guid]::NewGuid()`. Plus tard, vous ajouterez également le GUID à la section de chaînes localisées de l’entité.
+
 ![Marques XML montrant les éléments Rules et Entity.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
-  
+
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Quel modèle voulez-vous faire correspondre [élément Pattern, élément IdMatch et élément Regex]
 
-Le modèle contient la liste des éléments recherchés par le type d’informations sensibles. Cela peut inclure des regex, des mots clés et des fonctions intégrées (qui effectuent des tâches telles que l’exécution des expressions régulières pour rechercher des dates ou des adresses). Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques.
-  
-Le point commun de tous les modèles suivants est qu’ils référencent tous la même expression régulière, qui recherche un nombre à neuf chiffres (\d{9}) entre espaces (\s) … (\s). Cette expression régulière est référencée par l’élément IdMatch et est la condition requise commune à tous les modèles qui recherchent l’entité Employee ID. IdMatch est l’identificateur que le modèle cherche à faire correspondre, par exemple, comme ID d’employé, numéro de carte de crédit ou numéro de sécurité sociale. Un élément Pattern doit avoir exactement un élément IdMatch.
-  
+Le modèle contient la liste de ce que le type d’informations sensibles recherche. Le modèle peut inclure des regex, des mots clés et des fonctions intégrées. Les fonctions exécutent des tâches telles que l’exécution de RegExes pour rechercher des dates ou des adresses. Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques.
+
+Dans le diagramme suivant, tous les modèles font référence à la même expression régulière. Cette regEx recherche un nombre à neuf chiffres entouré `(\d{9})` d’espaces.`(\s) ... (\s)` Cette expression régulière est référencé par `IdMatch` l’élément et est la condition courante pour tous les modèles qui recherchent l’entité Employee ID. `IdMatch` est l’identificateur que le modèle tente de faire correspondre. Un `Pattern` élément doit avoir exactement un `IdMatch` élément.
+
 ![Marques XML montrant plusieurs éléments Pattern faisant référence à un seul élément Regex.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
-  
-Lorsqu’il est satisfait, le motif renvoie un nombre et un niveau de confiance, que vous pouvez utiliser dans les conditions de votre stratégie. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie, vous pouvez modifier le nombre et le niveau de confiance comme illustré ici. La notion de niveau de confiance (également appelée précision de correspondance) est expliquée plus loin dans cette rubrique.
-  
+
+Une correspondance de modèle satisfait renvoie un nombre et un niveau de confiance que vous pouvez utiliser dans les conditions de votre stratégie. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie, vous pouvez modifier le nombre et le niveau de confiance, comme illustré dans le diagramme suivant. Le niveau de confiance (également appelé précision de correspondance) est expliqué plus loin dans cet article.
+
 ![Nombre d’instances et options de précision de correspondance.](../media/sit-confidence-level.png)
-  
-Lorsque vous créez une expression régulière, n’oubliez pas que des problèmes peuvent survenir. Par exemple, si vous écrivez et chargez une regex qui identifie trop de contenu, cela peut nuire aux performances. Pour en savoir plus sur ces problèmes potentiels, consultez la section ultérieure [Problèmes de validation éventuels à prendre en compte](#potential-validation-issues-to-be-aware-of).
-  
+
+Les expressions régulières sont puissantes, il existe donc des problèmes que vous devez connaître. Par exemple, un RegEx qui identifie trop de contenu peut affecter les performances. Pour en savoir plus sur ces problèmes, consultez la [section « Problèmes de validation](#potential-validation-issues-to-be-aware-of) potentiels » à connaître plus loin dans cet article.
+
 ## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Voulez-vous demander des preuves supplémentaires ? [élément Match, attribut minCount]
 
-En plus de l’élément IdMatch, un modèle peut utiliser l’élément Match pour demander des preuves à l’appui supplémentaires, telles qu’un mot clé, une regex, une date ou une adresse.
-  
-Un élément Pattern peut comporter plusieurs éléments Match ; ces éléments sont inclus directement dans l’élément Pattern ou combinés à l’aide de l’élément Any. Les éléments Match sont joints par un opérateur implicite AND ; tous les éléments Match doivent être satisfaits pour que le modèle corresponde. Vous pouvez utiliser l’élément Any pour introduire les opérateurs AND ou OR (plus d’informations dans une section ultérieure).
-  
-Vous pouvez utiliser l’attribut facultatif minCount pour spécifier le nombre d’instances d’une correspondance qui doivent être trouvées pour chaque élément Match. Par exemple, vous pouvez spécifier qu’un modèle est satisfait uniquement lorsqu’au moins deux mots clés d’une liste de mots clés sont trouvés.
-  
+En plus, `IdMatch`un modèle peut `Match` utiliser l’élément pour exiger des preuves justificatives supplémentaires, telles qu’un mot clé, regEx, date ou adresse.
+
+A `Pattern` peut inclure plusieurs éléments `Match` :
+
+- Directement dans l’élément `Pattern` .
+- Combiné à l’aide de l’élément `Any` .
+
+`Match` sont joints par un opérateur IMPLICITE AND. En d’autres termes, tous `Match` les éléments doivent être satisfaits pour que le modèle corresponde.
+
+Vous pouvez utiliser l’élément `Any` pour introduire des opérateurs AND ou OR. L’élément `Any` est décrit plus loin dans cet article.
+
+Vous pouvez utiliser l’attribut facultatif `minCount` pour spécifier le nombre d’instances d’une correspondance à trouver pour chaque `Match` élément. Par exemple, vous pouvez spécifier qu’un modèle est satisfait uniquement lorsque deux mots clés d’une liste de mots clés sont trouvés.
+
 ![Marques XML montrant l’élément Match avec l’attribut minOccurs.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
-  
+
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Mots clés [éléments Keyword, Group et Term, attributs matchStyle et caseSensitive]
 
-Lorsque vous identifiez les informations sensibles, telles qu’un ID d’employé, vous pouvez demander des mots clés comme preuve probante. Par exemple, en plus de faire correspondre un nombre à neuf chiffres, vous souhaiterez peut-être rechercher des mots tels que « carte », « badge » ou « ID ». Pour ce faire, utilisez l’élément Keyword. L’élément Keyword possède l’attribut ID qui peut être référencé par plusieurs éléments Match dans plusieurs modèles ou entités.
-  
-Les mots clés sont inclus sous forme de liste d’éléments Term dans un élément Group. L’élément Group possède un attribut matchStyle avec deux valeurs possibles :
-  
-- **matchStyle="word"** La correspondance de mots identifie des mots entiers entourés par des espaces ou d’autres séparateurs. Vous devez toujours utiliser « word », sauf si vous devez faire correspondre des parties de mots ou des mots dans des langues asiatiques. 
-    
-- **matchStyle="string"** La correspondance de chaînes identifie les chaînes, peu importe ce qui les entoure. Par exemple, « id » correspondra à « bid» et à « idea ». Utilisez « string » uniquement lorsque vous recherchez des mots asiatiques ou si votre mot clé est inclus dans d’autres chaînes. 
-    
-Enfin, vous pouvez utiliser l’attribut caseSensitive de l’élément Term pour préciser que le contenu doit correspondre exactement au mot clé, notamment les lettres minuscules et majuscules.
-  
+Comme décrit précédemment, l’identification d’informations sensibles nécessite souvent des mots clés supplémentaires comme preuve corroborante. Par exemple, en plus de correspondre à un nombre à neuf chiffres, vous pouvez rechercher des mots tels que « carte », « badge » ou « ID » à l’aide de l’élément Keyword. L’élément `Keyword` possède un `ID` attribut qui peut être référencé par `Match` plusieurs éléments dans plusieurs modèles ou entités.
+
+Les mots clés sont inclus en tant que liste d’éléments `Term` dans un `Group` élément. L’élément `Group` possède un attribut `matchStyle` avec deux valeurs possibles :
+
+- **matchStyle="word »**: une correspondance de mot identifie des mots entiers entourés d’espaces ou d’autres délimiteur. Vous devez toujours utiliser **des mots** , sauf si vous devez faire correspondre des parties de mots ou des mots dans les langues asiatiques.
+
+- **matchStyle="string »**: une correspondance de chaîne identifie les chaînes, quelle que soit la partie qui les entoure. Par exemple, « ID » correspond à « bid » et « idea ». Utilisez uniquement `string` lorsque vous devez faire correspondre des mots asiatiques ou si votre mot clé peut être inclus dans d’autres chaînes.
+
+Enfin, vous pouvez utiliser l’attribut `caseSensitive` `Term` de l’élément pour spécifier que le contenu doit correspondre exactement au mot clé, y compris les lettres en majuscules et en majuscules.
+
 ![Marques XML montrant les éléments Match faisant référence à des mots clés.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
-  
+
 ### <a name="regular-expressions-regex-element"></a>Expressions régulières [élément Regex]
 
-Dans cet exemple, l’entité d’ID d’employé utilise déjà l’élément IdMatch pour référencer une regex pour le modèle (un nombre à neuf chiffres entouré d’espaces). De plus, un modèle peut utiliser un élément Match pour référencer un élément Regex supplémentaire afin d’identifier la preuve probante, par exemple un nombre de cinq ou neuf chiffres sous la forme d’un code postal des États-Unis.
-  
+Dans cet exemple, l’entité employé `ID` `IdMatch` utilise déjà l’élément pour référencer une expression régulière pour le modèle : un nombre à neuf chiffres entouré d’un espace blanc. En outre, `Match` `Regex` un modèle peut utiliser un élément pour référencer un élément supplémentaire afin d’identifier des preuves corroborante, telles qu’un nombre à cinq ou neuf chiffres au format d’un code postal américain.
+
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Autres modèles tels que des dates ou des adresses [fonctions intégrées]
 
-En plus des types d’informations sensibles intégrés, les types d’informations sensibles peuvent également utiliser des fonctions intégrées qui peuvent identifier une preuve d’appui telle que la date des États-Unis, celle de l’Union Européenne, la date d’expiration, une adresse des États-Unis. Microsoft 365 ne prend pas en charge le chargement de fonctions personnalisées, mais lorsque vous créez un type d’informations sensibles personnalisé, votre entité peut référencer les fonctions intégrées.
-  
-Par exemple, une date figure sur les badges d’ID d’employé. Cette entité personnalisée peut donc utiliser la fonction intégrée `Func_us_date` pour identifier une date au format utilisé aux États-Unis. 
-  
+Les types d’informations sensibles peuvent également utiliser des fonctions intégrées pour identifier des preuves corroborantes. Par exemple, une date aux États-Unis, une date de l’UE, une date d’expiration ou une adresse aux États-Unis. Microsoft 365 ne prend pas en charge le téléchargement de vos propres fonctions personnalisées. Toutefois, lorsque vous créez un type d’informations sensibles personnalisé, votre entité peut référencer des fonctions intégrées.
+
+Par exemple, un badge d’ID d’employé possède une date d’embauche, afin que cette entité personnalisée puisse utiliser la fonction intégrée pour identifier une date au format couramment utilisé aux États-Unis `Func_us_date` .
+
 Pour obtenir plus d’informations, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
-  
+
 ![Marques XML montrant l’élément Match faisant référence à la fonction intégrée.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
-  
+
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Différentes combinaisons de preuves [élément Any, attributs minMatches et maxMatches]
 
-Dans un élément Pattern, tous les éléments IdMatch et Match sont joints par un opérateur implicite AND : toutes les correspondances doivent être satisfaites pour que le modèle soit satisfait. Cependant, vous pouvez créer une logique de correspondance plus flexible en utilisant l’élément Any afin de regrouper des éléments Match. Par exemple, vous pouvez utiliser l’élément Any pour faire correspondre tous les sous-ensembles, aucun sous-ensemble ou un sous-ensemble exact de ses éléments Match enfants.
-  
-L’élément Any a des attributs minMatches et maxMatches facultatifs que vous pouvez utiliser pour définir le nombre d’éléments Match enfants qui doivent être satisfaits pour que le modèle corresponde. Notez que ces attributs définissent le nombre d’éléments Match qui doivent être satisfaits, pas le nombre d’instances de preuves trouvées pour les correspondances. Pour définir un nombre minimal d’instances pour une correspondance spécifique, par exemple, deux mots clés d’une liste, utilisez l’attribut minCount d’un élément Match (voir ci-dessus).
-  
+Dans un élément `Pattern` , tous les `IdMatch` éléments et `Match` tous les éléments sont joints par un opérateur IMPLICITE AND. En d’autres termes, toutes les correspondances doivent être satisfaites pour que le modèle puisse être satisfait.
+
+Vous pouvez créer une logique de correspondance plus flexible en utilisant l’élément `Any` pour grouper des `Match` éléments. Par exemple, vous pouvez utiliser l’élément `Any` pour faire correspondre tout, aucun ou un sous-ensemble exact de ses éléments `Match` enfants.
+
+L’élément `Any` possède des `minMatches` attributs `maxMatches` facultatifs `Match` que vous pouvez utiliser pour définir le nombre d’éléments enfants qui doivent être satisfaits avant que le modèle ne corresponde. Ces attributs définissent le *nombre d’éléments*`Match`, et non le nombre d’instances de preuves trouvées pour les correspondances. Pour définir un nombre minimal d’instances pour une correspondance spécifique, telles que deux mots clés d’une liste, `minCount` utilisez l’attribut d’un `Match` élément (voir ci-dessus).
+
 ### <a name="match-at-least-one-child-match-element"></a>Faire correspondre au moins un élément Match enfant
 
-Si vous voulez exiger qu’au moins un nombre minimal d’éléments Match corresponde, vous pouvez utiliser l’attribut minMatches. En effet, ces éléments Match sont joints par un opérateur implicite OR. Cet élément Any est satisfait si une date au format américain ou un mot clé d’une liste est trouvé.
+Pour exiger uniquement un nombre minimal d’éléments `Match` , vous pouvez utiliser l’attribut `minMatches` . En effet, ces éléments `Match` sont joints par un opérateur IMPLICITE OR. Cet `Any` élément est satisfait si une date au format américain ou un mot clé de l’une des listes est trouvé.
 
 ```xml
 <Any minMatches="1" >
@@ -238,10 +258,10 @@ Si vous voulez exiger qu’au moins un nombre minimal d’éléments Match corre
      <Match idRef="Keyword_badge" />
 </Any>
 ```
-    
+
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Faire correspondre un sous-ensemble exact d’éléments Match enfants
 
-Si vous voulez exiger qu’un nombre exact d’éléments Match corresponde, vous pouvez définir les attributs minMatches et maxMatches sur la même valeur. Cet élément Any est satisfait uniquement si une seule date ou un seul mot clé est trouvé (si plusieurs dates ou mots clés sont trouvés, le modèle ne correspond pas).
+Pour exiger un nombre exact d’éléments `Match` , définissez `minMatches` et `maxMatches` sur la même valeur. Cet `Any` élément est satisfait uniquement si une seule date ou mot clé est trouvé. S’il existe d’autres correspondances, le modèle ne correspond pas.
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -250,13 +270,13 @@ Si vous voulez exiger qu’un nombre exact d’éléments Match corresponde, vou
      <Match idRef="Keyword_badge" />
 </Any>
 ```
-  
+
 ### <a name="match-none-of-children-match-elements"></a>Faire correspondre tous les enfants Match enfants
 
 Si vous voulez exiger l’absence de preuve spécifique pour qu’un modèle soit satisfait, vous pouvez définir les attributs minMatches et maxMatches sur 0. Cela est utile si vous avez une liste de mots clés ou d’autres preuves susceptibles d’indiquer de faux positifs.
-  
+
 Par exemple, l’entité d’ID d’employé recherche le mot clé « carte », car il peut désigner une « carte d’identité ». Toutefois, si « carte » apparaît uniquement dans l’expression « carte de crédit », il est peu probable que « carte » dans ce contenu signifie « carte d’identité ». Par conséquent, vous pouvez ajouter « carte de crédit » comme mot clé à une liste de termes que vous voulez exclure de la satisfaction du modèle.
-  
+
 ```xml
 <Any minMatches="0" maxMatches="0" >
     <Match idRef="Keyword_false_positives_local" />
@@ -275,60 +295,60 @@ Si vous voulez corréler un certain nombre de termes uniques, utilisez le param�
 </Pattern>
 ```
 
-Dans cet exemple, un modèle est défini pour une révision salariale utilisant au moins trois correspondances uniques. 
-  
+Dans cet exemple, un modèle est défini pour une révision salariale utilisant au moins trois correspondances uniques.
+
 ## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Quel doit être le degré de proximité de l’entité par rapport à l’autre preuve ? [attribut patternsProximity]
 
 Votre type d’informations sensibles recherche un modèle qui représente un ID d’employé et dans le cadre de ce modèle, il recherche également comme preuve probante un mot clé tel que « ID ». Il est logique que plus la proximité de cette preuve est élevée, plus le modèle est susceptible d’être un ID d’employé. Vous pouvez déterminer le degré de proximité d’autres preuves par rapport à l’entité dans le modèle à l’aide de l’attribut obligatoire patternsProximity de l’élément Entity.
-  
+
 ![Marques XML montrant l’attribut patternsProximity.](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
-  
+
 Pour chaque modèle de l’entité, la valeur de l’attribut patternsProximity définit la distance (en caractères Unicode) à partir de l’emplacement IdMatch pour toutes les autres correspondances spécifiées pour ce modèle. La fenêtre de proximité est ancrée par l’emplacement IdMatch. La fenêtre s’étend à gauche et à droite de l’IdMatch.
-  
+
 ![Diagramme de la fenêtre de proximité.](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
-  
+
 L’exemple indiqué ci-après illustre comment la fenêtre de proximité affecte la correspondance du modèle là où l’élément IdMatch requiert au moins une correspondance probante de mot clé ou de date pour l’entité personnalisée d’ID d’employé. Seul ID1 correspond, car pour ID2 et ID3, seule une preuve probante partielle (voire aucune preuve probante) a été détectée au sein de la fenêtre de proximité.
-  
+
 ![Diagramme de preuve corroborante et fenêtre de proximité.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-  
-Notez que pour la messagerie, le corps du message et chaque pièce jointe sont traités comme des éléments distincts. Cela signifie que la fenêtre de proximité ne s’étend pas au-delà de chacun de ces éléments. Pour chaque élément (pièce jointe ou corps), l’attribut idMatch et la preuve probante doivent résider dans cet élément.
-  
+
+Notez que pour le courrier électronique, le corps du message et chaque pièce jointe sont traités comme des éléments distincts. Cela signifie que la fenêtre de proximité ne s’étend pas au-delà de la fin de chacun de ces éléments. Pour chaque élément (pièce jointe ou corps), idMatch et la preuve corroborante doivent résider dans cet élément.
+
 ## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Quels sont les niveaux de confiance appropriés pour les différents modèles ? [attributs confidenceLevel et recommendedConfidence]
 
 Plus un modèle nécessite de preuves, plus vous pouvez être certain qu’une entité (par exemple, l’ID d’employé) a effectivement été identifiée lorsque le modèle a été mis en correspondance. Par exemple, vous pouvez davantage compter sur un modèle qui nécessite un numéro d’identification à neuf chiffres, une date d’embauche et un mot clé situés à proximité immédiate les uns des autres, que sur un modèle qui nécessite uniquement un numéro d’identification à neuf chiffres.
-  
+
 L’élément Pattern est associé à un attribut confidenceLevel obligatoire. Vous pouvez considérer la valeur confidenceLevel (un nombre entier compris entre 1 et 100) comme un ID unique pour chaque motif d’une entité : les motifs d’une entité doivent avoir des niveaux de confiance distincts que vous attribuez. Peu importe la valeur précise du nombre entier, sélectionnez simplement un nombre approuvé par votre équipe de conformité. Une fois que vous avez chargé votre type d’informations sensibles personnalisé et que vous avez créé une stratégie, vous pouvez référencer ces niveaux de confiance dans les conditions des règles que vous créez.
-  
+
 ![Marques XML montrant les éléments Pattern avec des valeurs différentes pour l’attribut confidenceLevel.](../media/sit-xml-markedup-2.png)
-  
-En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède un attribut recommendedConfidence. L’attribut de niveau de confiance recommandé est assimilable au niveau de confiance par défaut de la règle. Lorsque vous créez une règle dans une stratégie, si vous n’indiquez pas le niveau de confiance que la règle doit utiliser, cette règle recherche les correspondances en fonction du niveau de confiance recommandé pour l’entité. Notez que l’attribut recommendedConfidence est obligatoire pour chaque ID d’entité dans le package de règles, sans lui, vous ne pourrez pas enregistrer les stratégies utilisant le type d’informations sensibles. 
-  
+
+En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède un attribut recommendedConfidence. L’attribut de niveau de confiance recommandé est assimilable au niveau de confiance par défaut de la règle. Lorsque vous créez une règle dans une stratégie, si vous n’indiquez pas le niveau de confiance que la règle doit utiliser, cette règle recherche les correspondances en fonction du niveau de confiance recommandé pour l’entité. Notez que l’attribut recommendedConfidence est obligatoire pour chaque ID d’entité dans le package de règles, sans lui, vous ne pourrez pas enregistrer les stratégies utilisant le type d’informations sensibles.
+
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Voulez-vous prendre en charge d’autres langues dans l’interface utilisateur du Centre de conformité ? [élément LocalizedStrings]
 
 Si votre équipe de conformité utilise le Centre de conformité Microsoft 365 pour créer des stratégies avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
-  
+
 ![Nombre d’instances et configuration de précision de correspondance.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-  
+
 L’élément Rules doit contenir un élément LocalizedStrings, qui contient un élément Resource référençant le GUID de votre entité personnalisée. À son tour, chaque élément Resource contient un ou plusieurs éléments Name et Description qui utilisent l’attribut langcode afin de fournir une chaîne localisée pour une langue spécifique.
-  
+
 ![Marques XML montrant le contenu de l’élément LocalizedStrings.](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
-  
+
 Notez que vous utilisez des chaînes localisées uniquement pour l’affichage de votre type d’informations sensibles dans l’interface utilisateur du Centre de conformité. Vous ne pouvez pas utiliser des chaînes localisées pour fournir différentes versions localisées d’une liste de mots clés ou une expression régulière.
-  
+
 ## <a name="other-rule-package-markup-rulepack-guid"></a>Autre balisage de package de règles [GUID RulePack]
 
 Enfin, le début de chaque RulePackage contient des informations générales que vous avez besoin de compléter. Vous pouvez utiliser le balisage suivant comme modèle et remplacer les espaces réservés « ... » avec vos propres informations.
-  
+
 Vous devez surtout générer un GUID pour le RulePack. Ci-dessus, vous avez généré un GUID pour l’entité ; il s’agit d’un second GUID pour le RulePack. Il existe plusieurs méthodes pour générer des GUID, mais vous pouvez le faire facilement dans PowerShell en saisissant [guid]::NewGuid().
-  
+
 L’élément Version est également important. Lorsque vous chargez votre package de règles pour la première fois, Microsoft 365 prend note du numéro de version. Si vous mettez à jour le package de règles ultérieurement et téléchargez une nouvelle version, veillez à mettre à jour le numéro de version, sinon Microsoft 365 ne déploiera pas le package de règles.
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
-    <Publisher id=". . ." /> 
+    <Publisher id=". . ." />
     <Details defaultLangCode=". . .">
       <LocalizedDetails langcode=" . . . ">
          <PublisherName>. . .</PublisherName>
@@ -337,49 +357,48 @@ L’élément Version est également important. Lorsque vous chargez votre packa
       </LocalizedDetails>
     </Details>
   </RulePack>
-  
+
  <Rules>
   . . .
  </Rules>
 </RulePackage>
-
 ```
 
 Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui suit :
-  
+
 ![Marques XML montrant l’élément RulePack.](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
 
 ## <a name="validators"></a>Validators
 
-Microsoft 365 des processeurs de fonctions pour les sits couramment utilisés comme validateurs. Voici une liste d’entre eux. 
+Microsoft 365 des processeurs de fonctions pour les sits couramment utilisés comme validateurs. Voici une liste d’entre eux.
 
-### <a name="list-of-validators-currently-available"></a>Liste des validateurs actuellement disponibles
+### <a name="list-of-currently-available-validators"></a>Liste des validateurs actuellement disponibles
 
-- Func_credit_card
-- Func_ssn
-- Func_unformatted_ssn
-- Func_randomized_formatted_ssn
-- Func_randomized_unformatted_ssn
-- Func_aba_routing
-- Func_south_africa_identification_number
-- Func_brazil_cpf
-- Func_iban
-- Func_brazil_cnpj
-- Func_swedish_national_identifier
-- Func_india_aadhaar
-- Func_uk_nhs_number
-- Func_Turkish_National_Id
-- Func_australian_tax_file_number
-- Func_usa_uk_passport
-- Func_canadian_sin
-- Func_formatted_itin
-- Func_unformatted_itin
-- Func_dea_number_v2
-- Func_dea_number
-- Func_japanese_my_number_personal
-- Func_japanese_my_number_corporate
+- `Func_credit_card`
+- `Func_ssn`
+- `Func_unformatted_ssn`
+- `Func_randomized_formatted_ssn`
+- `Func_randomized_unformatted_ssn`
+- `Func_aba_routing`
+- `Func_south_africa_identification_number`
+- `Func_brazil_cpf`
+- `Func_iban`
+- `Func_brazil_cnpj`
+- `Func_swedish_national_identifier`
+- `Func_india_aadhaar`
+- `Func_uk_nhs_number`
+- `Func_Turkish_National_Id`
+- `Func_australian_tax_file_number`
+- `Func_usa_uk_passport`
+- `Func_canadian_sin`
+- `Func_formatted_itin`
+- `Func_unformatted_itin`
+- `Func_dea_number_v2`
+- `Func_dea_number`
+- `Func_japanese_my_number_personal`
+- `Func_japanese_my_number_corporate`
 
-Cela vous permet de définir votre propre regex et de les valider. Pour utiliser des validateurs, définissez votre propre regex et, lors de la définition de l’regex, utilisez la propriété validator pour ajouter le processeur de fonction de votre choix. Une fois défini, vous pouvez utiliser cette regex dans un SIT. 
+Cela vous permet de définir votre propre RegEx et de les valider. Pour utiliser des validateurs, définissez votre propre RegEx et utilisez `Validator` la propriété pour ajouter le processeur de fonction de votre choix. Une fois défini, vous pouvez utiliser cette regEx dans un sit.
 
 Dans l’exemple ci-dessous, une expression régulière - Regex_credit_card_AdditionalDelimiters est définie pour la carte de crédit qui est ensuite validée à l’aide de la fonction checksum pour la carte de crédit à l’aide de Func_credit_card comme validateur.
 
@@ -401,7 +420,7 @@ Microsoft 365 fournit deux validateurs génériques
 
 ### <a name="checksum-validator"></a>Validateur checksum
 
-Dans cet exemple, un validateur de checkum pour l’ID d’employé est défini pour valider l’regex pour EmployeeID.
+Dans cet exemple, un validateur de checkum pour l’ID d’employé est défini pour valider le RegEx pour EmployeeID.
 
 ```xml
 <Validators id="EmployeeIDChecksumValidator">
@@ -422,37 +441,37 @@ Dans cet exemple, un validateur de checkum pour l’ID d’employé est défini 
 
 ### <a name="date-validator"></a>Validateur de date
 
-Dans cet exemple, un validateur de date est défini pour une partie regex dont la date est.
+Dans cet exemple, un validateur de date est défini pour une partie RegEx dont la date est.
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
 <Regex id="date_regex_1" validators="date_validator_1">\d{8}</Regex>
 ```
-  
+
 ## <a name="changes-for-exchange-online"></a>Modifications pour Exchange Online
 
-Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Vos types d’informations sensibles personnalisés peuvent désormais être utilisés à la fois dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange d’administration</a> et dans le Centre de conformité. Dans le cadre de cette amélioration, nous vous conseillons d’utiliser PowerShell dans le centre conformité pour importer vos types d’informations sensibles personnalisés, car vous ne pouvez plus les importer à partir de PowerShell Exchange. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le centre de conformité peut prendre au maximum une heure.
-  
-Notez que, dans le centre de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** pour charger un package de règles. (Auparavant, dans le centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**.) 
-  
+Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Vos types d’informations sensibles personnalisés peuvent désormais être utilisés à la fois dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">le centre d Exchange’administration</a> et le Centre de conformité. Dans le cadre de cette amélioration, nous vous conseillons d’utiliser PowerShell dans le centre conformité pour importer vos types d’informations sensibles personnalisés, car vous ne pouvez plus les importer à partir de PowerShell Exchange. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le centre de conformité peut prendre au maximum une heure.
+
+Notez que, dans le centre de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** pour charger un package de règles. (Auparavant, dans le centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**.)
+
 ## <a name="upload-your-rule-package"></a>Télécharger votre package de règles
 
 Pour télécharger votre package de règles, procédez comme suit :
-  
+
 1. Enregistrez-le en tant que fichier .xml avec le codage Unicode.
-    
+
 2. [Se connecter à PowerShell du centre de conformité](/powershell/exchange/exchange-online-powershell)
-    
+
 3. Utilisez la syntaxe suivante :
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte -ReadCount 0)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('PathToUnicodeXMLFile'))
    ```
 
    Cet exemple télécharge le fichier XML Unicode nommé MyNewRulePack.xml à partir de C:\My Documents.
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte -ReadCount 0)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\MyNewRulePack.xml'))
    ```
 
    Pour une syntaxe détaillée et des informations de paramètrage, voir [New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
@@ -466,13 +485,13 @@ Pour télécharger votre package de règles, procédez comme suit :
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
-     ``` 
+     ```
 
    - Exécutez la cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) pour vérifier que le type d’informations sensibles est répertorié :
 
      ```powershell
      Get-DlpSensitiveInformationType
-     ``` 
+     ```
 
      Pour les types d’informations sensibles personnalisés, la valeur de propriété Publisher sera un numéro autre que Microsoft Corporation.
 
@@ -481,39 +500,39 @@ Pour télécharger votre package de règles, procédez comme suit :
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
      ```
-    
+
 ## <a name="potential-validation-issues-to-be-aware-of"></a>Problèmes de validation éventuels à prendre en compte
 
 Lorsque vous chargez votre fichier XML de package de règles, le système valide le fichier XML et recherche des modèles incorrects connus et des problèmes de performance évidents. Voici quelques-uns des problèmes connus que la validation contrôle. Une expression régulière :
-  
-- Les assertions lookbehind dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
 
-    Par exemple, cette expression regex ne réussira pas la validation, car la première option est celle qui présente une longueur nulle tandis que les deux options suivantes ont une longueur `"(?<=^|\s|_)"` `^` `\s` `_` d’une.  Une autre façon d’écrire cette expression régulière est `"(?:^|(?<=\s|_))"` .
-  
-- ne peut pas commencer ou se terminer par l’alternateur « | », qui correspond à tous les éléments, car il est considéré comme une correspondance vide ;
-    
-  Par exemple, « |a » ou « b| » échoue à la validation.
-    
-- ne peut pas commencer ou se terminer par un modèle « .{0,m} » qui n’a aucune fonction et nuit uniquement aux performances ;
-    
-  Par exemple, « .{0,50}ASDF » ou « ASDF.{0,50} » échoue à la validation.
-    
-- ne peut pas contenir « .{0,m} » ou « .{1,m} » dans des groupes, et ne peut pas contenir « .\* » ou « .+ » dans des groupes ;
-    
-  Par exemple, « (.{0,50000}) » échoue à la validation.
-    
-- ne peut pas contenir de caractère avec les répéteurs « {0,m} » ou « {1, m} » dans des groupes ;
-    
-  Par exemple, « (a\*) » échoue à la validation.
-    
-- ne peut pas commencer ou se terminer par « .{1,m} » ; utilisez simplement « . » ;
-    
-  Par exemple, « .{1,m}asdf » échoue à la validation ; utilisez simplement « .asdf ».
-    
-- ne peut pas contenir de répéteur illimité (tel que « \* » ou « + ») dans un groupe.
-    
-  Par exemple, « (xx)\* » et « (xx)+ » échouent à la validation.
-  
+- Les assertions  lookbehind dans l’expression régulière doivent être de longueur fixe uniquement. Les assertions de longueur variable entraînent des erreurs.
+
+  Par exemple, ne `"(?<=^|\s|_)"` réussira pas la validation. Le premier modèle (`^`) est de longueur nulle, tandis que les deux modèles suivants (`\s` et `_`) ont une longueur d’un. Une autre façon d’écrire cette expression régulière `"(?:^|(?<=\s|_))"`est .
+
+- Impossible de commencer ou de se terminer par l’alternateur `|`, qui correspond à tout, car il est considéré comme une correspondance vide.
+
+  Par exemple, ou `|a` ne `b|` réussira pas la validation.
+
+- Ne peut pas commencer ou se terminer par un modèle, qui n’a `.{0,m}` aucun objectif fonctionnel et affecte uniquement les performances.
+
+  Par exemple, ou `.{0,50}ASDF` ne `ASDF.{0,50}` réussira pas la validation.
+
+- Ne peut pas avoir `.{0,m}` ou `.{1,m}` dans des groupes, et ne peut pas en `.\*` avoir ou `.+` dans des groupes.
+
+  Par exemple, ne `(.{0,50000})` réussira pas la validation.
+
+- Impossible d’avoir un caractère avec ou `{0,m}` des `{1,m}` répéteurs dans des groupes.
+
+  Par exemple, ne `(a\*)` réussira pas la validation.
+
+- Impossible de commencer ou de se terminer par `.{1,m}`; à la place, utilisez `.`.
+
+  Par exemple, ne `.{1,m}asdf` réussira pas la validation. À la place, utilisez `.asdf`.
+
+- Impossible d’avoir un répéteur non limite (tel que `*` ou `+`) sur un groupe.
+
+  Par exemple, `(xx)\*` et ne `(xx)+` réussira pas la validation.
+
 - Les mots clés ne peuvent pas contenir plus de 50 caractères.  Si un mot clé au sein d’un groupe dépasse cette limite, une solution suggérée consiste à créer le groupe de termes en tant que [Dictionnaire de mots clés](./create-a-keyword-dictionary.md) et à référencer le GUID du dictionnaire de mots clés au sein de la structure XML dans le cadre de l’entité pour les correspondances ou idMatch dans le fichier.
 
 - Chaque type d’informations sensibles personnalisé peut contenir un total maximum de 2 048 mots clés.
@@ -526,26 +545,26 @@ Lorsque vous chargez votre fichier XML de package de règles, le système valid
 
 - Lorsque vous utilisez la cmdlet PowerShell, la taille de retour maximale des données désérialisées est d’environ 1 mégaoctet.   Cela affecte la taille de votre fichier XML de pack de règles. Conservez le fichier chargé limité à un maximum de 770 kilo-octets comme limite recommandée pour obtenir des résultats cohérents sans erreur lors du traitement.
 
-- La structure XML ne requiert pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/de saut de ligne.  Prenez-en note lorsque vous optimisez l’espace disponible sur les téléchargements. Des outils tels que Microsoft Visual Code fournissent des fonctionnalités de ligne de jointure permettant de compacter le fichier XML.
-    
+- La structure XML ne nécessite pas de caractères de mise en forme tels que des espaces, des tabulations ou des entrées de retour chariot/échange de lignes.  Prenez-en note lorsque vous optimisez l’espace disponible sur les téléchargements. Des outils tels que Microsoft Visual Code fournissent des fonctionnalités de ligne de jointure permettant de compacter le fichier XML.
+
 Si un type d’informations sensibles personnalisé contient un problème qui peut affecter les performances, il n’est pas chargé et l’un des messages d’erreur suivants s’affichent :
-  
-- **Quantificateurs génériques correspondant à plus de contenu que prévu (par exemple, « + » et « \* »)**
-    
-- **Assertions d’inspection**
-    
-- **Regroupement complexe conjointement avec des quantificateurs généraux**
-    
+
+- `Generic quantifiers which match more content than expected (e.g., '+', '*')`
+
+- `Lookaround assertions`
+
+- `Complex grouping in conjunction with general quantifiers`
+
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Analyser de nouveau le contenu pour identifier les informations sensibles
 
 Microsoft 365 utilise le robot de recherche pour identifier et classer les informations sensibles du contenu d’un site. Le contenu des sites SharePoint Online et OneDrive Entreprise est à nouveau analysé automatiquement chaque fois qu’il est mis à jour. Mais pour que votre nouveau type d’informations sensibles personnalisé puisse être identifié dans l’ensemble du contenu existant, il doit être de nouveau analysé.
-  
-Dans Microsoft 365, vous ne pouvez pas demander manuellement une nouvelle analyse de l’ensemble d’un client, mais vous pouvez le faire pour une collection de sites, une liste ou une bibliothèque (consultez l’article [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content)).
-  
+
+Dans Microsoft 365, vous ne pouvez pas demander manuellement une nouvelle utilisation de l’ensemble d’une organisation, mais vous pouvez demander manuellement une nouvelle utilisation d’une collection de sites, d’une liste ou d’une bibliothèque. Pour plus d’informations, voir Demander manuellement l’analyse et la [réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content).
+
 ## <a name="reference-rule-package-xml-schema-definition"></a>Référence : Définition du schéma XML du package de règles
 
 Vous pouvez copier ce balisage, l’enregistrer sous la forme d’un fichier XSD et l’utiliser pour valider le fichier XML de votre package de règles.
-  
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
@@ -892,7 +911,5 @@ Vous pouvez copier ce balisage, l’enregistrer sous la forme d’un fichier XS
 ## <a name="more-information"></a>Plus d’informations
 
 - [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
-
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-
 - [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)

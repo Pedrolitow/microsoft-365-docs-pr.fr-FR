@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données à partir du système de mauvaise gestion physique de leur organisation Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
-ms.openlocfilehash: 2bdefdea4852b06b12e4053555b69b4fc4554d61
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7eddede8b98d1b676e51a95e4fed3787f56d0bf0
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943567"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272053"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de mauvaise qualité physiques (aperçu)
 
@@ -40,7 +40,7 @@ La configuration d’un connecteur de badging physique comprend les tâches suiv
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur de badging physique à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur de badging physique à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](/Exchange/permissions-exo/role-groups#create-role-groups) voir [les sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système de mauvaise gestion physique de votre organisation (quotidiennement) et créer un fichier JSON décrit à l’étape 2. Le script que vous exécutez à l’étape 4 va pousser les données du fichier JSON vers le point de terminaison de l’API.
 
@@ -52,13 +52,13 @@ La configuration d’un connecteur de badging physique comprend les tâches suiv
 
 La première étape consiste à créer et inscrire une nouvelle application dans Azure Active Directory (Azure AD). L’application correspond au connecteur de badging physique que vous créez à l’étape 3. La création de cette application permet Azure AD authentifier la demande Push pour la charge utile JSON contenant des données de mauvaise gestion physiques. Lors de la création de cette Azure AD, n’oubliez pas d’enregistrer les informations suivantes. Ces valeurs seront utilisées dans les étapes ultérieures.
 
-- Azure AD’ID d’application (également appelé *ID* d’application ou *ID client)*
+- Azure AD’ID d’application (également appelé *ID* d’application ou *ID client*)
 
-- Azure AD’application secrète (également appelée *« secret client*» )
+- Azure AD’application secrète (également appelée *la secret client*)
 
-- ID de client (également appelé *ID d’annuaire)*
+- ID de client (également appelé *ID d’annuaire*)
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une application avec le [Plateforme d'identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Enregistrer une application avec le [Plateforme d'identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Étape 2 : Préparer un fichier JSON avec des données de mauvaise qualité physiques
 
@@ -72,7 +72,7 @@ Le fichier JSON doit être conforme à la définition de schéma requise par le 
 |AssetId|ID de référence du bien physique ou du point d’accès physique.|Chaîne alphanumérique|
 |AssetName|Nom convivial du bien physique ou du point d’accès physique.|Chaîne alphanumérique|
 |EventTime|Horodaté de l’accès.|Date et heure, au format UTC|
-|AccessStatus|Valeur de `Success` ou `Failed`|Chaîne|
+|AccessStatus|Valeur de ou `Success``Failed`|Chaîne|
 |||
 
 Voici un exemple de fichier JSON conforme au schéma requis :
@@ -80,18 +80,18 @@ Voici un exemple de fichier JSON conforme au schéma requis :
 ```json
 [
     {
-        "UserId":"sarad@contoso.com"
+        "UserId":"sarad@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T01:57:49",
-        "AccessStatus":"Failed",
+        "AccessStatus":"Failed"
     },
     {
         "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T02:57:49",
-        "AccessStatus":"Success",
+        "AccessStatus":"Success"
     }
 ]
 ```
@@ -139,11 +139,11 @@ L’étape suivante consiste à créer un connecteur de badging physique dans le
 
 1. Go to the Centre de conformité Microsoft 365, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. Dans la page **Connecteurs de données** sous **Badging physique,** cliquez **sur Afficher**.
+2. Dans la page **Connecteurs de données** sous **Intégrité physique**, cliquez sur **Afficher**.
 
-3. Dans la page **Problèmes physiques,** cliquez sur **Ajouter un connecteur.**
+3. Dans la page **Problèmes physiques** , cliquez **sur Ajouter un connecteur**.
 
-4. Dans la page **Informations d’identification** d’authentification, faites ce qui suit, puis cliquez sur **Suivant**:
+4. Dans la page **Informations d’identification d’authentification** , faites ce qui suit, puis cliquez sur **Suivant** :
 
    1. Tapez ou collez l Azure AD’application pour l’application Azure que vous avez créée à l’étape 1.
 
@@ -151,7 +151,7 @@ L’étape suivante consiste à créer un connecteur de badging physique dans le
 
    3. Tapez un nom unique pour le connecteur de badging physique.
 
-5. Dans la page **Révision,** examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
+5. Dans la page **Révision** , examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
 6. Une page d’état qui confirme que le connecteur a été créé s’affiche. Cette page contient également l’ID de travail. Vous pouvez copier l’ID de travail à partir de cette page ou de la page de volant du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
 
@@ -159,7 +159,7 @@ L’étape suivante consiste à créer un connecteur de badging physique dans le
 
 7. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs** .
 
 8. Cliquez sur le connecteur de badging physique que vous avez créé pour afficher la page volante, qui contient des propriétés et d’autres informations sur le connecteur.
 
@@ -172,7 +172,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
 > [!NOTE]
 > Le nombre maximal d’enregistrements dans le fichier JSON qui peuvent être traitées par l’API est de 50 000.
 
-1. Accédez [à ce site GitHub pour](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) accéder à l’exemple de script.
+1. Accédez [à ce site GitHub pour](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) accéder à l’exemple de script.
 
 2. Cliquez sur **le bouton Brut** pour afficher le script en affichage texte
 
@@ -192,7 +192,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations obtenues lors des étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |Parameter|Description|
+   |Paramètre|Description|
    |---|---|
    |tenantId|Il s’agit de l’ID de votre Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId de votre organisation dans le panneau **Vue** d’ensemble du centre d Azure AD’administration. Il est utilisé pour identifier votre organisation.|
    |appId|Il s’agit Azure AD’ID d’application pour l’application que vous avez créée Azure AD l’étape 1. Il est utilisé par les Azure AD pour l’authentification lorsque le script tente d’accéder à Microsoft 365 organisation.|
@@ -204,10 +204,10 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
    Voici un exemple de syntaxe pour le script de connecteur de badging physique utilisant des valeurs réelles pour chaque paramètre :
 
    ```powershell
-   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
+   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Si le chargement réussit, le script affiche le message **Télécharger** réussite.
+   Si le chargement réussit, le script affiche le message **Télécharger réussite**.
 
    Si vous avez plusieurs fichiers JSON, vous devez exécuter le script pour chaque fichier.
 
@@ -220,55 +220,55 @@ Une fois que vous avez créé le connecteur de badging physique et envoyé vos d
 
 1. Go to the Centre de conformité Microsoft 365, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur de badging physique pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs** , puis sélectionnez le connecteur de badging physique pour afficher la page de présentation. Cette page contient les propriétés et les informations sur le connecteur.
 
    ![Page de volant d’état pour le connecteur de badging physique.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Sous **Dernière importation,** cliquez sur le lien **Télécharger le journal** pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données du fichier JSON vers le cloud Microsoft.
+3. Sous **Dernière importation**, cliquez sur le lien **Télécharger le** journal pour ouvrir (ou enregistrer) le journal d’état du connecteur. Ce journal contient des informations sur chaque fois que le script s’exécute et charge les données du fichier JSON vers le cloud Microsoft.
 
    ![Le fichier journal du connecteur de badging physique affiche le nombre d’objets du fichier JSON qui ont été téléchargés.](..\media\PhysicalBadgingConnectorLogFile.png)
 
    Le **champ RecordsSaved** indique le nombre d’objets dans le fichier JSON qui a été téléchargé. Par exemple, si le fichier JSON contient quatre objets, la valeur des champs **RecordsSaved** est 4, si le script a correctement téléchargé tous les objets du fichier JSON.
 
-Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation.** Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
+Si vous n’avez pas exécuté le script à l’étape 4, un lien pour télécharger le script s’affiche sous **Dernière importation**. Vous pouvez télécharger le script, puis suivre les étapes de l’étape 4 pour l’exécuter.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Facultatif) Étape 6 : Planifier l’exécuter automatiquement
 
 Pour vous assurer que les dernières données de mauvaise gestion physique de votre organisation sont disponibles pour des outils tels que la solution de gestion des risques internes, nous vous recommandons de planifier l’exécuter automatiquement de manière périodique, par exemple une fois par jour. Pour ce faire, vous devez également mettre à jour les données de mauvaise gestion physiques dans le fichier JSON selon une planification similaire (si ce n’est pas la même) afin qu’elle contienne les dernières informations sur les employés qui quittent votre organisation. L’objectif est de télécharger les données de mauvaise gestion physiques les plus récentes afin que le connecteur de mauvaise gestion physique puisse les mettre à la disposition de la solution de gestion des risques internes.
 
-Vous pouvez utiliser l’application Planification des tâches dans Windows pour exécuter automatiquement le script tous les jours.
+Vous pouvez utiliser l’application De planification des tâches dans Windows pour exécuter automatiquement le script tous les jours.
 
-1. Sur votre ordinateur local, cliquez sur le bouton Windows **démarrer,** puis tapez Planification **des tâches.**
+1. Sur votre ordinateur local, cliquez sur Windows **bouton** Démarrer, puis tapez Planification **des tâches**.
 
 2. Cliquez sur **l’application De planification des** tâches pour l’ouvrir.
 
-3. Dans la section **Actions,** cliquez sur **Créer une tâche.**
+3. Dans la section **Actions** , cliquez sur **Créer une tâche**.
 
-4. Sous **l’onglet** Général, tapez un nom descriptif pour la tâche programmée . par exemple, **script du connecteur de badging physique.** Vous pouvez également ajouter une description facultative.
+4. Sous **l’onglet** Général, tapez un nom descriptif pour la tâche programmée . par exemple, **script du connecteur de badging physique**. Vous pouvez également ajouter une description facultative.
 
-5. Sous **Options de sécurité,** faites les actions suivantes :
+5. Sous **Options de sécurité**, faites les actions suivantes :
 
    1. Déterminez s’il faut exécuter le script uniquement lorsque vous êtes connecté à l’ordinateur ou l’exécuter lorsque vous êtes connecté ou non.
 
-   2. Assurez-vous que la case à cocher Exécuter avec **les privilèges** les plus élevés est sélectionnée.
+   2. Assurez-vous que la case **à cocher Exécuter avec les privilèges les plus élevés** est sélectionnée.
 
-6. Sélectionnez **l’onglet Déclencheurs,** cliquez **sur Nouveau,** puis faites les choses suivantes :
+6. Sélectionnez **l’onglet Déclencheurs** , cliquez **sur Nouveau**, puis faites les choses suivantes :
 
-   1. Sous **Paramètres**, sélectionnez l’option  Quotidienne, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
+   1. Sous **Paramètres**, sélectionnez l’option **Quotidienne**, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script s’exécute tous les jours à la même heure spécifiée.
 
-   2. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
+   2. Sous **Paramètres avancés**, vérifiez que la case **à** cocher Activée est activée.
 
    3. Cliquez sur **OK**.
 
-7. Sélectionnez **l’onglet Actions,** cliquez **sur Nouveau,** puis faites les actions suivantes :
+7. Sélectionnez **l’onglet Actions** , cliquez **sur Nouveau**, puis faites les actions suivantes :
 
    ![Paramètres d’action pour créer une tâche programmée pour le script de connecteur de badging physique.](..\media\SchedulePhysicalBadgingScript1.png)
 
-   1. Dans la **liste liste de** listes d’actions, assurez-vous que démarrer un **programme** est sélectionné.
+   1. Dans la **liste liste de** listes d’actions, assurez-vous que **démarrer un programme** est sélectionné.
 
-   2. Dans la **zone Programme/script,** cliquez sur Parcourir, puis accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe. 
+   2. Dans la **zone Programme/script** , cliquez sur **Parcourir, puis** accédez à l’emplacement suivant et sélectionnez-le afin que le chemin d’accès s’affiche dans la zone : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
-   3. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, .\PhysicalBadging.ps1-tenantId « d5723623-11cf-4e2e-b5a5-01d1506273g9 » -appId « c12823b7-b55a-4989-faba-02de41bb97c3 » -appSecret « MNubVGbcQDkGCnn » -jobId « e081f4f4-3831-48d6-7bb3-fcfab1581458 » -jsonFilePath « C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv »
+   3. Dans la **zone Ajouter des arguments (facultatif),** collez la même commande de script que celle que vous avez l’étape 4. Par exemple, .\PhysicalBadging.ps1-tenantId « d5723623-11cf-4e2e-b5a5-01d1506273g9 » -appId « c12823b7-b55a-4989-faba-02de41bb97c3 » -appSecret « MNubVGbcQDkGCnn » -jobId « e081f4f4-3831-48d6-7bb3-fcfab1581458 » -jsonFilePath « C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json »
 
    4. Dans la **zone Démarrer dans (facultatif),** collez l’emplacement du dossier du script que vous avez écrit à l’étape 4. Par exemple, C:\Users\contosoadmin\Desktop\Scripts.
 

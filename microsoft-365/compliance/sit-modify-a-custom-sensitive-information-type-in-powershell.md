@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment modifier des informations sensibles personnalisées à l’aide de PowerShell.
-ms.openlocfilehash: dfecd8ab6bf24c00e0bdc01a20f798c29f18c446
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d402586463da1bed13d15dbaa32aece6badc9c72
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60187988"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271489"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>Modifier un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -60,16 +60,16 @@ Pour vous connecter à PowerShell du centre de conformité, consultez [Se connec
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-3. Utilisez la cmdlet [Set-Content](/powershell/module/microsoft.powershell.management/set-content) pour exporter le package de règles personnalisé dans un fichier XML :
+3. Utilisez la syntaxe suivante afin d’exporter le package de règles personnalisé vers un fichier XML:
 
    ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
    Cet exemple exporte le package de règles dans le fichier nommé ExportedRulePackage.xml dans le dossier Documents C:\My Documents folder.
 
    ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
    ```
 
 #### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>Étape 2: Modifier le type d’informations sensibles personnalisé dans un fichier exporté XML.
@@ -81,16 +81,13 @@ Les types d’informations sensibles dans le fichier XML et d’autres élément
 Pour réimporter le XML mis à jour dans le package de règles existant, utilisez la cmdlet [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) :
 
 ```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\External Sensitive Info Type Rule Collection.xml'))
 ```
 
 Pour une syntaxe détaillée et des informations de paramétrage, voir [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
 
-
 ## <a name="more-information"></a>Plus d’informations
 
 - [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
-
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-
 - [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Utilisez ces procédures pour tirer parti des entités nommées dans vos stratégies de protection contre la perte de données
-ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245098"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271513"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
 
@@ -41,11 +41,11 @@ Vous devez avoir l’un de ces abonnements
 - Office 365 E5
 - Microsoft 365 E5
 
-Pour plus d’informations sur les licences, voir [la description du service.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
+Pour plus d’informations sur les licences, voir [la description du service](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
 ### <a name="permissions"></a>Autorisations
 
-Le compte que vous utilisez pour créer et modifier des stratégies de protection contre la perte de données (DLP) doit avoir les autorisations du rôle Gestion de la conformité **DLP.** Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+Le compte que vous utilisez pour créer et modifier des stratégies de protection contre la perte de données (DLP) doit avoir les autorisations du rôle Gestion de la conformité **DLP** . Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>Emplacements pris en charge
@@ -61,10 +61,11 @@ Les sits d’entité nommée et les stratégies améliorées ne sont pas pris en
 
 
 - Référentiels locaux
+- Power BI
 
 ## <a name="create-and-edit-enhanced-policies"></a>Créer et modifier des stratégies améliorées
 
-Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer, tester et [régler une stratégie DLP.](create-test-tune-dlp-policy.md)
+Pour créer ou modifier une stratégie DLP, utilisez les procédures dans [Créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md).
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>Charges de travail et services qui la prise en charge des entités nommées
 
@@ -73,7 +74,7 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 - **Microsoft Defender pour les applications cloud prend** en charge l’utilisation d’entités nommées dans les stratégies de Defender for Cloud Apps.
 - **La gestion des risques internes prend** en charge l’utilisation d’entités nommées dans les services substrat.
 - **La conformité des** communications ne prend pas en charge l’utilisation d’entités nommées Exchange règles de transport et de données au repos.
-- **Microsoft Information Governance** (MIG) ne prend pas en charge l’utilisation d’entités nommées dans Exchange règles de transport et de données au repos.
+- **Microsoft Information Governance** (MIG) ne prend pas en charge l’utilisation d’entités nommées dans Exchange de transport et les données au repos.
  
 ### <a name="unified-dlp"></a>DLP unifiée
 
@@ -105,7 +106,7 @@ Pour créer ou modifier une stratégie DLP, utilisez les procédures dans Créer
 |SharePoint données au repos en ligne|Pris en charge|
 |Scanneur Azure Information Protection (AIP)|non pris en charge|
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 |Problème  |Impact  |
 |---------|---------|
