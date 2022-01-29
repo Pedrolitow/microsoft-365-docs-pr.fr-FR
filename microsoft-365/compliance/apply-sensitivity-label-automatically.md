@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: c3af2b179d5f33195ba61a7e236745d2b48c626a
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: c2300061dbe075be31e0a70d7b1356e3606230e5
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265714"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271693"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -282,11 +282,6 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
     Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
-    
-    > [!NOTE]
-    > Lorsque [les comptes OneDrive sont supprimés](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (par exemple, lorsqu'un employé quitte l'organisation), l'emplacement est marqué comme un site SharePoint pour permettre un accès continu pendant la période de rétention OneDrive.
-    > 
-    > À ce stade de la suppression, les fichiers du compte OneDrive ne seront pas inclus dans le paramètre **Tout** pour l'emplacement des **comptes OneDrive** mais seront inclus dans le paramètre **Tout** pour l'emplacement des **sites SharePoint**. Tous les fichiers de ces comptes OneDrive supprimés affichent SharePoint comme leur emplacement source dans les résultats de simulation et les données d'audit.
 
 7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 

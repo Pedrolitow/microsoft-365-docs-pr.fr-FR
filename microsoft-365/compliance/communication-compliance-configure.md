@@ -21,20 +21,20 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 43f6a5dff0a1908818714042012d0fef11ec9b51
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e14e523c9aa662afc0ee38572f8a19be6f851b5
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241746"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271801"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
-Utiliser des stratégies de conformité des communications pour identifier les communications des utilisateurs à des examens par des réviseurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications dans votre organisation, consultez stratégies de conformité des [communications dans Microsoft 365](communication-compliance.md). Si vous souhaitez examiner comment Contoso a configuré rapidement une stratégie de conformité des communications pour surveiller le contenu inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer, consultez cette étude de [cas.](communication-compliance-case-study.md)
+Utiliser des stratégies de conformité des communications pour identifier les communications des utilisateurs à des examens par des réviseurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications dans votre organisation, consultez les stratégies de conformité des [communications dans Microsoft 365](communication-compliance.md). Si vous souhaitez examiner comment Contoso a configuré rapidement une stratégie de conformité des communications pour surveiller le contenu inapproprié dans les communications Microsoft Teams, Exchange Online et Yammer, consultez cette étude de [cas.](communication-compliance-case-study.md)
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et licences
 
-Avant de commencer à vous conformer à la conformité des communications, vous devez confirmer votre abonnement [Microsoft 365 et](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) les modules. Pour accéder à la conformité des communications et l’utiliser, votre organisation doit avoir l’un des abonnements ou modules suivants :
+Avant de commencer à vous conformer à la conformité des communications, vous devez confirmer [Microsoft 365 abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et les modules. Pour accéder à la conformité des communications et l’utiliser, votre organisation doit avoir l’un des abonnements ou modules suivants :
 
 - Microsoft 365 E5/A5/G5 (version payante ou d’essai)
 - Microsoft 365 E3/A3/G5 + le module Microsoft 365 E5 conformité Microsoft 365 E5/A5/G5
@@ -46,20 +46,20 @@ Avant de commencer à vous conformer à la conformité des communications, vous 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
 
 > [!IMPORTANT]
-> La conformité des communications est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [disponibilité des dépendances Azure par pays/région.](/troubleshoot/azure/general/dependency-availability-by-country)
+> La conformité des communications est actuellement disponible dans les clients hébergés dans des régions géographiques et des pays pris en charge par les dépendances de service Azure. Pour vérifier que la conformité des communications est prise en charge pour votre organisation, consultez [disponibilité des dépendances Azure par pays/région](/troubleshoot/azure/general/dependency-availability-by-country).
 
-Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essayer la conformité des [](https://www.microsoft.com/microsoft-365/enterprise) communications, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai de Office 365 Entreprise E5.
+Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essayer la conformité des communications, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à [](https://www.microsoft.com/microsoft-365/enterprise) une version d’essai de Office 365 Entreprise E5.
 
 > [!NOTE]
 > Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
 
 ## <a name="recommended-actions-preview"></a>Actions recommandées (aperçu)
 
-Les actions recommandées peuvent aider votre organisation à se lancer dans les fonctionnalités de conformité des communications et à utiliser au mieux vos stratégies existantes. Incluses dans la page **Stratégies,** les actions recommandées fournissent des informations et résument les types d’informations sensibles et les activités de contenu inappropriées dans les communications de votre organisation. Informations sont pris en charge par la [classification](data-classification-overview.md) des données et l’application d’étiquettes de sensibilité, d’étiquettes de rétention et de classification des types d’informations sensibles. Ces informations n’incluent aucune information d’identification personnelle (PII) pour les utilisateurs de votre organisation.
+Les actions recommandées peuvent aider votre organisation à se lancer dans les fonctionnalités de conformité des communications et à utiliser au mieux vos stratégies existantes. Incluses dans la page **Stratégies** , les actions recommandées fournissent des informations et résument les types d’informations sensibles et les activités de contenu inappropriées dans les communications de votre organisation. Informations sont pris en charge par la [classification](data-classification-overview.md) des données et l’application d’étiquettes de sensibilité, d’étiquettes de rétention et de classification des types d’informations sensibles. Ces informations n’incluent aucune information d’identification personnelle (PII) pour les utilisateurs de votre organisation.
 
 ![Actions recommandées pour la conformité des communications.](../media/communication-compliance-recommended-actions.png)
 
-L’activité dans les messages contenant du contenu inapproprié est agrégée par type de [classifieur](/microsoft-365/compliance/communication-compliance-policies#classifiers) à partir de stratégies existantes qui utilisent le modèle de contenu inapproprié ou des stratégies personnalisées qui utilisent des classifieurs pour du contenu inapproprié. Examinez les alertes pour ces messages dans le tableau de bord d’alerte pour vos stratégies.
+L’activité dans les messages contenant du contenu inapproprié est agrégée par [type de classifieur](/microsoft-365/compliance/communication-compliance-policies#classifiers) à partir de stratégies existantes qui utilisent le modèle de contenu inapproprié ou des stratégies personnalisées qui utilisent des classifieurs pour du contenu inapproprié. Examinez les alertes pour ces messages dans le tableau de bord d’alerte pour vos stratégies.
 
 [L’activité impliquant des types d’informations](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) sensibles est détectée dans les messages couverts par les stratégies existantes et pour les messages qui ne sont pas couverts par les stratégies existantes. Informations sont regroupés pour tous les types d’informations sensibles, y compris ceux que votre organisation n’a pas précédemment définis dans une stratégie de conformité des communications existante. Utilisez ces informations pour créer une stratégie de conformité des communications ou pour mettre à jour les stratégies existantes.
 
@@ -70,24 +70,24 @@ L’activité dans les messages contenant du contenu inapproprié est agrégée 
 
 Six groupes de rôles sont utilisés pour configurer les autorisations initiales afin de gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des** communications disponible en tant qu’option de menu dans Centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez être affecté à l’un des rôles ou groupes de rôles suivants :
 
-- Azure Active Directory administrateur [*général*](/azure/active-directory/roles/permissions-reference#global-administrator)
-- Azure Active Directory [*d’administrateur de conformité de l’application*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
-- Centre de conformité Microsoft 365 groupe de [*rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- Azure Active Directory [*administrateur général*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory [*administrateur de conformité de l’application*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centre de conformité Microsoft 365 [*groupe de rôles Gestion de l’organisation*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - Centre de conformité Microsoft 365 [*de rôle Administrateur de conformité*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) de l’application
 - *Groupe de rôles Conformité des* communications
 - *Groupe de rôles Administrateur de conformité des* communications
 
 Les membres des rôles suivants ont les mêmes autorisations de solution que le groupe de rôles *Administrateur* de conformité des communications :
 
-- Azure Active Directory administrateur *général*
+- Azure Active Directory *administrateur général*
 - Azure Active Directory *de conformité de l’application*
 - Centre de conformité Microsoft 365 *gestion de l’organisation*
-- Centre de conformité Microsoft 365 de *conformité de l’application*
+- Centre de conformité Microsoft 365 *de conformité de l’application*
 
 > [!IMPORTANT]
-> Assurez-vous que vous avez toujours  au  moins un utilisateur dans les groupes de rôles Conformité des communications ou Administrateur de la conformité des communications (selon l’option que vous choisissez) afin que votre configuration de conformité des communications n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
+> Assurez-vous que vous avez toujours au moins un utilisateur  dans les groupes  de rôles Conformité des communications ou Administrateur de la conformité des communications (selon l’option que vous choisissez) afin que votre configuration de conformité des communications n’entre pas dans un scénario « administrateur zéro » si des utilisateurs spécifiques quittent votre organisation.
 
-Selon la façon dont vous souhaitez gérer les stratégies et alertes de conformité des communications, vous devez affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de conformité des communications. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines des fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les  administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles Conformité des communications. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
+Selon la façon dont vous souhaitez gérer les stratégies et alertes de conformité des communications, vous devez affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de conformité des communications. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines des fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles Conformité des communications. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
 
 Choisissez parmi ces options de groupe de rôles de solution lors de la configuration et de la gestion de la conformité des communications :
 
@@ -103,41 +103,41 @@ Choisissez parmi ces options de groupe de rôles de solution lors de la configur
 
 1. Connectez-vous [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
-2. Dans le Centre &amp; de conformité de sécurité, allez à **Autorisations.** Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Dans le Centre de &amp; conformité de sécurité, allez **à Autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
-3. Sélectionnez le *groupe de rôles Conformité* des communications, puis **Modifiez le groupe de rôles.**
+3. Sélectionnez le *groupe de rôles Conformité* des communications, puis **Modifier le groupe de rôles**.
 
-4. Sélectionnez **Choisir des membres** dans le volet de navigation de gauche, puis sélectionnez **Modifier.**
+4. **Sélectionnez Choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **Modifier**.
 
-5. Sélectionnez **Ajouter,** puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de *rôles* Conformité des communications.
+5. **Sélectionnez Ajouter**, puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de *rôles* Conformité des communications.
 
 6. Sélectionnez **Ajouter**, puis **Terminé**.
 
-7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes
+7. **Sélectionnez Enregistrer** pour ajouter les utilisateurs au groupe de rôles. **Sélectionnez Fermer** pour effectuer les étapes
 
 ### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Option 2 : Affecter des utilisateurs à des groupes de rôles de conformité des communications spécifiques
 
 Utilisez cette option pour affecter des utilisateurs à des groupes de rôles spécifiques afin de segmenter l’accès à la conformité des communications et les responsabilités entre les différents utilisateurs de votre organisation.
 
-1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365, puis allez aux **autorisations.** </a>
+1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation, puis allez aux **autorisations**</a>.
 
 2. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
-3. Sélectionnez l’un des groupes de rôles de conformité des communications, puis **sélectionnez Modifier le groupe de rôles.**
+3. Sélectionnez l’un des groupes de rôles de conformité des communications, puis **sélectionnez Modifier le groupe de rôles**.
 
-4. Sélectionnez **Choisir des membres** dans le volet de navigation de gauche, puis sélectionnez **Modifier.**
+4. **Sélectionnez Choisir les membres** dans le volet de navigation de gauche, puis sélectionnez **Modifier**.
 
-5. Sélectionnez **Ajouter,** puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
+5. **Sélectionnez Ajouter**, puis cochez la case pour tous les utilisateurs que vous souhaitez ajouter au groupe de rôles.
 
 6. Sélectionnez **Ajouter**, puis **Terminé**.
 
-7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles.
+7. **Sélectionnez Enregistrer** pour ajouter les utilisateurs au groupe de rôles.
 
 8. Sélectionnez le groupe de rôles de conformité des communications suivant, puis répétez les étapes 4 à 7 pour chaque groupe de rôles requis.
 
-9. Sélectionnez **Fermer** pour effectuer les étapes.
+9. **Sélectionnez Fermer** pour effectuer les étapes.
 
-Pour plus d’informations sur les groupes de rôles et les [autorisations, voir Autorisations dans le Centre de conformité.](../security/office-365-security/protect-against-threats.md)
+Pour plus d’informations sur les groupes de rôles et les [autorisations, voir Autorisations dans le Centre de conformité](../security/office-365-security/protect-against-threats.md).
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Étape 2 (obligatoire) : activer le journal d’audit
 
@@ -145,7 +145,7 @@ La conformité des communications nécessite des journaux d’audit pour affiche
 
 L'audit est activé par défaut pour les organisations Microsoft 365. Certaines organisations peuvent avoir désactivé l'audit pour des raisons spécifiques. Si l'audit est désactivé pour votre organisation, c'est peut-être parce qu'un autre administrateur l'a désactivé. Nous vous recommandons de confirmer que vous pouvez réactiver l'audit lorsque vous terminez cette étape.
 
-Pour obtenir des instructions détaillées sur l'activation de l'audit, consultez [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous n'avez à faire cette action qu'une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)
+Pour obtenir des instructions détaillées sur l'activation de l'audit, consultez [Activer ou désactiver la recherche dans le journal d'audit](turn-audit-log-search-on-or-off.md). Une fois l’audit activé, le message qui apparaît indique que le journal d’audit est en cours de préparation et que vous pourrez effectuer une recherche environ deux heures après la fin de la préparation. Vous n'avez à faire cette action qu'une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, voir [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Étape 3 (facultative) : configurer des groupes pour la conformité des communications
 
@@ -158,9 +158,9 @@ Utilisez le graphique suivant pour vous aider à configurer les groupes de votre
 |Utilisateurs supervisés <br> Utilisateurs exclus | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie <br> Microsoft 365 groupes avec appartenance dynamique |
 | Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de distribution imbrmbrés <br> Groupes de sécurité à extension messagerie |
 
-Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques et Teams conversations de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques et les conversations Teams envoyées à ce groupe, et non les messages électroniques et conversations individuels reçus par chaque membre du groupe.
+Lorsque vous affectez un groupe *de distribution* dans la stratégie, la stratégie surveille tous les messages électroniques et Teams conversations de chaque utilisateur du groupe *de distribution*. Lorsque vous affectez un groupe *Microsoft 365* dans la stratégie, la stratégie surveille tous les messages électroniques et les conversations Teams envoyées au groupe *Microsoft 365*, et non les e-mails et conversations individuels reçus par chaque membre du groupe. L’utilisation de groupes de distribution dans les stratégies de conformité des communications est recommandée pour que les e-mails individuels et Teams conversations de chaque utilisateur soient automatiquement surveillés.
 
-Si vous êtes une organisation avec un déploiement Exchange local ou un fournisseur de messagerie externe et que vous souhaitez surveiller les conversations Microsoft Teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs avec des boîtes aux lettres externes ou sur site à surveiller. Plus loin dans ces étapes, vous  allez affecter ce groupe de distribution en tant que sélection d’utilisateurs et de groupes Supervisés dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation de la prise en charge du stockage en nuage et de la Teams pour les utilisateurs locaux, voir Rechercher des données de conversation Teams pour les [utilisateurs](search-cloud-based-mailboxes-for-on-premises-users.md)locaux.
+Si vous êtes une organisation avec un déploiement Exchange local ou un fournisseur de messagerie externe et que vous souhaitez surveiller les conversations Microsoft Teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs avec des boîtes aux lettres externes ou sur site à surveiller. Plus loin dans ces étapes, vous allez affecter ce groupe de distribution  en tant que sélection d’utilisateurs et de groupes Supervisés dans l’Assistant Stratégie. Pour plus d’informations sur les exigences et les limitations relatives à l’activation de la prise en charge du stockage en nuage et de la Teams pour les utilisateurs locaux, voir Rechercher des données de [conversation Teams pour les utilisateurs](search-cloud-based-mailboxes-for-on-premises-users.md) locaux.
 
 Pour gérer les utilisateurs supervisés dans les grandes entreprises, vous devrez peut-être surveiller tous les utilisateurs de grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de conformité des communications globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs avec une stratégie unique et de maintenir la stratégie de conformité des communications à jour lorsque de nouveaux employés rejoignent votre organisation.
 
@@ -208,18 +208,18 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Étape 5 (obligatoire) : créer une stratégie de conformité des communications
 
 >[!IMPORTANT]
->L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications.](https://compliance.microsoft.com/supervisoryreview)
+>L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications](https://compliance.microsoft.com/supervisoryreview).
 
 >[!TIP]  
 >Vous souhaitez consulter une walkthrough détaillée de la configuration d’une nouvelle stratégie de conformité des communications et de la correction d’une alerte ? Regardez cette vidéo de [15 minutes](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) pour voir une démonstration de la façon dont les stratégies de conformité des communications peuvent vous aider à détecter les messages inappropriés, à examiner les violations potentielles et à résoudre les problèmes de conformité.
 
 1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
-2. Dans la Centre de conformité Microsoft 365, sélectionnez **Conformité des communications.**
+2. Dans la Centre de conformité Microsoft 365, sélectionnez **Conformité des communications**.
 
 3. Cliquez sur l'onglet **Stratégies**.
 
-4. Sélectionnez **Créer une** stratégie pour créer et configurer une nouvelle stratégie à partir d’un modèle ou pour créer et configurer une stratégie personnalisée.
+4. **Sélectionnez Créer une** stratégie pour créer et configurer une nouvelle stratégie à partir d’un modèle ou pour créer et configurer une stratégie personnalisée.
 
     Si vous choisissez un modèle de stratégie pour créer une stratégie, vous devez :
 
@@ -232,7 +232,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
     - Choisissez un champ de condition limité, généralement un type d’informations sensibles ou un dictionnaire de mots clés à appliquer à la stratégie.
 
     > [!NOTE]
-    > Si vous souhaitez activer la reconnaissance optique de caractères [(OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie, sélectionnez Personnaliser les conditions de stratégie et le pourcentage et activer l’extraction du texte imprimé ou manuscrit à partir d’images pour l’évaluation.  >   
+    > Si vous souhaitez activer la reconnaissance optique de caractères [(OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie,  >  sélectionnez Personnaliser les conditions de stratégie et le pourcentage et activez l’extraction du texte imprimé ou manuscrit à partir **d’images** pour l’évaluation.
 
     Si vous choisissez d’utiliser l’Assistant Stratégie pour créer une stratégie personnalisée, vous devez :
 
@@ -246,25 +246,25 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
     - Choisissez le sens des communications à surveiller, y compris les communications entrantes, sortantes ou internes.
 
-    - Définissez les conditions de stratégie de conformité [des communications.](communication-compliance-policies.md#ConditionalSettings) Vous pouvez choisir parmi les conditions de correspondance pour l'adresse du message, les mots-clés, les types de fichiers et la taille.
+    - Définir les conditions de stratégie de conformité [des communications](communication-compliance-policies.md#ConditionalSettings). Vous pouvez choisir parmi les conditions de correspondance pour l'adresse du message, les mots-clés, les types de fichiers et la taille.
 
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Choisissez parmi les types d’informations sensibles ou les dictionnaires de mots clés personnalisés existants dans l’Assistant Stratégie de conformité des communications. Vous pouvez créer ces éléments avant d’utiliser l’Assistant si nécessaire. Vous pouvez également créer de nouveaux types d’informations sensibles à partir de l’Assistant Stratégie de conformité des communications.
 
-    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter un langage inapproprié et des images envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace,* blasphémité, harcèlement *ciblé,* *images* pour adultes, *images racy* et *images gory*.
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter un langage inapproprié et des images envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants *: menace**, blasphémité**, harcèlement* ciblé, *images* pour adultes, *images racy* et *images gory*.
 
-    - Activez [la reconnaissance optique de caractères (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
+    - [Activez la reconnaissance optique de caractères (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
 
     - Définissez le Pourcentage de communications à réviser.
 
     - Examinez vos sélections de stratégie et créez la stratégie.
 
-5. Sélectionnez **Créer une stratégie** lors de l’utilisation des modèles ou **Envoyer** lors de l’utilisation de l’Assistant Stratégie personnalisée.
+5. **Sélectionnez Créer une stratégie** lors de l’utilisation des modèles ou **Envoyer** lors de l’utilisation de l’Assistant Stratégie personnalisée.
 
 6. La page **Votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
 ## <a name="step-6-optional-update-compliance-boundaries-for-communication-compliance-policies"></a>Étape 6 (facultative) : mettre à jour les limites de conformité pour les stratégies de conformité des communications
 
-Les limites de conformité créent des limites logiques au sein d'une organisation qui contrôlent les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les comptes OneDrive et les sites Microsoft Office SharePoint Online) que les gestionnaires de découverte électronique peuvent rechercher.
+[](/microsoft-365/compliance/set-up-compliance-boundaries) Les limites de conformité créent des limites logiques au sein d’une organisation qui contrôlent les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les comptes OneDrive et les sites SharePoint) que les gestionnaires eDiscovery peuvent rechercher.
 
 Si vous avez configuré des limites de conformité dans votre organisation, vous devez mettre à jour les limites de conformité pour permettre à certains utilisateurs d’accéder aux boîtes aux lettres qui prendre en charge les stratégies de conformité des communications. Vous devez autoriser l’accès aux administrateurs de conformité des communications et aux réviseurs de conformité des communications pour que vos actions de gestion et d’examen et de correction des stratégies fonctionnent correctement.
 
@@ -277,7 +277,7 @@ Connect-IPPSSession -Credential $UserCredential
 New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communication compliance admins and reviewers user alias or email address> -Filters "Mailbox_Name -like 'SupervisoryReview{*'" -Action All
 ```
 
-Pour plus d’informations sur la syntaxe de cmdlet, voir [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).
+Pour plus d’informations sur la syntaxe des cmdlet, voir [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).
 
 ## <a name="step-7-optional-create-notice-templates-and-configure-user-anonymization"></a>Étape 7 (facultative) : créer des modèles d’avis et configurer l’anonymisation des utilisateurs
 
@@ -287,17 +287,17 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
 
 1. Connectez-vous [au Centre de conformité Microsoft 365](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
-2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications.**
+2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications**.
 
 3. Pour configurer l’anonymisation des noms d’utilisateur, sélectionnez **l’onglet** Confidentialité.
 
-4. Pour activer l’anonymisation, **sélectionnez Afficher les versions anonymisées des noms d’utilisateur.**
+4. Pour activer l’anonymisation, **sélectionnez Afficher les versions anonymisées des noms d’utilisateur**.
 
 5. Sélectionnez **Enregistrer**.
 
-6. Accédez à **l’onglet Modèles d’avis,** puis **sélectionnez Créer un modèle de notification.**
+6. Accédez à **l’onglet Modèles d’avis** , puis **sélectionnez Créer un modèle de notification**.
 
-7. Dans la page **Modifier un modèle d’avis,** complétez les champs suivants :
+7. Dans la page **Modifier un modèle d’avis** , complétez les champs suivants :
 
     - Nom du modèle (obligatoire)
     - Envoyer à partir de (obligatoire)
@@ -305,7 +305,7 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
     - Objet (obligatoire)
     - Corps du message (obligatoire)
 
-8. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
+8. **Sélectionnez Enregistrer** pour créer et enregistrer le modèle d’avis.
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Étape 8 (facultative) : tester votre stratégie de conformité des communications
 
@@ -320,7 +320,7 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
     > [!NOTE]
     > Le traitement complet des messages électroniques dans une stratégie peut prendre jusqu’à 24 heures. Les communications Microsoft Teams, Yammer et les plateformes tierces peuvent prendre jusqu’à 48 heures pour être entièrement traitées dans une stratégie.
 
-3. Connectez-vous Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez aux **alertes de conformité**  >  **des communications** pour afficher les alertes de vos stratégies.
+3. Connectez-vous Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité des communications. Accédez **à Communication** **complianceAlerts** >  pour afficher les alertes de vos stratégies.
 
 4. Corriger l’alerte à l’aide des contrôles de correction et vérifier que l’alerte est correctement résolue.
 
@@ -328,6 +328,6 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
 
 Après avoir effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
 
-Pour en savoir plus sur l’examen des alertes de conformité des communications, voir Examiner et corriger [les alertes de conformité des communications.](communication-compliance-investigate-remediate.md)
+Pour en savoir plus sur l’examen des alertes de conformité des communications, voir Examiner et corriger [les alertes de conformité des communications](communication-compliance-investigate-remediate.md).
 
-Pour suivre les dernières mises à  jour de conformité des communications, sélectionnez Nouveautés de la [conformité des communications](https://compliance.microsoft.com/) pour votre organisation.
+Pour suivre les dernières mises à jour de conformité des communications,  sélectionnez Nouveautés de la [conformité des communications](https://compliance.microsoft.com/) pour votre organisation.
