@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des essais de solutions de conformité
-ms.openlocfilehash: 1d18cb21e3dfd0a5c318ec41a50c2926c1f692ab
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265678"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271789"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>À propos de la version d’essai des solutions de conformité
 
@@ -65,48 +65,44 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
 - **Audit**
 
-    L’audit avancé permet aux organisations d’effectuer des investigations de conformité et d’audit en augmentant la rétention du journal d’audit nécessaire pour mener une investigation, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.[Pour en savoir plus sur les audits ](advanced-audit.md)
+  L’audit avancé permet aux organisations d’effectuer des investigations de conformité et d’audit en augmentant la rétention du journal d’audit nécessaire pour mener une investigation, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API Activité de gestion Office 365.[Pour en savoir plus sur les audits ](advanced-audit.md)
 
 - **Conformité des communications**
 
-    La conformité des communications vous permet de résoudre les problèmes de conformité modernes liés aux communications internes et externes en vous aidant à capturer automatiquement les messages inappropriés, à examiner les violations de stratégie possibles et à prendre des mesures pour corriger le problème. En savoir plus sur la [conformité des communications](communication-compliance.md)
+  La conformité des communications vous permet de résoudre les problèmes de conformité modernes liés aux communications internes et externes en vous aidant à capturer automatiquement les messages inappropriés, à examiner les violations de stratégie possibles et à prendre des mesures pour corriger le problème. En savoir plus sur la [conformité des communications](communication-compliance.md)
 
 - **Gestionnaire de conformité**
 
-    Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, à la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.[En savoir plus sur les ](compliance-manager.md) du Gestionnaire de conformité
+  Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, à la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.[En savoir plus sur les ](compliance-manager.md) du Gestionnaire de conformité
 
 - **eDiscovery**
 
-    Tirez parti d’un flux de travail de bout en bout pour conserver, collecter, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Les équipes juridiques peuvent également gérer l’ensemble du processus de notification de conservation légale en communiquant avec les dépositaires impliqués dans un cas. [En savoir plus sur eDiscovery](ediscovery.md)
+  Tirez parti d’un flux de travail de bout en bout pour conserver, collecter, analyser et exporter du contenu qui répond aux enquêtes internes et externes de votre organisation. Les équipes juridiques peuvent également gérer l’ensemble du processus de notification de conservation légale en communiquant avec les dépositaires impliqués dans un cas. [En savoir plus sur eDiscovery](ediscovery.md)
 
 - **Gouvernance des informations**
 
-    Automatisez la couverture de votre politique de rétention à l'aide de Adaptive Policy Scopes. Cette fonction vous permet de cibler dynamiquement les politiques de rétention sur des utilisateurs, des groupes ou des sites spécifiques. Ces politiques sont automatiquement mises à jour lorsque des changements surviennent dans votre organisation. En outre, les politiques de conservation utilisant des périmètres adaptatifs ne sont pas soumises à des limites d'emplacement. [En savoir plus sur les étendues de stratégie adaptative.](create-retention-policies.md)
-
+  Automatisez la couverture de votre politique de rétention à l'aide de Adaptive Policy Scopes. Cette fonction vous permet de cibler dynamiquement les politiques de rétention sur des utilisateurs, des groupes ou des sites spécifiques. Ces politiques sont automatiquement mises à jour lorsque des changements surviennent dans votre organisation. En outre, les politiques de conservation utilisant des périmètres adaptatifs ne sont pas soumises à des limites d'emplacement. [En savoir plus sur les étendues de stratégie adaptative.](create-retention-policies.md)
 
 - **Protection des informations**
 
-    Implémentez des [ Protection des données Microsoft Corporation](sensitivity-labels.md) avec [ des étiquettes de confidentialité et des stratégies de protection](dlp-learn-about-dlp.md) contre la perte de données pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve ou se déplace.
-    
-    La version d’essai de la Protection des informations vous fournit des étiquettes par défaut, l’étiquetage automatique pour les documents et les e-mails, ainsi que la protection contre la perte de données pour protéger les numéros de carte de crédit partagés dans Teams et par les appareils. Les stratégies par défaut que nous créons pour vous sont rapidement opérationnels, mais vous pouvez les personnaliser entièrement comme vous le souhaitez.
-    
+  Implémentez des [ Protection des données Microsoft Corporation](sensitivity-labels.md) avec [ des étiquettes de confidentialité et des stratégies de protection](dlp-learn-about-dlp.md) contre la perte de données pour vous aider à découvrir, classer et protéger votre contenu sensible où qu’il se trouve ou se déplace.
+
+  La version d’essai de la Protection des informations vous fournit des étiquettes par défaut, l’étiquetage automatique pour les documents et les e-mails, ainsi que la protection contre la perte de données pour protéger les numéros de carte de crédit partagés dans Teams et par les appareils. Les stratégies par défaut que nous créons pour vous sont rapidement opérationnels, mais vous pouvez les personnaliser entièrement comme vous le souhaitez.
+
     À la fin de la version d’essai, vous recevrez un courrier électronique vous informant :
-    
-    - Tous les fichiers et messages électroniques étiquetés pendant votre version d’essai restent étiquetés. Vous pouvez supprimer manuellement les étiquettes.
-    
-    - Vous serez rétrogradé à votre package de licence Microsoft E3 précédent qui ne prend pas en charge l’étiquetage automatique et la protection contre la perte de données. Vos stratégies existantes resteront allumées, sauf si vous les avez désactivées.
-    
-    - Les stratégies d’étiquetage automatique ne peuvent pas être modifiées une fois la version d’essai terminée, mais elles peuvent être supprimées.
-    
-    - Si vous modifiez des stratégies DLP qui incluent les emplacements Teams ou Appareils à la fin de la version d’essai, ces emplacements seront supprimés de la stratégie.
-    
-    Pour plus d’informations sur chacune de ces fonctionnalités préconfigurées et sur leur impact sur les utilisateurs, consultez la version d’essai gratuite [Protection des données Microsoft](mip-easy-trials.md).
-    
-    Pour plus d’informations sur la gamme complète des fonctionnalités Protection des données Microsoft, voir Protection des données Microsoft [dans Microsoft 365](information-protection.md).
+
+  - Tous les fichiers et messages électroniques étiquetés pendant votre version d’essai restent étiquetés. Vous pouvez supprimer manuellement les étiquettes.
+  - Vous serez rétrogradé à votre package de licence Microsoft E3 précédent qui ne prend pas en charge l’étiquetage automatique et la protection contre la perte de données. Vos stratégies existantes resteront allumées, sauf si vous les avez désactivées.
+  - Les stratégies d’étiquetage automatique ne peuvent pas être modifiées une fois la version d’essai terminée, mais elles peuvent être supprimées.
+  - Si vous modifiez des stratégies DLP qui incluent les emplacements Teams ou Appareils à la fin de la version d’essai, ces emplacements seront supprimés de la stratégie.
+
+  Pour plus d’informations sur chacune de ces fonctionnalités préconfigurées et sur leur impact sur les utilisateurs, consultez la version d’essai gratuite [Protection des données Microsoft](mip-easy-trials.md).
+
+  Pour plus d’informations sur la gamme complète des fonctionnalités Protection des données Microsoft, voir Protection des données Microsoft [dans Microsoft 365](information-protection.md).
 
 - **Gestion des risques internes**
 
-    Tirez parti de l’intelligence artificielle pour vous aider à identifier, trier et corriger rapidement les risques internes. À l’aide des journaux des services Microsoft 365 et Azure, vous pouvez définir des stratégies qui surveillent les signaux de risque, puis prendre des mesures correctives telles que la promotion de la formation des utilisateurs ou l’ouverture d’une enquête. [En savoir plus sur la gestion des risques internes](insider-risk-management-solution-overview.md)
+  Tirez parti de l’intelligence artificielle pour vous aider à identifier, trier et corriger rapidement les risques internes. À l’aide des journaux des services Microsoft 365 et Azure, vous pouvez définir des stratégies qui surveillent les signaux de risque, puis prendre des mesures correctives telles que la promotion de la formation des utilisateurs ou l’ouverture d’une enquête. [En savoir plus sur la gestion des risques internes](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
@@ -116,4 +112,10 @@ Vous vous demandez ce que vous pouvez faire dans votre version d’essai gratuit
 
 - **Gestion des enregistrements**
 
-    Utilisez les fonctionnalités intégrées de Records Management pour :       - classer le contenu en tant que document afin d'empêcher les utilisateurs de le modifier, conformément aux réglementations, aux lois ou à la politique de l'entreprise ; - appliquer automatiquement des étiquettes de conservation au contenu lorsqu'il correspond aux critères que vous spécifiez, à l'aide de politiques d'étiquetage automatique ; - utiliser des politiques de portée adaptative pour cibler dynamiquement vos politiques d'étiquetage de conservation sur des emplacements, sans limite quant au nombre d'emplacements inclus ; - bénéficier d'une prise en charge complète du cycle de vie du contenu, y compris la possibilité d'effectuer un examen des dispositions sur le contenu avant qu'il ne soit définitivement supprimé à la fin Pour plus d'informations sur la gamme complète de fonctionnalités de Microsoft Records Management, veuillez consulter la rubrique [En savoir plus sur Records Management](records-management.md). 
+  Utilisez les fonctionnalités de gestion des enregistrements intégrées pour :
+  - Classer le contenu en tant qu’enregistrement pour empêcher les utilisateurs de modifier, comme l’exige la réglementation, les lois ou la stratégie de l’organisation
+  - Appliquer automatiquement des étiquettes de rétention au contenu, lorsqu’il correspond aux critères que vous spécifiez, à l’aide de stratégies d’étiquette à appliquer automatiquement
+  - Utiliser des stratégies d’étendue adaptative pour cibler dynamiquement vos stratégies d’étiquette de rétention à des emplacements, sans aucune limite pour le nombre d’emplacements inclus
+  - Obtenir une prise en charge complète du cycle de vie du contenu, y compris la possibilité d’effectuer une révision avant destruction sur le contenu avant qu’il ne soit définitivement supprimé à la fin
+
+  Pour plus d’informations sur la gamme complète de fonctionnalités de gestion des enregistrements Microsoft, [en savoir plus sur la gestion des enregistrements](records-management.md)
