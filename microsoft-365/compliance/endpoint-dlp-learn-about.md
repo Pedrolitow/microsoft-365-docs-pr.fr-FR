@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont visibles dans les solutions de conformité '
-ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943579"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271561"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -108,7 +108,7 @@ L’intégration et déclassement sont gérés à l’aide de scripts téléchar
 
  Utilisez les procédures décrites dans [Prise en main des points de terminaison Microsoft 365 DLP](endpoint-dlp-getting-started.md) vers les appareils intégrés.
 
-Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ces derniers apparaissent automatiquement dans la liste des appareils.
+Si vous avez des appareils intégrés via [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/), ces derniers apparaissent automatiquement dans la liste des appareils. Vous pouvez activer **la surveillance des appareils pour** utiliser le point de terminaison DLP.
 
 > [!div class="mx-imgBorder"]
 > ![liste des appareils gérés.](../media/endpoint-dlp-learn-about-2-device-list.png)

@@ -575,8 +575,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: Paramètres courants pour la rétention
-              href: retention-settings.md
+        - name: Paramètres courants pour la rétention et la suppression
+          href: retention-settings.md
         - name: Limites de rétention et de suppression
           href: retention-limits.md
     - name: Gouvernance des informations
@@ -1046,10 +1046,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sécurité et conformité pour le secteur de l’énergie
           href: ../solutions/energy-secure-collaboration.md
-- name: Gestion de la confidentialité
-  items:
-    - name: En savoir plus sur la gestion de la confidentialité
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Fonctionnalités de conformité hybrides
   items:
     - name: Chiffrement du courrier Exchange Online avec AD RMS
@@ -1063,5 +1059,7 @@
   href: ../security/index.yml
 - name: Applications Microsoft 365 pour les entreprises
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: Résolution des problèmes
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

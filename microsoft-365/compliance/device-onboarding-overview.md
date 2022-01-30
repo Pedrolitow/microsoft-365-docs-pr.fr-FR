@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: a83db434b488ce28c71df0fb7e3185be88b87b01
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950899"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272077"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
 
@@ -78,7 +78,7 @@ Assurez-vous que les appareils Windows que vous devez intégrer répondent à ce
 
 1. Doit être en cours d’exécution de Windows 10 x64 build 1809 ou ultérieure ou une Windows 11.
 
-2. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623.
+2. La version du client logiciel anti-programme malveillant est 4.18.2110 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623.
 
    > [!NOTE]
    > Aucune des composants de sécurité Windows ne doit être actif, mais la [protection en temps réel et le moniteur de comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
@@ -98,11 +98,11 @@ Assurez-vous que les appareils Windows que vous devez intégrer répondent à ce
    - [Jonction Azure AD Hybride](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [Inscrit à AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063
+5. Une version prise en charge de Microsoft Office est installée et à jour. Pour bénéficier d’une protection et d’une expérience utilisateur robuste, vérifiez que Microsoft 365 Apps version 16.0.14701.0 ou ultérieure est installée.
+> [!NOTE]
+   >Si vous exécutez Office 265 : KB 4577063 est requis Si vous utilisez le canal d’entreprise mensuel de Microsoft 365 Apps versions 2004-2008, vous devez mettre à jour vers la version 2009 ou ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
 
-6. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la classification du contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
-
-7. Si vous avez des points de terminaison qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour la protection de l’information](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+6. Si vous avez des points de terminaison qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour la protection de l’information](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Intégration d’appareils Windows 10 ou Windows 11
 

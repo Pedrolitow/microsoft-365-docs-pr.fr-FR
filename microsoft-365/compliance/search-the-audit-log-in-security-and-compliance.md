@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054979"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272089"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -1167,7 +1167,7 @@ Non. Le pipeline de service d’audit est presque en temps réel et ne peut donc
 
 **Les données d’audit circulent-elles entre les géographies ?**
 
-Non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, il peut arriver que nous déplacions les données entre ces régions afin d’équilibrer la charge, uniquement lors de problèmes liés aux sites actifs. Lorsque nous effectuons ces activités, les données en transit sont chiffrées.
+En général, non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, nous pouvons être amenés à transférer des données entre ces régions pour l’équilibrage de charge pendant les problèmes de site actif. Lorsque nous effectuons ces activités, les données en transit sont chiffrées. Pour les organisations multi-géographiques, les données d’audit collectées à partir de toutes les régions de l’organisation seront stockées uniquement dans la région d’origine de l’organisation.
 
 **Les données d’audit sont-elles chiffrées ?**
 
