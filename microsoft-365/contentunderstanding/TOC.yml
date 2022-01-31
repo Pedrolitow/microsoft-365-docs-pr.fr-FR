@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: Prise en main de la rétention
   items:
-    - name: En savoir plus sur les modèles de présentation des documents via le modèle d’exemple
+    - name: Importer un exemple de modèle de compréhension de document
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Créer un centre de contenu
       href: create-a-content-center.md
