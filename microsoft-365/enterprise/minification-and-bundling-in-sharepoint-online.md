@@ -2,8 +2,8 @@
 title: Minimisation et regroupement dans SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 3/1/2017
+manager: scotv
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire au chargement des pages dans SharePoint Online.
-ms.openlocfilehash: 7214d396dc39147f6864144420f8fa3fd61195b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166957"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281470"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
 Cet article explique comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire le nombre de demandes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
   
-Lorsque vous personnalisez votre site web, vous pouvez finir par ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de requêtes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
+Lorsque vous personnalisez votre site web, vous pouvez ajouter un grand nombre de fichiers supplémentaires au serveur pour prendre en charge la personnalisation. L’ajout de JavaScript, de CSS et d’images supplémentaires augmente le nombre de requêtes HTTP sur le serveur, ce qui augmente le temps d’affichage d’une page web. Si vous avez plusieurs fichiers du même type, vous pouvez regrouper ces fichiers pour accélérer le téléchargement de ces fichiers.
   
 Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approche appelée réduction, dans laquelle vous réduisez la taille totale des fichiers en supprimant les espaces et autres caractères qui ne sont pas nécessaires.
   
@@ -41,29 +41,27 @@ Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approch
 Vous pouvez utiliser des logiciels tiers tels que Web Essentials pour regrouper les fichiers CSS et JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials est un projet communautaire tiers, open source. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site web à [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) l’adresse . 
+> Web Essentials est un projet communautaire tiers, open source. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site web à l’adresse .[https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)
   
 Web Essentials offre deux formes de regroupement :
   
 - .bundle : pour les fichiers CSS et JavaScript
-    
 - .sprite : pour les images (disponible uniquement dans Visual Studio 2013)
-    
+
 Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, telle que :
   
 ![Capture d’écran de l’élément de marque dans la page maître personnalisée.](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
- **Pour créer un ensemble TE000127218 et CSS dans Web Essentials**
+### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Pour créer un ensemble TE000127218 et CSS dans Web Essentials
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
-    
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un fichier groupé \> **JavaScript** dans le menu contextif. Par exemple : 
-    
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> Créer un fichier groupé **JavaScript** dans le menu contextif. Par exemple :
+
     ![Capture d’écran montrant les options de menu Web Essentials.](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>Affichage des résultats du regroupement de fichiers JavaScript et CSS
 
-Lorsque vous créez un fichier groupé JavaScript et CSS, Web Essentials crée un fichier XML appelé fichier de recette qui identifie les fichiers JavaScript et CSS, ainsi que d’autres informations de configuration : 
+Lorsque vous créez un fichier groupé JavaScript et CSS, Web Essentials crée un fichier XML appelé fichier de recette qui identifie les fichiers JavaScript et CSS, ainsi que d’autres informations de configuration :
   
 ![Capture d’écran du fichier de recette JavaScript et CSS.](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
@@ -87,20 +85,17 @@ Après le regroupement, le fichier groupé JavaScript est considérablement réd
   
 ## <a name="bundling-images-by-creating-an-image-sprite"></a>Regroupement d’images en créant un sprite d’image
 
-À l’image de la façon dont vous regroupez des fichiers JavaScript et CSS, vous pouvez combiner de nombreuses petites icônes et d’autres images communes dans une feuille de sprite plus grande, puis utiliser CSS pour révéler les images individuelles. Au lieu de télécharger chaque image individuelle, le navigateur web de l’utilisateur télécharge une seule fois la feuille de sprite, puis la met en cache sur l’ordinateur local. Cela améliore les performances de chargement des pages en réduisant le nombre de téléchargements et d’allers-retours vers le serveur web.
+À l’image de la façon dont vous regroupez des fichiers JavaScript et CSS, vous pouvez combiner de nombreuses petites icônes et autres images communes dans une feuille de sprite plus grande, puis utiliser CSS pour révéler les images individuelles. Au lieu de télécharger chaque image individuelle, le navigateur web de l’utilisateur télécharge une seule fois la feuille de sprite, puis la met en cache sur l’ordinateur local. Cela améliore les performances de chargement des pages en réduisant le nombre de téléchargements et d’allers-retours vers le serveur web.
   
- **Pour créer un sprite d’image dans Web Essentials**
+### <a name="to-create-an-image-sprite-in-web-essentials"></a>Pour créer un sprite d’image dans Web Essentials**
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
-    
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un \> **sprite d’image** dans le menu contextiqué. Par exemple : 
-    
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** \> **Créer un sprite d’image** dans le menu contextiqué. Par exemple :
+
     ![Capture d’écran montrant comment créer un sprite d’image.](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
 3. Choisissez un emplacement pour enregistrer le fichier sprite. Le fichier .sprite est un fichier XML qui décrit les paramètres et les fichiers du sprite. Les figures suivantes illustrent un fichier PNG sprite et son fichier XML .sprite correspondant.
-    
+
     ![Capture d’écran d’un fichier sprite.](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
     ![Capture d’écran du fichier XML sprite.](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
-  
-

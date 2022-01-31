@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083084"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281530"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
@@ -50,12 +50,12 @@ ms.locfileid: "62083084"
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-En plus des informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct.](troubleshoot-collect-support-log.md)
+Outre les informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> Sur Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) unifiée moderne installée, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité aux URL de `MDEClientAnalyzer.exe` service cloud.
+> Sur Windows 10/11, Windows Server 2019/2022 ou Windows Server 2012R2/2016 avec la [solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) unifiée moderne installée, le script de l’analyseur client appelle un fichier exécutable `MDEClientAnalyzer.exe` appelé pour exécuter les tests de connectivité aux URL de service cloud.
 >
-> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation dans laquelle Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant `MDEClientAnalyzerPreviousVersion.exe` Microsoft Monitoring Agent’outil de connectivité `TestCloudConnection.exe` pour les URL de canal de données cyber.
+> Sur Windows 8.1, Windows Server 2016 ou toute édition précédente du système d’exploitation dans laquelle Microsoft Monitoring Agent (MMA) est utilisé pour l’intégration, le script de l’analyseur client appelle un fichier exécutable `MDEClientAnalyzerPreviousVersion.exe` appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant Microsoft Monitoring Agent’outil de connectivité `TestCloudConnection.exe` pour les URL de canal de cyber-données.
 
 
 Tous les scripts et modules PowerShell inclus dans l’analyseur sont signés par Microsoft.
@@ -91,7 +91,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
   Il s’agit du fichier de sortie HTML principal, qui contient les résultats et les instructions que le script de l’analyseur peut produire sur l’ordinateur.
 
-- Dossier \[ SystemInfoLogs\]
+- Dossier SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
     Description : Liste des logiciels x86 installés sur les logiciels de système d’exploitation x64 collectés à partir du Registre.
@@ -106,7 +106,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - dsregcmd.txt
 
-      Description : sortie de l’exécution [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
+      Description : sortie de l’exécution [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
 
     - IFEO.txt
 
