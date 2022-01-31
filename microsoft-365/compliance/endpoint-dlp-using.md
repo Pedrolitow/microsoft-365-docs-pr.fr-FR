@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159732"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281446"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -143,8 +143,7 @@ Pour trouver le chemin complet des applications Mac :
 
 2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
   
-3. Le nom de l'application est situé à la fin du chemin complet.
-
+3. Pour les applications macOS, vous avez besoin du nom complet du chemin d’accès, notamment le nom de l’application.
 
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protéger les données sensibles des applications de synchronisation cloud
 
@@ -177,7 +176,7 @@ Pour les appareils macOS, vous devez ajouter le chemin d’accès complet au fic
 
 2. Choisissez l'onglet **Ouvrir les fichiers et les ports**.
   
-3. Le nom de l'application est situé à la fin du chemin complet.
+3. Pour les applications macOS, vous avez besoin du nom complet du chemin d’accès, notamment le nom de l’application.
 
 #### <a name="service-domains"></a>Domaines de service
 
