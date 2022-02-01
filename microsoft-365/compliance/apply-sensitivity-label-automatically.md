@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: c2300061dbe075be31e0a70d7b1356e3606230e5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: cf45ea747740743f33c47906ac257c3061db7bf5
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271693"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295049"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -55,7 +55,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     
     Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et des données en transit (e-mails envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
     
-    Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
+    Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. Au lieu de cela, l’administrateur exécute les stratégies dans la simulation pour garantir l’étiquetage correct du contenu avant d’appliquer réellement l’étiquette.
 
     Pour des instructions de configuration, consultez l’article [Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) sur cette page.
     
@@ -253,6 +253,17 @@ Le mode simulation vous permet également d’augmenter progressivement l’éte
 
 Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du temps nécessaire à l’exécution de votre stratégie d’étiquetage automatique et pour vous aider à planifier et à programmer l’exécution sans le mode simulation.
 
+#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>Comptes OneDrive supprimés et résultats de simulation
+
+Attendez-vous à des différences d’affichage possibles dans les résultats de la simulation lorsque les comptes OneDrive supprimés sont toujours à [l’étape de rétention du processus de suppression](/onedrive/retention-and-deletion#the-onedrive-deletion-process). Par exemple, un employé a quitté l’organisation et son responsable dispose d’un accès temporaire aux fichiers OneDrive de cet utilisateur.
+
+Dans ce scénario, si le compte OneDrive a été spécifié par URL dans la stratégie d’étiquetage automatique, les fichiers correspondants du compte OneDrive supprimé sont inclus dans les résultats de la simulation.
+
+Toutefois, si le compte OneDrive n’a pas été spécifié par l’URL, mais a été inclus dans le paramètre par défaut **Tous** :
+- Lorsque l’emplacement SharePoint est inclus dans la stratégie, les fichiers correspondants du compte OneDrive supprimé s’affichent en tant qu’éléments SharePoint dans les résultats de la simulation.
+- Lorsque l’emplacement SharePoint n’est pas inclus dans la stratégie, les fichiers correspondants du compte OneDrive supprimé ne sont pas inclus dans les résultats de la simulation.
+
+Dans tous les cas, les fichiers correspondants sont étiquetés jusqu’à ce que le compte OneDrive soit définitivement supprimé. Les différences d’affichage répertoriées s’appliquent uniquement aux résultats de simulation.
 
 ### <a name="creating-an-auto-labeling-policy"></a>Création d’une stratégie d’étiquetage automatique
 
@@ -334,13 +345,13 @@ Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
     Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer la stratégie**.
 
-Les polices automatiques fonctionnent en continu jusqu'à ce qu'elles soient supprimées. Par exemple, les fichiers nouveaux et modifiés sont inclus dans les paramètres de stratégie actuels.
+Les stratégies d’étiquetage automatique s’exécutent en continu jusqu’à ce qu’elles soient supprimées. Par exemple, les fichiers nouveaux et modifiés sont inclus dans les paramètres de stratégie actuels.
 
 ### <a name="monitoring-your-auto-labeling-policy"></a>Surveillance de votre stratégie d’étiquetage automatique
 
 Une fois votre stratégie d’étiquetage automatique activée, vous pouvez afficher la progression de l’étiquetage des fichiers dans les emplacements SharePoint et OneDrive que vous avez choisis. Les courriels ne sont pas inclus dans la progression de l'étiquetage car ils sont automatiquement étiquetés au fur et à mesure de leur envoi.
 
-La progression de l’étiquetage inclut les fichiers à étiqueter par la stratégie, les fichiers étiquetés au cours des 7 derniers jours, et le nombre total de fichiers étiquetés. En raison du nombre maximal de 25 000 fichiers étiquetés par jour, ces informations vous donnent une visibilité sur la progression actuelle de l’étiquetage de votre stratégie et le nombre de fichiers à étiqueter.
+La progression de l’étiquetage inclut les fichiers à étiqueter par la stratégie, les fichiers étiquetés au cours des sept derniers jours et le nombre total de fichiers étiquetés. En raison du nombre maximal de 25 000 fichiers étiquetés par jour, ces informations vous donnent une visibilité sur la progression actuelle de l’étiquetage de votre stratégie et le nombre de fichiers à étiqueter.
 
 Lorsque vous activez votre police pour la première fois, vous voyez initialement une valeur de 0 pour les fichiers à étiqueter jusqu'à ce que les dernières données soient récupérées. Ces informations de progression sont mises à jour toutes les 48 heures. Vous pouvez donc vous attendre à voir les données les plus récentes tous les deux jours. Lorsque vous sélectionnez une stratégie d’étiquetage automatique, vous pouvez voir plus de détails sur la stratégie dans un volet volant, qui inclut la progression de l’étiquetage par les 10 principaux sites. Les informations de ce volet volant peuvent être plus à jour que les informations de stratégie agrégées affichées sur la page principale de **l’étiquetage automatique**.
 
