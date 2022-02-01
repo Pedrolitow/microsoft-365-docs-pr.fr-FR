@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164597"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295133"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender pour le point de terminaison sur Android collecte des informations à partir de vos appareils Android configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir defender pour point de terminaison pour Android sécurisé, à jour, performant comme prévu et pour prendre en charge le service.
 
-Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
+Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité [des données des points de terminaison](data-storage-privacy.md).
 
 Des informations sont collectées pour aider à maintenir defender pour point de terminaison pour Android sécurisé, à jour, en cours d’application et pour prendre en charge le service.
 
-Pour plus d’informations sur les questions de confidentialité les plus courantes concernant Microsoft Defender pour point de terminaison sur les appareils mobiles Android et iOS, consultez Microsoft Defender pour endpoint et votre confidentialité sur les appareils mobiles Android et [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+Pour plus d’informations sur les questions de confidentialité les plus courantes concernant Microsoft Defender pour point de terminaison sur les appareils mobiles Android et iOS, voir [Microsoft Defender pour endpoint](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a) et votre confidentialité sur les appareils mobiles Android et iOS.
 
 ## <a name="required-data"></a>Données requises
 
@@ -50,9 +50,24 @@ Informations sur **les** packages d’application Android malveillants (APK) sur
 - Stockage emplacement (chemin d’accès du fichier) de l’APIK
 - Heure d’installation, taille de l’API et autorisations
 
+Pour les appareils Enterprise Android - Informations sur les packages d’application Android installés sur l’appareil, y compris
+
+- Nom et nom du package de l’application
+- Numéro de version de l’application
+- Nom de fournisseur
+
+Pour les Enterprise Android avec un profil de travail : informations sur les packages d’application Android (APK) installés sur le profil de travail de l’appareil, y compris
+
+- Nom et nom du package de l’application
+- Numéro de version de l’application
+- Nom de fournisseur
+
+*Votre organisation peut également choisir de configurer Defender for Endpoint pour envoyer des informations sur toutes les applications installées sur l’appareil. Par défaut, ces informations ne sont pas envoyées à votre organisation.*
+
+
 ### <a name="web-page--network-information"></a>Page Web / Informations réseau
 
-- URL complète du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée.
+- URL complète du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée et bloquée.
 - Informations de connexion
 - Type de protocole (par exemple, HTTP, HTTPS, etc.)
 
