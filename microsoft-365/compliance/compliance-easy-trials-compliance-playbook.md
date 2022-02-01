@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320790"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265702"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
-Bienvenue dans le playbook d'essai des solutions de conformité Microsoft 365. Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les capacités robustes et complètes des produits de conformité et de sécurité Microsoft 365. 
+Bienvenue dans le playbook d'essai des solutions de conformité Microsoft 365. Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les capacités robustes et complètes des produits de conformité et de sécurité Microsoft 365.
 
 Essayer chaque solution vous aidera à prendre des décisions éclairées pour répondre aux besoins de conformité de votre organisation.
 
@@ -42,11 +42,11 @@ Fonctionnalités :
 Modules complémentaires en option :
 
 - [Évaluations des primes du responsable de la conformité](#compliance-manager-premium-assessments)
-- [Gestion de la confidentialité](#privacy-management)
+- [Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
 ## <a name="compliance-actions-with-microsoft-365"></a>Actions de conformité avec Microsoft 365
 
-Commencez facilement et rapidement à essayer les solutions de conformité de Microsoft sans modifier les métadonnées de votre organisation.En fonction de vos priorités, vous pouvez commencer par n'importe lequel de ces domaines de solution pour voir une valeur immédiate. Vous trouverez ci-dessous les cinq principales préoccupations organisationnelles communiquées par nos clients et les solutions recommandées pour commencer.
+Commencez facilement et rapidement à essayer les solutions de conformité de Microsoft sans modifier les métadonnées de votre organisation. En fonction de vos priorités, vous pouvez commencer par n'importe lequel de ces domaines de solution pour voir une valeur immédiate. Vous trouverez ci-dessous les cinq principales préoccupations organisationnelles communiquées par nos clients et les solutions recommandées pour commencer.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Actions de conformité avec Microsoft 365":::
 
@@ -66,8 +66,8 @@ Les fonctionnalités d’audit avancées telles que la possibilité d’enregist
 Configurer l'audit avancé pour les utilisateurs – pour vérifier que l'application d'audit avancé est attribuée aux utilisateurs, [effectuez les étapes suivantes pour chaque utilisateur](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
 
 1. Activer les événements d'audit avancé – [activez l'audit de SearchQueryInitiatedExchange et SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) pour chaque utilisateur dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-1. Configurez des stratégies de rétention d'audit – [créez des stratégies de rétention des journaux d'audit supplémentaires](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) pour répondre aux exigences des opérations de sécurité, de l'informatique et des équipes de conformité de votre organisation. 
-1. Rechercher des événements d'audit avancé – [recherchez des événements d'audit avancé cruciaux](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) et d'autres activités lors de la conduite d'enquêtes médico-légales
+1. Configurez des stratégies de rétention d'audit – [créez des stratégies de rétention des journaux d'audit supplémentaires](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) pour répondre aux exigences des opérations de sécurité, de l'informatique et des équipes de conformité de votre organisation.
+1. Rechercher des événements d'audit avancé – [rechercher des événements d'audit avancé cruciaux](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) et d'autres activités lors de la conduite d'enquêtes judiciaires.
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>Étape 2 : [Créez de nouvelles stratégies de journal d'audit pour spécifier la durée de conservation des journaux d'audit dans votre organisation pour les activités effectuées par les utilisateurs et définissez les niveaux de priorité pour vos stratégies](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
@@ -78,7 +78,7 @@ Les stratégies de rétention du journal d’audit font partie des nouvelles fon
 
 1. Avant de créer une stratégie de conservation des journaux d'audit – [éléments clés à connaître](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) avant de créer votre stratégie.
 1. [Créer une stratégie de rétention de journal d’audit](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Gérer les stratégies de rétention des journaux d'audit dans le centre de conformité Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier, et supprimer des stratégies de rétention d’audit. 
+1. [Gérer les stratégies de rétention des journaux d'audit dans le centre de conformité Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) – Les stratégies de rétention des journaux d'audit sont répertoriées dans l'onglet Stratégies de rétention d'audit (également appelé tableau de bord). Vous pouvez utiliser le tableau de bord pour afficher, modifier, et supprimer des stratégies de rétention d’audit.
 1. Créez et gérez des stratégies de rétention des journaux d'audit sur PowerShell : vous pouvez également utiliser le Centre de sécurité et de conformité PowerShell pour [créer et gérer des stratégies de rétention des journaux d'audit](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). L’une des raisons de l’utilisation de PowerShell est la création d’une stratégie pour un type ou une activité d’enregistrement qui n’est pas disponible dans l’interface utilisateur.
 
 ## <a name="communication-compliance"></a>Conformité des communications
@@ -193,10 +193,10 @@ Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10 et de 
 1. Préparez vos points de terminaison – assurez-vous que les appareils Windows 10 et macOS que vous prévoyez de déployer Endpoint DLP [répondre à ces exigences](endpoint-dlp-getting-started.md)
 1. [Intégrer les appareils dans la gestion des appareils](endpoint-dlp-getting-started.md) – Vous devez activer la surveillance des appareils et intégrer vos points de terminaison avant de pouvoir surveiller et protéger les éléments sensibles sur un appareil. Ces deux actions sont effectuées dans le portail de conformité Microsoft 365.
    - Scénario 1 – [Appareils d’intégration](endpoint-dlp-getting-started.md) qui n'ont pas encore été intégrés.
-   - Scénario 2 – [Microsoft Defender pour point de terminaison est déjà déployé et il existe des rapports de points de terminaison dans](endpoint-dlp-getting-started.md). Tous ces points de terminaison s’affichent dans la liste des appareils gérés. 
-1. [Configurer notre stratégie DLP par défaut pour les appareils](mip-easy-trials.md#dlp-for-devices) ou [Définir une nouvelle politique DLP pour les appareils](endpoint-dlp-learn-about.md)
-1. [Afficher les alertes DLP de point de terminaison](dlp-configure-view-alerts-policies.md) dans le tableau de bord de gestion des alertes DLP
-1. [Afficher les données DLP des points de terminaison](data-classification-activity-explorer.md) dans l'explorateur d'activités
+   - Scénario 2 – [Microsoft Defender pour point de terminaison est déjà déployé et il existe des rapports de points de terminaison dans](endpoint-dlp-getting-started.md). Tous ces points de terminaison s’affichent dans la liste des appareils gérés.
+1. [Configurer notre politique DLP par défaut pour les appareils](mip-easy-trials.md#dlp-for-devices) ou [Définir une nouvelle stratégie DLP pour les appareils](endpoint-dlp-learn-about.md).
+1. [Afficher les alertes Endpoint DLP](dlp-configure-view-alerts-policies.md) dans le tableau de bord de gestion des alertes DLP.
+1. [Afficher les données Endpoint DLP](data-classification-activity-explorer.md) dans l'explorateur d'activités.
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>Étape 3 : [Étendre les politiques dans la portée ou la protection](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
@@ -205,7 +205,7 @@ Vous disposez d'une certaine flexibilité dans la façon dont vous configurez vo
 1. Ajouter des emplacements
 1. Ajoutez des types d'informations sensibles ou des étiquettes à protéger
 1. Ajouter des actions
-   - Teams : 
+   - Teams :
       - [Empêcher l'accès externe aux documents sensibles](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Obtenez des conseils de stratégie pour aider à éduquer les utilisateurs et des instructions pour personnaliser les conseils de stratégie](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Appareils : passer de l'audit uniquement au blocage
@@ -252,7 +252,7 @@ Les limites de conformité créent des limites logiques au sein d'une organisati
 
 ![Les limites de conformité consistent en des filtres d'autorisations de recherche qui contrôlent l'accès aux agences et aux groupes de rôles d'administrateur qui contrôlent l'accès aux cas de découverte électronique.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
-Définissez des limites de conformité pour les enquêtes eDiscovery : 
+Définissez des limites de conformité pour les enquêtes eDiscovery :
 
 1. [Identifier un attribut utilisateur pour définir vos agences](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
 1. [Créer un groupe de rôles pour chaque agence](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
@@ -278,7 +278,7 @@ Implémentez Microsoft Information Protection et les étiquettes de confidential
 
 Les clients éligibles peuvent activer les étiquettes et les politiques par défaut pour Microsoft Information Protection. Lorsque vous activez la configuration par défaut dans l'essai, il faudra environ 2 minutes pour configurer toutes les stratégies pour votre locataire et jusqu'à 24 heures pour voir les résultats de ces stratégies par défaut.
 
-En choisissant la configuration par défaut, en 1 clic, se configure automatiquement : 
+En choisissant la configuration par défaut, en 1 clic, se configure automatiquement :
 
 - Étiquettes de sensibilité et politique d'étiquette de sensibilité
 - Étiquetage automatique côté client
@@ -306,7 +306,7 @@ Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer au
 
 ### <a name="step-3-review-and-turn-on-auto-labeling-policy"></a>Étape 3 : [Examiner et activer la politique d'étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-Désormais, sur la page **Protection des informations** > , étiquetage automatique, vous voyez votre politique d'**étiquetage automatique** dans la section **Simulation**. 
+Désormais, sur la page **Protection des informations** > , étiquetage automatique, vous voyez votre politique d'**étiquetage automatique** dans la section **Simulation**.
 
 Sélectionnez votre stratégie pour voir les détails de la configuration et de l'état. Une fois la simulation terminée, sélectionnez l'onglet Éléments à examiner pour voir quels e-mails ou documents correspondaient aux règles spécifiées.
 
@@ -323,7 +323,7 @@ Tirez parti de l’intelligence artificielle pour vous aider à identifier, trie
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Il existe quatre groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de gestion des risques internes. 
+Il existe quatre groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de gestion des risques internes.
 
 [Ajoutez des utilisateurs à un groupe de rôles de gestion des risques d'initiés.](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
 
@@ -333,7 +333,7 @@ Si vous ne pouvez pas voir les autorisations, veuillez contacter votre administr
 
 Lancez-vous rapidement et tirez le meilleur parti des capacités de gestion des risques internes grâce aux actions recommandées. Incluses sur la page Présentation, les actions recommandées vous guident tout au long des étapes de configuration et de déploiement des stratégies et pour entreprendre des actions d'investigation pour les actions des utilisateurs qui génèrent des alertes à partir des correspondances de stratégies.
 
-[Sélectionnez une recommandation dans la liste](insider-risk-management-configure.md#recommended-actions-preview) pour commencer à configurer la gestion des risques internes. 
+[Sélectionnez une recommandation dans la liste](insider-risk-management-configure.md#recommended-actions-preview) pour commencer à configurer la gestion des risques internes.
 
 ![Actions recommandées par la gestion des risques internes.](../media/insider-risk-recommended-actions.png)
 
@@ -362,7 +362,7 @@ Utilisez les fonctionnalités intégrées de gestion des enregistrements pour au
 > [!TIP]
 > Meilleures pratiques d'essai : Jour 1
 
-Les étendues de stratégie adaptatives vous permettent de cibler dynamiquement une stratégie sur certains utilisateurs, groupes ou sites en fonction de leurs attributs AD. 
+Les étendues de stratégie adaptatives vous permettent de cibler dynamiquement une stratégie sur certains utilisateurs, groupes ou sites en fonction de leurs attributs AD.
 
 Les attributs des étendues peuvent être sélectionnés dans une liste ou personnalisés à l'aide d'un générateur de requêtes avancé.
 
@@ -381,12 +381,12 @@ Les étiquettes de rétention peuvent être configurées pour s'appliquer automa
 
 L'activité de demande d'étiquette et l'activité d'examen de disposition peuvent être consultées sur votre écran Aperçu de la gestion des enregistrements.
 
-1. [Appliquer automatiquement des étiquettes de rétention au contenu contenant des informations sensibles](retention.md#retention-labels) 
+1. [Appliquer automatiquement des étiquettes de rétention au contenu contenant des informations sensibles](retention.md#retention-labels)
 1. Créer et appliquer une étiquette de rétention avec [révision avant destruction](disposition.md#disposition-reviews) à la fin de la période de rétention
 
 ### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>Étape 3 : Étiquetez automatiquement le contenu en tant qu'enregistrements à l'aide de classificateurs pouvant être entraînés
 
-Lorsque le contenu est déclaré un enregistrement, des restrictions sont imposées à l'élément en termes d'actions autorisées ou bloquées, des activités supplémentaires concernant les éléments sont enregistrées et vous disposez d'une preuve de disposition si les éléments sont supprimés à la fin de leur période de conservation. 
+Lorsque le contenu est déclaré un enregistrement, des restrictions sont imposées à l'élément en termes d'actions autorisées ou bloquées, des activités supplémentaires concernant les éléments sont enregistrées et vous disposez d'une preuve de disposition si les éléments sont supprimés à la fin de leur période de conservation.
 
 Les classificateurs entraînables sont des outils qui reconnaissent divers types de contenu, sur la base d'échantillons qui lui ont été fournis. Choisissez parmi une variété d'options intégrées ou configurez un classificateur personnalisé pour répondre à vos besoins spécifiques.
 
@@ -404,7 +404,7 @@ Les étiquettes de rétention peuvent être automatiquement appliquées au conte
 
 **…puis jetez-le en toute sécurité à la fin.**
 
-Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention, les relecteurs que vous choisissez reçoivent une notification par courrier électronique leur avertissant qu’ils ont du contenu à réviser. 
+Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention, les relecteurs que vous choisissez reçoivent une notification par courrier électronique leur avertissant qu’ils ont du contenu à réviser.
 
 Le contenu en attente d'une révision de disposition n'est définitivement supprimé qu'après qu'un réviseur pour l'étape finale de disposition ait choisi de supprimer définitivement le contenu.
 
@@ -418,15 +418,15 @@ Aidez votre organisation à évaluer les risques et à répondre efficacement au
 
 [Plus d'informations sur l'essai des évaluations premium de Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-### <a name="privacy-management"></a>Gestion de la confidentialité
+### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva
 
 **Identifier et prévenir les risques de confidentialité**
 
 Identifiez et protégez de manière proactive les risques de confidentialité tels que la thésaurisation des données, les transferts de données et le partage excessif des données, et aidez votre organisation à automatiser et à gérer les demandes de sujets à grande échelle.
 
-[En savoir plus sur la gestion de la confidentialité pour Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
+[En savoir plus sur Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Manuel d’essai : Gestion de la confidentialité pour Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Playbook d'essai : Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

@@ -360,6 +360,8 @@
               href: sit-use-exact-data-refresh-data.md
             - name: Utiliser des entités nommées dans vos politiques de prévention des pertes de données (aperçu)
               href: named-entities-use.md
+            - name: Scénarios d’usage courants pour les types d’informations sensibles
+              href: sit-common-scenarios.md
         - name: Référence de type d’informations sensibles
           items:
             - name: Définitions d’entités des types d’informations sensibles
@@ -647,7 +649,7 @@
           href: event-driven-retention.md
         - name: Publier et appliquer des étiquettes de rétention dans les applications
           href: create-apply-retention-labels.md
-        - name: Appliquer automatiquement des étiquettes de rétention au contenu
+        - name: Appliquer automatiquement des étiquettes de rétention de contenu
           href: apply-retention-labels-automatically.md
         - name: Verrouiller des stratégies pour restreindre les modifications
           href: retention-preservation-lock.md
