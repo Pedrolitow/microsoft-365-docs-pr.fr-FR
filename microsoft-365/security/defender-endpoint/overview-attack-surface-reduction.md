@@ -1,5 +1,5 @@
 ---
-title: Comprendre et utiliser la réduction de la surface d’attaque
+title: Comprendre et utiliser la réduction de la surface d'attaque
 ms.reviewer: ''
 description: Découvrez les fonctionnalités de réduction de la surface d’attaque de Microsoft Defender pour point de terminaison.
 keywords: asr, réduction de la surface d’attaque, Microsoft Defender pour point de terminaison, microsoft defender, antivirus, av, windows defender
@@ -12,17 +12,17 @@ ms.author: v-jweston
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/14/2021
-ms.openlocfilehash: 05650ab36833f8ea633c9f314fd438cfd0275919
-ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61598448"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320978"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -45,26 +45,26 @@ Les surfaces d’attaque sont tous les endroits où votre organisation est vuln�
 
 Pour configurer la réduction de la surface d’attaque dans votre environnement, suivez les étapes suivantes :
 
-1. [Activer l’isolation matérielle pour Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
+1. [Activez l’isolation matérielle pour Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
 2. Activer le contrôle d’application.
 
-   1. Passer en revue les stratégies de base Windows. Voir les [exemples de stratégies de base.](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)
-   2. Consultez le [Windows Defender de conception du contrôle d’application.](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)
-   3. Reportez-vous [au déploiement Windows Defender de contrôle d’application (WDAC).](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
+   1. Passer en revue les stratégies de base Windows. Voir [exemples de stratégies de base](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
+   2. Consultez le [Windows Defender de conception du contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
+   3. [Reportez-vous au Déploiement Windows Defender de contrôle d’application (WDAC).](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
-3. [Activer l’accès contrôlé aux dossiers.](enable-controlled-folders.md)
+3. [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md).
 
-4. [Activer la protection du réseau.](enable-network-protection.md)
+4. [Activer la protection du réseau](enable-network-protection.md).
 
-5. [Activer Exploit Protection](enable-exploit-protection.md).
+5. [Activez Exploit Protection](enable-exploit-protection.md).
 
-6. [Déployer des règles de réduction de la surface d’attaque.](attack-surface-reduction-rules-deployment.md)
+6. [Déployer des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment.md).
 
 7. Configurer votre pare-feu réseau.
 
-   1. Obtenez une vue d’ensemble [Windows Defender pare-feu avec une sécurité avancée.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-   2. Utilisez le guide [Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour déterminer la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
+   1. Obtenez une vue d’ensemble [Windows Defender pare-feu avec une sécurité avancée](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Utilisez le [guide Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour déterminer la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
    3. Utilisez le [guide Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
 
 > [!TIP]
@@ -83,7 +83,7 @@ Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez co
 - Protection réseau
 - Accès contrôlé aux dossiers en mode audit
 
-Le mode audit vous permet  d’enregistrer ce qui se serait passé si vous aviez activé la fonctionnalité.
+Le mode audit vous permet d’enregistrer ce qui  se serait passé si vous aviez activé la fonctionnalité.
 
 Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnalités. L’activation du mode audit uniquement pour les tests permet d’empêcher le mode audit d’affecter vos applications métier. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent sur une certaine période de temps.
 
@@ -91,7 +91,7 @@ Les fonctionnalités ne bloquent pas ou n’empêchent pas les applications, les
 
 Pour rechercher les entrées auditées, allez à **Applications et services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Opérationnel**.
 
-Utilisez Defender pour le point de terminaison pour obtenir plus de détails pour chaque événement. Ces détails sont particulièrement utiles pour examiner les règles de réduction de la surface d’attaque. L’utilisation de la console Defender for Endpoint vous permet d’examiner les problèmes dans le cadre de la chronologie des alertes et des [scénarios d’enquête.](investigate-alerts.md)
+Utilisez Defender pour le point de terminaison pour obtenir plus de détails pour chaque événement. Ces détails sont particulièrement utiles pour examiner les règles de réduction de la surface d’attaque. L’utilisation de la console Defender for Endpoint vous permet d’examiner les problèmes dans le cadre de la chronologie des [alertes et des scénarios d’enquête](investigate-alerts.md).
 
 Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de PowerShell et des fournisseurs de services de configuration (CSP).
 
@@ -113,7 +113,7 @@ La révision des événements est pratique lorsque vous évaluez les fonctionnal
 
 Cette section répertorie tous les événements, leurs fonctionnalités ou paramètres associés, et explique comment créer des affichages personnalisés pour filtrer des événements spécifiques.
 
-Obtenez des rapports détaillés sur les événements, les blocs et les avertissements dans le cadre de Sécurité Windows si vous avez un abonnement E5 et que vous utilisez [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
+Obtenez des rapports détaillés sur les événements, les blocs et les avertissements dans le cadre de Sécurité Windows si vous avez un abonnement E5 et utilisez [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Utiliser des affichages personnalisés pour examiner les fonctionnalités de réduction de la surface d’attaque
 
@@ -124,14 +124,14 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 #### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
 1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
-    - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
+    - Affichage personnalisé des événements d’accès *contrôlé aux dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Affichage personnalisé des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
-2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
+2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements**.
 
-3. Sélectionner **l’affichage** \> **personnalisé d’importation d’action...**
+3. Sélectionner **l’affichage personnalisé** \> **d’importation d’action...**
 
    > [!div class="mx-imgBorder"]
    > ![Animation mettant en surbrillance l’importation d’un affichage personnalisé à gauche de la fenêtre visionneuse even.](images/events-import.gif)
@@ -144,14 +144,14 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 #### <a name="copy-the-xml-directly"></a>Copier le XML directement
 
-1. Tapez **l’Observateur** d’événements dans menu Démarrer et ouvrez l Windows’observateur **d’événements.**
+1. **Tapez l’Observateur** d’événements menu Démarrer et ouvrez l’observateur Windows **événements**.
 
-2. Dans le panneau gauche, sous **Actions,** **sélectionnez Créer un affichage personnalisé...**
+2. Dans le panneau gauche, sous **Actions**, **sélectionnez Créer un affichage personnalisé...**
 
    > [!div class="mx-imgBorder"]
    > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements.](images/events-create.gif)
 
-3. Go to the XML tab and select **Edit query manually**. Vous verrez un avertissement vous signalant que vous  ne pouvez pas modifier la requête à l’aide de l’onglet Filtre si vous utilisez l’option XML. Sélectionnez **Oui**.
+3. Go to the XML tab and select **Edit query manually**. Vous verrez un avertissement vous signalant que vous ne pouvez pas modifier la requête à l’aide de l’onglet Filtre si vous utilisez l’option XML. Sélectionnez **Oui**.
 
 4. Collez le code XML de la fonctionnalité dont vous souhaitez filtrer les événements dans la section XML.
 
@@ -212,12 +212,12 @@ Vous pouvez également accéder manuellement à la zone d’événement qui corr
 
 ### <a name="list-of-attack-surface-reduction-events"></a>Liste des événements de réduction de la surface d’attaque
 
-Tous les événements de réduction de la surface d’attaque se trouvent sous **Journaux** des applications et des services > Microsoft > Windows puis le dossier ou le fournisseur répertoriés dans le tableau suivant.
+Tous les événements de réduction de la surface d’attaque se trouvent sous Journaux des applications et des **services > Microsoft > Windows**, puis dans le dossier ou le fournisseur répertoriés dans le tableau suivant.
 
 Vous pouvez accéder à ces événements dans l Windows’observateur d’événements :
 
-1. Ouvrez le menu **Démarrer** et tapez **l’Observateur** d’événements, puis sélectionnez le résultat de **l’Observateur d’événements.**
-2. Développez **Journaux** des applications et des services > Microsoft > Windows puis allez dans le dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
+1. Ouvrez le menu **Démarrer** et tapez **l’Observateur** d’événements, puis sélectionnez le résultat de **l’Observateur d’événements** .
+2. **Développez Journaux des applications et des services > Microsoft > Windows** puis allez dans le dossier répertorié sous Fournisseur **/source** dans le tableau ci-dessous.
 3. Double-cliquez sur le sous-élément pour voir les événements. Faites défiler les événements pour trouver celui que vous recherchez.
 
    ![Animation montrant l’utilisation de l’Observateur d’événements.](images/event-viewer.gif)

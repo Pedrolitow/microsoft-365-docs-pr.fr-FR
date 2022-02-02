@@ -22,19 +22,19 @@ ms.custom:
 description: La purge automatique (ZAP) d’une heure zéro déplace de manière identité les messages remis dans une boîte aux lettres Exchange Online vers le dossier Courrier indésirable ou la mise en quarantaine qui sont détectés comme du courrier indésirable, du hameçonnage ou qui contiennent des programmes malveillants après leur remise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d511ab13bd6be4a1e526726f8011f457dfd6c765
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295361"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320942"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique de zéro heure (ZAP) dans Exchange Online
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -98,7 +98,12 @@ ZAP ne met pas en quarantaine les messages en cours de remise dynamique [](safe-
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Comment voir si ZAP a déplacé votre message
 
-Pour déterminer si ZAP a déplacé votre message, vous pouvez utiliser [](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) l’affichage Flux de messagerie pour le rapport d’état du flux de messagerie ou l’Explorateur de [menaces (et les détections en temps réel).](threat-explorer.md) Notez qu’en tant qu’action système, ZAP n’est pas journalisé dans les journaux d’audit Exchange boîte aux lettres.
+Pour déterminer si ZAP a déplacé votre message, vous avez les options suivantes :
+
+- **Nombre de messages** : utilisez la [](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) vue Flux de messagerie dans le rapport d’état du flux de messagerie pour afficher le nombre de messages affectés par ZAP pour la plage de dates spécifiée.
+- **Détails du message** : utilisez l’Explorateur de [menaces (](threat-explorer.md)et les détections  en temps réel) pour filtrer tous les événements de courrier électronique par la valeur **ZAP** pour la colonne **d’action** supplémentaire.
+
+**Remarque** : ZAP n’est pas consigné dans les journaux d’audit Exchange boîte aux lettres en tant qu’action système.
 
 ## <a name="zero-hour-auto-purge-zap-faq"></a>FAQ sur la purge automatique d’heure zéro (ZAP)
 

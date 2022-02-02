@@ -10,20 +10,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 68bcc25d336fc7fc9c3ea76d4e150e2483f01323
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: cba76d867b71fa941983e10b0dbe10f323ea70ef
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213840"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321050"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
@@ -44,17 +45,17 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes. Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque logiciels et contribuer à la sécurité de votre organisation.
 
-Pour plus d’informations sur la configuration des règles de réduction de la surface d’attaque, voir Activer les règles de réduction [de la surface d’attaque.](enable-attack-surface-reduction.md)
+Pour plus d’informations sur la configuration des règles de réduction de la surface d’attaque, voir Activer les règles de réduction [de la surface d’attaque](enable-attack-surface-reduction.md).
 
 ## <a name="assess-rule-impact-before-deployment"></a>Évaluer l’impact des règles avant le déploiement
 
-Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’attaque sur votre réseau en ouvrant la recommandation de sécurité pour cette règle [dans Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/#tvm).
+Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’attaque sur votre réseau en ouvrant la recommandation de sécurité pour [cette règle dans Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque.":::
 
 Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
 
-Pour plus [d’informations](enable-attack-surface-reduction.md#requirements) sur les systèmes d’exploitation pris en charge et d’autres informations sur les conditions requises, voir La procédure requise dans l’article « Activer les règles de réduction de la surface d’attaque ».
+Pour plus [d’informations sur les](enable-attack-surface-reduction.md#requirements) systèmes d’exploitation pris en charge et d’autres informations sur les conditions requises, voir La procédure requise dans l’article « Activer les règles de réduction de la surface d’attaque ».
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -74,22 +75,22 @@ Le mode Avertissement est pris en charge sur les appareils exécutant les versio
 - Windows 11
 - [Windows Server, version 1809 ou](/windows-server/get-started/whats-new-in-windows-server-1809) ultérieure
 
-Antivirus Microsoft Defender doit être en cours d’exécution avec une protection en temps réel [en mode actif.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
+Antivirus Microsoft Defender doit être en cours d’exécution avec une protection en temps réel [en mode actif](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Assurez-vous également que Antivirus Microsoft Defender mises à jour du logiciel [anti-programme](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) malveillant sont installées.
+Assurez-vous également [que Antivirus Microsoft Defender mises](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) à jour du logiciel anti-programme malveillant sont installées.
 
 - Conditions minimales requises pour la publication de la plateforme : `4.18.2008.9`
 - Conditions minimales requises pour la publication du moteur : `1.1.17400.5`
 
-Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme anti-programme](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)malveillant Microsoft Defender.
+Pour plus d’informations et pour obtenir vos mises à jour, voir Mise à jour [pour la plateforme anti-programme malveillant Microsoft Defender](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Cas où le mode d’avertissement n’est pas pris en charge
 
 Le mode Avertissement n’est pas pris en charge pour trois règles de réduction de la surface d’attaque lorsque vous les configurez dans Microsoft Endpoint Manager. (Si vous utilisez une stratégie de groupe pour configurer vos règles de réduction de la surface d’attaque, le mode d’avertissement est pris en charge.) Les trois règles qui ne viennent pas en charge le mode d’avertissement lorsque vous les configurez Microsoft Endpoint Manager sont les suivantes :
 
-- [Empêcher JavaScript ou VBScript de lancer le contenu exécutable](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) téléchargé (GUID) `d3e037e1-3eb8-44c8-a917-57927947596d`
-- [Bloquer la persistance via l’abonnement aux événements WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID) `e6db77e5-3df2-4cf1-b95a-636979351e5b`
-- [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID) `c1db55ab-c21a-4637-bb3f-a12568109d35`
+- [Empêcher JavaScript ou VBScript de lancer le contenu exécutable](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) téléchargé (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
+- [Bloquer la persistance via l’abonnement aux événements WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
+- [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
 En outre, le mode d’avertissement n’est pas pris en charge sur les appareils exécutant des versions antérieures Windows. Dans ce cas, les règles de réduction de la surface d’attaque configurées pour s’exécuter en mode avertissement s’exécutent en mode blocage.
 
@@ -99,7 +100,7 @@ Chaque fois qu’une règle de réduction de la surface d’attaque est déclenc
 
 En outre, lorsque certaines règles de réduction de la surface d’attaque sont déclenchées, des alertes sont générées.
 
-Les notifications et les alertes générées peuvent être vues dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender.</a>
+Les notifications et les alertes générées peuvent être vues dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portail Microsoft 365 Defender web</a>.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements de réduction de la surface d’attaque et de recherche avancée
 
@@ -107,7 +108,7 @@ Vous pouvez utiliser le hunting avancé pour afficher les événements de réduc
 
 Par exemple, supposons qu’un événement de réduction de la surface d’attaque se produise sur 10 appareils pendant l’heure de 14 h 00. Supposons que le premier événement s’est produit à 2:15 et le dernier à 2:45. Avec le hunting avancé, vous verrez une instance de cet événement (même si elle s’est réellement produite sur 10 appareils) et son timestamp sera 14:15 PM.
 
-Pour plus d’informations sur le chasse avancée, consultez la recherche proactive de [menaces avec le chasse avancée.](advanced-hunting-overview.md)
+Pour plus d’informations sur le chasse avancée, voir [La recherche proactive des menaces avec le chasse avancée](advanced-hunting-overview.md).
 
 ## <a name="attack-surface-reduction-features-across-windows-versions"></a>Fonctionnalités de réduction de la surface d’attaque Windows versions
 
@@ -124,7 +125,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
   >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent [pas Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Les fonctionnalités avancées, disponibles uniquement dans Windows E5, sont les suivantes :
+Bien que les règles de réduction de la surface d’attaque ne nécessitent [Windows licence E5](/windows/deployment/deploy-enterprise-licenses), si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Les fonctionnalités avancées, disponibles uniquement dans Windows E5, sont les suivantes :
 
 - Surveillance, analyse et flux de travail disponibles dans [Defender for Endpoint](microsoft-defender-endpoint.md)
 - Fonctionnalités de rapport et de configuration [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
@@ -135,7 +136,7 @@ Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows 
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
-Vous pouvez interroger Defender pour obtenir des données de point de [terminaison Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide d’une [recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
+Vous pouvez interroger Defender pour obtenir des données de point de [terminaison Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide [d’un chasse avancée](advanced-hunting-query-language.md). Si vous exécutez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
 
 Voici un exemple de requête :
 
@@ -148,13 +149,13 @@ DeviceEvents
 
 Vous pouvez consulter le journal Windows événements pour afficher les événements générés par les règles de réduction de la surface d’attaque :
 
-1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et *extrayez* le fichiercfa-events.xmlun emplacement facilement accessible sur l’appareil.
+1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et *extrayez le fichiercfa-events.xml* un emplacement facilement accessible sur l’appareil.
 
-2. Entrez les mots, *Observateur d’événements,* dans le menu Démarrer pour ouvrir l Windows’observateur d’événements.
+2. Entrez les mots, *Observateur d’événements*, dans le menu Démarrer pour ouvrir l Windows’observateur d’événements.
 
-3. Sous **Actions,** **sélectionnez Importer un affichage personnalisé...**.
+3. Sous **Actions**, **sélectionnez Importer un affichage personnalisé...**.
 
-4. Sélectionnez le fichier *cfa-events.xml'où* il a été extrait. Vous pouvez également [copier le XML directement.](event-views.md)
+4. Sélectionnez le fichier *cfa-events.xml'où* il a été extrait. Vous pouvez également [copier le XML directement](event-views.md).
 
 5. Sélectionnez **OK**.
 

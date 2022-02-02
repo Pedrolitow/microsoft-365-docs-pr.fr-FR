@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
 ms.date: 01/20/2022
-ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156171"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322577"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -101,7 +101,7 @@ L’abonnement passe à l’état supprimé après 90 jours. Toutes les données
   
 - **Accès des administrateurs** Les administrateurs peuvent toujours se connecter et accéder au Centre d'administration et acheter d'autres abonnements si nécessaire. En tant qu'administrateur général ou de facturation, vous disposez de 90 jours pour [réactiver l’abonnement](reactivate-your-subscription.md) avec toutes les données intactes.
 
-- **Accès des utilisateurs** Vos utilisateurs ne peuvent plus utiliser les services tels que OneDrive Entreprise ou accéder aux données client (par exemple, des courriers électroniques ou des documents sur des sites d'équipe). Les applications Office, telles que Word et Excel, finissent par passer en mode d'utilisation en lecture seule avec fonctionnalités réduites, et affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Accès des utilisateurs** Vos utilisateurs ne peuvent plus utiliser les services tels que OneDrive Entreprise ou accéder aux données client (par exemple, des courriers électroniques ou des documents sur des sites d'équipe). Les applications Office, telles que Word et Excel, finissent par passer en mode d'utilisation en lecture seule avec fonctionnalités réduites, et affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380).
 
 Pour en savoir plus, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement for business ?](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ Pour modifier vos enregistrements NS, consultez la rubrique [Retirer un domaine]
 
 Lorsque l’annulation prend effet, les utilisateurs perdent l’accès à leurs données. Avant de procéder à l’annulation de votre abonnement, invitez-les à sauvegarder leurs fichiers OneDrive Entreprise et SharePoint Online autre part. Toutes les données client dépendantes de cet abonnement sont susceptibles d’être supprimées après 30 jours, et pas plus tard que 180 jours après l'annulation.
 
-- Pour déplacer votre courrier électronique, vos contacts, vos tâches et vos informations de calendrier vers un autre compte, voir [Exporter ou sauvegarder les courriers électroniques, les contacts et le calendrier vers un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
+- Pour déplacer votre courrier électronique, vos contacts, vos tâches et vos informations de calendrier vers un autre compte, voir [Exporter ou sauvegarder les courriers électroniques, les contacts et le calendrier vers un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
 
 - Pour enregistrer le contenu d'une bibliothèque de documents ou d'une liste (par exemple, des contacts) à partir d'un environnement SharePoint Online (OneDrive Entreprise ou sites d'équipe) vers des partages de fichiers ou un ordinateur local, voir [Migration manuelle de contenu SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Désinstaller Office (facultatif)
 
-Si vous avez annulé votre abonnement sans avoir [déplacé les utilisateurs sur un autre abonnement](move-users-different-subscription.md) l’incluant, Microsoft 365 s’exécute en mode de fonctionnalité réduite. Quand cela se produit, les utilisateurs peuvent uniquement lire et imprimer des documents, et les applications de Microsoft 365 affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Pour éviter toute confusion, demandez à vos utilisateurs de [désinstaller Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de leurs ordinateurs.
+Si vous avez annulé votre abonnement sans avoir [déplacé les utilisateurs sur un autre abonnement](move-users-different-subscription.md) l’incluant, Microsoft 365 s’exécute en mode de fonctionnalité réduite. Quand cela se produit, les utilisateurs peuvent uniquement lire et imprimer des documents, et les applications de Microsoft 365 affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Pour éviter toute confusion, demandez à vos utilisateurs de [désinstaller Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) de leurs ordinateurs.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

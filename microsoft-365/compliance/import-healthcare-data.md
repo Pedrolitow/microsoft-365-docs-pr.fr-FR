@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) de leur système de santé vers Microsoft 365. Cela vous permet d’utiliser les données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: d814a68e49db4e8a51ad7b9abd14911b5abedf84
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271705"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320690"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurer un connecteur pour importer les données d’audit ehr de santé (prévisualisation)
 
@@ -39,7 +39,7 @@ La configuration d’un connecteur de soins de santé comprend les tâches suiva
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur de santé à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](\Exchange\permissions-exo\role-groups#create-role-groups) voir [les sections](\Exchange\permissions-exo\role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur de santé à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](/Exchange/permissions-exo/role-groups#create-role-groups) voir [les sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 - Vous devez déterminer comment récupérer ou exporter les données du système EHR de votre organisation (quotidiennement) et créer un fichier texte décrit à l’étape 2. Le script que vous exécutez à l’étape 4 envoie les données du fichier texte au point de terminaison de l’API.
 
@@ -66,7 +66,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs requis pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrill plan avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Champ|Catégorie|
+|Field|Catégorie|
 |:----|:----------|
 | Nom de création *TimeEvent<br/>*<br/>ID de station de travail<br/>Event, section<br/>Catégorie de l'événement |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système EHR de santé.|
 | Patient Reg Id<br/>Prénom *du<br/> patient Prénom Prénom Patient Nom <br/>de famille du patient* <br/>Ligne d’adresse du patient 1* <br/>Ligne d’adresse du patient 2<br/>Patient City* <br/>Code postal patient*  <br/>État du patient <br/>Pays du patient <br/>Service des patients              | Ces champs sont utilisés pour identifier les informations de profil de patient.|
@@ -174,7 +174,7 @@ Voici un exemple de syntaxe pour le script connecteur de santé utilisant des va
 Si le chargement réussit, le script affiche le message **Télécharger réussite**.
 
 > [!NOTE]
-> Si vous avez des problèmes lors de l’exécution de la commande précédente [](\powershell\module\microsoft.powershell.core\about\about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
+> Si vous avez des problèmes lors de l’exécution de la commande précédente [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>Étape 5 : Surveiller le connecteur santé
 
