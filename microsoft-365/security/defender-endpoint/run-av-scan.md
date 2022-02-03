@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48788a50fc9794265103d838b4c8bbfb50d264ab
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302457"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320764"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -40,7 +40,7 @@ ms.locfileid: "61302457"
 
 Lancez Antivirus Microsoft Defender analyse sur un appareil.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -49,7 +49,7 @@ Lancez Antivirus Microsoft Defender analyse sur un appareil.
 > [!IMPORTANT]
 >
 > - Cette action est disponible pour les appareils sur Windows 10 version 1709 ou ultérieure, et sur Windows 11.
-> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, qu’Antivirus Microsoft Defender soit la solution antivirus active ou non. Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, qu’Antivirus Microsoft Defender soit la solution antivirus active ou non. Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)
 
 ## <a name="permissions"></a>Autorisations
 
@@ -63,8 +63,8 @@ Déléguée (compte professionnel ou scolaire)|Machine.Scan|« Analyser l’ordi
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour plus](user-roles.md) d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour plus](machine-groups.md) d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -76,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>Corps de la demande
@@ -86,12 +86,12 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-ScanType|String|Définit le type de l’analyse. **Obligatoire**.
+ScanType|Chaîne|Définit le type de l’analyse. **Obligatoire**.
 
 **ScanType** contrôle le type d’analyse à effectuer et peut être l’un des suivants :
 
-- **Rapide**: effectuer une analyse rapide sur l’appareil
-- **Complet**: effectuer une analyse complète sur l’appareil
+- **Rapide :** effectuer une analyse rapide sur l’appareil
+- **Complet** : effectuer une analyse complète sur l’appareil
 
 ## <a name="response"></a>Réponse
 

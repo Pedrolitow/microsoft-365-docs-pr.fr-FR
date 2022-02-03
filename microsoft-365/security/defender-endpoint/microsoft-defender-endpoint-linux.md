@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213984"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322130"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "62213984"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enforcement-level-for-antivirus-engine)passif.
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enforcement-level-for-antivirus-engine) passif.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
@@ -49,7 +49,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 - Privilèges d’administration sur l’appareil (en cas de déploiement manuel)
 
 > [!NOTE]
-> Microsoft Defender pour point de terminaison sur l’agent Linux est indépendant de [l’agent OMS.](/azure/azure-monitor/agents/agents-overview#log-analytics-agent) Microsoft Defender pour le point de terminaison s’appuie sur son propre pipeline de télémétrie indépendant.
+> Microsoft Defender pour point de terminaison sur l’agent Linux est indépendant de [l’agent OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender pour le point de terminaison s’appuie sur son propre pipeline de télémétrie indépendant.
 
 
 ### <a name="installation-instructions"></a>Instructions d’installation
@@ -58,7 +58,7 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 
 En règle générale, vous devez suivre les étapes suivantes :
 
-- Assurez-vous que vous avez un abonnement Microsoft Defender pour points de terminaison et que vous avez accès au portail [Microsoft Defender pour points de terminaison.](microsoft-defender-security-center.md)
+- Assurez-vous que vous avez un abonnement Microsoft Defender pour points de terminaison et que vous avez accès au portail [Microsoft Defender pour points de terminaison](microsoft-defender-security-center.md).
 - Déployez Microsoft Defender pour Endpoint sur Linux à l’aide de l’une des méthodes de déploiement suivantes :
   - L’outil en ligne de commande :
     - [Déploiement manuel](linux-install-manually.md)
@@ -67,7 +67,7 @@ En règle générale, vous devez suivre les étapes suivantes :
     - [Déployer à l’aide de l’outil de gestion de la configuration Ansible](linux-install-with-ansible.md)
     - [Déployer à l’aide de l’outil de gestion de la configuration Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
-Si vous avez des échecs d’installation, reportez-vous à Résolution des problèmes d’installation dans [Microsoft Defender pour Point de terminaison sur Linux.](linux-support-install.md)
+Si vous avez des échecs d’installation, reportez-vous à Résolution des problèmes [d’installation dans Microsoft Defender pour Point de terminaison sur Linux](linux-support-install.md).
 
 > [!NOTE]
 > Il n’est pas pris en charge d’installer Microsoft Defender pour le point de terminaison à un autre emplacement que le chemin d’installation par défaut. 
@@ -114,16 +114,16 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
   - Pour le reste des distributions prise en charge, la version minimale du noyau requise est 3.10.0-327
 
 - Mécanisme du fournisseur d’événements
-  - Red Hat Enterprise Linux 6 et CentOS 6 : solution basée sur `Talpa` un module noyau
+  - Red Hat Enterprise Linux 6 et CentOS 6 : `Talpa` solution basée sur un module noyau
   - Pour le reste des distributions pris en charge : `Fanotify`
-    - `fanotify`L’option noyau doit être activée
+    - L’option `fanotify` noyau doit être activée
 
       > [!CAUTION]
-      > L’exécution de Defender pour Endpoint sur Linux côte à côte avec d’autres solutions de sécurité basées sur `fanotify` n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
+      > L’exécution de Defender pour Endpoint sur Linux côte `fanotify`à côte avec d’autres solutions de sécurité basées sur n’est pas prise en charge. Cela peut entraîner des résultats imprévisibles, y compris l’arrêt du système d’exploitation.
 
 - Espace disque : 1 Go
 
-- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d’informations, voir « S’assurer que le daemon dispose de l’autorisation exécutable » dans Résoudre les problèmes d’installation de [Microsoft Defender pour Endpoint sur Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiert une autorisation exécutable. Pour plus d’informations, voir « S’assurer que le daemon dispose de l’autorisation exécutable » dans Résolution des problèmes [d’installation de Microsoft Defender pour Endpoint sur Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 
 - Cœurs : 2 minimum, 4 préférés
 
@@ -153,52 +153,55 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
-- L’infrastructure `auditd` d’audit ( ) doit être activée.
+- L’infrastructure d’audit (`auditd`) doit être activée.
 
   > [!NOTE]
-  > Les événements système capturés par les règles ajoutées à s’ajoutent à (s) et peuvent affecter l’audit de l’hôte `/etc/audit/rules.d/` et la collecte en `audit.log` amont. Les événements ajoutés par Microsoft Defender pour Endpoint sur Linux sont marqués avec une `mdatp` clé.
+  > Les événements système capturés par les règles ajoutées `/etc/audit/rules.d/` `audit.log`à s’ajoutent à (s) et peuvent affecter l’audit de l’hôte et la collecte en amont. Les événements ajoutés par Microsoft Defender pour Endpoint sur Linux sont marqués avec une `mdatp` clé.
 
 ### <a name="configuring-exclusions"></a>Configuration des exclusions
 
-Lorsque vous ajoutez des exclusions à Antivirus Microsoft Defender, vous devez tenir compte des [erreurs d’exclusion courantes pour Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+Lorsque vous ajoutez des exclusions Antivirus Microsoft Defender, vous devez tenir compte des [erreurs d’exclusion courantes Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### <a name="network-connections"></a>Connexions réseau
 
-La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vous devez vous assurer qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuserait l’accès à ces URL. Si c’est le cas, vous devrez peut-être *créer* une règle d’autoriser spécifiquement pour eux.
+La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vous devez vous assurer qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuserait l’accès à ces URL. Si c’est le cas, vous devrez peut-être *créer une* règle d’autoriser spécifiquement pour eux.
 
 <br>
 
 ****
 
-|Liste de feuilles de calcul de domaines|Description|
+
+|Liste de feuilles de calcul de domaines| Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> Téléchargez la feuille de [calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
-|||
+|Liste d’URL Microsoft Defender pour les points de terminaison pour les clients commerciaux | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients commerciaux. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Liste d’URL Microsoft Defender pour les points de terminaison pour les clients Gov/Cloud de la communauté du secteur public/DoD| Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation pour les clients Gov/Cloud de la communauté du secteur public/DoD. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|
+
 
 > [!NOTE]
-> Pour obtenir une liste d’URL plus spécifique, voir [Configurer les paramètres de proxy et de connectivité Internet.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
+> Pour obtenir une liste d’URL plus spécifique, voir [Configurer les paramètres de proxy et de connectivité Internet](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
 - Proxy transparent
 - Configuration manuelle du proxy statique
 
-Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment. Pour les proxies transparents, aucune configuration supplémentaire n’est nécessaire pour Defender for Endpoint. Pour le proxy statique, suivez les étapes de [la configuration manuelle du proxy statique.](linux-static-proxy-configuration.md)
+Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment. Pour les proxies transparents, aucune configuration supplémentaire n’est nécessaire pour Defender for Endpoint. Pour le proxy statique, suivez les étapes de [la configuration manuelle du proxy statique](linux-static-proxy-configuration.md).
 
 > [!WARNING]
 > Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
 >
 > L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Defender pour Endpoint sur Linux aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
 
-Pour les étapes de résolution des problèmes, voir Résoudre les problèmes de connectivité cloud pour [Microsoft Defender pour Endpoint sur Linux.](linux-support-connectivity.md)
+Pour les étapes de résolution des problèmes, voir Résoudre les problèmes de connectivité [cloud pour Microsoft Defender pour Endpoint sur Linux](linux-support-connectivity.md).
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Comment mettre à jour Microsoft Defender pour endpoint sur Linux
 
-Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint sur Linux, reportez-vous à Déployer les mises à jour [de Microsoft Defender pour Endpoint sur Linux.](linux-updates.md)
+Microsoft publie régulièrement des mises à jour logicielles pour améliorer les performances, la sécurité et fournir de nouvelles fonctionnalités. Pour mettre à jour Microsoft Defender pour endpoint sur Linux, reportez-vous à Déployer les mises à jour [de Microsoft Defender pour Endpoint sur Linux](linux-updates.md).
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Comment configurer Microsoft Defender pour point de terminaison sur Linux
 
-Des instructions sur la configuration du produit dans les environnements d’entreprise sont disponibles dans Définir les préférences [de Microsoft Defender pour Endpoint sur Linux.](linux-preferences.md)
+Des instructions sur la configuration du produit dans les environnements d’entreprise sont disponibles dans Définir les préférences [de Microsoft Defender pour Endpoint sur Linux](linux-preferences.md).
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Les applications courantes à Microsoft Defender pour le point de terminaison peuvent avoir un impact
 

@@ -11,25 +11,26 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 567280ca5d6530373baf251127cd301c759743c1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: fab57a3cb63823dcd4538f2b4bb381972d310c64
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165077"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322070"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -48,16 +49,16 @@ Vous pouvez activer l’accès contrôlé aux dossiers à l’aide de l’une de
 
 Les paramètres de stratégie de groupe qui désactivent la fusion de listes d’administrateurs locaux remplacent les paramètres d’accès contrôlé aux dossiers. Ils remplacent également les dossiers protégés et les applications autorisées définies par l’administrateur local par le biais d’un accès contrôlé aux dossiers. Ces stratégies sont les suivantes :
 
-- Antivirus Microsoft Defender configurer **le comportement de fusion de l’administrateur local pour les listes**
-- System Center Endpoint Protection autoriser **les utilisateurs à ajouter des exclusions et des remplacements**
+- Antivirus Microsoft Defender **configurer le comportement de fusion de l’administrateur local pour les listes**
+- System Center Endpoint Protection **autoriser les utilisateurs à ajouter des exclusions et des remplacements**
 
-Pour plus d’informations sur la désactivation de la fusion de listes locales, voir Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie de [Microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)
+Pour plus d’informations sur la désactivation de la fusion de listes locales, voir Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie de [Microsoft Defender AV](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## <a name="windows-security-app"></a>Sécurité Windows application
 
-1. Ouvrez l Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher des Sécurité Windows dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher des Sécurité Windows dans **le menu Démarrer**.
 
-2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Protection contre les **ransomware.**
+2. Sélectionnez la **vignette & protection** contre les menaces antivirus (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez **Protection contre les ransomware**.
 
 3. Définissez le commutateur pour **l’accès contrôlé aux** dossiers sur **On**.
 
@@ -65,30 +66,30 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 > *Cette méthode n’est pas disponible Windows Server 2012R2 ou 2016.
 > 
 > Si l’accès contrôlé aux dossiers est configuré avec la stratégie de groupe, PowerShell ou les CSP MDM, l’état change dans l’application Sécurité Windows après un redémarrage de l’appareil.
-> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affichera l’état comme Étant **éteint.**
+> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affiche l’état comme **Étant éteint**.
 > Si vous protégez les données de profil utilisateur, nous vous recommandons de le faire sur le lecteur d’installation Windows par défaut.
 
 ## <a name="endpoint-manager"></a>Gestionnaire de points de terminaison
 
-1. Connectez-vous au [Endpoint Manager](https://endpoint.microsoft.com) et ouvrez **Endpoint Security**.
+1. Connectez-vous au [Endpoint Manager](https://endpoint.microsoft.com) et ouvrez **Sécurité du point de terminaison**.
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Sélectionnez **Plateforme,** **sélectionnez Windows 10 et** ultérieures, puis sélectionnez les règles de réduction de **la surface d’attaque de profil** \> **Créer.**
+3. **Sélectionnez Plateforme**, **sélectionnez Windows 10 et ultérieures**, puis sélectionnez les règles de réduction de **la surface d’attaque de profil Créer**\>.
 
 4. Nommez la stratégie et ajoutez une description. Sélectionnez **Suivant**.
 
-5. Faites défiler la page vers le bas, sélectionnez la page de la page de **la protection** des dossiers activée, puis choisissez **Activer.**
+5. Faites défiler la page vers le bas, sélectionnez la barre de **la protection** des dossiers Activée, puis choisissez **Activer**.
 
-6. Sélectionnez **la liste des dossiers supplémentaires** qui doivent être protégés et ajoutez les dossiers qui doivent être protégés.
+6. **Sélectionnez la liste des dossiers supplémentaires qui doivent être** protégés et ajoutez les dossiers qui doivent être protégés.
 
-7. Sélectionnez **la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
+7. **Sélectionnez la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
 
-8. Sélectionnez **Exclure les fichiers et les** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
+8. **Sélectionnez Exclure les fichiers et les** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
 
-9. Sélectionnez les **affectations de profil,** affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
+9. Sélectionnez les **affectations de profil**, affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
 
-10. Sélectionnez **Suivant** pour enregistrer chaque lame ouvert, puis **Créer.**
+10. **Sélectionnez Suivant** pour enregistrer chaque lame ouvert, puis **Créer**.
 
     > [!NOTE]
     > Les caractères génériques sont pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
@@ -99,13 +100,13 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** Windows Defender \> **Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
 2. Sélectionnez **Home** \> **Create Exploit Guard Policy**.
 
-3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis sélectionnez **Suivant**.
+3. Entrez un nom et une description, sélectionnez **Accès contrôlé aux** dossiers, puis **sélectionnez Suivant**.
 
-4. Choisissez si bloquer ou auditer les modifications, autoriser d’autres applications ou ajouter d’autres dossiers, puis sélectionnez **Suivant**.
+4. Choisissez si bloquer ou auditer les modifications, autoriser d’autres applications ou ajouter d’autres dossiers, puis **sélectionnez Suivant**.
 
    > [!NOTE]
    > Le caractère générique est pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
@@ -116,27 +117,27 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="group-policy"></a>Stratégie de groupe
 
-1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
+1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx) de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier**.
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > Windows Defender Exploit Guard > accès contrôlé aux dossiers.**
+3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > Windows Defender Exploit Guard > accès contrôlé aux dossiers**.
 
-4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
+4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option **sur Activé**. Dans la section Options, vous devez spécifier l’une des options suivantes :
    - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
    - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers dans les dossiers protégés.
    - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
-   - **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
-   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés seront **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
+   - **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services \> de Microsoft \> Windows \> Windows Defender \> ID \> opérationnel 1123.
+   - **Auditer la modification** du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont enregistrées dans le journal des **événements** \> Windows (sous Journaux des applications et des services **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 
       ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse.](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
-> Pour activer entièrement l’accès contrôlé aux dossiers, vous  devez définir l’option de stratégie de groupe sur Activé et sélectionner Bloquer dans le menu déroulant Options. 
+> Pour activer entièrement l’accès contrôlé aux dossiers, vous devez définir l’option de stratégie  de groupe sur Activé et sélectionner Bloquer dans le menu déroulant Options.
 
 ## <a name="powershell"></a>PowerShell
 
-1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur.**
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 
 2. Entrez l’cmdlet suivante :
 
@@ -144,7 +145,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
     Set-MpPreference -EnableControlledFolderAccess Enabled
     ```
 
-Vous pouvez activer la fonctionnalité en mode audit en spécifiant `AuditMode` au lieu de `Enabled` .
+Vous pouvez activer la fonctionnalité en mode audit en spécifiant `AuditMode` au lieu de `Enabled`.
 
 Permet `Disabled` de désactiver la fonctionnalité.
 

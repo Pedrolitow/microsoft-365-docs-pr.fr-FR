@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données d’enregistrements de santé électroniques (EHR) à partir du système de Contrôle de votre organisation vers Microsoft 365. Cela vous permet d’utiliser des données EHR dans les stratégies de gestion des risques internes pour vous aider à détecter l’activité d’accès non autorisé aux données des patients par vos employés.
-ms.openlocfilehash: b3382f47bb9ec91623c86e16394bb3452fb1619e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272017"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321122"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurer un connecteur pour importer les données d’audit EHR d’Ehr (prévisualisation)
 
@@ -39,7 +39,7 @@ La configuration d’un connecteur de Connecteur comprend les tâches suivantes 
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
-- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur Connecteur à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](\Exchange\permissions-exo\role-groups#create-role-groups) voir [les sections](\Exchange\permissions-exo\role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
+- Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée le connecteur Connecteur à l’étape 3 Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, [](/Exchange/permissions-exo/role-groups#create-role-groups) voir [les sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ».
 
 - Vous devez déterminer comment récupérer ou exporter les données à partir du système EHR de Votre organisation (quotidiennement) et créer un fichier texte décrit à l’étape 2. Le script que vous exécutez à l’étape 4 envoie les données du fichier texte au point de terminaison de l’API.
 
@@ -66,7 +66,7 @@ L’étape suivante consiste à créer un fichier texte qui contient des informa
 
 Le tableau suivant répertorie les champs requis pour activer les scénarios de gestion des risques internes. Un sous-ensemble de ces champs est obligatoire. Ces champs sont mis en surbrill plan avec un astérisque (*). Si l’un des champs obligatoires est manquant dans le fichier texte, le fichier n’est pas validé et les données du fichier ne sont pas importées.
 
-|Champ|Catégorie|
+|Field|Catégorie|
 |:----|:----------|
 | ACCESS_LOG. *<br/>ACCESS_TIME ACCESS_LOG_METRIC. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>ZCMETRIC\_\_ GROUP.NAME<br/>ZCACCESS\_\_ ACTION.NAME |Ces champs sont utilisés pour identifier les événements d’activité d’accès dans votre système EHR d’Ehr d’Ehr.|
 | PATIENT. PAT_MRN_ID<br/>PATIENT. PAT_FIRST_NAME* <br/>PATIENT. PAT_MIDDLE_NAME <br/>PATIENT. PAT_LAST_NAME* <br/>PATIENT. ADD_LINE_1* <br/>PATIENT. ADD_LINE_2  <br/>PATIENT. CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Ces champs sont utilisés pour identifier les informations de profil de patient.|
@@ -161,7 +161,7 @@ Voici un exemple de syntaxe pour le script Connecteur de Connecteur à l’aide 
 Si le chargement réussit, le script affiche le message **Télécharger réussite**.
 
 > [!NOTE]
-> Si vous avez des problèmes lors de l’exécution de la commande précédente [](\powershell\module\microsoft.powershell.core\about\about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
+> Si vous avez des problèmes lors de l’exécution de la commande précédente [](/powershell/module/microsoft.powershell.core/about/about_execution_policies) en raison des stratégies d’exécution, voir À propos des stratégies d’exécution et [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) pour obtenir des instructions sur la définition des stratégies d’exécution.
 
 ## <a name="step-5-monitor-the-epic-connector"></a>Étape 5 : Surveiller le connecteur Connecteur
 

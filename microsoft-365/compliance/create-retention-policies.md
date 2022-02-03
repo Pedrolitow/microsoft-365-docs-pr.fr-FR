@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241538"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321014"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -88,10 +88,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
         - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
         - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé.
         
-       Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](retention-settings.md#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
-        
-        - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu’une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies des messages continueront d’être renvoyées dans les résultats eDiscovery des utilisateurs qui n’ont pas été affectés à la stratégie.
-        - Pour les utilisateurs qui n'ont pas été affectés à la stratégie, les messages supprimés en raison de cette stratégie seront affichés dans les résultats de recherche de Teams, mais le contenu du message ne sera pas affiché.
+       Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](retention-settings.md#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. Pour **Décider si vous souhaitez conserver le contenu, supprimez-le ou les deux** pages, spécifiez les options de configuration pour conserver et supprimer le contenu.
 

@@ -13,13 +13,14 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 465a510ef25b0be0ba406c1265096476959d8c19
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: 77c27d268a8f25c047f562a3cfc125092e64d2c7
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218021"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321794"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -45,11 +46,11 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
 2. Choisissez **HKEY_LOCAL_MACHINE** dans le menu latéral.
 
-3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs** \>  \> **microsoft** \>  \> **Windows Defender Windows Defender Exploit Guard** Network \> **Protection**.
+3. Naviguez dans les menus imbrmbrés pour accéder aux stratégies **LOGICIELLEs** \>  \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
-Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** Network \> **Protection**.
+Si la clé est manquante, accédez à **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
-4. Sélectionnez **EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil :
+4. **Sélectionnez EnableNetworkProtection pour** voir l’état actuel de la protection réseau sur l’appareil :
 
    - 0 ou **Off**
    - 1 ou **Sur**
@@ -69,7 +70,7 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
 ### <a name="powershell"></a>PowerShell
 
-1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur.**
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**.
 
 2. Entrez l’cmdlet suivante :
 
@@ -83,7 +84,7 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-    À `Disabled` utiliser à la place ou pour désactiver la `AuditMode` `Enabled` fonctionnalité.
+    À `Disabled` utiliser à la place `AuditMode` ou `Enabled` pour désactiver la fonctionnalité.
 
 ### <a name="mobile-device-management-mdm"></a>Gestion des périphériques mobiles (GPM)
 
@@ -91,54 +92,54 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-1. Connectez-vous au Microsoft Endpoint Manager’administration centrale ( https://endpoint.microsoft.com) .
+1. Connectez-vous au Microsoft Endpoint Manager’administration centrale (https://endpoint.microsoft.com).
 
-2. Go to **Devices**  >  **Configuration profiles** Create  >  **profile**.
+2. Go to **DevicesConfiguration** >  **profilesCreate** >  profile.
 
-3. Dans le **volant Créer un profil,** sélectionnez **Plateforme** et choisissez le type **de profil** en tant **que modèles.**
+3. Dans le **volant Créer un profil** , sélectionnez **Plateforme** et choisissez le **type de profil** **en tant que modèles**.
 
-4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
+4. Dans le **nom du modèle**, choisissez **Endpoint Protection** dans la liste des modèles, puis sélectionnez **Créer**.
 
-4. Go to **Endpoint protection**  >  **Basics,** provide a name for your profile, and then select **Next**.
+4. Go to **Endpoint** **protectionBasics** > , provide a name for your profile, and then select **Next**.
 
-5. Dans la **section Paramètres de** configuration, go to **Protection contre les attaques Microsoft Defender**  >  **Network filtering**  >  **Network protection**  >  **Enable** or **Audit**. Sélectionnez **Suivant**.
+5. Dans la **section Paramètres de** configuration, Protection contre les attaques Microsoft Defender  > **Network filteringNetwork** >  **protectionEnable** >  ou Audit. Sélectionnez **Suivant**.
 
-6. Sélectionnez les balises **d’étendue,** **les affectations** et les règles d’applicabilité appropriées, selon les besoins de votre organisation.  Les administrateurs peuvent définir d’autres exigences.
+6. Sélectionnez les balises **d’étendue**, **les affectations** et les règles d’applicabilité appropriées, selon les besoins de votre organisation. Les administrateurs peuvent définir d’autres exigences.
 
-7. Examinez toutes les informations, puis sélectionnez **Créer.**
+7. Examinez toutes les informations, puis sélectionnez **Créer**.
 
 ### <a name="group-policy"></a>Stratégie de groupe
 
 Utilisez la procédure suivante pour activer la protection réseau sur des ordinateurs joints à un domaine ou sur un ordinateur autonome.
 
-1. Sur un ordinateur autonome,  sélectionnez Démarrer, puis tapez et sélectionnez **Modifier la stratégie de groupe.**
+1. Sur un ordinateur autonome, sélectionnez Démarrer,  puis tapez et sélectionnez **Modifier la stratégie de groupe**.
 
     *-Or-*
 
-    Sur un ordinateur de gestion de stratégie de groupe joint à un domaine, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
+    Sur un ordinateur de gestion de stratégie de groupe joint à un domaine, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx) de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier**.
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender Exploit Guard** Network \> **Protection**.
+3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
    > [!NOTE]
    > Sur les versions antérieures Windows, le chemin d’accès de la stratégie de groupe peut dire « Antivirus Windows Defender » au lieu de « Antivirus Microsoft Defender ».
 
-4. Double-cliquez sur le paramètre Empêcher les utilisateurs et **les applications d’accéder** au paramètre sites web dangereux et définissez l’option **sur Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
+4. Double-cliquez sur le paramètre Empêcher les utilisateurs et **les applications d’accéder** au paramètre sites web dangereux et définissez l’option **sur Activé**. Dans la section Options, vous devez spécifier l’une des options suivantes :
     - **Bloquer** : les utilisateurs ne peuvent pas accéder aux domaines et aux adresses IP malveillants.
     - **Désactiver (par défaut)** : la fonctionnalité de protection du réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants.
     - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
    > [!IMPORTANT]
-   > Pour activer entièrement la protection réseau,  vous devez définir  l’option de stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+   > Pour activer entièrement la protection réseau, vous devez définir l’option  de stratégie de groupe sur  Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
+1. **Sélectionnez Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre**.
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
-3. Sélectionnez **EnableNetworkProtection et** confirmez la valeur :
+3. **Sélectionnez EnableNetworkProtection et** confirmez la valeur :
    - 0=Off
    - 1=Sur
    - 2=Audit
@@ -147,14 +148,14 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 
 1. Ouvrez la console Gestionnaire de configuration.
 
-2. Go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**. 
+2. Go to **Assets and Compliance** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**. 
 
-3. Sélectionnez **Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
-   - Pour modifier une stratégie existante, sélectionnez-la, puis sélectionnez Propriétés dans le ruban ou le menu clic droit.  Modifiez **l’option Configurer la protection réseau** à partir de **l’onglet Protection** du réseau.  
+3. **Sélectionnez Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
+   - Pour modifier une stratégie existante, sélectionnez-la, puis sélectionnez Propriétés dans le ruban ou le menu clic droit. Modifiez **l’option Configurer la protection réseau** à partir de **l’onglet Protection** du réseau.  
 
-4. Dans la page **Général,** spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **Protection** du réseau est activée. 
+4. Dans la page **Général** , spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **Protection** du réseau est activée. 
 
-5. Dans la page **Protection du** réseau, sélectionnez l’un des paramètres suivants pour l’option Configurer la **protection réseau** :
+5. Dans la page **Protection du** réseau, sélectionnez l’un des paramètres suivants pour l’option Configurer **la protection réseau** :
    - **Bloquer**
    - **Audit**
    - **Disabled**

@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: dbbc783607afb482bf31b985828b59b834784bba
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 48be29f8db689ddd0911d7512b267ba50c85a469
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035425"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322406"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
-Si vous avez atteint le [](../service-description/user-support.md) point dans le flux de travail où vous devez demander l’accès ou l’escalade d’appareil élevé à Microsoft, suivez les étapes suivantes :
- 
+Si vous avez atteint le point dans le flux [](../service-description/user-support.md) de travail où vous devez demander l’accès ou l’escalade d’appareil élevé à Microsoft, suivez les étapes suivantes :
+
 >[!NOTE]
 >Ces options de prise en charge ne sont pas disponibles pour les appareils du groupe Test.
 
@@ -27,54 +27,41 @@ Si vous avez atteint le [](../service-description/user-support.md) point dans le
 
 Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions les mieux adaptées.
 
-- **Ce processus** vise généralement à effectuer des actions qui seraient régulièrement effectuées lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
-    - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
-    - Résolution des problèmes des applications métier
-    - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)
-    - Élévation de la fonction Gestionnaire de périphériques pour faire des opérations telles que les pilotes de mise à jour, désinstaller un appareil ou analyser les nouvelles modifications
+| Actions | Exemples |
+| ------ | ------ |
+| **Les actions classiques** sont destinées au processus de demande d’élévation. Elle est régulièrement effectuée lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. | <ul><li>Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes Windows PowerShell des applications métiers de dépannage.</li><li>Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (comme l’activation de BitLocker ou le temps système non mis à jour).</li><li>Élévation de la fonction Gestionnaire de périphériques pour qu’il recherche de nouvelles modifications, telles que les pilotes de mise à jour, la désinstallation d’un appareil ou l’analyse de nouvelles modifications.</li></ul>
+| **Actions non recommandées** | <ul><li>Installation de logiciels ou de navigateurs.</li><li>Installation de pilotes en dehors de Windows paramètres, y compris les pilotes pour les périphériques.</li><li>Installation de .msi ou .exe fichiers.</li><li>Installation de Windows fonctionnalités.</li></ul>
+| **Actions non prises en charge** | <ul><li>Installation de logiciels ou de fonctionnalités en conflit avec Microsoft Manged Desktop de sécurité ou de gestion ou des opérations.</li><li>Désactivation d’Windows fonctionnalité requise pour Microsoft Manged Desktop, telle que BitLocker.</li><li>Modification des paramètres gérés par votre organisation.</li><ul>
 
-- **Les actions qui ne sont pas recommandées sont** les suivantes :
-    - Installation de logiciels ou de navigateurs
-    - Installation de pilotes en dehors des paramètres Windows, y compris ceux des périphériques
-    - Installation de .msi ou de .exe fichiers
-    - Installation de Windows fonctionnalités
+**Pour demander une élévation :**
 
-- **Les actions qui ne sont pas prises en charge sont** les suivantes :
-    - Installation de logiciels ou de fonctionnalités en conflit avec Microsoft Manged Desktop de sécurité ou de gestion ou des opérations
-    - Désactivation d’une Windows requise pour les Microsoft Manged Desktop, telle que BitLocker
-    - Modification des paramètres gérés par votre organisation
-
-### <a name="to-request-elevation"></a>Pour demander une élévation
-
-1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils.**
-2. Recherchez la section **Microsoft Manged Desktop,** puis sélectionnez le volet Périphériques,  qui contient deux onglets : l’onglet Périphériques et l’onglet Demandes **d’élévation.**  
-3. Pour créer une demande  d’élévation sous l’onglet Appareil, sélectionnez un  seul appareil à élever, puis sélectionnez Demander l’élévation à partir du menu déroulant Actions de l’appareil. Un nouveau volet volant de demande d’élévation s’affiche avec le nom de l’appareil prére implémenté dans ce champ.
-4. Sinon, pour créer une demande d’élévation sous l’onglet **Demandes d’élévation,** sélectionnez **+Nouvelle demande d’élévation.**
-5. Fournissez les détails ci-après :
-    - **ID de ticket de support** à partir de votre propre système de tickets de support.
-    - **Nom de l’appareil**(uniquement lors de la création d’une demande à partir de l’onglet **Demandes** d’élévation) : entrez le numéro de série de l’appareil, puis sélectionnez l’appareil dans le menu.
-    - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème. Si aucune option ne semble proche, sélectionnez **Autre**. Il est préférable de sélectionner une catégorie si possible.
-    - **Titre**: fournissez une brève description du problème sur l’appareil.
-    - **Plan d’action**: fournissez les étapes de résolution des problèmes que vous prévoyez d’suivre une fois l’élévation accordée. 
-6. Sélectionnez **Envoyer**.
-7. La liste et les détails de toutes les demandes actives et fermées sont visibles sous l’onglet **Demandes d’élévation.**
-
-
+1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**.
+1. Dans la section **Microsoft Manged Desktop**, sélectionnez **Périphériques**, qui contient deux onglets : l’onglet Périphériques et l’onglet **Demandes d’élévation**.
+1. Pour créer une demande d’élévation sous l’onglet **Appareil** , sélectionnez un seul appareil à élever.
+1. Dans le menu déroulant Actions de l’appareil, sélectionnez **Élévation de la demande**. Un nouveau fly-in de demande d’élévation apparaît avec le nom de l’appareil pré-rempli dans ce champ.
+1. À la place, pour créer une demande d’élévation dans l’onglet **Demandes d’élévation,** sélectionnez **+Nouvelle demande d’élévation.**
+1. Fournissez les détails ci-après :
+    - **ID de ticket de support** : il s’agit de votre propre système de tickets de support.
+    - **Nom de l’appareil** : ce n’est que lors de la création d’une demande à partir de **l’onglet Demandes d’élévation** . Entrez le numéro de série de l’appareil, puis sélectionnez l’appareil dans le menu.
+    - **Catégorie** : sélectionnez la catégorie qui correspond le mieux à votre problème. Si aucune option ne semble proche, sélectionnez **Autre**. Il est préférable de sélectionner une catégorie si possible.
+    - **Titre** : fournissez une brève description du problème sur l’appareil.
+    - **Plan d’action** : fournissez les étapes de résolution des problèmes que vous prévoyez d’suivre une fois l’élévation accordée.
+1. Sélectionnez **Envoyer**.
+1. La liste et les détails de toutes les demandes actives et fermées sont visibles sous l’onglet **Demandes d’élévation** .
 
 ## <a name="escalation-requests"></a>Demandes d’escalade
 
-
-Si vous devez faire [une escalade d’un](../service-description/user-support.md#escalation-portal) problème à Microsoft, suivez les étapes suivantes :
+**Pour [faire resserr](../service-description/user-support.md#escalation-portal) un problème à Microsoft :**
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **d’administration du** client.
-2. Recherchez la section Microsoft Manged Desktop, puis sélectionnez **Demandes de service.**
-3. Dans le bouton **Demandes de service,** **sélectionnez + Nouvelle demande de support.**
-4. Fournissez une brève description dans la **zone Titre.** Ensuite, définissez **le type de demande** sur **Incident**. 
-5. Sélectionnez **la catégorie** et la **sous-catégorie** qui s’adaptent le mieux à votre **problème,** puis sélectionnez Suivant .
-6. Dans la section **Détails,** fournissez les informations suivantes :
-    - **Description**: ajoutez tous les détails supplémentaires qui pourraient aider notre équipe à comprendre le problème. Si vous devez joindre des fichiers, vous pouvez le faire en revenir à la demande après l’avoir soumis.
-    - **Informations de contact principales**: fournissez des informations sur la façon de contacter la personne principale responsable de l’collaboration avec notre équipe.
-7. Sélectionnez **le niveau de** gravité. Pour plus d’informations, voir définitions de gravité des demandes de support.
+2. Dans la section Microsoft Manged Desktop, sélectionnez **Demandes de service**.
+3. Dans la section **Demandes de** service, **sélectionnez + Nouvelle demande de support**.
+4. Fournissez une brève description dans le **champ** Titre. Ensuite, définissez le **type de demande** sur **Incident**.
+5. Sélectionnez **la catégorie** et **la sous-catégorie** qui s’adaptent le mieux à votre problème. Puis sélectionnez **Suivant**.
+6. Dans la section **Détails** , fournissez les informations suivantes :
+    - **Description** : ajoutez des détails supplémentaires qui pourraient aider notre équipe à comprendre le problème. Si vous devez joindre des fichiers, vous pouvez le faire en revenir à la demande après l’avoir soumis.
+    - **Informations de contact principales** : fournir des informations sur la façon de contacter la personne principale responsable de l’collaboration avec notre équipe.
+7. Sélectionnez **le niveau de** gravité. Pour plus d’informations, voir [définitions de gravité des demandes de support](../working-with-managed-desktop/admin-support.md#support-request-severity-definitions).
 8. Fournissez autant d’informations que possible sur la demande pour aider l’équipe à répondre rapidement. En fonction du type de demande, vous pouvez être tenu de fournir des détails différents.
 9. Examinez toutes les informations que vous avez fournies pour plus d’informations.
 10. Quand vous êtes prêt, sélectionnez **Créer**.

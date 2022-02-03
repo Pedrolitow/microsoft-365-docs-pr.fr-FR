@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 45bd61d9eed192977485792d72eb9783c71420b8
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242058"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320678"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -287,9 +287,6 @@ Souvent, les stratégies prennent effet et les étiquettes sont visibles plus ra
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Étendues de stratégie adaptatives ou statiques pour la rétention
 
-> [!NOTE]
-> Les étendues de stratégie adaptative en tant que nouvelle fonctionnalité sont actuellement en prévisualisation et peuvent faire l’objet de changements. L’autre option est une étendue statique, qui offre le même comportement avant l’introduction des étendues adaptatives et peut être utilisée si les étendues adaptatives ne répondent pas aux besoins de votre entreprise.
-
 Lorsque vous créez une stratégie de rétention ou une stratégie d’étiquette de rétention, vous devez choisir entre adaptatif et statique pour définir l’étendue de la stratégie.
 
 - Une **étendue adaptative** utilise une requête que vous spécifiez, de sorte que l’appartenance n’est pas statique mais dynamique en s’exécutant quotidiennement sur les attributs ou propriétés que vous spécifiez pour les emplacements sélectionnés. Vous pouvez utiliser plusieurs étendues adaptatives avec une seule stratégie.
@@ -330,9 +327,6 @@ Pour regarder un webinaire enregistré (nécessite une inscription), visitez [De
 > Actuellement, les scopes adaptatifs ne prennent pas en charge [le verrouillage de la conservation pour restreindre les modifications des stratégies de conservation et des stratégies d'étiquetage de conservation](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ## <a name="policy-lookup"></a>Recherche de la stratégie
-
-> [!NOTE]
-> La consultation des stratégies est actuellement en cours de préparation et est sujette à modification.
 
 Vous pouvez configurer plusieurs stratégies de rétention pour Microsoft 365 de rétention, ainsi que plusieurs stratégies d’étiquette de rétention que vous publiez ou appliquez automatiquement. Pour rechercher les stratégies de rétention affectées à des utilisateurs, **des sites et des groupes Microsoft 365 spécifiques**, utilisez la recherche de stratégie à partir de la **solution** de gouvernance des informations dans la Centre de conformité Microsoft 365 :
 

@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Prise en charge de la définition et de la gestion des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d295a04c27231b937ca552feb06628f857528e34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933526"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321590"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Prise en main du tableau de bord des alertes de protection contre la perte de données
 
 Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le tableau de bord de gestion des alertes [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
 
-Si vous débutez avec les alertes DLP, vous devez consulter le tableau de bord des alertes de protection [contre la perte de données.](dlp-alerts-dashboard-learn.md)
+Si vous débutez avec les alertes DLP, vous devez consulter le tableau de bord des [alertes de protection contre la perte de données](dlp-alerts-dashboard-learn.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,7 +44,7 @@ Avant de commencer, assurez-vous que vous avez les conditions préalables néces
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licences pour le tableau de bord de gestion des alertes DLP
 
-Tous les locataires éligibles pour Office 365 DLP peuvent accéder au tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la Office 365 DLP pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour Office 365 DLP, voir [quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
+Tous les locataires éligibles pour Office 365 DLP peuvent accéder au tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la Office 365 DLP pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les exigences en matière de licences pour Office 365 DLP, voir [Quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16) fournissent les droits d’un utilisateur pour bénéficier du service ?.
 
 Les clients qui utilisent le point de terminaison [DLP](endpoint-dlp-learn-about.md) éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
@@ -60,7 +60,7 @@ La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les
 
 **Configuration** d’alerte à événement unique : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
 
-**Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez l’une de ces configurations de licence :
+**Configuration d’alerte agrégée** : pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez avoir l’une de ces configurations de licence :
 
 - Un abonnement E5 ou G5
 - Un abonnement E1, F1 ou G1, ou un abonnement E3 ou G3 qui inclut l’une des fonctionnalités suivantes :
@@ -93,32 +93,35 @@ Pour accéder à la fonctionnalité d’aperçu de contenu et aux fonctionnalit�
 
 dont le rôle visionneuse de contenu de classification des données est pré-attribué.
 
-### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en prévisualisation
+### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
 
-Il existe des rôles et des groupes de rôles en prévisualisation que vous pouvez tester pour affiner vos contrôles d’accès.
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Protection des données Microsoft (MIP) en prévisualisation. Pour en savoir plus à ce sujet, voir [Rôles](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) dans le Centre de sécurité & conformité
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrateur de la protection des informations
-- Analyste de la protection des informations
-- Enquêteur de la protection des informations
-- Lecteur de protection des informations
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur les groupes de rôles, voir Groupes de [rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
-- Administrateurs de la protection des informations
-- Analystes de la protection des informations
-- Enquêteurs de la protection des informations
-- Lecteurs de protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ## <a name="dlp-alert-configuration"></a>Configuration des alertes DLP
 
-Pour savoir comment configurer une alerte dans votre stratégie DLP, consultez l’exemple par où commencer avec la protection [contre la perte de données.](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)
+Pour savoir comment configurer une alerte dans votre stratégie DLP, consultez l’exemple par où commencer [avec la protection contre la perte de données](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention).
+
+> [!IMPORTANT]
+> La configuration de la stratégie de rétention du journal d’audit de votre organisation contrôle la durée pendant combien de temps une alerte reste visible dans la console. Pour plus [d’informations, voir Gérer les stratégies](audit-log-retention-policies.md#manage-audit-log-retention-policies) de rétention du journal d’audit.
 
 ### <a name="aggregate-event-alert-configuration"></a>Configuration agrégée des alertes d’événements
 
-Si votre organisation est titulaire d’une licence pour les options de configuration d’alerte agrégées, ces [options](#licensing-for-alert-configuration-options)s’offrent à vous lorsque vous créez ou modifiez une stratégie DLP.
+Si votre organisation est titulaire d’une licence pour les [options de configuration](#licensing-for-alert-configuration-options) d’alerte agrégées, ces options s’offrent à vous lorsque vous créez ou modifiez une stratégie DLP.
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Capture d’écran montrant les options des rapports d’incident pour les utilisateurs éligibles pour les options de configuration d’alerte agrégées." border="false":::
 
@@ -126,7 +129,7 @@ Cette configuration vous permet de configurer une stratégie pour générer une 
 
 ### <a name="single-event-alert-configuration"></a>Configuration d’alerte d’événement unique
 
-Si votre organisation est titulaire d’une licence pour les options de configuration d’alerte à événement unique, ces [options](#licensing-for-alert-configuration-options)s’offrent à vous lorsque vous créez ou modifiez une stratégie DLP. Utilisez cette option pour créer une alerte qui se produit chaque fois qu’une correspondance de règle DLP se produit.
+Si votre organisation est titulaire d’une licence pour les [options de configuration](#licensing-for-alert-configuration-options) d’alerte à événement unique, ces options s’offrent à vous lorsque vous créez ou modifiez une stratégie DLP. Utilisez cette option pour créer une alerte qui se produit chaque fois qu’une correspondance de règle DLP se produit.
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Capture d’écran montrant les options des rapports d’incident pour les utilisateurs éligibles pour les options de configuration d’alerte à événement unique." border="false":::
 
@@ -134,14 +137,14 @@ Si votre organisation est titulaire d’une licence pour les options de configur
 
 Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>allez à **Protection contre la perte de données.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, allez à **Protection contre la perte de données**.
 2. Sélectionnez **l’onglet Alertes** pour afficher le tableau de bord des alertes DLP.
 3. Sélectionnez une alerte pour voir les détails :
 
 :::image type="content" source="../media/alert-details.png" alt-text="Capture d’écran montrant les détails de l’alerte dans le tableau de bord de gestion des alertes DLP." border="false":::
 
-4. Sélectionnez **l’onglet** Événements pour afficher tous les événements associés à l’alerte. Vous pouvez choisir un événement particulier pour afficher ses détails. Pour obtenir la liste de certains détails sur les événements disponibles, voir le tableau de bord Alertes de protection contre la perte [de données.](dlp-alerts-dashboard-learn.md)
-5. Sélectionnez **Détails** pour ouvrir la page **Vue d’ensemble** de l’alerte. La page vue d’ensemble fournit un résumé :
+4. Sélectionnez **l’onglet** Événements pour afficher tous les événements associés à l’alerte. Vous pouvez choisir un événement particulier pour afficher ses détails. Pour obtenir la liste de certains détails sur les événements disponibles, consultez le tableau de bord [Alertes de protection contre la perte de données](dlp-alerts-dashboard-learn.md).
+5. **Sélectionnez Détails** pour ouvrir la page **Vue d’ensemble** de l’alerte. La page vue d’ensemble fournit un résumé :
     1. de ce qui s’est passé
     1. qui a effectué les actions à l’origine de la correspondance de stratégie
     1. informations sur la stratégie de correspondance, et plus encore 
@@ -153,10 +156,10 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
 7. Sélectionnez **l’onglet Types d’informations** sensibles pour afficher les détails sur les types d’informations sensibles détectés dans le contenu. Les détails incluent la confiance, le nombre et le contenu qui correspond au type d’informations sensibles.
 
-8. Après avoir examiné l’alerte, revenir à l’onglet Vue d’ensemble où vous pouvez gérer le triage, gérer la disposition de l’alerte et ajouter des commentaires. 
+8. Après avoir examiné l’alerte, revenir  à l’onglet Vue d’ensemble où vous pouvez gérer le triage, gérer la disposition de l’alerte et ajouter des commentaires.
 
-- Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion.**
-- Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu.**
+- Pour consulter l’historique de la gestion des flux de travail, sélectionnez **Journal de gestion**.
+- Une fois que vous avez pris l’action requise pour l’alerte, définissez l’état de l’alerte **sur Résolu**.
 
 ## <a name="see-also"></a>Voir aussi
 

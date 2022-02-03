@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: f23ea7e941bd8c56815791fe3ed86e38efcf9a79
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294926"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321482"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurer l’intégration de la prise en charge avec ServiceNow - Authentification de base
 
@@ -115,7 +115,6 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Interface utilisateur graphique, description de tableau générée automatiquement":::
 
-
 1. \[ServiceNow Admin\] Go to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
 
     > [!NOTE]
@@ -130,10 +129,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 1. \[Administration De ServiceNow\] Configurez l’environnement et le type d’installation.
 
     Si cette installation se trouve dans un environnement de test, sélectionnez l’option Il s’agit d’un environnement de test. Vous pourrez rapidement désactiver cette option après l’installation et tous vos tests seront effectués ultérieurement.
-    Si votre instance autorise l’authentification de base pour les connexions entrantes, sélectionnez Oui, sinon, reportez-vous à [l’installation avancée avec AAD](servicenow-aad-oauth-token.md).
-
- :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
-
+    Si votre instance autorise l’authentification de base pour les connexions entrantes, sélectionnez Oui, sinon, reportez-vous à [l’installation avancée avec AAD](servicenow-aad-oauth-token.md). :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
 
 1. \[Administrateur ServiceNow Entrez\] votre domaine Microsoft 365 client.
 
@@ -143,6 +139,7 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
     1. Inscrivez l’Azure Active Directory (AAD).
     1. Après avoir suivi les instructions de la section Conditions préalables, cliquez sur **Terminé**. Sinon, suivez les instructions de l’Assistant pour créer l’inscription d’application nécessaire dans AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
+
     1. Inscrivez l’application OAuth ServiceNow.
     1. Après avoir suivi les instructions de la section Conditions préalables, sélectionnez l’inscription de l’application OAuth nouvellement créée, puis cliquez sur Suivant. Sinon, suivez les instructions pour créer l’entité dans ServiceNow, puis sélectionnez la nouvelle inscription d’application.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
@@ -150,10 +147,14 @@ Ces étapes sont nécessaires pour configurer l’intégration entre votre insta
 1. \[L’administrateur\] ServiceNow configure les paramètres entrants.
     1. Configurez le point de terminaison de l’API OAuth entrante.
     1. Après avoir suivi les instructions de la section Conditions préalables, sélectionnez l’inscription de l’application OAuth nouvellement créée, puis cliquez sur Terminé. Sinon, suivez les instructions pour créer l’entité, puis sélectionnez l’inscription du point de terminaison REST.
+     
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
+
     1. Configurez l’utilisateur d’intégration.
     1. Après avoir suivi les instructions de la section Conditions préalables, sélectionnez l’utilisateur d’intégration nouvellement créé, puis cliquez sur Suivant. Sinon, suivez les instructions pour créer l’entité dans ServiceNow, puis sélectionnez le nouvel utilisateur d’intégration.
+    
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Interface utilisateur graphique, texte, application, description de courrier électronique généré automatiquement":::
+
 
 1. \[Microsoft 365 client\] Terminez l’intégration dans le portail Administration Microsoft 365 web.
 

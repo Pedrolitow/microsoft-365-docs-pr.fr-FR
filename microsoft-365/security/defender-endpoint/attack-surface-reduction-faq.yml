@@ -11,18 +11,19 @@ metadata:
   audience: ITPro
   author: martyav
   ms.author: dansimp
-  ms.reviewer: 
+  ms.reviewer: oogunrinde, sugamar
   manager: dansimp
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: M365-security-compliance
-  ms.openlocfilehash: d7c24bc14252dc514bf8b1518a99a51d64719a5e
-  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.collection: m365initiative-m365-defender
+  ms.date: 1/18/2022
+  ms.openlocfilehash: 5448f5bae1edfce3dbbd37379e9c56461753156c
+  ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/12/2022
-  ms.locfileid: "61938491"
+  ms.lasthandoff: 02/02/2022
+  ms.locfileid: "62322504"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -46,7 +47,7 @@ sections:
       L’ensemble complet des règles et fonctionnalités de la fonctionnalité de r asr est uniquement pris en charge si vous disposez d’une licence d’entreprise pour Windows 10 ou Windows 11. Un nombre limité de règles peut fonctionner sans licence d’entreprise. Si vous avez Microsoft 365 Entreprise, définissez Antivirus Microsoft Defender comme solution de sécurité principale et activez les règles via PowerShell. L’utilisation de la fonctionnalité de RSA sans licence d’entreprise n’est pas officiellement prise en charge et vous ne pourrez pas utiliser toutes les fonctionnalités de la asr.
 
 
-      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+      Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
       La RSA est-elle prise en charge si j’ai une licence E3 ?
     answer: >
@@ -65,14 +66,14 @@ sections:
   - question: >
       Quelles règles activer ? Tout ou puis-je activer des règles individuelles ?
     answer: >
-      Pour vous aider à déterminer ce qui est le mieux pour votre environnement, nous vous recommandons d’activer les règles asr en [mode audit.](audit-windows-defender.md) Avec cette approche, vous déterminerez l’impact possible sur votre organisation. Par exemple, vos applications métier.
+      Pour vous aider à déterminer ce qui est le mieux pour votre environnement, nous vous recommandons d’activer les règles asr en [mode audit](audit-windows-defender.md). Avec cette approche, vous déterminerez l’impact possible sur votre organisation. Par exemple, vos applications métier.
   - question: >
       Comment fonctionnent les exclusions de règles asr ?
     answer: >
       Pour les règles de la asr, si vous ajoutez une exclusion, elle affecte toutes les règles de la asr.
 
 
-      Les exclusions de règles de la asr prise en charge des caractères génériques, des chemins d’accès et des variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions en fonction de l’extension de fichier et de [l’emplacement du dossier.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
+      Les exclusions de règles de la asr prise en charge des caractères génériques, des chemins d’accès et des variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions en fonction de l’extension de fichier et de [l’emplacement du dossier](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 
       N’ignorez pas les éléments suivants concernant les exclusions de règles asr (y compris les caractères génériques et les env. variables) :
@@ -82,9 +83,9 @@ sections:
 
       - Les caractères génériques ne peuvent pas être utilisés pour définir une lettre de lecteur
 
-      - Si vous souhaitez exclure plusieurs dossiers, dans un chemin d’accès, utilisez plusieurs instances de \ pour indiquer plusieurs dossiers imbrmbrés \* (par exemple, c:\Folder \* \* \Test)
+      - Si vous souhaitez exclure plusieurs dossiers, dans un chemin d’accès, utilisez plusieurs instances \*de \ pour indiquer plusieurs dossiers imbrmbrés (par exemple, c:\Folder\*\*\Test)
 
-      - Microsoft Endpoint Configuration Manager ne *prend pas en* charge les caractères génériques (* ou ?)
+      - Microsoft Endpoint Configuration Manager *ne prend pas en* charge les caractères génériques (* ou ?)
 
       - Si vous souhaitez exclure un fichier qui contient des caractères aléatoires (génération automatisée de fichiers), vous pouvez utiliser le symbole « ? » (par exemple, C:\Folder\fileversion?.docx)
 
@@ -97,7 +98,7 @@ sections:
       Différentes règles de la RSA auront des flux de protection différents. Réfléchissez toujours aux protections de la règle asr que vous configurez et à la façon dont le flux d’exécution réel s’exécute.
 
 
-      Exemple : bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité locale **Windows** lire directement à partir du processus LSASS (Local Security Authority Subsystem) peut être un risque de sécurité, car il peut exposer des informations d’identification d’entreprise.
+      Exemple : bloquer le vol d’informations d’identification du **sous-système** de l’autorité de sécurité locale Windows lire directement à partir du processus LSASS (Local Security Authority Subsystem) peut être un risque de sécurité, car il peut exposer des informations d’identification d’entreprise.
 
 
       Cette règle empêche les processus nontrus d’avoir un accès direct à la mémoire LSASS. Chaque fois qu’un processus tente d’utiliser la fonction OpenProcess() pour accéder à LSASS, avec un droit d’accès de PROCESS_VM_READ, la règle bloque spécifiquement ce droit d’accès.
@@ -116,7 +117,7 @@ sections:
       Nous vous recommandons d’activer toutes les règles possibles. Toutefois, dans certains cas, vous ne devez pas activer une règle. Par exemple, nous vous déconseillons d’activer les créations de processus de blocage provenant de la règle de commandes PSExec et WMI, si vous utilisez Microsoft Endpoint Configuration Manager (ou, System Center Configuration Manager - SCCM) pour gérer vos points de terminaison.
 
 
-      Nous vous recommandons vivement de lire chaque information spécifique à la règle et/ou avertissements, qui sont disponibles dans notre [documentation publique.](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+      Nous vous recommandons vivement de lire chaque information spécifique à la règle et/ou avertissements, qui sont disponibles dans [notre documentation publique](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
       couvrant plusieurs piliers de la protection, tels que les Office, les informations d’identification, les scripts, le courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
@@ -139,7 +140,7 @@ sections:
 
       * [Utiliser la protection avancée contre les ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
 
-      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) de sécurité locale (lsass.exe)
+      * [Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) locale (lsass.exe)
 
       * [Bloquer les créations de processus provenant de commandes PSExec et WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
@@ -180,7 +181,7 @@ sections:
   - question: >
       Les règles DER couvrent-ils toutes les applications par défaut ?
     answer: >
-      Cela dépend de la règle. La plupart des règles de r asr couvrent le comportement des produits et services Microsoft Office, tels que Word, Excel, PowerPoint et OneNote, ou Outlook. Certaines règles de la astérisation, telles que bloquer l’exécution de scripts potentiellement *obscurcis,* sont plus générales.
+      Cela dépend de la règle. La plupart des règles de r asr couvrent le comportement des produits et services Microsoft Office, tels que Word, Excel, PowerPoint et OneNote, ou Outlook. Certaines règles de la astérisation, telles que bloquer l’exécution de *scripts potentiellement obscurcis*, sont plus générales.
   - question: >
       La RSA prend-elle en charge des solutions de sécurité tierces ?
     answer: >
@@ -220,11 +221,11 @@ sections:
   - question: >
       Est-il bon d’activer la règle « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » avec la protection LSA ?
     answer: >
-      L’activation de cette règle ne fournira pas de protection supplémentaire si vous avez également activé la [protection LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) La règle et la protection LSA fonctionnent de la même manière, de sorte que leur exécution en même temps serait redondante. Toutefois, il se peut que vous ne soyez pas en mesure d’activer la protection LSA. Dans ce cas, vous pouvez activer cette règle pour fournir une protection équivalente contre les programmes malveillants qui ciblent lsass.exe.
+      L’activation de cette règle ne fournira pas de protection supplémentaire si vous avez également activé la [protection LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) . La règle et la protection LSA fonctionnent de la même manière, de sorte que leur exécution en même temps serait redondante. Toutefois, il se peut que vous ne soyez pas en mesure d’activer la protection LSA. Dans ce cas, vous pouvez activer cette règle pour fournir une protection équivalente contre les programmes malveillants qui ciblent lsass.exe.
   - question: >
       Voir aussi
     answer: >-
-      * [Vue d’ensemble de la réduction de la surface d’attaque](attack-surface-reduction.md)
+      * [Présentation de la réduction de la surface d'attaque](attack-surface-reduction.md)
 
       * [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
 

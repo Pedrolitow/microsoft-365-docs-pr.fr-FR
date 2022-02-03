@@ -133,7 +133,7 @@
               href: tenant-management-tenants.md
             - name: Étape 2. Mise en réseau optimale
               href: tenant-management-networking.md
-            - name: "Étape\_3. Identité"
+            - name: Étape 3. Identité
               href: tenant-management-identity.md
             - name: Étape 4. Migration
               href: tenant-management-migration.md
@@ -222,7 +222,7 @@
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Étape 2. Utiliser Microsoft Teams.
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: "Étape\_3. Power Automate"
+            - name: Étape 3. Power Automate
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Créer un intranet SharePoint intelligent
           items:
@@ -374,6 +374,12 @@
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
         - name: Prise en charge des employés du secteur public travaillant à distance avec Teams
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: Commerce
+      items:
+        - name: Aperçu
+          href: retail-overview.md
+        - name: Teams pour la vente au détail
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
 - name: Principes de conception de l’architecture d’entreprise
   items:
     - name: Vue d’ensemble

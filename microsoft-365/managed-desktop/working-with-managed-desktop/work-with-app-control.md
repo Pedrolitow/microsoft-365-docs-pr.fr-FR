@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ab1bf675c3668e01b31ff380f54ee993205374
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b87da099ace71b13b03bb9d9247bc4cbfe420dc4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281410"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322385"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 
@@ -39,7 +39,6 @@ Lorsque vous ouvrez une demande de signataire, vous devez d’abord fournir des 
 
 1. [Rassemblez les détails de l’éditeur](#gather-publisher-details).
 1. Ouvrez un ticket avec Microsoft Manged Desktop Operations pour demander la règle du signataire et inclure les détails suivants :  
-
     - Nom de l’application
     - Version de l’application
     - Description
@@ -72,7 +71,6 @@ Vous pouvez suspendre ou revenir en arrière le déploiement à tout moment pend
 1. Ouvrez l’Observateur d’événements sur cet appareil.
 1. Dans l’Observateur d’événements, accédez à Journaux des applications et des **services\Microsoft\Windows**, puis **sélectionnez AppLocker**.
 1. Recherchez **un événement 8003** ou **8006** , puis copiez les informations de l’événement :
-
     - Nom de l’application
     - Version de l’application
     - Description

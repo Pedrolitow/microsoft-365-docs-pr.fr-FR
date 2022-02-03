@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du déploiement des règles asr
+title: Vue d’ensemble du déploiement des règles ASR
 description: Fournit des conseils pour déployer des règles de réduction de la surface d’attaque.
 keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
 search.product: eADQiWindows 10XVcnh
@@ -11,20 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 92bc38c919a31a742ea5562f40d5d9ab2686290d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
+ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074737"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320654"
 ---
-# <a name="asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles asr
+# <a name="asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles ASR
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -43,26 +44,26 @@ Lors de votre préparation initiale, il est essentiel de comprendre les fonction
 >[!IMPORTANT]
 >Ce guide fournit des images et des exemples pour vous aider à décider comment configurer les règles de la asr. Ces images et exemples peuvent ne pas refléter les meilleures options de configuration pour votre environnement.
 
-Avant de commencer, examinez La vue d’ensemble de la réduction de [la surface](overview-attack-surface-reduction.md)d’attaque et la [démystification](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) des règles de réduction de la surface d’attaque - Partie 1 pour obtenir des informations de base. Pour comprendre les domaines de couverture et l’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles asr. voir [la référence des règles de réduction de la surface d’attaque.](attack-surface-reduction-rules-reference.md)
+Avant de commencer, examinez La vue d’ensemble de la réduction de [la surface](overview-attack-surface-reduction.md) d’attaque et la [démystification](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) des règles de réduction de la surface d’attaque - Partie 1 pour obtenir des informations de base. Pour comprendre les domaines de couverture et l’impact potentiel, familiarisez-vous avec l’ensemble actuel de règles asr. voir [la référence des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md).
 
 Les règles de réduction de la surface d’attaque ne sont qu’une fonctionnalité des fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender for Endpoint. Ce document détaille le déploiement efficace des règles de la asr pour arrêter les menaces avancées telles que les ransomware gérés par l’homme et d’autres menaces.  
 
 ### <a name="rules-by-category"></a>Règles par catégorie
 
-Comme indiqué dans utiliser les règles de réduction de la surface d’attaque pour empêcher [l’infection](attack-surface-reduction.md)par des programmes malveillants, il existe plusieurs règles de réduction de la surface d’attaque dans MDE que vous pouvez activer pour protéger votre organisation. Voici les règles décomposées par catégorie :
+Comme indiqué dans utiliser les règles de réduction de [la surface](attack-surface-reduction.md) d’attaque pour empêcher l’infection par des programmes malveillants, il existe plusieurs règles de réduction de la surface d’attaque dans MDE que vous pouvez activer pour protéger votre organisation. Voici les règles décomposées par catégorie :
 
 <br/>
 
 | Menaces polymorphes | Mouvement latéral lors & vol d’informations d’identification | Règles des applications de productivité |  Règles de messagerie | Règles de script | Règles de non-respect des règles |
 |:---|:---|:---|:---|:---|:---|
-| Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à une prévalence (1 000 ordinateurs), à l’âge (24 heures) ou à des critères de listes fiables | Bloquer les créations de processus provenant de commandes PSExec et WMI | Empêcher Office applications de créer du contenu exécutable | Bloquer le contenu exécutable du client de messagerie et de la messagerie web | Bloquer le code JS/VBS/PS/macro obscurci | Bloquer l’utilisation abusive des pilotes signés vulnérables <sup> exploités [[1](#fn1)]<sup></sup>  |
-| Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB | Bloquer le vol d’informations d Windows du sous-système de l’autorité de sécurité locale (lsass.exe) <sup> [[2](#fn1)]<sup></sup>   | Empêcher Office applications de créer des processus enfants |  Empêcher uniquement les applications Office communication de créer des processus enfants | Empêcher JS/VBS de lancer du contenu exécutable téléchargé | |
+| Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à une prévalence (1 000 ordinateurs), à l’âge (24 heures) ou à des critères de listes fiables | Bloquer les créations de processus provenant de commandes PSExec et WMI | Empêcher Office applications de créer du contenu exécutable | Bloquer le contenu exécutable du client de messagerie et de la messagerie web | Bloquer le code JS/VBS/PS/macro obscurci | Bloquer l’utilisation abusive des pilotes signés vulnérables exploités <sup>[[1](#fn1)]<sup></sup>  |
+| Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB | Bloquer le vol d’informations d Windows du sous-système de l’autorité de sécurité locale (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Empêcher Office applications de créer des processus enfants |  Empêcher uniquement les applications Office communication de créer des processus enfants | Empêcher JS/VBS de lancer du contenu exécutable téléchargé | |
 | Utiliser la protection avancée contre les ransomware | Bloquer la persistance via un abonnement à des événements WMI | Empêcher Office applications d’injecter du code dans d’autres processus | Empêcher Office applications de communication de créer des processus enfants | | |
 | | | Empêcher Adobe Reader de créer des processus enfants | | | |
 
-(<a id="fn1">1</a>) Bloquer l’utilisation abusive des pilotes _signés vulnérables exploités_ n’est pas disponible actuellement dans la sécurité des points de terminaison MEM. Vous pouvez configurer cette règle à l’aide [de MEM OMA-URI](enable-attack-surface-reduction.md#mem).
+(<a id="fn1">1</a>) Bloquer l’utilisation abusive des pilotes _signés vulnérables exploités_ n’est pas disponible actuellement dans la sécurité des points de terminaison MEM. Vous pouvez configurer cette règle à l’aide [de l’OMA-URI MEM](enable-attack-surface-reduction.md#mem).
 
-(<a id="fn1">2</a>) Certaines règles de réduction de la réduction du bruit génèrent un bruit considérable, mais ne bloquent pas les fonctionnalités. Par exemple, si vous êtes en train de mettre à jour Chrome ; Chrome accède à lsass.exe ; les mots de passe sont stockés dans lsass sur l’appareil. Toutefois, Chrome ne doit pas accéder aux appareils lsass.exe. Si vous activez la règle pour bloquer l’accès au lsass, elle génère un grand nombre d’événements. Ces événements sont de bons événements, car le processus de mise à jour logicielle ne doit pas lsass.exe. L’activation de cette règle empêchera les mises à jour Chrome d’accéder à l’application lsass, mais ne bloquera pas la mise à jour de Chrome ; Cela est également vrai pour les autres applications qui appellent inutilement des lsass.exe. La règle de blocage d’accès à _lsass_ bloque les appels inutiles à l’application, mais ne bloque pas l’exécution de l’application.
+(<a id="fn1">2</a>) Certaines règles de réduction de la réduction du bruit génèrent un bruit considérable, mais ne bloquent pas les fonctionnalités. Par exemple, si vous êtes en train de mettre à jour Chrome ; Chrome accède à lsass.exe ; les mots de passe sont stockés dans lsass sur l’appareil. Toutefois, Chrome ne doit pas accéder aux appareils lsass.exe. Si vous activez la règle pour bloquer l’accès au lsass, elle génère un grand nombre d’événements. Ces événements sont de bons événements, car le processus de mise à jour logicielle ne doit pas lsass.exe. L’activation de cette règle empêchera les mises à jour Chrome d’accéder à l’application lsass, mais ne bloquera pas la mise à jour de Chrome ; Cela est également vrai pour les autres applications qui appellent inutilement des lsass.exe. La _règle de blocage d’accès à lsass_ bloque les appels inutiles à l’application, mais ne bloque pas l’exécution de l’application.
 
 ### <a name="infrastructure-requirements"></a>Conditions requises en matière d’infrastructure
 
@@ -73,11 +74,11 @@ Bien qu’il soit possible d’implémenter plusieurs méthodes d’implémentat
 - Windows 10 et Windows 11 périphériques
 - Microsoft Defender pour le point de terminaison E5 ou Windows licences E5
 
-Pour tirer pleinement parti des règles et des rapports de la asrx Microsoft 365 Defender, nous vous recommandons d’utiliser une licence E5 Windows E5 et A5. En savoir plus : [Conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)
+Pour tirer pleinement parti des règles et des rapports de la asrx Microsoft 365 Defender, nous vous recommandons d’utiliser une licence E5 Windows E5 et A5. En savoir plus : [Conditions minimales requises pour Microsoft Defender pour le point de terminaison](minimum-requirements.md).
 
 >[!Note]
 >Il existe plusieurs méthodes pour configurer les règles de la asr. Les règles asr peuvent être configurées à l’aide de : Microsoft Endpoint Manager (MEM), PowerShell, stratégie de groupe, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
->Si vous utilisez une configuration d’infrastructure  différente de celle répertoriée pour les conditions requises pour l’infrastructure (ci-dessus), vous pouvez en savoir plus sur le déploiement de règles de réduction de la surface d’attaque à l’aide d’autres configurations ici : Activez les règles de réduction de la [surface](enable-attack-surface-reduction.md)d’attaque.  
+>Si vous utilisez une configuration d’infrastructure différente de celle répertoriée pour les conditions requises pour l’infrastructure _(_ ci-dessus), vous pouvez en savoir plus sur le déploiement de règles de réduction de la surface d’attaque à l’aide d’autres configurations ici : Activer les règles de réduction de la [surface](enable-attack-surface-reduction.md) d’attaque.  
 
 ### <a name="asr-rules-dependencies"></a>Dépendances des règles asr
 
@@ -93,7 +94,7 @@ Antivirus Microsoft Defender ne doit pas être dans l’un des modes suivants :
 - Analyse périodique limitée (LPS)
 - Désactivé
 
-Voir : [Protection et](cloud-protection-microsoft-defender-antivirus.md)protection cloud Antivirus Microsoft Defender .
+Voir : [Protection et](cloud-protection-microsoft-defender-antivirus.md) protection cloud Antivirus Microsoft Defender.
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>La protection cloud (MAPS) doit être activée
 
@@ -104,11 +105,11 @@ Antivirus Microsoft Defender fonctionne en toute transparence avec les services 
 
 Les versions de Antivirus Microsoft Defender suivantes ne doivent pas être plus anciennes que la version la plus disponible :
 
-- **Antivirus Microsoft Defender version de mise à jour** de la plateforme : Antivirus Microsoft Defender plateforme est mise à jour tous les mois.
+- **Antivirus Microsoft Defender version de mise à jour de la** plateforme : Antivirus Microsoft Defender plateforme est mise à jour tous les mois.
 - **Antivirus Microsoft Defender version du moteur** : le moteur Antivirus Microsoft Defender est mis à jour tous les mois.
 - **Antivirus Microsoft Defender** la sécurité : Microsoft met continuellement à jour l’intelligence de sécurité Microsoft Defender (également appelée, définition et signature) pour répondre aux dernières menaces et affiner la logique de détection.
 
-Le fait Antivirus Microsoft Defender versions actuelles permet de réduire les règles de réduction de la réduction des résultats faux positifs et Antivirus Microsoft Defender fonctionnalités de détection. Pour plus d’informations sur les versions actuelles et sur la mise à jour des différents composants de Antivirus Microsoft Defender, consultez la Antivirus Microsoft Defender prise en charge [de la plateforme.](manage-updates-baselines-microsoft-defender-antivirus.md)
+Le fait Antivirus Microsoft Defender versions actuelles permet de réduire les règles de réduction de la réduction des résultats faux positifs et Antivirus Microsoft Defender fonctionnalités de détection. Pour plus d’informations sur les versions actuelles et la mise à jour des différents composants de Antivirus Microsoft Defender, consultez la [Antivirus Microsoft Defender prise en charge de la plateforme](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="asr-rules-deployment-phases"></a>Phases de déploiement des règles asr
 
@@ -124,11 +125,11 @@ Comme avec toute nouvelle implémentation à grande échelle susceptible d’avo
 
 [Phase 1 : Planifier](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Phase 2 : Test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2 : Tester](attack-surface-reduction-rules-deployment-phase-2.md)
 
 [Phase 3 : Implémenter](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Phase 4 : Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4 : Opérationnaliser](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Référence
 

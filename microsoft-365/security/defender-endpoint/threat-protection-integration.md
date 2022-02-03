@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb60bbd8172c54a7fa6ef9a5c0dce708f5506e3a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4f220b16b0402215aa1fad0681edf241b61062ed
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165689"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321230"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender pour le point de terminaison et d’autres solutions Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +46,7 @@ Le connecteur Microsoft Defender pour point de terminaison vous permet de diffus
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
 
-Nous avons récemment supprimé l’intégration Azure Information Protection, car nos fonctionnalités DLP de point de terminaison intègrent une solution de découverte et de protection améliorée pour les données sensibles stockées sur les appareils de point de terminaison, ce qui facilite la visibilité et l’intégration entre les solutions. Cela a été annoncé dans le [blog suivant.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555) Nous recommandons aux clients de passer à l’utilisation du point de terminaison DLP.
+Nous avons récemment supprimé l’intégration Azure Information Protection, car nos fonctionnalités DLP de point de terminaison intègrent une solution de découverte et de protection améliorée pour les données sensibles stockées sur les appareils de point de terminaison, ce qui facilite la visibilité et l’intégration entre les solutions. Cette annonce a été annoncée dans le [blog suivant](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). Nous recommandons aux clients de passer à l’utilisation du point de terminaison DLP.
 
 ### <a name="conditional-access"></a>Accès conditionnel
 
@@ -62,7 +62,7 @@ Les activités suspectes sont des processus en cours d’exécution dans un cont
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender pour Office
 
-[Defender pour Office 365](/office365/securitycompliance/office-365-atp) permet de protéger votre organisation contre les programmes malveillants dans les messages électroniques ou les fichiers par le biais de liens Coffre, de pièces jointes Coffre, d’anti-hameçonnage avancé et de fonctionnalités d’intelligence contre l’usurpation d’adresses. L’intégration entre Microsoft Defender pour Office 365 et Microsoft Defender pour le point de terminaison permet aux analystes de sécurité de monter en amont pour examiner le point d’entrée d’une attaque. Grâce au partage des renseignements sur les menaces, les attaques peuvent être contenues et bloquées.
+[Defender pour Office 365](/office365/securitycompliance/office-365-atp) vous aide à protéger votre organisation contre les programmes malveillants dans les messages électroniques ou les fichiers via des liens Coffre, des pièces jointes Coffre, des fonctionnalités avancées de détection d’hameçonnage et d’usurpation d’adresses. L’intégration entre Microsoft Defender pour Office 365 et Microsoft Defender pour le point de terminaison permet aux analystes de sécurité de monter en amont pour examiner le point d’entrée d’une attaque. Grâce au partage des renseignements sur les menaces, les attaques peuvent être contenues et bloquées.
 
 > [!NOTE]
 > Defender pour Office 365 données est affiché pour les événements des 30 derniers jours. Pour les alertes, defender pour Office 365 données s’affiche en fonction de la première activité. Ensuite, les données ne sont plus disponibles dans Defender pour Office 365.
@@ -77,9 +77,9 @@ Avec Microsoft 365 Defender, Microsoft Defender pour le point de terminaison et 
 
 [En savoir plus sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Configurer l’intégration et d’autres fonctionnalités avancées](advanced-features.md)
-- [Microsoft 365 Defender vue d’ensemble](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Activer Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender vue d’ensemble](/microsoft-365/security/defender/microsoft-365-defender)
+- [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Protéger les utilisateurs, les données et les appareils avec l’accès conditionnel](conditional-access.md)

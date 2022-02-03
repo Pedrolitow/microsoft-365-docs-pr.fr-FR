@@ -1,5 +1,5 @@
 ---
-title: Règles de réduction des surfaces d'attaque
+title: Référence des règles de réduction de la surface d’attaque
 description: Répertorie les détails sur les règles de réduction de la surface d’attaque par règle.
 keywords: Règles de réduction de la surface d’attaque, règles de réduction de la surface d’attaque, règles asr, système de prévention des intrusions hôtes, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer les règles de réduction de la surface d’attaque, description des règles de réduction de la surface d’attaque
 ms.prod: m365-security
@@ -16,14 +16,15 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0e69e73da4e8ea7d4935b86af109cd8fef032a3
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.date: 1/18/2022
+ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993274"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320714"
 ---
-# <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
+# <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -48,10 +49,10 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 > [!Note]
 >
-> - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
+> - Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
 >
 
-| Nom de la règle | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| Nom de la règle | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v | v |
@@ -69,7 +70,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | v | v |
-| **Nom de la règle** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **Nom de la règle** | **&nbsp;Windows Server 2016** <sup>[[1](#fn1)]<sup></sup> | **&nbsp;Windows Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
 
 (<a id="fn1">1</a>) Fait référence à la solution moderne et unifiée pour Windows Server 2012 et 2016. Pour plus d’informations, [voir Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
@@ -81,10 +82,10 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 > [!Note]
 >
-> - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
+> - Sauf indication contraire, la version Windows&nbsp; 10 minimale est la version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows&nbsp; Server est la version 1809 ou ultérieure.
 >
 
-|Nom de la règle|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; Server|
+|Nom de la règle|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure | 
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v  <br><br> |
@@ -108,9 +109,9 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 Les liens vers des informations sur les versions du système de gestion de la configuration référencés dans ce tableau sont répertoriés sous ce tableau.
 
-|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de <sup> groupe [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
+|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de groupe<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [Pris en charge](images/checkmark.png) <br><br> |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [pris en charge](images/checkmark.png) <br><br> |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -139,17 +140,17 @@ Les liens vers des informations sur les versions du système de gestion de la co
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
-Cette règle empêche une application d’écrire un pilote signé vulnérable sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
+Cette règle empêche une application d’écrire un pilote signé vulnérable sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications \- locales qui ont des _privilèges suffisants_ \- pour accéder au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
 
-La règle bloquer l’utilisation abusive des pilotes **signés vulnérables exploités** ne bloque pas le chargement d’un pilote déjà existant sur le système.
+La **règle bloquer l’utilisation abusive des pilotes signés vulnérables exploités** ne bloque pas le chargement d’un pilote déjà existant sur le système.
 
 > [!NOTE]
 >
 > Vous pouvez configurer cette règle à l’aide de l’OMA-URI MEM. Voir [MEM OMA-URI pour](enable-attack-surface-reduction.md#mem) configurer des règles personnalisées.
 >
-> Vous pouvez également configurer cette règle à [l’aide de PowerShell.](enable-attack-surface-reduction.md#powershell)
+> Vous pouvez également configurer cette règle à l’aide [de PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 Nom Intune : `Block abuse of exploited vulnerable signed drivers` (pas encore disponible)
 
@@ -259,7 +260,7 @@ Cette règle empêche le lancement des fichiers exécutables, tels .exe, .dll ou
 > [!IMPORTANT]
 > Vous devez [activer la protection cloud pour](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) utiliser cette règle.
 >
-> La règle bloque l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de **prévalence,** d’âge ou de liste de confiance avec un GUID qui appartient à Microsoft et n’est pas spécifié par les `01443614-cd74-433a-b99e-2ecdc07bfc25` administrateurs. Cette règle utilise la protection cloud pour mettre à jour régulièrement sa liste de confiance.
+> La règle bloque l’exécution des fichiers **exécutables** , sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance avec un GUID `01443614-cd74-433a-b99e-2ecdc07bfc25` qui appartient à Microsoft et n’est pas spécifié par les administrateurs. Cette règle utilise la protection cloud pour mettre à jour régulièrement sa liste de confiance.
 >
 > Vous pouvez spécifier des fichiers ou des dossiers individuels (à l’aide de chemins d’accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier à quelles règles ou exclusions s’appliquent.
 
@@ -360,7 +361,7 @@ Dépendances : MDAV
 
 Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par [formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les [attaques par formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les infos-bulles dans Outlook. Cette règle s’applique Outlook et Outlook.com uniquement.
@@ -402,7 +403,7 @@ Dépendances : MDAV, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquer les créations de processus provenant de commandes PSExec et WMI
 
-Cette règle empêche l’exécution des processus créés via [PsExec](/sysinternals/downloads/psexec) [et WMI.](/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
+Cette règle empêche l’exécution des processus [créés via PsExec](/sysinternals/downloads/psexec) [et WMI](/windows/win32/wmisdk/about-wmi) . PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
 
 > [!WARNING]
 > Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est pas compatible avec la gestion par [Microsoft Endpoint Configuration Manager](/configmgr) car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
@@ -441,7 +442,7 @@ Dépendances : MDAV
 
 Cette règle empêche les macros VBA d’appeler les API Win32.
 
-Office VBA active les appels d’API Win32. Les programmes malveillants peuvent utiliser cette fonctionnalité de manière abusive, par exemple appeler des API Win32 pour lancer des [shellcodes](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) malveillants sans écrire quoi que ce soit directement sur le disque. La plupart des organisations ne s’appuient pas sur la possibilité d’appeler des API Win32 dans leur fonctionnement quotidien, même si elles utilisent des macros d’autres manières.
+Office VBA active les appels d’API Win32. Les programmes malveillants peuvent utiliser cette fonctionnalité de manière abusive, par exemple appeler des API [Win32 pour lancer des shellcodes](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) malveillants sans écrire quoi que ce soit directement sur le disque. La plupart des organisations ne s’appuient pas sur la possibilité d’appeler des API Win32 dans leur fonctionnement quotidien, même si elles utilisent des macros d’autres manières.
 
 Systèmes d’exploitation pris en charge :          
 

@@ -16,17 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser les lignes de base pour déployer des configurations client standard.
-ms.openlocfilehash: 2af4c374fcbfdd7ee0e1c76e18fd749043851dde
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 23ebc0d0562cf06bd92456e18c0833a61c564673
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372635"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321938"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard 
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences](m365-lighthouse-requirements.md). Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évolutif d’évaluer et de gérer Microsoft 365 de sécurité entre plusieurs clients. Les lignes de base permettent également de surveiller les stratégies de sécurité principales et les normes de conformité des clients avec des configurations qui sécurisationnt les utilisateurs, les appareils et les données.
 
@@ -42,14 +42,14 @@ Les configurations de référence dans le tableau suivant sont standard avec la 
 
 | Configuration de référence | Description |
 |--|--|
-| Exiger l’mf pour les administrateurs | Une stratégie d’accès conditionnel de rapport uniquement nécessitant une authentification multifacteur pour les administrateurs. Elle est requise pour toutes les applications cloud. |
-| Exiger l’mf pour les utilisateurs finaux | Une stratégie d’accès conditionnel de rapport uniquement qui nécessite une authentification multifacteur pour les utilisateurs. Elle est requise pour toutes les applications cloud. |
-| Bloquer l’authentification héritée | Une stratégie d’accès conditionnel de rapport uniquement pour bloquer l’authentification client héritée. |
+| Exiger l’mf pour les administrateurs | Une stratégie d’accès conditionnel nécessitant une authentification multifacteur pour les administrateurs. Elle est requise pour toutes les applications cloud. |
+| Exiger l’mf pour les utilisateurs finaux | Une stratégie d’accès conditionnel qui nécessite une authentification multifacteur pour les utilisateurs. Elle est requise pour toutes les applications cloud. |
+| Bloquer l’authentification héritée | Une stratégie d’accès conditionnel pour bloquer l’authentification client héritée. |
 | Configurer l’inscription des appareils | Inscription d’appareils pour permettre à vos appareils locataires de s’inscrire Microsoft Endpoint Manager. Pour ce faire, vous avez la configuration de l’inscription automatique entre Azure Active Directory et Microsoft Endpoint Manager. |
 | Configurer Antivirus Microsoft Defender pour Windows 10 et ultérieures | Profil de configuration d’appareil Windows appareils avec des paramètres de Antivirus Microsoft Defender pré-configurés. |
 | Configurer une stratégie de conformité des appareils pour Windows 10 et ultérieures | Une stratégie Windows appareil avec des paramètres pré-configurés pour répondre aux exigences de conformité de base. |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

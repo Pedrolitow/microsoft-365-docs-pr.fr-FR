@@ -13,13 +13,14 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.collection: m365solution-scenario
+ms.date: ''
+ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320742"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320798"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -41,7 +42,7 @@ Cet article vous aide à évaluer la protection du réseau en activant la foncti
 
 Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
 
-1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. **Tapez powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -59,7 +60,7 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
     ![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide.](images/np-notif.png)
 
 > [!NOTE]
-> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
+> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, [voir Protection du réseau et](network-protection.md#network-protection-and-the-tcp-three-way-handshake) protocole d’accès TCP triple.
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 

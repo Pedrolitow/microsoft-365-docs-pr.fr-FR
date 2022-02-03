@@ -22,18 +22,18 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c45a605346945c1056d708a238b3247c360b70d8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370103"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322142"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
 Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet article vous aide à activer votre abonnement.
   
- **Besoin d’autre chose ?** **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Besoin d’autre chose ?** **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **Client du programme de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [Programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), consultez l’article, [Entrer votre clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activer un nouvel abonnement

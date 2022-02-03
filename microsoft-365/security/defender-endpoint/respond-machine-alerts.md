@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244714"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321974"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -63,13 +63,13 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 
 Ajoutez ou gérez des balises pour créer une affiliation à un groupe logique. Les balises d’appareil prennent en charge le mappage approprié du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et d’activer la création de liste dynamique dans le cadre d’un incident.
 
-Pour plus d’informations sur le marquage des appareils, voir [Créer et gérer des balises d’appareil.](machine-tags.md)
+Pour plus d’informations sur le marquage des appareils, voir [Créer et gérer des balises d’appareil](machine-tags.md).
 
 ## <a name="initiate-automated-investigation"></a>Lancer un examen automatisé
 
 Vous pouvez démarrer une nouvelle enquête automatisée à usage général sur l’appareil si nécessaire. Pendant l’exécution d’un examen, toute autre alerte générée à partir de l’appareil est ajoutée à un examen automatisé en cours jusqu’à ce que l’examen soit terminé. En outre, si la même menace est vue sur d’autres appareils, ces appareils sont ajoutés à l’examen.
 
-Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
+Pour plus d’informations sur les enquêtes automatisées, voir [Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
 
 ## <a name="initiate-live-response-session"></a>Lancer une session de réponse en direct
 
@@ -77,7 +77,7 @@ La réponse en direct est une fonctionnalité qui vous permet d’accéder insta
 
 La réponse dynamique est conçue pour améliorer les enquêtes en vous permettant de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 
-Pour plus d’informations sur la réponse en direct, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
+Pour plus d’informations sur la réponse en direct, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md).
 
 ## <a name="collect-investigation-package-from-devices"></a>Collecter un package d’examen à partir d’appareils
 
@@ -89,13 +89,13 @@ Dans le cadre du processus d’examen ou de réponse, vous pouvez collecter un p
 
 Pour télécharger le package (fichier Zip) et examiner les événements qui se sont produits sur un appareil
 
-1. Sélectionnez **Collecter le package d’examen** à partir de la ligne des actions de réponse en haut de la page de l’appareil.
+1. **Sélectionnez Collecter le package d’examen** à partir de la ligne des actions de réponse en haut de la page de l’appareil.
 2. Spécifiez dans la zone de texte la raison pour laquelle vous souhaitez effectuer cette action. Sélectionner **Confirmer**.
 3. Le fichier zip est téléchargé
 
 Autre solution :
 
-1. Sélectionnez **le centre de réponse** dans la section Actions de réponse de la page de l’appareil.
+1. **Sélectionnez le centre de réponse** dans la section Actions de réponse de la page de l’appareil.
 
     ![Image du bouton Centre de l’action.](images/action-center-package-collection.png)
 
@@ -113,8 +113,8 @@ Le package contient les dossiers suivants :
 |---|---|
 |Autoruns|Contient un ensemble de fichiers qui représentent chacun le contenu du Registre d’un point d’entrée de démarrage automatique connu (ASEP) pour vous aider à identifier la persistance de l’attaquant sur l’appareil. <p> <div class="alert"><b>REMARQUE :</b> Si la clé de Registre est in trouvée, le fichier contient le message suivant : « ERREUR : Le système n’a pas pu trouver la clé de Registre ou la valeur spécifiée. »<div>|
 |Programmes installés|Ce .CSV contient la liste des programmes installés qui peuvent vous aider à identifier ce qui est actuellement installé sur l’appareil. Pour plus d’informations, [voir Win32_Product classe.](https://go.microsoft.com/fwlink/?linkid=841509)|
-|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité à des URL suspectes, l’infrastructure de commande et de contrôle (C&C), tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de noms résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir Configurer le [pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Fichiers de préréférion|Windows préréférents sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont pu être supprimées, mais qui se trouvent toujours dans la liste des fichiers de préréférion. <ul><li>Dossier de préréférion : contient une copie des fichiers de préréférion à partir de `%SystemRoot%\Prefetch` . REMARQUE : il est suggéré de télécharger une visionneuse de fichiers de préréférion pour afficher les fichiers de préréférion.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour suivre s’il y a eu des échecs de copie dans le dossier de préréférion.</li></ul>|
+|Connexions réseau|Ce dossier contient un ensemble de points de données liés aux informations de connectivité qui peuvent vous aider à identifier la connectivité à des URL suspectes, l’infrastructure de commande et de contrôle (C&C), tout mouvement latéral ou les connexions distantes. <ul><li>ActiveNetConnections.txt : affiche les statistiques de protocole et les connexions réseau TCP/IP actuelles. Permet de rechercher une connectivité suspecte d’un processus.</li><li>Arp.txt : affiche les tables de cache ARP (Address Resolution Protocol) actuelles pour toutes les interfaces. Le cache ARP peut révéler d’autres hôtes sur un réseau qui ont été compromis ou des systèmes suspects sur le réseau qui ont pu être utilisés pour exécuter une attaque interne.</il><li>DnsCache.txt : affiche le contenu du cache du programme de résolution du client DNS, qui inclut à la fois les entrées préchargés à partir du fichier Hosts local et les enregistrements de ressource récemment obtenus pour les requêtes de noms résolues par l’ordinateur. Cela peut vous aider à identifier les connexions suspectes.</li><li>IpConfig.txt : affiche la configuration TCP/IP complète pour toutes les cartes. Les adaptateurs peuvent représenter des interfaces physiques, telles que des cartes réseau installées, ou des interfaces logiques, telles que des connexions d’accès à des appels.</li><li>FirewallExecutionLog.txt et pfirewall.log</li></ul><p><div class="alert"><b>REMARQUE :</b> Le fichier pfirewall.log doit exister dans %windir%\system32\logfiles\firewall\pfirewall.log, afin qu’il soit inclus dans le package d’enquête. Pour plus d’informations sur la création du fichier journal du pare-feu, voir [Configurer le pare-feu Windows Defender avec le journal de sécurité avancée](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Fichiers de préréférion|Windows préréférents sont conçus pour accélérer le processus de démarrage de l’application. Il peut être utilisé pour suivre tous les fichiers récemment utilisés dans le système et rechercher des traces pour les applications qui ont pu être supprimées, mais qui se trouvent toujours dans la liste des fichiers de préréférion. <ul><li>Dossier de préréférion : contient une copie des fichiers de préréférion à partir de `%SystemRoot%\Prefetch`. REMARQUE : il est suggéré de télécharger une visionneuse de fichiers de préréférion pour afficher les fichiers de préréférion.</li><li>PrefetchFilesList.txt : contient la liste de tous les fichiers copiés qui peuvent être utilisés pour suivre s’il y a eu des échecs de copie dans le dossier de préréférion.</li></ul>|
 |Processus|Contient un fichier .CSV répertoriant les processus en cours d’exécution et permet d’identifier les processus en cours d’exécution sur l’appareil. Cela peut être utile lors de l’identification d’un processus suspect et de son état.|
 |Tâches programmées|Contient un fichier .CSV répertoriant les tâches programmées, qui peut être utilisé pour identifier les routines exécutées automatiquement sur un appareil choisi afin de rechercher du code suspect qui a été mis en place pour s’exécuter automatiquement.|
 |Journal des événements de sécurité|Contient le journal des événements de sécurité, qui contient les enregistrements de l’activité de connexion ou de connexion, ou d’autres événements liés à la sécurité spécifiés par la stratégie d’audit du système. <p><div class="alert"><b>REMARQUE :</b> Ouvrez le fichier journal des événements à l’aide de l’Observateur d’événements.</div>|
@@ -133,9 +133,9 @@ Dans le cadre du processus d’examen ou de réponse, vous pouvez lancer à dist
 
 >[!IMPORTANT]
 >- Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md)
->- Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md)
+>- Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)
 
-Un que vous avez sélectionné Exécuter **l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
+Vous avez sélectionné Exécuter **l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 
 ![Image de notification pour sélectionner une analyse rapide ou complète et ajouter un commentaire.](images/run-antivirus.png)
 
@@ -155,14 +155,14 @@ En plus de contenir une attaque en arrêtant les processus malveillants, vous po
 >[!IMPORTANT]
 > - Cette action est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows 11 et Windows Server 2016. 
 > - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender.
-> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code du contrôle d’application et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature.](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)
+> - Cette action doit respecter les formats de stratégie d Windows Defender’intégrité du code du contrôle d’application et les exigences de signature. Pour plus d’informations, voir [Formats de stratégie d’intégrité du code et signature](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 Pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui autorise uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.
 
 > [!NOTE]
 > Vous serez en mesure d’annuler la restriction d’exécution des applications à tout moment. Le bouton sur la page de l’appareil change pour dire Supprimer les restrictions d’application, puis vous appliquez les mêmes **étapes** que la restriction de l’exécution de l’application.
 
-Une fois que vous avez sélectionné Restreindre l’exécution **d’application** sur la page de l’appareil, tapez un commentaire et sélectionnez **Confirmer**. Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement.
+Une fois que vous avez sélectionné Restreindre l’exécution **d’application** sur la page de l’appareil, tapez un commentaire, puis sélectionnez **Confirmer**. Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement.
 
 ![Image de la notification de restriction d’application.](images/restrict-app-execution.png)
 
@@ -190,7 +190,7 @@ Cette fonctionnalité d’isolation de périphérique déconnecte l’appareil c
 Sur Windows 10 version 1709 ou ultérieure, vous aurez davantage de contrôle sur le niveau d’isolation réseau. Vous pouvez également choisir d’activer Outlook, Microsoft Teams et la Skype Entreprise (c’est-à-dire une « isolation sélective »).
 
 > [!NOTE]
-> Vous pourrez à tout moment reconnecter l’appareil au réseau. Le bouton sur la page de l’appareil change pour dire Libérer **de l’isolation,** puis vous prenez les mêmes mesures que l’isolation de l’appareil.
+> Vous pourrez à tout moment reconnecter l’appareil au réseau. Le bouton sur la page de l’appareil change pour dire Libérer de **l’isolation**, puis vous prenez les mêmes mesures que l’isolation de l’appareil.
 
 Une fois que vous avez sélectionné **Isoler l’appareil** sur la page de l’appareil, tapez un commentaire, puis sélectionnez **Confirmer**. Le centre de données affiche les informations d’analyse et la chronologie de l’appareil inclut un nouvel événement.
 

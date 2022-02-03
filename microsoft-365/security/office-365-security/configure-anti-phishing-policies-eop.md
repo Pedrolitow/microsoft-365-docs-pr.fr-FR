@@ -16,12 +16,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîtes aux lettres Exchange Online utilisateur.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7abef6ea5872877981812bc2ad06b125147f73c6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6321dcb41e276ccd03d048033e063572506a3c0f
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939824"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321734"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -36,12 +36,12 @@ Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer
 
 Les organisations Exchange Online boîtes aux lettres peuvent configurer des stratégies anti-hameçonnage dans le portail Microsoft 365 Defender ou dans Exchange Online PowerShell. Les organisations EOP autonomes peuvent uniquement utiliser le portail Microsoft 365 Defender client.
 
-Pour plus d’informations sur la création et la modification des stratégies anti-hameçonnage plus avancées disponibles dans Microsoft Defender pour Office 365, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 .
+Pour plus d’informations sur la création et la modification des stratégies anti-hameçonnage plus avancées disponibles dans Microsoft Defender pour Office 365, voir Configurer des stratégies [anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 Les éléments de base d’une stratégie anti-hameçonnage sont :
 
 - **La stratégie anti-hameçonnage :** spécifie les protections de hameçonnage à activer ou désactiver, ainsi que les actions à appliquer.
-- **La règle anti-hameçonnage**: spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique) pour une stratégie anti-hameçonnage.
+- **La règle anti-hameçonnage** : spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique) pour une stratégie anti-hameçonnage.
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies anti-hameçonnage dans Microsoft 365 Defender portail :
 
@@ -61,36 +61,36 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   Vous ne pouvez pas gérer les stratégies anti-hameçonnage dans EOP PowerShell autonome.
 
-- Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - Pour ajouter, modifier et supprimer des stratégies anti-hameçonnage,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
-  - Pour accéder en lecture seule aux stratégies anti-hameçonnage,  vous  devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+- Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cette rubrique.
+  - Pour ajouter, modifier et supprimer des stratégies anti-hameçonnage, vous devez être membre des groupes de  rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
+  - Pour accéder en lecture seule aux stratégies anti-hameçonnage, vous devez être membre des groupes de  rôles Lecteur  global ou Lecteur de sécurité.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
   **Remarques** :
 
   - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
-  - Le **groupe de rôles** Gestion de l’organisation en affichage seul [dans Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la <sup>\*</sup> fonctionnalité.
+  - Le **groupe de rôles** Gestion de l’organisation en affichage [Exchange Online donne également](/Exchange/permissions-exo/permissions-exo#role-groups) un accès en lecture seule à la fonctionnalité <sup>\*</sup>.
 
-- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage, consultez les paramètres de stratégie [anti-hameçonnage EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
+- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage, consultez les [paramètres de stratégie anti-hameçonnage EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 - Autorisez jusqu’à 30 minutes d’application de la stratégie mise à jour.
 
-- Pour plus d’informations sur l’endroit où les stratégies anti-hameçonnage sont appliquées dans le pipeline de filtrage, voir Ordre et priorité de la [protection du courrier électronique.](how-policies-and-protections-are-combined.md)
+- Pour plus d’informations sur l’endroit où les stratégies anti-hameçonnage sont appliquées dans le pipeline de filtrage, voir Ordre et priorité [de la protection du courrier électronique](how-policies-and-protections-are-combined.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies"></a>Utiliser le portail Microsoft 365 Defender pour créer des stratégies anti-hameçonnage
 
 La création d’une stratégie anti-hameçonnage personnalisée dans le portail Microsoft 365 Defender crée la règle anti-hameçonnage et la stratégie anti-hameçonnage associée en utilisant le même nom pour les deux.
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** cliquez sur ![ Créer une icône.](../../media/m365-cc-sc-create-icon.png) **Création**.
+2. Dans la page **Anti-hameçonnage** , cliquez sur Créer ![une icône.](../../media/m365-cc-sc-create-icon.png) **Création**.
 
 3. L’assistant d'application de stratégies s’ouvre. Dans la page **Nom de la** stratégie, configurez les paramètres ci-après :
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
@@ -109,11 +109,11 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
    Plusieurs valeurs dans la même condition utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   - **Exclure ces utilisateurs, groupes et domaines** : pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s’applique (exceptions pour les destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
+   - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **de protection** & seuil de  hameçonnage qui s’affiche, utilisez la case à cocher Activer la veille contre l’usurpation d’informations pour activer ou désactiver l’usurpation d’informations. La valeur par défaut est sur (sélectionnée) et nous vous recommandons de la laisser. Vous configurez l’action à prendre sur les messages usurpés bloqués sur la page suivante.
+5. Dans la page **de protection** & seuil de hameçonnage qui s’affiche,  utilisez la case à cocher Activer la veille contre l’usurpation d’informations pour activer ou désactiver l’usurpation d’informations. La valeur par défaut est sur (sélectionnée) et nous vous recommandons de la laisser. Vous configurez l’action à prendre sur les messages usurpés bloqués sur la page suivante.
 
    Pour désactiver la veille contre l’usurpation d’informations, cochez la case.
 
@@ -123,20 +123,20 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Action** qui s’affiche, configurez les paramètres suivants :
-   - **Si le message est détecté comme** usurpant l’usurpation : ce paramètre n’est disponible que si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente.  Sélectionnez l’une des actions suivantes dans la liste bas pour les messages provenant d’expéditeurs usurpés bloqués :
+   - **Si le message est détecté comme** usurpant une usurpation d’informations : ce paramètre n’est disponible que si vous avez sélectionné Activer la veille contre l’usurpation d’informations **sur la** page précédente. Sélectionnez l’une des actions suivantes dans la liste bas pour les messages provenant d’expéditeurs usurpés bloqués :
      - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
-     - **Mettre le message** en quarantaine :  si vous sélectionnez cette action, une zone de stratégie Appliquer la mise en quarantaine s’affiche lorsque vous sélectionnez la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’intelligence. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages et si les utilisateurs reçoivent des notifications de mise en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+     - **Mettre le message** en quarantaine : si vous sélectionnez cette  action, une zone de stratégie Appliquer la mise en quarantaine s’affiche lorsque vous sélectionnez la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’intelligence. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre en quarantaine les messages et si les utilisateurs reçoivent des notifications de mise en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
-       Une valeur vide de stratégie **Appliquer** la mise en quarantaine signifie que la stratégie de mise en quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’usurpation d’informations). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage de protection pris en charge, consultez [ce tableau.](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)
+       Une valeur vide **de stratégie Appliquer** la mise en quarantaine signifie que la stratégie de mise en quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’usurpation d’informations). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage de protection pris en charge, consultez [ce tableau](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Conseils de sécurité & indicateurs :**
-     - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - Affiche **(?)** pour les expéditeurs non authentifiés pour usurpation d’identité : ajoute un point d’interrogation (?) à la photo de l’expéditeur dans la zone De de Outlook si le message ne passe pas les vérifications SPF ou DKIM et si le message ne passe pas <sup>\*</sup>  l’authentification DMARC ou [composite.](email-validation-and-authentication.md#composite-authentication)
-     - **Afficher la balise « via**» : ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou <sup>\*</sup> l’adresse **MAIL FROM.**
+     - **Afficher le premier contact conseil de sécurité** : pour plus d’informations, voir [First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - Afficher **(?)**<sup>\*</sup> pour les expéditeurs non authentifiés pour usurpation d’identité : ajoute un point d’interrogation (?) à la photo de l’expéditeur dans la zone De de Outlook si le message ne passe pas les vérifications SPF ou DKIM et si le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
+     - Afficher la balise « **via**<sup>\*</sup> » : ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM**.
 
      Pour activer un paramètre, cochez la case. Pour la désactiver, cochez la case.
 
-     <sup>\*</sup> Ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation **d’informations** sur la page précédente. Pour plus d’informations, voir Expéditeur non [authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)
+     <sup>\*</sup> Ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation **d’informations** sur la page précédente. Pour plus d’informations, voir [Expéditeur non authentifié](set-up-anti-phishing-policies.md#unauthenticated-sender).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -148,9 +148,9 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies anti-hameçonnage
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** les propriétés suivantes sont affichées dans la liste des stratégies :
+2. Dans la page **Anti-hameçonnage** , les propriétés suivantes sont affichées dans la liste des stratégies :
 
    - **Name**
    - **État**
@@ -161,11 +161,11 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier des stratégies anti-hameçonnage
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
+2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
-3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies [anti-hameçonnage](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) plus tôt dans cet article.
+3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, voir la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies [anti-hameçonnage](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) plus tôt dans cet article.
 
    Pour la stratégie anti-hameçonnage par défaut, la section **Utilisateurs,** groupes et domaines n’est pas disponible (la stratégie s’applique à tout le monde) et vous ne pouvez pas renommer la stratégie.
 
@@ -175,9 +175,9 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 Vous ne pouvez pas désactiver la stratégie anti-hameçonnage par défaut.
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
+2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de stratégie qui s’affiche, vous verrez l’une des valeurs suivantes :
    - **Stratégie désactivée** : Pour activer la stratégie, cliquez sur l’![icône Activer.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activer**.
@@ -198,16 +198,16 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
  **Remarques** :
 
 - Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie anti-hameçonnage qu’une fois que vous l’avez créé. Dans PowerShell, vous pouvez remplacer la priorité par défaut lorsque vous créez la règle anti-hameçonnage (ce qui peut affecter la priorité des règles existantes).
-- Les stratégies anti-hameçonnage sont traitées dans l’ordre d’affichage (la première stratégie a la valeur Priority 0).  La stratégie anti-hameçonnage par défaut a la valeur de priorité **La** plus faible et vous ne pouvez pas la modifier.
+- Les stratégies anti-hameçonnage sont traitées dans l’ordre d’affichage (la première stratégie a la  valeur Priority 0). La stratégie anti-hameçonnage par défaut a la valeur de priorité **La** plus faible et vous ne pouvez pas la modifier.
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
+2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant détails de la stratégie qui s’affiche, vous verrez **Augmenter la priorité** ou **Diminuer la priorité** en fonction de la valeur de priorité actuelle et du nombre de stratégies personnalisées :
    - La stratégie dont la valeur **de** priorité **est 0** ne dispose que de l’option Diminuer **la** priorité disponible.
-   - La stratégie dont la valeur **de** priorité est la plus faible (par exemple, **3**) n’a que l’option Augmenter **la** priorité disponible.
-   - Si vous avez au moins trois stratégies, les stratégies  entre les valeurs de priorité les plus élevées et les plus faibles ont les options Augmenter la priorité et Diminuer **la** priorité disponibles.
+   - La stratégie dont la valeur **de** priorité est la plus faible ( **par** exemple, 3) ne dispose que **de l’option** Augmenter la priorité.
+   - Si vous avez au moins trois stratégies, les stratégies entre les valeurs de priorité les plus élevées et les plus faibles ont les options Augmenter la priorité et Diminuer **la** priorité disponibles.
 
    Cliquez sur l’![Icône Augmenter la priorité](../../media/m365-cc-sc-increase-icon.png) **Augmenter la priorité** ou ![Icône Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **Priorité**.
 
@@ -217,9 +217,9 @@ Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la pri
 
 Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une stratégie anti-hameçonnage personnalisée, la règle anti-hameçonnage et la stratégie anti-hameçonnage correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-hameçonnage par défaut.
 
-1. Dans le portail Microsoft 365 Defender, dans la section Stratégies de &, & règles <https://security.microsoft.com>  \>  \>  \> **anti-hameçonnage.**  Pour aller directement à la page **anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> .
+1. Dans le portail Microsoft 365 Defender <https://security.microsoft.com>à l’adresse , go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section. Pour aller directement à la page **anti-hameçonnage** , utilisez <https://security.microsoft.com/antiphishing>.
 
-2. Dans la page **Anti-hameçonnage,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
+2. Dans la page **Anti-hameçonnage** , sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom.
 
 3. En haut du menu volant des détails de la stratégie qui s’affiche, cliquez sur l’![icône Autres actions. ](../../media/m365-cc-sc-more-actions-icon.png) **Plus d’actions**\>![icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png)**Supprimer la stratégie**.
 
@@ -229,7 +229,7 @@ Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une strat
 
 Comme décrit précédemment, une stratégie anti-hameçonnage se compose d’une stratégie anti-hameçonnage et d’une règle anti-hameçonnage.
 
-Dans Exchange Online PowerShell, la différence entre les stratégies anti-hameçonnage et les règles anti-hameçonnage est évidente. Vous gérez les stratégies anti-hameçonnage à l’aide des cmdlets **\* -AntiPhishPolicy** et vous gérez les règles anti-hameçonnage à l’aide des cmdlets **\* -AntiPhishRule.**
+Dans Exchange Online PowerShell, la différence entre les stratégies anti-hameçonnage et les règles anti-hameçonnage est évidente. Vous gérez les stratégies anti-hameçonnage à l’aide des cmdlets -AntiPhishPolicy et vous gérez les règles anti-hameçonnage **à l’aide des cmdlets -AntiPhishRule.\*** **\***
 
 - Dans PowerShell, vous créez d’abord la stratégie anti-hameçonnage, puis vous créez la règle anti-hameçonnage qui identifie la stratégie à qui s’applique la règle.
 - Dans PowerShell, vous modifiez séparément les paramètres de la stratégie anti-hameçonnage et de la règle anti-hameçonnage.
@@ -245,14 +245,14 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 1. Créez la stratégie anti-hameçonnage.
 2. Créez la règle anti-hameçonnage qui spécifie la stratégie anti-hameçonnage à l’application de la règle.
 
- **Remarques** :
+ **Remarques** :
 
 - Vous pouvez créer une règle anti-hameçonnage et lui attribuer une stratégie anti-hameçonnage existante et non dissociée. Une règle anti-hameçonnage ne peut pas être associée à plusieurs stratégies anti-hameçonnage.
 
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies anti-hameçonnage dans PowerShell qui ne sont pas disponibles dans le portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :
 
-  - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-AntiPhishRule).**
-  - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-AntiPhishRule).**
+  - Créez la stratégie comme _désactivée (_ `$false` activée sur la cmdlet **New-AntiPhishRule** ).
+  - Définissez la priorité de la stratégie lors de la création (_Priorité__\<Number\>_) sur la cmdlet **New-AntiPhishRule**).
 
 - Une nouvelle stratégie anti-hameçonnage que vous créez dans PowerShell n’est pas visible dans le portail Microsoft 365 Defender tant que vous n’avez pas attribué la stratégie à une règle anti-hameçonnage.
 
@@ -267,7 +267,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 Cet exemple crée une stratégie anti-hameçonnage nommée Research Quarantine avec les paramètres suivants :
 
 - La description est la suivante : stratégie du service de recherche.
-- Modifie l’action par défaut pour les détections [](quarantine-policies.md) d’usurpation d’informations en quarantaine et utilise la stratégie de mise en quarantaine par défaut pour les messages mis en quarantaine (nous n’utilisons pas le paramètre _SpoofQuarantineTag)._
+- Modifie l’action par défaut pour les détections d’usurpation d’informations [](quarantine-policies.md) en quarantaine et utilise la stratégie de mise en quarantaine par défaut pour les messages mis en quarantaine (nous n’utilisons pas le paramètre _SpoofQuarantineTag_).
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
@@ -276,7 +276,7 @@ New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research departmen
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
 > [!NOTE]
-> Pour obtenir des instructions [](quarantine-policies.md) détaillées sur la spécification des stratégies de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage.](quarantine-policies.md#anti-phishing-policies)
+> Pour obtenir des instructions détaillées sur [](quarantine-policies.md) la spécification des stratégies de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage](quarantine-policies.md#anti-phishing-policies).
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Étape 2 : Utiliser PowerShell pour créer une règle anti-hameçonnage
 
@@ -290,7 +290,7 @@ Cet exemple crée une règle anti-hameçonnage nommée Research Department avec 
 
 - La règle est associée à la stratégie anti-hameçonnage nommée Research Quarantine.
 - La règle s’applique aux membres du groupe nommé Research Department.
-- Étant donné que nous n’utilisons pas le _paramètre Priority,_ la priorité par défaut est utilisée.
+- Étant donné que nous n’utilisons pas le _paramètre Priority_ , la priorité par défaut est utilisée.
 
 ```powershell
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
@@ -350,14 +350,14 @@ Cet exemple renvoie toutes les valeurs de propriété pour la règle anti-hameç
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-AntiPhishRule](/powershell/module/exchange/Get-AntiPhishrule).
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utiliser PowerShell pour modifier des stratégies anti-hameçonnage
 
 Outre les éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell que lorsque vous créez une stratégie comme décrit à l’étape 1 : Utiliser PowerShell pour créer une stratégie [anti-hameçonnage](#step-1-use-powershell-to-create-an-anti-phish-policy) plus tôt dans cet article.
 
-- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en  stratégie par défaut (appliquée à tout le monde, toujours la plus faible priorité et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
-- Vous ne pouvez pas renommer une stratégie anti-hameçonnage (la cmdlet **Set-AntiPhishPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie anti-hameçonnage dans le portail Microsoft 365 Defender, vous renommez uniquement la règle _anti-hameçonnage._
+- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en stratégie par défaut (appliquée à tout le monde, toujours la plus faible priorité et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
+- Vous ne pouvez pas renommer une stratégie anti-hameçonnage (la cmdlet **Set-AntiPhishPolicy** n’a pas de _paramètre Name_ ). Lorsque vous renommez une stratégie anti-hameçonnage dans le portail Microsoft 365 Defender, vous renommez uniquement la règle anti-hameçonnage.
 
 Pour modifier une stratégie anti-hameçonnage, utilisez la syntaxe suivante :
 
@@ -368,7 +368,7 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
 > [!NOTE]
-> Pour obtenir des instructions [](quarantine-policies.md) détaillées sur la spécification de la stratégie de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage.](quarantine-policies.md#anti-phishing-policies)
+> Pour obtenir des instructions détaillées sur [](quarantine-policies.md) la spécification de la stratégie de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage](quarantine-policies.md#anti-phishing-policies).
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>Utiliser PowerShell pour modifier des règles anti-hameçonnage
 
@@ -426,8 +426,8 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 **Remarques** :
 
-- Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ de la cmdlet **New-AntiPhishRule.**
-- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et a toujours la valeur de priorité nonmodifiable La plus **faible**.
+- Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ de la cmdlet **New-AntiPhishRule** .
+- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et a toujours la valeur de priorité nonmodifiable **La plus faible**.
 
 ### <a name="use-powershell-to-remove-anti-phish-policies"></a>Utiliser PowerShell pour supprimer des stratégies anti-hameçonnage
 
@@ -469,9 +469,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien configuré les stratégies anti-hameçonnage dans EOP, faites l’une des opérations suivantes :
 
-- Dans la page **Anti-hameçonnage** du portail Microsoft 365 Defender, vérifiez la liste des stratégies, leurs valeurs d’état et leurs valeurs <https://security.microsoft.com/antiphishing> **de** priorité.  Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom et en visualnant les détails dans le volant qui s’affiche.
+- Dans la page **Anti-hameçonnage** du portail Microsoft 365 Defender <https://security.microsoft.com/antiphishing>, vérifiez la liste des stratégies, leurs valeurs d’état et leurs valeurs **de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom et en visualnant les détails dans le volant qui s’affiche.
 
-- Dans Exchange Online PowerShell, remplacez par le nom de la stratégie ou de la règle, exécutez la commande suivante \<Name\> et vérifiez les paramètres :
+- Dans Exchange Online PowerShell, \<Name\> remplacez par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les paramètres :
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

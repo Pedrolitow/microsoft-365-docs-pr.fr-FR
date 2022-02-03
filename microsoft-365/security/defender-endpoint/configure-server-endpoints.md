@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 924abaff9ead40971712f5bacd9fe12438c7dff1
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b0e3279b7a1003fa10a112a85bc1e1d83fa14937
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281506"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322492"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
 
@@ -111,6 +111,19 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
 - Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez ensuite avant la mise à niveau.
 - Les exclusions automatiques pour *les* rôles serveur ne sont pas Windows Server 2012 R2 ; toutefois, les exclusions intégrées pour les fichiers de système d’exploitation le sont. Pour plus d’informations sur l’ajout d’exclusions, voir [recommandations](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc) d’analyse antivirus pour Enterprise ordinateurs exécutant actuellement des versions de Windows.
+- Actuellement, si vous choisissez de désinstaller et de désinstaller la solution moderne unifiée et de réinstaller le capteur PEPT MMA précédent, `MsSenseS.exe` vous pouvez rencontrer des incidents répétés. 
+
+Pour contourner ce besoin, supprimez les clés de Registre suivantes si elles existent :
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
+
+Vous pouvez utiliser les commandes suivantes :
+
+```cmd
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
+```
+Aucun redémarrage n’est requis.
 
 
 <a name="integration-with-azure-defender"></a>
@@ -122,7 +135,7 @@ Microsoft Defender pour le point de terminaison s’intègre en toute transparen
 Pour plus d’informations, [voir Intégration à Microsoft Defender pour le cloud](azure-server-integration.md).
 
 > [!NOTE]
-> Pour Windows Server 2012 R2 et 2016 exécutant la prévisualisation de la solution unifiée moderne, l’intégration à Microsoft Defender pour le cloud / Microsoft Defender pour les serveurs pour les alertes et le déploiement automatisé n’est pas encore disponible. Même si vous pouvez installer la nouvelle solution sur ces ordinateurs, aucune alerte ne s’affichera dans Microsoft Defender pour le Cloud.
+> Pour Windows Server 2012 R2 et 2016 exécutant la prévisualisation de la solution unifiée moderne, l’intégration à Microsoft Defender pour le cloud / Microsoft Defender pour les serveurs pour les alertes et le déploiement automatisé n’est pas encore disponible. Même si vous pouvez installer manuellement la nouvelle solution sur ces ordinateurs, aucune alerte ne s’affichera dans Microsoft Defender pour le Cloud.
 
 > [!NOTE]
 > - L’intégration entre Microsoft Defender pour les serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge Windows Server 2022, [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d744681351bd8a0a8d9aa15f1ee5f26554aace8d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d4bdd474f126eaf6d3cda21b2fcb4a1ffc383abe
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244918"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322106"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -146,7 +146,7 @@ Defender pour point de terminaison s’intègre directement aux différentes sol
 - Microsoft Defender pour Office
 - Skype Entreprise
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defende)**
 
 Avec Microsoft 365 Defender, Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
 

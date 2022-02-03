@@ -9,29 +9,29 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 9593b7798a969e5e8adca82c005c65bf7236eebb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218597"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322480"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est pris en charge sur les clients Windows Server 2019, Windows Server 2022, Windows 10 et windows 11. Cet article explique comment personnaliser les fonctionnalités d’accès contrôlé aux dossiers et comprend les sections suivantes :
+L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est pris en charge sur Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11 clients. Cet article explique comment personnaliser les fonctionnalités d’accès contrôlé aux dossiers et comprend les sections suivantes :
 
 - [Protéger des dossiers supplémentaires](#protect-additional-folders)
 - [Ajouter des applications qui doivent être autorisées à accéder aux dossiers protégés](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -43,47 +43,47 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 
 ## <a name="protect-additional-folders"></a>Protéger des dossiers supplémentaires
 
-L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, y compris les dossiers tels que **Documents,** **Images** et **Films.** Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
+L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, notamment aux dossiers **Documents**, **Images** et **Films**. Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
 
 L’ajout d’autres dossiers à l’accès contrôlé aux dossiers peut être utile dans les cas où vous ne stockez pas de fichiers dans les bibliothèques Windows par défaut ou lorsque vous avez modifié l’emplacement par défaut de vos bibliothèques.
 
-Vous pouvez également spécifier des partages réseau et des lecteurs mappés. Les variables d’environnement et les caractères génériques sont pris en charge. Pour plus d’informations sur l’utilisation de caractères génériques, voir Utiliser des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou [d’extension.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+Vous pouvez également spécifier des partages réseau et des lecteurs mappés. Les variables d’environnement et les caractères génériques sont pris en charge. Pour plus d’informations sur l’utilisation de caractères génériques, voir [Utiliser des caractères génériques dans les listes d’exclusions](configure-extension-file-exclusions-microsoft-defender-antivirus.md) de nom de fichier et de dossier ou d’extension.
 
 Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe, les cmdlets PowerShell ou les fournisseurs de services de configuration de gestion des appareils mobiles pour ajouter et supprimer des dossiers protégés.
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Utiliser l’Sécurité Windows pour protéger des dossiers supplémentaires
 
-1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans  la barre des tâches ou en recherchant la sécurité dans le menu Démarrer.
+1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant la sécurité  dans le menu Démarrer.
 
-2. Sélectionnez **Virus & protection contre les** menaces, puis faites défiler vers le bas jusqu’à la section Protection contre les **ransomware.**
+2. **Sélectionnez Virus & protection contre les** menaces, puis faites défiler vers le bas jusqu’à la section **Protection contre les ransomware**.
 
-3. Sélectionnez **Gérer la protection contre les ransomware** pour ouvrir le volet protection contre les **ransomware.**
+3. **Sélectionnez Gérer la protection contre les ransomware** pour ouvrir le volet **protection contre les ransomware**.
 
-4. Sous la section **Accès contrôlé aux dossiers,** **sélectionnez Dossiers protégés.**
+4. Sous la section **Accès contrôlé aux dossiers** , **sélectionnez Dossiers protégés**.
 
-5. Sélectionnez **Oui** dans **l’invite Contrôle d’accès** utilisateur. Le **volet Dossiers protégés** s’affiche.
+5. **Sélectionnez Oui** dans **l’invite Contrôle d’accès** utilisateur. Le **volet Dossiers protégés** s’affiche.
 
-6. Sélectionnez **Ajouter un dossier protégé et** suivez les invites pour ajouter des dossiers.
+6. **Sélectionnez Ajouter un dossier protégé et** suivez les invites pour ajouter des dossiers.
 
 ### <a name="use-group-policy-to-protect-additional-folders"></a>Utiliser une stratégie de groupe pour protéger des dossiers supplémentaires
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration des stratégies de **configuration** \>  \> **ordinateur.**
+3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration **des** \> **stratégies de configuration** \> ordinateur.
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>. <br/>**REMARQUE** : sur les versions antérieures Windows, vous pouvez voir **Antivirus Windows Defender au lieu** de **Antivirus Microsoft Defender**.
 
-5. Double-cliquez **sur Dossiers protégés configurés,** puis définissez l’option **sur Activé.** Sélectionnez **Afficher** et spécifiez chaque dossier à protéger.
+5. Double-cliquez **sur Dossiers protégés configurés**, puis définissez l’option **sur Activé**. **Sélectionnez Afficher** et spécifiez chaque dossier à protéger.
 
 6. Déployez votre objet de stratégie de groupe comme vous le faites généralement.
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Utiliser PowerShell pour protéger des dossiers supplémentaires
 
-1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. **Tapez PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 
-2. Tapez l’cmdlet PowerShell suivante, en remplaçant par le chemin d’accès du dossier `<the folder to be protected>` (par exemple : `"c:\apps\"`
+2. Tapez l’cmdlet PowerShell suivante, en remplaçant `<the folder to be protected>` par le chemin d’accès du dossier (par exemple :`"c:\apps\"`
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
@@ -93,7 +93,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
    :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Fenêtre PowerShell avec cmdlet affichée.":::
 
 > [!IMPORTANT]
-> Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste et non `Set-MpPreference` . `Set-MpPreference`L’utilisation de la cmdlet va supprimer la liste existante.
+> Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste et non `Set-MpPreference`. L’utilisation `Set-MpPreference` de la cmdlet va supprimer la liste existante.
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>Utiliser des CSP mdm pour protéger des dossiers supplémentaires
 
@@ -112,47 +112,47 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 ### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>Utiliser l’application Windows Defender security pour autoriser des applications spécifiques
 
-1. Ouvrez l’Sécurité Windows en recherchant sécurité dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows appl; recherchez Sécurité dans le menu **Démarrer.**
 
-2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Gérer la protection contre les **ransomware.**
+2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Gérer **la protection contre les ransomware**.
 
-3. Sous la section **Accès contrôlé aux dossiers,** **sélectionnez Autoriser une application via Accès contrôlé aux dossiers**
+3. Sous la section **Accès contrôlé aux dossiers** , **sélectionnez Autoriser une application via Accès contrôlé aux dossiers**
 
-4. Sélectionnez **Ajouter une application autorisée et** suivez les invites pour ajouter des applications.
+4. **Sélectionnez Ajouter une application autorisée et** suivez les invites pour ajouter des applications.
 
    :::image type="content" source="images/cfa-allow-app.png" alt-text="Ajoutez un bouton d’application autorisé.":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Utiliser une stratégie de groupe pour autoriser des applications spécifiques
 
-1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
+1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true) de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier**.
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
+3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Windows Defender’accès** contrôlé aux **dossiers** Exploit Guard\>.
 
-4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option sur **Activé.** Sélectionnez **Afficher** et entrez chaque application.
+4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option **sur Activé**. **Sélectionnez Afficher** et entrez chaque application.
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>Utiliser PowerShell pour autoriser des applications spécifiques
 
-1. Tapez **PowerShell dans** le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. **Tapez PowerShell dans** le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "<the app that should be allowed, including the path>"
     ```
 
-    Par exemple, pour ajouter le fichier exécutable *test.exe* situé dans le dossier *C:\apps,* l’cmdlet serait la suivante :
+    Par exemple, pour ajouter le fichier exécutable *test.exe* situé dans le dossier *C:\apps*, l’cmdlet se trouve comme suit :
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"
     ```
 
-   Continuez à `Add-MpPreference -ControlledFolderAccessAllowedApplications` l’utiliser pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
+   Continuez à l’utiliser `Add-MpPreference -ControlledFolderAccessAllowedApplications` pour ajouter d’autres applications à la liste. Les applications ajoutées à l’aide de cette cmdlet s’affichent dans l Sécurité Windows applet.
 
    :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet PowerShell pour autoriser une application.":::
 
 > [!IMPORTANT]
-> Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. `Set-MpPreference`L’utilisation de la cmdlet va supprimer la liste existante.
+> Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste. L’utilisation `Set-MpPreference` de la cmdlet va supprimer la liste existante.
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>Utiliser des CSP de gestion des applications mobiles pour autoriser des applications spécifiques
 
@@ -160,14 +160,14 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Autoriser les fichiers exécutables signés à accéder aux dossiers protégés
 
-Les indicateurs de certificat et de fichier Microsoft Defender pour point de terminaison peuvent autoriser les fichiers exécutables signés à accéder aux dossiers protégés. Pour plus d’informations sur l’implémentation, voir [Créer des indicateurs basés sur des certificats.](indicator-certificates.md)
+Les indicateurs de certificat et de fichier Microsoft Defender pour point de terminaison peuvent autoriser les fichiers exécutables signés à accéder aux dossiers protégés. Pour plus d’informations sur l’implémentation, voir [Créer des indicateurs basés sur des certificats](indicator-certificates.md).
 
 > [!Note]
 > Cela ne s’applique pas aux moteurs de script, y compris Powershell
 
 ## <a name="customize-the-notification"></a>Personnaliser la notification
 
-Pour plus d’informations sur la personnalisation de la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier, voir Configurer les notifications d’alerte [dans Microsoft Defender pour le point de terminaison.](configure-email-notifications.md)
+Pour plus d’informations sur la personnalisation de la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier, voir Configurer les notifications d’alerte [dans Microsoft Defender pour endpoint](configure-email-notifications.md).
 
 ## <a name="see-also"></a>Voir aussi
 

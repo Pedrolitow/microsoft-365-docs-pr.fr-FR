@@ -10,29 +10,30 @@ audience: ITPro
 ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: ac371ed04cdbc42a34aded4cbbd394e6f522ba06
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163973"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322046"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[L’accès contrôlé aux](controlled-folders.md) dossiers est une fonctionnalité qui permet de protéger vos documents et fichiers contre toute modification par des applications suspectes ou malveillantes. L’accès contrôlé aux dossiers est pris en charge sur les clients Windows Server 2019, Windows Server 2022, Windows 10 et windows 11.
+[L’accès contrôlé aux](controlled-folders.md) dossiers est une fonctionnalité qui permet de protéger vos documents et fichiers contre toute modification par des applications suspectes ou malveillantes. L’accès contrôlé aux dossiers est pris en charge sur Windows Server 2019, Windows Server 2022, Windows 10 et Windows 11 clients.
 
 Il est particulièrement utile pour vous protéger contre les [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) qui tentent de chiffrer vos fichiers et de les maintenir en attente.
 
@@ -43,7 +44,7 @@ Cet article vous aide à évaluer l’accès contrôlé aux dossiers. Il expliqu
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Utiliser le mode audit pour mesurer l’impact
 
-Activez l’accès contrôlé aux dossiers en  mode audit pour voir un enregistrement de ce qui se serait passé s’il était entièrement activé. Testez le fonctionnement de la fonctionnalité dans votre organisation pour vous assurer qu’elle n’affecte pas vos applications métier. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent généralement sur une certaine période de temps.
+Activez l’accès contrôlé aux dossiers en mode audit pour voir un  enregistrement de ce qui se serait passé s’il était entièrement activé. Testez le fonctionnement de la fonctionnalité dans votre organisation pour vous assurer qu’elle n’affecte pas vos applications métier. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent généralement sur une certaine période de temps.
 
 Pour activer le mode audit, utilisez l’cmdlet PowerShell suivante :
 
@@ -53,7 +54,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si vous souhaitez auditer entièrement le fonctionnement de l’accès contrôlé aux dossiers dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
-Vous pouvez également utiliser une stratégie de groupe, Intune, la gestion des périphériques mobiles (MDM) ou des Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la rubrique principale d’accès contrôlé aux [dossiers.](controlled-folders.md)
+Vous pouvez également utiliser une stratégie de groupe, Intune, la gestion des périphériques mobiles (MDM) ou des Microsoft Endpoint Manager pour configurer et déployer le paramètre, comme décrit dans la rubrique principale d’accès contrôlé aux [dossiers](controlled-folders.md).
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Windows’observateur d’événements
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b452c0aea4932903c47f0874e839770caa2a6850
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 15055274b8b2fd69c5751201184955eb9915e038
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159589"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322348"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -38,7 +38,7 @@ ms.locfileid: "62159589"
 
 Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles (GA) dans la dernière version de Microsoft Defender for Endpoint.
 
-Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu.](preview.md)
+Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu](preview.md).
 
 > [!TIP]
 > Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux :
@@ -60,13 +60,17 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 
+## <a name="january-2022"></a>Janvier 2022
+
+- Les menaces et gestion des vulnérabilités pour Android et iOS sont désormais généralement disponibles. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+
 ## <a name="december-2021"></a>Décembre 2021
 
 - Les menaces et gestion des vulnérabilités peuvent aider à identifier les vulnérabilités Log4j dans les applications et les composants. [En savoir plus](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
-- Découvrez les appareils IoT (aperçu) : la découverte d’appareils a désormais la possibilité de vous aider à trouver des appareils IoT non utilisés connectés à votre réseau d’entreprise. [](device-discovery.md) Cela vous offre une vue unifiée unique de votre inventaire IoT, ainsi que le reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles).
+- Découvrez les appareils IoT (aperçu[](device-discovery.md)) : la découverte d’appareils a désormais la possibilité de vous aider à trouver des appareils IoT non utilisés connectés à votre réseau d’entreprise. Cela vous offre une vue unifiée unique de votre inventaire IoT, ainsi que le reste de vos appareils informatiques (stations de travail, serveurs et appareils mobiles).
 
-- [Microsoft Defender pour l’intégration IoT (prévisualisation)](enable-microsoft-defender-for-iot-integration.md): cette intégration améliore vos fonctionnalités de découverte d’appareils avec les fonctionnalités de surveillance sans agent fournies par Microsoft Defender pour IoT. Cela offre une meilleure visibilité pour vous aider à localiser, identifier et sécuriser les appareils IoT dans votre réseau.
+- [Microsoft Defender pour l’intégration IoT (prévisualisation)](enable-microsoft-defender-for-iot-integration.md) : cette intégration améliore vos fonctionnalités de découverte d’appareils avec les fonctionnalités de surveillance sans agent fournies par Microsoft Defender pour IoT. Cela offre une meilleure visibilité pour vous aider à localiser, identifier et sécuriser les appareils IoT dans votre réseau.
 
 ## <a name="november-2021"></a>Novembre 2021
 
@@ -82,7 +86,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 ## <a name="september-2021"></a>Septembre 2021
 
-- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non-catégorie. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
+- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non-catégorie. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web](web-content-filtering.md).
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -98,7 +102,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 ## <a name="june-2021"></a>Juin 2021
 
-- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel d’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
+- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection [d’API Exportation des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) . <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel d’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
 - [Exporter des évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 
@@ -111,15 +115,15 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 - [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
 
-- [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet à Microsoft Defender for Endpoint de protéger les données d’une organisation au sein d’une application gérée lorsque Intune est utilisé pour gérer les applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, [consultez cette documentation.](/microsoft-365/mem/intune/apps/mam-faq)
+- [Prise en charge de la gestion des applications mobiles](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Cette amélioration permet à Microsoft Defender for Endpoint de protéger les données d’une organisation au sein d’une application gérée lorsque Intune est utilisé pour gérer les applications mobiles. Pour plus d’informations sur la gestion des applications mobiles, [consultez cette documentation](/microsoft-365/mem/intune/apps/mam-faq).
 
 - [Microsoft Tunnel l’intégration VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel fonctionnalités VPN est désormais intégrée à l’application Microsoft Defender for Endpoint pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur utilisateur simplifiée avec une application de sécurité, offrant à la fois une protection contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes informatiques et de sécurité peuvent conserver les mêmes expériences d’administration qu’elles connaissent.
 
-- [Détection jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- [Détection jailbreak sur iOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel de configuration basée sur les signaux de risque de l’appareil](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide).
 
 
 ## <a name="march-2021"></a>mars 2021
-- [Gérer la protection contre les falsifications à l’aide Microsoft 365 Defender portail](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client.*
+- [Gérer la protection contre les falsifications à l’aide Microsoft 365 Defender portail](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows Server 2016, Windows Server 2019 et Windows Server 2022 à l’aide d’une méthode appelée attachement de *client*.
 
 
 ## <a name="january-2021"></a>Janvier 2021
