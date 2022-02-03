@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c96f5ee97d74dcecc1282dd5ab031ad742e67738
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 0754886d70759b4869151ad2c915a878a5ca111c
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295388"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355043"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender pour le point de terminaison - Défense contre les menaces mobiles
 
@@ -47,7 +47,7 @@ Microsoft Defender pour le point de terminaison sur Android et iOS fournit les f
 |Web Protection|Anti-hameçonnage, blocage des connexions réseau non sécurisées et prise en charge des indicateurs personnalisés.|
 |Protection contre les programmes malveillants (Android uniquement)|Analyse des applications malveillantes.|
 |Détection de jailbreak (iOS uniquement)|Détection d’appareils jailbreakés.|
-|Gestion des menaces et des vulnérabilités (TVM)|Évaluation de la vulnérabilité des appareils mobiles intégrés. Visitez cette [page pour](next-gen-threat-and-vuln-mgt.md) en savoir plus sur Gestion des menaces et des vulnérabilités microsoft Defender pour le point de terminaison. *Notez que sur iOS, seules les vulnérabilités du système d’exploitation sont actuellement pris en charge*|
+|Gestion des menaces et des vulnérabilités (TVM) |Évaluation de la vulnérabilité des appareils mobiles intégrés. Visitez cette [page pour](next-gen-threat-and-vuln-mgt.md) en savoir plus sur Gestion des menaces et des vulnérabilités microsoft Defender pour le point de terminaison. *Notez que sur iOS, seules les vulnérabilités du système d’exploitation sont pris en charge dans cette prévisualisation.*|
 |Alerte unifiée|Alertes de toutes les plateformes dans la console de sécurité M365 unifiée|
 |Accès conditionnel, lancement conditionnel|Blocage des appareils à risque d’accéder aux ressources d’entreprise. Les signaux de risque defender pour les points de terminaison peuvent également être ajoutés aux stratégies de protection des applications (MAM)|
 |Contrôles de confidentialité. En prévisualisation (voir la remarque ci-dessous)|Configurez la confidentialité dans les rapports sur les menaces en contrôlant les données envoyées par Microsoft Defender pour endpoint. *Notez que les contrôles de confidentialité sont actuellement disponibles uniquement pour les appareils inscrits. Les contrôles pour les appareils non inscrits seront ajoutés ultérieurement*|
@@ -55,8 +55,6 @@ Microsoft Defender pour le point de terminaison sur Android et iOS fournit les f
 
 Toutes ces fonctionnalités sont disponibles pour les titulaires de licences Microsoft Defender pour les points de terminaison. Pour plus d’informations, voir [Conditions requises pour les licences](minimum-requirements.md#licensing-requirements).
 
-> [!NOTE]
-> Les contrôles de confidentialité pour Android et iOS sont actuellement en prévisualisation et peuvent être considérablement modifiés avant sa publication commerciale.
 
 ## <a name="overview-and-deploy"></a>Vue d’ensemble et déploiement
 

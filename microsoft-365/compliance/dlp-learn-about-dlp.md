@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: d8a2af9ff38a4dec7a4708106bc0289c03bb449e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371231"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354971"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
-Les organisations ont sous leur contrôle des informations sensibles telles que des données financières, des données propriétaires, des numéros de carte de crédit, des dossiers de santé ou des numéros de sécurité sociale. Pour protéger ces données sensibles et réduire les risques, ils ont besoin d’un moyen d’empêcher leurs utilisateurs de les partager de manière inappropriée avec des personnes qui ne devraient pas en avoir. Cette pratique est appelée protection contre la perte de données (DLP).
+Les organisations ont sous leur contrôle des informations sensibles telles que des données financières, des données propriétaires, des numéros de carte de crédit, des dossiers de santé ou des numéros de sécurité sociale. Pour protéger ces données sensibles et réduire les risques, ils ont besoin d’un moyen d’empêcher leurs utilisateurs de les partager de manière inappropriée avec des personnes qui ne devraient pas les avoir. Cette pratique est appelée protection contre la perte de données (DLP).
 
 Dans Microsoft 365, vous implémentez la protection contre la perte de données en définissant et en appliquant des stratégies DLP. Avec une stratégie DLP, vous pouvez identifier, surveiller et protéger automatiquement les éléments sensibles dans :
 
@@ -50,7 +50,7 @@ Microsoft 365 stratégies DLP vous permet de surveiller les activités des utili
 - pour les données au repos, les éléments sensibles peuvent être verrouillés et déplacés vers un emplacement de mise en quarantaine sécurisé
 - pour Teams conversation instantanée, les informations sensibles ne seront pas affichées
 
-Toutes les activités surveillées par DLP sont enregistrées dans le journal [Microsoft 365 audit](search-the-audit-log-in-security-and-compliance.md) par défaut et acheminées vers [l’Explorateur d’activités.](data-classification-activity-explorer.md) Lorsqu’un utilisateur effectue une action qui répond aux critères d’une stratégie DLP et que des alertes sont configurées, DLP fournit des alertes dans le tableau de bord de gestion des alertes [DLP.](dlp-configure-view-alerts-policies.md)
+Toutes les activités surveillées par DLP sont enregistrées dans le journal [Microsoft 365 audit](search-the-audit-log-in-security-and-compliance.md) par défaut et acheminées vers [l’Explorateur d’activités](data-classification-activity-explorer.md). Lorsqu’un utilisateur effectue une action qui répond aux critères d’une stratégie DLP et que des alertes sont configurées, DLP fournit des alertes dans le tableau de bord de gestion des alertes [DLP](dlp-configure-view-alerts-policies.md).
 
 ## <a name="dlp-lifecycle"></a>Cycle de vie DLP
 
@@ -73,7 +73,7 @@ N’oubliez pas que la DLP en tant que technologie peut surveiller et protéger 
 
 **Planification des processus métiers pour la DLP**
 
-Les stratégies DLP peuvent bloquer les activités interdites, telles que le partage inapproprié d’informations sensibles par courrier électronique. Lorsque vous planifiez vos stratégies DLP, vous devez identifier les processus métiers qui touchent vos éléments sensibles. Les propriétaires de processus d’entreprise peuvent vous aider à identifier les comportements utilisateur appropriés qui doivent être autorisés et les comportements inappropriés des utilisateurs qui doivent être protégés contre. Vous devez d’abord planifier vos stratégies et [](data-classification-activity-explorer.md) les déployer en mode test, puis évaluer leur impact via l’Explorateur d’activités avant de les appliquer dans des modes plus restrictifs.
+Les stratégies DLP peuvent bloquer les activités interdites, telles que le partage inapproprié d’informations sensibles par courrier électronique. Lorsque vous planifiez vos stratégies DLP, vous devez identifier les processus métiers qui touchent vos éléments sensibles. Les propriétaires de processus d’entreprise peuvent vous aider à identifier les comportements utilisateur appropriés qui doivent être autorisés et les comportements inappropriés des utilisateurs qui doivent être protégés contre. Vous devez d’abord planifier vos stratégies et les déployer en mode test, puis [](data-classification-activity-explorer.md) évaluer leur impact via l’Explorateur d’activités avant de les appliquer dans des modes plus restrictifs.
 
 **Planification de la culture organisationnelle pour la DLP**
 
@@ -92,6 +92,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Microsoft Cloud App Security
 - Windows 10, Windows 11 macOS et macOS (État 10.15 et supérieur)
 - Référentiels locaux
+- Sites PowerBI
 
 Chacune d’elles a des conditions préalables différentes. Les éléments sensibles dans certains emplacements, tels que Exchange en ligne, peuvent être placés sous le cadre de la DLP en configurant simplement une stratégie qui s’applique à eux. D’autres, telles que les référentiels de fichiers locaux, nécessitent un déploiement du scanneur Azure Information Protection (AIP). Vous devez préparer votre environnement, les stratégies de brouillon de code et les tester minutieusement avant d’activer les actions de blocage.
 
@@ -180,11 +181,11 @@ Une fois la stratégie synchronisée avec les emplacements adéquats, elle comme
 
 ## <a name="viewing-policy-application-results"></a>Affichage des résultats de l’application de stratégie
 
-DLP signale une grande quantité d’informations dans les Microsoft 365 de surveillance, les correspondances et actions de stratégie, ainsi que les activités des utilisateurs. Vous devez utiliser ces informations et agir sur ces informations pour régler vos stratégies et les actions de tri prises sur les éléments sensibles. La télémétrie est d’abord Microsoft 365 [journaux d’audit](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) du Centre de conformité, est traitée et permet d’utiliser différents outils de création de rapports. Chaque outil de rapports a un objectif différent.
+DLP signale une grande quantité d’informations dans les Microsoft 365 de surveillance, les correspondances et actions de stratégie, ainsi que les activités des utilisateurs. Vous devez utiliser ces informations et agir sur ces informations pour régler vos stratégies et les actions de tri prises sur les éléments sensibles. La télémétrie est d’abord Microsoft 365 [journaux d’audit](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) du centre de conformité, est traitée et permet d’utiliser différents outils de création de rapports. Chaque outil de rapports a un objectif différent.
 
 ### <a name="dlp-alerts-dashboard"></a>Tableau de bord des alertes DLP
 
-Lorsque DLP effectue une action sur un élément sensible, vous pouvez être averti de cette action via une alerte configurable. Au lieu d’empiler ces alertes dans une boîte aux lettres pour que vous les parliez, le centre de conformité les rend disponibles dans le tableau de bord de gestion des [alertes DLP.](dlp-configure-view-alerts-policies.md) Utilisez le tableau de bord alertes DLP pour configurer les alertes, les examiner, les trier et suivre la résolution des alertes DLP. Voici un exemple d’alertes générées par les correspondances de stratégie et les activités de Windows 10 appareils.
+Lorsque DLP effectue une action sur un élément sensible, vous pouvez être averti de cette action via une alerte configurable. Au lieu d’empiler ces alertes dans une boîte aux lettres pour que vous les parliez, le centre de conformité les rend disponibles dans le Tableau de bord de gestion des [alertes DLP](dlp-configure-view-alerts-policies.md). Utilisez le tableau de bord alertes DLP pour configurer les alertes, les examiner, les trier et suivre la résolution des alertes DLP. Voici un exemple d’alertes générées par les correspondances de stratégie et les activités de Windows 10 appareils.
 
 > [!div class="mx-imgBorder"]
 > ![Information d’alerte.](../media/Alert-info-1.png)
@@ -200,11 +201,11 @@ Les rapports [DLP montrent](view-the-dlp-reports.md#view-the-reports-for-data-lo
 
 - **Correspondances de stratégies DLP** au fil du temps et filtrage par plage de dates, emplacement, stratégie ou action
 - **Les correspondances d’incident DLP** montrent également les correspondances au fil du temps, mais s’pivotent sur les éléments plutôt que sur les règles de stratégie.
-- **Les remplacements** et faux positifs DLP indiquent le nombre de faux positifs et, s’ils sont configurés, les remplacements par l’utilisateur, ainsi que la justification de l’utilisateur.
+- **Les remplacements et faux positifs DLP** indiquent le nombre de faux positifs et, s’ils sont configurés, les remplacements par l’utilisateur, ainsi que la justification de l’utilisateur.
 
 ### <a name="dlp-activity-explorer"></a>Explorateur d’activités DLP
 
-L’onglet Explorateur d’activités de  la page DLP a le filtre Activité prédéfinie *sur DLPRuleMatch*. Utilisez cet outil pour passer en revue l’activité liée au contenu qui contient des informations sensibles ou qui comporte des étiquettes appliquées, telles que les étiquettes qui ont été modifiées, les fichiers modifiés et une règle.
+L’onglet Explorateur d’activités de la page DLP possède le filtre Activité prédéfinie *sur DLPRuleMatch*. Utilisez cet outil pour passer en revue l’activité liée au contenu qui contient des informations sensibles ou qui comporte des étiquettes appliquées, telles que les étiquettes qui ont été modifiées, les fichiers modifiés et une règle.
 
 ![Capture d’écran de l’explorateur d’activités d’étendue DLPRuleMatch.](../media/dlp-activity-explorer.png)
 
@@ -218,7 +219,7 @@ Pour en savoir plus sur Microsoft 365 DLP, voir :
 - [En savoir plus sur l’extension de la conformité Microsoft (préversion).](dlp-chrome-learn-about.md)
 - [En savoir plus sur le tableau de bord des alertes de protection contre la perte de données](dlp-alerts-dashboard-learn.md)
 
-Pour découvrir comment utiliser la protection contre la perte de données pour se conformer aux réglementations en matière de confidentialité des données, voir [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Pour savoir comment utiliser la protection contre la perte de données pour se conformer aux réglementations en matière de confidentialité des données, voir [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>Licences et abonnements
 

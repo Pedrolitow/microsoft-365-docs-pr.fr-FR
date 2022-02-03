@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 22e0eed3becebdcb3dee4c31ddc7659651bac71f
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295385"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354611"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour le point de terminaison sur les fonctionnalités Android
 
@@ -60,13 +60,16 @@ Les contrôles de confidentialité suivants sont disponibles pour configurer les
 
 |Rapport sur les menaces     |Détails      |
 |--------------------|-------------|
-|Rapport sur les programmes malveillants |Les administrateurs peuvent configurer le contrôle de confidentialité pour le rapport sur les programmes malveillants : si la confidentialité est activée, Defender pour le point de terminaison n’enverra pas le nom de l’application anti-programme malveillant et d’autres détails de l’application dans le cadre du rapport d’alerte anti-programme malveillant |
+|Rapport sur les programmes malveillants |Les administrateurs peuvent configurer le contrôle de confidentialité pour le rapport sur les programmes malveillants : si la confidentialité est activée, Defender pour le point de terminaison n’enverra pas le nom de l’application anti-programme malveillant ni les autres détails de l’application dans le cadre du rapport d’alerte anti-programme malveillant |
 |Rapport d’hameçonnage |Les administrateurs peuvent configurer le contrôle de confidentialité pour le rapport d’hameçonnage : si la confidentialité est activée, Defender pour le point de terminaison n’enverra pas le nom de domaine et les détails du site web non sécurisé dans le cadre du rapport d’alerte de hameçonnage |
 |Évaluation des vulnérabilités des applications (Android uniquement) |Par défaut, seules les informations sur les applications installées dans le profil de travail sont envoyées pour l’évaluation des vulnérabilités. Les administrateurs peuvent désactiver la confidentialité pour inclure des applications personnelles|
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configurer l’évaluation des vulnérabilités des applications pour les appareils BYOD
 
 À partir de la version 1.0.3425.0303 de Microsoft Defender pour Endpoint sur Android, vous pourrez exécuter des évaluations des vulnérabilités du système d’exploitation et des applications installées sur les appareils mobiles intégrés.
+
+> [!NOTE]
+> L’évaluation des vulnérabilités fait partie de [la gestion](next-gen-threat-and-vuln-mgt.md) des menaces et des vulnérabilités dans Microsoft Defender pour point de terminaison. 
 
 **Remarques sur la confidentialité liée aux applications à partir d’appareils personnels (BYOD) :**
 
@@ -188,7 +191,7 @@ Pour activer la confidentialité des utilisateurs ciblés dans le profil de trav
 
 L’utilisation de ce contrôle de confidentialité n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel. Par exemple, les appareils avec une application malveillante auront toujours un niveau de risque « Moyen ».
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

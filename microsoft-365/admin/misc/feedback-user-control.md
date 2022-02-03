@@ -18,28 +18,25 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 46acfef3af37ae98e2f9d014ffc48a168665219a
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7ed3d43ca66635040ab16880644f943e19fda899
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559987"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354635"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>En savoir plus sur les commentaires de Microsoft pour votre organisation
 
 Les commentaires des utilisateurs sont un signal critique pour que Microsoft comprenne les expériences utilisateur avec les produits Microsoft. Microsoft estime les opinions de nos utilisateurs. Les commentaires des utilisateurs sont directement pris en compte par nos ingénieurs et nous aident à orienter l’avenir des produits et services Microsoft pour tous nos utilisateurs.  
-Dans cette rubrique, vous trouverez des informations sur les types de commentaires existants, la façon dont nous les collectons, ce que nous collectons et la façon dont nous gérées les données.
+Dans cette rubrique, vous trouverez des informations sur les types de commentaires existants, la façon dont nous les collectons, ce que nous collectons et la façon dont nous  gérées les données.
 
-En tant qu’administrateur, vous pouvez gérer le signal de commentaires pour votre organisation. Nous introduisons un nouvel ensemble de paramètres de stratégie pour vous aider à gérer la collecte des commentaires des utilisateurs dans les applications Microsoft 365 pour votre organisation. Ces paramètres de stratégie vous aideront à cibler des groupes Azure Active Directory et à configurer l’expérience de collecte de commentaires pour votre organisation. Les commentaires des utilisateurs sont directement pris en compte par nos ingénieurs et nous aident à orienter l’avenir des produits et services Microsoft pour tous nos utilisateurs. Vous pouvez en savoir plus sur ces paramètres de stratégie, sur les applications à laquelle ils s’appliquent et sur les meilleures pratiques dans Gérer les commentaires [de Microsoft pour votre organisation.](../manage/manage-feedback-ms-org.md)
-
-> [!IMPORTANT]
-> Nous vous recommandons de confirmer que les commentaires sont envoyés à partir d’une source de confiance. Assurez-vous que les noms d’utilisateur ou les ID d’utilisateur correspondent aux utilisateurs réels de votre organisation.
+En tant qu’administrateur, vous pouvez gérer le signal de commentaires pour votre organisation. Nous introduisons un nouvel ensemble de paramètres de stratégie pour vous aider à gérer la collecte des commentaires des utilisateurs dans les applications Microsoft 365 pour votre organisation. Ces paramètres de stratégie vous aideront à cibler des groupes Azure Active Directory et à configurer l’expérience de collecte de commentaires pour votre organisation. Les commentaires des utilisateurs sont directement pris en compte par nos ingénieurs et nous aident à orienter l’avenir des produits et services Microsoft pour tous nos utilisateurs. Vous pouvez en savoir plus sur ces paramètres de stratégie, les applications à laquelle ils s’appliquent et les meilleures pratiques dans Gérer les commentaires [microsoft pour votre organisation](../manage/manage-feedback-ms-org.md).
 
 ## <a name="feedback-types"></a>Types de commentaires
 
 ### <a name="in-product-feedback"></a>Commentaires sur le produit
 
-Si vos utilisateurs utilisent l’une des applications de Microsoft et souhaitent fournir des commentaires, il existe différentes façons de le faire à partir des applications qu’ils utilisent. Les utilisateurs peuvent utiliser ces différentes méthodes pour partager des commentaires sur les produits et les fonctionnalités avec nous. L’une des façons les plus courantes de partager des commentaires via les applications Microsoft est sous le menu d’aide. La sélection **des**  >  **commentaires d’aide** de la plupart des applications Microsoft lance une page de commentaires, qui permet aux utilisateurs de soumettre des commentaires à Microsoft.
+Si vos utilisateurs utilisent l’une des applications de Microsoft et souhaitent fournir des commentaires, il existe différentes façons de le faire à partir des applications qu’ils utilisent. Les utilisateurs peuvent utiliser ces différentes méthodes pour partager des commentaires sur les produits et les fonctionnalités avec nous. L’une des façons les plus courantes de partager des commentaires via les applications Microsoft est sous le menu d’aide. La sélection **de** **HelpFeedback** >  dans la plupart des applications Microsoft lance une page de commentaires, qui permet aux utilisateurs de soumettre des commentaires à Microsoft.
 
 #### <a name="in-product-feedback-examples"></a>Exemples de commentaires dans le produit
 
@@ -65,7 +62,7 @@ Les utilisateurs peuvent tirer parti du nouveau portail [de commentaires Microso
 
 Des commentaires détaillés et actionnables sont essentiels pour apporter des modifications et des améliorations aux produits Microsoft. Si vos utilisateurs ont des problèmes ou des suggestions sur la façon dont nous pouvons les améliorer, nous voulons les entendre. Voici quelques conseils et exemples sur les commentaires actionnables envoyés à Microsoft.
 
-- **Titre concis et descriptif**   Les titres descriptifs et spécifiques nous aident à comprendre le problème signalé. Exemple : Excel liste  des fichiers récents n’inclut pas les fichiers OneDrive récemment ajoutés.
+- **Titre concis et descriptif**   Les titres descriptifs et spécifiques nous aident à comprendre le problème signalé. Exemple : Excel liste des **fichiers récents** n’inclut pas les fichiers OneDrive récemment ajoutés.
 - **Se concentrer sur un problème à la fois**   Fournissez des commentaires pour un problème ou une recommandation, élément par élément à la fois. Cela garantit que les journaux et données corrects sont reçus à chaque envoi et peuvent être affectés pour le suivi. Si vous avez plusieurs problèmes, envoyez une nouvelle demande de commentaires pour chaque problème. Cela nous permet d’identifier le volume de commentaires que nous recevons sur un problème particulier.
 - **Écrire des détails dans la zone Description**   Les informations sur votre appareil, votre système d’exploitation et vos applications sont automatiquement incluses dans chaque commentaire signalé. Ajoutez des informations supplémentaires sur un problème que vous pensez important. Par exemple, incluez des étapes détaillées pour reproduire le problème.
 
@@ -101,4 +98,4 @@ Pour répondre aux obligations légales de Microsoft envers les clients, nous tr
 
 Nous savons que lorsque vous utilisez nos services cloud, vous nous faites confiance avec l’un de vos biens les plus précieux : vos données. Nous nous assurerons que les commentaires que nous recevons sont stockés et gérés dans le cadre des règles de gouvernance Microsoft et qu’ils sont accessibles uniquement pour les utilisations approuvées. Nous n’utilisons pas votre courrier électronique, votre conversation, vos fichiers ou tout autre contenu personnel pour vous cibler des publicités. Lorsque nous collectons des données, nous les utilisons pour améliorer vos expériences.
 
-Pour en savoir plus sur la façon dont nous protégeons la confidentialité et la confidentialité de vos données, et sur la façon dont nous nous assurons qu’elles seront utilisées uniquement d’une manière cohérente avec vos attentes, examinez nos principes de confidentialité dans le Centre de gestion de la confidentialité [Microsoft.](https://www.microsoft.com/trust-center/privacy)
+Pour en savoir plus sur la façon dont nous protégeons la confidentialité de vos données et sur la façon dont nous nous assurons qu’elles ne seront utilisées que conformément à vos attentes, examinez nos principes de confidentialité dans le Centre de gestion de la confidentialité [Microsoft](https://www.microsoft.com/trust-center/privacy).

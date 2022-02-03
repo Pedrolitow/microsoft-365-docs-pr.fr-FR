@@ -12,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/18/2021
-ms.reviewer: ''
+ms.date: 02/03/2022
+ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 29ac4f34bbb89d860ec5110af1f8f62fe5799ffa
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c286195761a07f1a0b5b1f2524b77568f549dc3b
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218081"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354587"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -30,94 +30,89 @@ ms.locfileid: "61218081"
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Pour garantir Antivirus Microsoft Defender protection assurée par le cloud fonctionne correctement, votre équipe de sécurité doit configurer votre réseau pour autoriser les connexions entre vos points de terminaison et certains serveurs Microsoft. Cet article répertorie les connexions qui doivent être autorisées, par exemple à l’aide de règles de pare-feu, et fournit des instructions pour valider votre connexion. La configuration appropriée de votre protection vous permet de bénéficier de la meilleure valeur de vos services de protection cloud.
+Pour garantir Antivirus Microsoft Defender protection assurée par le cloud fonctionne correctement, votre équipe de sécurité doit configurer votre réseau pour autoriser les connexions entre vos points de terminaison et certains serveurs Microsoft. Cet article répertorie les connexions qui doivent être autorisées pour l’utilisation des règles de pare-feu. Il fournit également des instructions pour valider votre connexion. En configurant correctement votre protection, vous bénéficiez de la meilleure valeur de vos services de protection cloud.
 
-Consultez le billet de blog Concernant les modifications importantes apportées au point de terminaison [Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) pour plus d’informations sur la connectivité réseau.
+> [!IMPORTANT]
+> Cet article contient des informations sur la configuration des connexions réseau uniquement pour Antivirus Microsoft Defender. Si vous utilisez Microsoft Defender pour endpoint (qui inclut Antivirus Microsoft Defender), voir Configurer les paramètres de proxy d’appareil et de connectivité [Internet pour Defender pour Endpoint](configure-proxy-internet.md).
 
-> [!TIP]
-> Visitez le site web de démonstration microsoft Defender pour points de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités suivantes fonctionnent :
->
-> - Protection fournie par le cloud
-> - Apprentissage rapide (y compris bloquer à la première vue)
-> - Blocage d’applications potentiellement indésirables
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Autoriser les connexions au service Antivirus Microsoft Defender cloud
 
-Le Antivirus Microsoft Defender cloud fournit une protection rapide et forte pour vos points de terminaison. L’activation du service de protection cloud est facultative, mais elle est vivement recommandée, car elle offre une protection importante contre les programmes malveillants sur vos points de terminaison et sur votre réseau. Pour plus d’informations sur l’activation du service avec Intune, Microsoft Endpoint Configuration Manager, la stratégie de groupe, les cmdlets PowerShell ou sur des clients individuels dans l’application Sécurité Windows, voir Activer la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud.
+Le Antivirus Microsoft Defender cloud fournit une protection rapide et forte pour vos points de terminaison. Il est facultatif d’activer le service de protection cloud. Antivirus Microsoft Defender service cloud est recommandé, car il offre une protection importante contre les programmes malveillants sur vos points de terminaison et votre réseau. Pour plus d’informations, voir Activer la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud pour activer le service avec Intune, Microsoft Endpoint Configuration Manager, la stratégie de groupe, les cmdlets PowerShell ou des clients individuels dans l’application Sécurité Windows.
 
-Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions entre celui-ci et vos points de terminaison. Étant donné que votre protection est un service cloud, les ordinateurs doivent avoir accès à Internet et accéder à Microsoft Defender pour Office 365 services d’apprentissage automatique. N’excluez pas l’URL `*.blob.core.windows.net` d’un type d’inspection réseau.
+Après avoir activé le service, vous devez configurer votre réseau ou votre pare-feu pour autoriser les connexions entre le réseau et vos points de terminaison. Étant donné que votre protection est un service cloud, les ordinateurs doivent avoir accès à Internet et accéder aux services cloud de Microsoft. N’excluez pas l’URL `*.blob.core.windows.net` d’un type d’inspection réseau.
 
 > [!NOTE]
-> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
+> Le Antivirus Microsoft Defender cloud fournit une protection mise à jour à votre réseau et points de terminaison. Le service cloud ne doit pas être considéré comme une protection uniquement pour vos fichiers stockés dans le cloud . Au lieu de cela, le service cloud utilise des ressources distribuées et l’apprentissage automatique pour fournir la protection de vos points de terminaison à un taux plus rapide que les mises à jour d’intelligence de sécurité traditionnelles.
 
 ## <a name="services-and-urls"></a>Services et URL
 
 Le tableau de cette section répertorie les services et leurs adresses web associées (URL).
 
-Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuse l’accès à ces URL. Dans le cas contraire, vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux (à l’exclusion de `*.blob.core.windows.net` l’URL). Les URL du tableau suivant utilisent le port 443 pour la communication.
+Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuse l’accès à ces URL. Dans le cas contraire, vous devez créer une règle d’autoriser spécifiquement pour ces URL (à l’exclusion de l’URL `*.blob.core.windows.net`). Les URL du tableau suivant utilisent le port 443 pour la communication.
 
 <br/><br/>
 
 |Service et description|URL|
 |---|---|
-|Antivirus Microsoft Defender service de protection cloud, également appelé Microsoft Active Protection Service (MAPS)<p>Ce service est utilisé par les Antivirus Microsoft Defender pour fournir une protection fournie par le cloud|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-|Microsoft Update Service (MU) et Windows Update Service (WU) <p>Ces services permettent d’obtenir des informations sur la sécurité et des mises à jour de produit|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Pour plus d’informations, voir [Points de terminaison de](/windows/privacy/manage-windows-1709-endpoints#windows-update) connexion pour Windows update|
-|Security intelligence updates Alternate Download Location (ADL)<p>Il s’agit d’un autre emplacement pour Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité si l’intelligence de sécurité installée est hors service (au moins 7 jours après)|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
-|Stockage de soumission de programmes malveillants <p>Il s’agit de l’emplacement de téléchargement des fichiers envoyés à Microsoft via le formulaire de soumission ou l’envoi automatique d’exemples|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
-|Liste de révocation de certificats (CRL) <p>Cette liste est utilisée par les Windows lors de la création de la connexion SSL à MAPS pour la mise à jour de la liste de niveau de liste de remise|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
-|Magasin de symboles <p>Le magasin de symboles est utilisé par les Antivirus Microsoft Defender pour restaurer certains fichiers critiques pendant les flux de correction|`https://msdl.microsoft.com/download/symbols`|
-|Client de télémétrie universel <p> Ce client est utilisé par les Windows pour envoyer des données de diagnostic client <p> Antivirus Microsoft Defender télémétrie à des fins de surveillance de la qualité des produits|La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et charger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|Antivirus Microsoft Defender service de protection cloud est appelé Microsoft Active Protection Service (MAPS).<p> Le Antivirus Microsoft Defender utilise le service MAPS pour fournir une protection fournie par le cloud.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|Microsoft Update Service (MU) et Windows Update Service (WU) <p>Ces services permettent d’assurer la veille sur la sécurité et les mises à jour des produits.|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Pour plus d’informations, voir [Points de terminaison de connexion pour Windows update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Security intelligence updates Alternate Download Location (ADL)<p>Il s’agit d’un autre emplacement pour Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité, si l’intelligence de sécurité installée est hors service (au moins sept jours après).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Stockage de soumission de programmes malveillants <p>Il s’agit d’un emplacement de téléchargement pour les fichiers envoyés à Microsoft via le formulaire de soumission ou l’envoi automatique d’exemples.|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
+|Liste de révocation de certificats (CRL) <p> Windows cette liste lors de la création de la connexion SSL à MAPS pour la mise à jour de la liste de liste de niveau de service.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
+|Magasin de symboles <p>Antivirus Microsoft Defender utiliser le magasin de symboles pour restaurer certains fichiers critiques pendant les flux de correction.|`https://msdl.microsoft.com/download/symbols`|
+|Client R GDPR universel <p> Windows ce client pour envoyer les données de diagnostic client. <p> Antivirus Microsoft Defender utilise le Règlement général sur la protection des données à des fins de qualité et de surveillance des produits.|La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et charger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Valider les connexions entre votre réseau et le cloud
 
-Après avoir permis les URL répertoriées ci-dessus, vous pouvez tester si vous êtes connecté au service cloud Antivirus Microsoft Defender et que vous signalez et recevez correctement des informations pour vous assurer que vous êtes entièrement protégé.
+Après avoir permis aux URL répertoriées, testez si vous êtes connecté au service Antivirus Microsoft Defender cloud. Testez que les URL sont correctement des rapports et la réception d’informations pour vous assurer que vous êtes entièrement protégé.
 
 ### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>Utiliser l’outil cmdline pour valider la protection cloud
 
-Utilisez l’argument suivant avec l Antivirus Microsoft Defender de ligne de commande ( ) pour vérifier que votre réseau peut communiquer avec Antivirus Microsoft Defender `mpcmdrun.exe` service cloud :
+Utilisez l’argument suivant avec l Antivirus Microsoft Defender de ligne de commande (`mpcmdrun.exe`) pour vérifier que votre réseau peut communiquer avec Antivirus Microsoft Defender service cloud :
 
 ```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
 > [!NOTE]
-> Vous devez ouvrir une version de niveau administrateur de l’invite de commandes. Cliquez avec le bouton droit sur l’élément menu Démarrer, cliquez sur Exécuter **en** tant qu’administrateur et cliquez sur **Oui** à l’invite d’autorisations. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure, ou sur Windows 11.
+> Ouvrez l’invite de commandes en tant qu’administrateur. Cliquez avec le bouton droit sur l’élément dans le menu **Démarrer** , cliquez sur Exécuter **en** tant qu’administrateur et cliquez sur **Oui** à l’invite d’autorisations. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure, ou sur Windows 11.
 
-Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender avec l’outil mpcmdrun.exe ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
+Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender’aide de lmpcmdrun.exe de ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentative de téléchargement d’un fichier de programmes malveillants factices à partir de Microsoft
 
-Vous pouvez télécharger un exemple de fichier Antivirus Microsoft Defender détecter et bloquer si vous êtes correctement connecté au cloud.
-
-Téléchargez le fichier en visitant [https://aka.ms/ioavtest](https://aka.ms/ioavtest) .
+Vous pouvez télécharger un exemple de fichier Antivirus Microsoft Defender détecter et bloquer si vous êtes correctement connecté au cloud. Visitez [https://aka.ms/ioavtest](https://aka.ms/ioavtest) le site pour télécharger le fichier.
 
 > [!NOTE]
-> Ce fichier n’est pas un programme malveillant réel. Il s’agit d’un fichier factice conçu pour tester si vous êtes correctement connecté au cloud.
+> Le fichier téléchargé n’est pas exactement un programme malveillant. Il s’agit d’un fichier factice conçu pour tester si vous êtes correctement connecté au cloud.
 
 Si vous êtes correctement connecté, un avertissement s’Antivirus Microsoft Defender notification.
 
 Si vous utilisez Microsoft Edge, vous verrez également un message de notification :
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Capture d’écran de la notification de détection de programmes malveillants dans Edge.":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Capture d’écran de la notification de détection de programmes malveillants Azure IoT Edge.":::
 
 Un message similaire se produit si vous utilisez Internet Explorer :
 
 :::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification De Microsoft Defender AV que des programmes malveillants ont été détectés.":::
 
-Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’application Sécurité Windows :
+#### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Afficher la détection de programmes malveillants factices dans Sécurité Windows application
 
-1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant sécurité dans le menu **Démarrer.**
+1. Dans la barre des tâches, sélectionnez l’icône Bouclier, ouvrez **l’Sécurité Windows** app. Sinon, recherchez **l’exemple Démarrer** pour *la sécurité*.
 
-2. Sélectionnez **Virus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
+2. **Sélectionnez Virus & protection contre les** menaces, puis sélectionnez **Historique de la protection**.
 
-3. Sous la section **Menaces en quarantaine,** **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
+3. Sous la section **Menaces en quarantaine** , **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 
    > [!NOTE]
-   > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows.](microsoft-defender-security-center-antivirus.md)
+   > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows’application.](microsoft-defender-security-center-antivirus.md)
 
    Le Windows journal des événements affiche également [Windows Defender’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md)
+- [Configurer les paramètres de proxy d’appareil et de connectivité Internet pour Microsoft Defender pour le point de terminaison](configure-proxy-internet.md)
 - [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+- [Modifications importantes apportées au point de terminaison Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 

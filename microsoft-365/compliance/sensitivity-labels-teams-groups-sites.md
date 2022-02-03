@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 1b7e83e2d296b7b8b65c10d12a0dd73f25c63f4c
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: d7d5ae1dfea2179c698922c4ddb045de0cd20ce5
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993454"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354959"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -374,6 +374,7 @@ Les applications et services suivants prennent en charge les étiquettes de conf
 - Centres d’administrations :
 
   - Centre d’administration SharePoint
+  - Centre d’administration Microsoft Teams
   - Portail Azure Active Directory
   - Centre d’administration Microsoft 365
   - Centre de conformité Microsoft 365
@@ -391,7 +392,6 @@ Les applications et services suivants ne prennent actuellement pas en charge les
 
 - Centres d’administrations :
 
-  - Centre d’administration Microsoft Teams
   - Centre d’administration Exchange
 
 - Utiliser les applications et services :
@@ -399,7 +399,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Dynamics 365
   - Yammer
   - Project
-  - Power BI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 

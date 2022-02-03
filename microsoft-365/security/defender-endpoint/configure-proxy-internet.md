@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db6d7f17231fd8c2355f36310609af1e8d88160c
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345986"
+ms.locfileid: "62354983"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -61,7 +61,7 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
-Configurez un proxy statique basé sur le Registre pour le capteur Defender for Endpoint Detection and Response (PEPT) pour signaler les données de diagnostic. Communiquez également avec Defender pour les services Endpoint, si un ordinateur n’est pas autorisé à se connecter à Internet.
+Configurez un proxy statique basé sur le Registre pour le capteur defender de détection et de réponse de point de terminaison (PEPT) pour signaler les données de diagnostic et communiquer avec Defender pour les services de point de terminaison si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
 > Lorsque vous utilisez cette option sur Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir les mises à jour cumulatives et de build suivantes (ou ultérieures) :
@@ -283,7 +283,7 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 >
 > Lorsque telemetryProxyServer est défini dans le Registre ou via une stratégie de groupe, Defender pour le point de terminaison échoue à accéder au proxy défini.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-articles"></a>Articles connexes
 
 - [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)

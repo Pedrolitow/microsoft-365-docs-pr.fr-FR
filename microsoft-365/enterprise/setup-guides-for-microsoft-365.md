@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 91b89eeaec3a9d0db5f191cbd10c797a633c633b
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326698"
+ms.locfileid: "62354599"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -93,7 +93,7 @@ Le [guide Recherche Microsoft configuration](https://aka.ms/MicrosoftSearchSetup
 
 ## <a name="guides-for-authentication-and-access"></a>Guides d’authentification et d’accès
 
-### <a name="configure-multifactor-authentication-mfa"></a>Configurer l’authentification multifacteur (MFA)
+### <a name="configure-multi-factor-authentication-mfa"></a>Configurer l’authentification multifacteur (MFA)
 
 Le [guide Configurer l’authentification multifacteur (MFA)](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) fournit des informations pour protéger votre organisation contre les violations dues aux informations d’identification perdues ou volées. L’ation multi-facteur augmente immédiatement la sécurité du compte en insécurant plusieurs formulaires de vérification pour prouver l’identité d’un utilisateur lorsqu’il se connecte à une application ou à une autre ressource d’entreprise. Cette invite peut être d’entrer un code sur l’appareil mobile de l’utilisateur ou de fournir une analyse des empreintes digitales. L’mf est activée par le biais de l’accès conditionnel, des paramètres de sécurité par défaut ou de l’fa MFA par utilisateur. Ce guide fournit l’option MFA recommandée pour votre organisation, en fonction de vos licences et de la configuration existante.
 

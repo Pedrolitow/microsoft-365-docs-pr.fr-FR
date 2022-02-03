@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour publier des étiquettes de rétention afin de pouvoir ensuite les appliquer dans les applications pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas.
-ms.openlocfilehash: 229d70816bff753ebacf7857cbcb773a7e958609
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242010"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354683"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publier des étiquettes de rétention et les appliquer dans des applications
 
@@ -94,7 +94,7 @@ Si les étiquettes n’apparaissent pas après sept jours, consultez l’**État
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ``` PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -277,8 +277,10 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Next steps
 
-Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
+To help you track the labels applied from your published retention labeling policies:
 
-- [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
-- [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)
+- [Monitoring retention labels](retention.md#monitoring-retention-labels)
+- [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditing retention actions](retention.md#auditing-retention-actions)
+
+Event-based retention is another supported scenario for retention labels. For more information, see [Start retention when an event occurs](event-driven-retention.md).

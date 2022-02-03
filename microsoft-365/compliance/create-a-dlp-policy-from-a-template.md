@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939104"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355024"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
@@ -45,44 +45,44 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
     
 2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
 
-3. Lors de la création du groupe de rôles, utilisez la **section** Choisir des rôles pour ajouter le rôle suivant au groupe de rôles : **DLP Compliance Management**.
+3. Lors de la création du groupe de rôles, utilisez **la section Choisir** des rôles pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
 4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
 
-Utilisez le rôle Gestion de la conformité **DLP** en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
+Utilisez le **rôle Gestion** de la conformité DLP en affichage seul pour créer un groupe de rôles avec des privilèges d’affichage seul pour les stratégies DLP et les rapports DLP.
 
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Ces autorisations sont nécessaires pour créer et appliquer une stratégie DLP et non pour appliquer des stratégies.
 
-### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en prévisualisation
+### <a name="roles-and-role-groups-in-preview"></a>Rôles et groupes de rôles en préversion
 
-Il existe des rôles et des groupes de rôles en prévisualisation que vous pouvez tester pour affiner vos contrôles d’accès.
+Il existe des rôles et des groupes de rôles en préversion que vous pouvez tester pour affiner vos contrôles d’accès.
 
-Voici une liste des rôles Protection des données Microsoft (MIP) en prévisualisation. Pour en savoir plus à ce sujet, voir [Rôles](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) dans le Centre de sécurité & conformité
+Voici une liste des rôles Microsoft Information Protection (MIP) qui sont en préversion. Pour en savoir plus sur ces rôles, consultez [Rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrateur de la protection des informations
-- Analyste de la protection des informations
-- Enquêteur de la protection des informations
-- Lecteur de protection des informations
+- Administrateur Information Protection
+- Analyste Information Protection
+- Enquêteur Information Protection
+- Lecteur Information Protection
 
-Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus sur les groupes de rôles, voir Groupes de [rôles dans le Centre de sécurité & conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir plus, consultez [Groupes de rôles dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protection des informations
-- Administrateurs de la protection des informations
-- Analystes de la protection des informations
-- Enquêteurs de la protection des informations
-- Lecteurs de protection des informations
+- Administrateurs Information Protection
+- Analystes Information Protection
+- Enquêteurs Information Protection
+- Lecteurs Information Protection
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Créer la stratégie DLP à partir d’un modèle
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
-2. Dans le Centre de conformité, \> navigation gauche \> **Solutions** \> **Stratégies** \>  \> de protection contre la perte de données + Créer une stratégie .
+2. Dans le Centre de conformité,  \> navigation gauche  \> Solutions  \> Stratégies de protection contre la perte **de**\> \> données + Créer une stratégie.
 
     ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
-3. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous avez \> besoin.
+3. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous **avez besoin ensuite**\>.
 
 4. Nommez la stratégie \> **Suivant**.
  
@@ -96,20 +96,20 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 6. Cliquez sur \> **Suivant**.
  
-1. <!-->, faites l’une des choses suivantes :
+1. Effectuez l'une des opérations suivantes :
 
-   - Choose **All locations in Office 365** \> **Next**.
+   - Choisissez **tous les emplacements Office 365** \> **suivant**.
    - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, choisissez ceci.
 
-   Pour inclure ou exclure un emplacement entier tel que tous les e-mails  Exchange ou tous les comptes OneDrive, mettez l’état de cet emplacement sur ou hors service.
+   Pour inclure ou exclure un emplacement entier tel que tous les e-mails Exchange ou tous les comptes OneDrive, mettez l’état de cet emplacement sur ou hors service.
 
-   Pour inclure uniquement des sites SharePoint ou des comptes  OneDrive Entreprise spécifiques, sélectionnez État, puis cliquez sur les liens sous Inclure pour choisir des sites ou des comptes spécifiques.  Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
+   Pour inclure uniquement des sites SharePoint ou des comptes OneDrive Entreprise spécifiques, sélectionnez État, puis cliquez  sur les liens sous Inclure pour choisir des sites ou  des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site.
 
-   ![Options pour les emplacements où une stratégie DLP peut être appliquée.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Options pour les emplacements où une stratégie DLP peut être appliquée.](../media/all-locations.png)
 
-   Dans cet exemple, pour protéger les informations sensibles stockées dans  tous les comptes OneDrive Entreprise, désactiver l’état pour  les sites de messagerie **Exchange** et **SharePoint** et laisser l’état pour les comptes **OneDrive**.-->
+   Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive Entreprise, désactiver l’état  pour les sites de messagerie **Exchange** et **de SharePoint** et laisser l’état sur les  comptes **OneDrive.**
 
-7. Choose **Review and customize default settings from the template** \> **Next**.
+7. Choisissez **Révision et personnalisez les paramètres par défaut dans le modèle** \> **Suivant**.
 
 8. Un modèle de stratégie DLP contient des règles prédéfinies avec les conditions et actions qui détectent et agissent sur des types spécifiques d’informations sensibles. Vous pouvez modifier, supprimer ou désactiver l’une des règles existantes ou en ajouter de nouvelles. Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -123,7 +123,7 @@ Voici une liste des groupes de rôles MIP en prévisualisation. Pour en savoir p
 
 10. Cliquez sur **Suivant**.
 
-11. Dans la page **Actions de protection,** si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification,** then choose **Customize the tip and email**.
+11. Dans la page **Actions de protection** , si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification**, then **choose Customize the tip and email**.
 12. Sélectionnez **Suivant**.
 
 

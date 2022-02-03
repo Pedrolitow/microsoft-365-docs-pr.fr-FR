@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4fef837b053f71e2bd725f07204605d3ab0a55a1
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: d8d0a7edb847146cfdc4e421cf7db6faa13cc2f5
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041169"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354671"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -35,7 +35,7 @@ Les stratégies de protection contre la perte de données (DLP) ont de nombreux 
 Les modèles de stratégie DLP sont pré-triés en quatre catégories :
 
 - Ceux qui peuvent détecter et protéger les types **d’informations** financières.
-- Ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales.**
+- Ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales** .
 - Ceux qui peuvent détecter et protéger les types **d’informations de** confidentialité.
 - Modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
@@ -101,7 +101,7 @@ mise à jour : 23/06/2021
 
 Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
 
-|Location  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
+|Emplacement  |Inclure/exclure l’étendue  |État des données  |Conditions préalables supplémentaires |
 |---------|---------|---------|---------|
 |Exchange en ligne |groupe de distribution | data-in-motion| Non |
 |SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
@@ -110,6 +110,7 @@ Une stratégie DLP peut rechercher et protéger des éléments qui contiennent d
 |Microsoft Defender for Cloud Apps   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Mise en place de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour la Protection des informations](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Mise en place du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|PowerBI| espaces de travail | données en cours d’utilisation | Non|
 
 Si vous décidez d’inclure des groupes de distribution particuliers dans Exchange, la stratégie DLP est uniquement étendue aux membres de ceux-ci. De manière identique, l’exclusion d’un groupe de distribution exclut tous ses membres de l’évaluation de la stratégie. Vous pouvez choisir de limiter une stratégie aux membres des listes de distribution, aux groupes de distribution dynamiques et aux groupes de sécurité. Une stratégie DLP ne peut pas contenir plus de 50 inclusions et exclusions de ce genre.
 
@@ -122,9 +123,9 @@ Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive sp
 Les stratégies DLP détectent les éléments sensibles en les faisant correspondre à un type d’informations sensibles (SIT), à une étiquette de confidentialité ou à une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. Lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par rapport à la façon dont il peut être défini par un seul emplacement. 
 
 > [!IMPORTANT]
-> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs de sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint ***sites*** et Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT.
+> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs de sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez ***SharePoint sites et*** Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT.
 
-|Location| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
+|Emplacement| Le contenu peut être défini par SIT| Le contenu peut être défini comme étiquette de sensibilité| Le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
 |Exchange en ligne|Oui| Oui| Non|
 |SharePoint sites en ligne| Oui| Oui| Oui|
@@ -133,9 +134,10 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 |Appareils |Oui | Oui|  Non|
 |Microsoft Defender for Cloud Apps | Oui| Oui| Oui|
 |Référentiels locaux| Oui| Oui| Non|
+|PowerBI|Oui | Oui| Non|
 
 > [!NOTE]
-> DLP prend en charge la détection d’étiquettes de confidentialité sur les e-mails et les réseaux attachemnets Voir, Utiliser les étiquettes de confidentialité comme conditions dans les stratégies [DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP prend en charge la détection d’étiquettes de confidentialité sur les e-mails et les pièces jointes. Voir, Utiliser des étiquettes de confidentialité comme conditions dans les stratégies [DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## <a name="rules"></a>Rules
 
@@ -167,7 +169,7 @@ Pour les charges de travail de service hébergées, telles que Exchange Online, 
   
 ![Règles dans l’ordre de priorité](../media/dlp-rules-in-priority-order.png)
 
-Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles,  la première règle évaluée qui a l’action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle *3* est appliquée car il s’agit de la règle la plus prioritaire et la plus restrictive :
+Lorsque des règles sont appliquées au contenu, elles sont traitées dans l’ordre de priorité. Si le contenu correspond à plusieurs règles, la première règle évaluée qui *a l’action* la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle *3* est appliquée car il s’agit de la règle la plus prioritaire et la plus restrictive :
   
 - Règle 1 : informe seulement les utilisateurs
 - Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur
@@ -186,7 +188,7 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 
 La priorité des règles sur les points de terminaison est également attribuée en fonction de l’ordre dans lequel elle est créée. Cela signifie que la règle créée en premier a la priorité, la règle créée en deuxième a la deuxième priorité, et ainsi de suite. 
 
-Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec des restrictions est celle qui est appliquée au contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est appliquée, car il *s’agit* de la règle de priorité la plus élevée configurée avec une restriction .
+Lorsqu’un fichier sur un point de terminaison correspond à plusieurs stratégies DLP, la première règle activée avec des restrictions est celle qui est appliquée au contenu. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 2 est appliquée car il *s’agit* de la règle de priorité la plus élevée configurée avec une restriction.
   
 - Règle 1 : informe seulement les utilisateurs
 - *Règle 2 : informe les utilisateurs, limite l’accès et permet le remplacement de l’utilisateur*
@@ -199,14 +201,14 @@ Pour les règles qui sont appliquées aux points de terminaison, vous pouvez tir
 
 ### <a name="conditions"></a>Conditions
 
-Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un élément qui ressemble à ceci et qui est utilisé comme ceci *&#8212;* il s’agit d’une correspondance et les autres actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
+Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque vous trouvez un élément qui  ressemble à ceci et qui est utilisé comme *ceci &#8212; il* s’agit d’une correspondance et les autres actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
 
 > [!NOTE]
 > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation. 
 
 #### <a name="content-contains"></a>Le contenu contient
 
- Tous les emplacements de prise **en charge du contenu contiennent** une condition. Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions à l’aide de l’un de ces **opérateurs** (logique OR) ou tous ces **opérateurs** (logiques AND) :
+ Tous les emplacements de prise **en charge du contenu contiennent** une condition. Vous pouvez sélectionner plusieurs instances de chaque type de contenu et affiner les conditions à l’aide de l’un de **ces opérateurs** (logique OR) ou tous **ces opérateurs** (logiques AND) :
 
 - [types d’informations sensibles](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [étiquettes de sensibilité](sensitivity-labels.md)
@@ -216,16 +218,16 @@ en fonction [du ou des emplacements que](#location-support-for-how-content-can-b
 
 La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
 
-Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) 
+Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
 
 > [!IMPORTANT]
-> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, voir [Nombre d’instances pris en charge pour SIT.](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)
+> Les sits ont deux façons différentes de définir les paramètres de nombre d’instances uniques max. Pour plus d’informations, consultez [Valeurs prises en charge par le nombre d’instances pour SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexte de condition
 
 Les options de contexte disponibles changent en fonction de l’emplacement que vous choisissez. Si vous sélectionnez plusieurs emplacements, seules les conditions communes aux emplacements sont disponibles.
 
-##### <a name="conditions-exchange-supports"></a>Conditions Exchange prend en charge :
+##### <a name="conditions-exchange-supports"></a>Conditions Exchange prend en charge
 
 - Le contenu contient
 - Le contenu est partagé à partir Microsoft 365
@@ -281,7 +283,7 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - L’extension de fichier est
 - La propriété du document est
 
-##### <a name="conditions-teams-chat-and-channel-messages-support"></a>Conditions de Teams prise en charge des messages de conversation et de canal
+##### <a name="conditions-teams-chat-and-channel-messages-supports"></a>Conditions Teams les messages de conversation et de canal
 
 - Le contenu contient
 - Le contenu est partagé à partir Microsoft 365
@@ -295,16 +297,20 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 - Le contenu contient
 - Consultez les [activités de point de terminaison que vous pouvez surveiller et sur](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-support"></a>Conditions de prise en charge de Microsoft Defender pour les applications cloud
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Conditions que Microsoft Defender pour les applications cloud prend en charge
 
 - Le contenu contient
 - Le contenu est partagé à partir Microsoft 365
 
-##### <a name="on-premises-repositories"></a>Référentiels locaux
+##### <a name="conditions-on-premises-repositories-supports"></a>Conditions des référentiels locaux
 
 - Le contenu contient
 - L’extension de fichier est
 - La propriété du document est
+
+##### <a name="conditions-powerbi-supports"></a>Conditions que PowerBI prend en charge
+
+- Le contenu contient
 
 #### <a name="condition-groups"></a>Groupes de conditions
 
@@ -328,7 +334,7 @@ Le premier groupe contient les sits qui identifient et individuels, et le deuxi�
 
 ### <a name="exceptions"></a>Exceptions
 
-Dans les règles, les exceptions définissent les conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives évaluées après les conditions inclusives et le contexte. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un  élément qui ressemble à ceci et est utilisé comme ceci, il s’agit d’une correspondance et le reste des actions de la stratégie doit être menée sur celui-ci, sauf si ***...***&#8212; 
+Dans les règles, les exceptions définissent les conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives évaluées après les conditions inclusives et le contexte. Ils indiquent à l'&#8212; de règle que vous trouvez un élément qui ressemble  à ceci et qui est utilisé  comme ceci et qu’il s’agit d’une correspondance et que les autres actions de la stratégie doivent être prises sur celui-ci sauf ***si... &#8212;*** 
 
 Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire belgique, comme ceci :
 
@@ -346,7 +352,7 @@ l’exception serait :
 
 ### <a name="actions"></a>Actions 
 
-Tout élément qui passe par les **filtres** inclus * conditions _ et _*_exceptions exclusives_*_ aura toutes les _*_actions_*_ définies dans la règle qui lui sont appliquées. Vous devez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ Restreindre l’accès ou chiffrer le contenu dans les emplacements *Microsoft 365** action que vous devez choisir parmi ces options :
+Toutes les _*_actions_*_ définies dans la règle sont appliquées à tout élément qui passe par les filtres ***conditions** _ et _*_exceptions exclusives_*_ inclus. Vous devez configurer les options requises pour prendre en charge l’action. Par exemple, si vous sélectionnez Exchange avec l’action _ *Restreindre* l’accès ou chiffrer le contenu dans les emplacements Microsoft 365*, vous devez choisir parmi les options ci-après :
 
 - Empêcher les utilisateurs d’accéder à des SharePoint, des OneDrive et des Teams partagés
     - Bloquer tout le monde. Seuls le propriétaire du contenu, le dernier modificateur et l’administrateur de site continueront à y accéder
@@ -358,7 +364,7 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 > [!IMPORTANT]
 > Pour les emplacements SharePoint Online et OneDrive Entreprise les documents seront bloqués de manière proactive immédiatement après la détection d’informations sensibles, que le document soit partagé ou non, pour tous les utilisateurs externes, tandis que les utilisateurs internes continueront d’avoir accès au document.
 
-#### <a name="exchange-location-actions"></a>Exchange actions d’emplacement :
+#### <a name="exchange-location-actions"></a>Exchange actions d’emplacement
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Définir des en-têtes
@@ -368,42 +374,47 @@ Les actions disponibles dans une règle dépendent des emplacements qui ont ét�
 - Transmettre le message pour approbation à des approuveurs spécifiques
 - Ajouter un destinataire à la zone À
 - Ajouter un destinataire à la zone Cc
-- Ajouter un destinataire à la zone Bcc
+- Ajouter un destinataire à la zone  Bcc
 - Ajouter le responsable de l’expéditeur en tant que destinataire
 - Suppression du chiffrement de messages O365 et de la protection des droits
 - Prédépender l’objet de l’e-mail
 - Modifier l’objet du message électronique
 - Ajouter une clause d’exclusion de responsabilité HTML
 
-#### <a name="sharepoint-sites-location-actions"></a>SharePoint actions d’emplacement des sites :
+#### <a name="sharepoint-sites-location-actions"></a>SharePoint actions d’emplacement des sites
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 
-#### <a name="onedrive-account-locations"></a>OneDrive emplacements de compte :
+#### <a name="onedrive-account-location-actions"></a>OneDrive actions d’emplacement de compte
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 
-#### <a name="teams-chat-and-channel-messages"></a>Teams chat et messages de canal
+#### <a name="teams-chat-and-channel-messages-actions"></a>Teams chat et messages de canal
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 
-#### <a name="devices"></a>Appareils :
+#### <a name="devices-actions"></a>Actions des appareils
 
 - Auditer ou restreindre les activités sur Windows appareils
 
 > [!NOTE]
-> Les appareils offrent la possibilité **d’auditer** une **activité,** de la bloquer ou de la bloquer avec **le remplacement d’une** activité.
+> Les appareils offrent la possibilité **d’auditer** une **activité, de** la bloquer ou de la bloquer avec **le remplacement d’une** activité.
 
-L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)que vous pouvez surveiller et prendre des mesures sur . 
+L’emplacement des appareils fournit de nombreuses sous-activités (conditions) et actions. Pour en savoir plus, [consultez Les activités de point de terminaison que vous pouvez surveiller et sur qui vous pouvez agir](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps :
+#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
 - Restreindre l’accès ou chiffrer le contenu à Microsoft 365 emplacements
 - Restreindre les applications tierces
 
-#### <a name="on-premises-repositories"></a>Référentiels locaux :
+#### <a name="on-premises-repositories"></a>Référentiels locaux
 
 - Restreindre l’accès ou supprimer des fichiers locaux
+
+#### <a name="powerbi-actions"></a>Actions PowerBI
+
+- Informer les utilisateurs à l’aide de courriers électroniques et de conseils de stratégie
+- Envoyer des alertes à l’administrateur
 
 #### <a name="actions-available-when-you-combine-locations"></a>Actions disponibles lorsque vous combinez des emplacements
 
@@ -438,7 +449,7 @@ Si vous sélectionnez Appareils et Microsoft Defender pour les applications clou
 - Auditer ou restreindre les activités sur Windows appareils
 - Restreindre les applications tierces
 
-L’application ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la première **option** Tester. Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
+L’application ou non d’une action dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la **première option Tester** . Vous choisissez d’exécuter la stratégie dès qu’une heure après sa création en sélectionnant **l’option Activer** immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option **Désactiver** . 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -464,7 +475,7 @@ Par exemple, le contenu tel qu’un Excel sur un site OneDrive Entreprise qui co
 > [!NOTE]
 > Les e-mails de notification sont envoyés sans protection.
 
-Vous pouvez également donner aux personnes la possibilité de remplacer la [stratégie,](#user-overrides)afin qu’elles ne sont pas bloquées s’ils ont un besoin commercial valide ou si la stratégie détecte un faux positif.
+Vous pouvez également donner aux personnes la possibilité de remplacer la [stratégie, afin](#user-overrides) qu’elles ne sont pas bloquées s’ils ont des besoins commerciaux valides ou si la stratégie détecte un faux positif.
 
 Les options de configuration des notifications utilisateur et des conseils de stratégie varient en fonction des emplacements d’analyse que vous avez sélectionnés. Si vous avez sélectionné :
 
@@ -475,7 +486,7 @@ Les options de configuration des notifications utilisateur et des conseils de st
 - Defender for Cloud Apps
 
 
-Vous pouvez activer/désactiver les notifications des utilisateurs pour différentes applications Microsoft. Consultez la référence des conseils de stratégie de protection [contre la perte de données.](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
+Vous pouvez activer/désactiver les notifications des utilisateurs pour différentes applications Microsoft. Consultez la référence des conseils de stratégie de protection [contre la perte de données](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference).
 
 - Vous pouvez activer/désactiver l’avertir les utilisateurs dans **Office 365 service à** l’aide d’un conseil de stratégie.
     - notifications par courrier électronique à l’utilisateur qui a envoyé, partagé ou modifié le contenu en dernier ;
@@ -491,7 +502,7 @@ Si vous avez sélectionné Uniquement les appareils, vous obtenez les mêmes opt
 
 Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces paramètres. Le corps de texte prend en charge les éléments ci-après :
 
-|Nom commun  |Parameter  |Exemple
+|Nom commun  |Paramètre  |Exemple
 |---------|---------|---------|
 |nom du fichier     |%%FileName%% | Contoso doc 1 |
 |nom du processus     |%%ProcessName%% | Word |
@@ -522,8 +533,6 @@ produit ce texte dans la notification personnalisée :
 *le pasting à partir du nom de fichier du Presse-papiers : Contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton Autoriser si vous souhaitez ignorer la stratégie Contoso hautement confidentielle*
  
 
-
-
 > [!NOTE]
 > Les notifications utilisateur et les conseils de stratégie ne sont pas disponibles pour l’emplacement local
 
@@ -531,7 +540,7 @@ produit ce texte dans la notification personnalisée :
 > Uniquement le conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive est affichée. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
 Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte du conseil, voir 
-- [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
+- [Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
@@ -557,7 +566,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 ### <a name="user-overrides"></a>Remplacements par l’utilisateur
 
-L’objectif des substitutions utilisateur est de donner aux **utilisateurs** un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur des éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils peuvent poursuivre leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque les **notifications** aux utilisateurs dans les services Office 365 avec un conseil de stratégie sont activées, de sorte que les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
+L’objectif des substitutions utilisateur est de donner aux **utilisateurs** un moyen de contourner, avec justification, les actions de blocage de stratégie DLP sur des éléments sensibles dans Exchange, SharePoint, OneDrive ou Teams afin qu’ils peuvent poursuivre leur travail. Les remplacements d’utilisateurs sont activés uniquement lorsque les notifications aux utilisateurs dans les **services Office 365** avec un conseil de stratégie sont activées, de sorte que les remplacements utilisateur vont de pair avec les notifications et les conseils de stratégie. 
 
 ![Options de substitution utilisateur pour une stratégie DLP](../media/dlp-user-overrides.png)
 
@@ -586,7 +595,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 Lorsqu’une règle est satisfaite, vous pouvez envoyer un rapport d’incident contenant les détails de l’événement à votre responsable de la mise en conformité (ou une autre personne de votre choix). Le rapport inclut des informations sur l’élément qui a été satisfait, le contenu réel qui correspond à la règle et le nom de la personne qui a modifié le contenu en dernier. Pour les messages électroniques, le rapport inclut également sous forme de pièce jointe le message d’origine qui correspond à une stratégie DLP.
 
-DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations sur les incidents à la gestion des risques internes, vous devez définir le niveau de gravité des rapports **d’incident** sur **Élevé**.
+La protection contre la protection contre la protection contre la menace (DLP) Microsoft 365 les informations d’incident à d’autres services de protection des informations, tels que la gestion des [risques internes Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). Pour obtenir des informations sur les incidents à la gestion des risques internes,  vous devez définir le niveau de gravité des rapports d’incident sur **Élevé**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
