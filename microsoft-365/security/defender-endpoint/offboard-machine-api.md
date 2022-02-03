@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302385"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345630"
 ---
 # <a name="offboard-machine-api"></a>API d’ordinateur de tableau de bord
 
@@ -41,7 +41,7 @@ ms.locfileid: "61302385"
 
 Appareil de tableau de bord à partir de Defender pour point de terminaison.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 - Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -65,7 +65,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.Offboard|« Offboard mach
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir le rôle aD « Administrateur global »
-> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour plus](machine-groups.md) d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,11 +73,13 @@ Déléguée (compte professionnel ou scolaire)|Machine.Offboard|« Offboard mach
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
+L’ID de l’ordinateur se trouve dans l’URL lorsque vous sélectionnez l’appareil. En règle générale, il s’agit d’un nombre alphanumérique à 40 chiffres qui se trouve dans l’URL.
+
 ## <a name="request-headers"></a>En-têtes de demande
 
 Nom|Type|Description
 ---|---|---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -90,7 +92,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et [Action de l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

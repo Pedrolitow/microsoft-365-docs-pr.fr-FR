@@ -17,28 +17,28 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 40d6f8a2882f2d5b420f21000794cac129fb0984
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168141"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345611"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Vue d’ensemble du portail Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Enterprise équipes de sécurité peuvent utiliser Microsoft 365 Defender pour surveiller et aider à répondre aux alertes de menaces avancées persistantes ou de violations de données.
 
-Vous pouvez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">utiliser</a> Microsoft 365 Defender pour :
+Vous <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">pouvez utiliser Microsoft 365 Defender</a> pour :
 
 - Afficher, trier et trier les alertes à partir de vos points de terminaison
 - Rechercher plus d’informations sur les indicateurs observés tels que les fichiers et les adresses IP
@@ -46,10 +46,7 @@ Vous pouvez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-Lorsque vous ouvrez le portail, vous voyez :
-
-- (1) Volet de navigation (sélectionnez les lignes horizontales en haut du volet de navigation pour l’afficher ou le masquer)
-- (2) Recherche, centre Community, localisation, aide et support, commentaires
+Lorsque vous ouvrez le portail, le volet de navigation s’affiche (sélectionnez les lignes horizontales en haut du volet de navigation pour l’afficher ou le masquer).
 
  ![Portail Microsoft Defender pour les points de terminaison.](images/mdatp-portal-overview.png)
 
@@ -60,7 +57,7 @@ Vous pouvez naviguer dans le portail à l’aide des options de menu disponibles
 
 Zone|Description
 :---|:---
-**(1) Volet de navigation** | Utilisez le volet de navigation pour naviguer entre les tableaux de bord, les incidents, la liste des **périphériques,** la file d’attente des **alertes,** les enquêtes automatisées, la recherche **avancée,** les RAPPORTS **,** les API partenaires **&**, la gestion des **vulnérabilités** des **menaces &,** l’évaluation et les **didacticiels,** l’état du **service,** la gestion de la **configuration** et **Paramètres**. Sélectionnez les lignes horizontales en haut du volet de navigation pour les afficher ou les masquer.
+**(1) Volet de navigation** | Utilisez le volet de navigation pour naviguer entre les tableaux de bord, **incidents****, liste** d’appareils, file d’attente des **alertes, enquêtes** automatisées **, recherche** **avancée, rapports**, API Partenaires **&**, Gestion des vulnérabilités des **menaces &**, évaluation et **didacticiels**, état du **service**, gestion de la **configuration** et **Paramètres**. Sélectionnez les lignes horizontales en haut du volet de navigation pour les afficher ou les masquer.
 **Tableaux de bord** | Accéder aux enquêtes automatisées actives, aux alertes actives, aux statistiques d’enquête automatisée, aux appareils à risque, aux utilisateurs à risque, aux appareils avec des problèmes de capteur, à l’état du service, aux sources de détection et aux tableaux de bord de rapports quotidiens des appareils.
 **Incidents** | Afficher les alertes qui ont été agrégées en tant qu’incidents.
 **Liste des appareils** | Affiche la liste des appareils intégrés à Defender pour le point de terminaison, certaines informations les concernant, ainsi que leurs niveaux d’exposition et de risque.
@@ -74,11 +71,11 @@ Zone|Description
 **Intégrité des services** | Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
 **Gestion de la configuration** | Affiche les appareils connectés, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
 **Settings** | Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
-**(2) Recherche, centre Community, localisation, aide et support, commentaires** |  Effectuer une recherche par appareil, fichier, utilisateur, URL, adresse IP, vulnérabilité, logiciel et recommandation. La recherche prend en charge l’utilisation des formats de hachage de chiffrement SHA1 et SHA256. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
+**(2) Recherche, centre Community, localisation, aide et support, commentaires** |  Effectuer une recherche par appareil, fichier, utilisateur, URL, adresse IP, vulnérabilité, logiciel et recommandation. La recherche prend en charge l’utilisation des formats de hachage de chiffrement SHA1 et SHA256. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide Defender pour le point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
 
 > [!NOTE]
 >
-> Pour les appareils avec des problèmes de mise à l’échelle DPI haute résolution, consultez Windows problèmes de mise à l’échelle pour les appareils haute résolution [pour](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) les solutions possibles.
+> Pour les appareils avec des problèmes de mise à l’échelle DPI haute résolution, consultez Windows problèmes de mise à l’échelle pour les appareils haute [résolution pour les](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) solutions possibles.
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Icônes De Microsoft Defender pour point de terminaison
 
@@ -92,7 +89,7 @@ Icône|Description
 ![Icône Menace active.](images/active-threat-icon.png)|Menace active : menaces qui s’exécutent activement au moment de la détection.
 ![Icône1 corrigé.](images/remediated-icon.png)|Corrigé : menace supprimée de l’appareil.
 ![Icône non corrigé.](images/not-remediated-icon.png)|Non corrigé : menace non supprimée de l’appareil.
-![Icône Thunderbolt.](images/atp-thunderbolt-icon.png)|Indique les événements qui ont déclenché une alerte dans **l’arborescence du processus d’alerte.**
+![Icône Thunderbolt.](images/atp-thunderbolt-icon.png)|Indique les événements qui ont déclenché une alerte dans l’arborescence **du processus d’alerte**.
 ![Icône d’appareil.](images/atp-machine-icon.png)|Icône d’appareil
 ![Icône événements de l’Antivirus Microsoft Defender.](images/atp-windows-defender-av-events-icon.png)|Antivirus Microsoft Defender événements
 ![Icône d’événements Application Guard.](images/atp-Application-Guard-events-icon.png)|Protection d'application Windows Defender événements
@@ -131,7 +128,7 @@ Icône|Description
 ![Icône d’alerte active possible.](images/tvm_alert_icon.png)|Gestion des & des menaces : alerte active possible
 ![Icône Informations sur les recommandations.](images/tvm_insight_icon.png)|Gestion des & des menaces : recommandations
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Rubriques associées
 
 - [Vue d’ensemble Microsoft 365 Defender](use.md)
 - [Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md)

@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 31b0b1c3d648a66c24b847a96a3f26b884ae4686
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 7607d5650c9a578b2c945d602d0ef3d0af0f7e88
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321446"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346530"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -158,7 +158,7 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
 
    - Dans **Nom**, tapez un nom pour la règle.
    - Dans **Description**, tapez une brève description.
-   - Dans **OMA-URI**, tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section MEM plus tôt dans cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
+   - Dans **OMA-URI**, tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez. Reportez-vous à la section mdM de cet article pour l’OMA-URI à utiliser pour cet exemple de règle. Pour les GUID de règle de réduction de la surface d’attaque, voir [les descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) par règle dans la rubrique : Règles de réduction de la surface d’attaque.
    - Dans **type de données**, sélectionnez **Chaîne**.
    - Dans **Value**, tapez ou collez la valeur GUID, \= le signe et la valeur State sans espace (_GUID=StateValue_). Où :
      

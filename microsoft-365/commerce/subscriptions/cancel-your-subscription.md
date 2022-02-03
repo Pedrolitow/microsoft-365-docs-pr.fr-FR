@@ -21,16 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
 ms.date: 01/20/2022
-ms.openlocfilehash: 2d800fbba8ce2290de395179589b1d4110cd1345
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 21d7e6f2ff644861b1a8096511144b5343dc2a25
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322577"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345428"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
-Vous pouvez annuler votre abonnement à tout moment dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d'administration Microsoft 356</a>. Cependant, pour recevoir un remboursement, vous devez répondre à certaines conditions d'éligibilité au remboursement. Pour plus d'informations, voir [Comprendre l'éligibilité au remboursement](#understand-refund-eligibility).
+Vous pouvez annuler votre abonnement à tout moment dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Cependant, pour recevoir un remboursement, vous devez répondre à certaines conditions d'éligibilité au remboursement. Pour plus d'informations, voir [Comprendre l'éligibilité au remboursement](#understand-refund-eligibility).
 
 Si vous avez plusieurs abonnements au même produit, comme Microsoft 365 Business Premium, l'annulation d'un abonnement n'aura pas d'incidence sur les licences ou services achetés dans les autres.
 

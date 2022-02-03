@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993286"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346092"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
 
@@ -55,11 +55,11 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
+Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous *le nom [canal]*) : *insiders-fast*, *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l’un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
-Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
+Pour prévisualiser les nouvelles fonctionnalités et fournir des commentaires préliminaires, il est recommandé de configurer certains appareils de votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
 
 > [!WARNING]
 > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
@@ -73,7 +73,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```
 
   > [!NOTE]
-  > Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/rhel/` .
+  > Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/rhel/`.
 
     Utilisez le tableau suivant pour vous aider à trouver le package :
 
@@ -120,7 +120,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
 ### <a name="sles-and-variants"></a>SLES et variantes
 
 > [!NOTE]
-> Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/sles/` .
+> Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/sles/`.
 
    Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
 
@@ -158,7 +158,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```
 
 > [!NOTE]
-> Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/[distro]/` .
+> Votre distribution et version, et identifiez l’entrée la plus proche (par majeure, puis mineure) sous `https://packages.microsoft.com/config/[distro]/`.
 
    Dans la commande ci-dessous, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées :
 
@@ -193,7 +193,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     sudo apt-get install gpg
     ```
 
-  Si `gpg` ce n’est pas le cas, `gnupg` installez.
+  Si ce n’est `gpg` pas le cas, installez.`gnupg`
 
     ```bash
     sudo apt-get install gnupg
@@ -226,7 +226,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```
 
     > [!NOTE]
-    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du canal si vous avez également configuré le canal de référentiel `production` `insiders-fast` sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil. Selon la distribution et la version de votre serveur, l’alias du référentiel peut être différent de celui de l’exemple suivant.
+    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du `production` canal `insiders-fast` si vous avez également configuré le canal de référentiel sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil. Selon la distribution et la version de votre serveur, l’alias du référentiel peut être différent de celui de l’exemple suivant.
 
     ```bash
     # list all repositories
@@ -252,7 +252,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```
 
     > [!NOTE]
-    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du canal si vous avez également configuré le canal de référentiel `production` `insiders-fast` sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil.
+    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du `production` canal `insiders-fast` si vous avez également configuré le canal de référentiel sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil.
 
     ```bash
     zypper repos
@@ -278,7 +278,7 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
     ```
 
     > [!NOTE]
-    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du canal si vous avez également configuré le canal de référentiel `production` `insiders-fast` sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil.
+    > Si plusieurs référentiels Microsoft sont configurés sur votre appareil, vous pouvez être spécifique au référentiel à partir duquel installer le package. L’exemple suivant montre comment installer le package à partir du `production` canal `insiders-fast` si vous avez également configuré le canal de référentiel sur cet appareil. Cette situation peut se produire si vous utilisez plusieurs produits Microsoft sur votre appareil.
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -298,11 +298,11 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
 Téléchargez le package d’intégration à partir Microsoft 365 Defender portail.
 
 > [!IMPORTANT]
-> Si vous manquez cette étape, toute commande exécutée affiche un message d’avertissement indiquant que le produit est sans permis. En `mdatp health` outre, la commande renvoie une valeur de `false` .
+> Si vous manquez cette étape, toute commande exécutée affiche un message d’avertissement indiquant que le produit est sans permis. En outre, `mdatp health` la commande renvoie une valeur de `false`.
 
 1. Dans le portail Microsoft 365 Defender, go to **Paramètres > Endpoints > Device management > Onboarding**.
 2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **Script local** comme méthode de déploiement.
-3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
+3. **Sélectionnez Télécharger le package d’intégration**. Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux.png)
 
@@ -340,15 +340,15 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 2. Exécutez MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > Pour exécuter cette commande, vous devez avoir installé ou installé sur l’appareil en fonction de `python` `python3` la disto et de la version. Si nécessaire, voir instruction pas à pas pour [l’installation de Python sur Linux.](https://opensource.com/article/20/4/install-python-linux)
+    > Pour exécuter cette commande, vous devez avoir `python` `python3` installé ou installé sur l’appareil en fonction de la disto et de la version. Si nécessaire, voir [instruction pas à pas pour l’installation de Python sur Linux](https://opensource.com/article/20/4/install-python-linux).
     
-    Si vous exécutez RHEL 8.x ou Ubuntu 20.04 ou une valeur supérieure, vous devrez utiliser `python3` .
+    Si vous exécutez RHEL 8.x ou Ubuntu 20.04 ou une valeur supérieure, vous devrez utiliser `python3`.
 
     ```bash
     sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    Pour le reste des versions et des distros, vous devez utiliser `python` .
+    Pour le reste des versions et des distros, vous devez utiliser `python`.
     
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -360,14 +360,14 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
     mdatp health --field org_id
     ```
 
-4. Vérifiez l’état d’état du produit en exécutant la commande suivante. Une valeur de retour indique que le `1` produit fonctionne comme prévu :
+4. Vérifiez l’état d’état du produit en exécutant la commande suivante. Une valeur de retour indique `1` que le produit fonctionne comme prévu :
 
     ```bash
     mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Cela peut prendre jusqu’à quelques minutes en fonction de la connectivité réseau. Pendant ce temps, la commande ci-dessus renvoie une valeur de `false` . Vous pouvez vérifier l’état de la mise à jour des définitions à l’aide de la commande suivante :
+    > Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Cela peut prendre jusqu’à quelques minutes en fonction de la connectivité réseau. Pendant ce temps, la commande ci-dessus renvoie une valeur de `false`. Vous pouvez vérifier l’état de la mise à jour des définitions à l’aide de la commande suivante :
     >
     > ```bash
     > mdatp health --field definitions_status
@@ -377,10 +377,16 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 5. Exécutez un test de détection antivirus pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
-    - Assurez-vous que la protection en temps réel est activée (en raison de l’exécution de `1` la commande suivante) :
+    - Assurez-vous que la protection en temps réel est activée (en raison de `1` l’exécution de la commande suivante) :
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      Si elle n’est pas activée, exécutez la commande suivante :
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - Ouvrez une fenêtre Terminal et exécutez la commande suivante :
@@ -407,7 +413,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 ## <a name="installer-script"></a>Script du programme d’installation
 
-Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public](https://github.com/microsoft/mdatp-xplat/).
 Le script identifie la distribution et la version, simplifie la sélection du référentiel de droite, définit l’appareil pour tirer le dernier package et combine les étapes d’installation et d’intégration du produit.
 
 ```bash
@@ -427,7 +433,7 @@ Options:
 -h|--help         display help
 ```
 
-En savoir plus [ici.](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation)
+En savoir plus [ici](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 

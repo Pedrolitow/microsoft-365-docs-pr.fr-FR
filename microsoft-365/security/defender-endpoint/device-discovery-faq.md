@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f871d612acbc8c9fadf3a4f2e92e999ddebe9044
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213979"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345950"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
@@ -43,7 +43,7 @@ Ce mode permet à chaque appareil intégré à Microsoft Defender for Endpoint d
 
 ## <a name="can-i-disable-basic-discovery"></a>Puis-je désactiver la découverte de base ?
 
-Vous avez la possibilité de désactiver la découverte d’appareils via la page [Fonctionnalités avancées.](advanced-features.md) Toutefois, vous perdrez la visibilité sur les appareils non utilisés dans votre réseau. Notez que SenseNDR.exe seront toujours en cours d’exécution sur les appareils intégrés, même si la découverte est désactivée. 
+Vous avez la possibilité de désactiver la découverte d’appareils via la page [Fonctionnalités avancées](advanced-features.md) . Toutefois, vous perdrez la visibilité sur les appareils non utilisés dans votre réseau. Notez que SenseNDR.exe seront toujours en cours d’exécution sur les appareils intégrés, même si la découverte est désactivée. 
 
 ## <a name="what-is-standard-discovery-mode"></a>Qu’est-ce que le mode de découverte standard ?
 
@@ -53,7 +53,7 @@ Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour po
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
 
-Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
+Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement les appareils Windows 10 ou ultérieurs et Windows Server 2019 ou ultérieur uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Puis-je exclure des appareils non utilisés de la liste d’inventaire des appareils ?
 
@@ -61,7 +61,7 @@ Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Quels appareils intégrés peuvent effectuer la découverte ?
 
-Les appareils intégrés s’exécutant Windows 10 version 1809 ou ultérieure, ou Windows 11 peuvent effectuer la découverte. Les serveurs ne peuvent pas effectuer de découverte à ce stade.
+Les appareils intégrés exécutés sur Windows 10 version 1809 ou ultérieure, Windows 11, Windows Server 2019 ou Windows Server 2022 peuvent effectuer la découverte.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>Que se passe-t-il si mes appareils intégrés sont connectés à mon réseau à domicile ou au point d’accès public ?
 
@@ -69,7 +69,7 @@ Le moteur de découverte fait la distinction entre les événements réseau reç
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>Quels protocoles capturez-vous et analysez-vous ?
 
-Par défaut, tous les appareils intégrés s’exécutant sur Windows 10 version 1809 ou ultérieure, ou Windows 11 capturent et analysent les protocoles suivants : ARP, CDP, DHCP, DHCPv6, IP (en-têtes), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (en-têtes SYN), UDP (en-têtes), WSD
+Par défaut, tous les appareils intégrés s’exécutant Windows 10 version 1809 ou ultérieure, Windows 11, Windows Server 2019 ou Windows Server 2022 capturent et analysent les protocoles suivants : ARP, CDP, DHCP, DHCPv6, IP (en-têtes), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (en-têtes SYN), UDP (en-têtes), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Quels protocoles utilisez-vous pour l’analyse active dans la découverte standard ?
 Lorsqu’un appareil est configuré pour exécuter la découverte standard, les services exposés sont sondés à l’aide des protocoles suivants : ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, RPC, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP

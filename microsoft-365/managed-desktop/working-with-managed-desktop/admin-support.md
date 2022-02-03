@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 97741735c333c744d5870583cacf0f756c89ddad
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 46f79b64c33930971f24685db984acd3baec53e0
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321914"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345902"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour le Bureau géré Microsoft
 
-Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Manged Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires. 
+Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide Microsoft Manged Desktop portail d’administration. Les demandes de support sont toujours prioritaires sur les soumissions de commentaires.
 
 ## <a name="open-a-new-support-request"></a>Ouvrir une nouvelle demande de support
 
@@ -39,7 +39,7 @@ Les demandes de support sont triés et gérés en fonction de la gravité décri
 
 | Type de demande de support | Champs d’utilisation |
 | ----- | ----- |
-Incident | Vous devez demander à l Microsoft Manged Desktop des opérations d’examiner un problème d’utilisateur provoqué, par exemple, par un impact étendu d’une modification ou d’une panne de service.
+Incident | Vous avez besoin de l Microsoft Manged Desktop des opérations pour examiner un problème d’utilisateur. Par exemple, un impact étendu d’une modification ou d’une panne de service.
 Demande d’informations | Vous planifiez une modification de la mise en réseau, de la configuration du proxy, des systèmes VPN, de l’expiration des certificats ou vous avez simplement besoin d’informations sur le service. Une réponse de l’équipe Microsoft Manged Desktop Operations est recommandée lors de la communication d’un changement au sein de votre organisation.
 Demande de modification | L’équipe Microsoft Manged Desktop opérations de mise à jour doit apporter des changements, par exemple en déplaçant des appareils entre des groupes de mise à jour.
 
@@ -52,7 +52,7 @@ Le contact principal d’un cas (et tout [contact](../get-started/add-admin-cont
 
 ### <a name="view-all-your-active-cases"></a>Afficher tous vos cas actifs
 
-Bien que la messagerie électronique soit l’approche recommandée pour interagir avec notre équipe, vous souhaitez peut-être voir l’état récapitulatif de toutes vos demandes de support. À tout moment, vous pouvez utiliser le portail pour voir toutes les demandes de support actives au cours des six derniers mois.
+La messagerie électronique est l’approche recommandée pour interagir avec notre équipe. Vous pouvez voir l’état récapitulatif de toutes vos demandes de support. À tout moment, vous pouvez utiliser le portail pour voir toutes les demandes de support actives au cours des six derniers mois.
 
 **Pour afficher tous vos cas actifs :**
 
@@ -92,9 +92,9 @@ Le délai de réponse initial est la période entre le moment où vous envoyez v
 
 | Niveau de gravité | Situation | Temps de réponse initial | Réponse attendue de votre part |
 | ----- | ----- |----- | ----- |
-| **Gravité A : <br> Impact critique** | **Impact critique sur l’entreprise** <br>Votre entreprise a une perte ou une dégradation significative des services et nécessite une attention immédiate.<p>**Impact majeur sur la compatibilité des applications**<br>L’ensemble de votre entreprise subit un impact financier en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques. | **Initial :** < 1 heure<p>**Mise à** jour : 60 minutes<br>Une prise en charge de 24 heures tous les jours est disponible. | Lorsque vous sélectionnez Gravité A, vous confirmez que le problème a un impact critique sur l’entreprise, avec une perte grave et une dégradation des services. <p>Le problème nécessite une réponse immédiate et vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau B.<p> Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.
-**Gravité B : impact <br> modéré** | **Impact modéré sur l’activité**<br>Votre entreprise a une perte ou une dégradation modérée des services, mais le travail peut raisonnablement continuer de manière dégradée.<p>**Impact modéré sur la compatibilité des applications**<br>Un groupe d’entreprise spécifique n’est plus productif, en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques.| **Initiale** : < 4 heures. <p> **Mise à** jour : 12 heures ; 24 heures sur 24 pendant les heures de support de l’administrateur (du lundi au vendredi).| Lorsque vous sélectionnez gravité B, vous confirmez que le problème a un impact modéré sur votre entreprise avec la perte et la dégradation des services. Toutefois, les solutions de contournement permettent une continuité d’activité raisonnable, bien que temporaire. <p>Le problème nécessite une réponse urgente. Si vous sélectionnez le support tous les jours lorsque vous envoyez la demande de support, vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau C. Si vous sélectionnez le support technique pendant les heures d’assistance de l’administrateur lorsque vous soumettez un incident de gravité B, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.<p>Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.
-**Gravité C : <br> Impact minimal** | **Impact minimal sur l’activité**<br> Votre entreprise fonctionne avec des problèmes mineurs de services.<p>**Impact sur la compatibilité des applications mineures**<br>Les utilisateurs potentiellement non liés ne sont pas sensibles à des problèmes de compatibilité mineurs qui n’empêchent pas la productivité. | **Initiale** : < 8 heures.<p> **Mise à** jour : 24 heures; Support 24 heures sur 24 pendant les heures d’assistance de l’administrateur (du lundi au vendredi). | Lorsque vous sélectionnez la gravité C, vous confirmez que le problème a un impact minimal sur votre entreprise avec des problèmes mineurs de service.<p>Pour un incident de gravité C, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.<p>Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.
+| **Gravité A : <br> Impact critique** | **Impact critique sur l’entreprise** <br>Votre entreprise a une perte ou une dégradation significative des services et nécessite une attention immédiate.<p>**Impact majeur sur la compatibilité des applications**<br>L’ensemble de votre entreprise subit un impact financier en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques. | **Initial :** < 1 heure <p> **Mise à** jour : 60 minutes <br> Une prise en charge de 24 heures tous les jours est disponible.</p> | Lorsque vous sélectionnez Gravité A, vous confirmez que le problème a un impact critique sur l’entreprise, avec une perte grave et une dégradation des services. <p> Le problème nécessite une réponse immédiate et vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau B.</p><p> Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.</p>
+**Gravité B : impact <br> modéré** | **Impact modéré sur l’activité**<br>Votre entreprise a une perte ou une dégradation modérée des services, mais le travail peut raisonnablement continuer de manière dégradée.<p>**Impact modéré sur la compatibilité des applications**<br>Un groupe d’entreprise spécifique n’est plus productif, en raison de la non-réponse des appareils ou de la perte de fonctionnalités critiques.| **Initiale** : < 4 heures. <p> **Mise à** jour : 12 heures ; 24 heures sur 24 pendant les heures de support de l’administrateur (du lundi au vendredi).| Lorsque vous sélectionnez gravité B, vous confirmez que le problème a un impact modéré sur votre entreprise avec la perte et la dégradation des services. Toutefois, les solutions de contournement permettent une continuité d’activité raisonnable, bien que temporaire. <p> Le problème nécessite une réponse urgente. Si vous sélectionnez le support tous les jours lorsque vous envoyez la demande de support, vous vous engagez à un engagement continu tous les jours avec l’équipe Microsoft jusqu’à la résolution. Sinon, Microsoft peut, à sa discrétion, réduire la gravité au niveau C. Si vous sélectionnez le support technique pendant les heures d’assistance de l’administrateur lorsque vous soumettez un incident de gravité B, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.</p> <p>Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.</p>
+**Gravité C : <br> Impact minimal** | **Impact minimal sur l’activité**<br> Votre entreprise fonctionne avec des problèmes mineurs de services.<p>**Impact sur la compatibilité des applications mineures**<br>Les utilisateurs potentiellement non liés ne sont pas sensibles à des problèmes de compatibilité mineurs qui n’empêchent pas la productivité. | **Initiale** : < 8 heures.<p> **Mise à** jour : 24 heures; Support 24 heures sur 24 pendant les heures d’assistance de l’administrateur (du lundi au vendredi). | Lorsque vous sélectionnez la gravité C, vous confirmez que le problème a un impact minimal sur votre entreprise avec des problèmes mineurs de service.<p> Pour un incident de gravité C, Microsoft vous contactera uniquement pendant les heures de support de l’administrateur.</p> <p> Vous vous assurez également que Microsoft dispose de vos coordonnées exactes.</p>
 
 ### <a name="more-support-request-information"></a>Informations supplémentaires sur les demandes de support
 
@@ -104,8 +104,8 @@ Vous trouverez ci-dessous une liste de conditions supplémentaires à connaître
 | ------ | ------ |
 | Langues de prise en charge | Toute la prise en charge est fournie en anglais. |
 | Modifications apportées au niveau de gravité | Microsoft peut rétrograder le niveau de gravité si vous n’êtes pas en mesure de fournir des ressources adéquates ou des réponses pour continuer à résoudre le problème. |
-| Compatibilité des applications | Pour qu’un problème de compatibilité d’application soit pris en compte, il doit y avoir une erreur reproductible, à l’aide de la même version de l’application, entre la version précédente et la version actuelle de Windows, ou Applications Microsoft 365 pour les grandes entreprises. <p>Pour résoudre les problèmes de compatibilité des applications, nous avons besoin d’un point de contact dans votre organisation pour travailler avec. Le contact doit travailler directement avec notre équipe Fast Track pour examiner et résoudre le problème. |
-| Temps de réponse du client | Si vous ne répondez pas aux exigences de réponse attendues, nous rétrogradons la demande d’un niveau de gravité au niveau de gravité minimal (gravité C). Si vous ne répondez pas aux demandes d’action, nous atténuerons et fermerons la demande de support dans les 48 heures qui s’approchent de la dernière demande. |
+| Compatibilité des applications | Pour qu’un problème de compatibilité d’application soit pris en compte, il doit y avoir une erreur reproductible. L’erreur doit utiliser la même version de l’application, entre la version précédente et la version actuelle de Windows, ou Applications Microsoft 365 pour les grandes entreprises. <p> Pour résoudre les problèmes de compatibilité des applications, nous avons besoin d’un point de contact dans votre organisation pour travailler avec. Le contact doit travailler directement avec notre équipe Fast Track pour examiner et résoudre le problème.</p> |
+| Temps de réponse du client | Si vous ne répondez pas aux exigences de réponse attendues, nous rétrogradons la demande d’un niveau de gravité au niveau de gravité minimal (gravité C). <p> Si vous ne répondez pas aux demandes d’action, nous atténuerons et fermerons la demande de support dans les 48 heures qui s’approchent de la dernière demande.</p> |
 
 ## <a name="more-resources"></a>Plus de ressources
 
