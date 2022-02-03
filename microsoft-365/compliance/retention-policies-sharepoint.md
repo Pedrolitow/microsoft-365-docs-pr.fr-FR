@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: d9b8a0b66eb32171a0f72fbe0f380a6a98316e33
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295337"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322156"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -134,9 +134,9 @@ La copie stockée dans la bibliothèque de conservation et de préservation des 
 
 ## <a name="how-retention-works-with-onenote-content"></a>Fonctionnement de la rétention avec OneNote contenu
 
-Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote ou une étiquette de rétention à un dossier OneNote, en arrière-plan, les différentes sections OneNote sont des fichiers individuels qui héritent des paramètres de rétention. Cela signifie que chaque section est conservée et supprimée séparément, conformément aux paramètres de rétention que vous spécifiez.
+Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote ou une étiquette de rétention à un dossier OneNote, en arrière-plan, les différentes pages et sections OneNote sont des fichiers individuels qui héritent des paramètres de rétention. Cela signifie que chaque section d’une page sera conservée et supprimée individuellement, conformément aux paramètres de rétention que vous spécifiez.
 
-La date de modification de la page OneNote elle-même ne change pas après sa création.
+Seules les pages et sections sont touchées par les paramètres de rétention que vous spécifiez. Par exemple, même si vous voyez **une date de modification** pour chaque bloc-notes individuel, cette date n’est pas utilisée Microsoft 365 rétention.
 
 ## <a name="how-retention-works-with-document-versions"></a>Fonctionnement de la rétention avec des versions de documents
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 39fb6ce1614c59bf97dbea23e6d6f3e80c7f36dd
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 7e516d78c781782e24c26ddedfa7b8996bb44fe0
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241830"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322432"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -70,7 +70,7 @@ Même si les données des conversations et des messages de canal Teams sont stoc
 > [!NOTE]
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve des messages Teams et que vous supprimez sa boîte aux lettres, la boîte aux lettres est convertie en [Boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez le compte d’utilisateur de la stratégie de rétention et [attendez que cette modification prenne effet](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) avant de supprimer sa boîte aux lettres. 
 
-Une fois qu'une politique de rétention est configurée pour les messages de conversation et de canal, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages des Teams. Le travail du minuteur prend généralement de 1 à 7 jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés. 
+Une fois qu’une stratégie de rétention est configurée pour les messages de conversation et de canal, un travail du service Exchange évalue régulièrement les éléments du dossier de boîte aux lettres masqué dans lequel ces messages Teams sont stockés. Le travail du minuteur prend généralement de 1 à 7 jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés. 
 
 Les messages restent dans le dossier SubstrateHolds pendant au moins 1 jour. Ensuite, s’ils peuvent être supprimés, le travail du minuteur les supprime définitivement lors de sa prochaine exécution.
 
@@ -94,7 +94,12 @@ Pour les deux voies du diagramme :
 > [!NOTE]
 > Les messages stockés dans les boîtes aux lettres, y compris les dossiers masqués, peuvent faire l’objet de recherches au moyen des outils eDiscovery. Tant que les messages ne sont pas définitivement supprimés du dossier SubstrateHolds, ils peuvent toujours faire l’objet de recherches au moyen des outils eDiscovery.
 
-Lorsque les messages sont définitivement supprimés du dossier SubstrateHolds, une opération de suppression est communiquée au service de conversation Azure principal, qui relaie ensuite la même opération à l’application cliente Teams. Les retards dans cette communication ou la mise en cache peuvent expliquer pourquoi, pendant une courte période, les utilisateurs peuvent encore voir ces messages dans leur application Teams. Toutefois, les données de ces messages ne sont pas renvoyées dans les recherches eDiscovery. Les messages visibles dans l’application Teams ne reflètent pas exactement s’ils sont conservés ou définitivement supprimés pour des raisons de conformité.
+Lorsque les messages sont définitivement supprimés du dossier SubstrateHolds, une opération de suppression est communiquée au service de conversation Azure principal, qui relaie ensuite la même opération à l’application cliente Teams. Les retards dans cette communication ou mise en cache peuvent expliquer pourquoi, pendant un court laps de temps, les utilisateurs affectés à la stratégie peuvent toujours voir ces messages dans leur application Teams, mais les données de ces messages ne sont pas renvoyées dans les recherches de découverte électronique.
+
+Dans ce scénario où le service de conversation Azure reçoit une commande de suppression en raison d’une stratégie de rétention, le message correspondant dans l’application cliente Teams est supprimé pour tous les utilisateurs de la conversation. Certains de ces utilisateurs peuvent être issus d’une autre organisation, avoir une stratégie de rétention avec une période de rétention plus longue ou aucune stratégie de rétention qui leur est affectée. Pour ces utilisateurs, les copies des messages sont toujours stockées dans leurs boîtes aux lettres et restent utilisables dans une recherche de découverte électronique jusqu’à ce que les messages soient définitivement supprimés par une autre stratégie de rétention.
+
+> [!IMPORTANT]
+> Les messages visibles dans l’application Teams ne reflètent pas exactement s’ils sont conservés ou définitivement supprimés pour des raisons de conformité.
 
 Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression.
 

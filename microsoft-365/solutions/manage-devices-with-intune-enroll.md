@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b1f14944e89f94ab48e61103cdd7b9d78a3bdfea
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049226"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321638"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Étape 2. Inscrire des appareils dans la gestion avec Intune
 
@@ -33,7 +33,7 @@ Qu'il s'agisse d'un appareil BYOD personnel ou d'un appareil appartenant à l'en
 
 Le processus d'inscription de l'appareil établit une relation entre l'utilisateur, l'appareil et le service Microsoft Intune. L'utilisation de Microsoft Intune en tant que service autonome vous permet d'utiliser une console d'administration Web unique pour gérer les PC Windows, macOS et les plates-formes d'appareils mobiles les plus populaires.
 
-Cet article recommande des méthodes pour inscrire des appareils dans la gestion à l'aide d'Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview).
+Cet article recommande des méthodes pour inscrire des appareils dans la gestion à l'aide d'Intune. Pour plus d'informations sur ces méthodes et sur la façon de déployer chacune d'entre elles, consultez [Guide de déploiement : Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Étapes de gestion des appareils](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -45,7 +45,7 @@ Il existe plusieurs options pour inscrire des appareils Windows 10 et Windows 11
 
 Pour obtenir des options supplémentaires, notamment l’inscription d’appareils Windows BYOD, consultez [Inscrivez les appareils Windows dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
-## <a name="iosipados-and-ipados-enrollment"></a>Inscription iOS/iPadOS et iPadOS
+## <a name="ios-and-ipados-enrollment"></a>Inscription iOS et iPadOS
 
 Pour les appareils appartenant à l'utilisateur (BYOD), vous pouvez autoriser les utilisateurs à inscrire leurs appareils personnels pour la gestion Intune à l'aide de l'une des méthodes suivantes.
 - L'inscription de l'appareil est ce que vous pouvez considérer comme une inscription BYOD typique. Elle offre aux administrateurs un large éventail d'options de gestion.
