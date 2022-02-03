@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: ce81e5432c03c8cf0647bd08e815457be368ac12
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295421"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326698"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -45,7 +45,7 @@ Les guides d’installation sont accessibles à [partir de la](https://aka.ms/se
 
    ![Fiche & guides de formation dans la Centre d'administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. **Sélectionnez des guides pas à pas**.
+3. Sélectionnez **les guides de** déploiement avancés, puis tous **les guides**.
 
    ![Capture d’écran de la page de conseils d’installation dans la Centre d'administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -63,9 +63,9 @@ Le [guide de configuration de](https://aka.ms/office365setup) la messagerie vous
 
 Lorsque vous migrez la boîte aux lettres d’un utilisateur Gmail vers Microsoft 365, les messages électroniques sont migrés, mais pas les contacts et les éléments de calendrier. Le conseiller de [calendrier et les contacts Gmail](https://aka.ms/gmailcontactscalendar) fournissent les étapes à suivre pour importer des contacts Google et des éléments de calendrier Google dans Microsoft 365 à l’aide de méthodes d’importation et d’exportation avec Outlook.com, le client Outlook ou PowerShell.
 
-### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 de déploiement
+### <a name="microsoft-365-setup-guide"></a>Microsoft 365 de configuration
 
-Le [conseiller Microsoft 365 déploiement](https://aka.ms/microsoft365setupguide) vous fournit des conseils lors de la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec un Microsoft 365 Business Premium ou Microsoft 365 abonnement entreprise, vous pouvez utiliser ce conseiller pour configurer et configurer les appareils de votre organisation.
+Le [guide Microsoft 365 de configuration](https://aka.ms/microsoft365setupguide) vous fournit des conseils lors de la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec un Microsoft 365 Business Premium ou Microsoft 365 abonnement entreprise, vous pouvez utiliser ce conseiller pour configurer et configurer les appareils de votre organisation.
 
 Vous recevrez des conseils et un accès aux ressources pour activer vos services cloud, mettre à jour les appareils vers la dernière version prise en charge de Windows 10 et joindre des appareils à Azure Active Directory (Azure AD), le tout dans un emplacement central.
 
@@ -74,12 +74,6 @@ Vous recevrez des conseils et un accès aux ressources pour activer vos services
 Le [guide de](https://aka.ms/remoteworksetup) configuration du travail à distance fournit aux organisations les conseils et les ressources nécessaires pour s’assurer que vos utilisateurs peuvent travailler à distance, que vos données sont sécurisées et que les informations d’identification des utilisateurs sont sécurisées.
 
 Vous recevrez des conseils pour optimiser le trafic des appareils des travailleurs à distance vers les ressources Microsoft 365 dans le cloud et le réseau de votre organisation, ce qui réduit la contrainte sur votre infrastructure VPN d’accès à distance.
-
-### <a name="windows-virtual-desktop-setup-guide"></a>guide Windows configuration de virtual desktop
-
-Windows Virtual Desktop est un service complet de virtualisation de bureau et d’application en cours d’exécution dans le cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, des Windows 10 multisesses, des optimisations pour Microsoft 365 Apps et la prise en charge des environnements des services Bureau à distance (RDS). Déployez et faites passer vos Windows et applications à Azure en minutes et obtenez des fonctionnalités intégrées de sécurité et de conformité.
-
-Le [guide Windows virtual desktop](https://aka.ms/wvdsetupguide) fournit aux administrateurs des ressources de planification, ainsi que les conditions préalables au déploiement, aux instructions de configuration et à d’autres ressources.
 
 ### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge de configuration
 
@@ -97,11 +91,19 @@ Recherche Microsoft aide votre organisation à trouver ce dont elle a besoin pou
 
 Le [guide Recherche Microsoft configuration](https://aka.ms/MicrosoftSearchSetup) vous permet de configurer Recherche Microsoft si vous souhaitez le piloter pour un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et d’autres options, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guide de configuration de la cogestion d’Intune Configuration Manager
-
-Utilisez le [guide de configuration de la cogestion d’Intune Configuration Manager](https://aka.ms/comanagementsetup) pour les périphériques clients Configuration Manager existants et les nouveaux appareils basés sur Internet que votre organisation souhaite co-gérer avec Microsoft Intune et Configuration Manager. Ce guide de déploiement de cogestion vous permet de gérer les appareils Windows 10 et d’ajouter de nouvelles fonctionnalités aux appareils de votre organisation, tout en profitant des avantages des deux solutions.
-
 ## <a name="guides-for-authentication-and-access"></a>Guides d’authentification et d’accès
+
+### <a name="configure-multifactor-authentication-mfa"></a>Configurer l’authentification multifacteur (MFA)
+
+Le [guide Configurer l’authentification multifacteur (MFA)](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) fournit des informations pour protéger votre organisation contre les violations dues aux informations d’identification perdues ou volées. L’ation multi-facteur augmente immédiatement la sécurité du compte en insécurant plusieurs formulaires de vérification pour prouver l’identité d’un utilisateur lorsqu’il se connecte à une application ou à une autre ressource d’entreprise. Cette invite peut être d’entrer un code sur l’appareil mobile de l’utilisateur ou de fournir une analyse des empreintes digitales. L’mf est activée par le biais de l’accès conditionnel, des paramètres de sécurité par défaut ou de l’fa MFA par utilisateur. Ce guide fournit l’option MFA recommandée pour votre organisation, en fonction de vos licences et de la configuration existante.
+
+### <a name="identity-security-for-teams"></a>Sécurité des identités pour Teams
+
+Le [guide sécurité des](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/teamsidentity) identités pour teams vous aide à suivre certaines étapes de sécurité de base que vous pouvez suivre pour vous assurer que vos utilisateurs sont en sécurité et qu’ils ont le temps le plus productif **d’utiliser Teams**.
+
+### <a name="add-or-sync-users-to-microsoft-365"></a>Ajouter ou synchroniser des utilisateurs Microsoft 365
+
+[Ce guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) simplifie le processus de mise en place de vos comptes d’utilisateurs **dans Microsoft 365**. En fonction de votre environnement et de vos besoins, vous pouvez choisir d’ajouter des utilisateurs individuellement, de migrer votre annuaire local avec Azure AD synchronisation cloud ou Azure AD Connecter, ou de résoudre les problèmes de synchronisation existants si nécessaire.
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD de configuration
 
@@ -122,6 +124,10 @@ Mise à niveau vers une autre approche de la sign-in qui permet aux utilisateurs
 - Clés de sécurité
 
 Utilisez le [guide de déploiement sans](https://aka.ms/passwordlesssetup) mot de passe pour découvrir les meilleures méthodes d’authentification sans mot de passe à utiliser et recevoir des conseils sur la façon de les déployer.
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Intégrer une application cloud tierce à Azure AD
+
+[Ce guide aide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) les administrateurs informatiques à sélectionner et configurer l’application.
 
 ### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planifier votre déploiement de réinitialisation de mot de passe en libre-service (SSPR)
 
@@ -193,9 +199,9 @@ Le [guide de configuration de Microsoft Defender pour les applications cloud fou
 
 Transformer le fonctionnement de vos employés avec le tableau [de bord Expérience des employés](https://aka.ms/EmployeeExperienceDashboard). Pour un travail d’équipe transparent, utilisez Microsoft 365 pour créer des équipes productives et alignées, et maintenir les employés impliqués dans la direction et le reste de l’organisation. Aidez vos employés à être efficaces dans toutes les activités professionnelles. Ces guides fournissent des instructions sur la façon d’utiliser SharePoint, Teams et Yammer pour créer une collaboration au sein de votre organisation afin d’améliorer la productivité.
 
-### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 Apps de déploiement
+### <a name="microsoft-365-apps-setup-guide"></a>Microsoft 365 Apps de configuration
 
-Le [conseiller Microsoft 365 Apps déploiement](https://aka.ms/OPPquickstartguide) vous permet d’obtenir les appareils de vos utilisateurs exécutant la dernière version des produits Office tels que Word, Excel, PowerPoint et OneNote. Vous recevrez des conseils sur les différentes méthodes de déploiement qui incluent des options d’installation autonome faciles pour les déploiements d’entreprise à l’aide d’outils de gestion. Les instructions vous aideront à évaluer votre environnement, à déterminer vos besoins de déploiement spécifiques et à implémenter les outils de support nécessaires pour garantir une installation réussie.
+Le [guide Microsoft 365 Apps](https://aka.ms/OPPquickstartguide) de configuration vous permet d’obtenir les appareils de vos utilisateurs exécutant la dernière version des produits Office tels que Word, Excel, PowerPoint et OneNote. Vous recevrez des conseils sur les différentes méthodes de déploiement qui incluent des options d’installation autonome faciles pour les déploiements d’entreprise à l’aide d’outils de gestion. Les instructions vous aideront à évaluer votre environnement, à déterminer vos besoins de déploiement spécifiques et à implémenter les outils de support nécessaires pour garantir une installation réussie.
 
 ### <a name="mobile-apps-setup-guide"></a>Guide de configuration des applications mobiles
 
@@ -204,16 +210,6 @@ Le [guide de](https://aka.ms/officeappguidance) configuration des applications m
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams de configuration
 
 Le [guide](https://aka.ms/teamsguidance) de configuration Microsoft Teams fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par messagerie, appels et réunions audio ou vidéo pour les communications d’équipe et privées. Utilisez les outils de ce guide pour configurer l’accès invité, définir qui peut créer des équipes et ajouter des membres d’équipe à partir d’un fichier .csv, sans avoir à ouvrir une session PowerShell. Vous obtenez également les meilleures pratiques pour déterminer les exigences réseau de votre organisation et garantir un déploiement Teams réussi.
-
-### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams pour l'éducation de configuration
-
-Le [guide Microsoft Teams pour l'éducation](https://aka.ms/teamsedusetup) de configuration fournit à votre établissement scolaire des conseils qui rassemblent des salles de classe, des conversations, des réunions, des fichiers et des applications collaboratives au même endroit. Le guide fournit également des instructions pour préparer, planifier et configurer Teams pour votre établissement scolaire. Une fois votre déploiement terminé, utilisez les outils intégrés pour configurer les personnes qui peuvent créer des équipes, et éventuellement créer des équipes vous-même tout en complétant les membres avec un fichier .csv.
-
-### <a name="integrate-microsoft-lti-apps-with-your-lms"></a>Intégrer des applications Microsoft LTI à votre système de gestion des formations
-
-Pour que les enseignants fonctionnent efficacement et que les étudiants restent organisés, ils ont besoin d’une  sign-on unique pour collaborer avec tous leurs supports d’apprentissage, devoirs et applications à portée de main. Les applications Microsoft Learning Tools Interoperability (LTI) apportent les meilleurs outils Microsoft directement dans votre système de gestion de l’apprentissage (LMS), afin que les étudiants et les enseignants peuvent se concentrer sur l’étude, sans trouver de fichiers ni créer d’outils.
-
-Si vous êtes un administrateur d’un LMS et que vous souhaitez accéder aux outils Microsoft directement à partir de votre LMS, utilisez nos applications [Intégrer des applications Microsoft LTI avec vos applications LMS](https://aka.ms/lmsintegrationguide) Intégrer les applications Microsoft LTI à votre guide LMS pour commencer. Ces outils incluent actuellement Microsoft Teams classes et Microsoft Teams réunions.
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint de configuration
 

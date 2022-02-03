@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: b7a91b948e7c9d8d99c6d7c1563503efc24fc8f9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320858"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327400"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -58,7 +58,7 @@ Les applications peuvent également être ajoutées manuellement à la liste de 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Pourquoi l’accès contrôlé aux dossiers est-il important ?
 
-L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) avec les informations et les coordonnées de l’entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques analysées par la fonctionnalité.
+L’accès contrôlé aux dossiers est particulièrement utile pour protéger vos documents et informations contre les [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). Dans le cas d’une attaque par ransomware, vos fichiers peuvent être chiffrés et maintenus en maison d’amis. Une fois l’accès contrôlé aux dossiers en place, une notification s’affiche sur l’ordinateur sur lequel une application a tenté d’apporter des modifications à un fichier dans un dossier protégé. Vous pouvez [personnaliser la notification](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) avec les informations et les coordonnées de l’entreprise. Vous pouvez également activer les règles individuellement pour personnaliser les techniques analysées par la fonctionnalité.
 
 Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access-events-in-windows-event-viewer) système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers](customize-controlled-folders.md#protect-additional-folders). Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
@@ -96,7 +96,7 @@ L’accès contrôlé aux dossiers [nécessite Antivirus Microsoft Defender prot
 
 Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans Microsoft 365 Defender portail. (Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
 
-Vous pouvez interroger Microsoft Defender pour obtenir des données de point de [terminaison](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview?view=o365-worldwide) à l’aide du recherche avancée. Si vous utilisez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la [](advanced-hunting-overview.md) recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés.
+Vous pouvez interroger Microsoft Defender pour obtenir des données de point de [terminaison](advanced-hunting-overview.md) à l’aide du recherche avancée. Si vous utilisez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la [](advanced-hunting-overview.md) recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés.
 
 Exemples de requête :
 

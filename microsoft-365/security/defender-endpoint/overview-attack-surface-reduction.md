@@ -17,12 +17,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320978"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327692"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprendre et utiliser les fonctionnalités de réduction de la surface d’attaque
 
@@ -101,7 +101,7 @@ Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de Pow
 | Options d’audit | Comment activer le mode audit | Comment afficher les événements |
 |---|---|---|
 | L’audit s’applique à tous les événements | [Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md) | [Événements d’accès contrôlé aux dossiers](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| L’audit s’applique à des règles individuelles | [Étape 1 : Tester les règles de la asr à l’aide de l’audit](attack-surface-reduction-rules-deployment-phase-2.md#step-1-test-asr-rules-using-audit) | [Étape 2 : Comprendre la page de rapports sur les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-phase-2.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| L’audit s’applique à des règles individuelles | [Étape 1 : Tester les règles de la asr à l’aide de l’audit](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Étape 2 : Comprendre la page de rapports sur les règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | L’audit s’applique à tous les événements | [Activer la protection du réseau](enable-network-protection.md) | [Événements de protection du réseau](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | L’audit s’applique aux atténuations individuelles | [Activer la protection la protection contre les codes malveillants exploitant une faille de sécurité](enable-exploit-protection.md) | [Événements Exploit Protection](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 

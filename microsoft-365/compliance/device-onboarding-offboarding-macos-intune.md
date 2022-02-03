@@ -14,19 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment intégrer et utiliser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide Microsoft Intune (prévisualisation)
-ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962710"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327388"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>intégrer et déclasser des appareils macOS dans des solutions de conformité Microsoft 365 à l’aide d’Intune (préversion)
 
 Vous pouvez utiliser Intune pour intégrer des appareils macOS dans Microsoft 365 solutions de conformité.
 
 > [!IMPORTANT]
-> Utilisez cette procédure si ***Microsoft*** Defender pour point de terminaison (MDE) n’est pas déployé sur vos appareils macOS
+> Utilisez cette procédure ***si Microsoft Defender*** pour point de terminaison (MDE) n’est pas déployé sur vos appareils macOS
 
 **S’applique à :**
 
@@ -35,8 +35,8 @@ Vous pouvez utiliser Intune pour intégrer des appareils macOS dans Microsoft 36
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Assurez-vous que vos appareils macOS sont intégrés à [Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et qu’ils sont inscrits dans [l Portail d'entreprise app.](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
-- Assurez-vous que vous avez accès au [centre de Microsoft Endpoint Manager.](https://endpoint.microsoft.com/#home)
+- Assurez-vous que [vos appareils macOS sont intégrés à Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) et qu’ils sont inscrits dans [Portail d'entreprise application.](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
+- Assurez-vous que vous avez accès au [centre Microsoft Endpoint Manager’informations](https://endpoint.microsoft.com/#home).
 - Cela prend en charge macOS version 10.15 et versions supérieures.
 - Créez les groupes d’utilisateurs à qui vous allez affecter les mises à jour de configuration.
 - Installer le navigateur Edge v95+ sur vos appareils macOS 
@@ -59,17 +59,17 @@ L’intégration d’un appareil macOS aux solutions de conformité est un proce
 
 |fichier nécessaire pour |source |
 |---------|---------|
-|Package d’intégration    |téléchargé à partir du **package d’intégration du** portail de *conformité,* du nom deDeviceComplianceOnboarding.xml |
+|Package d’intégration    |téléchargé à partir du **package d’intégration** du portail de conformité, du nom *deDeviceComplianceOnboarding.xml* |
 |accessibilité |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |S filer réseau| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|Extensions système |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|Extensions système |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |Préférence MDE     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
 |Préférence MAU|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|Package d’installation     |téléchargé à partir du **package d’installation** du portail de conformité, nom de *\* fichier wdav.pkg*\* |
+|Package d’installation     |téléchargé à partir du **package d’installation** du portail de conformité, nom *\*de fichier wdav.pkg*\* |
 
 > [!TIP]
-> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un seul fichier [combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
+> Vous pouvez télécharger les fichiers *.mobileconfig* individuellement ou dans un [seul fichier combiné qui](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) contient :
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
@@ -140,7 +140,7 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 ```
 -->
 
-2. Ouvrez le **centre Microsoft Endpoint Manager**  >  **profils de**  >  **configuration des appareils.**
+2. Ouvrez le **Microsoft Endpoint Manager profils** **centerDevicesConfiguration** >  > .
 
 1. Choose: **Create profile** 
 
@@ -155,9 +155,9 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Choisissez le **fichier accessibility.mobileconfig** que vous avez téléchargé à l’étape 1 comme fichier de profil de configuration.
 
-1. Choose **Next**
+1. Sélectionnez **Suivant**
 
-1. Sous **l’onglet Affectations,** ajoutez le groupe sur qui vous souhaitez déployer ces configurations et choisissez **Suivant.**
+1. Sous **l’onglet Affectations** , ajoutez le groupe vers qui vous souhaitez déployer ces configurations et choisissez **Suivant**.
 
 1. Examinez vos paramètres et choisissez **Créer** pour déployer la configuration.
 
@@ -165,26 +165,26 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
     1. **fichier fulldisk.mobileconfig**
     1. **com.microsoft.autoupdate2.xml** fichier
     1. Préférences MDE **com.microsoft.wdav.xml** fichier
-        1. définissez le moteur antivirus `passive mode`  =  `true` ou `false` . À `true` utiliser en cas de déploiement de DLP uniquement. Utilisez `false` ou n’affectez pas de valeur si vous déployez DLP et Microsoft Defender pour le point de terminaison (MDE).
+        1. définissez le moteur antivirus `passive mode` = `true` ou .`false` À utiliser `true`en cas de déploiement de DLP uniquement. Utilisez `false` ou n’affectez pas de valeur si vous déployez DLP et Microsoft Defender pour le point de terminaison (MDE).
     1. **netfilter.mobileconfig**
  
-1. Ouvrez **les**  >  **profils de configuration des** appareils , vous devriez voir vos profils créés ici.
+1. **Ouvrez les** **profils DevicesConfiguration** > , vous devriez voir vos profils créés ici.
 
-1. Dans la page **Profils** de configuration, choisissez le profil que vous  avez créé, dans cet exemple *AccessibilityformacOS,* puis choisissez État de l’appareil pour voir la liste des appareils et l’état de déploiement du profil de configuration.
+1. Dans la page **Profils** de configuration, choisissez le profil que vous avez créé, dans cet exemple *AccessibilityformacOS*, puis choisissez État de l’appareil pour voir la liste des appareils et l’état de déploiement du profil de configuration.
 
 ### <a name="get-the-device-onboarding-package"></a>Obtenir le package d’intégration d’appareil
 
-1. Dans **le Centre de conformité,** **Paramètres**  >  **l’intégration d’appareil** et choisissez **Intégration.**
+1. Dans **le Centre de conformité****, Paramètres** >  **Device Onboarding et** choisissez **Intégration**.
  
-1. Pour **sélectionner le système d’exploitation afin de démarrer le processus d’intégration,** choisissez **macOS.**
+1. Pour **sélectionner le système d’exploitation afin de démarrer le processus d’intégration,** **choisissez macOS**.
  
-1. For **Deployment method** choose Mobile Device **Management/Microsoft Intune**.
+1. Pour **la méthode Deployment**, choisissez **Gestion des appareils mobiles/Microsoft Intune**.
  
-1. Choisissez **Télécharger le package d’intégration.** Il contient le code d’intégration dans *DeviceComplianceOnboarding.xml* fichier.
+1. Choisissez **Télécharger le package d’intégration**. Il contient le code d’intégration dans *DeviceComplianceOnboarding.xml* fichier.
 
 ### <a name="deploy-the-onboarding-package"></a>Déployer le package d’intégration
 
-1. Ouvrez le **centre Microsoft Endpoint Manager**  >  **profils de**  >  **configuration des appareils.**
+1. Ouvrez le **Microsoft Endpoint Manager profils** **centerDevicesConfiguration** >  > .
 
 1. Choose: **Create profile**. 
 
@@ -199,15 +199,15 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Choisissez le *DeviceComplianceOnboarding.xml* fichier de profil de configuration.
 
-1. Choose **Next**
+1. Sélectionnez **Suivant**
 
-1. Sous **l’onglet Affectations,** ajoutez le groupe sur qui vous souhaitez déployer ces configurations et choisissez **Suivant.**
+1. Sous **l’onglet Affectations** , ajoutez le groupe vers qui vous souhaitez déployer ces configurations et choisissez **Suivant**.
 
 1. Examinez vos paramètres et choisissez **Créer** pour déployer la configuration.
 
 ### <a name="enable-system-extension"></a>Activer l’extension système
 
-1. Dans le centre Microsoft Endpoint Manager **sélectionnez Créer un profil sous**  **Profils de configuration**
+1. Dans le centre **Microsoft Endpoint Manager sélectionnez** **Créer un profil sous** **Profils de configuration**
 
 1. Choisissez :
     1. **Plateforme = macOS**
@@ -218,9 +218,9 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 
 1. Dans **l’onglet Informations de** base, nommez ce nouveau profil.
 
-1. Dans **l’onglet Paramètres de configuration,** **développez Extensions système.**
+1. Dans **l’onglet Paramètres de configuration** , **développez Extensions système**.
 
-1. Sous **l’identificateur d’ensemble** et **l’identificateur** d’équipe, définissez ces valeurs
+1. Sous **identificateur d’ensemble et** **identificateur d’équipe**, définissez ces valeurs
 
 |Identificateur d’ensemble  |Identificateur d’équipe  |
 |---------|---------|
@@ -228,36 +228,36 @@ accès disque complet     |[fulldisk.mobileconfig](https://github.com/microsoft/
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. Sous **l’onglet Affectations,** ajoutez le groupe sur qui vous souhaitez déployer ces configurations et choisissez **Suivant.**
+1. Sous **l’onglet Affectations** , ajoutez le groupe vers qui vous souhaitez déployer ces configurations et choisissez **Suivant**.
 
 1. Choisissez **Suivant** pour déployer la configuration.
 
 ### <a name="get-the-installation-package"></a>Obtenir le package d’installation
 
-1. Dans **le Centre de conformité,** **Paramètres**  >  **l’intégration d’appareil** et choisissez **Intégration.**
+1. Dans **le Centre de conformité****, Paramètres** >  **Device Onboarding et** choisissez **Intégration**.
  
 1. Pour **sélectionner le système d’exploitation afin de démarrer le processus d’intégration,** choisissez **macOS**
  
-1. Pour **la méthode Déploiement,** choisissez **Gestion des périphériques mobiles/Microsoft Intune**
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
  
-1. Choisissez **Télécharger le package d’installation.** Vous aurez ainsi le *fichier wdav.pkg.*
+1. Choisissez **Télécharger le package d’installation**. Vous aurez ainsi le *fichier wdav.pkg* .
 
 > [!IMPORTANT]
-> Avant de pouvoir déployer *le wdav.pkg.* via Intune, il doit être reformaté à l’aide des outils d’habillage d’application *Intune* pour Mac au format *wdav.pkg.intunemac.*
+> Avant de pouvoir déployer *le wdav.pkg.* via Intune, il doit être reformaté à l’aide des outils d’habillage d’application *Intune pour Mac* au format *wdav.pkg.intunemac* .
  
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>Déployer le package d’installation Microsoft DLP
 
-1. Suivez les procédures de la procédure d’ajout d’applications [métier macOS](/mem/intune/apps/lob-apps-macos) à Microsoft Intune pour convertir le fichier *wdav.pkg* au format approprié et le déployer via Intune.
+1. Suivez les procédures de la procédure d’ajout d’applications [métier macOS à Microsoft Intune](/mem/intune/apps/lob-apps-macos) pour convertir le fichier *wdav.pkg* au format approprié et le déployer via Intune.
 
 ## <a name="offboard-macos-devices-using-intune"></a>Offboard macOS devices using Intune
 
 > [!NOTE]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant six mois.
 
-2. Dans **Microsoft Endpoint Manager, ouvrez** **les** profils de configuration des appareils, vous devez y voir vos  >  profils créés.
+2. Dans **Microsoft Endpoint Manager,** ouvrez les profils **DevicesConfiguration** > , vous devez y voir vos profils créés.
 
-1. Dans la page **Profils de** configuration, choisissez le *profil wdav.pkg.intunemac.*
+1. Dans la page **Profils de** configuration, choisissez le *profil wdav.pkg.intunemac* .
 
 1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer des appareils Windows 10 et Windows 11 dans Microsoft 365
-ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 4e2e94dcb8b366a5ffda651b910a611ce9e921a1
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272077"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327204"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Vue d’ensemble de l’intégration des appareils Windows 10 et Windows 11 dans Microsoft 365
 
@@ -100,7 +100,8 @@ Assurez-vous que les appareils Windows que vous devez intégrer répondent à ce
 
 5. Une version prise en charge de Microsoft Office est installée et à jour. Pour bénéficier d’une protection et d’une expérience utilisateur robuste, vérifiez que Microsoft 365 Apps version 16.0.14701.0 ou ultérieure est installée.
 > [!NOTE]
-   >Si vous exécutez Office 265 : KB 4577063 est requis Si vous utilisez le canal d’entreprise mensuel de Microsoft 365 Apps versions 2004-2008, vous devez mettre à jour vers la version 2009 ou ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
+   > - Si vous exécutez une Office 365 – KB 4577063 est requis.
+   > - Si vous êtes sur le Canal Enterprise mensuel de Microsoft 365 Apps versions 2004-2008, vous devez mettre à jour vers la version 2009 ou ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
 
 6. Si vous avez des points de terminaison qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour la protection de l’information](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 

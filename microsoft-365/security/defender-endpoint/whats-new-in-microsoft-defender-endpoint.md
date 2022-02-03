@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15055274b8b2fd69c5751201184955eb9915e038
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 37348d04002034b15c7b2d1d31b44dcedb795893
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322348"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327250"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -60,7 +60,10 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 
+
 ## <a name="january-2022"></a>Janvier 2022
+
+- Améliorations apportées au laboratoire d’évaluation : vous pouvez désormais ajouter des Windows 11 et Linux à l’atelier. 
 
 - Les menaces et gestion des vulnérabilités pour Android et iOS sont désormais généralement disponibles. [En savoir plus](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
@@ -119,7 +122,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 - [Microsoft Tunnel l’intégration VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel fonctionnalités VPN est désormais intégrée à l’application Microsoft Defender for Endpoint pour Android. Cette unification permet aux organisations d’offrir une expérience utilisateur utilisateur simplifiée avec une application de sécurité, offrant à la fois une protection contre les menaces mobiles et la possibilité d’accéder aux ressources locales à partir de leur appareil mobile, tandis que les équipes informatiques et de sécurité peuvent conserver les mêmes expériences d’administration qu’elles connaissent.
 
-- [Détection jailbreak sur iOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel de configuration basée sur les signaux de risque de l’appareil](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-worldwide).
+- [Détection jailbreak sur iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La fonctionnalité de détection de jailbreak dans Microsoft Defender pour Point de terminaison sur iOS est désormais généralement disponible. Cela s’ajoute à la protection contre le hameçonnage qui existe déjà.  Pour plus d’informations, voir [La stratégie d’accès conditionnel de configuration basée sur les signaux de risque de l’appareil](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
 ## <a name="march-2021"></a>mars 2021

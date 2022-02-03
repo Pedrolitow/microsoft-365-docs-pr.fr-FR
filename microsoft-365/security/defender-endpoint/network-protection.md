@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: af7ad58002adcccc51df0e69890a5134e57d4dfe
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320768"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326932"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -69,7 +69,7 @@ Pour plus d’informations sur la façon d’activer la protection réseau, voir
 
 La protection réseau fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md) de terminaison, ce qui vous permet de fournir des rapports détaillés sur les événements et les blocages Exploit Protection dans le cadre de [scénarios d’investigation d’alerte](investigate-alerts.md).
 
-Lorsque la protection réseau bloque une connexion, une notification s’affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d’attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
+Lorsque la protection réseau bloque une connexion, une notification s’affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d’attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
 
 Vous pouvez également utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
 

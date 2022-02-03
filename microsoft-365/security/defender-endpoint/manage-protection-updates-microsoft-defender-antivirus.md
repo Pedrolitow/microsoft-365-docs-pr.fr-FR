@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5124b517592fb7561925b0cbd5e5045d4c1ecc9b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 50b2d3f5e8a4dd8ff70c826293d5af9be5541938
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423802"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326956"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Gérer les sources des mises à jour de la protection antivirus Microsoft Defender
 
@@ -60,20 +60,20 @@ Plus les mises à jour sur un point de terminaison sont anciennes, plus le tél�
 Il existe cinq emplacements où vous pouvez spécifier l’emplacement où un point de terminaison doit obtenir des mises à jour :
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup> [[1](#fn1)]<sup></sup>  
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Partage de fichiers réseau](#unc-share)
-- Mises à jour des informations [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft](https://www.microsoft.com/wdsi/defenderupdates) [ <sup> [2](#fn1)]<sup></sup>
+- [Mises à jour des informations de sécurité pour Antivirus Microsoft Defender logiciel anti-programme](https://www.microsoft.com/wdsi/defenderupdates) <sup>malveillant Microsoft [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Serveur de mise à jour des définitions internes Intune : si vous utilisez SCCM/SUP pour obtenir des mises à jour de définition pour Antivirus Microsoft Defender et que vous devez accéder à Windows Update sur les appareils clients bloqués, vous pouvez passer à la cogestion et décharger la charge de travail de protection des points de terminaison vers Intune. Dans la stratégie anti-programme malveillant configurée dans Intune, il existe une option de « serveur de mise à jour de définition interne » qui peut être configurée pour utiliser WSUS local comme source de mise à jour. Cela vous permet de contrôler les mises à jour du serveur WU officiel qui sont approuvées pour l’entreprise, ainsi que de proxy et d’enregistrer le trafic réseau vers le réseau Windows UPdates officiel.
 
-(<a id="fn1">2</a>) Il se peut que votre stratégie et votre Registre l’ont répertoriée en tant qu’intelligence Centre de protection Microsoft contre les programmes malveillants (MMPC), son ancien nom.
+(<a id="fn1">2</a>) Il se peut que votre stratégie et votre Registre l’ont répertoriée en tant qu’intelligence de Centre de protection Microsoft contre les programmes malveillants (MMPC), son ancien nom.
 
 Pour garantir le meilleur niveau de protection, Microsoft Update permet des mises à jour rapides, ce qui signifie des téléchargements plus petits sur une base fréquente. Les sources Windows de mise à jour du service de mise à jour du serveur, de Microsoft Endpoint Configuration Manager et de l’intelligence de sécurité Microsoft offrent des mises à jour moins fréquentes. Par conséquent, le delta peut être plus grand, ce qui entraîne des téléchargements plus importants.
 
 > [!IMPORTANT]
-> Si vous avez définie les mises à jour de [la page](https://www.microsoft.com/security/portal/definitions/adl.aspx) d’aide à la sécurité Microsoft comme source de récupération après le service de mise à jour du serveur Windows ou Microsoft Update, les mises à jour ne sont téléchargées qu’à partir des mises à jour de l’intelligence de sécurité lorsque la mise à jour actuelle est considérée comme non à jour. (Par défaut, cela fait sept jours consécutifs que vous ne pouvez pas appliquer les mises à jour à partir du service de mise à jour du serveur Windows ou des services Microsoft Update).
-> Toutefois, vous pouvez définir le nombre de jours avant que la protection ne soit signalée comme [étant hors date.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)<p>
+> Si vous avez définie les mises à jour de [la page](https://www.microsoft.com/security/portal/definitions/adl.aspx) d’aide à la sécurité Microsoft comme source de récupération après le service de mise à jour du serveur Windows ou Microsoft Update, les mises à jour sont téléchargées uniquement à partir des mises à jour de l’intelligence de sécurité lorsque la mise à jour actuelle est considérée comme étant hors date. (Par défaut, cela fait sept jours consécutifs que vous ne pouvez pas appliquer les mises à jour à partir du service de mise à jour du serveur Windows ou des services Microsoft Update).
+> Toutefois, vous pouvez définir [le nombre de jours avant que la protection ne soit signalée comme étant hors date](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
 > À compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. Les appareils doivent être mis à jour pour prendre en charge SHA-2 afin d’obtenir les dernières mises à jour de l’intelligence de sécurité. Pour plus d’informations, voir [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 Chaque source présente des scénarios classiques qui dépendent de la configuration de votre réseau, en plus de la fréquence de publication des mises à jour, comme décrit dans le tableau suivant :
@@ -86,38 +86,38 @@ Chaque source présente des scénarios classiques qui dépendent de la configura
 |Microsoft Update|Vous souhaitez que vos points de terminaison se connectent directement à Microsoft Update. Cela peut être utile pour les points de terminaison qui se connectent de manière irrégulière à votre réseau d’entreprise, ou si vous n’utilisez pas Windows Server Update Service pour gérer vos mises à jour.|
 |Partage de fichiers|Vous avez des appareils non connectés à Internet (tels que des VM). Vous pouvez utiliser votre hôte de vm connecté à Internet pour télécharger les mises à jour sur un partage réseau, à partir duquel les VM peuvent obtenir les mises à jour. Consultez le [guide de déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md) pour savoir comment les partages de fichiers peuvent être utilisés dans les environnements d’infrastructure de bureau virtuel (VDI).|
 |Microsoft Endpoint Manager|Vous utilisez Microsoft Endpoint Manager pour mettre à jour vos points de terminaison.|
-|Mises à jour des informations de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft (anciennement APPELÉ MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI.](deployment-vdi-microsoft-defender-antivirus.md) Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées depuis Windows Server Update Service ou Microsoft Update pour un [nombre de jours spécifié.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|Mises à jour des informations de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft (anciennement APPELÉ MMPC)|[Assurez-vous que vos appareils sont mis à jour pour prendre en charge SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus Microsoft Defender mises à jour de l’intelligence de sécurité sont mises à jour via Windows Update et, à compter du lundi 21 octobre 2019, les mises à jour de l’intelligence de sécurité seront signées exclusivement par SHA-2. <br/>Téléchargez les dernières mises à jour de protection en raison d’une infection récente ou pour mettre en service une image de base forte pour le [déploiement VDI](deployment-vdi-microsoft-defender-antivirus.md). Cette option doit généralement être utilisée uniquement comme source de retour final, et non comme source principale. Elle sera utilisée uniquement si les mises à jour ne peuvent pas être téléchargées depuis Windows Server Update Service ou Microsoft Update pendant un [nombre de jours spécifié](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Vous pouvez gérer l’ordre dans lequel les sources de mise à jour sont utilisées avec la stratégie de groupe, Microsoft Endpoint Configuration Manager, les cmdlets PowerShell et WMI.
 
 > [!IMPORTANT]
-> Si vous définissez Windows Server Update Service comme emplacement de téléchargement, vous devez approuver les mises à jour, quel que soit l’outil de gestion que vous utilisez pour spécifier l’emplacement. Vous pouvez configurer une règle d’approbation automatique avec Windows Server Update Service, ce qui peut être utile lorsque les mises à jour arrivent au moins une fois par jour. Pour plus d’informations, voir [synchroniser les mises](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)à jour de la protection des points de terminaison dans Windows service de mise à jour du serveur.
+> Si vous définissez Windows Server Update Service comme emplacement de téléchargement, vous devez approuver les mises à jour, quel que soit l’outil de gestion que vous utilisez pour spécifier l’emplacement. Vous pouvez configurer une règle d’approbation automatique avec Windows Server Update Service, ce qui peut être utile lorsque les mises à jour arrivent au moins une fois par jour. Pour plus d’informations, voir [synchroniser les mises à jour de la protection](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus) des points de terminaison dans Windows server update service.
 
-Les procédures de cet article décrivent d’abord comment définir  la commande, puis comment configurer l’option de partage de fichiers si vous l’avez activée.
+Les procédures de cet article décrivent d’abord comment définir la commande, puis comment configurer **l’option de** partage de fichiers si vous l’avez activée.
 
 ## <a name="use-group-policy-to-manage-the-update-location"></a>Utiliser une stratégie de groupe pour gérer l’emplacement de mise à jour
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
+2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration de l’ordinateur**.
 
-3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
+3. Cliquez **sur Stratégies** **puis Modèles d’administration**.
 
-4. Développez l’arborescence **Windows composants Windows Defender** mises à jour des \>  \> **signatures** et configurez les paramètres suivants :
+4. Développez l’arborescence **Windows composants Windows Defender** \>  \> mises à jour des **signatures** et configurez les paramètres suivants :
 
-   1. Double-cliquez sur **le paramètre Définir l’ordre** des sources de téléchargement des mises à jour d’informations de sécurité et définissez l’option sur **Activé.**
+   1. Double-cliquez sur **le paramètre Définir l’ordre des sources** de téléchargement des mises à jour d’informations de sécurité et définissez l’option **sur Activé**.
 
-   2. Entrez l’ordre des sources, séparés par un seul canal, par exemple : , comme `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC` illustré dans la capture d’écran suivante.
+   2. Entrez l’ordre des sources, séparés par un seul canal, par exemple : `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, comme illustré dans la capture d’écran suivante.
 
       :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="paramètre de stratégie de groupe répertoriant l’ordre des sources.":::
 
    3. Sélectionnez **OK**. Cela définira l’ordre des sources de mise à jour de la protection.
 
-   4. Double-cliquez sur le paramètre Définir les **partages de fichiers** pour télécharger les mises à jour d’informations de sécurité et définissez l’option **sur Activé.**
+   4. Double-cliquez sur le **paramètre Définir les partages de fichiers** pour télécharger les mises à jour d’informations de sécurité et définissez l’option **sur Activé**.
 
-   5. Spécifiez la source de partage de fichiers. Si vous avez plusieurs sources, entrez chaque source dans l’ordre où elles doivent être utilisées, séparées par un seul canal. Utilisez [la notation UNC standard](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) pour le chemin d’accès, par exemple : `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name` . Si vous n’entrez aucun chemin d’accès, cette source est ignorée lorsque l’VM télécharge les mises à jour.
+   5. Spécifiez la source de partage de fichiers. Si vous avez plusieurs sources, entrez chaque source dans l’ordre où elles doivent être utilisées, séparées par un seul canal. Utilisez [la notation UNC standard](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) pour le chemin d’accès, par exemple : `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`. Si vous n’entrez aucun chemin d’accès, cette source est ignorée lorsque l’VM télécharge les mises à jour.
 
-   6. Cliquez sur **OK**. Cela définit l’ordre des partages de fichiers lorsque cette source est référencé dans le paramètre de stratégie de groupe Définir l’ordre des **sources...**
+   6. Cliquez sur **OK**. Cela définit l’ordre des partages de fichiers lorsque cette source est référencé dans le paramètre de stratégie de groupe Définir l’ordre des **sources...**
 
 > [!NOTE]
 > Pour Windows 10, versions 1703 jusqu’à 1809 inclus, le chemin d’accès de stratégie est **Windows Components > Antivirus Microsoft Defender > Signature Updates** For Windows 10, version 1903, le chemin d’accès de stratégie est **Windows Components > Antivirus Microsoft Defender > mises à jour de l’Intelligence de la sécurité**
@@ -144,7 +144,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Utiliser Windows Management Instruction (WMI) pour gérer l’emplacement de mise à jour
 
-Utilisez la [ **méthode Set** de la **classe MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) pour les propriétés suivantes :
+Utilisez la [**méthode Set** de la **classe MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) pour les propriétés suivantes :
 
 ```WMI
 SignatureFallbackOrder
@@ -163,7 +163,7 @@ Voir [Policy CSP - Defender/SignatureUpdateFallbackOrder](/windows/client-manage
 
 Cet article explique comment configurer et gérer les mises à jour pour Antivirus Microsoft Defender. Toutefois, les fournisseurs tiers peuvent être utilisés pour effectuer ces tâches.
 
-Par exemple, supposons que Contoso a embauché Fabrikam pour gérer sa solution de sécurité, qui inclut Antivirus Microsoft Defender. Fabrikam utilise généralement [Windows Management Instrumentation,](./use-wmi-microsoft-defender-antivirus.md)des [cmdlets PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md)ou [Windows](./command-line-arguments-microsoft-defender-antivirus.md) ligne de commande pour déployer des correctifs et des mises à jour.
+Par exemple, supposons que Contoso a embauché Fabrikam pour gérer sa solution de sécurité, qui inclut Antivirus Microsoft Defender. Fabrikam utilise généralement [Windows Management Instrumentation](./use-wmi-microsoft-defender-antivirus.md), des [cmdlets PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md) ou [Windows](./command-line-arguments-microsoft-defender-antivirus.md) ligne de commande pour déployer des correctifs et des mises à jour.
 
 > [!NOTE]
 > Microsoft ne teste pas les solutions tierces pour la gestion des Antivirus Microsoft Defender.
@@ -190,13 +190,13 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
 
 3. Téléchargez le script PowerShell à [partir www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4).
 
-4. Cliquez **sur Téléchargement manuel.**
+4. Cliquez **sur Téléchargement manuel**.
 
-5. Cliquez **sur Télécharger le fichier nupkg brut.**
+5. Cliquez **sur Télécharger le fichier nupkg brut**.
 
 6. Extrayons le fichier.
 
-7. Copiez le fichier SignatureDownloadCustomTask.ps1 dans le dossier que vous avez précédemment créé, C:\Tool\PS-Scripts\ .
+7. Copiez le fichier SignatureDownloadCustomTask.ps1 dans le dossier que vous avez précédemment créé. `C:\Tool\PS-Scripts\`
 
 8. Utilisez la ligne de commande pour configurer la tâche programmée.
 
@@ -244,12 +244,12 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
        ```
 
    > [!NOTE]
-   > Lorsque les tâches programmées sont créées, vous pouvez les trouver dans le Programmeur des tâches sous Microsoft\Windows\Windows Defender
+   > Lorsque les tâches programmées sont créées, vous pouvez les trouver dans le Programmeur des tâches sous `Microsoft\Windows\Windows Defender`.
 
-9. Exécutez chaque tâche manuellement et vérifiez que vous avez des données (mpam-d.exe, mpam-fe.exe et nis_full.exe) dans les dossiers suivants (vous avez peut-être choisi différents emplacements) :
+9. Exécutez chaque tâche manuellement et vérifiez que vous avez des données (`mpam-d.exe`et `nis_full.exe``mpam-fe.exe`) dans les dossiers suivants (vous avez peut-être choisi différents emplacements) :
 
-   - C:\Temp\TempSigs\x86
-   - C:\Temp\TempSigs\x64
+   - `C:\Temp\TempSigs\x86`
+   - `C:\Temp\TempSigs\x64`
 
    Si la tâche programmée échoue, exécutez les commandes suivantes :
 
@@ -266,10 +266,10 @@ Configurer un partage de fichiers réseau (lecteur UNC/mappé) pour télécharge
     > [!NOTE]
     > Des problèmes peuvent également être dus à la stratégie d’exécution.
 
-10. Créez un partage pointant vers C:\Temp\TempSigs (par exemple, \\ serveur\mises à jour).
+10. Créez un partage pointant vers `C:\Temp\TempSigs` (par exemple, `\\server\updates`).
 
     > [!NOTE]
-    > Au minimum, les utilisateurs authentifiés doivent avoir accès en lecture.
+    > Au minimum, les utilisateurs authentifiés doivent avoir accès en lecture. Cette exigence s’applique également aux ordinateurs de domaine, au partage et au NTFS (sécurité).
 
 11. Définissez l’emplacement du partage dans la stratégie sur le partage.
 

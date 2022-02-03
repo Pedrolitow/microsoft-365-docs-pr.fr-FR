@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a411de512d5e07eb58f5a93163882836af823906
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 11927ccd5b132a0ecb3e1a42ddc4622bd5b0d9af
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221255"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327262"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +51,7 @@ Installez votre simulateur préféré, exécutez des scénarios dans le laborato
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devrez satisfaire [](minimum-requirements.md#licensing-requirements) aux exigences de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
+Vous devrez satisfaire aux exigences [](minimum-requirements.md#licensing-requirements) de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
 
 Vous devez avoir **les autorisations Gérer les paramètres** de sécurité pour :
 
@@ -62,13 +62,13 @@ Vous devez avoir **les autorisations Gérer les paramètres** de sécurité pour
 
 Si vous avez activé le contrôle d’accès basé sur un rôle (RBAC) et créé au moins un groupe d’ordinateurs, les utilisateurs doivent avoir accès à tous les groupes d’ordinateurs.
 
-Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
+Pour plus d’informations, voir [Créer et gérer des rôles](user-roles.md).
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
 ## <a name="get-started-with-the-lab"></a>Mise en place de l’atelier
 
-Vous pouvez accéder à l’atelier à partir du menu. Dans le menu de navigation, sélectionnez **Évaluation et didacticiels > laboratoire d’évaluation.**
+Vous pouvez accéder à l’atelier à partir du menu. Dans le menu de navigation, sélectionnez **Évaluation et didacticiels > laboratoire d’évaluation**.
 
 > [!NOTE]
 >
@@ -80,11 +80,11 @@ Vous avez déjà un atelier ? Veillez à activer les nouveaux simulateurs de men
 
 ## <a name="setup-the-evaluation-lab"></a>Configurer le laboratoire d’évaluation
 
-1. Dans le volet de navigation, sélectionnez **Évaluation & didacticiels** \> **Laboratoire** d’évaluation, puis sélectionnez **Laboratoire d’installation.**
+1. Dans le volet de navigation, sélectionnez **Évaluation & didacticiels** \> **Laboratoire** d’évaluation, puis sélectionnez **Laboratoire d’installation**.
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Image de la page d’accueil du laboratoire d’évaluation.":::
 
-2. En fonction de vos besoins d’évaluation, vous pouvez choisir de configurer un environnement avec moins d’appareils pendant une période plus longue ou plus d’appareils sur une période plus courte. Sélectionnez votre configuration d’atelier préférée, puis sélectionnez **Suivant.**
+2. En fonction de vos besoins d’évaluation, vous pouvez choisir de configurer un environnement avec moins d’appareils pendant une période plus longue ou plus d’appareils sur une période plus courte. Sélectionnez votre configuration d’atelier préférée, puis **sélectionnez Suivant**.
 
     ![Image des options de configuration de l’atelier.](images/lab-creation-page.png)
 
@@ -99,7 +99,7 @@ Vous avez déjà un atelier ? Veillez à activer les nouveaux simulateurs de men
 
     ![Image de la page récapitulatif.](images/lab-setup-summary.png)
 
-5. Examinez le résumé et sélectionnez **Le laboratoire d’installation.**
+5. Examinez le résumé et sélectionnez **Le laboratoire d’installation**.
 
 Une fois le processus de configuration de l’atelier terminé, vous pouvez ajouter des appareils et exécuter des simulations.
 
@@ -121,27 +121,25 @@ Les composants de sécurité suivants sont pré-configurés dans les périphéri
 - [Exploit Protection](enable-exploit-protection.md)
 - [Protection du réseau](network-protection.md)
 - [Détection d’applications potentiellement indésirables](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Protection cloud](cloud-protection-microsoft-defender-antivirus.md)
+- [Protection fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configurer la protection toujours en place.](configure-real-time-protection-microsoft-defender-antivirus.md)
+> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-Les paramètres d’examen automatisé dépendent des paramètres du client. Elle sera configurée pour être semi-automatisée par défaut. Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
+Les paramètres d’examen automatisé dépendent des paramètres du client. Elle sera configurée pour être semi-automatisée par défaut. Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées](automated-investigations.md).
 
 > [!NOTE]
 > La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
 
-1. Dans le tableau de bord, **sélectionnez Ajouter un appareil.**
+1. Dans le tableau de bord, sélectionnez **Ajouter un appareil**.
 
-2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu).
-
-    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuration de laboratoire avec options d’appareil.":::
+2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 et Linux (Ubuntu). 
 
    > [!NOTE]
    > En cas de problème lors du processus de création de l’appareil, vous serez averti et vous devrez envoyer une nouvelle demande. Si la création de l’appareil échoue, elle n’est pas comptabilisée dans le quota autorisé global.
 
-3. Les détails de connexion sont affichés. Sélectionnez **Copier** pour enregistrer le mot de passe de l’appareil.
+3. Les détails de connexion sont affichés. **Sélectionnez Copier** pour enregistrer le mot de passe de l’appareil.
 
    > [!NOTE]
    > Le mot de passe n’est affiché qu’une seule fois. N’oubliez pas de l’enregistrer pour une utilisation ultérieure.
@@ -150,18 +148,19 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 4. La mise en place de l’appareil commence. Cela peut prendre jusqu’à 30 minutes environ.
 
-5. Consultez l’état des périphériques de test, les niveaux de risque et d’exposition, ainsi que l’état des installations de simulateur en sélectionnant **l’onglet Appareils.**
+5. Consultez l’état des périphériques de test, les niveaux de risque et d’exposition, ainsi que l’état des installations de simulateur en sélectionnant **l’onglet Appareils** .
 
     ![Image de l’onglet Appareils.](images/machines-tab.png)
 
    > [!TIP]
    > Dans la colonne **État du** simulateur, vous pouvez pointer sur l’icône d’informations pour connaître l’état d’installation d’un agent.
 
+
 ## <a name="request-for-more-devices"></a>Demander plus d’appareils
 
 Lorsque tous les appareils existants sont utilisés et supprimés, vous pouvez demander d’autres appareils. Vous pouvez demander des ressources d’atelier une fois par mois.
 
-1. Dans le tableau de bord du laboratoire d’évaluation, **sélectionnez Demander plus d’appareils.**
+1. Dans le tableau de bord du laboratoire d’évaluation, **sélectionnez Demander plus d’appareils**.
 
    ![Image de demande pour plus d’appareils.](images/request-more-devices.png)
 
@@ -183,14 +182,14 @@ Utilisez les périphériques de test pour exécuter vos propres simulations d’
 
 Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
 
-- Scénarios d’attaque « Faire [vous-même »](https://security.microsoft.com/tutorials/all)
+- [Scénarios d’attaque « Faire vous-même »](https://security.microsoft.com/tutorials/all)
 - Simulateurs de menaces
 
 Vous pouvez également utiliser la recherche [avancée pour](advanced-hunting-overview.md) interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 
-Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://security.microsoft.com/tutorials/all)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
+Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos scénarios d’attaque « Faites-le [vous-même ».](https://security.microsoft.com/tutorials/all) Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
 
 > [!NOTE]
 > La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
@@ -199,12 +198,15 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [sc�
 
     ![Image du bouton de connexion pour les périphériques de test.](images/test-machine-table.png)
 
-2. Enregistrez le fichier RDP et lancez-le en sélectionnant **Connecter**.
 
+2. Pour **Windows :** enregistrez le fichier RDP et lancez-le en **sélectionnant Connecter**.<br> 
     ![Image de la connexion bureau à distance.](images/remote-connection.png)
 
+    Pour **les appareils Linux** : vous devez utiliser un client SSH local et la commande fournie. 
+
+
     > [!NOTE]
-    > Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
+    > Si vous n’avez pas de copie du mot de passe enregistrée lors de la configuration initiale, vous pouvez réinitialiser  le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
     >
     > ![Image du mot de passe de réinitialisation.](images/reset-password-test-machine.png)
     >
@@ -229,7 +231,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 > - Les appareils doivent être ajoutés au laboratoire d’évaluation
 > - Les simulateurs de menaces doivent être installés dans le laboratoire d’évaluation
 
-1. Dans le portail, **sélectionnez Créer une simulation.**
+1. Dans le portail, **sélectionnez Créer une simulation**.
 
 2. Sélectionnez un simulateur de menaces.
 
@@ -239,17 +241,17 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
     Vous pouvez obtenir la galerie de simulations à partir de :
     - Tableau de bord d’évaluation principal dans la **vignette Vue d’ensemble simulations** ou
-    - En naviguant à partir  du volet de navigation Évaluation et didacticiels \> **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
+    - En naviguant à partir du volet de  navigation Évaluation et didacticiels \> **Simulation & didacticiels**, puis sélectionnez **Catalogue simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
 
-5. Sélectionnez **Créer une simulation.**
+5. Sélectionnez **Créer une simulation**.
 
-6. Affichez la progression d’une simulation en sélectionnant **l’onglet Simulations.** Afficher l’état de simulation, les alertes actives et d’autres détails.
+6. Affichez la progression d’une simulation en sélectionnant **l’onglet Simulations** . Afficher l’état de simulation, les alertes actives et d’autres détails.
 
     ![Image de l’onglet Simulations.](images/simulations-tab.png)
 
-Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender pour le point de terminaison qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
+Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer **Microsoft Defender pour le** point de terminaison pour déclencher une investigation et une correction automatisées. Consultez les preuves collectées et analysées par la fonctionnalité.
 
 Recherchez des preuves d’attaque par le biais d’un recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
 
@@ -292,6 +294,6 @@ En un coup d’œil, vous pourrez rapidement voir :
 
 Vos commentaires nous aident à mieux protéger votre environnement contre les attaques avancées. Partagez votre expérience et vos impressions à partir des fonctionnalités du produit et des résultats d’évaluation.
 
-Faites-nous part de vos commentaires en sélectionnant **Fournir des commentaires.**
+Faites-nous part de vos commentaires en sélectionnant **Fournir des commentaires**.
 
 ![Image de commentaires.](images/send-us-feedback-eval-lab.png)

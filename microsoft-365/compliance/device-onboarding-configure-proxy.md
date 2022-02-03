@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
-ms.openlocfilehash: 645bb3eca60e37db817f810992fd5022399e1249
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 2d0bc6484636cffb479ccb96b3458fddf0697cd7
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950827"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327412"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>Configurer les paramètres de proxy d’appareil et de connexion Internet pour Information Protection
 
@@ -137,7 +137,7 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 
 > [!NOTE]
 >
-> L'outil de l'analyseur de connectivité n'est pas compatible avec les créations de [processus de bloc de règles ASR provenant de PSExec et de commandes WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité.
+> L’outil Analyseur de connectivité n’est pas compatible avec la règle de réduction de la surface d’attaque [Bloquer les créations de processus provenant des commandes PSExec et WMI](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands). Vous devrez désactiver temporairement cette règle pour exécuter l'outil de connectivité.
 >
 > Lorsque TelemetryProxyServer est défini, dans le registre ou via la stratégie de groupe, Defender pour les points de terminaison se rabat sur le mode direct s'il ne peut pas accéder au proxy défini. Sujets connexes :
 >

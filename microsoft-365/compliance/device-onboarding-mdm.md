@@ -15,12 +15,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 578a1e06bf5f83f700c5db69ddc32a480d68b729
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244894"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327192"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 et Windows 11 à l’aide des outils de gestion des périphériques mobiles
 
@@ -35,11 +35,11 @@ Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) 
 ## <a name="before-you-begin"></a>Avant de commencer
 Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
 
-Pour plus d’informations sur l’activation de la gestion des périphériques Microsoft Intune, voir [Inscription d’appareil (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
+Pour plus d’informations sur l’activation de la gestion des périphériques Microsoft Intune, voir Inscription d’appareil [(Microsoft Intune).](/mem/intune/enrollment/device-enrollment).
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>Intégrer des appareils à l’aide Microsoft Intune
 
-Suivez les instructions [d’Intune.](/intune/advanced-threat-protection)
+Suivez les instructions [d’Intune](/intune/advanced-threat-protection).
 
 > [!NOTE]
 > - La **stratégie État d’état d’état des appareils** intégrés utilise des propriétés en lecture seule et ne peut pas être corrigé.
@@ -53,15 +53,13 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 1. Obtenez le package deboarding à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **l’intégration**  >  **de l’appareil.**
+2. Dans le volet de navigation, sélectionnez **Paramètres** >  **Device onboardingOffboarding** > .
 
-3. Dans le **champ Méthode de déploiement,** sélectionnez **Gestion des périphériques mobiles /Microsoft Intune**.
+3. Dans le **champ Méthode de déploiement**, sélectionnez **Gestion des périphériques mobiles/Microsoft Intune**.
 
-4. Cliquez **sur Télécharger le package,** puis enregistrez .zip fichier.
+4. Cliquez **sur Télécharger le package**, puis enregistrez .zip fichier.
 
 5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
-
-
 
 6. Utilisez la stratégie Microsoft Intune de configuration personnalisée pour déployer les paramètres OMA-URI pris en charge suivants.
 
@@ -71,7 +69,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
 > [!NOTE]
-> Si Microsoft Defender pour le point de  terminaison est déjà configuré, vous pouvez activer l’intégration de l’appareil et l’étape 6 n’est plus nécessaire.
+> Si Microsoft Defender pour le point de terminaison est déjà configuré,  vous pouvez activer l’intégration de l’appareil et l’étape 6 n’est plus nécessaire.
 
 > [!NOTE]
 > La **stratégie État d’état d’état des** appareils déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
