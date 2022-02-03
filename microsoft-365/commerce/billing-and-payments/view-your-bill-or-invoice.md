@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 01/25/2022
-ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: b7a8c6a1ec58fdeb74349f06a3a9ef25c390482d
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218968"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355007"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -70,6 +70,8 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 3. Dans la page résumé, vous pouvez voir les éléments, la quantité, le prix, la remise et le total de tous les articles de la facture.
 4. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger un fichier PDF**.
 
+Si vous souhaitez recevoir une copie de votre relevé de facturation par e-mail, consultez [Gérer les notifications de facturation et les pièces jointes aux factures](manage-billing-notifications.md).
+
 ::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>Demander un Fapiao
@@ -89,31 +91,6 @@ Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao]
 >
 > Microsoft 365 services ne fournissent pas de reçus de paiement.
 > Pour les paiements par carte de crédit, utilisez le relevé de facturation de la facture et de la carte de crédit pour faire correspondre votre paiement.
-
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recevoir une copie de votre relevé de facturation par courrier électronique
-
-Vous pouvez envoyer une copie de votre relevé de facturation par courrier électronique. Dans ce cas :
-
-- Un courrier électronique est envoyé aux adresses de courrier principale et secondaire de chaque personne mentionnée comme destinataire de la notification.
-- Vous recevez deux courriers distincts : un premier vous informant que votre facture est prête et contenant des instructions de connexion au Centre d'administration pour la consulter, et un deuxième incluant le relevé de facturation en pièce jointe.
-
-### <a name="to-receive-your-billing-statement-in-email"></a>Pour recevoir votre relevé de facturation par e-mail
-
-::: moniker range="o365-worldwide"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
-
-::: moniker-end
-
-2. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
-
-    Vous pouvez arrêter de recevoir les courriers électroniques incluant les relevés de facturation à tout moment en positionnant le bouton bascule sur **Désactiver**.
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>Exécuter le diagnostic de frais inconnus
 
