@@ -1,7 +1,7 @@
 ---
 title: Rechercher dans le journal d’audit dans le Centre de conformité Microsoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,24 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+  - Strat_O365_IP
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom:
-- seo-marvel-apr2020
-- admindeeplinkMAC
-ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272089"
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
 ---
+
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le Centre de conformité Microsoft 365 afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
@@ -1165,9 +1160,9 @@ Dans la plupart des services, l’audit est activé par défaut une fois que vou
 
 Non. Le pipeline de service d’audit est presque en temps réel et ne peut donc pas prendre en charge la déduplication.
 
-**Les données d’audit circulent-elles entre les géographies ?**
+**Où sont stockées les données d’audit ?**
 
-En général, non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, nous pouvons être amenés à transférer des données entre ces régions pour l’équilibrage de charge pendant les problèmes de site actif. Lorsque nous effectuons ces activités, les données en transit sont chiffrées. Pour les organisations multi-géographiques, les données d’audit collectées à partir de toutes les régions de l’organisation seront stockées uniquement dans la région d’origine de l’organisation.
+Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Les clients domiciliés dans ces régions verront leurs données d'audit stockées dans la région. Pour les client domiciliés dans de différentes régions, les données d'audit collectées de toutes les régions seront stockées uniquement dans la région du siège principal du client. Toutefois, il peut arriver que nous déplacions les données entre ces régions afin d’équilibrer la charge, uniquement lors de problèmes liés aux sites actifs. Lorsque nous effectuons ces activités, les données en transit sont chiffrées. 
 
 **Les données d’audit sont-elles chiffrées ?**
 

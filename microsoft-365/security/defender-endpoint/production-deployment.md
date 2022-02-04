@@ -1,7 +1,7 @@
 ---
 title: Configurer Microsoft Defender pour le déploiement de point de terminaison
 description: Découvrez comment configurer le déploiement de Microsoft Defender pour Endpoint
-keywords: déployer, configuration, validation de licence, configuration du client, configuration réseau
+keywords: 'déployer, configuration, validation de licence, configuration du client, configuration réseau'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,19 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e58cf272688a238a428fb6b15aed568b7fa51a4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322058"
 ---
+
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -82,6 +77,9 @@ Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour 
 L’intégration à Microsoft Defender pour le point de terminaison est facile. Dans le menu de navigation, sélectionnez n’importe quel élément sous la section Points de terminaison ou toute fonctionnalité Microsoft 365 Defender telle que les incidents, le chasse, le centre de mesures ou l’analyse des menaces pour lancer le processus d’intégration.
 
 À partir d’un navigateur web, accédez <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">au portail Microsoft 365 Defender web</a>.
+
+## <a name="data-center-location"></a>Emplacement du centre de données
+Microsoft Defender pour le point de terminaison stockera et traitera les données au même emplacement [que celui](/microsoft-365/security/defender/m365d-enable) utilisé par Microsoft 365 Defender. Si Microsoft 365 Defender n’a pas encore été désactivé, l’intégration à Microsoft Defender pour le point de terminaison active également Microsoft 365 Defender et un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran.
 
 ## <a name="network-configuration"></a>Configuration du réseau
 

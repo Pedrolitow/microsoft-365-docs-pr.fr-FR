@@ -1,8 +1,8 @@
 ---
-title: Conditions préalables à l’accès aux identités et appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
+title: "Conditions préalables à l’accès aux identités et appareils uniquement pour le cloud dans votre environnement de test Microsoft\_365"
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables pour l’authentification uniquement dans le cloud.
-ms.openlocfilehash: c684e8598f7dd23218143f9f7707c815d834fda5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172010"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
@@ -36,7 +31,7 @@ La configuration de cet environnement de test comprend huit étapes :
 3. Configurer la réinitialisation du mot de passe libre-service
 4. Configurer l’authentification multifacteur
 5. Activer l’inscription automatique de l’appareil des ordinateurs Windows domaine
-6. Configurer la protection par mot de passe Azure AD 
+6. Configurer la protection Azure AD mot de passe 
 7. Activer Azure AD Identity Protection
 8. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
@@ -81,7 +76,7 @@ Testez l’authentification multifacteur uniquement pour le compte Utilisateur 
 
 Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs joints Windows domaine.
 
-## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer la protection par mot de passe Azure AD 
+## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer la protection Azure AD mot de passe 
 
 Suivez [ces instructions pour](/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
 
@@ -109,7 +104,7 @@ Pour Skype Entreprise Online :
   Get-CsOAuthConfiguration
   ```
 
-Le résultat est un environnement de test qui répond aux exigences de la configuration préalable en [nuage](../security/office-365-security/identity-access-prerequisites.md#prerequisites) uniquement pour l’accès aux identités et aux appareils. 
+Le résultat est un environnement de test qui répond aux exigences de la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) préalable en nuage uniquement pour l’accès aux identités et aux appareils. 
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -119,7 +114,7 @@ Utilisez [Stratégies d’accès courantes identité et appareil](../security/of
 
 [Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
 
-[Feuille de route des identités](identity-roadmap-microsoft-365.md)
+[Déployer l’identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 

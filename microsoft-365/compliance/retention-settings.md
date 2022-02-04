@@ -1,29 +1,24 @@
 ---
 title: Configurer les paramètres de rétention pour conserver ou supprimer automatiquement du contenu
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Comprendre les paramètres que vous pouvez configurer dans une stratégie de rétention ou une stratégie d’étiquette de rétention pour conserver ce que vous voulez et supprimer ce que vous ne voulez pas.
-ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520931"
 ---
+
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Paramètres courants des stratégies de rétention et stratégies d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
@@ -53,9 +48,6 @@ Lorsque vous avez décidé d’utiliser une étendue adaptative ou statique, uti
 
 ### <a name="configuration-information-for-adaptive-scopes"></a>Informations de configuration pour les étendues adaptatives
 
-> [!NOTE]
-> Les étendues adaptatives en tant que nouvelle fonctionnalité sont actuellement en préversion et susceptibles d’être modifiées. L’autre option est une étendue statique, qui fournit le même comportement avant l’introduction des étendues adaptatives et peut être utilisée si les étendues adaptatives ne répondent pas aux besoins de votre entreprise.
-
 Lorsque vous choisissez d’utiliser des étendues adaptatives, vous êtes invité à sélectionner le type d’étendue adaptative souhaité. Il existe trois types d’étendues adaptatives différents et chacune prend en charge des attributs ou des propriétés différents :
 
 | Type d’étendue adaptative | Les attributs ou propriétés pris en charge sont les suivants : |
@@ -72,7 +64,9 @@ Les noms de propriétés des sites sont basés sur les propriétés gérées par
 Les attributs et propriétés répertoriés dans la table peuvent être facilement spécifiés lorsque vous configurez une étendue adaptative à l’aide du générateur de requêtes simple. Les attributs et propriétés supplémentaires sont pris en charge avec le générateur de requêtes avancé, comme décrit dans la section suivante.
 
 > [!TIP]
-> Pour plus d’informations sur l’utilisation du générateur de requêtes avancé, voir le webinaire suivant : Création de requêtes avancées pour les utilisateurs et les groupes avec des étendues de [stratégie adaptative](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea).
+> Pour plus d’informations sur l’utilisation du générateur de requêtes avancées, consultez les webinaires suivants : 
+> - [La création de requêtes avancées pour les utilisateurs et les groupes avec des étendues de stratégies adaptatives](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [La création de requêtes pour les sites SharePoint avec des étendues de stratégie adaptative](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 Une stratégie unique de rétention peut avoir une ou plusieurs étendues adaptatives.
 
@@ -82,10 +76,10 @@ Avant de configurer votre étendue adaptative, utilisez la section précédente 
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
-    - Si vous utilisez la gestion des enregistrements :
+    - Si vous utilisez la solution de gestion des enregistrements :
         - **Solutions** > **Gestion des enregistrements** > **étendues adaptatives** onglet > + **Créer l’étendue**
         
-    - Si vous n’utilisez pas la gestion des enregistrements :
+    - Si vous utilisez la solution de gouvernance des informations :
        - **Solutions** > **Gouvernance des informations** > **Étendues adaptatives** onglet > + **Créer une étendue**
     
     Votre solution n’apparaît pas immédiatement dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 

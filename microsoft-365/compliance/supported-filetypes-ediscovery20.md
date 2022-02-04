@@ -1,28 +1,23 @@
 ---
 title: Types de fichiers pris en charge dans Advanced eDiscovery
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
-description: Liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery, y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
+  - MOE150
+  - MET150
+description: 'Liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery, y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7462048816f8c5962453422506116e6e88d8a54c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938599"
 ---
+
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
 Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux niveaux différents. Les types de fichiers de support sont décrits dans les tableaux suivants de cet article. Cette liste n’est pas finalisée et nous ajouterons de nouveaux types de fichiers à mesure que nous continuerons nos tests de validation. Ces tableaux indiquent si un type de fichier est pris en charge pour l’extraction de texte (et la reconnaissance optique de caractères ou l’extraction de texte OCR pour les fichiers image), consultable dans la visionneuse native et également pris en charge dans la visionneuse Annotate dans Advanced eDiscovery.
@@ -248,6 +243,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux
 |Type Mime|Identification de fichier|Extraction des métadonnées|Extraction de texte|Visionneuse native|Annoter la visionneuse|Extensions possibles|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|Oui|Oui|Oui|Oui|Oui|N/A|
+|application/octet-stream|Oui|Non|Non|Non|Non|.fluid|
 |application/vnd.ms-graph|Oui|Oui|Non|Non|Non||
 |application/winhlp|Oui|Oui|Non|Non|Non|.hlp|
 |application/x-tnef|Oui|Oui|Non|Non|Non||

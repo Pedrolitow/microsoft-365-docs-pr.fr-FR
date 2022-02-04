@@ -1,7 +1,7 @@
 ---
 title: 'Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)'
 f1.keywords:
-- NOCSH
+  - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: dansimp
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- remotework
-- m365solution-remotework
-- m365solution-scenario
-ms.custom: ''
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - remotework
+  - m365solution-remotework
+  - m365solution-scenario
+ms.custom: null
 description: Demandez à vos travailleurs hybrides de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934824"
 ---
+
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)
 
 Pour renforcer la sécurité des connexions de vos travailleurs hybrides, utilisez l’authentification multifacteur (MFA). L’authentification multifacteur exige que les connexions des utilisateurs fassent l’objet d’une vérification supplémentaire, au-delà du mot de passe du compte d’utilisateur. Même si un utilisateur malveillant détermine un mot de passe de compte d’utilisateur, il doit également répondre à une vérification supplémentaire, par exemple, un message texte envoyé vers un smartphone, avant que l’accès ne lui soit accordé.
@@ -106,7 +101,7 @@ Outre la possibilité d’utiliser l’authentification cloud pour les utilisate
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Ressources techniques pour l’administrateur pour l’authentification multifacteur et l’identité
 
 - [Les 5 principales façons dont Azure AD peut vous aider pour activer le travail à distance](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [Feuille de route relative à l’identité pour Microsoft 365](../enterprise/identity-roadmap-microsoft-365.md)
+- [Infrastructure d’identité pour Microsoft 365](../enterprise/deploy-identity-solution-overview.md)
 - [Vidéos de formation d’Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 
 ## <a name="results-of-step-1"></a>Résultats de l’étape 1

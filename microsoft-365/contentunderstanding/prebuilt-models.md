@@ -7,24 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer et configurer un modèle pré-SharePoint Syntex.
-ms.openlocfilehash: bb557c9b98a265516da93e6e661caabf91994486
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322624"
 ---
+
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Utilisez un modèle préétacé pour extraire des informations de factures ou de reçus dans Microsoft SharePoint Syntex
 
 Les modèles pré-conçus sont préentraînés pour reconnaître les documents et les informations structurées dans les documents. Au lieu de devoir créer un modèle personnalisé à partir de zéro, vous pouvez itérer sur un modèle pré-formé existant pour ajouter des champs spécifiques qui correspondent aux besoins de votre organisation. 
-
-Les modèles prédéfincis utilisent la reconnaissance optique de caractères (OCR) associée à des modèles d’apprentissage profond pour identifier et extraire des champs de données et de texte prédéfinés communs à des types de documents spécifiques. Commencez par analyser l’un de vos fichiers par rapport au modèle pré-existant. Vous sélectionnez ensuite les champs détectés qui sont logiques pour votre objectif. Si le modèle ne détecte pas les champs dont vous avez besoin, vous pouvez analyser à nouveau à l’aide d’un autre fichier.
 
 Pour l’instant, deux modèles pré-pré-préentaux sont disponibles : facture et reçu.
 

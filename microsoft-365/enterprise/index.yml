@@ -32,7 +32,7 @@ conceptualContent:
   items:
     - title: Déploiement des éléments clés
       links:
-        - url: identity-roadmap-microsoft-365.md
+        - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: Infrastructure d’identités
         - url: /windows/deployment/

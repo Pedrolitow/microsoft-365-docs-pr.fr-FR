@@ -1,8 +1,8 @@
 ---
-title: Accès aux identités et appareils pour votre environnement de test Microsoft 365
+title: "Accès aux identités et appareils pour votre environnement de test Microsoft\_365"
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
-ms.openlocfilehash: 6556332d9753df0fc59ca6ebee0ae9c1ba2b33da
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200172"
 ---
+
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
@@ -41,7 +36,7 @@ Pour créer un environnement de test qui dispose des configurations communes d�
 
 [Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
 
-[Feuille de route des identités](identity-roadmap-microsoft-365.md)
+[Déployer l’identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 

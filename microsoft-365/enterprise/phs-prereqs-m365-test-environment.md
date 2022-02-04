@@ -2,7 +2,7 @@
 title: Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Créez un environnement Microsoft 365 pour tester l’accès aux identités et appareils avec les conditions préalables applicables à l’authentification de la synchronisation du hachage du mot de passe.
-ms.openlocfilehash: befdcecf2df21afdf48edff0b5b7dcbc532a6278
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208780"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
@@ -38,7 +33,7 @@ La configuration de cet environnement de test se fait en dix phases :
 5. Configurer la réinitialisation de mot de passe en libre-service pour tous les comptes d’utilisateur
 6. Configurer l’authentification multifacteur pour tous les comptes d’utilisateur
 7. Activer l’inscription automatique de l’appareil des ordinateurs Windows domaine
-8. Configurer la protection par mot de passe Azure AD 
+8. Configurer la protection Azure AD mot de passe 
 9. Activer Azure AD Identity Protection
 10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
 
@@ -87,11 +82,11 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils joints à un domaine Windows ordinateurs 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs 
 
 Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs joints Windows domaine.
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection Azure AD mot de passe 
 
 Suivez [ces instructions pour](/azure/active-directory/authentication/concept-password-ban-bad) bloquer les mots de passe faibles connus et leurs variantes.
 
@@ -129,7 +124,7 @@ Utilisez [Stratégies d’accès courantes identité et appareil](../security/of
 
 [Guides de laboratoire de Test Autres identités](m365-enterprise-test-lab-guides.md#identity)
 
-[Feuille de route des identités](identity-roadmap-microsoft-365.md)
+[Déployer l’identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 

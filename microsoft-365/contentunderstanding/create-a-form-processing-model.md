@@ -7,19 +7,14 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez comment créer un modèle de traitement de formulaire dans SharePoint Syntex.
-ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993415"
 ---
+
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Créer un modèle de traitement de formulaire dans Microsoft SharePoint Syntex
 
 </br>
@@ -135,11 +130,14 @@ Vous devez baliser les documents pour apprendre au modèle à comprendre les cha
 
     ![OK.](../media/content-understanding/doc-lib-done.png) 
 
+> [!NOTE]
+> Si un modèle de traitement de formulaire personnalisé et un modèle de compréhension de document sont appliqués à la même bibliothèque, le fichier est classé à l’aide du modèle de compréhension du document et de tous les extracteurs entraînés pour ce modèle. S’il existe des colonnes vides qui correspondent au modèle de traitement de formulaire, les colonnes sont remplies à l’aide de ces valeurs extraites.
+
 ### <a name="use-flows-to-extract-information"></a>Utiliser des flux pour extraire des informations
 
 Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fichiers dans une bibliothèque dans laquelle un modèle de traitement de formulaire a été appliqué.
 
-- **Extraire des informations** d’une image ou d’un fichier PDF avec un modèle de traitement de formulaire : utilisez cette procédure pour extraire du texte d’une image sélectionnée ou d’un fichier PDF en exécutant un modèle de traitement de formulaire. Prend en charge un seul fichier sélectionné à la fois et uniquement les fichiers PDF et les fichiers image (PNG, JPG et JPEG). Pour exécuter le flux, sélectionnez un fichier, puis sélectionnez **Automatiser les informations**  >  **d’extraction.**
+- **Extraire des informations** d’une image ou d’un fichier PDF avec un modèle de traitement de formulaire : utilisez cette procédure pour extraire du texte d’une image sélectionnée ou d’un fichier PDF en exécutant un modèle de traitement de formulaire. Prend en charge un seul fichier sélectionné à la fois et uniquement les fichiers PDF et les fichiers image (PNG, JPG et JPEG). Pour exécuter le flux, sélectionnez un fichier, puis sélectionnez **AutomateExtract** >  info.
 
     ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
 
@@ -156,13 +154,13 @@ Deux flux sont disponibles pour traiter un fichier sélectionné ou un lot de fi
 
 Lorsqu’un SharePoint Syntex de traitement de formulaire (ou un modèle de compréhension de document) est appliqué à une bibliothèque de documents, le champ **Date** de classification est inclus dans le schéma de bibliothèque. Par défaut, ce champ est vide. Toutefois, lorsque les documents sont traitées et classées par un modèle, ce champ est mis à jour avec un horodat de fin. 
 
-Lorsqu’un modèle est marqué avec la date de **classification,** vous pouvez utiliser l’envoi d’un courrier électronique après que **SharePoint Syntex a** traitée un flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traitée et classée par un modèle dans la bibliothèque de documents SharePoint.
+Lorsqu’un modèle est marqué avec la **date de classification**, vous pouvez utiliser l’envoi d’un courrier électronique après que **SharePoint Syntex a** traitée un flux de fichiers pour informer les utilisateurs qu’un nouveau fichier a été traitée et classée par un modèle dans la bibliothèque de documents SharePoint.
 
 Pour exécuter le flux :
 
-1. Sélectionnez un fichier, puis **sélectionnez**  >  **Intégrer Power Automate**  >  **créer un flux.**
+1. Sélectionnez un fichier, puis sélectionnez **Intégrer** >  **Power Automate** >  **Créer un flux**.
 
-2. On the **Create a flow** panel, select Send an email after SharePoint Syntex processes a **file**.
+2. Dans le **panneau Créer un flux**, **sélectionnez Envoyer un message électronique après SharePoint Syntex un fichier**.
 
     ![Capture d’écran montrant l’option Créer un panneau de flux et le flux mis en évidence.](../media/content-understanding/integrate-create-flow.png) 
 

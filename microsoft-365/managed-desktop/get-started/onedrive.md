@@ -1,7 +1,7 @@
 ---
 title: Microsoft OneDrive
 description: Comment Microsoft Manged Desktop la OneDrive pour les appareils inscrits
-keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
+keywords: 'Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier'
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,13 +9,8 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e2d1a6d2817d4e117bb80c737e71958c7a80ce75
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346289"
 ---
+
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
 Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop mobiles. Cela garantit que les appareils sont aussi sans état que possible. Les utilisateurs pourront trouver leurs fichiers quel que soit l’appareil auquel ils se connectent. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouveau, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
@@ -33,12 +28,15 @@ Nous configurons automatiquement ces paramètres par défaut sur les appareils g
 Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils bénéficient d’une première expérience d’expérience d’utilisateur, en entrant leurs informations d’identification Azure, lors de la configuration de l’appareil. Une fois ce processus terminé, ils peuvent accéder à leur bureau et avoir la OneDrive expérience utilisateur.
 
 1. Le système indique aux utilisateurs OneDrive a été configuré et qu’ils ont été automatiquement OneDrive.
+
 :::image type="content" source="media/onedrive-sync.png" alt-text="La lecture des notifications que vous synchronisez OneDrive et vous pouvez modifier des fichiers dans OneDrive. Cliquez ici pour afficher vos fichiers.":::
 
 2. Le système indique aux utilisateurs que OneDrive déplacement de dossier connu a été configuré pour eux.
+
 :::image type="content" source="media/onedrive-folders.png" alt-text="Notification lisant Votre service informatique a pris en compte vos dossiers importants. Les dossiers sont désormais pris en OneDrive et disponibles à partir d’autres appareils.":::
 
 3. Pour empêcher les icônes en double sur le Bureau lorsque des appareils sont réinitialisés ou réinitialisés, le système supprime automatiquement les icônes Microsoft Edge et Microsoft Teams du Synchronisation OneDrive. Ces informations sont affichées dans l’Explorateur de fichiers.
+
 :::image type="content" source="media/onedrive-teams.png" alt-text="Explorateur de fichiers affichant Teams listes Edge avec cases à cocher effacées et lecture de texte avec pointage exclu de la synchronisation.":::
 
 ## <a name="onedrive-sync-restrictions"></a>Synchronisation OneDrive restrictions

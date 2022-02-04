@@ -1,5 +1,5 @@
 ---
-title: Authentification fédérée haute disponibilité, phase 1 Configurer Azure
+title: 'Authentification fédérée haute disponibilité, phase 1 Configurer Azure'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -10,20 +10,15 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
-- CSH
+  - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: b8a1bd473a84c382f8e609508298aaba44d0c85e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198444"
 ---
+
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
-Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine.](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Voir [Déployer l’authentification fédérée haute](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) disponibilité Microsoft 365 dans Azure pour toutes les phases.
+Dans cette phase, vous allez créer les groupes de ressources, le réseau virtuel (VNet) et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles aux phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [la phase 2 : Configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Voir [Déployer l’authentification fédérée haute disponibilité Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) pour toutes les phases.
   
 Azure doit être provisioné avec les composants de base ci-après :
   
@@ -41,7 +36,7 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
   
 |**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple, FedAuthNet).  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau VNet (par exemple FedAuthNet).  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![ligne.](../media/Common-Images/TableLine.png)  <br/> |
@@ -57,7 +52,7 @@ Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adress
     
 2. Convertissez les bits résultants en nombres décimaux et exprimez-les sous forme d'espace d'adressage, en définissant la longueur du préfixe sur une valeur équivalente à la taille du sous-réseau de passerelle.
     
-Consultez la calculatrice [d’espace](address-space-calculator-for-azure-gateway-subnets.md) d’adressare pour les sous-réseaux de passerelle Azure pour un bloc de commandes PowerShell et une application console C# Python qui effectue ce calcul pour vous.
+Consultez la calculatrice d’espace d’adressare pour les [sous-réseaux](address-space-calculator-for-azure-gateway-subnets.md) de passerelle Azure pour un bloc de commandes PowerShell et une application console C# python qui effectue ce calcul pour vous.
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
@@ -94,7 +89,7 @@ Pour deux serveurs DNS (Domain Name System) dans votre réseau local que vous so
    
  **Tableau D : serveurs DNS locaux**
   
-Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient une liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
+Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
 Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   
@@ -109,7 +104,7 @@ Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau 
 Commençons maintenant à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Microsoft 365.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Voir [La mise en Azure PowerShell](/powershell/azure/get-started-azureps). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. [Consultez La mise en Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Tout d'abord, démarrez une invite PowerShell Azure et connectez-vous à votre compte.
   
@@ -118,7 +113,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Pour générer des blocs de commandes PowerShell prêts à l’emploi en fonction de vos paramètres personnalisés, utilisez ce Microsoft Excel [de configuration.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Pour générer des blocs de commandes PowerShell prêts à l’emploi en fonction de vos paramètres personnalisés, utilisez ce Microsoft Excel [de configuration](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
@@ -139,7 +134,7 @@ $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
-Ensuite, créez les groupes de ressources. Pour déterminer un ensemble unique de noms de groupes de ressources, utilisez cette commande pour répertorier vos groupes de ressources existants.
+Ensuite, créez les nouveaux groupes de ressources. Pour déterminer un ensemble unique de noms de groupes de ressources, utilisez cette commande pour répertorier vos groupes de ressources existants.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -159,25 +154,25 @@ Renseignez le tableau suivant pour l'ensemble unique de noms de groupes de resso
 Créez vos nouveaux groupes de ressources avec ces commandes.
   
 ```powershell
-$locName="<an Azure location, such as West US>&quot;
-$rgName=&quot;<Table R - Item 1 - Name column>&quot;
+$locName="<an Azure location, such as West US>"
+$rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 2 - Name column>&quot;
+$rgName="<Table R - Item 2 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 3 - Name column>&quot;
+$rgName="<Table R - Item 3 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName=&quot;<Table R - Item 4 - Name column>&quot;
+$rgName="<Table R - Item 4 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 Ensuite, vous créez le réseau virtuel Azure et ses sous-réseaux.
   
 ```powershell
-$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
-$locName=&quot;<your Azure location>&quot;
-$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
-$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
-$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
+$rgName="<Table R - Item 4 - Resource group name column>"
+$locName="<your Azure location>"
+$vnetName="<Table V - Item 1 - Value column>"
+$vnetAddrPrefix="<Table V - Item 4 - Value column>"
+$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -316,4 +311,4 @@ Utilisez [la phase 2 : configurez les contrôleurs de domaine](high-availability
   
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
 
-[Comprendre Microsoft 365 identité et les Azure Active Directory](about-microsoft-365-identity.md)
+[Comprendre Microsoft 365 modèles d’identité](deploy-identity-solution-identity-model.md)

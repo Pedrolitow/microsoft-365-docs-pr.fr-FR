@@ -1,46 +1,42 @@
 ---
 title: Préparer vos utilisateurs à l’utilisation des appareils
 description: Informations pour vous aider à préparer vos utilisateurs à utiliser des appareils
-keywords: Microsoft Manged Desktop, appareil, mise en Microsoft 365
+keywords: 'Microsoft Manged Desktop, appareil, mise en Microsoft 365'
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ee8e032c06587a3d8ac92f3be7ccdb5f6a5f6b1e
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034964"
 ---
+
 # <a name="get-your-users-ready-to-use-devices"></a>Préparer vos utilisateurs à l’utilisation des appareils
 
-Une fois qu Microsoft Manged Desktop appareil est entre les mains de votre utilisateur, sa mise en main est rapide et facile. Les appareils sont pré-configurés avec la version actuelle de Windows et les configurations et les applications sont installées à partir du cloud à mesure que l’utilisateur termine l’installation. 
- 
-Pour faciliter encore cette tâche, nous proposons un guide qui guide vos utilisateurs tout au long de la configuration initiale et fournit des ressources d’aide à la fois pour l’installation et pour une utilisation ultérieure, si nécessaire. Vous pouvez personnaliser ce guide pour inclure certains détails spécifiques à votre organisation. Vous distribuez ensuite le guide directement à vos utilisateurs avec leur appareil. 
+Une fois qu Microsoft Manged Desktop appareil est entre les mains de votre utilisateur, la mise en main est rapide et facile. Les appareils sont pré-configurés avec la version actuelle de Windows et les configurations, et les applications sont installées à partir du cloud à mesure que l’utilisateur termine l’installation.
 
-## <a name="to-prepare-the-guide"></a>Pour préparer le guide
+Pour faciliter encore la mise en route, nous proposons un guide qui guide vos utilisateurs tout au long de la configuration initiale. Le guide fournit des ressources utiles pour l’installation et pour une utilisation ultérieure, si nécessaire. Vous pouvez personnaliser le guide suivant pour inclure certains détails spécifiques à votre organisation. Vous distribuez ensuite le guide directement à vos utilisateurs avec leur appareil.
 
-1. Téléchargez le guide [: Microsoft Manged Desktop - Commencer à utiliser votre appareil.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)
-2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour fournir des détails pertinents pour votre organisation :
-    - Nom du réseau à qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide)
-    - Nom du compte client Azure de votre organisation (étape 4 du guide)
-    - Coordonnées du support technique interne de votre organisation (en haut de la deuxième page)
-3. Enregistrez le fichier PDF modifié, puis distribuez-le à vos utilisateurs. 
+## <a name="prepare-the-guide"></a>Préparer le guide
 
-## <a name="ready-to-use-guide"></a>« Guide prêt à l’emploi »
+**Pour préparer le guide :**
+
+1. Téléchargez [le Microsoft Manged Desktop - Commencer à utiliser votre guide d’appareil](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf).
+2. Utilisez n’importe quelle application capable d’ouvrir des fichiers PDF pour entrer des détails pertinents pour votre organisation :
+    - Nom du réseau à qui vos utilisateurs doivent se connecter pour poursuivre l’installation (étape 3 du guide).
+    - Nom du compte client Azure de votre organisation (étape 4 du guide).
+    - Coordonnées du support technique interne de votre organisation (en haut de la deuxième page).
+3. Enregistrez le fichier PDF modifié, puis distribuez-le à vos utilisateurs.
+
+## <a name="ready-to-use-guide"></a>Guide prêt à l’emploi
 
 Nous fournissons également une version plus générique du guide pour les organisations qui n’ont pas besoin de la personnaliser.
 
-Téléchargez simplement le guide [: Microsoft Manged Desktop - Commencer à utiliser votre appareil (prêt à l’emploi).](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)
+Téléchargez simplement [le Microsoft Manged Desktop - Commencer à utiliser votre appareil (prêt à l’emploi](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)).
 
-À ce stade, vous êtes prêt à passer au déploiement des applications :
-
+À ce stade, vous êtes prêt à passer au [déploiement d’applications](deploy-apps.md).
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 

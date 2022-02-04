@@ -9,41 +9,36 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adm_O365
-- O365p_AddUsersWithDirSync
-- O365M_AddUsersWithDirSync
-- O365E_HRCSetupAADConnectAboutLM617031
-- O365E_AddUsersWithDirSync
+  - Adm_O365
+  - O365p_AddUsersWithDirSync
+  - O365M_AddUsersWithDirSync
+  - O365E_HRCSetupAADConnectAboutLM617031
+  - O365E_AddUsersWithDirSync
 ms.collection:
-- Ent_O365
-- M365-identity-device-management
+  - Ent_O365
+  - M365-identity-device-management
 search.appverid:
-- MET150
-- MOP150
-- MOE150
-- MBS150
+  - MET150
+  - MOP150
+  - MOE150
+  - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 à l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
-ms.openlocfilehash: ef0a7dd0925d1d2c8c6ffb2c161f9271194f6fc8
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187220"
 ---
+
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les avantages de la synchronisation d’annuaires et de l’identité hybride de votre organisation sont les suivants :
+Si vous avez choisi le modèle d’identité hybride et configuré la protection pour les comptes d’administrateur à l’étape [2](protect-your-global-administrator-accounts.md) et les comptes d’utilisateur à l’étape [3](microsoft-365-secure-sign-in.md) de cette solution, votre tâche suivante consiste à déployer la synchronisation d’annuaires. Les avantages de la synchronisation d’annuaires pour votre organisation sont les suivants :
 
 - Réduction des programmes d’administration dans votre organisation
-- Activation facultative du scénario d' sign-on unique
+- Activation facultative du scénario d’sign-on unique
 - Automatisation des modifications de compte dans Microsoft 365
 
-Pour plus d’informations sur les avantages de l’utilisation de la synchronisation d’annuaires, voir identité hybride avec [Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) et identité hybride pour [Microsoft 365](plan-for-directory-synchronization.md).
+Pour plus d’informations sur les avantages de l’utilisation de la synchronisation d’annuaires, voir hybrid [identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 Toutefois, la synchronisation d’annuaires nécessite une planification et une préparation pour vous assurer que vos services de domaine Active Directory (AD DS) se synchronisent avec le client Azure AD de votre abonnement Microsoft 365 avec un minimum d’erreurs.
 
@@ -51,6 +46,50 @@ Suivez ces étapes pour obtenir les meilleurs résultats.
 
 > [!NOTE]
 > Les caractères non ASCII ne sont synchronisés pour aucun attribut sur le compte d’utilisateur AD DS.
+
+## <a name="ad-ds-preparation"></a>Préparation des AD DS
+
+Pour garantir une transition transparente vers Microsoft 365 à l’aide de la synchronisation, vous devez préparer votre forêt AD DS avant de commencer votre déploiement de synchronisation d Microsoft 365'annuaire.
+  
+La préparation de votre annuaire doit se concentrer sur les tâches suivantes :
+
+- Supprimez les **attributs proxyAddress** et **userPrincipalName en** double.
+- Mettez à jour les attributs **userPrincipalName vides** et non valides avec des attributs **userPrincipalName** valides.
+- Supprimez les caractères non valides et discutables dans les attributs **givenName**, **surname ( sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** et **userPrincipalName** . Pour plus d’informations sur la préparation des attributs, voir [Liste des attributs synchronisés par l’outil Azure Active Directory sync](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+
+    > [!NOTE]
+    > Ce sont les mêmes attributs que ceux Azure AD Connecter synchronisés. 
+  
+## <a name="multi-forest-deployment-considerations"></a>Considérations sur le déploiement à forêts multiples
+
+Pour plusieurs forêts et options DSO, utilisez une [installation personnalisée de Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
+  
+Si votre organisation possède plusieurs forêts pour l’authentification (forêts d’authentification), nous vous recommandons vivement les points suivants :
+  
+- **Envisagez de consolider vos forêts.** En règle générale, une surcharge supplémentaire est nécessaire pour gérer plusieurs forêts. À moins que votre organisation ne possède des contraintes de sécurité qui imposent la nécessité de forêts distinctes, envisagez de simplifier votre environnement local.
+- **À utiliser uniquement dans votre forêt d’logo principale.** Envisagez de déployer Microsoft 365 uniquement dans votre forêt d’Microsoft 365. 
+
+Si vous ne pouvez pas consolider votre déploiement AD DS à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
+  
+Pour [plus d’informations, Azure AD Connecter consultez topologies](/azure/active-directory/hybrid/plan-connect-topologies).
+  
+## <a name="features-that-are-dependent-on-directory-synchronization"></a>Fonctionnalités qui dépendent de la synchronisation d’annuaires
+  
+La synchronisation d’annuaires est requise pour les fonctionnalités suivantes :
+  
+- Azure AD single-Sign-On (SSO) transparente
+- Skype coexistence
+- Exchange déploiement hybride, notamment :
+  - Liste d’adresses globale (LAL) entièrement partagée entre votre environnement Exchange local et Microsoft 365.
+  - Synchronisation des informations GAL provenant de différents systèmes de messagerie.
+  - Possibilité d’ajouter des utilisateurs à des offres de services Microsoft 365 et de les supprimer. Cette possibilité nécessite ce qui suit :
+  - La synchronisation double doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent les informations d’annuaire uniquement dans le cloud. Lorsque vous configurez la synchronisation à double sens, vous activez la fonctionnalité d’écriture/écriture de manière à ce qu’un nombre limité d’attributs d’objet soient copiés à partir du cloud, puis écrits dans votre AD DS local. L’écriture en écriture arrière est également appelée Exchange mode hybride. 
+  - Déploiement hybride Exchange local
+  - Possibilité de déplacer certaines boîtes aux lettres d’utilisateur vers Microsoft 365 tout en conservant d’autres boîtes aux lettres utilisateur en local.
+  - Coffre expéditeurs et les expéditeurs bloqués locaux sont répliqués vers Microsoft 365.
+  - Fonctionnalité de délégation de base et d’envoi de courrier « de la part de ».
+  - Vous avez une solution d’authentification multifacteur ou de carte à puce sur site intégrée.
+- Synchronisation des photos, des miniatures, des salles de conférence et des groupes de sécurité
 
 ## <a name="1-directory-cleanup-tasks"></a>1. Tâches de nettoyage de l’annuaire
 
@@ -61,11 +100,11 @@ Avant de synchroniser vos AD DS avec votre client Azure AD, vous devez nettoyer 
 
 Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte d’utilisateur à qui une licence Microsoft 365 attribuée :
 
-1. Assurez-vous qu’il s’agit d’une adresse de messagerie valide et unique dans **l’attribut proxyAddresses.**
+1. Assurez-vous qu’il s’agit d’une adresse de messagerie valide et unique dans **l’attribut proxyAddresses** .
 
-2. Supprimez les valeurs dupliquées dans **l’attribut proxyAddresses.**
+2. Supprimez les valeurs dupliquées dans **l’attribut proxyAddresses** .
 
-3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que le upn AD DS correspond au Azure AD UPN. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
+3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet **utilisateur de l’utilisateur** . Pour une meilleure expérience de synchronisation, assurez-vous que le upn AD DS correspond au Azure AD UPN. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName**,  l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName**. Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName** .
 
 4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
 
@@ -79,7 +118,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
    - Téléphone mobile
    - Numéro de télécopie
    - Rue
-   - City
+   - Ville
    - Département ou région
    - Code postal
    - Pays ou région
@@ -164,9 +203,9 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Caractères non valides : \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
   - Caractères autorisés : A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
   - Les lettres avec des marques diacritiques, telles que les umlauts, les accents et les tildes, sont des caractères non valides.
-  - Le caractère @ est requis dans chaque **valeur userPrincipalName.**
+  - Le caractère @ est requis dans chaque **valeur userPrincipalName** .
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
-  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou &amp; un signe at (@).
+  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e (&amp;), un espace ou un signe at (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.
@@ -178,20 +217,20 @@ Active Directory est conçu pour permettre aux utilisateurs finaux de votre orga
 
 Dans Microsoft 365, l’UPN est l’attribut par défaut utilisé pour générer l’adresse e-mail. Il est facile d’obtenir **userPrincipalName** (dans AD DS et dans Azure AD) et l’adresse de messagerie principale dans **proxyAddresses** est définie sur différentes valeurs. Lorsqu’elles sont définies sur des valeurs différentes, les administrateurs et les utilisateurs finaux peuvent être confuses.
 
-Il est préférable d’aligner ces attributs pour réduire la confusion. Pour répondre aux exigences de l' sign-on unique avec active Directory Federation Services (AD FS) 2.0, vous devez vous assurer que les UPN dans Azure Active Directory et vos services AD DS correspondent et utilisent un espace de noms de domaine valide.
+Il est préférable d’aligner ces attributs pour réduire la confusion. Pour répondre aux exigences de l’sign-on unique avec active Directory Federation Services (AD FS) 2.0, vous devez vous assurer que les UPN dans Azure Active Directory et vos services AD DS correspondent et utilisent un espace de noms de domaine valide.
 
 ## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Ajouter un autre suffixe UPN à AD DS
 
 Vous devrez peut-être ajouter un autre suffixe UPN pour associer les informations d’identification d’entreprise de l’utilisateur à Microsoft 365'environnement. Un suffixe UPN est la partie d’un UPN située à droite du caractère @. Les UPN qui sont utilisés pour l’authentification unique peuvent contenir des lettres, des chiffres, des points, des traits d’unions et des traits de soulignement, mais aucun autre type de caractère.
 
-Pour plus d’informations sur l’ajout d’un autre suffixe UPN à Active Directory, voir Préparer la synchronisation [d’annuaires.](https://go.microsoft.com/fwlink/p/?LinkId=525430)
+Pour plus d’informations sur l’ajout d’un autre suffixe UPN à Active Directory, voir [Préparer la synchronisation d’annuaires](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Faire correspondre l’UPN AD DS avec le Microsoft 365 UPN
 
 Si vous avez déjà défini la synchronisation d’annuaires, il se peut que l’UPN de l’utilisateur pour Microsoft 365 ne corresponde pas à l’UPN AD DS de l’utilisateur défini dans vos services AD DS. Cela peut se produire lorsqu’un utilisateur obtient une licence avant la vérification du domaine. Pour résoudre ce problème, utilisez PowerShell pour corriger le nom d’utilisateur [upn](https://go.microsoft.com/fwlink/p/?LinkId=396730) en double afin de mettre à jour l’UPN de l’utilisateur pour vous assurer que l’UPN Microsoft 365 correspond au nom d’utilisateur et au domaine de l’entreprise. Si vous actualisez l’UPN dans les AD DS et souhaitez qu’il se synchronise avec l’identité Azure Active Directory, vous devez supprimer la licence de l’utilisateur dans Microsoft 365 avant d’apporter les modifications dans AD DS.
 
-Voir également comment préparer un domaine non routable (tel que le domaine [.local) pour la synchronisation d’annuaires.](prepare-a-non-routable-domain-for-directory-synchronization.md)
+Voir également [comment préparer un domaine non routable (tel que le domaine .local) pour la synchronisation d’annuaires](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Si vous avez effectué les étapes 1 à 5 ci-dessus, voir [Configurer la synchronisation d’annuaires.](set-up-directory-synchronization.md)
+Une fois que vous avez effectué 1 à 5 au-dessus, voir [Configurer la synchronisation d’annuaires](set-up-directory-synchronization.md).

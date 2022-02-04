@@ -271,18 +271,16 @@
           href: eu-data-storage-locations.md
 - name: Identité
   items:
-    - name: Feuille de route
-      href: identity-roadmap-microsoft-365.md
-    - name: Prévision
+    - name: Vue d’ensemble
+      href: deploy-identity-solution-overview.md
+    - name: Étape 1. Déterminer votre modèle d’identité
+      href: deploy-identity-solution-identity-model.md
+    - name: "Étape\_2. Protéger vos comptes privilégiés"
+      href: protect-your-global-administrator-accounts.md
+    - name: Étape 3. Protéger vos comptes d’utilisateur
+      href: microsoft-365-secure-sign-in.md
+    - name: Étape 4. Déployer votre modèle d’identité
       items:
-        - name: Modèles d’identité
-          href: about-microsoft-365-identity.md
-        - name: Identité hybride
-          href: plan-for-directory-synchronization.md
-    - name: Déployer
-      items:
-        - name: Protéger vos comptes Administrateur général
-          href: protect-your-global-administrator-accounts.md
         - name: Identité cloud uniquement
           href: cloud-only-identities.md
         - name: Identité hybride
@@ -318,8 +316,6 @@
                       href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
                 - name: Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
                   href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: Sécuriser les connexions utilisateur
-          href: microsoft-365-secure-sign-in.md
     - name: Gestion
       items:
         - name: Comptes d’utilisateur
@@ -418,7 +414,7 @@
           href: /sharepoint/sharepoint-online
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -440,7 +436,7 @@
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype Entreprise
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'

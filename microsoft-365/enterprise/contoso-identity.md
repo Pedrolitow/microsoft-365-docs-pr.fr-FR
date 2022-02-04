@@ -2,7 +2,7 @@
 title: Identité de Contoso Corporation
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,30 +10,25 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-identity-device-management
-- Strat_O365_Enterprise
-ms.custom: ''
-description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122253"
+  - M365-identity-device-management
+  - Strat_O365_Enterprise
+ms.custom: null
+description: 'Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.'
 ---
+
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
 Microsoft fournit l’identité en tant que service (IDaaS) dans ses offres cloud via Azure Active Directory (Azure AD). Pour adopter Microsoft 365 entreprise, la solution Contoso IDaaS devait utiliser son fournisseur d’identité local et inclure l’authentification fédérée avec ses fournisseurs d’identité tiers existants.
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Forêt des services de domaine Active Directory contoso
 
-Contoso utilise une forêt AD DS (Active Directory Domain Services) unique pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
+Contoso utilise une seule forêt AD DS (Active Directory Domain Services) pour contosocom\. avec sept sous-domaines, un pour chaque région du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
 
 Voici la forêt Contoso avec des domaines régionaux pour les différentes régions du monde qui contiennent des centres régionaux.
 
 :::image type="content" alt-text="La forêt et les domaines de Contoso dans le monde entier." source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
-Contoso a décidé d’utiliser les comptes et les groupes de la forêt contoso com pour l’authentification et l’autorisation pour ses charges Microsoft 365 charges de travail \. et services.
+Contoso a décidé d’utiliser les comptes et les groupes de la forêt contosocom\. pour l’authentification et l’autorisation pour ses charges Microsoft 365 charges de travail et services.
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Infrastructure d’authentification fédérée Contoso
 
@@ -76,11 +71,11 @@ Voici l’ensemble des stratégies d’accès conditionnel aux appareils et aux 
  
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez comment Contoso utilise son infrastructure Microsoft Endpoint Configuration Manager pour déployer et maintenir la Windows 10 Entreprise [au](contoso-win10.md) sein de son organisation.
+Découvrez comment Contoso utilise son infrastructure Microsoft Endpoint Configuration Manager pour déployer et maintenir la [Windows 10 Entreprise au sein](contoso-win10.md) de son organisation.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Feuille de route relative à l’identité pour Microsoft 365](identity-roadmap-microsoft-365.md)
+[Déployer l’identité pour Microsoft 365](deploy-identity-solution-overview.md)
 
 [Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

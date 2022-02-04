@@ -1,7 +1,7 @@
 ---
-title: Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
+title: Protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -12,23 +12,18 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
-- TLG
-- Ent_TLGs
+  - TLG
+  - Ent_TLGs
 description: Utilisez ces étapes pour protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: e529304b9f897e4cac7a0cec5f32821b88cd297d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195316"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
+
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que vos comptes d’administrateur sont aussi sécurisés que possible. 
 
-Cet article explique comment utiliser des stratégies d Azure Active Directory conditionnel (Azure AD) pour protéger les comptes d’administrateur général.
+Cet article explique comment utiliser des stratégies d’accès conditionnel Azure Active Directory (Azure AD) pour protéger les comptes d’administrateur général.
 
 La protection des comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise implique deux phases :
 - [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -37,13 +32,13 @@ La protection des comptes d’administrateur général dans votre Microsoft 365 
 ![Guides de laboratoire de test pour le cloud Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 entreprise
 
-Si vous souhaitez tester la protection des comptes d’administrateur général de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Si vous souhaitez tester la protection des comptes d’administrateur général de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si vous souhaitez tester la protection des comptes d’administrateur général dans une entreprise simulée, suivez les instructions de [l’authentification directe.](pass-through-auth-m365-ent-test-environment.md)
+Si vous souhaitez tester la protection des comptes d’administrateur général dans une entreprise [simulée](pass-through-auth-m365-ent-test-environment.md), suivez les instructions de l’authentification directe.
   
 > [!NOTE]
 > Le test de la protection des comptes d’administrateur général ne nécessite pas l’environnement de test en entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour les services de domaine Active Directory (AD DS). Il est fourni ici en tant qu’option afin que vous pouvez tester la protection des comptes d’administrateur général et l’expérimenter dans un environnement qui représente une organisation classique. 
@@ -53,46 +48,46 @@ Si vous souhaitez tester la protection des comptes d’administrateur général 
 Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur général dédié.
 
 1. Sous un onglet distinct, ouvrez [le Centre d'administration Microsoft 365](https://admin.microsoft.com/).
-2. Sélectionnez   >  **Utilisateurs actifs,** puis **ajoutez un utilisateur.**
-3. Dans le **volet Ajouter un utilisateur,** entrez **DedicatedAdmin** dans les zones **Prénom,** Nom **d’affichage** et **Nom d’utilisateur.**
-4. Sélectionnez **Mot** de passe, **Sélectionnez Me laisser créer le** mot de passe, puis entrez un mot de passe fort. Enregistrez le mot de passe de ce nouveau compte dans un emplacement sécurisé.
+2. **Sélectionnez Utilisateurs** >  **UsersActive**, puis **Ajoutez un utilisateur**.
+3. Dans le **volet Ajouter un utilisateur** , entrez **DedicatedAdmin** dans les zones **Prénom,** **Nom** d’affichage et **Nom d’utilisateur** .
+4. **Sélectionnez Mot** de passe, **Laissez-moi créer le mot de** passe, puis entrez un mot de passe fort. Enregistrez le mot de passe de ce nouveau compte dans un emplacement sécurisé.
 5. Sélectionnez **Suivant**.
-6. Dans le **volet Attribuer des licences de** produits, **sélectionnez Microsoft 365 E5,** puis sélectionnez **Suivant.**
-7. Dans le **volet Paramètres facultatifs,** sélectionnez **Rôles**  >  **Admin center access** Global  >  **admin**  >  **Next**.
-8. Dans le **volet Vous avez presque terminé,** sélectionnez Terminer **l’ajout,** puis **fermez**.
+6. Dans le **volet Attribuer des licences de** produits, **sélectionnez Microsoft 365 E5**, puis sélectionnez **Suivant**.
+7. Dans le **volet Paramètres facultatifs**, sélectionnez **RolesAdmin** >  **center accessGlobal** >  **adminNext** > .
+8. Dans le **volet Vous avez presque terminé** , sélectionnez **Terminer l’ajout**, puis **fermez**.
 
 Ensuite, créez un groupe nommé GlobalAdmins et ajoutez-y le compte DedicatedAdmin.
 
-1. Sous **l’onglet Centre d'administration Microsoft 365,** sélectionnez **Groupes** dans le navigation de gauche, puis sélectionnez **Groupes.**
-2. Sélectionnez **Ajouter un groupe.**
-3. Dans le **volet Choisir un type de groupe,** sélectionnez **Sécurité,** puis Sélectionnez **Suivant**.
-4. Dans le **volet Configurer les informations** de base, sélectionnez Créer un groupe, puis **fermez.** 
-5. Dans le **volet Révision et fin de** l’ajout de groupes, entrez **GlobalAdmins,** puis sélectionnez **Suivant.**
-7. Dans la liste des groupes, sélectionnez le **groupe GlobalAdmins.**
-8. Dans le **volet GlobalAdmins,** sélectionnez **Membres,** puis afficher **tout et gérer les membres.**
-9. Dans le **volet GlobalAdmins,** sélectionnez Ajouter des **membres,** sélectionnez le compte **DedicatedAdmin** et votre compte d’administrateur global, puis **sélectionnez Enregistrer**  >  **fermer.**  >  
+1. Sous **l’Centre d'administration Microsoft 365**, sélectionnez **Groupes** dans le navigation de gauche, **puis Groupes.**
+2. **Sélectionnez Ajouter un groupe**.
+3. Dans le **volet Choisir un type de groupe**, sélectionnez **Sécurité**, **puis Suivant.**
+4. Dans le **volet Configurer les informations** de base **, sélectionnez** Créer un groupe, puis **Fermez**.
+5. Dans le **volet Révision et fin de l’ajout de** groupes, entrez **GlobalAdmins**, puis sélectionnez **Suivant**.
+7. Dans la liste des groupes, sélectionnez **le groupe GlobalAdmins** .
+8. Dans le **volet GlobalAdmins** , sélectionnez **Membres**, puis afficher **tout et gérer les membres**.
+9. Dans le **volet GlobalAdmins**, sélectionnez Ajouter des **membres,** sélectionnez le compte **DedicatedAdmin** et votre compte d’administrateur global, puis sélectionnez **SaveCloseClose** >  > .
 
 Ensuite, créez des stratégies d’accès conditionnel pour exiger l’authentification multifacteur pour les comptes d’administrateur général et refuser l’authentification si le risque de se connecte est moyen ou élevé.
 
 Cette première stratégie nécessite que tous les comptes d’administrateur général utilisent l’mf.
 
-1. Dans un nouvel onglet de votre navigateur, allez à [https://portal.azure.com](https://portal.azure.com) .
-2. Cliquez **sur Azure Active Directory** accès  >  **conditionnel à** la  >  **sécurité.**
-3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’pertinence de l’élection de l’élection **(prévisualisation) pour les administrateurs.**
+1. Dans un nouvel onglet de votre navigateur, allez à [https://portal.azure.com](https://portal.azure.com).
+2. Cliquez **Azure Active Directory** >  **SecurityConditional** >  Access.
+3. Dans le **volet Accès conditionnel – Stratégies**, sélectionnez Stratégie de référence : exiger l’pertinence de l’élection de base **pour les administrateurs (prévisualisation).**
 4. Dans le **volet Stratégie** de référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer**.
 
 Cette deuxième stratégie bloque l’accès à l’authentification de compte d’administrateur général lorsque le risque de se connecte est moyen ou élevé.
 
-1. Dans le **volet Accès conditionnel – Stratégies,** **sélectionnez Nouvelle stratégie.**
-2. Dans le **nouveau volet,** entrez **Administrateurs globaux** dans **Nom.**
-3. Dans la section **Affectations,** sélectionnez **Utilisateurs et groupes.**
-4. Dans **l’onglet**  Inclure du volet Utilisateurs et groupes, sélectionnez Sélectionner des utilisateurs et des **groupes**  >  **Utilisateurs et groupes**  >  **Sélectionner.**
-5. Dans le **volet** Sélectionner, sélectionnez le **groupe GlobalAdmins,** puis **sélectionnez**  >  **Terminé.**
-6. Dans la section **Affectations,** sélectionnez **Conditions.**
-7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionner Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
+1. Dans le **volet Accès conditionnel – Stratégies** , sélectionnez **Nouvelle stratégie**.
+2. Dans le **volet Nouveau** , entrez **Administrateurs globaux** dans **Nom**.
+3. Dans la section **Affectations** , sélectionnez **Utilisateurs et groupes**.
+4. Sous **l’onglet** Inclure du  volet Utilisateurs et groupes, sélectionnez Sélectionner utilisateurs et **groupesUtiliseurs** >  et **groupesSelect** > .
+5. Dans le **volet** Sélectionner, sélectionnez le **groupe GlobalAdmins**, puis **sélectionnez SelectDone** > .
+6. Dans la section **Affectations** , sélectionnez **Conditions**.
+7. Dans le **volet Conditions**, sélectionnez Risque de se  connectez **, sélectionnez** Oui pour **Configurer, Sélectionner** Élevé et **Moyen**, puis **Sélectionner et** **Terminé**.
 8. Dans la section **Contrôles d’accès** du **nouveau** volet, sélectionnez **Accorder**.
-9. Dans le **volet Accorder,** sélectionnez Bloquer **l’accès,** puis sélectionnez **Sélectionner.**
-10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer.**
+9. Dans le **volet Accorder** , sélectionnez Bloquer **l’accès**, puis **Sélectionnez Sélectionner**.
+10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer**.
 11. Fermez **le portail Azure et** **Centre d'administration Microsoft 365** onglets.
 
 Pour tester la première stratégie, dé connectez-vous avec le compte DedicatedAdmin. Vous devez être invité à configurer l’mf. Cela montre que la première stratégie est appliquée.
@@ -103,7 +98,7 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 ## <a name="see-also"></a>Voir aussi
 
-[Feuille de route des identités](identity-roadmap-microsoft-365.md)
+[Déployer l’identité](deploy-identity-solution-overview.md)
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 

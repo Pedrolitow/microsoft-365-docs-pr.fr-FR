@@ -1,33 +1,28 @@
 ---
 title: Annuler un abonnement
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
-- commerce_subscriptions
-- AdminTemplateSet
-- admindeeplinkMAC
+  - AdminSurgePortfolio
+  - commerce_subscriptions
+  - AdminTemplateSet
+  - admindeeplinkMAC
 search.appverid: MET150
-description: Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d'administration Microsoft 365.
+description: 'Découvrez comment annuler votre Dynamics 365, Intune, Power Platform et Microsoft 365 pour un essai professionnel ou des abonnements payants dans le Centre d''administration Microsoft 365.'
 ms.date: 01/20/2022
-ms.openlocfilehash: 21d7e6f2ff644861b1a8096511144b5343dc2a25
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345428"
 ---
+
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
 Vous pouvez annuler votre abonnement à tout moment dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Cependant, pour recevoir un remboursement, vous devez répondre à certaines conditions d'éligibilité au remboursement. Pour plus d'informations, voir [Comprendre l'éligibilité au remboursement](#understand-refund-eligibility).
@@ -57,7 +52,7 @@ Utilisez le tableau suivant pour vous aider à déterminer si vous pouvez annule
 
 |Si votre abonnement a  |Vous pouvez  |
 |--------------|--------------|
-|25 licences ou moins  | Annuler votre essai ou votre abonnement payant en ligne dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d'administration Microsoft 356</a> à tout moment.        |
+|25 licences ou moins  | Annulez votre essai ou votre abonnement payant en ligne dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> à tout moment.        |
 |Plus de 25 licences   | Réduire le nombre de licences à 25 ou moins et réessayer, ou [appeler l'assistance pour annuler votre abonnement](../../admin/get-help-support.md).        |
 
 Pour les abonnements qui n'ont pas de profil de facturation, vous ne pouvez annuler que pendant une période limitée après avoir acheté ou renouvelé votre abonnement. Si la fenêtre d'annulation est passée, [désactiver la facturation récurrente](renew-your-subscription.md) pour annuler l'abonnement à la fin de sa durée.

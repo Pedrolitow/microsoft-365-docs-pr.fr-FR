@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 description: Résoudre les problèmes qui peuvent survenir lors de l’intégration d’appareils ou au service Microsoft Defender for Endpoint.
-keywords: résoudre les problèmes d’intégration, les problèmes d’intégration, l’observateur d’événements, la collecte de données et les builds d’aperçu, les données de capteur et les diagnostics
+keywords: 'résoudre les problèmes d’intégration, les problèmes d’intégration, l’observateur d’événements, la collecte de données et les builds d’aperçu, les données de capteur et les diagnostics'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,39 +14,36 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8ae4bc7235bd0a794569f1658b58095a3eda134c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166733"
 ---
+
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Vous devrez peut-être résoudre les problèmes du processus d’intégration de Microsoft Defender for Endpoint si vous rencontrez des problèmes.
 Cette page fournit des étapes détaillées pour résoudre les problèmes d’intégration qui peuvent se produire lors du déploiement avec l’un des outils de déploiement et les erreurs courantes qui peuvent se produire sur les appareils.
 
+Avant de commencer à résoudre les problèmes avec les outils d’intégration, il est important de vérifier si les conditions minimales requises sont remplies pour l’intégration d’appareils aux services. [Découvrez les licences, le matériel et les logiciels requis pour intégrer des appareils au service](minimum-requirements.md).
+
 ## <a name="troubleshoot-issues-with-onboarding-tools"></a>Résoudre les problèmes avec les outils d’intégration
 
-Si vous avez terminé le processus d’intégration [](investigate-machines.md) et que vous ne voyez pas les appareils dans la liste Appareils après une heure, cela peut indiquer un problème d’intégration ou de connectivité.
+Si vous avez terminé le processus d’intégration et que vous ne voyez pas les [](investigate-machines.md) appareils dans la liste Appareils après une heure, cela peut indiquer un problème d’intégration ou de connectivité.
 
 ### <a name="troubleshoot-onboarding-when-deploying-with-group-policy"></a>Résoudre les problèmes d’intégration lors du déploiement avec une stratégie de groupe
 
 Le déploiement avec une stratégie de groupe s’exécute en exécutant le script d’intégration sur les appareils. La console de stratégie de groupe n’indique pas si le déploiement a réussi ou non.
 
-Si vous avez terminé le processus d’intégration [](investigate-machines.md) et que vous ne voyez pas les appareils dans la liste Appareils après une heure, vous pouvez vérifier la sortie du script sur les appareils. Pour plus d’informations, voir [Résoudre les problèmes d’intégration lors du déploiement avec un script.](#troubleshoot-onboarding-when-deploying-with-a-script)
+Si vous avez terminé le processus d’intégration et que vous ne voyez pas les [](investigate-machines.md) appareils dans la liste Appareils après une heure, vous pouvez vérifier la sortie du script sur les appareils. Pour plus d’informations, voir [Résoudre les problèmes d’intégration lors du déploiement avec un script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 Si le script se termine correctement, consultez Résolution des problèmes d’intégration sur les appareils pour les [erreurs](#troubleshoot-onboarding-issues-on-the-device) supplémentaires qui peuvent se produire.
 
@@ -62,17 +59,17 @@ Le déploiement avec les versions mentionnées ci-dessus de Configuration Manage
 
 Si le déploiement échoue, vous pouvez vérifier la sortie du script sur les appareils.
 
-Si l’intégration s’est correctement terminée,  mais que les appareils n’apparaissent pas dans la liste Appareils après une heure, consultez Résolution des problèmes d’intégration sur l’appareil pour les [erreurs](#troubleshoot-onboarding-issues-on-the-device) supplémentaires qui peuvent se produire.
+Si l’intégration s’est correctement terminée, mais que les appareils n’apparaissent pas dans la liste Appareils après une heure, consultez Résolution des problèmes d’intégration sur l’appareil pour les [erreurs](#troubleshoot-onboarding-issues-on-the-device) supplémentaires qui peuvent se produire.
 
 ### <a name="troubleshoot-onboarding-when-deploying-with-a-script"></a>Résoudre les problèmes d’intégration lors du déploiement avec un script
 
 **Vérifiez le résultat du script sur l’appareil :**
 
-1. Cliquez sur **Démarrer,** **tapez Observateur d’événements,** puis appuyez sur **Entrée.**
+1. Cliquez sur **Démarrer**, **tapez Observateur d’événements**, puis appuyez **sur Entrée**.
 
 2. Go to **Windows Logs** \> **Application**.
 
-3. Recherchez un événement à partir de la source **d’événement WDATPOnboarding.**
+3. Recherchez un événement à partir de **la source d’événement WDATPOnboarding** .
 
 Si le script échoue et que l’événement est une erreur, vous pouvez vérifier l’ID d’événement dans le tableau suivant pour vous aider à résoudre le problème.
 
@@ -87,11 +84,11 @@ Si le script échoue et que l’événement est une erreur, vous pouvez vérifie
 |:---:|---|---|
 |`5`|Des données de désintboarding ont été trouvées mais n’ont pas pu être supprimées|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Les données d’intégration n’ont pas pu être écrites dans le Registre|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Vérifiez que le script a été exécuté en tant qu’administrateur.|
-|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( «*Pending_Stopped*» , « *Pending_Running*» ) et essayez d’exécuter à nouveau le script (avec des droits d’administrateur). <p> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.|
+|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service (`sc query sense` commande). Assurez-vous qu’il n’est pas dans un état intermédiaire (*'Pending_Stopped'*, *'Pending_Running'*) et essayez d’exécuter à nouveau le script (avec des droits d’administrateur). <p> Si l’appareil s’Windows 10, version 1607 `sc query sense` `START_PENDING`et que la commande est en cours d’exécution, redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, faites une mise à niveau vers KB4015217 et tentez à nouveau l’intégration.|
 |`15`|Échec du démarrage du service SENSE|Si le message de l’erreur est le suivant : erreur système 577 ou erreur 1058 s’est produite, vous devez activer le pilote ELAM Antivirus Microsoft Defender, voir Vérifier que [Antivirus Microsoft Defender](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) n’est pas désactivé par une stratégie pour obtenir des instructions.|
-|`30`|Le script n’a pas réussi à attendre le démarrage de l’exécution du service|Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)|
-|`35`|Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire|Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)|
-|`40`|L’état d’intégration du service SENSE n’est pas **définie sur 1**|L’intégration du service SENSE a échoué. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)|
+|`30`|Le script n’a pas réussi à attendre le démarrage de l’exécution du service|Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les [erreurs à l’aide de l’Observateur d’événements](event-error-codes.md).|
+|`35`|Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire|Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les [erreurs à l’aide de l’Observateur d’événements](event-error-codes.md).|
+|`40`|L’état d’intégration du service SENSE n’est pas **définie sur 1**|L’intégration du service SENSE a échoué. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les [erreurs à l’aide de l’Observateur d’événements](event-error-codes.md).|
 |`65`|Privilèges insuffisants|Exécutez à nouveau le script avec des privilèges d’administrateur.|
 |
 
@@ -107,7 +104,7 @@ Utilisez les tableaux suivants pour comprendre les causes possibles des problèm
 - Tableau des problèmes connus de non-conformité
 - Tableau des journaux des événements de gestion des périphériques mobiles (MDM)
 
-Si aucun des journaux des événements et des étapes de dépannage ne fonctionne, téléchargez le script local à partir de la **section** Gestion des périphériques du portail, puis exécutez-le dans une invite de commandes avec élévation de niveaux.
+Si aucun des journaux des événements et des étapes de dépannage ne fonctionne, téléchargez le script local à partir de **la section Gestion** des périphériques du portail, puis exécutez-le dans une invite de commandes avec élévation de niveaux.
 
 #### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune codes d’erreur et OMA-URIs
 
@@ -117,9 +114,9 @@ Si aucun des journaux des événements et des étapes de dépannage ne fonctionn
 
 |Code d’erreur hexa|Code d’erreur déc|Description de l’erreur|OMA-URI|Cause possible et étapes de résolution des problèmes|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|Échec de la correction|Intégration <p> Offboarding|**Cause possible :** L’intégration ou la déboarding a échoué sur un blob erroné : signature erronée ou champs PreviousOrgIds manquants. <p> **Étapes de résolution des problèmes :** <p> Vérifiez les ID d’événement dans les erreurs d’intégration de l’agent d’affichage dans la section journal des [événements de l’appareil.](#view-agent-onboarding-errors-in-the-device-event-log) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gestion des Windows .|
+|0x87D1FDE8|-2016281112|Échec de la correction|Intégration <p> Offboarding|**Cause possible :** L’intégration ou la déboarding a échoué sur un blob erroné : signature erronée ou champs PreviousOrgIds manquants. <p> **Étapes de résolution des problèmes :** <p> Vérifiez les ID d’événement dans les erreurs d’intégration de l’agent d’affichage dans la section journal des [événements de l’appareil](#view-agent-onboarding-errors-in-the-device-event-log) . <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions de diagnostic des échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) gestion des Windows.|
 ||||Intégration <p> Offboarding <p> SampleSharing|**Cause possible :** La clé de Registre de la stratégie Microsoft Defender pour les points de terminaison n’existe pas ou le client OMA DM n’est pas autorisé à y écrire. <p> **Étapes de résolution des problèmes :** Assurez-vous que la clé de Registre suivante existe : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> S’il n’existe pas, ouvrez une commande avec élévation de élévation de niveaux et ajoutez la touche.|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**Cause possible :** Une tentative de correction par propriété en lecture seule. L’intégration a échoué. <p> **Étapes de résolution des problèmes :** Vérifiez les étapes de dépannage dans [Résoudre les problèmes d’intégration sur l’appareil.](#troubleshoot-onboarding-issues-on-the-device) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gestion des Windows .|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Cause possible :** Une tentative de correction par propriété en lecture seule. L’intégration a échoué. <p> **Étapes de résolution des problèmes :** Vérifiez les étapes de dépannage dans [Résoudre les problèmes d’intégration sur l’appareil](#troubleshoot-onboarding-issues-on-the-device). <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions de diagnostic des échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) gestion des Windows.|
 ||||Tous|**Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique. <p> Plateformes actuellement pris en charge : <p> Enterprise, Éducation et Professional.<p> Le serveur n’est pas pris en charge.|
 |0x87D101A9|-2016345687|SyncML(425) : la commande demandée a échoué car l’expéditeur ne peut pas avoir les autorisations de contrôle d’accès (ACL) adéquates sur le destinataire.|Tous|**Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique.<p> Plateformes actuellement pris en charge : <p> Enterprise, Éducation et Professional.|
 |
@@ -153,7 +150,7 @@ Nom du canal : Admin
 
 |ID|Severity|Description de l’événement|Étapes de résolution des problèmes|
 |---|---|---|---|
-|1819|Error|Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3).|Téléchargez [la mise à jour cumulative Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
+|1819|Erreur|Microsoft Defender for Endpoint CSP: Failed to Set Node’s Value. NodeId : (%1), TokenName : (%2), Résultat : (%3).|Téléchargez [la mise à jour cumulative Windows 10 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
 |
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Résoudre les problèmes d’intégration sur l’appareil
@@ -168,18 +165,18 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>Afficher les erreurs d’intégration de l’agent dans le journal des événements de l’appareil
 
-1. Cliquez sur **Démarrer,** **tapez Observateur d’événements,** puis appuyez sur **Entrée.**
+1. Cliquez sur **Démarrer**, **tapez Observateur d’événements**, puis appuyez **sur Entrée**.
 
-2. Dans le **volet Observateur d’événements (local),** développez **Journaux** des applications et des services \> **Microsoft** \> **Windows** \> **SENSE**.
+2. Dans le **volet Observateur d’événements (local**), développez **Journaux des applications** et des services \> **Microsoft** \> **Windows** \> **SENSE**.
 
    > [!NOTE]
    > SENSE est le nom interne utilisé pour faire référence au capteur comportemental qui alimente Microsoft Defender pour le point de terminaison.
 
-3. Sélectionnez **Opérationnel** pour charger le journal.
+3. **Sélectionnez Opérationnel** pour charger le journal.
 
-4. Dans le **volet Action,** cliquez sur **Filtrer le journal actuel.**
+4. Dans le **volet Action** , cliquez sur **Filtrer le journal actuel**.
 
-5. Sous **l’onglet Filtre,** sous **Niveau d’événement :** sélectionnez **Critique,** **Avertissement** et **Erreur,** puis cliquez sur **OK**.
+5. Sous **l’onglet Filtre**, sous **Niveau d’événement** : sélectionnez **Critique****, Avertissement** **et Erreur,** puis cliquez sur **OK**.
 
    ![Image du filtre du journal de l’Observateur d’événements.](images/filter-log.png)
 
@@ -191,13 +188,13 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
    |ID de l'événement|Message|Étapes de résolution|
    |:---:|---|---|
-   |`5`|Le service Microsoft Defender pour le point de terminaison n’a pas réussi à se connecter au serveur à la _variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet.](#ensure-the-device-has-an-internet-connection)|
-   |`6`|Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé. Code d’échec _: variable_|[Exécutez à nouveau le script d’intégration.](configure-endpoints-script.md)|
-   |`7`|Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Code d’échec _: variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet,](#ensure-the-device-has-an-internet-connection)puis exécutez à nouveau l’intégralité du processus d’intégration.|
-   |`9`|Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec : variable|Si l’événement s’est produit lors de l’intégration, redémarrez et réessaisez d’exécution du script d’intégration. Pour plus d’informations, voir [Exécuter à nouveau le script d’intégration.](configure-endpoints-script.md) <br><br>Si l’événement s’est produit lors de laboarding, contactez le support technique.|
-   |`10`|Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec : variable|Si l’événement s’est produit lors de l’intégration, réessoivez l’exécution du script d’intégration. Pour plus d’informations, voir [Exécuter à nouveau le script d’intégration.](configure-endpoints-script.md) <br><br>Si le problème persiste, contactez le support technique.|
-   |`15`|Microsoft Defender pour le point de terminaison ne peut pas démarrer le canal de commande avec l’URL : _variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet.](#ensure-the-device-has-an-internet-connection)|
-   |`17`|Le service Microsoft Defender for Endpoint n’a pas réussi à modifier l’emplacement du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : variable|[Exécutez à nouveau le script d’intégration.](configure-endpoints-script.md) Si le problème persiste, contactez le support technique.|
+   |`5`|Le service Microsoft Defender pour le point de terminaison n’a pas réussi à se connecter au serveur à la _variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet](#ensure-the-device-has-an-internet-connection).|
+   |`6`|Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé. Code d’échec _: variable_|[Exécutez à nouveau le script d’intégration](configure-endpoints-script.md).|
+   |`7`|Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Code d’échec _: variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet](#ensure-the-device-has-an-internet-connection), puis exécutez à nouveau l’intégralité du processus d’intégration.|
+   |`9`|Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec : variable|Si l’événement s’est produit lors de l’intégration, redémarrez et réessaisez d’exécution du script d’intégration. Pour plus d’informations, voir [Exécuter à nouveau le script d’intégration](configure-endpoints-script.md). <br><br>Si l’événement s’est produit lors de laboarding, contactez le support technique.|
+   |`10`|Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec : variable|Si l’événement s’est produit lors de l’intégration, réessoivez l’exécution du script d’intégration. Pour plus d’informations, voir [Exécuter à nouveau le script d’intégration](configure-endpoints-script.md). <br><br>Si le problème persiste, contactez le support technique.|
+   |`15`|Microsoft Defender pour le point de terminaison ne peut pas démarrer le canal de commande avec l’URL : _variable_|[Assurez-vous que l’appareil dispose d’un accès à Internet](#ensure-the-device-has-an-internet-connection).|
+   |`17`|Le service Microsoft Defender for Endpoint n’a pas réussi à modifier l’emplacement du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : variable|[Exécutez à nouveau le script d’intégration](configure-endpoints-script.md). Si le problème persiste, contactez le support technique.|
    |`25`|Le service Microsoft Defender for Endpoint n’a pas réussi à réinitialiser l’état d’état d’état dans le Registre. Code d’échec _: variable_|Contactez le support technique.|
    |`27`|Échec de l’activement de Microsoft Defender pour le mode point de terminaison en mode Windows Defender. Échec du processus d’intégration. Code d’échec : variable|Contactez le support technique.|
    |`29`|Échec de la lecture des paramètres deboarding. Type d’erreur : %1, Code d’erreur : %2, Description : %3|Assurez-vous que l’appareil dispose d’un accès à Internet, puis exécutez à nouveau l’intégralité du processus deboarding.|
@@ -222,15 +219,15 @@ Tout d’abord, vous devez vérifier que le service est prêt à démarrer autom
 
 ### <a name="ensure-the-service-is-set-to-start"></a>S’assurer que le service est prêt à démarrer
 
-**Utilisez la ligne de commande pour vérifier le type** Windows de démarrage du service de données de diagnostic :
+**Utilisez la ligne de commande pour vérifier le type Windows de démarrage du service de données de diagnostic** :
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
-   a. Cliquez **sur Démarrer,** **tapez cmd,** puis appuyez sur **Entrée.**
+   a. Cliquez **sur Démarrer**, **tapez cmd**, puis appuyez sur **Entrée**.
 
    b. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-2. Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée** :
 
    ```console
    sc qc diagtrack
@@ -240,29 +237,29 @@ Tout d’abord, vous devez vérifier que le service est prêt à démarrer autom
 
    ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
-   Si ce n’est pas le cas, vous devez définir le `START_TYPE` `AUTO_START` service pour qu’il démarre automatiquement.
+   Si ce n’est `START_TYPE` pas le cas `AUTO_START`, vous devez définir le service pour qu’il démarre automatiquement.
 
 **Utilisez la ligne de commande pour configurer Windows service de données de diagnostic pour démarrer automatiquement :**
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
-   a. Cliquez **sur Démarrer,** **tapez cmd,** puis appuyez sur **Entrée.**
+   a. Cliquez **sur Démarrer**, **tapez cmd**, puis appuyez sur **Entrée**.
 
    b. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-2. Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée** :
 
    ```console
    sc config diagtrack start=auto
    ```
 
-3. Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée**:
+3. Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée** :
 
    ```console
    sc qc diagtrack
    ```
 
-4. Démarrez le service. Dans l’invite de commandes, tapez la commande suivante et appuyez sur **Entrée**:
+4. Démarrez le service. Dans l’invite de commandes, tapez la commande suivante et appuyez sur **Entrée** :
 
    ```console
    sc start diagtrack
@@ -274,22 +271,22 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 WinHTTP est indépendant des paramètres de proxy de navigation Internet et d’autres applications de contexte utilisateur et doit être en mesure de détecter les serveurs proxy disponibles dans votre environnement particulier.
 
-Pour vous assurer que le capteur dispose d’une connectivité de service, suivez les étapes décrites dans la rubrique Vérifier la connectivité du client à Microsoft Defender pour les URL de [service de point de terminaison.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)
+Pour vous assurer que le capteur dispose d’une connectivité de service, suivez les étapes décrites dans la rubrique Vérifier la connectivité [du client à Microsoft Defender pour les URL de service de point de terminaison](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) .
 
-Si la vérification échoue et que votre environnement utilise un proxy pour se connecter à Internet, suivez les étapes décrites dans la rubrique Configurer le proxy et les paramètres de [connectivité Internet.](configure-proxy-internet.md)
+Si la vérification échoue et que votre environnement utilise un proxy pour se connecter à Internet, suivez les étapes décrites dans la rubrique Configurer le proxy et les [paramètres de connectivité Internet](configure-proxy-internet.md) .
 
 ### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>S’assurer Antivirus Microsoft Defender n’est pas désactivée par une stratégie
 
 > [!IMPORTANT]
-> Les informations suivantes s’appliquent uniquement aux appareils qui n’ont pas encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) Antivirus Microsoft Defender. 
+> Les informations suivantes s’appliquent  uniquement aux appareils qui n’ont pas encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) Antivirus Microsoft Defender.
 >
 > La mise à jour garantit que les Antivirus Microsoft Defender ne peuvent pas être désactivées sur les appareils clients via la stratégie système.
 
-**Problème**: le service Microsoft Defender for Endpoint ne démarre pas après l’intégration.
+**Problème** : le service Microsoft Defender for Endpoint ne démarre pas après l’intégration.
 
-**Symptôme**: l’intégration se termine correctement, mais vous voyez l’erreur 577 ou l’erreur 1058 lors de la tentative de démarrage du service.
+**Symptôme :** l’intégration se termine correctement, mais vous voyez l’erreur 577 ou l’erreur 1058 lors de la tentative de démarrage du service.
 
-**Solution**: si vos appareils exécutent un client de logiciel anti-programme malveillant tiers, l’agent Microsoft Defender pour Endpoint a besoin du pilote ELAM (Logiciel anti-programme malveillant à lancement rapide) pour être activé. Vous devez vous assurer qu’elle n’est pas désactivée par une stratégie système.
+**Solution** : si vos appareils exécutent un client de logiciel anti-programme malveillant tiers, l’agent Microsoft Defender pour Endpoint a besoin du pilote ELAM (Logiciel anti-programme malveillant à lancement rapide) pour être activé. Vous devez vous assurer qu’elle n’est pas désactivée par une stratégie système.
 
 - En fonction de l’outil que vous utilisez pour implémenter des stratégies, vous devez vérifier que les stratégies de Windows Defender suivantes sont effacées :
 
@@ -302,11 +299,11 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> Le paramètre est interrompu et sera ignoré sur tous les appareils Windows 10, à partir de la mise à jour d’août `disableAntiSpyware` 2020 (version 4.18.2007.8) Antivirus Microsoft Defender.
+> `disableAntiSpyware` Le paramètre est interrompu et sera ignoré sur tous les appareils Windows 10, à partir de la mise à jour d’août 2020 (version 4.18.2007.8) Antivirus Microsoft Defender.
 
 - Après l’effacement de la stratégie, exécutez à nouveau les étapes d’intégration.
 
-- Vous pouvez également vérifier les valeurs de clé de Registre précédentes pour vérifier que la stratégie est désactivée, en ouvrant la clé de `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` Registre.
+- Vous pouvez également vérifier les valeurs de clé de Registre précédentes pour vérifier que la stratégie est désactivée, en ouvrant la clé de Registre `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
     ![Image de la clé de Registre pour Antivirus Microsoft Defender.](images/atp-disableantispyware-regkey.png)
 
@@ -331,17 +328,17 @@ Si vous rencontrez des problèmes lors de l’intégration d’un serveur, vous 
 
 Vous devrez peut-être également vérifier les choses suivantes :
 
-- Vérifiez qu’un service Microsoft Defender pour points de terminaison est en cours d’exécution dans l’onglet **Processus** dans **le Gestionnaire des tâches.** Par exemple :
+- Vérifiez qu’un service Microsoft Defender pour points de terminaison est en cours d’exécution dans l’onglet **Processus** dans **le Gestionnaire des tâches**. Par exemple :
 
     ![Image de l’affichage des processus avec Microsoft Defender pour endpoint Service en cours d’exécution.](images/atp-task-manager.png)
 
-- Vérifiez le **Gestionnaire d’opérations** des journaux des applications et des services de l’Observateur d’événements pour voir \>  \>  s’il existe des erreurs.
+- Vérifiez le **Gestionnaire d’opérations** \> **des journaux** des applications et des services de l’Observateur d’événements \> pour voir s’il existe des erreurs.
 
-- Dans **Services,** vérifiez si le **Microsoft Monitoring Agent** est en cours d’exécution sur le serveur. Par exemple :
+- Dans **Services**, vérifiez si le **Microsoft Monitoring Agent** est en cours d’exécution sur le serveur. Par exemple :
 
     ![Image des services.](images/atp-services.png)
 
-- Dans **Microsoft Monitoring Agent** Azure Log Analytics (OMS), vérifiez les espaces de travail et vérifiez que l’état est en cours \> d’exécution.
+- Dans **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS),** vérifiez les espaces de travail et vérifiez que l’état est en cours d’exécution.
 
     ![Image de Microsoft Monitoring Agent propriétés.](images/atp-mma-properties.png)
 
@@ -359,17 +356,17 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 - Dans ce scénario, le service SENSE ne démarre pas automatiquement même si le package d’intégration a été déployé
 
 > [!NOTE]
-> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le rollup de mise à jour du [22 avril 2021.](https://support.microsoft.com/kb/5001384) Windows 10, version 1909 avec le rollup de mise à jour [d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
+> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le rollup de mise à jour du [22 avril 2021](https://support.microsoft.com/kb/5001384). Windows 10, version 1909 avec le [rollup de mise à jour d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
 
 
 > [!NOTE]
-> Les étapes suivantes sont pertinentes uniquement lors de l’utilisation Microsoft Endpoint Configuration Manager. Pour plus d’informations sur l’intégration à l’Microsoft Endpoint Configuration Manager, voir [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> Les étapes suivantes sont pertinentes uniquement lors de l’utilisation Microsoft Endpoint Configuration Manager. Pour plus d’informations sur l’intégration à l Microsoft Endpoint Configuration Manager, voir [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Créez une application dans Microsoft Endpoint Configuration Manager.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration1.](images/mecm-1.png)
 
-2. Sélectionnez **Spécifier manuellement les informations d’application.**
+2. **Sélectionnez Spécifier manuellement les informations d’application**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration2.](images/mecm-2.png)
 
@@ -377,15 +374,15 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration3.](images/mecm-3.png)
 
-4. Spécifiez des informations sur le centre de logiciels, puis sélectionnez **Suivant**.
+4. Spécifiez des informations sur le centre logiciel, puis sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration4.](images/mecm-4.png)
 
-5. Dans **les types de déploiement,** **sélectionnez Ajouter.**
+5. Dans **les types de déploiement** , **sélectionnez Ajouter**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration5.](images/mecm-5.png)
 
-6. Sélectionnez **Spécifier manuellement les informations sur le type de déploiement,** puis sélectionnez **Suivant.**
+6. **Sélectionnez Spécifier manuellement les informations sur le type** de déploiement, puis sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration6.](images/mecm-6.png)
 
@@ -393,95 +390,95 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration7.](images/mecm-7.png)
 
-8. Dans **le programme** \> **d’installation de** contenu, spécifiez la commande : `net start sense` .
+8. Dans **le programme d’installation** \> **de** contenu, spécifiez la commande : `net start sense`.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
 
-9. Dans **la méthode Détection,** **sélectionnez Configurer des règles pour détecter** la présence de ce type de déploiement, puis **sélectionnez Ajouter une clause**.
+9. Dans **la méthode Detection**, **sélectionnez Configurer les règles pour détecter** la présence de ce type de déploiement, puis **sélectionnez Ajouter une clause**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration9.](images/mecm-9.png)
 
-10. Spécifiez les détails de règle de détection suivants, puis sélectionnez **OK**:
+10. Spécifiez les détails de règle de détection suivants, puis sélectionnez **OK** :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration10.](images/mecm-10.png)
 
-11. Dans **la méthode de détection,** **sélectionnez Suivant.**
+11. Dans **la méthode Detection,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration11.](images/mecm-11.png)
 
-12. Dans **Expérience utilisateur,** spécifiez les informations suivantes, puis sélectionnez **Suivant**:
+12. Dans **Expérience utilisateur**, spécifiez les informations suivantes, puis sélectionnez **Suivant** :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration12.](images/mecm-12.png)
 
-13. Dans **Les conditions requises,** **sélectionnez Suivant**.
+13. Dans **Conditions requises**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration13.](images/mecm-13.png)
 
-14. Dans **Dépendances,** sélectionnez **Suivant.**
+14. Dans **Dépendances**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration14.](images/mecm-14.png)
 
-15. En **résumé,** sélectionnez **Suivant**.
+15. En **résumé**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration15.](images/mecm-15.png)
 
-16. In **Completion**, select **Close**.
+16. À **l’achèvement**, sélectionnez **Fermer**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration16.](images/mecm-16.png)
 
-17. Dans **les types de** déploiement, sélectionnez **Suivant.**
+17. Dans **les types de déploiement**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration17.](images/mecm-17.png)
 
-18. En **résumé,** sélectionnez **Suivant**.
+18. En **résumé**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration18.](images/mecm-18.png)
 
-    L’état est ensuite affiché : ![ Image de Microsoft Endpoint Configuration Manager configuration19.](images/mecm-19.png)
+    L’état est ensuite affiché : ![Image de Microsoft Endpoint Configuration Manager configuration19.](images/mecm-19.png)
 
-19. In **Completion**, select **Close**.
+19. À **l’achèvement**, sélectionnez **Fermer**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration20.](images/mecm-20.png)
 
-20. Vous pouvez maintenant déployer l’application en cliquant avec le bouton droit sur l’application et en sélectionnant **Déployer.**
+20. Vous pouvez maintenant déployer l’application en cliquant avec le bouton droit sur l’application et en sélectionnant **Déployer**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration21.](images/mecm-21.png)
 
-21. En **général,** **sélectionnez Distribuer automatiquement le contenu pour les dépendances et** **Parcourir.**
+21. En **général,** **sélectionnez Distribuer automatiquement le contenu pour les dépendances et** **Parcourir**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration22.](images/mecm-22.png)
 
-22. Dans **le contenu,** **sélectionnez Suivant**.
+22. Dans **Contenu,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration23.](images/mecm-23.png)
 
-23. Dans **les paramètres de déploiement,** sélectionnez **Suivant.**
+23. Dans **les paramètres de déploiement**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration24.](images/mecm-24.png)
 
-24. Dans **la planification,** **sélectionnez Dès que possible après le temps disponible,** puis sélectionnez **Suivant**.
+24. Dans **Planification,** **sélectionnez Dès que possible après le temps disponible**, puis **suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration25.](images/mecm-25.png)
 
-25. Dans **l’expérience utilisateur,** sélectionnez Valider les modifications à l’échéance ou pendant une fenêtre de maintenance (nécessite des redémarrages), puis **sélectionnez Suivant**. 
+25. Dans **l’expérience utilisateur**, **sélectionnez Valider les modifications à** l’échéance ou pendant une fenêtre de maintenance (nécessite des redémarrages), puis **sélectionnez Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration26.](images/mecm-26.png)
 
-26. Dans **les alertes,** **sélectionnez Suivant.**
+26. Dans **alertes,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration27.](images/mecm-27.png)
 
-27. En **résumé,** sélectionnez **Suivant**.
+27. En **résumé**, sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration28.](images/mecm-28.png)
 
-    L’état s’affiche ensuite ![ Image de Microsoft Endpoint Configuration Manager configuration29.](images/mecm-29.png)
+    L’état s’affiche ensuite ![Image de Microsoft Endpoint Configuration Manager configuration29.](images/mecm-29.png)
 
-28. In **Completion**, select **Close**.
+28. À **l’achèvement**, sélectionnez **Fermer**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Rubriques associées
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)
