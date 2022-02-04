@@ -9,20 +9,15 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- LIL_Placement
-- O365ITProTrain
-- Ent_Office_Other
+  - LIL_Placement
+  - O365ITProTrain
+  - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
-ms.openlocfilehash: 96544e023ba9e5ff3e362911e82c86acc72d0970
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755723"
 ---
+
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
@@ -59,7 +54,7 @@ Vous pouvez utiliser les versions de Windows suivantes :
 
 **PowerShell**
 
-- Pour le module Graph de Azure Active Directory PowerShell, vous devez utiliser PowerShell version 5.1 ou ultérieure.
+- Pour le module Azure Active Directory PowerShell pour Graph, vous devez utiliser PowerShell version 5.1.
 
 - Vous devez utiliser PowerShell version 5.1 ou ultérieure jusqu’à PowerShell version 6 pour le Module Microsoft Azure Active Directory pour Windows PowerShell. Vous ne pouvez pas utiliser PowerShell version 7.
        
@@ -124,7 +119,7 @@ Une fois connecté, vous pouvez utiliser les cmdlets du [module Azure Active Dir
 >[!Note]
 >Les cmdlets du Module Microsoft Azure Active Directory pour Windows PowerShell ont *MSol* dans leur nom.
 
-PowerShell version 7 et ultérieures ne prennent pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Pour PowerShell version 7 ou ultérieure, vous devez utiliser le module Azure Active Directory PowerShell pour Graph ou Azure PowerShell.
+PowerShell version 7 et ultérieures ne prennent pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Pour PowerShell version 7 et ultérieures, vous devez utiliser le SDK Microsoft Graph PowerShell.
 
 PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
     

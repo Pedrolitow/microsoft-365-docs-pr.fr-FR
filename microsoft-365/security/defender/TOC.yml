@@ -166,6 +166,16 @@
                   href: investigate-incidents.md
                 - name: Alertes
                   href: investigate-alerts.md
+                - name: Playbooks de notation d’alerte
+                  items:
+                    - name: Vue d’ensemble
+                      href: alert-grading-playbooks.md
+                    - name: Activité suspecte de transfert d’e-mail
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Règle de transfert de boîte de réception suspect
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Règles de manipulation de la boîte de réception suspectes
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                 - name: Utilisateurs
                   href: investigate-users.md
             - name: Playbooks de réponse aux incidents

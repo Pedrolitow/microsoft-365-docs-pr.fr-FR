@@ -1,29 +1,24 @@
 ---
 title: Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Créez des stratégies de rétention d’étiquetage automatique afin de pouvoir appliquer automatiquement des étiquettes pour conserver ce dont vous avez besoin et supprimer ce que vous n’avez pas
-ms.openlocfilehash: 4af5d1a8dc3cb0c7f1ffc38b59556e3bd5220ac5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244906"
 ---
+
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -345,7 +340,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -374,5 +369,11 @@ Toutefois, l’affichage des éléments étiquetés par l’explorateur de conte
 Si vous avez besoin de vérifier que personne ne peut désactiver la stratégie, supprimer la stratégie ou la rendre moins restrictive, veuillez consulter la rubrique [Utiliser le Verrou de Conservation pour restreindre les modifications apportées aux stratégies de rétention et aux stratégies d’étiquette de rétention](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Prochaines étapes
+
+Pour vous aider à suivre les étiquettes appliquées à partir de vos stratégies d’étiquetage automatique :
+
+- [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels)
+- [Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette de rétention spécifique](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Audit des actions de rétention](retention.md#auditing-retention-actions)
 
 Consultez [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md) pour un exemple de scénario qui utilise une stratégie d’application automatique avec des propriétés gérées dans SharePoint et la rétention basée sur les événements pour démarrer la période de rétention.

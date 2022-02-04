@@ -1,34 +1,29 @@
 ---
 title: Régler votre abonnement
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 search.appverid: MET150
-description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
+description: 'Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.'
 ms.custom:
-- okr_SMB
-- fwlink 808700 for SEPA UI glink 906 for older uI
-- AdminSurgePortfolio
-- commerce_billing
-- AdminTemplateSet
+  - okr_SMB
+  - fwlink 808700 for SEPA UI glink 906 for older uI
+  - AdminSurgePortfolio
+  - commerce_billing
+  - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704814"
 ---
+
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
 > [!IMPORTANT]
@@ -48,7 +43,7 @@ Les cartes de débit, de crédit et les informations bancaires sont acceptées p
 > [!IMPORTANT]
 > Le règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
 
-Vous pouvez payer votre abonnement par carte de crédit, carte de débit, ou compte bancaire. Lorsque vous payez avec l’un de ces modes de paiement, nous continuons à facturer ce mode de paiement jusqu’à l’expiration ou l’annulation de l’abonnement. Vous pouvez [gérer les modes de paiement](manage-payment-methods.md) chaque fois que vous en avez besoin. Vous pouvez également choisir de [recevoir une copie de votre relevé de facturation par e-mail](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Vous pouvez payer votre abonnement par carte de crédit, carte de débit, ou compte bancaire. Lorsque vous payez avec l’un de ces modes de paiement, nous continuons à facturer ce mode de paiement jusqu’à l’expiration ou l’annulation de l’abonnement. Vous pouvez [gérer les modes de paiement](manage-payment-methods.md) chaque fois que vous en avez besoin. Vous pouvez également choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
@@ -65,7 +60,7 @@ Si une vérification du crédit est nécessaire, vous en êtes informé lors de 
 >
 > Si vous le préférez, vous pouvez régler par virement électronique entre les deux comptes. L'Agence et le numéro de compte figure au bas de votre facture. Vous devez entrer votre numéro de facture dans le champ identification du Virement.
 
-Si vous payez votre abonnement par facture, vous recevrez un courrier vous avertissant de la disponibilité de votre relevé de facturation. Ce courrier ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez également choisir de [Envoyer une copie de votre relevé de facturation par courrier électronique](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos options de paiement. Si vous entrez une référence de commande fournisseur lorsque vous achetez un abonnement, cette référence s'affichera sur votre relevé de facturation. Pour plus d'informations sur l'accès à vos relevés de facturation, voir [Consulter votre facture pour Office 365 pour les entreprises](view-your-bill-or-invoice.md).
+Si vous payez votre abonnement par facture, vous recevrez un e-mail vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir de [recevoir les factures de votre organisation en tant que pièces jointes](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
 
