@@ -1,29 +1,24 @@
 ---
 title: Découvrir la rétention pour SharePoint et OneDrive
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 18ada99844e7d342244d578d9cca76f68a28501c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322156"
 ---
+
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -78,7 +73,9 @@ Les utilisateurs voient également un message d’erreur s’ils tentent de supp
 
 - Le paramètre de gestion des enregistrements qui permet aux utilisateurs de supprimer des éléments étiquetés est désactivé.
     
-    Pour vérifier ou modifier ce paramètre, accédez au nœud **Gestion des enregistrements** dans la Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**. Il existe des paramètres distincts pour SharePoint et OneDrive.
+    Pour vérifier ou modifier ce paramètre, accédez à la solution **Gestion des enregistrements** dans la Centre de conformité Microsoft 365 > **Gestion des enregistrements** > **Paramètres de gestion des enregistrements** > **Étiquettes de rétention** > **Suppression des éléments**. Il existe des paramètres distincts pour SharePoint et OneDrive.
+    
+    Sinon, et si vous n’avez pas accès à la solution de **gestion des enregistrements**, vous pouvez utiliser *AllowFilesWithKeepLabelToBeDeletedSPO* et *AllowFilesWithKeepLabelToBeDeletedODB* à partir de [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) et [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
 - L’étiquette de rétention marque les éléments en tant qu’enregistrements et elle est [verrouillée](record-versioning.md).
     
@@ -136,7 +133,7 @@ La copie stockée dans la bibliothèque de conservation et de préservation des 
 
 Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut du contenu OneNote ou une étiquette de rétention à un dossier OneNote, en arrière-plan, les différentes pages et sections OneNote sont des fichiers individuels qui héritent des paramètres de rétention. Cela signifie que chaque section d’une page sera conservée et supprimée individuellement, conformément aux paramètres de rétention que vous spécifiez.
 
-Seules les pages et sections sont touchées par les paramètres de rétention que vous spécifiez. Par exemple, même si vous voyez **une date de modification** pour chaque bloc-notes individuel, cette date n’est pas utilisée Microsoft 365 rétention.
+Seules les pages et sections sont touchées par les paramètres de rétention que vous spécifiez. Par exemple, même si vous voyez une date de **modification** pour chaque bloc-notes individuel, cette date n’est pas utilisée par Microsoft 365 rétention.
 
 ## <a name="how-retention-works-with-document-versions"></a>Fonctionnement de la rétention avec des versions de documents
 
