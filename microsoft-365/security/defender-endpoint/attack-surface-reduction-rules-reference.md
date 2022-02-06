@@ -1,7 +1,7 @@
 ---
 title: Référence des règles de réduction de la surface d’attaque
 description: Répertorie les détails sur les règles de réduction de la surface d’attaque par règle.
-keywords: Règles de réduction de la surface d’attaque, règles de réduction de la surface d’attaque, règles asr, système de prévention des intrusions hôtes, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer les règles de réduction de la surface d’attaque, description des règles de réduction de la surface d’attaque
+keywords: 'Règles de réduction de la surface d’attaque, règles de réduction de la surface d’attaque, règles asr, système de prévention des intrusions hôtes, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour point de terminaison, configurer les règles de réduction de la surface d’attaque, description des règles de réduction de la surface d’attaque'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,20 +10,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: 'oogunrinde, sugamar, jcedola'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320714"
+ms.date: 02/04/2022
 ---
+
+
 # <a name="attack-surface-reduction-rules-reference"></a>Référence des règles de réduction de la surface d’attaque
 
 **S’applique à :**
@@ -76,7 +72,7 @@ Le tableau suivant répertorie les systèmes d’exploitation pris en charge pou
 
 _Fin de la prévisualisation publique : systèmes d’exploitation pris en charge_
 
-## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge 
+## <a name="supported-operating-systems"></a>Systèmes d’exploitation pris en charge
 
 Le tableau suivant répertorie les systèmes d’exploitation pris en charge pour les règles actuellement publiées à la disponibilité générale. Les règles sont répertoriées par ordre alphabétique.
 
@@ -212,6 +208,9 @@ LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Mi
 
 > [!NOTE]
 > Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
+  
+> [!IMPORTANT]
+> L’état par défaut de la règle de réduction de la surface d’attaque (ASR) « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité  locale (Windows lsass.exe) » va changer de Non configuré à Configuré et le mode par défaut à **Bloquer.** Toutes les autres règles de la asr. restent dans leur état par défaut : **Non configuré.** Une logique de filtrage supplémentaire a déjà été incorporée dans la règle pour réduire les notifications des utilisateurs finaux. Les clients peuvent configurer la règle sur **les modes Audit**,  **Avertir** ou Désactivé, ce qui remplacera le mode par défaut. La fonctionnalité de cette règle est la même, que la règle soit configurée en mode par défaut ou si vous activez le mode Blocage manuellement.  
 
 Nom Intune : `Flag credential stealing from the Windows local security authority subsystem`
 

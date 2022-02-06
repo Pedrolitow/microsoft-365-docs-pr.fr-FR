@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender pour point de terminaison Linux
-ms.reviewer: ''
+ms.reviewer: null
 description: Décrit comment installer et utiliser Microsoft Defender pour endpoint sur Linux.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: 'microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,17 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322130"
 ---
+
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -41,7 +36,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Accès au portail Microsoft 365 Defender web
 - Distribution Linux à l’aide [du gestionnaire système](https://systemd.io/)
@@ -72,7 +67,7 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 > [!NOTE]
 > Il n’est pas pris en charge d’installer Microsoft Defender pour le point de terminaison à un autre emplacement que le chemin d’installation par défaut. 
 
-### <a name="system-requirements"></a>Configuration requise du système
+### <a name="system-requirements"></a>Configuration requise
 
 - Distributions de serveurs Linux et versions x64 (AMD64/EM64T) prise en charge :
 
@@ -98,15 +93,32 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
     - Pour 6,9 : 2.6.32-696.*
     - Pour 6,10 : 2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2 :
     
-        |||||
-        |--|--|--|--|
-        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
-        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
-        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
-        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
-        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
-        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
-        |2.6.32-754.28.1.el6.x86_64|
+       - 2.6.32-754.10.1.el6.x86_64
+       - 2.6.32-754.11.1.el6.x86_64
+       - 2.6.32-754.12.1.el6.x86_64
+       - 2.6.32-754.14.2.el6.x86_64
+       - 2.6.32-754.15.3.el6.x86_64
+       - 2.6.32-754.17.1.el6.x86_64
+       - 2.6.32-754.18.2.el6.x86_64
+       - 2.6.32-754.2.1.el6.x86_64
+       - 2.6.32-754.22.1.el6.x86_64
+       - 2.6.32-754.23.1.el6.x86_64
+       - 2.6.32-754.24.2.el6.x86_64
+       - 2.6.32-754.24.3.el6.x86_64
+       - 2.6.32-754.25.1.el6.x86_64
+       - 2.6.32-754.27.1.el6.x86_64
+       - 2.6.32-754.28.1.el6.x86_64
+       - 2.6.32-754.29.1.el6.x86_64
+       - 2.6.32-754.29.2.el6.x86_64
+       - 2.6.32-754.3.5.el6.x86_64
+       - 2.6.32-754.30.2.el6.x86_64
+       - 2.6.32-754.33.1.el6.x86_64
+       - 2.6.32-754.35.1.el6.x86_64
+       - 2.6.32-754.39.1.el6.x86_64
+       - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.6.3.el6.x86_64
+       - 2.6.32-754.9.1.el6.x86_64
+
 
     > [!NOTE]
     > Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.

@@ -25,8 +25,6 @@ La page État de l’inscription et Autopilot pour le déploiement pré-provisio
 
 Microsoft Manged Desktop utilise ces paramètres dans le profil Autopilot utilisé pour les appareils de vos utilisateurs :
 
-****
-
 | Paramètre | Valeur |
 | ----- | ----- |
 | Mode de déploiement | Piloté par l’utilisateur |
@@ -45,10 +43,8 @@ Microsoft Manged Desktop utilise ces paramètres dans le profil Autopilot utilis
 
 Microsoft Manged Desktop utilise ces paramètres pour l’expérience Page d’état de l’inscription :
 
-****
-
 | Paramètre | Valeur |
-| ----- | ----- |
+| ------ | ------ |
 | Afficher l’avancement de la configuration des applications et des profils | Oui |
 | Afficher l’erreur lorsque l’installation prend plus de minutes que le nombre de minutes spécifié | 60 |
 | Afficher un message personnalisé en cas d’erreur de limite de temps | Non |
@@ -57,7 +53,7 @@ Microsoft Manged Desktop utilise ces paramètres pour l’expérience Page d’�
 | Bloquer l’utilisation de l’appareil jusqu’à ce que toutes les applications et tous les profils soient installés | Oui |
 | Autoriser les utilisateurs à réinitialiser l’appareil si une erreur d’installation se produit | Oui |
 | Autoriser les utilisateurs à utiliser l’appareil si une erreur d’installation se produit | Oui |
-| Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil|Espace de travail moderne - Correction du temps | Espace de travail moderne - Bibliothèque cliente |
+| Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil <ul><li> Espace de travail moderne - Correction du temps</li><li>Espace de travail moderne - Bibliothèque cliente</li></ul> | Oui |
 
 L’expérience Page d’état de l’inscription se produit en trois phases. Pour plus d’informations, [consultez les informations de suivi de la page État de l’inscription](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 

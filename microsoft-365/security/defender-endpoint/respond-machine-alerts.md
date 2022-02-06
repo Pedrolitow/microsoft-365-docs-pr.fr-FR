@@ -1,7 +1,7 @@
 ---
 title: Prendre des mesures de réponse sur un appareil dans Microsoft Defender pour le point de terminaison
-description: Prendre des mesures de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’enquête, la gestion des balises, l’exécution d’une analyse antivirus et la restriction de l’exécution de l’application.
-keywords: répondre, isoler, isoler l’appareil, collecter un package d’enquête, centre de mesures, restreindre, gérer les balises, analyse antivirus, restreindre l’application
+description: 'Prendre des mesures de réponse sur un appareil, telles que l’isolation des appareils, la collecte d’un package d’enquête, la gestion des balises, l’exécution d’une analyse antivirus et la restriction de l’exécution de l’application.'
+keywords: 'répondre, isoler, isoler l’appareil, collecter un package d’enquête, centre de mesures, restreindre, gérer les balises, analyse antivirus, restreindre l’application'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321974"
 ---
+
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -133,7 +128,7 @@ Dans le cadre du processus d’examen ou de réponse, vous pouvez lancer à dist
 
 >[!IMPORTANT]
 >- Cette action n’est actuellement pas prise en charge pour macOS et Linux. Utilisez la réponse en direct pour exécuter l’action. Pour plus d’informations sur la réponse en direct, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct](live-response.md)
->- Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)
+>- Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, que Microsoft Defender AV soit ou non la solution antivirus active. L’Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)
 
 Vous avez sélectionné Exécuter **l’analyse antivirus**, sélectionnez le type d’analyse que vous souhaitez exécuter (rapide ou complet) et ajoutez un commentaire avant de confirmer l’analyse.
 

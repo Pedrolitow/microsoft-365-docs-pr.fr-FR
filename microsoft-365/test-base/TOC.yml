@@ -1,6 +1,6 @@
 - name: Documentation de base de test
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: Qu’est-ce que la base de test ?
       href: overview.md
@@ -10,7 +10,7 @@
       href: createAccount.md
     - name: Téléchargement d’un package
       href: uploadApplication.md
-    - name: Télécharger Dépendances de & binaires
+    - name: Télécharger binaires & dépendances
       href: binaries.md
     - name: Définir les tâches de test
       href: testtask.md
@@ -20,7 +20,9 @@
       href: review.md
     - name: Recommandations en cas de package
       href: contentguideline.md
-- name: Guides pratiques
+    - name: Règles d’application/test
+      href: rules.md
+- name: Guides de procédures
   items:
     - name: Test d’application serveur
       href: server.md

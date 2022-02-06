@@ -2,7 +2,7 @@
 title: Étape 1. Configurer les lignes de base de sécurité
 author: JoeDavies-MSFT
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- ransomware
-- m365solution-ransomware
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - ransomware
+  - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus
-description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: bd988f70dacc1ad2a7645b09c9d9994315b5a4df
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667793"
+keywords: 'rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie, zéro virus'
+description: "Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft\_365 contre les attaques par rançongiciel."
 ---
+
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
 Pour contrer les attaques par rançongiciels, vous devez d’abord configurer les lignes de base de sécurité définies par Microsoft suivantes :
@@ -38,7 +33,7 @@ Ces lignes de base contiennent des paramètres de configuration et des règles c
 
 Tout d’abord, évaluez et mesurez votre niveau de sécurité à l’aide du [Niveau de sécurité Microsoft](/microsoft-365/security/defender/microsoft-secure-score), puis suivez les instructions pour l’améliorer selon vos besoins.
 
-Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction) pour aider à bloquer les activités suspectes et le contenu vulnérable. Ces règles comprennent la prévention :
+Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) pour aider à bloquer les activités suspectes et le contenu vulnérable. Ces règles comprennent la prévention :
 
 - Création de processus enfants par toutes les applications Office
 - Contenu exécutable à partir du client de messagerie et du courrier web

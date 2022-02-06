@@ -1,32 +1,26 @@
 ---
 title: Notation des alertes pour une activité de forwarding de courrier suspecte
 description: Notation des alertes pour une activité suspecte de transport de courrier pour passer en revue les alertes et prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
-keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
+keywords: 'incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 83e8061d2c9473c274d615c8905b2918e1b72d17
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355137"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Notation des alertes pour une activité de forwarding de courrier suspecte
 
@@ -39,7 +33,7 @@ Les acteurs des menaces peuvent utiliser des comptes d’utilisateur compromis �
 
 Les e-mails peuvent être transmis manuellement ou automatiquement à l’aide de règles de transmission. Le transport automatique peut être implémenté de plusieurs manières, telles que les règles de boîte de réception, Exchange de transport (ETR) et le transport SMTP. Bien que le forwarding manuel nécessite une action directe de la part des utilisateurs, il se peut qu’ils ne connaissent pas tous les e-mails transmis automatiquement. Dans Microsoft 365, une alerte est alerte lorsqu’un utilisateur envoie automatiquement un message électronique à une adresse de messagerie potentiellement malveillante.
 
-Ce manuel vous permet d’examiner les alertes de forwarding de courrier suspect et de les classer rapidement en tant que vrai positif (TP) ou faux positif (FP). Vous pouvez ensuite prendre des mesures recommandées pour les alertes TP afin de corriger l’attaque.
+Ce manuel vous aide à examiner les alertes d’activité de forwarding de courrier suspect et à les noté rapidement comme vrai positif (TP) ou faux positif (FP). Vous pouvez ensuite prendre des mesures recommandées pour les alertes TP afin de corriger l’attaque.
 
 Pour obtenir une vue d’ensemble de la notation des alertes pour Microsoft Defender pour Office 365 et Microsoft Defender pour les applications cloud, consultez [l’article d’introduction](alert-grading-playbooks.md).
 
@@ -53,9 +47,9 @@ Les résultats de l’utilisation de ce manuel sont les :
 
 ## <a name="email-forwarding-rules"></a>Règles de forwarding du courrier électronique
 
-La règle de forwarding de courrier permet aux utilisateurs de configurer une règle pour le forward des messages électroniques envoyés à la boîte aux lettres d’un utilisateur vers la boîte aux lettres d’un autre utilisateur à l’intérieur ou à l’extérieur de l’organisation. Certains utilisateurs de messagerie, en particulier ceux qui ont plusieurs boîtes aux lettres, configurent des règles de forwarding pour déplacer les courriers électroniques des employeurs vers leurs comptes de messagerie privés. Le forwarding de courrier électronique est une fonctionnalité utile, mais peut également poser un risque de sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou ses partenaires.
+Les règles de forwarding de courrier permettent aux utilisateurs de créer une règle pour le courrier électronique envoyé à la boîte aux lettres d’un utilisateur vers la boîte aux lettres d’un autre utilisateur à l’intérieur ou à l’extérieur de l’organisation. Certains utilisateurs de messagerie, en particulier ceux qui ont plusieurs boîtes aux lettres, configurent des règles de forwarding pour déplacer les courriers électroniques des employeurs vers leurs comptes de messagerie privés. Le forwarding de courrier électronique est une fonctionnalité utile, mais peut également poser un risque de sécurité en raison de la divulgation potentielle d’informations. Les attaquants peuvent utiliser ces informations pour attaquer votre organisation ou ses partenaires.
 
-### <a name="suspicious-email-forwarding-rules"></a>Règles de forwarding de courrier suspecte
+### <a name="suspicious-email-forwarding-activity"></a>Activité suspecte de transfert d’e-mail
 
 Les attaquants peuvent configurer des règles de messagerie pour masquer les e-mails entrants dans la boîte aux lettres de l’utilisateur compromis afin d’masquer leurs activités malveillantes à l’utilisateur. Ils peuvent également définir des règles dans la boîte aux lettres utilisateur compromise pour supprimer des e-mails, déplacer les messages électroniques dans un autre dossier moins perceptible, tel qu’un dossier RSS, ou les envoyer à un compte externe.  
 
@@ -71,7 +65,7 @@ Pour plus d’informations, consultez les billets de blog ci-après :
 
 ## <a name="alert-details"></a>Détails de l’alerte
 
-Pour passer en revue l’alerte spécifique, ouvrez la page **Alertes** pour voir la section **Liste d’activités** . Voici un exemple.
+Pour passer en revue l’alerte Activité de forwarding de courrier suspect, ouvrez la page **Alertes** pour voir la section **Liste d’activités** . Voici un exemple.
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Liste des activités liées à l’alerte" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -177,12 +171,6 @@ Pour utiliser [des requêtes de](advanced-hunting-overview.md) recherche avancé
 - CloudAppEvents - Contient le journal d’audit des activités des utilisateurs.
 
 - IdentityLogonEvents : contient les informations de connexion de tous les utilisateurs.
-
-Voici un exemple.
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="Exemple de page de recherche avancée" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-Utilisez des requêtes pour recueillir des informations pour les questions suivantes.
 
 >[!Note]
 >Certains paramètres sont propres à votre organisation ou réseau. Remplissez ces paramètres spécifiques comme indiqué dans chaque requête.
@@ -291,6 +279,6 @@ Une fois que vous avez déterminez que les activités associées rendent cette a
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de la notation des alertes](alert-grading-playbooks.md)
-- [Règles de forwarding de boîte de réception suspectes](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Règle de transfert de boîte de réception suspect](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Règles de manipulation de la boîte de réception suspectes](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Examiner des alertes](investigate-alerts.md)

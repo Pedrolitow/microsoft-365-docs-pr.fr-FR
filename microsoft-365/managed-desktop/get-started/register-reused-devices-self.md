@@ -32,9 +32,9 @@ Microsoft Manged Desktop pouvez utiliser de nouveaux appareils, ou vous pouvez r
 
 ### <a name="obtain-the-hardware-hash"></a>Obtenir le hachage matériel
 
-**Pour obtenir le hachage matériel :**
+Microsoft Manged Desktop identifie chaque appareil de manière unique en référentant son hachage matériel. Vous avez quatre options pour obtenir ces informations à partir des appareils que vous utilisez déjà.
 
-Microsoft Manged Desktop identifie chaque appareil de manière unique en référentant son hachage matériel. Vous avez quatre options pour obtenir ces informations à partir des appareils que vous utilisez déjà :
+**Pour obtenir le hachage matériel :**
 
 - Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les hages matériels.
 - Collecter des informations [dans Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).

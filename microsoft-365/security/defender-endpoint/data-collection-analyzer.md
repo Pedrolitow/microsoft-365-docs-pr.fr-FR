@@ -1,30 +1,25 @@
 ---
 title: Collecte de données pour la résolution avancée des problèmes sur Windows
 description: Découvrez comment utiliser l’analyseur client pour collecter des données pour des scénarios de dépannage complexes
-keywords: analzyer, collecter des données, dépanner mdeclientanalyzer, résolution avancée des problèmes
+keywords: 'analzyer, collecter des données, dépanner mdeclientanalyzer, résolution avancée des problèmes'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ab670be80c34ced9318c51e2de29a9c9226ea17a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320822"
 ---
+
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
 **S’applique à :**
@@ -38,7 +33,7 @@ Exécuter « **MDEClientAnalyzer.cmd /?** » pour voir la liste des paramètres
 ![Image des paramètres de l’analyseur client dans la ligne de commande.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> Lorsqu’un paramètre de dépannage avancé est utilisé, l’analyseur appelle également [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) pour collecter les Antivirus Microsoft Defender de support associés.
+> Lorsqu’un paramètre de dépannage avancé est utilisé, l’analyseur [ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) appelle égalementMpCmdRun.exepour collecter Antivirus Microsoft Defender journaux de support associés.
 
 **-h** : appelle [l’enregistreur Windows performance](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi détaillé des performances générales en plus du jeu de journaux standard.
 

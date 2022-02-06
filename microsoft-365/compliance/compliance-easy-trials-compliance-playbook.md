@@ -1,7 +1,7 @@
 ---
 title: Playbook d'essai des solutions de conformité Microsoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
@@ -10,18 +10,13 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Playbook d'essai des solutions de conformité Microsoft 365.
-ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265702"
 ---
+
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Manuel d'essai : solutions de conformité Microsoft 365
 
 Bienvenue dans le playbook d'essai des solutions de conformité Microsoft 365. Ce playbook vous aidera à tirer le meilleur parti de votre essai gratuit de 90 jours en vous aidant à découvrir les capacités robustes et complètes des produits de conformité et de sécurité Microsoft 365.
@@ -417,6 +412,8 @@ Le contenu en attente d'une révision de disposition n'est définitivement suppr
 Aidez votre organisation à évaluer les risques et à répondre efficacement aux exigences nationales, régionales et industrielles régissant la collecte et l'utilisation des données.
 
 [Plus d'informations sur l'essai des évaluations premium de Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+
+[Guide d'essai : évaluations premium de Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Gestion des risques liés à la confidentialité Microsoft Priva et demandes de droits d'objet Microsoft Priva
 

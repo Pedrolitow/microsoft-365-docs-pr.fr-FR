@@ -33,6 +33,12 @@ Examinez cette affiche de deux pages pour accélérer rapidement les concepts et
 
 Vous pouvez [télécharger cette affiche et](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
+Cette solution est la première étape pour créer la pile de déploiement Microsoft 365 confiance zéro.
+
+![Pile de déploiement Microsoft 365 confiance zéro](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
+
+Pour plus d’informations, [voir le plan Microsoft 365 de confiance zéro](/microsoft-365/security/microsoft-365-zero-trust).
+
 ## <a name="whats-in-this-solution"></a>Qu’y a-t-il dans cette solution ?
 
 Cette solution vous permet de déployer une infrastructure d’identité pour votre client Microsoft 365 afin de fournir un accès à vos employés et une protection contre les attaques basées sur l’identité.

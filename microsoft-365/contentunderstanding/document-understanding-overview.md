@@ -8,19 +8,14 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Découvrez la compréhension de document dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153699"
 ---
+
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Vue d’ensemble de la compréhension de document dans Microsoft SharePoint Syntex
 
 
@@ -40,7 +35,7 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 > [!NOTE]
 > Les types de contenus scellés ou en lecture seule ne peuvent pas être mis à jour. Ils ne peuvent donc pas être utilisés dans un modèle.
 
-Ajoutez *des classifieurs* et *des extracteurs* à vos modèles de compréhension de documents pour les actions suivantes : 
+*Ajoutez des classifieurs* et *des extracteurs* à vos modèles de compréhension de documents pour les actions suivantes : 
 
 - Les classificateurs sont utilisés pour identifier et classer les documents téléchargés vers la bibliothèque de documents. Par exemple, un classifieur peut être « exercé » pour identifier tous les documents *renouvellement de contrat* qui sont chargés dans la bibliothèque. Le type de contenu renouvellement contrat est défini par vous lorsque vous créez votre classifieur.
 
@@ -110,6 +105,13 @@ Les modèles de compréhension des documents suivent les types de fichiers suiva
 - xls
 - xlsx
 
+### <a name="supported-languages"></a>Langues prises en charge
+
+Les modèles de compréhension des documents sont en charge dans les langues suivantes :
+- Français
+- Allemand
+- Italien
+- Espagnol
 
 
 ## <a name="see-also"></a>Voir aussi

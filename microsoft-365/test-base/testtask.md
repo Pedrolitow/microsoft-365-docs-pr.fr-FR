@@ -11,24 +11,19 @@ ms.date: 07/06/2021
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a113f5d5f1906cf483e6f8b6cd0f3c7b6aa1deb0
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241007"
 ---
+
 # <a name="step-4-the-tasks-tab"></a>Étape 4 : onglet Tâches
 
 Sous l’onglet Tâches, vous devez fournir les chemins d’accès à vos scripts de test qui se trouveraient dans le dossier zip que vous avez chargé sous l’onglet fichiers binaires.
 
   - **Scripts de test out-of-box :** Tapez les chemins d’accès relatifs à vos scripts d’installation, de lancement, de fermeture et de désinstallation. Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour le script d’installation.
-  - **Scripts de test fonctionnels :** Tapez le chemin d’accès relatif à chaque script de test fonctionnel téléchargé. Des scripts de test fonctionnels supplémentaires peuvent être ajoutés à l’aide ```Add Script``` du bouton. Vous avez besoin d’au moins un script (1) et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels. 
+  - **Scripts de test fonctionnels :** Tapez le chemin d’accès relatif à chaque script de test fonctionnel téléchargé. Des scripts de test fonctionnels supplémentaires peuvent être ajoutés à l’aide du ```Add Script``` bouton. Vous avez besoin d’au moins un script (1) et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels. 
   
-    Les scripts sont exécutés dans la séquence de chargement et un échec dans un script particulier arrête l’exécution des scripts suivants.
+    Les scripts s’exécutent dans l’ordre où ils sont répertoriés. Un échec dans un script particulier arrête l’exécution des scripts suivants.
     Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour chaque script fourni.
 
 ## <a name="set-script-path"></a>Définir le chemin d’accès au script
@@ -53,7 +48,7 @@ _**Zip_file_uploaded**_
   - **Script.ps1** _dossier1/script.ps1_ comme chemin d’accès relatif.
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Afficher les détails de l’onglet Options de test dans l’article suivant 
 > [!div class="nextstepaction"]

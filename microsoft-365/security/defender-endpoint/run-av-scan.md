@@ -1,7 +1,7 @@
 ---
 title: API d’analyse antivirus
 description: Utilisez cette API pour créer des appels liés à l’exécution d’une analyse antivirus sur un appareil.
-keywords: api, api de graphique, api pris en charge, supprimer l’appareil de l’isolation
+keywords: 'api, api de graphique, api pris en charge, supprimer l’appareil de l’isolation'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,13 +15,8 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320764"
 ---
+
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +44,7 @@ Lancez Antivirus Microsoft Defender analyse sur un appareil.
 > [!IMPORTANT]
 >
 > - Cette action est disponible pour les appareils sur Windows 10 version 1709 ou ultérieure, et sur Windows 11.
-> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, qu’Antivirus Microsoft Defender soit la solution antivirus active ou non. Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide)
+> - Une analyse Antivirus Microsoft Defender (Microsoft Defender AV) peut s’exécuter avec d’autres solutions antivirus, qu’Antivirus Microsoft Defender soit la solution antivirus active ou non. Antivirus Microsoft Defender peut être en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)
 
 ## <a name="permissions"></a>Autorisations
 
@@ -76,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>Corps de la demande
@@ -86,7 +81,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-ScanType|Chaîne|Définit le type de l’analyse. **Obligatoire**.
+ScanType|String|Définit le type de l’analyse. **Obligatoire**.
 
 **ScanType** contrôle le type d’analyse à effectuer et peut être l’un des suivants :
 

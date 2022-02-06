@@ -3,7 +3,7 @@ title: Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server inclut des exclusions automatiques basées sur le rôle serveur. Vous pouvez également ajouter des exclusions personnalisées.
-keywords: exclusions, serveur, exclusions automatiques, automatiques, personnalisées, analyses, Antivirus Microsoft Defender
+keywords: 'exclusions, serveur, exclusions automatiques, automatiques, personnalisées, analyses, Antivirus Microsoft Defender'
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -14,15 +14,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/02/2022
+ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00c92b5d19c33a3f1c085715d0b1a6f2b4186667
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327336"
 ---
+
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
 
@@ -45,7 +40,7 @@ Gardez les points importants suivants à l’esprit :
 - Les exclusions automatiques s’appliquent uniquement à l’analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d’une analyse complète, rapide ou à la demande.
 - Les exclusions personnalisées et dupliquées ne sont pas en conflit avec les exclusions automatiques.
 - Antivirus Microsoft Defender utilise les outils gestion et maintenance des images de déploiement (DISM) pour déterminer les rôles installés sur votre ordinateur.
-- Windows Server 2012 R2 n’inclut pas automatiquement les Antivirus Microsoft Defender. Lorsque vous intégrerez ces serveurs à Defender for Endpoint, vous installez Antivirus Windows Defender, et les exclusions pour les fichiers du système d’exploitation sont incluses par défaut. Toutefois, les exclusions automatiques pour les rôles serveur ne fonctionnent pas et vous devez ajouter des exclusions selon le cas. Pour plus d’informations, [voir Intégrer Windows serveurs au service Microsoft Defender for Endpoint](configure-server-endpoints.md).
+- Windows Server 2012 R2 n’a pas Antivirus Microsoft Defender en tant que fonctionnalité installable. Lorsque vous intégrerez ces serveurs à Defender for Endpoint, vous installez Antivirus Windows Defender et des exclusions par défaut pour les fichiers du système d’exploitation sont appliquées. Toutefois, les exclusions pour les rôles serveur (comme indiqué ci-dessous) ne s’appliquent pas automatiquement et vous devez configurer ces exclusions selon le cas. Pour plus d’informations, [voir Intégrer Windows serveurs au service Microsoft Defender for Endpoint](configure-server-endpoints.md).
 
 Cet article fournit une vue d’ensemble des exclusions Antivirus Microsoft Defender sur Windows Server 2016 ou ultérieure.
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison
 description: Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise qui permet de se défendre contre les menaces persistantes avancées.
-keywords: introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces
+keywords: 'introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,13 +15,8 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d4bdd474f126eaf6d3cda21b2fcb4a1ffc383abe
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322106"
 ---
+
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -146,7 +141,7 @@ Defender pour point de terminaison s’intègre directement aux différentes sol
 - Microsoft Defender pour Office
 - Skype Entreprise
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defende)**
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
 Avec Microsoft 365 Defender, Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
 

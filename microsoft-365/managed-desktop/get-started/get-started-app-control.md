@@ -1,6 +1,6 @@
 ---
 title: Prise en main du contrôle d’application
-description: null
+description: Cet article explique comment activer le contrôle d’application
 keywords: 'Bureau géré Microsoft, Microsoft 365, service, documentation'
 ms.service: m365-md
 author: tiaraquan

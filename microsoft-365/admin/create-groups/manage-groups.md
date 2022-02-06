@@ -10,46 +10,41 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
-- BCS160
-- MET150
-- MOE150
+  - BCS160
+  - MET150
+  - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586456"
+description: 'Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.'
 ---
+
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d'administration Microsoft 365
 
 Après avoir créé [un groupe Microsoft 365 et](create-groups.md) ajouté des membres du groupe, vous pouvez configurer votre groupe. Vous pouvez modifier le nom ou la description du groupe, gérer les propriétaires ou les membres, et spécifier si les expéditeurs externes peuvent envoyer des messages électroniques au groupe et s’il faut envoyer des copies des conversations de groupe aux membres.
 
-Go to the Centre d'administration Microsoft 365 at [https://admin.microsoft.com](https://admin.microsoft.com) .
+Accédez au Centre d'administration Microsoft 365 sur [https://admin.microsoft.com](https://admin.microsoft.com).
 
 ## <a name="edit-the-group-name-or-description"></a>Modifier le nom ou la description du groupe
 
-1. Dans le Centre d’administration, développez **Groupes,** puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes.**</a>
+1. Dans le Centre d’administration, développez **Groupes**, puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>.
 
-2. Sélectionnez le groupe à modifier, puis cliquez sur **Modifier le nom et la description.**
+2. Sélectionnez le groupe à modifier, puis cliquez sur **Modifier le nom et la description**.
 
-3. Mettez à jour le nom et la description, puis sélectionnez **Enregistrer.**
+3. Mettez à jour le nom et la description, puis sélectionnez **Enregistrer**.
 
 ## <a name="manage-group-owners-and-members"></a>Gérer les propriétaires et les membres du groupe
 
-1. Dans le Centre d’administration, développez **Groupes,** puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes.**</a>
+1. Dans le Centre d’administration, développez **Groupes**, puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>.
 
 2. Cliquez sur le nom du groupe que vous souhaitez gérer pour ouvrir le volet des paramètres.
 
-3. Sous **l’onglet Membres,** choisissez si vous souhaitez gérer les propriétaires ou les membres.
+3. Sous **l’onglet Membres** , choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
-4. Choisissez **Ajouter pour** ajouter une personne ou cliquez sur **X** pour supprimer une personne.
+4. Choisissez **Ajouter pour** ajouter une personne ou cliquez **sur X** pour supprimer une personne.
 
 5. Cliquez sur **Fermer**.
 
@@ -61,11 +56,11 @@ Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie d
 
 Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d’arrêter de suivre le groupe dans Outlook.
 
-1. Dans le Centre d’administration, développez **Groupes,** puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes.**</a>
+1. Dans le Centre d’administration, développez **Groupes**, puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>.
 
 2. Cliquez sur le nom du groupe que vous souhaitez gérer pour ouvrir le volet des paramètres.
 
-3. Sous **l’onglet Paramètres,** sélectionnez Envoyer des copies des conversations de groupe et des **événements** aux membres du groupe si vous souhaitez que les membres reçoivent des copies des messages de groupe et des éléments de calendrier dans leur propre boîte de réception.
+3. Sous **l’onglet Paramètres**, sélectionnez Envoyer des **copies des conversations** de groupe et des événements aux membres du groupe si vous souhaitez que les membres reçoivent des copies des messages de groupe et des éléments de calendrier dans leur propre boîte de réception.
 
 4. Sélectionnez **Enregistrer**.
 
@@ -73,16 +68,16 @@ Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d�
 
 Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’entreprise telle que info@contoso.com.
  
-1. Dans le Centre d’administration, développez **Groupes,** puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes.**</a>
+1. Dans le Centre d’administration, développez **Groupes**, puis cliquez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a>.
 
 2. Cliquez sur le nom du groupe que vous souhaitez gérer pour ouvrir le volet des paramètres.
 
-3. Dans la liste des groupes du Centre d’administration, sélectionnez le nom du groupe à modifier, puis sous l’onglet **Paramètres,** sélectionnez Autoriser les expéditeurs externes à envoyer un e-mail à **ce groupe.**
+3. Dans la liste des groupes du Centre d’administration, sélectionnez le nom du groupe à modifier, puis sous l’onglet **Paramètres**, sélectionnez Autoriser les expéditeurs externes à envoyer un **e-mail à ce groupe**.
     
 4. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Il peut prendre jusqu’à 30 minutes avant que les utilisateurs en dehors de l’organique ne peuvent envoyer un e-mail au groupe.
+> Il peut prendre jusqu’à 30 minutes avant que les utilisateurs extérieurs à l’organisation ne peuvent envoyer un e-mail au groupe.
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Supprimer définitivement un groupe Microsoft 365 de données
 
