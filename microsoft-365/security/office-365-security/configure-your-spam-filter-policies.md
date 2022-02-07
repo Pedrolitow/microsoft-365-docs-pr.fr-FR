@@ -1,30 +1,25 @@
 ---
 title: Configuration de stratégies de filtrage du courrier indésirable
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-- MET150
+  - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-- M365-security-compliance
-ms.custom: ''
-description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
+  - M365-security-compliance
+ms.custom: null
+description: 'Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29e21c53ef7fa7456b8e38433006b1eab210f610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873560"
 ---
+
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "61873560"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou dans les organisations ayant Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
@@ -79,6 +74,10 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Si vous souhaitez connaître les paramètres recommandés pour l’utilisation des stratégies anti-courrier indésirable, veuillez consulter la section [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+- Vous ne pouvez pas désactiver complètement le filtrage du courrier indésirable, mais vous pouvez utiliser une règle de flux de messagerie (également appelée règle de transport) pour contourner la plupart du filtrage du courrier indésirable sur les messages entrants (par exemple, si vous routez le courrier électronique via un service ou un appareil de protection tiers avant la remise à Microsoft 365). Pour plus d’informations, consultez [Utiliser des règles de flux de messagerie pour définir le niveau de probabilité de courrier indésirable (SCL) dans les messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+  - Les messages d’hameçonnage à haut niveau de confiance sont toujours filtrés. Les autres fonctionnalités d’EOP ne sont pas affectées (par exemple, les messages sont toujours analysés pour détecter les programmes malveillants).
+  - Si vous devez contourner le filtrage du courrier indésirable pour les boîtes aux lettres SecOps ou les simulations d’hameçonnage, n’utilisez pas de règles de flux de messagerie. Pour plus d’informations, consultez [Configurer la remise de simulations d’hameçonnage tierces aux utilisateurs et de messages non filtrés aux boîtes aux lettres SecOps](configure-advanced-delivery.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable
 
@@ -540,7 +539,7 @@ Cet exemple définit la priorité de la règle nommée Marketing Department sur 
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Remarques** :
+**Remarques** :
 
 - Remarque: pour définir la priorité d'une nouvelle règle lors de sa création, utilisez le paramètre _Priorité_ dans l’applet de commandes **New-HostedContentFilterRule**.
 - La stratégie de filtrage anti-courrier indésirable par défaut ne possède pas de règle de filtrage de courrier indésirable correspondante et contient toujours la valeur de priorité non modifiable **La plus faible**.
