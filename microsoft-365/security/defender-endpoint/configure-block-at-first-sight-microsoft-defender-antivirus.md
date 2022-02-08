@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f5b1d0f79f9d85ab433aa91c043104362fb8f766
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167861"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444652"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -65,7 +65,7 @@ L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention e
 
 - Dans de nombreux cas, ce processus peut diminuer le temps de réponse de plusieurs heures à quelques secondes pour un nouveau programme malveillant.
 
-- Vous pouvez [spécifier la durée d’interdiction d’exécution d’un fichier](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) pendant que le service de protection dans le cloud analyse le fichier. Vous pouvez également [personnaliser le message affiché sur les bureaux des utilisateurs](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) lorsqu’un fichier est bloqué. Vous pouvez modifier le nom de l’entreprise, les informations de contact et l’URL du message.
+- Vous pouvez [spécifier la durée d’interdiction d’exécution d’un fichier](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) pendant que le service de protection dans le cloud analyse le fichier. Vous pouvez également [personnaliser le message affiché sur les bureaux des utilisateurs](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) lorsqu’un fichier est bloqué. Vous pouvez modifier le nom de l’entreprise, les informations de contact et l’URL du message.
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Activer la fonctionnalité Bloquer à la première consultation avec Microsoft Intune
 

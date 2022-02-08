@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 43f2f304be125afb57fd1ff5c09605159e16a961
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 950178b638b020e9d44301db3a335c73bbb55311
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321578"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444543"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -85,25 +85,35 @@ Pour en savoir plus sur les modèles, voir [Working with assessment templates](c
 
 ## <a name="create-assessments"></a>Créer des évaluations
 
-Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation.
-
 > [!NOTE]
 > Seuls les utilisateurs qui détiennent un rôle d’administrateur général, d’administration du Gestionnaire de conformité ou d’évaluateur du Gestionnaire de conformité peuvent créer et modifier des évaluations. En savoir plus sur [les rôles et les autorisations](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Pour commencer à créer des évaluations, suivez ces étapes.
+Avant de commencer, assurez-vous de savoir à quel groupe vous allez l’affecter ou d’être prêt à créer un groupe pour cette évaluation. Lisez les détails sur [les groupes et les évaluations](#understand-groups-before-creating-assessments).
 
-1. Connaissez le groupe auquel vous affecterez votre évaluation ou soyez prêt à en créer un nouveau pour cette évaluation.
+Pour créer une évaluation, vous allez utiliser un processus guidé pour sélectionner un modèle et désigner le produit associé. Dans votre page **Évaluations** , nous vous suggérons de commencer par Ajouter des évaluations recommandées **, ce** qui vous permet d’identifier et de configurer rapidement les évaluations les plus pertinentes pour votre organisation en même temps. Vous pouvez également configurer les évaluations une par une en sélectionnant **Ajouter une évaluation**. Suivez les étapes ci-dessous pour commencer à créer des évaluations.
 
-2. Ouvrez l’Assistant d’évaluation. Vous pouvez accéder à ce volet volant à partir de l’un des deux endroits :
-    - Go to your **assessments** page in Compliance Manager and select **Add assessment**; ou
-    - Recherchez le modèle que vous souhaitez utiliser sous l’onglet **Modèles** d’évaluation, affichez ses détails et sélectionnez **Créer une évaluation**. Cela remplit le champ de sélection de modèle de l’Assistant pour vous.
+#### <a name="create-assessments-based-on-recommendations-for-your-org-type"></a>Créer des évaluations basées sur des recommandations pour votre type d’organisation
 
-3. **Sélectionnez un modèle** : si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (pour plus d’informations, voir Disponibilité et [gestion](compliance-manager-templates.md#template-availability-and-licensing) des licences des modèles). Sélectionnez la radio en haut du modèle choisi, puis sélectionnez **Suivant**.
+Le Gestionnaire de conformité peut indiquer les évaluations les plus pertinentes pour votre organisation. Lorsque vous fournissez des informations de base sur l’industrie et les emplacements de votre organisation, nous vous recommandons les modèles à utiliser à partir de notre bibliothèque de plus de 300 modèles. Choisissez simplement l’un des modèles recommandés pour la configuration rapide de plusieurs évaluations en même temps. 
+
+Pour créer une ou plusieurs évaluations en fonction de nos recommandations,  sélectionnez Ajouter des évaluations recommandées à partir de votre page **Évaluations** et suivez les étapes suivantes :
+   - Sélectionnez un ou plusieurs secteurs d’activité qui identifient votre organisation, puis sélectionnez **Suivant**
+   - Sélectionnez une ou plusieurs régions pour l’emplacement de votre organisation, puis sélectionnez **Suivant**
+   - Dans **l’écran** Choisir l’évaluation, sélectionnez la flèche de liste verte en regard des **modèles recommandés** pour voir la liste des évaluations que nous pensons appliquer à votre organisation. Cochez les cases en regard des modèles que vous souhaitez utiliser pour créer des évaluations, puis sélectionnez **Suivant**.
+   - Examinez vos sélections finales et **sélectionnez Ajouter des évaluations recommandées** pour créer vos nouvelles évaluations.
+
+#### <a name="create-an-assessment-using-a-guided-process"></a>Créer une évaluation à l’aide d’un processus guidé
+
+1. Dans votre page **Évaluations** , sélectionnez **Ajouter une évaluation**. Cela vous placera dans l’Assistant création d’évaluation.
+
+2. Dans **l’écran Modèle de** base, **sélectionnez Sélectionner le modèle** pour choisir le modèle pour votre évaluation.
+
+3. Dans le volet volant, choisissez le modèle de réglementation ou de certification sur lequel baser l’évaluation. Liste des modèles divisés en catégories incluses et premium ([obtenir des détails](compliance-manager-templates.md#template-availability-and-licensing)). Le compteur De **modèles activés/** sous licence en haut du volet volant vous montre comment les modèles que vous utilisez en dehors du nombre total disponible ou votre organisation à [utiliser (en](compliance-manager-templates.md#active-and-inactive-templates) savoir plus) Sélectionnez la radio en haut du modèle choisi, puis sélectionnez **Enregistrer**. Vous revenirez à l’écran de votre modèle de **base** où vous pourrez passer en revue les détails du modèle, puis continuer en **sélectionnant Suivant**.
 
 4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisissez le produit qu’elle va évaluer et affectez-la à un groupe.
 
     - **Produit** : sélectionnez le produit à appliquer à votre évaluation. Si vous utilisez un modèle Microsoft, tel qu’un modèle conçu pour Microsoft 365, ce champ est rempli pour indiquer le produit approprié et ne peut pas être modifié. Si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner un produit Microsoft prédéfiny lors de l’utilisation d’un modèle universel.
-    - **Nom :** entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation** . Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
+    - **Nom de l’évaluation** : entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation** . Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
     - **Groupe** : affectez votre évaluation à un groupe. Vous pouvez :
         - **Sélectionnez Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou
         - **Sélectionnez Créer un groupe** pour créer un groupe et lui affecter cette évaluation :
@@ -112,9 +122,9 @@ Pour commencer à créer des évaluations, suivez ces étapes.
 
     Quand vous avez terminé, sélectionner **Suivant**.
 
-5. **Révision et fin :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez **Créer une évaluation**.
+5. **Révision et fin :** Passer en revue vos sélections et apporter les modifications nécessaires. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation**.
 
-6. L’écran suivant confirme que vous avez bien créé votre nouvelle évaluation. **Sélectionnez Terminé** pour fermer l’Assistant et la page de détails de votre nouvelle évaluation s’affiche à l’écran.
+L’écran suivant confirme que l’évaluation a été créée. Lorsque vous **sélectionnez Terminé**, vous êtes conduit à la page de détails de votre nouvelle évaluation.
 
 Si vous voyez **un écran** d’échec d’évaluation après avoir sélectionné Créer une **évaluation,** sélectionnez **Réessayer** pour re-créer votre évaluation.
 

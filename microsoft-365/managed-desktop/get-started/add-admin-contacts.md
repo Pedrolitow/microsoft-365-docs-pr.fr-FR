@@ -3,55 +3,55 @@ title: Ajouter et vérifier des contacts d’administrateur dans le portail d’
 description: Indiquez-nous qui contacter pour chaque domaine de travail.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 568a31d2a0a62704767b3dc41855d2f24b815bc3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b5f52c1aee2586d325149c6656674fef16200773
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213216"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444628"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
-Il existe plusieurs façons Microsoft Manged Desktop service communique avec les clients. Pour simplifier la communication et nous assurer que nous vérifions avec les bonnes personnes, vous devez fournir un ensemble de contacts d’administrateur. Microsoft Manged Desktop Les opérations IT contacteront ces personnes pour obtenir de l’aide pour résoudre les problèmes de votre client.
+Il existe plusieurs façons Microsoft Manged Desktop service communique avec les clients. Pour simplifier la communication et nous assurer que nous vérifions avec les bonnes personnes, vous devez fournir un ensemble de contacts d’administrateur. Microsoft Manged Desktop les opérations ito-américaines contacteront ces personnes pour obtenir de l’aide pour résoudre les problèmes.
 
 > [!IMPORTANT]
-> Vous avez peut-être déjà ajouté ces contacts dans le portail d’administration. Si c’est le cas, prenez le temps de vérifier que  la liste des contacts est exacte, Microsoft Manged Desktop être en mesure de les joindre en cas d’incident grave.
+> Vous avez peut-être déjà ajouté ces contacts dans le portail d’administration. Si c’est le cas, prenez le temps de vérifier que la liste des contacts est exacte, Microsoft Manged Desktop être en  mesure de les joindre en cas d’incident grave.
 
 ## <a name="admin-contact-areas-of-focus"></a>Zones de contact d’administration prioritaires
 
-Les contacts d’administrateur doivent être la meilleure personne ou le meilleur groupe qui puisse répondre aux questions et prendre des décisions pour différents domaines de travail. **Microsoft Manged Desktop Les opérations contactent ces contacts d’administrateur pour les questions concernant les demandes de support déposées par le client.** Ces contacts d’administrateur recevront des notifications pour les mises à jour de demande de support et les nouveaux messages. Ces domaines sont les suivants :
+Les contacts d’administrateur doivent être la meilleure personne ou le meilleur groupe qui puisse répondre aux questions et prendre des décisions pour différents domaines de travail. **Microsoft Manged Desktop Opérations contactera ces contacts d’administrateur pour toute question concernant les demandes de support déposées par le client.** Ces contacts d’administrateur recevront des notifications pour les mises à jour des demandes de support et les nouveaux messages. Ces domaines sont les suivants :
 
-Zone de mise au point | Pour des questions sur
---- | ---
-Empaquetage d’application | Résolution des problèmes d’empaquetage d’application
-Appareils | État de l’appareil, résolution des problèmes Microsoft Manged Desktop appareils
-Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop appareils
-Service d’aide à l’information | dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors de Microsoft Manged Desktop de support 
-Autres | Pour les problèmes non couverts par d’autres domaines
+| Zone de mise au point | Pour des questions sur |
+| ----- | ----- |
+| Empaquetage d’application | Résolution des problèmes d’empaquetage d’application. |
+| Appareils | L’état de l’appareil, la résolution des problèmes Microsoft Manged Desktop appareils. |
+| Sécurité | Résolution des problèmes de sécurité avec Microsoft Manged Desktop appareils. |
+| Service d’aide à l’information | Dans les cas où notre personnel de support remet des tickets d’utilisateur en dehors de Microsoft Manged Desktop les zones de support. |
+| Autres | Pour les problèmes non couverts par d’autres domaines. |
 
-**Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.** Lorsque vous intégrerez votre environnement Microsoft Manged Desktop, vous êtes invité à ajouter des contacts pour votre aide et sécurité locales. 
+> [!IMPORTANT]
+> **Toute personne que vous choisissez pour ces contacts doit avoir les connaissances et l’autorité nécessaires pour prendre des décisions pour Microsoft Manged Desktop environnement.**
 
-Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support.](../service-description/support.md) Vous devez avoir un contact d’administrateur pour la zone de focus de la demande de support.
+Lorsque vous intégrerez votre environnement Microsoft Manged Desktop, vous êtes invité à ajouter des contacts pour votre aide et sécurité locales.
 
-**Pour ajouter des contacts d’administrateur**
+Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de support](../service-description/support.md). Vous devez avoir un contact d’administrateur pour la zone de focus de la demande de support.
+
+**Pour ajouter des contacts d’administrateur :**
 
 1. Connectez-vous [à Microsoft Endpoint Manager](https://endpoint.microsoft.com).
-
-2. Sous **Administration du client,** recherchez la section **Microsoft Manged Desktop** puis sélectionnez **Contacts d’administration.**
-
-3. Sélectionnez **Ajouter**.
-
-4. Sélectionnez **une zone de focus** et entrez les informations du contact. 
+1. Sous **Administration du client**, dans la section **Microsoft Manged Desktop**, sélectionnez **Contacts d’administration**.
+1. Sélectionnez **Ajouter**.
+1. Sélectionnez **une zone de focus** et entrez les informations du contact.
 
     ![liste des domaines de mise au point, tels que Autres, Applications et Sécurité.](../../media/areaoffocus.png)
 
-5. Répétez l’étape pour chaque zone de mise au point.
+1. Répétez l’étape pour chaque zone de mise au point.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 

@@ -17,16 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les nouveautés du gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265503"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444412"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft
 
 **Dans cet article :** Découvrez les mises à jour récentes dans le Gestionnaire de conformité.
+
+## <a name="february-2022"></a>Février 2022
+
+### <a name="try-recommended-assessment-templates-for-your-organization"></a>Essayer les modèles d’évaluation recommandés pour votre organisation
+
+Votre organisation peut désormais obtenir des recommandations du Gestionnaire de conformité sur les évaluations les plus pertinentes pour vous, avec un processus de configuration rapide pour être opérationnel. Pour en savoir plus sur les recommandations et sur la façon d’essayer des modèles d’évaluation premium avant d’acheter une licence, voir Démarrer une évaluation [premium](compliance-manager-setup.md#start-a-premium-assessments-trial).
 
 ## <a name="november-2021"></a>Novembre 2021
 
@@ -73,13 +79,13 @@ Nous avons publié de nouveaux modèles d’évaluation, notamment :
 
 ### <a name="integration-with-microsoft-priva"></a>Intégration à Microsoft Priva
 
-Le Gestionnaire de conformité peut désormais travailler de pair avec Microsoft Priva, une solution qui peut vous aider à protéger les données personnelles que votre organisation stocke dans Microsoft 365. Priva propose des outils pour vous aider à visualiser et à comprendre vos données, implémenter des stratégies pour gérer les scénarios de risque clés et gérer les demandes de droits de l’objet. Lorsque vous prenez des mesures en Priva pour protéger les données personnelles que vous stockez, cela peut contribuer à vos évaluations de confidentialité dans le Gestionnaire de conformité et peut vous aider à améliorer votre score de conformité. Pour voir comment Priva et d’autres solutions contribuent à votre score et en savoir plus sur les opportunités potentielles pour d’autres améliorations, consultez l’onglet **Solutions** dans le Gestionnaire de conformité. Vous trouverez également plus d’informations sur Priva à l’aide de la description [de Microsoft Priva.](/privacy/priva)
+Le Gestionnaire de conformité peut désormais travailler de pair avec Microsoft Priva, une solution qui peut vous aider à protéger les données personnelles que votre organisation stocke dans Microsoft 365. Priva propose des outils pour vous aider à visualiser et à comprendre vos données, implémenter des stratégies pour gérer les scénarios de risque clés et gérer les demandes de droits de l’objet. Lorsque vous prenez des mesures en Priva pour protéger les données personnelles que vous stockez, cela peut contribuer à vos évaluations de confidentialité dans le Gestionnaire de conformité et peut vous aider à améliorer votre score de conformité. Pour voir comment Priva et d’autres solutions contribuent à votre score et en savoir plus sur les opportunités potentielles pour d’autres améliorations, consultez l’onglet **Solutions** dans le Gestionnaire de conformité. Vous trouverez également plus d’informations sur Priva à [l’aide de la description de Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Juillet 2021
 
-Nous avons ajouté la possibilité de créer des évaluations pour les produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez par [utiliser les modèles d’évaluation.](compliance-manager-templates.md)
+Nous avons ajouté la possibilité de créer des évaluations pour les produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez [par utiliser les modèles d’évaluation](compliance-manager-templates.md).
 
-## <a name="may-2021"></a>Mai 2021
+## <a name="may-2021"></a>Mai 2021
 
 ### <a name="new-assessment-templates"></a>Nouveaux modèles d’évaluation
 
@@ -90,7 +96,7 @@ Nous avons publié 75 nouveaux modèles d’évaluation, notamment :
 - Sarbanes-Oxley Act
 - Afrique du Sud - Promotion de la loi sur l’accès à l’information
 
-Consultez la liste complète des [modèles d’évaluation.](compliance-manager-templates-list.md)
+Consultez la liste complète des [modèles d’évaluation](compliance-manager-templates-list.md).
 
 ## <a name="april-2021"></a>Avril 2021
 
@@ -98,7 +104,7 @@ Consultez la liste complète des [modèles d’évaluation.](compliance-manager-
 
 Le Gestionnaire de conformité est désormais disponible pour les clients doD du gouvernement américain, en plus des clients modérés et Cloud de la communauté du secteur public du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-## <a name="march-2021"></a>mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 ### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 
