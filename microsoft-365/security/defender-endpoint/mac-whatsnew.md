@@ -1,7 +1,7 @@
 ---
 title: Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint sur Mac.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew
+keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew'
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265690"
 ---
+
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,24 +28,19 @@ ms.locfileid: "62265690"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!NOTE]
-> À partir de la fin du mois de janvier 2022, Microsoft Defender pour endpoint (anciennement appelé Microsoft Defender ATP) sera référencé sous le nom de « Microsoft Defender » dans les expériences MDE pour l’utilisateur final sur macOS. 
-> 
-> Cette modification est actuellement disponible dans les canaux de mise à jour bêta (précédemment appelés Insider Fast) et Preview (précédemment appelés Insider Slow). La version minimale du produit qui inclut cette modification est 101.56.35. Pour plus d’informations, voir les notes de publication ci-dessous correspondant à cette version.
-> 
-> Cette modification n’a pas d’impact sur `mdatp` l’outil en ligne de commande.
->
-> **Action requise**: si votre entreprise possède des configurations personnalisées qui reposent sur le nom du produit ou le chemin d’installation de l’application, ces configurations doivent être mises à jour avec les nouvelles valeurs répertoriées ci-dessus.
+## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
+
+- Correctifs de bogue
 
 ## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
 
 - L’application a été renommée « Microsoft Defender ATP » en « Microsoft Defender ». Les utilisateurs finaux observeront les modifications suivantes :
-  - Le chemin d’installation de l’application est devenu `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` .
+  - Le chemin d’installation de l’application est devenu `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app`.
   - Dans l’expérience utilisateur, les occurrences de « Microsoft Defender ATP » ont été remplacées par « Microsoft Defender »
 - Résolution d’un problème : certaines applications VPN ne pouvaient pas se connecter en raison du filtre de contenu réseau distribué avec Microsoft Defender pour endpoint pour Mac
 - Nous avons résolu un problème détecté dans macOS 12.2 bêta 2 dans lequel le package d’installation n’a pas pu être ouvert en raison d’une modification du système d’exploitation qui empêche l’installation de packages avec certaines caractéristiques. Bien qu’il semble que cette modification du système d’exploitation ne soit pas incluse dans la version finale de macOS 12.2, il est probable qu’elle sera réintroduite dans une prochaine version de macOS. En tant que tel, nous encourageons tous les administrateurs d’entreprise à actualiser le package Microsoft Defender pour Endpoint dans leur console de gestion vers cette version du produit (ou une version plus récente).
 - Nous avons résolu un problème sur certains appareils M1 où le produit était bloqué avec des définitions de logiciel anti-programme malveillant non valides et n’a pas pu être mis à jour avec succès vers un ensemble de définitions de travail.
-- `mdatp health` la sortie a été étendue avec un attribut supplémentaire appelé qui peut être utilisé pour déterminer si l’accès disque total a été accordé à tous les composants de `full_disk_access_enabled` Microsoft Defender pour Endpoint pour Mac.
+- `mdatp health` la sortie a été `full_disk_access_enabled` étendue avec un attribut supplémentaire appelé qui peut être utilisé pour déterminer si l’accès disque total a été accordé à tous les composants de Microsoft Defender pour Endpoint pour Mac.
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
@@ -61,7 +51,7 @@ ms.locfileid: "62265690"
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0)
 
-- Ajout d’un nouveau commutateur à l’outil en ligne de commande pour contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+- Ajout d’un nouveau commutateur à l’outil en ligne de commande pour contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]`. Par défaut, cette valeur est définie sur `enabled`.
 - Correctifs de bogue
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0)
@@ -76,8 +66,8 @@ ms.locfileid: "62265690"
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
 
 - Ajout de nouveaux commutateurs à l’outil en ligne de commande :
-  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` . Par défaut, un degré de parallélisme `2` est utilisé.
-  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. Par défaut, un degré de parallélisme est `2` utilisé.
+  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]`. Par défaut, cette valeur est définie sur `enabled`.
 - La modification du niveau du journal des produits nécessite désormais une élévation
 - Améliorations des performances & résolutions de bogues
 
@@ -143,7 +133,7 @@ ms.locfileid: "62265690"
 > [!NOTE]
 > L’ancienne syntaxe de l’outil de ligne de commande a été dépréciée avec cette version. Pour plus d’informations sur la nouvelle syntaxe, voir [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- Ajout d’un nouveau commutateur de ligne de commande pour désactiver l’extension réseau : `mdatp system-extension network-filter disable` . Cette commande peut être utile pour résoudre les problèmes réseau qui peuvent être liés à Microsoft Defender pour Endpoint sur Mac
+- Ajout d’un nouveau commutateur de ligne de commande pour désactiver l’extension réseau : `mdatp system-extension network-filter disable`. Cette commande peut être utile pour résoudre les problèmes réseau qui peuvent être liés à Microsoft Defender pour Endpoint sur Mac
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -153,7 +143,7 @@ ms.locfileid: "62265690"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - Amélioration de la fiabilité de l’agent lors de l’exécution sur macOS 11 Big Sur
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
+- Ajout d’un nouveau commutateur de ligne de commande (`--ignore-exclusions`) pour ignorer les exclusions av pendant les analyses personnalisées (`mdatp scan custom`)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
@@ -176,12 +166,12 @@ ms.locfileid: "62265690"
 
 - Cette version du produit a été validée sur macOS Big Sur 11 bêta 9
 
-- La nouvelle syntaxe de `mdatp` l’outil en ligne de commande est désormais la syntaxe par défaut. Pour plus d’informations sur la nouvelle syntaxe, voir [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)
+- La nouvelle syntaxe de l’outil `mdatp` en ligne de commande est désormais la syntaxe par défaut. Pour plus d’informations sur la nouvelle syntaxe, voir [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
-  > L’ancienne syntaxe de l’outil de ligne de commande sera supprimée du produit le **1er janvier 2021.**
+  > L’ancienne syntaxe de l’outil en ligne de commande sera supprimée du produit le **1er janvier 2021**.
 
-- Étendu avec un nouveau paramètre ( ) qui permet d’enregistrer les journaux de diagnostic dans `mdatp diagnostic create` `--path [directory]` un autre répertoire
+- Étendu avec `mdatp diagnostic create` un nouveau paramètre (`--path [directory]`) qui permet d’enregistrer les journaux de diagnostic dans un autre répertoire
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1010949"></a>101.09.49
@@ -192,23 +182,23 @@ ms.locfileid: "62265690"
 
 ## <a name="1010723"></a>101.07.23
 
-- Ajout de nouveaux champs à la sortie de la vérification de l’état du mode passif et de `mdatp --health` l’ID PEPT groupe
+- Ajout de nouveaux champs à la sortie de `mdatp --health` la vérification de l’état du mode passif et de l’ID PEPT groupe
 
   > [!NOTE]
-  > `mdatp --health` sera remplacé par `mdatp health` dans une prochaine mise à jour du produit.
+  > `mdatp --health` sera remplacé par dans `mdatp health` une prochaine mise à jour du produit.
 
 - Correction d’un bogue dans lequel l’envoi automatique d’échantillons n’a pas été marqué comme géré dans l’interface utilisateur
-- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez maintenant [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez maintenant [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history).
 - Correctifs de bogue
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la version `101.05.17` . La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la version `101.05.17`. La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
 > [!IMPORTANT]
-> Nous travaillons sur une syntaxe nouvelle et améliorée pour `mdatp` l’outil en ligne de commande. La nouvelle syntaxe est actuellement la valeur par défaut dans les canaux de mise à jour Insider Fast et Insider Slow. Nous vous encourageons à vous familiariser avec cette nouvelle syntaxe.
+> Nous travaillons sur une syntaxe nouvelle et améliorée pour l’outil `mdatp` en ligne de commande. La nouvelle syntaxe est actuellement la valeur par défaut dans les canaux de mise à jour Insider Fast et Insider Slow. Nous vous encourageons à vous familiariser avec cette nouvelle syntaxe.
 >
 > Nous continuerons à la prise en charge de l’ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons une meilleure communication autour du plan de désaprétation de l’ancienne syntaxe dans les mois à venir.
 
@@ -218,7 +208,7 @@ ms.locfileid: "62265690"
 ## <a name="1010516"></a>101.05.16
 
 - Améliorations apportées à la logique d’analyse rapide pour réduire considérablement le nombre de fichiers analysés
-- Ajout de la prise en charge [de lacompletion](mac-resources.md#how-to-enable-autocompletion) automatique pour l’outil en ligne de commande
+- Ajout de [la prise en charge de lacompletion](mac-resources.md#how-to-enable-autocompletion) automatique pour l’outil en ligne de commande
 - Correctifs de bogue
 
 ## <a name="1010312"></a>101.03.12
@@ -241,7 +231,7 @@ ms.locfileid: "62265690"
 
 ## <a name="1009027"></a>100.90.27
 
-- Vous pouvez désormais [définir un canal](mac-updates.md#set-the-channel-name) de mise à jour pour Microsoft Defender pour point de terminaison sur macOS qui est différent du canal de mise à jour à l’échelle du système
+- Vous pouvez désormais [définir un canal de mise](mac-updates.md#set-the-channel-name) à jour pour Microsoft Defender pour point de terminaison sur macOS qui est différent du canal de mise à jour à l’échelle du système
 - Icône Nouveau produit
 - Autres améliorations de l’expérience utilisateur
 - Correctifs de bogue
@@ -264,7 +254,7 @@ ms.locfileid: "62265690"
 
 ## <a name="1008373"></a>100.83.73
 
-- Ajout de contrôles pour les administrateurs informatiques autour de la gestion des [exclusions,](mac-preferences.md#exclusion-merge-policy)de la gestion des [paramètres](mac-preferences.md#threat-type-settings-merge-policy)de type de menace et des actions contre [les menaces non prises en charge](mac-preferences.md#disallowed-threat-actions)
+- Ajout de contrôles pour les administrateurs informatiques autour de la gestion des [exclusions](mac-preferences.md#exclusion-merge-policy), de la gestion des [paramètres de type](mac-preferences.md#threat-type-settings-merge-policy) de menace et des [actions contre les menaces non prises en charge](mac-preferences.md#disallowed-threat-actions)
 - Lorsque l’accès disque total n’est pas activé sur l’appareil, un avertissement s’affiche désormais dans le menu d’état
 - Améliorations des performances & résolutions de bogues
 
@@ -311,6 +301,6 @@ ms.locfileid: "62265690"
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >
   > - Pour les déploiements manuels, consultez les instructions mises à jour dans la [rubrique Déploiement](mac-install-manually.md#how-to-allow-full-disk-access) manuel.
-  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques sur le déploiement basé sur [JAMF](mac-install-with-jamf.md) [et Microsoft Intune](mac-install-with-intune.md#create-system-configuration-profiles) de déploiement basé sur jamf.
+  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques de déploiement [basé sur JAMF](mac-install-with-jamf.md) [Microsoft Intune de déploiement](mac-install-with-intune.md#create-system-configuration-profiles) basé sur les logiciels.
 
 - Améliorations des performances & résolutions de bogues

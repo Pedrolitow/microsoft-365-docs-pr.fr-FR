@@ -1,7 +1,7 @@
 ---
 title: Ressources pour Microsoft Defender pour point de terminaison sur Mac
-description: Ressources pour Microsoft Defender pour le point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
+description: 'Ressources pour Microsoft Defender pour le point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.'
+keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156351"
 ---
+
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -54,7 +49,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 3. Exécutez `sudo mdatp diagnostic create` cette session pour enregistrer les journaux microsoft Defender pour les points de terminaison. Les fichiers sont stockés dans une archive .zip de données. Cette commande imprime également le chemin d’accès du fichier à la sauvegarde une fois l’opération réussie.
 
    > [!TIP]
-   > Par défaut, les journaux de diagnostic sont enregistrés dans `/Library/Application Support/Microsoft/Defender/wdavdiag/` . Pour modifier le répertoire dans lequel les journaux de diagnostic sont enregistrés, passez à la commande ci-dessous, en remplaçant par le `--path [directory]` `[directory]` répertoire souhaité.
+   > Par défaut, les journaux de diagnostic sont enregistrés dans `/Library/Application Support/Microsoft/Defender/wdavdiag/`. Pour modifier le répertoire dans lequel les journaux de diagnostic sont enregistrés, `--path [directory]` passez à la commande ci-dessous, `[directory]` en remplaçant par le répertoire souhaité.
 
    ```bash
    sudo mdatp diagnostic create
@@ -78,7 +73,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 
 Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
-Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log` . Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
+Le journal détaillé sera enregistré dans `/Library/Logs/Microsoft/mdatp/install.log`. Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
 
 ## <a name="uninstalling"></a>Désinstallation
 
@@ -86,7 +81,7 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 ### <a name="interactive-uninstallation"></a>Désinstallation interactive
 
-- Ouvrez **Finder > Applications.** Cliquez avec le bouton **droit sur Microsoft Defender pour le point de terminaison > déplacer vers la corbeille.**
+- **Ouvrez Finder > Applications**. Cliquez avec le bouton **droit sur Microsoft Defender pour le point > déplacer vers la corbeille**.
 
 ### <a name="supported-output-types"></a>Types de sortie pris en charge
 
@@ -138,7 +133,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 Pour activer lacompletion automatique dans Bash, exécutez la commande suivante et redémarrez la session Terminal :
 
 ```bash
-echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 Pour activer lacompletion automatique dans zsh :
@@ -160,13 +155,13 @@ Pour activer lacompletion automatique dans zsh :
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
 
-   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
 ## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
+`/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp`. Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list`.
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour point de terminaison, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans Microsoft Defender pour le Centre de sécurité des points de terminaison.
+PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) sont désormais arrivées, sur le blog Microsoft Defender for Endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.

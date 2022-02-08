@@ -1,7 +1,7 @@
 ---
 title: Intégrer Windows appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
 description: Utilisez la stratégie de groupe pour déployer le package de configuration sur Windows afin qu’ils soient intégrés au service.
-keywords: configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
+keywords: 'configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +16,8 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 7881a09c0530da09880c0fa1c8c2d73ed0c83000
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327568"
 ---
+
 # <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des appareils Windows à l’aide d’une stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -125,7 +120,7 @@ Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Adminis
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -133,7 +128,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -141,7 +136,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -150,7 +145,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -163,7 +158,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -171,7 +166,7 @@ Recherchez les dernières informations sur la sécurité des virus et logiciels 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Réduction de la surface d’attaque
 
-Obtenez la liste actuelle des GUID des règles de réduction de la surface d’attaque à partir de la phase 3 de déploiement des règles de réduction de la [surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-implement.md). Pour plus d’informations sur les règles, consultez la référence des règles de réduction [de la surface d’attaque](attack-surface-reduction-rules-reference.md)
+Obtenez la liste actuelle des GUID des règles de réduction de la surface d’attaque à partir de l’étape 3 du déploiement des règles de réduction de [la surface d’attaque : implémenter des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-implement.md). Pour plus d’informations sur les règles, consultez la référence des règles de réduction [de la surface d’attaque](attack-surface-reduction-rules-reference.md)
 
 1. Ouvrez la **stratégie Configurer la Réduction de la surface d’attaque** .
 
@@ -185,7 +180,7 @@ Obtenez la liste actuelle des GUID des règles de réduction de la surface d’a
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Stratégie|Emplacement|Paramètre
+Stratégie|Emplacement|Setting
 ---|---|---
 Configurer l’accès contrôlé aux dossiers| \Windows Components\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Controlled Folder Access| Activé, mode Audit
 

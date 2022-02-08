@@ -1,7 +1,7 @@
 ---
-title: Vue d’ensemble du déploiement des règles ASR
-description: Fournit des conseils pour déployer des règles de réduction de la surface d’attaque.
-keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
+title: Conditions préalables au déploiement des règles asr
+description: Fournit une vue d’ensemble et des instructions préalables sur le déploiement de règles de réduction de la surface d’attaque (ASR).
+keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,25 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326980"
 ---
-# <a name="asr-rules-deployment-overview"></a>Vue d’ensemble du déploiement des règles ASR
+
+# <a name="asr-rules-deployment-prerequisites"></a>Conditions préalables au déploiement des règles asr
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les surfaces d’attaque sont tous les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. Les surfaces d’attaque de votre organisation incluent tous les endroits où un attaquant peut compromettre les appareils ou réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’attaque. La configuration des règles de réduction de la surface d’attaque (ASR), l’une des nombreuses fonctionnalités de sécurité de Microsoft Defender pour Endpoint, peut vous aider.
+Les surfaces d’attaque sont tous les endroits où votre organisation est vulnérable aux cybermenaces et aux attaques. Les surfaces d’attaque de votre organisation incluent tous les endroits où un attaquant peut compromettre les appareils ou réseaux de votre organisation. Réduire votre surface d’attaque signifie protéger les appareils et le réseau de votre organisation, ce qui laisse aux attaquants moins de moyens d’attaque. La configuration des règles de réduction de la surface d’attaque (ASR), l’une des nombreuses fonctionnalités de sécurité de Microsoft Defender for Endpoint, peut vous aider.
 
 Les règles asr ciblent certains comportements logiciels, tels que :
 
@@ -39,7 +34,7 @@ Les règles asr ciblent certains comportements logiciels, tels que :
 
 En réduisant les différentes surfaces d’attaque, vous pouvez empêcher les attaques de se produire en premier lieu.
 
-Lors de votre préparation initiale, il est essentiel de comprendre les fonctionnalités des systèmes que vous allez mettre en place. Comprendre les fonctionnalités vous aidera à déterminer les règles de la asr qui sont les plus importantes pour la protection de votre organisation.
+Lors de votre préparation initiale, il est essentiel de comprendre les fonctionnalités des systèmes que vous allez mettre en place. Comprendre les fonctionnalités vous aidera à déterminer les règles de la asr qui sont les plus importantes pour la protection de votre organisation. En outre, vous devez respecter plusieurs conditions préalables lors de la préparation de votre déploiement de la asr.
 
 >[!IMPORTANT]
 >Ce guide fournit des images et des exemples pour vous aider à décider comment configurer les règles de la asr. Ces images et exemples peuvent ne pas refléter les meilleures options de configuration pour votre environnement.
@@ -111,7 +106,7 @@ Les versions de Antivirus Microsoft Defender suivantes ne doivent pas être plus
 
 Le fait Antivirus Microsoft Defender versions actuelles permet de réduire les règles de réduction de la réduction des résultats faux positifs et Antivirus Microsoft Defender fonctionnalités de détection. Pour plus d’informations sur les versions actuelles et la mise à jour des différents composants de Antivirus Microsoft Defender, consultez la [Antivirus Microsoft Defender prise en charge de la plateforme](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-## <a name="asr-rules-deployment-phases"></a>Phases de déploiement des règles asr
+## <a name="asr-rules-deployment-steps"></a>Étapes de déploiement des règles asr
 
 Comme avec toute nouvelle implémentation à grande échelle susceptible d’avoir un impact sur vos opérations métier, il est important d’être méthodique dans la planification et l’implémentation. En raison des fonctionnalités puissantes des règles de protection contre les programmes malveillants dans la prévention des programmes malveillants, une planification et un déploiement attentifs de ces règles sont nécessaires pour s’assurer qu’elles fonctionnent au mieux pour vos flux de travail client uniques. Pour travailler dans votre environnement, vous devez planifier, tester, implémenter et mettre en œuvre les règles de la asr avec soin.  
 

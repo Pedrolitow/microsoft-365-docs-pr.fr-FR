@@ -1,7 +1,7 @@
 ---
-title: 'Déploiement des règles de réduction de la surface d’attaque Phase 1 : planifier'
-description: Fournit des conseils pour planifier le déploiement de vos règles de réduction de la surface d’attaque.
-keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
+title: Planifier le déploiement des règles de réduction de la surface d’attaque des règles de réduction de la surface d’attaque
+description: Fournit des conseils pour planifier le déploiement de règles de réduction de la surface d’attaque (ASR).
+keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,23 +11,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: b3022409360bbd8f8aa677f9481b5763a2429808
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327602"
 ---
-# <a name="phase-1-plan"></a>Phase 1 : planifier
 
-Commencer à tester les règles de la asr. implique de commencer avec la bonne unité commerciale. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions de la RSA au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles de la asr et vous aider à régler votre implémentation.
+# <a name="step-1-plan-asr-rules-deployment"></a>Étape 1 : Planifier le déploiement des règles de la asr
+
+Lors du test des règles de réduction de la surface d’attaque (ASR), il est important de commencer par la bonne unité commerciale. Vous souhaiterez commencer par un petit groupe de personnes dans une unité commerciale spécifique. Vous pouvez identifier certains champions de la RSA au sein d’une unité commerciale particulière qui peuvent fournir un impact réel sur les règles de la asr, et vous aider à régler votre implémentation.
 
 > [!div class="mx-imgBorder"]
 > ![Étapes de planification des règles asr](images/asr-rules-planning-steps.png)
@@ -58,7 +53,7 @@ Il est important de fournir un canal de commentaires et de réponse à vos champ
 Il est essentiel de bien comprendre les applications et les processus par unité d’entreprise utilisés au sein de votre organisation pour réussir le déploiement des règles de la asr. En outre, il est impératif que vous compreniez la façon dont ces applications sont utilisées dans les différentes unités commerciales de votre organisation.
 Pour commencer, vous devez obtenir un inventaire des applications approuvées pour être utilisées dans l’ensemble de l’organisation. Vous pouvez utiliser des outils tels que Microsoft 365 Apps centre d’administration pour vous aider à inventorier les applications logicielles. Voir : [Vue d’ensemble de l’inventaire dans Microsoft 365 Apps’administration centrale](/deployoffice/admincenter/inventory).
 
-## <a name="define-reporting-and-response-team--roles-and-responsibilities"></a>Définir les rôles et responsabilités de l’équipe de signalement et de réponse
+## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>Définir les rôles et responsabilités de l’équipe de signalement et de réponse
 
 Clairement l’articul des rôles et des responsabilités des personnes responsables de la surveillance et de la communication de l’état et de l’activité des règles de la asr. Par conséquent, il est important de déterminer :
 
@@ -80,10 +75,10 @@ Voir : [Créer un plan de déploiement pour Windows](/windows/deployment/update/
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Vue d’ensemble du déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
+[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
 
-[Phase 2 : Tester](attack-surface-reduction-rules-deployment-test.md)
+[Étape 2 : Tester les règles de la asr](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 3 : Implémenter](attack-surface-reduction-rules-deployment-implement.md)
+[Étape 3 : Implémenter des règles de asr](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4 : Opérationnaliser](attack-surface-reduction-rules-deployment-operationalize.md)
+[Étape 4 : Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)

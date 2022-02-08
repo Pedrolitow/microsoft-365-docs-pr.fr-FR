@@ -1,6 +1,6 @@
 ---
 title: Configurer Microsoft Defender pour Endpoint Plan 1
-description: Découvrez comment configurer Defender pour Endpoint Plan 1. Examinez les conditions requises, planifiez votre déploiement et définissez votre environnement.
+description: 'Découvrez comment configurer Defender pour Endpoint Plan 1. Examinez les conditions requises, planifiez votre déploiement et définissez votre environnement.'
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,15 +14,10 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 61f5e5ab9b47aae190b0eefa74a04805ceace326
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327016"
+  - M365-security-compliance
+  - m365initiative-defender-endpoint
 ---
+
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurer Microsoft Defender pour Endpoint Plan 1
 
 **S’applique à :**
@@ -119,7 +114,7 @@ Lorsque vous êtes prêt à intégrer les points de terminaison de votre organis
 
 |Système d’exploitation de point de terminaison | Méthodes d’intégration|
 |---|---|
-| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
+| Windows 10 | [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
 | macOS | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | iOS |[Basée sur l’application](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
@@ -191,7 +186,7 @@ Les règles de réduction de la surface d’attaque sont disponibles sur les app
 > Pour en savoir plus sur les règles de réduction de la surface d’attaque, consultez les ressources suivantes :
 > - [Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants](attack-surface-reduction.md)
 > - [Afficher la liste des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-reference.md)
-> - [Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-implement.md)
+> - [Déploiement des règles de réduction de la surface d’attaque - Étape 3 : implémenter des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-implement.md)
 
 ### <a name="ransomware-mitigation"></a>Atténuation des ransomware
 
@@ -227,7 +222,7 @@ Nous vous recommandons d’Microsoft Endpoint Manager pour configurer l’accès
 
 9. Sous **l’onglet Révision + créer** , examinez les paramètres de votre stratégie, puis choisissez **Créer**. La stratégie sera appliquée à tous les points de terminaison qui ont été prochainement intégrés à Defender for Endpoint.
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. Nous vous recommandons d’Microsoft Endpoint Manager pour configurer les paramètres de contrôle de votre appareil.
 
@@ -235,7 +230,7 @@ Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou aut
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
-2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme**, **sélectionnez Windows 10 et ultérieures**, et pour **le type de profil**, **sélectionnez Modèles**. 
 
@@ -268,7 +263,7 @@ Grâce à la protection du réseau, vous pouvez protéger votre organisation con
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 
-2. Sélectionnez **Appareils** > **Profils de configuration** > **Créer un profil**.
+2. Sélectionner **Appareils** > **Profils de configuration** > **Créer un profil**.
 
 3. Pour **la plateforme**, **sélectionnez Windows 10 et ultérieures**, et pour **le type de profil**, **sélectionnez Modèles**. 
 
@@ -311,7 +306,7 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 
 5. Sous **l’onglet Paramètres de configuration** , développez **Protection Web**, spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Paramètre | Recommandation |
+   | Setting | Recommandation |
    |:---|:---|
    | **Activer la protection du réseau** | Définir sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour les Version antérieure de Microsoft Edge** | Définir sur **Oui**. Permet de protéger les utilisateurs contre les tentatives de hameçonnage et les logiciels malveillants. |
@@ -399,7 +394,7 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 - [Windows Defender de contrôle d’application dans différents scénarios : types d’appareils](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Maintenant que vous avez passé par le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour Endpoint. 
 

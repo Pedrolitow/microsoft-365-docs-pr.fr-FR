@@ -72,8 +72,8 @@ Vous devez suivre les étapes suivantes :
 
    **Général** :
 
-   - Nom : intégration MDATP pour macOS
-   - Description : intégration PEPT MDATP pour macOS
+   - Nom : intégration MDE pour macOS
+   - Description : intégration PEPT MDE pour macOS
    - Catégorie : Aucun
    - Méthode de distribution : installer automatiquement
    - Niveau : niveau ordinateur
@@ -728,14 +728,14 @@ Ces étapes s’appliquent à macOS 10.15 (Genreline) ou aux appareils plus nouv
 2. Cliquez **sur Nouveau**, puis entrez les détails suivants pour **Options** :
 
     - Onglet **Général** :
-        - **Nom :** Extension réseau Microsoft Defender ATP
+        - **Nom :** Extension réseau Microsoft Defender
         - **Description** : macOS 10.15 (Contrôle) ou une nouveauté
         - **Catégorie** : Aucun *(par défaut)*
         - **Méthode de distribution** : installer automatiquement *(par défaut)*
         - **Niveau :** niveau ordinateur *(par défaut)*
 
     - Filtre **de contenu d’onglet** :
-        - **Nom du** filtre : filtre de contenu Microsoft Defender ATP
+        - **Nom du filtre** : filtre de contenu Microsoft Defender
         - **Identificateur** : `com.microsoft.wdav`
         - Laisser **l’adresse du service**, **l’organisation**, **le nom d’utilisateur**, **le** mot de passe, **le certificat** vide (**Inclure** *n’est pas* sélectionné)
         - **Ordre de filtrage** : Inspecteur

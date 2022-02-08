@@ -1,7 +1,7 @@
 ---
 title: Déploiement manuel de Microsoft Defender pour endpoint sur macOS
-description: Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
+description: 'Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.'
+keywords: 'microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,28 +12,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f6524589146bd6daebbf77611cc637f0cc9e79d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171268"
 ---
+
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à une version d’essai gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
 Cette rubrique décrit comment déployer Manuellement Microsoft Defender pour Endpoint sur macOS. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
@@ -44,16 +39,16 @@ Cette rubrique décrit comment déployer Manuellement Microsoft Defender pour En
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
-Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
+Avant de commencer, consultez la [page principale de Microsoft Defender pour point](microsoft-defender-endpoint-mac.md) de terminaison sur macOS pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Télécharger les packages d’installation et d’intégration
 
 Téléchargez les packages d’installation et d’intégration à partir Microsoft 365 Defender portail :
 
-1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail,</a>go to **Paramètres > Endpoints > Device management > Onboarding**.
-2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode deployment sur **le script local.**
-3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation.** Enregistrez-le sous wdav.pkg dans un répertoire local.
-4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration.** Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
+1. Dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portail</a>, go to **Paramètres > Endpoints > Device management > Onboarding**.
+2. Dans la section 1 de la page, définissez le système d’exploitation sur **macOS** et la méthode Deployment sur **Le script local**.
+3. Dans la section 2 de la page, sélectionnez **Télécharger le package d’installation**. Enregistrez-le sous wdav.pkg dans un répertoire local.
+4. Dans la section 2 de la page, **sélectionnez Télécharger le package d’intégration**. Enregistrez-le WindowsDefenderATPOnboardingPackage.zip dans le même répertoire.
 
     ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-macos.png)
 
@@ -67,7 +62,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
     ![Capture d’écran d’installation de l’application 1.](images/mdatp-28-appinstall.png)
 
-2. Sélectionnez **Continuer,** acceptez les termes du contrat de licence, puis entrez le mot de passe lorsque vous y invitez.
+2. **Sélectionnez Continuer**, acceptez les termes du contrat de licence et entrez le mot de passe à l’invite.
 
     ![Installation de l’application capture d’écran2.](images/mdatp-29-appinstalllogin.png)
 
@@ -76,14 +71,14 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
    ![Installation de l’application screenshot3.](images/mdatp-30-systemextension.png)
 
-3. Sélectionnez **Ouvrir les préférences de sécurité** ou Ouvrir les préférences système > sécurité & **confidentialité.** Sélectionnez **Autoriser**:
+3. **Sélectionnez Ouvrir les préférences de sécurité** ou Ouvrir les préférences système **> sécurité & confidentialité**. Sélectionnez **Autoriser** :
 
     ![Capture d’écran de la fenêtre Sécurité et confidentialité.](images/mdatp-31-securityprivacysettings.png)
 
    L’installation se poursuit.
 
    > [!CAUTION]
-   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
+   > Si vous ne sélectionnez pas **Autoriser**, l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
 > MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel ne sera pas disponible tant que l’appareil n’aura pas redémarrage.
@@ -96,13 +91,13 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
     ![Installation de l’application screenshot4.](images/monterey-install-1.png)
 
-2. Sélectionnez **Continuer,** acceptez les termes du contrat de licence, puis entrez le mot de passe lorsque vous y invitez.
+2. **Sélectionnez Continuer**, acceptez les termes du contrat de licence et entrez le mot de passe à l’invite.
 
-3. À la fin du processus d’installation, vous serez promu pour approuver les extensions système utilisées par le produit. Sélectionnez **Ouvrir les préférences de sécurité.**
+3. À la fin du processus d’installation, vous serez promu pour approuver les extensions système utilisées par le produit. **Sélectionnez Ouvrir les préférences de sécurité**.
 
     ![Approbation de l’extension système.](images/monterey-install-2.png)
 
-4. Dans la **fenêtre Sécurité & confidentialité,** sélectionnez **Autoriser.**
+4. Dans la **fenêtre Sécurité & confidentialité** , sélectionnez **Autoriser**.
 
     ![Préférences de sécurité d’extension système1.](images/monterey-install-3.png)
 
@@ -112,7 +107,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
     ![Préférences de sécurité des extensions système2.](images/monterey-install-4.png)
 
-7. Ouvrez La sécurité **des** préférences système & confidentialité et accédez à l’onglet Confidentialité. Accordez l’autorisation d’accès disque total à Microsoft Defender \>  **ATP** et Microsoft **Defender ATP Endpoint Security Extension**.  
+7. **Ouvrez La sécurité des préférences** \> **système & confidentialité** et accédez à l’onglet Confidentialité.  Accordez l’autorisation d’accès disque total à **Microsoft Defender** et Microsoft **Defenders Endpoint Security Extension**.
 
     ![Accès disque complet.](images/monterey-install-5.png)
 
@@ -148,7 +143,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 > [!CAUTION]
 > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l’absence de ce consentement, Microsoft Defender pour le point de terminaison n’est pas en mesure de protéger entièrement votre appareil.
 
-1. Pour accorder le consentement, **ouvrez La** sécurité des préférences \> **système &** \> **confidentialité** \> **confidentialité accès disque total**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
+1. Pour accorder le consentement, **ouvrez La sécurité des** \> préférences système **& confidentialité** \>  \> **de l’accès disque complet**. Cliquez sur l’icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
 
 2. Exécutez un test de détection antivirus pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -174,16 +169,16 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
    1. Dans votre navigateur, tel que Microsoft Edge pour Mac ou Safari.
 
-   1. Téléchargez les fichiers MacOS MDATP DIY.zip https://aka.ms/mdatpmacosdiy et extrayez.
+   1. Téléchargez les fichiers MacOS MDATP DIY.zip et https://aka.ms/mdatpmacosdiy extrayez.
 
       Vous pouvez être invité à :
 
       > Voulez-vous autoriser les téléchargements sur « mdatpclientanalyzer.blob.core.windows.net » ?<br/>
       > Vous pouvez modifier les sites web qui peuvent télécharger des fichiers dans Préférences de sites Web.
 
-4. Cliquez sur **Autoriser.**
+4. Cliquez sur **Autoriser**.
 
-5. Open **Downloads**.
+5. **Ouvrez Téléchargements**.
 
 6. Vous devriez voir **MDATP MacOS 2013.**
 
@@ -192,11 +187,11 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    >
    > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
    > > macOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
-   > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]**
+   > > **\[Déplacer vers annuler la corbeille\]** **\[\]**
 
 7. Cliquez sur **Annuler**.
 
-8. Cliquez avec le bouton **droit de la souris sur MDATP MacOS(2013),** puis cliquez sur **Ouvrir**.
+8. Cliquez avec le bouton **droit de la souris sur MDATP MacOS(2013**), puis cliquez sur **Ouvrir**.
 
     Le système doit afficher le message suivant :
 
@@ -214,7 +209,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
     Dans quelques minutes, une alerte nommée « macOS PEPT Test Alert » doit être appelée.
 
-11. Go to Microsoft 365 Defender portal ( https://security.microsoft.com/) .
+11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
 12. Go to the Alert Queue.
 

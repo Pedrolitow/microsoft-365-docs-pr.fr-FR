@@ -177,6 +177,6 @@ sections:
         answer: |
           * [Présentation de la réduction de la surface d'attaque](attack-surface-reduction.md)
           * [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-          * [Phase 3 de déploiement des règles de réduction de la surface d’attaque : implémenter](attack-surface-reduction-rules-deployment-implement.md)
+          * [Déploiement des règles de réduction de la surface d’attaque - Étape 3 : implémenter des règles de réduction de la surface d’attaque](attack-surface-reduction-rules-deployment-implement.md)
           * [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
           * [Compatibilité des Antivirus Microsoft Defender avec d’autres logiciels antivirus/anti-programme malveillant](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

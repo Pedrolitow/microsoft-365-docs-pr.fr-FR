@@ -1,7 +1,7 @@
 ---
-title: 'Déploiement des règles de réduction de la surface d’attaque Phase 2 : test'
-description: Fournit des conseils pour tester le déploiement de vos règles de réduction de la surface d’attaque.
-keywords: Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque
+title: Tester les règles de réduction de la surface d’attaque (ASR)
+description: Fournit des conseils pour tester le déploiement de règles de réduction de la surface d’attaque (ASR).
+keywords: 'Déploiement des règles de réduction de la surface d’attaque, déploiement de la réduction de la surface d’attaque, activer les règles d’attaque, configurer la réduction de la surface d’attaque, système de prévention des intrusions hôte, règles de protection, règles anti-attaque, règles d’attaque, règles de prévention des infections, Microsoft Defender pour le point de terminaison, configurer des règles de réduction de la surface d’attaque'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,23 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 42560ab5db950981703a052901e5a269ab8b0402
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327596"
 ---
-# <a name="phase-2---test"></a>Phase 2 : test
 
-Commencez le déploiement de vos règles de asr avec l’anneau 1.
+# <a name="step-2-test-asr-rules"></a>Étape 2 : Tester les règles de la asr
+
+Le test des règles de réduction de la surface d’attaque (ASR) vous permet de déterminer si les règles empêcheront les opérations d’entreprise avant d’activer une règle. En commençant par un petit groupe contrôlé, vous pouvez limiter les interruptions de travail potentielles à mesure que vous développez votre déploiement au sein de votre organisation.
+
+Commencez le déploiement des règles de réduction de la surface d’attaque (ASR) avec l’anneau 1.
 
 > [!div class="mx-imgBorder"]
 > ![Étapes de test des règles asr](images/asr-rules-testing-steps.png)
@@ -200,10 +197,10 @@ ID d’événement | Description
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Rubriques supplémentaires dans cette collection de déploiements
 
-[Vue d’ensemble du déploiement des règles ASR](attack-surface-reduction-rules-deployment.md)
+[Conditions préalables au déploiement des règles asr](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1 : Planifier](attack-surface-reduction-rules-deployment-plan.md)
+[Étape 1 : Planifier le déploiement des règles de la asr](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 3 : Implémenter](attack-surface-reduction-rules-deployment-implement.md)
+[Étape 3 : Implémenter des règles de asr](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4 : Opérationnaliser](attack-surface-reduction-rules-deployment-operationalize.md)
+[Étape 4 : Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
