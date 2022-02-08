@@ -1,32 +1,27 @@
 ---
 title: Débuter la rétention lorsqu’un événement se produit
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-may2020
-- seo-marvel-jun2020
-description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241442"
+  - seo-marvel-apr2020
+  - seo-marvel-may2020
+  - seo-marvel-jun2020
+description: 'Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.'
 ---
+
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -171,7 +166,7 @@ Enfin, sélectionnez la date à laquelle l’événement est survenu. Cette date
 
 Une fois que vous avez créé un événement, les paramètres de rétention prennent effet pour le contenu déjà étiqueté et indexé. Si l’étiquette de rétention est ajoutée au nouveau contenu une fois l’événement créé, vous devez créer un événement avec les mêmes détails.
 
-La suppression d’un événement n’annule pas les paramètres de rétention qui sont désormais appliqués pour le contenu qui est déjà étiqueté. Pour ce faire, créez un événement avec les mêmes détails, mais laissez la date vide. 
+La suppression d’un événement n’annule pas les paramètres de rétention qui sont désormais appliqués pour le contenu qui est déjà étiqueté. Actuellement, vous ne pouvez pas annuler les événements une fois qu’ils sont déclenchés.
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette ou un ID d’élément spécifique
 
