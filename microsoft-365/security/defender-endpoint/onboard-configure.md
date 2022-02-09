@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 232a6879f42f2b8bb1ae6b73556db330b61a30cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ad82beeaab5cf9759a5721f51646f089c0e7921b
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164897"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464042"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**S’applique à :**
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -50,9 +50,6 @@ En règle générale, pour intégrer des appareils au service :
 - Utiliser l’outil de gestion et la méthode de déploiement appropriés pour vos appareils
 - Exécuter un test de détection pour vérifier que les appareils sont correctement intégrés et signaler au service
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
-
 
 
 ## <a name="onboarding-and-configuration-tool-options"></a>Options de l’outil d’intégration et de configuration
@@ -60,7 +57,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 | Point de terminaison     | Options de l’outil                       |
 |--------------|------------------------------------------|
-| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **Windows**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration de à Microsoft Defender pour le cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
@@ -85,7 +82,7 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 
 ## <a name="supported-capabilities-for-windows-devices"></a>Fonctionnalités d’Windows pris en charge
 
-|Système d’exploitation  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 [ <sup> [1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
+|Système d’exploitation  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**Prévention**    |         |         |         |         |         |
 |Règles de réduction de la surface d’attaque     |    v     |   v      |    v     |    v     |    v     |
@@ -104,7 +101,7 @@ Après l’intégration des appareils, vous devez configurer les autres fonction
 |Capteur de détection de l’Sense     |      v   |    v     |     v    |    v    |    v   |
 |Point de terminaison & détection de périphérique réseau     |      v   |    N     |     N    |    N    |    N   |
 |||||||
-|**Réponse**     |         |         |         |||
+|**Response**     |         |         |         |||
 |Réponse & enquête automatisée (AIR)    |      v   |    v     |     v    |    v    |    v   |
 |Fonctionnalités de réponse des appareils : isolation, collecter un package d’enquête, exécuter une analyse antivirus     |      v   |    v     |     v    |    v    |    v   |
 |Fonctionnalités de réponse aux fichiers : collecter un fichier, analyse approfondie, bloquer un fichier, arrêter et mettre en quarantaine des processus     |      v   |    v     |     v    |    v    |    v   |

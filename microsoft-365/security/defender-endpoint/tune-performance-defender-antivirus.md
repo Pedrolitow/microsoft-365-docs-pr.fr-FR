@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936016"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464321"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -57,13 +57,13 @@ Pour commencer à enregistrer les événements système, ouvrez PowerShell en mo
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlets, [voir Antivirus Microsoft Defender cmdlets.](/powershell/module/defender)
+    où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlets, [voir Antivirus Microsoft Defender cmdlets](/powershell/module/defender).
 
 2. S’il existe des processus ou des services qui semblent affecter les performances, reproduisez la situation en réalisation des tâches pertinentes.
 
-3. Appuyez **sur Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
+3. **Appuyez sur Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
 
-4. Analysez les résultats à l’aide du paramètre de l’analyseur `Get-MpPerformanceReport` de performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
+4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport`performances. Par exemple, lors de l’exécution `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant les performances. 
 
 Pour plus d’informations sur les paramètres de ligne de commande et les options, voir [New-MpPerformanceRecording](#new-mpperformancerecording) et [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -83,20 +83,20 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 
 #### <a name="for-csv"></a>Pour CSV
 
-- **Pour exporter**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
+- **Pour exporter** : `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
-- **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
+- **Pour convertir** : `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 #### <a name="for-json"></a>Pour JSON
 
-- **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
+- **Pour convertir** : `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et Windows Server 2016 versions ultérieures
 - Version de la plateforme : 4.18.2108.7+
-- Version de PowerShell : PowerShell version 5.1, PowerShell ISE
+- Version de PowerShell : PowerShell version 5.1, PowerShell ISE, Remote PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>Référence PowerShell
 Deux nouvelles cmdlets PowerShell sont utilisées pour régler les performances des Antivirus Microsoft Defender : 
@@ -116,11 +116,11 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>Description : New-MpPerformanceRecording
-`New-MpPerformanceRecording`L’cmdlet collecte un enregistrement des performances de Antivirus Microsoft Defender analyses. Ces enregistrements de performances contiennent des événements de processus de noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’cmdlet [Get-MpPerformanceReport.](#get-mpperformancereport)
+L’cmdlet `New-MpPerformanceRecording` collecte un enregistrement des performances de Antivirus Microsoft Defender analyses. Ces enregistrements de performances contiennent des événements de processus de noyau Microsoft-Antimalware-Engine et NT et peuvent être analysés après la collecte à l’aide de l’cmdlet [Get-MpPerformanceReport](#get-mpperformancereport) .
 
-Cette cmdlet fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des `New-MpPerformanceRecording` performances de Antivirus Microsoft Defender. Cet outil est fourni « EN L’TANT QUE » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
+Cette `New-MpPerformanceRecording` cmdlet fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances de Antivirus Microsoft Defender. Cet outil est fourni « EN L’TANT QUE » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
 
-Pour plus d’informations sur l’analyseur de performances, voir la documentation [de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
+Pour plus d’informations sur l’analyseur de performances, voir [la documentation de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
 
 > [!IMPORTANT]
 > Cette cmdlet nécessite des privilèges d’administrateur élevés.
@@ -142,6 +142,15 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 La commande ci-dessus collecte un enregistrement des performances et l’enregistre dans le chemin d’accès spécifié **: .\Defender-scans.etl**.
 
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Exemple 2 : collecter un enregistrement des performances pour une session PowerShell à distance
+
+```powershell
+$s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
+New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
+```
+
+La commande ci-dessus collecte un enregistrement des performances sur Server02 (comme spécifié par l’argument $s de paramètre Session) et l’enregistre dans le chemin d’accès spécifié : **C:\LocalPathOnServer02\trace.etl** sur Server02.
+
 #### <a name="parameters-new-mpperformancerecording"></a>Paramètres : New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
@@ -150,6 +159,17 @@ Spécifie l’emplacement dans lequel enregistrer l’enregistrement des perform
 ```yaml
 Type: String
 Position: Named
+Default value: None
+Accept pipeline input: False 
+Accept wildcard characters: False
+```
+
+##### <a name="-session"></a>-Session 
+Spécifie l’objet PSSession dans lequel créer et enregistrer l’enregistrement Antivirus Microsoft Defender performances. Lorsque vous utilisez ce paramètre, le paramètre RecordTo fait référence au chemin d’accès local sur l’ordinateur distant. Disponible avec la plateforme Defender version 4.18.2201.10.
+
+```yaml
+Type: PSSession[]
+Position: 0
 Default value: None
 Accept pipeline input: False 
 Accept wildcard characters: False
@@ -193,11 +213,11 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Description : Get-MpPerformanceReport
-L’cmdlet analyse un enregistrement des performances Antivirus Microsoft Defender précédemment collecté `Get-MpPerformanceReport` ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès aux fichiers, extensions de fichiers et processus qui ont le plus d’impact sur Antivirus Microsoft Defender analyses.
+`Get-MpPerformanceReport` L’cmdlet analyse un enregistrement des performances Antivirus Microsoft Defender précédemment collecté ([New-MpPerformanceRecording](#new-mpperformancerecording)) et signale les chemins d’accès aux fichiers, extensions de fichiers et processus qui ont le plus d’impact sur Antivirus Microsoft Defender analyses.
 
 L’analyseur de performances fournit un aperçu des fichiers problématiques qui peuvent entraîner une dégradation des performances des Antivirus Microsoft Defender. Cet outil est fourni « EN L’TANT QUE » et n’est pas destiné à fournir des suggestions sur les exclusions. Les exclusions peuvent réduire le niveau de protection sur vos points de terminaison. Les exclusions, le cas besoin, doivent être définies avec précaution.
 
-Pour plus d’informations sur l’analyseur de performances, voir la documentation [de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
+Pour plus d’informations sur l’analyseur de performances, voir [la documentation de l’analyseur](/windows-hardware/test/wpt/windows-performance-analyzer) de performances.
 
 **Versions de système d’exploitation prise en charge**
 
@@ -235,7 +255,7 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>Paramètres : Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
-Spécifie la durée minimale d’une analyse ou d’un nombre total de durées d’analyse des fichiers, des extensions et des processus inclus dans le rapport ; accepte des valeurs telles que  **0,1234567sec,** **0,1234 ms,** **0,1us** ou un timeSpan valide.
+Spécifie la durée minimale d’une analyse ou d’un nombre total de durées d’analyse des fichiers, des extensions et des processus inclus dans le rapport ; accepte des valeurs telles que  **0,1234567sec**, **0,1234 ms**, **0,1us** ou un timeSpan valide.
 
 ```yaml
 Type: String

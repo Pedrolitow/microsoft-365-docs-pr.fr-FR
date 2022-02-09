@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 129537fe810148f49628790e347479b8d376888d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160511"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464302"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,7 +44,7 @@ Threat and gestion des vulnérabilités is a component of Defender for Endpoint,
 
 Vous pouvez utiliser la fonctionnalité Gestion des menaces et des vulnérabilités dans le portail <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender pour</a> :
 
-- Afficher le score d’exposition et le degré de sécurisation Microsoft pour les appareils, ainsi que les principales recommandations en matière de sécurité, la vulnérabilité logicielle, les activités de correction et les appareils exposés
+- Afficher votre score d’exposition et le Degré de sécurisation Microsoft pour les appareils, ainsi que les principales recommandations en matière de sécurité, la vulnérabilité logicielle, les activités de correction et les appareils exposés
 - Corréler PEPT informations sur les vulnérabilités des points de terminaison et les traiter
 - Sélectionner des options de correction pour trier et suivre les tâches de correction
 - Sélectionner des options d’exception et suivre les exceptions actives
@@ -69,16 +69,16 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de ce qui se trou
 |**Groupes d’appareils sélectionnés (#/#)**|Filtrez les Gestion des menaces et des vulnérabilités que vous souhaitez voir dans le tableau de bord et les cartes par groupes d’appareils. Ce que vous sélectionnez dans le filtre s’applique à l’ensemble Gestion des menaces et des vulnérabilités pages.|
 |[**Score d'exposition**](tvm-exposure-score.md)|Consultez l’état actuel de l’exposition des appareils de votre organisation aux menaces et vulnérabilités. Plusieurs facteurs affectent le score d’exposition de votre organisation : faiblesses découvertes sur vos appareils, probabilité de violation de vos appareils, valeur des appareils pour votre organisation et alertes pertinentes découvertes avec vos appareils. L’objectif est de réduire le score d’exposition de votre organisation pour être plus sécurisé. Pour réduire le score, vous devez corriger les problèmes de configuration de sécurité associés répertoriés dans les recommandations de sécurité.|
 |[**Niveau de sécurité Microsoft pour les appareils**](tvm-microsoft-secure-score-devices.md)|Consultez la posture de sécurité du système d’exploitation, des applications, du réseau, des comptes et des contrôles de sécurité de votre organisation. L’objectif est de résoudre les problèmes de configuration de sécurité associés pour augmenter votre score pour les appareils. La sélection des barres vous permettra d’être sur la page **recommandations en matière de** sécurité.|
-|**Distribution de l’exposition des appareils**|Voir le nombre d’appareils exposés en fonction de leur niveau d’exposition. Sélectionnez une section dans le graphique en doughnut pour aller à la **page** Liste des appareils et afficher les noms des appareils concernés, le niveau d’exposition, le niveau de risque et d’autres détails tels que le domaine, la plateforme du système d’exploitation, son état d’état d’état, la dernière fois qu’il a été vu et ses balises.|
-|**Principales recommandations en matière de sécurité**|Consultez les recommandations de sécurité triées qui sont triées et hiérarchisées en fonction de l’exposition aux risques de votre organisation et de l’urgence dont elle a besoin. Sélectionnez **Afficher plus** pour afficher le reste des recommandations de sécurité dans la liste. Sélectionnez **Afficher les exceptions** pour la liste des recommandations qui ont une exception.|
-|**Logiciels les plus vulnérables**|Obtenez une visibilité en temps réel de l’inventaire logiciel de votre organisation avec une liste de logiciels vulnérables installés sur les appareils de votre réseau et leur impact sur le score d’exposition de votre organisation. Sélectionnez un élément pour plus d’informations **ou** affichez plus pour afficher le reste de la liste des logiciels vulnérables dans la page **Inventaire logiciel.**|
-|**Principales activités de correction**|Suivre les activités de correction générées à partir des recommandations de sécurité. Vous pouvez sélectionner chaque élément de la liste pour afficher  les détails dans la **page** Correction ou sélectionner Afficher plus pour afficher le reste des activités de correction et les exceptions actives.|
-|**Appareils les plus exposés**|Afficher les noms des appareils exposés et leur niveau d’exposition. Sélectionnez un nom d’appareil dans la liste pour aller à la page de l’appareil où vous pouvez afficher les alertes, les risques, les incidents, les recommandations de sécurité, les logiciels installés et les vulnérabilités découvertes associées aux appareils exposés. Sélectionnez **Afficher plus** pour afficher le reste de la liste des appareils exposés. Dans la liste des appareils, vous pouvez gérer les balises, lancer des enquêtes automatisées, lancer une session de réponse en direct, collecter un package d’enquête, exécuter une analyse antivirus, restreindre l’exécution de l’application et isoler l’appareil.|
+|**Distribution de l’exposition des appareils**|Voir le nombre d’appareils exposés en fonction de leur niveau d’exposition. Sélectionnez une section dans le graphique en doughnut pour aller à **la page Liste** des appareils et afficher les noms des appareils concernés, le niveau d’exposition, le niveau de risque et d’autres détails tels que le domaine, la plateforme du système d’exploitation, son état d’état d’état, la dernière fois qu’il a été vu et ses balises.|
+|**Principales recommandations en matière de sécurité**|Consultez les recommandations de sécurité triées qui sont triées et hiérarchisées en fonction de l’exposition aux risques de votre organisation et de l’urgence dont elle a besoin. **Sélectionnez Afficher plus** pour afficher le reste des recommandations de sécurité dans la liste. **Sélectionnez Afficher les exceptions** pour la liste des recommandations qui ont une exception.|
+|**Logiciels les plus vulnérables**|Obtenez une visibilité en temps réel de l’inventaire logiciel de votre organisation avec une liste de logiciels vulnérables installés sur les appareils de votre réseau et leur impact sur le score d’exposition de votre organisation. Sélectionnez un élément pour plus d’informations **ou** affichez plus pour afficher le reste de la liste des logiciels vulnérables dans la page **Inventaire logiciel** .|
+|**Principales activités de correction**|Suivre les activités de correction générées à partir des recommandations de sécurité. Vous pouvez sélectionner chaque élément de la liste pour afficher les détails dans **la page Correction** ou sélectionner  Afficher plus pour afficher le reste des activités de correction et les exceptions actives.|
+|**Appareils les plus exposés**|Afficher les noms des appareils exposés et leur niveau d’exposition. Sélectionnez un nom d’appareil dans la liste pour aller à la page de l’appareil où vous pouvez afficher les alertes, les risques, les incidents, les recommandations de sécurité, les logiciels installés et les vulnérabilités découvertes associées aux appareils exposés. **Sélectionnez Afficher plus** pour afficher le reste de la liste des appareils exposés. Dans la liste des appareils, vous pouvez gérer les balises, lancer des enquêtes automatisées, lancer une session de réponse en direct, collecter un package d’enquête, exécuter une analyse antivirus, restreindre l’exécution de l’application et isoler l’appareil.|
 |
 
-Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison.](portal-overview.md#microsoft-defender-for-endpoint-icons)
+Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison](portal-overview.md#microsoft-defender-for-endpoint-icons).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d'exposition](tvm-exposure-score.md)

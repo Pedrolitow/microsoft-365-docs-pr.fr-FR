@@ -8,7 +8,6 @@
 ### [Fonctionnalités en préversion](preview.md)
 ### [Stockage de données et confidentialité](data-storage-privacy.md)
 ### [Vue d’ensemble du Centre de sécurité Microsoft Defender](use.md)
-### [Vue d’ensemble du portail](portal-overview.md)
 ### [Defender pour Endpoint Plan 1]()
 #### [Vue d’ensemble](defender-endpoint-plan-1.md)
 #### [Installation et configuration](mde-p1-setup-configuration.md)
@@ -707,7 +706,6 @@
 
 ### [Résoudre des problèmes de service avec Microsoft Defender pour point de terminaison]()
 #### [Résoudre des problèmes de service](troubleshoot-mdatp.md)
-#### [Vérifier l’état du service](service-status.md)
 #### [Contacter le support Microsoft Defender pour point de terminaison](contact-support.md)
 
 ### [Résoudre des problèmes de réponse en direct](troubleshoot-live-response.md)

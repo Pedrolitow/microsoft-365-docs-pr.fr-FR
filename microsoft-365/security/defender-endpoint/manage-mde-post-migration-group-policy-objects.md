@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: b3c03c582577d6b975ad720fc259c7d88e3f19bb
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 2155c72d7008bf3669a1908b3fd866877eb36a7c
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221551"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464613"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour le point de terminaison avec des objets de stratégie de groupe
 
@@ -35,14 +35,14 @@ ms.locfileid: "61221551"
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> Nous vous recommandons [d’Microsoft Endpoint Manager](/mem) pour gérer les fonctionnalités de protection contre les menaces de votre organisation pour les appareils (également appelés points de terminaison). Endpoint Manager [inclut Microsoft Intune](/mem/intune/fundamentals/what-is-intune) et [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction). **[En savoir plus sur Endpoint Manager](/mem/endpoint-manager-overview)**.
+> Nous vous recommandons [d’Microsoft Endpoint Manager](/mem) pour gérer les fonctionnalités de protection contre les menaces de votre organisation pour les appareils (également appelés points de terminaison). Endpoint Manager inclut [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) et [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction). **[En savoir plus sur Endpoint Manager](/mem/endpoint-manager-overview)**.
 
 Vous pouvez utiliser les objets de stratégie de groupe dans Azure Active Directory Domain Services pour gérer certains paramètres dans Microsoft Defender for Endpoint.
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Configurer Microsoft Defender pour le point de terminaison avec des objets de stratégie de groupe
 
 > [!NOTE]
-> Si vous utilisez la nouvelle [solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016,](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
+> Si vous utilisez la nouvelle [solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview), assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender for Endpoint correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
 
 Le tableau suivant répertorie les différentes tâches que vous pouvez effectuer pour configurer Microsoft Defender pour endpoint avec des objets de stratégie de groupe.
 
@@ -57,12 +57,12 @@ Le tableau suivant répertorie les différentes tâches que vous pouvez effectue
 |**Activer la Protection du réseau** pour empêcher les employés d’utiliser des applications qui utilisent du contenu malveillant sur Internet <br/><br/> *Nous vous recommandons d’utiliser d’abord le [mode audit](/microsoft-365/security/defender-endpoint/evaluate-network-protection) pour la protection du réseau dans un environnement de test pour voir quelles applications seront bloquées avant le déploiement.*|[Activer la protection du réseau à l’aide de la stratégie de groupe](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**Configurer l’accès contrôlé aux dossiers pour** la protection contre les ransomware <br/><br/> *[L’accès contrôlé aux](/microsoft-365/security/defender-endpoint/controlled-folders) dossiers est également appelé protection antiransomware.*|[Activer l’accès contrôlé aux dossiers à l’aide de la stratégie de groupe](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
 |**Configurez Microsoft Defender SmartScreen** pour vous protéger contre les sites et fichiers malveillants sur Internet.|[Configurer Microsoft Defender SmartScreen stratégie de groupe et les paramètres de gestion des périphériques mobiles (MDM) à l’aide de la stratégie de groupe](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
-|**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation en cours d’exécution Windows|[Paramètres de stratégie de groupe BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
+|**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation exécutant Windows|[Paramètres de stratégie de groupe BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |**Configurer Microsoft Defender Credential Guard pour la** protection contre les attaques par vol d’informations d’identification|[Activer Windows Defender Credential Guard à l’aide de la stratégie de groupe](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurer votre portail Microsoft 365 Defender client
 
-Si ce n’est pas déjà fait, configurez votre portail Microsoft 365 Defender pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre organisation. Voir [Microsoft 365 Defender](microsoft-defender-security-center.md). Vous pouvez également configurer si les fonctionnalités que les utilisateurs finaux peuvent voir et quelles fonctionnalités peuvent être Microsoft 365 Defender portail.
+Si ce n’est pas déjà fait, configurez votre portail Microsoft 365 Defender pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre organisation. Voir [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). Vous pouvez également configurer si les fonctionnalités que les utilisateurs finaux peuvent voir et quelles fonctionnalités peuvent être Microsoft 365 Defender portail.
 
 - [Vue d’ensemble Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protection des points de terminaison : Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

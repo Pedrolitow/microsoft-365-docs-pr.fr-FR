@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 91478d467fa0f7e3a0b5f6b67aeaf2fe5b34f497
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: 5982934fa03c5898a2bd1908fd2f9a8487db2bba
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244558"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465493"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Gérer les appareils dans Microsoft Defender pour Entreprises (prévisualisation)
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -40,16 +40,16 @@ Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les a
 
 >
 > **Avez-vous un peu de temps ?**
-> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise.</a> Vos commentaires sont les bienvenus.
+> Veuillez consulter notre <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">courte enquête sur Microsoft Defender entreprise</a>. Vos commentaires sont les bienvenus.
 >
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Afficher la liste des appareils intégrés
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Capture d’écran de l’inventaire des appareils":::
 
-1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Dans le volet de navigation, choisissez **Inventaire des appareils.**
+2. Dans le volet de navigation, choisissez Inventaire **des appareils**.
 
 3. Sélectionnez un appareil pour ouvrir son panneau volant, où vous pouvez en savoir plus sur son état et prendre des mesures. 
 
@@ -59,13 +59,13 @@ Dans Microsoft Defender entreprise (prévisualisation), vous pouvez gérer les a
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Capture d’écran d’un appareil sélectionné avec les détails et les actions disponibles":::
 
-1. In the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ), in the navigation pane, choose Device **inventory**. 
+1. Dans le Microsoft 365 Defender web ([https://security.microsoft.com](https://security.microsoft.com)), dans le volet de navigation, choisissez **Inventaire des appareils**. 
 
 2. Sélectionnez un appareil pour ouvrir son panneau volant et examinez les informations qui s’affichent.
 
 3. Sélectionnez les ellipses (**...**) pour ouvrir le menu Actions. 
 
-4. Sélectionnez une action, par exemple exécuter **une analyse antivirus** ou lancer une enquête **automatisée.** 
+4. Sélectionnez une action, telle que **Exécuter une analyse antivirus** **ou Lancer une enquête automatisée**. 
 
 ## <a name="onboard-a-device"></a>Intégrer un appareil
 

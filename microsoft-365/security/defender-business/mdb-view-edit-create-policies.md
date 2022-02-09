@@ -1,6 +1,6 @@
 ---
 title: Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)
-description: 'Découvrez comment afficher, modifier, créer et supprimer des stratégies de protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation)'
+description: Découvrez comment afficher, modifier, créer et supprimer des stratégies de protection nouvelle génération dans Microsoft Defender pour Entreprises (prévisualisation)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -11,14 +11,19 @@ ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: 'inbadian, shlomiakirav'
+ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-  - SMB
-  - M365-security-compliance
-  - m365initiative-defender-business
+- SMB
+- M365-security-compliance
+- m365-initiative-defender-business
+ms.openlocfilehash: 81cd2774115478f4d85fa1878d7ce8a598600e7f
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465420"
 ---
-
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Afficher ou modifier des stratégies dans Microsoft Defender entreprise (prévisualisation)
 
 > [!IMPORTANT]
@@ -26,7 +31,7 @@ ms.collection:
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Dans Microsoft Defender pour Entreprises (prévisualisation), les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre configuration, Defender pour entreprise (prévisualisation) inclut des stratégies préconfigurées pour vous aider à protéger les appareils de votre entreprise dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
+Dans Microsoft Defender pour Entreprises (prévisualisation), les paramètres de sécurité sont configurés par le biais de stratégies appliquées aux appareils. Pour simplifier votre configuration, Defender pour entreprise (prévisualisation) inclut des stratégies préconfigurées pour vous aider à protéger les appareils de votre organisation dès qu’ils sont intégrés. Vous pouvez utiliser les stratégies par défaut, modifier des stratégies ou créer vos propres stratégies.
 
 **Cet article décrit comment** :
 
@@ -42,10 +47,10 @@ Dans Microsoft Defender pour Entreprises (prévisualisation), les paramètres de
 
 ## <a name="default-policies-in-defender-for-business"></a>Stratégies par défaut dans Defender for Business
 
-Dans Defender for Business (prévisualisation), il existe deux principaux types de stratégies pour protéger les appareils de votre entreprise :
+Dans Defender for Business (prévisualisation), il existe deux principaux types de stratégies pour protéger les appareils de votre organisation :
 
 - **Stratégies de protection nouvelle génération**, qui déterminent la configuration Antivirus Microsoft Defender et d’autres fonctionnalités de protection contre les menaces
-- **Stratégies de** pare-feu, qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre entreprise
+- **Stratégies de** pare-feu, qui déterminent le trafic réseau autorisé à circuler vers et depuis les appareils de votre organisation
 
 
 ## <a name="view-your-existing-policies"></a>Afficher vos stratégies existantes
@@ -109,7 +114,7 @@ Dans Defender for Business (prévisualisation), il existe deux principaux types 
 
 7. Sous **l’onglet Groupes d’appareils** , créez un groupe d’appareils ou utilisez un groupe existant. Les stratégies sont affectées aux appareils par le biais de groupes d’appareils. Voici quelques éléments à garder à l’esprit :
 
-   - Initialement, vous n’avez peut-être que votre groupe d’appareils par défaut, qui inclut les appareils que les membres de votre entreprise utilisent pour accéder aux données et à la messagerie de l’entreprise. Vous pouvez conserver et utiliser votre groupe d’appareils par défaut.
+   - Initialement, vous n’avez peut-être que votre groupe d’appareils par défaut, qui inclut les appareils que les membres de votre organisation utilisent pour accéder aux données et à la messagerie de l’organisation. Vous pouvez conserver et utiliser votre groupe d’appareils par défaut.
    - Créez un groupe d’appareils pour appliquer une stratégie avec des paramètres spécifiques qui sont différents de la stratégie par défaut. 
    - Lorsque vous définissez votre groupe d’appareils, vous spécifiez certains critères, tels que la version du système d’exploitation. Les appareils qui répondent aux critères sont inclus dans ce groupe d’appareils, sauf si vous les excluez. 
    - Tous les groupes d’appareils, y compris les groupes d’appareils par défaut et personnalisés que vous définissez, sont stockés dans Azure Active Directory (Azure AD).

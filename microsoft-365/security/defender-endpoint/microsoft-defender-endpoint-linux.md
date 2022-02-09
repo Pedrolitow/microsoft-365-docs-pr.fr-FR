@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender pour point de terminaison Linux
-ms.reviewer: null
+ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender pour endpoint sur Linux.
-keywords: 'microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos'
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,12 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: a0c013b6b99ad9b8da6a3cedeb93df036de4e257
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464068"
 ---
-
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -53,7 +58,7 @@ Vous pouvez utiliser plusieurs méthodes et outils de déploiement pour installe
 
 En règle générale, vous devez suivre les étapes suivantes :
 
-- Assurez-vous que vous avez un abonnement Microsoft Defender pour points de terminaison et que vous avez accès au portail [Microsoft Defender pour points de terminaison](microsoft-defender-security-center.md).
+- Assurez-vous que vous avez un abonnement Microsoft Defender pour point de terminaison.
 - Déployez Microsoft Defender pour Endpoint sur Linux à l’aide de l’une des méthodes de déploiement suivantes :
   - L’outil en ligne de commande :
     - [Déploiement manuel](linux-install-manually.md)

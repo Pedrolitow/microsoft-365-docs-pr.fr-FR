@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 65469220cb6b001d5dbb474181f723235aa6d3a9
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: da03e729ba3da286820727fa8b13ad4d5259d4f2
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345890"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464632"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -198,7 +198,7 @@ Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à p
 
 4. Déployez votre objet de stratégie de groupe comme vous le faites habituellement.
 
-La suppression des notifications empêche l’affichage Antivirus Microsoft Defender notifications dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans [Microsoft 365 Defender portail.](microsoft-defender-security-center.md)
+La suppression des notifications empêche l’affichage Antivirus Microsoft Defender notifications dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans le portail Microsoft 365 Defender pendant que l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées [et sont](/microsoft-365/security/defender/microsoft-365-defender) apparues sur le portail Microsoft 365 Defender.
 
 > [!TIP]
 > Pour ouvrir le Centre de Windows 10 ou Windows 11, prenez l’une des étapes suivantes :

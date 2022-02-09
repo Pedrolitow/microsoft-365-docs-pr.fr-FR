@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: En savoir plus sur les domaines (domaine onmicrosoft et domaine de transfert) en trouvant des réponses à vos questions dans le FAQ.
-  ms.openlocfilehash: 0b8790ab6c360859d94bb3cc343c1f3d238ece2b
-  ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+  ms.openlocfilehash: d2af94766d11e643856c3139c87ddc643057b957
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/03/2022
-  ms.locfileid: "62326921"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62464285"
 title: Forum aux questions sur les domaines
 summary: "\n\nCet article contient des réponses aux questions fréquemment posées sur les domaines Microsoft 365.\n\nSi vous ne trouvez pas la réponse à votre question, laissez-nous un commentaire et nous l'ajouterons à la liste.\n"
 sections:
@@ -44,7 +44,7 @@ sections:
   - question: Qu’est-ce qu’un nom de domaine ?
     answer: "[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Elle prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que  *yourbusiness.com ou*  *stateuniversity.edu.* \n  \nL’utilisation d’un domaine personnalisé comme **« rob\\@ contoso.com** » avec Microsoft 365 vous permet de renforcer la créativité et la reconnaissance de votre marque. \n  \nVous pouvez acheter un domaine dans Microsoft 365 et nous le configurerons automatiquement, ou vous pouvez en acheter ou en obtenir un que vous possédez déjà auprès [d’un bureau d’enregistrement](../get-help-with-domains/buy-a-domain-name.md) de domaines.\n    \n"
   - question: Que se passe-t-il si mon fournisseur DNS ne prend pas en charge certains types d’enregistrement ?
-    answer: "Si vous gérez vos propres enregistrements DNS et que votre hôte DNS ne prend pas en charge tous les enregistrements DNS dont Microsoft 365 a besoin, certaines fonctionnalités Microsoft 365 ne fonctionneront pas. Nous vous recommandons de transférer votre domaine vers un bureau d’enregistrement qui prend en charge tous les enregistrements DNS requis.\n  \nFournisseurs qui supportent tous les enregistrements DNS requis :\n  \n- Feuille deynadot\n    \n- eNomCentral\n    \n- Europe Registry\n    \n- GoDaddy\n    \n- Pointer\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Presque libre\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
+    answer: "Si vous gérez vos propres enregistrements DNS et que votre hôte DNS ne prend pas en charge tous les enregistrements DNS dont Microsoft 365 a besoin, certaines fonctionnalités Microsoft 365 ne fonctionneront pas. Nous vous recommandons de transférer votre domaine vers un bureau d’enregistrement qui prend en charge tous les enregistrements DNS requis.\n  \nFournisseurs qui supportent tous les enregistrements DNS requis :\n  \n- Feuille deynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Pointer\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Presque libre\n    \n- Nettica\n    \n- Network Information Center (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: Comment définir ou modifier le domaine par défaut dans Microsoft 365 ?
     answer: "Vous devez avoir au moins un domaine personnalisé que vous avez ajouté à Microsoft 365 pour pouvoir choisir un domaine par défaut.\n\n::: moniker range=\"o365-worldwide\"\n\n1. Dans le centre d’administration, accédez à la page **Paramètres** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">Domaines</a>.\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">Domaines</a>.\n\n::: moniker-end\n    \n2. Dans la page **Domaines** , sélectionnez le domaine que vous souhaitez définir comme domaine par défaut pour les nouvelles adresses de messagerie. \n    \n3. Sélectionnez **Définir par défaut**.\n    \n::: moniker range=\"o365-worldwide\"\n\nVous ne pouvez pas modifier le nom de votre domaine  *.onmicrosoft.com*  initial. \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nVous ne pouvez pas modifier le nom de votre domaine  *.partner.onmschina.cn*  initial. \n\n::: moniker-end\n\n> [!NOTE]\n> La modification du domaine par défaut n’a pas d’impact sur les informations d’identification de l’utilisateur ni sur son accès aux applications ou services. La modification du domaine associé à un utilisateur aura une incidence sur les informations d’identification de messagerie, de stockage en ligne et de connexion.\n"
   - question: Puis-je ajouter des sous-domaines personnalisés ou plusieurs domaines à Microsoft 365 ?

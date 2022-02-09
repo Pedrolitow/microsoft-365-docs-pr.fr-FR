@@ -1,5 +1,5 @@
 ---
-title: Configurer les Centre de sécurité Microsoft Defender de configuration
+title: Configurer les paramètres généraux des points de terminaison
 description: Utilisez la page paramètres pour configurer les paramètres généraux, les autorisations, les api et les règles.
 keywords: paramètres, paramètres généraux, autorisations, api, règles
 ms.prod: m365-security
@@ -14,25 +14,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1f30947fc86ce94054f2bc0fc6de6a8309b9109
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a9e7c8b2f810cf94c796f2b2d73520a821db1c01
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168461"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464813"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les Centre de sécurité Microsoft Defender de configuration
+# <a name="configure-general-settings-for-endpoints"></a>Configurer les paramètres généraux des points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender pour point de terminaison Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Utilisez le menu **Paramètres** pour modifier les paramètres généraux, les fonctionnalités avancées, activer l’expérience d’aperçu, les notifications par courrier électronique et la fonctionnalité d’intelligence contre les menaces personnalisée.
+Utilisez le menu Paramètres > de terminaison pour modifier les paramètres généraux, les **fonctionnalités** avancées, activer l’expérience d’aperçu, les notifications par courrier électronique et la fonctionnalité d’intelligence contre les menaces personnalisée.
 
 ## <a name="in-this-section"></a>Dans cette section
 

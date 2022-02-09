@@ -10,17 +10,17 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  - m365initiative-defender-business
+  - m365-initiative-defender-business
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 01/03/2022
-  ms.openlocfilehash: 4e86c5b6ae127fa8d7a273b8ea3e311c5be01769
-  ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+  ms.date: 02/08/2022
+  ms.openlocfilehash: e612ef906d7e095fc3b95cccd09a90565818c717
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/27/2022
-  ms.locfileid: "62244546"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62465215"
 landingContent:
 - title: Vue d’ensemble
   linkLists:
@@ -30,13 +30,25 @@ landingContent:
       url: mdb-overview.md
     - text: Processus de configuration simplifié
       url: mdb-simplified-configuration.md
-    - text: Comment obtenir Defender pour les entreprises
-      url: get-defender-business.md
     - text: Comparer les plans pour les petites et moyennes entreprises
       url: compare-mdb-m365-plans.md
     - text: Intégration à Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
-- title: Configurer
+- title: Prise en main
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Obtenir Defender pour les entreprises
+      url: get-defender-business.md
+    - text: Utiliser l’Assistant Installation
+      url: mdb-use-wizard.md
+    - text: Naviguer dans le portail
+      url: mdb-get-started.md
+    - text: Afficher votre tableau de bord gestion & des menaces et des vulnérabilités
+      url: mdb-view-tvm-dashboard.md
+    - text: Essayer des didacticiels et des simulations
+      url: mdb-tutorials.md
+- title: Configurer et configurer
   linkLists:
   - linkListType: deploy
     links:
@@ -52,20 +64,10 @@ landingContent:
       url: mdb-onboard-devices.md
     - text: 'Étape 5 : configurer les paramètres de sécurité'
       url: mdb-view-edit-policies.md
-- title: Prise en main
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Naviguer dans le portail
-      url: mdb-get-started.md
-    - text: Essayer des didacticiels et des simulations
-      url: mdb-tutorials.md
-- title: Utilisation
+- title: Afficher les menaces et y répondre
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Afficher et gérer des appareils
-      url: mdb-manage-devices.md
     - text: Afficher et gérer les incidents
       url: mdb-view-manage-incidents.md
     - text: Répondre aux menaces et les atténuer
@@ -74,14 +76,12 @@ landingContent:
       url: mdb-review-remediation-actions.md
     - text: Afficher et utiliser les rapports
       url: mdb-reports.md
-- title: Gestion
+- title: Gérer les stratégies de sécurité.
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Afficher, modifier et créer des stratégies
       url: mdb-view-edit-create-policies.md
-    - text: Créer des groupes d’appareils
-      url: mdb-create-edit-device-groups.md
     - text: Gérer les règles pour les stratégies de pare-feu
       url: mdb-custom-rules-firewall.md
   - linkListType: reference
@@ -92,6 +92,16 @@ landingContent:
       url: mdb-next-gen-configuration-settings.md
     - text: Paramètres du pare-feu
       url: mdb-firewall.md
+- title: Gestion des appareils
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Afficher et gérer des appareils
+      url: mdb-manage-devices.md
+    - text: Créer des groupes d’appareils
+      url: mdb-create-edit-device-groups.md
+    - text: Intégration des appareils
+      url: mdb-onboard-devices.md
 - title: Aide et support
   linkLists:
   - linkListType: reference

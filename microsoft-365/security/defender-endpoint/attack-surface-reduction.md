@@ -19,12 +19,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 149abcc1677dc3b7664d8c94170342c4679f9e4d
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326944"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465408"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Vue d’ensemble des règles de réduction de la surface d’attaque
 
@@ -136,7 +136,7 @@ Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows 
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
-Vous pouvez interroger Defender pour obtenir des données de point de [terminaison Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide [d’un chasse avancée](advanced-hunting-query-language.md). Si vous exécutez le [mode audit](audit-windows-defender.md), vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
+Vous pouvez interroger Defender pour obtenir des données de point de [terminaison Microsoft 365 Defender](microsoft-defender-endpoint.md) à l’aide [d’un chasse avancée](/microsoft-365/security/defender/advanced-hunting-query-language). 
 
 Voici un exemple de requête :
 

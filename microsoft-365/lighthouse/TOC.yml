@@ -26,6 +26,8 @@
       href: m365-lighthouse-tenants-page-overview.md
     - name: Gérer votre liste de locataires
       href: m365-lighthouse-manage-tenant-list.md
+    - name: Afficher l’état du service client
+      href: m365-lighthouse-view-service-health.md
 - name: Gérer les utilisateurs au sein des clients
   items:
     - name: Vue d’ensemble de la page Utilisateurs

@@ -1,13 +1,13 @@
 ---
 title: Comparer Microsoft Defender entreprise à d’autres plans Microsoft 365 de gestion
-description: Comprendre les différences entre Defender pour Entreprise et Defender pour le point de terminaison. Le fait de connaître les informations incluses dans chaque plan peut vous aider à prendre une décision éclairée pour votre entreprise.
+description: Comprendre les différences entre Defender pour Entreprise et Defender pour le point de terminaison. Le fait de connaître les informations incluses dans chaque plan peut vous aider à prendre une décision éclairée pour votre organisation.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 01/26/2022
+ms.date: 02/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,34 +15,34 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365initiative-defender-business
+- m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b2337ddf5367242d077fb2f75fa45eaa6262e6d9
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 3d8270b2c8424668200e4242cb65e491a2cc6991
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245110"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464979"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparer Microsoft Defender entreprise (prévisualisation) à Microsoft 365 Business Premium
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
-Microsoft offre un large éventail de solutions et de services cloud, y compris plusieurs plans pour les petites et moyennes entreprises. Par exemple, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) inclut des fonctionnalités de sécurité et de gestion des appareils, ainsi que des fonctionnalités de productivité, telles que Office applications. 
+Microsoft offre un large éventail de solutions et de services cloud, notamment plusieurs plans pour les petites et moyennes entreprises. Par exemple, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) inclut des fonctionnalités de sécurité et de gestion des appareils, ainsi que des fonctionnalités de productivité, telles que Office applications. 
 
-**Utilisez cet article pour**:
+**Utilisez cet article pour** :
 
 - [Comparer Microsoft Defender entreprise (prévisualisation) à Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)
 - [Comparer Defender pour Entreprise à Microsoft Defender pour les offres d’entreprise de point de terminaison](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
-**Vous n’avez pas besoin d’un abonnement Microsoft 365 pour acheter et utiliser Microsoft Defender entreprise (prévisualisation).** Microsoft Defender pour Entreprise (prévisualisation) est une solution de sécurité autonome pour les petites et moyennes entreprises. Si vous avez déjà un autre abonnement (par exemple, Microsoft 365 Business Basic ou Standard), envisagez d’ajouter Microsoft Defender pour les entreprises pour obtenir des fonctionnalités de protection contre les menaces supplémentaires. 
+**Vous n’avez pas besoin d’un abonnement Microsoft 365 pour acheter et utiliser Microsoft Defender entreprise (prévisualisation).** Microsoft Defender pour Entreprise (prévisualisation) est une solution de sécurité autonome pour les petites et moyennes entreprises. Si vous avez déjà un autre abonnement (par exemple, Microsoft 365 Business Basic ou Standard), envisagez d’ajouter Microsoft Defender pour les entreprises pour obtenir davantage de fonctionnalités de protection contre les menaces. 
 
 > [!TIP]
-> Si votre entreprise est une petite ou moyenne entreprise (300 utilisateurs ou moins) et que vous souhaitez vous inscrire au programme d’aperçu de Microsoft Defender entreprise, visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Pour plus d’informations, [voir Obtenir Microsoft Defender pour Entreprise.](get-defender-business.md)
+> Si votre organisation est une petite ou moyenne entreprise (300 utilisateurs ou moins) et que vous souhaitez vous inscrire au programme d’aperçu de Microsoft Defender entreprise, [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview)visitez . Pour plus d’informations, [voir Obtenir Microsoft Defender pour les entreprises](get-defender-business.md).
 
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparer les fonctionnalités de sécurité de Microsoft Defender pour les Microsoft 365 Business Premium
 
@@ -53,7 +53,7 @@ Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurit�
 
 | Fonctionnalité/fonctionnalité | [Microsoft Defender pour Les Entreprises](mdb-overview.md) (prévisualisation) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
-| Protection de la messagerie | Oui[(analyse du courrier](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) électronique Antivirus Microsoft Defender) | Oui ([Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)) |
+| Protection de la messagerie | Oui ([analyse du courrier](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) électronique Antivirus Microsoft Defender) | Oui ([Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)) |
 | Protection anti-courrier indésirable | Oui (pour les appareils) | Oui (pour Microsoft 365 de courrier électronique, tels que les messages et les pièces jointes) |
 | Protection anti-programme malveillant | Oui (pour les appareils) | Oui (pour Microsoft 365 de courrier électronique, tels que les messages et les pièces jointes) |
 | [Protection de nouvelle génération](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protection antivirus et anti-programme malveillant) | Oui (Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures)  | Oui (Antivirus Microsoft Defender est inclus dans Windows 10 et ultérieures) |
@@ -61,7 +61,7 @@ Le tableau suivant compare les fonctionnalités et fonctionnalités de sécurit�
 | [Détection et réponse du point de terminaison](../defender-endpoint/overview-endpoint-detection-response.md) | Oui. Inclus : <br/>- Détection basée sur le comportement <br/>- Actions de réponse manuelles <br/>- Réponse en direct   | Non |
 | [Examen et réponse automatisés](../defender-endpoint/automated-investigations.md) | Oui | Non |
 | [Gestion des menaces et des vulnérabilités](../defender-endpoint/tvm-dashboard-insights.md) | Oui | Non |
-| Gestion centralisée et rapports | Oui. Vous pouvez intégrer Windows appareils clients et les gérer dans le portail Microsoft 365 Defender ( ), ou choisir de gérer les appareils [https://security.microsoft.com](https://security.microsoft.com) dans Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ). | Oui. Vous pouvez gérer Windows clients dans le Centre d'administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ). Les appareils doivent être intégrés dans Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ). |
+| Gestion centralisée et rapports | Oui. Vous pouvez intégrer Windows appareils clients et les gérer dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou choisir de gérer les appareils dans Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). | Oui. Vous pouvez gérer Windows clients dans le Centre d'administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)). Les appareils doivent être intégrés dans Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). |
 | [API](../defender-endpoint/apis-intro.md) <br/>(vous permet d’intégrer des applications personnalisées ou des solutions de création de rapports)  | Oui | Oui |
 
 
@@ -79,18 +79,18 @@ Defender pour les entreprises (prévisualisation) apporte des fonctionnalités d
 | [Protection de nouvelle génération](../defender-endpoint/next-generation-protection.md) | Oui | Oui | Oui |
 | [Détection et réponse du point de terminaison](../defender-endpoint/overview-endpoint-detection-response.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
 | [Examen et réponse automatisés](../defender-endpoint/automated-investigations.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
-| [Recherche de menaces](../defender-endpoint/advanced-hunting-overview.md) et rétention des données pendant 6 mois | Non | Non | Oui |
+| [Recherche de menaces](../defender-endpoint/advanced-hunting-overview.md) et rétention des données pendant six mois | Non | Non | Oui |
 | [Analyses de menaces](../defender-endpoint/threat-analytics.md) | Oui <sup>[[2](#fn2)]</sup> | Non | Oui |
 | [Prise en charge sur plusieurs plateformes](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS et android OS) | Oui <sup>[[3](#fn3)]</sup> | Oui | Oui |
 | [Spécialistes des menaces Microsoft](../defender-endpoint/microsoft-threat-experts.md) | Non | Non | Oui |
 | API partenaires | Oui | Oui | Oui |
 | [Microsoft 365 Lighthouse’intégration](../../lighthouse/m365-lighthouse-overview.md) <br/>(Pour afficher les incidents de sécurité entre les clients) | Oui | Non | Non |
 
-(<a id="fn1">1</a>) Intégrer et gérer les appareils dans le portail Microsoft 365 Defender ( ) ou avec un autre outil, tel que [https://security.microsoft.com](https://security.microsoft.com) Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ).
+(<a id="fn1">1</a>) Intégrer et gérer les appareils dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ou avec un autre outil, tel que Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) Ces fonctionnalités sont optimisées pour les petites et moyennes entreprises.
 
-(<a id="fn3">3</a>) Pendant le programme d’aperçu, les Windows clients sont pris en charge dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
+(<a id="fn3">3</a>) Pendant le programme d’aperçu, les Windows clients sont pris en charge dans le portail Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## <a name="next-steps"></a>Prochaines étapes
 

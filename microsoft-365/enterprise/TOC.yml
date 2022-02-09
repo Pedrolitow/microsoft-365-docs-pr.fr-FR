@@ -111,20 +111,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Prise en charge des applications client et services
-          items:
-            - name: Prise en charge des applications client et services
-              href: microsoft-365-client-services-app-support.md
-            - name: Authentification basée sur des certificats
-              href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: Accès conditionnel
-              href: microsoft-365-client-support-conditional-access.md
-            - name: Authentification multifacteur
-              href: microsoft-365-client-support-multi-factor-authentication.md
-            - name: Authentification unique
-              href: microsoft-365-client-support-single-sign-on.md
-            - name: Choisir entre Mobility + Security de base et Intune
-              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: Authentification moderne hybride
           items:
             - name: Éléments prérequis pour la migration de Skype Entreprise Server et Exchange Server
@@ -408,7 +394,7 @@
       items:
         - name: Préparez-vous
           href: configure-services-and-applications.md
-        - name: "Exchange\_Online"
+        - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
@@ -430,7 +416,7 @@
           href: view-service-health.md
         - name: Options de support
           href: ../admin/get-help-support.md
-        - name: "Exchange\_Online"
+        - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
@@ -461,7 +447,7 @@
               href: /ProjectOnline/tune-project-online-performance
             - name: Planification de résolution des problèmes de performances
               href: performance-troubleshooting-plan.md
-- name: Windows 10
+- name: "Windows\_10"
   items:
     - name: Comment vérifier l’état de la version
       href: /windows/deployment/update/check-release-health

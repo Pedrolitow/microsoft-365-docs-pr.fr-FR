@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 16f5289cced499b3e64a401c2fa4a107f49b85fb
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: d331cf93097f66ddc5a464710d67b864419ab05c
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171280"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464658"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -45,7 +45,7 @@ La protection antivirus fonctionne mieux lorsqu’elle est couplée à la protec
 
 [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) détecter des comportements suspects, du code malveillant, des attaques sans fichier et en mémoire, et bien plus encore sur un appareil. Lorsque des comportements suspects sont détectés, Antivirus Microsoft Defender surveille et envoie ces comportements suspects et leurs arbre de processus au service de protection cloud. L’apprentissage automatique différencie les applications malveillantes et les comportements de qualité en millisecondes et classifie chaque artefact. En temps quasi réel, dès qu’un artefact est trouvé malveillant, il est bloqué sur l’appareil.
 
-Chaque fois qu’un comportement [](alerts-queue.md) suspect est détecté, une alerte est générée et visible dans le portail [Microsoft 365 Defender](microsoft-defender-security-center.md) (anciennement Microsoft 365 Defender).
+Chaque fois qu’un comportement suspect est détecté[](alerts-queue.md), une alerte est générée et visible dans le portail [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (anciennement Microsoft 365 Defender).
 
 Le blocage du comportement client est efficace, car il permet non seulement d’empêcher le démarrage d’une attaque, mais également d’arrêter une attaque qui a commencé à s’exécuter. En outre, avec [le blocage de boucle de](feedback-loop-blocking.md) commentaires (autre fonctionnalité de blocage et de blocage du comportement), les attaques sont empêchées sur d’autres appareils de votre organisation.
 
@@ -70,11 +70,11 @@ Les détections basées sur le comportement sont nommées en fonction de la matr
 |Non catégorisé|`Behavior:Win32/Generic.*!ml`|
 
 > [!TIP]
-> Pour en savoir plus sur les menaces spécifiques, consultez **[l’activité récente des menaces globales.](https://www.microsoft.com/wdsi/threats)**
+> Pour en savoir plus sur les menaces spécifiques, consultez **[l’activité récente des menaces globales](https://www.microsoft.com/wdsi/threats)**.
 
 ## <a name="configuring-client-behavioral-blocking"></a>Configuration du blocage du comportement client
 
-Si votre organisation utilise Defender pour endpoint, le blocage du comportement client est activé par défaut. Toutefois, pour bénéficier de toutes les fonctionnalités de Defender pour point de terminaison, y compris le blocage du comportement et le [contenu,](behavioral-blocking-containment.md)assurez-vous que les fonctionnalités et fonctionnalités suivantes de Defender pour point de terminaison sont activées et configurées :
+Si votre organisation utilise Defender pour endpoint, le blocage du comportement client est activé par défaut. Toutefois, pour bénéficier de toutes les fonctionnalités de Defender pour point de terminaison, y compris le blocage du comportement et le [contenu,](behavioral-blocking-containment.md) assurez-vous que les fonctionnalités et fonctionnalités suivantes de Defender pour point de terminaison sont activées et configurées :
 
 - [Lignes de base de Defender pour les points de terminaison](configure-machines-security-baseline.md)
 - [Appareils intégrés à Defender pour le point de terminaison](onboard-configure.md)

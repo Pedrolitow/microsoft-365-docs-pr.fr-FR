@@ -7,13 +7,23 @@
           href: mdb-overview.md
         - name: Processus de configuration simplifié
           href: mdb-simplified-configuration.md
-        - name: Comment obtenir Defender pour les entreprises (prévisualisation)
-          href: get-defender-business.md
         - name: Comparer les plans pour les petites et moyennes entreprises
           href: compare-mdb-m365-plans.md
         - name: Intégration à Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
-    - name: Installation et configuration
+    - name: Prise en main
+      items:
+        - name: Obtenir Defender pour les entreprises (prévisualisation)
+          href: get-defender-business.md
+        - name: Utiliser l’Assistant Installation
+          href: mdb-use-wizard.md
+        - name: Commencer à utiliser le portail
+          href: mdb-get-started.md
+        - name: Afficher votre tableau de gestion des vulnérabilités de bord
+          href: mdb-view-tvm-dashboard.md
+        - name: Essayer des didacticiels et des simulations
+          href: mdb-tutorials.md
+    - name: Configurer Et configurer Defender pour les entreprises
       items:
         - name: Vue d’ensemble de la configuration
           href: mdb-setup-configuration.md
@@ -27,16 +37,8 @@
           href: mdb-onboard-devices.md
         - name: 'Étape 5 : configurer vos paramètres de sécurité'
           href: mdb-configure-security-settings.md
-    - name: Prise en main
+    - name: Afficher les menaces détectées et y répondre
       items:
-        - name: Commencer à utiliser le portail
-          href: mdb-get-started.md
-        - name: Essayer des didacticiels et des simulations
-          href: mdb-tutorials.md
-    - name: Utiliser Microsoft Defender pour les entreprises (prévisualisation)
-      items:
-        - name: Afficher et gérer des appareils
-          href: mdb-manage-devices.md
         - name: Afficher et gérer les incidents
           href: mdb-view-manage-incidents.md
         - name: Répondre aux menaces et les atténuer
@@ -45,20 +47,24 @@
           href: mdb-review-remediation-actions.md
         - name: Afficher et utiliser les rapports
           href: mdb-reports.md
-    - name: Gérer les paramètres et les stratégies
+    - name: Gérer les stratégies de sécurité.
       items:
         - name: 'Afficher, modifier et créer des stratégies'
           href: mdb-view-edit-create-policies.md
         - name: Ordre des stratégies
           href: mdb-policy-order.md
-        - name: Créer des groupes d’appareils
-          href: mdb-create-edit-device-groups.md
         - name: Paramètres de protection nouvelle génération
           href: mdb-next-gen-configuration-settings.md
         - name: Paramètres du pare-feu
           href: mdb-firewall.md
         - name: Gérer les règles pour les stratégies de pare-feu
           href: mdb-custom-rules-firewall.md
+    - name: Gestion des appareils
+      items:
+        - name: Afficher et gérer des appareils
+          href: mdb-manage-devices.md
+        - name: Créer des groupes d’appareils
+          href: mdb-create-edit-device-groups.md
     - name: Informations de référence
       items:
         - name: Comment obtenir de l’aide ou contacter le support technique

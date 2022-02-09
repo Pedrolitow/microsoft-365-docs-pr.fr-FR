@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e99ee95e02db7e2e5c42bb5e092b7172c335eeb0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: e4d418dcd7ab33fd8f01dfc64e31210fb358d95c
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245122"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464601"
 ---
 # <a name="get-microsoft-defender-for-business-preview"></a>Obtenir Microsoft Defender pour les entreprises (prévisualisation)
 
 > [!IMPORTANT]
-> Microsoft Defender pour Entreprise est désormais en prévisualisation et [](https://aka.ms/mdb-preview) sera progressivement mis en place pour les clients et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un ensemble initial de [scénarios](mdb-tutorials.md#try-these-preview-scenarios)et que nous ajouterons régulièrement des fonctionnalités.
+> Microsoft Defender pour Entreprise est désormais en prévisualisation et sera progressivement mis en place pour les clients [](https://aka.ms/mdb-preview) et les partenaires qui s’y connectent pour le demander. Nous intégrerons un ensemble initial de clients et de partenaires dans les prochaines semaines et développerons la prévisualisation jusqu’à la disponibilité générale. Notez que la prévisualisation sera lancée avec un [ensemble initial de scénarios](mdb-tutorials.md#try-these-preview-scenarios) et que nous ajouterons régulièrement des fonctionnalités.
 > 
 > Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. 
 
@@ -37,18 +37,18 @@ Microsoft Defender pour Entreprise (prévisualisation) est disponible en prévis
 
 ## <a name="sign-up-for-the-preview-program"></a>S’inscrire au programme d’aperçu
 
-1. Visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) .
+1. Visitez [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-2. Sélectionnez **Client** ou **Partenaire Microsoft.**
+2. **Sélectionnez Client** ou **Partenaire Microsoft**.
 
 3. Examinez et acceptez les termes du contrat de prévisualisation de Microsoft Defender pour Entreprise, puis choisissez **Suivant**.
 
 4. Remplissez le formulaire avec vos informations de contact. 
 
-   - Si vous êtes un client qui travaille avec  un partenaire Microsoft, dans la zone Autre, remplissez le nom de la société du partenaire. Sélectionnez ensuite **Submit (Envoyer)**.
+   - Si vous êtes un client qui travaille avec un partenaire Microsoft, dans la zone Autre, remplissez le nom de l’organisation du partenaire. Sélectionnez ensuite **Submit (Envoyer)**.
    - Si vous êtes un partenaire Microsoft, veillez à indiquer votre type de partenariat et des informations sur les clients avec qui vous envisagez de travailler.
 
-5. Lorsque vous avez terminé de remplir le formulaire, choisissez **Envoyer.**
+5. Lorsque vous avez terminé de remplir le formulaire, sélectionnez **Envoyer**.
 
 ## <a name="what-to-expect-after-applying"></a>À quoi s’attendre après l’application
 
@@ -57,8 +57,7 @@ Nous examinerons votre application et nous effectuerons une détermination. Vous
 Si vous êtes accepté, votre courrier électronique contiendra un code de licence que vous utiliserez pour activer votre version d’essai de Defender pour Entreprise.
 
 > [!IMPORTANT]
-> Si vous êtes un partenaire, une fois que vous avez été accepté dans le programme d’évaluation, chaque client doit terminer le processus décrit dans la section, Inscrivez-vous au programme [d’aperçu.](#sign-up-for-the-preview-program) Assurez-vous que le client spécifie le nom de votre partenaire Microsoft dans la **zone Autre.**
-
+> Si vous êtes un partenaire, une fois que vous avez été accepté dans le programme d’évaluation, chaque client doit effectuer le processus décrit dans la section s’inscrire au programme [d’évaluation](#sign-up-for-the-preview-program). Assurez-vous que le client spécifie le nom de votre partenaire Microsoft dans la **zone Autre** .
 
 ## <a name="next-steps"></a>Prochaines étapes
 

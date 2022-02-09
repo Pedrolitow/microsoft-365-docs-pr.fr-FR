@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 1fca5a6762642968310b7165db09d827c06c0cbd
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 84009fbe386d19828cfa1393fb08bf8bef4c3444
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321866"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464777"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Android
 
@@ -32,6 +32,10 @@ ms.locfileid: "62321866"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender pour le point de terminaison est désormais Microsoft Defender dans le Magasin de lecture
+
+Microsoft Defender pour le point de terminaison est désormais disponible en **tant que Microsoft Defender** dans le magasin de lecture. Avec cette mise à jour, l’application sera disponible en  prévisualisation pour les consommateurs de la région des États-Unis . En fonction de la façon dont vous vous connectez à l’application avec votre compte personnel ou personnel, vous aurez accès aux fonctionnalités de Microsoft Defender pour endpoint ou aux fonctionnalités de Microsoft Defender pour les individus. Consultez [ce blog pour](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) plus d’informations.
 
 ## <a name="threat-and-vulnerability-management"></a>Gestion des menaces et des vulnérabilités
 
