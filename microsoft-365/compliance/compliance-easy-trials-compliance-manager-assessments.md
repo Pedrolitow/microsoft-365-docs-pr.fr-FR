@@ -2,8 +2,8 @@
 title: À propos de la version d’évaluation premium du Gestionnaire de conformité Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: À propos des essais d’évaluation Premium du Gestionnaire de conformité Microsoft
-ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063296"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465170"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>À propos de l’essai gratuit pour les évaluations premium du Gestionnaire de conformité Microsoft
 
 Le Gestionnaire de conformité vous permet de gérer les exigences de conformité de votre organisation et d’évaluer et d’améliorer votre score de conformité. Les évaluations que vous créez sont basées sur des modèles qui correspondent aux réglementations gouvernementales et aux normes du secteur dans le monde entier.  
 
-Votre contrat de licence pour utiliser le Gestionnaire de conformité peut inclure un ou plusieurs modèles intégrés. Une bibliothèque complète de modèles d’évaluation premium est également disponible pour vous aider à créer des évaluations spécifiques aux besoins de votre organisation. Pour tester ces modèles avant d’acheter des licences, inscrivez-vous à la version d’évaluation gratuite des évaluations premium.
+Votre contrat de licence pour utiliser le Gestionnaire de conformité peut inclure un ou plusieurs modèles intégrés pour la génération d’évaluations. Une bibliothèque complète de modèles d’évaluation premium est également disponible pour la génération d’évaluations spécifiques aux besoins de votre organisation. Pour tester ces modèles avant d’acheter des licences, inscrivez-vous à l’essai gratuit des évaluations premium du Gestionnaire de conformité.
 
 ## <a name="terms-and-conditions"></a>Conditions générales
 
@@ -44,15 +44,15 @@ L’accès total aux fonctionnalités du Gestionnaire de conformité peut dépen
 
 ## <a name="template-licensing"></a>Gestion des licences de modèles
 
-Le fait de commencer votre version d’évaluation unique pour les évaluations premium vous donne le droit d’utiliser gratuitement 25 modèles premium de votre choix pendant 90 jours. Vous pouvez créer autant d’évaluations que vous le souhaitez à l’aide de ces 25 modèles.
+Le fait de commencer votre version d’évaluation unique pour les évaluations premium vous donne le droit d’utiliser gratuitement 25 modèles premium de votre choix pendant 90 jours. Vous pouvez créer autant d’évaluations à partir des 25 modèles que vous le souhaitez.
 
 Après avoir commencé votre version **d’évaluation**, consultez l’onglet Évaluations dans le Gestionnaire de conformité et affichez le compteur **modèles activés/sous** licence pour voir le nombre de modèles disponibles et en cours d’utilisation. Ce compteur affiche vos 25 modèles sous licence. Lorsque vous créez des évaluations à l’aide de ces modèles, votre numéro activé est mis à jour. L’utilisation des modèles est comptabilisée en fonction de la certification sous-jacente, ce qui signifie que plusieurs évaluations basées sur le même modèle ou différentes versions du même modèle qui utilisent différents produits comptent comme une seule utilisation de modèle.
 
-Pour plus d’informations sur l’utilisation et la gestion des modèles du Gestionnaire de conformité, voir [Utilisation des modèles d’évaluation.](compliance-manager-templates.md)
+Pour plus d’informations sur l’utilisation et la gestion des modèles du Gestionnaire de conformité, voir [Utilisation des modèles d’évaluation](compliance-manager-templates.md).
 
 ## <a name="permissions"></a>Autorisations
 
-Toute personne de votre organisation ayant accès au Gestionnaire de conformité peut s’inscrire à la version d’évaluation du modèle d’évaluation.
+Tout utilisateur de votre organisation disposant d’autorisations d’accès au Gestionnaire de conformité peut s’inscrire à l’essai gratuit des évaluations premium. En savoir plus sur les [autorisations et les rôles requis pour le Gestionnaire de conformité](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## <a name="during-your-trial"></a>Pendant votre version d’essai
 
@@ -60,7 +60,7 @@ Tout au long de votre version d’évaluation, vous pouvez consulter la **sectio
 
 ## <a name="after-the-trial"></a>Après la version d’essai
 
-Une fois votre version d’évaluation terminée, les modèles d’évaluation que vous avez sélectionnés ne reçoivent plus de mises à jour automatiques et peuvent ne plus être à jour avec les modifications réglementaires. Nous vous recommandons de supprimer les évaluations conçues sur des modèles que vous n’avez pas l’intention d’acheter.
+Une fois votre essai gratuit terminé, les modèles que vous avez utilisés ne reçoivent pas de mises à jour automatiques et risquent de devenir obsolètes en cas de modifications réglementaires. Nous vous recommandons de supprimer les évaluations générées à partir de modèles que vous n’avez pas l’intention d’acheter.
 
 ## <a name="learn-more-about-compliance"></a>En savoir plus sur la conformité
 
