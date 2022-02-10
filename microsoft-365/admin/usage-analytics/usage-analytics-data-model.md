@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de Microsoft 365 services.  '
-ms.openlocfilehash: 986a7c7b7f07fca9275f4d7d2d4171ae464158c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 013fdd75063ad8ad2489ebe43c9091f05f94c14c
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191114"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487274"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -68,12 +68,12 @@ Ce tableau fournit des détails au niveau de l’utilisateur pour tous les utili
 |UPN  <br/> |Nom d'utilisateur principal unique qui identifie l'utilisateur afin de pouvoir l'associer à d'autres sources de données externes.  <br/> |
 |DisplayName  <br/> |Nom d'affichage de l'utilisateur.  <br/> |
 |IDType  <br/> |Le type d’ID est 1 si l’utilisateur est un utilisateur Yammer qui se connecte à l’aide de son ID Yammer ou 0 s’il se connecte à Yammer à l’aide de son ID Microsoft 365.  <br/> La valeur est 1 pour représenter que cet utilisateur se connecte à Yammer avec son ID Yammer et non son ID Microsoft 365 client  <br/> |
-|HasLicenseEXO  <br/> |Valeur définie sur True si l'utilisateur dispose d'une licence et est activé pour utiliser Exchange.  <br/> |
-|HasLicenseODB  <br/> |Valeur définie sur True si l'utilisateur dispose d'une licence et est activé pour utiliser OneDrive Entreprise.  <br/> |
-|HasLicenseSPO  <br/> |Valeur définie sur True si l'utilisateur dispose d'une licence et est activé pour utiliser SharePoint Online.  <br/> |
-|HasLicenseYAM  <br/> |Valeur définie sur True si l'utilisateur dispose d'une licence et est activé pour utiliser Yammer.  <br/> |
-|HasLicenseSFB  <br/> |Valeur définie sur True si l'utilisateur dispose d'une licence et est activé pour utiliser Skype Entreprise.  <br/> |
-|HasLicenseTeams  <br/> |Valeur true si une licence est attribuée à l’utilisateur et permet d’utiliser Microsoft Teams.  <br/> |
+|HasLicenseEXO  <br/> |Valeur true si l’utilisateur est affecté à une licence et autorisé à utiliser Exchange le dernier jour du mois.  <br/> |
+|HasLicenseODB  <br/> |Valeur true si l’utilisateur est affecté à une licence et autorisé à utiliser OneDrive Entreprise le dernier jour du mois.  <br/> |
+|HasLicenseSPO  <br/> |Valeur true si l’utilisateur est affecté à une licence et autorisé à utiliser SharePoint Online le dernier jour du mois.  <br/> |
+|HasLicenseYAM  <br/> |Valeur true si l’utilisateur est affecté à une licence et autorisé à utiliser Yammer le dernier jour du mois.  <br/> |
+|HasLicenseSFB  <br/> |Valeur true si l’utilisateur est affecté à une licence et autorisé à utiliser Skype Entreprise le dernier jour du mois.  <br/> |
+|HasLicenseTeams  <br/> |Valeur true si une licence est attribuée à l’utilisateur et permet d’Microsoft Teams le dernier jour du mois.  <br/> |
 |Company  <br/> |Données Azure Active Directory relatives à la société de l'utilisateur.  <br/> |
 |Department  <br/> |Données Azure Active Directory relatives au service de l'utilisateur.  <br/> |
 |LocationCity  <br/> |Données Azure Active Directory relatives à la ville de l'utilisateur.  <br/> |
@@ -81,7 +81,7 @@ Ce tableau fournit des détails au niveau de l’utilisateur pour tous les utili
 |LocationState  <br/> |Données Azure Active Directory relatives à l'État de l'utilisateur.  <br/> |
 |LocationOffice  <br/> |Bureau de l'utilisateur.  <br/> |
 |Title  <br/> |Données Azure Active Directory relatives au titre de l'utilisateur.  <br/> |
-|Deleted  <br/> |Cette valeur a la valeur True si l’utilisateur a été supprimé Microsoft 365 ce dernier mois complet.  <br/> |
+|Deleted  <br/> |Cette valeur a la valeur True si l’utilisateur a été supprimé Microsoft 365 au cours du dernier mois complet.  <br/> |
 |DeletedDate  <br/> |Date à laquelle l’utilisateur a été supprimé de Microsoft 365.  <br/> |
 |YAM_State  <br/> |États de l’utilisateur dans Yammer système, peuvent être actifs, supprimés ou suspendus.  <br/> |
 |YAM_ActivationDate  <br/> |Date à laquelle l'utilisateur est devenu actif dans Yammer.  <br/> |
@@ -125,7 +125,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |SPO_OtherAccessedByOthers  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur un autre site qu’un autre utilisateur possède.  <br/> |
 |SPO_TeamFileViewedModified  <br/> |Nombre de fichiers avec lesquels l'utilisateur a interagi, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamFileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, tous sites d'équipe confondus.  <br/> |
-|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés en interne par cet utilisateur à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
+|SPO_TeamFileSharedInternally  <br/> |Nombre de fichiers partagés par cet utilisateur en interne à partir d’un site d’équipe ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, tous sites d'équipe confondus.  <br/> |
 |SPO_TeamAccessedByOwner  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur un site d’équipe qu’il possède.  <br/> |
 |SPO_TeamAccessedByOthers  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur un site d’équipe qu’un autre utilisateur possède.  <br/> |
@@ -152,7 +152,7 @@ Ce tableau fournit des données d’adoption mois par mois en termes d’utilisa
 |:-----|:-----|
 |Product  <br/> |Nom des produits pour lesquels les informations d'utilisation sont synthétisées. Microsoft 365 valeur dans la colonne produit représente l’activité sur l’un des produits  <br/> |
 |Timeframe  <br/> |Mois. La colonne contient une ligne par produit et par mois pour les 12 derniers mois, mois en cours compris.  <br/> |
-|EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit pour la valeur de période, si un utilisateur a été activé pour une partie du mois, ils sont toujours comptés.  <br/> |
+|EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit pour la valeur de l’heure, si un utilisateur a été activé pour une partie du mois, ils sont toujours comptés.  <br/> |
 |ActiveUsers  <br/> |Nombre d’utilisateurs ayant effectué une activité intentionnelle dans le produit pour la valeur de l’heure.  <br/> Un utilisateur est comptabilisé comme actif au cours d'un mois donné s'il a effectué une des activités clés à l'aide du produit. Les activités clés sont disponibles dans la table **Activité produit des locataires**.  <br/> |
 |CumulativeActiveUsers  <br/> |Nombre d'utilisateurs activés pour utiliser un produit et ayant utilisé ce produit jusqu'au mois pris en compte au moins une fois depuis le début de la collecte des données dans le nouveau système d'utilisation.  <br/> |
 |MoMReturningUsers  <br/> |Nombre d'utilisateurs ayant été actifs au cours du mois pris en compte et qui étaient également actifs au cours du mois précédent.  <br/> |
@@ -166,7 +166,7 @@ Ce tableau fournit les totaux mensuels de l’activité et le nombre d’utilisa
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
 |Timeframe  <br/> |Mois. La colonne contient une ligne par produit et par mois pour les 12 derniers mois, mois en cours compris.  <br/> |
-|Product  <br/> |Nom du produit dans Microsoft 365 pour lequel les données d’utilisation sont disponibles.  <br/> |
+|Product  <br/> |Nom du produit dans le Microsoft 365 pour lequel les données d’utilisation sont disponibles.  <br/> |
 |Activity  <br/> |Nom de l'activité liée à un produit, utilisé pour présenter l'utilisation active du produit.  <br/> |
 |ActivityCount  <br/> |Nombre total d'actions comptabilisées pour chaque activité effectuée à l'aide du produit, tous utilisateurs actifs confondus.  <br/> **Remarque :** pour les activités SharePoint Online et OneDrive Entreprise, cette valeur représente le nombre de documents distincts avec lesquels les utilisateurs ont interagi.  <br/> |
 |ActiveUserCount  <br/> |Nombre d'utilisateurs ayant effectué une activité à l'aide du produit.  <br/> |
@@ -175,7 +175,7 @@ Ce tableau fournit les totaux mensuels de l’activité et le nombre d’utilisa
    
 ### <a name="data-table---tenant-mailbox-usage"></a>Table de données - Utilisation des boîtes aux lettres par les locataires
 
-Ce tableau se compose de données récapitulatifs sur tous les utilisateurs sous licence Exchange Online qui ont une boîte aux lettres d’utilisateur. Elle contient un état de fin de mois englobant toutes les boîtes aux lettres utilisateur. Les données de cette table ne s'additionnent pas au fil des mois. Dans cette table, les données du mois précédent représentent l'état le plus récent.
+Ce tableau se compose de données récapitulatifs sur tous les utilisateurs Exchange Online sous licence qui ont une boîte aux lettres d’utilisateur. Elle contient un état de fin de mois englobant toutes les boîtes aux lettres utilisateur. Les données de cette table ne s'additionnent pas au fil des mois. Dans cette table, les données du mois précédent représentent l'état le plus récent.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -198,7 +198,7 @@ Ce tableau fournit des données récapitulatifs mensuelles sur les clients que l
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
-|Product  <br/> |Nom du produit dans Microsoft 365 pour lequel les données d’utilisation du client sont disponibles.  <br/> |
+|Product  <br/> |Nom du produit dans le Microsoft 365 pour lequel les données d’utilisation du client sont disponibles.  <br/> |
 |ClientId  <br/> |Nom de chaque appareil utilisé pour se connecter au produit.  <br/> |
 |UserCount  <br/> |Nombre d'utilisateurs ayant utilisé chacun des clients pour chaque produit.  <br/> |
 |Timeframe  <br/> |Mois  <br/> |
@@ -271,13 +271,13 @@ Ce tableau fournit des données sur la façon dont Microsoft 365 groupes est uti
 |SPO_StorageUsed  <br/> |Quantité de stockage SharePoint utilisé.  <br/> |
 |YAM_TotalGroups  <br/> |Nombre de Yammer groupes.  <br/> |
 |YAM_ActiveGroups  <br/> |Nombre de groupes Yammer actifs.  <br/> |
-|YAM_LikedActiveGroups  <br/> |Nombre de Yammer groupes qui ont des activités de même genre.  <br/> |
-|YAM_PostedActiveGroups  <br/> |Nombre d Yammer groupes qui ont des activités de publication.  <br/> |
+|YAM_LikedActiveGroups  <br/> |Nombre de Yammer groupes qui ont des activités telles que.  <br/> |
+|YAM_PostedActiveGroups  <br/> |Nombre de groupes Yammer qui ont des activités de publication.  <br/> |
 |YAM_ReadActiveGroups  <br/> |Nombre de groupes Yammer qui ont des activités de lecture.  <br/> |
 |YAM_TotalActivities  <br/> |Nombre d Yammer activités.  <br/> |
 |YAM_LikedActivities  <br/> |Nombre d’Yammer activités telles que.  <br/> |
-|YAM_PostedActivties  <br/> |Nombre d’Yammer activités de publication.  <br/> |
-|YAM_ReadActivites  <br/> |Nombre d’Yammer activités de lecture.  <br/> |
+|YAM_PostedActivties  <br/> |Nombre d Yammer activités de publication.  <br/> |
+|YAM_ReadActivites  <br/> |Nombre d Yammer activités de lecture.  <br/> |
 
 ### <a name="data-table---tenant-office-licenses"></a>Table de données - Licences Office client
 
