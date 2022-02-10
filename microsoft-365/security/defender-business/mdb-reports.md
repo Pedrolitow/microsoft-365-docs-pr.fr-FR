@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/06/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9d70984e4bce9cd7724326ca5f823fb9cf7d7440
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 85e1958c9577b68737aa2803dc115c83f757654e
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464739"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520570"
 ---
 # <a name="reports-in-microsoft-defender-for-business-preview"></a>Rapports dans Microsoft Defender pour Entreprises (prévisualisation)
 
