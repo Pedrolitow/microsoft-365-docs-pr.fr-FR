@@ -1,7 +1,7 @@
 ---
 title: Rechercher dans le journal d’audit dans le Centre de conformité Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,19 +10,24 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - Strat_O365_IP
-  - M365-security-compliance
-  - SPO_Content
+- Strat_O365_IP
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom:
-  - seo-marvel-apr2020
-  - admindeeplinkMAC
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: ff963c9bad09657899e9b163dacce46e6a246c6a
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520245"
 ---
-
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le Centre de conformité Microsoft 365 afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
@@ -37,8 +42,7 @@ Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal 
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Conformité des communications|ComplianceSuperVisionExchange|
 | Explorateur de contenu|LabelContentExplorer|
-| Protection contre la perte de données (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender pour point de terminaison|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
+| Protection contre la perte de données (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | eDiscovery|Découverte, AeD|
 | Correspondances exactes de données|MipExactDataMatch|
@@ -1104,15 +1108,13 @@ Le tableau suivant répertorie les activités des rapports d’utilisation enreg
 La journalisation d’audit de l’administrateur Exchange (activée par défaut dans Microsoft 365) enregistre un événement dans le journal d’audit lorsqu’un administrateur (ou un utilisateur auquel des autorisations d’administration ont été attribuées) apporte une modification dans votre organisation Exchange. Les modifications apportées à l’aide du Centre d’administration Exchange ou en exécutant une cmdlet dans Exchange Online PowerShell sont enregistrées dans le journal d’audit de l’administrateur Exchange. Les applets de commande qui commencent par les verbes **Get-**, **Search-** ou **Test-** ne sont pas enregistrées dans le journal d’audit. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Journalisation d’audit de l’administrateur](/exchange/administrator-audit-logging-exchange-2013-help).
 
 > [!IMPORTANT]
-> Certaines cmdlets Exchange Online qui ne sont pas enregistrées dans le journal d’audit de l’administrateur Exchange (ou dans le journal d’audit). Bon nombre de ces applets de commande sont liées à la maintenance du service Exchange Online et sont exécutées par le personnel du centre de données Microsoft ou les comptes de service. Ces applets de commande ne sont pas enregistrées, car elles génèrent un grand nombre d’événements d’audit «bruyants». Si une applet de commande Exchange Online ne fait pas l’objet d’un audit, envoyez une suggestion au [forum UserVoice Sécurité et conformité](https://office365.uservoice.com/forums/289138-office-365-security-compliance) et demandez à ce qu’elle soit incluse dans l’audit. Vous pouvez également envoyer une demande de modification de conception (DCR) au support Microsoft.
+> Certaines cmdlets Exchange Online qui ne sont pas enregistrées dans le journal d’audit de l’administrateur Exchange (ou dans le journal d’audit). Bon nombre de ces applets de commande sont liées à la maintenance du service Exchange Online et sont exécutées par le personnel du centre de données Microsoft ou les comptes de service. Ces applets de commande ne sont pas enregistrées, car elles génèrent un grand nombre d’événements d’audit «bruyants». S’il existe une cmdlet Exchange Online qui n’est pas en cours d’audit, envoyez une demande de modification de conception (DCR) au Support Microsoft.
 
 Voici quelques conseils pour rechercher des activités d’administrateur Exchange dans le journal d’audit :
 
 - Pour renvoyer les entrées du journal d'audit de l'administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utilisez les zones de plage de dates et la liste **Utilisateurs** pour affiner les résultats de la recherche des cmdlets exécutées par un administrateur Exchange spécifique dans une plage de dates spécifique.
 
-- Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
-
-  ![Tapez un tiret dans le champ Activités pour filtrer les événements d'administration d’Exchange.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+- Pour afficher les événements du journal d’audit de l’administrateur Exchange, cliquez sur la colonne **Activité** pour trier les noms de cmdlet par ordre alphabétique.
 
 - Pour obtenir des informations sur les cmdlets exécutées, les paramètres et valeurs de paramètres utilisés et les objets affectés, vous devez exporter les résultats de recherche et sélectionner l’option **Télécharger tous les résultats**. Pour plus d’informations, voir [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 

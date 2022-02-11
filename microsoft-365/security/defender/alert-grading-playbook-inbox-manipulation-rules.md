@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 102731beb6da535e91ad197379a08d4d0f7cddfe
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355158"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524092"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Notation des alertes pour les règles de manipulation de boîte de réception suspectes
 
@@ -143,6 +143,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
@@ -196,5 +197,5 @@ CloudAppEvents
 
 - [Vue d’ensemble de la notation des alertes](alert-grading-playbooks.md)
 - [Activité suspecte de transfert d’e-mail](alert-grading-playbook-email-forwarding.md)
-- [Règles de forwarding de boîte de réception suspectes](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Règle de transfert de boîte de réception suspect](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Examiner des alertes](investigate-alerts.md)

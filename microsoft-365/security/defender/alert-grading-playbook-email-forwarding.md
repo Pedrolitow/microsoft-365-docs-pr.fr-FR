@@ -1,26 +1,32 @@
 ---
 title: Notation des alertes pour une activité de forwarding de courrier suspecte
 description: Notation des alertes pour une activité suspecte de transport de courrier pour passer en revue les alertes et prendre les mesures recommandées pour corriger l’attaque et protéger votre réseau.
-keywords: 'incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365'
+keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524188"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Notation des alertes pour une activité de forwarding de courrier suspecte
 
@@ -238,7 +244,8 @@ CloudAppEvents
 Exécutez cette requête pour savoir s’il existe des événements de connexion anormaux de cet utilisateur. Par exemple : des IP inconnus, de nouvelles applications, des pays rares, plusieurs événements LogonFailed.
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 

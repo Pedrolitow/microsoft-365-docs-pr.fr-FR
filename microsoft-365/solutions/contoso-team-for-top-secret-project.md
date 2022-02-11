@@ -2,9 +2,9 @@
 title: Équipe isolée pour un projet top secret de Contoso Corporation
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: dansimp
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
-ms.openlocfilehash: c789e74bc54183f16f7de7801ecc77b76f4913f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b6bc72a6476301cf3239aeb7f68486f15ebbac8
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191276"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62523924"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
@@ -36,15 +36,15 @@ En raison de leur nature sensible, l’accès à ces fichiers était :
 - Limité aux membres Project équipe 2X et aux cadres supérieurs.
 - Chiffré et protégé par des autorisations permettant d’autoriser l’accès uniquement aux membres de l’équipe Project 2X et à la direction, même si les fichiers ont été distribués en dehors de leurs dossiers sécurisés.
 
-Le personnel informatique de Contoso [a](secure-teams-security-isolation.md) utilisé une équipe avec isolation de sécurité pour Project 2X et ces étapes.
+Le personnel informatique de Contoso [a utilisé](secure-teams-security-isolation.md) une équipe avec isolation de sécurité pour Project 2X et ces étapes.
 
 ## <a name="step-1-created-a-private-team"></a>Étape 1 : Création d’une équipe privée
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies [SharePoint’accès.](../security/office-365-security/sharepoint-file-access-policies.md)
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’SharePoint [recommandées](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Ensuite, un administrateur informatique de Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur de Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que Project propriétaires d’équipe 2X peuvent créer des canaux privés.
 
-Pour plus d’informations sur la configuration, voir [Créer une équipe privée.](secure-teams-security-isolation.md#create-a-private-team)
+Pour plus d’informations sur la configuration, voir [Créer une équipe privée](secure-teams-security-isolation.md#create-a-private-team).
 
 ## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Étape 2 : Création d’une étiquette de niveau de Project l’équipe 2X
 
@@ -55,25 +55,25 @@ Les administrateurs Contoso ont créé une étiquette de sensibilité **nommée 
 - Autorisations de visionneuse autorisées pour le groupe Senior Leadership.
 - Accès bloqué aux appareils non utilisés.
 
-Les fichiers de la section **Documents** du site Project 2X SharePoint sous-jacent ont été protégés par :
+Les fichiers de **la section Documents** du site Project 2X SharePoint ont été protégés par :
 
 - Autorisations de site, qui autorisent uniquement les autorisations complètes pour les membres du groupe Project 2X Microsoft 365 et les autorisations de lecture pour le groupe Senior Leadership.
 - L Project étiquette de sensibilité 2X, avec chiffrement et autorisations qui se déplacent avec le fichier s’il est déplacé ou copié à partir du site.
 
-Pour plus d’informations sur la configuration, voir [Créer une étiquette de sensibilité.](secure-teams-security-isolation.md#create-a-sensitivity-label)
+Pour plus d’informations sur la configuration, voir [Créer une étiquette de niveau de sensibilité](secure-teams-security-isolation.md#create-a-sensitivity-label).
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Étape 3 : Configuration du site SharePoint sous-jacent
 
-Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies [SharePoint’accès.](../security/office-365-security/sharepoint-file-access-policies.md)
+Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies d’SharePoint [recommandées](../security/office-365-security/sharepoint-file-access-policies.md).
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site :
 
-- Pour empêcher Project membres du groupe 2X de partager l’accès au site. Pour plus d’informations sur la configuration, [voir SharePoint paramètres d’une équipe avec isolation de sécurité.](secure-teams-security-isolation.md#sharepoint-settings)
+- Pour empêcher Project membres du groupe 2X de partager l’accès au site. Pour plus d’informations sur la configuration, [voir SharePoint paramètres d’une équipe avec isolation de sécurité](secure-teams-security-isolation.md#sharepoint-settings).
 - Pour les autorisations de lecture pour le groupe Senior Leadership.
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site pour empêcher Project membres du groupe 2X de partager l’accès au site. 
 
-À mesure que des canaux privés Project 2X ont été créés, le propriétaire  du groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
+À mesure que des canaux privés Project 2X ont été créés, le propriétaire du groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur **Personnes spécifiques**.
 
 Voici la configuration de l’équipe Project 2X avec isolation de sécurité.
 
@@ -102,5 +102,5 @@ En raison de l’environnement de collaboration de Teams et des fonctionnalités
 
 ## <a name="next-step"></a>Étape suivante
 
-[Déployez une équipe avec une isolation de sécurité](secure-teams-security-isolation.md) dans votre organisation.
+[Déployez une équipe avec isolation de la sécurité](secure-teams-security-isolation.md) dans votre organisation.
 

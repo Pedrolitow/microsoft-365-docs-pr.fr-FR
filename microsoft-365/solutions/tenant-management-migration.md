@@ -1,8 +1,8 @@
 ---
 title: Étape 4. Migration de vos Microsoft 365 pour les locataires d’entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,35 +16,35 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migrez vos Windows, Office applications clientes et Office serveurs d’Microsoft 365 client.
-ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1892ae3da900f1c940866a2b2a3c70c1d6cb5db3
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176186"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524248"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration de vos Microsoft 365 pour les locataires d’entreprise
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et à implémenter une stratégie pour migrer ces mises à jour :
+Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et implémenter une stratégie pour migrer ces produits :
 
 | De | À |
 |:-------|:-----|
-| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
-| Office clients installés sur les appareils de vos travailleurs | Microsoft 365 Apps for enterprise |
+| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
+| Office clients installés sur les appareils de vos travailleurs | Applications Microsoft 365 for entreprise |
 | Office serveurs installés sur des serveurs locaux | Leurs services cloud équivalents dans Microsoft 365 |
 |  |  |
 
 ## <a name="migrating-to-windows-10"></a>Migration vers Windows 10
 
-Chaque Microsoft 365 licence d’entreprise inclut une licence pour Windows 10 Entreprise. Pour migrer vos appareils qui exécutent Windows 7 ou Windows 8.1, vous pouvez mettre à niveau sur place. Support ended for Windows 7 on *January 14, 2020*. 
+Chaque Microsoft 365 licence d’entreprise inclut une licence pour Windows 10 Entreprise. Pour migrer vos appareils qui exécutent Windows 7 ou Windows 8.1, vous pouvez mettre à niveau sur place. Le support a pris fin Windows 7 janvier *2020*. 
 
-Pour d’autres méthodes d’installation Windows 10 Entreprise au-delà d’une mise à niveau sur place, voir [Windows 10 scénarios de déploiement.](/windows/deployment/windows-10-deployment-scenarios) Vous pouvez également [planifier le déploiement de Windows 10](/windows/deployment/planning/) par vous-même.
+Pour d’autres méthodes d’installation Windows 10 Entreprise au-delà d’une mise à niveau sur place, voir [Windows 10 scénarios de déploiement](/windows/deployment/windows-10-deployment-scenarios). Vous pouvez également [planifier le déploiement de Windows 10](/windows/deployment/planning/) par vous-même.
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>Migration vers Applications Microsoft 365 pour les grandes entreprises
 
-Microsoft 365 entreprise inclut Applications Microsoft 365 pour les grandes entreprises, une version des produits clients Office (Word, PowerPoint, Excel et Outlook) installée et mise à jour à partir du cloud Microsoft. Pour plus d’informations, voir [à propos Applications Microsoft 365 pour les grandes entreprises](/deployoffice/about-microsoft-365-apps).
+Microsoft 365 entreprise inclut Applications Microsoft 365 pour les grandes entreprises, une version des produits clients Office (Word, PowerPoint, Excel et Outlook ) qui est installé et mis à jour à partir du cloud Microsoft. Pour plus d’informations, voir [À propos Applications Microsoft 365 pour les grandes entreprises](/deployoffice/about-microsoft-365-apps).
 
 Au lieu de maintenir vos ordinateurs à jour Office 2019 ou versions antérieures, prenez les mesures suivantes :
 
@@ -56,7 +56,7 @@ Applications Microsoft 365 pour les grandes entreprises installe automatiquement
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>Migration de serveurs et de données locaux vers des Microsoft 365
 
-Microsoft 365 entreprise inclut des versions cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour gérer et mettre à jour des serveurs locaux.
+Microsoft 365 entreprise inclut des versions cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour la maintenance et la mise à jour des serveurs locaux.
 
 Utilisez les ressources suivantes pour plus d’informations sur la migration des utilisateurs et des données pour Microsoft 365 charges de travail spécifiques :
 
@@ -87,7 +87,7 @@ Voici un exemple de client avec une migration terminée de serveurs locaux.
 Dans cette illustration, l’organisation a :
 
 - Migration de ses boîtes aux lettres Exchange Server en local vers Exchange Online.
-- Migration de ses données et sites SharePoint Server locaux vers SharePoint dans Microsoft 365.
+- Migration de ses données et sites SharePoint server locaux vers SharePoint dans Microsoft 365.
 
 ## <a name="ongoing-maintenance-for-migration"></a>Maintenance continue pour la migration
 

@@ -1,8 +1,8 @@
 ---
 title: Étape 1. Votre Microsoft 365 pour les locataires d’entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez et gérez un ou plusieurs Microsoft 365 client, avec des options pour les emplacements multigé géographiques et les emplacements de déplacement.
-ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 305d7683413d5682c0dddda418e87de0a0a682b7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206432"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524116"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Étape 1. Votre Microsoft 365 pour les locataires d’entreprise
 
-L’une de vos premières décisions client est le nombre à prendre. Chaque Microsoft 365 client est distinct, unique et distinct de tous les autres Microsoft 365 client. Son client Azure AD correspondant est également distinct, unique et distinct de tous les autres Microsoft 365 client.
+L’une de vos premières décisions client est le nombre à prendre. Chaque Microsoft 365 client est distinct, unique et distinct de tous les autres Microsoft 365 client. Son client Azure AD client est également distinct, unique et distinct de tous les autres Microsoft 365 client.
 
 ## <a name="single-tenant"></a>Client unique
-Le fait d’avoir un seul client simplifie de nombreux aspects de l’utilisation des Microsoft 365. Un seul client signifie un seul client Azure AD avec un ensemble unique de comptes, de groupes et de stratégies. Les autorisations et le partage des ressources au sein de votre organisation peuvent être effectués via ce fournisseur d’identité central.
+Le fait d’avoir un seul client simplifie de nombreux aspects de l’utilisation des Microsoft 365. Un seul client signifie un client Azure AD unique avec un seul ensemble de comptes, groupes et stratégies. Les autorisations et le partage des ressources au sein de votre organisation peuvent être effectués via ce fournisseur d’identité central.
 
 Un client unique offre à vos utilisateurs l’expérience de collaboration et de productivité la plus riche et la plus simplifiée en fonctionnalités.
 
-Voici un exemple montrant l’emplacement par défaut et le client Azure AD d’Microsoft 365 client.
+Voici un exemple montrant l’emplacement par défaut et Azure AD client d’un Microsoft 365 client.
 
-![Un seul Microsoft 365 client avec son client Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Un seul Microsoft 365 client avec son Azure AD client.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>Plusieurs clients
 
@@ -49,21 +49,21 @@ Il existe de nombreuses raisons pour lesquelles votre organisation peut avoir pl
 
 Voici un exemple d’organisation qui possède deux clients (client A et client B) dans la même géo de centre de données par défaut. Chaque client en tant que client Azure AD distinct.
 
-![Plusieurs Microsoft 365 avec leurs propres locataires Azure AD.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Plusieurs Microsoft 365 avec leurs propres locataires Azure AD client.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 Lorsque vous avez plusieurs clients, il existe des restrictions et des considérations supplémentaires lors de leur gestion et de la fourniture de services à vos utilisateurs.
 
 ### <a name="inter-tenant-collaboration"></a>Collaboration inter-clients
 
-Si vous souhaitez que vos utilisateurs collaborent plus efficacement entre différents clients Microsoft 365 de manière sécurisée, les options de collaboration entre clients incluent l’utilisation d’un emplacement central pour les fichiers et les conversations, le partage de calendriers, l’utilisation de la messagerie instantanée, des appels audio/vidéo pour la communication et la sécurisation de l’accès aux ressources et aux applications.
+Si vous souhaitez que vos utilisateurs collaborent plus efficacement entre différents clients Microsoft 365 de manière sécurisée, les options de collaboration entre clients incluent l’utilisation d’un emplacement central pour les fichiers et les conversations, le partage de calendriers, l’utilisation de la messagerie instantanée, les appels audio/vidéo pour la communication et la sécurisation de l’accès aux ressources et aux applications.
 
-Pour plus d’informations, [voir Microsoft 365 collaboration inter-locataires.](../enterprise/microsoft-365-inter-tenant-collaboration.md)
+Pour plus d’informations, [voir Microsoft 365 collaboration inter-locataires](../enterprise/microsoft-365-inter-tenant-collaboration.md).
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
-Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lors du déplacement de boîtes aux lettres Exchange Online entre des locataires, vous devez déboarder complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis les intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres.
+Avant la migration de boîtes aux lettres entre les locataires (en prévisualisation), lors du déplacement de boîtes aux lettres Exchange Online entre les locataires, vous devez déboarder complètement une boîte aux lettres utilisateur de son client actuel (le client source) vers l’ordinateur local, puis l’intégrer à un nouveau client (le client cible). Grâce à la nouvelle fonctionnalité de migration de boîtes aux lettres entre les locataires, les administrateurs client des locataires source et cible peuvent déplacer des boîtes aux lettres entre les locataires avec un minimum de dépendances d’infrastructure dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration.
 
-Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre les locataires.
+Voici deux exemples de client et leurs boîtes aux lettres avant la migration de boîtes aux lettres entre locataires.
 
 ![Plusieurs Microsoft 365 client et leurs boîtes aux lettres.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
@@ -75,13 +75,13 @@ Voici le client cible (locataire A) après la migration de boîtes aux lettres e
 
 Dans cette illustration, un seul client possède à la fois des domaines et les deux ensembles Exchange boîtes aux lettres.
 
-Pour plus d’informations, consultez [la migration de boîtes aux lettres entre locataires.](../enterprise/cross-tenant-mailbox-migration.md)
+Pour plus d’informations, voir [Migration de boîtes aux lettres entre locataires](../enterprise/cross-tenant-mailbox-migration.md).
 
 ### <a name="tenant-to-tenant-migrations"></a>Migrations client vers client
 
 Il existe plusieurs approches architecturales pour les fusions, les acquisitions, les déssinttures et d’autres scénarios qui peuvent vous amener à migrer un client Microsoft 365 existant vers un nouveau client. 
 
-Pour obtenir des instructions détaillées, [voir Microsoft 365 migrations](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)client à client.
+Pour obtenir des instructions détaillées, [Microsoft 365 migrations client à client](../enterprise/microsoft-365-tenant-to-tenant-migrations.md).
 
 ## <a name="multi-geo-for-a-tenant"></a>Multi-Géo pour un client
 
@@ -89,9 +89,9 @@ Avec Microsoft 365 Multi-Géo, vous pouvez mettre en service et stocker des donn
 
 Dans un environnement Multi-Géo, votre client Microsoft 365 se compose d’un emplacement par défaut ou central où votre abonnement Microsoft 365 a été créé à l’origine et d’un ou plusieurs emplacements satellites. Dans un client multigé géographique, les informations sur les emplacements géographiques, les groupes et les informations utilisateur sont maîtres dans un client Azure AD global. Étant donné que les informations de votre client sont centralisées et synchronisées dans chaque emplacement géographique, les expériences de collaboration impliquant toute personne de votre entreprise sont partagées entre les emplacements.
 
-Voici un exemple d’organisation qui a son emplacement par défaut en Europe et un emplacement satellite en Amérique du Nord. Les deux emplacements partagent le même client Azure AD global pour le client Microsoft 365 client unique.
+Voici un exemple d’organisation qui a son emplacement par défaut en Europe et un emplacement satellite en Amérique du Nord. Les deux emplacements partagent le même Azure AD client global pour le Microsoft 365 client unique.
 
-![Exemple d’un client Microsoft 365 multigéogé.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
+![Exemple de client de Microsoft 365 multigéogé.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
 Pour en savoir plus, consultez [Microsoft 365 Multigéographie](../enterprise/microsoft-365-multi-geo.md).
 
@@ -105,7 +105,7 @@ Voici un exemple dans lequel un client Microsoft 365 a été déplacé de la gé
 
 ![Exemple de déplacement d’Microsoft 365 client entre des centres de données géographiques.](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-Pour plus d’informations, voir [Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données.](../enterprise/moving-data-to-new-datacenter-geos.md)
+Pour plus d’informations, voir [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
 ## <a name="products-and-licenses-for-a-tenant"></a>Produits et licences pour un client
 
@@ -113,7 +113,7 @@ Votre Microsoft 365 client est créé lorsque vous achetez votre premier produit
 
 La détermination de l’ensemble des produits et du nombre de licences pour chacun d’eux nécessite une planification pour :
 
-- Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateur qui ont besoin de fonctionnalités avancées.
+- Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateurs qui ont besoin de fonctionnalités avancées.
 - Vous empêchez de ne plus disposer de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
 
 
@@ -126,7 +126,7 @@ Pour vos Microsoft 365 d’entreprise, vous avez déterminé :
 - Indique si un client doit être multigéogé pour se conformer aux exigences de résidence des données.
 - Si vous devez configurer la collaboration entre les locataires.
 - Si vous devez migrer un client vers un autre.
-- Indique si vous devez déplacer des données principales d’une géo de centres de données vers une nouvelle.
+- Indique si vous devez déplacer les données principales d’une géo de centres de données vers une nouvelle.
 
 Voici un exemple de nouveau client.
 
@@ -137,7 +137,7 @@ Dans cette illustration, le client a :
 - Emplacement par défaut correspondant à une Microsoft 365 de centre de données.
 - Ensemble de produits et de licences.
 - Ensemble d’applications de productivité cloud, dont certaines sont spécifiques aux produits.
-- Un client Azure AD qui contient des comptes d’administrateur général et un nom de domaine DNS initial.
+- Un Azure AD qui contient des comptes d’administrateur général et un nom de domaine DNS initial.
 
 Au fil des étapes supplémentaires de cette solution, nous allons créer cette figure.
 
@@ -154,6 +154,6 @@ Régulièrement, vous devrez peut-être :
 
 ## <a name="next-step"></a>Étape suivante
 
-[![Étape 2. Optimisez votre client pour l’accès au réseau.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![Étape 2. Optimisez votre client pour l’accès réseau.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
-Poursuivez la [mise en réseau](tenant-management-networking.md) pour fournir une mise en réseau optimale de vos employés Microsoft 365 services cloud.
+Poursuivez la [mise en](tenant-management-networking.md) réseau pour fournir une mise en réseau optimale de vos employés Microsoft 365 services cloud.

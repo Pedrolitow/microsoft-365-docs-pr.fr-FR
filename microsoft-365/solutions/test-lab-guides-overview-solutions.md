@@ -2,9 +2,9 @@
 title: Guides pour les laboratoires de tests pour les solutions et scénarios
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Utilisez les guides de laboratoire de test pour créer Microsoft 365 solutions et scénarios dans un environnement dev/test.
-ms.openlocfilehash: 414630779d888e242cc14ccf4691e48b15cbe807
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: febcb9e3c1a870bfa85468b56f4b2a45774f3070
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208852"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524128"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guides pour les laboratoires de tests pour les solutions et scénarios
 
@@ -36,4 +36,4 @@ Les guides de laboratoire de test vous permettent également de créer des envir
 
 Essayez [ce guide de laboratoire de test](team-security-isolation-dev-test.md) pour configurer une équipe avec l’isolation de sécurité.
 
-Pour obtenir des guides supplémentaires sur Microsoft 365 et la configuration, voir Microsoft 365 guides de laboratoire de [test d’entreprise.](../enterprise/m365-enterprise-test-lab-guides.md)
+Pour obtenir des guides supplémentaires sur Microsoft 365 et la configuration, voir Microsoft 365 guides de laboratoire de [test d’entreprise](../enterprise/m365-enterprise-test-lab-guides.md).

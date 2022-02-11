@@ -1,8 +1,8 @@
 ---
 title: Gestion des locataires pour Microsoft 365 entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos Microsoft 365 client.
-ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a9545800c3f5f08b8094290c4173b4368caff4d
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176162"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524212"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des locataires pour Microsoft 365 entreprise
 
 La création d’un chemin d’accès à la transformation numérique de votre organisation avec le cloud computing nécessite une base solide sur laquelle vos employés peuvent compter pour la productivité, la collaboration, les performances, la confidentialité, la conformité et la sécurité.
 
-Une configuration correcte de vos clients Microsoft 365 constitue cette base, laissant vos employés se concentrer sur l’obtention de leur travail et votre service informatique afin de se concentrer sur des solutions de bout en bout qui fournissent une valeur commerciale supplémentaire.
+Une configuration correcte de vos clients Microsoft 365 constitue cette base, laissant vos employés se concentrer sur leur travail et votre service informatique pour se concentrer sur les solutions de bout en bout qui fournissent une valeur commerciale supplémentaire.
 
 Cette solution vous permet de suivre la configuration de ces bases dans les étapes suivantes :
 
@@ -43,33 +43,33 @@ Mais tout d’abord, nous allons prendre le temps de comprendre ce qu’est un c
 
 Un Microsoft 365 client est une instance dédiée des services de Microsoft 365 et des données de votre organisation stockées dans un emplacement par défaut spécifique, comme l’Europe ou l’Amérique du Nord. Cet emplacement est spécifié lorsque vous créez le client pour votre organisation. Chaque Microsoft 365 client est distinct, unique et distinct de tous les autres Microsoft 365 client. Vous créez un Microsoft 365 client lorsque vous achetez un ou plusieurs produits Microsoft, tels que Microsoft 365 E3 ou E5, et un ensemble de licences pour chacun d’eux.
 
-Votre client Microsoft 365 inclut également un client Azure Active Directory (Azure AD), qui est une instance dédiée d’Azure AD pour les comptes d’utilisateur, les groupes et d’autres objets. Chaque client Azure AD est distinct, unique et distinct de tous les autres locataires Azure AD. Bien que votre organisation puisse avoir plusieurs locataires Azure AD que vous pouvez configurer avec des abonnements Azure, les locataires Microsoft 365 ne peuvent utiliser qu’un seul client Azure AD, celui qui a été créé lors de la création du client.
+Votre client Microsoft 365 inclut également un client Azure Active Directory (Azure AD), qui est une instance dédiée de Azure AD pour les comptes d’utilisateurs, les groupes et d’autres objets. Chaque Azure AD client est distinct, unique et distinct de tous les autres Azure AD client. Bien que votre organisation puisse avoir plusieurs locataires Azure AD que vous pouvez configurer avec des abonnements Azure, les locataires Microsoft 365 ne peuvent utiliser qu’un seul client Azure AD, celui qui a été créé lors de la création du client.
 
 Voici un exemple :
 
-![Exemple Microsoft 365 client avec son client Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Exemple de Microsoft 365 client avec son Azure AD client.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *La gestion des* locataires est la planification, le déploiement et le fonctionnement continu de vos Microsoft 365 client.
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>Attributs d’un client bien conçu et opérationnel
 
-Au-delà du nom et de l’emplacement corrects pour votre client, il existe des éléments supplémentaires à planifier, déployer et gérer pour vous assurer que vos expériences utilisateur avec les applications de productivité cloud telles que Microsoft Teams et Exchange Online sont efficaces, sécurisées et &mdash; &mdash; performantes.
+Au-delà du nom et de l’emplacement corrects pour votre client, il existe d’autres éléments à planifier, déployer et gérer pour vous assurer que vos expériences utilisateur avec les applications de productivité cloud&mdash; sont efficaces, sécurisées et performantes pour Microsoft Teams et Exchange Online&mdash;.
 
 Voici les éléments :
 
 - Vous avez l’ensemble correct de produits (abonnements) et de licences.
-  - L’ensemble des produits correspond à vos besoins en matière d’entreprise, d’informatique et de sécurité.
+  - L’ensemble de produits correspond à vos besoins d’entreprise, informatique et de sécurité.
   - Il existe un nombre adéquat de licences pour vos employés et les modifications prévues dans le personnel.
 - Pour la mise en réseau :
   - Vous avez configuré les noms de domaine DNS corrects.
   - Pour les réseaux d’entreprise, vous avez optimisé le trafic réseau vers le réseau Microsoft pour les travailleurs sur site.
   - Vous avez optimisé le trafic réseau pour les travailleurs à distance qui utilisent un client VPN.
-- Vous avez synchronisé vos comptes, groupes et autres objets des services de domaine Active Directory (AD DS).
-  - Vos comptes de client Azure AD sont Exchange Online boîtes aux lettres avec les domaines DNS corrects pour les adresses de messagerie.
+- Vous avez synchronisé vos comptes, groupes et autres objets active Directory Domain Services (AD DS).
+  - Vos Azure AD client sont Exchange Online boîtes aux lettres avec les domaines DNS corrects pour les adresses de messagerie.
   - Les licences correctes des produits achetés corrects ont été attribuées à vos comptes d’utilisateurs (par exemple, Microsoft 365 E3 ou E5).
 - Vous avez configuré une gestion forte des identités et des accès.
   - Vous avez besoin d’une authentification utilisateur sécurisée avec authentification sans mot de passe ou multifacteur (MFA).
-  - Vous avez des stratégies d’accès conditionnel qui appliquent des exigences et des restrictions de signature pour des niveaux de sécurité plus élevés.
+  - Vous avez des stratégies d’accès conditionnel qui appliquent des exigences et des restrictions de connect pour des niveaux de sécurité plus élevés.
 - Les serveurs Office locaux et leurs données ont été migrés vers des applications cloud ou sont utilisés dans une configuration hybride.
 - Vous êtes en train d’assurer la gestion des appareils avec Intune ou Basic Mobility and Security intégré à Microsoft 365.
   - Les appareils de votre organisation sont inscrits et gérés.
@@ -84,7 +84,7 @@ Dans cette illustration, le client Microsoft 365 inclut :
 - Produits et licences pour Microsoft 365 E3 et E5.
 - Microsoft 365 applications de productivité.
 - Intune avec les appareils inscrits et les stratégies d’appareil et d’application.
-- Un client Azure AD qui a synchronisé un compte d’utilisateur (les groupes et autres objets d’annuaire ne sont pas affichés), les domaines et les stratégies d’accès conditionnel.
+- Un Azure AD client qui a synchronisé un compte d’utilisateur (les groupes et autres objets d’annuaire ne sont pas affichés), les domaines et les stratégies d’accès conditionnel.
 
 ## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>Fonctionnalités client pour Microsoft 365 entreprise
 
@@ -112,9 +112,9 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
-|Synchroniser les services de domaine Active Directory (AD DS) locaux avec votre client Azure AD|Tirez parti de votre fournisseur d’identité local pour les comptes d’utilisateur, les groupes et d’autres objets.|Microsoft 365 E3 ou E5|
+|Synchroniser les services de domaine Active Directory (AD DS) locaux avec votre Azure AD client|Tirez parti de votre fournisseur d’identité local pour les comptes d’utilisateur, les groupes et d’autres objets.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec paramètres de sécurité par défaut|Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.|Microsoft 365 E3 ou E5|
-|Authentification multifacteur appliquée avec accès conditionnel|Exiger l' approbation de la MFA en fonction des attributs de la connectez-vous avec les stratégies d’accès conditionnel.|Microsoft 365 E3 ou E5|
+|Authentification multifacteur appliquée avec accès conditionnel|Exiger l’approbation de la MFA en fonction des attributs de la connectez-vous avec les stratégies d’accès conditionnel.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec accès conditionnel basé sur les risques|Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité.|Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2|
 |Réinitialisation du mot de passe libre-service (SSPR)|Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.|Microsoft 365 E3 ou E5|
 ||||
@@ -128,15 +128,15 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |Migrer les données et les serveurs locaux vers Microsoft 365|Migrez Exchange boîtes aux lettres, SharePoint sites et Skype Entreprise Online vers Microsoft 365 services cloud.|Microsoft 365 E3 ou E5|
 ||||
 
-### <a name="device-and-app-management"></a>Données de gestion des appareils et des applications
+### <a name="device-and-app-management"></a>Gestion des appareils et des applications
 
 |Fonctionnalité|Description|Gestion des licences|
 |---|---|---|
 |Microsoft Intune|Service basé sur le cloud qui fournit la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM) pour contrôler la façon dont l’application de votre organisation et les appareils sont utilisés, y compris les téléphones mobiles, les tablettes et les ordinateurs portables.|Microsoft 365 E3 ou E5|
-|Mobility + Security de Base|Sécurisation et gestion des appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows avec ce service intégré.|Microsoft 365 E3 ou E5|
+|Mobility + Security de Base|Sécuriser et gérer les appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows avec ce service intégré.|Microsoft 365 E3 ou E5|
 ||||
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Utilisez ces étapes pour configurer et gérer vos Microsoft 365 client.
 
@@ -150,4 +150,4 @@ Utilisez ces étapes pour configurer et gérer vos Microsoft 365 client.
 
 Chaque étape décrit les options de déploiement, résume les résultats et les tâches de maintenance en cours.
 
-Pour comprendre comment une organisation multinationale fictive mais représentative a déployé les éléments de son client Microsoft 365, consultez l’étude de [cas Contoso.](../enterprise/contoso-case-study.md)
+Pour comprendre comment une organisation multinationale fictive mais représentative a déployé les éléments de son client Microsoft 365, consultez l’étude [de cas Contoso](../enterprise/contoso-case-study.md).

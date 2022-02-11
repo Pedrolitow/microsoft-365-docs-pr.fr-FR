@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9680c9c45441bc654103c11ea28c13f85859ee43
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355176"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524236"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Notation des alertes pour les règles de forwarding de boîte de réception suspectes
 
@@ -53,7 +53,7 @@ Les résultats de l’utilisation de ce manuel sont les :
 
 Vous configurez des règles de boîte de réception pour gérer automatiquement les messages électroniques en fonction de critères prédéfinie. Par exemple, vous pouvez créer une règle de boîte de réception pour déplacer tous les messages de votre responsable vers un autre dossier, ou pour déplacer les messages que vous recevez vers une autre adresse de messagerie.
 
-### <a name="suspicious-inbox-forwarding-rules"></a>Règles de forwarding de boîte de réception suspectes
+### <a name="suspicious-inbox-forwarding-rules"></a>Règle de transfert de boîte de réception suspect
 
 Après avoir accédé aux boîtes aux lettres des utilisateurs, les attaquants créent souvent une règle de boîte de réception qui leur permet d’exfiltrer des données sensibles vers une adresse de messagerie externe et de les utiliser à des fins malveillantes. 
 
@@ -130,6 +130,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```

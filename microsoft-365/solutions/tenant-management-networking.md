@@ -1,8 +1,8 @@
 ---
 title: Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 2ee0f5cd784112909cbba465b94031ac2429963f
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327615"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524224"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
 Microsoft 365 entreprise inclut des applications de productivité cloud telles que Teams et Exchange Online et Microsoft Intune, ainsi que de nombreux services d’identité et de sécurité Microsoft Azure. Tous ces services basés sur le cloud reposent sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients sur votre réseau local ou sur n’importe quel emplacement sur Internet. 
 
@@ -72,7 +72,7 @@ Voici comment la configuration optimisée résout les problèmes de latence d’
 - Les épingles de réseau qui effectuent un traitement de paquets en double sont ignorées Microsoft 365 trafic approuvé, ce qui réduit la latence.
 - Les périphériques de périphérie réseau qui effectuent un traitement de paquets inutile et en double sont ignorés pour Microsoft 365 trafic approuvé, ce qui réduit la latence.
 
-Pour plus d’informations, [voir Microsoft 365 vue d’ensemble de la connectivité réseau.](../enterprise/microsoft-365-networking-overview.md)
+Pour plus d’informations, [voir Microsoft 365 vue d’ensemble de la connectivité réseau](../enterprise/microsoft-365-networking-overview.md).
 
 ## <a name="remote-workers"></a>Travailleurs à distance
 
@@ -84,7 +84,7 @@ Dans cette illustration, le trafic Microsoft 365 doit prendre un itinéraire ind
 
 La segmentation de tunnel vous permet de configurer votre client VPN pour empêcher l’envoi de certains types de trafic sur la connexion VPN vers le réseau de l’organisation.
 
-Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, voir Office 365 [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) [catégories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) de points de terminaison et les listes des points de terminaison de catégorie Optimiser pour la tunnellation fractionner.
+Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos clients VPN avec la segmentation de tunnel afin d’exclure le trafic vers la catégorie **Optimiser** des points de terminaison Microsoft 365 sur la connexion VPN. Pour plus d’informations, [voir Office 365 catégories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) de points de terminaison et les listes des points de terminaison de catégorie Optimiser pour la tunnellation fractionner.[](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)
 
 Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la majeure partie du trafic vers Microsoft 365 applications cloud contourne la connexion VPN.
 
@@ -121,19 +121,19 @@ Pour plus d’informations, [voir Microsoft 365 Network Informations](../enterpr
 
 Un système informatique réseau de distribution de contenu (CDN) vous permet de réduire les temps de chargement, d’économiser de la bande passante et de accélérer la réactivité. Une CDN améliore les performances en achant des ressources statiques telles que des fichiers graphiques ou vidéo plus proches des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Vous pouvez utiliser le Office 365 réseau de distribution de contenu intégré (CDN), inclus avec SharePoint dans Microsoft 365 E3 et E5, pour héberger des ressources statiques afin de fournir de meilleures performances à vos pages SharePoint.
 
-Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger  dans le Office 365 CDN, vous pouvez ajouter des origines publiques,  des origines privées ou les deux.
+Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger dans le Office 365 CDN, vous pouvez ajouter des origines publiques **, des** origines privées ou les deux.
 
 Lorsqu’elle est déployée et configurée, la Office 365 CDN télécharge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
 
 ![Office 365 CDN pour les utilisateurs.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
 
-Pour plus d’informations, [voir Utiliser la Office 365 CDN avec SharePoint Online.](../enterprise/use-microsoft-365-cdn-with-spo.md)
+Pour plus d’informations, voir [Utiliser la Office 365 CDN avec SharePoint Online](../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ## <a name="automated-endpoint-listing"></a>Liste automatisée des points de terminaison
 
 Pour que vos clients locaux, périphériques Edge et services d’analyse de paquets basés sur le cloud ignorent le traitement du trafic Microsoft 365 approuvé, vous devez les configurer avec l’ensemble de points de terminaison (plages d’adresses IP et noms DNS) correspondant aux services Microsoft 365. Ces points de terminaison peuvent être configurés manuellement dans les pare-feux et autres périphériques de sécurité Edge, les fichiers PAC pour les ordinateurs clients afin de contourner les proxies ou les périphériques SD-WAN des succursales. Toutefois, les points de terminaison changent au fil du temps, nécessitant une maintenance manuelle continue des listes de points de terminaison à ces emplacements.
 
-Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse IP Office 365 et le [service web REST d’URL.](../enterprise/microsoft-365-ip-web-service.md) Ce service vous permet d’identifier et de différencier Microsoft 365 trafic réseau, ce qui vous permet d’évaluer, de configurer et de rester à jour plus facilement avec les dernières modifications.
+Pour automatiser la gestion des listes et des changements pour les points de terminaison Microsoft 365 dans vos fichiers PAC clients et périphériques réseau, utilisez l’adresse [IP Office 365 et le service web REST d’URL](../enterprise/microsoft-365-ip-web-service.md). Ce service vous permet d’identifier et de différencier Microsoft 365 trafic réseau, ce qui vous permet d’évaluer, de configurer et de rester à jour plus facilement avec les dernières modifications.
 
 Vous pouvez utiliser PowerShell, Python ou d’autres langages pour déterminer les modifications apportées aux points de terminaison au fil du temps et configurer vos fichiers PAC et périphériques réseau edge.
 
@@ -143,7 +143,7 @@ Le processus de base est :
 2. Exécutez une activité périodique quotidienne pour vérifier les modifications apportées aux points de terminaison ou utilisez une méthode de notification.
 3. Lorsque des modifications sont détectées, régénérez et redistribuez le fichier PAC pour les ordinateurs clients et a apporter les modifications à vos périphériques réseau.
 
-Pour plus d’informations, [voir Office 365'adresse IP et le service web d’URL.](../enterprise/microsoft-365-ip-web-service.md)
+Pour plus d’informations, [voir Office 365 ip address and URL web service](../enterprise/microsoft-365-ip-web-service.md).
 
 ## <a name="results-of-step-2"></a>Résultats de l’étape 2
 
