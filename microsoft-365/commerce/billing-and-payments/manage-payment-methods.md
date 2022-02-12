@@ -20,15 +20,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 82a3133e4d22514608348b060b3466a74e184278
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374291"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765527"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
@@ -45,6 +46,9 @@ Si votre compte d’entreprise n’a pas de profil de facturation, un administra
 > L’option de règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
 >
 > Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client.
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="watch-update-your-payment-method"></a>Regardez : Mettre à jour votre mode de paiement
 

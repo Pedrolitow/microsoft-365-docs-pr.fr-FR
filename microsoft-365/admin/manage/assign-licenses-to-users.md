@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
+- business_assist
 - okr_SMB
 - manage_licenses
 - commerce_licensing
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: 90c567e27abf67bdb5a6cf74da4d64d9156e1432
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 4c9cf07ba93c19607e7d6d005439368ab0111229
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520859"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765935"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -42,6 +43,9 @@ Vous pouvez attribuer des licences à des utilisateurs à partir de la page des 
 > - Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la période d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 [Découvrez comment ajouter un utilisateur et attribuer une licence en même temps](../add-users/add-users.md).
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

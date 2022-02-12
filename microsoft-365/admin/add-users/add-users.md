@@ -18,20 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: 161b1cec937197dc3cc81b34027b6574676f7d95
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 90ef6506d10c0f4c106dd18816ccd2f11803a079
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520775"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765419"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
 Chaque membres de votre équipe a besoin d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business). Le moyen le plus simple d’ajouter des comptes d’utilisateurs consiste à les ajouter un par un dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Après cette étape, vos utilisateurs disposent de licences Microsoft 365, d’informations d’identification de connexion et de boîtes aux lettres Microsoft 365.
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

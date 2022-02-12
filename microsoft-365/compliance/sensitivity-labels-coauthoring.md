@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401413"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767687"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -124,7 +124,9 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d'autre ne modifie le document, ils sont avertis que la co-édition et l'enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
 
-- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring).
+- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
+    > [!NOTE]
+    > Ces limitations pour le client d’étiquetage unifié incluent un [changement de boîte de dialogue](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels) pour les utilisateurs qui sélectionnent des étiquettes qui les invitent à sélectionner des autorisations.
 
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Comment activer la co-édition pour les fichiers avec les étiquettes de confidentialité
 

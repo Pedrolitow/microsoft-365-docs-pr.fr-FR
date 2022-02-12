@@ -21,13 +21,14 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db2f41d485999928a69d299ccdb1295a7e3dc289
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164811"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766811"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -38,6 +39,9 @@ Si vous avez acheté un domaine auprès d’un fournisseur d’hébergement tier
 Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseront le domaine onmicrosoft.com pour leur adresse de messagerie jusqu’à ce que vous le fassiez. Il est important d’ajouter votre domaine avant d’ajouter des utilisateurs, de sorte que vous n’ayez pas à les reconfigurer.
 
 [Consultez la FAQ dédiée aux domaines](../setup/domains-faq.yml) si vous ne trouvez pas ci-dessous ce que vous recherchez .
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Étape 1 : Ajouter un enregistrement TXT ou MX pour vérifier que vous êtes propriétaire du domaine
 
@@ -142,7 +146,7 @@ Sur le site Web de votre fournisseur d’hébergement, ajoutez les enregistremen
 Dans le nouvel enregistrement, vérifiez que chacun des champs sont définis par les valeurs suivantes :
 
 - Type d’enregistrement : `SRV (Service)`
-- Nom : `@`
+- Nom : `@`
 - Cible : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Protocole : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Service : copiez la valeur à partir du centre d’administration et collez-la ici.

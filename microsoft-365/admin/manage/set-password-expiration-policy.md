@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: f7730e4dcadf8bb8743cd288ba5d38d45ad739b0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 9ba871a166169a0125b68808c124b10802424dfd
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523972"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765587"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -46,11 +47,14 @@ Vous devez être un [Administrateur général](../add-users/about-admin-roles.md
 
 Si vous êtes un utilisateur, vous n'avez pas les autorisations pour paramétrer votre mot de passe pour qu'il n'expire jamais. Demandez au support technique de votre bureau ou de votre école d'effectuer les opérations de cet article pour vous.
 
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
+
 ## <a name="set-password-expiration-policy"></a>Définir la stratégie d’expiration de mot de passe
 
 Si vous voulez que les mots de passe utilisateur expirent après un certain temps, suivez la procédure ci-dessous.
 
-1. Dans le centre d’administration Microsoft 365, accédez à **Paramètres** > **Paramètres de l’organisation**, puis sélectionnez l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Sécurité et confidentialité**</a>.
+1. Dans le Centre d’administration Microsoft 365, accédez à l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Sécurité et confidentialité**</a> sous **Paramètres de l’organisation**.
 
     Si vous n’êtes pas un administrateur général, l’option Sécurité et confidentialité n’est pas visible.
   
@@ -63,7 +67,7 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
 1. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être notifiés de l'expiration du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
 
 > [!IMPORTANT]
-> Les notifications d’expiration de mot de passe ne sont plus prises en charge dans le Centre d'administration Microsoft 365 ou les applications Office.
+> Les notifications d’expiration de mot de passe ne sont plus prises en charge dans les applications web Office ou le [centre d’administration](https://portal.office.com).
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Points importants dont vous devez tenir compte concernant la fonctionnalité d’expiration de mot de passe
   

@@ -1,29 +1,35 @@
 ---
 title: Régler votre abonnement
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: 'jkinma, jmueller'
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 search.appverid: MET150
-description: 'Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.'
+description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
 ms.custom:
-  - okr_SMB
-  - fwlink 808700 for SEPA UI glink 906 for older uI
-  - AdminSurgePortfolio
-  - commerce_billing
-  - AdminTemplateSet
+- okr_SMB
+- fwlink 808700 for SEPA UI glink 906 for older uI
+- AdminSurgePortfolio
+- commerce_billing
+- business_assist
+- AdminTemplateSet
 ms.date: 10/28/2021
+ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766787"
 ---
-
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
 > [!IMPORTANT]
@@ -32,6 +38,9 @@ ms.date: 10/28/2021
 Les cartes de débit, de crédit et les informations bancaires sont acceptées pour régler votre abonnement. Dans certains cas, vous pouvez régler votre facture par chèque ou transfert électronique de fonds (TEF). Si vous disposez d’un profil de facturation, vous avez des options légèrement différentes. Pour plus d’informations, consultez la rubrique [Comment régler un abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md). Si vous ne savez pas si votre compte dispose d’un profil de facturation, consultez la rubrique [Comprendre les profils de facturation](manage-billing-profiles.md).
 
 **Vous souhaitez savoir où envoyer votre règlement de facture ?** Si vous réglez votre facture par chèque ou transfert électronique de fonds (TEF), consultez la rubrique [Où envoyer mon chèque ou règlement TEF ?](#where-do-i-send-my-check-or-eft-payment)
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

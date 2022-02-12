@@ -19,18 +19,19 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422302"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765635"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -44,6 +45,9 @@ Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’u
 Les boîtes aux lettres partagées incluent un calendrier partagé. Beaucoup de petites entreprises utilisent le calendrier partagé pour permettre à leurs employés d'y entrer leurs rendez-vous. Par exemple, si vous avez trois commerciaux qui effectuent des visites chez les clients, ces trois personnes peuvent utiliser le calendrier partagé pour saisir leurs rendez-vous. Tout le monde sait ainsi où elles se trouvent.
 
 Avant de créer une boîte aux lettres partagée, assurez-vous de lire la section [À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) pour plus d'informations.
+
+> [!TIP]
+> Si vous avez besoin d’aide pour suivre les étapes de cette rubrique, envisagez de [collaborer avec un spécialiste des petites entreprises Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Avec Aide aux entreprises, vos employés et vous avez accès 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Créer une boîte aux lettres partagée et ajouter des membres
   
